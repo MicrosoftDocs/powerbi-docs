@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: maghan
 
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah

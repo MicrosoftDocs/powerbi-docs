@@ -6,7 +6,7 @@ ms.author: kfile
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/18/2018
 LocalizationGroup: Reports

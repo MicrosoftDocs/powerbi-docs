@@ -7,7 +7,12 @@ manager: kfile
 ms.reviewer: nishalit
 ms.topic: tutorial
 ms.service: powerbi
+<<<<<<< HEAD
 ms.component: powerbi-developer
+=======
+ms.subservice: powerbi-developer
+ms.topic: tutorial
+>>>>>>> 20291919a234a25283bc7cefed05a282b00b04cd
 ms.custom: seodec18
 ms.date: 01/31/2018
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.

@@ -6,7 +6,7 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ""
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 12/10/2018
