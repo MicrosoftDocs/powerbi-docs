@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
 ms.author: maggies

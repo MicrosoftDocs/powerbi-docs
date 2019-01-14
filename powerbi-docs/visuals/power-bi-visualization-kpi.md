@@ -7,7 +7,7 @@ ms.reviewer: ''
 featuredvideoid: xmja6EpqaO0
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/24/2018
 ms.author: mihart

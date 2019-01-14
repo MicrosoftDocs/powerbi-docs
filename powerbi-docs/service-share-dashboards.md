@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
