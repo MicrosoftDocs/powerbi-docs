@@ -5,7 +5,7 @@ author: markingmyname
 ms.author: maghan 
 ms.topic: how-to
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.custom: mvc
 manager: kfile
 ms.date: 11/27/2018

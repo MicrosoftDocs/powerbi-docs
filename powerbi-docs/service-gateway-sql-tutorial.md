@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: tutorial
 ms.date: 05/03/2018
 ms.author: mblythe

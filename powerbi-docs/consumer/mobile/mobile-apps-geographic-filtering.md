@@ -5,7 +5,7 @@ author: mshenhav
 manager: kfile
 
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/09/2018
 ms.author: mshenhav

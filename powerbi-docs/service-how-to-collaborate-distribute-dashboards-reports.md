@@ -6,7 +6,7 @@ ms.author: maggies
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/08/2019 
 LocalizationGroup: Share your work

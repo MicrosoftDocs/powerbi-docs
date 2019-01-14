@@ -7,7 +7,7 @@ ms.reviewer: ''
 featuredvideoid: l8JoB7w0zJA
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies

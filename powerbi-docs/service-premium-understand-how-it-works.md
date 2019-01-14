@@ -4,7 +4,7 @@ description: Understand Power BI Premium capacity memory management and optimiza
 ms.date: 10/18/2018
 ms.topic: conceptual
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.author: mblythe
 ms.reviewer: mblythe
 author: mgblythe
