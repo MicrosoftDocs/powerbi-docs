@@ -23,7 +23,7 @@ As you automate various tasks with Power BI APIs, you can now script creating a 
 
 To access resources that secure an Azure AD tenant, the entity that requires access represents a security principal. This action holds true for both users (user principal) and applications (service principal).
 
-The security principal defines the access policy and permissions for users and applications in the Azure AD tenant. This access policy enables core features such as authentication of users and applications during sign in, and authorization during resource access. For more information, reference [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
+The security principal defines the access policy and permissions for users and applications in the Azure AD tenant. This access policy enables core features such as authentication of users and applications during sign-in, and authorization during resource access. For more information, reference [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
 
 When you [register an Azure AD application](register-app.md) in the Azure portal, two objects are created in your Azure AD tenant:
 
@@ -34,7 +34,7 @@ Consider the application object as the *global* representation of your applicati
 
 The application object serves as the template from which common and default properties are *derived* for use in creating corresponding service principal objects.
 
-A service principal is required per tenant where the application is used, enabling it to establish an identity for sign in and access to resources that are secured by the tenant. A single-tenant application has only one service principal (in its home tenant), created and consented for use during application registration.
+A service principal is required per tenant where the application is used, enabling it to establish an identity for sign-in and access to resources that are secured by the tenant. A single-tenant application has only one service principal (in its home tenant), created and consented for use during application registration.
 
 ## Service principal with Power BI Embedded
 
@@ -126,7 +126,7 @@ You can take steps to migrate to use service principal if you're currently using
 ## Considerations and limitations
 
 * Service principal only works with [new app workspaces](../service-create-the-new-workspaces.md).
-* **My Workspace** isn't supported when using sergice principal.
+* **My Workspace** isn't supported when using service principal.
 * Dedicated capacity is required when moving to production.
 * You can't sign into the Power BI portal using service principal.
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
