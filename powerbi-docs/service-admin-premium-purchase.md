@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/20/2018
+ms.date: 01/14/2019
 ms.author: mblythe
 
 LocalizationGroup: Premium
@@ -57,7 +57,7 @@ To purchase a Premium capacity, follow these steps.
 
 1. Follow the steps to complete the purchase.
 
-You can also select one of the following links to take you directly to the purchase page for that SKU. For more information about these SKUs, see [What is Power BI Premium?](service-premium.md#premiumskus).
+You can also select one of the following links to take you directly to the purchase page for that SKU. For more information about these SKUs, see [What is Power BI Premium?](service-premium.md#premium-capacity-nodes).
 
 > [!IMPORTANT]
 > Selecting any of the links below produces an error if you are not in the Office 365 Global Administrator role or Billing Administrator role.
