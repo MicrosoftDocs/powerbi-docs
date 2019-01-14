@@ -87,9 +87,9 @@ Within Power BI Desktop, **Other user** only displays different results if you'r
 
 
 
-## Manage security on your model 
+## Add members to roles 
 
-Here are the steps to manage security on your report in Power BI Report Server. 
+After you save your report in Power BI Report Server, you manage security and add or remove members on the server. Only Content Managers of the report have the row-level security option available and not greyed out. If the report doesn't have the roles it needs, you need to open it in Power BI Desktop, add or modify roles, then save it to Power BI Report Server again. 
 
 1. In Power BI Desktop, save the report to Power BI Report Server. You need to be using the version of Power BI Desktop optimized for Power BI Report Server.
 2. In Power BI Report Service, select the ellipsis (**…**) next to the report. 
@@ -98,31 +98,15 @@ Here are the steps to manage security on your report in Power BI Report Server.
 
 4. Select **Row-level security**. 
 
- 
+    On the RLS page, you add members to a role you created in Power BI Desktop.
 
-5. On the RLS page, you add members to a role you created in Power BI Desktop. Only Content Managers of the report have the row-level security option available and not greyed out.  
+5. To add a member, select **Add Member**.
+6. Enter the user or group in the text box in the Username format (DOMAIN\user) and select the roles you wish to assign to them. The member has to be within your organization.   
+7. Click **OK** to apply.   
 
-    If the report doesn't have the roles it needs, you need to open it in Power BI Desktop, add or modify roles, then save it to Power BI Report Server again. 
+8. To remove members, check the box next to their names and select **Delete**.  You can delete multiple members at a time. 
 
- 
 
-## Add members 
-
-You can add a member to the role by click the Add Member button, then entering the user or group in the textbox and selecting the roles you wish to assign to them.  Click OK to apply these.  This member has to be within your organization.   
-
- 
-
- 
-
- 
-
-## Remove members 
-
-You can remove members by checking the box next to their name and hitting Delete.  You can delete multiple members at one time. 
-
- 
-
- 
 
 ## Using the username() or userprincipalname() DAX function 
 
