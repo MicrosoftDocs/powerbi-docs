@@ -201,15 +201,19 @@ To get the **ApplicationSecret**, follow these steps:
 
 ### Workspace ID
 
-Fill in the **workspaceId** information with the **app workspace GUID** from Power BI.
+Fill in the **workspaceId** information with the **app workspace GUID** from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
-![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+| URL | Powershell |
+|--------------------- | -------------------------------|
+|![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png) | ![workspaceId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png) |
 
 ### Report ID
 
 Fill in the **reportId** information with the **report GUID** from Power BI.
 
-![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+| URL | Powershell |
+|--------------------- | -------------------------------|
+|![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png) | ![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png) |
 
 ### Power BI username and password
 
