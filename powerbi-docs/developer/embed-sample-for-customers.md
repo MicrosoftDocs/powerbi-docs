@@ -149,23 +149,23 @@ Follow these steps to start embedding your content using a sample application.
 
 ### Application ID
 
-Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions. To get the **applicationId**, follow these steps:
+Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions.
 
-Sign into the [Azure portal](https://portal.azure.com).
+To get the **applicationId**, follow these steps:
 
-![Azure portal Main](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
+   1. Sign into the [Azure portal](https://portal.azure.com).
 
-In the left-hand navigation pane, select **All Services**, and select **App Registrations**.
+   2. In the left-hand navigation pane, select **All Services**, and select **App Registrations**.
 
-![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
+        ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
-Select the application that you want to get the **applicationId** for.
+    3. Select the application that you want to get the **applicationId** for.
 
-![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
+        ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
-You should see an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
+    4. There is an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
 
-![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+        ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
 ### Application secret
 
@@ -174,8 +174,6 @@ Fill in the **ApplicationSecret** information from the **Keys** section of your 
 To get the **ApplicationSecret**, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-
-    ![Azure portal](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
 
 2. In the left-hand navigation pane, choose **All services** and select **App registrations**.
 
@@ -199,19 +197,32 @@ To get the **ApplicationSecret**, follow these steps:
 
 ### Workspace ID
 
-Fill in the **workspaceId** information with the **app workspace GUID** from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
-| URL | Powershell |
-|--------------------- | -------------------------------|
-|![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png) | ![workspaceId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png) |
+   URL </br>
+   ![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+
+   Powershell </br>
+
+    ```powershell
+    Get-PowerBIworkspace -name "App Owns Embed Test"
+    ```
+   ![workspaceId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
 
 ### Report ID
 
-Fill in the **reportId** information with the **report GUID** from Power BI.
+Fill in the **reportId** information with the report GUID from Power BI.
 
-| URL | Powershell |
-|--------------------- | -------------------------------|
-|![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png) | ![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png) |
+   URL</br>
+    ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+
+   Powershell </br>
+
+    ```powershell
+    Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
+    ```
+
+  ![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
 
 ### Power BI username and password
 
