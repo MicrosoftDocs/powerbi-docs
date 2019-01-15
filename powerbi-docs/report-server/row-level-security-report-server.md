@@ -58,23 +58,30 @@ Within Power BI Desktop, **Other user** only displays different results if you'r
 
 ## Add members to roles 
 
-After you save your report in Power BI Report Server, you manage security and add or remove members on the server. Only Content Managers of the report have the row-level security option available and not greyed out. If the report doesn't have the roles it needs, you need to open it in Power BI Desktop, add or modify roles, then save it to Power BI Report Server again. 
+After you save your report in Power BI Report Server, you manage security and add or remove members on the server. Only Content Managers of the report have the row-level security option available and not greyed out. If 
+
+ If the report doesn't have the roles it needs, you need to open it in Power BI Desktop, add or modify roles, then save it to Power BI Report Server again. 
 
 1. In Power BI Desktop, save the report to Power BI Report Server. You need to be using the version of Power BI Desktop optimized for Power BI Report Server.
 2. In Power BI Report Service, select the ellipsis (**…**) next to the report. 
 
-3. Select **Manage**. 
+3. Select **Manage** > **Row-level security**. 
 
-4. Select **Row-level security**. 
+     ![Manage row-level security](media/row-level-security-report-server/power-bi-report-server-rls-dialog.png)
 
-    On the RLS page, you add members to a role you created in Power BI Desktop.
+    On the **Row-level security** page, you add members to a role you created in Power BI Desktop.
 
 5. To add a member, select **Add Member**.
-6. Enter the user or group in the text box in the Username format (DOMAIN\user) and select the roles you wish to assign to them. The member has to be within your organization.   
-7. Click **OK** to apply.   
+
+1. Enter the user or group in the text box in the Username format (DOMAIN\user) and select the roles you wish to assign to them. The member has to be within your organization.   
+
+    ![Add member to role](media/row-level-security-report-server/power-bi-report-server-add-members.png)
+
+1. Click **OK** to apply.   
 
 8. To remove members, check the box next to their names and select **Delete**.  You can delete multiple members at a time. 
 
+    ![Delete members](media/row-level-security-report-server/power-bi-report-server-delete-members.png)
 
 
 ## Using the username() or userprincipalname() DAX function 
