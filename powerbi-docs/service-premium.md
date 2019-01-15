@@ -71,9 +71,9 @@ Power BI Premium is available in node configurations with different v-core capac
 | P3 |32 v-cores |16 v-cores, 100-GB RAM |16 v-cores |120 per second | 24 | Available |
 | | | | | | | |
 
-<a name="fn1">1</a>: Frontend v-cores are responsible for the web service, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything that relates to the user experience. 
+<a name="fn1">1</a>: Frontend v-cores are responsible for the web service. For example, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything that relates to the user experience. 
 
-<a name="fn2">2</a>: Backend v-cores are responsible for the heavy lifting: query processing, cache management, running R servers, data refresh, natural language processing, real-time feeds, and server-side rendering of reports and images. With the backend v-cores, a certain amount of memory is reserved as well. Having sufficient memory becomes especially important when dealing with large data models or with a large number of active datasets.
+<a name="fn2">2</a>: Backend v-cores are responsible for the heavy lifting, like query processing, cache management, running R servers, data refresh, natural language processing, real-time feeds, and server-side rendering of reports and images. With the backend v-cores, a certain amount of memory is reserved as well. Having sufficient memory becomes especially important when dealing with large data models or with a large number of active datasets.
 
 ## Workloads in Premium capacity
 
