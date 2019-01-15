@@ -62,7 +62,9 @@ There are differences between using a service principal and a standard master us
 
 ## Get started with service principal
 
-1. [Register an Azure AD application](register-app.md).
+Different from the traditional use of a master user account, using the service principal (app-only token) requires a few different pieces to set up. Now to get started with the service principal (app-only token) you need to set up the right environment.
+
+1. You need to [register an Azure AD application](register-app.md) to capture an Application ID and an Application secret to access your Power BI content.  When you use the [register app tool](https://dev.powerbi.com/apps), choose **Server-side web application** to go through the process of gathering an Application ID and an Application secret.
 
 2. [Set up your Power BI environment](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
@@ -71,6 +73,8 @@ There are differences between using a service principal and a standard master us
     [Embed your content using the sample application](embed-sample-for-customers.md#embed-your-content-using-the-sample-application)
 
     [Embed your content within your application](embed-sample-for-customers.md#embed-your-content-within-your-application)
+
+### Provision
 
 ## Using Powershell to create service principal
 
@@ -111,9 +115,9 @@ There are differences between using a service principal and a standard master us
 
 You can take steps to migrate to use service principal if you're currently using a master user account with Power BI or with your Power BI Embedded application.
 
-1. [Register an Azure AD application](register-app.md) to capture an Application ID and an Application secret to access your Power BI content.  When you use the [register app tool](https://dev.powerbi.com/apps), choose **Server-side web application** to go through the process of gathering an Application ID and an Application secret.
+1. You need to [register an Azure AD application](register-app.md) to capture an Application ID and an Application secret to access your Power BI content.  When you use the [register app tool](https://dev.powerbi.com/apps), choose **Server-side web application** to go through the process of gathering an Application ID and an Application secret.
 
-2. Create [new workspaces](../service-create-the-new-workspaces.md) in the Power BI service to copy or move your Power BI artifcats.
+2. Create [new workspaces](../service-create-the-new-workspaces.md) in the Power BI service to copy or move your Power BI artifacts.
 
 3. [Copy or move Power BI artifacts into the new workspaces](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/). Currently there is no UI feature to move Power BI artifacts from one workspace to another. As such, you need to use APIs to accomplish this task.
 
