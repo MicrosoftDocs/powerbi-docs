@@ -66,8 +66,6 @@ However, if you proceed using a service principal application, you need to proce
     |--------------------- | -------------------------------|
     | ![Create App with master account](media/embed-sample-for-customers/embed-sample-for-customers-005.png) |  ![Create App with service principal](media/embed-sample-for-customers/embed-sample-for-customers-005-sp.png)  |
 
-
-
 ### Apply permissions to your application within Azure Active Directory
 
 Enable additional permissions for your application, including what was provided on the app registration page. Sign in with the *master* account that you're using for embedding.
