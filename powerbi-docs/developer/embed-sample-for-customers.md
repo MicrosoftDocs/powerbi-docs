@@ -144,6 +144,7 @@ Follow these steps to start embedding your content using a sample application.
     * **[reportId](#report-id)** (required for both master user account and [service principal](embed-service-principal.md)).
     * **[pbiUsername](#power-bi-username-and-password)** (required for use with a master account).
     * **[pbiPassword](#power-bi-username-and-password)** (required for use with a master account).
+    * **authorityURL** (required for both master user account and [service principal](embed-service-principal.md)).
 
     ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
@@ -211,7 +212,7 @@ Fill in the **workspaceId** information with the app workspace (group) GUID from
 
 ### Report ID
 
-Fill in the **reportId** information with the report GUID from Power BI.
+Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
    URL</br>
     ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
@@ -230,6 +231,10 @@ If you are using a [service principal application](embed-service-principal.md) t
 
 * Fill in the **pbiUsername** with the Power BI master user account.
 * Fill in the **pbiPassword** with the password for the Power BI master user account.
+
+### Authority URL
+
+You need to enter in your tenant ID to complete this 
 
 3. Run the application!
 
