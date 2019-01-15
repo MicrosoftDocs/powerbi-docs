@@ -56,7 +56,7 @@ There are differences between using a service principal and a standard master us
 | Works with the new app workspaces (v2) | Yes | Yes |
 | Needs to be a workspace admin | Yes | Yes |
 | Can use multi-factor authentication (MFA) in Azure | No | Yes |
-| Embed APIs and controls | Yes | Yes |
+| Power BI REST APIs | Yes | Yes |
 | Needs a global admin to create | Yes | No |
 | Can install and manage an On-premises data gateway | Yes | No |
 
@@ -75,6 +75,8 @@ Different from the traditional use of a master user account, using the service p
     [Embed your content within your application](embed-sample-for-customers.md#embed-your-content-within-your-application)
 
 ### Provision
+
+Service principals inherit the permissions for all Power 81 tenant settings from their security group. To restrict permissions, create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
 
 ## Using Powershell to create service principal
 
