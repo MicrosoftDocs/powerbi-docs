@@ -8,20 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/11/2019
+ms.date: 01/14/2019
 ---
 
 # What's new in Power BI Report Server
 
 Learn about what's new in Power BI Report Server. This article covers the major feature areas and is updated as new items are released.
 
-To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
-
-Also check these sources to keep up-to-date on new features in Power BI Report Server.
-
-* [Microsoft Power BI Blog](https://powerbi.microsoft.com/blog/)
-* [SQL Server Reporting Services Team Blog](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
-* The [Guy in a Cube YouTube channel](https://aka.ms/guyinacube)
+To download the latest versions of Power BI Report Server and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
 For related Power BI "What's New" information, see:
 
@@ -31,12 +25,13 @@ For related Power BI "What's New" information, see:
 
 ## January 2019
 
-Row-level security support
-Expand & Collapse on matrix row headers
-Copy/paste between .pbix files
-Smart guides
-Too many accessibility features to list
+Support for these features in Power BI reports:
 
+- [Row-level security](row-level-security-report-server.md)
+- [Expand and collapse on matrix row headers](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse)
+- [Copy and paste between .pbix files](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste)
+- Smart guides
+- Too many accessibility features to list: for example, [data view accessibility support](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#dataView)
 
 ## August 2018
 
@@ -329,10 +324,10 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. T
 
 ## Next steps
 
-[What is Power BI Report Server?](get-started.md) 
-[Administrator handbook](admin-handbook-overview.md)  
-[Install Power BI Report Server](install-report-server.md)  
-[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+Check these sources to keep up-to-date on new features in Power BI Report Server.
+
+* [Microsoft Power BI Blog](https://powerbi.microsoft.com/blog/)
+* [SQL Server Reporting Services Team Blog](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
+* The [Guy in a Cube YouTube channel](https://aka.ms/guyinacube)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

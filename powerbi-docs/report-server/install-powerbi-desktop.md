@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/19/2018
+ms.date: 01/14/2019
 ms.author: maggies
 
 ---
@@ -27,7 +27,7 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 
     ![Download Power BI Desktop from the web portal](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Or you can go directly to [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) (Optimized for Power BI Report Server - August 2018) in the Microsoft Download Center.
+    Or go directly to [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) (Optimized for Power BI Report Server - January 2019) in the Microsoft Download Center.
 
 2. In the Download Center page, select **Download**.
 
@@ -37,14 +37,14 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 
     - **PBIDesktopRS_x64.msi** (the 64-bit version).
 
-1. After you download the installer, run the Power BI Desktop (August 2018) Setup Wizard.
+1. After you download the installer, run the Power BI Desktop (January 2019) Setup Wizard.
 
 2. At the end of the installation, check **Start Power BI Desktop now**.
    
     It starts automatically and you're ready to go.
 
 ## Verify you are using the correct version
-You can verify that you are using the correct Power BI Desktop by looking at the launch screen or title bar within Power BI Desktop. The title bar indicates the release month and year of the release.
+You can verify that you are using the correct Power BI Desktop by looking at the launch screen or title bar within Power BI Desktop. The title bar indicates the month and year of the release.
 
 ![Title bar for Power BI Desktop optimized for Power BI Report Server](media/install-powerbi-desktop/power-bi-report-server-desktop-august-2018.png)
 

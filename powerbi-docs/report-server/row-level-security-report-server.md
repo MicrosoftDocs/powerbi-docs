@@ -8,49 +8,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/11/2019
+ms.date: 01/14/2019
 ---
 
 # Row-level security (RLS) in Power BI Report Server
 
-Setting up row-level security (RLS) with Power BI Report Server can restrict data access for given users. Filters restrict data access at the row level, and you can define filters within roles.  If you're using the default permissions in Power BI Report Server, any user with Content Manager permissions for the Power BI Report can assign members to roles for that report.    
+Setting up row-level security (RLS) with Power BI Report Server can restrict data access for given users. Filters restrict data access at the row level, and you can define filters within roles.  If you're using the default permissions in Power BI Report Server, any user with Publisher or Content Manager permissions for the Power BI report can assign members to roles for that report.    
 
-You configure RLS for reports imported into Power BI with Power BI Desktop. You can also configure RLS on reports that use DirectQuery, such as SQL Server.  Keep in mind that RLS isn't respected if your DirectQuery connection is using passthrough authentication for users viewing the report. For Analysis Services live connections, you configure row-level security on the on-premises model. The security option doesn't show up for live connection datasets. 
+You configure RLS for reports imported into Power BI with Power BI Desktop. You can also configure RLS on reports that use DirectQuery, such as SQL Server.  Keep in mind that RLS isn't respected if your DirectQuery connection is using integrated authentication for users viewing the report. For Analysis Services live connections, you configure row-level security on the on-premises model. The security option doesn't show up for live connection datasets. 
 
-## Define roles and rules within Power BI Desktop 
-
-You define roles and rules within Power BI Desktop. When you publish to Power BI Report Server, it also publishes the role definitions. 
-
-To define security roles, follow these steps.
-
-1. Import data into your Power BI Desktop report, or configure a DirectQuery connection. 
-
-    You can't define roles within Power BI Desktop for Analysis Services live connections. You do that within the Analysis Services model. 
-
-2. On the **Modeling** tab > **Manage Roles**. 
-
- 
-
-3. In the **Manage roles** dialog box, select **Create**. 
-
- 
-
-4. Provide a name for the role. 
-
-5. Select the table you want to apply a DAX rule. 
-
-6. Enter the DAX expressions. This expression should return a true or false. For example: [Entity ID] = “Value”. 
-
-    You can use username() within this expression. Be aware that username() has the format of DOMAIN\username within Power BI Desktop. We recommend you use username() for most RLS scenarios in Power BI Report Server. You can use userprincipalname() instead. It always returns the user in the format of user@contoso.com. 
-
-
-7. After you've created the DAX expression, select the check mark above the expression box to validate the expression. 
-
-
-
-8. Select Save. 
-
-You can't assign users to a role within Power BI Desktop. You assign users in Power BI Report Server. You can enable dynamic security within Power BI Desktop by using the username()or userprincipalname() DAX functions and configuring the proper relationships. 
+[!INCLUDE [rls-desktop-define-roles](../includes/rls-desktop-define-roles.md)]
 
 ## Bidirectional cross-filtering
 
@@ -58,30 +25,32 @@ By default, row-level security filtering uses single-directional filters, regard
 
 - Select the relationship and check the **Apply security filter in both directions** checkbox. 
 
+    ![Apply security filter](media/row-level-security-report-server/rls-apply-security-filter.png)
+
 Check this box when implementing [dynamic row-level security](https://docs.microsoft.com/sql/analysis-services/supplemental-lesson-implement-dynamic-security-by-using-row-filters) based on user name or login ID. 
 
 To learn more, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](../desktop-bidirectional-filtering.md) and the [Securing the Tabular BI Semantic Model](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) technical whitepaper.
 
- 
 
-## Validating the role within Power BI Desktop 
+## Validate roles within Power BI Desktop 
 
 After you've created your role, test the results of the role within Power BI Desktop.
 
 1. Select **View As Roles**. 
 
+    ![View as roles](media/row-level-security-report-server/powerbi-desktop-rls-view-as-roles.png)
  
-    In the **View as roles** dialog box, you see the roles you've created.
+    In **View as roles**, you see the roles you've created.
  
+    ![View as roles dialog box](media/row-level-security-report-server/powerbi-desktop-rls-view-as-roles-dialog.png)
 
 3. Select the role you created > **OK** to apply that role. The report renders the data relevant for that role. 
 
 4. You can also select **Other user** and supply a given user. It is best to supply the Username, as that's what Power BI Report Server uses. 
-5. Select **OK** and the report renders based on what that user can see. 
 
- 
+    ![View as roles: Other user](media/row-level-security-report-server/power-bi-report-server-view-as-roles-other-user.png)
 
- 
+1. Select **OK** and the report renders based on what that user can see. 
 
 Within Power BI Desktop, **Other user** only displays different results if you're using dynamic security based on your DAX expressions. 
 
@@ -114,15 +83,15 @@ You can take advantage of the DAX functions username() or userprincipalnam
 
 If you're using Windows Authentication in Power BI Desktop OR Power BI Report Server, username() returns a user in the format of DOMAIN\User and userprincipalname() returns a user in the format of user@contoso.com. 
 
-If you're using custom authentication in Power BI Report Server, it returns the username format you’ve setup for users.  
+If you're using custom authentication in Power BI Report Server, it returns the username format you’ve set up for users.  
 
 ## Limitations 
 
-Following is a list of the current limitations for row-level security on Power BI models. 
+Here are the current limitations for row-level security on Power BI models. 
 
-You can define RLS only on the datasets created with Power BI Desktop. If you want to enable RLS for datasets created with Excel, you must convert your files into Power BI Desktop (PBIX) files first. Learn more 
+You can define RLS only on datasets created with Power BI Desktop. To enable RLS for datasets created with Excel, you must convert your files into Power BI Desktop (PBIX) files first. Learn more about [converting Excel files](../desktop-import-excel-workbooks.md).
 
-Only ETL and DirectQuery connections using stored credentials are supported. Live connections to Analysis Services and DirectQuery connections using passthrough authentication are handled in the underlying data source. 
+Only Extract, Transform, Load (ETL) and DirectQuery connections using stored credentials are supported. Live connections to Analysis Services and DirectQuery connections using integrated authentication are handled in the underlying data source. 
 
 Report authors don't have access to view the report data in Power BI Report Server until they've assigned themselves roles accordingly after uploading the report. 
 
@@ -130,26 +99,26 @@ Report authors don't have access to view the report data in Power BI Report Serv
 
 ## FAQ 
 
-Question: Can I create these roles for Analysis Services data sources? 
-Answer: You can if you imported the data into Power BI Desktop. If you're using a live connection, you can't configure RLS within the Power BI service. RLS is defined within the Analysis Services model on-premises. 
+### Can I create these roles for Analysis Services data sources? 
 
-Question: Can I use RLS to limit the columns or measures accessible by my users? 
-Answer: No. If a user has access to a particular row of data, they can see all the columns of data for that row. 
+You can if you imported the data into Power BI Desktop. If you're using a live connection, you can't configure RLS within the Power BI service. RLS is defined within the Analysis Services model on-premises. 
 
-Question: Does RLS let me hide detailed data but give access to data summarized in visuals? 
-Answer: No, you secure individual rows of data but users can always see either the details or the summarized data. 
+### Can I use RLS to limit the columns or measures accessible by my users? 
 
-Question: Can I add new roles in Power BI Desktop if I already have existing roles defined and members assigned in Power BI Report Server? 
-Answer: Yes, your current assignments aren't affected if you make additional roles and republish your report. 
+No. If a user has access to a particular row of data, they can see all the columns of data for that row. 
 
+### Does RLS let me hide detailed data but give access to data summarized in visuals? 
+
+No, you secure individual rows of data but users can always see either the details or the summarized data. 
+
+### Can I add new roles in Power BI Desktop if I already have existing roles and members assigned? 
+
+Yes, if you already have existing roles defined and members assigned in Power BI Report Server, you can make additional roles and republish your report with no affect on your current assignments. 
  
 
 ## Next steps
 
 [What is Power BI Report Server?](get-started.md) 
 [Administrator handbook](admin-handbook-overview.md)  
-[Install Power BI Report Server](install-report-server.md)  
-[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
