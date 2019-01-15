@@ -19,6 +19,12 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
 
+## December 2018
+
+### Filter is now available for landscape reports 
+
+Report's filter pane is now available for landscape reports (in addition to phone report).
+
 ## November 2018
 
 ### Modern visual header 
