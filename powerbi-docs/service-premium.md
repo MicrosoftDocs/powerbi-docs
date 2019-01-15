@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/14/2019
+ms.date: 01/15/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -17,6 +17,7 @@ LocalizationGroup: Premium
 # What is Microsoft Power BI Premium?
 
 Microsoft Power BI Premium provides resources dedicated to running the Power BI service for your organization. It gives you more dependable performance and enables larger data volumes. Premium also enables widespread distribution of content without requiring you to purchase per-user Pro licenses for content consumers. For purchasing information, see [How to purchase Power BI Premium](service-admin-premium-purchase.md).
+</br>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lNQDkN0GXzU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -37,22 +38,21 @@ The following image shows the relationship between Premium capacity and shared c
 
 In shared capacity, Power BI puts more limits on individual users to ensure quality of experience for all users. By default, your workspace is in a shared capacity, including your personal *My workspace* and App workspaces.
 
-The following table provides a summary of the differences between shared capacity and Premium capacity.
+The following table provides a summary of the differences between shared capacity and Premium capacity:
 
 |  | Shared capacity | Power BI Premium capacity |
 | --- | --- | --- |
 | **Refresh rate** |8/day |48/day |
-| **Isolation with dedicated hardware** |![Not available](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
-| **Enterprise Distribution to** _**all users**_ | | |
+| Isolation with dedicated hardware |![Not available](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
+| Enterprise Distribution to *all users* | | |
 | Apps and sharing |![Not available](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
-| Embedded API and controls |![Not available](media/service-premium/not-available.png) |![](media/service-premium/available.png)<sup>2</sup> |
-| **Publish Power BI reports on-premises** |![Not available](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
+| Embedded API and controls |![Not available](media/service-premium/not-available.png) |![](media/service-premium/available.png)<sup>[1](#fnt1)</sup> |
+| Publish Power BI reports on-premises |![Not available](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
 | | | |
 
-*<sup>1</sup> For more information, see [Features by license type](service-features-license-type.md).*  
-*<sup>2</sup> Future enhancements coming to Power BI Premium.*
+<a name="fnt1">1</a> Future enhancements coming to Power BI Premium.
 
-To learn more about assigning workspaces to a premium capacity, see [Manage Power BI Premium](service-admin-premium-manage.md).
+
 
 ### Premium capacity nodes
 
@@ -62,17 +62,17 @@ Power BI Premium is available in node configurations with different v-core capac
 
 * EM nodes can be used for embedded deployments only. EM nodes do not have access to premium capabilities, such as sharing apps to users that don't have a Power BI Pro license.
 
-| Capacity Node | Total v-cores<br/>*(Backend + frontend)*\* | Backend V-Cores | Frontend V-Cores | DirectQuery/live connection limits | Max parallel refreshes per day |  Availability
+| Capacity Node | Total v-cores<br/>*(Backend + frontend)* <sup>[1](#fn1),</sup> | Backend V-Cores | Frontend V-Cores | DirectQuery/live connection limits | Max concurrent refreshes |  Availability
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| EM1 (month to month) |1 v-core |0.5 v-cores, 2.5-GB RAM |0.5 v-cores |3.75 per second |  N/A | Available |
-| EM2 (month to month) |2 v-cores |1 v-core, 5-GB RAM |1 v-core |7.5 per second |  N/A | Available |
-| EM3 (month to month) |4 v-cores |2 v-cores, 10-GB RAM |2 v-cores | | N/A |  Available |
+| EM1 (month to month) |1 v-core |0.5 v-cores, 2.5-GB RAM |0.5 v-cores |3.75 per second |  1 | Available |
+| EM2 (month to month) |2 v-cores |1 v-core, 5-GB RAM |1 v-core |7.5 per second |  2 | Available |
+| EM3 (month to month) |4 v-cores |2 v-cores, 10-GB RAM |2 v-cores | | 3 |  Available |
 | P1 |8 v-cores |4 v-cores, 25-GB RAM |4 v-cores |30 per second | 6 | Available (month to month is also available) |
 | P2 |16 v-cores |8 v-cores, 50-GB RAM |8 v-cores |60 per second | 12 | Available |
 | P3 |32 v-cores |16 v-cores, 100-GB RAM |16 v-cores |120 per second | 24 | Available |
 | | | | | | | |
 
-\* Frontend v-cores are responsible for the web service, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything that relates to the user experience. Backend v-cores are responsible for the heavy lifting: query processing, cache management, running R servers, data refresh, natural language processing, real-time feeds, and server-side rendering of reports and images. With the backend v-cores, a certain amount of memory is reserved as well. Having sufficient memory becomes especially important when dealing with large data models or with a large number of active datasets.
+<a name="fn1">1</a>: Frontend v-cores are responsible for the web service, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything that relates to the user experience. Backend v-cores are responsible for the heavy lifting: query processing, cache management, running R servers, data refresh, natural language processing, real-time feeds, and server-side rendering of reports and images. With the backend v-cores, a certain amount of memory is reserved as well. Having sufficient memory becomes especially important when dealing with large data models or with a large number of active datasets.
 
 ## Workloads in Premium capacity
 
@@ -101,11 +101,9 @@ The following tables show the default and minimum memory values, based on the di
 
 ### Considerations for paginated reports
 
-If you use the paginated reports workload, keep the following points in mind.
+If using the paginated reports workload, keep in mind paginated reports allow you to run your own code when rendering a report (such as dynamically changing text color based on content). Given this fact, we secure Power BI Premium capacity by running paginated reports in a contained space within the capacity. We assign the maximum memory you specify to this space, whether or not the workload is active. If you use Power BI reports or dataflows in the same capacity, make sure you set memory low enough for paginated reports that it doesn't negatively affect the other workloads.
 
-* **Memory allocation in paginated reports**: Paginated reports allow you to run your own code when rendering a report (such as dynamically changing text color based on content). Given this fact, we secure Power BI Premium capacity by running paginated reports in a contained space within the capacity. We assign the maximum memory you specify to this space, whether or not the workload is active. If you use Power BI reports or dataflows in the same capacity, make sure you set memory low enough for paginated reports that it doesn't negatively affect the other workloads.
-
-* **Paginated reports are unavailable**: In rare circumstances, the paginated reports workload can become unavailable. In this case, the workload shows an error state in the admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload then enable it again.
+In rare circumstances, the paginated reports workload can become unavailable. In this case, the workload shows an error state in the admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload then enable it again.
 
 ## Power BI Report Server
 
@@ -118,6 +116,5 @@ Power BI Premium also includes the capability to run Power BI Report Server on-p
 [Managing Power BI Premium](service-admin-premium-manage.md)
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
-[Administering Power BI in your organization](service-admin-administering-power-bi-in-your-organization.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
