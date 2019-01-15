@@ -64,21 +64,28 @@ There are differences between using a service principal and a standard master us
 
 Different from the traditional use of a master user account, using the service principal (app-only token) requires a few different pieces to set up. Now to get started with the service principal (app-only token) you need to set up the right environment.
 
-1. You need to [register an Azure AD application](register-app.md) to capture an Application ID and an Application secret to access your Power BI content.  When you use the [register app tool](https://dev.powerbi.com/apps), choose **Server-side web application** to go through the process of gathering an Application ID and an Application secret.
+1. You need to [register an application in Azure Active Directory](embed-sample-for-customers.md#register-an-application-in-azure-active-directory-azure-ad).
 
-2. [Set up your Power BI environment](embed-sample-for-customers.md#set-up-your-power-bi-environment).
+2. Create a [security group in Azure](https://docs.microsoft.com/azure/virtual-network/security-overview), and add the application you created to that security group.
 
-3. Now you can choose to embed your content either through the [sample application](https://app.powerbi.com/embedsetup/appownsdata) that you can download or within your own application.
+3. [Set up your Power BI environment](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
-    [Embed your content using the sample application](embed-sample-for-customers.md#embed-your-content-using-the-sample-application)
+4. Now you can choose to embed your content within the [sample application](https://app.powerbi.com/embedsetup/appownsdata), or within your own application.
 
-    [Embed your content within your application](embed-sample-for-customers.md#embed-your-content-within-your-application)
+    * [Embed your content using the sample application](embed-sample-for-customers.md#embed-your-content-using-the-sample-application)
+    * [Embed your content within your application](embed-sample-for-customers.md#embed-your-content-within-your-application)
+
+5. Add the security group you created in Azure to the [new workspace](../service-create-the-new-workspaces.md) as an admin.
+
+6. Sign in to Power BI and enable the service principal developer setting in the Power BI admin portal.
+
+    ![Admin portal](media/embed-service-principal/admin-portal.png)
 
 ### Provision
 
-Service principals inherit the permissions for all Power 81 tenant settings from their security group. To restrict permissions, create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
+Once you enable service principals to be used in Power BI, then your AD permissions do not take effect anymore.  Permissions are managed through the admin portal. There is a message in the Power BI admin portal when you enable this setting stating that service principals inherit the permissions for all Power 81 tenant settings from their security group. To restrict permissions, create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
 
-## Using Powershell to create service principal
+## Using Powershell to create a service principal application
 
 1. Open Powershell as an administrator
 
