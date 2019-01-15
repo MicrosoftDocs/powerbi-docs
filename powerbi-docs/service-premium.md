@@ -16,8 +16,7 @@ LocalizationGroup: Premium
 
 # What is Microsoft Power BI Premium?
 
-Microsoft Power BI Premium provides resources dedicated to running the Power BI service for your organization. It gives you more dependable performance and enables larger data volumes. Premium also enables widespread distribution of content without requiring you to purchase per-user Pro licenses for content consumers. For purchasing information, see [How to purchase Power BI Premium](service-admin-premium-purchase.md).
-</br>
+Microsoft Power BI Premium provides resources dedicated to running the Power BI service for your organization. It gives you more dependable performance and enables larger data volumes. Premium also enables widespread distribution of content without requiring you to purchase per-user Pro licenses for content consumers. For purchasing information, see [How to purchase Power BI Premium](service-admin-premium-purchase.md).   
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lNQDkN0GXzU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
