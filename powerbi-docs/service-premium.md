@@ -61,7 +61,7 @@ Power BI Premium is available in node configurations with different v-core capac
 
 * EM nodes can be used for embedded deployments only. EM nodes do not have access to premium capabilities, such as sharing apps to users that don't have a Power BI Pro license.
 
-| Capacity Node | Total v-cores<br/>*(Backend + frontend)* <sup>[1](#fn1),</sup> | Backend V-Cores | Frontend V-Cores | DirectQuery/live connection limits | Max concurrent refreshes |  Availability
+| Capacity Node | Total v-cores<br/>*(Backend+frontend)*  | Backend V-Cores <sup>[1](#fn1)</sup> | Frontend V-Cores <sup>[2](#fn2)</sup> | DirectQuery/live connection limits | Max concurrent refreshes |  Availability
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | EM1 (month to month) |1 v-core |0.5 v-cores, 2.5-GB RAM |0.5 v-cores |3.75 per second |  1 | Available |
 | EM2 (month to month) |2 v-cores |1 v-core, 5-GB RAM |1 v-core |7.5 per second |  2 | Available |
@@ -71,7 +71,9 @@ Power BI Premium is available in node configurations with different v-core capac
 | P3 |32 v-cores |16 v-cores, 100-GB RAM |16 v-cores |120 per second | 24 | Available |
 | | | | | | | |
 
-<a name="fn1">1</a>: Frontend v-cores are responsible for the web service, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything that relates to the user experience. Backend v-cores are responsible for the heavy lifting: query processing, cache management, running R servers, data refresh, natural language processing, real-time feeds, and server-side rendering of reports and images. With the backend v-cores, a certain amount of memory is reserved as well. Having sufficient memory becomes especially important when dealing with large data models or with a large number of active datasets.
+<a name="fn1">1</a>: Frontend v-cores are responsible for the web service, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything that relates to the user experience. 
+
+<a name="fn2">2</a>: Backend v-cores are responsible for the heavy lifting: query processing, cache management, running R servers, data refresh, natural language processing, real-time feeds, and server-side rendering of reports and images. With the backend v-cores, a certain amount of memory is reserved as well. Having sufficient memory becomes especially important when dealing with large data models or with a large number of active datasets.
 
 ## Workloads in Premium capacity
 
