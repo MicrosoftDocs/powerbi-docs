@@ -4,7 +4,7 @@ description: Learn how to register an application within Azure Active Directory 
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
@@ -30,42 +30,40 @@ Here's how to register your application with the Power BI App Registration Tool:
 
 1. Go to [dev.powerbi.com/apps](https://dev.powerbi.com/apps).
 
-    ![New design](media/register-app/register-app-new-design.png)
-
 2. Select **Sign in** with your existing account then select **Next**.
 
-    ![Sign in](media/register-app/register-app-new-design-sign-in.png)
+3. Provide an **Application Name**.
 
-    ![Next](media/register-app/register-app-new-design-next.png)
+4. Provide an **Application Type**. The application type depends on the type of application you're creating.
 
-3. Provide an Application Name.
+    If you plan on creating an application [designed for your customers](embed-sample-for-customers.md), then select **Native** for the Application Type.
 
-4. Provide an Application Type. The App type selection depends on the type of application you're using.
+    Select **Native** for apps that run on client devices. 
 
-   * Use **Native app** for apps that run on client devices. Choose **Native app** if you are embedding content for your customers regardless of what is the application, even for web applications.
-   * Use **Server-side Web app** for web apps or web APIs.
+    Choose **Native** if you are embedding content for your customers and using a master user account to authenticate. Also choose **Native** regardless of what is the application, even for web applications.
 
-    > [!Note]
-    > Default is set to **Server-side web application**.
+    If you plan on creating an application [designed for your organization](embed-sample-for-your-organization.md), then select **Server-side web application** for the Application Type.
+
+    Choose **Server-side Web app** if you are embedding content for your customers and using a service principal application to authenticate. Also, choose **Server-side Web app** for web apps or web APIs.
 
     ![App type](media/register-app/register-app-new-design-app-type.png)
 
-5. Enter a value for **Home Page URL** and **Redirect URL**. The **Redirect URL** works with any valid URL.
-
-    **Home Page URL** and **Redirect URL** are only available if you choose **Server-side Web app** for the application type.
+5. If you selected **Server-side web application** for the application type then continue with entering a value for **Home Page URL** and **Redirect URL**. The **Redirect URL** works with any valid URL.
 
     > [!Note]
     > For the *embedding for your customers* and *embedding for your organization* samples, the **Redirect URL** is `http://localhost:13526/Redirect`.
 
-6. Choose the APIs for the application that has access. For more information about Power BI access permissions, see [Power BI Permissions](power-bi-permissions.md).
+6. Choose the APIs for the application that has access. For more information about Power BI access permissions, see [Power BI Permissions](power-bi-permissions.md). Then select **Register**
 
-    ![App Registration APIs](media/register-app/register-app-new-app-registration-apis-register.png)
+7. If you choose **Native** for the application type, then you are then provided an **Application ID**. If you select **Server-side Web app** for the application type, then you receive an **Application ID** and an **Application secret**.
 
-7. Select **Register**.
+    > [!Note]
+    > The **Application ID** can be retrieved from the Azure portal, at a later time, if needed. If you lose the **Application secret**, you need to create a new one within the Azure portal.
 
-    You are then provided an **Application ID**, and if you select **Server-side Web app**, you receive an **Application secret**. The **Application ID** can be retrieved from the Azure portal, at a later time, if needed. If you lose the **Application secret**, you need to create a new one within the Azure portal.
+| Native | Server-side web application |
+|--------|-----------------------------|
+| ![Native success](media/register-app/register-app-new-design-success-native.png) | ![Server-side web app success](media/register-app/register-app-new-design-success-server-side-web-app.png) |
 
-    ![Success](media/register-app/register-app-new-design-success.png)
 
 You can now use the registered application as part of your custom application to interact with the Power BI service and with your Power BI Embedded application.
 
