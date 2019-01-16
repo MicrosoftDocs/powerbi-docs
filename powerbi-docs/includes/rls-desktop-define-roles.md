@@ -1,4 +1,4 @@
-## Define roles and rules within Power BI Desktop
+## Define roles and rules in Power BI Desktop
 You can define roles and rules within Power BI Desktop. When you publish to Power BI, it also publishes the role definitions.
 
 To define security roles, follow these steps.

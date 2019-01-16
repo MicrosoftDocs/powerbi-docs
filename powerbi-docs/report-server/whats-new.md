@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/14/2019
+ms.date: 01/15/2019
 ---
 
 # What's new in Power BI Report Server
@@ -27,11 +27,25 @@ For related Power BI "What's New" information, see:
 
 Support for these features in Power BI reports:
 
-- [Row-level security](row-level-security-report-server.md)
-- [Expand and collapse on matrix row headers](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse)
-- [Copy and paste between .pbix files](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste)
-- Smart guides
-- Too many accessibility features to list: for example, [data view accessibility support](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#dataView)
+[**Row-level security**](row-level-security-report-server.md) Setting up row-level security (RLS) with Power BI Report Server can restrict data access for given users. Filters restrict data access at the row level, and you can define filters within roles.
+
+[**Expand and collapse on matrix row headers**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse) We've added the ability to expand and collapse individual row headers, one of the most requested visual features.
+
+[**Copy and paste between .pbix files**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) You can copy visuals between .pbix files, either from the visual’s context menu or with the standard Ctrl+C keyboard shortcut, and paste it into another report with Ctrl+V.
+
+[**Smart alignment guides**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) You see smart alignment guides when moving objects on your report page, like you see in PowerPoint, to help you align everything on your page. You see the smart guides any time you drag or resize something on your page. When you move an object near another one, it snaps into a position aligned with the other object.
+
+**Accessibility features**
+Too many accessibility features to list: for example, [fields list pane accessibility support](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList) The fields list pane is fully accessible. You can navigate around the pane using just your keyboard and a screen reader and use the context menu to add fields to your report page.
+
+### Administrator settings
+
+Administrators can set the following properties in SSMS Advanced Properties for the server farm:
+
+**SupportedHyperlinkSchemes** – Sets the scheme of Hyperlink actions that can be set. If someone wants to avoid javascript injection attacks they can remove the “javascript” scheme to prevent a report author from injecting something like javascript:eval(“window.location = ‘https://evilwebsite.com’;”)
+
+**AllowedResourceExtensionsForUpload** – Sets extensions that can be allowed to be uploaded to the report server to avoid uploads of files like “*.exe” or “*.bin”
+
 
 ## August 2018
 

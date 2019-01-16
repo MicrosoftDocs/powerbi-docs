@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/14/2019
+ms.date: 01/15/2019
 ---
 
 # Row-level security (RLS) in Power BI Report Server
@@ -84,7 +84,7 @@ After you save your report in Power BI Report Server, you manage security and ad
     ![Delete members](media/row-level-security-report-server/power-bi-report-server-delete-members.png)
 
 
-## Using the username() or userprincipalname() DAX function 
+## username() and userprincipalname()
 
 You can take advantage of the DAX functions username() or userprincipalname() within your dataset. You can use them within expressions in Power BI Desktop. When you publish your model, Power BI Report Server uses those expressions. 
 
@@ -99,6 +99,10 @@ Here are the current limitations for row-level security on Power BI models.
 You can define RLS only on datasets created with Power BI Desktop. To enable RLS for datasets created with Excel, you must convert your files into Power BI Desktop (PBIX) files first. Learn more about [converting Excel files](../desktop-import-excel-workbooks.md).
 
 Only Extract, Transform, Load (ETL) and DirectQuery connections using stored credentials are supported. Live connections to Analysis Services and DirectQuery connections using integrated authentication are handled in the underlying data source. 
+
+If you're using integrated security with DirectQuery, then your users may notice:
+- RLS is disabled and all data is returned.
+- Users can't update their role assignments, and get an error on the RLS Manage page
 
 Report authors don't have access to view the report data in Power BI Report Server until they've assigned themselves roles accordingly after uploading the report. 
 
