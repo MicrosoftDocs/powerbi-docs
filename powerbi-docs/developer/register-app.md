@@ -34,11 +34,9 @@ Here's how to register your application with the Power BI App Registration Tool:
 
 3. Provide an **Application Name**.
 
-4. Provide an **Application Type**. The application type depends on the type of application you're creating.
+4. Provide an **Application Type**.
 
     If you plan on creating an application [designed for your customers](embed-sample-for-customers.md), then select **Native** for the Application Type.
-
-    Select **Native** for apps that run on client devices. 
 
     Choose **Native** if you are embedding content for your customers and using a master user account to authenticate. Also choose **Native** regardless of what is the application, even for web applications.
 
@@ -48,10 +46,7 @@ Here's how to register your application with the Power BI App Registration Tool:
 
     ![App type](media/register-app/register-app-new-design-app-type.png)
 
-5. If you selected **Server-side web application** for the application type then continue with entering a value for **Home Page URL** and **Redirect URL**. The **Redirect URL** works with any valid URL.
-
-    > [!Note]
-    > For the *embedding for your customers* and *embedding for your organization* samples, the **Redirect URL** is `http://localhost:13526/Redirect`.
+5. If you selected **Server-side web application** for the application type then continue with entering a value for **Home Page URL** and **Redirect URL**. The **Redirect URL** works with any valid URL and should correspond with the application you have created. If you selected **Native** then continue to step 6.
 
 6. Choose the APIs for the application that has access. For more information about Power BI access permissions, see [Power BI Permissions](power-bi-permissions.md). Then select **Register**
 
