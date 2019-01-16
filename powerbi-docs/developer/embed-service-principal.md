@@ -56,7 +56,7 @@ There are differences between using a service principal and a standard master us
 | Works with the new app workspaces (v2) | Yes | Yes |
 | Needs to be a workspace admin | Yes | Yes |
 | Can use multi-factor authentication (MFA) in Azure | No | Yes |
-| Power BI REST APIs | Yes | Yes |
+| Can be used with Power BI REST APIs | Yes | Yes |
 | Needs a global admin to create | Yes | No |
 | Can install and manage an On-premises data gateway | Yes | No |
 
