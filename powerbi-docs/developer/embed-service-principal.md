@@ -17,7 +17,7 @@ With **service principal**, you can embed Power BI content into an application a
 
 When working with Power BI Embedded, there are advantages when using service principal.  A primary advantage is you do not need a master user account (Power BI Pro license) to authenticate into your application. Service principal uses an application ID and an application secret to authenticate the application.
 
-As you automate various tasks with Power BI APIs, you can now script creating a service principal (app-only token) to use for authentication. You can script service principal to scale.
+As you automate various tasks with Power BI APIs, you can script a service principal (app-only token) to use for authentication. You can script service principal to scale.
 
 ## Application and service principal relationship
 
