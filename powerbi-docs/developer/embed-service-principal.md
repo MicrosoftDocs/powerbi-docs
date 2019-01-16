@@ -133,45 +133,11 @@ Using Power BI REST APIs, allows you to specify the effective identity for SQL S
 
 Customers that configure row-level security (rls) using a SSAS data source can enjoy the new service principal capability to manage users and their access to data in SSAS when integrating with **Power BI Embedded**.
 
-When you're generating the embed token, you can specify the effective identity of a user in Azure SQL. You can specify the effective identity of a user by passing the AAD access token to the server. The access token is used to pull only the relevant data for that user from Azure SQL, for that specific session.
+When you're generating the embed token, you can currently specify the effective identity of a user using a master user account. Now you can also use a service principal object to specify the effective identity. You can specify the effective identity of a user by passing the AAD access token to the server. The access token is used to pull only the relevant data for that user for a SSAS on-premises live connection.
 
-It can be used to manage each user’s view in Azure SQL or to sign in to Azure SQL as a specific customer in a multi-tenant DB. It can also be used to apply row-level security on that session in Azure SQL and retrieve only the relevant data for that session, removing the need to manage RLS in Power BI.
+Such effective identity issues apply to RLS rules directly on the SSAS server. Power BI Embedded uses the provided access token when querying data from the SSAS server.
 
-Such effective identity issues apply to RLS rules directly on the Azure SQL Server. Power BI Embedded uses the provided access token when querying data from the Azure SQL Server. The UPN of the user (for which the access token was provided) is accessible as a result of the USER_NAME() SQL function.
-
-The token-based identity only works for DirectQuery models on dedicated capacity - connected to an Azure SQL Database, which is configured to allow AAD authentication ([learn more about AAD authentication for Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-manage-logins)). The dataset’s data source must be configured to use end users’ OAuth2 credentials, to use a token-based identity.
-
-   ![Configure Azure SQL server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
-
-### Token-based Identity SDK additions
-
-The identity blob property was added to our effective identity in the token generation scenario.
-
-```JSON
-[JsonProperty(PropertyName = "identityBlob")]
-public IdentityBlob IdentityBlob { get; set; }
-```
-
-The IdentityBlob type is a simple JSON structure holding a value string property
-
-```JSON
-[JsonProperty(PropertyName = "value")]
-public string value { get; set; }
-```
-
-The EffectiveIdentity can be created with identity blob using the following call:
-
-```C#
-public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null, IdentityBlob identityBlob = null);
-```
-
-Identity blob can be created using the following call.
-
-```C#
-public IdentityBlob(string value);
-```
-
-### Token-based Identity REST API Usage
+### REST API Usage
 
 If you're calling the [REST API](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetoken#definitions), you can add identity blob inside each identity.
 
