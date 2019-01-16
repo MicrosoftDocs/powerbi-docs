@@ -15,7 +15,7 @@ ms.date: 01/31/2018
 
 With **service principal**, you can embed Power BI content into an application and use automation with Power BI using an **app-only** token. Service principal is beneficial when using **Power BI Embedded** or when **automating Power BI tasks and processes**.
 
-When working with Power BI Embedded, there are advantages when using service principal.  A primary advantage is you do not need a master user account (Power BI Pro license) to authenticate into your application. Service principal uses an application ID and an application secret to authenticate the application.
+When working with Power BI Embedded, there are advantages when using a service principal application.  A primary advantage is you do not need a master user account (Power BI Pro license) to authenticate into your application. Service principal uses an application ID and an application secret to authenticate the application.
 
 As you automate various tasks with Power BI APIs, you can script service principal (app-only token) to scale.
 
@@ -30,7 +30,7 @@ When you [register an Azure AD application](register-app.md) in the Azure portal
 * An application object
 * A [service principal object]((https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object))
 
-Consider the application object as the *global* representation of your application for use across all tenants, and the service principal as the *local* representation for use in a specific tenant.
+Consider the application object as the *global* representation of your application for use across all tenants, and the service principal object as the *local* representation for use in a specific tenant.
 
 The application object serves as the template from which common and default properties are *derived* for use in creating corresponding service principal objects.
 
@@ -38,15 +38,15 @@ A service principal is required per tenant where the application is used, enabli
 
 ## Service principal with Power BI Embedded
 
-With service principal, you can mask your master user account information in your application by using an application ID (app ID) and an application secret (app secret). You don't have to hard-code a master user account into your application to authenticate.
+With service principal, you can mask your master user account information in your application by using an application ID and an application secret. You no longer need to hard-code a master user account into your application to authenticate.
 
-Since **Power BI APIs** and **Power BI .NET SDK** now support calls using service principal, you can use all the [Power BI APIs](https://docs.microsoft.com/rest/api/power-bi/) with service principal. For example, you can make changes to workspaces such as create workspaces, add or remove users from workspaces, and import content into workspaces.
+Since **Power BI APIs** and **Power BI .NET SDK** now support calls using service principal, you can use the [Power BI APIs](https://docs.microsoft.com/rest/api/power-bi/) with service principal. For example, you can make changes to workspaces such as create workspaces, add or remove users from workspaces, and import content into workspaces.
 
-You can only use a service principal if your Power BI artifacts and resources are stored in a [Power BI new workspace](../service-create-the-new-workspaces.md).
+You can only use a service principal application if your Power BI artifacts and resources are stored in the [new Power BI workspace](../service-create-the-new-workspaces.md).
 
 ## Service principal vs. master user account
 
-There are differences between using a service principal and a standard master user account (Power BI Pro license) for authentication.
+There are differences between using a service principal and a standard master user account (Power BI Pro license) for authentication. The below table highlights some significant differences.
 
 | Function | Master User Account </br> (Power BI Pro license) | Service Principal </br> (app-only token) |
 |------------------------------------------------------|---------------------|-------------------|
