@@ -1,15 +1,15 @@
 ---
 title: What's new in the mobile apps for Power BI
 description: What's new in the mobile apps for Power BI
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/14/2018
-ms.author: maggies
+ms.date: 11/08/2018
+ms.author: mshenhav
 
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,62 @@ For related "What's New" information, see:
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
+
+## December 2018
+
+### Filter is now available for landscape reports 
+
+Report's filter pane is now available for landscape reports (in addition to phone report).
+
+## November 2018
+
+### Modern visual header 
+
+Reports using the new ‘modern visual header’ will no longer allocate space for headers, resulting in less empty space and more room for your visualizations.
+
+### Enhance presentation mode (Windows)
+
+Enhanced presentation mode for Surface Hub and Windows 10 devices.  Enjoy an enhanced Surface Hub meeting room experience, with improved presentation and collaboration tools, and a chromeless, large-screen optimized view, so you can focus on your data. Presentation mode also provides tools such inking to help you effectively present and have discussions about your data. Read more about presentation mode [here](https://powerbi.microsoft.com/en-us/blog/presentation-mode-in-power-bi-windows-app/).
+
+### Portrait report layout in tablets (iOS and Android)
+
+We now use phone report layout, when it exists, for displaying reports on tablet in portrait mode orientation. Read more on [how to create phone layout in Power BI Service or Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report/).
+
+### Supporting report query string 
+
+Opening report link that includes query string will now be opened in the mobile app and be pre-filtered based on the conditions defined in the query string. Learn more on [how to create report url with query string](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+
+### Shared credentials (now in Android)
+
+Signing in to Power BI from your mobile app has never been easier. With shared credentials, we simplified the sign-in process by using other Office 365 app credentials on the device to authenticate you in the Power BI service.
+
+### In-app URLs (now in Android) 
+
+Links in reports that point to other Power BI artifacts now open directly inside the app. This enables you to build custom navigation flows, for example, linking from a report into a dashboard.
+
+### Show data and copy values
+
+Report visual action menu (...) now has the option to show the underlying data in table format. Once in the table, you can long-tap to select and copy values from that table (assuming that there is no Intune policy restricting copying).
+
+## October 2018
+
+### Paginated report preview (all devices)
+
+Paginated reports are now available on Power BI service. Users with access to paginated reports in Power BI Service can also access these reports from their mobile app. 
+
+Read the Power BI [blog post about paginated reports in mobile](https://powerbi.microsoft.com/en-us/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
+
+### Shared credentials (iOS)
+
+Signing in to Power BI from your mobile app has never been easier. With shared credentials, we simplified the sign-in process by using other Office 365 app credentials on the device to authenticate you in the Power BI service.
+
+### In-app URLs (iOS) 
+
+Links in reports that point to other Power BI artifacts now open directly inside the app. This enables you to build custom navigation flows, for example, linking from a report into a dashboard.
+
+### iOS12 and watchOS 5 support 
+
+We have updated Power BI app for iOS to work seamlessly with the new OS on mobile devices and watch.
 
 ## September 2018
 
@@ -38,10 +94,11 @@ Read the Power BI [blog post about dashboard comments](https://powerbi.microsoft
 Single Sign-On (SSO) is one of the most requested capabilities for Power BI mobile for Windows. 
 Now you can use your primary organizational account not only to sign in to your domain-joined Windows mobile devices, but also to sign in seamlessly to the Power BI service. Read more about [SSO and the Windows mobile apps](mobile-windows-10-app-single-sign-on-sso.md).
 
+## Previous months
 
-## July 2018
+### July 2018
 
-### iOS and Android only
+#### iOS and Android only
 
 **Shared filters**
 
@@ -52,127 +109,125 @@ You can now receive reports with shared filters and slicers.
 When you view a report in landscape mode on your mobile device, you see the same background images that you see in Power BI on the web.
 
 
-## June 2018
+### June 2018
 
-### Full-canvas reports
+#### Full-canvas reports
 
 Top and bottom action bars now disappear shortly after your report loads, so you can see more of your report at once.
 
-### Increased phone report canvas size
+#### Increased phone report canvas size
 
 We increased phone report canvas size to have room for more visuals than before.
 
-## May 2018
+### May 2018
 
-### Mobile drill-through: all mobile apps
+#### Mobile drill-through: all mobile apps
 
 You can drill through from a selected data point to another report page in the mobile apps, if the report author has defined that action. 
 
-### Back button: all mobile apps
+#### Back button: all mobile apps
 
 Now when you navigate through a report by swiping, choosing a report page on the action bar, or using drill-through, the back button takes you back to the previous page you were looking at. 
 
-### Dashboard themes: all mobile apps
+#### Dashboard themes: all mobile apps
 
 When report authors customize dashboard themes in the Power BI service, the look and feel of the dashboard will change in the mobile app, too. However, you won't see background images.
 
-### iOS: Configure Power BI iOS mobile app access to a report server remotely
+#### iOS: Configure Power BI iOS mobile app access to a report server remotely
 
 Your IT admin can now use an MDM tool to configure Power BI iOS mobile app access to a report server. See [Configure Power BI iOS mobile app access to a report server remotely](../../report-server/configure-powerbi-mobile-apps-remote.md) for details.
 
-### Power BI for Mixed Reality app (Preview)
+#### Power BI for Mixed Reality app (Preview)
 
 The Power BI for Mixed Reality app is now in the Microsoft Store. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. See the new [Introducing Power BI on Hololens](https://www.youtube.com/watch?v=J_X_nOFUBss) video for context, or read the article about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
 
 
-## April 2018
+### April 2018
 
-### Mobile drill-down and drill-up
+#### Mobile drill-down and drill-up
 
 You can now drill down and drill up to dive into report visuals on your mobile device. To access this new feature, tap and hold to open the tooltip menu on a report visual, and then tap the drill buttons to explore your data in depth. More about [drilling up and down in the mobile apps](https://powerbi.microsoft.com/blog/drill-down-up-in-power-bi-mobile-apps/).
 
-### Persistent filters
+#### Persistent filters
 
 We recently updated report filters and slicers, so they are automatically saved from Power BI on the web to the Power BI mobile app. Now, filters and slicers you set in the mobile app are automatically saved to Power BI on the web.
 
 
-## March 2018
+### March 2018
 
-### Power BI for Mixed Reality app (Preview)
+#### Power BI for Mixed Reality app (Preview)
 
 In the latest move to bring data where you are, we've created the Power BI for Mixed Reality app. View your dashboards and reports while immersed in the virtual world, or place them and view them in specific locations in the context of your environment. Read more about the new [Power BI for Mixed Reality app](mobile-mixed-reality-app.md).
 
-### Share reports and dashboards externally
+#### Share reports and dashboards externally
 
 Share dashboards and reports with users outside of your organization, directly from the app. External sharing in enabled for both organizational and social accounts. 
 
-### Persistent filters
+#### Persistent filters
 
 When you set filters and slicers in Power BI on the web, your filter choices are saved to your mobile app as well, so you can pick up where you left off.
 
-### Refresh reports on the iPad
+#### Refresh reports on the iPad
 
 Power BI reports now have a refresh button in the iPad app.
 
-## February 2018
+### February 2018
 
-### Share reports
+#### Share reports
 
 Now you can share a report directly from the mobile apps. Read more about [sharing dashboards and reports from the mobile apps](mobile-share-dashboard-from-the-mobile-apps.md)
 
-### Improved tooltips
+#### Improved tooltips
 
 When you tap and hold on a report visual to access tooltips, you can now drag your finger across the visual to explore details about each data point along the way.
 
-## January 2018
+### January 2018
 
-### Report favorites
+#### Report favorites
 
 Tag reports as favorites so they appear on the **Favorites** page. Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md).
 
-### View shared reports
+#### View shared reports
 
 Now when someone shares a report with you, it's listed on the **Shared with me** page along with dashboards.
 
-### Improved hyperlink support
+#### Improved hyperlink support
 
 You can now tap links in custom visuals to open them in your mobile browser.
 
-### Intune integration (Android)
+#### Intune integration (Android)
 
 Support for conditional access using Intune mobile device management.
 
-## December 2017
+### December 2017
 
-### Improved security management 
+#### Improved security management 
 
 We’ve added support for conditional access (CA) and Microsoft Intune mobile device management (MDM) on Android devices, to better secure your organization’s data. It's already available on iOS.
 
-### Improved permission management
+#### Improved permission management
 
 We’ve made some changes that allow for more precise management of user permissions for datasets, dashboards, and reports.
 
-### Auto-installed apps
+#### Auto-installed apps
 
 You don't need to install some of the apps in Power BI at all. Power BI app creators in your organization can create *apps* that contain a collection of dashboards and reports. Then they can publish the app and set it to install automatically in the Power BI service and the Power BI mobile apps. When an app is set to install for you, it automatically appears in your **Apps** menu:
 
 ![Apps in the Power BI mobile app](./media/mobile-whats-new-in-the-mobile-apps/power-bi-apps-mobile-apps.png)
 
-## November 2017
-### iPhone X optimization
+### November 2017
+#### iPhone X optimization
 
 We’ve optimized the app layout for iPhone X, so you can explore your data in style on every device.
 
-## October 2017
-### Filters for phone reports in Android
+### October 2017
+#### Filters for phone reports in Android
 
 If you create a report with phone-optimized pages in Power BI Desktop, and the report has filters, you can now apply those filters in the phone report on your Android. Read more about filters for Power BI reports on Android.
 
-### Show data in reports
+#### Show data in reports
 
 You can now switch visuals in your reports to a table view to see the numbers behind the data. To access this feature, tap "Show data" from the visual's ... menu on your report or the new icon on the expanded visual's action menu.
-
-## Previous months
 
 ### September 2017
 #### Filters for phone reports in iPhones
@@ -196,7 +251,7 @@ You can set the visuals in your dashboard or report to be *responsive*, to chang
 ### June 2107
 #### All devices
 **Make apps favorites**
-You can already make a dashboard a favorite. Recently, [Power BI added apps](../end-user-apps.md), and now you can make apps favorites, too. 
+You can already make a dashboard a favorite. Recently, [Power BI added apps](../../service-create-distribute-apps.md), and now you can make apps favorites, too. 
 
 ### May 2017
 #### All devices
@@ -558,7 +613,7 @@ All of the January improvements are already in the new [Power BI app for Windows
 
 **R tiles and web widgets** View these new tile types in dashboards on your mobile device.
 
-**Bing dashboards** In the Power BI service, you can now create [dashboards with Bing search results](../end-user-connect-to-services.md), and view them on your mobile device.
+**Bing dashboards** In the Power BI service, you can now create [dashboards with Bing search results](../../service-connect-to-services.md), and view them on your mobile device.
 
 **Report pages pinned as tiles to dashboards** Now that you can pin a whole report page to a dashboard in the Power BI service, you can view report pages in the Power BI app on your iPhone or on your Android phone.
 

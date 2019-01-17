@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/19/2018
 ms.author: maggies
@@ -27,7 +27,7 @@ If you've already created Power BI reports in Power BI Desktop, then you're almo
 
     ![Download Power BI Desktop from the web portal](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
 
-    Or go directly to [Microsoft Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=57271) (Optimized for Power BI Report Server - August 2018) in the Microsoft Download Center.
+    Or go directly to [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) (Optimized for Power BI Report Server - August 2018) in the Microsoft Download Center.
 
 2. In the Download Center page, select **Download**.
 

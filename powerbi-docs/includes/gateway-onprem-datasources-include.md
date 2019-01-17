@@ -6,7 +6,7 @@
 | Analysis Services Multidimensional |Yes |Yes |
 | File |No |Yes |
 | Folder |No |Yes |
-| IBM DB2 |No |Yes |
+| IBM DB2 |Yes |Yes |
 | IBM Informix Database |No |Yes |
 | IBM Netezza |Yes |Yes |
 | Impala |Yes |Yes |
@@ -20,6 +20,7 @@
 | SAP HANA |Yes |Yes |
 | SharePoint list (on-premises) |No |Yes |
 | Snowflake |Yes |Yes |
+| Spark |Yes |Yes |
 | SQL Server |Yes |Yes |
 | Sybase |No |Yes |
 | Teradata |Yes |Yes |

@@ -1,19 +1,19 @@
 ---
-title: 'Tutorial: Ask questions with Q&A virtual analyst in iOS apps - Power BI'
+title: 'Tutorial: Ask questions with Q&A virtual analyst in iOS apps'
 description: In this tutorial, ask questions about sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on on your iOS device.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: tutorial
-ms.date: 05/08/2018
-ms.author: maggies
+ms.date: 11/16/2018
+ms.author: mshenhav
 #customer intent: As a Power BI end user, I want to see how the virtual analyst works in the iOS mobile apps so I can use the analyst to explore my own data. 
 
 ---
-# Tutorial: Ask questions about your data with the Q&A virtual analyst in iOS apps - Power BI
+# Tutorial: Ask questions about your data with the Q&A virtual analyst in the Power BI iOS apps
 
 The easiest way to learn about your data is to ask questions about it in your own words. In this tutorial, you ask questions and view featured insights about sample data with the Q&A virtual analyst in the Microsoft Power BI mobile app on your iPad, iPhone, and iPod Touch. 
 

@@ -6,7 +6,7 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
@@ -42,9 +42,9 @@ You can use a live connection against tabular or multidimensional instances.
 
 ## Download and install the On-premises data gateway
 
-To download the gateway, select **Data Gateway** under the Downloads menu. Download the [On-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925). 
+To download the gateway, select **Data Gateway** under the Downloads menu. Download the [On-premises data gateway](http://go.microsoft.com/fwlink/?LinkID=820925).
 
-Note that updating the On-premises data gateway is achieved by reinstalling the gateway, as described in this section. When updating the gateway (by reinstalling), your existing gateways settings are retained.
+Note that you update the On-premises data gateway by installing the gateway again, as described in this section. As long as you install a newer version of the gateway, your existing settings are retained. If you install the same version, it treats this as a complete reinstall, and your settings are not retained.
 
 ![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 
@@ -85,8 +85,9 @@ When you add a data source to the gateway, you need to provide credentials for t
 ## Limitations and Considerations
 
 * [Azure Information Protection](https://docs.microsoft.com/microsoft-365/enterprise/protect-files-with-aip
-) is not currently supported
-* [Access Online](https://products.office.com/en-us/access) is not currently supported
+) is not currently supported.
+* [Access Online](https://products.office.com/en-us/access) is not currently supported.
+* R scripts are supported only when the gateway is run in personal mode.
 
 ## Tenant level administration
 
@@ -95,7 +96,7 @@ There is currently no single place where tenant administrators  can manage all t
 ## Enabling outbound Azure connections
 
 The On-premises data gateway relies on Azure Service Bus for cloud connectivity and correspondingly establishes outbound connections to its associated Azure region. By default, this is the location of your Power BI tenant. See Where is my [Power BI tenant located?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
-If a firewall is blocking outbound connections, you must configure the firewall to allow outbound connections from the On-premises data gateway to its associated Azure region. See [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653) for details about the IP address ranges of each Azure data center.
+If a firewall is blocking outbound connections, you must configure the firewall to allow outbound connections from the On-premises data gateway to its associated Azure region. See [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/download/details.aspx?id=41653) for details about the IP address ranges of each Azure data center.
 > [!NOTE]
 > The IP address ranges might change over time, so make sure you download the latest information on a regular basis. 
 
@@ -113,7 +114,7 @@ If you think you are encountering proxy issues, with the gateway, see [Configuri
 [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md)  
 [Manage your data source - Import/Scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 [On-premises data gateway in-depth](service-gateway-onprem-indepth.md)  
-[On-premises data gateway (personal mode) - the new version of the personal gateway](service-gateway-personal-mode.md)
+[On-premises data gateway (personal mode) - the new version of the personal gateway](service-gateway-personal-mode.md)  
 [Configuring proxy settings for the On-premises data gateway](service-gateway-proxy.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

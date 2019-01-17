@@ -6,7 +6,7 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/31/2018
 LocalizationGroup: Embedded

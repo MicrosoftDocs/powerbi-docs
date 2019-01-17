@@ -7,7 +7,7 @@ ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: maggies
@@ -53,7 +53,7 @@ Visit our [playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBH
 ## What is Power BI service?
 Microsoft Power BI service is sometimes referred to as Power BI online or app.powerbi.com. Power BI helps you stay up to date with the information that matters to you.  With Power BI service, ***dashboards*** help you keep a finger on the pulse of your business.  Your dashboards display ***tiles*** that you can click to open ***reports*** for exploring further.  Connect to multiple ***datasets*** to bring all of the relevant data together in one place. Need help understanding the building blocks that make up Power BI?  See [Power BI - Basic Concepts](consumer/end-user-basic-concepts.md).
 
-If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by connecting to Salesforce to automatically create a dashboard from that data, or [check out all the other SaaS apps](service-get-data.md) you can connect to. If you are part of an organization, see if any [apps](consumer/end-user-create-apps.md) have been published for you.
+If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by connecting to Salesforce to automatically create a dashboard from that data, or [check out all the other SaaS apps](service-get-data.md) you can connect to. If you are part of an organization, see if any [apps](service-create-distribute-apps.md) have been published for you.
 
 Read about all the other ways to [get data for Power BI](service-get-data.md).
 
@@ -156,5 +156,5 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 Ready to try more?  Here are some great ways to explore Power BI.
 
 > [!div class="nextstepaction"]
-> [Connect to the online services you use](consumer/end-user-connect-to-services.md)
+> [Connect to the online services you use](service-connect-to-services.md)
 

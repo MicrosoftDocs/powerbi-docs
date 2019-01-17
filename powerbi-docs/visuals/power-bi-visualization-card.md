@@ -6,7 +6,7 @@ manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/26/2018
 ms.author: mihart
@@ -21,7 +21,7 @@ Sometimes a single number is the most important thing you want to track in your 
 ## Create a card using the report editor
 These instructions use the Retail Analysis Sample. To follow along, [download the sample](../sample-datasets.md) for Power BI service (app.powerbi.com) or Power BI Desktop.   
 
-1. Start on a [blank report page ](../power-bi-report-add-page.md) and select the **Store** \> **Open store count** field. If you're using Power BI service, you'll need to open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
+1. Start on a blank report page and select the **Store** \> **Open store count** field. If you're using Power BI service, you'll need to open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
 
     Power BI creates a column chart with the one number.
 
@@ -54,7 +54,7 @@ The Q&A question box is the easiest way to make a Card. The Q&A question box is 
    ![](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
 > [!TIP]
-> From a Power BI service report, in [Editing view](../service-reading-view-and-editing-view.md), select **Ask a question** from the top menubar. From a Power BI Desktop report, find some open space in a report and double-click to open a question box.
+> From a Power BI service report, in Editing view, select **Ask a question** from the top menubar. From a Power BI Desktop report, find some open space in a report and double-click to open a question box.
 
 3. For example, type "number of opportunities" in the question box.
 

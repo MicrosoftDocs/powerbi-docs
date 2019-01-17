@@ -6,9 +6,9 @@ manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 01/09/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -25,44 +25,38 @@ The following tips are provided. Have another great tip? Great! Send it our way 
 * Use diverging color scales
 * How to undo in Power BI
 
-To make any changes, you must be editing a report: select your **Report** from the **My Workspace** pane, then select **Edit Report** from the top menu area, as shown in the following image.
+To make any changes, you must be editing a report. Open the report and select **Edit Report** from the top menu area, as shown in the following image.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_1.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
-When the **Visualizations** pane appears along the right side of the **Report** canvas, you’re ready to start customizing.
+When the **Visualizations** pane appears along the right side of the **Report** canvas, you’re ready to start customizing. If the pane does not appear, select the arrow, from the top right corner, to open it.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_2.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-formatting-pane.png)
 
 ## Change the color of a single data point
 Sometimes you want to highlight one particular data point. Perhaps it’s sales figures for the launch of a new product, or increased quality scores after launching a new program. With Power BI, you can highlight a particular data point by changing its color.
 
-The following visualization ranks states in terms of cost of living. 
+The following visualization ranks units sold by product segment. 
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_3.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-grey.png)
 
-Now imagine you want to quickly show where Washington lands in that ranked list, by using color. Here are the steps:
+Now imagine you want to call out the **Convenience** segment to show how well this brand new segment is performing, by using color. Here are the steps:
 
-Expand the **Data Colors** section. The following appears.
+Expand the **Data Colors** section and turn the slider On for **Show all**. This displays the colors for each data element in the visualization. When you hover over the data points, scrolling is enabled so you can modify any of the data points.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_4.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-show-all.png)
 
-Set **Show All** to **On**. This displays the colors for each data element in the visualization. When you hover over the data points, scrolling is enabled so you can modify any of the data points.
+Set **Convenience** to orange. 
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_5.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-orange.png)
 
-In this case, let’s change **Washington** to green. We scroll down to **Washington** and select the down arrow inside its color box, and the color selection window appears.
+Once selected, the **Convenience** data point is a nice shade of orange, and certainly stands out.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_6.png)
+Even if you change visualization types, then return, Power BI remembers your selection and keeps **Convenience** orange.
 
-Once selected, the **Washington** data point is a nice shade of green, and certainly stands out.
+You can change the color of a data point for one, several, or all data elements in the visualization. Perhaps you want your visual to mimic your corporate colors. 
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_7.png)
-
-Even if you change visualization types, then return, Power BI remembers your selection and keeps **Washington** green.
-
-You can change the color of a data point for more than one data element, too. In the following image, **Arizona** is red, and **Washington** is still green.
-
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_8.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-corporate.png)
 
 There are all sorts of things you can do with colors. In the next section, we take a look at gradients.
 
@@ -72,16 +66,27 @@ Charts often benefit from dynamically setting color based on the numeric value o
 The following sections demonstrate different ways to base color on a numeric value.
 
 ## Base the color of data points on a value
-To change color based on a value, drag the field you want to base color on into the **Color Saturation** area in the **Field** pane. In the following image, **Profit before tax** has been dragged into **Color Saturation**. As can see that, although **Velo** has higher **Gross Sales** (its column is higher), **Amarilla** has a larger **Profit before tax** (its column has more color saturation).
+To change color based on a value, drag the field you want to base color on into the **Color Saturation** area in the **Fields** pane. In the following image, **%Market Share SPLY YTD** has been dragged into **Color Saturation**. 
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_9.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-color-saturation.png)
+
+And on the Formatting pane, under **Data colors**, determine how the value of **%Market Share SPLY YTD** will change the color and shading in your column chart. In this example, lower %Market Share will be lighter blue and higher values will be darker blue.
+
+
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors2.png)
+
+
+As can see that, although we've sold more units of both **Productivity** and **Extreme** (their columns are higher), **Moderation** has a larger **%Market Share SPLY YTD** (its column has more color saturation).
+
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-saturation.png)
 
 ## Customize the colors used in the color scale
-You can customize colors used in the color scale, too. Expand **Data Colors** and you see a gradient of colors used for visualizing your data. By default, the lowest value in your data is mapped to the least saturated color, and the highest value to the most saturated color.
+You can customize colors used in the color scale, too. By default, the lowest value in your data is mapped to the least saturated color, and the highest value to the most saturated color. In the image above, we used a blue gradient. 
 
-The color range is shown in a gradient bar that displays the spectrum between **Minimum** and **Maximum** color values, with the **Minimum** value color on the left, and **Maximum** value color to the right.
+Expand **Data Colors** and you see a gradient of colors used for visualizing your data. The color range is shown in a gradient bar that displays the spectrum between **Minimum** and **Maximum** color values, with the **Minimum** value color on the left, and **Maximum** value color to the right.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_10.png)
+![](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors2.png)
+
 
 To change the scale to use a different range of colors, select the color drop-down beside **Minimum** or **Maximum**, and select a color. The following image shows the **Maximum** color changed to black, and the gradient bar shows the new color spectrum between **Minimum** and **Max﻿imum**.
 
@@ -99,7 +104,7 @@ By setting those values, gradient is no longer applied to values on the chart th
 
 ![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_13.png)
 
-## Use Diverging color scales
+## Use diverging color scales
 Sometimes your data may have a naturally diverging scale. For example, a temperate range has a natural center at freezing point, and a profitability score has a natural mid-point (zero).
 
 To use diverging color scales, slide the **Diverging** slider to **On**. When **Diverging** is turned on, an additional color selector and value box, both called **Center**, appear, as shown in the following image.

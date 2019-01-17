@@ -6,30 +6,30 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
 ---
 # Aggregations in Power BI Desktop (Preview)
 
-Using **aggregations** in Power BI enables interactive analysis over big data in ways that previously were not possible. **Aggregations** can dramatically reduce the cost of unlocking large datasets for decision making.
+Using **aggregations** in Power BI enables interactive analysis over big data in ways that previously weren't possible. **Aggregations** can dramatically reduce the cost of unlocking large datasets for decision making.
 
 ![aggregations in Microsoft Power BI Desktop](media/desktop-aggregations/aggregations_07.jpg)
 
 The following list provides advantages to using **aggregations**:
 
-* **Query performance over large datasets** - as users interact with visuals on Power BI reports, DAX queries are submitted to the dataset. Boost query speeds by caching data at the aggregated level, using a fraction of the resources required at the detail level. Unlock big data in a way that wouldn't otherwise be possible.
+* **Query performance over big data** - as users interact with visuals on Power BI reports, DAX queries are submitted to the dataset. Boost query speeds by caching data at the aggregated level, using a fraction of the resources required at the detail level. Unlock big data in a way that would otherwise be impossible.
 * **Data refresh optimization** - reduce cache sizes and refresh times by caching data at the aggregated level. Speed up the time to make data available for users.
 * **Achieve balanced architectures** - allow the Power BI in-memory cache to handle aggregated queries, which it does effectively. Limit queries sent to the data source in DirectQuery mode, helping stay within concurrency limits. Queries that do get through tend to be filtered, transactional-level queries, which data warehouses and big-data systems normally handle well.
 
 ### Table-level storage
-Table-level storage is normally used with the aggregations feature. See the [storage mode in Power BI Desktop (Preview)](desktop-storage-mode.md) article for more information.
+Table-level storage is normally used with the aggregations feature. See the [storage mode in Power BI Desktop](desktop-storage-mode.md) article for more information.
 
 ### Data source types
-Aggregations are used with data sources representing dimensional models, such as a data warehouses and data marts, as well as Hadoop-based big-data sources. This article describes typical modeling differences in Power BI for each type of data source.
+Aggregations are used with data sources representing dimensional models, such as a data warehouses, data marts, and Hadoop-based big-data sources. This article describes typical modeling differences in Power BI for each type of data source.
 
 All Power BI Import and (non-multidimensional) DirectQuery sources work with aggregations.
 
@@ -51,9 +51,9 @@ Consider the following model, which is from a single data source. Let’s say al
 
 ![tables in a model](media/desktop-aggregations/aggregations_02.jpg)
 
-Instead, we create the **Sales Agg** table as an aggregation table. It's at a higher granularity than **Sales**, and so it will contain far fewer rows. The number of rows should equal the sum of **SalesAmount** grouped by **CustomerKey**, **DateKey**, and **ProductSubcategoryKey**. Instead of billions, it might be millions of rows, which are much easier to manage.
+Instead, we create the **Sales Agg** table as an aggregation table. It's at a higher granularity than **Sales**, so it'll contain far fewer rows. The number of rows should equal the sum of **SalesAmount** grouped by **CustomerKey**, **DateKey**, and **ProductSubcategoryKey**. Instead of billions, it might be millions of rows, which are much easier to manage.
 
-Let's assume that the following dimension tables are the most commonly used for the queries with high business value. They're the tables that can filter **Sales Agg** using *one-to-many* (or *many-to-one*) relationships. Other relationship types such as *many-to-many* or *multi-source* are not considered for aggregations.
+Let's assume that the following dimension tables are the most commonly used for the queries with high business value. They're the tables that can filter **Sales Agg** using *one-to-many* (or *many-to-one*) relationships.
 
 * Geography
 * Customer
@@ -73,7 +73,7 @@ Let's continue with the example we're using. We set the storage mode of **Sales 
 
 ![setting the storage mode](media/desktop-aggregations/aggregations_04.jpg)
 
-When we do so, the following dialog appears, letting us know that the related dimension tables will be set to storage mode **Dual**. 
+When we do so, the following dialog appears, letting us know that the related dimension tables can be set to storage mode **Dual**. 
 
 ![storage mode dialog](media/desktop-aggregations/aggregations_05.jpg)
 
@@ -84,8 +84,23 @@ Setting them to **Dual** allows the related dimension tables to act as either Im
 
 For more information on the **Dual** storage mode, see the [storage mode](desktop-storage-mode.md) article.
 
-> Note:
-> The **Sales Agg** table is hidden. Aggregation tables should be hidden from consumers of the dataset. Consumers and queries refer to the detail table, not the aggregation table; they don't even need to know the aggregation table exists.
+### Strong vs. weak relationships
+Aggregations hits based on relationships require strong relationships.
+
+Strong relationships include the following combinations where both tables are from a *single source*.
+
+| Table on the *many sides | Table on the *1* side |
+| ------------- |----------------------| 
+| Dual          | Dual                 | 
+| Import        | Import or Dual       | 
+| DirectQuery   | DirectQuery or Dual  | 
+
+The only case where a *cross-source* relationship is considered strong is if both tables are Import. Many-to-many relationships are always considered weak.
+
+For *cross-source* aggregation hits that don't depend on relationships, see section below on aggregations based on group-by columns.
+
+### Aggregation table is hidden
+The **Sales Agg** table is hidden. Aggregation tables should always be hidden from consumers of the dataset. Consumers and queries refer to the detail table, not the aggregation table; they don't even need to know the aggregation table exists.
 
 ### Manage aggregations dialog
 Next we define the aggregations. Select the **Manage aggregations** context menu for the **Sales Agg** table, by right-clicking on the table.
@@ -152,29 +167,29 @@ The following query hits the aggregation, because columns in the *Date* table ar
 
 ![query example](media/desktop-aggregations/aggregations-code_02.jpg)
 
-The following query will not hit the aggregation. Despite requesting the sum of **SalesAmount**, it is performing a group by operation on a column in the **Product** table, which is not at the granularity that can hit the aggregation. If you observe the relationships in the model, a product subcategory can have multiple **Product** rows; the query would not be able to determine which product to aggregate to. In this case, the query reverts to DirectQuery and submits a SQL query to the data source.
+The following query doesn't hit the aggregation. Despite requesting the sum of **SalesAmount**, it's performing a group by operation on a column in the **Product** table, which is not at the granularity that can hit the aggregation. If you observe the relationships in the model, a product subcategory can have multiple **Product** rows; the query wouldn't be able to determine which product to aggregate to. In this case, the query reverts to DirectQuery and submits a SQL query to the data source.
 
 ![query example](media/desktop-aggregations/aggregations-code_03.jpg)
 
-Aggregations are not just for simple calculations that perform a straightforward sum. Complex calculations can also benefit. Conceptually, a complex calculation is broken down into subqueries for each SUM, MIN, MAX and COUNT, and each subquery is evaluated to determine if the aggregation can be hit. This logic does not hold true in all cases due to query-plan optimization, but in general it should apply. The following example will hit the aggregation:
+Aggregations aren't just for simple calculations that perform a straightforward sum. Complex calculations can also benefit. Conceptually, a complex calculation is broken down into subqueries for each SUM, MIN, MAX and COUNT, and each subquery is evaluated to determine if the aggregation can be hit. This logic doesn't hold true in all cases due to query-plan optimization, but in general it should apply. The following example hits the aggregation:
 
 ![query example](media/desktop-aggregations/aggregations-code_04.jpg)
 
-The COUNTROWS function can benefit from aggregations. The following query will hit the aggregation because there is a **Count** table rows aggregation defined for the **Sales** table.
+The COUNTROWS function can benefit from aggregations. The following query hits the aggregation because there is a **Count** table rows aggregation defined for the **Sales** table.
 
 ![query example](media/desktop-aggregations/aggregations-code_05.jpg)
 
-The AVERAGE function can benefit from aggregations. The following query will hit the aggregation because AVERAGE internally gets folded to a SUM divided by a COUNT. Since the **UnitPrice** column has aggregations defined for both SUM and COUNT, the aggregation is hit.
+The AVERAGE function can benefit from aggregations. The following query hits the aggregation because AVERAGE internally gets folded to a SUM divided by a COUNT. Since the **UnitPrice** column has aggregations defined for both SUM and COUNT, the aggregation is hit.
 
 ![query example](media/desktop-aggregations/aggregations-code_06.jpg)
 
-In some cases, the DISTINCTCOUNT function can benefit from aggregations. The following query will hit the aggregation because there is a GroupBy entry for **CustomerKey**, which maintains the distinctness of **CustomerKey** in the aggregation table. This technique is still subject to the performance threshold where over approximately two to five million distinct values can affect query performance. However, it can be useful in scenarios where there are billions of rows in the detail table and two to five million distinct values in the column. In this case, the distinct count can perform faster than scanning the table with billions of rows, even if it were cached into memory.
+In some cases, the DISTINCTCOUNT function can benefit from aggregations. The following query hits the aggregation because there is a GroupBy entry for **CustomerKey**, which maintains the distinctness of **CustomerKey** in the aggregation table. This technique is still subject to the performance threshold where over approximately two to five million distinct values can affect query performance. However, it can be useful in scenarios where there are billions of rows in the detail table and two to five million distinct values in the column. In this case, the distinct count can perform faster than scanning the table with billions of rows, even if it were cached into memory.
 
 ![query example](media/desktop-aggregations/aggregations-code_07.jpg)
 
 ## Aggregations based on group-by columns 
 
-Hadoop-based big data models have different characteristics than dimensional models. To avoid joins between large tables, they often do not rely on relationships. Instead, dimension attributes are often denormalized to fact tables. Such big data models can be unlocked for interactive analysis using **aggregations** based on group-by columns.
+Hadoop-based big data models have different characteristics than dimensional models. To avoid joins between large tables, they often don't rely on relationships. Instead, dimension attributes are often denormalized to fact tables. Such big data models can be unlocked for interactive analysis using **aggregations** based on group-by columns.
 
 The following table contains the **Movement** numeric column to be aggregated. All other columns are attributes to group by. It contains IoT data and a massive number of rows. The storage mode is DirectQuery. Queries on the data source that aggregate across the whole dataset are slow because of the sheer volume.
 
@@ -188,17 +203,17 @@ Next, we define the aggregation mappings in the **Manage aggregations** dialog. 
 
 ![Manage aggregations dialog for the Driver Activity Agg table](media/desktop-aggregations/aggregations_11.jpg)
 
-The following table shows the aggregations for the **Sales Agg** table.
+The following table shows the aggregations for the **Driver Activity Agg** table.
 
-![Sales Agg aggregations table](media/desktop-aggregations/aggregations-table_02.jpg)
+![Driver Activity Agg aggregations table](media/desktop-aggregations/aggregations-table_02.jpg)
 
 ### Group by columns
 
-In this example, the **GroupBy** entries are **not optional**; without them the aggregations would not get hit. This is different behavior to using aggregations based on relationships, which is covered by the dimensional model example provided previously in this article.
+In this example, the **GroupBy** entries are **not optional**; without them the aggregations wouldn't get hit. This is different behavior to using aggregations based on relationships, which is covered by the dimensional model example provided previously in this article.
 
 ### Query examples
 
-The following query will hit the aggregation because the **Activity Date** column is covered by the aggregation table. The Count table rows aggregation is used by the COUNTROWS function.
+The following query hits the aggregation because the **Activity Date** column is covered by the aggregation table. The Count table rows aggregation is used by the COUNTROWS function.
 
 ![query example](media/desktop-aggregations/aggregations-code_08.jpg)
 
@@ -226,9 +241,9 @@ The table specified in the **Detail Table** column is **Driver Activity**, not *
 
 ![Manage aggregations dialog](media/desktop-aggregations/aggregations_14.jpg)
 
-The following table shows the aggregations for the **Sales Agg** table.
+The following table shows the aggregations for the **Driver Activity Agg2** table.
 
-![Sales Agg aggregations table](media/desktop-aggregations/aggregations-table_03.jpg)
+![Driver Activity Agg2 aggregations table](media/desktop-aggregations/aggregations-table_03.jpg)
 
 ## Aggregations based on group-by columns combined with relationships
 
@@ -251,7 +266,7 @@ The following query hits the aggregation because CalendarMonth is covered by the
 
 ![query example](media/desktop-aggregations/aggregations-code_09.jpg)
 
-The following query will not hit the aggregation because CalendarDay is not covered by the aggregation table.
+The following query doesn't hit the aggregation because CalendarDay is not covered by the aggregation table.
 
 ![query example](media/desktop-aggregations/aggregations-code_10.jpg)
 
@@ -261,7 +276,7 @@ The following time-intelligence query will not hit the aggregation because the D
 
 ## Caches should be kept in sync
 
-**Aggregations** that combine DirectQuery and Import and/or Dual storage mode may return different data if the in-memory cache is not kept in sync with the source data. Query execution will not attempt to mask data issues by, for example, filtering DirectQuery results to match cached values. These features are performance optimizations and should be used only in ways that do not compromise your ability to meet business requirements. It's your responsibility to know your data flows, so please design accordingly. There are established techniques to handle such issues at the source, if necessary.
+**Aggregations** that combine DirectQuery and Import and/or Dual storage mode may return different data if the in-memory cache is not kept in sync with the source data. Query execution won't attempt to mask data issues by, for example, filtering DirectQuery results to match cached values. These features are performance optimizations and should be used only in ways that do not compromise your ability to meet business requirements. It's your responsibility to know your data flows, so please design accordingly. There are established techniques to handle such issues at the source, if necessary.
 
 ## Next steps
 
@@ -275,4 +290,3 @@ DirectQuery articles:
 
 * [Using DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data sources supported by DirectQuery in Power BI](desktop-directquery-data-sources.md)
-

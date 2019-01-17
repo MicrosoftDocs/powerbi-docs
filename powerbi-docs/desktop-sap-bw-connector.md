@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2018
+ms.date: 10/15/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -18,7 +18,7 @@ With Power BI Desktop, you can access **SAP Business Warehouse (BW)** data.
 
 For information about how SAP customers can benefit from connecting Power BI to their existing SAP Business Warehouse (BW) systems, see the [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw). For details about using DirectQuery with SAP BW, see the article [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
-Starting with the June 2018 release of **Power BI Desktop**, you can use the SAP BW connector with an implementation that has significant improvements in performance and capabilities. This updated version of the SAP BW connector was developed by Microsoft and is called **Implementation 2.0**. You can select either  version 1 (v1) of the **SAP BW Connector**, or the **Implementation 2.0 SAP Connector**. The following sections describe the installation of each version, in turn. You can choose one or the other connector when connecting to SAP BW from Power BI Desktop.
+Starting with the June 2018 release of **Power BI Desktop** (and generally available with the October 2018 release), you can use the SAP BW connector with an implementation that has significant improvements in performance and capabilities. This updated version of the SAP BW connector was developed by Microsoft and is called **Implementation 2.0**. You can select either  version 1 (v1) of the **SAP BW Connector**, or the **Implementation 2.0 SAP Connector**. The following sections describe the installation of each version, in turn. You can choose one or the other connector when connecting to SAP BW from Power BI Desktop.
 
 We suggest you use the **Implementation 2.0 SAP Connector** whenever possible.
 
@@ -193,11 +193,28 @@ This section provides troubleshooting situations (and solutions) for working wit
            </item>
    
    To solve this error, users must ask their SAP admin to grant the SAPBW user being used in Power BI the right to execute *BAPI_USER_GET_DETAIL*. It’s also worth verifying that the user has the required *DCPFM* value, as described earlier in this troubleshooting solution.
+   
 2. **Connectivity for SAP BEx queries**
    
    You can perform **BEx** queries in Power BI Desktop by enabling a specific property, as shown in the following image:
    
    ![](media/desktop-sap-bw-connector/sap_bw_8.png)
+   
+3. The **Navigator** window does not display a data preview and instead provides an *object reference not set to an instance of an object* error message.
+   
+   SAP users need access to specific BAPI function modules to get metadata and retrieve data from SAP BW's InfoProviders. These include:
+   * BAPI_MDPROVIDER_GET_CATALOGS
+   * BAPI_MDPROVIDER_GET_CUBES
+   * BAPI_MDPROVIDER_GET_DIMENSIONS
+   * BAPI_MDPROVIDER_GET_HIERARCHYS
+   * BAPI_MDPROVIDER_GET_LEVELS
+   * BAPI_MDPROVIDER_GET_MEASURES
+   * BAPI_MDPROVIDER_GET_MEMBERS
+   * BAPI_MDPROVIDER_GET_VARIABLES
+   * BAPI_IOBJ_GETDETAIL
+
+   To solve this issue, verify that the user has access to the various *MDPROVIDER* modules as well as *BAPI_IOBJ_GETDETAIL*. To further troubleshoot this or similar issues, select *Enable tracing* on the *Diagnostics* window within Power BI Desktop's *Options*. Attempt to retrieve data from SAP BW while tracing is active, and examine the trace file for more detail.
+
 
 ## Next steps
 For more information about SAP and DirectQuery, check out the following resources:

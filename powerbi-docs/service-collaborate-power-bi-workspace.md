@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: lukaszp
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
@@ -73,7 +73,7 @@ Collaborating in Office 365 starts from the app workspace in Power BI.
 If you’re owner or admin for an app workspace, you can also add or remove workspace members. Read more about [managing your Power BI app workspace](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## Next steps
-* [Create apps and app workspaces in Power BI](consumer/end-user-create-apps.md)
+* [Create apps and app workspaces in Power BI](service-create-distribute-apps.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 * Feedback? Visit [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi)
 

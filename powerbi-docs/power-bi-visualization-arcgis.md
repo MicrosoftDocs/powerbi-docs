@@ -7,9 +7,9 @@ ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 11/06/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -22,7 +22,7 @@ The combination of ArcGIS maps and Power BI takes mapping beyond the presentatio
  While you cannot create an ArcGIS maps on a mobile device, you can view and interact with it. See [Interacting with ArcGIS maps](visuals/power-bi-visualizations-arcgis.md).
 
 > [!TIP]
-> GIS stands for Geographic Information Science.
+> GIS stands for Geographic Information Systems.
 
 
 The example below uses a dark gray canvas to show regional sales as a heatmap against a demographic layer of 2016 median disposable income. As you'll see as you read on, using  ArcGIS maps offers almost limitless enhanced mapping capability, demographic data, and even-more compelling map visualizations so you can tell your best story.

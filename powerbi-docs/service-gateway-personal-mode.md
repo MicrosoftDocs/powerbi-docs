@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
@@ -128,7 +128,7 @@ Support for Spark is planned for the second half of the 2017 calendar year.
   * **Answer**: If you’re refreshing your reports with the current gateway, your refreshes will stop. The only way to set up a new refresh schedule will be by installing and configuring the new gateway.
 * I'm using R script. Is that supported?
   
-  * **Answer**: We anticipating adding support for R scripts soon.​
+  * **Answer**: R scripts are supported for personal mode.​
 * Why am I not seeing the message to update my gateway in the **Power BI service**?
   
   * **Answer**: Most likely, this is because you have one or more datasets that include a data source that is still currently not supported.

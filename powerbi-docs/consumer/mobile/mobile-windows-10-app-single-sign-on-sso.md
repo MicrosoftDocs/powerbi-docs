@@ -1,15 +1,15 @@
 ---
 title: Single Sign-On in the Power BI mobile Windows app
 description: Read about Single Sign-On (SSO) in the Power BI mobile Windows app. SSO means you access all the applications and resources you need to do business by signing in only once, with a single user account.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/17/2018
-ms.author: maggies
+ms.author: mshenhav
 
 ---
 # Single Sign-On in the Power BI mobile Windows app

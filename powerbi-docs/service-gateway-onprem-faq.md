@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
@@ -64,6 +64,9 @@ LocalizationGroup: Gateways
 
 **Question:** Will the gateway work with ExpressRoute?  
 **Answer:** Yes. For more information about ExpressRoute and Power BI, see [Power BI and ExpressRoute](service-admin-power-bi-expressroute.md).
+
+**Question:** I'm using R scripts. Is that supported?
+**Answer**: R scripts are supported only for personal mode.​
 
 ## Next steps
 [On-premises data gateway](service-gateway-onprem.md)  
