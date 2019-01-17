@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/20/2018
+ms.date: 01/17/2018
 ---
 
 # Frequently asked questions about Power BI Embedded
@@ -42,7 +42,7 @@ Power BI Embedded is for ISVs or developers who are building applications and wa
 
 The recommendation of Microsoft is that enterprises buy Power BI Premium, an enterprise-grade, self-service cloud BI solution, and ISVs buy Power BI Embedded, cloud-powered embedded analytics components. However, there are no restrictions on which product a customer can buy.
 
-There may be some cases where an ISV (typically large) wants to use a P SKU to get the additional benefits of the pre-packaged Power BI service within their organization as well as embed in their applications. Some enterprises may decide to use. A SKUs in Azure if they're only interested in building line-of-business applications and embedding analytics into them and aren't interested in using the pre-packaged Power BI service.
+There may be some cases where an ISV (typically large) wants to use a P SKU to get the additional benefits of the pre-packaged Power BI service within their organization as well as embed in their applications. Some enterprises may decide to use A SKUs in Azure if they're only interested in building line-of-business applications and embedding analytics into them and aren't interested in using the pre-packaged Power BI service.
 
 ### How many embed tokens can I create?
 
@@ -54,7 +54,7 @@ Embed tokens with PRO license are intended for development testing, so the numbe
 
 PowerBI.com is an enterprise solution that includes many capabilities like social collaboration, email subscription, etc. in a Software as a Service offering
 
-Power BI Embedded is a set of APIs available for developers to create an embedded analytics solution in a Platform as a Service offering. For the Embedded analytics scenario, PowerBI.com should be used to help ISVs and developers manage their embedded analytics solution content and tenant level settings.
+Power BI Embedded is a set of APIs available for developers to create an embedded analytics solution in a Platform as a Service offering. For the Embedded analytics scenario, PowerBI.com helps ISVs and developers manage their embedded analytics solution content and tenant level settings.
 
 Here is a partial list of differences you may use with each.
 
@@ -101,9 +101,9 @@ While there is no automated scaling now, all the APIs are available to scale at 
 
 The provisioning of a capacity (scale/resume/create) may fail. The caller of the provisioning call should check the ProvisioningState of a capacity using Get Details API: [Capacities - Get Details](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails).
 
-### Why can I only create PBIE in a specific region?
+### Can I only create Power BI Embedded capacities in a specific region?
 
-You can only create PBIE capacities for your PBI tenant region.
+With the [Multi-geo (Preview)](embedded-multi-geo.md) feature, you can purchase a [Power BI Embedded capacity](azure-pbie-create-capacity.md) in a different region than your Power BI home tenant location
 
 ### How can I find what is my PBI tenant region?
 
@@ -152,9 +152,9 @@ Available regions (16 - same regions as Power BI)
 
 ### What is the authentication model for Power BI Embedded?
 
-Power BI Embedded will continue to use Azure AD for authentication of the master user (a designated Power BI Pro licensed user), authenticating the application inside Power BI.
+Power BI Embedded continues to use Azure AD for authentication of the master user (a designated Power BI Pro licensed user), authenticating the application inside Power BI.
 
-The authentication and authorization of the application users will be implemented by the ISV, the ISV can implement their own authentication for their applications.
+The authentication and authorization of application users implemented by the ISV, the ISV can implement their own authentication for their applications.
 
 If you already have an Azure AD tenant, you can use your existing directory, or you can create a new Azure AD tenant for your embedded application content security.
 
@@ -212,7 +212,7 @@ Power BI Embedded is available through Azure.
 
 ### What happens if I already purchased Power BI Premium and now I want some of the benefits of Power BI Embedded in Azure?
 
-Customers will continue to pay for any existing Power BI Premium purchases until the end of their current agreement term and then may switch their Power BI Premium purchases as necessary at that point.
+Customers continue to pay for any existing Power BI Premium purchases until the end of their current agreement term and then may switch their Power BI Premium purchases as necessary at that point.
 
 ### Do I still have to buy Power BI Premium to get access to Power BI Embedded?
 
@@ -224,15 +224,15 @@ Customers may change their usage on an hourly basis. There is no monthly or annu
 
 ### How does the usage of Power BI Embedded show up on my bill?
 
-Power BI Embedded bills on a predictable hourly rate based on the type of node(s) deployed. As long as your resource is active, you will be billed even if there is no usage. To stop being billed, you need to actively pause your resource.
+Power BI Embedded bills on a predictable hourly rate based on the type of node(s) deployed. As long as your resource is active, you are billed even if there is no usage. To stop being billed, you need to actively pause your resource.
 
 ### Who needs a Power BI Pro license for Power BI Embedded and why?
 
-It is required that any analyst that needs to add reports to a Power BI workspace, any developer that requires use of the REST APIs, any tenant admin that needs to manage the Power BI tenant and capacity will need a Power BI Pro license.
+Any analyst that needs to add reports to a Power BI workspace is required to have a Power BI license. Any developer that requires the use of the REST APIs needs a Power BI Pro license. Any tenant admin that needs to manage the Power BI tenant and capacity is required to have a Power BI Pro license.
 
 Because Power BI Embedded allows use of the Power BI portal for managing and validating embedded content, the Power BI Pro license is required to authenticate the App inside PowerBI.com to get access to the reports in the right repositories.
 
-However, for [creating/editing embedded reports](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) inside your own application, the end user does not need a Pro license as he isn't required to be a Power BI user at all.
+However, for [creating/editing embedded reports](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) inside your own application, the end user does not need a Pro license as the user isn't required to be a Power BI user at all.
 
 ### Can I get started for free?
 
@@ -273,9 +273,9 @@ For more information,  please reference [How to migrate Power BI Workspace Colle
 
 Yes, but customers that are already using the **Power BI Workspace Collection** solution can continue to use it until it is deprecated. Customers can also create new workspace collections, and any **Power BI Embedded** applications that still use the **Power BI Workspace Collection** solution.
 
-However, this also means that new features are not added to any **Power BI Workspace Collection** solutions, and that customers are encouraged to plan their migration to the new **Power BI Embedded** solution.
+However, this also means that new features aren't added to any **Power BI Workspace Collection** solutions, and that customers are encouraged to plan their migration to the new **Power BI Embedded** solution.
 
-### When will Power BI Workspace Collection support be discontinued?
+### When is Power BI Workspace Collection support discontinued?
 
 Customers that are already using the **Power BI Workspace Collections** solution can continue to use it until the end of June 2018 or until the end of their support agreement.
 
