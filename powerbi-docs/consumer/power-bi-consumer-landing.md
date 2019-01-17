@@ -5,10 +5,10 @@ author: mihart
 manager: kvivek
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: landing-page
+ms.topic: hub-page
 ms.date: 12/10/2018
 ms.author: mihart
-layout: LandingPage
+layout: HubPage
 ms.custom: seodec18
 
 LocalizationGroup: Get started
@@ -22,7 +22,6 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
 
 <div id="main" class="v2">
       <div class="container">
-            <h1 class="">Power BI for consumers</h1>
             <ul class="pivots">
             <li>
                 <a href="#get-started" data-linktype="self-bookmark">Get Started</a>
@@ -141,7 +140,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                 <a href="#concepts-terminology" data-linktype="self-bookmark">Concepts &amp;Terminology</a>
                 <ul id="concepts-terminology">
                     <li>
-                        <a href="#conceptsterminology" data-linktype="self-bookmark">Concepts &amp;Terminology</a>
+                        <a href="#conceptsterminology" data-linktype="self-bookmark">Concepts &amp; Terminology</a>
                         <ul id="conceptsterminology" class="cardsC">
                             <br>
                             <li>
@@ -314,7 +313,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/BrowsersInfo.svg" alt="Browsers Info" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/BrowserInfo.svg" alt="Browsers Info" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
