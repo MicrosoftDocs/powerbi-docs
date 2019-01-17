@@ -17,7 +17,7 @@ With **service principal**, you can embed Power BI content into an application a
 
 When working with Power BI Embedded, there are advantages when using a service principal application.  A primary advantage is you do not need a master user account (Power BI Pro license that is merely a username and password to sign in) to authenticate into your application. Service principal uses an application ID and an application secret to authenticate the application.
 
-As you automate various tasks with Power BI APIs, you can script service principal (app-only token) to scale.
+As you automate various tasks with Power BI APIs, you can create a service principal application (app-only token) with a [Powershell script](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
 ## Application and service principal relationship
 
@@ -54,9 +54,9 @@ There are differences between using a service principal and a standard master us
 | Needs to be enabled in the Power BI Admin portal | No | Yes |
 | [Works with app workspaces (v1)](../service-create-workspaces.md) | Yes | No |
 | [Works with the new app workspaces (v2)](../service-create-the-new-workspaces.md) | Yes | Yes |
-| Needs to be a workspace admin | Yes | Yes |
+| Needs to be a workspace admin if used with a Power BI Embedded application | Yes | Yes |
 | Can use multi-factor authentication (MFA) in Azure | No | Yes |
-| Can be used with Power BI REST APIs | Yes | Yes |
+| Can use Power BI REST APIs | Yes | Yes |
 | Needs a global admin to create | Yes | No |
 | Can install and manage an On-premises data gateway | Yes | No |
 
