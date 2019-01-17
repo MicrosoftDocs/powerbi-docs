@@ -27,7 +27,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/powerbi-4x_ea1e-01-resized-with-ratio.svg" alt="" />
+                                                        <img src="./media/index/PowerBI4reportConsumers.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -46,7 +46,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/power-bi-4x-Design_E771.svg" alt="" />
+                                                        <img src="./media/index/PowerBI4reportDesigners.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -65,7 +65,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/power-bi-4x-Admin_F286.svg" alt="" />
+                                                        <img src="./media/index/PowerBI4admins.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -84,7 +84,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/power-bi-4x-Developer_ECCE.svg" alt="" />
+                                                        <img src="./media/index/PowerBI4developers.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -103,7 +103,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/power-bi-4x-Blog_E1D7.svg" alt="" />
+                                                        <img src="./media/index/PowerBIBlog.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -122,7 +122,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/power-bi-4x-GuidedLearning_E736.svg" alt="" />
+                                                        <img src="./media/index/PowerBI4GuidedLearning.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
