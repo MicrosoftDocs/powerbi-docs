@@ -19,7 +19,7 @@ ms:date: 10/26/2018
                 <ul id="home">
                     <li>
                         <a href="#home-all"></a>
-                        <ul id="home-all" class="cardsA">
+                        <ul id="home-all" class="cardsC">
                             <li>
                                 <a href="consumer/power-bi-consumer-landing.md">
                                     <div class="cardSize">
@@ -27,7 +27,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/PowerBI4reportConsumers.png" alt="" />
+                                                        <img src="./media/index/PowerBI4reportConsumers.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -46,7 +46,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/PowerBI4reportDesigners.png" alt="" />
+                                                        <img src="./media/index/PowerBI4reportDesigners.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -65,7 +65,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/PowerBI4admins.png" alt="" />
+                                                        <img src="./media/index/PowerBI4admins.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -84,7 +84,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/PowerBI4developers.png" alt="" />
+                                                        <img src="./media/index/PowerBI4developers.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -103,7 +103,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/PowerBIBlog.png" alt="" />
+                                                        <img src="./media/index/PowerBIBlog.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -122,7 +122,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/PowerBI4GuidedLearning.png" alt="" />
+                                                        <img src="./media/index/PowerBI4GuidedLearning.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
