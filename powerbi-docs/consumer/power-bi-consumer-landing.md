@@ -22,6 +22,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
 
 <div id="main" class="v2">
       <div class="container">
+            <h1 class="">Power BI for consumers</h1>
             <ul class="pivots">
             <li>
                 <a href="#get-started" data-linktype="self-bookmark">Get Started</a>
