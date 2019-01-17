@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/20/2018
+ms.date: 01/17/2018
 ---
 
 # Frequently asked questions about Power BI Embedded
@@ -101,9 +101,9 @@ While there is no automated scaling now, all the APIs are available to scale at 
 
 The provisioning of a capacity (scale/resume/create) may fail. The caller of the provisioning call should check the ProvisioningState of a capacity using Get Details API: [Capacities - Get Details](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails).
 
-### Why can I only create PBIE in a specific region?
+### Can I only create Power BI Embedded capacities in a specific region?
 
-You can only create PBIE capacities for your PBI tenant region.
+With the [Multi-geo (Preview)](embedded-multi-geo.md) feature, you can purchase a [Power BI Embedded capacity](azure-pbie-create-capacity.md) in a different region than your Power BI home tenant location
 
 ### How can I find what is my PBI tenant region?
 
