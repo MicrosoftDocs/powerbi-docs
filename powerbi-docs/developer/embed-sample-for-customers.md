@@ -46,7 +46,7 @@ However, if you choose to set up the environment manually, you can continue belo
 
 Depending on which method you take, affects which type of application you register in Azure.
 
-If you proceed using a master user account then proceed with registering a **Native** app. You use a Native app because you are working with a non-interactive login.
+If you proceed using a master user account, then proceed with registering a **Native** app. You use a Native app because you're working with a non-interactive login.
 
 However, if you proceed using a service principal application, you need to proceed with registering a **server-side web application** app. You register a server-side web application to create an application secret.
 
@@ -61,7 +61,7 @@ However, if you proceed using a service principal application, you need to proce
     ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![New App registration](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
 
-4. Follow the prompts and create a new application. For use with a **master user account** you need to use **Native** for the application type. For use with a **service principal application** you need to use **Web app/API** for the application type. You also need to provide a **Redirect URL**, which **Azure AD** uses to return token responses. Enter a value specific to your application (for example: `http://localhost:13526/Redirect`).
+4. Follow the prompts and create a new application. For use with a master user account,** you need to use **Native** for the application type. For use with a service principal application,** you need to use **Web app/API** for the application type. You also need to provide a **Redirect URL**, which **Azure AD** uses to return token responses. Enter a value specific to your application (for example: `http://localhost:13526/Redirect`).
 
     | Master user account </br> (Power BI Pro license) | Service principal application </br> (app-only token) |
     |--------------------- | -------------------------------|
@@ -111,11 +111,11 @@ Enable additional permissions for your application, including what was provided 
 
 ### Create an app workspace
 
-If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within an app workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../service-create-workspaces.md) or the [new workspaces](../service-create-the-new-workspaces.md). If you are using a *master* account, then it doesn't matter which type of workspaces you use. However, if you use *[service principal](embed-service-principal.md)* to sign into your application, then you're required to you use the new workspaces. In either scneario, both the *master* account and the service principal application you use must be an admin of the app workspaces involved with your application.
+If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within an app workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../service-create-workspaces.md) or the [new workspaces](../service-create-the-new-workspaces.md). If you're using a *master* account, then it doesn't matter which type of workspaces you use. However, if you use *[service principal](embed-service-principal.md)* to sign into your application, then you're required to you use the new workspaces. In either scenario, both the *master* account and the service principal application you use must be an admin of the app workspaces involved with your application.
 
 ### Create and publish your reports
 
-You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. There are two ways to accomplish this: As an end user, you can publish reports to a traditional app workspace with a master user account (Power BI Pro license). If you are using a service principal application, you can publish reports to the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/reports).
+You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. There are two ways to accomplish this: As an end user, you can publish reports to a traditional app workspace with a master user account (Power BI Pro license). If you're using a service principal application, you can publish reports to the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/reports).
 
 The below steps walk through how to publish your PBIX report to your Power BI workspace.
 
@@ -127,7 +127,7 @@ The below steps walk through how to publish your PBIX report to your Power BI wo
 
    ![PBI desktop report](media/embed-sample-for-customers/embed-sample-for-customers-027.png)
 
-3. Publish to **app workspaces**.  This process differs depending on whether you are using a master user account (Power Pro license), or a service principal application. If you are using a master user account, then you can publish your report through Power BI Desktop.  Now if you are using a service principal application, you must use the Power BI REST APIs.
+3. Publish to **app workspaces**.  This process differs depending on whether you're using a master user account (Power Pro license), or a service principal application. If you're using a master user account, then you can publish your report through Power BI Desktop.  Now if you're using a service principal application, you must use the Power BI REST APIs.
 
 ## Embed your content using the sample application
 
@@ -193,7 +193,7 @@ To get the **ApplicationSecret**, follow these steps:
 
     ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
+6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you'ren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
 
     ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
@@ -228,16 +228,12 @@ Fill in the **reportId** information with the report GUID from Power BI. You can
 
 ### Power BI username and password
 
-If you are using a [service principal application](embed-service-principal.md) to authenticate, then you don't need to fill in the username or password attributes.
+If you're using a [service principal application](embed-service-principal.md) to authenticate, then you don't need to fill in the username or password attributes.
 
 * Fill in the **pbiUsername** with the Power BI master user account.
 * Fill in the **pbiPassword** with the password for the Power BI master user account.
 
-### Authority URL
-
-You need to enter in your tenant ID to complete this 
-
-3. Run the application!
+3. Now you can run the application!
 
     First select **Run** in **Visual Studio**.
 

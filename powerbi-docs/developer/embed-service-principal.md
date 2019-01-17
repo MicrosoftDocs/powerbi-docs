@@ -81,7 +81,7 @@ Different from the traditional use of a master user account, using the service p
 
 4. Set up your Power BI environment with a collection of steps from this [article](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
-5. Add the service principal application as an admin to the [new workspace](../service-create-the-new-workspaces.md) you created. You can manage this task through the [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). However, you can manage to add a service principal application as an admin through the Power BI service by adding the security group you created in step 2 to the [new workspace](../service-create-the-new-workspaces.md).
+5. Add the service principal application as an admin to the new workspace you created. You can manage this task through the [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). However, you can manage to add a service principal application as an admin through the Power BI service by adding the security group you created in step 2 to the new workspace.
 
 6. Now choose to embed your content within a sample application, or within your application.
 
