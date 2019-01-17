@@ -17,7 +17,7 @@ With **service principal**, you can embed Power BI content into an application a
 
 When working with Power BI Embedded, there are advantages when using a service principal application.  A primary advantage is you do not need a master user account (Power BI Pro license that is merely a username and password to sign in) to authenticate into your application. Service principal uses an application ID and an application secret to authenticate the application.
 
-As you automate various tasks with Power BI APIs, you can create a service principal application (app-only token) with a [Powershell script](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+As you automate various tasks with Power BI APIs, you can create a service principal application (app-only token) with a [PowerShell script](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
 ## Application and service principal relationship
 
@@ -89,43 +89,6 @@ Different from the traditional use of a master user account, using the service p
     * [Embed your content within your application](embed-sample-for-customers.md#embed-your-content-within-your-application)
 
 7. Now you're ready to [move to production](embed-sample-for-customers.md#move-to-production).
-
-## Using Powershell to create a service principal application
-
-You can also use Powershell to create a service principal application.  Below is a sample of how to create a service principal application using Powershell.
-
-1. Open Powershell as an administrator
-
-2. Install the Azure AD module
-
-    ```powershell
-    Install-Module -Name AzureAD
-    ```
-3. Then run the command *Set-ExecutionPolicy -ExecutionPolicy Bypass*
-
-    ```powershell
-    Set-ExecutionPolicy -ExecutionPolicy Bypass
-    ```
-4. Run Powershell script
-
-    ```powershell
-    param (
-    [string]$applicationName
-    )
-
-    # Login to Azure and be able to use the app cmdlets
-    Connect-AzureAD
-    Login-AzureRmAccount
-
-    # Create a new AAD web application
-    $App = New-AzureADApplication -DisplayName $applicationName -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
-
-    # Add service principal to the application (only for allowed users)
-    New-AzureRmADServicePrincipal -ApplicationId $App.AppId
-    ```
-
-    > [!Note]
-    > Once you exit out of the blade, it is not visible anymore so save it. However, if you forget to save it, then you can create a new one.
 
 ## Gateway management for Analysis Services on-premises live connections
 
