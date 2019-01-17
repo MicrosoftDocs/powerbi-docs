@@ -45,7 +45,7 @@ Not all Power BI Reports can have a scheduled refresh plan created on them. The 
 * Your report contains one or more data sources, which use DirectQuery.
 * Your report does not contain any data source. For example, data is manually entered via *Enter Data* or a report contains only static content like images, text, etc.
 
-In addition to the above list, there are specific scenarios with data sources in *import* mode, for which you cannot created refresh plans.
+In addition to the above list, there are specific scenarios with data sources in *import* mode, for which you cannot create refresh plans.
 
 * If a *File* or *Folder* data source is used and the file path is a local path (e.g. C:\Users\user\Documents), then a refresh plan cannot be created. The path must be a path the report server can connect to like a network share. For example, *\\myshare\Documents*.
 * If data source can be connected using only OAuth (e.g. Facebook, Google Analytics, Salesforce, etc.), then cache refresh plan cannot be created. At the moment, RS does not support OAuth authentication for any data source whether it is for paginated, mobile or Power BI reports.
