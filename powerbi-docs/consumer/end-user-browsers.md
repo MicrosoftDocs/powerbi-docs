@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/13/2018
+ms.date: 01/15/2019
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -20,7 +20,7 @@ Power BI runs in these browsers:
 * Internet Explorer 11
 * Chrome desktop latest version
 * Safari Mac latest version
-* Firefox desktop latest version
+* Firefox desktop latest version - Firefox may change the fonts used in Power BI reports.
 
 These browsers are supported on all platforms where they're available.
 
