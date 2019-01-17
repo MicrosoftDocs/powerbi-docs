@@ -19,7 +19,7 @@ LocalizationGroup: Get started
       <div class="container">
             <h1 class="">Power BI for consumers</h1>
             <p>As an *end user* or *consumer*, you are the person who receives dashboards, reports, and apps from colleagues. You work in ***Power BI service*** to review and interact with this content in order to make business decisions.</p>
-            <p>Are you more of a Power BI designer, developer, or admin? Welcome to you, too. We suggest starting with [Power BI for report designers](../power-bi-creator-landing.md).</p>
+            <p>Are you more of a Power BI designer, developer, or admin? Welcome to you, too. We suggest starting with <a href="../power-bi-creator-landing.md">Power BI for report designers</a>.</p>
             <ul class="pivots">
             <li>
                 <a href="#get-started" data-linktype="self-bookmark">Get Started</a>
