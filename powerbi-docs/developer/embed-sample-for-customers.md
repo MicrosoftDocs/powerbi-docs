@@ -114,7 +114,7 @@ If you're embedding reports, dashboards, or tiles for your customers, then you h
 
 ### Create and publish your reports
 
-You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. There are two ways to accomplish this: As an end user, you can publish reports to a traditional app workspace with a master user account (Power BI Pro license). If you're using a service principal application, you can publish reports to the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/reports).
+You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. There are two ways to accomplish this: As an end user, you can publish reports to a traditional app workspace with a master user account (Power BI Pro license). If you're using a service principal application, you can publish reports to the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
 
 The below steps walk through how to publish your PBIX report to your Power BI workspace.
 
@@ -144,7 +144,6 @@ Follow these steps to start embedding your content using a sample application.
     * **[reportId](#report-id)** (required for both master user account and [service principal](embed-service-principal.md)).
     * **[pbiUsername](#power-bi-username-and-password)** (required for use with a master account).
     * **[pbiPassword](#power-bi-username-and-password)** (required for use with a master account).
-    * **authorityURL** (required for both master user account and [service principal](embed-service-principal.md)).
 
     ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
