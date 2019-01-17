@@ -15,14 +15,11 @@ LocalizationGroup: Get started
 # Customer intent: As a person who consumes and interacts with content in Power BI, I want to get familiar with the pieces, and what I can do with them. 
 ---
 
-# Power BI for consumers
-As an *end user* or *consumer*, you are the person who receives dashboards, reports, and apps from colleagues. You work in ***Power BI service*** to review and interact with this content in order to make business decisions.
-
-Are you more of a Power BI designer, developer, or admin? Welcome to you, too. We suggest starting with [Power BI for report designers](../power-bi-creator-landing.md).
-
 <div id="main" class="v2">
       <div class="container">
             <h1 class="">Power BI for consumers</h1>
+            <p>As an *end user* or *consumer*, you are the person who receives dashboards, reports, and apps from colleagues. You work in ***Power BI service*** to review and interact with this content in order to make business decisions.</p>
+            <p>Are you more of a Power BI designer, developer, or admin? Welcome to you, too. We suggest starting with [Power BI for report designers](../power-bi-creator-landing.md).</p>
             <ul class="pivots">
             <li>
                 <a href="#get-started" data-linktype="self-bookmark">Get Started</a>
@@ -36,7 +33,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img alt="Get Started" src="media/end-user-consumer/GetStarted.svg" data-linktype="relative-path">
+                                                    <img alt="Get Started" src="media/end-user-consumer/get-started.svg" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -58,7 +55,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img alt="Get Started" src="media/end-user-consumer/ViewContent.svg" data-linktype="relative-path">
+                                                    <img alt="Get Started" src="media/end-user-consumer/view-content.svg" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -78,7 +75,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img alt="Get Started" src="media/end-user-consumer/CollaborateShare.svg" data-linktype="relative-path">
+                                                    <img alt="Get Started" src="media/end-user-consumer/collaborate-share.svg" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -97,7 +94,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img alt="Get Started" src="media/end-user-consumer/InteractAnalyze.svg" data-linktype="relative-path">
+                                                    <img alt="Get Started" src="media/end-user-consumer/interact-analyze.svg" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -118,7 +115,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img alt="Get Started" src="media/end-user-consumer/GetHelp.svg" data-linktype="relative-path">
+                                                    <img alt="Get Started" src="media/end-user-consumer/get-help.svg" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -151,7 +148,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/BasicConcepts.svg" alt="Basic Concepts" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/basic-concepts.svg" alt="Basic Concepts" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -170,7 +167,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/Glossary.svg" alt="Glossary" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/glossary.svg" alt="Glossary" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -189,7 +186,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/Tour.svg" alt="Tour" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/tour.svg" alt="Tour" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -208,7 +205,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/PowerBILicenseTypes.svg" alt="Power BI license types" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/power-bi-license-types.svg" alt="Power BI license types" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -227,7 +224,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/AdvancedConcepts.svg" alt="Advanced Concepts" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/advanced-concepts.svg" alt="Advanced Concepts" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -257,7 +254,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/FAQ.svg" alt="FAQ" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/faq.svg" alt="FAQ" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -276,7 +273,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/Accessibility.svg" alt="Accessibility" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/accessibility.svg" alt="Accessibility" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -295,7 +292,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/Privacy.svg" alt="Privacy" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/privacy.svg" alt="Privacy" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -314,7 +311,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/BrowserInfo.svg" alt="Browsers Info" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/browser-info.svg" alt="Browsers Info" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -333,7 +330,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/SupportedLanguages.svg" alt="Supported Languages" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/supported-languages.svg" alt="Supported Languages" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -352,7 +349,7 @@ Are you more of a Power BI designer, developer, or admin? Welcome to you, too. W
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/Res-GetHelp.svg" alt="Get Help" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/res-gethelp.svg" alt="Get Help" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

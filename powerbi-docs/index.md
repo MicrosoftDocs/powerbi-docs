@@ -27,7 +27,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/PowerBI4reportConsumers.svg" alt="" />
+                                                        <img src="./media/index/power-bi-4report-consumers.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -46,7 +46,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/PowerBI4reportDesigners.svg" alt="" />
+                                                        <img src="./media/index/power-bi-4report-designers.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -65,7 +65,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/PowerBI4admins.svg" alt="" />
+                                                        <img src="./media/index/power-bi-4admins.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -84,7 +84,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/PowerBI4developers.svg" alt="" />
+                                                        <img src="./media/index/power-bi-4developers.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -103,7 +103,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/PowerBIBlog.svg" alt="" />
+                                                        <img src="./media/index/power-bi-blog.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -122,7 +122,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/PowerBI4GuidedLearning.svg" alt="" />
+                                                        <img src="./media/index/power-bi-4guided-learning.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
