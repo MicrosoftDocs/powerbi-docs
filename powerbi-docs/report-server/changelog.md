@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: maggies
 
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
@@ -35,7 +35,7 @@ For detailed information about new features, see [What's new in Power BI Report 
             - Custom visuals will fall back to a previous version compatible with the current version of the server API (if available)
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
-    - *Version: 2.61.5192.64 (August 2018), Released: August 15, 2018*
+    - *Version: 2.61.5192.641 (August 2018), Released: August 15, 2018*
         - Contains changes required for connection with Power BI Report Server (August 2018)         
         
 ## March 2018
@@ -164,7 +164,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 [What is Power BI Report Server?](get-started.md)
 [Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
-[Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

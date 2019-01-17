@@ -7,9 +7,9 @@ ms.reviewer: ''
 featuredvideoid: xmja6EpqaO0
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 09/24/2018
+ms.date: 11/24/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -43,7 +43,7 @@ Or watch Will show you how to create single metric visuals: gauges, cards, and K
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Open the report in Report view and [select the yellow tab to add a new page](../power-bi-report-add-page.md).    
+1. Open the report in Report view and select the yellow tab to add a new page.    
 2. From the Fields pane, select **Sales > Total Units This Year**.  This will be the indicator.
 3. Add **Time > FiscalMonth**.  This will be represent the trend.
 4. IMPORTANT: Sort the chart by **FiscalMonth**. Once you convert the visualization to a KPI, there is no option to sort.

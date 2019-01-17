@@ -1,14 +1,15 @@
 ---
-title: Find and connect to organizational content packs - Power BI
+title: Find and connect to organizational content packs
 description: Find and open an organizational content pack in Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: lukaszp
+ms.custom: seodec18
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -34,7 +35,7 @@ Creating content packs is different from sharing dashboards or collaborating on 
 ## Connect to an organizational content pack
 * Select **Get it now** to connect to the content pack and add it to your active workspace. New dashboards, reports, Excel workbooks, and datasets are starred with a yellow asterisk.
 
-If the content pack has an Excel workbook, you may see a warning that you don’t have permissions to view the workbook. If so, ask the content pack owner to [share the workbook with you in OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
+If the content pack has an Excel workbook, you may see a warning that you don’t have permissions to view the workbook. If so, ask the content pack owner to [share the workbook with you in OneDrive for Business](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
 
 The content pack is locked. You can [save your own copy of the dashboard and reports](../service-organizational-content-pack-copy-refresh-access.md). 
 
@@ -46,6 +47,6 @@ If the content pack owner changes the content pack, and:
 
 ## Next steps
 * [Intro to organizational content packs](../service-organizational-content-pack-introduction.md)  
-* [Create and distribute an app in Power BI](end-user-create-apps.md)
+* [Create and distribute an app in Power BI](../service-create-distribute-apps.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

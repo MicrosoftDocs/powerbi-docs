@@ -1,160 +1,157 @@
 ---
-title: Many-to-many relationships in Power BI Desktop (Preview)
+title: Many-to-many relationships in Power BI Desktop (preview)
 description: Use many-to-many relationships in Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/17/2018
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
 ---
-# Many-to-many relationships in Power BI Desktop (Preview)
+# Many-to-many relationships in Power BI Desktop (preview)
 
-With the **Many-to-many relationship** feature in **Power BI Desktop** you can join tables using a cardinality of **Many to Many**, and create data models that contain multiple data sources easier and more intuitively. The **many-to-many relationship** feature is part of the larger **composite models** capabilities in **Power BI Desktop**.
+With the *many-to-many relationships* feature in Power BI Desktop, you can join tables that use a cardinality of *Many to Many*. You can more easily and intuitively create data models that contain two or more data sources. The *many-to-many relationships* feature is part of the larger *composite models* capabilities in Power BI Desktop.
 
-![many-to-many in Edit relationship dialog](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
+![A many-to-many relationship in the "Edit relationship" pane](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
-The **many-to-many relationships** capability in **Power BI Desktop** is part of a collection of three related features:
+The *many-to-many relationships* capability in Power BI Desktop is one of three related features:
 
-* **Composite models** - allows a report to have multiple data connections, including DirectQuery connections or import, in any combination thereof.
-* **Many-to-many relationships** - with **composite models** you can establish **many-to-many relationships** between tables, removing requirements for unique values in tables, and removing prior work-arounds such as introducing new tables just to establish relationships. 
-* **Storage mode** - you can now specify which visuals require a query to back-end data sources, and those that do no require it are imported even if based on DirectQuery, improving performance and reducing back-end load. Previously, even simple visuals like slicers initiated queries being sent to back-end sources. 
+* **Composite models**: Allows a report to have two or more data connections, including DirectQuery connections or Import, in any combination. For more information, see [Composite models in Power BI Desktop (preview)](desktop-composite-models.md).
 
-This collection of three related features for **composite models** are each described in separate articles:
+* **Many-to-many relationships**: With *composite models*, you can establish *many-to-many relationships* between tables. This approach removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. The feature is described further in this article.
 
-* **Composite models** are described in detail in the [composite models in Power BI Desktop (Preview)](desktop-composite-models.md) article.
-* **Many-to-many relationships** are described in this article.
-* **Storage mode** is described in its own article, [storage mode in Power BI Desktop (Preview)](desktop-storage-mode.md).
+* **Storage mode**: You can now specify which visuals require a query to back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals such as slicers began queries that were sent to back-end sources. For more information, see [Storage mode in Power BI Desktop (preview)](desktop-storage-mode.md).
 
-## Enabling the many-to-many relationships preview feature
+## Enable the *many-to-many relationships* preview feature
 
-The **many-to-many relationships** feature is part of the **composite models** capabilities and is in Preview, and must be enabled in **Power BI Desktop**. To enable **composite models**, select **File > Options and Settings > Options > Preview Features**, then select the **composite models** checkbox.
+The *many-to-many relationships* feature must be enabled in Power BI Desktop. To enable composite models, select **File** > **Options and Settings** > **Options** > **Preview Features**, and then select the **Composite Models** check box.
 
-![enabling preview features](media/desktop-composite-models/composite-models_02.png)
+![The "Preview features" pane](media/desktop-composite-models/composite-models_02.png)
 
-You'll need to restart **Power BI Desktop** for the feature to be enabled.
+To enable the feature, you need to restart Power BI Desktop.
 
-![restart required for changes to take effect](media/desktop-composite-models/composite-models_03.png)
+![The "Feature requires a restart" window](media/desktop-composite-models/composite-models_03.png)
 
+## What *many-to-many relationships* solves
 
-## What many-to-many relationships solves
+Before the *many-to-many relationships* feature became available, the relationship between two tables was defined in Power BI. At least one of the table columns involved in the relationship had to contain unique values. Often, though, no columns contained unique values. 
 
-Prior to availability of **many-to-many relationships**, when defining a relationship between two tables in Power BI, at least one of the columns involved in the relationship had to contain unique values. In many circumstances though, no column in the table contained unique values. 
+For example, two tables might have had a column labeled *Country*, but the values of *Country* weren't unique in either table. To join such tables, it was necessary to create a workaround. One such workaround might be to introduce into the model additional tables with the necessary unique values. With the *many-to-many relationships* feature, you can join such tables directly by using a relationship with a cardinality of **Many to-Many**.  
 
-For example, two tables may have a column containing the *Country*, but the values of *Country* were not unique in either table. To join between such tables, it was necessary to create a workaround such as introducing additional tables into the model that contained the necessary unique values. The feature **many-to-many relationships** provides an alternative approach, allowing such tables to be joined directly using a relationship with a cardinality of **Many-to-many**.  
+## Use *many-to-many relationships*
 
-## Using many-to-many relationships
+When you define a relationship between two tables in Power BI, you must define the cardinality of the relationship. For example, the relationship between *ProductSales* and *Product*&mdash;using columns *ProductSales[ProductCode]* and *Product[ProductCode]*&mdash;would be defined as *Many-1*. We define the relationship in this way because there are many sales for each product, and the column in the *Product* table *(ProductCode)* is unique. When you define a relationship cardinality as *Many-1*, *1-Many*, or *1-1*, Power BI validates it to help ensure that the cardinality that you select matches the actual data.
 
-When defining a relationship between two tables in Power BI, you must define the cardinality of the relationship. For example, the relationship between *ProductSales* and *Product* (using columns *ProductSales[ProductCode]* and *Product[ProductCode]*) would be defined as being **Many-1**, as there are many sales for each product, and the column in the *Product* table *(ProductCode)* is unique. When defining a relationship cardinality as **Many-1**, **1-Many**, or **1-1**, Power BI performs validation to ensure the cardinaltiy selected matches the actual data.
+For example, take a look at the simple model in the following image:
 
-For example, take a look at the simple model in the following image.
+![Relationship view](media/desktop-many-to-many-relationships/many-to-many-relationships_02.png)
 
-![relationship view](media/desktop-many-to-many-relationships/many-to-many-relationships_02.png)
+Now, imagine that the *Product* table displays just two rows, as shown:
 
-Then imagine the *Product* table contained just two rows.
+![Product table visual with two rows](media/desktop-many-to-many-relationships/many-to-many-relationships_03.png)
 
-![table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_03.png)
+Also imagine that the *Sales* table has just four rows, including a row for a product C. Because of a referential integrity error, the product C row doesn't exist in the *Product* table.
 
-Also imagine the *Sales* table has just four rows, including *Sales* for a product **C** that does not exist in the *Product* table (due to a referential integrity error).
+![Sales table visual with four rows](media/desktop-many-to-many-relationships/many-to-many-relationships_04.png)
 
-![table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_04.png)
+The *ProductName* and *Price* (from the *Product* table), along with the total *Qty* for each product (from the *ProductSales* table), would be displayed as shown: 
 
-A visual that displayed *ProductName* and *Price* (from the *Product* table), along with the total *Qty* for each product (from the *ProductSales* table) would display as the following image shows: 
+![Visual displaying the product name, price, and quantity](media/desktop-many-to-many-relationships/many-to-many-relationships_05.png)
 
-![table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_05.png)
+As you can see in the preceding image, there's blank *ProductName* row that's associated with sales for product C. This blank row accounts for the following:
 
-As you can see in the previous image, there's a row in the visual with a blank *ProductName*, associated with sales for the product *C*. This blank row accounts for the following:
+* Any rows in the *ProductSales* table for which no corresponding row exists in the *Product* table. There's a referential integrity issue, as we see for product *C* in this example.
 
-* Any rows in the *ProductSales* table for which there is no corresponding row in the *Product* table - there's a referential integrity issue, as we see for product *C* in this example.
+* Any rows in the *ProductSales* table for which the foreign key column is null. 
 
-* Any rows in the *ProductSales* table for which the foreign key column is Null. 
+For these reasons, the blank row in both cases accounts for sales where the *ProductName* and *Price* are unknown.
 
-Because of these reasons, in both cases the blank row accounts for sales where the *ProductName* and *Price* are unknown.
+It sometimes happens that the tables are joined by two columns, yet neither column is unique. For example, consider the following two tables:
 
-However, it's sometimes the case that the tables are joined by two columns, yet neither column is unique. For example, consider the following two tables:
+* The *Sales* table displays sales data by *State*, and each row contains the sales amount for the type of sale in that state. The states include CA, WA, and TX. 
 
-* The *Sales* table contains sales data by *State*, with each row containing the sales amount for the type of sale in that state (including states CA, WA, and TX) 
+    ![Sales table displaying sales by state](media/desktop-many-to-many-relationships/many-to-many-relationships_06.png)
 
-    ![table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_06.png)
+* The *CityData* table displays data on cities, including the population and state (including CA, WA, and New York).
 
-* The *CityData* table contains data on cities, including the population and state (including states CA, WA, and New York)
+    ![Sales table displaying city, state, and population](media/desktop-many-to-many-relationships/many-to-many-relationships_07.png)
 
-    ![table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_07.png)
+Although there's a column for *State* in both tables and it's reasonable to want to report on both total sales by state and total population of each state, a problem exists: the *State* column isn't unique in either table. 
 
-While there is a column for *State* in both tables and it's reasonable to want to report on total *Sales* by *State*, along with the total population of each State, a problem exists: the *State* column is not unique in either table. 
+## The previous workaround
 
-## The prior workaround
+In earlier Power BI Desktop versions than the July 2018 release, users couldn't create a direct relationship between these tables. A common workaround was to do the following:
 
-In versions of **Power BI Desktop** prior to the July 2018 release, it wasn't possible to create a relationship directly between these tables. A common workaround to this problem was to do the following:
+* Create a third table that contains only the unique *State* IDs. The table could be any or all of the following:
+  * A calculated table (defined by using Data Analysis Expressions [DAX]).
+  * A table based on a query that's defined in Query Editor, which could display the unique IDs drawn from one of the tables.
+  * The combined full set.
 
-* Create a third table containing just the unique *State* ids. This could be either a calculated table (defined using DAX), or a table defined using a query defined in **Query Editor** which could contain the unique ids drawn from one of the tables, or the unioned full set.
+* Relate the two original tables to that new table by using common *Many-1* relationships.
 
-* Relate the two original tables to that new table, using common **Many-1* relationships.
+You could either leave the workaround table visible or hide it so that it doesn't appear in the **Fields** list. If you hide the table, the *Many-1* relationships would commonly be set to filter in both directions, and you could use the *State* field from either table. The subsequent cross filtering would propagate to the other table. That approach is shown in the following image:
 
-That workaround table could either be left visible, or be hidden such that it does not appear in the field list. In the latter case, the **Many-1** relationships would commonly be set to filter in both directions, such that the *State* field from either table could be used, with subsequent cross filtering propagating to the other table. That workaround approach is shown in the following image of the **Relationship view**.
+![Relationship view](media/desktop-many-to-many-relationships/many-to-many-relationships_08.png)
 
-![relationship view](media/desktop-many-to-many-relationships/many-to-many-relationships_08.png)
+A visual that displays *State* (from the *CityData* table), along with total *Population* and total *Sales*, would then appear as follows:
 
-A visual showing *State* (from the *CityData* table) along with the total *Population* and total *Sales* would then be as follows.
-
-![table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
-
-Note that given the use of the state from the *CityData* table in this workaround, only those *State*s in that table are listed (and thus, TX is excluded). Also, unlike the case of **Many-1** relationships, while the total row includes all *Sales* (including those of TX) the details do not include a blank row covering such mismatched rows. Similarly there would be no blank row covering any *Sales* for which there was a null value for the *State*.
-
-If *City* were also added to that visual, then while the population per *City* is known, the *Sales* shown for *City* would simply repeat the *Sales* for the corresponding *State* (as is normally the case when grouping on a column that is not related to some aggregate measure), as shown in the following image.
-
-![table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
-
-If the new table *Sales* were defined to be the union of all *States* in this workaround, and made visible in the field list, then the same visual showing *State* (on the new table) along with the total *Population* and total *Sales* would then be as follows.
-
-![table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
-
-In that case and shown in the visual, *TX* (with *Sales* but unknown population), and *New York* (with a known population but no *Sales*) would be included. 
-
-As you can see, this workaround was not optimal and has many issues. With the creation of the **many-to-many relationship**, these issues are addressed, as described in the following section.
-
-## Using many-to-many relationships instead of the workaround
-
-In versions of **Power BI Desktop** starting with July 2018, you can directly relate such tables described in the previous section without needing to resort to such workarounds. It's now possible to set the cardinality of a relationship to **Many to Many**, indicating that neither table contains unique values. For such relationships, you can still control which table filters the other table, or to have bi-directional filtering where both tables filter each other.  
+![Table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
 
 > [!NOTE]
-> The ability to create **Many to Many** relationships is in Preview, and while it Preview, it's not possible to publish models using **Many to Many** relationships to the Power BI service. 
+> Because the state from the *CityData* table is used in this workaround, only the states in that table are listed and, therefore, TX is excluded. Also, unlike *Many-1* relationships, while the total row includes all *Sales* (including those of TX), the details do not include a blank row covering such mismatched rows. Similarly, there would be no blank row covering *Sales* for which there's a null value for the *State*.
 
-In **Power BI Desktop**, cardinality defaults to **Many to Many** when it's determined that neither table contains unique values for the columns in the relationship. In such cases a warning is displayed, to confirm that relationship setting is your intended behavior, rather than being the unintended effect of a data issue. 
+If you also add *City* to that visual, although the population per *City* is known, the *Sales* shown for *City* simply repeats the *Sales* for the corresponding *State*. This is normally the case when the grouping in a column is unrelated to some aggregate measure, as shown in the following image:
 
-For example, in creating a relationship directly between *CityData* and *Sales*, where Filters should flow from *CityData* to *Sales*, the relationship dialog appear as showin in the following image.
+![Table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
 
-![Edit relationship dialog](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
+If we define the new *Sales* table as the combination of all *States* in this workaround and we make it visible in the **Fields** list, the same visual would display both *State* (on the new table) and the total *Population* and total *Sales*, as shown in the following image:
 
-The resulting **Relationship View** would then contain the direct **Many to Many** relationship between the two tables. The appearance in the **Fields** list, and subsequent behavior when visuals are created, is then the same as employing the workaround described in the previous section, where the extra table (with the distinct *States* in it) is not made visible. For example, as in the previous section describing the workaround, a visual showing *States* along with total population and sales would be as follows.
+![Table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
 
-![table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
+As you can see, *TX*&mdash;with *Sales* data but unknown *Population* data&mdash;and *New York*&mdash;with known *Population* data but no *Sales* data&mdash;would be included. This workaround isn't optimal, and it has many issues. With the creation of the many-to-many relationships, the resulting issues are addressed as described in the next section.
 
-So the major difference between **Many to Many** relationships and the more typical **Many-1** relationships are the following.
+## Use *many-to-many relationships* instead of the workaround
 
-* The values shown do not include a blank row accounting for any mismatched rows in the other table, nor for rows where the column used in the relationship in the other table is null.
-* It is not possible to use the *RELATED()* function (as more than one row could be related)
-* Using the *ALL()* function on a table will not remove filters applied to other tables related to it by a **Many to Many** relationship. For example, a measure defined as the following in the previous example would not remove filters on columns on the related *CityData* table:
+As of the July 2018 version of Power BI Desktop, you can directly relate tables, such as the ones we described earlier, without having to resort to similar workarounds. It's now possible to set the relationship cardinality to *Many to Many*. This setting indicates that neither table contains unique values. For such relationships, you can still control which table filters the other table, or apply bi-directional filtering where each table filters the other.  
 
-    ![script example](media/desktop-many-to-many-relationships/many-to-many-relationships_13.png)
+> [!NOTE]
+> The ability to create *many-to-many relationships* is in preview. While it's in preview, it's not possible to publish to the Power BI service models that use *many-to-many relationships*. 
 
-    As such a visual showing *State*, *Sales*, and *Sales total* would result in the following:
+In Power BI Desktop, the cardinality defaults to *Many to Many* when it determines that neither table contains unique values for the columns in the relationship. In such cases, a warning is displayed to confirm that relationship-setting is your intended behavior and not the unintended effect of a data issue. 
 
-    ![table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_14.png)
+For example, when you create a relationship directly between *CityData* and *Sales*&mdash;where filters should flow from *CityData* to *Sales*&mdash;Power BI Desktop displays the **Edit relationship** window as shown in the following image:
 
-Because of this, care should be taken to ensure that calculations using *ALL(\<Table>)*, such as *% of grand total*, are returning the intended results. 
+![The "Edit relationship" window](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
+
+The resulting **Relationship** view would then display the direct, many-to-many relationship between the two tables. The tables' appearance in the **Fields** list, and their subsequent behavior when the visuals are created, is similar to when we applied the workaround. In the workaround, the extra table that displays the distinct *State* data isn't made visible. For example, as described in the preceding section, a visual showing *State*, *Population*, and *Sales* data would be displayed as follows:
+
+![Table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
+
+The major differences between *many-to-many relationships* and the more typical *Many-1* relationships are as follows:
+
+* The values shown don't include a blank row that accounts for mismatched rows in the other table. Nor do the values account for rows where the column used in the relationship in the other table is null.
+* It isn't possible to use the `RELATED()` function, because more than one row could be related.
+* Using the `ALL()` function on a table doesn't remove filters that are applied to other, related tables by a many-to-many relationship. In the preceding example, a measure that's defined as shown in the following script would not remove filters on columns in the related *CityData* table:
+
+    ![Script example](media/desktop-many-to-many-relationships/many-to-many-relationships_13.png)
+
+    A visual showing *State*, *Sales*, and *Sales total* data would result in the following:
+
+    ![Table visual](media/desktop-many-to-many-relationships/many-to-many-relationships_14.png)
+
+With the preceding differences in mind, make sure that the calculations that use `ALL(\<Table>)`, such as *% of grand total*, are returning the intended results. 
 
 
 ## Limitations and considerations
 
-There are a few limitations for this release of **many-to-many relationships** and **composite models**.
+There are a few limitations for this release of *many-to-many relationships* and composite models.
 
-The following Live Connect (multidimensional) sources cannot be used with **composite models**:
+The following Live Connect (multi-dimensional) sources can't be used with composite models:
 
 * SAP HANA
 * SAP Business Warehouse
@@ -162,19 +159,14 @@ The following Live Connect (multidimensional) sources cannot be used with **comp
 * Power BI datasets
 * Azure Analysis Services
 
-When connecting to those multidimensional sources using DirectQuery, you cannot also connect to another DirectQuery source, nor combine with imported data.
+When you connect to these multi-dimensional sources by using DirectQuery, you can't connect to another DirectQuery source or combine it with imported data.
 
-The existing limitations of using DirectQuery still apply when using **many-to-many relationships**. Many of those limitations are now per table, depending upon the **storage mode** of the table. For example, a calculated column on an imported table can refer to other tables, but a calculated column on a DirectQuery table is still restricted to refer only to columns on the same table. Other limitations apply to the model as a whole, if any of the tables within the model are DirectQuery. For example, the **QuickInsights** and **Q&A** features are not available on a model if any of the tables within it has a **storage mode** of DirectQuery. 
+The existing limitations of using DirectQuery still apply when you use *many-to-many relationships*. Many of these limitations are now per table, depending upon the storage mode of the table. For example, a calculated column on an imported table can refer to other tables, but a calculated column on a DirectQuery table can still refer only to columns on the same table. Other limitations apply to the model as a whole if any of the tables within the model are DirectQuery. For example, the QuickInsights and Q&A features are unavailable on a model if any of the tables within it has a storage mode of DirectQuery. 
 
 ## Next steps
 
-The following articles describe more about composite models, and also describe DirectQuery in detail.
-
-* [Composite Models in Power BI Desktop (Preview)](desktop-composite-models.md)
-* [Storage Mode in Power BI Desktop (Preview)](desktop-storage-mode.md)
-
-DirectQuery articles:
-
-* [Using DirectQuery in Power BI](desktop-directquery-about.md)
-* [Data sources supported by DirectQuery in Power BI](desktop-directquery-data-sources.md)
-
+For more information about composite models and DirectQuery, see the following articles:
+* [Composite models in Power BI Desktop (preview)](desktop-composite-models.md)
+* [Storage mode in Power BI Desktop (preview)](desktop-storage-mode.md)
+* [Use DirectQuery in Power BI Desktop](desktop-directquery-about.md)
+* [Data sources supported by DirectQuery in Power BI Desktop](desktop-directquery-data-sources.md)

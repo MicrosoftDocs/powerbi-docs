@@ -5,11 +5,11 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
-
+ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/24/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Get started

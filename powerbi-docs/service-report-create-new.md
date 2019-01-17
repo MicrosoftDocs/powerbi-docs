@@ -1,24 +1,22 @@
 ---
 title: 'Create a new report from a dataset '
 description: Create a new Power BI report from a dataset.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/24/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Reports
 ---
 # Create a new report in Power BI service by importing a dataset
 You've read [Reports in Power BI](consumer/end-user-reports.md) and now you want to create your own. There are many different ways to create a report, and in this article we'll start by creating a very basic report from an Excel dataset using Power BI service. Once you understand the basics of creating a report, the **Next steps** at the bottom will direct you to more-advanced report topics.  
 
-> **TIP**: To create a report by copying an existing report, see [Copy a report](power-bi-report-copy.md)
-> 
-> ### Prerequisites
+## Prerequisites
 > - Power BI service (for creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md) )  
 > - Retail Analysis sample dataset
 
@@ -89,7 +87,7 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
 Continue exploring your data and adding visualizations. When you find especially interesting insights, [pin them to a dashboard](service-dashboard-pin-tile-from-report.md).
 
 ## Next steps
-* [Add a new page to the report](power-bi-report-add-page.md)  
+
 * Learn how to [pin visualizations to a dashboard](service-dashboard-pin-tile-from-report.md)   
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -1,16 +1,16 @@
 ---
 title: Tutorial - Slicers in Power BI
 description: 'Slicers in Power BI'
-author: mihart
+author: v-thepet
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: zIZPA0UrJyA
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 09/25/2018
-ms.author: v-thepet
+ms.date: 10/25/2018
+ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---

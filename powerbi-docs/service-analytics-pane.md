@@ -1,19 +1,20 @@
 ---
-title: Analytics pane in Power BI service
+title: Create dynamic reference lines for visuals
 description: Create dynamic reference lines for visuals in Power BI service
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2017
+ms.date: 11/14/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
 ---
-# Analytics pane in Power BI service
+# Create dynamic reference lines for visuals in the Power BI service
+
 With the **Analytics** pane in **Power BI service**, you can add dynamic *reference
 lines* to visualizations, and provide focus for important trends or insights.
 
@@ -24,7 +25,7 @@ lines* to visualizations, and provide focus for important trends or insights.
 > 
 > 
 
-## Using the Analytics pane
+## Use the Analytics pane
 With the **Analytics** pane, you can create the following types of dynamic reference lines (not all lines are available for all visual types):
 
 * X-Axis constant line

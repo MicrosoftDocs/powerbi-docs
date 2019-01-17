@@ -3,6 +3,11 @@ layout: HubPage
 hide_bc: true
 title: Power BI documentation
 description: Power BI documentation
+ms.service: powerbi
+ms.author: maggies
+author: maggiesMSFT
+ms.topic: hub-page
+ms:date: 10/26/2018
 ---
 <div id="main" class="v2">
     <div class="container">

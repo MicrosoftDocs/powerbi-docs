@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: overview
-ms.date: 05/01/2018
+ms.date: 10/29/2018
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -28,7 +28,6 @@ Power BI is designed for self-service business intelligence, and the administrat
 
 The job is to make business users productive and ensure security and compliance with laws and regulations. Responsibilities may include help and support and, in many cases, assisting business users to do the right thing.
 
-
 ## Administrator roles related to Power BI
 
 There are several roles related to Power BI administration, which are covered in the following table.
@@ -47,7 +46,6 @@ Power BI Service Administrators have access to the Power BI admin portal which i
 
 The Power BI Service Administrator role does not grant the ability to assign licenses to users or view audit logs in Office 365. Therefore, the task of administering Power BI cannot currently be performed by users who are solely members of the Power BI Service Administrator role.
 
-
 ## Administrative tasks
 
 Administrators perform many tasks to support the Power BI tenant for their organization, which are covered in the following table.
@@ -62,7 +60,6 @@ Administrators perform many tasks to support the Power BI tenant for their organ
 | Manage Power BI resources |<ul><li>Manage workspaces<br><li>Publish custom visuals<br><li>Verify codes used to embed Power BI in other applications|
 | Provide help and support to tenant users |<ul><li>Troubleshoot data access and other issues</ul>|
 | Other tasks |<ul><li>Deploy Power BI Desktop, e.g. using System Center Configuration Manager<br><li>Manage Power BI mobile app deployment with Intune<br><li>Manage data privacy and security, such as source data security</ul>|
-
 
 ## Administrative tools
 
@@ -79,11 +76,12 @@ There are several tools related to Power BI administration, which are covered in
 
 ## Next steps
 
-We hope this article gave you some quick insights into the job of the Power BI administrator, and the specific roles, tasks, and tools that are involved. We recommend the two topics below to deepen your understanding.
+We hope this article gave you some quick insights into the job of the Power BI administrator, and the specific roles, tasks, and tools that are involved. We recommend the follow articles topics to deepen your understanding.
 
 [Use the Power BI admin portal](service-admin-portal.md)
+
+[Use PowerShell cmdlets](/powershell/power-bi/overview?toc=%2Fen-us%2Fpower-bi%2FTOC.json&bc=%2Fen-us%2Fpower-bi%2Fbreadcrumb%2Ftoc.json&view=powerbi-ps)
 
 [Power BI administration FAQ](service-admin-faq.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-

@@ -6,7 +6,7 @@ manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: mihart
@@ -61,6 +61,12 @@ You can also apply a **group name** to a collection of slicers in the **Advanced
 This feature lets you create a custom group of slicers to keep synchronized. A default name is provided, but you can use any name you prefer. 
 
 The group name provides additional flexibility with slicers. You can create separate groups to sync slicers that use the same field, or put slicers that use different fields into the same group. 
+
+## How filtering affects selection in slicers
+
+If you make a selection in a slicer and then apply a filter that would normally remove the selected item, it remains at the bottom of the list of items in the slicer. If the filter is removed, the selection is still there in the slicer. You'll notice that if you unselect the item from the slicer it disappears from the list.
+
+![retained selection in slicers](./media/desktop-slicers/retained-selection-in-slicers.gif)
 
 
 ## Next steps

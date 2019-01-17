@@ -1,15 +1,16 @@
 ---
-title: Featured dashboards in Power BI
+title: Select which dashboard to display when you open Power BI service
 description: Documentation on how to create a Featured dashboard in Power BI service
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
+ms.custom: seodec18
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -37,7 +38,7 @@ Watch Amanda create a featured dashboard and then follow the instructions below 
 
 
 1. Open the dashboard that you'd like to set as *Featured*. 
-2. In the top navbar, you'll either see **Set as featured** or just the featured  ![featured icon](./media/end-user-featured/power-bi-featured-icon.png)  icon. Select either one.
+2. In the top menubar, you'll either see **Set as featured** or just the featured  ![featured icon](./media/end-user-featured/power-bi-featured-icon.png)  icon. Select either one.
    
     ![Set as featured icon](./media/end-user-featured/power-bi-set-as-featured.png)
 3. Confirm your selection.

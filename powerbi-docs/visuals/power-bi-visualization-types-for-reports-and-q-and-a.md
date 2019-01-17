@@ -6,9 +6,9 @@ manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 12/03/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -125,7 +125,7 @@ For more information, see [Shape Maps in Power BI](desktop-shape-map.md).
 ### Matrix
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
 
-For more information, see [Matrix visuals in Power BI](desktop-shape-map.md).
+For more information, see [Matrix visuals in Power BI](desktop-matrix-visual.md).
 
 ### Pie charts
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)

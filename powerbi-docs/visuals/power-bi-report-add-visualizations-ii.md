@@ -6,7 +6,7 @@ manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
@@ -28,7 +28,7 @@ In this tutorial we'll dig into our Retail Analysis dataset and create a few key
 1. Open the Retail Analysis sample .PBIX file in Power BI Desktop. 
    ![](media/power-bi-report-add-visualizations-ii/power-bi-open-desktop.png)   
 
-2.  [Add a new page](../power-bi-report-add-page.md) by selecting the yellow plus icon at the bottom of the canvas.
+2. Add a new page by selecting the yellow plus icon at the bottom of the canvas.
 
 ### Add a visualization that looks at this year's sales compared to last year.
 1. From the **Sales** table, select **This Year Sales** > **Value** and **Last Year Sales**. Power BI creates a column chart.  This is somewhat interesting, and you want to dig deeper. What do the sales look like by month?  

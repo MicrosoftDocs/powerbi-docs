@@ -2,9 +2,8 @@
 title: How to migrate Power BI Workspace Collection Workspace Collection content to Power BI
 description: Learn how to migrate from Power BI Workspace Collection to the Power BI Embedded and leverage advances for embedding in apps.
 author: markingmyname
-manager: kfile
-ms.reviewer: ''
-ms.Embedded: powerbi
+ms.service: powerbi
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
@@ -75,7 +74,7 @@ You will need to register your application with Azure AD in order to make REST A
 You should register the application using the application **master** account.
 
 ## Create App workspaces (Required)
-You can take advantage of App workspaces to provide better isoliation if your application is servicing multiple customers. Dashboards and reports would be isolated between your customers. You could then use a Power BI account per App workspace to further isolate application experiences between your customers.
+You can take advantage of App workspaces to provide better isolation if your application is servicing multiple customers. Dashboards and reports would be isolated between your customers. You could then use a Power BI account per App workspace to further isolate application experiences between your customers.
 
 > [!IMPORTANT]
 > You cannot use a personal workspace to take advantage of embedding to non-Power BI users.
