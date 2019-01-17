@@ -34,7 +34,7 @@ With apps, whenever the app author releases updates, you automatically see the c
 <!-- add conceptual art -->
 ## Get a new app
 You can get apps in a few different ways. 
-- The app author can install the app automatically in your Power BI account, and the next time you open Power BI, you'll see the new app in the **Apps** content area. 
+- The app author can install the app automatically in your Power BI account, and the next time you open Power BI, you'll see the new app in the **Apps** content list. 
 - The app author can email you a direct link to an app. Selecting the link opens the app in Power BI.
 - You can search for apps in AppSource, where you see all the apps that you can access. AppSource contains apps published by report designers both inside and outside of your company. For example, you may find an app on AppSource for a service that you already use, such as Google Analytics, GitHub, or Microsoft Dynamics. 
 - In Power BI on your mobile device, you can only install an app from a direct link, and not from AppSource. If the app author installs the app automatically, you'll see it in your list of apps.
