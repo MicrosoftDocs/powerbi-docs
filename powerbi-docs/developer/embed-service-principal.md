@@ -135,7 +135,7 @@ Customers that configure row-level security (RLS) using an SSAS data source can 
 
 When you're generating the embed token, you can currently specify the effective identity of a user using a master user account. Now you can also use a service principal object to specify the effective identity. You can specify the effective identity of a user by passing the AAD access token to the server. The access token is used to pull only the relevant data for that user for an SSAS on-premises live connection.
 
-Such effective identity issues apply to RLS rules directly on the SSAS server. Power BI Embedded uses the provided access token when querying data from the SSAS server.
+During the configuration of the On-premises gateway you need to navigate to the Power BI admin portal and set the option to **Can override effective identity for Power BI Embedded**.
 
 ### REST API
 
@@ -149,6 +149,8 @@ When you're calling the [REST API](https://docs.microsoft.com/rest/api/power-bi/
 ```
 
 The value for the **identifier** attribute needs to be an [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object), or an email address. The value for the **datasourceAccessRight** attribute needs to be **ReadOverrideEffectiveIdentity**.
+
+Once you use the service principal object with the gateway
 
 ## Migrate to service principal
 
