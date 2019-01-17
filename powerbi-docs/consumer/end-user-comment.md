@@ -30,6 +30,8 @@ Comments can be added to an entire dashboard or to individual visuals on a dashb
 
     Here we see that the dashboard creator has already added a general comment.  Anyone with access to this dashboard can see this comment.
 
+    ![comments icon](media/end-user-comment/power-bi-dash-comment.png)
+
 2. To respond, select **Reply**, type your response, and select **Post**.  
 
     ![Comments Reply icon](media/end-user-comment/power-bi-comment-reply.png)
