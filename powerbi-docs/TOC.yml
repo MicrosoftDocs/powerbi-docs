@@ -271,6 +271,12 @@
         href: desktop-rls.md
       - name: "Customizing tooltips"
         href: desktop-custom-tooltips.md
+      - name: "Text boxes and shapes in reports"
+        href: power-bi-reports-add-text-and-shapes.md
+      - name: "Add a hyperlink to a text box"
+        href: service-add-hyperlink-to-text-box.md
+      - name: "Hyperlinks in tables"
+        href: power-bi-hyperlinks-in-tables.md
       - name: "Conditional table formatting"
         href: desktop-conditional-table-formatting.md
       - name: "Sort by column in Power BI Desktop"
@@ -303,18 +309,12 @@
         href: visuals/power-bi-visualization-export-data.md      
       - name: "Move, resize, and pop out a visualization in a report"
         href: visuals/power-bi-visualization-move-and-resize.md
-      - name: "Hyperlinks in tables"
-        href: power-bi-hyperlinks-in-tables.md
-      - name: "Add a hyperlink to a Text Box in a report"
-        href: service-add-hyperlink-to-text-box.md
       - name: "Change how visuals interact in a report"
         href: service-reports-visual-interactions.md
       - name: "Histograms"
         href: visuals/service-histograms.md
       - name: "Tips and tricks for Power BI map visualizations"
         href: visuals/power-bi-map-tips-and-tricks.md
-      - name: "Text boxes in Power BI reports"
-        href: power-bi-reports-add-text-and-shapes.md
       - name: "Customize X-axis and Y-axis properties"
         href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
       - name: "ArcGIS maps in Power BI"

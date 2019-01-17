@@ -1,15 +1,15 @@
 ---
 title: Add hyperlinks to a table
 description: Use Power BI Desktop to create hyperlinks. Then use either Desktop or Power BI service to add those hyperlinks to your report tables and matrixes.
-author: mihart
-manager: kvivek
+author: maggiesMSFT
+manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
-ms.author: mihart
+ms.date: 01/16/2019
+ms.author: maggies
 
 LocalizationGroup: Visualizations
 ---
@@ -20,7 +20,6 @@ This topic teaches you how to use Power BI Desktop to create hyperlinks. Then us
 
 > [!NOTE]
 > Hyperlinks in [tiles on dashboards](service-dashboard-edit-tile.md) and [text boxes on dashboards](service-dashboard-add-widget.md) can be created on-the-fly using Power BI service. Hyperlinks in [text boxes in reports](service-add-hyperlink-to-text-box.md) can be created on-the-fly using Power BI service and Power BI Desktop.
-> 
 > 
 
 ## To create a hyperlink in a table or matrix using Power BI Desktop
