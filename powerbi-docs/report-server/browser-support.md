@@ -26,7 +26,7 @@ The following is the current list of browsers supported for the web portal.
 * Google Chrome (+)
 * Mozilla Firefox (+)
 
-**Apple OS X**  
+**Apple macOS**  
 *OS X 10.9-10.11*
 
 * Apple Safari (+)
@@ -56,7 +56,7 @@ The following is the current list of browsers supported with the Report Viewer w
 * Google Chrome (+)
 * Mozilla Firefox (+)
 
-**Apple OS X**  
+**Apple macOS**  
 *OS X 10.9-10.11*
 
 * Apple Safari (+)
