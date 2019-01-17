@@ -1,6 +1,6 @@
 ---
-title: Subscribe to reports and dashboards in Power BI service
-description: Learn how to subscribe yourself and others to a snapshot of a Power BI report and dashboard.
+title: Subscribe to reports and dashboards for Power BI consumers
+description: Learn how to subscribe yourself to an emailed snapshot of a Power BI report and dashboard.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -9,7 +9,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/04/2018
+ms.date: 01/17/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks
