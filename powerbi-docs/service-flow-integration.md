@@ -56,7 +56,7 @@ This template has one trigger (Power BI data alert for new Olympic medals for Ir
    
    ![Send an email screen](media/service-flow-integration/power-bi-flow-email.png)
 
-3. Flow creates a title and message for you which you can keep or modify. All the values you set when you created the alert in Power BI are available for your use -- just place your cursor and select from the grey highlighted area. 
+3. Flow creates a title and message for you which you can keep or modify. All the values you set when you created the alert in Power BI are available for your use -- just place your cursor and select from the gray highlighted area. 
 
    ![Send an email screen](media/service-flow-integration/power-bi-flow-email-default.png)
 
@@ -96,7 +96,7 @@ In this task we'll create a simple flow from scratch that is triggered by a Powe
 4. Fill in the event fields. As you select a field, Flow displays dynamic content that you can include.
    
    ![continue to build the flow](media/service-flow-integration/power-bi-flow-event.png)
-5. Selet **Create flow** when done.  Flow saves and evaluates the flow. If there are no errors, select **Done** to run this flow.  The new flow is added to your **My flows** page.
+5. Select **Create flow** when done.  Flow saves and evaluates the flow. If there are no errors, select **Done** to run this flow.  The new flow is added to your **My flows** page.
    
    ![Complete the flow](media/service-flow-integration/power-bi-flow-running.png)
 6. When the flow is triggered by your Power BI data alert, you'll receive an Outlook event notification similar to this one.
@@ -106,7 +106,7 @@ In this task we'll create a simple flow from scratch that is triggered by a Powe
 ## Next steps
 * [Get started with Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started/)
 * [Set data alerts in Power BI service](service-set-data-alerts.md)
-* [Set data alerts on your iphone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Set data alerts on your iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Set data alerts in the Power BI mobile app for Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

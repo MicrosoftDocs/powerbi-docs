@@ -26,26 +26,26 @@ You can add text boxes to reports, pin them to dashboards from reports, and add 
 
 ## To add a hyperlink to a text box in a report
 1. [Create a text box and add some text](power-bi-reports-add-text-and-shapes.md). 
-2. Highlight existing text, or add new text to use as a hyperlink.
+2. Select existing text, or add new text to use as a hyperlink.
    
-   ![](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-new.png)
-3. Select the hyperlink icon  ![](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-icon.png) .
+   ![Select text in the text box](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-new.png)
+3. Select the hyperlink icon ![Hyperlink icon](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-icon.png).
 4. Type or paste the URL in the hyperlink field, and select **Done**.
    
-   ![](media/service-add-hyperlink-to-text-box/power-bi-add-link.png)
+   ![Type or paste the URL in the hyperlink field](media/service-add-hyperlink-to-text-box/power-bi-add-link.png)
 5. Test the link.  
    
-   ![](media/service-add-hyperlink-to-text-box/power-bi-test-link.png)
+   ![Test the link](media/service-add-hyperlink-to-text-box/power-bi-test-link.png)
    
    * Place your cursor anywhere in the highlighted text to display the URL.  
      
-      ![](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-edit.png)
+      ![Place your cursor anywhere in the highlighted text](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-edit.png)
    * Select the URL to open the page in a new browser window.
 
 ## To remove the hyperlink but leave the text
 1. In the text box, select the hyperlink to highlight it,
    
-     ![](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-remove.png)
+     ![Remove the hyperlink](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-remove.png)
 2. Choose **Remove**. 
 
 ## Next steps
