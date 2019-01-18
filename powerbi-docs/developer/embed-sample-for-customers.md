@@ -142,18 +142,22 @@ Follow these steps to start embedding your content using the sample application.
 
 3. Open the **Web.config** file in the sample application. There are fields you need to fill in to run the application. Depending on which type of authentication method you choose there are different fields to complete.  
 
+    <center>
+
     | Master user account </br> (Power BI Pro licnese) | Service Principal </br> (app-only token) |
     |---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
     | **[applicationId](#applicationid)** | **[applicationId](#applicationid)** |
     | | **[application secret](#applicationsecret)** |
-    | **[workspaceId](#workspace-id)** | **[workspaceId](#workspace-id)**  |
-    | **[reportId](#report-id)** | **[reportId](#report-id)** |
-    | **[pbiUsername](#power-bi-username-and-password)** |
-    | **[pbiPassword](#power-bi-username-and-password)** 
+    | **[workspaceId](#workspaceid)** | **[workspaceId](#workspaceid)** |
+    | **[reportId](#reportid)** | **[reportId](#reportid)** |
+    | **[pbiUsername](#pbiunpw)** |
+    | **[pbiPassword](#pbiunpw)**
+
+    </center>
 
     ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
-    <a name ="applicationsecret"> </a> **Application ID**
+    <a name ="applicationid"> </a> **Application ID**
 
     This attribute is required for both the master user account and service principal.
 
@@ -175,7 +179,7 @@ Follow these steps to start embedding your content using the sample application.
 
        ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-    <a name ="applicationid"> </a> **Application secret**
+    <a name ="applicationsecret"> </a> **Application secret**
 
     This attribute is required for use with service principal only.
 
@@ -241,16 +245,16 @@ Follow these steps to start embedding your content using the sample application.
 
     ![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
 
-### Power BI username and password
+    <a name ="pbiunpw"> </a> Power BI username and password
 
-This attribute is required for the master user account only.
+    This attribute is required for the master user account only.
 
-If you're using a [service principal application](embed-service-principal.md) to authenticate, then you don't need to fill in the username or password attributes.
+    If you're using a [service principal application](embed-service-principal.md) to authenticate, then you don't need to fill in the username or password attributes.
 
-* Fill in the **pbiUsername** with the Power BI master user account.
-* Fill in the **pbiPassword** with the password for the Power BI master user account.
+    * Fill in the **pbiUsername** with the Power BI master user account.
+    * Fill in the **pbiPassword** with the password for the Power BI master user account.
 
-3. Now you can run the application!
+4. Now you can run the application!
 
     First select **Run** in **Visual Studio**.
 
