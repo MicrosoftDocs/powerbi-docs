@@ -303,11 +303,11 @@ The value provided in the identity blob should be a valid access token to Azure 
 
    ![App registration](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
 
-## Gateway management for Analysis Services on-premises live connections with service principal
+## On-premises data gateway use with service principal (Preview)
 
-Customers that configure row-level security (RLS) using an SSAS data source can enjoy the new [service principal](embed-service-principal.md) capability to manage users and their access to data in SSAS when integrating with **Power BI Embedded**.
+Customers that configure row-level security (RLS) using an SQL Server Analysis Services (SSAS) on-premises live connection data source can enjoy the new [service principal](embed-service-principal.md) capability to manage users and their access to data in SSAS when integrating with **Power BI Embedded**.
 
-Using [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), allows you to specify the effective identity for SQL Server Analysis Services (SSAS) on-premises live connections for an embed token using a [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
+Using [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), allows you to specify the effective identity for SSAS on-premises live connections for an embed token using a [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
 
 When you're generating the embed token, you can currently specify the effective identity of a user using a master user account. Now you can also use a service principal object to specify the effective identity. You can specify the effective identity of a user by passing the AAD access token to the server. The access token is used to pull only the relevant data for that user for an SSAS on-premises live connection.
 
@@ -325,6 +325,8 @@ When you're calling the [REST API](https://docs.microsoft.com/rest/api/power-bi/
 ```
 
 The value for the **identifier** attribute needs to be an [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object), or an email address. The value for the **datasourceAccessRight** attribute needs to be **ReadOverrideEffectiveIdentity**.
+
+It is required for you to go to the **Manage Gateways** setting and configure the setting **Can override effective identity for Power BI Embedded**.
 
 ## Considerations and limitations
 
