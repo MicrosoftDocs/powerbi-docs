@@ -26,14 +26,14 @@ In this tutorial, you learn how to:
 
 To get started, you are required to have:
 
-* A [Power BI Pro account](../service-self-service-signup-for-power-bi.md) (a master user account that is simply a username and password to logon to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
-
+* A [Power BI Pro account](../service-self-service-signup-for-power-bi.md) (a master user account that is simply a username and password to login to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription.
-
-* If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/
-pricing/) before you begin.
-* If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
+
+If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/
+pricing/) before you begin.
+
+If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Set up your embedded analytics development environment
 
@@ -71,6 +71,9 @@ However, if you proceed using a service principal application, you need to proce
 ### Apply permissions to your application within Azure Active Directory
 
 Enable additional permissions for your application, including what was provided on the app registration page. Sign in with the *master* account that you're using for embedding.
+
+> [!Note]
+> Once you enable [service principal](embed-service-principal.md) to be used with Power BI, your AD permissions don't take effect anymore. Permissions are managed through the Power BI admin portal.
 
 ### Use the Azure Active Directory portal
 
@@ -159,7 +162,7 @@ Follow these steps to start embedding your content using the sample application.
 
     <a name ="applicationid"> </a> **Application ID**
 
-    This attribute is required for both the master user account and service principal.
+    Both the master user account and service principal require this attribute.
 
     Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions.
 
@@ -171,7 +174,7 @@ Follow these steps to start embedding your content using the sample application.
 
        ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
-    3. Select the application that you want to get the **applicationId** for.
+    3. Select the application that needs the **applicationId**.
 
        ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
@@ -181,9 +184,9 @@ Follow these steps to start embedding your content using the sample application.
 
     <a name ="applicationsecret"> </a> **Application secret**
 
-    This attribute is required for use with service principal only.
+    This attribute requires service principal only.
 
-    Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works specifically when using a [service principal application](embed-service-principal.md).
+    Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works when using a [service principal application](embed-service-principal.md).
 
     To get the **ApplicationSecret**, follow these steps:
 
@@ -205,13 +208,13 @@ Follow these steps to start embedding your content using the sample application.
 
         ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-    6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you'ren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
+    6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
 
         ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
     <a name ="workspaceid"> </a> **Workspace ID**
 
-    This attribute is required for both the master user account and service principal.
+    Both the master user account and service principal require this attribute.
 
     Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
@@ -229,7 +232,7 @@ Follow these steps to start embedding your content using the sample application.
 
     <a name ="reportid"> </a> **Report ID**
 
-    This attribute is required for both the master user account and service principal.
+    Both the master user account and service principal require this attribute.
 
     Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
@@ -247,7 +250,7 @@ Follow these steps to start embedding your content using the sample application.
 
     <a name ="pbiunpw"> </a> Power BI username and password
 
-    This attribute is required for the master user account only.
+    The master user account requires this attribute.
 
     If you're using a [service principal application](embed-service-principal.md) to authenticate, then you don't need to fill in the username or password attributes.
 
@@ -408,13 +411,15 @@ Use the table below to determine which Power BI Embedded capacity best fits your
 
 **_With A SKUs, you can't access Power BI content with a FREE Power BI license._**
 
-Using embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. A dedicated capacity is required for embedding in a production environment. There's no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) to check the usage value that indicates the current embedded usage in percentage. The usage amount is based per master account.
+Using embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI master account can generate is limited. A dedicated capacity requires embedding in a production environment. There's no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) to check the usage value that indicates the current embedded usage in percentage. The usage amount is based per master account.
 
 For more information, see [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper).
 
 ### Assign an app workspace to a dedicated capacity
 
-Once you create a dedicated capacity, you can assign your app workspace to that dedicated capacity. To assign a dedicated capacity to a workspace, follow these steps.
+Once you create a dedicated capacity, you can assign your app workspace to that dedicated capacity.
+
+To assign a dedicated capacity to a workspace using a **master user account**, follow the steps below.
 
 1. Within the **Power BI service**, expand workspaces and select the ellipsis for the workspace you're using for embedding your content. Then select **Edit workspaces**.
 
@@ -427,6 +432,8 @@ Once you create a dedicated capacity, you can assign your app workspace to that 
 3. After you select **Save**, you should see a **diamond** next to the app workspace name.
 
     ![app workspace tied to a capacity](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
+
+To assign a dedicated capacity to a workspace using **[service principal](embed-service-principal.md)**, use the [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity).
 
 ## Next steps
 
