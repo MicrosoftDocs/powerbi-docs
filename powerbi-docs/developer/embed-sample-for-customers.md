@@ -145,16 +145,16 @@ Follow these steps to start embedding your content using the sample application.
 
     | Master user account </br> (Power BI Pro licnese) | Service Principal </br> (app-only token) |
     |---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-    | [applicationId](#applicationid) | [applicationId](#applicationid) |
-    | | **[application secret](#application-secret)** |
+    | **[applicationId](#applicationid)** | **[applicationId](#applicationid)** |
+    | | **[application secret](#applicationsecret)** |
     | **[workspaceId](#workspace-id)** | **[workspaceId](#workspace-id)**  |
     | **[reportId](#report-id)** | **[reportId](#report-id)** |
     | **[pbiUsername](#power-bi-username-and-password)** |
     | **[pbiPassword](#power-bi-username-and-password)** 
 
-      ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
+    ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
-    <a name ="applicationid"> Application ID </a>
+    <a name ="applicationsecret"> </a> **Application ID**
 
     This attribute is required for both the master user account and service principal.
 
@@ -176,71 +176,71 @@ Follow these steps to start embedding your content using the sample application.
 
        ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-### Application secret
+    <a name ="applicationid"> </a> **Application secret**
 
-This attribute is required for use with service principal only.
+    This attribute is required for use with service principal only.
 
-Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works specifically when using a [service principal application](embed-service-principal.md).
+    Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works specifically when using a [service principal application](embed-service-principal.md).
 
-To get the **ApplicationSecret**, follow these steps:
+    To get the **ApplicationSecret**, follow these steps:
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+    1. Sign in to the [Azure portal](https://portal.azure.com).
 
-2. In the left-hand navigation pane, choose **All services** and select **App registrations**.
+    2. In the left-hand navigation pane, choose **All services** and select **App registrations**.
 
-    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+        ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-3. Select the application that needs to use the **ApplicationSecret**.
+    3. Select the application that needs to use the **ApplicationSecret**.
 
-    ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+        ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-4. Select **Settings**.
+    4. Select **Settings**.
 
-    ![Select Settings](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
+        ![Select Settings](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
 
-5. Select **Keys**.
+    5. Select **Keys**.
 
-    ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+        ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you'ren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
+    6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you'ren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
 
-    ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+        ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
-### Workspace ID
+    <a name ="workspaceid"> </a> **Workspace ID**
 
-This attribute is required for both the master user account and service principal.
+    This attribute is required for both the master user account and service principal.
 
-Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+    Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
-   URL </br>
+    URL </br>
 
-   ![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+    ![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
-   Powershell </br>
+    Powershell </br>
 
-   ```powershell
-   Get-PowerBIworkspace -name "App Owns Embed Test"
-   ```
+    ```powershell
+    Get-PowerBIworkspace -name "App Owns Embed Test"
+    ```
 
    ![workspaceId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
 
-### Report ID
+    <a name ="reportid"> </a> **Report ID**
 
-This attribute is required for both the master user account and service principal.
+    This attribute is required for both the master user account and service principal.
 
-Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+    Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
-   URL</br>
+    URL</br>
 
     ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
 
-   Powershell </br>
+    Powershell </br>
 
-   ```powershell
-   Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
-   ```
+    ```powershell
+    Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
+    ```
 
-  ![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
+    ![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
 
 ### Power BI username and password
 
