@@ -36,19 +36,26 @@ Here's how to register your application with the Power BI App Registration Tool:
 
 4. Provide an **Application Type**.
 
-    If you plan on creating an application [designed for your customers](embed-sample-for-customers.md), then select **Native** for the Application Type.
+    Here are the differences for why you choose **Native** versus **Server-side web applciations** for an application type.
 
-    Choose **Native** if you are embedding content for your customers and using a master user account to authenticate. Also choose **Native** regardless of what is the application, even for web applications.
+    Native:
+    * You plan on creating an application [designed for your customers](embed-sample-for-customers.md) using a master user account (a Power BI Pro license used for signing in to Power BI) to authenticate.
 
-    If you plan on creating an application [designed for your organization](embed-sample-for-your-organization.md), then select **Server-side web application** for the Application Type.
-
-    Choose **Server-side Web app** if you are embedding content for your customers and using a service principal application to authenticate. Also, choose **Server-side Web app** for web apps or web APIs.
+    Server-side web application:
+    * You plan on creating an application [designed for your organization](embed-sample-for-your-organization.md).
+    * You plan on creating an application [designed for your customers](embed-sample-for-customers.md) using service principal to authenticate.
+    * You plan on creating web apps or web APIs.
 
     ![App type](media/register-app/register-app-new-design-app-type.png)
 
 5. If you selected **Server-side web application** for the application type then continue with entering a value for **Home Page URL** and **Redirect URL**. The **Redirect URL** works with any valid URL and should correspond with the application you have created. If you selected **Native** then continue to step 6.
 
-6. Choose the APIs for the application that has access. For more information about Power BI access permissions, see [Power BI Permissions](power-bi-permissions.md). Then select **Register**
+6. Choose the APIs for the application that has access. For more information about Power BI access permissions, see [Power BI Permissions](power-bi-permissions.md). Then select **Register**.
+
+    ![Choose APIs to register](media/register-app/register-app-new-app-registration-apis-register.png)
+
+    > [!Important]
+    > If you enable service principals to be used with Power BI, the Azure Active Directory permissions don't take effect anymore. The permissions are managed through the Power BI admin portal.
 
 7. If you choose **Native** for the application type, then you are then provided an **Application ID**. If you select **Server-side Web app** for the application type, then you receive an **Application ID** and an **Application secret**.
 
@@ -58,7 +65,6 @@ Here's how to register your application with the Power BI App Registration Tool:
 | Native | Server-side web application |
 |--------|-----------------------------|
 | ![Native success](media/register-app/register-app-new-design-success-native.png) | ![Server-side web app success](media/register-app/register-app-new-design-success-server-side-web-app.png) |
-
 
 You can now use the registered application as part of your custom application to interact with the Power BI service and with your Power BI Embedded application.
 

@@ -17,7 +17,7 @@ With **service principal**, you can embed Power BI content into an application a
 
 When working with Power BI Embedded, there are advantages when using a service principal application.  A primary advantage is you do not need a master user account (Power BI Pro license that is merely a username and password to sign in) to authenticate into your application. Service principal uses an application ID and an application secret to authenticate the application.
 
-As you automate various tasks with Power BI APIs, you can create a service principal application (app-only token) with a [PowerShell script](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+When working to automate Power BI tasks, you can also script how to process and manage service principals to scale.
 
 ## Application and service principal relationship
 
@@ -54,7 +54,7 @@ There are differences between using a service principal and a standard master us
 | Needs to be enabled in the Power BI Admin portal | No | Yes |
 | [Works with app workspaces (v1)](../service-create-workspaces.md) | Yes | No |
 | [Works with the new app workspaces (v2)](../service-create-the-new-workspaces.md) | Yes | Yes |
-| Needs to be a workspace admin if used with a Power BI Embedded application | Yes | Yes |
+| Needs to be a workspace admin if used with Power BI Embedded | Yes | Yes |
 | Can use multi-factor authentication (MFA) in Azure | No | Yes |
 | Can use Power BI REST APIs | Yes | Yes |
 | Needs a global admin to create | Yes | No |
@@ -68,20 +68,23 @@ Different from the traditional use of a master user account, using the service p
 
 2. Create a [security group in Azure](https://docs.microsoft.com/azure/virtual-network/security-overview), and add the application you created to that security group.
 
-3. Sign in to Power BI and enable the service principal developer setting in the Power BI admin portal.
+3. Sign into Power BI as an admin and enable the service principal developer setting in the Power BI admin portal.
 
-    Once you enable service principals to be used in Power BI, your AD permissions don't take effect anymore. Permissions are managed through the Power BI admin portal.
+    ![Admin portal](media/embed-service-principal/admin-portal.png)
+
+    Once you enable service principals to be used with Power BI, your AD permissions don't take effect anymore. Permissions are managed through the Power BI admin portal.
 
     There's an essential message in the Power BI admin portal when you enable this setting to remind you that AAD permissions no longer take effect.
 
    > [!Important]
    > Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
 
-    ![Admin portal](media/embed-service-principal/admin-portal.png)
-
 4. Set up your Power BI environment with a collection of steps from this [article](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
-5. Add the service principal application as an admin to the new workspace you created. You can manage this task through the [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). However, you can manage to add a service principal application as an admin through the Power BI service by adding the security group you created in step 2 to the new workspace.
+5. Add the service principal as an admin to the new workspace you created. You can manage this task through the [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser), or through the Power BI service. 
+
+    > [!Note]
+    > Add the service principal as an admin to the new workspace.
 
 6. Now choose to embed your content within a sample application, or within your application.
 
@@ -90,30 +93,7 @@ Different from the traditional use of a master user account, using the service p
 
 7. Now you're ready to [move to production](embed-sample-for-customers.md#move-to-production).
 
-## Gateway management for Analysis Services on-premises live connections
-
-Using Power BI REST APIs, allows you to specify the effective identity for SQL Server Analysis Services (SSAS) on-premises live connections for an embed token using a [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
-
-Customers that configure row-level security (RLS) using an SSAS data source can enjoy the new service principal capability to manage users and their access to data in SSAS when integrating with **Power BI Embedded**.
-
-When you're generating the embed token, you can currently specify the effective identity of a user using a master user account. Now you can also use a service principal object to specify the effective identity. You can specify the effective identity of a user by passing the AAD access token to the server. The access token is used to pull only the relevant data for that user for an SSAS on-premises live connection.
-
-During the configuration of the On-premises gateway you need to navigate to the Power BI admin portal and set the option to **Can override effective identity for Power BI Embedded**.
-
-### REST API
-
-When you're calling the [REST API](https://docs.microsoft.com/rest/api/power-bi/gateways/adddatasourceuser), you can add the identifier and access right.
-
-```JSON
-{
-  "identifier": "(SPN object ID or email address)”
-  "datasourceAccessRight": "ReadOverrideEffectiveIdentity"
-}
-```
-
-The value for the **identifier** attribute needs to be an [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object), or an email address. The value for the **datasourceAccessRight** attribute needs to be **ReadOverrideEffectiveIdentity**.
-
-Once you use the service principal object with the gateway
+You can also create a service principal application (app-only token) with a [PowerShell script](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
 ## Migrate to service principal
 

@@ -303,6 +303,29 @@ The value provided in the identity blob should be a valid access token to Azure 
 
    ![App registration](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
 
+## Gateway management for Analysis Services on-premises live connections with service principal
+
+Customers that configure row-level security (RLS) using an SSAS data source can enjoy the new [service principal](embed-service-principal.md) capability to manage users and their access to data in SSAS when integrating with **Power BI Embedded**.
+
+Using [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), allows you to specify the effective identity for SQL Server Analysis Services (SSAS) on-premises live connections for an embed token using a [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
+
+When you're generating the embed token, you can currently specify the effective identity of a user using a master user account. Now you can also use a service principal object to specify the effective identity. You can specify the effective identity of a user by passing the AAD access token to the server. The access token is used to pull only the relevant data for that user for an SSAS on-premises live connection.
+
+During the configuration of the On-premises gateway you need to navigate to the Power BI admin portal and set the option to **Can override effective identity for Power BI Embedded**.
+
+### REST API
+
+When you're calling the [REST API](https://docs.microsoft.com/rest/api/power-bi/gateways/adddatasourceuser), you can add the identifier and access right.
+
+```JSON
+{
+  "identifier": "(SPN object ID or email address)”
+  "datasourceAccessRight": "ReadOverrideEffectiveIdentity"
+}
+```
+
+The value for the **identifier** attribute needs to be an [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object), or an email address. The value for the **datasourceAccessRight** attribute needs to be **ReadOverrideEffectiveIdentity**.
+
 ## Considerations and limitations
 
 * Assignment of users to roles within the Power BI service doesn't affect RLS when using an embed token.
