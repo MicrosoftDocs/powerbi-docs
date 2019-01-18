@@ -138,7 +138,7 @@ The below steps walk through how to publish your PBIX report to your Power BI wo
 
 Follow these steps to start embedding your content using the sample application.
 
-1. Download [Visual Studio](https://www.visualstudio.com/) (version 2013 or later).
+1. Download [Visual Studio](https://www.visualstudio.com/) (version 2013 or later). Make sure to download the latest [NuGet package](https://www.nuget.org/profiles/powerbi).
 
 2. Download the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) from GitHub to get started.
 
@@ -249,7 +249,7 @@ Follow these steps to start embedding your content using the sample application.
 
     ![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
 
-    <a name ="pbiunpw"> </a> Power BI username and password
+    <a name ="pbiunpw"> </a> **Power BI username and password**
 
     The master user account requires this attribute.
 
