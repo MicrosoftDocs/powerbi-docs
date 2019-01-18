@@ -113,6 +113,7 @@ Currently, there's no UI feature to move over Power BI artifacts and resources f
 * You can't sign into the Power BI portal using service principal.
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
 * You can't install or manage an on-premises data gateway using service principal.
+* You can use an [On-premises data gateway with a SSAS on-premises live connection data source](embedded-row-level-security.md#on-premises-data-gateway-use-with-service-principal-preview)
 
 ## Next steps
 
