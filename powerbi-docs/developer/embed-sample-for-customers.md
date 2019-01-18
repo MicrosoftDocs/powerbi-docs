@@ -24,12 +24,16 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-To get started, you need either a **Power BI Pro** account (master user account), or a service principal application (app-only token), and a **Microsoft Azure** subscription.
+To get started, you are required to have:
 
-* If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
+* A [Power BI Pro account](../service-self-service-signup-for-power-bi.md) (a master user account that is simply a username and password to logon to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
+
+* A [Microsoft Azure](https://azure.microsoft.com/) subscription.
+
+* If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/
+pricing/) before you begin.
 * If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
-* You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
 
 ## Set up your embedded analytics development environment
 
@@ -52,8 +56,6 @@ However, if you proceed using a service principal application, you need to proce
 1. Accept the [Microsoft Power BI API Terms](https://powerbi.microsoft.com/api-terms).
 
 2. Sign into the [Azure portal](https://portal.azure.com).
-
-    ![Azure portal Main](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
 3. In the left-hand navigation pane, select **All Services**, select **App Registrations**, and then select **New application registration**.
 
@@ -126,48 +128,56 @@ The below steps walk through how to publish your PBIX report to your Power BI wo
 
    ![PBI desktop report](media/embed-sample-for-customers/embed-sample-for-customers-027.png)
 
-3. Publish to **app workspaces**.  This process differs depending on whether you're using a master user account (Power Pro license), or a service principal application. If you're using a master user account, then you can publish your report through Power BI Desktop.  Now if you're using a service principal application, you must use the Power BI REST APIs.
+3. Publish to **app workspaces**. This process differs depending on whether you're using a master user account (Power Pro license), or a service principal application. If you're using a master user account, then you can publish your report through Power BI Desktop.  Now if you're using a service principal application, you must use the Power BI REST APIs.
 
 ## Embed your content using the sample application
 
-Follow these steps to start embedding your content using a sample application.
+Follow these steps to start embedding your content using the sample application.
 
-1. Download the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) from GitHub to get started.
+1. Download [Visual Studio](https://www.visualstudio.com/) (version 2013 or later).
+
+2. Download the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) from GitHub to get started.
 
     ![App Owns Data application sample](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
 
-2. Open up the **Web.config** file in the sample application. There are fields you need to fill in to run the application.
+3. Open the **Web.config** file in the sample application. There are fields you need to fill in to run the application. Depending on which type of authentication method you choose there are different fields to complete.  
 
-    * **[applicationId](#application-id)** (required for both master user account and [service principal](embed-service-principal.md)).
-    * **[application secret](#application-secret)** (required for [service principal](embed-service-principal.md)).
-    * **[workspaceId](#workspace-id)** (required for both master user account and [service principal](embed-service-principal.md)).
-    * **[reportId](#report-id)** (required for both master user account and [service principal](embed-service-principal.md)).
-    * **[pbiUsername](#power-bi-username-and-password)** (required for use with a master account).
-    * **[pbiPassword](#power-bi-username-and-password)** (required for use with a master account).
+    | Master user account </br> (Power BI Pro licnese) | Service Principal </br> (app-only token) |
+    |---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+    | [applicationId](#applicationid) | [applicationId](#applicationid) |
+    | | **[application secret](#application-secret)** |
+    | **[workspaceId](#workspace-id)** | **[workspaceId](#workspace-id)**  |
+    | **[reportId](#report-id)** | **[reportId](#report-id)** |
+    | **[pbiUsername](#power-bi-username-and-password)** |
+    | **[pbiPassword](#power-bi-username-and-password)** 
 
-    ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
+      ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
-### Application ID
+    <a name ="applicationid"> Application ID </a>
 
-Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions.
+    This attribute is required for both the master user account and service principal.
 
-To get the **applicationId**, follow these steps:
+    Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions.
 
-   1. Sign into the [Azure portal](https://portal.azure.com).
+    To get the **applicationId**, follow these steps:
 
-   2. In the left-hand navigation pane, select **All Services**, and select **App Registrations**.
+    1. Sign into the [Azure portal](https://portal.azure.com).
 
-        ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
+    2. In the left-hand navigation pane, select **All Services**, and select **App Registrations**.
+
+       ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
     3. Select the application that you want to get the **applicationId** for.
 
-        ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
+       ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
     4. There is an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
 
-        ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+       ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
 ### Application secret
+
+This attribute is required for use with service principal only.
 
 Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works specifically when using a [service principal application](embed-service-principal.md).
 
@@ -197,34 +207,43 @@ To get the **ApplicationSecret**, follow these steps:
 
 ### Workspace ID
 
+This attribute is required for both the master user account and service principal.
+
 Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
    URL </br>
+
    ![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
    Powershell </br>
 
-    ```powershell
-    Get-PowerBIworkspace -name "App Owns Embed Test"
-    ```
+   ```powershell
+   Get-PowerBIworkspace -name "App Owns Embed Test"
+   ```
+
    ![workspaceId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
 
 ### Report ID
 
+This attribute is required for both the master user account and service principal.
+
 Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
    URL</br>
+
     ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
 
    Powershell </br>
 
-    ```powershell
-    Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
-    ```
+   ```powershell
+   Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
+   ```
 
   ![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
 
 ### Power BI username and password
+
+This attribute is required for the master user account only.
 
 If you're using a [service principal application](embed-service-principal.md) to authenticate, then you don't need to fill in the username or password attributes.
 
