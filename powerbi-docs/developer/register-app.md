@@ -101,9 +101,6 @@ Here's how to get an application ID:
 
 ## Apply permissions to your application within Azure AD
 
-> [!IMPORTANT]
-> This section only applies to applications that are **embedding content for your organization**.
-
 Enable additional permissions to your application in addition to what the app registration page provides. You can accomplish this through the Azure AD portal, or programmatically.
 
 You want to be logged in with either the *master* account, used for embedding, or a Global admin account.
