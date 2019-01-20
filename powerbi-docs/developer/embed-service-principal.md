@@ -84,8 +84,8 @@ Different from the traditional use of a master user account, using the service p
 
 6. Now choose to embed your content within a sample application, or within your application.
 
-    * [Embed your content using the sample application](embed-sample-for-customers.md#embed-your-content-using-the-sample-application)
-    * [Embed your content within your application](embed-sample-for-customers.md#embed-your-content-within-your-application)
+    * [Embed content using the sample application](embed-sample-for-customers.md#embed-content-using-the-sample-application)
+    * [Embed content within your application](embed-sample-for-customers.md#embed-content-within-your-application)
 
 7. Now you're ready to [move to production](embed-sample-for-customers.md#move-to-production).
 
