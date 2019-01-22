@@ -8,7 +8,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/31/2018
+ms.date: 02/01/2019
 ---
 
 # Use row-level security with Power BI embedded content

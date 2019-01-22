@@ -8,7 +8,7 @@ ms.reviewer: nishalit
 ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 01/31/2018
+ms.date: 02/01/2019
 ---
 
 # Service principal with Power BI (Preview)
