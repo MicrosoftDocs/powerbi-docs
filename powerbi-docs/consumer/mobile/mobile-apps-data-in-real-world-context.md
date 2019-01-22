@@ -1,15 +1,15 @@
 ---
 title: Get real-world data with the Power BI mobile apps
 description: Power BI mobile apps can connect the real world directly to related BI information, no search needed.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/13/2018
-ms.author: maggies
+ms.author: mshenhav
 
 ---
 # Get data from the real world with the Power BI mobile apps

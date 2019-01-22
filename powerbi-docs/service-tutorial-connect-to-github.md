@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: SarinaJoan
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 05/17/2018

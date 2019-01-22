@@ -7,9 +7,9 @@ ms.reviewer: ''
 ms.custom: seodec18
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: Conceptual
-ms.date: 12/06/2018
+ms.date: 01/17/2019
 ms.author: mihart
 #customer intent: As a PBI consumer, I want to learn how to sort my report visuals so that they look the way I like and are easier to interpret. 
 LocalizationGroup: Reports
@@ -31,11 +31,11 @@ It's easy to change the sort from a category (store name) to a value (sales per 
    **NOTE**: Not all visuals can be sorted.  For example, the following visuals cannot be sorted: Treemap, Map, Filled Map, Scatter, Gauge, Card, Multi Row Card, Waterfall.
 
 ## Saving changes you make to sort order
-Power BI reports retain the filters, slicers, sorting, and other data view changes that you make. So if you navigate away from a report, and return later, your changes are saved.  If you want to revert your changes back to the report creator's settings, select **Reset to default** from the top menubar. 
+Power BI reports retain the filters, slicers, sorting, and other data view changes that you make. So if you navigate away from a report, and return later, your changes are saved.  If you want to revert your changes back to the report designer's settings, select **Reset to default** from the top menubar. 
 
 ![persistent sorting](media/end-user-change-sort/power-bi-reset-to-default.png)
 
-If, however, the **Reset to default** button is greyed out, that means the report creator has disabled the ability to save (persist) your changes.
+If, however, the **Reset to default** button is greyed out, that means the report designer has disabled the ability to save (persist) your changes.
 
 <a name="other"></a>
 ## Sorting using other criteria
@@ -43,7 +43,7 @@ Sometimes, you want to sort your visual using a different field or other criteri
 to sort by month (and not in alphabetical order) or you might
 want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  
 
-In some cases, you may be able to sort the visual the way you'd like, for example, by month.  But if not, it may be because the dataset behind the report needs some tweaking. Ask the report creator to update the dataset.
+In some cases, you may be able to sort the visual the way you'd like, for example, by month.  But if not, it may be because the dataset behind the report needs some tweaking. Ask the report designer to update the dataset.
 
 ## Next steps
 More about [Visualizations in Power BI reports](end-user-visualizations.md).

@@ -7,7 +7,7 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/21/2018
@@ -71,6 +71,10 @@ To submit a custom visual for certification:
 | Link to AppSource | Link to video |
 | --- | --- |
 | [3AG Systems - Column Chart With Relative Variance](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381803) | |
+| [Advanced Donut Visual](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381941) | |
+| [Advanced Network Visualization](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381942) | |
+| [Advanced TimeSeries Visual](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381943) | |
+| [Advanced Combo Visual](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381944) | |
 | [Aster Plot](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380759) | |
 | [Beyondsoft Calendar](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381096) | |
 | [Bowtie Chart by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380838) | [Video](https://youtu.be/So5xKMSpVJI) |

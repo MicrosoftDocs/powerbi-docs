@@ -1,15 +1,15 @@
 ---
 title: Add hyperlinks to a table
 description: Use Power BI Desktop to create hyperlinks. Then use either Desktop or Power BI service to add those hyperlinks to your report tables and matrixes.
-author: mihart
-manager: kvivek
+author: maggiesMSFT
+manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
-ms.author: mihart
+ms.date: 01/16/2019
+ms.author: maggies
 
 LocalizationGroup: Visualizations
 ---
@@ -20,7 +20,6 @@ This topic teaches you how to use Power BI Desktop to create hyperlinks. Then us
 
 > [!NOTE]
 > Hyperlinks in [tiles on dashboards](service-dashboard-edit-tile.md) and [text boxes on dashboards](service-dashboard-add-widget.md) can be created on-the-fly using Power BI service. Hyperlinks in [text boxes in reports](service-add-hyperlink-to-text-box.md) can be created on-the-fly using Power BI service and Power BI Desktop.
-> 
 > 
 
 ## To create a hyperlink in a table or matrix using Power BI Desktop
@@ -47,11 +46,11 @@ The procedure for adding a hyperlink depends on whether you've imported the data
    
    * Select the chart to make it active.
    * Select the paint roller icon ![Paint roller icon](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) to open the Formatting tab.
-   * Expand **Values**, locate **URL icon** and turn it to **On.**
+   * Expand **Values**, locate **URL icon**, and turn it to **On.**
 6. (Optional) [Publish the report from Desktop to Power BI service](guided-learning/publishingandsharing.yml?tutorial-step=2) and open the report in Power BI service. The hyperlinks will work there as well.
 
 ### For data connected with DirectQuery
-You won't be able to create a new column in DirectQuery mode.  But if your data already contains URLs, you can turn those into hyperlinks.
+You can't create a new column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
 
 1. In Report view, create a table using a field that contains URLs.
 2. Select the column, and in the **Modeling** tab, choose the dropdown for **Data Category**.

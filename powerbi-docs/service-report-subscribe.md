@@ -1,16 +1,16 @@
 ---
-title: Subscribe to reports and dashboards in Power BI service
-description: Learn how to subscribe yourself and others to a snapshot of a Power BI report and dashboard.
-author: mihart
-manager: kvivek
+title: Subscribe to reports and dashboards in the Power BI service
+description: Learn how to subscribe others to a snapshot of a Power BI report and dashboard.
+author: maggiesMSFT
+manager: kfile
 ms.reviewer: ''
 featuredvideoid: 
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/04/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Common tasks
 ---

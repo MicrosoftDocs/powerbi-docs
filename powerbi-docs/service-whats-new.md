@@ -1,12 +1,12 @@
 ---
 title: What's new in the Power BI service
 description: What's new in the Power BI service
-author: mihart
+author: NikhilGaekwad-MSFT
 manager: kfile
 ms.reviewer: 
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga

@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: amac
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: sample
 ms.date: 06/23/2018
 ms.author: maggies

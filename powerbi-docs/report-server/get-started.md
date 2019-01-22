@@ -7,7 +7,7 @@ ms.author: maggies
 ms.date: 11/20/2018
 ms.topic: overview
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
 #customer intent: As a Power BI admin, end user, or developer, I want an overview of Power BI Report Server so I understand how it fits in with SSRS and the Power BI service.
@@ -46,7 +46,7 @@ A Power BI report is a multi-perspective view into a data model, with visualizat
 Install [Power BI Desktop optimized for Power BI Report Server](quickstart-create-powerbi-report.md).
 
 ## Paginated reports
-Paginated reports (.RDL) are document-style reports with visualizations, in which tables expand horizontally and vertically to display all their data, continuing from page to page as needed. Thye're great for generating fixed-layout, pixel-perfect documents optimized for printing, such as PDF and Word files. 
+Paginated reports (.RDL) are document-style reports with visualizations, in which tables expand horizontally and vertically to display all their data, continuing from page to page as needed. They're great for generating fixed-layout, pixel-perfect documents optimized for printing, such as PDF and Word files. 
 
 ![Paginated reports in Power BI Report Server](media/get-started/paginated-reports.png)
 

@@ -5,7 +5,7 @@ author: mihart
 manager: kvivek
 ms.service: powerbi
 ms.custom: seodec18
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: overview
 ms.date: 12/06/2018
 ms.author: mihart

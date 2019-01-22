@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 01/10/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -72,7 +72,7 @@ In the **Add role assignment** window, select the **Reader** role to assign to t
 
 You must create a file system named *powerbi* before your storage account can be added to Power BI. There are many ways to create such a file system, including using Azure Databricks, HDInsight, AZCopy, or Azure Storage Explorer. This section shows you a straightforward way to create a file system using Azure Storage Explorer.
 
-This step requires that you install Azure Storage Explorer version 1.6.1 or higher. To install Azure Storage Explorer for Windows, Macintosh, or Linux, see [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
+This step requires that you install Azure Storage Explorer version 1.6.2 or higher. To install Azure Storage Explorer for Windows, Macintosh, or Linux, see [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
 
 1. Once you've successfully installed Azure Storage Explorer, On first launch, the Microsoft Azure Storage Explorer - Connect window is shown. While Storage Explorer provides several ways to connect to storage accounts, only one way is currently supported for the required setup. 
 
