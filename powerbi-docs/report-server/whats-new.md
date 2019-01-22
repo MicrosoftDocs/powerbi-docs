@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/15/2019
+ms.date: 01/22/2019
 ---
 
 # What's new in Power BI Report Server
@@ -36,16 +36,17 @@ Support for these features in Power BI reports:
 [**Smart alignment guides**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) You see smart alignment guides when moving objects on your report page, like you see in PowerPoint, to help you align everything on your page. You see the smart guides any time you drag or resize something on your page. When you move an object near another one, it snaps into a position aligned with the other object.
 
 **Accessibility features**
-Too many accessibility features to list: for example, [fields list pane accessibility support](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList) The fields list pane is fully accessible. You can navigate around the pane using just your keyboard and a screen reader and use the context menu to add fields to your report page.
+Too many accessibility features to list: for example, [fields list pane accessibility support](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). The fields list pane is fully accessible. You can navigate around the pane using just your keyboard and a screen reader and use the context menu to add fields to your report page.
 
 ### Administrator settings
 
 Administrators can set the following properties in SSMS Advanced Properties for the server farm:
 
-**SupportedHyperlinkSchemes** – Sets the scheme of Hyperlink actions that can be set. If someone wants to avoid javascript injection attacks they can remove the “javascript” scheme to prevent a report author from injecting something like javascript:eval(“window.location = ‘https://evilwebsite.com’;”)
+**AllowedResourceExtensionsForUpload** 
+Set extensions of resources that can be uploaded to the report server. Extensions for built-in file types like &ast;.rdl and &ast;.pbix are not required to be included. Default is “&ast;, &ast;.xml, &ast;.xsd, &ast;.xsl, &ast;.png, &ast;.gif, &ast;.jpg, &ast;.tif, &ast;.jpeg, &ast;.tiff, &ast;.bmp, &ast;.pdf, &ast;.svg, &ast;.rtf, &ast;.txt, &ast;.doc, &ast;.docx, &ast;.pps, &ast;.ppt, &ast;.pptx”. 
 
-**AllowedResourceExtensionsForUpload** – Sets extensions that can be allowed to be uploaded to the report server to avoid uploads of files like “*.exe” or “*.bin”
-
+**SupportedHyperlinkSchemes**
+Sets a comma-separated list of the URI schemes allowed to be defined on Hyperlink actions that are allowed to be rendered or “&ast;” to enable all hyperlink schemes. For example, setting “http,https” would allow hyperlinks to “https://www. contoso.com”, but would remove hyperlinks to “mailto:bill@contoso.com” or “javascript:window.open(‘www.contoso.com’, ‘_blank’)”. Default is “&ast;”.
 
 ## August 2018
 
