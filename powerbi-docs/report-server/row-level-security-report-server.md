@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/15/2019
+ms.date: 01/22/2019
 ---
 
 # Row-level security (RLS) in Power BI Report Server
@@ -31,36 +31,14 @@ Check this box when implementing [dynamic row-level security](https://docs.mic
 
 To learn more, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](../desktop-bidirectional-filtering.md) and the [Securing the Tabular BI Semantic Model](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) technical whitepaper.
 
-
-## Validate roles within Power BI Desktop 
-
-After you've created your role, test the results of the role within Power BI Desktop.
-
-1. Select **View As Roles**. 
-
-    ![View as roles](media/row-level-security-report-server/powerbi-desktop-rls-view-as-roles.png)
- 
-    In **View as roles**, you see the roles you've created.
- 
-    ![View as roles dialog box](media/row-level-security-report-server/powerbi-desktop-rls-view-as-roles-dialog.png)
-
-3. Select the role you created > **OK** to apply that role. The report renders the data relevant for that role. 
-
-4. You can also select **Other user** and supply a given user. It is best to supply the Username, as that's what Power BI Report Server uses. 
-
-    ![View as roles: Other user](media/row-level-security-report-server/power-bi-report-server-view-as-roles-other-user.png)
-
-1. Select **OK** and the report renders based on what that user can see. 
-
-Within Power BI Desktop, **Other user** only displays different results if you're using dynamic security based on your DAX expressions. 
-
+[!INCLUDE [rls-desktop-view-as-roles](../includes/rls-desktop-view-as-roles.md)]
 
 
 ## Add members to roles 
 
-After you save your report in Power BI Report Server, you manage security and add or remove members on the server. Only Content Managers of the report have the row-level security option available and not greyed out. If 
+After you save your report in Power BI Report Server, you manage security and add or remove members on the server. Only users with either Publisher or Content Manager permissions for the report have the row-level security option available and not greyed out.
 
- If the report doesn't have the roles it needs, you need to open it in Power BI Desktop, add or modify roles, then save it to Power BI Report Server again. 
+ If the report doesn't have the roles it needs, you need to open it in Power BI Desktop, add or modify roles, then save it back to Power BI Report Server. 
 
 1. In Power BI Desktop, save the report to Power BI Report Server. You need to be using the version of Power BI Desktop optimized for Power BI Report Server.
 2. In Power BI Report Service, select the ellipsis (**…**) next to the report. 
@@ -77,6 +55,8 @@ After you save your report in Power BI Report Server, you manage security and ad
 
     ![Add member to role](media/row-level-security-report-server/power-bi-report-server-add-members.png)
 
+    Depending on how you have Active Directory configured, entering the User Principal Name here also works. In that case, the Report Server shows the corresponding username in the list.
+
 1. Click **OK** to apply.   
 
 8. To remove members, check the box next to their names and select **Delete**.  You can delete multiple members at a time. 
@@ -86,9 +66,11 @@ After you save your report in Power BI Report Server, you manage security and ad
 
 ## username() and userprincipalname()
 
-You can take advantage of the DAX functions username() or userprincipalname() within your dataset. You can use them within expressions in Power BI Desktop. When you publish your model, Power BI Report Server uses those expressions. 
+You can take advantage of the DAX functions username() or userprincipalname() within your dataset. You can use them within expressions in Power BI Desktop. When you publish your model, Power BI Report Server uses them.
 
-If you're using Windows Authentication in Power BI Desktop OR Power BI Report Server, username() returns a user in the format of DOMAIN\User and userprincipalname() returns a user in the format of user@contoso.com. 
+Within Power BI Desktop, username() returns a user in the format of DOMAIN\User and userprincipalname() returns a user in the format of user@contoso.com.
+
+Within Power BI Report Server, username() and userprincipalname() both return the user's User Principal Name (UPN), which is similar to an email address.
 
 If you're using custom authentication in Power BI Report Server, it returns the username format you’ve set up for users.  
 
@@ -96,13 +78,16 @@ If you're using custom authentication in Power BI Report Server, it returns the 
 
 Here are the current limitations for row-level security on Power BI models. 
 
+Users that had reports using the username() DAX function will notice new behavior now where the User Principal Name (UPN) is returned EXCEPT when using DirectQuery with integrated security.  Since RLS isn't respected in that scenario, the behavior in that scenario is unchanged.
+
 You can define RLS only on datasets created with Power BI Desktop. To enable RLS for datasets created with Excel, you must convert your files into Power BI Desktop (PBIX) files first. Learn more about [converting Excel files](../desktop-import-excel-workbooks.md).
 
 Only Extract, Transform, Load (ETL) and DirectQuery connections using stored credentials are supported. Live connections to Analysis Services and DirectQuery connections using integrated authentication are handled in the underlying data source. 
 
 If you're using integrated security with DirectQuery, then your users may notice:
 - RLS is disabled and all data is returned.
-- Users can't update their role assignments, and get an error on the RLS Manage page
+- Users can't update their role assignments, and get an error on the RLS Manage page.
+- For the DAX username function, you continue to receive the username as DOMAIN\USER. 
 
 Report authors don't have access to view the report data in Power BI Report Server until they've assigned themselves roles accordingly after uploading the report. 
 
@@ -124,7 +109,7 @@ No, you secure individual rows of data but users can always see either the detai
 
 ### Can I add new roles in Power BI Desktop if I already have existing roles and members assigned? 
 
-Yes, if you already have existing roles defined and members assigned in Power BI Report Server, you can make additional roles and republish your report with no affect on your current assignments. 
+Yes, if you already have existing roles defined and members assigned in Power BI Report Server, you can make additional roles and republish your report with no effect on your current assignments. 
  
 
 ## Next steps

@@ -21,7 +21,7 @@ To define security roles, follow these steps.
 7. Enter the DAX expressions. This expression should return a true or false. For example: [Entity ID] = “Value”.
    
    > [!NOTE]
-   > You can use *username()* within this expression. Be aware that *username()* has the format of *DOMAIN\username* within Power BI Desktop. Within the Power BI service, it's in the format of the user's UPN. Alternatively, you can use *userprincipalname()*, which always returns the user in the format of their user principal name, *username@contoso.com*.
+   > You can use *username()* within this expression. Be aware that *username()* has the format of *DOMAIN\username* within Power BI Desktop. Within the Power BI service and Power BI Report Server, it's in the format of the user's User Principal Name (UPN). Alternatively, you can use *userprincipalname()*, which always returns the user in the format of their user principal name, *username@contoso.com*.
    > 
    > 
    
