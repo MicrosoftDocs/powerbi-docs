@@ -25,9 +25,9 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-To get started, you are required to have:
+To get started, you're required to have:
 
-* A [Power BI Pro account](../service-self-service-signup-for-power-bi.md) (a master user account that is simply a username and password to login to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
+* A [Power BI Pro account](../service-self-service-signup-for-power-bi.md) (a master user account that is simply a username and password to sign in to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription.
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 
@@ -119,7 +119,7 @@ If you're embedding reports, dashboards, or tiles for your customers, then you h
 
 ### Create and publish your reports
 
-You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. There are two ways to accomplish this: As an end user, you can publish reports to a traditional app workspace with a master user account (Power BI Pro license). If you're using a service principal application, you can publish reports to the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
+You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. There are two ways to accomplish this task: As an end user, you can publish reports to a traditional app workspace with a master user account (Power BI Pro license). If you're using a service principal application, you can publish reports to the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
 
 The below steps walk through how to publish your PBIX report to your Power BI workspace.
 
@@ -135,6 +135,8 @@ The below steps walk through how to publish your PBIX report to your Power BI wo
 
 ## Embed content using the sample application
 
+This sample is deliberately kept simple for demonstration purposes. It's up to the developer to protect the application secret or the master user account credentials.
+
 Follow the steps below to start embedding your content using the sample application.
 
 1. Download [Visual Studio](https://www.visualstudio.com/) (version 2013 or later). Make sure to download the latest [NuGet package](https://www.nuget.org/profiles/powerbi).
@@ -147,7 +149,7 @@ Follow the steps below to start embedding your content using the sample applicat
 
     <center>
 
-    | Master user account </br> (Power BI Pro licnese) | Service Principal </br> (app-only token) |
+    | Master user account </br> (Power BI Pro license) | Service Principal </br> (app-only token) |
     |---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
     | **[applicationId](#applicationid)** | **[applicationId](#applicationid)** |
     | | **[application secret](#applicationsecret)** |
@@ -178,7 +180,7 @@ Follow the steps below to start embedding your content using the sample applicat
 
        ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
-    4. There is an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
+    4. There's an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
 
        ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
@@ -192,7 +194,7 @@ Follow the steps below to start embedding your content using the sample applicat
 
     1. Sign in to the [Azure portal](https://portal.azure.com).
 
-    2. In the left-hand navigation pane, choose **All services** and select **App registrations**.
+    2. In the left-hand navigation pane, select **All services** and then select **App registrations**.
 
         ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 

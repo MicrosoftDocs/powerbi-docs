@@ -105,11 +105,11 @@ Currently, there's no UI feature to move over Power BI artifacts and resources f
 
 * Service principal only works with [new app workspaces](../service-create-the-new-workspaces.md).
 * **My Workspace** isn't supported when using service principal.
-* Dedicated capacity is required when moving to production.
+* [Dedicated capacity](../service-admin-premium-manage.md) is required when moving to production.
 * You can't sign into the Power BI portal using service principal.
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
 * You can't install or manage an on-premises data gateway using service principal.
-* Software-as-a-service (SaaS) embedding is unable to use service principal.
+* [Embed for your organization](embed-sample-for-your-organization.md) applications are unable to use service principal.
 
 ## Next steps
 
