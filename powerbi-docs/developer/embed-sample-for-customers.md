@@ -9,7 +9,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: seodec18
-ms.date: 01/21/2018
+ms.date: 01/31/2018
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
 
