@@ -15,7 +15,7 @@ ms.date: 01/22/2019
 
 Setting up row-level security (RLS) with Power BI Report Server can restrict data access for given users. Filters restrict data access at the row level, and you can define filters within roles.  If you're using the default permissions in Power BI Report Server, any user with Publisher or Content Manager permissions for the Power BI report can assign members to roles for that report.    
 
-You configure RLS for reports imported into Power BI with Power BI Desktop. You can also configure RLS on reports that use DirectQuery, such as SQL Server.  Keep in mind that RLS isn't respected if your DirectQuery connection is using integrated authentication for users viewing the report. For Analysis Services live connections, you configure row-level security on the on-premises model. The security option doesn't show up for live connection datasets. 
+You configure RLS for reports imported into Power BI with Power BI Desktop. You can also configure RLS on reports that use DirectQuery, such as SQL Server.  Keep in mind that RLS isn't respected if your DirectQuery connection uses integrated authentication for report readers. For Analysis Services live connections, you configure row-level security on the on-premises model. The security option doesn't show up for live connection datasets. 
 
 [!INCLUDE [rls-desktop-define-roles](../includes/rls-desktop-define-roles.md)]
 
@@ -40,7 +40,7 @@ After you save your report in Power BI Report Server, you manage security and ad
 
  If the report doesn't have the roles it needs, you need to open it in Power BI Desktop, add or modify roles, then save it back to Power BI Report Server. 
 
-1. In Power BI Desktop, save the report to Power BI Report Server. You need to be using the version of Power BI Desktop optimized for Power BI Report Server.
+1. In Power BI Desktop, save the report to Power BI Report Server. You need to use the version of Power BI Desktop optimized for Power BI Report Server.
 2. In Power BI Report Service, select the ellipsis (**…**) next to the report. 
 
 3. Select **Manage** > **Row-level security**. 

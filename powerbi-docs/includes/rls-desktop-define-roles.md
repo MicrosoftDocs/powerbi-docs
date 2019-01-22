@@ -31,5 +31,5 @@ To define security roles, follow these steps.
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security-validate-dax.png)
 9. Select **Save**.
 
-You can't assign users to a role within Power BI Desktop. This is done within the Power BI service. You can enable dynamic security within Power BI Desktop by making use of the *username()* or *userprincipalname()* DAX functions and having the proper relationships configured. 
+You can't assign users to a role within Power BI Desktop. You assign them in the Power BI service. You can enable dynamic security within Power BI Desktop by making use of the *username()* or *userprincipalname()* DAX functions and having the proper relationships configured. 
 
