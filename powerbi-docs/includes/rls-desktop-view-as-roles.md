@@ -1,5 +1,5 @@
-## Validate the role within Power BI Desktop
-After you've created your role, test the results of the role within Power BI Desktop.
+## Validate the roles within Power BI Desktop
+After you've created your roles, test the results of the roles within Power BI Desktop.
 
 1. Select **View As Roles**. 
 
@@ -9,7 +9,7 @@ After you've created your role, test the results of the role within Power BI Des
 
     ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
 
-3. Select the role you created > **OK** to apply that role. The report renders the data relevant for that role. 
+3. Select a role you created > **OK** to apply that role. The report renders the data relevant for that role. 
 
 4. You can also select **Other user** and supply a given user. It's best to supply the User Principal Name (UPN) as that's what the Power BI service and Power BI Report Server use.
 
