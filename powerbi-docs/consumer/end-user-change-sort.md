@@ -23,12 +23,13 @@ values of each category. For example, this chart is sorted by the category **sto
 
 It's easy to change the sort from a category (store name) to a value (sales per square feet) instead.
 
-1. Select the ellipses (...) and choose **Sort by > Sales Per Sq Ft**.
-2. If necessary, select the ellipses again and choose **Sort descending**.
+1. Select the ellipsis (...) and choose **Sort by > Sales Per Sq Ft**.
+2. If necessary, select the ellipsis again and choose **Sort descending**.
 
    ![video showing selecting sort by and then ascending, descending](media/end-user-change-sort/sort.gif)
 
-   **NOTE**: Not all visuals can be sorted.  For example, the following visuals cannot be sorted: Treemap, Map, Filled Map, Scatter, Gauge, Card, Multi Row Card, Waterfall.
+> [!NOTE]
+> Not all visuals can be sorted. For example, the following visuals cannot be sorted: Treemap, Map, Filled Map, Scatter, Gauge, Card, Multi Row Card, Waterfall.
 
 ## Saving changes you make to sort order
 Power BI reports retain the filters, slicers, sorting, and other data view changes that you make. So if you navigate away from a report, and return later, your changes are saved.  If you want to revert your changes back to the report designer's settings, select **Reset to default** from the top menubar. 
