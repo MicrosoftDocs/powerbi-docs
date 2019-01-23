@@ -602,7 +602,12 @@
         },
         {
             "source_path": "powerbi-docs/service-organizational-content-pack-find-and-open.md",
-            "redirect_url": "/power-bi/consumer/end-user-content-pack",
+            "redirect_url": "/power-bi/service-content-pack-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-content-pack.md",
+            "redirect_url": "/power-bi/service-content-pack-overview",
             "redirect_document_id": true
         },
         {
