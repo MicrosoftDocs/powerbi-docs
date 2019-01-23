@@ -97,9 +97,33 @@ You can take steps to migrate to use a service principal application if you're c
 
 Follow the steps from the [Get started section](#get-started-with-service-principal) with some minor changes.
 
-In the article mentioned in step 4, there is a change you need to make. Instead of [Create and publish your reports](embed-sample-for-customers.md#create-and-publish-your-reports), you need to copy or move your Power BI artifacts and resources into [new workspaces](../service-create-the-new-workspaces.md). If you are already using new workspaces in Power BI then you need to add the service principal as an admin to those workspaces.
+In the article mentioned in step 4, there is a change you need to make. Instead of [Create and publish your reports](embed-sample-for-customers.md#create-and-publish-your-reports), you need to copy or move your Power BI artifacts and resources into [new workspaces](../service-create-the-new-workspaces.md). If you're already using new workspaces in Power BI then you need to add the service principal as an admin to those workspaces.
 
 Currently, there's no UI feature to move over Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task.
+
+## Service principal object ID
+
+Service principal has two different IDs that apply to different functions - service principal object ID and application ID.
+
+The service principal object ID is used for operations with the [Power BI APIs](https://docs.microsoft.com/rest/api/power-bi/). The application ID is used to create the access token when passing the application ID.
+
+Below are steps to retrieve the service principal object ID from the Azure portal.
+
+1. Create a new App registration in the Azure portal.  
+
+2. Then under **Managed application in local directory**, select the name of the application you just created.
+
+   ![ Managed application in local directory](media/embed-service-principal/managed-application-in-local-directory.png)
+
+3. Select **Properties** to see the Object ID.
+
+    ![Service principal object Id properties](media/embed-service-principal/service-principal-object-id-properties.png)
+
+Below is a sample script to retrieve the service principal object ID via PowerShell.
+
+    ```powershell
+    Get-AzureADApplication -Filter "DisplayName eq '<application name>'"
+    ```
 
 ## Considerations and limitations
 
