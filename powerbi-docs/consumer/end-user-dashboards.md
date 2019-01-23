@@ -23,7 +23,7 @@ A Power BI ***dashboard*** is a single page, often called a canvas, that uses vi
 The visualizations you see on the dashboard are called *tiles* and are *pinned* to the dashboard by report designers. Selecting a tile takes you to the report page where the visualization was created. If you're new to Power BI, you can get a good foundation by reading [Power BI basic concepts](end-user-basic-concepts.md).
 
 > [!NOTE]
-> Dashboards can't be created on mobile devices but they can be [viewed and shared](mobile/mobile-apps-view-dashboard.md).
+> Dashboards can be [viewed and shared on mobile devices](mobile/mobile-apps-view-dashboard.md).
 >
 > Power BI Pro is required for viewing a dashboard that has been shared with you.
 > 
@@ -38,7 +38,7 @@ Dashboards are a wonderful way to monitor your business, to look for answers, an
 A dashboard isn't just a pretty picture; it's highly interactive and highly customizable and the tiles update as the underlying data changes.
 
 ## Dashboards versus reports for Power BI ***consumers***
-Reports are often confused with dashboards since they too are canvases filled with visualizations. But there are some major differences.
+Reports are often confused with dashboards since they too are canvases filled with visualizations. But there are some major differences from a Power BI *consumers* point of view.
 
 | **Capability** | **Dashboards** | **Reports** |
 | --- | --- | --- |
@@ -53,10 +53,9 @@ Reports are often confused with dashboards since they too are canvases filled wi
 
 
 ## Dashboard creators and dashboard consumers
-As a Power BI ***consumer***, you receive dashboards from *creators*. Here are some topics to help you learn how to understand and interact with the dashboard.
+As a Power BI ***consumer***, you receive dashboards from *creators*. Continue learning about dashboards with these topics:
 
 * [View a dashboard](end-user-dashboard-open.md)
-* Get comfortable with dashboards by taking a tour of one of our [sample dashboards](../sample-tutorial-connect-to-the-samples.md).
 * Learn about [dashboard tiles](end-user-tiles.md) and what will happen when you select one.
 * Want to track an individual dashboard tile and receive an email when it reaches a certain threshold? [Create alerts on tiles](end-user-alerts.md).
 * Have fun asking your dashboard questions. Learn how to use [Power BI Q&A](end-user-q-and-a.md) to ask a question about your data and get the answer in the form of a visualization.
