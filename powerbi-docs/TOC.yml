@@ -63,7 +63,7 @@
       href: desktop-many-to-many-relationships.md
     - name: "Storage mode in Power BI Desktop (Preview)"
       href: desktop-storage-mode.md
-    - name: "Bidirectional cross-filtering in Power BI Desktop (Preview)"
+    - name: "Bidirectional cross-filtering in Power BI Desktop"
       href: desktop-bidirectional-filtering.md
     - name: "Power BI and DirectQuery"
       href: desktop-directquery-about.md
@@ -1111,13 +1111,15 @@
         href: report-server/quickstart-create-powerbi-report.md
       - name: "Manage content in the report server"
         href: report-server/getting-around.md
+      - name: "Row-level security (RLS) in the report server"
+        href: report-server/row-level-security-report-server.md
       - name: "Create a paginated report for a report server"
         href: report-server/quickstart-create-paginated-report.md
       - name: "Enter data directly in a paginated report"
         href: paginated-reports-enter-data.md
       - name: "Work with KPIs"
         href: https://go.microsoft.com/fwlink/?linkid=849021
-      - name: "Access shared datasets as OData feeds "
+      - name: "Access shared datasets as OData feeds"
         href: report-server/access-dataset-odata.md
       - name: "Configure scheduled refresh"
         href: report-server/configure-scheduled-refresh.md
