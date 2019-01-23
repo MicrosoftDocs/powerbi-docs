@@ -889,7 +889,7 @@
         href: developer/create-an-azure-active-directory-tenant.md
       - name: "Register an application"
         href: developer/register-app.md
-      - name: "Authenticate to Power BI service"
+      - name: "Get an Azure AD access token"
         href: developer/get-azuread-access-token.md
       - name: "Embedding Q&A"
         href: developer/qanda.md

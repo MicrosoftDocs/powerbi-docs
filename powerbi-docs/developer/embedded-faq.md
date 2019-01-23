@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/17/2018
+ms.date: 01/31/2018
 ---
 
 # Frequently asked questions about Power BI Embedded
@@ -93,7 +93,7 @@ Here is a partial list of differences you may use with each.
 
 * Using [Azure diagnostic logging](azure-pbie-diag-logs.md).
 
-### Will my capacity scale automatically to adjust to the consumption of my app?
+### Can my capacity scale automatically to adjust to the consumption of my app?
 
 While there is no automated scaling now, all the APIs are available to scale at any time.
 
@@ -152,13 +152,13 @@ Available regions (16 - same regions as Power BI)
 
 ### What is the authentication model for Power BI Embedded?
 
-Power BI Embedded continues to use Azure AD for authentication of the master user (a designated Power BI Pro licensed user), authenticating the application inside Power BI.
+Power BI Embedded continues to use Azure AD for authentication of the master user (a designated Power BI Pro licensed user), or with [service principal](embed-service-principal.md) for authenticating the application inside Power BI.  
 
 The authentication and authorization of application users implemented by the ISV, the ISV can implement their own authentication for their applications.
 
 If you already have an Azure AD tenant, you can use your existing directory, or you can create a new Azure AD tenant for your embedded application content security.
 
-To get an AAD token, you can use one of the Azure Active Directory Authentication Libraries - https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries. There are client libraries available for multiple platforms.
+To get an AAD token, you can use one of the [Azure Active Directory Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries). There are client libraries available for multiple platforms.
 
 ### My Application already uses AAD for User Authentication. How can we use this Identity when authenticating to Power BI in an "User Owns Data" scenario?
 
