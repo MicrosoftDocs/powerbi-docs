@@ -254,7 +254,7 @@ LocalizationGroup: Get started
                                 </a>
                             </li>
                             <li>
-                                <a href="/power-bi/consumer/service-admin-licensing-organization" data-linktype="absolute-path">
+                                <a href="end-user-consumer.md" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -319,26 +319,7 @@ LocalizationGroup: Get started
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/privacy.svg" alt="Privacy" data-linktype="relative-path">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Privacy</h3>
-                                                    <p>Blurb goes here</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                            </li>                            
                             <li>
                                 <a href="/power-bi/consumer/end-user-browsers" data-linktype="absolute-path">
                                     <div class="cardSize">
@@ -390,6 +371,24 @@ LocalizationGroup: Get started
                                                 <div class="cardText">
                                                     <h3>Get help</h3>
                                                     <p>Blurb goes here</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="end-user-consumer.md" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="media/end-user-consumer/privacy.svg" alt="Privacy" data-linktype="relative-path">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>See all Power BI consumer documentation</h3>
                                                 </div>
                                             </div>
                                         </div>
