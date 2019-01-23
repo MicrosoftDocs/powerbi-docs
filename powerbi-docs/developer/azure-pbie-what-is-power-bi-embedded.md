@@ -4,7 +4,7 @@ description: Power BI Embedded is intended as an embedded analytics tool to simp
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: nishalit
 ms.service: power-bi-embedded
 ms.subservice: ''
 ms.devlang: csharp, javascript
