@@ -678,9 +678,7 @@
       - name: "Create template apps"
         href: service-template-apps-create.md
       - name: "Install & distribute template apps"
-        href: service-template-apps-overview.md
-      - name: "Migrate a content pack"
-        href: service-template-apps-migrate-content-pack.md
+        href: service-template-apps-install-distribute.md
     - name: Troubleshoot
       items: 
       - name: "Forgot your password for Power BI?"
