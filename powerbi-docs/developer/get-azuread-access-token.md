@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 08/11/2017
 ---
 
-# Authenticate users and get an Azure AD access token for your Power BI app
+# Get an Azure AD access token for your Power BI application
 
 Learn how you can authenticate users within your Power BI application and retrieve an access token to use with the REST API.
 
