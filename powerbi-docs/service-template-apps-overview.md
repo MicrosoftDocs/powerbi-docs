@@ -7,51 +7,62 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/09/2019
+ms.date: 01/22/2019
 ms.author: maggies
 ---
 
 # What are Power BI template apps?
 
-The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article contains step-by-step instructions to create a Power BI template app. 
+The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article is an overview of the Power BI template app program.
 
-If you can create Power BI reports and dashboards, you can become a *template app builder* who builds and packages analytical content into an *app*. You can then deploy your app to other Power BI tenants through any available platform, such as AppSource, or by using it in your own web service. As a builder you can create a protected analytics package for distribution. 
+Template apps are a replacement for the current service content packs. As a Power BI partner, you create a set of out-of-the-box content your customers can use to gain insights from a source immediately.  
 
-Power BI tenant admins govern and control who in their organization is authorized to install a template app. Those who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
+You build template apps that allow your customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that's easily consumable by their business users.  
+
+You submit your partner-built template apps to Cloud Partner Portal. The apps then become publicly available in the Power BI App gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). Here's an example of the public template app experience.  
 
 ## Overview
-The general process to develop and submit an template content pack involves multiple steps.
+The general process to develop and submit an template app involves multiple steps.
 
- ![Process](media/service-content-pack-overview/developer-content-pack-overview.png)
 
-1. Create the template app workspace in the Power BI service (app.powerbi.com).
-2. Create Power BI reports and save them to the template app workspace.
-3. Create a dashboard in the template app workspace.
-4. Create a pre-production version of the template app and test it in your tenant.
-5. When it passes the test, create a production version and test it outside your tenant.
-6. When it passes the external test, release it to your customers, either directly or in AppSource. 
+|Power BI Desktop |  |Power BI service  |  |Cloud Partner Portal  |
+|---------|--|---------|---------|---------|
+|Build a data model and report in a .pbix file |  | Create a workspace. Import .pbix file. Create complementary content: a dashboard and dataflow  |  | Register as a partner |
+|   |  |         |  | |
+|   |  | Craete a test package and run internal validation        |  | |
+|   |  |         |  | |
+|   |  | Promote the test package to preproduction for validation outside your Power BI tenant, and submit it to AppSource  |  | With your preproduction package, create a Power BI template app offer and start the validation process |
+|   |  |         |  | |
+|   |  | Promote the preproduction package to production |  | Go live |
+ 
 
-<a name="requirements"></a>
+1. [Review the requirements](#requirements) to make sure you meet them. 
+
+1. Build a report in Power BI Desktop. Use parameters so you can save it as a template (.pbit). 
+
+1. Create a workspace for your template app in the Powerbi.com tenant. 
+
+1. Import and add content to your app. 
+
+1. Create a test package to test the template app yourself within your organization 
+
+1. Promote the Test app to Pre-production to submit the app for validation in AppSource and to test outside your own tenant. 
+
+1. Submit the content to Cloud Partner Platform for publishing. 
+
+1. Make your offer go 'Live' in AppSource and move your App to production in Power BI.
+2. Now you can start developing the next version. 
 
 ## Requirements
-To build and submit a content pack to be published in the PowerBI service and AppSource, you must meet the following requirements:
+To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Cloud Marketplace Publisher](https://docs.microsoft.com/azure/marketplace/become-publisher).
 
-* You have a SaaS application used by business users.
-* Your SaaS application has user data that can be visualized in Power BI.
-* Your SaaS application has an API that is accessible through public internet. Ideally the API is a REST based API or an OData feed. Power BI content packs support multiple authentication types like Basic Authentication, OAuth 2.0 and API Key. 
-* Your SaaS application is approved for publishing a content pack. Submit your request to pbiservicesapps@microsoft.com. We will review each submission on relevance and expected usage. 
-* Signed partner agreement. You will do that in the [submission step](template-content-pack-testing.md#submission).
+## Tips 
+- Make sure your app includes sample data to get everyone started in a click 
+- Carefully examine your Application by installing it in your tenant and in a secondary tenant. Make sure customers only see what you want them to see. 
+- Use AppSource as your online store to host your application. This way everyone using Power BI will get to find your app. 
+- Consider offering more than one template app for separate unique scenarios. 
+- Enable data customization, for example support custom connection and parameters configuration by the installer.
 
-Please review the [authoring](template-content-pack-authoring.md) section for more details on the technical requirements.
-
-## Business scenario
-Content packs provide insights and metrics focused on a specific business scenario. Understanding your audience and the benefit they'll receive from the content pack will help ensure your users are successfully with the content you provide.
-
-### Tips
-* Identify your audience and the task they're trying to accomplish  
-* Focus on a certain time period (last 90 days) or the last N results  
-* Only import the tables/columns related to your scenario  
-* Consider offering more than one content pack for separate unique scenarios  
 
 ## Frequently asked questions
 **Can I as a third party, build a Power BI Service content pack for a SaaS application that I don’t own?**
@@ -64,7 +75,7 @@ No, Power BI service content packs require a developer API that is accessible th
 
 **What kind of APIs are supported by service content packs and what authentication types can they work with?**
 
-Power BI service content packs support any REST API or OData feed. Power BI can work with multiple authentication types including Basic Authentication, OAuth2.0 and Web API Key. More details on the technical requirements in the [Authoring](template-content-pack-authoring.md#dashboard) article.
+Power BI service content packs support any REST API or OData feed. Power BI can work with multiple authentication types including Basic Authentication, OAuth2.0 and Web API Key. More details on the technical requirements are in the [Authoring](template-content-pack-authoring.md#dashboard) article.
 
 **I have a content pack published in Power BI. How can I update it?**
 
@@ -73,6 +84,23 @@ Published content packs can be updated once a month. Update requests submitted t
 **I have more questions about service Content Packs. How can I contact you?**
 
 Feel free to email us your questions at [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
+
+## Known limitations
+
+| Feature | Known Limitation |
+|---------|---------|
+|Contents:  Datasets   | Exactly one dataset should be present |
+|Contents: Reports     | Up to one report    |
+| Contents: Dashboards | Up to one non-empty dashboard |
+| Contents: Dataflows | No support for dataflows |
+| Contents from files | Only PBIX files are allowed. These file types aren't supported: .rdl files (paginated reports), Excel workbooks   |
+| Data sources | DirectQuery isn't allowed <br>Live connections aren’t allowed (no AS Azure\on-premises) <br>On-premises data sources aren't allowed(Personal\Enterprise gateways aren’t supported) <br>Real Time not allowed (no support for pushdataset) <br>Composite models |
+| Dataset: cross-workspace | No cross-workspace datasets are allowed  |
+| Content: Dashboards | Real Time tiles aren’t allowed (in other words, no support for PushDataset or pubnub) |
+| Query parameters | Parameters of type “Any”\”Binary” type  will block refresh operation for dataset |
+| Custom visuals | Only public-store-origin custom visuals are allowed. Organization store visuals not supported |
+
+
 
 ## Support
 For support during development, please use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). This is actively monitored and managed. Customer incidents quickly find their way to the appropriate team.
