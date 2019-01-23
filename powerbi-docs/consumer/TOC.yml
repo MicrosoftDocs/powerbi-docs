@@ -78,8 +78,6 @@
         href: end-user-apps.md
       - name: "Connect to services"
         href: end-user-connect-to-services.md
-      - name: "Find and connect to organizational content packs"
-        href: end-user-content-pack.md
     - name: Ask questions of your data
       items:
       - name: "Q&A in Power BI"

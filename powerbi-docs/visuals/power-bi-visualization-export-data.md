@@ -79,7 +79,7 @@ What you see when you select **Underlying data** can vary. Understanding these d
 | Visual contains |                                                                              What you'll see in export                                                                              |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   Aggregates    |                                                 the *first* aggregate and non-hidden data from the entire table for that aggregate                                                  |
-|   Aggregates    | related data - if the visual uses data from other data tables that are  *\*\*related*\* to the data table that contains the aggregate (as long as that relationship is \*:1 or 1:1) |
+|   Aggregates    | related data - if the visual uses data from other data tables that are  *related* to the data table that contains the aggregate (as long as that relationship is \*:1 or 1:1) |
 |    Measures     |                                      All measures in the visual *and* all measures from any data table containing a measure used in the visual                                      |
 |    Measures     |                                       All non-hidden data from tables that contain that measure (as long as that relationship is \*:1 or 1:1)                                       |
 |    Measures     |                                      All data from all tables that are related to table(s) containing the measures via a chain of \*:1 of 1:1)                                      |
