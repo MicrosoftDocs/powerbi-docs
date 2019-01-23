@@ -29,7 +29,7 @@ The first step to get an **access token** is to get an authorization code from *
 
 **Authorization code query string**
 
-```
+```csharp
 var @params = new NameValueCollection
 {
     //Azure AD will return an authorization code. 
@@ -55,7 +55,7 @@ Within redirect.aspx.cs, [AuthenticationContext.AcquireTokenByAuthorizationCode]
 
 **Get authorization code**
 
-```
+```csharp
 protected void signInButton_Click(object sender, EventArgs e)
 {
     //Create a query string
@@ -135,7 +135,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 **Default.aspx**
 
-```
+```chsarp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
 protected void Page_Load(object sender, EventArgs e)
