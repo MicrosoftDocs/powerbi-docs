@@ -193,7 +193,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 ***Row-level security (RLS)***
 
 * Azure Active Directory (AAD) group support: Users can now assign AAD groups (security groups and distribution lists) to a role. This makes it easier to assign roles to a large group of users at once.
-* [Test your RLS roles with reports backed by the data with RLS in place](service-admin-rls.md#validating-the-role-within-power-bi-desktop): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
+* [Test your RLS roles with reports backed by the data with RLS in place](service-admin-rls.md#validate-the-roles-within-power-bi-desktop): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
 * Define and apply RLS to cloud models based on direct queries: You can now create and apply RLS rules for direct query data sources.
 
 ***Dashboards***
