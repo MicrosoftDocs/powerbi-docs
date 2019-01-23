@@ -151,7 +151,7 @@ Follow the steps below to start embedding your content using the sample applicat
     | Master user account </br> (Power BI Pro license) | Service Principal </br> (app-only token) |
     |---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
     | **[applicationId](#applicationid)** | **[applicationId](#applicationid)** |
-    | | **[application secret](#applicationsecret)** |
+    | | **[applicationsecret](#applicationsecret)** |
     | **[workspaceId](#workspaceid)** | **[workspaceId](#workspaceid)** |
     | **[reportId](#reportid)** | **[reportId](#reportid)** |
     | **[pbiUsername](#pbiunpw)** |
@@ -423,7 +423,7 @@ For more information, see [Embedded analytics capacity planning whitepaper](http
 
 Once you create a dedicated capacity, you can assign your app workspace to that dedicated capacity.
 
-To assign a dedicated capacity to a workspace using **[service principal](embed-service-principal.md)**, use the [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity).
+To assign a dedicated capacity to a workspace using **[service principal](embed-service-principal.md)**, use the [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity).  When you are using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md#service-principal-object-id-vs-application-id-with-power-bi-rest-apis) to reference the service principal.
 
 Follow the steps below to assign a dedicated capacity to a workspace using a **master user account**.
 
