@@ -19,47 +19,46 @@ Template apps are a replacement for the current service content packs. As a Powe
 
 You build template apps that allow your customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that's easily consumable by their business users.  
 
-You submit your partner-built template apps to Cloud Partner Portal. The apps then become publicly available in the Power BI App gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). Here's an example of the public template app experience.  
+You submit your partner-built template apps to the Cloud Partner Portal. The apps then become publicly available in the Power BI App gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). Here's an example of the public template app experience.  
 
 ## Overview
-The general process to develop and submit an template app involves multiple steps.
+The general process to develop and submit an template app involves multiple steps, some of which you can accomplish at the same time.
 
 
 |Power BI Desktop |  |Power BI service  |  |Cloud Partner Portal  |
 |---------|--|---------|---------|---------|
 |Build a data model and report in a .pbix file |  | Create a workspace. Import .pbix file. Create complementary content: a dashboard and dataflow  |  | Register as a partner |
-|   |  |         |  | |
-|   |  | Craete a test package and run internal validation        |  | |
-|   |  |         |  | |
+|   |  | Create a test package and run internal validation        |  | |
 |   |  | Promote the test package to preproduction for validation outside your Power BI tenant, and submit it to AppSource  |  | With your preproduction package, create a Power BI template app offer and start the validation process |
-|   |  |         |  | |
 |   |  | Promote the preproduction package to production |  | Go live |
  
+
+Here are the steps.
 
 1. [Review the requirements](#requirements) to make sure you meet them. 
 
 1. Build a report in Power BI Desktop. Use parameters so you can save it as a template (.pbit). 
 
-1. Create a workspace for your template app in the Powerbi.com tenant. 
+1. Create a workspace for your template app in your tenant on the Power BI service (app.powerbi.com). 
 
-1. Import and add content to your app. 
+1. Import your .pbit file and add content such as a dashboard to your app. 
 
-1. Create a test package to test the template app yourself within your organization 
+1. Create a test package to test the template app yourself within your organization. 
 
-1. Promote the Test app to Pre-production to submit the app for validation in AppSource and to test outside your own tenant. 
+1. Promote the test app to preproduction to submit the app for validation in AppSource, and to test outside your own tenant. 
 
 1. Submit the content to Cloud Partner Platform for publishing. 
 
-1. Make your offer go 'Live' in AppSource and move your App to production in Power BI.
-2. Now you can start developing the next version. 
+1. Make your offer goes 'Live' in AppSource, and move your app to production in Power BI.
+2. Now you can start developing the next version in the same workspace, in preproduction. 
 
 ## Requirements
 To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Cloud Marketplace Publisher](https://docs.microsoft.com/azure/marketplace/become-publisher).
 
 ## Tips 
-- Make sure your app includes sample data to get everyone started in a click 
-- Carefully examine your Application by installing it in your tenant and in a secondary tenant. Make sure customers only see what you want them to see. 
-- Use AppSource as your online store to host your application. This way everyone using Power BI will get to find your app. 
+- Make sure your app includes sample data to get everyone started in a click. 
+- Carefully examine your application by installing it in your tenant and in a secondary tenant. Make sure customers only see what you want them to see. 
+- Use AppSource as your online store to host your application. This way everyone using Power BI can find your app. 
 - Consider offering more than one template app for separate unique scenarios. 
 - Enable data customization, for example support custom connection and parameters configuration by the installer.
 
