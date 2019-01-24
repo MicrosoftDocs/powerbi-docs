@@ -54,4 +54,4 @@ If you downloaded Power BI Desktop from the Microsoft Store, you might be unable
 
 * Download Power BI Desktop from https://powerbi.microsoft.com/desktop instead.
 
-* If you want to use the version from the Microsoft Store: on your local computer, copy oraons.dll from *\12.X.X\client_X\* into *\12.X.X\client_X\bin\*. The X represents version and directory numbers.
+* If you want to use the version from the Microsoft Store: on your local computer, copy oraons.dll from _\12.X.X\client_X\_ into _\12.X.X\client_X\bin\_. The X represents version and directory numbers.
