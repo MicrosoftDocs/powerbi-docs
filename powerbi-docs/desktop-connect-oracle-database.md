@@ -49,7 +49,9 @@ Once the matching Oracle client driver is installed, you can connect to an Oracl
 
 
 ## Troubleshooting
-You may be unable to connect to Oracle with Power BI desktop downloaded from Microsoft Store and get error message "Object reference not set".It is caused by an oracle driver issue.
-You can either:
-1. Download the Power BI Desktop from https://powerbi.microsoft.com/desktop
-2. If you get Power BI Desktop from Microsoft Store, copy oraons.dll from product\12.X.X\client_X into product\12.X.X\client_X\bin. The X represent version/client directory numbers.
+
+If you downloaded Power BI Desktop from the Microsoft Store, you might be unable to connect to Oracle databases because of an Oracle driver issue. If you encounter this issue, the error message returned is "Object reference not set". To address the issue, do one of the following:
+
+* Download Power BI Desktop from https://powerbi.microsoft.com/desktop instead.
+
+* If you want to use the version from the Microsoft Store: on your local computer, copy oraons.dll from *\12.X.X\client_X\* into *\12.X.X\client_X\bin\*. The X represents version and directory numbers.
