@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/16/2018
+ms.date: 01/24/2019
 ---
 
 # Support timeline for Power BI Report Server
@@ -30,6 +30,7 @@ This support policy allows us to deliver innovation to customers at a rapid rate
 | October 2017 |October 31, 2017 |October 31, 2018 |
 | March 2018 | March 19, 2018 | March 19, 2019 |
 | August 2018 | August 15, 2018 | August 15, 2019 |
+| January 2019 | January 23, 2019 | January 23, 2020 |
 
 To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 

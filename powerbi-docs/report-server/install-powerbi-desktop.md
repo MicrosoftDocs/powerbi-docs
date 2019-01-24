@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/14/2019
+ms.date: 01/24/2019
 ms.author: maggies
 
 ---
@@ -27,7 +27,7 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 
     ![Download Power BI Desktop from the web portal](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Or go directly to [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) (Optimized for Power BI Report Server - January 2019) in the Microsoft Download Center.
+    Or go directly to [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=2055039) (Optimized for Power BI Report Server - January 2019) in the Microsoft Download Center.
 
 2. In the Download Center page, select **Download**.
 
@@ -43,10 +43,10 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
    
     It starts automatically and you're ready to go.
 
-## Verify you are using the correct version
-You can verify that you are using the correct Power BI Desktop by looking at the launch screen or title bar within Power BI Desktop. The title bar indicates the month and year of the release.
+## Verify you're using the correct version
+It's easy to verify that you're using the correct Power BI Desktop: Look at the launch screen or title bar within Power BI Desktop. The title bar indicates the month and year of the release, and the Power BI logo colors are reversed, yellow on black instead of black on yellow.
 
-![Title bar for Power BI Desktop optimized for Power BI Report Server](media/install-powerbi-desktop/power-bi-report-server-desktop-august-2018.png)
+![Title bar for Power BI Desktop optimized for Power BI Report Server](media/install-powerbi-desktop/power-bi-report-server-desktop-jan-2019.png)
 
 The Power BI Desktop version for the Power BI service doesn't have the month and year in the title bar.
 
@@ -91,10 +91,9 @@ Power BI Report Server reports don’t support these features in the Power BI mo
 
 ## Power BI Desktop for earlier versions of Power BI Report Server
 
-If your report server is an earlier version, you need the corresponding version of Power BI Desktop. Hre are the two previous versions.
+If your report server is an earlier version, you need the corresponding version of Power BI Desktop. Here's the previous version.
 
-- Microsoft Power BI Desktop ([Optimized for Power BI Report Server - October 2017](https://www.microsoft.com/download/details.aspx?id=56136))
-- Microsoft Power BI Desktop ([Optimized for Power BI Report Server - June 2017](https://www.microsoft.com/download/details.aspx?id=55330))
+- Microsoft Power BI Desktop ([Optimized for Power BI Report Server - August 2018](https://www.microsoft.com/download/details.aspx?id=57271))
 
 ## Next steps
 Now that you have Power BI Desktop installed, you can start creating Power BI reports.
