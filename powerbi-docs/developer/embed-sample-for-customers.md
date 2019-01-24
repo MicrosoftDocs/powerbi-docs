@@ -25,7 +25,6 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 To get started, you're required to have:
-<<<<<<< HEAD
 
 * A [Power BI Pro account](../service-self-service-signup-for-power-bi.md) (a master user account that is simply a username and password to sign in to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription.
@@ -33,15 +32,6 @@ To get started, you're required to have:
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
-=======
-
-* A [Power BI Pro account](../service-self-service-signup-for-power-bi.md) (a master user account that is simply a username and password to sign in to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
-* A [Microsoft Azure](https://azure.microsoft.com/) subscription.
-* You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
-
-If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-
->>>>>>> 33235107220edf728a37585fdb289acfe05f6a25
 If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Set up your embedded analytics development environment
