@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/11/2019
+ms.date: 01/24/2019
 ms.author: chwade
 LocalizationGroup: Premium
 ---
