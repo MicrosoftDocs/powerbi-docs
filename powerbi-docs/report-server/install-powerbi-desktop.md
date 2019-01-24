@@ -15,9 +15,9 @@ ms.author: maggies
 # Install Power BI Desktop optimized for Power BI Report Server
 Learn how to install Power BI Desktop optimized for Power BI Report Server.
 
-To create Power BI reports for Power BI Report Server, you need to download and install Power BI Desktop optimized for Power BI Report Server. This release is different from the Power BI Desktop used with the Power BI service. For example, the version of Power BI Desktop for the Power BI service includes preview features that aren't available in the Power BI Report Server version until after they're released. Using this release makes sure that the report server can interact with a known version of the reports and model. 
+To create Power BI reports for Power BI Report Server, you need to download and install Power BI Desktop optimized for Power BI Report Server. This release is different from the Power BI Desktop used with the Power BI service. For example, the version of Power BI Desktop for the Power BI service includes preview features that aren't in the Power BI Report Server version until they're released. Using this release makes sure that the report server can interact with a known version of the reports and model. 
 
-The good news is that you can install Power BI Desktop and Power BI Desktop optimized for Power BI Report Server side by side on the same computer.
+The good news is that you can install Power BI Desktop, and Power BI Desktop optimized for Power BI Report Server, side by side on the same computer.
 
 ## Download and install Power BI Desktop
 
@@ -44,20 +44,20 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
     It starts automatically and you're ready to go.
 
 ## Verify you're using the correct version
-It's easy to verify that you're using the correct Power BI Desktop: Look at the launch screen or title bar within Power BI Desktop. The title bar indicates the month and year of the release, and the Power BI logo colors are reversed, yellow on black instead of black on yellow.
+It's easy to verify that you're using the correct Power BI Desktop: Look at the launch screen or title bar within Power BI Desktop. The title bar indicates the month and year of the release. Also, the Power BI logo colors are reversed, yellow on black instead of black on yellow.
 
 ![Title bar for Power BI Desktop optimized for Power BI Report Server](media/install-powerbi-desktop/power-bi-report-server-desktop-jan-2019.png)
 
 The Power BI Desktop version for the Power BI service doesn't have the month and year in the title bar.
 
 ## File extension association
-If you installed both Power BI Desktop and Power BI Desktop optimized for Power BI Report Server on the same machine, the last install of Power BI Desktop will have the file association with .pbix. This means that when you double click on a pbix file, it will launch the Power BI Desktop that was last installed.
+If you install both Power BI Desktop and Power BI Desktop optimized for Power BI Report Server on the same machine, the most recent installation of Power BI Desktop has the file association with .pbix files. Thus, when you double-click a .pbix file, it launches the Power BI Desktop you installed most recently.
 
-If you had Power BI Desktop and then installed Power BI Desktop optimized for Power BI Report Server, all pbix files will open in Power BI Desktop optimized for Power BI Report Server by default. If you would rather Power BI Desktop be the default to launch when opening a pbix file, reinstall Power BI Desktop from the Power BI service.
+If you have Power BI Desktop and then install Power BI Desktop optimized for Power BI Report Server, all .pbix files open in Power BI Desktop optimized for Power BI Report Server by default. If you would rather have Power BI Desktop be the default to launch when opening a .pbix file, reinstall [Power BI Desktop from the Microsoft Store](http://aka.ms/pbidesktopstore).
 
 You can always open the version of Power BI Desktop you want to use first. And then open the file from within Power BI Desktop.
 
-Editing a Power BI report from within Power BI Report Server, or creating a new Power BI report from the web portal, will always open the correct version of Power BI Destop.
+Editing a Power BI report from within Power BI Report Server, or creating a new Power BI report from the web portal, always opens the correct version of Power BI Destop.
 
 ## Considerations and limitations
 Power BI reports in Power BI Report Server, in the Power BI service (http://app.powerbi.com), and in the Power BI mobile apps act almost exactly the same, but a few features are different.
@@ -77,7 +77,7 @@ Power BI Report Server reports don’t support:
 ### In the Power BI mobile apps
 Power BI Report Server reports support all the basic functionality in the [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md), including:
 
-* [Phone report layout](../desktop-create-phone-report.md): You can optimize a report for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon, ![Phone report layout icon](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png), and layout.
+* [Phone report layout](../desktop-create-phone-report.md): You can optimize a report for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon ![Phone report layout icon](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png), and layout.
   
     ![Report optimized for phones](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-report.png)
 
