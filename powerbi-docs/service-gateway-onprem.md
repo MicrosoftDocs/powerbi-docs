@@ -91,7 +91,9 @@ When you add a data source to the gateway, you need to provide credentials for t
 
 ## Tenant level administration
 
-There is currently no single place where tenant administrators  can manage all the gateways that other users have installed and configured.  If you’re a tenant administrator, we recommend that you ask the users in your organization to add you as an administrator to every gateway they install. This allows you to manage all the gateways in your organization through the Gateway Settings page or through [PowerShell commands](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters). 
+As a tenant admin, you can see all On-premises data gateways installed within your tenant and manage them. This capability is currently in public preview. For more information, see the [Power Platform Admin Center documentation](/power-platform/admin/onpremises-data-gateway-management).
+
+Alternatively, If you’re a tenant administrator, we recommend that you ask the users in your organization to add you as an administrator to every gateway they install. This allows you to manage all the gateways in your organization through the Gateway Settings page or through [PowerShell commands](service-gateway-high-availability-clusters.md#powershell-support-for-gateway-clusters). 
 
 ## Enabling outbound Azure connections
 
