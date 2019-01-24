@@ -23,12 +23,12 @@ When working to automate Power BI tasks, you can also script how to process and 
 
 To access resources that secure an Azure AD tenant, the entity that requires access represents a security principal. This action holds true for both users (user principal) and applications (service principal).
 
-The security principal defines the access policy and permissions for users and applications in the Azure AD tenant. This access policy enables core features such as authentication of users and applications during sign-in, and authorization during resource access. For more information, reference [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
+The security principal defines the access policy and permissions for users and applications in the Azure AD tenant. This access policy enables core features such as authentication of users and applications during sign-in, and authorization during resource access. For more information, reference [Application and service principal in AAD](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
 
 When you [register an Azure AD application](register-app.md) in the Azure portal, two objects are created in your Azure AD tenant:
 
-* An application object
-* A [service principal object]((https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object))
+* An [application object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#application-object)
+* A [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object)
 
 Consider the application object as the *global* representation of your application for use across all tenants, and the service principal object as the *local* representation for use in a specific tenant.
 
@@ -42,7 +42,7 @@ With service principal, you can mask your master user account information in you
 
 Since **Power BI APIs** and **Power BI .NET SDK** now support calls using service principal, you can use the [Power BI APIs](https://docs.microsoft.com/rest/api/power-bi/) with service principal. For example, you can make changes to workspaces such as create workspaces, add or remove users from workspaces, and import content into workspaces.
 
-You can only use a service principal application if your Power BI artifacts and resources are stored in the [new Power BI workspace](../service-create-the-new-workspaces.md).
+You can only use service principal if your Power BI artifacts and resources are stored in the [new Power BI workspace](../service-create-the-new-workspaces.md).
 
 ## Service principal vs. master user account
 
@@ -81,21 +81,24 @@ Below are steps to retrieve the service principal object ID from the Azure porta
 Below is a sample script to retrieve the service principal object ID via PowerShell.
 
    ```powershell
-   Get-AzureADApplication -Filter "DisplayName eq '<application name>'"
+   Get-AzureADServicePrincipal -Filter "DisplayName eq '<application name>'"
    ```
 
 ## Get started with a service principal
 
 Different from the traditional use of a master user account, using the service principal (app-only token) requires a few different pieces to set up. Now to get started with the service principal (app-only token) you need to set up the right environment.
 
-1. You need to [register an Azure AD application](register-app.md) to capture an Application ID and an Application secret to access your Power BI content.  When you use the [register app tool](https://dev.powerbi.com/apps), choose **Server-side web application** to go through the process of gathering an Application ID and an Application secret.
+1. You need to [register a server-side web application](register-app.md) in Azure Active Directory (AAD) to use with Power BI. You register an application to capture an Application ID, an Application secret and and the service princpal object ID to access your Power BI content.
 
    > [!Important]
    > Once you enable service principals to be used with Power BI, your AD permissions don't take effect anymore. Permissions are managed through the Power BI admin portal.
 
-2. Create a [security group in Azure](https://docs.microsoft.com/azure/virtual-network/security-overview), and add the application you created to that security group.
+2. Create a [security group in Azure Active Directory (AAD)](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal), and add the application you created to that security group.
 
-3. Sign into Power BI as an admin and enable the service principal developer setting in the Power BI admin portal.
+    > [!Note]
+    > You can also create a service principal and a security group with a PowerShell script.
+
+3. You must sign into Power BI as an admin and enable service principal in the **Developer settings** in the Power BI admin portal. Add the security group that you created in Azure AD to the **Specific security group** section in the **Developer settings**.
 
    > [!Important]
    > Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.

@@ -135,7 +135,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 **Default.aspx**
 
-```chsarp
+```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
 protected void Page_Load(object sender, EventArgs e)

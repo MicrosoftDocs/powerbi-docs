@@ -22,7 +22,7 @@ The code below are examples using C# and the [Power BI .NET SDK](https://www.nug
 
 Make sure you are using the following namespaces to execute the code snippets below.
 
-```charp
+```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.PowerBI.Api.V1;
 using Microsoft.PowerBI.Api.V1.Models;

@@ -26,7 +26,7 @@ In this tutorial, you learn how to:
 
 To get started, you're required to have:
 
-* A [Power BI Pro account](../service-self-service-signup-for-power-bi.md) (a master user account that is simply a username and password to sign in to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
+* A [Power BI Pro account](../service-self-service-signup-for-power-bi.md) (a master user account that is a username and password to sign in to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription.
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 
@@ -198,7 +198,6 @@ Follow the steps below to start embedding your content using the sample applicat
         ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
     3. Select the application that needs to use the **ApplicationSecret**.
-<<<<<<< HEAD
 
         ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
@@ -206,15 +205,6 @@ Follow the steps below to start embedding your content using the sample applicat
 
         ![Select Settings](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
 
-=======
-
-        ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
-
-    4. Select **Settings**.
-
-        ![Select Settings](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
-
->>>>>>> 33235107220edf728a37585fdb289acfe05f6a25
     5. Select **Keys**.
 
         ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
