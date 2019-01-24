@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/31/2019
+ms.date: 02/01/2019
 ---
 
 # Get an Azure AD access token for your Power BI application
@@ -27,7 +27,7 @@ This example is for when your users will manually log into Azure AD with their o
 
 The first step to get an **access token** is to get an authorization code from **Azure AD**. To do this, you construct a query string with the following properties, and redirect to **Azure AD**.
 
-**Authorization code query string**
+#### Authorization code query string
 
 ```csharp
 var @params = new NameValueCollection
@@ -53,7 +53,7 @@ After you construct a query string, you redirect to **Azure AD** to get an **aut
 
 Within redirect.aspx.cs, [AuthenticationContext.AcquireTokenByAuthorizationCode](https://msdn.microsoft.com/library/azure/dn479531.aspx) will then be called to generate the token.
 
-**Get authorization code**
+#### Get authorization code
 
 ```csharp
 protected void signInButton_Click(object sender, EventArgs e)
@@ -101,7 +101,7 @@ The **Microsoft.IdentityModel.Clients.ActiveDirectory** namespace can be retriev
 Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
 ```
 
-**Redirect.aspx.cs**
+#### Redirect.aspx.cs
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -133,7 +133,7 @@ protected void Page_Load(object sender, EventArgs e)
 }
 ```
 
-**Default.aspx**
+#### Default.aspx
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -162,9 +162,15 @@ protected void Page_Load(object sender, EventArgs e)
 
 This approach is typically used for ISV type applications where the app owns access to the data. Users will not necessarily be Power BI users and the application controls authentication and access for the end users.
 
-For this approach, you will use a single *master* account that is a Power BI Pro user. The credentials for this account are stored with the application. The application will authenticate against Azure AD with those stored credentials. The example code shown below comes from the [App owns data sample](https://github.com/guyinacube/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data)
+### Access token with a master account
 
-**HomeController.cs**
+For this approach, you use a single *master* account that is a Power BI Pro user. The credentials for this account are stored with the application. The application will authenticate against Azure AD with those stored credentials. The example code shown below comes from the [App owns data sample](https://github.com/guyinacube/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data)
+
+### Access token with service principal
+
+For this approach, you use a [service principal](embed-service-principal.md), that is an **app-only** token. The application authenticates against Azure AD with service princiapl. The example code shown below comes from the [App owns data sample](https://github.com/guyinacube/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data)
+
+#### HomeController.cs
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;

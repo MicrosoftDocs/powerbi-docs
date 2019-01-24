@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
 ms.custom: seodec18
-ms.date: 01/31/2018
+ms.date: 02/01/2019
 ---
 
 # Embedded analytics with Power BI
@@ -57,7 +57,11 @@ You can go through the [Embedding setup tool](https://aka.ms/embedsetup/UserOwns
 
 Power BI Embedded has benefits for an ISV, their developers, and customers. For example, an ISV can start creating visuals for free with Power BI Desktop. ISVs can achieve faster time to market by minimizing visual analytic development efforts and stand out among the competition with differentiated data experiences. ISVs also can opt to charge a premium for the additional value created with embedded analytics.
 
-With Power BI Embedded, your customers don't need to know anything about Power BI. You can use two different methods to create an embedded application. One option is to use a Power BI Pro account. Another option is to use service principal. The Power BI Pro account acts as a master account for your application (think of this master account as a proxy account). The Power BI Pro account allows you to generate embed tokens that provide access to dashboards and reports within the Power BI service that are owned and managed by your application. [Service principal](embed-service-principal.md) acts as an app-only token method that masks your Power BI Pro account credentials. The service principal allows you to generate embed tokens that provide access to dashboards and reports within the Power BI service that are owned and managed by your application.
+With Power BI Embedded, your customers don't need to know anything about Power BI. You can use two different methods to create an embedded application. One option is to use a Power BI Pro account. Another option is to use service principal. 
+
+The Power BI Pro account acts as a master account for your application (think of this master account as a proxy account). The Power BI Pro account allows you to generate embed tokens that provide access to dashboards and reports within the Power BI service that are owned and managed by your application.
+
+[Service principal](embed-service-principal.md) can embed Power BI content into an application using an **app-only** token. Service principal allows you to generate embed tokens that provide access to dashboards and reports within the Power BI service that are owned and managed by your application.
 
 Developers using Power BI Embedded can spend time focused on building the core competency of their application rather than spending time developing visuals and analytics. Developers can rapidly meet customer report and dashboard demands and can embed easily with fully documented APIs and SDKs. By enabling easy-to-navigate data exploration in apps, ISVs allow customers to make quick, data-driven decisions in context from any device.
 

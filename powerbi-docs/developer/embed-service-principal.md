@@ -60,30 +60,6 @@ There are differences between using a service principal and a standard master us
 | Needs a global admin to create | Yes | No |
 | Can install and manage an On-premises data gateway | Yes | No |
 
-## Service principal object ID vs application ID with Power BI REST APIs
-
-Service principal has two different IDs that apply to different functions - service principal object ID and application ID.
-
-The service principal object ID is used for operations with the [Power BI APIs](https://docs.microsoft.com/rest/api/power-bi/). The application ID is used to create the access token when passing the application ID.
-
-Below are steps to retrieve the service principal object ID from the Azure portal.
-
-1. Create a new App registration in the Azure portal.  
-
-2. Then under **Managed application in local directory**, select the name of the application you just created.
-
-   ![ Managed application in local directory](media/embed-service-principal/managed-application-in-local-directory.png)
-
-3. Select **Properties** to see the Object ID.
-
-    ![Service principal object Id properties](media/embed-service-principal/service-principal-object-id-properties.png)
-
-Below is a sample script to retrieve the service principal object ID via PowerShell.
-
-   ```powershell
-   Get-AzureADServicePrincipal -Filter "DisplayName eq '<application name>'"
-   ```
-
 ## Get started with a service principal
 
 Different from the traditional use of a master user account, using the service principal (app-only token) requires a few different pieces to set up. Now to get started with the service principal (app-only token) you need to set up the right environment.
@@ -127,6 +103,35 @@ Follow the steps from the [Get started section](#get-started-with-service-princi
 In the article mentioned in step 4, there is a change you need to make. Instead of [Create and publish your reports](embed-sample-for-customers.md#create-and-publish-your-reports), you need to copy or move your Power BI artifacts and resources into [new workspaces](../service-create-the-new-workspaces.md). If you're already using new workspaces in Power BI then you need to add the service principal as an admin to those workspaces.
 
 Currently, there's no UI feature to move over Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task. When using the APIs with service principal, you need the [service principal object ID](#service-principal-object-id-vs-application-id-with-power-bi-rest-apis).
+
+### Getting the service principal object ID
+
+Service principal has two different IDs that apply to different functions - service principal object ID and application ID.
+
+The service principal object ID is used when applying an operation or change to the service principal with the [Power BI APIs](https://docs.microsoft.com/rest/api/power-bi/). For example, applying a service principal as an admin to a workspace. 
+
+The application ID is used to create the access token when passing the application ID for authentication.
+
+Below are steps to get the service principal object ID from the Azure portal.
+
+1. Create a new App registration in the Azure portal.  
+
+2. Then under **Managed application in local directory**, select the name of the application you just created.
+
+   ![ Managed application in local directory](media/embed-service-principal/managed-application-in-local-directory.png)
+
+    > [!Note]
+    > Ignore the object Id shown in the image above with use for service principal.
+
+3. Select **Properties** to see the Object ID.
+
+    ![Service principal object Id properties](media/embed-service-principal/service-principal-object-id-properties.png)
+
+Below is a sample script to retrieve the service principal object ID via PowerShell.
+
+   ```powershell
+   Get-AzureADServicePrincipal -Filter "DisplayName eq '<application name>'"
+   ```
 
 ## Considerations and limitations
 
