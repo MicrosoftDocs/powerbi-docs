@@ -36,10 +36,10 @@ Here's how to register your application with the Power BI App Registration Tool:
 
 4. Provide an **Application Type**.
 
-    Here are the differences for why you choose **Native** versus **Server-side web applciations** for an application type.
+    Here are the differences for why you choose **Native** versus **Server-side web applications** for an application type.
 
     Native:
-    * You plan on creating an application [designed for your customers](embed-sample-for-customers.md) using a master user account (a Power BI Pro license used for signing in to Power BI) to authenticate.
+    * You plan on creating an application that is [designed for your customers](embed-sample-for-customers.md) using a master user account (a Power BI Pro license used for signing in to Power BI) to authenticate.
 
     Server-side web application:
     * You plan on creating an application [designed for your organization](embed-sample-for-your-organization.md).
@@ -48,7 +48,7 @@ Here's how to register your application with the Power BI App Registration Tool:
 
     ![App type](media/register-app/register-app-new-design-app-type.png)
 
-5. If you selected **Server-side web application** for the application type then continue with entering a value for **Home Page URL** and **Redirect URL**. The **Redirect URL** works with any valid URL and should correspond with the application you have created. If you selected **Native** then continue to step 6.
+5. If you selected **Server-side web application** for the application type, then continue with entering a value for **Home Page URL** and **Redirect URL**. The **Redirect URL** works with any valid URL and should correspond with the application you have created. If you selected Native,** then continue to step 6.
 
 6. Choose the APIs for the application that has access. For more information about Power BI access permissions, see [Power BI Permissions](power-bi-permissions.md). Then select **Register**.
 
@@ -84,7 +84,7 @@ Your other option for registering your application is to do so directly in the A
 
 5. Follow the prompts and create a new application.
 
-   * For Web Applications, provide the Sign-On URL, which is the base URL of your app, where users sign into (e. g.`http://localhost:13526`).
+   * For Web Applications, provide the Sign-On URL, which is the base URL of your app, where users sign into (for example, `http://localhost:13526`).
    * For Native Applications, provide a **Redirect URI**, which Azure AD uses to return token responses. Make sure to enter a value specific to your application (for example, `http://myapplication/Redirect`).
 
 For more information about how to register applications in Azure Active Directory, see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
@@ -99,17 +99,17 @@ Here's how to get an application ID:
 
 2. Choose your Azure AD tenant by selecting your account in the top-right corner of the page.
 
-3. In the left-hand navigation pane, choose **All services**, **Azure Active Directory**, and select **App Registrations**. For more information on how to get a service principal object ID, please reference[ Service principal object ID vs application ID with Power BI REST APIs](embed-service-principal.md#service-principal-object-id-vs-application-id-with-power-bi-rest-apis).
+3. In the left-hand navigation pane, select **All services**, **Azure Active Directory**, and select **App Registrations**.
 
 4. Select the application that you want to retrieve the application ID that you need to use.
 
-5. You see **Application ID** listed as a GUID. This is the application ID for the application.
+5. You see **Application ID** listed as a GUID. This ID is the application ID for the application.
 
     ![Client ID listed as Application ID within app registration](media/register-app/powerbi-embedded-app-registration-client-id.png)
 
 ## Apply permissions to your application within Azure AD
 
-Enable additional permissions to your application in addition to what the app registration page provides. You can accomplish this through the Azure AD portal, or programmatically.
+Enable additional permissions to your application in addition to what the app registration page provides. You can accomplish this task through the Azure AD portal, or programmatically.
 
 You want to be logged in with either the *master* account, used for embedding, or a Global admin account.
 
@@ -127,7 +127,7 @@ You want to be logged in with either the *master* account, used for embedding, o
     ![App permissions 03](media/register-app/powerbi-embedded-azuread-app-permissions03.png)
 
    > [!NOTE]
-   > If you created the app directly in the Azure AD portal, **Power BI Service (Power BI)** may not be present. If it'sn't, select **+ Add** and then **1 Select and API**. Select **Power BI Service** in the API list and select **Select**.  If **Power BI Service (Power BI)** isn't available within **+ Add**, sign up for Power BI with at least one user.
+   > If you created the app directly in the Azure AD portal, **Power BI Service (Power BI)** may not be present. If it isn't, select **+ Add** and then **1 Select and API**. Select **Power BI Service** in the API list and select **Select**.  If **Power BI Service (Power BI)** isn't available within **+ Add**, sign up for Power BI with at least one user.
 
 4. Select all permissions under **Delegated Permissions**. Select them one by one to save the selections. Select **Save** when done.
 
@@ -184,10 +184,11 @@ You want to be logged in with either the *master* account, used for embedding, o
      }
      ```
 
-    The **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* isn't universal but it's tenant dependant. This value is the objectId of the “Power BI Service” application in the AAD tenant.
+    The **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* isn't universal but it's tenant dependant. This value is the objectId of the “Power BI Service” application in the Azure Active Directory (AAD) tenant.
 
     The user can quickly get this value in the Azure portal:
     1. https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps
+
     2. Search for “Power BI Service” in the SearchBox
 
 5. Grant App Permissions to Azure Active Directory (AAD)

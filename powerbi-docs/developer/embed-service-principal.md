@@ -15,7 +15,7 @@ ms.date: 02/01/2019
 
 With **service principal**, you can embed Power BI content into an application and use automation with Power BI using an **app-only** token. Service principal is beneficial when using **Power BI Embedded** or when **automating Power BI tasks and processes**.
 
-When working with Power BI Embedded, there are advantages when using a service principal application.  A primary advantage is you do not need a master user account (Power BI Pro license that is merely a username and password to sign in) to authenticate into your application. Service principal uses an application ID and an application secret to authenticate the application.
+When working with Power BI Embedded, there are advantages when using a service principal application.  A primary advantage is you don't need a master user account (Power BI Pro license that is merely a username and password to sign in) to authenticate into your application. Service principal uses an application ID and an application secret to authenticate the application.
 
 When working to automate Power BI tasks, you can also script how to process and manage service principals to scale.
 
@@ -23,7 +23,7 @@ When working to automate Power BI tasks, you can also script how to process and 
 
 To access resources that secure an Azure AD tenant, the entity that requires access represents a security principal. This action holds true for both users (user principal) and applications (service principal).
 
-The security principal defines the access policy and permissions for users and applications in the Azure AD tenant. This access policy enables core features such as authentication of users and applications during sign-in, and authorization during resource access. For more information, reference [Application and service principal in AAD](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
+The security principal defines the access policy and permissions for users and applications in the Azure AD tenant. This access policy enables core features such as authentication of users and applications during sign-in, and authorization during resource access. For more information, reference [Application and service principal in Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
 
 When you [register an Azure AD application](register-app.md) in the Azure portal, two objects are created in your Azure AD tenant:
 
@@ -64,7 +64,7 @@ There are differences between using a service principal and a standard master us
 
 Different from the traditional use of a master user account, using the service principal (app-only token) requires a few different pieces to set up. Now to get started with the service principal (app-only token) you need to set up the right environment.
 
-1. You need to [register a server-side web application](register-app.md) in Azure Active Directory (AAD) to use with Power BI. You register an application to capture an Application ID, an Application secret and and the service princpal object ID to access your Power BI content.
+1. You need to [register a server-side web application](register-app.md) in Azure Active Directory (AAD) to use with Power BI. You register an application to capture an Application ID, an Application secret, and the service principal object ID to access your Power BI content.
 
    > [!Important]
    > Once you enable service principals to be used with Power BI, your AD permissions don't take effect anymore. Permissions are managed through the Power BI admin portal.
@@ -83,7 +83,7 @@ Different from the traditional use of a master user account, using the service p
 
 4. Set up your Power BI environment with a collection of steps from this [article](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
-5. Add the service principal as an admin to the new workspace you created. You can manage this task through the [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser), or through the Power BI service.
+5. Add the service principal as an admin to the new workspace you created. You can manage this task through the [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) or with the Power BI service.
 
 6. Now choose to embed your content within a sample application, or within your application.
 
@@ -100,7 +100,7 @@ You can take steps to migrate to use a service principal application if you're c
 
 Follow the steps from the [Get started section](#get-started-with-service-principal) with some minor changes.
 
-In the article mentioned in step 4, there is a change you need to make. Instead of [Create and publish your reports](embed-sample-for-customers.md#create-and-publish-your-reports), you need to copy or move your Power BI artifacts and resources into [new workspaces](../service-create-the-new-workspaces.md). If you're already using new workspaces in Power BI then you need to add the service principal as an admin to those workspaces.
+In the article mentioned in step 4, there's a change you need to make. Instead of [Create and publish your reports](embed-sample-for-customers.md#create-and-publish-your-reports), you need to copy or move your Power BI artifacts and resources into [new workspaces](../service-create-the-new-workspaces.md). If you're already using new workspaces in Power BI, then you need to add the service principal as an admin to those workspaces.
 
 Currently, there's no UI feature to move over Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task. When using the APIs with service principal, you need the [service principal object ID](#service-principal-object-id-vs-application-id-with-power-bi-rest-apis).
 
@@ -108,7 +108,7 @@ Currently, there's no UI feature to move over Power BI artifacts and resources f
 
 Service principal has two different IDs that apply to different functions - service principal object ID and application ID.
 
-The service principal object ID is used when applying an operation or change to the service principal with the [Power BI APIs](https://docs.microsoft.com/rest/api/power-bi/). For example, applying a service principal as an admin to a workspace. 
+When using the [Power BI APIs](https://docs.microsoft.com/rest/api/power-bi/), make sure to use the **service principal object ID** to reference the service principal for use with operations and changes — for example, applying a service principal as an admin to a workspace.
 
 The application ID is used to create the access token when passing the application ID for authentication.
 
@@ -116,7 +116,7 @@ Below are steps to get the service principal object ID from the Azure portal.
 
 1. Create a new App registration in the Azure portal.  
 
-2. Then under **Managed application in local directory**, select the name of the application you just created.
+2. Then under **Managed application in local directory**, select the name of the application you created.
 
    ![ Managed application in local directory](media/embed-service-principal/managed-application-in-local-directory.png)
 
@@ -125,7 +125,7 @@ Below are steps to get the service principal object ID from the Azure portal.
 
 3. Select **Properties** to see the Object ID.
 
-    ![Service principal object Id properties](media/embed-service-principal/service-principal-object-id-properties.png)
+    ![Service principal object ID properties](media/embed-service-principal/service-principal-object-id-properties.png)
 
 Below is a sample script to retrieve the service principal object ID via PowerShell.
 
