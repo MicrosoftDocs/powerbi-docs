@@ -47,3 +47,11 @@ Once the matching Oracle client driver is installed, you can connect to an Oracl
 4. Once your Oracle database information is entered into the Oracle Database dialog (including any optional information such as a SID or a native database query), select **OK** to connect.
 5. If the Oracle database requires database user credentials, input those credentials in the dialog when prompted.
 
+
+## Troubleshooting
+
+If you downloaded Power BI Desktop from the Microsoft Store, you might be unable to connect to Oracle databases because of an Oracle driver issue. If you encounter this issue, the error message returned is "Object reference not set". To address the issue, do one of the following:
+
+* Download Power BI Desktop from https://powerbi.microsoft.com/desktop instead.
+
+* If you want to use the version from the Microsoft Store: on your local computer, copy oraons.dll from _12.X.X\client_X_ into _12.X.X\client_X\bin_. The X represents version and directory numbers.
