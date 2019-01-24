@@ -31,8 +31,7 @@ To get started, you are required to have:
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription.
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 
-If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/
-pricing/) before you begin.
+If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
 If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
@@ -63,7 +62,7 @@ However, if you proceed using a service principal application, you need to proce
     ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![New App registration](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
 
-4. Follow the prompts and create a new application. For use with a master user account,** you need to use **Native** for the application type. For use with a service principal application,** you need to use **Web app/API** for the application type. You also need to provide a **Redirect URL**, which **Azure AD** uses to return token responses. Enter a value specific to your application (for example: `http://localhost:13526/Redirect`).
+4. Follow the prompts and create a new application. For use with a master user account, you need to use **Native** for the application type. For use with a service principal application,** you need to use **Web app/API** for the application type. You also need to provide a **Redirect URL**, which **Azure AD** uses to return token responses. Enter a value specific to your application (for example: `http://localhost:13526/Redirect`).
 
     | Master user account </br> (Power BI Pro license) | Service principal application </br> (app-only token) |
     |--------------------- | -------------------------------|
