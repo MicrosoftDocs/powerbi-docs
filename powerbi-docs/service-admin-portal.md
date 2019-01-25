@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 01/24/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -302,6 +302,18 @@ Users in the organization can create and use dataflows. For an overview of dataf
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
+
+## Template apps settings (preview)
+
+Two settings control template apps. 
+
+![Power BI admin portal template apps settings](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
+
+The first setting, **Create template apps**, controls who in your organization can create template apps. Template app creators can then distribute them to clients outside your organization by way of AppSource or other distribution method.
+
+![Power BI admin portal, Create template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
+
+With the second setting, **Install template apps**, you control who in your organization can download and install template apps from AppSource or another source
 
 ## Capacity settings
 

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/10/2019
+ms.date: 01/24/2019
 ms.author: maggies
 ---
 
@@ -21,11 +21,12 @@ Power BI tenant admins govern and control who in their organization is authorize
 
 ## Prerequisites 
 
-The requirements for building a template app are few:  
+Here are the requirements for building a template app:  
 
 - A [Power BI pro license](service-self-service-signup-for-power-bi.md)
 - An [installation of Power BI Desktop](desktop-get-the-desktop.md) (optional)
 - Familiarity with the [basic concepts of Power BI ](service-basic-concepts.md)
+- Permissions to create a template app. See the Power BI admin portal, Template app settings for details. 
 
 ## Enable app developer mode
 
