@@ -311,7 +311,7 @@ Using [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), allow
 
 Until now, to be able to specify the effective identity for SSAS on-premises live connection, the master user generating the embed token had to be gateway admin. Now, instead of requiring the user to be gateway admin, the gateway admin can give the user dedicated permission to that data source, that allows the user to override the effective identity when generating the embed token. This new ability enables embedding with service principal for a live SSAS connection.
 
-To enable this scenario, the gateway admin uses the [Add Datasource User REST API](https://docs.microsoft.com/en-us/rest/api/power-bi/gateways/adddatasourceuser) to give the service principal the *ReadOverrideEffectiveIdentity* permission for Power BI Embedded.
+To enable this scenario, the gateway admin uses the [Add Datasource User REST API](https://docs.microsoft.com/rest/api/power-bi/gateways/adddatasourceuser) to give the service principal the *ReadOverrideEffectiveIdentity* permission for Power BI Embedded.
 
 You can't set this permission using the admin portal, this permission is only set with the API. In the admin portal, you see an indication for users and SPNs with such permissions.
 
