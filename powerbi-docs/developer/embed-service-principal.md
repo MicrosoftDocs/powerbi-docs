@@ -69,7 +69,7 @@ Different from the traditional use of a master user account, using the service p
    > [!Important]
    > Once you enable service principals to be used with Power BI, your AD permissions don't take effect anymore. Permissions are managed through the Power BI admin portal.
 
-2. Create a [security group in Azure Active Directory (AAD)](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal), and add the application you created to that security group.
+2. Create a [security group in Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal), and add the application you created to that security group.
 
     > [!Note]
     > You can also create a service principal and a security group with a PowerShell script.
