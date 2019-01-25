@@ -26,8 +26,8 @@ This support policy allows us to deliver innovation to customers at a rapid rate
 
 | **Version** | **Availability date** | **Support end date** |
 | --- | --- | --- |
-| June 2017 |June 12, 2017 |Not supported |
-| October 2017 |October 31, 2017 |October 31, 2018 |
+| June 2017 |June 12, 2017 |No longer supported |
+| October 2017 |October 31, 2017 | No longer supported |
 | March 2018 | March 19, 2018 | March 19, 2019 |
 | August 2018 | August 15, 2018 | August 15, 2019 |
 | January 2019 | January 23, 2019 | January 23, 2020 |
