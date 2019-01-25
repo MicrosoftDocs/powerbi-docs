@@ -8,7 +8,7 @@ ms.reviewer: nishalit
 ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 02/01/2019 
+ms.date: 02/01/2019
 ---
 
 # Service principal with Power BI (Preview)
@@ -104,13 +104,13 @@ In the article mentioned in step 4, there's a change you need to make. Instead o
 
 Currently, there's no UI feature to move over Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task. When using the APIs with service principal, you need the [service principal object ID](#service-principal-object-id-vs-application-id-with-power-bi-rest-apis).
 
-### Getting the service principal object ID
+### How to get the service principal object ID
 
 Service principal has two different IDs that apply to different functions - service principal object ID and application ID.
 
 When using the [Power BI APIs](https://docs.microsoft.com/rest/api/power-bi/), make sure to use the **service principal object ID** to reference the service principal for use with operations and changes — for example, applying a service principal as an admin to a workspace.
 
-The application ID is used to create the access token when passing the application ID for authentication.
+The [application ID](register-app.md#how-to-get-the-application-id) is used to create the access token when passing the application ID for authentication.
 
 Below are steps to get the service principal object ID from the Azure portal.
 

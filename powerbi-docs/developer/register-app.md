@@ -107,6 +107,10 @@ Here's how to get an application ID:
 
     ![Client ID listed as Application ID within app registration](media/register-app/powerbi-embedded-app-registration-client-id.png)
 
+## How to get the service principal object ID
+
+When using the [Power BI APIs](https://docs.microsoft.com/rest/api/power-bi/), make sure to define operations using the [service principal object ID](embed-service-principal.md#how-to-get-the-service-principal-object-id) to reference the service principal - for example, applying a service principal as an admin to a workspace.
+
 ## Apply permissions to your application within Azure AD
 
 Enable additional permissions to your application in addition to what the app registration page provides. You can accomplish this task through the Azure AD portal, or programmatically.
