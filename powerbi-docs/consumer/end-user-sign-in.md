@@ -69,7 +69,7 @@ If you share a computer, we recommend signing out each time you close Power BI. 
 
 ![profile selected](media/end-user-sign-in/power-bi-sign-out.png) 
 
-## Trouleshooting and considerations
+## Troubleshooting and considerations
 - If you've signed up for Power BI as an individual, sign in with the email address you used to sign up.
 
 - If you use Power BI with more than one account, you will be prompted to select an account from a list, and enter a password, when signing in. 
