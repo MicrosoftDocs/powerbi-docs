@@ -44,15 +44,13 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
     It starts automatically and you're ready to go.
 
 ## Verify you're using the correct version
-
-It's easy to verify that you're using the correct Power BI Desktop: Look at the launch screen or title bar within Power BI Desktop. The title bar indicates the month and year of the release, and the Power BI logo colors are reversed, yellow on black instead of black on yellow.
+It's easy to verify that you're using the correct Power BI Desktop: Look at the launch screen or title bar within Power BI Desktop. The title bar indicates the month and year of the release. Also, the Power BI logo colors are reversed, yellow on black instead of black on yellow.
 
 ![Title bar for Power BI Desktop optimized for Power BI Report Server](media/install-powerbi-desktop/power-bi-report-server-desktop-jan-2019.png)
 
 The Power BI Desktop version for the Power BI service doesn't have the month and year in the title bar.
 
 ## File extension association
-
 If you install both Power BI Desktop and Power BI Desktop optimized for Power BI Report Server on the same machine, the most recent installation of Power BI Desktop has the file association with .pbix files. Thus, when you double-click a .pbix file, it launches the Power BI Desktop you installed most recently.
 
 If you have Power BI Desktop and then install Power BI Desktop optimized for Power BI Report Server, all .pbix files open in Power BI Desktop optimized for Power BI Report Server by default. If you would rather have Power BI Desktop be the default to launch when opening a .pbix file, reinstall [Power BI Desktop from the Microsoft Store](http://aka.ms/pbidesktopstore).
