@@ -12,7 +12,7 @@ ms.custom: seodec18
 ms.date: 12/10/2018
 ---
 
-# Tutorial: Embed a Power BI dashboard, tile, or report into your application for sovereign clouds
+# Tutorial: Embed a Power BI content into your application for sovereign clouds
 
 Learn how to embed analytical content within your business process applications for the sovereign cloud. You can use the Power BI .NET SDK with the Power BI JavaScript API to embed a report, dashboard, or tile, into your web applications.
 
@@ -32,7 +32,7 @@ The different sovereign clouds are:
 
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, then depending on the type of sovereign cloud, you can sign up for a [U. S. government Power BI account](../service-govus-signup.md), a [Power BI for Germany cloud account](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) or a [Power BI for China cloud account](http://www.21vbluecloud.com/powerbi/).
+To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, then depending on the type of government or country you can choose the right sovereign cloud for you. You can sign up for a [U. S. government Power BI account](../service-govus-signup.md), a [Power BI for Germany cloud account](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) or a [Power BI for China cloud account](http://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](integrate-dashboard.md).
@@ -224,7 +224,7 @@ Tile tile = tiles.Value.FirstOrDefault();
 
 ### Create the embed token
 
-Using the JavaScript API, you can generate an embed token. The embed token is specific to the item you're embedding. Any time you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+Using the JavaScript API, you can generate an embed token. The embed token is specific to the item you're embedding. Anytime you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 > [!IMPORTANT]
 > Because embed tokens are intended for developer testing only, the number of embed tokens a Power BI master account can generate is limited. A [capacity must be purchased](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) for production embedding scenarios. There is no limit to embed token generation when a capacity is purchased.
@@ -430,7 +430,7 @@ An application sample of this is available within the [Embedding for your organi
 
 * [How to migrate Power BI Workspace Collection Workspace Collection content to Power BI](migrate-from-powerbi-embedded.md)
 
-Limitations and Considerations
+Considerations and limitations
 
 * GCC accounts only support P and EM capacities now
 
