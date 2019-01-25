@@ -2,16 +2,18 @@
 title: Code snippets for migrating content from Power BI Embedded
 description: Here are some code snippets of basic operations needed for content migration
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.author: maghan
+
 ---
 
 # Code snippets for migrating content from Power BI Workspace Collection
+
 Here are some code snippets of basic operations needed for content migration. For related flows for certain report types, see [How to migrate Power BI workspace collection content to Power BI Embedded](migrate-from-powerbi-embedded.md#content-migration).
 
 A **migration tool** is available for you to use in order to assist with copying content from Power BI Embedded (PaaS) to the Power BI service (SaaS). Especially if you have a lot of content. For more information, see [Power BI Embedded migration tool](migrate-tool.md).
@@ -20,7 +22,7 @@ The code below are examples using C# and the [Power BI .NET SDK](https://www.nug
 
 Make sure you are using the following namespaces to execute the code snippets below.
 
-```
+```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.PowerBI.Api.V1;
 using Microsoft.PowerBI.Api.V1.Models;
@@ -41,8 +43,8 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-
 ## Export report from PaaS workspace
+
 ```
     // Create a token credentials with "AppKey" type
     var credentials = new TokenCredentials(<myAppKey==>, "AppKey");
@@ -67,6 +69,7 @@ using System.Threading.Tasks;
 ```
 
 ## Import report to SaaS workspace
+
 ```
     AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/common/oauth2/authorize");
     var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api", <myClientId>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
@@ -80,6 +83,7 @@ using System.Threading.Tasks;
 ```
 
 ## Extract DirectQuery connection string from PaaS report
+
 This is for updating the PBIX after migrating to SaaS.
 
 ```
@@ -100,6 +104,7 @@ This is for updating the PBIX after migrating to SaaS.
 ```
 
 ## Update DirectQuery connection string is SaaS workspace
+
 ```
     public class ConnectionString
     {
@@ -118,6 +123,7 @@ This is for updating the PBIX after migrating to SaaS.
 ```
 
 ## Set DirectQuery credentials in SaaS workspace
+
 In this snippet, we are using unencrypted credentials for simplicity, sending encrypted credentials is supported as well.
 
 ```
@@ -154,6 +160,7 @@ In this snippet, we are using unencrypted credentials for simplicity, sending en
 ```
 
 ## Push dataset & report
+
 You will need to rebuild the report for the created dataset.
 
 In this snippet, we assume that the pushable dataset is already in an app workspace within the SaaS environment. For information about the push API, see [Push data into a Power BI dataset](walkthrough-push-data.md).
@@ -218,6 +225,7 @@ In this snippet, we assume that the pushable dataset is already in an app worksp
 ```
 
 ## Next steps
+
 [Power BI Embedded migration tool](migrate-tool.md)  
 [Embedding with Power BI](embedding.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md)  
@@ -229,4 +237,3 @@ In this snippet, we assume that the pushable dataset is already in an app worksp
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-
