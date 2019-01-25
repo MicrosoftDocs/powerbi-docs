@@ -8,7 +8,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/01/2019
+ms.date: 02/01/2019 
 ---
 
 # Register an Azure AD application to use with Power BI
@@ -106,6 +106,10 @@ Here's how to get an application ID:
 5. You see **Application ID** listed as a GUID. This ID is the application ID for the application.
 
     ![Client ID listed as Application ID within app registration](media/register-app/powerbi-embedded-app-registration-client-id.png)
+
+## How to get the service principal object ID
+
+When using the [Power BI APIs](https://docs.microsoft.com/rest/api/power-bi/), make sure to define operations using the [service principal object ID](embed-service-principal.md#how-to-get-the-service-principal-object-id) to reference the service principal - for example, applying a service principal as an admin to a workspace.
 
 ## Apply permissions to your application within Azure AD
 
