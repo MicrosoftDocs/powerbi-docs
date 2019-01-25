@@ -9,6 +9,11 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/24/2019
+<<<<<<< HEAD
+=======
+ms.author: maggies
+
+>>>>>>> e4f2c55cfb589cf1eecbd266a616e2e6be1e5675
 ---
 
 # Install Power BI Desktop optimized for Power BI Report Server
