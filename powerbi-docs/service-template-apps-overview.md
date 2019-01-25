@@ -61,7 +61,7 @@ Here are the high-level steps.
 
 ## Requirements
 
-To create the template app, you need permissions to create one. See the Power BI admin portal, Template app settings for details. 
+To create the template app, you need permissions to create one. See the Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings-preview) for details. 
 
 To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Cloud Marketplace Publisher](https://docs.microsoft.com/azure/marketplace/become-publisher).
 

@@ -26,7 +26,7 @@ Here are the requirements for building a template app:
 - A [Power BI pro license](service-self-service-signup-for-power-bi.md)
 - An [installation of Power BI Desktop](desktop-get-the-desktop.md) (optional)
 - Familiarity with the [basic concepts of Power BI ](service-basic-concepts.md)
-- Permissions to create a template app. See the Power BI admin portal, Template app settings for details. 
+- Permissions to create a template app. See the Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings-preview) for details.
 
 ## Enable app developer mode
 
