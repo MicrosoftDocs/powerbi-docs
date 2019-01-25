@@ -17,7 +17,7 @@ Learn how to install Power BI Report Server.
 
  **Download** ![download](media/install-report-server/download.png "download")
 
-To download Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/), and select **Download free trial**.
+To download Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/), and select **Download free trial**. 
 
 ## Before you begin
 
@@ -32,19 +32,7 @@ Before you install Power BI Report Server, we recommend you review the [Hardware
 
 If you have purchased Power BI Premium, within the **Premium settings** tab of the Power BI admin portal, you have access to your Power BI Report Server product key. This is only available for Global Admins or users assigned the Power BI service administrator role.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 ![Premium settings](../media/service-admin-premium-manage/pbirs-product-key.png "Power BI Report Server key within Premium settings")
-=======
-![Key with Premium settings](../media/service-admin-premium-manage/pbirs-product-key.png "Power BI Report Server key within Premium settings")
->>>>>>> Fix warning for RS install lfile
-=======
-![Premium settings](../media/service-admin-premium-manage/pbirs-product-key.png "Power BI Report Server key within Premium settings")
->>>>>>> corrected install report server file
-=======
-![Premium settings](../media/service-admin-premium-manage/pbirs-product-key.png "Power BI Report Server key within Premium settings")
->>>>>>> 836747f98d78ea3a72a7e3cfbd0233a3a5e0f0c5
 
 Selecting **Power BI Report Server key** displays a dialog contain your product key. You can copy it and use it with the installation.
 
@@ -71,19 +59,7 @@ You don't need a SQL Server Database Engine server available at the time of inst
 
     You can choose either Evaluation or Developer edition from the drop down.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     ![Edition 2](media/install-report-server/pbireportserver-choose-edition2.png)
-=======
-    ![Choose edition 2](media/install-report-server/pbireportserver-choose-edition2.png)
->>>>>>> Fix warning for RS install lfile
-=======
-    ![Edition 2](media/install-report-server/pbireportserver-choose-edition2.png)
->>>>>>> corrected install report server file
-=======
-    ![Edition 2](media/install-report-server/pbireportserver-choose-edition2.png)
->>>>>>> 836747f98d78ea3a72a7e3cfbd0233a3a5e0f0c5
 
     Otherwise, you can enter a product key for the server that you acquired from either the Power BI service or the Volume License Service Center. For more information about how to get your product key, see the [Before you begin](#before-you-begin) section.
 4. Read and agree to the license terms and conditions and then select **Next**.
