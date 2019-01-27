@@ -9,16 +9,16 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/19/2018
+ms.date: 01/25/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
 ---
-# Tour of the report editor in Power BI
+# Tour the report editor in Power BI
 
 The *report editor* in the Power BI service and the report editor in Power BI Desktop are similar. The video shows the report editor in Power BI Desktop and this article shows the report editor in Power BI service. 
 
-As a report creator, you create and edit dashboards and reports. Then you distribute them to your report consumers. They can interact with your dashboards and reports in Reading view in the Power BI service, but not edit them. Read more about the differences between report [Reading view and Editing view in the Power BI service](consumer/end-user-reading-view.md) 
+As a report creator, you create and edit dashboards and reports. Then you distribute them to your report consumers. They can interact with your dashboards and reports in Reading view in the Power BI service, but not edit them. Read more [what report consumers can do in the Power BI service](consumer/end-user-reading-view.md) 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -81,7 +81,7 @@ With the Analytics pane in Power BI service, you can add dynamic reference lines
 ## The Filters pane
 Use the Filters pane to view, set, and modify persistent filters to your reports at the page, report, drillthrough, and visual-level. Yes, you can do ad-hoc filtering on report pages and visuals by selecting elements of the visuals or by using tools like slicers, but by using the Filters pane the state of the filters is saved with the report. 
 
-The Filters pane has one other powerful feature - the ability to filter using a field ***that is not alrealdy being used in one of the visuals in your report***. Let me explain. When you create a report page, Power BI automatically adds all the fields you use in your visualizations to the Visual level filters area of the Filters pane.  But, if you want to set a visual, page, drillthrough, or report filter using a field that is not currently used in a visualization, just drag it to one of the Filters buckets.   
+The Filters pane has one other powerful feature - the ability to filter using a field ***that is not already being used in one of the visuals in your report***. Let me explain. When you create a report page, Power BI automatically adds all the fields you use in your visualizations to the Visual level filters area of the Filters pane.  But, if you want to set a visual, page, drillthrough, or report filter using a field that is not currently used in a visualization, just drag it to one of the Filters buckets.   
 
 ![Filters pane](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
