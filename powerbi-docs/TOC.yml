@@ -411,10 +411,10 @@
         href: service-get-data.md
       - name: "Tour the report editor"
         href: service-the-report-editor-take-a-tour.md
-      - name: "Organizing your work"
-        href: service-new-workspaces.md
     - name: Workflow in Power BI
       items: 
+      - name: "Organizing your work"
+        href: service-new-workspaces.md
       - name: "Ways to share your work"
         href: service-how-to-collaborate-distribute-dashboards-reports.md
       - name: "Keeping data fresh"
