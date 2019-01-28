@@ -17,12 +17,12 @@ LocalizationGroup: Get started
 # What's new in the Power BI service
 Check this page for known issues and recently released features in the **Power BI Service**. For related "What's New" information, see:
 
+- [What's new in business intelligence October ‘18 ](https://docs.microsoft.com/business-applications-release-notes/October18/intelligence-platform/planned-features) release notes from the Microsoft Business Applications Group: The latest updates to our business applications.
 - [What's new in Power BI Desktop](desktop-latest-update.md)  
 - [What's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Power BI team blog](https://powerbi.microsoft.com/blog/)
-- [Business Applications Spring ‘18 release notes](http://aka.ms/businessappsreleasenotes) from Dynamics 365: The latest updates to our business applications, as well as new capabilities for building your applications and extensions on top of our platform. 
 
-You can also check out the YouTube channels for information about "What's new" and features.
+Also, check out the YouTube channels for information about "What's new" and features.
 
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
