@@ -19,6 +19,15 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 ## January 2019
 - **Power BI Report Server**            
+    - *Version 1.4.6965.38847 (Build 15.0.1102.230), Released: January 28, 2019*
+        - Bug Fixes
+            - Power BI Reports
+                - Fix for issue with basic credentials and direct query
+                - Fix for bidirectional relationships with row-level security filters applied
+                - Fix for stale data after a model refresh in a scale-out environment
+                - Fix for double scrollbar for table/ matrix on Firefox 63+
+                - Fix for +/- icon size in Internet Explorer
+
     - *Version 1.4.6960.38798 (Build 15.0.1102.222), Released: January 22, 2019*
         - Features
             - Power BI Reports 
@@ -30,6 +39,10 @@ For detailed information about new features, see [What's new in Power BI Report 
             - Administrators
                 - Ability to restrict extensions of resources that can be uploaded to the report server
                 - Ability to restrict supported hyperlink schemes
+            - Programmability
+                - New Web API: /PowerBIReports({Id})/DataModelRoles (GET)
+                - New Web API: /PowerBIReports({Id})/DataModelRoleAssignments (GET & PUT)
+                - See [Power BI Report Server REST API](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0) for more details
         - Bug Fixes
             - HTML Injection Vulnerability
             - Export to PDF is not showing Euro symbol
@@ -37,6 +50,10 @@ For detailed information about new features, see [What's new in Power BI Report 
             - Visuals display issues in Power BI Mobile App after being idle
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.65.5313.1562 (January 2019), Released: January 28 2019*
+        - Shortcut and pinned icons remain after uninstalling Power BI Report Server
+        - Fix for pinning Power BI Report Server to start menu giving black text on a black icon
+
     - *Version: 2.65.5313.1421 (January 2019), Released: January 22, 2019*
         - Contains changes required for connection with Power BI Report Server (January 2019)  
 
