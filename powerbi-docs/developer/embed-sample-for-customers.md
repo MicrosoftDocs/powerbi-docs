@@ -9,10 +9,9 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: seodec18
-ms.date: 02/01/2019
+ms.date: 02/04/2019
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
-
 # Tutorial: Embed Power BI content into an application for your customers
 
 With **Power BI Embedded in Azure**, you can embed reports, dashboards, or tiles into an application using app owns data. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. As an **ISV developer**, you can create Power BI content that displays reports, dashboards, or tiles in an application that is fully integrated and interactive, without requiring users to have a Power BI license. This tutorial demonstrates how to integrate a report into an application using the Power BI .NET SDK with the Power BI JavaScript API using **Power BI Embedded in Azure** for your customers.
@@ -26,7 +25,7 @@ In this tutorial, you learn how to:
 
 To get started, you're required to have:
 
-* A [Power BI Pro account](../service-self-service-signup-for-power-bi.md) (a master user account that is a username and password to sign in to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
+* A [Power BI Pro account](../service-self-service-signup-for-power-bi.md) (a master account that is a username and password to sign in to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription.
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 
@@ -44,81 +43,23 @@ However, if you choose to set up the environment manually, you can continue belo
 
 ### Register an application in Azure Active Directory (Azure AD)
 
-[Register your application](register-app.md) with Azure Active Directory to allow your application access to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). Registering your application allows you to establish an identity for your application and specify permissions to Power BI REST resources. Depending if you want to use a master user account or a [service principal application](embed-service-principal.md), determines how to get started registering an application.
+[Register your application](register-app.md) with Azure Active Directory to allow your application access to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). Registering your application allows you to establish an identity for your application and specify permissions to Power BI REST resources. Depending if you want to use a master account or [service principal](embed-service-principal.md), determines how to get started registering an application.
 
 Depending on which method you take, affects which type of application you register in Azure.
 
-If you proceed using a master user account, then proceed with registering a **Native** app. You use a Native app because you're working with a non-interactive login.
+If you proceed using a master account, then proceed with registering a **Native** app. You use a Native app because you're working with a non-interactive login.
 
-However, if you proceed using a service principal application, you need to proceed with registering a **server-side web application** app. You register a server-side web application to create an application secret.
-
-1. Accept the [Microsoft Power BI API Terms](https://powerbi.microsoft.com/api-terms).
-
-2. Sign into the [Azure portal](https://portal.azure.com).
-
-3. In the left-hand navigation pane, select **All Services**, select **App Registrations**, and then select **New application registration**.
-
-    ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
-    ![New App registration](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
-
-4. Follow the prompts and create a new application. For use with a master user account, you need to use **Native** for the application type. For use with a service principal application, you need to use **Web app/API** for the application type. You also need to provide a **Redirect URL**, which **Azure AD** uses to return token responses. Enter a value specific to your application (for example: `http://localhost:13526/Redirect`).
-
-    | Master user account </br> (Power BI Pro license) | Service principal application </br> (app-only token) |
-    |--------------------- | -------------------------------|
-    | ![Create App with master account](media/embed-sample-for-customers/embed-sample-for-customers-005.png) |  ![Create App with service principal](media/embed-sample-for-customers/embed-sample-for-customers-005-sp.png)  |
-
-### Apply permissions to your application within Azure Active Directory
-
-Enable additional permissions for your application, including what was provided on the app registration page. Sign in with the *master* account that you're using for embedding.
-
-> [!Note]
-> Once you enable [service principal](embed-service-principal.md) to be used with Power BI, your AD permissions don't take effect anymore. Permissions are managed through the Power BI admin portal.
-
-### Use the Azure Active Directory portal
-
-1. Browse to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you're using for embedding.
-
-    ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
-
-2. Select **Settings**, then under **API Access** select **Required permissions**.
-
-    ![Required Permissions](media/embed-sample-for-customers/embed-sample-for-customers-008.png)
-
-3. Select **Windows Azure Active Directory** and then make sure **Access the directory as the signed-in user** is selected. Select **Save**.
-
-    ![Windows Azure AD Permissions](media/embed-sample-for-customers/embed-sample-for-customers-011.png)
-
-4. Select **Add**.
-
-    ![Add Permissions](media/embed-sample-for-customers/embed-sample-for-customers-012.png)
-
-5. Select **Select an API**.
-
-    ![Add API Access](media/embed-sample-for-customers/embed-sample-for-customers-013.png)
-
-6. Select **Power BI Service**, then select **Select**.
-
-    ![Select PBI Services](media/embed-sample-for-customers/embed-sample-for-customers-014.png)
-
-7. Select all permissions under **Delegated Permissions**. Select **Save** when done.
-
-    ![Select delegated permissions](media/embed-sample-for-customers/embed-sample-for-customers-015.png)
-
-8. Within **Required permissions**, select **Grant Permissions**.
-
-    The **Grant Permissions** action needs the *master account* to avoid being prompted for consent by Azure AD. If the account that performs this action is a Global Admin, you need to grant permissions for all users in your organization for this application. If the account that performs this action is the *master account* and isn't a Global Admin, you need to grant permissions only to the *master account* for this application.
-
-    ![Grant permissions within required permissions dialog](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
+However, if you proceed using the service principal, you need to proceed with registering a **server-side web application** app. You register a server-side web application to create an application secret.
 
 ## Set up your Power BI environment
 
 ### Create an app workspace
 
-If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within an app workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../service-create-workspaces.md) or the [new workspaces](../service-create-the-new-workspaces.md). If you're using a *master* account, then it doesn't matter which type of workspaces you use. However, if you use *[service principal](embed-service-principal.md)* to sign into your application, then you're required to you use the new workspaces. In either scenario, both the *master* account and the service principal application you use must be an admin of the app workspaces involved with your application.
+If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within an app workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../service-create-workspaces.md) or the [new workspaces](../service-create-the-new-workspaces.md). If you're using a *master* account, then it doesn't matter which type of workspaces you use. However, if you use *[service principal](embed-service-principal.md)* to sign into your application, then you're required to you use the new workspaces. In either scenario, both the *master* account or *service principal* must be an admin of the app workspaces involved with your application.
 
 ### Create and publish your reports
 
-You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. There are two ways to accomplish this task: As an end user, you can publish reports to a traditional app workspace with a master user account (Power BI Pro license). If you're using a service principal application, you can publish reports to the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
+You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. There are two ways to accomplish this task: As an end user, you can publish reports to a traditional app workspace with a master account (Power BI Pro license). If you're using service principal, you can publish reports to the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
 
 The below steps walk through how to publish your PBIX report to your Power BI workspace.
 
@@ -130,11 +71,11 @@ The below steps walk through how to publish your PBIX report to your Power BI wo
 
    ![PBI desktop report](media/embed-sample-for-customers/embed-sample-for-customers-027.png)
 
-3. Publish to **app workspaces**. This process differs depending on whether you're using a master user account (Power Pro license), or a service principal application. If you're using a master user account, then you can publish your report through Power BI Desktop.  Now if you're using a service principal application, you must use the Power BI REST APIs.
+3. Publish to **app workspaces**. This process differs depending on whether you're using a master account (Power Pro license), or service principal. If you're using a master account, then you can publish your report through Power BI Desktop.  Now if you're using service principal, you must use the Power BI REST APIs.
 
 ## Embed content using the sample application
 
-This sample is deliberately kept simple for demonstration purposes. It's up to the developer to protect the application secret or the master user account credentials.
+This sample is deliberately kept simple for demonstration purposes. It's up to the developer to protect the application secret or the master account credentials.
 
 Follow the steps below to start embedding your content using the sample application.
 
@@ -163,7 +104,7 @@ Follow the steps below to start embedding your content using the sample applicat
 
     <a name ="applicationid"> </a> **Application ID**
 
-    This attribute requires both the master user account and [service principal](embed-service-principal.md).
+    This attribute requires both the master account and [service principal](embed-service-principal.md).
 
     Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions.
 
@@ -215,7 +156,7 @@ Follow the steps below to start embedding your content using the sample applicat
 
     <a name ="workspaceid"> </a> **Workspace ID**
 
-    This attribute requires both the master user account and [service principal](embed-service-principal.md).
+    This attribute requires both the master account and [service principal](embed-service-principal.md).
 
     Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
@@ -233,7 +174,7 @@ Follow the steps below to start embedding your content using the sample applicat
 
     <a name ="reportid"> </a> **Report ID**
 
-    This attribute requires both the master user account and [service principal](embed-service-principal.md).
+    This attribute requires both the master account and [service principal](embed-service-principal.md).
 
     Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
@@ -251,12 +192,12 @@ Follow the steps below to start embedding your content using the sample applicat
 
     <a name ="pbiunpw"> </a> **Power BI username and password**
 
-    This attribute requires the master user account information only.
+    This attribute requires the master account information only.
 
     If you're using [service principal](embed-service-principal.md) to authenticate, then you don't need to fill in the username or password attributes.
 
-    * Fill in the **pbiUsername** with the Power BI master user account.
-    * Fill in the **pbiPassword** with the password for the Power BI master user account.
+    * Fill in the **pbiUsername** with the Power BI master account.
+    * Fill in the **pbiPassword** with the password for the Power BI master account.
 
 4. Now you can run the application!
 
@@ -276,7 +217,7 @@ Follow the steps below to start embedding your content using the sample applicat
 
 Even though the steps to embed your content can be done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the **.NET SDK**.
 
-Embedding for your customers within your application requires you to get an **access token** for your master user account or [service principal](embed-service-principal.md) from **Azure AD**. You're required to get an [Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application before you make calls to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/).
+Embedding for your customers within your application requires you to get an **access token** for your master account or [service principal](embed-service-principal.md) from **Azure AD**. You're required to get an [Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application before you make calls to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/).
 
 To create the Power BI Client with your **access token**, you want to create your Power BI client object, which allows you to interact with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). You create the Power BI client object by wrapping the **AccessToken** with a ***Microsoft.Rest.TokenCredentials*** object.
 
@@ -425,7 +366,7 @@ Once you create a dedicated capacity, you can assign your app workspace to that 
 
 To assign a dedicated capacity to a workspace using [service principal](embed-service-principal.md), use the [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). When you are using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md#how-to-get-the-service-principal-object-id).
 
-Follow the steps below to assign a dedicated capacity to a workspace using a **master user account**.
+Follow the steps below to assign a dedicated capacity to a workspace using a **master account**.
 
 1. Within the **Power BI service**, expand workspaces and select the ellipsis for the workspace you're using for embedding your content. Then select **Edit workspaces**.
 
