@@ -8,7 +8,7 @@ ms.reviewer: nishalit
 ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 02/04/2019
+ms.date: 02/05/2019
 ---
 
 # Service principal with Power BI (Preview)
@@ -25,7 +25,7 @@ To access resources that secure an Azure AD tenant, the entity that requires acc
 
 The security principal defines the access policy and permissions for users and applications in the Azure AD tenant. This access policy enables core features such as authentication of users and applications during sign-in, and authorization during resource access. For more information, reference [Application and service principal in Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
 
-When you [register an Azure AD application](register-app.md) in the Azure portal, two objects are created in your Azure AD tenant:
+When you register an Azure AD application in the Azure portal, two objects are created in your Azure AD tenant:
 
 * An [application object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#application-object)
 * A [service principal object](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object)
@@ -63,7 +63,7 @@ There are differences between using a service principal and a standard master ac
 
 Different from the traditional use of a master account, using the service principal (app-only token) requires a few different pieces to set up. Now to get started with the service principal (app-only token), you need to set up the right environment.
 
-1. [Register a server-side web application](register-app.md) in Azure Active Directory (AAD) to use with Power BI. You register an application to capture an Application ID, an Application secret, and the service principal object ID to access your Power BI content.
+1. [Register a server-side web application](register-app.md) in Azure Active Directory (AAD) to use with Power BI. You register an application to capture an Application ID, an Application secret, and the service principal object ID to access your Power BI content. You can also create a service principal with [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
    > [!Important]
    > Once you enable service principal to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal.
@@ -88,10 +88,10 @@ Different from the traditional use of a master account, using the service princi
     $key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
     ```
 
-2. Create a [security group in Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal), and add the application you created to that security group.
+2. Create a [security group in Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal), and add the application you created to that security group. You can also create an AAD security group with [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
     > [!Note]
-    > You can also create a service principal and a security group with a [PowerShell script](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+    > AAD security groups can only be created by an AAD global administrator.
 
     Below is a sample script to create a new security group and add an application to that security group.
 
