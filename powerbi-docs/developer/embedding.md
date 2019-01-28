@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
 ms.custom: seodec18
-ms.date: 02/04/2019
+ms.date: 02/05/2019
 ---
 
 # Embedded analytics with Power BI

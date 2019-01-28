@@ -9,7 +9,7 @@ ms.subservice: ''
 ms.devlang: csharp, javascript
 ms.topic: conceptual
 ms.reviewer: ''
-ms.date: 02/01/2019
+ms.date: 02/05/2019
 ---
 
 # Create Power BI Embedded capacity in the Azure portal
