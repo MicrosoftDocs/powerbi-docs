@@ -201,6 +201,9 @@ This guide attempts to be as comprehensive as possible. If you have already comp
 
 ### Setup gsskrb5 on client machines and the BW server
 
+> [!NOTE]
+> gsskrb5 is no longer actively supported by SAP. For more information, see [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Also note that gsskrb5 does not allow for SSO connections from the Data Gateway to BW Message Servers. Only connections to BW Application Servers are possible.
+
 gsskrb5 must be in use by both the client and server to complete an SSO connection through the gateway. The Common Crypto Library (sapcrypto) is not currently supported.
 
 1. Download gsskrb5/gx64krb5 from [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-user required). Ensure you have at least version 1.0.11.x of gsskrb5.dll and gx64krb5.dll.

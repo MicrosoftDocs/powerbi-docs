@@ -52,7 +52,7 @@ To learn more, see the **Share your work** section of the Table of contents, sta
 Now on to the Power BI building blocks. You can't have dashboards or reports without data (well, you can have empty dashboards and empty reports, but they're not useful until they have data), so let's start with **datasets**.
 
 ## Datasets
-A *dataset* is a collection of data t.hat you *import* or *connect* to. Power BI lets you connect to and import all sorts of datasets and bring all of it together in one place.  
+A *dataset* is a collection of data that you *import* or *connect* to. Power BI lets you connect to and import all sorts of datasets and bring all of it together in one place.  
 
 Datasets are associated with *workspaces* and a single dataset can be part of many workspaces. When you open a workspace, the associated datasets are listed under the **Datasets** tab. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we’re adding new ones all the time. [See the list of dataset types that can be used with Power BI](service-get-data.md).
 
@@ -219,7 +219,6 @@ This area of the screen contains additional options for interacting with the con
 
 ## Next steps
 - [What is Power BI?](power-bi-overview.md)  
-- [Navigation: Getting around in Power BI service](service-the-new-power-bi-experience.md)
 - [Power BI videos](videos.md)  
 - [Report editor - take a tour](service-the-report-editor-take-a-tour.md)
 
