@@ -228,7 +228,7 @@ Power BI Embedded bills on a predictable hourly rate based on the type of node(s
 
 ### Who needs a Power BI Pro license for Power BI Embedded and why?
 
-Any analyst that needs to add reports to a Power BI workspace is required to have a Power BI license. Any developer that requires the use of the REST APIs needs a Power BI Pro license. Any tenant admin that needs to manage the Power BI tenant and capacity is required to have a Power BI Pro license.
+Any developer that requires the use of the REST APIs needs a Power BI Pro license or [service principal](embed-service-principal.md). Any analyst that needs to add reports to a Power BI workspace can either have a Power BI Pro license or use service principal. Any tenant admin that needs to manage the Power BI tenant and capacity is required to have a Power BI Pro license.
 
 Because Power BI Embedded allows use of the Power BI portal for managing and validating embedded content, the Power BI Pro license is required to authenticate the App inside PowerBI.com to get access to the reports in the right repositories.
 

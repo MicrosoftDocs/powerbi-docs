@@ -15,7 +15,7 @@ ms.date: 02/01/2019
 
 With **service principal**, you can embed Power BI content into an application and use automation with Power BI using an **app-only** token. Service principal is beneficial when using **Power BI Embedded** or when **automating Power BI tasks and processes**.
 
-When working with Power BI Embedded, there are advantages when using a service principal application.  A primary advantage is you don't need a master user account (Power BI Pro license that is merely a username and password to sign in) to authenticate into your application. Service principal uses an application ID and an application secret to authenticate the application.
+When working with Power BI Embedded, there are advantages when using service principal.  A primary advantage is you don't need a master user account (Power BI Pro license that is merely a username and password to sign in) to authenticate into your application. Service principal uses an application ID and an application secret to authenticate the application.
 
 When working to automate Power BI tasks, you can also script how to process and manage service principals to scale.
 
@@ -67,14 +67,14 @@ Different from the traditional use of a master user account, using the service p
 1. You need to [register a server-side web application](register-app.md) in Azure Active Directory (AAD) to use with Power BI. You register an application to capture an Application ID, an Application secret, and the service principal object ID to access your Power BI content.
 
    > [!Important]
-   > Once you enable service principals to be used with Power BI, your AD permissions don't take effect anymore. Permissions are managed through the Power BI admin portal.
+   > Once you enable service principals to be used with Power BI, the application's AD permissions don't take effect anymore. Permissions are managed through the Power BI admin portal.
 
 2. Create a [security group in Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal), and add the application you created to that security group.
 
     > [!Note]
-    > You can also create a service principal and a security group with a PowerShell script.
+    > You can also create a service principal and a security group with a [PowerShell script](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
-3. You must sign into Power BI as an admin and enable service principal in the **Developer settings** in the Power BI admin portal. Add the security group that you created in Azure AD to the **Specific security group** section in the **Developer settings**.
+3. As a Power BI admin, you need to enable service principal in the **Developer settings** in the Power BI admin portal. Add the security group that you created in Azure AD to the **Specific security group** section in the **Developer settings**.
 
    > [!Important]
    > Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
@@ -92,17 +92,15 @@ Different from the traditional use of a master user account, using the service p
 
 7. Now you're ready to [move to production](embed-sample-for-customers.md#move-to-production).
 
-You can also create a service principal application (app-only token) with a [PowerShell script](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
-
 ## Migrate to service principal
 
-You can take steps to migrate to use a service principal application if you're currently using a master user account with Power BI or with Power BI Embedded.
+You can take steps to migrate to use service principal if you're currently using a master user account with Power BI or with Power BI Embedded.
 
 Follow the steps from the [Get started section](#get-started-with-service-principal) with some minor changes.
 
 In the article mentioned in step 4, there's a change you need to make. Instead of [Create and publish your reports](embed-sample-for-customers.md#create-and-publish-your-reports), you need to copy or move your Power BI artifacts and resources into [new workspaces](../service-create-the-new-workspaces.md). If you're already using new workspaces in Power BI, then you need to add the service principal as an admin to those workspaces.
 
-Currently, there's no UI feature to move over Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task. When using the APIs with service principal, you need the [service principal object ID](#service-principal-object-id-vs-application-id-with-power-bi-rest-apis).
+Currently, there's no UI feature to move over Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task. When using the APIs with service principal, you need the [service principal object ID](#application-and-service-principal-relationship).
 
 ### How to get the service principal object ID
 
@@ -118,7 +116,7 @@ Below are steps to get the service principal object ID from the Azure portal.
 
 2. Then under **Managed application in local directory**, select the name of the application you created.
 
-   ![ Managed application in local directory](media/embed-service-principal/managed-application-in-local-directory.png)
+   ![Managed application in local directory](media/embed-service-principal/managed-application-in-local-directory.png)
 
     > [!Note]
     > Ignore the object Id shown in the image above with use for service principal.
