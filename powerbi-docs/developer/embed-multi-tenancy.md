@@ -24,7 +24,7 @@ This article describes the different approaches and analyzes them according to s
 
 ## Concepts and terminology
 
-**[AAD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)** - Azure Active Directory.
+**[AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)** - Azure Active Directory.
 
 **AAD application** - An application identity in AAD. An AAD application is required for authentication.
 
@@ -100,7 +100,7 @@ Power BI Embedded supports multi-geo deployment (preview feature). [Multi-Geo](e
 
 ### Cost
 
-[Power BI Embedded](https://azure.microsoft.com/en-us/services/power-bi-embedded/) has a resource-based purchase model, like **Power BI Premium**. You purchase one or more capacities with fixed computing power and memory. This capacity is the main cost item when working with **Power BI Embedded**. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. A [Power BI Pro license](../service-admin-licensing-organization.md) is required for each *master* user, or specific users that need to access the Power BI portal.
+[Power BI Embedded](https://azure.microsoft.com/services/power-bi-embedded/) has a resource-based purchase model, like **Power BI Premium**. You purchase one or more capacities with fixed computing power and memory. This capacity is the main cost item when working with **Power BI Embedded**. There's no limit on the number of users using the capacity. The only limit is the performance of the capacity. A [Power BI Pro license](../service-admin-licensing-organization.md) is required for each *master* user, or specific users that need to access the Power BI portal.
 
 We recommend testing and measuring the expected load on your capacity by simulating live environment and usage and run load testing on the capacity. You can measure the load and performance with the various Metrics available in the Azure capacity or [Premium capacity metrics app](../service-admin-premium-monitor-capacity.md).
 
@@ -127,17 +127,17 @@ There are two main approaches to manage tenant’s data.
 
 If the SaaS application storage is keeping a separate database per tenant, then the natural choice is to use single-tenant datasets in Power BI with the connection string for each dataset pointing to the matching database.
 
-If the SaaS application storage is using a multi-tenancy database for all tenants, it’s easy to separate tenants by workspace. You can configure the database connection for the Power BI dataset with a parameterized database query that only retrieves the relevant tenant’s data. You can update the connection using the [Power BI Desktop](../desktop-query-overview.md) or using the [API](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) with [parameters](https://docs.microsoft.com/en-us/rest/api/power-bi/datasets/updateparametersingroup) on the query.
+If the SaaS application storage is using a multi-tenancy database for all tenants, it’s easy to separate tenants by workspace. You can configure the database connection for the Power BI dataset with a parameterized database query that only retrieves the relevant tenant’s data. You can update the connection using the [Power BI Desktop](../desktop-query-overview.md) or using the [API](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) with [parameters](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) on the query.
 
 ### Data isolation
 
-Data in this tenancy model is separated at the workspace level. A simple mapping between a workspace and a tenant prevents users from one tenant seeing content from another tenant. Using a single *master* user demands you to have access to all the different workspaces. The configuration of which data to show an end user is defined during the [generation of the embed token](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken), a backend-only process which end users can’t see, or change.
+Data in this tenancy model is separated at the workspace level. A simple mapping between a workspace and a tenant prevents users from one tenant seeing content from another tenant. Using a single *master* user demands you to have access to all the different workspaces. The configuration of which data to show an end user is defined during the [generation of the embed token](https://docs.microsoft.com/rest/api/power-bi/embedtoken), a backend-only process which end users can’t see, or change.
 
 To add additional isolation, an application developer can define a *master* user or an application per workspace rather than a single *master* user or application with access to multiple workspaces. This way, you can ensure that any human error or credential leak does not cause multiple customers' data to be exposed.
 
 ### Scalability
 
-One advantage of this model is that separating the data into multiple datasets for each tenant overcomes the [size limits of a single dataset](https://docs.microsoft.com/en-us/power-bi/service-premium-large-datasets) (currently 10 GB in a capacity). When the capacity is overloaded, [it can evict unused datasets](../service-premium-understand-how-it-works.md) to free memory for active datasets. This task isn't possible with a single large dataset. Using multiple datasets, it is also possible to separate tenants into multiple Power BI capacities if needed. [Learn more about how capacity operates](../service-admin-premium-manage.md).
+One advantage of this model is that separating the data into multiple datasets for each tenant overcomes the [size limits of a single dataset](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (currently 10 GB in a capacity). When the capacity is overloaded, [it can evict unused datasets](../service-premium-understand-how-it-works.md) to free memory for active datasets. This task isn't possible with a single large dataset. Using multiple datasets, it is also possible to separate tenants into multiple Power BI capacities if needed. [Learn more about how capacity operates](../service-admin-premium-manage.md).
 
 Despite these advantages, one must consider the scale that the SaaS application can reach in the future. For example, one might reach limitations around the number of artifacts one can manage. See deployment [limitations](#summary-comparison-of-the-different-approaches) later in this article for more details. The capacity SKU used introduces a limit on the size of memory that datasets need to fit in, [how many refreshes can run at the same time](../service-premium-understand-how-it-works.md) and the maximum frequency of data refreshes. It's recommended to test when managing hundreds or thousands of datasets. It is also recommended to consider the average and peak volume of usage, as well as any specific tenants with large datasets, or different usage patterns, that are managed differently than other tenants.
 

@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 
 # Custom visuals in Power BI
 
-When creating or editing a Power BI report, there are many different types of visuals available for you to use. These visuals display in the **Visualizations** pane. When you download [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) or open [Power BI service](https://app.powerbi.com), this set of visuals comes "pre-packaged."
+When creating or editing a Power BI report, there are many different types of visuals available for you to use. These visuals display in the **Visualizations** pane. When you download [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or open [Power BI service](https://app.powerbi.com), this set of visuals comes "pre-packaged."
 
 ![visualizations](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
@@ -43,16 +43,16 @@ To get more information about organization custom visuals, [read more about orga
 
 ## Marketplace visuals
 
-Members of the community, as well as Microsoft, have contributed their custom visuals to the benefit of the public and published them to [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals) marketplace. These visuals can be downloaded and added to Power BI reports. All of these custom visuals have been tested and approved by Microsoft for functionality and quality.
+Members of the community, as well as Microsoft, have contributed their custom visuals to the benefit of the public and published them to [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) marketplace. These visuals can be downloaded and added to Power BI reports. All of these custom visuals have been tested and approved by Microsoft for functionality and quality.
 
-What is [AppSource](developer/office-store.md)? Put, it is the place to find apps, add-ins, and extensions for your Microsoft software. [AppSource](https://appsource.microsoft.com/en-us/) connects millions of users of products like Office 365, Azure, Dynamics 365, Cortana, and Power BI to solutions that help them get work done more efficiently, more insightfully, or more beautifully than before.
+What is [AppSource](developer/office-store.md)? Put, it is the place to find apps, add-ins, and extensions for your Microsoft software. [AppSource](https://appsource.microsoft.com/) connects millions of users of products like Office 365, Azure, Dynamics 365, Cortana, and Power BI to solutions that help them get work done more efficiently, more insightfully, or more beautifully than before.
 
 ### Certified visuals
 
 Power BI certified visuals are marketplace visuals that have passed additional rigorous testing for quality, and are supported in additional scenarios, such as [email subscriptions](https://docs.microsoft.com/power-bi/service-report-subscribe), and [export to PowerPoint](https://docs.microsoft.com/power-bi/service-publish-to-powerpoint).
 To see the list of certified custom visuals or to submit your own, see [Certified custom visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified).
 
-Are you a Web developer and interested in creating your own visualizations and adding them to AppSource? See [Developing a Power BI custom visual](developer/custom-visual-develop-tutorial.md) and learn how to [publish custom visuals to AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals).
+Are you a Web developer and interested in creating your own visualizations and adding them to AppSource? See [Developing a Power BI custom visual](developer/custom-visual-develop-tutorial.md) and learn how to [publish custom visuals to AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals).
 
 ### Import a custom visual from a file
 
@@ -130,7 +130,7 @@ You have two options for downloading and importing custom visuals; from within P
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
-2. Go to the [Apps results page](https://appsource.microsoft.com/en-us/marketplace/apps) where you can view top apps in each category, including *Power BI Apps*. But we're looking for custom visuals, so let's narrow down the results by selecting **Power BI visuals** from the left navigation list.
+2. Go to the [Apps results page](https://appsource.microsoft.com/marketplace/apps) where you can view top apps in each category, including *Power BI Apps*. But we're looking for custom visuals, so let's narrow down the results by selecting **Power BI visuals** from the left navigation list.
 
     ![AppSource visuals](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
 

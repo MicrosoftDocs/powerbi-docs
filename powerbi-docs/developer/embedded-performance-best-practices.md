@@ -53,7 +53,7 @@ Cached data is rendered when available, but we don’t have an event for this da
 
 Keep tools and SDK packages up-to-date.
 
-* Always use the latest version of [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/).
+* Always use the latest version of [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 
 * Install the latest version of the [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript). We continue to release more enhancements, so make sure to follow up from time to time.
 
