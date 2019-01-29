@@ -94,10 +94,10 @@ Radial gauges are a great choice to:
 - show the health of a single measure
 - display information that can be quickly scanned and understood
 
-### Key influencers chart
+<!-- ### Key influencers chart
 ![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers2.png)
 
-A key influencer chart displays the major contributors to a selected result or value.  
+A key influencer chart displays the major contributors to a selected result or value.  -->
 
 ### KPIs
 ![kpi](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
