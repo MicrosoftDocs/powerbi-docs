@@ -17,7 +17,7 @@ The new Power BI *template apps* enable Power BI partners to build Power BI apps
 
 If you can create Power BI reports and dashboards, you can become a *template app builder* who builds and packages analytical content into an *app*. You can then deploy your app to other Power BI tenants through any available platform, such as AppSource, or by using it in your own web service. As a builder you can create a protected analytics package for distribution. 
 
-Power BI tenant admins govern and control who in their organization is authorized to install a template app. Those who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
+Power BI tenant admins govern and control who in their organization can create template apps, and who can install them. Those who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
 
 ## Prerequisites 
 
@@ -37,7 +37,7 @@ To create a template app you can distribute to other Power BI tenants, you need 
 
     ![Enable template apps](media/service-template-apps-create/power-bi-template-app-develop.png)
 
-    If you don't see that option, contact your Power BI admin grant you [permissions for template app development](service-admin-portal.md#template-apps-settings-preview) in the admin portal.
+    If you don't see that option, contact your Power BI admin to grant you [permissions for template app development](service-admin-portal.md#template-apps-settings-preview) in the admin portal.
 
 3. Select **Apply**.
 
@@ -67,7 +67,7 @@ As with a regular Power BI app workspace, your next step is to create the conten
 
 - [Create your Power BI content](power-bi-creator-landing.md) in your app workspace.
 
-If you're using parameters in Power Query, make sure they have well-defined type (for example, Text). The types Any and Binary aren't supported.
+If you're using parameters in Power Query, make sure they have well-defined type (for example, Text). The types Any and Binary aren't supported. See [Known limitations](service-template-apps-overview.md#known-limitations) in the template apps overview article for other limitations in the preview.
 
 ## Create the test template app
 
@@ -146,15 +146,15 @@ Let's go through the stages.
  
 12. In **Get started with your new app**, you see your app as your customers will see it. You and they select one of these three options:
 
-    - **Explore app**: Basic sample data exploration with the data you included in your template app when you created it.
-    - **Connect data**: Change the data source from the sample data to your own data source. See [Known limitations](service-template-apps-overview.md#known-limitations) in the template apps overview article for details.
-    - **Go to workspace**: Make any changes allowed by the template app creator -- in other words, you.
+    **Explore with sample data**: Basic sample data exploration with the data you included in your template app when you created it.
+    **Connect your data**: Change the data source from the sample data to your own data source. See [Known limitations](service-template-apps-overview.md#known-limitations) in the template apps overview article for details.
+    **Customize and share**: Make any changes allowed by the template app creator -- in other words, you.
  
     ![Get started with your app](media/service-template-apps-create/power-bi-template-app-get-started.png)
 		
     Details about these options are available in [Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md). 
 
-13. Select **Explore App** to verify the test app.
+13. Select **Explore App** to verify the test app with the sample data.
 
 1. To make any changes, go back to the app in the original workspace. Update the test app until you're satisfied.
 
@@ -182,7 +182,7 @@ Now that your app is in production, you can start over in the test phase, withou
 
 1. In the **Release management** pane, select **Create app**.
 
-1. You go back through the app creation process. 
+1. Go back through the app creation process. 
 2. After you've set **Branding**, **Content**, **Control**, and **Access**, you again select **Create app**.
 3. Select **Close** and go back to **Release management**. 
 

@@ -198,9 +198,9 @@ The following image shows the **My entire organization** option when creating a 
 
 ![Publish content pack to organization](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### Create template organizational content packs and apps
+### Create template apps
 
-Users in the organization can create template content packs that use datasets built in Power BI Desktop. [Learn more](template-content-pack-authoring.md)
+Users in the organization can create template apps that use datasets built in Power BI Desktop. Learn more about [template apps](template-content-pack-authoring.md)
 
 ### Push apps to end users
 
