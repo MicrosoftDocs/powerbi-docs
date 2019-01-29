@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 01/29/2019
 ms.author: mihart
 
 ---
@@ -145,6 +145,5 @@ Getting help: **Esri** provides [comprehensive documentation](https://go.microso
 
 You can ask questions, find the latest information, report issues, and find answers on the Power BI [community thread related to **ArcGIS Maps for Power BI**](https://go.microsoft.com/fwlink/?LinkID=828771).
 
-If you have a suggestion for an improvement, please submit it to [Power BI's ideas list](https://ideas.powerbi.com).
 
 [ArcGIS Maps for Power BI product page](https://www.esri.com/powerbi)
