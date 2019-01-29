@@ -224,7 +224,7 @@ Users in the organization can use Excel to view and interact with on-premises Po
 
 ### Use ArcGIS Maps for Power BI
 
-Users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. [Learn more](power-bi-visualization-arcgis.md)
+Users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. [Learn more](visuals/power-bi-visualization-arcgis.md)
 
 ### Use global search for Power BI (Preview)
 

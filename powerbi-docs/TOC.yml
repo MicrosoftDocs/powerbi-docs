@@ -317,8 +317,8 @@
         href: power-bi-reports-add-text-and-shapes.md
       - name: "Customize X-axis and Y-axis properties"
         href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-      - name: "ArcGIS map tutorial"
-        href: power-bi-visualization-arcgis.md
+      - name: "ArcGIS maps"
+        href: visuals/power-bi-visualization-arcgis.md
       - name: "Basic area chart"
         href: visuals/power-bi-visualization-basic-area-chart.md
       - name: "Cards (big number tiles) in Power BI"

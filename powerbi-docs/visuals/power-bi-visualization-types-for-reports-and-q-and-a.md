@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/03/2018
+ms.date: 01/29/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -108,7 +108,7 @@ For more information, see [Tips and tricks for map visuals](power-bi-map-tips-an
 ### Maps: ArcGIS maps
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
-For more information, see [ArcGIS maps in Power BI](../power-bi-visualization-arcgis.md).
+For more information, see [ArcGIS maps in Power BI](power-bi-visualization-arcgis.md).
 
 ### Maps: Filled maps (Choropleth)
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
