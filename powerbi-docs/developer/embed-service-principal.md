@@ -113,9 +113,9 @@ Different from the traditional use of a master account, using the service princi
 
     ![Admin portal](media/embed-service-principal/admin-portal.png)
 
-4. Set up your Power BI environment with a collection of steps from this [article](embed-sample-for-customers.md#set-up-your-power-bi-environment).
+4. Set up your [Power BI environment](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
-5. Add the service principal as an admin to the new workspace you created. You can manage this task through the [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) or with the Power BI service.
+5. Add the service principal as an **admin** to the new workspace you created. You can manage this task through the [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) or with the Power BI service.
 
 6. Now choose to embed your content within a sample application, or within your application.
 
@@ -126,13 +126,62 @@ Different from the traditional use of a master account, using the service princi
 
 ## Migrate to service principal
 
-You can take steps to migrate to use service principal if you're currently using a master account with Power BI or with Power BI Embedded.
+You can migrate to use service principal if you're currently using a master account with Power BI or with Power BI Embedded.
 
-Follow the steps from the [Get started section](#get-started-with-service-principal) with some minor changes.
+Follow the steps below.
 
-In the article mentioned in step 4, there's a change you need to make. Instead of [Create and publish your reports](embed-sample-for-customers.md#create-and-publish-your-reports), you need to copy or move your Power BI artifacts and resources into [new workspaces](../service-create-the-new-workspaces.md). If you're already using new workspaces in Power BI, then you need to add the service principal as an admin to those workspaces.
+1. [Register a server-side web application](register-app.md) in Azure Active Directory (AAD) to use with Power BI. You register an application to capture an Application ID, an Application secret, and the service principal object ID to access your Power BI content. You can create a service principal with [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
-Currently, there's no UI feature to move over Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task. When using the APIs with service principal, you need the service principal object ID.
+   > [!Important]
+   > Once you enable service principal to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal.
+
+    Below is a sample script to create a new Azure Active Directory application.
+
+    ```powershell
+    # The app id - $app.appid
+    # The service principal object id - $sp.objectId
+    # The app key - $key.value
+
+    # Sign in as a user that allowed to create app.
+    Connect-AzureAD
+
+    # Create a new AAD web application
+    $app = New-AzureADApplication -DisplayName "testApp1" -Homepage "https://localhost:44322" -ReplyUrls "https://localhost:44322"
+
+    # Creates a service principal
+    $sp = New-AzureADServicePrincipal -AppId $app.AppId
+
+    # Get the service principal key.
+    $key = New-AzureADServicePrincipalPasswordCredential -ObjectId $sp.ObjectId
+    ```
+2. Create a [security group in Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal), and add the application you created to that security group. You can create an AAD security group with [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+
+    > [!Note]
+    > AAD security groups can only be created by an AAD global administrator.
+
+    Below is a sample script to create a new security group and add an application to that security group.
+
+    ```powershell
+    # Required to sign in as a tenant admin
+    Connect-AzureAD
+
+    # Create an AAD security group
+    $group = New-AzureADGroup -DisplayName <Group display name> -SecurityEnabled $true -MailEnabled $false -MailNickName notSet
+
+    # Add the service principal to the group
+    Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId) 
+    ```
+
+3. As a Power BI admin, you need to enable service principal in the **Developer settings** in the Power BI admin portal. Add the security group that you created in Azure AD to the **Specific security group** section in the **Developer settings**.
+
+   > [!Important]
+   > Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
+
+    ![Admin portal](media/embed-service-principal/admin-portal.png)
+
+4. If you're already using the [new workspaces](../service-create-the-new-workspaces.md) in Power BI, then add the [service principal](#get-started-with-a-service-principal) as an **admin** to the workspaces with your Power BI artifacts. However, if you are using the [traditional workspaces](../service-create-workspaces.md), there's a change you need to make. Copy or move your Power BI artifacts and resources into the new workspaces, and then add the service principal as an **admin** to those workspaces.
+
+There's no UI feature to move over Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task. When using the APIs with service principal, you need the service principal object ID.
 
 ### How to get the service principal object ID
 

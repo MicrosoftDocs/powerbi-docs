@@ -85,11 +85,11 @@ Follow the steps below to start embedding your content using the sample applicat
 
     ![App Owns Data application sample](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
 
-3. Open the **Web.config** file in the sample application. There are fields you need to fill in to run the application. Depending on which type of authentication method you choose there are different fields to complete.  
+3. Open the **Web.config** file in the sample application. There are fields you need to fill in to run the application. You can choose **MasterUser** or **ServicePrincipal** for the **AuthenticationType**. Depending on which type of authentication method you choose there are different fields to complete.  
 
     <center>
 
-    | Master user account </br> (Power BI Pro license) | Service Principal </br> (app-only token) |
+    |**AuthenticationType = MasterUser** </br> (Power Bi Pro license) | **AuthenticationType = ServicePrincipal** </br> (app-only token) |
     |---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
     | **[applicationId](#applicationid)** | **[applicationId](#applicationid)** |
     | | **[applicationsecret](#applicationsecret)** |
@@ -241,7 +241,7 @@ You can use the Power BI client object to retrieve a reference to the item you w
 
 Here is a code sample of how to retrieve the first report from a given workspace.
 
-*A sample of getting a content item whether it's a report, dashboard, or tile that you want to embed is available within the Controllers\HomeController.cs file in the [sample application](#embed-your-content-within-a-sample-application).*
+*A sample of getting a content item whether it's a report, dashboard, or tile that you want to embed is available within the Services\EmbedService.cs file in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).”
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -258,9 +258,7 @@ Report report = reports.Value.FirstOrDefault();
 
 Generated an embed token, which can be used from the JavaScript API. The embed token is specific to the item you're embedding. So at any time you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx).
 
-Here is a sample of adding an embed token for a report to your application.
-
-*A sample of creating an embed token for a report, dashboard, or tile is available within the Controllers\HomeController.cs file in the [sample application](#embed-your-content-within-a-sample-application).*
+*A sample of creating an embed token for a report, dashboard, or tile want to embed is available within the Services\EmbedService.cs file in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).*
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
