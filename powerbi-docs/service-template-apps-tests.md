@@ -1,6 +1,6 @@
 ---
-title: Test your service apps in Power BI
-description: Learn several ways to test your service apps in Power BI before you publish them on AppSource.
+title: Test your template apps in Power BI
+description: Learn several ways to test your template apps in Power BI before you publish them on AppSource.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -11,9 +11,9 @@ ms.date: 01/28/2019
 ms.author: maggies
 ---
 
-# Test your service apps in Power BI
+# Test your template apps in Power BI
 
-Learn several ways to test your service apps in Power BI before you publish them on AppSource.
+Learn several ways to test your template apps in Power BI before you publish them on AppSource.
 
 ## Testing Scheduled Data Refresh
 Template apps leverage Refresh in PowerBI.com to instantiate a template app with the customer's data when they connect. Prior to the template app being publicly available, you can test this flow with the Power BI Desktop file you've created.
@@ -35,7 +35,7 @@ A template app is similar to existing solutions except that it does not include 
 After a user instantiates the template app they have access to the dataset settings including scheduled refresh, any RLS settings on the dataset are **not** published with the template app.  
 
 > [!NOTE]
-> Template apps can only include 1 dashboard, 1 report and 1 dataset. Please see the list of restrictions in the [authoring](template-content-pack-authoring.md#restrictions)  page. 
+> Template apps can only include 1 dashboard, 1 report and 1 dataset. See [Known limitations](service-template-apps-overview.md#known-limitations) in the template apps overview article for other restrictions. 
 > 
 > 
 
