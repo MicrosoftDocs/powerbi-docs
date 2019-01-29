@@ -69,7 +69,7 @@ Comments can be added to an entire dashboard or to individual visuals on a dashb
 5. Select **Close** to return to the dashboard or report.
 
 ### Get your colleagues attention by using the @ sign
-Whether you're creating dashboard comments or commenting on a particular visual, grab your colleagues' attention by using the "@" symbol.  When you type the "@" symbol, Power BI opens a  dropdown where you can search for and select individuals from your organization. Any verified name prefaced with the "@" symbol, appears in blue font. 
+Whether you're creating dashboard comments or commenting on a particular visual, grab your colleagues' attention by using the "\@" symbol.  When you type the "\@" symbol, Power BI opens a  dropdown where you can search for and select individuals from your organization. Any verified name prefaced with the "\@" symbol, appears in blue font. 
 
 Here's a conversation I'm having with the visualization *designer*. He uses the @ symbol to ensure I see the comment. I know this comment is for me. When I open this app dashboard in Power BI, I select **Comments** from the header. The **Comments** pane displays our conversation.
 
