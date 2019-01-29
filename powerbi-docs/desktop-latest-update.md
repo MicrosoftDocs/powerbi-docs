@@ -35,7 +35,7 @@ The following updates are new to **Power BI Desktop** this month:
 ### Reporting
 
 * Smart guides for aligning objects on a page  [[video]](https://youtu.be/AHNlkjRFdYI?t=11)  [[article]](power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) 
-* ArcGIS Maps for Power BI updates  [[video]](https://youtu.be/AHNlkjRFdYI?t=84)  [[article]](power-bi-visualization-arcgis.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#arcGIS) 
+* ArcGIS Maps for Power BI updates  [[video]](https://youtu.be/AHNlkjRFdYI?t=84)  [[article]](visuals/power-bi-visualization-arcgis.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#arcGIS) 
 * Fields list accessibility support [[video]](https://youtu.be/AHNlkjRFdYI?t=464)  [[article]](desktop-report-view.md#copy-and-paste-between-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)
 * Set tab order for objects on a page [[video]](https://youtu.be/AHNlkjRFdYI?t=643)   [[article]](power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tabOrder)
 * Tooltips for button visuals [[video]](https://youtu.be/AHNlkjRFdYI?t=884)  [[article]](desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tooltips)
