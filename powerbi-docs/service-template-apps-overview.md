@@ -1,21 +1,21 @@
 ---
-title: What are Power BI template apps?
-description: Content Pack Certification Program
+title: What are Power BI template apps?  (preview)
+description: This article is an overview of the Power BI template app program. Learn how to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 01/28/2019
 ms.author: maggies
 ---
 
-# What are Power BI template apps?
+# What are Power BI template apps? (preview)
 
 The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article is an overview of the Power BI template app program.
 
-Template apps are a replacement for the current service content packs. As a Power BI partner, you create a set of out-of-the-box content your customers can use to gain insights from a source immediately.  
+Template apps are a replacement for the current service content packs. As a Power BI partner, you create a set of out-of-the-box content your customers, and publish it yourself.  
 
 You build template apps that allow your customers to connect and instantiate with their own accounts. As domain experts, they can unlock the data in a way that's easily consumable by their business users.  
 
@@ -46,7 +46,7 @@ Here are the high-level steps.
 
 1. Build a report in Power BI Desktop. Use parameters so you can save it as a file other people can use. 
 
-1. Create a workspace for your template app in your tenant on the Power BI service (app.powerbi.com). 
+1. Create a workspace for your template app in your tenant on the Power BI service (app.powerbi.com). You Power BI admin needs to grant you [permissions to create template apps](service-admin-portal.md#template-apps-settings-preview).
 
 1. Import your .pbix file and add content such as a dashboard to your app. 
 

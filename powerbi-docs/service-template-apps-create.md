@@ -1,5 +1,5 @@
 ---
-title: Create template apps in Power BI
+title: Create template apps in Power BI (preview)
 description: How to create template apps in Power BI that you can distribute to any Power BI customer.
 author: maggiesMSFT
 manager: kfile
@@ -7,11 +7,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 01/28/2019
 ms.author: maggies
 ---
 
-# Create a template app in Power BI
+# Create a template app in Power BI (preview)
 
 The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article contains step-by-step instructions to create a Power BI template app. 
 
@@ -34,56 +34,84 @@ To create a template app you can distribute to other Power BI tenants, you need 
  
 1. Open the Power BI service in a browser.
 2. Go to **Settings** > **General** > **Developer** > **Enable template app development mode**.
+
+    ![Enable template apps](media/service-template-apps-create/power-bi-template-app-develop.png)
+
+    If you don't see that option, contact your Power BI admin grant you [permissions for template app development](service-admin-portal.md#template-apps-settings-preview) in the admin portal.
+
 3. Select **Apply**.
 
 ## Create the template app workspace
 
 To create a template app you can distribute to other Power BI tenants, you need to create it in one of the new app workspaces. 
  
-1. In the  Power BI service, select **Workspaces** > **Create app workspace**. 
+1. In the Power BI service, select **Workspaces** > **Create app workspace**. 
+ 
+    ![Create app workspace](media/service-template-apps-create/power-bi-new-workspace.png)
 
 3. In **Create an app workspace**, in **Preview improved workspaces**, select **Try now**.
+
+    ![Try new workspaces](media/service-template-apps-create/power-bi-try-now-new-workspace.png)
 
 5. Enter a name, description (optional), and logo image (optional) for your app workspace.
 
 4. Select **Develop a template app**.
 
+    ![Develop a template app](media/service-template-apps-create/power-bi-template-app-develop.png)
+
+5. Select **Save**.
+
 ## Create the content in your template app
 
-As with a regular Power BI app workspace, you create the contents in the workspace.  In this preview version of template apps, we support only up to one of each type: one dataset, one report, and one dashboard.
+As with a regular Power BI app workspace, your next step is to create the contents in the workspace.  In this preview version of template apps, we support only up to one of each type: one dataset, one report, and one dashboard.
 
 - [Create your Power BI content](power-bi-creator-landing.md) in your app workspace.
 
-If you're using parameters in Power Query, make sure they have well-defined type (for example, Text).
+If you're using parameters in Power Query, make sure they have well-defined type (for example, Text). The types Any and Binary aren't supported.
 
 ## Create the test template app
 
 Now that you have content in your workspace, you're ready to package it in a template app. The first step is to create a test template app, accessible only from within your organization on your tenant.
 
-1. In the template app workspace, select **Create template app**. 
- 
-    Here, you fill in additional parameters for your template app, in three categories. 
+1. In the template app workspace, select **Create app**. 
 
-    Branding:
+    ![Create app](media/service-template-apps-create/power-bi-create-app.png)
+ 
+    Here, you fill in additional parameters for your template app, in four categories. 
+
+    **Branding**
 
     - App name 
     - Description
     - App logo (optional)
     - App color 
 
-    Content: 
+    **Content** 
 
     - App landing page (optional): Define a report or dashboard to be the landing page of your app.  
     
-    Permissions: 
+    **Control** 
 
-    - Content restrictions: You can set restrictions for your app, such as whether those who install it can download its .pbix files.
-    - Test app permissions (valid only for the test app): set permissions to specific users of your organization. 
- 
+    Control whether users can:
+
+    - Analyze in Excel and create live connections in Power BI Desktop
+    - Export visual data
+
+    **Access**
+
+    - In the test phase, decide which others in your organization can install and test your app.
 
     Don't worry, you can always come back and change these settings later.  
 
-2. Select **Save and close** to save your settings for the app. 
+2. Select **Create app**. 
+
+    You see a message that the test app is ready, with a link to copy and share with your app testers.
+
+    ![Test app is ready](media/service-template-apps-create/power-bi-template-app-test-ready.png)
+
+    You've also done the first step of the release management process, which follows.
+
+    
 
 ## Manage the template app release
 
@@ -97,11 +125,18 @@ Before you release this template app publicly, you want to make sure it's ready 
 Let's go through the stages.
 
 1. In the template app workspace, select **Release Management**.
-2. Select the dot next to **Workspace** > **Create test app**. 
 
-    Wait for the notification window to pop up.
+    ![Release management icon](media/service-template-apps-create/power-bi-release-management-icon.png)
+
+2. Select **Create app**. 
+
+    If you created the test app in **Create the test template app** above, the yellow dot next to **Testing** is already filled and you don't need to select **Create app** here. If you do select it, you go back into the template app creation process.
  
-9. Copy the link in the notification window and paste it to a new browser window to trigger an installation.
+3. Select **Get link**.
+
+    ![Create app, get link](media/service-template-apps-create/power-bi-dev-template-create-app-get-link.png)
+ 
+9. To test the app installation experience, copy the link in the notification window and paste it in a new browser window.
  
 10.	In the dialog box, select **Install**.
 
@@ -109,29 +144,55 @@ Let's go through the stages.
  
 11. Select **Go to app**.
  
-12. In **Get started with your new app**, select one of three options:
+12. In **Get started with your new app**, you see your app as your customers will see it. You and they select one of these three options:
 
-    - **Explore app**: Basic sample data exploration
-    - **Connect data**: Explore your own data
-    - **Go to workspace**: Make any changes allowed by app builder
+    - **Explore app**: Basic sample data exploration with the data you included in your template app when you created it.
+    - **Connect data**: Change the data source from the sample data to your own data source. See [Known limitations](service-template-apps-overview.md#known-limitations) in the template apps overview article for details.
+    - **Go to workspace**: Make any changes allowed by the template app creator -- in other words, you.
+ 
+    ![Get started with your app](media/service-template-apps-create/power-bi-template-app-get-started.png)
 		
     Details about these options are available in [Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md). 
 
 13. Select **Explore App** to verify the test app.
 
-1. Make any changes to the original workspace and recreate test apps until you're satisfied.
+1. To make any changes, go back to the app in the original workspace. Update the test app until you're satisfied.
 
-9. When you're ready to promote your app to pre-production and/or production stages for further testing it with your customers or sharing via AppSource, go back to the **Release Management** pane, right-click **Testing** > **Promote to preproduction**. 
+9. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the **Release Management** pane and select **Promote app** next to **Testing**.
+ 
+    ![Promote app to pre-production](media/service-template-apps-create/power-bi-template-app-promote.png)
 
-If you're interested in making your app widely available to thousands of Power BI users in the world, we encourage you to submit it to AppSource. See “Submitting template apps to AppSource.” 
+11. Select **Promote** to confirm your choice. 
 
-Template apps are the next generation of service content packs. If you own any content packs, see “Migrating content packs to template apps.” 
+12. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource.
+
+12. When your app is ready for production or sharing via AppSource, go back to the **Release Management** pane and select **Promote app** next to **Pre-production**.
+ 
+11. Select **Promote** to confirm your choice. 
+
+    Now your app is in production, and ready for distribution.
+
+    ![App in production](media/service-template-apps-create/power-bi-template-app-production.png)
+
+To make your app widely available to thousands of Power BI users in the world, we encourage you to submit it to AppSource. See “Submitting template apps to AppSource.” 
+
+## Update your app
+
+Now that your app is in production, you can start over in the test phase, without disrupting the app in production. 
+
+1. In the **Release management** pane, select **Create app**.
+
+1. You go back through the app creation process. 
+2. After you've set **Branding**, **Content**, **Control**, and **Access**, you again select **Create app**.
+3. Select **Close** and go back to **Release management**. 
+
+    You see you have two versions now: The version in production, plus a new version in testing. 
+
+    ![Two versions of a template app](media/service-template-apps-create/power-bi-template-app-2-versions.png)
 
 ## Next steps
 
-Known limitations of template apps (preview)
-
-[Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md)
+See how your customers interact with your template app in [Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md).
 
 
 

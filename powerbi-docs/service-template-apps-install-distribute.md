@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2019
+ms.date: 01/28/2019
 ms.author: maggies
 ---
 
@@ -23,7 +23,8 @@ The requirements for installing, customizing, and distributing a template app ar
 
 - A [Power BI pro license](service-self-service-signup-for-power-bi.md)
 - Familiarity with the [basic concepts of Power BI ](service-basic-concepts.md)
-- Valid installation link from the template app creator or AppSource.  
+- Valid installation link from the template app creator or AppSource. 
+- Permissions to install template apps. Your Power BI admin can grant you permissions in the [Template app settings in the admin portal](service-admin-portal.md#template-apps-settings-preview). 
 
 ## Install a template app
 
@@ -44,7 +45,7 @@ You may receive a link to a template app, or you may find one that interests you
     - **Connect data**: Explore your own data. You can redefine dataset parameters and data source credentials.
     - **Go to workspace** (most advanced option): you can make any changes allowed by the app builder.
 
-    Or skip this dialog box and access the app or associated workspace directly via **Workspaces** in the left navigation pane.   
+    Or skip this dialog box and access the associated workspace directly via **Workspaces** in the left navigation pane.   
  
 5. Before you share it with your coworkers, you'll want to connect to your own data. Then you may want to make adjustments to the report or dashboard to make it work for your organization. 
 
