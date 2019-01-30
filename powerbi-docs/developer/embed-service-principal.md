@@ -179,9 +179,9 @@ Follow the steps below.
 
     ![Admin portal](media/embed-service-principal/admin-portal.png)
 
-4. If you're already using the [new workspaces](../service-create-the-new-workspaces.md) in Power BI, then add the [service principal](#get-started-with-a-service-principal) as an **admin** to the workspaces with your Power BI artifacts. However, if you are using the [traditional workspaces](../service-create-workspaces.md), there's a change you need to make. Copy or move your Power BI artifacts and resources into the new workspaces, and then add the service principal as an **admin** to those workspaces.
+4. If you're already using the [new workspaces](../service-create-the-new-workspaces.md) in Power BI, then add the [service principal](#get-started-with-a-service-principal) as an **admin** to the workspaces with your Power BI artifacts. However, if you're using the [traditional workspaces](../service-create-workspaces.md), there's a change you need to make. Copy or move your Power BI artifacts and resources into the new workspaces, and then add the service principal as an **admin** to those workspaces.
 
-There's no UI feature to move over Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task. When using the APIs with service principal, you need the service principal object ID.
+    There's no UI feature to move over Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task. When using the APIs with service principal, you need the service principal object ID.
 
 ### How to get the service principal object ID
 

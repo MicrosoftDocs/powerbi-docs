@@ -89,7 +89,7 @@ Follow the steps below to start embedding your content using the sample applicat
 
     <center>
 
-    |**AuthenticationType = MasterUser** </br> (Power Bi Pro license) | **AuthenticationType = ServicePrincipal** </br> (app-only token) |
+    |**AuthenticationType = MasterUser** </br> (Power BI Pro license) | **AuthenticationType = ServicePrincipal** </br> (app-only token) |
     |---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
     | **[applicationId](#applicationid)** | **[applicationId](#applicationid)** |
     | | **[applicationsecret](#applicationsecret)** |
@@ -241,7 +241,7 @@ You can use the Power BI client object to retrieve a reference to the item you w
 
 Here is a code sample of how to retrieve the first report from a given workspace.
 
-*A sample of getting a content item whether it's a report, dashboard, or tile that you want to embed is available within the Services\EmbedService.cs file in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).”
+*A sample of getting a content item whether it's a report, dashboard, or tile that you want to embed is available within the Services\EmbedService.cs file in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).*
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
