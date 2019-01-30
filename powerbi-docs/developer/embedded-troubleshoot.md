@@ -94,6 +94,14 @@ The backend of the application may need to refresh the auth token before calling
 
 ## Authentication
 
+### Authentication failed with AADSTS90002: Tenant 'authorize' not found
+
+ If you're receiving messages logging in such as ***error: invalid_request, error_description: AADSTS90002: Tenant 'authorize' not found***, that is because ADAL 4.x doesn't support "https://login.microsoftonline.com/{Tenant}/oauth2/authorize/" as an authority url.
+ 
+To resolve this issue you should trim "oauth2/authorize/" from the end of your authority url, see [Power BI Developer Samples](https://github.com/Microsoft/PowerBI-Developer-Samples) for reference.
+
+ Check [Better Authority validation](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Changes-adalnet-4.0#better-authority-validation) from ADAL 4.x release notes.
+ 
 ### Authentication failed with AADSTS70002 or AADSTS50053
 
 **_(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password)_**
