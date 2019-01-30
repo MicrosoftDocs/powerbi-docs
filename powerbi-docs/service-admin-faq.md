@@ -42,6 +42,7 @@ This article addresses frequently asked questions for Power BI administration. F
 * [Are there any additional things I should be prepared for?](#are-there-any-additional-things-i-should-be-prepared-for)
 * [Where is my Power BI tenant located?](#where-is-my-power-bi-tenant-located)
 * [What is the Power BI SLA (Service Level Agreement)?](#what-is-the-power-bi-sla)
+* [How does Power BI handle high availability and failover?](#how-does-power-bi-handle-high-availability-and-failover)
 
 ### Security in Power BI section
 
@@ -237,6 +238,10 @@ For information about which data region your Power BI tenant is in, see [Where i
 ### What is the Power BI SLA?
 
 For information about the Power BI SLA (Service Level Agreement), see the [Licensing Terms and Documentation](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) article in the **Licensing** section of the Microsoft Licensing website.
+
+### How does Power BI handle high availability and failover?
+
+For information about high availability and failover, see [Power BI high availability, failover, and disaster recovery FAQ](service-admin-failover.md).
 
 ## Security in Power BI
 
