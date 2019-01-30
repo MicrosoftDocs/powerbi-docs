@@ -161,7 +161,7 @@ Users viewing a report in SharePoint need either a **Power BI Pro license** or t
 
 * You may encounter issues if using Internet Explorer 10. You can look at the [browsers support for Power BI](consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
 
-* The Power BI web part is not available for [sovereign clouds](https://powerbi.microsoft.com/en-us/clouds/).
+* The Power BI web part is not available for [sovereign clouds](https://powerbi.microsoft.com/clouds/).
 
 * The classic SharePoint Server is not supported with this web part.
 

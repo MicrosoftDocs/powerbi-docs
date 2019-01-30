@@ -32,7 +32,14 @@ To get started, you're required to have:
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
+<<<<<<< HEAD
 If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+=======
+* If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
+* If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+* You need to have your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) setup.
+* You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
+>>>>>>> 4f055d727332604c0d051a364179fbce20116f92
 
 ## Set up your embedded analytics development environment
 

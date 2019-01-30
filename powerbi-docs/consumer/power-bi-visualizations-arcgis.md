@@ -9,12 +9,12 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 01/29/2019
 ms.author: mihart
 
 ---
 # Interacting with ArcGIS maps in Power BI
-This topic is written from the point of view of a person *consuming* an ArcGIS map in Power BI service, Desktop, or mobile. Once a creator shares an ArcGIS map with you, there are many ways to interact with that map.  To learn more about creating an ArcGIS map, see [ArcGIS maps by esri tutorial](../power-bi-visualization-arcgis.md).
+This topic is written from the point of view of a person *consuming* an ArcGIS map in Power BI service, Desktop, or mobile. Once a creator shares an ArcGIS map with you, there are many ways to interact with that map.  To learn more about creating an ArcGIS map, see [ArcGIS maps by esri tutorial](../visuals/power-bi-visualization-arcgis.md).
 
 The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. The available options for base maps, location types, themes, symbol styles, and reference layers creates gorgeous informative map visualizations. The combination of authoritative data layers (such as census data) on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
@@ -22,7 +22,7 @@ The combination of ArcGIS maps and Power BI takes mapping beyond the presentatio
 > GIS stands for Geographic Information System.
 > 
 
-The example we're using is the same ArcGIS map created in the [ArcGIS maps by esri tutorial](../power-bi-visualization-arcgis.md). It looks at last year's sales by city and uses a street basemap, bubble symbols to represent size, and a reference layer for average household income. The map contains 3 pins and one drive time radius (in purple).
+The example we're using looks at last year's sales by city and uses a street basemap, bubble symbols to represent size, and a reference layer for average household income. The map contains 3 pins and one drive time radius (in purple).
 
 ![](media/power-bi-visualizations-arcgis/power-bi-arcgis-esri-new.png)
 
@@ -50,11 +50,11 @@ ArcGIS Maps for Power BI allows three selection modes. A maximum of 250 data poi
 <br/>
 
 ## Interacting with an ArcGIS map
-The features available to you depend on whether you are the *creator* (person who made the map) or the *consumer* (someone shared an ArcGIS map with you). If you are interacting with an ArcGIS map as a consumer (aka [Reading view](../consumer/end-user-reading-view.md), here are the actions available to you.
+The features available to you depend on whether you are the *creator* (person who made the map) or the *consumer* (someone shared an ArcGIS map with you). If you are interacting with an ArcGIS map as a consumer (aka [Reading view](end-user-reading-view.md), here are the actions available to you.
 
-* If you are a Premium consumer with *view* permissions, you'll be able to [view the data used to create the visualization](../consumer/end-user-show-data.md) , [subscribe](../consumer/end-user-subscribe.md), see the map in [Focus mode and full screen mode](../consumer/end-user-focus.md), [view related content](../consumer/end-user-related.md), [interact with the filters](../consumer/end-user-report-filter.md) set by the *report creator*, [Share the report](../service-share-reports.md), and more.
+* If you are a Premium consumer with *view* permissions, you'll be able to [view the data used to create the visualization](end-user-show-data.md) , [subscribe](end-user-subscribe.md), see the map in [Focus mode and full screen mode](end-user-focus.md), [view related content](end-user-related.md), [interact with the filters](end-user-report-filter.md) set by the *report creator*, [Share the report](../service-share-reports.md), and more.
 
-* As with other visualization types, Power BI **Pro** consumers can do everything the Premium consumer can do, plus [export the underlying data](power-bi-visualization-export-data.md), [get usage metrics](../service-usage-metrics.md), save a copy and [publish to Web](../service-publish-to-web.md), and more.
+* As with other visualization types, Power BI **Pro** consumers can do everything the Premium consumer can do, plus [export the underlying data](../visuals/power-bi-visualization-export-data.md), [get usage metrics](../service-usage-metrics.md), save a copy and [publish to Web](../service-publish-to-web.md), and more.
 
     
 * Expand the **Filters** pane to explore the map using filters.   
@@ -145,6 +145,5 @@ Getting help: **Esri** provides [comprehensive documentation](https://go.microso
 
 You can ask questions, find the latest information, report issues, and find answers on the Power BI [community thread related to **ArcGIS Maps for Power BI**](https://go.microsoft.com/fwlink/?LinkID=828771).
 
-If you have a suggestion for an improvement, please submit it to [Power BI's ideas list](https://ideas.powerbi.com).
 
 [ArcGIS Maps for Power BI product page](https://www.esri.com/powerbi)

@@ -45,7 +45,7 @@ The following list details a few examples of data sources to which **Power BI De
 | Power BI Desktop generic connector | External data source | Link for more information |
 | --- | --- | --- |
 | ODBC |Cassandra |[Cassandra ODBC driver](http://www.simba.com/drivers/cassandra-odbc-jdbc/) |
-| ODBC |Couchbase DB |[Couchbase and Power BI](https://powerbi.microsoft.com/en-us/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
+| ODBC |Couchbase DB |[Couchbase and Power BI](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
 | ODBC |DynamoDB |[DynamoDB ODBC driver](http://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
 | ODBC |Google BigQuery |[BigQuery ODBC driver](http://www.simba.com/drivers/bigquery-odbc-jdbc/) |
 | ODBC |Hbase |[Hbase ODBC driver](http://www.simba.com/drivers/hbase-odbc-jdbc/) |
@@ -87,7 +87,7 @@ The following list details a few examples of the data sources to which **Power B
 
 | Power BI Desktop generic connector | External data source | Link for more information |
 | --- | --- | --- |
-| REST APIs |Couchbase DB |[Couchbase REST API information](https://powerbi.microsoft.com/en-us/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
+| REST APIs |Couchbase DB |[Couchbase REST API information](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
 
 ## Data sources accessible through R Script
 You can use **R scripts** to access data sources, and use that data in **Power BI Desktop**.
