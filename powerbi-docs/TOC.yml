@@ -1251,6 +1251,8 @@
       href: service-admin-role.md
     - name: "Frequently asked questions (FAQ)"
       href: service-admin-faq.md
+    - name: "High availability and failover FAQ"
+      href: service-admin-failover.md
   - name: How to
     items: 
     - name: "Licensing and sign-up"
