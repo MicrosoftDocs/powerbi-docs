@@ -1,5 +1,5 @@
 ---
-title: Working with Visualizations
+title: Working with Visualizations as a consumer
 description: Power BI concepts and terminology - visualizations, visuals. What is a Power BI visualization, visual.
 author: mihart
 manager: kvivek
@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/29/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -49,4 +49,5 @@ But first, a word about Q&A. Q&A is Power BI's natural language search tool. You
 
 ## Next steps
 Back to [Basic concepts for consumers](end-user-basic-concepts.md)    
-[Select a visualization to open a report](end-user-report-open.md)
+[Select a visualization to open a report](end-user-report-open.md)    
+[Types of visualizations available in Power BI](end-user-visual-type.md)

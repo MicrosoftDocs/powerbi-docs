@@ -14,6 +14,8 @@
       href: end-user-experience.md
     - name: "What can I do with Power BI?"
       href: end-user-reading-view.md
+    - name: "Sign in for the first time"
+      href: end-user-sign-in.md
   - name: Tutorials
     items:
     - name: "Create a dashboard alert"
@@ -46,6 +48,8 @@
       items: 
       - name: "What can I do with visualizations?"
         href: end-user-visualizations.md
+      - name: "Types of visualizations"
+        href: end-user-visual-type.md
       - name: "Show the data that was used to create the visualization"
         href: end-user-show-data.md
       - name: "Drill down in a visualization in Power BI"
