@@ -37,7 +37,7 @@ If your organization is a new **Office Government Cloud** customer, follow these
 > These steps should be performed by the portal administrator.
 >
 
-1. Go to [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government).
+1. Go to [https://products.office.com/government/office-365-web-services-for-government](https://products.office.com/government/office-365-web-services-for-government).
 
 >[!NOTE]
 >If you don't want to sign up for Office Government Cloud at this time, please reach out to your sales representative.
