@@ -59,7 +59,7 @@ For user convenience, add license key or token related fields at the top of the 
 
 ## FAQ
 
-For more information and answers to questions, visit  [Frequently asked questions about visuals with additional purchases](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
+For more information and answers to questions, visit  [Frequently asked questions about visuals with additional purchases](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
 
 ## Next steps
 

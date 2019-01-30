@@ -61,7 +61,7 @@ Power BI selects which email to use based on the following sequence:
 
 1. If the mail attribute in the Azure AD user object is present, then Power BI uses that mail attribute for the email address.
 
-1. If the UPN email is *not* a **\*.onmicrosoft.com** domain email address (the information after the "@" symbol), then Power BI uses that mail attribute for the email address.
+1. If the UPN email is *not* a **\*.onmicrosoft.com** domain email address (the information after the "\@" symbol), then Power BI uses that mail attribute for the email address.
 
 1. If the *other email address* array attribute in the Azure AD user object is present, then the first email in that list (since there can be a list of emails in this attribute) is used.
 

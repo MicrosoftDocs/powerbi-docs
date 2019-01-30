@@ -16,7 +16,7 @@ ms.author: mshenhav
 With the Power BI Apple Watch app, you can view KPIs and card tiles from your Power BI dashboards, right on your watch. KPIs and card tiles are best suited to providing a heartbeat measure on the small screen. You can refresh a dashboard from your iPhone or from the Watch itself.
 
 ## Install the Apple Watch app
-The Power BI Apple Watch app is bundled with the Power BI for iOS app, so when you [download the Power BI app to your iPhone](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app") from the Apple App Store, you're automatically also downloading the Power BI Watch app. The Apple guide explains how to [install Apple Watch applications](https://support.apple.com/en-us/HT204784).
+The Power BI Apple Watch app is bundled with the Power BI for iOS app, so when you [download the Power BI app to your iPhone](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app") from the Apple App Store, you're automatically also downloading the Power BI Watch app. The Apple guide explains how to [install Apple Watch applications](https://support.apple.com/HT204784).
 
 ## Use the Power BI app on the Apple Watch
 Get to the Power BI Apple Watch app either from the watch's springboard, or by clicking the Power BI widget (if configured) directly from the watch face.
@@ -65,7 +65,7 @@ You can also display a specific Power BI tile directly on the Apple Watch face, 
 The Power BI Apple Watch widget updates close to the time your data updates, keeping your needed information always up to date.
 
 ### Add a Power BI widget to your watch face
-See [Customize your Apple Watch face](https://support.apple.com/en-us/HT205536) in the Apple Guide.
+See [Customize your Apple Watch face](https://support.apple.com/HT205536) in the Apple Guide.
 
 ### Change the text on the widget
 Given the small space on the Apple Watch face, the Power BI Apple Watch app lets you change the title of the widget to fit the small space.

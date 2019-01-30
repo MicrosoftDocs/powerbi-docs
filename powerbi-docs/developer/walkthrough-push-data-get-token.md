@@ -78,7 +78,7 @@ Add this code to Program {...}.
            string resourceUri = "https://analysis.windows.net/powerbi/api";
 
            //OAuth2 authority Uri
-           string authorityUri = "https://login.windows.net/common/oauth2/authorize";
+           string authorityUri = "https://login.microsoftonline.net/common/";
 
            //Get access token:
            // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken
@@ -144,7 +144,7 @@ Below is the [complete code listing](#code).
                 string resourceUri = "https://analysis.windows.net/powerbi/api";
 
                 //OAuth2 authority Uri
-                string authorityUri = "https://login.windows.net/common/oauth2/authorize";
+                string authorityUri = "https://login.microsoftonline.net/common/";
 
                 //Get access token:
                 // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken

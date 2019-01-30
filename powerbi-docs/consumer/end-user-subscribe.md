@@ -54,7 +54,7 @@ Whether you're subscribing to a dashboard or report, the process is similar. The
 
 5. Select **Save and close** to save the subscription. You'll receive an email and snapshot of the dashboard or report on the schedule you set. All subscriptions that have the frequency set to **After data refresh** will  only send an email after the first scheduled refresh on that day.
    
-   ![email snapshot of dashboard](./media/end-user-subscribe/power-bi-dashboard-email-new.jpg)
+   ![email snapshot of dashboard](media/end-user-subscribe/power-bi-subscribe-email.png)
    
     Refreshing the report page does not refresh the dataset. Only the dataset owner can manually refresh a dataset. To look up the name of the underlying dataset(s), select **View related** from the top menubar.
    
