@@ -609,6 +609,8 @@
         href: service-share-dashboards.md
       - name: "Share a filtered report"
         href: service-share-reports.md
+      - name: "Subscribe yourself and others"
+        href: service-report-subscribe.md
       - name: "Embed report in SharePoint Online"
         href: service-embed-report-spo.md
       - name: "Embed report in a secure portal or website"
