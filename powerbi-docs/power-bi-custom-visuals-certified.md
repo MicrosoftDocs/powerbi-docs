@@ -1,56 +1,80 @@
 ---
-title: Certified Power BI custom visualizations
+title: Certified Power BI custom visuals
 description: Requirements and process to submit a custom visual for certification. And a list of already certified custom visuals.
-author: mihart
-ms.author: mihart
+author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.subservice: powerbi-custom-visuals
+ms.date: 11/21/2018
 ---
 
-# Getting a custom visual *certified*
+# Certified custom visuals
 
-## What is meant by *certified*?
+## What are **_certified_** custom visuals?
 
-A *certified custom visual* is one that has met a set of code requirements and has passed strict security tests.  Once a custom visual has been certified, it can be  [exported to PowerPoint](consumer/end-user-powerpoint.md) and will display in the emails received when a user [subscribes to report pages](consumer/end-user-subscribe.md). Of course, it can also be used like [standard custom visuals](power-bi-custom-visuals.md), added to Power BI service and Power BI Desktop reports and viewed in Power BI mobile and embedded.
+Certified custom visuals are visuals in the **Marketplace** that meet certain **specified code**
+requirements that the **Microsoft Power BI team** has tested and approved. Once a custom visual is certified, it offers more features. Such as you can [export to PowerPoint](consumer/end-user-powerpoint.md), and you can display the visual in emails received when a user [subscribes to report pages](consumer/end-user-subscribe.md).
 
-Are you a Web developer and interested in creating your own visualizations and adding them to [Microsoft AppSource](https://appsource.microsoft.com)? See [Developing a Power BI custom visual](developer/custom-visual-develop-tutorial.md) to learn how.
+**Certified custom visuals** are used like [standard custom visuals](power-bi-custom-visuals.md). Certified custom visuals can be added to the **Power BI service**, a **Power BI Desktop report**, and viewed with **Power BI mobile** and **Power BI Embedded**.
 
-## Certification requirements
+The tests performed are designed to check the visual does not access external services or resources. **Microsoft** is *not* the author of third-party custom visuals, and we advise customers to contact the author directly to verify the functionality of such visual.
 
-* Microsoft AppSource approved
-* Custom visual is written with Versioned API 1.2 or higher
-* Code repository available for review (e.g., Visual Code available to us through GitHub)
-* Uses only public reviewable OSS components
-* Does not access external services or resources
+The certification process is an optional process, and it is up to the developers to decide if they want their visual in the marketplace to be certified.  
 
-> **TIP**: We recommend that you use EsLint with default security ruleset, to pre-validate your code before submission.
+**Uncertified custom visuals** do not necessarily mean unsafe visuals. Some visuals aren't certified because they don’t comply with one or more of the [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
 
-## Process for submitting a custom visual for Certification
-
-To submit a custom visual for certification:
-
-1. Send an email to Power BI Custom Visuals Support (pbicvsupport@microsoft.com). In the email, include the following information:    
-
-   * Title: Visual Certification Request
-   * Link to GitHub repository where the visual source code is hosted
-   * Adhere to the requirements (see above)
-   * Pass the code and security review
-
-2. The Custom Visuals team at Microsoft will notify you when your custom visual is certified and added to the Certified list (below), or rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their Certified visuals as needed.
+Are you a Web developer and interested in creating your own visualizations and adding them to **[Microsoft AppSource](https://appsource.microsoft.com)**? See **[Develop a Power BI custom visual to learn how](developer/custom-visual-develop-tutorial.md)**.
 
 ## Removal of Power BI Certified custom visuals
 
-Microsoft, at its discretion, may remove a visual from the Certified list.  
+Microsoft can remove a visual from the [certified list](#list-of-custom-visuals-that-have-been-certified) at its discretion.
+
+## Getting a custom visual certified
+
+### Certification requirements
+
+To get your custom visual [certified](#certified-custom-visuals), make sure your custom visual complies with the below:  
+
+* Microsoft AppSource approved. Your custom visual should be in our [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
+* Custom visual is written with versioned API 1.2 or higher.
+* Code repository available for review by Power BI team (for instance, source code (JavaSCriptS or TypeScript) in human readable format available to us, through GitHub).
+
+    >[!Note]
+    > You don’t have to publicly share your code in Github.
+
+* Uses only public reviewable OSS components (JS libraries or TypeScript that are public. The source code is available for reviewing and doesn't have known vulnerabilities). We can't verify a custom visual using a commercial component.
+
+* Does not access external services or resources, including but not limited to, no HTTP/S or WebSocket requests go out of Power BI to any services. 
+
+> [!TIP]
+> We recommend that you use EsLint with default security ruleset, to pre-validate your code before submission.
+
+## Process for submitting a custom visual for certification
+
+To submit a custom visual for certification:
+
+1. Send an email to Power BI Custom Visuals Support team (pbicvsupport@microsoft.com). In the email, include the following information:
+    * Title: Visual Certification Request
+    * Link to GitHub repository where the human readable source code is hosted
+    * [Adhere to the requirements](#certification-requirements)
+    * Pass the code review
+
+2. The Microsoft Custom Visuals team notifies you when your custom visual is certified and added to the [certified list](#list-of-custom-visuals-that-have-been-certified), or is rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their certified visuals as needed.
 
 ## List of custom visuals that have been certified
 
 | Link to AppSource | Link to video |
 | --- | --- |
+| [3AG Systems - Column Chart With Relative Variance](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381803) | |
+| [Advanced Donut Visual](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381941) | |
+| [Advanced Network Visualization](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381942) | |
+| [Advanced TimeSeries Visual](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381943) | |
+| [Advanced Combo Visual](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381944) | |
 | [Aster Plot](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380759) | |
 | [Beyondsoft Calendar](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381096) | |
 | [Bowtie Chart by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380838) | [Video](https://youtu.be/So5xKMSpVJI) |
@@ -116,6 +140,7 @@ Microsoft, at its discretion, may remove a visual from the Certified list.
 | [Ring Chart by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380824) | [Video](https://youtu.be/pDToHDFHnq8) |
 | [Rotating Chart by MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381007) | [Video](https://youtu.be/d5xBCMmb3hU) |
 | [Sankey Chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380777) | [Video](https://youtu.be/WWP9wVUHGaA) |
+| [Scatter Chart by Akvelon](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381703) | |
 | [Scroller](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381018) | |
 | [Smart Filter by OKViz](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380859) | [Video](https://youtu.be/gcJsDDRQq28) |
 | [Sparkline by OKViz](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380910) | [Video](https://youtu.be/0m3Vnvso9tY) |

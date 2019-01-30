@@ -6,13 +6,14 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 11/16/2018
 ms.author: mblythe
 
 LocalizationGroup: Administration
 ---
+
 # Administering Power BI - frequently asked questions (FAQ)
 
 This article addresses frequently asked questions for Power BI administration. For an overview of the Power BI administration, see [What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md).
@@ -34,7 +35,7 @@ This article addresses frequently asked questions for Power BI administration. F
 
 * [How will this change the way I manage identities for users in my organization today?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [How do we manage Power BI?](#how-do-we-manage-power-bi)
-* [What is the process to manage a tenant created by Microsoft for my users?](#what-is-the-process-to-manage-a-tenant-created-by-Microsoft-for-my-users)
+* [What is the process to manage a tenant created by Microsoft for my users?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
 * [If I have multiple domains, can I control the Office 365 tenant that users are added to?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to)
 * [How do I remove Power BI for users that already signed up?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [How do I know when new users have joined my tenant?](#how-do-i-know-when-new-users-have-joined-my-tenant)
@@ -170,11 +171,15 @@ To access the Power BI admin portal, your account must be marked as a **Global A
 
 ### What is the process to manage a tenant created by Microsoft for my users?
 
-If a tenant was created by Microsoft, you can claim and manage that tenant by following these steps:
+When a self-service user signs up for a cloud service that uses Azure AD, they are added to an unmanaged Azure AD directory based on their email domain. You can claim and manage the tenant that was created using a process known as an *admin takeover*. The type of takeover you do depends on whether there is an existing managed tenant associated with your domain:
 
-1. Join the tenant by signing up for Power BI, using an email address domain that matches the tenant domain you want to manage. For example, if Microsoft created the contoso.com tenant, you would join the tenant with an email address ending with @contoso.com.
+* Use an *internal takeover* to create a new managed tenant for the domain.
 
-1. Claim admin control by verifying domain ownership: once you are in the tenant, you can promote yourself to a *Global Admin* role by verifying domain ownership. To do so, follow these steps, follow the steps in the [Office 365 documentation](/office365/admin/misc/become-the-admin).
+* Use an *external takeover* to move the domain to an existing managed tenant.
+
+For more information, see [Take over an unmanaged directory as administrator in Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover).
+
+When you perform an external takeover, Power BI content that was created before the takeover is placed in a [Power BI Archived Workspace](service-admin-power-bi-archived-workspace.md). You must manually migrate any content that you want to use in the new tenant.
 
 ### If I have multiple domains, can I control the Office 365 tenant that users are added to?
 
@@ -237,7 +242,7 @@ For information about the Power BI SLA (Service Level Agreement), see the [Licen
 
 ### Does Power BI meet national, regional, and industry-specific compliance requirements?
 
-To learn more about Power BI compliance, see the [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).
+To learn more about Power BI compliance, see the [Microsoft Trust Center](https://www.microsoft.com/en-us/TrustCenter/CloudServices/business-application-platform/default.aspx).
 
 ### How does security work in Power BI?
 

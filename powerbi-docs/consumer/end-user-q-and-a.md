@@ -1,14 +1,15 @@
 ---
-title: Overview of Q&A in Power BI service and Desktop
+title: Overview of Q&A in Power BI service
 description: Documentation overview topic for Power BI Q&A natural language queries.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data

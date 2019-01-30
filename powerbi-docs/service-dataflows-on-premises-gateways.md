@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Data from files

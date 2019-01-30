@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/20/2018
 ms.author: mblythe
@@ -53,13 +53,9 @@ For the most part, users don't need to know they are in a Premium capacity. Thei
 
 ## Configure workloads
 
-Think of a workload in Power BI as one of the many services you can expose to users. By default, capacities for **Power BI Premium** and **Power BI Embedded** support only the workload associated with running Power BI queries in the cloud.
+By default, capacities for Power BI Premium and Power BI Embedded support only the workload associated with running Power BI queries in the cloud. We now offer preview support for two additional workloads: **Paginated reports** and **Dataflows**. For more information, see [Workloads in Premium capacity](service-premium.md#workloads-in-premium-capacity).
 
-We now offer preview support for two additional workloads: **Paginated reports** and **Dataflows**. You enable these workloads in the Power BI admin portal or through the Power BI REST API. You also set the maximum memory each workload can consume, so that you can control how the different workloads affect each other.
-
-### Enable workloads in the Power BI admin portal
-
-To enable workloads, follow these steps.
+To enable workloads in the Power BI admin portal, follow these steps.
 
 1. Under **Capacity settings**, select a capacity.
 
@@ -70,24 +66,6 @@ To enable workloads, follow these steps.
     ![Configure workloads in the admin portal](media/service-admin-premium-manage/admin-portal-workloads.png)
 
 1. Select **Apply**.
-
-### Default memory settings
-
-The following table shows the default and minimum memory values, based on the different [capacity nodes](service-premium.md#premium-capacity-nodes) available. Memory is dynamically allocated to dataflows, but it is statically allocated to paginated reports. For more information, see the next section, [Considerations for paginated reports](#considerations-for-paginated-reports).
-
-|                     | EM3                      | P1                       | P2                      | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Paginated reports | N/A | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
-| Dataflows | 15% default; 8% minimum  | 15% default; 4% minimum  | 15% default; 2% minimum | 15% default; 1% minimum  |
-| | | | | |
-
-### Considerations for paginated reports
-
-If you use the paginated reports workload, keep the following points in mind.
-
-* **Memory allocation in paginated reports**: Paginated reports allow you to run your own code when rendering a report (such as dynamically changing text color based on content). Given this fact, we secure Power BI Premium capacity by running paginated reports in a contained space within the capacity. We assign the maximum memory you specify to this space, whether or not the workload is active. If you use Power BI reports or dataflows in the same capacity, make sure you set memory low enough for paginated reports that it doesn't negatively affect the other workloads.
-
-* **Paginated reports are unavailable**: In rare circumstances, the paginated reports workload can become unavailable. In this case, the workload shows an error state in the admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload then enable it again.
 
 ## Monitor capacity usage
 

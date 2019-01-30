@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2018
 ms.author: davidi
@@ -31,9 +31,9 @@ To use **Get Data from Web by example**, select **Get Data** from the **Home** r
 
 From there, enter the URL of the Web page from which you'd like to extract data. In this article we'll use the Microsoft Store Web page, and show how this connector works. 
 
-If you want to follow along, you can use the [Microsoft Store URL](https://www.microsoft.com/en-us/store/top-paid/games/xbox?category=classics) that we use in this article:
+If you want to follow along, you can use the [Microsoft Store URL](https://www.microsoft.com/store/top-paid/games/xbox?category=classics) that we use in this article:
 
-    https://www.microsoft.com/en-us/store/top-paid/games/xbox?category=classics
+    https://www.microsoft.com/store/top-paid/games/xbox?category=classics
 
 ![Web dialog](media/desktop-connect-to-web-by-example/web-by-example_04.png)
 

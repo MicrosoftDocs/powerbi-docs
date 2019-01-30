@@ -6,8 +6,9 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 11/06/2018
 ---
 
@@ -32,8 +33,10 @@ If you don't see it, make sure you have enabled it within the Power BI settings.
 
 **Can't contact visual server**
 
-Run the visual server with the command `pbiviz start` in your terminal's command line from the root of your visual project. If the server is running, it is likely that your SSL certificates weren't installed correctly.
+Run the visual server with the command `pbiviz start` in your terminal's command line from the root of your visual project. If the server is not running, it is likely that your SSL certificates weren't installed correctly.
+
+Feel free to contact the custom visuals support team: *pbicvsupport@microsoft.com* with any questions, comments, or issues you have.
 
 ## Next steps
 
-For more information and answers to questions, visit [Frequently asked questions about Power BI custom visuals](power-bi-custom-visuals-faq.md#organizational-custom-visuals).
+For more information, visit [Frequently asked questions about Power BI custom visuals](power-bi-custom-visuals-faq.md#organizational-custom-visuals).

@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: lukaszp
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
@@ -37,8 +37,6 @@ The dashboards, reports, and Excel workbooks are read-only, but you can copy and
 Publishing an organizational content pack adds it to AppSource.  This centralized repository makes it easy for members to browse and discover dashboards, reports, and datasets published for them.  
 
 * To view AppSource, select **Get Data** > **My Organization** > **Get**.
-
-Read more about [finding and opening organizational content packs](consumer/end-user-content-pack.md).
 
 ## The life cycle of an organizational content pack
 Any Power BI Pro user can create, publish, and access organizational content packs. Only the content pack creator can modify the workbook and dataset, schedule refresh, and delete it.

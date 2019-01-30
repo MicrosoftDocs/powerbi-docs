@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
@@ -193,11 +193,28 @@ This section provides troubleshooting situations (and solutions) for working wit
            </item>
    
    To solve this error, users must ask their SAP admin to grant the SAPBW user being used in Power BI the right to execute *BAPI_USER_GET_DETAIL*. It’s also worth verifying that the user has the required *DCPFM* value, as described earlier in this troubleshooting solution.
+   
 2. **Connectivity for SAP BEx queries**
    
    You can perform **BEx** queries in Power BI Desktop by enabling a specific property, as shown in the following image:
    
    ![](media/desktop-sap-bw-connector/sap_bw_8.png)
+   
+3. The **Navigator** window does not display a data preview and instead provides an *object reference not set to an instance of an object* error message.
+   
+   SAP users need access to specific BAPI function modules to get metadata and retrieve data from SAP BW's InfoProviders. These include:
+   * BAPI_MDPROVIDER_GET_CATALOGS
+   * BAPI_MDPROVIDER_GET_CUBES
+   * BAPI_MDPROVIDER_GET_DIMENSIONS
+   * BAPI_MDPROVIDER_GET_HIERARCHYS
+   * BAPI_MDPROVIDER_GET_LEVELS
+   * BAPI_MDPROVIDER_GET_MEASURES
+   * BAPI_MDPROVIDER_GET_MEMBERS
+   * BAPI_MDPROVIDER_GET_VARIABLES
+   * BAPI_IOBJ_GETDETAIL
+
+   To solve this issue, verify that the user has access to the various *MDPROVIDER* modules as well as *BAPI_IOBJ_GETDETAIL*. To further troubleshoot this or similar issues, select *Enable tracing* on the *Diagnostics* window within Power BI Desktop's *Options*. Attempt to retrieve data from SAP BW while tracing is active, and examine the trace file for more detail.
+
 
 ## Next steps
 For more information about SAP and DirectQuery, check out the following resources:

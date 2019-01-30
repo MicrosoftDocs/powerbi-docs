@@ -6,9 +6,9 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/13/2018
 LocalizationGroup: Premium 
 ---
 
@@ -16,7 +16,11 @@ LocalizationGroup: Premium
 
 This article provides an overview of monitoring the metrics for your Power BI Premium capacities. Monitoring capacity usage enables you to take an informed approach to managing your capacities.
 
-You can monitor capacity with the Power BI Premium Capacity Metrics app or in the admin portal. We recommend the app, because it provides much more detail, but this article covers both options. **The current version of the app is 1.8 (released November 7, 2018).**
+You can monitor capacity with the Power BI Premium Capacity Metrics app or in the admin portal. We recommend the app, because it provides much more detail, but this article covers both options.
+
+**The current version of the app is 1.10 (released December 13, 2018).**
+
+.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -38,54 +42,45 @@ Now that you've installed the app, you can see metrics about the capacities in y
 
 ## Use the metrics app
 
+### Metrics dashboard
+
 When you open the app, it first shows a dashboard with a summary of all the capacities for which you have admin rights.
 
 ![Metrics app dashboard](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
-Click the dashboard to go to the underlying report. The report has six tabs, which we describe in more detail in the following sections.
+The dashboard includes the following metrics.
 
-* **Filters**: enables you to filter the other pages in the report to a specific capacity.
+| **Report section** | **Metrics** |
+| --- | --- |
+| **System Summary** | * Version of the application<br> * Number of capacities for which you are admin<br> * Number of workspaces in your capacities that are reporting metrics<br> * Average memory consumption in GB over the past seven days<br> * Maximum memory consumption in GB in the past seven days<br> * Local time that maximum memory consumption occurred<br> * Number of times CPU exceeded 80% of the thresholds in the past seven days, split into three minute buckets<br> * Most times the CPU exceeded 80% in the past seven days, split into one hour buckets<br> * Local time that CPU exceeded 80% the most times in an hour |
+| **Dataset Summary** | * Total number of datasets across all workspaces in your capacities<br> * Number of times Direct query/Live connections exceeded 80% of the thresholds in the past seven days, split into three minute buckets<br> * Most times the Direct query/Live connections exceeded 80% in the past seven days, split into one hour buckets<br> * Local time that Direct query/Live connections exceeded 80% the most times in an hour<br> * Total number of refreshes in the past seven days<br> * Average refresh wait time - the average lag between the scheduled time and start of the refresh, in minutes<br> * Average refresh duration - the time taken to complete the refresh, in minutes<br> * Total number of queries run in the past seven days<br> * Average query wait time - the time a query waited on system resources before starting execution, in milliseconds<br> * Average query duration - the time taken to complete the query, in milliseconds<br> * Total number of models evicted due to memory pressure<br> * Average size of datasets <br> * Average count of datasets loaded into memory |
+| **Dataflow Summary** | * Total number of dataflows across all workspaces in your capacities<br> * Total number of refreshes in the past seven days<br> * Average refresh wait time - the average lag between the scheduled time and start of the refresh, in minutes<br> * Average refresh duration - the time taken to complete the refresh, in minutes |
+| **Paginated Report Summary** | * Total number of paginated reports across all workspaces in your capacities<br> * Total number of times that all reports have been viewed by users<br> * Total number of rows of data in all reports<br> * Total time it takes for all phases (data retrieval, processing, and rendering) of all reports, in milliseconds |
+|  |  |
+
+### Metrics report
+
+Click the dashboard to go to the underlying report. The report has five tabs, which we describe in more detail in the following sections.
 
 * **Datasets**: detailed metrics on the health of the Power BI datasets in your capacities.
 
-* **Paginated reports**: detailed metrics on the health of the paginated reports in your capacities.
+* **Paginated Reports**: detailed metrics on the health of the paginated reports in your capacities.
 
 * **Dataflows**: detailed refresh metrics for dataflows in your capacities.
 
-* **System**: overall capacity metrics including memory and CPU high utilization.
+* **Resource Consumption**: overall capacity metrics including memory and CPU high utilization.
 
-* **Display Names and IDs**: names, IDs, and owners for capacities, workspaces, and workloads.
+* **IDs and Info**: names, IDs, and owners for capacities, workspaces, and workloads.
 
-### Filters tab
+On each tab, you can filter metrics by capacity and date range. If no filters are selected, the report defaults to show the past week’s metrics for all capacities that are reporting metrics.
 
-The **Filters** tab enables you to select a capacity, a date range, and other options. Filters are then applied to all the relevant pages and tiles in the report. If no filters are selected, the report defaults to show the past week’s metrics on every capacity you own.
-
-![Filters tab](media/service-admin-premium-monitor-capacity/filters-tab.png)
-
-* **(A)** Select **Datasets**, **Paginated Reports**, or **Dataflows** to set filters for each workload.
-
-* **(B)** Name and **(C)** information are updated based on what you select in **(A)**, allowing you to filter on a workload by name. For example, in the image above, **Dataflows** is selected, showing **Dataflows Name** and **Dataflows Information**.
-
-* **(D)** Capacity information, which indicates if datasets, paginated reports, or dataflows are enabled for a capacity.
-
-### Datasets tab
+#### Datasets tab
 
 Use the buttons at the top of the **Datasets** tab to navigate to different areas: **Summary**, **Refreshes**, **Query Durations**, **Query Waits**, and **Datasets**.
 
 ![Datasets tab](media/service-admin-premium-monitor-capacity/datasets-tab.png)
 
-#### Summary area
-
-The **Summary** area shows a view of your capacities based on entities, system resources, and dataset workloads. It shows the following metrics.
-
-| **Report section** | **Metrics** |
-| --- | --- |
-| **Entities** | * The number of capacities you own<br> * The distinct number of datasets in your capacity<br> * The distinct number of workspaces in your capacity |
-| **System** | * The average memory usage in GB over the past seven days<br> * Highest memory consumption in GB in the past seven days and the local time it occurred<br> * The number of times CPU exceeded 80% of the thresholds in the past seven days, split into three minute buckets<br> * Most times the CPU exceeded 80% in the past seven days, split into one hour buckets, and the local time it occurred<br> * The number of times Direct query/Live connections exceeded 80% of the thresholds in the past seven days, split into three minute buckets<br> * Most times the Direct query/Live connections exceeded 80% in the past seven days, split into one hour buckets, and the local time it occurred |
-| **Dataset Workloads** | * Total number of refreshes in the past seven days<br> * Total number of successful refreshes in the past seven days<br> * Total number of failed refreshes in the past seven days<br> * Total number of failed refreshes due to out of memory<br> * Average refresh duration is the time taken to complete the operation, in minutes<br> * Average refresh wait time is the average lag between the scheduled time and start of the operation, in minutes<br> * Total number of queries run in the past seven days<br> * Total number of successful queries in the past seven days<br> * Total number of failed queries in the past seven days<br> * Average query duration is the time taken to complete the operation, in minutes<br> * Total number of models evicted due to memory pressure |
-|  |  |
-
-#### Refreshes area
+##### Refreshes area
 
 The **Refreshes** area contains the following metrics.
 
@@ -98,7 +93,7 @@ The **Refreshes** area contains the following metrics.
 | **Hourly Refresh Count and Memory Consumption** | * Successes, failures, and memory consumption, split into one hour buckets, reported in local time |
 |  |  |
 
-#### Query Durations area
+##### Query Durations area
 
 The **Query Durations** area contains the following metrics.
 
@@ -111,7 +106,7 @@ The **Query Durations** area contains the following metrics.
 | **Hourly Query Duration Distributions** | * Query counts and average duration (in milliseconds) vs. memory consumption in GB, split into one hour buckets, reported in local time |
 |  |  |
 
-#### Query Waits area
+##### Query Waits area
 
 The **Query Waits** area contains the following metrics.
 
@@ -123,7 +118,7 @@ The **Query Waits** area contains the following metrics.
 | **Hourly Query Wait Counts and Times** | * Query wait counts and average wait time (in milliseconds) vs. memory consumption in GB, split into one hour buckets reported in local time |
 |  |  |
 
-#### Datasets area
+##### Datasets area
 
 The **Datasets** area contains the following metrics.
 
@@ -131,9 +126,11 @@ The **Datasets** area contains the following metrics.
 | --- | --- |
 | **Dataset Eviction Counts** | * Total: The total number of dataset *evictions* for each capacity. When a capacity faces memory pressure, the node evicts one or more datasets from memory. Datasets that are inactive (with no query/refresh operation currently executing) are evicted first. Then the eviction order is based on a measure of 'least recently used' (LRU).|
 | **Hourly Dataset Evictions and Memory Consumption** | * Dataset evictions vs. memory consumption in GB, split into one hour buckets, reported in local time |
+| **Hourly Loaded Dataset Counts** | * Number of datasets loaded into memory vs. memory consumption in GB, split into one hour buckets, reported in local time |
+| **Data Sizes**  | * Max size: The maximum size of the dataset in MB for the period shown |
 |  |  |
 
-### Paginated reports tab
+#### Paginated reports tab
 
 The **Paginated reports** tab shows detailed metrics on the health of the paginated reports in your capacities.
 
@@ -143,14 +140,14 @@ The **Paginated reports** tab contains the following metrics.
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| **Overall usage** | * Total Views: The number of times that the report has been viewed by a user<br> * Row Count: The number of rows of data in the report<br> * Retrieval (avg): The average amount of time it takes to retrieve data for the report, in milliseconds. Long durations can indicate slow queries or other data source issues. <br> * Processing (avg): The average amount of time it takes to process the data for a report, in milliseconds<br>* Rendering (avg): The average amount of time it takes to render a report in the browser, in milliseconds<br> * Total time: The time it takes for all phases of the report, in milliseconds|
+| **Overall usage** | * Total Views: The number of times that the report has been viewed by users<br> * Row Count: The number of rows of data in the report<br> * Retrieval (avg): The average amount of time it takes to retrieve data for the report, in milliseconds. Long durations can indicate slow queries or other data source issues. <br> * Processing (avg): The average amount of time it takes to process the data for a report, in milliseconds<br>* Rendering (avg): The average amount of time it takes to render a report in the browser, in milliseconds<br> * Total time: The time it takes for all phases of the report, in milliseconds|
 | **Top 5 Reports by Average Data Retrieval Time** | * The five reports with the longest average data retrieval time, in milliseconds |
 | **Top 5 Reports by Average Report Processing Time** | * The five reports with the longest average report processing time, in milliseconds |
 | **Hourly Durations** | * Data retrieval vs. processing and rendering time, split into one hour buckets, reported in local time |
 | **Hourly Results** | * Successes, failures, and memory consumption, split into one hour buckets, reported in local time |
 |  |  |
 
-### Dataflows tab
+#### Dataflows tab
 
 The **Dataflows** tab shows detailed refresh metrics for dataflows in your capacities.
 
@@ -167,23 +164,25 @@ The **Dataflows** tab contains the following metrics.
 | **Hourly Refresh Count and Memory Consumption** | * Successes, failures, and memory consumption, split into one hour buckets, reported in local time |
 |  |  |
 
-### System tab
+#### Resource Consumption tab
 
-The **System** tab shows CPU and memory consumption across all capacities and workloads.
+The **Resource Consumption** tab shows CPU and memory consumption across all capacities and workloads.
 
-![System tab](media/service-admin-premium-monitor-capacity/system-tab.png)
+![Resource Consumption tab](media/service-admin-premium-monitor-capacity/resource-consumption-tab.png)
 
-The **System** tab contains the following metrics.
+The **Resource Consumption** tab contains the following metrics.
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| **CPU Metrics (> 80% Utilization)** | * The number of times CPU exceeded 80% of the thresholds in the past seven days, split into three minute buckets |
+| **CPU consumption** | * The number of times CPU exceeded 80% of the thresholds in the past seven days, split into three minute buckets |
 | **Memory consumption** | * Memory consumption in the past seven days, split into three minute buckets |
 |  |  |
 
-### Display Names and IDs tab
+#### IDs and Info tab
 
-The **Display Names and IDs** tab contains the names, IDs, and owners for capacities, workspaces, and workloads.
+The **IDs and Info** tab contains the names, IDs, and owners for capacities, workspaces, and workloads.
+
+![IDs and Info tab](media/service-admin-premium-monitor-capacity/info-tab.png)
 
 ## Monitor Power BI Embedded capacity
 

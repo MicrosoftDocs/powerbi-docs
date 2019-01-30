@@ -4,22 +4,21 @@ description: All about dashboard tiles in Power BI for consumers. This includes 
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 12/05/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards
 ---
 # Dashboard tiles in Power BI
-Dashboards and dashboard tiles are a feature of Power BI service, not Power BI Desktop. While dashboards tiles cannot be created or pinned in Power BI mobile, [they can be viewed and shared](mobile/mobile-tiles-in-the-mobile-apps.md). And, in Power BI mobile, you can [add pictures to your dashboard with your iPhone app](mobile/mobile-iphone-app-get-started.md).
+A tile is a snapshot of your data, pinned to the dashboard by a *designer*. A tile can be created from a report, dataset, dashboard, the Q&A question box, Excel, SQL Server Reporting Services (SSRS), and more.  This screenshot shows many different tiles pinned to a dashboard.
 
-## Dashboard tiles
 ![Power BI dashboard](./media/end-user-tiles/power-bi-dashboard.png)
 
-A tile is a snapshot of your data, pinned to the dashboard by a *designer*. A tile can be created from a report, dataset, dashboard, the Q&A question box, Excel, SQL Server Reporting Services (SSRS), and more.  This screenshot shows many different tiles pinned to a dashboard.
 
 Besides tiles pinned from reports, *designers* can add standalone tiles directly on the dashboard using **Add tile**. Standalone tiles include: text boxes, images, videos, streaming data, and web content.
 
@@ -28,7 +27,6 @@ Need help understanding the building blocks that make up Power BI?  See [Power B
 
 ## Interacting with tiles on a dashboard
 
-### Hover over a tile to change the appearance and behavior
 1. Hover over the tile to display the ellipses.
    
     ![tile ellipses](./media/end-user-tiles/ellipses_new.png)
@@ -64,7 +62,7 @@ Need help understanding the building blocks that make up Power BI?  See [Power B
 When you select a tile, what happens next depends on how the tile was created and if it has a [custom link](../service-dashboard-edit-tile.md). If it has a custom link, selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, SSRS report that is on-premises, or Q&A question that was used to create the tile.
 
 > [!NOTE]
-> The exception to this is video tiles created directly on the dashbaord using **Add tile**. Selecting a video tile (that was created this way) causes the video to play right there on the dashboard.   
+> The exception to this is video tiles created directly on the dashboard using **Add tile**. Selecting a video tile (that was created this way) causes the video to play right there on the dashboard.   
 > 
 > 
 

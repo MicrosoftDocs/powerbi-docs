@@ -1,14 +1,15 @@
 ---
-title: Connect to Azure Consumption Insights data in Power BI Desktop (Beta)
+title: Connect to Azure Consumption Insights data (Beta)
 description: Easily connect to Azure and gain insights about consumption and usage using Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -45,16 +46,27 @@ Next, provide your *Access key* to connect.
   
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
-Once you provide your *Access key* and select **Connect**, a **Navigator** window appears and shows the four tables available to you: *Summary*, *Usage*, *PriceSheet*, and *MarketPlace*. You can select a checkbox beside any table to see a preview. You can select one or more tables by checking the box beside their name, then select **Load**.
+Once you provide your *Access key* and select **Connect**, a **Navigator** window appears and shows the nine tables available to you: 
+* **Budgets**: Provides budget details to view actual costs or usage against existing budget targets. 
+* **MarketPlace**: Provides usage-based Azure Marketplace charges.
+* **PriceSheets**: Provides applicable rates by meter for an enrollment.
+* **RICharges**: Provides charges associated to your Reserved Instances over the last 24 months.
+* **RIRecommendations_Single**: Provides Reserved Instance purchase recommendations based on your usage trends on a single subscription over the last 7, 30 or 60 days.
+* **RIRecommendations_Shared**: Provides Reserved Instance purchase recommendations based on your usage trends across all your subscriptions over the last 7, 30 or 60 days.
+* **RIUsage**: Provides consumption details for your existing Reserved Instances over the last month.
+* **Summaries**: Provides a monthly summary across balances, new purchases, Azure Marketplace service charges, adjustments, and overage charges.
+* **UsageDetails**: Provides a breakdown of consumed quantities and estimated charges for an enrollment.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04.png)
+You can select a checkbox beside any table to see a preview. You can select one or more tables by checking the box beside their name, then select **Load**.
+
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04b.png)
 
 > [!NOTE]
 > The *Summary* and *PriceSheet* tables are only available for the enrollment-level API Key. Also, the data in these tables has, by default, the current month's data for *Usage* and *PriceSheet*. The *Summary* and *MarketPlace* tables are not constrained to the current month.
 > 
 > 
 
-When you select **Load** the data is loaded into **Power BI Desktop**.
+When you select **Load** the data is loaded into **Power BI Desktop**.  The connector will load data according to the table's default time period.  If you need to customize the time period, [you can setup a custom query](https://docs.microsoft.com/en-us/power-bi/desktop-connect-azure-consumption-insights#using-azure-consumption-insights).
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
 

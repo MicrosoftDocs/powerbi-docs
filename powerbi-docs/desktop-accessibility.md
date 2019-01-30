@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 01/11/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -17,11 +17,6 @@ LocalizationGroup: Create reports
 Power BI has features that enable people with disabilities to more easily consume and interact with Power BI reports. These features include the ability to consume a report using the keyboard or a screen reader, tabbing to focus on various objects on a page, and thoughtful use of markers in visualizations.
 
 ![Use different markers for line and area charts to improve accessibility](media/desktop-accessibility/accessibility_01.png)
-
-> [!NOTE]
-> These accessibility features are available with the June 2017 **Power BI Desktop** and later releases. Additional accessibility functionality is planned for future releases as well.
-> 
-> 
 
 ## Consuming a Power BI Desktop report with a keyboard or screen reader
 Beginning with the September 2017 release of **Power BI Desktop**, you can press the **?** key to show a window that describes the accessibility keyboard shortcuts available in **Power BI Desktop**.
@@ -34,23 +29,23 @@ When viewing a report, generally you should have scan mode off.
 
 You can switch focus between the report page tabs, or objects on a given report page, using **Ctrl+F6**.
 
-* When focus is on *report page tabs*, use the *Tab* or *Arrow* keys to move focus from one report page to the next. The title of the report page, and whether it is currently selected, is read out by the screen reader. To load the report page currently under focus, use the *Enter* or *Space* key.
-* When focus is on a loaded *report page*, use the *Tab* key to shift focus to each object on the page, which includes all textboxes, images, shapes, and charts. The screen reader reads the type of object, the object's title if it has one, and a description of that object if it's provided by the report author. 
+* When focus is on *report page tabs*, use the *Tab* or *Arrow* keys to move focus from one report page to the next. The title of the report page, and whether it's currently selected, is read out by the screen reader. To load the report page currently under focus, use the *Enter* or *Space* key.
+* When focus is on a loaded *report page*, use the *Tab* key to shift focus to each object on the page, which includes all textboxes, images, shapes, and charts. The screen reader reads the type of object, the object's title (if it has one), and a description of that object if it's provided by the report author. 
 
-As you navigate between visuals, if you want to interact with it further, you can press **Alt+Shift+F10** to move focus to the visual header, which contians various options including sorting, exporting the data behind the chart, and Focus mode. 
+As you navigate between visuals you can press **Alt+Shift+F10** to move focus to the visual header, which contains various options including sorting, exporting the data behind the chart, and Focus mode. 
 
 ![Press Alt+Shift+F10 in Power BI Desktop to move focus to the visual header](media/desktop-accessibility/accessibility_08.png)
 
-You can press **Alt+Shift+F11** to present an accessible version of the *Show data* window. This will let you explore the data used int he viusal in an HTML table, using the same keyboard shortcuts you normally use with your screen reader. 
+You can press **Alt+Shift+F11** to present an accessible version of the *Show data* window. This lets you explore the data used in the visual in an HTML table, using the same keyboard shortcuts you normally use with your screen reader. 
 
 ![Press Alt+Shift+F11 in Power BI Desktop to display an accessible See Data window for a visual](media/desktop-accessibility/accessibility_04.png)
 
 > [!NOTE]
 > The Show data feature is only accessible to a screen reader through this keyboard shortcut. If you open Show data through the option in the visual header, it will not be accessible to a screen reader. When using Show data, turn on scan mode to take advantage of all the hot keys your screen reader provides.
 
-Beginning with the July 2018 release of **Power BI Desktop**, slicers also have accessibility functionality built in. When you select a slicer, to adjust the value of a slicer use CTRL+right arrow (control plus the right arrow key) to move through the various controls within the slicer. For example, when you initially press CTRL+right arrow the focus is on the eraser, and pressing the SPACE bar is equivalent to clicking on the eraser button, which erases all values on the slicer. 
+Beginning with the July 2018 release of **Power BI Desktop**, slicers also have accessibility functionality built in. When you select a slicer, to adjust the value of a slicer use CTRL+right arrow (control plus the right arrow key) to move through the various controls within the slicer. For example, when you initially press CTRL+right arrow the focus is on the eraser, and pressing the SPACE bar is equivalent to clicking the eraser button, which erases all values on the slicer. 
 
-You can move through the controls in a slicer by pressing the TAB key. Pressing the TAB key when on the eraser moves to the drop-down button; another TAB then moves to the first slicer value (if there are multiple values for the slicer, such as a range). 
+You can move through the controls in a slicer by pressing the TAB key. Pressing the TAB key when on the eraser moves to the drop-down button. Another TAB then moves to the first slicer value (if there are multiple values for the slicer, such as a range). 
 
 ![Press CTRL+(right arrow key) in Power BI Desktop to adjust element or values in a slicer, press SPACE to select the element and adjust its value](media/desktop-accessibility/accessibility_07.png)
 
@@ -70,12 +65,12 @@ The following tips can help you create **Power BI Desktop** reports that are mor
   
   * Using a different *Marker shape* for each line makes it easier for report consumers to differentiate lines (or areas) from each other.
 * As a follow on to the previous bullet, don't rely on color to convey information. In addition to using shapes on line and scatter charts, don't rely on conditional formatting to provide insights in tables and matrices. 
-* Pick an intentional sort order for each visual on your report. When screen reader users navigate the data behind the chart, it will pick up the same sort order as the visual.
+* Pick an intentional sort order for each visual on your report. When screen reader users navigate the data behind the chart, it picks up the same sort order as the visual.
 * Select a *theme* that is high contrast and color blind friendly from the theme gallery, and import it using the [**Theming** preview feature](desktop-report-themes.md).
 * For every object on a report, provide *Alt Text*. Doing so ensures that consumers of your report understand what you are trying to communicate with a visual, even if they cannot see the visual, image, shape, or textbox. You can provide *Alt Text* for any object on a **Power BI Desktop** report by selecting the object (such as a visual, shape, and so on) and in the **Visualizations** pane, select the **Format** section, expand **General**, scroll to the bottom, and fill in the **Alt Text** textbox.
   
   ![Alt text for any object in a report can be added in Visualizations > Format > General > Alt Text box](media/desktop-accessibility/accessibility_02.png)
-* Make sure your reports have sufficient contrast between text and any background colors. There are several tools such as [Colour Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/) you can use to check your report colors. 
+* Make sure your reports have sufficient contrast between text and any background colors. There are several tools such as [Color Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/) you can use to check your report colors. 
 * Use text sizes and fonts that are easily readable. Small text size, or fonts that might be difficult to read, are unhelpful for accessibility.
 * Include a title, axis labels, and data labels in all visuals.
 * Use meaningful titles for all report pages.
@@ -94,7 +89,7 @@ When you use high contrast modes in Windows, those settings and the palette you 
 
 ![High contrast windows settings](media/desktop-accessibility/accessibility_05.png)
 
-**Power BI Desktop** automatically detects which high contrast theme is being used in Windows, and applies those settings to your reports. Those high contrast colors will follow the report when published to the Power BI service, or elsewhere.
+**Power BI Desktop** automatically detects which high contrast theme is being used in Windows, and applies those settings to your reports. Those high contrast colors follow the report when published to the Power BI service, or elsewhere.
 
 ![High contrast windows settings](media/desktop-accessibility/accessibility_05b.png)
 
@@ -112,12 +107,26 @@ There are a few known issues and limitations with the accessibility features, de
 * If you are using Narrator, there are some limitations around navigating Show data as an HTML table.
 
 ## Keyboard Shortcuts
+Keyboard shortcuts are helpful for moving around in Power BI reports using a keyboard. The following tables describe the shortcuts available in a Power BI report. In addition to using these keyboard shortcuts in Power BI Desktop, these shortcuts work in the following experiences as well:
+
+* Q&A Explorer dialog
+* Getting Started dialog
+* File menu and About dialog
+* Warning bar
+* File Restore dialog
+* Frowns dialog
+
+In our continued effort to improve accessibility, the previous list of experiences also support screen readers and high contrast settings.
+
+
 ### Frequently used shortcuts
 | To do this           | Press                |
 | :------------------- | :------------------- |
 | Move focus between sections  | Ctrl + F6 |
 | Move focus forward in section | Tab         |
 | Move focus backward in section | Shift + Tab |
+| Select or de-select an object | Enter or Space |
+| Multi-select objects | Ctrl + Space |
 
 ### On visual
 | To do this           | Press                |
@@ -157,7 +166,10 @@ There are a few known issues and limitations with the accessibility features, de
 | Select all occurrences of current selection | Ctrl + Shift + L |
 | Select all occurrences of current word | Ctrl + F2 |
 
-
+### Enter Data
+| To do this           | Press                |
+| :------------------- | :------------------- |
+| Exit editable grid | Ctrl + Tab |
 
 
 ## Next steps

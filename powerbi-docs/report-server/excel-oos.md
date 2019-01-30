@@ -6,7 +6,7 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
 ---
@@ -52,7 +52,7 @@ If you plan to use any Excel Online features that utilize external data access (
 1. Download Office Online Server from the [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). The download is located under those Office products on the VLSC portal. For development purposes, you can download OOS from MSDN subscriber downloads.
 2. Run Setup.exe.
 3. On the **Read the Microsoft Software License Terms** page, select **I accept the terms of this agreement** and select **Continue**.
-4. On the **Choose a file location** page, select the folder where you want the Office Online Server files to be installed (for example, C:\Program Files\Microsoft Office Web Apps*) and select **Install Now**. If the folder you specified doesn’t exist, Setup creates it for you.
+4. On the **Choose a file location** page, select the folder where you want the Office Online Server files to be installed (for example, C:\Program Files\Microsoft Office Web Apps\*) and select **Install Now**. If the folder you specified doesn’t exist, Setup creates it for you.
 
     We recommend that you install Office Online Server on the system drive.
 

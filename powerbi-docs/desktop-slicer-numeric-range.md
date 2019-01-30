@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 01/02/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -50,6 +50,14 @@ Lastly, if we select **Greater than or equal to**, then the right (highest value
 ## Snap to whole numbers with the numeric range slicer
 
 A numeric range slicer will snap to whole numbers if the data type of the underlying field is **Whole Number**. This lets your slicer to cleanly align who whole numbers. **Decimal Number** type fields let you enter or select fractions of a number. The formatting applied in the textbox matches the formatting set on the field, even though you can type in or select more precise numbers.
+
+## Display formatting with the date range slicer
+
+When using a slicer to display or set a range of dates, the format of the date is always displayed using the **Short Date** format, based on the user's browser or operating system locale. This is the display format regardless of the data type settings for the underlying data or model. 
+
+For example, you could have a long date format for the underlying data type (such as *dddd, MMMM d, yyyy* which would format a date in other visuals or circumstances as *Wednesday, March 14, 2001*), but in the date range slicer that date would be displayed in the slicer as *03/14/2001*.
+
+Displaying the **Short Date** format in the slicer ensures the length of the string stays consistent and compact within the slicer. 
 
 
 ## Limitations and considerations

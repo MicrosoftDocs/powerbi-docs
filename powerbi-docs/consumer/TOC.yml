@@ -14,6 +14,8 @@
       href: end-user-experience.md
     - name: "What can I do with Power BI?"
       href: end-user-reading-view.md
+    - name: "Sign in for the first time"
+      href: end-user-sign-in.md
   - name: Tutorials
     items:
     - name: "Create a dashboard alert"
@@ -46,10 +48,14 @@
       items: 
       - name: "What can I do with visualizations?"
         href: end-user-visualizations.md
+      - name: "Types of visualizations"
+        href: end-user-visual-type.md
       - name: "Show the data that was used to create the visualization"
         href: end-user-show-data.md
       - name: "Drill down in a visualization in Power BI"
         href: end-user-drill.md
+      - name: "Interact with ArcGIS maps"
+        href: ../power-bi-visualizations-arcgis.md
     - name: Common tasks
       items: 
       - name: "Different ways to zoom into content using Focus and Full screen modes"
@@ -76,8 +82,6 @@
         href: end-user-apps.md
       - name: "Connect to services"
         href: end-user-connect-to-services.md
-      - name: "Find and connect to organizational content packs"
-        href: end-user-content-pack.md
     - name: Ask questions of your data
       items:
       - name: "Q&A in Power BI"

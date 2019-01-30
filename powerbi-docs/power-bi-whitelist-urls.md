@@ -1,17 +1,18 @@
 ---
-title: Power BI URLs
+title: Power BI URLs for whitelisting
 description: This article describes the endpoints that should be reachable for customers using Power BI.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
+ms.custom: seodec18
 ---
 
-# Power BI URLs
+# Power BI URLs for whitelisting
 
 **The Power BI online service**, also known as the Power BI SaaS (Software as a Service) application, requires connectivity to the internet. The endpoints below should be reachable for customers using the Power BI online service.
 
@@ -64,7 +65,7 @@ To get data from specific data sources, such as OneDrive, you must be able to co
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
 | 1 | **Required:** AppSource (internal or external apps in Power BI) | appsource.microsoft.com </br> *.s-microsoft.com  | TCP 443 |
-| 2 | **Required:** Sign in and get data for content packs | *.github.com  | TCP 443 |
+| 2 | **Optional:** Sign in and get data for content packs | Depends on content packs used | Depends on content packs used |
 | 3 | **Optional:** Import files From OneDrive personal | See the [Required URLs and ports for OneDrive site](https://docs.microsoft.com/onedrive/required-urls-and-ports) | N/A |
 | 4 | **Optional:** Power BI in 60-Seconds tutorial video | *.doubleclick.net </br> *.ggpht.com </br> *.google.com </br> *.googlevideo.com </br> *.youtube.com </br> *.ytimg.com </br> fonts.gstatic.com | TCP 443 |
 | 5 | **Optional:** PubNub streaming data sources | See the [PubNub documentation](https://support.pubnub.com/support/solutions/articles/14000043522) | N/A |
@@ -86,7 +87,7 @@ Power BI depends on certain endpoints to be able to view and access the custom v
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
 | 1 | **Required:** Import a custom visual from the Marketplace interface or from a file | *.azureedge.net </br> *.blob.core.windows.net </br> store.office.com | TCP 443 |
-| 2 | **Optional:** Bing Maps | bing.com </br> platform.bing.com </br> *.dynamic.tiles.virtualearth.net </br> *.virtualearth.net | TCP 443 |
+| 2 | **Optional:** Bing Maps | bing.com </br> platform.bing.com </br> *.virtualearth.net | TCP 443 |
 | 3 | **Optional:** PowerApps | See the [Required services section](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) from the PowerApps system requirements site | N/A |
 | 4 | **Optional:** Visio | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), as well as [SharePoint Online and OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | N/A |
 | | | |
@@ -98,7 +99,7 @@ Power BI links to other related sites. These sites include those for documentati
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
 | 1 | **Optional:** Community site | community.powerbi.com </br> oxcrx34285.i.lithium.com | TCP 443 |
-| 2 | **Optional:** Documentation site | docs.microsoft.com </br> img-prod-cms-rt-microsoft-com.akamaized.net </br> statics-uhf-eas.akamaized.net </br> cdnssl.clicktale.neting-district.clicktale.net | TCP 443 |
+| 2 | **Optional:** Documentation site | docs.microsoft.com </br> img-prod-cms-rt-microsoft-com.akamaized.net </br> statics-uhf-eas.akamaized.net </br> cdnssl.clicktale.net </br> ing-district.clicktale.net | TCP 443 |
 | 3 | **Optional:** Download site (for Power BI Desktop, etc.) | download.microsoft.com | TCP 443 |
 | 4 | **Optional:** External redirects | aka.ms </br> go.microsoft.com | TCP 443 |
 | 5 | **Optional:** Ideas feedback site| ideas.powerbi.com </br> powerbi.uservoice.com | TCP 443 |

@@ -1,15 +1,15 @@
 ---
 title: Create a link to a specific location in the Power BI mobile apps
 description: Learn how to create a deep link to a specific dashboard, tile, or report in the Power BI mobile app with a uniform resource identifier (URI).
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
-ms.author: maggies
+ms.author: mshenhav
 
 ---
 # Create a link to a specific location in the Power BI mobile apps
@@ -65,6 +65,12 @@ This URI opens a specific report in the Power BI mobile app:
 To find the 36-character report object id, navigate to the specific report in the Power BI service (https://powerbi.com). For example, see the highlighted section of this URL:
 
 `https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300`
+
+If the report is in a group other than My Workspace, add `&GroupObjectId=<36-character-group-id>` either before or after the report ID. For example, 
+
+mspbi://app/OpenReport?ReportObjectId=e684af3a-9e7f-44ee-b679-b9a1c59b5d60**&GroupObjectId=8cc900cc-7339-467f-8900-fec82d748248**
+
+Note the ampersand (&) between the two.
 
 ## Open to a specific report page
 This URI opens a specific report page in the Power BI mobile app:

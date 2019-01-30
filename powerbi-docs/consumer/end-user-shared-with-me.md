@@ -1,15 +1,16 @@
 ---
-title: Display the Power BI content that has been shared with me
+title: Display the dashboards and reports that has been shared with me
 description: documentation for shared with me in Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
+ms.custom: seodec18
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/28/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Dashboards

@@ -1,15 +1,15 @@
 ---
 title: Edit Q&A linguistic schema and add phrasings - Power BI
 description: How to use Power BI Desktop to edit the linguistic schema used by Power BI Q&A.
-author: willthom
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: 'mihart'
+ms.reviewer: willthom
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/17/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
 ---
@@ -194,7 +194,7 @@ Binding: {Table: Products}
       Adjectives: [discontinued]
 ```
 
-*Measurement adjective phrasings* define a new adjective based on a numeric value that indicates the extent to which the adjective applies, such as “lengths indicate how long rivers are” and "small countryregions have small land areas". Measurement adjective phrasings are used in in these kinds of questions:
+*Measurement adjective phrasings* define a new adjective based on a numeric value that indicates the extent to which the adjective applies, such as “lengths indicate how long rivers are” and "small countryregions have small land areas". Measurement adjective phrasings are used in these kinds of questions:
 - List the long rivers
 - Which rivers are the longest?
 - List the smallest countryregions that won gold in basketball

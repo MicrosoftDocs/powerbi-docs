@@ -1,17 +1,17 @@
 ---
-title: "Create an embedded dataset for a Power BI paginated report | Microsoft Docs"
+title: "Create an embedded dataset for a Power BI paginated report (Preview)"
 description: In this article, you learn how to create an embedded dataset, based on an embedded data source, for a paginated report in the Power BI service.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/5/2018
 ms.author: maggies
 ---
-# Create an embedded dataset for a paginated report in the Power BI service
+# Create an embedded dataset for a paginated report in the Power BI service (Preview)
 In this article, you learn how to create an embedded dataset, based on an embedded data source, for a paginated report in the Power BI service. Embedded datasets are contained in a single paginated report, for use in that report. Currently, paginated reports published to the Power BI service need embedded datasets and embedded data sources. You create the embedded data source and dataset in Report Builder, while you're creating your report. 
 
 Before you can create the dataset, you need to create a data source. See [Embedded data sources for paginated reports](paginated-reports-embedded-data-source.md) in the Power BI service to learn how.

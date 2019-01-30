@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
 ms.author: maggies
@@ -55,7 +55,7 @@ Also, the audit logs provide the following events for paginated reports:
 
 ### Can I monitor this workload through the Premium Capacity Monitoring App?
 
-Not yet. Monitoring will be available at public preview as a new tab in the existing report with the same relevant details you have for your Power BI datasets.
+Yes, monitoring is available as a new tab with the same relevant details you have for your Power BI datasets.
 
 ### Do I need a Pro license to create and publish paginated reports?
 
@@ -70,8 +70,8 @@ You receive an error message, and you can't view your report until the workload 
 Default memory in each Premium SKU for paginated reports:
 
 - **P1/A4**: 20% default; 10% minimum
-- **P2/A5**: 10% default; 5% minimum
-- **P3/A6**: 5% default; 2.5% minimum
+- **P2/A5**: 20% default; 5% minimum
+- **P3/A6**: 20% default; 2.5% minimum
 
 ## General
 
@@ -109,15 +109,12 @@ Currently, paginated reports don’t support the following items:
 - Bookmarks
 - Bing map layers
 - Custom fonts
-- Hidden parameters
-
-Toggle and interactive sort aren't yet in production, but are expected soon.    
 
 You get an error message if you try to upload a file that has an unsupported feature in the Power BI service, other than toggle/sort.
 
 ### What data sources do you support currently for paginated reports?
 
-We support Azure SQL Database, and SQL Server and SQL Server Analysis Services (SSAS) tabular models using the on-premises Gateway. We don’t currently support SSAS multidimensional (MDX) models.
+We support Azure SQL Database, SQL Server and both SQL Server Analysis Services (SSAS) tabular (DAX) and multidimensional (MDX) models using the on-premises Gateway.
 
 When accessing SSAS through the Gateway, the user whose credentials are stored needs elevated permissions in SSAS to work through the Gateway.
 
@@ -131,7 +128,7 @@ Not yet, but this support is planned soon.
 
 ### Can I use stored procedures through the Gateway?
 
-You can use a store procedure through the Gateway, but not if the stored procedure has parameters.
+You can use a stored procedure through the Gateway, but you may see issues in certain scenarios if stored procedure has parameters.
 
 ### What export formats are available for my report in the Power BI service?
 
@@ -139,15 +136,15 @@ You can export to Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF, .C
 
 ### Can I print paginated reports?
 
-Currently you can export to PDF and print the file. Printing directly from a paginated report should be available soon. 
+Yes, printing is available for Paginated Reports, including a new and improved print preview experience. 
 
 ### Are e-mail subscriptions available yet for paginated reports?
 
-No, e-mail subscriptions are coming later.
+No, e-mail subscriptions are coming soon, however.
 
 ### What features from SSRS will you be supporting in the Power BI service?
 
-Our plan is to provide as close to parity between the two products as possible.  Certain things about SSRS and Power BI may not make sense to try to change to fit existing SSRS patterns, like the different permission models in Power BI, but we will be looking for feedback from customers and partners to make those types of decisions.
+Our plan is to provide feature parity for most scenarios, but certain things about SSRS and Power BI may not make sense to try to change to fit existing SSRS patterns.  For example, the different permission models in Power BI can't be mapped back to SSRS.  We will be looking for feedback from customers and partners to make those types of decisions.
 
 ### Can I run custom code in my report?
 
@@ -167,7 +164,7 @@ Not yet, but we absolutely plan to support this scenario.
 
 ### Can I share my paginated report content through a Power BI app?
 
-Currently you can share individual paginated reports with other users through the sharing action in the portal. We don’t yet support sharing in an app, but expect to soon. We’ll have the sharing button in the toolbar as well.
+Currently you can share individual paginated reports with other users through the sharing action in the portal or via the toolbar. We don’t yet support sharing in an app, but expect to soon. 
 
 ### Will other report-specific features in Power BI, like pinning to report tiles to dashboards, work with paginated reports?
 
@@ -175,15 +172,15 @@ We plan to have the reports support the same major scenarios in the service as m
 
 ### Are you planning to create a new authoring tool for paginated reports in the Power BI service?  We can’t do everything we need to with Report Builder today.
 
-We are still looking at different options here for the best tooling story, but rest assured we will have support for features like ALM, custom extensions, and other features that may only be included in one of the author tools for SSRS. 
+We are still looking at different options here for the best tooling story for paginated reports in Power BI. 
 
 ### Is a migration tool planned so SSRS customers can move their existing reports and assets to Power BI?
 
-Yes, but not until the core set of supported features in the Power BI service are complete.
+We're evaluating options here to allow content to be moved to Power BI in an automated way, but this won't be available until after GA.
 
 ### Will I ever be able to create both paginated reports and Power BI reports in a single authoring tool?
 
-We're not currently planning a single authoring tool, but we are looking at ways to potentially distribute the authoring tools together as a single BI suite vs. having individual downloads/branding.
+Potentially.  We're currently looking at ways to enable this scenario, or if we simply distribute the authoring tools together as a single BI suite vs. having individual downloads/branding.
 
 ### Is there a report viewer control for paginated reports in the Power BI service?
 

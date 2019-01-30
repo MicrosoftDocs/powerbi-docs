@@ -1,19 +1,19 @@
 ---
-title: Use the matrix visual in Power BI Desktop
-description: Learn how the matrix visual enables step layouts and granular highlighting in Power BI Desktop
+title: Use the matrix visual in Power BI
+description: Learn how the matrix visual enables step layouts and granular highlighting in Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/25/2018
+ms.date: 12/05/2018
 ms.author: mihart
 
 LocalizationGroup: Create reports
 ---
-# Use the Matrix visual in Power BI Desktop
+# Use the Matrix visual in Power BI
 With the **Matrix** visual feature, you can create matrix visuals (sometimes also referred to as *tables*) in **Power BI Desktop** and **Power BI service** reports and cross-highlight elements within the matrix with other visuals. In addition, you can select rows, columns, and even individual cells and cross-highlight. Individual cells and multiple cell selections can by copied and pasted into other applications. Lastly, to make better use of layout space, the matrix visual supports a stepped layout.
 
 ![](media/desktop-matrix-visual/matrix-visual_2a.png)
@@ -35,7 +35,25 @@ In this example, each row in the **Matrix** visual farthest to the right is show
 
 When looking at total and subtotals, remember that those values are based on the underlying data, and not solely based on the visible values. 
 
+<!-- use Nov blog post video
 
+## Expanding and collapsing row headers
+There are two ways you can expand row headers. The first is through the right-click menu. You’ll see options to expand the specific row header you clicked on, the entire level or everything down to the very last level of the hierarchy. You have similar options for collapsing row headers as well.
+
+![](media/desktop-matrix-visual/power-bi-expand1.png)
+
+You can also add +/- buttons to the row headers through the formatting pane under the row headers card. By default, the icons will match the formatting of the row header, but you can customize the icons’ color and size separately if you want. 
+Once the icons are turned on, they work similarly to the icons from PivotTables in Excel.
+
+![](media/desktop-matrix-visual/power-bi-expand2.png)
+
+The expansion state of the matrix will save with your report. It can be pinned to dashboards as well, but consumers will need to open up the report to change the state. Conditional formatting will only apply to the inner most visible level of the hierarchy. Note that this expand/collapse experience is not currently supported when connecting to AS servers older than 2016 or MD servers.
+
+![](media/desktop-matrix-visual/power-bi-expand3.png)
+
+Watch the following video to learn more about expand/collapse in the matrix:
+
+-->
 ## Using drill down with the Matrix visual
 With the **Matrix** visual, you can do all sorts of interesting drill down activities that weren't available before. This includes the ability to drill down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
 

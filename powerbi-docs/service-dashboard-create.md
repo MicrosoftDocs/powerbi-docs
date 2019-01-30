@@ -1,16 +1,16 @@
 ---
 title: Create a Power BI dashboard from a report
 description: Create a Power BI dashboard from a report
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/02/2018
-ms.author: mihart
+ms.author: maggies
 
 ---
 # Create a Power BI dashboard from a report

@@ -6,7 +6,7 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
@@ -14,7 +14,7 @@ LocalizationGroup: Gateways
 
 # Use Kerberos for single sign-on (SSO) from Power BI to on-premises data sources
 
-Use [Kerberos constrained delegation](https://technet.microsoft.com/library/jj553400.aspx) to enable seamless single sign-on connectivity. Enabling SSO makes it easy for Power BI reports and dashboards to refresh data from on-premises sources.
+Use [Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) to enable seamless single sign-on connectivity. Enabling SSO makes it easy for Power BI reports and dashboards to refresh data from on-premises sources.
 
 ## Supported data sources
 
@@ -200,6 +200,9 @@ Now that you understand how Kerberos works with a gateway, you can configure SSO
 This guide attempts to be as comprehensive as possible. If you have already completed some of these steps, you can skip them: For example you’ve already created a Service User for your BW server and mapped an SPN to it, or you’ve already installed the gsskrb5 library.
 
 ### Setup gsskrb5 on client machines and the BW server
+
+> [!NOTE]
+> gsskrb5 is no longer actively supported by SAP. For more information, see [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Also note that gsskrb5 does not allow for SSO connections from the Data Gateway to BW Message Servers. Only connections to BW Application Servers are possible.
 
 gsskrb5 must be in use by both the client and server to complete an SSO connection through the gateway. The Common Crypto Library (sapcrypto) is not currently supported.
 

@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: maggies
 
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
@@ -16,6 +16,29 @@ ms.author: jtarquino
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 
 For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
+
+## January 2019
+- **Power BI Report Server**            
+    - *Version 1.4.6960.38798 (Build 15.0.1102.222), Released: January 22, 2019*
+        - Features
+            - Power BI Reports 
+                - Support for Row-level security
+                - Expand and collapse on matrix row headers
+                - Copy and paste between .pbix files
+                - Smart alignment guides
+                - Support for SAP BW 2.0 Connector
+            - Administrators
+                - Ability to restrict extensions of resources that can be uploaded to the report server
+                - Ability to restrict supported hyperlink schemes
+        - Bug Fixes
+            - HTML Injection Vulnerability
+            - Export to PDF is not showing Euro symbol
+            - Saving a password with multiple data sources in Power BI reports invalidates non changed passwords
+            - Visuals display issues in Power BI Mobile App after being idle
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.65.5313.1421 (January 2019), Released: January 22, 2019*
+        - Contains changes required for connection with Power BI Report Server (January 2019)  
 
 ## August 2018
 - **Power BI Report Server**

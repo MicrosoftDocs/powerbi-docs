@@ -1,15 +1,15 @@
 ---
 title: 'Human Resources sample: Take a tour'
 description: 'Human Resources sample for Power BI: Take a tour'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/26/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Samples
 ---

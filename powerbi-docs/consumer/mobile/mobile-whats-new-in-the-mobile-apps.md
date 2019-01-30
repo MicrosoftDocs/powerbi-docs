@@ -1,15 +1,15 @@
 ---
 title: What's new in the mobile apps for Power BI
 description: What's new in the mobile apps for Power BI
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
-ms.author: maggies
+ms.author: mshenhav
 
 ---
 # What's new in the mobile apps for Power BI
@@ -18,6 +18,42 @@ For related "What's New" information, see:
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
+
+## December 2018
+
+### Filter is now available for landscape reports 
+
+Report's filter pane is now available for landscape reports (in addition to phone report).
+
+## November 2018
+
+### Modern visual header 
+
+Reports using the new ‘modern visual header’ will no longer allocate space for headers, resulting in less empty space and more room for your visualizations.
+
+### Enhance presentation mode (Windows)
+
+Enhanced presentation mode for Surface Hub and Windows 10 devices.  Enjoy an enhanced Surface Hub meeting room experience, with improved presentation and collaboration tools, and a chromeless, large-screen optimized view, so you can focus on your data. Presentation mode also provides tools such inking to help you effectively present and have discussions about your data. Read more about presentation mode [here](https://powerbi.microsoft.com/en-us/blog/presentation-mode-in-power-bi-windows-app/).
+
+### Portrait report layout in tablets (iOS and Android)
+
+We now use phone report layout, when it exists, for displaying reports on tablet in portrait mode orientation. Read more on [how to create phone layout in Power BI Service or Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report/).
+
+### Supporting report query string 
+
+Opening report link that includes query string will now be opened in the mobile app and be pre-filtered based on the conditions defined in the query string. Learn more on [how to create report url with query string](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+
+### Shared credentials (now in Android)
+
+Signing in to Power BI from your mobile app has never been easier. With shared credentials, we simplified the sign-in process by using other Office 365 app credentials on the device to authenticate you in the Power BI service.
+
+### In-app URLs (now in Android) 
+
+Links in reports that point to other Power BI artifacts now open directly inside the app. This enables you to build custom navigation flows, for example, linking from a report into a dashboard.
+
+### Show data and copy values
+
+Report visual action menu (...) now has the option to show the underlying data in table format. Once in the table, you can long-tap to select and copy values from that table (assuming that there is no Intune policy restricting copying).
 
 ## October 2018
 
@@ -577,7 +613,7 @@ All of the January improvements are already in the new [Power BI app for Windows
 
 **R tiles and web widgets** View these new tile types in dashboards on your mobile device.
 
-**Bing dashboards** In the Power BI service, you can now create [dashboards with Bing search results](../end-user-connect-to-services.md), and view them on your mobile device.
+**Bing dashboards** In the Power BI service, you can now create [dashboards with Bing search results](../../service-connect-to-services.md), and view them on your mobile device.
 
 **Report pages pinned as tiles to dashboards** Now that you can pin a whole report page to a dashboard in the Power BI service, you can view report pages in the Power BI app on your iPhone or on your Android phone.
 

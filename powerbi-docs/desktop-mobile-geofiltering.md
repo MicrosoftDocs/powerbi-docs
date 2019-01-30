@@ -5,7 +5,7 @@ author: maggiesMSFT
 manager: kfile
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: maggies

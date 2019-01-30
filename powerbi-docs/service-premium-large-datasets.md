@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.author: jocaplan
@@ -16,15 +16,23 @@ LocalizationGroup: Premium
 
 # Power BI Premium support for large datasets
 
-Power BI Premium supports uploads of Power BI Desktop (.pbix) files that are up to 10 GB in size. Once uploaded, a dataset can be refreshed to up to 12 GB in size. To use a large dataset, publish it to a workspace that is assigned to Premium capacity. This article describes considerations and best practices for working with large datasets.
+Power BI Premium supports uploads of Power BI Desktop (.pbix) files that are up to 10 GB in size. Once uploaded, a dataset can be refreshed to up to 12 GB in size. To use a large dataset, publish it to a workspace that is assigned to Premium capacity.
+ 
+## Best practices
 
-**Large models can be very resource-intensive** on your capacity. We recommend at least a P1 SKU for any models larger than 1 GB. The following table describes recommended SKUs for various .pbix sizes:
+This section describes best practices for working with large datasets.
+
+**Large models can be very resource-intensive** on your capacity. We recommend at least a P1 SKU for any models larger than 1 GB. Although publishing large models to workspaces backed by A SKUs up to A3 might work, refreshing them will not.
+
+The following table describes recommended SKUs for various .pbix sizes:
 
    |SKU  |Size of .pbix   |
    |---------|---------|
    |P1    | < 3 GB        |
    |P2    | < 6 GB        |
-   |P3, P4, P5    | up to 10 GB |
+   |P3, P4, P5    | up to 10 GB   |
+
+The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3. Note that publishing large models to A and EM SKUs might return errors that aren't specific to the model size limitation error in the shared capacity. Refresh errors for large models in A and EM SKUs are likely to point to timeouts. We are working on improving the error messages for these scenarios.
 
 **Your .pbix files represent data in a highly compressed state**. The data will likely expand several times when loaded in memory, and from there it may expand several more times during data refresh.
 

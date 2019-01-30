@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 12/10/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -21,17 +21,6 @@ You can create visually rich **report tooltips** that appear when you hover over
 You can create as many tooltip pages as you want. Each tooltip page can be associated with one or more fields in your report, so that when you hover over a visual that includes the selected field, the tooltip you created on your tooltip page appears when you hover over the visual, filtered by the datapoint over which your mouse is hovering. 
 
 There are all sorts of interesting things you can do with report tooltips. Let's take a look at how to create tooltips and what you must do to configure them.
-
-### Enable the tooltips preview 
-As of the September 2018 release of **Power BI Desktop**, tooltips are generally available and do not need to be enabled. 
-
-If you're using an earlier version of **Power BI Desktop**, you can enable it as a preview feature by selecting **File > Options and Settings > Options > Preview Features** in Power BI Desktop, then select the checkbox beside **Report page tooltips**. 
-
-![Enable preview feature of report tooltips](media/desktop-tooltips/desktop-tooltips_01.png)
-
-You'll need to restart **Power BI Desktop** after you make the selection to enable the preview version of report tooltips.
-
-We always recommend upgrading to the most recent release of **Power BI Desktop**, which you can get from a link in [get Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## Create a report tooltip page
 To get started, create a new report page by clicking the **+** button, found along the bottom of the **Power BI Desktop** canvas, in the page tabs area. The button is located beside the last page in the report. 
@@ -119,8 +108,7 @@ When a visual is being cross-highlighted in a report, report tooltips always sho
 ## Limitations and considerations
 There are a few limitations and considerations for **tooltips** to keep in mind.
 
-* Beginning with the September 2018 release of **Power BI Desktop**, which marked the general availablity of tooltips, Card visuals also support tooltips.
-* Beginning with the July 2018 release of **Power BI Desktop**, Table and Matrix visuals are supported for tooltips. 
+* Beginning with the December 2018 release of **Power BI Desktop**, Button visuals also support tooltips.
 * Report tooltips are not supported when viewing reports in mobile apps. 
 * Report tooltips are not supported for custom visuals. 
 * Clusters are not currently supported as fields that can be shown in report tooltips. 
