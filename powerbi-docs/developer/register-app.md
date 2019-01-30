@@ -91,7 +91,7 @@ For more information about how to register applications in Azure Active Director
 
 ## How to get the Application ID
 
-When you register an application, you receive an Application ID**.  The **Application ID** requests permissions to the users by the application to identify themselves.
+When you register an application, you receive an [Application ID](#applicationid).  The **Application ID** requests permissions to the users by the application to identify themselves.
 
 Here's how to get an application ID:
 

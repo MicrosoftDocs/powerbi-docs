@@ -192,8 +192,6 @@ var authenticationContext = new AuthenticationContext(AuthorityUrl);
 m_tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
 ```
 
-For information on how to use **await**, see [await (C# Reference)](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/await)
-
 ## Next steps
 
 Now that you have the access token, you can call the Power BI REST API to embed content. For information on how to embed your content, see [How to embed your Power BI content](embed-sample-for-customers.md#embed-content-within-your-application).
