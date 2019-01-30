@@ -41,13 +41,15 @@ You may receive a link to a template app, or you may find one that interests you
 3. Click **Go to app**.
 4. In **Get started with your new app**, select one of three options:
 
+    ![Get started with your app](media/service-template-apps-create/power-bi-template-app-get-started.png)
+
     - **Explore app**: Basic sample data exploration. Start here to get the look and feel of the app. 
-    - **Connect data**: Explore your own data. You can redefine dataset parameters and data source credentials.
+    - **Connect data**: Change the data source from the sample data to your own data source. You can redefine dataset parameters and data source credentials. See [Known limitations](service-template-apps-overview.md#known-limitations) in the template apps overview article. 
     - **Go to workspace** (most advanced option): you can make any changes allowed by the app builder.
 
     Or skip this dialog box and access the associated workspace directly via **Workspaces** in the left navigation pane.   
  
-5. Before you share it with your coworkers, you'll want to connect to your own data. Then you may want to make adjustments to the report or dashboard to make it work for your organization. 
+5. Before you share it with your coworkers, you'll want to connect to your own data. Then you may also want to make adjustments to the report or dashboard to make it work for your organization. 
 
 ## Update and distribute the app
 

@@ -35,7 +35,7 @@ To create a template app you can distribute to other Power BI tenants, you need 
 1. Open the Power BI service in a browser.
 2. Go to **Settings** > **General** > **Developer** > **Enable template app development mode**.
 
-    ![Enable template apps](media/service-template-apps-create/power-bi-template-app-develop.png)
+    ![Enable template apps](media/service-template-apps-create/power-bi-dev-template-app.png)
 
     If you don't see that option, contact your Power BI admin to grant you [permissions for template app development](service-admin-portal.md#template-apps-settings-preview) in the admin portal.
 
@@ -92,10 +92,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
     
     **Control** 
 
-    Control whether users can:
-
-    - Analyze in Excel and create live connections in Power BI Desktop
-    - Export visual data
+    Control several limitations and restrictions that your application users will have with the content of your application. You can use this control to protect certain intellectual property your app might contain.
 
     **Access**
 
@@ -136,7 +133,9 @@ Let's go through the stages.
 
     ![Create app, get link](media/service-template-apps-create/power-bi-dev-template-create-app-get-link.png)
  
-9. To test the app installation experience, copy the link in the notification window and paste it in a new browser window.
+9. To test the app installation experience, copy the link in the notification window and paste it in a new browser window. 
+
+    From here, you're following the same procedure your customers will follow. See [Install and distribute template apps in your organization](service-template-apps-install-distribute.md) for their version.
  
 10.	In the dialog box, select **Install**.
 
@@ -147,12 +146,10 @@ Let's go through the stages.
 12. In **Get started with your new app**, you see your app as your customers will see it. You and they select one of these three options:
 
     **Explore with sample data**: Basic sample data exploration with the data you included in your template app when you created it.
-    **Connect your data**: Change the data source from the sample data to your own data source. See [Known limitations](service-template-apps-overview.md#known-limitations) in the template apps overview article for details.
+    **Connect your data**: Change the data source from the sample data to your own data source. You can redefine dataset parameters and data source credentials. See [Known limitations](service-template-apps-overview.md#known-limitations) in the template apps overview article. 
     **Customize and share**: Make any changes allowed by the template app creator -- in other words, you.
  
     ![Get started with your app](media/service-template-apps-create/power-bi-template-app-get-started.png)
-		
-    Details about these options are available in [Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md). 
 
 13. Select **Explore App** to verify the test app with the sample data.
 
