@@ -200,7 +200,7 @@ For client-side filtering (JavaScript), the ISV might decide what the end user s
 
 Reference [RLS vs JavaScript filters](embedded-row-level-security.md#using-rls-vs-javascript-filters) for more details.
 
-### Is there a change with permissions with service principal?
+### How do I manage permissions for service principals with Power BI?
 
 Once you enable service principal to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal.
 

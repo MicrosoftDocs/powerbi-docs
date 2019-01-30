@@ -164,11 +164,11 @@ This approach is typically used for ISV type applications where the app owns acc
 
 ### Access token with a master account
 
-For this approach, you use a single *master* account that is a Power BI Pro user. The credentials for this account are stored with the application. The application authenticates against Azure AD with those stored credentials. The example code shown below comes from the [App owns data sample](https://github.com/guyinacube/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data)
+For this approach, you use a single *master* account that is a Power BI Pro user. The credentials for this account are stored with the application. The application authenticates against Azure AD with those stored credentials. The example code shown below comes from the [App owns data sample](https://github.com/guyinacube/PowerBI-Developer-Samples)
 
 ### Access token with service principal
 
-For this approach, you use a [service principal](embed-service-principal.md), that is an **app-only** token. The application authenticates against Azure AD with service principal. The example code shown below comes from the [App owns data sample](https://github.com/guyinacube/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data)
+For this approach, you use a [service principal](embed-service-principal.md), that is an **app-only** token. The application authenticates against Azure AD with service principal. The example code shown below comes from the [App owns data sample](https://github.com/guyinacube/PowerBI-Developer-Samples)
 
 #### EmbedService.cs
 

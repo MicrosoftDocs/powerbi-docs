@@ -322,7 +322,7 @@ You can't set this permission using the admin portal, this permission is only se
 * Analysis Services live connections are supported for on-premises servers.
 * Azure Analysis Services live connections support filtering by roles. Dynamic filtering can be done using CustomData.
 * If the underlying dataset doesn’t require RLS, the GenerateToken request must **not** contain an effective identity.
-* If the underlying dataset is a cloud model (cached model or DirectQuery), the effective identity must include at least one role,  otherwise role assignment doesn't occur.
+* If the underlying dataset is a cloud model (cached model or DirectQuery), the effective identity must include at least one role, otherwise role assignment doesn't occur.
 * A list of identities enables multiple identity tokens for dashboard embedding. For all others artifacts, the list contains a single identity.
 
 ### Token-based Identity limitations (Preview)
