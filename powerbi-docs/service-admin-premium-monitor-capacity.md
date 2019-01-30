@@ -8,21 +8,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 LocalizationGroup: Premium 
 ---
 
-# Monitor Power BI Premium and Power BI Embedded capacities
+# Monitor capacities with the Premium Capacities Metrics app
 
-This article provides an overview of monitoring the metrics for your Power BI Premium capacities. Monitoring capacity usage enables you to take an informed approach to managing your capacities.
+Monitoring your capacities is essential to making informed decisions on how best to utilize your Premium capacity resources. You can monitor capacities in the Admin portal or with the Power BI Premium Capacity Metrics app. This article describes using the Premium Capacity Metrics app. The app provides the most in-depth information into how your capacities are performing. For higher level metrics, you can also use the Health tab in the Admin portal.  To learn more about monitoring in the portal, see [Monitor Premium capacities by using the Admin portal](service-admin-premium-monitor-portal.md).
 
-You can monitor capacity with the Power BI Premium Capacity Metrics app or in the admin portal. We recommend the app, because it provides much more detail, but this article covers both options.
+The app is updated regularly with new features and functionality. Make sure you are running the latest version.
+**The latest version of the app is 1.10 (released December 13, 2018)**.
 
-**The current version of the app is 1.10 (released December 13, 2018).**
-
-.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Install the Premium Capacity Metrics app
 
@@ -197,31 +193,9 @@ You can also use the Power BI Premium Capacity Metrics app to monitor *A SKU* ca
 > [!NOTE]
 > You can monitor Power BI Embedded capacity usage in the app or the Azure portal, but not in the Power BI admin portal.
 
-## Basic monitoring in the admin portal
 
-The **Capacity settings** area of the admin portal provides four gauges that indicate the loads placed and the resources utilized by your capacity for the past seven days. These four tiles work on an hourly time window that indicates how many hours in the past seven days the corresponding metric was above 80%. This metric indicates a potential degradation for the end-user experience.
-
-![Usage in 7 days](media/service-admin-premium-monitor-capacity/usage-in-days.png)
-
-| **Metric** | **Description** |
-| --- | --- |
-| CPU |Number of times CPU exceeded 80% utilization. |
-| Memory Thrashing |Represents the memory pressure on your backend cores. Specifically, this is a metric of how many times datasets are evicted from memory due to memory pressure from the usage of multiple datasets. |
-| Memory Usage |Average memory usage, represented in gigabytes (GB). |
-| DQ/s | Number of times Direct Query and Live Connections count exceeded 80% of the limit. <br> * We limit the total number of DirectQuery and live connection queries per second.* The limits are 30/s for P1, 60/s for P2 and 120/s for P3. * Direct Query and live connection queries count add to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle<br>* This applies equally to on-premises and cloud connections. |
-|  |  |
-
-Metrics reflect utilization over the past week.  If you'd like to see a more detailed view of the metrics, you can do so by clicking any of the summary tiles.  This will take you to detailed charts for each of the metrics for your premium capacity. The following chart shows details for the CPU metric.
-
-![Detailed usage chart CPU](media/service-admin-premium-monitor-capacity/premium-usage-detailed-chart-cpu.png)
-
-These charts are summarized on an hourly basis for the past week, and can help isolate when you may have had specific performance-related events in your premium capacity.
-
-You may also export the underlying data for any of the metrics to a csv file.  This export will give you detailed information in three minute intervals for each day of the past week.
 
 ## Next steps
-
-Now that you understand how to monitor Power BI Premium capacities, learn more about optimizing capacities.
 
 > [!div class="nextstepaction"]
 > [Power BI Premium capacity resource management and optimization](service-premium-understand-how-it-works.md)
