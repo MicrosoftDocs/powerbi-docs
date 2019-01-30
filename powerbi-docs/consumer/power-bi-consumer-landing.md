@@ -41,9 +41,9 @@ LocalizationGroup: Get started
                                                 <h3>Get started</h3>
                                                 <p><a href="/power-bi/service-get-started" data-linktype="absolute-path">Take a tour of Power BI service</a></p>
                                                 <!--<p><a href="/power-bi/consumer/end-user-consumer" data-linktype="absolute-path">What can I do as a Power BI consumer?</a></p>-->
-                                                <p><a href="/power-bi/consumer/end-user-reports" data-linktype="absolute-path">What's the difference: Reports, Dashboards, Apps</a></p>
-                                                <a href="/power-bi/consumer/end-user-dashboards" data-linktype="absolute-path">What's the difference: Reports, Dashboards, Apps</a></p>
-                                                <a href="/power-bi/consumer/end-user-apps" data-linktype="absolute-path">What's the difference: Reports, Dashboards, Apps</a></p>
+                                                <p><b>What's the difference:</b> <a href="/power-bi/consumer/end-user-reports" data-linktype="absolute-path">Reports</a></p>
+                                                <b>What's the difference:</b> <a href="/power-bi/consumer/end-user-dashboards" data-linktype="absolute-path">Dashboards</a></p>
+                                                <b>What's the difference:</b> <a href="/power-bi/consumer/end-user-apps" data-linktype="absolute-path">Apps</a></p>
                                                 <p><a href="" data-linktype="absolute-path">Sign in and sign out</a></p>
                                             </div>
                                         </div>
@@ -80,7 +80,7 @@ LocalizationGroup: Get started
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Collaborate &amp; Share</h3>
+                                                <h3>Collaborate &amp; share</h3>
                                                 <p><a href="/power-bi/consumer/end-user-apps" data-linktype="absolute-path">Learn about shared apps</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-subscribe" data-linktype="absolute-path">Subscribe to content</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-commenting" data-linktype="absolute-path">Add comments to a dashboard</a></p>
