@@ -2,17 +2,17 @@
 title: Get an authentication access token
 description: Walkthrough to push data - Get an authentication access token
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
-
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-
+ms.date: 02/05/2019
 ---
+
 # Step 2: Get an authentication access token
+
 This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 
 In **step 1** of Push data into a dataset, [Register the app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md), you registered a client app in Azure AD. In this step, you get an authentication access token. Power BI apps are integrated with **Azure AD** to provide secure sign in and authorization for your app. You use a token to authenticate to **Azure AD** and gain access to Power BI resources.
@@ -20,15 +20,16 @@ In **step 1** of Push data into a dataset, [Register the app with Azure AD](walk
 Here's how to get an authentication access token.
 
 ## Get an authentication access token
+
 > **NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dataset](walkthrough-push-data.md) walkthrough.
 > 
 > 
 
 1. In Visual Studio 2015, create a **Console Application** project.
 2. Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
-   
+
      a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
-   
+
      b. In **Package Manager Console**, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
 3. Add the code below into class Program {...}.
 4. Replace "{ClientID}", with the **Client ID** you got when you registered the app. See [Register the app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md).
@@ -109,6 +110,7 @@ Below is the [complete code listing](#code).
 <a name="code"/>
 
 ## Complete code listing
+
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
@@ -168,10 +170,10 @@ Below is the [complete code listing](#code).
         }
     }
 
-
 [Next Step >](walkthrough-push-data-create-dataset.md)
 
 ## Next steps
+
 [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)  
 [Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  
 [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
@@ -179,4 +181,3 @@ Below is the [complete code listing](#code).
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-

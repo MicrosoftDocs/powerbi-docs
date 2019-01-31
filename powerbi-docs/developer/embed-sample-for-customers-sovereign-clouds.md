@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 12/10/2018
+ms.date: 02/05/2019
 ---
 
 # Tutorial: Embed a Power BI content into your application for sovereign clouds

@@ -2,17 +2,17 @@
 title: Get a dataset to add rows
 description: Walkthrough to push data - Get a dataset to add rows into a Power BI table
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
-
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-
+ms.date: 02/05/2019
 ---
+
 # Step 4: Get a dataset to add rows into a Power BI table
+
 This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 
 In **step 3** of Push data into a dataset, [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md), you called the [Create Dataset](https://docs.microsoft.com/rest/api/power-bi/datasets) operation to create a dataset in Power BI. In this step, you use the [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) operation and Newtonsoft.Json to get a dataset id. You use the dataset id in step 4 to add rows to a dataset. 
@@ -22,14 +22,13 @@ To push data into a Power BI dataset, you need to reference the table in the dat
 Here's how you get a dataset.
 
 ## Get a Power BI dataset
+
 > **NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dataset](walkthrough-push-data.md) walkthrough.
-> 
-> 
 
 1. In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](walkthrough-push-data-get-token.md), install the Newtonsoft.Json NuGet package. Here's how to install the package:
-   
+
      a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
-   
+
      b. In **Package Manager Console**, enter Install-Package Newtonsoft.Json.
 2. After the package is installed, add **using Newtonsoft.Json;** to Program.cs.
 3. In Program.cs, add the code below to get a **Dataset ID**.
@@ -106,6 +105,7 @@ Below is the [complete code listing](#code).
 <a name="code"/>
 
 ## Complete code listing
+
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using System.Net;
@@ -261,6 +261,7 @@ Below is the [complete code listing](#code).
 [Next Step >](walkthrough-push-data-add-rows.md)
 
 ## Next steps
+
 [Add rows to a Power BI table](walkthrough-push-data-add-rows.md)  
 [Newtonsoft.Json](http://www.newtonsoft.com/json)  
 [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)  
@@ -269,4 +270,3 @@ Below is the [complete code listing](#code).
 [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
