@@ -91,21 +91,7 @@ For more information about how to register applications in Azure Active Director
 
 ## How to get the Application ID
 
-When you register an application, you receive an [Application ID](#applicationid).  The **Application ID** requests permissions to the users by the application to identify themselves.
-
-Here's how to get an application ID:
-
-1. Sign into the [Azure portal](https://portal.azure.com).
-
-2. Choose your Azure AD tenant by selecting your account in the top-right corner of the page.
-
-3. In the left-hand navigation pane, select **All services**, **Azure Active Directory**, and select **App Registrations**.
-
-4. Select the application that you want to retrieve the application ID that you need to use.
-
-5. You see **Application ID** listed as a GUID. This ID is the application ID for the application.
-
-    ![Client ID listed as Application ID within app registration](media/register-app/powerbi-embedded-app-registration-client-id.png)
+When you register an application, you receive an [Application ID](embed-sample-for-customers.md#application-id).  The **Application ID** requests permissions to the users by the application to identify themselves.
 
 ## How to get the service principal object ID
 

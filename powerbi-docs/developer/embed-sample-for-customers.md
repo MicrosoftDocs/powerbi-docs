@@ -130,29 +130,29 @@ Follow the steps below to start embedding your content using the sample applicat
 
     ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
-    <a name ="applicationid"> </a> **Application ID**
+### Application ID
 
-    This attribute requires both the master account and [service principal](embed-service-principal.md).
+This attribute requires both the master account and [service principal](embed-service-principal.md).
 
-    Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions.
+Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions.
 
-    To get the **applicationId**, follow these steps:
+To get the **applicationId**, follow these steps:
 
-    1. Sign into the [Azure portal](https://portal.azure.com).
+1. Sign into the [Azure portal](https://portal.azure.com).
 
-    2. In the left-hand navigation pane, select **All Services**, and select **App Registrations**.
+2. In the left-hand navigation pane, select **All Services**, and select **App Registrations**.
 
-       ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
+    ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
-    3. Select the application that needs the **applicationId**.
+3. Select the application that needs the **applicationId**.
 
-       ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
+    ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
-    4. There's an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
+4. There's an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
 
-       ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-    <a name ="applicationsecret"> </a> **Application secret**
+### Application secret
 
     This attribute requires [service principal](embed-service-principal.md) only.
 
@@ -160,27 +160,27 @@ Follow the steps below to start embedding your content using the sample applicat
 
     To get the **ApplicationSecret**, follow these steps:
 
-    1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-    2. In the left-hand navigation pane, select **All services** and then select **App registrations**.
+2. In the left-hand navigation pane, select **All services** and then select **App registrations**.
 
-        ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    3. Select the application that needs to use the **ApplicationSecret**.
+3. Select the application that needs to use the **ApplicationSecret**.
 
-        ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    4. Select **Settings**.
+4. Select **Settings**.
 
-        ![Select Settings](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
+    ![Select Settings](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
 
-    5. Select **Keys**.
+5. Select **Keys**.
 
-        ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+    ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-    6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
+6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
 
-        ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
     <a name ="workspaceid"> </a> **Workspace ID**
 
@@ -200,44 +200,44 @@ Follow the steps below to start embedding your content using the sample applicat
 
    ![workspaceId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
 
-    <a name ="reportid"> </a> **Report ID**
+### Report ID
 
-    This attribute requires both the master account and [service principal](embed-service-principal.md).
+This attribute requires both the master account and [service principal](embed-service-principal.md).
 
-    Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
-    URL</br>
+URL</br>
 
-    ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
 
-    Powershell </br>
+Powershell </br>
 
-    ```powershell
-    Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
-    ```
+```powershell
+Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
+```
 
-    ![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
+![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
 
-    <a name ="pbiunpw"> </a> **Power BI username and password**
+### Power BI username and password**
 
-    This attribute requires the master account information only.
+This attribute requires the master account information only.
 
-    If you're using [service principal](embed-service-principal.md) to authenticate, then you don't need to fill in the username or password attributes.
+If you're using [service principal](embed-service-principal.md) to authenticate, then you don't need to fill in the username or password attributes.
 
-    * Fill in the **pbiUsername** with the Power BI master account.
-    * Fill in the **pbiPassword** with the password for the Power BI master account.
+* Fill in the **pbiUsername** with the Power BI master account.
+* Fill in the **pbiPassword** with the password for the Power BI master account.
 
-4. Now you can run the application!
+### Run the application
 
-    First select **Run** in **Visual Studio**.
+1. Select **Run** in **Visual Studio**.
 
     ![Run the application](media/embed-sample-for-customers/embed-sample-for-customers-033.png)
 
-    Then select **Embed Report**. Depending on which content you choose to test with - reports, dashboards or tiles - then select that option in the application.
+2. Then select **Embed Report**. Depending on which content you choose to test with - reports, dashboards or tiles - then select that option in the application.
 
     ![Select a content](media/embed-sample-for-customers/embed-sample-for-customers-034.png)
 
-    Now you can view the report in the sample application.
+3. Now you can view the report in the sample application.
 
     ![View application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
