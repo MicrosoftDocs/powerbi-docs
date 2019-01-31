@@ -12,7 +12,7 @@ ms.date: 01/29/2019
 LocalizationGroup: Premium 
 ---
 
-# Monitor capacities by using the Admin portal
+# Monitor capacities in the Admin portal
 
 The Health tab in the Admin portal provides high-level metrics your Premium capacity workloads. To view capacity metrics in the Admin portal, click **Capacity settings** > **Health**.
 

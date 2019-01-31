@@ -14,11 +14,11 @@ LocalizationGroup: Premium
 
 # Monitor capacities with the Premium Capacities Metrics app
 
-Monitoring your capacities is essential to making informed decisions on how best to utilize your Premium capacity resources. You can monitor capacities in the Admin portal or with the Power BI Premium Capacity Metrics app. This article describes using the Premium Capacity Metrics app. The app provides the most in-depth information into how your capacities are performing. For higher level metrics, you can also use the Health tab in the Admin portal.  To learn more about monitoring in the portal, see [Monitor Premium capacities by using the Admin portal](service-admin-premium-monitor-portal.md).
+Monitoring your capacities is essential to making informed decisions on how best to utilize your Premium capacity resources. You can monitor capacities in the Admin portal or with the Power BI Premium Capacity Metrics app. This article describes using the Premium Capacity Metrics app. The app provides the most in-depth information into how your capacities are performing. For higher level metrics, you can also use the Health tab in the Admin portal.  To learn more about monitoring in the portal, see [Monitor Premium capacities in the Admin portal](service-admin-premium-monitor-portal.md).
 
 The app is updated regularly with new features and functionality. Make sure you are running the latest version.
-**The latest version of the app is 1.10 (released December 13, 2018)**.
-
+**The latest version of the app is 1.10 (released December 13, 2018)**.   
+If you have a previous version of the app already installed, it’s best to delete it from your apps and then press CTRL+F5 to refresh. 
 
 ## Install the Premium Capacity Metrics app
 
@@ -56,25 +56,23 @@ The dashboard includes the following metrics.
 
 ### Metrics report
 
-Click the dashboard to go to the underlying report. The report has five tabs, which we describe in more detail in the following sections.
+Click the dashboard to go to the underlying report. At the bottom of the report, there are five tabs:
 
-* **Datasets**: detailed metrics on the health of the Power BI datasets in your capacities.
+* [**Datasets**](#datasets-tab) - Detailed metrics on the health of the Power BI datasets in your capacities.
 
-* **Paginated Reports**: detailed metrics on the health of the paginated reports in your capacities.
+* [**Paginated Reports**](#paginated-reports-tab) - Detailed metrics on the health of the paginated reports in your capacities.
 
-* **Dataflows**: detailed refresh metrics for dataflows in your capacities.
+* [**Dataflows**](#dataflows-tab) - Detailed refresh metrics for dataflows in your capacities.
 
-* **Resource Consumption**: overall capacity metrics including memory and CPU high utilization.
+* [**Resource Consumption**](#resource-consumption-tab) - Overall capacity metrics including memory and CPU high utilization.
 
-* **IDs and Info**: names, IDs, and owners for capacities, workspaces, and workloads.
+* [**IDs and Info**](#ids-and-info-tab) - Names, IDs, and owners for capacities, workspaces, and workloads.
 
-On each tab, you can filter metrics by capacity and date range. If no filters are selected, the report defaults to show the past week’s metrics for all capacities that are reporting metrics.
+On each tab, you can filter metrics by capacity and date range. If no filters are selected, the report defaults to show the past week’s metrics for all capacities that are reporting metrics. 
 
 #### Datasets tab
 
-Use the buttons at the top of the **Datasets** tab to navigate to different areas: **Summary**, **Refreshes**, **Query Durations**, **Query Waits**, and **Datasets**.
-
-![Datasets tab](media/service-admin-premium-monitor-capacity/datasets-tab.png)
+Use the buttons at the top of the **Datasets** tab to navigate to different areas: **Refreshes**, **Query Durations**, **Query Waits**, and **Datasets**.
 
 ##### Refreshes area
 
@@ -130,10 +128,6 @@ The **Datasets** area contains the following metrics.
 
 The **Paginated reports** tab shows detailed metrics on the health of the paginated reports in your capacities.
 
-![Paginated reports tab](media/service-admin-premium-monitor-capacity/paginated-reports-tab.png)
-
-The **Paginated reports** tab contains the following metrics.
-
 | **Report section** | **Metrics** |
 | --- | --- |
 | **Overall usage** | * Total Views: The number of times that the report has been viewed by users<br> * Row Count: The number of rows of data in the report<br> * Retrieval (avg): The average amount of time it takes to retrieve data for the report, in milliseconds. Long durations can indicate slow queries or other data source issues. <br> * Processing (avg): The average amount of time it takes to process the data for a report, in milliseconds<br>* Rendering (avg): The average amount of time it takes to render a report in the browser, in milliseconds<br> * Total time: The time it takes for all phases of the report, in milliseconds|
@@ -146,10 +140,6 @@ The **Paginated reports** tab contains the following metrics.
 #### Dataflows tab
 
 The **Dataflows** tab shows detailed refresh metrics for dataflows in your capacities.
-
-![Dataflows tab](media/service-admin-premium-monitor-capacity/dataflows-tab.png)
-
-The **Dataflows** tab contains the following metrics.
 
 | **Report section** | **Metrics** |
 | --- | --- |
@@ -164,10 +154,6 @@ The **Dataflows** tab contains the following metrics.
 
 The **Resource Consumption** tab shows CPU and memory consumption across all capacities and workloads.
 
-![Resource Consumption tab](media/service-admin-premium-monitor-capacity/resource-consumption-tab.png)
-
-The **Resource Consumption** tab contains the following metrics.
-
 | **Report section** | **Metrics** |
 | --- | --- |
 | **CPU consumption** | * The number of times CPU exceeded 80% of the thresholds in the past seven days, split into three minute buckets |
@@ -178,7 +164,6 @@ The **Resource Consumption** tab contains the following metrics.
 
 The **IDs and Info** tab contains the names, IDs, and owners for capacities, workspaces, and workloads.
 
-![IDs and Info tab](media/service-admin-premium-monitor-capacity/info-tab.png)
 
 ## Monitor Power BI Embedded capacity
 
