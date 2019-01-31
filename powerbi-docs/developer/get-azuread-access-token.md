@@ -97,7 +97,7 @@ You should now have an authorization code from Azure AD. Once **Azure AD** redir
 
 The **Microsoft.IdentityModel.Clients.ActiveDirectory** namespace can be retrieved from the [Active Directory Authentication Library](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) NuGet package.
 
-```
+```powershell
 Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
 ```
 

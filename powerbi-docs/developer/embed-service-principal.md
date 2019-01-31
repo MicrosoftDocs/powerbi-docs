@@ -136,33 +136,6 @@ Complete the first three steps in section [Get started with a service principal]
 
     There's no UI feature to move over Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task. When using the APIs with service principal, you need the service principal object ID.
 
-### How to get the service principal object ID
-
-Service principal has two different IDs that apply to different functions - service principal object ID and application ID.
-
-When using the [Power BI APIs](https://docs.microsoft.com/rest/api/power-bi/), make sure to use the **service principal object ID** to reference the service principal for use with operations and changes — for example, applying a service principal as an admin to a workspace.
-
-Below are steps to get the service principal object ID from the Azure portal.
-
-1. Create a new App registration in the Azure portal.  
-
-2. Then under **Managed application in local directory**, select the name of the application you created.
-
-   ![Managed application in local directory](media/embed-service-principal/managed-application-in-local-directory.png)
-
-    > [!Note]
-    > The object Id in the image above is not the one used with service principal.
-
-3. Select **Properties** to see the Object ID.
-
-    ![Service principal object ID properties](media/embed-service-principal/service-principal-object-id-properties.png)
-
-Below is a sample script to retrieve the service principal object ID with PowerShell.
-
-   ```powershell
-   Get-AzureADServicePrincipal -Filter "DisplayName eq '<application name>'"
-   ```
-
 ## Considerations and limitations
 
 * Service principal only works with [new app workspaces](../service-create-the-new-workspaces.md).
