@@ -168,7 +168,7 @@ LocalizationGroup: Get started
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Basic concepts</h3>
-                                                    <p>Blurb goes here</p>
+                                                    <p>Get to know the Power BI concepts and building blocks and how they all fit together.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -187,7 +187,7 @@ LocalizationGroup: Get started
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Glossary</h3>
-                                                    <p>Blurb goes here</p>
+                                                    <p>When you run into a term you don't know, look it up here.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -206,7 +206,7 @@ LocalizationGroup: Get started
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Tour</h3>
-                                                    <p>Blurb goes here</p>
+                                                    <p>Let us show you around Power BI service. Along the way you'll get familiar with our navigation and terminology.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -225,7 +225,7 @@ LocalizationGroup: Get started
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Power BI license types</h3>
-                                                    <p>Blurb goes here</p>
+                                                    <p>Your license type determines what actions you can do in Power BI. Find out which type of license you are using.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -244,7 +244,7 @@ LocalizationGroup: Get started
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Advanced concepts</h3>
-                                                    <p>Blurb goes here</p>
+                                                    <p>Ready to dig deeper? Explore these advanced topics to learn how to get the most out of your data. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -292,7 +292,7 @@ LocalizationGroup: Get started
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>FAQ-Frequently asked questions</h3>
-                                                    <p>Blurb goes here</p>
+                                                    <p>Browse through the most popular questions we get from consumers like you.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -311,7 +311,7 @@ LocalizationGroup: Get started
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Accessibility</h3>
-                                                    <p>Blurb goes here</p>
+                                                    <p>Learn how Microsoft enables people with disabilities to more easily consume and interact with Power BI. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -330,7 +330,7 @@ LocalizationGroup: Get started
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Browsers information</h3>
-                                                    <p>Blurb goes here</p>
+                                                    <p>See the list of browsers that work best with Power BI. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -349,7 +349,7 @@ LocalizationGroup: Get started
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Supported languages</h3>
-                                                    <p>Blurb goes here</p>
+                                                    <p>Power BI is translated into many languages, with more being added all the time. Learn how to choose a language in the browser. </p>
                                                 </div>
                                             </div>
                                         </div>
