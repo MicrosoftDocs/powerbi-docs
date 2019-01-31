@@ -127,11 +127,11 @@ To get the **applicationId**, follow these steps:
 
 ### Application secret
 
-    This attribute requires [service principal](embed-service-principal.md) only.
+This attribute requires [service principal](embed-service-principal.md) only.
 
-    Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works when using [service principal](embed-service-principal.md).
+Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works when using [service principal](embed-service-principal.md).
 
-    To get the **ApplicationSecret**, follow these steps:
+To get the **ApplicationSecret**, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -157,19 +157,19 @@ To get the **applicationId**, follow these steps:
 
 ### Workspace ID
 
-    This attribute requires both the master account and [service principal](embed-service-principal.md).
+This attribute requires both the master account and [service principal](embed-service-principal.md).
 
-    Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
-    URL </br>
+URL </br>
 
-    ![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
-    Powershell </br>
+Powershell </br>
 
-    ```powershell
-    Get-PowerBIworkspace -name "App Owns Embed Test"
-    ```
+```powershell
+Get-PowerBIworkspace -name "App Owns Embed Test"
+```
 
    ![workspaceId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
 
@@ -191,7 +191,7 @@ Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
 
 ![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
 
-### Power BI username and password**
+### Power BI username and password
 
 This attribute requires the master account information only.
 
@@ -216,7 +216,7 @@ If you're using [service principal](embed-service-principal.md) to authenticate,
 
 ## Embed content within your application
 
-Even though the steps to embed your content can be done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the **.NET SDK**.
+Even though the steps to embed your content are done with the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/), the example codes described in this article are made with the **.NET SDK**.
 
 Embedding for your customers within your application requires you to get an **access token** for your master account or [service principal](embed-service-principal.md) from **Azure AD**. You're required to get an [Azure AD access token](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) for your Power BI application before you make calls to the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/).
 
