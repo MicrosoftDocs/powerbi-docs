@@ -34,7 +34,7 @@ Consider the application object as the *global* representation of your applicati
 
 The application object serves as the template from which common and default properties are *derived* for use in creating corresponding service principal objects.
 
-A service principal is required per tenant where the application is used. Enabling it to establish an identity for sign-in and access to resources that are secured by the tenant. A single-tenant application has only one service principal (in its home tenant), created and consented for use during application registration.
+A service principal is required per tenant where the application is used — enabling it to establish an identity for sign-in and access to resources that are secured by the tenant. A single-tenant application has only one service principal (in its home tenant), created and consented for use during application registration.
 
 ## Service principal with Power BI Embedded
 
@@ -72,7 +72,7 @@ Different from the traditional use of a master account, using the service princi
     # The service principal object id - $sp.objectId
     # The app key - $key.value
 
-    # Sign in as a user that allowed to create app.
+    # Sign in as a user that is allowed to create an app.
     Connect-AzureAD
 
     # Create a new AAD web application
