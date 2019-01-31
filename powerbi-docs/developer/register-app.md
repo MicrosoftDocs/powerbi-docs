@@ -8,9 +8,8 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/01/2019 
+ms.date: 02/05/2019
 ---
-
 # Register an Azure AD application to use with Power BI
 
 Learn how to register an application within Azure Active Directory (Azure AD) for use with embedding Power BI content.
@@ -22,7 +21,7 @@ You register your application with Azure AD to allow your application access to 
 
 There are two ways to register your application. The first is with the [Power BI App Registration Tool](https://dev.powerbi.com/apps/), or you can do it directly within the Azure portal. The Power BI App Registration Tool is more convenient to use since there are just a few fields to complete. Use the Azure portal if you want to make changes to your app.
 
-## Register with the Power BI App Registration Tool
+## Register with the Power BI Application Registration Tool
 
 Register your application in **Azure Active Directory** to establish an identity for your application and specify permissions to Power BI REST resources. When you register an application, such as a console app or a website, you receive an identifier, which is used by the application to identify themselves to the users that they're requesting permissions.
 
@@ -48,9 +47,9 @@ Here's how to register your application with the Power BI App Registration Tool:
 
     ![App type](media/register-app/register-app-new-design-app-type.png)
 
-5. If you selected **Server-side web application** for the application type, then continue with entering a value for **Home Page URL** and **Redirect URL**. The **Redirect URL** works with any valid URL and should correspond with the application you have created. If you selected Native,** then continue to step 6.
+5. If you selected **Server-side web application** for the application type, then continue with entering a value for **Home Page URL** and **Redirect URL**. The **Redirect URL** works with any valid URL and should correspond with the application you have created. If you selected **Native**, then continue to step 6.
 
-6. Choose the APIs for the application that has access. For more information about Power BI access permissions, see [Power BI Permissions](power-bi-permissions.md). Then select **Register**.
+6. Choose the Power BI APIs that your application needs. For more information about Power BI access permissions, see [Power BI Permissions](power-bi-permissions.md). Then select **Register**.
 
     ![Choose APIs to register](media/register-app/register-app-new-app-registration-apis-register.png)
 
@@ -91,21 +90,7 @@ For more information about how to register applications in Azure Active Director
 
 ## How to get the Application ID
 
-When you register an application, you receive an Application ID**.  The **Application ID** requests permissions to the users by the application to identify themselves.
-
-Here's how to get an application ID:
-
-1. Sign into the [Azure portal](https://portal.azure.com).
-
-2. Choose your Azure AD tenant by selecting your account in the top-right corner of the page.
-
-3. In the left-hand navigation pane, select **All services**, **Azure Active Directory**, and select **App Registrations**.
-
-4. Select the application that you want to retrieve the application ID that you need to use.
-
-5. You see **Application ID** listed as a GUID. This ID is the application ID for the application.
-
-    ![Client ID listed as Application ID within app registration](media/register-app/powerbi-embedded-app-registration-client-id.png)
+When you register an application, you receive an [Application ID](embed-sample-for-customers.md#application-id).  The **Application ID** requests permissions to the users by the application to identify themselves.
 
 ## How to get the service principal object ID
 
@@ -144,7 +129,7 @@ You want to be logged in with either the *master* account, used for embedding, o
 
 ### Applying permissions programmatically
 
-1. You need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/serviceprincipal_get).
+1. You need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://developer.microsoft.com/graph/docs/api-reference/beta/api/serviceprincipal_get).
 
     You can call the *Get servicePrincipal* API without {ID}, and it gets you all of the service principals within the tenant.
 

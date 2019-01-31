@@ -4,11 +4,11 @@ description: Walkthrough to push data - Add rows to a Power BI table
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/01/2018
+ms.date: 02/05/2019
 ---
 
 # Step 5: Add rows to a Power BI table
@@ -153,7 +153,7 @@ Below is the [complete code listing](#code).
                 string resourceUri = "https://analysis.windows.net/powerbi/api";
 
                 //OAuth2 authority Uri
-                string authorityUri = "https://login.windows.net/common/oauth2/authorize";
+                string authorityUri = "https://login.microsoftonline.net/common/";
 
                 //Get access token:
                 // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken

@@ -28,7 +28,7 @@ In this tutorial, you learn the following tasks:
 
 To get started, you need a Power BI Pro account and a Microsoft Azure subscription:
 
-* If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
+* If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 * If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 * Set up your own [Azure Active Directory (Azure AD) tenant](create-an-azure-active-directory-tenant.md).
 * Install [Visual Studio](https://www.visualstudio.com/), version 2013 or later.

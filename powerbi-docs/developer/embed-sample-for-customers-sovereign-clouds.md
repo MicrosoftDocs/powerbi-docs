@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 12/10/2018
+ms.date: 02/05/2019
 ---
 
 # Tutorial: Embed a Power BI content into your application for sovereign clouds
@@ -53,7 +53,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 3. Add the GCC parameters in the web.config file as follows.
 
 ```xml
-<add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
+<add key="authorityUrl" value="https://login.microsoftonline.net/common/" />
 <add key="resourceUrl" value="https://analysis.usgovcloudapi.net/powerbi/api" />
 <add key="apiUrl" value="https://api.powerbigov.us/" />
 <add key="embedUrlBase" value="https://app.powerbigov.us" />
@@ -67,7 +67,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 3. Add the DoDCON parameters in the web.config file as follows.
 
 ```xml
-<add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
+<add key="authorityUrl" value="https://login.microsoftonlineS.net/common/" />
 <add key="resourceUrl" value="https://high.analysis.usgovcloudapi.net/powerbi/api" />
 <add key="apiUrl" value="https://api.high.powerbigov.us/" />
 <add key="embedUrlBase" value="https://app.high.powerbigov.us" />
@@ -81,7 +81,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 3. Add the DoDCON parameters in the web.config file as follows.
 
 ```xml
-<add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
+<add key="authorityUrl" value="https://login.microsoftonline.net/common/" />
 <add key="resourceUrl" value="https://mil.analysis.usgovcloudapi.net/powerbi/api" />
 <add key="apiUrl" value="https://api.mil.powerbigov.us/" />
 <add key="embedUrlBase" value="https://app.mil.powerbigov.us" />
@@ -95,7 +95,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 3. Add the Power BI for Germany cloud parameters in the web.config file as follows.
 
 ```xml
-<add key="authorityUrl" value=https://login.microsoftonline.de/common/oauth2/authorize/" />
+<add key="authorityUrl" value="https://login.microsoftonline.de/common/" />
 <add key="resourceUrl" value="https://analysis.cloudapi.de/powerbi/api" />
 <add key="apiUrl" value="https://api.powerbi.de/" />
 <add key="embedUrlBase" value="https://app.powerbi.de" />
@@ -109,7 +109,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 3. Add the Power BI for China cloud parameters in the web.config file as follows.
 
 ```xml
-<add key="authorityUrl" value=https://login.chinacloudapi.cn/common/oauth2/authorize/" />
+<add key="authorityUrl" value="https://login.chinacloudapi.cn/common/" />
 <add key="resourceUrl" value="https://analysis.chinacloudapi.cn/powerbi/api" />
 <add key="apiUrl" value="https://api.powerbi.cn/" />
 <add key="embedUrlBase" value="https://app.powerbi.cn" />

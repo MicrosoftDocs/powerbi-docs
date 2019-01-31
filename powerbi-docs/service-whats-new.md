@@ -36,7 +36,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Power BI [Report URL filter](service-url-filters.md) improvements.
 
 ### July 2018
-* Custom visuals support for [persistent filters](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/).
+* Custom visuals support for [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
 * [APIs and PowerShell Cmdlets](https://powerbi.microsoft.com/blog/announcing-apis-and-powershell-cmdlets-for-power-bi-administrators/) for Power BI administrators.
 * [Multi-Geo support](service-admin-premium-multi-geo.md) for Power BI Premium.
 
