@@ -32,14 +32,7 @@ To get started, you're required to have:
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
-<<<<<<< HEAD
 If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-=======
-* If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
-* If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-* You need to have your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) setup.
-* You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
->>>>>>> ee6aaabc90fbbc2e8da88d7fabdb20b66a3b7292
 
 ## Set up your embedded analytics development environment
 
@@ -99,12 +92,12 @@ Follow the steps below to start embedding your content using the sample applicat
 
     |**AuthenticationType = MasterUser** </br> (Power BI Pro license) | **AuthenticationType = ServicePrincipal** </br> (app-only token) |
     |---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-    | **[applicationId](#applicationid)** | **[applicationId](#applicationid)** |
-    | | **[applicationsecret](#applicationsecret)** |
-    | **[workspaceId](#workspaceid)** | **[workspaceId](#workspaceid)** |
-    | **[reportId](#reportid)** | **[reportId](#reportid)** |
-    | **[pbiUsername](#pbiunpw)** |
-    | **[pbiPassword](#pbiunpw)**
+    | **[applicationId](#application-id)** | **[applicationId](#application-id)** |
+    | | **[applicationsecret](#application-secret)** |
+    | **[workspaceId](#workspace-id)** | **[workspaceId](#workspace-id)** |
+    | **[reportId](#report-id)** | **[reportId](#report-id)** |
+    | **[pbiUsername](#power-bi-username-and-password)** |
+    | **[pbiPassword](#power-bi-username-and-password)**
 
     </center>
 
@@ -162,7 +155,7 @@ To get the **applicationId**, follow these steps:
 
     ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
-    <a name ="workspaceid"> </a> **Workspace ID**
+### Workspace ID
 
     This attribute requires both the master account and [service principal](embed-service-principal.md).
 
@@ -370,7 +363,7 @@ For more information, see [Embedded analytics capacity planning whitepaper](http
 
 Once you create a dedicated capacity, you can assign your app workspace to that dedicated capacity.
 
-To assign a dedicated capacity to a workspace using [service principal](embed-service-principal.md), use the [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). When you are using the Power BI REST APIs, make sure to use the [service principal object ID](#service-principal-object-id).
+To assign a dedicated capacity to a workspace using [service principal](embed-service-principal.md), use the [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). When you are using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md#how-to-get-the-service-principal-object-id).
 
 Follow the steps below to assign a dedicated capacity to a workspace using a **master account**.
 

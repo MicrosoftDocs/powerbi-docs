@@ -134,11 +134,9 @@ If you're already using the [new workspaces](../service-create-the-new-workspace
 
 There's no UI feature to move over Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task. When using the APIs with service principal, you need the [service principal object ID](embed-sample-for-customers.md#service-principal-object-id).
 
-### Hot to get the service principal object ID
+### How to get the service principal object ID
 
-After you create a new workspace, you need to assign the service principal as an admin to that workspace.
-
-To assign a service principal to a new app workspace you use the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). To reference service principal for operations or to make changes you use the **service principal object ID** — for example, applying a service principal as an admin to a workspace.
+To assign a service principal to a new app workspace you use the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). To reference a service principal for operations or to make changes you use the **service principal object ID** — for example, applying a service principal as an admin to a workspace.
 
 Below are steps to get the service principal object ID from the Azure portal.
 

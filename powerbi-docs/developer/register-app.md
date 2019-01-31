@@ -95,7 +95,7 @@ When you register an application, you receive an [Application ID](embed-sample-f
 
 ## How to get the service principal object ID
 
-When using the [Power BI APIs](https://docs.microsoft.com/rest/api/power-bi/), make sure to define operations using the [service principal object ID](embed-sample-for-customers.md#service-principal-object-id) to reference the service principal - for example, applying a service principal as an admin to a workspace.
+When using the [Power BI APIs](https://docs.microsoft.com/rest/api/power-bi/), make sure to define operations using the [service principal object ID](embed-service-principal.md#how-to-get-the-service-principal-object-id) to reference the service principal - for example, applying a service principal as an admin to a workspace.
 
 ## Apply permissions to your application within Azure AD
 

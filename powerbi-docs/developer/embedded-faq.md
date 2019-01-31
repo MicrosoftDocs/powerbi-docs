@@ -204,6 +204,20 @@ Reference [RLS vs JavaScript filters](embedded-row-level-security.md#using-rls-v
 
 Once you enable service principal to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal.
 
+### When to use service principal object ID vs. an application ID?
+
+To reference a service principal for operations or to make changes you use the **[service principal object ID](embed-service-principal.md#how-to-get-the-service-principal-object-id)** — for example, applying a service principal as an admin to a workspace.
+
+The **[application ID](embed-sample-for-customers.md#application-id)** is used to create the access token when passing the application ID for authentication.
+
+### Can you manage an On-premises data gateway with service principal?
+
+No - you can't manage an On-premises data gateway using a service principal.
+
+### Can you sign into the Power BI service with service principal?
+
+No - you can't sign into Power BI using service principal.
+
 ### What are the best practices to improve performance?
 
 [Power BI Embedded performance](embedded-performance-best-practices.md)
