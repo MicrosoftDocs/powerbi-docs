@@ -130,11 +130,36 @@ You can migrate to use service principal if you're currently using a master acco
 
 Complete the first three steps in section [Get started with a service principal](#get-started-with-a-service-principal), and once complete, follow the information below.
 
-If you're already using the [new workspaces](../service-create-the-new-workspaces.md) in Power BI, then add the service principal as an **admin** to the workspaces with your Power BI artifacts.
-
-However, if you're using the [traditional workspaces](../service-create-workspaces.md), copy or move your Power BI artifacts and resources into the new workspaces, and then add the service principal as an **admin** to those workspaces.
+If you're already using the [new workspaces](../service-create-the-new-workspaces.md) in Power BI, then add the service principal as an **admin** to the workspaces with your Power BI artifacts. However, if you're using the [traditional workspaces](../service-create-workspaces.md), copy or move your Power BI artifacts and resources into the new workspaces, and then add the service principal as an **admin** to those workspaces.
 
 There's no UI feature to move over Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task. When using the APIs with service principal, you need the [service principal object ID](embed-sample-for-customers.md#service-principal-object-id).
+
+### Hot to get the service principal object ID
+
+After you create a new workspace, you need to assign the service principal as an admin to that workspace.
+
+To assign a service principal to a new app workspace you use the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). To reference service principal for operations or to make changes you use the **service principal object ID** — for example, applying a service principal as an admin to a workspace.
+
+Below are steps to get the service principal object ID from the Azure portal.
+
+1. Create a new App registration in the Azure portal.  
+
+2. Then under **Managed application in local directory**, select the name of the application you created.
+
+   ![Managed application in local directory](media/embed-service-principal/managed-application-in-local-directory.png)
+
+    > [!Note]
+    > The object Id in the image above is not the one used with service principal.
+
+3. Select **Properties** to see the Object ID.
+
+    ![Service principal object ID properties](media/embed-service-principal/service-principal-object-id-properties.png)
+
+Below is a sample script to retrieve the service principal object ID with PowerShell.
+
+   ```powershell
+   Get-AzureADServicePrincipal -Filter "DisplayName eq '<application name>'"
+   ```
 
 ## Considerations and limitations
 

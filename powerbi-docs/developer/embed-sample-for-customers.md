@@ -65,33 +65,6 @@ However, if you proceed using the service principal, you need to proceed with re
 
 If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within an app workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../service-create-workspaces.md) or the [new workspaces](../service-create-the-new-workspaces.md). If you're using a *master* account, then it doesn't matter which type of workspaces you use. However, if you use *[service principal](embed-service-principal.md)* to sign into your application, then you're required to you use the new workspaces. In either scenario, both the *master* account or *service principal* must be an admin of the app workspaces involved with your application.
 
-#### Service principal object ID
-
-After you create a new workspace, you need to assign the service principal as an admin to that workspace.
-
-To assign a service principal to a new app workspace you use the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). To reference service principal for operations or to make changes you use the **service principal object ID** — for example, applying a service principal as an admin to a workspace.
-
-Below are steps to get the service principal object ID from the Azure portal.
-
-1. Create a new App registration in the Azure portal.  
-
-2. Then under **Managed application in local directory**, select the name of the application you created.
-
-   ![Managed application in local directory](media/embed-service-principal/managed-application-in-local-directory.png)
-
-    > [!Note]
-    > The object Id in the image above is not the one used with service principal.
-
-3. Select **Properties** to see the Object ID.
-
-    ![Service principal object ID properties](media/embed-service-principal/service-principal-object-id-properties.png)
-
-Below is a sample script to retrieve the service principal object ID with PowerShell.
-
-   ```powershell
-   Get-AzureADServicePrincipal -Filter "DisplayName eq '<application name>'"
-   ```
-
 ### Create and publish your reports
 
 You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. There are two ways to accomplish this task: As an end user, you can publish reports to a traditional app workspace with a master account (Power BI Pro license). If you're using service principal, you can publish reports to the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
