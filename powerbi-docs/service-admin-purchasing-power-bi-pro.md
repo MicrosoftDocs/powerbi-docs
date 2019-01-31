@@ -22,7 +22,7 @@ This article first explains how to purchase Power BI Pro licenses in Office 365.
 
 ## Prerequisites
 
-You must be a member of the [**Global administrator** or **Billing administrator**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d?ui=en-US&rs=en-US&ad=US) role in Office 365.
+You must be a member of the [**Global administrator** or **Billing administrator**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) role in Office 365.
 
 To assign licenses in Azure, you must be an owner of the Azure subscription that Power BI uses for Active Directory lookups.
 

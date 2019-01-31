@@ -130,7 +130,7 @@ You want to be logged in with either the *master* account, used for embedding, o
 
 ### Applying permissions programmatically
 
-1. You need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/serviceprincipal_get).
+1. You need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://developer.microsoft.com/graph/docs/api-reference/beta/api/serviceprincipal_get).
 
     You can call the *Get servicePrincipal* API without {ID}, and it gets you all of the service principals within the tenant.
 

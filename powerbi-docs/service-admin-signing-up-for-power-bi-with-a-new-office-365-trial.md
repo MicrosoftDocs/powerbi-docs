@@ -30,7 +30,7 @@ This article describes an alternative way to sign up for Power BI, using an Offi
 
 ## Important considerations
 
-By using this signup method, you are creating a new organizational tenant and you'll become the administrator of the tenant. For more information, see [What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md). You can add new users to your tenant, then share with them, as described in the [Office 365 admin documentation](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-SG&ad=SG).
+By using this signup method, you are creating a new organizational tenant and you'll become the administrator of the tenant. For more information, see [What is Power BI administration?](service-admin-administering-power-bi-in-your-organization.md). You can add new users to your tenant, then share with them, as described in the [Office 365 admin documentation](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ## Next steps
 

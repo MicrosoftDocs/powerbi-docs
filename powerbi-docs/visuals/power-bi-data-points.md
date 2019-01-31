@@ -36,7 +36,7 @@ For each strategy, there are defaults based on the shape and type of data being 
 ## Statistics
 Certain models can provide statistics about the number of values for certain columns. When such information is present, we leverage that information to provide better balancing across multiple hierarchies, if a visual does not explicitly override the count of values for a strategy.
 
-For more information, see [What's new in Analysis Services](https://docs.microsoft.com/en-us/sql/analysis-services/what-s-new-in-analysis-services?view=sql-server-2017)
+For more information, see [What's new in Analysis Services](https://docs.microsoft.com/sql/analysis-services/what-s-new-in-analysis-services?view=sql-server-2017)
 
 ## Dynamic limits
 In addition to the strategies above, visuals with two hierarchies of grouping columns (axis and legend, or category and series) use one additional strategy called *dynamic limits*.  Dynamic limits are designed to better balance data points. 
@@ -124,7 +124,7 @@ No reduction strategy
 - Values: Virtualization by using Window of 200 rows at a time
 
 ### Scatter chart (high density)
-See [High density scatter](https://docs.microsoft.com/en-us/power-bi/visuals/desktop-high-density-scatter-charts)
+See [High density scatter](https://docs.microsoft.com/power-bi/visuals/desktop-high-density-scatter-charts)
 
 ### Pie
 - Max points: 3,500

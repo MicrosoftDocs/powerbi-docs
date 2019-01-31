@@ -80,7 +80,7 @@ We hope this article gave you some quick insights into the job of the Power BI a
 
 [Use the Power BI admin portal](service-admin-portal.md)
 
-[Use PowerShell cmdlets](/powershell/power-bi/overview?toc=%2Fen-us%2Fpower-bi%2FTOC.json&bc=%2Fen-us%2Fpower-bi%2Fbreadcrumb%2Ftoc.json&view=powerbi-ps)
+[Use PowerShell cmdlets](/powershell/power-bi/overview)
 
 [Power BI administration FAQ](service-admin-faq.md)
 
