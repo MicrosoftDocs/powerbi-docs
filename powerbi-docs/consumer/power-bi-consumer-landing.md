@@ -41,10 +41,8 @@ LocalizationGroup: Get started
                                                 <h3>Get started</h3>
                                                 <p><a href="/power-bi/service-get-started" data-linktype="absolute-path">Take a tour of Power BI service</a></p>
                                                 <!--<p><a href="/power-bi/consumer/end-user-consumer" data-linktype="absolute-path">What can I do as a Power BI consumer?</a></p>-->
-                                                <p><b>What's the difference:</b> <a href="/power-bi/consumer/end-user-reports" data-linktype="absolute-path">Reports</a></p>
-                                                <p><b>What's the difference:</b> <a href="/power-bi/consumer/end-user-dashboards" data-linktype="absolute-path">Dashboards</a></p>
-                                                <p><b>What's the difference:</b> <a href="/power-bi/consumer/end-user-apps" data-linktype="absolute-path">Apps</a></p>
-                                                <p><a href="" data-linktype="absolute-path">Sign in and sign out</a></p>
+                                                <p><b>What's the difference:</b> <a href="/power-bi/consumer/end-user-reports" data-linktype="absolute-path">Reports</a>, <a href="/power-bi/consumer/end-user-dashboards" data-linktype="absolute-path">Dashboards</a>, <a href="/power-bi/consumer/end-user-apps" data-linktype="absolute-path">Apps</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-sign-in" data-linktype="absolute-path">Sign in and sign out</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -63,8 +61,8 @@ LocalizationGroup: Get started
                                                 <h3>View content</h3>
                                                 <p><a href="/power-bi/consumer/end-user-report-open" data-linktype="absolute-path">View a report</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-dashboard-open" data-linktype="absolute-path">View a dashboard</a></p>
-                                                <p><a href="/power-bi/consumer/end-user-apps" data-linktype="absolute-path">View an app</a></p>
-                                                <p><a href="" data-linktype="absolute-path">Is my content up-to-date?</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-app-view" data-linktype="absolute-path">View an app</a></p>
+                                                <!-- <p><a href="" data-linktype="absolute-path">Is my content up-to-date?</a></p> -->
                                             </div>
                                         </div>
                                     </div>
@@ -83,7 +81,7 @@ LocalizationGroup: Get started
                                                 <h3>Collaborate &amp; share</h3>
                                                 <p><a href="/power-bi/consumer/end-user-apps" data-linktype="absolute-path">Learn about shared apps</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-subscribe" data-linktype="absolute-path">Subscribe to content</a></p>
-                                                <p><a href="/power-bi/consumer/end-user-commenting" data-linktype="absolute-path">Add comments to a dashboard</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-comment" data-linktype="absolute-path">Add comments to a dashboard</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -103,7 +101,7 @@ LocalizationGroup: Get started
                                                 <p><a href="/power-bi/consumer/end-user-experience" data-linktype="absolute-path">Navigation - find the content you need, quickly</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-q-and-a" data-linktype="absolute-path">Q&amp;A - ask questions using natural language</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-report-filter" data-linktype="absolute-path">Interact with filters and slicers</a></p>
-                                                <p><a href="/power-bi/consumer/end-user-visualizations" data-linktype="absolute-path">Learn about the types of visuals you see in Power B</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-visual-type" data-linktype="absolute-path">Learn about the types of visuals you see in Power B</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -120,11 +118,9 @@ LocalizationGroup: Get started
                                             </div>
                                             <div class="cardText">
                                                 <h3>Get help</h3>
-                                                <p><a href="/power-bi/guided-learning/index" data-linktype="absolute-path">Microsoft LEARN self-paced training</a></p>
-                                                <p><a href="https://powerbi.microsoft.com/blog/" data-linktype="absolute-path">Read the Power BI blog</a></p>
+                                            <!--    <p><a href="/power-bi/guided-learning/index" data-linktype="absolute-path">Microsoft LEARN self-paced training</a></p>
+                                               --> <p><a href="https://powerbi.microsoft.com/blog/" data-linktype="absolute-path">Read the Power BI blog</a></p>
                                                 <p><a href="http://community.powerbi.com/" data-linktype="absolute-path">Ask questions in the Power BI forums</a></p>
-                                                <p><a href="/power-bi/videos" data-linktype="absolute-path">Watch videos</a></p>
-                                                <p><a href="https://powerbi.microsoft.com/documentation/powerbi-webinars/" data-linktype="absolute-path">Watch webinars</a></p>
                                             </div>
                                         </div>
                                     </div>
