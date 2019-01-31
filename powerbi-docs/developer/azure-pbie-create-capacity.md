@@ -14,7 +14,7 @@ ms.date: 02/05/2019
 
 # Create Power BI Embedded capacity in the Azure portal
 
-This article walks through how to create a Power BI Embedded capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
+This article walks through how to create a [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) capacity in Microsoft Azure. Power BI Embedded simplifies Power BI capabilities by helping you quickly add stunning visuals, reports, and dashboards to your apps.
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 
@@ -33,13 +33,11 @@ To complete this quickstart, you need:
 
 1. Sign into the [Azure portal](https://portal.azure.com/).
 
-2. Select **Create a resource** > **Data + analytics**.
+2. In the search box, search for *Power BI Embedded*.
 
-3. In the search box, search for *Power BI Embedded*.
+3. Within Power BI Embedded, select **Create**.
 
-4. Within Power BI Embedded, select **Create**.
-
-5. Fill in the required information and then select **Create**.
+4. Fill in the required information and then select **Create**.
 
     ![Fields to fill out to create new capacity](media/azure-pbie-create-capacity/azure-portal-create-power-bi-embedded.png)
 
@@ -52,9 +50,7 @@ To complete this quickstart, you need:
     |**Location**|The location where Power BI is hosted for your tenant. Your default location is your home region, but you can change the location using [Multi-Geo options](embedded-multi-geo.md).
     |**Pricing tier**|Select the SKU (v-core count and memory size) that meets your needs.  For details, see [Power BI Embedded pricing](https://azure.microsoft.com/pricing/details/power-bi-embedded/)|
 
-6. Select **Create**.
-
-Creation usually takes under a minute; often just a few seconds. If you select **Pin to dashboard**, you can navigate to your dashboard to see your new capacity. Alternatively, you can navigate to **All services** > **Power BI Embedded** to see if your capacity is ready.
+You can navigate to **All services** > **Power BI Embedded** to see if your capacity is ready. Alternatively, you can select **Pin to dashboard** from the notifications section or from within the blade, to navigate to your dashboard to see your new capacity.
 
 ![Azure portal dashboard with Power BI Embedded capacity](media/azure-pbie-create-capacity/azure-portal-dashboard.png)
 
