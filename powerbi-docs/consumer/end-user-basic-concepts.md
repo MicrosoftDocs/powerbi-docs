@@ -33,7 +33,7 @@ To get started, simply open a browser and type **app.powerbi.com**. The very fir
 ![Welcome screen for Power BI service](media/end-user-basic-concepts/power-bi-open.png)
 
 As you use Power BI, you'll personalize what you see when you open the website each time.  For example, some people like Power BI to open to the Home page while others have a favorite dashboard they want to see first. Don't worry, we'll teach you how to do this. 
-- [Home preview](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search)    
+- [Home preview](https://powerbi.microsoft.com/blog/introducing-power-bi-home-and-global-search)    
 - [Set content as **featured**](end-user-featured.md) 
 
 ![shows Home page view and dashboard view](media/end-user-basic-concepts/power-bi-first.png)

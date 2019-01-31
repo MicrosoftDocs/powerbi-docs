@@ -86,16 +86,18 @@ When you add a data source to the gateway, you need to provide credentials for t
 
 * [Azure Information Protection](https://docs.microsoft.com/microsoft-365/enterprise/protect-files-with-aip
 ) is not currently supported.
-* [Access Online](https://products.office.com/en-us/access) is not currently supported.
+* [Access Online](https://products.office.com/access) is not currently supported.
 * R scripts are supported only when the gateway is run in personal mode.
 
 ## Tenant level administration
 
-There is currently no single place where tenant administrators  can manage all the gateways that other users have installed and configured.  If you’re a tenant administrator, we recommend that you ask the users in your organization to add you as an administrator to every gateway they install. This allows you to manage all the gateways in your organization through the Gateway Settings page or through [PowerShell commands](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters). 
+As a tenant admin, you can see all On-premises data gateways installed within your tenant and manage them. This capability is currently in public preview. For more information, see the [Power Platform Admin Center documentation](/power-platform/admin/onpremises-data-gateway-management).
+
+Alternatively, If you’re a tenant administrator, we recommend that you ask the users in your organization to add you as an administrator to every gateway they install. This allows you to manage all the gateways in your organization through the Gateway Settings page or through [PowerShell commands](service-gateway-high-availability-clusters.md#powershell-support-for-gateway-clusters). 
 
 ## Enabling outbound Azure connections
 
-The On-premises data gateway relies on Azure Service Bus for cloud connectivity and correspondingly establishes outbound connections to its associated Azure region. By default, this is the location of your Power BI tenant. See Where is my [Power BI tenant located?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
+The On-premises data gateway relies on Azure Service Bus for cloud connectivity and correspondingly establishes outbound connections to its associated Azure region. By default, this is the location of your Power BI tenant. See Where is my [Power BI tenant located?](https://powerbi.microsoft.com/documentation/powerbi-admin-where-is-my-tenant-located/)
 If a firewall is blocking outbound connections, you must configure the firewall to allow outbound connections from the On-premises data gateway to its associated Azure region. See [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/download/details.aspx?id=41653) for details about the IP address ranges of each Azure data center.
 > [!NOTE]
 > The IP address ranges might change over time, so make sure you download the latest information on a regular basis. 
