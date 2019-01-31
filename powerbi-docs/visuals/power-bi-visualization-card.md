@@ -45,7 +45,7 @@ These instructions use the Retail Analysis Sample. To follow along, [download th
 
 
 ## Create a card from the Q&A question box
-The Q&A question box is the easiest way to make a Card. The Q&A question box is available in Power BI service from a dashboard or report and in Desktop report view. The steps below describe creating a Card from a Power BI service dashboard. If you'd like to create a card using Q&A in Power BI Desktop, [follow these instructions](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-december-feature-summary/#QandA) for the Q&A preview for Desktop reports.
+The Q&A question box is the easiest way to make a Card. The Q&A question box is available in Power BI service from a dashboard or report and in Desktop report view. The steps below describe creating a Card from a Power BI service dashboard. If you'd like to create a card using Q&A in Power BI Desktop, [follow these instructions](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#QandA) for the Q&A preview for Desktop reports.
 
 1. Create a [dashboard](../service-dashboards.md) and [get data](../service-get-data.md). This example uses the [Opportunity Analysis sample](../sample-opportunity-analysis.md).
 

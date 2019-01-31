@@ -17,7 +17,7 @@ In this quickstart you will learn how to embed a Power BI Report Server report b
 
 ![iFrame sample](media/quickstart-embed/quickstart_embed_01.png)
 ## Prerequisites
-* You will need to have [Power BI Report Server](https://powerbi.microsoft.com/en-us/report-server/) installed and configured.
+* You will need to have [Power BI Report Server](https://powerbi.microsoft.com/report-server/) installed and configured.
 * You will need to have [Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md) installed.
 * You will need to have a [SharePoint](https://docs.microsoft.com/sharepoint/install/install) environment installed and configured.
 

@@ -86,7 +86,7 @@ A method of connecting to SQL Server Analysis Services data models. Also called 
 The content index for an app.
 
 **content pack**
- A collection of pre-packaged datasets, reports, and dashboards. Now **apps**, learn [about the new workspace experience](https://docs.microsoft.com/en-us/power-bi/service-create-the-new-workspaces). 
+ A collection of pre-packaged datasets, reports, and dashboards. Now **apps**, learn [about the new workspace experience](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **content view**
 
