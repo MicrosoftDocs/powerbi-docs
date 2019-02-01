@@ -10,6 +10,7 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019 
 ---
+
 # Frequently asked questions about Power BI Embedded
 
 * If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
