@@ -167,7 +167,7 @@ Let's go through the stages.
 
     ![App in production](media/service-template-apps-create/power-bi-template-app-production.png)
 
-To make your app widely available to thousands of Power BI users in the world, we encourage you to submit it to AppSource. See “Submitting template apps to AppSource.” 
+To make your app widely available to thousands of Power BI users in the world, we encourage you to submit it to AppSource. See the [Power BI Application offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) for details. 
 
 ## Update your app
 
@@ -187,6 +187,7 @@ Now that your app is in production, you can start over in the test phase, withou
 
 See how your customers interact with your template app in [Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md).
 
+See the [Power BI Application offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer) for details on distributing your app.
 
 
 
