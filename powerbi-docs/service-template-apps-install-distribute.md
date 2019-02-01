@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/28/2019
+ms.date: 02/01/2019
 ms.author: maggies
 ---
 
@@ -15,24 +15,33 @@ ms.author: maggies
 
 The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer. This article is for Power BI analysts. It explains how you install, customize, and distribute a template app that a Power BI partner created. If you're interested in creating template apps to distribute yourself, see [Create a template app in Power BI](service-template-apps-create.md).
 
+![Power BI apps installed](media/service-template-apps-install-distribute/power-bi-get-apps.png)
+
 When you install a template app that a Power BI partner has created, you can modify it to meet the needs of your organization, and then distribute it to your colleagues as an app.  
 
 ## Prerequisites  
 
-The requirements for installing, customizing, and distributing a template app are few:  
+Here are the requirements for installing, customizing, and distributing a template app:  
 
 - A [Power BI pro license](service-self-service-signup-for-power-bi.md)
 - Familiarity with the [basic concepts of Power BI ](service-basic-concepts.md)
 - Valid installation link from the template app creator or AppSource. 
-- Permissions to install template apps. Your Power BI admin can grant you permissions in the [Template app settings in the admin portal](service-admin-portal.md#template-apps-settings-preview). 
+- Permissions to install template apps. 
 
 ## Install a template app
 
 You may receive a link to a template app. Otherwise, you can search for one that interests you in AppSource. Either way, after you install it, you can modify it and distribute it to your own organization.
 
-1. To search in AppSource, in the left navigation pane select Apps > Get apps.
+1. To search in AppSource, in the left navigation pane of the Power BI service select **Apps** > **Get apps**.
+
+    ![Get apps](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
+
 2. In AppSource, select **Apps**.
-3. Browse or search for the app.
+
+    ![Search in AppSource](media/service-template-apps-install-distribute/power-bi-appsource.png)
+
+3. Browse or search for the app, then select **Get it now**.
+
 4. Select the installation link, or copy and paste it into your browser window to start the installation.  
 
 2. In the dialog box, select **Install**.
@@ -41,7 +50,7 @@ You may receive a link to a template app. Otherwise, you can search for one that
 
     When installation succeeds, you see a notification that your new app is ready. 
 
-3. Click **Go to app**.
+3. Select **Go to app**.
 4. In **Get started with your new app**, select one of three options:
 
     ![Get started with your app](media/service-template-apps-create/power-bi-template-app-get-started.png)
@@ -56,11 +65,25 @@ You may receive a link to a template app. Otherwise, you can search for one that
 
 ## Update and distribute the app
 
-1. When you've finished customizing, select **Update app** in the upper-right corner.  
+After you've updated the app for your organization, you're ready to publish it. The steps are the same for publishing any other app. See Publish your app for details. 
+1. When you've finished customizing, in sthe workspace list view select **Update app** in the upper-right corner.  
+
+    ![Start app installation](media/service-template-apps-install-distribute/power-bi-start-install-app.png)
+
 2. In **Details**, you can modify the description and background color.
+
+   ![Set app description and color](media/service-template-apps-install-distribute/power-bi-install-app-details.png)
+
 3. In **Content**, you can select a landing page, either the dashboard or the report.
+
+   ![Set app landing page](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+
 4. In **Access**, you give access either to selected users or to your whole organization.  
+
+   ![Set app access](media/service-template-apps-install-distribute/power-bi-install-access.png)
+
 5. Select **Update app**. 
+
 6. After it's successfully published, you can copy the link and share it with whomever you've given access to. If you've shared it with them, they also see it on the **My organization** tab in AppSource.
 
 ## Next steps 
