@@ -67,7 +67,7 @@ You may receive a link to a template app. Otherwise, you can search for one that
 
 After you've updated the app for your organization, you're ready to publish it. The steps are the same as for publishing any other app. 
 
-1. When you've finished customizing, in sthe workspace list view select **Update app** in the upper-right corner.  
+1. When you've finished customizing, in the workspace list view select **Update app** in the upper-right corner.  
 
     ![Start app installation](media/service-template-apps-install-distribute/power-bi-start-install-app.png)
 

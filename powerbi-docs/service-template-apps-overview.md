@@ -22,7 +22,7 @@ You build template apps that allow your customers to connect and instantiate wit
 You submit your partner-built template apps to the Cloud Partner Portal. The apps then become publicly available in the Power BI App gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). Here's an example of the public template app experience.  
 
 ## Overview
-The general process to develop and submit an template app involves multiple steps, some of which you can accomplish at the same time.
+The general process to develop and submit a template app involves multiple steps, some of which you can accomplish at the same time.
 
 
 |Power BI Desktop |  |Power BI service  |  |Cloud Partner Portal  |
@@ -84,14 +84,14 @@ To publish a template app to the Power BI service and AppSource, you must meet t
 | Contents from files | Only PBIX files are allowed. These file types aren't supported: .rdl files (paginated reports), Excel workbooks   |
 | Data sources | DirectQuery isn't allowed <br>Live connections aren’t allowed (no AS Azure\on-premises) <br>On-premises data sources aren't allowed(Personal\Enterprise gateways aren’t supported) <br>Real Time not allowed (no support for pushdataset) <br>Composite models |
 | Dataset: cross-workspace | No cross-workspace datasets are allowed  |
-| Content: Dashboards | Real Time tiles aren’t allowed (in other words, no support for PushDataset or pubnub) |
+| Content: Dashboards | Real-time tiles aren’t allowed (in other words, no support for PushDataset or pubnub) |
 | Query parameters | Parameters of type “Any”\”Binary” type  will block refresh operation for dataset |
 | Custom visuals | Only publicly available custom visuals are supported. Organization store visuals not supported |
 
 
 
 ## Support
-For support during development, please use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). This is actively monitored and managed. Customer incidents quickly find their way to the appropriate team.
+For support during development, use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). We actively monitor and manage this site. Customer incidents quickly find their way to the appropriate team.
 
 ## Next step
 
