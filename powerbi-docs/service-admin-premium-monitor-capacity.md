@@ -1,5 +1,5 @@
 ---
-title: Monitor Power BI Premium capacities in your organization
+title: Monitor Power BI Premium capacities with the Premium Capacity Metrics app.
 description: Use the Power BI admin portal and Power BI Premium Capacity Metrics app
 author: mgblythe
 ms.author: mblythe
@@ -12,31 +12,42 @@ ms.date: 01/29/2019
 LocalizationGroup: Premium 
 ---
 
-# Monitor capacities with the Premium Capacities Metrics app
+# Monitor Premium capacities with the app
 
-Monitoring your capacities is essential to making informed decisions on how best to utilize your Premium capacity resources. You can monitor capacities in the Admin portal or with the Power BI Premium Capacity Metrics app. This article describes using the Premium Capacity Metrics app. The app provides the most in-depth information into how your capacities are performing. For higher level metrics, you can also use the Health tab in the Admin portal.  To learn more about monitoring in the portal, see [Monitor Premium capacities in the Admin portal](service-admin-premium-monitor-portal.md).
+Monitoring your capacities is essential to making informed decisions on how best to utilize your Premium capacity resources. You can monitor capacities in the Admin portal or with the **Power BI Premium Capacity Metrics** app. This article describes using the Premium Capacity Metrics app. The app provides the most in-depth information into how your capacities are performing. For a higher level overview of average use metrics over the last seven days, you can use the Admin portal. To learn more about monitoring in the portal, see [Monitor Premium capacities in the Admin portal](service-admin-premium-monitor-portal.md).
 
 The app is updated regularly with new features and functionality. Make sure you are running the latest version.
-**The latest version of the app is 1.10 (released December 13, 2018)**.   
+**The latest version of the app is 1.10.1.1 (released February 4th, 2019)**.   
 If you have a previous version of the app already installed, it’s best to delete it from your apps and then press CTRL+F5 to refresh. 
 
-## Install the Premium Capacity Metrics app
+## Install the app
 
-You can go straight to the [Premium Capacity Metrics app](https://app.powerbi.com/groups/me/getapps/services/capacitymetrics) or install it like you do other apps in Power BI.
+You can go straight to [Premium Capacity Metrics app](https://app.powerbi.com/groups/me/getapps/services/capacitymetrics), or install it like you do other apps in Power BI.
 
-1. In Power BI, click **Apps**.
 
+1. In Power BI, click **Apps**.   
     ![Go to Apps](media/service-admin-premium-monitor-capacity/apps.png)
 
-1. On the right side, click **Get apps**.
+2. On the right side, click **Get apps**.
+3. In the **Apps** category, search for **Power BI Premium Capacity Metrics app**.
+4. Subscribe to install the app.
 
-1. In the **Apps** category, search for **Power BI Premium Capacity Metrics app**.
+Be patient. It takes a few minutes to install and refresh metrics. If the app shows blank metrics, press F5 to refresh your browser.
 
-1. Subscribe to install the app.
 
-Now that you've installed the app, you can see metrics about the capacities in your organization. Let's take a look at some of the key metrics that are available.
+## Get app refresh history
 
-## Use the metrics app
+To check the last time your Premium Capacity Metrics app refreshed, click **Settings** > **Datasets** > **Power BI Premium Capacity Metrics** > **Refresh History**. 
+
+![Refresh history in Settings](media/settings-refresh-history.png)
+
+The last refresh is shown, or click **Refresh history** to see scheduled and on demand refreshes.
+
+![Last refresh](media/service-admin-premium-monitor-capacity/settings-last-refresh.png)
+
+## Monitor a capacity with the app
+
+Now that you've installed the app, you can see metrics for the capacities in your organization. Let's take a look at some of the key metrics that are available.
 
 ### Metrics dashboard
 
@@ -44,7 +55,7 @@ When you open the app, it first shows a dashboard with a summary of all the capa
 
 ![Metrics app dashboard](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
-The dashboard includes the following metrics.
+The dashboard includes the following metrics:
 
 | **Report section** | **Metrics** |
 | --- | --- |
@@ -70,7 +81,7 @@ Click the dashboard to go to the underlying report. At the bottom of the report,
 
 On each tab, you can filter metrics by capacity and date range. If no filters are selected, the report defaults to show the past week’s metrics for all capacities that are reporting metrics. 
 
-#### Datasets tab
+#### Datasets
 
 Use the buttons at the top of the **Datasets** tab to navigate to different areas: **Refreshes**, **Query Durations**, **Query Waits**, and **Datasets**.
 
@@ -124,7 +135,7 @@ The **Datasets** area contains the following metrics.
 | **Data Sizes**  | * Max size: The maximum size of the dataset in MB for the period shown |
 |  |  |
 
-#### Paginated reports tab
+#### Paginated reports
 
 The **Paginated reports** tab shows detailed metrics on the health of the paginated reports in your capacities.
 
@@ -137,7 +148,7 @@ The **Paginated reports** tab shows detailed metrics on the health of the pagina
 | **Hourly Results** | * Successes, failures, and memory consumption, split into one hour buckets, reported in local time |
 |  |  |
 
-#### Dataflows tab
+#### Dataflows
 
 The **Dataflows** tab shows detailed refresh metrics for dataflows in your capacities.
 
@@ -150,7 +161,7 @@ The **Dataflows** tab shows detailed refresh metrics for dataflows in your capac
 | **Hourly Refresh Count and Memory Consumption** | * Successes, failures, and memory consumption, split into one hour buckets, reported in local time |
 |  |  |
 
-#### Resource Consumption tab
+#### Resource Consumption
 
 The **Resource Consumption** tab shows CPU and memory consumption across all capacities and workloads.
 
@@ -160,14 +171,14 @@ The **Resource Consumption** tab shows CPU and memory consumption across all cap
 | **Memory consumption** | * Memory consumption in the past seven days, split into three minute buckets |
 |  |  |
 
-#### IDs and Info tab
+#### IDs and Info
 
 The **IDs and Info** tab contains the names, IDs, and owners for capacities, workspaces, and workloads.
 
 
 ## Monitor Power BI Embedded capacity
 
-You can also use the Power BI Premium Capacity Metrics app to monitor *A SKU* capacities in Power BI Embedded. Those capacities will show up in the report as long as you are an admin of the capacity. However, refresh of the report fails unless you grant certain permissions to Power BI on your A SKUs:
+You can use the Power BI Premium Capacity Metrics app to monitor *A SKU* capacities in Power BI Embedded. Those capacities will show up in the report as long as you are an admin of the capacity. However, refresh of the report fails unless you grant certain permissions to Power BI on your A SKUs:
 
 1. Open your capacity in the Azure portal.
 
