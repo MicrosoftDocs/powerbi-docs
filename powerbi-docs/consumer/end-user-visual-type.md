@@ -22,7 +22,7 @@ This article is an overview of the visualizations that are packaged with Power B
 > To learn about custom visuals, search for them in the **Power BI visuals** section of [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). For each visual, you'll find a description, creator information, and either screenshots or a video. 
 
 ## List of visualizations available in Power BI
-All of these visualizations can be found in Power BI apps, dashboards, reports, and [specified in Q&A](#gna).
+All of these visualizations can be found in Power BI apps, dashboards, reports, and [specified in Q&A](#qna). To learn how to interact with visualizations, see [Interact with visualizations in reports, dashboards, and apps](end-user-visualizations.md)
 
 ### Area charts: Basic (Layered) and Stacked
 ![area chart](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
@@ -228,5 +228,5 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 ![q&a session](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
 ## Next steps
-[Visualizations in Power BI reports](end-user-visualizations.md)    
+[Interact with visualizations in reports, dashboards, and apps](end-user-visualizations.md)    
 [The right visual reference from sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
