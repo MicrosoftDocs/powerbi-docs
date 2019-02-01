@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/31/2019
 LocalizationGroup: Reports
 ---
 
@@ -35,6 +35,14 @@ URL?filter=***Table***/***Field*** eq '***value***'
 
 * **Table** and **Field** names are case-sensitive, **value** isn't.
 * Fields that are hidden from report view can still be filtered.
+
+### Reports in apps
+
+If you want to add a URL filter to a report in an app, the formatting is a little different. Links to reports in an app have a query parameter (ctid) that gets added to the URL. Query parameters need to be separated by an ampersand (&). So you need to append the query with “&filter=” (after the ctid parameter) instead of “?filter=”. 
+
+Like this example:
+
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?ctid=*ctid*&filter=*Table*/*Field* eq '*value*'
 
 ### Field types
 
@@ -113,10 +121,10 @@ A Power BI URL filter can include numbers in the following formats.
 |Number type  |Example  |
 |---------|---------|
 |**integer**     |   5      |
-|**long**     |   5L or 5l      |
+|**long**     |   5 L or 5 l      |
 |**double**     |   5.5 or 55e-1 or 0.55e+1 or 5D or 5d or 0.5e1D or 0.5e1d or 5.5D or 5.5d or 55e-1D or 55e-1d     |
-|**decimal**     |   5M or 5m or 5.5M or 5.5m      |
-|**float**     | 5F or 5f or 0.5e1F or 0.5e-1d        |
+|**decimal**     |   5 M or 5 m or 5.5 M or 5.5 m      |
+|**float**     | 5 F or 5 f or 0.5e1 F or 0.5e-1 d        |
 
 ### Date data types
 

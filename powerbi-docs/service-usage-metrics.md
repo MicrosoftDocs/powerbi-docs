@@ -155,7 +155,7 @@ When disabling usage metrics for their entire organization, admins can use the *
 
 ## Usage metrics in national clouds
 
-Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Due to this unique model for local regulations, usage metrics are not available in national clouds. For more information, see [national clouds](https://powerbi.microsoft.com/en-us/clouds/).
+Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Due to this unique model for local regulations, usage metrics are not available in national clouds. For more information, see [national clouds](https://powerbi.microsoft.com/clouds/).
 
 ## Considerations and limitations
 
