@@ -1,5 +1,5 @@
 ---
-title: Quickly find and view your reports and dashboards using Cortana
+title: Quickly find and view reports and dashboards using Cortana
 description: Use Cortana with Power BI to get answers from your data. Currently works with reports and dashboards.
 author: maggiesMSFT
 manager: kfile
@@ -7,7 +7,7 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2018
+ms.date: 01/30/2019
 ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
@@ -18,7 +18,7 @@ Use Cortana across your Windows 10 devices to get instant answers to your import
 ![Cortana search field](media/service-cortana-intro/power-bi-cortana-searchbox.png)
 
 ## Preview the new Cortana *dashboard* search experience for Windows 10
-For a while now you've been able to [use Cortana to retrieve certain types of report pages](service-cortana-answer-cards.md). Now we've added a **new experience** -- the ability to also retrieve dashboards. Try it out and please [send us feedback ](mailto:pbicortanasg@microsoft.com). Eventually the *new experience* will be extended to include Cortana search for reports as well.  One of the key benefits of the new experience is that you don't need to do anything special to set it up -- no enabling Cortana or configuring Windows 10. It just works.
+For a while now you've been able to [use Cortana to retrieve certain types of report pages](service-cortana-answer-cards.md). Now we've added a **new experience** -- the ability to also retrieve dashboards. Try it out and please [send us feedback at Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi). Eventually the *new experience* will be extended to include Cortana search for reports as well.  One of the key benefits of the new experience is that you don't need to do anything special to set it up -- no enabling Cortana or configuring Windows 10. It just works.
 
 > [!NOTE]
 > If it doesn't "just work," see the [Troubleshooting article](service-cortana-troubleshoot.md) for help.
@@ -123,7 +123,8 @@ When you ask a question in Cortana, Power BI answers from report pages designed 
 * Cortana for Power BI is currently only available in English.
 * Cortana for Power BI is only available on Windows mobile devices.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](http://community.powerbi.com/).
+Feedback? [Send feedback to Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi).
 
 ## Next steps
 [Enable the Cortana - Power BI - Windows integration for reports](service-cortana-enable.md)
