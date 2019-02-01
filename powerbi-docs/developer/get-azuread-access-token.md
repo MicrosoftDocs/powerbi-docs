@@ -1,6 +1,6 @@
 ---
 title: Authenticate users and get an Azure AD access token for your application
-description: Learn how to register an application within Azure Active Directory for use with embedding Power BI content.
+description: Learn how to register an application in Azure Active Directory for use with embedding Power BI content.
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -8,24 +8,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/01/2019 
+ms.date: 02/05/2019
 ---
 
 # Get an Azure AD access token for your Power BI application
 
-Learn how you can authenticate users within your Power BI application and retrieve an access token to use with the REST API.
+Learn how you can authenticate users in your Power BI application and retrieve an access token to use with the REST API.
 
-Before you can call the Power BI REST API, you need to get an Azure Active Directory (Azure AD) **authentication access token** (access token). An **access token** is used to allow your app access to **Power BI** dashboards, tiles and reports. To learn more about Azure Active Directory **access token** flow, see [Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx).
+Before you can call the Power BI REST API, you need to get an Azure Active Directory (Azure AD) **authentication access token** (access token). An **access token** is used to allow your app access to **Power BI** dashboards, tiles, and reports. To learn more about Azure Active Directory **access token** flow, see [Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx).
 
-Depending on how you are embedding content, the access token will be retrieved differently. Two different approaches are used within this article.
+Depending on how you're embedding content, the access token is retrieved differently. Two different approaches are used in this article.
 
 ## Access token for Power BI users (user owns data)
 
-This example is for when your users will manually log into Azure AD with their organziation login. This is used when embedding content for Power BI users that will access content they have access to within the Power BI service.
+This example is for when your users manually log into Azure AD with their organization login. This task is used when embedding content for Power BI users that access content has access to the Power BI service.
 
 ### Get an authorization code from Azure AD
 
-The first step to get an **access token** is to get an authorization code from **Azure AD**. To do this, you construct a query string with the following properties, and redirect to **Azure AD**.
+The first step to get an **access token** is to get an authorization code from **Azure AD**. Construct a query string with the following properties, and redirect to **Azure AD**.
 
 #### Authorization code query string
 
@@ -36,7 +36,7 @@ var @params = new NameValueCollection
     //See the Redirect class to see how "code" is used to AcquireTokenByAuthorizationCode
     {"response_type", "code"},
 
-    //Client ID is used by the application to identify themselves to the users that they are requesting permissions from. 
+    //Client ID is used by the application to identify themselves to the users that they are requesting permissions from.
     //You get the client id when you register your Azure app.
     {"client_id", Properties.Settings.Default.ClientID},
 
@@ -51,7 +51,7 @@ var @params = new NameValueCollection
 
 After you construct a query string, you redirect to **Azure AD** to get an **authorization code**.  Below is a complete C# method to construct an **authorization code** query string, and redirect to **Azure AD**. After you have the authorization code, you get an **access token** using the **authorization code**.
 
-Within redirect.aspx.cs, [AuthenticationContext.AcquireTokenByAuthorizationCode](https://msdn.microsoft.com/library/azure/dn479531.aspx) will then be called to generate the token.
+Within redirect.aspx.cs, [AuthenticationContext.AcquireTokenByAuthorizationCode](https://msdn.microsoft.com/library/azure/dn479531.aspx) calls to generate the token.
 
 #### Get authorization code
 
@@ -97,7 +97,7 @@ You should now have an authorization code from Azure AD. Once **Azure AD** redir
 
 The **Microsoft.IdentityModel.Clients.ActiveDirectory** namespace can be retrieved from the [Active Directory Authentication Library](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) NuGet package.
 
-```
+```powershell
 Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
 ```
 
@@ -160,40 +160,37 @@ protected void Page_Load(object sender, EventArgs e)
 
 ## Access token for non-Power BI users (app owns data)
 
-This approach is typically used for ISV type applications where the app owns access to the data. Users will not necessarily be Power BI users and the application controls authentication and access for the end users.
+This approach is typically used for ISV type applications where the app owns access to the data. Users aren't necessarily Power BI users, and the application controls authentication and access for the end users.
 
 ### Access token with a master account
 
-For this approach, you use a single *master* account that is a Power BI Pro user. The credentials for this account are stored with the application. The application will authenticate against Azure AD with those stored credentials. The example code shown below comes from the [App owns data sample](https://github.com/guyinacube/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data)
+For this approach, you use a single *master* account that is a Power BI Pro user. The credentials for this account are stored with the application. The application authenticates against Azure AD with those stored credentials. The example code shown below comes from the [App owns data sample](https://github.com/guyinacube/PowerBI-Developer-Samples)
 
 ### Access token with service principal
 
-For this approach, you use a [service principal](embed-service-principal.md), that is an **app-only** token. The application authenticates against Azure AD with service princiapl. The example code shown below comes from the [App owns data sample](https://github.com/guyinacube/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data)
+For this approach, you use a [service principal](embed-service-principal.md), that is an **app-only** token. The application authenticates against Azure AD with service principal. The example code shown below comes from the [App owns data sample](https://github.com/guyinacube/PowerBI-Developer-Samples)
 
-#### HomeController.cs
+#### EmbedService.cs
 
 ```csharp
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
-
-// Create a user password cradentials.
-var credential = new UserPasswordCredential(Username, Password);
-
-// Authenticate using created credentials
 var authenticationContext = new AuthenticationContext(AuthorityUrl);
-var authenticationResult = await authenticationContext.AcquireTokenAsync(ResourceUrl, ClientId, credential);
+       AuthenticationResult authenticationResult = null;
+       if (AuthenticationType.Equals("MasterUser"))
+       {
+              // Authentication using master user credentials
+              var credential = new UserPasswordCredential(Username, Password);
+              authenticationResult = authenticationContext.AcquireTokenAsync(ResourceUrl, ApplicationId, credential).Result;
+       }
+       else
+       {
+             // Authentication using app credentials
+             var credential = new ClientCredential(ApplicationId, ApplicationSecret);
+             authenticationResult = await authenticationContext.AcquireTokenAsync(ResourceUrl, credential);
+       }
 
-if (authenticationResult == null)
-{
-    return View(new EmbedConfig()
-    {
-        ErrorMessage = "Authentication Failed."
-    });
-}
 
-var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
+m_tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
 ```
-
-For information on how to use **await**, see [await (C# Reference)](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/await)
 
 ## Next steps
 
