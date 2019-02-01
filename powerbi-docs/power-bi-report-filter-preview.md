@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 01/31/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -18,6 +18,9 @@ LocalizationGroup: Reports
 This article spells out the new filter experience: Filters in Power BI are getting new functionality and a new design. When you design reports in Power BI Desktop or in the Power BI service, you can make the Filters pane to look like and act with the whole report. In the new experience, the old Filters pane acts as a filter editing pane, and the new Filter pane is the only one your report consumers see. 
  
 ![Default view (no additional customization applied)](media/power-bi-report-filter-preview/power-bi-filter-reading.png)
+
+> [!NOTE]
+> The new filter experience is in preview. New builds may override formatting you've already set.
 
 As a report designer, here's what you can do with the new filters:
 
@@ -79,6 +82,7 @@ A big part of this new experience is that you can now format the filter pane to 
 - Background transparency
 - Filter pane border on or off
 - Filter pane border color
+- Filter pane title and header font, color, and text size
 
 You can also format these elements for filter cards, depending on if they're applied (set to something) or available (cleared): 
 
@@ -86,6 +90,8 @@ You can also format these elements for filter cards, depending on if they're app
 - Background transparency
 - Border: on or off
 - Border color
+- Font, color, and text size
+- Input box color
 
 ### Set the format for the Filters pane and cards
 
@@ -96,11 +102,11 @@ You can also format these elements for filter cards, depending on if they're app
 
 1. Expand **Filter pane** to set color for the background, icon, and left border, to complement the report page.
 
-    ![Expand Filter pane](media/power-bi-report-filter-preview/power-bi-filter-format-pane.png)
+    ![Expand Filter pane](media/power-bi-report-filter-preview/power-bi-filter-format-pane-font.png)
 
 1. Expand **Filter cards** to set the **Available** and **Applied** color and border. If you make available and applied cards different colors, it's obvious which filters are applied. 
   
-    ![Expand Filter card](media/power-bi-report-filter-preview/power-bi-filter-format-card.png)
+    ![Expand Filter card](media/power-bi-report-filter-preview/power-bi-filter-format-card-font.png)
 
 ## View filters for a visual in Reading mode
 
