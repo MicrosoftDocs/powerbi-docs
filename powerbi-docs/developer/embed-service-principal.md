@@ -8,7 +8,7 @@ ms.reviewer: nishalit
 ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 02/05/2019 
+ms.date: 02/05/2019
 ---
 
 # Service principal with Power BI (Preview)
@@ -61,9 +61,9 @@ There are differences between using a service principal and a standard master ac
 
 ## Get started with a service principal
 
-Different from the traditional use of a master account, using the service principal (app-only token) requires a few different pieces to set up. Now to get started with the service principal (app-only token), you need to set up the right environment.
+Different from the traditional use of a master account, using the service principal (app-only token) requires a few different pieces to set up. To get started with service principal (app-only token), you need to set up the right environment.
 
-1. [Register a server-side web application](register-app.md) in Azure Active Directory (AAD) to use with Power BI. After registering an application you can capture an Application ID, an Application secret, and the service principal object ID to access your Power BI content. You can create a service principal with [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+1. [Register a server-side web application](register-app.md) in Azure Active Directory (AAD) to use with Power BI. After registering an application you can capture an application ID, an application secret, and the service principal object ID to access your Power BI content. You can create a service principal with [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
     Below is a sample script to create a new Azure Active Directory application.
 
@@ -117,7 +117,7 @@ Different from the traditional use of a master account, using the service princi
 
 5. Add the service principal as an **admin** to the new workspace you created. You can manage this task through the [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) or with the Power BI service.
 
-6. Now choose to embed your content within a sample application, or within your application.
+6. Now choose to embed your content within a sample application, or within your own application.
 
     * [Embed content using the sample application](embed-sample-for-customers.md#embed-content-using-the-sample-application)
     * [Embed content within your application](embed-sample-for-customers.md#embed-content-within-your-application)
@@ -132,11 +132,11 @@ Complete the first three steps in section [Get started with a service principal]
 
 If you're already using the [new workspaces](../service-create-the-new-workspaces.md) in Power BI, then add the service principal as an **admin** to the workspaces with your Power BI artifacts. However, if you're using the [traditional workspaces](../service-create-workspaces.md), copy or move your Power BI artifacts and resources into the new workspaces, and then add the service principal as an **admin** to those workspaces.
 
-There's no UI feature to move Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task. When using the APIs with service principal, you need the [service principal object ID](#how-to-get-the-service-principal-object-id).
+There's no UI feature to move Power BI artifacts and resources from one workspace to another, so you need to use [APIs](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) to accomplish this task. When using the APIs with service principal, you need the service principal object ID.
 
 ### How to get the service principal object ID
 
-To assign a service principal to a new app workspace, you use the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/). To reference a service principal for operations or to make changes you use the **service principal object ID** — for example, applying a service principal as an admin to a workspace.
+To assign a service principal to a new app workspace, you use the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). To reference a service principal for operations or to make changes you use the **service principal object ID** — for example, applying a service principal as an admin to a workspace.
 
 Below are steps to get the service principal object ID from the Azure portal.
 
