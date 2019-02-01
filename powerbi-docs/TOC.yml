@@ -681,8 +681,6 @@
         href: service-template-apps-create.md
       - name: "Install & distribute template apps"
         href: service-template-apps-install-distribute.md
-      - name: "Test template apps"
-        href: service-template-apps-tests.md
     - name: Troubleshoot
       items: 
       - name: "Forgot your password for Power BI?"

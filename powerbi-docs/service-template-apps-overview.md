@@ -1,5 +1,5 @@
 ---
-title: What are Power BI template apps?  (preview)
+title: What are Power BI template apps? (preview)
 description: This article is an overview of the Power BI template app program. Learn how to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  
 author: maggiesMSFT
 manager: kfile
@@ -46,7 +46,7 @@ Here are the high-level steps.
 
 1. Build a report in Power BI Desktop. Use parameters so you can save it as a file other people can use. 
 
-1. Create a workspace for your template app in your tenant on the Power BI service (app.powerbi.com). You Power BI admin needs to grant you [permissions to create template apps](service-admin-portal.md#template-apps-settings-preview).
+1. Create a workspace for your template app in your tenant on the Power BI service (app.powerbi.com). 
 
 1. Import your .pbix file and add content such as a dashboard to your app. 
 

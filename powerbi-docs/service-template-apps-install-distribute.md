@@ -28,9 +28,12 @@ The requirements for installing, customizing, and distributing a template app ar
 
 ## Install a template app
 
-You may receive a link to a template app, or you may find one that interests you in AppSource. Either way, your first step is to install it. After that, you can modify it and distribute it to your own organization.
+You may receive a link to a template app. Otherwise, you can search for one that interests you in AppSource. Either way, after you install it, you can modify it and distribute it to your own organization.
 
-1. Select the installation link, or copy and paste it into your browser window to start the installation.  
+1. To search in AppSource, in the left navigation pane select Apps > Get apps.
+2. In AppSource, select **Apps**.
+3. Browse or search for the app.
+4. Select the installation link, or copy and paste it into your browser window to start the installation.  
 
 2. In the dialog box, select **Install**.
 

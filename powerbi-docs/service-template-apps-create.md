@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/28/2019
+ms.date: 02/01/2019
 ms.author: maggies
 ---
 
@@ -143,12 +143,8 @@ Let's go through the stages.
  
 11. Select **Go to app**.
  
-12. In **Get started with your new app**, you see your app as your customers will see it. You and they select one of these three options:
+12. In **Get started with your new app**, you see your app as your customers will see it. 
 
-    **Explore with sample data**: Basic sample data exploration with the data you included in your template app when you created it.
-    **Connect your data**: Change the data source from the sample data to your own data source. You can redefine dataset parameters and data source credentials. See [Known limitations](service-template-apps-overview.md#known-limitations) in the template apps overview article. 
-    **Customize and share**: Make any changes allowed by the template app creator -- in other words, you.
- 
     ![Get started with your app](media/service-template-apps-create/power-bi-template-app-get-started.png)
 
 13. Select **Explore App** to verify the test app with the sample data.
