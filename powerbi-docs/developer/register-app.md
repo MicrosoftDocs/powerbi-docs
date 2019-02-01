@@ -8,8 +8,9 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 02/05/2019 
 ---
+
 # Register an Azure AD application to use with Power BI
 
 Learn how to register an application within Azure Active Directory (Azure AD) for use with embedding Power BI content.
