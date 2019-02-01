@@ -40,7 +40,7 @@ A service principal is required per tenant where the application is used — ena
 
 With service principal, you can mask your master account information in your application by using an application ID and an application secret. You no longer need to hard-code a master account into your application to authenticate.
 
-Since **Power BI APIs** and **Power BI .NET SDK** now support calls using service principal, you can use the [Power BI APIs](https://docs.microsoft.com/rest/api/power-bi/) with service principal. For example, you can make changes to workspaces such as create workspaces, add or remove users from workspaces, and import content into workspaces.
+Since **Power BI APIs** and **Power BI .NET SDK** now support calls using service principal, you can use the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/) with service principal. For example, you can make changes to workspaces such as create workspaces, add or remove users from workspaces, and import content into workspaces.
 
 You can only use service principal if your Power BI artifacts and resources are stored in the [new Power BI workspace](../service-create-the-new-workspaces.md).
 

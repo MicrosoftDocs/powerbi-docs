@@ -20,7 +20,7 @@ ms.date: 02/05/2019
 
 ### What is Power BI Embedded?
 
-Microsoft Power BI Embedded (PBIE) allows application developers to embed stunning, fully interactive reports, into applications without the time and expense of building their own data visualizations and controls from the ground-up.
+[Microsoft Power BI Embedded (PBIE)](azure-pbie-what-is-power-bi-embedded.md) allows application developers to embed stunning, fully interactive reports, into applications without the time and expense of building their own data visualizations and controls from the ground-up.
 
 ### Who is the target audience for Power BI Embedded?
 
@@ -28,7 +28,7 @@ Developers and software companies making their applications referred to as indep
 
 ### How is Power BI Embedded different from Power BI the service?
 
-Power BI Embedded is intended for ISVs or developers who are building applications and want to embed visuals into those applications to help their customers make decisions without building an analytics’ solution from the ground up. Embedded analytics enables business users to access the business data and perform queries to generate insights using this data within the application.
+Power BI Embedded is intended for ISVs or developers who are building applications and want to embed visuals into those applications to help their customers make decisions without building an analytics’ solution from the ground up. [Embedded analytics](embedding.md) enables business users to access the business data and perform queries to generate insights using this data within the application.
 
 Power BI is a software-as-a-service analytics solution that gives organizations a single view of their most critical business data.
 
@@ -202,7 +202,11 @@ Reference [RLS vs JavaScript filters](embedded-row-level-security.md#using-rls-v
 
 ### How do I manage permissions for service principals with Power BI?
 
-Once you enable [service principal](embed-service-principal.md) to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal. 
+Once you enable [service principal](embed-service-principal.md) to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal.
+
+You can't do this through the UI currently.
+
+However, you can [get started](embed-service-principal.md#get-started-with-a-service-principal) using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/) to manage the permissions.
 
 ### When to use an application ID vs. a service principal object ID?
 
@@ -212,11 +216,17 @@ To reference a service principal for operations or to make changes you use the *
 
 ### Can you manage an On-premises data gateway with service principal?
 
-No - you can't manage an On-premises data gateway using a service principal.
+You can't manage an On-premises data gateway (data gateway) using [service principal](embed-service-principal.md) like you can with a master account.
+
+With a master account, you can install a data gateway, add users to the gateway, connect to data sources, and do other administrative tasks.
+
+With service principal, you can configure [row-level security (RLS)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview) using an SQL Server Analysis Services (SSAS) on-premises live connection data source. This way you can manage users and their access to data in SSAS when integrating with **Power BI Embedded** using service principal.
 
 ### Can you sign into the Power BI service with service principal?
 
 No - you can't sign into Power BI using service principal.
+
+Also, you can’t consume content as a user in external applications (SaaS embed), only when you generate an embed token.
 
 ### What are the best practices to improve performance?
 
