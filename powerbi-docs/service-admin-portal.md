@@ -168,11 +168,11 @@ The following image shows the option to export data from a tile.
 > [!NOTE]
 > Disabling **Export Data** also prevents users from using the **Analyze in Excel** feature, as well as using the Power BI service live connection.
 
-### Export reports as PowerPoint presentations
+### Export reports as PowerPoint presentations or PDF documents
 
-Users in the organization can export Power BI reports as PowerPoint files. [Learn more](consumer/end-user-powerpoint.md)
+Users in the organization can export Power BI reports as PowerPoint files or PDF documents. [Learn more](consumer/end-user-powerpoint.md)
 
-The following image shows the **File** menu for a report when the **Export reports as PowerPoint presentations** setting is enabled.
+The following image shows the **File** menu for a report when the **Export reports as PowerPoint presentations or PDF documents** setting is enabled.
 
 ![Export reports as PowerPoint presentations](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
