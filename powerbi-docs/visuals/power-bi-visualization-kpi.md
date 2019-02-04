@@ -21,7 +21,7 @@ A Key Performance Indicator (KPI) is a visual cue that communicates the amount o
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
 ## Prerequisites
-* [Power BI Desktop - it's free!](https://powerbi.microsoft.com/en-us/get-started/)
+* [Power BI Desktop - it's free!](https://powerbi.microsoft.com/get-started/)
 * [The Retail Analysis sample PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
 
 ## When to use a KPI
