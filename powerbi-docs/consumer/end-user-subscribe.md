@@ -81,4 +81,4 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 
 ## Next steps
 
-[Search for and sort content](end-user-search-sort.mc)
+[Search for and sort content](end-user-search-sort.md)
