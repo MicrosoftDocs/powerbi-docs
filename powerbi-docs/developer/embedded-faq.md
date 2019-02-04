@@ -81,7 +81,7 @@ Here is a partial list of differences you may use with each.
 
 ### What are the prerequisites to create a PBIE capacity in Azure?
 
-* You need to sign in to your organizational directory (MSA accounts are not supported).
+* Sign in to your organizational directory (MSA accounts are not supported).
 * You need to have a Power BI tenant, that is, at least one user in your directory has signed up to Power BI. 
 * You need to have an Azure subscription in your organizational directory.
 
@@ -204,9 +204,9 @@ Reference [RLS vs JavaScript filters](embedded-row-level-security.md#using-rls-v
 
 Once you enable [service principal](embed-service-principal.md) to be used with Power BI, the application's AD permissions don't take effect anymore. The application's permissions are then managed through the Power BI admin portal.
 
-You can't do this through the UI currently.
+Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions, create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
 
-However, you can [get started](embed-service-principal.md#get-started-with-a-service-principal) using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/) to manage the permissions.
+This situation matters when you add the service principal as an **admin** to the new workspace. You can manage this task through the [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) or with the Power BI service.
 
 ### When to use an application ID vs. a service principal object ID?
 
