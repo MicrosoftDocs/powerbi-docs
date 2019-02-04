@@ -40,7 +40,7 @@ LocalizationGroup: Get started
                                             <div class="cardText">
                                                 <h3>Get started</h3>
                                                 <p><a href="/power-bi/service-get-started" data-linktype="absolute-path">Take a tour of Power BI service</a></p>
-                                                <p><a href="/power-bi/consumer/end-user-consumer" data-linktype="absolute-path">What is a Power BI ***consumer***?</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-consumer" data-linktype="absolute-path">What is a Power BI <b><i>consumer</i></b>?</a></p>
                                                 <p><b>What's the difference:</b> <a href="/power-bi/consumer/end-user-reports" data-linktype="absolute-path">Reports</a>, <a href="/power-bi/consumer/end-user-dashboards" data-linktype="absolute-path">Dashboards</a>, <a href="/power-bi/consumer/end-user-apps" data-linktype="absolute-path">Apps</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-sign-in" data-linktype="absolute-path">Sign in and sign out</a></p>
                                             </div>
@@ -176,7 +176,7 @@ LocalizationGroup: Get started
                                 </a>
                             </li>
                             <li>
-                                <a href="/power-bi/consumer/End-user-basic-glossary" data-linktype="absolute-path">
+                                <a href="/power-bi/consumer/End-user-glossary" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -195,7 +195,7 @@ LocalizationGroup: Get started
                                 </a>
                             </li>
                             <li>
-                                <a href="/power-bi/consumer/End-user-basic-tour" data-linktype="absolute-path">
+                                <a href="/power-bi/consumer/end-user-experience" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -214,7 +214,7 @@ LocalizationGroup: Get started
                                 </a>
                             </li>
                             <li>
-                                <a href="/power-bi/consumer/service-admin-licensing-organization" data-linktype="absolute-path">
+                                <a href="../service-admin-licensing-organization" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -258,7 +258,7 @@ LocalizationGroup: Get started
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/advanced-concepts.svg" alt="Advanced Concepts" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/interact-analyze.svg" alt="All Power BI consumer documentation" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -382,7 +382,7 @@ LocalizationGroup: Get started
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/privacy.svg" alt="Privacy" data-linktype="relative-path">
+                                                        <img src=media/end-user-consumer/interact-analyze.svg"  alt="All Power BI consumer documentation" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
