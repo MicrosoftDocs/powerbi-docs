@@ -19,28 +19,28 @@ See code example below how to perform the encryption in .NET
 
 credendials provided to EncodeCredentials method below should be in one of the following formats depending on the credentials type
 
-**Basic / Windows credentials**
+*Basic / Windows credentials*
 ```
 var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
 ```
 
-**Key credentials**
+*Key credentials*
 ```
 var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=\"}]}";
 ```
 
-**OAuth2 credentials**
+*OAuth2 credentials*
 ```
 var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"eyJ0....fwtQ\"}]}";
 ```
 
 
-**Anonymous credentials**
+*Anonymous credentials*
 ```
 var credentials = "{\"credentialData\":\"\"}";
 ```
 
-### Encrypt credentials
+**Encrypt credentials**
 ```
 public static class AsymmetricKeyEncryptionHelper
 {
