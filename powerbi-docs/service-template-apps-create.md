@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/01/2019
+ms.date: 02/04/2019
 ms.author: maggies
 ---
 
@@ -67,7 +67,9 @@ As with a regular Power BI app workspace, your next step is to create the conten
 
 - [Create your Power BI content](power-bi-creator-landing.md) in your app workspace.
 
-If you're using parameters in Power Query, make sure they have well-defined type (for example, Text). The types Any and Binary aren't supported. See [Known limitations](service-template-apps-overview.md#known-limitations) in the template apps overview article for other limitations in the preview.
+If you're using parameters in Power Query, make sure they have well-defined type (for example, Text). The types Any and Binary aren't supported. 
+
+[Tips for authoring template apps in Power BI (preview)](service-template-apps-tips.md) has suggestions to consider when creating reports and dashboards for your template app.
 
 ## Create the test template app
 

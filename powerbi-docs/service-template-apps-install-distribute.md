@@ -1,5 +1,5 @@
 ---
-title: Install and distribute template apps in your organization - Power BI
+title: Distribute template apps in your organization - Power BI (preview)
 description: Learn about installing, customizing, and distributing template apps in your organization in Power BI.
 author: maggiesMSFT
 manager: kfile
@@ -11,7 +11,7 @@ ms.date: 02/01/2019
 ms.author: maggies
 ---
 
-# Install and distribute template apps in your organization 
+# Install and distribute template apps in your organization - Power BI (preview)
 
 The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer. This article is for Power BI analysts. It explains how you install, customize, and distribute a template app that a Power BI partner created. If you're interested in creating template apps to distribute yourself, see [Create a template app in Power BI](service-template-apps-create.md).
 
@@ -56,7 +56,7 @@ You may receive a link to a template app. Otherwise, you can search for one that
     ![Get started with your app](media/service-template-apps-create/power-bi-template-app-get-started.png)
 
     - **Explore app**: Basic sample data exploration. Start here to get the look and feel of the app. 
-    - **Connect data**: Change the data source from the sample data to your own data source. You can redefine dataset parameters and data source credentials. See [Known limitations](service-template-apps-overview.md#known-limitations) in the template apps overview article. 
+    - **Connect data**: Change the data source from the sample data to your own data source. You can redefine dataset parameters and data source credentials. See [Known limitations](service-template-apps-tips.md#known-limitations) in the template apps tips article. 
     - **Go to workspace** (most advanced option): you can make any changes allowed by the app builder.
 
     Or skip this dialog box and access the associated workspace directly via **Workspaces** in the left navigation pane.   

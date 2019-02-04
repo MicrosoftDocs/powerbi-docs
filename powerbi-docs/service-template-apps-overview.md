@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/28/2019
+ms.date: 02/04/2019
 ms.author: maggies
 ---
 
@@ -73,22 +73,7 @@ To publish a template app to the Power BI service and AppSource, you must meet t
 - Consider offering more than one template app for separate unique scenarios. 
 - Enable data customization, for example support custom connection and parameters configuration by the installer.
 
-## Known limitations
-
-| Feature | Known Limitation |
-|---------|---------|
-|Contents:  Datasets   | Exactly one dataset should be present |
-|Contents: Reports     | Up to one report    |
-| Contents: Dashboards | Up to one non-empty dashboard |
-| Contents: Dataflows | No support for dataflows |
-| Contents from files | Only PBIX files are allowed. These file types aren't supported: .rdl files (paginated reports), Excel workbooks   |
-| Data sources | DirectQuery isn't allowed <br>Live connections aren’t allowed (no AS Azure\on-premises) <br>On-premises data sources aren't allowed(Personal\Enterprise gateways aren’t supported) <br>Real Time not allowed (no support for pushdataset) <br>Composite models |
-| Dataset: cross-workspace | No cross-workspace datasets are allowed  |
-| Content: Dashboards | Real-time tiles aren’t allowed (in other words, no support for PushDataset or pubnub) |
-| Query parameters | Parameters of type “Any”\”Binary” type  will block refresh operation for dataset |
-| Custom visuals | Only publicly available custom visuals are supported. Organization store visuals not supported |
-
-
+See [Tips for authoring template apps in Power BI (preview)](service-template-apps-tips.md) for more suggestions.
 
 ## Support
 For support during development, use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). We actively monitor and manage this site. Customer incidents quickly find their way to the appropriate team.

@@ -679,6 +679,8 @@
         href: service-template-apps-overview.md
       - name: "Create template apps"
         href: service-template-apps-create.md
+      - name: "Tips for creating template apps"
+        href: service-template-apps-tips.md
       - name: "Install & distribute template apps"
         href: service-template-apps-install-distribute.md
     - name: Troubleshoot
