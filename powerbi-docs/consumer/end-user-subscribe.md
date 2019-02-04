@@ -3,7 +3,7 @@ title: Subscribe yourself to reports and dashboards
 description: Learn how to subscribe yourself and your colleagues to an emailed snapshot of a Power BI report or dashboard.
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: 'cmfinlan'
 featuredvideoid: 
 
 ms.service: powerbi
@@ -13,8 +13,6 @@ ms.date: 02/05/2019
 
 LocalizationGroup: Common tasks
 ---
-When it finishes, it will send an e-mail to any users who receive that subscription.  This can be done as many times as you like (well, within reason, we do throttle you if you click “Run Now” 100 times in 60 seconds or something), and serves as an easy way to have .
-
 
 # Subscribe to a report or dashboard in Power BI service 
 It's never been easier to stay up-to-date on your most important dashboards and reports. Subscribe to report pages and dashboards that matter most to you, and Power BI will email a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, or when the data refresh. You can even set a specific time for Power BI to send the emails or have it run now.  
