@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/01/2019
+ms.date: 02/04/2019
 ms.author: maggies
 ---
 
@@ -61,7 +61,7 @@ You may receive a link to a template app. Otherwise, you can search for one that
 
     Or skip this dialog box and access the associated workspace directly via **Workspaces** in the left navigation pane.   
  
-5. Before you share it with your coworkers, you'll want to connect to your own data. Then you may also want to make adjustments to the report or dashboard to make it work for your organization. 
+5. Before you share it with your coworkers, you'll want to connect to your own data. You may also want to modify the report or dashboard to make it work for your organization. You can also add other reports or dashboards at this point.
 
 ## Update and distribute the app
 
