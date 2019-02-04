@@ -80,6 +80,5 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 * Power BI automatically pauses refresh on datasets associated with dashboards and reports that have not been visited in more than two months.  However, if you add a subscription to a dashboard or report, it will not be paused even if it goes unvisited.    
 
 ## Next steps
-* More questions? [Try asking the Power BI Community](http://community.powerbi.com/)    
-* [Read the blog post](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)
 
+[Search for and sort content](end-user-search-sort.mc)
