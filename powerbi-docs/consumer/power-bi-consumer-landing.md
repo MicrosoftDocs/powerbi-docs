@@ -18,7 +18,7 @@ LocalizationGroup: Get started
 <div id="main" class="v2">
       <div class="container">
             <h1 class="">Power BI for consumers</h1>
-            <p>As an *end user* or *consumer*, you are the person who receives dashboards, reports, and apps from colleagues. You work in ***Power BI service*** to review and interact with this content in order to make business decisions.</p>
+            <p>As an <b>end user</b> or <b>consumer</b>, you are the person who receives dashboards, reports, and apps from colleagues. You work in <b><i>Power BI service</i></b> to review and interact with this content in order to make business decisions.</p>
             <p>Are you more of a Power BI designer, developer, or admin? Welcome to you, too. We suggest starting with <a href="../power-bi-creator-landing.md">Power BI for report designers</a>.</p>
             <p>To see all of the documentation for Power BI consumers, open the <a href="end-user-consumer.md">table of contents</a>.</p>
             <ul class="pivots">
@@ -350,25 +350,6 @@ LocalizationGroup: Get started
                                                 <div class="cardText">
                                                     <h3>Supported languages</h3>
                                                     <p>Power BI is translated into many languages, with more being added all the time. Learn how to choose a language in the browser. </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/power-bi/service-tips-for-finding-help" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/res-gethelp.svg" alt="Get Help" data-linktype="relative-path">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Get help</h3>
-                                                    <p>Blurb goes here</p>
                                                 </div>
                                             </div>
                                         </div>
