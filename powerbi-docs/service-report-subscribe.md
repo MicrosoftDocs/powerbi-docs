@@ -56,7 +56,7 @@ Whether you're subscribing to a dashboard or report, the process is similar. The
 7. Select **Save and close**. Those subscribed receive an email and snapshot of the dashboard or report page for the frequency and time you selected. In all, you may create up to 24 subscriptions per report or dashboard, and can provide unique recipients, times, and frequencies for each subscription.  All subscriptions set to **After Data Refresh** for your dashboard or report will still only send an email after the first scheduled refresh.   
       
    > [!TIP]
-   > Want to send the email from a subscription right away or on-demand at any time? Click "Run Now" for the subscriptions for the dashboard or report you want to send. You'll see a notification that an e-mail is on its way to everyone for that particular subscription.  You may do this as often as you'd like, as it doesn't count against your limit of 24 scheduled subscription runs per day per report or dashboard.  Please note this does NOT trigger a data refresh of the underlying dataset. 
+   > Want to send the email from a subscription right away or on-demand at any time? Select **Run Now** for the subscriptions for the dashboard or report you want to send. You'll see a notification that an e-mail is on its way to everyone for that particular subscription.  You may do this as often as you'd like. It doesn't count against your limit of 24 scheduled subscription runs per day per report or dashboard. Note this does NOT trigger a data refresh of the underlying dataset. 
    > 
    > 
    
