@@ -1237,8 +1237,10 @@
         href: service-admin-premium-purchase.md
       - name: "Manage Power BI Premium"
         href: service-admin-premium-manage.md
-      - name: "Monitor Power BI Premium"
+      - name: "Monitor Premium capacities with the app"
         href: service-admin-premium-monitor-capacity.md
+      - name: "Monitor Premium capacities in the admin portal"
+        href: service-admin-premium-monitor-portal.md
       - name: "Restart a Premium capacity"
         href: service-admin-premium-restart.md
       - name: "Support for large datasets"
