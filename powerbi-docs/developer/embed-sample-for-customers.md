@@ -90,22 +90,23 @@ Follow the steps below to start embedding your content using the sample applicat
 
     <center>
 
-    |**AuthenticationType = MasterUser** </br> (Power BI Pro license) | **AuthenticationType = ServicePrincipal** </br> (app-only token) |
-    |---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-    | **[applicationId](#application-id)** | **[applicationId](#application-id)** |
-    | | **[applicationsecret](#application-secret)** |
-    | **[workspaceId](#workspace-id)** | **[workspaceId](#workspace-id)** |
-    | **[reportId](#report-id)** | **[reportId](#report-id)** |
-    | **[pbiUsername](#power-bi-username-and-password)** |
-    | **[pbiPassword](#power-bi-username-and-password)**
+    | Master User </br> (Power BI Pro license) | Service Principal </br> (app-only token)|
+    |---------------|-------------------|
+    | [applicationId](#application-id) | [applicationId](#application-id) |
+    | [workspaceId](#workspace-id) | [workspaceId](#workspace-id) |
+    | [reportId](#report-id) | [reportId](#report-id) |
+    | [pbiUsername](#power-bi-username-and-password) |  |
+    | [pbiPassword](#power-bi-username-and-password) |  |
+    |  | [applicationsecret](#application-secret) |
+    |  | [tenant](#tenant) |
 
-    </center>
+   </center>
 
     ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
 ### Application ID
 
-This attribute requires both the master account and [service principal](embed-service-principal.md).
+This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
 
 Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions.
 
@@ -125,9 +126,54 @@ To get the **applicationId**, follow these steps:
 
     ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
+### Workspace ID
+
+This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
+
+Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+
+URL </br>
+
+![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+
+Powershell </br>
+
+```powershell
+Get-PowerBIworkspace -name "App Owns Embed Test"
+```
+
+   ![workspaceId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
+
+### Report ID
+
+This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
+
+Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+
+URL</br>
+
+![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+
+Powershell </br>
+
+```powershell
+Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
+```
+
+![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
+
+### Power BI username and password
+
+These attributes are needed only for the master account AuthenticationType.
+
+If you're using [service principal](embed-service-principal.md) to authenticate, then you don't need to fill in the username or password attributes.
+
+* Fill in the **pbiUsername** with the Power BI master account.
+* Fill in the **pbiPassword** with the password for the Power BI master account.
+
 ### Application secret
 
-This attribute requires [service principal](embed-service-principal.md) only.
+This attribute is needed only for the [service principal](embed-service-principal.md) AuthenticationType.
 
 Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works when using [service principal](embed-service-principal.md).
 
@@ -155,50 +201,11 @@ To get the **ApplicationSecret**, follow these steps:
 
     ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
-### Workspace ID
+### Tenant
 
-This attribute requires both the master account and [service principal](embed-service-principal.md).
+This attribute is needed only for the [service principal](embed-service-principal.md) AuthenticationType.
 
-Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
-
-URL </br>
-
-![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
-
-Powershell </br>
-
-```powershell
-Get-PowerBIworkspace -name "App Owns Embed Test"
-```
-
-   ![workspaceId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
-
-### Report ID
-
-This attribute requires both the master account and [service principal](embed-service-principal.md).
-
-Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
-
-URL</br>
-
-![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
-
-Powershell </br>
-
-```powershell
-Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
-```
-
-![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
-
-### Power BI username and password
-
-This attribute requires the master account information only.
-
-If you're using [service principal](embed-service-principal.md) to authenticate, then you don't need to fill in the username or password attributes.
-
-* Fill in the **pbiUsername** with the Power BI master account.
-* Fill in the **pbiPassword** with the password for the Power BI master account.
+Fill in the **tenant** information with your azure tenant ID. You can get this information either from the [Azure AD portal](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id#use-the-azure-ad-portal) when signed into the Power BI service or using Powershell.
 
 ### Run the application
 
