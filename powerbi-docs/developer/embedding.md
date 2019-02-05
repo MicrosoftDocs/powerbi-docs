@@ -1,6 +1,6 @@
 ---
 title: Embedded analytics with Power BI
-description: Power BI offers APIs to use emmbeded analytics for your dashboards and reports into applications. Learn more about embedding with Power BI both in a PaaS enviornment and a SaaS environment using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
+description: Power BI offers APIs to use embedded analytics for your dashboards and reports into applications. Learn more about embedding with Power BI both in a PaaS enviornment and a SaaS environment using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
 ms.custom: seodec18
-ms.date: 02/01/2019
+ms.date: 02/05/2019 
 ---
 
 # Embedded analytics with Power BI
@@ -27,7 +27,7 @@ Choose the solution that is right for you:
 
 ## Using APIs
 
-There are two main scenarios when embedding Power BI content.  Embedding for users in your organization (who have licenses for Power BI) and embedding for your users and customers without them requiring to have Power BI licenses. The Power BI REST API allows for both scenarios.
+There are two main scenarios when embedding Power BI content. Embedding for users in your organization (who have licenses for Power BI) and embedding for your users and customers without them requiring to have Power BI licenses. The Power BI REST API allows for both scenarios.
 
 For customers and users without Power BI licenses, you can embed dashboards and reports into your custom application, using the same API to either service your organization or your customers. Your customers see the data that is managed by the application. Also, for Power BI users in your organization, they have the additional options to view *their data* directly in Power BI or the context of the embedded application. You can take full advantage of the JavaScript and REST APIs for your embedding needs.
 
