@@ -22,15 +22,15 @@ You build template apps that allow your customers to connect and instantiate wit
 You submit your partner-built template apps to the Cloud Partner Portal. The apps then become publicly available in the Power BI App gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). Here's an example of the public template app experience.  
 
 ## Overview
-The general process to develop and submit a template app involves multiple steps, some of which you can accomplish at the same time.
+The general process to develop and submit a template app involves several steps, some of which you can accomplish at the same time.
 
 
-|Power BI Desktop |  |Power BI service  |  |Cloud Partner Portal  |
-|---------|--|---------|---------|---------|
-|Build a data model and report in a .pbix file |  | Create a workspace. Import .pbix file. Create a complementary dashboard  |  | Register as a partner |
-|   |  | Create a test package and run internal validation        |  | |
-|   |  | Promote the test package to preproduction for validation outside your Power BI tenant, and submit it to AppSource  |  | With your preproduction package, create a Power BI template app offer and start the validation process |
-|   |  | Promote the preproduction package to production |  | Go live |
+| Step | Power BI Desktop |  |Power BI service  |  |Cloud Partner Portal  |
+|---|--------|--|---------|---------|---------|
+| **One** | Build a data model and report in a .pbix file |  | Create a workspace. Import .pbix file. Create a complementary dashboard  |  | Register as a partner |
+| **Two** |  |  | Create a test package and run internal validation        |  | |
+| **Three** | |  | Promote the test package to preproduction for validation outside your Power BI tenant, and submit it to AppSource  |  | With your preproduction package, create a Power BI template app offer and start the validation process |
+| **Four** | |  | Promote the preproduction package to production |  | Go live |
 
 ## Requirements
 
