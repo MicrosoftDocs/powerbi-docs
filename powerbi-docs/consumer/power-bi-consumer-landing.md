@@ -233,7 +233,7 @@ LocalizationGroup: Get started
                                 </a>
                             </li>
                             <li>
-                                <a href="/power-bi/consumer/service-admin-licensing-organization" data-linktype="absolute-path">
+                                <a href="../service-admin-licensing-organization" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
