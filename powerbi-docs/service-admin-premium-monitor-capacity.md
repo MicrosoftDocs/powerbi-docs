@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 02/05/2019
 LocalizationGroup: Premium 
 ---
 
@@ -167,8 +167,8 @@ The **Resource Consumption** tab shows CPU and memory consumption across all cap
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| **CPU consumption** | * The number of times CPU exceeded 80% of the thresholds in the past seven days, split into three minute buckets |
-| **Memory consumption** | * Memory consumption in the past seven days, split into three minute buckets |
+| **CPU consumption** | * Consumption by workload as a percentage of total CPU capacity. Shown hourly, for the previous seven days. |
+| **Memory consumption** | * Memory consumption in GB by workload (solid lines) overlaid with workload limits (dotted line). Shown hourly, for the previous seven days. |
 |  |  |
 
 #### IDs and Info
