@@ -86,11 +86,14 @@ Follow the steps below to start embedding your content using the sample applicat
 
     ![App Owns Data application sample](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
 
-3. Open the **Web.config** file in the sample application. There are fields you need to fill in to run the application. You can choose **MasterUser** or **ServicePrincipal** for the **AuthenticationType**. Depending on which type of authentication method you choose there are different fields to complete.  
+3. Open the **Web.config** file in the sample application. There are fields you need to fill in to run the application. You can choose **MasterUser** or **ServicePrincipal** for the **AuthenticationType**. Depending on which type of authentication method you choose there are different fields to complete.
+
+    > [!Note]
+    > The default **AuthenticationType** in this sample is MasterUser.
 
     <center>
 
-    | Master User </br> (Power BI Pro license) | Service Principal </br> (app-only token)|
+    | **MasterUser** </br> (Power BI Pro license) | **ServicePrincipal** </br> (app-only token)|
     |---------------|-------------------|
     | [applicationId](#application-id) | [applicationId](#application-id) |
     | [workspaceId](#workspace-id) | [workspaceId](#workspace-id) |
