@@ -76,7 +76,7 @@ The below steps walk through how to publish your PBIX report to your Power BI wo
 
 ## Embed content using the sample application
 
-This sample is deliberately kept simple for demonstration purposes. It's up to the developer to protect the application secret or the master account credentials.
+This sample is deliberately kept simple for demonstration purposes. It's up to the you or your developers to protect the application secret or the master account credentials.
 
 Follow the steps below to start embedding your content using the sample application.
 
