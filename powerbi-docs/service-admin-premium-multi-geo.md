@@ -1,14 +1,14 @@
 ---
 title: Multi-Geo support for Power BI Premium (Preview)
 description: Learn how you can deploy content to datacenters in regions other than the home region of the Power BI tenant.  
-author: mgblythe
-ms.author: mblythe
+author: minewiskan
+ms.author: owend
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/20/2018
+ms.date: 02/05/2019
 LocalizationGroup: Premium 
 ---
 
