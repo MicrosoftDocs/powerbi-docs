@@ -30,9 +30,17 @@ Here are the requirements for installing, customizing, and distributing a templa
 
 ## Install a template app
 
-You may receive a link to a template app. Otherwise, you can search for one that interests you in AppSource. Either way, after you install it, you can modify it and distribute it to your own organization.
+You may receive a link to a template app. Otherwise, you can search AppSource for one that interests you. Either way, after you install it, you can modify it and distribute it to your own organization.
 
-1. To search in AppSource, in the left navigation pane of the Power BI service select **Apps** > **Get apps**.
+### Search AppSource from a browser
+
+In a browser, select this link to open AppSource filtered to Power BI apps:
+
+- https://appsource.microsoft.com/marketplace/apps?product=power-bi
+
+### Search AppSource from the Power BI service
+
+1. In the left navigation pane in the Power BI service, select **Apps** > **Get apps**.
 
     ![Get apps](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
