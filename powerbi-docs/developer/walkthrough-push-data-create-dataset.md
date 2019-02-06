@@ -2,16 +2,15 @@
 title: Create a dataset
 description: Walkthrough - Push data into a dataset - Create a dataset in Power BI
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
-
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-
+ms.date: 02/05/2019
 ---
+
 # Step 3: Create a dataset in Power BI
 This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 

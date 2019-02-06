@@ -2,17 +2,17 @@
 title: Install Power BI Desktop optimized for Power BI Report Server
 description: Learn how to install Power BI Desktop optimized for Power BI Report Server
 author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/24/2019
-ms.author: maggies
-
 ---
+
 # Install Power BI Desktop optimized for Power BI Report Server
+
 Learn how to install Power BI Desktop optimized for Power BI Report Server.
 
 To create Power BI reports for Power BI Report Server, you need to download and install Power BI Desktop optimized for Power BI Report Server. This release is different from the Power BI Desktop used with the Power BI service. For example, the version of Power BI Desktop for the Power BI service includes preview features that aren't in the Power BI Report Server version until they're released. Using this release makes sure that the report server can interact with a known version of the reports and model. 
@@ -40,7 +40,7 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 1. After you download the installer, run the Power BI Desktop (January 2019) Setup Wizard.
 
 2. At the end of the installation, check **Start Power BI Desktop now**.
-   
+
     It starts automatically and you're ready to go.
 
 ## Verify you're using the correct version
@@ -60,9 +60,11 @@ You can always open the version of Power BI Desktop you want to use first. And t
 Editing a Power BI report from within Power BI Report Server, or creating a new Power BI report from the web portal, always opens the correct version of Power BI Destop.
 
 ## Considerations and limitations
+
 Power BI reports in Power BI Report Server, in the Power BI service (http://app.powerbi.com), and in the Power BI mobile apps act almost exactly the same, but a few features are different.
 
 ### In a browser
+
 Power BI Report Server reports support all visualizations, including:
 
 * Custom visuals
@@ -75,6 +77,7 @@ Power BI Report Server reports don’t support:
 * Power BI Desktop preview features
 
 ### In the Power BI mobile apps
+
 Power BI Report Server reports support all the basic functionality in the [Power BI mobile apps](../consumer/mobile/mobile-apps-for-mobile-devices.md), including:
 
 * [Phone report layout](../desktop-create-phone-report.md): You can optimize a report for the Power BI mobile apps. On your mobile phone, optimized reports have a special icon ![Phone report layout icon](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png), and layout.
@@ -96,10 +99,10 @@ If your report server is an earlier version, you need the corresponding version 
 - Microsoft Power BI Desktop ([Optimized for Power BI Report Server - August 2018](https://www.microsoft.com/download/details.aspx?id=57271))
 
 ## Next steps
+
 Now that you have Power BI Desktop installed, you can start creating Power BI reports.
 
 [Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md)  
 [What is Power BI Report Server?](get-started.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

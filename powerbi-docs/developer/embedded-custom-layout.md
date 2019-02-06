@@ -2,18 +2,16 @@
 title: Custom layouts with Power BI embedded content
 description: Learn about custom layouts when embedding Power BI content in your application.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/19/2017
-ms.author: maghan
-
 ---
-# Custom layouts
 
+# Custom layouts
 
 Use custom layout to embed a report with different layout than in an original report. Defining a new layout varies between defining only a page size, controlling visual sizes, or position and visibility.
 
@@ -111,7 +109,6 @@ enum VisualContainerDisplayMode {
 - `width`, height: Defines the new size of the visual.
 - `displayState`: Defines the visibility of the visual.
 
-
 ## Update layout
 
 You can use updateSettings method to update the report layout any time while the report is loaded. See [Update Settings](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Update-Settings).
@@ -169,9 +166,7 @@ var embedContainer = document.getElementById('embedContainer');
 var report = powerbi.embed(embedContainer, embedConfiguration);
 ```
 
-
 ## See also
 
 [Embed your Power BI dashboards, reports and tiles](embedding-content.md)   
 [Ask the Power BI Community](https://community.powerbi.com/)
-
