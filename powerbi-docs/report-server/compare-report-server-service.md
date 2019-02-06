@@ -4,7 +4,7 @@ description: This article compares the features of Power BI Report Server and th
 keywords: 
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 02/05/2019
+ms.date: 02/06/2019
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -14,7 +14,7 @@ ms.custom: mvc
 ---
 # Comparing Power BI Report Server and the Power BI service
 
-Power BI Report Server and the Power BI service have a lot of similarities and some key differences. This table explains which is which.
+Power BI Report Server and the Power BI service have many similarities and some key differences. This table explains which is which.
 
 ## Features of Power BI Report Server and the Power BI service
 
@@ -32,7 +32,7 @@ Power BI Report Server and the Power BI service have a lot of similarities and s
 | Dashboards | No | Yes | [Dashboards in the Power BI service](../consumer/end-user-dashboards.md) 
 | Distribute group of reports using apps | No | Yes | [Create and publish apps with dashboards and reports](../service-create-distribute-apps.md) 
 | Content packs | No | Yes | [Organizational content packs: Introduction](../service-organizational-content-pack-introduction.md) 
-| Connect to services like Salesforce | Yes | Yes | [Connect to the services you use](../service-connect-to-services.md) with content packs in the Power BI service. In Power BI Report Server, use certified connectors to connect to sevices. See [Power BI report data sources in Power BI Report Server](data-sources.md) for details.
+| Connect to services like Salesforce | Yes | Yes | [Connect to the services you use](../service-connect-to-services.md) with content packs in the Power BI service. In Power BI Report Server, use certified connectors to connect to services. See [Power BI report data sources in Power BI Report Server](data-sources.md) for details.
 | Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../consumer/end-user-q-and-a.md) 
 | Quick insights | No | Yes | [Automatically generate data insights with Power BI](../consumer/end-user-insights.md) 
 | Analyze in Excel | No | Yes | [Analyze in Excel](../service-analyze-in-excel.md) 
@@ -42,7 +42,7 @@ Power BI Report Server and the Power BI service have a lot of similarities and s
 | Email subscriptions for Power BI reports | No | Yes | [Subscribe to a report or dashboard](../consumer/end-user-subscribe.md) in the Power BI service 
 | Email subscriptions for paginated reports | Yes | No | [E-Mail delivery in Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
 | Data alerts | No | Yes | [Data alerts](../service-set-data-alerts.md) in the Power BI service
-| Row-level security (RLS) | Available in both DirectQuery (data source) & Import mode | Available in both DirectQuery (data source) & Import mode | Row-level securityin the [Power BI service](../service-admin-rls.md) <br>Row-level security in [Power BI Report Server](row-level-security-report-server.md) 
+| Row-level security (RLS) | Available in both DirectQuery (data source) & Import mode | Available in both DirectQuery (data source) & Import mode | Row-level security in the [Power BI service](../service-admin-rls.md) <br>Row-level security in [Power BI Report Server](row-level-security-report-server.md) 
 
 | Full screen mode | No | Yes | [Full screen mode](../consumer/end-user-focus.md) in the Power BI service 
 | Advanced Office 365 collaboration | No | Yes | [Collaborate in an app workspace](../service-collaborate-power-bi-workspace.md) with Office 365 
