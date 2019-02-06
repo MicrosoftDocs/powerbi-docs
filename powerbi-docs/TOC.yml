@@ -1039,6 +1039,8 @@
         href: developer/walkthrough-push-data-get-datasets.md
       - name: "Add rows to a table"
         href: developer/walkthrough-push-data-add-rows.md
+      - name: "Encrypt credentials"
+        href: developer/encrypt-credentials.md
     - name: Reference
       items:
       - name: "REST APIs"
