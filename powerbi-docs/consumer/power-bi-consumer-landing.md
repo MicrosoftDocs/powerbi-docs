@@ -214,13 +214,13 @@ LocalizationGroup: Get started
                                 </a>
                             </li>
                             <li>
-                                <a href="../service-admin-licensing-organization" data-linktype="absolute-path">
+                                <a href="../service-admin-licensing-organization" data-linktype="relative-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/power-bi-license-types.svg" alt="Power BI license types" data-linktype="relative-path">
+                                                        <img src="../media/power-bi-license-types.svg" alt="Power BI license types" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
