@@ -69,7 +69,7 @@ A well-defined data model ensures your customers can easily and intuitively inte
 
 
 ### Q&A
-The modelling also affects how well Q&A can provide results for your customers. Ensure you add synonyms to commonly used columns and you've properly named your columns in the [queries](#queries).
+The modeling also affects how well Q&A can provide results for your customers. Ensure you add synonyms to commonly used columns and you've properly named your columns in the [queries](#queries).
 
 ### Additional data model tips
 
