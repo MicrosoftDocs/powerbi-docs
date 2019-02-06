@@ -734,6 +734,11 @@
             "source_path": "powerbi-docs/service-fullscreen-mode.md",
             "redirect_url": "/power-bi/consumer/end-user-focus",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-enterprise-tshoot.md",
+            "redirect_url": "/power-bi/service-gateway-onprem-tshoot",
+            "redirect_document_id": false
         }
     ]
 }
