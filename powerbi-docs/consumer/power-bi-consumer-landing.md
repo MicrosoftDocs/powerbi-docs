@@ -132,7 +132,7 @@ LocalizationGroup: Get started
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img alt="All Power BI consumer documentation" src="" data-linktype="relative-path">
+                                                    <img alt="All Power BI consumer documentation" src="media/end-user-consumer/interact-analyze.svg" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
