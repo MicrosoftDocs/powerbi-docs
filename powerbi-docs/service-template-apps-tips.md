@@ -15,7 +15,7 @@ ms.author: maggies
 
 When you're [authoring your template app](service-template-apps-create.md) in Power BI, part of it is the logistics of creating the workspace, testing it, and production. But the other important part is obviously authoring the report and the dashboard. We can break down the authoring process into four main components. Working on these components helps you create the best possible template app:
 
-* With **queries**, you [connect](desktop-connect-to-data.md) and [transform](desktop-query-overview.md) the data, as well as define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). 
+* With **queries**, you [connect](desktop-connect-to-data.md) and [transform](desktop-query-overview.md) the data, and define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). 
 * In the **data model**, you create [relationships](desktop-create-and-manage-relationships.md), [measures](desktop-measures.md), and Q&A improvements.  
 * **[Report pages](desktop-report-view.md)** include visuals and filters to provide insights into your data.  
 * **[Dashboards](consumer/end-user-dashboards.md)** and [tiles](service-dashboard-create.md) offer an overview of the insights included.  
@@ -25,7 +25,7 @@ You may be familiar with each piece as existing Power BI features. When building
 <a name="queries"></a>
 
 ## Queries
-For template apps, queries developed in Power BI Desktop are used to connect to your data source and import data. These queries are required to return a consistent schema and are supported for Scheduled Data refresh (DirectQuery is not supported).
+For template apps, queries developed in Power BI Desktop are used to connect to your data source and import data. These queries are required to return a consistent schema and are supported for Scheduled Data refresh (DirectQuery isn't supported).
 
 ### Connect to your API
 To get started, you need to connect to your API from Power BI Desktop to start building your queries.
@@ -43,7 +43,7 @@ The queries define the data that's included in the data model. Depending on the 
 Power BI template apps can execute multiple queries in parallel and for multiple users concurrently.  Plan ahead your throttling and concurrency strategy and ask us how to make your template app fault tolerant.
 
 ### Schema enforcement
-Ensure your queries are resilient to changes in your system, changes in schema on refresh can break the model. If the source could return null/missing schema result for some queries, consider returning an empty table or throw a custom error messages that is meaningful to your user.
+Ensure your queries are resilient to changes in your system, changes in schema on refresh can break the model. If the source could return null or missing schema result for some queries, consider returning an empty table or a meaningful custom error message.
 
 ### Parameters
 [Parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/) in Power BI Desktop allow your users to provide input values that customize the data retrieved by the user. Think of the parameters up front to avoid rework after investing time to build detailed queries or reports.
@@ -59,12 +59,12 @@ Ensure your queries are resilient to changes in your system, changes in schema o
 * For shared logic, consider using functions or queries.  
 * Privacy levels are currently not supported in the service. If you get a prompt about privacy levels, you may need to rewrite the query to use relative paths.  
 
-## Data model
+## Data models
 
 A well-defined data model ensures your customers can easily and intuitively interact with the template app. Create the data model in Power BI Desktop.
 
 > [!NOTE]
-> You should do much of the basic modelling (typing, column names) in the [queries](#queries).
+> You should do much of the basic modeling (typing, column names) in the [queries](#queries).
 >
 
 
@@ -73,7 +73,7 @@ The modelling also affects how well Q&A can provide results for your customers. 
 
 ### Additional data model tips
 
-Make sure you have
+Make sure you've:
 * Applied formatting to all value columns.
     >[!NOTE]
     >Types should be applied in the query.  
@@ -102,10 +102,10 @@ The report pages offer additional insight into the data included in your templat
 
 <a name="dashboard"></a>
 
-## Dashboard
+## Dashboards
 The dashboard is the main point of interaction with your template app for your customers. It should include an overview of the content included, especially the important metrics for your business scenario.
 
-To create a dashboard for your template app, simply upload your PBIX through Get Data > Files or publish directly from Power BI Desktop.
+To create a dashboard for your template app, just upload your PBIX through Get Data > Files or publish directly from Power BI Desktop.
 
 > [!NOTE]
 > template apps currently require a single report and dataset per template app. Do not pin content from multiple reports/datasets onto the dashboard used in the template app.
@@ -135,6 +135,6 @@ To create a dashboard for your template app, simply upload your PBIX through Get
 | Query parameters | Not supported: Parameters of type "Any" or "Binary" type block refresh operation for dataset |
 | Custom visuals | Only publicly available custom visuals are supported. [Organizational custom visuals](power-bi-custom-visuals-organization.md) not supported |
 
-## Next step
+## Next steps
 
 [What are Power BI template apps? (preview)](service-template-apps-overview.md)
