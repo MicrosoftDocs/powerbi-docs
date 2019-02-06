@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/04/2019
+ms.date: 02/05/2019
 ms.author: maggies
 ---
 
@@ -25,9 +25,7 @@ You may be familiar with each piece as existing Power BI features. When building
 <a name="queries"></a>
 
 ## Queries
-For template apps, queries developed in Power BI Desktop are used to connect to your data source and import data. These queries are required to return a consistent schema and are supported for Scheduled Data refresh (direct query is not supported).
-
-Template apps only support one data source per template app so define your queries carefully. A single data source is defined as a source that requires the same authentication. You can make multiple API calls in different queries if all the calls are to the same API endpoint and use the same authentication. Power BI template apps do not support multiple sources that require different authentications.
+For template apps, queries developed in Power BI Desktop are used to connect to your data source and import data. These queries are required to return a consistent schema and are supported for Scheduled Data refresh (DirectQuery is not supported).
 
 ### Connect to your API
 To get started, you need to connect to your API from Power BI Desktop to start building your queries.
@@ -51,8 +49,7 @@ Ensure your queries are resilient to changes in your system, changes in schema o
 [Parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/) in Power BI Desktop allow your users to provide input values that customize the data retrieved by the user. Think of the parameters up front to avoid rework after investing time to build detailed queries or reports.
 
 > [!NOTE]
-> Template apps only support text parameters currently. Other parameter types can be used during development but during testing, all values that users provide will be literal.
->
+> Template apps support all parameters except Any and Binary.
 >
 
 ### Additional query tips
@@ -123,35 +120,20 @@ To create a dashboard for your template app, simply upload your PBIX through Get
 * All dashboard tiles should have appropriate titles/subtitles.  
 * Consider groupings in the dashboard for different scenarios, either vertically or horizontally.  
 
-<a name="restrictions"></a>
-
-## Summary of restrictions
-
-As listed in the above sections, currently the template apps have a set of restrictions:  
-
-| Supported | *Not Supported* |
-| --- | --- |
-| Datasets built in PBI Desktop |*Datasets from  other template apps or inputs such as Excel files* |
-| Data source supported for cloud Scheduled Data refresh |*Direct query or on-premises connectivity is not supported* |
-| Queries returning consistent schema or errors where appropriate |*Dynamic or custom schemas* |
-| One data source per dataset |*Multiple data sources such as mashups or URLs that are detected as multiple data sources* |
-| Parameters of type text |*Other parameter types (such as date) or "list allowed of values"* |
-| One dashboard, report, and dataset |*Multiple dashboards, reports, or datasets* |
-
 ## Known limitations
 
 | Feature | Known Limitation |
 |---------|---------|
-|Contents:  Datasets   | Exactly one dataset should be present |
+|Contents:  Datasets   | Exactly one dataset should be present. Only datasets built in Power BI Desktop (.pbix files) are allowed. <br>Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (.rdl files), Excel workbooks |
 |Contents: Reports     | Up to one report    |
-| Contents: Dashboards | Up to one non-empty dashboard |
-| Contents: Dataflows | No support for dataflows |
-| Contents from files | Only PBIX files are allowed. These file types aren't supported: .rdl files (paginated reports), Excel workbooks   |
-| Data sources | DirectQuery isn't allowed <br>Live connections aren’t allowed (no AS Azure\on-premises) <br>On-premises data sources aren't allowed(Personal\Enterprise gateways aren’t supported) <br>Real Time not allowed (no support for pushdataset) <br>Composite models |
+| Contents: Dashboards | Up to one non-empty dashboard <br>Not supported: Real-time tiles (in other words, no support for PushDataset or pubnub) |
+| Contents: Dataflows | Not supported: Dataflows |
+| Contents from files | Only PBIX files are allowed. <br>Not supported: .rdl files (paginated reports), Excel workbooks   |
+| Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. <br>Not supported: <br>DirectQuery <br>Live connections (no Azure AS) <br>On-premises data sources (personal and enterprise gateways aren’t supported) <br>Real time (no support for pushdataset) <br>Composite models |
 | Dataset: cross-workspace | No cross-workspace datasets are allowed  |
 | Content: Dashboards | Real-time tiles aren’t allowed (in other words, no support for PushDataset or pubnub) |
-| Query parameters | Parameters of type “Any”\”Binary” type  will block refresh operation for dataset |
-| Custom visuals | Only publicly available custom visuals are supported. Organization store visuals not supported |
+| Query parameters | Not supported: Parameters of type "Any" or "Binary" type block refresh operation for dataset |
+| Custom visuals | Only publicly available custom visuals are supported. [Organizational custom visuals](power-bi-custom-visuals-organization.md) not supported |
 
 ## Next step
 

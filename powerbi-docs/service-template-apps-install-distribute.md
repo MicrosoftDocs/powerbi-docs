@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/04/2019
+ms.date: 02/05/2019
 ms.author: maggies
 ---
 
@@ -49,8 +49,6 @@ In a browser, select this link to open AppSource filtered to Power BI apps:
     ![Search in AppSource](media/service-template-apps-install-distribute/power-bi-appsource.png)
 
 3. Browse or search for the app, then select **Get it now**.
-
-4. Select the installation link, or copy and paste it into your browser window to start the installation.  
 
 2. In the dialog box, select **Install**.
 
