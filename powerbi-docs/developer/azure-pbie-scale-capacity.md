@@ -9,7 +9,7 @@ editor: ''
 tags: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
-ms.date: 07/31/2018
+ms.date: 01/31/2019
 ---
 
 # Scale your Power BI Embedded capacity in the Azure portal
