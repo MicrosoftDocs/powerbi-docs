@@ -220,7 +220,7 @@ LocalizationGroup: Get started
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="media/power-bi-license-types.svg" alt="Power BI license types" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/power-bi-license-types.svg" alt="Power BI license types" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
