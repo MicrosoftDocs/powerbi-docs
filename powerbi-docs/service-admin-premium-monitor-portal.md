@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/04/2019
+ms.date: 02/05/2019
 LocalizationGroup: Premium 
 ---
 
@@ -27,7 +27,7 @@ The **Capacity settings** area of the admin portal provides four gauges that ind
 | CPU |Number of times CPU exceeded 80% utilization. |
 | Memory Thrashing |Represents the memory pressure on your backend cores. Specifically, this is a metric of how many times datasets are evicted from memory due to memory pressure from the usage of multiple datasets. |
 | Memory Usage |Average memory usage, represented in gigabytes (GB). |
-| DQ/s | Number of times Direct Query and Live Connections count exceeded 80% of the limit. <br> * We limit the total number of DirectQuery and live connection queries per second.* The limits are 30/s for P1, 60/s for P2 and 120/s for P3. * Direct Query and live connection queries count add to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle<br>* This applies equally to on-premises and cloud connections. |
+| DQ/s | Number of times Direct Query and Live Connections count exceeded 80% of the limit. <br>  The total number of DirectQuery and live connection queries per second is limited. The limits are 30/s for P1, 60/s for P2 and 120/s for P3.  Direct Query and live connection queries count add to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle<br> This applies equally to on-premises and cloud connections. |
 |  |  |
 
 Metrics reflect utilization over the past week.  If you'd like to see a more detailed view of the metrics, you can do so by clicking any of the summary tiles.  This will take you to detailed charts for each of the metrics for your premium capacity. The following chart shows details for the CPU metric.
