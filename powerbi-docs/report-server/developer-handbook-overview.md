@@ -17,7 +17,7 @@ Welcome to the developer handbook for Power BI Report Server, an on-premises loc
 
 ![](media/developer-handbook-overview/admin-handbook.png)
 
-This handbook will highlight options you have, as a developer, to work with Power BI Report Server.
+This handbook highlights options you have, as a developer, to work with Power BI Report Server.
 
 ## Embedding
 For any report within Power BI Report Server, you can embed within an iFrame by adding the querystring parameter `?rs:Embed=true` to the URL. This works with Power BI reports as well as other report types.
@@ -32,10 +32,10 @@ You have several API options for interacting with Power BI Report Server. This i
 * [URL Access](https://docs.microsoft.com/sql/reporting-services/url-access-ssrs)
 * [WMI Provider](https://docs.microsoft.com/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
 
-You can also use the open source [PowerShell untilies](https://github.com/Microsoft/ReportingServicesTools) to manage your report server.
+You can also use the open source [PowerShell utilities](https://github.com/Microsoft/ReportingServicesTools) to manage your report server.
 
 > [!NOTE]
-> The PowerShell utilities do not currently support Power BI Desktop files (.pbix).
+> The PowerShell utilities don't currently support Power BI Desktop files (.pbix).
 > 
 > 
 
