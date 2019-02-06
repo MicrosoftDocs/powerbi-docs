@@ -19,7 +19,7 @@ ms:date: 10/26/2018
                 <ul id="home">
                     <li>
                         <a href="#home-all"></a>
-                        <ul id="home-all" class="cardsA">
+                        <ul id="home-all" class="cardsC">
                             <li>
                                 <a href="consumer/power-bi-consumer-landing.md">
                                     <div class="cardSize">
@@ -27,7 +27,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/powerbi-4x_ea1e-01-resized-with-ratio.svg" alt="" />
+                                                        <img src="./media/index/power-bi-report-consumers.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -46,7 +46,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/power-bi-4x-Design_E771.svg" alt="" />
+                                                        <img src="./media/index/power-bi-report-designers.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -65,7 +65,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/power-bi-4x-Admin_F286.svg" alt="" />
+                                                        <img src="./media/index/power-bi-admins.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -84,7 +84,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/power-bi-4x-Developer_ECCE.svg" alt="" />
+                                                        <img src="./media/index/power-bi-developers.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -103,7 +103,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/power-bi-4x-Blog_E1D7.svg" alt="" />
+                                                        <img src="./media/index/power-bi-blog.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -122,7 +122,7 @@ ms:date: 10/26/2018
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="./media/index/power-bi-4x-GuidedLearning_E736.svg" alt="" />
+                                                        <img src="./media/index/power-bi-guided-learning.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
