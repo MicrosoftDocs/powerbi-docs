@@ -1,8 +1,8 @@
 ---
 title: Monitor Power BI Premium capacities by using the admin portal
 description: Use the Power BI admin portal to monitor your Premium capacities.
-author: mgblythe
-ms.author: mblythe
+author: minewiskan
+ms.author: owend
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi

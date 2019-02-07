@@ -871,6 +871,8 @@
       items:
       - name: "Performance best practices"
         href: developer/embedded-performance-best-practices.md
+      - name: "Service principal"
+        href: developer/embed-service-principal.md
       - name: "Row-level security"
         href: developer/embedded-row-level-security.md
       - name: "Manage multi-tenants"
@@ -889,7 +891,7 @@
         href: developer/create-an-azure-active-directory-tenant.md
       - name: "Register an application"
         href: developer/register-app.md
-      - name: "Authenticate to Power BI service"
+      - name: "Get an Azure AD access token"
         href: developer/get-azuread-access-token.md
       - name: "Embedding Q&A"
         href: developer/qanda.md
@@ -1037,6 +1039,8 @@
         href: developer/walkthrough-push-data-get-datasets.md
       - name: "Add rows to a table"
         href: developer/walkthrough-push-data-add-rows.md
+      - name: "Encrypt credentials"
+        href: developer/encrypt-credentials.md
     - name: Reference
       items:
       - name: "REST APIs"
@@ -1235,9 +1239,9 @@
         href: service-admin-premium-purchase.md
       - name: "Manage Power BI Premium"
         href: service-admin-premium-manage.md
-      - name: "Monitor Premium capacities with the app"
+      - name: "Monitor capacities with the app"
         href: service-admin-premium-monitor-capacity.md
-      - name: "Monitor Premium capacities in the admin portal"
+      - name: "Monitor capacities in the Admin portal"
         href: service-admin-premium-monitor-portal.md
       - name: "Restart a Premium capacity"
         href: service-admin-premium-restart.md

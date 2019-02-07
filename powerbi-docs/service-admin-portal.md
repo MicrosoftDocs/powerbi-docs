@@ -284,16 +284,6 @@ Users in the organization can tag dashboards with classifications that indicate 
 
 Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](developer/embedding.md)
 
-## Workspaces and import settings
-
-### Author content in workspaces
-
-Users in the organization can access workspaces to connect to data and author content. [Learn more](service-create-the-new-workspaces.md)
-
-### Import data into Power BI
-
-Users in the organization can import data into the service, such as publishing reports from Power BI Desktop, uploading Power BI report files, and connecting to data directly from the service. [Learn more](desktop-upload-desktop-files.md)
-
 ## Dataflow settings (preview)
 
 ### Create and use dataflows (preview)
