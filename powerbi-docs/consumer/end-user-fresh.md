@@ -7,83 +7,81 @@ ms.service: powerbi
 ms.custom:  
 ms.subservice: powerbi-service
 ms.topic: overview
-ms.date: 01/31/2019
+ms.date: 02/07/2019
 ms.author: mihart
 
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to be sure that I'm using the most-recent data and learn how to determine this.
 ---
 
-Making sure you’re always getting the latest data is often critical in making the right decisions. You’ve probably already used Get Data in Power BI to connect to and upload some data, created some reports and a dashboard. Now, you want to make sure your data really is the latest and greatest.
-In many cases, you don’t need to do anything at all. Some data, like from a Salesforce or Marketo content pack is automatically refreshed for you. If your connection makes use of a live connection or DirectQuery, the data will be update to date. But, in other cases, like with an Excel workbook or Power BI Desktop file that connects to an external online or on-premises data source, you’ll need to refresh manually or setup a refresh schedule so Power BI can refresh the data in your reports and dashboards for you.
-
-Whenever you refresh data in a dataset, whether by using Refresh Now or by setting up a refresh schedule, Power BI uses information in the dataset to connect to the data sources defined for it, query for updated data, and then loads the updated data into the dataset. Any visualizations in your reports or dashboards based on the data are updated automatically.
-
-Tile refresh updates the cache for tile visuals, on the dashboard, once data changes. This happens about every fifteen minutes. You can also force a tile refresh by selecting the ellipsis (...) in the upper right of a dashboard and selecting Refresh dashboard tiles. For details around common tile refresh errors, see Troubleshooting tile errors.
-
-Visual container refresh
-Refreshing the visual container updates the cached report visuals, within a report, once the data changes.
-
-refresh-troubleshooting-tile-errors.md
-
-When the content pack is created, the refresh settings are inherited with the dataset. When you create a copy of the content pack, the new version retains its link to the original dataset and its refresh schedule.
-When you make and save a change to the dashboard that you included in a content pack, Power BI reminds you to update it so others can see the changes. 
-For group members who haven't customized the content pack, the update is automatically applied.
-Group members who have customized the content pack receive a notification that there is a new version. They can go to AppSource and get the updated content pack without losing their personalized version. They'll now have 2 versions: the personalized version and the updated content pack. In the personalized version, all tiles from the original content pack will be gone. But tiles pinned from other reports will still render. However, if the content pack owner deletes the dataset the content pack is based on, then the whole report will be gone.
-
-As the content pack creator, you can schedule refresh of the datasets. When you create and upload the content pack, that refresh schedule is uploaded with the datasets. If you change the refresh schedule, you need to re-publish the content pack (see above).
-
-Delete an organizational content pack from AppSource
-For group members who haven't customized the content pack, the dashboard and reports associated with that content pack are automatically removed. They're no longer available, and the content pack doesn't appear in the Navigation Pane.
-
-
-
-
-
-
-
-
 # Your content is up-to-date
-As a consumer, you interact with content that is created by *designers* and shared with you. You might wonder if that content is up-to-date or maybe you just want to know when that content was last refreshed. Knowing that you are working with the freshest content gives you confidence.  
+As a *consumer*, you interact with content that is created by *designers* and shared with you. You might wonder if that content is up-to-date or maybe you just want to know when that content was last refreshed. Knowing that you are working with the freshest content gives you confidence.  
  
-
 ![Power BI dashboard](media/end-user-consumer/power-bi-service.png)
 
 
-## Scheduled refresh
-not avail to consumers. Dash tiles refresh every 15m. 
+Making sure you’re using the latest data is often critical in making the right decisions. What can you do to ensure you're using the latest content? In most cases, you don’t need to do anything at all. Apps that have been shared with you are automatically refreshed and updated on a schedule set by the app designer. Same goes for dashboards and reports that have been shared with you -- the designer either manually, or using an automated refresh schedule, ensures that the content is fresh.  
 
-don't mention perf inspector.
+If you have questions about the data freshness, contact the designer.
 
-## View related
-shows last updated for dash, report, dataset
+## How to locate the name of the designer
 
-## Shared with me
-- shows date it was last shared, 
-- and owner on Shared with me pane/list. 
-- From report Focus mode shows last refresh - sometimes. Maybe not custom vizs? 
-- View Related from report page shows refresh date for related content.
-- Refresh button in report - what does it do?
+### Apps
+
+The app screen shows you both the name of the designer as well as the date the app was created.  
+
+1. From the left nav pane, select **Apps**.
+
+    ![left nav pane](media/end-user-fresh/power-bi-nav-apps.png)
+
+    For each app, you'll see a title and date created. 
+
+2. Hover over the app to also display the name of the designer. 
+
+    ![2 apps with one selected](media/end-user-fresh/power-bi-app.png)
 
 
+### Shared with me
+The **Shared with me** screen shows you the name of the content owner, as well as the date the content was shared with you.
+
+![shared with me screen showing Changed date and Owner](media/end-user-fresh/power-bi-shared.png) 
 
 
+## How to look up the last refresh date
+If interested, you can look up the last refreshed date for most content. 
+
+### Dashboard tiles
+For dashboard tiles, view the tile in Focus mode to see the Last refresh timestamp.
+
+1. On a dashboard tile, select the ellipses (...) and choose **Open in Focus mode**.
+
+    ![menu that appears after selecting the ellipses](media/end-user-fresh/power-bi-focus.png)
+
+2. The last refresh date displays in the upper right corner. If you don't see it, expand your browser to make it wider. 
+
+    ![wide browser showing last refresh](media/end-user-fresh/power-bi-last-refresh2.png)
+
+### From dashboards and reports
+Another way to look up a last refreshed date is by using **View related**.  **View related** is available from the Power BI upper menu bar.
+
+![Select View related from menu](media/end-user-fresh/power-bi-view-related.png)
+
+The **Related content** pane displays the last refresh infromation for the dashboard's or report's underlying dataset.
+
+![Power BI dashboard](media/end-user-fresh/power-bi-last-refresh.png)
+
+## What happens if an app is deleted by the designer
+
+If a designer deletes an app, the dashboards and reports associated with that app are automatically removed from your Power BI workspace as well. They're no longer available, and the app doesn't appear in the Navigation Pane.
 
 
 ## Subscribe to see changes
+Another way to stay up-to-date, is to subscribe to a report or dashboard. Instead of having to log in and open a report or dashboard, you tell Power BI to send you a snapshot on a schedule you set.  For more information, see [subscribe to dashboards and reports](end-user-subscribe.md).
 
-
-## Apps
-Display last updated date.  This is the date that the app was shared with you.  Report *designers* will push out updates, you do not have ability to update or refresh yourself. 
-
-Each app lists the name of the designer. Contact the designer if you have questions about the freshness of the app's data. 
-
-- Refresh dashboard tiles.  What does it do actually? 
-- Focus mode to see last refreshed per tile. 
-- app **View content list** to see app contents.  From there can see what is included in app, select item to see View Related > dataset last refresh. But can't find owner since owner is person who created the app.
-- dashboard View Related to see refresh for dataset
-- dashboard performance inspector
-- 
+## Set data alerts
+Want to be notified if data changes above or beyond a limit you set? [Create a data alert](end-user-alerts.md).  It's easy to stay up-to-date using data alerts. With data alerts, you tell Power BI to send you an email if a value in a report passes a speecific threshhold.  For example, if inventory falls below 25 units or if sales exceed goals.  
 
 ## Next steps
-
+[Create a data alert](end-user-alerts.md)    
+[subscribe to dashboards and reports](end-user-subscribe.md)    
+[View related content](end-user-related.md)    
