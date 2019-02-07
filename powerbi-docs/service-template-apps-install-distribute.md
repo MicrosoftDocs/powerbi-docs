@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 02/07/2019
 ms.author: maggies
 ---
 
@@ -95,7 +95,7 @@ After you've updated the app for your organization, you're ready to publish it. 
 
 ## Next steps 
 
-See [Create a template app in Power BI](service-template-apps-create.md) to create your own template apps to distribute yourself.
+[Create workspaces with your colleagues in Power BI](service-create-workspaces.md)
 
 
 
