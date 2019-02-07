@@ -46,7 +46,7 @@ Just a Web browser and work email address. You can sign up with a .gov and .mil 
 Power BI does not support email addresses provided by consumer email services or telecommunications providers. Learn more about [the Power BI self-service sign-up process](../service-self-service-signup-for-power-bi.md).
 
 ## Is government, academic and nonprofit pricing available for Power BI?
-Yes, nonprofit pricing is available when purchasing directly from Microsoft. You can learn more and sign up through the [Microsoft Nonprofits](https://www.microsoft.com/en-us/nonprofits/power-bi) site. Government and academic pricing is offered through the MOSP/Direct, EA, and Open licensing programs. Government pricing is also available in syndication. 
+Yes, nonprofit pricing is available when purchasing directly from Microsoft. You can learn more and sign up through the [Microsoft Nonprofits](https://www.microsoft.com/nonprofits/power-bi) site. Government and academic pricing is offered through the MOSP/Direct, EA, and Open licensing programs. Government pricing is also available in syndication. 
 
 ## Does Power BI support mobile devices?
 Yes. Power BI has native apps for Android phones and tablets, iOS devices, and Windows 10 devices. Download one of the [Power BI mobile apps](https://powerbi.microsoft.com/mobile) from its respective store:  

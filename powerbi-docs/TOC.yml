@@ -63,7 +63,7 @@
       href: desktop-many-to-many-relationships.md
     - name: "Storage mode in Power BI Desktop (Preview)"
       href: desktop-storage-mode.md
-    - name: "Bidirectional cross-filtering in Power BI Desktop (Preview)"
+    - name: "Bidirectional cross-filtering in Power BI Desktop"
       href: desktop-bidirectional-filtering.md
     - name: "Power BI and DirectQuery"
       href: desktop-directquery-about.md
@@ -271,6 +271,12 @@
         href: desktop-rls.md
       - name: "Customizing tooltips"
         href: desktop-custom-tooltips.md
+      - name: "Text boxes and shapes in reports"
+        href: power-bi-reports-add-text-and-shapes.md
+      - name: "Add a hyperlink to a text box"
+        href: service-add-hyperlink-to-text-box.md
+      - name: "Hyperlinks in tables"
+        href: power-bi-hyperlinks-in-tables.md
       - name: "Conditional table formatting"
         href: desktop-conditional-table-formatting.md
       - name: "Sort by column in Power BI Desktop"
@@ -303,18 +309,12 @@
         href: visuals/power-bi-visualization-export-data.md      
       - name: "Move, resize, and pop out a visualization in a report"
         href: visuals/power-bi-visualization-move-and-resize.md
-      - name: "Hyperlinks in tables"
-        href: power-bi-hyperlinks-in-tables.md
-      - name: "Add a hyperlink to a Text Box in a report"
-        href: service-add-hyperlink-to-text-box.md
       - name: "Change how visuals interact in a report"
         href: service-reports-visual-interactions.md
       - name: "Histograms"
         href: visuals/service-histograms.md
       - name: "Tips and tricks for Power BI map visualizations"
         href: visuals/power-bi-map-tips-and-tricks.md
-      - name: "Text boxes in Power BI reports"
-        href: power-bi-reports-add-text-and-shapes.md
       - name: "Customize X-axis and Y-axis properties"
         href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
       - name: "ArcGIS maps"
@@ -411,10 +411,10 @@
         href: service-get-data.md
       - name: "Tour the report editor"
         href: service-the-report-editor-take-a-tour.md
-      - name: "Organizing your work"
-        href: service-new-workspaces.md
     - name: Workflow in Power BI
       items: 
+      - name: "Organizing your work"
+        href: service-new-workspaces.md
       - name: "Ways to share your work"
         href: service-how-to-collaborate-distribute-dashboards-reports.md
       - name: "Keeping data fresh"
@@ -609,6 +609,8 @@
         href: service-share-dashboards.md
       - name: "Share a filtered report"
         href: service-share-reports.md
+      - name: "Subscribe yourself and others"
+        href: service-report-subscribe.md
       - name: "Embed report in SharePoint Online"
         href: service-embed-report-spo.md
       - name: "Embed report in a secure portal or website"
@@ -869,6 +871,8 @@
       items:
       - name: "Performance best practices"
         href: developer/embedded-performance-best-practices.md
+      - name: "Service principal"
+        href: developer/embed-service-principal.md
       - name: "Row-level security"
         href: developer/embedded-row-level-security.md
       - name: "Manage multi-tenants"
@@ -887,7 +891,7 @@
         href: developer/create-an-azure-active-directory-tenant.md
       - name: "Register an application"
         href: developer/register-app.md
-      - name: "Authenticate to Power BI service"
+      - name: "Get an Azure AD access token"
         href: developer/get-azuread-access-token.md
       - name: "Embedding Q&A"
         href: developer/qanda.md
@@ -1035,6 +1039,8 @@
         href: developer/walkthrough-push-data-get-datasets.md
       - name: "Add rows to a table"
         href: developer/walkthrough-push-data-add-rows.md
+      - name: "Encrypt credentials"
+        href: developer/encrypt-credentials.md
     - name: Reference
       items:
       - name: "REST APIs"
@@ -1111,13 +1117,15 @@
         href: report-server/quickstart-create-powerbi-report.md
       - name: "Manage content in the report server"
         href: report-server/getting-around.md
+      - name: "Row-level security (RLS) in the report server"
+        href: report-server/row-level-security-report-server.md
       - name: "Create a paginated report for a report server"
         href: report-server/quickstart-create-paginated-report.md
       - name: "Enter data directly in a paginated report"
         href: paginated-reports-enter-data.md
       - name: "Work with KPIs"
         href: https://go.microsoft.com/fwlink/?linkid=849021
-      - name: "Access shared datasets as OData feeds "
+      - name: "Access shared datasets as OData feeds"
         href: report-server/access-dataset-odata.md
       - name: "Configure scheduled refresh"
         href: report-server/configure-scheduled-refresh.md
@@ -1231,8 +1239,10 @@
         href: service-admin-premium-purchase.md
       - name: "Manage Power BI Premium"
         href: service-admin-premium-manage.md
-      - name: "Monitor Power BI Premium"
+      - name: "Monitor capacities with the app"
         href: service-admin-premium-monitor-capacity.md
+      - name: "Monitor capacities in the Admin portal"
+        href: service-admin-premium-monitor-portal.md
       - name: "Restart a Premium capacity"
         href: service-admin-premium-restart.md
       - name: "Support for large datasets"
@@ -1247,6 +1257,8 @@
       href: service-admin-role.md
     - name: "Frequently asked questions (FAQ)"
       href: service-admin-faq.md
+    - name: "High availability and failover FAQ"
+      href: service-admin-failover.md
   - name: How to
     items: 
     - name: "Licensing and sign-up"

@@ -5,7 +5,7 @@ author: mihart
 manager: kvivek
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: mihart

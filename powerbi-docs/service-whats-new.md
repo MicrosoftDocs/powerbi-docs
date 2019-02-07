@@ -1,7 +1,7 @@
 ---
 title: What's new in the Power BI service
 description: What's new in the Power BI service
-author: mihart
+author: NikhilGaekwad-MSFT
 manager: kfile
 ms.reviewer: 
 
@@ -17,12 +17,12 @@ LocalizationGroup: Get started
 # What's new in the Power BI service
 Check this page for known issues and recently released features in the **Power BI Service**. For related "What's New" information, see:
 
+- [What's new in business intelligence October ‘18 ](https://docs.microsoft.com/business-applications-release-notes/October18/intelligence-platform/planned-features) release notes from the Microsoft Business Applications Group: The latest updates to our business applications.
 - [What's new in Power BI Desktop](desktop-latest-update.md)  
 - [What's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Power BI team blog](https://powerbi.microsoft.com/blog/)
-- [Business Applications Spring ‘18 release notes](http://aka.ms/businessappsreleasenotes) from Dynamics 365: The latest updates to our business applications, as well as new capabilities for building your applications and extensions on top of our platform. 
 
-You can also check out the YouTube channels for information about "What's new" and features.
+Also, check out the YouTube channels for information about "What's new" and features.
 
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
@@ -36,7 +36,7 @@ You can also check out the YouTube channels for information about "What's new" a
 * Power BI [Report URL filter](service-url-filters.md) improvements.
 
 ### July 2018
-* Custom visuals support for [persistent filters](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/).
+* Custom visuals support for [persistent filters](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/).
 * [APIs and PowerShell Cmdlets](https://powerbi.microsoft.com/blog/announcing-apis-and-powershell-cmdlets-for-power-bi-administrators/) for Power BI administrators.
 * [Multi-Geo support](service-admin-premium-multi-geo.md) for Power BI Premium.
 
@@ -193,7 +193,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 ***Row-level security (RLS)***
 
 * Azure Active Directory (AAD) group support: Users can now assign AAD groups (security groups and distribution lists) to a role. This makes it easier to assign roles to a large group of users at once.
-* [Test your RLS roles with reports backed by the data with RLS in place](service-admin-rls.md#validating-the-role-within-power-bi-desktop): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
+* [Test your RLS roles with reports backed by the data with RLS in place](service-admin-rls.md#validate-the-roles-within-power-bi-desktop): We added a feature to our RLS preview that lets you test your dataset as a specific role. This will make sure the role works as you expect before any users get their hands on your dashboard.
 * Define and apply RLS to cloud models based on direct queries: You can now create and apply RLS rules for direct query data sources.
 
 ***Dashboards***

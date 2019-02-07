@@ -6,6 +6,9 @@
     tocHref: /power-bi/
     topicHref: /power-bi/
     items:
+    - name: Consumers
+      tocHref: /power-bi/consumer/
+      topicHref: /power-bi/consumer/power-bi-consumer-landing
     - name: Developer
       tocHref: /power-bi/developer/
       topicHref: /power-bi/developer/embedding

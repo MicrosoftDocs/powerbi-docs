@@ -4,11 +4,11 @@ description: Push data into a Power BI dataset
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/05/2017
+ms.date: 02/05/2019
 ---
 
 # Push data into a Power BI dataset

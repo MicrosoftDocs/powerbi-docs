@@ -17,6 +17,48 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
 
+## January 2019
+- **Power BI Report Server**            
+    - *Version 1.4.6969.7395 (Build 15.0.1102.235), Released: January 30, 2019*
+        - Bug Fixes
+            - Power BI Reports
+                - Fix for issue with basic credentials when using direct query
+                - Fix for bidirectional relationships with row-level security filters applied
+                - Fix for stale data after a model refresh in a scale-out environment
+                - Fix for double scrollbar for table/ matrix on Firefox 63+
+                - Fix for +/- icon size in Internet Explorer
+            - Paginated Reports
+                - Fix for issue with updating usage of a shared datasource for a report
+
+    - *Version 1.4.6960.38798 (Build 15.0.1102.222), Released: January 22, 2019*
+        - Features
+            - Power BI Reports 
+                - Support for Row-level security
+                - Expand and collapse on matrix row headers
+                - Copy and paste between .pbix files
+                - Smart alignment guides
+                - Support for SAP BW 2.0 Connector
+            - Administrators
+                - Ability to restrict extensions of resources that can be uploaded to the report server
+                - Ability to restrict supported hyperlink schemes
+            - Programmability
+                - New Web API: /PowerBIReports({Id})/DataModelRoles (GET)
+                - New Web API: /PowerBIReports({Id})/DataModelRoleAssignments (GET & PUT)
+                - See [Power BI Report Server REST API](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0) for more details
+        - Bug Fixes
+            - HTML Injection Vulnerability
+            - Export to PDF is not showing Euro symbol
+            - Saving a password with multiple data sources in Power BI reports invalidates non changed passwords
+            - Visuals display issues in Power BI Mobile App after being idle
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.65.5313.1562 (January 2019), Released: January 30, 2019*
+        - Shortcut and pinned icons remain after uninstalling Power BI Report Server
+        - Fix for pinning Power BI Report Server to start menu giving black text on a black icon
+
+    - *Version: 2.65.5313.1421 (January 2019), Released: January 22, 2019*
+        - Contains changes required for connection with Power BI Report Server (January 2019)  
+
 ## August 2018
 - **Power BI Report Server**
     - *Version 1.3.6816.37243 (Build 15.0.2.557), Released: August 30, 2018*

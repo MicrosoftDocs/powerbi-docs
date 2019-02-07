@@ -284,16 +284,6 @@ Users in the organization can tag dashboards with classifications that indicate 
 
 Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](developer/embedding.md)
 
-## Workspaces and import settings
-
-### Author content in workspaces
-
-Users in the organization can access workspaces to connect to data and author content. [Learn more](service-create-the-new-workspaces.md)
-
-### Import data into Power BI
-
-Users in the organization can import data into the service, such as publishing reports from Power BI Desktop, uploading Power BI report files, and connecting to data directly from the service. [Learn more](desktop-upload-desktop-files.md)
-
 ## Dataflow settings (preview)
 
 ### Create and use dataflows (preview)
@@ -383,7 +373,7 @@ To update the visual from the organizational store, select the gear icon. Browse
 
 Make sure the Visual ID remains unchanged. The new file replaces the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which prompts them to replace the current version that they have in the report.
 
-For more information, visit [Frequently asked questions about organizational custom visuals](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
+For more information, visit [Frequently asked questions about organizational custom visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
 
 ## Dataflow storage (preview)
 

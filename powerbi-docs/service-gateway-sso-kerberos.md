@@ -39,7 +39,7 @@ To enable SSO for SAP HANA, follow these steps first:
   * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
 * On the gateway machine, install SAP’s latest HANA ODBC driver.  The minimum version is HANA ODBC version 2.00.020.00 from August 2017.
 
-For more information about setting up and configuring single sign-on for SAP HANA using Kerberos, see the topic [Single Sign-on Using Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/en-US/1885fad82df943c2a1974f5da0eed66d.html) in the SAP HANA Security Guide and the links from that page, particularly SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory].
+For more information about setting up and configuring single sign-on for SAP HANA using Kerberos, see the topic [Single Sign-on Using Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html) in the SAP HANA Security Guide and the links from that page, particularly SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory].
 
 ## Preparing for Kerberos Constrained Delegation
 
@@ -200,6 +200,9 @@ Now that you understand how Kerberos works with a gateway, you can configure SSO
 This guide attempts to be as comprehensive as possible. If you have already completed some of these steps, you can skip them: For example you’ve already created a Service User for your BW server and mapped an SPN to it, or you’ve already installed the gsskrb5 library.
 
 ### Setup gsskrb5 on client machines and the BW server
+
+> [!NOTE]
+> gsskrb5 is no longer actively supported by SAP. For more information, see [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Also note that gsskrb5 does not allow for SSO connections from the Data Gateway to BW Message Servers. Only connections to BW Application Servers are possible.
 
 gsskrb5 must be in use by both the client and server to complete an SSO connection through the gateway. The Common Crypto Library (sapcrypto) is not currently supported.
 
