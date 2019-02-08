@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.custom:  
 ms.subservice: powerbi-service
 ms.topic: overview
-ms.date: 02/07/2019
+ms.date: 02/08/2019
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -44,7 +44,7 @@ The app screen shows you both the name of the designer as well as the date the a
 ### Shared with me
 The **Shared with me** screen shows you the name of the content owner, as well as the date the content was shared with you.
 
-![shared with me screen showing Changed date and Owner](media/end-user-fresh/power-bi-shared.png) 
+![shared with me screen showing Changed date and Owner](media/end-user-fresh/power-bi-shared-new.png) 
 
 
 ## How to look up the last refresh date
