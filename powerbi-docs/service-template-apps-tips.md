@@ -30,10 +30,10 @@ For template apps, queries developed in Power BI Desktop are used to connect to 
 ### Connect to your API
 To get started, you need to connect to your API from Power BI Desktop to start building your queries.
 
-You can use the Data Connectors that are available out of the box in Power BI Desktop to connect to your API. You can use the Web Data Connector (Get Data -> Web) to connect to your Rest API or the OData connector (Get Data -> OData feed) to connect to your OData feed. Note that these connectors work out of the box only if your API supports Basic Authentication.
+You can use the Data Connectors that are available out of the box in Power BI Desktop to connect to your API. You can use the Web Data Connector (Get Data -> Web) to connect to your Rest API or the OData connector (Get Data -> OData feed) to connect to your OData feed. These connectors work out of the box only if your API supports Basic Authentication.
 
 > [!NOTE]
-> If your API uses any other authentication types, like OAuth 2.0 or Web API Key, then you need to develop your own Data Connector to allow Power BI Desktop to successfully connects and authenticates to your API. For details on how to develop your own Data Connector for your template app, check the [Data Connectors documentation](https://aka.ms/DataConnectors). 
+> If your API uses any other authentication types, like OAuth 2.0 or Web API Key, then you need to develop your own Data Connector to allow Power BI Desktop to successfully connect and authenticate to your API. For details on how to develop your own Data Connector for your template app, check the [Data Connectors documentation](https://aka.ms/DataConnectors). 
 >
 >
 
@@ -74,9 +74,7 @@ The modeling also affects how well Q&A can provide results for your customers. E
 ### Additional data model tips
 
 Make sure you've:
-* Applied formatting to all value columns.
-    >[!NOTE]
-    >Types should be applied in the query.  
+* Applied formatting to all value columns. Apply types in the query.  
 * Applied formatting to all measures. 
 * Set default summarization. Especially "Do Not Summarize", when applicable (for unique values, for example).  
 * Set data category, when applicable.  
