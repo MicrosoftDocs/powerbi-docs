@@ -1,6 +1,6 @@
 ---
 title: Tour the report editor
-description: The report editor in Power BI service and the report editor in Power BI Desktop are similar. 
+description: The report editor in the Power BI service and the report editor in Power BI Desktop are similar. 
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -9,16 +9,18 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/25/2019
+ms.date: 02/07/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
 ---
 # Tour the report editor in Power BI
 
-The *report editor* in the Power BI service and the report editor in Power BI Desktop are similar. The video shows the report editor in Power BI Desktop and this article shows the report editor in Power BI service. 
+The *report editor* in the Power BI service and the report editor in Power BI Desktop are similar. Typically you start by creating reports in Power BI Desktop. Then you publish them to the Power BI service, where you can continue modifying them. The Power BI service is also where you create the dashboards based on your reports.
 
-As a report creator, you create and edit dashboards and reports. Then you distribute them to your report consumers. They can interact with your dashboards and reports in Reading view in the Power BI service, but not edit them. Read more [what report consumers can do in the Power BI service](consumer/end-user-reading-view.md) 
+After you create your dashboards and reports, you distribute them to your report consumers. Depending on how you share them, your end users may be able to interact with them in Reading view in the Power BI service, but not edit them. Read more about [what report consumers can do in the Power BI service](consumer/end-user-reading-view.md). 
+
+This video shows the report editor in Power BI Desktop. This article shows the report editor in the Power BI service. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -75,7 +77,7 @@ The formatting possibilities are almost endless.  To learn more, explore on your
 Select the magnifying glass icon to display the Analytics pane. The options available depend on the type of visualization selected.
 
 ![Analytics pane in the report editor](media/service-the-report-editor-take-a-tour/power-bi-analytics.png)    
-With the Analytics pane in Power BI service, you can add dynamic reference lines to visualizations, and provide focus for important trends or insights. To learn more, see [Analytics pane in Power BI service](service-analytics-pane.md) or [Analytics pane in Power BI Desktop](desktop-analytics-pane.md).
+With the Analytics pane in the Power BI service, you can add dynamic reference lines to visualizations, and provide focus for important trends or insights. To learn more, see [Analytics pane in the Power BI service](service-analytics-pane.md) or [Analytics pane in Power BI Desktop](desktop-analytics-pane.md).
 
 - - -
 ## The Filters pane
@@ -86,6 +88,12 @@ The Filters pane has one other powerful feature - the ability to filter using a 
 ![Filters pane](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
 For more information, see [Add a filter to a report](power-bi-report-add-filter.md).
+
+A new filter experience is currently in preview. In the new filters, you can format them to look like the report itself. You can also lock filters or hide them from your report consumers. 
+
+![New filter experience](media/service-the-report-editor-take-a-tour/power-bi-filter-reading.png)
+
+Read more about the [new filter experience](power-bi-report-filter-preview.md).
 
 - - -
 ## The Fields pane

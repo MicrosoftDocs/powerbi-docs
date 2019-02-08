@@ -103,9 +103,6 @@ Different from the traditional use of a master account, using the service princi
     Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
     ```
 
-    > [!Note]
-    > AAD security groups can only be created by an AAD global administrator.
-
 3. As a Power BI admin, you need to enable service principal in the **Developer settings** in the Power BI admin portal. Add the security group that you created in Azure AD to the **Specific security group** section in the **Developer settings**.
 
    > [!Important]
@@ -168,6 +165,7 @@ Below is a sample script to retrieve the service principal object ID with PowerS
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
 * You can't install or manage an on-premises data gateway using service principal.
 * [Embed for your organization](embed-sample-for-your-organization.md) applications are unable to use service principal.
+* [Dataflows](../service-dataflows-overview.md) management is not supported.
 
 ## Next steps
 
