@@ -103,9 +103,6 @@ Different from the traditional use of a master account, using the service princi
     Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
     ```
 
-    > [!Note]
-    > AAD security groups can only be created by an AAD global administrator.
-
 3. As a Power BI admin, you need to enable service principal in the **Developer settings** in the Power BI admin portal. Add the security group that you created in Azure AD to the **Specific security group** section in the **Developer settings**.
 
    > [!Important]
