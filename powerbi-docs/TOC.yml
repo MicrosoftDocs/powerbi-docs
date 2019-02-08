@@ -1039,6 +1039,8 @@
         href: developer/walkthrough-push-data-get-datasets.md
       - name: "Add rows to a table"
         href: developer/walkthrough-push-data-add-rows.md
+      - name: "Encrypt credentials"
+        href: developer/encrypt-credentials.md
     - name: Reference
       items:
       - name: "REST APIs"
@@ -1237,8 +1239,10 @@
         href: service-admin-premium-purchase.md
       - name: "Manage Power BI Premium"
         href: service-admin-premium-manage.md
-      - name: "Monitor Power BI Premium"
+      - name: "Monitor capacities with the app"
         href: service-admin-premium-monitor-capacity.md
+      - name: "Monitor capacities in the Admin portal"
+        href: service-admin-premium-monitor-portal.md
       - name: "Restart a Premium capacity"
         href: service-admin-premium-restart.md
       - name: "Support for large datasets"
