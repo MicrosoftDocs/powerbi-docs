@@ -9,18 +9,18 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/18/2018
+ms.date: 02/07/2019
 ms.author: maggies
 
 LocalizationGroup: Get started
 ---
 # Basic concepts for designers in the Power BI service
 
-This article assumes that you've already [signed up for the Power BI service](service-self-service-signup-for-power-bi.md) and [added some data](service-get-data.md). If you don't have any data yet, try installing a [Power BI sample content pack](sample-datasets.md#the-power-bi-samples-as-content-packs).
+The aim of this article is to orient you to the Power BI service: what the different elements are, how they work together, and how you can work with them. You may get more out of it if you've already [signed up for the Power BI service](service-self-service-signup-for-power-bi.md) and [added some data](service-get-data.md). As a designer, your typical workflow is usually to start by creating reports in Power BI Desktop. For this article, if you don't have your own reports yet try installing a [Power BI sample content pack](sample-datasets.md#the-power-bi-samples-as-content-packs).
 
 ![Power BI service Home screen in a browser](media/service-basic-concepts/power-bi-home-screen.png)
 
-Here are the elements you see when you open the Power BI service in the browser:
+When you open the Power BI service in a browser, you start at your Home screen. Here are the elements you may see:
 
 1. Navigation pane (left nav)
 2. Office 365 app launcher
@@ -30,9 +30,9 @@ Here are the elements you see when you open the Power BI service in the browser:
 6. Tiles from a favorite dashboard
 7. Favorite and frequent dashboards and reports
 
-We'll dig into these features later, but first let's review some Power BI concepts.
+Your end users for your reports and dashboards have the same start experience in the Power BI service in a browser.
 
-Or you might want to watch this video first before reading the rest of this article.  In the video, Will reviews the basic concepts and gives a tour of Power BI service.
+We'll dig into these features later, but first let's review some Power BI concepts. Or you might want to watch this video first.  In the video, Will reviews the basic concepts and gives a tour of the Power BI service.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 
@@ -41,15 +41,14 @@ Or you might want to watch this video first before reading the rest of this arti
 The 4 major building blocks of Power BI are: **_dashboards_**, **_reports_**, **_workbooks_**, and **_datasets_**. And they're all organized into **_workspaces_**. It's important to understand workspaces before we dig into the four building blocks, so let's start there.
 
 ## Workspaces
-Workspaces are containers for dashboards, reports, workbooks, and datasets in Power BI. There are two types of workspaces: *My workspace* and *app workspaces*. So what is an *app*? A Power BI *app* is a collection of dashboards and reports built to deliver key metrics for your organization. Apps are interactive but can't be edited.
+Workspaces are containers for dashboards, reports, workbooks, and datasets in Power BI. There are two types of workspaces: *My workspace* and *app workspaces*. So what is an *app*? A Power BI *app* is a collection of dashboards and reports built to deliver key metrics to the Power BI end users for your organization. Apps are interactive but end users can't edit them.
 
 - *My workspace* is the personal workspace for any Power BI customer to work with your own content. Only you have access to your My workspace. You can share dashboards and reports from your My Workspace. If you want to collaborate on dashboards and reports, or create an app, then you want to work in an app workspace.      
 -  *App workspaces* are used to collaborate and share content with colleagues. They are also the places where you create, publish, and manage apps for your organization. Think of them as staging areas and containers for the content that will make up a Power BI app. You can add colleagues to your app workspaces and collaborate on dashboards, reports, workbooks, and datasets. All app workspace members need Power BI Pro licenses, but app consumers (the colleagues who have access to the apps) don't necessarily need Pro licenses.  
 
-To learn more, see the **Share your work** section of the Table of contents, starting with [How should I collaborate and share dashboards and reports](service-how-to-collaborate-distribute-dashboards-reports.md)
+To learn more, start with [Ways to share dashboards your work](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-
-Now on to the Power BI building blocks. You can't have dashboards or reports without data (well, you can have empty dashboards and empty reports, but they're not useful until they have data), so let's start with **datasets**.
+Now, on to the Power BI building blocks. You can't have dashboards or reports without data (well, you can have empty dashboards and empty reports, but they're not useful until they have data), so let's start with **datasets**.
 
 ## Datasets
 A *dataset* is a collection of data that you *import* or *connect* to. Power BI lets you connect to and import all sorts of datasets and bring all of it together in one place.  
@@ -68,7 +67,7 @@ In the example below, I've selected the "Sales and marketing" app workspace and 
 
   ![Dataset diagram](media/service-basic-concepts/drawing2.png)
 
-To [connect to or import a dataset](service-get-data.md), select **Get Data** (at the bottom of the left navigation) or select **+ Create > Dataset** (in the upper right corner). Follow the instructions to connect to or import the specific source and add the dataset to the active workspace. New datasets are marked with a yellow asterisk. The work you do in Power BI does not change the underlying dataset.
+To [connect to or import a dataset](service-get-data.md), select **Get Data** at the bottom of the left navigation. Follow the instructions to connect to or import the specific source and add the dataset to the active workspace. New datasets are marked with a yellow asterisk. The work you do in Power BI doesn't change the underlying dataset.
 
 If you're [part of an **_app workspace_**](service-collaborate-power-bi-workspace.md), datasets added by one workspace member are available to the other workspace members.
 
@@ -107,7 +106,7 @@ In the example below, I've selected the "Sales and marketing" app workspace and 
 * [Reports in Power BI mobile apps](mobile-reports-in-the-mobile-apps.md)
 
 ## Dashboards
-A *dashboard* is something you create **in Power BI service** or something a colleague creates **in Power BI service** and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile pinned from a report or from [Q&A](power-bi-q-and-a.md) displays a single [visualization](power-bi-report-visualizations.md) that was created from a dataset and pinned to the dashboard. Entire report pages can also be pinned to a dashboard as a single tile. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](service-dashboard-tiles.md).
+A *dashboard* is something you create **in the Power BI service** or something a colleague creates **in the Power BI service** and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile pinned from a report or from [Q&A](power-bi-q-and-a.md) displays a single [visualization](power-bi-report-visualizations.md) that was created from a dataset and pinned to the dashboard. Entire report pages can also be pinned to a dashboard as a single tile. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see [Dashboard tiles in Power BI](service-dashboard-tiles.md).
 
 Why do people create dashboards?  Here are just some of the reasons:
 
