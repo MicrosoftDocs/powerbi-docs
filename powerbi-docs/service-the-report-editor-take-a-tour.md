@@ -18,7 +18,7 @@ LocalizationGroup: Reports
 
 The *report editor* in the Power BI service and the report editor in Power BI Desktop are similar. Typically you start by creating reports in Power BI Desktop. Then you publish them to the Power BI service, where you can continue modifying them. The Power BI service is also where you create the dashboards based on your reports.
 
-After you create your dashboards and reports, you distribute them to your report consumers. They can interact with them in Reading view in the Power BI service, but not edit them. Read more about [what report consumers can do in the Power BI service](consumer/end-user-reading-view.md). 
+After you create your dashboards and reports, you distribute them to your report consumers. Depending on how you share them, your end users may be able to interact with them in Reading view in the Power BI service, but not edit them. Read more about [what report consumers can do in the Power BI service](consumer/end-user-reading-view.md). 
 
 This video shows the report editor in Power BI Desktop. This article shows the report editor in the Power BI service. 
 
