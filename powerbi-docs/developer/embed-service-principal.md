@@ -168,6 +168,7 @@ Below is a sample script to retrieve the service principal object ID with PowerS
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
 * You can't install or manage an on-premises data gateway using service principal.
 * [Embed for your organization](embed-sample-for-your-organization.md) applications are unable to use service principal.
+* [Dataflows](../service-dataflows-overview.md) management is not supported.
 
 ## Next steps
 
