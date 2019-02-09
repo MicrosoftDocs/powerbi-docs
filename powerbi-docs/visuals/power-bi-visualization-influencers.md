@@ -32,13 +32,13 @@ Watch this video to learn how to create a key influencers visual and then follow
 
 <iframe width="560" height="315" src="https://go.microsoft.com/fwlink/?linkid=2071538&clcid=0x409" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Our Product Manager wants to figure out which factors lead customers to leave negative reviews about our cloud service.  To follow along, open the [Customer Feedback PBIX file](xxxxxx) in Power BI Desktop.  
+Our Product Manager wants to figure out which factors lead customers to leave negative reviews about our cloud service.  To follow along, open the [Customer Feedback PBIX file](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/Customer%20Feedback.pbix) in Power BI Desktop. You can also download the [Customer Feedback Excel file](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/Customer%20Feedback.xlsx).
 
 1. Open the report and select the key influencers icon.  
 
     ![From Visualizations pane, select Key influencers template](media/power-bi-visualization-influencers/power-bi-template.png)
 
-2. Drag the metric you want to investigate into the **Analyze** field. The **Anlyze** field supports categorical (non-continuous) variables only. Since we are interested in looking at what drives a customer rating of our service to be ‘Low’, we select **xxxxxxxxx** > **Rating**.    
+2. Drag the metric you want to investigate into the **Analyze** field. The **Anlyze** field supports categorical (non-continuous) variables only. Since we are interested in looking at what drives a customer rating of our service to be ‘Low’, we select **Customer Table** > **Rating**.    
 3. Next, drag fields that you think could influence your metric into the **Explain By** well. You can drag in as many fields as you’d like. In this case we are starting out with: 
     - Country-Region 
     - Role in Org 
