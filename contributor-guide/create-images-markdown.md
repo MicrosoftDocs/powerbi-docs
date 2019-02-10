@@ -29,7 +29,7 @@ For example:
 
 After you create the folder and added images to it, use the following syntax to create images in your article:
 
-```
+```md
 ![Alt image text](./media/article-name/your-image-filename.png)
 ```
 
@@ -51,7 +51,7 @@ Use the following guidelines when creating and including art files:
 
 * Do not share art files across documents. Copy the file you need and add it to the media folder for your specific topic. Sharing between files is discouraged because it is easier to remove deprecated content and images which keeps the repo clean.
 * .png files are highly preferred over other formats.
-* When possible, create your screengrabs uisng the Retail Analysis sample that is included with Power BI. If that sample doesn't work for what you're trying to demonstrate, use one of the other official sanctioned Power BI samples (to see the samples, in Power BI service, Get data > Samples).
+* When possible, create your screengrabs using the Retail Analysis sample that is included with Power BI. If that sample doesn't work for what you're trying to demonstrate, use one of the other official sanctioned Power BI samples (to see the samples, in Power BI service, Get data > Samples).
 * Use pink squares of the default width provided in Paint (5 px) or SnagIt to call attention to particular elements in screenshots.  
   
     Example:
@@ -62,12 +62,12 @@ Use the following guidelines when creating and including art files:
   Example:
   
   ![This is an example of a blue arrow used as a callout.](./media/create-images-markdown/power-bi-see-data.png)
-* Avoid whitespace on edges of screenshots. If you crop a screenshot in a way that leaves white background at the edges, add a single pixel gray border around the image.  If using Paint, use the lighter gray in the default color pallete (0xC3C3C3). If using some other graphic app, the RGB color is R195, G195, 195. You can easily add a gray border around an image in Visio--to do this, select the image, select Line, and ensure the correct color is set, and then change the line weight to 1 1/2 pt.  Screenshots should have a 1-pixel-wide gray border so that white areas of the screenshot do not blur into the web page.
+* Avoid whitespace on edges of screenshots. If you crop a screenshot in a way that leaves white background at the edges, add a single pixel gray border around the image.  If using Paint, use the lighter gray in the default color pallet (0xC3C3C3). If using some other graphic app, the RGB color is R195, G195, 195. You can easily add a gray border around an image in Visio--to do this, select the image, select Line, and ensure the correct color is set, and then change the line weight to 1 1/2 pt.  Screenshots should have a 1-pixel-wide gray border so that white areas of the screenshot do not blur into the web page.
   
     Example:
   
     ![This is an example of a gray border around whitespace.](./media/create-images-markdown/agent.png)
-* Conceptual images with whitespace are allowed to not have a gray boder.  
+* Conceptual images with whitespace are allowed to not have a gray border.  
   
     Example:
   
