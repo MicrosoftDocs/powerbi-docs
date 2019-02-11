@@ -20,7 +20,7 @@ You can run Python scripts directly in **Power BI Desktop**, and import the resu
 To run Python scripts in Power BI Desktop, you need to install **Python** on your local machine. You can download and install **Python** for free from many locations, including the [Official Python download page](https://www.python.org/), and the [Anaconda](https://anaconda.org/anaconda/python/). The current release of Python scripting in Power BI Desktop supports Unicode characters as well as spaces (empty characters) in the installation path.
 
 ### Install Required Python Packages
-The Power BI Python integration requires two Python packages to be installed (Pandas and Matplotlib).  Using the pip command line tool, install the following two pacakges,
+The Power BI Python integration requires two Python packages to be installed (Pandas and Matplotlib).  Using the pip command line tool, install the following two packages,
 
 ```
 pip install pandas
