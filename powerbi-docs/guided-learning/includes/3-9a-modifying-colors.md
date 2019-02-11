@@ -14,7 +14,7 @@ You can also change the color based on a value, or measure. To do so, drag a fie
 
 ![](media/3-9a-modifying-colors/3-9a_4.png)
 
-In addition, you can change the scale and the colors that are used when filling data element colors. You can also select a diverging scale by toggling the Diverging slider to on, which lets the color scale between three colors. And you can also set *Minimum*, *Center*, and *Maxumum* values displayed on your chart.
+In addition, you can change the scale and the colors that are used when filling data element colors. You can also select a diverging scale by toggling the Diverging slider to on, which lets the color scale between three colors. And you can also set *Minimum*, *Center*, and *Maximum* values displayed on your chart.
 
 ![](media/3-9a-modifying-colors/3-9a_5.png)
 
