@@ -741,7 +741,7 @@
         href: desktop-slicer-numeric-range.md
       - name: "Use the relative date slicer"
         href: desktop-slicer-filter-date-range.md
-        name: "Create a responsive slicer you can resize"
+      - name: "Create a responsive slicer you can resize"
         href: power-bi-slicer-filter-responsive.md
       - name: "Create custom Power BI answer cards for Cortana"
         href: service-cortana-answer-cards.md
