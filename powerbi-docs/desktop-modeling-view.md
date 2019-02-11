@@ -21,7 +21,7 @@ With the **Modeling view** in **Power BI Desktop**, you can view and work with c
 
 ## Enabling the Modeling view preview feature
 
-The modeling view feature is in preview and must be enabled in **Power BI Desktop**. To enable Modeling view, select **File > Options and Settings > Options > Preview Features**, then select the **Modeling view** checkbox as shown in the followinig image.
+The modeling view feature is in preview and must be enabled in **Power BI Desktop**. To enable Modeling view, select **File > Options and Settings > Options > Preview Features**, then select the **Modeling view** checkbox as shown in the following image.
 
 ![Enable the Modeling view preview feature in Power BI Desktop](media/desktop-modeling-view/modeling-view_01.png)
 
