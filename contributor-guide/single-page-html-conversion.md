@@ -21,7 +21,7 @@
     
     1. Search: `\!\[(.*?)\]\(./<github-file-name>_files/`
     2. Replace: `![\1]\(media/<github-file-name/`
-    3. In the file explorer move the image folder to a media directory, create one if one does not exisit.
+    3. In the file explorer move the image folder to a media directory, create one if one does not exist.
     4. In the image folder remove any non-image items such as .js, .css, .php, and any unused images from the removed sections of the page (logos and icons).
 11. Open the markdown file in the editor of your choice. 
 12. Compare the markdown content from the original web page. You may have to fix a few other things such as making sure ordered lists are spaced out correctly. There may be a few `<span>` tags that need to be removed or other formatting changes that need to be made. Any tables that did not get converted will need to be fixed as well.
