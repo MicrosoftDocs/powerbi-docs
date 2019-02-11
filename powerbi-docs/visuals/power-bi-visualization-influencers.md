@@ -8,7 +8,7 @@ ms.reviewer: 'justyna'
 ms.service: powerbi
 ms.component: powerbi-visuals
 ms.topic: tutorial
-ms.date: 02/08/2019
+ms.date: 02/10/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -52,7 +52,7 @@ Our Product Manager wants to figure out which factors lead customers to leave ne
 
 1. Open the report and select the key influencers icon.  
 
-    ![From Visualizations pane, select Key influencers template](media/power-bi-visualization-influencers/power-bi-template.png)
+    ![From Visualizations pane, select Key influencers template](media/power-bi-visualization-influencers/power-bi-template-new.png)
 
 2. Drag the metric you want to investigate into the **Analyze** field. The **Analyze** field supports categorical (non-continuous) variables only. Since we are interested in looking at what drives a customer rating of our service to be **Low**, we select **Customer Table** > **Rating**.    
 3. Next, drag fields that you think could influence **Rating** into the **Explain By** well. You can drag in as many fields as you’d like. In this case, we are starting out with: 
@@ -162,7 +162,7 @@ The Key influencers visual is currently in public preview, and  there are severa
 - Direct Query support 
 - Live Query support 
  
-**I am seeing an error that no influencers/segments have been found. Why is that?** [2052264] 
+**I am seeing an error that no influencers/segments have been found. Why is that?**  
 
 ![error - no influencers found](media/power-bi-visualization-influencers/power-bi-error1.png)
 
@@ -172,13 +172,13 @@ This error occurs when you have included fields in **Explain by** but no influen
 - Your explanatory fields have too many categories with few observations. This makes it hard for the visualization to determine which factors are influencers as it’s hard to generalize things based on a handful of observations 
 - Your explanatory factors have a sufficient number of observations to make generalizations but the visualization did not find any meaningful correlations to report back on 
  
-**I see an error that the metric I am analyzing does not have enough data to run the analysis on. Why is that?** [2052270] 
+**I see an error that the metric I am analyzing does not have enough data to run the analysis on. Why is that?**  
 
 ![error-not enough data](media/power-bi-visualization-influencers/power-bi-not-enough-data.png)
 
 The visualization works by looking at patterns in the data for one group (for example, customers who gave low ratings) compared to other groups (for example, customers who gave high ratings). If the data in your model has very few observations, it is hard to find patterns. If the visualization doesn’t have enough data to find meaningful influencers it will indicate more data is needed to run the analysis. We recommend having at least 100 observations for the selected state (customers churning) and at least 10 observations for the states you are using for comparison (customers not churning).  
  
-**I am seeing an error that a field in ‘Explain by’ is not uniquely related to the table containing the metric I am analyzing. Why is that?** [2052334] 
+**I am seeing an error that a field in ‘Explain by’ is not uniquely related to the table containing the metric I am analyzing. Why is that?**  
  
 The analysis runs on the table level of the field being analyzed. For example, if you are analyzing customer feedback for your service you might have a table which tells you whether a customer gave a high rating or a low rating. In this case, your analysis would be running at the customer table level. 
 
@@ -217,7 +217,7 @@ Measures and aggregates are by default analyzed at that table level. If we had a
 
 If the customer table does not have a unique identifier, we are not able to evaluate the measure and it is ignored by the analysis. In order to avoid this, ensure the table with your metric (in this case the customer table) has a unique identifier (for example, customer ID). It’s also very easy to add an index column using Power Query.
  
-**I see a warning that the metric I am analyzing has more than 10 unique values and that this may impact the quality of my analysis. Why is that?** [2052272] 
+**I see a warning that the metric I am analyzing has more than 10 unique values and that this may impact the quality of my analysis. Why is that?**  
 
 The AI visualization is optimized for analyzing categories (for example, Churn is ‘Yes’ or ‘No’, Customer Satisfaction is ‘High’, ‘Medium’ or ‘Low’ etc.) Increasing the number of categories to analyze means we have fewer observations per category which makes it harder for the visualization to find patterns in the data. 
 
