@@ -787,6 +787,8 @@
         href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
       - name: "ArcGIS in Power BI"
         href: power-bi-visualization-arcgis.md
+      - name: "Interact with ArcGIS maps in Power BI"
+        href: visuals/power-bi-visualizations-arcgis.md
       - name: "Basic area chart"
         href: visuals/power-bi-visualization-basic-area-chart.md
       - name: "Cards (big number tiles) in Power BI"
@@ -799,6 +801,8 @@
         href: visuals/power-bi-visualization-filled-maps-choropleths.md
       - name: "Funnel charts in Power BI"
         href: visuals/power-bi-visualization-funnel-charts.md
+      - name: "Key influencers charts in Power BI"
+        href: visuals/power-bi-visualizations-influencers.md
       - name: "KPI Visuals"
         href: visuals/power-bi-visualization-kpi.md
       - name: "Create advanced analytics and visualizations using R scripts in Power BI"
