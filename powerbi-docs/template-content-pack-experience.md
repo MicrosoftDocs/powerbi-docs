@@ -24,7 +24,7 @@ To get started, a user browses the content pack gallery and selects a content pa
 ![connect](media/template-content-pack-experience/github_connect.png)
 
 ## Parameters
-Once selected, the user will be prompted to provide parameters (if requried). The parameters dialog is provided declaratively by the author during the creation of the content pack.
+Once selected, the user will be prompted to provide parameters (if required). The parameters dialog is provided declaratively by the author during the creation of the content pack.
 
 Currently the parameters UI is very basic – there is no way to enumerate drop down lists and data input validation is constrained to regex.
 
