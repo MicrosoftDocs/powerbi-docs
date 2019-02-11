@@ -26,7 +26,7 @@ The **AppSource** is the place to find SaaS apps and add-ins for your Microsoft 
 
 ## Preparing to submit your custom visual
 
-Once you're done coding and testing your custom visual and have packaged it into a pbiviz file, you should also have the following ready for your submission.
+Once you're done coding and [testing your custom visual](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md) and have packaged it into a pbiviz file, you should also have the following ready for your submission.
 
 | Item | Required | Description |
 | --- | --- | --- |
