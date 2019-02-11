@@ -667,6 +667,8 @@
         href: service-google-analytics-connector.md
       - name: "Project Online: connect to data through Power BI Desktop"
         href: desktop-project-online-connect-to-data.md
+      - name: "Microsoft Graph Security for Power BI Desktop"
+        href: desktop-connect-graph-security.md
     - name: Transform and shape data
       items: 
       - name: "Use Shape Maps in Power BI Desktop (Preview)"
