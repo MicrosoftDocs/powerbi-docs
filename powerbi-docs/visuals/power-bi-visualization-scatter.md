@@ -1,25 +1,29 @@
 ---
-title: Scatter charts in Power BI
-description: 'Scatter Charts in Power BI'
+title: Scatter, bubble, and dot plot charts in Power BI
+description: 'Scatter chart, dot plot charts, and bubble charts in Power BI'
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: PVcfPoVE3Ys
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/28/2018
+ms.date: 10/24/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Scatter charts and bubble charts in Power BI
+# Scatter charts, bubble charts, and dot plot charts in Power BI
 A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points may be distributed evenly or unevenly across the horizontal axis, depending on the data.
 
-A bubble chart replaces the data points with bubbles, with the bubble *size* representing an additional dimension of the data.
+A bubble chart replaces data points with bubbles, with the bubble *size* representing an additional dimension of the data.
 
 ![sample bubble chart](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
+
+A dot plot chart is similar to a bubble chart and scatter chart except that you can plot numerical or categorical data along the X axis. 
+
+![sample bubble chart](media/power-bi-visualization-scatter/power-bi-dot-plot.png)
 
 You can set the number of data points, up to a maximum of 10,000.  
 
@@ -38,6 +42,9 @@ You can set the number of data points, up to a maximum of 10,000.
 * to present financial data.  Different bubble sizes are useful to visually emphasize specific values.
 * to use with quadrants.
 
+### Dot plot charts are a great choice in place of a scatter or bubble:
+* if you want to include categorical data along the X axis
+
 ## Create a scatter chart
 Watch this video to see Will create a scatter chart and then follow the steps below to create one yourself.
 
@@ -46,7 +53,7 @@ Watch this video to see Will create a scatter chart and then follow the steps be
 
 These instructions use the Retail Analysis Sample. To follow along, [download the sample](../sample-datasets.md) for Power BI service (app.powerbi.com) or Power BI Desktop.   
 
-1. Open the report in Editing view and select the yellow plus icon to create a [blank report page ](../power-bi-report-add-page.md).
+1. Open the report in Editing view and select the yellow plus icon to create a blank report page.
  
 2. From the Fields pane, select the following fields:
    - **Sales** > **Sales Per Sq Ft**
@@ -59,11 +66,11 @@ These instructions use the Retail Analysis Sample. To follow along, [download th
 
 3. Convert to a scatter chart. In the Visualization pane, select the Scatter chart icon.
 
-   ![](media/power-bi-visualization-scatter/pbi_scatter_chart_icon.png).
+   ![](media/power-bi-visualization-scatter/power-bi-scatter-new.png).
 
 4. Drag **District** from **Details** to **Legend**. This displays a scatter chart that plots **Total Sales Variance %** along the Y axis, and plots **Sales Per Square Feet** along the X axis. The data point colors represent districts:
 
-    ![](media/power-bi-visualization-scatter/power-bi-scatter.png)
+    ![](media/power-bi-visualization-scatter/power-bi-scatter2.png)
 
 Now let's add a third dimension.
 
@@ -71,18 +78,17 @@ Now let's add a third dimension.
 
 1. From the **Fields** pane, drag **Sales** > **This Year Sales** > **Value** to the **Size** area. The data points expand to volumes proportionate with the sales value.
    
-   ![](media/power-bi-visualization-scatter/power-bi-bubble.png)
+   ![points become bubbles](media/power-bi-visualization-scatter/power-bi-scatter-chart-size.png)
 
 2. Hover over a bubble. The size of the bubble reflects the value of **This Year Sales**.
    
-    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
+    ![tooltips display](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 
 3. To set the number of data points to show in your bubble chart, in the **Formatting** section of the **Visualizations** pane, expand the **General** card and adjust the **Data Volume**. You can set the max data volume to any number up to 10,000. As you get into the higher numbers, we suggest testing first to ensure good performance. 
 
     ![Data Volume](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 
-   > [!NOTE]
-   > Because more data points can mean a longer loading time, if you do choose to publish reports with limits at the higher end of the scale, make sure to test out your reports across the web and mobile as well to ensure performance matches your users' expectations. Note that for higher numbers of data points, you should test the results on different form factors to ensure good performance.
+   Because more data points can mean a longer loading time, if you do choose to publish reports with limits at the higher end of the scale, make sure to test out your reports across the web and mobile as well to ensure performance matches your users' expectations. 
 
 4. You can [format the visualization colors, labels, titles, background, and more](service-getting-started-with-color-formatting-and-axis-properties.md). To [improve accessibility](../desktop-accessibility.md), consider adding marker shapes to each line. Using a different Marker shape for each line makes it easier for report consumers to differentiate lines (or areas) from each other. To select the marker shape, expand the **Shapes** card, then select a marker shape.
 
@@ -91,6 +97,13 @@ Now let's add a third dimension.
    You can also change the marker shape to diamond, triangle, or square:
 
    ![Square marker](media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
+
+## Create a dot plot
+To create a dot plot, replace the numerical X axis field with a categorical field.
+
+From the **X Axis** pane, remove **Sales per sq ft** and replace it with **District > DM**.
+   
+![new dot plot](media/power-bi-visualization-scatter/power-bi-dot-plot-squares.png)
 
 
 ## Considerations and Troubleshooting

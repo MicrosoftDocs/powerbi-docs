@@ -1,15 +1,15 @@
 ---
 title: Explore reports in the Power BI mobile apps
 description: 'Learn about viewing and interacting with reports in the Power BI mobile apps on your phone or tablet. You create reports in the Power BI service or Power BI Desktop, then interact with them in the mobile apps.'
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/17/2018
-ms.author: maggies
+ms.author: mshenhav
 
 ---
 # Explore reports in the Power BI mobile apps
@@ -101,6 +101,16 @@ With *drillthrough*, when you tap a specific part of a visual, Power BI takes yo
 When you drill through, the back button takes you back to the previous report page.
 
 Read about how to [add drill-through in Power BI Desktop](../../desktop-drillthrough.md).
+
+## Show data and copy values
+
+By selecting the Menu options ellipsis (**...**) in the upper-right corner of a visualization in a phone report, and then selecting **Show data**, you can see the data underlying a visualization.
+
+![Power BI mobile show data menu option](./media/mobile-reports-in-the-mobile-apps/copy-data-visual.png)
+
+Long tapping on a cell in the table presented will pop the native select and copy menu, so you will be able to choose the copy data from the table (or the entire table).
+
+![Power BI mobile drill through report](./media/mobile-reports-in-the-mobile-apps/copy-data-table.png)
 
 ## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)

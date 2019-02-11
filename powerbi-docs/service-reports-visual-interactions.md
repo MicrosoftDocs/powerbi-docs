@@ -2,19 +2,19 @@
 title: Change how visuals interact in a report
 description: Documentation for how to set Visual interactions in a Microsoft Power BI service report and a Power BI Desktop report.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: N_xYsCbyHPw
-
+ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
 ---
-# Visualization interactions in a Power BI report
+# Change how visuals interact in a Power BI report
 If you have edit permissions for a report, you can use **Visual interactions** to change how visualizations on a report page impact each other. 
 
 By default, visualizations on a report page can be used to cross-filter and cross-highlight the other visualizations on the page.

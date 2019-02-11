@@ -6,13 +6,14 @@ manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
 ---
+
 # Connect to Salesforce with Power BI
 With Power BI, you can easily connect to your Salesforce.com account. Creating this connection retrieves your data and automatically provides a dashboard and related reports based on your data.
 
@@ -58,11 +59,7 @@ You can change this dashboard to display your data any way you want. You can ask
 
 * Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard
-<<<<<<< HEAD
-* [Select a tile](consumer/end-user-tiles.md) to open the underlying report
-=======
 * [Select a tile](service-dashboard-tiles.md) to open the underlying report
->>>>>>> 66fe62d8f200efd9cfeb465eeb5f370dbbaa63be
 * While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## System requirements and considerations

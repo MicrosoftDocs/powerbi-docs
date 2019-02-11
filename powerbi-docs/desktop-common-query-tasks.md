@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 
 ms.author: davidi
 
@@ -139,11 +139,11 @@ Query Editor keeps all applied steps for each query as text that you can view or
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
 
-Here's a look at the **Advanced Editor**, with the query steps associated with the **USA\_StudentEnrollment** query displayed. These steps are created in the Power Query Formula Language, often referred to as **M**. For information, see [Learn about Power Query formulas](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f?ui=en-US&rs=en-US&ad=US). To view the language specification itself, see [Microsoft Power Query for Excel Formula Language Specification](http://go.microsoft.com/fwlink/?linkid=320633).﻿
+Here's a look at the **Advanced Editor**, with the query steps associated with the **USA\_StudentEnrollment** query displayed. These steps are created in the Power Query Formula Language, often referred to as **M**. For information, see [Learn about Power Query formulas](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). To view the language specification itself, see [Microsoft Power Query for Excel Formula Language Specification](http://go.microsoft.com/fwlink/?linkid=320633).﻿
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 
-Power BI Desktop provides an extensive set of formula categories. For more information, and a complete reference of all Query Editor formulas, visit [Power Query Formula Categories](https://support.office.com/en-in/article/Power-Query-formula-categories-125024ec-873c-47b9-bdfd-b437f8716819).
+Power BI Desktop provides an extensive set of formula categories. For more information, and a complete reference of all Query Editor formulas, visit [Power Query Formula Categories](https://support.office.com/article/Power-Query-formula-categories-125024ec-873c-47b9-bdfd-b437f8716819).
 
 The formula categories for Query Editor are the following:
 

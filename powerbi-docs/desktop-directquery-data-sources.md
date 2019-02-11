@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/10/2018
+ms.date: 11/01/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -19,11 +19,11 @@ LocalizationGroup: Connect to data
 The following data sources support DirectQuery in Power BI:
 
 * Amazon Redshift
-* Azure Databricks
 * Azure HDInsight Spark (Beta)
 * Azure SQL Database
 * Azure SQL Data Warehouse
 * Google BigQuery (Beta)
+* IBM DB2 database
 * IBM Netezza (Beta)
 * Impala (version 2.x)
 * Oracle Database (version 12 and above)
@@ -58,11 +58,11 @@ The following table specifies whether an **On-premises data gateway** is require
 | Amazon Redshift |No |
 | Impala (version 2.x) |Yes |
 | Snowflake |Yes |
-| Spark (beta), version 0.9 and later |Not yet supported in the **Power BI service** |
+| Spark (beta), version 0.9 and later |Yes |
 | Azure HDInsight Spark (Beta) |No |
 | IBM Netezza |Yes |
-| SAP Buisness Warehouse Application Server |Yes |
-| SAP Buisness Warehouse Message Server |Not yet supported in the **Power BI service** |
+| SAP Business Warehouse Application Server |Yes |
+| SAP Business Warehouse Message Server |Not yet supported in the **Power BI service** |
 | Google BigQuery |No |
 
 

@@ -5,7 +5,7 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
 ms.author: maggies
@@ -63,7 +63,7 @@ We suggest naming your dashboard, report and dataset consistently across your co
 <a name="submission"></a>
 
 ## Submission
-The submission process through [Microsoft AppSource](https://appsource.microsoft.com/en-us/partners/list-an-app) will allow you to publish your template content pack in the service content packs gallery in PowerBI.com as well as list your content pack in [Microsoft AppSource](http://appsource.microsoft.com).
+The submission process through [Microsoft AppSource](https://appsource.microsoft.com/partners/list-an-app) will allow you to publish your template content pack in the service content packs gallery in PowerBI.com as well as list your content pack in [Microsoft AppSource](http://appsource.microsoft.com).
 
 ### Before submission
 * Review the authoring tips for each of the artifacts within the content pack
@@ -72,7 +72,7 @@ The submission process through [Microsoft AppSource](https://appsource.microsoft
 * Ensure the content pack responds well to Q&A, we suggest testing at least 30 varied questions across the data model. (Skip this step if you developed your own custom [Data Connector](https://aka.ms/DataConnectors))
 
 ### Submission
-Once ready to submit, visit the [Apps submission page](https://appsource.microsoft.com/en-us/partners/list-an-app) on AppSource and submit your information. Please make sure to select Power BI from the available list of products
+Once ready to submit, visit the [Apps submission page](https://appsource.microsoft.com/partners/list-an-app) on AppSource and submit your information. Please make sure to select Power BI from the available list of products
 
 The Power BI team will review your submission and will reach out to you to ensure all the artifacts meets the submission requirements. In addition to being complete, we'll also validate the quality of the dashboard and reports provided ensuring they meet the business scenario described in the application.
 

@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 10/15/2018
 ms.author: davidi
 
 LocalizationGroup: Administration
@@ -54,4 +54,14 @@ For more information, please visit the [Microsoft Trust Center](https://www.micr
 As described earlier in this article, a user’s Power BI login is used by on-premises Active Directory servers to map to a UPN for credentials. However, it’s **important** to note that users are responsible for the data they share: if a user connects to data sources using her credentials, then shares a report (or dashboard, or dataset) based on that data, users with whom the dashboard is shared are not authenticated against the original data source, and will be granted access to the report.
 
 An exception is connections to **SQL Server Analysis Services** using the **On-premises data gateway**; dashboards are cached in Power BI, but access to underlying reports or datasets initiates authentication for the user attempting to access the report (or dataset), and access will only be granted if the user has sufficient credentials to access the data. For more information, see [On-premises data gateway deep dive](service-gateway-onprem-indepth.md).
+
+## Enforcing TLS version usage
+
+Network and IT administrators can enforce the requirement to use current TLS (Transport Layer Security) for any secured communication on their network. Windows provides support for TLS versions over the Microsoft Schannel Provider, as [described in the TLS Schannel SSP article](https://docs.microsoft.com/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
+
+This enforcement can be done by administratively setting registry keys. Enforcement is described in the [Managing SSL Protocols in AD FS article](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
+
+**Power BI Desktop** respects the registry key settings described in those articles, and only created connections using the version of TLS allowed based on those registry settings, when present.
+
+For more information about setting these registry keys, see the [TLS Registry Settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) article.
 

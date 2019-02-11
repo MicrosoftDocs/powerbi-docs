@@ -1,15 +1,15 @@
 ---
 title: Pin dashboard to Windows 10 Start screen - Power BI mobile app
 description: Learn how to pin a Power BI dashboard to the Windows 10 Start screen from the Power BI mobile app, so you can see critical metrics at a glance.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
-ms.author: maggies
+ms.author: mshenhav
 
 ---
 # Pin a dashboard to your Windows 10 Start screen from the Power BI mobile app

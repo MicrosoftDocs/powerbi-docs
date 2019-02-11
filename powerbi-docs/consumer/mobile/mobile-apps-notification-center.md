@@ -1,15 +1,15 @@
 ---
 title: Get notifications in the Power BI mobile apps
 description: The Notification Center brings information related to your Power BI experience right to you on your mobile device.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/16/2018
-ms.author: maggies
+ms.author: mshenhav
 
 ---
 # Get notifications in the Power BI mobile apps

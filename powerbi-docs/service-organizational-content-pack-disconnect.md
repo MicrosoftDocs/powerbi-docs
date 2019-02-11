@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: lukaszp
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
@@ -31,7 +31,7 @@ Removing the dataset also removes all associated reports and dashboards. However
 
 ## Next steps
 * [Introduction to organizational content packs](service-organizational-content-pack-introduction.md) 
-* [Create and distribute an app in Power BI](consumer/end-user-create-apps.md) 
+* [Create and distribute an app in Power BI](service-create-distribute-apps.md) 
 * [Power BI basic concepts](consumer/end-user-basic-concepts.md)  
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

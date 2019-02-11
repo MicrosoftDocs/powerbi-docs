@@ -1,15 +1,16 @@
 ---
-title: Printing from Power BI service
+title: Print from Power BI service
 description: Printing a dashboard, tile, or report page from Power BI.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
+ms.custom: seodec18
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -43,7 +44,7 @@ Watch Amanda print from her dashboard and report. Then follow the step-by-step i
 1. [Open the tile in Focus mode](end-user-focus.md) by selecting the ellipses and choosing the Focus icon ![Focus icon](./media/end-user-print/power-bi-focus-icon.png).
    
     ![ellipses menu](./media/end-user-print/menu-options.png)
-2. Open the tile in [full screen mode](../service-fullscreen-mode.md) by selecting the full screen icon ![full screen icon](./media/end-user-print/power-bi-full-screen-icon.png) from the top navbar.
+2. Open the tile in [full screen mode](end-user-focus.md) by selecting the full screen icon ![full screen icon](./media/end-user-print/power-bi-full-screen-icon.png) from the top navbar.
 3. Hover over the tile to reveal the Options menu.
    
     ![full screen options menu](./media/end-user-print/menu-options-new.png)

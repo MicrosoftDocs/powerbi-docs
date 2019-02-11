@@ -7,7 +7,7 @@ ms.reviewer: ''
 featuredvideoid: lnv66cTZ5ho
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: mihart
@@ -42,7 +42,7 @@ To create your own combo chart, sign in to Power BI service and select **Get Dat
 
 1. From the "Retail Analysis Sample" dashboard, select the **Total Stores** tile to open the "Retail Analysis Sample" report.
 2. Select **Edit Report** to open the report in Editing View.
-3. [Add a new report page](../power-bi-report-add-page.md).
+3. Add a new report page.
 4. Create a column chart that displays this year's sales and gross margin by month.
 
     a.  From the Fields pane, select **Sales** \> **This Year Sales** > **Value**.

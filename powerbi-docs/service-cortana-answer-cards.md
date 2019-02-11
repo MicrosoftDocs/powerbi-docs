@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
@@ -37,7 +37,7 @@ You have four documents that guide you through setting up and using Cortana for 
 ## Create a Cortana answer page designed specifically for Cortana
 A *Cortana answer page* in a report is sized specifically for Cortana so that Cortana can display it in-screen as an answer to a question. To create an answer page for Cortana:
 
-1. We recommend starting with a [blank report page](power-bi-report-add-page.md).
+1. We recommend starting with a blank report page.
 2. In the **Visualizations** pane, select the paint roller icon and choose **Page Size** > **Type** > **Cortana**.
    
     ![](media/service-cortana-answer-cards/pbi-cortana-page-size-new.png)

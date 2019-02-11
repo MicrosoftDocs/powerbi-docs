@@ -1,23 +1,21 @@
 ---
-title: Display recently-visited content in Power BI
+title: Display recently-visited content in Power BI service
 description: documentation for recents in Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
+ms.custom: seodec18
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/01/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks
 ---
 # **Recent** content in Power BI service
-
-
-## What is recent content
 Recent content is the last items you visited in Power BI service, up to a maximum of 20 items.  These include: dashboards, reports, apps, and workbooks across all of your workspaces.
 
 ![Recent content window](./media/end-user-recent/power-bi-recent-screen.png)
@@ -35,10 +33,10 @@ If you have more than five recently-visited items, select **See all** to open th
 
 ![display all recent content](./media/end-user-recent/power-bi-recent-list.png)
 
-From here you can interact with the content as you would on the individual [**Dashboards**](end-user-dashboards.md), [**Reports**](end-user-reports.md), and **Workbooks** tabs, and on the [**Apps**](end-user-apps.md) screen.
+From here you can interact with the content as you would on the individual [**Dashboards**](end-user-dashboards.md), [**Reports**](end-user-reports.md), and **Workbooks** tabs, and on the apps <!--[**Apps**](end-user-apps.md)--> screen.
 
 ## Next steps
-[Power BI service Apps](end-user-apps.md)
+<!--[Power BI service Apps](end-user-apps.md)-->
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

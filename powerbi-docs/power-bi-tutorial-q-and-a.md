@@ -5,9 +5,9 @@ author: maggiesMSFT
 manager: kfile
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/17/2018
+ms.date: 10/16/2018
 ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
@@ -70,7 +70,7 @@ In order to use Q&A in reports, you must have edit permissions for the report an
     **Service**    
     ![](media/power-bi-tutorial-q-and-a/power-bi-service.png)
 
-2. A Q&A question box displays on your report canvas. In the example below, the question box displays on top of another visualization. This is fine, but it might be better to [add a blank page to the report](power-bi-report-add-page.md) before asking a question.
+2. A Q&A question box displays on your report canvas. In the example below, the question box displays on top of another visualization. This is fine, but it might be better to add a blank page to the report before asking a question.
 
     ![](media/power-bi-tutorial-q-and-a/power-bi-ask-question.png)
 
@@ -94,7 +94,7 @@ In order to use Q&A in reports, you must have edit permissions for the report an
 With Q&A, not only can you ask your data to speak for itself, you can tell Power BI how to display the answer. Just add "as a <visualization type>" to the end of your question.  For example, "show inventory volume by plant as a map" and "show total inventory as a card".  Try it for yourself.
 
 ##  Considerations and troubleshooting
-- If you've connected to a dataset using a live connection or gateway, Q&A needs to be [enabled for that dataset](consumer/end-user-q-and-a-direct-query.md).
+- If you've connected to a dataset using a live connection or gateway, Q&A needs to be [enabled for that dataset](service-q-and-a-direct-query.md).
 
 - You've opened a report and don't see the Q&A option. If you're using Power BI service, make sure the report is open in Editing view. If you can't open Editing view it means you don't have edit permissions for that report and won't be able to use Q&A with that specific report.
 
@@ -103,5 +103,5 @@ Back to [Q&A in Power BI](consumer/end-user-q-and-a.md)
 [Tutorial: Use Q&A with the Retail Sales sample](power-bi-visualization-introduction-to-q-and-a.md)   
 [Tips for asking questions in Q&A](consumer/end-user-q-and-a-tips.md)   
 [Prepare a workbook for Q&A](service-prepare-data-for-q-and-a.md)  
-[Prepare an on-premises dataset for Q&A](consumer/end-user-q-and-a-direct-query.md)
+[Prepare an on-premises dataset for Q&A](service-q-and-a-direct-query.md)
 [Pin a tile to the dashboard from Q&A](service-dashboard-pin-tile-from-q-and-a.md)

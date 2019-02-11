@@ -1,16 +1,16 @@
 ---
 title: Pin a tile to a Power BI dashboard from a report
 description: Pin a tile to a Power BI dashboard from a report.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Dashboards
 ---

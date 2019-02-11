@@ -1,14 +1,15 @@
 ---
-title: Reports in Power BI
+title: View a report in Power BI
 description: Reports in Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
@@ -63,7 +64,7 @@ Here are some topics, by role, to help you get started.
 * Start with a [tour of Power BI service](end-user-basic-concepts.md) so you know where to find reports and report tools.
 * Learn how to [open a report](end-user-report-open.md) and all the interaction available in [Reading view](end-user-reading-view.md).
 * Get comfortable with reports by taking a tour of one of our [samples](../sample-tutorial-connect-to-the-samples.md).  
-* Don't need the report any more? You can [remove it](end-user-delete.md).
+<!--* Don't need the report any more? You can [remove it](../service-delete.md).-->
 * To see which dataset the report is using and which dashboards have tiles pinned from the report, [view related content](end-user-related.md).
 
 > [!TIP]
@@ -75,6 +76,4 @@ Here are some topics, by role, to help you get started.
 [What is Power BI?](../power-bi-overview.md) 
 
 [Power BI - Basic Concepts](end-user-basic-concepts.md)
-
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
