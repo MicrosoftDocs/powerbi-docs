@@ -13,7 +13,7 @@ You can select the type of currency symbol used, by selecting the currency symbo
 
 There are many different options for formatting fields. For example, you can change the format from currency to percentage.
 
-You can change how Powwer BI summarizes the data, too. Select the **Default Summarization** icon to change how a field is summarized, including displaying a sum, a count, or an average.
+You can change how Power BI summarizes the data, too. Select the **Default Summarization** icon to change how a field is summarized, including displaying a sum, a count, or an average.
 
 ![](media/3-11d-customize-summarization-categorization/3-11d_3.png)
 
