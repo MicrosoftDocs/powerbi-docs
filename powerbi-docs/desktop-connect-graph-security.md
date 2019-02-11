@@ -72,7 +72,7 @@ Follow these steps to use the **Microsoft Graph Security** connector:
     ![Nav Table](media/desktop-connect-graph-security/NavTable.PNG)
     
 9. If you would like to make an advanced query to the Microsoft Graph Security API, select the **Specify custom Microsoft Graph Security URL to filter results** function. This will allow you to make an [OData.Feed](https://docs.microsoft.com/power-bi/desktop-connect-odata) query to the Microsoft Graph Security API with the required permissions to access the API.
-    > **Note:**  The example serviceUri used below is `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'`. </br>Refer to the [Graph supported ODATA query parameters](https://docs.microsoft.com/graph/query-parameters) to build queries to filter, order or retrieve recent most results.
+    > **Note:**  The example serviceUri used below is `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'`. Refer to the [Graph supported ODATA query parameters](https://docs.microsoft.com/graph/query-parameters) to build queries to filter, order or retrieve recent most results.
 
     ![Odata Feed](media/desktop-connect-graph-security/ODataFeed.PNG)
     
