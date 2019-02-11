@@ -29,7 +29,7 @@ For example:
 
 After you create the folder and added images to it, use the following syntax to create images in your article:
 
-```md
+```markdown
 ![Alt image text](./media/article-name/your-image-filename.png)
 ```
 
@@ -62,7 +62,7 @@ Use the following guidelines when creating and including art files:
   Example:
   
   ![This is an example of a blue arrow used as a callout.](./media/create-images-markdown/power-bi-see-data.png)
-* Avoid whitespace on edges of screenshots. If you crop a screenshot in a way that leaves white background at the edges, add a single pixel gray border around the image.  If using Paint, use the lighter gray in the default color pallet (0xC3C3C3). If using some other graphic app, the RGB color is R195, G195, 195. You can easily add a gray border around an image in Visio--to do this, select the image, select Line, and ensure the correct color is set, and then change the line weight to 1 1/2 pt.  Screenshots should have a 1-pixel-wide gray border so that white areas of the screenshot do not blur into the web page.
+* Avoid whitespace on edges of screenshots. If you crop a screenshot in a way that leaves white background at the edges, add a single pixel gray border around the image.  If using Paint, use the lighter gray in the default color palette (0xC3C3C3). If using some other graphic app, the RGB color is R195, G195, 195. You can easily add a gray border around an image in Visio--to do this, select the image, select Line, and ensure the correct color is set, and then change the line weight to 1 1/2 pt.  Screenshots should have a 1-pixel-wide gray border so that white areas of the screenshot do not blur into the web page.
   
     Example:
   
