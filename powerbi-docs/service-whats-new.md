@@ -553,7 +553,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **September 8, 2015**
 
-* ﻿Friendly Hyperlinks now allow you to provide links for your users without needing to display the entire URL in the textbox.
+* Friendly Hyperlinks now allow you to provide links for your users without needing to display the entire URL in the textbox.
 * Drill Support has been added to Power BI Reports. You can create a Drill path that enables users to navigate from one level of data to related data.
 * Two new Industry Related Samples, It Spend Analysis and Supplier Quality Analysis, have been added under the samples section of the Get Data experience. These samples are great examples of how you can use your data to create insightful reports and dashboards.
 * We have a new content pack for tyGraph, which allows you to easily gain deeper insights into your Yammer data. The content pack includes a dashboard, a set of reports and a curated dataset to explore and provide insights such as the Measure of Active Engagement (The MAE Score) and content consumption metrics such as File Views and File Downloads. Learn more on our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/09/analyze-and-monitor-your-tygraph-data-with-power-bi.aspx) and [help topic](service-connect-to-tygraph.md).
@@ -648,7 +648,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **April 28, 2015**
 
-* ﻿Power BI is now available in **44 languages**. Read our [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/28/power-bi-preview-now-available-in-your-language.aspx) to see the full list.
+* Power BI is now available in **44 languages**. Read our [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/28/power-bi-preview-now-available-in-your-language.aspx) to see the full list.
 
 **April 23, 2015**
 
