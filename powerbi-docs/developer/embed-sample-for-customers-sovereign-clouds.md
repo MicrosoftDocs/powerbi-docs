@@ -351,7 +351,7 @@ An application sample of this is available within the [Embedding for your organi
     var embedTileId = "@Model.Id";
 
     // Read dashboard Id from Model
-    var embedDashboardeId = "@Model.dashboardId";
+    var embedDashboardId = "@Model.dashboardId";
 
     // Get models. models contains enums that can be used.
     var models = window['powerbi-client'].models;
@@ -366,7 +366,7 @@ An application sample of this is available within the [Embedding for your organi
         accessToken: accessToken,
         embedUrl: embedUrl,
         id: embedTileId,
-        dashboardId: embedDashboardeId
+        dashboardId: embedDashboardId
     };
 
     // Get a reference to the embedded tile HTML element
