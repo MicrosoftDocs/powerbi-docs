@@ -71,7 +71,7 @@ You'll need to be running Windows 10 version 1511 or higher.
    * Open **Settings** > **Accounts**.
      
        ![Settings - Accounts](media/service-cortana-enable/power-bi-windows-accounts.png)
-   * Scroll to the bottom and select **Add a work or school account**. Or, from the **Accounts** page selet **Access work or school >Connect**.
+   * Scroll to the bottom and select **Add a work or school account**. Or, from the **Accounts** page select **Access work or school >Connect**.
      
      ![Add work account](media/service-cortana-enable/power-bi-add-work-account2.png)
 

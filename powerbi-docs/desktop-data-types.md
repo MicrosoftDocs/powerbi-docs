@@ -14,7 +14,7 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ---
 # Data types in Power BI Desktop
-This article describes data types supported in Power BI Desktop and Data Analysis Expressions (DAX). ﻿
+This article describes data types supported in Power BI Desktop and Data Analysis Expressions (DAX). 
 
 When you load data into Power BI Desktop, it will attempt to convert the data type of the source column into a data type that better supports more efficient storage, calculations, and data visualization. For example, if a column of values you import from Excel has no fractional values, Power BI Desktop will convert the entire column of data to a Whole Number data type, which is better suited for storing integers.
 
