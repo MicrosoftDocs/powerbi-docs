@@ -295,7 +295,7 @@
         - name: "Use Q&A to create visualizations and build reports"
           href: power-bi-tutorial-q-and-a.md
         - name: "Using Q&A with Power BI Gateway — Enterprise data (Preview)"
-          href: consumer/end-user-q-and-a-direct-query.md
+          href: service-q-and-a-direct-query.md
         - name: "Make your data work well with Q&A in Power BI"
           href: service-prepare-data-for-q-and-a.md
         - name: "Enable Cortana for Power BI"
@@ -315,7 +315,7 @@
         - name: "Create the new workspaces (preview)"
           href: service-create-the-new-workspaces.md
         - name: "Publish apps with dashboards and reports"
-          href: consumer/end-user-create-apps.md
+          href: consumer/end-user-apps.md
         - name: "Share a filtered report"
           href: service-share-reports.md
         - name: "Publish from Power BI to the web"
@@ -382,8 +382,6 @@
           href: service-create-qr-code-for-report.md
         - name: "Change the display settings for a page in a Power BI report"
           href: consumer/end-user-report-view.md
-        - name: "Reorder pages in a report in Power BI"
-          href: service-report-reorder-pages.md
         - name: "Duplicate a report page in Power BI"
           href: power-bi-report-copy-paste-page.md
         - name: "Export a report from Power BI service to Desktop (Preview)"
@@ -816,7 +814,7 @@
       - name: "Funnel charts in Power BI"
         href: visuals/power-bi-visualization-funnel-charts.md
       - name: "Key influencers charts in Power BI"
-        href: visuals/power-bi-visualizations-influencers.md
+        href: visuals/power-bi-visualization-influencers.md
       - name: "High density line sampling"
         href: desktop-high-density-sampling.md
       - name: "KPI Visuals"
