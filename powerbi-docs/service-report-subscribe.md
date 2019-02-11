@@ -80,6 +80,7 @@ The particular subscriptions displayed depend on which workspace is currently ac
 A subscription ends if the Pro license expires, the owner deletes the dashboard or report, or the user account used to create the subscription is deleted.
 
 ## Considerations and troubleshooting
+* Dashboards with over 25 pinned tiles, or 4 pinned live report pages, may not render fully in subscription e-mails sent to users.  Subscriptions to dashboards over these number of tiles will not be blocked, however, they will be considered unsupported if you encounter issues and should be modified accordingly to fall within a supported range.
 * For dashboard email subscriptions, if any tiles have row level security (RLS) applied, those tiles don't display.  For report email subscriptions, if the dataset uses RLS, you can't be able to create a subscription.
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page and then rename it, you have to re-create your subscription.
 * Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI.  These limitations include, but aren't limited to, having multi-factor authentication or IP range restrictions when accessing resources.
