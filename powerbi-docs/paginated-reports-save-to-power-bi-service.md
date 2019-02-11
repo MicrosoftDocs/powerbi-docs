@@ -79,7 +79,7 @@ Just like any other Power BI report, if the report data source is on premises, t
 
 ### Gateway limitations
 
-Currently gateways don't supprt multi-value parameters.
+Currently gateways don't support multi-value parameters.
 
 
 ## Next steps
