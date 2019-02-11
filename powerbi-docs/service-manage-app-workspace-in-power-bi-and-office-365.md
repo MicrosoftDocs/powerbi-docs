@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: lukasz
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
@@ -14,7 +14,7 @@ ms.author: maggies
 LocalizationGroup: Share your work
 ---
 # Manage your app workspace in Power BI and Office 365
-As creator or admin of an [app workspace in Power BI](consumer/end-user-apps.md) or in Office 365, you manage some aspects of the workspace in Power BI. Other aspects you manage in Office 365. 
+As creator or admin of an [app workspace in Power BI](service-create-distribute-apps.md) or in Office 365, you manage some aspects of the workspace in Power BI. Other aspects you manage in Office 365. 
 
 > [!NOTE]
 > The new workspace experience preview will change the relationship between Power BI workspaces and Office 365 groups. You won't automatically be creating an Office 365 group every time you create one of the new workspaces. Read about [creating the new workspaces (preview)](service-create-the-new-workspaces.md)
@@ -72,7 +72,6 @@ When you distribute your app from the app workspace, the image you add here will
 3. Select **Save** or **Discard**.
 
 ## Next steps
-* [What are apps in Power BI?](consumer/end-user-apps.md)
-* [Publish apps with dashboards and reports in Power BI](consumer/end-user-create-apps.md)
+* [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

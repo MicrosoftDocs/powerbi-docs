@@ -6,7 +6,7 @@ To change the view, just select either of other two icons. The yellow bar beside
 
 Power BI Desktop can combine data from multiple sources into a single report, at any time during the modelling process. To add additional sources to an existing report, select **Edit Queries** in the **Home** ribbon and then select **New Source** in **Query Editor**.
 
-There are many different possible data sources you can use in **Power BI Desktop**, including Folders. By connecting to a folder, you can import data from multiple files at once, such as a series of Excel files of CSV files. The files contained within your selected folder appear in **Query Editor** as binary content, and clicking the double-arrow icon at the top of the **Content** column loads their values.
+There are many different possible data sources you can use in **Power BI Desktop**, including Folders. By connecting to a folder, you can import data from multiple files at once, such as a series of Excel files or CSV files. The files contained within your selected folder appear in **Query Editor** as binary content, and clicking the double-arrow icon at the top of the **Content** column loads their values.
 
 ![](media/1-4-advanced-data-sources-and-transformation/1-4_2.png)
 

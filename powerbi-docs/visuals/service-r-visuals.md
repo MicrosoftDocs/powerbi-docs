@@ -1,14 +1,14 @@
 ---
-title: Create advanced analytics and visualizations using R scripts in Power BI
+title: Create advanced analytics and visualizations using R scripts
 description: Use R scripts in Power BI to create advanced analytics and advanced visualizations
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 11/07/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 The Power BI service supports viewing and interacting with visuals created with R scripts. Visuals created with R scripts, commonly called *R visuals*, can present advanced data shaping and analytics such as forecasting, using the rich analytics and visualization power of R.
 
 > [!NOTE]
-> The [R programming language](https://www.r-project.org/) is among the most widely used programming languages by statisticians, data scientists, and business analysts. The R language has an open source community that offers over 7,000 add-on packages, as well as widely used [R User Groups](http://msdsug.microsoft.com/). The version of R deployed in the Power BI service is *Revolution R Open 3.2.2.*
+> The [R programming language](https://www.r-project.org/) is among the most widely used programming languages by statisticians, data scientists, and business analysts. The R language has an open source community that offers over 7,000 add-on packages, as well as widely used R User Groups. The version of R deployed in the Power BI service is *Revolution R Open 3.2.2.*
 > 
 > 
 

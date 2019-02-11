@@ -1,15 +1,15 @@
 ---
 title: How to make your Excel data work well with Q&A in Power BI
 description: How to make your data work well with Q&A in Power BI
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
-ms.author: mihart
+ms.date: 10/16/2018
+ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
 ---
@@ -30,7 +30,7 @@ Q&A relies on the names of tables, columns, and calculated fields to answer data
 
 Here are some tips for making the most of Q&A in your workbook.
 
-* Make sure your data is in an Excel table. Here's [how to create an Excel table](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664?ui=en-US&rs=en-US&ad=US).
+* Make sure your data is in an Excel table. Here's [how to create an Excel table](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664).
 * Make sure the names of your tables, columns, and calculated field make sense in natural speech.
   
   For example, if you have a table with sales data, call the table “Sales”. Column names like “Year”, “Product”, “Sales Rep”, and “Amount” will work well with Q&A.
@@ -41,7 +41,7 @@ Here are some tips for making the most of Q&A in your workbook.
 
 ## Next steps
 Back to [Q&A in Power BI](consumer/end-user-q-and-a.md)  
-[Prepare on-premises datasets for Q&A](consumer/end-user-q-and-a-direct-query.md)   
+[Prepare on-premises datasets for Q&A](service-q-and-a-direct-query.md)   
 [Q&A quickstart](power-bi-visualization-introduction-to-q-and-a.md)  
 [Get data (for Power BI)](service-get-data.md)  
 

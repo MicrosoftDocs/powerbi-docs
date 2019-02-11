@@ -5,14 +5,14 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
 ms.author: maggies
 ---
 
 # Template content pack experiences in Power BI
-This section highlights a typical experience for a user connecting to an ISV [content pack](consumer/end-user-connect-to-services.md).
+This section highlights a typical experience for a user connecting to an ISV [content pack](service-connect-to-services.md).
 
 Try the connection experience yourself by connecting to a released content pack at https://app.powerbi.com/getdata/services (such as the [GitHub content pack](https://app.powerbi.com/getdata/services/github) described below).
 

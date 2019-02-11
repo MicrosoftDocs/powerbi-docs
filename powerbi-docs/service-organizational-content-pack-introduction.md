@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: lukaszp
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
@@ -38,8 +38,6 @@ Publishing an organizational content pack adds it to AppSource.  This centralize
 
 * To view AppSource, select **Get Data** > **My Organization** > **Get**.
 
-Read more about [finding and opening organizational content packs](consumer/end-user-content-pack.md).
-
 ## The life cycle of an organizational content pack
 Any Power BI Pro user can create, publish, and access organizational content packs. Only the content pack creator can modify the workbook and dataset, schedule refresh, and delete it.
 
@@ -48,7 +46,7 @@ The lifecycle looks something like this:
 1. In Power BI Pro, Nate creates a content pack and publishes it to the Marketing distribution group. The refresh settings are inherited with the dataset and can only be changed by Nate.
    
    > [!NOTE]
-   > If Nate creates the content pack from within a [Power BI app workspace](consumer/end-user-create-apps.md) he belongs to, then even if he leaves the workspace, others in the Power BI workspace can take over ownership.
+   > If Nate creates the content pack from within a [Power BI app workspace](service-create-distribute-apps.md) he belongs to, then even if he leaves the workspace, others in the Power BI workspace can take over ownership.
    > 
    > 
 2. Nate sends mail to the distribution group, telling them about the new content pack.
@@ -72,7 +70,7 @@ All distribution group members have the same permissions to the data as the cont
 
 ## Next steps
 * [Create and publish an organizational content pack](service-organizational-content-pack-create-and-publish.md)
-* [Create and distribute an app in Power BI](consumer/end-user-create-apps.md) 
+* [Create and distribute an app in Power BI](service-create-distribute-apps.md) 
 * [Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

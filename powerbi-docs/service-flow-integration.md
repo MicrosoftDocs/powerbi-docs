@@ -1,22 +1,22 @@
 ---
 title: 'Power BI integration with Microsoft Flow'
 description: Learn how to create Flows triggered by Power BI data alerts.
-author: mihart
+author: mgblythe
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: YhmNstC39Mw
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/01/2018
-ms.author: mihart
+ms.author: mblythe
 
 LocalizationGroup: Get started
 ---
 # Microsoft Flow and Power BI
 
-[Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started) is a SaaS offering for automating workflows across the growing number of applications and SaaS services that business users rely on. With Flow you can automate tasks by integrating your favorite apps and services (including Power BI) to get notifications, synchronize files, collect data, and more. Repetitive tasks become easy with workflow automation.
+[Microsoft Flow](https://flow.microsoft.com/documentation/getting-started) is a SaaS offering for automating workflows across the growing number of applications and SaaS services that business users rely on. With Flow you can automate tasks by integrating your favorite apps and services (including Power BI) to get notifications, synchronize files, collect data, and more. Repetitive tasks become easy with workflow automation.
 
 [Get started using Flow now.](https://flow.microsoft.com/documentation/getting-started)
 
@@ -27,7 +27,7 @@ Watch Sirui create a Flow that sends a detailed email to colleagues when a Power
 ## Create a flow that is triggered by a Power BI data alert
 
 ### Prerequisites
-This tutorial will show you how to create two different flows; one from a template and one from scratch. To follow along, [create a data alert in Power BI](service-set-data-alerts.md), create a free Slack account, and [sign up for Microsoft Flow](https://flow.microsoft.com/en-us/#home-signup) (it's free!).
+This tutorial will show you how to create two different flows; one from a template and one from scratch. To follow along, [create a data alert in Power BI](service-set-data-alerts.md), create a free Slack account, and [sign up for Microsoft Flow](https://flow.microsoft.com/#home-signup) (it's free!).
 
 ## Create a flow that uses Power BI - from a template
 In this task we'll use a template to create a simple flow that is triggered by a Power BI data alert (notification).
@@ -56,7 +56,7 @@ This template has one trigger (Power BI data alert for new Olympic medals for Ir
    
    ![Send an email screen](media/service-flow-integration/power-bi-flow-email.png)
 
-3. Flow creates a title and message for you which you can keep or modify. All the values you set when you created the alert in Power BI are available for your use -- just place your cursor and select from the grey highlighted area. 
+3. Flow creates a title and message for you which you can keep or modify. All the values you set when you created the alert in Power BI are available for your use -- just place your cursor and select from the gray highlighted area. 
 
    ![Send an email screen](media/service-flow-integration/power-bi-flow-email-default.png)
 
@@ -96,7 +96,7 @@ In this task we'll create a simple flow from scratch that is triggered by a Powe
 4. Fill in the event fields. As you select a field, Flow displays dynamic content that you can include.
    
    ![continue to build the flow](media/service-flow-integration/power-bi-flow-event.png)
-5. Selet **Create flow** when done.  Flow saves and evaluates the flow. If there are no errors, select **Done** to run this flow.  The new flow is added to your **My flows** page.
+5. Select **Create flow** when done.  Flow saves and evaluates the flow. If there are no errors, select **Done** to run this flow.  The new flow is added to your **My flows** page.
    
    ![Complete the flow](media/service-flow-integration/power-bi-flow-running.png)
 6. When the flow is triggered by your Power BI data alert, you'll receive an Outlook event notification similar to this one.
@@ -104,9 +104,9 @@ In this task we'll create a simple flow from scratch that is triggered by a Powe
     ![Flow triggers Outlook notification](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## Next steps
-* [Get started with Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started/)
+* [Get started with Microsoft Flow](https://flow.microsoft.com/documentation/getting-started/)
 * [Set data alerts in Power BI service](service-set-data-alerts.md)
-* [Set data alerts on your iphone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Set data alerts on your iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Set data alerts in the Power BI mobile app for Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

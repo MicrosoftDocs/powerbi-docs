@@ -3,13 +3,14 @@ title: Favorites in Power BI service (dashboards, reports, apps)
 description: Documentation on how to set dashboards, reports, and apps as favorites in Power BI service
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 12/06/2018
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -50,14 +51,14 @@ Watch Amanda add favorites to her workspace, then follow the step-by-step instru
    ![hover over app](./media/end-user-favorite/power-bi-favorite-app.png)
 
 ## Working with *favorites*
-1. To acccess your favorites, from any workspace, select the flyout arrow to the right of **Favorites**.  From here you can select a favorite to open it. Only five favorites are listed (alphabetically). If you have more than five, select **See all** to open the favorites screen (see #2, below). 
+1. To access your favorites, from any workspace, select the flyout arrow to the right of **Favorites**.  From here you can select a favorite to open it. Only five favorites are listed (alphabetically). If you have more than five, select **See all** to open the favorites screen (see #2, below). 
    
    ![Favorites flyout](./media/end-user-favorite/power-bi-favorite-flyout-new.png)
 2. To see **all** the content that you have added as favorites, in the left navpane, select **Favorites** or the Favorites ![star icon](./media/end-user-favorite/power-bi-favorites-icon.png)  icon.  
    
     ![favorite window](./media/end-user-favorite/power-bi-favorites-screen.png)
    
-   From here you can take action: open, identify owners, and even share with your  colleagues.
+   From here you can take action: open, identify owners, and even share with your colleagues.
 
 ## Unfavorite content
 No longer use a report as often as you used to?  You can unfavorite it. When you unfavorite content, it is removed from your Favorites list but not from Power BI.

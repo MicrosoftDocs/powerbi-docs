@@ -6,7 +6,7 @@ ms.author: maghan
 manager: kfile
 ms.topic: overview
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 09/17/2018
 #Customer intent: As a developer, I want to understand the capabilities of Power BI, so I have enough info to determine which Power BI developer features to use.
@@ -40,7 +40,7 @@ Custom visuals allow you to create your visuals for use within Power BI reports.
 
 ![CV sample](media/what-can-you-do/powerbi-custom-visual-store.png)
 
-To start learning more about custom visual development, see [Use developer tools to create custom visuals](../service-custom-visuals-getting-started-with-developer-tools.md).
+To start learning more about custom visual development, see [Developing a Power BI custom visual](custom-visual-develop-tutorial.md).
 
 ## Using API automation
 

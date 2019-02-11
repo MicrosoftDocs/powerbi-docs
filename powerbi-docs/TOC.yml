@@ -480,7 +480,7 @@
       href: supported-languages-countries-regions.md
     - name: "Whitepapers"
       href: whitepapers.md
-- name: Power BI Desktop
+﻿- name: Power BI Desktop
   items:
   - name: Overview
     items: 
@@ -535,15 +535,17 @@
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
       href: desktop-latest-update.md
+    - name: "Modeling view in Power BI Desktop (Preview)"
+      href: desktop-modeling-view.md      
     - name: "Aggregations in Power BI Desktop (Preview)"
       href: desktop-aggregations.md      
-    - name: "Composite models in Power BI Desktop (Preview)"
+    - name: "Composite models in Power BI Desktop"
       href: desktop-composite-models.md
     - name: "Many-to-many relationships in Power BI Desktop (Preview)"
       href: desktop-many-to-many-relationships.md
     - name: "Storage mode in Power BI Desktop (Preview)"
       href: desktop-storage-mode.md
-    - name: "Bidirectional cross-filtering in Power BI Desktop (Preview)"
+    - name: "Bidirectional cross-filtering in Power BI Desktop"
       href: desktop-bidirectional-filtering.md
     - name: "Power BI and DirectQuery"
       href: desktop-directquery-about.md
@@ -551,6 +553,10 @@
       href: desktop-directquery-data-sources.md
     - name: "Power BI data source prerequisites"
       href: desktop-data-source-prerequisites.md
+    - name: "Default member in multidimensional models in Power BI"
+      href: desktop-default-member-multidimensional-models.md            
+    - name: "Custom visuals FAQ"
+      href: power-bi-custom-visuals-faq.md
   - name: How to
     items: 
     - name: "Get Power BI Desktop"
@@ -575,16 +581,14 @@
       href: desktop-connect-to-data.md
     - name: "Publish from Power BI Desktop"
       href: desktop-upload-desktop-files.md
-    - name: "Custom visualizations in Power BI"
-      href: power-bi-custom-visuals.md
-    - name: "Custom visuals for organizations in Power BI"
-      href: power-bi-custom-visuals-organization.md      
     - name: "Part I, Add visualizations to a Power BI report"
       href: visuals/power-bi-report-add-visualizations-i.md
     - name: "Part 2, Add visualizations to a Power BI report"
       href: visuals/power-bi-report-add-visualizations-ii.md
     - name: "Customize visualization title, background, and legend"
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
+    - name: "Show items with no data in Power BI"
+      href: desktop-show-items-no-data.md      
     - name: Connect to data
       items: 
       - name: "Data sources in Power BI Desktop"
@@ -675,9 +679,9 @@
       items: 
       - name: "Data categorization in Power BI Desktop"
         href: desktop-data-categorization.md
-      - name: "Tag a barcode field in Power BI Desktop for the Power BI mobile apps"
+      - name: "Tag a barcode field for the mobile apps"
         href: desktop-mobile-barcodes.md
-      - name: "Set geographic filtering in Power BI Desktop for the Power BI mobile apps"
+      - name: "Set geographic filtering for the mobile apps"
         href: desktop-mobile-geofiltering.md
       - name: "Calculated columns in Power BI Desktop"
         href: desktop-calculated-columns.md
@@ -685,6 +689,8 @@
         href: desktop-calculated-tables.md
       - name: "Measures in Power BI Desktop"
         href: desktop-measures.md
+      - name: "Edit Q&A linguistic schema"
+        href: power-bi-q-and-a-linguistic-schema.md
       - name: "Import and display KPIs (Preview)"
         href: desktop-import-and-display-kpis.md
     - name: Create reports
@@ -707,6 +713,8 @@
         href: desktop-bookmarks.md
       - name: "Use Report themes"
         href: desktop-report-themes.md
+      - name: "Try the new filter experience"
+        href: power-bi-report-filter-preview.md
       - name: "Use Quick Measures"
         href: desktop-quick-measures.md
       - name: "Using What if parameters"
@@ -717,18 +725,14 @@
         href: visuals/desktop-slicer-filter-date-range.md      
       - name: "Use grouping and binning"
         href: desktop-grouping-and-binning.md
-      - name: "Ribbon charts"
-        href: visuals/desktop-ribbon-charts.md
-      - name: "Use the new matrix visual"
-        href: visuals/desktop-matrix-visual.md
       - name: "Create Power BI visuals using R"
         href: desktop-r-visuals.md
       - name: "Use R-powered custom visuals"
         href: desktop-r-powered-custom-visuals.md
       - name: "Use gridlines and snap-to-grid"
         href: desktop-gridlines-snap-to-grid.md
-      - name: "High density line sampling"
-        href: desktop-high-density-sampling.md
+      - name: "Page display settings in a Power BI report"
+        href: power-bi-report-display-settings.md
       - name: "Add a column from an example"
         href: desktop-add-column-from-example.md
       - name: "Add a custom column"
@@ -741,54 +745,64 @@
         href: desktop-slicer-numeric-range.md
       - name: "Use the relative date slicer"
         href: desktop-slicer-filter-date-range.md
-        name: "Create a responsive slicer you can resize"
+        name: "Create a slicer you can resize"
         href: power-bi-slicer-filter-responsive.md
-      - name: "Create custom Power BI answer cards for Cortana"
+      - name: "Create custom answer cards for Cortana"
         href: service-cortana-answer-cards.md
       - name: "Row-level security"
         href: desktop-rls.md
-      - name: "Customizing tooltips in Power BI Desktop"
+      - name: "Customizing tooltips"
         href: desktop-custom-tooltips.md
-      - name: "Conditional table formatting in Power BI Desktop"
+      - name: "Text boxes and shapes in reports"
+        href: power-bi-reports-add-text-and-shapes.md
+      - name: "Add a hyperlink to a text box"
+        href: service-add-hyperlink-to-text-box.md
+      - name: "Hyperlinks in tables"
+        href: power-bi-hyperlinks-in-tables.md
+      - name: "Conditional table formatting"
         href: desktop-conditional-table-formatting.md
       - name: "Sort by column in Power BI Desktop"
         href: desktop-sort-by-column.md
-      - name: "Create reports optimized for the Power BI phone apps"
+      - name: "Create reports optimized for mobile apps"
         href: desktop-create-phone-report.md
       - name: "Use See Data and See Records"
         href: desktop-see-data-see-records.md
+      - name: "Tips for creating reports"
+        href: desktop-tips-and-tricks-for-creating-reports.md
     - name: Visualizations
       items: 
       - name: "Visualization types in Power BI"
         href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
+      - name: "Visualizations in Power BI"
+        href: visuals/power-bi-report-visualizations.md
       - name: "Visualization best practices"
         href: visuals/power-bi-visualization-best-practices.md
-      - name: "Change the type of visualization in a Power BI report"
+      - name: "Change the type of visualization in a report"
         href: visuals/power-bi-report-change-visualization-type.md
+      - name: "Data point limits by visual type"
+        href: visuals/power-bi-data-points.md
+      - name: "Show the data used to create the visual"
+        href: visuals/service-reports-show-data.md
       - name: "Getting started with color formatting and axis properties"
         href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
-      - name: "Tips and tricks for color formatting in Power BI"
+      - name: "Tips and tricks for color formatting"
         href: visuals/service-tips-and-tricks-for-color-formatting.md
-      - name: "Copy and paste a visualization in Power BI"
+      - name: "Copy and paste a visualization"
         href: visuals/power-bi-visualization-copy-paste.md
-      - name: "Move, resize, and pop out a visualization in a Power BI report"
+      - name: "Export the data used to create the visualization"
+        href: visuals/power-bi-visualization-export-data.md      
+      - name: "Move, resize, and pop out a visualization in a report"
         href: visuals/power-bi-visualization-move-and-resize.md
-      - name: "Hyperlinks in tables"
-        href: power-bi-hyperlinks-in-tables.md
-      - name: "Add a hyperlink to a Text Box in a Power BI report"
-        href: service-add-hyperlink-to-text-box.md
+      - name: "Change how visuals interact in a report"
+        href: service-reports-visual-interactions.md
       - name: "Histograms"
         href: visuals/service-histograms.md
       - name: "Tips and tricks for Power BI map visualizations"
         href: visuals/power-bi-map-tips-and-tricks.md
-      - name: "Text boxes in Power BI reports"
-        href: power-bi-reports-add-text-and-shapes.md
       - name: "Customize X-axis and Y-axis properties"
         href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-      - name: "ArcGIS in Power BI"
-        href: power-bi-visualization-arcgis.md
-      - name: "Interact with ArcGIS maps in Power BI"
-        href: visuals/power-bi-visualizations-arcgis.md
+      - name: "ArcGIS maps"
+        href: visuals/power-bi-visualization-arcgis.md
       - name: "Basic area chart"
         href: visuals/power-bi-visualization-basic-area-chart.md
       - name: "Cards (big number tiles) in Power BI"
@@ -803,12 +817,18 @@
         href: visuals/power-bi-visualization-funnel-charts.md
       - name: "Key influencers charts in Power BI"
         href: visuals/power-bi-visualizations-influencers.md
+      - name: "High density line sampling"
+        href: desktop-high-density-sampling.md
       - name: "KPI Visuals"
         href: visuals/power-bi-visualization-kpi.md
+      - name: "Matrix visual"
+        href: visuals/desktop-matrix-visual.md
       - name: "Create advanced analytics and visualizations using R scripts in Power BI"
         href: visuals/service-r-visuals.md
       - name: "Radial gauge charts in Power BI"
         href: visuals/power-bi-visualization-radial-gauge-charts.md
+      - name: "Ribbon charts"
+        href: visuals/desktop-ribbon-charts.md
       - name: "Scatter charts in Power BI"
         href: visuals/power-bi-visualization-scatter.md
       - name: "High density scatter charts"
@@ -821,7 +841,9 @@
         href: visuals/power-bi-visualization-treemaps.md
       - name: "Waterfall charts in Power BI"
         href: visuals/power-bi-visualization-waterfall-charts.md
-    - name: Troubleshooting
+      - name: "Create dynamic reference lines"
+        href: service-analytics-pane.md
+    - name: Troubleshoot
       items: 
       - name: "Resolve issues importing Access Databases and Excel spreadsheets in Power BI Desktop and Power Query"
         href: desktop-access-database-errors.md
@@ -831,6 +853,8 @@
     items: 
     - name: "Data types in Power BI Desktop"
       href: desktop-data-types.md
+    - name: "Formula editor shortcuts for Power BI Desktop"
+      href: desktop-formula-editor.md      
     - name: "Power BI Desktop privacy levels"
       href: desktop-privacy-levels.md
     - name: "Connector extensibility in Power BI"
@@ -846,199 +870,97 @@
     - name: "Accessibility in Power BI reports"
       href: desktop-accessibility.md
     - name: "Manage the Power BI Desktop sign-in form"
-      href: desktop-admin-sign-in-form.md      
+      href: desktop-admin-sign-in-form.md
 - name: Power BI service
   items:
   - name: Overview
     items: 
     - name: "What is Power BI?"
       href: power-bi-overview.md
+    - name: "Comparing Power BI Desktop and the service"
+      href: service-service-vs-desktop.md
   - name: Tutorials
     items: 
-    - name: "Connect to a GitHub sample"
-      href: service-tutorial-connect-to-github.md
     - name: "Get started with Power BI"
       href: service-get-started.md
+    - name: "Connect to a GitHub sample"
+      href: service-tutorial-connect-to-github.md
   - name: Concepts
     items: 
     - name: "What's new in the Power BI service"
       href: service-whats-new.md
-    - name: "Self-service sign-up"
-      href: service-self-service-signup-for-power-bi.md 
-    - name: "Introduction to Cortana for Power BI"
-      href: service-cortana-intro.md
-    - name: "Data refresh in Power BI"
-      href: refresh-data.md
-    - name: "Power BI for US Government"
-      href: service-govus-overview.md
-    - name: "Features by license type"
-      href: service-features-license-type.md
-    - name: "10 tips for getting help"
-      href: service-tips-for-finding-help.md
-    - name: "About filters and highlighting in Power BI reports"
-      href: power-bi-reports-filters-and-highlighting.md
-    - name: "Get data from files"
-      href: service-get-data-from-files.md
-    - name: "The report editor...Take a tour"
-      href: service-the-report-editor-take-a-tour.md
-    - name: "Visualizations in Power BI"
-      href: visuals/power-bi-report-visualizations.md
-    - name: "Data sources for Power BI"
-      href: service-get-data.md
-    - name: "Extended Pro Trial activation"
-      href: service-extended-pro-trial.md
-    - name: "Microsoft Flow and Power BI"
-      href: service-flow-integration.md
-    - name: "FAQ for Power BI for Germany Cloud customers"
-      href: service-govde-faq.md
-    - name: "Power BI get started with third-party apps"
-      href: service-power-bi-get-started-third-party-apps.md
-    - name: "Aggregates (sum, average, maximum, etc.) in Power BI"
-      href: service-aggregates.md
-    - name: "Page display settings in a Power BI report"
-      href: power-bi-report-display-settings.md
+    - name: Basic concepts
+      items: 
+      - name: "Basic concepts for designers"
+        href: service-basic-concepts.md
+      - name: "Kinds of data in Power BI"
+        href: service-get-data.md
+      - name: "Tour the report editor"
+        href: service-the-report-editor-take-a-tour.md
+    - name: Workflow in Power BI
+      items: 
+      - name: "Organizing your work"
+        href: service-new-workspaces.md
+      - name: "Ways to share your work"
+        href: service-how-to-collaborate-distribute-dashboards-reports.md
+      - name: "Keeping data fresh"
+        href: refresh-data.md
+      - name: "Monitoring usage"
+        href: service-usage-metrics.md
+    - name: Licensing
+      items: 
+      - name: "Self-service sign-up"
+        href: service-self-service-signup-for-power-bi.md 
+      - name: "Licensing in your organization"
+        href: service-admin-licensing-organization.md
+      - name: "Features by license type"
+        href: service-features-license-type.md
+    - name: More concepts
+      items: 
+      - name: "10 tips for getting help"
+        href: service-tips-for-finding-help.md
+      - name: Licensing special cases
+        items:         
+        - name: "Extended Pro Trial activation"
+          href: service-extended-pro-trial.md
+        - name: "Power BI for US Government"
+          href: service-govus-overview.md
+        - name: "FAQ for Germany Cloud customers"
+          href: service-govde-faq.md
+      - name: Other
+        items:         
+        - name: "Microsoft Flow and Power BI"
+          href: service-flow-integration.md
+        - name: "Get started with third-party apps"
+          href: service-power-bi-get-started-third-party-apps.md
   - name: How to
     items: 
-    - name: Common tasks
+    - name: Get data from files
       items: 
-      - name: "Rename content within Power BI"
-        href: service-rename.md
-      - name: "Display dashboards and reports in Full Screen mode (TV mode)"
-        href: service-fullscreen-mode.md
-      - name: "Enroll your US Government organization"
-        href: service-govus-signup.md
-      - name: "Data alerts in Power BI service"
-        href: service-set-data-alerts.md
-      - name: "Get started with Power BI Q&A"
-        href: power-bi-visualization-introduction-to-q-and-a.md
-    - name: Connect to services
-      items: 
-      - name: "Acumatica"
-        href: service-connect-to-acumatica.md
-      - name: "Adobe Analytics"
-        href: service-connect-to-adobe-analytics.md
-      - name: "Alpine Metrics Sales Predictions"
-        href: service-connect-to-alpine-metrics.md
-      - name: "appFigures"
-        href: service-connect-to-appfigures.md
-      - name: "Application Insights"
-        href: service-connect-to-application-insights.md
-      - name: "AT Internet Bridge"
-        href: service-connect-to-at-internet.md
-      - name: "Azure Audit Logs"
-        href: service-connect-to-azure-audit-logs.md
-      - name: "Azure Mobile Engagement"
-        href: service-connect-to-azure-mobile.md
-      - name: "Microsoft Azure Consumption Insights"
-        href: service-connect-to-azure-consumption-insights.md
-      - name: "Azure Search"
-        href: service-connect-to-azure-search.md
-      - name: "Circuit ID"
-        href: service-connect-to-circuit-id.md
-      - name: "ClickDimensions"
-        href: service-connect-to-clickdimensions.md
-      - name: "comScore Digital Analytix"
-        href: service-connect-to-connect-to.md
-      - name: "GitHub"
-        href: service-connect-to-github.md
-      - name: "Google Analytics"
-        href: service-connect-to-google-analytics.md
-      - name: "Insightly"
-        href: service-connect-to-insightly.md
-      - name: "IntelliBoard"
-        href: service-connect-to-intelliboard.md
-      - name: "Lithium"
-        href: service-connect-to-lithium.md
-      - name: "MailChimp"
-        href: service-connect-to-mailchimp.md
-      - name: "Mandrill"
-        href: service-connect-to-mandrill.md
-      - name: "Marketo"
-        href: service-connect-to-marketo.md
-      - name: "Microsoft Azure Enterprise"
-        href: service-connect-to-azure-enterprise.md
-      - name: "Microsoft Dynamics AX"
-        href: service-connect-to-microsoft-dynamics-ax.md
-      - name: "Microsoft Dynamics CRM"
-        href: service-connect-to-microsoft-dynamics-crm.md
-      - name: "Microsoft Dynamics Marketing"
-        href: service-connect-to-microsoft-dynamics-marketing.md
-      - name: "Microsoft Dynamics NAV"
-        href: service-connect-to-microsoft-dynamics-nav.md
-      - name: "Office365Mon"
-        href: service-connect-to-office365mon.md
-      - name: "Planview Enterprise"
-        href: service-connect-to-planview.md
-      - name: "Prevedere"
-        href: service-connect-to-prevedere.md
-      - name: "Project Online"
-        href: service-connect-to-project-online.md
-      - name: "Project Madeira"
-        href: service-connect-to-project-madeira.md
-      - name: "Projectplace"
-        href: service-connect-to-projectplace.md
-      - name: "QuickBooks Online"
-        href: service-connect-to-quickbooks-online.md
-      - name: "Salesforce"
-        href: service-connect-to-salesforce.md
-      - name: "SendGrid"
-        href: service-connect-to-sendgrid.md
-      - name: "ServiceNow Incidents"
-        href: service-connect-to-servicenow.md
-      - name: "Smartsheet"
-        href: service-connect-to-smartsheet.md
-      - name: "SparkPost"
-        href: service-connect-to-sparkpost.md
-      - name: "SQL Database Auditing"
-        href: service-connect-to-azure-sql-database-auditing.md
-      - name: "SQL Sentry"
-        href: service-connect-to-sql-sentry.md
-      - name: "Stripe"
-        href: service-connect-to-stripe.md
-      - name: "SweetIQ"
-        href: service-connect-to-sweetiq.md
-      - name: "Troux"
-        href: service-connect-to-troux.md
-      - name: "Twilio"
-        href: service-connect-to-twilio.md
-      - name: "tyGraph"
-        href: service-connect-to-tygraph.md
-      - name: "UserVoice"
-        href: service-connect-to-uservoice.md
-      - name: "VMob"
-        href: service-connect-to-vmob.md
-      - name: "Webtrends"
-        href: service-connect-to-webtrends.md
-      - name: "Windows Dev Center"
-        href: service-connect-to-windows-dev-center.md
-      - name: "Xero"
-        href: service-connect-to-xero.md
-      - name: "Zendesk"
-        href: service-connect-to-zendesk.md
-      - name: "Ziosk"
-        href: service-connect-to-ziosk.md
-      - name: "Zuora"
-        href: service-connect-to-zuora.md
-    - name: Data from files
-      items: 
-      - name: "From Excel workbook to stunning report in no time"
+      - name: "Getting data from files"
+        href: service-get-data-from-files.md
+      - name: "From Excel to stunning report"
         href: service-from-excel-to-stunning-report.md
       - name: "Get data from Excel workbook files"
         href: service-excel-workbook-files.md
       - name: "Get data from Power BI Desktop files"
         href: service-desktop-files.md
-      - name: "Parameters settings for datasets"
+      - name: "Edit parameters"
         href: service-parameters.md
       - name: "Get data from comma separated value (.csv) files"
         href: service-comma-separated-value-files.md
-      - name: "Real-time streaming in Power BI (Preview)"
+      - name: "Real-time streaming in Power BI"
         href: service-real-time-streaming.md
-      - name: "Publish to Power BI from Excel 2016"
+      - name: "Publish to Power BI from Excel"
         href: service-publish-from-excel.md
-      - name: "Reduce the size of an Excel workbook to view it in Power BI"
+      - name: "Reduce the size of an Excel workbook"
         href: reduce-the-size-of-an-excel-workbook.md
-    - name: Data from databases
+    - name: Get data from databases
       items: 
+      - name: "Azure and Power BI"
+        href: service-azure-and-power-bi.md
+      - name: "Power BI and Azure egress"
+        href: service-azure-egress-power-bi.md           
       - name: "Azure SQL Data Warehouse with DirectQuery"
         href: service-azure-sql-data-warehouse-with-direct-connect.md
       - name: "Azure SQL Database with DirectQuery"
@@ -1047,50 +969,50 @@
         href: spark-on-hdinsight-with-direct-connect.md
       - name: "SQL Server Analysis Services live data in Power BI"
         href: sql-server-analysis-services-tabular-data.md
-      - name: "Azure and Power BI"
-        href: service-azure-and-power-bi.md
-    - name: Data refresh
+    - name: Refresh data
       items: 
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
-      - name: "Refresh a dataset created from a Power BI Desktop file - local"
+      - name: "Refresh a dataset from a Power BI Desktop file - local"
         href: refresh-desktop-file-local-drive.md
-      - name: "Refresh a dataset created from a Power BI Desktop file - cloud"
+      - name: "Refresh a dataset from a Power BI Desktop file - cloud"
         href: refresh-desktop-file-onedrive.md
-      - name: "Refresh a dataset created from an Excel workbook - local"
+      - name: "Refresh a dataset from an Excel workbook - local"
         href: refresh-excel-file-local-drive.md
-      - name: "Refresh a dataset created from an Excel workbook - cloud"
+      - name: "Refresh a dataset from an Excel workbook - cloud"
         href: refresh-excel-file-onedrive.md
-      - name: "Refresh a dataset created from a comma separated value (.csv) file on OneDrive"
+      - name: "Refresh a dataset created from a .csv file on OneDrive"
         href: refresh-csv-file-onedrive.md
       - name: "Troubleshooting refresh scenarios"
         href: refresh-troubleshooting-refresh-scenarios.md
     - name: Dashboards
       items: 
+      - name: "Intro to dashboards"
+        href: service-dashboards.md
+      - name: "Dashboard tiles"
+        href: service-dashboard-tiles.md
       - name: "Create a dashboard from a report"
         href: service-dashboard-create.md
       - name: "Create a copy of a dashboard"
         href: service-dashboard-copy.md
-      - name: "Pin a tile to a Power BI dashboard from a report"
+      - name: "Pin a tile to a dashboard from a report"
         href: service-dashboard-pin-tile-from-report.md
-      - name: "Pin a tile from one dashboard to another dashboard"
+      - name: "Pin a tile from one dashboard to another"
         href: service-pin-tile-to-another-dashboard.md
-      - name: "Pin a tile to a Power BI dashboard from Excel"
+      - name: "Pin a tile to a dashboard from Excel"
         href: service-dashboard-pin-tile-from-excel.md
-      - name: "Pin a tile to a Power BI dashboard from the Q&A question box"
+      - name: "Pin a tile to a dashboard from Q&A"
         href: service-dashboard-pin-tile-from-q-and-a.md
-      - name: "Pin an entire report page to a Power BI dashboard"
+      - name: "Pin an entire report page to a dashboard"
         href: service-dashboard-pin-live-tile-from-report.md
-      - name: "Usage metrics for dashboards"
-        href: service-usage-metrics.md
-      - name: "Add an image, text box, video, or web code to your dashboard"
+      - name: "Data alerts in Power BI service"
+        href: service-set-data-alerts.md
+      - name: "Add an image, text box, video, or code to a dashboard"
         href: service-dashboard-add-widget.md
-      - name: "Edit a tile — resize, move, rename, pin, delete, add hyperlink"
+      - name: "Edit a tile"
         href: service-dashboard-edit-tile.md
-      - name: "Tips for designing a great Power BI dashboard"
+      - name: "Tips for designing a great dashboard"
         href: service-dashboards-design-tips.md
-      - name: "Optimize your data for Power BI Quick Insights"
-        href: service-insights-optimize.md
       - name: "Create a phone view of a dashboard"
         href: service-create-dashboard-mobile-phone-view.md
       - name: "Create a QR code for a tile"
@@ -1103,101 +1025,87 @@
         href: service-dashboard-themes.md
     - name: Reports
       items: 
-      - name: "Create a new report from an existing report"
-        href: power-bi-report-copy.md
-      - name: "Add a page to a Power BI report"
-        href: power-bi-report-add-page.md
-      - name: "Add a filter to a report in Power BI"
+      - name: "Create a report from a dataset"
+        href: service-report-create-new.md
+      - name: "About filters and highlighting in reports"
+        href: power-bi-reports-filters-and-highlighting.md
+      - name: "Add a filter to a report"
         href: power-bi-report-add-filter.md
       - name: "Save a report in Power BI"
         href: service-report-save.md
-      - name: "Create a new report from a dataset"
-        href: service-report-create-new.md
-      - name: "Interact with a report in Editing View in Power BI"
+      - name: "Interact with a report in Editing View"
         href: service-interact-with-a-report-in-editing-view.md
       - name: "Analyze in Excel"
         href: service-analyze-in-excel.md
-      - name: "Tips and tricks for creating reports in Power BI service"
+      - name: "Tips and tricks for creating reports"
         href: power-bi-reports-tips-and-tricks-for-creating.md
-      - name: "Analytics pane"
-        href: service-analytics-pane.md
+      - name: "Work with aggregates in the service"
+        href: service-aggregates.md
       - name: "Usage metrics for reports"
         href: service-usage-metrics.md
       - name: "Create a QR code for a report"
         href: service-create-qr-code-for-report.md
-      - name: "Reorder pages in a report in Power BI"
-        href: service-report-reorder-pages.md
-      - name: "Duplicate a report page in Power BI"
-        href: power-bi-report-copy-paste-page.md
-      - name: "Export a report from Power BI service to Desktop (Preview)"
+      - name: "Export a report to Power BI Desktop (Preview)"
         href: service-export-to-pbix.md
-      - name: "Filter a report using query string parameters in the URL"
+      - name: "Filter a report using parameters in the URL"
         href: service-url-filters.md
       - name: "Best practices for building fast and reliable reports in Power BI"
         href: power-bi-reports-performance.md
     - name: Ask questions of your data
       items:
-      - name: "Use Q&A to create visualizations and build reports"
+      - name: "Get started with Power BI Q&A"
+        href: power-bi-visualization-introduction-to-q-and-a.md
+      - name: "Use Q&A to create visuals and reports"
         href: power-bi-tutorial-q-and-a.md
-      - name: "Make your data work well with Q&A in Power BI"
+      - name: "Make your data work well with Q&A"
         href: service-prepare-data-for-q-and-a.md
+      - name: "Create featured questions for Q&A"
+        href: service-q-and-a-create-featured-questions.md
+      - name: "Use Q&A with live connections"
+        href: service-q-and-a-direct-query.md
+      - name: "Intro to Cortana for Power BI"
+        href: service-cortana-intro.md
       - name: "Enable Cortana for Power BI"
         href: service-cortana-enable.md
-      - name: "Create featured questions for Power BI Q&A"
-        href: service-q-and-a-create-featured-questions.md
-      - name: "Work with the linguistic schema in Power BI Desktop"
-        href: power-bi-q-and-a-linguistic-schema.md
-    - name: Share your work
+      - name: "Quick Insights in Power BI"
+        href: service-insights.md
+      - name: "Optimize your data for  Quick Insights"
+        href: service-insights-optimize.md
+    - name: Collaborate in Power BI
       items: 
-      - name: "How should I collaborate and share?"
-        href: service-how-to-collaborate-distribute-dashboards-reports.md
-      - name: "Share dashboards and reports"
-        href: service-share-dashboards.md
       - name: "Create app workspaces"
         href: service-create-workspaces.md
       - name: "Create the new workspaces (preview)"
         href: service-create-the-new-workspaces.md
-      - name: "Share a filtered report"
-        href: service-share-reports.md
-      - name: "Publish from Power BI to the web"
-        href: service-publish-to-web.md
-      - name: "Embed report in SharePoint Online"
-        href: service-embed-report-spo.md
+      - name: "Create and share apps"
+        href: service-create-distribute-apps.md
+      - name: "Manage data storage in workspaces"
+        href: service-admin-manage-your-data-storage-in-power-bi.md
       - name: "Connect to files on your group's OneDrive"
         href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
       - name: "Collaborate in your group workspace"
         href: service-collaborate-power-bi-workspace.md
       - name: "Manage your group in Power BI and Office 365"
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
-      - name: "Share a dashboard that links to an Excel workbook on OneDrive for Business"
-        href: service-share-dashboard-that-links-to-excel-onedrive.md
-    - name: Content Packs
-      items:
-      - name: "Manage, update, and delete organizational content packs"
-        href: service-organizational-content-pack-manage-update-delete.md
-      - name: "Organizational content packs: Copy, refresh, and get access"
-        href: service-organizational-content-pack-copy-refresh-access.md
-      - name: "Organizational content packs: Introduction"
-        href: service-organizational-content-pack-introduction.md
-      - name: "Create and publish an organizational content pack"
-        href: service-organizational-content-pack-create-and-publish.md
-      - name: "Remove your connection to an organizational content pack"
-        href: service-organizational-content-pack-disconnect.md
-      - name: Certification
-        items: 
-        - name: "Content Pack Certification Program"
-          href: service-content-pack-overview.md
-        - name: "Template Content Pack authoring"
-          href: template-content-pack-authoring.md
-        - name: "Template Content Pack testing"
-          href: template-content-pack-testing.md
-        - name: "Template Content Pack experiences"
-          href: template-content-pack-experience.md
-    - name: Publish
+    - name: Publish and share your work
       items: 
+      - name: "Share dashboards and reports"
+        href: service-share-dashboards.md
+      - name: "Share a filtered report"
+        href: service-share-reports.md
+      - name: "Subscribe yourself and others"
+        href: service-report-subscribe.md
+      - name: "Embed report in SharePoint Online"
+        href: service-embed-report-spo.md
+      - name: "Embed report in a secure portal or website"
+        href: service-embed-secure.md
+      - name: "Publish from Power BI to the web"
+        href: service-publish-to-web.md
+      - name: "Share a dashboard that links to an Excel workbook on OneDrive"
+        href: service-share-dashboard-that-links-to-excel-onedrive.md
       - name: "Power BI publisher for Excel"
         href: publisher-for-excel.md
-    - name: Troubleshooting
+    - name: Troubleshoot
       items: 
       - name: "Forgot your password for Power BI?"
         href: service-admin-forgot-your-password.md
@@ -1227,6 +1135,192 @@
         href: refresh-troubleshooting-tile-errors.md
       - name: "How to refresh your Xero content pack credentials if refresh failed"
         href: service-refresh-xero-credentials.md
+    - name: Self-service data prep
+      items: 
+      - name: "Self-service data prep with dataflows (preview)"
+        href: service-dataflows-overview.md
+      - name: "Create and use dataflows (preview)"
+        href: service-dataflows-create-use.md
+      - name: "Computed entities with Power BI Premium (preview)"
+        href: service-dataflows-computed-entities-premium.md
+      - name: "Connect to data sources with dataflows (preview)"
+        href: service-dataflows-data-sources.md        
+      - name: "Using dataflows with on-premises data sources (preview)"
+        href: service-dataflows-on-premises-gateways.md    
+      - name: "Link entities between dataflows (preview)"
+        href: service-dataflows-linked-entities.md      
+      - name: "Using incremental refresh with dataflows (preview)"
+        href: service-dataflows-incremental-refresh.md                  
+      - name: "Developer resources for dataflows (preview)"
+        href: service-dataflows-developer-resources.md
+      - name: "Connect to dataflows in Power BI Desktop"
+        href: desktop-connect-dataflows.md  
+      - name: "Dataflows and Azure Data Lake integration (Preview)"
+        href: service-dataflows-azure-data-lake-integration.md  
+      - name: "Connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)"
+        href: service-dataflows-connect-azure-data-lake-storage-gen2.md  
+      - name: "Configure workspace dataflow settings (Preview)"
+        href: service-dataflows-configure-workspace-storage-settings.md  
+      - name: "Add a CDM folder to Power BI as a dataflow (Preview)"
+        href: service-dataflows-add-cdm-folder.md                                
+    - name: Paginated reports in Power BI
+      items: 
+      - name: What are paginated reports? (Preview)
+        href: paginated-reports-report-builder-power-bi.md
+      - name: Paginated reports FAQ (Preview)
+        href: paginated-reports-faq.md
+      - name: Create a paginated report and upload it (Preview)
+        href: paginated-reports-quickstart-aw.md
+      - name: Get around Report Design View (Preview)
+        href: paginated-reports-report-design-view.md
+      - name: Enter data directly in a paginated report (Preview)
+        href: paginated-reports-enter-data.md
+      - name: Create an embedded data source (Preview)
+        href: paginated-reports-embedded-data-source.md
+      - name: Create an embedded dataset (Preview)
+        href: paginated-reports-create-embedded-dataset.md
+      - name: Create parameters (Preview)
+        href: paginated-reports-parameters.md
+      - name: Publish a paginated report (Preview)
+        href: paginated-reports-save-to-power-bi-service.md
+      - name: View a paginated report (Preview)
+        href: paginated-reports-view-power-bi-service.md
+      - name: Interact with parameters (Preview)
+        href: paginated-reports-view-parameters.md
+    - name: Other tasks
+      items: 
+      - name: "Rename content within Power BI"
+        href: service-rename.md
+      - name: "Enroll your US Government organization"
+        href: service-govus-signup.md
+      - name: "Delete almost anything in Power BI"
+        href: service-delete.md
+      - name: Connect to services
+        items: 
+        - name: "Connect to services"
+          href: service-connect-to-services.md
+        - name: "Acumatica"
+          href: service-connect-to-acumatica.md
+        - name: "Adobe Analytics"
+          href: service-connect-to-adobe-analytics.md
+        - name: "Alpine Metrics Sales Predictions"
+          href: service-connect-to-alpine-metrics.md
+        - name: "appFigures"
+          href: service-connect-to-appfigures.md
+        - name: "Application Insights"
+          href: service-connect-to-application-insights.md
+        - name: "AT Internet Bridge"
+          href: service-connect-to-at-internet.md
+        - name: "Azure Audit Logs"
+          href: service-connect-to-azure-audit-logs.md
+        - name: "Azure Mobile Engagement"
+          href: service-connect-to-azure-mobile.md
+        - name: "Microsoft Azure Consumption Insights"
+          href: service-connect-to-azure-consumption-insights.md
+        - name: "Azure Search"
+          href: service-connect-to-azure-search.md
+        - name: "Circuit ID"
+          href: service-connect-to-circuit-id.md
+        - name: "ClickDimensions"
+          href: service-connect-to-clickdimensions.md
+        - name: "comScore Digital Analytix"
+          href: service-connect-to-connect-to.md
+        - name: "GitHub"
+          href: service-connect-to-github.md
+        - name: "Google Analytics"
+          href: service-connect-to-google-analytics.md
+        - name: "Insightly"
+          href: service-connect-to-insightly.md
+        - name: "IntelliBoard"
+          href: service-connect-to-intelliboard.md
+        - name: "Lithium"
+          href: service-connect-to-lithium.md
+        - name: "MailChimp"
+          href: service-connect-to-mailchimp.md
+        - name: "Mandrill"
+          href: service-connect-to-mandrill.md
+        - name: "Marketo"
+          href: service-connect-to-marketo.md
+        - name: "Microsoft Dynamics AX"
+          href: service-connect-to-microsoft-dynamics-ax.md
+        - name: "Microsoft Dynamics CRM"
+          href: service-connect-to-microsoft-dynamics-crm.md
+        - name: "Microsoft Dynamics NAV"
+          href: service-connect-to-microsoft-dynamics-nav.md
+        - name: "Office365Mon"
+          href: service-connect-to-office365mon.md
+        - name: "Planview Enterprise"
+          href: service-connect-to-planview.md
+        - name: "Prevedere"
+          href: service-connect-to-prevedere.md
+        - name: "Project Online"
+          href: service-connect-to-project-online.md
+        - name: "Projectplace"
+          href: service-connect-to-projectplace.md
+        - name: "QuickBooks Online"
+          href: service-connect-to-quickbooks-online.md
+        - name: "Salesforce"
+          href: service-connect-to-salesforce.md
+        - name: "SendGrid"
+          href: service-connect-to-sendgrid.md
+        - name: "ServiceNow Incidents"
+          href: service-connect-to-servicenow.md
+        - name: "Smartsheet"
+          href: service-connect-to-smartsheet.md
+        - name: "SparkPost"
+          href: service-connect-to-sparkpost.md
+        - name: "SQL Database Auditing"
+          href: service-connect-to-azure-sql-database-auditing.md
+        - name: "SQL Sentry"
+          href: service-connect-to-sql-sentry.md
+        - name: "Stripe"
+          href: service-connect-to-stripe.md
+        - name: "SweetIQ"
+          href: service-connect-to-sweetiq.md
+        - name: "Troux"
+          href: service-connect-to-troux.md
+        - name: "Twilio"
+          href: service-connect-to-twilio.md
+        - name: "tyGraph"
+          href: service-connect-to-tygraph.md
+        - name: "UserVoice"
+          href: service-connect-to-uservoice.md
+        - name: "VMob"
+          href: service-connect-to-vmob.md
+        - name: "Webtrends"
+          href: service-connect-to-webtrends.md
+        - name: "Windows Dev Center"
+          href: service-connect-to-windows-dev-center.md
+        - name: "Xero"
+          href: service-connect-to-xero.md
+        - name: "Zendesk"
+          href: service-connect-to-zendesk.md
+        - name: "Ziosk"
+          href: service-connect-to-ziosk.md
+        - name: "Zuora"
+          href: service-connect-to-zuora.md
+      - name: Organizational content packs
+        items:
+        - name: "Manage, update, and delete organizational content packs"
+          href: service-organizational-content-pack-manage-update-delete.md
+        - name: "Organizational content packs: Copy, refresh, and get access"
+          href: service-organizational-content-pack-copy-refresh-access.md
+        - name: "Organizational content packs: Introduction"
+          href: service-organizational-content-pack-introduction.md
+        - name: "Create and publish an organizational content pack"
+          href: service-organizational-content-pack-create-and-publish.md
+        - name: "Remove your connection to an organizational content pack"
+          href: service-organizational-content-pack-disconnect.md
+      - name: Content pack certification
+        items: 
+        - name: "Content Pack Certification Program"
+          href: service-content-pack-overview.md
+        - name: "Template Content Pack authoring"
+          href: template-content-pack-authoring.md
+        - name: "Template Content Pack testing"
+          href: template-content-pack-testing.md
+        - name: "Template Content Pack experiences"
+          href: template-content-pack-experience.md
   - name: Resources
     items: 
     - name: "Videos"
@@ -1255,32 +1349,36 @@
         href: developer/embed-sample-for-customers.md
       - name: "Embed content for your organization"
         href: developer/embed-sample-for-your-organization.md
-      - name: "Integrate content into your application for sovereign clouds"
+      - name: "Embed content for sovereign clouds"
         href: developer/embed-sample-for-customers-sovereign-clouds.md
     - name: Concepts
-      items: 
-      - name: "Row-level security (RLS)"
+      items:
+      - name: "Performance best practices"
+        href: developer/embedded-performance-best-practices.md
+      - name: "Service principal"
+        href: developer/embed-service-principal.md
+      - name: "Row-level security"
         href: developer/embedded-row-level-security.md
+      - name: "Manage multi-tenants"
+        href: developer/embed-multi-tenancy.md
       - name: "Azure diagnostic logging for Power BI Embedded"
         href: developer/azure-pbie-diag-logs.md
-      - name: "FAQ"
+      - name: "Embedding FAQ"
         href: developer/embedded-faq.md
       - name: "Power BI permissions"
         href: developer/power-bi-permissions.md 
     - name: How to
       items: 
-      - name: "How to embed from an app"
+      - name: "Embed from an app"
         href: developer/embed-from-apps.md
       - name: "Create an Azure Active Directory tenant"
         href: developer/create-an-azure-active-directory-tenant.md
       - name: "Register an application"
         href: developer/register-app.md
-      - name: "Authenticate to Power BI service"
+      - name: "Get an Azure AD access token"
         href: developer/get-azuread-access-token.md
       - name: "Embedding Q&A"
         href: developer/qanda.md
-      - name: "Troubleshooting your embedded application"
-        href: developer/embedded-troubleshoot.md
       - name: Manage capacities in Azure
         items:
         - name: Create a capacity in Azure
@@ -1291,6 +1389,10 @@
           href: developer/azure-pbie-scale-capacity.md
         - name: Pause and start a capacity in Azure
           href: developer/azure-pbie-pause-start.md
+      - name: Troubleshoot
+        items:
+        - name: "Troubleshoot your embedded application"
+          href: developer/embedded-troubleshoot.md
       - name: Migrate from Workspace Collections
         items:
         - name: "How to migrate from Power BI Workspace Collections"
@@ -1333,18 +1435,26 @@
         href: https://go.microsoft.com/fwlink/?linkid=848280
       - name: "Stack Overflow"
         href: https://go.microsoft.com/fwlink/?linkid=848281
-  - name: Develop Custom Visuals
+  - name: Custom Visuals
     items:
     - name: Overview
       items: 
-      - name: "Adding Custom visuals into Power BI"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/
+      - name: "Custom visuals in Power BI"
+        href: power-bi-custom-visuals.md
     - name: Tutorials
       items:
       - name: "Developing a Power BI custom visual"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/
+        href: developer/custom-visual-develop-tutorial.md
+      - name: "Adding formatting options"
+        href: developer/custom-visual-develop-tutorial-format-options.md 
     - name: Concepts
       items:
+      - name: "Custom visuals for organizations in Power BI"
+        href: power-bi-custom-visuals-organization.md
+      - name: "Guidelines for Power BI visuals" 
+        href: developer/office-store-in-app-purchase-visual-guidelines.md
+      - name: "Custom visuals FAQ"
+        href: power-bi-custom-visuals-faq.md
       - name: "Using Capabilities"
         href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/
       - name: "Data View Mappings"
@@ -1360,7 +1470,13 @@
       - name: "Get a custom visual certified"
         href: power-bi-custom-visuals-certified.md
       - name: "Publish custom visuals to AppSource"
-        href: developer/office-store.md   
+        href: developer/office-store.md
+      - name: "Use R-powered custom visuals in Power BI"
+        href: desktop-r-powered-custom-visuals.md
+      - name: Troubleshoot
+        items:
+        - name: "Troubleshoot developing custom visuals"
+          href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
       items: 
       - name: "APIs"
@@ -1369,8 +1485,6 @@
       items:
       - name: "Dev Center"
         href: https://powerbi.microsoft.com/developers/
-      - name: "Create a custom visual with the Developer Tools"
-        href: service-custom-visuals-getting-started-with-developer-tools.md      
       - name: "Samples"
         href: https://microsoft.github.io/PowerBI-visuals/samples/
       - name: "Custom Visuals Git Repo"
@@ -1409,6 +1523,8 @@
         href: developer/walkthrough-push-data-get-datasets.md
       - name: "Add rows to a table"
         href: developer/walkthrough-push-data-add-rows.md
+      - name: "Encrypt credentials"
+        href: developer/encrypt-credentials.md
     - name: Reference
       items:
       - name: "REST APIs"
@@ -1485,11 +1601,15 @@
         href: report-server/quickstart-create-powerbi-report.md
       - name: "Manage content in the report server"
         href: report-server/getting-around.md
+      - name: "Row-level security (RLS) in the report server"
+        href: report-server/row-level-security-report-server.md
       - name: "Create a paginated report for a report server"
         href: report-server/quickstart-create-paginated-report.md
+      - name: "Enter data directly in a paginated report"
+        href: paginated-reports-enter-data.md
       - name: "Work with KPIs"
         href: https://go.microsoft.com/fwlink/?linkid=849021
-      - name: "Access shared datasets as OData feeds "
+      - name: "Access shared datasets as OData feeds"
         href: report-server/access-dataset-odata.md
       - name: "Configure scheduled refresh"
         href: report-server/configure-scheduled-refresh.md
@@ -1561,8 +1681,16 @@
       href: service-gateway-enterprise-manage-scheduled-refresh.md
     - name: "Merge on-premises and cloud data sources"
       href: service-gateway-mashup-on-premises-cloud.md
-    - name: "Use Kerberos for single sign-on (SSO)"
-      href: service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md
+    - name: "Enable single sign-on (SSO)"
+      items:
+      - name: "Single sign-on (SSO) - overview"
+        href: service-gateway-sso-overview.md
+      - name: "Single sign-on (SSO) - Kerberos"
+        href: service-gateway-sso-kerberos.md
+      - name: "Single sign-on (SSO) - Kerberos - resource-based"
+        href: service-gateway-sso-kerberos-resource.md
+      - name: "Single sign-on (SSO) - SAML"
+        href: service-gateway-sso-saml.md
     - name: "Configuring proxy settings"
       href: service-gateway-proxy.md
     - name: "High availability clusters for on-premises data gateway"
@@ -1595,8 +1723,12 @@
         href: service-admin-premium-purchase.md
       - name: "Manage Power BI Premium"
         href: service-admin-premium-manage.md
-      - name: "Power BI Premium monitor capacity report"
+      - name: "Monitor capacities with the app"
         href: service-admin-premium-monitor-capacity.md
+      - name: "Monitor capacities in the Admin portal"
+        href: service-admin-premium-monitor-portal.md
+      - name: "Restart a Premium capacity"
+        href: service-admin-premium-restart.md
       - name: "Support for large datasets"
         href: service-premium-large-datasets.md
       - name: "Incremental refresh"
@@ -1605,16 +1737,14 @@
         href: service-admin-premium-multi-geo.md
       - name: "Power BI Premium FAQ"
         href: service-premium-faq.md
-      - name: "Power BI Premium release notes"
-        href: service-premium-release-notes.md
     - name: "Administration role in Office 365"
       href: service-admin-role.md
     - name: "Frequently asked questions (FAQ)"
       href: service-admin-faq.md
+    - name: "High availability and failover FAQ"
+      href: service-admin-failover.md
   - name: How to
     items: 
-    - name: "Power BI admin portal"
-      href: service-admin-portal.md
     - name: "Licensing and sign-up"
       items:
       - name: "Licensing for your organization"
@@ -1650,13 +1780,13 @@
     - name: "PowerShell, REST APIs, and .NET SDK"
       href: service-admin-reference.md
     - name: "Power BI cmdlets for PowerShell"
-      href: https://docs.microsoft.com/en-us/powershell/power-bi/
+      href: https://docs.microsoft.com/powershell/power-bi/
       maintainContext: true
+    - name: Service URL reference
+      href: power-bi-whitelist-urls.md
   - name: Resources
     items: 
     - name: "Power BI governance and deployment approaches"
       href: service-admin-governance.md
     - name: "Power BI security"
       href: service-admin-power-bi-security.md
-    - name: "Power BI for Office 365 is transitioned to Power BI"
-      href: service-admin-o365portal-retired.md

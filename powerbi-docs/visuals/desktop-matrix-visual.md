@@ -1,29 +1,27 @@
 ---
-title: Use the matrix visual in Power BI Desktop
-description: Learn how the matrix visual enables step layouts and granular highlighting in Power BI Desktop
+title: Use the matrix visual in Power BI
+description: Learn how the matrix visual enables step layouts and granular highlighting in Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/11/2018
+ms.date: 12/05/2018
 ms.author: mihart
 
 LocalizationGroup: Create reports
 ---
-# Use the Matrix visual in Power BI Desktop
-With the **Matrix** visual feature, you can create matrix visuals (sometimes also referred to as *tables*) in **Power BI Desktop** reports and cross-highlight elements within the matrix with other visuals. In addition, you can select rows, columns, and even individual cells and cross-highlight. Lastly, to make better use of layout space, the matrix visual supports a stepped layout.
+# Use the Matrix visual in Power BI
+With the **Matrix** visual feature, you can create matrix visuals (sometimes also referred to as *tables*) in **Power BI Desktop** and **Power BI service** reports and cross-highlight elements within the matrix with other visuals. In addition, you can select rows, columns, and even individual cells and cross-highlight. Individual cells and multiple cell selections can by copied and pasted into other applications. Lastly, to make better use of layout space, the matrix visual supports a stepped layout.
 
 ![](media/desktop-matrix-visual/matrix-visual_2a.png)
 
 There are many features associated with the matrix, and we'll go through them in the following sections of this article.
 
-> [!NOTE]
-> Beginning with the July 2017 release of **Power BI Desktop**, matrix and table visuals reflect styling (including colors) from the applied **Report Theme**. These may not be the colors you expect for your matrix visual, which you can change in your **Report Theme** configuration. For more information, see [**Use Report Themes in Power BI Desktop**](../desktop-report-themes.md) for more information about themes.
-> 
-> 
+## Report themes
+Both matrix and table visuals reflect styling (including colors) from the applied **Report Theme**. These may not be the colors you expect for your matrix visual, which you can change in your **Report Theme** configuration. For more information, see [**Use Report Themes in Power BI Desktop**](../desktop-report-themes.md) for more information about themes.
 
 ## Understanding how Power BI calculates totals
 
@@ -37,7 +35,25 @@ In this example, each row in the **Matrix** visual farthest to the right is show
 
 When looking at total and subtotals, remember that those values are based on the underlying data, and not solely based on the visible values. 
 
+<!-- use Nov blog post video
 
+## Expanding and collapsing row headers
+There are two ways you can expand row headers. The first is through the right-click menu. You’ll see options to expand the specific row header you clicked on, the entire level or everything down to the very last level of the hierarchy. You have similar options for collapsing row headers as well.
+
+![](media/desktop-matrix-visual/power-bi-expand1.png)
+
+You can also add +/- buttons to the row headers through the formatting pane under the row headers card. By default, the icons will match the formatting of the row header, but you can customize the icons’ color and size separately if you want. 
+Once the icons are turned on, they work similarly to the icons from PivotTables in Excel.
+
+![](media/desktop-matrix-visual/power-bi-expand2.png)
+
+The expansion state of the matrix will save with your report. It can be pinned to dashboards as well, but consumers will need to open up the report to change the state. Conditional formatting will only apply to the inner most visible level of the hierarchy. Note that this expand/collapse experience is not currently supported when connecting to AS servers older than 2016 or MD servers.
+
+![](media/desktop-matrix-visual/power-bi-expand3.png)
+
+Watch the following video to learn more about expand/collapse in the matrix:
+
+-->
 ## Using drill down with the Matrix visual
 With the **Matrix** visual, you can do all sorts of interesting drill down activities that weren't available before. This includes the ability to drill down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
 
@@ -130,6 +146,20 @@ With the **Matrix** visual, you can select any elements in the matrix as the bas
 In addition, using Ctrl+Click also works for cross-highlighting. For example, in the following image a collection of subcategories were selected from the **Matrix** visual. Notice how items that weren't selected from the visual are grayed out, and how the other visuals on the page reflect the selections made in the **Matrix** visual.
 
 ![](media/desktop-matrix-visual/matrix-visual_16.png)
+
+## Copying values from Power BI for use in other applications
+
+Your matrix or table may have content that you'd like to use in other applications, like Dynamics CRM, Excel, and even other Power BI reports. With the Power BI right-click, you can copy a single cell or a selection of cells onto your clipboard, and paste into the other application.
+
+![copy options](media/desktop-matrix-visual/power-bi-cell-copy.png)
+
+* To copy the value of a single cell, select the cell,  right-click, and choose **Copy value**. With the unformatted cell value on your clipboard, you can now paste it into another application.
+
+    ![copy options](media/desktop-matrix-visual/power-bi-copy.png)
+
+* To copy more than a single cell, select a range of cells or use CTRL to select one or more cells. The copy will include the column and row headers.
+
+    ![paste into Excel](media/desktop-matrix-visual/power-bi-copy-selection.png)
 
 ## Shading and font colors with matrix visuals
 With the **Matrix** visual, you can apply **Conditional formatting** (colors and shading) to the background of cells within the matrix, and you can apply conditional formatting to the text and values themselves.

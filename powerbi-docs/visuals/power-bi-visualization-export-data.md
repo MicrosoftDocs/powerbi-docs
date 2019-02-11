@@ -7,15 +7,15 @@ ms.reviewer: ''
 featuredvideoid: jtlLGRKBvXY
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 12/26/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
 # Export data from visualizations
-If you'd like to see the data that is used to create a visualization, you can display that data in Power BI or export that data to Excel as an .xlsx or .csv file.   
+If you'd like to see the data that is used to create a visualization, [you can display that data in Power BI](service-reports-show-data.md) or export that data to Excel as an .xlsx or .csv file. The option to export the data requires a Pro or Premium license and edit permissions to the dataset and report. 
 
 Watch Will export the data from one of the visualizations in his report, save it as an .xlsx file, and open it in Excel. Then follow the step-by-step instructions below the video to try it out yourself.
 
@@ -34,7 +34,7 @@ Watch Will export the data from one of the visualizations in his report, save it
     ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
 
 ## From a visualization in a report
-To follow along, open the [Procurement analysis sample report](../sample-procurement.md) in [Editing view](../consumer/end-user-reading-view.md). [Add a new blank report page](../power-bi-report-add-page.md). Then follow the steps below to add an aggregation and a visualization-level filter.
+To follow along, open the [Procurement analysis sample report](../sample-procurement.md) in Editing view. Add a new blank report page. Then follow the steps below to add an aggregation and a visualization-level filter.
 
 1. Create a new column chart.  From the Fields pane, select **Location > City** and **Invoice > Discount Percent**.  You may have to move **Discount Percent** into the Value well. 
 
@@ -51,8 +51,7 @@ To follow along, open the [Procurement analysis sample report](../sample-procure
 4. Select the ellipses in the top right corner of the visualization. Choose  **Export data**.
 
    ![](media/power-bi-visualization-export-data/power-bi-export-data2.png)
-5. In Power BI online, if your visualization has an aggregate (one example would be if you changed **Count** to *average*, *sum* or *minimum*),  you'll have two options: **Summarized data** and **Underlying data**. In Power BI Desktop, you'll only have the option for **Summarized data** For help understanding aggregates, see [Aggregates in Power BI](../service-aggregates.md).
-
+5. In Power BI online, if your visualization has an aggregate (one example would be if you changed **Count** to *average*, *sum* or *minimum*),  you'll have two options: **Summarized data** and **Underlying data**. In Power BI Desktop, you'll only have the option for **Summarized data**. For help understanding aggregates, see [Aggregates in Power BI](../service-aggregates.md).
     ![](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 6. Select **Summarized data** > **Export** and choose either .xlsx or .csv. Power BI exports the data.  If you have applied filters to the visualization, the exported data will export as filtered. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
 
@@ -80,12 +79,35 @@ What you see when you select **Underlying data** can vary. Understanding these d
 | Visual contains |                                                                              What you'll see in export                                                                              |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   Aggregates    |                                                 the *first* aggregate and non-hidden data from the entire table for that aggregate                                                  |
-|   Aggregates    | related data - if the visual uses data from other data tables that are  *\*\*related*\* to the data table that contains the aggregate (as long as that relationship is \*:1 or 1:1) |
+|   Aggregates    | related data - if the visual uses data from other data tables that are  *related* to the data table that contains the aggregate (as long as that relationship is \*:1 or 1:1) |
 |    Measures     |                                      All measures in the visual *and* all measures from any data table containing a measure used in the visual                                      |
 |    Measures     |                                       All non-hidden data from tables that contain that measure (as long as that relationship is \*:1 or 1:1)                                       |
 |    Measures     |                                      All data from all tables that are related to table(s) containing the measures via a chain of \*:1 of 1:1)                                      |
 |  Measures only  |                                                   All non-hidden columns from all related tables (in order to expand the measure)                                                   |
 |  Measures only  |                                                             Summarized data for any duplicate rows for model measures.                                                              |
+
+### Set the export options
+Power BI report designers control the types of data export options that are available for their consumers. The choices are:
+- Allow export of only summarized data (this is the default for new reports) 
+- Allow exporting of summarized and underlying data (this was the default prior to October 2018) 
+- Don't allow exporting of any data  
+
+    > [!IMPORTANT]
+    > We recommend that report designers revisit old reports and manually reset the export option as needed.
+
+1. To set these options, start in Power BI Desktop.
+
+2. From the upper left corner, select **File** > **Options and Settings** > **Options**. 
+
+3. Under **Current file** select **Report settings**.
+
+    ![desktop report settings](media/power-bi-visualization-export-data/desktop-report-settings.png)
+
+4. Make your selection from the **Export data** dropdown.
+
+You can also update this setting in Power BI service.  
+
+It is important to note that if the Power BI admin portal settings conflict with the report settings for export data, the admin settings will override the export data settings. 
 
 ## Limitations and considerations
 * The maximum number of rows that can be exported from **Power BI Desktop** and **Power BI service** to .csv is 30,000.
@@ -103,9 +125,6 @@ What you see when you select **Underlying data** can vary. Understanding these d
   2. From the **Data** tab, select **Get external data** > **From text**.
 * Power BI admins have the ability to disable the export of data.
 
-## Next steps
-[Dashboards in Power BI](../consumer/end-user-dashboards.md)  
-[Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

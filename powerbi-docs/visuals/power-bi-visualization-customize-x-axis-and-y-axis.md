@@ -7,9 +7,9 @@ ms.reviewer: ''
 featuredvideoid: 9DeAKM4SNJM
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 11/06/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -82,30 +82,33 @@ First you'll create a Combo chart that looks at the impact store count has on sa
 
     ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-line-chart.png)
 
-> [NOTE]: For help sorting by month, see [sorting by other criteria](../consumer/end-user-change-sort.md#other)
-> 1. In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
-> 2. Add **This Year Sales > Value** and **Last Year Sales** to the line chart. The scale of **GM% Last Year** (the blue line running along the 0M% gridline) is much smaller than the scale of **Sales** which makes it difficult to compare. And the Y-Axis label percentages are ridiculous.      
+    > [NOTE]: For help sorting by month, see [sorting by other criteria](../consumer/end-user-change-sort.md#other)
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
+    In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
+     
+3. Add **This Year Sales > Value** and **Last Year Sales** to the line chart. The scale of **GM% Last Year** (the blue line running along the 0M% gridline) is much smaller than the scale of **Sales** which makes it difficult to compare. And the Y-Axis label percentages are ridiculous.      
+
+    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
+
 5. To make the visual easier to read and interpret, convert the line chart to a Line and Stacked Column chart.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/converttocombo_new.png)
 
 6. Drag **Gross Margin Last Year %** from **Column Values** into **Line Values**. What we have now is the stacked column chart we created above ***plus*** a line chart.  (Optionally, use what you learned above to format the axes font color and size.)
    
-
    Power BI creates two axes, thus allowing the datasets to be scaled differently; the left measures dollars and the right measures percentage.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes-new.png)
 
 ### Format the secondary Y-axis
-1. In the **Visualizations** pane, select the paint roller icon to display the formatting options.
-2. Expand the Y-Axis options by selecting the down arrow.
-3. Scroll through the list until you find the options for **Show secondary**. Toggle **Show Secondary** from **Off** to **On**.
+1. In the **Visualizations** pane, select the paint roller icon to display the formatting options.    
+2. Expand the Y-Axis options by selecting the down arrow.    
+3. Scroll through the list until you find the options for **Show secondary**. Toggle **Show Secondary** from **Off** to **On**.    
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/combo3.png)
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes.png)
+
 4. (Optional) Customize the two axes. If you switch **Position** for either the column axis or the line axis, then the two axes switch sides.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axes-options.png)
@@ -116,7 +119,7 @@ With a visualization this complicated, it helps to add axes titles.  Titles help
 1. Toggle **Title** to **On** for **Y-Axis (Column)** and the **Y-Axis (Line)**.
 2. Set **Style** to **Show title only**.
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/yaxissettings.png)
+   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/yaxissettings.png)    
 3. Your Combo chart now displays dual axes, both with titles.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo-chart.png)

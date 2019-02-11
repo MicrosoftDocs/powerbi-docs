@@ -1,14 +1,14 @@
 ---
 title: Multi-Geo support for Power BI Premium (Preview)
 description: Learn how you can deploy content to datacenters in regions other than the home region of the Power BI tenant.  
-author: maggiesMSFT
-ms.author: maggies
+author: minewiskan
+ms.author: owend
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/31/2018
+ms.date: 02/05/2019
 LocalizationGroup: Premium 
 ---
 
@@ -35,7 +35,7 @@ Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo su
 For new capacities, enable Multi-Geo by selecting a region other than the default region from the dropdown.  Each available capacity shows the region where it's currently located, such as **West Central US**.
 
 ![Capacity size: select a region. Power BI Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-capacity-size.png)
-  
+
 After you've created capacity, it remains in that region, and any workspaces created will have their content stored in that region. You can migrate workspaces from one region to another through the dropdown on the workspace settings screen.
 
 ![Edit workspace: Choose an available capacity. Power BI Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
@@ -78,7 +78,7 @@ If you need to change the region for existing content, you have two options.
 
 ## Move content out of Multi-Geo  
 
-You can take workspaces out of Multi-Geo capacity one of two ways:
+You can take workspaces out of Multi-Geo capacity in one of two ways:
 
 - Delete the current capacity where the workspace is located.  This moves the workspace back to shared capacity in the home region.
 - Migrate individual workspaces back to Premium capacity located in the home tenant.
@@ -86,12 +86,10 @@ You can take workspaces out of Multi-Geo capacity one of two ways:
 ## Limitations and considerations
 
 - Confirm that any movement you initiate between regions follows all corporate and government compliance requirements prior to initiating data transfer.
-
 - A cached query stored in a remote region stays in that region at rest. However, other data in transit may go back and forth between multiple geographies.
-
 - When moving data from one region to another in a Multi-Geo environment, the source data may remain in the region from which the data was moved for up to 30 days. During that time end users don't have access to it. It's removed from this region and destroyed during the 30-day period.
-
 - Multi-Geo doesn't result in better performance in general. Loading reports and dashboards still involves requests to the home region for metadata.
+- The [dataflows](service-dataflows-overview.md) feature (in preview) is not supported on Multi-GEO at this time.
 
 ## Next steps
 

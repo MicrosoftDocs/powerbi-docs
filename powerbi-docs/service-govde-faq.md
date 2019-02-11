@@ -1,14 +1,15 @@
 ---
-title: Frequently Asked Questions for Power BI for German government customers
+title: Frequently Asked Questions for German government customers
 description: For German government customers, answers to common questions for the Power BI German government service
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -17,6 +18,8 @@ LocalizationGroup: Get started
 The **Power BI service** has a version available for European Union/European Free Trade Agreement (EU/EFTA) customers, often referred to as Microsoft Cloud Deutschland (MCD). The **Power BI service** version discussed in this article is specific to EU/EFTA customers, and is separate and different from the commercial version of the **Power BI service**, or Power BI services provided to government customers.
 
 ![](media/service-govde-faq/govde-faq_01.png)
+
+## Questions and answers
 
 The following questions and answers provide important information for Power BI Pro Service in Microsoft Cloud Deutschland (MCD), which is the Power BI service cloud specifically provided for EU/EFTA customers.
 
@@ -64,7 +67,7 @@ The following questions and answers provide important information for Power BI P
 | Azure Portal (For Embedded) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
 | Community |[https://community.powerbi.com/](https://community.powerbi.com/) |[https://community.powerbi.com/](https://community.powerbi.com/) |
 
-### Next steps
+## Next steps
 There are all sorts of things you can do with Power BI. For more information and learning, including an article that shows you how to sign up for the service, check out the following resources:
 
 * [Guided Learning for Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)

@@ -6,9 +6,9 @@ manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 01/29/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -78,6 +78,11 @@ For more information, see [Funnel Charts in Power BI](power-bi-visualization-fun
 
 For more information, see [Gauge Charts in Power BI](power-bi-visualization-radial-gauge-charts.md).
 
+<!-- ### Key influencers chart
+![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers2.png)
+
+A key influencer chart displays the major contributors to a selected result or value. -->
+
 ### KPIs
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
 
@@ -103,7 +108,7 @@ For more information, see [Tips and tricks for map visuals](power-bi-map-tips-an
 ### Maps: ArcGIS maps
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
-For more information, see [ArcGIS maps in Power BI](../power-bi-visualization-arcgis.md).
+For more information, see [ArcGIS maps in Power BI](power-bi-visualization-arcgis.md).
 
 ### Maps: Filled maps (Choropleth)
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
@@ -125,10 +130,17 @@ For more information, see [Shape Maps in Power BI](desktop-shape-map.md).
 ### Matrix
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
 
-For more information, see [Matrix visuals in Power BI](desktop-shape-map.md).
+For more information, see [Matrix visuals in Power BI](desktop-matrix-visual.md).
 
 ### Pie charts
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)
+
+Pie charts show the relationship of parts to a whole. 
+
+### Ribbon chart
+![ribbon chart](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-ribbon.png)
+
+Ribbon charts show which data category has the highest rank (largest value). Ribbon charts are effective at showing rank change, with the highest range (value) always displayed on top for each time period.
 
 ### Scatter and Bubble charts
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bubble.png)

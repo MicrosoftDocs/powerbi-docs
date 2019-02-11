@@ -2,18 +2,18 @@
 title: Power BI REST API limitations
 description: The Power BI REST API has the following limitations
 author: markingmyname
-manager: kfile
 ms.author: maghan
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
 ---
 
 # Power BI REST API limitations  
   
-**To POST Rows**  
+**To POST Rows**
   
 * 75 max columns
 * 75 max tables
@@ -21,8 +21,8 @@ ms.date: 06/08/2018
 * 1,000,000 rows added per hour per dataset  
 * 5 max pending POST rows requests per dataset  
 * 120 POST rows requests per minute per dataset
-* If table has 250,000 or more rows, 120 POST rows requests per hour per dataset    
-* 200,000 max rows stored per table in FIFO dataset  
+* If table has 250,000 or more rows, 120 POST rows requests per hour per dataset
+* 200,000 max rows stored per table in FIFO dataset
 * 5,000,000 max rows stored per table in ‘none retention policy’ dataset  
 * 4,000 characters per value for string column in POST rows operation
   

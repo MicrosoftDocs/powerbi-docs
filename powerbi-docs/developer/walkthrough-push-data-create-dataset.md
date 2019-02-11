@@ -2,16 +2,15 @@
 title: Create a dataset
 description: Walkthrough - Push data into a dataset - Create a dataset in Power BI
 author: markingmyname
-manager: kfile
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.component: powerbi-developer
-ms.topic: conceptual
-ms.date: 08/10/2017
 ms.author: maghan
-
+manager: kfile
+ms.reviewer: madia
+ms.service: powerbi
+ms.subservice: powerbi-developer
+ms.topic: conceptual
+ms.date: 02/05/2019
 ---
+
 # Step 3: Create a dataset in Power BI
 This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 
@@ -149,7 +148,7 @@ Below is the [complete code listing](#code).
                 string resourceUri = "https://analysis.windows.net/powerbi/api";
 
                 //OAuth2 authority Uri
-                string authorityUri = "https://login.windows.net/common/oauth2/authorize";
+                string authorityUri = "https://login.microsoftonline.net/common/";
 
                 //Get access token:
                 // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken

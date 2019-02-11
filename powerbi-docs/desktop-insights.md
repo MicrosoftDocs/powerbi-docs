@@ -1,14 +1,15 @@
 ---
-title: Use insights in Power BI Desktop to explain increases and decreases in visuals (Preview)
+title: Use insights to explain increases and decreases in visuals (Preview)
 description: Easily gain insights to increases or decreases in Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -32,7 +33,7 @@ The insights feature is contextual, and is based on the immediately previous dat
 
 
 ## Using insights
-To use insights to explain increaes or decreases seen on charts, just right-click on any data point in a bar or line chart, and select **Analyze > Explain the increase** (or *Explain the decrease*, since all insights are based on the change from the previous data point).
+To use insights to explain increases or decreases seen on charts, just right-click on any data point in a bar or line chart, and select **Analyze > Explain the increase** (or *Explain the decrease*, since all insights are based on the change from the previous data point).
 
 ![Show insights menu](media/desktop-insights/insights_02.png)
 
@@ -109,7 +110,6 @@ The following list is the collection of currently unsupported scenarios for **ex
 * TopN filters
 * Include/exclude filters
 * Measure filters
-* Non-additive measures and aggregates
 * Non-numeric measures
 * Use of "Show value as"
 * Filtered measures - filtered measures are visual level calculations with a specific filter applied (for example, *Total Sales for France*), and are used on some of hte visuals created by the insights feature

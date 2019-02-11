@@ -6,28 +6,47 @@ ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/16/2018
+ms.date: 01/22/2019
 ---
 
 # What's new in Power BI Report Server
 
 Learn about what's new in Power BI Report Server. This article covers the major feature areas and is updated as new items are released.
 
-To download Power BI Report Server, and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
-
-Also check these sources to keep up-to-date on new features in Power BI Report Server.
-
-* [Microsoft Power BI Blog](https://powerbi.microsoft.com/blog/)
-* [SQL Server Reporting Services Team Blog](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
-* The [Guy in a Cube YouTube channel](https://aka.ms/guyinacube)
+To download the latest versions of Power BI Report Server and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
 For related Power BI "What's New" information, see:
 
 * [What's new in the Power BI service](../service-whats-new.md)
 * [What's new in Power BI Desktop](../desktop-latest-update.md)
 * [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## January 2019
+
+Support for these features in Power BI reports:
+
+[**Row-level security**](row-level-security-report-server.md) Setting up row-level security (RLS) with Power BI Report Server can restrict data access for given users. Filters restrict data access at the row level, and you can define filters within roles.
+
+[**Expand and collapse on matrix row headers**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse) We've added the ability to expand and collapse individual row headers, one of the most requested visual features.
+
+[**Copy and paste between .pbix files**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) You can copy visuals between .pbix files, either from the visual’s context menu or with the standard Ctrl+C keyboard shortcut, and paste it into another report with Ctrl+V.
+
+[**Smart alignment guides**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) You see smart alignment guides when moving objects on your report page, like you see in PowerPoint, to help you align everything on your page. You see the smart guides any time you drag or resize something on your page. When you move an object near another one, it snaps into a position aligned with the other object.
+
+**Accessibility features**
+Too many accessibility features to list: for example, [fields list pane accessibility support](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). The fields list pane is fully accessible. You can navigate around the pane using just your keyboard and a screen reader and use the context menu to add fields to your report page.
+
+### Administrator settings
+
+Administrators can set the following properties in SSMS Advanced Properties for the server farm:
+
+**AllowedResourceExtensionsForUpload** 
+Set extensions of resources that can be uploaded to the report server. Extensions for built-in file types like &ast;.rdl and &ast;.pbix are not required to be included. Default is “&ast;, &ast;.xml, &ast;.xsd, &ast;.xsl, &ast;.png, &ast;.gif, &ast;.jpg, &ast;.tif, &ast;.jpeg, &ast;.tiff, &ast;.bmp, &ast;.pdf, &ast;.svg, &ast;.rtf, &ast;.txt, &ast;.doc, &ast;.docx, &ast;.pps, &ast;.ppt, &ast;.pptx”. 
+
+**SupportedHyperlinkSchemes**
+Sets a comma-separated list of the URI schemes allowed to be defined on Hyperlink actions that are allowed to be rendered or “&ast;” to enable all hyperlink schemes. For example, setting “http,https” would allow hyperlinks to “https://www. contoso.com”, but would remove hyperlinks to “mailto:bill@contoso.com” or “javascript:window.open(‘www.contoso.com’, ‘_blank’)”. Default is “&ast;”.
 
 ## August 2018
 
@@ -320,10 +339,10 @@ Power BI Report Server now supports the new Power BI table and matrix visuals. T
 
 ## Next steps
 
-[What is Power BI Report Server?](get-started.md) 
-[Administrator handbook](admin-handbook-overview.md)  
-[Install Power BI Report Server](install-report-server.md)  
-[Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
-[Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+Check these sources to keep up-to-date on new features in Power BI Report Server.
+
+* [Microsoft Power BI Blog](https://powerbi.microsoft.com/blog/)
+* [SQL Server Reporting Services Team Blog](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
+* The [Guy in a Cube YouTube channel](https://aka.ms/guyinacube)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
