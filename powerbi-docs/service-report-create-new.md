@@ -52,7 +52,7 @@ Now that our dataset is imported, let's start answering some questions.  Our Chi
 1. In the Fields pane, select **Sales** > **This Year Sales** > **Value**.
    
     ![bar chart in report editor](media/service-report-create-new/power-bi-report-step1.png)
-2. Convert the visual to a Gauge by selecting the Gauge template ![Gauge icon](media/service-report-create-new/powerbi-gauge-icon.png) from the **VIsualizations** pane.
+2. Convert the visual to a Gauge by selecting the Gauge template ![Gauge icon](media/service-report-create-new/powerbi-gauge-icon.png) from the **Visualizations** pane.
    
     ![Gauge visual in report editor](media/service-report-create-new/power-bi-report-step2.png)
 3. Drag **Sales** > **This Year Sales** > **Goal** to the **Target value** well. Looks like we're very close to our goal.
@@ -69,7 +69,7 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
 2. Deselect the gauge. In the Fields pane, select **Sales** > **This Year Sales** > **Value** and select **Sales** > **Last Year Sales**.
    
     ![report editor with Gauge and bar chart](media/service-report-create-new/power-bi-report-step4.png)
-3. Convert the visual to an Area chart by selecting the Area chart template ![chart icon](media/service-report-create-new/power-bi-areachart-icon.png) from the **VIsualizations** pane.
+3. Convert the visual to an Area chart by selecting the Area chart template ![chart icon](media/service-report-create-new/power-bi-areachart-icon.png) from the **Visualizations** pane.
 4. Select **Time** > **Period** to add it to the **Axis** well.
    
     ![report editor with Area chart active](media/service-report-create-new/power-bi-report-step5.png)
