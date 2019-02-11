@@ -14,7 +14,7 @@ ms.author: maggies
 LocalizationGroup: Dashboards
 ---
 # Pin a tile from one dashboard to another dashboard
-﻿One way to add a new [dashboard tile](consumer/end-user-tiles.md) is by copying it from another dashboard. Each of these tiles, when clicked, is a link back to where it was created -- either in Q&A or a report. 
+One way to add a new [dashboard tile](consumer/end-user-tiles.md) is by copying it from another dashboard. Each of these tiles, when clicked, is a link back to where it was created -- either in Q&A or a report. 
 
 > [!NOTE]
 > You cannot pin tiles from shared dashboards.
@@ -24,7 +24,7 @@ LocalizationGroup: Dashboards
 2. Open a [dashboard](consumer/end-user-dashboards.md).
 3. Hover over the tile you want to pin, select the ellipses (...) and choose **Pin tile**.  
    
-   ![eellipses menu](media/service-pin-tile-to-another-dashboard/power-bi-pin-another-dash.png)
+   ![ellipses menu](media/service-pin-tile-to-another-dashboard/power-bi-pin-another-dash.png)
 4. Pin the tile to an existing dashboard or to a new dashboard. 
    
    * **Existing dashboard**: select the name of the dashboard from the dropdown.
