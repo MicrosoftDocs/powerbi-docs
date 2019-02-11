@@ -1,5 +1,5 @@
 ---
-title: Power BI technical content contributors' guide Searh page curation guidance
+title: Power BI technical content contributors' guide Search page curation guidance
 description: SEO tips for powerbi.microsoft.com.
 metakeywords: ''
 services: ''
