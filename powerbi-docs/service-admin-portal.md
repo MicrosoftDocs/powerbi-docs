@@ -232,12 +232,17 @@ Users in the organization can use external search features that rely on Azure Se
 
 ## Custom visuals settings
 
-### Enable custom visuals for the entire organization
+### Add and use custom visuals
 
 Users in the organization can interact with and share custom visuals. [Learn more](power-bi-custom-visuals.md)
 
 > [!NOTE]
-> This setting applies to the entire organization and cannot be limited to specific groups.
+> This setting can be applied to the entire organization or can be limited to specific groups.
+
+### Allow only certified visuals
+
+Users in the organization who have been granted permissions to add and use custom visuals, denoted by the setting "Add and use custom visuals", will only be able to use [certified custom visuals](https://go.microsoft.com/fwlink/?linkid=2002010) (uncertified visuals will be blocked and will display an error message when used). 
+
 
 ## R visuals settings
 
