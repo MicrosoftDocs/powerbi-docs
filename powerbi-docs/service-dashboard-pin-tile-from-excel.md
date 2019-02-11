@@ -15,7 +15,7 @@ ms.author: maggies
 LocalizationGroup: Dashboards
 ---
 # Pin a tile to a Power BI dashboard from Excel
-Before you can pin a tile from your Excel workbook, you'll connect that workbook to Power BI service (app.powerbi.com). Connecting a workbook essentially brings a linked read-only version of that workbook into Power BI service and allows you to pin ranges to dahboards. You can even pin an entire worksheet to a dashboard.  
+Before you can pin a tile from your Excel workbook, you'll connect that workbook to Power BI service (app.powerbi.com). Connecting a workbook essentially brings a linked read-only version of that workbook into Power BI service and allows you to pin ranges to dashboards. You can even pin an entire worksheet to a dashboard.  
 If a workbook has been shared with you, you'll have the ability to view the tiles pinned by the owner, but not create any dashboard tiles yourself. 
 
 For in-depth information about how Excel and Power BI work together, see [Get data from Excel workbook files](http://go.microsoft.com/fwlink/?LinkID=521962).
