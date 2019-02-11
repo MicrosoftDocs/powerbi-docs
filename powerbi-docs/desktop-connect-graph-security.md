@@ -33,13 +33,13 @@ which you can also find in the [Azure portal](https://portal.azure.com):
    To grant consent for the connector, your Azure AD tenant 
    administrator can follow either these steps:
 
-   * [Grant tenant administrator consent for Azure AD applications](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent).
+   * [Grant tenant administrator consent for Azure AD applications](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent).
 
    * During your logic app's first run, your app can request consent 
    from your Azure AD tenant administrator through the 
    [application consent experience](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
    
-* The user account used to sign in to connect with the Microsoft Graph Security Power BI connector must be a member of the Security Reader Limited Admin role in Azure AD (either Security Reader or Security Administrator). Follow steps in section [Assign Azure AD roles to users](https://docs.microsoft.com/en-us/graph/security-authorization#assign-azure-ad-roles-to-users). 
+* The user account used to sign in to connect with the Microsoft Graph Security Power BI connector must be a member of the Security Reader Limited Admin role in Azure AD (either Security Reader or Security Administrator). Follow steps in section [Assign Azure AD roles to users](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users). 
 
 ## Using the Microsoft Graph Security connector
 
@@ -71,8 +71,8 @@ Follow these steps to use the **Microsoft Graph Security** connector:
 
     ![Nav Table](media/desktop-connect-graph-security/NavTable.PNG)
     
-9. If you would like to make an advanced query to the Microsoft Graph Security API, select the **Specify custom Microsoft Graph Security URL to filter results** function. This will allow you to make an [OData.Feed](https://docs.microsoft.com/en-us/power-bi/desktop-connect-odata) query to the Microsoft Graph Security API with the required permissions to access the API.
-    > **Note:**  The example serviceUri used below is `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'`. </br>Refer to the [Graph supported ODATA query parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to build queries to filter, order or retrieve recent most results.
+9. If you would like to make an advanced query to the Microsoft Graph Security API, select the **Specify custom Microsoft Graph Security URL to filter results** function. This will allow you to make an [OData.Feed](https://docs.microsoft.com/power-bi/desktop-connect-odata) query to the Microsoft Graph Security API with the required permissions to access the API.
+    > **Note:**  The example serviceUri used below is `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'`. </br>Refer to the [Graph supported ODATA query parameters](https://docs.microsoft.com/graph/query-parameters) to build queries to filter, order or retrieve recent most results.
 
     ![Odata Feed](media/desktop-connect-graph-security/ODataFeed.PNG)
     
