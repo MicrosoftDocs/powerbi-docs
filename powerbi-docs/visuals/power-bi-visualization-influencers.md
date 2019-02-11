@@ -30,14 +30,21 @@ The metric you are analyzing must be a categorical field.
 
 ![features numbererd](media/power-bi-visualization-influencers/power-bi-ki-numbers-new.png)    
 
-1. Tabs - select a tab to switch between views. Key influencers shows you the top contributors to the selected metric value. Top segments shows you the top segments that contribute to the selected metric value. A *segment* is made up of a combination of values.  For example, one segment may be consumers who have been customers for at least twenty years and live in the west region.
-2. Value of the metric being investigated. In this example we're looking at the metric **rating** and the value we've selected is **low**.
-3. Restatement - helps us interpret the visual in the left pane. 
-4. Left pane - the left pane contains one visual.  In this case, the left pane shows us a list of the top key influencers.
-5. Restatement - helps us interpret the visual in the right pane.
-6. Right pane - the right pane contains one visual. In this case, the column chart displays all the values for the **key influencer**, **Theme** that is selected in the left pane. The specific value (**Usability**) from the left pane is in green and all the other values for **Theme** are in black.
-7. Average line - the average is calculated for all the other possible values for **Theme** except **usability**. So the calculation applies to all the values in black. It tells us what percentage of the other **Themes** gave us a low rating. In other words, when a rating is given by a customer, that customer also describes the reason or **theme** for the rating. Some themes are usability, speed, security, etc. **Theme** is **Usability** is the second highest key influencer for a low rating, according to our visual in the left pane. If we average all the other themes, and their contribution to a rating of **low**, we get the result seen here in red. Of all the other themes given, only 11.35% of those are higher than **usability**. 
-8. Checkbox - only show values that are influencers.
+1. ***Tabs*** - select a tab to switch between views. Key influencers shows you the top contributors to the selected metric value. Top segments shows you the top segments that contribute to the selected metric value. A *segment* is made up of a combination of values.  For example, one segment may be consumers who have been customers for at least twenty years and live in the west region. 
+
+2. ***Dropdown*** - value of the metric being investigated. In this example we're looking at the metric **rating** and the value we've selected is **low**.    
+
+3. ***Restatement*** - helps us interpret the visual in the left pane. 
+
+4. ***Left pane*** - the left pane contains one visual.  In this case, the left pane shows us a list of the top key influencers.
+
+5. ***Restatement*** - helps us interpret the visual in the right pane.
+
+6. ***Right pane*** - the right pane contains one visual. In this case, the column chart displays all the values for the **key influencer**, **Theme** that is selected in the left pane. The specific value (**Usability**) from the left pane is in green and all the other values for **Theme** are in black.
+
+7. ***Average line*** - the average is calculated for all the other possible values for **Theme** except **usability**. So the calculation applies to all the values in black. It tells us what percentage of the other **Themes** gave us a low rating. In other words, when a rating is given by a customer, that customer also describes the reason or **theme** for the rating. Some themes are usability, speed, security, etc. **Theme** is **Usability** is the second highest key influencer for a low rating, according to our visual in the left pane. If we average all the other themes, and their contribution to a rating of **low**, we get the result seen here in red. Of all the other themes given, only 11.35% of those are higher than **usability**. 
+
+8. ***Checkbox*** - only show values that are influencers.
 
 ## Create a key influencers visual 
  
