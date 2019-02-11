@@ -123,7 +123,7 @@ In the rendered HTML on powerbi.microsoft.com, the HTML from the includes is mer
   ![](./media/custom-markdown-extensions/include.png)
 
 ## Embedded videos
-Our technical articles will support embeddeded videos in technical articles, details are TBD (Azure requires Channel 9, but we want to use YouTube).
+Our technical articles will support embedded videos in technical articles, details are TBD (Azure requires Channel 9, but we want to use YouTube).
 
 ## Technology and platform selectors
 > [!NOTE]
