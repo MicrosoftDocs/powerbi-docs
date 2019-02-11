@@ -2028,7 +2028,7 @@ The following features have been added in this update:
 
 -   Support for opening Recent Files in Start Page and "File -\> Open" menu.
 
--   Support for Exchange UPN Credentials in the Exchange connector.ï»¿
+-   Support for Exchange UPN Credentials in the Exchange connector.
 
 In addition to all these new features, we're also making **Power BI Desktop available in 42 different languages.** Get the full list of languages and install the one you want from [our official download page](https://www.microsoft.com/download/details.aspx?id=45331).
 
@@ -2058,7 +2058,7 @@ The following features have been added in this update:
 
 -   New Text Column Filters - **Does Not Begin With** and **Does Not End With**
 
--   Enhanced Privacy Levels dialogï»¿
+-   Enhanced Privacy Levels dialog
 
 Take a look at the following video for details:
 
