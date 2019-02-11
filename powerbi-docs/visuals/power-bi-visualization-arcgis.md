@@ -87,7 +87,7 @@ Watch Will create a few different ArcGIS map visualizations and then use the ste
 ## Settings and formatting for ArcGIS maps
 To access **ArcGIS Maps for Power BI** formatting features:
 
-1. Access additional features by selecting the ellipses in the top right corner of the visualization and choosing **Edit**,
+1. Access additional features by selecting the ellipsis in the top right corner of the visualization and choosing **Edit**.
    
    ![](media/power-bi-visualization-arcgis/power-bi-edit2.png)
    
@@ -171,7 +171,8 @@ The Drive time pane lets you select a location and then determine what other map
     ![](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
 
 1. Select the **Drive time** tab and choose the single or multi select tool. Single select the pin for Washington D.C.
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
+
+   ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
    
    > [!TIP]
    > It's easier to select a location if you zoom in on the map (using the + icon).
