@@ -1,5 +1,5 @@
 ---
-title: Key influencers visualizations Tutorial
+title: Key influencers visualizations tutorial
 description: Tutorial - create a key influencers visualization in Power BI
 author: mihart
 manager: kvivek
@@ -13,10 +13,10 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Key Influencers visualization
+# Key influencers visualization
 The key influencers visual helps you understand the factors that  drive a metric you are interested in. It analyzes your data, ranks the factors that matter, and displays them as key influencers. For example, you're interested in figuring out what influences employee turnover (churn). One factor may be employment contract length and another may be employee age. 
  
-## When to use Key influencers? 
+## When to use key influencers? 
 The key influencer visual is a great choice: 
 - To see which factors impact the metric being analyzed.
 
@@ -44,7 +44,7 @@ Watch this video to learn how to create a key influencers visual and then follow
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Our Product Manager wants to figure out which factors lead customers to leave negative reviews about our cloud service.  To follow along, open the [Customer Feedback PBIX file](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/Customer%20Feedback.pbix) in Power BI Desktop. You can also download the [Customer Feedback Excel file for Power BI service or Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/Customer%20Feedback.xlsx). 
+Our Product Manager wants to figure out which factors lead customers to leave negative reviews about our cloud service.  To follow along, open the [Customer Feedback PBIX file](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) in Power BI Desktop. You can also download the [Customer Feedback Excel file for Power BI service or Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
 
 > [!NOTE]
 > The Customer Feedback dataset is based on [Moro et al., 2014] S. Moro, P. Cortez and P. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. Decision Support Systems, Elsevier, 62:22-31, June 2014 
@@ -137,7 +137,7 @@ We are going to look at the count of IDs (so each customer row will have a count
 
 
 
-## Interpreting the results: Top Segments 
+## Interpreting the results: top segments 
  
 Whilst the ‘Key influencers’ tab allows users to assess each factor individually, users can switch over to ‘Top segments’ to see how a combination of factors impacts the metric they are analyzing. 
  
@@ -151,7 +151,7 @@ In this group, 74.3% have given a low rating. The average customer gives a low r
 
 ![select first top segment](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
 
-## Considerations and Troubleshooting 
+## Considerations and troubleshooting 
  
 **What are the limitations for preview?** 
  
