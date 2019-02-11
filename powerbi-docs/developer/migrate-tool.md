@@ -138,7 +138,7 @@ If you change the prefix, you will need to select **Generate Upload Plan**.
 
 You can right click on a group and choose to rename the group within the Upload plan directly, if desired.
 
-![Upload report ansd rename item](media/migrate-tool/migrate-tool-upload-report-rename-item.png)
+![Upload report and rename item](media/migrate-tool/migrate-tool-upload-report-rename-item.png)
 
 > [!NOTE]
 > The name of the *group* must not contain spaces or invalid characters.
@@ -184,7 +184,7 @@ After the workspace is created, you can move onto the **Upload** tab.
 
 On the **Upload** tab, this will upload the reports to the Power BI service. You will see a list of the reports that we downloaded on the Download tab along with the target group name based on your migration plan.
 
-![Uplaod Tab](media/migrate-tool/migrate-tool-upload-tab.png)
+![Upload Tab](media/migrate-tool/migrate-tool-upload-tab.png)
 
 You can upload selected reports, or you could upload all the reports. You can also reset the upload status to re-upload items.
 
@@ -202,7 +202,7 @@ You will need to close the migration tool to make the change and then re-open th
 
 In the above example, one of the cloned reports failed indicating a report with the same name existed. If we go look at the migration plan XML, we will see the following.
 
-```
+```xml
 <ReportMigrationData>
     <PaaSWorkspaceCollectionName>SampleWorkspaceCollection</PaaSWorkspaceCollectionName>
     <PaaSWorkspaceId>4c04147b-d8fc-478b-8dcb-bcf687149823</PaaSWorkspaceId>
@@ -224,7 +224,7 @@ In the above example, one of the cloned reports failed indicating a report with 
 
 For the failed item, we can change the name of the SaaSTargetReportName.
 
-```
+```xml
 <SaaSTargetReportName>cloned2</SaaSTargetReportName>
 ```
 
@@ -240,7 +240,7 @@ Going back to Power BI, we can see that the reports and datasets have been uploa
 
 You can upload a local version of a Power BI Desktop file. You will have to close the tool, edit the XML and put the full path to your local PBIX in the **PbixPath** property.
 
-```
+```xml
 <PbixPath>[Full Path to PBIX file]</PbixPath>
 ```
 
@@ -250,9 +250,9 @@ After you have edited the xml, re-open the plan within the migration tool and up
 
 ### DirectQuery reports
 
-You will need to update to update the connection string for DirectQuery reports. This can be done within *powerbi.com*, or you can programmatically query the connection string from Power BI Embedded (Paas). For an example, see [Extract DirectQuery connection string from PaaS report](migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
+You will need to update to update the connection string for DirectQuery reports. This can be done within *powerbi.com*, or you can programmatically query the connection string from Power BI Embedded (PaaS). For an example, see [Extract DirectQuery connection string from PaaS report](migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
 
-You can then update the connection string for the dataset within the Power BI service (Saas) and set the credentials for the data source. You can look at the following examples to see how to do this.
+You can then update the connection string for the dataset within the Power BI service (SaaS) and set the credentials for the data source. You can look at the following examples to see how to do this.
 
 * [Update DirectQuery connection string is SaaS workspace](migrate-code-snippets.md#update-directquery-connection-string-is-saas-workspace)
 * [Set DirectQuery credentials in SaaS workspace](migrate-code-snippets.md#set-directquery-credentials-in-saas-workspace)
