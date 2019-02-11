@@ -1,6 +1,6 @@
 ---
 title: Use insights to find where distribution is different (Preview)
-description: Easily gain insights to find where a distirubtion seen in a chart is different in Power BI Desktop
+description: Easily gain insights to find where a distribution seen in a chart is different in Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -34,7 +34,7 @@ In this example, the automated analysis quickly shows that for *Touring Bikes*, 
 > 
 
 ## Using insights
-To use insights to find where distirbutions seen on charts are differet, just right-click on any data point (or on the visual as a whole), and select **Analyze > Find where the distribution is different**.
+To use insights to find where distributions seen on charts are different, just right-click on any data point (or on the visual as a whole), and select **Analyze > Find where the distribution is different**.
 
 ![Right-click to get insights](media/desktop-insights-find-where-different/find-where-different_03.png)
 
@@ -127,7 +127,7 @@ The following list is the collection of currently unsupported scenarios for **in
 * Measure filters
 * Non-numeric measures
 * Use of "Show value as"
-* Filtered measures - filtered measures are visual level calculations with a specific filter applied (for example, *Total Sales for France*), and are used on some of hte visuals created by the insights feature
+* Filtered measures - filtered measures are visual level calculations with a specific filter applied (for example, *Total Sales for France*), and are used on some of the visuals created by the insights feature
 
 In addition, the following model types and data sources are currently not supported for insights:
 
