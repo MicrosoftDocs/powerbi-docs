@@ -390,8 +390,6 @@
           href: service-url-filters.md
         - name: "Best practices for building fast and reliable reports in Power BI"
           href: power-bi-reports-performance.md  
-        - name: "Interact with ArcGIS maps in Power BI"
-          href: visuals/power-bi-visualizations-arcgis.md
       - name: Data from files
         items: 
         - name: "From Excel workbook to stunning report in no time"
@@ -759,6 +757,8 @@
         href: desktop-see-data-see-records.md
     - name: Visualizations
       items: 
+      - name: "Visualization types in Power BI"
+        href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md      
       - name: "Visualization best practices"
         href: visuals/power-bi-visualization-best-practices.md
       - name: "Change the type of visualization in a Power BI report"
@@ -785,6 +785,8 @@
         href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
       - name: "ArcGIS in Power BI"
         href: power-bi-visualization-arcgis.md
+      - name: "Interact with ArcGIS maps in Power BI"
+        href: visuals/power-bi-visualizations-arcgis.md
       - name: "Basic area chart"
         href: visuals/power-bi-visualization-basic-area-chart.md
       - name: "Cards (big number tiles) in Power BI"
@@ -797,6 +799,8 @@
         href: visuals/power-bi-visualization-filled-maps-choropleths.md
       - name: "Funnel charts in Power BI"
         href: visuals/power-bi-visualization-funnel-charts.md
+      - name: "Key influencers charts in Power BI"
+        href: visuals/power-bi-visualizations-influencers.md
       - name: "KPI Visuals"
         href: visuals/power-bi-visualization-kpi.md
       - name: "Create advanced analytics and visualizations using R scripts in Power BI"
@@ -1129,8 +1133,6 @@
         href: service-url-filters.md
       - name: "Best practices for building fast and reliable reports in Power BI"
         href: power-bi-reports-performance.md  
-      - name: "Interact with ArcGIS maps in Power BI"
-        href: visuals/power-bi-visualizations-arcgis.md
     - name: Ask questions of your data
       items:
       - name: "Use Q&A to create visualizations and build reports"
@@ -1141,8 +1143,6 @@
         href: service-cortana-enable.md
       - name: "Create featured questions for Power BI Q&A"
         href: service-q-and-a-create-featured-questions.md
-      - name: "Visualization types in Power BI"
-        href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: "Work with the linguistic schema in Power BI Desktop"
         href: power-bi-q-and-a-linguistic-schema.md
     - name: Share your work
