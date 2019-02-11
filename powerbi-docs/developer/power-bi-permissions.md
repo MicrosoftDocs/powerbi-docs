@@ -32,7 +32,7 @@ Power BI permissions give an application the ability to take certain actions on 
 | Read and write all Capacities |The app can view and write to all the capacities for the signed in user and any capacity that the user has access to. This does not provide rights to create a new capacity. |Capacities.ReadWrite.All |
 | Read all Capacities |The app can view and write to all the capacities for the signed in user and any capacities that the user has access to. This does not provide rights to create a new capacity. |Capacities.Read.All |
 | Read and write all content in tenant |The app can view and write to all artifacts, such as groups, reports, dashboards, and datasets in Power BI. Provided the signed in user is a Power BI service administrator. |Tenant.ReadWrite.All |
-| View all content in tenant |The app can view all artifacts, such as groups, reports, dashboards, and datasets in Powre BI. Provided the signed in user is a Power BI service administrator. |Tenant.Read.All |
+| View all content in tenant |The app can view all artifacts, such as groups, reports, dashboards, and datasets in Power BI. Provided the signed in user is a Power BI service administrator. |Tenant.Read.All |
 
 An application can request permissions when it first attempts to sign in to a user's page by passing in the requested permissions in the scope parameter of the call. If the permissions are granted, an access token will be returned to the app, which can be used on future API calls. The access can only be used by a specific application.
 
