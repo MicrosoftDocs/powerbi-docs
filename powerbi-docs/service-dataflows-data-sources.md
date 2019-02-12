@@ -87,6 +87,7 @@ The **Azure** category includes the following available data connections for dat
 
 The **Online Services** includes the following available data connections for dataflows:
 
+* Amazon Redshift
 * Common Data Service for Apps
 * Microsoft Exchange Online
 * Salesforce Objects
@@ -150,7 +151,6 @@ And then your script connects to the data source you specified.
 
 The following list shows which connectors you can currently use by copying and pasting the M query into a blank query:
 
-* Amazon Redshift
 * SAP Business Warehouse 
 * SAP HANA
 * Analysis Services
