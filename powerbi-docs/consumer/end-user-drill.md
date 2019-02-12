@@ -108,9 +108,9 @@ This method uses the drill-down icon that appears in the top-right corner of the
 
 2. Select the *leaf* for **TN**. Your tree map now displays all the cities in Tennessee that have a store. 
 
-    ![tree map shows data for Tennesee only](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![tree map shows data for Tennessee only](media/end-user-drill/power-bi-drill-down-one1.png)
 
-2. At this point, you can continue drilling down for Tennesee or you can drill down for a particular Tennesee city or you can expand instead (see **Expand all fields at once**, below). Let's continue to drill down one field at a time.  Select **Knoxville, TN**. Your tree map now displays the postal code for your store in Knoxville. 
+2. At this point, you can continue drilling down for Tennessee or you can drill down for a particular Tennessee city or you can expand instead (see **Expand all fields at once**, below). Let's continue to drill down one field at a time.  Select **Knoxville, TN**. Your tree map now displays the postal code for your store in Knoxville. 
 
    ![tree map shows 37919](media/end-user-drill/power-bi-drill-down-one2.png)
 
@@ -123,18 +123,18 @@ Having a tree map that shows us only a postal code isn't informative.  So let's 
 
     ![showing postal code and store name](./media/end-user-drill/power-bi-expand1.png)
 
-2. To see all four hierarchy levels of data for Tennesee, select the drill up arrow until you reach the second level, **Total units this year by territory and city**, of your tree map. 
+2. To see all four hierarchy levels of data for Tennessee, select the drill up arrow until you reach the second level, **Total units this year by territory and city**, of your tree map. 
 
-    ![tree map showing all data for Tennesee](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![tree map showing all data for Tennessee](media/end-user-drill/power-bi-drill-down-one1.png)
 
 
 3. Make sure drill-down is still turned on, ![drill-down turned on](./media/end-user-drill/power-bi-drill-icon2.png) and select the *expand down* icon ![expand down icon](./media/end-user-drill/power-bi-drill-icon6.png). Your tree map now shows some additional detail; instead of only showing city and state it now also shows us postal code. 
 
     ![double drill icon](./media/end-user-drill/power-bi-expand-one3.png)
 
-4. Select the *expand down* icon one more time to display all four hierarchy levels of detail for Tennesee on your tree map. Hover over a leaf to see even more detail.
+4. Select the *expand down* icon one more time to display all four hierarchy levels of detail for Tennessee on your tree map. Hover over a leaf to see even more detail.
 
-   ![tree map showing Tennesee data](./media/end-user-drill/power-bi-expand-all.png)
+   ![tree map showing Tennessee data](./media/end-user-drill/power-bi-expand-all.png)
 
 ## Drilling filters other visuals
 As you work in Drill mode, you get to decide how drill-down and expanding impacts the other visualizations on the page. 

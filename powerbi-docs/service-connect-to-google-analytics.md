@@ -49,7 +49,7 @@ To connect from Power BI, you need to have a [Google Analytics](https://www.goog
 
 ## Troubleshooting
 **Credentials**
-If you have multiple Google accounts, please use an incognito or an in-private broswer window during connection to ensure the correct account is used.
+If you have multiple Google accounts, please use an incognito or an in-private browser window during connection to ensure the correct account is used.
 
 If you're getting an error indicating your credentials are invalid however you were able to sign into Google, please confirm you have a [Google Analytics](https://www.google.com/analytics/) account.
 
