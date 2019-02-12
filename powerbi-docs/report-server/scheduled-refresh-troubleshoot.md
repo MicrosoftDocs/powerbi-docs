@@ -21,7 +21,7 @@ As issues come up, this article will be updated with information to help you.
 The following are the more common issues you will hit when trying to schedule refresh for a report. 
 
 ### Driver related problems
-Connecting to different data sources may require 3rd party drivers that need to be installed in order to connect successfuly. Not only would you need to install them on the machine you are using Power BI Desktop on, but you will also need to make sure the driver is installed on the report server.
+Connecting to different data sources may require 3rd party drivers that need to be installed in order to connect successfully. Not only would you need to install them on the machine you are using Power BI Desktop on, but you will also need to make sure the driver is installed on the report server.
 
 The driver may also come in both 32bit and 64bit. Make sure to install the 64bit driver as Power BI Report Server is 64bit.
 
@@ -56,7 +56,7 @@ The following settings can be used to affect scheduled refresh. Settings set wit
 
 **Settings within rsreportserver.config:**
 
-```
+```xml
 <Configuration>
     <Service>
         <PollingInterval>10</PollingInterval>
@@ -141,7 +141,7 @@ Execution log entries for Power BI reports differ from entries for other report 
     * **SaveToCatalog**: whenever the data model is being saved back to the catalog.
 
 ## Analysis Services
-There may be times you want to modify Analysis Services for diagnositing issues, or adjust memory limits.
+There may be times you want to modify Analysis Services for diagnosing issues, or adjust memory limits.
 
 > [!IMPORTANT]
 > These settings will be reset any time you upgrade the report server. Be sure to keep a copy of your changes and reapply them if needed.

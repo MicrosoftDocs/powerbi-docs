@@ -88,7 +88,7 @@ Expand **Data Colors** and you see a gradient of colors used for visualizing you
 ![](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors2.png)
 
 
-To change the scale to use a different range of colors, select the color drop-down beside **Minimum** or **Maximum**, and select a color. The following image shows the **Maximum** color changed to black, and the gradient bar shows the new color spectrum between **Minimum** and **Max﻿imum**.
+To change the scale to use a different range of colors, select the color drop-down beside **Minimum** or **Maximum**, and select a color. The following image shows the **Maximum** color changed to black, and the gradient bar shows the new color spectrum between **Minimum** and **Maximum**.
 
 ![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_11.png)
 
@@ -124,7 +124,7 @@ To **undo** your last action, or the last few actions, all you have to do is:
 Do you have a tip you’d like to share? Please send it our way, and we’ll see about including it here.
 
 >[!NOTE]
->These color, axis, and related customizations, available when the **F﻿ormat** icon is selected, are also available in Power BI Desktop.
+>These color, axis, and related customizations, available when the **Format** icon is selected, are also available in Power BI Desktop.
 
 ## Next steps
 [Getting started with color formatting and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)

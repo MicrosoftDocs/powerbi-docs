@@ -14,7 +14,7 @@ ms.author: maggies
 LocalizationGroup: Dashboards
 ---
 # Optimize your data for Power BI Quick Insights
-Want to improve quick insights results?  If you are a datasest owner, try these:
+Want to improve quick insights results?  If you are a dataset owner, try these:
 
 * Hide or unhide columns in your dataset. Power BI quick insights doesn't search hidden columns.  So hide duplicate or unnecessary columns and unhide interesting columns.
 * Use a mix of data types such as names, times, dates, and numbers.
