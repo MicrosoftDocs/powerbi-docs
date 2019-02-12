@@ -97,7 +97,7 @@ To apply a style to a **table** or **matrix** visual, take the following steps:
 
 Following is the text of the *St Patrick's Day.json* file that you can use to create your own JSON file:
 
-    ```json
+```json
     {
         "name": "St Patricks Day",
         "dataColors": ["#568410", "#3A6108", "#70A322", "#915203", "#D79A12", "#bb7711", "#114400", "#aacc66"],
@@ -105,7 +105,7 @@ Following is the text of the *St Patrick's Day.json* file that you can use to cr
         "foreground": "#3A6108",
         "tableAccent": "#568410"
     }
-    ```
+```
 
 From there, you can enter your own color hex code for your selected colors.
 
@@ -156,7 +156,7 @@ Want to get started with **Report Themes**? Here are a few ready-made Report The
 
 Rather than give you a download, we've provided the code for the Valentine's day JSON file:
 
-    ```json
+```json
     {
         "name": "Valentine's Day",
         "dataColors": ["#990011", "#cc1144", "#ee7799", "#eebbcc", "#cc4477", "#cc5555", "#882222", "#A30E33"],
@@ -164,7 +164,7 @@ Rather than give you a download, we've provided the code for the Valentine's day
         "foreground": "#ee7799",
         "tableAccent": "#990011"
     }
-    ```
+```
 
 **Report Themes** can make your Power BI Desktop reports a colorful reflection of you, your organization, or even the current season or holiday. 
 
@@ -303,7 +303,7 @@ The following table defines *cardName* values. The first value in each cell is t
 ### Properties within each card
 The following section defines the properties within each card:
 
-      ```json
+```json
       "general":
         "responsive": {
           "type": [
@@ -3171,14 +3171,14 @@ The following section defines the properties within each card:
           ]
         }
       }
-      ```
+```
 
 
 
 ### Enumerations in the JSON file
 The following section defines the enumerations that you can use in the JSON file.
 
-    ```json
+```json
     {
         "legend": {
             "position": [
@@ -4207,4 +4207,4 @@ The following section defines the enumerations that you can use in the JSON file
          ]
        }
     }
-    ```
+```
