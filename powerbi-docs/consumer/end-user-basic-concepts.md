@@ -57,7 +57,7 @@ At its most basic.
 
     For more information, see [Dashboards for Power BI *consumers*](end-user-dashboards.md)
 
-* ![report icon](media/end-user-basic-concepts/report.png) A *report* is one or more pages of interactive visuals, text, and graphics that together make up a single report. A report is based on a single dataset. Oten report pages are organized to each address a central area of interest or answer a single question.
+* ![report icon](media/end-user-basic-concepts/report.png) A *report* is one or more pages of interactive visuals, text, and graphics that together make up a single report. A report is based on a single dataset. Often report pages are organized to each address a central area of interest or answer a single question.
 
     For more information, see [Reports for Power BI *consumers*](end-user-reports.md)
 
@@ -83,7 +83,7 @@ When a designer shares an app with you, you can see which datasets are included 
 * can be used in many different reports
 * Visualizations from that one dataset can display on many different dashboards
   
-  ![dataset M:1 relationshps](media/end-user-basic-concepts/drawing2.png)
+  ![dataset M:1 relationships](media/end-user-basic-concepts/drawing2.png)
 
 On to the next building block -- visualizations.
 __________________________________________________________

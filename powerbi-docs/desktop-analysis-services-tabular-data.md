@@ -29,7 +29,7 @@ When you’ve created dynamic reports in Power BI Desktop, you can share them by
 **Select items and import into Power BI Desktop** – When you connect with this option, you can select items like tables, columns, and measures in your Tabular model or perspective and load them into a Power BI Desktop model. You can use Power BI Desktop’s advanced Query Editor to further shape what you want. You can use Power BI Desktop’s modeling features to further model the data. No live connection between Power BI Desktop and the Tabular model is maintained. You can then explore your Power BI Desktop model offline or publish to your Power BI site.
 
 ## To connect to a Tabular model
-1. In Power BI Desktop, on the **Home** tab, click ﻿**Get Data**.
+1. In Power BI Desktop, on the **Home** tab, click **Get Data**.
    
    ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata.png)
 2. Click **SQL Server Analysis Services Database**, then click **Connect**.
