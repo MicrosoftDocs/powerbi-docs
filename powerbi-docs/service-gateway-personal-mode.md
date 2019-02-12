@@ -82,11 +82,11 @@ If you were using **Fast Combine** with the previous gateway, you'll need to tak
    ```
 2. At the bottom of the file, add the following text:
    
-       ```
-       <setting name="EnableFastCombine" serializeAs="String">```
+    ```xml
+       <setting name="EnableFastCombine" serializeAs="String">
        <value>true</value>
-       </setting>
-       ```
+    </setting>
+    ```
 3. Once complete, the setting will take effect in approximately one minute. To check that it's working properly, try an on-demand refresh in the **Power BI service** to confirm that **Fast Combine** is working.
 
 ## Limitations and considerations
