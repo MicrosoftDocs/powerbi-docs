@@ -156,7 +156,7 @@ To verify which it is, try the steps below.
 
 ### AADSTS90094: The grant requires admin permission
 
-**_Symptoms:_**</br>
+**_Symptoms:_**<br>
 When a non-admin user tries to sign in to an application for the first time while granting consent, then gets one of the following errors:
 
 * ConsentTest needs permission to access resources in your organization that only an admin can grant. Ask an admin to grant permission to this app before you can use it.
@@ -166,7 +166,7 @@ When a non-admin user tries to sign in to an application for the first time whil
 
 An admin user can sign in and grant consent successfully.
 
-**_Root cause:_**</br>
+**_Root cause:_**<br>
 User consent is disabled for the tenant.
 
 **_Several fixes are possible:_**
