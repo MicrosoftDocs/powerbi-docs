@@ -3,12 +3,12 @@ title: Key influencers visualizations tutorial
 description: Tutorial - create a key influencers visualization in Power BI
 author: mihart
 manager: kvivek
-ms.reviewer: 'justyna'
+ms.reviewer: juluczni
 
 ms.service: powerbi
 ms.component: powerbi-visuals
 ms.topic: tutorial
-ms.date: 02/10/2019
+ms.date: 02/12/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -42,7 +42,7 @@ The metric you are analyzing must be a categorical field.
 
 6. ***Right pane*** - the right pane contains one visual. In this case, the column chart displays all the values for the **key influencer**, **Theme** that is selected in the left pane. The specific value (**Usability**) from the left pane is in green and all the other values for **Theme** are in black.
 
-7. ***Average line*** - the average is calculated for all the other possible values for **Theme** except **usability**. So the calculation applies to all the values in black. It tells us what percentage of the other **Themes** gave us a low rating. In other words, when a rating is given by a customer, that customer also describes the reason or **theme** for the rating. Some themes are usability, speed, security, etc. **Theme** is **Usability** is the second highest key influencer for a low rating, according to our visual in the left pane. If we average all the other themes, and their contribution to a rating of **low**, we get the result seen here in red. 
+7. ***Average line*** - the average is calculated for all the other possible values for **Theme** except **usability**. So the calculation applies to all the values in black. It tells us what percentage of the other **Themes** gave us a low rating. In other words, when a rating is given by a customer, that customer also describes the reason or **theme** for the rating. Some themes are usability, speed, security, etc. **Theme** is **Usability** is the second highest key influencer for a low rating, according to our visual in the left pane. If we average all the other themes, and their contribution to a rating of **low**, we get the result seen here in red. Of all the other themes given, only 11.35% of those are higher than **usability**. 
 
 8. ***Checkbox*** - only show values that are influencers.
 
@@ -213,7 +213,7 @@ More precisely, customers who do not use the browser to consume the service are 
 
 ![error-solved](media/power-bi-visualization-influencers/power-bi-error3-solution.png)
 
-**I see a warning that measures were not included in my analysis. Why is that?** [2052261] 
+**I see a warning that measures were not included in my analysis. Why is that?** 
 
 ![error-measures not included](media/power-bi-visualization-influencers/power-bi-measures-not-included.png)
 
