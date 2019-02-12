@@ -153,7 +153,6 @@ The following list shows which connectors you can currently use by copying and p
 * Amazon Redshift
 * SAP Business Warehouse 
 * SAP HANA
-* Analysis Services
 * Azure analysis Services
 * Google Analytics
 * Adobe Analytics
