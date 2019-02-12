@@ -168,7 +168,7 @@ You want to be logged in with either the *master* account, used for embedding, o
      "clientId":"{Service_Plan_ID}",
      "consentType":"AllPrincipals",
      "resourceId":"c78a3685-1ce7-52cd-95f7-dc5aea8ec98e",
-     "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Group.Read Group.Read.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
+     "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Workspace.ReadWrite.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
      "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
      "startTime":"2017-03-29T14:35:32.4933413+03:00"
      }
