@@ -107,7 +107,7 @@ Highlighting a location in a filled Map cross-filters the other visualizations o
 
     ![Sentiment tab selected](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-tab.png)
 
-4. Move and resize the visualizations on the pageto make some room, then CTRL-V paste the filled map from the previous report.
+4. Move and resize the visualizations on the page to make some room, then CTRL-V paste the filled map from the previous report.
 
    ![Filled map added to Sentiment page](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
