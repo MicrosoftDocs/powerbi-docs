@@ -17,7 +17,7 @@ ms.author: maghan
 
 Learn how to configure your report server for Kerberos authentication to data sources used within your Power BI reports for a distributed environment.
 
-Power BI Report Server includes the ability to host Power BI reports. Many data sources are supported by your report server. While this article focuses specificly on SQL Server Analysis Services, you can use the concepts and apply that to other data sources such as SQL Server.
+Power BI Report Server includes the ability to host Power BI reports. Many data sources are supported by your report server. While this article focuses specifically on SQL Server Analysis Services, you can use the concepts and apply that to other data sources such as SQL Server.
 
 You can install Power BI Report Server, SQL Server and Analysis Services on a single machine and everything should work without additional configuration. This is great for a test environment. You may hit errors if you have these services installed on separate machines which is called a distributed environment. In this environment, you are required to use Kerberos authentication. There is configuration required to implement this. 
 
@@ -59,7 +59,7 @@ Within the rsreportserver.config file, you will want to fine the **Authenticatio
 
 We want to make sure that RSWindowsNegotiate is listed and the first in the list of authentication types. It should look similar to the following.
 
-```
+```xml
 <AuthenticationTypes>
     <RSWindowsNegotiate/>
     <RSWindowsNTLM/>
