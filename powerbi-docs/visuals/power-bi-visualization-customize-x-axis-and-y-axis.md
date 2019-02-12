@@ -66,7 +66,7 @@ To revert all the X-axis customization you've done so far, select **Revert To De
 3. Move the Y-Axis **Position** to the right.
 4. Format the text color, size, and font. In this example we've set text **Color** to black, **Text Size** to 14, and **Font** to Arial Black.  
 5. Keep **Display units** set to Millions and **Value decimal places** to zero.
-6. For this visuaization, having a Y-axis title doesn't improve the visual, so leave **Title** turned Off.  
+6. For this visualization, having a Y-axis title doesn't improve the visual, so leave **Title** turned Off.  
 7. Let's make the gridlines stand out by changing the **Color** to a dark grey and increasing **Stroke** to 2.
 
     After all these customizations, your column chart should look something like this:
@@ -132,7 +132,7 @@ If the X-axis is categorized by the report owner as a date type, the **Type** op
 ## Next steps
 More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
-[Customize t](power-bi-visualization-customize-title-background-and-legend.md)[itles, backgrounds, and legends](power-bi-visualization-customize-title-background-and-legend.md)
+[Customize titles, backgrounds, and legends](power-bi-visualization-customize-title-background-and-legend.md)
 
 [Customize colors and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 
