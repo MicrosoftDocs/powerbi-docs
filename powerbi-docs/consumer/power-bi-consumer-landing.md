@@ -62,7 +62,6 @@ LocalizationGroup: Get started
                                                 <p><a href="/power-bi/consumer/end-user-report-open" data-linktype="absolute-path">View a report</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-dashboard-open" data-linktype="absolute-path">View a dashboard</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-app-view" data-linktype="absolute-path">View an app</a></p>
-                                                <!-- <p><a href="" data-linktype="absolute-path">Is my content up-to-date?</a></p> -->
                                             </div>
                                         </div>
                                     </div>
@@ -82,6 +81,7 @@ LocalizationGroup: Get started
                                                 <p><a href="/power-bi/consumer/end-user-apps" data-linktype="absolute-path">Learn about shared apps</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-subscribe" data-linktype="absolute-path">Subscribe to content</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-comment" data-linktype="absolute-path">Add comments to a dashboard</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-fresh" data-linktype="absolute-path">Is my content up-to-date?</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -233,7 +233,7 @@ LocalizationGroup: Get started
                                 </a>
                             </li>
                             <li>
-                                <a href="/power-bi/service-admin-licensing-organization" data-linktype="absolute-path">
+                                <a href="/power-bi/consumer/end-user-featured" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

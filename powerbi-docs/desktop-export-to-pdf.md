@@ -18,7 +18,7 @@ In **Power BI Desktop**, you can export reports to a PDF file, and thereby easil
 
 ![Export to PDF](media/desktop-export-to-pdf/export-to-pdf_01.png)
 
-The process of exporting your report from **Power BI Desktop** to a PDF, so that you can print the PDF or share that PDF document with others, is straightforward. Simply select **File > Export to PDF** from Power BI Deskop.
+The process of exporting your report from **Power BI Desktop** to a PDF, so that you can print the PDF or share that PDF document with others, is straightforward. Simply select **File > Export to PDF** from Power BI Desktop.
 
 The **Export to PDF** process will export all *visible* pages in the report, with each report page exporting to a single page in the PDF. Report pages that are currently not visible, such as any tooltips or hidden pages, are not exported to the PDF file. 
 
@@ -39,7 +39,7 @@ Since wallpaper is not exported to the PDF, you should pay special attention to 
 
 
 ## Next steps
-There are all sorts of interesting visual elements and features in **Power BI Desktop**. For more information in inforamtion, check out the following resources:
+There are all sorts of interesting visual elements and features in **Power BI Desktop**. For more information in information, check out the following resources:
 
 * [Use visual elements to enhance Power BI reports](desktop-visual-elements-for-reports.md)
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)

@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 02/10/2019
 ms.author: mihart
 
 ---
@@ -50,9 +50,9 @@ ArcGIS Maps for Power BI allows three selection modes. A maximum of 250 data poi
 <br/>
 
 ## Interacting with an ArcGIS map
-The features available to you depend on whether you are the *creator* (person who made the map) or the *consumer* (someone shared an ArcGIS map with you). If you are interacting with an ArcGIS map as a consumer (aka [Reading view](end-user-reading-view.md), here are the actions available to you.
+The features available to you depend on whether you are the *creator* (person who made the map) or the *consumer* (someone shared an ArcGIS map with you). If you are interacting with an ArcGIS map as a consumer (aka [Reading view](../consumer/end-user-reading-view.md), here are the actions available to you.
 
-* If you are a Premium consumer with *view* permissions, you'll be able to [view the data used to create the visualization](end-user-show-data.md) , [subscribe](end-user-subscribe.md), see the map in [Focus mode and full screen mode](end-user-focus.md), [view related content](end-user-related.md), [interact with the filters](end-user-report-filter.md) set by the *report creator*, [Share the report](../service-share-reports.md), and more.
+* If you are a Premium consumer with *view* permissions, you'll be able to [view the data used to create the visualization](../consumer/end-user-show-data.md) , [subscribe](../consumer/end-user-subscribe.md), see the map in [Focus mode and full screen mode](../consumer/end-user-focus.md), [view related content](../consumer/end-user-related.md), [interact with the filters](../consumer/end-user-report-filter.md) set by the *report creator*, [Share the report](../service-share-reports.md), and more.
 
 * As with other visualization types, Power BI **Pro** consumers can do everything the Premium consumer can do, plus [export the underlying data](../visuals/power-bi-visualization-export-data.md), [get usage metrics](../service-usage-metrics.md), save a copy and [publish to Web](../service-publish-to-web.md), and more.
 
