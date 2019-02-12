@@ -101,7 +101,7 @@ Let’s look at the report in Editing View. Select **Edit report** in the upper-
 Change the pie charts to show Separates data instead of Actives.
 
 1. Select the **Active Employee Count by Age Group** pie chart.
-2. In **Fields**, select the arrow next to **Employees** ﻿to expand the Employees table. Clear the check box next to **Active Employee Count**﻿ to remove that field.
+2. In **Fields**, select the arrow next to **Employees** to expand the Employees table. Clear the check box next to **Active Employee Count** to remove that field.
 3. Select the check box next to **Separation Count** in the Employees table to add it to the **Values** box in the field well.
 4. Back on the report canvas, select the **Voluntary** bar in the **Separation Count by Separation Reason** bar chart. This highlights those who left voluntarily in the other visuals in the report.
 5. Click the 50+ slice of the Separation Count by Age Group pie chart.
@@ -119,7 +119,7 @@ The last area to explore is bad hires. Bad hires are defined as employees who di
 1. Select the **Bad Hires as % of Actives by Age Group** dashboard tile. This opens the report to page 3, “Bad Hires”.
 
    ![](media/sample-human-resources/hr7.png)  
-2. Select the **Northwest**﻿ check box in the Region slicer on the left and the **Male** slice in the Bad Hire Count by Gender donut chart.  Look at other charts on the “Bad Hires” page. More male bad hires than females and lot of Group A bad hires.
+2. Select the **Northwest** check box in the Region slicer on the left and the **Male** slice in the Bad Hire Count by Gender donut chart.  Look at other charts on the “Bad Hires” page. More male bad hires than females and lot of Group A bad hires.
    ![](media/sample-human-resources/pbi_hr_sample_badhirespage.png)  
 3. Looking at the **Bad Hires by Gender** donut chart and clicking through the **Region** slicer we notice that East is the only region with more female than male bad hires.  
 4. Select the name of the dashboard from the top navbar to return to the dashboard.

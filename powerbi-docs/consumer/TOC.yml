@@ -60,6 +60,8 @@
         href: ../power-bi-visualizations-arcgis.md
     - name: Common tasks
       items: 
+      - name: "Look up the content owner and last refreshed date"
+        href: end-user-fresh.md
       - name: "Different ways to zoom into content using Focus and Full screen modes"
         href: end-user-focus.md
       - name: "Favorite dashboards, reports, and apps in Power BI"
