@@ -31,7 +31,7 @@ We'll take a look at each in the following sections.
 
 ## Create a new workspace, configure its dataflow storage
 
-To create a new app workspace in the Power BI service, select **Worksapces > Create app workspace**.
+To create a new app workspace in the Power BI service, select **Workspaces > Create app workspace**.
 
 ![Add new workspace](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_01.jpg)
 
