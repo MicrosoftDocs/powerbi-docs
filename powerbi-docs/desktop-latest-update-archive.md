@@ -42,7 +42,7 @@ The links beside each update mean the following:
 * **[video]** excerpts play in a new browser tab, when the feature is being discussed.
 * Some features have an **[article]** that provides more detail.
 * Most features are explained in the monthly update **[blog]** post.
-* Lastly, some features are self-explanatory and don't need and article or video.
+* Lastly, some features are self-explanatory and don't need an article or video.
 
 You can also watch the **Latest Updates** video from the beginning, right inside this article, by clicking on the **play** icon on the video image found below the list of updates.
 
