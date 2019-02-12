@@ -155,7 +155,6 @@ The following list shows which connectors you can currently use by copying and p
 * SAP HANA
 * Analysis Services
 * Azure analysis Services
-* Google Analytics
 * Adobe Analytics
 * ODBC
 * OLE DB
