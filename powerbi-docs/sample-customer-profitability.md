@@ -180,7 +180,7 @@ Let's take a look at the *Distribution* industry.
 
    ![filter for Distribution](media/sample-customer-profitability/customer7.png)
 4. The "Gross margin by Month and Executive Name" area chart tells us that only Valery and Tina have customers in this industry and Valery only worked with this industry from June to November.   
-5. Select **﻿Tina**﻿ and then **Valery** in the "Gross Margin by Month and Executive" area chart legend. Notice Tina's portion of "Total Revenue by Product" is really small compared to Valery.
+5. Select **Tina** and then **Valery** in the "Gross Margin by Month and Executive" area chart legend. Notice Tina's portion of "Total Revenue by Product" is really small compared to Valery.
 6. To see actual revenue, use Q&A to ask **total revenue by executive for distribution by scenario**.  
 
      ![type question in question box to see bar chart](media/sample-customer-profitability/power-bi-qna2.png)

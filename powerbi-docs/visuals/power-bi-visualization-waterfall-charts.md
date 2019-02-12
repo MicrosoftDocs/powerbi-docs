@@ -47,7 +47,7 @@ We'll create a waterfall chart that displays sales variance (estimated sales ver
    
     ![choose sort by > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
    
-    ![reslt of new sort ascending](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sorted.png)
+    ![result of new sort ascending](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sorted.png)
 6. Dig in a little more to see what's contributing most to the changes month to month. Drag **Store** > **Territory** to the **Breakdown** bucket.
    
     ![Shows Store in Breakdown bucket](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)

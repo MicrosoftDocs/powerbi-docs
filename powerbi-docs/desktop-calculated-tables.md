@@ -31,7 +31,7 @@ Jeff, a project manager at Contoso, has a table with employees in the Northwest 
 
  ![](media/desktop-calculated-tables/calctables_nwempl.png)
 
-**SoutwestEmployees**
+**SouthwestEmployees**
 
  ![](media/desktop-calculated-tables/calctables_swempl.png)
 
