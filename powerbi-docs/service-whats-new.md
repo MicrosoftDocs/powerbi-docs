@@ -49,7 +49,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 
 ### November 2018
 * Power BI data prep available with [dataflows](service-dataflows-overview.md) public preview.
-* Public preview of [paginated reports](paginated-reports-report-builder-power-bi) in Power BI Premium.
+* Public preview of [paginated reports](paginated-reports-report-builder-power-bi.md) in Power BI Premium.
 * Data size and count of datasets in memory in the [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### October 2018
