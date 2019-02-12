@@ -28,7 +28,7 @@ In this tutorial, you complete the following steps:
 > * Open the Power BI service
 > * Find the GitHub app
 > * Enter the information for the Power BI public GitHub repo
-> * View the dashboad and report with GitHub data
+> * View the dashboard and report with GitHub data
 > * Clean up resources by deleting the app
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
@@ -66,7 +66,7 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
  
    ![Power BI GitHub tile](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tile.png) 
 
-8. Select the global navigaton icon to minimize the left navigation, so you have more room.
+8. Select the global navigation icon to minimize the left navigation, so you have more room.
 
     ![Global navigation icon](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 

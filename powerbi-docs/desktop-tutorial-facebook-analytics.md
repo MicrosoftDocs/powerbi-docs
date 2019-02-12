@@ -238,4 +238,3 @@ Power BI Desktop provides a seamless end-to-end experience, from getting data fr
 * [Visit the Power BI Forum](http://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](http://go.microsoft.com/fwlink/?LinkID=519327)
 
-﻿
