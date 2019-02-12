@@ -21,7 +21,7 @@ You can mix table functions in your expression, as long as each function uses a 
 
 That expression would put a filter over the entirety of *Table*, ignoring any current filter content.
 
-The DISTINCT function returns the distinct values of a column that are also visible in the current context. So touse the above DAX expression example, using **ALL** in that expression ignores filters, while replacing **ALL** with **DISTINCT** would observe them.
+The DISTINCT function returns the distinct values of a column that are also visible in the current context. So to use the above DAX expression example, using **ALL** in that expression ignores filters, while replacing **ALL** with **DISTINCT** would observe them.
 
 ## Counting values with DAX
 One common question that Power BI report builders want to answer is the following:
