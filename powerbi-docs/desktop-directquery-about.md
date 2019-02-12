@@ -345,7 +345,7 @@ To open the trace file, take the following steps:
 2. Enter the path to the trace file for the currently open Power BI session, such as:
    
          C:\Users\<user>\AppData\Local\Microsoft\Power BI Desktop\AnalysisServicesWorkspaces\AnalysisServicesWorkspace2058279583\Data
-3. Open FilghtRecorderCurrent.trc
+3. Open FlightRecorderCurrent.trc
 
 All  events from the current session are displayed. An annotated example is shown below, which highlights groups of events. Each group has the following:
 
