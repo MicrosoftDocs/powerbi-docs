@@ -30,15 +30,15 @@ The gateway runs as a Windows service, so you can start and stop it in a few way
 
 * To stop the service, run this command:
 
-    '''
+    ```
     net stop PBIEgwService
-    '''
+    ```
 
 * To start the service, run this command:
 
-    '''
+    ```
     net start PBIEgwService
-    '''
+    ```
 
 ### Log file configuration
 
@@ -317,7 +317,7 @@ Within the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file
 > [!IMPORTANT]
 > Enabling EmitQueryTraces could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you can need to set EmitQueryTraces to False. It is not recommended to leave this setting enabled long term.
 
-```
+```xml
 <setting name="EmitQueryTraces" serializeAs="String">
     <value>True</value>
 </setting>
@@ -361,7 +361,7 @@ Within the *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* file
 > [!IMPORTANT]
 > Enabling TracingVerbosity to `5` could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you need to set TraceVerbosity to `4`. It is not recommended to leave this setting enabled long term.
 
-```
+```xml
 <setting name="TracingVerbosity" serializeAs="String">
     <value>5</value>
 </setting>
@@ -485,7 +485,7 @@ You get the 1033 error when your external ID that is configured in SAP HANA is n
 
     ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
 
-```
+```xml
       <setting name="ADUserNameReplacementProperty" serializeAs="String">
         <value>sAMAccount</value>
       </setting>
