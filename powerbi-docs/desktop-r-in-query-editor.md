@@ -40,11 +40,13 @@ To show how to use **R** in **Query Editor**, take this example from a stock mar
    ![](media/desktop-r-in-query-editor/r-in-query-editor_5d.png)
 6. For this example, enter the following script code:
 
+    ```r
        library(mice)
        tempData <- mice(dataset,m=1,maxit=50,meth='pmm',seed=100)
        completedData <- complete(tempData,1)
        output <- dataset
        output$completedValues <- completedData$"SMI missing values"
+    ```
 
    > [!NOTE]
    > You'll need to have the *mice* library installed in your R environment for the previous script code to work properly. To install mice, run the following command in your R installation:
