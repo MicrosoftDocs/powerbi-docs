@@ -1,7 +1,7 @@
 ---
 title: Tips and tricks for creating reports in Power BI
 description: Learn best practices for building reports in the Power BI service and Power BI Desktop
-author: davidi
+author: davidiseminger
 manager: kfile
 ms.reviewer: willthom
 
@@ -141,7 +141,7 @@ To create a relationship in this case, we need to create a logical data set of a
 4. In the **CustomerNames** query, select the **Append** option in the ribbon, select the query **Temp**.
 5. In the **CustomerNames** query, select **Remove Duplicates**.
 
-Now you have a dimension table that you can use to relate to CustomerIndicents and WorkItems that contains all the values of each.  
+Now you have a dimension table that you can use to relate to CustomerIncidents and WorkItems that contains all the values of each.  
 
 ## Patterns to jump start your use of the Query Editor
 Query Editor is very powerful in how it can manipulate data to shape and clean it so it is ready to be visualized or modeled. There are a few patterns you should be aware of.
