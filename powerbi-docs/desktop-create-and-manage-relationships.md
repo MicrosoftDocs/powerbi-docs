@@ -55,6 +55,8 @@ When you create or edit a relationship, you can configure additional options.  B
 
 **One to One (1:1)** - This means the column in one table has only one instance of a particular value, and the other related table has only one instance of a particular value.
 
+**Many-to-many relationships**: With composite models, you can establish many-to-many relationships between tables. This approach removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. For more detailed information, see https://docs.microsoft.com/en-us/power-bi/desktop-many-to-many-relationships 
+
 See the Understanding additional options section later in this article for more details about when to change cardinality.
 
 ## Cross filter direction
