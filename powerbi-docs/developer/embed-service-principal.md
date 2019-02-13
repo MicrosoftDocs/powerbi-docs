@@ -48,7 +48,7 @@ You can only use service principal if your Power BI artifacts and resources are 
 
 There are differences between using a service principal and a standard master account (Power BI Pro license) for authentication. The below table highlights some significant differences.
 
-| Function | Master User Account </br> (Power BI Pro license) | Service Principal </br> (app-only token) |
+| Function | Master User Account <br> (Power BI Pro license) | Service Principal <br> (app-only token) |
 |------------------------------------------------------|---------------------|-------------------|
 | Can sign in to the Power BI service  | Yes | No |
 | Enabled in the Power BI Admin portal | No | Yes |
