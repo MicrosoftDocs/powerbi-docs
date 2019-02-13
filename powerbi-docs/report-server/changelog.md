@@ -89,7 +89,7 @@ For detailed information about new features, see [What's new in Power BI Report 
                 - Reports can be refresh when a server is configured to use custom authentication
                 - Modifying the properties of a report does not reset data source credentials
             - For Paginated Reports (RDL)
-                - Usage of `Lookup()` or derivative functions such as `LookupSet()` and `MultiLookup()` in RDL Expresssions no longer result in `#Error`
+                - Usage of `Lookup()` or derivative functions such as `LookupSet()` and `MultiLookup()` in RDL Expressions no longer result in `#Error`
                 - Linked reports respect the page size of the target report when printing
                 - Subscriptions can be created for linked reports that use cascading parameters
                 - Multi-value parameter defaults can be modified when using IE11
