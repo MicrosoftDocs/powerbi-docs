@@ -290,7 +290,7 @@ Administrators can set the following properties in SSMS Advanced Properties for 
 
 **Config file rsreportserver.config**
 
-```
+```xml
 <Configuration>
   <Service>
     <PollingInterval>10</PollingInterval>

@@ -59,7 +59,7 @@ Follow the steps in the [Create an Azure Data Lake Storage Gen2 storage account]
 
 ### Grant the Power BI service a reader role
 
-Next, you need to grant the Power BI service a reader role in your created storage account. It's a built-in role, so the steps are straighforward. 
+Next, you need to grant the Power BI service a reader role in your created storage account. It's a built-in role, so the steps are straightforward. 
 
 Follow the steps in the [Assign a role to a security principal](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-role-to-a-security-principal) article.
 

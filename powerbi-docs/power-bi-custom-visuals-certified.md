@@ -42,7 +42,7 @@ To get your custom visual [certified](#certified-custom-visuals), make sure your
 
 * Microsoft AppSource approved. Your custom visual should be in our [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
 * Custom visual is written with versioned API 1.2 or higher.
-* Code repository available for review by Power BI team (for instance, source code (JavaSCriptS or TypeScript) in human readable format available to us, through GitHub).
+* Code repository available for review by Power BI team (for instance, source code (JavaScript or TypeScript) in human readable format available to us, through GitHub).
 
     >[!Note]
     > You don’t have to publicly share your code in Github.

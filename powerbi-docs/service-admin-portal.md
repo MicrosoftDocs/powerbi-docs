@@ -232,12 +232,17 @@ Users in the organization can use external search features that rely on Azure Se
 
 ## Custom visuals settings
 
-### Enable custom visuals for the entire organization
+### Add and use custom visuals
 
 Users in the organization can interact with and share custom visuals. [Learn more](power-bi-custom-visuals.md)
 
 > [!NOTE]
-> This setting applies to the entire organization and cannot be limited to specific groups.
+> This setting can be applied to the entire organization or can be limited to specific groups.
+
+### Allow only certified visuals
+
+Users in the organization who have been granted permissions to add and use custom visuals, denoted by the setting "Add and use custom visuals", will only be able to use [certified custom visuals](https://go.microsoft.com/fwlink/?linkid=2002010) (uncertified visuals will be blocked and will display an error message when used). 
+
 
 ## R visuals settings
 
@@ -283,16 +288,6 @@ Users in the organization can tag dashboards with classifications that indicate 
 ### Embed content in apps
 
 Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](developer/embedding.md)
-
-## Workspaces and import settings
-
-### Author content in workspaces
-
-Users in the organization can access workspaces to connect to data and author content. [Learn more](service-create-the-new-workspaces.md)
-
-### Import data into Power BI
-
-Users in the organization can import data into the service, such as publishing reports from Power BI Desktop, uploading Power BI report files, and connecting to data directly from the service. [Learn more](desktop-upload-desktop-files.md)
 
 ## Dataflow settings (preview)
 
