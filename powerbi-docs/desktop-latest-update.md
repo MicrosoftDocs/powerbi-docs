@@ -8,16 +8,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 02/11/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
 ---
 # What's new in the latest Power BI Desktop update? 
 
-## December 2018 Update (2.65.5313.501)
+## February 2019 Update (2.65.5313.501)
 
-Our December updates quite possibly will make sugarplums dance in your head, or at least compelling data-driven visuals of said sugarplums. So gather around the fire, sip a tasty warm beverage, and unpack our December updates. 
+Our February updates will make you swoon and love all our new data connectors, features, and analytics enhancements. Just like a box of chocolates, you never know what you get... but with this February update, they're all sweet and downright delicious. 
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
@@ -34,56 +34,51 @@ The following updates are new to **Power BI Desktop** this month:
 
 ### Reporting
 
-* Smart guides for aligning objects on a page  [[video]](https://youtu.be/AHNlkjRFdYI?t=11)  [[article]](power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) 
-* ArcGIS Maps for Power BI updates  [[video]](https://youtu.be/AHNlkjRFdYI?t=84)  [[article]](visuals/power-bi-visualization-arcgis.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#arcGIS) 
-* Fields list accessibility support [[video]](https://youtu.be/AHNlkjRFdYI?t=464)  [[article]](desktop-report-view.md#copy-and-paste-between-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)
-* Set tab order for objects on a page [[video]](https://youtu.be/AHNlkjRFdYI?t=643)   [[article]](power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tabOrder)
-* Tooltips for button visuals [[video]](https://youtu.be/AHNlkjRFdYI?t=884)  [[article]](desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tooltips)
-* Updated icons for *Visual interactions*  [[video]](https://youtu.be/AHNlkjRFdYI?t=974)  [[article]](desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#icons)
+* Updates to the new filter pane (preview)  [[video]](https://youtu.be/dMD25wfElLg?t=11)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#smartGuides) 
+* Cross-highlight on a single point in line charts  [[video]](https://youtu.be/dMD25wfElLg?t=197)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#line)
+* Word wrap on titles [[video]](https://youtu.be/dMD25wfElLg?t=298)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#wordWrap)
+* Update default visual interaction to cross-filter [[video]](https://youtu.be/dMD25wfElLg?t=358)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#crossFilter)
+* Rounded corners for visual borders  [[video]](https://youtu.be/dMD25wfElLg?t=526)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#roundedCorners)
 
 
 
 ### Analytics
 
-* Live connect support for Q&A (preview) [[video]](https://youtu.be/AHNlkjRFdYI?t=1037)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#liveConnectQA) 
-
-
-### Modeling
-
-* DAX formula bar updates [[video]](https://youtu.be/AHNlkjRFdYI?t=1132)  [[article]](desktop-modeling-view.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#daxFormulaBar) 
-* Data view accessibility support [[video]](https://youtu.be/AHNlkjRFdYI?t=1253)  [[article]](desktop-composite-models.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#dataView) 
+* Key influencers visual (preview) [[video]](https://youtu.be/dMD25wfElLg?t=608)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#keyInfluencers) 
+* Insights questions in Q&A [[video]](https://youtu.be/dMD25wfElLg?t=1121)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#insights) 
+* Auto-generated suggested questions for Q&A explorer [[video]](https://youtu.be/dMD25wfElLg?t=1121)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#autoSuggestions) 
+* Improved Python & R script editor [[video]](https://youtu.be/dMD25wfElLg?t=1282)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#scriptEditor) 
 
 
 ### Custom visuals
 
-* One new custom visual  [[video]](https://youtu.be/AHNlkjRFdYI?t=1370)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#customVisuals) 
+* Ten new custom visuals, new custom visuals feature  [[video]](https://youtu.be/dMD25wfElLg?t=1324)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#customVisuals) 
 
 ### Data connectivity
 
-* AtScale connector (Beta) [[video]](https://youtu.be/AHNlkjRFdYI?t=1449)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#atScale) 
-* Oracle Essbase connector (Beta)  [[video]](https://youtu.be/AHNlkjRFdYI?t=1449)   [[article]](desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#essbase) 
-
-
-### Data preparation
-
-* Fuzzy merge - support for Top N best matches [[video]](https://youtu.be/AHNlkjRFdYI?t=1480)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fuzzyMerge) 
+* Microsoft Graph Security [[video]](https://youtu.be/dMD25wfElLg?t=2787)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#microsoftGraph) 
+* Guidanz' BI Connector for OBIEE  [[video]](https://youtu.be/dMD25wfElLg?t=2807)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#biConnector) 
+* MarkLogic [[video]](https://youtu.be/dMD25wfElLg?t=2825)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#markLogic) 
+* Kronos Workforce Dimensions [[video]](https://youtu.be/dMD25wfElLg?t=2846)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#kronos) 
+* SurveyMonkey [[video]](https://youtu.be/dMD25wfElLg?t=2857)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#surveyMonkey) 
+* Qubole Presto [[video]](https://youtu.be/dMD25wfElLg?t=2872)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#qubole) 
+* Quick Base [[video]](https://youtu.be/dMD25wfElLg?t=2899)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#quickBase) 
+* Sagra Emigo [[video]](https://youtu.be/dMD25wfElLg?t=2909)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#emigo) 
 
 
 ### Other
-* High contrast support for all panes and report footer [[video]](https://youtu.be/AHNlkjRFdYI?t=1631)   [[article]](desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#highContrast) 
-* Updated keyboard shortcut dialog [[video]](https://youtu.be/AHNlkjRFdYI?t=1654)   [[article]](desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#keyboardShortcuts) 
-
+* Improved Live connect and DirectQuery error messages [[video]](https://youtu.be/dMD25wfElLg?t=2926)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#error) 
 
 
 > [!NOTE]
 > You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
-Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
 
 The following video channel describes and shows each of these updates. You can also see the videos from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AHNlkjRFdYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dMD25wfElLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
