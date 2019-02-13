@@ -55,7 +55,7 @@ The following data is available from Marketo in Power BI where the activity occu
 | Table name | Description |
 | --- | --- |
 | EmailActivities |Data about email sent to leads/contacts, with details about devices, categories, bounced count and percentage, clicked count and percentage, opened count and percentage, and program name. The Email Activities as shown in Power BI is an absolute email deliverability report, it does not apply any additional logic to the data. You might see some different results between the Marketo client and Power BI because of this. |
-| ProgramActivites |Data on programs that have had a change a Status. This includes details such as: Reason, Success, Program acquisition count and percentage, and Program success count and percentage. |
+| ProgramActivities |Data on programs that have had a change a Status. This includes details such as: Reason, Success, Program acquisition count and percentage, and Program success count and percentage. |
 | WebPageActivities |Data from user web page visits, including search agent, User agent, web page and hour of day. |
 | Datetable |Dates from today and the past year.  Allows you to analyze your Marketo data by date. |
 | Leads |Lead information like company, revenue size, number of employees,   country, industry, Lead score and Lead status. The leads are retrieved based on their presence in the email, program, and webpage activities data. |
