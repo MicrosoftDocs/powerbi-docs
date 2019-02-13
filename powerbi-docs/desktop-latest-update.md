@@ -9,6 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 02/13/2019
+
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -33,47 +34,41 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 The following updates are new to **Power BI Desktop** this month:
 
 ### Reporting
-
-* Updates to the new filter pane (preview)  [[video]](https://youtu.be/dMD25wfElLg?t=11)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) 
-* Cross-highlight on a single point in line charts  [[video]](https://youtu.be/dMD25wfElLg?t=197)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#line)
-* Word wrap on titles [[video]](https://youtu.be/dMD25wfElLg?t=298)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#wordWrap)
-* Update default visual interaction to cross-filter [[video]](https://youtu.be/dMD25wfElLg?t=358)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#crossFilter)
-* Rounded corners for visual borders  [[video]](https://youtu.be/dMD25wfElLg?t=526)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#roundedCorners)
-
-
+* Updates to the new filter pane (preview)  [[video]](https://youtu.be/dMD25wfElLg?t=11)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#smartGuides) 
+* Cross-highlight on a single point in line charts  [[video]](https://youtu.be/dMD25wfElLg?t=197)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#line)
+* Word wrap on titles [[video]](https://youtu.be/dMD25wfElLg?t=298)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#wordWrap)
+* Update default visual interaction to cross-filter [[video]](https://youtu.be/dMD25wfElLg?t=358)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#crossFilter)
+* Rounded corners for visual borders  [[video]](https://youtu.be/dMD25wfElLg?t=526)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#roundedCorners)
 
 ### Analytics
-
-* Key influencers visual (preview) [[video]](https://youtu.be/dMD25wfElLg?t=608)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#keyInfluencers) 
-* Insights questions in Q&A [[video]](https://youtu.be/dMD25wfElLg?t=1121)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#insights) 
-* Auto-generated suggested questions for Q&A explorer [[video]](https://youtu.be/dMD25wfElLg?t=1121)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#autoSuggestions) 
-* Improved Python & R script editor [[video]](https://youtu.be/dMD25wfElLg?t=1282)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#scriptEditor) 
-
+* Key influencers visual (preview) [[video]](https://youtu.be/dMD25wfElLg?t=608)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#keyInfluencers) 
+* Insights questions in Q&A [[video]](https://youtu.be/dMD25wfElLg?t=1121)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#insights) 
+* Auto-generated suggested questions for Q&A explorer [[video]](https://youtu.be/dMD25wfElLg?t=1121)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#autoSuggestions) 
+* Improved Python & R script editor [[video]](https://youtu.be/dMD25wfElLg?t=1282)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#scriptEditor) 
 
 ### Custom visuals
-
-* Ten new custom visuals, new custom visuals feature  [[video]](https://youtu.be/dMD25wfElLg?t=1324)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#customVisuals) 
+* Ten new custom visuals, new custom visuals feature  [[video]](https://youtu.be/dMD25wfElLg?t=1324)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#customVisuals) 
 
 ### Data connectivity
 
-* Microsoft Graph Security [[video]](https://youtu.be/dMD25wfElLg?t=2787)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#microsoftGraph) 
-* Guidanz' BI Connector for OBIEE  [[video]](https://youtu.be/dMD25wfElLg?t=2807)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#biConnector) 
-* MarkLogic [[video]](https://youtu.be/dMD25wfElLg?t=2825)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#markLogic) 
-* Kronos Workforce Dimensions [[video]](https://youtu.be/dMD25wfElLg?t=2846)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#kronos) 
-* SurveyMonkey [[video]](https://youtu.be/dMD25wfElLg?t=2857)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#surveyMonkey) 
-* Qubole Presto [[video]](https://youtu.be/dMD25wfElLg?t=2872)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#qubole) 
-* Quick Base [[video]](https://youtu.be/dMD25wfElLg?t=2899)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#quickBase) 
-* Sagra Emigo [[video]](https://youtu.be/dMD25wfElLg?t=2909)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#emigo) 
+* Microsoft Graph Security [[video]](https://youtu.be/dMD25wfElLg?t=2787)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#microsoftGraph) 
+* Guidanz' BI Connector for OBIEE  [[video]](https://youtu.be/dMD25wfElLg?t=2807)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#biConnector) 
+* MarkLogic [[video]](https://youtu.be/dMD25wfElLg?t=2825)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#markLogic) 
+* Kronos Workforce Dimensions [[video]](https://youtu.be/dMD25wfElLg?t=2846)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#kronos) 
+* SurveyMonkey [[video]](https://youtu.be/dMD25wfElLg?t=2857)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#surveyMonkey) 
+* Qubole Presto [[video]](https://youtu.be/dMD25wfElLg?t=2872)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#qubole) 
+* Quick Base [[video]](https://youtu.be/dMD25wfElLg?t=2899)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#quickBase) 
+* Sagra Emigo [[video]](https://youtu.be/dMD25wfElLg?t=2909)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#emigo) 
 
 
 ### Other
-* Improved Live connect and DirectQuery error messages [[video]](https://youtu.be/dMD25wfElLg?t=2926)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#error) 
+* Improved Live connect and DirectQuery error messages [[video]](https://youtu.be/dMD25wfElLg?t=2926)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#error) 
 
 
 > [!NOTE]
 > You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
-Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
 
 The following video channel describes and shows each of these updates. You can also see the videos from the blog post.

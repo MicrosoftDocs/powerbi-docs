@@ -143,7 +143,7 @@ To create a relationship in this case, we need to create a logical dataset of al
 4. In the **CustomerNames** query, select the **Append** option in the ribbon, select the query **Temp**.
 5. In the **CustomerNames** query, select **Remove Duplicates**.
 
-Now you have a dimension table that you can use to relate to CustomerIndicents and WorkItems that contains all the values of each.  
+Now you have a dimension table that you can use to relate to CustomerIncidents and WorkItems that contains all the values of each.  
 
 ### Patterns to jump start your use of the Query Editor
 Query Editor is very powerful in how it can manipulate data to shape and clean it so it is ready to be visualized or modeled. There are a few patterns you should be aware of.
