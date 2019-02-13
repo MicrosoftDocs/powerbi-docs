@@ -331,6 +331,8 @@
         href: visuals/power-bi-visualization-filled-maps-choropleths.md
       - name: "Funnel charts in Power BI"
         href: visuals/power-bi-visualization-funnel-charts.md
+      - name: "Key influencers charts in Power BI"
+        href: visuals/power-bi-visualization-influencers.md
       - name: "High density line sampling"
         href: desktop-high-density-sampling.md
       - name: "KPI Visuals"
