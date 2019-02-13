@@ -472,7 +472,12 @@
         },
         {
             "source_path": "powerbi-docs/power-bi-visualizations-arcgis.md", 
-            "redirect_url": "/power-bi/consumer/power-bi-visualizations-arcgis",
+            "redirect_url": "/power-bi/visuals/power-bi-visualizations-arcgis",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/power-bi-visualizations-arcgis.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualizations-arcgis",
             "redirect_document_id": true
         },
         {

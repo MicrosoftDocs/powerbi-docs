@@ -17,7 +17,7 @@ LocalizationGroup: Data from files
 
 With Power BI and dataflows, you can store a workspace's dataflow definition file and data files in your Azure Data Lake Storage Gen2 account. Workspaces administrators can configure Power BI to do so, and this article walks through the steps necessary to get there. 
 
-Before you can configure a workspace’s dataflow storage location, your company's global administrator must connect your organization’s storage account to Power BI, and enable storage assignment permissions to that storage account. * [Connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)](service-dataflows-connect-azure-data-lake-storage-gen2.md) 
+Before you can configure a workspace’s dataflow storage location, your company's global administrator must connect your organization’s storage account to Power BI, and enable storage assignment permissions to that storage account. *[Connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)](service-dataflows-connect-azure-data-lake-storage-gen2.md)* 
 
 There are two ways to configure the workspace dataflow storage settings: 
 
@@ -31,7 +31,7 @@ We'll take a look at each in the following sections.
 
 ## Create a new workspace, configure its dataflow storage
 
-To create a new app workspace in the Power BI service, select **Worksapces > Create app workspace**.
+To create a new app workspace in the Power BI service, select **Workspaces > Create app workspace**.
 
 ![Add new workspace](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_01.jpg)
 

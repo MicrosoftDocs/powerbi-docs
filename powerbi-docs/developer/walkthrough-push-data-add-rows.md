@@ -37,7 +37,7 @@ Add this code into Program.cs.
 
 * In static void Main(string[] args):
   
-  ```
+  ```csharp
    static void Main(string[] args)
    {
   
@@ -57,7 +57,7 @@ Add this code into Program.cs.
   ```
 * Add an AddRows() method:
 
-```
+```csharp
     #region Add rows to a Power BI table
     private static void AddRows(string datasetId, string tableName)
     {
@@ -106,6 +106,8 @@ Below is the [complete code listing](#code).
 <a name="code"/>
 
 ## Complete code listing
+
+```csharp
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using System.Net;
@@ -302,6 +304,7 @@ Below is the [complete code listing](#code).
             #endregion
         }
     }
+```
 
 Although, we specify that we **_//Get the first id_** in the code above, the correct thing to do is search the dataset by name.
 
