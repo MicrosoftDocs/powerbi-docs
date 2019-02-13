@@ -1,6 +1,6 @@
 ---
 title: Embedded analytics to embed Power BI content in your application for your organization
-description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your organziation. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
+description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your organization. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
 author: markingmyname
 ms.author: maghan 
 manager: kfile
@@ -53,7 +53,7 @@ To give your application access to the Power BI REST APIs, register it with Azur
 
 3. In the left-hand navigation pane, choose **All services** and select **App registrations**. Then select **New application registration**.
 
-    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)</br>
+    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)<br>
 
     ![New app registration](media/embed-sample-for-your-organization/embed-sample-for-your-organization-004.png)
 
@@ -363,7 +363,7 @@ window.onload = function () {
     // client side click to embed a selected report.
     var el = document.getElementById("bEmbedReportAction");
     if (el.addEventListener) {
-        el.addEventListener("click", updateEmbedReporte, false);
+        el.addEventListener("click", updateEmbedReport, false);
     } else {
         el.attachEvent('onclick', updateEmbedReport);
     }
