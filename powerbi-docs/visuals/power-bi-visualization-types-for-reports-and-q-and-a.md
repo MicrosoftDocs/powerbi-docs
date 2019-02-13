@@ -79,7 +79,7 @@ For more information, see [Funnel Charts in Power BI](power-bi-visualization-fun
 For more information, see [Gauge Charts in Power BI](power-bi-visualization-radial-gauge-charts.md).
 
 ### Key influencers chart
-![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers.png)
+![key influencer](/visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers.png)
 
 A key influencer chart displays the major contributors to a selected result or value.
 
