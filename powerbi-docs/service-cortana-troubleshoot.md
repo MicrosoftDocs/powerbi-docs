@@ -75,7 +75,7 @@ Still having trouble?  Now is a good time to run the Cortana troubleshooting too
 
    ![Answer card](media/service-cortana-troubleshoot/power-bi-answer-card-new.png)
 
-   </br>
+   <br>
 
    ![Answer card tab in Power BI](media/service-cortana-troubleshoot/power-bi-answer-card2.png)
 4. Sometimes, the first time you type something into the **Utterance** field, nothing happens. Think of it as priming the system; you're letting the troubleshooting tool know that it's time to turn on. Cut and paste or retype into the **Utterance** field again. In this example, the name of our answer card is **Cortana stores**. Pasting or typing **Cortana stores** into the tool produces a single result that displays in the **Interpretations** field. Click to see the answer card displayed in the Cortana window -- in this case, **Cortana stores**.
