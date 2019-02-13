@@ -39,10 +39,12 @@ To show how to use **Python** in **Query Editor**, take this example from a stoc
    ![](media/desktop-python-in-query-editor/python-in-query-editor-5.png)
 6. For this example, enter the following script code:
    
+    ```python
        import pandas as pd
        completedData = dataset.fillna(method='backfill', inplace=False)
        dataset["completedValues"] =  completedData["SMI missing values"]
-   
+   ```
+
    > [!NOTE]
    > You'll need to have the *pandas* library installed in your Python environment for the previous script code to work properly. To install pandas, run the following command in your Python installation:
    > |      > pip install pandas

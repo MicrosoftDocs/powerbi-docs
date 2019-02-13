@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 02/13/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -73,11 +73,14 @@ The **Database** category provides the following data connections:
 * Amazon Redshift
 * Impala
 * Google BigQuery
+* Vertica
 * Snowflake
 * Essbase (Beta)
-* BI Connector
+* Dremio
 * Exasol
-* Dremio (Beta)
+* MarkLogic (Beta)
+* AtScale cubes (Beta)
+* BI Connector
 * Jethro (Beta)
 * Kyligence Enterprise (Beta)
 
@@ -132,8 +135,6 @@ The **Online Services** category provides the following data connections:
 * Google Analytics
 * Adobe Analytics
 * appFigures (Beta)
-* comScore Digital Analytix (Beta)
-* Dynamics 365 for Customer Insights (Beta)
 * Data.World - Get Dataset (Beta)
 * Facebook
 * GitHub (Beta)
@@ -153,6 +154,8 @@ The **Online Services** category provides the following data connections:
 * Webtrends (Beta)
 * Zendesk (Beta)
 * TeamDesk (Beta)
+* Emigo Data Source (Beta)
+* Microsoft Graph Security (Beta)
 
 The following image shows the **Get Data** window for **Online Services**.
 
@@ -160,7 +163,6 @@ The following image shows the **Get Data** window for **Online Services**.
 
 The **Other** category provides the following data connections:
 
-* Vertica
 * Web
 * SharePoint List
 * OData Feed
@@ -172,8 +174,12 @@ The **Other** category provides the following data connections:
 * Python script
 * ODBC
 * OLE DB
+* Workforce Dimensions (Beta)
 * Denado
 * Paxata (Beta)
+* SurveyMonkey (Beta)
+* QubolePresto (Beta)
+* Quick Base (Beta)
 * Blank Query
 
 The following image shows the **Get Data** window for **Other**.
@@ -186,7 +192,7 @@ The following image shows the **Get Data** window for **Other**.
 ## Connecting to a Data Source
 To connect to a data source, select the data source from the **Get Data** window and select **Connect**. In the following image, **Web** is selected from the **Other** data connection category.
 
-![Connect to web](media/desktop-data-sources/data-sources_08a.png)
+![Connect to web](media/desktop-data-sources/data-sources_08.png)
 
 A connection window is displayed, specific to the type of data connection. If credentials are required, you’ll be prompted to provide them. The following image shows a URL being entered to connect to a Web data source.
 

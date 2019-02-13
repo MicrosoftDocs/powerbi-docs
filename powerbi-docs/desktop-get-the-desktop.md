@@ -58,7 +58,7 @@ There are a few advantages to getting **Power BI Desktop** from the Microsoft St
 
 * **Automatic updates** - Windows downloads the latest version automatically in the background as soon as it's available, so your version will always be up to date.
 * **Smaller downloads** - The **Microsoft Store** ensures only components that have changed in each update are downloaded to your machine, resulting in smaller downloads for each update.
-* **Admin priviledge is not required** - when you download the MSI directly and install, you must be an administrator for the installation to complete successfully. When you get **Power BI Desktop** from the Microsoft Store, admin priviledge is *not* required.
+* **Admin privilege is not required** - when you download the MSI directly and install, you must be an administrator for the installation to complete successfully. When you get **Power BI Desktop** from the Microsoft Store, admin privilege is *not* required.
 * **IT roll-out enabled** - the **Microsoft Store** version can more easily be deployed, or *rolled-out*, to everyone in your organization, and can make **Power BI Desktop** available through the **Microsoft Store for Business**.
 * **Language detection** - the **Microsoft Store** version includes all supported languages, and checks which languages is being used on the computer each time it is launched. This also affects the localization of models created in **Power BI Desktop**; for example, built-in date hierarchies will match the language that **Power BI Desktop** was using when the .pbix file was created.
 
@@ -108,7 +108,7 @@ Some users encounter an error similar to the following when using an outdated ve
 Updating to the current version of Power BI Desktop usually solves this issue.
 
 ### Disabling notifications
-We recommend updating to the most recent version of Power BI Desktop to take advantage of advances in features, perfromance, stability, and other improvements. Some organizations may not want users to update to each new version. You can disable notifications by modifying the registry with the following steps:
+We recommend updating to the most recent version of Power BI Desktop to take advantage of advances in features, performance, stability, and other improvements. Some organizations may not want users to update to each new version. You can disable notifications by modifying the registry with the following steps:
 
 1. Using the Registry Editor, navigate to *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop*
 2. Create a new entry there with the following settings: *REG_DWORD : DisableUpdateNotification*

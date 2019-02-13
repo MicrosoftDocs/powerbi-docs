@@ -66,7 +66,7 @@ The following accounts will need to exist within your tenant.
     The applications backend will store the credentials for this account and use it for acquiring an Azure AD token for use with the Power BI REST APIs. This account will be used to generate the embed token for the application. This account also needs to be an admin of the App workspaces created for embedding.
 
 > [!NOTE]
-> This is just a regular user account in your organziation that will be used for the purposes of embedding.
+> This is just a regular user account in your organization that will be used for the purposes of embedding.
 
 ## App registration and permissions
 
