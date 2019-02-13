@@ -5,50 +5,43 @@ author: christianwade
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/19/2018
+ms.date: 01/24/2019
 ms.author: chwade
-
 LocalizationGroup: Premium
 ---
 # Incremental refresh in Power BI Premium
 
 Incremental refresh enables very large datasets in the Power BI Premium service with the following benefits:
 
-- **Refreshes are faster.** Only data that has changed needs to be refreshed. For example, refresh only the last five days of a 10-year dataset.
+- **Refreshes are faster** - Only data that has changed needs to be refreshed. For example, refresh only the last five days of a ten-year dataset.
 
-- **Refreshes are more reliable.** For example, it is not necessary to maintain long-running connections to volatile source systems.
+- **Refreshes are more reliable** - It's no longer necessary to maintain long-running connections to volatile source systems.
 
-- **Resource consumption is reduced.** Less data to refresh reduces overall consumption of memory and other resources.
+- **Resource consumption is reduced** - Less data to refresh reduces overall consumption of memory and other resources.
 
-## How to use incremental refresh
+## Configure incremental refresh
 
-Incremental refresh policies are defined in Power BI Desktop and applied once published to the Power BI service.
+Incremental refresh policies are defined in Power BI Desktop and applied when published to the Power BI service.
 
-Start by enabling incremental refresh in preview features.
+To start, enable incremental refresh in **Preview features**.
 
 ![Options - preview features](media/service-premium-incremental-refresh/preview-features.png)
 
 ### Filter large datasets in Power BI Desktop
 
-Large datasets with potentially billions of rows may not fit into Power BI Desktop because it's normally limited by the resources available on the user's desktop PC. Such datasets are therefore commonly filtered upon import to fit into Power BI Desktop. This continues to be the case whether using incremental refresh or not.
+Large datasets with potentially billions of rows may not fit into a Power BI Desktop model because the PBIX file is limited by the memory resources available on the desktop computer. Such datasets are therefore commonly filtered upon import. This type of filtering applies whether using incremental refresh or not. For incremental refresh, you filter by using Power Query date/time parameters.
 
 #### RangeStart and RangeEnd parameters
 
-To use incremental refresh in the Power BI service, filtering needs to be done using Power Query date/time parameters with the reserved, case-sensitive names **RangeStart** and **RangeEnd**.
+For incremental refresh, datasets are filtered by using Power Query date/time parameters with the reserved, case-sensitive names **RangeStart** and **RangeEnd**. These parameters are used to filter the data imported into Power BI Desktop, and also to dynamically partition the data into ranges once published to the Power BI service. The parameter values are substituted by the service to filter for each partition. Once published, the parameter values are overridden automatically by the Power BI service. There's no need to set them in dataset settings in the service. Once published, the parameter values are overridden automatically by the Power BI service. 
 
-Once published, the parameter values are overridden automatically by the Power BI service. There is no need to set them in dataset settings in the service.
-
-It is important that the filter is pushed to the source system when queries are submitted for refresh operations. To push filtering down means the data source should support "query folding". Most data sources that support SQL queries support query folding. Data sources such as flat files, blobs, web, and OData feeds typically do not. Given the various levels of query-folding support for each data source, it is recommended that you verify that the filter logic is included in the source queries. In cases where the filter is not supported by the data source backend, it cannot be pushed down. In such cases, the mashup engine compensates and applies the filter locally, which may require retrieving the full dataset from the data source. This can cause incremental refresh to be very slow, and the process can run out of resources either in the Power BI service or in the on-premises data gateway if used.
-
-The filter will be used to partition the data into ranges in the Power BI service. It is not designed to support updating the filtered date column. An update will be interpreted as an insertion and a deletion (not an update). If the deletion occurs in the historical range and not the incremental range, it won’t get picked up. This can cause data refresh failures due to partition-key conflicts.
-
-In the Power Query Editor, select **Manage Parameters** to define the parameters with default values.
+To define the parameters with default values, in the Power Query Editor, select **Manage Parameters**.
 
 ![Manage parameters](media/service-premium-incremental-refresh/manage-parameters.png)
 
-With the parameters defined, you can apply the filter by selecting the **Custom Filter** menu option for a column.
+With the parameters defined, you can then apply the filter by selecting the **Custom Filter** menu option for a column.
 
 ![Custom filter](media/service-premium-incremental-refresh/custom-filter.png)
 
@@ -57,11 +50,23 @@ Ensure rows are filtered where the column value *is after or equal to* **RangeSt
 ![Filter rows](media/service-premium-incremental-refresh/filter-rows.png)
 
 > [!TIP]
-> While the data type of the parameters must be date/time, it is possible to convert them to match the requirements of the data source. For example, the following Power Query function converts a date/time value to resemble an integer surrogate key of the form *yyyymmdd*, which is common for data warehouses. The function can be called by the filter step.
+> While the data type of the parameters must be date/time, it's possible to convert them to match the requirements of the datasource. For example, the following Power Query function converts a date/time value to resemble an integer surrogate key of the form *yyyymmdd*, which is common for data warehouses. The function can be called by the filter step.
 >
 > `(x as datetime) => Date.Year(x)*10000 + Date.Month(x)*100 + Date.Day(x)`
 
 Select **Close and Apply** from the Power Query Editor. You should have a subset of the dataset in Power BI Desktop.
+
+#### Filter date column updates
+
+The filter on the date column is used to dynamically partition the data into ranges in the Power BI service. Incremental refresh isn't designed to support cases where the filtered date column is updated in the source system. An update is interpreted as an insertion and a deletion, not an actual update. If the deletion occurs in the historical range and not the incremental range, it won’t get picked up. This can cause data refresh failures due to partition-key conflicts.
+
+#### Query folding
+
+It's important the partition filters are pushed to the source system when queries are submitted for refresh operations. To push filtering down means the datasource should support query folding. Most data sources that support SQL queries support query folding. However, data sources like flat files, blobs, web, and OData feeds typically do not. In cases where the filter is not supported by the datasource back-end, it cannot be pushed down. In such cases, the mashup engine compensates and applies the filter locally, which may require retrieving the full dataset from the data source. This can cause incremental refresh to be very slow, and the process can run out of resources either in the Power BI service or in the on-premises data gateway if used.
+
+Given the various levels of query folding support for each datasource, it's recommended that verification is performed to ensure the filter logic is included in the source queries. To make this easier, Power BI Desktop attempts to perform this verification for you. If unable to verify, a warning is displayed in the incremental refresh dialog when defining the incremental refresh policy. SQL based data sources such as SQL, Oracle, and Teradata can rely on this warning. Other data sources may be unable to verify without tracing queries. If Power BI Desktop is unable to confirm, the following warning is displayed.
+
+ ![Query folding](media/service-premium-incremental-refresh/query-folding.png)
 
 ### Define the refresh policy
 
@@ -80,17 +85,17 @@ The incremental refresh dialog is displayed. Use the toggle to enable the dialog
 
 The header text explains the following:
 
-- Incremental refresh is supported only for workspaces on Premium capacity. Refresh policies are defined in Power BI Desktop; they are applied by refresh operations in the service.
+- Incremental refresh is supported only for workspaces on Premium capacities. Refresh policies are defined in Power BI Desktop, and they are applied by refresh operations in the service.
 
-- If you are able to download the PBIX file containing an incremental-refresh policy from the Power BI service, it will not open in Power BI Desktop. You will soon be unable to download it at all. While this may be supported in the future, bear in mind that these datasets can grow to be so large that they are impractical to download and open on a typical desktop PC.
+- If you're able to download the PBIX file containing an incremental-refresh policy from the Power BI service, it cannot be opened in Power BI Desktop. While this may be supported in the future, keep in mind these datasets can grow to be so large that they are impractical to download and open on a typical desktop computer.
 
 #### Refresh ranges
 
-The following example defines a refresh policy to store data for five full calendar years plus data for the current year up to the current date, and incrementally refresh 10 days of data. The first refresh operation will load historical data. Subsequent refreshes will be incremental, and (if scheduled to run daily) carry out the following operations.
+The following example defines a refresh policy to store data for five full calendar years plus data for the current year up to the current date, and incrementally refresh ten days of data. The first refresh operation loads historical data. Subsequent refreshes are incremental, and (if scheduled to run daily) perform the following operations:
 
 - Add a new day of data.
 
-- Refresh 10 days up to the current date.
+- Refresh ten days up to the current date.
 
 - Remove calendar years that are older than five years prior to the current date. For example, if the current date is January 1 2019, the year 2013 is removed.
 
@@ -98,13 +103,14 @@ The first refresh in the Power BI service may take longer to import all five ful
 
 ![Refresh ranges](media/service-premium-incremental-refresh/refresh-ranges.png)
 
-**Definition of these ranges might be all you need, in which case you can go straight to the publishing step below. The additional dropdowns are for advanced features.**
+> [!NOTE]
+> Definition of these ranges might be all you need, in which case you can go straight to the publishing step below. The additional dropdowns are for advanced features.
 
 ### Advanced policy options
 
 #### Detect data changes
 
-Incremental refresh of 10 days is of course much more efficient than full refresh of five years. However, we may be able to do even better. If you select the **Detect data changes** checkbox, you can select a date/time column used to identify and refresh only the days where the data has changed. This assumes such a column exists in the source system, which is typically for auditing purposes. **This should not be the same column used to partition the data with the RangeStart/RangeEnd parameters.** The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, there is no need to refresh the period. In the example, this could further reduce the days incrementally refreshed from 10 to perhaps 2.
+Incremental refresh of ten days is more efficient than full refresh of five years. However, it's possible to do even better. If you select the **Detect data changes** checkbox, you can select a date/time column used to identify and refresh only the days where the data has changed. This assumes such a column exists in the source system, which is typically for auditing purposes. **This should not be the same column used to partition the data with the RangeStart/RangeEnd parameters.** The maximum value of this column is evaluated for each of the periods in the incremental range. If it has not changed since the last refresh, there is no need to refresh the period. In the example, this could further reduce the days incrementally refreshed from ten to around two.
 
 ![Detect changes](media/service-premium-incremental-refresh/detect-changes.png)
 

@@ -452,7 +452,7 @@ Now we can explore how to develop the custom visual to show a circle and sample 
 9. In PowerShell, start the custom visual.
 
     ```powershell
-    pbiviz
+    pbiviz start
     ```
 
 ### Toggle auto reload
