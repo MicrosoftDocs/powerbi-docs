@@ -19,7 +19,7 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 No webinars scheduled yet. Check back soon for more upcoming events.
 
->[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
+>[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## Featured webinars
 

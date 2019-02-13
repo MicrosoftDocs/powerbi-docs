@@ -82,7 +82,7 @@ The following roles are required to access the Xero content pack: "Standard + Re
 <a name="FindingParams"></a>
 
 ## Finding parameters
-Provide a name for your organisation to track in Power BI. This allows you to connect to multiple different organisations. Note that you cannot connect to the same organisation multiple times, as it will affect the scheduled refresh.   
+Provide a name for your organisation to track in Power BI. This allows you to connect to multiple different organizations. Note that you cannot connect to the same organisation multiple times, as it will affect the scheduled refresh.   
 
 ## Troubleshooting
 * Xero users must have the following roles to access the Xero content pack for Power BI: "Standard + Reports" or "Advisor". The content pack relies on the user-based permissions to access reporting data through Power BI.  

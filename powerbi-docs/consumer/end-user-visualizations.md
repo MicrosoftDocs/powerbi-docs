@@ -1,5 +1,5 @@
 ---
-title: Working with Visualizations
+title: Working with Visualizations as a consumer
 description: Power BI concepts and terminology - visualizations, visuals. What is a Power BI visualization, visual.
 author: mihart
 manager: kvivek
@@ -9,12 +9,12 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/30/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Visualizations for Power BI **consumers**
+# Interact with Visualizations in reports, dashboards, and apps
 
 At its most basic, a ***visualization*** (or *visual*), is a type of chart built by Power BI *designers* using the data in *reports* and *datasets*. 
 
@@ -23,13 +23,14 @@ At its most basic, a ***visualization*** (or *visual*), is a type of chart built
 
 ## What can I do with visualizations?
 
-Visualizations are created by report and dashboard *designers* and shared with *consumers*. As a consumer, you have many options for interacting with visualizations to uncover insights and make data-driven business decisions. All of these options are listed below with links to step-by-step instructions.
+Visualizations are created by report and dashboard *designers* and shared with *consumers*. As a consumer, you have many options for interacting with visualizations to uncover insights and make data-driven business decisions. All of these options are listed in the table below, with links to step-by-step instructions.
 
-But first, a word about Q&A. Q&A is Power BI's natural language search tool. You type a question using natural language and Q&A answers the question in the form of a visualization. Q&A is a way consumers can create their own visualizations. However, the visualizations you create with Q&A cannot be saved. But, if there's something specific you want to learn from the data, and the designer didn't include it in a report or on a dashboard, Q&A is a great option. To learn more about Q&A, see [Q&A for consumers](end-user-q-and-a.md).
+> [!IMPORTANT]
+> But first, a word about Q&A. Q&A is Power BI's natural language search tool. You type a question using natural language and Q&A answers the question in the form of a visualization. Q&A is a way consumers can create their own visualizations. However, the visualizations you create with Q&A cannot be saved. But, if there's something specific you want to learn from the data, and the designer didn't include it in a report or on a dashboard, Q&A is a great option. To learn more about Q&A, see [Q&A for consumers](end-user-q-and-a.md).
 
 
 
-|Column1  |On a dashboard  |In a report  | In Q&A
+|Task  |On a dashboard  |In a report  | In Q&A
 |---------|---------|---------|--------|
 |[Add comments to a visualization for yourself or start a conversation with colleagues about the visualization](end-user-comment.md).     |  yes       |   no      |  no  |
 |[Open and explore the report where the visualization was created](end-user-tiles.md).     |    yes     |   na      |  na |
@@ -49,4 +50,5 @@ But first, a word about Q&A. Q&A is Power BI's natural language search tool. You
 
 ## Next steps
 Back to [Basic concepts for consumers](end-user-basic-concepts.md)    
-[Select a visualization to open a report](end-user-report-open.md)
+[Select a visualization to open a report](end-user-report-open.md)    
+[Types of visualizations available in Power BI](end-user-visual-type.md)

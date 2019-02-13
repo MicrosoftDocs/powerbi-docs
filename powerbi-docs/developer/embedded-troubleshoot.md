@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/20/2018
+ms.date: 02/05/2019
 ---
 
 # Troubleshoot your embedded application
@@ -94,6 +94,14 @@ The backend of the application may need to refresh the auth token before calling
 
 ## Authentication
 
+### Authentication failed with AADSTS90002: Tenant 'authorize' not found
+
+ If you're receiving messages logging in such as ***error: invalid_request, error_description: AADSTS90002: Tenant 'authorize' not found***, that is because ADAL 4.x doesn't support "https://login.microsoftonline.com/{Tenant}/oauth2/authorize/" as an authority url.
+ 
+To resolve this issue you should trim "oauth2/authorize/" from the end of your authority url, see [Power BI Developer Samples](https://github.com/Microsoft/PowerBI-Developer-Samples) for reference.
+
+ Check [Better Authority validation](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Changes-adalnet-4.0#better-authority-validation) from ADAL 4.x release notes.
+
 ### Authentication failed with AADSTS70002 or AADSTS50053
 
 **_(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password)_**
@@ -148,7 +156,7 @@ To verify which it is, try the steps below.
 
 ### AADSTS90094: The grant requires admin permission
 
-**_Symptoms:_**</br>
+**_Symptoms:_**<br>
 When a non-admin user tries to sign in to an application for the first time while granting consent, then gets one of the following errors:
 
 * ConsentTest needs permission to access resources in your organization that only an admin can grant. Ask an admin to grant permission to this app before you can use it.
@@ -158,7 +166,7 @@ When a non-admin user tries to sign in to an application for the first time whil
 
 An admin user can sign in and grant consent successfully.
 
-**_Root cause:_**</br>
+**_Root cause:_**<br>
 User consent is disabled for the tenant.
 
 **_Several fixes are possible:_**
@@ -238,7 +246,7 @@ You can go through the [Embedding setup tool](https://aka.ms/embedsetup) to quic
 
 Verify that you have all the proper prerequisites before using the Embedding setup tool. You need a **Power BI Pro** account and a **Microsoft Azure** subscription.
 
-* If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
+* If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 * If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 * You need to have your own [Azure Active Directory tenant ](create-an-azure-active-directory-tenant.md) setup.
 * You need [Visual Studio](https://www.visualstudio.com/) installed (version 2013 or later).
@@ -289,7 +297,7 @@ For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
-If you require further assistance, then [contact support](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) or [create a support ticket via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) and provide the error messages you encounter.
+If you require further assistance, then [contact support](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) or [create a support ticket via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) and provide the error messages you encounter.
 
 ## Next steps
 

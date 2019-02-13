@@ -13,7 +13,7 @@ ms.date: 12/10/2018
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
-# Tutorial: Embed a Power BI report, dashboard, or tile into an application for your organization
+# Tutorial: Embed Power BI content into an application for your organization
 
 In **Power BI**, you can embed reports, dashboards, or tiles into an application by using user owns data. **User owns data** lets your application extend the Power BI service to use embedded analytics. This tutorial demonstrates how to integrate a report into an application. You use the Power BI .NET SDK with the Power BI JavaScript API to embed Power BI into an application for your organization.
 
@@ -28,7 +28,7 @@ In this tutorial, you learn the following tasks:
 
 To get started, you need a Power BI Pro account and a Microsoft Azure subscription:
 
-* If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/en-us/pricing/) before you begin.
+* If you're not signed up for Power BI Pro, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 * If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 * Set up your own [Azure Active Directory (Azure AD) tenant](create-an-azure-active-directory-tenant.md).
 * Install [Visual Studio](https://www.visualstudio.com/), version 2013 or later.

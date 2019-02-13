@@ -14,6 +14,8 @@
       href: end-user-experience.md
     - name: "What can I do with Power BI?"
       href: end-user-reading-view.md
+    - name: "Sign in for the first time"
+      href: end-user-sign-in.md
   - name: Tutorials
     items:
     - name: "Create a dashboard alert"
@@ -42,10 +44,14 @@
         href: end-user-report-filter.md
       - name: "Learn how report visuals cross-filter each other"
         href: end-user-interactions.md
+      - name: "Export a report to PDF"
+        href: end-user-pdf.md
     - name: Visualizations
       items: 
       - name: "What can I do with visualizations?"
         href: end-user-visualizations.md
+      - name: "Types of visualizations"
+        href: end-user-visual-type.md
       - name: "Show the data that was used to create the visualization"
         href: end-user-show-data.md
       - name: "Drill down in a visualization in Power BI"
@@ -54,6 +60,8 @@
         href: ../power-bi-visualizations-arcgis.md
     - name: Common tasks
       items: 
+      - name: "Look up the content owner and last refreshed date"
+        href: end-user-fresh.md
       - name: "Different ways to zoom into content using Focus and Full screen modes"
         href: end-user-focus.md
       - name: "Favorite dashboards, reports, and apps in Power BI"

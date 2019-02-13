@@ -66,7 +66,7 @@ You can select a checkbox beside any table to see a preview. You can select one 
 > 
 > 
 
-When you select **Load** the data is loaded into **Power BI Desktop**.  The connector will load data according to the table's default time period.  If you need to customize the time period, [you can setup a custom query](https://docs.microsoft.com/en-us/power-bi/desktop-connect-azure-consumption-insights#using-azure-consumption-insights).
+When you select **Load** the data is loaded into **Power BI Desktop**.  The connector will load data according to the table's default time period.  If you need to customize the time period, [you can setup a custom query](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights#using-azure-consumption-insights).
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
 
@@ -199,7 +199,7 @@ The columns and names of details in the Azure Portal are similar in the API and 
 | SubscriptionGuid |subscriptionGuid |SubscriptionGuid |No |
 
 ## Next steps
-﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
+There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)

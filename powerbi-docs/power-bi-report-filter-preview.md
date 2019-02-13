@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 01/30/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -104,7 +104,7 @@ You can also format these elements for filter cards, depending on if they're app
 
 ## View filters for a visual in Reading mode
 
-In Reading mode, you can hover over a visual and see a pop-up with all the filters, slicers, and so on, affecting that visual. The formatting of the pop-up is the same as the filter pane formatting. 
+In Reading mode, hover over the filter icon for a visual to see a pop-up with all the filters, slicers, and so on, affecting that visual. The formatting of the pop-up is the same as the filter pane formatting. 
 
 ![Filters affecting a visual](media/power-bi-report-filter-preview/power-bi-filter-per-visual.png)
 

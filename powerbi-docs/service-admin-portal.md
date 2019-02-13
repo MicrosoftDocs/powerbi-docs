@@ -224,7 +224,7 @@ Users in the organization can use Excel to view and interact with on-premises Po
 
 ### Use ArcGIS Maps for Power BI
 
-Users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. [Learn more](power-bi-visualization-arcgis.md)
+Users in the organization can use the ArcGIS Maps for Power BI visualization provided by Esri. [Learn more](visuals/power-bi-visualization-arcgis.md)
 
 ### Use global search for Power BI (Preview)
 
@@ -232,12 +232,17 @@ Users in the organization can use external search features that rely on Azure Se
 
 ## Custom visuals settings
 
-### Enable custom visuals for the entire organization
+### Add and use custom visuals
 
 Users in the organization can interact with and share custom visuals. [Learn more](power-bi-custom-visuals.md)
 
 > [!NOTE]
-> This setting applies to the entire organization and cannot be limited to specific groups.
+> This setting can be applied to the entire organization or can be limited to specific groups.
+
+### Allow only certified visuals
+
+Users in the organization who have been granted permissions to add and use custom visuals, denoted by the setting "Add and use custom visuals", will only be able to use [certified custom visuals](https://go.microsoft.com/fwlink/?linkid=2002010) (uncertified visuals will be blocked and will display an error message when used). 
+
 
 ## R visuals settings
 
@@ -283,16 +288,6 @@ Users in the organization can tag dashboards with classifications that indicate 
 ### Embed content in apps
 
 Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](developer/embedding.md)
-
-## Workspaces and import settings
-
-### Author content in workspaces
-
-Users in the organization can access workspaces to connect to data and author content. [Learn more](service-create-the-new-workspaces.md)
-
-### Import data into Power BI
-
-Users in the organization can import data into the service, such as publishing reports from Power BI Desktop, uploading Power BI report files, and connecting to data directly from the service. [Learn more](desktop-upload-desktop-files.md)
 
 ## Dataflow settings (preview)
 
@@ -383,7 +378,7 @@ To update the visual from the organizational store, select the gear icon. Browse
 
 Make sure the Visual ID remains unchanged. The new file replaces the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which prompts them to replace the current version that they have in the report.
 
-For more information, visit [Frequently asked questions about organizational custom visuals](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
+For more information, visit [Frequently asked questions about organizational custom visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
 
 ## Dataflow storage (preview)
 

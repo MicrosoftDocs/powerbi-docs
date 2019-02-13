@@ -48,6 +48,8 @@
     ]     
   },
   "need_generate_pdf_url_template": true,
+  "enable_branch_build_custom_validation": true,
+  "enable_pull_request_custom_validation": true,
   "Targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
