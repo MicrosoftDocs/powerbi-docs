@@ -93,7 +93,7 @@ Follow the steps below to start embedding your content using the sample applicat
 
     <center>
 
-    | **MasterUser** </br> (Power BI Pro license) | **ServicePrincipal** </br> (app-only token)|
+    | **MasterUser** <br> (Power BI Pro license) | **ServicePrincipal** <br> (app-only token)|
     |---------------|-------------------|
     | [applicationId](#application-id) | [applicationId](#application-id) |
     | [workspaceId](#workspace-id) | [workspaceId](#workspace-id) |
@@ -135,11 +135,11 @@ This attribute is needed for both AuthenticationTypes (master account and [servi
 
 Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
-URL </br>
+URL <br>
 
 ![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
-Powershell </br>
+Powershell <br>
 
 ```powershell
 Get-PowerBIworkspace -name "App Owns Embed Test"
@@ -153,11 +153,11 @@ This attribute is needed for both AuthenticationTypes (master account and [servi
 
 Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
-URL</br>
+URL<br>
 
 ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
 
-Powershell </br>
+Powershell <br>
 
 ```powershell
 Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport

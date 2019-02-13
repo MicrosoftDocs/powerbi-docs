@@ -1,5 +1,5 @@
 ---
-title: Diganostic logging for the Power BI Embedded service in Azure | Microsoft Docs
+title: Diagnostic logging for the Power BI Embedded service in Azure | Microsoft Docs
 description: Learn about setting up diagnostic logging for the Power BI Embedded service in Azure.
 author: markingmyname
 ms.author: maghan
@@ -109,8 +109,8 @@ The engine category instructs the resource to log the following events, and on e
 |    Audit Logout    |    Records all disconnect from   engine events since the trace started.    |
 |    Error    |    Records all engine error   events since the trace started.    |
 
-</br>
-</br>
+<br>
+<br>
 
 | Property Name | Vertipaq Query End Example | Property Description |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
