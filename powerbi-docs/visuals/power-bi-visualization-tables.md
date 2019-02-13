@@ -131,7 +131,7 @@ Sometimes Power BI will truncate a column heading in a report and on a dashboard
 ![video closeup of resizing column](media/power-bi-visualization-tables/resizetable.gif)
 
 ## Considerations and troubleshooting
-* When applying column formatting, you can only choose one alignment option per column: Auto, Left, Center, Right. Usually, a column contains all text or all numbers, and not a mix. But in cases where a column contains both numbers and text, **Auto** will align left for text and right for numbers. This behavior supports languagues where you read left-to-right.   
+* When applying column formatting, you can only choose one alignment option per column: Auto, Left, Center, Right. Usually, a column contains all text or all numbers, and not a mix. But in cases where a column contains both numbers and text, **Auto** will align left for text and right for numbers. This behavior supports languages where you read left-to-right.   
 
 ## Next steps
 

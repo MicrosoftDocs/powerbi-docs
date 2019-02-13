@@ -48,7 +48,7 @@ Want to watch someone else create a treemap first?  Skip to 2:10 in this video t
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-Or, create your own treemap. These instructions use the Retail Analysis Sample. To follow along, sign in to Power BI service and select **Get Data \> Samples \>  Retail Analysis Sample \> Connect \> Go to dashboard**. Creating visualizations in a report requires edit permissions to the dataset and report. Luckily, the Power BI samples are editable. But you can't add visualizations to a report that soeone has shared with you.  
+Or, create your own treemap. These instructions use the Retail Analysis Sample. To follow along, sign in to Power BI service and select **Get Data \> Samples \>  Retail Analysis Sample \> Connect \> Go to dashboard**. Creating visualizations in a report requires edit permissions to the dataset and report. Luckily, the Power BI samples are editable. But you can't add visualizations to a report that someone has shared with you.  
 
 1. Select the "Total stores" tile to open the Retail Analysis sample report.    
 2. Open [Editing View](../service-interact-with-a-report-in-editing-view.md) and select the **Sales** > **Last Years Sales** measure.   

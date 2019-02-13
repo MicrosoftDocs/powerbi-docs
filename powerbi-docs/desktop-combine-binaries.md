@@ -52,7 +52,7 @@ With the new behavior of **combine files**, you can easily combine all files wit
 In addition, you can easily apply additional transformation or extraction steps by modifying the automatically created *exemplar query*, without having to worry about modifying or creating additional *function query* steps. Any changes to the *exemplar query* are automatically generated in the linked *function query*.
 
 ## Next steps
-﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
+There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)

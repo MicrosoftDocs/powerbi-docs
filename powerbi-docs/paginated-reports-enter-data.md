@@ -78,11 +78,11 @@ Now that paginated reports are supported in the Power BI service in preview, you
 
 You can also upload your paginated report to a Power BI Report Server or SQL Server Reporting Services 2016 or 2017 report server. Before you do, you need to add the following item to your RsReportServer.config as an additional data extension. Back up your RsReportServer.config file before you make the change, in case you run into any issues.
 
-```
-<Extension Name=”ENTERDATA” Type=”Microsoft.ReportingServices.DataExtensions.XmlDPConnection,Microsoft.ReportingServices.DataExtensions”>
-<Configuration>
-<ConfigName>ENTERDATA</ConfigName>
-</Configuration>
+```xml
+<Extension Name="ENTERDATA" Type="Microsoft.ReportingServices.DataExtensions.XmlDPConnection,Microsoft.ReportingServices.DataExtensions">
+    <Configuration>
+        <ConfigName>ENTERDATA</ConfigName>
+    </Configuration>
 </Extension>
 ```
 
