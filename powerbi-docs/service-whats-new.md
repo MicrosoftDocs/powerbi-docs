@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 2/9/2019
 ms.author: nikhilga
 
 LocalizationGroup: Get started
@@ -27,10 +27,41 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## September 2018
-* [Dashboard commenting](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) in the Power BI service.
 
-## Previous months (2018)
+## February 2019
+* Workloads and active dataset size metrics in [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Export to PDF and on-demand e-mail subcriptions(service-report-subscribe.md).
+* Bulk operations in the Admin Portal.
+
+## Previous months (2019)
+### January 2019
+* [Embedding secure Power BI reports](service-embed-secure.md) in internal portals or websites.
+* Updates to [dataflows](service-dataflows-overview.md) editor with new connectors, and support for native SQL queries and Power Query Online transformations.
+* [Personal bookmarks](https://powerbi.microsoft.com/en-us/blog/announcing-personal-bookmarks-in-the-power-bi-service/) in the Power BI service.
+* Time-based scheduling with e-mail subscriptions.
+
+## 2018
+### December 2018
+* AI-powered [recommended apps](https://powerbi.microsoft.com/en-us/blog/announcing-ai-powered-app-recommendations-getting-the-right-insights-to-the-right-people/) in Power BI Home.
+* [Workspace management](https://powerbi.microsoft.com/en-us/blog/workspace-management-in-the-admin-portal/) in the Admin Portal.
+* Preview of Power BI Dataflows and Azure Data Lake Storage Gen2 Integration in [dataflows](service-dataflows-overview.md).
+* Power BI solution templates became open source.
+
+### November 2018
+* Power BI data prep available with [dataflows](service-dataflows-overview.md) public preview.
+* Public preview of [paginated reports](paginated-reports-report-builder-power-bi.md) in Power BI Premium.
+* Data size and count of datasets in memory in the [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+
+### October 2018
+* Aggregations[desktop-aggregations.md] in the Power BI service.
+* Power BI expanded to three new regions: Central India, Australia East, and Central US (Iowa). 
+* Export to PowerPoint made generally available.
+
+### September 2018
+* [Dashboard commenting](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) in the Power BI service.
+* Public preivew of [Power BI Home and Global Search](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
+* Abiliy to [monitoring queries](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) in the [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+
 ### August 2018
 * [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) for Power BI Premium.
 * Power BI [Report URL filter](service-url-filters.md) improvements.
@@ -74,7 +105,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 *	Scheduled refresh support for Azure Analysis Services (AAS).
 
 ## Previous months (2017)
-## October and November 2017
+### October and November 2017
 *	Selective publish of content with [Power BI Apps](service-create-distribute-apps.md).
 *	External user distribution with [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
 * AI-powered app recommendations.
@@ -82,7 +113,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * E-mail subscriptions support for apps. 
 * Granular admin control for [publish to web](https://docs.microsoft.com/power-bi/service-admin-portal#export-and-sharing-settings).
 
-## September 2017
+### September 2017
 * In Premium capacity, share dashboards to users who don't have a Power BI Pro license.
 * Allocate capacities to suit your business needs with v-core pooling.
 * Instantly scale-up or scale-down capacities with one click.
