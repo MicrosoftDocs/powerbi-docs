@@ -41,7 +41,7 @@ To enable SSO for SAP HANA, follow these steps first:
 
 For more information about setting up SSO for SAP HANA by using Kerberos, see [Single Sign-on Using Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html) in the SAP HANA Security Guide. Also see the links from that page, particularly SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory.
 
-## Preparing for Kerberos Constrained Delegation
+## Prepare for Kerberos Constrained Delegation
 
 You must configure several items for Kerberos Constrained Delegation to work properly, including *Service Principal Names* (SPN) and delegation settings on service accounts.
 
@@ -103,55 +103,51 @@ In the following steps, we assume an on-premises environment with two machines: 
 * SQL Server data source machine name: **PBIEgwTestSQL**
 * SQL Server data source service account: **PBIEgwTest\SQLService**
 
-Given those example names and settings, the configuration steps are the following:
+Here's how to configure the delegation settings:
 
 1. With domain administrator rights, launch **Active Directory Users and Computers**.
 
-2. Right-click on the gateway service account (**PBIEgwTest\GatewaySvc**) and select **Properties**.
+2. Right-click on the gateway service account (**PBIEgwTest\GatewaySvc**), and select **Properties**.
 
 3. Select the **Delegation** tab.
 
-4. Select **Trust this computer for delegation to specified services only.**
+4. Select **Trust this computer for delegation to specified services only** > **Use any authentication protocol**.
 
-5. Select **Use any authentication protocol.**
-
-6. Under the **Services to which this account can present delegated credentials**, select **Add**.
+6. Under **Services to which this account can present delegated credentials**, select **Add**.
 
 7. In the new dialog box, select **Users or Computers**.
 
-8. Enter the service account for the SQL Server Database service (**PBIEgwTest\SQLService**) and select **OK**.
+8. Enter the service account for the SQL Server data source (**PBIEgwTest\SQLService**), and select **OK**.
 
-9. Select the SPN that you created for the database server. In our example, the SPN will begin with **MSSQLSvc**. If you added both the FQDN and the NetBIOS SPN for your database service, select both. You may only see one.
+9. Select the SPN that you created for the database server. In our example, the SPN begins with **MSSQLSvc**. If you added both the FQDN and the NetBIOS SPN for your database service, select both. You might only see one.
 
 10. Select **OK**. You should see the SPN in the list now.
 
-11. Optionally, you can select **Expanded** to show both the FQDN and NetBIOS SPN.
+    Optionally, you can select **Expanded** to show both the FQDN and NetBIOS SPN. The dialog box looks similar to the following if you selected **Expanded**. Select **OK**.
 
-12. The dialog box will look similar to the following if you selected **Expanded**. Select **OK**.
+    ![Screenshot of Gateway Connector Properties dialog box](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
-    ![Gateway connector properties](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
-
-Finally, on the machine running the gateway service (**PBIEgwTestGW** in our example), the gateway service account must be granted the local policy “Impersonate a client after authentication”. You can perform/verify this with the Local Group Policy Editor (**gpedit**).
+Finally, on the machine running the gateway service (**PBIEgwTestGW** in our example), you must grant the gateway service account the local policy **Impersonate a client after authentication**. You can perform and verify this with the Local Group Policy Editor (**gpedit**).
 
 1. On the gateway machine, run: *gpedit.msc*.
 
-1. Navigate to **Local Computer Policy > Computer Configuration > Windows Settings > Security Settings > Local Policies > User Rights Assignment**, as shown in the following image.
+1. Go to **Local Computer Policy** > **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **User Rights Assignment**.
 
-    ![User rights assignment](media/service-gateway-sso-kerberos/user-rights-assignment.png)
+    ![Screenshot of Local Computer Policy folder structure](media/service-gateway-sso-kerberos/user-rights-assignment.png)
 
-1. From the list of policies under **User Rights Assignment**, select **Impersonate a client after authentication**.
+1. Under **User Rights Assignment**, from the list of policies, select **Impersonate a client after authentication**.
 
-    ![Impersonate a client](media/service-gateway-sso-kerberos/impersonate-client.png)
+    ![Screenshot of Impersonate a client policy](media/service-gateway-sso-kerberos/impersonate-client.png)
 
-    Right-click and open the **Properties** for **Impersonate a client after authentication**, and check the list of accounts. It must include the gateway service account (**PBIEgwTest\GatewaySvc**).
+    Right-click, and open **Properties**. Check the list of accounts. It must include the gateway service account (**PBIEgwTest\GatewaySvc**).
 
-1. From the list of policies under **User Rights Assignment**, select **Act as part of the operating system (SeTcbPrivilege)**. Ensure that the gateway service account is included in the list of accounts as well.
+1. Under **User Rights Assignment**, from the list of policies, select **Act as part of the operating system (SeTcbPrivilege)**. Ensure that the gateway service account is included in the list of accounts as well.
 
 1. Restart the **On-premises data gateway** service process.
 
 If you're using SAP HANA, we recommend following these additional steps, which can yield a small performance improvement.
 
-1. In the gateway installation directory find and open this configuration file: *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
+1. In the gateway installation directory, find and open this configuration file: *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
 
 1. Find the *FullDomainResolutionEnabled* property, and change its value to *True*.
 
@@ -161,50 +157,50 @@ If you're using SAP HANA, we recommend following these additional steps, which c
     </setting>
     ```
 
-## Running a Power BI report
+## Run a Power BI report
 
-After all the configuration steps outlined earlier in this article have been completed, you can use the **Manage Gateway** page in Power BI to configure the data source. Then under its **Advanced Settings** enable SSO, and publish reports and datasets binding to that data source.
+After completing all the configuration steps, you can use the **Manage Gateway** page in Power BI to configure the data source. Then, under **Advanced Settings**, enable SSO, and publish reports and datasets binding to that data source.
 
-![Advanced settings](media/service-gateway-sso-kerberos/advanced-settings.png)
+![Screenshot of Advanced settings option](media/service-gateway-sso-kerberos/advanced-settings.png)
 
-This configuration will work in most cases. However, with Kerberos there can be different configurations depending on your environment. If the report still won't load, you'll need to contact your domain administrator to investigate further.
+This configuration works in most cases. However, with Kerberos there can be different configurations depending on your environment. If the report still won't load, contact your domain administrator to investigate further.
 
-## Switching the gateway to a domain account
+## Switch the gateway to a domain account
 
-Earlier in this article, we discussed switching the gateway from a local service account to run as a domain account, using the **On-premises data gateway** user interface. Here are the steps necessary to do so.
+If necessary, you can switch the gateway from a local service account to run as a domain account, by using the **On-premises data gateway** user interface. Here's how:
 
 1. Launch the **On-premises data gateway** configuration tool.
 
-   ![Gateway desktop app](media/service-gateway-sso-kerberos/gateway-desktop-app.png)
+   ![Screenshot of option to launch gateway desktop app](media/service-gateway-sso-kerberos/gateway-desktop-app.png)
 
 2. Select the **Sign-in** button on the main page, and sign in with your Power BI account.
 
 3. After sign-in is completed, select the **Service Settings** tab.
 
-4. Select **Change account** to start the guided walk-through, as shown in the following image.
+4. Select **Change account** to start the guided walk-through.
 
-   ![Change account](media/service-gateway-sso-kerberos/change-account.png)
+   ![Screenshot of On-premises data gateway desktop app, with Change account option highlighted](media/service-gateway-sso-kerberos/change-account.png)
 
-## Configuring SAP BW for SSO
+## Configure SAP BW for SSO
 
 Now that you understand how Kerberos works with a gateway, you can configure SSO for your SAP Business Warehouse (SAP BW). The following steps assume you've already [prepared for Kerberos constrained delegation](#preparing-for-kerberos-constrained-delegation), as described earlier in this article.
 
-This guide attempts to be as comprehensive as possible. If you have already completed some of these steps, you can skip them: For example you’ve already created a Service User for your BW server and mapped an SPN to it, or you’ve already installed the gsskrb5 library.
+This guide attempts to be as comprehensive as possible. If you've already completed some of these steps, you can skip them. For example, you might have already created a service user for your SAP BW server and mapped an SPN to it, or you might have already installed the `gsskrb5` library.
 
-### Setup gsskrb5 on client machines and the BW server
+### Set up gsskrb5 on client machines and the SAP BW server
 
 > [!NOTE]
-> gsskrb5 is no longer actively supported by SAP. For more information, see [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Also note that gsskrb5 does not allow for SSO connections from the Data Gateway to BW Message Servers. Only connections to BW Application Servers are possible.
+> `gsskrb5` is no longer actively supported by SAP. For more information, see [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Also note that `gsskrb5` doesn't allow for SSO connections from the data gateway to SAP BW Message Servers. Only connections to SAP BW Application Servers are possible.
 
-gsskrb5 must be in use by both the client and server to complete an SSO connection through the gateway. The Common Crypto Library (sapcrypto) is not currently supported.
+`gsskrb5` must be in use by both the client and server to complete an SSO connection through the gateway. The Common Crypto Library (sapcrypto) isn't currently supported.
 
-1. Download gsskrb5/gx64krb5 from [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-user required). Ensure you have at least version 1.0.11.x of gsskrb5.dll and gx64krb5.dll.
+1. Download `gsskrb5/gx64krb5` from [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-user required). Ensure you have at least version 1.0.11.x of gsskrb5.dll and gx64krb5.dll.
 
-1. Put the library in a location on your gateway machine that is accessible by your gateway instance (and also by the SAP GUI if you want to test the SSO connection using SAP GUI / Logon).
+1. Put the library in a location on your gateway machine that is accessible by your gateway instance (and also by the SAP GUI if you want to test the SSO connection by using SAP GUI / Logon).
 
-1. Put another copy on your BW server machine in a location accessible by the BW server.
+1. Put another copy on your SAP BW server machine in a location accessible by the SAP BW server.
 
-1. On the client and server machines, set the SNC\_LIB and SNC\_LIB\_64 environment variables to point to the locations of gsskrb5.dll and gx64krb5.dll, respectively.
+1. On the client and server machines, set the `SNC\_LIB` and `SNC\_LIB\_64` environment variables to point to the locations of gsskrb5.dll and gx64krb5.dll, respectively.
 
 ### Create a BW Service User and enable SNC communication using gsskrb5 on the BW server
 
