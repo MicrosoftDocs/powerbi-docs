@@ -9,7 +9,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/14/2019
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -32,6 +32,10 @@ In the Power BI service, select a report to display it on the canvas. You can al
 When the report you want to export to PowerPoint is displayed on the canvas, select **File > Export to PowerPoint** from the menu bar in the Power BI service.
 
 ![Close up left navbar with My Workspace selected, File dropdown selected](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
+   
+A pop-up will appear where you have the option to select the **Current view** or **Default view**.  **Current view** exports the report in the current state, which includes the active changes you made to slicer and filter values.  Most users select this option.  Alternately, selecting **Default view** exports the report in the original state (as the author shared it), and doesn't reflect any changes you made to the original state.
+    
+Additionally, there is a checkbox to select whether or not to export the hidden tabs of a report.  Simply check this box if you would like to only export report tabs that are visibile to you in your browser.  If you'd prefer to get all the hidden tabs as part of your export, you may leave this unchecked.  If the checkbox is greyed out, there are no hidden tabs in the report.  Once you have made your selections, click **Export** to continue.
 
 You'll see a notification banner in the upper right corner of the Power BI service browser window that the report is being exported to PowerPoint. This might take a few minutes, and you can continue to work in Power BI while the report is being exported.
 
@@ -71,7 +75,6 @@ What you do with your PowerPoint deck from there, or any of the high resolution 
 ## Limitations
 There are a few considerations and limitations to keep in mind when working with the **Export to PowerPoint** feature.
 
-* In-session interactivity such as highlighting and filtering, drill-down, and so on, are not yet supported when exporting to PowerPoint. The exported PowerPoint shows the original visuals as they were saved in the report. If you've applied filters and slicers and want this preserved in the export, save the report and then do the export.
 * **R visuals** are not currently supported. Any such visuals are exported as a blank image into PowerPoint with an error message that states the visual is not supported.
 * **Custom visuals** that have been **certified** are supported. For more information on certified custom visuals, including how to get a custom visual certified, see [getting a custom visual certified](../power-bi-custom-visuals-certified.md). Custom visuals that have not been certified are not supported, and are exported as a blank image into PowerPoint with an error message that states the visual is not supported.
 * Reports with more than 30 report pages can't currently be exported.
