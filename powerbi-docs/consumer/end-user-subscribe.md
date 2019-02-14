@@ -9,7 +9,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 12/14/2019
 
 LocalizationGroup: Common tasks
 ---
@@ -70,7 +70,7 @@ Only you can manage your subscriptions. Select **Subscribe** again and choose **
 A subscription will end if the Pro license expires, the dashboard or report is deleted by the owner, or the user account used to create the subscription is deleted.
 
 ## Considerations and troubleshooting
-* Dashboards with over 25 pinned tiles, or 4 pinned live report pages, may not render fully in subscription e-mails sent to users.  Subscriptions to dashboards over these recommendations will not be blocked, however, they will be considered unsupported if you encounter issues and should be modified accordingly.
+* Dashboards with more than 25 pinned tiles, or four pinned live report pages, may not render fully in subscription e-mails sent to users. We suggest that you reduce pinned tiles to less than 25 and pinned live reports to less than four to ensure that the email renders correctly.  
 * For dashboard email subscriptions, if any tiles have row level security (RLS) applied, those tiles will not display.  For report email subscriptions, if the dataset uses RLS, you will not be able to create a subscription.
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page, and it gets renamed, you will have to re-create your subscription
 * If you aren't able to use the subscription feature, contact your system administrator. Your organization may have disabled this feature for authentication or other reasons.  
