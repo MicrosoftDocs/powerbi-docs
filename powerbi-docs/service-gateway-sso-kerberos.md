@@ -14,7 +14,7 @@ LocalizationGroup: Gateways
 
 # Use Kerberos for single sign-on (SSO) from Power BI to on-premises data sources
 
-Use [Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) to enable seamless single sign-on connectivity. Enabling SSO makes it easy for Power BI reports and dashboards to refresh data from on-premises sources.
+Use [Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) to enable seamless single sign-on (SSO) connectivity. Enabling SSO makes it easy for Power BI reports and dashboards to refresh data from on-premises sources.
 
 ## Supported data sources
 
@@ -33,76 +33,68 @@ We also support SAP HANA with [Security Assertion Markup Language (SAML)](servic
 
 To enable SSO for SAP HANA, follow these steps first:
 
-* Ensure the SAP HANA server is running the required minimum version, which depends on your SAP Hana server platform level:
+* Ensure the SAP HANA server is running the required minimum version, which depends on your SAP HANA server platform level:
   * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
   * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
   * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
 * On the gateway machine, install SAP’s latest HANA ODBC driver.  The minimum version is HANA ODBC version 2.00.020.00 from August 2017.
 
-For more information about setting up and configuring single sign-on for SAP HANA using Kerberos, see the topic [Single Sign-on Using Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html) in the SAP HANA Security Guide and the links from that page, particularly SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory].
+For more information about setting up SSO for SAP HANA by using Kerberos, see [Single Sign-on Using Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html) in the SAP HANA Security Guide. Also see the links from that page, particularly SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory.
 
 ## Preparing for Kerberos Constrained Delegation
 
-Several items must be configured in order for Kerberos Constrained Delegation to work properly, including *Service Principal Names* (SPN) and delegation settings on service accounts.
+You must configure several items for Kerberos Constrained Delegation to work properly, including *Service Principal Names* (SPN) and delegation settings on service accounts.
 
-### Prerequisite 1: Install & configure the On-premises data gateway
+### Prerequisite 1: Install and configure the Microsoft on-premises data gateway
 
-This release of the On-premises data gateway supports an in-place upgrade, as well as settings take-over of existing gateways.
+This release of the on-premises data gateway supports an in-place upgrade, as well as settings take-over of existing gateways.
 
 ### Prerequisite 2: Run the gateway Windows service as a domain account
 
-In a standard installation, the gateway runs as a machine-local service account (specifically, *NT Service\PBIEgwService*) such as what's shown in the following image:
+In a standard installation, the gateway runs as a machine-local service account (specifically, *NT Service\PBIEgwService*).
 
-![Service account](media/service-gateway-sso-kerberos/service-account.png)
+![Screenshot of service account](media/service-gateway-sso-kerberos/service-account.png)
 
-To enable **Kerberos Constrained Delegation**, the gateway must run as a domain account, unless your Azure AD is already synchronized with your local Active Directory (using Azure AD DirSync/Connect). If you need to switch the account to a domain account, see [Switching the gateway to a domain account](#switching-the-gateway-to-a-domain-account) later in this article.
+To enable Kerberos Constrained Delegation, the gateway must run as a domain account. If you need to switch the account, see [Switch the gateway to a domain account](#switching-the-gateway-to-a-domain-account) later in this article.
 
 > [!NOTE]
-> If Azure AD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need to perform local AD lookups at runtime, and you can use the local Service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration (they are simply applied to the gateway's computer object in Active Directory, instead of the domain account).
+> If Azure Active Directory (Azure AD) Connect is configured, and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. You can use the local service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration. They are simply applied to the gateway's computer object in Azure AD, instead of the domain account.
 
 ### Prerequisite 3: Have domain admin rights to configure SPNs (SetSPN) and Kerberos Constrained Delegation settings
 
-While it is technically possible for a domain administrator to temporarily or permanently allow rights to someone else to configure SPNs and Kerberos delegation without requiring domain admin rights, that's not the recommended approach. In the following section, we cover the configuration steps necessary for **Prerequisite 3** in detail.
+It's not recommended for a domain administrator to temporarily or permanently allow rights to someone else to configure SPNs and Kerberos delegation without requiring domain admin rights. In the following section, we cover the recommended configuration steps in more detail.
 
-## Configuring Kerberos Constrained Delegation for the gateway and data source
+## Configure Kerberos Constrained Delegation for the gateway and data source
 
-To properly configure the system, we need to configure or validate the following two items:
-
-1. If needed, configure an SPN for the gateway service domain account.
-
-2. Configure delegation settings on the gateway service domain account.
-
-Note that you must be a domain administrator to perform those two configuration steps.
-
-The following sections describe these steps in turn.
+As a domain administrator, configure an SPN for the gateway service domain account, and configure delegation settings on the gateway service domain account.
 
 ### Configure an SPN for the gateway service account
 
-First, determine whether an SPN was already created for the domain account used as the gateway service account, but following these steps:
+First, determine whether an SPN was already created for the domain account used as the gateway service account:
 
 1. As a domain administrator, launch **Active Directory Users and Computers**.
 
-2. Right-click on the domain, select **Find**, and type in the account name of the gateway service account
+2. Right-click on the domain, select **Find**, and enter the account name of the gateway service account.
 
-3. In the search result, right-click on the gateway service account and select **Properties**.
+3. In the search result, right-click on the gateway service account, and select **Properties**.
 
-4. If the **Delegation** tab is visible on the **Properties** dialog, then an SPN was already created and you can jump ahead to the next subsection about configuring Delegation settings.
+4. If the **Delegation** tab is visible on the **Properties** dialog box, then an SPN was already created. You can jump ahead to configuring delegation settings.
 
-    If there is no **Delegation** tab on the **Properties** dialog, you can manually create an SPN on that account, which adds the **Delegation** tab (that is the easiest way to configure delegation settings). Creating an SPN can be done using the [setspn tool](https://technet.microsoft.com/library/cc731241.aspx) that comes with Windows (you need domain admin rights to create the SPN).
+    If there is no **Delegation** tab on the **Properties** dialog box, you can manually create an SPN on that account. This adds the **Delegation** tab. Use the [setspn tool](https://technet.microsoft.com/library/cc731241.aspx) that comes with Windows (you need domain admin rights to create the SPN).
 
-    For example, imagine the gateway service account is “PBIEgwTest\GatewaySvc”, and the machine name with the gateway service running is called **Machine1**. To set the SPN for the gateway service account for that machine in this example, you would run the following command:
+    For example, imagine the gateway service account is “PBIEgwTest\GatewaySvc”, and the machine name with the gateway service running is called **Machine1**. To set the SPN for the gateway service account for that machine in this example, run the following command:
 
-    ![Set SPN](media/service-gateway-sso-kerberos/set-spn.png)
+    ![Image of set SPN command](media/service-gateway-sso-kerberos/set-spn.png)
 
     With that step completed, we can move on to configuring delegation settings.
 
 ### Configure delegation settings on the gateway service account
 
-The second configuration requirement is the delegation settings on the gateway service account. There are multiple tools you can use to perform these steps. In this article, we'll use **Active Directory Users and Computers**, which is a Microsoft Management Console (MMC) snap-in that you can use to administer and publish information in the directory. It's available on domain controllers by default. You can also enable it through **Windows Feature** configuration on other machines.
+The second configuration requirement is the delegation settings on the gateway service account. There are multiple tools you can use to perform these steps. Here, we'll use Active Directory Users and Computers, which is a Microsoft Management Console (MMC) snap-in to administer and publish information in the directory. It's available on domain controllers by default. You can also enable it through Windows Feature configuration on other machines.
 
-We need to configure **Kerberos Constrained Delegation** with protocol transiting. With constrained delegation, you must be explicit about which services you want to delegate to. For example, only your SQL Server or your SAP HANA server will accept delegation calls from the gateway service account.
+We need to configure Kerberos Constrained Delegation with protocol transiting. With constrained delegation, you must be explicit about which services you want to delegate to. For example, only your SQL Server or your SAP HANA server accepts delegation calls from the gateway service account.
 
-This section assumes you have already configured SPNs for your underlying data sources (such as SQL Server, SAP HANA, Teradata, Spark, and so on). To learn how to configure those data source server SPNs, refer to technical documentation for the respective database server. You can also look at the blog post that describes [*What SPN does your app require?*](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/)
+This section assumes you have already configured SPNs for your underlying data sources (such as SQL Server, SAP HANA, Teradata, and Spark). To learn how to configure those data source server SPNs, refer to technical documentation for the respective database server. You can also see the [What SPN does your app require?](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/) blog post.
 
 In the following steps, we assume an on-premises environment with two machines: a gateway machine and a database server running SQL Server. For the sake of this example, we'll also assume the following settings and names:
 
