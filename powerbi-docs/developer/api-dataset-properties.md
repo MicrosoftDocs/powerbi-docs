@@ -85,7 +85,7 @@ Decimal|precision=28, scale=4
 ## Example
 The following code sample includes a number of these properties:
 
-```
+```json
 {
 
   "name": "PushAdvanced",

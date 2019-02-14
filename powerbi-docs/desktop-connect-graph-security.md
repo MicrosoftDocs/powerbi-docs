@@ -1,7 +1,7 @@
 ---
 title: Connect to Microsoft Graph Security in Power BI Desktop
 description: Easily connect to Microsoft Graph Security API in Power BI Desktop
-author: cpopell
+author: preetikr
 manager: kfile
 ms.reviewer:
 ms.custom: seojan19
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/29/2019
-ms.author: gepopell
+ms.author: preetikr
 
 LocalizationGroup: Connect to data
 ---
