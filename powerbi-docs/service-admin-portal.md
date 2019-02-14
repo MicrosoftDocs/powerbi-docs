@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 01/24/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -198,9 +198,9 @@ The following image shows the **My entire organization** option when creating a 
 
 ![Publish content pack to organization](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### Create template organizational content packs and apps
+### Create template apps
 
-Users in the organization can create template content packs that use datasets built in Power BI Desktop. [Learn more](template-content-pack-authoring.md)
+Users in the organization can create template apps that use datasets built in Power BI Desktop. Learn more about [template apps](template-content-pack-authoring.md)
 
 ### Push apps to end users
 
@@ -232,12 +232,17 @@ Users in the organization can use external search features that rely on Azure Se
 
 ## Custom visuals settings
 
-### Enable custom visuals for the entire organization
+### Add and use custom visuals
 
 Users in the organization can interact with and share custom visuals. [Learn more](power-bi-custom-visuals.md)
 
 > [!NOTE]
-> This setting applies to the entire organization and cannot be limited to specific groups.
+> This setting can be applied to the entire organization or can be limited to specific groups.
+
+### Allow only certified visuals
+
+Users in the organization who have been granted permissions to add and use custom visuals, denoted by the setting "Add and use custom visuals", will only be able to use [certified custom visuals](https://go.microsoft.com/fwlink/?linkid=2002010) (uncertified visuals will be blocked and will display an error message when used). 
+
 
 ## R visuals settings
 
@@ -284,16 +289,6 @@ Users in the organization can tag dashboards with classifications that indicate 
 
 Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](developer/embedding.md)
 
-## Workspaces and import settings
-
-### Author content in workspaces
-
-Users in the organization can access workspaces to connect to data and author content. [Learn more](service-create-the-new-workspaces.md)
-
-### Import data into Power BI
-
-Users in the organization can import data into the service, such as publishing reports from Power BI Desktop, uploading Power BI report files, and connecting to data directly from the service. [Learn more](desktop-upload-desktop-files.md)
-
 ## Dataflow settings (preview)
 
 ### Create and use dataflows (preview)
@@ -302,6 +297,18 @@ Users in the organization can create and use dataflows. For an overview of dataf
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
+
+## Template apps settings (preview)
+
+Two settings control template apps. 
+
+![Power BI admin portal template apps settings](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
+
+The first setting, **Create template apps**, controls who in your organization can create template apps. Template app creators can then distribute them to clients outside your organization by way of AppSource or other distribution method.
+
+![Power BI admin portal, Create template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
+
+With the second setting, **Install template apps**, you control who in your organization can download and install template apps from AppSource or another source
 
 ## Capacity settings
 

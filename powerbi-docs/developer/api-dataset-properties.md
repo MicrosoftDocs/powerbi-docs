@@ -2,8 +2,8 @@
 title: Power BI dataset properties
 description: Learn about the properties of Power BI dataset APIs
 author: markingmyname
-manager: kfile
 ms.author: maghan
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -85,7 +85,7 @@ Decimal|precision=28, scale=4
 ## Example
 The following code sample includes a number of these properties:
 
-```
+```json
 {
 
   "name": "PushAdvanced",

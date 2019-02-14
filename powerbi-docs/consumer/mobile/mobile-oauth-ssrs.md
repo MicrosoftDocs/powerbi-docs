@@ -54,7 +54,7 @@ For information on how to configure the proper Service Principal Name (SPN) for 
 ### Enabling negotiate authentication
 To enable a report server to use Kerberos authentication, you will need to configure the Authentication Type of the report server to be RSWindowsNegotiate. This is done within the rsreportserver.config file.
 
-```
+```xml
 <AuthenticationTypes>  
     <RSWindowsNegotiate />  
     <RSWindowsKerberos />  
@@ -157,7 +157,7 @@ To configure constrained delegation, you will want to do the following.
 ### Add WAP Application
 While you can publish applications within the Report Access Management Console, we will want to create the application via PowerShell. Here is the command to add the application.
 
-```
+```powershell
 Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/reports/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/reports/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
 ```
 
@@ -171,7 +171,7 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 ### Setting Integrated Authentication for the WAP Application
 After you add the WAP Application, you will need to set the BackendServerAuthenticationMode to use IntegratedWindowsAuthentication. In order to set this, you need the ID from the WAP Application.
 
-```
+```powershell
 Get-WebApplicationProxyApplication “Contoso Reports” | fl
 ```
 
@@ -179,7 +179,7 @@ Get-WebApplicationProxyApplication “Contoso Reports” | fl
 
 Run the following command to set the BackendServerAuthenticationMode using the ID of the WAP Application.
 
-```
+```powershell
 Set-WebApplicationProxyApplication -id 30198C7F-DDE4-0D82-E654-D369A47B1EE5 -BackendServerAuthenticationMode IntegratedWindowsAuthentication
 ```
 

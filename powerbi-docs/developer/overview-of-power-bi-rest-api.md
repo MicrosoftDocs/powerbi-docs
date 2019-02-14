@@ -2,13 +2,13 @@
 title: What can I do with the Power BI API
 description: What can I do with the Power BI API
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
-ms.author: maghan
 ---
 
 # What can developers do with the Power BI API?

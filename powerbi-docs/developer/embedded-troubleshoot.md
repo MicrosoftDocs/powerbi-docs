@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/20/2018
+ms.date: 02/05/2019
 ---
 
 # Troubleshoot your embedded application
@@ -101,7 +101,7 @@ The backend of the application may need to refresh the auth token before calling
 To resolve this issue you should trim "oauth2/authorize/" from the end of your authority url, see [Power BI Developer Samples](https://github.com/Microsoft/PowerBI-Developer-Samples) for reference.
 
  Check [Better Authority validation](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Changes-adalnet-4.0#better-authority-validation) from ADAL 4.x release notes.
- 
+
 ### Authentication failed with AADSTS70002 or AADSTS50053
 
 **_(AADSTS70002: Error validating credentials. AADSTS50053: You've tried to sign in too many times with an incorrect User ID or password)_**
@@ -156,7 +156,7 @@ To verify which it is, try the steps below.
 
 ### AADSTS90094: The grant requires admin permission
 
-**_Symptoms:_**</br>
+**_Symptoms:_**<br>
 When a non-admin user tries to sign in to an application for the first time while granting consent, then gets one of the following errors:
 
 * ConsentTest needs permission to access resources in your organization that only an admin can grant. Ask an admin to grant permission to this app before you can use it.
@@ -166,7 +166,7 @@ When a non-admin user tries to sign in to an application for the first time whil
 
 An admin user can sign in and grant consent successfully.
 
-**_Root cause:_**</br>
+**_Root cause:_**<br>
 User consent is disabled for the tenant.
 
 **_Several fixes are possible:_**

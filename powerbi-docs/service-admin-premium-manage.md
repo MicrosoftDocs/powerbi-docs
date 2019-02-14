@@ -1,16 +1,14 @@
 ---
 title: Manage capacities within Power BI Premium and Power BI Embedded
 description: Learn how you can manage Power BI Premium and enable access to content for your entire organization.
-author: mgblythe
+author: minewiskan
+ms.author: owend
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/20/2018
-ms.author: mblythe
-
+ms.date: 02/07/2019
 LocalizationGroup: Premium
 ---
 
@@ -22,11 +20,11 @@ Learn how to manage Power BI Premium and Power BI Embedded capacities, which pro
 
 ## What is capacity?
 
-*Capacity* is at the heart of the Power BI Premium and Power BI Embedded offerings. It is the set of resources reserved for exclusive use by your organization. Having dedicated capacity enables you to publish dashboards, reports, and datasets to users throughout your organization without having to purchase per-user licenses for them. It also offers dependable, consistent performance for the content hosted in capacity. For more information, see [What is Power BI Premium?](service-premium.md).
+*Capacity* is at the heart of the Power BI Premium and Power BI Embedded offerings. It is a set of resources reserved for exclusive use by your organization. Having dedicated capacity enables you to publish dashboards, reports, and datasets to users throughout your organization without having to purchase per-user licenses for them. It also offers dependable, consistent performance for the content hosted in capacity. For more information, see [What is Power BI Premium?](service-premium.md).
 
 ### Capacity admins
 
-When you are assigned to a capacity as a *capacity admin*, you have full control over the capacity and its administrative features. From the Power BI admin portal, you can add more capacity admins or give users capacity assignment permissions. You can bulk assign workspaces to a capacity and view usage metrics on a capacity.
+When you are assigned to a capacity as a *capacity admin*, you have full control over the capacity and its administrative features. From the Power BI admin portal, you can add more capacity admins or give users capacity assignment permissions. You can bulk assign workspaces to a capacity and view usage metrics for a capacity.
 
 > [!NOTE]
 > For Power BI Embedded, capacity admins are defined in the Microsoft Azure portal.
