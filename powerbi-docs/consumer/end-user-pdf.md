@@ -9,7 +9,7 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/04/2019
+ms.date: 02/14/2019
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -24,7 +24,7 @@ In Power BI service, select a report to display it on the canvas. You can also s
 
     ![Select File from the menubar, arrow pointing to Export to PDF](media/end-user-pdf/power-bi-export-pdf.png)
 
-    A pop-up will appear where you have the option to select the Current View or Default View.  The Current View will export the report in the current state, and include any changes you made to slicer and filter values.  It is recommended for most users they use this option.  Alternately, selecting the Default View will export the report in the original state that the author saved it in, and not reflect any changes made by the end user to that view.
+    A pop-up will appear where you have the option to select **Current view** or **Default view**.  **Current view** exports the report in the current state, which includes the active changes you made to slicer and filter values.  Most users select this option.  Alternately, selecting the **Default view** exports the report in its original state (as the author shared it), and doesn't reflect any changes you made to that original state.
     
     Additionally, there is a checkbox to select whether or not to export the hidden tabs of a report.  Simply check this box if you would like to only export report tabs that are visibile to you in your browser.  If you'd prefer to get all the hidden tabs as part of your export, you may leave this unchecked.  If the checkbox is greyed out, there are no hidden tabs in the report.  Once you have made your selections, click the Export button to continue.
     
