@@ -1,3 +1,11 @@
+---
+author: mgblythe
+ms.service: powerbi
+ms.topic: include
+ms.date: 02/15/2019
+ms.author: mblythe
+---
+
 ## Limitations
 
 Following is a list of the current limitations for row-level security on cloud models.
@@ -8,7 +16,7 @@ Following is a list of the current limitations for row-level security on cloud m
 
 * Only ETL and DirectQuery connections are supported. Live connections to Analysis Services are handled in the on-premises model.
 
-* Q&A and Cortana are not supported with RLS at this time. You will not see the Q&A input box for dashboards if all models have RLS configured. This is on the roadmap, but a timeline is not available.
+* Cortana is not supported with RLS at this time.
 
 ## Known issues
 
