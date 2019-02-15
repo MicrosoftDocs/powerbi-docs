@@ -163,11 +163,11 @@ In this group, 74.3% have given a low rating. The average customer gives a low r
  
 The Key influencers visual is currently in public preview, and  there are several limitations users should be aware of. Functionality that is currently not available includes: 
 - Analyzing metrics that are aggregates/measures 
-- Consuming the visual in embedded 
-- Consuming the visual on Power BI mobile 
+- Consuming the visual in Power BI Embedded
+- Consuming the visual on Power BI mobile apps
 - RLS support 
 - Direct Query support 
-- Live Query support 
+- Live Connection support 
  
 **I am seeing an error that no influencers/segments have been found. Why is that?**  
 
@@ -243,15 +243,16 @@ The reason behind this is the visualization also takes into consideration the nu
 
 **How do you calculate key influencers?**
 
-Behind the scenes, the AI visualization runs a logistic regression to calculate the key influencers. A logistic regression is a statistical model that compares different groups to each other. If we were looking at what drives low ratings, the logistic regression would look at how customers who gave a low score differ from those who gave a high score. If we had multiple categories (high score, neutral score, low score) we would look at how those who gave a low rating differ from customers who did not give a low rating (how do they differ from those who gave a high rating OR a neutral rating). 
+Behind the scenes, the AI visualization uses [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) to run a logistic regression to calculate the key influencers. A logistic regression is a statistical model that compares different groups to each other. If we were looking at what drives low ratings, the logistic regression would look at how customers who gave a low score differ from those who gave a high score. If we had multiple categories (high score, neutral score, low score) we would look at how those who gave a low rating differ from customers who did not give a low rating (how do they differ from those who gave a high rating OR a neutral rating). 
  
 The logistic regression searches for patterns in the data, looking for how for customers who gave a low rating might differ from those that gave a high rating. It might find, for example, that customers who have more support tickets give a much higher % of low ratings than those who have few or no support tickets.
  
 The logistic regression also takes into consideration how many datapoints are present. If for example customers who play an admin role give proportionally more negative scores but there are only a handful of administrators, it will not be considered an influential factor. This is because there are not enough datapoints available to infer a pattern. A statistical test (Wald test) is used to determine whether a factor is considered an influencer. The visual uses a p-value of 0.05 to determine the threshold. 
- 
+
+
 **How do you calculate segments?**
 
-Behind the scenes the AI Visualization runs a decision tree to find interesting subgroups. The objective of the decision tree is to end up with a subgroup of datapoints that is relatively high in the metric we are interested in (for example, customers who gave a low rating). 
+Behind the scenes the AI Visualization uses [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) to run a decision tree to find interesting subgroups. The objective of the decision tree is to end up with a subgroup of datapoints that is relatively high in the metric we are interested in (for example, customers who gave a low rating). 
 
 The decision tree takes each explanatory factor and tries to reason which factor will give it the best ‘split’. For example, if we filter the data to include only large enterprise customers, will that separate out customers who gave us a high rating vs. low rating? Or perhaps it will be better if we filter the data to include only customers who commented about security? 
 
