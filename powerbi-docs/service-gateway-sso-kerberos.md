@@ -301,93 +301,91 @@ If you encounter any problems, follow these steps to troubleshoot the gsskrb5 in
 
 ### Add registry entries to the gateway machine
 
-Add required registry entries to the registry of the machine that the gateway is installed on.
+Add required registry entries to the registry of the machine that the gateway is installed on. Here are the commands to run:
 
-1. Execute the following commands in a cmd window:
+1. REG ADD HKLM\SOFTWARE\Wow6432Node\SAP\gsskrb5 /v ForceIniCredOK /t REG\_DWORD /d 1 /f
 
-    1. REG ADD HKLM\SOFTWARE\Wow6432Node\SAP\gsskrb5 /v ForceIniCredOK /t REG\_DWORD /d 1 /f
-
-    1. REG ADD HKLM\SOFTWARE\SAP\gsskrb5 /v ForceIniCredOK /t REG\_DWORD /d 1 /f
+1. REG ADD HKLM\SOFTWARE\SAP\gsskrb5 /v ForceIniCredOK /t REG\_DWORD /d 1 /f
 
 ### Set configuration parameters on the gateway machine
 
-There are two options for setting configuration parameters, depending on whether you have Azure AD DirSync configured so that users can sign in to the Power BI service as an Azure Ad user.
+There are two options for setting configuration parameters, depending on whether you have Azure AD Connect configured so that users can sign in to the Power BI service as an Azure AD user.
 
-If you have Azure AD DirSync configured, follow these steps.
+If you have Azure AD Connect configured, follow these steps.
 
-1. Open the main Gateway configuration file, *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll*. By default, this file is stored at *C:\Program Files\On-premises data gateway*.
+1. Open the main gateway configuration file, `Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll`. By default, this file is stored at C:\Program Files\On-premises data gateway.
 
-1. Ensure the **FullDomainResolutionEnabled** property is set to True and **SapHanaSsoRemoveDomainEnabled** is set to False.
+1. Ensure the **FullDomainResolutionEnabled** property is set to **True**, and **SapHanaSsoRemoveDomainEnabled** is set to **False**.
 
 1. Save the configuration file.
 
-1. Restart the Gateway service via the Services tab of Task Manager (right-click, Restart)
+1. From the **Services** tab of Task Manager, right-click the gateway service and select **Restart**.
 
-    ![Restart gateway](media/service-gateway-sso-kerberos/restart-gateway.png)
+    ![Screenshot of Task Manager Services tab](media/service-gateway-sso-kerberos/restart-gateway.png)
 
-If you don't have Azure AD DirSync configured, follow these steps for **every Power BI service user that you want to map to an Azure AD user**. These steps manually link a Power BI Service user to an Active Directory user with permission to sign in to BW.
+If you don't have Azure AD Connect configured, follow these steps for every Power BI service user you want to map to an Azure AD user. These steps manually link a Power BI service user to an Active Directory user with permission to sign in to SAP BW.
 
-1. Open the main gateway configuration file, Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll. By default, this file is stored at C:\Program Files\On-premises data gateway.
+1. Open the main gateway configuration file, `Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll`. By default, this file is stored at C:\Program Files\On-premises data gateway.
 
-1. Set the **ADUserNameLookupProperty** to msDS-cloudExtensionAttribute1 and **ADUserNameReplacementProperty** to SAMAccountName. Save the configuration file.
+1. Set the **ADUserNameLookupProperty** to `msDS-cloudExtensionAttribute1`, and the  **ADUserNameReplacementProperty** to `SAMAccountName`. Save the configuration file.
 
-1. Restart the Gateway service via the **Services** tab of Task Manager (right-click, **Restart**).
+1. From the **Services** tab of Task Manager, right-click the gateway service and select **Restart**.
 
-    ![Restart gateway](media/service-gateway-sso-kerberos/restart-gateway.png)
+    ![Screenshot of Task Manager Services tab](media/service-gateway-sso-kerberos/restart-gateway.png)
 
-1. Set the msDS-cloudExtensionAttribute1 property of the Active Directory user you mapped to a BW user to the Power BI service user for whom you want to enable Kerberos SSO. One way to set the msDS-cloudExtensionAttribute1 property is via the Active Directory Users and Computers MMC snap-in (note that other methods can also be used).
+1. Set the `msDS-cloudExtensionAttribute1` property of the Active Directory user. This is the user you mapped to a SAP BW user. Set the property to the Power BI service user for whom you want to enable Kerberos SSO. One way to set the `msDS-cloudExtensionAttribute1` property is by using the Active Directory Users and Computers MMC snap-in (you can also use other methods).
 
     1. Sign in to a Domain Controller machine as an administrator user.
 
-    1. Open the **Users** folder in the snap-in window and double-click the Active Directory user you mapped to a BW user.
+    1. Open the **Users** folder in the snap-in window, and double-click the Active Directory user you mapped to a SAP BW user.
 
     1. Select the **Attribute Editor** tab.
 
-        If you don't see this tab, you'll need to search for directions on how to enable it or use another method to set the msDS-cloudExtensionAttribute1 property. Select one of the attributes and then the 'm' key to navigate to the Active Directory properties that start with 'm'. Locate the msDS-cloudExtensionAttribute1 property and double-click it. Set the value to the username you use to sign in to the Power BI Service, in the form YourUser@YourDomain.
+        If you don't see this tab, you'll need to search for directions on how to enable it, or use another method to set the property. Select one of the attributes and then the M key to go to the Active Directory properties that start with the letter m. Locate the `msDS-cloudExtensionAttribute1` property, and double-click it. Set the value to the username you use to sign in to the Power BI Service, in the form YourUser@YourDomain.
 
     1. Select **OK**.
 
-        ![Edit attribute](media/service-gateway-sso-kerberos/edit-attribute.png)
+        ![Screenshot of String Attribute Editor dialog box](media/service-gateway-sso-kerberos/edit-attribute.png)
 
-    1. Select **Apply**. Verify that the correct value has been set in the Value column.
+    1. Select **Apply**. Verify that the correct value has been set in the **Value** column.
 
-### Add a new BW Application Server data source to the Power BI Service
+### Add a new SAP BW Application Server data source to the Power BI service
 
-Add the BW data source to your gateway: Follow the instructions earlier in this article on [running a report](#running-a-power-bi-report).
+Add the SAP BW data source to your gateway by following the instructions earlier in this article on [running a report](#running-a-power-bi-report).
 
-1. In the data source configuration window, enter the Application Server's **Hostname**, **System Number**, and **client ID** as you would to sign in to your BW server from Power BI Desktop. For **Authentication Method**, select **Windows**.
+1. In the data source configuration window, enter the Application Server's **Hostname**, **System Number**, and **client ID**, as you would to sign in to your SAP BW server from Power BI Desktop. For the **Authentication Method**, select **Windows**.
 
-1. In the **SNC Partner Name** field, enter p: \<the SPN you mapped to your BW Service User\>. For example, if the SPN is SAP/BWServiceUser@MYDOMAIN.COM, you should enter p:SAP/BWServiceUser@MYDOMAIN.COM in the **SNC Partner Name** field.
+1. In the **SNC Partner Name** field, enter p: \<the SPN you mapped to your SAP BW service user\>. For example, if the SPN is SAP/BWServiceUser@MYDOMAIN.COM, you should enter p:SAP/BWServiceUser@MYDOMAIN.COM in the **SNC Partner Name** field.
 
-1. For the SNC Library, select SNC\_LIB or SNC\_LIB\_64.
+1. For the SNC Library, select **SNC\_LIB** or **SNC\_LIB\_64**.
 
-1. The **Username** and **Password** should be the username and password of an Active Directory user with permission to sign in to the BW server via SSO (an Active Directory user that has been mapped to a BW user via the SU01 transaction). These credentials will only be used if the **Use SSO via Kerberos for DirectQuery queries** box is *not* checked.
+1. The **Username** and **Password** should be the username and password of an Active Directory user with permission to sign in to the SAP BW server with SSO. In other words, these should belong to an Active Directory user who has been mapped to a SAP BW user through the SU01 transaction. These credentials are only used if the **Use SSO via Kerberos for DirectQuery queries** box is not checked.
 
-1. Select the **Use SSO via Kerberos for DirectQuery queries** box and select **Apply**. If the test connection is not successful, verify that the previous setup and configuration steps were completed correctly.
+1. Select the **Use SSO via Kerberos for DirectQuery queries** box, and select **Apply**. If the test connection is not successful, verify that the previous setup and configuration steps were completed correctly.
 
-    The gateway always use the typed-in credentials to establish a test connection to the server and to do scheduled refreshes of import-based reports. The gateway only attempts to establish an SSO connection if the **Use SSO via Kerberos for DirectQuery queries** is selected, and the user is accessing a direct query-based report or dataset.
+    The gateway always uses the typed-in credentials to establish a test connection to the server, and to do scheduled refreshes of import-based reports. The gateway only attempts to establish an SSO connection if the **Use SSO via Kerberos for DirectQuery queries** is selected, and the user is accessing a direct query-based report or dataset.
 
 ### Test your setup
 
-Publish a DirectQuery report from Power BI Desktop to the Power BI service to test your setup. Make sure you’re signed in to the Power BI service as either an Azure AD user or a user that you’ve mapped to the msDS-cloudExtensionAttribute1 property of an Azure AD user. If the setup has been completed successfully, you should be able to create a report based off the published dataset in the Power BI Service and pull data through visuals in the report.
+To test your setup, publish a DirectQuery report from Power BI Desktop to the Power BI service. Make sure you’re signed in to the Power BI service as either an Azure AD user, or a user you’ve mapped to the `msDS-cloudExtensionAttribute1` property of an Azure AD user. If the setup has been completed successfully, you should be able to create a report from the published dataset in the Power BI service. You should also be able to pull data through visuals in the report.
 
-### Troubleshooting Gateway Connectivity Issues
+### Troubleshoot gateway connectivity issues
 
-1. Check the gateway logs. Open the Gateway Configuration application, select **Diagnostics**, and select **Export Logs**. The most recent errors will be at the bottom of any log files you examine.
+1. Check the gateway logs. Open the Gateway Configuration application, and select **Diagnostics** > **Export logs**. The most recent errors are at the bottom of any log files you examine.
 
-    ![Gateway diagnostics](media/service-gateway-sso-kerberos/gateway-diagnostics.png)
+    ![Screenshot of On-premises data gateway application, with Diagnostics highlighted](media/service-gateway-sso-kerberos/gateway-diagnostics.png)
 
-1. Turn on BW tracing and review the generated log files. There are several different types of BW tracing available. Consult the SAP documentation for more information.
+1. Turn on SAP BW tracing, and review the generated log files. There are several different types of SAP BW tracing available. Consult the SAP documentation for more information.
 
 ## Errors from an insufficient Kerberos configuration
 
-If the underlying database server and gateway are not configured properly for **Kerberos Constrained Delegation**, you may receive the following error message:
+If the underlying database server and gateway are not configured properly for **Kerberos Constrained Delegation**, you might receive the following error message about failing to load data:
 
-![Load data error](media/service-gateway-sso-kerberos/load-data-error.png)
+![Screenshot of error message](media/service-gateway-sso-kerberos/load-data-error.png)
 
-And the technical details associated with the error message (DM_GWPipeline_Gateway_ServerUnreachable) may look like the following:
+The technical details associated with the error message (DM_GWPipeline_Gateway_ServerUnreachable) might look like the following:
 
-![Server unreachable](media/service-gateway-sso-kerberos/server-unreachable.png)
+![Screenshot of error message technical details](media/service-gateway-sso-kerberos/server-unreachable.png)
 
 The result is that the gateway could not impersonate the originating user properly, and the database connection attempt failed.
 
