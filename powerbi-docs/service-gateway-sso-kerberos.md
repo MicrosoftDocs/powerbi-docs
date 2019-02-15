@@ -202,37 +202,37 @@ This guide attempts to be as comprehensive as possible. If you've already comple
 
 1. On the client and server machines, set the `SNC\_LIB` and `SNC\_LIB\_64` environment variables to point to the locations of gsskrb5.dll and gx64krb5.dll, respectively.
 
-### Create a BW Service User and enable SNC communication using gsskrb5 on the BW server
+### Create a SAP BW service user and enable SNC communication
 
-In addition to the gateway configuration you've already done, there are a few additional SAP BW-specific steps. The [**Configure delegation settings on the gateway service account**](#configure-delegation-settings-on-the-gateway-service-account) section of the documentation assumes you've already configured SPNs for your underlying data sources. To complete this configuration for SAP BW:
+In addition to the gateway configuration you've already done, there are a few additional steps specific to SAP BW. The [Configure delegation settings on the gateway service account](#configure-delegation-settings-on-the-gateway-service-account) section of the documentation assumes you've already configured SPNs for your underlying data sources. To complete this configuration for SAP BW:
 
-1. On an Active Directory Domain Controller server, create a Service User (initially just a plain Active Directory user) for your BW Application Server in your Active Directory environment. Then assign an SPN to it.
+1. On an Active Directory Domain Controller server, create a service user (initially just a plain Active Directory user) for your SAP BW Application Server in your Active Directory environment. Then assign an SPN to it.
 
-    SAP recommends starting the SPN with SAP/, but it should also be possible to use other prefixes such as HTTP/. What comes after the SAP/ is up to you; one option is to use the BW server's Service User's username. For example, if you create BWServiceUser@\<DOMAIN\> as your Service User, you could use the SPN SAP/BWServiceUser. One way to set the SPN mapping is the setspn command. For example, to set the SPN on the service user we just created, you would execute the following command from a cmd window on a Domain Controller machine: `setspn -s SAP/ BWServiceUser DOMAIN\ BWServiceUser`. For more information, see the SAP BW documentation.
+    SAP recommends starting the SPN with `SAP/`, but it should also be possible to use other prefixes, such as `HTTP/`. What comes after the `SAP/` is up to you; one option is to use the SAP BW server's service user's username. For example, if you create `BWServiceUser@\<DOMAIN\>` as your service user, you could use the SPN `SAP/BWServiceUser`. One way to set the SPN mapping is the setspn command. For example, to set the SPN on the service user we just created, you would run the following command from a cmd window on a Domain Controller machine: `setspn -s SAP/ BWServiceUser DOMAIN\ BWServiceUser`. For more information, see the SAP BW documentation.
 
-1. Give the Service User access to your BW Application Server:
+1. Give the service user access to your SAP BW Application Server:
 
-    1. On the BW server machine, add the Service User to the Local Admin group for your BW server: open the Computer Management program and double-click the Local Admin group for your server.
+    1. On the SAP BW server machine, add the service user to the Local Admin group for your SAP BW server. Open the Computer Management program and double-click the Local Admin group for your server.
 
-        ![Computer management](media/service-gateway-sso-kerberos/computer-management.png)
+        ![Screenshot of Computer Management program](media/service-gateway-sso-kerberos/computer-management.png)
 
-    1. Double-click the Local Admin group, then select **Add** to add your BW Service User to the group. Use the **Check Names** button to ensure you've typed in the name correctly. Select **OK**.
+    1. Double-click the Local Admin group, and select **Add** to add your service user to the group. Select **Check Names** to ensure you've entered the name correctly. Select **OK**.
 
-1. Set the BW Server's Service User as the user that starts the BW Server service on the BW server machine.
+1. Set the SAP BW server's service user as the user who starts the SAP BW server service on the SAP BW server machine.
 
-    1. Open the "Run" program and type in "Services.msc". Look for the service corresponding to your BW Application Server instance. Right-click it and select **Properties**.
+    1. Open **Run**, and enter "Services.msc". Look for the service corresponding to your SAP BW Application Server instance. Right-click it, and select **Properties**.
 
-        ![Server properties](media/service-gateway-sso-kerberos/server-properties.png)
+        ![Screenshot of Services, with Properties highlighted](media/service-gateway-sso-kerberos/server-properties.png)
 
-    1. Switch to the **Log on** tab and change the user to your BW Service User, as specified above. Enter the user's password and select **OK**.
+    1. Switch to the **Log on** tab, and change the user to your SAP BW service user. Enter the user's password, and select **OK**.
 
-1. Sign in to your server in SAP GUI / Logon and set the following profile parameters using the RZ10 transaction:
+1. Sign in to your server in SAP GUI / Logon, and set the following profile parameters by using the RZ10 transaction:
 
-    1. Set the snc/identity/as profile parameter to p:\<the BW service user you've created\>, such as p:BWServiceUser@MYDOMAIN.COM. Note the p: that precedes the Service User's UPN; it's not p:CN= like when Common Crypto Lib is used as the SNC library.
+    1. Set the snc/identity/as profile parameter to p:\<the SAP BW service user you've created\>, such as p:BWServiceUser@MYDOMAIN.COM. Note the p: that precedes the service user's UPN. It's not p:CN= like when Common Crypto Lib is used as the SNC library.
 
-    1. Set the snc/gssapi\_lib profile parameter to \<path to gsskrb5.dll/gx64krb5.dll on the server machine (the library you'll use depends on OS bitness)\>. Remember to put the library in a location the BW Application Server can access.
+    1. Set the snc/gssapi\_lib profile parameter to \<path to gsskrb5.dll/gx64krb5.dll on the server machine (the library you'll use depends on OS bitness)\>. Remember to put the library in a location the SAP BW Application Server can access.
 
-    1. Also set the following additional profile parameters, changing the values as required to fit your needs. Note that the last five options enable clients to connect to the BW server using SAP Logon / GUI without having SNC configured.
+    1. Also set the following additional profile parameters, changing the values as required to fit your needs. Note that the last five options enable clients to connect to the SAP BW server using SAP Logon / GUI, without having SNC configured.
 
         | **Setting** | **Value** |
         | --- | --- |
@@ -247,57 +247,57 @@ In addition to the gateway configuration you've already done, there are a few ad
 
     1. Set the property snc/enable to 1.
 
-1. After setting these profile parameters, open the SAP Management Console on the server machine and restart the BW instance. If the server won't start, double-check that you've set the profile parameters correctly. For more on profile parameter settings, see the [SAP documentation](https://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/frameset.htm). You can also consult section our troubleshooting information later in this section if you encounter problems.
+1. After setting these profile parameters, open the SAP Management Console on the server machine, and restart the SAP BW instance. If the server won't start, confirm that you've set the profile parameters correctly. For more on profile parameter settings, see the [SAP documentation](https://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/frameset.htm). You can also consult the troubleshooting information later in this section if you encounter problems.
 
-### Map a BW user to an Active Directory user
+### Map a SAP BW user to an Active Directory user
 
-Map an Active Directory user to an SAP BW Application Server user and test the SSO connection in SAP GUI / Logon.
+Map an Active Directory user to an SAP BW Application Server user, and test the SSO connection in SAP GUI / Logon.
 
-1. Sign in to your BW server using SAP GUI / Logon. Execute transaction SU01.
+1. Sign in to your SAP BW server by using SAP GUI / Logon. Run transaction SU01.
 
-1. For **User**, enter the BW user you want to enable SSO connections for (in the screenshot above we're setting permissions for BIUSER). Select the **Edit** icon near the top-left of the SAP Logon window (the image of a pen).
+1. For **User**, enter the SAP BW user you want to enable SSO connections for (in the previous screenshot, we're setting permissions for BIUSER). Select the **Edit** icon (the image of a pen) near the top-left of the SAP Logon window.
 
-    ![User maintenance](media/service-gateway-sso-kerberos/user-maintenance.png)
+    ![Screenshot of SAP BW User maintenance screen](media/service-gateway-sso-kerberos/user-maintenance.png)
 
-1. Select the **SNC** tab. In the SNC name input box, enter p:\<your active directory user\>@\<your domain\>. Note the mandatory p: that must precede the Active Directory user's UPN. The Active Directory user you specify should belong to the person or organization for whom you want to enable SSO access to the BW Application Server. For example, if you want to enable SSO access for the user [testuser@TESTDOMAIN.COM](mailto:testuser@TESTDOMAIN.COM), enter p:testuser@TESTDOMAIN.COM.
+1. Select the **SNC** tab. In the SNC name input box, enter p:\<your Active Directory user\>@\<your domain\>. Note the mandatory p: that must precede the Active Directory user's UPN. The Active Directory user you specify should belong to the person or organization for whom you want to enable SSO access to the SAP BW Application Server. For example, if you want to enable SSO access for the user [testuser@TESTDOMAIN.COM](mailto:testuser@TESTDOMAIN.COM), enter p:testuser@TESTDOMAIN.COM.
 
-    ![Maintain users](media/service-gateway-sso-kerberos/maintain-users.png)
+    ![Screenshot of SAP BW Maintain users screen](media/service-gateway-sso-kerberos/maintain-users.png)
 
-1. Select the save icon (the floppy disk near the top left corner of the screen).
+1. Select the **Save** icon (the image of a floppy disk) near the top-left of the screen.
 
-### Test sign-in using SSO
+### Test sign-in by using SSO
 
-Verify that you can sign in to the server using SAP Logon / SAP GUI via SSO as the Active Directory user for whom you've just enabled SSO access.
+Verify that you can sign in to the server. Use the SAP Logon / SAP GUI via SSO as the Active Directory user for whom you've just enabled SSO access.
 
-1. Sign in to a machine on which SAP Logon is installed *as the Active Directory user you just enabled SSO access for* and launch SAP GUI/Logon. Create a new connection.
+1. As the Active Directory user you just enabled SSO access for, sign in to a machine on which SAP Logon is installed. Launch SAP GUI/Logon, and create a new connection.
 
-1. In the **Create New System Entry** window, select **User Specified System** and select **Next**.
+1. In the **Create New System Entry** screen, select **User Specified System** > **Next**.
 
-    ![New system entry](media/service-gateway-sso-kerberos/new-system-entry.png)
+    ![Screenshot of Create New System Entry screen](media/service-gateway-sso-kerberos/new-system-entry.png)
 
-1. Fill in the appropriate details on the next page, including the application server, instance number, and system ID, then select **Finish**.
+1. Fill in the appropriate details on the next screen, including the application server, instance number, and system ID. Then select **Finish**.
 
-1. Right-click the new connection and select **Properties**. Select the **Network** tab. In the **SNC Name** window enter p:\<the BW service user's UPN\>, such as p:BWServiceUser@MYDOMAIN.COM, then select **OK**.
+1. Right-click the new connection and select **Properties**. Select the **Network** tab. In the **SNC Name** text box, enter p:\<the SAP BW service user's UPN\>, such as p:BWServiceUser@MYDOMAIN.COM. Then select **OK**.
 
-    ![System entry properties](media/service-gateway-sso-kerberos/system-entry-properties.png)
+    ![Screenshot of System Entry Properties screen](media/service-gateway-sso-kerberos/system-entry-properties.png)
 
-1. Double-click the connection you just created to attempt an SSO connection to your BW server. If this connection succeeds, proceed to the next step. Otherwise, review the earlier steps in this document to make sure they've been completed correctly, or review the troubleshooting section below. Note that if you can't connect to the BW server via SSO in this context you will not be able to connect to the BW server using SSO in the gateway context.
+1. Double-click the connection you just created to attempt an SSO connection to your SAP BW server. If this connection succeeds, proceed to the next step. Otherwise, review the earlier steps in this document to make sure they've been completed correctly, or review the troubleshooting section below. Note that if you can't connect to the SAP BW server via SSO in this context, you won't be able to connect to the SAP BW server using SSO in the gateway context.
 
 ### Troubleshoot installation and connections
 
-If you encounter any issues, follow these steps to troubleshoot the gsskrb5 installation and SSO connections from the SAP GUI / Logon.
+If you encounter any problems, follow these steps to troubleshoot the gsskrb5 installation and SSO connections from the SAP GUI / Logon.
 
-1. Viewing the server logs (…work\dev\_w0 on the server machine) can be helpful in troubleshooting any errors you encounter in completing the gsskrb5 setup steps, particularly if the BW server won't start after the profile parameters have been changed.
+- Viewing the server logs (…work\dev\_w0 on the server machine) can be helpful in troubleshooting any errors you encounter in completing the gsskrb5 setup steps. This is particularly true if the SAP BW server won't start after the profile parameters have been changed.
 
-1. If you're unable to start the BW service due to a "logon failure" you may have provided the wrong password when setting the BW "start-as" user. Verify the password by logging in to a machine in your Active Directory environment as the BW service user.
+- If you're unable to start the SAP BW service due to a logon failure, you may have provided the wrong password when setting the SAP BW "start-as" user. Verify the password by logging in to a machine in your Active Directory environment as the SAP BW service user.
 
-1. If you get errors about SQL credentials preventing the server from starting, verify that you've granted the Service User access to the BW database.
+- If you get errors about SQL credentials preventing the server from starting, verify that you've granted the service user access to the SAP BW database.
 
-1. "(GSS-API) specified target is unknown or unreachable": this usually means you have the wrong SNC Name name specified. Make sure to use "p:" only, not "p:CN=" or anything else in the client application, other than the Service User's UPN.
+- You might get the following message: "(GSS-API) specified target is unknown or unreachable." This usually means you have the wrong SNC name specified. Make sure to use "p:" only, not "p:CN=" or anything else in the client application, other than the service user's UPN.
 
-1. "(GSS-API) An invalid name was supplied": make sure "p:" is in the value of the server's SNC identity profile parameter.
+- You might get the following message: "(GSS-API) An invalid name was supplied." Make sure "p:" is in the value of the server's SNC identity profile parameter.
 
-1. "(SNC error) the specified module could not be found": this is usually caused by putting the gsskrb5.dll/gx64krb5.dll somewhere that requires elevated privileges (administrator rights) to access.
+- You might get the following message: "(SNC error) the specified module could not be found." This is usually caused by putting the `gsskrb5.dll/gx64krb5.dll` somewhere that requires elevated privileges (administrator rights) to access.
 
 ### Add registry entries to the gateway machine
 
