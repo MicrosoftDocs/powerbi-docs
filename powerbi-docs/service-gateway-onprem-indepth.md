@@ -86,7 +86,7 @@ Using Azure AD Connect ensures that the UPN will match between AAD and your loca
 > 
 
 ## Now, this is where the gateway comes in
-The gateway acts as a bridge between the cloud and your on-premises server. Data transfer between the cloud and the gateway is secured through [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview). The Service Bus creates a secure channel between the cloud and your on-premises server through an outbound connection on the gateway.  There are no inbound connections that you need to open on your on-premises firewall.
+The gateway acts as a bridge between the cloud and your on-premises server. Data transfer between the cloud and the gateway is secured through [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview). The Service Bus creates a secure channel between the cloud and your on-premises server through an outbound connection on the gateway.  There are no inbound connections that you need to open on your on-premises firewall. Power BI manages the Service Bus for you, so there are no additional costs or configuration steps required.
 
 If you have an Analysis Services data source, you’ll need to install the gateway on a computer joined to the same forest/domain as your Analysis Services server.
 
