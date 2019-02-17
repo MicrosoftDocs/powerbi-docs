@@ -101,9 +101,9 @@ public static class AsymmetricKeyEncryptionHelper
 }
 ```
 
-## How to configure credentials flow
+## How to configure a credential flow
 
-### Configure credential flow for data sources
+### Configure a credential flow for data sources
 
 1. Call [Get Datasources](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasourcesingroup) to discover the data sources of the dataset. In the response body for each data source, there's the type, connection details, gateway, and data source ID.
 
@@ -242,18 +242,6 @@ public static class AsymmetricKeyEncryptionHelper
     pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);
     ```
 
-### Troubleshooting
-
-#### No gateway and data source ID found when calling get data sources
-
-This issue means the dataset isn't bound to a gateway. When creating a new dataset, for each cloud connection a data source with no credentials is created automatically on the cloud gateway of the user. This gateway is used to store the credentials for cloud connections.
-
-After you create the dataset, an automatic binding is done between the dataset and a suitable gateway, which contains matching data sources for all connections. If there's no such gateway or multiple suitable gateways, the automatic binding fails.
-
-Create missing on-premises data sources if any, and bind the dataset to a gateway manually by using [Bind To Gateway](https://docs.microsoft.com/rest/api/power-bi/datasets/bindtogateway).
-
-To discover gateways that could be bound use [Discover Gateways](https://docs.microsoft.com/rest/api/power-bi/datasets/discovergateways).
-
 ### Configure a new data source for On-premises data gateway
 
 1. Install the [On-premises data gateway](https://powerbi.microsoft.com/gateway/) on your machine.
@@ -282,3 +270,15 @@ To discover gateways that could be bound use [Discover Gateways](https://docs.mi
     ```csharp
     pbiClient.Gateways.CreateDatasource(gateway.Id, request);
     ```
+
+### Troubleshooting
+
+#### No gateway and data source ID found when calling get data sources
+
+This issue means the dataset isn't bound to a gateway. When creating a new dataset, for each cloud connection a data source with no credentials is created automatically on the cloud gateway of the user. This gateway is used to store the credentials for cloud connections.
+
+After you create the dataset, an automatic binding is done between the dataset and a suitable gateway, which contains matching data sources for all connections. If there's no such gateway or multiple suitable gateways, the automatic binding fails.
+
+Create missing on-premises data sources if any, and bind the dataset to a gateway manually by using [Bind To Gateway](https://docs.microsoft.com/rest/api/power-bi/datasets/bindtogateway).
+
+To discover gateways that could be bound use [Discover Gateways](https://docs.microsoft.com/rest/api/power-bi/datasets/discovergateways).
