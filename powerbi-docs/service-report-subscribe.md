@@ -56,12 +56,10 @@ Whether you're subscribing to a dashboard or report, the process is similar. The
 7. Select **Save and close**. Those subscribed receive an email and snapshot of the dashboard or report page for the frequency and time you selected. In all, you may create up to 24 subscriptions per report or dashboard, and can provide unique recipients, times, and frequencies for each subscription.  All subscriptions set to **After Data Refresh** for your dashboard or report will still only send an email after the first scheduled refresh.   
       
    > [!TIP]
-   > Want to see the email right away? Trigger an email by refreshing one of the datasets associated with the dashboard or the dataset associated with the report. If you don't have edit permissions to the dataset, ask someone who has those permissions to refresh it for you. To see related datasets, select the **View related** icon ![View related icon](media/service-report-subscribe/power-bi-view-related.png) to open **Related content** and then select the refresh icon  ![refresh icon](media/service-report-subscribe/power-bi-refresh.png). 
+   > Want to send the email from a subscription right away or on-demand at any time? Select **Run Now** for the subscriptions for the dashboard or report you want to send. You'll see a notification that an e-mail is on its way to everyone for that particular subscription.  You may do this as often as you'd like. It doesn't count against your limit of 24 scheduled subscription runs per day per report or dashboard. Note this does NOT trigger a data refresh of the underlying dataset. 
    > 
    > 
    
-   ![Related datasets](media/service-report-subscribe/power-bi-view-related-screen.png)
-
 ## Email languages
 
 The email and snapshot use the language set in Power BI settings (see [Supported languages and countries/regions for Power BI](supported-languages-countries-regions.md)). If no language is defined, Power BI uses the language according to the locale setting in your current browser. To see or set your language preference, select the cog icon ![gear icon](media/service-report-subscribe/power-bi-settings-icon.png) > **Settings > General > Language**. 
@@ -80,6 +78,7 @@ The particular subscriptions displayed depend on which workspace is currently ac
 A subscription ends if the Pro license expires, the owner deletes the dashboard or report, or the user account used to create the subscription is deleted.
 
 ## Considerations and troubleshooting
+* Dashboards with over 25 pinned tiles, or 4 pinned live report pages, may not render fully in subscription e-mails sent to users.  Subscriptions to dashboards over these number of tiles will not be blocked, however, they will be considered unsupported if you encounter issues and should be modified accordingly to fall within a supported range.
 * For dashboard email subscriptions, if any tiles have row level security (RLS) applied, those tiles don't display.  For report email subscriptions, if the dataset uses RLS, you can't be able to create a subscription.
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page and then rename it, you have to re-create your subscription.
 * Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI.  These limitations include, but aren't limited to, having multi-factor authentication or IP range restrictions when accessing resources.

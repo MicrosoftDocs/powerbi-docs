@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/10/2019
+ms.date: 02/14/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -48,6 +48,9 @@ Here are some examples of how dataflows can work for you:
 ## How to use dataflows
 
 The previous section described a handful of ways dataflows can be used to quickly create powerful analytics in Power BI. In this section, you get a tour of how quickly you can create insights using dataflows in an organization, get a quick view into how BI Pros can create their own dataflows, and customize insights for their own organization.
+
+> [!NOTE]
+> You must have a paid Power BI account to use dataflows, such as a Power BI Pro or Power BI Premium account, but you are not charged separately for using dataflows. 
 
 ### Extend the common data model for your business needs
 For organizations that want to extend the Common Data Model (CDM), dataflows enable business intelligence professionals to customize the standard entities, or create new ones. This self-service approach to customizing the data model can then be used with dataflows to build apps and Power BI dashboards that are tailored to an organization.

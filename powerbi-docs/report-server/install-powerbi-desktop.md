@@ -1,8 +1,8 @@
 ---
 title: Install Power BI Desktop optimized for Power BI Report Server
 description: Learn how to install Power BI Desktop optimized for Power BI Report Server
-author: maggiesMSFT
-ms.author: maggies
+author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
