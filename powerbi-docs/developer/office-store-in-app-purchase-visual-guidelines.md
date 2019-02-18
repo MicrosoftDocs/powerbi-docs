@@ -19,6 +19,10 @@ Until recently, the **Marketplace (AppSource)** accepted only Power BI visuals t
 > [!Note]
 > For the visual to be certified, it must not access external services or resources.
 
+> [!Note]
+> All free visuals should keep same free features previously offered. You may add optional advanced paid features on top of the old free features. We recommend to submit the IAP visuals with the advanced features as new visuals and not to update the old free ones.
+
+
 ## What's changing in the submission process?
 
 Developers upload their IAP visuals to AppSource via the Seller Dashboard, as they've been doing for free visuals. To indicate that the submitted visual has IAP features, developers should write in the seller dashboard notes: "Visual with in-app purchase." Also, developers need to provide a license key or token so that the validation team can validate the IAP features. Once the visual is validated and approved, the AppSource listing for the IAP visual states 'Additional purchase may be required' under the pricing options.
