@@ -71,8 +71,8 @@ The following table describes R visuals capabilities based on licensing.
 |---------|---------|---------|---------|--------|
 |**Guest** (Power BI embedded)     |  Not relevant|  Not relevant       | Not supported  | Not relevant |
 |**Unmanaged tenant** (domain not verified) | Supported | Not supported |  Not supported |Supported (B2B scenario) |
-|**Managed tenant with free license**     |  Supported       |  Not supported       |    Supported in Premium capacity only    | Supported |
-**Managed tenant with Pro license**     |   Supported      | Supported      | Supported    |Supported|
+|**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported in Premium capacity only    | Supported |
+**Managed tenant** with Pro license     |   Supported      | Supported      | Supported    |Supported|
 
 
 
