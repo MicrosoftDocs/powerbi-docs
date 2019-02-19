@@ -476,7 +476,7 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "powerbi-docs/service-histogram.md", 
+            "source_path": "powerbi-docs/visuals/service-histogram.md", 
             "redirect_url": "/power-bi/desktop-grouping-and-binning",
             "redirect_document_id": true
         },
