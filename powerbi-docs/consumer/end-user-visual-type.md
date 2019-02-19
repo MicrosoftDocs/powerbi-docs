@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 02/12/2019
 ms.author: mihart
 
 LocalizationGroup: Consumer
@@ -94,10 +94,12 @@ Radial gauges are a great choice to:
 - show the health of a single measure
 - display information that can be quickly scanned and understood
 
-<!-- ### Key influencers chart
-![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers2.png)
+ ### Key influencers chart
+![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencer.png)
 
-A key influencer chart displays the major contributors to a selected result or value.  -->
+A key influencer chart displays the major contributors to a selected result or value.
+
+Key influencers are a great choice to help you understand the factors that influence a key metric. For example, *what influences customers to place a second order *or* why were sales so high last June*. 
 
 ### KPIs
 ![kpi](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)

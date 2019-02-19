@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 02/14/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -57,7 +57,7 @@ Configure a report page the way you want it to appear in the bookmark. Once your
 
 Once you have a bookmark, you can display it by simply clicking on the bookmark in the **Bookmarks** pane. 
 
-You can also select whether each bookmark will apply *data* properties, such as filters and slicers, the *display* properties such as spotlight and its visibility, and page changes that presents the page that was visible when the bookmark was added. These capabilities are useful when you use bookmarks to switch between visual types - in which case you would likely want to turn data properties off, so filters aren't reset as users change visual types. 
+You can also select whether each bookmark will apply *data* properties, such as filters and slicers, the *display* properties such as spotlight and its visibility, and page changes that presents the page that was visible when the bookmark was added. These capabilities are useful when you use bookmarks to switch between report views or selections of visuals - in which case you would likely want to turn data properties off, so filters aren't reset when users switch views by selecting a bookmark. 
 
 To make such changes select the ellipses next to the bookmark's name, as shown in the previous image, then select or unselect the check marks next to *Data*, *Display*, and other controls. 
 

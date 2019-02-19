@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 01/24/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -168,11 +168,11 @@ The following image shows the option to export data from a tile.
 > [!NOTE]
 > Disabling **Export Data** also prevents users from using the **Analyze in Excel** feature, as well as using the Power BI service live connection.
 
-### Export reports as PowerPoint presentations
+### Export reports as PowerPoint presentations or PDF documents
 
-Users in the organization can export Power BI reports as PowerPoint files. [Learn more](consumer/end-user-powerpoint.md)
+Users in the organization can export Power BI reports as PowerPoint files or PDF documents. [Learn more](consumer/end-user-powerpoint.md)
 
-The following image shows the **File** menu for a report when the **Export reports as PowerPoint presentations** setting is enabled.
+The following image shows the **File** menu for a report when the **Export reports as PowerPoint presentations or PDF documents** setting is enabled.
 
 ![Export reports as PowerPoint presentations](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
@@ -198,9 +198,9 @@ The following image shows the **My entire organization** option when creating a 
 
 ![Publish content pack to organization](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### Create template organizational content packs and apps
+### Create template apps
 
-Users in the organization can create template content packs that use datasets built in Power BI Desktop. [Learn more](template-content-pack-authoring.md)
+Users in the organization can create template apps that use datasets built in Power BI Desktop. Learn more about [template apps](template-content-pack-authoring.md)
 
 ### Push apps to end users
 
@@ -297,6 +297,18 @@ Users in the organization can create and use dataflows. For an overview of dataf
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
+
+## Template apps settings (preview)
+
+Two settings control template apps. 
+
+![Power BI admin portal template apps settings](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
+
+The first setting, **Create template apps**, controls who in your organization can create template apps. Template app creators can then distribute them to clients outside your organization by way of AppSource or other distribution method.
+
+![Power BI admin portal, Create template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
+
+With the second setting, **Install template apps**, you control who in your organization can download and install template apps from AppSource or another source
 
 ## Capacity settings
 

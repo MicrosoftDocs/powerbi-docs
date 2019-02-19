@@ -50,7 +50,7 @@ The gateway you install runs as a Windows service, **On-premises data gateway**.
 Queries and data flow:
 
 1. A query is created by the cloud service with the encrypted credentials for the on-premises data source. It's then sent to a queue for the gateway to process.
-2. The gateway cloud service analyzes the query and pushes the request to the Azure Service Bus.
+2. The gateway cloud service analyzes the query and pushes the request to the Azure Service Bus. Power BI manages the Service Bus for you, so there are no additional costs or configuration steps required.
 3. The on-premises data gateway polls the Azure Service Bus for pending requests.
 4. The gateway gets the query, decrypts the credentials, and connects to the data sources with those credentials.
 5. The gateway sends the query to the data source for execution.

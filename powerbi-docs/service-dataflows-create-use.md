@@ -155,6 +155,8 @@ There may be occasions when connecting to data sources for dataflows run into is
 
 * **JSON File connector** - Currently you can connect to a JSON file using basic authentication only.  Connecting to a JSON file by providing the credentials within the URL (for example, https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg... ) is **not** currently supported.  
 
+* **Azure SQL Data Warehouse** - Dataflows do not currently support Azure Active Directory (AAD) authentication for Azure SQL Data Warehouse. Use Basic authentication for this scenario.
+
 ## Next Steps
 
 This article described how you can create your own **dataflow** and create a dataset and report in **Power BI Desktop** to take advantage of it. The following articles are useful for further information and scenarios when using dataflows:

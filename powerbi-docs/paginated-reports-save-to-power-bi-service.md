@@ -1,15 +1,14 @@
 ---
 title: "Publish a paginated report to the Power BI service (Preview)"
 description: In this tutorial, you learn to publish a paginated report to the Power BI service by uploading it from your local computer.  
-author: maggiesMSFT
+author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.author: maggies
 ---
 
 # Publish a paginated report to the Power BI service (Preview)
