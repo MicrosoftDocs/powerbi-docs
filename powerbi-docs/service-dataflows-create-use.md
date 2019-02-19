@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/13/2019
+ms.date: 02/19/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -153,7 +153,7 @@ There may be occasions when connecting to data sources for dataflows run into is
 
 * **SharePoint connector** - Make sure you supply the root address of the SharePoint site, without any subfolders or documents. For example, use link similar to the following: https://microsoft.sharepoint.com/teams/ObjectModel/ 
 
-* **JSON File connector** - Currently you can connect to JSON file using Basic Authenticaiton only. e.g. connecting to a JSON file by providing the credentials within the URL (like using shared access signature in URL -  https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg... ) is not a supported scenario at this moment. 
+* **JSON File connector** - Currently you can connect to a JSON file using basic authentication only.  Connecting to a JSON file by providing the credentials within the URL (for example, https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg... ) is **not** currently supported.  
 
 ## Next Steps
 
