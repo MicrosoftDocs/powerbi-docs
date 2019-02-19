@@ -29,8 +29,11 @@ Developers upload their IAP visuals to AppSource via the Seller Dashboard, as th
 
 ## What is a Power BI visual with IAP features?
 
-An IAP visual is free visual and offers free features, but also has additional features for which extra charges may be applied to operate them. Developers must notify users in the visual's description regarding which features require additional purchases to operate. Currently, Microsoft does not provide native application programming interfaces (APIs) to support purchase in apps and add-ins.
+An IAP visual is free visual and offers free features, but also has additional advanced features for which extra charges may be applied to operate them. Developers must notify users in the visual's description regarding which features require additional purchases to operate. Currently, Microsoft does not provide native application programming interfaces (APIs) to support purchase in apps and add-ins.
 Developers may use any third-party payment system for those purchases. Refer to our store [policy](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
+
+> [!NOTE]
+> Watermarks are not allowed on the free features. Developers may display a popup window or watermark if the advanced paid features are used without a valid license.  
 
 ## Logo guidelines
 
