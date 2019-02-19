@@ -153,6 +153,9 @@ There may be occasions when connecting to data sources for dataflows run into is
 
 * **SharePoint connector** - Make sure you supply the root address of the SharePoint site, without any subfolders or documents. For example, use link similar to the following: https://microsoft.sharepoint.com/teams/ObjectModel/ 
 
+* **Azure SQL Data Warehouse** - Dataflow do not support AAD authentication for Azure SQL DW, use Basic authentication until we add support fo AD auth for Azure SQL DW.
+
+
 ## Next Steps
 
 This article described how you can create your own **dataflow** and create a dataset and report in **Power BI Desktop** to take advantage of it. The following articles are useful for further information and scenarios when using dataflows:
