@@ -56,7 +56,7 @@ Following are the steps to browse and select visuals from the online **AppSource
 5. You're warned about importing a custom visual, as shown in the following image:
 
    ![R visual 5](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_5.png)
-6. Navigate to where the visual file was saved, then select the file. **Power BI Desktop** custom visualizations have the .pbivisual extension.
+6. Navigate to where the visual file was saved, then select the file. **Power BI Desktop** custom visualizations have the .pbiviz extension.
 
    ![R visual 6](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_6.png)
 7. When you return to Power BI Desktop, you can see the new visual type in the **Visualizations** pane.
