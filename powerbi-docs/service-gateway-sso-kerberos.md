@@ -41,9 +41,9 @@ To enable SSO for SAP HANA, follow these steps first:
 
 For more information about setting up SSO for SAP HANA by using Kerberos, see [Single Sign-on Using Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html) in the SAP HANA Security Guide. Also see the links from that page, particularly SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory.
 
-## Prepare for Kerberos Constrained Delegation
+## Prepare for Kerberos constrained delegation
 
-You must configure several items for Kerberos Constrained Delegation to work properly, including *Service Principal Names* (SPN) and delegation settings on service accounts.
+You must configure several items for Kerberos constrained delegation to work properly, including *Service Principal Names* (SPN) and delegation settings on service accounts.
 
 ### Prerequisite 1: Install and configure the Microsoft on-premises data gateway
 
@@ -55,16 +55,16 @@ In a standard installation, the gateway runs as a machine-local service account 
 
 ![Screenshot of service account](media/service-gateway-sso-kerberos/service-account.png)
 
-To enable Kerberos Constrained Delegation, the gateway must run as a domain account. If you need to switch the account, see [Switch the gateway to a domain account](#switching-the-gateway-to-a-domain-account) later in this article.
+To enable Kerberos constrained delegation, the gateway must run as a domain account. If you need to switch the account, see [Switch the gateway to a domain account](#switching-the-gateway-to-a-domain-account) later in this article.
 
 > [!NOTE]
-> If Azure Active Directory (Azure AD) Connect is configured, and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. You can use the local service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration. They are simply applied to the gateway's computer object in Azure AD, instead of the domain account.
+> If Azure Active Directory (Azure AD) Connect is configured, and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. You can use the local service SID (instead of requiring a domain account) for the gateway service. The Kerberos constrained delegation configuration steps outlined in this article are the same as that configuration. They are simply applied to the gateway's computer object in Azure AD, instead of the domain account.
 
-### Prerequisite 3: Have domain admin rights to configure SPNs (SetSPN) and Kerberos Constrained Delegation settings
+### Prerequisite 3: Have domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
 
 It's not recommended for a domain administrator to temporarily or permanently allow rights to someone else to configure SPNs and Kerberos delegation without requiring domain admin rights. In the following section, we cover the recommended configuration steps in more detail.
 
-## Configure Kerberos Constrained Delegation for the gateway and data source
+## Configure Kerberos constrained delegation for the gateway and data source
 
 As a domain administrator, configure an SPN for the gateway service domain account, and configure delegation settings on the gateway service domain account.
 
@@ -92,7 +92,7 @@ First, determine whether an SPN was already created for the domain account used 
 
 The second configuration requirement is the delegation settings on the gateway service account. There are multiple tools you can use to perform these steps. Here, we'll use Active Directory Users and Computers, which is a Microsoft Management Console (MMC) snap-in to administer and publish information in the directory. It's available on domain controllers by default. You can also enable it through Windows Feature configuration on other machines.
 
-We need to configure Kerberos Constrained Delegation with protocol transiting. With constrained delegation, you must be explicit about which services you want to delegate to. For example, only your SQL Server or your SAP HANA server accepts delegation calls from the gateway service account.
+We need to configure Kerberos constrained delegation with protocol transiting. With constrained delegation, you must be explicit about which services you want to delegate to. For example, only your SQL Server or your SAP HANA server accepts delegation calls from the gateway service account.
 
 This section assumes you have already configured SPNs for your underlying data sources (such as SQL Server, SAP HANA, Teradata, and Spark). To learn how to configure those data source server SPNs, refer to technical documentation for the respective database server. You can also see the [What SPN does your app require?](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/) blog post.
 
@@ -196,7 +196,7 @@ This guide attempts to be as comprehensive as possible. If you've already comple
 
 1. Download `gsskrb5/gx64krb5` from [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-user required). Ensure you have at least version 1.0.11.x of gsskrb5.dll and gx64krb5.dll.
 
-1. Put the library in a location on your gateway machine that is accessible by your gateway instance (and also by the SAP GUI if you want to test the SSO connection by using SAP GUI / Logon).
+1. Put the library in a location on your gateway machine that is accessible by your gateway instance (and also by the SAP GUI if you want to test the SSO connection by using SAP GUI Logon).
 
 1. Put another copy on your SAP BW server machine in a location accessible by the SAP BW server.
 
@@ -208,7 +208,7 @@ In addition to the gateway configuration you've already done, there are a few ad
 
 1. On an Active Directory Domain Controller server, create a service user (initially just a plain Active Directory user) for your SAP BW Application Server in your Active Directory environment. Then assign an SPN to it.
 
-    SAP recommends starting the SPN with `SAP/`, but it should also be possible to use other prefixes, such as `HTTP/`. What comes after the `SAP/` is up to you; one option is to use the SAP BW server's service user's username. For example, if you create `BWServiceUser@\<DOMAIN\>` as your service user, you could use the SPN `SAP/BWServiceUser`. One way to set the SPN mapping is the setspn command. For example, to set the SPN on the service user we just created, you would run the following command from a cmd window on a Domain Controller machine: `setspn -s SAP/ BWServiceUser DOMAIN\ BWServiceUser`. For more information, see the SAP BW documentation.
+    SAP recommends starting the SPN with `SAP/`, but it should also be possible to use other prefixes, such as `HTTP/`. What comes after the `SAP/` is up to you; one option is to use the SAP BW server's service user's username. For example, if you create `BWServiceUser@\<DOMAIN\>` as your service user, you can use the SPN `SAP/BWServiceUser`. One way to set the SPN mapping is the setspn command. For example, to set the SPN on the service user we just created, you would run the following command from a cmd window on a Domain Controller machine: `setspn -s SAP/ BWServiceUser DOMAIN\ BWServiceUser`. For more information, see the SAP BW documentation.
 
 1. Give the service user access to your SAP BW Application Server:
 
@@ -226,13 +226,13 @@ In addition to the gateway configuration you've already done, there are a few ad
 
     1. Switch to the **Log on** tab, and change the user to your SAP BW service user. Enter the user's password, and select **OK**.
 
-1. Sign in to your server in SAP GUI / Logon, and set the following profile parameters by using the RZ10 transaction:
+1. Sign in to your server in SAP GUI Logon, and set the following profile parameters by using the RZ10 transaction:
 
     1. Set the snc/identity/as profile parameter to p:\<the SAP BW service user you've created\>, such as p:BWServiceUser@MYDOMAIN.COM. Note the p: that precedes the service user's UPN. It's not p:CN= like when Common Crypto Lib is used as the SNC library.
 
     1. Set the snc/gssapi\_lib profile parameter to \<path to gsskrb5.dll/gx64krb5.dll on the server machine (the library you'll use depends on OS bitness)\>. Remember to put the library in a location the SAP BW Application Server can access.
 
-    1. Also set the following additional profile parameters, changing the values as required to fit your needs. Note that the last five options enable clients to connect to the SAP BW server using SAP Logon / GUI, without having SNC configured.
+    1. Also set the following additional profile parameters, changing the values as required to fit your needs. Note that the last five options enable clients to connect to the SAP BW server by using SAP GUI Logon, without having SNC configured.
 
         | **Setting** | **Value** |
         | --- | --- |
@@ -251,11 +251,11 @@ In addition to the gateway configuration you've already done, there are a few ad
 
 ### Map a SAP BW user to an Active Directory user
 
-Map an Active Directory user to an SAP BW Application Server user, and test the SSO connection in SAP GUI / Logon.
+Map an Active Directory user to an SAP BW Application Server user, and test the SSO connection in SAP GUI Logon.
 
-1. Sign in to your SAP BW server by using SAP GUI / Logon. Run transaction SU01.
+1. Sign in to your SAP BW server by using SAP GUI Logon. Run transaction SU01.
 
-1. For **User**, enter the SAP BW user you want to enable SSO connections for (in the previous screenshot, we're setting permissions for BIUSER). Select the **Edit** icon (the image of a pen) near the top-left of the SAP Logon window.
+1. For **User**, enter the SAP BW user you want to enable SSO connections for (in the previous screenshot, we're setting permissions for BIUSER). Select the **Edit** icon (the image of a pen) near the top-left of the SAP GUI Logon window.
 
     ![Screenshot of SAP BW User maintenance screen](media/service-gateway-sso-kerberos/user-maintenance.png)
 
@@ -267,9 +267,9 @@ Map an Active Directory user to an SAP BW Application Server user, and test the 
 
 ### Test sign-in by using SSO
 
-Verify that you can sign in to the server. Use the SAP Logon / SAP GUI via SSO as the Active Directory user for whom you've just enabled SSO access.
+Verify that you can sign in to the server. Use the SAP GUI Logon through SSO as the Active Directory user for whom you've just enabled SSO access.
 
-1. As the Active Directory user you just enabled SSO access for, sign in to a machine on which SAP Logon is installed. Launch SAP GUI/Logon, and create a new connection.
+1. As the Active Directory user you just enabled SSO access for, sign in to a machine on which SAP GUI Logon is installed. Launch SAP GUI Logon, and create a new connection.
 
 1. In the **Create New System Entry** screen, select **User Specified System** > **Next**.
 
@@ -285,11 +285,11 @@ Verify that you can sign in to the server. Use the SAP Logon / SAP GUI via SSO a
 
 ### Troubleshoot installation and connections
 
-If you encounter any problems, follow these steps to troubleshoot the gsskrb5 installation and SSO connections from the SAP GUI / Logon.
+If you encounter any problems, follow these steps to troubleshoot the gsskrb5 installation and SSO connections from the SAP GUI Logon.
 
 - Viewing the server logs (…work\dev\_w0 on the server machine) can be helpful in troubleshooting any errors you encounter in completing the gsskrb5 setup steps. This is particularly true if the SAP BW server won't start after the profile parameters have been changed.
 
-- If you're unable to start the SAP BW service due to a logon failure, you may have provided the wrong password when setting the SAP BW "start-as" user. Verify the password by logging in to a machine in your Active Directory environment as the SAP BW service user.
+- If you're unable to start the SAP BW service due to a logon failure, you might have provided the wrong password when setting the SAP BW "start-as" user. Verify the password by logging in to a machine in your Active Directory environment as the SAP BW service user.
 
 - If you get errors about SQL credentials preventing the server from starting, verify that you've granted the service user access to the SAP BW database.
 
@@ -371,7 +371,7 @@ To test your setup, publish a DirectQuery report from Power BI Desktop to the Po
 
 ### Troubleshoot gateway connectivity issues
 
-1. Check the gateway logs. Open the Gateway Configuration application, and select **Diagnostics** > **Export logs**. The most recent errors are at the bottom of any log files you examine.
+1. Check the gateway logs. Open the gateway configuration application, and select **Diagnostics** > **Export logs**. The most recent errors are at the bottom of any log files you examine.
 
     ![Screenshot of On-premises data gateway application, with Diagnostics highlighted](media/service-gateway-sso-kerberos/gateway-diagnostics.png)
 
@@ -379,7 +379,7 @@ To test your setup, publish a DirectQuery report from Power BI Desktop to the Po
 
 ## Errors from an insufficient Kerberos configuration
 
-If the underlying database server and gateway are not configured properly for **Kerberos Constrained Delegation**, you might receive the following error message about failing to load data:
+If the underlying database server and gateway are not configured properly for Kerberos constrained delegation, you might receive the following error message about failing to load data:
 
 ![Screenshot of error message](media/service-gateway-sso-kerberos/load-data-error.png)
 
@@ -387,7 +387,7 @@ The technical details associated with the error message (DM_GWPipeline_Gateway_S
 
 ![Screenshot of error message technical details](media/service-gateway-sso-kerberos/server-unreachable.png)
 
-The result is that the gateway could not impersonate the originating user properly, and the database connection attempt failed.
+The result is that the gateway can't impersonate the originating user properly, and the database connection attempt failed.
 
 ## Next steps
 
