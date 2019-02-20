@@ -3,12 +3,12 @@ title: Key influencers visualizations tutorial
 description: Tutorial - create a key influencers visualization in Power BI
 author: mihart
 manager: kvivek
-ms.reviewer: 'justyna'
+ms.reviewer: juluczni
 
 ms.service: powerbi
 ms.component: powerbi-visuals
 ms.topic: tutorial
-ms.date: 02/10/2019
+ms.date: 02/12/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -42,7 +42,7 @@ The metric you are analyzing must be a categorical field.
 
 6. ***Right pane*** - the right pane contains one visual. In this case, the column chart displays all the values for the **key influencer**, **Theme** that is selected in the left pane. The specific value (**Usability**) from the left pane is in green and all the other values for **Theme** are in black.
 
-7. ***Average line*** - the average is calculated for all the other possible values for **Theme** except **usability**. So the calculation applies to all the values in black. It tells us what percentage of the other **Themes** gave us a low rating. In other words, when a rating is given by a customer, that customer also describes the reason or **theme** for the rating. Some themes are usability, speed, security, etc. **Theme** is **Usability** is the second highest key influencer for a low rating, according to our visual in the left pane. If we average all the other themes, and their contribution to a rating of **low**, we get the result seen here in red. 
+7. ***Average line*** - the average is calculated for all the other possible values for **Theme** except **usability**. So the calculation applies to all the values in black. It tells us what percentage of the other **Themes** gave us a low rating. In other words, when a rating is given by a customer, that customer also describes the reason or **theme** for the rating. Some themes are usability, speed, security, etc. **Theme** is **Usability** is the second highest key influencer for a low rating, according to our visual in the left pane. If we average all the other themes, and their contribution to a rating of **low**, we get the result seen here in red. Of all the other themes given, only 11.35% of those are higher than **usability**. 
 
 8. ***Checkbox*** - only show values that are influencers.
 
@@ -163,11 +163,11 @@ In this group, 74.3% have given a low rating. The average customer gives a low r
  
 The Key influencers visual is currently in public preview, and  there are several limitations users should be aware of. Functionality that is currently not available includes: 
 - Analyzing metrics that are aggregates/measures 
-- Consuming the visual in embedded 
-- Consuming the visual on Power BI mobile 
+- Consuming the visual in Power BI Embedded
+- Consuming the visual on Power BI mobile apps
 - RLS support 
 - Direct Query support 
-- Live Query support 
+- Live Connection support 
  
 **I am seeing an error that no influencers/segments have been found. Why is that?**  
 
@@ -213,7 +213,7 @@ More precisely, customers who do not use the browser to consume the service are 
 
 ![error-solved](media/power-bi-visualization-influencers/power-bi-error3-solution.png)
 
-**I see a warning that measures were not included in my analysis. Why is that?** [2052261] 
+**I see a warning that measures were not included in my analysis. Why is that?** 
 
 ![error-measures not included](media/power-bi-visualization-influencers/power-bi-measures-not-included.png)
 
@@ -243,15 +243,16 @@ The reason behind this is the visualization also takes into consideration the nu
 
 **How do you calculate key influencers?**
 
-Behind the scenes, the AI visualization runs a logistic regression to calculate the key influencers. A logistic regression is a statistical model that compares different groups to each other. If we were looking at what drives low ratings, the logistic regression would look at how customers who gave a low score differ from those who gave a high score. If we had multiple categories (high score, neutral score, low score) we would look at how those who gave a low rating differ from customers who did not give a low rating (how do they differ from those who gave a high rating OR a neutral rating). 
+Behind the scenes, the AI visualization uses [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) to run a logistic regression to calculate the key influencers. A logistic regression is a statistical model that compares different groups to each other. If we were looking at what drives low ratings, the logistic regression would look at how customers who gave a low score differ from those who gave a high score. If we had multiple categories (high score, neutral score, low score) we would look at how those who gave a low rating differ from customers who did not give a low rating (how do they differ from those who gave a high rating OR a neutral rating). 
  
 The logistic regression searches for patterns in the data, looking for how for customers who gave a low rating might differ from those that gave a high rating. It might find, for example, that customers who have more support tickets give a much higher % of low ratings than those who have few or no support tickets.
  
 The logistic regression also takes into consideration how many datapoints are present. If for example customers who play an admin role give proportionally more negative scores but there are only a handful of administrators, it will not be considered an influential factor. This is because there are not enough datapoints available to infer a pattern. A statistical test (Wald test) is used to determine whether a factor is considered an influencer. The visual uses a p-value of 0.05 to determine the threshold. 
- 
+
+
 **How do you calculate segments?**
 
-Behind the scenes the AI Visualization runs a decision tree to find interesting subgroups. The objective of the decision tree is to end up with a subgroup of datapoints that is relatively high in the metric we are interested in (for example, customers who gave a low rating). 
+Behind the scenes the AI Visualization uses [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) to run a decision tree to find interesting subgroups. The objective of the decision tree is to end up with a subgroup of datapoints that is relatively high in the metric we are interested in (for example, customers who gave a low rating). 
 
 The decision tree takes each explanatory factor and tries to reason which factor will give it the best ‘split’. For example, if we filter the data to include only large enterprise customers, will that separate out customers who gave us a high rating vs. low rating? Or perhaps it will be better if we filter the data to include only customers who commented about security? 
 

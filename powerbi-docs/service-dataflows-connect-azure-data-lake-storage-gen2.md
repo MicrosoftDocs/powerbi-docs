@@ -67,6 +67,8 @@ In the **Add role assignment** window, select the **Reader** role to assign to t
 
 ![Power BI service assigned to Reader role](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
 
+Note: Please allow minimum 30 minute for permission for propogate to Power BI from Portal. Anytime you change permission in Portal, you should give 30 minutes to refelect the same in Power BI to retry. 
+
 
 ### Create a file system for Power BI
 

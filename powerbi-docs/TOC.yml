@@ -311,8 +311,6 @@
         href: visuals/power-bi-visualization-move-and-resize.md
       - name: "Change how visuals interact in a report"
         href: service-reports-visual-interactions.md
-      - name: "Histograms"
-        href: visuals/service-histograms.md
       - name: "Tips and tricks for Power BI map visualizations"
         href: visuals/power-bi-map-tips-and-tricks.md
       - name: "Customize X-axis and Y-axis properties"
@@ -1273,6 +1271,8 @@
         href: service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
       - name: "Add Power BI with an Office 365 partner"
         href: service-admin-syndication-partner.md
+    - name: "Using the admin portal"
+      href: service-admin-portal.md
     - name: "Where is my tenant located?"
       href: service-admin-where-is-my-tenant-located.md
     - name: "Find users that have signed in"
