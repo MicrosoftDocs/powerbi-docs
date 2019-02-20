@@ -60,6 +60,8 @@ There are a few considerations and limitations to keep in mind when working with
 
 * If you share a dashboard with someone outside of your organization (and thereby, a user who is not in your Power BI tenant), that user will not be able to export the shared dashboard's associated reports to PDF. For example, if you are aaron@contoso.com, you can share with cassie@cohowinery.com. But cassie@cohowinery.com cannot export the associated reports to PDF.
 
+* When exporting to PDF with reports that contain a background image, you may see a distorted image in the export if you are using the "Fit" option for the Page Background.  For best results, it is recommended you use the "Normal" or "Fill" options to avoid issues with your exported document.
+
 * The Power BI service uses your Power BI language setting as the language for the PDF export. To see or set your language preference, select the cog icon > **Settings** > **General** > **Language**.
 
 ## Next steps
