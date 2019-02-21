@@ -19,14 +19,21 @@ Until recently, the **Marketplace (AppSource)** accepted only Power BI visuals t
 > [!Note]
 > For the visual to be certified, it must not access external services or resources.
 
+> [!Note]
+> All free visuals should keep same free features previously offered. You may add optional advanced paid features on top of the old free features. We recommend to submit the IAP visuals with the advanced features as new visuals and not to update the old free ones.
+
+
 ## What's changing in the submission process?
 
 Developers upload their IAP visuals to AppSource via the Seller Dashboard, as they've been doing for free visuals. To indicate that the submitted visual has IAP features, developers should write in the seller dashboard notes: "Visual with in-app purchase." Also, developers need to provide a license key or token so that the validation team can validate the IAP features. Once the visual is validated and approved, the AppSource listing for the IAP visual states 'Additional purchase may be required' under the pricing options.
 
 ## What is a Power BI visual with IAP features?
 
-An IAP visual is free visual and offers free features, but also has additional features for which extra charges may be applied to operate them. Developers must notify users in the visual's description regarding which features require additional purchases to operate. Currently, Microsoft does not provide native application programming interfaces (APIs) to support purchase in apps and add-ins.
+An IAP visual is free visual and offers free features, but also has additional advanced features for which extra charges may be applied to operate them. Developers must notify users in the visual's description regarding which features require additional purchases to operate. Currently, Microsoft does not provide native application programming interfaces (APIs) to support purchase in apps and add-ins.
 Developers may use any third-party payment system for those purchases. Refer to our store [policy](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
+
+> [!NOTE]
+> Watermarks are not allowed on the free features. Developers may display a popup window or watermark if the advanced paid features are used without a valid license.  
 
 ## Logo guidelines
 

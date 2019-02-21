@@ -94,6 +94,9 @@ If you’re working on an IAP custom visual or already have one, make sure t
 If you have a logo in the custom visual, make sure it complies to the logo guidelines (color, location, size, and action triggering).
 
 You can also find, in the guidelines, best practice notes.  
+> [!Note]
+> All free visuals should keep same free features previously offered. You may add optional advanced paid features on top of the old free features. We recommend to submit the IAP visuals with the advanced features as new visuals and not to update the old free ones.
+
 
 ### Can I get my IAP custom visual certified?
 

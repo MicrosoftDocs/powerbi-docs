@@ -476,6 +476,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/visuals/service-histogram.md", 
+            "redirect_url": "/power-bi/desktop-grouping-and-binning",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/power-bi-visualization-kpi.md", 
             "redirect_url": "/power-bi/visuals/power-bi-visualization-kpi",
             "redirect_document_id": true
