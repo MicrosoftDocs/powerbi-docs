@@ -20,7 +20,7 @@ Until recently, the Marketplace (AppSource) accepted only Power BI visuals that 
 
 > [!NOTE]
 > * For the visual to be certified, it must not access external services or resources.
-> * All free visuals should keep the same free features that were previously offered. You may add optional, advanced, paid features in addition to the old free features. We recommend that you submit the IAP visuals with the advanced features as new visuals and not update the old free ones.
+> * All free visuals should keep the same free features that were previously offered. You may add optional advanced paid features in addition to the existing free features. We recommend that you submit the IAP visuals with the advanced features as new visuals and not update the existing free ones.
 
 
 ## What changed in the submission process?
@@ -34,7 +34,7 @@ An IAP visual is a free visual that offers free features. It also has some advan
 Developers may use any third-party payment system for these purchases. For more information, see [our store policy](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
 
 > [!NOTE]
-> Watermarks are not allowed on the free features. Developers may display a popup window or watermark if the advanced paid features are used without a valid license.  
+> Watermarks are not allowed on the free features. Developers may display a pop-up window or a watermark if the advanced paid features are used without a valid license.  
 
 ## Logo guidelines
 
