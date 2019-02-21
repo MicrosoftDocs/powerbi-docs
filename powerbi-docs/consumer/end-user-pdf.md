@@ -7,7 +7,7 @@ ms.custom:
 ms.reviewer: cmfinlan
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 02/14/2019
 ms.author: mihart
