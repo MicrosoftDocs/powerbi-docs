@@ -16,7 +16,7 @@ ms.date: 11/26/2018
 
 Until recently, the Marketplace (AppSource) accepted only Power BI visuals that are free. This policy has changed, so that you can also submit visuals to AppSource that have an "additional purchase may be required" price tag. 
 
-"Additional purchase may be required" visuals are similar to in-app purchase (IAP) adds-in in the Office Store. Developers may also submit these visuals for certification after the AppSource team approves them, and after making sure they comply with certification requirements. For more informatiin about the requirements, see [Certified custom visuals](../power-bi-custom-visuals-certified.md).
+"Additional purchase may be required" visuals are similar to in-app purchase (IAP) add-ins in the Office Store. Developers may also submit these visuals for certification after the AppSource team approves them, and after making sure they comply with certification requirements. For more information about the requirements, see [Certified custom visuals](../power-bi-custom-visuals-certified.md).
 
 > [!NOTE]
 > * For the visual to be certified, it must not access external services or resources.
@@ -29,7 +29,7 @@ Developers upload their IAP visuals to AppSource via the Seller Dashboard, as th
 
 ## What is a Power BI visual with IAP features?
 
-An IAP visual is a free visual that offers free features. It also has additional advanced features for which extra charges may be applied to operate them. In the visual's description, developers must notify users about the features that require additional purchases to operate. Currently, Microsoft does not provide native APIs to support the purchase of apps and add-ins.
+An IAP visual is a free visual that offers free features. It also has some advanced features for which extra charges may be applied to operate them. In the visual's description, developers must notify users about the features that require additional purchases to operate. Currently, Microsoft does not provide native APIs to support the purchase of apps and add-ins.
 
 Developers may use any third-party payment system for these purchases. For more information, see [our store policy](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
 
