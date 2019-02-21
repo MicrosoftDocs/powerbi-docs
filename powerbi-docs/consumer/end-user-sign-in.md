@@ -6,7 +6,7 @@ manager: kvivek
 ms.reviewer:  
 ms.custom:  
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: how-to
 ms.date: 01/24/2019
 ms.author: mihart

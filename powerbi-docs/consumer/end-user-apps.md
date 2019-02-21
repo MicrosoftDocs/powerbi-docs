@@ -6,7 +6,7 @@ manager: kvivek
 ms.reviewer: lukaszp
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 01/21/2019
 ms.author: mihart

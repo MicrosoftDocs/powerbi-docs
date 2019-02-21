@@ -8,7 +8,7 @@ featuredvideoid: B2vd4MQrz4M
 
 ms.service: powerbi
 ms.custom: seodec18
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
