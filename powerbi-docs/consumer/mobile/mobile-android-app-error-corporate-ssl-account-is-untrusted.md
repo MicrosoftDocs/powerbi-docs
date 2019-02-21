@@ -42,5 +42,5 @@ Please work with your organization's IT to test the corporate authentication ser
 
 ## Next steps
 * [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](http://community.powerbi.com/) 
 
