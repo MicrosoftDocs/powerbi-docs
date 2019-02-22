@@ -74,11 +74,7 @@
     - name: "Default member in multidimensional models in Power BI"
       href: desktop-default-member-multidimensional-models.md            
     - name: "Custom visuals FAQ"
-      href: power-bi-custom-visuals-faq.md
-    - name: Whitepapers
-      items: 
-      - name: "Power BI security whitepaper"
-        href: whitepaper-powerbi-security.md      
+      href: power-bi-custom-visuals-faq.md   
   - name: How to
     items: 
     - name: "Get Power BI Desktop"
@@ -451,6 +447,10 @@
           href: service-flow-integration.md
         - name: "Get started with third-party apps"
           href: service-power-bi-get-started-third-party-apps.md
+    - name: Whitepapers
+      items: 
+      - name: "Power BI security whitepaper"
+        href: whitepaper-powerbi-security.md          
   - name: How to
     items: 
     - name: Get data from files
