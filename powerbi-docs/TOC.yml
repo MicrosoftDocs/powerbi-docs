@@ -75,6 +75,10 @@
       href: desktop-default-member-multidimensional-models.md            
     - name: "Custom visuals FAQ"
       href: power-bi-custom-visuals-faq.md
+    - name: Whitepapers
+      items: 
+      - name: "Power BI security whitepaper"
+        href: whitepaper-powerbi-security.md      
   - name: How to
     items: 
     - name: "Get Power BI Desktop"
