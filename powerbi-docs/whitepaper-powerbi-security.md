@@ -35,37 +35,6 @@ This document does not provide you with any legal rights to any intellectual pro
 > [!NOTE]
 > You can save or print this whitepaper by selecting **Print** from your browser, then selecting **Save as PDF**.
 
-## Contents
-
-* [Introduction](#introduction)
-* [Power BI Architecture](#power-bi-architecture)
-    * [The WFE Cluster](#the-wfe-cluster)
-    * [The Power BI Back End Cluster](#the-power-bi-back-end-cluster)
-    * [Power BI Premium](#power-bi-premium)
-    * [Data Storage Architecture](#data-storage-architecture)
-* [Tenant Creation](#tenant-creation)
-    * [Multiple Geographies (Multi-geo) - Preview](#multiple-geographies-multi-geo---preview)
-    * [Datacenters and Locales](#datacenters-and-locales)
-* [User Authentication](#user-authentication)
-    * [Authentication Sequence](#authentication-sequence)
-* [Data Storage and Movement](#data-storage-and-movement)
-    * [Data at rest](#data-at-rest)
-        * [Encryption Keys](#encryption-keys)
-        * [Datasets](#datasets)
-        * [Reports](#reports)
-        * [Dashboards and Dashboard Tiles](#dashboards-and-dashboard-tiles)
-    * [Data Transiently Stored on Non-Volatile Devices](#data-transiently-stored-on-non-volatile-devices)
-        * [Datasets](#datasets-1)
-    * [Data in process](#data-in-process)
-* [User Authentication to Data Sources](#user-authentication-to-data-sources)
-* [Power BI and ExpressRoute](#power-bi-and-expressroute)
-* [Power BI Mobile](#power-bi-mobile)
-* [Power BI Security Questions and Answers](#power-bi-security-questions-and-answers)
-* [Conclusion](#conclusion)
-* [Feedback and Suggestions](#feedback-and-suggestions)
-* [Additional Resources](#additional-resources)
-
-
 ## Introduction
 
 **Power BI** is an online software service (_SaaS_, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, datasets, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
