@@ -71,9 +71,9 @@ The dashboard includes the following metrics:
 | Metric | Description |
 | --- | --- |
 | CPU Highest Utilization Capacity | Capacity with the maximum number of times CPU exceeded 80% of the thresholds in the past seven days. |
-| CPU Highest Utilization Count | Number of times CPU exceeded 80% of the thresholds in the past seven days. | 
-| Memory Max Utilization | Capacity with the maximum number of times it reached max memory limit in the past seven days. |
-| Memory Max Utilization | Number of times capacities reached max memory utilization in the past seven days, split into three minute buckets. |
+| CPU Highest Utilization Count | Number of times CPU the named capacity exceeded 80% of the thresholds in the past seven days. | 
+| Memory Max Utilization Capacity | Name of the capacity with the maximum number of times memory exceeded 80% of the thresholds in the past seven days, split into three minute buckets.  |
+| Memory Max Utilization Count| Number of times memory the named capacity exceeded 80% of the thresholds in the past seven days, split into three minute buckets. |
 |||
 
 #### Dataset Summary
@@ -165,21 +165,21 @@ The Datasets page has different *areas*, which include  **Refreshes**, **Query D
 
 | Report section | Metrics |
 | --- | --- |
-| Query Durations |  Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days<br>  Total: The total number of queries run for the dataset<br>  Average: The average query duration for the dataset, in milliseconds<br>  Max: The duration of the longest-running query in the dataset, in milliseconds|
+| Query Durations |  Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days.<br>  Total: The total number of queries run for the dataset.<br>  Average: The average query duration for the dataset, in milliseconds<br>  Max: The duration of the longest-running query in the dataset, in milliseconds.|
 | Query Duration Distribution |  The query duration histogram is bucketed by query durations (in milliseconds) into the following categories: <= 30ms, 30-100ms, 100-300ms, 300ms-1sec, 1sec-3sec, 3sec-10sec, 10sec-30sec, and > 30 seconds intervals. Long query durations and long wait times are indicative of the capacity running hot. It may also mean that a single dataset is causing problems and further investigation is needed. |
-| Top 5 Datasets by Average Duration |  The five datasets with the longest average query duration, in milliseconds |
-| Hourly Query Duration Distributions |  Query counts and average duration (in milliseconds) vs. memory consumption in GB, split into one hour buckets, reported in local time |
-| Direct Query / Live Connections (> 80% Utilization) |  The times that a direct query or live connection exceeded 80% CPU utilization, split into one hour buckets, reported in local time |
+| Top 5 Datasets by Average Duration |  The five datasets with the longest average query duration, in milliseconds. |
+| Hourly Query Duration Distributions |  Query counts and average duration (in milliseconds) vs. memory consumption in GB, split into one hour buckets, reported in local time. |
+| Direct Query / Live Connections (> 80% Utilization) |  The times that a direct query or live connection exceeded 80% CPU utilization, split into one hour buckets, reported in local time. |
 |  |  |
 
 #### Query Waits area
 
 | Report section | Metrics |
 | --- | --- |
-| Query Wait Times |  Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days<br>  Total: The total number of queries run for the dataset<br>  Wait count: The number of queries in the dataset that waited on system resources before starting execution <br>  Average: The average query wait time for the dataset, in milliseconds<br>  Max: The duration of the longest-waiting query in the dataset, in milliseconds|
-| Top 5 Datasets by Average Wait Time |  The five datasets with the longest average wait time to start executing a query,  in milliseconds |
-| Wait Time Distributions |  The query duration histogram is bucketed by query durations (in milliseconds) into the following categories: <= 50ms , 50-100ms , 100-200ms , 200-400ms 400ms-1sec , 1 sec-5 sec and > 5 seconds intervals |
-| Hourly Query Wait Time Distributions |  Query wait counts and average wait time (in milliseconds) vs. memory consumption in GB, split into one hour buckets reported in local time |
+| Query Wait Times |  Data in this section is sliced by datasets, workspace, and hourly buckets in the past seven days.<br>  Total: The total number of queries run for the dataset.<br>  Wait count: The number of queries in the dataset that waited on system resources before starting execution.<br>  Average: The average query wait time for the dataset, in milliseconds.<br>  Max: The duration of the longest-waiting query in the dataset, in milliseconds.|
+| Top 5 Datasets by Average Wait Time |  The five datasets with the longest average wait time to start executing a query,  in milliseconds. |
+| Wait Time Distributions |  The query duration histogram is bucketed by query durations (in milliseconds) into the following categories: <= 50ms , 50-100ms , 100-200ms , 200-400ms 400ms-1sec , 1 sec-5 sec and > 5 seconds intervals. |
+| Hourly Query Wait Time Distributions |  Query wait counts and average wait time (in milliseconds) vs. memory consumption in GB, split into one hour buckets reported in local time. |
 |  |  |
 
 #### Datasets area
@@ -188,8 +188,8 @@ The Datasets page has different *areas*, which include  **Refreshes**, **Query D
 | --- | --- |
 | Dataset Sizes  |  Max size: The maximum size of the dataset in MB for the period shown. |
 | Dataset Eviction Counts |  Total: The total number of dataset *evictions* for each capacity. When a capacity faces memory pressure, the node evicts one or more datasets from memory. Datasets that are inactive (with no query/refresh operation currently executing) are evicted first. Then the eviction order is based on a measure of 'least recently used' (LRU).|
-| Hourly Loaded Dataset Counts |  Number of datasets loaded into memory vs. memory consumption in GB, split into one hour buckets, reported in local time |
-| Hourly Dataset Evictions and Memory Consumption |  Dataset evictions vs. memory consumption in GB, split into one hour buckets, reported in local time |
+| Hourly Loaded Dataset Counts |  Number of datasets loaded into memory vs. memory consumption in GB, split into one hour buckets, reported in local time. |
+| Hourly Dataset Evictions and Memory Consumption |  Dataset evictions vs. memory consumption in GB, split into one hour buckets, reported in local time. |
 | Consumed Memory Percentages |  Total active datasets in memory as a percentage of total memory. The delta between Active and All define datasets that can be evicted. Shown hourly, for the previous seven days. |
 |  |  |
 
