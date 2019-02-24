@@ -19,7 +19,7 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
 
-## January - Febuary 2019
+## January - February 2019
 
 ### Visio visuals
 
