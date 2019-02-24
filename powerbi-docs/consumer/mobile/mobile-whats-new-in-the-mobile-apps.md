@@ -19,6 +19,16 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
 
+## January - Febuary 2019
+
+### Visio visuals
+
+Enabling Single sign on (SSO) in Visio visuals, so no additional sign-in steps are required when viewing report with Visio visual in the app. 
+
+### Dashboard commenting is coming to Power BI Mobile Windows app
+
+You can add comments directly to dashboards and specific tiles to discuss your data, and anyone viewing the dashboard will see your comments. 
+
 ## December 2018
 
 ### Filter is now available for landscape reports 
