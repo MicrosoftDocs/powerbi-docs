@@ -20,7 +20,7 @@ For related "What's New" information, see:
 * [What's new in the Power BI service](../../service-whats-new.md)  
 
 ## January - February 2019
-
+ 
 ### Visio visuals
 
 Enabling Single sign on (SSO) in Visio visuals, so no additional sign-in steps are required when viewing report with Visio visual in the app. 
