@@ -447,10 +447,6 @@
           href: service-flow-integration.md
         - name: "Get started with third-party apps"
           href: service-power-bi-get-started-third-party-apps.md
-    - name: Whitepapers
-      items: 
-      - name: "Power BI security whitepaper"
-        href: whitepaper-powerbi-security.md          
   - name: How to
     items: 
     - name: Get data from files
@@ -849,8 +845,12 @@
       href: webinars.md
     - name: "Supported languages and countries/regions"
       href: supported-languages-countries-regions.md
-    - name: "Whitepapers"
-      href: whitepapers.md
+    - name: Whitepapers
+      items: 
+      - name: "Whitepapers overview"
+        href: whitepapers.md        
+      - name: "Power BI security whitepaper"
+        href: whitepaper-powerbi-security.md                
 - name: Power BI for developers
   items:
   - name: "What can developers do with Power BI"
