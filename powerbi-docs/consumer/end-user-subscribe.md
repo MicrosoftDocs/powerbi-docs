@@ -7,7 +7,7 @@ ms.reviewer: 'cmfinlan'
 featuredvideoid: 
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 12/14/2019
 

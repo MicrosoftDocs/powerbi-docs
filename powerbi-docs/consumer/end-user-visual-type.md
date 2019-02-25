@@ -6,9 +6,9 @@ manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/12/2019
+ms.date: 02/21/2019
 ms.author: mihart
 
 LocalizationGroup: Consumer

@@ -1,5 +1,5 @@
 ---
-title: Additional purchase may be required -  Power BI Visuals Guidelines
+title: Additional purchase may be required -  Power BI visuals guidelines
 description: Learn how you can publish your custom visual to AppSource for others to discover and use it via a purchase.
 author: markingmyname
 ms.author: maghan
@@ -14,26 +14,27 @@ ms.date: 11/26/2018
 
 # Guidelines for Power BI visuals with additional purchases
 
-Until recently, the **Marketplace (AppSource)** accepted only Power BI visuals that are free. This policy is changing so that visuals with "additional purchase may be required" price-tag may also be submitted to the **AppSource**. Additional purchase may be required visuals are similar to in-app purchase (IAP) adds-in in office store. Developers may also submit these visuals for certification after the **AppSource** team approves them, and after making sure they comply with certification requirements, as described in the [Certified custom visuals article](../power-bi-custom-visuals-certified.md).
+Until recently, the Marketplace (AppSource) accepted only Power BI visuals that are free. This policy has changed, so that you can also submit visuals to AppSource that have an "additional purchase may be required" price tag. 
 
-> [!Note]
-> For the visual to be certified, it must not access external services or resources.
+"Additional purchase may be required" visuals are similar to in-app purchase (IAP) add-ins in the Office Store. Developers may also submit these visuals for certification after the AppSource team approves them, and after making sure they comply with certification requirements. For more information about the requirements, see [Certified custom visuals](../power-bi-custom-visuals-certified.md).
 
-> [!Note]
-> All free visuals should keep same free features previously offered. You may add optional advanced paid features on top of the old free features. We recommend to submit the IAP visuals with the advanced features as new visuals and not to update the old free ones.
+> [!NOTE]
+> * For the visual to be certified, it must not access external services or resources.
+> * All free visuals should keep the same free features that were previously offered. You may add optional advanced paid features in addition to the existing free features. We recommend that you submit the IAP visuals with the advanced features as new visuals and not update the existing free ones.
 
 
-## What's changing in the submission process?
+## What changed in the submission process?
 
-Developers upload their IAP visuals to AppSource via the Seller Dashboard, as they've been doing for free visuals. To indicate that the submitted visual has IAP features, developers should write in the seller dashboard notes: "Visual with in-app purchase." Also, developers need to provide a license key or token so that the validation team can validate the IAP features. Once the visual is validated and approved, the AppSource listing for the IAP visual states 'Additional purchase may be required' under the pricing options.
+Developers upload their IAP visuals to AppSource via the Seller Dashboard, as they've been doing for free visuals. To indicate that the submitted visual has IAP features, developers should write in the Seller Dashboard notes, "Visual with in-app purchase." Also, developers need to provide a license key or token so that the validation team can validate the IAP features. After the visual is validated and approved, the AppSource listing for the IAP visual states, "Additional purchase may be required" under the pricing options.
 
 ## What is a Power BI visual with IAP features?
 
-An IAP visual is free visual and offers free features, but also has additional advanced features for which extra charges may be applied to operate them. Developers must notify users in the visual's description regarding which features require additional purchases to operate. Currently, Microsoft does not provide native application programming interfaces (APIs) to support purchase in apps and add-ins.
-Developers may use any third-party payment system for those purchases. Refer to our store [policy](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
+An IAP visual is a free visual that offers free features. It also has some advanced features for which extra charges may be applied to operate them. In the visual's description, developers must notify users about the features that require additional purchases to operate. Currently, Microsoft does not provide native APIs to support the purchase of apps and add-ins.
+
+Developers may use any third-party payment system for these purchases. For more information, see [our store policy](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
 
 > [!NOTE]
-> Watermarks are not allowed on the free features. Developers may display a popup window or watermark if the advanced paid features are used without a valid license.  
+> Watermarks are not allowed on the free features. Developers may display a pop-up window or a watermark if the advanced paid features are used without a valid license.  
 
 ## Logo guidelines
 
@@ -42,31 +43,31 @@ This section describes the specifications for adding logos and logotypes in visu
 > [!NOTE]
 > Logos are allowed in edit mode only. Logos can't be displayed in view mode.
 
-![definitions](media/office-store-in-app-purchase-visual-guidelines/definitions.png)
+![Definitions](media/office-store-in-app-purchase-visual-guidelines/definitions.png)
 
-![things-to-keep](media/office-store-in-app-purchase-visual-guidelines/things-to-keep-in-mind.png)
+![Things to keep in mind](media/office-store-in-app-purchase-visual-guidelines/things-to-keep-in-mind.png)
 
-![things-to](media/office-store-in-app-purchase-visual-guidelines/things-to-avoid.png)
+![Things to avoid](media/office-store-in-app-purchase-visual-guidelines/things-to-avoid.png)
 
-![size-and-format ](media/office-store-in-app-purchase-visual-guidelines/size-and-format.png)
+![Size and format](media/office-store-in-app-purchase-visual-guidelines/size-and-format.png)
 
-![margins-and](media/office-store-in-app-purchase-visual-guidelines/margins-and-sizes.png)
+![Margins and sizing](media/office-store-in-app-purchase-visual-guidelines/margins-and-sizes.png)
 
-![edit-mode](media/office-store-in-app-purchase-visual-guidelines/logos-in-edit-mode.png)
+![Edit mode](media/office-store-in-app-purchase-visual-guidelines/logos-in-edit-mode.png)
 
 ## Best practices
 
 ### Visual landing page
 
-Use the landing page to clarify to users how they can use your visual and where to purchase the license. Don't include videos that are automatically triggered. Only add material that helps improve the user's experience, such as information or links on license purchasing details, and how to use IAP features.
+Use the landing page to clarify to users how they can use your visual and where to purchase the license. Don't include videos that are automatically triggered. Add only material that helps improve the user's experience, such as information or links to license purchasing details and how to use IAP features.
 
 ### License key and token
 
-For user convenience, add license key or token related fields at the top of the format pane, so they are better located for users.
+For the user's convenience, add the license key or token related fields at the top of the format pane.
 
 ## FAQ
 
-For more information and answers to questions, visit  [Frequently asked questions about visuals with additional purchases](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
+For more information about visuals, see  [Frequently asked questions about visuals with additional purchases](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
 
 ## Next steps
 
