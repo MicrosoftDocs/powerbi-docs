@@ -1,6 +1,6 @@
 ---
 title: Configure credentials programmatically
-description: Walkthrough - Encrypt credentials for On-Prem Gateway datasources
+description: Walkthrough - Encrypt credentials for On-prem Gateway datasources
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -39,7 +39,7 @@ ms.date: 02/17/2019
                     PrivacyLevelEnum.Private);
     ```
 
-4. Call [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) to set credentials, using the gateway and data source ID from step one and using the credential details from step four.
+4. Call [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) to set credentials, using the gateway and data source ID from step 1 and using the credential details from step 4.
 
     ```csharp
     pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);
@@ -47,7 +47,7 @@ ms.date: 02/17/2019
 
 ### Expired on-premises data source credentials flow (On-premises data gateway)
 
-1. [Follow steps one and two from the previous scenario](#configure-credential-flow-for-data-sources).
+1. [Follow steps 1 and 2 from the previous scenario](#configure-credential-flow-for-data-sources).
 
 2. Call [Get Gateway](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) to retrieve the gateway public key.
 
@@ -152,7 +152,7 @@ ms.date: 02/17/2019
     pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);
     ```
 
-## Configure a new data source for On-premises data gateway
+## Configure a new data source for an On-premises data gateway
 
 1. Install the [On-premises data gateway](https://powerbi.microsoft.com/gateway/) on your machine.
 
