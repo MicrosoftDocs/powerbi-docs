@@ -130,6 +130,8 @@ Custom visuals are supported in **Publish to web**. When you use Publish to web,
 - Reports shared to you directly or through an organizational content pack.
 - Reports in a group in which you are not an edit member.
 - "R" Visuals are not currently supported in Publish to web reports.
+- The Key influencers visual is currently not supported in Publish to web reports.
+- Quick insights are not enabled
 - Exporting Data from visuals in a report, which has been published to the web
 - ArcGIS Maps for Power BI visuals
 - Reports containing report-level DAX measures
