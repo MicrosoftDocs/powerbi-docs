@@ -1,6 +1,6 @@
 ---
 title: Encrypt credentials
-description: Walkthrough - Encrypt credentials for On-Prem Gateway datasources
+description: Walkthrough - Encrypt credentials for On-prem Gateway datasources
 author: mahirdiab
 ms.author: mahirdiab
 manager: eligr
