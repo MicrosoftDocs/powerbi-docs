@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/22/2019
+ms.date: 02/25/2019
 LocalizationGroup: Premium 
 ---
 
@@ -72,8 +72,8 @@ The dashboard includes the following metrics:
 | --- | --- |
 | CPU Highest Utilization Capacity | Capacity with the maximum number of times CPU exceeded 80% of the thresholds in the past seven days. |
 | CPU Highest Utilization Count | Number of times CPU the named capacity exceeded 80% of the thresholds in the past seven days. | 
-| Memory Max Utilization Capacity | Name of the capacity with the maximum number of times memory exceeded 80% of the thresholds in the past seven days, split into three-minute buckets.  |
-| Memory Max Utilization Count| Number of times memory the named capacity exceeded 80% of the thresholds in the past seven days, split into three-minute buckets. |
+| Memory Max Utilization Capacity | Capacity with the maximum number of times max memory limit was hit in the past seven days, split into three-minute buckets.  |
+| Memory Max Utilization Count| Number of times the named capacity reached the max memory limit in the past seven days, split into three-minute buckets. |
 |||
 
 #### Dataset Summary
@@ -83,18 +83,18 @@ The dashboard includes the following metrics:
 | Datasets | Total number of datasets across all workspaces in your capacities.|
 | Datasets Average Size (MB) | Average size of datasets across all workspaces in your capacities.|  
 | Datasets Average Loaded Count | Average count of datasets loaded into memory. |  
-| Datasets Average Active Dataset (%)| |
-| CPU - Datasets Max (%)| |
-| CPU - Datasets Average (%)| |
-| Memory - Datasets Average (GB) | Average size of datasets in memory. |
-| Memory - Datasets Max (GB) | Max size of datasets in memory.|
+| Datasets - Average Active Dataset (%)| Average active datasets in the past seven days. A dataset is defined as active if the user has interacted on the visuals with the past three minutes. |
+| CPU - Datasets Max (%)| Max CPU consumption by dataset workload in the past seven days. |
+| CPU - Datasets Average (%)| Average CPU consumption by dataset workload in the past seven days. |
+| Memory - Datasets Average (GB) | Average memory consumption by dataset workload in the past seven days. |
+| Memory - Datasets Max (GB) | Max memory consumption by dataset workload in the past seven days.|
 | Datasets Evictions | Total number of datasets evicted due to memory pressure. |
-| Direct Query/Live High Utilization Count| Number of times Direct query/Live connections exceeded 80% of the thresholds in the past seven days, split into three-minute buckets. |
-| Direct Query/Live Max Utilization Count| Most times the Direct Query/Live connections exceeded 80% in the past seven days, split into one-hour buckets. |
-| Direct Query/Live Max High Utilization | |
-| Direct Query/Live Max Occurred Time | Local time that Direct query/Live connections exceeded 80% the most times in an hour. |
+| DirectQuery/Live High Utilization Count| Number of times DirectQuery/Live connections exceeded 80% of the thresholds in the past seven days, split into three-minute buckets. |
+| DirectQuery/Live Max Utilization Count| Most times the DirectQuery/Live connections exceeded 80% in the past seven days, split into one-hour buckets. |
+| DirectQuery/Live Max High Utilization | Maximum number of times DirectQuery/Live connections exceeded 80% of the thresholds in the past seven days, split into three-minute buckets.|
+| DirectQuery/Live Max Occurred Time | Local time that DirectQuery/Live connections exceeded 80% the most times in an hour. |
 | Refreshes Total | Total number of refreshes in the past seven days. |
-| Refresh Reliability (%) | |
+| Refresh Reliability (%) | Number of successful refreshes divided by the total number of refreshes in the past seven days. |
 | Refreshes Average Duration (Minutes) | Average amount of time to complete refresh. |
 | Refreshes Average Wait Time (Minutes)| Average amount of time before starting refresh. |
 | Queries Total |  Total number of queries run in the past seven days. |
@@ -111,10 +111,10 @@ The dashboard includes the following metrics:
 | Refreshes Total | Total number of refreshes in the past seven days.|  
 | Refreshes Average Duration (Minutes) | The time taken to complete the refresh. |
 | Refreshes Average Wait Times (Minutes) | The lag between the scheduled time and actual start of the refresh.|
-| CPU - Dataflows Max (%) | |
-| CPU - Dataflows Average (%) | |
-| Memory - Dataflows Max (GB) | |
-| Memory - Dataflows Average (GB) | |
+| CPU - Dataflows Max (%) | Max CPU consumption by dataflows workload in the past seven days. |
+| CPU - Dataflows Average (%) | Average CPU consumption by dataflows workload in the past seven days. |
+| Memory - Dataflows Max (GB) | Max memory consumption by dataflows workload in the past seven days. |
+| Memory - Dataflows Average (GB) | Average memory consumption by dataflows workload in the past seven days. |
 |||
 
 #### Paginated Report Summary
@@ -125,10 +125,10 @@ The dashboard includes the following metrics:
 | Views Total | Total number of times that all reports have been viewed by users. | 
 | Rows Total | Total number of rows of data in all reports.|
 | Total Time | Total time it takes for all phases (data retrieval, processing, and rendering) of all reports, in milliseconds. |
-| CPU - Paginated Reports Max (%) |  |
-| CPU - Paginated Reports Average (%) |  |
-| Memory - Paginated Reports Max (GB) |  |
-| Memory - Paginated Reports Average (GB) |  |
+| CPU - Paginated Reports Max (%) | Maximum CPU consumption by paginated report workload in the past seven days. |
+| CPU - Paginated Reports Average (%) | Average CPU consumption by paginated report workload in the past seven days. |
+| Memory - Paginated Reports Max (GB) | Maximum memory consumption by paginated report workload in the past seven days. |
+| Memory - Paginated Reports Average (GB) | Average memory consumption by paginated report workload in the past seven days. |
 |||
 
 
@@ -169,7 +169,7 @@ The Datasets page has different *areas*, which include  **Refreshes**, **Query D
 | Query Duration Distribution |  The query duration histogram is bucketed by query durations (in milliseconds) into the following categories: <= 30ms, 30-100ms, 100-300ms, 300ms-1sec, 1sec-3sec, 3sec-10sec, 10sec-30sec, and > 30 seconds intervals. Long query durations and long wait times are indicative of the capacity running hot. It may also mean that a single dataset is causing problems and further investigation is needed. |
 | Top 5 Datasets by Average Duration |  The five datasets with the longest average query duration, in milliseconds. |
 | Hourly Query Duration Distributions |  Query counts and average duration (in milliseconds) vs. memory consumption in GB, split into one-hour buckets, reported in local time. |
-| Direct Query / Live Connections (> 80% Utilization) |  The times that a direct query or live connection exceeded 80% CPU utilization, split into one-hour buckets, reported in local time. |
+| DirectQuery / Live Connections (> 80% Utilization) |  The times that a DirectQuery or live connection exceeded 80% CPU utilization, split into one-hour buckets, reported in local time. |
 |  |  |
 
 #### Query Waits area
