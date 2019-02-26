@@ -13,7 +13,7 @@ ms.date: 02/25/2019
 
 # Configure credentials programmatically for Power BI
 
-Follow these steps to configure credentials programmatically for Power BI
+Follow these steps to configure credentials programmatically for Power BI.
 
 ## Configure a credential flow for data sources
 
