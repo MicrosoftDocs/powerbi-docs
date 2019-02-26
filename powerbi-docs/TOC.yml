@@ -1235,7 +1235,7 @@
     items:
     - name: "Power BI Premium"
       items:
-      - name: "Power BI Premium - what is it?"
+      - name: "What is Power BI Premium?"
         href: service-premium.md
       - name: "Premium capacity memory use, optimization"
         href: service-premium-understand-how-it-works.md
