@@ -136,6 +136,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "power-bi/mobile-windows-10-phone-app-get-started.md", 
+            "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-phone-app-get-started",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/developer/integrate-dashboard.md", 
             "redirect_url": "/power-bi/developer/embed-sample-for-your-organization",
             "redirect_document_id": false
