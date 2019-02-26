@@ -2,18 +2,18 @@
 title: Data sources supported by DirectQuery in Power BI
 description: Get a list of which data sources can use DirectQuery.
 author: davidiseminger
+ms.author: davidi
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/01/2018
-ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
+
 # Data sources supported by DirectQuery in Power BI
+
 **Power BI Desktop** and the **Power BI service** have many data sources to which you can connect and get access to data. This article describes which data sources for Power BI support the connection method known as **DirectQuery**. For more information about DirectQuery, see [**DirectQuery in Power BI**](desktop-directquery-about.md).
 
 The following data sources support DirectQuery in Power BI:

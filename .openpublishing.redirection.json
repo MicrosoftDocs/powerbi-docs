@@ -769,6 +769,11 @@
             "source_path": "powerbi-docs/service-gateway-enterprise-tshoot.md",
             "redirect_url": "/power-bi/service-gateway-onprem-tshoot",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/spark-on-hdinsight-with-direct-connect.md",
+            "redirect_url": "/power-bi/desktop-directquery-data-sources",
+            "redirect_document_id": false
         }
     ]
 }
