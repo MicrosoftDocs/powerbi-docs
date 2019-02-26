@@ -59,7 +59,7 @@ Certified custom visuals are visuals in the [marketplace](https://appsource.micr
 
 ### What is a visual with additional purchases?
 
-A visual with additional purchases is similar to in-app purchase (IAP) adds-in in the marketplace, these adds-in have a price tag **Additional purchase may be required**.
+A visual with additional purchases is similar to in-app purchase (IAP) adds-in in the marketplace, these adds-in have a price tag **Additional purchase may be required**.
 
 IAP custom visuals are free, downloadable custom visuals - users pay nothing to download those custom visuals from the marketplace. IAP visuals offer optional in-app purchases for advanced features.  
 
