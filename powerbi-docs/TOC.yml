@@ -1038,7 +1038,7 @@
       - name: "Add rows to a table"
         href: developer/walkthrough-push-data-add-rows.md
       - name: "Configure credentials"
-        href: developer/config-credentials.md
+        href: developer/configure-credentials.md
       - name: "Encrypt credentials"
         href: developer/encrypt-credentials.md
     - name: Reference
