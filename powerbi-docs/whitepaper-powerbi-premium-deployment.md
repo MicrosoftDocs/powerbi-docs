@@ -181,7 +181,7 @@ Design flexibility can be achieved in three ways. Data modelers can:
 
 As shown in the following image, an Import model can integrate data from any number of supported data source types.
 
-![An Import model can integrate data from any number of supported data source types](media/whitepaper-premium-deployment/ import-model.png)
+![An Import model can integrate data from any number of supported data source types](media/whitepaper-premium-deployment/import-model.png)
 
 However, while there are compelling advantages associated with import models, there are disadvantages too:
 
@@ -919,7 +919,7 @@ Within the app, the **Query Durations** section was used to find the culprit dat
 
 The image below shows one hour on January 30, where a significant setback in a dataset's performance occurred, indicated by the size of the "(3,10s]" execution duration bucket. Clicking that one-hour bar reveals all the datasets loaded into memory during that time, thus surfacing the candidate culprit datasets causing the noisy neighbor effect.
 
-![Bar showing worst performance by a large "(3,10s]" portion](media/whitepaper-premium-deployment/worst-performing-queries.png)
+![Bar showing worst performance by a large portion](media/whitepaper-premium-deployment/worst-performing-queries.png)
 
 Once a problematic timespan is identified (i.e. during Jan 30 in the image above) the Power BI administrator can remove all dataset filters then filter only by that timespan to determine which datasets were actively queried during this time. The culprit dataset for the noisy neighbor effect is usually either the top queried dataset or the one with the longest average query duration.
 
@@ -949,7 +949,7 @@ Effects of CPU saturation are expressed by operations taking longer than they sh
 
 A similar pattern can sometimes be detected in background operations if they contribute to CPU saturation. A Power BI administrator can look for a periodic spike in refresh times for a specific dataset, which can indicate CPU saturation at the time (probably due to other ongoing dataset refreshes and/or interactive queries). In this instance, referring to the **System** view in the app may not necessarily reveal that the CPU is at 100%. The **System** view displays hourly averages, but the CPU can become saturated for several minutes of heavy operations, which shows up as spikes in wait times.
 
-There are more nuances to seeing the effect of CPU saturation. While the number of queries that wait is important, query wait time will always happen to some extent without causing discernable performance degradation. Some datasets (with lengthier average query time, indicating complexity or size) are more prone to the effects of CPU saturation than others. To easily identify these datasets, the Power BI administrator can look for changes in the color composition of the bars in the **Hourly Wait Time**** Distribution** visual. After spotting an outlier bar, they can look for the datasets that had query waits during that time and also look at the average query wait time compared to average query duration. When these two metrics are of the same magnitude and the query workload for the dataset is non-trivial, it is likely that the dataset is impacted by insufficient CPU.
+There are more nuances to seeing the effect of CPU saturation. While the number of queries that wait is important, query wait time will always happen to some extent without causing discernable performance degradation. Some datasets (with lengthier average query time, indicating complexity or size) are more prone to the effects of CPU saturation than others. To easily identify these datasets, the Power BI administrator can look for changes in the color composition of the bars in the **Hourly Wait Time Distribution** visual. After spotting an outlier bar, they can look for the datasets that had query waits during that time and also look at the average query wait time compared to average query duration. When these two metrics are of the same magnitude and the query workload for the dataset is non-trivial, it is likely that the dataset is impacted by insufficient CPU.
 
 This effect can be especially apparent when a dataset is consumed in short bursts of high frequency queries by multiple users (i.e. in a training session), resulting in CPU saturation during each burst. In this case, significant query wait times on this dataset can be experienced as well as impacting on other datasets in the capacity (noisy neighbor effect).
 
