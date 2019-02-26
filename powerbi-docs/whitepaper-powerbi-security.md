@@ -22,15 +22,7 @@ LocalizationGroup: Conceptual
 
 **Technical Reviewers:** Pedram Rezaei, Cristian Petculescu, Siva Harinath, Tod Manning, Haydn Richardson, Adam Wilson, Ben Childs, Robert Bruckner, Sergei Gundorov, Kasper de Jonge
 
-**Published:** February 28, 2019
-
 **Applies to:** Power BI SaaS, Power BI Desktop, Power BI Embedded, Power BI Premium
-
-This document is provided *as-is*. Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it.
-
-Some examples depicted herein are provided for illustration only and are fictitious.  No real association or connection is intended or should be inferred.
-
-This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.
 
 > [!NOTE]
 > You can save or print this whitepaper by selecting **Print** from your browser, then selecting **Save as PDF**.
