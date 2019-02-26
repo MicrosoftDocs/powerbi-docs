@@ -27,9 +27,9 @@ LocalizationGroup: Premium
 
 Power BI is a business analytics service designed to deliver insights that enable fast, informed decisions. Since its release in 2015 it has quickly become a popular service used to deliver solutions for the smallest of organizations to the largest of enterprises.
 
-It is made available in two ways: As a cloud service and as an on-premises reporting solution named **Power BI Report Server**. \[[1](#footnote-01)\]
+It is made available in two ways: As a cloud service and as an on-premises reporting solution named **Power BI Report Server**. \[[1](#endnote-01)\]
 
-Power BI as a cloud service is Software-as-a-Service (SaaS) \[[2](#footnote-02)\]. It represents a set of services and applications that enable organizations to develop, deploy, manage, share solutions to monitor their business.
+Power BI as a cloud service is Software-as-a-Service (SaaS) \[[2](#endnote-02)\]. It represents a set of services and applications that enable organizations to develop, deploy, manage, share solutions to monitor their business.
 
 It is not the intention of this whitepaper to provide a comprehensive description of the Power BI service. Instead, it focuses on topics relevant to the subject of Power BI Premium. For general information about Power BI, refer to the comprehensive [Power BI Documentation](service-admin-premium-multi-geo.md). For a more detailed explanation of the Power BI service with a focus on achieving well-performing enterprise deployments, refer to the comprehensive [Planning a Power BI Enterprise Deployment](https://aka.ms/pbienterprisedeploy) whitepaper.
 
@@ -76,7 +76,7 @@ Power BI datasets represent a source of data ready for reporting and visualizati
 - Uploading an Excel workbook (containing one or more Excel tables and/or a workbook data model) or uploading a Comma-Separated Value (CSV) file
 - Using the Power BI service to create a push, streaming or hybrid streaming dataset
 
-Except for streaming datasets \[[3](#footnote-03)\], the dataset represents a data model which leverages the mature modeling technologies of Analysis Services.
+Except for streaming datasets \[[3](#endnote-03)\], the dataset represents a data model which leverages the mature modeling technologies of Analysis Services.
 
 Note that in documentation, sometimes the terminologies datasets and models are interchangeable. Generally, from a Power BI service perspective it is referred to as a **dataset** , and from a development perspective it is referred to as a **model**. In the context of this whitepaper they mean much the same thing.
 
@@ -118,7 +118,7 @@ Designing optimized models is discussed later in this technical paper in the Opt
 
 #### Workbooks
 
-Power BI workbooks are a Power BI content type \[[4](#footnote-04)\]. They are Excel workbooks that have been uploaded to the Power BI service, and should not be confused with uploaded Excel workbooks that create datasets (models). The workbook content type represents a connection to a workbook, which could either be uploaded to the Power BI service or remain in cloud storage on OneDrive or SharePoint Online.
+Power BI workbooks are a Power BI content type \[[4](#endnote-04)\]. They are Excel workbooks that have been uploaded to the Power BI service, and should not be confused with uploaded Excel workbooks that create datasets (models). The workbook content type represents a connection to a workbook, which could either be uploaded to the Power BI service or remain in cloud storage on OneDrive or SharePoint Online.
 
 It is important to understand that this content type is not available as a data source for Power BI data visualizations. Instead, it can be opened as a workbook in the Power BI service by using Excel Online. The main intention of this content type is to allow legacy Excel workbook reports to be accessible from within the Power BI service, and to allow its data visualizations to be pinned to Power BI dashboards.
 
@@ -134,7 +134,7 @@ In the context of this whitepaper, it is important to understand how the Power B
 
 - To load and interact with reports based on import models, the model must be fully loaded into memory (whether hosted in the Power BI service or hosted externally)
 - Each report visual issues a query to retrieve data by querying the model
-- Generally, filter and slicer interactions involve querying the model. For example, changing a slicer selection will - by default - require reloading each visual on the page \[[5](#footnote-05)\]
+- Generally, filter and slicer interactions involve querying the model. For example, changing a slicer selection will - by default - require reloading each visual on the page \[[5](#endnote-05)\]
 - Power BI reports do not guarantee displaying current data, and may require the user to refresh the report to reload the report page and its visuals
 - Users can engage with the Q&A natural language feature to ask questions, providing the Power BI report design permits it and the dataset represents a Power BI-hosted data import model or a LC dataset configured to enable Q&A
 
@@ -171,7 +171,7 @@ Import mode is the most common mode used to develop models because of the extrem
 
 It is important to understand that imported data is always stored to disk and must be fully loaded into memory to be queried or refreshed. Once in memory, import models achieve blazingly fast query results. It is also important to understand that there is no concept of an import model being partially loaded into memory.
 
-When refreshed, data is compressed and optimized and then stored to disk by the VertiPaq storage engine. When loaded from disk into memory, it is possible to see 10x compression, and so it is reasonable to expect that 10 GB of source data can compress to about 1 GB in size. Storage size on disk can achieve a 20% reduction on top this. \[[6](#footnote-06)\]
+When refreshed, data is compressed and optimized and then stored to disk by the VertiPaq storage engine. When loaded from disk into memory, it is possible to see 10x compression, and so it is reasonable to expect that 10 GB of source data can compress to about 1 GB in size. Storage size on disk can achieve a 20% reduction on top this. \[[6](#endnote-06)\]
 
 Design flexibility can be achieved in three ways. Data modelers can:
 
@@ -211,7 +211,7 @@ There are several advantages associated with DQ models:
 
 However, there are numerous disadvantages and limitations associated with DQ models:
 
-- The model must be based on a single supported data source, and therefore any data integration must already be achieved in the data source. Supported data sources are relational and analytic systems, with support for many popular data stores \[[7](#footnote-07)\].
+- The model must be based on a single supported data source, and therefore any data integration must already be achieved in the data source. Supported data sources are relational and analytic systems, with support for many popular data stores \[[7](#endnote-07)\].
 - Performance can be slow, potentially negatively impacting on the Power BI service (queries can be very CPU-intensive) and on the data source (which may not be optimized for analytic queries)
 - Power Query queries cannot be overly complex, and are limited to M expressions and functions that can be transposed to native queries understood by the data source
 - DAX functions are limited to those that can be transposed to native queries understood by the data source, and there is no support for calculated tables or built-in Time Intelligence capabilities
@@ -265,7 +265,7 @@ Power BI Premium delivers a unified self-service and enterprise BI platform with
 In addition, Power BI Premium delivers many enterprise features:
 
 - Cost-effective content distribution, enabling the sharing of Power BI content to unlimited Power BI Free users, including external users
-- Support for larger dataset sizes \[[8](#footnote-08)\]
+- Support for larger dataset sizes \[[8](#endnote-08)\]
 - Higher refresh rates of dataflows and datasets (up to 48 times per day)
 - Incremental refresh of dataflows and datasets
 - Dataflow linked entities, and parallel execution of transforms
@@ -284,7 +284,7 @@ Power BI Premium is a tenant-level Office 365 subscription available in two SKU 
 
 An alternative approach is to purchase an Azure Power BI Embedded subscription which has a single SKU family: **A** SKUs (A1-A6) for embedding and capacity testing purposes only.
 
-All SKUs deliver v-cores to create capacities \[[9](#footnote-09)\], but the EM SKUs are restricted for smaller scale embedding. While the focus of this whitepaper is on the P SKUs, much of what is discussed is also relevant also to the A SKUs.
+All SKUs deliver v-cores to create capacities \[[9](#endnote-09)\], but the EM SKUs are restricted for smaller scale embedding. While the focus of this whitepaper is on the P SKUs, much of what is discussed is also relevant also to the A SKUs.
 
 In contrast to the Premium subscription SKUs, Azure SKUs require no time commitment and are billed hourly. They deliver full elasticity enabling scale up, scale down, pause, resume and delete.
 
@@ -338,13 +338,13 @@ Import models must be fully loaded into memory so that they can be queried or re
 
 Import models are therefore loaded into - and removed from - memory according to usage. An import model is loaded when it is queried (interactive operation) and not yet in memory, or when it is to be refreshed (background operation).
 
-The removal of a model from memory is known as **eviction** , and it is an operation that Power BI can perform quickly depending on the size of the models. If the capacity is not experiencing any memory pressure, models are simply loaded into memory and remain there. \[[10](#footnote-10)\] However, when insufficient memory is available to load a model, the Power BI service will first need to free up memory. It frees up memory by detecting models that have become inactive by seeking models which have not been used in the last three minutes \[[11](#footnote-11)\], and then evicting them. If there are no inactive models to evict, the Power BI service seeks to evict models loaded for background operations. A last resort, after 30 seconds of failed attempts \[[11](#footnote-11)\], is to fail the interactive operation. In this case, the report user is gracefully notified of failure with a suggestion to try again shortly.
+The removal of a model from memory is known as **eviction** , and it is an operation that Power BI can perform quickly depending on the size of the models. If the capacity is not experiencing any memory pressure, models are simply loaded into memory and remain there. \[[10](#endnote-10)\] However, when insufficient memory is available to load a model, the Power BI service will first need to free up memory. It frees up memory by detecting models that have become inactive by seeking models which have not been used in the last three minutes \[[11](#endnote-11)\], and then evicting them. If there are no inactive models to evict, the Power BI service seeks to evict models loaded for background operations. A last resort, after 30 seconds of failed attempts \[[11](#endnote-11)\], is to fail the interactive operation. In this case, the report user is gracefully notified of failure with a suggestion to try again shortly.
 
 It is important to stress that dataset eviction is a normal and expected behavior. It strives to maximize memory usage by loading and unloading models whose combined sizes can exceed available memory. This is by design, and completely transparent to report users. High eviction rates do not necessarily mean the capacity is insufficiently resourced. They can, however, become a concern if query or refresh responsiveness is suffering because of high eviction rates.
 
 Refreshes of import models are always memory intensive as models must be loaded into memory and additional memory is required for the processing. A full refresh can use approximately double the amount of memory required by the model. This ensures that the model can be queried even when being processed (queries are sent to the existing model, until the refresh has completed, and the new model data is available). Note, incremental refresh will require less memory and could complete faster, and so can substantially reduce pressure on capacity resources. Refreshes can also be CPU-intensive for models, especially those with complex Power Query transformations, or calculated tables/columns that are complex or are based on large tables.
 
-Refreshes - like queries - require that the model be loaded into memory. If there is insufficient memory, the Power BI service will attempt to evict inactive models, and if this is not possible (as all models are active), the refresh job is queued. Refreshes are typically very CPU-intensive, even more so than queries. For this reason, there are capacity limits on the number of concurrent refreshes, set to 1.5 x the number of backend v-cores, rounded up. If there are too many concurrent refreshes, a scheduled refresh will be queued. When these situations occur, it takes longer for the refresh to complete. Note that on-demand refreshes (triggered by a user request or API call) will retry three times \[[11](#footnote-11)\], and then fail if there are still not enough resources.
+Refreshes - like queries - require that the model be loaded into memory. If there is insufficient memory, the Power BI service will attempt to evict inactive models, and if this is not possible (as all models are active), the refresh job is queued. Refreshes are typically very CPU-intensive, even more so than queries. For this reason, there are capacity limits on the number of concurrent refreshes, set to 1.5 x the number of backend v-cores, rounded up. If there are too many concurrent refreshes, a scheduled refresh will be queued. When these situations occur, it takes longer for the refresh to complete. Note that on-demand refreshes (triggered by a user request or API call) will retry three times \[[11](#endnote-11)\], and then fail if there are still not enough resources.
 
 ## Managing Power BI Premium
 
@@ -359,14 +359,14 @@ When creating a Premium capacity, the administrator is required to define:
 - Capacity name (unique within the tenant)
 - Capacity admin(s)
 - Capacity size
-- Region for data residency \[[12](#footnote-12)\]
+- Region for data residency \[[12](#endnote-12)\]
 
 At least one Capacity Admin must be assigned. Users assigned as Capacity Admins can:
 
 - Assign workspaces to the capacity
 - Manage user permissions, to add additional Capacity Admins or users with assignment permissions (to enable them to assign workspaces to the capacity)
 - Manage workloads, to configure maximum memory usage for paginated reports and dataflows workloads
-- Restart the capacity, to reset all operations in case of system overload \[[13](#footnote-13)\]
+- Restart the capacity, to reset all operations in case of system overload \[[13](#endnote-13)\]
 
 Capacity Admins cannot access workspace content (unless explicitly assigned workspace permissions) and they do not have access to all Power BI admin areas (unless explicitly assigned) such as usage metrics, audit logs or tenant settings. Importantly, Capacity Admins do not have permissions to create new capacities or scale existing capacities. Also, they are assigned on a per capacity-basis, ensuring that they can only view and manage capacities to which they are assigned.
 
@@ -374,7 +374,7 @@ Capacity size must be selected from an available list of SKU options which is co
 
 ![An example setup for the fictitious Contoso organization](media/whitepaper-premium-deployment/contoso-organization-example.png)
 
-A Premium capacity can be assigned to a region other than the home region of the Power BI tenant, providing administrative control over which datacenters (within defined geographic regions) Power BI content resides. \[[12](#footnote-12)\]
+A Premium capacity can be assigned to a region other than the home region of the Power BI tenant, providing administrative control over which datacenters (within defined geographic regions) Power BI content resides. \[[12](#endnote-12)\]
 
 Power BI service administrators and Office 365 Global Administrators can modify Premium capacities. Specifically, they can:
 
@@ -403,7 +403,7 @@ Capacity Admins, as well as Office 365 Global Administrators or Power BI service
 - **Workspaces by users** : All workspaces owned by those users, including personal workspaces, are assigned to the Premium capacity. This will include the re-assignment of workspaces when they are already assigned to a different Premium capacity. In addition, the users are also assigned workspace assignment permissions.
 
 - **Specific workspaces**
-- **The entire organization's workspaces** : All workspaces, including personal workspaces, are assigned to the Premium capacity. In addition, all current and future users are assigned workspace assignment permissions. \[[14](#footnote-14)\]
+- **The entire organization's workspaces** : All workspaces, including personal workspaces, are assigned to the Premium capacity. In addition, all current and future users are assigned workspace assignment permissions. \[[14](#endnote-14)\]
 
 A workspace can be added to a Premium capacity by using the **Workspace** pane providing the user is both a workspace admin and has assignment permissions.
 
@@ -438,7 +438,7 @@ The monitoring capabilities in the **Power BI Admin** Portal are basic and are d
 
 #### Power BI Premium Capacity Metrics App
 
-The **Power BI Premium Capacity Metrics** app is a Power BI app available to Capacity Admins and is installed like any other Power BI app \[[15](#footnote-15)\]. It contains a dashboard and report.
+The **Power BI Premium Capacity Metrics** app is a Power BI app available to Capacity Admins and is installed like any other Power BI app \[[15](#endnote-15)\]. It contains a dashboard and report.
 
 ![Power BI Premium Capacity Metrics app](media/whitepaper-premium-deployment/capacity-metrics-app.png)
 
@@ -473,15 +473,15 @@ The following are workload-related metrics:
 
 [TABLE 4 FOOTNOTES]
 
-Average refresh wait time (lag between the scheduled time and start time) in minutes \[[16](#footnote-16)\]
+Average refresh wait time (lag between the scheduled time and start time) in minutes \[[16](#endnote-16)\]
 
-Average size (in MB) of datasets in memory \[[17](#footnote-17)\]
+Average size (in MB) of datasets in memory \[[17](#endnote-17)\]
 
-Monitor memory metrics \[[18](#footnote-18)\], and eviction counts \[[19](#footnote-19)\]
+Monitor memory metrics \[[18](#endnote-18)\], and eviction counts \[[19](#endnote-19)\]
 
-Monitor dataset query metrics \[[20](#footnote-20)\]
+Monitor dataset query metrics \[[20](#endnote-20)\]
 
-Monitor CPU utilization \[[21](#footnote-21)\], query wait times, and DQ/LC utilization \[[22](#footnote-22)\]
+Monitor CPU utilization \[[21](#endnote-21)\], query wait times, and DQ/LC utilization \[[22](#endnote-22)\]
 
 [END TABLE 4 FOOTNOTES]
 
@@ -849,25 +849,46 @@ To deploy and manage Power BI Premium capacities, administrators and model devel
 
 ## End notes
 
-<a name="footnote-01"></a>\[1\] This technical paper is concerned with Power BI Premium which is only supported by the Power BI cloud service, and so Power BI Report Server is not in scope, except to state that the license required to install Power BI Report Server is included with some Power BI Premium SKUs.
-<a name="footnote-02"></a>\[2\] Power BI as a cloud service when used to embed content on behalf of application users is Platform-as-a-Service (PaaS). This type of embedding can be achieved with different two products, one of which is Power BI Premium.
-<a name="footnote-03"></a>\[3\] Push, streaming and hybrid datasets are not stored in Premium capacities, and are therefore not a consideration when deploying, managing and monitoring Premium capacities.
-<a name="footnote-04"></a>\[4\] Excel workbooks as a Power BI content type are not stored in Premium capacities, and are therefore not a consideration when deploying, managing or monitoring Premium capacities.
-<a name="footnote-05"></a>\[5\] Visuals can be configured to ignore slicer interactions. For further information, refer to the [Visualization interactions in a Power BI report](service-reports-visual-interactions.md) document.
-<a name="footnote-06"></a>\[6\] The difference in size can be determined by comparing the Power BI Desktop file size with the Task Manager memory using for the file.
-<a name="footnote-07"></a>\[7\] Support for Microsoft data sources include SQL Server, Azure Data Bricks, Azure HDInsight Spark (Beta), Azure SQL Database and Azure SQL Data Warehouse. For information about additional sources, refer to the [Data sources supported by Direct Query in Power BI](desktop-directquery-data-sources.md) document.
-<a name="footnote-08"></a>\[8\] Power BI Premium supports uploading a Power BI Desktop (.pbix) file up to a maximum of 10 GB in size. Once uploaded, a dataset can grow up to 12 GB in size as a result of refresh. Maximum upload size varies by SKU. For further information, refer to the [Power BI Premium support for large datasets](service-premium-large-datasets.md) document.
-<a name="footnote-09"></a>\[9\] SKUs with less than four v-cores do not run on dedicated infrastructure. This includes the EM1, EM2, A1 and A2 SKUs.
-<a name="footnote-10"></a>\[10\] While rare, models may be unloaded from memory due to service operations.
-<a name="footnote-11"></a>\[11\] These timings are subject to change at any time.
-<a name="footnote-12"></a>\[12\] This is referred to as multi-geo, currently in preview. The rationale for a multi-geo deployment is typically for corporate or government compliance, rather than performance and scale. Report and dashboard loading still involves requests to the home region for metadata. For further information, refer to the [Multi-Geo support for Power BI Premium (Preview)](service-admin-premium-multi-geo.md) document.
-<a name="footnote-13"></a>\[13\] It is possible that users can cause performance issues by overloading the Power BI service with jobs, writing overly complex queries, creating circular references, etc.
-<a name="footnote-14"></a>\[14\] The option to assign the entire organization's workspaces is not recommended, and a more targeted approach is preferred. Generally, it is not best practice to use personal workspaces for production content.
-<a name="footnote-15"></a>\[15\] It is possible to monitor A SKUs in the app or in the Azure portal, but not in the Power BI Admin Portal. To monitor A SKUs, refresh of the report will fail if app has not been added to the reader role of the resource. For further information, refer to the [Monitor Power BI Premium and Power BI Embedded capacities](service-admin-premium-monitor-capacity.md) document.
-<a name="footnote-16"></a>\[16\] Refreshes can wait when there is not enough CPU or memory to start.
-<a name="footnote-17"></a>\[17\] The dataset size in memory can be larger than the size on disk by up to 20%.
-<a name="footnote-18"></a>\[18\] Average Memory Usage (GB), and Highest Memory Consumption (GB)
-<a name="footnote-19"></a>\[19\] Dataset evictions**
-<a name="footnote-20"></a>\[20\] Dataset Queries , Dataset Average Query Duration (ms), Dataset Wait Count, and Dataset Average Wait Time (ms)
-<a name="footnote-21"></a>\[21\] CPU High Utilization Count and CPU Time of Highest Utilization (past seven days)
-<a name="footnote-22"></a>\[21\] DQ/LC High Utilization Count and DQ/LC Time of Highest Utilization (past seven days)
+<a name="endnote-01"></a>\[1\] This technical paper is concerned with Power BI Premium which is only supported by the Power BI cloud service, and so Power BI Report Server is not in scope, except to state that the license required to install Power BI Report Server is included with some Power BI Premium SKUs.
+
+<a name="endnote-02"></a>\[2\] Power BI as a cloud service when used to embed content on behalf of application users is Platform-as-a-Service (PaaS). This type of embedding can be achieved with different two products, one of which is Power BI Premium.
+
+<a name="endnote-03"></a>\[3\] Push, streaming and hybrid datasets are not stored in Premium capacities, and are therefore not a consideration when deploying, managing and monitoring Premium capacities.
+
+<a name="endnote-04"></a>\[4\] Excel workbooks as a Power BI content type are not stored in Premium capacities, and are therefore not a consideration when deploying, managing or monitoring Premium capacities.
+
+<a name="endnote-05"></a>\[5\] Visuals can be configured to ignore slicer interactions. For further information, refer to the [Visualization interactions in a Power BI report](service-reports-visual-interactions.md) document.
+
+<a name="endnote-06"></a>\[6\] The difference in size can be determined by comparing the Power BI Desktop file size with the Task Manager memory using for the file.
+
+<a name="endnote-07"></a>\[7\] Support for Microsoft data sources include SQL Server, Azure Data Bricks, Azure HDInsight Spark (Beta), Azure SQL Database and Azure SQL Data Warehouse. For information about additional sources, refer to the [Data sources supported by Direct Query in Power BI](desktop-directquery-data-sources.md) document.
+
+<a name="endnote-08"></a>\[8\] Power BI Premium supports uploading a Power BI Desktop (.pbix) file up to a maximum of 10 GB in size. Once uploaded, a dataset can grow up to 12 GB in size as a result of refresh. Maximum upload size varies by SKU. For further information, refer to the [Power BI Premium support for large datasets](service-premium-large-datasets.md) document.
+
+<a name="endnote-09"></a>\[9\] SKUs with less than four v-cores do not run on dedicated infrastructure. This includes the EM1, EM2, A1 and A2 SKUs.
+
+<a name="endnote-10"></a>\[10\] While rare, models may be unloaded from memory due to service operations.
+
+<a name="endnote-11"></a>\[11\] These timings are subject to change at any time.
+
+<a name="endnote-12"></a>\[12\] This is referred to as multi-geo, currently in preview. The rationale for a multi-geo deployment is typically for corporate or government compliance, rather than performance and scale. Report and dashboard loading still involves requests to the home region for metadata. For further information, refer to the [Multi-Geo support for Power BI Premium (Preview)](service-admin-premium-multi-geo.md) document.
+
+<a name="endnote-13"></a>\[13\] It is possible that users can cause performance issues by overloading the Power BI service with jobs, writing overly complex queries, creating circular references, etc.
+
+<a name="endnote-14"></a>\[14\] The option to assign the entire organization's workspaces is not recommended, and a more targeted approach is preferred. Generally, it is not best practice to use personal workspaces for production content.
+
+<a name="endnote-15"></a>\[15\] It is possible to monitor A SKUs in the app or in the Azure portal, but not in the Power BI Admin Portal. To monitor A SKUs, refresh of the report will fail if app has not been added to the reader role of the resource. For further information, refer to the [Monitor Power BI Premium and Power BI Embedded capacities](service-admin-premium-monitor-capacity.md) document.
+
+<a name="endnote-16"></a>\[16\] Refreshes can wait when there is not enough CPU or memory to start.
+
+<a name="endnote-17"></a>\[17\] The dataset size in memory can be larger than the size on disk by up to 20%.
+
+<a name="endnote-18"></a>\[18\] Average Memory Usage (GB), and Highest Memory Consumption (GB)
+
+<a name="endnote-19"></a>\[19\] Dataset evictions
+
+<a name="endnote-20"></a>\[20\] Dataset Queries , Dataset Average Query Duration (ms), Dataset Wait Count, and Dataset Average Wait Time (ms)
+
+<a name="endnote-21"></a>\[21\] CPU High Utilization Count and CPU Time of Highest Utilization (past seven days)
+
+<a name="endnote-22"></a>\[21\] DQ/LC High Utilization Count and DQ/LC Time of Highest Utilization (past seven days)
