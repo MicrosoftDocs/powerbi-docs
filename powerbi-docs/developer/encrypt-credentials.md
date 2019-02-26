@@ -1,18 +1,18 @@
 ---
 title: Encrypt credentials
-description: Walkthrough - Encrypt credentials for On-Prem Gateway datasources
+description: Walkthrough - Encrypt credentials for On-prem Gateway datasources
 author: mahirdiab
+ms.author: mahirdiab
 manager: eligr
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/02/2019
-ms.author: mahirdiab
-
+ms.date: 02/04/2019
 ---
+
 # Encrypt credentials
+
 When you call [Create Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) or [Update Datasource](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) under an **enterprise on-prem gateway** using [Power BI Rest API](https://docs.microsoft.com/rest/api/power-bi/), the credentials value needs to be encrypted using the gateway's public key.
 
 See code example below how to encrypt the credentials in .NET.
@@ -20,27 +20,31 @@ See code example below how to encrypt the credentials in .NET.
 Credentials provided to EncodeCredentials method below should be in one of the following formats depending on the credentials type:
 
 **Basic / Windows credentials**
+
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
 ```
 
 **Key credentials**
+
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=\"}]}";
 ```
 
 **OAuth2 credentials**
+
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"eyJ0....fwtQ\"}]}";
 ```
 
-
 **Anonymous credentials**
+
 ```csharp
 var credentials = "{\"credentialData\":\"\"}";
 ```
 
 **Encrypt credentials**
+
 ```csharp
 public static class AsymmetricKeyEncryptionHelper
 {

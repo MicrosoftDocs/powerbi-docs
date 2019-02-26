@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 02/21/2019
 ms.author: davidi
 
 LocalizationGroup: Data refresh
@@ -212,7 +212,7 @@ Real-time dashboards use the Microsoft Power BI REST API, or Microsoft Stream An
 To learn how to configure scheduled refresh, see [Configure scheduled refresh](refresh-scheduled-refresh.md)
 
 ## Common data refresh scenarios
-Sometimes the best way to learn about data refresh in Power BI to look at examples. Here are some of the more common data refresh scenarios:
+Sometimes the best way to learn about data refresh in Power BI is to look at examples. Here are some of the more common data refresh scenarios:
 
 ### Excel workbook with tables of data
 You have an Excel workbook with several tables of data, but none of them are loaded into the Excel data model. You use Get Data to upload the workbook file from your local drive into Power BI, and create a dashboard. But, now you’ve made some changes to a couple of the workbook’s tables on your local drive, and you want to update your dashboard in Power BI with the new data.

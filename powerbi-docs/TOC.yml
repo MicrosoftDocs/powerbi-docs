@@ -74,7 +74,7 @@
     - name: "Default member in multidimensional models in Power BI"
       href: desktop-default-member-multidimensional-models.md            
     - name: "Custom visuals FAQ"
-      href: power-bi-custom-visuals-faq.md
+      href: power-bi-custom-visuals-faq.md   
   - name: How to
     items: 
     - name: "Get Power BI Desktop"
@@ -843,8 +843,12 @@
       href: webinars.md
     - name: "Supported languages and countries/regions"
       href: supported-languages-countries-regions.md
-    - name: "Whitepapers"
-      href: whitepapers.md
+    - name: Whitepapers
+      items: 
+      - name: "Whitepapers overview"
+        href: whitepapers.md        
+      - name: "Power BI security whitepaper"
+        href: whitepaper-powerbi-security.md                
 - name: Power BI for developers
   items:
   - name: "What can developers do with Power BI"
@@ -1037,6 +1041,8 @@
         href: developer/walkthrough-push-data-get-datasets.md
       - name: "Add rows to a table"
         href: developer/walkthrough-push-data-add-rows.md
+      - name: "Configure credentials"
+        href: developer/configure-credentials.md
       - name: "Encrypt credentials"
         href: developer/encrypt-credentials.md
     - name: Reference
@@ -1229,7 +1235,7 @@
     items:
     - name: "Power BI Premium"
       items:
-      - name: "Power BI Premium - what is it?"
+      - name: "What is Power BI Premium?"
         href: service-premium.md
       - name: "Premium capacity memory use, optimization"
         href: service-premium-understand-how-it-works.md
