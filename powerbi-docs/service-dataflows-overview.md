@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 02/22/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -65,7 +65,7 @@ Azure Data Lake Storage Gen2 is included with every paid Power BI subscription (
 
 Power BI can be configured to store dataflow data in your organization’s Azure Data Lake Storage Gen2 account. When Power BI is connected to your Azure subscription, data developers and data scientists can leverage powerful Azure products such as Azure Machine Learning, Azure Databricks, Azure Data Factory, and more.
 
-Power BI can also connect to folders with schematized data in the Common Data Model format, which are stored your organization’s Azure Data Lake Storage account. These folders can be created by services such as Azure data services. By connecting to these folders, analysts can work seamlessly with this data in Power BI. 
+Power BI can also connect to folders with schematized data in the Common Data Model format, which are stored in your organization’s Azure Data Lake Storage account. These folders can be created by services such as Azure data services. By connecting to these folders, analysts can work seamlessly with this data in Power BI. 
 
 For more information about Azure Data Lake Storage Gen2 and dataflows integration, including how to create dataflows that reside in your organization's Azure Data Lake, see [dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md).
 
