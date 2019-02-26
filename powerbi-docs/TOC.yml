@@ -846,9 +846,11 @@
     - name: Whitepapers
       items: 
       - name: "Whitepapers overview"
-        href: whitepapers.md        
+        href: whitepapers.md
       - name: "Power BI security whitepaper"
-        href: whitepaper-powerbi-security.md                
+        href: whitepaper-powerbi-security.md
+      - name: "Power BI premium deployment"
+        href: whitepaper-powerbi-premium-deployment.md
 - name: Power BI for developers
   items:
   - name: "What can developers do with Power BI"
