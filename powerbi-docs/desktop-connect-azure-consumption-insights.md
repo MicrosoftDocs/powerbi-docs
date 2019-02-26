@@ -5,6 +5,7 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
