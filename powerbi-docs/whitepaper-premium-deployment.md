@@ -721,11 +721,11 @@ To generate a stress test, consider developing a load testing application to sim
 
 In this section, several real-world scenarios will be introduced to describe common issues or challenges, how to identify them, and how to help resolve them:
 
-- [Keeping datasets up to date](keeping-datasets-up-to-date)
-- [Identifying slow-responding datasets](identifying-slow-responding-datasets)
-- [Identifying causes for sporadically slow-responding datasets](identifying-causes-for-sporadically-slow-responding-datasets)
-- [Determining whether there is enough memory](determining-whether-there-is-enough-memory)
-- [Determining whether there is enough CPU](determining-whether-there-is-enough-CPU)
+- [Keeping datasets up to date](#keeping-datasets-up-to-date)
+- [Identifying slow-responding datasets](#identifying-slow-responding-datasets)
+- [Identifying causes for sporadically slow-responding datasets](#identifying-causes-for-sporadically-slow-responding-datasets)
+- [Determining whether there is enough memory](#determining-whether-there-is-enough-memory)
+- [Determining whether there is enough CPU](#determining-whether-there-is-enough-CPU)
 
 The steps, along with chart and table examples are from the **Power BI Premium Capacity Metrics App** (app) that a Power BI administrator will have access to.
 
