@@ -893,8 +893,6 @@
         href: developer/get-azuread-access-token.md
       - name: "Embedding Q&A"
         href: developer/qanda.md
-      - name: "Configure credentials"
-        href: developer/config-credentials.md
       - name: Manage capacities in Azure
         items:
         - name: Create a capacity in Azure
@@ -1039,6 +1037,8 @@
         href: developer/walkthrough-push-data-get-datasets.md
       - name: "Add rows to a table"
         href: developer/walkthrough-push-data-add-rows.md
+      - name: "Configure credentials"
+        href: developer/config-credentials.md
       - name: "Encrypt credentials"
         href: developer/encrypt-credentials.md
     - name: Reference

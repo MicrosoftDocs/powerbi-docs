@@ -1,6 +1,6 @@
 ---
-title: Configure credentials programmatically
-description: Walkthrough - Encrypt credentials for On-prem Gateway datasources
+title: Configure credentials programmatically for Power BI
+description: How to configure credentials programmatically for Power BI for automation
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -8,10 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/17/2019
+ms.date: 02/25/2019
 ---
 
-# Configure credentials programmatically
+# Configure credentials programmatically for Power BI
+
+Follow these steps to configure credentials programmatically for Power BI
 
 ## Configure a credential flow for data sources
 
@@ -45,7 +47,7 @@ ms.date: 02/17/2019
     pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);
     ```
 
-### Expired on-premises data source credentials flow (On-premises data gateway)
+### Expired on-premises data source credentials flow
 
 1. [Follow steps 1 and 2 from the previous scenario](#configure-credential-flow-for-data-sources).
 
@@ -152,7 +154,7 @@ ms.date: 02/17/2019
     pbiClient.Gateways.UpdateDatasource(gatewayId, datasourceId, credentialDetails);
     ```
 
-## Configure a new data source for an On-premises data gateway
+## Configure a new data source for a data gateway
 
 1. Install the [On-premises data gateway](https://powerbi.microsoft.com/gateway/) on your machine.
 
