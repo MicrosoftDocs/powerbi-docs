@@ -17,7 +17,7 @@ LocalizationGroup: Connect to data
 
 # Analyze Azure cost and usage data in Power BI desktop
 
-Power BI desktop can connect to Azure and get in-depth data about your organization's Azure service usage. You can also create measures, custom columns, and visuals to report and share about your organization's Azure usage.
+Power BI desktop can connect to Azure and get in-depth data about your organization's Azure service usage. With it, you can create custom reports and measures to better understand and analyze your Azure spend.
 
 Power BI currently supports connecting to Enterprise Agreement and Customer Agreement billing accounts.
 
