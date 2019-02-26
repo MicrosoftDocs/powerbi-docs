@@ -37,7 +37,7 @@ Within the context of this whitepaper's subject, this section introduces and des
 
 ### Capacities
 
-**Capacities** are a core Power BI concept representing a set of resources (storage, processor and memory) used to host and deliver Power BI content. Capacities are either shared or dedicated. A **Shared Capacity** is shared with other Microsoft customers, while a **Dedicated Capacity** is fully committed to a single customer. Dedicated capacities are introduced in the Premium Capacities topic.
+**Capacities** are a core Power BI concept representing a set of resources (storage, processor and memory) used to host and deliver Power BI content. Capacities are either shared or dedicated. A **Shared Capacity** is shared with other Microsoft customers, while a **Dedicated Capacity** is fully committed to a single customer. Dedicated capacities are introduced in the [Premium Capacities](#premium-capacities) topic.
 
 In shared capacity, workloads run on computational resources shared with other customers. As the capacity must share resources, limitations are imposed to ensure "fair play", such as the maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
@@ -88,7 +88,7 @@ Connecting to an externally-hosted model involves installing the [On-Premises Da
 
 ##### Power BI Desktop-Developed Models
 
-Power BI Desktop - a client application intended for Power BI development - can be used to develop a model which is effectively an Analysis Services tabular model. Models can be developed by importing data from dataflows, which can then be integrated with other data sources. While the specifics on how modeling can be achieved is outside the scope of this whitepaper, it is important to understand that there are three different types - or modes - of models that can be developed by using Power BI Desktop. These modes determine whether data is imported into the model, or whether it remains in the data source. The three modes are: Import, DirectQuery, and Composite. A complete discussion of each mode will be covered in the Model Storage Modes topic.
+Power BI Desktop - a client application intended for Power BI development - can be used to develop a model which is effectively an Analysis Services tabular model. Models can be developed by importing data from dataflows, which can then be integrated with other data sources. While the specifics on how modeling can be achieved is outside the scope of this whitepaper, it is important to understand that there are three different types - or modes - of models that can be developed by using Power BI Desktop. These modes determine whether data is imported into the model, or whether it remains in the data source. The three modes are: Import, DirectQuery, and Composite. A complete discussion of each mode will be covered in the [Model Storage Modes](#model-storage-modes) topic.
 
 Externally-hosted models and models developed in Power BI desktop can enforce Row-Level Security (RLS) to limit the data that can be retrieved for a certain user. For example, users assigned to the Salespeople security group can only view report data for the sales region(s) to which they are assigned. RLS roles can be dynamic or static. **Dynamic roles** filter by the report user, while **static roles** apply the same filters for all users assigned to the role.
 
@@ -114,7 +114,7 @@ To successfully deploy and manage Power BI Premium, it is important to understan
 
 It is also important to understand that Power BI-hosted import models can refresh according to schedule or be triggered on-demand by a user in the Power BI service.
 
-Designing optimized models is discussed later in this technical paper in the Optimizing Models topic.
+Designing optimized models is discussed later in this technical paper in the [Optimizing Models](#optimizing-models) topic.
 
 #### Workbooks
 
@@ -152,7 +152,7 @@ It is important to understand that a dashboard is designed to load quickly and t
 
 The Power BI service automatically updates dashboard query caches immediately after Power BI-hosted import models are refreshed. In the case of LC and DQ models, the dataset owner has a degree of control over how often the Power BI service updates the cache, which can be configured as frequently as every 15 minutes, or as infrequently as once a week. Note that LC query cache updates will first query model metadata to determine whether a model refresh has taken place since the last cache update, and it will not proceed to update the cache when a refresh has not since occurred. This check is not possible for DQ models, and so cache updates will happen whether the source data has changed or not.
 
-Dashboard query cache updates based on DQ and LC models can significantly impact on both Power BI service resources and external data sources. Consider a dashboard with 20 tiles, all based on an Azure Analysis Services model that enforces dynamic RLS and that is refreshed every hour, and that this dashboard is shared with 100 users. If the dataset is configured to refresh every hour, this would result in at least 2000 (20 x 100) LC queries. This could place an enormous load on the Power BI service and external data sources, and it could also exceed limits imposed on available resources. Capacity resources and limits are described in the Capacity Nodes topic.
+Dashboard query cache updates based on DQ and LC models can significantly impact on both Power BI service resources and external data sources. Consider a dashboard with 20 tiles, all based on an Azure Analysis Services model that enforces dynamic RLS and that is refreshed every hour, and that this dashboard is shared with 100 users. If the dataset is configured to refresh every hour, this would result in at least 2000 (20 x 100) LC queries. This could place an enormous load on the Power BI service and external data sources, and it could also exceed limits imposed on available resources. Capacity resources and limits are described in the [Capacity Nodes](#capacity-nodes) topic.
 
 Users can interact with a dashboard in various ways, which require Power BI service resources. Specifically, they can:
 
@@ -187,7 +187,7 @@ However, while there are compelling advantages associated with import models, th
 
 - The entire model must be loaded to memory before Power BI can query the model, which can place pressure on available resources as the number and size of models grow
 - Model data is only as current as the latest refresh, and so import models need to be refreshed, preferably on a scheduled basis
-- A full refresh will remove all data from all tables and reload it from the data source. This can be very expensive in terms of time and resources for the Power BI service and the data source(s). Power BI does have support for incremental refresh which can avoid truncating and reloading entire tables, and this is covered in the Optimizing Power BI-Hosted Models topic.
+- A full refresh will remove all data from all tables and reload it from the data source. This can be very expensive in terms of time and resources for the Power BI service and the data source(s). Power BI does have support for incremental refresh which can avoid truncating and reloading entire tables, and this is covered in the [Optimizing Power BI-Hosted Models](#optimizing-power-bi-hosted-models) topic.
 
 From a Power BI service resource perspective, import models require:
 
@@ -254,7 +254,7 @@ The **Power BI Free** license allows an individual to sign in to the Power BI se
 
 The **Power BI Pro** license allows an individual to create and collaborate within app workspaces and share and distribute Power BI content. They can also configure refresh for their datasets to automatically keep data current, including from on-premises data sources. In addition, they can audit and govern how data is accessed and used. This license is required to receive shared content from others unless the user is associated with a Power BI Premium dedicated capacity.
 
-The **Power BI Premium** license is a tenant-level license, and it is discussed in the Introducing Power BI Premium section.
+The **Power BI Premium** license is a tenant-level license, and it is discussed in the [Introducing Power BI Premium](#introducing-power-bi-premium) section.
 
 For further information about Power BI licensing, refer to the [Power BI Pricing](https://powerbi.microsoft.com/pricing/) page.
 
@@ -273,7 +273,7 @@ In addition, Power BI Premium delivers many enterprise features:
 - Power BI Report Server, for on-premises reporting
 - Ability to embed content in apps on behalf of app users (PaaS)
 
-Many of these features can be leveraged to deliver efficient and scalable enterprise solutions and are covered in the Optimizing Premium Capacities section.
+Many of these features can be leveraged to deliver efficient and scalable enterprise solutions and are covered in the [Optimizing Premium Capacities](#optimizing-premium-capacities) section.
 
 ### Subscriptions and Licensing
 
@@ -378,7 +378,7 @@ At least one Capacity Admin must be assigned. Users assigned as Capacity Admins 
 
 Capacity Admins cannot access workspace content (unless explicitly assigned workspace permissions) and they do not have access to all Power BI admin areas (unless explicitly assigned) such as usage metrics, audit logs or tenant settings. Importantly, Capacity Admins do not have permissions to create new capacities or scale existing capacities. Also, they are assigned on a per capacity-basis, ensuring that they can only view and manage capacities to which they are assigned.
 
-Capacity size must be selected from an available list of SKU options which is constrained by the number of available v-cores in the pool. It is possible to create multiple capacities from the pool which could be sourced from one or more purchased SKUs. For example, a P3 SKU (32 v-cores) could be used to create three capacities: one P2 (16 v-cores), and two P1 (2 x 8 v-cores). Improved performance and scale may be achieved by creating smaller sized capacities, and this topic is discussed in the Optimizing Premium Capacities section. The following image shows An example setup for the fictitious Contoso organization consisting of five Premium capacities (3 x P1, and 2 x P3) with each containing app workspaces, and several workspaces in shared capacity.
+Capacity size must be selected from an available list of SKU options which is constrained by the number of available v-cores in the pool. It is possible to create multiple capacities from the pool which could be sourced from one or more purchased SKUs. For example, a P3 SKU (32 v-cores) could be used to create three capacities: one P2 (16 v-cores), and two P1 (2 x 8 v-cores). Improved performance and scale may be achieved by creating smaller sized capacities, and this topic is discussed in the [Optimizing Premium Capacities](#optimizing-premium-capacities) section. The following image shows an example setup for the fictitious Contoso organization consisting of five Premium capacities (3 x P1, and 2 x P3) with each containing app workspaces, and several workspaces in shared capacity.
 
 ![An example setup for the fictitious Contoso organization](media/whitepaper-premium-deployment/contoso-organization-example.png)
 
@@ -597,7 +597,7 @@ In general, slow reports can be an indication of an over-heating capacity. When 
 - **Long query durations** can indicate that model designs are not optimized, especially when multiple datasets are active in a capacity, and just one dataset is producing long query durations. This suggests that the capacity is sufficiently resourced, and that the in-question dataset is sub-optimal or just slow. Long running queries can be problematic as they can block access to resources required by other processes.
 - **Long refresh wait times** indicate insufficient memory due to many active models consuming memory, or that a problematic refresh is blocking other refreshes (exceeding parallel refresh limits).
 
-A more detailed explanation of how to use the metrics is covered next in the Optimizing Premium Capacities section.
+A more detailed explanation of how to use the metrics is covered next in the [Optimizing Premium Capacities](#optimizing-premium-capacities) section.
 
 ## Optimizing Premium Capacities
 
@@ -659,7 +659,7 @@ The following tables show possible issues and ways to identify and handle them.
 
 | Possible Explanations | How to Identify | How to Resolve |
 | --- | --- | --- |
-| High total active memory (model cannot be evicted because it is in use in the last three minutes)<br><br> Multiple high spikes in query wait times<br><br> Multiple high spikes in refresh wait times | Monitor memory metrics \[[18](#endnote-18)\], and eviction counts \[[19](#endnote-19)\] | Decrease model size, or convert to DirectQuery mode - see the **Optimizing Models** topic in this section<br><br> Scale up the capacity<br><br> Assign the content to a different capacity |
+| High total active memory (model cannot be evicted because it is in use in the last three minutes)<br><br> Multiple high spikes in query wait times<br><br> Multiple high spikes in refresh wait times | Monitor memory metrics \[[18](#endnote-18)\], and eviction counts \[[19](#endnote-19)\] | Decrease model size, or convert to DirectQuery mode - see the [Optimizing Models](#optimizing-models) topic in this section<br><br> Scale up the capacity<br><br> Assign the content to a different capacity |
 
 ##### Inefficient report designs
 
@@ -671,7 +671,7 @@ The following tables show possible issues and ways to identify and handle them.
 
 | Possible Explanations | How to Identify | How to Resolve |
 | --- | --- | --- |
-| Increasingly large volumes of import data<br><br> Complex or inefficient calculation logic, including RLS roles<br><br> Model not fully optimized<br><br> (DQ/LC) Gateway latency<br><br> Slow DQ source query response times | Review model designs<br><br> Monitor gateway performance counters | See the **Optimizing Models** topic in this section |
+| Increasingly large volumes of import data<br><br> Complex or inefficient calculation logic, including RLS roles<br><br> Model not fully optimized<br><br> (DQ/LC) Gateway latency<br><br> Slow DQ source query response times | Review model designs<br><br> Monitor gateway performance counters | See the [Optimizing Models](#optimizing-models) topic in this section |
 
 ##### High concurrent report usage
 
@@ -795,7 +795,7 @@ Consider the optimization possibilities for a Composite model. Recall that a Com
 
 #### Optimizing Externally-Hosted Models
 
-Many optimization possibilities discussed in the Optimizing Power BI-Hosted Models topic apply also to models developed with Azure Analysis Services and SQL Server Analysis Services. Clear exceptions are certain features which are not currently supported, including Composite models and aggregation tables.
+Many optimization possibilities discussed in the [Optimizing Power BI-Hosted Models](#optimizing-power-bi-hosted-models) topic apply also to models developed with Azure Analysis Services and SQL Server Analysis Services. Clear exceptions are certain features which are not currently supported, including Composite models and aggregation tables.
 
 An additional consideration for externally-hosted datasets is the database hosting in relation to the Power BI service. For Azure Analysis Services, this means creating the Azure resource in the same region as the Power BI tenant (home region). For SQL Server Analysis Services, for IaaS, this means hosting the VM in the same region, and for on-premises, it means ensuring an efficient gateway setup.
 
@@ -1005,4 +1005,4 @@ To deploy and manage Power BI Premium capacities, administrators and model devel
 
 <a name="endnote-21"></a>\[21\] CPU High Utilization Count and CPU Time of Highest Utilization (past seven days)
 
-<a name="endnote-22"></a>\[21\] DQ/LC High Utilization Count and DQ/LC Time of Highest Utilization (past seven days)
+<a name="endnote-22"></a>\[22\] DQ/LC High Utilization Count and DQ/LC Time of Highest Utilization (past seven days)
