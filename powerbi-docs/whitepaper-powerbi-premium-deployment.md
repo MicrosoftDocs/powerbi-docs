@@ -318,7 +318,15 @@ Storage is set to 100 TB per capacity node.
 
 The resources and limits of each Premium SKU (and equivalently sized A SKU) are described in the following table.
 
-[TABLE 1: Capacity nodes]
+| Capacity Nodes | Total v-cores | Backend v-cores | RAM (GB) | Frontend v-cores | DQ/LC (per sec) | Model Refresh Parallelism |
+| --- | --- | --- | --- | --- | --- | --- |
+| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3.75 | 1 |
+| EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
+| EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
+| P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
+| P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
+| P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
+| | | | | | | |
 
 #### Capacity Workloads
 
@@ -388,9 +396,13 @@ Assignment permissions are required to assign a workspace to a specific Premium 
 
 By default, Premium capacities support workloads associated with running Power BI queries. It also supports two additional workloads: **Paginated Reports** and **Dataflows**. Each workload requires configuring the maximum memory (as a percentage of total available memory) that can be used by the workload. It is important to understand that increasing maximum memory allocations can impact on the number of active models that can be hosted, and the throughput of refreshes.
 
-Memory is dynamically allocated to dataflows, but it is statically allocated to paginated reports. The reason for statically allocating the maximum memory is that paginated reports runs within a secured contained space of the capacity. Care should be taken when setting paginated reports memory as it reduces available memory for loading models.
+Memory is dynamically allocated to dataflows, but it is statically allocated to paginated reports. The reason for statically allocating the maximum memory is that paginated reports run within a secured contained space of the capacity. Care should be taken when setting paginated reports memory as it reduces available memory for loading models.
 
-[TABLE 2: Memory usage]
+|                     | EM3                      | P1                       | P2                      | P3                       |
+|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
+| Paginated reports | N/A | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
+| Dataflows | 20% default; 8% minimum  | 20% default; 4% minimum  | 20% default; 2% minimum | 20% default; 1% minimum  |
+| | | | | |
 
 Deleting a Premium capacity is possible and will not result in the deletion of its workspaces and content. Instead, it will move any assigned workspaces to shared capacity. When the Premium capacity was created in a different region, the workspace will be moved to shared capacity of the home region.
 
@@ -452,38 +464,116 @@ When the app opens, the dashboard is loaded to present numerous tiles expressing
 
 The underlying report (from which the dashboard tiles were pinned) can be accessed by clicking on any dashboard tile. It provides a more detailed perspective of each of the dashboard sections and supports interactive filtering. Filtering can be achieved by setting slicers by date range, capacity, workspace and workload (report, dataset, dataflow), and by selecting elements within report visuals to cross filter the report page. Cross filtering is a powerful technique to narrow down to specific time periods, capacities, workspaces, datasets, etc. and can be very helpful when performing root cause analysis.
 
-The report consists of the following six pages:
+The report consists of the following five pages:
 
-1. **Filters** : Enables setting filters which are applied to all report pages. Button selection reveals slicers appropriate for each of the three workloads: Datasets, paginated reports or dataflows. Slicer selection can allow narrowing focus to specific time periods, capacities, workspaces, and content (datasets, paginated reports or dataflows). It is recommended that you filter the report to one capacity at a time.
-2. **Datasets** : Displays detailed metrics on dataset health. Button selection reveals different perspectives: Summary, Refreshes, Query Durations, Query Waits and Datasets
-3. **Paginated Reports** : Displays detailed metrics on paginated report health
-4. **Dataflows** : Displays detailed metrics on dataflow health
-5. **System** : Displays overall capacity metrics, including memory and CPU utilization
-6. **Display Names and IDs** : Displays names, IDs, and owners for capacities, workspaces and workloads
+1. **Datasets** : Displays detailed metrics on dataset health. Button selection reveals different perspectives: Summary, Refreshes, Query Durations, Query Waits and Datasets
+1. **Paginated Reports** : Displays detailed metrics on paginated report health
+1. **Dataflows** : Displays detailed metrics on dataflow health
+1. **System** : Displays overall capacity metrics, including memory and CPU utilization
+1. **Display Names and IDs** : Displays names, IDs, and owners for capacities, workspaces and workloads
 
 The reports pages include different perspectives accessible by clicking buttons. Report visuals allow monitoring metrics over time to compare them against system resource usage.
 
-This whitepaper will not describe each page and perspective. Instead, it lists the metrics available in the report together with their purpose. The report presents many pages and visuals based on the following metrics, first by resource:
+This whitepaper will not describe each page and perspective. Instead, it lists the metrics available in the report together with their purpose. The report presents many pages and visuals based on the following metrics, first by resource, as shown in the following tables.
 
-[TABLE 3: Resource metrics]
+##### Entities (of which the user is a Capacity Admin)
 
-The following are workload-related metrics:
+| Metric | Description |
+| --- | --- |
+| Capacities | Number of capacities |
+| Workspaces | Number of workspaces in your capacities that are reporting metrics over the past seven days |
+| Datasets | Number of datasets in all workspaces in your capacities |
+| Dataflows | Number of dataflows in all workspaces in your capacities |
+| Paginated reports | Number of paginated reports in all workspaces in your capacities |
+| |
 
-[TABLE 4: Workload metrics]
+##### Memory
 
-[TABLE 4 FOOTNOTES]
+| Metric | Description |
+| --- | --- |
+| Average memory | Average memory usage over the past seven days (in GB) |
+| Average memory by workloads: datasets, dataflows, paginated reports | Average memory usage over the past seven days (in GB) by workloads: datasets, dataflow, paginated reports |
+| Highest utilization | Maximum memory consumption (in GB) over the past seven days, split into three-minute interval in 1-hour buckets |
+| |
 
-Average refresh wait time (lag between the scheduled time and start time) in minutes \[[16](#endnote-16)\]
+##### CPU
 
-Average size (in MB) of datasets in memory \[[17](#endnote-17)\]
+| Metric | Description |
+| --- | --- |
+| High utilization count | Number of times CPU exceeded 80% of the thresholds in the past seven days, split into 3-minute intervals in 1-hour buckets |
+| |
 
-Monitor memory metrics \[[18](#endnote-18)\], and eviction counts \[[19](#endnote-19)\]
+##### DQ/LC connections
 
-Monitor dataset query metrics \[[20](#endnote-20)\]
+| Metric | Description |
+| --- | --- |
+| High utilization count | Number of times DQ/LC connections exceeded 80% of the thresholds in the past seven days, split into 3-minute intervals in 1-hour buckets |
+| |
 
-Monitor CPU utilization \[[21](#endnote-21)\], query wait times, and DQ/LC utilization \[[22](#endnote-22)\]
+The following tables show workload-related metrics.
 
-[END TABLE 4 FOOTNOTES]
+##### Dataset refresh
+
+| Metric | Description |
+| --- | --- |
+| Refreshes | Number of refreshes in the past seven days |
+| Successful refreshes | Number of successful refreshes in the past seven days |
+| Failed refreshes | Number of failed refreshes in the past seven days |
+| Average refresh duration | Average refresh duration in minutes in the past seven days |
+| Maximum refresh duration | The duration of the longest running refresh in minutes |
+| Average wait time | Average refresh wait time (lag between the scheduled time and start time) in minutes \[[16](#endnote-16)\] |
+| Maximum wait time | Maximum refresh wait time (lag between the scheduled time and start time) in minutes |
+| Refresh reliability | Percentage of refreshes that completed by in the past seven days |
+| |
+
+##### Dataset queries
+
+| Metric | Description |
+| --- | --- |
+| Queries | Number of queries run in the past seven days |
+| Successful queries | Number of successful queries run in the past seven days |
+| Failed queries | Number of failed queries run in the past seven days |
+| Average query duration | Average query duration (in ms) in the past seven daysCan be used to determine hourly query distribution together with memory consumption, split into 1-hour buckets |
+| Maximum query duration | Maximum query duration (in ms) in the past seven days |
+| Query wait count | Number of queries which experienced some wait time or last 7 days |
+| Average query wait time | Average query wait time (in ms) over the past seven daysCan be used to determine hourly query wait time distribution together with memory consumption, split into 1-hour buckets |
+| Maximum query wait time | Maximum query wait time (in ms) over the past seven days |
+| |
+
+##### Dataset loads
+
+| Metric | Description |
+| --- | --- |
+| Average dataset size | Average size (in MB) of datasets in memory \[[17](#endnote-17)\] |
+| Active datasets loaded in memory | Number of datasets loaded into memory per hour |
+| Dataset evictions | Number of datasets evicted due to memory pressure |
+| Dataset eviction and memory consumption | Number of datasets evicted from memory per hour |
+| Active memory | Active memory shows the total amount of memory that cannot be evicted because it is in use. The difference between the active memory and the total memory is the sum of the memory consumed by datasets which are in memory but have not been used in the last 3 minutes. |
+| |
+
+##### Dataflows
+
+| Metric | Description |
+| --- | --- |
+| Refreshes | Number of dataflow refreshes in the past seven days |
+| Average refresh duration | Average dataflow refresh duration (in minutes) in the past seven days |
+| Maximum refresh duration | Maximum dataflow refresh duration (in minutes) in the past seven days |
+| Average refresh wait time | Average dataflow refresh wait time (lag between the scheduled time and start time, in minutes) |
+| Maximum refresh wait time | Maximum dataflow refresh wait time (lag between the scheduled time and start time, in minutes) |
+| Refresh reliability | Percentage of dataflow refreshes that completed in the past seven days |
+| |
+
+##### Paginated reports
+
+| Metric | Description |
+| --- | --- |
+| Views | Number of report views |
+| Row count | Number of rows of data in the report |
+| Average retrieval | Average data retrieval duration (in ms) in the past seven days |
+| Average processing | Average processing duration (in ms) in the past seven days |
+| Average rendering | Average rendering duration (in ms) in the past seven days |
+| Average duration | Average total time to process all phases of a report view (in ms) in the past seven days |
+| |
 
 The app is likely to undergo frequent version updates. For up to date information, refer to the [Monitor Power BI Premium and Power BI Embedded capacities](service-admin-premium-monitor-capacity.md) document.
 
@@ -563,7 +653,31 @@ The "Top 5 by Average Duration" chart highlights the top five datasets, paginate
 
 #### Why are reports slow?
 
-[Table 5: slow reports]
+The following tables show possible issues and ways to identify and handle them.
+
+##### Insufficient capacity resources
+
+| Possible Explanations | How to Identify | How to Resolve |
+| --- | --- | --- |
+| High total active memory (model cannot be evicted because it is in use in the last three minutes)<br><br> Multiple high spikes in query wait times<br><br> Multiple high spikes in refresh wait times | Monitor memory metrics \[[18](#endnote-18)\], and eviction counts \[[19](#endnote-19)\] | Decrease model size, or convert to DirectQuery mode - see the **Optimizing Models** topic in this section<br><br> Scale up the capacity<br><br> Assign the content to a different capacity |
+
+##### Inefficient report designs
+
+| Possible Explanations | How to Identify | How to Resolve |
+| --- | --- | --- |
+| Report pages contain numerous visuals (interactive filtering can trigger at least one query per visual)<br><br> Visuals retrieve more data than necessary | Review report designs<br><br> Interview report users to understand how they interact with the reports<br><br> Monitor dataset query metrics \[[20](#endnote-20)\] | Redesign reports with fewer visuals per page |
+
+##### Dataset slow (especially when reports have previously performed well)
+
+| Possible Explanations | How to Identify | How to Resolve |
+| --- | --- | --- |
+| Increasingly large volumes of import data<br><br> Complex or inefficient calculation logic, including RLS roles<br><br> Model not fully optimized<br><br> (DQ/LC) Gateway latency<br><br> Slow DQ source query response times | Review model designs<br><br> Monitor gateway performance counters | See the **Optimizing Models** topic in this section |
+
+##### High concurrent report usage
+
+| Possible Explanations | How to Identify | How to Resolve |
+| --- | --- | --- |
+| High query wait times<br><br> CPU saturation<br><br> DQ/LC connection limits exceeded | Monitor CPU utilization \[[21](#endnote-21)\], query wait times, and DQ/LC utilization \[[22](#endnote-22)\] metrics + Query durations – if fluctuating can indicate concurrency issues | Scale up the capacity, or assign the content to a different capacity<br><br> Redesign reports with fewer visuals per page |
 
 #### Why are reports not loading?
 
