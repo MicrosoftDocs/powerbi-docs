@@ -91,7 +91,7 @@ The following table describes dataflow features and their capacities when using 
 |Dataflow linked entities| |		+|
 |Standardized Schema / Built-In Support for the Common Data Model| 	+|	+|
 
-For more information about how to enable dataflows workloads on premium capacity, see the [Configure workloads in a Premium capacity](premium-admin-configure-workloads.md) article for Power BI premium. Dataflow workloads are not currently available in multi-geo capacities.
+For more information about how to enable dataflows workloads on premium capacity, see the [Configure workloads in a Premium capacity](service-admin-premium-workloads.md) article for Power BI premium. Dataflow workloads are not currently available in multi-geo capacities.
 
 ## Summary of self-service data prep for big data in Power BI
 As mentioned previously in this article, there are multiple scenarios and examples where **dataflows** can enable you to get better control – and faster insights – from your business data. Using a standard data model (schema) defined by the Common Data Model, dataflows can import your valuable business data, and have the data ready for modeling and creation of BI insights in a very short period... in what used to take months, or longer, to create. 

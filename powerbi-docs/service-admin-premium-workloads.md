@@ -31,7 +31,7 @@ For P1-P3 SKUs, you can also enable and configure additional workloads for [Data
 Max memory settings are not cumulative. They represent a percentage of overall memory that *can be used* for that workload.
 
     
-    ![Enable workloads](media/premium-admin-configure-workloads/admin-portal-workloads.png)
+    ![Enable workloads](media/service-admin-premium-workloads/admin-portal-workloads.png)
 
 1. Click **Apply**.
 

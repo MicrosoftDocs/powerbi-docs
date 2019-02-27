@@ -1247,6 +1247,8 @@
         href: service-admin-premium-monitor-capacity.md
       - name: "Monitor capacities in the Admin portal"
         href: service-admin-premium-monitor-portal.md
+      - name: "Configure workloads"
+        href: service-admin-premium-workloads.md
       - name: "Restart a Premium capacity"
         href: service-admin-premium-restart.md
       - name: "Support for large datasets"
