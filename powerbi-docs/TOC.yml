@@ -1243,8 +1243,6 @@
         href: service-premium-understand-how-it-works.md
       - name: "Purchase Power BI Premium"
         href: service-admin-premium-purchase.md
-      - name: "Manage Power BI Premium"
-        href: service-admin-premium-manage.md
       - name: "Monitor capacities with the app"
         href: service-admin-premium-monitor-capacity.md
       - name: "Monitor capacities in the Admin portal"

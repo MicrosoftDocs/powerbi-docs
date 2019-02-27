@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 
 # How to purchase Power BI Premium
 
-This article describes how to purchase Power BI Premium capacity (P1-P3) for your organization. You purchase Power BI Premium capacity in the Office 365 Admin center, and you [manage your capacities](service-admin-premium-manage.md) in the Power BI admin portal. For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/) and the [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/).
+This article describes how to purchase Power BI Premium capacity (P1-P3) for your organization. You purchase Power BI Premium capacity in the Office 365 Admin center, and you manage your capacities in the Power BI admin portal. For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/) and the [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/).
 
 Content creators still need a Power BI Pro license, even if your organization uses Power BI Premium. Ensure you purchase at least one Power BI Pro license for your organization.
 

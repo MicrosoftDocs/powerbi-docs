@@ -293,7 +293,7 @@ Users in the organization can embed Power BI dashboards and reports in Software 
 
 ### Create and use dataflows (preview)
 
-Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI (Preview)](service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-manage.md#configure-workloads).
+Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI (Preview)](service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](premium-admin-configure-workloads.md).
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -317,8 +317,6 @@ With the second setting, **Install template apps**, you control who in your orga
 The **Power BI Premium** tab enables you to manage any Power BI Premium capacities (EM or P SKU) that have been purchased for your organization. All users within your organization can see the **Power BI Premium** tab, but they only see contents within it if they are assigned as either a *Capacity admin* or a user that has assignment permissions. If a user does not have any permissions, the following message appears.
 
 ![No access to Premium settings](media/service-admin-portal/premium-settings-no-access.png)
-
-For more information about how to manage Premium settings, see [Manage Power BI Premium](service-admin-premium-manage.md).
 
 ### Power BI Embedded
 
@@ -406,6 +404,5 @@ As an administrator, you can view the workspaces that exist in your tenant. You 
 
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  [Understanding the Power BI admin role](service-admin-role.md)  
 [Auditing Power BI in your organization](service-admin-auditing.md)  
-[Manage Power BI Premium](service-admin-premium-manage.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

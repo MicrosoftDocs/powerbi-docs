@@ -50,7 +50,7 @@ If an interactive query is issued to any dataset in the capacity and there is no
 
 ### Workloads
 
-By default, capacities for **Power BI Premium** and **Power BI Embedded** support only the workload associated with running Power BI queries in the cloud. We now offer preview support for two additional workloads: **Paginated reports** and **Dataflows**. If enabled, these workloads can impact memory usage in your capacity. For more information, see [Configure workloads](service-admin-premium-manage.md#configure-workloads).
+By default, capacities for **Power BI Premium** and **Power BI Embedded** support only the workload associated with running Power BI queries in the cloud. We now offer preview support for two additional workloads: **Paginated reports** and **Dataflows**. If enabled, these workloads can impact memory usage in your capacity. 
 
 ## CPU resource management in premium capacity
 
@@ -111,6 +111,3 @@ Use Power BI Embedded capacity in Azure to test different SKUs and determine the
 
 In some cases, opening a Power BI Desktop (.pbix) file of the model on your computer and checking memory and CPU consumption tells a lot about the issue. This doesn't help for very large models, but for some smaller models, try opening, refreshing, and querying the model from your computer. Check the model size, memory, and CPU consumed when you open the model. Try refreshing and querying. Use task manager to check CPU and memory consumption for the local file. Sometimes, those metrics on your computer itself can tell that lower premium capacity like P1/ P2 may not work for your solution.
 
-## Next steps
-
-[Manage capacities within Power BI Premium and Power BI Embedded](service-admin-premium-manage.md)

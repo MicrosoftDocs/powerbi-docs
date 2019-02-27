@@ -77,7 +77,7 @@ Power BI Premium is available in node configurations with different v-core capac
 
 Think of a workload in Power BI as one of the many services you can expose to users. By default, capacities for **Power BI Premium** and **Power BI Embedded** support only the workload associated with running Power BI queries in the cloud.
 
-We now offer preview support for two additional workloads: **Paginated reports** and **Dataflows**. You enable these workloads in the Power BI admin portal or through the Power BI REST API. You also set the maximum memory each workload can consume, so that you can control how the different workloads affect each other. For more information, see [Configure workloads](service-admin-premium-manage.md#configure-workloads).
+We now offer preview support for two additional workloads: **Paginated reports** and **Dataflows**. You enable these workloads in the Power BI admin portal or through the Power BI REST API. You also set the maximum memory each workload can consume, so that you can control how the different workloads affect each other.
 
 ### Default memory settings
 
@@ -112,7 +112,6 @@ Power BI Premium also includes the capability to run Power BI Report Server on-p
 
 [Power BI Premium FAQ](service-premium-faq.md)
 [How to purchase Power BI Premium](service-admin-premium-purchase.md)
-[Managing Power BI Premium](service-admin-premium-manage.md)
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 
