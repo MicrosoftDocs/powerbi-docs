@@ -165,7 +165,7 @@ To submit a custom visual for certification:
 
 ## FAQ
 
-For more information about visuals, see  [Frequently asked questions about visuals with additional purchases](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
+For more information about visuals, see [Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.md#certified-custom-visuals).
 
 ## Next steps
 
