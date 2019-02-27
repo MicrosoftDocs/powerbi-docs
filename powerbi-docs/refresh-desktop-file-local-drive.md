@@ -1,22 +1,14 @@
 ---
 title: Refresh a dataset created from a Power BI Desktop file - local
 description: Refresh a dataset created from a Power BI Desktop file on a local drive
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.subservice: powerbi-service
+ms.topic: conceptual
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Data refresh

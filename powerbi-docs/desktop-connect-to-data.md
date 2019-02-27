@@ -1,22 +1,15 @@
 ---
 title: Connect to data in Power BI Desktop
 description: Connect to data in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -28,6 +21,7 @@ There are *all sorts* of data sources available in Power BI Desktop. The followi
 
 ![](media/desktop-connect-to-data/getdatavid_smallv2.gif)
 
+## Example of connecting to data
 For this example, we'll connect to a **Web** data source.
 
 Imagine you’re retiring – you want to live where there’s lots of sunshine, preferable taxes, and good health care. Or… perhaps you’re a data analyst, and you want that information to help your customers – as in, help your raincoat manufacturing client target sales where it rains a *lot*.
@@ -68,10 +62,10 @@ With the data model loaded, in **Report** view in Power BI Desktop, we can begin
 
 Of course, this is a simple model with a single data connection; most Power BI Desktop reports will have connections to different data sources, shaped to meet your needs, with relationships that produce a rich data model. 
 
-### Next steps
-﻿There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
+## Next steps
+There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [Getting Started with Power BI Desktop](desktop-getting-started.md)
+* [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](desktop-query-overview.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)

@@ -1,21 +1,13 @@
 ---
 title: Connect to UserVoice with Power BI
 description: UserVoice for Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.subservice: powerbi-template-apps
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 
@@ -39,7 +31,7 @@ Connect to the [UserVoice content pack](https://app.powerbi.com/getdata/services
 3. Select **UserVoice**, then select **Get**.
    
    ![](media/service-connect-to-uservoice/uservoice.png)
-4. When prompted, enter your UserVoice URL. The URL needs to follow the following pattern exactly https://fabrikam.uservoice.com replacing "fabrikam" with your product or service name.
+4. When prompted, enter your UserVoice URL. The URL needs to follow the following pattern exactly `https://fabrikam.uservoice.com` replacing "fabrikam" with your product or service name.
    
    >[!NOTE]
    >There is no trailing slash at the end and the connection is in http**s**.
@@ -57,17 +49,17 @@ Connect to the [UserVoice content pack](https://app.powerbi.com/getdata/services
 
 **What now?**
 
-* Try [asking a question in the Q&A box](power-bi-q-and-a.md) at the top of the dashboard
+* Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
-* [Select a tile](service-dashboard-tiles.md) to open the underlying report.
-* While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+* [Select a tile](consumer/end-user-tiles.md) to open the underlying report.
+* While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## Troubleshooting
 **"Parameter validation failed, please make sure all parameters are valid"**
 
 If you see this error after typing your UserVoice URL. Make sure the following requirements are satisfied:
 
-* The URL follows exactly this pattern "https://fabrikam.uservoice.com" replacing "fabrikam" with your correct UserVoice URL prefix.
+* The URL follows exactly this pattern `https://fabrikam.uservoice.com` replacing "fabrikam" with your correct UserVoice URL prefix.
 * Make sure all the letters are lower case.
 * Make sure the URL is in 'http**s**'.
 * Make sure there are no trailing forward slash at the end of the URL.

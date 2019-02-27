@@ -1,22 +1,14 @@
 ---
 title: Connect to Zuora with Power BI
 description: Zuora for Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/16/2017
+ms.subservice: powerbi-template-apps
+ms.topic: conceptual
+ms.date: 10/24/2018
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
@@ -36,22 +28,22 @@ Connect to the [Zuora](https://app.powerbi.com/getdata/services/Zuora) for Power
 3. Select **Zuora** \>  **Get**.
 
    ![](media/service-connect-to-zuora/zuora.png)
-4. Specify your Zuora URL. This is typically "https://www.zuora.com", see details on [finding those parameters](#FindingParams) below.
+4. Specify your Zuora URL. The URL is typically "<https://www.zuora.com>", see details on [finding those parameters](#FindingParams) below.
 
    ![](media/service-connect-to-zuora/params.png)
 5. For **Authentication Method**, select **Basic** and provide your username and password (case sensitive), then select **Sign In**.
 
     ![](media/service-connect-to-zuora/creds.png)
-6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+6. After approving, the import process will begin automatically. When complete, a new dashboard, report, and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
 
      ![](media/service-connect-to-zuora/dashboard.png)
 
 **What now?**
 
-* Try [asking a question in the Q&A box](power-bi-q-and-a.md) at the top of the dashboard
+* Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
-* [Select a tile](service-dashboard-tiles.md) to open the underlying report.
-* While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+* [Select a tile](consumer/end-user-tiles.md) to open the underlying report.
+* While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## What's included
 The content pack uses the Zuora AQUA API to pull in the following tables:
@@ -72,7 +64,7 @@ It also includes these calculated measures:
 | Measure | Description | Pseudo-Calculation |
 | --- | --- | --- |
 | Account: Payments |Total payment amounts in a time period, based on payment effective date. |SUM (Payment.Amount) <br>WHERE<br>Payment.EffectiveDate =< TimePeriod.EndDate<br>AND    Payment.EffectiveDate >= TimePeriod.StartDate |
-| Account: Refunds |Total refund amounts in a time period, based on refund refund date. Amount is reported as a negative number. |-1*SUM(Refund.Amount)<br>WHERE<br>Refund.RefundDate =< TimePeriod.EndDate<br>AND    Refund.RefundDate >= TimePeriod.StartDate |
+| Account: Refunds |Total refund amounts in a time period, based on refund date. Amount is reported as a negative number. |-1*SUM(Refund.Amount)<br>WHERE<br>Refund.RefundDate =< TimePeriod.EndDate<br>AND    Refund.RefundDate >= TimePeriod.StartDate |
 | Account: Net Payments |Account Payments plus Account Refunds in a time period. |Account.Payments + Account.Refunds |
 | Account: Active Accounts |The count of accounts that were active in a time period. Subscriptions must have started before (or on) time period start date. |COUNT (Account.AccountNumber)<br>WHERE<br>    Subscription.Status != "Expired"<br>AND    Subscription.Status != "Draft"<br>AND    Subscription.SubscriptionStartDate <= TimePeriod.StartDate<br>AND    (Subscription.SubscriptionEndDate > TimePeriod.StartDate<br>OR<br>Subscription.SubscriptionEndDate = null) –evergreen subscription |
 | Account: Average Recurring Revenue |Gross MRR per active account in a time period. |Gross MRR / Account.ActiveAccounts |
@@ -99,11 +91,10 @@ Access to the Zuora API is required.
 Provide the URL you typically sign into to access your Zuora data. The valid options are:  
 
 * https://www.zuora.com  
-* https://www.apisandbox.zuora.com  
-* The URL corresponding to your serivce instance  
+* The URL corresponding to your service instance  
 
 ## Troubleshooting
-The Zuora content pack pulls in many different aspects of your Zuora account. If you don't use certain features you may see correpesonding tiles/reports empty. If you have any issues loading, please contact Power BI Support.
+The Zuora content pack pulls in many different aspects of your Zuora account. If you don't use certain features, you may see corresponding tiles/reports empty. Contact Power BI Support if you have any issues loading.
 
 ## Next steps
 [Get started in Power BI](service-get-started.md)

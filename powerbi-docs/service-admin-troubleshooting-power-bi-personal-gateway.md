@@ -1,21 +1,13 @@
 ---
 title: Troubleshooting Power BI Gateway - Personal
 description: Troubleshooting Power BI Gateway - Personal
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.subservice: powerbi-service
+ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 
@@ -74,11 +66,11 @@ You could get this error in Settings for \<dataset\> if you have a scheduled ref
 
 **Error: [Unable to combine data] &lt;query part&gt;/&lt;…&gt;/&lt;…&gt; is accessing data sources that have privacy levels which cannot be used together. Please rebuild this data combination.**
 
-**Solution**: This error is due to the privacy level restrictions and the types of data sources you are using. [Learn more](refresh-enable-fast-combine.md)
+**Solution**: This error is due to the privacy level restrictions and the types of data sources you are using.
 
 **Error: Data source error: We cannot convert the value "\[Table\]" to type Table.**
 
-**Solution**: This error is due to the privacy level restrictions and the types of data sources you are using. [Learn more](refresh-enable-fast-combine.md)
+**Solution**: This error is due to the privacy level restrictions and the types of data sources you are using.
 
 **Error: There is not enough space for this row.**
 
@@ -151,7 +143,7 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 ## Next steps
 [Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md)  
 [Data Refresh](refresh-data.md)  
-[Power BI Gateway - Personal](personal-gateway.md)  
+[Power BI Gateway - Personal](service-gateway-personal-mode.md)  
 [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md)  
 [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

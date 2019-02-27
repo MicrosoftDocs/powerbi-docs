@@ -1,26 +1,18 @@
 ---
-title: Paginated report (.rdl) data sources in Power BI Report Server
+title: Paginated report data sources in Power BI Report Server
 description: Learn about data sources that paginated reports (.rdl) can connect to in Power BI Report Server.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 04/23/2018
+ms.subservice: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/17/2018
 ms.author: maghan
 
 ---
-# Paginated report (.rdl) data sources
+# Paginated report data sources  in Power BI Report Server
 Reporting Services paginated reports in Power BI Report Server support the same data sources that are supported in SQL Server Reporting Services. See the list of [Data sources supported by Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
 
 ## Next steps

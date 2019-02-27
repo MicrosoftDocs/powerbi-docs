@@ -1,22 +1,14 @@
 ---
 title: Connect to an Amazon Redshift database in Power BI Desktop
 description: Easily connect to and use an Amazon Redshift database in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -33,7 +25,7 @@ In the **Amazon Redshift** window that appears, type or paste the name of your *
 
 ![](media/desktop-connect-redshift/connect_redshift_4.png)
 
-When prompted, put in your username and password.
+When prompted, put in your username and password. You should use the server name that precisely matches the SSL certificate to avoid errors. 
 
 ![](media/desktop-connect-redshift/connect_redshift_5.png)
 
@@ -47,9 +39,9 @@ Once you make selections from the **Navigator** window, you can either **Load** 
 * If you select to **Edit** the data, **Query Editor** appears where you can apply all sorts of transformations and filters to the data, many of which are applied to the underlying **Amazon Redshift** database itself (if supported).
 
 ## Next steps
-﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
+There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
 
-* [Getting Started with Power BI Desktop](desktop-getting-started.md)
+* [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   

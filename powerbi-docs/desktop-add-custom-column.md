@@ -1,22 +1,14 @@
 ---
 title: Add a custom column in Power BI Desktop
 description: Quickly create a new custom column in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 04/24/2018
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -37,21 +29,21 @@ Once **Query Editor** is launched and you have some data loaded, you can add a c
 
 ![](media/desktop-add-custom-column/add-custom-column_02.png)
 
-When you do so, the **Add Custom Column** window appears, which we discuss in the following section.
+The **Add Custom Column** window appears, which is described in the following section.
 
 ## The Add Custom Column window
-In the **Add Custom Column** window, you see the list of available fields in the pane on the right, the name of your custom column on the top (you can rename it just by typing a new name in that text box), and the [**M** formula](https://msdn.microsoft.com/library/mt779182.aspx) that you create (or write) based on inserting fields from the right, adding operators, and otherwise building the formula on which your new custom column will be defined. 
+In the **Add Custom Column** window, you see the list of available fields in the pane on the right, the name of your custom column on the top (you can rename it just by typing a new name in that text box), and the [**M** formula](https://msdn.microsoft.com/library/mt779182.aspx) that you create (or write) based on inserting fields from the right, adding operators, and otherwise building the formula on which your new custom column is defined. 
 
 ![](media/desktop-add-custom-column/add-custom-column_03.png)
 
 ## Create formulas for your custom column
 You can select a field from the **Available columns:** list on the right, and select **<< Insert** to add them to the custom column formula. You can simply double-click on a column in the list to add it, too.
 
-As you type the formula and build your column, in the bottom of the window you'll see an indicator telling you, in real time (as you type) whether any syntax errors are detected. If all is good, you'll see a green checkmark.
+As you type the formula and build your column, in the bottom of the window, you'll see an indicator telling you, in real time (as you type), whether any syntax errors are detected. If all is good, you'll see a green checkmark.
 
 ![](media/desktop-add-custom-column/add-custom-column_04.png)
 
-But if you have some sort of error in your syntax, you get a yellow warning icon, along with the error detected, and a link that puts the cursor (in your formula) where the error is detected.
+But, if you have some sort of error in your syntax, you get a yellow warning icon, along with the error detected, and a link that puts the cursor (in your formula) where the error is detected.
 
 ![](media/desktop-add-custom-column/add-custom-column_05.png)
 

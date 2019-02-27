@@ -1,22 +1,15 @@
 ---
-title: Use Quick measures to easily perform common and powerful calculations in Power BI
+title: Use Quick measures for common and powerful calculations
 description: Quick measures provide ready-made DAX formulas that make quick work of common calculations
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 02/05/2018
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -40,8 +33,6 @@ You'll need to restart **Power BI Desktop** after you make the selection.
 To create a **Quick measure**, right-click on a field (any field) in the **Fields** well in **Power BI Desktop** and select **Quick measure** from the menu that appears.
 
 ![](media/desktop-quick-measures/quick-measures_01.png)
-
-Modeling must be available on the dataset currently loaded in order for **Quick measures** to be available. As such, live connections (such as a connection to a Power BI service dataset) will not display the **Quick measures** menu item when the **Fields** list is right-clicked, with the exception of SSAS live connections. 
 
 When using SQL Server Analysis Services (SSAS) live connections, some **Quick measures** are available. **Power BI Desktop** displays only the collection of **Quick measures** that are supported for the version of SSAS to which the connection is made. So, if you are connected to a SSAS live data source, and you do not see certain **Quick measures** in the list, it's because the SSAS version to which you are connected does not support the DAX measure used to implement that **Quick measure**.
 
@@ -138,9 +129,10 @@ And, once you do have the measure perfected, you can rename it however you'd lik
 ## Limitations and considerations
 There are a few limitations and considerations to keep in mind.
 
-* **Quick measures** are only available if you can modify the model, which isn't the case when you're working with DirectQuery or most Live connections (SSAS live connections are supported, as previously explained).
+* **Quick measures** are only available if you can modify the model, which isn't the case when you're working with some Live connections (SSAS tabular live connections are supported, as previously explained).
 * The measure that's added to the **Fields** well can be used with any visual in the report.
 * You can always see the DAX associated with a **Quick measure** by selecting the created measure in the **Fields** well, then looking at the formula in the **Formula bar**.
+* You can't create time intelligence quick measures when working in DirectQuery mode. The DAX functions used in these quick measures have performance implications when translated into the T-SQL statements that get sent to your data source.
 
 > [!WARNING]
 > Quick measures currently *only* generate DAX statements with commas for argument separators. If your version of **Power BI Desktop** is localized to a language that uses commas as decimal separators, quick measures will not operate properly.
@@ -148,7 +140,7 @@ There are a few limitations and considerations to keep in mind.
 > 
 
 ### Time intelligence and Quick measures
-Beginning with the October 2017 update to **Power BI Desktop**, you can use your own custom date tables with time intelligence **Quick measures**. If your data model has a custom date table, you can use the primary date column in that table for time intelligence quick measures. You *must* ensure that when the model was built, that primary date column in that table was marked as a Date table, as described in [this article](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular).
+Beginning with the October 2017 update to **Power BI Desktop**, you can use your own custom date tables with time intelligence **Quick measures**. If you're using an external tabular model then ensure that when the model was built, that primary date column in that table was marked as a Date table, as described in [this article](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular). If you're importing your own date table then make sure to mark it as a date table, as described in [this article](https://docs.microsoft.com/power-bi/desktop-date-tables)
 
 ### Additional information and examples
 We anticipate providing examples and guidance for each of the **Quick measures** calculations, so please check back soon for updates on that focused article.

@@ -1,21 +1,13 @@
 ---
 title: Using buttons in Power BI 
 description: Buttons in Power BI Desktop let you make reports and dashboards that behave like apps, and deepen engagement with users
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 04/04/2018
+ms.subservice: powerbi-service
+ms.topic: conceptual
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -78,6 +70,6 @@ You can try or test the buttons you create for your report by using *CTRL+CLICK*
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 
 * [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
-* [Display a dashboard tile or report visual in Focus mode](service-focus-mode.md)
+* [Display a dashboard tile or report visual in Focus mode](consumer/end-user-focus.md)
 * [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
 

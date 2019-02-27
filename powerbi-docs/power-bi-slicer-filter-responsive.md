@@ -1,63 +1,55 @@
 ---
 title: Create a responsive slicer you can resize in Power BI
 description: Learn how to create a responsive slicer you can resize to fit your report
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/08/2017
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/04/2018
 ms.author: maggies
 
 LocalizationGroup: Create reports
 ---
-# Create a responsive slicer you can resize in Power BI (Preview)
+# Create a responsive slicer you can resize in Power BI
 
 Responsive slicers resize to fit any space on your report. With responsive slicers, you can resize them to different sizes and shapes, from horizontal to square to vertical, and the values in the slicer rearrange themselves as you do. In Power BI Desktop and in the Power BI service, you can make horizontal slicers and date/range slicers responsive. Date/range slicers also have improved touch areas so it’s easier to change them with a fingertip. You can make responsive slicers as small or as large as you want; they also resize automatically to fit well on reports in the Power BI service and also in the Power BI mobile apps. 
 
-![Responsive slicers can be a variety of shapes](media/power-bi-slicer-filter-responsive/responsive-slicer-gif.gif)
+![Responsive slicers can be a variety of shapes](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer.gif)
 
 ## Create a slicer
 
 The first step to creating a dynamic slicer is to create a basic slicer. 
 
-1. Select the **Slicer** icon ![Slicer icon](media/power-bi-slicer-filter-responsive/power-bi-slicer-icon.png) in the **Visualizations** pane.
+1. Select the **Slicer** icon ![Slicer icon](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-0-slicer-icon.png) in the **Visualizations** pane.
 2. Drag the field you want to filter on to **Field**.
 
-    ![Add a field to the slicer](media/power-bi-slicer-filter-responsive/power-bi-slicer-field.png)
+    ![Add a field to the slicer](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-1-create.png)
 
 ## Convert to a horizontal slicer
 
 1. With the slicer selected, in the **Visualizations** pane select the **Format** tab.
 2. Expand the **General** section, then for **Orientation**, select **Horizontal**.
 
-    ![Set the slicer to horizontal](media/power-bi-slicer-filter-responsive/power-bi-slicer-horizontal.png) 
+    ![Set the slicer to horizontal](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-2-horizontal.png) 
 
 1.  You'll probably want to make it wider, to show more values.
 
-     ![Make the slicer wider](media/power-bi-slicer-filter-responsive/power-bi-slicer-wide-horizontal.png)
+     ![Make the slicer wider](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-3-wider.png)
 
 ## Make it responsive and experiment with it
 
 This step is easy. 
 
-1. Right under **Orientation** in the **General** section of the **Format** tab, slide **Responsive (Preview)** to **On**.  
+1. Right under **Orientation** in the **General** section of the **Format** tab, slide **Responsive** to **On**.  
 
-    ![Slicer is now responsive](media/power-bi-slicer-filter-responsive/power-bi-slicer-wide-responsive.png)
+    ![Slicer is now responsive](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-4-responsive-on.png)
 
 1. Now you can play with it. Drag the corners to make it short, tall, wide, and narrow. If you make it small enough, it becomes just a filter icon.
 
-    ![Responsive slicer so small it's a filter icon](media/power-bi-slicer-filter-responsive/power-bi-slicer-small-filter-icon.png)
+    ![Responsive slicer so small it's a filter icon](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-5-mini-icon.png)
 
 ## Add it to a phone report layout
 
@@ -65,11 +57,11 @@ In Power BI Desktop, you can create a phone layout for each page of a report. If
 
 1. On the **View** menu, select **Phone Layout**.
 
-     ![Phone layout icon, View menu](media/power-bi-slicer-filter-responsive/power-bi-phone-layout-menu.png)
+     ![Phone layout icon, View menu](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-6-phone-layout-button.png)
     
 1. Drag all the visuals you want in the phone report to the grid. When you drag the responsive slicer, make it the size you want -- in this case, just a filter icon.
 
-    ![Add the slicer to the phone report layout](media/power-bi-slicer-filter-responsive/power-bi-slicer-phone-layout.png)
+    ![Add the slicer to the phone report layout](media/power-bi-slicer-filter-responsive/power-bi-slicer-filter-responsive-7-phone-slicer-icon.png)
 
 Read more about creating [reports optimized for the Power BI mobile apps](desktop-create-phone-report.md).
 
@@ -84,5 +76,5 @@ You can follow the same steps to make a time or range slicer responsive. After y
 
 ## Next steps
 
-- [Tutorial: Slicers in the Power BI service](power-bi-visualization-slicers.md)
+- [Slicers in the Power BI service](visuals/power-bi-visualization-slicers.md)
 - More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

@@ -1,22 +1,14 @@
 ---
 title: Get Power BI Desktop
 description: Download and install Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: 08/15/2017
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 11/01/2018
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -66,7 +58,7 @@ There are a few advantages to getting **Power BI Desktop** from the Microsoft St
 
 * **Automatic updates** - Windows downloads the latest version automatically in the background as soon as it's available, so your version will always be up to date.
 * **Smaller downloads** - The **Microsoft Store** ensures only components that have changed in each update are downloaded to your machine, resulting in smaller downloads for each update.
-* **Admin priviledge is not required** - when you download the MSI directly and install, you must be an administrator for the installation to complete successfully. When you get **Power BI Desktop** from the Microsoft Store, admin priviledge is *not* required.
+* **Admin privilege is not required** - when you download the MSI directly and install, you must be an administrator for the installation to complete successfully. When you get **Power BI Desktop** from the Microsoft Store, admin privilege is *not* required.
 * **IT roll-out enabled** - the **Microsoft Store** version can more easily be deployed, or *rolled-out*, to everyone in your organization, and can make **Power BI Desktop** available through the **Microsoft Store for Business**.
 * **Language detection** - the **Microsoft Store** version includes all supported languages, and checks which languages is being used on the computer each time it is launched. This also affects the localization of models created in **Power BI Desktop**; for example, built-in date hierarchies will match the language that **Power BI Desktop** was using when the .pbix file was created.
 
@@ -79,7 +71,7 @@ There are a few consideration and limitations for installing **Power BI Desktop*
 > Installing the downloaded (MSI) version, and the **Microsoft Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported. You should manually uninstall **Power BI Desktop** before downloading it from the **Microsoft Store**
 > 
 > [!NOTE]
-> The Power BI Report Server version of **Power BI Desktop** is a separate and different installation from the versions discussed in this article. For information about the Report Server version of **Power BI Desktop**, see the [Quickstart: Create a Power BI report for Power BI Report Server](report-server/quickstart-create-powerbi-report.md) article.
+> The Power BI Report Server version of **Power BI Desktop** is a separate and different installation from the versions discussed in this article. For information about the Report Server version of **Power BI Desktop**, see [Create a Power BI report for Power BI Report Server](report-server/quickstart-create-powerbi-report.md).
 > 
 > 
 
@@ -103,10 +95,42 @@ The following list provides the minimum requirements to run **Power BI Desktop**
 * **Windows Display settings:** If your display settings are set to change the size of text, apps, and other items to more than 100%, you may not be able to see certain dialogs that must be closed or responded to in order to proceed using **Power BI Desktop**. If you encounter this issue, check your **Display settings** by going to **Settings > System > Display** in Windows, and use the slider to return display settings to 100%.
 * **CPU:** 1 gigahertz (GHz) or faster x86- or x64-bit processor recommended.
 
+## Considerations and Limitations
+
+We always want your experience with Power BI Desktop to be great. There may be occasions when you run into an issue with Power BI Desktop, so this section contains solutions or suggestions to address issues that might arise. 
+
+### Issues when using previous releases of Power BI Desktop
+
+Some users encounter an error similar to the following when using an outdated version of **Power BI Desktop**: 
+
+    "We weren't able to restore the saved database to the model" 
+
+Updating to the current version of Power BI Desktop usually solves this issue.
+
+### Disabling notifications
+We recommend updating to the most recent version of Power BI Desktop to take advantage of advances in features, performance, stability, and other improvements. Some organizations may not want users to update to each new version. You can disable notifications by modifying the registry with the following steps:
+
+1. Using the Registry Editor, navigate to *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop*
+2. Create a new entry there with the following settings: *REG_DWORD : DisableUpdateNotification*
+3. Set the value of that new entry to **1**.
+
+You'll need to restart your computer for the change to take effect.
+
+### Power BI Desktop loads with a partial screen
+
+In certain circumstances, including certain screen resolution configurations, some users may see Power BI Desktop render content with large black areas. This is generally a result of recent operating system updates that affect how items are rendered, rather than a direct result of how Power BI Desktop presents content. Regardless, large black areas are not as compelling as great visuals, so to address this issue, take the following steps:
+
+1. Press the Start key and type the world *blurry* into the search bar that appears.
+2. In the dialog that appears, select the option: *Let Windows fix apps that are blurry.*
+3. Restart Power BI Desktop.
+
+This issue may resolve after subsequent Windows updates are released. 
+ 
+
 ## Next steps
 Once you get **Power BI Desktop** installed, the following content can help you get up and running quickly:
 
-* [Getting Started with Power BI Desktop](desktop-getting-started.md)
+* [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](desktop-query-overview.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Connect to Data in Power BI Desktop](desktop-connect-to-data.md)

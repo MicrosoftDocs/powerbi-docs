@@ -1,22 +1,14 @@
 ---
 title: Using calculated columns in Power BI Desktop
 description: Calculated columns in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 04/24/2018
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Model your data
@@ -56,7 +48,7 @@ He can add it to his report canvas along with the number of shipments. Very quic
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 
 ## Learn more
-We’ve only provided a quick introduction to calculated columns here. Be sure to see the [Create calculated columns in Power BI Desktop](desktop-tutorial-create-calculated-columns.md) tutorial, where you can download a sample file and get step-by-step lessons on how to create more columns. 
+We’ve only provided a quick introduction to calculated columns here. Be sure to see the [Tutorial: Create calculated columns in Power BI Desktop](desktop-tutorial-create-calculated-columns.md) tutorial, where you can download a sample file and get step-by-step lessons on how to create more columns. 
 
 To learn more about DAX, see [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 

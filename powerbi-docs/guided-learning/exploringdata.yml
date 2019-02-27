@@ -5,14 +5,14 @@ metadata:
   description: Learn how to find, connect to, and interact with data in Power BI.
   audience: Business User
   level: Beginner
-  nextTutorialHref: powerbiandexcel
+  nextTutorialHref: powerbiandexcel.yml
   nextTutorialTitle: Power BI and Excel
   displayType: one-column
   author: davidiseminger
   manager: kfile
   ms.service: powerbi
-  ms.topic: get-started-article
-  ms.date: 12/05/2017
+  ms.topic: conceptual
+  ms.date: 11/28/2018
   ms.author: davidi
 items:
 - durationInMinutes: 1

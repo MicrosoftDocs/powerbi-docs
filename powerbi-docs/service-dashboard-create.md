@@ -1,24 +1,16 @@
 ---
-title: Quickstart - Create a Power BI dashboard from a report
+title: Create a Power BI dashboard from a report
 description: Create a Power BI dashboard from a report
-services: powerbi
-documentationcenter: ''
-author: mihart
+author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: ''
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/02/2018
-ms.author: mihart
+ms.subservice: powerbi-service
+ms.topic: conceptual
+ms.date: 10/02/2018
+ms.author: maggies
 
 ---
 # Create a Power BI dashboard from a report
@@ -27,9 +19,9 @@ You've read [Dashboards in Power BI](service-dashboards.md), and now you want to
 It can seem overwhelming when you're first getting started, so we'll start by creating a quick and easy dashboard by pinning visualizations from a report that's already been built. Once you complete this quickstart, you'll have a good understanding of the relationship between dashboards and reports, opening Editing view in the report editor, pinning tiles, and navigating between a dashboard and a report. Then use the links in the Table of Contents on the left or the **Next steps** at the bottom to move on to more-advanced topics.
 
 ## Who can create a dashboard?
-Creating a dashboard is a **creator** feature and requires edit permissions to the report. Edit permissions are available to report creators and to those colleagues the creator grants access. For example, if David creates a report in workspaceABC and then adds you as a member of that workspace, you and David will both have edit permissions. On the other hand, if a report has been shared with you directly or as part of a [Power BI app](service-install-use-apps.md) (you are **consuming** the report), you won't be able to pin tiles to a dashboard.
+Creating a dashboard is a **creator** feature and requires edit permissions to the report. Edit permissions are available to report creators and to those colleagues the creator grants access. For example, if David creates a report in workspaceABC and then adds you as a member of that workspace, you and David will both have edit permissions. On the other hand, if a report has been shared with you directly or as part of a [Power BI app](service-create-distribute-apps.md) (you are **consuming** the report), you won't be able to pin tiles to a dashboard.
 
-> **NOTE**: Dashboards are a feature of Power BI service, not Power BI Desktop. Dashboards can't be created in Power BI mobile, but they can be [viewed and shared](mobile-apps-view-dashboard.md).
+> **NOTE**: Dashboards are a feature of Power BI service, not Power BI Desktop. Dashboards can't be created in Power BI mobile, but they can be [viewed and shared](consumer/mobile/mobile-apps-view-dashboard.md).
 >
 > 
 
@@ -69,7 +61,7 @@ We'll import one of the Power BI sample datasets and use it to create our new da
 1. Staying in the same workspace, select the **Reports** tab. The newly-imported report displays with a yellow asterisk. Select the report name to open it.
 
     ![reports tab](media/service-dashboard-create/power-bi-reports.png)
-2. The report opens in [Reading view](service-reading-view-and-editing-view.md). Notice it has two tabs at the bottom: Discount Analysis and Spend Overview. Each tab represents a page of the report.
+2. The report opens in Reading view. Notice it has two tabs at the bottom: Discount Analysis and Spend Overview. Each tab represents a page of the report.
     Select **Edit report** to open the report in Editing view.
 
     ![report in Reading view](media/service-dashboard-create/power-bi-reading-view.png)
@@ -113,7 +105,7 @@ Congratulations on creating your first dashboard! Now that you have a dashboard,
 ## Next steps
 * [Resize and move tiles](service-dashboard-edit-tile.md)
 * [All about dashboard tiles](service-dashboard-tiles.md)
-* [Share your dashboard by creating an app](service-create-distribute-apps.md)
+* [Share your dashboard by creating an app](service-create-workspaces.md)
 * [Power BI - Basic Concepts](service-basic-concepts.md)
 * [Tips for designing a great dashboard](service-dashboards-design-tips.md)
 

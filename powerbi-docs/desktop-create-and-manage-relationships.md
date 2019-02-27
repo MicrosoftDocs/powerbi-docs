@@ -1,22 +1,14 @@
 ---
 title: Create and manage relationships in Power BI Desktop
 description: Create and manage relationships in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Model your data
@@ -41,6 +33,16 @@ On the **Home** tab, click **Manage Relationships** \> **AutoDetect**.
 
 By default, Power BI Desktop will automatically configure the Cardinality (direction), Cross filter direction, and Active properties for your new relationship; however, you can change these if necessary. To learn more, see the Understanding additional options section later in this article.
 
+Note that you'll see an error that states *One of the columns must have unique values* if none of the tables selected for the relationship has unique values. At least one table in a relationship *must* have a distinct, unique list of key values, which is a common requirement for all relational database technologies. 
+
+If you encounter that error, there are a couple ways to fix the issue:
+
+* Use "Remove Duplicate Rows" to create a column with unique values. The drawback to this approach is that you will lose information when duplicate rows are removed, and often a key (row) is duplicated for good reason.
+* Add an intermediary table made of the list of distinct key values to the model, which will then be linked to both original columns in the relationship.
+
+For more detailed information, see the [blog post](https://blogs.technet.microsoft.com/cansql/2016/12/19/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message/) that discusses this in detail.
+
+
 ## Edit a relationship
 1. On the **Home** tab, click **Manage Relationships**.
 2. In the **Manage Relationships** dialog, select the relationship, then click **Edit**.
@@ -52,6 +54,8 @@ When you create or edit a relationship, you can configure additional options.  B
 **Many to One (\*:1)** - This is the most common, default type. This means the column in one table can have more than one instance of a value, and the other related table, often know as the Lookup table, has only one instance of a value.
 
 **One to One (1:1)** - This means the column in one table has only one instance of a particular value, and the other related table has only one instance of a particular value.
+
+**Many-to-many relationships**: With composite models, you can establish many-to-many relationships between tables. This approach removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. For more detailed information, see [Relationships with a many-many cardinality](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
 
 See the Understanding additional options section later in this article for more details about when to change cardinality.
 

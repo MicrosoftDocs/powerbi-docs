@@ -1,22 +1,14 @@
 ---
 title: Create Power BI visuals using R
 description: Create Power BI visuals using R
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -85,9 +77,9 @@ Once you specify your R installation, you’re ready to begin creating R visuals
    * When you select **Run** from the **R script editor** title bar
    * Whenever a data change occurs, due to data refresh, filtering, or highlighting
 
-    The following image shows an example of the correlation plot code, and it plots the correlations between attributes of different types of cars.
+     The following image shows an example of the correlation plot code, and it plots the correlations between attributes of different types of cars.
 
-    ![](media/desktop-r-visuals/r-visuals-6.png)
+     ![](media/desktop-r-visuals/r-visuals-6.png)
 
 5. To get a larger view of the visualizations, you can minimize the **R script editor**. And, of course, like other visuals in **Power BI Desktop**, you can cross filter the correlation plot by selecting only sport cars in the donut visual (the round visual on the right, in the above example image).
 

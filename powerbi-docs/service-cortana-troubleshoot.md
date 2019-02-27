@@ -1,24 +1,16 @@
 ---
 title: Troubleshoot Cortana for Power BI
 description: If you're having trouble using Cortana with Power BI, try these suggestions.
-services: powerbi
-documentationcenter: ''
-author: mihart
+author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: ''
-qualitydate: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.subservice: powerbi-service
+ms.topic: conceptual
 ms.date: 12/20/2017
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
 ---
@@ -34,7 +26,7 @@ This article is part of a series. If you haven't already, we recommend reading t
 If you're still having problems getting Cortana to integrate with Power BI, you've come to the right place. Follow the steps below to diagnose and fix the problem.
 
 ## Why doesn't Cortana find answers from my Power BI reports or dashboards?
-1. Do you have a Power BI account?  If not, [sign up, it's free](service-self-service-signup-for-power-bi.md).
+1. Do you have a Power BI account?  If not, [sign up for a free trial](https://powerbi.microsoft.com/get-started/).
 2. Is Cortana working?  Do you see the Cortana icon in your taskbar?
 
     ![](media/service-cortana-troubleshoot/power-bi-cortana-icon.png)
@@ -83,7 +75,7 @@ Still having trouble?  Now is a good time to run the Cortana troubleshooting too
 
    ![Answer card](media/service-cortana-troubleshoot/power-bi-answer-card-new.png)
 
-   </br>
+   <br>
 
    ![Answer card tab in Power BI](media/service-cortana-troubleshoot/power-bi-answer-card2.png)
 4. Sometimes, the first time you type something into the **Utterance** field, nothing happens. Think of it as priming the system; you're letting the troubleshooting tool know that it's time to turn on. Cut and paste or retype into the **Utterance** field again. In this example, the name of our answer card is **Cortana stores**. Pasting or typing **Cortana stores** into the tool produces a single result that displays in the **Interpretations** field. Click to see the answer card displayed in the Cortana window -- in this case, **Cortana stores**.

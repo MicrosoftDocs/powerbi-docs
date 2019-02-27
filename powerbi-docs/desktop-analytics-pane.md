@@ -1,22 +1,14 @@
 ---
 title: Using the Analytics pane in Power BI Desktop
 description: Create dynamic reference lines for visuals in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 02/05/2018
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -63,7 +55,7 @@ To view the available dynamic reference lines for a visual, follow these steps:
 4. If you want to have a data label appear, move the **Data label** slider on. When you do so, you get a whole host of additional options for your data label, as shown in the following image.
    
    ![](media/desktop-analytics-pane/analytics-pane_5.png)
-5. Notice the number that appears next to the **Average line** item in the **Analytics** pane. That tells you how many dyanmic lines you currently have on your visual, and of which type. If we add a **Max line** for *Cost of Living*, you can see that the **Analytics** pane shows that we now also have a **Max line** dynamic reference line applied to this visual.
+5. Notice the number that appears next to the **Average line** item in the **Analytics** pane. That tells you how many dynamic lines you currently have on your visual, and of which type. If we add a **Max line** for *Cost of Living*, you can see that the **Analytics** pane shows that we now also have a **Max line** dynamic reference line applied to this visual.
    
    ![](media/desktop-analytics-pane/analytics-pane_6.png)
 
@@ -118,7 +110,7 @@ There are all sorts of things you can do with Power BI Desktop. For more informa
 
 * [What's New in Power BI Desktop](desktop-latest-update.md)
 * [Download Power BI Desktop](desktop-get-the-desktop.md)
-* [Getting Started with Power BI Desktop](desktop-getting-started.md)
+* [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](desktop-query-overview.md)
 * [Data Types in Power BI Desktop](desktop-data-types.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)

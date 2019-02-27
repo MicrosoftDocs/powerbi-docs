@@ -1,26 +1,18 @@
 ---
-title: 'Quickstart: Create a paginated report for Power BI Report Server'
+title: 'Create a paginated report for Power BI Report Server'
 description: Learn how to create a paginated report for Power BI Report Server in a few simple steps.
-services: powerbi
-documentationcenter: ''
-author: maggiesMSFT
+author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/12/2017
-ms.author: maggies
+ms.subservice: powerbi-report-server
+ms.topic: conceptual
+ms.date: 10/22/2018
+ms.author: maghan
 
 ---
-# Quickstart: Create a paginated report for Power BI Report Server
+# Create a paginated report for Power BI Report Server
 As the name suggests, paginated reports can run to many pages. They're laid out in a fixed format and offer precise customization. Paginated reports are .rdl files.
 
 You can store and manage paginated reports in the Power BI Report Server web portal, just as you can in the SQL Server Reporting Services (SSRS) web portal. You create and edit them in Report Builder or Report Designer in SQL Server Data Tools (SSDT), then publish them to either web portal. Then report readers in your organization can view them in a browser or in a Power BI mobile app on their mobile device.
@@ -98,7 +90,7 @@ When your report is ready, save it to Power BI Report Server.
 There are many great resources for designing reports in Report Builder and in Report Designer in SQL Server Data Tools. The Report Builder tutorials are a good place to start.
 
 * [Report Builder tutorials](https://docs.microsoft.com/sql/reporting-services/report-builder-tutorials)
-* [Power BI Report Server user handbook](user-handbook-overview.md)  
+* [What is Power BI Report Server?](get-started.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

@@ -1,21 +1,13 @@
 ---
 title: Manage your data source - Analysis Services
 description: How to manage the On-premises data gateway and data sources that belong to that gateway. This is for Analysis Services in both Multidimensional and Tabular mode.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.subservice: powerbi-gateways
+ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 
@@ -56,7 +48,7 @@ Removing a gateway will also delete any data sources under that gateway.  This w
 
 1. Select the gear icon ![](media/service-gateway-enterprise-manage-ssas/pbi_gearicon.png) in the upper-right corner > **Manage gateways**.
 2. Gateway > **Remove**
-   
+
    ![](media/service-gateway-enterprise-manage-ssas/datasourcesettings7.png)
 
 ## Add a data source
@@ -123,15 +115,13 @@ To get to the UPN Mapping screen, do the following.
 2. Expand the gateway that contains the Analysis Services data source. Or, if you haven't created the Analysis Services data source, you can do that at this point.
 3. Select the data source and then select the **Users** tab.
 4. Select **Map user names**.
-   
+
     ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_02.png)
 
 You will then see options to add rules as well as test for a given user.
 
 > [!NOTE]
-> You may inadvertently change a user that you didn't intend to. For example, if your **Replace (original value)** is *@contoso.com* and your **With (New name)** is *@contoso.local*, all users with a sign in that contains *@contoso.com* will then be replaced with *@contoso.local*. Also, if your **Replace (Original name)** is *dave@contoso.com* and your **With (New name)** is *dave@contoso.local*, a user with the sign in of v-dave@contoso.com would be sent as v-dave*@contoso.local*.
-> 
-> 
+> You may inadvertently change a user that you didn't intend to. For example, if your **Replace (original value)** is <em>@contoso.com</em> and your **With (New name)** is <em>@contoso.local</em>, all users with a sign in that contains <em>@contoso.com</em> will then be replaced with <em>@contoso.local</em>. Also, if your **Replace (Original name)** is <em>dave@contoso.com</em> and your **With (New name)** is <em>dave@contoso.local</em>, a user with the sign in of v-dave@contoso.com would be sent as v-dave<em>@contoso.local</em>.
 
 ### AD lookup mapping
 To perform on-premises AD property lookup to re-map AAD UPNs to Active Directory users, follow the steps in this section. To begin with, let's review how this works.
@@ -152,18 +142,43 @@ On the On-premises data gateway with configurable Custom User Mapping, do the fo
 2. Look up the attribute of the AD Person (such as *Email*) based on incoming UPN string (“firstName.lastName@contoso.com”) from the **Power BI service**.
 3. If the AD Lookup fails, it attempts to use the passed-along UPN as EffectiveUser to SSAS.
 4. If the AD Lookup succeeds, it retrieves *UserPrincipalName* of that AD Person. 
-5. It passes the *UserPrincipalName* email as *EffectiveUser* to SSAS, such as: *Alias@corp.on-prem.contoso*
+5. It passes the *UserPrincipalName* email as *EffectiveUser* to SSAS, such as: <em>Alias@corp.on-prem.contoso</em>
 
 How to configure your gateway to perform the AD Lookup:
 
 1. Download and install the latest gateway
+
 2. In the gateway, you need to change the **On-premises data gateway service** to run with a domain account (instead of a local service account – otherwise the AD lookup won’t work properly at runtime). You'll need to restart the gateway service for the change to take effect.  Go to the gateway app on your machine (search for “On-premises data gateway”). To do this, go to **Service settings > Change service account**. Make sure you have the recovery key for this gateway, since you'll need to restore it on the same machine unless you want to create a new gateway instead. 
-3. Navigate to the gateway’s installation folder, *C:\Program Files\On-premises data gateway* as an administrator, to ensure that you have write-permissions, and edit the following file:
-   
-       Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
-4. Edit the following two configuration values according to *your* Active Directory attribute configurations of your AD users. The configuration values shown below are just examples – you need to specify them based on your Active Directory configuration. 
-   
-   ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+
+3. Navigate to the gateway’s installation folder, *C:\Program Files\On-premises data gateway* as an administrator, to ensure that you have write-permissions, and edit the following file: Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
+
+4. Edit the following two configuration values according to *your* Active Directory attribute configurations for your AD users. The configuration values shown below are just examples – you need to specify them based on your Active Directory configuration. These configurations are case-sensitive so make sure they match the values in Active Directory.
+
+    ![Azure Active Directory settings](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+
+    If no value is provided for the ADServerPath configuration, the gateway uses the default Global Catalog. You can also specify multiple values for the ADServerPath. Each value must be separated by a semicolon as in the following example.
+
+    ```xml
+    <setting name="ADServerPath" serializeAs="String">
+        <value> >GC://serverpath1; GC://serverpath2;GC://serverpath3</value>
+    </setting>
+    ```
+    The gateway parses the values for ADServerPath from left to right until it finds a match. If no match is found then the original UPN is used. Make sure the account running the gateway service (PBIEgwService) has query permissions to all AD servers that you specify in ADServerPath.
+
+    The gateway supports two types of ADServerPath, as in the following examples.
+
+    **WinNT**
+
+    ```xml
+    <value="WinNT://usa.domain.corp.contoso.com,computer"/>
+    ```
+
+    **GC**
+
+    ```xml
+    <value> GC://USA.domain.com </value>
+    ```
+
 5. Restart the **On-premises data gateway** service for the configuration change to take effect.
 
 ### Working with mapping rules

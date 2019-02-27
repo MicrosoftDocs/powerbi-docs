@@ -1,22 +1,14 @@
 ---
 title: Data sources in Power BI Desktop
 description: Data sources in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: 04/29/2016
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/06/2018
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 02/13/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -26,16 +18,14 @@ With Power BI Desktop, you can connect to data from many different sources. A fu
 
 To connect to data, select **Get Data** from the **Home** ribbon. Selecting the down arrow, or the **Get Data** text on the button, shows the **Most Common** data types menu shown in the following image:
 
-![](media/desktop-data-sources/data-sources_1.png)
+![Get Data in Power BI Desktop](media/desktop-data-sources/data-sources_01.png)
 
 Selecting **More…** from the **Most Common** menu displays the **Get Data** window. You can also bring up the **Get Data** window (and bypass the **Most Common** menu) by selecting the **Get Data** **icon button** directly.
 
-![](media/desktop-data-sources/data-sources_2.png)
+![Get Data button](media/desktop-data-sources/data-sources_02.png)
 
 > [!NOTE]
 > The Power BI team is continually expanding the data sources available to **Power BI Desktop** and the **Power BI service**. As such, you'll often see early versions of work-in-progress data sources marked as *Beta* or *Preview*. Any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
-> 
-> 
 
 ## Data Sources
 Data types are organized in the following categories:
@@ -43,6 +33,7 @@ Data types are organized in the following categories:
 * All
 * File
 * Database
+* Power BI
 * Azure
 * Online Services
 * Other
@@ -56,16 +47,12 @@ The **File** category provides the following data connections:
 * XML
 * JSON
 * Folder
+* PDF (Beta)
 * SharePoint Folder
 
 The following image shows the **Get Data** window for **File**.
 
-![](media/desktop-data-sources/data-sources_3.png)
-
-> [!NOTE]
-> In previous versions of Power BI Desktop, **CSV** and **Text** were separate data connection types. Those data connectors have been combined into **CSV/Text**.
-> 
-> 
+![Get Data > File](media/desktop-data-sources/data-sources_03.png)
 
 The **Database** category provides the following data connections:
 
@@ -82,20 +69,36 @@ The **Database** category provides the following data connections:
 * Teradata Database
 * SAP HANA Database
 * SAP Business Warehouse Application Server
-* SAP Business Warehouse Message Server (Beta)
+* SAP Business Warehouse Message Server
 * Amazon Redshift
 * Impala
-* Google BigQuery (Beta)
+* Google BigQuery
+* Vertica
 * Snowflake
+* Essbase (Beta)
+* Dremio
+* Exasol
+* MarkLogic (Beta)
+* AtScale cubes (Beta)
+* BI Connector
+* Jethro (Beta)
+* Kyligence Enterprise (Beta)
 
 > [!NOTE]
 > Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
-> 
-> 
 
 The following image shows the **Get Data** window for **Database**.
 
-![](media/desktop-data-sources/data-sources_4.png)
+![Get Data > Databases](media/desktop-data-sources/data-sources_04.png)
+
+The **Power BI** category provides the following data connections:
+
+* Power BI datasets
+* Power BI dataflows (Beta)
+
+The following image shows the **Get Data** window for **Power BI**.
+
+![Get Data > Power BI](media/desktop-data-sources/data-sources_05.png)
 
 The **Azure** category provides the following data connections:
 
@@ -105,33 +108,33 @@ The **Azure** category provides the following data connections:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB (Beta)
-* Azure Data Lake Store
+* Azure Data Lake Storage
 * Azure HDInsight (HDFS)
-* Azure HDInsight Spark (Beta)
-* HDInsight Interactive Query (Beta)
+* Azure HDInsight Spark
+* HDInsight Interactive Query
+* Azure Data Explorer (Beta)
 
 The following image shows the **Get Data** window for **Azure**.
 
-![](media/desktop-data-sources/data-sources_5.png)
+![Get Data > Azure](media/desktop-data-sources/data-sources_06.png)
 
 The **Online Services** category provides the following data connections:
 
-* Power BI service
 * SharePoint Online List
 * Microsoft Exchange Online
 * Dynamics 365 (online)
-* Dynamics NAV (Beta)
-* Dynamics 365 for Financials (Beta)
-* Common Data Service (Beta)
+* Dynamics NAV
+* Dynamics 365 Business Central
+* Dynamics 365 Business Central (on-premises)
+* Common Data Service for Apps (Beta)
 * Microsoft Azure Consumption Insights (Beta)
-* Visual Studio Team Services (Beta)
+* Azure DevOps (Beta)
+* Azure DevOps Server (Beta)
 * Salesforce Objects
 * Salesforce Reports
 * Google Analytics
 * Adobe Analytics
 * appFigures (Beta)
-* comScore Digital Analytix (Beta)
-* Dynamics 365 for Customer Insights (Beta)
 * Data.World - Get Dataset (Beta)
 * Facebook
 * GitHub (Beta)
@@ -150,48 +153,54 @@ The **Online Services** category provides the following data connections:
 * tyGraph (Beta)
 * Webtrends (Beta)
 * Zendesk (Beta)
+* TeamDesk (Beta)
+* Emigo Data Source (Beta)
+* Microsoft Graph Security (Beta)
 
 The following image shows the **Get Data** window for **Online Services**.
 
-![](media/desktop-data-sources/data-sources_6b.png)
+![Get Data > Online Services](media/desktop-data-sources/data-sources_07.png)
 
 The **Other** category provides the following data connections:
 
-* Vertica (Beta)
-* Kusto (Beta)
 * Web
 * SharePoint List
 * OData Feed
 * Active Directory
 * Microsoft Exchange
 * Hadoop File (HDFS)
-* Spark (Beta)
+* Spark
 * R Script
+* Python script
 * ODBC
 * OLE DB
+* Workforce Dimensions (Beta)
+* Denado
+* Paxata (Beta)
+* SurveyMonkey (Beta)
+* QubolePresto (Beta)
+* Quick Base (Beta)
 * Blank Query
 
 The following image shows the **Get Data** window for **Other**.
 
-![](media/desktop-data-sources/data-sources_7a.png)
+![Get Data > Other](media/desktop-data-sources/data-sources_08.png)
 
 > [!NOTE]
 > At this time, it's not possible to connect to custom data sources secured using Azure Active Directory.
-> 
-> 
 
 ## Connecting to a Data Source
 To connect to a data source, select the data source from the **Get Data** window and select **Connect**. In the following image, **Web** is selected from the **Other** data connection category.
 
-![](media/desktop-data-sources/data-sources_7b.png)
+![Connect to web](media/desktop-data-sources/data-sources_08.png)
 
 A connection window is displayed, specific to the type of data connection. If credentials are required, you’ll be prompted to provide them. The following image shows a URL being entered to connect to a Web data source.
 
-![](media/desktop-data-sources/datasources_fromwebbox.png)
+![input web URL](media/desktop-data-sources/datasources_fromwebbox.png)
 
 When the URL or resource connection information is entered, select **OK**. Power BI Desktop makes the connection to the data source, and presents the available data sources in the **Navigator**.
 
-![](media/desktop-data-sources/datasources_fromnavigatordialog.png)
+![Navigator screen](media/desktop-data-sources/datasources_fromnavigatordialog.png)
 
 You can either load the data by selecting the **Load** button at the bottom of the **Navigator** pane, or edit the query before loading data by selecting the **Edit** button.
 
@@ -200,7 +209,7 @@ That’s all there is to connecting to data sources in Power BI Desktop! Try con
 ## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [Getting Started with Power BI Desktop](desktop-getting-started.md)
+* [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](desktop-query-overview.md)
 * [Data Types in Power BI Desktop](desktop-data-types.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)

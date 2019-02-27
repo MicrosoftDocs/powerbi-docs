@@ -1,4 +1,4 @@
-Sometimes you may want to bring a printed report or dashboard to a meeting, or so you can share it with others. With Power BI, there are a few days you can make printouts of your visuals.
+Sometimes you may want to bring a printed report or dashboard to a meeting, or so you can share it with others. With Power BI, there are a few ways you can make printouts of your visuals.
 
 In the Power BI service, select the ellipses (three dots) in the top-right side of the service, and select **Print dashboard**.
 

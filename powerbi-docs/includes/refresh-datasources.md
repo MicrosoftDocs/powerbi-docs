@@ -1,4 +1,5 @@
 ### On-premises data gateway
+
 | **Data source** |
 | --- |
 | Analysis Services Tabular |

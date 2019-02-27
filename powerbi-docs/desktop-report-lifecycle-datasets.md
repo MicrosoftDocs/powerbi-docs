@@ -1,22 +1,14 @@
 ---
 title: Connect to datasets in the Power BI service from Power BI Desktop
 description: Use a common dataset for multiple Power BI Desktop reports, and manage your report lifecycle
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -40,6 +32,8 @@ Everyone loves her report, and her dataset, and that's where the trouble would b
 
 ### Connect to a Power BI service dataset using a live connection
 Once Anna creates her report (and creates the dataset it's based upon), she publishes it to the **Power BI service**, it shows up in her team's workspace in the Power BI service. Now it's available for everyone in her workspace to see and use.
+
+To learn more about workspaces, see [app workspaces](service-create-workspaces.md).
 
 Other members of her workspace can now establish a live connection to Anna's shared data model (using the **Power BI service live connection** feature), and create their own unique reports, from *her original dataset*.
 

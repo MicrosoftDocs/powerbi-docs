@@ -1,23 +1,15 @@
 ---
 title: Download the Financial Sample workbook for Power BI
 description: Download the Financial Sample workbook for Power BI
-services: powerbi
-documentationcenter: ''
-author: mihart
+author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: amac
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/28/2017
-ms.author: amac
+ms.subservice: powerbi-desktop
+ms.topic: sample
+ms.date: 06/23/2018
+ms.author: maggies
 
 LocalizationGroup: Samples
 ---

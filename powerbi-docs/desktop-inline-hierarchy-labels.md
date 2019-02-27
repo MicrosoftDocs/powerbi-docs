@@ -1,22 +1,14 @@
 ---
 title: Use inline hierarchy labels in Power BI Desktop
 description: Use inline hierarchy labels in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -27,35 +19,41 @@ LocalizationGroup: Create reports
 ## How inline hierarchy labels work
 With inline hierarchy labels, you can see hierarchy labels as you expand visuals using the **Expand All** feature. One great benefit to seeing these hierarchy labels is that you can also choose to **sort** by these different hierarchy labels as you expand your hierarchical data.
 
-### Using the built-in Expand All feature (without sorting by hierarchy labels)
-Before we see inline hierarchy labels in action, let's review how the default **Expand All** feature behavior. Doing so will help us understand (and appreciate) how useful inline hierarchy labels can be.
+### Using the built-in Expand feature (without sorting by hierarchy labels)
+Before we see inline hierarchy labels in action, let's review the default **Expand to next level** feature behavior. Doing so will help us understand (and appreciate) how useful inline hierarchy labels can be.
 
-The following image shows a bar chart visual for annual sales. When you right-click, you can choose **Expand All**.
+The following image shows a bar chart visual for annual sales. When you right-click on a bar, you can choose **Expand to next level**.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_4.png)
+![Expand context menu](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-menu.png)
 
-Once **Expand All** is selected, the visual expands the date hierarchy from *Year* to *Quarter*, as shown in the following image.
+> [!NOTE]
+> As an alternative to right-clicking on a bar, you can select the *Expand* button on the top left of the visualization.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_5.png)
+  ![Expand button](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-expand-button-finger.png)
 
-Notice that the *Year* and *Quarter* labels are shown inline together... this labeling scheme continues as you **Expand All** down to the bottom of the hierarchy.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_6.png)
+Once **Expand to next level** is selected, the visual expands the date hierarchy from *Year* to *Quarter*, as shown in the following image.
+
+![Visual expanded to year and quarter](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-qty-year-quarter.png)
+
+Notice that the *Year* and *Quarter* labels are shown inline together - this labeling scheme continues as you **Expand All** down to the bottom of the hierarchy.
+
+![Visual expanded to year, quarter, and month](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-qty-year-quarter-month.png)
 
 This is how the built-in *Date* hierarchy, associated with fields that have a *date/time* data type, behaves. Let's head to the next section, and see how the new inline hierarchy labels feature is different.
 
 ### Using inline hierarchy labels
-Now let's look at a different chart - using data that has informal hierarchies. In the following visual, we have a bar chart with **Sales Amount**, using *Color* as the axis. In this data, *Color* and *Class* form an informal hierarchy. From here, you can again select *Expand All* to drill down into the hierarchy.
+Now let's look at a different chart - using data that has informal hierarchies. In the following visual, we have a bar chart with **Quantity**, using *ProductName* as the axis. In this data, *ProductName* and *ShipCountry* form an informal hierarchy. From here, you can again select *Expand to next level* to drill down into the hierarchy.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_7.png)
+![Chart with informal hierarchy](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand.png)
 
-Selecting **Expand All** shows the next level with the inline display of hierarchy labels. By default, inline hierarchies are sorted by the measure value – in this case, **SalesAmount**. With inline hierarchy labels enabled, you can choose to sort this data by the hierarchy too, by selecting the ellipses in the upper right corner (the **...**), then selecting **Sort By > Color Class** as shown in the following image.
+Selecting **Expand to next level** shows the next level with the inline display of hierarchy labels. By default, inline hierarchies are sorted by the measure value – in this case, **Quantity**. With inline hierarchy labels enabled, you can choose to sort this data by the hierarchy too, by selecting the ellipsis in the upper right corner (the **...**), then selecting **Sort by ProductName ShipCountry** as shown in the following image.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_8.png)
+![Chart with informal hierarchy sorted by default](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-sort-quantity.png)
 
-Once **Color Class** is selected, the data is sorted based on the informal hierarchy selection, as shown in the following image.
+Once **ShipCountry** is selected, the data is sorted based on the informal hierarchy selection, as shown in the following image.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_9.png)
+![Chart with informal hierarchy sorted by informal hierarchy](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-sorted.png)
 
 > [!NOTE]
 > The inline hierarchy label feature doesn't yet allow for the built-in time hierarchy to be sorted by value; it's only sorted by hierarchy order.

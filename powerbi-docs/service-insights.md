@@ -1,34 +1,26 @@
 ---
-title: Automatically generate data insights with Power BI
+title: Generate data insights automatically with Power BI
 description: Learn how to get insights about your datasets and dashboard tiles.
-services: powerbi
-documentationcenter: ''
-author: mihart
+author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
-qualityfocus: no
-qualitydate: ''
-
+ms.custom: seodec18
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 02/28/2018
-ms.author: mihart
+ms.subservice: powerbi-service
+ms.topic: conceptual
+ms.date: 12/06/2018
+ms.author: maggies
 
 LocalizationGroup: Dashboards
 ---
-# Automatically generate data insights with Power BI
+# Generate data insights automatically with Power BI
 Have a new dataset and not quite sure where to start?  Need to build a dashboard quickly?  Want to look for insights you may have missed?
 
 Run quick insights to generate interesting interactive visualizations based on your data. Quick insights can be run on an entire dataset (quick insights) or on a specific dashboard tile (scoped insights). You can even run insights on an insight!
 
-> **NOTE**: Insights do not work with DirectQuery - they only works with data uploaded to Power BI.
-> 
+> [!NOTE]
+> Insights doesn't work with DirectQuery - it only works with data uploaded to Power BI.
 > 
 
 The insights feature is built on a growing [set of advanced analytical algorithms](service-insight-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
@@ -53,9 +45,10 @@ Now it's your turn. Explore insights using the [Supplier Quality Analysis sample
    
     ![success message](media/service-insights/pbi_autoinsightsuccess.png)
    
-   > **NOTE**: Some datasets can't generate insights because the data isn't statistically significant.  To learn more, see [Optimize your data for insights](service-insights-optimize.md).
+    > [!NOTE]
+    > Some datasets can't generate insights because the data isn't statistically significant.  To learn more, see [Optimize your data for insights](service-insights-optimize.md).
    > 
-   > 
+    
 1. The visualizations display in a special **Quick Insights** canvas with up to 32 separate insight cards. Each card has a chart or graph plus a short description.
    
     ![Quick Insights canvas](media/service-insights/power-bi-insights.png)

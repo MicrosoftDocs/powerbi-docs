@@ -21,7 +21,7 @@ You can mix table functions in your expression, as long as each function uses a 
 
 That expression would put a filter over the entirety of *Table*, ignoring any current filter content.
 
-The DISTINCT function returns the distinct values of a column that are also visible in the current context. So touse the above DAX expression example, using **ALL** in that expression ignores filters, while replacing **ALL** with **DISTINCT** would observe them.
+The DISTINCT function returns the distinct values of a column that are also visible in the current context. So to use the above DAX expression example, using **ALL** in that expression ignores filters, while replacing **ALL** with **DISTINCT** would observe them.
 
 ## Counting values with DAX
 One common question that Power BI report builders want to answer is the following:
@@ -34,7 +34,7 @@ For example, Power BI and DAX includes values that are not properly cross-indexe
 
 You can also create entire calculated tables using DAX functions. Calculated tables created using DAX require a **NAME** and a **TABLE** function. Calculated tables can be used like any other table, including establishing relationships.
 
-> Video content courtesy of [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Video content courtesy of [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 

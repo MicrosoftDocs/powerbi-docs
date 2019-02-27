@@ -1,22 +1,14 @@
 ---
 title: 'Tutorial: Facebook analytics using Power BI Desktop'
 description: 'Tutorial: Facebook analytics using Power BI Desktop'
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.subservice: powerbi-desktop
+ms.topic: tutorial
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Learn more
@@ -246,4 +238,3 @@ Power BI Desktop provides a seamless end-to-end experience, from getting data fr
 * [Visit the Power BI Forum](http://go.microsoft.com/fwlink/?LinkID=519326)
 * [Read the Power BI Blog](http://go.microsoft.com/fwlink/?LinkID=519327)
 
-﻿

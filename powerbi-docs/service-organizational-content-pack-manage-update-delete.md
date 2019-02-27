@@ -1,30 +1,21 @@
 ---
 title: 'Organizational content packs: Manage and update'
 description: Read about managing, updating, and deleting organizational content packs in Power BI.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: lukaszp
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/12/2017
+ms.subservice: powerbi-service
+ms.topic: conceptual
+ms.date: 08/02/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Manage, update, and delete organizational content packs
 > [!NOTE]
-> Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. We recommend using apps instead of organizational content packs or read-only workspaces. Learn [more about apps](service-install-use-apps.md).
-> 
+> You can't create organizational content packs or install them in the new workspace experiences preview. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
 > 
 
 You can package up and share your dashboards, reports, Excel workbooks, and datasets with your colleagues as [organizational content packs](service-organizational-content-pack-introduction.md). Your colleagues can use them as-is, or they can create their own copies.
@@ -56,7 +47,7 @@ When you make and save a change to the dashboard that you included in a content 
 4. Make any necessary changes in the **Update Content Pack** window and select **Update**. A **Success** message appears.
    
    * For group members who haven't customized the content pack, the update is automatically applied.
-   * Group members who have customized the content pack receive a notification that there is a new version.  They can go to AppSource and get the updated content pack without losing their personalized version.  They'll now have 2 versions: the personalized version and the updated content pack.  In the personalized version, all tiles from the original content pack will be gone.  But tiles pinned from other reports will still render.    
+   * Group members who have customized the content pack receive a notification that there is a new version.  They can go to AppSource and get the updated content pack without losing their personalized version.  They'll now have 2 versions: the personalized version and the updated content pack.  In the personalized version, all tiles from the original content pack will be gone.  But tiles pinned from other reports will still render. However, if the content pack owner deletes the dataset the content pack is based on, then the whole report will be gone.  
 
 ## Update the audience: expand or restrict access
 Another modification available to content pack creators is expanding and restricting access to the content pack.  Perhaps you published a content pack to a broad audience and you've decided to restrict access to a smaller group.  
@@ -76,7 +67,7 @@ Another modification available to content pack creators is expanding and restric
 As the content pack creator, you can [schedule refresh of the datasets](refresh-data.md).  When you create and upload the content pack, that refresh schedule is uploaded with the datasets. If you change the refresh schedule, you need to re-publish the content pack (see above).
 
 ## Delete an organizational content pack from AppSource
-You can only delete a content pack from AppSource if you created it. 
+You can only delete a content pack from AppSource if you created it. If you've created an organizational content pack in an app workspace, and then decide to delete that workspace, be sure to delete the content pack first. If you delete the workspace without deleting the content pack first, you lose all access to those content packs and will have to contact Microsoft Support for help. 
 
 > [!TIP]
 > You can [delete your connection to a content pack](service-organizational-content-pack-disconnect.md) you didn't create. That doesn't delete the content pack from AppSource.

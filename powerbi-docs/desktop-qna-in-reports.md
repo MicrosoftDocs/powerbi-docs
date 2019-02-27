@@ -1,23 +1,15 @@
 ---
 title: Using Q&A in Power BI Desktop
 description: You can now use natural language queries in Power BI Desktop, using Q&A
-services: powerbi
-documentationcenter: ''
-author: davidiseminger
+author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/12/2017
-ms.author: davidi
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 12/05/2018
+ms.author: maggies
 
 LocalizationGroup: Create reports
 ---
@@ -25,6 +17,13 @@ LocalizationGroup: Create reports
 Using common phrases and natural language to ask questions of your data is powerful. Even more powerful is when your data answers, which is what Q&A in **Power BI Desktop** lets you do.
 
 To enable Q&A to successfully interpret the large collection of questions it's capable of responding to, Q&A must make assumptions about the model. If the structure of your model doesn't meet one or more of these assumptions, you'll need to adjust your model. Those adjustments for Q&A are the same best-practice optimizations for any model in Power BI, regardless whether you use Q&A. 
+
+> [!NOTE]
+> Q&A is only available when working with a model that contains **imported** data. Live connections to SSAS and DirectQuery models are not supported.
+>
+> Q&A requires the following C runtime update if you're using a version of Windows prior to Windows 10. You can try installing important updates from Windows Update or manually install the required component from Microsoft (KB2999226). https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows
+>
+>
 
 In the following sections, we describe how to adjust your model so it works well with Q&A in Power BI.
 
@@ -43,11 +42,11 @@ If your model is missing relationships between tables, neither Power BI reports 
 
 ## Rename tables and columns
 
-The choice of tables and columns is very important for Q&A. For example, if you have a table named *CustomerSummary* that contains a list of your customers, you would need to ask questions like “List the customer summaries in Chicago” rather than “List the customers in Chicago”. 
+The choice of tables and columns is important for Q&A. For example, say you have a table named *CustomerSummary* that contains a list of your customers. You would need to ask questions like “List the customer summaries in Chicago” rather than “List the customers in Chicago”. 
 
 While Q&A can do some basic word breaking and detection of plurals, Q&A assumes that your table and column names accurately reflect their content.
 
-Consider another example. Imagine you have a table named *Headcount* that contains first and last names and employee numbers, and you have another table named *Employees* that contains employee numbers, job numbers, and start dates. While this might be understood by people who are familiar with the model, someone else who asks “count the employees” is going to get a count of the rows from the “Employees” table, which is probably not what they had in mind, since that’s a count of every job each employee has ever had. It would be much better to rename those tables to truly reflect what they contain.
+Consider another example. Imagine you have a table named *Headcount* that contains first and last names and employee numbers. You have another table named *Employees* that contains employee numbers, job numbers, and start dates. People familiar with the model might understand this structure. Someone else who asks “count the employees” is going to get a count of the rows from the “Employees” table. This result is probably not what they had in mind, because it’s a count of every job each employee has ever had. It would be better to rename those tables to truly reflect what they contain.
 
 **Needs work**
 
@@ -59,13 +58,13 @@ Consider another example. Imagine you have a table named *Headcount* that contai
 
 ## Fix incorrect data types
 
-Imported data can have incorrect data types. In particular, *date* and *number* columns that are imported as *strings* will not be interpreted by Q&A as dates and numbers. You should make sure you select the correct data type in your Power BI model.
+Imported data can have incorrect data types. In particular, *date* and *number* columns that are imported as *strings* aren't interpreted by Q&A as dates and numbers. Make sure you select the correct data type in your Power BI model.
 
 ![choose the correct data type to ensure it's available for Q&A](media/desktop-qna-in-reports/desktop-qna_05.png)
 
 ## Mark year and identifier columns as Don't Summarize
 
-Power BI aggressively aggregates numeric columns by default, so questions like “total sales by year” can sometimes result in a grand total of sales alongside a grand total of years. If you have specific columns where you don't want Power BI to exhibit this behavior, set the **Summarize By** property on the column to **Don’t Summarize**. Be mindful of **year**, **month**, **day**, and **ID** columns, as those columns are the most frequent problems. Other columns that aren’t sensible to sum, such as *age*, could also benefit from setting **Summarize By** to **Don’t Summarize** or to **Average**. You'll find ths setting in the **Modeling** tab.
+Power BI aggressively aggregates numeric columns by default, so questions like “total sales by year” can sometimes result in a grand total of sales alongside a grand total of years. If you have specific columns where you don't want Power BI to exhibit this behavior, set the **Summarize By** property on the column to **Don’t Summarize**. Be mindful of **year**, **month**, **day**, and **ID** columns, as those columns are the most frequent problems. Other columns that aren’t sensible to sum, such as *age*, could also benefit from setting **Summarize By** to **Don’t Summarize** or to **Average**. You'll find this setting in the **Modeling** tab.
 
 ![Don't Summarize columns like year, month, date for Q&A](media/desktop-qna-in-reports/desktop-qna_06.png)
 
@@ -84,19 +83,19 @@ Second, Q&A makes some educated guesses about how users are likely to talk about
 
 The **Sort By Column** property allows sorting on one column to automatically sort by a different column instead. For example, when you ask “sort customers by shirt size”, you probably want your Shirt Size column to sort by the underlying size number (XS, S, M, L, XL) rather than alphabetically (L, M, S, XL, XS).
 
-![Choose Sorty by Column appropriately for Q&A](media/desktop-qna-in-reports/desktop-qna_08.png)
+![Choose Sort by Column appropriately for Q&A](media/desktop-qna-in-reports/desktop-qna_08.png)
 
 ## Normalize your model
 
-Rest assured that we’re not suggesting you need to reshape your entire model. However, there are certain structures that are simply so difficult that Q&A isn’t going to handle them well. If you perform some basic normalization of the structure of your model, the usability of Power BI reports will increase significantly, as will the accuracy of Q&A results.
+Rest assured that we’re not suggesting you need to reshape your entire model. However, certain structures are so difficult that Q&A doesn't handle them well. If you perform some basic normalization of the structure of your model, the usability of Power BI reports will increase significantly, as will the accuracy of Q&A results.
 
-The general rule you should follow is this: Each unique “thing” the user talks about should be represented by exactly one model object (table or column). So, if your users talk about customers, there should be one *customer* object. And, if your users talk about sales, there should be one *sales* object. Sounds simple, doesn't it? Depending on the shape of the data you’re starting with, it can be. There are rich data shaping capabilities available in **Query Editor** if you need them, while many of the more straightforward transformations can happen simply using calculations in the Power BI model.
+Follow this general rule: Each unique “thing” the user talks about should be represented by exactly one model object (table or column). So, if your users talk about customers, there should be one *customer* object. And, if your users talk about sales, there should be one *sales* object. Sounds simple, doesn't it? Depending on the shape of the data you’re starting with, it can be. There are rich data shaping capabilities available in **Query Editor** if you need them, while many of the more straightforward transformations can happen simply using calculations in the Power BI model.
 
 The following sections contain some common transformations you might need to perform.
 
 ### Create new tables for multi-column entities
 
-If you have multiple columns that act as a single distinct unit within a larger table, those columns should be split out into their own table. For example, if you have a Contact Name, Contact Title, and Contact Phone column within your *Companies* table, a better design would be to have a separate *Contacts* table to contain the Name, Title, and Phone and a link back to the *Companies* table. That makes it significantly easier to ask questions about contacts independently of questions about companies for which they are the contact, and improves display flexibility.
+If you have multiple columns that act as a single distinct unit within a larger table, those columns should be split out into their own table. For example, say you have a Contact Name, Contact Title, and Contact Phone column within your *Companies* table. A better design would be to have a separate *Contacts* table to contain the Name, Title, and Phone, and a link back to the *Companies* table. That makes it easier to ask questions about contacts independently of questions about companies for which they are the contact, and improves display flexibility.
 
 **Needs work**
 
@@ -110,7 +109,7 @@ If you have multiple columns that act as a single distinct unit within a larger 
 
 If you have property bags in your model, they should be restructured to have a single column per property. Property bags, while convenient for managing large numbers of properties, suffer from a number of inherent limitations that neither Power BI reports nor Q&A are designed to work around.
 
-For example, consider a *CustomerDemographics* table with CustomerID, Property, and Value columns, where each row represents a different property of the customer (for examples, age, marital status, city, etc). By overloading the meaning of the Value column based on the content of the Property column, it becomes impossible for Q&A to interpret most queries which reference it. A simple question such as “show the age of each customer” might happen to work, since it could be interpreted as “show the customers and customer demographics where property is age”. However, the structure of the model simply doesn’t support slightly more complex questions like “average age of customers in Chicago.” While users who directly author Power BI reports can sometimes find clever ways to get the data they are looking for, Q&A only works when each column has only a single meaning.
+For example, consider a *CustomerDemographics* table with CustomerID, Property, and Value columns, where each row represents a different property of the customer (for examples, age, marital status, city, etc). By overloading the meaning of the Value column based on the content of the Property column, it becomes impossible for Q&A to interpret most queries that reference it. A simple question such as “show the age of each customer” might happen to work, since it could be interpreted as “show the customers and customer demographics where property is age”. However, the structure of the model simply doesn’t support slightly more complex questions like “average age of customers in Chicago.” While users who directly author Power BI reports can sometimes find clever ways to get the data they are looking for, Q&A only works when each column has only a single meaning.
 
 **Needs work**
 
@@ -122,9 +121,9 @@ For example, consider a *CustomerDemographics* table with CustomerID, Property, 
 
 ### Union to eliminate partitioning
 
-If you've partitioned your data across multiple table, or have pivoted values across multiple columns, a number of common operations will be difficult or impossible for your users to achieve. Consider first a typical table partitioning: a *Sales2000-2010* table and a *Sales2011-2020* table. If all of your important reports are restricted to a specific decade, you could probably leave it this way for Power BI reports. However, the flexibility of Q&A will lead your users to expect answers to questions like “total sales by year.” For this to work, you’ll need to union the data into a single Power BI model table.
+If you've partitioned your data across multiple tables, or have pivoted values across multiple columns, a number of common operations will be difficult or impossible for your users to achieve. Consider first a typical table partitioning: a *Sales2000-2010* table and a *Sales2011-2020* table. If all of your important reports are restricted to a specific decade, you could probably leave it this way for Power BI reports. However, the flexibility of Q&A will lead your users to expect answers to questions like “total sales by year.” For this query to work, you need to union the data into a single Power BI model table.
 
-Similarly, consider a typical pivoted value column: a *BookTour* table containing Author, Book, City1, City2, and City3 columns. With a structure like this, even simple questions like “count books by city” cannot be interpreted correctly. For this to work, you should create a separate *BookTourCities* table, which unions the city values into a single column.
+Similarly, consider a typical pivoted value column: a *BookTour* table containing Author, Book, City1, City2, and City3 columns. With a structure like this, even simple questions like “count books by city” cannot be interpreted correctly. For this query to work, create a separate *BookTourCities* table, which unions the city values into a single column.
 
 **Needs work**
 
@@ -136,7 +135,7 @@ Similarly, consider a typical pivoted value column: a *BookTour* table containin
 
 ### Split formatted columns
 
-If the source from which you're importing your data contains formatted columns, Power BI reports (and Q&A) will not reach inside the column to parse its contents. So if you have, for example, a **Full Address** column that contains the address, city and country, you should also split it into Address, City and Country columns so your users can query against them individually.
+If the source from which you're importing your data contains formatted columns, Power BI reports (and Q&A) will not reach inside the column to parse its contents. So if you have, for example, a **Full Address** column that contains the address, city, and country, you should also split it into Address, City, and Country columns so your users can query against them individually.
 
 **Needs work**
 
@@ -163,7 +162,7 @@ Also a similar situation, if the source from which you're importing your data co
 
 ### Denormalize to eliminate inactive relationships
 
-The one exception to the “normalization is better” rule occurs when there is more than one path to get from one table to another. For example, if you have a *Flights* table with both SourceCityID and DestinationCityID columns, each of which are related to the *Cities* table, one of those relationships will have to be marked as inactive. Since Q&A can only use active relationships, you would be unable to ask questions about either source or destination, depending on which you chose. If you instead denormalize the city name columns into the *Flights* table, you’ll be able to ask questions like: “list the flights for tomorrow with a source city of Seattle and a destination city of San Francisco.”
+The one exception to the “normalization is better” rule occurs when there is more than one path to get from one table to another. For example, say you have a *Flights* table with both SourceCityID and DestinationCityID columns, each of which are related to the *Cities* table. One of those relationships will have to be marked as inactive. Since Q&A can only use active relationships, you can't ask questions about either source or destination, depending on which you chose. If you instead denormalize the city name columns into the *Flights* table, you can ask questions like: “list the flights for tomorrow with a source city of Seattle and a destination city of San Francisco.”
 
 **Needs work**
 
@@ -177,7 +176,7 @@ The one exception to the “normalization is better” rule occurs when there is
 
 This step applies specifically to Q&A (and not to Power BI reports in general). Users often have a variety of terms they use to refer to the same thing, such as total sales, net sales, total net sales. Power BI’s model allows these synonyms to be added to tables and columns within the model. 
 
-This can be a very important step. Even with straightforward table and column names, users of Q&A ask questions using the vocabulary that first comes to them, and are not choosing from a predefined list of columns. The more sensible synonyms you can add, the better your users' experience will be with your report. To add Synonyms, in **Relationships** view, select the Synonyms button in the ribbon, as shown in the following image.
+This step can be important. Even with straightforward table and column names, users of Q&A ask questions using the vocabulary that first comes to them, and are not choosing from a predefined list of columns. The more sensible synonyms you can add, the better your users' experience will be with your report. To add Synonyms, in **Relationships** view, select the Synonyms button in the ribbon, as shown in the following image.
 
 ![Add synonyms for Q&A](media/desktop-qna-in-reports/desktop-qna_21.png)
 
@@ -192,5 +191,5 @@ The **Synonyms** field appears on the right side of **Power BI Desktop**, where 
 For more information about features that are in Power BI Desktop, take a look at the following articles:
 
 * [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
-* [Display a dashboard tile or report visual in Focus mode](service-focus-mode.md)
+* [Display a dashboard tile or report visual in Focus mode](consumer/end-user-focus.md)
 

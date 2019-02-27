@@ -1,23 +1,15 @@
 ---
 title: Power BI Desktop Privacy
 description: Power BI Desktop Privacy options
-services: powerbi
-documentationcenter: ''
 author: MI77
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.subservice: powerbi-service
+ms.topic: conceptual
 ms.date: 03/14/2018
-ms.author: willt
+ms.author: willthom
 
 LocalizationGroup: Learn more
 ---

@@ -1,30 +1,31 @@
 ---
-title: Shape and combine data in Power BI Desktop
-description: Shape and combine data in Power BI Desktop
-services: powerbi
-documentationcenter: ''
+title: Shape and combine data from multiple sources
+description: In this tutorial, you learn how to shape and combine data in Power BI Desktop
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/30/2018
+ms.subservice: powerbi-desktop
+ms.topic: tutorial
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
+#Customer intent: As a data analyst or report creator, I want to connect to more than one data source, so that I can use those data sources to create data models and build reports..
 ---
-# Shape and combine data in Power BI Desktop
-With **Power BI Desktop**, you can connect to many different types of data sources, then shape the data to meet your needs. *Shaping* data means transforming the data – such as renaming columns or tables, changing text to numbers, removing rows, setting the first row as headers, and so on. *Combining* data means connecting to two or more data sources, shaping them as needed, then consolidating them into one useful query.
+# Tutorial: Shape and combine data in Power BI Desktop
 
-This article demonstrates how to shape a query using Power BI Desktop, highlighting some of the most common tasks. The query used here is described in more detail, including how to create the query from scratch, in [Getting Started with Power BI Desktop](desktop-getting-started.md).
+With **Power BI Desktop**, you can connect to many different types of data sources, then shape the data to meet your needs, enabling you to create visual reports that you can share with others. *Shaping* data means transforming the data – such as renaming columns or tables, changing text to numbers, removing rows, setting the first row as headers, and so on. *Combining* data means connecting to two or more data sources, shaping them as needed, then consolidating them into one useful query.
+
+In this tutorial, you'll learn to:
+
+* Shape data using **Query Editor**
+* Connect to a data source
+* Connect to another data source
+* Combine those data sources, and create a data model to use in reports
+
+This tutorial demonstrates how to shape a query using Power BI Desktop, highlighting some of the most common tasks. The query used here is described in more detail, including how to create the query from scratch, in [Getting Started with Power BI Desktop](desktop-getting-started.md).
 
 It’s useful to know that the **Query Editor** in Power BI Desktop makes ample use of right-click menus, as well as the ribbon. Most of what you can select in the **Transform** ribbon is also available by right-clicking an item (such as a column) and choosing from the menu that appears.
 
@@ -227,9 +228,9 @@ To apply changes and close Query Editor, select **Close & Apply** from the **Hom
 ![](media/desktop-shape-and-combine-data/shapecombine_closeandapply.png)
 
 ## Next steps
-﻿There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
+There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
-* [Getting Started with Power BI Desktop](desktop-getting-started.md)
+* [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](desktop-query-overview.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Connect to Data in Power BI Desktop](desktop-connect-to-data.md)

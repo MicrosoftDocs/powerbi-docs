@@ -1,21 +1,13 @@
 ---
 title: Troubleshoot scheduled refresh in Power BI Report Server
 description: This article discusses resources available to troubleshoot issues with scheduled refresh in Power BI Report Server.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.subservice: powerbi-report-server
+ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
 
@@ -29,7 +21,7 @@ As issues come up, this article will be updated with information to help you.
 The following are the more common issues you will hit when trying to schedule refresh for a report. 
 
 ### Driver related problems
-Connecting to different data sources may require 3rd party drivers that need to be installed in order to connect successfuly. Not only would you need to install them on the machine you are using Power BI Desktop on, but you will also need to make sure the driver is installed on the report server.
+Connecting to different data sources may require 3rd party drivers that need to be installed in order to connect successfully. Not only would you need to install them on the machine you are using Power BI Desktop on, but you will also need to make sure the driver is installed on the report server.
 
 The driver may also come in both 32bit and 64bit. Make sure to install the 64bit driver as Power BI Report Server is 64bit.
 
@@ -57,7 +49,6 @@ The following settings can be used to affect scheduled refresh. Settings set wit
 
 | Setting | Description |
 | --- | --- |
-| EnablePowerBIReportEmbeddedModels |Enables or disables the ability to use imported data within your reports. Valid values are True or False. |
 | MaxFileSizeMb |Maximum file size for uploaded reports. Default is 1000 MB (1 GB). Maximum value is 2000 MB (2 GB). |
 | ModelCleanupCycleMinutes |Defines how often the model is checked to evict it from memory. Default is 15 minutes. |
 | ModelExpirationMinutes |Defines how long until the model expires based on the last time used and is evicted. Default is 60 minutes. |
@@ -65,7 +56,7 @@ The following settings can be used to affect scheduled refresh. Settings set wit
 
 **Settings within rsreportserver.config:**
 
-```
+```xml
 <Configuration>
     <Service>
         <PollingInterval>10</PollingInterval>
@@ -150,7 +141,7 @@ Execution log entries for Power BI reports differ from entries for other report 
     * **SaveToCatalog**: whenever the data model is being saved back to the catalog.
 
 ## Analysis Services
-There may be times you want to modify Analysis Services for diagnositing issues, or adjust memory limits.
+There may be times you want to modify Analysis Services for diagnosing issues, or adjust memory limits.
 
 > [!IMPORTANT]
 > These settings will be reset any time you upgrade the report server. Be sure to keep a copy of your changes and reapply them if needed.

@@ -1,12 +1,17 @@
 ---
 layout: HubPage
 hide_bc: true
-title: Power BI Documentation
-description: Power BI Documentation
+title: Power BI documentation
+description: Power BI documentation
+ms.service: powerbi
+ms.author: maggies
+author: maggiesMSFT
+ms.topic: hub-page
+ms:date: 10/26/2018
 ---
 <div id="main" class="v2">
     <div class="container">
-        <h1>Power BI Documentation</h1>
+        <h1>Power BI documentation</h1>
         <p style="font-size: 1.12rem;margin-bottom: 1rem;">Power BI amplifies your insights and the value of your data. With Power BI documentation, you get expert information and answers to address your needs, regardless of how you use Power BI.</p>
         <ul class="pivots">
             <li>
@@ -14,20 +19,20 @@ description: Power BI Documentation
                 <ul id="home">
                     <li>
                         <a href="#home-all"></a>
-                        <ul id="home-all" class="cardsA">
+                        <ul id="home-all" class="cardsC">
                             <li>
-                                <a href="service-get-started.md">
+                                <a href="consumer/power-bi-consumer-landing.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/powerbi/pbi-powerbi-logo.svg" alt="" />
+                                                        <img src="./media/index/power-bi-report-consumers.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Power BI service</h3>
-                                                    <p>The Power BI service is the online service where you'll find dashboards, apps and published reports.</p>
+                                                    <h3>Power BI for report consumers</h3>
+                                                    <p>Getting started with Power BI? Get to know the different products and services that make up Power BI, and see what you can do with them.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -35,18 +40,18 @@ description: Power BI Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="desktop-getting-started.md">
+                                <a href="power-bi-creator-landing.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/powerbi/pbi-desktop.svg" alt="" />
+                                                        <img src="./media/index/power-bi-report-designers.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Power BI Desktop</h3>
-                                                    <p>Power BI Desktop lets you build advanced queries, models, and reports that visualize data.</p>
+                                                    <h3>Power BI for report designers</h3>
+                                                    <p>Are you a Power BI report designer? Learn how to connect to data, design queries, and create reports and dashboards.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -54,18 +59,18 @@ description: Power BI Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="mobile-apps-for-mobile-devices.md">
+                                <a href="service-admin-administering-power-bi-in-your-organization.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/powerbi/pbi-mobile-apps.svg" alt="" />
+                                                        <img src="./media/index/power-bi-admins.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Power BI mobile apps</h3>
-                                                    <p>View and interact with your Power BI dashboards and reports on your mobile device.</p>
+                                                    <h3>Power BI for admins</h3>
+                                                    <p>Learn to manage a Power BI tenant, including configuring policies, monitoring usage, and provisioning licenses and capacities.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -79,12 +84,12 @@ description: Power BI Documentation
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/powerbi/pbi-developer.svg" alt="" />
+                                                        <img src="./media/index/power-bi-developers.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Power BI developer</h3>
-                                                    <p>Power BI offers a wide range of options for developers. This ranges from embedding to custom visuals and streaming datasets.</p>
+                                                    <h3>Power BI for developers</h3>
+                                                    <p>Power BI offers a wide range of options for developers, from embedding to custom visuals and streaming datasets.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -92,18 +97,18 @@ description: Power BI Documentation
                                 </a>
                             </li>
                             <li>
-                                <a href="report-server/get-started.md">
+                                <a href="https://powerbi.microsoft.com/blog/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/powerbi/pbi-report-server.svg" alt="" />
+                                                        <img src="./media/index/power-bi-blog.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Power BI Report Server</h3>
-                                                    <p>Create, deploy, and manage Power BI, mobile and paginated reports on-premises.</p>
+                                                    <h3>Power BI blog</h3>
+                                                    <p>Keep up to date on all the latest developments in Power BI.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -117,7 +122,7 @@ description: Power BI Documentation
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/powerbi/pbi-guided-learning.svg" alt="" />
+                                                        <img src="./media/index/power-bi-guided-learning.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

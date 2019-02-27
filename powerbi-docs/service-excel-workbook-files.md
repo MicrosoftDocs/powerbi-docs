@@ -1,22 +1,14 @@
 ---
 title: Get data from Excel workbook files
 description: Learn how to get data from Excel workbook files into Power BI
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: 05/25/2016
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.subservice: powerbi-service
+ms.topic: conceptual
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -82,7 +74,7 @@ When you choose **Connect**, your workbook will appear in Power BI just like it 
 
 You can’t edit your workbook in Power BI. But if you need to make some changes, you can click Edit, and then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
 
-When choosing this way, no dataset is created in Power BI. Your workbook will appear in your Power BI workspace navigation pane under Reports. Connected workbooks have a special Excel icon.
+When choosing this way, Power BI will create a corresponding dataset for the connected workbook. You can use this dataset to create a Power BI report if needed. Your workbook will also appear in your Power BI workspace navigation pane under Reports. Connected workbooks have a special Excel icon.
 
 Choose this option if you only have data in worksheets, or you have ranges, PivotTables and charts you want to pin to dashboards.
 

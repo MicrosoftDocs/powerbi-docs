@@ -1,23 +1,15 @@
 ---
 title: 'Sales and Marketing sample for Power BI: Take a tour'
 description: 'Sales and Marketing sample for Power BI: Take a tour'
-services: powerbi
-documentationcenter: ''
-author: mihart
+author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: amac
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/21/2018
-ms.author: mihart
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 06/23/2018
+ms.author: maggies
 
 LocalizationGroup: Samples
 ---
@@ -34,7 +26,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 ## Prerequisites
 
- Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/en-us/power-bi/sample-sales-and-marketing#get-the-content-pack-for-this-sample), [.pbix](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales and Marketing Sample PBIX.pbix), or
+ Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-sales-and-marketing#get-the-content-pack-for-this-sample), [.pbix](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), or
 [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529785).
 
 ### Get the content pack for this sample

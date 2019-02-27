@@ -1,69 +1,59 @@
 ---
-title: Tutorial - Using the Power BI samples.
-description: 'Tutorial: Using the Power BI samples'
-services: powerbi
-documentationcenter: ''
-author: mihart
+title: Connect to the samples in the Power BI service
+description: Learn to install and explore the samples in the Power BI service.
+author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: 03/08/2017
-
+ms.reviewer: amac
+ms.custom: seodec18
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/22/2018
-ms.author: mihart
+ms.subservice: powerbi-service
+ms.topic: conceptual
+ms.date: 12/06/2018
+ms.author: maggies
 
 LocalizationGroup: Samples
 ---
-# The Power BI samples, a tutorial
+#  Connect to the samples in the Power BI service
 
-We recommend starting with the article [Sample datasets for Power BI](sample-datasets.md). In that article you'll learn all about the samples; how to get them, where to save them, how to use them, and some of the stories each sample can tell. Then, when you have a grasp of the basics, come back to this Tutorial.   
+This tutorial teaches how to: 
+- Import a sample content pack, add it to Power BI service, and open the contents. A *content pack* is a type of sample where the dataset is bundled with a dashboard and report. 
+- Open a sample .pbix file in Power BI Desktop.
 
-### Prerequisites
+If you'd like more background first, we recommend starting with the article [Sample datasets for Power BI](sample-datasets.md). In that article you'll learn all about the samples; how to get them, where to save them, how to use them, and some of the stories each sample can tell. Then, when you have a grasp of the basics, come back to this Tutorial.   
+
+## Prerequisites
 The samples are available for Power BI service and Power BI Desktop. To follow along, we'll be using the Retail analysis sample.
 
 The *Retail Analysis* sample content pack used in this tutorial consists of a dashboard, report, and dataset.
 To familiarize yourself with this particular content pack and its scenario, you may want to
  [take a tour of the Retail Analysis sample](sample-retail-analysis.md) before you begin.
 
-## About this tutorial
-This tutorial teaches you how to 
-- import a sample content pack, add it to Power BI service, and open the contents. A *content pack* is a type of sample where the dataset is bundled with a dashboard and report. 
--  open a sample .pbix file in Power BI Desktop.
-
-
 ## Samples and Power BI service
 
 1. Open and sign in to Power BI Service (app.powerbi.com).
-2. Select **Get Data** at the bottom of the left navigation pane. If you don't see **Get Data**, expand the nav pane by selecting ![](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
+2. Select **Get Data** at the bottom of the left navigation pane. If you don't see **Get Data**, expand the nav pane by selecting ![hamburger icon](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
    
-   ![](media/sample-tutorial-connect-to-the-samples/pbi_getdata.png)
+   ![get data icon](media/sample-tutorial-connect-to-the-samples/pbi_getdata.png)
 5. Select **Samples**.  
    
-   ![](media/sample-tutorial-connect-to-the-samples/pbi_samplesdownload.png)
+   ![Samples button](media/sample-tutorial-connect-to-the-samples/pbi_samplesdownload.png)
 6. Select the *Retail Analysis Sample*, and choose **Connect**.   
    
-   ![](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
+   ![yellow connect button](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
 
 ## What exactly was imported?
 With the sample content packs, when you select **Connect**, Power BI is actually bringing in a copy of that content pack and storing it for you in the cloud. Because the person who created the content pack included a dataset, a report, and a dashboard -- that's what you get when you click **Connect**. 
 
 1. Power BI creates the new dashboard and lists it on your **Dashboards** tab. The yellow asterisk lets you know it's new.
    
-   ![](media/sample-tutorial-connect-to-the-samples/power-bi-new-dashboard.png)
+   ![success message](media/sample-tutorial-connect-to-the-samples/power-bi-new-dashboard.png)
 2. Open the **Reports** tab.  Here you'll see a new report named *Retail Analysis Sample*.
    
-   ![](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
+   ![red box around the Retail Analysis Sample and yellow star](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
    
    And check out the **Datasets** tab.  There's a new dataset as well.
    
-   ![](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
+   ![red box around the Retail Analysis Sample](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
 
 ## Explore your new content
 Now explore the dashboard, dataset, and report on your own. There are many different ways to navigate to your dashboards, reports, and datasets, and just one of those many ways is described below.  
@@ -75,28 +65,28 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
 
 1. Navigate back to your **Dashboards** tab and select the *Retail Analysis Sample* dashboard to open it.    
    
-   ![](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards.png)
+   ![Dashboard tab selected](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards.png)
 2. The dashboard opens.  It has a variety of visualization tiles.
    
-   ![](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
+   ![dashboard with visual highlighted](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
 3. Select one of the tiles to open the underlying report.  In this example, we'll select the area chart (outlined in pink in the previous image). The report opens to the page that contains that area chart.
    
-    ![](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
+    ![report page with matching visual highlighted](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > If the tile had been created using [Power BI Q&A](power-bi-q-and-a.md), the Q&A page would've opened instead. If the tile was [pinned from Excel](service-dashboard-pin-tile-from-excel.md), Excel Online would've opened inside of Power BI.
+   > If the tile had been created using [Power BI Q&A](consumer/end-user-q-and-a.md), the Q&A page would've opened instead. If the tile was [pinned from Excel](service-dashboard-pin-tile-from-excel.md), Excel Online would've opened inside of Power BI.
    > 
    > 
 1. Back on your **Datasets** tab, you have several options for exploring your dataset.  You won't be able to open it and see all the rows and columns (as you can in Power BI Desktop or Excel).  When someone shares a content pack with colleagues, they typically want to share the insights, not give their colleagues direct access to the data. But that doesn't mean you can't explore the dataset.  
    
-   ![](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon2.png)
+   ![Datasets tab](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon2.png)
    
-   * One way of exploring the dataset is by creating your own visualizations and reports from scratch.  Select the chart icon ![](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) to open the dataset in report editing mode.
+   * One way of exploring the dataset is by creating your own visualizations and reports from scratch.  Select the chart icon ![report icon](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) to open the dataset in report editing mode.
      
-       ![](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
-   * Another way of exploring the dataset is to run [Quick Insights](service-insights.md). Select the ellipses (...) and choose **Get insights**. When the insights are ready, select **View insights**.
+       ![brand new report](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
+   * Another way of exploring the dataset is to run [Quick Insights](consumer/end-user-insights.md). Select the ellipses (...) and choose **Get insights**. When the insights are ready, select **View insights**.
      
-       ![](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
+       ![Insights report](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
 ## Samples and Power BI Desktop 
 When you first open the sample PBIX file, is displays in Report view where you can explore, create, and modify any number of report pages with visualizations. Report view provides pretty much the same design experience as a report’s Editing view in the Power BI service. You can move visualizations around, copy and paste, merge, etc.
@@ -105,28 +95,28 @@ The difference between them is when using Power BI Desktop, you can work with yo
 
 1. Open the [Retail Analysis sample .pbix file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) in Power BI Desktop. 
 
-    ![](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
+    ![Sample open in Power BI report view](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
 
 1. The file opens in Report view. Notice the 4 tabs at the bottom of the report editor? That means that there are 4 pages in this report, and the "New Stores" page is currently selected. 
 
-    ![](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png).
+    ![closeup of tabs at bottom and New Stores highlighted](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png).
 
 3. For a deep dive into the report editor, see [Take a tour of the report editor](service-the-report-editor-take-a-tour.md)
 
 ## What exactly was imported?
 When you open the sample PBIX file in Desktop, Power BI is actually bringing in a copy of that data and storing it for you in the cloud. From Desktop you have access to the report ***and the underlying dataset***. When the data is loaded, Power BI Desktop will attempt to find and create relationships for you.  
 
-1. Switch to [Data view](desktop-data-view.md) by selecting the table icon ![](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png) .
+1. Switch to [Data view](desktop-data-view.md) by selecting the table icon ![table icon](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png) .
  
-    ![](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png)
+    ![Desktop data view](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png)
 
     Data View helps you inspect, explore, and understand data in your Power BI Desktop model. It's different from how you view tables, columns, and data in Query Editor. With Data View, you’re looking at your data after it has been loaded into the model.
 
     When you’re modeling your data, sometimes you want to see what’s actually in a table or column without creating a visual on the report canvas, often right down to the row level. This is especially true when you’re creating measures and calculated columns, or you need to identify a data type or data category.
 
-1. Switch to [Relationships view](desktop-relationship-view.md) by selecting the icon ![](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png) .
+1. Switch to [Relationships view](desktop-relationship-view.md) by selecting the icon ![icon that looks like 3 connected boxes](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png) .
  
-    ![](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
+    ![relationship view in Power BI Desktop](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
 
     Relationship view shows all of the tables, columns, and relationships in your model. From here you can view, change, and create relationships.
 
@@ -135,7 +125,7 @@ Now explore the dataset, relationships, and report on your own. For help getting
 
 
 ## Next steps
-[Power BI basic concepts](service-basic-concepts.md)
+[Power BI basic concepts](consumer/end-user-basic-concepts.md)
 
 [Samples for Power BI service](sample-datasets.md)
 

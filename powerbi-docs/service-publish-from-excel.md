@@ -1,22 +1,14 @@
 ---
 title: Publish to Power BI from Excel 2016
 description: Learn how to publish an Excel workbook to your Power BI site.
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.subservice: powerbi-service
+ms.topic: conceptual
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -51,7 +43,7 @@ you’ll get two options on how to get your workbook into Power BI.
 
 ![](media/service-publish-from-excel/pbi_uploadexport3.png)
 
-Once published, it is kept as a copy in Power BI, separate from teh local file. If you want to update the file in Power BI, you need to publish the updated version again. You can refresh teh data and set scheduled refresh on the workbook or the dataset in Power BI.
+Once published, it is kept as a copy in Power BI, separate from the local file. If you want to update the file in Power BI, you need to publish the updated version again. You can refresh the data and set scheduled refresh on the workbook or the dataset in Power BI.
 
 ### Publishing from Excel Standalone
 If your workbook isn’t already saved to OneDrive, you’ll need to save it there first. Select Save to Cloud and choose a location in OneDrive for Business.

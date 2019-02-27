@@ -1,23 +1,15 @@
 ---
 title: 'Supplier Quality Analysis sample for Power BI: Take a tour'
 description: 'Supplier Quality Analysis sample for Power BI: Take a tour'
-services: powerbi
-documentationcenter: ''
-author: mihart
+author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: amac
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/19/2018
-ms.author: mihart
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 08/06/2018
+ms.author: maggies
 
 LocalizationGroup: Samples
 ---
@@ -37,7 +29,7 @@ This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) t
 
 ## Prerequisites
 
- Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/en-us/power-bi/sample-supplier-quality#get-the-content-pack-for-this-sample), [.pbix file](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), or
+ Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-supplier-quality#get-the-content-pack-for-this-sample), [.pbix file](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), or
 [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529779).
 
 ### Get the content pack for this sample
@@ -61,7 +53,7 @@ This is real data from obviEnce ([www.obvience.com](http://www.obvience.com/)) t
 
 Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
 
- * [Supplier Quality Analysis Sample](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
+ * [Supplier Quality Analysis Sample PBIX](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
 
 ### Get the Excel workbook for this sample
 You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529779) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.

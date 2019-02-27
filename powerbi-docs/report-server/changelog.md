@@ -1,23 +1,15 @@
 ---
 title: Changelog for Power BI Report Server
 description: This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
-services: powerbi
-documentationcenter: ''
 author: jtarquino
-manager: jonhp
-backup: maggies
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+manager: kfile
+ms.reviewer: maggies
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/11/2017
-ms.author: tankas
+ms.subservice: powerbi-report-server
+ms.topic: conceptual
+ms.date: 03/31/2018
+ms.author: jtarquino
 ---
 # Changelog for Power BI Report Server
 
@@ -25,8 +17,89 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
 
+## January 2019
+- **Power BI Report Server**            
+    - *Version 1.4.6969.7395 (Build 15.0.1102.235), Released: January 30, 2019*
+        - Bug Fixes
+            - Power BI Reports
+                - Fix for issue with basic credentials when using direct query
+                - Fix for bidirectional relationships with row-level security filters applied
+                - Fix for stale data after a model refresh in a scale-out environment
+                - Fix for double scrollbar for table/ matrix on Firefox 63+
+                - Fix for +/- icon size in Internet Explorer
+            - Paginated Reports
+                - Fix for issue with updating usage of a shared datasource for a report
+
+    - *Version 1.4.6960.38798 (Build 15.0.1102.222), Released: January 22, 2019*
+        - Features
+            - Power BI Reports 
+                - Support for Row-level security
+                - Expand and collapse on matrix row headers
+                - Copy and paste between .pbix files
+                - Smart alignment guides
+                - Support for SAP BW 2.0 Connector
+            - Administrators
+                - Ability to restrict extensions of resources that can be uploaded to the report server
+                - Ability to restrict supported hyperlink schemes
+            - Programmability
+                - New Web API: /PowerBIReports({Id})/DataModelRoles (GET)
+                - New Web API: /PowerBIReports({Id})/DataModelRoleAssignments (GET & PUT)
+                - See [Power BI Report Server REST API](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0) for more details
+        - Bug Fixes
+            - HTML Injection Vulnerability
+            - Export to PDF is not showing Euro symbol
+            - Saving a password with multiple data sources in Power BI reports invalidates non changed passwords
+            - Visuals display issues in Power BI Mobile App after being idle
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.65.5313.1562 (January 2019), Released: January 30, 2019*
+        - Shortcut and pinned icons remain after uninstalling Power BI Report Server
+        - Fix for pinning Power BI Report Server to start menu giving black text on a black icon
+
+    - *Version: 2.65.5313.1421 (January 2019), Released: January 22, 2019*
+        - Contains changes required for connection with Power BI Report Server (January 2019)  
+
+## August 2018
+- **Power BI Report Server**
+    - *Version 1.3.6816.37243 (Build 15.0.2.557), Released: August 30, 2018*
+        - Bug fixes
+            - Fixed an issue when server was upgraded from earlier versions of PBI Report Server where a binding redirect was not updated, customers saw this :      
+            *`
+            Failed to load expression host assembly. Details: Could not load file or assembly 'Microsoft.ReportingServices.ProcessingObjectModel, Version=2018.7.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) (rsErrorLoadingExprHostAssembly)
+             `*
+             
+            - Bug for Data Label Transparency is now fixed.
+            
+    - *Version 1.3.6801.38816 (Build 15.0.2.540), Released: August 15, 2018*
+        - Features
+            - SAP HANA SSO Direct Query support with Kerberos now available for Power BI Reports
+            - Custom Visual API shipped with release  - version 1.13.0
+            - Custom visuals will fall back to a previous version compatible with the current version of the server API (if available)
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.61.5192.641 (August 2018), Released: August 15, 2018*
+        - Contains changes required for connection with Power BI Report Server (August 2018)         
+        
 ## March 2018
 - **Power BI Report Server**
+    - *Version 1.2.6690.34729 (Build 15.0.2.402), Released: April 27, 2018*
+        - Bug fixes
+            - Enable migration of SQL Server Reporting Services 2017 catalogs
+            - For Power BI Reports (PBIX)
+                - Reports can be refresh when a server is configured to use custom authentication
+                - Modifying the properties of a report does not reset data source credentials
+            - For Paginated Reports (RDL)
+                - Usage of `Lookup()` or derivative functions such as `LookupSet()` and `MultiLookup()` in RDL Expressions no longer result in `#Error`
+                - Linked reports respect the page size of the target report when printing
+                - Subscriptions can be created for linked reports that use cascading parameters
+                - Multi-value parameter defaults can be modified when using IE11
+                - Data-driven subscription delivery options are editable
+                - Subscriptions can be viewed and edited while the subscription is executing
+                - Setting data source credentials does not remove expression-based connection strings
+            - For KPIs
+                - Trend lines are refreshed when data is updated
+            - General stability improvements
+
     - *Version 1.2.6660.39920 (Build 15.0.2.389), Released: March 28, 2018*
         - Bug fixes
             - For Power BI Reports (PBIX), fix for Export Data not working from Power BI Visuals
@@ -42,7 +115,7 @@ For detailed information about new features, see [What's new in Power BI Report 
             - Fix for export to Word that creates unequal row height if row content is empty
             - For Paginated Reports (RDL), fix for expression based connection string that is deleted when we change credential for data source
             - Fix for ability to use KPI with text values
-            - For Paginated Report (RDL), fix for ability to assign a new dataset to an existing Paginated Report (RDL)
+            - For Paginated Reports (RDL), fix for ability to assign a new dataset to an existing Paginated Report (RDL)
             - Other stability and usability fixes
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
@@ -116,7 +189,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 
     - *Build 14.0.600.301, Released: July 11, 2017*
         - Bug Fixes
-            - The {{UserId}} tag resolves to the stored credentials instead of the user executing the report in Power BI Reports
+            - The `{{UserId}}` tag resolves to the stored credentials instead of the user executing the report in Power BI Reports
             - Some images fail to render in Power BI Report Server reports
             - Unable to change the name of a Power BI Report in the Power BI Report Server
             - Unable to load Custom Visuals in the Power BI mobile application (it requires reinstall of the mobile app to clear up the local cache)
@@ -130,10 +203,10 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 ## Next steps
 
-[User handbook](user-handbook-overview.md)  
-[Administrator handbook](admin-handbook-overview.md)  
-[Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
-[Install Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[What is Power BI Report Server?](get-started.md)
+[Administrator overview](admin-handbook-overview.md)  
+[Install Power BI Report Server](install-report-server.md)  
+[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

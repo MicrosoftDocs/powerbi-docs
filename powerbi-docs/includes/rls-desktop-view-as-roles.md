@@ -1,20 +1,21 @@
-## Validating the role within Power BI Desktop
-After you have created your role, you can test the results of the role within Power BI Desktop. To do this, select **View As Roles**.
+## Validate the roles within Power BI Desktop
+After you've created your roles, test the results of the roles within Power BI Desktop.
 
-![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles.png)
+1. Select **View As Roles**. 
 
-The **View as roles** dialog allows you to change the view of what you are seeing for that specific user or role. You will see the roles you have created.
+    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles.png)
 
-![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
+    In **View as roles**, you see the roles you've created.
 
-You select the role you created and then select **OK** to apply that role to what you are viewing. The reports will only render the data relevant for that role.
+    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
 
-You can also select Other user and supply a given user. It is best to supply the User Principal Name (UPN) as that is what the Power BI service will use. Select **OK** and the reports will render based on what that user can see. 
+3. Select a role you created > **OK** to apply that role. The report renders the data relevant for that role. 
 
-![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
+4. You can also select **Other user** and supply a given user. It's best to supply the User Principal Name (UPN) as that's what the Power BI service and Power BI Report Server use.
 
-> [!NOTE]
-> Within Power BI Desktop, this will only display different results if you are using dynamic security based on your DAX expressions.
-> 
-> 
+    ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
+
+1. Select **OK** and the report renders based on what that user can see. 
+
+Within Power BI Desktop, **Other user** only displays different results if you're using dynamic security based on your DAX expressions. 
 

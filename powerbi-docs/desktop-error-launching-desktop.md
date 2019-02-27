@@ -1,22 +1,14 @@
 ---
 title: Resolve Issues when starting Power BI Desktop
 description: Resolve Issues when starting Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 04/24/2018
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Troubleshooting
@@ -36,7 +28,14 @@ If you no longer need the Power BI On-premises data gateway, you can uninstall i
 ### Resolution 3: Run Power BI Desktop with administrator privilege
 Alternatively, you can successfully launch Power BI Desktop as administrator, which also allows Power BI Desktop to successfully launch. It is still recommended that you install the latest version of Power BI On-premises data gateway, as described earlier in this article.
 
-It's important to note that Power BI Desktop is engineered as a multiprocess architecture, and several of these processes communicate using Windows named pipes. There may be other processes that interfere with those named pipes. The most common reason for such interference is security, including situations where antivirus software or firewalls might be blocking the pipes or redirecting traffic to a specific port. Launching Power BI Desktop with administrator privilege may resolve that issue. If launching with administrator privelege isn't possible, contact your administrator to determine which security rules are getting applied that prevent named pipes from properly communicating, and whitelist Power BI Desktop and its respective subprocesses.
+It's important to note that Power BI Desktop is engineered as a multiprocess architecture, and several of these processes communicate using Windows named pipes. There may be other processes that interfere with those named pipes. The most common reason for such interference is security, including situations where antivirus software or firewalls might be blocking the pipes or redirecting traffic to a specific port. Launching Power BI Desktop with administrator privilege may resolve that issue. If launching with administrator privilege isn't possible, contact your administrator to determine which security rules are getting applied that prevent named pipes from properly communicating, and whitelist Power BI Desktop and its respective subprocesses.
+
+## Resolve issues when connecting to SQL Server
+If you encounter an error message similar to the following, when connecting to a SQL Server database, you can often resolve the issue by launching **Power BI Desktop** as an administrator, and then making the SQL Server connection:
+
+    "An error happened while reading data from the provider: 'Could not load file or assembly 'System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=xxxxxxxxxxxxx' or one of its dependencies. Either a required impersonation level was not provided, or the provided impersonation level is invalid. (Exception from HRESULT: 0x80070542)'"
+
+After launching as an administrator and establishing the connection, the required DLLs are registered properly. After that, launching Power BI Desktop as an administrator isn't necessary.
 
 ## Help with other issues when launching Power BI Desktop
 We strive to cover as many issues that occur with **Power BI Desktop** as possible. We regularly look at issues that may be affecting many customers, and include them in our articles.

@@ -1,22 +1,15 @@
 ---
 title: Tips and tricks for creating reports in Power BI
-description: Tips and tricks for creating reports in Power BI service and Power BI Desktop
-services: powerbi
-documentationcenter: ''
-author: mihart
+description: Learn best practices for building reports in the Power BI service and Power BI Desktop
+author: davidiseminger
 manager: kfile
-backup: willthom
-editor: ''
-tags: ''
-qualityfocus: identified
-qualitydate: ''
+ms.reviewer: willthom
 
+ms.custom: seodec18
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/21/2018
+ms.subservice: powerbi-service
+ms.topic: conceptual
+ms.date: 12/06/2018
 ms.author: davidi
 
 ---
@@ -148,7 +141,7 @@ To create a relationship in this case, we need to create a logical data set of a
 4. In the **CustomerNames** query, select the **Append** option in the ribbon, select the query **Temp**.
 5. In the **CustomerNames** query, select **Remove Duplicates**.
 
-Now you have a dimension table that you can use to relate to CustomerIndicents and WorkItems that contains all the values of each.  
+Now you have a dimension table that you can use to relate to CustomerIncidents and WorkItems that contains all the values of each.  
 
 ## Patterns to jump start your use of the Query Editor
 Query Editor is very powerful in how it can manipulate data to shape and clean it so it is ready to be visualized or modeled. There are a few patterns you should be aware of.
@@ -162,7 +155,7 @@ Sometimes it's useful to compute summary statistics for a data set.  The easy wa
 ## Using DAX for the first time
 DAX is the calculations formula language in Power BI Desktop.  It's optimized for BI analytics.  It's a little different than what you might be familiar with if you've only used a SQL like query language. There are very good resources online and in literature for learning DAX. 
 
-[QuickStart: Learn DAX Basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
+[Learn DAX Basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
 
 [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx)
 

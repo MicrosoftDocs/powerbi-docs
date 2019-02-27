@@ -1,27 +1,19 @@
 ---
 title: Using report tooltip pages in Power BI 
 description: Tooltip pages in Power BI Desktop let you create rich hover-based tooltips for visuals in your reports
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 03/06/2018
+ms.subservice: powerbi-service
+ms.topic: conceptual
+ms.date: 12/10/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Create tooltips based on report pages in Power BI Desktop (preview)
+# Create tooltips based on report pages in Power BI Desktop
 You can create visually rich **report tooltips** that appear when you hover over visuals, based on report pages you create in **Power BI Desktop**. By creating a report page that serves as your tooltip, your custom tooltips can include visuals, images, and any other collection of items you create in the report page. 
 
 ![Report tooltips for Power BI Desktop](media/desktop-tooltips/desktop-tooltips_00a.png)
@@ -29,13 +21,6 @@ You can create visually rich **report tooltips** that appear when you hover over
 You can create as many tooltip pages as you want. Each tooltip page can be associated with one or more fields in your report, so that when you hover over a visual that includes the selected field, the tooltip you created on your tooltip page appears when you hover over the visual, filtered by the datapoint over which your mouse is hovering. 
 
 There are all sorts of interesting things you can do with report tooltips. Let's take a look at how to create tooltips and what you must do to configure them.
-
-### Enable the tooltips preview 
-Since report tooltips are currently in preview, before you can create report tooltips you need to enable them. To enable the report tooltips preview feature, select **File > Options and Settings > Options > Preview Features** in Power BI Desktop, then select the checkbox beside **Report page tooltips**. 
-
-![Enable preview feature of report tooltips](media/desktop-tooltips/desktop-tooltips_01.png)
-
-You'll need to restart **Power BI Desktop** after you make the selection to enable the preview version of report tooltips.
 
 ## Create a report tooltip page
 To get started, create a new report page by clicking the **+** button, found along the bottom of the **Power BI Desktop** canvas, in the page tabs area. The button is located beside the last page in the report. 
@@ -74,7 +59,7 @@ Once that slider is set to on, you specify the fields for which you want the rep
 
 ![Add fields to determine where the tooltip will appear](media/desktop-tooltips/desktop-tooltips_08.png)
  
-You can include both categorical and numberical fields in the **Tooltips fields** bucket, including measures.
+You can include both categorical and numerical fields in the **Tooltips fields** bucket, including measures.
 
 Once completed, the tooltip report page you created will be used as a tooltip in visuals in the report that use any fields you placed into the **Tooltips fields** bucket, replacing the default Power BI tooltip.
 
@@ -92,7 +77,7 @@ Then, in the **Page** dropdown, select the tooltip page you want to use for the 
 
 ![Select a tooltip page for manual tooltip](media/desktop-tooltips/desktop-tooltips_10.png)
 
-Being able to manually set a tooltip has many uses. You can set a blank page for a tooltip, and thereby override the default Power BI tooltip selection. Another use is when you don't want the tooltip that is automatically selected by Power BI to be the tooltip. For example, if you have a visual that includes two fields, and both of those fields have an assocaited tooltip, Power BI selects only one to show. You might not want that to be the case, so you could manually select which tooltip should be displayed.
+Being able to manually set a tooltip has many uses. You can set a blank page for a tooltip, and thereby override the default Power BI tooltip selection. Another use is when you don't want the tooltip that is automatically selected by Power BI to be the tooltip. For example, if you have a visual that includes two fields, and both of those fields have an associated tooltip, Power BI selects only one to show. You might not want that to be the case, so you could manually select which tooltip should be displayed.
 
 ## Reverting to default tooltips
 
@@ -108,7 +93,7 @@ There are a few considerations to keep in mind when your report tooltips are int
 
 When a report tooltip is displayed for a line chart, only one tooltip for all lines in the chart is displayed. This is similar to the default tooltip behavior for line charts, which also displays only one tooltip. 
 
-This is because the field in the legend does not get passed through as a filter for the tooltip. In the following image, the tooltip being displayed is showing all uints sold on that day across all three classes displayed in the report tooltip (in this example, Deluxe, Economy, and Regular). 
+This is because the field in the legend does not get passed through as a filter for the tooltip. In the following image, the tooltip being displayed is showing all units sold on that day across all three classes displayed in the report tooltip (in this example, Deluxe, Economy, and Regular). 
 
 ![Line charts only show aggregated tooltip data](media/desktop-tooltips/desktop-tooltips_12.png)
 
@@ -121,17 +106,19 @@ When a visual is being cross-highlighted in a report, report tooltips always sho
 
 
 ## Limitations and considerations
-In this preview version of report **tooltips**, there are a few limitations and considerations to keep in mind.
+There are a few limitations and considerations for **tooltips** to keep in mind.
 
-* Report tooltips are not supported when viewing reports in mobile apps or in embedded environments, including Publish to web. 
+* Beginning with the December 2018 release of **Power BI Desktop**, Button visuals also support tooltips.
+* Report tooltips are not supported when viewing reports in mobile apps. 
 * Report tooltips are not supported for custom visuals. 
 * Clusters are not currently supported as fields that can be shown in report tooltips. 
 * When choosing a field to be shown for report tooltips, when using a field versus a category, visuals that contain that field will only show the specified tooltip when summarization with the selected field matches. 
+
 
 
 ## Next steps
 For more information about features that are similar or interact with report tooltips, take a look at the following articles:
 
 * [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
-* [Display a dashboard tile or report visual in Focus mode](service-focus-mode.md)
+* [Display a dashboard tile or report visual in Focus mode](consumer/end-user-focus.md)
 

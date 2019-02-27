@@ -1,21 +1,13 @@
 ---
 title: Supported languages and countries/regions for Power BI
 description: See the lists of supported languages and countries/regions for the Power BI service, Power BI Desktop, and Power BI documentation.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.subservice: powerbi-service
+ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: maggies
 
@@ -162,6 +154,11 @@ Besides setting the language for the Power BI Desktop application, you can also 
 - How we compare and sort strings. For example, because Turkish has two of the letter i, depending on the collation of your database, the two can end up in different orders when sorting. 
 - The language Power BI Desktop uses when creating hidden date tables from date fields. For example, fields are called Month/Monat/Mois, etc.
 
+> [!NOTE]
+> Power BI’s model currently uses a locale that is not case-sensitive (or kana-sensitive) so “ABC” and “abc” will be treated as equivalent. If “ABC” is loaded into the database first, other strings that differ only by case such as “Abc” won’t be loaded as a separate value.
+> 
+>
+
 Here's how to set the model language.
 
 1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
@@ -170,6 +167,10 @@ Here's how to set the model language.
 
     ![Set model language in Power BI Desktop](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
 
+> [!NOTE]
+> Once created, the language of a Power BI model can't be changed.
+> 
+>
 
 ## Languages for the help documentation
 Help is localized in these 10 languages: 
@@ -186,7 +187,7 @@ Help is localized in these 10 languages:
 * Spanish - español
 
 ## Next steps
-* Are you using one of the Power BI mobile apps? See [Supported languages in the Power BI mobile apps](mobile-apps-supported-languages.md) for details.
+* Are you using one of the Power BI mobile apps? See [Supported languages in the Power BI mobile apps](consumer/mobile/mobile-apps-supported-languages.md) for details.
 * Questions? Try asking the [Power BI Community](http://community.powerbi.com/).
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 

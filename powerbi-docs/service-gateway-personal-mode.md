@@ -1,21 +1,13 @@
 ---
 title: On-premises data gateway (personal mode)
 description: Data gateway for Power BI that individuals can use for connecting to on-premises data
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.subservice: powerbi-gateways
+ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
 
@@ -90,11 +82,11 @@ If you were using **Fast Combine** with the previous gateway, you'll need to tak
    ```
 2. At the bottom of the file, add the following text:
    
-       ```
-       <setting name="EnableFastCombine" serializeAs="String">```
+    ```xml
+       <setting name="EnableFastCombine" serializeAs="String">
        <value>true</value>
-       </setting>
-       ```
+    </setting>
+    ```
 3. Once complete, the setting will take effect in approximately one minute. To check that it's working properly, try an on-demand refresh in the **Power BI service** to confirm that **Fast Combine** is working.
 
 ## Limitations and considerations
@@ -136,7 +128,7 @@ Support for Spark is planned for the second half of the 2017 calendar year.
   * **Answer**: If you’re refreshing your reports with the current gateway, your refreshes will stop. The only way to set up a new refresh schedule will be by installing and configuring the new gateway.
 * I'm using R script. Is that supported?
   
-  * **Answer**: We anticipating adding support for R scripts soon.​
+  * **Answer**: R scripts are supported for personal mode.​
 * Why am I not seeing the message to update my gateway in the **Power BI service**?
   
   * **Answer**: Most likely, this is because you have one or more datasets that include a data source that is still currently not supported.

@@ -1,22 +1,14 @@
 ---
 title: Analysis Services Multidimensional data in Power BI Desktop
 description: Analysis Services Multidimensional data in Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -79,11 +71,13 @@ The calculated members of user hierarchies are not exposed in Power BI. Rather, 
 ### Security
 Multidimensional models support dimension and cell level security by way of *Roles*. When you connect to a cube with Power BI, you are authenticated and evaluated for appropriate permissions. When a user has *dimension security* applied, the respective dimension members are not seen by the user in Power BI. However, when a user has a *cell security* permission defined, where certain cells are restricted, then that user cannot connect to the cube using Power BI.
 
-## Limitations of SSAS Multidimensional Models in Power BI Desktop
+## Considerations and Limitations
 There are certain limitations to using **SSAS MD**:
 
 * Servers must be running SQL Server 2012 SP1 CU4 or later versions of Analysis Services for the Power BI Desktop SSAS MD connector to work properly
 * *Actions* and *Named Sets* are not exposed to Power BI, but you can still connect to cubes that also contain *Actions* or *Named sets* and create visuals and reports.
+* You may encounter an issue where Power BI displays metadata for an SSAS model, but you're unable to retrieve data from the model. This can occur when you have the 32-bit version of the MSOLAP provider installed on your system, and do not have the 64-bit version. Installing the 64-bit version may resolve the issue.
+* You can't create 'report level' measures when authoring a report that is connected live to an SSAS multidimensional model. The only measures that are available are those defined in the MD model.
 
 ## Supported Features of SSAS MD in Power BI Desktop
 The following features of SSAS MD are supported in Power BI Desktop:
@@ -102,3 +96,7 @@ The following features of SSAS MD are supported in Power BI Desktop:
   * ImageUrls
   * Dimension security
 
+## Troubleshooting 
+The following list describes all known issues when connecting to SQL Server Analysis Services (SSAS). 
+
+* **Error : Couldn't load model schema** - This error usually occurs when the user connecting to Analysis Services does not have access to database/cube.

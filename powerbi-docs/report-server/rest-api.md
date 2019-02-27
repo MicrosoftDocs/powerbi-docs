@@ -1,31 +1,27 @@
 ---
-title: Power BI Report Server release notes
+title: Develop with the REST APIs for Power BI Report Server
 description: The REST API provides programmatic access to the objects in a Power BI Report Server catalog.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 11/01/2017
+ms.subservice: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/25/2018
 ms.author: maghan
 
 ---
 # Develop with the REST APIs for Power BI Report Server
+
 Power BI Report Server support Representational State Transfer (REST) APIs. The REST APIs are service endpoints that support a set of HTTP operations (methods), which provide create, retrieve, update, or delete access for resources within a report server.
 
 The REST API provides programmatic access to the objects in a Power BI Report Server catalog. Examples of objects are folders, reports, KPIs, data sources, datasets, refresh plans, subscriptions, and more. Using the REST API, you can, for example, navigate the folder hierarchy, discover the contents of a folder, or download a report definition. You can also create, update, and delete objects. Examples of working with objects are upload a report, execute a refresh plan, delete a folder, and so on.
 
+[!INCLUDE [GDPR-related guidance](../includes/gdpr-hybrid-note.md)]
+
 ## Components of a REST API request/response
+
 A REST API request/response pair can be separated into five components:
 
 * The **request URI**, which consists of: `{URI-scheme} :// {URI-host} / {resource-path} ? {query-string}`. Although the request URI is included in the request message header, we call it out separately here because most languages or frameworks require you to pass it separately from the request message.
@@ -48,15 +44,17 @@ A REST API request/response pair can be separated into five components:
   * MIME-encoded response objects are returned in the HTTP response body, such as a response from a GET method that is returning data. Typically, these objects are returned in a structured format such as JSON or XML, as indicated by the `Content-type` response header.
 
 ## API documentation
+
 A modern REST API calls for modern API documentation. The REST API is built on the OpenAPI specification (a.k.a. the swagger specification) and documentation is available on [SwaggerHub](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0). Beyond documenting the API, SwaggerHub helps generate a client library in the language of choice – JavaScript, TypeScript, C#, Java, Python, Ruby, and more.
 
 ## Testing API calls
+
 A tool for testing HTTP request/response messages is [Fiddler](http://www.telerik.com/fiddler). Fiddler is a free web debugging proxy that can intercept your REST requests, making it easy to diagnose the HTTP request/ response messages.
 
 ## Next steps
+
 Review the available APIs over on [SwaggerHub](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0).
 
 Samples are available on [GitHub](https://github.com/Microsoft/Reporting-Services). The sample includes an HTML5 app built on TypeScript, React, and webpack along with a PowerShell example.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-

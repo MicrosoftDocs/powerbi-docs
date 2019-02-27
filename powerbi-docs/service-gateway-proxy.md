@@ -1,25 +1,16 @@
 ---
 title: Configuring proxy settings for the On-premises data gateway
 description: Information regarding configuration of proxy settings for the On-premises data gateway.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.subservice: powerbi-gateways
+ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
-
 LocalizationGroup: Gateways
+
 ---
 # Configuring proxy settings for the On-premises data gateway
 Your work environment may require that you go through a proxy to access the internet. This could prevent the On-premises data gateway from connecting to the service.
@@ -54,7 +45,20 @@ The default proxy configuration is the following.
         <defaultProxy useDefaultCredentials="true" />
     </system.net>
 
-The default configuration works with Windows authentication. If your proxy uses another form of authentication, you will need to change the settings. If you are not sure, you should contact your network administrator.
+The default configuration works with Windows authentication. If your proxy uses another form of authentication, you will need to change the settings. If you are not sure, you should contact your network administrator. Basic proxy authentication is not recommended, and attempting to use basic proxy authentication may cause proxy authentication errors that result in the gateway not being properly configured. Use a stronger proxy authentication mechanism to resolve.
+
+In addition to using default credentials, you can add a <proxy> element to define proxy server settings in more detail. For example, you can specify that your On-premises data gateway should always use the proxy even for local resources by setting the bypassonlocal parameter to false. This can help in troubleshooting situations if you want to track all https requests originating from an On-premises data gateway in the proxy log files. The following sample configuration specifies that all requests must go through a specific proxy with the IP address 192.168.1.10.
+
+    <system.net>
+        <defaultProxy useDefaultCredentials="true">
+            <proxy  
+                autoDetect="false"  
+                proxyaddress="http://192.168.1.10:3128"  
+                bypassonlocal="false"  
+                usesystemdefault="true"
+            />  
+        </defaultProxy>
+    </system.net>
 
 To learn more about the configuration of the proxy elements for .NET configuration files, see [defaultProxy Element (Network Settings)](https://msdn.microsoft.com/library/kd3cf2ex.aspx).
 
@@ -68,22 +72,26 @@ When configuring the proxy settings to use default credentials, as explained abo
 
 ### Change the On-premises data gateway service account
 1. Change the Windows service account for the **On-premises data gateway service**.
-   
+
     The default account for this service is *NT SERVICE\PBIEgwService*. You will want to change this to a domain user account within your Active Directory domain. Or, you will want to use a managed service account to avoid having to change the password.
-   
+
     You will want to change the account on the **Log On** tab within the properties of the Windows service.
 2. Restart the **On-premises data gateway service**.
-   
+
     From an admin command prompt, issue the following commands.
-   
+
         net stop PBIEgwService
-   
+
         net start PBIEgwService
 3. Start the **On-premises data gateway configurator**. You can select the windows start button and search for *On-premises data gateway*.
 4. Sign in to Power BI.
 5. Restore the gateway using your recovery key.
-   
+
     This will allow the new service account to be able to decrypt stored credentials for data sources.
+
+> [!NOTE]
+> When you change the service account directly using Services Control panel, it does not update ACLs automatically. You need to ensure that new service account has access to the installation files and folder. You can find Gateway Installation folder under C:\Program Files\On-premises data gateway. 
+> 
 
 ## Next steps
 [On-premises data gateway (personal mode)](service-gateway-personal-mode.md)

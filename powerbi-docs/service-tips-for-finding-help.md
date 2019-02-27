@@ -1,22 +1,14 @@
 ---
 title: 10 tips for getting help with your Power BI questions
 description: Here are 10 ways to get help when you have a question about how Power BI works
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/12/2017
+ms.subservice: powerbi-service
+ms.topic: conceptual
+ms.date: 06/28/2018
 ms.author: maggies
 
 LocalizationGroup: Get started
@@ -49,7 +41,7 @@ Do videos fit your learning style better? Power BI has two sets you'll be intere
 ## 6 Attend training
 The training options available to you are nearly endless, from in-person lab training to short videos.
 
-* [Guided learning](guided-learning/gettingstarted.yml#step-1) on the Power BI site.
+* [Guided learning](guided-learning/gettingstarted.yml?tutorial-step=1) on the Power BI site.
 * [Free Power BI  webinars](webinars.md), live and on-demand, on the Power BI site.
 
 You can find additional options online, such as:
@@ -73,6 +65,6 @@ If all else fails, the final tip is to observe the system. Often, people ask wha
 For example, say you're wondering if you can share dashboards with a security group. To answer that question, go to the sharing dialog box and try adding a security group. Either way, you'll have your answer after this test.
 
 ## Next steps
-* [Get started with Power BI](service-get-started.md)
+* [What is Power BI?](power-bi-overview.md)
 * Try asking the [Power BI Community](http://community.powerbi.com/)
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/)

@@ -1,23 +1,16 @@
 ---
 title: Troubleshooting unsupported data source for refresh
 description: Troubleshooting unsupported data source for refresh
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.subservice: powerbi-service
+ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
+ms.custom: seodec18
 
 LocalizationGroup: Troubleshooting
 ---
@@ -32,18 +25,18 @@ This happens when the data source you used, within Power BI Desktop, isn’t sup
 If you aren’t sure what data source was used, you can find that using the following steps within Power BI Desktop.  
 
 1. In Power BI Desktop, make sure you are on the **Report** pane.  
-   ![](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-report-pane.png)
+   ![Desktop report pane](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-report-pane.png)
 2. Select **Edit Queries** from the ribbon bar.  
-   ![](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-edit-queries.png)
+   ![Edit queries](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-edit-queries.png)
 3. Select **Advanced Editor**.  
-   ![](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-advanced-editor.png)
+   ![Advance editor](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-advanced-editor.png)
 4. Make note of the provider listed for the source.  In this example, the provider is ActiveDirectory.  
-   ![](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
+   ![Data source provider](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
 5. Compare the provider with the list of supported data sources found within [Refresh data in Power BI](refresh-data.md).  You will find that Active Directory is not a supported data source for refresh.  
 
 ## Next steps
 [Data Refresh](refresh-data.md)  
-[Power BI Gateway - Personal](personal-gateway.md)  
+[Power BI Gateway - Personal](service-gateway-personal-mode.md)  
 [On-premises data gateway](service-gateway-onprem.md)  
 [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  

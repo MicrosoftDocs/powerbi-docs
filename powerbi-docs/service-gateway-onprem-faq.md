@@ -1,21 +1,13 @@
 ---
 title: On-premises data gateway FAQ
 description: This is the On-premises data gateway FAQ. This collects frequently asked questions into one spot for the gateway.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.subservice: powerbi-gateways
+ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 
@@ -72,6 +64,9 @@ LocalizationGroup: Gateways
 
 **Question:** Will the gateway work with ExpressRoute?  
 **Answer:** Yes. For more information about ExpressRoute and Power BI, see [Power BI and ExpressRoute](service-admin-power-bi-expressroute.md).
+
+**Question:** I'm using R scripts. Is that supported?
+**Answer**: R scripts are supported only for personal mode.​
 
 ## Next steps
 [On-premises data gateway](service-gateway-onprem.md)  

@@ -1,21 +1,13 @@
 ---
 title: Manage your data source - Oracle
 description: How to manage the On-premises data gateway and data sources that belong to that gateway.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.subservice: powerbi-gateways
+ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 
@@ -159,7 +151,7 @@ If you are listed in the **Users** tab of the data source configured within the 
 ![](media/service-gateway-onprem-manage-oracle/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## Troubleshooting
-You may encounter serveral errors from Oracle when the naming syntax is either incorrect or not configured properly.
+You may encounter several errors from Oracle when the naming syntax is either incorrect or not configured properly.
 
 * ORA-12154: TNS: could not resolve the connect identifier specified  
 * ORA-12514: TNS listener does not currently know of service requested in connect descriptor  

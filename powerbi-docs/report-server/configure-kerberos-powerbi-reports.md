@@ -1,21 +1,13 @@
 ---
 title: Configure Kerberos to use Power BI reports
 description: Learn how to configure your report server for Kerberos authentication to data sources used within your Power BI reports for a distributed environment.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.subservice: powerbi-report-server
+ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
 
@@ -25,7 +17,7 @@ ms.author: maghan
 
 Learn how to configure your report server for Kerberos authentication to data sources used within your Power BI reports for a distributed environment.
 
-Power BI Report Server includes the ability to host Power BI reports. Many data sources are supported by your report server. While this article focuses specificly on SQL Server Analysis Services, you can use the concepts and apply that to other data sources such as SQL Server.
+Power BI Report Server includes the ability to host Power BI reports. Many data sources are supported by your report server. While this article focuses specifically on SQL Server Analysis Services, you can use the concepts and apply that to other data sources such as SQL Server.
 
 You can install Power BI Report Server, SQL Server and Analysis Services on a single machine and everything should work without additional configuration. This is great for a test environment. You may hit errors if you have these services installed on separate machines which is called a distributed environment. In this environment, you are required to use Kerberos authentication. There is configuration required to implement this. 
 
@@ -67,7 +59,7 @@ Within the rsreportserver.config file, you will want to fine the **Authenticatio
 
 We want to make sure that RSWindowsNegotiate is listed and the first in the list of authentication types. It should look similar to the following.
 
-```
+```xml
 <AuthenticationTypes>
     <RSWindowsNegotiate/>
     <RSWindowsNTLM/>
@@ -219,8 +211,8 @@ After all of the above configuration is in place, your report should display pro
 While this configuration should work in most cases, with Kerberos, there can be different configuration depending on your environment. If the report will still not load, you will want to reach out to your domain administrator to investigate further or contact support.
 
 ## Next steps
-[Administrator handbook](admin-handbook-overview.md)  
-[Quickstart: Install Power BI Report Server](quickstart-install-report-server.md)  
+[Administrator overview](admin-handbook-overview.md)  
+[Install Power BI Report Server](install-report-server.md)  
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

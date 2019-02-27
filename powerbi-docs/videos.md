@@ -1,23 +1,16 @@
 ---
-title: Power BI Videos
+title: Power BI videos
 description: Power BI Videos and link to YouTube channel.
-services: powerbi
-documentationcenter: ''
-author: mihart
+author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/19/2018
-ms.author: mihart
+ms.subservice: powerbi-service
+ms.topic: conceptual
+ms.date: 12/06/2018
+ms.author: davidi
 
 ---
 # Power BI videos
@@ -50,7 +43,7 @@ Check out the following collection of sources and content for more videos.
 * [Guy in a Cube channel](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w) - fresh videos on Power BI features and capabilities
 
 ## Next steps
-[Get started with Power BI](service-get-started.md)
+[What is Power BI?](power-bi-overview.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

@@ -1,21 +1,13 @@
 ---
 title: Capacity planning guidance for Power BI Report Server
 description: This paper offers guidance on capacity planning for Power BI Report Server by sharing results of load test executions of various workloads.
-services: powerbi
-documentationcenter: ''
 author: parthsha
 manager: kfile
-backup: maghan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maghan
 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.subservice: powerbi-report-server
+ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
 
@@ -54,7 +46,7 @@ The Power BI Report Server deployment consisted of the following virtual machine
 See Appendix 1.1 Power BI Report Server Topology and Appendix 1.2 Power BI Report Server Virtual Machine Configuration for a thorough configuration of each virtual machine used in the topology.
 
 ### Tests
-The tests used in the load test runs are publicly available in a GitHub project called Reporting Services LoadTest   (See https://github.com/Microsoft/Reporting-Services-LoadTest). This tool allows users to study the performance, reliability, scalability and recoverability characteristics of SQL Server Reporting Services and Power BI Report Server. This project consists of four groups of test cases:
+The tests used in the load test runs are publicly available in a GitHub project called [Reporting Services LoadTest](https://github.com/Microsoft/Reporting-Services-LoadTest). This tool allows users to study the performance, reliability, scalability and recoverability characteristics of SQL Server Reporting Services and Power BI Report Server. This project consists of four groups of test cases:
 
 * Tests simulating rendering Power BI reports,
 * Tests simulating rendering mobile reports,
@@ -118,7 +110,7 @@ The results presented in this paper were derived from executing a specific set o
 ### 1 Topology
 **1.1 Power BI Report Server Topology**
 
-To focus solely on Power BI Report Server behavior under different configurations, the VM configuration  for each type of machine (except for the machine hosting Power BI Report Server) was fixed. Each machine was provisioned according to the second-generation (v2) D Series machines with Premium Storage Disks. You can find detailed information about each VM size under the “General Purpose” section on https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
+To focus solely on Power BI Report Server behavior under different configurations, the VM configuration  for each type of machine (except for the machine hosting Power BI Report Server) was fixed. Each machine was provisioned according to the second-generation (v2) D Series machines with Premium Storage Disks. You can find detailed information about each VM size under the “General Purpose” section on https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
 
 | Virtual Machine Type | Processor | Memory | Azure VM Size |
 | --- | --- | --- | --- |
@@ -128,7 +120,7 @@ To focus solely on Power BI Report Server behavior under different configuration
 
 **1.2 Power BI Report Server Virtual Machine Configuration** 
 
-Different configurations of processor and memory were used for the Virtual Machine hosting Power BI Report Server. Unlike the other VMs, this machine was provisioned according to the third-generation (v3) D Series Machines with Premium Storage Disks. You can find detailed information about this VM size under the “General Purpose” section on https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
+Different configurations of processor and memory were used for the Virtual Machine hosting Power BI Report Server. Unlike the other VMs, this machine was provisioned according to the third-generation (v3) D Series Machines with Premium Storage Disks. You can find detailed information about this VM size under the “General Purpose” section on https://azure.microsoft.com/pricing/details/virtual-machines/windows/.
 
 | Virtual Machine | Processor | Memory | Azure VM Size |
 | --- | --- | --- | --- |
