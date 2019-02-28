@@ -9,13 +9,13 @@ featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 02/26/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
 # Tips and Tricks for Power BI Map visualizations
-Power BI integrates with Bing Maps to provide default map coordinates (a process called geo-coding) so you can create maps. Together they use algorithms to identify the correct location, but sometimes it's a best guess. If Power BI tries can't create the map visualization on its own, it enlists the help of Bing Maps. 
+Power BI integrates with Bing Maps to provide default map coordinates (a process called geo-coding) so you can create maps. Together they use algorithms to identify the correct location, but sometimes it's a best guess. If Power BI tries, but can't create the map visualization on its own, it enlists the help of Bing Maps. 
 
 You, or your administrator, may need to update your firewall to allow access to the URLs Bing uses for geocoding.  Those URLs are:
 * https://dev.virtualearth.net/REST/V1/Locations
@@ -27,8 +27,8 @@ To increase the likelihood of correct geo-coding, use the following tips. The fi
 ## What is sent to Bing Maps?
 Power BI service and Power BI Desktop send Bing the geo data it needs to create the map visualization. This may include the data in the **Location**, **Latitude**, and **Longitude** buckets and geo fields in any of the **Report level**, **Page level**, or **Visual level** filter buckets. Exactly what is sent varies by map type. To learn more, see [Bing Maps privacy](https://go.microsoft.com/fwlink/?LinkID=248686).
 
-* For maps (bubble maps), if latitude and longitude are provided then no data is sent to Bing. Otherwise, any data in the Location (and filter) buckets is sent to Bing.     
-* Filled maps require a field in the Location bucket; even if latitude and longitude are provided. Whatever data is in the Location, Latitude, or Longitude buckets is sent to Bing.
+* For maps (bubble maps), if latitude and longitude are provided, then no data is sent to Bing. Otherwise, any data in the **Location** (and filter) buckets is sent to Bing.     
+* Filled maps require a field in the **Location** bucket; even if latitude and longitude are provided. Whatever data is in the **Location**, **Latitude**, or **Longitude** bucket is sent to Bing.
   
     In the example below, the field **Vendor** is being used for geo-coding, so all vendor data is sent to Bing. Data from the **Size** and **Color saturation** buckets is not sent to Bing.
   
