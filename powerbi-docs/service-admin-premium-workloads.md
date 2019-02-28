@@ -19,7 +19,7 @@ This article describes enabling and configuring workloads for Power BI Premium c
 
 ## Configure workloads
 
-You can enable and configure additional workloads for [Dataflows](service-dataflows-overview.md) and [Paginated reports](paginated-reports-report-builder-power-bi.md). Default memory values for these workloads are based on the capacity nodes available for your SKU. Max memory settings are not cumulative. They represent a percentage of overall memory that *can be used* for that workload. Memory up to the max value specified is dynamically allocated for dataflows, but is statically allocated for paginated reports. 
+You can enable and configure additional workloads for [Dataflows](service-dataflows-overview.md) and [Paginated reports](paginated-reports-report-builder-power-bi.md). Default memory values for these workloads are based on the capacity nodes available for your SKU. Max memory settings are not cumulative. Memory up to the max value specified is dynamically allocated for dataflows, but is statically allocated for paginated reports. 
 
 ### To configure workloads in the Power BI admin portal
 
