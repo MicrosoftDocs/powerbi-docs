@@ -15,11 +15,11 @@ LocalizationGroup: Premium
 
 # Configure workloads in a Premium capacity
 
+This article describes enabling and configuring workloads for Power BI Premium capacities. By default, capacities support only the workload associated with running Power BI queries. Query workloads are optimized for and limited by resources determined by your Premium capacity SKU. Premium capacities also support additional workloads that can use capacity resources.
+
 ## Configure workloads
 
-By default, capacities support only the workload associated with running Power BI queries. Query workloads are optimized for and limited by resources determined by your Premium capacity SKU. 
-
-You can also enable and configure additional workloads for [Dataflows](service-dataflows-overview.md) and [Paginated reports](paginated-reports-report-builder-power-bi.md). Default memory values for these workloads are based on the capacity nodes available for your SKU. Max memory settings are not cumulative. They represent a percentage of overall memory that *can be used* for that workload. Memory up to the max value specified is dynamically allocated for dataflows, but is statically allocated for paginated reports. 
+You can enable and configure additional workloads for [Dataflows](service-dataflows-overview.md) and [Paginated reports](paginated-reports-report-builder-power-bi.md). Default memory values for these workloads are based on the capacity nodes available for your SKU. Max memory settings are not cumulative. They represent a percentage of overall memory that *can be used* for that workload. Memory up to the max value specified is dynamically allocated for dataflows, but is statically allocated for paginated reports. 
 
 ### To configure workloads in the Power BI admin portal
 

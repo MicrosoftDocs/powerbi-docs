@@ -779,6 +779,11 @@
             "source_path": "powerbi-docs/spark-on-hdinsight-with-direct-connect.md",
             "redirect_url": "/power-bi/desktop-directquery-data-sources",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-admin-premium-manage.md",
+            "redirect_url": "/power-bi/service-premium",
+            "redirect_document_id": false
         }
     ]
 }
