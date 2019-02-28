@@ -85,7 +85,7 @@ Next validate the setup with a *SAML assertion*, using the [xmlsec1 tool](http:/
     </saml2:Assertion>
     ```
 
-1. Run the following command. saltest.key and samltest.crt are the key and certificate you generated in step 1.
+1. Run the following command. samltest.key and samltest.crt are the key and certificate you generated in step 1.
 
     ```
     xmlsec1 --sign --privkey-pem samltest.key, samltest.crt --output signed.xml assertion-template.xml
