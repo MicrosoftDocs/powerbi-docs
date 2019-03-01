@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 02/21/2019
 ms.author: davidi
 
 ---
@@ -20,7 +20,7 @@ The first time Power BI Desktop is launched, a sign-in form is displayed. Inform
 Administrators use the following registry key to disable the sign-in form. This can also be pushed to an entire organization by using global policies.
 
 ```
-Key: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power BI Desktop
+Key: HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop
 valueName: ShowLeadGenDialog
 ```
 

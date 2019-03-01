@@ -74,7 +74,7 @@ When you choose **Connect**, your workbook will appear in Power BI just like it 
 
 You can’t edit your workbook in Power BI. But if you need to make some changes, you can click Edit, and then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
 
-When choosing this way, no dataset is created in Power BI. Your workbook will appear in your Power BI workspace navigation pane under Reports. Connected workbooks have a special Excel icon.
+When choosing this way, Power BI will create a corresponding dataset for the connected workbook. You can use this dataset to create a Power BI report if needed. Your workbook will also appear in your Power BI workspace navigation pane under Reports. Connected workbooks have a special Excel icon.
 
 Choose this option if you only have data in worksheets, or you have ranges, PivotTables and charts you want to pin to dashboards.
 

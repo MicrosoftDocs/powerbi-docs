@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 02/22/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -21,6 +21,9 @@ You can also create a collection of bookmarks, arrange them in the order you wan
 ![Bookmarks in Power BI](media/desktop-bookmarks/bookmarks_01.png)
 
 There are many uses for bookmarking. You can use them to keep track of your own progress in creating reports (bookmarks are easy to add, delete, and rename) and you can create bookmarks to build a PowerPoint-like presentation that steps through bookmarks in order, thereby telling a story with your report. There may be other uses, too, based on how you think bookmarks could best be used.
+
+> [!TIP]
+> For information about using Personal Bookmarks in the Power BI service, take a look at the [blog announcement](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/) of the Personal Bookmarks feature. 
 
 ### Enable the bookmarks preview (versions prior to March 2018)
 Beginning with the March 2018 version of Power BI Desktop, bookmarks are generally available. 

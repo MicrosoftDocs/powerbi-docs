@@ -4,18 +4,18 @@ description: documentation for searching and sorting content in Power BI workspa
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
+ms.custom: 
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/21/2019
 ms.author: mihart
 
 LocalizationGroup: Get started
 ---
 # Navigation: searching, finding, and sorting content in Power BI service
-There are many ways to navigate your content in Power BI service. The content is organized within workspaces by type: dashboards, reports, workbooks, and datasets.  And the content is also organized by usage: favorites, recent, apps, shared with me, and featured. For one stop navigation, the Home page organizes content all on one page. These different pathways into your content allow you to quickly find what you need in Power BI service.  
+There are many ways to navigate your content in Power BI service. The content is organized within your workspace by type: dashboards, reports, workbooks, and datasets.  And the content is also organized by usage: favorites, recent, apps, shared with me, and featured. For one stop navigation, the Home page organizes content all on one page. These different pathways into your content allow you to quickly find what you need in Power BI service.  
 
 ## Navigation within workspaces
 

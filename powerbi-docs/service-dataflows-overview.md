@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 02/22/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -65,7 +65,7 @@ Azure Data Lake Storage Gen2 is included with every paid Power BI subscription (
 
 Power BI can be configured to store dataflow data in your organization’s Azure Data Lake Storage Gen2 account. When Power BI is connected to your Azure subscription, data developers and data scientists can leverage powerful Azure products such as Azure Machine Learning, Azure Databricks, Azure Data Factory, and more.
 
-Power BI can also connect to folders with schematized data in the Common Data Model format, which are stored your organization’s Azure Data Lake Storage account. These folders can be created by services such as Azure data services. By connecting to these folders, analysts can work seamlessly with this data in Power BI. 
+Power BI can also connect to folders with schematized data in the Common Data Model format, which are stored in your organization’s Azure Data Lake Storage account. These folders can be created by services such as Azure data services. By connecting to these folders, analysts can work seamlessly with this data in Power BI. 
 
 For more information about Azure Data Lake Storage Gen2 and dataflows integration, including how to create dataflows that reside in your organization's Azure Data Lake, see [dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md).
 
@@ -91,7 +91,7 @@ The following table describes dataflow features and their capacities when using 
 |Dataflow linked entities| |		+|
 |Standardized Schema / Built-In Support for the Common Data Model| 	+|	+|
 
-For more information about how to enable dataflows workloads on premium capacity, see the [configure workloads](service-admin-premium-manage.md#configure-workloads) article for Power BI premium. Dataflow workloads are not currently available in multi-geo capacities.
+For more information about how to enable dataflows workloads on premium capacity, see the [Configure workloads in a Premium capacity](service-admin-premium-workloads.md) article for Power BI premium. Dataflow workloads are not currently available in multi-geo capacities.
 
 ## Summary of self-service data prep for big data in Power BI
 As mentioned previously in this article, there are multiple scenarios and examples where **dataflows** can enable you to get better control – and faster insights – from your business data. Using a standard data model (schema) defined by the Common Data Model, dataflows can import your valuable business data, and have the data ready for modeling and creation of BI insights in a very short period... in what used to take months, or longer, to create. 
