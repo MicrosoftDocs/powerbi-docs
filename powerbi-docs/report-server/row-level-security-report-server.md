@@ -43,7 +43,7 @@ After you save your report in Power BI Report Server, you manage security and ad
 1. In Power BI Desktop, save the report to Power BI Report Server. You need to use the version of Power BI Desktop optimized for Power BI Report Server.
 2. In Power BI Report Service, select the ellipsis (**…**) next to the report. 
 
-3. Select **Manage** > **Row-level security**. 
+3. Select **Manage** > **Row-level security**. 
 
      ![Manage row-level security](media/row-level-security-report-server/power-bi-report-server-rls-dialog.png)
 
