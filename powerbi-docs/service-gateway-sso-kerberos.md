@@ -55,10 +55,10 @@ In a standard installation, the gateway runs as a machine-local service account 
 
 ![Screenshot of service account](media/service-gateway-sso-kerberos/service-account.png)
 
-To enable Kerberos constrained delegation, the gateway must run as a domain account, unless your Azure AD is already synchronized with your local Active Directory (using Azure AD DirSync/Connect). To switch to a domain account, see [Switch the gateway to a domain account](#switching-the-gateway-to-a-domain-account) later in this article.
+To enable Kerberos constrained delegation, the gateway must run as a domain account, unless your Azure Active Directory (Azure AD) instance is already synchronized with your local Active Directory instance (using Azure AD DirSync/Connect). To switch to a domain account, see [Switch the gateway to a domain account](#switching-the-gateway-to-a-domain-account) later in this article.
 
 > [!NOTE]
-> If Azure Active Directory (Azure AD) Connect is configured, and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. You can use the local service SID (instead of requiring a domain account) for the gateway service. The Kerberos constrained delegation configuration steps outlined in this article are the same as that configuration. They are simply applied to the gateway's computer object in Azure AD, instead of the domain account.
+> If Azure AD Connect is configured, and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. You can use the local service SID (instead of requiring a domain account) for the gateway service. The Kerberos constrained delegation configuration steps outlined in this article are the same as that configuration. They are simply applied to the gateway's computer object in Azure AD, instead of the domain account.
 
 ### Prerequisite 3: Have domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
 
@@ -72,11 +72,11 @@ As a domain administrator, configure an SPN for the gateway service domain accou
 
 First, determine whether an SPN was already created for the domain account used as the gateway service account:
 
-1. As a domain administrator, launch **Active Directory Users and Computers**.
+1. As a domain administrator, open **Active Directory Users and Computers**.
 
 2. Right-click on the domain, select **Find**, and enter the account name of the gateway service account.
 
-3. In the search result, right-click on the gateway service account, and select **Properties**.
+3. In the search result, right-click the gateway service account, and select **Properties**.
 
 4. If the **Delegation** tab is visible on the **Properties** dialog box, then an SPN was already created. You can jump ahead to configuring delegation settings.
 
@@ -92,7 +92,7 @@ First, determine whether an SPN was already created for the domain account used 
 
 The second configuration requirement is the delegation settings on the gateway service account. There are multiple tools you can use to perform these steps. Here, we'll use Active Directory Users and Computers, which is a Microsoft Management Console (MMC) snap-in to administer and publish information in the directory. It's available on domain controllers by default. You can also enable it through Windows Feature configuration on other machines.
 
-We need to configure Kerberos constrained delegation with protocol transiting. With constrained delegation, you must be explicit about which services you want to delegate to. For example, only your SQL Server or your SAP HANA server accepts delegation calls from the gateway service account.
+We need to configure Kerberos constrained delegation with protocol transiting. With constrained delegation, you must be explicit about which services you want to delegate to. For example, only SQL Server or your SAP HANA server accepts delegation calls from the gateway service account.
 
 This section assumes you have already configured SPNs for your underlying data sources (such as SQL Server, SAP HANA, Teradata, and Spark). To learn how to configure those data source server SPNs, refer to technical documentation for the respective database server. You can also see the [What SPN does your app require?](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/) blog post.
 
@@ -105,9 +105,9 @@ In the following steps, we assume an on-premises environment with two machines: 
 
 Here's how to configure the delegation settings:
 
-1. With domain administrator rights, launch **Active Directory Users and Computers**.
+1. With domain administrator rights, open **Active Directory Users and Computers**.
 
-2. Right-click on the gateway service account (**PBIEgwTest\GatewaySvc**), and select **Properties**.
+2. Right-click the gateway service account (**PBIEgwTest\GatewaySvc**), and select **Properties**.
 
 3. Select the **Delegation** tab.
 
@@ -169,7 +169,7 @@ This configuration works in most cases. However, with Kerberos there can be diff
 
 If necessary, you can switch the gateway from a local service account to run as a domain account, by using the **On-premises data gateway** user interface. Here's how:
 
-1. Launch the **On-premises data gateway** configuration tool.
+1. Open the **On-premises data gateway** configuration tool.
 
    ![Screenshot of option to launch gateway desktop app](media/service-gateway-sso-kerberos/gateway-desktop-app.png)
 
@@ -255,7 +255,7 @@ Map an Active Directory user to an SAP BW Application Server user, and test the 
 
 1. Sign in to your SAP BW server by using SAP Logon. Run transaction SU01.
 
-1. For **User**, enter the SAP BW user you want to enable SSO connections for (in the previous screenshot, we're setting permissions for BIUSER). Select the **Edit** icon (the image of a pen) near the top-left of the SAP Logon window.
+1. For **User**, enter the SAP BW user you want to enable SSO connections for (in the previous screenshot, we're setting permissions for BIUSER). Select the **Edit** icon (the image of a pen) near the top left of the SAP Logon window.
 
     ![Screenshot of SAP BW User maintenance screen](media/service-gateway-sso-kerberos/user-maintenance.png)
 
@@ -263,7 +263,7 @@ Map an Active Directory user to an SAP BW Application Server user, and test the 
 
     ![Screenshot of SAP BW Maintain users screen](media/service-gateway-sso-kerberos/maintain-users.png)
 
-1. Select the **Save** icon (the image of a floppy disk) near the top-left of the screen.
+1. Select the **Save** icon (the image of a floppy disk) near the top left of the screen.
 
 ### Test sign-in by using SSO
 
@@ -333,7 +333,7 @@ If you don't have Azure AD Connect configured, follow these steps for every Powe
 
     ![Screenshot of Task Manager Services tab](media/service-gateway-sso-kerberos/restart-gateway.png)
 
-1. Set the `msDS-cloudExtensionAttribute1` property of the Active Directory user. This is the user you mapped to a SAP BW user. Set the property to the Power BI service user for whom you want to enable Kerberos SSO. One way to set the `msDS-cloudExtensionAttribute1` property is by using the Active Directory Users and Computers MMC snap-in (you can also use other methods).
+1. Set the `msDS-cloudExtensionAttribute1` property of the Active Directory user. This is the user you mapped to a SAP BW user. Set the property to the Power BI service user for whom you want to enable Kerberos SSO. One way to set the `msDS-cloudExtensionAttribute1` property is by using the Active Directory Users and Computers MMC snap-in. (You can also use other methods.)
 
     1. Sign in to a Domain Controller machine as an administrator user.
 
