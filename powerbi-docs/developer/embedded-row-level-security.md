@@ -84,7 +84,7 @@ The API accepts a list of identities with indication of the relevant datasets. F
 
 You can create the embed token by using the **GenerateTokenInGroup** method on **PowerBIClient.Reports**.
 
-For example, you could change the [PowerBIEmbedded_AppOwnsData](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) sample. *Home\HomeController.cs line 76 and 77* could be updated from:
+For example, you could change the [PowerBIEmbedded_AppOwnsData](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) sample. *Services\EmbedService.cs line 76 and 77* could be updated from:
 
 ```csharp
 // Generate Embed Token.
