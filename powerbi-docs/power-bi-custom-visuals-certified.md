@@ -163,6 +163,10 @@ To submit a custom visual for certification:
 | [Waffle Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104381049) | [Video](https://youtu.be/1vRqYUsm3Vk) |
 | [Word Cloud](https://appsource.microsoft.com/product/power-bi-visuals/WA104380752) | [Video](https://youtu.be/AblTenl9fqo) |
 
+## FAQ
+
+For more information about visuals, see [Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.md#certified-custom-visuals).
+
 ## Next steps
 
 * [Developing a Power BI custom visual](developer/custom-visual-develop-tutorial.md)
