@@ -62,7 +62,7 @@ In order to embed your report into SharePoint Online, you first need to get the 
 
     ![SP new report](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)
 
-4. Past the report URL into the property pane. This report URL is the URL you copied from the steps above. The report loads automatically.
+4. Paste the report URL into the property pane. This report URL is the URL you copied from the steps above. The report loads automatically.
 
     ![SP new web part properties](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
