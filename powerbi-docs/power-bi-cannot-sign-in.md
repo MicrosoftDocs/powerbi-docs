@@ -12,15 +12,15 @@ ms.custom: ''
 ms.date: 02/27/2018
 ---
 
-# Troubleshooting unable to sign into Power BI
+# Troubleshoot: Unable to sign into Power BI
 
 This article describes how to generate [support content](https://powerbi.microsoft.com/support/) that details what path you can follow to resolve your sign in issues.
 
-In most cases, when you can't sign in to Power BI, the root cause is because of an issue with either your [Office 365 account](https://docs.microsoft.com/office365/) or your   [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
+In most cases, when you can't sign in to Power BI, the root cause is because of an issue with either your [Office 365 account](https://docs.microsoft.com/office365/) or your [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
 
 The first step you need to take is to engage your internal support team for assistance. However, you may also choose to engage Microsoft support on your own.
 
-If you can't sign in to Power BI and need to engage Power BI support, then continue with the information below to see what best fits your needs.
+If you can't sign in to Power BI and need to engage Power BI support, then continue with the information below to see what appraoch best fits your needs.
 
 ## Power BI sign in fails with an error
 
