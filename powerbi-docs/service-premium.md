@@ -8,13 +8,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/15/2019
+ms.date: 02/28/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
 ---
 
 # What is Microsoft Power BI Premium?
+
+> [!NOTE]
+> This article is currently being updated to describe new features, provide more details, and improve readability. For the latest information, see [Deploying and Managing Power BI Premium Capacities](whitepaper-powerbi-premium-deployment.md).
 
 Microsoft Power BI Premium provides resources dedicated to running the Power BI service for your organization. It gives you more dependable performance and enables larger data volumes. Premium also enables widespread distribution of content without requiring you to purchase per-user Pro licenses for content consumers.  
 
@@ -110,9 +113,10 @@ Power BI Premium also includes the capability to run Power BI Report Server on-p
 
 ## Next steps
 
-[Power BI Premium FAQ](service-premium-faq.md)
-[How to purchase Power BI Premium](service-admin-premium-purchase.md)
-[Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
-[Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
+[Deploying and Managing Power BI Premium Capacities](whitepaper-powerbi-premium-deployment.md)   
+[How to purchase Power BI Premium](service-admin-premium-purchase.md)   
+[Power BI Premium FAQ](service-premium-faq.md)   
+
+
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
