@@ -19,7 +19,7 @@ LocalizationGroup: Premium
 > [!NOTE]
 > This article is currently being updated to describe new features, provide more details, and improve readability. For the latest information, see [Deploying and Managing Power BI Premium Capacities](whitepaper-powerbi-premium-deployment.md).
 
-Microsoft Power BI Premium provides resources dedicated to running the Power BI service for your organization. It gives you more dependable performance and enables larger data volumes. Premium also enables widespread distribution of content without requiring you to purchase per-user Pro licenses for content consumers.  
+Power BI Premium provides resources dedicated to running the Power BI service for your organization. It gives you more dependable performance and enables larger data volumes. Premium also enables widespread distribution of content without requiring you to purchase per-user Pro licenses for content consumers.  
 
 ## Premium capacity and shared capacity
 
@@ -78,9 +78,7 @@ Power BI Premium is available in node configurations with different v-core capac
 
 ## Workloads in Premium capacity
 
-Think of a workload in Power BI as one of the many services you can expose to users. By default, capacities for **Power BI Premium** and **Power BI Embedded** support only the workload associated with running Power BI queries in the cloud.
-
-We now offer preview support for two additional workloads: **Paginated reports** and **Dataflows**. You enable these workloads in the Power BI admin portal or through the Power BI REST API. You also set the maximum memory each workload can consume, so that you can control how the different workloads affect each other.
+By default, capacities for **Power BI Premium** and **Power BI Embedded** support only the workload associated with running Power BI queries in the cloud. Premium also supports additional workloads for **AI**, **Dataflows**, and **Paginated reports**. You enable these workloads in the Power BI admin portal or through the Power BI REST API. You also set the maximum memory each workload can consume, so that you can control how the different workloads affect each other. To learn more, see [Configure workloads](service-admin-premium-workloads.md).
 
 ### Default memory settings
 
