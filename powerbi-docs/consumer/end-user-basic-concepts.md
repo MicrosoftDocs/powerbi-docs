@@ -87,7 +87,7 @@ When a designer shares an app with you, you can see which datasets are included 
 
 Additionally, datasets from other workspaces can be used to create content (reports, dashboards) in your workspace. These datasets are shown using the referenced dataset icon: 
 
-![database with link icon](media/end-user-basic-concepts/power-bi-dataset-reference-icon.png).
+![database with link icon](media/end-user-basic-concepts/power-bi-dataset-reference-icon.png)
 
 On to the next building block -- visualizations.
 __________________________________________________________
