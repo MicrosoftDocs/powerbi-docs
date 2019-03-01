@@ -11,25 +11,26 @@ ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/27/2018
 ---
-# Troubleshoot: Can't sign in to Power BI
 
-This article describes how to generate [support content](https://powerbi.microsoft.com/support/) that details what path you can follow to resolve your issue.
+# Troubleshooting unable to sign into Power BI
+
+This article describes how to generate [support content](https://powerbi.microsoft.com/support/) that details what path you can follow to resolve your sign in issues.
 
 In most cases, when you can't sign in to Power BI, the root cause is because of an issue with either your [Office 365 account](https://docs.microsoft.com/office365/) or your   [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
 
 The first step you need to take is to engage your internal support team for assistance. However, you may also choose to engage Microsoft support on your own.
 
-If you can't sign in to Power BI and need to engage Power BI support, then go through the information below to see what best fits your situation.
+If you can't sign in to Power BI and need to engage Power BI support, then continue with the information below to see what best fits your needs.
 
-## Power BI login fails with an error
+## Power BI sign in fails with an error
 
-Power BI login failure issues could be because an internal Power BI issue, or an Office 365 (O365) issue.
+Power BI sign in failure issues could be because an internal Power BI issue, or an Office 365 (O365) issue.
 
-If we determine that the login failure is because of Power BI, then we can document the issue. If we determine the login failure is because of O365, then you need to contact your O365 admin and possibly the [O365 support team](https://support.office.com/home/contact?contactUsExperienceEntryPointAssetId=S.HP.Main).
+If we determine that the sign in failure is because of Power BI, then we can document the issue. If we determine the sign in failure is because of O365, then you need to contact your O365 admin and possibly the [O365 support team](https://support.office.com/home/contact?contactUsExperienceEntryPointAssetId=S.HP.Main).
 
-## Searching for support content that leads to no relevant results for what to do with your login issue
+## Searching for support content that leads to no relevant results for what to do with your sign in issue
 
-You can take advantage of different options to determine what is causing your Power BI login failures.
+You can take advantage of different options to determine what is causing your Power BI sign in failures.
 
 Here are a few sites you can visit for additional Power BI support:
 
@@ -43,7 +44,7 @@ You try to engage the Microsoft Power BI support team from the [Power BI support
 
 However, a [Power BI Pro license](service-admin-purchasing-power-bi-pro.md) is required for you to create a support ticket to contact the Microsoft Power BI support team.
 
-If you're unable to create a support ticket, it's possibly because the Microsoft support ticket system doesn't recognize your login as a Power BI Pro user. This issue happens because the support system sees you as either a non-pro user or not as a tenant admin.
+If you're unable to create a support ticket, it's possibly because the Microsoft support ticket system doesn't recognize your sign in as a Power BI Pro user. This issue happens because the support system sees you as either a non-pro user or not as a tenant admin.
 
 If you don't have a Power BI Pro license, then you can [purchase a Power BI Pro license](https://powerbi.microsoft.com/pricing/) to receive professional Microsoft Power BI support. However, if you choose not to purchase a Power BI Pro license, then you can visit the [Power BI community forum](https://community.powerbi.com/) for free support.
 
@@ -58,11 +59,11 @@ Professional Support: +1(800)419-5666
 For customers in Europe, the Middle East, and Asia (EMEA):
 Professional Support: +44-844-800-2400
 
-## Visit the Power BI community forum for Free support
+## Visit the Power BI community forum for support
 
 If you're unable to create a forum post on the community page, it's because the [Power BI community forum](https://community.powerbi.com/) also requires a Power BI license (pro or non-pro).
 
-## Microsoft Premier support options
+## Microsoft Premier support
 
 Another option to contact Microsoft support for help is by purchasing [Microsoft Premier support](https://support.microsoft.com/premier).
 
