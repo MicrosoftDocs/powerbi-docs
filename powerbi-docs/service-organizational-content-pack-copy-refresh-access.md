@@ -33,6 +33,10 @@ Create your own copy of the content pack, not visible to others.
 
 Now you have a copy that you can change. Nobody else will see changes you make.
 
+> [!NOTE]
+> Previously, each time you installed a content pack or created a copy one, a new dataset would appear in the workspace content list. A recent update simplified the experience to show just one item using the new referenced dataset icon: ![database with link icon](media/service-content-pack-overview/power-bi-dataset-reference-icon.png).
+> 
+
 ## Help!  I can no longer access the content pack
 This can happen for several reasons:
 
