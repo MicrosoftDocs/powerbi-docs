@@ -55,7 +55,7 @@ In a standard installation, the gateway runs as a machine-local service account 
 
 ![Screenshot of service account](media/service-gateway-sso-kerberos/service-account.png)
 
-To enable Kerberos constrained delegation, the gateway must run as a domain account. If you need to switch the account, see [Switch the gateway to a domain account](#switching-the-gateway-to-a-domain-account) later in this article.
+To enable Kerberos constrained delegation, the gateway must run as a domain account, unless your Azure AD is already synchronized with your local Active Directory (using Azure AD DirSync/Connect). To switch to a domain account, see [Switch the gateway to a domain account](#switching-the-gateway-to-a-domain-account) later in this article.
 
 > [!NOTE]
 > If Azure Active Directory (Azure AD) Connect is configured, and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. You can use the local service SID (instead of requiring a domain account) for the gateway service. The Kerberos constrained delegation configuration steps outlined in this article are the same as that configuration. They are simply applied to the gateway's computer object in Azure AD, instead of the domain account.
@@ -194,9 +194,9 @@ This guide attempts to be as comprehensive as possible. If you've already comple
 
 `gsskrb5` must be in use by both the client and server to complete an SSO connection through the gateway. The Common Crypto Library (sapcrypto) isn't currently supported.
 
-1. Download `gsskrb5/gx64krb5` from [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-user required). Ensure you have at least version 1.0.11.x of gsskrb5.dll and gx64krb5.dll.
+1. Download `gsskrb5` - `gx64krb5` from [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-user required). Ensure you have at least version 1.0.11.x of gsskrb5.dll and gx64krb5.dll.
 
-1. Put the library in a location on your gateway machine that is accessible by your gateway instance (and also by the SAP GUI if you want to test the SSO connection by using SAP GUI Logon).
+1. Put the library in a location on your gateway machine that is accessible by your gateway instance (and also by the SAP GUI if you want to test the SSO connection by using SAP Logon).
 
 1. Put another copy on your SAP BW server machine in a location accessible by the SAP BW server.
 
@@ -226,13 +226,13 @@ In addition to the gateway configuration you've already done, there are a few ad
 
     1. Switch to the **Log on** tab, and change the user to your SAP BW service user. Enter the user's password, and select **OK**.
 
-1. Sign in to your server in SAP GUI Logon, and set the following profile parameters by using the RZ10 transaction:
+1. Sign in to your server in SAP Logon, and set the following profile parameters by using the RZ10 transaction:
 
     1. Set the snc/identity/as profile parameter to p:\<the SAP BW service user you've created\>, such as p:BWServiceUser@MYDOMAIN.COM. Note the p: that precedes the service user's UPN. It's not p:CN= like when Common Crypto Lib is used as the SNC library.
 
     1. Set the snc/gssapi\_lib profile parameter to \<path to gsskrb5.dll/gx64krb5.dll on the server machine (the library you'll use depends on OS bitness)\>. Remember to put the library in a location the SAP BW Application Server can access.
 
-    1. Also set the following additional profile parameters, changing the values as required to fit your needs. Note that the last five options enable clients to connect to the SAP BW server by using SAP GUI Logon, without having SNC configured.
+    1. Also set the following additional profile parameters, changing the values as required to fit your needs. Note that the last five options enable clients to connect to the SAP BW server by using SAP Logon, without having SNC configured.
 
         | **Setting** | **Value** |
         | --- | --- |
@@ -251,11 +251,11 @@ In addition to the gateway configuration you've already done, there are a few ad
 
 ### Map a SAP BW user to an Active Directory user
 
-Map an Active Directory user to an SAP BW Application Server user, and test the SSO connection in SAP GUI Logon.
+Map an Active Directory user to an SAP BW Application Server user, and test the SSO connection in SAP Logon.
 
-1. Sign in to your SAP BW server by using SAP GUI Logon. Run transaction SU01.
+1. Sign in to your SAP BW server by using SAP Logon. Run transaction SU01.
 
-1. For **User**, enter the SAP BW user you want to enable SSO connections for (in the previous screenshot, we're setting permissions for BIUSER). Select the **Edit** icon (the image of a pen) near the top-left of the SAP GUI Logon window.
+1. For **User**, enter the SAP BW user you want to enable SSO connections for (in the previous screenshot, we're setting permissions for BIUSER). Select the **Edit** icon (the image of a pen) near the top-left of the SAP Logon window.
 
     ![Screenshot of SAP BW User maintenance screen](media/service-gateway-sso-kerberos/user-maintenance.png)
 
@@ -267,9 +267,9 @@ Map an Active Directory user to an SAP BW Application Server user, and test the 
 
 ### Test sign-in by using SSO
 
-Verify that you can sign in to the server. Use the SAP GUI Logon through SSO as the Active Directory user for whom you've just enabled SSO access.
+Verify that you can sign in to the server. Use the SAP Logon through SSO as the Active Directory user for whom you've just enabled SSO access.
 
-1. As the Active Directory user you just enabled SSO access for, sign in to a machine on which SAP GUI Logon is installed. Launch SAP GUI Logon, and create a new connection.
+1. As the Active Directory user you just enabled SSO access for, sign in to a machine on which SAP Logon is installed. Launch SAP Logon, and create a new connection.
 
 1. In the **Create New System Entry** screen, select **User Specified System** > **Next**.
 
@@ -285,7 +285,7 @@ Verify that you can sign in to the server. Use the SAP GUI Logon through SSO as 
 
 ### Troubleshoot installation and connections
 
-If you encounter any problems, follow these steps to troubleshoot the gsskrb5 installation and SSO connections from the SAP GUI Logon.
+If you encounter any problems, follow these steps to troubleshoot the gsskrb5 installation and SSO connections from the SAP Logon.
 
 - Viewing the server logs (…work\dev\_w0 on the server machine) can be helpful in troubleshooting any errors you encounter in completing the gsskrb5 setup steps. This is particularly true if the SAP BW server won't start after the profile parameters have been changed.
 
