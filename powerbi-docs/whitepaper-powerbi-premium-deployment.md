@@ -23,6 +23,9 @@ LocalizationGroup: Premium
 
 **Applies to:** Power BI service, Power BI Premium and Azure Power BI Embedded capacities
 
+> [!NOTE]
+> You can save or print this whitepaper by selecting **Print** from your browser, then selecting **Save as PDF**.
+
 ## Introducing Power BI
 
 Power BI is a business analytics service designed to deliver insights that enable fast, informed decisions. Since its release in 2015 it has quickly become a popular service used to deliver solutions for the smallest of organizations to the largest of enterprises.
