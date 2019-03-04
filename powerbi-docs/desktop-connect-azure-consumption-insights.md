@@ -247,7 +247,7 @@ When you select **Load** the data is loaded into **Power BI Desktop**.
 
 Once the data you selected is loaded, the tables and fields you selected can be seen in the **Fields** pane.
 
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-04.png)
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-05.png)
 
 ## Writing custom queries
 
