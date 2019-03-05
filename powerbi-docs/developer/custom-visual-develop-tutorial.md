@@ -201,6 +201,9 @@ You can [download](https://github.com/Microsoft/PowerBI-visuals-circlecard) the 
     ```
     ![New CircleCard result](media/custom-visual-develop-tutorial/new-circle-card-result.png)
 
+    > [!Note]
+    > You create the new project at the current location of the prompt.
+
 4. Navigate to the project folder.
 
     ```powershell
