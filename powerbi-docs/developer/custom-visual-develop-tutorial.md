@@ -1,10 +1,10 @@
 ---
 title: Developing a Power BI Custom Visual
 description: A tutorial on how to develop a Power BI custom visual
-author: markingmyname
-ms.author: maghan
+author: sranins
+ms.author: rasala
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
