@@ -20,17 +20,17 @@ In most cases, when you can't sign in to Power BI, the root cause is because of 
 
 The first step you need to take is to engage your internal support team for assistance. However, you may also choose to engage Microsoft support on your own.
 
-If you can't sign in to Power BI and need to engage Power BI support, then continue with the information below to see what appraoch best fits your needs.
+If you can't sign in to Power BI and need to engage Power BI support, then continue with the information below to see what approach best fits your needs.
 
 ## Power BI sign in fails with an error
 
-Power BI sign in failure issues could be because an internal Power BI issue, or an Office 365 (O365) issue.
+Power BI sign-in failure issues could be because of an internal Power BI issue, or an Office 365 (O365) issue.
 
 If we determine that the sign in failure is because of Power BI, then we can document the issue. If we determine the sign in failure is because of O365, then you need to contact your O365 admin and possibly the [O365 support team](https://support.office.com/home/contact?contactUsExperienceEntryPointAssetId=S.HP.Main).
 
 ## Searching for support content that leads to no relevant results for what to do with your sign in issue
 
-You can take advantage of different options to determine what is causing your Power BI sign in failures.
+You can take advantage of different options to determine what is causing your Power BI sign-in failures.
 
 Here are a few sites you can visit for additional Power BI support:
 
@@ -48,16 +48,16 @@ If you're unable to create a support ticket, it's possibly because the Microsoft
 
 If you don't have a Power BI Pro license, then you can [purchase a Power BI Pro license](https://powerbi.microsoft.com/pricing/) to receive professional Microsoft Power BI support. However, if you choose not to purchase a Power BI Pro license, then you can visit the [Power BI community forum](https://community.powerbi.com/) for free support.
 
-Now, if you have a Power BI Pro license and you're still unable to create a support ticket either from the Power BI support page or from the Office 365 portal, then you can contact support via phone.
+Now, if you have a Power BI Pro license and you're still unable to create a support ticket, either from the Power BI support page or from the Office 365 portal, then you can contact support via phone.
 
-For customers in the United States (US) and the rest of the Americas:
-Professional Support: +1(800) 936-5800
+For customers in the United States (US) and the rest of the Americas: </br>
++1(800) 936-5800
 
-For customers in India:
-Professional Support: +1(800)419-5666
+For customers in Europe, the Middle East, and Asia (EMEA):</br>
++44-844-800-2400
 
-For customers in Europe, the Middle East, and Asia (EMEA):
-Professional Support: +44-844-800-2400
+For customers in India:</br>
++1(800)419-5666
 
 ## Visit the Power BI community forum for support
 
@@ -67,16 +67,16 @@ If you're unable to create a forum post on the community page, it's because the 
 
 Another option to contact Microsoft support for help is by purchasing [Microsoft Premier support](https://support.microsoft.com/premier).
 
-If you know you have Microsoft Premier support and you still can't create a case via any O365 or Power BI portal from any support page, then you can contact Premier support via phone.
+If you know you have Microsoft Premier support and you still can't create a case from any O365 or Power BI channel, then you can contact Premier support via phone.
 
-For customers in the United States (US) and the rest of the Americas:
-Premier Support: +1(800)936-3100
+For customers in the United States (US) and the rest of the Americas:</br>
++1(800)936-3100
 
-For customers in India:
-Premier Support: +1(800)425-5666 / 080-6000-5666
+For customers in Europe, the Middle East, and Asia (EMEA):</br>
++44-844-800-8338
 
-For customers in Europe, the Middle East, and Asia (EMEA):
-Premier Support: +44-844-800-8338
+For customers in India:</br>
++1(800)425-5666 / 080-6000-5666
 
 ## Next steps
 
