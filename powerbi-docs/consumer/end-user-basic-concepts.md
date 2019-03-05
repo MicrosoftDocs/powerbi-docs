@@ -8,7 +8,7 @@ featuredvideoid: B2vd4MQrz4M
 
 ms.service: powerbi
 ms.custom: seodec18
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
@@ -84,6 +84,10 @@ When a designer shares an app with you, you can see which datasets are included 
 * Visualizations from that one dataset can display on many different dashboards
   
   ![dataset M:1 relationships](media/end-user-basic-concepts/drawing2.png)
+
+Additionally, datasets from other workspaces can be used to create content (reports, dashboards) in your workspace. These datasets are shown using the referenced dataset icon: 
+
+![database with link icon](media/end-user-basic-concepts/power-bi-dataset-reference-icon.png)
 
 On to the next building block -- visualizations.
 __________________________________________________________

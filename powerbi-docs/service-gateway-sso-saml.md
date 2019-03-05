@@ -52,54 +52,7 @@ To use SAML, you first generate a certificate for the SAML identity provider, th
 
     ![Select identity provider](media/service-gateway-sso-saml/select-identity-provider.png)
 
-Next validate the setup with a *SAML assertion*, using the [xmlsec1 tool](http://sgros.blogspot.com/2013/01/signing-xml-document-using-xmlsec1.html).
-
-1. Save the assertion below as assertion-template.xml. Replace \<MyUserId\> with the Power BI user's UPN you entered in step 7.
-
-    ```xml
-    <?xml version="1.0" encoding="UTF-8" ?>
-    <saml2:Assertion ID="Assertion12345789" IssueInstant="2015-07-16T04:47:49.858Z" Version="2.0" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
-      <saml2:Issuer></saml2:Issuer> 
-      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
-        <SignedInfo>
-          <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
-          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-          <Reference URI="">
-            <Transforms>
-              <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
-              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
-            </Transforms>
-            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-            <DigestValue />
-          </Reference>
-        </SignedInfo>
-        <SignatureValue />
-        <KeyInfo>
-          <X509Data />
-        </KeyInfo>
-      </Signature>
-      <saml2:Subject>
-        <saml2:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"><MyUserId></saml2:NameID>
-      </saml2:Subject>
-      <saml2:Conditions NotBefore="2010-01-01T00:00:00Z" NotOnOrAfter="2050-01-01T00:00:00Z"/>
-    </saml2:Assertion>
-    ```
-
-1. Run the following command. saltest.key and samltest.crt are the key and certificate you generated in step 1.
-
-    ```
-    xmlsec1 --sign --privkey-pem samltest.key, samltest.crt --output signed.xml assertion-template.xml
-    ```
-
-1. In SAP HANA Studio, open a SQL console window and run the following command. Replace \<SAMLAssertion\> with the content of xml from the previous step.
-
-    ```SQL
-    CONNECT WITH SAML ASSERTION '<SAMLAssertion>'
-    ```
-
-If the query succeeds, then it means your SAP HANA SAML SSO setup is successful.
-
-Now that you have the certificate and identity successfully configured, you convert the certificate to a pfx format and configure the gateway machine to use the certificate.
+Now that you have the certificate and identity configured, you convert the certificate to a pfx format and configure the gateway machine to use the certificate.
 
 1. Convert the certificate to the pfx format by running the following command.
 

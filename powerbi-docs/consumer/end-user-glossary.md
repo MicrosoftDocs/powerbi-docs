@@ -5,7 +5,8 @@ services: power-bi
 ms.custom: seodec18
 author: mihart
 
-ms.service: powerbi-service
+ms.service: powerbi
+ms.subservice: powerbi-consumer
 ms.topic: resource
 ms.date: 12/06/2018
 ms.author: mihart

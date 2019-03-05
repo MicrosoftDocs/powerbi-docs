@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/15/2019
+ms.date: 02/28/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -16,9 +16,10 @@ LocalizationGroup: Premium
 
 # What is Microsoft Power BI Premium?
 
-Microsoft Power BI Premium provides resources dedicated to running the Power BI service for your organization. It gives you more dependable performance and enables larger data volumes. Premium also enables widespread distribution of content without requiring you to purchase per-user Pro licenses for content consumers. For purchasing information, see [How to purchase Power BI Premium](service-admin-premium-purchase.md).   
+> [!NOTE]
+> This article is currently being updated to describe new features, provide more details, and improve readability. For the latest information, see [Deploying and Managing Power BI Premium Capacities](whitepaper-powerbi-premium-deployment.md).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lNQDkN0GXzU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+Power BI Premium provides resources dedicated to running the Power BI service for your organization. It gives you more dependable performance and enables larger data volumes. Premium also enables widespread distribution of content without requiring you to purchase per-user Pro licenses for content consumers.  
 
 ## Premium capacity and shared capacity
 
@@ -77,9 +78,7 @@ Power BI Premium is available in node configurations with different v-core capac
 
 ## Workloads in Premium capacity
 
-Think of a workload in Power BI as one of the many services you can expose to users. By default, capacities for **Power BI Premium** and **Power BI Embedded** support only the workload associated with running Power BI queries in the cloud.
-
-We now offer preview support for two additional workloads: **Paginated reports** and **Dataflows**. You enable these workloads in the Power BI admin portal or through the Power BI REST API. You also set the maximum memory each workload can consume, so that you can control how the different workloads affect each other. For more information, see [Configure workloads](service-admin-premium-manage.md#configure-workloads).
+By default, capacities for **Power BI Premium** and **Power BI Embedded** support only the workload associated with running Power BI queries in the cloud. Premium also supports additional workloads for **AI**, **Dataflows**, and **Paginated reports**. You enable these workloads in the Power BI admin portal or through the Power BI REST API. You also set the maximum memory each workload can consume, so that you can control how the different workloads affect each other. To learn more, see [Configure workloads](service-admin-premium-workloads.md).
 
 ### Default memory settings
 
@@ -112,10 +111,10 @@ Power BI Premium also includes the capability to run Power BI Report Server on-p
 
 ## Next steps
 
-[Power BI Premium FAQ](service-premium-faq.md)
-[How to purchase Power BI Premium](service-admin-premium-purchase.md)
-[Managing Power BI Premium](service-admin-premium-manage.md)
-[Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
-[Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
+[Deploying and Managing Power BI Premium Capacities](whitepaper-powerbi-premium-deployment.md)   
+[How to purchase Power BI Premium](service-admin-premium-purchase.md)   
+[Power BI Premium FAQ](service-premium-faq.md)   
+
+
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -479,8 +479,6 @@
         href: service-azure-sql-data-warehouse-with-direct-connect.md
       - name: "Azure SQL Database with DirectQuery"
         href: service-azure-sql-database-with-direct-connect.md
-      - name: "Spark on HDInsight with DirectQuery"
-        href: spark-on-hdinsight-with-direct-connect.md
       - name: "SQL Server Analysis Services live data in Power BI"
         href: sql-server-analysis-services-tabular-data.md
     - name: Refresh data
@@ -848,9 +846,11 @@
     - name: Whitepapers
       items: 
       - name: "Whitepapers overview"
-        href: whitepapers.md        
+        href: whitepapers.md
       - name: "Power BI security whitepaper"
-        href: whitepaper-powerbi-security.md                
+        href: whitepaper-powerbi-security.md
+      - name: "Power BI premium deployment"
+        href: whitepaper-powerbi-premium-deployment.md
 - name: Power BI for developers
   items:
   - name: "What can developers do with Power BI"
@@ -1043,6 +1043,8 @@
         href: developer/walkthrough-push-data-get-datasets.md
       - name: "Add rows to a table"
         href: developer/walkthrough-push-data-add-rows.md
+      - name: "Configure credentials"
+        href: developer/configure-credentials.md
       - name: "Encrypt credentials"
         href: developer/encrypt-credentials.md
     - name: Reference
@@ -1235,18 +1237,18 @@
     items:
     - name: "Power BI Premium"
       items:
-      - name: "Power BI Premium - what is it?"
+      - name: "What is Power BI Premium?"
         href: service-premium.md
       - name: "Premium capacity memory use, optimization"
         href: service-premium-understand-how-it-works.md
       - name: "Purchase Power BI Premium"
         href: service-admin-premium-purchase.md
-      - name: "Manage Power BI Premium"
-        href: service-admin-premium-manage.md
       - name: "Monitor capacities with the app"
         href: service-admin-premium-monitor-capacity.md
       - name: "Monitor capacities in the Admin portal"
         href: service-admin-premium-monitor-portal.md
+      - name: "Configure workloads"
+        href: service-admin-premium-workloads.md
       - name: "Restart a Premium capacity"
         href: service-admin-premium-restart.md
       - name: "Support for large datasets"

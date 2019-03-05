@@ -1,5 +1,5 @@
 ---
-title: What are Power BI gateways?
+title: What are On-Premises Data Gateways?
 description: Learn the basics about data gateways for Power BI.
 author: mgblythe
 manager: kfile
@@ -14,7 +14,7 @@ ms.author: mblythe
 LocalizationGroup: Gateways
 ---
 
-# What are Power BI gateways?
+# What are On-Premises Data Gateways?
 
 A Power BI gateway is software that you install within an on-premises network; it facilitates access to data in that network. It's like a gatekeeper that listens for connection requests, and grants them only when a users' requests meet certain criteria. This lets organizations keep databases and other data sources on their on-premises networks, yet securely use that on-premises data in Power BI reports and dashboards.
 
