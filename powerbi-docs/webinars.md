@@ -17,10 +17,7 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-**Test Webinar**
-<br>by Tatevik 
-<br>[Register for this webinar](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)
-<br>This webinar is about PBI
+No Upcoming Webinars.
 
 >[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
