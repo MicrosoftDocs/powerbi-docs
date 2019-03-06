@@ -13,7 +13,7 @@ DAX has a rich set of **table** functions, including the following:
 * DISTINCT
 * RELATEDTABLE
 
-These functions return a full table rather, rather than a value. Typically you'll use the results of a **table** function in further analysis as part of a greater expression, rather than using that returned table a final value. It's important to note that When you use a table function, the results inherit the relationships of their columns.
+These functions return a full table rather than a value. Typically you'll use the results of a **table** function in further analysis as part of a greater expression, rather than using that returned table a final value. It's important to note that When you use a table function, the results inherit the relationships of their columns.
 
 You can mix table functions in your expression, as long as each function uses a table and returns a table. For example, consider the following DAX expression:
 
