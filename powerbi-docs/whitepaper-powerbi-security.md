@@ -338,7 +338,7 @@ If Ralph were to access the shared dashboard or report, the same sequence occurs
 
 With Power BI and ExpressRoute, you can create a private network connection from your organization to Power BI (or using an ISP's colocation facility), bypassing the Internet to better secure your sensitive Power BI data and connections.
 
-ExpressRoute is an Azure service that lets you create private connections between Azure datacenters (where Power BI resides) and your on-premises infrastructure, or create private connections between Azure datacenters and your colocation environment. For more information, please refer to the [Power BI and ExpressRoute](powerbi-admin-power-bi-expressroute.md) article.
+ExpressRoute is an Azure service that lets you create private connections between Azure datacenters (where Power BI resides) and your on-premises infrastructure, or create private connections between Azure datacenters and your colocation environment. For more information, please refer to the [Power BI and ExpressRoute](service-admin-power-bi-expressroute.md) article.
 
 ## Power BI Mobile
 
@@ -368,7 +368,7 @@ The Power BI **application on the device** stores data on the device that facili
 
 The data cache from Power BI Mobile remains on the device for two weeks, or until: the app is removed; the user signs out of Power BI Mobile; or the user fails to sign in (such as a token expiration event, or password change). The data cache includes dashboards and reports previously accessed from the Power BI Mobile app.
 
-Power BI Mobile applications do not look at folders on the device. You can [learn more about offline data in Power BI Mobile apps](powerbi-mobile-offline-android.md).
+Power BI Mobile applications do not look at folders on the device. 
 
 All three platforms for which Power BI Mobile is available support Microsoft Intune, a software service that provides mobile device and application management. With Intune enabled and configured, data on the mobile device is encrypted, and the Power BI application itself cannot be installed on an SD card. You can [learn more about Microsoft Intune](http://www.microsoft.com/cloud-platform/microsoft-intune).
 
@@ -380,7 +380,7 @@ The following questions are common security questions and answers for Power BI. 
 
 * **Power BI credentials and domain credentials:** Users log in to Power BI using an email address; when a user attempts to connect to a data resource, Power BI passes the Power BI login email address as credentials. For domain-connected resources (either on-premises or cloud-based), the login email is matched with a _User Principal Name_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) by the directory service to determine whether sufficient credentials exist to allow access. For organizations that use work-based email addresses to log in to Power BI (the same email they use to login to work resources, such as _david@contoso.com_), the mapping can occur seamlessly; for organizations that did not use work-based email addresses (such as _david@contoso.onmicrosoft.com_), directory mapping must be established in order to allow access to on-premises resources with Power BI login credentials.
 
-* **SQL Server Analysis Services and Power BI:** For organizations that use on-premises SQL Server Analysis Services, Power BI offers the Power BI on-premises data gateway (which is a **Gateway**, as referenced in previous sections).  The Power BI on-premises data gateway can enforce role-level security on data sources (RLS). For more information on RLS, see **User Authentication to Data Sources** earlier in this document. You can also read an in-depth article about [Power BI Gateway](powerbi-gateway-enterprise.md).
+* **SQL Server Analysis Services and Power BI:** For organizations that use on-premises SQL Server Analysis Services, Power BI offers the Power BI on-premises data gateway (which is a **Gateway**, as referenced in previous sections).  The Power BI on-premises data gateway can enforce role-level security on data sources (RLS). For more information on RLS, see **User Authentication to Data Sources** earlier in this document. You can also read an in-depth article about [Power BI Gateway](service-gateway-manage.md).
 
   In addition, organizations can use Kerberos for **single sign-on** (SSO) and seamlessly connect from Power BI to on-premises data sources such as SQL Server, SAP HANA, and Teradata. For more information, and the specific configuration requirements, see [**Use Kerberos for SSO from Power BI to on-premises data sources**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
@@ -420,7 +420,7 @@ The following questions are common security questions and answers for Power BI. 
 
 **Which ports are used by on-premises data gateway and personal gateway? Are there any domain names that need to be allowed for connectivity purposes?**
 
-* The detailed answer to this question is available at the following link: [https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise](powerbi-gateway-enterprise.md)
+* The detailed answer to this question is available at the following link: [Power BI Gateway](service-gateway-manage.md)
 
 **When working with the on-premises data gateway, how are recovery keys used and where are they stored? What about secure credential management?**
 
@@ -439,7 +439,7 @@ The following questions are common security questions and answers for Power BI. 
 
   - **AMQP 1.0 – TCP + TLS**: This protocol requires ports 443, 5671-5672, and 9350-9354 to be open for outgoing communication. This protocol is preferred, since it has lower communication overhead.
 
-  - **HTTPS – WebSockets over HTTPS + TLS**: This protocol uses port 443 only. The WebSocket is initiated by a single HTTP CONNECT message. Once the channel is established, the communication is essentially TCP+TLS. You can force the gateway to use this protocol by modifying a setting described in the [On-Premises Gateway article](powerbi-gateway-onprem.md).
+  - **HTTPS – WebSockets over HTTPS + TLS**: This protocol uses port 443 only. The WebSocket is initiated by a single HTTP CONNECT message. Once the channel is established, the communication is essentially TCP+TLS. You can force the gateway to use this protocol by modifying a setting described in the [On-Premises Gateway article](service-gateway-manage.md).
 
 **What is the role of Azure CDN in Power BI?**
 
@@ -453,7 +453,7 @@ The following questions are common security questions and answers for Power BI. 
 
 **Are there other Power BI visuals that send information outside the customer network?**
 
-* Yes. Bing Maps and ESRI visuals transmit data out of the Power BI service for visuals that use those services. For more information, and detailed descriptions of out-of-Power-BI tenant traffic, see [**Power BI and ExpressRoute**](powerbi-admin-power-bi-expressroute.md).
+* Yes. Bing Maps and ESRI visuals transmit data out of the Power BI service for visuals that use those services. For more information, and detailed descriptions of out-of-Power-BI tenant traffic, see [**Power BI and ExpressRoute**](service-admin-power-bi-expressroute.md).
 
 **What about data sovereignty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country borders?**
 
@@ -481,11 +481,11 @@ For more information on Power BI, see the following resources.
 
 - [Groups in Power BI](https://support.powerbi.com/knowledgebase/articles/654247)
 - [Getting Started with Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
-- [Power BI Gateway](powerbi-gateway-enterprise.md)
+- [Power BI Gateway](service-gateway-manage.md)
 - [Power BI REST API - Overview](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Power BI API reference](https://msdn.microsoft.com/library/mt147898.aspx)
-- [On-premises data gateway](powerbi-gateway-onprem.md)
-- [Power BI and ExpressRoute](powerbi-admin-power-bi-expressroute.md)
+- [On-premises data gateway](service-gateway-manage.md)
+- [Power BI and ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Power BI Sovereign Clouds](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Use Kerberos for SSO from Power BI to on-premises data sources](service-gateway-sso-overview.md)
