@@ -94,15 +94,11 @@ Apps also have a unique feature that allows app authors to install the applicati
 
 As Contoso continues to work with its subcontractors or suppliers, the external Engineers need to work closely with Contoso's analysts. Power BI provides several collaboration features that help users communicate about content they can consume. Dashboard commenting (and soon Report commenting) allows users to discuss data points they see and communicate with report authors to ask questions.
 
-**Coming Soon**
-
-External guest users can already participate in comments by leaving comments and reading the replies. However, unlike internal user, guest users cannot be @mentioned and do not receive notifications that they've received a comment. Guest users cannot use the subscriptions feature within Power BI at the time of writing. In a future release, these restrictions will be lifted. When this occurs, the Guest user receives an email when a comment @mentioned them or a subscription was delivered to their email that contains a link to the content in Power BI.
+Currently, external guest users can participate in comments by leaving comments and reading the replies. However, unlike internal users, guest users cannot be @mentioned and do not receive notifications that they've received a comment. Guest users cannot use the subscriptions feature within Power BI at the time of writing. In an upcoming release, those restrictions will be lifted and the Guest user will receive an email when a comment @mentions them, or when a subscription is delivered to their email that contains a link to the content in Power BI.
 
 ### Access content in the Power BI mobile apps
 
-**Coming soon**
-
-When Contoso's users share reports or dashboards with their external Guest counterparts, Power BI sends email notifying the Guest. When the guest user opens the link to the report or dashboard on their mobile device, the content opens in the native Power BI mobile apps on their device, if they're installed. The guest user can navigate between content shared with them in the external tenant, and back to their own content from their home tenant.
+In an upcoming release, when Contoso's users share reports or dashboards with their external Guest counterparts, Power BI will send an email notifying the Guest. When the guest user opens the link to the report or dashboard on their mobile device, the content will open in the native Power BI mobile apps on their device, if they're installed. The guest user will then be able to navigate between content shared with them in the external tenant, and back to their own content from their home tenant.
 
 > [!NOTE]
 > The guest user cannot open the Power BI mobile app and immediately navigate to the external tenant, they must start with a link to an item in the external tenant. Common workarounds are described in the [Distributing links to content in the Parent organization's Power BI](#distributing-links-to-content-in-the-parent-organizations-power-bi) section later in this document.
@@ -513,8 +509,8 @@ For guest users enabled through the Allow external guest users to edit and manag
 - Guest users cannot install apps publish to the entire organization
 - Guest users cannot use, create, update, or install organizational content packs
 - Guest users cannot use Analyze in Excel
-- Guest users cannot be @mentioned in commenting ( **coming soon** )
-- Guest users cannot use subscriptions ( **coming soon** )
+- Guest users cannot be @mentioned in commenting ( this functionality will be added in an upcoming release )
+- Guest users cannot use subscriptions ( this functionality will be added in an upcoming release )
 - Guest users who use this capability should have a work or school account. Guest users using Personal accounts experience more limitations due to sign-in restrictions.
 
 
