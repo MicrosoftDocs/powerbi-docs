@@ -193,7 +193,7 @@ Azure B2B guest users can edit and manage content in the organization. [Learn mo
 
 The following image shows the option to Allow external guest users to edit and manage content in the organization.
 
-![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-and-manage.png)
+![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
 
 ## Content pack and app settings
 
