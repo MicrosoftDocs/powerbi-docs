@@ -127,8 +127,8 @@ To help these users login to Power BI, provide them with the Tenant URL. To find
 * This feature is not currently available with the Power BI SharePoint Online report web part.
 
 * There are Active Directory Settings that can limit what external guest users can do within your overall organization and that also apply to your Power BI environment. The following documentation discusses the settings:
-    * [Manage External Collaboration Settings](https://docs.microsoft.com/en-us/azure/active-directory/b2b/delegate-invitations#control-who-can-invite)
-    * [Allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/en-us/azure/active-directory/b2b/allow-deny-list)  
+    * [Manage External Collaboration Settings](https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations#control-who-can-invite)
+    * [Allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)  
 
 ## Next steps
 
