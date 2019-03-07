@@ -188,6 +188,13 @@ The following image shows the **File** menu for a report when the **Print dashbo
 
 ![Print report](media/service-admin-portal/powerbi-admin-print-report.png)
 
+### Allow external guest users to edit and manage content in the organization
+Azure B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
+
+The following image shows the option to Allow external guest users to edit and manage content in the organization.
+
+![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
 ## Content pack and app settings
 
 ### Publish content packs and apps to the entire organization
