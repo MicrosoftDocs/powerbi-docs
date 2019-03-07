@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/07/2019
 ms.author: davidi
 
 LocalizationGroup: Conceptual
@@ -95,7 +95,7 @@ A tenant houses the users in a company and the information about them - their pa
 
 A Power BI tenant is created in the datacenter deemed closest to the country (or region) and state information provided for the tenant in Azure Active Directory, which was provided when the Office 365 or Power BI service was initially provisioned. The Power BI tenant does not move from that datacenter location today.
 
-### Multiple Geographies (Multi-geo) - Preview
+### Multiple Geographies (Multi-geo)
 
 Some organizations require a Power BI presence in multiple geographies, or regions, based on business needs. For example, a business may have its Power BI tenant in the United States but may also do business in other geographical areas, such as Australia, and need Power BI services and data to remain in that remote region.  Beginning in the second half of 2018, organizations with their tenant in one geography can also access Power BI resources in another geography when properly provisioned. This feature is referred to as **multi-geo** for convenience and reference throughout this document.
 
@@ -118,42 +118,9 @@ The following links provide additional information about Azure datacenters.
 - [Azure Regions](http://azure.microsoft.com/regions/) – information about Azure's global presence and locations
 - [Azure Services, by region](http://azure.microsoft.com/regions/#services) – a complete listing of Azure services (both infrastructure services and platform services) available from Microsoft in each region.
 
-Currently, the Power BI service is available in the following regions, serviced by the following primary datacenters:
+Currently, the Power BI service is available in specific regions, serviced by datacenters as described in the [Microsoft Trust Center]((https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). The following link shows a map of Power BI datacenters, you can hover over a region to see the datacenters located there:
 
-- United States
-  - East US
-  - East US 2
-  - North Central US
-  - South Central US
-  - West US
-  - West US 2
-- Canada
-  - Canada Central
-  - Canada East
-- United Kingdom
-  - UK West
-  - UK South
-- Brazil
-  - Brazil South
-- Germany
-  - Germany Central
-  - Germany Northeast
-- Europe
-  - North Europe
-  - West Europe
-- Japan
-  - Japan East
-  - Japan West
-- India
-  - Central India
-  - South India
-  - West India
-- Asia Pacific
-  - East Asia
-  - Southeast Asia
-- Australia
-  - Australia East
-  - Australia Southeast
+* [Power BI Datacenters](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)
 
 Microsoft also provides datacenters for sovereignties. For more information about Power BI service availability for sovereign clouds, see [Power BI sovereign clouds](https://powerbi.microsoft.com/clouds/).
 
@@ -197,11 +164,23 @@ Once those items are complete, the browser initiates contact with the specified 
 
 In the Power BI service, data is either _at rest_ (data available to a Power BI user that is not currently being acted upon), or it is _in process_ (for example: queries being run, data connections and models being acted upon, data and/or models being uploaded into the Power BI service, and other actions that users or the Power BI service may take on data that is actively being accessed or updated). Data that is in process is referred to as _data in process_. Data at rest in Power BI is encrypted. Data that is in transit, which means data being sent or received by the Power BI service, is also encrypted.
 
-The Power BI service also manages data differently based on whether the data is accessed with a **DirectQuery** , or is _not_ accessed with a DirectQuery. So there are two categories of user data for Power BI: data that is accessed by DirectQuery, and data which is not accessed by DirectQuery.
+The Power BI service also manages data differently based on whether the data is accessed with a **DirectQuery**, or import. So there are two categories of user data for Power BI: data that is accessed by DirectQuery, and data which is not accessed by DirectQuery.
 
 A **DirectQuery** is a query for which a Power BI user's query has been translated from Microsoft's Data Analysis Expressions (DAX) language – which is the language used by Power BI and other Microsoft products to create queries – in the data source's native data language (such as T-SQL, or other native database languages). The data associated with a DirectQuery is stored by reference only, which means source data is not stored in Power BI when the DirectQuery is not active (except for visualization data used to display dashboards and reports, as described in the _Data in process (data movement)_ section, below). Rather, references to DirectQuery data are stored which allow access to that data when the DirectQuery is run. A DirectQuery contains all the necessary information to execute the query, including the connection string and the credentials used to access the data sources, which allow the DirectQuery to connect to the included data sources for automatic refresh. With a DirectQuery, underlying data model information is incorporated into the DirectQuery.
 
-A query that does **not** use DirectQuery consist of a collection of DAX queries that are _not_ directly translated to the native language of any underlying data source. Non-DirectQuery queries do not include credentials for the underlying data, and the underlying data is loaded into the Power BI service unless it is on-premises data accessed through a [Power BI Gateway](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise/), in which case the query only stores references to on-premises data.
+A query for an import dataset consist of a collection of DAX queries that are _not_ directly translated to the native language of any underlying data source. Import queries do not include credentials for the underlying data, and the underlying data is loaded into the Power BI service unless it is on-premises data accessed through a [Power BI Gateway](service-gateway-onprem.md), in which case the query only stores references to on-premises data.
+
+The following table describes Power BI data based on the type of query being used. An **X** indicates the presence of Power BI data when using the associated query type.
+
+
+|  |Import  |DirectQuery  |Live Connect  |
+|---------|---------|---------|---------|
+|Schema     |     X    |    X     |         |
+|Row data     |    X     |         |         |
+|Visuals data caching     |    X     |     X    |    X     |
+
+
+
 
 The distinction between a DirectQuery and other queries determines how the Power BI service handles the data at rest, and whether the query itself is encrypted. The following sections describe data at rest and in movement, and explain the encryption, location, and process for handling data.
 
@@ -359,7 +338,7 @@ If Ralph were to access the shared dashboard or report, the same sequence occurs
 
 With Power BI and ExpressRoute, you can create a private network connection from your organization to Power BI (or using an ISP's colocation facility), bypassing the Internet to better secure your sensitive Power BI data and connections.
 
-ExpressRoute is an Azure service that lets you create private connections between Azure datacenters (where Power BI resides) and your on-premises infrastructure, or create private connections between Azure datacenters and your colocation environment. For more information, please refer to the [Power BI and ExpressRoute](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/) article.
+ExpressRoute is an Azure service that lets you create private connections between Azure datacenters (where Power BI resides) and your on-premises infrastructure, or create private connections between Azure datacenters and your colocation environment. For more information, please refer to the [Power BI and ExpressRoute](powerbi-admin-power-bi-expressroute.md) article.
 
 ## Power BI Mobile
 
@@ -389,7 +368,7 @@ The Power BI **application on the device** stores data on the device that facili
 
 The data cache from Power BI Mobile remains on the device for two weeks, or until: the app is removed; the user signs out of Power BI Mobile; or the user fails to sign in (such as a token expiration event, or password change). The data cache includes dashboards and reports previously accessed from the Power BI Mobile app.
 
-Power BI Mobile applications do not look at folders on the device. You can [learn more about offline data in Power BI Mobile apps](https://powerbi.microsoft.com/documentation/powerbi-mobile-offline-android/).
+Power BI Mobile applications do not look at folders on the device. You can [learn more about offline data in Power BI Mobile apps](powerbi-mobile-offline-android.md).
 
 All three platforms for which Power BI Mobile is available support Microsoft Intune, a software service that provides mobile device and application management. With Intune enabled and configured, data on the mobile device is encrypted, and the Power BI application itself cannot be installed on an SD card. You can [learn more about Microsoft Intune](http://www.microsoft.com/cloud-platform/microsoft-intune).
 
@@ -401,7 +380,7 @@ The following questions are common security questions and answers for Power BI. 
 
 * **Power BI credentials and domain credentials:** Users login to Power BI using an email address; when a user attempts to connect to a data resource, Power BI passes the Power BI login email address as credentials. For domain-connected resources (either on-premises or cloud-based), the login email is matched with a _User Principal Name_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) by the directory service to determine whether sufficient credentials exist to allow access. For organizations that use work-based email addresses to login to Power BI (the same email they use to login to work resources, such as _david@contoso.com_), the mapping can occur seamlessly; for organizations that did not use work-based email addresses (such as _david@contoso.onmicrosoft.com_), directory mapping must be established in order to allow access to on-premises resources with Power BI login credentials.
 
-* **SQL Server Analysis Services and Power BI:** For organizations that use on-premises SQL Server Analysis Services, Power BI offers the Power BI on-premises data gateway (which is a **Gateway** , as referenced in previous sections).  The Power BI on-premises data gateway can enforce role-level security on data sources (RLS). For more information on RLS, see **User Authentication to Data Sources** earlier in this document. You can also read an in-depth article about [Power BI Gateway](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise/).
+* **SQL Server Analysis Services and Power BI:** For organizations that use on-premises SQL Server Analysis Services, Power BI offers the Power BI on-premises data gateway (which is a **Gateway** , as referenced in previous sections).  The Power BI on-premises data gateway can enforce role-level security on data sources (RLS). For more information on RLS, see **User Authentication to Data Sources** earlier in this document. You can also read an in-depth article about [Power BI Gateway](powerbi-gateway-enterprise.md).
 
   In addition, organizations can use Kerberos for **single sign-on** (SSO) and seamlessly connect from Power BI to on-premises data sources such as SQL Server, SAP HANA, and Teradata. For more information, and the specific configuration requirements, see [**Use Kerberos for SSO from Power BI to on-premises data sources**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
@@ -441,7 +420,7 @@ The following questions are common security questions and answers for Power BI. 
 
 **Which ports are used by on-premises data gateway and personal gateway? Are there any domain names that need to be allowed for connectivity purposes?**
 
-* The detailed answer to this question is available at the following link: [https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise)
+* The detailed answer to this question is available at the following link: [https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise](powerbi-gateway-enterprise.md)
 
 **When working with the on-premises data gateway, how are recovery keys used and where are they stored? What about secure credential management?**
 
@@ -460,7 +439,7 @@ The following questions are common security questions and answers for Power BI. 
 
   - **AMQP 1.0 – TCP + TLS** : This protocol requires ports 443, 5671-5672, and 9350-9354 to be open for outgoing communication. This protocol is preferred, since it has lower communication overhead.
 
-  - **HTTPS – WebSockets over HTTPS + TLS** : This protocol uses port 443 only. The WebSocket is initiated by a single HTTP CONNECT message. Once the channel is established, the communication is essentially TCP+TLS. You can force the gateway to use this protocol by modifying a setting described in the [On-Premises Gateway article](https://powerbi.microsoft.com/documentation/powerbi-gateway-onprem/).
+  - **HTTPS – WebSockets over HTTPS + TLS** : This protocol uses port 443 only. The WebSocket is initiated by a single HTTP CONNECT message. Once the channel is established, the communication is essentially TCP+TLS. You can force the gateway to use this protocol by modifying a setting described in the [On-Premises Gateway article](powerbi-gateway-onprem.md).
 
 **What is the role of Azure CDN in Power BI?**
 
@@ -474,7 +453,7 @@ The following questions are common security questions and answers for Power BI. 
 
 **Are there other Power BI visuals that send information outside the customer network?**
 
-* Yes. Bing Maps and ESRI visuals transmit data out of the Power BI service for visuals that use those services. For more information, and detailed descriptions of out-of-Power-BI tenant traffic, see [**Power BI and ExpressRoute**](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/).
+* Yes. Bing Maps and ESRI visuals transmit data out of the Power BI service for visuals that use those services. For more information, and detailed descriptions of out-of-Power-BI tenant traffic, see [**Power BI and ExpressRoute**](powerbi-admin-power-bi-expressroute.md).
 
 **What about data sovereignty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country borders?**
 
@@ -502,11 +481,11 @@ For additional information on Power BI, see the following resources.
 
 - [Groups in Power BI](https://support.powerbi.com/knowledgebase/articles/654247)
 - [Getting Started with Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
-- [Power BI Gateway](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise/)
+- [Power BI Gateway](powerbi-gateway-enterprise.md)
 - [Power BI REST API - Overview](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Power BI API reference](https://msdn.microsoft.com/library/mt147898.aspx)
-- [On-premises data gateway](https://powerbi.microsoft.com/documentation/powerbi-gateway-onprem/)
-- [Power BI and ExpressRoute](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
+- [On-premises data gateway](powerbi-gateway-onprem.md)
+- [Power BI and ExpressRoute](powerbi-admin-power-bi-expressroute.md)
 - [Power BI Sovereign Clouds](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
-- [Use Kerberos for SSO from Power BI to on-premises data sources](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data)
+- [Use Kerberos for SSO from Power BI to on-premises data sources](service-gateway-sso-overview.md)

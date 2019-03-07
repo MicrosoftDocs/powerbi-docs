@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/09/2019
+ms.date: 03/07/2019
 ms.author: maggies
 
 ---
@@ -24,7 +24,7 @@ Whitepapers allow you to explore Power BI topics at a deeper level. Here you can
 | [Plan capacity for embedded analytics with Power BI Premium](https://aka.ms/pbiewhitepaper) |This paper provides guidance for the app developer/ISV to determine the most appropriate capacity for its business. | October 2017 |
 | [Planning a Power BI Enterprise Deployment](https://go.microsoft.com/fwlink/?linkid=2057861) |This technical whitepaper outlines considerations for a well-performing and secure organizational Power BI deployment. | July 2018 |
 | [Capacity planning guidance for Power BI Report Server](report-server/capacity-planning.md) |This paper aims to offer guidance on capacity planning for Power BI Report Server by sharing results of numerous load test executions of various workloads against a report server. | March 2018 |
-| [Security](service-admin-power-bi-security.md) |Provides a detailed explanation of security within Power BI. | July 2018 |
+| [Security](service-admin-power-bi-security.md) |Provides a detailed explanation of security within Power BI. | March 2019 |
 | [Distribute Power BI content to external guest users using Azure Active Directory B2B](https://aka.ms/powerbi-b2b-whitepaper)|This paper outlines how to distribute content to users outside the organization using the integration of Azure Active Directory Business-to-business (AAD B2B).| March 2018 |
 | [Advanced Analytics with Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Describes the advanced analytics capabilities of Power BI, including predictive analytics, custom visualizations, R integration, and data analysis expressions. | February 2017 |
 | [Best design practices for reports and visuals](visuals/power-bi-visualization-best-practices.md) |Provides best practices for designing reports in Power BI. | June 2018 |
