@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 03/05/2019
 LocalizationGroup: Gateways
 ---
 
@@ -33,6 +33,8 @@ To use SAML, you first generate a certificate for the SAML identity provider, th
     ```
 
 1. In SAP HANA Studio, right-click your SAP HANA server, then navigate to **Security** > **Open Security Console** > **SAML Identity Provider** > **OpenSSL Cryptographic Library**.
+
+    It is also possible to use the SAP Cryptographic Library (also known as CommonCryptoLib or sapcrypto) instead of OpenSSL to complete these setup steps. Please refer to the official SAP documentation for further information.
 
 1. Select **Import** , navigate to samltest.crt,and import it.
 
@@ -116,6 +118,37 @@ Finally, follow these steps to add the certificate thumbprint to the gateway con
 Now you can use the **Manage Gateway** page in Power BI to configure the data source, and under its **Advanced Settings** , enable SSO. Then you can publish reports and datasets binding to that data source.
 
 ![Advanced settings](media/service-gateway-sso-saml/advanced-settings.png)
+
+## Troubleshooting
+
+After configuring SSO, you might see the following error in the Power BI portal: "The credentials provided cannot be used for the SapHana source." This error indicates that the SAML credential was rejected by SAP HANA.
+
+Authentication traces provide detailed information for troubleshooting credential issues on SAP HANA. Follow these steps to configure tracing for your SAP HANA server.
+
+1. On the SAP HANA server, turn on the authentication trace by running the following query.
+
+    ```
+    ALTER SYSTEM ALTER CONFIGURATION ('indexserver.ini', 'SYSTEM') set ('trace', 'authentication') = 'debug' with reconfigure 
+    ```
+
+1. Reproduce the issue you have been facing.
+
+1. In HANA Studio, open the administration console, and go to the **Diagnosis Files** tab.
+
+1. Open the latest indexserver trace and search for SAMLAuthenticator.cpp.
+
+    You should find a detailed error message that indicates the root cause, like the following example.
+
+    ```
+    [3957]{-1}[-1/-1] 2018-09-11 21:40:23.815797 d Authentication   SAMLAuthenticator.cpp(00091) : Element '{urn:oasis:names:tc:SAML:2.0:assertion}Assertion', attribute 'ID': '123123123123123' is not a valid value of the atomic type 'xs:ID'.
+    [3957]{-1}[-1/-1] 2018-09-11 21:40:23.815914 i Authentication   SAMLAuthenticator.cpp(00403) : No valid SAML Assertion or SAML Protocol detected
+    ```
+
+1. Once the troubleshooting is complete, turn off the authentication trace by running the following query.
+
+    ```
+    ALTER SYSTEM ALTER CONFIGURATION ('indexserver.ini', 'SYSTEM') UNSET ('trace', 'authentication');
+    ```
 
 ## Next steps
 

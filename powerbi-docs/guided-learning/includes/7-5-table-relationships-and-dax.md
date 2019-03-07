@@ -7,7 +7,7 @@ DAX has **relational functions** that enable you to interact with tables that ha
 
 You can return the value of a column, or you can return all rows in a relationship using DAX functions.
 
-For example, the **TABLE** function follows relationships and returns the value of a column, while **RELATEDTABLE** follows relationships, and returns an entire table that is filtered to include only related rows.
+For example, the **RELATED** function follows relationships and returns the value of a column, while **RELATEDTABLE** follows relationships, and returns an entire table that is filtered to include only related rows.
 
 ![](media/7-5-table-relationships-and-dax/dax-relationships_2.png)
 
