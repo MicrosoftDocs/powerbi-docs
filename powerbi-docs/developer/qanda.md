@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/20/2017
+ms.date: 11/20/2017 
 ---
 
 # Q&A in Power BI Embedded
