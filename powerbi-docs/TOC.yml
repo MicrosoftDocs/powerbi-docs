@@ -1255,7 +1255,7 @@
         href: service-premium-large-datasets.md
       - name: "Incremental refresh"
         href: service-premium-incremental-refresh.md
-      - name: "Multi-Geo support (Preview)"
+      - name: "Multi-Geo support"
         href: service-admin-premium-multi-geo.md
       - name: "Power BI Premium FAQ"
         href: service-premium-faq.md
