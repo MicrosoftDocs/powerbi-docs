@@ -1,10 +1,10 @@
 ---
 title: Custom visuals in Power BI
 description: Custom visualizations in Power BI
-author: markingmyname
-ms.author: maghan
+author: sranins
+ms.author: rasala
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
