@@ -1,5 +1,5 @@
 ---
-title: Multi-Geo support for Power BI Premium (Preview)
+title: Multi-Geo support for Power BI Premium
 description: Learn how you can deploy content to datacenters in regions other than the home region of the Power BI tenant.  
 author: minewiskan
 ms.author: owend
@@ -12,7 +12,7 @@ ms.date: 02/05/2019
 LocalizationGroup: Premium 
 ---
 
-# Multi-Geo support for Power BI Premium (Preview)
+# Multi-Geo support for Power BI Premium
 
 Multi-Geo is a Power BI Premium feature that helps multinational customers address regional, industry-specific, or organizational data residency requirements. As a Power BI Premium customer, you can deploy content to datacenters in regions other than the home region of the Power BI tenant. A geo (geography) can contain more than one region. For example, the United States is a geo, and West Central US and South Central US are regions in the United States. You may choose to deploy content to any of the following geos:
 
@@ -28,7 +28,7 @@ Multi-Geo is a Power BI Premium feature that helps multinational customers addre
 
 Multi-Geo isn't available for Power BI Germany, Power BI China operated by 21Vianet, or Power BI for the US government.
 
-Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo support in Power BI Embedded (Preview)](developer/embedded-multi-geo.md).
+Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo support in Power BI Embedded](developer/embedded-multi-geo.md).
 
 ## Using Multi-Geo
 
