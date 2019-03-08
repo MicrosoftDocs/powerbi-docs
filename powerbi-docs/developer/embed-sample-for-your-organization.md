@@ -98,12 +98,11 @@ Follow the steps below to start embedding your content using the sample applicat
     | **[Application Secret](#application-secret)** |
     | **[Workspace ID](#workspace-id)** |
     | **[Report ID](#report-id)** |
+    | **[AADAuthorityUrl](#aadauthorityurl)** |
 
     ![Cloud.config file](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
 ### Application ID
-
-This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
 
 Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions.
 
@@ -124,8 +123,6 @@ To get the **applicationId**, follow these steps:
     ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
 ### Application secret
-
-This attribute is needed only for the [service principal](embed-service-principal.md) AuthenticationType.
 
 Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works when using [service principal](embed-service-principal.md).
 
@@ -155,39 +152,43 @@ To get the **ApplicationSecret**, follow these steps:
 
 ### Workspace ID
 
-This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
-
 Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
 URL <br>
 
-![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+![workspaceId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-040.png)
 
 Powershell <br>
 
 ```powershell
-Get-PowerBIworkspace -name "App Owns Embed Test"
+Get-PowerBIworkspace -name "User Owns Embed Test"
 ```
 
-   ![workspaceId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
+   ![workspaceId from powershell](media/embed-sample-for-your-organization/embed-sample-for-your-organization-040-ps.png)
 
 ### Report ID
 
-This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
-
 Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
-URL<br>
+URL <br>
 
-![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+![reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
 
 Powershell <br>
 
 ```powershell
-Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
+Get-PowerBIworkspace -name "User Owns Embed Test" | Get-PowerBIReport
 ```
 
-![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
+![reportId from powershell](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041-ps.png)
+
+### AADAuthorityUrl
+
+Fill in the **AADAuthorityUrl** information with the URL that either allows you to embed within your organizational tenant or embed with a guest user.
+
+For embedding within your organizational tenant use the URL - *https://login.microsoftonline.com/common/oauth2/authorize*.
+
+For embedding with a guest, user use the URL - *https://login.microsoftonline.com/<report-owner-tenant-id>* - where you add the tenant id of the report owner that is trying to embed.
 
 ### Run the application
 
@@ -225,10 +226,10 @@ To make the REST API call, you must include an *Authorization* header in the for
 
 #### Get reports with the REST API
 
-The following code sample shows you how to retrieve reports with the **REST API**:
+The following code sample shows you how to retrieve reports with the REST API:
 
-> [!NOTE]  
-> A sample of getting a content item that you want to embed is available in the **Default.aspx.cs** file in the [sample application](#embed-your-content-using-the-sample-application). Examples are a report, dashboard, or tile.
+> [!Note]
+> A sample of getting a content item that you want to embed is available in the Default.aspx.cs file in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples). Examples are a report, dashboard, or tile.
 
 ```csharp
 using Newtonsoft.Json;
@@ -310,7 +311,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 You can use JavaScript to load a report into a div element on your web page. The following code sample shows you how to retrieve a report from a given workspace:
 
 > [!NOTE]  
-> A sample of loading a content item that you want to embed is available in the **Default.aspx** file in the [sample application](#embed-your-content-using-the-sample-application). Examples are a report, dashboard, or tile.
+> A sample of loading a content item that you want to embed is available in the **Default.aspx** file in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).
 
 ```javascript
 <!-- Embed Report-->
@@ -411,7 +412,8 @@ The following table lists the Power BI Premium SKUs available in [Microsoft Offi
 | P5 |128 vCores |64 vCores, 400 GB of RAM |64 vCores |480 per second |
 
 > [!NOTE]
-> - When you’re trying to embed with Microsoft Office apps, you can use EM SKUs to access content with a free Power BI license. But you can't access content with a free Power BI license when you're using Powerbi.com or Power BI mobile.
+> - When you’re trying to embed with Microsoft Office apps, you can use EM SKUs to access content with a free Power BI license. 
+But you can't access content with a free Power BI license when you're using Powerbi.com or Power BI mobile.
 > - When you're trying to embed with Microsoft Office apps by using Powerbi.com or Power BI mobile, you can access content with a free Power BI license.
 
 ### Assign an app workspace to a dedicated capacity
