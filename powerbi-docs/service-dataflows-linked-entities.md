@@ -77,6 +77,7 @@ There are a few limitations to keep in mind when working with linked entities:
 * There is a maximum of five referencing hops
 * Cyclic dependencies of linked entities are not allowed
 * The dataflow must reside in a [new Power BI workspace](service-create-the-new-workspaces.md)
+* Linked entity cannot be joined with a regular entity that gets data from on-prem data source
 
 
 ## Next Steps
