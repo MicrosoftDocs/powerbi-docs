@@ -60,7 +60,7 @@ If you're embedding reports, dashboards, or tiles for your customers, then you h
 
 You can create your reports and datasets by using Power BI Desktop. Then you can publish those reports to an app workspace. The end user publishing the reports needs to have a Power BI Pro license to publish to an app workspace.
 
-1. Download the sample [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples) from GitHub.
+1. Download the sample [Demo](https://github.com/Microsoft/powerbi-desktop-samples) from GitHub.
 
     ![Download the demo](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026-1.png)
 
@@ -88,65 +88,106 @@ Follow the steps below to start embedding your content using the sample applicat
 
     ![User Owns Data application sample](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-3. Open the **Cloud.config** file in the sample application. There are a few fields you must populate to run the application successfully: **ApplicationID** and **ApplicationSecret**.
+3. Open the **Cloud.config** file in the sample application.
+
+    There are fields you need to fill in to run the application.
+
+    | Field |
+    |--------------------|
+    | **[Application ID](#application-id)** |
+    | **[Application Secret](#application-secret)** |
+    | **[Workspace ID](#workspace-id)** |
+    | **[Report ID](#report-id)** |
 
     ![Cloud.config file](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
-    Fill in the **ApplicationID** information with the **Application ID** from Azure. The **ApplicationID** is used by the application to identify itself to the users you're requesting permissions from.
+### Application ID
 
-    To get the **ApplicationID**, follow these steps:
+This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
 
-    * Sign in to the [Azure portal](https://portal.azure.com).
+Fill in the **applicationId** information with the **Application ID** from **Azure**. The **applicationId** is used by the application to identify itself to the users from which you're requesting permissions.
 
-       ![Azure portal dashboard](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+To get the **applicationId**, follow these steps:
 
-    2. In the left-hand navigation pane, choose **All services** and select **App registrations**.
+1. Sign into the [Azure portal](https://portal.azure.com).
 
-       ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+2. In the left-hand navigation pane, select **All Services**, and select **App Registrations**.
 
-    3. Select the application that needs to use the **ApplicationID**.
+    ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
-       ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+3. Select the application that needs the **applicationId**.
 
-    4. You should see an **Application ID** that's listed as a GUID. Use this **Application ID** as the **ApplicationID** for the application.
+    ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
-        ![ApplicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
+4. There's an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
 
-    Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.
+    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-    To get the **ApplicationSecret**, follow these steps:
+### Application secret
 
-    1. Sign in to the [Azure portal](https://portal.azure.com).
+This attribute is needed only for the [service principal](embed-service-principal.md) AuthenticationType.
 
-       ![Azure portal](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works when using [service principal](embed-service-principal.md).
 
-    2. In the left-hand navigation pane, choose **All services** and select **App registrations**.
+To get the **ApplicationSecret**, follow these steps:
 
-       ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-    3. Select the application that needs to use the **ApplicationSecret**.
+2. In the left-hand navigation pane, select **All services** and then select **App registrations**.
 
-       ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    4. Select **Settings**.
+3. Select the application that needs to use the **ApplicationSecret**.
 
-       ![Select Settings](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
+    ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    5. Select **Keys**.
+4. Select **Settings**.
 
-       ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+    ![Select Settings](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
 
-    6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
+5. Select **Keys**.
 
-          ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-    7. For the **groupId**, enter the app workspace GUID from Power BI.
+6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
 
-       ![Enter the groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+    ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
-    8. For the **reportId**, enter the report GUID from Power BI.
+### Workspace ID
 
-       ![Enter the reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
+
+Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+
+URL <br>
+
+![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+
+Powershell <br>
+
+```powershell
+Get-PowerBIworkspace -name "App Owns Embed Test"
+```
+
+   ![workspaceId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-031-ps.png)
+
+### Report ID
+
+This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
+
+Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+
+URL<br>
+
+![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+
+Powershell <br>
+
+```powershell
+Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
+```
+
+![reportId from powershell](media/embed-sample-for-customers/embed-sample-for-customers-032-ps.png)
 
 ### Run the application
 
