@@ -15,7 +15,7 @@ ms.date: 03/07/2019
 
 # Tutorial: Embed Power BI content into an application for your organization
 
-In **Power BI**, you can embed reports, dashboards, or tiles into an application by using user owns data. **User owns data** lets your application extend the Power BI service to use embedded analytics. This tutorial demonstrates how to integrate a report into an application. You use the Power BI .NET SDK with the Power BI JavaScript API to embed Power BI into an application for your organization.
+In **Power BI**, you can embed reports, dashboards, or tiles into an application by using user owns data. **User owns data** lets your application extend the Power BI service so it can use embedded analytics. This tutorial demonstrates how to integrate a report into an application. You use the Power BI .NET SDK with the Power BI JavaScript API to embed Power BI into an application for your organization.
 
 ![Power BI Embed Report](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
@@ -188,7 +188,7 @@ Fill in the **AADAuthorityUrl** information with the URL that either allows you 
 
 For embedding within your organizational tenant use the URL - *https://login.microsoftonline.com/common/oauth2/authorize*.
 
-For embedding with a guest, user use the URL - *https://login.microsoftonline.com/<report-owner-tenant-id>* - where you add the tenant id of the report owner that is trying to embed.
+For embedding with a guest, use the URL - *https://login.microsoftonline.com/<report-owner-tenant-id>* - where you add the tenant ID of the report owner that is trying to embed.
 
 ### Run the application
 
