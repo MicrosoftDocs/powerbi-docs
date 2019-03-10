@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/08/2019
+ms.date: 03/10/2019
 ---
 
 # Guidelines for Power BI visuals
@@ -44,7 +44,7 @@ Developers may use any third-party payment system for these purchases. For more 
 
 This section describes the specifications for adding logos and logotypes in visuals.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Logos are allowed in **edit mode only**. Logos **can't** be displayed in view mode.
 
 ![Definitions](media/office-store-in-app-purchase-visual-guidelines/definitions.png)
