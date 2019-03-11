@@ -94,13 +94,15 @@ When you share with people outside your organization, they get an email with a l
 
 After they sign in, they see the shared dashboard or report in its own browser window without the left navigation pane, not in their usual Power BI portal. They have to bookmark the link to access this dashboard or report in the future.
 
-They can't edit any content in this dashboard or report. They can interact with the charts and change filters or slicers in the report, but can't save their changes.
+They can't edit any content in this dashboard or report. They can interact with the charts and change filters or slicers in the report, but can't save their changes. 
 
 Only your direct recipients can see the shared dashboard or report. For example, if you sent the email to Vicki@contoso.com, only Vicki can see the dashboard. No-one else can see that dashboard, even if they have the link, and Vicki has to use the same email address to access that dashboard. If she signs up with any other email address, she won't have access to the dashboard either.
 
 People outside your organization can't see any data at all if role- or row-level security is implemented on on-premises Analysis Services tabular models.
 
 If you send a link from a Power BI mobile app to people outside your organization, when they click the link the dashboard opens in a browser, not in the Power BI mobile app.
+
+If the guest users is enabled using the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#export-and-sharing-settings) the default consumption only experience will not apply to them. [Learn more](service-admin-azure-ad-b2b.md)
 
 ## Limitations and considerations
 Things to keep in mind about sharing dashboards and reports:

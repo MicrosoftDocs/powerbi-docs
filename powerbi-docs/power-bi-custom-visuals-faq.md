@@ -1,10 +1,10 @@
 ---
 title: Frequently asked questions about Power BI custom visuals
 description: Browse a list of frequently asked questions and answers about Power BI custom visuals
-author: markingmyname
-ms.author: maghan
+author: sranins
+ms.author: rasala
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: maghan
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals

@@ -853,6 +853,8 @@
         href: whitepaper-powerbi-security.md
       - name: "Power BI premium deployment"
         href: whitepaper-powerbi-premium-deployment.md
+      - name: "Distribute Power BI externally using Azure Active Directory B2B"
+        href: whitepaper-azure-b2b-power-bi.md        
 - name: Power BI for developers
   items:
   - name: "What can developers do with Power BI"
@@ -1257,7 +1259,7 @@
         href: service-premium-large-datasets.md
       - name: "Incremental refresh"
         href: service-premium-incremental-refresh.md
-      - name: "Multi-Geo support (Preview)"
+      - name: "Multi-Geo support"
         href: service-admin-premium-multi-geo.md
       - name: "Power BI Premium FAQ"
         href: service-premium-faq.md

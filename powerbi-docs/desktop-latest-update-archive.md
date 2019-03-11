@@ -104,6 +104,7 @@ The following video channel describes and shows each of these updates. You can a
 > [!NOTE]
 > You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
+
 ## November 2018 Update (2.64.5285.461)
 
 Our November updates were a bountiful harvest of new features and functionality. So you could sit down with your family of data and analytics enthusiasts, pass the potatoes, and dig in to our feast of updates. 
