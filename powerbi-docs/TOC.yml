@@ -711,6 +711,8 @@
         href: refresh-troubleshooting-tile-errors.md
       - name: "How to refresh your Xero content pack credentials if refresh failed"
         href: service-refresh-xero-credentials.md
+      - name: "Can't sign in"
+        href: power-bi-cannot-sign-in.md
     - name: Other tasks
       items: 
       - name: "Rename content within Power BI"

@@ -7,7 +7,6 @@ manager: kfile
 ms.reviewer: maghan
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 03/10/2019

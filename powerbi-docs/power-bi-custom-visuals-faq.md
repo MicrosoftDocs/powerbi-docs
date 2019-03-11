@@ -6,7 +6,6 @@ ms.author: rasala
 manager: kfile
 ms.reviewer: maghan
 ms.service: powerbi
-ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
