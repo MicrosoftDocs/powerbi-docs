@@ -16,13 +16,13 @@ ms.date: 03/12/2019
 
 This article describes how to generate [support content](https://powerbi.microsoft.com/support/) that details what path you can follow to resolve your sign in issues.
 
-The first action you need to take is to **engage your internal support team** for assistance. However, if you are a **tenant admin** for your organization, and still can't sign into Power BI then follow the steps below.
+The first action you need to take is to **engage your internal support team** for assistance. However, if you are a **tenant admin** for your organization, and you until can't sign into Power BI then continue with the information below.
 
 First, try to create a support ticket through the [Power BI support page](https://powerbi.microsoft.com/en-us/support/).
 
 If you are unable to go through the Power BI support page, then try to create a ticket via the [Office 365 (O365) support page](https://support.office.com/home/contact).
 
-If you are unable to create a ticket either through the Power BI support page or through O365, then try to contact support via phone.
+If you're unable to create a ticket either through the Power BI support page or through O365, then try to contact support via phone.
 
     For customers in the United States (US) and the rest of the Americas: </br>
     +1-800-936-5800
@@ -47,7 +47,7 @@ Another option to contact Microsoft support for help is by purchasing [Microsoft
     +1-800-425-5666
 
 > [!Note]
-> In most cases, when you can't sign in to Power BI, the root cause is because of an issue with either your [Office 365 account](https://docs.microsoft.com/office365/) or your [Azure Active Directory (AAD) account](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
+> It is helpful to provide [additional diagnostic information](service-admin-capturing-additional-diagnostic-information-for-power-bi.md) at the time you engage support.
 
 ## Next steps
 
