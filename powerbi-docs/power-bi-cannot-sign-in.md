@@ -45,7 +45,7 @@ Another option to contact Microsoft support for help is by purchasing [Microsoft
 
 ## Power BI community
 
-If you're unable to create a forum post on the community page, it's because the [Power BI community forum](https://community.powerbi.com/) also requires you to sign in..
+If you're unable to create a forum post on the community page, it's because the [Power BI community forum](https://community.powerbi.com/) also requires you to sign in.
 
 ## Next steps
 
