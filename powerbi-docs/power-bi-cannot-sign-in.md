@@ -12,20 +12,17 @@ ms.custom: ''
 ms.date: 03/12/2019
 ---
 
-# Troubleshooting sign-in for Power BI service
+# Troubleshooting sign-in issues for Power BI
 
 This article describes how to generate [support content](https://powerbi.microsoft.com/support/) that details what path you can follow to resolve your sign in issues.
 
-> [!Note]
-> In most cases, when you can't sign in to Power BI, the root cause is because of an issue with either your [Office 365 account](https://docs.microsoft.com/office365/) or your [Azure Active Directory (AAD) account](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
-
 The first action you need to take is to **engage your internal support team** for assistance. However, if you are a **tenant admin** for your organization, and still can't sign into Power BI then follow the steps below.
 
-1. Try to create a support ticket through the [Power BI support page](https://powerbi.microsoft.com/en-us/support/).
+First, try to create a support ticket through the [Power BI support page](https://powerbi.microsoft.com/en-us/support/).
 
-2. Try to create a ticket via the [Office 365 (O365) support page](https://support.office.com/home/contact).
+If you are unable to go through the Power BI support page, then try to create a ticket via the [Office 365 (O365) support page](https://support.office.com/home/contact).
 
-3. Then try to contact support via phone.
+If you are unable to create a ticket either through the Power BI support page or through O365, then try to contact support via phone.
 
     For customers in the United States (US) and the rest of the Americas: </br>
     +1-800-936-5800
@@ -36,7 +33,7 @@ The first action you need to take is to **engage your internal support team** fo
     For customers in India:</br>
     +1-800-419-5666
 
-4. Another option to contact Microsoft support for help is by purchasing [Microsoft Premier support](https://support.microsoft.com/premier).
+Another option to contact Microsoft support for help is by purchasing [Microsoft Premier support](https://support.microsoft.com/premier).
 
     If you know your organization has purchased Microsoft Premier support and you still can't create a case from any O365 or Power BI channel, then you can contact Premier support via phone.
 
