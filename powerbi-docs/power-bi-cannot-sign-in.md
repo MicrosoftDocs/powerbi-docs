@@ -46,6 +46,9 @@ Another option to contact Microsoft support for help is by purchasing [Microsoft
     For customers in India:</br>
     +1-800-425-5666
 
+> [!Note]
+> In most cases, when you can't sign in to Power BI, the root cause is because of an issue with either your [Office 365 account](https://docs.microsoft.com/office365/) or your [Azure Active Directory (AAD) account](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
+
 ## Next steps
 
 Here are a few sites you can visit for additional Power BI support:
