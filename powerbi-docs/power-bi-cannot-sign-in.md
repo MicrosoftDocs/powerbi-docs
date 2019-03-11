@@ -12,7 +12,7 @@ ms.custom: ''
 ms.date: 03/12/2019
 ---
 
-# Troubleshoot: Unable to sign into Power BI
+# Troubleshooting sign-in for Power BI service
 
 This article describes how to generate [support content](https://powerbi.microsoft.com/support/) that details what path you can follow to resolve your sign in issues.
 
@@ -53,7 +53,7 @@ The first action you need to take is to **engage your internal support team** fo
 
 Here are a few sites you can visit for additional Power BI support:
 
-* [Power BI support page](https://powerbi.microsoft.com/support/)
+* [Power BI Support page](https://powerbi.microsoft.com/support/)
 * [Power BI Microsoft docs](https://docs.microsoft.com/power-bi/)
-* [Power BI community page](https://community.powerbi.com/)
+* [Power BI Community page](https://community.powerbi.com/)
 * [Creating Power BI Support Cases](https://blogs.msdn.microsoft.com/charles_sterling/2017/12/01/creating-power-bi-support-cases/)
