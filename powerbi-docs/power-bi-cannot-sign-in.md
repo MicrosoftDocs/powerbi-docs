@@ -33,9 +33,7 @@ If you're unable to create a ticket either through the Power BI support page or 
     For customers in India:
     +1-800-419-5666
 
-Another option to contact Microsoft support for help is by purchasing [Microsoft Premier support](https://support.microsoft.com/premier).
-
-If you know your organization has purchased Microsoft Premier support and you still can't create a case from any O365 or Power BI channel, then you can contact Premier support via phone.
+Another option to contact Microsoft support for help is by purchasing [Microsoft Premier support](https://support.microsoft.com/premier). If you know your organization has purchased Microsoft Premier support and you still can't create a case from any O365 or Power BI channel, then you can contact Premier support via phone.
 
     For customers in the United States (US) and the rest of the Americas:
     +1-800-936-3100
