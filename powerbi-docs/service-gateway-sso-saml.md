@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 03/05/2019
 LocalizationGroup: Gateways
 ---
 
@@ -34,6 +34,8 @@ To use SAML, you first generate a certificate for the SAML identity provider, th
 
 1. In SAP HANA Studio, right-click your SAP HANA server, then navigate to **Security** > **Open Security Console** > **SAML Identity Provider** > **OpenSSL Cryptographic Library**.
 
+    It is also possible to use the SAP Cryptographic Library (also known as CommonCryptoLib or sapcrypto) instead of OpenSSL to complete these setup steps. Please refer to the official SAP documentation for further information.
+
 1. Select **Import** , navigate to samltest.crt,and import it.
 
     ![Identity providers](media/service-gateway-sso-saml/identity-providers.png)
@@ -52,54 +54,7 @@ To use SAML, you first generate a certificate for the SAML identity provider, th
 
     ![Select identity provider](media/service-gateway-sso-saml/select-identity-provider.png)
 
-Next validate the setup with a *SAML assertion*, using the [xmlsec1 tool](http://sgros.blogspot.com/2013/01/signing-xml-document-using-xmlsec1.html).
-
-1. Save the assertion below as assertion-template.xml. Replace \<MyUserId\> with the Power BI user's UPN you entered in step 7.
-
-    ```xml
-    <?xml version="1.0" encoding="UTF-8" ?>
-    <saml2:Assertion ID="Assertion12345789" IssueInstant="2015-07-16T04:47:49.858Z" Version="2.0" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
-      <saml2:Issuer></saml2:Issuer> 
-      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
-        <SignedInfo>
-          <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
-          <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
-          <Reference URI="">
-            <Transforms>
-              <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
-              <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
-            </Transforms>
-            <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-            <DigestValue />
-          </Reference>
-        </SignedInfo>
-        <SignatureValue />
-        <KeyInfo>
-          <X509Data />
-        </KeyInfo>
-      </Signature>
-      <saml2:Subject>
-        <saml2:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified"><MyUserId></saml2:NameID>
-      </saml2:Subject>
-      <saml2:Conditions NotBefore="2010-01-01T00:00:00Z" NotOnOrAfter="2050-01-01T00:00:00Z"/>
-    </saml2:Assertion>
-    ```
-
-1. Run the following command. samltest.key and samltest.crt are the key and certificate you generated in step 1.
-
-    ```
-    xmlsec1 --sign --privkey-pem samltest.key, samltest.crt --output signed.xml assertion-template.xml
-    ```
-
-1. In SAP HANA Studio, open a SQL console window and run the following command. Replace \<SAMLAssertion\> with the content of xml from the previous step.
-
-    ```SQL
-    CONNECT WITH SAML ASSERTION '<SAMLAssertion>'
-    ```
-
-If the query succeeds, then it means your SAP HANA SAML SSO setup is successful.
-
-Now that you have the certificate and identity successfully configured, you convert the certificate to a pfx format and configure the gateway machine to use the certificate.
+Now that you have the certificate and identity configured, you convert the certificate to a pfx format and configure the gateway machine to use the certificate.
 
 1. Convert the certificate to the pfx format by running the following command.
 
@@ -163,6 +118,37 @@ Finally, follow these steps to add the certificate thumbprint to the gateway con
 Now you can use the **Manage Gateway** page in Power BI to configure the data source, and under its **Advanced Settings** , enable SSO. Then you can publish reports and datasets binding to that data source.
 
 ![Advanced settings](media/service-gateway-sso-saml/advanced-settings.png)
+
+## Troubleshooting
+
+After configuring SSO, you might see the following error in the Power BI portal: "The credentials provided cannot be used for the SapHana source." This error indicates that the SAML credential was rejected by SAP HANA.
+
+Authentication traces provide detailed information for troubleshooting credential issues on SAP HANA. Follow these steps to configure tracing for your SAP HANA server.
+
+1. On the SAP HANA server, turn on the authentication trace by running the following query.
+
+    ```
+    ALTER SYSTEM ALTER CONFIGURATION ('indexserver.ini', 'SYSTEM') set ('trace', 'authentication') = 'debug' with reconfigure 
+    ```
+
+1. Reproduce the issue you have been facing.
+
+1. In HANA Studio, open the administration console, and go to the **Diagnosis Files** tab.
+
+1. Open the latest indexserver trace and search for SAMLAuthenticator.cpp.
+
+    You should find a detailed error message that indicates the root cause, like the following example.
+
+    ```
+    [3957]{-1}[-1/-1] 2018-09-11 21:40:23.815797 d Authentication   SAMLAuthenticator.cpp(00091) : Element '{urn:oasis:names:tc:SAML:2.0:assertion}Assertion', attribute 'ID': '123123123123123' is not a valid value of the atomic type 'xs:ID'.
+    [3957]{-1}[-1/-1] 2018-09-11 21:40:23.815914 i Authentication   SAMLAuthenticator.cpp(00403) : No valid SAML Assertion or SAML Protocol detected
+    ```
+
+1. Once the troubleshooting is complete, turn off the authentication trace by running the following query.
+
+    ```
+    ALTER SYSTEM ALTER CONFIGURATION ('indexserver.ini', 'SYSTEM') UNSET ('trace', 'authentication');
+    ```
 
 ## Next steps
 

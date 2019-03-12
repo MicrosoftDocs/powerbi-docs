@@ -1,10 +1,10 @@
 ---
 title: Adding formatting options to a Power BI custom visual
 description: A tutorial on how to develop Power BI custom visual format options 
-author: markingmyname
-ms.author: maghan
+author: sranins
+ms.author: rasala
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
@@ -142,7 +142,10 @@ You can add custom properties to enable configuring the color of the circle, and
 
     ```typescript
     this.visualSettings = VisualSettings.parse<VisualSettings>(dataView);
-    this.visualSettings.circle.circleThickness = Math.max(0, this.visualSettings.circle.circleThickness)this.visualSettings.circle.circleThickness = Math.min(10, this.visualSettings.circle.circleThickness);
+
+    this.visualSettings.circle.circleThickness = Math.max(0, this.visualSettings.circle.circleThickness);
+
+    this.visualSettings.circle.circleThickness = Math.min(10, this.visualSettings.circle.circleThickness);
     ```
     This code retrieves the format options. It adjusts any value passed into the **circleThickness** property, converting it to 0 if negative, or 10 if it's a value greater than 10.
 

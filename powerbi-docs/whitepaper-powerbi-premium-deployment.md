@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 03/06/2019
 
 LocalizationGroup: Premium
 ---
@@ -22,6 +22,9 @@ LocalizationGroup: Premium
 **Technical Reviewers:** Adam Saxton, Akshai Mirchandani, Bhavik Merchant, David Magar, Josh Caplan, Michael Blythe, Nimrod Shalit, Olivier Matrat, Swati Gupta
 
 **Applies to:** Power BI service, Power BI Premium and Azure Power BI Embedded capacities
+
+> [!NOTE]
+> You can save or print this whitepaper by selecting **Print** from your browser, then selecting **Save as PDF**.
 
 ## Introducing Power BI
 
