@@ -17,7 +17,9 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-No Upcoming Webinars.
+**Achieving a Win-Win for Consumer Product Goods Manufacturers and Retailers**
+<br>by Liz McCreesh
+<br>[Register now](https://info.microsoft.com/Achieving-a-Win-Win-for-Consumer-Packaged-Goods-Manufacturers-and-Retailers-registration.html)
 
 >[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
