@@ -17,13 +17,19 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-No webinars scheduled yet. Check back soon for more upcoming events.
+**Achieving a Win-Win for Consumer Product Goods Manufacturers and Retailers**
+<br>by Liz McCreesh
+<br>[Register now](https://info.microsoft.com/Achieving-a-Win-Win-for-Consumer-Packaged-Goods-Manufacturers-and-Retailers-registration.html)
 
 >[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## Featured webinars
 
 Get started with these popular on-demand webinars
+
+**Power BI and the Future of Modern and Enterprise BI**
+<br>by Arun Ulag and Amir Netz
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html?LCID=EN-US)
 
 **Getting Started with Power BI**
 <br>by Miguel Martinez
@@ -41,14 +47,6 @@ Get started with these popular on-demand webinars
 <br>by Cory Hrncirik and Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
 
-**Power BI: Analytics Done Right**
-<br>by Gohul Shanmugalingam
-<br>[Register and watch now](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
-
-**Make Your Power BI Data Visual:  Core Chart Types and How to Use Them**
-<br>by Miranda Li
-<br>[Register and watch now](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
-
 **Power BI, Excel and Office 365: Optimize Your Enterprise Data**
 <br>by Olaf Hubel and Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
@@ -56,10 +54,6 @@ Get started with these popular on-demand webinars
 **Simply Compelling — Tips for Better Visualization Design**
 <br>by Miranda Li
 <br>[Register and watch now](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
-
-**The Total Economic Impact of Microsoft Flow and PowerApps**
-<br>by Jonathan Lipsitz and Enrique Plaza Garcia
-<br>[Register and watch now](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 
 >[Browse the library of Power BI on-demand webinars from our community experts](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
@@ -69,9 +63,21 @@ Watch recorded sessions at any time
 
 ### Getting Started
 
+**Power BI: Analytics Done Right**
+<br>by Gohul Shanmugalingam
+<br>[Register and watch now](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
+
+**Make Your Power BI Data Visual:  Core Chart Types and How to Use Them**
+<br>by Miranda Li
+<br>[Register and watch now](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+
 **How to Design Visually Stunning Power BI Reports**
 <br>by Charles Sterling
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**The Total Economic Impact of Microsoft Flow and PowerApps**
+<br>by Jonathan Lipsitz and Enrique Plaza Garcia
+<br>[Register and watch now](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 
 **Better Together: 5 Benefits Excel Users Will Get From Using Power BI**
 <br>by Carlos Otero and Miguel Martinez
