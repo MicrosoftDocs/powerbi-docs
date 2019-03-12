@@ -399,6 +399,10 @@
       href: service-get-started.md
     - name: "Connect to a GitHub sample"
       href: service-tutorial-connect-to-github.md
+    - name: "Using Cognitive Services in Power BI"
+      href: service-tutorial-cognitive-services.md
+    - name: "Machine Learning integration with Power BI"
+      href: service-tutorial-invoke-machine-learning-model.md            
   - name: Concepts
     items: 
     - name: "What's new in the Power BI service"
@@ -721,7 +725,11 @@
         href: service-delete.md
       - name: Connect to services
         items: 
-        - name: "Connect to services"
+        - name: "Integrate Machine Learning in Power BI"
+          href: service-machine-learning-integration.md
+        - name: "Use Cognitive Services in Power BI"
+          href: service-cognitive-services.md
+        - name: "Acumatica"
           href: service-connect-to-services.md
         - name: "Acumatica"
           href: service-connect-to-acumatica.md
