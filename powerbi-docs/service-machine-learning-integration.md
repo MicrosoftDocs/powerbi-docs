@@ -36,7 +36,7 @@ To access an Azure ML model from Power BI, the user must have **Read** access to
 - For Machine Learning Studio models, **Read** access to Machine Learning Studio web service
 - For Machine Learning Service models, **Read** access to the Machine Learning service workspace
 
-The steps in this article describe how to grant a Power BI user access to a model hosted on the Azure ML service, so they can access this model as a Power Query function.  For further details, please see [Manage access using RBAC and the Azure portal](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal).
+The steps in this article describe how to grant a Power BI user access to a model hosted on the Azure ML service, so they can access this model as a Power Query function.  For further details, please see [Manage access using RBAC and the Azure portal](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
