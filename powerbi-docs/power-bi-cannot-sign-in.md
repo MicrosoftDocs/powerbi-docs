@@ -16,7 +16,9 @@ ms.date: 03/12/2019
 
 This article describes how to get [support](https://powerbi.microsoft.com/support/) when you are experiencing Power BI sign-in issues.
 
-The first action you need to take is to **engage your internal support team** for assistance. However, if you are a **tenant admin** for your organization, and you still can't sign into Power BI then continue with the information below.
+The first action you need to take is to **engage your organization's internal support team** for assistance.
+
+However, if you are a **tenant admin** for your organization and you still can't sign into Power BI, then continue with the information below.
 
 ## Engage the support team
 
