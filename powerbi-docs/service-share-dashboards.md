@@ -41,7 +41,7 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
    ![Warning about sharing externally](media/service-share-dashboards/power-bi-share-dialog-warning.png) 
  
    >[!NOTE]
-   >The input box supports at most 500 users or groups. You can share multiple times or share with a user group if you need to share with large numbers of users.
+   >The input box supports at most 100 users or groups. You can share multiple times or share with a user group if you need to share with large numbers of users.
    > 
    > 
 
@@ -121,7 +121,7 @@ Things to keep in mind about sharing dashboards and reports:
 * Coworkers who have the same email domain as you, and coworkers whose domain is different but registered within the same tenant, can share the dashboard with others. For example, say the domains contoso.com and contoso2.com are registered in the same tenant. If your email address is konrads@contoso.com, then both ravali@contoso.com and gustav@contoso2.com can share, as long as you gave them permission to share.
 * If your coworkers already have access to a specific dashboard or report, you can send a direct link just by copying the URL when you're on the dashboard or report. For example: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`
 * Likewise if your coworkers already have access to a specific dashboard, you can [send a direct link to the underlying report](service-share-reports.md). 
-* You can share with at most 500 users or groups in a single share action. However, you can give more than 500 users access to an item. To do this, either can share multiple times specifying the users individually, or share with a user group that contains all the users.
+* You can share with at most 100 users or groups in a single share action. However, you can give more than 500 users access to an item. To do this, either can share multiple times specifying the users individually, or share with a user group that contains all the users.
 
 ## Troubleshoot sharing
 
