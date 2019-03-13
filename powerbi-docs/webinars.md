@@ -47,6 +47,10 @@ Get started with these popular on-demand webinars
 <br>by Cory Hrncirik and Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
 
+**Supercharge Your Applications Using the Power BI JavaScript API**
+<br>by Nimrod Shalit
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-PBI-JavaScript-API-video.html)
+
 **Power BI, Excel and Office 365: Optimize Your Enterprise Data**
 <br>by Olaf Hubel and Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
@@ -62,6 +66,10 @@ Get started with these popular on-demand webinars
 Watch recorded sessions at any time
 
 ### Getting Started
+
+**Automate Day-to-Day Business Processes with Power BI, PowerApps, and Microsoft Flow**
+<br>by Wim Coorevits and Enrique Plaza Garcia
+<br>[Register and watch now](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
 
 **Power BI: Analytics Done Right**
 <br>by Gohul Shanmugalingam
@@ -100,6 +108,14 @@ Watch recorded sessions at any time
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
 ### Partners ###
+
+**Transform Customer Data into Retail Success with Power Bi**
+<br>by Angad Soni from Hitachi Solutions
+<br>[Register and watch now](https://info.microsoft.com/Transform-Your-Customer-Data-into-Retail-Success-OnDemandRegistration.html?LCID=EN-US?wt.mc_id=undefined)
+
+**5 Habits of a Successful Trend Curator - Rohit Bhargava**
+<br>by Rohit Bhargava from Non-Obvious
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 **Proven Healthcare Solutions to Improve Both Patient Outcomes and Profitability**
 <br>by Stephen Cracknell and Stuart Macanliss from US Medical IT
