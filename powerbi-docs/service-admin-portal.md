@@ -38,9 +38,9 @@ There are seven tabs in the portal. The rest of this article provides informatio
 * [Users](#users)
 * [Audit logs](#audit-logs)
 * [Tenant settings](#tenant-settings)
-* [Premium settings](#premium-settings)
+* [Capacity settings](#capacity-settings)
 * [Embed codes](#embed-codes)
-* [Organizational visuals](#organization-visuals)
+* [Organizational visuals](#organizational-visuals)
 
 ## Usage metrics
 
