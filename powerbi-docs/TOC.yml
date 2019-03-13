@@ -651,6 +651,10 @@
         href: service-dataflows-configure-workspace-storage-settings.md  
       - name: "Add a CDM folder to Power BI as a dataflow (Preview)"
         href: service-dataflows-add-cdm-folder.md                                
+      - name: "Integrate Machine Learning in Power BI"
+        href: service-machine-learning-integration.md
+      - name: "Use Cognitive Services in Power BI"
+        href: service-cognitive-services.md        
     - name: Paginated reports in Power BI
       items: 
       - name: What are paginated reports? (Preview)
@@ -727,10 +731,6 @@
         href: service-delete.md
       - name: Connect to services
         items: 
-        - name: "Integrate Machine Learning in Power BI"
-          href: service-machine-learning-integration.md
-        - name: "Use Cognitive Services in Power BI"
-          href: service-cognitive-services.md
         - name: "Acumatica"
           href: service-connect-to-services.md
         - name: "Acumatica"
