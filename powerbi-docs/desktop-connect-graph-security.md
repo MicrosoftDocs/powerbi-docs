@@ -13,7 +13,7 @@ ms.author: preetikr
 
 LocalizationGroup: Connect to data
 ---
-# Connect to Microsoft Graph Security in Power BI Desktop
+# Connect to the Microsoft Graph Security API in Power BI Desktop
 
 Use the Microsoft Graph Security connector of Power BI Desktop to connect to the [Microsoft Graph Security API](https://aka.ms/graphsecuritydocs). You can then build dashboards and reports to gain insights into your security-related [alerts](https://docs.microsoft.com/graph/api/resources/alert?view=graph-rest-1.0) and [secure scores](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
 
@@ -21,7 +21,7 @@ The Microsoft Graph Security API connects [multiple security solutions](https://
 
 ## Prerequisites to use the Microsoft Graph Security connector
 
-* To use the Microsoft Graph Security connector, you must *explicitly* be granted consent by the Azure Active Directory (Azure AD) tenant administrator. See 
+* To use the Microsoft Graph Security connector, you must *explicitly* get consent by the Azure Active Directory (Azure AD) tenant administrator. See 
 [Microsoft Graph Security authentication requirements](https://aka.ms/graphsecurityauth).
 Consent requires the connector's application ID and name, which is cited here and is available in the [Azure portal](https://portal.azure.com):
 
@@ -45,21 +45,21 @@ Consent requires the connector's application ID and name, which is cited here an
 
 Follow these steps to use the connector:
 
-1. Select **Get Data -> More** from the **Home** ribbon in Power BI Desktop.
+1. Select **Get Data** -> **More** from the **Home** ribbon in Power BI Desktop.
 2. Select **Online Services** from the categories list on the left side of the window.
 3. Select **Microsoft Graph Security (Beta)**.
 
     ![Get Data dialog box](media/desktop-connect-graph-security/GetData.PNG)
     
-4. In the **Microsoft Graph Security** window, select the **Microsoft Graph API Version** to query: **v1.0** or **beta**.
+4. In the **Microsoft Graph Security** window, select the Microsoft Graph API version to query: **v1.0** or **beta**.
 
     ![Select-version dialog box](media/desktop-connect-graph-security/selectVersion.PNG)
     
-5. Sign in to your Azure Active Directory account when you're prompted. This account must be assigned the *Security Reader* role, as mentioned in the previous section.
+5. Sign in to your Azure Active Directory account when you're prompted. This account needs to have the *Security Reader* role, as mentioned in the previous section.
 
     ![Sign in](media/desktop-connect-graph-security/SignIn.PNG) 
     
-6. If you're the tenant admin *and* you've not yet been given consent to the Microsoft Graph Security Power BI connector (application), you'll see the following dialog box. Select **Consent on behalf of your organization**.
+6. If you're the tenant admin *and* you don't yet have consent to the Microsoft Graph Security Power BI connector (application), you'll see the following dialog box. Select **Consent on behalf of your organization**.
 
     ![Admin-consent dialog box](media/desktop-connect-graph-security/AdminConsent.PNG)
     
@@ -81,7 +81,7 @@ Follow these steps to use the connector:
 
 Here's the results window for the Microsoft Graph Security entities that we queried for:
 
-   ![Result windows example](media/desktop-connect-graph-security/Result.PNG)
+   ![Results windows example](media/desktop-connect-graph-security/Result.PNG)
     
 
 Now you’re ready to use the imported data from the Microsoft Graph Security connector in Power BI Desktop. You can create graphics or reports. Or, you can interact with other data that you import from Excel workbooks, databases, or other data sources.
