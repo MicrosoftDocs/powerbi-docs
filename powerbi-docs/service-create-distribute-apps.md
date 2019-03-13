@@ -118,6 +118,11 @@ Here are things to keep in mind when pushing apps to end users:
 ## Unpublish an app
 Any member of an app workspace can unpublish the app.
 
+>[!NOTE]
+>When you unpublish an app, app users lose their customizations. This means that any personal bookmarks, comments, or subscriptions associated with content in the app are lost. Only unpublish an app if you need to remove it.
+> 
+> 
+
 * In an app workspace, select the ellipsis (**...**) in the upper-right corner > **Unpublish app**.
   
      ![Unpublish app](media/service-create-distribute-apps/power-bi-app-unpublish.png)
