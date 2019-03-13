@@ -98,7 +98,7 @@ Once you save your dataflow, the model is automatically invoked when the dataflo
 This article provided an overview of integrating Machine Learning into the Power BI service. The following articles might also be interesting and useful. 
 
 * [Tutorial: Invoke a Machine Learning Studio model in Power BI (Preview)](service-tutorial-invoke-machine-learning-model.md)
-* [Tutorial: Using Cognitive Services in Power BI](service-tutorial-using-cognitive-services.md)
+* [Tutorial: Using Cognitive Services in Power BI](service-tutorial-use-cognitive-services.md)
 * [Cognitive Services in Power BI (Preview)](service-cognitive-services.md)
 
 For more information about dataflows, you can read these articles:

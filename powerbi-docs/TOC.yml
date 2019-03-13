@@ -400,7 +400,7 @@
     - name: "Connect to a GitHub sample"
       href: service-tutorial-connect-to-github.md
     - name: "Using Cognitive Services in Power BI"
-      href: service-tutorial-using-cognitive-services.md
+      href: service-tutorial-use-cognitive-services.md
     - name: "Machine Learning integration with Power BI"
       href: service-tutorial-invoke-machine-learning-model.md            
   - name: Concepts

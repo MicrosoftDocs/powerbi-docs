@@ -94,7 +94,7 @@ This article provided an overview of using Cognitive Services with Power BI serv
 
 * [Tutorial: Invoke a Machine Learning Studio model in Power BI (Preview)](service-tutorial-invoke-machine-learning-model.md)
 * [Azure Machine Learning integration in Power BI (Preview)](service-machine-learning-integration.md)
-* [Tutorial: Using Cognitive Services in Power BI](service-tutorial-using-cognitive-services.md)
+* [Tutorial: Using Cognitive Services in Power BI](service-tutorial-use-cognitive-services.md)
 
 
 For more information about dataflows, you can read these articles:
