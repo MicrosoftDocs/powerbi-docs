@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/12/2019
 
 LocalizationGroup: Premium
 ---
@@ -91,13 +91,15 @@ You can cancel your subscription from within the Office 365 admin center. To can
 
 1. Read through the information, and if you want to proceed, select **Cancel subscription**.
 
+### When canceling or your license expires
+
+When you cancel your Premium subscription, or your capacity license expires, you can continue to access your Premium capacities for a period of 30 days from the date of cancellation or license expiration. After 30 days, you will no longer be able to access your Premium capacities or workspaces in them.
+
 ## Next steps
 
-[Power BI pricing page](https://powerbi.microsoft.com/pricing/)
-[Power BI Premium calculator](https://powerbi.microsoft.com/calculator/)
-[What is Power BI Premium?](service-premium.md)
-[Power BI Premium FAQ](service-premium-faq.md)
-[Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
+[Power BI pricing page](https://powerbi.microsoft.com/pricing/)   
+[Power BI Premium calculator](https://powerbi.microsoft.com/calculator/)   
+[Power BI Premium FAQ](service-premium-faq.md)   
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
