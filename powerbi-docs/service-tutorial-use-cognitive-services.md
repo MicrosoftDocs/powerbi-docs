@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial: Invoke a Machine Learning Studio model in Power BI (Preview)'
-description: In this tutorial you invoke a Machine Learning Studio model in Power BI.
+title: 'Tutorial: Use Cognitive Services in Power BI (Preview)'
+description: In this tutorial you use Cognitive Services and dataflows in Power BI.
 author: davidiseminger
 manager: kfile
 ms.reviewer: SarinaJoan
@@ -11,12 +11,12 @@ ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
-#customer intent: "As a Power BI end user, I want to use Machine Learning Studio models, so I can use machine learning models in Power BI."
+#customer intent: "As a Power BI end user, I want to use Cognitive Services, so I can use create dataflows in Power BI."
 
 LocalizationGroup: Connect to services
 ---
 
-# Tutorial: Using Cognitive Services in Power BI
+# Tutorial: Use Cognitive Services in Power BI
 
 Power BI provides access to a set of functions from Azure Cognitive Services to enrich your data in the self-service data prep for Dataflows. The services that are supported today are [Sentiment Analysis](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis), [Key Phrase Extraction](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-keyword-extraction), [Language Detection](https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection), and [Image Tagging](https://docs.microsoft.com/azure/cognitive-services/computer-vision/concept-tagging-images). The transformations are executed on the Power BI service and do not require an Azure Cognitive Services subscription. This feature requires Power BI Premium.
 
@@ -37,7 +37,7 @@ To complete this tutorial, you need the following:
 - A Power BI account. If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 - Access to a Power BI Premium capacity with the AI workload enabled. This workload will be turned off by default during preview. If you are in on a Premium capacity and AI Insights are not showing up, contact your Premium capacity admin to enable the AI workload in the admin portal.
 
-## Text Analytics
+## Text analytics
 
 Follow the steps in this section to complete the text analytics portion of the tutorial.
 
@@ -145,11 +145,17 @@ Next, sign in with your **organizational account**.
 
 ![Create a dataflow](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_19.png)
 
-Select the Tag Images function, enter _[Binary]_ in the column field and _en_ in the culture info field. (Note: you currently cannot pick a column using a dropdown, which will be resolved as soon as possible during the private preview).
+Select the Tag Images function, enter _[Binary]_ in the column field and _en_ in the culture info field. 
+
+> [!NOTE]
+> You currently cannot pick a column using a dropdown, which will be resolved as soon as possible during the private preview.
 
 ![Create a dataflow](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_20.png)
 
-In the function editor, remove the quotation marks around the column name. (Note: this is a temporary workaround and will be resolved as soon as possible).
+In the function editor, remove the quotation marks around the column name. 
+
+> [!NOTE]
+> Removing the quotation marks is a temporary workaround, which will be resolved as soon as possible during preview.
 
 ![Create a dataflow](media/service-tutorial-using-cognitive-services/tutorial-using-cognitive-services_21.png)
 

@@ -35,7 +35,7 @@ You can use these steps with any Azure ML model or dataset you already have. If 
 
 Follow the steps at [Deploy an Azure Machine Learning Studio web service](https://docs.microsoft.com/azure/machine-learning/studio/publish-a-machine-learning-web-service) to publish the Azure ML model as a web service.
 
-## Grant a Power BI user access to an Azure ML model
+## Grant a Power BI user access
 
 To access an Azure ML model from Power BI, you must have **Read** access to the Azure subscription and the resource group and **Read** access to the Azure Machine Learning Studio web service  for Machine Learning Studio models.  For Azure Machine Learning service model, you need **Read** access to the Machine Learning service workspace.
 
@@ -53,7 +53,7 @@ Then repeat the steps above to grant **Contributor** role access to the Power BI
 
 ## Create a dataflow
 
-### Get data for creating the dataflow in Power BI
+### Get data for creating the dataflow
 
 Sign in to the Power BI service with the user credentials for whom you granted access to the Azure ML model in the previous step.
 
