@@ -132,7 +132,7 @@ Yes, there are Powershell cmdlets and Azure Resource Manager APIs you can use to
 
 ### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
 
-To [promote your solution to production](embed-sample-for-customers.md#move-to-production), you need the Power BI content (app workspace that you are using in your application to be assigned to a Power BI Embedded (A SKU) capacity.
+To [promote your solution to production](embed-sample-for-customers.md#move-to-production), you need the Power BI content (app workspace) that you are using in your application to be assigned to a Power BI Embedded (A SKU) capacity.
 
 ### What are the Azure regions PBI Embedded is available?
 
