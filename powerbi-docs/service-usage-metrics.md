@@ -43,7 +43,7 @@ When you select **Usage metrics** or the icon ![usage metrics icon](media/servic
 
 Usage metrics reports won't show up in **Recent**, **Workspaces**, **Favorites**, or other content lists. They cannot be added to an app. If you pin a tile from a usage metrics report to a dashboard, that dashboard cannot be added to an app or content pack.
 
-To dig down into the report data, or to build your own reports against the dataset, use **Save as** (see [Save the Usage Metrics report as a full-featured Power BI report](#Save-the-Usage-Metrics-report-as-a-full-featured-Power-BI-report-(personalize)).
+To dig down into the report data, or to build your own reports against the dataset, use **Save as** (see [Save the Usage Metrics report as a full-featured Power BI report](#save-the-usage-metrics-report-as-a-full-featured-power-bi-report-personalize).
 
 ## Open a Usage Metrics report for a dashboard or report
 

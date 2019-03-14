@@ -45,7 +45,7 @@ Collaborating in Office 365 starts from the app workspace in Power BI.
 2. From this menu, you can collaborate with your group in a few ways: 
    
    * Have a [group conversation in Office 365](service-collaborate-power-bi-workspace.md#have-a-group-conversation-in-office-365).
-   * [Schedule an event](service-collaborate-power-bi-workspace.md#schedule-an-event-on-the-group-workspace-calendar) on the app's group workspace calendar.
+   * [Schedule an event](service-collaborate-power-bi-workspace.md#schedule-an-event-on-the-apps-group-workspace-calendar) on the app's group workspace calendar.
    
    The first time you go to your app's group workspace in Office 365, it may take some time. Give it 15 to 30 minutes, then refresh your browser.
 
