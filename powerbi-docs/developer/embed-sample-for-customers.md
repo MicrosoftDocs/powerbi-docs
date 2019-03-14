@@ -210,7 +210,7 @@ To get the **ApplicationSecret**, follow these steps:
 
 This attribute is needed only for the [service principal](embed-service-principal.md) AuthenticationType.
 
-Fill in the **tenant** information with your azure tenant ID. You can get this information either from the [Azure AD portal](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id#use-the-azure-ad-portal) when signed into the Power BI service or using Powershell.
+Fill in the **tenant** information with your azure tenant ID. You can get this information either from the [Azure AD admin center](/onedrive/find-your-office-365-tenant-id) when signed into the Power BI service or using Powershell.
 
 ### Run the application
 
@@ -300,7 +300,7 @@ For a full sample of using the JavaScript API, you can use the [Playground tool]
 
 Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** model along with views for a report.
 
-*A sample of adding a view for a report, dashboard, or tile is available within the Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml, or the Views\Home\Embedtile.cshtml files in the [sample application](#embed-your-content-within-a-sample-application).*
+*A sample of adding a view for a report, dashboard, or tile is available within the Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml, or the Views\Home\Embedtile.cshtml files in the [sample application](#embed-content-using-the-sample-application).*
 
 ```javascript
 <script src="~/scripts/powerbi.js"></script>

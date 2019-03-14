@@ -132,7 +132,7 @@ Yes, there are Powershell cmdlets and Azure Resource Manager APIs you can use to
 
 ### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
 
-To [promote your solution to production](https://docs.microsoft.com/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), you need the Power BI content (app workspace that you are using in your application to be assigned to a Power BI Embedded (A SKU) capacity.
+To [promote your solution to production](embed-sample-for-customers.md#move-to-production), you need the Power BI content (app workspace that you are using in your application to be assigned to a Power BI Embedded (A SKU) capacity.
 
 ### What are the Azure regions PBI Embedded is available?
 
@@ -162,7 +162,7 @@ To get an AAD token, you can use one of the [Azure Active Directory Authenticati
 
 ### My Application already uses AAD for User Authentication. How can we use this Identity when authenticating to Power BI in a "User Owns Data" scenario?
 
-It is standard OAuth on-behalf-of flow (https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api)
+It is standard OAuth on-behalf-of flow (<https://docs.microsoft.com/azure/active-directory/develop/web-api>)
 The Application needs to be configured to require permissions to Power BI service (with the required scopes), and once you have a user token to your app, you simply call to ADAL API AcquireTokenAsync using the user access token and specify Power BI resource URL as the resource ID, see below a code snippet showing how this can be done:
 
 ```csharp
@@ -340,7 +340,7 @@ If you're working with the **Embed for your organization** experience, save and 
 
 ### How can I edit my registered application?
 
-You can learn how to edit AAD registered applications [here](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application).
+To learn how to edit Azure AD-registered applications, see [Quickstart: Update an application in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app).
 
 ### How can I edit my Power BI user profile or data?
 

@@ -255,7 +255,7 @@ Power BI's integration with Azure AD B2B gives Contoso a seamless, hassle-free w
     > [!NOTE]
     > To invite guest users from the Azure portal, you need to an administrator for the Azure Active Directory of your tenant.
 
-    If Contoso wants to invite many guest users, they can do so using PowerShell. Contoso's Azure AD administrator stores the email addresses of all the guest users in a CSV file. Here are [Azure Active Directory B2B collaboration code and PowerShell samples](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-code-samples) and instructions.
+    If Contoso wants to invite many guest users, they can do so using PowerShell. Contoso's Azure AD administrator stores the email addresses of all the guest users in a CSV file. Here are [Azure Active Directory B2B collaboration code and PowerShell samples](https://docs.microsoft.com/azure/active-directory/b2b/code-samples) and instructions.
 
     After the invitation, guest users receive an email with the invitation link.
 
