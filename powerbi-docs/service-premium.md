@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/12/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -78,32 +78,7 @@ Power BI Premium is available in node configurations with different v-core capac
 
 ## Workloads in Premium capacity
 
-By default, capacities for **Power BI Premium** and **Power BI Embedded** support only the workload associated with running Power BI queries in the cloud. Premium also supports additional workloads for **AI**, **Dataflows**, and **Paginated reports**. You enable these workloads in the Power BI admin portal or through the Power BI REST API. You also set the maximum memory each workload can consume, so that you can control how the different workloads affect each other. To learn more, see [Configure workloads](service-admin-premium-workloads.md).
-
-### Default memory settings
-
-The following tables show the default and minimum memory values, based on the different [capacity nodes](#premium-capacity-nodes) available. Memory is dynamically allocated to dataflows, but it is statically allocated to paginated reports. For more information, see the next section, [Considerations for paginated reports](#considerations-for-paginated-reports).
-
-#### Microsoft Office SKUs for software as a service (SaaS) scenarios
-
-|                     | EM3                      | P1                       | P2                      | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Paginated reports | N/A | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
-| Dataflows | 20% default; 8% minimum  | 20% default; 4% minimum  | 20% default; 2% minimum | 20% default; 1% minimum  |
-| | | | | |
-
-#### Microsoft Azure SKUs for platform as a service (PaaS) scenarios
-
-|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
-|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| Paginated reports | N/A                      | N/A                      | N/A                     | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
-| Dataflows         | 27% default; 27% minimum | 20% default; 16% minimum | 20% default; 8% minimum | 20% default; 4% minimum  | 20% default; 2% minimum | 20% default; 1% minimum   |
-
-### Considerations for paginated reports
-
-If using the paginated reports workload, keep in mind paginated reports allow you to run your own code when rendering a report (such as dynamically changing text color based on content). Given this fact, we secure Power BI Premium capacity by running paginated reports in a contained space within the capacity. We assign the maximum memory you specify to this space, whether or not the workload is active. If you use Power BI reports or dataflows in the same capacity, make sure you set memory low enough for paginated reports that it doesn't negatively affect the other workloads.
-
-In rare circumstances, the paginated reports workload can become unavailable. In this case, the workload shows an error state in the admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload then enable it again.
+By default, Power BI Premium and Power BI Embedded capacities support only the workload associated with running Power BI queries in the cloud. Premium also supports additional workloads for **AI**, **Dataflows**, and **Paginated reports**. Before these workloads can use your capacity's resources, they must be enabled in the Power BI admin portal or through the Power BI REST API. Each workload has default settings for the maximum amount of memory each workload can consume. However, you can configure different memory consumption settings to determine how the workloads affect each other and consume your capacity resources. To learn more, see [Configure workloads](service-admin-premium-workloads.md).
 
 ## Power BI Report Server
 

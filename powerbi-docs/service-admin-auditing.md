@@ -53,7 +53,7 @@ The Power BI audit logs are available directly through the [Office 365 Security 
 
 ## Search only Power BI activities
 
-Restrict results to only Power BI activities by following these steps. For a list of activities, see the [list of activities audited by Power BI](#list-of-activities-audited-by-power-bi) later in this article.
+Restrict results to only Power BI activities by following these steps. For a list of activities, see the list of [activities audited by Power BI](#activities-audited-by-power-bi) later in this article.
 
 1. On the **Audit log search** page, under **Search**, select the drop down for **Activities**.
 
