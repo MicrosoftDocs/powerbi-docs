@@ -61,7 +61,7 @@ Follow the steps in the [Create an Azure Data Lake Storage Gen2 storage account]
 
 Next, you need to grant the Power BI service a reader role in your created storage account. It's a built-in role, so the steps are straightforward. 
 
-Follow the steps in the [Assign a built-in RBAC role](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role) article.
+Follow the steps in [Assign a built-in RBAC role](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role).
 
 In the **Add role assignment** window, select the **Reader** role to assign to the Power BI service. Then use search to locate **Power BI Service**. The following image shows the **Reader** role assigned to the Power BI service.
 
