@@ -147,6 +147,10 @@ You connect your **Azure Data Lake Storage Gen2** account with the following ste
 
 Once those steps are successfully completed, your Azure Data Lake Storage Gen2 account is connected to Power BI. 
 
+> [!NOTE]
+> To configure connection to Azure Data Lake Storage Gen2 in Power BI Admin Portal, you must have Global Administrator permission. Please note that B2B Global Admins cannot attach/connect external storage from Admin Portal.  
+
+
 Next you need to enable people in your organization to configure their workspaces, which enables them to use this storage account for dataflow definition and data storage. Let's do that in the next section. 
 
 
