@@ -268,4 +268,4 @@ Power BI is built on the foundation of Office 365, which in turn builds on Azure
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
-[1]: /powershell/scripting/overview
+[1]: https://docs.microsoft.com/powershell/scripting/overview
