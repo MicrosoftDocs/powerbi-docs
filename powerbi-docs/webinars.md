@@ -113,10 +113,6 @@ Watch recorded sessions at any time
 <br>by Angad Soni from Hitachi Solutions
 <br>[Register and watch now](https://info.microsoft.com/Transform-Your-Customer-Data-into-Retail-Success-OnDemandRegistration.html?LCID=EN-US?wt.mc_id=undefined)
 
-**5 Habits of a Successful Trend Curator - Rohit Bhargava**
-<br>by Rohit Bhargava from Non-Obvious
-<br>[Register and watch now](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
-
 **Proven Healthcare Solutions to Improve Both Patient Outcomes and Profitability**
 <br>by Stephen Cracknell and Stuart Macanliss from US Medical IT
 <br>[Register and watch now](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
@@ -128,6 +124,10 @@ Watch recorded sessions at any time
 **Applied Intelligence for Sales & Services**
 <br>by Ed Bobrin from Avanade
 <br>[Register and watch now](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
+
+**5 Habits of a Successful Trend Curator - Rohit Bhargava**
+<br>by Rohit Bhargava from Non-Obvious
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 **Manufacturers: Your industry is going through a digital transformation - Maintain leadership by leveraging analytics to maximize profitability**
 <br>by Jon Thompson from Blue Margin and Jim Pastor from Elgin Fastener Group
