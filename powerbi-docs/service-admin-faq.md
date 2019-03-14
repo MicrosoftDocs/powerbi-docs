@@ -81,7 +81,7 @@ There are three scenarios that might apply to users in your organization:
 
 There are steps you can take, as an admin, to prevent users from joining your existing Office 365 tenant. If you block access, users’ attempts to sign up fail, and they are directed to contact their organization’s admin. You do not need to repeat this process if you have already disabled automatic license distribution (e.g. through Office 365 for Education for Students, Faculty, and Staff).
 
-Use the following PowerShell script to prevent new users from joining a managed tenant. ([Learn more about PowerShell](/powershell/scripting/overview).)
+Use the following PowerShell script to prevent new users from joining a managed tenant. ([Learn more about PowerShell][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -95,7 +95,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $false
 
 ### How can I allow users to join my existing Office 365 tenant?
 
-Use the following PowerShell script to enable new users to join a managed tenant. ([Learn more about PowerShell](/powershell/scripting/overview).)
+Use the following PowerShell script to enable new users to join a managed tenant. ([Learn more about PowerShell][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -106,7 +106,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $true
 
 ### How do I verify if I have the block on in the tenant?
 
-Use the following PowerShell script to verify settings. *AllowEmailVerifiedUsers* should be false. ([Learn more about PowerShell](/powershell/scripting/overview).)
+Use the following PowerShell script to verify settings. *AllowEmailVerifiedUsers* should be false. ([Learn more about PowerShell][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -119,7 +119,7 @@ Get-MsolCompanyInformation | fl allow*
 
 The Azure AD setting that controls this is **AllowAdHocSubscriptions**. Most tenants have this setting set to true, which means it is enabled. If you acquired Power BI through a partner, this may be set to false, which means it is disabled.
 
-Use the following PowerShell script to disable ad hoc subscriptions. ([Learn more about PowerShell](/powershell/scripting/overview).)
+Use the following PowerShell script to disable ad hoc subscriptions. ([Learn more about PowerShell][1].)
 
 1. Sign into Azure Active Directory using your Office 365 credentials. The first line of the following PowerShell script prompts you for your credentials. The second line connects to Azure Active Directory.
 
@@ -267,3 +267,5 @@ Power BI is built on the foundation of Office 365, which in turn builds on Azure
 [Office 365 group management](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+
+[1]: /powershell/scripting/overview
