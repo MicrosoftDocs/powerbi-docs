@@ -8,6 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
+helpviewer_keywords: 
+  - "embedded analytics"
+  - "embedding"
+  - "Power BI embedding"
+  - "app owns data"
+  - "user owns data"
+  - "Power BI APIs"
 ms.custom: seodec18
 ms.date: 02/05/2019 
 ---

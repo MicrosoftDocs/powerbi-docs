@@ -1031,6 +1031,16 @@
       items:
       - name: "Push data into a dataset"
         href: developer/walkthrough-push-data.md
+      - name: "Register an app with Azure AD"
+        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
+      - name: "Get an authentication access token"
+        href: developer/walkthrough-push-data-get-token.md
+      - name: "Create a dataset"
+        href: developer/walkthrough-push-data-create-dataset.md
+      - name: "Get a dataset to add rows"
+        href: developer/walkthrough-push-data-get-datasets.md
+      - name: "Add rows to a table"
+        href: developer/walkthrough-push-data-add-rows.md
     - name: Concepts
       items:
       - name: "Automatic retention policy for real-time data"
@@ -1045,16 +1055,6 @@
           href: developer/api-data-model-versioning.md
     - name: How to
       items:
-      - name: "Register an app with Azure AD"
-        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
-      - name: "Get an authentication access token"
-        href: developer/walkthrough-push-data-get-token.md
-      - name: "Create a dataset"
-        href: developer/walkthrough-push-data-create-dataset.md
-      - name: "Get a dataset to add rows"
-        href: developer/walkthrough-push-data-get-datasets.md
-      - name: "Add rows to a table"
-        href: developer/walkthrough-push-data-add-rows.md
       - name: "Configure credentials"
         href: developer/configure-credentials.md
       - name: "Encrypt credentials"

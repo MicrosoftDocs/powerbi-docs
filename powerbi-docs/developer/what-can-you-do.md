@@ -8,7 +8,7 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
-ms.date: 09/17/2018
+ms.date: 03/15/2019
 #Customer intent: As a developer, I want to understand the capabilities of Power BI, so I have enough info to determine which Power BI developer features to use.
 ---
 
