@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
-ms.date: 11/06/2018
+ms.date: 15/03/2019
 ---
 
 # Tutorial: Developing a Power BI custom visual
