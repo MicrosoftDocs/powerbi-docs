@@ -62,15 +62,15 @@ Power BI Premium is available in node configurations with different v-core capac
 
 * EM nodes can be used for embedded deployments only. EM nodes do not have access to premium capabilities, such as sharing apps to users that don't have a Power BI Pro license.
 
-| Capacity Node | Total v-cores<br/>*(Backend+frontend)*  | Backend V-Cores <sup>[1](#fn1)</sup> | Frontend V-Cores <sup>[2](#fn2)</sup> | DirectQuery/live connection limits | Max concurrent refreshes |  Availability
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| EM1 (month to month) |1 v-core |0.5 v-cores, 2.5-GB RAM |0.5 v-cores |3.75 per second |  1 | Available |
-| EM2 (month to month) |2 v-cores |1 v-core, 5-GB RAM |1 v-core |7.5 per second |  2 | Available |
-| EM3 (month to month) |4 v-cores |2 v-cores, 10-GB RAM |2 v-cores | | 3 |  Available |
-| P1 |8 v-cores |4 v-cores, 25-GB RAM |4 v-cores |30 per second | 6 | Available (month to month is also available) |
-| P2 |16 v-cores |8 v-cores, 50-GB RAM |8 v-cores |60 per second | 12 | Available |
-| P3 |32 v-cores |16 v-cores, 100-GB RAM |16 v-cores |120 per second | 24 | Available |
-| | | | | | | |
+| Capacity Node | Total v-cores<br/>*(Backend+frontend)*  | Backend V-Cores <sup>[1](#fn1)</sup> | Frontend V-Cores <sup>[2](#fn2)</sup> | DirectQuery/live connection limits | Max concurrent refreshes |
+| --- | --- | --- | --- | --- | --- | --- | 
+| EM1 (month to month) |1 v-core |0.5 v-cores, 2.5-GB RAM |0.5 v-cores |3.75 per second |  1 |
+| EM2 (month to month) |2 v-cores |1 v-core, 5-GB RAM |1 v-core |7.5 per second |  2 |
+| EM3 (month to month) |4 v-cores |2 v-cores, 10-GB RAM |2 v-cores | | 3 |
+| P1 |8 v-cores |4 v-cores, 25-GB RAM |4 v-cores |30 per second | 6 |
+| P2 |16 v-cores |8 v-cores, 50-GB RAM |8 v-cores |60 per second | 12 |
+| P3 |32 v-cores |16 v-cores, 100-GB RAM |16 v-cores |120 per second | 24 |
+| | | | | | |
 
 <a name="fn1">1</a>: Frontend v-cores are responsible for the web service. For example, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything that relates to the user experience. 
 
