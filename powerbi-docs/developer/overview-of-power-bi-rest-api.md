@@ -61,9 +61,7 @@ The sections in this topic helps you understand the format of requests and respo
 
 Every request must have a bearer token issued by Azure Active Directory attached. The token carries information about your app, the signed-in user (in the case of delegated permissions), authentication, and the operations on the directory that your app is authorized to perform. This token is carried in the Authorization header of the request. For example (the token has been shortened for brevity):
 
-no-highlight
 
-Copy
 Authorization: Bearer eyJ0eXAiOiJK ... R2us_QgOQ
 
 The Power BI API performs authorization based on OAuth 2.0 permission scopes present in the token.
