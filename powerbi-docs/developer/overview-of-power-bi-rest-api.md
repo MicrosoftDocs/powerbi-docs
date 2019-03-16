@@ -63,9 +63,9 @@ Every request must have a bearer token issued by Azure Active Directory attached
 
 For example, the token has been shortened for brevity:
 
-    ```json
-    Authorization: Bearer eyJ0eXAiOiJK ... R2us_QgOQ
-    ```
+   ```json
+   Authorization: Bearer eyJ0eXAiOiJK ... R2us_QgOQ
+   ```
 
 The Power BI API does authorization based on OAuth 2.0 permission scopes present in the token.
 
@@ -79,9 +79,9 @@ To perform operations with the Graph API, you send HTTP requests with a supporte
 
 The HTTP call below describes the basic format of a Power API endpoint:
 
-    ```https
-    https://api.powerbi.com/v1.0/myorg/admin/dashboards
-    ```
+   ```https
+   https://api.powerbi.com/v1.0/myorg/admin/dashboards
+   ```
 
 The following components comprise the URL:
 
