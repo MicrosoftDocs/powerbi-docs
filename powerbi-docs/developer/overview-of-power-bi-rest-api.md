@@ -71,7 +71,7 @@ The Power BI API does authorization based on OAuth 2.0 permission scopes present
 
 For your app to authenticate with Azure AD and call the APIs, you must add it to your tenant and configure it to require permissions (OAuth 2.0 permission scopes) for Windows Azure Active Directory. For information about adding and configuring an app, see [Register an Azure AD application to use with Power BI](register-app.md)
 
-Azure AD uses the OAuth 2.0 authentication protocol. You can learn more about OAuth 2.0 in Azure AD, including supported flows and access tokens in [OAuth 2.0 in Azure AD](https://docs.microsoft.com/previous-versions/azure/dn645545(v=azure.100)).
+Azure AD uses the OAuth 2.0 authentication protocol. You can learn more about OAuth 2.0 in Azure AD, including supported flows and access tokens in OAuth 2.0 in Azure AD.
 
 ## Endpoint addressing
 
