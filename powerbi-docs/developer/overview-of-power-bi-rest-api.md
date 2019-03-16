@@ -1,3 +1,16 @@
+---
+title: What can I do with the Power BI API
+description: What can I do with the Power BI API
+author: markingmyname
+ms.author: maghan
+manager: kfile
+ms.reviewer: ''
+ms.service: powerbi
+ms.subservice: powerbi-developer
+ms.topic: conceptual
+ms.date: 03/15/2019
+---
+
 # What can developers do with the Power BI API?
 
 Power BI displays interactive dashboards, that are created, and updated from many different data sources in real time. Using any programming language that supports REST calls, you can create apps that integrate with a Power BI dashboard in real time. You can also integrate Power BI tiles and reports into apps.
