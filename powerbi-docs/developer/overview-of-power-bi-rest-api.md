@@ -111,6 +111,5 @@ Request bodies for POST, PATCH, and PUT requests can be sent in JSON payloads. S
 * [Developing a Power BI custom visual](custom-visual-develop-tutorial.md)
 * [Power BI REST API Reference](rest-api-reference.md)
 * [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/)
-* [Overview of Microsoft Graph](https://docs.microsoft.com/graph/overview)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
