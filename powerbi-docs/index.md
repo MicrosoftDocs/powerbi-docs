@@ -31,7 +31,7 @@ ms:date: 10/26/2018
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Power BI for report consumers</h3>
+                                                    <h3>Power BI for consumers</h3>
                                                     <p>Getting started with Power BI? Get to know the different products and services that make up Power BI, and see what you can do with them.</p>
                                                 </div>
                                             </div>
