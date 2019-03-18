@@ -984,7 +984,7 @@
       - name: "Custom visuals for organizations in Power BI"
         href: power-bi-custom-visuals-organization.md
       - name: "Guidelines for Power BI visuals" 
-        href: developer/guidelines-for-powerbi-visuals.md
+        href: developer/guidelines-powerbi-visuals.md
       - name: "Custom visuals FAQ"
         href: power-bi-custom-visuals-faq.md
       - name: "Using Capabilities"

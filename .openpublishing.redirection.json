@@ -787,7 +787,7 @@
         },
         {
             "source_path": "powerbi-docs/office-store-in-app-purchase-visual-guidelines.md",
-            "redirect_url": "/power-bi/guidelines-for-powerbi-visuals",
+            "redirect_url": "/power-bi/guidelines-powerbi-visuals",
             "redirect_document_id": true
         }
     ]
