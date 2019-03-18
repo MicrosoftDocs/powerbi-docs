@@ -75,9 +75,9 @@ It's important to note that if you remove the workspace from Power BI Premium ca
 
 When working with dataflows specifically created in an organization's Azure Data Lake Storage Gen2 account, linked entities and computed entities only work properly when the entities reside in the same storage account. For more information, see [connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)](service-dataflows-connect-azure-data-lake-storage-gen2.md).
 
-Linked entities is not available for dataflows that are created from CDM folders. See [add a CDM folder to Power BI as a dataflow (Preview)](service-dataflows-add-cdm-folder.md).
+Linked entities are not available for dataflows that are created from Common Data Model (CDM) folders. For more information, see [add a CDM folder to Power BI as a dataflow (Preview)](service-dataflows-add-cdm-folder.md).
 
-Another thing to take into consideration, if you need to do computation on on-prem data and cloud data joined, create a new entity that does this computation rather than one entity that do both querying the extrnal on-prem data and in-lake transformation on other cloud data.
+There is one other thing to take into consideration if you need to perform computations on on-premises data that is joined to cloud data. For this case, create a new entity that performs this computation rather than one entity that both queries the on-premises data and performs in-lake transformations on the cloud data.
 
 ## Next Steps
 
