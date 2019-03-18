@@ -38,9 +38,9 @@ There are seven tabs in the portal. The rest of this article provides informatio
 * [Users](#users)
 * [Audit logs](#audit-logs)
 * [Tenant settings](#tenant-settings)
-* [Premium settings](#premium-settings)
+* [Capacity settings](#capacity-settings)
 * [Embed codes](#embed-codes)
-* [Organizational visuals](#organization-visuals)
+* [Organizational visuals](#organizational-visuals)
 
 ## Usage metrics
 
@@ -252,10 +252,8 @@ Power BI Desktop (starting from March '19 release) supports using **Group Policy
 <table>
 <tr><th>Attribute</th><th>Value</th>
 </tr>
-<tr>
 <td>key</td>
-<td>Software\Policies\Microsoft\Power BI Desktop&lt;/td&gt;
-</tr>
+    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
 <tr>
 <td>valueName</td>
 <td>EnableCustomVisuals</td>
@@ -276,10 +274,8 @@ Power BI Desktop (starting from March '19 release) supports using **Group Policy
 <table>
 <tr><th>Attribute</th><th>Value</th>
 </tr>
-<tr>
 <td>key</td>
-<td>Software\Policies\Microsoft\Power BI Desktop&lt;/td&gt;
-</tr>
+    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
 <tr>
 <td>valueName</td>
 <td>EnableUncertifiedVisuals</td>
