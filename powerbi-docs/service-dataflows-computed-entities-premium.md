@@ -77,7 +77,7 @@ When working with dataflows specifically created in an organization's Azure Data
 
 Linked entities are not available for dataflows that are created from Common Data Model (CDM) folders. For more information, see [add a CDM folder to Power BI as a dataflow (Preview)](service-dataflows-add-cdm-folder.md).
 
-There is one other thing to take into consideration if you need to perform computations on on-premises data that is joined to cloud data. For this case, create a new entity that performs this computation rather than one entity that both queries the on-premises data and performs in-lake transformations on the cloud data.
+As a best practice, when doing computations on data joined by on-premises and cloud data, create a new entity to perform such computations. This provides a better experience than using an existing entity for computations, such as an entity that is also querying data from both sources and doing in-lake transformations.
 
 ## Next Steps
 
