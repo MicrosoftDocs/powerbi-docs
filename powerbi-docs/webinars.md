@@ -35,6 +35,10 @@ Get started with these popular on-demand webinars
 <br>by Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)
 
+**Get Started with the Power BI Mobile App**
+<br>by Maya Shenhav
+<br>[Register and watch now](https://info.microsoft.com/ww-Landing-Getting-Started-with-the-Power-BI-Mobile-App-Video.html?LCID=EN-US)
+
 **Learn to Navigate Your Way Through a Power BI Dashboard in 20 Minutes**
 <br>by Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
