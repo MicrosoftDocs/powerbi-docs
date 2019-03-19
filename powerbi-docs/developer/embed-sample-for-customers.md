@@ -17,6 +17,8 @@ ms.date: 02/05/2019
 
 With **Power BI Embedded in Azure**, you can embed reports, dashboards, or tiles into an application using app owns data. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. As an **ISV developer**, you can create Power BI content that displays reports, dashboards, or tiles in an application that is fully integrated and interactive, without requiring users to have a Power BI license. This tutorial demonstrates how to integrate a report into an application using the Power BI .NET SDK with the Power BI JavaScript API using **Power BI Embedded in Azure** for your customers.
 
+![Power BI Embed Report](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
+
 In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Register an application in Azure.
@@ -208,7 +210,7 @@ To get the **ApplicationSecret**, follow these steps:
 
 This attribute is needed only for the [service principal](embed-service-principal.md) AuthenticationType.
 
-Fill in the **tenant** information with your azure tenant ID. You can get this information either from the [Azure AD portal](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id#use-the-azure-ad-portal) when signed into the Power BI service or using Powershell.
+Fill in the **tenant** information with your azure tenant ID. You can get this information from the [Azure AD admin center](/onedrive/find-your-office-365-tenant-id) when signed into the Power BI service or by using Powershell.
 
 ### Run the application
 
@@ -298,7 +300,7 @@ For a full sample of using the JavaScript API, you can use the [Playground tool]
 
 Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** model along with views for a report.
 
-*A sample of adding a view for a report, dashboard, or tile is available within the Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml, or the Views\Home\Embedtile.cshtml files in the [sample application](#embed-your-content-within-a-sample-application).*
+*A sample of adding a view for a report, dashboard, or tile is available within the Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml, or Views\Home\Embedtile.cshtml files in the [sample application](#embed-content-using-the-sample-application).*
 
 ```javascript
 <script src="~/scripts/powerbi.js"></script>

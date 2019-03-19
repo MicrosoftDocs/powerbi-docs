@@ -38,9 +38,9 @@ There are seven tabs in the portal. The rest of this article provides informatio
 * [Users](#users)
 * [Audit logs](#audit-logs)
 * [Tenant settings](#tenant-settings)
-* [Premium settings](#premium-settings)
+* [Capacity settings](#capacity-settings)
 * [Embed codes](#embed-codes)
-* [Organizational visuals](#organization-visuals)
+* [Organizational visuals](#organizational-visuals)
 
 ## Usage metrics
 
@@ -246,10 +246,45 @@ Users in the organization can interact with and share custom visuals. [Learn mor
 > [!NOTE]
 > This setting can be applied to the entire organization or can be limited to specific groups.
 
+
+Power BI Desktop (starting from March '19 release) supports using **Group Policy** to disable the usage of custom visuals across an organization's deployed computers.
+
+<table>
+<tr><th>Attribute</th><th>Value</th>
+</tr>
+<td>key</td>
+    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
+<tr>
+<td>valueName</td>
+<td>EnableCustomVisuals</td>
+</tr>
+</table>
+
+A value of 1 (decimal) enables the use of custom visuals in Power BI (This is the default).
+
+A value of 0 (decimal) disable the use of custom visuals in Power BI.
+
 ### Allow only certified visuals
 
 Users in the organization who have been granted permissions to add and use custom visuals, denoted by the setting "Add and use custom visuals", will only be able to use [certified custom visuals](https://go.microsoft.com/fwlink/?linkid=2002010) (uncertified visuals will be blocked and will display an error message when used). 
 
+
+Power BI Desktop (starting from March '19 release) supports using **Group Policy** to disable the usage of uncertified custom visuals across an organization's deployed computers.
+
+<table>
+<tr><th>Attribute</th><th>Value</th>
+</tr>
+<td>key</td>
+    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
+<tr>
+<td>valueName</td>
+<td>EnableUncertifiedVisuals</td>
+</tr>
+</table>
+
+A value of 1 (decimal) enables the use of uncertified custom visuals in Power BI (This is the default).
+
+A value of 0 (decimal) disable the use of uncertified custom visuals in Power BI (This option enables only the use of [certified custom visuals](https://go.microsoft.com/fwlink/?linkid=2002010)).
 
 ## R visuals settings
 

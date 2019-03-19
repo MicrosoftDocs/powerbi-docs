@@ -1,10 +1,10 @@
 ---
 title: Troubleshooting how to develop Power BI custom visuals
 description: This article discusses some common issues you may encounter when developing or creating a custom Power BI visual.
-author: markingmyname
-ms.author: maghan
+author: sranins
+ms.author: rasala
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
