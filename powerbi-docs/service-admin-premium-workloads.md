@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/12/2019
+ms.date: 03/15/2019
 
 LocalizationGroup: Premium
 ---
 
 # Configure workloads in a Premium capacity
 
-This article describes enabling and configuring workloads for Power BI Premium capacities. By default, capacities support only the workload associated with running Power BI queries. You can also enable and configure additional workloads for **[AI (Cognitive Services)](https://powerbi.microsoft.com/blog/easy-access-to-ai-in-power-bi-preview/)**, **[Dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)**, and **[Paginated reports](paginated-reports-save-to-power-bi-service.md)**.
+This article describes enabling and configuring workloads for Power BI Premium capacities. By default, capacities support only the workload associated with running Power BI queries. You can also enable and configure additional workloads for **[AI (Cognitive Services)](service-cognitive-services.md)**, **[Dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)**, and **[Paginated reports](paginated-reports-save-to-power-bi-service.md)**.
 
 ## Default memory settings
 
@@ -23,18 +23,21 @@ Query workloads are optimized for and limited by resources determined by your Pr
 
 ### Microsoft Office SKUs for software as a service (SaaS) scenarios
 
-|                     | EM3                      | P1                       | P2                      | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Paginated reports | N/A | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
-| Dataflows | 20% default; 12% minimum  | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum  |
-| | | | | |
+|                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
+|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
+| AI (Cognitive Services) | 20% default; min TBD| 20% default; min TBD | 20% default; min TBD | 20% default; min TBD | 20% default; min TBD |
+| Dataflows | N/A |20% default; 12% minimum  | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum  |
+| Paginated reports | N/A |N/A | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
+| | | | | | |
 
 ### Microsoft Azure SKUs for platform as a service (PaaS) scenarios
 
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| Paginated reports | N/A                      | N/A                      | N/A                     | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
+| AI (Cognitive Services) | N/A                      | 20% default; min TBD                      | 20% default; min TBD                     | 20% default; min TBD | 20% default; min TBD | 20% default; min TBD |
 | Dataflows         | 40% default; 40% minimum | 24% default; 24% minimum | 20% default; 12% minimum | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum   |
+| Paginated reports | N/A                      | N/A                      | N/A                     | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
+| | | | | | |
 
 ## Configure workloads
 
