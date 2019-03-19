@@ -7,10 +7,9 @@ manager: kfile
 ms.reviewer: maghan
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 11/21/2018
+ms.date: 03/10/2019
 ---
 
 # Certified custom visuals
@@ -70,6 +69,7 @@ To submit a custom visual for certification:
 
 | Link to AppSource | Link to video |
 | --- | --- |
+| [3AG Systems - Bar Chart With Relative Variance](https://appsource.microsoft.com/en/product/power-bi-visuals/WA104381912) | |
 | [3AG Systems - Column Chart With Relative Variance](https://appsource.microsoft.com/product/power-bi-visuals/WA104381803) | |
 | [Advanced Donut Visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104381941) | |
 | [Advanced Network Visualization](https://appsource.microsoft.com/product/power-bi-visuals/WA104381942) | |

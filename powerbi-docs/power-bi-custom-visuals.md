@@ -154,7 +154,7 @@ You have two options for downloading and importing custom visuals; from within P
 
 6. Save the '.pbiviz' file and then open Power BI.
 
-7. Import the '.pbiviz' file into your report (See [Import a custom visual from a file](#import-a-custom-visuals-from-a-file) section above)
+7. Import the '.pbiviz' file into your report. (See the [Import a custom visual from a file](#import-a-custom-visual-from-a-file) section above.)
 
 ## Considerations and limitations
 

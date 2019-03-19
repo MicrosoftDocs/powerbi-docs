@@ -41,24 +41,42 @@ The second is for the actual windows service that interacts with the Power BI se
 ## Configuring proxy settings
 The default proxy configuration is the following.
 
-    <system.net>
-        <defaultProxy useDefaultCredentials="true" />
-    </system.net>
+```
+<system.net>
+    <defaultProxy useDefaultCredentials="true" />
+</system.net>
+```
+
 
 The default configuration works with Windows authentication. If your proxy uses another form of authentication, you will need to change the settings. If you are not sure, you should contact your network administrator. Basic proxy authentication is not recommended, and attempting to use basic proxy authentication may cause proxy authentication errors that result in the gateway not being properly configured. Use a stronger proxy authentication mechanism to resolve.
 
 In addition to using default credentials, you can add a <proxy> element to define proxy server settings in more detail. For example, you can specify that your On-premises data gateway should always use the proxy even for local resources by setting the bypassonlocal parameter to false. This can help in troubleshooting situations if you want to track all https requests originating from an On-premises data gateway in the proxy log files. The following sample configuration specifies that all requests must go through a specific proxy with the IP address 192.168.1.10.
 
-    <system.net>
-        <defaultProxy useDefaultCredentials="true">
-            <proxy  
-                autoDetect="false"  
-                proxyaddress="http://192.168.1.10:3128"  
-                bypassonlocal="false"  
-                usesystemdefault="true"
-            />  
-        </defaultProxy>
-    </system.net>
+```
+<system.net>
+    <defaultProxy useDefaultCredentials="true">
+        <proxy  
+            autoDetect="false"  
+            proxyaddress="http://192.168.1.10:3128"  
+            bypassonlocal="false"  
+            usesystemdefault="true"
+        />  
+    </defaultProxy>
+</system.net>
+```
+
+Additionally, for the gateway to connect to cloud data sources through a proxy, update the following file:
+*C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe*. In the file, expand the `<configurations>` section to include the contents below, and update `proxyaddress` attribute with your proxy information. The following example would route all cloud requests via a specific proxy with the IP address 192.168.1.10.
+
+```
+<configuration>
+<system.net>
+    <defaultProxy useDefaultCredentials="true" enabled="true">
+    <proxy proxyaddress=""http://192.168.1.10:3128" bypassonlocal="true" />
+    </defaultProxy>
+</system.net>
+</configuration>
+```
 
 To learn more about the configuration of the proxy elements for .NET configuration files, see [defaultProxy Element (Network Settings)](https://msdn.microsoft.com/library/kd3cf2ex.aspx).
 

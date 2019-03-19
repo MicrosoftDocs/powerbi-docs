@@ -61,7 +61,7 @@ Follow the steps in the [Create an Azure Data Lake Storage Gen2 storage account]
 
 Next, you need to grant the Power BI service a reader role in your created storage account. It's a built-in role, so the steps are straightforward. 
 
-Follow the steps in the [Assign a role to a security principal](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-role-to-a-security-principal) article.
+Follow the steps in [Assign a built-in RBAC role](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role).
 
 In the **Add role assignment** window, select the **Reader** role to assign to the Power BI service. Then use search to locate **Power BI Service**. The following image shows the **Reader** role assigned to the Power BI service.
 
@@ -146,6 +146,9 @@ You connect your **Azure Data Lake Storage Gen2** account with the following ste
 6. Select **Connect**.
 
 Once those steps are successfully completed, your Azure Data Lake Storage Gen2 account is connected to Power BI. 
+
+> [!NOTE]
+> To configure a connection to Azure Data Lake Storage Gen2 in the Power BI admin portal, you must have Global Administrator permissions. However, Global Administrators cannot connect external storage in the admin portal.  
 
 Next you need to enable people in your organization to configure their workspaces, which enables them to use this storage account for dataflow definition and data storage. Let's do that in the next section. 
 
