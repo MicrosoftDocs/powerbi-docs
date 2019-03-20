@@ -55,7 +55,7 @@ Follow these steps to use the connector:
 
     ![Select-version dialog box](media/desktop-connect-graph-security/selectVersion.PNG)
     
-5. Sign in to your Azure Active Directory account when you're prompted. This account needs to have the *Security Reader* role, as mentioned in the previous section.
+5. Sign in to your Azure Active Directory account when you're prompted. This account needs to have the *Security Reader* or *Security Administrator* role, as mentioned in the previous section.
 
     ![Sign in](media/desktop-connect-graph-security/SignIn.PNG) 
     
