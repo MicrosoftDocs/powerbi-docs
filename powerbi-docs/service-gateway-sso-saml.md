@@ -58,8 +58,6 @@ The resulting IdP certificate will be valid for a year (see the -days option). N
 
     ![Identity providers](media/service-gateway-sso-saml/identity-providers.png)
 
-    It is also possible to use the SAP Cryptographic Library (also known as CommonCryptoLib or sapcrypto) instead of OpenSSL to complete these setup steps. Please refer to the official SAP documentation for further information.
-
 1. Select **Import**, navigate to IdP_Cert.pem,and import it.
 
 1. In SAP HANA Studio, select the **Security** folder.
