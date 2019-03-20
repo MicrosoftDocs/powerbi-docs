@@ -21,31 +21,30 @@ The Microsoft Graph Security API connects [multiple security solutions](https://
 
 ## Prerequisites to use the Microsoft Graph Security connector
 
-* To use the Microsoft Graph Security connector, you must *explicitly* get consent by the Azure Active Directory (Azure AD) tenant administrator. See 
+To use the Microsoft Graph Security connector, you must *explicitly* get consent by the Azure Active Directory (Azure AD) tenant administrator. See 
 [Microsoft Graph Security authentication requirements](https://aka.ms/graphsecurityauth).
 Consent requires the connector's application ID and name, which is cited here and is available in the [Azure portal](https://portal.azure.com):
 
-   | Property | Value |
-   |----------|-------|
-   | **Application name** | `MicrosoftGraphSecurityPowerBIConnector` |
-   | **Application ID** | `cab163b7-247d-4cb9-be32-39b6056d4189` |
-   |||
+| Property | Value |
+|----------|-------|
+| **Application name** | `MicrosoftGraphSecurityPowerBIConnector` |
+| **Application ID** | `cab163b7-247d-4cb9-be32-39b6056d4189` |
+|||
 
-   To grant consent for the connector, your Azure AD tenant
-   administrator can use either of these methods:
+To grant consent for the connector, your Azure AD tenant administrator can use either of these methods:
 
-   * [Grant consent for Azure AD applications](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent)
+* [Grant consent for Azure AD applications](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent)
 
-   * Respond to a request that your logic app submits during its first run through the
+* Respond to a request that your logic app submits during its first run through the
    [application-consent experience](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)
    
-* The user account that signs in to the Microsoft Graph Security connector must be a member of the Security Reader Limited Admin role in Azure AD, either as *Security Reader* or *Security Administrator*. See [Assign Azure AD roles to users](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
+The user account that signs in to the Microsoft Graph Security connector must be a member of the Security Reader Limited Admin role in Azure AD, either as *Security Reader* or *Security Administrator*. See [Assign Azure AD roles to users](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
 
 ## Using the Microsoft Graph Security connector
 
 Follow these steps to use the connector:
 
-1. Select **Get Data** -> **More** from the **Home** ribbon in Power BI Desktop.
+1. Select **Get Data** > **More** from the **Home** ribbon in Power BI Desktop.
 2. Select **Online Services** from the categories list on the left side of the window.
 3. Select **Microsoft Graph Security (Beta)**.
 
