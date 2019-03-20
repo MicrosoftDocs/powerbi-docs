@@ -48,7 +48,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Get started creating with Power BI" src="media/power-bi-creator-landing/power-bi-designer-get-started.svg" data-linktype="relative-path">
+                                                <img alt="Power BI licensing" src="media/power-bi-creator-landing/power-bi-designer-licensing.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
@@ -67,7 +67,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Get started creating with Power BI" src="media/power-bi-creator-landing/power-bi-designer-get-started.svg" data-linktype="relative-path">
+                                                <img alt="Connect to data with Power BI" src="media/power-bi-creator-landing/power-bi-designer-connect-data.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
@@ -87,7 +87,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Get started creating with Power BI" src="media/power-bi-creator-landing/power-bi-designer-get-started.svg" data-linktype="relative-path">
+                                                <img alt="Transform and shape data with Power BI" src="media/power-bi-creator-landing/power-bi-designer-transform-shape-data.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
@@ -107,7 +107,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Get started creating with Power BI" src="media/power-bi-creator-landing/power-bi-designer-get-started.svg" data-linktype="relative-path">
+                                                <img alt="Modeling data and relationships with Power BI" src="media/power-bi-creator-landing/power-bi-designer-modeling-data-relationships.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
@@ -127,7 +127,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Get started creating with Power BI" src="media/power-bi-creator-landing/power-bi-designer-get-started.svg" data-linktype="relative-path">
+                                                <img alt="Create reports, visuals, and dashboards with Power BI" src="media/power-bi-creator-landing/power-bi-designer-create-reports-visuals-dashboards.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
@@ -147,7 +147,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Get started creating with Power BI" src="media/power-bi-creator-landing/power-bi-designer-get-started.svg" data-linktype="relative-path">
+                                                <img alt="Share your work in Power BI" src="media/power-bi-creator-landing/power-bi-designer-share-work.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
@@ -166,7 +166,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Get started creating with Power BI" src="media/power-bi-creator-landing/power-bi-designer-get-started.svg" data-linktype="relative-path">
+                                                <img alt="Develop for Power BI" src="media/power-bi-creator-landing/power-bi-designer-develop-power-bi.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
@@ -186,7 +186,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                               <div class="card"> 
                                     <div class="cardImageOuter">
                                           <div class="cardImage">
-                                                <img alt="Get started creating with Power BI" src="media/power-bi-creator-landing/power-bi-designer-get-started.svg" data-linktype="relative-path">
+                                                <img alt="Administer Power BI" src="media/power-bi-creator-landing/power-bi-designer-administer-power-bi.svg" data-linktype="relative-path">
                                           </div>
                                     </div>
                                     <div class="cardText"> 
