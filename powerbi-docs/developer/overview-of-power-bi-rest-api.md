@@ -14,9 +14,9 @@ ms.date: 05/25/2018
 # What can developers do with the Power BI API?
 
 [Please, rephrase the below]
-Using Power BI REST API, you can create apps that embed Power BI reports or perform management tasks on Power BI reports, datasets and workspaces. For full Power BI reference go here [provide a link]. It is also possible to integrate Power BI tiles and dashboards into apps.
+Using Power BI REST API, you can create apps that embed Power BI reports. It is also possible to integrate Power BI tiles and dashboards into apps.
 
-Developers can also build their own custom visuals that can be used in interactive reports and dashboards.
+With Power BI REST API it is possible to perform management tasks on Power BI objects like reports, datasets and workspaces.
 
 Here are some of the things you can do with the Power BI APIs.
 
@@ -24,7 +24,6 @@ Here are some of the things you can do with the Power BI APIs.
 | --- | --- |
 | Embed reports, dashboards and tiles for Power BI users and Non-Power BI users. |[How to embed your Power BI dashboards, reports, and tiles](embedding-content.md) |
 | Perform management tasks on Power BI objects. |[Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/) |
-| Create a custom visual. |[Developing a Power BI custom visual](custom-visual-develop-tutorial.md) |
 
 > [!NOTE]
 > The Power BI APIs still refer to app workspaces as groups. Any references to groups mean that you are working with app workspaces.
