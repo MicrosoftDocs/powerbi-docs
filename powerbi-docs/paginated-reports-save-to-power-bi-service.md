@@ -15,7 +15,7 @@ ms.date: 11/05/2018
 
 In this article, you learn about publishing a paginated report to the Power BI service by uploading it from your local computer. You can upload paginated reports to your My Workspace or any other workspace, as long as the workspace is in a Premium capacity. Look for the diamond icon ![Power BI Premium capacity diamond icon](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) next to the workspace name. 
 
-If your report data source is on premises, then you need to [create a gateway](#create-a-gateway-to-an-on-premises-data-source) after you upload the report.
+If your report data source is on premises, then you need to [create a gateway](#create-a-gateway) after you upload the report.
 
 ## Add a workspace to a Premium capacity
 
