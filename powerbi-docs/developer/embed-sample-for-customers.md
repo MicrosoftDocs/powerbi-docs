@@ -393,13 +393,9 @@ Follow the steps below to assign a dedicated capacity to a workspace using a **m
 
 ## Next steps
 
-In this tutorial, you've learned how to embed Power BI content into an application for your customers. You can also try to embed Power BI content for your organization or for your customers using the national clouds.
+In this tutorial, you've learned how to embed Power BI content into an application for your customers. You can also try to embed Power BI content for your organization.
 
 > [!div class="nextstepaction"]
 >[Embed for your organization](embed-sample-for-your-organization.md)
-
-> [!div class="nextstepaction"]
->[Embed for your customers in the national clouds](embed-sample-for-customers-national-clouds.md)
-
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
