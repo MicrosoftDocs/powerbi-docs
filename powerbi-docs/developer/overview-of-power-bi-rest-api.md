@@ -59,9 +59,6 @@ Choose the solution that is right for you:
 For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). This tool is a quick way to play with different types of Power BI Embedded samples. You also can get more information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
 
 ## Next steps
-
-[Push data into a dataset](walkthrough-push-data.md)  
-[Developing a Power BI custom visual](custom-visual-develop-tutorial.md)  
 [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
