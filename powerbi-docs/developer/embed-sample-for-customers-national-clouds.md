@@ -41,7 +41,10 @@ To integrate a dashboard into a web app, you use the **Power BI** API, and an Az
 
 ## Download the sample
 
-This article shows the code used in the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) on GitHub. To follow along with this walkthrough, you can download the sample.
+This article shows the code used in the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) on GitHub. To follow along with this walkthrough, you can download the sample. 
+
+> [!Note]
+> GCC accounts only support P and EM capacities.
 
 ![App Owns Data sample](media/embed-sample-for-customers-national-clouds/embed-sample-for-customers-026.png)
 
@@ -436,7 +439,5 @@ An application sample of this is available within the [Embedding for your organi
 * [How to migrate Power BI Workspace Collection Workspace Collection content to Power BI](migrate-from-powerbi-embedded.md)
 
 Considerations and limitations
-
-* GCC accounts only support P and EM capacities now
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
