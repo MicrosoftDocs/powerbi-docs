@@ -43,12 +43,12 @@ To integrate a dashboard into a web app, you use the **Power BI** API, and an Az
 
 This article shows the code used in the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) on GitHub. To follow along with this walkthrough, you can download the sample. 
 
-> [!Note]
-> GCC accounts only support P and EM capacities.
-
 ![App Owns Data sample](media/embed-sample-for-customers-national-clouds/embed-sample-for-customers-026.png)
 
 * Government Community Cloud (GCC):
+
+> [!Note]
+> GCC accounts only support P and EM capacities.
 
 1. Overwrite Cloud.config file with GCCCloud.config content.
 
