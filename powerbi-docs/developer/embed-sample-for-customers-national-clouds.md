@@ -1,6 +1,6 @@
 ---
-title: Embedded analytics to embed Power BI content in your application for for government and national clouds
-description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your customers. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools for governemnt and national clouds.
+title: Embedded analytics to embed Power BI content in your application for government and national clouds
+description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your customers. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools for government and national clouds.
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -127,15 +127,15 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 Register your application with Azure AD to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md). Since there are different national cloud affiliations, there are distinct URLs to register your application.
 
-* Government Community Cloud (GCC) - https://app.powerbigov.us/apps 
+* Government Community Cloud (GCC) - ```https://app.powerbigov.us/apps```
 
-* Military Contractors (DoDCON) - https://app.high.powerbigov.us/apps 
+* Military Contractors (DoDCON) - ```https://app.high.powerbigov.us/apps```
 
-* Military (DoD) - https://app.mil.powerbigov.us/apps
+* Military (DoD) - ```https://app.mil.powerbigov.us/apps```
 
-* Power BI for Germany cloud - https://app.powerbi.de/apps
+* Power BI for Germany cloud - ```https://app.powerbi.de/apps```
 
-* Power BI for China cloud - https://app.powerbi.cn/apps
+* Power BI for China cloud - ```https://app.powerbi.cn/apps```
 
 If you downloaded the [Embedding for your customer sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), you would use the **applicationId** you get, so that the sample can authenticate to Azure AD. To configure the sample, change the **applicationId** in the *web.config* file.
 
@@ -143,15 +143,15 @@ If you downloaded the [Embedding for your customer sample](https://github.com/Mi
 
 Within your application, you need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md). Since there are different national cloud affiliations, there are distinct URLs to get an access token for your application.
 
-* Government Community Cloud (GCC) - https://login.microsoftonline.com
+* Government Community Cloud (GCC) - ```https://login.microsoftonline.com```
 
-* Military Contractors (DoDCON) - http://login.microsoftonline.us
+* Military Contractors (DoDCON) - ```http://login.microsoftonline.us```
 
-* Military (DoD) - https://login.microsoftonline.us
+* Military (DoD) - ```https://login.microsoftonline.us```
 
-* Power BI for Germany cloud - https://login.microsoftonline.de
+* Power BI for Germany cloud - ```https://login.microsoftonline.de```
 
-* Power BI for China cloud - https://login.chinacloudapi.cn
+* Power BI for China cloud - ```https://login.chinacloudapi.cn```
 
 You can see examples of these access tokens within each content item task in the **Controllers\HomeController.cs** file.
 
@@ -239,7 +239,7 @@ Using the JavaScript API, you can generate an embed token. The embed token is sp
 
 A sample is available within **Controllers\HomeController.cs** of the [Embedding for your organization sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 
-This assumes a class is created for **EmbedConfig** and **TileEmbedConfig**. A sample is available within **Models\EmbedConfig.cs** and **Models\TileEmbedConfig.cs**.
+A class is created for **EmbedConfig** and **TileEmbedConfig**. A sample is available within **Models\EmbedConfig.cs** and **Models\TileEmbedConfig.cs**.
 
 #### Reports
 
@@ -303,7 +303,7 @@ var embedConfig = new TileEmbedConfig()
 
 You can use JavaScript to load a dashboard into a div element on your web page. The sample uses an EmbedConfig/TileEmbedConfig model along with views for a dashboard, tile, or report. For a full sample of using the JavaScript API, you can use the [Microsoft Power BI Embedded Sample](https://microsoft.github.io/PowerBI-JavaScript/demo).
 
-An application sample of this is available within the [Embedding for your organization sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+An application sample is available within the [Embedding for your organization sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 
 ### Views\Home\EmbedDashboard.cshtml
 
