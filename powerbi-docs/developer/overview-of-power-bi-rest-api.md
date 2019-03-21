@@ -13,7 +13,8 @@ ms.date: 05/25/2018
 
 # What can developers do with the Power BI API?
 
-Power BI displays dashboards that are interactive, and can be created and updated from many different data sources in real time. Using any programming language that supports REST calls, you can create apps that integrate with a Power BI dashboard in real time. You can also integrate Power BI tiles and reports into apps.
+[Please, rephrase the below]
+Using Power BI REST API, you can create apps that embed Power BI reports or perform management tasks on Power BI reports, datasets and workspaces. For full Power BI reference go here [provide a link]. It is also possible to integrate Power BI tiles and dashboards into apps.
 
 Developers can also build their own data visualizations that can be used in interactive reports and dashboards.
 
@@ -21,7 +22,7 @@ Here are some of the things you can do with the Power BI APIs.
 
 | **To do this** | **Go here** |
 | --- | --- |
-| Embed dashboards, reports, and tiles for Power BI users and Non-Power BI users (app owns data) |[How to embed your Power BI dashboards, reports, and tiles](embedding-content.md) |
+| Embed reports, dashboards and tiles for Power BI users and Non-Power BI users (app owns data) |[How to embed your Power BI dashboards, reports, and tiles](embedding-content.md) |
 | Extend an existing business workflow to push key data into a Power BI dashboard. |[Push data into a dashboard](walkthrough-push-data.md) |
 | Authenticate to Power BI. |[Authenticate to Power BI](get-azuread-access-token.md) |
 | Create a custom visual. |[Developing a Power BI custom visual](custom-visual-develop-tutorial.md) |
