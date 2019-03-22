@@ -89,7 +89,7 @@ The following questions (and answers) are provided to help you quickly get infor
 | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
 
-**Question:** My account is provisioned in more than one sovereign cloud. When using **Power BI Desktop**, how do I select which cloud to connect to?
+**Question:** My account is provisioned in more than one national cloud. When using **Power BI Desktop**, how do I select which cloud to connect to?
 
 **Answer:** Beginning with the July 2018 release of **Power BI Desktop**, you can choose which cloud you want to use when signing in to **Power BI Desktop**.
 

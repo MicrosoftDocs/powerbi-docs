@@ -554,7 +554,7 @@ The following updates were new to **Power BI Desktop** in June:
 
 ### Other
 
-* Sovereign cloud selector [[video]](https://youtu.be/4VpGtWSrssE?t=27m45s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
+* National cloud selector [[video]](https://youtu.be/4VpGtWSrssE?t=27m45s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
 
 
 > [!NOTE]

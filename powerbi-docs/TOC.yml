@@ -881,8 +881,8 @@
         href: developer/embed-sample-for-customers.md
       - name: "Embed content for your organization"
         href: developer/embed-sample-for-your-organization.md
-      - name: "Embed content for sovereign clouds"
-        href: developer/embed-sample-for-customers-sovereign-clouds.md
+      - name: "Embed content for national clouds"
+        href: developer/embed-sample-for-customers-national-clouds.md
     - name: Concepts
       items:
       - name: "Performance best practices"

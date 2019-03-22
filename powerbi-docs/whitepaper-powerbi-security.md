@@ -122,7 +122,7 @@ Currently, the Power BI service is available in specific regions, serviced by da
 
 * [Power BI Datacenters](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)
 
-Microsoft also provides datacenters for sovereignties. For more information about Power BI service availability for sovereign clouds, see [Power BI sovereign clouds](https://powerbi.microsoft.com/clouds/).
+Microsoft also provides datacenters for nationalties. For more information about Power BI service availability for national clouds, see [Power BI national clouds](https://powerbi.microsoft.com/clouds/).
 
 For more information on where your data is stored and how it is used, refer to the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Commitments about the location of customer data at rest are specified in the **Data Processing Terms** of the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
 
@@ -455,11 +455,11 @@ The following questions are common security questions and answers for Power BI. 
 
 * Yes. Bing Maps and ESRI visuals transmit data out of the Power BI service for visuals that use those services. For more information, and detailed descriptions of out-of-Power-BI tenant traffic, see [**Power BI and ExpressRoute**](service-admin-power-bi-expressroute.md).
 
-**What about data sovereignty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country borders?**
+**What about data nationalty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country borders?**
 
-* Some customers in certain geographies have an option to create a tenant in a sovereign cloud, where data storage and processing is kept separate from all other datacenters. Sovereign clouds have a slightly different type of security, since a separate data trustee operates the sovereign cloud Power BI service on behalf of Microsoft.
+* Some customers in certain geographies have an option to create a tenant in a national cloud, where data storage and processing is kept separate from all other datacenters. Sovereign clouds have a slightly different type of security, since a separate data trustee operates the national cloud Power BI service on behalf of Microsoft.
 
-  Alternatively customers can also set up a tenant in a specific region, however, such tenants do not have a separate data trustee from Microsoft. Pricing for sovereign clouds is different from the generally available commercial Power BI service. For more information about Power BI service availability for sovereign clouds, see [Power BI sovereign clouds](https://powerbi.microsoft.com/clouds/).
+  Alternatively customers can also set up a tenant in a specific region, however, such tenants do not have a separate data trustee from Microsoft. Pricing for national clouds is different from the generally available commercial Power BI service. For more information about Power BI service availability for national clouds, see [Power BI national clouds](https://powerbi.microsoft.com/clouds/).
 
 **How does Microsoft treat connections for customers who have Power BI Premium subscriptions? Are those connections different than those established for the non-Premium Power BI service?**
 
@@ -486,6 +486,6 @@ For more information on Power BI, see the following resources.
 - [Power BI API reference](https://msdn.microsoft.com/library/mt147898.aspx)
 - [On-premises data gateway](service-gateway-manage.md)
 - [Power BI and ExpressRoute](service-admin-power-bi-expressroute.md)
-- [Power BI Sovereign Clouds](https://powerbi.microsoft.com/clouds/)
+- [Power BI National Clouds](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Use Kerberos for SSO from Power BI to on-premises data sources](service-gateway-sso-overview.md)
