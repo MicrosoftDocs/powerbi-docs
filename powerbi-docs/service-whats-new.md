@@ -28,12 +28,21 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
 
-## February 2019
-* Workloads and active dataset size metrics in [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
-* Export to PDF and on-demand e-mail subcriptions(service-report-subscribe.md).
-* Bulk operations in the Admin Portal.
+## March 2019
+* General Availability of Multi-Geo for Power BI Premium.
+* Editing and managing Power BI content support for Azure B2B.
 
 ## Previous months (2019)
+### February 2019
+* Workloads and active dataset size metrics in [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Export to PDF for Power BI reports.
+* On-demand e-mail subcriptions(service-report-subscribe.md).
+* Bulk operations in the Admin Portal.
+* Filtered export for PPT and PDF.
+* [Help and support settings](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) in the Admin Portal.
+* Data lineage experience for [dataflows](service-dataflows-overview.md).
+* Certified custom visuals setting in the Admin Portal.
+
 ### January 2019
 * [Embedding secure Power BI reports](service-embed-secure.md) in internal portals or websites.
 * Updates to [dataflows](service-dataflows-overview.md) editor with new connectors, and support for native SQL queries and Power Query Online transformations.
