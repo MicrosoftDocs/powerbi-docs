@@ -18,7 +18,7 @@ Use [resource-based Kerberos constrained delegation](/windows-server/security/ke
 
 ## Preparing for resource-based Kerberos constrained delegation
 
-Several items must be configured for Kerberos Constrained Delegation to work properly, including _Service Principal Names_ (SPN) and delegation settings on service accounts.
+Several items must be configured for Kerberos Constrained Delegation to work properly, including _Service Principal Names_ (SPN) and delegation settings on service accounts. 
 
 ### Prerequisite 1: Operating system requirements
 
