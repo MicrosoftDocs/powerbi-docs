@@ -100,8 +100,8 @@ Given those example names and settings, use the following configuration steps:
 1. Open command prompt and run the following commands n the domain controller for **PBIEgwTestBack-end** domain to update msDS-AllowedToActOnBehalfOfOtherIdentity attribute of the back-end service account:
 
     ```powershell
-    $c=get-adgroupResourceDelGroup
-    set-aduser **SQLService** -principalsAllowedToDelegateToAccount$c
+    $c = Get-ADGroup ResourceDelGroup
+    Set-ADUser SQLService -PrincipalsAllowedToDelegateToAccount $c
     ```
 
 1. You can verify that the update is reflected in the "Attribute Editor" tab in the properties for the back-end service account in **Active Directory Users and Computers.**
