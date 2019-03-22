@@ -2,15 +2,13 @@
 title: Power BI security whitepaper
 description: Whitepaper that discusses and describes security architecture and implementation for Power BI
 author: davidiseminger
+ms.author: davidi
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/07/2019
-ms.author: davidi
-
 LocalizationGroup: Conceptual
 ---
 
@@ -122,7 +120,7 @@ Currently, the Power BI service is available in specific regions, serviced by da
 
 * [Power BI Datacenters](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)
 
-Microsoft also provides datacenters for nationalties. For more information about Power BI service availability for national clouds, see [Power BI national clouds](https://powerbi.microsoft.com/clouds/).
+Microsoft also provides datacenters for sovereignties. For more information about Power BI service availability for national clouds, see [Power BI national clouds](https://powerbi.microsoft.com/clouds/).
 
 For more information on where your data is stored and how it is used, refer to the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Commitments about the location of customer data at rest are specified in the **Data Processing Terms** of the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
 
@@ -148,11 +146,9 @@ The user authentication sequence for the Power BI service occurs as described in
 
 3. The WFE cluster checks with the **Azure Active Directory** (**AAD**) service to authenticate the user's Power BI service subscription, and to obtain an AAD security token. When AAD returns successful authentication of the user and returns an AAD security token, the WFE cluster consults the **Power BI**** Global Service,** which maintains a list of tenants and their Power BI Back-End cluster locations, and determines which Power BI service cluster contains the user's tenant. The WFE cluster then directs the user to the Power BI cluster where its tenant resides, and returns a collection of items to the user's browser:
 
-
       - The **AAD security token**
       - **Session information**
       - The web address of the **Back-End** cluster the user can communicate and interact with
-
 
 1. The user's browser then contacts the specified Azure CDN, or for some of the files the WFE, to download the collection of specified common files necessary to enable the browser's interaction with the Power BI service. The browser page then includes the AAD token, session information, the location of the associated Back-End cluster, and the collection of files downloaded from the Azure CDN and WFE cluster, for the duration of the Power BI service browser session.
 
@@ -179,9 +175,6 @@ The following table describes Power BI data based on the type of query being use
 |Row data     |    X     |         |         |
 |Visuals data caching     |    X     |     X    |    X     |
 
-
-
-
 The distinction between a DirectQuery and other queries determines how the Power BI service handles the data at rest, and whether the query itself is encrypted. The following sections describe data at rest and in movement, and explain the encryption, location, and process for handling data.
 
 ### Data at rest
@@ -207,9 +200,9 @@ For cloud-based data sources, the Data Movement Role encrypts encryption keys us
 #### Datasets
 
 1. Metadata (tables, columns, measures, calculations, connection strings, etc.)
-      
+
     a. For Analysis Services on-premises nothing is stored in the service except for a reference to that database stored encrypted in Azure SQL.
- 
+
     b. All other metadata for ETL, DirectQuery, and Push Data is encrypted and stored in Azure Blob storage.
 
 1. Credentials to the original data sources
@@ -252,7 +245,7 @@ Power BI provides data integrity monitoring in the following ways:
    a. Reports can either be Excel for Office 365 reports, or Power BI reports. The following applies for metadata based on the type of report:
 
        a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
-       
+
        b. Power BI reports are stored encrypted in Azure SQL database.
 
 2. Static data
@@ -455,7 +448,7 @@ The following questions are common security questions and answers for Power BI. 
 
 * Yes. Bing Maps and ESRI visuals transmit data out of the Power BI service for visuals that use those services. For more information, and detailed descriptions of out-of-Power-BI tenant traffic, see [**Power BI and ExpressRoute**](service-admin-power-bi-expressroute.md).
 
-**What about data nationalty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country borders?**
+**What about data sovereignty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country borders?**
 
 * Some customers in certain geographies have an option to create a tenant in a national cloud, where data storage and processing is kept separate from all other datacenters. Sovereign clouds have a slightly different type of security, since a separate data trustee operates the national cloud Power BI service on behalf of Microsoft.
 

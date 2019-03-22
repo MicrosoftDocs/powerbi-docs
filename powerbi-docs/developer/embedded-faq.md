@@ -271,7 +271,7 @@ Since Power BI Embedded is a part of Azure, it is possible to use the service wi
 
 ### Is Power BI Embedded available for national clouds (US Government, Germany, China)?
 
-Power BI Embedded is available for some [national clouds](embed-sample-for-customers-national-clouds.md). It still is **NOT** available for the China cloud.
+Power BI Embedded is also available for the [national clouds](embed-sample-for-customers-national-clouds.md).
 
 ### Is Power BI Embedded available for non-profits and educational?
 
