@@ -16,12 +16,12 @@ LocalizationGroup:
 
 # Query caching in Power BI Premium
 
-Organizations leveraging Power BI Premium can take advantage of *query caching* to speed up reports associated with a dataset. Query caching instructs the Premium capacity to leverage its local caching service to maintain query results, avoiding having the underlying data source compute those results.
+Organizations with Power BI Premium can take advantage of *query caching* to speed up reports associated with a dataset. Query caching instructs the Premium capacity to use its local caching service to maintain query results, avoiding having the underlying data source compute those results.
 
 > [!IMPORTANT]
 > Query caching is only available on Power BI Premium. It is not applicable to LiveConnect datasets leveraging Azure Analysis Services or SQL Server Analysis Services.
 
-Cached query results are specific to user and report context and always respect security rules. At present the service only performs query caching for the initial page that you land on. In other words, queries aren't cached when you interact with the report. Performance especially benefits when a dataset is accessed frequently and doesn't need to be refreshed often.
+Cached query results are specific to user and report context and always respect security rules. At present the service only does query caching for the initial page that you land on. In other words, queries aren't cached when you interact with the report. Performance especially benefits when a dataset is accessed frequently and doesn't need to be refreshed often.
 
 You control query caching behavior from the dataset settings page in the Power BI service. It has three possible settings:
 
