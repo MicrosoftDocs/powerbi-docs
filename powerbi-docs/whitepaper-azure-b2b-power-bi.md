@@ -349,7 +349,7 @@ Contoso can also take advantage of other Power BI premium capabilities for its a
 
 ### Approach 2: Contoso assigns Power BI Pro licenses to guest users
 
-With this approach, Contoso assigns pro licenses to guest users from partner organizations – this can be done from Contoso's Office 365 admin portal. This allows guest users from partner organizations to access Contoso's Power BI app without purchasing a license themselves. This can be appropriate for sharing with external users whose organization has not adopted Power BI yet.
+With this approach, Contoso assigns pro licenses to guest users from partner organizations – this can be done from Contoso's Microsoft 365 admin center. This allows guest users from partner organizations to access Contoso's Power BI app without purchasing a license themselves. This can be appropriate for sharing with external users whose organization has not adopted Power BI yet.
 
 > [!NOTE]
 > _Contoso's pro license applies to guest users only when they access content in the Contoso tenant. Pro licenses enable access to content that is not in a Power BI Premium capacity. However, external users with a Pro license are restricted by default to a consumption only experience. This can be change by using the approach described in the_ _Enabling external users to edit and manage content within Power BI_ _section later in this document._

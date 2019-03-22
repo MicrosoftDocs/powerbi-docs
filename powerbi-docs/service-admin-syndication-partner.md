@@ -30,9 +30,9 @@ If you want to buy a subscription to Power BI Pro or Power BI Premium, work with
 
 ## Purchase from Microsoft or another channel
 
-Depending on the relationship with your partner, you might be able to purchase Power BI directly from Microsoft or another partner. You can verify whether you can add Power BI subscriptions in the Office 365 admin portal (requires membership in the Global Administrator or Billing Administrator role).
+Depending on the relationship with your partner, you might be able to purchase Power BI directly from Microsoft or another partner. You can verify whether you can add Power BI subscriptions in the Microsoft 365 admin center (requires membership in the Global Administrator or Billing Administrator role).
 
-1. Go to the [Office 365 admin portal](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 1. In the left menu, open **Billing**:
 
