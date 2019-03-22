@@ -295,7 +295,7 @@ Azure Power BI Embedded is largely out of scope for this whitepaper, but it is d
 
 For further information about the Azure SKUs, refer to the [Azure Power BI Embedded Documentation](/azure/power-bi-embedded/).
 
-Power BI Premium subscriptions are purchased by administrators in the Office 365 Admin Center. Specifically, only Office 365 Global Administrators or Billing Administrators can purchase SKUs.
+Power BI Premium subscriptions are purchased by administrators in the Microsoft 365 admin center. Specifically, only Office 365 Global Administrators or Billing Administrators can purchase SKUs.
 
 Once purchased, the tenant receives a corresponding number of v-cores to assign to capacities - this is known as **v-core pooling**. For example, purchasing a P3 SKU provides the tenant with 32 v-cores.
 

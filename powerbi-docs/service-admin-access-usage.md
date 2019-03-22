@@ -21,7 +21,7 @@ If you are a tenant admin, and want to see who has signed into Power BI, use the
 <iframe width="640" height="360" src="https://www.youtube.com/embed/1AVgh9w9VM8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> The activity report provides useful information, but it doesn't identify the type of license each user has. Use the Office 365 admin center to view licenses.
+> The activity report provides useful information, but it doesn't identify the type of license each user has. Use the Microsoft 365 admin center to view licenses.
 
 ## Requirements
 
