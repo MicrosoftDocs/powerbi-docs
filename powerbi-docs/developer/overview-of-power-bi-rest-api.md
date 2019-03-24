@@ -28,21 +28,6 @@ Here are some of the things you can do with the Power BI APIs.
 > [!NOTE]
 > The Power BI APIs still refer to app workspaces as groups. Any references to groups mean that you are working with app workspaces.
 
-## Power BI Developer samples
-
-The Power BI Developer samples include items for embedding dashboards, reports and tiles.
-
-[Power BI Developer samples](https://github.com/Microsoft/PowerBI-Developer-Samples)
-
-* Samples within **App Owns Data** are for embedding with non-Power BI users.
-* Samples within **User Owns Data** are for embedding with Power BI users.
-
-## GitHub repositories
-
-* [.NET SDK](https://github.com/Microsoft/PowerBI-CSharp)
-* [JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)
-* [Custom Visuals](https://github.com/Microsoft/PowerBI-visuals)
-
 ## Developer tools
 
 The following are tools you can use to aid in your development of Power BI items.
@@ -57,7 +42,10 @@ Choose the solution that is right for you:
 
 For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). This tool is a quick way to play with different types of Power BI Embedded samples. You also can get more information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
 
-## Next steps
-[Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
+## GitHub repositories
+
+* [Power BI Developer samples](https://github.com/Microsoft/PowerBI-Developer-Samples)
+* [.NET SDK](https://github.com/Microsoft/PowerBI-CSharp)
+* [JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
