@@ -893,8 +893,8 @@
         href: developer/embed-sample-for-customers.md
       - name: "Embed content for your organization"
         href: developer/embed-sample-for-your-organization.md
-      - name: "Embed content for sovereign clouds"
-        href: developer/embed-sample-for-customers-sovereign-clouds.md
+      - name: "Embed content for national clouds"
+        href: developer/embed-sample-for-customers-national-clouds.md
     - name: Concepts
       items:
       - name: "Performance best practices"
@@ -996,7 +996,7 @@
       - name: "Custom visuals for organizations in Power BI"
         href: power-bi-custom-visuals-organization.md
       - name: "Guidelines for Power BI visuals" 
-        href: developer/office-store-in-app-purchase-visual-guidelines.md
+        href: developer/guidelines-powerbi-visuals.md
       - name: "Custom visuals FAQ"
         href: power-bi-custom-visuals-faq.md
       - name: "Using Capabilities"

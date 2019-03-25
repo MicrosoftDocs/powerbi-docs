@@ -14,7 +14,7 @@ ms.author: maggies
 LocalizationGroup: Create reports
 ---
 # Create reports optimized for the Power BI mobile apps
-You can improve the experience of viewing your reports in the mobile apps on a phone or tablet. Create a portrait layout of a report, specifically for phones and tablets. In Power BI Desktop and in the Power BI service, you adapt your report by rearranging and resizing visuals in a portrait layout for an optimal experience. You don't have to include all of them. Plus you can create [*responsive* visuals](#optimize-a-visual-for-any-size) and [responsive slicers](#enhance-slicers-to-to-work-well-in-phone-reports) that resize well for viewing on a phone. Also, if you add filters to your report, those filters show up automatically in the optimized report. Your report readers can see them and filter the report with them.
+You can improve the experience of viewing your reports in the mobile apps on a phone or tablet. Create a portrait layout of a report, specifically for phones and tablets. In Power BI Desktop and in the Power BI service, you adapt your report by rearranging and resizing visuals in a portrait layout for an optimal experience. You don't have to include all of them. Plus you can create [*responsive* visuals](#optimize-a-visual-for-any-size) and [responsive slicers](#enhance-slicers-to-work-well-in-phone-reports) that resize well for viewing on a phone. Also, if you add filters to your report, those filters show up automatically in the optimized report. Your report readers can see them and filter the report with them.
 
 ![Optimized report on a phone](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 

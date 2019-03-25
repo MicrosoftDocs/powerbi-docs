@@ -79,6 +79,7 @@ A subscription ends if the Pro license expires, the owner deletes the dashboard 
 
 ## Considerations and troubleshooting
 * Dashboards with over 25 pinned tiles, or 4 pinned live report pages, may not render fully in subscription e-mails sent to users.  Subscriptions to dashboards over these number of tiles will not be blocked, however, they will be considered unsupported if you encounter issues and should be modified accordingly to fall within a supported range.
+* When setting up your e-mail subscriptions, please keep in mind there is a delay between when the subscription job is started, and the exact time the e-mail is sent.  To minimize the delay between the between when the job starts and the subsequent e-mail is sent, it is recommended you set up a different time for your scheduled data refresh than when your e-mail subscription is scheduled to run.
 * For dashboard email subscriptions, if any tiles have row level security (RLS) applied, those tiles don't display.  For report email subscriptions, if the dataset uses RLS, you can't be able to create a subscription.
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page and then rename it, you have to re-create your subscription.
 * Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI.  These limitations include, but aren't limited to, having multi-factor authentication or IP range restrictions when accessing resources.
@@ -90,7 +91,6 @@ A subscription ends if the Pro license expires, the owner deletes the dashboard 
 * Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make after subscribing don't show up in the email.    
 * For dashboards subscriptions specifically, certain types of tiles aren't yet supported.  These include: streaming tiles, video tiles, custom web content tiles.     
 * If you share a dashboard with a colleague outside of your tenant, you can't also create a subscription for that colleague. So if you are aaron@xyz.com, you can share with anyone@ABC.com, but you can't yet subscribe anyone@ABC.com and they can't subscribe to shared content.      
-* Subscriptions may fail on dashboards or reports with extremely large images due to email size limits.    
 * Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months.  However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.    
 * If you aren't receiving the subscription emails, ensure that your User Principal Name (UPN) can receive emails. [The Power BI team is working on relaxing this requirement](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163), so stay tuned. 
 * If your dashboard or report is in Premium capacity, you can use group email aliases for subscriptions, instead of subscribing colleagues one email address at a time. The aliases are based on the current active directory. 
