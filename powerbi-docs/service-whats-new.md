@@ -343,7 +343,7 @@ Today we released a long list of top-requested features. [Read the blog post](ht
 
 ***Admin Portal***
 
-* Easy user management with a link to the O365 Admin Center
+* Easy user management with a link to the Microsoft 365 admin center
 * Ability to disable publish to web
 * Prevent users from publishing content packs to the entire org
 * Ability to disable sharing content to external users
@@ -505,7 +505,7 @@ For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/a
 * New site for Power BI documentation, localized
 * Improved load time for reports
 * Update organizational content packs with report-only changes
-* Power BI health status in Office 365 Admin Portal
+* Power BI health status in Microsoft 365 admin center
 * KPIs and images in tables, matrices, and cards
 
 For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/11/power-bi-weekly-service-update-1110.aspx)
