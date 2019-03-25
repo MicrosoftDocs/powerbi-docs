@@ -115,7 +115,7 @@ There was no Power BI Desktop release in January 2019 - we were all busy having 
 
 ## December 2018 Update (2.65.5313.501)
 
-Our December updates made sugarplums dance in our customers' heads, or at least created compelling data-driven visuals of said sugarplums. 
+Our December updates made sugar plums dance in our customers' heads, or at least created compelling data-driven visuals of said sugar plums. 
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
@@ -1792,7 +1792,7 @@ In April, we showered our great Power BI customers with another collection of co
 
 ### Data Modeling:
 
--   Modelling operations are no longer blocked while visuals are refreshing
+-   Modeling operations are no longer blocked while visuals are refreshing
 -   Time Intelligence with built-in date hierarchy fields (Preview)
 -   Data model synonyms
 
@@ -2221,13 +2221,13 @@ The following features have been added to this update:
 
 -   Resizable Navigator dialog
 
--   Ability to multi-select items in Navigator (CTRL+click, SHIFT+click, etc)
+-   Ability to multi-select items in Navigator (CTRL+click, SHIFT+click, etc.)
 
 **Query Editor improvements:**
 
 -   Query Group creation/deletion improvements (multi-select, etc.)
 
--   Ability to Split Query (i.e. refactor common base steps into a new query)
+-   Ability to Split Query (i.e., refactor common base steps into a new query)
 
 -   Query Icons to reflect type of query in Queries navigator pane
 
@@ -2246,7 +2246,7 @@ Take a look at the following video for more details about this update:
 
 The following features have been added in this update:
 
--   **New Data Connectors**: appFigures, Quickbooks Online, Zendesk, Github, Twilio and SweetIQ.
+-   **New Data Connectors**: appFigures, Quickbooks Online, Zendesk, GitHub, Twilio, and SweetIQ.
 
 -   **New Transformations**: Extract First/Last/Range of characters from a Text Column; Option to specify Join Type in the Merge Queries dialog; Ability to customize Quote Style in Split Column by Delimiter dialog.
 
