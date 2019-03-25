@@ -47,8 +47,8 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 * Government Community Cloud (GCC):
 
-> [!Note]
-> GCC accounts only support P and EM capacities.
+    > [!Note]
+    > GCC accounts only support P and EM capacities.
 
 1. Overwrite Cloud.config file with GCCCloud.config content.
 
