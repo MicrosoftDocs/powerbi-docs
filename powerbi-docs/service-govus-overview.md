@@ -35,7 +35,7 @@ The following features are available to **Power BI US Government** customers, as
 * All data is encrypted in both Azure SQL and Blob Storage for Power BI
 * Connect to services with [content packs](service-connect-to-services.md)
 
-## Connectivity between Government and Public Azure Cloud services 
+## Connectivity between Government and global Azure Cloud services 
 
 Azure is distributed among multiple clouds. Be default, tenants are allowed to open firewall rules to a  cloud-specific instance, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a Power BI customer and you have existing SQL instances in the public cloud which you need to access, you must open specific firewall rules in SQL to the Azure Government Cloud IP space, for the following datacenters:
 
