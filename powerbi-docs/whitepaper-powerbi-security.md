@@ -2,15 +2,13 @@
 title: Power BI security whitepaper
 description: Whitepaper that discusses and describes security architecture and implementation for Power BI
 author: davidiseminger
+ms.author: davidi
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/07/2019
-ms.author: davidi
-
 LocalizationGroup: Conceptual
 ---
 
@@ -122,7 +120,7 @@ Currently, the Power BI service is available in specific regions, serviced by da
 
 * [Power BI Datacenters](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)
 
-Microsoft also provides datacenters for sovereignties. For more information about Power BI service availability for sovereign clouds, see [Power BI sovereign clouds](https://powerbi.microsoft.com/clouds/).
+Microsoft also provides datacenters for sovereignties. For more information about Power BI service availability for national clouds, see [Power BI national clouds](https://powerbi.microsoft.com/clouds/).
 
 For more information on where your data is stored and how it is used, refer to the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Commitments about the location of customer data at rest are specified in the **Data Processing Terms** of the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
 
@@ -148,11 +146,9 @@ The user authentication sequence for the Power BI service occurs as described in
 
 3. The WFE cluster checks with the **Azure Active Directory** (**AAD**) service to authenticate the user's Power BI service subscription, and to obtain an AAD security token. When AAD returns successful authentication of the user and returns an AAD security token, the WFE cluster consults the **Power BI**** Global Service,** which maintains a list of tenants and their Power BI Back-End cluster locations, and determines which Power BI service cluster contains the user's tenant. The WFE cluster then directs the user to the Power BI cluster where its tenant resides, and returns a collection of items to the user's browser:
 
-
       - The **AAD security token**
       - **Session information**
       - The web address of the **Back-End** cluster the user can communicate and interact with
-
 
 1. The user's browser then contacts the specified Azure CDN, or for some of the files the WFE, to download the collection of specified common files necessary to enable the browser's interaction with the Power BI service. The browser page then includes the AAD token, session information, the location of the associated Back-End cluster, and the collection of files downloaded from the Azure CDN and WFE cluster, for the duration of the Power BI service browser session.
 
@@ -179,9 +175,6 @@ The following table describes Power BI data based on the type of query being use
 |Row data     |    X     |         |         |
 |Visuals data caching     |    X     |     X    |    X     |
 
-
-
-
 The distinction between a DirectQuery and other queries determines how the Power BI service handles the data at rest, and whether the query itself is encrypted. The following sections describe data at rest and in movement, and explain the encryption, location, and process for handling data.
 
 ### Data at rest
@@ -207,9 +200,9 @@ For cloud-based data sources, the Data Movement Role encrypts encryption keys us
 #### Datasets
 
 1. Metadata (tables, columns, measures, calculations, connection strings, etc.)
-      
+
     a. For Analysis Services on-premises nothing is stored in the service except for a reference to that database stored encrypted in Azure SQL.
- 
+
     b. All other metadata for ETL, DirectQuery, and Push Data is encrypted and stored in Azure Blob storage.
 
 1. Credentials to the original data sources
@@ -252,7 +245,7 @@ Power BI provides data integrity monitoring in the following ways:
    a. Reports can either be Excel for Office 365 reports, or Power BI reports. The following applies for metadata based on the type of report:
 
        a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
-       
+
        b. Power BI reports are stored encrypted in Azure SQL database.
 
 2. Static data
@@ -356,7 +349,7 @@ The following table lists support of certificate-based authentication (CBA) for 
 | **Power BI** (sign in to service) | supported | supported | Not supported |
 | **SSRS ADFS** (connect to SSRS server) | Not supported | Supported | Not supported |
 
-Power BI Mobile apps actively communicate with the Power BI service. Telemetry is used to gather mobile app usage statistics and similar data, which is transmitted to services that are used to monitor usage and activity; no personally identifiable information (PII) is sent with telemetry data.
+Power BI Mobile apps actively communicate with the Power BI service. Telemetry is used to gather mobile app usage statistics and similar data, which is transmitted to services that are used to monitor usage and activity; no personal data is sent with telemetry data.
 
 The Power BI **application on the device** stores data on the device that facilitates use of the app:
 
@@ -378,7 +371,7 @@ The following questions are common security questions and answers for Power BI. 
 
 **How do users connect to, and gain access to data sources while using Power BI?**
 
-* **Power BI credentials and domain credentials:** Users log in to Power BI using an email address; when a user attempts to connect to a data resource, Power BI passes the Power BI login email address as credentials. For domain-connected resources (either on-premises or cloud-based), the login email is matched with a _User Principal Name_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) by the directory service to determine whether sufficient credentials exist to allow access. For organizations that use work-based email addresses to log in to Power BI (the same email they use to login to work resources, such as _david@contoso.com_), the mapping can occur seamlessly; for organizations that did not use work-based email addresses (such as _david@contoso.onmicrosoft.com_), directory mapping must be established in order to allow access to on-premises resources with Power BI login credentials.
+* **Power BI credentials and domain credentials:** Users sign in to Power BI using an email address; when a user attempts to connect to a data resource, Power BI passes the Power BI login email address as credentials. For domain-connected resources (either on-premises or cloud-based), the login email is matched with a _User Principal Name_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) by the directory service to determine whether sufficient credentials exist to allow access. For organizations that use work-based email addresses to sign in to Power BI (the same email they use to login to work resources, such as _david@contoso.com_), the mapping can occur seamlessly; for organizations that did not use work-based email addresses (such as _david@contoso.onmicrosoft.com_), directory mapping must be established in order to allow access to on-premises resources with Power BI login credentials.
 
 * **SQL Server Analysis Services and Power BI:** For organizations that use on-premises SQL Server Analysis Services, Power BI offers the Power BI on-premises data gateway (which is a **Gateway**, as referenced in previous sections).  The Power BI on-premises data gateway can enforce role-level security on data sources (RLS). For more information on RLS, see **User Authentication to Data Sources** earlier in this document. You can also read an in-depth article about [Power BI Gateway](service-gateway-manage.md).
 
@@ -457,9 +450,9 @@ The following questions are common security questions and answers for Power BI. 
 
 **What about data sovereignty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country borders?**
 
-* Some customers in certain geographies have an option to create a tenant in a sovereign cloud, where data storage and processing is kept separate from all other datacenters. Sovereign clouds have a slightly different type of security, since a separate data trustee operates the sovereign cloud Power BI service on behalf of Microsoft.
+* Some customers in certain geographies have an option to create a tenant in a national cloud, where data storage and processing is kept separate from all other datacenters. National clouds have a slightly different type of security, since a separate data trustee operates the national cloud Power BI service on behalf of Microsoft.
 
-  Alternatively customers can also set up a tenant in a specific region, however, such tenants do not have a separate data trustee from Microsoft. Pricing for sovereign clouds is different from the generally available commercial Power BI service. For more information about Power BI service availability for sovereign clouds, see [Power BI sovereign clouds](https://powerbi.microsoft.com/clouds/).
+  Alternatively customers can also set up a tenant in a specific region, however, such tenants do not have a separate data trustee from Microsoft. Pricing for national clouds is different from the generally available commercial Power BI service. For more information about Power BI service availability for national clouds, see [Power BI national clouds](https://powerbi.microsoft.com/clouds/).
 
 **How does Microsoft treat connections for customers who have Power BI Premium subscriptions? Are those connections different than those established for the non-Premium Power BI service?**
 
@@ -486,6 +479,6 @@ For more information on Power BI, see the following resources.
 - [Power BI API reference](https://msdn.microsoft.com/library/mt147898.aspx)
 - [On-premises data gateway](service-gateway-manage.md)
 - [Power BI and ExpressRoute](service-admin-power-bi-expressroute.md)
-- [Power BI Sovereign Clouds](https://powerbi.microsoft.com/clouds/)
+- [Power BI National Clouds](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Use Kerberos for SSO from Power BI to on-premises data sources](service-gateway-sso-overview.md)

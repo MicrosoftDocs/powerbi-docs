@@ -26,7 +26,6 @@ Until recently, the Marketplace (AppSource) accepted only Power BI visuals that 
 >[!IMPORTANT]  
 > If you update your visual from free to "Additional purchase may be required", users must receive the same level of free functionality  as before the update. You may add optional advanced paid features in addition to the existing free features. We recommend that you submit the IAP visuals with the advanced features as new visuals and not update the existing free ones.
 
-
 ## What changed in the submission process?
 
 Developers upload their IAP visuals to AppSource via the Seller Dashboard, as they've been doing for free visuals. To indicate that the submitted visual has IAP features, developers should write in the Seller Dashboard notes, "Visual with in-app purchase." Also, developers need to provide a license key or token so that the validation team can validate the IAP features. After the visual is validated and approved, the AppSource listing for the IAP visual states, "Additional purchase may be required" under the pricing options.
@@ -47,17 +46,17 @@ This section describes the specifications for adding logos and logotypes in visu
 > [!IMPORTANT]
 > Logos are allowed in **edit mode only**. Logos **can't** be displayed in view mode.
 
-![Definitions](media/office-store-in-app-purchase-visual-guidelines/definitions.png)
+![Definitions](media/guidelines-powerbi-visuals/definitions.png)
 
-![Things to keep in mind](media/office-store-in-app-purchase-visual-guidelines/things-to-keep-in-mind.png)
+![Things to keep in mind](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
 
-![Things to avoid](media/office-store-in-app-purchase-visual-guidelines/things-to-avoid.png)
+![Things to avoid](media/guidelines-powerbi-visuals/things-to-avoid.png)
 
-![Size and format](media/office-store-in-app-purchase-visual-guidelines/size-and-format.png)
+![Size and format](media/guidelines-powerbi-visuals/size-and-format.png)
 
-![Margins and sizing](media/office-store-in-app-purchase-visual-guidelines/margins-and-sizes.png)
+![Margins and sizing](media/guidelines-powerbi-visuals/margins-and-sizes.png)
 
-![Edit mode](media/office-store-in-app-purchase-visual-guidelines/logos-in-edit-mode.png)
+![Edit mode](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 ## Best practices
 
