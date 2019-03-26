@@ -7,7 +7,7 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/22/2019
+ms.date: 03/25/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -22,13 +22,16 @@ Power BI makes it easy for report authors to find quality, official datasets the
 
 ## Discover datasets (Preview)
 
-When building a report on top of an existing dataset, the first step is to connect to the dataset, either in the Power service or Power BI Desktop:
+When building a report on top of an existing dataset, the first step is to connect to the dataset, either in the Power service or Power BI Desktop. 
 
-![Connect to an existing dataset](media/service-datasets-across-workspaces/power-bi-connect-dataset.png)
+- In the Power BI service: **Get data** > **Published datasets**.
+- In Power BI Desktop: **Get data** > **Power BI datasets**.
 
-In either case, you start the dataset discovery experience here. You see all the datasets you have access to, regardless of the workspace you are in currently:
+    ![Connect to an existing dataset](media/service-datasets-across-workspaces/power-bi-connect-dataset.png)
+   
+In either case, the dataset discovery experience starts in this dialog box, **Select a dataset to create a report**. You see all the datasets you have access to, regardless of the workspace you are in currently:
 
-![Select](media/service-datasets-across-workspaces/power-bi-select-dataset.png)
+![Select a dataset](media/service-datasets-across-workspaces/power-bi-select-dataset.png)
 
 The datasets you see in this list meet at least one of the following conditions:
 
@@ -47,7 +50,7 @@ You can save the report to the current workspace in the Power BI service, or pub
 
 ## Build permission for datasets
 
-The Build permission type is only relevant for datasets. With it, users can build new content on a dataset in Power BI, such as reports, dashboards, pinned tiles from Q&A, and Insights Discovery. They can also build new content on the dataset outside Power BI, such as Excel sheets via Analyze in Excel, XMLA, and export.
+The Build permission type is only relevant for datasets. With it, users can build new content on a dataset, such as reports, dashboards, pinned tiles from Q&A, and Insights Discovery. They can also build new content on the dataset outside Power BI, such as Excel sheets via Analyze in Excel, XMLA, and export.
 
 Users can get the permission in different ways:
 
@@ -57,9 +60,9 @@ Users can get the permission in different ways:
 
 ![Build permissions](media/service-datasets-across-workspaces/power-bi-dataset-build-permissions.png)
 
-Power BI introduced this permission in April 2019 as a complement to the existing permissions Read and Reshare. All users who had Read permission for datasets via app permissions, sharing, or workspace access at that time also got Build permissions for those same datasets. Those users got Build permission automatically because Read permission already granted them the right to build new content on top of the dataset, by using Analyze in Excel, or Export. 
+Power BI introduced this permission in April 2019 as a complement to the existing permissions Read and Reshare. All users who already had Read permission for datasets via app permissions, sharing, or workspace access at that time also get Build permissions for those same datasets. They get Build permission automatically because Read permission already granted them the right to build new content on top of the dataset, by using Analyze in Excel, or Export. 
 
-With more this more granular Build permission, you can choose who can only view the content in the existing report or dashboard and who can create new content connected to the underlying datasets.
+With this more granular Build permission, you can choose who can only view the content in the existing report or dashboard and who can create content connected to the underlying datasets.
 
 ## Considerations and limitations
 
