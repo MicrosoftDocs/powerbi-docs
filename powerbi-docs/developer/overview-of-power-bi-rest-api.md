@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/15/2019
+ms.date: 03/25/2019
 ---
 
 # What can developers do with the Power BI API?
@@ -53,6 +53,7 @@ You can use the Power BI API to [push data into a dataset](walkthrough-push-data
 
 ## Next steps
 
+* [Push data into a dataset](walkthrough-push-data.md)
 * [Developing a Power BI custom visual](custom-visual-develop-tutorial.md)
 * [Power BI REST API Reference](rest-api-reference.md)
 * [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/)
