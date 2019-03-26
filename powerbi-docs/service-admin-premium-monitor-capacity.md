@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/25/2019
+ms.date: 03/26/2019
 LocalizationGroup: Premium 
 ---
 
@@ -16,9 +16,7 @@ LocalizationGroup: Premium
 
 Monitoring your capacities is essential to making informed decisions on how best to utilize your Premium capacity resources. You can monitor capacities in the Admin portal or with the **Power BI Premium Capacity Metrics** app. This article describes using the Premium Capacity Metrics app. The app provides the most in-depth information into how your capacities are performing. For a higher level overview of average use metrics over the last seven days, you can use the Admin portal. To learn more about monitoring in the portal, see [Monitor Premium capacities in the Admin portal](service-admin-premium-monitor-portal.md).
 
-The app is updated regularly with new features and functionality. Make sure you are running the latest version.   
-**The latest version of the app is 1.10.1.2 (February 22, 2019)**.   
-If you have a previous version of the app already installed, it’s best to delete it from your apps and then press CTRL+F5 to refresh. 
+If you have a previous version of the app already installed, it’s best to delete it from your apps and then press CTRL+F5 to refresh. The app is updated regularly with new features and functionality. Make sure you're running the latest version.
 
 ## Install the app
 
