@@ -473,6 +473,14 @@
         href: service-publish-from-excel.md
       - name: "Reduce the size of an Excel workbook"
         href: reduce-the-size-of-an-excel-workbook.md
+    - name: Get data from shared datasets
+      items: 
+      - name: "Use datasets across workspaces"
+        href: service-datasets-across-workspaces.md
+      - name: "Certify and promote datasets"
+        href: service-datasets-certify-promote.md
+      - name: "Control the use of datasets"
+        href: service-datasets-admin-across-workspaces.md
     - name: Get data from databases
       items: 
       - name: "Azure and Power BI"
