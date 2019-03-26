@@ -88,7 +88,7 @@ You can lock or hide individual filter cards. If you lock a filter, your report 
 
 - In the new Filters pane, select or clear the **Lock filter** or **Hide filter** icons in a filter card.
 
-   ![Hide or lock filters](media/power-bi-report-filter-preview/power-bi-filter-lock-hide.png])
+   ![Hide or lock filters](media/power-bi-report-filter-preview/power-bi-filter-lock-hide.png)
 
 As you turn these settings on and off in the new Filters pane, you see the changes reflected in the report. Hidden filters don't show up in the filter pop-up for a visual.
 
