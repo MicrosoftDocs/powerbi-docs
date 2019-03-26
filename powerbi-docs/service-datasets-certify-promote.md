@@ -14,16 +14,21 @@ LocalizationGroup: Share your work
 ---
 # Certify and promote datasets
 
-Power BI users now have access to a variety of datasets, so enterprises need to guide them to the reliable, high-quality datasets. Power BI provides two ways to *endorse* datasets:
+Power BI users may now have access to many different datasets, so enterprises need to guide them to the reliable, high-quality datasets. Power BI provides two ways to *endorse* datasets:
 
 - **Promotion**: Dataset owners can promote their own datasets when they feel they're good enough for wide-spread usage. Promotion supports the collaborative spread of datasets within organizations.
 - **Certification**: A select group of users defined in the **Dataset Certification** tenant admin setting can certify datasets.
 
 ## Find an endorsed dataset
 
-In both endorsement cases, these datasets display *badges* in the discovery experience and in the list of datasets in a workspace. In the discovery experience, endorsed datasets top the list by default. 
+Promoted and certified datasets display *badges* that you see both when looking for a dataset and in the list of datasets in a workspace. 
 
-![Promoted dataset](media/service-datasets-certify-promote/power-bi-dataset-promoted.png)
+- In the Power BI service: **Get data** > **Published datasets**.
+- In Power BI Desktop: **Get data** > **Power BI datasets**.
+
+    In the **Select a dataset** dialog box, endorsed datasets top the list by default. 
+
+    ![Promoted dataset](media/service-datasets-certify-promote/power-bi-dataset-promoted.png)
 
 ## Promote a dataset
 
@@ -43,7 +48,7 @@ Your dataset needs to be in a workspace in the Power BI service when you're read
 
 ## Request dataset certification
 
-If your tenant admin designates you as someone who can create certified datasets, the **Certified** option in the **Endorsement** section of **Settings** is available. 
+If your tenant admin names you as someone who can create certified datasets, the **Certified** option in the **Endorsement** section of **Settings** is available. 
 
 1. Select **Certified**.
 2. Add a description > **Apply**.
