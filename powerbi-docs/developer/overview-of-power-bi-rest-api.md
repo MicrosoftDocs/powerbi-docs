@@ -13,7 +13,6 @@ ms.date: 05/25/2018
 
 # What can developers do with the Power BI API?
 
-[Please, rephrase the below]
 Using Power BI REST API, you can create apps that embed Power BI reports. It is also possible to integrate Power BI tiles and dashboards into apps.
 
 With Power BI REST API it is possible to perform management tasks on Power BI objects like reports, datasets and workspaces.
