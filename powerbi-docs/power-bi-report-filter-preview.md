@@ -80,9 +80,7 @@ After you enable the new Filters pane, you see it to the right of the report pag
 
 2. To start building your new Filters pane, drag fields of interest into the new Filters pane either as visual, page, or report level filters.
 
-    ![power-bi-filters-new-filters-pane.png](media/power-bi-report-filter-preview/power-bi-filters-new-filters-pane.png)
-
-When you add a visual to a report canvas, Power BI automatically adds a filter for each field in the visual. Power BI doesn't add those automatic filters to the read-only Filters pane. You have to select the eye icon to add them explicitly.
+When you add a visual to a report canvas, Power BI automatically adds a filter to the FIlters pane for each field in the visual. 
 
 ## Lock or hide filters
 
@@ -90,7 +88,7 @@ You can lock or hide individual filter cards. If you lock a filter, your report 
 
 - In the new Filters pane, select or clear the **Lock filter** or **Hide filter** icons in a filter card.
 
-   ![Hide or lock filters](media/power-bi-report-filter-preview/power-bi-filter-hide-lock.gif)
+   ![Hide or lock filters](media/power-bi-report-filter-preview/power-bi-filter-lock-hide.png])
 
 As you turn these settings on and off in the new Filters pane, you see the changes reflected in the report. Hidden filters don't show up in the filter pop-up for a visual.
 
