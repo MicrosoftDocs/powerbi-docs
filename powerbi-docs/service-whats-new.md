@@ -36,7 +36,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 ### February 2019
 * Workloads and active dataset size metrics in [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 * Export to PDF for Power BI reports.
-* On-demand e-mail subcriptions(service-report-subscribe.md).
+* [On-demand e-mail subcriptions](service-report-subscribe.md).
 * Bulk operations in the Admin Portal.
 * Filtered export for PPT and PDF.
 * [Help and support settings](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) in the Admin Portal.
