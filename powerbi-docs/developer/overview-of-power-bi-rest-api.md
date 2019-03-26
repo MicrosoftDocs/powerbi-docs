@@ -15,13 +15,13 @@ ms.date: 03/25/2019
 
 Using Power BI REST API, you can create apps that integrate with Power BI reports, dashboards, and tiles.
 
-With Power BI REST API, it is possible to perform management tasks on Power BI objects like reports, datasets and workspaces.
+With Power BI REST API, it is possible to perform management tasks on Power BI objects like reports, datasets, and workspaces.
 
 Here are some of the things you can do with the Power BI APIs.
 
 | **To learn more** | **Reference this information** |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Embed reports, dashboards and tiles for Power BI users and Non-Power BI users. | [How to embed your Power BI dashboards, reports, and tiles ](embedding-content.md) |
+| Embed reports, dashboards, and tiles for Power BI users and Non-Power BI users. | [How to embed your Power BI dashboards, reports, and tiles ](embedding-content.md) |
 | Perform management tasks on Power BI objects. | [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/) |
 | Extend an existing business workflow to push key data into a Power BI dashboard. | [Push data into a dashboard ](walkthrough-push-data.md) |
 | Authenticate to Power BI. | [Authenticate to Power BI ](get-azuread-access-token.md) |
