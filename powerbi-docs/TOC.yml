@@ -437,6 +437,8 @@
       items: 
       - name: "10 tips for getting help"
         href: service-tips-for-finding-help.md
+      - name: "Power BI support options"
+        href: service-support-options.md
       - name: Licensing special cases
         items:         
         - name: "Extended Pro Trial activation"
