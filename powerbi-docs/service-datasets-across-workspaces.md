@@ -68,7 +68,7 @@ With this more granular Build permission, you can choose who can only view the c
 
 - Building a report on top of a dataset in a different workspace requires the new workspace experience at both ends: the report needs to be in the new workspace experience and the dataset needs to be in the new workspace experience.
 - In a classic workspace, the dataset discovery experience only shows the datasets in that workspace.
-- You can't add reports to apps if they're based on datasets in a different workspace.
+- You can create reports in app workspacess that are based on datasets in a different workspace. However, you can't create an app for a workspace that contains those datasets.
 - Free users in Desktop only see datasets from My Workspace and from Premium-based workspaces.
 - If a dataset is being used by a report outside of the dataset workspace, you can't delete that dataset. Instead, you see an error message.
 

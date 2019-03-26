@@ -7,26 +7,54 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/22/2019
+ms.date: 03/25/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Certify and promote datasets
 
-With Power BI users having easy access to a variety of datasets to work with, enterprises need to guide their users to reliable, high-quality datasets. To this end, Power BI provides a way to *endorse* datasets. Endorsement comes in two flavors:
+Power BI users now have access to a variety of datasets, so enterprises need to guide them to the reliable, high-quality datasets. Power BI provides two ways to *endorse* datasets:
 
 - **Promotion**: Dataset owners can promote their own datasets when they feel they're good enough for wide-spread usage. Promotion supports the collaborative spread of datasets within organizations.
-- **Certification**: A select group of users, defined in the **Dataset Certification** tenant admin setting, can certify datasets.
+- **Certification**: A select group of users defined in the **Dataset Certification** tenant admin setting can certify datasets.
 
-In both cases, datasets are shown with badges in the discovery experience as well as the list of datasets in a workspace. In the discovery experience, endorsed datasets are shown on top of the list by default. The endorsement values can be set on a dataset Settings page.
+## Find an endorsed dataset
 
-The **Dataset Certification** setting also allows a tenant admin to provide a URL. This URL is used in the **Learn more** link on the Endorsement setting page and allows organizations to set up documentation about the certification process. By default, the **Learn more** link points to this documentation page.
+In both endorsement cases, these datasets display *badges* in the discovery experience and in the list of datasets in a workspace. In the discovery experience, endorsed datasets top the list by default. 
 
-![Dataset certification](media/service-datasets-certify-promote/power-bi-dataset-certification.png)
+![Promoted dataset](media/service-datasets-certify-promote/power-bi-dataset-promoted.png)
+
+## Promote a dataset
+
+Your dataset needs to be in a workspace in the Power BI service when you're ready to promote it.
+
+1. Go to the list of datasets in the workspace.
+ 
+3. Select the ellipsis (...) > **Settings**. 
+
+    ![Select the ellipsis by the dataset](media/service-datasets-certify-promote/power-bi-dataset-settings.png)
+
+4. Expand **Endorsement** > select **Promoted**.
+
+    ![Select Promoted and Apply](media/service-datasets-certify-promote/power-bi-dataset-promoted-endorsement.png)
+
+5. Add a description > **Apply**.
+
+## Request dataset certification
+
+If your tenant admin designates you as someone who can create certified datasets, the **Certified** option in the **Endorsement** section of **Settings** is available. 
+
+1. Select **Certified**.
+2. Add a description > **Apply**.
+
+Tenant admins can provide a URL for the **Learn more** link on the **Endorsement** setting page.  They can link to documentation about their certification process. By default, the **Learn more** link points to this article.
+
+![Dataset certification Learn more](media/service-datasets-certify-promote/power-bi-dataset-learn-more-certification.png)
+
+Read more about how tenant admins [control the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
 
 ## Next steps
-* Read about [organizing work in the new workspaces (preview) in Power BI](service-new-workspaces.md)
-* [Create the current workspaces](service-create-workspaces.md)
-* [Install and use apps in Power BI](service-create-distribute-apps.md)
+
+* Read about [Using datasets across workspaces](service-datasets-across-workspaces.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
