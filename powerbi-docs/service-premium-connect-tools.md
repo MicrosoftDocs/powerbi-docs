@@ -65,6 +65,10 @@ For example, `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`
 
 In **Connect to Server** > **Server Type**, select **Analysis Services**. In **Server name**, enter the URL. In **Authentication**, select **Active Directory - Universal with MFA Support**, and then in **User name**, enter your organization user ID. 
 
+When connected, the workspace is shown as an Analysis Services server, and datasets in the workspace are shown as databases.
+
+![SSMS](media/connect-tools-ssms.png)
+
 Some tools, such as SQL Server Profiler, you may need to specify an *Initial Catalog*. This is a dataset (database) in your workspace. In **Connect to Server**, click **Options**. In the **Connect to Server** dialog, on the **Connection Properties** tab, in **Connect to database**, enter the dataset name.
 
 
