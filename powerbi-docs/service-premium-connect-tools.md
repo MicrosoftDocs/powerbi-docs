@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/25/2019
+ms.date: 03/27/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -69,14 +69,9 @@ When connected, the workspace is shown as an Analysis Services server, and datas
 
 ![SSMS](media/service-premium-connect-tools/connect-tools-ssms.png)
 
+### Initial catalog
+
 Some tools, such as SQL Server Profiler, you may need to specify an *Initial Catalog*. Specify a dataset (database) in your workspace. In **Connect to Server**, click **Options**. In the **Connect to Server** dialog, on the **Connection Properties** tab, in **Connect to database**, enter the dataset name.
-
-
-## Audit logs 
-
-When client applications and tools connect to a workspace, access through XMLA endpoints is logged in the Power BI audit logs under the **GetWorkspaces** operation. To learn more, see [Auditing Power BI](service-admin-auditing.md).
-
-## Known issues
 
 ### Duplicate workspace name
 
@@ -92,6 +87,9 @@ When connecting to a dataset with the same name as another dataset in the same w
 
 When connecting to a workspace, changes from new, deleted, and renamed datasets can take up to 5 minutes to appear. 
 
+## Audit logs 
+
+When client applications and tools connect to a workspace, access through XMLA endpoints is logged in the Power BI audit logs under the **GetWorkspaces** operation. To learn more, see [Auditing Power BI](service-admin-auditing.md).
 
 ## See also
 
