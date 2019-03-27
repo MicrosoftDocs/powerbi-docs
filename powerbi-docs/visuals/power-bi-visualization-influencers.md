@@ -1,6 +1,6 @@
 ---
 title: Key influencers visualizations tutorial
-description: Tutorial - create a key influencers visualization in Power BI
+description: 'Tutorial: Create a key influencers visualization in Power BI'
 author: mihart
 manager: kvivek
 ms.reviewer: juluczni
@@ -13,111 +13,112 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 # Key influencers visualization
-The key influencers visual helps you understand the factors that  drive a metric you are interested in. It analyzes your data, ranks the factors that matter, and displays them as key influencers. For example, you're interested in figuring out what influences employee turnover (churn). One factor may be employment contract length and another may be employee age. 
+The key influencers visual helps you understand the factors that drive a metric you're interested in. It analyzes your data, ranks the factors that matter, and displays them as key influencers. For example, you're interested in figuring out what influences employee turnover, also known as churn. One factor might be employment contract length, and another factor might be employee age. 
  
-## When to use key influencers? 
+## When to use key influencers 
 The key influencer visual is a great choice: 
-- To see which factors impact the metric being analyzed.
-
+- To see which factors affect the metric being analyzed.
 - To contrast the relative importance of these factors. For example, do short-term contracts have more impact on churn than long-term contracts? 
 
 ## Key influencer requirements 
-The metric you are analyzing must be a categorical field.    
+The metric you analyze must be a category field.
 
 
 ## Features of the key influencer visual
 
-![features numbererd](media/power-bi-visualization-influencers/power-bi-ki-numbers-new.png)    
+![Features numbererd](media/power-bi-visualization-influencers/power-bi-ki-numbers-new.png)    
 
-1. ***Tabs*** - select a tab to switch between views. Key influencers shows you the top contributors to the selected metric value. Top segments shows you the top segments that contribute to the selected metric value. A *segment* is made up of a combination of values.  For example, one segment may be consumers who have been customers for at least twenty years and live in the west region. 
+1. **Tabs**: Select a tab to switch between views. Key influencers shows you the top contributors to the selected metric value. Top segments shows you the top segments that contribute to the selected metric value. A *segment* is made up of a combination of values. For example, one segment may be consumers who have been customers for at least twenty years and live in the west region. 
 
-2. ***Dropdown*** - value of the metric being investigated. In this example we're looking at the metric **rating** and the value we've selected is **low**.    
+2. **Drop-down box**: The value of the metric being investigated. In this example, we look at the metric **Rating**. The value that we selected is **Low**.
 
-3. ***Restatement*** - helps us interpret the visual in the left pane. 
+3. **Restatement**: It helps us interpret the visual in the left pane.
 
-4. ***Left pane*** - the left pane contains one visual.  In this case, the left pane shows us a list of the top key influencers.
+4. **Left pane**: The left pane contains one visual. In this case, the left pane shows a list of the top key influencers.
 
-5. ***Restatement*** - helps us interpret the visual in the right pane.
+5. **Restatement**: It helps us interpret the visual in the right pane.
 
-6. ***Right pane*** - the right pane contains one visual. In this case, the column chart displays all the values for the **key influencer**, **Theme** that is selected in the left pane. The specific value (**Usability**) from the left pane is in green and all the other values for **Theme** are in black.
+6. **Right pane**: The right pane contains one visual. In this case, the column chart displays all the values for the **key influencer**, **Theme**, that's selected in the left pane. The specific value of **usability** from the left pane is shown in green. All the other values for **Theme** are shown in black.
 
-7. ***Average line*** - the average is calculated for all the other possible values for **Theme** except **usability**. So the calculation applies to all the values in black. It tells us what percentage of the other **Themes** gave us a low rating. In other words, when a rating is given by a customer, that customer also describes the reason or **theme** for the rating. Some themes are usability, speed, security, etc. **Theme** is **Usability** is the second highest key influencer for a low rating, according to our visual in the left pane. If we average all the other themes, and their contribution to a rating of **low**, we get the result seen here in red. Of all the other themes given, only 11.35% of those are higher than **usability**. 
+7. **Average line**: The average is calculated for all the other possible values for **Theme** except **usability**. So the calculation applies to all the values in black. It tells us what percentage of the other **Themes** gave us a low rating. In other words, when a rating is given by a customer, that customer also describes the reason or **theme** for the rating. Some themes are usability, speed, and security. 
 
-8. ***Checkbox*** - only show values that are influencers.
+   **Theme is usability** is the second-highest key influencer for a low rating, according to the visual in the left pane. If we average all the other themes, and their contribution to a rating of **Low**, we get the result shown here in red. Of all the other themes given, only 11.35% are higher than **usability**.
+
+8. **Check box**: **Only show values that are influencers**.
 
 ## Create a key influencers visual 
  
-Watch this video to learn how to create a key influencers visual and then follow the steps below to create one yourself. 
+Watch this video to learn how to create a key influencers visual. Then follow these steps to create one. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Our Product Manager wants to figure out which factors lead customers to leave negative reviews about our cloud service.  To follow along, open the [Customer Feedback PBIX file](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) in Power BI Desktop. You can also download the [Customer Feedback Excel file for Power BI service or Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
+Our Product Manager wants to figure out which factors lead customers to leave negative reviews about our cloud service. To follow along, open the [Customer Feedback PBIX file](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) in Power BI Desktop. You also can download the [Customer Feedback Excel file for Power BI service or Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
 
 > [!NOTE]
-> The Customer Feedback dataset is based on [Moro et al., 2014] S. Moro, P. Cortez and P. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. Decision Support Systems, Elsevier, 62:22-31, June 2014 
+> The Customer Feedback dataset is based on [Moro et al., 2014] S. Moro, P. Cortez, and P. Rita. "A Data-Driven Approach to Predict the Success of Bank Telemarketing." *Decision Support Systems*, Elsevier, 62:22-31, June 2014. 
 
-1. Open the report and select the key influencers icon.  
+1. Open the report, and select the key influencers icon.  
 
     ![From Visualizations pane, select Key influencers template](media/power-bi-visualization-influencers/power-bi-template-new.png)
 
-2. Drag the metric you want to investigate into the **Analyze** field. The **Analyze** field supports categorical (non-continuous) variables only. Since we are interested in looking at what drives a customer rating of our service to be **Low**, we select **Customer Table** > **Rating**.    
-3. Next, drag fields that you think could influence **Rating** into the **Explain By** well. You can drag in as many fields as you’d like. In this case, we are starting out with: 
+2. Drag the metric you want to investigate into the **Analyze** field. The **Analyze** field supports categorical (non-continuous) variables only. Because we're interested in looking at what drives a customer rating of our service to be **Low**, select **Customer Table** > **Rating**. 
+3. Drag fields that you think might influence **Rating** into the **Explain By** well. You can drag in as many fields as you want. In this case, we start with: 
     - Country-Region 
     - Role in Org 
     - Subscription Type 
     - Company Size 
     - Theme     
-4. Since we're interested in negative ratings, select **Low** in the dropdown for **What influences Rating to be**.  
+4. Because we're interested in negative ratings, select **Low** in the drop-down box for **What influences Rating to be**.  
 
-    ![select Low from dropdown](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
+    ![Select Low from drop-down box](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
 
-The analysis runs on the table level of the field being analyzed. In this case, we are interested in the **Rating** metric, which is defined at a customer level (each customer has either given a high score or low score). All our explanatory factors have to be defined at the customer level for the visual to make use of them. 
+The analysis runs on the table level of the field that's being analyzed. In this case, we're interested in the **Rating** metric. This metric is defined at a customer level. Each customer has given either a high score or a low score. All the explanatory factors must be defined at the customer level for the visual to make use of them. 
 
-In the example above, all of our explanatory factors have either a one-to-one or many-to-one relationship with our metric. For example, each score has exactly one theme associated with it (what was the main theme of the customer review). Similarly, customers come from one country, have one membership type and one role in their organization. Our explanatory factors are therefore already attributes of a customer and no transformations are needed – the visual can make immediate use of them. 
+In the previous example, all of the explanatory factors have either a one-to-one or a many-to-one relationship with the metric. For example, each score has exactly one theme associated with it. This theme was the main theme of the customer review. Similarly, customers come from one country, have one membership type, and one role in their organization. Our explanatory factors are already attributes of a customer, and no transformations are needed. The visual can make immediate use of them. 
 
-Later on in the tutorial we will look at more complex examples where we have one-to-many relationships. In those cases, the columns have to first be aggregated down to the customer level before the analysis can be run.  
+Later on in the tutorial, we look at more complex examples where we have one-to-many relationships. In those cases, the columns have to first be aggregated down to the customer level before you can run the analysis.  
 
-Measures and aggregates used as explanatory factors are also evaluated at the table level of the **Analyze** metric and we will see some examples later in this article. 
+Measures and aggregates used as explanatory factors are also evaluated at the table level of the **Analyze** metric. We see some examples later in this article. 
 
-## Interpreting categorical key influencers 
-Let's take a look at our key influencers for low ratings. 
+## Interpret categorical key influencers 
+Let's take a look at the key influencers for low ratings. 
 
-### Top single factor influencing likelihood of a low rating
+### Top single factor that influences the likelihood of a low rating
 
-In our organization, we have three roles: consumers, administrators, and publishers. We see that being a consumer is the top factor contributing to a low rating. 
+In our organization, we have three roles: consumers, administrators, and publishers. Being a consumer is the top factor that contributes to a low rating. 
 
-![select Role in Org is consumer](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
+![Select Role in Org is consumer](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
 
 
-More precisely, our consumers are 2.57x more likely to give us a negative score. The key influencer chart lists **Role in Org is consumer** first in the list on the left. By selecting **Role in Org is consumer**, Power BI shows us additional details on the pane to the right -- the comparative impact of each **role** on likelihood of a low rating.
+More precisely, our consumers are 2.57 times more likely to give us a negative score. The key influencer chart lists **Role in Org is consumer** first in the list on the left. By selecting **Role in Org is consumer**, Power BI shows additional details in the right pane. The comparative impact of each **role** on likelihood of a low rating is shown.
   
-- 14.93% of consumers give a low score  
-- On average, all other roles give a low score 5.78% of the time 
-- Consumers are therefore 2.57x more likely to give a low score compared to all other roles (difference between green bar and red dotted line) 
+- 14.93% of consumers give a low score. 
+- On average, all other roles give a low score 5.78% of the time.
+- Consumers are 2.57 times more likely to give a low score compared to all other roles. See the difference between the green bar and the red dotted line. 
 
-### Second single factor influencing likelihood of a low rating
+### Second single factor that influences the likelihood of a low rating
 
-The key influencers visual is able to compare and rank factors from many different variables.  Our second influencer has nothing to do with **Role in Org**.  Select the second influencer in the list; **Theme is usability**. 
+The key influencers visual compares and ranks factors from many different variables. The second influencer has nothing to do with **Role in Org**. Select the second influencer in the list, **Theme is usability**. 
 
-![select Theme is usability](media/power-bi-visualization-influencers/power-bi-theme.png)
+![Select Theme is usability](media/power-bi-visualization-influencers/power-bi-theme.png)
 
-Here we see that the second most important factor is related to the theme of the customer’s review. Customers who commented about the *usability* of the product were 2.21x more likely to give a low score compared to customers who commented on other themes, such as reliability, design, or speed. 
+The second most important factor is related to the theme of the customer’s review. Customers who commented about the *usability* of the product were 2.21 times more likely to give a low score compared to customers who commented on other themes, such as reliability, design, or speed. 
 
-You can see between the visuals that the average (red dotted line) has changed from 5.78% to 11.34%. The average is dynamic as it is based on the average of all other values. In the case of the first influencer, the average excluded the customer role whilst in the case of the second, it excluded the usability theme. 
+Between the visuals, the average, which is shown by the red dotted line, changed from 5.78% to 11.34%. The average is dynamic because it's based on the average of all other values. In the case of the first influencer, the average excluded the customer role. In the case of the second influencer, it excluded the usability theme. 
  
-Ticking the box at the bottom of the visual will result in the visual filtering to only the influential values (in this case roles that drive a low score). We therefore go from looking at 12 themes to the four Power BI has identified as driving low ratings. 
+Select the **Only show values that are influencers** check box to filter by using only the influential values. In this case, they're the roles that drive a low score. Twelve themes are reduced to the four that Power BI has identified as the themes that drive low ratings. 
 
-![select checkbox](media/power-bi-visualization-influencers/power-bi-only-show.png)
+![Select check box](media/power-bi-visualization-influencers/power-bi-only-show.png)
 
-## Interacting with other visuals 
+## Interact with other visuals 
  
 Every time a user clicks on a slicer, filter, or other visual on the canvas, the Key influencers visual reruns its analysis on the new portion of data. For example, let’s drag Company Size into the report and use it as a slicer. We want to see if the key influencers for our enterprise customers (company size is larger than 50,000) are different than the general population.  
  
 Selecting **>50,000** reruns the analysis and we can see that the influencers have changed. For large enterprise customers, the top influencer for low ratings have a **Theme** related to **security**. We may want to investigate further, to see if there are specific security features our large customers are unhappy about. 
 
-![slice by company size](media/power-bi-visualization-influencers/power-bi-filter.png)
+![Slice by company size](media/power-bi-visualization-influencers/power-bi-filter.png)
 
-## Interpreting continuous key influencers 
+## Interpret continuous key influencers 
  
 So far we have used the visual to explore how different categorical fields influence low ratings. It is also possible to have continuous factors (for example, age, height, price) go into ‘Explain by’. Let’s look at what happens if we drop ‘Tenure’ from the Customer table into ‘Explain by’. Tenure depicts how long the customer has been using the service. 
  
