@@ -45,7 +45,7 @@ The last refresh is shown, or click **Refresh history** to see scheduled and on 
 
 ## Monitor capacities with the app
 
-Now that you've installed the app, you can see metrics for the capacities in your organization. The app provides a [Dashboard](#Dashboard) with metrics summaries, and detailed metrics [Reports](#Reports).
+Now that you've installed the app, you can see metrics for the capacities in your organization. The app provides a Dashboard with metrics summaries, and detailed metrics Reports.
 
 ### Dashboard
 
