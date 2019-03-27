@@ -171,6 +171,12 @@ var clientAssertion = new AD.ClientAssertionCertificate(MyAppId, MyAppCertificat
 var authenticationResult = await context.AcquireTokenAsync(resourceId, clientAssertion, userAssertion);
 ```
 
+### What object ID is the service principal object Id?
+
+The *Object ID* from the main screen of a registered app is the object ID for the app.
+
+The object Id found in the *Managed application in local directory > Properties* section is the service principal object Idyou need to use. This object Id is to reference a service principal for operations or to make changes to the service principal object ID. Such as applying a service principal as an admin to a workspace.
+
 ### How is Power BI Embedded different from other Azure services?
 
 The ISV/developer must have a Power BI account before the purchase of Power BI Embedded in Azure. Your Power BI Embedded deploys region determines your Power BI account. Manage your Power BI Embedded resource in Azure to:

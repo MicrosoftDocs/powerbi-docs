@@ -923,8 +923,6 @@
           href: developer/azure-pbie-scale-capacity.md
         - name: Pause and start a capacity in Azure
           href: developer/azure-pbie-pause-start.md
-      - name: Troubleshoot
-        items:
         - name: "Troubleshoot your embedded application"
           href: developer/embedded-troubleshoot.md
       - name: Migrate from Workspace Collections

@@ -8,7 +8,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019 
+ms.date: 03/27/2019 
 ---
 
 # Row-level security with Power BI Embedded
@@ -209,6 +209,8 @@ Here are the steps to begin setting up the CustomData() feature with your Power 
     ![PBI report sample](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
 7. Use the Power BI APIs to use the CustomData feature in your application.  When generating a token with the Custom data feature, you need to have a username. The username must be equal to the UPN of the master user. The master user must be a member of the role(s) you created. If no role(s) are specified, then all the roles the master user is a member of are used for RLS evaluation.
+
+    When working with a [service principal](embed-service-principal.md), you also need to do the above steps in place of using a master account. When generating embed token, use the [service principal object id](embed-service-principal.md#how-to-get-the-service-principal-object-id) as the username.
 
     > [!Note]
     > When you're ready to deploy your application to production, the master user account field or option should not be visible to the end user.
