@@ -134,16 +134,17 @@ You can modify the default settings of the formatting pane with the theme file. 
 
 Here's a sample theme snippet to get you started:
 
+```
 "outspacePane": [{
 
-  "backgroundColor": {"solid": {"color": "#0000ff"}},
-  "foregroundColor": {"solid": {"color": "#00ff00"}},
-  "transparency": 50,
-  "titleSize": 35,
-  "headerSize": 8,
-  "fontFamily": "Georgia",
-  "border": true,
-  "borderColor": {"solid": {"color": "#ff0000"}}
+    "backgroundColor": {"solid": {"color": "#0000ff"}},
+    "foregroundColor": {"solid": {"color": "#00ff00"}},
+    "transparency": 50,
+    "titleSize": 35,
+    "headerSize": 8,
+    "fontFamily": "Georgia",
+    "border": true,
+    "borderColor": {"solid": {"color": "#ff0000"}}
 
 }],
 
@@ -176,6 +177,7 @@ Here's a sample theme snippet to get you started:
     "inputBoxColor": {"solid": {"color": "#777777"}}
 
 }]
+```
 
 ## Filters pane scaling
 
