@@ -16,10 +16,10 @@ LocalizationGroup: Premium
 
 # Client application and tool connectivity (Preview)
 
-Power BI Premium workspaces and datasets support *read-only* connections from Microsoft and third-party tools and client applications. 
+Power BI Premium workspaces and datasets support *read-only* connections from Microsoft and third-party client applications and tools. 
 
 > [!NOTE]
-> This article is intended only to introduce read-only connectivity to Power BI Premium workspaces and datasets. It *is not* intended to provide in-depth information about programmability, specific tools and applications, architecture, and workspace and dataset management. Subjects described here require a solid understanding of Analysis Services tabular model database architecture, administration. To learn more, be sure to checkout the [See also](#see-also) section later in this article.
+> This article is intended only to introduce read-only connectivity to Power BI Premium workspaces and datasets. It *is not* intended to provide in-depth information about programmability, specific tools and applications, architecture, and workspace and dataset management. Subjects described here require a solid understanding of Analysis Services tabular model database architecture  administration. To learn more, be sure to checkout the [See also](#see-also) section later in this article.
 
 ## Protocol
 
@@ -40,11 +40,11 @@ These tools support read-only access to Power BI Premium workspaces and datasets
 
 **Excel PivotTables** - Click-to-Run version of Office 16.0.11326.10000 or above is required.
 
-**Third-party data visualization tools** - Includes client applications and tools that can connect to and consume datasets in Power BI Premium. Most tools require the latest versions of MSOLAP client libraries, but some may use ADOMD.
+**Third-party** - Includes client data visualization applications and tools that can connect to, query, and consume datasets in Power BI Premium. Most tools require the latest versions of MSOLAP client libraries, but some may use ADOMD.
 
 ## Client libraries
 
-Client libraries may be necessary for client applications and tools to connect to Power BI Premium workspaces. The same client libraries used by client applications and tools to connect to Analysis Services are also supported in Power BI Premium. Microsoft client applications like Excel, SQL Server Management Studio (SSMS), and SQL Server Data Tools (SSDT) install all three client libraries and update them along with regular application updates. In some cases, particularly with third-party applications and tools, you may need to install newer versions of the client libraries. Client libraries are updated monthly. To learn more, see [Client libraries for connecting to Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers).
+Client libraries are necessary for client applications and tools to connect to Power BI Premium workspaces. The same client libraries used to connect to Analysis Services are also supported in Power BI Premium. Microsoft client applications like Excel, SQL Server Management Studio (SSMS), and SQL Server Data Tools (SSDT) install all three client libraries and update them along with regular application updates. In some cases, particularly with third-party applications and tools, you may need to install newer versions of the client libraries. Client libraries are updated monthly. To learn more, see [Client libraries for connecting to Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers).
 
 ## Connecting to a Premium workspace
 
@@ -52,22 +52,22 @@ You can connect to workspaces assigned to Premium dedicated capacities. Workspac
 
 To get the workspace connection string, in Power BI, in **Workspace Settings**, on the **Premium** tab, in **Workspace Connection**, click **Copy**.
 
-![Workpace connection string](media/connect-tools-workspace-connection.png)
+![Workpace connection string](media/service-premium-connect-tools/connect-tools-workspace-connection.png)
 
-Use the following URL format to address a workspace as though it were an Analysis Services server name:   
+Workspace connections use the following URL format to address a workspace as though it were an Analysis Services server name:   
 `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]` 
 
 For example, `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`
 > [!NOTE]
-> '[workspace name]` is case sensitive and can include spaces. 
+> `[workspace name]` is case sensitive and can include spaces. 
 
 ### To connect in SSMS
 
-In **Connect to Server** > **Server Type**, select **Analysis Services**. In **Server name**, enter the URL. In **Authentication**, select **Active Directory - Universal with MFA Support**, and then in **User name**, enter your organization user ID. 
+In **Connect to Server** > **Server Type**, select **Analysis Services**. In **Server name**, enter the URL. In **Authentication**, select **Active Directory - Universal with MFA Support**, and then in **User name**, enter your organizational user ID. 
 
 When connected, the workspace is shown as an Analysis Services server, and datasets in the workspace are shown as databases.
 
-![SSMS](media/connect-tools-ssms.png)
+![SSMS](media/service-premium-connect-tools/connect-tools-ssms.png)
 
 Some tools, such as SQL Server Profiler, you may need to specify an *Initial Catalog*. This is a dataset (database) in your workspace. In **Connect to Server**, click **Options**. In the **Connect to Server** dialog, on the **Connection Properties** tab, in **Connect to database**, enter the dataset name.
 
@@ -80,13 +80,13 @@ When client applications and tools connect to a workspace, access through XMLA e
 
 ### Duplicate workspace name
 
-When connecting to a workspace with the same name as another workspace, you may get the following error: **Cannot connect to powerbi://api.powerbi.com/v1.0/myorg/Contoso Sales.**
+When connecting to a workspace with the same name as another workspace, you may get the following error: **Cannot connect to powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name].**
 
 To get around this error, in addition to the workspace name, specify the ObjectIDGuid, which can be copied from the workspace objectID in the URL. Append the objectID to the connection URL. For example, `powerbi://api.powerbi.com/v1.0/myorg/Contoso Sales - 9d83d204-82a9-4b36-98f2-a40099093830'
 
 ### Duplicate dataset name
 
-When connecting to a dataset with the same name as another dataset in the same workspace, append the dataset guid to the dataset name. You can get both dataset name *and* guid in SSMS when connected to the workspace. 
+When connecting to a dataset with the same name as another dataset in the same workspace, append the dataset guid to the dataset name. You can get both dataset name *and* guid when connected to the workspace in SSMS. 
 
 ### Delay in datasets shown
 
