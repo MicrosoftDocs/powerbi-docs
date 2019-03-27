@@ -23,7 +23,7 @@ Power BI Premium workspaces and datasets support *read-only* connections from Mi
 
 ## Protocol
 
-Power BI Premium uses the [XML for Analysis](https://docs.microsoft.com/en-us/bi-reference/xmla/xml-for-analysis-xmla-reference) (XMLA) protocol for communications between client applications and the engine that manages your workspaces and datasets. These communications are through what are commonly referred to as XMLA endpoints. XMLA is the same communication protocol used by the Microsoft Analysis Services engine, which under the hood, runs Power BI's semantic modeling, governance, lifecycle, and data management. 
+Power BI Premium uses the [XML for Analysis](https://docs.microsoft.com/bi-reference/xmla/xml-for-analysis-xmla-reference) (XMLA) protocol for communications between client applications and the engine that manages your workspaces and datasets. These communications are through what are commonly referred to as XMLA endpoints. XMLA is the same communication protocol used by the Microsoft Analysis Services engine, which under the hood, runs Power BI's semantic modeling, governance, lifecycle, and data management. 
 
 The vast majority of client applications and tools do not explicitly communicate with the engine by using XMLA endpoints. Instead, they use client libraries such as MSOLAP, ADOMD, and AMO as an intermediary between the client application and the engine, which communicates exclusively by using XMLA.
 
@@ -32,9 +32,9 @@ The vast majority of client applications and tools do not explicitly communicate
 
 These tools support read-only access to Power BI Premium workspaces and datasets:
 
-**SQL Server Management Studio (SSMS)** - Supports DAX, MDX, XMLA, and TraceEvent queries. Requires version 18.0 (Preview). Download [here](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms). 
+**SQL Server Management Studio (SSMS)** - Supports DAX, MDX, XMLA, and TraceEvent queries. Requires version 18.0 (Preview). Download [here](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms). 
 
-**SQL Server Profiler** - Included with SSMS 18.0 (Preview), this tool provides tracing and debugging of server events. You can capture and save data about each event to a file or table to analyze later. While officially deprecated for SQL Server, Profiler continues to be included in SSMS and remains supported for Analysis Services and Power BI Premium. To learn more, see [SQL Server Profiler](https://docs.microsoft.com/en-us/sql/tools/sql-server-profiler/sql-server-profiler).
+**SQL Server Profiler** - Included with SSMS 18.0 (Preview), this tool provides tracing and debugging of server events. You can capture and save data about each event to a file or table to analyze later. While officially deprecated for SQL Server, Profiler continues to be included in SSMS and remains supported for Analysis Services and Power BI Premium. To learn more, see [SQL Server Profiler](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler).
 
 **DAX Studio** - Open-source, community tool for executing and analyzing DAX queries against Analysis Services. Requires version 2.8.2 or higher. To learn more, see [daxstudio.org](https://daxstudio.org/).
 
@@ -95,10 +95,10 @@ When connecting to a workspace, changes from new, deleted, and renamed datasets 
 
 ## See also
 
-[Analysis Services Reference](https://docs.microsoft.com/en-us/bi-reference/#pivot=home&panel=home-all)   
-[SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms)   
-[SQL Server Analysis Services Tabular Protocol](https://docs.microsoft.com/en-us/openspecs/sql_server_protocols/ms-ssas-t/b98ed40e-c27a-4988-ab2d-c9c904fe13cf)   
-[Dynamic Management Views (DMVs)](https://docs.microsoft.com/en-us/sql/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services)   
+[Analysis Services Reference](https://docs.microsoft.com/bi-reference/#pivot=home&panel=home-all)   
+[SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-ssms)   
+[SQL Server Analysis Services Tabular Protocol](https://docs.microsoft.com/openspecs/sql_server_protocols/ms-ssas-t/b98ed40e-c27a-4988-ab2d-c9c904fe13cf)   
+[Dynamic Management Views (DMVs)](https://docs.microsoft.com/sql/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services)   
 
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
