@@ -19,7 +19,7 @@ LocalizationGroup: Premium
 Power BI Premium workspaces and datasets support *read-only* connections from Microsoft and third-party client applications and tools. 
 
 > [!NOTE]
-> This article is intended only to introduce read-only connectivity to Power BI Premium workspaces and datasets. It *is not* intended to provide in-depth information about programmability, specific tools and applications, architecture, and workspace and dataset management. Subjects described here require a solid understanding of Analysis Services tabular model database architecture  administration. To learn more, be sure to checkout the [See also](#see-also) section later in this article.
+> This article is intended only to introduce read-only connectivity to Power BI Premium workspaces and datasets. It *is not* intended to provide in-depth information about programmability, specific tools and applications, architecture, and workspace and dataset management. Subjects described here require a solid understanding of Analysis Services tabular model database architecture and  administration.
 
 ## Protocol
 
@@ -40,7 +40,7 @@ These tools support read-only access to Power BI Premium workspaces and datasets
 
 **Excel PivotTables** - Click-to-Run version of Office 16.0.11326.10000 or above is required.
 
-**Third-party** - Includes client data visualization applications and tools that can connect to, query, and consume datasets in Power BI Premium. Most tools require the latest versions of MSOLAP client libraries, but some may use ADOMD.
+**Third party** - Includes client data visualization applications and tools that can connect to, query, and consume datasets in Power BI Premium. Most tools require the latest versions of MSOLAP client libraries, but some may use ADOMD.
 
 ## Client libraries
 
@@ -52,7 +52,7 @@ You can connect to workspaces assigned to Premium dedicated capacities. Workspac
 
 To get the workspace connection string, in Power BI, in **Workspace Settings**, on the **Premium** tab, in **Workspace Connection**, click **Copy**.
 
-![Workpace connection string](media/service-premium-connect-tools/connect-tools-workspace-connection.png)
+![Workspace connection string](media/service-premium-connect-tools/connect-tools-workspace-connection.png)
 
 Workspace connections use the following URL format to address a workspace as though it were an Analysis Services server name:   
 `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]` 
@@ -69,7 +69,7 @@ When connected, the workspace is shown as an Analysis Services server, and datas
 
 ![SSMS](media/service-premium-connect-tools/connect-tools-ssms.png)
 
-Some tools, such as SQL Server Profiler, you may need to specify an *Initial Catalog*. This is a dataset (database) in your workspace. In **Connect to Server**, click **Options**. In the **Connect to Server** dialog, on the **Connection Properties** tab, in **Connect to database**, enter the dataset name.
+Some tools, such as SQL Server Profiler, you may need to specify an *Initial Catalog*. Specify a dataset (database) in your workspace. In **Connect to Server**, click **Options**. In the **Connect to Server** dialog, on the **Connection Properties** tab, in **Connect to database**, enter the dataset name.
 
 
 ## Audit logs 
