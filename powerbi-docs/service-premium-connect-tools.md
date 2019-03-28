@@ -1,5 +1,5 @@
 ---
-title: Connect to datasets in Power BI Premium with tools 
+title: Connect to Power BI Premium datasets with client applications and tools (Preview)
 description: Describes how to connect to datasets in Power BI Premium with tools.
 author: minewiskan
 ms.author: owend
@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/27/2019
+ms.date: 03/28/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
