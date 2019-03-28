@@ -8,7 +8,7 @@ ms.reviewer: nishalit
 ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 02/05/2019
+ms.date: 03/29/2019
 ---
 
 # Service principal with Power BI (Preview)
@@ -166,6 +166,7 @@ Below is a sample script to retrieve the service principal object ID with PowerS
 * You can't install or manage an on-premises data gateway using service principal.
 * [Embed for your organization](embed-sample-for-your-organization.md) applications are unable to use service principal.
 * [Dataflows](../service-dataflows-overview.md) management is not supported.
+* Service principal does not support Admin APIs.
 
 ## Next steps
 
