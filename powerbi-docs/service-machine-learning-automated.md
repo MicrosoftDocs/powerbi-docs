@@ -24,7 +24,7 @@ Automated machine learning is available for dataflows that are hosted on Power B
 
 ## Working with AutoML
 
-[Power BI dataflows](https://docs.microsoft.com/en-us/power-bi/service-dataflows-overview) offers self-serve data prep for big data. AutoML enables you to leverage your data prep effort for building machine learning models, right within Power BI.
+[Power BI dataflows](service-dataflows-overview.md) offer self-serve data prep for big data. AutoML enables you to leverage your data prep effort for building machine learning models, right within Power BI.
 
 AutoML in Power BI enables data analysts to use dataflows to build machine learning models with a simplified experience, using just Power BI skills. Most of the data science behind the creation of the ML models is automated by Power BI, with guardrails to ensure that the model produced has good quality, and visibility to provide you with full insight into the process used to create your ML model.
 
