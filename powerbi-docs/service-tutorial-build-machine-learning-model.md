@@ -185,7 +185,7 @@ To use the scored output from your machine learning model, you can connect to yo
 
 ## Next steps
 
-In this tutorial, you created a simple experiment using Azure Machine Learning Studio using a simple dataset using these steps:
+In this tutorial, you created and applied a binary prediction model in Power BI using these steps:
 
 * Create a dataflow with the input data
 * Create and train a machine learning model
