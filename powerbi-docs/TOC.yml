@@ -1269,7 +1269,7 @@
         href: service-premium-incremental-refresh.md
       - name: "Multi-Geo support"
         href: service-admin-premium-multi-geo.md
-      - name: "Client application and tool dataset connectivity (Preview)"
+      - name: "Connect to datasets with client applications and tools"
         href: service-premium-connect-tools.md
       - name: "Power BI Premium FAQ"
         href: service-premium-faq.md
