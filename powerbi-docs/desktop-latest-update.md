@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/12/2019
+ms.date: 03/27/2019
 
 ms.author: davidi
 
@@ -16,7 +16,7 @@ LocalizationGroup: Get started
 ---
 # What's new in the latest Power BI Desktop update? 
 
-## March 2019 Update (2.65.5313.501)
+## March 2019 Update (2.67.5404.581)
 
 Our March updates are packed full of compelling and useful updates, and we hope these improvements make you feel as lucky as finding a four-leaf clover. 
 
