@@ -140,6 +140,8 @@
         href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
       - name: "Get notifications in the Power BI mobile apps"
         href: mobile/mobile-apps-notification-center.md
+      - name: "Access content from an external organization"
+        href: mobile/mobile-apps-b2b.md
       - name: "Create a deep link that goes to a specific location"
         href: mobile/mobile-apps-deep-link-specific-location.md
       - name: "Filter a report by location in the Power BI mobile apps"
