@@ -14,7 +14,7 @@ ms.custom: seodec18
 LocalizationGroup: Premium
 ---
 
-# Client application and tool connectivity (Preview)
+# Connect to datasets with client applications and tools (Preview)
 
 Power BI Premium workspaces and datasets support *read-only* connections from Microsoft and third-party client applications and tools. 
 
