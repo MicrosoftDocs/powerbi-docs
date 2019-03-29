@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/10/2019
+ms.date: 04/02/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -45,9 +45,6 @@ Before you can configure Power BI with an Azure Data Lake Storage Gen2 account, 
 6. Power BI services must be authorized to the **powerbi** filesystem you create.
 
 The following sections walk through the steps necessary to configure your Azure Data Lake Storage Gen2 account in detail.
-
-> [!NOTE]
-> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
 
 ### Create the storage account
 
@@ -205,9 +202,9 @@ For more information about dataflows, CDM, and Azure Data Lake Storage Gen2, tak
 For information about dataflows overall, check out these articles:
 
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
-* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
-* [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows](service-dataflows-developer-resources.md)
 
 For more information about Azure storage, you can read these articles:
 * [Azure Storage security guide](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
