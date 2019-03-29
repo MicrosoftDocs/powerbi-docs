@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/13/2019
+ms.date: 03/27/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -30,7 +30,7 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 
 The following sections describe previous months' updates to **Power BI Desktop**.
 
-## February 2019 Update (2.65.5313.501)
+## February 2019 Update (2.66.5376.1681)
 
 Our February updates made customers swoon and love all our new data connectors, features, and analytics enhancements. Just like a box of chocolates, you never know what you get... but with this February update, all changes were sweet and downright delicious. 
 
@@ -113,7 +113,7 @@ Select the following links to download this earlier version:
 There was no Power BI Desktop release in January 2019 - we were all busy having a happy holiday, spending time with friends and family. 
 
 
-## December 2018 Update (2.65.5313.501)
+## December 2018 Update (2.65.5313.621)
 
 Our December updates made sugar plums dance in our customers' heads, or at least created compelling data-driven visuals of said sugar plums. 
 
@@ -200,7 +200,7 @@ Select the following links to download this earlier version:
 * [December 2018 version of Power BI Desktop - 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-12_x64.msi)
 
 
-## November 2018 Update (2.64.5285.461)
+## November 2018 Update (2.64.5285.582)
 
 Our November updates were a bountiful harvest of new features and functionality. So you could sit down with your family of data and analytics enthusiasts, pass the potatoes, and dig in to our feast of updates. 
 
@@ -232,7 +232,7 @@ The following updates are new to **Power BI Desktop** in November:
 
 ### Data connectivity
 
-* Azure DevOps Server connector [[video]](https://youtu.be/1xsXXoyTxfk?t=2641)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
+* Azure Developer Operations Server connector [[video]](https://youtu.be/1xsXXoyTxfk?t=2641)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
 * PDF Connector support for Start Page and End Page parameters  [[video]](https://youtu.be/1xsXXoyTxfk?t=2667)   [[article]](desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23pdf) 
 * Improved Azure Consumption Insights connector  [[video]](https://youtu.be/1xsXXoyTxfk?t=2704)  [[article]](desktop-connect-azure-consumption-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23consumptionInsights) 
 
@@ -1542,7 +1542,7 @@ The following updates were new to Power BI Desktop in September:
 -   Add function invocation column [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 -   Expand & Aggregate columns - support for *Load More* values [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 -   New transform - convert Table Column to a list [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
--   Keyboarding - support for *smart typing* in drop-down menus [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   Key boarding - support for *smart typing* in drop-down menus [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 
 
 ### Other improvements
@@ -2386,7 +2386,7 @@ The following features have been added or improved in this update:
   -   Expand/Collapse tables
   -   Hide/Unhide fields
   -   Optimized layout (spacing, margins, and fonts)
-- Report Pages Navigation - Keyboarding support
+- Report Pages Navigation - Key boarding support
 - Lots of bug fixes
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>

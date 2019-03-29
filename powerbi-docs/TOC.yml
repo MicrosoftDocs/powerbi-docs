@@ -402,7 +402,9 @@
     - name: "Using Cognitive Services in Power BI"
       href: service-tutorial-use-cognitive-services.md
     - name: "Machine Learning integration with Power BI"
-      href: service-tutorial-invoke-machine-learning-model.md            
+      href: service-tutorial-invoke-machine-learning-model.md
+    - name: "Build a Machine Learning model with Power BI (Preview)"
+      href: service-tutorial-build-machine-learning-model.md                  
   - name: Concepts
     items: 
     - name: "What's new in the Power BI service"
@@ -656,7 +658,9 @@
       - name: "Integrate Machine Learning in Power BI"
         href: service-machine-learning-integration.md
       - name: "Use Cognitive Services in Power BI"
-        href: service-cognitive-services.md        
+        href: service-cognitive-services.md   
+      - name: "Automated Machine Learning in Power BI (Preview)"
+        href: service-machine-learning-automated.md              
     - name: Paginated reports in Power BI
       items: 
       - name: What are paginated reports? (Preview)
