@@ -17,9 +17,7 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-**Achieving a Win-Win for Consumer Product Goods Manufacturers and Retailers**
-<br>by Liz McCreesh
-<br>[Register now](https://info.microsoft.com/Achieving-a-Win-Win-for-Consumer-Packaged-Goods-Manufacturers-and-Retailers-registration.html)
+No webinars scheduled yet. Check back soon for more upcoming events.
 
 >[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -112,6 +110,10 @@ Watch recorded sessions at any time
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
 ### Partners ###
+
+**Achieving a Win-Win for Consumer Product Goods Manufacturers and Retailers**
+<br>by Liz McCreesh from Thorogood
+<br>[Register and watch now](https://info.microsoft.com/Achieving-a-Win-Win-for-Consumer-Packaged-Goods-Manufacturers-and-Retailers-registration.html)
 
 **Transform Customer Data into Retail Success with Power Bi**
 <br>by Angad Soni from Hitachi Solutions
