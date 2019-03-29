@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/12/2019
+ms.date: 03/27/2019
 
 ms.author: davidi
 
@@ -16,7 +16,7 @@ LocalizationGroup: Get started
 ---
 # What's new in the latest Power BI Desktop update? 
 
-## March 2019 Update (2.65.5313.501)
+## March 2019 Update (2.67.5404.581)
 
 Our March updates are packed full of compelling and useful updates, and we hope these improvements make you feel as lucky as finding a four-leaf clover. 
 
@@ -51,8 +51,8 @@ The following updates are new to **Power BI Desktop** this month:
 * Show dates as a hierarchy now generally available [[video]](https://youtu.be/rBPGH6eYlT0?t=397)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#dateHierarchy) 
 
 
-### Modelling
-* New modelling view now generally available [[video]](https://youtu.be/rBPGH6eYlT0?t=417)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#modellingView) 
+### Modeling
+* New modeling view now generally available [[video]](https://youtu.be/rBPGH6eYlT0?t=417)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#modellingView) 
 * New DAX functions [[video]](https://youtu.be/rBPGH6eYlT0?t=560)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#DAX) 
 
 ### Custom visuals
