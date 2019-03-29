@@ -18,7 +18,7 @@ LocalizationGroup: conceptual
 
 Automated machine learning (AutoML) for dataflows enables business analysts to train, validate and invoke Machine Learning models directly in Power BI. It includes a simple experience for creating a new ML model where analysts can use their dataflows to specify the input data for training the model. The service automatically extracts the most relevant features, selects an appropriate algorithm and tunes and validates the ML model. After a model is trained, Power BI automatically generates a report that includes the results of validation that explains the performance and results to analysts. The model can then be invoked on any new or updated data within the dataflow.
 
-![Machine learning screen](media/service-machine-learning-automated/AutoML-power-bi-01.png)
+![Machine learning screen](media/service-machine-learning-automated/automated-machine-learning-power-bi-01.png)
 
 Automated machine learning is available for dataflows that are hosted on Power BI Premium and Embedded capacities only. In this preview, AutoML enables you to train machine learning models for Binary Prediction, Classification, and Regression models.
 
@@ -54,7 +54,7 @@ AutoML has specific data requirements for training a machine learning model. The
 
 To create an AutoML model, select the ML icon in the **Actions** column of the dataflow entity with the historical data, and select **Add a machine learning model**.
 
-![Add a Machine learning model](media/service-machine-learning-automated/AutoML-power-bi-02.png)
+![Add a Machine learning model](media/service-machine-learning-automated/automated-machine-learning-power-bi-02.png)
 
 A simplified experience is launched, consisting of a wizard that guides you through the process of creating the ML model. The wizard includes the following simple steps.
 
@@ -65,7 +65,7 @@ A simplified experience is launched, consisting of a wizard that guides you thro
 
 The historical outcome field identifies the label attribute for training the ML model, shown in the following image.
 
-![Select historical outcome data](media/service-machine-learning-automated/AutoML-power-bi-03.png)
+![Select historical outcome data](media/service-machine-learning-automated/automated-machine-learning-power-bi-03.png)
 
 When you specify the historical outcome field, AutoML analyzes the label data to identify the types of ML models that can be trained for that data and suggests the most likely ML model type that can be trained. 
 
@@ -74,7 +74,7 @@ When you specify the historical outcome field, AutoML analyzes the label data to
 
 AutoML also analyzes all the fields in the selected entity to suggest the inputs that can be used for training the ML model. This process is approximate and is based on statistical analysis, so you should review the inputs used. Any inputs that are dependent on the historical outcome field (or the label field) should not be used for training the ML model, since they will affect its performance.
 
-![Customize input fields](media/service-machine-learning-automated/AutoML-power-bi-04.png)
+![Customize input fields](media/service-machine-learning-automated/automated-machine-learning-power-bi-04.png)
 
 In the final step, you can name the model and save its settings.
 
@@ -98,7 +98,7 @@ In some cases, the final model generated may use ensemble learning, where multip
 
 After the model has been trained, AutoML analyzes the relationship between the input features and the model output. It assesses the magnitude and direction of change to the model output for the holdout test dataset for each input feature. This is known as the *feature importance*.
 
-![Feature importance](media/service-machine-learning-automated/AutoML-power-bi-05.png)
+![Feature importance](media/service-machine-learning-automated/automated-machine-learning-power-bi-05.png)
 
 ### AutoML model report
 
@@ -112,15 +112,15 @@ Additional pages in the report may describe statistical measures about the model
 
 The reports also include a **Training Details** page that includes a description of how the model was trained, and includes a chart describing the model performance over each of the iterations runs.
 
-![Training details](media/service-machine-learning-automated/AutoML-power-bi-06.png)
+![Training details](media/service-machine-learning-automated/automated-machine-learning-power-bi-06.png)
 
 Another section on this page describes how the imputation method used for filling missing values for the input fields, as well as how each input field was transformed to extract the features used in the model. It also includes the parameters used by the final model.
 
-![More information for the model](media/service-machine-learning-automated/AutoML-power-bi-07.png)
+![More information for the model](media/service-machine-learning-automated/automated-machine-learning-power-bi-07.png)
 
 If the model produced uses ensemble learning, then the **Training Details** page also includes a section describing the weight of each constituent model in the ensemble, as well as its parameters.
 
-![Weight in the ensemble](media/service-machine-learning-automated/AutoML-power-bi-08.png)
+![Weight in the ensemble](media/service-machine-learning-automated/automated-machine-learning-power-bi-08.png)
 
 ## Applying the AutoML model
 
@@ -134,7 +134,7 @@ Currently, the output entity cannot be used to preview the ML model results in t
 
 You must refresh the dataflow, to preview the results in the Query Editor.
 
-![Query editor](media/service-machine-learning-automated/AutoML-power-bi-09.png)
+![Query editor](media/service-machine-learning-automated/automated-machine-learning-power-bi-09.png)
 
 When you apply the model, AutoML always keeps your predictions up-to-date when the dataflow is refreshed.
 
@@ -171,17 +171,17 @@ The report describes the performance of the model in terms of *True Positives*, 
 
 Measures, such as Precision and Recall, describe the effect of the probability threshold on the predicted outcomes. You can use the probability threshold slicer to select a threshold that achieves a balanced compromise between Precision and Recall.
 
-![Accuracy preview](media/service-machine-learning-automated/AutoML-power-bi-10.png)
+![Accuracy preview](media/service-machine-learning-automated/automated-machine-learning-power-bi-10.png)
 
 The **Accuracy Report** page of the model report includes the *Cumulative Gains* chart and the ROC curve for the model. These are statistical measures of model performance. The reports include descriptions of the charts shown.
 
-![Accuracy report screen](media/service-machine-learning-automated/AutoML-power-bi-11.png)
+![Accuracy report screen](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
 
 ### Applying a Binary Prediction model
 
 To apply a Binary Prediction model, you must specify the entity with the data to which you want to apply the predictions from the ML model. Other parameters include the output column name prefix and the probability threshold for classifying the predicted outcome.
 
-![Prediction inputs](media/service-machine-learning-automated/AutoML-power-bi-12.png)
+![Prediction inputs](media/service-machine-learning-automated/automated-machine-learning-power-bi-12.png)
 
 When a Binary Prediction model is applied, it adds three output columns to the enriched output entity. These are the **PredictionScore**, **PredictionOutcome** and **PredictionExplanation**. The column names in the entity have the prefix specified when the model is applied.
 
@@ -211,11 +211,11 @@ The Classification model report is produced by applying the ML model to the hold
 
 The model report includes a chart that includes the breakdown of the correctly and incorrectly classified records for each known class.
 
-![Model report](media/service-machine-learning-automated/AutoML-power-bi-13.png)
+![Model report](media/service-machine-learning-automated/automated-machine-learning-power-bi-13.png)
 
 A further class-specific drilldown enables an analysis of how the predictions for a known class are distributed. This includes the other classes in which records of that known class are likely to be misclassified.
 
-![Analysis report](media/service-machine-learning-automated/AutoML-power-bi-14.png)
+![Analysis report](media/service-machine-learning-automated/automated-machine-learning-power-bi-14.png)
 
 The model explanation in the report also includes the top predictors for each class.
 
@@ -255,7 +255,7 @@ The model report includes a chart that compares the predicted values to the actu
 
 The residual error chart shows the distribution of the percentage of average error for different values in the holdout test dataset. The horizontal axis represents the mean of the actual value for the group, with the size of the bubble showing the frequency or count of values in that range. The vertical axis is the average residual error.
 
-![Residual error chart](media/service-machine-learning-automated/AutoML-power-bi-15.png)
+![Residual error chart](media/service-machine-learning-automated/automated-machine-learning-power-bi-15.png)
 
 The Regression model report also includes a Training Details page like the reports for other model types, as described in the section **AutoML model report** above.
 
@@ -263,7 +263,7 @@ The Regression model report also includes a Training Details page like the repor
 
 To apply a Regression ML model, you must specify the entity with the input data and the output column name prefix.
 
-![Apply a regression](media/service-machine-learning-automated/AutoML-power-bi-16.png)
+![Apply a regression](media/service-machine-learning-automated/automated-machine-learning-power-bi-16.png)
 
 When a Regression model is applied, it adds two output columns to the enriched output entity. These are the **PredictionValue**, and **PredictionExplanation**. The column names in the entity have the prefix specified when the model is applied.
 
