@@ -7,22 +7,23 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/11/2019
+ms.date: 03/29/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Organize work in the new workspaces (preview) in Power BI
 
-Workspaces are places to collaborate with colleagues to create collections of dashboards and reports. Then you can bundle those collections into *apps* and distribute them to your whole organization or to specific people or groups. Power BI is introducing a new workspace experience as a preview. 
+Workspaces are places to collaborate with colleagues to create collections of dashboards and reports. You can bundle those collections into *apps* with their own table of contents. Then you can distribute them to your whole organization or to specific people or groups. Power BI is introducing a new workspace experience as a preview. 
 
 ![Power BI new workspaces preview](media/service-new-workspaces/power-bi-new-workspaces-preview.png)
 
-With the new workspaces preview, you can now:
+With the new workspaces preview, you can:
 
 - Assign workspace roles to user groups: security groups, distribution lists, Office 365 groups, and individuals.
 - Create a workspace in Power BI without creating an Office 365 group.
 - Use more granular workspaces roles for more flexible permissions management in a workspace.
+- Create the new apps, with built-in navigation.
 
 Read about how to [create one of the new workspaces](service-create-the-new-workspaces.md).
  

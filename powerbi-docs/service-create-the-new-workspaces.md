@@ -1,5 +1,5 @@
 ---
-title: Create the new workspaces (preview) - Power BI
+title: Create the new workspaces (Preview) - Power BI
 description: Learn how to create the new workspaces, collections of dashboards and reports built to deliver key metrics for your organization.
 author: maggiesMSFT
 manager: kfile
@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/11/2019
+ms.date: 03/29/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -23,6 +23,7 @@ With the new workspaces preview, you can now:
 - Assign workspace roles to user groups: security groups, distribution lists, Office 365 groups, and individuals.
 - Create a workspace in Power BI without creating an Office 365 group.
 - Use more granular workspaces roles for more flexible permissions management in a workspace.
+- Create and distribute an app with its own built-in navigation.
 
 For more background, see the [new workspaces (preview)](service-new-workspaces.md) article.
 
@@ -32,17 +33,18 @@ For more background, see the [new workspaces (preview)](service-new-workspaces.m
    
      ![Create app workspace](media/service-create-the-new-workspaces/power-bi-create-app-workspace.png)
 
-2. In **Preview improved workspaces**, select **Try now**.
+2. You're automatically creating an upgraded workspace, unless you opt to **Revert to classic**.
    
-     ![Preview improved workspaces](media/service-create-the-new-workspaces/power-bi-preview-improved-workspaces.png)
+     ![Preview improved workspaces](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
 
 2. Give the workspace a name. If the name isn't available, edit it to come up with a unique ID.
    
-     The app will have the same name as the workspace.
+     The app can have the same name as the workspace, or you can rename it when you create it.
    
-1. Add an image, if you want. The file size has to be less than 45 KB.
+1. Upload an image, if you want. The file size has to be less than 45 KB.
+2. You can add a **Contact list**. By default, the workspace admins are the contacts. You can also specific a **Workspace OneDrive** and assign the workspace to a **Dedicated capacity**.
  
-    ![Name the workspace and add an image](media/service-create-the-new-workspaces/power-bi-name-workspace.png)
+    ![Name the workspace, add an image, and other details](media/service-create-the-new-workspaces/power-bi-new-workspace-details.png)
 
 1. Select **Save**.
 
@@ -83,7 +85,7 @@ With the new workspaces preview, you can't create or consume organizational cont
 
 ## Distribute an app
 
-When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. You can create one app from each workspace. Your coworkers can get your app in a few different ways. You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your app from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md) for details.
+When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. You can create one app from each workspace. Your coworkers can get your app in a few different ways. You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your app from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish an app from the new workspaces in Power BI](service-create-distribute-new-apps-preview.md) for details.
 
 ## Convert old app workspaces to new app workspaces
 
@@ -94,5 +96,5 @@ When the new workspaces are generally available (GA), you can opt in to migrate 
 ## Next steps
 * Read about [organizing work in the new workspaces (preview) in Power BI](service-new-workspaces.md)
 * [Create the current workspaces](service-create-workspaces.md)
-* [Install and use apps in Power BI](service-create-distribute-apps.md)
+* [Publish an app from the new workspaces in Power BI](service-create-distribute-new-apps-preview.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
