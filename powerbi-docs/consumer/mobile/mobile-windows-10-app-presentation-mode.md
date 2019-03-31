@@ -15,7 +15,7 @@ ms.author: mshenhav
 # View reports and dashboards in presentation mode on Surface Hub and Windows 10 devices
 You can use presentation mode to display reports and dashboards in full-screen on Windows 10 devices and Surface Hub. 
 
-![Report in full-screen mode](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode.png)
+![Report in full-screen mode](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
 
 Presentation mode is useful for displaying Power BI at a meeting or conference, or on a dedicated projector in an office, or even just for maximizing space on a small screen. 
 
@@ -40,7 +40,7 @@ From the toolbar you can perform the following actions:
 1. Tap the back icon ![back icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png) to go back to your previous page. Long tap on the icon will pop the breadcrumbs windows, allowing you to navigate to the containing folder of your report or dashboard.
 2. The ink icon ![ink icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png) will let choose a color when you use your Surface pen to draw and annotate on your report page. 
 3. Use the pages icon ![pagination icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png) to replace the report page you are currently presenting.
-4. The Play icon  ![Play icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-Play-icon.png) will hide the action bar and start slideshow, where the app will auto rorate between the report pages. 
+4. The Play icon  ![Play icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png) will hide the action bar and start slideshow, where the app will auto rorate between the report pages. 
 5. Tap the search icon ![Search icon](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) to look for other artifacts in Power BI.
 6. To exit presentation mode, tap the icon with two inward-facing arrows ![Exit full-screen mode](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) on the toolbar.
 
