@@ -33,7 +33,7 @@ In the Power BI mobile app, tap the **Full screen** icon to go to full-screen mo
 ![Full screen icon](././media/mobile-windows-10-app-presentation-mode/power-bi-full-screen-icon.png)
 The app chrome will disappear and a toolbar will appear on the bottom of the screen or on the right and left sides (depends on your screen size).
 
-![Report in full-screen mode with side toolbars](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode2.png)
+![Report in full-screen mode with side toolbars](./media/mobile-windows-10-app-presentation-mode/power-bi-presentation-mode-2.png)
 
 From the toolbar you can perform the following actions:
 
@@ -46,7 +46,7 @@ From the toolbar you can perform the following actions:
 
 You can undock the toolbar and drag it to locate it anywhere on the screen. This is useful for large screens, when you want to focus on a specific area in your report and want to have the tools available next to it. Just place your finger on the toolbar and swipe it into the report canvas.
 
-![Report in presentation mode and undocked toolbar](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-drag-toolbar.png)
+![Report in presentation mode and undocked toolbar](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-drag-toolbar-2.png)
 
 
 ## Next steps
