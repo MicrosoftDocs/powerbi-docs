@@ -125,13 +125,13 @@ To find your tenant applications, follow these steps:
 
 ## Connect your Azure Data Lake Storage Gen2 to Power BI
 
-Once you've set up your Azure Data Lake Storage Gen2 account in the Azure Portal, you connect it to Power BI in the **Power BI admin portal**. You also manage Power BI dataflow storage in the **Dataflow storage (preview)** settings section of the Power BI admin portal. For guidance on launching and basic use, see [How to get to the admin portal](service-admin-portal.md) for detailed information.
+Once you've set up your Azure Data Lake Storage Gen2 account in the Azure Portal, you connect it to Power BI in the **Power BI admin portal**. You also manage Power BI dataflow storage in the **Dataflow storage** settings section of the Power BI admin portal. For guidance on launching and basic use, see [How to get to the admin portal](service-admin-portal.md) for detailed information.
 
 You connect your **Azure Data Lake Storage Gen2** account with the following steps:
 
-1. Navigate to the **Dataflow settings (preview)** tab of the **Power BI admin portal**
+1. Navigate to the **Dataflow settings** tab of the **Power BI admin portal**
 
-    ![Power BI admin portal](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_08.jpg) 
+    ![Power BI admin portal](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-08b.png) 
 
 2. Select the **Connect your Azure Data Lake Storage Gen2 Preview** button. The following window appears.
 
