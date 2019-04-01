@@ -15,7 +15,8 @@ ms.author: mshenhav
 
 # View Power BI content shared with you from an external organization
 
-You can use the Power BI mobile app to access Power BI content shared with you from an external organization.
+Power BI integrates with Azure Active Directory business-to-business (Azure AD B2B) to allow secure distribution of Power BI content to guest users outside your organization. And external guest users can use the Power BI mobile app to access that Power BI content shared with them. 
+
 
 Applies to:
 
