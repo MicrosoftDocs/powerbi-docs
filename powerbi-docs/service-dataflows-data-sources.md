@@ -8,18 +8,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
 ---
-# Connect to data sources for Power BI dataflows (Preview)
+# Connect to data sources for Power BI dataflows
 
 With Power BI dataflows, you can connect to many different data sources to create new dataflows, or add new entities to an existing dataflow.
 
 This article lists the many available data sources for creating or adding to dataflows, and describes how to create those dataflows using these data sources.
 
-For an overview of how to create and use dataflows, see [creating and using dataflows in Power BI (Preview)](service-dataflows-create-use.md).
+For an overview of how to create and use dataflows, see [creating and using dataflows in Power BI](service-dataflows-create-use.md).
 
 ## Create a dataflow from a data source
 
@@ -172,11 +172,11 @@ That's all there is to connecting to data sources in Power BI dataflows.
 
 This article showed which data sources you can connect to for dataflows. The following articles go into more detail about common usage scenarios for dataflows. 
 
-* [Self-service data prep in Power BI (Preview)](service-dataflows-overview.md)
+* [Self-service data prep in Power BI](service-dataflows-overview.md)
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
-* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
-* [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows](service-dataflows-developer-resources.md)
 * [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md)
 
 For more information about Power Query and scheduled refresh, you can read these articles:

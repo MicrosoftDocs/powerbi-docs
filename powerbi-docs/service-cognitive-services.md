@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/12/2019
+ms.date: 04/02/2019
 ms.author: davidi
 
 LocalizationGroup: conceptual
@@ -99,7 +99,7 @@ This article provided an overview of using Cognitive Services with Power BI serv
 
 For more information about dataflows, you can read these articles:
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
-* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
-* [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows](service-dataflows-developer-resources.md)
 * [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md)
