@@ -84,10 +84,7 @@ Your other option for registering your application is to do so directly in the A
 
 5. Follow the prompts and create a new application.
 
-   * For Web Applications, provide the Sign-On URL, which is the base URL of your app, where users sign into (for example, `http://localhost:13526`).
-   * For Native Applications, provide a **Redirect URI**, which Azure AD uses to return token responses. Make sure to enter a value specific to your application (for example, `http://myapplication/Redirect`).
-
-For more information about how to register applications in Azure Active Directory, see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
+   For more information about how to register applications in Azure Active Directory, see [Register an app with the Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-register-an-app)
 
 ## How to get the Application ID
 
@@ -108,21 +105,18 @@ You want to be logged in with either the *master* account, used for embedding, o
 1. Browse to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you're using for embedding.
 
     ![Azure AD registered apps](media/register-app/powerbi-embedded-azuread-registered-apps.png)
-2. Select **Required permissions** under **API Access**.
+
+2. Select **API permissions** under **Manage**.
 
     ![Azure AD app required permissions](media/register-app/powerbi-embedded-azuread-app-required-permissions.png)
 
-3. Within **Required permissions**, select **Power BI Service (Power BI)**.
+3. Within **API permissions**, select **Add permissions**, then select **Power BI service**.
 
     ![App permissions 03](media/register-app/powerbi-embedded-azuread-app-permissions03.png)
 
-   > [!NOTE]
-   > If you created the app directly in the Azure AD portal, **Power BI Service (Power BI)** may not be present. If it isn't, select **+ Add** and then **1 Select and API**. Select **Power BI Service** in the API list and select **Select**.  If **Power BI Service (Power BI)** isn't available within **+ Add**, sign up for Power BI with at least one user.
-
 4. Select all permissions under **Delegated Permissions**. Select them one by one to save the selections. Select **Save** when done.
 
-    ![App permissions 04](media/register-app/powerbi-embedded-azuread-app-permissions04.png)
-5. Within **Required permissions**, select **Grant Permissions**.
+5. Select **Grant Permissions**.
 
     The **Grant Permissions** action needs for the *master account* to avoid being prompted for consent by Azure AD. If the account performing this action is a Global Admin, you grant permissions to all users within your organization for this application. If the account performing this action is the *master account* and isn't a Global Admin, you grant permissions only to the *master account* for this application.
 
@@ -130,7 +124,7 @@ You want to be logged in with either the *master* account, used for embedding, o
 
 ### Applying permissions programmatically
 
-1. You need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://developer.microsoft.com/graph/docs/api-reference/beta/api/serviceprincipal_get).
+1. You need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta).
 
     You can call the *Get servicePrincipal* API without {ID}, and it gets you all of the service principals within the tenant.
 
