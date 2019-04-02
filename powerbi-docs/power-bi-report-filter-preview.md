@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/26/2019
+ms.date: 04/01/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -127,57 +127,6 @@ You can also format these elements for filter cards, depending on if they're app
 1. Expand **Filter cards** to set the **Available** and **Applied** color and border. If you make available and applied cards different colors, it's obvious which filters are applied. 
   
     ![Expand Filter card](media/power-bi-report-filter-preview/power-bi-filter-format-card-font.png)
-
-## Format the Filters pane with the report theme
-
-You can modify the default settings of the formatting pane with the theme file.  Please make sure before you apply your theme that you "reset to default" on the formatting of all the Filters pane items, else your theme will not get applied properly.
-
-Here's a sample theme snippet to get you started:
-
-```
-"outspacePane": [{
-
-    "backgroundColor": {"solid": {"color": "#0000ff"}},
-    "foregroundColor": {"solid": {"color": "#00ff00"}},
-    "transparency": 50,
-    "titleSize": 35,
-    "headerSize": 8,
-    "fontFamily": "Georgia",
-    "border": true,
-    "borderColor": {"solid": {"color": "#ff0000"}}
-
-}],
-
-"filterCard": [
-
-{
-
-"$id": "Applied",
-
-    "transparency": 0,
-    "backgroundColor": {"solid": {"color": "#ff0000"}},
-    "foregroundColor": {"solid": {"color": "#45f442"}},
-    "textSize": 30,
-    "fontFamily": "Arial",
-    "border": true,
-    "borderColor": {"solid": {"color": "#ffffff"}},
-    "inputBoxColor": {"solid": {"color": "#C8C8C8"}}
-
-},
-{
-
-    "$id": "Available",
-    "transparency": 40,
-    "backgroundColor": {"solid": {"color": "#00ff00"}},
-    "foregroundColor": {"solid": {"color": "#ffffff"}},
-    "textSize": 10,
-    "fontFamily": "Times New Roman",
-    "border": true,
-    "borderColor": {"solid": {"color": "#123456"}},
-    "inputBoxColor": {"solid": {"color": "#777777"}}
-
-}]
-```
 
 ## Filters pane scaling
 
