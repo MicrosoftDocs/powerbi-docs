@@ -1,4 +1,4 @@
-1. Start by creating the workspace. Select **Workspaces** > **Create app workspace**. 
+1. Start by creating the workspace. Select **Workspaces** > **Create app workspace**. **Revert to classic** 
    
      ![Create app workspace](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
    

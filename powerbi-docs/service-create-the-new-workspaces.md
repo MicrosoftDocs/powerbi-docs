@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/29/2019
+ms.date: 04/02/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -16,7 +16,7 @@ LocalizationGroup: Share your work
 
 Power BI has introducing a new workspace experience. Workspaces are still places to collaborate with colleagues to create collections of dashboards and reports, which you can bundle into *apps* and distribute to your whole organization or to specific people or groups. 
 
-With the new workspaces preview, you can now:
+In the new workspaces, you can:
 
 - Assign workspace roles to user groups: security groups, distribution lists, Office 365 groups, and individuals.
 - Create a workspace in Power BI without creating an Office 365 group.
@@ -57,7 +57,7 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
 
     Now in the workspace content list, because you're an admin, you also see a new action, **Access**.
 
-    ![Workspaces preview content list](media/service-create-the-new-workspaces/power-bi-workspaces-preview-content-list.png)
+    ![Workspaces content list](media/service-create-the-new-workspaces/power-bi-workspace-content-list.png)
 
 1. Select **Access**.
 
@@ -82,7 +82,7 @@ When you view content in the content list of an app workspace, the app workspace
 In the new workspaces experience, we're making a change to focus on *apps*. Apps for third-party services make it easy for users to get data from the services they use, such as Microsoft Dynamics CRM, Salesforce, or Google Analytics.
 Organizational apps give your users the internal data they need. We plan to add capabilities to organizational apps so users can customize the content they find within the apps. That capability will remove the need for content packs. 
 
-With the new workspaces preview, you can't create or consume organizational content packs. Instead you can use the apps provided to connect to third-party services, or ask your internal teams to provide apps for any content packs you’re currently using. 
+In the new workspace experience, you can't create or consume organizational content packs. Instead you can use the apps provided to connect to third-party services, or ask your internal teams to provide apps for any content packs you’re currently using. 
 
 ## Distribute an app
 

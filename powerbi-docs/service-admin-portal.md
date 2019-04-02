@@ -436,9 +436,9 @@ For more information, visit [Frequently asked questions about organizational cus
 
 By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md).
 
-## Workspaces (preview)
+## Workspaces
 
-As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. Note that the table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, legacy workspaces are of type **Group**, and modern workspaces are of type **Workspace**. For more information, see [Create the new workspaces (preview) in Power BI](service-create-the-new-workspaces.md).
+As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. Note that the table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, legacy workspaces are of type **Group**, and modern workspaces are of type **Workspace**. For more information, see [Create the new workspaces in Power BI](service-create-the-new-workspaces.md).
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
