@@ -19,6 +19,16 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
 
+## March 2019
+
+### Supporting external guest users in Power BI apps (iOS, Android)
+
+You can access Power BI content shared with you from other organization directly from the app (also known as B2B). Read more on Power BI mobile apps B2B [here](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-now-support-azure-ad-b2b-guest-users/).
+
+### Enhancing Windows presentation mode with slideshow (Windows)
+
+With [slideshow](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) you can use publilc displays located in your office to run Power BI reports in full screen that will auto rotate between report pages.  
+
 ## January - February 2019
  
 ### Visio visuals
