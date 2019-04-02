@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 03/12/2019
+ms.date: 04/02/2019
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
@@ -112,17 +112,19 @@ To get the **applicationId**, follow these steps:
 
 2. In the left-hand navigation pane, select **All Services**, and select **App Registrations**.
 
-    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-31.png)
+    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
 3. Select the application that needs the **applicationId**.
 
-    ![Choosing App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-61.png)
+    ![Choosing App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
 
 4. There's an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
 
-    ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-71.png)
+    ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
 
 ### Application secret
+
+This attribute is needed only for the [service principal](embed-service-principal.md) AuthenticationType.
 
 Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works when using [service principal](embed-service-principal.md).
 
@@ -136,19 +138,19 @@ To get the **ApplicationSecret**, follow these steps:
 
 3. Select the application that needs to use the **ApplicationSecret**.
 
-    ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
 
-4. Select **Settings**.
+4. Select **Certificates and secrets** under **Manage**.
 
-    ![Select Settings](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
+    ![Select Certificates and secrets](media/embed-sample-for-your-organization/embed-sample-for-your-organization-044.png)
 
-5. Select **Keys**.
+5. Select **Client secrets**.
 
-    ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+    ![Select Client secrets](media/embed-sample-for-your-organization/embed-sample-for-your-organization-045.png)
 
 6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
 
-    ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-046.png)
 
 ### Workspace ID
 

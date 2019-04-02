@@ -9,7 +9,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: seodec18
-ms.date: 02/05/2019
+ms.date: 04/02/2019
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
 
@@ -188,7 +188,7 @@ To get the **ApplicationSecret**, follow these steps:
 
 2. In the left-hand navigation pane, select **All services** and then select **App registrations**.
 
-    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+    ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
 3. Select the application that needs to use the **ApplicationSecret**.
 
