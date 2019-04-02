@@ -71,6 +71,14 @@ With the new workspaces, we're redesigning some features. Here are the changes y
 - You can create an organizational content pack from a classic workspace. You can't create one from the new workspaces.
 - You can consume an organizational content pack from a classic workspace. You can’t consume one from the new workspaces.
 
+## Workspace contact list
+The new contact list feature available in workspace settings or under advanced when creating workspaces allows you to specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can customize the list.  Just be aware that users or groups listed in the contact list will be shown in UI experiences in the future to help users get help related to the workspace. 
+
+## Workspace OneDrive
+The Workspace OneDrive feature allows you to configure an Office 365 Group whose OneDrive file storage will be available to workspace users. The location will appear under Files in the “…” menu on the workspace.  Note that Power BI does not synchronize permissions of users / groups who are configured to have workspace access with the Office 365 Group membership. The best practice will be to ensure you manage workspace access through the same Office 365 Group whose OneDrive you configure in this setting.
+
+It will also appear in the Get Data > Files experience. The OneDrive – Business entry is the current user’s OneDrive for Business.
+
 ## Limitations and considerations
 
 Limitations to be aware of:
@@ -83,6 +91,7 @@ Limitations to be aware of:
 
 Some features work differently from current workspaces in the new workspaces. These differences are intentional, based on feedback we’ve received from customers, and will enable a more flexible approach to collaboration with workspaces:
 
+- Licensing enforcement: Publishing reports to new workspace experience enforces existing licensing rules that require a Power BI Pro license for users collaborating in workspaces or sharing content to others in the Power BI service. Users without a Pro license will see the error "Only users with Powre BI Pro licenses can publish to this workspace."
 - Members can or can't reshare: replaced by the Contributor role
 - Read-only workspaces: Instead of granting users read-only access to a workspace, you'll assign users to a forthcoming Viewer role, which allows similar read-only access to the content in a workspace.
 - No **Leave workspace** button.
@@ -90,15 +99,19 @@ Some features work differently from current workspaces in the new workspaces. Th
 ## Frequently Asked Questions
 
 **Will links to existing content be affected by the new workspace experience GA**
+
 No. Links to existing items in classic workspaces are not affected by the new workspace experience. The GA of new workspace experience changes the default workspace that is created, but does not change existing workspaces. 
 
 **Are existing workspaces upgraded to the new workspace experience with GA**
+
 No. The new workspace experience GA only change the default workspace type to the new workspace experience. Existing classic workspaces that are based on Office 365 Groups remain unchanged.
 
 **Are workspaces still automatically created for Office 365 Groups**
+
 Yes. Since we support both types of workspaces side by side, we continue to list all Office 365 Groups the user has access to in the worksapces list.
 
 **How will the announced Viewer role work**
+
 The Viewer role will give read-only access to workspace content. Users with Read-only access will have Row Level Security (RLS) enforced. The Viewer role will become available at after GA.
 
 
