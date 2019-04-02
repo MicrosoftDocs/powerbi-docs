@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -26,9 +26,6 @@ There are a few requirements for creating dataflows from CDM folders, as the fol
 * You must be granted read and execute permissions, on all files and folders in the CDM folder, to add them to Power BI.
 
 The following sections describe how to create a dataflow from a CDM folder.
-
-> [!NOTE]
-> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
 
 ## Create a dataflow from a CDM folder
 
@@ -95,9 +92,9 @@ For more information about dataflows, CDM, and Azure Data Lake Storage Gen2, tak
 For information about dataflows overall, check out these articles:
 
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
-* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
-* [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows](service-dataflows-developer-resources.md)
 
 For more information about Azure storage, you can read these articles:
 * [Azure Storage security guide](https://docs.microsoft.com/azure/storage/common/storage-security-guide)

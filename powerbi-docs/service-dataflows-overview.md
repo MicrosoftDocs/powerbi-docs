@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2019
+ms.date: 04/01/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
 ---
-# Self-service data prep in Power BI (Preview)
+# Self-service data prep in Power BI
 
 As data volume continues to grow, so does the challenge of wrangling that data into well-formed, actionable information. We want data that’s ready for analytics, to populate visuals, reports, and dashboards, so we can quickly turn our volumes of data into actionable insights. With **self-service data prep** for big data in Power BI, you can go from data to Power BI insights with just a few clicks.
 
@@ -22,10 +22,6 @@ As data volume continues to grow, so does the challenge of wrangling that data i
 Power BI introduces **dataflows** to help organizations unify data from disparate sources and prepare it for modeling. Analysts can easily create dataflows, using familiar, self-service tools. Dataflows are used to ingest, transform, integrate, and enrich big data by defining data source connections, ETL logic, refresh schedules, and more. In addition, the new model-driven calculation engine that's part of dataflows makes the process of data preparation more manageable, more deterministic, and less cumbersome for data analysts and report creators alike. Similar to how spreadsheets handle recalculations for all affected formulas, dataflows manage changes for an entity or data element on your behalf, automating updates, and alleviating what used to be tedious and time consuming logic checks for even a basic data refresh. With dataflows, tasks that once required data scientists to oversee (and many hours or days to complete) can now be handled with a few clicks by analysts and report creators. 
 
 Data is stored as entities in the [**Common Data Model**](https://docs.microsoft.com/powerapps/common-data-model/overview) in Azure Data Lake Storage Gen2. Dataflows are created and managed in app workspaces by using the Power BI service.  
-
-> [!NOTE]
-> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
-
  
 **Dataflows** are designed to use the **Common Data Model**, a standardized, modular, extensible collection of data schemas published by Microsoft that are designed to make it easier for you to build, use, and analyze data. With this model, you can go from data sources to Power BI dashboards with nearly zero friction.
 
@@ -108,10 +104,10 @@ By storing business data in the standardized format of the **Common Data Model**
 This article provided an overview of self service data prep for big data in Power BI, and the many ways you can use it. The following articles go into more detail about common usage scenarios for dataflows. 
 
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
-* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
-* [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
-* [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md)
+* [Using computed entities on Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows](service-dataflows-developer-resources.md)
+* [Dataflows and Azure Data Lake integration](service-dataflows-azure-data-lake-integration.md)
 
 For more information about Power Query and scheduled refresh, you can read these articles:
 * [Query overview in Power BI Desktop](desktop-query-overview.md)
