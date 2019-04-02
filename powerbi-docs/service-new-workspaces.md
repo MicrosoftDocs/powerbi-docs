@@ -18,6 +18,9 @@ Workspaces are places to collaborate with colleagues to create collections of da
 
 The new workspace experience has reached GA is now the default workspace experience. You can continue to create and use existing classic workspaces that are based on Offie 365 Groups. 
 
+> [!NOTE]
+> To enforce row-level security (RLS) for Pro users browsing content in a workspace, continue to use [classic workspaces](service-create-workspaces.md) and select the **Members can only view Power BI content** option. Alternatively, publish an Power BI app to the users, or use Sharing to distibute content through Shared with Me. The forthcoming Viewer Role will enable this scenario in future in new workspace experience workspaces.
+
 With the new workspaces, you can:
 
 - Assign workspace roles to user groups: security groups, distribution lists, Office 365 groups, and individuals.
@@ -26,24 +29,31 @@ With the new workspaces, you can:
 
 Read about how to [create one of the new workspaces](service-create-the-new-workspaces.md).
 
-> [!NOTE]
-> To enforce row-level security (RLS) for users browsing content in a workspace, continue to use classic workspaces and select the **Members can only view Power BI content** option. Alternatively, publish a Power BI app to the users. 
+When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the workspace administration is in Power BI, not in Office 365. In the new workspace experience, you can now add an Office 365 group in the workspace access list to continue managing user access to content through Office 365 groups.
 
-When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the workspace administration is in Power BI, not in Office 365. You can still add an Office 365 group to the workspace to continue managing user access to content through Office 365 groups. However, you can additionally use security groups, distribution lists, and add individuals directly within Power BI, giving you a flexible way to manage workspace access. Because workspace administration is now in Power BI, Power BI admins decide who in an organization can create workspaces. In **Workspace settings** in the admin portal, admins can allow everybody or nobody in an organization to create workspaces. They can also limit creation to members of specific security groups.
+##Administering new workspace experience workspaces
+Administration for new workspace experience workspaces is now in Power BI, Power BI admins decide who in an organization can create workspaces. They can also manage and recover workspace. To to this they need to use use the Power BI Admin Portal or the PowerShell CmdLets. For classic workspaces based on Office 365 Groups, administration continues to occur in Office 365 Admin Portal and Azure Active Directory.
+
+In **Workspace settings** in the admin portal, admins can use the Create workspaces (new workspace experience) setting to allow everybody or nobody in an organization to create new workspace experience workspaces. They can also limit creation to members of specific security groups.
+
+> [!NOTE]
+> The Create workspaces (new workspace experience) setting defaults to only allow users who can create Office 365 Groups to create the new workspaces in Power BI. Be sure to set a value in the Power BI Admin portal to ensure appropriate users can create new workspace experience workspaces.
 
 ![Workspace settings in the admin portal](media/service-new-workspaces/power-bi-workspace-admin-settings.png)
+
+In the Power BI Admin portal, the [workspaces list is available](service-admin-portal#workspaces).
+
+![Workspaces list](media/service-admin-portal/workspaces-list.png
 
 Read more about the [Power BI admin portal](service-admin-portal.md).
 
 ## New workspaces side by side with classic workspaces
 
-New, upgraded workspaces, and existing classic workspaces coexist side by side, and you can create either. The new workspace experience is the default workspace type. To learn how to create a new workspace, read [Create new workspaces](service-create-the-new-workspaces.md). To learn how to create a classic workspace, read [Create the classic workspaces](service-create-workspaces.md).
+New, upgraded workspaces, and existing classic workspaces coexist side by side, and you can create either. The new workspace experience is the default workspace type. Power BI continues to list all Office 365 Groups the user is a Member of in Power BI to avoid changing existing workflows. To learn how to create a new workspace, read [Create new workspaces](service-create-the-new-workspaces.md). To learn how to create a classic workspace, read [Create the classic workspaces](service-create-workspaces.md).
 
 ## Roles in the new workspaces
 
-You add user groups or individuals to the new workspaces as members, contributors, or admins. Everyone in a user group gets the role you’ve defined. If an individual is in several user groups, they get highest level of permission provided by the role.
-
-Everyone you add to a workspace needs a Power BI Pro license. In the workspace, these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. If you want to distribute content to others inside your organization, you can assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
+To grant access to a new workspaces, add user groups or individuals to one of the of the workspace roles: members, contributors, or admins. Everyone in a user group gets the role you’ve defined. If an individual is in several user groups, they get the highest level of permission provided by the roles they are assigned.
 
 Roles let you manage who can do what in a workspace, so teams can collaborate. New workspaces allow you to assign roles to individuals, and to user groups: security groups, Office 365 groups, and distribution lists. 
 
@@ -62,6 +72,12 @@ The new workspaces offer three roles: admins, members, and contributors.
 | Create, edit, and delete content in the workspace.  |  X | X  | X  |
 | Publish reports to the workspace, delete content. |  X | X  | X  |
  
+ 
+## Licensing
+Everyone you add to a workspace needs a Power BI Pro license. In the workspace, these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. If you want to distribute content to others inside your organization, you can assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
+
+> [!NOTE]
+> Publishing reports to new workspace experience has stricter enforcement existing licensing rules. Users who try to publish from Power BI Desktop or other clients tools without a Pro license will see the error "Only users with Powre BI Pro licenses can publish to this workspace."
 
 ## How are the new workspaces different from current workspaces?
 
