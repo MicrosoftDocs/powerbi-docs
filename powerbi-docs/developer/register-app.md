@@ -48,7 +48,7 @@ Here's how to register your application with the Power BI App Registration Tool:
 
     ![App type](media/register-app/register-app-new-design-app-type.png)
 
-5. If you selected **Server-side web application** for the application type, then continue with entering a value for **Home Page URL** and **Redirect URL**. The **Redirect URL** works with any valid URL and should correspond with the application you have created. If you selected **Native**, then continue to step 6.
+5. If you selected **Server-side web application** for the application type, then continue with entering a value for **Home Page URL** and **Redirect URL**. The **Redirect URL** works with any valid URL and should correspond with the application you've created. If you selected **Native**, then continue to step 6.
 
 6. Choose the Power BI APIs that your application needs. For more information about Power BI access permissions, see [Power BI Permissions](power-bi-permissions.md). Then select **Register**.
 
@@ -57,7 +57,7 @@ Here's how to register your application with the Power BI App Registration Tool:
     > [!Important]
     > If you enable service principals to be used with Power BI, the Azure Active Directory permissions don't take effect anymore. The permissions are managed through the Power BI admin portal.
 
-7. If you choose **Native** for the application type, then you are then provided an **Application ID**. If you select **Server-side Web app** for the application type, then you receive an **Application ID** and an **Application secret**.
+7. If you choose **Native** for the application type, then you're then provided an **Application ID**. If you select **Server-side Web app** for the application type, then you receive an **Application ID** and an **Application secret**.
 
     > [!Note]
     > The **Application ID** can be retrieved from the Azure portal, at a later time, if needed. If you lose the **Application secret**, you need to create a new one within the Azure portal.
@@ -179,7 +179,7 @@ You want to be logged in with either the *master* account, used for embedding, o
 
    The value for **consentType** can supply either **AllPrincipals** or **Principal**.
 
-   * **AllPrincipals** can only be used by a tenant admin to grant permissions on behalf of all users in the tenant.
+   * **AllPrincipals** can only be used by a tenant admin to grant permissions for all users in the tenant.
    * **Principal** is used to grant permissions on behalf of a specific user. In this case, an additional property should be added to the request's body - *principalId={User_ObjectId}*.
 
    You need to *Grant permissions* for the master account to avoid being prompted for consent by Azure AD, which isn't possible when doing non-interactive sign-in.
