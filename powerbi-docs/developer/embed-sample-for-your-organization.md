@@ -112,15 +112,15 @@ To get the **applicationId**, follow these steps:
 
 2. In the left-hand navigation pane, select **All Services**, and select **App Registrations**.
 
-    ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
+    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-31.png)
 
 3. Select the application that needs the **applicationId**.
 
-    ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
+    ![Choosing App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-61.png)
 
 4. There's an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
 
-    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+    ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-71.png)
 
 ### Application secret
 

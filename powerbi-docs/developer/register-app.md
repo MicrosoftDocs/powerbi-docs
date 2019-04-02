@@ -110,11 +110,11 @@ You want to be logged in with either the *master* account, used for embedding, o
 
     ![Azure AD app required permissions](media/register-app/powerbi-embedded-azuread-app-required-permissions.png)
 
-3. Within **API permissions**, select **Add permissions**, then select **Power BI service**.
+3. Within **API permissions**, select **Add a permission**, then select **Power BI Service**.
 
     ![App permissions 03](media/register-app/powerbi-embedded-azuread-app-permissions03.png)
 
-4. Select all permissions under **Delegated Permissions**. Select them one by one to save the selections. Select **Save** when done.
+4. Select the specific permissions you need under **Delegated Permissions**. Select them one by one to save the selections. Select **Save** when done.
 
 5. Select **Grant Permissions**.
 
@@ -180,7 +180,7 @@ You want to be logged in with either the *master* account, used for embedding, o
    The value for **consentType** can supply either **AllPrincipals** or **Principal**.
 
    * **AllPrincipals** can only be used by a tenant admin to grant permissions for all users in the tenant.
-   * **Principal** is used to grant permissions on behalf of a specific user. In this case, an additional property should be added to the request's body - *principalId={User_ObjectId}*.
+   * **Principal** is used to grant permissions for a specific user. In this case, an additional property should be added to the request's body - *principalId={User_ObjectId}*.
 
    You need to *Grant permissions* for the master account to avoid being prompted for consent by Azure AD, which isn't possible when doing non-interactive sign-in.
 
