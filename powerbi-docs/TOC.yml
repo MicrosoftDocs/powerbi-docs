@@ -595,10 +595,8 @@
         href: service-insights-optimize.md
     - name: Collaborate in Power BI
       items: 
-      - name: "Create the new workspaces (preview)"
+      - name: "Create the new workspaces"
         href: service-create-the-new-workspaces.md
-      - name: "Publish apps from the new workspaces"
-        href: service-create-distribute-new-apps-preview.md
       - name: "Create app workspaces"
         href: service-create-workspaces.md
       - name: "Publish apps from workspaces"

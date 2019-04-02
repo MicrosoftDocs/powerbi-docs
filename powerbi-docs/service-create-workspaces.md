@@ -1,5 +1,5 @@
 ---
-title: Create workspaces with your colleagues in Power BI
+title: Create classic workspaces in Power BI
 description: Learn how to create workspaces, collections of dashboards and reports built to deliver key metrics for your organization.
 author: maggiesMSFT
 manager: kfile
@@ -7,12 +7,12 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 04/02/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Create workspaces with your colleagues in Power BI
+# Create classic workspaces in Power BI
 
 In Power BI, you can create *workspaces*, places to collaborate with colleagues to create and refine collections of dashboards and reports. Then you bundle the collection together into *apps* that you can distribute to your whole organization or to specific people or groups. 
 
@@ -20,12 +20,12 @@ In Power BI, you can create *workspaces*, places to collaborate with colleagues 
 
 When you create a workspace, you're creating an underlying, associated Office 365 group. All the workspace administration is in Office 365. You can add colleagues to these workspaces as members or admins. In the workspace, you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience. Everyone you add to an app workspace needs a Power BI Pro license. 
 
-**Did you know?** Power BI is previewing a new workspace experience. Read [Organize work in the new workspaces (preview)](service-new-workspaces.md) for details about the new workspaces. 
+**Did you know?** Power BI offers a new workspace experience. Read [Organize work in the new workspaces](service-new-workspaces.md) for details about the new workspaces. 
 
 ## Video: Apps and app workspaces
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## Create an app workspace based on an Office 365 group
+## Create a classic app workspace based on an Office 365 group
 
 When you create an app workspace, it’s built on an Office 365 group.
 

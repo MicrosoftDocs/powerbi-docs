@@ -23,6 +23,7 @@ With the new workspaces preview, you can now:
 - Use more granular workspaces roles for more flexible permissions management in a workspace.
 - Create and distribute an app with its own built-in navigation.
 
+
 For more background, see the [new workspaces](service-new-workspaces.md) article.
 
 ## Create one of the new app workspaces
