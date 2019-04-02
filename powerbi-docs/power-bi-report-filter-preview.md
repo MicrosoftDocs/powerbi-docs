@@ -76,7 +76,7 @@ Here are the types of filters this view shows:
 
 After you enable the new Filters pane, you see it to the right of the report page, formatted by default based on your current report settings. You use the new Filters pane to configure which filters to include, and to update existing filters in the new pane. The new Filters pane shows you what your report consumers will see when you publish your report. 
 
-1. By default, your report consumers can see the Filters pane. If you don't want them to see it, select the eye icon !Eye icon next to **Filters**.
+1. By default, your report consumers can see the Filters pane. If you don't want them to see it, select the eye icon next to **Filters**.
 
     ![Power BI filter eye icon](media/power-bi-report-filter-preview/power-bi-filter-eye.png)
 
