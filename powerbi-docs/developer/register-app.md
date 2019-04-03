@@ -116,15 +116,15 @@ You want to be logged in with either the *master* account, used for embedding, o
 
 4. Select the specific permissions you need under **Delegated Permissions**. Select them one by one to save the selections. Select **Save** when done.
 
-5. Select **Grant Permissions**.
+5. Select **Grant Consent**.
 
-    The **Grant Permissions** action needs for the *master account* to avoid being prompted for consent by Azure AD. If the account performing this action is a Global Admin, you grant permissions to all users within your organization for this application. If the account performing this action is the *master account* and isn't a Global Admin, you grant permissions only to the *master account* for this application.
+    The **Grant Consent** action needs for the *master account* to avoid being prompted for consent by Azure AD. If the account performing this action is a Global Admin, you grant permissions to all users within your organization for this application. If the account performing this action is the *master account* and isn't a Global Admin, you grant permissions only to the *master account* for this application.
 
     ![Grant permissions within required permissions dialog](media/register-app/powerbi-embedded-azuread-app-grant-permissions.png)
 
 ### Applying permissions programmatically
 
-1. You need to get the existing service principals (users) within your tenant. For information on how to do that, see [Get servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta).
+1. You need to get the existing service principals (users) within your tenant. For information on how to do that, see [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta).
 
     You can call the *Get servicePrincipal* API without {ID}, and it gets you all of the service principals within the tenant.
 

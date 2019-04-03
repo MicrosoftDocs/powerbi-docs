@@ -1037,8 +1037,6 @@
       items:
       - name: "Push data into a dataset"
         href: developer/walkthrough-push-data.md
-      - name: "Register an app with Azure AD"
-        href: developer/register-app.md
       - name: "Get an authentication access token"
         href: developer/walkthrough-push-data-get-token.md
       - name: "Create a dataset"
