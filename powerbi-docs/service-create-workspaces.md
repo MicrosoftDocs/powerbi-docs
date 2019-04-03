@@ -16,11 +16,13 @@ LocalizationGroup: Share your work
 
 In Power BI, you can create *workspaces*, places to collaborate with colleagues to create and refine collections of dashboards and reports. Then you bundle the collection together into *apps* that you can distribute to your whole organization or to specific people or groups. 
 
+**Did you know?** Power BI offers a new workspace experience. Read [Organize work in the new workspaces](service-new-workspaces.md) for details about the new workspaces. 
+
+
 ![Power BI apps](media/service-create-workspaces/power-bi-apps-left-nav.png)
 
 When you create a workspace, you're creating an underlying, associated Office 365 group. All the workspace administration is in Office 365. You can add colleagues to these workspaces as members or admins. In the workspace, you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience. Everyone you add to an app workspace needs a Power BI Pro license. 
 
-**Did you know?** Power BI offers a new workspace experience. Read [Organize work in the new workspaces](service-new-workspaces.md) for details about the new workspaces. 
 
 ## Video: Apps and app workspaces
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
