@@ -112,8 +112,6 @@ To get the **applicationId**, follow these steps:
 
 2. In the left-hand navigation pane, select **All Services**, and select **App Registrations**.
 
-    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
-
 3. Select the application that needs the **applicationId**.
 
     ![Choosing App](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
@@ -134,19 +132,13 @@ To get the **ApplicationSecret**, follow these steps:
 
 2. In the left-hand navigation pane, select **All services** and then select **App registrations**.
 
-    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
-
 3. Select the application that needs to use the **ApplicationSecret**.
 
     ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
 
 4. Select **Certificates and secrets** under **Manage**.
 
-    ![Select Certificates and secrets](media/embed-sample-for-your-organization/embed-sample-for-your-organization-044.png)
-
-5. Select **Client secrets**.
-
-    ![Select Client secrets](media/embed-sample-for-your-organization/embed-sample-for-your-organization-045.png)
+5. Select **New client secret**.
 
 6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
 

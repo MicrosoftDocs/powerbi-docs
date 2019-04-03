@@ -78,9 +78,7 @@ Your other option for registering your application is to do so directly in the A
 
 3. Choose your Azure AD tenant by selecting your account in the top-right corner of the page.
 
-4. In the left-hand navigation pane, **All services**,  **Azure Active Directory**, select **App Registrations** and then select **New application registration**.
-
-    ![New app registration](media/register-app/azuread-new-app-registration.png)
+4. In the left-hand navigation pane, go to **All services**, select **App Registrations** and then select **New registration**.
 
 5. Follow the prompts and create a new application.
 
@@ -104,11 +102,7 @@ You want to be logged in with either the *master* account, used for embedding, o
 
 1. Browse to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you're using for embedding.
 
-    ![Azure AD registered apps](media/register-app/powerbi-embedded-azuread-registered-apps.png)
-
 2. Select **API permissions** under **Manage**.
-
-    ![Azure AD app required permissions](media/register-app/powerbi-embedded-azuread-app-required-permissions.png)
 
 3. Within **API permissions**, select **Add a permission**, then select **Power BI Service**.
 
@@ -119,8 +113,6 @@ You want to be logged in with either the *master* account, used for embedding, o
 5. Select **Grant Consent**.
 
     The **Grant Consent** action needs for the *master account* to avoid being prompted for consent by Azure AD. If the account performing this action is a Global Admin, you grant permissions to all users within your organization for this application. If the account performing this action is the *master account* and isn't a Global Admin, you grant permissions only to the *master account* for this application.
-
-    ![Grant permissions within required permissions dialog](media/register-app/powerbi-embedded-azuread-app-grant-permissions.png)
 
 ### Applying permissions programmatically
 

@@ -196,11 +196,7 @@ To get the **ApplicationSecret**, follow these steps:
 
 4. Select **Certificates and secrets** under **Manage**.
 
-    ![Select Certificates and secrets](media/embed-sample-for-customers/embed-sample-for-customers-040.png)
-
-5. Select **Client secrets**.
-
-    ![Select Client secrets](media/embed-sample-for-customers/embed-sample-for-customers-041.png)
+5. Select **New client secrets**.
 
 6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
 
