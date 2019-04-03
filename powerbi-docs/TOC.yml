@@ -929,18 +929,8 @@
         href: developer/get-azuread-access-token.md
       - name: "Embedding Q&A"
         href: developer/qanda.md
-      - name: Manage capacities in Azure
-        items:
-        - name: Create a capacity in Azure
-          href: developer/azure-pbie-create-capacity.md
-        - name: Create a capacity using Multi-Geo in Azure
-          href: developer/embedded-multi-geo.md
-        - name: Scale a capacity in Azure
-          href: developer/azure-pbie-scale-capacity.md
-        - name: Pause and start a capacity in Azure
-          href: developer/azure-pbie-pause-start.md
-        - name: "Troubleshoot your embedded application"
-          href: developer/embedded-troubleshoot.md
+      - name: "Troubleshoot your embedded application"
+        href: developer/embedded-troubleshoot.md
       - name: Migrate from Workspace Collections
         items:
         - name: "How to migrate from Power BI Workspace Collections"
