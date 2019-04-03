@@ -21,8 +21,7 @@ The key influencers visual is a great choice if you want to:
 - Contrast the relative importance of these factors. For example, do short-term contracts have more impact on churn than long-term contracts? 
 
 ## Key influencer requirements 
-The metric you analyze must be a categorical field.
-
+The metric you analyze must be either categorical or numerical field (aggregates and measures are not yet supported).
 
 ## Features of the key influencers visual
 
