@@ -113,7 +113,7 @@ You can create the application group with the following steps.
    > [!NOTE]
    > This URL is case sensitive!
 
-   *https://<url to report server>/reports*
+   *https://<<url to report server>>/reports*
 
    ![ADFS Application Group Wizard 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Select **Next**.
