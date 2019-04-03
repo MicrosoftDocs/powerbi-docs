@@ -1,5 +1,5 @@
 ---
-title: Developer resources for Power BI dataflows (Preview)
+title: Developer resources for Power BI dataflows
 description: Find resources for development and Power BI dataflows
 author: davidiseminger
 manager: kfile
@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
 ---
-# Developer resources for Power BI dataflows (Preview)
+# Developer resources for Power BI dataflows
 
 There are many ways to use dataflows with no code, by creating or connecting to entities in the Power BI service and connecting to them in Power BI Desktop. Many organizations want the flexibility to develop their own solutions. This article provides information about the Power BI REST API and other developer resources.
 
@@ -34,8 +34,8 @@ This article provided information about developer resources for dataflows. For m
 
 * [Self-service data prep with dataflows](service-dataflows-overview.md)
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
-* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
+* [Using computed entities on Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources](service-dataflows-on-premises-gateways.md)
 
 For information about CDM development and tutorial resources, see the following:
 * [Common Data Model - overview ](https://docs.microsoft.com/powerapps/common-data-model/overview)

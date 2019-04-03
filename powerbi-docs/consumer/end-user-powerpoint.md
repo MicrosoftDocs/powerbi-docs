@@ -88,6 +88,7 @@ There are a few considerations and limitations to keep in mind when working with
 * As previously mentioned, each report page is exported as a single image in the PowerPoint file.
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, select the cog icon ![cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) **> Settings > General > Language**.
 * The **Downloaded at** time on the cover slide for the exported PowerPoint file is set to your computer's time zone at the time of the export.
+* URL filters aren't currently respected when choosing "Current Values" for your export.
 
 ## Next steps
 [Print a report](end-user-print.md)

@@ -68,7 +68,7 @@ There are several tools related to Power BI administration, which are covered in
 | **Tool** | **Typical tasks** |
 | --- | --- |
 | Power BI Admin portal |<ul><li>Acquire and work with Premium capacity</li><li>Ensure quality of service</li><li>Manage classification of business data</li><li>Help to enforce content publishing and sharing policies</li><li>Manage workspaces<br><li>Publish custom visuals</li><li>Verify codes used to embed Power BI in other applications</li><li>Troubleshoot data access and other issues</li></ul>|
-| Office 365 Admin Center |<ul><li>Manage user signup</li><li>Purchase and assign Pro licenses</li><li>Block users from accessing Power BI</li></ul>|
+| Microsoft 365 admin center |<ul><li>Manage user signup</li><li>Purchase and assign Pro licenses</li><li>Block users from accessing Power BI</li></ul>|
 | Office 365 Security & Compliance Center |<ul><li>Review and manage auditing of events</li></ul>|
 | Azure Active Directory (AAD) in the Azure portal |<ul><li>Configure conditional access to Power BI resources through AAD</li><li>Provision Power BI Embedded capacity</li></ul>|
 | PowerShell cmdlets |<ul><li>Manage workspaces and other aspects of Power BI through scripts</li></ul>|

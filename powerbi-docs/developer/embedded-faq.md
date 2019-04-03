@@ -171,6 +171,12 @@ var clientAssertion = new AD.ClientAssertionCertificate(MyAppId, MyAppCertificat
 var authenticationResult = await context.AcquireTokenAsync(resourceId, clientAssertion, userAssertion);
 ```
 
+### What object ID is the service principal object ID?
+
+The *Object ID* from the main screen of a registered app is the object ID for the app.
+
+The object ID found in the *Managed application in local directory > Properties* section is the service principal object ID you need to use. This object ID is to reference a service principal for operations or to make changes to the service principal object ID. Such as applying a service principal as an admin to a workspace.
+
 ### How is Power BI Embedded different from other Azure services?
 
 The ISV/developer must have a Power BI account before the purchase of Power BI Embedded in Azure. Your Power BI Embedded deploys region determines your Power BI account. Manage your Power BI Embedded resource in Azure to:
@@ -269,9 +275,9 @@ Yes, you can use your [Azure credits](https://azure.microsoft.com/free/) for Pow
 
 Since Power BI Embedded is a part of Azure, it is possible to use the service with the [$200 credit received when signing up for Azure](https://azure.microsoft.com/free/).
 
-### Is Power BI Embedded available for sovereign clouds (US Government, Germany, China)?
+### Is Power BI Embedded available for national clouds (US Government, Germany, China)?
 
-Power BI Embedded is available for some [sovereign clouds](embed-sample-for-customers-sovereign-clouds.md). It still is **NOT** available for the China cloud.
+Power BI Embedded is also available for the [national clouds](embed-sample-for-customers-national-clouds.md).
 
 ### Is Power BI Embedded available for non-profits and educational?
 

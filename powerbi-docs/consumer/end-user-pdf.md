@@ -64,5 +64,7 @@ There are a few considerations and limitations to keep in mind when working with
 
 * The Power BI service uses your Power BI language setting as the language for the PDF export. To see or set your language preference, select the cog icon > **Settings** > **General** > **Language**.
 
+* URL filters aren't currently respected when choosing "Current Values" for your export.
+
 ## Next steps
 [Print a report](end-user-print.md)

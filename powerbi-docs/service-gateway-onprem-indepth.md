@@ -73,7 +73,7 @@ The cloud services only know about accounts within Azure Active Directory. It do
 
 1. You can add accounts manually to Azure Active Directory.
    
-   You can create an account on the Azure portal, or within the Office 365 Admin Portal, and the account name matches the UPN of the local Active Directory account.
+   You can create an account on the Azure portal, or within the Microsoft 365 admin center, and the account name matches the UPN of the local Active Directory account.
 2. You can use the [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) tool to synchronize local accounts to your Azure Active Directory tenant.
    
    The Azure AD Connect tool provides options for directory synchronization and setting up authentication, including password hash sync, pass-through authentication, and federation. If you are not a tenant admin or a local domain administrator, you will need to contact your IT admin to get this configured.

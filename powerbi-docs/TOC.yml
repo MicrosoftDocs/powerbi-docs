@@ -402,7 +402,9 @@
     - name: "Using Cognitive Services in Power BI"
       href: service-tutorial-use-cognitive-services.md
     - name: "Machine Learning integration with Power BI"
-      href: service-tutorial-invoke-machine-learning-model.md            
+      href: service-tutorial-invoke-machine-learning-model.md
+    - name: "Build a Machine Learning model with Power BI (Preview)"
+      href: service-tutorial-build-machine-learning-model.md                  
   - name: Concepts
     items: 
     - name: "What's new in the Power BI service"
@@ -437,6 +439,8 @@
       items: 
       - name: "10 tips for getting help"
         href: service-tips-for-finding-help.md
+      - name: "Power BI support options"
+        href: service-support-options.md
       - name: Licensing special cases
         items:         
         - name: "Extended Pro Trial activation"
@@ -627,21 +631,21 @@
         href: publisher-for-excel.md
     - name: Self-service data prep
       items: 
-      - name: "Self-service data prep with dataflows (preview)"
+      - name: "Self-service data prep with dataflows"
         href: service-dataflows-overview.md
-      - name: "Create and use dataflows (preview)"
+      - name: "Create and use dataflows"
         href: service-dataflows-create-use.md
-      - name: "Computed entities with Power BI Premium (preview)"
+      - name: "Computed entities with Power BI Premium"
         href: service-dataflows-computed-entities-premium.md
-      - name: "Connect to data sources with dataflows (preview)"
+      - name: "Connect to data sources with dataflows"
         href: service-dataflows-data-sources.md        
-      - name: "Using dataflows with on-premises data sources (preview)"
+      - name: "Using dataflows with on-premises data sources"
         href: service-dataflows-on-premises-gateways.md    
-      - name: "Link entities between dataflows (preview)"
+      - name: "Link entities between dataflows"
         href: service-dataflows-linked-entities.md      
-      - name: "Using incremental refresh with dataflows (preview)"
+      - name: "Using incremental refresh with dataflows"
         href: service-dataflows-incremental-refresh.md                  
-      - name: "Developer resources for dataflows (preview)"
+      - name: "Developer resources for dataflows"
         href: service-dataflows-developer-resources.md
       - name: "Connect to dataflows in Power BI Desktop"
         href: desktop-connect-dataflows.md  
@@ -653,10 +657,12 @@
         href: service-dataflows-configure-workspace-storage-settings.md  
       - name: "Add a CDM folder to Power BI as a dataflow (Preview)"
         href: service-dataflows-add-cdm-folder.md                                
-      - name: "Integrate Machine Learning in Power BI"
+      - name: "Integrate Machine Learning in Power BI (Preview)"
         href: service-machine-learning-integration.md
-      - name: "Use Cognitive Services in Power BI"
-        href: service-cognitive-services.md        
+      - name: "Use Cognitive Services in Power BI (Preview)"
+        href: service-cognitive-services.md   
+      - name: "Automated Machine Learning in Power BI (Preview)"
+        href: service-machine-learning-automated.md              
     - name: Paginated reports in Power BI
       items: 
       - name: What are paginated reports? (Preview)
@@ -877,14 +883,26 @@
         href: developer/embedding.md
       - name: "What is Power BI Embedded in Azure"
         href: developer/azure-pbie-what-is-power-bi-embedded.md
+    - name: Quickstarts
+      items: 
+      - name: Manage capacities in Azure
+        items:
+        - name: Create a capacity in Azure
+          href: developer/azure-pbie-create-capacity.md
+        - name: Create a capacity using Multi-Geo in Azure
+          href: developer/embedded-multi-geo.md
+        - name: Scale a capacity in Azure
+          href: developer/azure-pbie-scale-capacity.md
+        - name: Pause and start a capacity in Azure
+          href: developer/azure-pbie-pause-start.md
     - name: Tutorials
       items: 
       - name: "Embed content for customers"
         href: developer/embed-sample-for-customers.md
       - name: "Embed content for your organization"
         href: developer/embed-sample-for-your-organization.md
-      - name: "Embed content for sovereign clouds"
-        href: developer/embed-sample-for-customers-sovereign-clouds.md
+      - name: "Embed content for national clouds"
+        href: developer/embed-sample-for-customers-national-clouds.md
     - name: Concepts
       items:
       - name: "Performance best practices"
@@ -923,8 +941,6 @@
           href: developer/azure-pbie-scale-capacity.md
         - name: Pause and start a capacity in Azure
           href: developer/azure-pbie-pause-start.md
-      - name: Troubleshoot
-        items:
         - name: "Troubleshoot your embedded application"
           href: developer/embedded-troubleshoot.md
       - name: Migrate from Workspace Collections
@@ -1033,6 +1049,16 @@
       items:
       - name: "Push data into a dataset"
         href: developer/walkthrough-push-data.md
+      - name: "Register an app with Azure AD"
+        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
+      - name: "Get an authentication access token"
+        href: developer/walkthrough-push-data-get-token.md
+      - name: "Create a dataset"
+        href: developer/walkthrough-push-data-create-dataset.md
+      - name: "Get a dataset to add rows"
+        href: developer/walkthrough-push-data-get-datasets.md
+      - name: "Add rows to a table"
+        href: developer/walkthrough-push-data-add-rows.md
     - name: Concepts
       items:
       - name: "Automatic retention policy for real-time data"
@@ -1047,16 +1073,6 @@
           href: developer/api-data-model-versioning.md
     - name: How to
       items:
-      - name: "Register an app with Azure AD"
-        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
-      - name: "Get an authentication access token"
-        href: developer/walkthrough-push-data-get-token.md
-      - name: "Create a dataset"
-        href: developer/walkthrough-push-data-create-dataset.md
-      - name: "Get a dataset to add rows"
-        href: developer/walkthrough-push-data-get-datasets.md
-      - name: "Add rows to a table"
-        href: developer/walkthrough-push-data-add-rows.md
       - name: "Configure credentials"
         href: developer/configure-credentials.md
       - name: "Encrypt credentials"
@@ -1271,6 +1287,8 @@
         href: service-premium-incremental-refresh.md
       - name: "Multi-Geo support"
         href: service-admin-premium-multi-geo.md
+      - name: "Connect to datasets with client applications and tools"
+        href: service-premium-connect-tools.md
       - name: "Power BI Premium FAQ"
         href: service-premium-faq.md
     - name: "Administration role in Office 365"

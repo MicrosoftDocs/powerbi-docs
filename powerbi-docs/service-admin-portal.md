@@ -1,6 +1,6 @@
 ---
 title: Power BI admin portal
-description: The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Office 365 admin center, and settings.
+description: The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Microsoft 365 admin center, and settings.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 04/02/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 
 # Administering Power BI in the admin portal
 
-The admin portal enables you to manage a Power BI *tenant* for your organization. The portal includes items such as usage metrics, access to the Office 365 admin center, and settings.
+The admin portal enables you to manage a Power BI *tenant* for your organization. The portal includes items such as usage metrics, access to the Microsoft 365 admin center, and settings.
 
 The full admin portal is accessible to all users who are Global Admins in Office 365 or have been assigned the Power BI service administrator role. If you're not in one of these roles, you only see **Capacity settings** in the portal. For more information about the Power BI service administrator role, see [Understanding the Power BI admin role](service-admin-role.md).
 
@@ -79,9 +79,9 @@ With this information, you can get real insights into how people are using Power
 
 ## Users
 
-You manage Power BI users, groups, and admins in the Office 365 admin center. The **Users** tab provides a link to the admin center for your tenant.
+You manage Power BI users, groups, and admins in the Microsoft 365 admin center. The **Users** tab provides a link to the admin center for your tenant.
 
-![Go to O365 Admin Center](media/service-admin-portal/powerbi-admin-manage-users.png)
+![Go to Microsoft 365 admin center](media/service-admin-portal/powerbi-admin-manage-users.png)
 
 ## Audit logs
 
@@ -331,11 +331,11 @@ Users in the organization can tag dashboards with classifications that indicate 
 
 Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](developer/embedding.md)
 
-## Dataflow settings (preview)
+## Dataflow settings
 
-### Create and use dataflows (preview)
+### Create and use dataflows
 
-Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI (Preview)](service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
+Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.

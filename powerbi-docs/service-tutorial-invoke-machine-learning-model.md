@@ -89,7 +89,7 @@ In the next screen, you're prompted to connect to a data source. Paste the link 
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI‑AI‑samples/master/Tutorial\_MLStudio\_model\_integration/Automobile%20price%20data%20\_Raw\_.csv`
 
-!Connect to data source](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
+![Connect to data source](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
 
 Power Query Editor shows a preview of the data from the CSV file. Select **Transform Table** from the command ribbon and then select **Use first row as headers**.  This adds the _Promoted headers_ query step into the **Applied steps** pane on the right. You can also rename the query to a friendlier name, such as _Automobile Pricing_ using the pane on the right.
 
@@ -134,7 +134,7 @@ Selecting the **Edit** icon opens Power Query Editor for the entities in your da
 
 Select the **AI Insights** button in the ribbon, and then select the _Azure Machine Learning Models_ folder from the left navigation menu.
 
-Select the **Azure Machine Learning Models** folder. The Azure ML models to which you've been granted access are listed as Power Query functions with a prefix *AzureML.*  When you click on the function corresponding to the _AutomobilePricePrediction_ model, the parameters for the model's web service are listed as function parameters.
+The Azure ML models to which you've been granted access are listed as Power Query functions with a prefix *AzureML.*  When you click on the function corresponding to the _AutomobilePricePrediction_ model, the parameters for the model's web service are listed as function parameters.
 
 To invoke an Azure ML model, you can specify any of the selected entity's columns as an input from the drop-down. You can also specify a constant value to be used as an input by toggling the column icon to the left of the input dialog. When a column name that matches one of the function parameter names, then the column is automatically suggested as an input.  If the column name doesn't match, you can select it from the drop-down.
 
