@@ -14,15 +14,13 @@ LocalizationGroup: Share your work
 ---
 # Create the new workspaces in Power BI
 
-Power BI has introducing a new workspace experience. Workspaces are still places to collaborate with colleagues to create collections of dashboards and reports, which you can bundle into *apps* and distribute to your whole organization or to specific people or groups. 
+Power BI is introducing a new workspace experience. Workspaces are still places to collaborate with colleagues to create collections of dashboards and reports, which you can bundle into *apps* and distribute to your whole organization or to specific people or groups. 
 
 In the new workspaces, you can:
 
 - Assign workspace roles to user groups: security groups, distribution lists, Office 365 groups, and individuals.
 - Create a workspace in Power BI without creating an Office 365 group.
 - Use more granular workspaces roles for more flexible permissions management in a workspace.
-- Create and distribute an app with its own built-in navigation.
-
 
 For more background, see the [new workspaces](service-new-workspaces.md) article.
 
@@ -38,7 +36,7 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
      
      If you select **Revert to classic**, you create a workspace based on an Office 365 Group. Use this option if you need the **Members can only view Power BI content** option to enforce row-level security (RLS) for workspace members.
 
-2. Give the workspace a name. If the name isn't available, edit it to come up with a unique ID.
+2. Give the workspace a name. If the name isn't available, edit it to come up with a unique name.
    
      The app for the workspace will have the same name and icon as the workspace.
    
@@ -62,7 +60,7 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
 
 1. For example, select **Samples** > **Customer Profitability Sample**.
 
-    Now in the workspace content list, because you're an admin, you also see a new action, **Access**.
+7. Now in the workspace content list, because you're an admin, you also see a new action, **Access**.
 
     ![Workspaces content list](media/service-create-the-new-workspaces/power-bi-workspace-content-list.png)
 
