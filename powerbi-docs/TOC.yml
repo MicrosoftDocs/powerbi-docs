@@ -501,8 +501,10 @@
         href: refresh-excel-file-local-drive.md
       - name: "Refresh a dataset from an Excel workbook - cloud"
         href: refresh-excel-file-onedrive.md
-      - name: "Refresh a dataset created from a .csv file on OneDrive"
+      - name: "Refresh a dataset from a .csv file on OneDrive"
         href: refresh-csv-file-onedrive.md
+      - name: "Query caching in Power BI Premium"
+        href: power-bi-query-caching.md
       - name: "Troubleshooting refresh scenarios"
         href: refresh-troubleshooting-refresh-scenarios.md
     - name: Dashboards
