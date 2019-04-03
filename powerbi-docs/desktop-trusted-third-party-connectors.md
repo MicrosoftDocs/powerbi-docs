@@ -1,4 +1,4 @@
-Instructions for user 
+# Trusting Third Party Connectors
 
 Trusting third party connectors in Power BI is done by listing the thumbprint of the certificate you want to trust in a specified registry value. If this thumbprint matches the thumbprint of the certificate that the connector you want to load was signed with, you will be able to load it in the ‘Recommended’ security level of Power BI. 
 
