@@ -1,10 +1,27 @@
-1. Start by creating the workspace. Select **Workspaces** > **Create app workspace**. **Revert to classic** 
+---
+ title: include file
+ description: include file
+ services: powerbi
+ author: maggiesMSFT
+ 
+ms.service: powerbi
+ ms.topic: include
+ ms.date: 04/02/2019
+ ms.author: maggies
+ ms.custom: include file
+---
+
+1. Start by creating the workspace. Select **Workspaces** > **Create app workspace**. 
    
      ![Create app workspace](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
    
     This will be the place to put content that you and your colleagues collaborate on.
 
-2. Give the workspace a name. If the corresponding **Workspace ID** isn't available, edit it to come up with a unique ID.
+2. In the **You're creating an upgraded workspace** banner, click **Revert to classic**. 
+
+    ![Revert to classic workspace option](media/powerbi-service-create-app-workspace/power-bi-revert-classic-workspace.png)
+
+3. Give the workspace a name. If the corresponding **Workspace ID** isn't available, edit it to come up with a unique ID.
    
      This will be the name of the app, too.
    

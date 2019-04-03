@@ -36,15 +36,22 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
    
      ![New workspace experience](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     When you select Revert to classic, you will create a workspace based on an Office 365 Group. Use this option if you need to use the Members can only view Power BI content option to enforce Row Level Security (RLS) for workspace members.
+     If you select **Revert to classic**, you create a workspace based on an Office 365 Group. Use this option if you need the **Members can only view Power BI content** option to enforce row-level security (RLS) for workspace members.
 
 2. Give the workspace a name. If the name isn't available, edit it to come up with a unique ID.
    
      The app for the workspace will have the same name and icon as the workspace.
    
-1. Upload an image, if you want. The file size has to be less than 45 KB.
-2. You can add a **Contact list**. By default, the workspace admins are the contacts. You can also specific a **Workspace OneDrive** and assign the workspace to a **Dedicated capacity**.
- 
+1. Here are some optional items you can specify for your workspace:
+
+    Upload an image. The file size has to be less than 45 KB.
+    
+    Add a **Contact list**. By default, the workspace admins are the contacts. 
+    
+    Specify a **Workspace OneDrive**. In this step, you're not creating a OneDrive location. You're specifying an existing location.
+
+    Assign the workspace to a **Dedicated capacity**.
+     
     ![Name the workspace, add an image, and other details](media/service-create-the-new-workspaces/power-bi-new-workspace-details.png)
 
 1. Select **Save**.
