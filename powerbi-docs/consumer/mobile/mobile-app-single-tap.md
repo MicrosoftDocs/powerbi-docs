@@ -20,8 +20,11 @@ Applies to:
 | iPhones |Android phones |
 
 A Power BI report is an interactive view of your data, with visuals representing different findings and insights from that data.
+
 You can configure how to interact with your data. You can decide if you want to have single tap interaction or double tap interaction.
+
 With double tap interaction, your first tap on a visual selects it, and only the second tap in a visual preforms the action itself, like slicer item selection, cross highligh, or just click on a link/button/etc.
+
 With single tap interaction, only one tap does both - selects the visual and executes the action.
 
 Starting from Power BI app version 18.0 for iOS and XXXXX for Android, all new installations will be configured with Single tap as a default behavior.
@@ -29,7 +32,7 @@ Users that already have Power BI installed on the phone and will upgrade to thes
 
 To change the interaction behavior, you can go to the app settings, and turn on/off single tap interaction.
 
-![Power BI mobile show data menu option](./media/mobile-apps-single-tap/configure-single-tap.png)
+![Power BI mobile change report interction](./media/mobile-apps-single-tap/configure-single-tap.png)
 
 This applies for both landscape and phone reports.
 
