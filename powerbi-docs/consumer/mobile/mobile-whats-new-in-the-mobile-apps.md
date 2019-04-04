@@ -29,6 +29,10 @@ You can access Power BI content shared with you from other organization directly
 
 With [slideshow](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) you can use publilc displays located in your office to run Power BI reports in full screen that will auto rotate between report pages.  
 
+### Supporting PBI-RS reports over ADFS and WAP configuration (iOS only)
+
+Power BI Reports (PBIX) hosted in PBI-RS over ADFS configuration can now be accessed from Power BI iOS app.
+
 ### Enabling single tap interaction with report visuals
 
 We changed report interaction so it will require only one tap on a visual, button, or slicer to interact with its data right away. Users will no longer need to tap on a visual to select it and to tap again to interact with it,  a single tap will do them both.
@@ -36,9 +40,6 @@ We changed report interaction so it will require only one tap on a visual, butto
 
 ![Single tap interaction](./media/mobile-whats-new-in-the-mobile-apps/SingleTap_2.gif)
 
-### Supporting PBI-RS reports over ADFS and WAP configuration (iOS only)
-
-Power BI Reports (PBIX) hosted in PBI-RS over ADFS configuration can now be accessed from Power BI iOS app.
 
 ## January - February 2019
  
