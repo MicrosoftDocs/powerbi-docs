@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 02/21/2019
 ms.author: davidi
 
 LocalizationGroup: Data refresh
@@ -97,6 +97,7 @@ Data refresh is supported for Power BI Desktop files and Excel workbooks that co
 Keeping your files on OneDrive, or SharePoint Online, and connecting to them from Power BI, provides a great amount of flexibility. But with all that flexibility, it also makes it one of the most challenging to understand. Scheduled refresh for files stored in OneDrive, or SharePoint Online, are different from package refresh. You can learn more in the [Types of refresh](#types-of-refresh) section.
 
 ### Power BI Desktop file
+
 | **Data source** | **Automatic refresh** | **User configured manual or scheduled refresh** | **Gateway required** |
 | --- | --- | --- | --- |
 | Get Data (on the ribbon) is used to connect to and query data from any listed online data source. |No |Yes |No (see below) |
@@ -113,6 +114,7 @@ Keeping your files on OneDrive, or SharePoint Online, and connecting to them fro
 For details, see [Refresh a dataset created from a Power BI Desktop file on OneDrive](refresh-desktop-file-onedrive.md).
 
 ### Excel workbook
+
 | **Data source** | **Automatic refresh** | **User configured manual or scheduled refresh** | **Gateway required** |
 | --- | --- | --- | --- |
 | Tables of data in a worksheet not loaded into the Excel data model. |Yes, hourly *(OneDrive/SharePoint Online only)* |Manual only *(OneDrive/SharePoint Online only)* |No |
@@ -127,6 +129,7 @@ For details, see [Refresh a dataset created from a Power BI Desktop file on OneD
 For more detailed information, see [Refresh a dataset created from an Excel workbook on OneDrive](refresh-excel-file-onedrive.md).
 
 ### Comma separated value (.csv) file on OneDrive or SharePoint Online
+
 | **Data source** | **Automatic refresh** | **User configured manual or scheduled refresh** | **Gateway required** |
 | --- | --- | --- | --- |
 | Simple comma separated value |Yes, hourly |Manual only |No |
@@ -141,6 +144,7 @@ There are two types of content packs in Power BI:
 **Organizational content packs**: created and shared by users in your own organization. Content pack consumers cannot setup a refresh schedule or manually refresh. Only the content pack creator can setup refresh for the datasets in the content pack. Refresh settings are inherited with the dataset.
 
 ### Content packs from online services
+
 | **Data source** | **Automatic refresh** | **User configured manual or scheduled refresh** | **Gateway required** |
 | --- | --- | --- | --- |
 | Online services in Get Data &gt; Services |Yes |Yes |No |
@@ -204,13 +208,11 @@ Real-time dashboards use the Microsoft Power BI REST API, or Microsoft Stream An
 | --- | --- | --- | --- |
 | Custom apps developed with the Power BI Rest API or Microsoft Stream Analytics |Yes, live streaming |No |No |
 
-To learn more, see [Create a real-time dashboard in Power BI](https://msdn.microsoft.com/library/mt267603.aspx).
-
 ## Configure scheduled refresh
 To learn how to configure scheduled refresh, see [Configure scheduled refresh](refresh-scheduled-refresh.md)
 
 ## Common data refresh scenarios
-Sometimes the best way to learn about data refresh in Power BI to look at examples. Here are some of the more common data refresh scenarios:
+Sometimes the best way to learn about data refresh in Power BI is to look at examples. Here are some of the more common data refresh scenarios:
 
 ### Excel workbook with tables of data
 You have an Excel workbook with several tables of data, but none of them are loaded into the Excel data model. You use Get Data to upload the workbook file from your local drive into Power BI, and create a dashboard. But, now you’ve made some changes to a couple of the workbook’s tables on your local drive, and you want to update your dashboard in Power BI with the new data.
@@ -233,7 +235,7 @@ In this case, you can manually refresh the data in the SalesReport.xlsx dataset 
 > 
 > 
 
-To learn more, see  [Excel data in Power BI](service-excel-workbook-files.md), [Power BI Gateway - Personal](personal-gateway.md), [On-premises data gateway](service-gateway-onprem.md), [Refresh a dataset created from an Excel workbook on a local drive](refresh-excel-file-local-drive.md).
+To learn more, see  [Excel data in Power BI](service-excel-workbook-files.md), [Power BI Gateway - Personal](service-gateway-personal-mode.md), [On-premises data gateway](service-gateway-onprem.md), [Refresh a dataset created from an Excel workbook on a local drive](refresh-excel-file-local-drive.md).
 
 ### Power BI Desktop file with data from an OData feed
 In this case, you use Get Data in Power BI Desktop to connect to and import census data from an OData feed.  You create several reports in Power BI Desktop, then name the file WACensus and save it on a share in your company. You then publish the file to the Power BI service.
@@ -266,7 +268,7 @@ For more information about troubleshooting, see [Tools for troubleshooting refre
 ## Next steps
 [Tools for troubleshooting refresh issues](service-gateway-onprem-tshoot.md)  
 [Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md)  
-[Power BI Gateway - Personal](personal-gateway.md)  
+[Power BI Gateway - Personal](service-gateway-personal-mode.md)  
 [On-premises data gateway](service-gateway-onprem.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

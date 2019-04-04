@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -51,7 +51,7 @@ Power BI Desktop can import the following elements, commonly referred to as *obj
 | --- | --- |
 | Power Query queries |All Power Query queries from Excel are converted to queries in Power BI Desktop. If there were Query Groups defined in the Excel Workbook, the same organization will be replicated in Power BI Desktop. All queries are loaded unless they were set to “Only Create Connection” in Excel. The Load behavior can be customized from the **Properties** dialog in the **Home** tab of **Query Editor** in Power BI Desktop. |
 | Power Pivot External Data Connections |All Power Pivot External Data Connections will be converted to queries in Power BI Desktop. |
-| Linked Tables or Current Workbook tables |If there is a worksheet table in Excel linked to the Data Model, or linked to a query (by using *From Table* or the *Excel.CurrentWorkbook()* function in M), the following options are presented: 1. Import the table to the Power BI Desktop file. This table is a one-time snapshot of the data, after which you cannot edit the data in the table in Power BI Desktop. There is a size limitation of 1 million characters (total, combining all column headers and cells) for tables created using this option. 2. Keep a connection to the original workbook. Alternatively, you can keep a connection to the original Excel Workbook and Power BI Desktop retrieves the latest content in this table with each refresh, just like any other query created against an Excel workbook in Power BI Desktop. |
+| Linked Tables or Current Workbook tables |If there is a worksheet table in Excel linked to the Data Model, or linked to a query (by using *From Table* or the *Excel.CurrentWorkbook()* function in M), the following options are presented: <ol><li>Import the table to the Power BI Desktop file. This table is a one-time snapshot of the data, after which you cannot edit the data in the table in Power BI Desktop. There is a size limitation of 1 million characters (total, combining all column headers and cells) for tables created using this option.</li><li>Keep a connection to the original workbook. Alternatively, you can keep a connection to the original Excel Workbook and Power BI Desktop retrieves the latest content in this table with each refresh, just like any other query created against an Excel workbook in Power BI Desktop.</li></ul> |
 | Data Model Calculated Columns, Measures, KPIs, Data Categories, and Relationships |These Data Model objects are converted to the equivalent objects in Power BI Desktop. Note there are certain Data Categories that are not available in Power BI Desktop, such as **Image**. In these cases, the Data Category information will be reset for the columns in question. |
 | Power View Worksheets |A new report page is created for each Power View worksheet in Excel. The name and order of these report pages match the original Excel workbook. |
 

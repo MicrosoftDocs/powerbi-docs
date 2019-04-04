@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 03/06/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -35,7 +35,7 @@ The following features are available to **Power BI US Government** customers, as
 * All data is encrypted in both Azure SQL and Blob Storage for Power BI
 * Connect to services with [content packs](service-connect-to-services.md)
 
-## Connectivity between Government and Public Azure Cloud services 
+## Connectivity between Government and global Azure Cloud services 
 
 Azure is distributed among multiple clouds. Be default, tenants are allowed to open firewall rules to a  cloud-specific instance, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a Power BI customer and you have existing SQL instances in the public cloud which you need to access, you must open specific firewall rules in SQL to the Azure Government Cloud IP space, for the following datacenters:
 
@@ -50,12 +50,13 @@ In the public cloud the IP spaces are available, but for the government cloud, y
 ## Limitations of Power BI US Government
 Some of the features that are available in the commercial version of the **Power BI service** are *not* available in the **Power BI service** for US Government customers. The Power BI team is actively working on making these features available to US Government customers, and will update this article when these features become available.
 
-* **Embed in SharePoint Online** - it is not possible to embed content in SharePoint Online using the Power BI web part.
+* **Embed in SharePoint Online** - it is not possible to embed content in SharePoint Online using the Power BI web part. However, secure embed does work using the [*Embed* web part](https://docs.microsoft.com/power-bi/service-embed-secure). You must add *app.powerbigov.us* to the exception list, which can be achieved by following the instructions in the [Allow or restrict the ability to embed content on SharePoint pages](https://support.office.com/article/allow-or-restrict-the-ability-to-embed-content-on-sharepoint-pages-e7baf83f-09d0-4bd1-9058-4aa483ee137b) article.
 * **Power BI US Government** is only available as a **Pro** license. Any references to Power BI (Free) licenses in an admin portal (or as users) are running in a commercial Power BI service cloud.
 * **Auditing** - auditing is now available through the Office 365 Security and Compliance portal, as of June 2018.
 * **Power BI content in Cortana** - Power BI results will not show up in Cortana search results, which includes results for your Power BI content (dashboards, reports, apps) as well as results that show Cortana-optimized report pages for specific keywords.
-* **External user sharing** - sharing is allowed within a Power BI tenant, and as of June 2018, sharing is also allowed with users outside of your Power BI tenant.
+* **External user sharing** - sharing is allowed within a Power BI tenant, and as of June 2018, sharing is also allowed with users outside of your Power BI tenant. See [distribute Power BI content to external guest users with Azure AD B2B](service-admin-azure-ad-b2b.md).
 * **Usage metrics for dashboards and reports** - usage metrics are not available for reports and dashboards. Customers can use audit log data to get usage information for content in their organization.
+* **Dataflows** - Dataflows are not available.
 
 If you have **Power BI** Free licenses assigned to your account, those accounts are running in a commercial version of the **Power BI** service, and are not part of the **Power BI US Government** offering. For those Free accounts, you may encounter the following issues:
 
@@ -89,7 +90,7 @@ The following questions (and answers) are provided to help you quickly get infor
 | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
 
-**Question:** My account is provisioned in more than one sovereign cloud. When using **Power BI Desktop**, how do I select which which cloud to connect to?
+**Question:** My account is provisioned in more than one national cloud. When using **Power BI Desktop**, how do I select which cloud to connect to?
 
 **Answer:** Beginning with the July 2018 release of **Power BI Desktop**, you can choose which cloud you want to use when signing in to **Power BI Desktop**.
 
@@ -101,5 +102,5 @@ There are all sorts of things you can do with Power BI. For more information and
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Power BI US Government Demo</a>
 * [Guided Learning for Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
 * [Get started with the Power BI service](service-get-started.md)
-* [Getting started with Power BI Desktop](desktop-getting-started.md)
+* [What is Power BI Desktop?](desktop-what-is-desktop.md)
 

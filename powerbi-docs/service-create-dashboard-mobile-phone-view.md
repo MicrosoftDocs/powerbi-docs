@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
@@ -54,6 +54,6 @@ When you turn the phone sideways, then you see the dashboard as it's laid out in
 
 ## Next steps
 * [Create reports optimized for the Power BI phone apps](desktop-create-phone-report.md)
-* [Create responsive visuals optimized for any size](desktop-create-responsive-visuals.md)
+* [Create responsive visuals optimized for any size](visuals/desktop-create-responsive-visuals.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

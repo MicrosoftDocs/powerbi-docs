@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: overview
-ms.date: 05/01/2018
+ms.date: 10/29/2018
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -28,7 +28,6 @@ Power BI is designed for self-service business intelligence, and the administrat
 
 The job is to make business users productive and ensure security and compliance with laws and regulations. Responsibilities may include help and support and, in many cases, assisting business users to do the right thing.
 
-
 ## Administrator roles related to Power BI
 
 There are several roles related to Power BI administration, which are covered in the following table.
@@ -47,7 +46,6 @@ Power BI Service Administrators have access to the Power BI admin portal which i
 
 The Power BI Service Administrator role does not grant the ability to assign licenses to users or view audit logs in Office 365. Therefore, the task of administering Power BI cannot currently be performed by users who are solely members of the Power BI Service Administrator role.
 
-
 ## Administrative tasks
 
 Administrators perform many tasks to support the Power BI tenant for their organization, which are covered in the following table.
@@ -63,27 +61,27 @@ Administrators perform many tasks to support the Power BI tenant for their organ
 | Provide help and support to tenant users |<ul><li>Troubleshoot data access and other issues</ul>|
 | Other tasks |<ul><li>Deploy Power BI Desktop, e.g. using System Center Configuration Manager<br><li>Manage Power BI mobile app deployment with Intune<br><li>Manage data privacy and security, such as source data security</ul>|
 
-
 ## Administrative tools
 
 There are several tools related to Power BI administration, which are covered in the following table. Administrators typically spend most of their time in the Power BI Admin portal and use other tools as necessary.
 
 | **Tool** | **Typical tasks** |
 | --- | --- |
-| Power BI Admin portal |<ul><li>Block users from accessing Power BI<br><li>Acquire and work with Premium capacity<br><li>Ensure quality of service<br><li>Manage classification of business data<br><li>Help to enforce content publishing and sharing policies<br><li>Manage workspaces<br><li>Publish custom visuals<br><li>Verify codes used to embed Power BI in other applications<br><li>Troubleshoot data access and other issues</ul>|
-| Office 365 Admin Center |<ul><li>Manage user signup<br><li>Purchase and assign Pro licenses</ul>|
-| Office 365 Security & Compliance Center |<ul><li>Review and manage auditing of events</ul>|
-| Azure Active Directory (AAD) in the Azure portal |<ul><li>Configure conditional access to Power BI resources through AAD<br><li>Provision Power BI Embedded capacity</ul>|
-| PowerShell cmdlets |<ul><li>Manage workspaces and other aspects of Power BI through scripts</ul>|
-| Administrative APIs |<ul><li>Build custom administrative tools to facilitate the work of a Power BI admin. For example, Power BI Desktop can use these APIs to build reports based on data related to administration</ul>|
+| Power BI Admin portal |<ul><li>Acquire and work with Premium capacity</li><li>Ensure quality of service</li><li>Manage classification of business data</li><li>Help to enforce content publishing and sharing policies</li><li>Manage workspaces<br><li>Publish custom visuals</li><li>Verify codes used to embed Power BI in other applications</li><li>Troubleshoot data access and other issues</li></ul>|
+| Microsoft 365 admin center |<ul><li>Manage user signup</li><li>Purchase and assign Pro licenses</li><li>Block users from accessing Power BI</li></ul>|
+| Office 365 Security & Compliance Center |<ul><li>Review and manage auditing of events</li></ul>|
+| Azure Active Directory (AAD) in the Azure portal |<ul><li>Configure conditional access to Power BI resources through AAD</li><li>Provision Power BI Embedded capacity</li></ul>|
+| PowerShell cmdlets |<ul><li>Manage workspaces and other aspects of Power BI through scripts</li></ul>|
+| Administrative APIs and SDK |<ul><li>Build custom administrative tools to facilitate the work of a Power BI admin. For example, Power BI Desktop can use these APIs to build reports based on data related to administration</li></ul>|
 
 ## Next steps
 
-We hope this article gave you some quick insights into the job of the Power BI administrator, and the specific roles, tasks, and tools that are involved. We recommend the two topics below to deepen your understanding.
+We hope this article gave you some quick insights into the job of the Power BI administrator, and the specific roles, tasks, and tools that are involved. We recommend the follow articles topics to deepen your understanding.
 
 [Use the Power BI admin portal](service-admin-portal.md)
+
+[Use PowerShell cmdlets](/powershell/power-bi/overview)
 
 [Power BI administration FAQ](service-admin-faq.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-

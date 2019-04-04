@@ -1,6 +1,6 @@
 If you want to keep track of your data while you're on the move, you can use one of Power BI's mobile applications for iOS, Android, and Windows devices.
 
-When using the Power BI app, first log in to your account using your Power BI service account information. On a Windows mobile device (in this case a tablet), the sign in looks like the following.
+When using the Power BI app, first sign in to your account using your Power BI service account information. On a Windows mobile device (in this case a tablet), the sign in looks like the following.
 
 ![](media/4-4a-power-bi-mobile/4-4a_1.png)
 

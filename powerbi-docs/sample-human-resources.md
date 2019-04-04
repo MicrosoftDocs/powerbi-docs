@@ -1,15 +1,15 @@
 ---
 title: 'Human Resources sample: Take a tour'
 description: 'Human Resources sample for Power BI: Take a tour'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/22/2018
-ms.author: mihart
+ms.date: 06/26/2018
+ms.author: maggies
 
 LocalizationGroup: Samples
 ---
@@ -28,7 +28,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 ## Prerequisites
 
- Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-human-resources#get-the-content-pack-for-this-sample), [pbix file](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human-Resources-Sample-PBIX.pbix), or 
+ Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-human-resources#get-the-content-pack-for-this-sample), [pbix file](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix), or 
 [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529780).
 
 ### Get the content pack for this sample
@@ -51,7 +51,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
 
- * [Human Resources Sample](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human Resources Sample PBIX.pbix)
+ * [Human Resources Sample PBIX](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
 
 ### Get the Excel workbook for this sample
 You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529780) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
@@ -101,7 +101,7 @@ Let’s look at the report in Editing View. Select **Edit report** in the upper-
 Change the pie charts to show Separates data instead of Actives.
 
 1. Select the **Active Employee Count by Age Group** pie chart.
-2. In **Fields**, select the arrow next to **Employees** ﻿to expand the Employees table. Clear the check box next to **Active Employee Count**﻿ to remove that field.
+2. In **Fields**, select the arrow next to **Employees** to expand the Employees table. Clear the check box next to **Active Employee Count** to remove that field.
 3. Select the check box next to **Separation Count** in the Employees table to add it to the **Values** box in the field well.
 4. Back on the report canvas, select the **Voluntary** bar in the **Separation Count by Separation Reason** bar chart. This highlights those who left voluntarily in the other visuals in the report.
 5. Click the 50+ slice of the Separation Count by Age Group pie chart.
@@ -119,7 +119,7 @@ The last area to explore is bad hires. Bad hires are defined as employees who di
 1. Select the **Bad Hires as % of Actives by Age Group** dashboard tile. This opens the report to page 3, “Bad Hires”.
 
    ![](media/sample-human-resources/hr7.png)  
-2. Select the **Northwest**﻿ check box in the Region slicer on the left and the **Male** slice in the Bad Hire Count by Gender donut chart.  Look at other charts on the “Bad Hires” page. More male bad hires than females and lot of Group A bad hires.
+2. Select the **Northwest** check box in the Region slicer on the left and the **Male** slice in the Bad Hire Count by Gender donut chart.  Look at other charts on the “Bad Hires” page. More male bad hires than females and lot of Group A bad hires.
    ![](media/sample-human-resources/pbi_hr_sample_badhirespage.png)  
 3. Looking at the **Bad Hires by Gender** donut chart and clicking through the **Region** slicer we notice that East is the only region with more female than male bad hires.  
 4. Select the name of the dashboard from the top navbar to return to the dashboard.

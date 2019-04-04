@@ -1,14 +1,14 @@
 ---
 title: 'Tutorial: Explore Power BI Report Server in a VM'
 description: In this tutorial, you create a virtual machine with Power BI Report Server already installed, and explore the web portal.
-author: maggiesMSFT
+author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/18/2018
-ms.author: maggies
+ms.author: maghan
 #intent statement: As a Power BI admin or end user, I want to see how Power BI Report Server is structured, and where I go to manage my files.
 ---
 
@@ -96,7 +96,7 @@ When your VM opens, here are the items you see on the desktop.
 |![Number 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Starts Power BI Desktop optimized for Power BI Report Server (March 2018)  |
 |![Number 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Opens Power BI Report Server web portal in the browser   |
 
-Double-click the **Report Server Web Portal** icon. The browser opens http://localhost/reports/browse. In the web portal, you see various files grouped by type. 
+Double-click the **Report Server Web Portal** icon. The browser opens `http://localhost/reports/browse`. In the web portal, you see various files grouped by type. 
 
 ![Power BI Report Server web portal](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 

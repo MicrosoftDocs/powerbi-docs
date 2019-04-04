@@ -1,22 +1,22 @@
 ---
 title: Pin a tile to a Power BI dashboard from a report
 description: Pin a tile to a Power BI dashboard from a report.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Dashboards
 ---
 # Pin a tile to a Power BI dashboard from a report
 ## Pinning tiles from a report
-One way to add a new [dashboard tile](service-dashboard-tiles.md) is from within a [Power BI report](service-reports.md). In fact, you can add many new tiles from a report.  Each of these tiles, when clicked, is a link back into the report.
+One way to add a new [dashboard tile](consumer/end-user-tiles.md) is from within a [Power BI report](consumer/end-user-reports.md). In fact, you can add many new tiles from a report.  Each of these tiles, when clicked, is a link back into the report.
 
 And entire report pages can be pinned to a dashboard.  This is also known as pinning a *live* tile.  *Live* because you can interact with the tile on the dashboard and because, unlike individual visualization tiles, changes made in the report are synced with the dashboard. Read more about this below.
 
@@ -55,15 +55,15 @@ Another option is to pin an entire report page to a dashboard. This is an easy w
 For more information, see [Pin an entire report page](service-dashboard-pin-live-tile-from-report.md)
 
 ## Next steps
-[Dashboards in Power BI](service-dashboards.md)
+[Dashboards in Power BI](consumer/end-user-dashboards.md)
 
-[Dashboard tiles in Power BI](service-dashboard-tiles.md)
+[Dashboard tiles in Power BI](consumer/end-user-tiles.md)
 
-[Reports in Power BI](service-reports.md)
+[Reports in Power BI](consumer/end-user-reports.md)
 
 [Data refresh in Power BI](refresh-data.md)
 
-[Power BI Basic Concepts](service-basic-concepts.md)
+[Power BI Basic Concepts](consumer/end-user-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

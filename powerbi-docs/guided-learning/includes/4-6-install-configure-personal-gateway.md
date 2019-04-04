@@ -6,7 +6,7 @@ The system that lets you connect your on-premises data sources to the Power BI s
 >The computer  that is running the Power BI personal gateway *must* be on and connected to the Internet for **personal gateway** to work properly.
 > 
 
-To set up your **personal gateway**, first login to the Power BI service. Select the **Download** icon in the top right-hand corner of the screen, and then select **Data Gateways** from the menu.
+To set up your **personal gateway**, first sign in to the Power BI service. Select the **Download** icon in the top right-hand corner of the screen, and then select **Data Gateways** from the menu.
 
 ![](media/4-6-install-configure-personal-gateway/4-6_1b.png)
 
@@ -22,7 +22,7 @@ You'll then be prompted to launch the configuration wizard to set up your gatewa
 
 ![](media/4-6-install-configure-personal-gateway/4-6_3b.png)
 
-You'll be asked first to log in to your Power BI service account, and then to log in to the machine's Windows account, since the gateway service runs under your account.
+You'll be asked first to sign in to your Power BI service account, and then to sign in to the machine's Windows account, since the gateway service runs under your account.
 
 ![](media/4-6-install-configure-personal-gateway/4-6_3c.png)
 

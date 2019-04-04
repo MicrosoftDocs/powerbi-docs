@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
@@ -42,10 +42,10 @@ Connect to the [Xero content pack](https://app.powerbi.com/getdata/services/xero
 
 **What now?**
 
-* Try [asking a question in the Q&A box](power-bi-q-and-a.md) at the top of the dashboard
+* Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
-* [Select a tile](service-dashboard-tiles.md) to open the underlying report.
-* While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+* [Select a tile](consumer/end-user-tiles.md) to open the underlying report.
+* While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## What's included
 The content pack dashboard includes tiles and metrics that cover a variety of areas, with corresponding reports to learn more:  
@@ -82,7 +82,7 @@ The following roles are required to access the Xero content pack: "Standard + Re
 <a name="FindingParams"></a>
 
 ## Finding parameters
-Provide a name for your organisation to track in Power BI. This allows you to connect to multiple different organisations. Note that you cannot connect to the same organisation multiple times, as it will affect the scheduled refresh.   
+Provide a name for your organisation to track in Power BI. This allows you to connect to multiple different organizations. Note that you cannot connect to the same organisation multiple times, as it will affect the scheduled refresh.   
 
 ## Troubleshooting
 * Xero users must have the following roles to access the Xero content pack for Power BI: "Standard + Reports" or "Advisor". The content pack relies on the user-based permissions to access reporting data through Power BI.  

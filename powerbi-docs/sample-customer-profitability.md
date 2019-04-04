@@ -1,15 +1,15 @@
 ---
 title: 'Customer Profitability sample for Power BI: Take a tour'
 description: 'Customer Profitability sample for Power BI: Take a tour'
-author: amandacofsky
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/22/2018
-ms.author: mihart
+ms.date: 06/23/2018
+ms.author: maggies
 
 LocalizationGroup: Samples
 ---
@@ -44,7 +44,7 @@ Want to follow along? This tutorial uses Power BI service and the "Customer Prof
 ### Get the .pbix file for this sample
 
 Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop.
-[Customer Profitability Sample](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer-Profitability-Sample-PBIX.pbix)
+[Customer Profitability Sample](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
 
 ### Get the Excel workbook for this sample
 
@@ -180,7 +180,7 @@ Let's take a look at the *Distribution* industry.
 
    ![filter for Distribution](media/sample-customer-profitability/customer7.png)
 4. The "Gross margin by Month and Executive Name" area chart tells us that only Valery and Tina have customers in this industry and Valery only worked with this industry from June to November.   
-5. Select **﻿Tina**﻿ and then **Valery** in the "Gross Margin by Month and Executive" area chart legend. Notice Tina's portion of "Total Revenue by Product" is really small compared to Valery.
+5. Select **Tina** and then **Valery** in the "Gross Margin by Month and Executive" area chart legend. Notice Tina's portion of "Total Revenue by Product" is really small compared to Valery.
 6. To see actual revenue, use Q&A to ask **total revenue by executive for distribution by scenario**.  
 
      ![type question in question box to see bar chart](media/sample-customer-profitability/power-bi-qna2.png)

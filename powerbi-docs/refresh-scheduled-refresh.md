@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Data refresh
@@ -22,7 +22,7 @@ LocalizationGroup: Data refresh
 
 If your dataset supports scheduled refresh, by using Refresh Now and Schedule Refresh, there are a few requirements and settings important for refresh to be successful. These are **Gateway connection**, **Data Source Credentials**, and **Schedule Refresh**. Let’s take a closer look at each.
 
-This will describe the options available for both the [Power BI Gateway – Personal](personal-gateway.md) and the [On-premises data gateway](service-gateway-onprem.md).
+This will describe the options available for both the [Power BI Gateway – Personal](service-gateway-personal-mode.md) and the [On-premises data gateway](service-gateway-onprem.md).
 
 To get to the schedule refresh screen, you can do the following.
 
@@ -119,7 +119,7 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 
 ## Next steps
 [Data refresh in Power BI](refresh-data.md)  
-[Power BI Gateway - Personal](personal-gateway.md)  
+[Power BI Gateway - Personal](service-gateway-personal-mode.md)  
 [On-premises data gateway](service-gateway-onprem.md)  
 [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  

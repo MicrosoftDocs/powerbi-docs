@@ -1,15 +1,15 @@
 ---
 title: 'Retail Analysis sample for Power BI: Take a tour'
 description: 'Retail Analysis sample for Power BI: Take a tour'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/18/2018
-ms.author: mihart
+ms.date: 06/24/2018
+ms.author: maggies
 
 LocalizationGroup: Samples
 ---
@@ -21,7 +21,7 @@ This industry sample dashboard and underlying report analyze retail sales data o
 
 ## Prerequisites
 
- Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-datasets#get-and-open-a-sample-content-pack-in-power-bi-service), [.pbix file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail-Analysis-Sample-PBIX.pbix), or [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529778).
+ Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-datasets#get-and-open-a-sample-content-pack-in-power-bi-service), [.pbix file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), or [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529778).
 
 
 ### Get the content pack for this sample
@@ -161,5 +161,5 @@ We hope this tour has shown how Power BI dashboards, Q&A, and reports can provid
 * [Download a zip file of all the sample files](http://go.microsoft.com/fwlink/?LinkId=535020)    
 * [Download the Excel workbook for this Power BI sample](http://go.microsoft.com/fwlink/?LinkId=529778)    
 * [Get data (for Power BI)](service-get-data.md)    
-* [Power BI - Basic Concepts](service-basic-concepts.md)    
+* [Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)    
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)

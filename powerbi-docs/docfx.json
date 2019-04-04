@@ -36,13 +36,22 @@
     "globalMetadata": {
       "breadcrumb_path": "/power-bi/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-MSPowerBI",
-      "contributors_to_exclude": ["openpublishingbuild","sudeepku","v-thepet"],
-      "searchScope": ["Power-BI"],
-      "titleSuffix": "Power BI"
-
+      "contributors_to_exclude": [
+        "openpublishingbuild",
+        "sudeepku",
+        "v-thepet"
+      ],
+      "searchScope": [
+        "Power-BI"
+      ],
+      "titleSuffix": "Power BI",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/powerbi-docs",
+      "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi"
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "powerbi-docs"
+    "dest": "powerbi-docs",
+    "markdownEngineName": "markdig"
   }
 }

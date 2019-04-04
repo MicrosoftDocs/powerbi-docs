@@ -1,20 +1,21 @@
 ---
-title: Analyze in Excel
+title: Analyze in Excel for Power BI
 description: Learn about how to analyze Power BI datasets in Excel
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Reports
 ---
 # Analyze in Excel
-There are times when you may want to use Excel to view and interact with a dataset that you have Power BI. With **Analyze in Excel**, you can do just that, and access PivotTable, chart, and slicer features in Excel based on the dataset that exists in Power BI.
+There are times when you may want to use Excel to view and interact with a dataset that you have in Power BI. With **Analyze in Excel**, you can do just that, and access PivotTable, chart, and slicer features in Excel based on the dataset that exists in Power BI.
 
 ## Requirements
 There are a few requirements for using **Analyze in Excel**:
@@ -22,7 +23,8 @@ There are a few requirements for using **Analyze in Excel**:
 * **Analyze in Excel** is supported for Microsoft Excel 2010 SP1 and later.
 * Excel PivotTables do not support drag-and-drop aggregation of numeric fields. Your dataset in Power BI *must have pre-defined measures*.
 * Some organizations may have Group Policy rules that prevent installing the required **Analyze in Excel** updates to Excel. If you’re unable to install the updates, check with your administrator.
-* **Analyze in Excel** requires a Pro license. To learn more about the differences in functionality between Free and Pro licenses, take a look at [Power BI Free versus Pro](service-free-vs-pro.md). 
+* **Analyze in Excel** requires that the dataset be in Power BI Premium or that the user have a Power BI Pro license. To learn more about the differences in functionality between license types, take a look at [Power BI features by license type](service-features-license-type.md). 
+* Users can connect to datasets through Analyze in Excel if they have read permission on the underyling dataset.  A user could have this in several ways, such as being a member of the workspace containing the dataset, having a report or dashboard shared to them that uses the dataset, or having permission to an app that contains the dataset.
 
 ## How does it work?
 When you select **Analyze in Excel** from the ellipses menu (the ...) associated with a dataset or report in **Power BI**, Power BI creates an .ODC file and downloads it from the browser to your computer.

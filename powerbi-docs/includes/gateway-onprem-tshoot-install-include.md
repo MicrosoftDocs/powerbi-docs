@@ -4,8 +4,6 @@ A lot of issues can surface when the gateway version is out of date.  It is a go
 ## Common issues
 Here are a few common issues and resolutions that have helped a number of customers in environments that restrict internet access.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-t7RO6mHATI?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
 ### Authentication to proxy server
 Your proxy may require authentication from a domain user account. By default, the gateway uses a Service SID for the windows service log on user. Changing the log on user to a domain user can help with this. For more information, see [Changing the gateway service account to a domain user](../service-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user).
 

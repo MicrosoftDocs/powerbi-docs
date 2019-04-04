@@ -5,10 +5,11 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 4/19/2018
+ms.date: 12/06/2018
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -20,24 +21,22 @@ In **Power BI Desktop**, you can also adjust the z-order (bring forward, send ba
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_0.png)
 
-### Enabling gridlines and snap-to-grid
+## Enabling gridlines and snap-to-grid
 To enable gridlines and snap-to-grid, select the **View** ribbon, then enable the checkboxes for **Show gridlines** and **Snap objects to grid.** You can select one or both options; they operate independently.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_1.png)
 
 > [!NOTE]
 > If **Show gridlines** and **Snap objects to grid** are disabled, connect to any data source and they become enabled.
-> 
-> 
 
-### Using gridlines
+## Using gridlines
 Gridlines are visible guides that help you align your visuals. When you're trying to determine whether two (or more) visuals are aligned horizontally or vertically, use the gridlines to determine whether their borders align.
 
 Use Ctrl+Click to select more than one visual at a time, which displays all selected visuals' borders and shows whether the visuals are properly aligned.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_2.png)
 
-#### Using gridlines inside visuals
+### Using gridlines inside visuals
 In Power BI there are also gridlines inside visuals that provide visible guides for comparing data points and values. Beginning with the September 2017 release of **Power BI Desktop**, you can now manage the gridlines within visuals using the **X-Axis** or **Y-Axis** card (as appropriate based on visual type), found in the **Format** section of the **Visualizations** pane. You can manage the following elements of gridlines within a visual:
 
 * Turn gridlines on or off
@@ -49,14 +48,14 @@ Modifying certain elements of gridlines can be especially useful in reports wher
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_9.png)
 
-### Using snap-to-grid
+## Using snap-to-grid
 When you enable **Snap objects to grid**, all visuals on the **Power BI Desktop** canvas that you move (or resize) are automatically aligned to the nearest grid axis, making it much easier to ensure two or more visuals align to the same horizontal or vertical location or size.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_3.png)
 
 And, that's all there is to using **gridlines** and **snap-to-grid** to ensure the visuals in your reports are neatly aligned.
 
-### Using z-order, align, and distribute
+## Using z-order, align, and distribute
 You can manage the front-to-back order of visuals in a report, often referred to as the *z-order* of elements. This feature lets you overlap visuals in any way you want, then adjust the front-to-back order of each. You set the order of your visuals using the **Bring Forward** and **Send Backward** buttons, found in the **Arrange** section of **Format** ribbon. The **Format** ribbon appears as soon as you select one or more visuals on the page.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_4.png)

@@ -1,26 +1,24 @@
 ---
 title: 'Create a new report from a dataset '
 description: Create a new Power BI report from a dataset.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/24/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Reports
 ---
 # Create a new report in Power BI service by importing a dataset
-You've read [Reports in Power BI](service-reports.md) and now you want to create your own. There are many different ways to create a report, and in this article we'll start by creating a very basic report from an Excel dataset using Power BI service. Once you understand the basics of creating a report, the **Next steps** at the bottom will direct you to more-advanced report topics.  
+You've read [Reports in Power BI](consumer/end-user-reports.md) and now you want to create your own. There are many different ways to create a report, and in this article we'll start by creating a very basic report from an Excel dataset using Power BI service. Once you understand the basics of creating a report, the **Next steps** at the bottom will direct you to more-advanced report topics.  
 
-> **TIP**: To create a report by copying an existing report, see [Copy a report](power-bi-report-copy.md)
-> 
-### Prerequisites
-- Power BI service (for creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md) )  
-- Retail Analysis sample dataset
+## Prerequisites
+> - Power BI service (for creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md) )  
+> - Retail Analysis sample dataset
 
 ## Import the dataset
 This method of creating a report starts with a dataset and a blank report canvas. To follow along, [download the Retail Analysis sample Excel dataset](http://go.microsoft.com/fwlink/?LinkId=529778) and save it to OneDrive for Business (preferred) or locally.
@@ -49,12 +47,12 @@ This method of creating a report starts with a dataset and a blank report canvas
 > 
 
 ## Add a Radial Gauge to the report
-Now that our dataset is imported, let's start answering some questions.  Our Chief Marketing Officer (CMO) wants to know how close we are to meeting this year's sales goals. A Gauge is a [good visualization choice](power-bi-report-visualizations.md) for displaying this type of information.
+Now that our dataset is imported, let's start answering some questions.  Our Chief Marketing Officer (CMO) wants to know how close we are to meeting this year's sales goals. A Gauge is a [good visualization choice](visuals/power-bi-report-visualizations.md) for displaying this type of information.
 
 1. In the Fields pane, select **Sales** > **This Year Sales** > **Value**.
    
     ![bar chart in report editor](media/service-report-create-new/power-bi-report-step1.png)
-2. Convert the visual to a Gauge by selecting the Gauge template ![Gauge icon](media/service-report-create-new/powerbi-gauge-icon.png) from the **VIsualizations** pane.
+2. Convert the visual to a Gauge by selecting the Gauge template ![Gauge icon](media/service-report-create-new/powerbi-gauge-icon.png) from the **Visualizations** pane.
    
     ![Gauge visual in report editor](media/service-report-create-new/power-bi-report-step2.png)
 3. Drag **Sales** > **This Year Sales** > **Goal** to the **Target value** well. Looks like we're very close to our goal.
@@ -71,7 +69,7 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
 2. Deselect the gauge. In the Fields pane, select **Sales** > **This Year Sales** > **Value** and select **Sales** > **Last Year Sales**.
    
     ![report editor with Gauge and bar chart](media/service-report-create-new/power-bi-report-step4.png)
-3. Convert the visual to an Area chart by selecting the Area chart template ![chart icon](media/service-report-create-new/power-bi-areachart-icon.png) from the **VIsualizations** pane.
+3. Convert the visual to an Area chart by selecting the Area chart template ![chart icon](media/service-report-create-new/power-bi-areachart-icon.png) from the **Visualizations** pane.
 4. Select **Time** > **Period** to add it to the **Axis** well.
    
     ![report editor with Area chart active](media/service-report-create-new/power-bi-report-step5.png)
@@ -89,7 +87,7 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
 Continue exploring your data and adding visualizations. When you find especially interesting insights, [pin them to a dashboard](service-dashboard-pin-tile-from-report.md).
 
 ## Next steps
-* [Add a new page to the report](power-bi-report-add-page.md)  
+
 * Learn how to [pin visualizations to a dashboard](service-dashboard-pin-tile-from-report.md)   
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

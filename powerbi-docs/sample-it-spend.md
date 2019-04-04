@@ -1,15 +1,15 @@
 ---
 title: 'IT Spend Analysis sample for Power BI: Take a tour'
 description: 'IT Spend Analysis sample for Power BI: Take a tour'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/20/2018
-ms.author: mihart
+ms.date: 06/23/2018
+ms.author: maggies
 
 LocalizationGroup: Samples
 ---
@@ -24,7 +24,7 @@ This sample is part of a series that illustrates how you can use Power BI with b
 
 ## Prerequisites
 
- Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-it-spend#get-the-content-pack-for-this-sample), [.pbix file](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT-Spend-Analysis-Sample-PBIX.pbix), or 
+ Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-it-spend#get-the-content-pack-for-this-sample), [.pbix file](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix), or 
 [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529783).
 
 ### Get the content pack for this sample
@@ -64,7 +64,7 @@ Selecting the **Var Plan % by Sales Region** dashboard tile takes you to the “
 
 But just looking at this chart and drawing conclusions can be misleading. We need to look at actual dollar amounts to put things in perspective.
 
-1. Select **Aus and NZ**﻿ in the Var Plan % by Sales Region chart, and observe Var Plan by IT Area chart.
+1. Select **Aus and NZ** in the Var Plan % by Sales Region chart, and observe Var Plan by IT Area chart.
 
    ![](media/sample-it-spend/it3.png)
 2. Now select **USA**. You get the idea — Australia is a really small part of our overall spend as compared to US.

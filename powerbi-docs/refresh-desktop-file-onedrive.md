@@ -1,14 +1,15 @@
 ---
-title: Refresh a dataset created from a Power BI Desktop file on OneDrive or SharePoint Online
+title: Refresh a dataset from OneDrive or SharePoint Online
 description: Refresh a dataset created from a Power BI Desktop file on OneDrive, or SharePoint Online
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 112/06/2018
 ms.author: davidi
 
 LocalizationGroup: Data refresh
@@ -45,7 +46,7 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created 
 ## OneDrive or OneDrive for Business. What’s the difference?
 If you have both a personal OneDrive and OneDrive for Business, it’s recommended you keep any files you want to import into Power BI in OneDrive for Business. Here’s why: You likely use two different accounts to sign into them.
 
-Connecting to OneDrive for Business in Power BI is typically seamless because the same account you use to sign into Power BI with is often the same account used to sign into OneDrive for Business. But, with personal OneDrive, you likely sign in with a different [Microsoft account](http://www.microsoft.com/account/default.aspx).
+Connecting to OneDrive for Business in Power BI is typically seamless because the same account you use to sign into Power BI with is often the same account used to sign into OneDrive for Business. But, with personal OneDrive, you likely sign in with a different [Microsoft account](https://account.microsoft.com).
 
 When you sign in with your Microsoft account, be sure to select Keep me signed in. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI  
     ![](media/refresh-desktop-file-onedrive/refresh_signin_keepmesignedin.png)

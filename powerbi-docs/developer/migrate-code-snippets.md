@@ -2,16 +2,18 @@
 title: Code snippets for migrating content from Power BI Embedded
 description: Here are some code snippets of basic operations needed for content migration
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/06/2018
-ms.author: maghan
+ms.date: 02/05/2019
 
 ---
+
 # Code snippets for migrating content from Power BI Workspace Collection
+
 Here are some code snippets of basic operations needed for content migration. For related flows for certain report types, see [How to migrate Power BI workspace collection content to Power BI Embedded](migrate-from-powerbi-embedded.md#content-migration).
 
 A **migration tool** is available for you to use in order to assist with copying content from Power BI Embedded (PaaS) to the Power BI service (SaaS). Especially if you have a lot of content. For more information, see [Power BI Embedded migration tool](migrate-tool.md).
@@ -20,7 +22,7 @@ The code below are examples using C# and the [Power BI .NET SDK](https://www.nug
 
 Make sure you are using the following namespaces to execute the code snippets below.
 
-```
+```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.PowerBI.Api.V1;
 using Microsoft.PowerBI.Api.V1.Models;
@@ -41,9 +43,9 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-
 ## Export report from PaaS workspace
-```
+
+```csharp
     // Create a token credentials with "AppKey" type
     var credentials = new TokenCredentials(<myAppKey==>, "AppKey");
 
@@ -67,8 +69,9 @@ using System.Threading.Tasks;
 ```
 
 ## Import report to SaaS workspace
-```
-    AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/common/oauth2/authorize");
+
+```csharp
+    AuthenticationContext authContext = new AuthenticationContext("https://login.microsoftonline.net/common/");
     var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api", <myClientId>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
     var credentials = new TokenCredentials(PBISaaSAuthResult.AccessToken);
     var client = new PowerBIClient(new Uri($"{"https://api.powerbi.com"}"), credentials);
@@ -80,9 +83,10 @@ using System.Threading.Tasks;
 ```
 
 ## Extract DirectQuery connection string from PaaS report
+
 This is for updating the PBIX after migrating to SaaS.
 
-```
+```csharp
     // Extract connection string from PaaS - DirectQuery report
     // Create a token credentials with "AppKey" type
     var credentials = new TokenCredentials(<myAppKey==>, "AppKey");
@@ -100,14 +104,15 @@ This is for updating the PBIX after migrating to SaaS.
 ```
 
 ## Update DirectQuery connection string is SaaS workspace
-```
+
+```csharp
     public class ConnectionString
     {
         [JsonProperty(PropertyName = "connectionString")]
         public string connection { get; set; }
     }
 
-    AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/common/oauth2/authorize");
+    AuthenticationContext authContext = new AuthenticationContext("https://login.microsoftonline.net/common/");
     var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api",<myclient_id>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
     var credentials = new TokenCredentials(PBISaaSAuthResult.AccessToken);
     var client = new PowerBIClient(new Uri($"{"https://api.powerbi.com"}"), credentials);
@@ -118,9 +123,10 @@ This is for updating the PBIX after migrating to SaaS.
 ```
 
 ## Set DirectQuery credentials in SaaS workspace
+
 In this snippet, we are using unencrypted credentials for simplicity, sending encrypted credentials is supported as well.
 
-```
+```csharp
     public class ConnectionString
     {
         [JsonProperty(PropertyName = "connectionString")]
@@ -142,7 +148,7 @@ In this snippet, we are using unencrypted credentials for simplicity, sending en
     var url = string.Format("https://api.powerbi.com/v1.0/myorg/gateways/{0}/datasources/{1}", <gateway_id>, <datasource_id>);
     var request = new HttpRequestMessage(new HttpMethod("PATCH"), url);
     // Set authorization header from you acquired Azure AD token
-    AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/common/oauth2/authorize");
+    AuthenticationContext authContext = new AuthenticationContext("https://login.microsoftonline.net/common/");
     var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api", <myclient_id>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
 
     request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", PBISaaSAuthResult.AccessToken);
@@ -154,18 +160,19 @@ In this snippet, we are using unencrypted credentials for simplicity, sending en
 ```
 
 ## Push dataset & report
+
 You will need to rebuild the report for the created dataset.
 
 In this snippet, we assume that the pushable dataset is already in an app workspace within the SaaS environment. For information about the push API, see [Push data into a Power BI dataset](walkthrough-push-data.md).
 
-```
+```csharp
     var credentials = new TokenCredentials(<Your WSC access key>, "AppKey");
 
     // Instantiate your Power BI client passing in the required credentials
     var client = new Microsoft.PowerBI.Api.V1.PowerBIClient(credentials);
     client.BaseUri = new Uri("https://api.powerbi.com");
 
-    // step 1 -> create dummy dataset at PaaS worksapce
+    // step 1 -> create dummy dataset at PaaS workspace
     var fileStream = File.OpenRead(<Path to your dummy dataset>);
     var import = client.Imports.PostImportWithFileAsync(<Your WSC NAME>, <Your workspace ID>, fileStream, "dummyDataset");
     while (import.Result.ImportState != "Succeeded" && import.Result.ImportState != "Failed")
@@ -194,7 +201,7 @@ In this snippet, we assume that the pushable dataset is already in an app worksp
     }
 
     // step 4 -> Upload dummy PBIX to SaaS workspace
-    AuthenticationContext authContext = new AuthenticationContext("https://login.windows.net/common/oauth2/authorize");
+    AuthenticationContext authContext = new AuthenticationContext("https://login.microsoftonline.net/common/");
     var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api", <Your client ID>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
     var credentialsSaaS = new TokenCredentials(PBISaaSAuthResult.AccessToken);
     var clientSaaS = new Microsoft.PowerBI.Api.V2.PowerBIClient(new Uri($"{"https://api.powerbi.com"}"), credentialsSaaS);
@@ -218,6 +225,7 @@ In this snippet, we assume that the pushable dataset is already in an app worksp
 ```
 
 ## Next steps
+
 [Power BI Embedded migration tool](migrate-tool.md)  
 [Embedding with Power BI](embedding.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md)  
@@ -229,4 +237,3 @@ In this snippet, we assume that the pushable dataset is already in an app worksp
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-

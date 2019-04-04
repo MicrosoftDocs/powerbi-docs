@@ -4,7 +4,7 @@ Using OneDrive for Business as a source for your Power BI content gives you acce
 
 ![](media/6-4a-integrate-onedrive-for-business/6-4a_1.png)
 
-To connect to a PBIX (Power BI Desktop) file on OneDrive for Business, log into the Power BI service and select **Get Data**. Choose **Files** under Import or Connect to Data, and then select **OneDrive - Business**. Highlight the desired file, and select **Connect**.
+To connect to a PBIX (Power BI Desktop) file on OneDrive for Business, sign in to the Power BI service and select **Get Data**. Choose **Files** under Import or Connect to Data, and then select **OneDrive - Business**. Highlight the desired file, and select **Connect**.
 
 ![](media/6-4a-integrate-onedrive-for-business/6-4a_2.png)
 

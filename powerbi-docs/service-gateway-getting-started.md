@@ -1,12 +1,12 @@
 ---
-title: What are Power BI gateways?
+title: What are On-Premises Data Gateways?
 description: Learn the basics about data gateways for Power BI.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: overview
 ms.date: 04/18/2018
 ms.author: mblythe
@@ -14,7 +14,7 @@ ms.author: mblythe
 LocalizationGroup: Gateways
 ---
 
-# What are Power BI gateways?
+# What are On-Premises Data Gateways?
 
 A Power BI gateway is software that you install within an on-premises network; it facilitates access to data in that network. It's like a gatekeeper that listens for connection requests, and grants them only when a users' requests meet certain criteria. This lets organizations keep databases and other data sources on their on-premises networks, yet securely use that on-premises data in Power BI reports and dashboards.
 
@@ -50,7 +50,7 @@ The gateway you install runs as a Windows service, **On-premises data gateway**.
 Queries and data flow:
 
 1. A query is created by the cloud service with the encrypted credentials for the on-premises data source. It's then sent to a queue for the gateway to process.
-2. The gateway cloud service analyzes the query and pushes the request to the Azure Service Bus.
+2. The gateway cloud service analyzes the query and pushes the request to the Azure Service Bus. Power BI manages the Service Bus for you, so there are no additional costs or configuration steps required.
 3. The on-premises data gateway polls the Azure Service Bus for pending requests.
 4. The gateway gets the query, decrypts the credentials, and connects to the data sources with those credentials.
 5. The gateway sends the query to the data source for execution.

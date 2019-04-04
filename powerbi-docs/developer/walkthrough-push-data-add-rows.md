@@ -2,17 +2,17 @@
 title: Add rows to a table
 description: Walkthrough to push data - Add rows to a Power BI table
 author: markingmyname
-manager: kfile
-ms.reviewer: ''
-
-ms.service: powerbi
-ms.component: powerbi-developer
-ms.topic: conceptual
-ms.date: 08/10/2017
 ms.author: maghan
-
+manager: kfile
+ms.reviewer: madia
+ms.service: powerbi
+ms.subservice: powerbi-developer
+ms.topic: conceptual
+ms.date: 02/05/2019
 ---
+
 # Step 5: Add rows to a Power BI table
+
 This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 
 In **step 4** of Push data into a dataset, [Get a dataset to add rows into a Power BI table](walkthrough-push-data-get-datasets.md), you used the [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) operation and Newtonsoft.Json to get a dataset id. In this step, you use the dataset id with the [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) operation to add rows to a **Power BI** dataset. 
@@ -24,10 +24,9 @@ When you call the [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushda
 Here's how to add rows to a dataset using the Power BI API.
 
 ## Add rows to a Power BI table
+
 > [!NOTE]
 > Before you get started, make sure you have followed the previous steps in the [push data into a dataset](walkthrough-push-data.md) walkthrough.
-> 
-> 
 
 1. In the Console Application project you created in Step 2: Walkthrough to push data, [Get an authentication access token](walkthrough-push-data-get-token.md), add the code below.
 2. Run the Console App, and login to your Power BI account. You should see **Rows Added** in the Console Window. You can also login to Power BI to see the rows added to the dataset.
@@ -38,7 +37,7 @@ Add this code into Program.cs.
 
 * In static void Main(string[] args):
   
-  ```
+  ```csharp
    static void Main(string[] args)
    {
   
@@ -53,11 +52,12 @@ Add this code into Program.cs.
   
        //Add rows to a Power BI table
        AddRows(datasetId, "Product");
-   }     
+   }
+
   ```
 * Add an AddRows() method:
 
-```
+```csharp
     #region Add rows to a Power BI table
     private static void AddRows(string datasetId, string tableName)
     {
@@ -106,6 +106,8 @@ Below is the [complete code listing](#code).
 <a name="code"/>
 
 ## Complete code listing
+
+```csharp
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using System.Net;
@@ -153,7 +155,7 @@ Below is the [complete code listing](#code).
                 string resourceUri = "https://analysis.windows.net/powerbi/api";
 
                 //OAuth2 authority Uri
-                string authorityUri = "https://login.windows.net/common/oauth2/authorize";
+                string authorityUri = "https://login.microsoftonline.net/common/";
 
                 //Get access token:
                 // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken
@@ -302,10 +304,12 @@ Below is the [complete code listing](#code).
             #endregion
         }
     }
+```
+
+Although, we specify that we **_//Get the first id_** in the code above, the correct thing to do is search the dataset by name.
 
 ## Next steps
 [Push data into a Power BI Dashboard](walkthrough-push-data.md)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-

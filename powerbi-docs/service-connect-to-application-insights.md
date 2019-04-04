@@ -6,20 +6,20 @@ manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/10/2018
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
 ---
 # Connect to Application Insights with Power BI
-Use Power BI to create powerful custom dashboards from [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/) telemetry. Envision your app telemetry in new ways. Combine metrics from multiple apps or component services onto one dashboard. This first release of the Power BI content pack for Application Insights includes widgets for common usage-related metrics such as active users, page view, sessions, browser and OS version, and geographic distribution of users in a map.
+Use Power BI to create powerful custom dashboards from [Application Insights](/azure/application-insights/app-insights-overview/) telemetry. Envision your app telemetry in new ways. Combine metrics from multiple apps or component services onto one dashboard. This first release of the Power BI content pack for Application Insights includes widgets for common usage-related metrics such as active users, page view, sessions, browser and OS version, and geographic distribution of users in a map.
 
 Connect to the [Application Insights content pack for Power BI](https://app.powerbi.com/getdata/services/application-insights).
 
 >[!NOTE]
->Access to the Application Insights overview blade for your application in the Azure Preview Portal is required to connect. More details on requirements below.
+>This integration method is now **deprecated**. To learn more about the preferred method of connecting Application Insights to Power BI use the [export analytic query functionality](https://docs.microsoft.com/azure/application-insights/app-insights-export-power-bi#export-analytics-queries).
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
@@ -43,10 +43,10 @@ Connect to the [Application Insights content pack for Power BI](https://app.powe
 
 **What now?**
 
-* Try [asking a question in the Q&A box](power-bi-q-and-a.md) at the top of the dashboard
+* Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
-* [Select a tile](service-dashboard-tiles.md) to open the underlying report.
-* While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+* [Select a tile](consumer/end-user-tiles.md) to open the underlying report.
+* While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## What's included
 The Application Insights content pack includes the following tables and metrics:  

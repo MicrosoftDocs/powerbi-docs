@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
@@ -143,7 +143,7 @@ Alternatively, you can go to your **Temp folder** (%temp%) and look for files th
 ## Next steps
 [Configuring proxy settings for the Power BI Gateways](service-gateway-proxy.md)  
 [Data Refresh](refresh-data.md)  
-[Power BI Gateway - Personal](personal-gateway.md)  
+[Power BI Gateway - Personal](service-gateway-personal-mode.md)  
 [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md)  
 [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

@@ -6,13 +6,14 @@ manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
 ---
+
 # Connect to Salesforce with Power BI
 With Power BI, you can easily connect to your Salesforce.com account. Creating this connection retrieves your data and automatically provides a dashboard and related reports based on your data.
 
@@ -52,14 +53,14 @@ Connect to the [Salesforce content pack](https://app.powerbi.com/getdata/service
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 
-You can change this dashboard to display your data any way you want. You can ask questions with Q&A -  Or click a tile to [open the underlying report](service-dashboard-tiles.md) and [change the tiles](service-dashboard-edit-tile.md) in the dashboard.
+You can change this dashboard to display your data any way you want. You can ask questions with Q&A -  Or click a tile to [open the underlying report](consumer/end-user-tiles.md) and [change the tiles](service-dashboard-edit-tile.md) in the dashboard.
 
 **What now?**
 
-* Try [asking a question in the Q&A box](power-bi-q-and-a.md) at the top of the dashboard
+* Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard
 * [Select a tile](service-dashboard-tiles.md) to open the underlying report
-* While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+* While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## System requirements and considerations
 - Connected with a production Salesforce account that has API access enabled
@@ -78,7 +79,7 @@ If you get a message "Unable to connect to the remote server" when trying to con
 
 
 ## Next steps
-[Get Started with Power BI](service-get-started.md)
+[What is Power BI?](power-bi-overview.md)
 
 [Get Data](service-get-data.md)
 

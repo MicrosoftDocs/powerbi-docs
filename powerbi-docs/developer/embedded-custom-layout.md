@@ -2,18 +2,16 @@
 title: Custom layouts with Power BI embedded content
 description: Learn about custom layouts when embedding Power BI content in your application.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/19/2017
-ms.author: maghan
-
 ---
-# Custom layouts
 
+# Custom layouts
 
 Use custom layout to embed a report with different layout than in an original report. Defining a new layout varies between defining only a page size, controlling visual sizes, or position and visibility.
 
@@ -111,7 +109,6 @@ enum VisualContainerDisplayMode {
 - `width`, height: Defines the new size of the visual.
 - `displayState`: Defines the visibility of the visual.
 
-
 ## Update layout
 
 You can use updateSettings method to update the report layout any time while the report is loaded. See [Update Settings](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Update-Settings).
@@ -121,58 +118,55 @@ You can use updateSettings method to update the report layout any time while the
 ```javascript
 // Get models. models contains enums that can be used.
 var models = window['powerbi-client'].models;
-	
+
 var embedConfiguration = {
-	type: 'report',
-	id: '5dac7a4a-4452-46b3-99f6-a25915e0fe55',
-	embedUrl: 'https://app.powerbi.com/reportEmbed',
-	tokenType: models.TokenType.Embed,
-	accessToken: 'H4...rf',
-	settings: {
+    type: 'report',
+    id: '5dac7a4a-4452-46b3-99f6-a25915e0fe55',
+    embedUrl: 'https://app.powerbi.com/reportEmbed',
+    tokenType: models.TokenType.Embed,
+    accessToken: 'H4...rf',
+    settings: {
             layoutType: models.LayoutType.Custom
-		customLayout: {
-			pageSize: {
-				type: models.PageSizeType.Custom,
-				width: 1600,
-				height: 1200
-			},
-  			displayOption: models.DisplayOption.ActualSize,
-  			pagesLayout: {
-				"ReportSection1" : {
-					visualsLayout: {
-						"VisualContainer1": {
-							x: 1,
-							y: 1,
-							z: 1,
-							width: 400,
-							height: 300,
-							displayState: {
-								mode: models.VisualContainerDisplayMode.Visible
-							}
-						},
-						"VisualContainer2": {
-							displayState: {
-								mode: models.VisualContainerDisplayMode.Hidden
-							}
-						},
-					}
-				}
-	    	}
-		}
-	}
+        customLayout: {
+            pageSize: {
+                type: models.PageSizeType.Custom,
+                width: 1600,
+                height: 1200
+            },
+            displayOption: models.DisplayOption.ActualSize,
+            pagesLayout: {
+                "ReportSection1" : {
+                    visualsLayout: {
+                        "VisualContainer1": {
+                            x: 1,
+                            y: 1,
+                            z: 1,
+                            width: 400,
+                            height: 300,
+                            displayState: {
+                                mode: models.VisualContainerDisplayMode.Visible
+                            }
+                        },
+                        "VisualContainer2": {
+                            displayState: {
+                                mode: models.VisualContainerDisplayMode.Hidden
+                            }
+                        },
+                    }
+                }
+            }
+        }
+    }
 };
-	 
+
 // Get a reference to the embedded report HTML element
 var embedContainer = document.getElementById('embedContainer');
- 
+
 // Embed the report and display it within the div container.
 var report = powerbi.embed(embedContainer, embedConfiguration);
-
 ```
-
 
 ## See also
 
 [Embed your Power BI dashboards, reports and tiles](embedding-content.md)   
 [Ask the Power BI Community](https://community.powerbi.com/)
-

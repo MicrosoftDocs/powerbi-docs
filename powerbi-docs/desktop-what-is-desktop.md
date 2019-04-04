@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: overview
-ms.date: 12/06/2017
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -84,7 +84,7 @@ Once you select **Publish**, Power BI Desktop connects you to the **Power BI ser
 
 ## Next steps
 
-To get started with **Power BI Desktop**, the first think you need is to download and install the application. There are two ways to get **Power BI Desktop**:
+To get started with **Power BI Desktop**, the first thing you need is to download and install the application. There are two ways to get **Power BI Desktop**:
 
 * [Download Power BI Desktop from the web](desktop-get-the-desktop.md)
 * [Get Power BI Desktop from the Windows Store](http://aka.ms/pbidesktopstore)

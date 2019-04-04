@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
@@ -40,10 +40,10 @@ Connect to the [Azure Search content pack](https://app.powerbi.com/getdata/servi
 
 **What now?**
 
-* Try [asking a question in the Q&A box](power-bi-q-and-a.md) at the top of the dashboard
+* Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
-* [Select a tile](service-dashboard-tiles.md) to open the underlying report.
-* While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+* [Select a tile](consumer/end-user-tiles.md) to open the underlying report.
+* While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## System requirements
 The Azure Search content pack requires Azure Search Traffic Analytics to be enabled on the account.
@@ -52,7 +52,7 @@ The Azure Search content pack requires Azure Search Traffic Analytics to be enab
 Ensure the storage account name is correctly provided along with the full access key. The storage account name should correspond to the account configured with Azure Search Traffic Analytics.
 
 ## Next steps
-[Get started with Power BI](service-get-started.md)
+[What is Power BI?](power-bi-overview.md)
 
-[Power BI - Basic Concepts](service-basic-concepts.md)
+[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
 

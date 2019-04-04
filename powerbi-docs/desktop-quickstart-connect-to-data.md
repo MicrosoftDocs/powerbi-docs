@@ -4,15 +4,14 @@ description: Connect to a data source in Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: quickstart
-ms.date: 05/07/2018
+ms.date: 11/28/2018
 ms.author: davidi
-
 LocalizationGroup: quickstart
 #Customer intent: As a data analyst or report creator, I want to connect to data in Power BI Desktop, so I can use Power BI Desktop to build data models and create reports.
+
 ---
 # Quickstart: Connect to data in Power BI Desktop
 
@@ -25,7 +24,7 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 ## Prerequisites
 
 To complete the steps in this article, you need the following:
-* Download and install **Power BI Desktop**, which is a free application that runs on your local computer. You can [download **Power BI Desktop**](https://powerbi.microsoft.com/desktop) direclty, or you can get it from [the **Microsoft Store**](http://aka.ms/pbidesktopstore).
+* Download and install **Power BI Desktop**, which is a free application that runs on your local computer. You can [download **Power BI Desktop**](https://powerbi.microsoft.com/desktop) directly, or you can get it from [the **Microsoft Store**](http://aka.ms/pbidesktopstore).
 * [Download this sample Excel workbook](http://go.microsoft.com/fwlink/?LinkID=521962), and create a folder called *C:\PBID-qs* where you can store the Excel file. Subsequent steps in this quickstart assume that is the file location for the downloaded Excel workbook.
 
 ## Launch Power BI Desktop
@@ -36,13 +35,13 @@ Once you install **Power BI Desktop**, launch the application so it's running on
 
 ## Connect to data
 
-With **Power BI Desktop** you can connect to many different types of data. You can connect to basic data sources such as a Microsoft Excel file, and you can connect to online services that contain all sorts of data such as Salesforce, Microsoft Dynamics, Azure Blob Storage, and many more. 
+With **Power BI Desktop** you can connect to many different types of data. You can connect to basic data sources such as a Microsoft Excel file, and you can connect to online services that contain all sorts of data such as Salesforce, Microsoft Dynamics, Azure Blob Storage, and many more.
 
 To connect to data, from the **Home** ribbon select **Get Data**.
 
 ![Get Data](media/desktop-quickstart-connect-to-data/qs-connect-data_02.png)
 
-The **Get Data** window appears, where you can choose from the many different data sources to which **Power BI Desktop** can connect. In this quickstart we use the Excel workbook that you downloaded, described in the *Prerequisites* section at the beginning of this article. 
+The **Get Data** window appears, where you can choose from the many different data sources to which **Power BI Desktop** can connect. In this quickstart we use the Excel workbook that you downloaded, described in the *Prerequisites* section at the beginning of this article.
 
 ![Get Data](media/desktop-quickstart-connect-to-data/qs-connect-data_03.png)
 
@@ -66,10 +65,8 @@ Once you've loaded the tables, the **Fields** pane shows you the data. You can e
 
 And that's it! You've connected to data in **Power BI Desktop**, loaded that data, and now you can see all the available fields within those tables.
 
-
 ## Next steps
+
 There are all sorts of things you can do with **Power BI Desktop** once you've connected to data, such as creating visuals and reports. Take a look at the following resource to get you going:
 
 * [Getting Started Guide for Power BI Desktop](desktop-getting-started.md)
-
-

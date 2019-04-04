@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 11/28/2018
 ms.author: davidi
 
 LocalizationGroup: Model your data
@@ -54,6 +54,8 @@ When you create or edit a relationship, you can configure additional options.  B
 **Many to One (\*:1)** - This is the most common, default type. This means the column in one table can have more than one instance of a value, and the other related table, often know as the Lookup table, has only one instance of a value.
 
 **One to One (1:1)** - This means the column in one table has only one instance of a particular value, and the other related table has only one instance of a particular value.
+
+**Many-to-many relationships**: With composite models, you can establish many-to-many relationships between tables. This approach removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. For more detailed information, see [Relationships with a many-many cardinality](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
 
 See the Understanding additional options section later in this article for more details about when to change cardinality.
 

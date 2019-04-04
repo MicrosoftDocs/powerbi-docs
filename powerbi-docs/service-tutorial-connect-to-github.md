@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: SarinaJoan
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 05/17/2018
@@ -28,7 +28,7 @@ In this tutorial, you complete the following steps:
 > * Open the Power BI service
 > * Find the GitHub app
 > * Enter the information for the Power BI public GitHub repo
-> * View the dashboad and report with GitHub data
+> * View the dashboard and report with GitHub data
 > * Clean up resources by deleting the app
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
@@ -66,7 +66,7 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
  
    ![Power BI GitHub tile](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tile.png) 
 
-8. Select the global navigaton icon to minimize the left navigation, so you have more room.
+8. Select the global navigation icon to minimize the left navigation, so you have more room.
 
     ![Global navigation icon](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 
@@ -122,6 +122,6 @@ Now that you've finished the tutorial, you can delete the GitHub app.
 In this tutorial, you've connected to a GitHub public repo and gotten data, which Power BI has formatted in a dashboard and report. You've answered some questions about the data by exploring the dashboard and report. Now you can learn more about connecting to other services, such as Salesforce, Microsoft Dynamics, and Google Analytics. 
  
 > [!div class="nextstepaction"]
-> [Connect to the online services you use](./service-connect-to-services.md)
+> [Connect to the online services you use](service-connect-to-services.md)
 
 

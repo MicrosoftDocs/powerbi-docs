@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 02/14/2018
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -16,14 +16,14 @@ LocalizationGroup: Connect to data
 # Use the SAP BW Connector in Power BI Desktop
 With Power BI Desktop, you can access **SAP Business Warehouse (BW)** data.
 
-For information about how SAP customers can benefit from connecting Power BI to their existing SAP Business Warehouse (BW) systems, see the [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw).
+For information about how SAP customers can benefit from connecting Power BI to their existing SAP Business Warehouse (BW) systems, see the [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw). For details about using DirectQuery with SAP BW, see the article [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
-Starting with the June 2018 release of **Power BI Desktop**, you can use the SAP BW connector with an implementation that has significant improvements in performance and capabilities. This updated version of the SAP BW connector was developed by Microsoft and is called **Implementation 2.0**. You can select either the standard **SAP BW Connector**, or the **Implementation 2.0 SAP Connector**. The following sections describe the installation of each version, in turn. You can choose one or the other connector when connectint to SAP BW from Power BI Desktop.
+Starting with the June 2018 release of **Power BI Desktop** (and generally available with the October 2018 release), you can use the SAP BW connector with an implementation that has significant improvements in performance and capabilities. This updated version of the SAP BW connector was developed by Microsoft and is called **Implementation 2.0**. You can select either  version 1 (v1) of the **SAP BW Connector**, or the **Implementation 2.0 SAP Connector**. The following sections describe the installation of each version, in turn. You can choose one or the other connector when connecting to SAP BW from Power BI Desktop.
 
 We suggest you use the **Implementation 2.0 SAP Connector** whenever possible.
 
-## Installation of the standard SAP BW Connector
-We recommend using the Implementation 2.0 SAP Connector whenever possible (see instructions in the following section). This section describes installation of the standard **SAP BW Connector**, which you can install by taking the following installation steps:
+## Installation of version 1 of the SAP BW Connector
+We recommend using the Implementation 2.0 SAP Connector whenever possible (see instructions in the following section). This section describes installation of version 1 of the **SAP BW Connector**, which you can install by taking the following installation steps:
 
 1. Install the **SAP NetWeaver** library on your local machine. You can get the **SAP Netweaver** library from your SAP administrator, or directly from the [SAP Software Download Center](https://support.sap.com/swdc). Since the **SAP Software Download Center** changes its structure frequently, more specific guidance for navigating that site is not available. The **SAP NetWeaver** library is usually included also in the SAP Client Tools installation.
    
@@ -34,9 +34,9 @@ We recommend using the Implementation 2.0 SAP Connector whenever possible (see i
 
 ## Installation of Implementation 2.0 SAP Connector
 
-**Implementation 2.0** of the SAP Connector requires the SAP .NET Connector 3.0. You can [download the SAP .NET Connector 3.0](https://go.microsoft.com/fwlink/?linkid=872300) from SAP’s website using the following link:
+**Implementation 2.0** of the SAP Connector requires the SAP .NET Connector 3.0. You can [download the SAP .NET Connector 3.0](https://support.sap.com/en/product/connectors/msnet.html) from SAP’s website using the following link:
 
-* [SAP .NET Connector 3.0](https://go.microsoft.com/fwlink/?linkid=872300)
+* [SAP .NET Connector 3.0](https://support.sap.com/en/product/connectors/msnet.html)
 
 Access to the download requires a valid S-user. Customers are encouraged to contact their SAP Basis team to get the SAP .NET Connector 3.0. 
 
@@ -50,11 +50,11 @@ When installing, in the **Optional setup steps** window, make sure you select th
 ![SAP optional setup steps](media/desktop-sap-bw-connector/sap_bw_2b.png)
 
 > [!NOTE]
-> The standard SAP BW implementation required Netweaver DLLs; if you're using Implementation 2.0 of the SAP Connector, and not using the standard version, the Netweaver DLLs are not required.
+> The first version of SAP BW implementation required Netweaver DLLs; if you're using Implementation 2.0 of the SAP Connector, and not using the first version, the Netweaver DLLs are not required.
 
 
-## Standard SAP BW Connector features
-The standard **SAP BW Connector** in Power BI Desktop let you import data from your **SAP Business Warehouse Server** cubes, or use DirectQuery. 
+## Version 1 SAP BW Connector features
+The version 1 **SAP BW Connector** in Power BI Desktop let you import data from your **SAP Business Warehouse Server** cubes, or use DirectQuery. 
 
 To learn more about the **SAP BW connector** and how to use it with DirectQuery, take a look at the [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md) article.
 
@@ -97,7 +97,7 @@ You must create a new connection to use Implementation 2.0 of the SAP BW Connect
 
     ![SAP connection dialog](media/desktop-sap-bw-connector/sap_bw_7.png)
 
-3. Select **OK**, and subsequently, the **Navigator** experience is the same as described in the earlier section for the standard SAP BW Connector. 
+3. Select **OK**, and subsequently, the **Navigator** experience is the same as described in the earlier section for the version 1 SAP BW Connector. 
 
 ### New options for Implementation 2.0 
 
@@ -111,7 +111,7 @@ Implementation 2.0 supports the following options:
 
     The default value for this option is SapBusinessWarehouseExecutionMode.BasXmlGzip.
 
-    Using *SapBusinessWarehouseExecutionMode.BasXmlGzip* may improve performance when experiencing high latency for large datasets or for large datasets.
+    Using *SapBusinessWarehouseExecutionMode.BasXmlGzip* may improve performance when experiencing high latency for large datasets.
 
 2. **BatchSize** - Specifies the maximum number of rows that will be retrieved at a time when executing an MDX statement. A small number of rows will translate into more calls to the server while retrieving a large dataset. A large number of rows may improve performance, but could cause memory issues on the SAP BW server. The default value is 50000 rows.
 
@@ -159,7 +159,7 @@ Changing existing reports to use **Implementation 2.0** is only possible in Impo
 
     ![query snippet](media/desktop-sap-bw-connector/sap_bw_12.png)
 
-4. Every effort has been made to make Implementation 2.0 of the SAP BW Connector compatible with the standard SAP BW Connector. However, there may be some differences due to the different SAP BW MDX execution modes being used. To resolve any discrepancies, try switching between execution modes.
+4. Every effort has been made to make Implementation 2.0 of the SAP BW Connector compatible with version 1 of the SAP BW Connector. However, there may be some differences due to the different SAP BW MDX execution modes being used. To resolve any discrepancies, try switching between execution modes.
 
 ## Troubleshooting
 This section provides troubleshooting situations (and solutions) for working with th **SAP BW** connector.
@@ -193,16 +193,57 @@ This section provides troubleshooting situations (and solutions) for working wit
            </item>
    
    To solve this error, users must ask their SAP admin to grant the SAPBW user being used in Power BI the right to execute *BAPI_USER_GET_DETAIL*. It’s also worth verifying that the user has the required *DCPFM* value, as described earlier in this troubleshooting solution.
+   
 2. **Connectivity for SAP BEx queries**
    
    You can perform **BEx** queries in Power BI Desktop by enabling a specific property, as shown in the following image:
    
    ![](media/desktop-sap-bw-connector/sap_bw_8.png)
+   
+3. The **Navigator** window does not display a data preview and instead provides an *object reference not set to an instance of an object* error message.
+   
+   SAP users need access to specific BAPI function modules to get metadata and retrieve data from SAP BW's InfoProviders. These include:
+   * BAPI_MDPROVIDER_GET_CATALOGS
+   * BAPI_MDPROVIDER_GET_CUBES
+   * BAPI_MDPROVIDER_GET_DIMENSIONS
+   * BAPI_MDPROVIDER_GET_HIERARCHYS
+   * BAPI_MDPROVIDER_GET_LEVELS
+   * BAPI_MDPROVIDER_GET_MEASURES
+   * BAPI_MDPROVIDER_GET_MEMBERS
+   * BAPI_MDPROVIDER_GET_VARIABLES
+   * BAPI_IOBJ_GETDETAIL
+
+   To solve this issue, verify that the user has access to the various *MDPROVIDER* modules as well as *BAPI_IOBJ_GETDETAIL*. To further troubleshoot this or similar issues, select *Enable tracing* on the *Diagnostics* window within Power BI Desktop's *Options*. Attempt to retrieve data from SAP BW while tracing is active, and examine the trace file for more detail.
+
+## SAP BW Connection support
+
+The following table details the current support for SAP BW.
+
+
+
+|Product  |Mode  |Authentication  |Connector  |SNC Library  |Supported  |
+|---------|---------|---------|---------|---------|---------|
+|Power BI Desktop     |Any         | User / password  | Application Server | N/A  | Yes  |
+|Power BI Desktop     |Any         | Windows          | Application Server | sapcrypto + gsskrb5/gx64krb5  | Yes  |
+|Power BI Desktop     |Any         | Windows via impersonation | Application Server | sapcrypto + gsskrb5/gx64krb5  | Yes  |
+|Power BI Desktop     |Any         | User / password        | Message Server | N/A  | Yes  |
+|Power BI Desktop     |Any         | Windows        | Message Server | sapcrypto + gsskrb5/gx64krb5  | Yes  |
+|Power BI Desktop     |Any         | Windows via impersonation | Message Server | sapcrypto + gsskrb5/gx64krb5  | Yes  |
+|Power BI Gateway     |Import      | Same as Power BI Desktop |         |   |   |
+|Power BI Gateway     |DirectQuery | User / password        | Application Server | N/A  | Yes  |
+|Power BI Gateway     |DirectQuery | Windows via impersonation (fixed user, no SSO) | Application Server | sapcrypto + gsskrb5/gx64krb5  | Yes  |
+|Power BI Gateway     |DirectQuery | Use SSO via Kerberos for DirectQuery queries option | Application Server | *only with* gsskrb5/gx64krb5   | Yes  |
+|Power BI Gateway     |DirectQuery | User / password        | Message Server | N/A  | Yes  |
+|Power BI Gateway     |DirectQuery | Windows via impersonation (fixed user, no SSO) | Message Server | sapcrypto + gsskrb5/gx64krb5  | Yes  |
+|Power BI Gateway     |DirectQuery | Use SSO via Kerberos for DirectQuery queries option | Message Server | sapcrypto + gsskrb5/gx64krb5  | No  |
+
+
 
 ## Next steps
 For more information about SAP and DirectQuery, check out the following resources:
 
 * [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
+* [DirectQuery and SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
 * [DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data Sources supported by DirectQuery](desktop-directquery-data-sources.md)
 * [Power BI and SAP BW whitepaper](https://aka.ms/powerbiandsapbw)

@@ -2,18 +2,18 @@
 title: Data sources supported by DirectQuery in Power BI
 description: Get a list of which data sources can use DirectQuery.
 author: davidiseminger
+ms.author: davidi
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/02/2018
-ms.author: davidi
-
+ms.date: 11/01/2018
 LocalizationGroup: Connect to data
 ---
+
 # Data sources supported by DirectQuery in Power BI
+
 **Power BI Desktop** and the **Power BI service** have many data sources to which you can connect and get access to data. This article describes which data sources for Power BI support the connection method known as **DirectQuery**. For more information about DirectQuery, see [**DirectQuery in Power BI**](desktop-directquery-about.md).
 
 The following data sources support DirectQuery in Power BI:
@@ -23,6 +23,7 @@ The following data sources support DirectQuery in Power BI:
 * Azure SQL Database
 * Azure SQL Data Warehouse
 * Google BigQuery (Beta)
+* IBM DB2 database
 * IBM Netezza (Beta)
 * Impala (version 2.x)
 * Oracle Database (version 12 and above)
@@ -35,7 +36,7 @@ The following data sources support DirectQuery in Power BI:
 * Teradata Database
 * Vertica (Beta)
 
-Data sources that are have **(Beta)** or **(Preview)** after their name are subject to change, and are not supported for production use. They might also not be supported after publishing a report to the **Power BI service**, which means that  that opening a published report or exploring the dataset can result in an error.
+Data sources that have **(Beta)** or **(Preview)** after their name are subject to change, and are not supported for production use. They might also not be supported after publishing a report to the **Power BI service**, which means that opening a published report or exploring the dataset can result in an error.
 
 The only difference between **(Beta)** and **(Preview)** data sources is that **(Preview)** sources must be enabled as a Preview feature before they become available for use. To enable a **(Preview)** data connector, in **Power BI Desktop** go to **File > Options and Settings > Options**, and then select **Preview features**.
 
@@ -57,11 +58,11 @@ The following table specifies whether an **On-premises data gateway** is require
 | Amazon Redshift |No |
 | Impala (version 2.x) |Yes |
 | Snowflake |Yes |
-| Spark (beta), version 0.9 and later |Not yet supported in the **Power BI service** |
+| Spark (beta), version 0.9 and later |Yes |
 | Azure HDInsight Spark (Beta) |No |
 | IBM Netezza |Yes |
-| SAP Buisness Warehouse Application Server |Yes |
-| SAP Buisness Warehouse Message Server |Not yet supported in the **Power BI service** |
+| SAP Business Warehouse Application Server |Yes |
+| SAP Business Warehouse Message Server |Not yet supported in the **Power BI service** |
 | Google BigQuery |No |
 
 

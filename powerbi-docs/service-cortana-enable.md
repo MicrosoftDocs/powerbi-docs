@@ -1,14 +1,14 @@
 ---
 title: Activate Cortana for Power BI
 description: Use Cortana with Power BI to get answers from your data. Activate Cortana for each Power BI dataset and then enable Cortana to access your datasets from Windows devices.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/20/2017
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
 ---
@@ -71,7 +71,7 @@ You'll need to be running Windows 10 version 1511 or higher.
    * Open **Settings** > **Accounts**.
      
        ![Settings - Accounts](media/service-cortana-enable/power-bi-windows-accounts.png)
-   * Scroll to the bottom and select **Add a work or school account**. Or, from the **Accounts** page selet **Access work or school >Connect**.
+   * Scroll to the bottom and select **Add a work or school account**. Or, from the **Accounts** page select **Access work or school >Connect**.
      
      ![Add work account](media/service-cortana-enable/power-bi-add-work-account2.png)
 

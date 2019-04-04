@@ -5,7 +5,7 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
@@ -30,10 +30,10 @@ In Power BI, there are two ways you can connect to a live SQL Server Analysis Se
 3. Select **SQL Server Analysis Services** > **Connect**. 
    
    ![](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
-4. Select a server. If you don't see any servers listed here, it means either a gateway, and data source, are not configured, or your account is not listed in the **Users** tab of the data source, in the gateway. Check with your adminsitrator.
+4. Select a server. If you don't see any servers listed here, it means either a gateway, and data source, are not configured, or your account is not listed in the **Users** tab of the data source, in the gateway. Check with your administrator.
 5. Select the model you want to connect to. This could be either Tabular or Multidimensional.
 
-After you connect to the model, it will appear in your Power BI site in **My Workspace/Datasets**. If you were swtiched to a group workspace, then the dataset will appear within the group.
+After you connect to the model, it will appear in your Power BI site in **My Workspace/Datasets**. If you were switched to a group workspace, then the dataset will appear within the group.
 
 ![](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
 

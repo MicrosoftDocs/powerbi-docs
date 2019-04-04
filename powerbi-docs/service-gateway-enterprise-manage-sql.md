@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
@@ -25,7 +25,7 @@ You can download the gateway from the Power BI service. Select **Downloads** > *
 To add a gateway, simply [download](https://go.microsoft.com/fwlink/?LinkId=698861) and install the gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under **Manage gateways**.
 
 > [!NOTE]
-> **Manage gateways** will not show up until you are the admin of at least one gateway. This occurs when you are added as an admin to a gateway, or you install and configur a gateway yourself.
+> **Manage gateways** will not show up until you are the admin of at least one gateway. This occurs when you are added as an admin to a gateway, or you install and configure a gateway yourself.
 > 
 > 
 
@@ -56,7 +56,7 @@ You will then want to fill in the information for the data source which includes
 You will also need to choose an **Authentication Method**.  This can either be **Windows** or **Basic**.  You would want to choose **Basic** if you are going to use SQL Authentication instead of Windows Authentication. Then enter the credentials that will be used for this data source.
 
 > [!NOTE]
-> All queries to the data source will run using these credentials, unless Kerberos Single Sign On (SSO) is configured and enabled for the data source. With SSO, import datasets use the stored credentials, but DirectQuery datasets use the current Power BI user to execut the queries using SSO. For more information, see the main On-premises data gateway article to learn more about how [credentials](service-gateway-onprem.md#credentials) are stored, or the article describing how to [use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md).
+> All queries to the data source will run using these credentials, unless Kerberos Single Sign On (SSO) is configured and enabled for the data source. With SSO, import datasets use the stored credentials, but DirectQuery datasets use the current Power BI user to execut the queries using SSO. For more information, see the main On-premises data gateway article to learn more about how [credentials](service-gateway-onprem.md#credentials) are stored, or the article describing how to [use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](service-gateway-sso-kerberos.md).
 > 
 > 
 
@@ -119,6 +119,6 @@ If you are listed in the **Users** tab of the data source configured within the 
 * [On-premises data gateway](service-gateway-onprem.md)  
 * [On-premises data gateway - in-depth](service-gateway-onprem-indepth.md)  
 * [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)
-* [Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md). 
+* [Use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](service-gateway-sso-kerberos.md). 
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

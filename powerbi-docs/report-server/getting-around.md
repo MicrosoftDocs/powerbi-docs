@@ -1,15 +1,15 @@
 ---
 title: Manage content in the Power BI Report Server web portal
 description: Read about managing content in the Power BI Report Server web portal.
-author: maggiesMSFT
+author: markingmyname
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/24/2018
-ms.author: maggies
+ms.author: maghan
 
 ---
 # Manage content in the web portal 
@@ -34,9 +34,9 @@ The web portal application runs in a browser. When you start the web portal, the
     See this list of [supported web browsers and versions](browser-support.md).
 2. In the address bar, type the web portal URL.
    
-    By default, the URL is *http://[ComputerName]/reports*.
+    By default, the URL is <em>http://[ComputerName]/reports</em>.
    
-    The report server might be configured to use a specific port. For example, *http://[ComputerName]:80/reports* or *http://[ComputerName]:8080/reports*
+    The report server might be configured to use a specific port. For example, <em>http://[ComputerName]:80/reports</em> or <em>http://[ComputerName]:8080/reports</em>
    
     You see that the web portal groups items into these categories:
    

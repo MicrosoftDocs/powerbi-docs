@@ -2,6 +2,11 @@
 title: Microsoft Power BI Guided Learning
 description: Start your learning journey with this sequenced collection of courses, and understand the extensive and powerful capabilities of Microsoft Power BI.
 layout: LandingPage
+ms.service: powerbi
+ms.author: davidiseminger
+ms.date: 10/01/2018
+ms.topic: hub-page
+
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -27,25 +32,9 @@ layout: LandingPage
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=1">Introducing Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=2">Using Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">4m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=3">The building blocks of Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">6m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=4">A quick look at the Power BI service</a>
-                                <span style="margin-left: 32px; align-self: center;">9m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=5">Review and what's next</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
-                              </li>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/">Get started with Power BI using Microsoft Learn</a>
+                                <span style="margin-left: 32px; align-self: center;">47m</span>
+                              </li>                              
                           </ul>
                       </div>
                     </div>
@@ -271,7 +260,7 @@ layout: LandingPage
                                 <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=5">Create custom Q&A suggestions</a>
+                                <a class="barLink" href="exploringdata.yml?tutorial-step=5">Create custom Q&amp;A suggestions</a>
                                 <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
