@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 04/04/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -124,9 +124,9 @@ The next few sections provide an overview of the different types of tenant setti
 
 ## Workspace settings
 
-### Create workspaces (preview)
+### Create workspaces
 
-Users in the organization can create app workspaces to collaborate on dashboards, reports, and other content. [Learn more](service-create-the-new-workspaces.md)
+Users in the organization can create app workspaces to collaborate on dashboards, reports, and other content. [Learn more about app workspaces](service-create-the-new-workspaces.md)
 
 ## Export and sharing settings
 
@@ -362,7 +362,7 @@ The **Power BI Premium** tab enables you to manage any Power BI Premium capaciti
 
 ### Power BI Embedded
 
-The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](developer/azure-pbie-create-capacity.md) from **the Azure Portal**.
+The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](developer/azure-pbie-create-capacity.md) from **the Azure portal**.
 
 For more information about how to manage Power BI Embedded (A SKU) settings, see [What is Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
 
@@ -436,9 +436,9 @@ For more information, visit [Frequently asked questions about organizational cus
 
 By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md).
 
-## Workspaces (preview)
+## Workspaces
 
-As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. Note that the table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, legacy workspaces are of type **Group**, and modern workspaces are of type **Workspace**. For more information, see [Create the new workspaces (preview) in Power BI](service-create-the-new-workspaces.md).
+As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. The table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Create the new workspaces in Power BI](service-create-the-new-workspaces.md).
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
