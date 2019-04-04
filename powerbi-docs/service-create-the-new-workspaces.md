@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 04/03/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -46,7 +46,9 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
     
     Add a **Contact list**. By default, the workspace admins are the contacts. 
     
-    Specify a **Workspace OneDrive**. In this step, you're not creating a OneDrive location. You're specifying an existing location.
+    Specify a **Workspace OneDrive** by typing just the name of the OneDrive location, not the URL. In this step, you're not creating a OneDrive location. You're specifying an existing location. 
+
+    ![Specify a OneDrive location](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
     Assign the workspace to a **Dedicated capacity**.
      
@@ -81,7 +83,7 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
 After you've created an new workspace experience workspace, it's time to add content to it. Adding content is similar in the new and classic workspaces. Use the Create button or use Get Data to add content to your workspace.
 
 > [!NOTE]
-> The new workspaces, you can't consume organizational content packs, or third-party content packs. Apps are available for all 3rd-party content packs you previously used. Use classic workspaces if you need to continue using content packs. Content packs are deprecated and will be removed in the future, so it is best practice to use Apps instead.
+> In the new workspaces, you can't consume organizational content packs, or third-party content packs. Apps are available for all third-party content packs you previously used. Use classic workspaces if you need to continue using content packs. Content packs are deprecated and will be removed in the future, so it's a best practice to use apps instead.
 
 When you view content in the content list of an app workspace, the app workspace name is listed as the owner.
 
@@ -95,9 +97,12 @@ In the new workspace experience, you can't create or consume organizational cont
 
 ## Distribute an app
 
-If you want to distribute official content to a large audience within your organization, you can publish an app from your workspace.  When the content is ready, you choose which dashboards and reports you want to publish, and then  publish it as an *app*. You can create one app from each workspace. Your
+If you want to distribute official content to a large audience within your organization, you can publish an app from your workspace.  When the content is ready, you choose which dashboards and reports you want to publish, and then publish it as an *app*. You can create one app from each workspace.
 
-coworkers can get your app in a few different ways. The Apps list in the left navigation shows all apps installed for a users. You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your app from Microsoft AppSource, or you can send them a direct link. 
+The Apps list in the left navigation shows all the apps you've installed. Your coworkers can get your app in a few different ways. 
+- They can find and install your app from Microsoft AppSource
+- You can send them a direct link. 
+- You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. 
 
 Users see updated app content automatically after you publish an update from your workspace. You can control how frequently the data refreshes by setting the refresh schedule in the datasets used by the app content in your workspace. See [Publish an app from the new workspaces in Power BI](service-create-distribute-apps.md) for details.
 
