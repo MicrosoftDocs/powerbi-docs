@@ -34,6 +34,8 @@ With [slideshow](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-
 We changed report interaction so it will require only one tap on a visual, button, or slicer to interact with its data right away. Users will no longer need to tap on a visual to select it and to tap again to interact with it,  a single tap will do them both.
 (Note: existing users will need to turn on this behavior in the app setting. [How to configure single tap report interaction](/mobile-app-single-tap.md)).
 
+![Single tap interaction](./media/mobile-whats-new-in-the-mobile-apps/SingleTap.gif)
+
 ### Supporting PBI-RS reports over ADFS and WAP configuration (iOS only)
 
 Power BI Reports (PBIX) hosted in PBI-RS over ADFS configuration can now be accessed from Power BI iOS app.
