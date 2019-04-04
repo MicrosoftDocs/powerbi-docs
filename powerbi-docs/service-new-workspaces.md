@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/03/2019
+ms.date: 04/04/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -136,11 +136,6 @@ No. The new workspace experience GA only changes the default workspace type to t
 **Are workspaces still automatically created for Office 365 Groups**
 
 Yes. Since we support both types of workspaces side by side, we continue to list all Office 365 Groups the user has access to in the workspaces list.
-
-**How will the announced Viewer role work**
-
-The Viewer role will give read-only access to workspace content. Users with Read-only access will have row-level security (RLS) enforced. The Viewer role will become available at after GA.
-
 
 ## Next steps
 * [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)

@@ -7,7 +7,7 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/29/2019
+ms.date: 04/04/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -114,7 +114,7 @@ Here are things to keep in mind when pushing apps to end users:
 
 * If the user doesn’t immediately see the app in the Apps list, they should refresh or close and reopen their browser.
 
-* Try not to overwhelm users. Be careful not to push too may apps so your users perceive the pre-installed apps are useful to them. It’s best to control who can push apps to end users to coordinate timing. You can establish a point of contact for getting apps in your organization pushed to end users.
+* Try not to overwhelm users. Be careful not to push too many apps so your users perceive the pre-installed apps are useful to them. It’s best to control who can push apps to end users to coordinate timing. You can establish a point of contact for getting apps in your organization pushed to end users.
 
 * Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 
