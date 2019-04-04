@@ -15,7 +15,7 @@ ms.service: powerbi
    
      ![Create app workspace](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
    
-    This will be the place to put content that you and your colleagues collaborate on.
+    Here you'll put the content that you and your colleagues collaborate on.
 
 2. In the **You're creating an upgraded workspace** banner, click **Revert to classic**. 
 
@@ -23,11 +23,11 @@ ms.service: powerbi
 
 3. Give the workspace a name. If the corresponding **Workspace ID** isn't available, edit it to come up with a unique ID.
    
-     This will be the name of the app, too.
+     The app will have the same name.
    
      ![Name the workspace](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-name.png)
 
-3. You have a few options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. **Private**, on the other hand, means only members of the workspace can see its contents.
+3. You have a few options to set. If you choose **Public**, anyone in your organization can see what’s in the workspace. **Private** means only members of the workspace can see its contents.
    
      ![Set Private or Public](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-private-public.png)
    

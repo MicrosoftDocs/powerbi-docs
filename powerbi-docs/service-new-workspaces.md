@@ -32,7 +32,7 @@ Read about how to [create one of the new workspaces](service-create-the-new-work
 When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the workspace administration is in Power BI, not in Office 365. In the new workspace experience, you can now add an Office 365 group in the workspace access list to continue managing user access to content through Office 365 groups.
 
 ## Administering new workspace experience workspaces
-Administration for new workspace experience workspaces is now in Power BI, Power BI admins decide who in an organization can create workspaces. They can also manage and recover workspace. To to this they need to use use the Power BI admin portal or the PowerShell CmdLets. For classic workspaces based on Office 365 Groups, administration continues to occur in Office 365 admin portal and Azure Active Directory.
+Administration for new workspace experience workspaces is now in Power BI, Power BI admins decide who in an organization can create workspaces. They can also manage and recover workspace. To do this they need to use the Power BI admin portal or the PowerShell CmdLets. For classic workspaces based on Office 365 Groups, administration continues to occur in Office 365 admin portal and Azure Active Directory.
 
 In **Workspace settings** in the admin portal, admins can use the Create workspaces (new workspace experience) setting to allow everybody or nobody in an organization to create new workspace experience workspaces. They can also limit creation to members of specific security groups.
 
@@ -53,7 +53,7 @@ New, upgraded workspaces, and existing classic workspaces coexist side by side, 
 
 ## Roles in the new workspaces
 
-To grant access to a new workspaces, add user groups or individuals to one of the of the workspace roles: members, contributors, or admins. Everyone in a user group gets the role you’ve defined. If an individual is in several user groups, they get the highest level of permission provided by the roles they are assigned.
+To grant access to a new workspace, add user groups or individuals to one of the workspace roles: members, contributors, or admins. Everyone in a user group gets the role you’ve defined. If an individual is in several user groups, they get the highest level of permission provided by the roles they are assigned.
 
 Roles let you manage who can do what in a workspace, so teams can collaborate. New workspaces allow you to assign roles to individuals, and to user groups: security groups, Office 365 groups, and distribution lists. 
 
@@ -89,7 +89,7 @@ With the new workspaces, we're redesigning some features. Here are the changes y
 - You can consume an organizational content pack from a classic workspace. You can’t consume one from the new workspaces.
 
 ## Workspace contact list
-The new **Contact list** feature available under **Advanced** in **Workspace settings** or when creating workspaces allows you to specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can customize the list. Be aware that users or groups listed in the contact list will be shown in UI experiences in the future to help users get help related to the workspace. 
+The new **Contact list** feature available under **Advanced** in **Workspace settings** or when creating workspaces allows you to specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can customize the list. Users or groups listed in the contact list will be shown in the user interface (UI) to help users get help related to the workspace. 
 
 ## Workspace OneDrive
 The Workspace OneDrive feature allows you to configure the OneDrive file storage of an existing Office 365 group to be available to workspace users. Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Office 365 Group membership. The best practice is to manage workspace access through the same Office 365 Group whose OneDrive you configure in this setting. After you've configured the OneDrive, you can get to it from a few different places in the workspace:
@@ -131,7 +131,7 @@ No. Links to existing items in classic workspaces aren't affected by the new wor
 
 **Are existing workspaces upgraded to the new workspace experience with GA**
 
-No. The new workspace experience GA only change the default workspace type to the new workspace experience. Existing classic workspaces that are based on Office 365 Groups remain unchanged.
+No. The new workspace experience GA only changes the default workspace type to the new workspace experience. Existing classic workspaces that are based on Office 365 Groups remain unchanged.
 
 **Are workspaces still automatically created for Office 365 Groups**
 

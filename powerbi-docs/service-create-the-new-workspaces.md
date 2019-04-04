@@ -74,13 +74,13 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
 
 9. Select **Add** > **Close**.
 
-1. Power BI creates the workspace and opens it. You see it in the list of workspaces you’re a member of. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to workspace settings, adding new members, or changing their permissions. If you specified a Workspace Onedrive, a files option is shown as well.
+1. Power BI creates the workspace and opens it. You see it in the list of workspaces you’re a member of. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to workspace settings, adding new members, or changing their permissions. If you specified a Workspace OneDrive, a files option is shown as well.
 
      ![Edit settings and access for a workspace](media/service-create-the-new-workspaces/power-bi-edit-workspace.png)
 
 ## Add content to your app workspace
 
-After you've created an new workspace experience workspace, it's time to add content to it. Adding content is similar in the new and classic workspaces. Use the Create button or use Get Data to add content to your workspace.
+After you've created a new workspace experience workspace, it's time to add content to it. Adding content is similar in the new and classic workspaces. Use the Create button or use Get Data to add content to your workspace.
 
 > [!NOTE]
 > In the new workspaces, you can't consume organizational content packs, or third-party content packs. Apps are available for all third-party content packs you previously used. Use classic workspaces if you need to continue using content packs. Content packs are deprecated and will be removed in the future, so it's a best practice to use apps instead.
@@ -108,7 +108,7 @@ Users see updated app content automatically after you publish an update from you
 
 
 ## Next steps
-* Read about [organizing work in the new workspaces experienc in Power BI](service-new-workspaces.md)
+* Read about [organizing work in the new workspaces experience in Power BI](service-new-workspaces.md)
 * [Create classic workspaces](service-create-workspaces.md)
 * [Publish an app from the new workspaces in Power BI](service-create-distribute-apps.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
