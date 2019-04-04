@@ -794,6 +794,11 @@
             "source_path": "powerbi-docs/developer/embed-sample-for-customers-sovereign-clouds.md",
             "redirect_url": "/power-bi/developer/embed-sample-for-customers-national-clouds",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/walkthrough-push-data-register-app-with-azure-ad.md",
+            "redirect_url": "/power-bi/developer/register-app",
+            "redirect_document_id": false
         }
     ]
 }
