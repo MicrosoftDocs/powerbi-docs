@@ -140,7 +140,6 @@ Let's look at the count of IDs. Each customer row has a count of support tickets
 
 ![Influence of Support Ticket ID](media/power-bi-visualization-influencers/power-bi-support-ticket.png)
 
-![Change from categorical to continuous](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
 
 ## Interpret the results: Top segments 
  
