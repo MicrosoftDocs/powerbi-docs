@@ -141,7 +141,6 @@ Let's look at the count of IDs. Each customer row has a count of support tickets
 ![Influence of Support Ticket ID](media/power-bi-visualization-influencers/power-bi-support-ticket.png)
 
 
-
 ## Interpret the results: Top segments 
  
 You can use the **Key influencers** tab to assess each factor individually. You also can use the **Top segments** tab to see how a combination of factors affects the metric that you're analyzing. 
@@ -156,6 +155,53 @@ In this group, 74.3% of the customers gave a low rating. The average customer ga
 
 ![Select first top segment](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
 
+## Working with numerical data
+
+If you move a numerical field into the **Analyze** field, you have a choice how to handle that scenario. You can change the behavior of the visual by going into the **Formatting Pane** and switching between **Categorical Analysis Type** and **Continuous Analysis Type**.
+
+![Change from categorical to continuous](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
+
+A **Categorical Analysis Type** behaves as described above. For instance, if you were looking at survey scores ranging from 1 to 10, you could ask ‘What influences Survey Scores to be 1?’
+
+A **Continuous Analysis Type** changes the question to a continuous one. In the example above, our new question would be ‘What influences Survey Scores to increase/decrease?’
+
+This distinction is very helpful when you have lots of unique values in the field you are analyzing. In the example below we look at house prices. It is not very meaningful to ask ‘What influences House Price to be 156,214?’ as that is very specific and we are likely not to have enough data to infer a pattern.
+
+Instead we may want to ask, ‘What influences House Price to increase’? which allows us to treat house prices as a range rather than distinct values.
+
+![Numeric question](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
+
+## Interpret the results: Key influencers 
+
+In this scenario we look at ‘What influences House Price to increase’. We are looking at a number of explanatory factors that could impact a house price like **Year Built** (year the house was built), **KitchenQual** (kitchen quality) and **YearRemodAdd** (year the house was remodeled). 
+
+In the example below we look at our top influencer which is kitchen quality being Excellent. The results are very similar to the ones we saw when we were analyzing categorical metrics with a few important differences:
+
+- The column chart on the right is looking at the averages rather than percentages. It therefore shows us what the average house price of a house with an excellent kitchen is (green bar) compared to the average house price of a house without an excellent kitchen (dotted line)
+- The number in the bubble is still the difference between the red dotted line and green bar but it’s expressed as a number ($158.49K) rather than a likelihood (1.93x). So on average, houses with excellent kitchens are almost $160K more expensive than houses without excellent kitchens.
+
+![Numeric target categorical influencers](media/power-bi-visualization-influencers/power-bi-ki-numeric-categorical.png)
+
+In the example below we are looking at the impact a continuous factor (year house was remodeled) has on house price. The differences compared to how we analyze continuous influencers for categorical metrics are as follows:
+
+-	The scatter plot in the right pane plots the average house price for each distinct value of year remodeled. 
+-	The value in the bubble shows by how much the average house price increases (in this case $2.87k) when the year the house was remodeled increases by its standard deviation (in this case 20 years)
+
+![Numeric target continuous influencers](media/power-bi-visualization-influencers/power-bi-ki-numeric-continuous.png)
+
+Finally, in the case of measures we are looking at the average year a house was built. The analysis here is as follows:
+
+-	The scatterplot in the right pane plots the average house price for each distinct value in the table
+-	The value in the bubble shows by how much the average house price increases (in this case $1.35K) when the average year increases by its standard deviation (in this case 30 years)
+
+![Numeric target measures influencers](media/power-bi-visualization-influencers/power-bi-ki-numeric-measures.png)
+
+## Interpret the results: Top Segments
+
+Top segments for numerical targets show groups where the house prices on average are higher than in the overall dataset. For example, below we can see that **Segment 1** is made up of houses where **GarageCars** (number of cars the garage can fit) is greater than 2 and the **RoofStyle** is Hip. Houses with those characteristics have an average price of $355K compared to the overall average in the data which is $180K.
+
+![Numeric target measures influencers](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
+
 ## Considerations and troubleshooting 
  
 **What are the limitations for the preview?** 
@@ -167,7 +213,9 @@ The key influencers visual is currently in public preview, and it has some limit
 - RLS support.
 - Direct Query support.
 - Live Connection support.
- 
+
+![Numeric question](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
+
 **I see an error that no influencers or segments were found. Why is that?** 
 
 ![No influencers found error](media/power-bi-visualization-influencers/power-bi-error1.png)
@@ -175,7 +223,7 @@ The key influencers visual is currently in public preview, and it has some limit
 
 This error occurs when you included fields in **Explain by** but no influencers were found. 
 - You included the metric you were analyzing in both **Analyze** and **Explain by**. Remove it from **Explain by**. 
-- Your explanatory fields have too many categories with few observations. This situation makes it hard for the visualization to determine which factors are influencers. It’s hard to generalize based on only a few observations.
+- Your explanatory fields have too many categories with few observations. This situation makes it hard for the visualization to determine which factors are influencers. It’s hard to generalize based on only a few observations. If you are analyzing a numeric field you may want to switch from **Categorical Analysis** to **Continuous Analysis** in the **Formatting Pane** under the **Analysis** card.
 - Your explanatory factors have enough observations to generalize, but the visualization didn't find any meaningful correlations to report.
  
 **I see an error that the metric I'm analyzing doesn't have enough data to run the analysis on. Why is that?** 
@@ -185,7 +233,9 @@ This error occurs when you included fields in **Explain by** but no influencers 
 The visualization works by looking at patterns in the data for one group compared to other groups. For example, it looks for customers who gave low ratings compared to customers who gave high ratings. If the data in your model has only a few observations, patterns are hard to find. If the visualization doesn’t have enough data to find meaningful influencers, it indicates that more data is needed to run the analysis. 
 
 We recommend that you have at least 100 observations for the selected state. In this case, the state is customers who churn. You also need at least 10 observations for the states you use for comparison. In this case, the comparison state is customers who don't churn.
- 
+
+If you are analyzing a numeric field you may want to switch from **Categorical Analysis** to **Continuous Analysis** in the **Formatting Pane** under the **Analysis** card.
+
 **I see an error that a field in *Explain by* isn't uniquely related to the table that contains the metric I'm analyzing. Why is that?**
  
 The analysis runs on the table level of the field that's being analyzed. For example, if you analyze customer feedback for your service, you might have a table that tells you whether a customer gave a high rating or a low rating. In this case, your analysis is running at the customer table level. 
@@ -227,7 +277,9 @@ If the customer table doesn't have a unique identifier, you can't evaluate the m
  
 **I see a warning that the metric I'm analyzing has more than 10 unique values and that this amount might affect the quality of my analysis. Why is that?** 
 
-The AI visualization is optimized to analyze categories. For example, Churn is Yes or No, and Customer Satisfaction is High, Medium, or Low. Increasing the number of categories to analyze means there are fewer observations per category. This situation makes it harder for the visualization to find patterns in the data. 
+The AI visualization can analyze categorical fields and numeric fields.In the case of categoricals, an example may be Churn is Yes or No, and Customer Satisfaction is High, Medium, or Low. Increasing the number of categories to analyze means there are fewer observations per category. This situation makes it harder for the visualization to find patterns in the data. 
+
+When analyzing numeric fields you have a choice between treating the numeric fields like text in which case you will run the same analysis as you do for categorical data (**Categorical Analysis**). If you have lots of distinct values we recommend you switch the analysis to **Continuous Analysis** as that means we can infer patterns from when numbers increase or decrease rather than treating them as distinct values. You can switch from **Categorical Analysis** to **Continuous Analysis** in the **Formatting Pane** under the **Analysis** card.
 
 To find stronger influencers, we recommend that you group similar values into a single unit. For example, if you have a metric for price, you're likely to obtain better results by grouping similar prices into High, Medium, and Low categories vs. using individual price points. 
 
@@ -242,9 +294,9 @@ The reason for this determination is that the visualization also considers the n
 
 ![How influencers are determined](media/power-bi-visualization-influencers/power-bi-error5.png)
 
-**How do you calculate key influencers?**
+**How do you calculate key influencers for categorical analysis?**
 
-Behind the scenes, the AI visualization uses [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) to run a logistic regression to calculate the key influencers. A logistic regression is a statistical model that compares different groups to each other. 
+Behind the scenes, the AI visualization uses [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) to run  a logistic regression to calculate the key influencers. A logistic regression is a statistical model that compares different groups to each other. 
 
 If you want to see what drives low ratings, the logistic regression looks at how customers who gave a low score differ from the customers who gave a high score. If you have multiple categories, such as high, neutral, and low scores, you look at how the customers who gave a low rating differ from the customers who didn't give a low rating. In this case, how do the customers who gave a low score differ from the customers who gave a high rating or a neutral rating? 
  
@@ -252,10 +304,17 @@ The logistic regression searches for patterns in the data and looks for how cust
  
 The logistic regression also considers how many data points are present. For example, if customers who play an admin role give proportionally more negative scores but there are only a few administrators, this factor isn't considered influential. This determination is made because there aren't enough data points available to infer a pattern. A statistical test, known as a Wald test, is used to determine whether a factor is considered an influencer. The visual uses a p-value of 0.05 to determine the threshold. 
 
+**How do you calculate key influencers for numeric analysis?**
+
+Behind the scenes, the AI visualization uses [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) to run a linear regression to calculate the key influencers. A linear regression is a statistical model that looks at how the outcome of the field you are analyzing changes based on your explanatory factors.
+
+For example, if we are analyzing house prices, a linear regression will look at the impact having an excellent kitchen will have on the house price. Do houses with excellent kitchens generally have lower or higher house prices compared to houses without excellent kitchens?
+
+The linear regression also considers the number of data points. For example, if houses with tennis courts have higher prices but we  have very few houses that have a tennis court, this factor is not considered influential. This determination is made because there aren't enough data points available to infer a pattern. A statistical test, known as a Wald test, is used to determine whether a factor is considered an influencer. The visual uses a p-value of 0.05 to determine the threshold. 
 
 **How do you calculate segments?**
 
-Behind the scenes, the AI visualization uses [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) to run a decision tree to find interesting subgroups. The objective of the decision tree is to end up with a subgroup of data points that's relatively high in the metric you're interested in. In this case, it's customers who gave a low rating. 
+Behind the scenes, the AI visualization uses [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) to run a decision tree to find interesting subgroups. The objective of the decision tree is to end up with a subgroup of data points that's relatively high in the metric you're interested in. This could be customers with low ratings or houses with high prices.
 
 The decision tree takes each explanatory factor and tries to reason which factor gives it the best *split*. For example, if you filter the data to include only large enterprise customers, will that separate out customers who gave a high rating vs. a low rating? Or perhaps is it better to filter the data to include only customers who commented about security? 
 
