@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/05/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -158,12 +158,13 @@ Each of the sample content packs is also available as an Excel workbook. The Exc
 Want to understand how the data in an Excel workbook gets converted to Power BI datasets and reports? Opening the Excel samples ***in Excel*** and exploring the worksheets provides some of the answers.
 
 * When you first open a sample workbook in Excel, you may see two warnings. The first says the workbook is in Protected View. Select **Enable Editing**. The second may say that the workbook has external data connections. Select **Enable Content**.
-* Each workbook contains several sheets. Because these Excel samples all have at least one Power View sheet with visualizations, when you import the Excel file into Power BI you'll end up with a dataset **and** a report.
+* Each workbook contains several Power View sheets. If you want to see the Power View sheets in Excel, You need to [enable the Power View add-in](https://support.office.com/article/flash-silverlight-and-shockwave-controls-blocked-in-microsoft-office-55738f12-a01d-420e-a533-7cef1ff6aeb1) by downloading a package of registry keys.
+* So where's the actual data? It's in the Power Pivot data model. You don't need the Power View sheets to see the data. On the **PowerPivot** tab, select **Manage**.
 
-   You may need to [enable the Power View add-in](https://support.office.com/article/Create-a-Power-View-sheet-in-Excel-2013-B23D768D-7586-47FE-97BD-89B80967A405#__toc328591957).
-* So where's the actual data? It's in the Power Pivot data model. To see the data, on the **PowerPivot** tab, select **Manage Data Model**.
+    Don't see the **Power Pivot** tab? [Enable the Power Pivot add-in](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8).
 
-    Don't see the PowerPivot tab? [Enable the Power Pivot add-in](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8).
+    In Power Pivot, you can see the data in all the underlying tables, plus all the DAX formulas. 
+
 * The Info tab provides information about obviEnce, the company that created the sample.
 
 ## The Power BI samples as .pbix files
