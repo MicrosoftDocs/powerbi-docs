@@ -122,6 +122,14 @@ Settings can have three states:
 
 The next few sections provide an overview of the different types of tenant settings.
 
+## Help and support settings
+
+### Publish "Get Help" information
+
+Users in the organization can go to internal help and support resources from the Power BI help menu. Specifically, these parameters change the behavior of the Learn, Community, and Get help menu items.
+
+It is also possible to specify a URL to direct users to a custom solution for licensing requests. This parameter customizes the target URL of the Upgrade account button that a user without a Power BI Pro license can find in the Update to Power BI Pro dialog box as well as in the Manage personal storage page.
+
 ## Workspace settings
 
 ### Create workspaces
@@ -130,7 +138,7 @@ Users in the organization can create app workspaces to collaborate on dashboards
 
 ## Export and sharing settings
 
-### Share content to external users
+### Share content with external users
 
 Users in the organization can share dashboards with users outside the organization. [Learn more](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
 
@@ -205,9 +213,9 @@ The following image shows the **My entire organization** option when creating a 
 
 ![Publish content pack to organization](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### Create template apps
+### Create template organizational content packs and apps
 
-Users in the organization can create template apps that use datasets built in Power BI Desktop. Learn more about [template apps](template-content-pack-authoring.md)
+Users in the organization can create template content packs and apps that use datasets built on one data source in Power BI Desktop. Learn more about [template apps](template-content-pack-authoring.md)
 
 ### Push apps to end users
 
@@ -331,6 +339,13 @@ Users in the organization can tag dashboards with classifications that indicate 
 
 Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](developer/embedding.md)
 
+### Allow service principals to use Power BI APIs
+
+Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access Power BI APIs without a signed in user. To allow an app to use service principal authentication its service principal must be included in an allowed security group. [Learn more](developer/embed-service-principal.md)
+
+> [!NOTE]
+> Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions, create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
+
 ## Dataflow settings
 
 ### Create and use dataflows
@@ -346,11 +361,18 @@ Two settings control template apps.
 
 ![Power BI admin portal template apps settings](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
 
-The first setting, **Create template apps**, controls who in your organization can create template apps. Template app creators can then distribute them to clients outside your organization by way of AppSource or other distribution method.
+### Create Template Apps (preview)
+
+Users in the organization can create template apps. Template app creators can then distribute them to clients outside your organization by way of AppSource or other distribution methods.
 
 ![Power BI admin portal, Create template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
 
-With the second setting, **Install template apps**, you control who in your organization can download and install template apps from AppSource or another source
+### Install template apps (preview)
+
+Users in the organization can download and install template apps from AppSource or another source.
+
+> [!NOTE]
+> This setting determines which users can install template apps on their Power BI accounts.
 
 ## Capacity settings
 
