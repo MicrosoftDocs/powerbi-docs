@@ -20,7 +20,7 @@ Whitepapers allow you to explore Power BI topics at a deeper level. Here you can
 | --- | --- | --- |
 | [Power BI and Dataflows](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| This whitepaper describes dataflows in technical detail, and describes the capabilities and initiatives behind dataflow features and functionality. | November 2018 |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Describes Power BI Premium, both as it exists when launched and also how it will evolve. | October 2017 |
-| [Power BI Premium Planning and Deployment](whitepaper-powerbi-premium-deployment.md)| This paper provides guidance and best practices for planning and deploying Premium capacity for well-defined workloads.| March 2018 |
+| [Power BI Premium Planning and Deployment](whitepaper-powerbi-premium-deployment.md)| This paper provides guidance and best practices for planning and deploying Premium capacity for well-defined workloads.| March 2019 |
 | [Plan capacity for embedded analytics with Power BI Premium](https://aka.ms/pbiewhitepaper) |This paper provides guidance for the app developer/ISV to determine the most appropriate capacity for its business. | October 2017 |
 | [Planning a Power BI Enterprise Deployment](https://go.microsoft.com/fwlink/?linkid=2057861) |This technical whitepaper outlines considerations for a well-performing and secure organizational Power BI deployment. | July 2018 |
 | [Capacity planning guidance for Power BI Report Server](report-server/capacity-planning.md) |This paper aims to offer guidance on capacity planning for Power BI Report Server by sharing results of numerous load test executions of various workloads against a report server. | March 2018 |
