@@ -73,7 +73,7 @@ The cloud services only know about accounts within Azure Active Directory. It do
 
 1. You can add accounts manually to Azure Active Directory.
    
-   You can create an account on the Azure portal, or within the Office 365 Admin Portal, and the account name matches the UPN of the local Active Directory account.
+   You can create an account on the Azure portal, or within the Microsoft 365 admin center, and the account name matches the UPN of the local Active Directory account.
 2. You can use the [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) tool to synchronize local accounts to your Azure Active Directory tenant.
    
    The Azure AD Connect tool provides options for directory synchronization and setting up authentication, including password hash sync, pass-through authentication, and federation. If you are not a tenant admin or a local domain administrator, you will need to contact your IT admin to get this configured.
@@ -86,7 +86,7 @@ Using Azure AD Connect ensures that the UPN will match between AAD and your loca
 > 
 
 ## Now, this is where the gateway comes in
-The gateway acts as a bridge between the cloud and your on-premises server. Data transfer between the cloud and the gateway is secured through [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview). The Service Bus creates a secure channel between the cloud and your on-premises server through an outbound connection on the gateway.  There are no inbound connections that you need to open on your on-premises firewall.
+The gateway acts as a bridge between the cloud and your on-premises server. Data transfer between the cloud and the gateway is secured through [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview). The Service Bus creates a secure channel between the cloud and your on-premises server through an outbound connection on the gateway.  There are no inbound connections that you need to open on your on-premises firewall. Power BI manages the Service Bus for you, so there are no additional costs or configuration steps required.
 
 If you have an Analysis Services data source, you’ll need to install the gateway on a computer joined to the same forest/domain as your Analysis Services server.
 

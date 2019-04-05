@@ -1,16 +1,15 @@
 ---
 title: Certified Power BI custom visuals
 description: Requirements and process to submit a custom visual for certification. And a list of already certified custom visuals.
-author: markingmyname
-ms.author: maghan
+author: sranins
+ms.author: rasala
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: maghan
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 11/21/2018
+ms.date: 03/10/2019
 ---
 
 # Certified custom visuals
@@ -42,7 +41,7 @@ To get your custom visual [certified](#certified-custom-visuals), make sure your
 
 * Microsoft AppSource approved. Your custom visual should be in our [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
 * Custom visual is written with versioned API 1.2 or higher.
-* Code repository available for review by Power BI team (for instance, source code (JavaSCriptS or TypeScript) in human readable format available to us, through GitHub).
+* Code repository available for review by Power BI team (for instance, source code (JavaScript or TypeScript) in human readable format available to us, through GitHub).
 
     >[!Note]
     > You don’t have to publicly share your code in Github.
@@ -70,6 +69,7 @@ To submit a custom visual for certification:
 
 | Link to AppSource | Link to video |
 | --- | --- |
+| [3AG Systems - Bar Chart With Relative Variance](https://appsource.microsoft.com/en/product/power-bi-visuals/WA104381912) | |
 | [3AG Systems - Column Chart With Relative Variance](https://appsource.microsoft.com/product/power-bi-visuals/WA104381803) | |
 | [Advanced Donut Visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104381941) | |
 | [Advanced Network Visualization](https://appsource.microsoft.com/product/power-bi-visuals/WA104381942) | |
@@ -162,6 +162,10 @@ To submit a custom visual for certification:
 | [User List by CloudScope](https://appsource.microsoft.com/product/power-bi-visuals/WA104381426) | |
 | [Waffle Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104381049) | [Video](https://youtu.be/1vRqYUsm3Vk) |
 | [Word Cloud](https://appsource.microsoft.com/product/power-bi-visuals/WA104380752) | [Video](https://youtu.be/AblTenl9fqo) |
+
+## FAQ
+
+For more information about visuals, see [Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.md#certified-custom-visuals).
 
 ## Next steps
 

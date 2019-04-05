@@ -60,6 +60,8 @@
         href: ../power-bi-visualizations-arcgis.md
     - name: Common tasks
       items: 
+      - name: "Look up the content owner and last refreshed date"
+        href: end-user-fresh.md
       - name: "Different ways to zoom into content using Focus and Full screen modes"
         href: end-user-focus.md
       - name: "Favorite dashboards, reports, and apps in Power BI"
@@ -80,8 +82,10 @@
         href: end-user-insights.md
     - name: Get data
       items: 
-      - name: "Install and use apps"
+      - name: "Apps in Power BI"
         href: end-user-apps.md
+      - name: "Install and use apps"
+        href: end-user-app-view.md
       - name: "Connect to services"
         href: end-user-connect-to-services.md
     - name: Ask questions of your data
@@ -170,6 +174,8 @@
         href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
       - name: "View reports optimized for your phone"
         href: mobile/mobile-apps-view-phone-report.md
+      - name: "Access content from an external organization"
+        href: mobile/mobile-apps-b2b.md
       - name: "Scan a Power BI QR code from your phone"
         href: mobile/mobile-apps-qr-code.md
       - name: "Annotate and share in the mobile apps"

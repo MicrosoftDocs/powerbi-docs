@@ -1,17 +1,16 @@
 ---
 title: "Paginated reports in Power BI: FAQ (Preview)"
 description: This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. 
-author: maggiesMSFT
+author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.author: maggies
-
 ---
+
 # Paginated reports in Power BI: FAQ (Preview)
 
 This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
@@ -114,7 +113,7 @@ You get an error message if you try to upload a file that has an unsupported fea
 
 ### What data sources do you support currently for paginated reports?
 
-We support Azure SQL Database, SQL Server and both SQL Server Analysis Services (SSAS) tabular (DAX) and multidimensional (MDX) models using the on-premises Gateway.
+We support Azure Analysis Services (via SSO), Azure SQL Database, SQL Server and both SQL Server Analysis Services (SSAS) tabular (DAX) and multidimensional (MDX) models using the on-premises Gateway.
 
 When accessing SSAS through the Gateway, the user whose credentials are stored needs elevated permissions in SSAS to work through the Gateway.
 

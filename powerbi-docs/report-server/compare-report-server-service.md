@@ -2,16 +2,17 @@
 title: Comparing Power BI Report Server and the Power BI service
 description: This article compares the features of Power BI Report Server and the Power BI service.
 keywords: 
-author: maggiesMSFT
-ms.author: maggies
-ms.date: 02/06/2019
+author: markingmyname
+ms.author: maghan
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
+ms.date: 02/06/2019
 #customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
 ---
+
 # Comparing Power BI Report Server and the Power BI service
 
 Power BI Report Server and the Power BI service have many similarities and some key differences. This table explains which is which.
@@ -51,7 +52,5 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Power BI Desktop | Version optimized for Report Server, available for download with Report Server | Version optimized for Power BI Service, available from the Windows Store | [Power BI Desktop for the report server](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop for the Power BI service](http://aka.ms/pbidesktopstore) |
 
 ## Next steps
+
 [Install Power BI Report Server](install-report-server.md)  
-
-
-

@@ -7,7 +7,7 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/24/2018
+ms.date: 04/04/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -18,14 +18,14 @@ In Power BI, you can publish *apps* with collections of related dashboards and r
 
 ![Power BI apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
+**Did you know?** Power BI has released the new workspace experience. Read [Create the new workspaces](service-create-the-new-workspaces.md) to understand how these new workspaces work. 
+
 Your business users often need multiple Power BI dashboards and reports to run their business. With Power BI apps, you can create collections of dashboards and reports and publish these apps to your whole organization or to specific people or groups. For you as a report creator or admin, apps make it easier to manage permissions on these collections.
 
 Business users get your apps in a few different ways. If the Power BI administrator gives you permission, you can install apps automatically in your coworkers' Power BI accounts. Otherwise, they can install your apps from Microsoft AppSource, or you can send them a direct link. They can easily find and return to your content because it’s all in one place. They can’t modify the contents of the app, but they can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. They get updates automatically and you can control how frequently the data refreshes. Read more about the [app experience for business users](consumer/end-user-apps.md).
 
-**Did you know?** Power BI is previewing a new workspace experience. Read [Create the new workspaces (preview)](service-create-the-new-workspaces.md) to see how workspaces will change in the future. 
-
 ## Apps and organizational content packs
-Apps are the evolution of organizational content packs. Content packs aren't available in the new workspace experiences preview. After the new workspace experience is generally available, you won't be able to use content packs in newly created workspaces. If you haven't already, start migrating your content packs to apps.
+Apps are the evolution of organizational content packs. Content packs aren't available in the new workspace experiences. You cannot create, publish, or install content packs in the new workspace experience. If you haven't already, start migrating your content packs to apps.
 
 ## Video: Apps and app workspaces
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -78,6 +78,9 @@ After you publish your app, you may want to change or update it. It’s easy to 
 2. Open the dashboard or the report. You see that you can make any changes you want.
    
      The app workspace is your staging area, so your changes aren't live in the app until you publish again. This lets you make changes without affecting the published apps.  
+
+    > [!IMPORTANT]
+    > If you remove a report and republish the app, even if you add the report back to the app, your app consumers lose all customizations such as bookmarks, comments, etc.  
  
 3. Go back to the app workspace list of contents and select **Update app**.
    
@@ -111,12 +114,16 @@ Here are things to keep in mind when pushing apps to end users:
 
 * If the user doesn’t immediately see the app in the Apps list, they should refresh or close and reopen their browser.
 
-* Try not to overwhelm users. Be careful not to push too may apps so your users perceive the pre-installed apps are useful to them. It’s best to control who can push apps to end users to coordinate timing. You can establish a point of contact for getting apps in your organization pushed to end users.
+* Try not to overwhelm users. Be careful not to push too many apps so your users perceive the pre-installed apps are useful to them. It’s best to control who can push apps to end users to coordinate timing. You can establish a point of contact for getting apps in your organization pushed to end users.
 
-* Guest users who have not accepted an invite won't get apps automatically installed for them.  
+* Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 
 ## Unpublish an app
 Any member of an app workspace can unpublish the app.
+
+>[!IMPORTANT]
+>When you unpublish an app, app users lose their customizations. They lose any personal bookmarks, comments, or subscriptions associated with content in the app. Only unpublish an app if you need to remove it.
+> 
 
 * In an app workspace, select the ellipsis (**...**) in the upper-right corner > **Unpublish app**.
   

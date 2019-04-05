@@ -34,12 +34,18 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 
 1. In a list of dashboards or reports, or in an open dashboard or report, select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png).
 
-1. In the top box, enter the full email addresses for individuals, distribution groups, or security groups. You can't share with dynamic distribution lists. 
+2. In the top box, enter the full email addresses for individuals, distribution groups, or security groups. You can't share with dynamic distribution lists. 
    
    You can share with people whose addresses are outside your organization, but you'll see a warning.
    
    ![Warning about sharing externally](media/service-share-dashboards/power-bi-share-dialog-warning.png) 
  
+   >[!NOTE]
+   >The input box supports at most 100 users or groups. You can share multiple times or share with a user group if you need to share with large numbers of users.
+   > 
+   > 
+
+
 3. Add a message if you want. It's optional.
 4. To let your coworkers share your content with others, check **Allow recipients to share your dashboard/report**.
    
@@ -55,7 +61,7 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
    
    ![Shared with me list page](media/service-share-dashboards/power-bi-shared-with-me-dashboards-reports.png)
    
-   When recipients outside your organization click the link, they see the dashboard or report, but not in the usual Power BI portal. See [Share with people outside your organization](service-share-dashboards.md#share-a-dashboard-with-people-outside-your-organization) below for details.
+   When recipients outside your organization click the link, they see the dashboard or report, but not in the usual Power BI portal. For more information, see [Share a dashboard or report with people outside your organization](#share-a-dashboard-or-report-with-people-outside-your-organization) below.
 
 ## Who has access to a dashboard or report you shared?
 Sometimes you need to see the people you've shared with, and see who they've shared it with.
@@ -94,13 +100,15 @@ When you share with people outside your organization, they get an email with a l
 
 After they sign in, they see the shared dashboard or report in its own browser window without the left navigation pane, not in their usual Power BI portal. They have to bookmark the link to access this dashboard or report in the future.
 
-They can't edit any content in this dashboard or report. They can interact with the charts and change filters or slicers in the report, but can't save their changes.
+They can't edit any content in this dashboard or report. They can interact with the charts and change filters or slicers in the report, but can't save their changes. 
 
 Only your direct recipients can see the shared dashboard or report. For example, if you sent the email to Vicki@contoso.com, only Vicki can see the dashboard. No-one else can see that dashboard, even if they have the link, and Vicki has to use the same email address to access that dashboard. If she signs up with any other email address, she won't have access to the dashboard either.
 
 People outside your organization can't see any data at all if role- or row-level security is implemented on on-premises Analysis Services tabular models.
 
 If you send a link from a Power BI mobile app to people outside your organization, when they click the link the dashboard opens in a browser, not in the Power BI mobile app.
+
+If the guest users is enabled using the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#export-and-sharing-settings) the default consumption only experience will not apply to them. [Learn more](service-admin-azure-ad-b2b.md)
 
 ## Limitations and considerations
 Things to keep in mind about sharing dashboards and reports:
@@ -113,6 +121,7 @@ Things to keep in mind about sharing dashboards and reports:
 * Coworkers who have the same email domain as you, and coworkers whose domain is different but registered within the same tenant, can share the dashboard with others. For example, say the domains contoso.com and contoso2.com are registered in the same tenant. If your email address is konrads@contoso.com, then both ravali@contoso.com and gustav@contoso2.com can share, as long as you gave them permission to share.
 * If your coworkers already have access to a specific dashboard or report, you can send a direct link just by copying the URL when you're on the dashboard or report. For example: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`
 * Likewise if your coworkers already have access to a specific dashboard, you can [send a direct link to the underlying report](service-share-reports.md). 
+* You can share with at most 100 users or groups in a single share action. However, you can give more than 500 users access to an item. To do this, either can share multiple times specifying the users individually, or share with a user group that contains all the users.
 
 ## Troubleshoot sharing
 

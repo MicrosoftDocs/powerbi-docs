@@ -1,8 +1,8 @@
 ---
 title: What's new in Power BI Report Server
 description: Learn about what's new in Power BI Report Server. This covers the major feature areas and is updated as new items are released.
-author: maggiesMSFT
-ms.author: maggies
+author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -37,6 +37,10 @@ Support for these features in Power BI reports:
 
 **Accessibility features**
 Too many accessibility features to list: for example, [fields list pane accessibility support](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). The fields list pane is fully accessible. You can navigate around the pane using just your keyboard and a screen reader and use the context menu to add fields to your report page.
+
+#### Custom Visuals
+
+- The API version shipped with this release is 2.3.
 
 ### Administrator settings
 
@@ -290,7 +294,7 @@ Administrators can set the following properties in SSMS Advanced Properties for 
 
 **Config file rsreportserver.config**
 
-```
+```xml
 <Configuration>
   <Service>
     <PollingInterval>10</PollingInterval>

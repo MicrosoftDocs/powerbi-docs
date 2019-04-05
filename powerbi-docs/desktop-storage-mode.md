@@ -1,5 +1,5 @@
 ---
-title: Use storage mode in Power BI Desktop (preview)
+title: Use storage mode in Power BI Desktop
 description: Use storage mode to control whether data is cached in-memory for reports in Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 02/26/2019
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
 ---
 
-# Storage mode in Power BI Desktop (preview)
+# Storage mode in Power BI Desktop
 
 In Microsoft Power BI Desktop, you can specify the *storage mode* of tables. *Storage mode* lets you control whether Power BI Desktop caches table data in-memory for reports. 
 
@@ -34,9 +34,9 @@ Setting the storage mode provides many advantages. You can set storage mode for 
 
 The storage mode setting in Power BI Desktop is one of three related features:
 
-* **Composite models**: Allows a report to have two or more data connections, including DirectQuery connections or Import, in any combination. For more information, see [Composite models in Power BI Desktop (preview)](desktop-composite-models.md).
+* **Composite models**: Allows a report to have two or more data connections, including DirectQuery connections or Import, in any combination. For more information, see [Composite models in Power BI Desktop](desktop-composite-models.md).
 
-* **Many-to-many relationships**: With *composite models*, you can establish *many-to-many relationships* between tables. *Many-to-many relationships* removes requirements for unique values in tables. It also removes prior workarounds, such as introducing new tables only to establish relationships. For more information, see [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md).
+* **Many-to-many relationships**: With *composite models*, you can establish *many-to-many relationships* between tables. *Many-to-many relationships* removes requirements for unique values in tables. It also removes prior workarounds, such as introducing new tables only to establish relationships. For more information, see [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md).
 
 * **Storage mode**: You can now specify which visuals require a query to back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals, such as slicers, initiated queries that were sent to back-end sources. Storage mode is described further in this article.
 
@@ -124,13 +124,13 @@ The following query is interesting because it combines both columns. This query 
 ![Script for storage mode diagnostics](media/desktop-storage-mode/storage-mode_08.png)
 
 > [!NOTE]
-> This behavior is different from [many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md) when cached and non-cached tables are combined.
+> This behavior is different from [many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md) when cached and non-cached tables are combined.
 
 ## Caches should be kept in sync
 
 The queries displayed in the previous section show that **Dual** tables sometimes hit the cache and sometimes don't. As a result, if the cache is out of date, different values can be returned. Query execution will not attempt to mask data issues by, for example, filtering DirectQuery results to match cached values. It is your responsibility to know your data flows, and you should design accordingly. There are established techniques to handle such cases at the source, if necessary.
 
-The *Dual* storage mode is a performance optimization. It should be used only in ways that don't compromise the ability to meet business requirements. For alternative behavior, consider using the techniques described in the [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md) article.
+The *Dual* storage mode is a performance optimization. It should be used only in ways that don't compromise the ability to meet business requirements. For alternative behavior, consider using the techniques described in the [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md) article.
 
 ## Data view
 If at least one table in the dataset has its storage mode set to either **Import** or **Dual**, the **Data view** tab is displayed.
@@ -159,7 +159,7 @@ The existing limitations of using DirectQuery still apply when you use composite
 ## Next steps
 
 For more information about composite models and DirectQuery, see the following articles:
-* [Composite models in Power BI Desktop (preview)](desktop-composite-models.md)
-* [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md)
+* [Composite models in Power BI Desktop](desktop-composite-models.md)
+* [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md)
 * [Use DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data sources supported by DirectQuery in Power BI](desktop-directquery-data-sources.md)

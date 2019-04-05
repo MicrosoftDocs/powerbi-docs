@@ -133,10 +133,22 @@ In our continued effort to improve accessibility, the previous list of experienc
 | :------------------- | :------------------- |
 | Move focus to visual menu | Alt + Shift + F10 |
 | Show data | Alt + Shift +F11  |
+| Enter a visual | Ctrl + Right arrow |
+| Enter a layer | Enter |
+| Exit a layer or visual | Esc |
+| Select or unselect data point | Enter or Space |
+| Multi-select | Ctrl + Enter or Ctrl + Space |
+| Right click | <ul><li>Windows keyboard: Windows context key + F10.  The Windows context key is between the Left Alt key and the Left Arrow Key</li><li>Other keyboard: Shift + F10</li></ul> |
+| Clear selection | Ctrl + Shift + C |
 
 ### Pane Navigation
 | To do this           | Press                |
 | :------------------- | :------------------- |
+| Multi-select | Ctrl + Space |
+| Collapse a single table | Left arrow key |
+| Expand a single table | Right arrow key |
+| Collapse all tables | Alt + Shift + 1 |
+| Expand all tables | Alt + Shift + 9 |
 | Open a context menu | <ul><li>Windows keyboard: Windows context key + F10.  The Windows context key is between the Left Alt key and the Left Arrow Key</li><li>Other keyboard: Shift + F10</li></ul> |
 
 ### Slicer

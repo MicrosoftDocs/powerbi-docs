@@ -62,7 +62,7 @@ In order to embed your report into SharePoint Online, you first need to get the 
 
     ![SP new report](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)
 
-4. Past the report URL into the property pane. This report URL is the URL you copied from the steps above. The report loads automatically.
+4. Paste the report URL into the property pane. This report URL is the URL you copied from the steps above. The report loads automatically.
 
     ![SP new web part properties](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
@@ -161,7 +161,7 @@ Users viewing a report in SharePoint need either a **Power BI Pro license** or t
 
 * You may encounter issues if using Internet Explorer 10. You can look at the [browsers support for Power BI](consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
 
-* The Power BI web part is not available for [sovereign clouds](https://powerbi.microsoft.com/clouds/).
+* The Power BI web part is not available for [national clouds](https://powerbi.microsoft.com/clouds/).
 
 * The classic SharePoint Server is not supported with this web part.
 

@@ -4,9 +4,9 @@ description: Getting started with Power BI? Get to know the features and capabil
 author: mihart
 manager: kvivek
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: hub-page
-ms.date: 12/10/2018
+ms.date: 02/21/2019
 ms.author: mihart
 layout: HubPage
 ms.custom: seodec18
@@ -62,7 +62,6 @@ LocalizationGroup: Get started
                                                 <p><a href="/power-bi/consumer/end-user-report-open" data-linktype="absolute-path">View a report</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-dashboard-open" data-linktype="absolute-path">View a dashboard</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-app-view" data-linktype="absolute-path">View an app</a></p>
-                                                <!-- <p><a href="" data-linktype="absolute-path">Is my content up-to-date?</a></p> -->
                                             </div>
                                         </div>
                                     </div>
@@ -82,6 +81,7 @@ LocalizationGroup: Get started
                                                 <p><a href="/power-bi/consumer/end-user-apps" data-linktype="absolute-path">Learn about shared apps</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-subscribe" data-linktype="absolute-path">Subscribe to content</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-comment" data-linktype="absolute-path">Add comments to a dashboard</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-fresh" data-linktype="absolute-path">Is my content up-to-date?</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -132,7 +132,7 @@ LocalizationGroup: Get started
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img alt="All Power BI consumer documentation" src="media/end-user-consumer/interact-analyze.svg" data-linktype="relative-path">
+                                                    <img alt="All Power BI consumer documentation" src="media/end-user-consumer/see-all.svg" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -233,7 +233,7 @@ LocalizationGroup: Get started
                                 </a>
                             </li>
                             <li>
-                                <a href="/power-bi/service-admin-licensing-organization" data-linktype="absolute-path">
+                                <a href="/power-bi/consumer/end-user-featured" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -258,7 +258,7 @@ LocalizationGroup: Get started
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="" alt="All Power BI consumer documentation" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/See_All_400x140.svg" alt="All Power BI consumer documentation" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -363,7 +363,7 @@ LocalizationGroup: Get started
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="" alt="All Power BI consumer documentation" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/See_All_400x140.svg" alt="All Power BI consumer documentation" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

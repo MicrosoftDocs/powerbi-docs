@@ -26,7 +26,7 @@ To find the region your tenant is in, follow these steps.
 
 1. In the Power BI service, in the top menu, select help (**?**) then **About Power BI**.
 
-1. Look for the value next to **Your data is stored in**. This is the region where your tenant is located.
+1. Look for the value next to **Your data is stored in**. This is the region where your tenant is located. This is also the region where your data is stored, unless you are using dedicated capacities in different regions for your workspaces.
 
     ![Data region](media/service-admin-where-is-my-tenant-located/power-bi-data-region.png)
 

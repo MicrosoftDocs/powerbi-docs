@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/20/2017
+ms.date: 11/20/2017 
 ---
 
 # Q&A in Power BI Embedded
@@ -21,7 +21,7 @@ There are two modes for embedding Q&A within your application: **interactive** a
 
 Here is a look at what the JavaScript code will look like.
 
-```
+```javascript
 // Embed configuration used to describe the what and how to embed.
 // This object is used when calling powerbi.embed within the JavaScript API.
 // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
@@ -50,7 +50,7 @@ One example of this usage would be a frequently asked question list. The user co
 
 **Code snippet for JS SDK usage:**  
 
-```
+```javascript
 // Get a reference to the embedded Q&A HTML element
 var qnaContainer = $('#qnaContainer')[0];
 
@@ -74,7 +74,7 @@ Listening to the *visualRendered* event allows you to save questions for use lat
 
 **Code snippet for JS SDK usage:**  
 
-```
+```javascript
 // Get a reference to the embedded Q&A HTML element
 var qnaContainer = $('#qnaContainer')[0];
 

@@ -31,7 +31,7 @@ You must meet these requirements to access audit logs:
 
     To provide non-administrator accounts with access to the audit log, you must add the user as a member of one of these role groups. Alternatively, you can create a custom role group in the Exchange admin center, assign the Audit Logs or View-Only Audit Logs role to this group, and then add the non-administrator account to the new role group. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
-    If you can't access the Exchange admin center from the Office 365 admin center, go to https://outlook.office365.com/ecp and sign in using your credentials.
+    If you can't access the Exchange admin center from the Microsoft 365 admin center, go to https://outlook.office365.com/ecp and sign in using your credentials.
 
 * If you have access to the audit log but are not a global admin or Power BI Service admin, you will not have access to the Power BI Admin portal. In this case, you must use a direct link to the [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog).
 
@@ -47,13 +47,13 @@ The Power BI audit logs are available directly through the [Office 365 Security 
 
 1. Select **Audit logs**.
 
-1. Select **Go to O365 Admin Center**.
+1. Select **Go to Microsoft 365 admin center**.
 
-   ![Go to O365 Admin Center](media/service-admin-auditing/audit-log-o365-admin-center.png)
+   ![Go to Microsoft 365 admin center](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
 ## Search only Power BI activities
 
-Restrict results to only Power BI activities by following these steps. For a list of activities, see the [list of activities audited by Power BI](#list-of-activities-audited-by-power-bi) later in this article.
+Restrict results to only Power BI activities by following these steps. For a list of activities, see the list of [activities audited by Power BI](#activities-audited-by-power-bi) later in this article.
 
 1. On the **Audit log search** page, under **Search**, select the drop down for **Activities**.
 
@@ -211,7 +211,7 @@ The following activities are audited by Power BI.
 | Took over a Power BI datasource                   | TakeOverDatasource                          |                                          |
 | Took over Power BI dataset                        | TakeOverDataset                             |                                          |
 | Unpublished Power BI app                          | UnpublishApp                                |                                          |
-| Update capacity resource governance settings      | UpdateCapacityResourceGovernanceSettings    | Not currently in Office 365 admin portal |
+| Update capacity resource governance settings      | UpdateCapacityResourceGovernanceSettings    | Not currently in Microsoft 365 admin center |
 | Updated capacity admin                            | UpdateCapacityAdmins                        |                                          |
 | Updated capacity display name                     | UpdateCapacityDisplayName                   |                                          |
 | Updated organization's Power BI settings          | UpdatedAdminFeatureSwitch                   |                                          |
