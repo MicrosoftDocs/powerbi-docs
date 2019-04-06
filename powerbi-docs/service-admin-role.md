@@ -22,23 +22,23 @@ Learn how you can use the Power BI service administrator role in your organizati
 
 The Power BI service administrator role can be assigned to users who need access to the Power BI Admin portal without also granting those users complete Office 365 administrative access.
 
-Office 365 user management administrators assign users to the Power BI service administrator role in the Office 365 Admin center, or by using a PowerShell script. Once a user is assigned, they can access the [Power BI admin portal](service-admin-portal.md). There, they have access to tenant-wide usage metrics, and can control tenant-wide usage of Power BI features.
+Office 365 user management administrators assign users to the Power BI service administrator role in the Microsoft 365 admin center, or by using a PowerShell script. Once a user is assigned, they can access the [Power BI admin portal](service-admin-portal.md). There, they have access to tenant-wide usage metrics, and can control tenant-wide usage of Power BI features.
 
 ## Limitations and considerations
 
 The Power BI service administrator role does not provide the following capabilities:
 
-* Ability to modify users and licenses within the Office 365 admin center,
+* Ability to modify users and licenses within the Microsoft 365 admin center,
 
 * Access to the audit logs. For more information, see [Using auditing within your organization](service-admin-auditing.md).
 
 ## Assign users to the admin role in Office 365
 
-To assign users to the Power BI admin role in the Office 365 admin center, follow these steps.
+To assign users to the Power BI admin role in the Microsoft 365 admin center, follow these steps.
 
-1. In the Office 365 Admin center, select **Users** > **Active Users**.
+1. In the Microsoft 365 admin center, select **Users** > **Active Users**.
 
-    ![Office 365 admin center](media/service-admin-role/powerbi-admin-users.png)
+    ![Microsoft 365 admin center](media/service-admin-role/powerbi-admin-users.png)
 
 1. Select the user that you want to assign the role to.
 

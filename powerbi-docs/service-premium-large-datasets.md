@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/18/2018
+ms.date: 04/04/2019
 ms.author: jocaplan
 
 LocalizationGroup: Premium
@@ -35,7 +35,7 @@ The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3. Note t
 
 **Your .pbix files represent data in a highly compressed state**. The data will likely expand several times when loaded in memory, and from there it may expand several more times during data refresh.
 
-**Scheduled refresh of large datasets can take a long time** and be very resource-intensive. Accordingly, do not schedule too many overlapping refreshes. Notice also that the timeout for scheduled refresh jobs has been doubled to four hours for all datasets in this capacity. We recommend [incremental refresh](service-premium-incremental-refresh.md), because it's faster, more reliable, and consumes fewer resources.
+**Scheduled refresh of large datasets can take a long time** and be very resource-intensive. Accordingly, do not schedule too many overlapping refreshes. Notice also that the timeout for scheduled refresh jobs has been increased to five (5) hours for all datasets in this capacity. We recommend [incremental refresh](service-premium-incremental-refresh.md), because it's faster, more reliable, and consumes fewer resources.
 
 **The initial report load of large datasets can take a long time** if it has been a while since the last time the dataset was used, because the model is loaded into memory of your Premium capacity. A loading bar for longer-loading reports displays the load progress.
 

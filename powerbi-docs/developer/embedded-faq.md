@@ -132,7 +132,7 @@ Yes, there are Powershell cmdlets and Azure Resource Manager APIs you can use to
 
 ### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
 
-To [promote your solution to production](https://docs.microsoft.com/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), you need the Power BI content (app workspace that you are using in your application to be assigned to a Power BI Embedded (A SKU) capacity.
+To [promote your solution to production](embed-sample-for-customers.md#move-to-production), you need the Power BI content (app workspace) that you are using in your application to be assigned to a Power BI Embedded (A SKU) capacity.
 
 ### What are the Azure regions PBI Embedded is available?
 
@@ -162,8 +162,7 @@ To get an AAD token, you can use one of the [Azure Active Directory Authenticati
 
 ### My Application already uses AAD for User Authentication. How can we use this Identity when authenticating to Power BI in a "User Owns Data" scenario?
 
-It is standard OAuth on-behalf-of flow (https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api)
-The Application needs to be configured to require permissions to Power BI service (with the required scopes), and once you have a user token to your app, you simply call to ADAL API AcquireTokenAsync using the user access token and specify Power BI resource URL as the resource ID, see below a code snippet showing how this can be done:
+It is standard OAuth on-behalf-of flow (<https://docs.microsoft.com/azure/active-directory/develop/web-api>). The Application needs to be configured to require permissions to Power BI service (with the required scopes). Once you have a user token to your app, you simply call to ADAL API AcquireTokenAsync using the user access token and specify the Power BI resource URL as the resource ID. See the following code snippet showing how this can be done:
 
 ```csharp
 var context = new AD.AuthenticationContext(authorityUrl);
@@ -171,6 +170,12 @@ var userAssertion = new AD.UserAssertion(userAccessToken);
 var clientAssertion = new AD.ClientAssertionCertificate(MyAppId, MyAppCertificate)
 var authenticationResult = await context.AcquireTokenAsync(resourceId, clientAssertion, userAssertion);
 ```
+
+### What object ID is the service principal object ID?
+
+The *Object ID* from the main screen of a registered app is the object ID for the app.
+
+The object ID found in the *Managed application in local directory > Properties* section is the service principal object ID you need to use. This object ID is to reference a service principal for operations or to make changes to the service principal object ID. Such as applying a service principal as an admin to a workspace.
 
 ### How is Power BI Embedded different from other Azure services?
 
@@ -270,9 +275,9 @@ Yes, you can use your [Azure credits](https://azure.microsoft.com/free/) for Pow
 
 Since Power BI Embedded is a part of Azure, it is possible to use the service with the [$200 credit received when signing up for Azure](https://azure.microsoft.com/free/).
 
-### Is Power BI Embedded available for sovereign clouds (US Government, Germany, China)?
+### Is Power BI Embedded available for national clouds (US Government, Germany, China)?
 
-Power BI Embedded is available for some [sovereign clouds](embed-sample-for-customers-sovereign-clouds.md). It still is **NOT** available for the China cloud.
+Power BI Embedded is also available for the [national clouds](embed-sample-for-customers-national-clouds.md).
 
 ### Is Power BI Embedded available for non-profits and educational?
 
@@ -340,7 +345,7 @@ If you're working with the **Embed for your organization** experience, save and 
 
 ### How can I edit my registered application?
 
-You can learn how to edit AAD registered applications [here](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application).
+To learn how to edit Azure AD-registered applications, see [Quickstart: Update an application in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app).
 
 ### How can I edit my Power BI user profile or data?
 

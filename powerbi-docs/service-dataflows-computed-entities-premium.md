@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
 ---
-# Using computed entities on Power BI Premium (Preview)
+# Using computed entities on Power BI Premium
 
 You can perform **in-storage computations** when using **dataflows** with a Power BI Premium subscription. This lets you perform calculations on your existing dataflows, and return results that enable you to focus on report creation and analytics. 
 
@@ -27,10 +27,6 @@ There are two ways you can connect dataflow data to Power BI:
 * Using an external dataflow
 
 The following sections describe how to create computed entities on your dataflow data.
-
-> [!NOTE]
-> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
-
 
 ## How to create computed entities 
 
@@ -75,7 +71,9 @@ It's important to note that if you remove the workspace from Power BI Premium ca
 
 When working with dataflows specifically created in an organization's Azure Data Lake Storage Gen2 account, linked entities and computed entities only work properly when the entities reside in the same storage account. For more information, see [connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)](service-dataflows-connect-azure-data-lake-storage-gen2.md).
 
-In addition, linked entities is not available for dataflows that are created from CDM folders. See [add a CDM folder to Power BI as a dataflow (Preview)](service-dataflows-add-cdm-folder.md).
+Linked entities are not available for dataflows that are created from Common Data Model (CDM) folders. For more information, see [add a CDM folder to Power BI as a dataflow (Preview)](service-dataflows-add-cdm-folder.md).
+
+As a best practice, when doing computations on data joined by on-premises and cloud data, create a new entity to perform such computations. This provides a better experience than using an existing entity for computations, such as an entity that is also querying data from both sources and doing in-lake transformations.
 
 ## Next Steps
 
@@ -83,8 +81,8 @@ This article described computed entities and dataflows available in the Power BI
 
 * [Self-service data prep with dataflows](service-dataflows-overview.md)
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
-* [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
+* [Using dataflows with on-premises data sources](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows](service-dataflows-developer-resources.md)
 * [Configure workspace dataflow settings (Preview)](service-dataflows-configure-workspace-storage-settings.md)
 * [Add a CDM folder to Power BI as a dataflow (Preview)](service-dataflows-add-cdm-folder.md)
 * [Connect Azure Data Lake Storage Gen2 for dataflow storage (Preview)](service-dataflows-connect-azure-data-lake-storage-gen2.md)

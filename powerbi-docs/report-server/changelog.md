@@ -19,6 +19,13 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 ## January 2019
 
+- **Power BI Report Server**          
+    - *Version 1.4.7024.16477 (Build 15.0.1102.299), Released: March 28, 2019*
+        - Bug Fixes
+            - Power BI Reports
+                - Fix for issue with basic credentials when using direct query for SAP Hana and SAP BW
+                - Fix for OData feed data refresh fails with "Could not load file or assembly 'Microsoft.OData.Core.NetFX35.V7"
+
 - **Power BI Report Server**            
     - *Version 1.4.6969.7395 (Build 15.0.1102.235), Released: January 30, 2019*
         - Bug Fixes

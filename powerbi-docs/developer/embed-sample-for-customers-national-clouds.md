@@ -1,6 +1,6 @@
 ---
-title: Embedded analytics to embed Power BI content in your application for for government and sovereign clouds
-description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your customers. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
+title: Embedded analytics to embed Power BI content in your application for government and national clouds
+description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your customers. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools for government and national clouds.
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -12,13 +12,13 @@ ms.custom: seodec18
 ms.date: 02/05/2019
 ---
 
-# Tutorial: Embed a Power BI content into your application for sovereign clouds
+# Tutorial: Embed a Power BI content into your application for national clouds
 
-Learn how to embed analytical content within your business process applications for the sovereign cloud. You can use the Power BI .NET SDK with the Power BI JavaScript API to embed a report, dashboard, or tile, into your web applications.
+Learn how to embed analytical content within your business process applications for the national cloud. You can use the Power BI .NET SDK with the Power BI JavaScript API to embed a report, dashboard, or tile, into your web applications.
 
-Power BI also supports sovereign (private) clouds.
+Power BI also supports [national clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
 
-The different sovereign clouds are:
+The different national clouds are:
 
 * U.S. Government Community Cloud (GCC)
 
@@ -32,7 +32,7 @@ The different sovereign clouds are:
 
 ![Embedded dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, then depending on the type of government or country you can choose the right sovereign cloud for you. You can sign up for a [U. S. government Power BI account](../service-govus-signup.md), a [Power BI for Germany cloud account](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) or a [Power BI for China cloud account](http://www.21vbluecloud.com/powerbi/).
+To get started with this walkthrough, you need a **Power BI account**. If you don't have an account set up, then depending on the type of government or country you can choose the right national cloud for you. You can sign up for a [U. S. government Power BI account](../service-govus-signup.md), a [Power BI for Germany cloud account](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) or a [Power BI for China cloud account](http://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Looking to embed a dashboard for your organization instead? See, [Integrate a dashboard into an app for your organization](integrate-dashboard.md).
@@ -41,11 +41,15 @@ To integrate a dashboard into a web app, you use the **Power BI** API, and an Az
 
 ## Download the sample
 
-This article shows the code used in the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) on GitHub. To follow along with this walkthrough, you can download the sample.
+This article shows the code used in the [App Owns Data sample](https://github.com/Microsoft/PowerBI-Developer-Samples) on GitHub. To follow along with this walkthrough, you can download the sample. 
 
-![App Owns Data sample](media/embed-sample-for-customers-sovereign-clouds/embed-sample-for-customers-026.png)
+![App Owns Data sample](media/embed-sample-for-customers-national-clouds/embed-sample-for-customers-026.png)
 
 * Government Community Cloud (GCC):
+
+    > [!Note]
+    > GCC accounts only support P and EM capacities.
+
 1. Overwrite Cloud.config file with GCCCloud.config content.
 
 2. Update applicationId (Native app applicationId), workspaceId, the user (your master user), and password in Web.config file.
@@ -60,6 +64,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 ```
 
 * Military Contractors (DoDCON):
+
 1. Overwrite Cloud.config file with TBCloud.config content.
 
 2. Update applicationId (Native app applicationId), workspaceId, the user (your master user), and password in Web.config file.
@@ -74,6 +79,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 ```
 
 * Military (DoD):
+
 1. Overwrite Cloud.config file with PFCloud.config content.
 
 2. Update applicationId (Native app applicationId), workspaceId, the user (your master user), and password in Web.config file.
@@ -88,6 +94,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 ```
 
 * Power BI for Germany cloud parameters
+
 1. Overwrite Cloud.config file with Power BI for Germany cloud content.
 
 2. Update applicationId (Native app applicationId), workspaceId, the user (your master user), and password in Web.config file.
@@ -102,6 +109,7 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 ```
 
 * Power BI for China cloud parameters
+
 1. Overwrite Cloud.config file with [Power BI for China](https://github.com/Microsoft/PowerBI-Developer-Samples/blob/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config) cloud content.
 
 2. Update applicationId (Native app applicationId), workspaceId, the user (your master user), and password in Web.config file.
@@ -117,33 +125,33 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 ## Step 1 - register an app in Azure AD
 
-Register your application with Azure AD to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md). Since there are different sovereign cloud affiliations, there are distinct URLs to register your application.
+Register your application with Azure AD to make REST API calls. For more information, see [Register an Azure AD app to embed Power BI content](register-app.md). Since there are different national cloud affiliations, there are distinct URLs to register your application.
 
-* Government Community Cloud (GCC) - https://app.powerbigov.us/apps 
+* Government Community Cloud (GCC) - ```https://app.powerbigov.us/apps```
 
-* Military Contractors (DoDCON) - https://app.high.powerbigov.us/apps 
+* Military Contractors (DoDCON) - ```https://app.high.powerbigov.us/apps```
 
-* Military (DoD) - https://app.mil.powerbigov.us/apps
+* Military (DoD) - ```https://app.mil.powerbigov.us/apps```
 
-* Power BI for Germany cloud - https://app.powerbi.de/apps
+* Power BI for Germany cloud - ```https://app.powerbi.de/apps```
 
-* Power BI for China cloud - https://app.powerbi.cn/apps
+* Power BI for China cloud - ```https://app.powerbi.cn/apps```
 
 If you downloaded the [Embedding for your customer sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), you would use the **applicationId** you get, so that the sample can authenticate to Azure AD. To configure the sample, change the **applicationId** in the *web.config* file.
 
 ## Step 2 - get an access token from Azure AD
 
-Within your application, you need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md). Since there are different sovereign cloud affiliations, there are distinct URLs to get an access token for your application.
+Within your application, you need to get an **access token**, from Azure AD, before you can make calls to the Power BI REST API. For more information, see [Authenticate users and get an Azure AD access token for your Power BI app](get-azuread-access-token.md). Since there are different national cloud affiliations, there are distinct URLs to get an access token for your application.
 
-* Government Community Cloud (GCC) - https://login.microsoftonline.com
+* Government Community Cloud (GCC) - ```https://login.microsoftonline.com```
 
-* Military Contractors (DoDCON) - http://login.microsoftonline.us
+* Military Contractors (DoDCON) - ```http://login.microsoftonline.us```
 
-* Military (DoD) - https://login.microsoftonline.us
+* Military (DoD) - ```https://login.microsoftonline.us```
 
-* Power BI for Germany cloud - https://login.microsoftonline.de
+* Power BI for Germany cloud - ```https://login.microsoftonline.de```
 
-* Power BI for China cloud - https://login.chinacloudapi.cn
+* Power BI for China cloud - ```https://login.chinacloudapi.cn```
 
 You can see examples of these access tokens within each content item task in the **Controllers\HomeController.cs** file.
 
@@ -231,7 +239,7 @@ Using the JavaScript API, you can generate an embed token. The embed token is sp
 
 A sample is available within **Controllers\HomeController.cs** of the [Embedding for your organization sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 
-This assumes a class is created for **EmbedConfig** and **TileEmbedConfig**. A sample is available within **Models\EmbedConfig.cs** and **Models\TileEmbedConfig.cs**.
+A class is created for **EmbedConfig** and **TileEmbedConfig**. A sample is available within **Models\EmbedConfig.cs** and **Models\TileEmbedConfig.cs**.
 
 #### Reports
 
@@ -295,7 +303,7 @@ var embedConfig = new TileEmbedConfig()
 
 You can use JavaScript to load a dashboard into a div element on your web page. The sample uses an EmbedConfig/TileEmbedConfig model along with views for a dashboard, tile, or report. For a full sample of using the JavaScript API, you can use the [Microsoft Power BI Embedded Sample](https://microsoft.github.io/PowerBI-JavaScript/demo).
 
-An application sample of this is available within the [Embedding for your organization sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+An application sample is available within the [Embedding for your organization sample](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 
 ### Views\Home\EmbedDashboard.cshtml
 
@@ -431,7 +439,5 @@ An application sample of this is available within the [Embedding for your organi
 * [How to migrate Power BI Workspace Collection Workspace Collection content to Power BI](migrate-from-powerbi-embedded.md)
 
 Considerations and limitations
-
-* GCC accounts only support P and EM capacities now
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

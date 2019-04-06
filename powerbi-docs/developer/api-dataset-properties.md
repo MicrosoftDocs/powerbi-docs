@@ -26,7 +26,7 @@ id     |  Guid       | System wide unique identifier for the dataset.        | T
 name     | String        | User defined name of the dataset.        | False        | True        
 tables     | Table[]        | Collection of tables.        |  False       | False        
 relationships     | Relationship[]        | Collection of relationships between tables.        | False        |  False  
-defaultMode     | String        | Determines whether the dataset is pushed, streamed, or both, with values of "Push", "Streaming", and "PushStreaming".         | False        |  False
+defaultMode     | String        | Determines whether the dataset is pushed, streamed, or both, with values of "Push" and "Streaming."         | False        |  False
 
 ## Table
 
