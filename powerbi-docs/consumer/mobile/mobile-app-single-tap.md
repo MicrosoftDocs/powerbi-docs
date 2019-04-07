@@ -12,7 +12,7 @@ ms.date: 04/04/2019
 ms.author: mshenhav
 
 ---
-# Configure report interaction to single tap or double tap
+# Configure report interaction to single tap or double tap (preview)
 Applies to:
 
 | ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android phone](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | 
@@ -23,9 +23,11 @@ A Power BI report is an interactive view of your data, with visuals representing
 
 You can configure how to interact with your data. You can decide if you want to have single tap interaction or double tap interaction.
 
-With double tap interaction, your first tap on a visual selects it, and only the second tap in a visual preforms the action itself, like slicer item selection, cross highligh, or just click on a link/button/etc.
+* With double tap interaction, your first tap on a visual selects it, and only the second tap in a visual preforms the action itself, like slicer item selection, cross highligh, or click on a link,button,etc.
 
-With single tap interaction, only one tap does both - selects the visual and executes the action.
+* With single tap interaction, one tap does both - selects the visual and executes the action.
+![Power BI mobile single tap](./media/mobile-apps-single-tap/SingleTap_2.gif)
+
 
 Starting from Power BI app version 18.0 for iOS and XXXXX for Android, all new installations will be configured with Single tap as a default behavior.
 Users that already have Power BI installed on the phone and will upgrade to these new versions, will be offered to switch to single tap.
