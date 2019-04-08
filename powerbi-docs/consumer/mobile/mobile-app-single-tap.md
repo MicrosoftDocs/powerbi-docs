@@ -32,6 +32,8 @@ You can configure how to interact with your data. You can decide if you want to 
 Starting from Power BI app version 18.0 for iOS and 112540 for Android, all new installations will be configured with Single tap as a default behavior.
 Users that already have Power BI installed on the phone and will upgrade to these new versions, will be offered to switch to single tap.
 
+## Change interaction behavior
+
 To change the interaction behavior, you can go to the app settings, and turn on/off single tap interaction.
 
 ![Power BI mobile change report interaction](./media/mobile-app-single-tap/configure-single-tap.png)
