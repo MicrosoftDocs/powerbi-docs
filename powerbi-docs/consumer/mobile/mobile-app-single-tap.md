@@ -1,6 +1,6 @@
 ---
 title: Configure report interaction to single tap
-description: 'Learn how to configure report interaction to single or double tap.
+description: Learn how to configure report interaction to single or double tap.
 author: mshenhav
 manager: kfile
 ms.reviewer: ''
