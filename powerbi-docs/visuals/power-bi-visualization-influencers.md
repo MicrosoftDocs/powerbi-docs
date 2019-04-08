@@ -277,7 +277,7 @@ If the customer table doesn't have a unique identifier, you can't evaluate the m
  
 **I see a warning that the metric I'm analyzing has more than 10 unique values and that this amount might affect the quality of my analysis. Why is that?** 
 
-The AI visualization can analyze categorical fields and numeric fields.In the case of categoricals, an example may be Churn is Yes or No, and Customer Satisfaction is High, Medium, or Low. Increasing the number of categories to analyze means there are fewer observations per category. This situation makes it harder for the visualization to find patterns in the data. 
+The AI visualization can analyze categorical fields and numeric fields. In the case of categorical fields, an example may be Churn is Yes or No, and Customer Satisfaction is High, Medium, or Low. Increasing the number of categories to analyze means there are fewer observations per category. This situation makes it harder for the visualization to find patterns in the data. 
 
 When analyzing numeric fields you have a choice between treating the numeric fields like text in which case you will run the same analysis as you do for categorical data (**Categorical Analysis**). If you have lots of distinct values we recommend you switch the analysis to **Continuous Analysis** as that means we can infer patterns from when numbers increase or decrease rather than treating them as distinct values. You can switch from **Categorical Analysis** to **Continuous Analysis** in the **Formatting Pane** under the **Analysis** card.
 
