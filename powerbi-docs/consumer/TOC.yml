@@ -137,7 +137,7 @@
       - name: "Favorites in the mobile apps"
         href: mobile/mobile-apps-favorites.md
       - name: "Configure report interaction in the mobile apps (phone only)"
-        href: mobile/mobile-apps-single-tap.md
+        href: mobile/mobile-app-single-tap.md
       - name: "Set data alerts in the Power BI mobile apps"
         href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
       - name: "Get notifications in the Power BI mobile apps"
