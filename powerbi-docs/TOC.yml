@@ -501,8 +501,10 @@
         href: refresh-excel-file-local-drive.md
       - name: "Refresh a dataset from an Excel workbook - cloud"
         href: refresh-excel-file-onedrive.md
-      - name: "Refresh a dataset created from a .csv file on OneDrive"
+      - name: "Refresh a dataset from a .csv file on OneDrive"
         href: refresh-csv-file-onedrive.md
+      - name: "Query caching in Power BI Premium"
+        href: power-bi-query-caching.md
       - name: "Troubleshooting refresh scenarios"
         href: refresh-troubleshooting-refresh-scenarios.md
     - name: Dashboards
@@ -595,11 +597,11 @@
         href: service-insights-optimize.md
     - name: Collaborate in Power BI
       items: 
+      - name: "Create the new workspaces"
+        href: service-create-the-new-workspaces.md
       - name: "Create app workspaces"
         href: service-create-workspaces.md
-      - name: "Create the new workspaces (preview)"
-        href: service-create-the-new-workspaces.md
-      - name: "Create and share apps"
+      - name: "Publish apps from workspaces"
         href: service-create-distribute-apps.md
       - name: "Manage data storage in workspaces"
         href: service-admin-manage-your-data-storage-in-power-bi.md
@@ -881,18 +883,6 @@
         href: developer/embedding.md
       - name: "What is Power BI Embedded in Azure"
         href: developer/azure-pbie-what-is-power-bi-embedded.md
-    - name: Quickstarts
-      items: 
-      - name: Manage capacities in Azure
-        items:
-        - name: Create a capacity in Azure
-          href: developer/azure-pbie-create-capacity.md
-        - name: Create a capacity using Multi-Geo in Azure
-          href: developer/embedded-multi-geo.md
-        - name: Scale a capacity in Azure
-          href: developer/azure-pbie-scale-capacity.md
-        - name: Pause and start a capacity in Azure
-          href: developer/azure-pbie-pause-start.md
     - name: Tutorials
       items: 
       - name: "Embed content for customers"
@@ -929,6 +919,8 @@
         href: developer/get-azuread-access-token.md
       - name: "Embedding Q&A"
         href: developer/qanda.md
+      - name: "Troubleshoot your embedded application"
+        href: developer/embedded-troubleshoot.md
       - name: Manage capacities in Azure
         items:
         - name: Create a capacity in Azure
@@ -939,8 +931,6 @@
           href: developer/azure-pbie-scale-capacity.md
         - name: Pause and start a capacity in Azure
           href: developer/azure-pbie-pause-start.md
-        - name: "Troubleshoot your embedded application"
-          href: developer/embedded-troubleshoot.md
       - name: Migrate from Workspace Collections
         items:
         - name: "How to migrate from Power BI Workspace Collections"
@@ -1047,8 +1037,6 @@
       items:
       - name: "Push data into a dataset"
         href: developer/walkthrough-push-data.md
-      - name: "Register an app with Azure AD"
-        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
       - name: "Get an authentication access token"
         href: developer/walkthrough-push-data-get-token.md
       - name: "Create a dataset"
