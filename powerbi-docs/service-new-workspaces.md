@@ -111,7 +111,7 @@ The Workspace OneDrive feature allows you to configure the OneDrive file storage
 Limitations to be aware of:
 
 - Workspaces can contain a maximum of 1,000 datasets, or 1,000 reports per dataset. 
-- A person with a Power BI Pro license can be a member of a maximum 250 workspaces.
+- A person with a Power BI Pro license can be a member of a maximum 1,000 workspaces.
 - Power BI publisher for Excel isn't supported.
 
 ## Workspace features that work differently
