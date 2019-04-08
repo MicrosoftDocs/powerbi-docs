@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/04/2019
+ms.date: 04/08/2019
 ms.author: mshenhav
 
 ---
@@ -26,7 +26,7 @@ You can configure how to interact with your data. You can decide if you want to 
 * With double tap interaction, your first tap on a visual selects it, and only the second tap in a visual performs the action itself, like slicer item selection, cross highlight, or click on a link, button, and so on.
 
 * With single tap interaction, one tap does both - selects the visual and executes the action.
-![Power BI mobile single tap](./media/mobile-apps-single-tap/SingleTap_2.gif)
+![Power BI mobile single tap](./media/mobile-app-single-tap/single-tap-2.gif)
 
 
 Starting from Power BI app version 18.0 for iOS and 112540 for Android, all new installations will be configured with Single tap as a default behavior.
@@ -34,7 +34,7 @@ Users that already have Power BI installed on the phone and will upgrade to thes
 
 To change the interaction behavior, you can go to the app settings, and turn on/off single tap interaction.
 
-![Power BI mobile change report interaction](./media/mobile-apps-single-tap/configure-single-tap.png)
+![Power BI mobile change report interaction](./media/mobile-app-single-tap/configure-single-tap.png)
 
 This article applies for both landscape and phone reports.
 

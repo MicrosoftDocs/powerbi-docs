@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/08/2018
+ms.date: 04/08/2019
 ms.author: mshenhav
 
 ---
@@ -27,7 +27,7 @@ You can access Power BI content shared with you from other organization directly
 
 ### Enhancing Windows presentation mode with slideshow (Windows)
 
-With [slideshow](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) you can use publilc displays located in your office to run Power BI reports in full screen that will auto rotate between report pages.  
+With [slideshow](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) you can use public displays located in your office to run Power BI reports in full screen that will auto rotate between report pages.  
 
 ### Supporting PBI-RS reports over ADFS and WAP configuration (iOS only)
 
@@ -36,9 +36,11 @@ Power BI Reports (PBIX) hosted in PBI-RS over ADFS configuration can now be acce
 ### Enabling single tap interaction with report visuals
 
 We changed report interaction so it will require only one tap on a visual, button, or slicer to interact with its data right away. Users will no longer need to tap on a visual to select it and to tap again to interact with it,  a single tap will do them both.
-(Note: existing users will need to turn on this behavior in the app setting. [How to configure single tap report interaction](/mobile-app-single-tap.md)).
 
-![Single tap interaction](./media/mobile-whats-new-in-the-mobile-apps/SingleTap_2.gif)
+> [!NOTE]
+> Existing users will need to turn on this behavior in the app setting. For more information, see the [How to configure single tap report interaction](/mobile-app-single-tap.md) article.
+
+![Single tap interaction](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
 
 
 ## January - February 2019
