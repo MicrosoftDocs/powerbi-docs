@@ -15,7 +15,7 @@ ms.author: mihart
 LocalizationGroup: Consumers
 ---
 # Export data from visual
-If you'd like to see the data that is used to create a visual, [you can display that data in Power BI](show-data.md) or export that data to Excel. The option to export the data requires a certain type or license and edit permissions to the content. If you cannot export, check with your Power BI administrator. 
+If you'd like to see the data that is used to create a visual, [you can display that data in Power BI](end-user-show-data.md) or export that data to Excel. The option to export the data requires a certain type or license and edit permissions to the content. If you cannot export, check with your Power BI administrator. 
 
 ## From a visual on a Power BI dashboard
 
