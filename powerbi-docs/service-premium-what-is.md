@@ -16,7 +16,7 @@ LocalizationGroup: Premium
 
 # What is Power BI Premium?
 
-Power BI Premium provides dedicated and enhanced resources to run the Power BI service for your organization. For example,
+Power BI Premium provides dedicated and enhanced resources to run the Power BI service for your organization. For example:
 
 - Greater scale and performance
 - Flexibility to license by capacity
@@ -25,7 +25,7 @@ Power BI Premium provides dedicated and enhanced resources to run the Power BI s
 - Support for data residency by region (Multi-Geo)
 - Share data with anyone without purchasing a per-user license
 
-This article is not meant to provide in-depth details about every feature of Power BI Premium; in fact, it just touches the surface. Where necessary, links to additional articles with more detailed information is provided.
+This article is not meant to provide in-depth details about every feature of Power BI Premium - in fact, it just touches the surface. Where necessary, links to additional articles with more detailed information are provided.
 
 ## Subscriptions and licensing
 
@@ -183,9 +183,7 @@ While the per-query memory and time constraints are much higher in Premium capac
 
 ## Incremental refresh
 
-Incremental refresh provides an integral part of having and maintaining large datasets in Power BI Premium. Incremental refresh has many benefits, for example, Refreshes are faster because only data that has changed needs to be refreshed. Refreshes are more reliable because it's unnecessary to maintain long-running connections to volatile data sources. Resource consumption is reduced because less data to refresh reduces overall consumption of memory and other resources.
-
-Incremental refresh policies are defined in **Power BI Desktop**, and applied when published to the Power BI service. 
+Incremental refresh provides an integral part of having and maintaining large datasets in Power BI Premium. Incremental refresh has many benefits, for example, Refreshes are faster because only data that has changed needs to be refreshed. Refreshes are more reliable because it's unnecessary to maintain long-running connections to volatile data sources. Resource consumption is reduced because less data to refresh reduces overall consumption of memory and other resources. Incremental refresh policies are defined in **Power BI Desktop**, and applied when published to a workspace in a Premium capacity. 
 
 ![Refresh details](media/service-premium-incremental-refresh/refresh-details.png)
 
