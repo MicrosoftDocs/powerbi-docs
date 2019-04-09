@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/08/2019
+ms.date: 04/09/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -155,8 +155,8 @@ Under the Filtering experience section of the report settings you have an option
 
 Give the new filter experience a try. Give us your feedback for this feature, and how we can continue to improve it, on the [Power BI Ideas site](https://ideas.powerbi.com/forums/265200-power-bi). 
 
-[How to use report filters](consumer/end-user-report-filter.md)
-[Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
+- [How to use report filters](consumer/end-user-report-filter.md)
+- [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
