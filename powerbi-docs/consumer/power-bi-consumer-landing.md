@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: hub-page
-ms.date: 02/21/2019
+ms.date: 04/09/2019
 ms.author: mihart
 layout: HubPage
 ms.custom: seodec18
@@ -62,6 +62,7 @@ LocalizationGroup: Get started
                                                 <p><a href="/power-bi/consumer/end-user-report-open" data-linktype="absolute-path">View a report</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-dashboard-open" data-linktype="absolute-path">View a dashboard</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-app-view" data-linktype="absolute-path">View an app</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-export" data-linktype="absolute-path">Export data</a>
                                             </div>
                                         </div>
                                     </div>
