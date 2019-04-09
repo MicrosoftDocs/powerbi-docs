@@ -103,9 +103,9 @@ By clicking on a summary tile, it's possible to click through to a report to vie
 
 The monitoring capabilities in the Power BI Admin portal are basic and are designed to provide a quick understanding of key system metrics. For more detailed monitoring, it's recommended that you use the Power BI Premium Capacity Metrics app.
 
-### Power BI Premium Capacity Metrics App
+### Power BI Premium Capacity Metrics app
 
-The [Power BI Premium Capacity Metrics app](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbi-premiumcapacitymonitoring?tab=Overview) is a Power BI app available to Capacity Admins and is installed like any other Power BI app. It contains a dashboard and report.
+The [Power BI Premium Capacity Metrics app](https://appsource.microsoft.com/product/power-bi/pbi_pcmm.pbi-premiumcapacitymonitoring?tab=Overview) is a Power BI app available to capacity admins and is installed like any other Power BI app. It contains a dashboard and report.
 
 ![Power BI Premium Capacity Metrics app](media/service-premium-capacity-manage/capacity-metrics-app.png)
 
@@ -117,7 +117,7 @@ When the app opens, the dashboard is loaded to present numerous tiles expressing
 - **Dataflow Summary** - Number of dataflows, and dataset metrics
 - **Paginated Report Summary** - Refresh and view metrics
 
-The underlying report (from which the dashboard tiles were pinned) can be accessed by clicking on any dashboard tile. It provides a more detailed perspective of each of the dashboard sections and supports interactive filtering. 
+The underlying report, from which the dashboard tiles were pinned, can be accessed by clicking on any dashboard tile. It provides a more detailed perspective of each of the dashboard sections and supports interactive filtering. 
 
 Filtering can be achieved by setting slicers by date range, capacity, workspace and workload (report, dataset, dataflow), and by selecting elements within report visuals to cross filter the report page. Cross filtering is a powerful technique to narrow down to specific time periods, capacities, workspaces, datasets, etc. and can be very helpful when performing root cause analysis.
 
