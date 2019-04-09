@@ -12,7 +12,7 @@ ms.date: 02/05/2019
 LocalizationGroup: Premium 
 ---
 
-# Multi-Geo support for Power BI Premium
+# Configure Multi-Geo support for Power BI Premium
 
 Multi-Geo is a Power BI Premium feature that helps multinational customers address regional, industry-specific, or organizational data residency requirements. As a Power BI Premium customer, you can deploy content to datacenters in regions other than the home region of the Power BI tenant. A geo (geography) can contain more than one region. For example, the United States is a geo, and West Central US and South Central US are regions in the United States. You may choose to deploy content to any of the following geos:
 
@@ -30,7 +30,7 @@ Multi-Geo isn't available for Power BI Germany, Power BI China operated by 21Via
 
 Multi-Geo is now also available in Power BI Embedded. Read more at [Multi-Geo support in Power BI Embedded](developer/embedded-multi-geo.md).
 
-## Using Multi-Geo
+## Enable and configure
 
 For new capacities, enable Multi-Geo by selecting a region other than the default region from the dropdown.  Each available capacity shows the region where it's currently located, such as **West Central US**.
 
@@ -63,7 +63,7 @@ These items remain in the home region for the tenant:
 - Permissions
 - Dataset credentials
 
-## View Capacity Regions
+## View capacity regions
 
 In the Admin Portal, you can view all the capacities for your Power BI tenant and the regions where they’re currently located.
 
@@ -93,7 +93,7 @@ You can take workspaces out of Multi-Geo capacity in one of two ways:
 
 ## Next steps
 
-- [Power BI Premium: What is it?](service-premium-what-is.md)
+- [What is Power BI Premium?](service-premium-what-is.md)
 - [Multi-Geo for Power BI Embedded capacities](developer/embedded-multi-geo.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
