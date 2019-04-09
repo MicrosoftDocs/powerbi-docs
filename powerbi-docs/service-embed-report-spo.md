@@ -23,7 +23,7 @@ When using the new **Embed in SharePoint Online** option, the embedded reports a
 
 There are a few requirements in order for **Embed in SharePoint Online** reports to work.
 
-* You need a Power BI Pro license or a [Power BI Premium capacity (EM or P SKU)](service-premium-what-is.md#premium-capacity-nodes) with a Power BI license.
+* You need a Power BI Pro license or a [Power BI Premium capacity (EM or P SKU)](service-premium-what-is.md) with a Power BI license.
 * The Power BI web part for SharePoint Online requires [Modern Pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 
 ## Embed your report
