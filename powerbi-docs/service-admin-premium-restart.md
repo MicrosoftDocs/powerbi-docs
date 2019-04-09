@@ -53,6 +53,6 @@ We also recommend that you [monitor your capacities](service-admin-premium-monit
 
 ## Next steps
 
-[What is Power BI Premium?](service-premium.md)
+[What is Power BI Premium?](service-premium-what-is.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

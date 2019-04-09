@@ -43,4 +43,4 @@ You may also export the underlying data for any of the metrics to a csv file.  T
 Now that you understand how to monitor Power BI Premium capacities, learn more about optimizing capacities.
 
 > [!div class="nextstepaction"]
-> [Power BI Premium capacity resource management and optimization](service-premium-understand-how-it-works.md)
+> [Optimizing Power BI Premium capacities](service-premium-capacity-optimize.md)

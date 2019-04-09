@@ -69,7 +69,7 @@ The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capaci
 
 ## Next steps
 
-[Power BI Premium capacity resource management and optimization](service-premium-understand-how-it-works.md)   
+[Optimizing Power BI Premium capacities](service-premium-capacity-optimize.md)     
 [Self-service data prep in Power BI with Dataflows](service-dataflows-overview.md)   
 [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
 

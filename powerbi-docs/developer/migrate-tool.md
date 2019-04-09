@@ -267,7 +267,7 @@ For more information, see [How to migrate Power BI Embedded workspace collection
 
 [Embedding with Power BI](embedding.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md)  
-[Power BI Premium - what is it?](../service-premium.md)  
+[Power BI Premium - what is it?](../service-premium-what-is.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
