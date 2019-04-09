@@ -60,6 +60,8 @@
         href: ../power-bi-visualizations-arcgis.md
     - name: Common tasks
       items: 
+      - name: "Export data to Excel"
+        href: end-user-export.md
       - name: "Look up the content owner and last refreshed date"
         href: end-user-fresh.md
       - name: "Different ways to zoom into content using Focus and Full screen modes"
