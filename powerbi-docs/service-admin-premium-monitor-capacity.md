@@ -267,7 +267,7 @@ You can use the Power BI Premium Capacity Metrics app to monitor *A SKU* capacit
 
 1. Open your capacity in the Azure portal.
 
-1. Click **Access control (IAM)**, and then add the **Power BI Premium** app to the reader role. If you are unable to find the app by name, you can also add it by client Id: `cb4dc29f-0bf4-402a-8b30-7511498ed654`.
+1. Click **Access control (IAM)**, and then add the **Power BI Premium** app to the reader role. If you are unable to find the app by name, you can also add it by client identifier: `cb4dc29f-0bf4-402a-8b30-7511498ed654`.
 
     ![Permissions for Power BI Embedded](media/service-admin-premium-monitor-capacity/embedded-permissions.png)
 
@@ -278,4 +278,4 @@ You can use the Power BI Premium Capacity Metrics app to monitor *A SKU* capacit
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Power BI Premium capacity resource management and optimization](service-premium-understand-how-it-works.md)
+> [Optimizing Power BI Premium capacities](service-premium-capacity-optimize.md)

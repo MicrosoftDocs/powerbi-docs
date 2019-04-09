@@ -34,7 +34,7 @@ Apps are the evolution of organizational content packs. Content packs aren't ava
 Each member of an app workspace needs a Power BI Pro license. For app users, there are two options.
 
 * Option 1: All business users need **Power BI Pro** licenses to view your app. 
-* Option 2: If your app resides in a Power BI Premium capacity, free users in your organization can view app content. Read [What is Power BI Premium?](service-premium.md) for details.
+* Option 2: If your app resides in a Power BI Premium capacity, free users in your organization can view app content. Read [What is Power BI Premium?](service-premium-what-is.md) for details.
 
 ## Publish your app
 When the dashboards and reports in your workspace are ready, you choose which dashboards and reports you want to publish, then you publish them as an app. You can send a direct link to that wider audience, or they can find your app from the Apps tab by going to **Download and explore more apps from AppSource**. 

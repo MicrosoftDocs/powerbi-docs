@@ -76,7 +76,7 @@ If you're [part of an **_app workspace_**](service-collaborate-power-bi-workspac
 Datasets can be refreshed, renamed, explored, and removed. Use a dataset to create a report from scratch or by running [quick insights](service-insights.md).  To see which reports and dashboards are already using a dataset, select **View related**. To explore a dataset, select it. What you're actually doing is opening the dataset in the report editor where you can really start digging into the data and creating visualizations. So, let's move on to the next topic -- reports.
 
 ### Dig deeper
-* [What is Power BI Premium?](service-premium.md)
+* [What is Power BI Premium?](service-premium-what-is.md)
 * [Get data for Power BI](service-get-data.md)
 * [Sample datasets for Power BI](sample-datasets.md)
 

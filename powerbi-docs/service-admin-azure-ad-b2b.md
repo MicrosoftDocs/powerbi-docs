@@ -78,7 +78,7 @@ When using the [Allow external guest users to edit and manage content in the org
 
 ### Use Power BI Premium
 
-Assigning the app workspace to [Power BI Premium capacity](service-premium.md) enables the guest user to use the app without requiring a Power BI Pro license. Power BI Premium also enables apps to take advantage of other capabilities like increased refresh rates, dedicated capacity, and large model sizes.
+Assigning the app workspace to [Power BI Premium capacity](service-premium-what-is.md) enables the guest user to use the app without requiring a Power BI Pro license. Power BI Premium also enables apps to take advantage of other capabilities like increased refresh rates, dedicated capacity, and large model sizes.
 
 ![Use Power BI Premium](media/service-admin-azure-ad-b2b/license-approach1.png)
 

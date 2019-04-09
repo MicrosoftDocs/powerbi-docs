@@ -259,7 +259,7 @@ Power BI is built on the foundation of Office 365, which in turn builds on Azure
 [Understanding the Power BI admin role](service-admin-role.md)  
 [Self-service sign up for Power BI](service-self-service-signup-for-power-bi.md)  
 [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
-[What is Power BI Premium?](service-premium.md)  
+[What is Power BI Premium?](service-premium-what-is.md)  
 [How to purchase Power BI Premium](service-admin-premium-purchase.md)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 [Manage your group in Power BI and Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md)  

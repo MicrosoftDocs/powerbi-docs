@@ -29,7 +29,7 @@ For Power BI Premium Multi-Geo customers, if your Power BI tenant is not in the 
 
 For more information about Power BI Premium or Multi-Geo, take a look at the following resources:
 
-* [What is Microsoft Power BI Premium?](service-premium.md)
+* [What is Microsoft Power BI Premium?](service-premium-what-is.md)
 * [How to purchase Power BI Premium](service-admin-premium-purchase.md)
 * [Multi-Geo support for Power BI Premium (Preview)](service-admin-premium-multi-geo.md)
 * [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)
