@@ -57,7 +57,7 @@ Some of the procedures in this section require Windows PowerShell scripts. If yo
 
 ### How do users sign up for Power BI?
 
-As an administrator, you can sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com) or the [Purchase services](https://admin.microsoft.com/AdminPortal/Home#/catalog) page on the Office 365 admin center. When an administrator signs up for Power BI, they can assign user licenses to users who should have access.
+As an administrator, you can sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com) or the [Purchase services](https://admin.microsoft.com/AdminPortal/Home#/catalog) page on the Microsoft 365 admin center. When an administrator signs up for Power BI, they can assign user licenses to users who should have access.
 
 Additionally, individual users in your organization may be able to sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com). When a user in your organization signs up for Power BI, that user is assigned a Power BI license automatically. For more information, see [Signing up for Power BI as an individual](service-self-service-signup-for-power-bi.md) and [Power BI licensing in your organization](service-admin-licensing-organization.md).
 
@@ -81,7 +81,7 @@ There are three scenarios that might apply to users in your organization:
 
 There are steps you can take, as an admin, to prevent users from joining your existing Office 365 tenant. If you block access, users’ attempts to sign up fail, and they are directed to contact their organization’s admin. You do not need to repeat this process if you have already disabled automatic license distribution (e.g. through Office 365 for Education for Students, Faculty, and Staff).
 
-Use the following PowerShell script to prevent new users from joining a managed tenant. [Learn more about PowerShell](#basic-powershell-information)
+Use the following PowerShell script to prevent new users from joining a managed tenant. ([Learn more about PowerShell][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -95,7 +95,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $false
 
 ### How can I allow users to join my existing Office 365 tenant?
 
-Use the following PowerShell script to enable new users to join a managed tenant. [Learn more about PowerShell](#basic-powershell-information)
+Use the following PowerShell script to enable new users to join a managed tenant. ([Learn more about PowerShell][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -106,7 +106,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $true
 
 ### How do I verify if I have the block on in the tenant?
 
-Use the following PowerShell script to verify settings. *AllowEmailVerifiedUsers* should be false. [Learn more about PowerShell](#basic-powershell-information)
+Use the following PowerShell script to verify settings. *AllowEmailVerifiedUsers* should be false. ([Learn more about PowerShell][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -119,7 +119,7 @@ Get-MsolCompanyInformation | fl allow*
 
 The Azure AD setting that controls this is **AllowAdHocSubscriptions**. Most tenants have this setting set to true, which means it is enabled. If you acquired Power BI through a partner, this may be set to false, which means it is disabled.
 
-Use the following PowerShell script to disable ad hoc subscriptions. [Learn more about PowerShell](#basic-powershell-information)
+Use the following PowerShell script to disable ad hoc subscriptions. ([Learn more about PowerShell][1].)
 
 1. Sign into Azure Active Directory using your Office 365 credentials. The first line of the following PowerShell script prompts you for your credentials. The second line connects to Azure Active Directory.
 
@@ -166,7 +166,7 @@ There are three scenarios that might apply to users in your organization:
 
 ### How do we manage Power BI?
 
-Power BI provides an admin portal that enables you to view usage statistics, provides a link to the Office 365 admin center to manage users and groups, and provides the ability to control tenant-wide settings.
+Power BI provides an admin portal that enables you to view usage statistics, provides a link to the Microsoft 365 admin center to manage users and groups, and provides the ability to control tenant-wide settings.
 
 To access the Power BI admin portal, your account must be marked as a **Global Admin** within Office 365 or Azure Active Directory, or have been assigned the Power BI service administrator role. For more information, see [Understanding the Power BI admin role](service-admin-role.md) and [Power BI Admin Portal](service-admin-portal.md).
 
@@ -193,7 +193,7 @@ If you do nothing, a tenant is created for each user email domain and subdomain.
 
 If a user is signed up for Power BI, but you no longer want them to have access to Power BI, you can remove the Power BI license for that user.
 
-1. Navigate to the [Office 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. Navigate to the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 1. In the left navigation bar, select **Users** > **Active Users**.
 
@@ -211,7 +211,7 @@ If a user is signed up for Power BI, but you no longer want them to have access 
 
 Users who have joined your tenant as part of this program are assigned a unique license that you can filter on within your active user pane in the admin dashboard. To create this new view, follow these steps.
 
-1. Navigate to the [Office 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. Navigate to the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 1. In the left navigation bar, select **Users** > **Active Users**.
 
@@ -229,7 +229,7 @@ Users who have joined your tenant as part of this program are assigned a unique 
 
 You might experience an increase in password reset requests. For information about this process, see [Reset a user's password](/office365/admin/add-users/reset-passwords).
 
-You can remove a user from your tenant via the standard process in the Office 365 admin center. However, if the user still has an active email address from your organization, they can rejoin unless you block all users from joining.
+You can remove a user from your tenant via the standard process in the Microsoft 365 admin center. However, if the user still has an active email address from your organization, they can rejoin unless you block all users from joining.
 
 ### Where is my Power BI tenant located?
 
@@ -267,3 +267,5 @@ Power BI is built on the foundation of Office 365, which in turn builds on Azure
 [Office 365 group management](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+
+[1]: https://docs.microsoft.com/powershell/scripting/overview

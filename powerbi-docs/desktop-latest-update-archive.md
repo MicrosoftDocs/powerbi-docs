@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/11/2019
+ms.date: 03/27/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -30,10 +30,92 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 
 The following sections describe previous months' updates to **Power BI Desktop**.
 
+## February 2019 Update (2.66.5376.1681)
 
-## December 2018 Update (2.65.5313.501)
+Our February updates made customers swoon and love all our new data connectors, features, and analytics enhancements. Just like a box of chocolates, you never know what you get... but with this February update, all changes were sweet and downright delicious. 
 
-Our December updates made sugarplums dance in our customers' heads, or at least created compelling data-driven visuals of said sugarplums. 
+
+You can [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
+
+
+The links beside each update mean the following:
+
+* **[video]** excerpts play in a new browser tab, when the feature is being discussed.
+* Some features have an **[article]** that provides more detail.
+* Most features are explained in the monthly update **[blog]** post.
+* Lastly, some features are self-explanatory and don't need and article or video.
+
+You can also watch the **Latest Updates** video from the beginning, right inside this article, by clicking on the **play** icon on the video image found below the list of updates.
+
+The following updates are new to **Power BI Desktop** this month:
+
+### Reporting
+* Updates to the new filter pane (preview)  [[video]](https://youtu.be/dMD25wfElLg?t=11)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#smartGuides) 
+* Cross-highlight on a single point in line charts  [[video]](https://youtu.be/dMD25wfElLg?t=197)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#line)
+* Word wrap on titles [[video]](https://youtu.be/dMD25wfElLg?t=298)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#wordWrap)
+* Update default visual interaction to cross-filter [[video]](https://youtu.be/dMD25wfElLg?t=358)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#crossFilter)
+* Rounded corners for visual borders  [[video]](https://youtu.be/dMD25wfElLg?t=526)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#roundedCorners)
+
+### Analytics
+* Key influencers visual (preview) [[video]](https://youtu.be/dMD25wfElLg?t=608)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#keyInfluencers) 
+* Insights questions in Q&A [[video]](https://youtu.be/dMD25wfElLg?t=1121)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#insights) 
+* Auto-generated suggested questions for Q&A explorer [[video]](https://youtu.be/dMD25wfElLg?t=1121)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#autoSuggestions) 
+* Improved Python & R script editor [[video]](https://youtu.be/dMD25wfElLg?t=1282)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#scriptEditor) 
+
+### Custom visuals
+* Ten new custom visuals, new custom visuals feature  [[video]](https://youtu.be/dMD25wfElLg?t=1324)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#customVisuals) 
+
+### Data connectivity
+
+* Microsoft Graph Security [[video]](https://youtu.be/dMD25wfElLg?t=2787)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#microsoftGraph) 
+* Guidanz' BI Connector for OBIEE  [[video]](https://youtu.be/dMD25wfElLg?t=2807)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#biConnector) 
+* MarkLogic [[video]](https://youtu.be/dMD25wfElLg?t=2825)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#markLogic) 
+* Kronos Workforce Dimensions [[video]](https://youtu.be/dMD25wfElLg?t=2846)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#kronos) 
+* SurveyMonkey [[video]](https://youtu.be/dMD25wfElLg?t=2857)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#surveyMonkey) 
+* Qubole Presto [[video]](https://youtu.be/dMD25wfElLg?t=2872)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#qubole) 
+* Quick Base [[video]](https://youtu.be/dMD25wfElLg?t=2899)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#quickBase) 
+* Sagra Emigo [[video]](https://youtu.be/dMD25wfElLg?t=2909)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#emigo) 
+
+
+### Other
+* Improved Live connect and DirectQuery error messages [[video]](https://youtu.be/dMD25wfElLg?t=2926)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#error) 
+
+
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+
+
+The following video channel describes and shows each of these updates. You can also see the videos from the blog post.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dMD25wfElLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+* We only archive the English versions of Power BI Desktop.
+
+Select the following links to download this earlier version: 
+
+* [February 2019 version of Power BI Desktop - 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-02.msi)
+* [February 2019 version of Power BI Desktop - 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-02_x64.msi)
+
+
+## January 2019 Update
+
+There was no Power BI Desktop release in January 2019 - we were all busy having a happy holiday, spending time with friends and family. 
+
+
+## December 2018 Update (2.65.5313.621)
+
+Our December updates made sugar plums dance in our customers' heads, or at least created compelling data-driven visuals of said sugar plums. 
 
 You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
 
@@ -105,7 +187,20 @@ The following video channel describes and shows each of these updates. You can a
 > You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
-## November 2018 Update (2.64.5285.461)
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+* We only archive the English versions of Power BI Desktop.
+
+Select the following links to download this earlier version: 
+
+* [December 2018 version of Power BI Desktop - 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-12.msi)
+* [December 2018 version of Power BI Desktop - 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-12_x64.msi)
+
+
+## November 2018 Update (2.64.5285.582)
 
 Our November updates were a bountiful harvest of new features and functionality. So you could sit down with your family of data and analytics enthusiasts, pass the potatoes, and dig in to our feast of updates. 
 
@@ -137,7 +232,7 @@ The following updates are new to **Power BI Desktop** in November:
 
 ### Data connectivity
 
-* Azure DevOps Server connector [[video]](https://youtu.be/1xsXXoyTxfk?t=2641)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
+* Azure Developer Operations Server connector [[video]](https://youtu.be/1xsXXoyTxfk?t=2641)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
 * PDF Connector support for Start Page and End Page parameters  [[video]](https://youtu.be/1xsXXoyTxfk?t=2667)   [[article]](desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23pdf) 
 * Improved Azure Consumption Insights connector  [[video]](https://youtu.be/1xsXXoyTxfk?t=2704)  [[article]](desktop-connect-azure-consumption-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23consumptionInsights) 
 
@@ -154,6 +249,20 @@ The following video channel describes and shows each of these updates. You can a
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+
+
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+* We only archive the English versions of Power BI Desktop.
+
+Select the following links to download this earlier version: 
+
+* [November 2018 version of Power BI Desktop - 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-11.msi)
+* [November 2018 version of Power BI Desktop - 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-11_x64.msi)
 
 
 ## October 2018 Update (2.63.3272.40262)
@@ -215,6 +324,21 @@ The following video channel describes and shows each of these updates. You can a
 > You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
+
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+* We only archive the English versions of Power BI Desktop.
+
+Select the following links to download this earlier version: 
+
+* [October 2018 version of Power BI Desktop - 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-10.msi)
+* [October 2018 version of Power BI Desktop - 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-10_x64.msi)
+
+
+
 ## September 2018 Update (2.62.5222.582)
 
 Our September updates were like settling in to an exciting new classroom. Hopefully you found these updates as useful as a handful of just-sharpened No. 2 pencils. 
@@ -260,6 +384,22 @@ The following video describes and shows each of these updates. You can also see 
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+* We only archive the English versions of Power BI Desktop.
+
+Select the following links to download this earlier version: 
+
+* [September 2018 version of Power BI Desktop - 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-09.msi)
+* [September 2018 version of Power BI Desktop - 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-09_x64.msi)
+
+
+
 
 ## August 2018 Update (2.61.5192.321)
 
@@ -307,6 +447,22 @@ The following video describes and shows each of these updates. You can also see 
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](mobile-whats-new-in-the-mobile-apps.md).
+
+
+
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+* We only archive the English versions of Power BI Desktop.
+
+Select the following links to download this earlier version: 
+
+* [August 2018 version of Power BI Desktop - 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-08.msi)
+* [August 2018 version of Power BI Desktop - 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-08_x64.msi)
+
+
 
 
 ## July 2018 Update (2.60.5169.3201)
@@ -366,6 +522,7 @@ The following video describes and shows each of these updates. You can also see 
 > [!NOTE]
 > You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
+
 ## June 2018 Update (2.59.5135.101)
 
 The sun was shining on June's updates, with features and improvements that warmed up your reports and let you bask in the insights they provided.
@@ -397,7 +554,7 @@ The following updates were new to **Power BI Desktop** in June:
 
 ### Other
 
-* Sovereign cloud selector [[video]](https://youtu.be/4VpGtWSrssE?t=27m45s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
+* National cloud selector [[video]](https://youtu.be/4VpGtWSrssE?t=27m45s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
 
 
 > [!NOTE]
@@ -1385,7 +1542,7 @@ The following updates were new to Power BI Desktop in September:
 -   Add function invocation column [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 -   Expand & Aggregate columns - support for *Load More* values [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 -   New transform - convert Table Column to a list [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
--   Keyboarding - support for *smart typing* in drop-down menus [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   Key boarding - support for *smart typing* in drop-down menus [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 
 
 ### Other improvements
@@ -1635,7 +1792,7 @@ In April, we showered our great Power BI customers with another collection of co
 
 ### Data Modeling:
 
--   Modelling operations are no longer blocked while visuals are refreshing
+-   Modeling operations are no longer blocked while visuals are refreshing
 -   Time Intelligence with built-in date hierarchy fields (Preview)
 -   Data model synonyms
 
@@ -2064,13 +2221,13 @@ The following features have been added to this update:
 
 -   Resizable Navigator dialog
 
--   Ability to multi-select items in Navigator (CTRL+click, SHIFT+click, etc)
+-   Ability to multi-select items in Navigator (CTRL+click, SHIFT+click, etc.)
 
 **Query Editor improvements:**
 
 -   Query Group creation/deletion improvements (multi-select, etc.)
 
--   Ability to Split Query (i.e. refactor common base steps into a new query)
+-   Ability to Split Query (i.e., refactor common base steps into a new query)
 
 -   Query Icons to reflect type of query in Queries navigator pane
 
@@ -2089,7 +2246,7 @@ Take a look at the following video for more details about this update:
 
 The following features have been added in this update:
 
--   **New Data Connectors**: appFigures, Quickbooks Online, Zendesk, Github, Twilio and SweetIQ.
+-   **New Data Connectors**: appFigures, Quickbooks Online, Zendesk, GitHub, Twilio, and SweetIQ.
 
 -   **New Transformations**: Extract First/Last/Range of characters from a Text Column; Option to specify Join Type in the Merge Queries dialog; Ability to customize Quote Style in Split Column by Delimiter dialog.
 
@@ -2229,7 +2386,7 @@ The following features have been added or improved in this update:
   -   Expand/Collapse tables
   -   Hide/Unhide fields
   -   Optimized layout (spacing, margins, and fonts)
-- Report Pages Navigation - Keyboarding support
+- Report Pages Navigation - Key boarding support
 - Lots of bug fixes
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>

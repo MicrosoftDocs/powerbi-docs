@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
-ms.date: 11/06/2018
+ms.date: 03/15/2019
 ---
 
 # Tutorial: Developing a Power BI custom visual
@@ -284,7 +284,7 @@ HTML5, and CSS standards.
 Now you can develop the custom visual to display a circle with text.
 
 > [!Note]
-> Many text entries in this tutorial can be copied from [here](https://github.com/uve/circlecard).
+> Many text entries in this tutorial can be copied from [here](https://github.com/Microsoft/powerbi-visuals-circlecard).
 
 1. To install the **D3 library** in PowerShell, enter the command below.
 

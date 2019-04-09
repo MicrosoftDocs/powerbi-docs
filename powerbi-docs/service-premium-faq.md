@@ -62,7 +62,7 @@ A capacity is a grouping of one or more nodes that is provisioned by an admin th
 Power BI Premium is billed monthly with an annual commitment.
 
 **How do I buy Power BI Premium?**  
-Power BI Premium is available from the Office 365 admin center. For more information, see [How to purchase Power BI Premium](service-admin-premium-purchase.md). You can also contact your Microsoft representative for more information.
+Power BI Premium is available from the Microsoft 365 admin center. For more information, see [How to purchase Power BI Premium](service-admin-premium-purchase.md). You can also contact your Microsoft representative for more information.
 
 **How do I know how much Power BI Premium capacity I need to purchase?**  
 Use the [cost calculator](https://powerbi.microsoft.com/calculator/) to estimate how much Power BI Premium capacity you may need.

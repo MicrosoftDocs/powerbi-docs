@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/12/2019
 
 LocalizationGroup: Premium
 ---
@@ -18,7 +18,7 @@ LocalizationGroup: Premium
 > [!NOTE]
 > This article is currently being updated to describe new features, provide more details, and improve readability. 
 
-This article describes how to purchase Power BI Premium capacity (P1-P3) for your organization. You purchase Power BI Premium capacity in the Office 365 Admin center, and you manage your capacities in the Power BI admin portal. For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/) and the [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/).
+This article describes how to purchase Power BI Premium capacity (P1-P3) for your organization. You purchase Power BI Premium capacity in the Microsoft 365 admin center, and you manage your capacities in the Power BI admin portal. For current pricing and planning information, see the [Power BI pricing page](https://powerbi.microsoft.com/pricing/) and the [Power BI Premium calculator](https://powerbi.microsoft.com/calculator/).
 
 Content creators still need a Power BI Pro license, even if your organization uses Power BI Premium. Ensure you purchase at least one Power BI Pro license for your organization.
 
@@ -38,7 +38,7 @@ To purchase Premium capacity, follow these steps.
 
     ![Office 365 app picker](media/service-admin-premium-purchase/o365-app-picker.png)
 
-    Alternatively, you can browse to the Office 365 Admin center. You can get there by going to https://portal.office.com and selecting **Admin**.
+    Alternatively, you can browse to the Microsoft 365 admin center. You can get there by going to https://portal.office.com and selecting **Admin**.
 
 1. Select **Billing** > **Purchase services**.
 
@@ -58,7 +58,7 @@ After you have completed the purchase, the **Purchase services** page shows that
 
 Now that you have a capacity, you can add more as your needs grow. You can use any combination of Premium capacity SKUs (P1 through P3) within your organization. The different SKUs provide different resource capabilities.
 
-1. In the Office 365 Admin center, select **Billing** > **Purchase services**.
+1. In the Microsoft 365 admin center, select **Billing** > **Purchase services**.
 
 1. Find the Power BI Premium item you want to purchase more of under **Other plans**.
 
@@ -77,9 +77,9 @@ The **Purchase services** page will then indicate the number of instances you ha
 
 ## Cancel your subscription
 
-You can cancel your subscription from within the Office 365 admin center. To cancel your Premium subscription, do the following.
+You can cancel your subscription from within the Microsoft 365 admin center. To cancel your Premium subscription, do the following.
 
-1. Browse to the Office 365 admin center.
+1. Browse to the Microsoft 365 admin center.
 
 1. Select **Billing** > **Subscriptions**.
 
@@ -91,13 +91,15 @@ You can cancel your subscription from within the Office 365 admin center. To can
 
 1. Read through the information, and if you want to proceed, select **Cancel subscription**.
 
+### When canceling or your license expires
+
+When you cancel your Premium subscription, or your capacity license expires, you can continue to access your Premium capacities for a period of 30 days from the date of cancellation or license expiration. After 30 days, you will no longer be able to access your Premium capacities or workspaces in them.
+
 ## Next steps
 
-[Power BI pricing page](https://powerbi.microsoft.com/pricing/)
-[Power BI Premium calculator](https://powerbi.microsoft.com/calculator/)
-[What is Power BI Premium?](service-premium.md)
-[Power BI Premium FAQ](service-premium-faq.md)
-[Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
+[Power BI pricing page](https://powerbi.microsoft.com/pricing/)   
+[Power BI Premium calculator](https://powerbi.microsoft.com/calculator/)   
+[Power BI Premium FAQ](service-premium-faq.md)   
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

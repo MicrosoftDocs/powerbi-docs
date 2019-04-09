@@ -28,12 +28,21 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
 
-## February 2019
-* Workloads and active dataset size metrics in [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
-* Export to PDF and on-demand e-mail subcriptions(service-report-subscribe.md).
-* Bulk operations in the Admin Portal.
+## March 2019
+* General Availability of Multi-Geo for Power BI Premium.
+* Editing and managing Power BI content support for Azure B2B.
 
 ## Previous months (2019)
+### February 2019
+* Workloads and active dataset size metrics in [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Export to PDF for Power BI reports.
+* [On-demand e-mail subcriptions](service-report-subscribe.md).
+* Bulk operations in the Admin Portal.
+* Filtered export for PPT and PDF.
+* [Help and support settings](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) in the Admin Portal.
+* Data lineage experience for [dataflows](service-dataflows-overview.md).
+* Certified custom visuals setting in the Admin Portal.
+
 ### January 2019
 * [Embedding secure Power BI reports](service-embed-secure.md) in internal portals or websites.
 * Updates to [dataflows](service-dataflows-overview.md) editor with new connectors, and support for native SQL queries and Power Query Online transformations.
@@ -343,7 +352,7 @@ Today we released a long list of top-requested features. [Read the blog post](ht
 
 ***Admin Portal***
 
-* Easy user management with a link to the O365 Admin Center
+* Easy user management with a link to the Microsoft 365 admin center
 * Ability to disable publish to web
 * Prevent users from publishing content packs to the entire org
 * Ability to disable sharing content to external users
@@ -505,7 +514,7 @@ For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/a
 * New site for Power BI documentation, localized
 * Improved load time for reports
 * Update organizational content packs with report-only changes
-* Power BI health status in Office 365 Admin Portal
+* Power BI health status in Microsoft 365 admin center
 * KPIs and images in tables, matrices, and cards
 
 For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/11/power-bi-weekly-service-update-1110.aspx)

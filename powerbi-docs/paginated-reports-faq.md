@@ -113,7 +113,7 @@ You get an error message if you try to upload a file that has an unsupported fea
 
 ### What data sources do you support currently for paginated reports?
 
-We support Azure SQL Database, SQL Server and both SQL Server Analysis Services (SSAS) tabular (DAX) and multidimensional (MDX) models using the on-premises Gateway.
+We support Azure Analysis Services (via SSO), Azure SQL Database, SQL Server and both SQL Server Analysis Services (SSAS) tabular (DAX) and multidimensional (MDX) models using the on-premises Gateway.
 
 When accessing SSAS through the Gateway, the user whose credentials are stored needs elevated permissions in SSAS to work through the Gateway.
 

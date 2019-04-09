@@ -9,7 +9,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: seodec18
-ms.date: 02/05/2019
+ms.date: 04/02/2019
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
 
@@ -188,29 +188,25 @@ To get the **ApplicationSecret**, follow these steps:
 
 2. In the left-hand navigation pane, select **All services** and then select **App registrations**.
 
-    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+    ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
 3. Select the application that needs to use the **ApplicationSecret**.
 
-    ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Choose an app](media/embed-sample-for-customers/embed-sample-for-customers-0038.png)
 
-4. Select **Settings**.
+4. Select **Certificates and secrets** under **Manage**.
 
-    ![Select Settings](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
-
-5. Select **Keys**.
-
-    ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+5. Select **New client secrets**.
 
 6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
 
-    ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Key value](media/embed-sample-for-customers/embed-sample-for-customers-042.png)
 
 ### Tenant
 
 This attribute is needed only for the [service principal](embed-service-principal.md) AuthenticationType.
 
-Fill in the **tenant** information with your azure tenant ID. You can get this information either from the [Azure AD portal](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id#use-the-azure-ad-portal) when signed into the Power BI service or using Powershell.
+Fill in the **tenant** information with your azure tenant ID. You can get this information from the [Azure AD admin center](/onedrive/find-your-office-365-tenant-id) when signed into the Power BI service or by using Powershell.
 
 ### Run the application
 
@@ -300,7 +296,7 @@ For a full sample of using the JavaScript API, you can use the [Playground tool]
 
 Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** model along with views for a report.
 
-*A sample of adding a view for a report, dashboard, or tile is available within the Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml, or the Views\Home\Embedtile.cshtml files in the [sample application](#embed-your-content-within-a-sample-application).*
+*A sample of adding a view for a report, dashboard, or tile is available within the Views\Home\EmbedReport.cshtml, Views\Home\EmbedDashboard.cshtml, or Views\Home\Embedtile.cshtml files in the [sample application](#embed-content-using-the-sample-application).*
 
 ```javascript
 <script src="~/scripts/powerbi.js"></script>
