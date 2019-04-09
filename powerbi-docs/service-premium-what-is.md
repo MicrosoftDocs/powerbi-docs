@@ -104,7 +104,7 @@ Refreshes of import models are always memory intensive as models must be loaded 
 
 Refreshes, like queries, require the model be loaded into memory. If there is insufficient memory, the Power BI service will attempt to evict inactive models, and if this is not possible (as all models are active), the refresh job is queued. Refreshes are typically CPU-intensive, even more so than queries. For this reason, there are capacity limits on the number of concurrent refreshes, set to 1.5 x the number of backend v-cores, rounded up. If there are too many concurrent refreshes, a scheduled refresh will be queued. When these situations occur, it takes longer for the refresh to complete. On-demand refreshes such as those triggered by a user request or an API call will retry three times \[[1](#endnote-1)\]. If there still aren't enough resources, the refresh will then fail.
 
-Note:   
+Table notes:   
 <a name="endnote-1"></a>\[1\] Subject to change.
 
 ### Regional support
@@ -215,15 +215,13 @@ Premium enables widespread distribution of content by Pro users without requirin
 
 To learn more, see [Power BI licensing](service-admin-licensing-organization.md).
 
-## Analysis Services in Power BI Premium (Preview)
+## Microsoft and third-party tool connectivity (Preview)
 
 Under the hood, the enterprise proven Microsoft Analysis Services Vertipaq engine powers Power BI datasets. Analysis Services provides  programmability, client application, and tool support through client libraries and APIs that support the open-standard XMLA protocol. Currently, Power BI Premium datasets support *read-only* operations from Microsoft and third-party client applications and tools through XMLA endpoints.  
 
 Microsoft tools like SQL Server Management Studio and SQL Server Profiler, and third-party apps such as DAX Studio and data visualization applications, can connect to and query Premium datasets by using XMLA, DAX, MDX, DMVs, and Trace events.
 
 ![SSMS](media/service-premium-connect-tools/connect-tools-ssms.png)
-
-Read/write operations will be coming in a future update. With read/write, dataset-level operations and interfaces will be exposed through the [Tabular Object Model (TOM)](https://docs.microsoft.com/bi-reference/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) client library, [Tabular Model Scripting Language (TMSL)](https://docs.microsoft.com/bi-reference/tmsl/tabular-model-scripting-language-tmsl-reference), and an extensive set of PowerShell cmdlets for administrative and database management operations. 
 
 To learn more, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md).
 
