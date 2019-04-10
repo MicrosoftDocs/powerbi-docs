@@ -56,7 +56,7 @@ Any variables defined in the underlying SAP HANA view will be displayed at the t
 
 The modeling operations allowed are more restrictive than in the general case when using DirectQuery, given the need to ensure that correct aggregate data can always be obtained from SAP HANA. However, it's still possible to make many additions and changes, including defining measures, renaming and hiding fields, and defining display formats. All such changes will be preserved on refresh, and any non-conflicting changes made to the SAP HANA view will be applied. 
 
-### Additional Modeling Restrictions
+### Additional modeling restrictions
 
 The primary additional modeling restrictions when connecting to SAP HANA using DirectQuery (treat as multi-dimensional source) are the following: 
 
@@ -67,7 +67,7 @@ The primary additional modeling restrictions when connecting to SAP HANA using D
 * **Column and measure details are fixed:** The list of columns and measures seen in the field list are fixed by the underlying source, and cannot be modified. For example, it's not possible to delete a column, nor change its datatype (it can, however, be renamed).
 * **Additional limitations in DAX:** There are additional limitations on the DAX that can be used in measure definitions, to reflect limitations in the source. For example, it's not possible to use an aggregate function over a table.
 
-### Additional Visualization Restrictions
+### Additional visualization restrictions
 
 There are restrictions in visuals when connecting to SAP HANA using DirectQuery (treat as multi-dimensional source): 
 * **No aggregation of columns:** It's not possible to change the aggregation for a column on a visual, and it is always *Do Not Summarize*.
@@ -114,7 +114,7 @@ Let's look at an example. In the following example, selecting five columns (**Ca
    
 Because of this behavior, we recommend the items selected in **Get Data** or **Query Editor** be limited to those items that are needed, while still resulting in a reasonable query for SAP HANA.  
 
-## Best Practices 
+## Best practices 
 
 For both approaches to connecting to SAP HANA, recommendations for using DirectQuery also apply to SAP HANA, particularly those related to ensuring good performance. These recommendations are described in detail in the article [using DirectQuery in Power BI](desktop-directquery-about.md).
    

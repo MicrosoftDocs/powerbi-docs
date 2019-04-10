@@ -282,7 +282,7 @@
       - name: "Conditional table formatting"
         href: desktop-conditional-table-formatting.md
       - name: "Conditional expression-based title formatting"
-        href: desktop-conditional-formatting-visual-titles.md        
+        href: desktop-conditional-format-visual-titles.md        
       - name: "Sort by column in Power BI Desktop"
         href: desktop-sort-by-column.md
       - name: "Create reports optimized for mobile apps"
