@@ -16,15 +16,15 @@ LocalizationGroup: Connect to data
 # DirectQuery and SAP HANA
 ‎You can connect to **SAP HANA** data sources directly using **DirectQuery**. There are two options when connecting to SAP HANA:
 
-* **Treat SAP HANA as a multi-dimensional source (default):**  In this case, the behavior will be similar to when Power BI connects to other multi-dimensional sources like SAP Business Warehouse, or Analysis Services. When connecting to SAP HANA using this setting, a single analytic or calculation view is selected, and all the measures, hierarchies and attributes of that view will be available in the field list. As visuals are created, the aggregate data will always be retrieved from SAP HANA. This is the recommended approach, and is the default for new DirectQuery reports over SAP HANA.
+* **Treat SAP HANA as a multi-dimensional source (default):**  In this case, the behavior will be similar to when Power BI connects to other multi-dimensional sources like SAP Business Warehouse, or Analysis Services. When connecting to SAP HANA using this setting, a single analytic or calculation view is selected and all the measures, hierarchies and attributes of that view will be available in the field list. As visuals are created, the aggregate data will always be retrieved from SAP HANA. This is the recommended approach, and is the default for new DirectQuery reports over SAP HANA.
 
-* **Treat SAP HANA as a relational source:** In this case, Power BI treats SAP HANA as a relational source. This offers greater flexibility, but care must be taken to ensure that measures are aggregated as expected, and to avoid performance issues.
+* **Treat SAP HANA as a relational source:** In this case, Power BI treats SAP HANA as a relational source. This offers greater flexibility. Care must be taken with this approach to ensure that measures are aggregated as expected, and to avoid performance issues.
 
-The approach used to connect is determined by a global tool option, which is set by selecting **File > Options and settings** and then **Options > DirectQuery**, then selecting the option **Treat SAP HANA as a relational source**, as shown in the following image. 
+The connection approach is determined by a global tool option, which is set by selecting **File > Options and settings** and then **Options > DirectQuery**, then selecting the option **Treat SAP HANA as a relational source**, as shown in the following image. 
 
 ![](media/desktop-directquery-sap-hana/directquery-sap-hana_01a.png)
 
-The option to treat SAP HANA as a relational source controls the approach used for any *new* report using DirectQuery over SAP HANA. It has no effect on any existing SAP HANA connections in the current report, nor on connections in any other reports that are opened. So if the option is currently unchecked, then upon adding a new connection to SAP HANA using **Get Data**, that connection will be made treating SAP HANA as a multi-dimensional source. However, if a different report is opened that also connects to SAP HANA, then that report will continue to behave according to the option that was set *at the time it was created*. This means that any reports connecting to SAP HANA that were created prior to February 2018 will continue to treat SAP HANA as a relational source. 
+The option to treat SAP HANA as a relational source controls the approach used for any *new* report using DirectQuery over SAP HANA. It has no effect on any existing SAP HANA connections in the current report, nor on connections in any other reports that are opened. So if the option is currently unchecked, then upon adding a new connection to SAP HANA using **Get Data**, that connection will be made treating SAP HANA as a multi-dimensional source. However, if a different report is opened that also connects to SAP HANA, then that report will continue to behave according to the option that was set *at the time it was created*, which means that any reports connecting to SAP HANA that were created prior to February 2018 will continue to treat SAP HANA as a relational source. 
 
 The two approaches constitute different behavior, and it's not possible to switch an existing report from one approach to the other. 
 
@@ -34,7 +34,7 @@ Let's look at more detail about each of these two approaches, in turn.
 
 All new connections to SAP HANA use this connection method by default, treating SAP HANA as a multi-dimensional source. In order to treat a connection to SAP HANA as a relational source, you must select **File > Options and settings > Options**, then check the box under **Direct Query > Treat SAP HANA as a relational source**. While this feature is in **Preview**, reports created using the multi-dimensional approach *cannot* be published to the Power BI service, and doing so will result in errors when the report is opened within the Power BI service.  
 
-When connecting to SAP HANA as a multi-dimensional source, the following applies:
+When connecting to SAP HANA as a multi-dimensional source, the following considerations apply:
 
 * In the **Get Data Navigator**, a single SAP HANA view can be selected. It is not possible to select individual measures or attributes. There is no query defined at the time of connecting, which is different from importing data or when using DirectQuery while treating SAP HANA as a relational source. This also means that it's not possible to directly use an SAP HANA SQL query when selecting this connection method.
 
