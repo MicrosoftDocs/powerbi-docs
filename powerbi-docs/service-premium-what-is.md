@@ -109,7 +109,7 @@ Table notes:
 
 ### Regional support
 
-When creating a new capacity, Office 365 Global administrators and Power BI service administrators can specify a region where workspaces assigned to the capacity will reside. This is known as Multi-Geo. With Multi-Geo, organizations can meet data residency requirements by deploying content to datacenters in a specific region, even if it's different than the region in which the Office 365 Subscription resides. To learn more, see [Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md).
+When creating a new capacity, Office 365 Global administrators and Power BI service administrators can specify a region where workspaces assigned to the capacity will reside. This is known as **Multi-Geo**. With Multi-Geo, organizations can meet data residency requirements by deploying content to datacenters in a specific region, even if it's different than the region in which the Office 365 Subscription resides. To learn more, see [Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md).
 
 ### Capacity management
 
@@ -137,7 +137,7 @@ Monitoring in the portal provides a quick view with high-level metrics indicatin
 
 ![Admin portal](media/service-premium-what-is/premium-admin-portal-health.png)
 
-The **Power BI Premium Capacity Metrics** app, however, provides the most in-depth information into how your capacities are performing. The app provides a high-level dashboard.
+The **Power BI Premium Capacity Metrics** app provides the most in-depth information into how your capacities are performing. The app provides a high-level dashboard and more detailed reports.
 
 ![Metrics app dashboard](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
@@ -213,13 +213,13 @@ Premium enables widespread distribution of content by Pro users without requirin
 
 To learn more, see [Power BI licensing](service-admin-licensing-organization.md).
 
-## Microsoft and third-party tool connectivity (Preview)
+## Tool connectivity (Preview)
 
-Under the hood, the enterprise proven Microsoft Analysis Services Vertipaq engine powers Power BI datasets. Analysis Services provides  programmability, client application, and tool support through client libraries and APIs that support the open-standard XMLA protocol. Currently, Power BI Premium datasets support *read-only* operations from Microsoft and third-party client applications and tools through XMLA endpoints.  
+Under the hood, the enterprise proven Microsoft **Analysis Services Vertipaq engine** powers Power BI datasets. Analysis Services provides  programmability  and client application and tool support through client libraries and APIs that support the open-standard XMLA protocol. Currently, Power BI Premium datasets support *read-only* operations from Microsoft and third-party client applications and tools through **XMLA endpoints**. 
 
-Microsoft tools like SQL Server Management Studio and SQL Server Profiler, and third-party apps such as DAX Studio and data visualization applications, can connect to and query Premium datasets by using XMLA, DAX, MDX, DMVs, and Trace events.
+Microsoft tools like SQL Server Management Studio and SQL Server Profiler, and third-party apps such as DAX Studio and data visualization applications, can connect to and query Premium datasets by using XMLA, DAX, MDX, DMVs, and Trace events. 
 
-![SSMS](media/service-premium-connect-tools/connect-tools-ssms.png)
+![SSMS](media/service-premium-what-is/connect-tools-ssms-dax.png)
 
 To learn more, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md).
 

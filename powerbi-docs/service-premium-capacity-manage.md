@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/09/2019
+ms.date: 04/10/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -85,23 +85,22 @@ In the Power BI service, a workspace assigned to a Premium capacity is easily id
 
 Monitoring Premium capacities provides administrators with an understanding of how the capacities are performing. Capacities can be monitored by using the Power BI Admin portal or the **Power BI Premium Capacity Metrics** (Power BI) app.
 
-> [!NOTE]
-> The monitoring experience in the portal and in the app is frequently updated. For the latest information, refer to the [Monitor capacities in the Admin portal](service-admin-premium-monitor-portal.md) and [Monitor Premium capacities with the app](service-admin-premium-monitor-capacity.md) articles.
-
 ### Power BI Admin portal
 
-The Power BI Admin portal allows monitoring of four summary tiles which report on loads placed on the capacity resources. The four summary tiles are:
+In the Admin portal, for each capacity, the **Health** tab provides summary metrics for the capacity and each enabled workload. Metrics show an average over the past seven days.  
 
-- **CPU** - Number of times CPU exceeded 80% utilization.
-- **Memory Thrashing** - Number of times exceeded 80%, representing memory pressure on the backend v-cores. Specifically, it's a measure of how many times a dataset was evicted from memory due to memory pressure and the demand for more active datasets.
-- **Memory Usage** - Average memory usage (in GB).
-- **Direct Query** - Number of times DQ and LC queries - measured per second - exceeded 80% of the limit.
+At the capacity level, metrics are cumulative of all enabled workloads. the following metrics are provided:
 
-Tile values are calculated over an hourly time window to indicate how many hours in the past seven days corresponded to the metric threshold. It's important to understand that exceeding a threshold is not necessarily a dire situation, but possibly an indication of performance degradation.
+- **CPU UTILIZATION** - Provides average CPU utilization as a percentage of total available CPU for the capacity.  
+- **MEMORY USAGE** - Provides average memory usage (in GB) as a total of available memory for the capacity. 
 
-By clicking on a summary tile, it's possible to click through to a report to view the metric as a line chart over the past seven days. The data presented in the chart is a summary of hourly results that can help you determine what was taking place at a specific hour.
+For each enabled workload, CPU utilization and memory usage are provided, as well as a number of workload specific metrics. For example, for the Dataflow workload, **Total Count** shows total refreshes for each dataflow, and **Average Duration** shows the average duration of refresh for the dataflow.
 
-The monitoring capabilities in the Power BI Admin portal are basic and are designed to provide a quick understanding of key system metrics. For more detailed monitoring, it's recommended that you use the Power BI Premium Capacity Metrics app.
+![Capacity Health tab in the portal](media/service-premium-capacity-manage/admin-portal-health-dataflows.png)
+
+To learn more about all available metrics for each workload, see [Monitor capacities in the Admin portal](service-admin-premium-monitor-portal.md).
+
+The monitoring capabilities in the Power BI Admin portal are designed to provide a quick summary of key capacity metrics. For more detailed monitoring, it's recommended you use the **Power BI Premium Capacity Metrics** app.
 
 ### Power BI Premium Capacity Metrics app
 
