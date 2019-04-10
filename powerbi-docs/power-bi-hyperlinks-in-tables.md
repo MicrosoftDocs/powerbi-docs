@@ -44,11 +44,11 @@ The procedure for adding a hyperlink depends on whether you've imported the data
    
 1. If you don't want to display a long URL in a table, you can display a hyperlink icon  ![Hyperlink icon](media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png) instead. Note that you can't display icons in matrixes.
    
-   * Select the chart to make it active.
-   * Select the Format icon ![Paint roller icon](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) to open the Formatting tab.
-   * Expand **Values**, locate **URL icon**, and turn it to **On.**
-      ![Turn on URL icon](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
-6. (Optional) [Publish the report from Desktop to Power BI service](guided-learning/publishingandsharing.yml?tutorial-step=2) and open the report in Power BI service. The hyperlinks will work there as well.
+    Select the chart to make it active.
+    Select the Format icon ![Paint roller icon](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) to open the Formatting tab.
+    Expand **Values**, locate **URL icon**, and turn it to **On.**
+    ![Turn on URL icon](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
+1. (Optional) [Publish the report from Desktop to Power BI service](guided-learning/publishingandsharing.yml?tutorial-step=2) and open the report in Power BI service. The hyperlinks will work there as well.
 
 ### For data connected with DirectQuery
 You can't create a new column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
