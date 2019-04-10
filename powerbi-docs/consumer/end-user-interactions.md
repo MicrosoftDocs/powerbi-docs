@@ -24,7 +24,7 @@ By default, visualizations on a report page can be used to cross-filter, cross-h
 
 See [About filtering and highlighting](../power-bi-reports-filters-and-highlighting.md). And if you have a visualization that supports [drilling](../power-bi-visualization-drill-down.md), by default, drilling one visualization has no impact on the other visualizations on the report page. 
 
-Exactly how the visuals on a page interact is set by the report *designer*. Designers have options to turn visual interactions on and off, and to change the default cross-filtering,  cross-highlighting, and drilling behavior.
+Exactly how the visuals on a page interact is set by the report *designer*. Designers have options to turn visual interactions on and off, and to change the default cross-filtering,  cross-highlighting, and drilling behavior. Note that if you use visual A to visually interact with visual B, visual-level filters from visual A will be applied to visual B.
   
 > [!NOTE]
 > The terms *cross-filter* and *cross-highlight* are used to distinguish the behavior described here from what happens when you use the **Filters** pane to filter and highlight visualizations.  
