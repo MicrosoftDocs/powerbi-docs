@@ -40,9 +40,9 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
    
      The app for the workspace will have the same name and icon as the workspace.
    
-1. Here are some optional items you can specify for your workspace:
+1. Here are some optional items you can set for your workspace:
 
-    Upload an image. Files can be .png or .jpg format, and file size has to be less than 45 KB.
+    Upload a **Workspace image**. Files can be .png or .jpg format. File size has to be less than 45 KB.
     
     Add a **Contact list**. By default, the workspace admins are the contacts. 
     
