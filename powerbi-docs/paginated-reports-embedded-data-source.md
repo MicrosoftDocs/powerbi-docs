@@ -20,11 +20,16 @@ In this article, you learn how to create and modify an embedded data source for 
 - SQL Server Analysis Services
 - Azure Analysis Services
 
+You may also connect to the following data sources in Power BI Report Builder, but can't yet publish them to the Power BI service
+- Power BI Premium Datasets (Preview)
+- Oracle (Preview)
+- Teradata (Preview)
+
 Paginated reports connect to on-premises data sources by way of a gateway. You set up the gateway after you publish the report to the Power BI service. Read more about [Power BI gateways](service-gateway-getting-started.md). 
 
 ## Create an embedded data source
   
-1. Open Report Builder.
+1. Open Power BI Report Builder.
 
 1. On the toolbar in the Report Data pane, select **New** > **Data Source**. The **Data Source Properties** dialog box opens.
 
