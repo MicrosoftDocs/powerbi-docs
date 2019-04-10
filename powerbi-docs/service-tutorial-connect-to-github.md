@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 04/09/2019
+ms.date: 04/10/2019
 ms.author: maggies
 #customer intent: "As a Power BI end user, I want to connect to GitHub as an example, so I understand how to connect to my data on other services."
 
@@ -37,11 +37,11 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 
 To complete this tutorial, you need a GitHub account, if you don't already have one. 
 
-- Sign up for a [GitHub account](https://docs.microsoft.com/contribute/get-started-setup-github)
+- Sign up for a [GitHub account](https://docs.microsoft.com/contribute/get-started-setup-github).
 
 
 ## How to connect
-1. Sign in to the Power BI service (http://powerbi.com). 
+1. Sign in to the Power BI service (https://app.powerbi.com). 
 2. In the left navigation pane, select **Apps**, then **Get apps**.
    
    ![Power BI Get apps](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
@@ -50,7 +50,7 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
    
    ![Power BI Get GitHub](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-app-source.png) 
 
-4. In **Install this Power BI App?**, select **Install**.
+4. In **Install this Power BI App?** select **Install**.
 5. In **Your new app is ready**, select **Go to app**.
 6. In **Get started with your new app**, select **Connect data**.
 
@@ -72,7 +72,7 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 9. Select the arrow next to the workspace name in the left navigation bar. You see the workspace contains a dashboard and a report. 
 10. Select the ellipsis (...) next to the dashboard name > **Rename** > type **GitHub dashboard**.
  
-   ![Power BI GitHub tile](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
+    ![Power BI GitHub tile](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
 
 8. Select the global navigation icon to minimize the left navigation, so you have more room.
 
@@ -80,7 +80,7 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
 10. Select your GitHub dashboard.
     
-    The GitHub dashboard opens. This is live data, so the values you see may be different.
+    The GitHub dashboard contains live data, so the values you see may be different.
 
     ![GitHub dashboard in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
 
@@ -88,7 +88,7 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
 ## Ask a question
 
-11. Put your cursor in **Ask a question about your data**. Power BI offers **Questions to get your started**. 
+1. Put your cursor in **Ask a question about your data**. Power BI offers **Questions to get your started**. 
 
 1. Select **how many users are there**.
  
@@ -101,7 +101,7 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
     ![How many pull requests per user are there](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-prs.png)
 
 
-13. Select **Exit Q&A**.
+13. Select the pin to pin it to your dashboard, then **Exit Q&A**.
 
 ## View the GitHub report 
 
