@@ -87,7 +87,7 @@ Select **Text/CSV File** as a data source.
 
 In the next screen, you're prompted to connect to a data source. Paste the link to the data you used to create your Azure ML model. If you used the _Automotive Pricing_ data, you can paste the following link into the **File path or URL** box and then **Next**.
 
-`https://github.com/MicrosoftLearning/Principles-of-Machine-Learning-Python/blob/master/Module7/Automobile%20price%20data%20_Raw_.csv`
+`https://raw.githubusercontent.com/MicrosoftLearning/Principles-of-Machine-Learning-Python/master/Module7/Automobile%20price%20data%20_Raw_.csv`
 
 ![Connect to data source](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
 
