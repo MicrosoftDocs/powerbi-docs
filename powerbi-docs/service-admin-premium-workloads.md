@@ -26,7 +26,7 @@ In addition to the **Max Memory** setting, the AI workload has an additional set
 ### Datasets (Preview)
 
 By default, the Datasets workload is enabled and cannot be disabled. 
-This workload contains an additional setting, **XMLA Endpoint**. The default is **1**, meaning enabled. This setting specifies connections from client applications honor the security group membership set at the workspace and app levels. To learn more, see [Connect to datasets with client applications and tools](service-premium-connect-toolsmd).
+This workload contains an additional setting, **XMLA Endpoint**. The default is **1**, meaning enabled. This setting specifies connections from client applications honor the security group membership set at the workspace and app levels. To learn more, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md).
 
 ### Dataflows
 
@@ -37,7 +37,7 @@ When refreshing a dataflow, the dataflow workload spawns a container for each en
 - Dataflows take too long to refresh, or dataflow refresh fails on a timeout.
 - Dataflow entities include computation steps, for example, a join.  
 
-It's recommend you use the [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity..md) app to analyze Dataflow workload performance. 
+It's recommend you use the [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) app to analyze Dataflow workload performance. 
 
 In some cases, increasing container size may not improve performance. For example, if the dataflow is getting data only from a source without performing significant calculations, changing container size probably won’t help. Increasing container size might help if it will enable the Dataflow workload to allocate more memory for entity refresh operations. By having more memory allocated, it can reduce the time it takes to refresh heavily computed entities. 
 
