@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/04/2019
+ms.date: 04/09/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -42,7 +42,7 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
    
 1. Here are some optional items you can specify for your workspace:
 
-    Upload an image. The file size has to be less than 45 KB.
+    Upload an image. Files can be .png or .jpg format, and file size has to be less than 45 KB.
     
     Add a **Contact list**. By default, the workspace admins are the contacts. 
     
