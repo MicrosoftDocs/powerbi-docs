@@ -88,7 +88,7 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
 ## Ask a question
 
-11. Put your cursor in **Ask a question about your data**. Power BI offers **Questions to get your started**. 
+1. Put your cursor in **Ask a question about your data**. Power BI offers **Questions to get your started**. 
 
 1. Select **how many users are there**.
  
