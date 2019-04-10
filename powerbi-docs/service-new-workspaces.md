@@ -92,7 +92,7 @@ With the new workspaces, we're redesigning some features. Here are the changes y
 The new **Contact list** feature available under **Advanced** in **Workspace settings** or when creating workspaces allows you to specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can customize the list. Users or groups listed in the contact list will be shown in the user interface (UI) to help users get help related to the workspace. 
 
 ## Workspace OneDrive
-The Workspace OneDrive feature allows you to configure an Office 365 Group whose SharePoint Document Library file storage will be available to workspace users. The group needs to be created outside of Power BI. You can configure it by typing the Office 365 Group name, which will automatically pickup the OneDrive for the group.
+The Workspace OneDrive feature allows you to configure an Office 365 Group whose SharePoint Document Library file storage will be available to workspace users. The group needs to be created outside of Power BI. You can configure it by typing the Office 365 Group name, which automatically picks up the OneDrive for the group.
 
 Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Office 365 Group membership. The best practice is to manage workspace access through the same Office 365 Group whose file storage you configure in this setting. After you've configured the OneDrive, you can get to it from a few different places in the workspace:
 
@@ -118,7 +118,7 @@ The following activities are audited by Power BI for new workspace experience wo
 | Updated Power BI folder | UpdateFolder |
 | Updated Power BI folder access| UpdateFolderAccess |
 
-More details on Power BI auditing can be found [here](service-admin-auditing.md#activities-audited-by-power-bi).
+Read more about [Power BI auditing](service-admin-auditing.md#activities-audited-by-power-bi).
 
 ## Limitations and considerations
 
