@@ -335,7 +335,7 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 
 Capacity workloads are services made available to users. By default, Premium and Azure capacities support only a dataset workload associated with running Power BI queries which cannot be disabled.
 
-Additional workloads can be enabled for paginated reports and dataflows. Each additional workload requires configuring the maximum memory (as a percentage of total available memory) that can be used by the workload.
+Additional workloads can be enabled for paginated reports, dataflows, and AI. Each additional workload requires configuring the maximum memory (as a percentage of total available memory) that can be used by the workload.
 
 #### How Capacities Function
 
@@ -343,13 +343,13 @@ At all times, the Power BI service strives to make the best use of capacity reso
 
 Capacity operations are classified as either interactive or background. Interactive operations include rendering requests and responding to user interactions (filtering, Q&A querying, etc.). Generally, import model querying is memory resource-intensive, while querying LC/DQ models is CPU-intensive. Background operations include dataflow and import model refreshes, and dashboard query caching.
 
-It is important to understand that interactive operations are always prioritized over background operations to ensure the best possible user experience. If there are insufficient resources, background operations are added to a queue for processing when resources free up. Background operations, like dataset refreshes, can be stopped mid-process by the Power BI service and added to a queue.
+It is important to understand that interactive operations are always prioritized over background operations to ensure the best possible user experience. If there are insufficient resources, background operations are added to a queue for processing when resources free up. Background operations, like dataset refreshes and AI functions, can be stopped mid-process by the Power BI service and added to a queue.
 
 Import models must be fully loaded into memory so that they can be queried or refreshed. The Power BI service manages memory usage by using sophisticated algorithms to ensure maximum use of available memory, and can achieve overcommitting the capacity: While it is possible for a capacity to store many import models (up to 100 TB per Premium capacity), when their combined disk storage exceeds the supported memory (and additional memory is required for querying and refresh), then they cannot all be loaded into memory at the same time.
 
 Import models are therefore loaded into - and removed from - memory according to usage. An import model is loaded when it is queried (interactive operation) and not yet in memory, or when it is to be refreshed (background operation).
 
-The removal of a model from memory is known as **eviction** , and it is an operation that Power BI can perform quickly depending on the size of the models. If the capacity is not experiencing any memory pressure, models are simply loaded into memory and remain there. \[[10](#endnote-10)\] However, when insufficient memory is available to load a model, the Power BI service will first need to free up memory. It frees up memory by detecting models that have become inactive by seeking models which have not been used in the last three minutes \[[11](#endnote-11)\], and then evicting them. If there are no inactive models to evict, the Power BI service seeks to evict models loaded for background operations. A last resort, after 30 seconds of failed attempts \[[11](#endnote-11)\], is to fail the interactive operation. In this case, the report user is gracefully notified of failure with a suggestion to try again shortly.
+The removal of a model from memory is known as **eviction** , and it is an operation that Power BI can perform quickly depending on the size of the models. If the capacity is not experiencing any memory pressure, models are simply loaded into memory and remain there. \[[10](#endnote-10)\] However, when insufficient memory is available to load a model, the Power BI service will first need to free up memory. It frees up memory by detecting models that have become inactive by seeking models which have not been used in the last three minutes \[[11](#endnote-11)\], and then evicting them. If there are no inactive models to evict, the Power BI service seeks to evict models loaded for background operations. This may include the eviction of background workloads like the AI workload. A last resort, after 30 seconds of failed attempts \[[11](#endnote-11)\], is to fail the interactive operation. In this case, the report user is gracefully notified of failure with a suggestion to try again shortly.
 
 It is important to stress that dataset eviction is a normal and expected behavior. It strives to maximize memory usage by loading and unloading models whose combined sizes can exceed available memory. This is by design, and completely transparent to report users. High eviction rates do not necessarily mean the capacity is insufficiently resourced. They can, however, become a concern if query or refresh responsiveness is suffering because of high eviction rates.
 
@@ -397,7 +397,7 @@ Power BI service administrators and Office 365 Global Administrators can modify 
 
 Assignment permissions are required to assign a workspace to a specific Premium capacity. The permissions can be granted to the entire organization, specific users or groups.
 
-By default, Premium capacities support workloads associated with running Power BI queries. It also supports two additional workloads: **Paginated Reports** and **Dataflows**. Each workload requires configuring the maximum memory (as a percentage of total available memory) that can be used by the workload. It is important to understand that increasing maximum memory allocations can impact on the number of active models that can be hosted, and the throughput of refreshes.
+By default, Premium capacities support workloads associated with running Power BI queries. It also supports three additional workloads: **Paginated Reports**, **Dataflows**, and **AI**. Each workload requires configuring the maximum memory (as a percentage of total available memory) that can be used by the workload. It is important to understand that increasing maximum memory allocations can impact on the number of active models that can be hosted, and the throughput of refreshes.
 
 Memory is dynamically allocated to dataflows, but it is statically allocated to paginated reports. The reason for statically allocating the maximum memory is that paginated reports run within a secured contained space of the capacity. Care should be taken when setting paginated reports memory as it reduces available memory for loading models.
 
@@ -405,6 +405,7 @@ Memory is dynamically allocated to dataflows, but it is statically allocated to 
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
 | Paginated reports | N/A | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
 | Dataflows | 20% default; 8% minimum  | 20% default; 4% minimum  | 20% default; 2% minimum | 20% default; 1% minimum  |
+| AI | 20% default; 50% minimum  | 20% default; 20% minimum  | 20% default; 10% minimum | 20% default; 5% minimum  |
 | | | | | |
 
 Deleting a Premium capacity is possible and will not result in the deletion of its workspaces and content. Instead, it will move any assigned workspaces to shared capacity. When the Premium capacity was created in a different region, the workspace will be moved to shared capacity of the home region.
@@ -457,23 +458,25 @@ The **Power BI Premium Capacity Metrics** app is a Power BI app available to Cap
 
 ![Power BI Premium Capacity Metrics app](media/whitepaper-premium-deployment/capacity-metrics-app.png)
 
-When the app opens, the dashboard is loaded to present numerous tiles expressing an aggregated view over all capacities of which the user is a Capacity Admin. The dashboard layout includes five main sections:
+When the app opens, the dashboard is loaded to present numerous tiles expressing an aggregated view over all capacities of which the user is a Capacity Admin. The dashboard layout includes the following main sections:
 
-1. **Overview** : App version, number of capacities and workspaces
-2. **System Summary** : Memory and CPU metrics
-3. **Dataset Summary** : Number of datasets, DQ/LC, refresh and query metrics
-4. **Dataflow Summary** : Number of dataflows, and dataset metrics
-5. **Paginated Report Summary** : Refresh and view metrics
+- **Overview**: App version, number of capacities and workspaces
+- **System Summary**: Memory and CPU metrics
+- **Dataset Summary**: Number of datasets, DQ/LC, refresh and query metrics
+- **Dataflow Summary**: Number of dataflows, and dataset metrics
+- **Paginated Report Summary**: Refresh and view metrics
+- **AI Summary**: Number of operations, and dataset metrics
 
 The underlying report (from which the dashboard tiles were pinned) can be accessed by clicking on any dashboard tile. It provides a more detailed perspective of each of the dashboard sections and supports interactive filtering. Filtering can be achieved by setting slicers by date range, capacity, workspace and workload (report, dataset, dataflow), and by selecting elements within report visuals to cross filter the report page. Cross filtering is a powerful technique to narrow down to specific time periods, capacities, workspaces, datasets, etc. and can be very helpful when performing root cause analysis.
 
-The report consists of the following five pages:
+The report consists of the following pages:
 
-1. **Datasets** : Displays detailed metrics on dataset health. Button selection reveals different perspectives: Summary, Refreshes, Query Durations, Query Waits and Datasets
-1. **Paginated Reports** : Displays detailed metrics on paginated report health
-1. **Dataflows** : Displays detailed metrics on dataflow health
-1. **System** : Displays overall capacity metrics, including memory and CPU utilization
-1. **Display Names and IDs** : Displays names, IDs, and owners for capacities, workspaces and workloads
+- **Datasets**: Displays detailed metrics on dataset health. Button selection reveals different perspectives: Summary, Refreshes, Query Durations, Query Waits and Datasets
+- **Paginated Reports**: Displays detailed metrics on paginated report health
+- **Dataflows**: Displays detailed metrics on dataflow health
+- **AI**: Displays detailed metrics on the AI workload health
+- **System**: Displays overall capacity metrics, including memory and CPU utilization
+- **Display Names and IDs**: Displays names, IDs, and owners for capacities, workspaces and workloads
 
 The reports pages include different perspectives accessible by clicking buttons. Report visuals allow monitoring metrics over time to compare them against system resource usage.
 
@@ -578,6 +581,19 @@ The following tables show workload-related metrics.
 | Average duration | Average total time to process all phases of a report view (in ms) in the past seven days |
 | |
 
+##### AI
+
+| Metric | Description |
+| --- | --- |
+|    Calls    |    Number of calls to AI functions by function type in the   past seven days    |
+|    Average row   count    |    Average number of rows for each call in the past seven days    |
+|    Average   input size    |    Average size of the input data in bytes in the past seven   days    |
+|    Average   output size    |    Average size of the output data in bytes in the past seven   days    |
+|    Average   duration    |    Average duration of API calls (in ms) in the past seven   days    |
+|    Average wait time    |    Average wait time (in ms) for an AI call in the past seven   days    |
+|    Success/Failure    |    Number of successes and failures in the past seven days    |
+|         |         |
+
 The app is likely to undergo frequent version updates. For up to date information, refer to the [Monitor Power BI Premium and Power BI Embedded capacities](service-admin-premium-monitor-capacity.md) document.
 
 #### Interpreting Metrics
@@ -598,7 +614,7 @@ In general, slow reports can be an indication of an over-heating capacity. When 
   - CPU saturation
   - Complex report designs with an excessive number of visuals on a page (recall that each visual is a query)
 - **Long query durations** can indicate that model designs are not optimized, especially when multiple datasets are active in a capacity, and just one dataset is producing long query durations. This suggests that the capacity is sufficiently resourced, and that the in-question dataset is sub-optimal or just slow. Long running queries can be problematic as they can block access to resources required by other processes.
-- **Long refresh wait times** indicate insufficient memory due to many active models consuming memory, or that a problematic refresh is blocking other refreshes (exceeding parallel refresh limits).
+- **Long refresh wait times or AI call wait times** indicate insufficient memory due to many active models consuming memory, or that a problematic refresh is blocking other refreshes (exceeding parallel refresh limits).
 
 A more detailed explanation of how to use the metrics is covered next in the [Optimizing Premium Capacities](#optimizing-premium-capacities) section.
 
@@ -649,10 +665,11 @@ Key metrics to monitor include:
 - Average and maximum query durations
 - Average query wait times
 - Average dataset and dataflow refresh times
+- Average AI call times and wait times
 
 Additionally, in the Power BI Premium Capacity Metrics App, active memory shows the total amount of memory allocated to a report that cannot be evicted because it is in use in the last three minutes. A high spike in refresh wait time could be correlated with a large and/or active dataset.
 
-The "Top 5 by Average Duration" chart highlights the top five datasets, paginated reports and dataflows consuming capacity resources. Content in the top five lists are candidates for investigation and possible optimization.
+The "Top 5 by Average Duration" chart highlights the top five datasets, paginated reports, dataflows, and AI calls consuming capacity resources. Content in the top five lists are candidates for investigation and possible optimization.
 
 #### Why are reports slow?
 
@@ -742,6 +759,12 @@ When the data refresh commences but fails to complete, it can be due to several 
 
 Capacity Admins (and Power BI service administrators) can monitor the **Refresh Failures due to out of Memory** metric.
 
+#### Why are AI calls failing?
+
+AI calls can fail for multiple reasons. The minimum memory required to start the AI workload is 5 GB, but this may not be sufficient for some input datasets. For instance, automated machine learning model training requires at least twice, and sometimes multiple times the input dataset size. Also, an AI call is terminated if it takes longer than two hours to complete. For automated machine learning model training calls that don't complete in two hours, the best model found in those two hours is returned.  AI calls can also be interrupted by interactive requests, which take precedence.
+
+Admins should monitor AI wait times for signs of other requests taking precedence. Admins can also ensure that sufficient memory is available for the AI workload relative to input data sizes. This can involve isolating AI workloads to capacities known to have sufficient resources. It is also possible that admins could coordinate with dataflow owners to help stagger or reduce dataflow refresh times to minimize collisions. Note, it is not possible for an admin to view the AI call queue.
+
 ### Optimizing Models
 
 Optimal model design is crucial to delivering an efficient and scalable solution. However, it is beyond the scope of this whitepaper to provide a complete discussion. Instead, this section will provide key areas for consideration when optimizing models.
@@ -816,7 +839,7 @@ Capacity Admins will therefore need to consider many factors specific to your en
 - **Concurrent active models** : The concurrent querying of different import models will deliver best responsiveness and performance when they remain in memory. There should be sufficient memory to host all heavily-queried models, with additional memory to allow for their refresh.
 - **Import model refresh** : The refresh type (full or incremental), duration and complexity of Power Query queries and calculated table/column logic can impact on memory and especially processor usage. Concurrent refreshes are constrained by the capacity size (1.5 x backend v-cores, rounded up).
 - **Concurrent queries** : Many concurrent queries can result in unresponsive reports when processor or LC/DQ connections exceeds the capacity limit. This is especially the case for report pages that include many visuals.
-- **Dataflows and paginated reports:** The capacity can be configured to support dataflows and paginated reports, with each requiring a configurable maximum percentage of capacity memory. Memory is dynamically allocated to dataflows, but it is statically allocated to paginated reports.
+- **Dataflows, paginated reports, and AI functions** : The capacity can be configured to support dataflows, paginated reports and AI functions, with each requiring a configurable maximum percentage of capacity memory. Memory is dynamically allocated to dataflows, but it is statically allocated to paginated reports and the AI workload.
 
 In addition to these factors, Capacity Admins can consider creating multiple capacities. Multiple capacities allow for the isolation of workloads and can be configured to ensure priority workloads have guaranteed resources. For example, two capacities can be created to separate business-critical workloads from self-service BI (SSBI) workloads. The business-critical capacity can be used to isolate large corporate models providing them with guaranteed resources, with authoring access granted only to the IT department. The SSBI capacity can be used to host a growing number of smaller models, with access granted to business analysts. The SSBI capacity may at times experience query or refresh waits that are tolerable.
 
@@ -842,7 +865,7 @@ In this section, several real-world scenarios will be introduced to describe com
 - [Identifying slow-responding datasets](#identifying-slow-responding-datasets)
 - [Identifying causes for sporadically slow-responding datasets](#identifying-causes-for-sporadically-slow-responding-datasets)
 - [Determining whether there is enough memory](#determining-whether-there-is-enough-memory)
-- [Determining whether there is enough CPU](#determining-whether-there-is-enough-CPU)
+- [Determining whether there is enough CPU](#determining-whether-there-is-enough-cpu)
 
 The steps, along with chart and table examples are from the **Power BI Premium Capacity Metrics App** (app) that a Power BI administrator will have access to.
 
