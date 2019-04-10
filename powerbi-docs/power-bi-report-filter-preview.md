@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 04/10/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -47,7 +47,8 @@ After you restart Power BI Desktop, it's enabled by default for all new reports 
 You can also enable the new filters for existing reports.
 
 1. In Power BI Desktop in an existing report, select **File** > **Options and Settings** > **Options**
-2. Under **Report settings**, select **Enable the updated filter pane, and show filters in the visual header for this report**.
+2. In the left navigation bar, under **Current file**, select **Report settings**.
+3. Under **Filtering experience**, select **Enable the updated filter pane, and show filters in the visual header for this report**.
 
 ## Build the new filter pane
 
