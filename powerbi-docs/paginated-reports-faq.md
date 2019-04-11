@@ -86,7 +86,7 @@ Yes, but the Power BI service only allows you to upload a single item at a time,
 
 ### What version(s) of Report Builder do you support?
 
-We recently released Power BI Report Builder as the primary authoring tool for paginated reports in the Power BI Service. Install [Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513).
+We recently released Power BI Report Builder as the primary authoring tool for paginated reports in the Power BI Service. Install [Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513).
 
 ### How do I move existing reports I have saved in SQL Server Reporting Services to Power BI?
 
@@ -116,7 +116,7 @@ You get an error message if you try to upload a file that has an unsupported fea
 We support the following data source - 
 
 - Power BI Premium Datasets
-- Azure Analysis Services (via SSO)
+- Azure Analysis Services (via single sign on (SSO))
 - Azure SQL Database
 - SQL Server*
 - SQL Server Analysis Services (SSAS) tabular (DAX) and multidimensional (MDX) models* 
