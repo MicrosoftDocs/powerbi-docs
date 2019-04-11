@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/04/2019
+ms.date: 04/09/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -21,6 +21,10 @@ In the new workspaces, you can:
 - Assign workspace roles to user groups: security groups, distribution lists, Office 365 groups, and individuals.
 - Create a workspace in Power BI without creating an Office 365 group.
 - Use more granular workspaces roles for more flexible permissions management in a workspace.
+
+> [!NOTE]
+> To enforce row-level security (RLS) for Power BI Pro users browsing content in a workspace, continue to use [classic workspaces](service-create-workspaces.md). Select the **Members can only view Power BI content** option. Alternatively, publish an Power BI app to those users, or use sharing to distribute content. The forthcoming Viewer Role will enable this scenario in future in new workspace experience workspaces.
+
 
 For more background, see the [new workspaces](service-new-workspaces.md) article.
 
@@ -40,9 +44,9 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
    
      The app for the workspace will have the same name and icon as the workspace.
    
-1. Here are some optional items you can specify for your workspace:
+1. Here are some optional items you can set for your workspace:
 
-    Upload an image. The file size has to be less than 45 KB.
+    Upload a **Workspace image**. Files can be .png or .jpg format. File size has to be less than 45 KB.
     
     Add a **Contact list**. By default, the workspace admins are the contacts. 
     

@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/03/2019
+ms.date: 04/09/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -45,6 +45,8 @@ By default, Power BI creates a little colored circle for your app, with the app'
 3. Select the pencil icon again, and find the image you want to use.
    
      ![Select the pencil again](media/service-create-distribute-apps/power-bi-apps-workspace-edit-group.png)
+
+     Images can be .png, .jpg, or .bmp files. Their file size can be large, up to 3 MB. 
 
 4. Select **Save**.
    
