@@ -75,7 +75,7 @@ Here are some other features that aren't supported in the initial release:
  
 ## Next steps
 
-- [Install Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
+- [Install Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)
 - [Enter data directly in a paginated report](paginated-reports-enter-data.md)
 
