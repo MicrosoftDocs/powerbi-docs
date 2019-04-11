@@ -239,6 +239,8 @@
         href: desktop-what-if.md
       - name: "Use drillthrough"
         href: desktop-drillthrough.md      
+      - name: "Use cross-report drillthrough"
+        href: desktop-cross-report-drill-through.md              
       - name: "Use a relative date slicer and filter"
         href: visuals/desktop-slicer-filter-date-range.md      
       - name: "Use grouping and binning"
@@ -279,6 +281,8 @@
         href: power-bi-hyperlinks-in-tables.md
       - name: "Conditional table formatting"
         href: desktop-conditional-table-formatting.md
+      - name: "Conditional expression-based title formatting"
+        href: desktop-conditional-format-visual-titles.md        
       - name: "Sort by column in Power BI Desktop"
         href: desktop-sort-by-column.md
       - name: "Create reports optimized for mobile apps"
