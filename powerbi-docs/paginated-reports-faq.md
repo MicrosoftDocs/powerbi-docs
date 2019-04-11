@@ -58,7 +58,7 @@ Yes, monitoring is available as a new tab with the same relevant details you hav
 
 ### Do I need a Pro license to create and publish paginated reports?
 
-Yes. You can't upload reports to the workspace without a Pro license. You may download and try Report Builder without the Pro license, but not publish the paginated reports you create. 
+Yes. You can't upload reports to the workspace without a Pro license. We encourage you to download and use Power BI Report Builder even without the Pro license, but you can't publish the paginated reports you create without it. 
 
 ### What if I have a paginated report in a workspace and the paginated report workload is turned off?
 
@@ -80,13 +80,13 @@ Paginated reports are best for scenarios that require a highly formatted, pixel-
 
 Power BI reports are optimized for exploration and interactivity.  A sales report where different salespeople want to slice the data in the same report for their specific region/industry/customer and see how the numbers change would be best served by a Power BI report.
 
-### The documentation says Report Builder is the preferred authoring tool. Can I create paginated reports in SQL Server Data Tools for Power BI?
+### The documentation says Power BI Report Builder is the preferred authoring tool. Can I create paginated reports in SQL Server Data Tools for Power BI?
 
 Yes, but the Power BI service only allows you to upload a single item at a time, so many of the scenarios authors use with SQL Server Data Tools (SSDT) aren’t yet supported. See the full [list of unsupported features](#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) available later in this FAQ.  
 
 ### What version(s) of Report Builder do you support?
 
-Use the latest version of SQL Server 2016 Report Builder to author and publish your reports to the Power BI service. Install [Report Builder from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53613).
+We recently released Power BI Report Builder as the primary authoring tool for paginated reports in the Power BI Service. Install [Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513).
 
 ### How do I move existing reports I have saved in SQL Server Reporting Services to Power BI?
 
@@ -94,7 +94,7 @@ You need to download the report from the server, then upload it to Power BI thro
 
 ### Can I open reports and publish directly to the service?
 
-At this point, no. We'll add support for opening reports and publishing them directly to the service from Report Builder at some point, like you can with Power BI Desktop.
+At this point, no. We're adding support for opening reports and publishing them directly to the service from Power BI Report Builder prior to GA, like you can with Power BI Desktop.
 
 ### What paginated report features in SSRS aren’t yet supported in Power BI?
 
@@ -113,17 +113,27 @@ You get an error message if you try to upload a file that has an unsupported fea
 
 ### What data sources do you support currently for paginated reports?
 
-We support Azure Analysis Services (via SSO), Azure SQL Database, SQL Server and both SQL Server Analysis Services (SSAS) tabular (DAX) and multidimensional (MDX) models using the on-premises Gateway.
+We support the following data source - 
+
+- Power BI Premium Datasets
+- Azure Analysis Services (via single sign on (SSO))
+- Azure SQL Database
+- SQL Server*
+- SQL Server Analysis Services (SSAS) tabular (DAX) and multidimensional (MDX) models* 
+- Oracle* 
+- Teradata* 
+
+* requires the on-premises Gateway.
 
 When accessing SSAS through the Gateway, the user whose credentials are stored needs elevated permissions in SSAS to work through the Gateway.
 
 ### What authentication methods do you support?
 
-Currently you need to store a user name and password with the data source in the portal or gateway.  Additional authentication methods to support things like row-level security are coming later in the preview.
+We support SSO for both Azure Analysis Services and Power BI Premium data sources.  For all other data sources, you currently need to store a user name and password with the data source in the portal or gateway.  
 
 ### Can I use a Power BI dataset as a data source for my paginated report?
 
-Not yet, but this support is planned soon.
+Yes, we now support Power BI Premium datasets as data sources for your paginated reports.
 
 ### Can I use stored procedures through the Gateway?
 
@@ -135,7 +145,7 @@ You can export to Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF, .C
 
 ### Can I print paginated reports?
 
-Yes, printing is available for Paginated Reports, including a new and improved print preview experience. 
+Yes, printing is available for paginated reports, including a new and improved print preview experience. 
 
 ### Are e-mail subscriptions available yet for paginated reports?
 
@@ -163,15 +173,11 @@ Not yet, but we absolutely plan to support this scenario.
 
 ### Can I share my paginated report content through a Power BI app?
 
-Currently you can share individual paginated reports with other users through the sharing action in the portal or via the toolbar. We don’t yet support sharing in an app, but expect to soon. 
+Yes, paginated reports are supported to be deployed with apps from both v1 and v2 workspaces. 
 
 ### Will other report-specific features in Power BI, like pinning to report tiles to dashboards, work with paginated reports?
 
 We plan to have the reports support the same major scenarios in the service as much as possible.  Ideally, though the tool to author them is different, from a consumer perspective it’s just another report in their list in the portal. They don’t care how it was created, they can accomplish what they need to.  A good example of this feature parity is the planned comment support. Though the feature itself may work slightly differently for each report type, you’ll be able to use comments for both.
-
-### Are you planning to create a new authoring tool for paginated reports in the Power BI service?  We can’t do everything we need to with Report Builder today.
-
-We are still looking at different options here for the best tooling story for paginated reports in Power BI. 
 
 ### Is a migration tool planned so SSRS customers can move their existing reports and assets to Power BI?
 
@@ -191,5 +197,5 @@ No, you can't currently search for your paginated reports from Home.  You do see
 
 ## Next steps
 
-- [Install Report Builder from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53613)
+- [Install Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)

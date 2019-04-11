@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/13/2019
+ms.date: 04/10/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -47,7 +47,7 @@ The **File** category provides the following data connections:
 * XML
 * JSON
 * Folder
-* PDF (Beta)
+* PDF
 * SharePoint Folder
 
 The following image shows the **Get Data** window for **File**.
@@ -75,14 +75,15 @@ The **Database** category provides the following data connections:
 * Google BigQuery
 * Vertica
 * Snowflake
-* Essbase (Beta)
+* Essbase
+* AtScale cubes (Beta)
+* BI Connector
 * Dremio
 * Exasol
 * MarkLogic (Beta)
-* AtScale cubes (Beta)
-* BI Connector
-* Jethro (Beta)
-* Kyligence Enterprise (Beta)
+* Indexima (Beta)
+* InterSystems IRIS (Beta)
+
 
 > [!NOTE]
 > Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
@@ -94,7 +95,7 @@ The following image shows the **Get Data** window for **Database**.
 The **Power BI** category provides the following data connections:
 
 * Power BI datasets
-* Power BI dataflows (Beta)
+* Power BI dataflows
 
 The following image shows the **Get Data** window for **Power BI**.
 
@@ -112,7 +113,8 @@ The **Azure** category provides the following data connections:
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
-* Azure Data Explorer (Beta)
+* Azure Data Explorer (Kusto)
+* Azure Cost Management (Beta)
 
 The following image shows the **Get Data** window for **Azure**.
 
@@ -153,9 +155,10 @@ The **Online Services** category provides the following data connections:
 * tyGraph (Beta)
 * Webtrends (Beta)
 * Zendesk (Beta)
-* TeamDesk (Beta)
 * Emigo Data Source (Beta)
+* IndustrialAppStore (Beta)
 * Microsoft Graph Security (Beta)
+* TeamDesk (Beta)
 
 The following image shows the **Get Data** window for **Online Services**.
 
@@ -174,12 +177,14 @@ The **Other** category provides the following data connections:
 * Python script
 * ODBC
 * OLE DB
-* Workforce Dimensions (Beta)
 * Denado
-* Paxata (Beta)
-* SurveyMonkey (Beta)
+* Paxata 
 * QubolePresto (Beta)
 * Quick Base (Beta)
+* SurveyMonkey (Beta)
+* Workforce Dimensions (Beta)
+* BI360 - Budgeting & Financial Reporting (Beta)
+* Information Grid (Beta)
 * Blank Query
 
 The following image shows the **Get Data** window for **Other**.
