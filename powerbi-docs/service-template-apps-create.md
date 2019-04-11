@@ -161,7 +161,7 @@ Let's go through the stages.
 
 11. Select **Promote** to confirm your choice. 
 
-12. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource by creating a [new Cloud Partner Portal offer](https://docs.microsoft.com/en-us/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Submit only pre-production links to the Cloud Partner Portal. Only after the app is approved and you get notification that it is published in AppSource, then you can promote this package to production in Power BI.
+12. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource by creating a [new Cloud Partner Portal offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Submit only pre-production links to the Cloud Partner Portal. Only after the app is approved and you get notification that it is published in AppSource, then you can promote this package to production in Power BI.
 
 12. When your app is ready for production or sharing via AppSource, go back to the **Release Management** pane and select **Promote app** next to **Pre-production**.
  
@@ -187,7 +187,7 @@ Now that your app is in production, you can start over in the test phase, withou
     ![Two versions of a template app](media/service-template-apps-create/power-bi-template-app-2-versions.png)
 
 5. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the Release Management pane and select **Promote app** next to **Testing**.
-6. Your link is now live, and you need to submit it again to rhw Cloud Partner Portal by following the steps at [Power BI App offer update](https://docs.microsoft.com/en-us/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
+6. Your link is now live, and you need to submit it again to rhw Cloud Partner Portal by following the steps at [Power BI App offer update](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
 
 ## Next steps
 
