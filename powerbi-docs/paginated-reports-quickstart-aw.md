@@ -32,7 +32,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 Here are the prerequisites for creating the paginated report:
 
-- Install [Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513). 
+- Install [Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513). 
 
 - Follow the quickstart [Create an Azure SQL database sample  in the Azure portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Copy and save the value in the **Server name** box on the **Overview** tab. Remember the user name and password you created in Azure.
 
