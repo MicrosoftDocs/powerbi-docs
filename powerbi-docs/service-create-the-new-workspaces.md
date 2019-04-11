@@ -22,6 +22,10 @@ In the new workspaces, you can:
 - Create a workspace in Power BI without creating an Office 365 group.
 - Use more granular workspaces roles for more flexible permissions management in a workspace.
 
+> [!NOTE]
+> To enforce row-level security (RLS) for Power BI Pro users browsing content in a workspace, continue to use [classic workspaces](service-create-workspaces.md). Select the **Members can only view Power BI content** option. Alternatively, publish an Power BI app to those users, or use sharing to distribute content. The forthcoming Viewer Role will enable this scenario in future in new workspace experience workspaces.
+
+
 For more background, see the [new workspaces](service-new-workspaces.md) article.
 
 ## Create one of the new app workspaces
