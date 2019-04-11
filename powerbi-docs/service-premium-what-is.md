@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/09/2019
+ms.date: 04/10/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -104,7 +104,7 @@ Refreshes of import models are always memory intensive as models must be loaded 
 
 Refreshes, like queries, require the model be loaded into memory. If there is insufficient memory, the Power BI service will attempt to evict inactive models, and if this is not possible (as all models are active), the refresh job is queued. Refreshes are typically CPU-intensive, even more so than queries. For this reason, there are capacity limits on the number of concurrent refreshes, set to 1.5 x the number of backend v-cores, rounded up. If there are too many concurrent refreshes, a scheduled refresh will be queued. When these situations occur, it takes longer for the refresh to complete. On-demand refreshes such as those triggered by a user request or an API call will retry three times \[[1](#endnote-1)\]. If there still aren't enough resources, the refresh will then fail.
 
-Table notes:   
+Section notes:   
 <a name="endnote-1"></a>\[1\] Subject to change.
 
 ### Regional support
@@ -233,5 +233,3 @@ Peter Myers, Data Platform MVP and independent BI expert with [Bitwise Solutions
 > [Managing Premium capacities](service-premium-capacity-manage.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
-||||||
