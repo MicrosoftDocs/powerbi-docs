@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 04/10/2019
 LocalizationGroup: Connect to data
 ---
 
@@ -19,22 +19,25 @@ LocalizationGroup: Connect to data
 The following data sources support DirectQuery in Power BI:
 
 * Amazon Redshift
-* Azure HDInsight Spark (Beta)
+* AtScale (Beta)
+* Azure HDInsight Spark
 * Azure SQL Database
 * Azure SQL Data Warehouse
-* Google BigQuery (Beta)
+* Google BigQuery
+* HDInsight Interactive Query
 * IBM DB2 database
-* IBM Netezza (Beta)
+* IBM Netezza
 * Impala (version 2.x)
 * Oracle Database (version 12 and above)
+* Oracle Essbase
 * SAP Business Warehouse Application Server
-* SAP Business Warehouse Message Server (Beta)
+* SAP Business Warehouse Message Server
 * SAP HANA
 * Snowflake
-* Spark (Beta)  (version 0.9 and above)
+* Spark (version 0.9 and above)
 * SQL Server
 * Teradata Database
-* Vertica (Beta)
+* Vertica
 
 Data sources that have **(Beta)** or **(Preview)** after their name are subject to change, and are not supported for production use. They might also not be supported after publishing a report to the **Power BI service**, which means that opening a published report or exploring the dataset can result in an error.
 

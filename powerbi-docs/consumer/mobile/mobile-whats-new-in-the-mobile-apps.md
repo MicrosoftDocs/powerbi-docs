@@ -40,7 +40,7 @@ We changed report interaction so it will require only one tap on a visual, butto
 ![Single tap interaction](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
 
 > [!NOTE]
-> Existing users will need to turn on this behavior in the app setting. For more information, see the [How to configure single tap report interaction](/mobile-app-single-tap.md) article.
+> Existing users will need to turn on this behavior in the app setting. For more information, see the [How to configure single tap report interaction](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap) article.
 
 ## January - February 2019
  
