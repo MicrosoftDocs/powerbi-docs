@@ -86,7 +86,7 @@ Yes, but the Power BI service only allows you to upload a single item at a time,
 
 ### What version(s) of Report Builder do you support?
 
-We recently released Power BI Report Builder as the primary authoring tool for Paginated Reports in the Power BI Service. Install [Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513).
+We recently released Power BI Report Builder as the primary authoring tool for paginated reports in the Power BI Service. Install [Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513).
 
 ### How do I move existing reports I have saved in SQL Server Reporting Services to Power BI?
 
@@ -94,7 +94,7 @@ You need to download the report from the server, then upload it to Power BI thro
 
 ### Can I open reports and publish directly to the service?
 
-At this point, no. We're adding support for opening reports and publishing them directly to the service from Power BI Report Builder at prior to GA, like you can with Power BI Desktop.
+At this point, no. We're adding support for opening reports and publishing them directly to the service from Power BI Report Builder prior to GA, like you can with Power BI Desktop.
 
 ### What paginated report features in SSRS aren’t yet supported in Power BI?
 
@@ -133,7 +133,7 @@ We support SSO for both Azure Analysis Services and Power BI Premium data source
 
 ### Can I use a Power BI dataset as a data source for my paginated report?
 
-Yes, we now support Power BI Premium datasets as data sources for your Paginated Reports.
+Yes, we now support Power BI Premium datasets as data sources for your paginated reports.
 
 ### Can I use stored procedures through the Gateway?
 
@@ -145,7 +145,7 @@ You can export to Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF, .C
 
 ### Can I print paginated reports?
 
-Yes, printing is available for Paginated Reports, including a new and improved print preview experience. 
+Yes, printing is available for paginated reports, including a new and improved print preview experience. 
 
 ### Are e-mail subscriptions available yet for paginated reports?
 
