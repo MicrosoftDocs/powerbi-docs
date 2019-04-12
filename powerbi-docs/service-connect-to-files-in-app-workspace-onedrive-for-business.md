@@ -12,7 +12,7 @@ ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Connect to files stored in OneDrive for your Power BI app workspace
+# Connect to files stored in OneDrive for your Power BI app workspace1
 After you've [created an app workspace in Power BI](service-create-distribute-apps.md), you can store your Excel, CSV, and Power BI Desktop files on the OneDrive for Business for your Power BI app workspace. You can continue updating the files you store in OneDrive, and those updates are automatically reflected in the Power BI reports and dashboards based on the files. 
 
 > [!NOTE]
