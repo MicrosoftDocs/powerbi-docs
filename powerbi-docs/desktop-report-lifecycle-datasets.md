@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 04/12/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -73,9 +73,8 @@ Once complete, **Power BI Desktop** shows you success, and provides a couple lin
 Next, let's see how other teammates who have access to the workspace where the report (and dataset) were published can connect to the dataset and build our own reports.
 
 ### Establish a Power BI service live connection to the published dataset
-To establish a connection to the published report, and create your own report based on the published dataset, select **Get Data** from the **Home** ribbon in **Power BI Desktop**, and select **Power BI service**. You can also select it from **Get Data > Online Services > Power BI service**.
+To establish a connection to the published report, and create your own report based on the published dataset, select **Get Data** from the **Home** ribbon in **Power BI Desktop**, select **Power BI** from the left pane, and then select **Power BI datasets**.
 
-![](media/desktop-report-lifecycle-datasets/report-lifecycle_08.png)
 
 If you're not signed in to Power BI, you'll be prompted to do so. Once logged in, you're presented with a window that shows which workspaces you're a member of, and you can select which workspace contains the dataset to which you want to establish a **Power BI service live connection**.
 
