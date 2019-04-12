@@ -177,7 +177,7 @@
         href: desktop-directquery-sap-hana.md
       - name: "Assume referential integrity setting in Power BI Desktop"
         href: desktop-assume-referential-integrity.md
-      - name: "Use the SAP BW connector in Power BI Desktop (Preview)"
+      - name: "Use the SAP BW connector in Power BI Desktop"
         href: desktop-sap-bw-connector.md
       - name: "Use OneDrive for Business links in Power BI Desktop"
         href: desktop-use-onedrive-business-links.md

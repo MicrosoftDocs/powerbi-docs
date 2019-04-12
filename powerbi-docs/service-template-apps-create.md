@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/04/2019
+ms.date: 04/11/2019
 ms.author: maggies
 ---
 
@@ -15,9 +15,9 @@ ms.author: maggies
 
 The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article contains step-by-step instructions to create a Power BI template app. 
 
-If you can create Power BI reports and dashboards, you can become a *template app builder* who builds and packages analytical content into an *app*. You can then deploy your app to other Power BI tenants through any available platform, such as AppSource, or by using it in your own web service. As a builder you can create a protected analytics package for distribution. 
+If you can create Power BI reports and dashboards, you can become a *template app builder* and builds and packages analytical content into an *app*. You may deploy your app to other Power BI tenants through any available platform, such as AppSource, or by using it in your own web service. As a builder you have the possibility to create a protected analytics package for distribution. 
 
-Power BI tenant admins govern and control who in their organization can create template apps, and who can install them. Those who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
+Power BI tenant admins govern and control who in their organization can create template apps, and who can install them. Those users who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
 
 ## Prerequisites 
 
@@ -121,7 +121,9 @@ Before you release this template app publicly, you want to make sure it's ready 
 - Promote pre-production package to Production: production version. 
 - Delete any package or start over from previous stage. 
 
-Let's go through the stages.
+The URL doesn't change as you move between release stages. Promotion doesn't affect the URL itself.
+
+Let's go through the stages:
 
 1. In the template app workspace, select **Release Management**.
 
@@ -135,11 +137,11 @@ Let's go through the stages.
 
     ![Create app, get link](media/service-template-apps-create/power-bi-dev-template-create-app-get-link.png)
  
-9. To test the app installation experience, copy the link in the notification window and paste it in a new browser window. 
+4. To test the app installation experience, copy the link in the notification window and paste it in a new browser window. 
 
     From here, you're following the same procedure your customers will follow. See [Install and distribute template apps in your organization](service-template-apps-install-distribute.md) for their version.
  
-10.	In the dialog box, select **Install**.
+5.	In the dialog box, select **Install**.
 
     When installation succeeds, you see a notification that the new app is ready. 
  
@@ -159,7 +161,7 @@ Let's go through the stages.
 
 11. Select **Promote** to confirm your choice. 
 
-12. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource.
+12. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource by creating a [new Cloud Partner Portal offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Submit only pre-production links to the Cloud Partner Portal. Only after the app is approved and you get notification that it is published in AppSource, then you can promote this package to production in Power BI.
 
 12. When your app is ready for production or sharing via AppSource, go back to the **Release Management** pane and select **Promote app** next to **Pre-production**.
  
@@ -176,14 +178,16 @@ To make your app widely available to thousands of Power BI users in the world, w
 Now that your app is in production, you can start over in the test phase, without disrupting the app in production. 
 
 1. In the **Release management** pane, select **Create app**.
-
-1. Go back through the app creation process. 
-2. After you've set **Branding**, **Content**, **Control**, and **Access**, you again select **Create app**.
-3. Select **Close** and go back to **Release management**. 
+2. Go back through the app creation process. 
+3. After you've set **Branding**, **Content**, **Control**, and **Access**, you again select **Create app**.
+4. Select **Close** and go back to **Release management**. 
 
     You see you have two versions now: The version in production, plus a new version in testing. 
 
     ![Two versions of a template app](media/service-template-apps-create/power-bi-template-app-2-versions.png)
+
+5. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the Release Management pane and select **Promote app** next to **Testing**.
+6. Your link is now live, and you need to submit it again to the Cloud Partner Portal by following the steps at [Power BI App offer update](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
 
 ## Next steps
 
