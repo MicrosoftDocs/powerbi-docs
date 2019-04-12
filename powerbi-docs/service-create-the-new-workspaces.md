@@ -25,7 +25,6 @@ In the new workspaces, you can:
 > [!NOTE]
 > To enforce row-level security (RLS) for Power BI Pro users browsing content in a workspace, continue to use [classic workspaces](service-create-workspaces.md). Select the **Members can only view Power BI content** option. Alternatively, publish an Power BI app to those users, or use sharing to distribute content. The forthcoming Viewer Role will enable this scenario in future in new workspace experience workspaces.
 
-
 For more background, see the [new workspaces](service-new-workspaces.md) article.
 
 ## Create one of the new app workspaces
@@ -48,25 +47,89 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
 
     Upload a **Workspace image**. Files can be .png or .jpg format. File size has to be less than 45 KB.
     
-    Add a **Contact list**. By default, the workspace admins are the contacts. 
+    [Add a **Contact list**](#workspace-contact-list). By default, the workspace admins are the contacts. 
     
-    Specify a **Workspace OneDrive** by typing just the name of the OneDrive location, not the URL. In this step, you're not creating a OneDrive location. You're specifying an existing location. 
+    [Specify a **Workspace OneDrive or SharePoint**](#workspace-onedrive) by typing just the name of the OneDrive location, not the URL. In this step, you're not creating a OneDrive location. You're specifying an existing location. 
 
     ![Specify a OneDrive location](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
-    Assign the workspace to a **Dedicated capacity**.
+    To assign the workspace to a **Dedicated capacity**, on the **Premium** tab, select **Dedicated capacity**.
      
-    ![Name the workspace, add an image, and other details](media/service-create-the-new-workspaces/power-bi-new-workspace-details.png)
+    ![Dedicated capacity](media/service-create-the-new-workspaces/power-bi-workspace-premium.png)
 
 1. Select **Save**.
 
-    Here in the **Welcome** screen for your new workspace, you can add data. 
+    Power BI creates the workspace and opens it. You see it in the list of workspaces you’re a member of. 
+
+## Workspace contact list
+
+The new workspace contact list allows you to specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can customize the list. Users or groups listed in the contact list will be shown in the user interface (UI) to help users get help related to the workspace.
+
+1. Access the new **Contact list** setting in one of two ways:
+
+    In the **Create a workspace** pane when you first create it.
+
+    In the left navigation pane, select the arrow next to **Workspaces**, select the ellipsis (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
+
+    ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-settings.png)
+
+2. Under **Advanced** > **Contact list**, accept the default, **Workspace admins**, or add your own list of **Specific users or groups**. 
+3. Select **Save**.
+
+## Workspace OneDrive
+
+The Workspace OneDrive feature allows you to configure an Office 365 Group whose SharePoint Document Library file storage is available to workspace users. You create the group outside of Power BI first. 
+
+Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Office 365 Group membership. The best practice is give the same Office 365 group, whose file storage you configure in this setting Office 365 group, [access to the workspace](#give-access-to-your-workspace). Then manage workspace access by managing membership of the Office 365 group. 
+
+1. Access the new **Workspace OneDrive or SharePoint** setting in one of two ways:
+
+    In the **Create a workspace** pane when you first create it.
+
+    In the left navigation pane, select the arrow next to **Workspaces**, select the ellipsis (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
+
+    ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-settings.png)
+
+2. Under **Advanced** > **Workspace OneDrive or SharePoint**, type the name of the Office 365 group that you created earlier. Power BI automatically picks up the OneDrive for the group.
+
+    ![Specify a OneDrive location](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
+
+3. Select **Save**.
+
+### Access the workspace OneDrive or SharePoint location
+
+After you've configured the OneDrive or SharePoint location, you can get to it from a few different places in the workspace:
+
+- Select **Workspaces** > *workspace name* > the ellipsis (**...**) menu > **Files**. 
+
+    ![Workspace files location](media/service-new-workspaces/power-bi-new-workspace-files.png)
+
+- Select the ellipsis (**...**) menu in the upper-right corner of the workspace > **Files**.
+
+    ![Workspace files location](media/service-new-workspaces/power-bi-new-workspace-files-2.png)
+    
+- In the **Get Data** > **Files** experience. The **OneDrive – Business** entry is your own OneDrive for Business. The second OneDrive is the one you added.
+
+    ![Workspace files location - get data](media/service-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
+
+## Add content to your app workspace
+
+After you've created a new workspace experience workspace, it's time to add content to it. Adding content is similar in the new and classic workspaces.
+
+1. In the **Welcome** screen for your new workspace, you can add content. 
 
     ![New workspace Welcome screen](media/service-create-the-new-workspaces/power-bi-workspace-welcome-screen.png)
 
 1. For example, select **Samples** > **Customer Profitability Sample**.
 
-7. Now in the workspace content list, because you're an admin, you also see a new action, **Access**.
+> [!NOTE]
+> In the new workspaces, you can't consume organizational content packs, or third-party content packs. Apps are available for all third-party content packs you previously used. Use classic workspaces if you need to continue using content packs. Content packs are deprecated, so it's a best practice to use apps instead.
+
+When you view content in the content list of an app workspace, the app workspace name is listed as the owner.
+
+## Give access to your workspace
+
+1. In the workspace content list, because you're an admin, you see a new action, **Access**.
 
     ![Workspaces content list](media/service-create-the-new-workspaces/power-bi-workspace-content-list.png)
 
@@ -78,9 +141,6 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
 
 9. Select **Add** > **Close**.
 
-1. Power BI creates the workspace and opens it. You see it in the list of workspaces you’re a member of. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to workspace settings, adding new members, or changing their permissions. If you specified a Workspace OneDrive, a files option is shown as well.
-
-     ![Edit settings and access for a workspace](media/service-create-the-new-workspaces/power-bi-edit-workspace.png)
 
 ## Add content to your app workspace
 

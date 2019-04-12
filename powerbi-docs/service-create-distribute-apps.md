@@ -7,7 +7,7 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/04/2019
+ms.date: 04/11/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -59,7 +59,9 @@ When the dashboards and reports in your workspace are ready, you choose which da
    
      ![App content](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-5. On **Access**, decide who has access to the app: either everyone in your organization, specific people,  Active Directory security groups. If you have permissions, you can decide to install the app automatically for the recipients. A Power BI admin can enable this setting in the Power BI Admin Portal. Read more [automatically installing an app](#how-to-install-an-app-automatically-for-end-users).
+5. On **Access**, decide who has access to the app: either your entire organization, or individuals, Office 365 groups, distribution lists, and Active Directory security groups, whether email-enabled or not. 
+
+6. If you have permissions, you can also decide to install the app automatically for the recipients. A Power BI admin can enable this setting in the Power BI Admin Portal. Read more [automatically installing an app](#how-to-install-an-app-automatically-for-end-users).
 
     ![App access](media/service-create-distribute-apps/power-bi-apps-access.png)
 
