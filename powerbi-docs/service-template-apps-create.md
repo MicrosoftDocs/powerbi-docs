@@ -121,7 +121,7 @@ Before you release this template app publicly, you want to make sure it's ready 
 - Promote pre-production package to Production: production version. 
 - Delete any package or start over from previous stage. 
 
-The URL doesn't change as you move between release stages. Promotion don't affect the URL itself.
+The URL doesn't change as you move between release stages. Promotion doesn't affect the URL itself.
 
 Let's go through the stages.
 
