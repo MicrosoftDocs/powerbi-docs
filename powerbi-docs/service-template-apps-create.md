@@ -123,7 +123,7 @@ Before you release this template app publicly, you want to make sure it's ready 
 
 The URL doesn't change as you move between release stages. Promotion doesn't affect the URL itself.
 
-Let's go through the stages.
+Let's go through the stages:
 
 1. In the template app workspace, select **Release Management**.
 
