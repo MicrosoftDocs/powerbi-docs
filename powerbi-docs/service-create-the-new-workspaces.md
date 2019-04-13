@@ -49,7 +49,7 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
     
     [Add a **Contact list**](#workspace-contact-list). By default, the workspace admins are the contacts. 
     
-    [Specify a **Workspace OneDrive or SharePoint**](#workspace-onedrive) by typing just the name of the OneDrive location, not the URL. In this step, you're not creating a OneDrive location. You're specifying an existing location. 
+    [Specify a **Workspace OneDrive**](#workspace-onedrive) by typing just the name of an existing Office 365 Group,  not the URL. The group's file storage location will be used with this workspace. 
 
     ![Specify a OneDrive location](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
