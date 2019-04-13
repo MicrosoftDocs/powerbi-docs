@@ -466,7 +466,6 @@ As an administrator, you can view the workspaces that exist in your tenant. You 
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
-The admin portal also has another section of settings about the workspaces in your tenant. In that section, you identify which users in your organization can create app workspaces. See [Workspace settings](#workspace-settings) for details.
 
 ## Next steps
 
