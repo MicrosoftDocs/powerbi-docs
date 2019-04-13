@@ -15,9 +15,9 @@ ms.author: maggies
 
 The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article contains step-by-step instructions to create a Power BI template app. 
 
-If you can create Power BI reports and dashboards, you can become a *template app builder* who builds and packages analytical content into an *app*. You can then deploy your app to other Power BI tenants through any available platform, such as AppSource, or by using it in your own web service. As a builder you can create a protected analytics package for distribution. 
+If you can create Power BI reports and dashboards, you can become a *template app builder* and builds and packages analytical content into an *app*. You may deploy your app to other Power BI tenants through any available platform, such as AppSource, or by using it in your own web service. As a builder you have the possibility to create a protected analytics package for distribution. 
 
-Power BI tenant admins govern and control who in their organization can create template apps, and who can install them. Those who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
+Power BI tenant admins govern and control who in their organization can create template apps, and who can install them. Those users who are authorized can install your template app, then modify it and distribute it to the Power BI consumers in their organization.
 
 ## Prerequisites 
 
@@ -137,11 +137,11 @@ Let's go through the stages:
 
     ![Create app, get link](media/service-template-apps-create/power-bi-dev-template-create-app-get-link.png)
  
-9. To test the app installation experience, copy the link in the notification window and paste it in a new browser window. 
+4. To test the app installation experience, copy the link in the notification window and paste it in a new browser window. 
 
     From here, you're following the same procedure your customers will follow. See [Install and distribute template apps in your organization](service-template-apps-install-distribute.md) for their version.
  
-10.	In the dialog box, select **Install**.
+5.	In the dialog box, select **Install**.
 
     When installation succeeds, you see a notification that the new app is ready. 
  
