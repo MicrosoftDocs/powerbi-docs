@@ -448,6 +448,12 @@ The following questions are common security questions and answers for Power BI. 
 
 * Yes. Bing Maps and ESRI visuals transmit data out of the Power BI service for visuals that use those services. For more information, and detailed descriptions of out-of-Power-BI tenant traffic, see [**Power BI and ExpressRoute**](service-admin-power-bi-expressroute.md).
 
+**For Template Apps, does Microsoft perform any security or privacy assessment of the Template app prior to publishing items to the Gallery?**
+* No. It is the customer's responsibility to review and determine whether to trust the Template app publisher. 
+
+**Are there Template apps that can send information outside the customer network?**
+* Yes. It is customer's responsibility to review publisher's privacy policy and determine whether to install the Template app on Tenant.
+
 **What about data sovereignty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country borders?**
 
 * Some customers in certain geographies have an option to create a tenant in a national cloud, where data storage and processing is kept separate from all other datacenters. National clouds have a slightly different type of security, since a separate data trustee operates the national cloud Power BI service on behalf of Microsoft.
