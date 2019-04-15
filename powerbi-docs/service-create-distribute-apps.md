@@ -7,7 +7,7 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/12/2019
+ms.date: 04/15/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work

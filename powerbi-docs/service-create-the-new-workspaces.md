@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/09/2019
+ms.date: 04/15/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -49,7 +49,7 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
     
     [Add a **Contact list**](#workspace-contact-list). By default, the workspace admins are the contacts. 
     
-    [Specify a **Workspace OneDrive**](#workspace-onedrive) by typing just the name of an existing Office 365 Group,  not the URL. The group's file storage location will be used with this workspace. 
+    [Specify a **Workspace OneDrive**](#workspace-onedrive) by typing just the name of an existing Office 365 Group, not the URL. Now this workspace can use that Office 365 group's file storage location. 
 
     ![Specify a OneDrive location](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
@@ -82,7 +82,7 @@ The Workspace OneDrive feature allows you to configure an Office 365 Group whose
 
 Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Office 365 Group membership. The best practice is give the same Office 365 group, whose file storage you configure in this setting Office 365 group, [access to the workspace](#give-access-to-your-workspace). Then manage workspace access by managing membership of the Office 365 group. 
 
-1. Access the new **Workspace OneDrive or SharePoint** setting in one of two ways:
+1. Access the new **Workspace OneDrive** setting in one of two ways:
 
     In the **Create a workspace** pane when you first create it.
 
@@ -90,15 +90,15 @@ Power BI doesn't synchronize permissions of users or groups who are configured t
 
     ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-settings.png)
 
-2. Under **Advanced** > **Workspace OneDrive or SharePoint**, type the name of the Office 365 group that you created earlier. Power BI automatically picks up the OneDrive for the group.
+2. Under **Advanced** > **Workspace OneDrive**, type the name of the Office 365 group that you created earlier. Power BI automatically picks up the OneDrive for the group.
 
     ![Specify a OneDrive location](media/service-create-the-new-workspaces/power-bi-new-workspace-onedrive.png)
 
 3. Select **Save**.
 
-### Access the workspace OneDrive or SharePoint location
+### Access the workspace OneDrive location
 
-After you've configured the OneDrive or SharePoint location, you can get to it from a few different places in the workspace:
+After you've configured the OneDrive location, you can get to it from a few different places in the workspace:
 
 - Select **Workspaces** > *workspace name* > the ellipsis (**...**) menu > **Files**. 
 

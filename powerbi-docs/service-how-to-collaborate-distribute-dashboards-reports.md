@@ -1,5 +1,5 @@
 ---
-title: Ways to share your work
+title: Ways to share your work in Power BI
 description: In Power BI you can collaborate on and share dashboards, reports, tiles, and apps in different ways. Each has its advantages.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,7 +8,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2019 
+ms.date: 04/15/2019 
 LocalizationGroup: Share your work
 ---
 
@@ -44,7 +44,7 @@ Let’s imagine you have a finished dashboard you need to share with your collea
 
 Read more about [creating workspaces](service-create-workspaces.md).
 
-**Did you know?** Power BI is previewing a new workspace experience. Read [Create the new workspaces (preview)](service-create-the-new-workspaces.md) to see how workspaces will change in the future. 
+**Did you know?** Power BI has a new workspace experience. Read [Create the new workspaces](service-create-the-new-workspaces.md) to see how workspaces are changing. 
 
 ## Distribute data and insights by creating an app
 
