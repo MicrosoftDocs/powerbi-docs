@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/10/2019
+ms.date: 04/15/2019
 
 LocalizationGroup: Premium
 ---
@@ -17,11 +17,33 @@ LocalizationGroup: Premium
 
 This article describes enabling and configuring workloads for Power BI Premium capacities. By default, capacities support only the workload associated with running Power BI queries. You can also enable and configure additional workloads for **[AI (Cognitive Services)](service-cognitive-services.md)**, **[Dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)**, and **[Paginated reports](paginated-reports-save-to-power-bi-service.md)**.
 
+## Default memory settings
+
+Query workloads are optimized for and limited by resources determined by your Premium capacity SKU. Premium capacities also support additional workloads that can use your capacity's resources. Default memory values for these workloads are based on the capacity nodes available for your SKU. Max memory settings are not cumulative. Memory up to the max value specified is dynamically allocated for AI and dataflows, but is statically allocated for paginated reports. 
+
+### Microsoft Office SKUs for software as a service (SaaS) scenarios
+
+|                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
+|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
+| AI | 20% default; min TBD| 20% default; min TBD | 20% default; min TBD | 20% default; min TBD | 20% default; min TBD |
+| Dataflows | N/A |20% default; 12% minimum  | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum  |
+| Paginated reports | N/A |N/A | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
+| | | | | | |
+
+### Microsoft Azure SKUs for platform as a service (PaaS) scenarios
+
+|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
+|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
+| AI (Cognitive Services) | N/A                      | 20% default; min TBD                      | 20% default; min TBD                     | 20% default; min TBD | 20% default; min TBD | 20% default; min TBD |
+| Dataflows         | 40% default; 40% minimum | 24% default; 24% minimum | 20% default; 12% minimum | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum   |
+| Paginated reports | N/A                      | N/A                      | N/A                     | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
+| | | | | | |
+
 ## Workload settings
 
 ### AI (Preview)
 
-In addition to the **Max Memory** setting, the AI workload has an additional setting, **Allow usage from Power BI Desktop**. The default is **Off**.
+In addition to the **Max Memory** setting, the AI workload has an additional setting, **Allow usage from Power BI Desktop**. The default is **Off**. This setting is reserved for future use and may not appear in all tenants.
 
 ### Datasets (Preview)
 
@@ -48,28 +70,6 @@ The Container Size value can’t exceed the maximum memory for the Dataflows wor
 Paginated reports allow custom code to be run when rendering a report. For example, dynamically changing text color based on content, which can take additional memory. Power BI Premium runs paginated reports in a contained space within the capacity. The Max Memory specified is used *whether or not* the workload is active. If changing the Max Memory setting from default, make sure you set it low enough that it doesn't negatively affect other workloads.
 
 In some cases, the Paginated Reports workload can become unavailable. In this case, the workload shows an error state in the Admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload and then enable it again.
-
-## Default memory settings
-
-Query workloads are optimized for and limited by resources determined by your Premium capacity SKU. Premium capacities also support additional workloads that can use your capacity's resources. Default memory values for these workloads are based on the capacity nodes available for your SKU. Max memory settings are not cumulative. Memory up to the max value specified is dynamically allocated for AI and dataflows, but is statically allocated for paginated reports. 
-
-### Microsoft Office SKUs for software as a service (SaaS) scenarios
-
-|                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| AI | 20% default; min TBD| 20% default; min TBD | 20% default; min TBD | 20% default; min TBD | 20% default; min TBD |
-| Dataflows | N/A |20% default; 12% minimum  | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum  |
-| Paginated reports | N/A |N/A | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
-| | | | | | |
-
-### Microsoft Azure SKUs for platform as a service (PaaS) scenarios
-
-|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
-|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| AI (Cognitive Services) | N/A                      | 20% default; min TBD                      | 20% default; min TBD                     | 20% default; min TBD | 20% default; min TBD | 20% default; min TBD |
-| Dataflows         | 40% default; 40% minimum | 24% default; 24% minimum | 20% default; 12% minimum | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum   |
-| Paginated reports | N/A                      | N/A                      | N/A                     | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
-| | | | | | |
 
 ## Configure workloads
 
