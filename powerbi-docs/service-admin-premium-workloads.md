@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/01/2019
+ms.date: 04/15/2019
 
 LocalizationGroup: Premium
 ---
@@ -25,7 +25,7 @@ Query workloads are optimized for and limited by resources determined by your Pr
 
 |                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| AI (Cognitive Services) | 20% default; min TBD| 20% default; min TBD | 20% default; min TBD | 20% default; min TBD | 20% default; min TBD |
+| AI | 20% default; min TBD| 20% default; min TBD | 20% default; min TBD | 20% default; min TBD | 20% default; min TBD |
 | Dataflows | N/A |20% default; 12% minimum  | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum  |
 | Paginated reports | N/A |N/A | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
 | | | | | | |
@@ -38,6 +38,38 @@ Query workloads are optimized for and limited by resources determined by your Pr
 | Dataflows         | 40% default; 40% minimum | 24% default; 24% minimum | 20% default; 12% minimum | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum   |
 | Paginated reports | N/A                      | N/A                      | N/A                     | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
 | | | | | | |
+
+## Workload settings
+
+### AI (Preview)
+
+In addition to the **Max Memory** setting, the AI workload has an additional setting, **Allow usage from Power BI Desktop**. The default is **Off**. This setting is reserved for future use and may not appear in all tenants.
+
+### Datasets (Preview)
+
+By default, the Datasets workload is enabled and cannot be disabled. 
+This workload contains an additional setting, **XMLA Endpoint**. The default is **1**, meaning enabled. This setting specifies connections from client applications honor the security group membership set at the workspace and app levels. To learn more, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md).
+
+### Dataflows
+
+In addition to the **Max Memory** setting, the Dataflows workload has an additional setting, **Container size**. This setting enables you to optimize dataflow workload performance for processing more complex, compute-heavy dataflows.
+
+When refreshing a dataflow, the dataflow workload spawns a container for each entity in the dataflow. Each container can take memory up to the volume in specified in the Container size setting. The default for all SKUs is **700 MB**. You might want to change this setting if:
+
+- Dataflows take too long to refresh, or dataflow refresh fails on a timeout.
+- Dataflow entities include computation steps, for example, a join.  
+
+It's recommend you use the [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) app to analyze Dataflow workload performance. 
+
+In some cases, increasing container size may not improve performance. For example, if the dataflow is getting data only from a source without performing significant calculations, changing container size probably won’t help. Increasing container size might help if it will enable the Dataflow workload to allocate more memory for entity refresh operations. By having more memory allocated, it can reduce the time it takes to refresh heavily computed entities. 
+
+The Container Size value can’t exceed the maximum memory for the Dataflows workload. For example, a P1 capacity has 25GB of memory. If the Dataflow workload Max Memory (%) is set to 20%, Container Size (MB) cannot exceed 5000. In all cases, the Container Size cannot exceed the Max Memory, even if you set a higher value. 
+
+### Paginated reports (Preview)
+
+Paginated reports allow custom code to be run when rendering a report. For example, dynamically changing text color based on content, which can take additional memory. Power BI Premium runs paginated reports in a contained space within the capacity. The Max Memory specified is used *whether or not* the workload is active. If changing the Max Memory setting from default, make sure you set it low enough that it doesn't negatively affect other workloads.
+
+In some cases, the Paginated Reports workload can become unavailable. In this case, the workload shows an error state in the Admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload and then enable it again.
 
 ## Configure workloads
 
@@ -56,9 +88,6 @@ Maximize your capacity's available resources by enabling workloads only if they 
 
 1. Click **Apply**.
 
-> [!NOTE]
-> If enabling the paginated reports workload, paginated reports allow you to run your own code when rendering a report (such as dynamically changing text color based on content). Power BI Premium runs paginated reports in a contained space within the capacity. The maximum memory you specify to this space is used whether or not the workload is active. If you use Power BI reports or dataflows in the same capacity, make sure you set memory low enough for paginated reports that it doesn't negatively affect the other workloads. In rare circumstances, the paginated reports workload can become unavailable. In this case, the workload shows an error state in the admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload then enable it again.
-
 ### REST API
 
 Workloads can be enabled and assigned to a capacity by using the [Capacities](https://docs.microsoft.com/rest/api/power-bi/capacities) REST APIs.
@@ -69,7 +98,6 @@ The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capaci
 
 ## Next steps
 
-[Power BI Premium capacity resource management and optimization](service-premium-understand-how-it-works.md)   
 [Self-service data prep in Power BI with Dataflows](service-dataflows-overview.md)   
 [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
 
