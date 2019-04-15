@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/10/2019
+ms.date: 04/12/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -80,10 +80,11 @@ The **Database** category provides the following data connections:
 * BI Connector
 * Dremio
 * Exasol
-* MarkLogic (Beta)
 * Indexima (Beta)
 * InterSystems IRIS (Beta)
-
+* Jethro (Beta)
+* Kyligence Enterprise (Beta)
+* MarkLogic (Beta)
 
 > [!NOTE]
 > Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
@@ -177,14 +178,14 @@ The **Other** category provides the following data connections:
 * Python script
 * ODBC
 * OLE DB
+* BI360 - Budgeting & Financial Reporting (Beta)
 * Denado
+* Information Grid (Beta)
 * Paxata 
 * QubolePresto (Beta)
 * Quick Base (Beta)
 * SurveyMonkey (Beta)
 * Workforce Dimensions (Beta)
-* BI360 - Budgeting & Financial Reporting (Beta)
-* Information Grid (Beta)
 * Blank Query
 
 The following image shows the **Get Data** window for **Other**.

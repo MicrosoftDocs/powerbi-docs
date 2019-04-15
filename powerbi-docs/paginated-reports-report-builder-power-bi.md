@@ -21,18 +21,21 @@ Paginated reports can have many pages. For example, this report has 563 pages. E
 
 You can preview your report in Report Builder, then publish it to the Power BI service, http://app.powerbi.com. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in app workspaces, as long as the workspace is in a Power BI Premium capacity. Also, a Power BI admin needs to enable paginated reports in the Power BI admin portal. 
 
-## Create reports in Report Builder
+## Create reports in Power BI Report Builder
 
-Paginated reports have their own design tool, Report Builder. It's the same tool and the same version you'd use to create paginated reports for Power BI Report Server or SQL Server Reporting Services (SSRS). In fact, paginated reports that you create for SSRS 2016 and 2017 or for Power BI Report Server on-premises, are compatible with the Power BI service. The Power BI service maintains backwards compatibility so you can move your reports forward, and you can upgrade any previous-version paginated reports. Not all report features are available at launch. See [Limitations and considerations](#limitations-and-considerations) in this article for details.
+Paginated reports have their own design tool, Power BI Report Builder. It's a new tool that shares the same foundation as the tools you'd previously used to create paginated reports for Power BI Report Server or SQL Server Reporting Services (SSRS). In fact, paginated reports that you create for SSRS 2016 and 2017 or for Power BI Report Server on-premises, are compatible with the Power BI service. The Power BI service maintains backwards compatibility so you can move your reports forward, and you can upgrade any previous-version paginated reports. Not all report features are available at launch. See [Limitations and considerations](#limitations-and-considerations) in this article for details.
      
 ## Report from a variety of data sources
 
-A single paginated report can have a number of different data sources. It doesn't have an underlying data model, unlike Power BI reports. For the initial release of paginated reports in the Power BI service, you create embedded data sources and datasets in the report itself. For now, you can't use shared data sources or shared datasets. You create reports in Report Builder on your local computer. If a report connects to on-premises data, after you upload the report to the Power BI service, you need to create a gateway and redirect the data connection. Here are the data sources you can connect to for the initial release:
+A single paginated report can have a number of different data sources. It doesn't have an underlying data model, unlike Power BI reports. For the initial release of paginated reports in the Power BI service, you create embedded data sources and datasets in the report itself. For now, you can't use shared data sources or shared datasets. You create reports in Report Builder on your local computer. If a report connects to on-premises data, after you upload the report to the Power BI service, you need to create a gateway and redirect the data connection. Here are the data sources you can connect to at this time:
 
 - Azure SQL Database and Data Warehouse
 - Azure Analysis Services (via SSO)
 - SQL Server via a gateway
 - SQL Server Analysis Services via a gateway
+- Power BI Premium Datasets
+- Oracle
+- Teradata
  
 More data sources will be coming during the preview period.
 
@@ -68,13 +71,11 @@ Here are some other features that aren't supported in the initial release:
 - Subreports and drillthrough reports.
 - Subscriptions.
 - Shared data sources and shared datasets.
-- Power BI datasets.
 - Visuals from Power BI reports.
-- Paginated reports in apps. You can share a paginated report from an app workspace, but you can't include it when you publish the app from that workspace.
  
 ## Next steps
 
-- [Install Report Builder from the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=734968)
+- [Install Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Tutorial: Create a paginated report](paginated-reports-quickstart-aw.md)
 - [Enter data directly in a paginated report](paginated-reports-enter-data.md)
 

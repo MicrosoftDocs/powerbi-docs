@@ -13,7 +13,7 @@ ms.date: 11/06/2018
 
 # Tutorial: Create a paginated report and upload it to the Power BI service (Preview)
 
-In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Report Builder to create a paginated report with a table that wraps to multiple pages. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service. Paginated reports in the Power BI service are currently in preview.
+In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Power BI Report Builder to create a paginated report with a table that wraps to multiple pages. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service. Paginated reports in the Power BI service are currently in preview.
 
 ![Paginated report in the Power BI service](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
@@ -21,7 +21,7 @@ Here are the steps you complete in this tutorial:
 
 > [!div class="checklist"]
 > * Create an Azure sample database.
-> * Create a matrix in Report Builder with the help of a wizard.
+> * Create a matrix in Power BI Report Builder with the help of a wizard.
 > * Format the report with title, page numbers, and column headings on each page.
 > * Format the currency.
 > * Upload the report to the Power BI service.
@@ -32,7 +32,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 Here are the prerequisites for creating the paginated report:
 
-- Install [Report Builder from the Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=734968). 
+- Install [Power BI Report Builder from the Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513). 
 
 - Follow the quickstart [Create an Azure SQL database sample  in the Azure portal](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Copy and save the value in the **Server name** box on the **Overview** tab. Remember the user name and password you created in Azure.
 
@@ -43,7 +43,7 @@ Here are the prerequisites for uploading your paginated report to the Power BI s
 
 ## Create the matrix with a wizard
   
-1.  Start Report Builder from your computer.  
+1.  Start Power BI Report Builder from your computer.  
   
      The **Getting Started** dialog box opens.  
   
