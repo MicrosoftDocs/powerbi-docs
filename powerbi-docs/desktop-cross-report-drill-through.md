@@ -30,7 +30,7 @@ The following definitions are important to understand and establish, before we b
 
 To enable a report to be the target of a cross-report drillthrough, you must enable the feature for that report in the Options window. Go to **File > Options and settings > Options**, then navigate to **Report settings** near the bottom of the page on the left.
 
-On that page in the Options window, select the checkbox to **Allow visuals in this report to use drillthrough targets from other reports**0, as shown in the following image.
+On that page in the Options window, select the checkbox to **Allow visuals in this report to use drillthrough targets from other reports**, as shown in the following image.
 
 ![enable cross-report drillthrough in Options](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
 
