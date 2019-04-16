@@ -7,12 +7,13 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/04/2019
+ms.date: 04/15/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Publish apps with dashboards and reports in Power BI
+
 
 In Power BI, you can publish *apps* with collections of related dashboards and reports. You create apps in *app workspaces*, where you can collaborate on Power BI content with your colleagues. Then you can publish the finished apps to large groups of people in your organization. Read more about [creating app workspaces](service-create-workspaces.md).
 
@@ -22,7 +23,13 @@ In Power BI, you can publish *apps* with collections of related dashboards and r
 
 Your business users often need multiple Power BI dashboards and reports to run their business. With Power BI apps, you can create collections of dashboards and reports and publish these apps to your whole organization or to specific people or groups. For you as a report creator or admin, apps make it easier to manage permissions on these collections.
 
-Business users get your apps in a few different ways. If the Power BI administrator gives you permission, you can install apps automatically in your coworkers' Power BI accounts. Otherwise, they can install your apps from Microsoft AppSource, or you can send them a direct link. They can easily find and return to your content because it’s all in one place. They can’t modify the contents of the app, but they can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. They get updates automatically and you can control how frequently the data refreshes. Read more about the [app experience for business users](consumer/end-user-apps.md).
+Business users get your apps in a few different ways.
+
+- They can find and install your app from Microsoft AppSource
+- You can send them a direct link. 
+- You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. 
+
+The Apps list in the left navigation shows all the apps they've installed. They can easily find and return to your content because it’s all in one place. They can’t modify the contents of the app, but they can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. They get updates automatically and you can control how frequently the data refreshes. Read more about the [app experience for business users](consumer/end-user-apps.md).
 
 ## Apps and organizational content packs
 Apps are the evolution of organizational content packs. Content packs aren't available in the new workspace experiences. You cannot create, publish, or install content packs in the new workspace experience. If you haven't already, start migrating your content packs to apps.
@@ -59,7 +66,9 @@ When the dashboards and reports in your workspace are ready, you choose which da
    
      ![App content](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-5. On **Access**, decide who has access to the app: either everyone in your organization, specific people,  Active Directory security groups. If you have permissions, you can decide to install the app automatically for the recipients. A Power BI admin can enable this setting in the Power BI Admin Portal. Read more [automatically installing an app](#how-to-install-an-app-automatically-for-end-users).
+5. On **Access**, decide who has access to the app: either your entire organization, or individuals, Office 365 groups, distribution lists, and Active Directory security groups, whether email-enabled or not. 
+
+6. If you have permissions, you can also decide to install the app automatically for the recipients. A Power BI admin can enable this setting in the Power BI Admin Portal. Read more [automatically installing an app](#how-to-install-an-app-automatically-for-end-users).
 
     ![App access](media/service-create-distribute-apps/power-bi-apps-access.png)
 
