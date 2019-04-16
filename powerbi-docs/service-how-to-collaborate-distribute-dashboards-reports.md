@@ -32,7 +32,7 @@ No matter which option you choose, to share a dashboard you need a [Power BI Pro
 
 ## Collaborate with coworkers in a workspace
 
-When teams work together, they need access to the same documents so they can quickly collaborate. Workspaces in Power BI provide the place where teams come together to share the ownership and management of dashboards, reports, datasets, and workbooks that matter to them. Sometimes Power BI users organize their workspaces based on organizational structures, other times they create them for specific projects. Still other organizations use several workspaces to store different versions of reports or dashboards they use. 
+When teams work together, they need access to the same documents so they can quickly collaborate. In Power BI workspaces, teams come together to share the ownership and management of their dashboards, reports, datasets, and workbooks. Sometimes Power BI users organize their workspaces based on organizational structures, other times they create them for specific projects. Still other organizations use several workspaces to store different versions of reports or dashboards they use. 
 
 Workspaces provide roles that determine what permissions your coworkers have. You can use those roles to determine who can manage the entire workspace, or provide content into it.
 
@@ -40,7 +40,12 @@ Workspaces provide roles that determine what permissions your coworkers have. Yo
 
 Some users naturally put content in their My Workspace and share it out. Workspaces are better for collaboration than My Workspace because they provide co-ownership of content. You and your entire team can easily make updates or give others access. My Workspace is best used by individuals for one-off or personal content.
 
-Let’s imagine you have a finished dashboard you need to share with your colleagues. What's the best way to give them access to the dashboard? The answer depends on a number of factors. If a specific colleague needs to own the dashboard and keep it up-to-date, or needs access to all the content in the workspace, it may be best to add them to the workspace. If your colleague just needs to see that dashboard and not all the content in the workspace, you again can choose from a set of alternatives. If the dashboard is part of a bigger set of content you need to distribute to many colleagues, then publishing an app is likely the best choice. However, if the colleague just needs that one dashboard, then sharing the dashboard could be the best path forward.
+Let’s imagine you have a finished dashboard you need to share with your colleagues. What's the best way to give them access to the dashboard? The answer depends on a number of factors. 
+
+- If colleagues need to keep the dashboard up-to-date, or need access to all the content in the workspace, consider adding them to the workspace. 
+- If colleagues just need to see that dashboard and not all the content in the workspace, you again have alternatives. 
+- If the dashboard is part of a bigger set of content you need to distribute to many colleagues, then publishing an app is likely the best choice. 
+- However, if colleagues just need that one dashboard, then sharing the dashboard could be the best solution.
 
 Read more about [creating workspaces](service-create-workspaces.md).
 
@@ -91,8 +96,12 @@ You can print or save as PDF (or other static file format) an entire dashboard, 
 ## Embed reports in secure portals or public websites
 
 You can embed Power BI reports in portals or websites where your users expect to see them.  
+The **Embed in SharePoint Online** and the **Embed** option in the Power BI service allows you to embed reports for your internal users securely. 
 
-The **Embed in SharePoint Online** and the **Embed** option in the Power BI service allows you to embed reports for your internal users securely. The Embed in SharePoint Online option works with the Power BI web part for SharePoint Online and provides a single sign-on experience with control over how the report is embedded. The Embed option works with any portal or website that supports embedding content using a URL or an iFrame. Whichever option you choose, they both ensure that all permissions and data security are enforced before a user can see content. The person viewing the report needs the appropriate license. More about [Embed in SharePoint Online](service-embed-report-spo.md) and the [Embed](service-embed-secure.md) option in Power BI.
+- **Embed in SharePoint Online** works with the Power BI web part for SharePoint Online. It provides a single sign-on experience with control over how the report is embedded. 
+- **Embed** works with any portal or website that supports embedding content using a URL or an iFrame. 
+
+Whichever option you choose, Power BI enforces all permissions and data security before users can see content. The person viewing the report needs the appropriate license. More about [Embedding in SharePoint Online](service-embed-report-spo.md) and the [Embed](service-embed-secure.md) option in Power BI.
 
 With **Publish to web**, you can publish Power BI reports to the whole Internet by embedding interactive visualizations in blog posts, websites, social media, and other online communications on any device. Anyone on the Internet can view your reports, and you have no control over who can see what you've published. They don't need a Power BI license. Publishing to the web is available only for reports that you can edit. You can't publish reports to the web if they're shared with you or if they're in an app. More about [publishing to the web](service-publish-to-web.md).
 
