@@ -1,16 +1,16 @@
 ---
 title: Refresh a dataset created from a .csv file on OneDrive
 description: Refresh a dataset created from a comma separated value (.csv) file on OneDrive
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
-ms.author: davidi
+ms.author: mblythe
 
 LocalizationGroup: Data refresh
 ---
