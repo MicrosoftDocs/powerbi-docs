@@ -408,7 +408,11 @@
     - name: "Machine Learning integration with Power BI"
       href: service-tutorial-invoke-machine-learning-model.md
     - name: "Build a Machine Learning model with Power BI (Preview)"
-      href: service-tutorial-build-machine-learning-model.md                  
+      href: service-tutorial-build-machine-learning-model.md
+    - name: Data refresh
+      items: 
+      - name: "Refresh data from SQL Server"
+        href: service-gateway-sql-tutorial.md                  
   - name: Concepts
     items: 
     - name: "What's new in the Power BI service"
