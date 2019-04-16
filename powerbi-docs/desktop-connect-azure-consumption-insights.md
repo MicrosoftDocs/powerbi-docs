@@ -21,7 +21,9 @@ Power BI desktop can connect to Azure and get in-depth data about your organizat
 
 Power BI currently supports connecting to Enterprise Agreement and Customer Agreement billing accounts.
 
-Enterprise Agreement users should connect with the Azure Consumption Insights connector. Customer agreement account users should connect with the Azure Cost Management connector.
+* **Enterprise Agreement** users should connect with the **Azure Consumption Insights connector**.
+
+* **Customer Agreement** users should connect with the **Azure Cost Management connector**.
 
 ## Connect with Azure Consumption Insights
 
@@ -209,6 +211,11 @@ The columns and names of details in the Azure Portal are similar in the API and 
 ## Connect with Azure Cost Management
 
 In this section, you'll learn how to connect to your Customer Agreement billing account.
+
+> [!NOTE]
+> The Azure Cost Management connector currently supports customers on the **Customer Agreement**.  **Enterprise Agreement** customers should use the Microsoft Azure Consumption Insights connector.
+> 
+> 
 
 To connect using the **Azure Cost Management** connector, select **Get Data** from the **Home** ribbon in **Power BI Desktop**.  Select **Azure** fromfrom the categories on the left, and you see **Azure Cost Management (Beta)**. Select **Connect**.
 
