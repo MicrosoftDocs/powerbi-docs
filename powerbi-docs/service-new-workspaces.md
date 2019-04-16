@@ -41,11 +41,9 @@ In **Workspace settings** in the admin portal, admins can use the Create workspa
 
 ![Workspace settings in the admin portal](media/service-new-workspaces/power-bi-workspace-admin-settings.png)
 
-In the Power BI admin portal, the [workspaces list is available](service-admin-portal.md#workspaces). 
+The [workspaces list is available](service-admin-portal.md#workspaces) in the Power BI admin portal. 
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
-
-Read more about the [Power BI admin portal](service-admin-portal.md).
 
 ## New workspaces side by side with classic workspaces
 

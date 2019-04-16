@@ -152,6 +152,7 @@ In the new workspace experience, you can't create or consume organizational cont
 
 If you want to distribute official content to a large audience within your organization, you can publish an app from your workspace.  When the content is ready, you choose which dashboards and reports you want to publish, and then publish it as an *app*. You can create one app from each workspace.
 
+Read about [publishing an app from the new workspaces](service-create-distribute-apps.md)
 
 ## Next steps
 * Read about [organizing work in the new workspaces experience in Power BI](service-new-workspaces.md)
