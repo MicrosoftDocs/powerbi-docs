@@ -190,7 +190,7 @@ Now that your app is in production, you can start over in the test phase, withou
 6. Your link is now live, submit it again to the Cloud Partner Portal by following the steps at [Power BI App offer update](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
 
 >[!NOTE]
->Promote your app to production stage only after your app is approved by Cloud portal partner and you published it: "GO LIVE"
+>Promote your app to production stage only after your app is approved by Cloud Partner Portal and you published it.
 ## Next steps
 
 See how your customers interact with your template app in [Install, customize, and distribute template apps in your organization](service-template-apps-install-distribute.md).
