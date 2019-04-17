@@ -53,7 +53,7 @@
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
       href: desktop-latest-update.md
-    - name: "Modeling view in Power BI Desktop (Preview)"
+    - name: "Modeling view in Power BI Desktop"
       href: desktop-modeling-view.md      
     - name: "Aggregations in Power BI Desktop (Preview)"
       href: desktop-aggregations.md      
@@ -408,7 +408,9 @@
     - name: "Machine Learning integration with Power BI"
       href: service-tutorial-invoke-machine-learning-model.md
     - name: "Build a Machine Learning model with Power BI (Preview)"
-      href: service-tutorial-build-machine-learning-model.md                  
+      href: service-tutorial-build-machine-learning-model.md
+    - name: "Refresh data from SQL Server"
+      href: service-gateway-sql-tutorial.md                  
   - name: Concepts
     items: 
     - name: "What's new in the Power BI service"
@@ -915,6 +917,8 @@
       items: 
       - name: "Embed from an app"
         href: developer/embed-from-apps.md
+      - name: "Auto-install apps"
+        href: developer/embed-auto-install-app.md
       - name: "Create an Azure Active Directory tenant"
         href: developer/create-an-azure-active-directory-tenant.md
       - name: "Register an application"

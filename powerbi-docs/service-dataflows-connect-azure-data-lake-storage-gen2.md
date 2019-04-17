@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/12/2019
+ms.date: 04/15/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -27,11 +27,13 @@ To use Azure Data Lake Storage Gen2 for dataflows, you need the following:
 * **A Global Administrator account** - this account is required to connect and configure Power BI to store the dataflow definition, and data, in your Azure Data Lake Storage Gen2 account
 * **An Azure subscription** - you need an Azure subscription to use Azure Data Lake Storage Gen2
 * **Resource group** - use a resource group you already have, or you can create a new one
-* **An Azure Storage account with Data Lake Storage Gen2 (Preview) feature enabled** - to connect to Azure Data Lake Storage Gen2, you need to sign up for its public preview
+* **An Azure Storage account with Data Lake Storage Gen2 feature enabled** 
 
 > [!TIP]
 > If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 
+> [!WARNING]
+> Once a dataflow storage location is configured, it cannot be changed. See the [considerations and limitations](#considerations-and-limitations) section near the end of this article for other important elements to consider.
 
 ## Prepare your Azure Data Lake Storage Gen2 for Power BI
 
@@ -109,7 +111,7 @@ To find your tenant applications, follow these steps:
 
     ![Search for Power applications](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Select and copy both Object IDs for Power BI service and Power BI premium from the results of your search. Be ready to paste those values in subsequent steps.
+5. Select and copy both Object IDs for Power BI service and Power Query online from the results of your search. Be ready to paste those values in subsequent steps.
 
 7. Next, use **Azure Storage Explorer** to navigate to the *powerbi* file system you created in the previous section. Follow the instructions in [Managing access](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) section of [Set file and directory level permissions using Azure Storage explorer](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) article.
 
@@ -135,7 +137,7 @@ You connect your **Azure Data Lake Storage Gen2** account with the following ste
 
     ![Power BI admin portal](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-08b.png) 
 
-2. Select the **Connect your Azure Data Lake Storage Gen2 Preview** button. The following window appears.
+2. Select the **Connect your Azure Data Lake Storage Gen2** button. The following window appears.
 
     ![Azure Data Lake Storage Gen2](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_09.jpg) 
 
@@ -156,7 +158,7 @@ Next you need to enable people in your organization to configure their workspace
 
 By default, dataflow definition and data files are stored in the storage provided by Power BI. To access dataflow files in your own storage account, workspace admins must first configure the workspace to allow assignment and storage of dataflows in the new storage account. Before a workspace admin can configure dataflow storage settings, the admin must be granted storage assignment permissions in the **Power BI admin portal**.
 
-To grant storage assignment permissions, go to the **Dataflow settings (Preview)** tab in the **Power BI admin portal**. There is a radio button to *Allow workspace admins to assign workspaces to this storage account* which must be set to **allow**. Once you enable that slider, select the **Apply** button for the change to take effect. 
+To grant storage assignment permissions, go to the **Dataflow settings** tab in the **Power BI admin portal**. There is a radio button to *Allow workspace admins to assign workspaces to this storage account* which must be set to **allow**. Once you enable that slider, select the **Apply** button for the change to take effect. 
 
 ![Allow admins to assign workspaces](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_10.jpg) 
 

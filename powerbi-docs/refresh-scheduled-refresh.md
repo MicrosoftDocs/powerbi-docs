@@ -1,15 +1,15 @@
 ---
 title: Configure scheduled refresh
 description: This covers the steps to select a gateway and configure scheduled refresh.
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
-ms.author: davidi
+ms.author: mblythe
 
 LocalizationGroup: Data refresh
 ---
