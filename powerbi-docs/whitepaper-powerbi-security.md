@@ -452,7 +452,7 @@ The following questions are common security questions and answers for Power BI. 
 * No. The app publisher is responsible for the content while the customer's responsibility to review and determine whether to trust the Template app publisher. 
 
 **Are there Template apps that can send information outside the customer network?**
-* Yes. It is customer's responsibility to review publisher's privacy policy and determine whether to install the Template app on Tenant. Furthermore, publisher is responsible to notify of the app's behavior and capabilities.
+* Yes. It is the customer's responsibility to review the publisher's privacy policy and determine whether to install the Template app on Tenant. Furthermore, the publisher is responsible to notify of the app's behavior and capabilities.
 
 **What about data sovereignty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country borders?**
 
