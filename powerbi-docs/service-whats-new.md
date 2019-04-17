@@ -27,12 +27,17 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-
-## March 2019
-* General Availability of Multi-Geo for Power BI Premium.
-* Editing and managing Power BI content support for Azure B2B.
+## April 2019
+* General availability of Power BI [dataflows](service-dataflows-overview.md).
+* General availability of the new workspaces experience.
+* New Power BI regions in France and Korea.
 
 ## Previous months (2019)
+### March 2019
+* General Availability of Multi-Geo for Power BI Premium.
+* Editing and managing Power BI content support for Azure B2B.
+* Public preview of read-only [XMLA endpoint](https://powerbi.microsoft.com/en-us/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/).
+
 ### February 2019
 * Workloads and active dataset size metrics in [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 * Export to PDF for Power BI reports.
