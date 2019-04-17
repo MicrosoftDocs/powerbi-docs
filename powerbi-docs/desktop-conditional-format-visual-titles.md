@@ -15,7 +15,7 @@ LocalizationGroup: Connect to data
 ---
 # Expression-based titles in Power BI Desktop
 
-You can create dynamic, customized titles for your Power BI visuals. By creating DAX expressions based on fields, variables, or other programmatic elements, your visuals' titles can automatically adjust as needed. These changes are based on filters, selections, or other user interactions and configurations.
+You can create dynamic, customized titles for your Power BI visuals. By creating Data Analysis Expressions (DAX) based on fields, variables, or other programmatic elements, your visuals' titles can automatically adjust as needed. These changes are based on filters, selections, or other user interactions and configurations.
 
 ![Screenshot of Power BI Desktop conditional formatting option](media/desktop-conditional-formatting-visual-titles/expression-based-title-01.png)
 
@@ -27,7 +27,7 @@ The first step in creating an expression-based title is to create a field in you
 
 There are all sorts of creative ways to have your visual title reflect what you want it to say, or what you want to express. Let's take a look at a couple examples.
 
-You could create an expression that changes based on the filter context that the visual receives for the product's brand name. The following image shows the DAX formula for such a field.
+You can create an expression that changes based on the filter context that the visual receives for the product's brand name. The following image shows the DAX formula for such a field.
 
 ![Screenshot of DAX formula](media/desktop-conditional-formatting-visual-titles/expression-based-title-02.png)
 
@@ -44,7 +44,7 @@ SWITCH (
 
 Or you can retrieve the string from a lookup table that contains all the translations. You  place that table in your model. 
 
-These are just a couple of examples you can use to create dynamic, expression-based titles for your visuals in Power BI Desktop. What you could do with your titles are limited only by your imagination, and your model.
+These are just a couple of examples you can use to create dynamic, expression-based titles for your visuals in Power BI Desktop. What you can do with your titles are limited only by your imagination, and your model.
 
 
 ## Select your field for your title

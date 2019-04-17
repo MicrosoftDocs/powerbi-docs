@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 ---
 # Use cross-report drillthrough in Power BI Desktop
 
-With the cross-report drillthrough feature in Power BI Desktop, you can contextually jump from one report to another report. This is true as long as the reports are within the same workspace or app in the Microsoft Power BI service. Use cross-report drillthrough to connect two or more reports that have related content, and to pass the filter context along with the cross-report connection. In this article, you learn how to set up a cross-report drillthrough for Power BI reports, and what user experience when they use the cross-report drillthrough for themselves.
+With the cross-report drillthrough feature in Power BI Desktop, you can contextually jump from one report to another report. This is true as long as the reports are within the same workspace or app in the Microsoft Power BI service. Use cross-report drillthrough to connect two or more reports that have related content, and to pass the filter context along with the cross-report connection. In this article, you learn how to set up a cross-report drillthrough for Power BI reports, and what users experience when they use the cross-report drillthrough for themselves.
 
 ![Screenshot of Power BI Desktop drillthrough option](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 
@@ -72,7 +72,7 @@ The previous section described how to enable cross-report drillthrough for Power
 1. Select the workspace in which your target report and source report reside.
 2. Select **Reports**.
 3. Select the **Settings** icon for the source report.
-4. Make sure the cross-report drill toggle is **On**.
+4. Make sure the cross-report drillthrough toggle is **On**.
 5. Save your report.
 
 That's it, your report is ready for the cross-report drillthrough experience. 
@@ -87,7 +87,7 @@ Select the source report in the Power BI service, and then select a visual that 
 
 ![Screenshot of source report in the Power BI service, with Drillthrough highlighted](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 
-You'll then see the results in the target cross-report drillthrough page, just as you set them up when you created the target. The results are filtered according to the drill-through settings.
+You'll then see the results in the target cross-report drillthrough page, just as you set them up when you created the target. The results are filtered according to the drillthrough settings.
 
 > [!IMPORTANT]
 > Power BI caches cross-report drillthrough targets. If you make changes, be sure you refresh your browser if you don't see the drillthrough targets as expected. 
