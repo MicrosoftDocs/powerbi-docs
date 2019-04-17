@@ -558,7 +558,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
     This statement assigns the *dataView* to a variable for easy access, and declares the variable to reference the *dataView* object.
 
-2. In the **update** method, replace.text(“Value”)** with the following.
+2. In the **update** method, replace **.text(“Value”)** with the following.
 
     ```typescript
     .text(dataView.single.value as string)
