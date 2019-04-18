@@ -26,3 +26,5 @@
 | Teradata |Yes |Yes |
 | Web |No |Yes |
 
+> [!NOTE]
+> In addition to on-premises data sources, sources behind a firewall, VPN, or virtual network might also need a data gateway.
