@@ -1,5 +1,5 @@
 ---
-title: "Subscribe yourself and others to a paginated report in the Power BI service"
+title: "Subscribe to paginated reports in the Power BI service"
 description: In this article, you learn things to keep in mind about subscribing to  paginated reports in the Power BI service.  
 author: maggiesMSFT
 ms.author: maggies
@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 04/17/2019
+ms.date: 04/18/2019
 ---
 
-# Subscribe yourself and others to a paginated report in the Power BI service 
+# Subscribe yourself and others to paginated reports in the Power BI service 
 
-Paginated reports now support email subscriptions in the Power BI service.   You choose how often you want to receive the emails: daily, weekly, or, soon, hourly. If you choose daily or weekly, you can choose the time you'd like the subscription to run. In all, you can set up to 24 different subscriptions per day for every report. 
+You can now set up email subscriptions for yourself and others for paginated reports in the Power BI service. In general, the process is the same as [subscribing to reports and dashboards in the Power BI service](service-report-subscribe.md). This article spells out the differences and considerations. 
 
-See the article [Subscribe yourself and others to reports and dashboards in the Power BI service](service-report-subscribe.md) for details.
+In setting up subscriptions, you choose how often you want to receive the emails: daily, weekly, or, soon, hourly. If you choose daily or weekly, you can choose the time you'd like the subscription to run. In all, you can set up to 24 different subscriptions per day for every report. 
 
 ## Considerations for paginated report subscriptions 
 
@@ -25,7 +25,7 @@ See the article [Subscribe yourself and others to reports and dashboards in the 
 
 - The maximum report attachment size is currently 12 MB. 
 
-- You can subscribe other users for paginated reports that use a live connection to either Azure Analysis Services or Power BI datasets.  The report attachment reflects the data based on your permissions, just as SQL Server Reporting Services does today. 
+- You can subscribe other users for paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions, just as SQL Server Reporting Services does today. 
 
 - Report page subscriptions are tied to the name of the report.  
 
