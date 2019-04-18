@@ -15,7 +15,8 @@ If you encounter authentication issues with your proxy server, try changing the 
 
 The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 through 9354.  The gateway does not require inbound ports.
 
-It is recommended that you whitelist the IP addresses, for your data region, in your firewall. You can download the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653), which is updated weekly. The gateway will communicate with Azure Service Bus using the IP address along with the fully qualified domain name (FQDN). If you are forcing the gateway to communicate using HTTPS it will strictly use FQDN only, and no communication will happen using IP addresses.
+It is recommended that you whitelist the IP addresses, for your data region, in your firewall. You can download the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653), which is updated weekly. Alternatively you can obtain the list of required ports by performing the [Network port test](service-gateway-onprem-tshoot.md#network-ports-test) on the on-premises data gateway application. The gateway will communicate with Azure Service Bus using the IP address along with the fully qualified domain name (FQDN). If you are forcing the gateway to communicate using HTTPS it will strictly use FQDN only, and no communication will happen using IP addresses.
+
 
 > [!NOTE]
 > The IP Addresses listed in the Azure Datacenter IP list are in CIDR notation. For example, 10.0.0.0/24 does not mean 10.0.0.0 through 10.0.0.24. Learn more about the [CIDR notation](http://whatismyipaddress.com/cidr).
@@ -28,7 +29,7 @@ Here is a listing of the fully qualified domain names used by the gateway.
 | *.powerbi.com |443 |HTTPS |
 | *.analysis.windows.net |443 |HTTPS |
 | *.login.windows.net |443 |HTTPS |
-| *.servicebus.windows.net |5671-5672 |Advanced Message Queuing Protocol (AMQP) |
+| *.servicebus.windows.net |5671-5672 |Used for Advanced Message Queuing Protocol (AMQP) |
 | *.servicebus.windows.net |443, 9350-9354 |Listeners on Service Bus Relay over TCP (requires 443 for Access Control token acquisition) |
 | *.frontend.clouddatahub.net |443 |HTTPS |
 | *.core.windows.net |443 |HTTPS |
@@ -37,7 +38,7 @@ Here is a listing of the fully qualified domain names used by the gateway.
 | *.microsoftonline-p.com |443 |Used for authentication depending on configuration. |
 
 > [!NOTE]
-> Traffic going to visualstudio.com or visualstudioonline.com are for app insights and are not required for the gateway to function.
+> Once the gateway is installed and registered, the only required ports/IPs are the ones needed by the Azure service bus(servicebus.windows.net above). You can obtain the list of required ports by performing the [Network port test](service-gateway-onprem-tshoot.md#network-ports-test) on the on-premises data gateway application.
 
 ## Forcing HTTPS communication with Azure Service Bus
 
