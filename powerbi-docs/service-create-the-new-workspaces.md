@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 ---
 # Create the new workspaces in Power BI
 
-Power BI is introducing a new workspace experience. Workspaces are still places to collaborate with colleagues to create collections of dashboards, reports, and paginated reports. You can still bundle them into *apps* and distribute them to your whole organization or to specific people or groups. 
+Power BI is introducing a new workspace experience. Workspaces are still places to collaborate with colleagues to create collections of dashboards, reports, and paginated reports. You can still bundle that collection into an *app* and distribute it to your whole organization, or to specific people or groups. 
 
 In the new workspaces, you can:
 

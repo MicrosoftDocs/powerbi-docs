@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 ---
 # Organize work in the new workspaces in Power BI
 
- Workspaces are places to collaborate with colleagues to create collections of dashboards, reports, and paginated reports. This article describes the new workspace experiences and how they differ from the classic workspaces. The new workspace experience helps you better manage access to content. As with the classic workspaces, you can still use them to create apps and distribute them.
+ Workspaces are places to collaborate with colleagues to create collections of dashboards, reports, and paginated reports. The new workspace experience helps you better manage access to content. This article describes them, and how they differ from the classic workspaces.  As with the classic workspaces, you can still use them to create apps and distribute them. Read about [creating a new workspace experience](service-create-the-new-workspaces.md).
 
 The new workspace experience has reached general availability (GA), and is now the default workspace. You can still continue to create and use [classic workspaces](service-create-workspaces.md) based on Office 365 Groups. 
 
@@ -26,8 +26,6 @@ With the new workspaces, you can:
 - Assign workspace roles to user groups: security groups, distribution lists, Office 365 groups, and individuals.
 - Create a workspace in Power BI without creating an Office 365 group.
 - Use more granular workspaces roles for more flexible permissions management in a workspace.
-
-Read about how to [create one of the new workspaces](service-create-the-new-workspaces.md).
 
 When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the workspace administration is in Power BI, not in Office 365. In the new workspace experience, you can now add an Office 365 group in the workspace access list to continue managing user access to content through Office 365 groups.
 
