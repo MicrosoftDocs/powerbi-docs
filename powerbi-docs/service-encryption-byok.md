@@ -21,7 +21,7 @@ Why use your own key? BYOK gives you more flexibility, so that you can create, r
 
 ## Encryption in Power BI
 
-In this article, we provide some basic information so you can understand the BYOK process. For detailed information about encryption in Power BI, see [Power BI data storage and movement](whitepaper-powerbi-security.md#data-storage-and-movement).
+In this section, we provide some basic information so you can understand the BYOK process. For detailed information about encryption in Power BI, see [Power BI data storage and movement](whitepaper-powerbi-security.md#data-storage-and-movement).
 
 The following diagram shows the components of a PBIX file that is hosted in the Power BI service.
 
