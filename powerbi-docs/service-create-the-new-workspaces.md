@@ -1,20 +1,20 @@
 ---
 title: Create the new workspaces - Power BI
-description: Learn how to create the new workspaces, collections of dashboards and reports built to deliver key metrics for your organization.
+description: Learn how to create the new workspaces, collections of dashboards, reports, and paginated reports built to deliver key metrics for your organization.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 04/18/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Create the new workspaces in Power BI
 
-Power BI is introducing a new workspace experience. Workspaces are still places to collaborate with colleagues to create collections of dashboards and reports, which you can bundle into *apps* and distribute to your whole organization or to specific people or groups. 
+Power BI is introducing a new workspace experience. Workspaces are still places to collaborate with colleagues to create collections of dashboards, reports, and paginated reports. You can still bundle them into *apps* and distribute them to your whole organization or to specific people or groups. 
 
 In the new workspaces, you can:
 

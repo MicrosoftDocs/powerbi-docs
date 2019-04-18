@@ -7,16 +7,16 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/12/2019
+ms.date: 04/18/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Organize work in the new workspaces in Power BI
 
-Workspaces are places to collaborate with colleagues to create collections of dashboards and reports. You can bundle those collections into *apps* with their own table of contents. Then you can distribute them to your whole organization or to specific people or groups. Power BI is introducing a new workspace experience to better help you manage access to content in workspaces. 
+ Workspaces are places to collaborate with colleagues to create collections of dashboards, reports, and paginated reports. This article describes the new workspace experiences and how they differ from the classic workspaces. The new workspace experience helps you better manage access to content. As with the classic workspaces, you can still use them to create apps and distribute them.
 
-The new workspace experience has reached general availability (GA), and is now the default workspace experience. Classic workspaces that are based on Office 365 Groups are still supported. You can continue to create and use [classic workspaces](service-create-workspaces.md). 
+The new workspace experience has reached general availability (GA), and is now the default workspace. You can still continue to create and use [classic workspaces](service-create-workspaces.md) based on Office 365 Groups. 
 
 > [!NOTE]
 > To enforce row-level security (RLS) for Power BI Pro users browsing content in a workspace, continue to use [classic workspaces](service-create-workspaces.md). Select the **Members can only view Power BI content** option. Alternatively, publish an Power BI app to those users, or use sharing to distribute content. The forthcoming Viewer Role will enable this scenario in future in new workspace experience workspaces.
@@ -96,7 +96,7 @@ The Workspace OneDrive feature allows you to configure an Office 365 Group whose
 
 Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Office 365 Group membership. The best practice is to manage workspace access through the same Office 365 Group whose file storage you configure in this setting. 
 
-Read more about [setting and accessing the Workspace OneDrive](service-create-the-new-workspaces.md#workspace-onedrive).  
+Read about how to [set and access the Workspace OneDrive](service-create-the-new-workspaces.md#workspace-onedrive).  
    
 ## Auditing
 The following activities are audited by Power BI for new workspace experience workspaces.
