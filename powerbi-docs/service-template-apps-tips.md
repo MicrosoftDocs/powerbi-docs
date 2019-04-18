@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 04/18/2019
 ms.author: maggies
 ---
 
@@ -18,7 +18,8 @@ When you're [authoring your template app](service-template-apps-create.md) in Po
 * With **queries**, you [connect](desktop-connect-to-data.md) and [transform](desktop-query-overview.md) the data, and define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). 
 * In the **data model**, you create [relationships](desktop-create-and-manage-relationships.md), [measures](desktop-measures.md), and Q&A improvements.  
 * **[Report pages](desktop-report-view.md)** include visuals and filters to provide insights into your data.  
-* **[Dashboards](consumer/end-user-dashboards.md)** and [tiles](service-dashboard-create.md) offer an overview of the insights included.  
+* **[Dashboards](consumer/end-user-dashboards.md)** and [tiles](service-dashboard-create.md) offer an overview of the insights included.
+* Sample data makes your app discoverable immediately after installation.
 
 You may be familiar with each piece as existing Power BI features. When building a template app, there are additional things to consider for each piece. See each section below for more details.
 
@@ -118,18 +119,22 @@ To create a dashboard for your template app, just upload your PBIX through Get D
 * All dashboard tiles should have appropriate titles/subtitles.  
 * Consider groupings in the dashboard for different scenarios, either vertically or horizontally.  
 
+## Sample data
+Template apps, as part of the app creation stage, wraps the cache data in the workspace as part of the app:
+* Allows the installer to understand the functionality and purpose of the app before connecting data.
+* Creates an experience that drives the installer to further explore app capabilities, which leads to connecting the app to datasources.
+<p>It is recommended to have quality sample data prior to creating the app as well as insuring your report and dashboards are populated with data.
+
 ## Known limitations
 
 | Feature | Known Limitation |
 |---------|---------|
 |Contents:  Datasets   | Exactly one dataset should be present. Only datasets built in Power BI Desktop (.pbix files) are allowed. <br>Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (.rdl files), Excel workbooks |
-|Contents: Reports     | Up to one report    |
-| Contents: Dashboards | Up to one non-empty dashboard <br>Not supported: Real-time tiles (in other words, no support for PushDataset or pubnub) |
-| Contents: Dataflows | Not supported: Dataflows |
-| Contents from files | Only PBIX files are allowed. <br>Not supported: .rdl files (paginated reports), Excel workbooks   |
-| Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. <br>Not supported: <br>DirectQuery <br>Live connections (no Azure AS) <br>On-premises data sources (personal and enterprise gateways aren’t supported) <br>Real time (no support for pushdataset) <br>Composite models |
+|Contents: Dashboards | Real-time tiles aren’t allowed (in other words, no support for PushDataset or pubnub) |
+|Contents: Dataflows | Not supported: Dataflows |
+|Contents from files | Only PBIX files are allowed. <br>Not supported: .rdl files (paginated reports), Excel workbooks   |
+| Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. <br>Not supported: <li> DirectQuery</li><li>Live connections (no Azure AS)</li> <li>On-premises data sources (personal and enterprise gateways aren't supported)</li> <li>Real-time (no support for pushdataset)</li> <li>Composite models</li></ul> |
 | Dataset: cross-workspace | No cross-workspace datasets are allowed  |
-| Content: Dashboards | Real-time tiles aren’t allowed (in other words, no support for PushDataset or pubnub) |
 | Query parameters | Not supported: Parameters of type "Any" or "Binary" type block refresh operation for dataset |
 | Custom visuals | Only publicly available custom visuals are supported. [Organizational custom visuals](power-bi-custom-visuals-organization.md) not supported |
 
