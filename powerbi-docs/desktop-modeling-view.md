@@ -1,5 +1,5 @@
 ---
-title: Use Modeling view in Power BI Desktop (preview)
+title: Use Modeling view in Power BI Desktop
 description: Use Modeling view to see complex datasets in a visual format in Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -8,26 +8,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 04/15/2018
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
 ---
 
-# Modeling view in Power BI Desktop (preview)
+# Modeling view in Power BI Desktop
 
-With the **Modeling view** in **Power BI Desktop**, you can view and work with complex datasets that contain many tables. With Modeling view, you can do the following:
+With the **Modeling view** in **Power BI Desktop**, you can view and work with complex datasets that contain many tables.
 
-
-## Enabling the Modeling view preview feature
-
-The modeling view feature is in preview and must be enabled in **Power BI Desktop**. To enable Modeling view, select **File > Options and Settings > Options > Preview Features**, then select the **Modeling view** checkbox as shown in the following image.
-
-![Enable the Modeling view preview feature in Power BI Desktop](media/desktop-modeling-view/modeling-view_01.png)
-
-You'll be prompted that you need to restart **Power BI Desktop** for the preview feature to be enabled. 
-
-![Restart Power BI Desktop to enable preview features](media/desktop-modeling-view/modeling-view_01b.png)
 
 ## Using Modeling view
 
