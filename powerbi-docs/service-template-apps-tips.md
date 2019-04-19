@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 04/19/2019
 ms.author: maggies
 ---
 
@@ -34,7 +34,7 @@ To get started, you need to connect to your API from Power BI Desktop to start b
 You can use the Data Connectors that are available out of the box in Power BI Desktop to connect to your API. You can use the Web Data Connector (Get Data -> Web) to connect to your Rest API or the OData connector (Get Data -> OData feed) to connect to your OData feed. These connectors work out of the box only if your API supports Basic Authentication.
 
 > [!NOTE]
-> If your API uses any other authentication types, like OAuth 2.0 or Web API Key, then you need to develop your own Data Connector to allow Power BI Desktop to successfully connect and authenticate to your API. For details on how to develop your own Data Connector for your template app, check the [Data Connectors documentation](https://aka.ms/DataConnectors). 
+> If your API uses any other authentication types, like OAuth 2.0 or Web API Key, then you need to develop your own Data Connector to allow Power BI Desktop to successfully connect and authenticate to your API. Your custom connector must be added to PBI service for it to be accessed by Template app installer. <br> For details on how to develop your own Data Connector for your template app, check the [Data Connectors documentation](https://aka.ms/DataConnectors). 
 >
 >
 
@@ -84,10 +84,6 @@ Make sure you've:
 ## Reports
 The report pages offer additional insight into the data included in your template app. Use the pages of the reports to answer the key business questions your template app is trying to address. Create the report using Power BI Desktop.
 
-> [!NOTE]
-> You can only include one report in a template app, so take advantage of the different pages to call out particular sections of your scenario.
->
->
 
 ### Additional report tips
 
@@ -106,10 +102,6 @@ The dashboard is the main point of interaction with your template app for your c
 
 To create a dashboard for your template app, just upload your PBIX through Get Data > Files or publish directly from Power BI Desktop.
 
-> [!NOTE]
-> template apps currently require a single report and dataset per template app. Do not pin content from multiple reports/datasets onto the dashboard used in the template app.
->
->
 
 ### Additional dashboard tips
 
