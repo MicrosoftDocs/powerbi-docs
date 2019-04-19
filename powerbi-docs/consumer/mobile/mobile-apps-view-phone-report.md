@@ -20,7 +20,7 @@ Applies to:
 |:--- |:--- |
 | iPhones |Android phones |
 
-When you view a Power BI report on a phone, Power BI detects if the report has been optimized for phones and automatically opens the optimized report in portrait view.
+When you view a Power BI report on your phone, Power BI checks to see if the report has been optimized for phones. If it has, Power BI automatically opens the optimized report in portrait view.
 
 ![Report in portrait mode](./media/mobile-apps-view-phone-report/07-power-bi-phone-report-portrait.png)
 
@@ -34,7 +34,7 @@ All the other features of Power BI reports still work in phone-optimized reports
 * [Reports on Android phones](mobile-reports-in-the-mobile-apps.md).
 
 ## Filter the report page on a phone
-If a phone-optimized report has filters defined, when you view the report on a phone you can use those filters. The report opens on your phone filtered to the values being filtered in the report on the web, with a message that there are active filters on the page. You can change the filters on your phone.
+If a phone-optimized report has filters defined, when you view the report on a phone you can use those filters. The report opens on your phone, filtered to the values being filtered in the report on the web. You see a message that there are active filters on the page. You can change the filters on your phone.
 
 1. Tap the filter icon ![Phone filter icon](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) at the bottom of the page. 
 2. Use basic or advanced filtering to see the results you're interested in.
@@ -42,7 +42,7 @@ If a phone-optimized report has filters defined, when you view the report on a p
     ![Phone BI phone report advanced filter](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
 
 ## Cross-highlight visuals
-Cross highlighting visuals in phone reports works the same as it does in the Power BI service and in reports on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.
+Cross highlighting visuals in portrait view works the way it does in the Power BI service, and on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.
 
 Read more about [filtering and highlighting in Power BI](../../power-bi-reports-filters-and-highlighting.md).
 
@@ -52,13 +52,13 @@ In phone reports when you select a visual, the phone report highlights that visu
 With the visual selected, you can do things like scroll within the visual. To de-select a visual, just touch anywhere outside the visual area.
 
 ## Open visuals in focus mode
-Phone reports also offer a focus mode, so you can get a bigger view of a single visual and explore it and the report.
+Phone reports also offer a focus mode: You get a bigger view of a single visual and explore it more easily.
 
 * In a phone report, tap the ellipsis (**...**) in the upper-right corner of a visual  > **Expand to focus mode**.
   
     ![Expand to focus mode](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
 
-What you do in focus mode carries over to the report canvas and vice versa, for a seamless exploration experience. For example, if you highlight a value in a visual, then return to the whole report, the report as a whole will be filtered to the value you highlighted in the visual.
+What you do in focus mode carries over to the report canvas and vice versa. For example, if you highlight a value in a visual, then return to the whole report, the report is filtered to the value you highlighted in the visual.
 
 Some actions are only possible in focus mode, due to screen size constraints:
 
@@ -70,7 +70,7 @@ Some actions are only possible in focus mode, due to screen size constraints:
   
     ![Revert](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
   
-    Revert is available at the report level, clear all exploration from all visuals, or at the visual level, clearing all exploration from the specific visual selected.   
+    Revert is available at the report level, clearing exploration from all visuals, or at the visual level, clearing exploration from the selected visual.   
 
 ## Drill down in a visual
 If hierarchy levels are defined in a visual, you can drill down into the detailed information displayed in a visual, then back up. You [add drill-down to a visual](../end-user-drill.md) either in the Power BI service or in Power BI Desktop. Drill-down only works in phone-optimized Power BI reports when you view them on a phone. 

@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 04/18/2019
 ms.author: maggies
 
 LocalizationGroup: Get started
 ---
 # Supported languages and countries/regions for Power BI
 
-This article provides lists of supported languages and countries/regions for the Power BI service, Power BI Desktop, and Power BI documentation.
+This article lists supported languages and countries/regions for the Power BI service, Power BI Desktop, and Power BI documentation.
 
 ## Countries and regions where Power BI is available
 For a list of countries and regions where Power BI is available, see the [international availability list](https://products.office.com/business/international-availability). 
