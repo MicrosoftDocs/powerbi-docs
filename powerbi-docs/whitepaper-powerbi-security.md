@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/07/2019
+ms.date: 04/19/2019
 LocalizationGroup: Conceptual
 ---
 
@@ -243,23 +243,24 @@ Power BI provides data integrity monitoring in the following ways:
 1. Metadata (report definition)
 
    a. Reports can either be Excel for Office 365 reports, or Power BI reports. The following applies for metadata based on the type of report:
+        
+    &ensp; &ensp; a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
 
-       a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
-
-       b. Power BI reports are stored encrypted in Azure SQL database.
+    &ensp; &ensp; b. Power BI reports are stored encrypted in Azure SQL database.
 
 2. Static data
 
    Static data includes artifacts such as background images and custom visuals.
 
-    a. For reports created with Excel for Office 365, nothing is stored.
+    &ensp; &ensp; a. For reports created with Excel for Office 365, nothing is stored.
 
-    b. For Power BI reports, the static data is stored and is encrypted in Azure Blob storage.
+    &ensp; &ensp; b. For Power BI reports, the static data is stored and is encrypted in Azure Blob storage.
 
 3. Caches
-    a. For reports created with Excel for Office 365, nothing is cached.
 
-    b. For Power BI reports, data for the visuals shown are cached encrypted in Azure SQL Database.
+    &ensp; &ensp; a. For reports created with Excel for Office 365, nothing is cached.
+
+    &ensp; &ensp; b. For Power BI reports, data for the visuals shown are cached encrypted in Azure SQL Database.
  
 
 4. Original Power BI Desktop (.pbix) or Excel (.xlsx) files published to Power BI
