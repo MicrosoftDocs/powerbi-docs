@@ -1,33 +1,32 @@
 ---
 title: Connect to the services you use with Power BI
-description: Connect to a number of the services you use to run your business, such as Salesforce, Microsoft Dynamics CRM, and Google Analytics.
+description: Connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics CRM, and Google Analytics.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: 
 
 ms.service: powerbi
 ms.topic: conceptual
-ms.date: 01/11/2019
+ms.date: 04/19/2019
 ms.author: maggies
 
 LocalizationGroup: Connect to services
 ---
 # Connect to the services you use with Power BI
-You can connect to a number of services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. Power BI starts by using your credentials to connect to the service, and then creates a Power BI app with a dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business.
-
+With Power BI, you can connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. Power BI starts by using your credentials to connect to the service. It creates a Power BI *workspace* with a dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business.
 
 Log in to Power BI to view all of the [services you can connect to](https://app.powerbi.com/getdata/services). 
 
 ![AppSource apps](media/service-connect-to-services/overview.png)
 
-After you install the app, you can view the dashboard and reports in the Power BI service ([https://powerbi.com](https://powerbi.com)), and in the Power BI mobile apps. 
+After you install the app, you can view the dashboard and reports in the app and the workspace in the Power BI service ([https://app.powerbi.com](https://app.powerbi.com)). You can also view them in the Power BI mobile apps. In the workspace, you can modify the dashboard and reports to meet the needs of your organization, and then distribute them to your colleagues as an *app*. 
 
 ![Google analytics app in the Power BI mobile app](media/service-connect-to-services/power-bi-service-mobile-app-240.png)
 
 ## Get started
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-## View the dashboard and reports
+## Edit the dashboard and reports
 When the import is complete, the new app appears on the Apps page.
 
 1. Select **Apps** in the left navigation pane > select the app.
@@ -37,12 +36,12 @@ When the import is complete, the new app appears on the Apps page.
    
     ![Google Analytics dashboard](media/service-connect-to-services/googleanalytics2.png)
    
-    You can filter and highlight the data in the report, but you can't save your changes.
+    Change the dashboard and report to fit the needs of your organization. Then [distribute your app to your colleagues](service-create-distribute-apps.md)
 
 ## What's included
-After connecting to a service, you see a newly created app with a dashboard, reports, and dataset. The data from the service is focused on a specific scenario and may not include all the information from the service. The data is scheduled to refresh automatically once per day. You can control the schedule by selecting the dataset.
+After connecting to a service, you see a newly created app and workspace with a dashboard, reports, and dataset. The data from the service is focused on a specific scenario and may not include all the information from the service. The data is scheduled to refresh automatically once per day. You can control the schedule by selecting the dataset.
 
-You can also use [Power BI Desktop](desktop-get-the-desktop.md) to connect to some services, such as Google Analytics, and create your own customized dashboards and reports.  
+You can also [connect to many services in Power BI Desktop](desktop-data-sources.md), such as Google Analytics, and create your own customized dashboards and reports.  
 
 For more details on connecting to specific services, please refer to the individual help pages.
 
@@ -60,10 +59,11 @@ The dashboard and reports include content from the service focused on a specific
 ## Suggesting services
 Do you use a service you'd like to suggest for a Power BI app? Go to the [Power BI Support](https://support.powerbi.com/forums/265200-power-bi) page and let us know.
 
-Do you have a service you'd like to build an app for? [Submit your nomination](https://azure.microsoft.com/marketplace/programs/certified/apply/) and select "Publish a Power BI Content Pack" to get started.
+If you're interested in creating template apps to distribute yourself, see [Create a template app in Power BI](service-template-apps-create.md). Power BI partners can build Power BI apps with little or no coding, and deploy them to Power BI customers. 
 
 ## Next steps
-* [What are apps in Power BI?](service-install-use-apps.md)
-* [Get data in Power BI](service-get-data.md)
+* [Distribute apps to your colleagues](service-create-distribute-apps.md)
+* [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
+* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

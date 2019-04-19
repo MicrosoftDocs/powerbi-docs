@@ -1,22 +1,24 @@
 ---
 title: Connect to MailChimp with Power BI
 description: MailChimp for Power BI
-author: SarinaJoan
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
-ms.author: sarinas
+ms.date: 04/19/2019
+ms.author: maggies
 
 LocalizationGroup: Connect to services
 ---
 # Connect to MailChimp with Power BI
-The Power BI content pack pulls data from your MailChimp account and generates a dashboard, a set of reports and a dataset to allow you to explore your data. Pull in analytics to create [MailChimp dashboards](https://powerbi.microsoft.com/integrations/mailchimp) and quickly identify trends within your campaigns, reports, and individual subscribers. The data is set to refresh daily ensuring the data you're monitoring is up to date.
+This Power BI template app pulls data from your MailChimp account. It generates a workspace with a dashboard, a set of reports, and a dataset to allow you to explore your data. Pull in analytics to create [MailChimp dashboards](https://powerbi.microsoft.com/integrations/mailchimp) and quickly identify trends within your campaigns, reports, and individual subscribers. The data refreshes daily, ensuring the data you're monitoring is up to date.
 
-Connect to the [MailChimp content pack](https://app.powerbi.com/getdata/services/mailchimp) for Power BI.
+
+
+Connect to the [MailChimp template app](https://app.powerbi.com/getdata/services/mailchimp) for Power BI.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
@@ -47,7 +49,9 @@ Connect to the [MailChimp content pack](https://app.powerbi.com/getdata/services
 * While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
 
-[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
+* [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
+* [Install and use apps in Power BI](consumer/end-user-apps.md)
+* [Power BI apps for external services](service-connect-to-services.md)
+* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

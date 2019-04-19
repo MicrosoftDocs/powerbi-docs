@@ -747,7 +747,7 @@
         href: service-delete.md
       - name: Connect to services
         items: 
-        - name: "Acumatica"
+        - name: "Connect to services with apps"
           href: service-connect-to-services.md
         - name: "Acumatica"
           href: service-connect-to-acumatica.md

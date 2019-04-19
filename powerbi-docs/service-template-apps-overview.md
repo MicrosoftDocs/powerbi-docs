@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/04/2019
+ms.date: 04/19/2019
 ms.author: maggies
 ---
 
@@ -22,7 +22,7 @@ You build template apps that allow your customers to connect and instantiate wit
 You submit your partner-built template apps to the Cloud Partner Portal. The apps then become publicly available in the Power BI App gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). Here's an example of the public template app experience.  
 
 ## Overview
-The general process to develop and submit a template app involves several stages, some of which can involve more than one activity at the same time.
+The general process to develop and submit a template app involves several stages. Some stages can include more than one activity at the same time.
 
 
 | Stage | Power BI Desktop |  |Power BI service  |  |Cloud Partner Portal  |

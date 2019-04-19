@@ -1,58 +1,62 @@
 ---
 title: Connect to GitHub with Power BI
 description: GitHub for Power BI
-author: SarinaJoan
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: maggiesMSFT
+ms.reviewer: sarinas
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
-ms.author: sarinas
+ms.date: 04/19/2019
+ms.author: maggies
 
 LocalizationGroup: Connect to services
 ---
 # Connect to GitHub with Power BI
-The GitHub content pack for Power BI allows you to gain insights into a GitHub repository (also known as repo) with data around contributions, issues, pull requests and active users.
+This Power BI template app pulls data from your GitHub account. It generates a workspace with a dashboard, a set of reports, and a dataset. The GitHub template app for Power BI shows you insights into your GitHub repository, also known as repo, with data around contributions, issues, pull requests, and active users.
 
-Connect to the [GitHub content pack](https://app.powerbi.com/getdata/services/github) or read more about the [GitHub integration](https://powerbi.microsoft.com/integrations/github) with Power BI.
+Connect to the [GitHub template app](https://app.powerbi.com/getdata/services/github) or read more about the [GitHub integration](https://powerbi.microsoft.com/integrations/github) with Power BI.
+
+You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). It installs real GitHub data about the public repo for the  Power BI documentation.
 
 >[!NOTE]
->The content pack requires the GitHub account to have access to the repo. More details on requirements below.
+>The template app requires the GitHub account to have access to the repo. More details on requirements below.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
-   
-   ![](media/service-connect-to-github/pbi_getdata.png) 
-2. In the **Services** box, select **Get**.
+[!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
    
    ![](media/service-connect-to-github/pbi_get_services.png) 
-3. Select **GitHub** \> **Get**.
+3. Select **GitHub** \> **Get it now**.
    
    ![](media/service-connect-to-github/github.png)
 4. Enter the repository name and repository owner of the repo. See details on [finding these parameters](#FindingParams) below.
    
-   ![](media/service-connect-to-github/pbi_github1.png)
+    ![Power BI GitHub repo name](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
+
 5. Enter your GitHub credentials (this step might be skipped if you are already signed in with your browser). 
 6. For **Authentication Method**, select **oAuth2** \> **Sign In**. 
-7. Follow the Github authentication screens. Grant the GitHub for Power BI content pack permission to the GitHub data.
+7. Follow the Github authentication screens. Grant the GitHub for Power BI template app permission to the GitHub data.
    
    ![](media/service-connect-to-github/github_authorize.png)
    
    This connects Power BI with GitHub and allows Power BI to connect to the data.  The data is refreshed once a day.
-8. After you connect to your repo, Power BI imports the data. You see a new [GitHub dashboard](https://powerbi.microsoft.com/integrations/github), report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*.
+
+8. After Power BI imports the data, you see the contents of your new GitHub workspace.
+
+9. Select the arrow next to the workspace name in the left navigation bar. You see the workspace contains a dashboard and a report.
+
+8. Select the new [GitHub dashboard](https://powerbi.microsoft.com/integrations/github). 
    
-   ![](media/service-connect-to-github/pbi_githubdash.png)
+    ![GitHub dashboard in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
 
-**What now?**
+## Modify and publish your app
 
-* Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
-* [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
-* [Select a tile](consumer/end-user-tiles.md) to open the underlying report.
-* While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+Because you've installed a template app, you can make changes to the report and the dashboard, and then publish it as an *app* to colleagues in your organization. 
 
-## What's included
+Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
+
+## What's included in the app
 The following data is available from GitHub in Power BI:     
 
 | Table name | Description |
@@ -75,11 +79,10 @@ The following data is available from GitHub in Power BI:
 To de-authorize Power BI from being connected to your GitHub repo you can Revoke access in GitHub. For more details see this [GitHub help](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) topic.
 
 <a name="FindingParams"></a>
-
 ## Finding parameters
 You can determine the owner and repository by looking at the repository in GitHub itself:
 
-![](media/service-connect-to-github/github_ownerrepo.png)
+![Repo name and owner](media/service-connect-to-github/github_ownerrepo.png)
 
 The first part "Azure" is the owner and the second part "azure-sdk-for-php" is the repository itself.  You see these same two items in the URL of the repository:
 
@@ -93,5 +96,10 @@ If necessary, you can verify your GitHub credentials.
 3. Back in Power BI, try connecting to GitHub. In the Configure GitHub dialog box, use the names of the repo and repo owner for that same repo.  
 
 ## Next steps
-* [What is Power BI?](power-bi-overview.md)
-* [Get data](service-get-data.md)
+
+* [Tutorial: Connect to a GitHub repo with Power BI](service-tutorial-connect-to-github.md)
+* [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
+* [Install and use apps in Power BI](consumer/end-user-apps.md)
+* [Power BI apps for external services](service-connect-to-services.md)
+* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+
