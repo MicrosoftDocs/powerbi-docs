@@ -1,8 +1,8 @@
 ---
 title: "Embedded data sources for paginated reports in the Power BI service (Preview)"
 description: In this article, you learn how to create and modify an embedded data source in a paginated report in the Power BI service.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
