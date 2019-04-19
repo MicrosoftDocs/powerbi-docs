@@ -1,8 +1,8 @@
 ---
 title: "Tutorial: Create a paginated report and upload it to the Power BI service (Preview)"
 description: In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Report Builder to create a paginated report. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service.  
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi

@@ -1,8 +1,8 @@
 ---
 title: "Enter data directly in a paginated report in Report Builder (Preview)"
 description: In this article, you see how you can enter data directly into a paginated report in Report Builder. 
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
