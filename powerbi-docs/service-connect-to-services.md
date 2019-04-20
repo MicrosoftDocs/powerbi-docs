@@ -15,7 +15,7 @@ LocalizationGroup: Connect to services
 # Connect to the services you use with Power BI
 With Power BI, you can connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. Power BI starts by using your credentials to connect to the service. It creates a Power BI *workspace* with a dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business.
 
-Log in to Power BI to view all of the [services you can connect to](https://app.powerbi.com/getdata/services). 
+Sign in to Power BI to view all of the [services you can connect to](https://app.powerbi.com/getdata/services). 
 
 ![AppSource apps](media/service-connect-to-services/overview.png)
 
@@ -43,18 +43,18 @@ After connecting to a service, you see a newly created app and workspace with a 
 
 You can also [connect to many services in Power BI Desktop](desktop-data-sources.md), such as Google Analytics, and create your own customized dashboards and reports.  
 
-For more details on connecting to specific services, please refer to the individual help pages.
+For more details on connecting to specific services, refer to the individual help pages.
 
 ## Troubleshooting
 **Empty tiles**  
-While Power BI is first connecting to the service, you may see an empty set of tiles on your dashboard. If you still see an empty dashboard after 2 hours, it's likely the connection failed. If you didn't see an error message with information on correcting the issue, please file a support ticket.
+While Power BI is first connecting to the service, you may see an empty set of tiles on your dashboard. If you still see an empty dashboard after 2 hours, it's likely the connection failed. If you didn't see an error message with information on correcting the issue, file a support ticket.
 
 * Select the question mark icon (**?**) in the upper-right corner >  **Get help**.
   
     ![Get help icon](media/service-connect-to-services/power-bi-service-get-help.png)
 
 **Missing information**  
-The dashboard and reports include content from the service focused on a specific scenario and do not include all the information from the service. If there's a specific metric that you're not seeing in the content pack, please add an idea on the [Power BI Support](https://support.powerbi.com/forums/265200-power-bi) page.
+The dashboard and reports include content from the service focused on a specific scenario. If you're looking for a specific metric in the app and don't see it, add an idea on the [Power BI Support](https://support.powerbi.com/forums/265200-power-bi) page.
 
 ## Suggesting services
 Do you use a service you'd like to suggest for a Power BI app? Go to the [Power BI Support](https://support.powerbi.com/forums/265200-power-bi) page and let us know.

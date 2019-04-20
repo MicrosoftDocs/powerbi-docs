@@ -40,7 +40,7 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
    
    ![](media/service-connect-to-github/github_authorize.png)
    
-   This connects Power BI with GitHub and allows Power BI to connect to the data.  The data is refreshed once a day.
+    Power BI connects with GitHub and connects to your data.  The data is refreshed once a day.
 
 8. After Power BI imports the data, you see the contents of your new GitHub workspace.
 
@@ -61,12 +61,12 @@ The following data is available from GitHub in Power BI:
 
 | Table name | Description |
 | --- | --- |
-| Contributions |The contributions table gives the total additions, deletions and commits authored by the contributor aggregated per week. The top 100 contributors are included. |
+| Contributions |The contributions table gives the total additions, deletions, and commits authored by the contributor aggregated per week. The top 100 contributors are included. |
 | Issues |List all issues for the selected repo and it contains calculations like total and average time to close an issue, Total open issues,  Total closed issues. This table will be empty when there are no issues in the repo. |
-| Pull requests |This table contains all the Pull Requests for the repo and who pulled the request. It also contains calculations around how many open, closed and total pull requests, how long it took to pull the requests and how long the average pull request took. This table will be empty when there are no issues in the repo. |
-| Users |This table provides a list of GitHub users or contributors who have made contributions, filed issues or solved Pull requests for the repo selected. |
+| Pull requests |This table contains all the Pull Requests for the repo and who pulled the request. It also contains calculations around how many open, closed, and total pull requests, how long it took to pull the requests and how long the average pull request took. This table will be empty when there are no issues in the repo. |
+| Users |This table provides a list of GitHub users or contributors who have made contributions, filed issues, or solved Pull requests for the repo selected. |
 | Milestones |It has all the Milestones for the selected repo. |
-| DateTable |This tables contains dates from today and for years in the past that allow you to analyze your GitHub data by date. |
+| DateTable |This table contains dates from today and for years in the past that allow you to analyze your GitHub data by date. |
 | ContributionPunchCard |This table can be used as a contribution punch card for the selected repo. It shows commits by day of week and hour of day. This table is not connected to other tables in the model. |
 | RepoDetails |This table provides details for the repo selected. |
 
@@ -76,7 +76,7 @@ The following data is available from GitHub in Power BI:
 * Sufficient API calls available to pull and refresh the data.  
 
 ### De-authorize Power BI
-To de-authorize Power BI from being connected to your GitHub repo you can Revoke access in GitHub. For more details see this [GitHub help](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) topic.
+To de-authorize Power BI from being connected to your GitHub repo, you can Revoke access in GitHub. See this [GitHub help](https://help.github.com/articles/keeping-your-ssh-keys-and-application-access-tokens-safe/#reviewing-your-authorized-applications-oauth) topic for details.
 
 <a name="FindingParams"></a>
 ## Finding parameters
