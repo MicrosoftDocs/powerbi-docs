@@ -26,11 +26,17 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 ## How to connect
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
    
-1. Select **GitHub** \> **Get it now**.
-   
-   ![Connect to GitHub](media/service-connect-to-github/github.png)
+3. Select **GitHub** \> **Get it now**.
 
-4. Enter the repository name and repository owner of the repo. See details on [finding these parameters](#FindingParams) below.
+4. In the **Apps** pane, select the **MailChimp** tile.
+
+    ![Power BI GitHub tile](media/service-connect-to-github/power-bi-github-tile.png)
+
+6. In **Get started with your new app**, select **Connect data**.
+
+    ![Get started with your new app](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect-data.png)
+
+5. Enter the repository name and repository owner of the repo. See details on [finding these parameters](#FindingParams) below.
    
     ![Power BI GitHub repo name](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
 
