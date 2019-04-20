@@ -14,7 +14,7 @@ ms.author: maggies
 LocalizationGroup: Connect to services
 ---
 # Connect to GitHub with Power BI
-This Power BI template app pulls data from your GitHub account. It generates a workspace with a dashboard, a set of reports, and a dataset. The GitHub template app for Power BI shows you insights into your GitHub repository, also known as repo, with data around contributions, issues, pull requests, and active users.
+This Power BI template app pulls data from your GitHub account. It generates an app and a workspace with a dashboard, a set of reports, and a dataset. The GitHub app for Power BI shows you insights into your GitHub repository, also known as repo, with data around contributions, issues, pull requests, and active users.
 
 Connect to the [GitHub template app](https://app.powerbi.com/getdata/services/github) or read more about the [GitHub integration](https://powerbi.microsoft.com/integrations/github) with Power BI.
 
@@ -26,25 +26,25 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 ## How to connect
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
    
-   ![](media/service-connect-to-github/pbi_get_services.png) 
-3. Select **GitHub** \> **Get it now**.
+1. Select **GitHub** \> **Get it now**.
    
-   ![](media/service-connect-to-github/github.png)
+   ![Connect to GitHub](media/service-connect-to-github/github.png)
+
 4. Enter the repository name and repository owner of the repo. See details on [finding these parameters](#FindingParams) below.
    
     ![Power BI GitHub repo name](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect.png)
 
-5. Enter your GitHub credentials (this step might be skipped if you are already signed in with your browser). 
+5. Enter your GitHub credentials (this step might be skipped if you're already signed in with your browser). 
 6. For **Authentication Method**, select **oAuth2** \> **Sign In**. 
 7. Follow the Github authentication screens. Grant the GitHub for Power BI template app permission to the GitHub data.
    
-   ![](media/service-connect-to-github/github_authorize.png)
+   ![Power BI GitHub authorize](media/service-connect-to-github/github_authorize.png)
    
-    Power BI connects with GitHub and connects to your data.  The data is refreshed once a day.
-
-8. After Power BI imports the data, you see the contents of your new GitHub workspace.
+    Power BI connects with GitHub and connects to your data.  The data is refreshed once a day. After Power BI imports the data, you see the contents of your new GitHub workspace.
 
 9. Select the arrow next to the workspace name in the left navigation bar. You see the workspace contains a dashboard and a report.
+
+    ![App in the left navigation pane](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
 8. Select the new [GitHub dashboard](https://powerbi.microsoft.com/integrations/github). 
    
