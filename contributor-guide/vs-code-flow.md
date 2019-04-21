@@ -6,7 +6,6 @@ documentationcenter: ''
 author: markingmyname
 manager: kfile
 editor: ''
-
 ms.service: contributor-guide
 ms.devlang: ''
 ms.topic: article

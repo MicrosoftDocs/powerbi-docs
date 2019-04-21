@@ -1,8 +1,8 @@
 ---
 title: Diagnostic logging for the Power BI Embedded service in Azure | Microsoft Docs
 description: Learn about setting up diagnostic logging for the Power BI Embedded service in Azure.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: power-bi-embedded

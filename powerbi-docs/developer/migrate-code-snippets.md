@@ -1,8 +1,8 @@
 ---
 title: Code snippets for migrating content from Power BI Embedded
 description: Here are some code snippets of basic operations needed for content migration
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
