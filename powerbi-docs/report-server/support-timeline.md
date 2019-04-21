@@ -1,8 +1,8 @@
 ---
 title: Support timeline for Power BI Report Server
 description: A list of the versions and availability of Power BI Report Server.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi

@@ -1,8 +1,8 @@
 ---
 title: Develop with the REST APIs for Power BI Report Server
 description: The REST API provides programmatic access to the objects in a Power BI Report Server catalog.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
