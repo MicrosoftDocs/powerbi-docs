@@ -30,7 +30,7 @@ For reports, you can also use a link that will apply filter when openning the re
 > try to open that link, the operating system will ask you if you want to use Power BI app to open the link, or the browser. Your 
 > selection will determinate how links from Power BI opened outside of the app will be opened. 
 
-Another option is to create Power BI Mobile app specific URI. Using this URI format, will always be opened by Power BI Mobile app. But, you cannot use this URI on devices that do not have Power BI mobile app installed.
+Another option is to create Power BI Mobile app specific URI. Using this URI format, will always open Power BI Mobile app. But, you cannot use this URI on devices that do not have Power BI mobile app installed.
 
 ### Using mobile specific format
 
