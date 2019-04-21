@@ -28,42 +28,46 @@ A Power BI report is an interactive view of your data, with visuals representing
 ## Open a Power BI report in the mobile app
 Power BI reports are stored in different places in the mobile app, depending on where you got them. They can be in Apps, Shared with me, Workspaces (including My Workspace), or on a report server. Sometimes you go through a related dashboard to get to a report, and sometimes they're listed.
 
-* In lists and menus, you will find an icon next to a report name, helping you understand that this item is a report. 
+In lists and menus, you will find an icon next to a report name, helping you understand that this item is a report. 
 ![reports in my workspace](./media/mobile-reports-in-the-mobile-apps/reports-my-workspace.png) 
 
 There are two icons for reports in Power BI Mobile apps:
-![report icon](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) indicates a report that will be presented in landscape orientation in the app and will look the same as it looks in the browser.
-![phone report icon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) indicates a report that has at least one report page that is phone optimized, and therefore will be presentated is portrait. Holding your phone in landscape, you will always get the landscpae layout, even if the report page has phone layout. 
 
-* In a dashboard, tap the ellipsis (...) in the upper-right corner of a tile > **Open report**.
+* ![report icon](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) indicates a report that will be presented in landscape orientation in the app and will look the same as it looks in the browser.
+
+* ![phone report icon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) indicates a report that has at least one report page that is phone optimized, and therefore will be presentated is portrait. Holding your phone in landscape, you will always get the landscpae layout, even if the report page has phone layout. 
+
+In a dashboard, tap the ellipsis (...) in the upper-right corner of a tile > **Open report**.
   
   ![Open report](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
   Not all tiles have the option to open in a report. For example, tiles created by asking a question in the Q&A box don't open reports when you tap them. 
   
-## Use slicers to filter a report
-When designing a report in Power BI Desktop or the Power BI service, consider [adding slicers to a report page](../../visuals/power-bi-visualization-slicers.md). You and your colleagues can use the slicers to filter the page in a browser and in the mobile apps. When you view the report on a phone, you can see and interact with the slicers in landscape mode and in a page optimized for the phone's portrait mode. If you select a value in a slicer or filter in the browser, the value will be selected when you view the page in the mobile app, too. You see a message that there are active filters on the page.  
+## Interacting with reports
+Once you have a report opened in the app, you can start working with it. There are many way to work with the report and its data. In the report footer you will find actions you can preform on the report, and by tapping and long tap on the data shown in the report you can also slice and dice the data.
 
-* When you select a value in a slicer on the report page, it filters the other visuals on the page.
-  
-  ![Report slicer](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-slicer.png)
-  
-  In this illustration, the slicer is filtering the column chart to show only July values.
+### Using tap and long tap
+Tap equals to a mouse click. So if you want to cross highlight the report based on a data point, tap on that data point.
+You probably notice that when you tap on a visual, a border appears. On the top-right corner of the border there is ellipsis (...) - this is a menu with actions you can do on that visual.
 
-## Cross-filter and highlight a report
-When you select a value in a visual, it doesn't filter the other visuals. It highlights the related values in the other visuals.
+![report visual and menu](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
-* Tap a value in a visual.
-  
-  ![Cross-filter a page](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-highlight.png)
-  
-  Tapping the Large column in one visual highlights related values in the other visuals. 
+If you long tap a data point, you will get a tooltip showing you the values this data point represents. 
 
-## Sort a visual on an iPad or a tablet
-* Tap the chart, tap the ellipsis (**...**) and tap the field name.
-  
-   ![Sort a visual](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
-* To reverse the sort order, tap the ellipsis (**...**) again, then tap the same field name again.
+![report tooltip](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
+
+## Using actions in report footer
+The report footer has actions you can do on the current report page or on the entire report. The footer has quick access to the most useful actions, and all actions can be access from the ellipsis (...).
+
+![report footer](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
+
+The actions you can preform from the footer are:
+1) Reset the report filter and cross highlight selections back to its original state.
+2) Open the conversation pane to view or add comments on this report.
+3) Open the filter pane to view and modify the filter currenly appied on the report.
+4) List all the pages in this report. Tapping on page name will load and present that page.
+Moving between report pages can be done by swiping from the edge of your screen to the center.
+5) View all report actions.
 
 ## Drill down and up in a visual
 If a report author has added drill-down capability to a visual, you can drill down in the visual to see the values that make up one part of it. You [add drill down to a visual](../end-user-drill.md) in Power BI Desktop or the Power BI service. 
@@ -99,6 +103,13 @@ By selecting the Menu options ellipsis (**...**) in the upper-right corner of a 
 Long tapping on a cell in the table presented will pop the native select and copy menu, so you will be able to choose the copy data from the table (or the entire table).
 
 ![Power BI mobile drill through report](./media/mobile-reports-in-the-mobile-apps/copy-data-table.png)
+
+## Sort a visual on an iPad or a tablet
+* Tap the chart, tap the ellipsis (**...**) and tap the field name.
+  
+   ![Sort a visual](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
+* To reverse the sort order, tap the ellipsis (**...**) again, then tap the same field name again.
+
 
 ## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
