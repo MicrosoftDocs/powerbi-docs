@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/17/2018
+ms.date: 04/21/2019
 ms.author: mshenhav
 
 ---
@@ -28,31 +28,19 @@ A Power BI report is an interactive view of your data, with visuals representing
 ## Open a Power BI report in the mobile app
 Power BI reports are stored in different places in the mobile app, depending on where you got them. They can be in Apps, Shared with me, Workspaces (including My Workspace), or on a report server. Sometimes you go through a related dashboard to get to a report, and sometimes they're listed.
 
+* In lists and menus, you will find an icon next to a report name, helping you understand that this item is a report. 
+![reports in my workspace](./media/mobile-reports-in-the-mobile-apps/reports-my-workspace.png) 
+
+There are two icons for reports in Power BI Mobile apps:
+![report icon](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) indicates a report that will be presented in landscape orientation in the app and will look the same as it looks in the browser.
+![phone report icon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) indicates a report that has at least one report page that is phone optimized, and therefore will be presentated is portrait. Holding your phone in landscape, you will always get the landscpae layout, even if the report page has phone layout. 
+
 * In a dashboard, tap the ellipsis (...) in the upper-right corner of a tile > **Open report**.
   
   ![Open report](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
   Not all tiles have the option to open in a report. For example, tiles created by asking a question in the Q&A box don't open reports when you tap them. 
   
-  On a phone, the report opens in landscape mode, unless it's [optimized for viewing on a phone](mobile-reports-in-the-mobile-apps.md#view-reports-optimized-for-phones).
-  
-  ![Phone report in landscape mode](./media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
-
-## View reports optimized for phones
-Power BI report authors can create a report layout specifically optimized for phones. Report pages optimized for phones have added functionality: for example, you can drill down and sort in visuals, and you can access the [filters the report author added to the report page](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). The report opens on your phone filtered to the values being filtered in the report on the web, with a message that there are active filters on the page. You can change the filters on your phone.
-
-In a list of reports, an optimized report has a special icon ![Phone report icon](./media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
-
-![Open phone report](./media/mobile-reports-in-the-mobile-apps/power-bi-android-phone-report.png)
-
-When you view that report on a phone, it opens in portrait view.
-
-![Report in portrait view](./media/mobile-reports-in-the-mobile-apps/07-power-bi-phone-report-portrait.png)
-
- A report may have a mix of pages that are and aren't optimized for phones. If so, when you flip through the report the view will switch from portrait to landscape for each page.
-
-Read more about [reports optimized for phone view](mobile-apps-view-phone-report.md).
-
 ## Use slicers to filter a report
 When designing a report in Power BI Desktop or the Power BI service, consider [adding slicers to a report page](../../visuals/power-bi-visualization-slicers.md). You and your colleagues can use the slicers to filter the page in a browser and in the mobile apps. When you view the report on a phone, you can see and interact with the slicers in landscape mode and in a page optimized for the phone's portrait mode. If you select a value in a slicer or filter in the browser, the value will be selected when you view the page in the mobile app, too. You see a message that there are active filters on the page.  
 
