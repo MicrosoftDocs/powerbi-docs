@@ -72,7 +72,7 @@ With *drillthrough*, when you tap a specific part of a visual, Power BI takes yo
 Read about how to [add drill-through in Power BI Desktop](../../desktop-drillthrough.md).
    
    > [!IMPORTANT]
-   > Drill in matrix and table visuals is enabled in the app through a cell value only and not by column and row headers.
+   > In Power BI Mobile app, drill in matrix and table visuals is enabled through a cell value only, and not by column and row headers.
    
    
    
