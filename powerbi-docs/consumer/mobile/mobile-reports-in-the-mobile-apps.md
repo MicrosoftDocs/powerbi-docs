@@ -35,9 +35,9 @@ There are two icons for reports in Power BI Mobile apps:
 
 * ![report icon](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) indicates a report that will be presented in landscape orientation in the app and will look the same as it looks in the browser.
 
-* ![phone report icon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) indicates a report that has at least one report page that is phone optimized, and therefore will be presentated is portrait. 
+* ![phone report icon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) indicates a report that has at least one phone optimized report page, that will be presented in portrait. 
 
-Note: Holding your phone in landscape, you will always get the landscpae layout, even if the report page has phone layout. 
+Note: Holding your phone in landscape, you will always get the landscape layout, even if the report page has phone layout. 
 
 To get to a report from a dashboard, tap the ellipsis (...) in the upper-right corner of a tile > **Open report**.
   
@@ -46,14 +46,14 @@ To get to a report from a dashboard, tap the ellipsis (...) in the upper-right c
   Not all tiles have the option to open in a report. For example, tiles created by asking a question in the Q&A box don't open reports when you tap them. 
   
 ## Interacting with reports
-Once you have a report opened in the app, you can start working with it. There are many things you can do with your report and its data. In the report footer you will find actions you can preform on the report, and by tapping and long tapping on the data shown in the report you can also slice and dice the data.
+Once you have a report opened in the app, you can start working with it. There are many things you can do with your report and its data. In the report footer you will find actions you can perform on the report, and by tapping and long tapping on the data shown in the report you can also slice and dice the data.
 
 ### Using tap and long tap
 Tap equals to a mouse click. So if you want to cross highlight the report based on a data point, tap on that data point.
 Tapping on a slicer value, makes that value selected and slicing the rest of the report by that value. 
 Tapping on a link, button or bookmark will activate it based on the action defined by the author.
 
-You probably noticed that when you tap on a visual, a border appears. On the top-right corner of the border there is ellipsis (...) - this is a menu with actions you can do on that visual.
+You probably noticed that when you tap on a visual, a border appears. On the top-right corner of the border, there is ellipsis (...). This is a menu with actions you can do on that visual.
 
 ![report visual and menu](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
@@ -63,7 +63,7 @@ When you long tap (tap and hold) a data point, a tooltip will show up presenting
 
 ![report tooltip](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
 
-Report authors can define hierarchies in the data and relationships between report pages. This allows drill down, drill up and drill through another report page from a visual and a value. So, when you long tap on a value, in addition to the tooltip, the relevant drill options will appear in the footer. 
+Report authors can define hierarchies in the data and relationships between report pages. This allows drill down, drill up, and drill through another report page from a visual and a value. So, when you long tap on a value, in addition to the tooltip, the relevant drill options will appear in the footer. 
 
 ![report drill actions](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
 
@@ -81,10 +81,10 @@ The report footer has actions you can do on the current report page or on the en
 
 ![report footer](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
-The actions you can preform from the footer are:
+The actions you can perform from the footer are:
 1) Reset the report filter and cross highlight selections back to its original state.
 2) Open the conversation pane to view or add comments on this report.
-3) Open the filter pane to view and modify the filter currenly appied on the report.
+3) Open the filter pane to view and modify the filter currently applied on the report.
 4) List all the pages in this report. Tapping on page name will load and present that page.
 Moving between report pages can be done by swiping from the edge of your screen to the center.
 5) View all report actions.
