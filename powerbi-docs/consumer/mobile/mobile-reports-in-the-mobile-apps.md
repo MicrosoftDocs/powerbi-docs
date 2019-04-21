@@ -50,7 +50,8 @@ Once you have a report opened in the app, you can start working with it. There a
 
 ### Using tap and long tap
 Tap equals to a mouse click. So if you want to cross highlight the report based on a data point, tap on that data point.
-Tapping on a slicer value, makes that value selected and slicing the rest of the report by that value. And tapping on a link, button or bookmark will activate it based on the action defined by the author.
+Tapping on a slicer value, makes that value selected and slicing the rest of the report by that value. 
+Tapping on a link, button or bookmark will activate it based on the action defined by the author.
 
 You probably noticed that when you tap on a visual, a border appears. On the top-right corner of the border there is ellipsis (...) - this is a menu with actions you can do on that visual.
 
@@ -58,15 +59,22 @@ You probably noticed that when you tap on a visual, a border appears. On the top
 
 ### Tooltip and Drill actions
 
-If you long tap a data point, you will get a tooltip showing you the values this data point represents. 
+When you long tap (tap and hold) a data point, a tooltip will show up presenting the values this data point represents. 
 
 ![report tooltip](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
 
-And if the report author defined hierarchy in your data, then you will be able to drill down and up from the tooltip, by tapping on the down (or up) arrow. 
-If drill through was defined between the tapped data and another report page, a third arrow will appear in the tooltip footer for executing drill through.
+Report authors can define hierarchies in the data and relationships between report pages. This allows drill down, drill up and drill through another report page from a visual and a value. So, when you long tap on a value, in addition to the tooltip, the relevant drill options will appear in the footer. 
 
-![report tooltip](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
+![report drill actions](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
 
+With *drillthrough*, when you tap a specific part of a visual, Power BI takes you to a different page in the report, filtered to the value you tapped.  A report author can define one or more drill-through options, each taking you to a different page. In that case, you can choose which one you want to drill through. The back button takes you back to the previous report page.
+
+Read about how to [add drill-through in Power BI Desktop](../../desktop-drillthrough.md).
+
+[!NOTE]
+Drill in matrix and table visuals is enabled through a cell value and not by column and row headers.
+ 
+   
 ## Using actions in report footer
 The report footer has actions you can do on the current report page or on the entire report. The footer has quick access to the most useful actions, and all actions can be access from the ellipsis (...).
 
@@ -79,47 +87,6 @@ The actions you can preform from the footer are:
 4) List all the pages in this report. Tapping on page name will load and present that page.
 Moving between report pages can be done by swiping from the edge of your screen to the center.
 5) View all report actions.
-
-## Drill down and up in a visual
-If a report author has added drill-down capability to a visual, you can drill down in the visual to see the values that make up one part of it. You [add drill down to a visual](../end-user-drill.md) in Power BI Desktop or the Power BI service. 
-
-* Tap and hold a specific bar or point in a visual to display its tooltip. If it has drill-down, the bottom of the tooltip has arrows you can tap. 
-  
-  ![Drill down in a visual](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-tooltip.png)
-
-* To drill back up, tap the up arrow in the tooltip.
-  
-  ![Drill up](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-tooltip.png)
-
-* You can also drill down in all the data points in a visual. Open it in focus mode, tap Explore icon, then choose the show all the next level, or expand to show the current and the next level.
-
-   ![Power BI drill down all](./media/mobile-reports-in-the-mobile-apps/power-bi-drill-down-all.png)
-
-## Drill through from one page to another
-
-With *drillthrough*, when you tap a specific part of a visual, Power BI takes you to a different page in the report, filtered to the value you tapped. A report author can define one or more drill-through options, each taking you to a different page. In that case, you can choose which one you want to drill through. In the following example, when you tap the value in the gauge, you can choose between drilling through to **spent by business area** or **planning by business area**.
-
-![Power BI mobile drill through report](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-through-it-spent-report.png)
-
-When you drill through, the back button takes you back to the previous report page.
-
-Read about how to [add drill-through in Power BI Desktop](../../desktop-drillthrough.md).
-
-## Show data and copy values
-
-By selecting the Menu options ellipsis (**...**) in the upper-right corner of a visualization in a phone report, and then selecting **Show data**, you can see the data underlying a visualization.
-
-![Power BI mobile show data menu option](./media/mobile-reports-in-the-mobile-apps/copy-data-visual.png)
-
-Long tapping on a cell in the table presented will pop the native select and copy menu, so you will be able to choose the copy data from the table (or the entire table).
-
-![Power BI mobile drill through report](./media/mobile-reports-in-the-mobile-apps/copy-data-table.png)
-
-## Sort a visual on an iPad or a tablet
-* Tap the chart, tap the ellipsis (**...**) and tap the field name.
-  
-   ![Sort a visual](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
-* To reverse the sort order, tap the ellipsis (**...**) again, then tap the same field name again.
 
 
 ## Next steps
