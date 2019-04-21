@@ -13,19 +13,33 @@ ms.author: mshenhav
 
 ---
 # Create a link to a specific location in the Power BI mobile apps
-You can create and use a uniform resource identifier (URI) to link to a specific location (a *deep link*) within the Power BI mobile apps on all the mobile platforms: iOS, Android devices, and Windows 10.
+Use can use links to directly access specific items in Power BI: Report, Dashboard and Tile. Links can be used from outside of Power BI, or from inside Power BI, for example from report or dashboard tile.
 
-URI links can point directly to dashboards, tiles, and reports.
+## How to get the right link formart
 
-The destination of the deep link determines the format of the URI. Follow these steps to create deep links to different locations. 
+### Using Power BI item URL
 
-## Open the Power BI mobile app
+The easiest way to get a link to an item, is to copy it from the "Sharing pane" opened when you share an items with others.
+
+![Power BI share dashboard ](./media/mobile-apps-links/mobile-app-service-share-pane.png)
+
+For reports, you can also use a link that will apply filter when openning the report. Read more about ![how to filter report using query string parameters](https://docs.microsoft.com/power-bi/service-url-filters).  
+
+> [!IMPORTANT]
+> When you use standart Power BI item URI in your mobile device, the link might be opeded by the browser. In the first time you will  
+> try to open that link, the operating system will ask you if you want to use Power BI app to open the link, or the browser. Your 
+> selection will determinate how links from Power BI opened outside of the app will be opened. 
+
+Another option is to create Power BI Mobile app specific URI. Using this URI format, will always be opened by Power BI Mobile app. But, you cannot use this URI on devices that do not have Power BI mobile app installed.
+
+### Using mobile specific format
+
+#### Open the Power BI mobile app
 Use this URI to open the Power BI mobile app on any device:
 
     mspbi://app/
 
-
-## Open to a specific dashboard
+#### Open to a specific dashboard
 This URI opens the Power BI mobile app to a specific dashboard:
 
     mspbi://app/OpenDashboard?DashboardObjectId=<36-character-dashboard-id>
@@ -40,7 +54,7 @@ mspbi://app/OpenDashboard?DashboardObjectId=e684af3a-9e7f-44ee-b679-b9a1c59b5d60
 
 Note the ampersand (&) between the two.
 
-## Open to a specific tile in focus
+#### Open to a specific tile in focus
 This URI opens a specific tile in focus in the Power BI mobile app:
 
     mspbi://app/OpenTile?DashboardObjectId=<36-character-dashboard-id>&TileObjectId=<36-character-tile-id>
@@ -57,7 +71,7 @@ Note the ampersand (&) between the two.
 
 If the dashboard is in a group other than My Workspace, add `&GroupObjectId=<36-character-group-id>`
 
-## Open to a specific report
+#### Open to a specific report
 This URI opens a specific report in the Power BI mobile app:
 
     mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>
@@ -72,7 +86,7 @@ mspbi://app/OpenReport?ReportObjectId=e684af3a-9e7f-44ee-b679-b9a1c59b5d60**&Gro
 
 Note the ampersand (&) between the two.
 
-## Open to a specific report page
+#### Open to a specific report page
 This URI opens a specific report page in the Power BI mobile app:
 
     mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>&reportPage=ReportSection<number>
@@ -83,7 +97,7 @@ For example, see the highlighted section of this URL:
 
 `https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/ReportSection11`
 
-## Open in full-screen mode
+#### Open in full-screen mode
 Add the parameter in bold to open to a specific report in full-screen mode:
 
     mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>**&openFullScreen=true**
@@ -92,7 +106,7 @@ For example:
 
 mspbi://app/OpenReport?ReportObjectId=500217de-50f0-4af1-b345-b81027224033&openFullScreen=true
 
-## Add context (optional)
+#### Add context (optional)
 You can also add context in the string. Then if you need to contact us, we can use that context to filter our data to your app. Add `&context=<app-name>` to the link
 
 For example, see the highlighted section of this URL: 
