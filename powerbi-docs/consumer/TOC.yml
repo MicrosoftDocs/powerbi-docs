@@ -132,10 +132,14 @@
     items: 
     - name: All mobile apps
       items: 
-      - name: "Share a dashboard from the Power BI mobile apps"
-        href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
+      - name: "Dashboards for mobile Power BI"
+        href: mobile/mobile-apps-view-dashboard.md
+      - name: "Reports in the mobile apps"
+        href: mobile/mobile-reports-in-the-mobile-apps.md
       - name: "Interact with tiles in the mobile apps"
         href: mobile/mobile-tiles-in-the-mobile-apps.md
+      - name: "Share a dashboard from the Power BI mobile apps"
+        href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
       - name: "Favorites in the mobile apps"
         href: mobile/mobile-apps-favorites.md
       - name: "Configure report interaction in the mobile apps (phone only)"
@@ -148,20 +152,20 @@
         href: mobile/mobile-apps-deep-link-specific-location.md
       - name: "Filter a report by location in the Power BI mobile apps"
         href: mobile/mobile-apps-geographic-filtering.md
-      - name: "Dashboards for mobile Power BI"
-        href: mobile/mobile-apps-view-dashboard.md
-      - name: "Reports in the mobile apps"
-        href: mobile/mobile-reports-in-the-mobile-apps.md
       - name: "Using OAuth to connect to Reporting Services"
         href: mobile/mobile-oauth-ssrs.md
-    - name: Android devices
+    - name: iOS and Android
       items: 
-      - name: "Get started with the Android app"
-        href: mobile/mobile-android-app-get-started.md
-      - name: "Fixing 'Your corporate SSL certificate is untrusted'"
-        href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
-      - name: "Fixing 'Need to update Android System Webview'"
-        href: mobile/mobile-android-error-update-android-system-webview.md
+      - name: "View reports optimized for your phone"
+        href: mobile/mobile-apps-view-phone-report.md
+      - name: "View on-premises reports in the mobile apps"
+        href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+      - name: "Access content from an external organization (B2B)"
+        href: mobile/mobile-apps-b2b.md
+      - name: "Scan a Power BI QR code from your phone"
+        href: mobile/mobile-apps-qr-code.md
+      - name: "Annotate and share in the mobile apps"
+        href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
     - name: iOS
       items: 
       - name: "Get started with the iOS app"
@@ -172,18 +176,14 @@
         href: mobile/mobile-apple-watch.md
       - name: "Scan a barcode from the app on your iPhone"
         href: mobile/mobile-apps-scan-barcode-iphone.md
-    - name: iOS and Android
+    - name: Android devices
       items: 
-      - name: "View on-premises reports in the mobile apps"
-        href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-      - name: "View reports optimized for your phone"
-        href: mobile/mobile-apps-view-phone-report.md
-      - name: "Access content from an external organization"
-        href: mobile/mobile-apps-b2b.md
-      - name: "Scan a Power BI QR code from your phone"
-        href: mobile/mobile-apps-qr-code.md
-      - name: "Annotate and share in the mobile apps"
-        href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
+      - name: "Get started with the Android app"
+        href: mobile/mobile-android-app-get-started.md
+      - name: "Fixing 'Your corporate SSL certificate is untrusted'"
+        href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+      - name: "Fixing 'Need to update Android System Webview'"
+        href: mobile/mobile-android-error-update-android-system-webview.md
     - name: Power BI app for Windows 10 devices
       items: 
       - name: "Get started with the Windows 10 app"
