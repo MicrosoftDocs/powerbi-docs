@@ -35,26 +35,37 @@ There are two icons for reports in Power BI Mobile apps:
 
 * ![report icon](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) indicates a report that will be presented in landscape orientation in the app and will look the same as it looks in the browser.
 
-* ![phone report icon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) indicates a report that has at least one report page that is phone optimized, and therefore will be presentated is portrait. Holding your phone in landscape, you will always get the landscpae layout, even if the report page has phone layout. 
+* ![phone report icon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) indicates a report that has at least one report page that is phone optimized, and therefore will be presentated is portrait. 
 
-In a dashboard, tap the ellipsis (...) in the upper-right corner of a tile > **Open report**.
+Note: Holding your phone in landscape, you will always get the landscpae layout, even if the report page has phone layout. 
+
+To get to a report from a dashboard, tap the ellipsis (...) in the upper-right corner of a tile > **Open report**.
   
   ![Open report](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
   Not all tiles have the option to open in a report. For example, tiles created by asking a question in the Q&A box don't open reports when you tap them. 
   
 ## Interacting with reports
-Once you have a report opened in the app, you can start working with it. There are many way to work with the report and its data. In the report footer you will find actions you can preform on the report, and by tapping and long tap on the data shown in the report you can also slice and dice the data.
+Once you have a report opened in the app, you can start working with it. There are many things you can do with your report and its data. In the report footer you will find actions you can preform on the report, and by tapping and long tapping on the data shown in the report you can also slice and dice the data.
 
 ### Using tap and long tap
 Tap equals to a mouse click. So if you want to cross highlight the report based on a data point, tap on that data point.
-You probably notice that when you tap on a visual, a border appears. On the top-right corner of the border there is ellipsis (...) - this is a menu with actions you can do on that visual.
+Tapping on a slicer value, makes that value selected and slicing the rest of the report by that value. And tapping on a link, button or bookmark will activate it based on the action defined by the author.
+
+You probably noticed that when you tap on a visual, a border appears. On the top-right corner of the border there is ellipsis (...) - this is a menu with actions you can do on that visual.
 
 ![report visual and menu](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
+
+### Tooltip and Drill actions
 
 If you long tap a data point, you will get a tooltip showing you the values this data point represents. 
 
 ![report tooltip](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
+
+And if the report author defined hierarchy in your data, then you will be able to drill down and up from the tooltip, by tapping on the down (or up) arrow. 
+If drill through was defined between the tapped data and another report page, a third arrow will appear in the tooltip footer for executing drill through.
+
+![report tooltip](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
 
 ## Using actions in report footer
 The report footer has actions you can do on the current report page or on the entire report. The footer has quick access to the most useful actions, and all actions can be access from the ellipsis (...).
