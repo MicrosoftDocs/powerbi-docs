@@ -70,10 +70,11 @@ Report authors can define hierarchies in the data and relationships between repo
 With *drillthrough*, when you tap a specific part of a visual, Power BI takes you to a different page in the report, filtered to the value you tapped.  A report author can define one or more drill-through options, each taking you to a different page. In that case, you can choose which one you want to drill through. The back button takes you back to the previous report page.
 
 Read about how to [add drill-through in Power BI Desktop](../../desktop-drillthrough.md).
-
-[!NOTE]
-Drill in matrix and table visuals is enabled through a cell value and not by column and row headers.
- 
+   
+   > [!IMPORTANT]
+   > Drill in matrix and table visuals is enabled through a cell value and not by column and row headers.
+   
+   
    
 ## Using actions in report footer
 The report footer has actions you can do on the current report page or on the entire report. The footer has quick access to the most useful actions, and all actions can be access from the ellipsis (...).
