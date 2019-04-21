@@ -96,7 +96,7 @@ Tapping on the ... option in the report footer, will bring all the actions you c
 
 Some of the actions might be disabled, since they are dependant on the specific report capabilities.
 For example:
-1) **Filter by current location**, is enabled if the data in your report was categorized by the author with geographical data. [Follow this to learn how to Identify geographic data in your report](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
+1) **Filter by current location** is enabled if the data in your report was categorized by the author with geographical data. [Follow this to learn how to Identify geographic data in your report](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
 2) **Scan to filter the report by barcode** is enabled only if the dataset in your report was tagged as barcode. [This is how you tag barcodes in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes). 
 3) **Invite** is enabled only if you have permission to share this report with others. You will have permission only if you are the owner of the report or if you were given re-share permission by the owner.
 4) **Annotate and share** might be disbale if there is an [Intune protection policy](https://docs.microsoft.com/intune/app-protection-policies) in your organization that prohibited sharing from Power BI Mobile app. 
