@@ -15,7 +15,7 @@ ms.author: mshenhav
 # Create a link to a specific location in the Power BI mobile apps
 Use can use links to directly access specific items in Power BI: Report, Dashboard and Tile. Links can be used from outside of Power BI, or from inside Power BI, for example from report or dashboard tile.
 
-## How to get the right link formart
+## How to get the right link format
 
 ### Using Power BI item URL
 
@@ -23,7 +23,7 @@ The easiest way to get a link to an item, is to copy it from the "Sharing pane" 
 
 ![Power BI share dashboard ](./media/mobile-apps-links/mobile-app-service-share-pane.png)
 
-For reports, you can also use a link that will apply filter when openning the report. Read more about ![how to filter report using query string parameters](https://docs.microsoft.com/power-bi/service-url-filters).  
+For reports, you can also use a link that will apply filter when opening the report. Read more about ![how to filter report using query string parameters](https://docs.microsoft.com/power-bi/service-url-filters).  
 
 > [!IMPORTANT]
 > When you use standart Power BI item URI in your mobile device, the link might be opeded by the browser. In the first time you will  
