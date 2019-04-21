@@ -19,16 +19,14 @@ Use can use links to directly access specific items in Power BI: Report, Dashboa
 
 ### Using Power BI item URL
 
-The easiest way to get a link to an item, is to copy it from the "Sharing pane" opened when you share an item with others.
+The easiest way to get a link to an item, is to copy it from the "Sharing pane" opened when you share an item with others in Power BI Service.
 
 ![Power BI share dashboard ](./media/mobile-apps-links/mobile-app-service-share-pane.png)
 
-For reports, you can also use a link that will apply filter when opening the report. Read more about ![how to filter report using query string parameters](https://docs.microsoft.com/power-bi/service-url-filters).  
+For reports, you can also use a link that will apply filter when opening the report. Read more about [how to filter report using query string parameters](https://docs.microsoft.com/power-bi/service-url-filters).  
 
 > [!IMPORTANT]
-> When you use standart Power BI item URI in your mobile device, the link might be opeded by the browser. In the first time you will  
-> try to open that link, the operating system will ask you if you want to use Power BI app to open the link, or the browser. Your 
-> selection will determinate how links from Power BI opened outside of the app will be opened. 
+> When you use standart Power BI item URI in your mobile device, the link might be opeded by the browser. In the first time you will try to open that link, the operating system will ask you if you want to use Power BI app to open the link, or the browser. Your selection will determinate how links from Power BI opened outside of the app will be opened. 
 
 Another option is to create Power BI Mobile app-specific URI. Using this URI format, will always open Power BI Mobile app. But, you cannot use this URI on devices that do not have Power BI mobile app installed.
 
