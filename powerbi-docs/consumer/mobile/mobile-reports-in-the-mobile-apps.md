@@ -72,11 +72,11 @@ With *drillthrough*, when you tap a specific part of a visual, Power BI takes yo
 Read about how to [add drill-through in Power BI Desktop](../../desktop-drillthrough.md).
    
    > [!IMPORTANT]
-   > Drill in matrix and table visuals is enabled through a cell value and not by column and row headers.
+   > Drill in matrix and table visuals is enabled in the app through a cell value only and not by column and row headers.
    
    
    
-## Using actions in report footer
+### Using the actions in the report footer
 The report footer has actions you can do on the current report page or on the entire report. The footer has quick access to the most useful actions, and all actions can be access from the ellipsis (...).
 
 ![report footer](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
