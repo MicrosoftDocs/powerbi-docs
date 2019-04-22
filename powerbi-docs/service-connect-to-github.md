@@ -14,7 +14,7 @@ ms.author: maggies
 LocalizationGroup: Connect to services
 ---
 # Connect to GitHub with Power BI
-This Power BI template app pulls data from your GitHub account. It generates an app and a workspace with a dashboard, a set of reports, and a dataset. The GitHub app for Power BI shows you insights into your GitHub repository, also known as repo, with data around contributions, issues, pull requests, and active users.
+This article walks you through pulling your data from your GitHub account with a Power BI template app. The template app generates a workspace with a dashboard, a set of reports, and a dataset to allow you to explore your GitHub data. The GitHub app for Power BI shows you insights into your GitHub repository, also known as repo, with data around contributions, issues, pull requests, and active users.
 
 Connect to the [GitHub template app](https://app.powerbi.com/getdata/services/github) or read more about the [GitHub integration](https://powerbi.microsoft.com/integrations/github) with Power BI.
 
@@ -28,8 +28,6 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
    
 3. Select **GitHub** \> **Get it now**.
 4. In **Install this Power BI App?** select **Install**.
-5. In **Your new app is ready**, select **Go to app**.
-
 4. In the **Apps** pane, select the **GitHub** tile.
 
     ![Power BI GitHub tile](media/service-connect-to-github/power-bi-github-tile.png)
