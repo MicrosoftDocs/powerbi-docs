@@ -405,7 +405,7 @@ Memory is dynamically allocated to dataflows, but it is statically allocated to 
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
 | Paginated reports | N/A | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
 | Dataflows | 20% default; 8% minimum  | 20% default; 4% minimum  | 20% default; 2% minimum | 20% default; 1% minimum  |
-| AI | 20% default; 50% minimum  | 20% default; 20% minimum  | 20% default; 10% minimum | 20% default; 5% minimum  |
+| AI | N/A | 20% default; 20% minimum  | 20% default; 10% minimum | 20% default; 5% minimum  |
 | | | | | |
 
 Deleting a Premium capacity is possible and will not result in the deletion of its workspaces and content. Instead, it will move any assigned workspaces to shared capacity. When the Premium capacity was created in a different region, the workspace will be moved to shared capacity of the home region.

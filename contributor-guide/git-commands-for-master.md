@@ -1,10 +1,24 @@
 ---
 title: Git commands for creating a new article or updating an existing article
 description: Steps for working with the Power BI technical content GitHub repositories.
+<<<<<<< HEAD
 metakeywords: ""
 services: ""
 solutions: ""
 documentationcenter: ""
+=======
+metakeywords: ''
+services: ''
+solutions: ''
+documentationcenter: ''
+author: mgblythe
+ms.author: mblythe
+videoid: ''
+scriptid: ''
+manager: kfile
+ms.service: contributor-guide
+ms.devlang: ''
+>>>>>>> e57f28c32f8a258a5a828911247cad90de7095f1
 ms.topic: article
 ms.service: contributor-guide
 author: mgblythe
@@ -35,6 +49,7 @@ Follow the steps in this article to create a local working branch on your comput
 2. Change to powerbi-docs-pr:
 
         cd powerbi-docs-pr
+
 3. Check out the master branch:
 
         git checkout master
@@ -44,6 +59,10 @@ Follow the steps in this article to create a local working branch on your comput
         git pull upstream master:<working branch>
 
 5. Move into the new working branch:
+<<<<<<< HEAD
+=======
+
+>>>>>>> e57f28c32f8a258a5a828911247cad90de7095f1
         git checkout <working branch>
 
 6. Let your fork know you created the local working branch:
