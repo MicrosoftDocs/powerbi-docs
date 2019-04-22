@@ -5,8 +5,8 @@ metakeywords: ''
 services: ''
 solutions: ''
 documentationcenter: ''
-author: markingmyname
-ms.author: maghan
+author: mgblythe
+ms.author: mblythe
 videoid: ''
 scriptid: ''
 manager: kfile
