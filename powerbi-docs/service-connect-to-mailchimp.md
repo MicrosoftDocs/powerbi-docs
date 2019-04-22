@@ -8,13 +8,13 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/19/2019
+ms.date: 04/22/2019
 ms.author: maggies
 
 LocalizationGroup: Connect to services
 ---
 # Connect to MailChimp with Power BI
-This Power BI template app pulls data from your MailChimp account. It generates a workspace with a dashboard, a set of reports, and a dataset to allow you to explore your data. Pull in analytics to create [MailChimp dashboards](https://powerbi.microsoft.com/integrations/mailchimp) and quickly identify trends within your campaigns, reports, and individual subscribers. The data refreshes daily, ensuring the data you're monitoring is up to date.
+This article walks you through pulling your data from your MailChimp account with a Power BI template app. The template app generates a workspace with a dashboard, a set of reports, and a dataset to allow you to explore your data. Pull in analytics to create [MailChimp dashboards](https://powerbi.microsoft.com/integrations/mailchimp) and quickly identify trends within your campaigns, reports, and individual subscribers. The data refreshes daily, ensuring the data you're monitoring is up to date.
 
 Connect to the [MailChimp template app](https://app.powerbi.com/getdata/services/mailchimp) for Power BI.
 
@@ -23,6 +23,8 @@ Connect to the [MailChimp template app](https://app.powerbi.com/getdata/services
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
 3. Select **MailChimp** \> **Get it now**.
+4. In **Install this Power BI App?** select **Install**.
+5. In **Your new app is ready**, select **Go to app**.
 4. In the **Apps** pane, select the **MailChimp** tile.
 
     ![Power BI MailChimp app tile](media/service-connect-to-mailchimp/power-bi-connect-mailchimp.png)
@@ -43,9 +45,9 @@ Connect to the [MailChimp template app](https://app.powerbi.com/getdata/services
    
    ![Power BI MailChimp dashboard](media/service-connect-to-mailchimp/power-bi-mailchimp-dashboard.png)
 
-## Modify and publish your app
+## Modify and distribute your app
 
-Because you've installed a template app, you can make changes to the report and the dashboard, and then publish it as an *app* to colleagues in your organization. 
+Because you've installed a template app, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
 
 Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
 

@@ -8,7 +8,7 @@ ms.reviewer: sarinas
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/19/2019
+ms.date: 04/22/2019
 ms.author: maggies
 
 LocalizationGroup: Connect to services
@@ -27,8 +27,10 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
    
 3. Select **GitHub** \> **Get it now**.
+4. In **Install this Power BI App?** select **Install**.
+5. In **Your new app is ready**, select **Go to app**.
 
-4. In the **Apps** pane, select the **MailChimp** tile.
+4. In the **Apps** pane, select the **GitHub** tile.
 
     ![Power BI GitHub tile](media/service-connect-to-github/power-bi-github-tile.png)
 
@@ -56,9 +58,9 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
    
     ![GitHub dashboard in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
 
-## Modify and publish your app
+## Modify and distribute your app
 
-Because you've installed a template app, you can make changes to the report and the dashboard, and then publish it as an *app* to colleagues in your organization. 
+Because you've installed a template app, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
 
 Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
 
