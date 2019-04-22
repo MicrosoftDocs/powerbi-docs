@@ -4,8 +4,8 @@ description: Power BI get started with third party apps
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-author: markingmyname
-ms.author: maghan
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ""
 ms.cunstom: ""

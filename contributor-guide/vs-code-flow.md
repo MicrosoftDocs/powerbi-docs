@@ -5,8 +5,8 @@ documentationcenter: ""
 services: ""
 ms.service: contributor-guide
 ms.topic: article
-author: markingmyname
-ms.author: maghan
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ""
 editor: ""

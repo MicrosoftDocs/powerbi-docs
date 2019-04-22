@@ -7,8 +7,8 @@ solutions: ""
 documentationcenter: ""
 ms.topic: article
 ms.service: contributor-guide
-author: markingmyname
-ms.author: maghan
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ""
 videoid: ""
