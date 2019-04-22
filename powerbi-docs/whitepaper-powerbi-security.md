@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/07/2019
+ms.date: 04/19/2019
 LocalizationGroup: Conceptual
 ---
 
@@ -243,23 +243,24 @@ Power BI provides data integrity monitoring in the following ways:
 1. Metadata (report definition)
 
    a. Reports can either be Excel for Office 365 reports, or Power BI reports. The following applies for metadata based on the type of report:
+        
+    &ensp; &ensp; a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
 
-       a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
-
-       b. Power BI reports are stored encrypted in Azure SQL database.
+    &ensp; &ensp; b. Power BI reports are stored encrypted in Azure SQL database.
 
 2. Static data
 
    Static data includes artifacts such as background images and custom visuals.
 
-    a. For reports created with Excel for Office 365, nothing is stored.
+    &ensp; &ensp; a. For reports created with Excel for Office 365, nothing is stored.
 
-    b. For Power BI reports, the static data is stored and is encrypted in Azure Blob storage.
+    &ensp; &ensp; b. For Power BI reports, the static data is stored and is encrypted in Azure Blob storage.
 
 3. Caches
-    a. For reports created with Excel for Office 365, nothing is cached.
 
-    b. For Power BI reports, data for the visuals shown are cached encrypted in Azure SQL Database.
+    &ensp; &ensp; a. For reports created with Excel for Office 365, nothing is cached.
+
+    &ensp; &ensp; b. For Power BI reports, data for the visuals shown are cached encrypted in Azure SQL Database.
  
 
 4. Original Power BI Desktop (.pbix) or Excel (.xlsx) files published to Power BI
@@ -447,6 +448,12 @@ The following questions are common security questions and answers for Power BI. 
 **Are there other Power BI visuals that send information outside the customer network?**
 
 * Yes. Bing Maps and ESRI visuals transmit data out of the Power BI service for visuals that use those services. For more information, and detailed descriptions of out-of-Power-BI tenant traffic, see [**Power BI and ExpressRoute**](service-admin-power-bi-expressroute.md).
+
+**For Template Apps, does Microsoft perform any security or privacy assessment of the Template app prior to publishing items to the Gallery?**
+* No. The app publisher is responsible for the content while the customer's responsibility to review and determine whether to trust the Template app publisher. 
+
+**Are there Template apps that can send information outside the customer network?**
+* Yes. It is the customer's responsibility to review the publisher's privacy policy and determine whether to install the Template app on Tenant. Furthermore, the publisher is responsible to notify of the app's behavior and capabilities.
 
 **What about data sovereignty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country borders?**
 

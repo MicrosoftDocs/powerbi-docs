@@ -66,13 +66,13 @@ In addition to using default credentials, you can add a <proxy> element to defin
 ```
 
 Additionally, for the gateway to connect to cloud data sources through a proxy, update the following file:
-*C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe*. In the file, expand the `<configurations>` section to include the contents below, and update `proxyaddress` attribute with your proxy information. The following example would route all cloud requests via a specific proxy with the IP address 192.168.1.10.
+*C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe.config*. In the file, expand the `<configurations>` section to include the contents below, and update `proxyaddress` attribute with your proxy information. The following example would route all cloud requests via a specific proxy with the IP address 192.168.1.10.
 
 ```
 <configuration>
 <system.net>
     <defaultProxy useDefaultCredentials="true" enabled="true">
-    <proxy proxyaddress=""http://192.168.1.10:3128" bypassonlocal="true" />
+    <proxy proxyaddress="http://192.168.1.10:3128" bypassonlocal="true" />
     </defaultProxy>
 </system.net>
 </configuration>

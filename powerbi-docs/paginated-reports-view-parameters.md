@@ -1,8 +1,8 @@
 ---
 title: "View parameters for paginated reports in the Power BI service (Preview)"
 description: In this article, you learn how to interact with parameters for paginated reports in the Power BI service.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi

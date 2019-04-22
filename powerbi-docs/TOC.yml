@@ -53,7 +53,7 @@
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
       href: desktop-latest-update.md
-    - name: "Modeling view in Power BI Desktop (Preview)"
+    - name: "Modeling view in Power BI Desktop"
       href: desktop-modeling-view.md      
     - name: "Aggregations in Power BI Desktop (Preview)"
       href: desktop-aggregations.md      
@@ -403,12 +403,14 @@
       href: service-get-started.md
     - name: "Connect to a GitHub sample"
       href: service-tutorial-connect-to-github.md
-    - name: "Using Cognitive Services in Power BI"
+    - name: "Use Cognitive Services"
       href: service-tutorial-use-cognitive-services.md
-    - name: "Machine Learning integration with Power BI"
+    - name: "Machine Learning integration"
       href: service-tutorial-invoke-machine-learning-model.md
-    - name: "Build a Machine Learning model with Power BI (Preview)"
-      href: service-tutorial-build-machine-learning-model.md                  
+    - name: "Build a Machine Learning model (Preview)"
+      href: service-tutorial-build-machine-learning-model.md
+    - name: "Refresh data from SQL Server"
+      href: service-gateway-sql-tutorial.md                  
   - name: Concepts
     items: 
     - name: "What's new in the Power BI service"
@@ -497,13 +499,13 @@
       items: 
       - name: "Configure scheduled refresh"
         href: refresh-scheduled-refresh.md
-      - name: "Refresh a dataset from a Power BI Desktop file - local"
+      - name: "Refresh a dataset from a local Power BI Desktop file"
         href: refresh-desktop-file-local-drive.md
-      - name: "Refresh a dataset from a Power BI Desktop file - cloud"
+      - name: "Refresh a dataset from a cloud Power BI Desktop file"
         href: refresh-desktop-file-onedrive.md
-      - name: "Refresh a dataset from an Excel workbook - local"
+      - name: "Refresh a dataset from a local Excel workbook"
         href: refresh-excel-file-local-drive.md
-      - name: "Refresh a dataset from an Excel workbook - cloud"
+      - name: "Refresh a dataset from a cloud Excel workbook"
         href: refresh-excel-file-onedrive.md
       - name: "Refresh a dataset from a .csv file on OneDrive"
         href: refresh-csv-file-onedrive.md
@@ -691,6 +693,8 @@
         href: paginated-reports-view-power-bi-service.md
       - name: Interact with parameters (Preview)
         href: paginated-reports-view-parameters.md
+      - name: Subscribe yourself or others
+        href: paginated-reports-subscriptions.md
     - name: Template apps
       items: 
       - name: "Template apps overview"
@@ -949,6 +953,8 @@
       items: 
       - name: "Embed from an app"
         href: developer/embed-from-apps.md
+      - name: "Auto-install apps"
+        href: developer/embed-auto-install-app.md
       - name: "Create an Azure Active Directory tenant"
         href: developer/create-an-azure-active-directory-tenant.md
       - name: "Register an application"

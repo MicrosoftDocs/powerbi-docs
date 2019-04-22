@@ -7,16 +7,16 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/04/2019
+ms.date: 04/18/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Organize work in the new workspaces in Power BI
 
-Workspaces are places to collaborate with colleagues to create collections of dashboards and reports. You can bundle those collections into *apps* with their own table of contents. Then you can distribute them to your whole organization or to specific people or groups. Power BI is introducing a new workspace experience to better help you manage access to content in workspaces. 
+ *Workspaces* are places to collaborate with colleagues to create collections of dashboards, reports, and paginated reports. The new workspace experience helps you better manage access to content. This article describes the new workspaces, and how they differ from the classic workspaces.  As with classic workspaces, you still use them to create and distribute apps. Read about how to [create a new workspace experience](service-create-the-new-workspaces.md).
 
-The new workspace experience has reached general availability (GA), and is now the default workspace experience. Classic workspaces that are based on Office 365 Groups are still supported. You can continue to create and use [classic workspaces](service-create-workspaces.md). 
+The new workspace experience has reached general availability (GA), and is now the default workspace. You can still continue to create and use [classic workspaces](service-create-workspaces.md) based on Office 365 Groups. 
 
 > [!NOTE]
 > To enforce row-level security (RLS) for Power BI Pro users browsing content in a workspace, continue to use [classic workspaces](service-create-workspaces.md). Select the **Members can only view Power BI content** option. Alternatively, publish an Power BI app to those users, or use sharing to distribute content. The forthcoming Viewer Role will enable this scenario in future in new workspace experience workspaces.
@@ -26,8 +26,6 @@ With the new workspaces, you can:
 - Assign workspace roles to user groups: security groups, distribution lists, Office 365 groups, and individuals.
 - Create a workspace in Power BI without creating an Office 365 group.
 - Use more granular workspaces roles for more flexible permissions management in a workspace.
-
-Read about how to [create one of the new workspaces](service-create-the-new-workspaces.md).
 
 When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the workspace administration is in Power BI, not in Office 365. In the new workspace experience, you can now add an Office 365 group in the workspace access list to continue managing user access to content through Office 365 groups.
 
@@ -41,11 +39,9 @@ In **Workspace settings** in the admin portal, admins can use the Create workspa
 
 ![Workspace settings in the admin portal](media/service-new-workspaces/power-bi-workspace-admin-settings.png)
 
-In the Power BI admin portal, the [workspaces list is available](service-admin-portal.md#workspaces). 
+The [workspaces list is available](service-admin-portal.md#workspaces) in the Power BI admin portal. 
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
-
-Read more about the [Power BI admin portal](service-admin-portal.md).
 
 ## New workspaces side by side with classic workspaces
 
@@ -89,25 +85,17 @@ With the new workspaces, we're redesigning some features. Here are the changes y
 - You can consume an organizational content pack from a classic workspace. You can’t consume one from the new workspaces.
 
 ## Workspace contact list
-The new **Contact list** feature available under **Advanced** in **Workspace settings** or when creating workspaces allows you to specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can customize the list. Users or groups listed in the contact list will be shown in the user interface (UI) to help users get help related to the workspace. 
+The new **Contact list** feature allows you to specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can customize the list. Users or groups listed in the contact list will be shown in the user interface (UI) to help users get help related to the workspace. 
+
+Read more about the [setting the workspace contact list](service-create-the-new-workspaces.md#workspace-contact-list).
 
 ## Workspace OneDrive
-The Workspace OneDrive feature allows you to configure an Office 365 Group whose SharePoint Document Library file storage will be available to workspace users. The group needs to be created outside of Power BI. You can configure it by typing the Office 365 Group name, which automatically picks up the OneDrive for the group.
+The Workspace OneDrive feature allows you to configure an Office 365 Group whose SharePoint Document Library file storage is available to workspace users. The group needs to be created outside of Power BI. 
 
-Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Office 365 Group membership. The best practice is to manage workspace access through the same Office 365 Group whose file storage you configure in this setting. After you've configured the OneDrive, you can get to it from a few different places in the workspace:
+Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Office 365 Group membership. The best practice is to manage workspace access through the same Office 365 Group whose file storage you configure in this setting. 
 
-- Select **Workspaces** > *workspace name* > the ellipsis (**...**) menu > **Files**. 
-
-    ![Workspace files location](media/service-new-workspaces/power-bi-new-workspace-files.png)
-
-- Select the ellipsis (**...**) menu in the upper-right corner of the workspace > **Files**.
-
-    ![Workspace files location](media/service-new-workspaces/power-bi-new-workspace-files-2.png)
-    
-- In the **Get Data** > **Files** experience. The **OneDrive – Business** entry is your own OneDrive for Business. The second OneDrive is the one you added.
-
-    ![Workspace files location - get data](media/service-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
-    
+Read about how to [set and access the Workspace OneDrive](service-create-the-new-workspaces.md#workspace-onedrive).  
+   
 ## Auditing
 The following activities are audited by Power BI for new workspace experience workspaces.
 
