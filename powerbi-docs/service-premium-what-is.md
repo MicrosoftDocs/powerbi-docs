@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/10/2019
+ms.date: 04/22/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -233,3 +233,5 @@ Peter Myers, Data Platform MVP and independent BI expert with [Bitwise Solutions
 > [Managing Premium capacities](service-premium-capacity-manage.md)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+
+||||||

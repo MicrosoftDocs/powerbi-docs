@@ -1,8 +1,8 @@
 ---
 title: Power BI data model versioning
 description: Data Model exposed by an OData Service
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
