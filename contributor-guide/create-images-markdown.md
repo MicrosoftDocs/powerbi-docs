@@ -7,7 +7,6 @@ documentationcenter: ''
 author: mblythe
 manager: dongill
 editor: NA
-
 ms.service: contributor-guide
 ms.devlang: ''
 ms.topic: article
@@ -15,10 +14,12 @@ ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 05/19/2016
 ms.author: mblythe
-
 ---
+
 # Create images in markdown
+
 ## Image folder creation and link syntax
+
 For a new article, you'll need to create a folder in the following location on your local file system:
 
     /articles/media/<article-name>/
@@ -40,10 +41,9 @@ Example:
 See [the markdown template](https://raw.githubusercontent.com/Azure/powerbi-content-pr/master/examples/_markdown-template.md) for an example.  The image call references in this markdown template are designed so the calls are made to image references at the bottom of the template.
 
 ## Guidelines specific to powerbi.microsoft.com
+
 > [!NOTE]
 > We will revise this section based on art guidelines specific to Power BI.
-> 
-> 
 
 Screenshots are currently encouraged if it's not possible to include repro steps. Do write your content so that the content can stand without the screenshots if necessary.
 
@@ -91,4 +91,3 @@ Use the following guidelines when creating and including art files:
 ### Contributors' Guide Links
 * [Overview article](../README.md)
 * [Index of guidance articles](contributor-guide-index.md)
-

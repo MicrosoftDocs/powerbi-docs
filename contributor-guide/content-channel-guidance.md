@@ -32,4 +32,3 @@ The following channels are not part of the standard Power BI technical content e
 * **TechNet TechCenters**: Our center is published to https://powerbi.microsoft.com/developers.
 * **MSDN DevCenters**: Our center is published to https://powerbi.microsoft.com/developers.
 * **E-book, CSI e-book gallery**: Due to static nature of content, do not deliver content in e-book form. The vast majority of content should be published through powerbi.microsoft.com or to the Power BI scoped library.
-
