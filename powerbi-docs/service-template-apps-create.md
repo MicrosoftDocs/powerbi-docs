@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/11/2019
+ms.date: 04/22/2019
 ms.author: maggies
 ---
 
@@ -79,34 +79,38 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     ![Create app](media/service-template-apps-create/power-bi-create-app.png)
  
-    Here, you fill in additional parameters for your template app, in four categories. 
+    Here, you fill in additional building options for your template app, in five categories:
 
     **Branding**
 
+    ![Branding](media/service-template-apps-create/power-bi-create-TempalteApp-Branding.png)
     - App name 
     - Description
+    - Support site (link is presented under app info after redistributing template app as org app)
     - App logo (optional)
-    - App color
-    - Service (link is presented under app info after redistributing template app as org app)
+    - App theme color
+
 
     **Content** 
-
-    - App landing page (optional): Define a report or dashboard to be the landing page of your app.  
     
+    - App landing page: Define a report or dashboard to be the landing page of your app (Use a landing page that will give the right impression):
+
+    ![Content](media/service-template-apps-create/power-bi-create-TempalteApp-Content.png)
+
     **Control** 
     - Control several limitations and restrictions that your application users will have with the content of your application. You can use this control to protect certain intellectual property your app might contain.
 
-        ![Control](media/service-template-apps-create/power-bi-create-TempalteApp-control.png)
-    >[!Note] Exporting to pbix is disabled for Template apps insstallers by default.
+    ![Control](media/service-template-apps-create/power-bi-create-TempalteApp-control.png)
+    >[!Note] Exporting to pbix is disabled for Template apps installers by default.
 
     **Parameters** 
-    - As a report creator, you define parameters in Desktop, the parameter settings and selections travel with it (Learn how to create query parameters [here](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)). The installer will be prompt to input these parameters upon connecting data sources.
+    - Use this category to manage parameters behavior on connecting to datasources (Learn how to create query parameters [here](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)):
 
-        ![Parameters](media/service-template-apps-create/power-bi-create-TempalteApp-parameters.png)
-    - Value: Input the default parameter for the installer.
-    - Required: Check if this value must be entered during connecting the app to a data source.
-    - Lock: Lock to ensure the installer can't see or access this parameter.
-    - Static: Enable checkbox in case your app has only sample data (checkbox enabled  prevents from the installation wizard to ask app installer connecting to data)
+    ![Parameters](media/service-template-apps-create/power-bi-create-TempalteApp-parameters.png)
+    - Value: default parameter value.
+    - Required: use this to require installed to input a user-specific parameter.
+    - Lock: Locking prevents installer from updating parameter.
+    - Static: Enable in case app contains **only** sample data (when enabled installation wizard won't ask user to connect datasources).
    
     **Access**
     - In the test phase, decide which others in your organization can install and test your app. Don't worry, you can always come back and change these settings later (Setting doesn't affect access of the distributed Template app).
