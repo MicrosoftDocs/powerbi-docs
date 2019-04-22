@@ -107,7 +107,7 @@ There are few types of drill down
    
     ![Revert](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
 
-### Drill through from a value
+## Drill through from a value
 Drill through connects values in one rpeort page, with other report pages. When you drill through from a data point to another report page, the data point values are used to filter the drilled through page, or it will be in the context of the selected data.
 Report authoers can [define drill through](https://docs.microsoft.com/power-bi/desktop-drillthrough) when they create the report.
 
