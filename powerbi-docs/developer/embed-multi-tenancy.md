@@ -48,7 +48,7 @@ This article describes the different approaches and analyzes them according to s
 
 **AAD Application user (service principal)** - The identity that represents the SaaS application in Power BI and that the SaaS application uses when calling Power BI APIs. Needs to be an AAD web application. Can replace the use of a *master* user to authenticate with Power BI.
 
-**Capacity** - A set of resources dedicated to running the Power BI service. [Power BI Premium capacities](../service-premium.md) Intended for enterprise companies using Power BI internally, while [Power BI Embedded capacities](azure-pbie-create-capacity.md) intend for application developers to develop SaaS applications for third parties.
+**Capacity** - A set of resources dedicated to running the Power BI service. [Power BI Premium capacities](../service-premium-what-is.md) Intended for enterprise companies using Power BI internally, while [Power BI Embedded capacities](azure-pbie-create-capacity.md) intend for application developers to develop SaaS applications for third parties.
 
 **[Power BI Pro license](../service-admin-purchasing-power-bi-pro.md)** - A user-based license, which grants rights to publish content to app workspaces, consume apps without Premium capacity, share dashboards, and subscribe to dashboards and reports.
 
@@ -137,9 +137,9 @@ To add additional isolation, an application developer can define a *master* user
 
 ### Scalability
 
-One advantage of this model is that separating the data into multiple datasets for each tenant overcomes the [size limits of a single dataset](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (currently 10 GB in a capacity). When the capacity is overloaded, [it can evict unused datasets](../service-premium-understand-how-it-works.md) to free memory for active datasets. This task isn't possible with a single large dataset. Using multiple datasets, it is also possible to separate tenants into multiple Power BI capacities if needed.
+One advantage of this model is that separating the data into multiple datasets for each tenant overcomes the [size limits of a single dataset](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (currently 10 GB in a capacity). When the capacity is overloaded, it can evict unused datasets to free memory for active datasets. This task isn't possible with a single large dataset. Using multiple datasets, it is also possible to separate tenants into multiple Power BI capacities if needed.
 
-Despite these advantages, one must consider the scale that the SaaS application can reach in the future. For example, one might reach limitations around the number of artifacts one can manage. See deployment [limitations](#summary-comparison-of-the-different-approaches) later in this article for more details. The capacity SKU used introduces a limit on the size of memory that datasets need to fit in, [how many refreshes can run at the same time](../service-premium-understand-how-it-works.md) and the maximum frequency of data refreshes. It's recommended to test when managing hundreds or thousands of datasets. It is also recommended to consider the average and peak volume of usage, as well as any specific tenants with large datasets, or different usage patterns, that are managed differently than other tenants.
+Despite these advantages, one must consider the scale that the SaaS application can reach in the future. For example, one might reach limitations around the number of artifacts one can manage. See deployment [limitations](#summary-comparison-of-the-different-approaches) later in this article for more details. The capacity SKU used introduces a limit on the size of memory that datasets need to fit in, how many refreshes can run at the same time and the maximum frequency of data refreshes. It's recommended to test when managing hundreds or thousands of datasets. It is also recommended to consider the average and peak volume of usage, as well as any specific tenants with large datasets, or different usage patterns, that are managed differently than other tenants.
 
 ### Automation & operational complexity
 
@@ -240,17 +240,17 @@ As end users edit or create reports, they can use the production multi-tenant da
 
 **Power BI Capacity considerations and limitations:**
 
-* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](../service-premium.md).
-* For the recommended dataset size for each SKU, reference [Premium large datasets](../service-premium-large-datasets.md).
+* Each capacity can only use its allocated memory and V-cores, according to the [SKU purchased](../service-premium-what-is.md).
+* For the recommended dataset size for each SKU, reference [Premium large datasets](../service-premium-what-is.md#large-datasets).
 * The max dataset size in a dedicated capacity is 10 GB.
 * The number of scheduled refreshes for an *import mode* dataset in a day is 48.
 * The time between scheduled refreshes for an *import mode* dataset is 30 minutes.
-* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](../service-premium-understand-how-it-works.md).
+* For the number of refreshes that can run concurrently on a capacity, reference [resource management and optimization](../service-premium-what-is.md#capacity-nodes).
 * The average time of scaling a capacity is between 1-2 minutes. During that time, the capacity isn't available. We recommend using a scale-out approach to [avoid downtime](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script).
 
 ## Next steps
 
 * [Embedded analytics with Power BI](embedding.md)
 * [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)
-* [Power BI Premium](../service-premium.md)
+* [Power BI Premium](../service-premium-what-is.md)
 * [Row-level security](embedded-row-level-security.md)
