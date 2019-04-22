@@ -80,9 +80,11 @@ There are few types of drill-down:
 ### Drill down on a value
 1. Long tap (tap and hold) on a data point in a visual.
 2. Tooltip will show up, and if hierarchy is defined, then the tooltip footer will show drill down and up arrow.
-3. Tap on the down arrow for drill down
+3. Tap on the down arrow for drill-down
 
     ![Tap drill down](././media/mobile-apps-view-phone-report/report-drill-down.png)
+    
+4. Tap on the up arrow for drill-up.
 
 ### Drill to next level
 1. In a report on a phone, tap the ellipsis (**...**) in the upper-right corner > **Expand to focus mode**.
@@ -90,7 +92,7 @@ There are few types of drill-down:
     ![Expand to focus mode](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
    
     In this example, the bars show the values for states.
-2. Tap the explore icon ![Explore icon](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) in the lower-left.
+2. Tap the explore icon ![Explore icon](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) in the lower left.
    
     ![Explore mode](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-mode.png)
 3. Tap **Show next level** or **Expand to next level**.
