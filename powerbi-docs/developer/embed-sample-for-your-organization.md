@@ -390,7 +390,7 @@ Now that you've completed developing your application, it's time to back your ap
 
 ### Create a dedicated capacity
 
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. You can create a dedicated capacity by using [Power BI Premium](../service-premium.md).
+By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. You can create a dedicated capacity by using [Power BI Premium](../service-premium-what-is.md).
 
 The following table lists the Power BI Premium SKUs available in [Microsoft Office 365](../service-admin-premium-purchase.md):
 

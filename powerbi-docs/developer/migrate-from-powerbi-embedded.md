@@ -126,7 +126,7 @@ Cached datasets refer to PBIX files that had imported data as opposed to a live 
 3. Save PBIX.
 4. Call Import PBIX to SaaS workspace.
 5. Update connection string by calling - POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
-6. Get GW id and datasource id by calling - GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
+6. Get GW and datasource identifiers by calling - GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
 7. Update user's credentials by calling - PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
 
 #### Old dataset & reports
@@ -195,7 +195,7 @@ You should do some cleanup within Azure.
 [Power BI Workspace Collection migration tool](migrate-tool.md)  
 [Code snippets for migrating content from Power BI Workspace Collection](migrate-code-snippets.md)  
 [How to embed your Power BI dashboards, reports and tiles](embedding-content.md)  
-[Power BI Premium - what is it?](../service-premium.md)  
+[Power BI Premium - what is it?](../service-premium-what-is.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
