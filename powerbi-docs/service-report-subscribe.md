@@ -43,7 +43,7 @@ Subscribing to paginated reports is a little different. See [Subscribe yourself 
 
 3. Use the yellow slider to turn the subscription on and off.  Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
-4. Your email is already in the **Subscribe** box. You can add other email addresses to the subscription as well, but only in the same domain. If the report or dashboard is hosted in [Premium capacity](service-premium.md), you can subscribe other individual email addresses and group aliases. If the report or dashboard isn't hosted in Premium capacity, you can subscribe other individuals, but they too must have Power BI Pro licenses. See [Considerations and troubleshooting](#considerations-and-troubleshooting) below for details. 
+4. Your email is already in the **Subscribe** box. You can add other email addresses to the subscription as well, but only in the same domain. If the report or dashboard is hosted in [Premium capacity](service-premium-what-is.md), you can subscribe other individual email addresses and group aliases. If the report or dashboard isn't hosted in Premium capacity, you can subscribe other individuals, but they too must have Power BI Pro licenses. See [Considerations and troubleshooting](#considerations-and-troubleshooting) below for details. 
 
 5. Fill in the email **Subject** and **Message** details. 
 

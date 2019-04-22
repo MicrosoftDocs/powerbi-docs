@@ -32,7 +32,7 @@ You can invite guest users with any email address, including personal accounts s
 
 ## Invite guest users
 
-Invitations are required only for the first time an external guest user is invited to your organization. There are two ways to invite users: planned invites and ad-hoc invites.
+Invitations are required only for the first time an external guest user is invited to your organization. There are two ways to invite users: planned invites and ad hoc invites.
 
 ### Planned invites
 
@@ -40,7 +40,7 @@ Use a planned invite if you know which users to invite. You can send the invite 
 
 Follow these steps to send an invite in the Azure portal.
 
-1. In the [Azure Portal](https://portal.azure.com), select **Azure Active Directory**.
+1. In the [Azure portal](https://portal.azure.com), select **Azure Active Directory**.
 
 1. Under **Manage**, go to **Users** > **All users** > **New guest user**.
 
@@ -78,7 +78,7 @@ When using the [Allow external guest users to edit and manage content in the org
 
 ### Use Power BI Premium
 
-Assigning the app workspace to [Power BI Premium capacity](service-premium.md) enables the guest user to use the app without requiring a Power BI Pro license. Power BI Premium also enables apps to take advantage of other capabilities like increased refresh rates, dedicated capacity, and large model sizes.
+Assigning the app workspace to [Power BI Premium capacity](service-premium-what-is.md) enables the guest user to use the app without requiring a Power BI Pro license. Power BI Premium also enables apps to take advantage of other capabilities like increased refresh rates, dedicated capacity, and large model sizes.
 
 ![Use Power BI Premium](media/service-admin-azure-ad-b2b/license-approach1.png)
 
@@ -96,13 +96,13 @@ The guest user already has a Power BI Pro license assigned within their tenant.
 
 ## Guest users who can edit and manage content 
 
-When using the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#export-and-sharing-settings), the specified guest users get access to your orgnaizaiton's Power BI and see any content to which they have permission. They can access Home, browse workspaces, install apps that where they are on the access list, and contribute content to workspaces. They can create or be an Admin of workspaces that use the new workspace experience. Some limitations apply and are listed in the Considerations and Limitations section.
+When using the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#export-and-sharing-settings), the specified guest users get access to your organization's Power BI and see any content to which they have permission. They can access Home, browse workspaces, install apps that where they are on the access list, and contribute content to workspaces. They can create or be an Admin of workspaces that use the new workspace experience. Some limitations apply and are listed in the Considerations and Limitations section.
 
 To help these users login to Power BI, provide them with the Tenant URL. To find the tenant URL, follow these steps.
 
 1. In the Power BI service, in the top menu, select help (**?**) then **About Power BI**.
 
-2. Look for the value next to **Tenant URL**. This is the tenat URL you can share with your guest users.
+2. Look for the value next to **Tenant URL**. This is the tenant URL you can share with your guest users.
 
 ![Guest user tenant url](media/service-admin-azure-ad-b2b/power-bi-about-dialog.png)
 
