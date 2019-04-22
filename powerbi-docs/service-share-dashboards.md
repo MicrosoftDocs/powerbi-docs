@@ -19,7 +19,7 @@ LocalizationGroup: Share your work
 
 ![Share icon in a list of favorite dashboards](media/service-share-dashboards/power-bi-share-dash-report-favorites.png)
 
-With sharing, whether you share content inside or outside your organization, you need a [Power BI Pro license](service-features-license-type.md). Your recipients also need Power BI Pro licenses, or the content needs to be in a [Premium capacity](service-premium.md). 
+With sharing, whether you share content inside or outside your organization, you need a [Power BI Pro license](service-features-license-type.md). Your recipients also need Power BI Pro licenses, or the content needs to be in a [Premium capacity](service-premium-what-is.md). 
 
 You can share dashboards and reports from most places in the Power BI service: your Favorites, Recent, Shared with me (if the owner allows it), My Workspace, or other workspaces. When you share a dashboard or report, those you share it with can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard or report, unless [row-level security (RLS)](service-admin-rls.md) is applied. The coworkers you share with can also share with their coworkers, if you allow them to. The people outside your organization can view and interact with the dashboard or report too, but can't share it. 
 

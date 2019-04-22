@@ -76,7 +76,7 @@ If you're [part of an **_app workspace_**](service-collaborate-power-bi-workspac
 Datasets can be refreshed, renamed, explored, and removed. Use a dataset to create a report from scratch or by running [quick insights](service-insights.md).  To see which reports and dashboards are already using a dataset, select **View related**. To explore a dataset, select it. What you're actually doing is opening the dataset in the report editor where you can really start digging into the data and creating visualizations. So, let's move on to the next topic -- reports.
 
 ### Dig deeper
-* [What is Power BI Premium?](service-premium.md)
+* [What is Power BI Premium?](service-premium-what-is.md)
 * [Get data for Power BI](service-get-data.md)
 * [Sample datasets for Power BI](sample-datasets.md)
 
@@ -196,7 +196,7 @@ The icons in the upper right corner are your resource for settings, notification
 
 ![icon buttons](media/service-basic-concepts/power-bi-icons.png)
 
-### 5. **Dashboard title** (navigation path aka breadcrumbs)
+### 5. **Dashboard title** (navigation path, or breadcrumbs)
 It's not always easy to figure out which workspace and dashboard are active, so Power BI creates a navigation path for you.  In this example, we see the workspace (My workspace) and the dashboard title (Retail Analysis Sample).  If we opened a report, the name of the report would be appended to the end of the navigation path.  Each section of the path is an active hyperlink.  
 
 Notice the "C" icon after the dashboard title. This dashboard has a [data classification tag](service-data-classification.md) of "confidential." The tag identifies the sensitivity and security level of the data. If your Admin has turned on data classification, every dashboard will have a default tag set. Dashboard owners should change the tag to match their dashboard's proper security level.
