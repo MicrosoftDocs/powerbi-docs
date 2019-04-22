@@ -1,8 +1,8 @@
 ---
 title: Get an authentication access token
 description: Walkthrough to push data - Get an authentication access token
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
