@@ -885,34 +885,34 @@
     items:    
     - name: What is Power BI Premium?
       href: service-premium-what-is.md
-    - name: Concepts
-      items:
-      - name: Managing Premium capacities
-        href: service-premium-capacity-manage.md
-      - name: Optimizing Premium capacities
-        href: service-premium-capacity-optimize.md 
-      - name: Premium capacity scenarios
-        href: service-premium-capacity-scenarios.md 
-      - name: Power BI Premium FAQ
-        href: service-premium-faq.md 
-    - name: How to
-      items:
-      - name: Purchase Power BI Premium
-        href: service-admin-premium-purchase.md
-      - name: Configure workloads
-        href: service-admin-premium-workloads.md
-      - name: Monitor capacities with the app
-        href: service-admin-premium-monitor-capacity.md
-      - name: Monitor capacities in the Admin portal
-        href: service-admin-premium-monitor-portal.md
-      - name: Configure incremental refresh
-        href: service-premium-incremental-refresh.md
-      - name: Configure Multi-Geo
-        href: service-admin-premium-multi-geo.md
-      - name: Restart a Premium capacity
-        href: service-admin-premium-restart.md
-      - name: Connect to datasets with client applications and tools
-        href: service-premium-connect-tools.md        
+  - name: Concepts
+    items:
+    - name: Managing Premium capacities
+      href: service-premium-capacity-manage.md
+    - name: Optimizing Premium capacities
+      href: service-premium-capacity-optimize.md
+    - name: Premium capacity scenarios
+      href: service-premium-capacity-scenarios.md
+    - name: Power BI Premium FAQ
+      href: service-premium-faq.md
+  - name: How to
+    items:
+    - name: Purchase Power BI Premium
+      href: service-admin-premium-purchase.md
+    - name: Configure workloads
+      href: service-admin-premium-workloads.md
+    - name: Monitor capacities with the app
+      href: service-admin-premium-monitor-capacity.md
+    - name: Monitor capacities in the Admin portal
+      href: service-admin-premium-monitor-portal.md
+    - name: Configure incremental refresh
+      href: service-premium-incremental-refresh.md
+    - name: Configure Multi-Geo
+      href: service-admin-premium-multi-geo.md
+    - name: Restart a Premium capacity
+      href: service-admin-premium-restart.md
+    - name: Connect to datasets with client applications and tools
+      href: service-premium-connect-tools.md
 - name: Power BI for developers
   items:
   - name: "What can developers do with Power BI"
