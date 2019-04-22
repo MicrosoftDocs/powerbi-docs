@@ -9,7 +9,6 @@ author: mblythe
 videoid: ''
 scriptid: ''
 manager: dongill
-
 ms.service: contributor-guide
 ms.devlang: ''
 ms.topic: article
@@ -17,11 +16,13 @@ ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 09/01/2015
 ms.author: mblythe
-
 ---
+
 # Power BI technical content channel guidance
+
 ## aka: What goes where?
-Generally speaking, core technical content for Microsoft Power BI belongs in the [Power BI Documentation Center](https://powerbi.microsoft.com/documentation). Members of the content and product teams also publish developer content to [MSDN](https://msdn.microsoft.com/library/dn877544.aspx), and we publish to the [Power BI blog](http://blogs.msdn.com/b/powerbi/). 
+
+Generally speaking, core technical content for Microsoft Power BI belongs in the [Power BI Documentation Center](https://powerbi.microsoft.com/documentation). Members of the content and product teams also publish developer content to [MSDN](https://msdn.microsoft.com/library/dn877544.aspx), and we publish to the [Power BI blog](http://blogs.msdn.com/b/powerbi/).
 
 The following channels are not part of the standard Power BI technical content experience:
 

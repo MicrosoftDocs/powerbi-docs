@@ -1,8 +1,8 @@
 ---
 title: Create a dataset
 description: Walkthrough - Push data into a dataset - Create a dataset in Power BI
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: madia
 ms.service: powerbi

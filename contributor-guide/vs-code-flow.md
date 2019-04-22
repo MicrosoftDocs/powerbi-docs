@@ -3,26 +3,28 @@ title: Visual Studio Code - Flow
 description: Walkthough of how to use Visual Studio code with the Power BI repo.
 services: ''
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 editor: ''
-
 ms.service: contributor-guide
 ms.devlang: ''
 ms.topic: article
 ms.tgt_pltfrm: ''
 ms.workload: ''
 ms.date: 11/09/2017
-ms.author: maghan
-
 ---
+
 # Visual Studio Code - Flow
+
 This will walk through how you can use Visual Studio Code with the Power BI Git repo. You can download VS Code from https://code.visualstudio.com/.
 
 ## Advantages
+
 There are a few advantages to using Visual Studio Code instead of another tool, like ATOM.  Mainly because of the Git integration that makes the process a little smoother, and allows you to work within a single tool for most activities. There is also a working files section which makes it nice to ignore the other articles.
 
 ## Update your local repro first
+
 You still need to use the Git command line for a few operations.  The first of which is that we should always do a pull before you begin making changes.  This makes sure that your repo/branch is in line with the main Azure master branch.
 
 To pull the updates from MicrosoftDocs/powerbi-docs-pr, run the following command.
