@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 04/22/2019
 ms.author: mshenhav
 
 ---
@@ -117,7 +117,7 @@ Report authoers can [define drill through](https://docs.microsoft.com/power-bi/d
 
     ![Tap drill through](././media/mobile-apps-view-phone-report/report-drill-through1.png)
 
-4. Choose to whitch report page to drill through
+4. Choose which report page to drill through
 
     ![Choose report page](././media/mobile-apps-view-phone-report/report-drill-through2.png)
 
