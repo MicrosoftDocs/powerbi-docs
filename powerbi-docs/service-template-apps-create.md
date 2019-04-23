@@ -93,27 +93,27 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     **Content** 
     
-    - App landing page: Define a report or dashboard to be the landing page of your app (Use a landing page that will give the right impression):
+    App landing page: Define a report or dashboard to be the landing page of your app (Use a landing page that will give the right impression):
 
     ![Content](media/service-template-apps-create/power-bi-create-content.png)
 
     **Control** 
-    - Control several limitations and restrictions that your application users will have with the content of your application. You can use this control to protect certain intellectual property your app might contain.
+    Set limits and restrictions that your application users will have with the content of your application. You can use this control to protect intellectual property in your app.
 
     ![Control](media/service-template-apps-create/power-bi-create-control.png)
     >[!Note] Exporting to pbix is always blocked for users installing the app.
 
     **Parameters** 
-    - Use this category to manage parameters behavior on connecting to datasources (Learn how to create query parameters [here](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)):
+    Use this category to manage parameter behavior when connecting to data sources. Learn more about [creating query parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
 
     ![Parameters](media/service-template-apps-create/power-bi-create-parameters.png)
-    - Value: default parameter value.
-    - Required: use this to require installed to input a user-specific parameter.
-    - Lock: Locking prevents installer from updating parameter.
-    - Static: Enable in case app contains **only** sample data (when enabled installation wizard won't ask user to connect datasources).
+    - **Value**: default parameter value.
+    - **Required**: use this to require the installer to input a user-specific parameter.
+    - **Lock**: Locking prevents the installer from updating a parameter.
+    - **Static**: Enable in case the app contains *only* sample data. When you select **Static**, the installation wizard doesn't ask users to connect a data source.
    
     **Access**
-    - In the test phase, decide which others in your organization can install and test your app. Don't worry, you can always come back and change these settings later (Setting doesn't affect access of the distributed Template app).
+    In the test phase, decide which others in your organization can install and test your app. Don't worry, you can always come back and change these settings later (Setting doesn't affect access of the distributed Template app).
 
 2. Select **Create app**. 
 
