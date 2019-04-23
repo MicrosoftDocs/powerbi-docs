@@ -98,12 +98,14 @@ Now that you have content in your workspace, you're ready to package it in a tem
     ![Content](media/service-template-apps-create/power-bi-create-content.png)
 
     **Control** 
+
     Set limits and restrictions that your application users will have with the content of your application. You can use this control to protect intellectual property in your app.
 
     ![Control](media/service-template-apps-create/power-bi-create-control.png)
     >[!Note] Exporting to pbix is always blocked for users installing the app.
 
     **Parameters** 
+
     Use this category to manage parameter behavior when connecting to data sources. Learn more about [creating query parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
 
     ![Parameters](media/service-template-apps-create/power-bi-create-parameters.png)
