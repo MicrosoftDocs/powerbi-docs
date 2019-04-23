@@ -14,7 +14,7 @@ ms.author: maggies
 LocalizationGroup: Connect to services
 ---
 # Connect to Smartsheet with Power BI
-This article walks you through pulling your data from your Smartsheet account with a Power BI template app. Smartsheet offers an easy platform for collaboration and file sharing. The Smartsheet template app for Power BI provides a dashboard, reports and dataset that shows an overview of your Smartsheet account. You can also use [Power BI Desktop](desktop-connect-to-data.md) to connect directly to individual sheets in your account. 
+This article walks you through pulling your data from your Smartsheet account with a Power BI template app. Smartsheet offers an easy platform for collaboration and file sharing. The Smartsheet template app for Power BI provides a dashboard, reports, and dataset that show an overview of your Smartsheet account. You can also use [Power BI Desktop](desktop-connect-to-data.md) to connect directly to individual sheets in your account. 
 
 After you've installed the template app, you can change the dashboard and report. Then you can distribute it as an app to colleagues in your organization.
 
@@ -66,7 +66,7 @@ You've installed the Smartsheet template app. That means you've also created the
     Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
 
 ## What's included
-The Smartsheet template app for Power BI includes an overview of your Smartsheet account, such as the number of workspaces, reports and sheets you have, when they're modified etc. Admin users also see some information around the users in their system, such as top sheet creators.  
+The Smartsheet template app for Power BI includes an overview of your Smartsheet account, such as the number of workspaces, reports, and sheets you have, when they're modified etc. Admin users also see some information around the users in their system, such as top sheet creators.  
 
 To connect directly to individual sheets in your account, you can use the Smartsheet connector in the [Power BI Desktop](desktop-connect-to-data.md).  
 
