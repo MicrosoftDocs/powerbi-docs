@@ -1,10 +1,7 @@
 ---
 title: Visual Studio Code - Flow
 description: Walkthough of how to use Visual Studio code with the Power BI repo.
-<<<<<<< HEAD
 ms.service: contributor-guide
-=======
->>>>>>> 50b541afd8a6fd9fa1f9d5cfff28a3754d30d5dd
 ms.topic: article
 author: mgblythe
 ms.author: mblythe
