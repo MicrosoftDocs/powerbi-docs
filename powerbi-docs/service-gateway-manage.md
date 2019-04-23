@@ -35,26 +35,28 @@ Power BI supports many on-premises data sources, and each has its own requiremen
 
     ![Manage gateways](media/service-gateway-manage/manage-gateways.png)
 
-2. Either select a gateway > **Add data source**, or go to Gateways > **Add data source**.
+1. Either select a gateway > **Add data source**, or go to Gateways > **Add data source**.
 
     ![Add data source](media/service-gateway-manage/add-data-source.png)
 
-3. Select the **Data Source Type**.
+1. Select the **Data Source Type**.
 
     ![Select SQL Server](media/service-gateway-manage/select-sql-server.png)
 
 
-4. Enter information for the data source. For this example, it's **Server**, **Database**, and other information.  
+1. Enter information for the data source. For this example, it's **Server**, **Database**, and other information.  
 
     ![Data source settings](media/service-gateway-manage/data-source-settings.png)
 
-5. For SQL Server, you would choose an **Authentication Method** of **Windows** or **Basic** (SQL Authentication).  If you choose **Basic**, enter the credentials for your data source.
+1. For SQL Server, you would choose an **Authentication Method** of **Windows** or **Basic** (SQL Authentication).  If you choose **Basic**, enter the credentials for your data source.
 
-6. Under **Advanced settings**, optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)) for your data source (does not apply to [DirectQuery](desktop-directquery-about.md)).
+1. If this data source is currently unavailable or slow then select **Skip Test Connection**. Otherwise the data source creation might fail.
+
+1. Under **Advanced settings**, optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)) for your data source (does not apply to [DirectQuery](desktop-directquery-about.md)).
 
     ![Advanced settings](media/service-gateway-manage/advanced-settings.png)
 
-7. Select **Add**. You see *Connection Successful* if the process succeeds.
+1. Select **Add**. You see *Connection Successful* if the process succeeds.
 
     ![Connection successful](media/service-gateway-manage/connection-successful.png)
 
