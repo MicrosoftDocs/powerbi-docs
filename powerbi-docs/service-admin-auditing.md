@@ -46,7 +46,7 @@ The Power BI audit logs are available directly through the [Office 365 Security 
 
 1. Select **Audit logs**.
 
-1. Select **Go to Microsoft O365 Admin Center**.
+1. Select **Go to O365 Admin Center**.
 
    ![Screenshot of the Admin portal with the Audit logs option and the Go to Microsoft O365 Admin Center options called out.](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
@@ -58,7 +58,7 @@ Restrict results to only Power BI activities by following these steps. For a lis
 
 2. Select **Power BI activities**.
 
-   ![Audit log search](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
+   ![Screenshot of Audit log search with Power BI activities called out.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
 
 3. Select anywhere outside of the selection box to close it.
 
@@ -70,7 +70,7 @@ You can search the logs by date range using the **Start date** and **End date** 
 
 You'll receive an error when the selected date range is greater than 90 days. If you're using the maximum date range of 90 days, select the current time for **Start date**. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the date range can't start before the date that auditing was turned on.
 
-![Search by date](media/service-admin-auditing/search-audit-log-by-date.png)
+![Screenshot of Audit log search with Start Date and End Date options called out.](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ## Search the audit logs by users
 
@@ -101,7 +101,7 @@ You can view more details about an event by clicking the event record in the lis
 
 To display these details, select **More information**. All Power BI entries have a value of 20 for the RecordType property. For information about other properties, see [Detailed properties in the audit log](/office365/securitycompliance/detailed-properties-in-the-office-365-audit-log/).
 
-   ![Audit details](media/service-admin-auditing/audit-details.png)
+   ![Screenshot of the audit details dialog with the More information option called out.](media/service-admin-auditing/audit-details.png)
 
 ## Export search results
 
@@ -111,7 +111,7 @@ To export the Power BI audit log to a csv file, follow these steps.
 
 1. Select either **Save loaded results** or **Download all results**.
 
-    ![Export results](media/service-admin-auditing/export-auditing-results.png)
+    ![Screenshot of the Export results option.](media/service-admin-auditing/export-auditing-results.png)
 
 ## Use PowerShell to search audit logs
 
