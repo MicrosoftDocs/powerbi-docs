@@ -36,11 +36,11 @@ Connect to the [MailChimp template app](https://app.powerbi.com/getdata/services
    
     When prompted, enter your MailChimp credentials and follow the authentication process.
    
-    The first time you connect you will be prompted to allow Power BI read-only access to your account. Select **Allow** to begin the import process, which can take a few minutes depending on the volume of data in your account.
+    The first time you connect, Power BI prompts you to allow read-only access to your account. Select **Allow** to begin the import process. It can take a few minutes, depending on the volume of data in your account.
    
     ![Power BI Connector for MailChimp](media/service-connect-to-mailchimp/allow.png)
 
-5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. This is the default dashboard that Power BI created to display your data. You can modify this dashboard to display your data in any way you want.
+5. After Power BI imports the data you see a new dashboard, report, and dataset in the left navigation pane. This dashboard is the default that Power BI created to display your data. You can modify it to display your data in any way you want.
    
    ![Power BI MailChimp dashboard](media/service-connect-to-mailchimp/power-bi-mailchimp-dashboard.png)
 

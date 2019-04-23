@@ -49,27 +49,30 @@ Connect to the [Smartsheet template app](https://app.powerbi.com/groups/me/getda
    
    ![Smartsheet dashboard](media/service-connect-to-smartsheet/power-bi-smartsheet-dashboard.png)
 
-1. To view the contents of your new Smartsheet workspace, in the left navigation bar, select **Workspaces** >  the arrow next to the workspace name in the . You see the workspace contains a dashboard and a report.
-
-    ![App in the left navigation pane](media/service-tutorial-connect-to-smartsheet/power-bi-smartsheet-workspace.png)
-
-8. Select the new [GitHub dashboard](https://powerbi.microsoft.com/integrations/github). 
-   
-    ![GitHub dashboard in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
-
 ## Modify and distribute your app
 
-Because you've installed a template app, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
+You've installed the Smartsheet template app. That means you've also created the Smartsheet app workspace. In the workspace, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
 
-Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
+1. To view all the contents of your new Smartsheet workspace, in the left navigation bar, select **Workspaces** > **Smartsheet**. 
+
+    ![Smartsheet workspace in the left navigation pane](media/service-connect-to-smartsheet/power-bi-smartsheet-workspace.png)
+
+    This view is the content list for the workspace. 
+
+2. Select **Reports** and **Datasets** to see the other elements in the workspace. In the upper-right corner, you see **Update app**. When you're ready to distribute your app to your colleagues, that's where you'll start.
+
+    ![Smartsheet content list](media/service-connect-to-smartsheet/power-bi-smartsheet-workspace-content.png)
+
+    Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
 
 ## What's included
-The Smartsheet template app for Power BI includes an overview of your Smartsheet account, such as the number of workspaces, reports and sheets you have, when they're modified etc. Admin users will also see some information around the users in their system, such as top sheet creators.  
+The Smartsheet template app for Power BI includes an overview of your Smartsheet account, such as the number of workspaces, reports and sheets you have, when they're modified etc. Admin users also see some information around the users in their system, such as top sheet creators.  
 
 To connect directly to individual sheets in your account, you can use the Smartsheet connector in the [Power BI Desktop](desktop-connect-to-data.md).  
 
-## Next steps:
+## Next steps
 
-[What is Power BI?](power-bi-overview.md)
-
-[Get Data for Power BI](service-get-data.md)
+* [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
+* [Install and use apps in Power BI](consumer/end-user-apps.md)
+* [COnnect to Power BI apps for external services](service-connect-to-services.md)
+* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
