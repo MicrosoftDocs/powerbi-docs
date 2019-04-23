@@ -40,9 +40,25 @@ Connect to the [MailChimp template app](https://app.powerbi.com/getdata/services
    
     ![Power BI Connector for MailChimp](media/service-connect-to-mailchimp/allow.png)
 
-5. After Power BI imports the data you see a new dashboard, report, and dataset in the left navigation pane. This dashboard is the default that Power BI created to display your data. You can modify it to display your data in any way you want.
+5. After Power BI imports the data, the MailChimp dashboard opens.
    
-   ![Power BI MailChimp dashboard](media/service-connect-to-mailchimp/power-bi-mailchimp-dashboard.png)
+    ![Power BI MailChimp dashboard](media/service-connect-to-mailchimp/power-bi-mailchimp-dashboard.png)
+
+## Modify and distribute your app
+
+You've installed the MailChimp template app. That means you've also created the MailChimp app workspace. In the workspace, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
+
+1. To view all the contents of your new MailChimp workspace, in the left navigation bar, select **Workspaces** > **MailChimp**. 
+
+    ![MailChimp workspace in the left navigation pane](media/service-connect-to-mailchimp/power-bi-mailchimp-left-nav.png)
+
+    This view is the content list for the workspace. 
+
+2. Select **Reports** and **Datasets** to see the other elements in the workspace. In the upper-right corner, you see **Update app**. When you're ready to distribute your app to your colleagues, that's where you'll start.
+
+    ![MailChimp content list](media/service-connect-to-mailchimp/power-bi-mailchimp-content-list.png)
+
+    Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
 
 ## Modify and distribute your app
 
