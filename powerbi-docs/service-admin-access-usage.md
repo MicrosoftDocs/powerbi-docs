@@ -19,7 +19,7 @@ If you're a tenant admin, and want to see who has signed into Power BI, use the 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/1AVgh9w9VM8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> The Sign-ins report provides useful info, but it doesn't identify the type of license each user has. Use the Microsoft 365 admin center to view licenses.
+> The **Sign-ins** report provides useful info, but it doesn't identify the type of license each user has. Use the Microsoft 365 admin center to view licenses.
 
 ## Requirements
 
@@ -41,19 +41,19 @@ To view sign-in activity, follow these steps.
 
 1. Filter the application by either **Microsoft Power BI** or **Power BI Gateway**, and select **Apply**.
 
-    **Microsoft Power BI** filters to sign-in activity related to the service, whereas **Power BI Gateway** filters to sign-in activity specific to the On-premises data gateway.
+    **Microsoft Power BI** filters to sign-in activity related to the service, whereas **Power BI Gateway** filters to sign-in activity specific to the on-premises data gateway.
    
     ![Screenshot of the Sign-ins filter with the Applications field highlighted.](media/service-admin-access-usage/sign-in-filter.png)
 
 ## Export the data
 
-You can [download a sign-in report](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) in either of two formats: a csv file, or a JSON file.
+You can [download a sign-in report](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) in either of two formats: a CSV file, or a JSON file.
 
 ![Screenshot of the download button.](media/service-admin-access-usage/download-sign-in-data-csv.png)
 
 At the top of the **Sign-ins** report, select **Download** and then select one of the following options:
 
-* **CSV** to download a csv file for the currently filtered data.
+* **CSV** to download a CSV file for the currently filtered data.
 
 * **JSON** to download a JSON file for the currently filtered data.
 
