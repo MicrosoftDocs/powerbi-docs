@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 04/23/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -30,9 +30,9 @@ Your account needs to be marked as a **Global Admin**, within Office 365 or Azur
 
     ![Settings to admin portal](media/service-admin-portal/powerbi-admin-settings.png)
 
-There are seven tabs in the portal. The rest of this article provides information about each of these tabs.
+There are nine tabs in the portal. The rest of this article provides information about each of these tabs.
 
-![Admin portal navigation](media/service-admin-portal/powerbi-admin-landing-page.png)
+![Admin portal navigation](media/service-admin-portal/powerbi-admin-landing-page2.png)
 
 * [Usage metrics](#usage-metrics)
 * [Users](#users)
@@ -40,7 +40,9 @@ There are seven tabs in the portal. The rest of this article provides informatio
 * [Tenant settings](#tenant-settings)
 * [Capacity settings](#capacity-settings)
 * [Embed codes](#embed-codes)
-* [Organizational visuals](#organizational-visuals)
+* [Organization visuals](#organization-visuals)
+* [Dataflow storage (preview)](#dataflow-storage-(preview))
+* [Workspaces](#workspaces)
 
 ## Usage metrics
 
@@ -144,7 +146,7 @@ The admin portal also has another section of settings about the workspaces in yo
 
 Users in the organization can share dashboards with users outside the organization. [Learn more](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
 
-![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
+![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-03doc.png)
 
 The following image shows the message that appears when you share with an external user.
 
@@ -156,7 +158,7 @@ Users in the organization can publish reports to the web. [Learn more](service-p
 
 The following image shows the **File** menu for a report when the **Publish to web** setting is enabled.
 
-![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web2.png)
 
 Users see different options in the UI based on what the **Publish to web** setting is.
 
@@ -184,7 +186,7 @@ Users in the organization can export Power BI reports as PowerPoint files or PDF
 
 The following image shows the **File** menu for a report when the **Export reports as PowerPoint presentations or PDF documents** setting is enabled.
 
-![Export reports as PowerPoint presentations](media/service-admin-portal/powerbi-admin-powerpoint.png)
+![Export reports as PowerPoint presentations](media/service-admin-portal/powerbi-admin-powerpoint2.png)
 
 ### Print dashboards and reports
 
@@ -196,7 +198,7 @@ The following image shows the option to print a dashboard.
 
 The following image shows the **File** menu for a report when the **Print dashboards and reports** setting is enabled.
 
-![Print report](media/service-admin-portal/powerbi-admin-print-report.png)
+![Print report](media/service-admin-portal/powerbi-admin-print-report2.png)
 
 ### Allow external guest users to edit and manage content in the organization
 Azure B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
@@ -396,9 +398,9 @@ As an administrator, you can view the embed codes that are generated for your te
 
 ![Embed codes within the Power BI admin portal](media/service-admin-portal/embed-codes.png)
 
-## Organizational visuals
+## Organization visuals
 
-The **Organizational visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization.md)
+The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the organization's repository.
@@ -472,4 +474,4 @@ As an administrator, you can view the workspaces that exist in your tenant. You 
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  [Understanding the Power BI admin role](service-admin-role.md)  
 [Auditing Power BI in your organization](service-admin-auditing.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
