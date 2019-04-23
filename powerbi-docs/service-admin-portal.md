@@ -223,7 +223,7 @@ Users in the organization can create template content packs and apps that use da
 
 ### Push apps to end users
 
-Users can share apps directly with end users without requiring installation from AppSource. [Learn more](service-create-distribute-apps.md)
+Users can share apps directly with end users without requiring installation from [AppSource](https://appsource.microsoft.com). [Learn more](service-create-distribute-apps.md)
 
 ## Integration settings
 
@@ -367,13 +367,13 @@ Two settings control template apps.
 
 ### Create Template Apps (preview)
 
-Users in the organization can create template apps. Template app creators can then distribute them to clients outside your organization by way of AppSource or other distribution methods.
+Users in the organization can create template apps. Template app creators can then distribute them to clients outside your organization by way of [AppSource](https://appsource.microsoft.com) or other distribution methods.
 
 ![Power BI admin portal, Create template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
 
 ### Install template apps (preview)
 
-Users in the organization can download and install template apps from AppSource or another source.
+Users in the organization can download and install template apps from [AppSource](https://appsource.microsoft.com) or another source.
 
 > [!NOTE]
 > This setting determines which users can install template apps on their Power BI accounts.

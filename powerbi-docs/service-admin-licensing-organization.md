@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 04/23/2019
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -136,7 +136,7 @@ The AAD setting that controls sign up is **AllowAdHocSubscriptions**. In most te
 1. Once you are signed in, run the following command to see how your tenant is currently configured.
 
     ```powershell
-     Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
+     Get-MsolCompanyInformation
     ```
 1. Run the following command to enable ($true) or disable ($false) **AllowAdHocSubscriptions**.
 
