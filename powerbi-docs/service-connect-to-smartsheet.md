@@ -8,20 +8,20 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 04/23/2019
 ms.author: maggies
 
 LocalizationGroup: Connect to services
 ---
 # Connect to Smartsheet with Power BI
-This article walks you through pulling your data from your Smartsheet account with a Power BI template app. The template app generates a workspace with a dashboard, a set of reports, and a dataset to allow you to explore your Smartsheet data. 
+This article walks you through pulling your data from your Smartsheet account with a Power BI template app. Smartsheet offers an easy platform for collaboration and file sharing. The Smartsheet template app for Power BI provides a dashboard, reports and dataset that shows an overview of your Smartsheet account. You can also use [Power BI Desktop](desktop-connect-to-data.md) to connect directly to individual sheets in your account. 
 
-Smartsheet offers an easy platform for collaboration and file sharing. The Smartsheet template app for Power BI provides a dashboard, reports and dataset that shows an overview of your Smartsheet account. You can also use [Power BI Desktop](desktop-connect-to-data.md) to connect directly to individual sheets in your account. 
+After you've installed the template app, you can change the dashboard and report. Then you can distribute it as an app to colleagues in your organization.
 
 Connect to the [Smartsheet template app](https://app.powerbi.com/groups/me/getdata/services/smartsheet) for Power BI.
 
 >[!NOTE]
->Smartsheet admin account is preferred to connect and load the Power BI template app as it has additional access.
+>A Smartsheet admin account is preferred for connecting and loading the Power BI template app as it has additional access.
 
 ## How to connect
 
@@ -57,11 +57,11 @@ You've installed the Smartsheet template app. That means you've also created the
 
     ![Smartsheet workspace in the left navigation pane](media/service-connect-to-smartsheet/power-bi-smartsheet-workspace.png)
 
-    This view is the content list for the workspace. 
-
-2. Select **Reports** and **Datasets** to see the other elements in the workspace. In the upper-right corner, you see **Update app**. When you're ready to distribute your app to your colleagues, that's where you'll start.
+    This view is the content list for the workspace. In the upper-right corner, you see **Update app**. When you're ready to distribute your app to your colleagues, that's where you'll start. 
 
     ![Smartsheet content list](media/service-connect-to-smartsheet/power-bi-smartsheet-workspace-content.png)
+
+2. Select **Reports** and **Datasets** to see the other elements in the workspace.
 
     Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
 

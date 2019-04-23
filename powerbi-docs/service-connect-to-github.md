@@ -8,13 +8,15 @@ ms.reviewer: sarinas
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 04/23/2019
 ms.author: maggies
 
 LocalizationGroup: Connect to services
 ---
 # Connect to GitHub with Power BI
 This article walks you through pulling your data from your GitHub account with a Power BI template app. The template app generates a workspace with a dashboard, a set of reports, and a dataset to allow you to explore your GitHub data. The GitHub app for Power BI shows you insights into your GitHub repository, also known as repo, with data around contributions, issues, pull requests, and active users.
+
+After you've installed the template app, you can change the dashboard and report. Then you can distribute it as an app to colleagues in your organization.
 
 Connect to the [GitHub template app](https://app.powerbi.com/getdata/services/github) or read more about the [GitHub integration](https://powerbi.microsoft.com/integrations/github) with Power BI.
 
@@ -46,21 +48,30 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
    
    ![Power BI GitHub authorize](media/service-connect-to-github/github_authorize.png)
    
-    Power BI connects with GitHub and connects to your data.  The data is refreshed once a day. After Power BI imports the data, you see the contents of your new GitHub workspace.
-
-9. Select the arrow next to the workspace name in the left navigation bar. You see the workspace contains a dashboard and a report.
-
-    ![App in the left navigation pane](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
-
-8. Select the new [GitHub dashboard](https://powerbi.microsoft.com/integrations/github). 
-   
-    ![GitHub dashboard in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
+    Power BI connects to GitHub and your data.  The data is refreshed once a day. After Power BI imports the data, you see the contents of your new GitHub workspace.
 
 ## Modify and distribute your app
 
-Because you've installed a template app, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
+You've installed the GitHub template app. That means you've also created the GitHub app workspace. In the workspace, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
 
-Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
+1. Select the arrow next to the workspace name in the left navigation bar. You see the workspace contains a dashboard and a report.
+
+    ![App in the left navigation pane](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+
+8. Select the new [GitHub dashboard](https://powerbi.microsoft.com/integrations/github).    
+    ![GitHub dashboard in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
+
+3. To view all the contents of your new GitHub workspace, in the left navigation bar, select **Workspaces** > **GitHub**.
+ 
+   ![GitHub workspace in the left navigation pane](media/service-connect-to-github/power-bi-github-left-nav.png)
+
+    This view is the content list for the workspace. In the upper-right corner, you see **Update app**. When you're ready to distribute your app to your colleagues, that's where you'll start. 
+
+    ![GitHub content list](media/service-connect-to-github/power-bi-github-content-list.png)
+
+2. Select **Reports** and **Datasets** to see the other elements in the workspace.
+
+    Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
 
 ## What's included in the app
 The following data is available from GitHub in Power BI:     

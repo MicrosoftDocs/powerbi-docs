@@ -8,13 +8,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 04/23/2019
 ms.author: maggies
 
 LocalizationGroup: Connect to services
 ---
 # Connect to MailChimp with Power BI
 This article walks you through pulling your data from your MailChimp account with a Power BI template app. The template app generates a workspace with a dashboard, a set of reports, and a dataset to allow you to explore your MailChimp data. Pull in analytics to create [MailChimp dashboards](https://powerbi.microsoft.com/integrations/mailchimp) and quickly identify trends within your campaigns, reports, and individual subscribers. The data refreshes daily, ensuring the data you're monitoring is up to date.
+
+After you've installed the template app, you can change the dashboard and report. Then you can distribute it as an app to colleagues in your organization.
 
 Connect to the [MailChimp template app](https://app.powerbi.com/getdata/services/mailchimp) for Power BI.
 
@@ -52,19 +54,13 @@ You've installed the MailChimp template app. That means you've also created the 
 
     ![MailChimp workspace in the left navigation pane](media/service-connect-to-mailchimp/power-bi-mailchimp-left-nav.png)
 
-    This view is the content list for the workspace. 
-
-2. Select **Reports** and **Datasets** to see the other elements in the workspace. In the upper-right corner, you see **Update app**. When you're ready to distribute your app to your colleagues, that's where you'll start.
+    This view is the content list for the workspace. In the upper-right corner, you see **Update app**. When you're ready to distribute your app to your colleagues, that's where you'll start.
 
     ![MailChimp content list](media/service-connect-to-mailchimp/power-bi-mailchimp-content-list.png)
 
+2. Select **Reports** and **Datasets** to see the other elements in the workspace. 
+
     Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
-
-## Modify and distribute your app
-
-Because you've installed a template app, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
-
-Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
 
 ## Next steps
 
