@@ -1,10 +1,6 @@
 ---
 title: Git commands for creating a new article or updating an existing article
 description: Steps for working with the Power BI technical content GitHub repositories.
-metakeywords: ''
-services: ''
-solutions: ''
-documentationcenter: ''
 author: mgblythe
 ms.author: mblythe
 videoid: ''
@@ -13,8 +9,17 @@ manager: kfile
 ms.service: contributor-guide
 ms.devlang: ''
 ms.topic: article
-ms.tgt_pltfrm: ''
-ms.workload: ''
+ms.service: contributor-guide
+author: mgblythe
+ms.author: mblythe
+manager: kfile
+ms.reviewer: ""
+videoid: ""
+scriptid: ""
+ms.devlang: ""
+ms.tgt_pltfrm: ""
+ms.workload: ""
+ms.custom: ""
 ms.date: 11/08/2017
 ---
 
@@ -24,7 +29,7 @@ ms.date: 11/08/2017
 
 Follow the steps in this article to create a local working branch on your computer so that you can create a new article for the technical documentation section of powerbi.microsoft.com or update an existing article.
 
-![](./media/git-commands-for-master/githubcommands1.png)
+![Github commands](./media/git-commands-for-master/githubcommands1.png)
 
 1. Start Git Bash (or the command-line tool you use for Git).
 
@@ -61,12 +66,15 @@ Follow the steps in this article to create a local working branch on your comput
 
         git add <file path>
         git commit –m "<comment>"
+
 9. Update your local working branch with changes from upstream:
 
         git pull upstream master
+
 10. Push the changes to your fork on GitHub:
 
         git push origin <working branch>
+
 11. When you are ready to submit your content to the upstream master branch for staging, validation, and/or publishing, in the GitHub UI, create a pull request from your fork to the master branch.
 
 12. The pull request acceptor reviews your pull request, provides feedback, and/or accepts your pull request. 

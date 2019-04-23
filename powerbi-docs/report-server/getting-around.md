@@ -1,7 +1,7 @@
 ---
 title: Manage content in the Power BI Report Server web portal
 description: Read about managing content in the Power BI Report Server web portal.
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/24/2018
-ms.author: maghan
+ms.author: maggies
 
 ---
 # Manage content in the web portal 
