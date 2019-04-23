@@ -1,7 +1,7 @@
 ---
 title: Admin overview, Power BI Report Server
 description: This article is the administration overview of Power BI Report Server, an on-premises location for storing and managing your Power BI, mobile, and paginated reports.
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/24/2018
-ms.author: maghan
+ms.author: maggies
 
 ---
 # Admin overview, Power BI Report Server

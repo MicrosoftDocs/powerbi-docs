@@ -1,7 +1,7 @@
 ---
 title: Power BI report data sources in Power BI Report Server
 description: Power BI reports can connect to a number of data sources. Depending on how data is used, different data sources are available.
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
-ms.author: maghan
+ms.author: maggies
 
 ---
 # Power BI report data sources in Power BI Report Server

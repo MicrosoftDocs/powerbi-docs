@@ -1,8 +1,8 @@
 ---
 title: Row-level security (RLS) in Power BI Report Server
 description: Learn about using row-level security (RLS) in Power BI Report Server. 
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
