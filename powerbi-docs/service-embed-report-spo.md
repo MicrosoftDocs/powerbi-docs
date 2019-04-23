@@ -1,8 +1,8 @@
 ---
 title: Embed with report web part in SharePoint Online
 description: With Power BI's new report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
@@ -23,7 +23,7 @@ When using the new **Embed in SharePoint Online** option, the embedded reports a
 
 There are a few requirements in order for **Embed in SharePoint Online** reports to work.
 
-* You need a Power BI Pro license or a [Power BI Premium capacity (EM or P SKU)](service-premium.md#premium-capacity-nodes) with a Power BI license.
+* You need a Power BI Pro license or a [Power BI Premium capacity (EM or P SKU)](service-premium-what-is.md) with a Power BI license.
 * The Power BI web part for SharePoint Online requires [Modern Pages](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 
 ## Embed your report
@@ -172,7 +172,7 @@ Users viewing a report in SharePoint need either a **Power BI Pro license** or t
 * [Allow or prevent creation of modern site pages by end users](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md)  
 * [Share a dashboard with colleagues and others](service-share-dashboards.md)  
-* [What is Power BI Premium?](service-premium.md)
+* [What is Power BI Premium?](service-premium-what-is.md)
 * [Embed report in a secure portal or website](service-embed-secure.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

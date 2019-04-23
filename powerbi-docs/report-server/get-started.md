@@ -2,8 +2,8 @@
 title: What is Power BI Report Server?
 description: Get an overview of Power BI Report Server to understand how it fits in with SQL Server Reporting Services (SSRS) and the rest of Power BI.
 keywords: 
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 ms.date: 11/20/2018
 ms.topic: overview
 ms.service: powerbi
@@ -22,7 +22,7 @@ Power BI Report Server is an on-premises report server with a web portal in whic
 Power BI Report Server is similar to both SQL Server Reporting Services and the Power BI online service, but in different ways. Like the Power BI service, Power BI Report Server hosts Power BI reports (.PBIX) and Excel files. Like Reporting Services, Power BI Report Server is on premises, and hosts paginated reports (.RDL). Power BI Report Server is a superset of Reporting Services: everything you can do in Reporting Services, you can do with Power BI Report Server, along with support for Power BI reports. See [Comparing Power BI Report Server and the Power BI service](compare-report-server-service.md) for details.
 
 ## Licensing Power BI Report Server
-Power BI Report Server is available through two different licenses: [Power BI Premium](../service-premium.md) and [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) with Software Assurance. With a Power BI Premium license, you can create a hybrid deployment mixing cloud and on-premises.  
+Power BI Report Server is available through two different licenses: [Power BI Premium](../service-premium-what-is.md) and [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) with Software Assurance. With a Power BI Premium license, you can create a hybrid deployment mixing cloud and on-premises.  
 
 > [!NOTE]
 > For Power BI Premium, Power BI Report Server is only included with P SKUs. It is not included with EM SKUs.

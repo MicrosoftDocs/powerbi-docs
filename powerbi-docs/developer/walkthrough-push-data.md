@@ -1,8 +1,8 @@
 ---
 title: Push data into a dataset
 description: Push data into a Power BI dataset
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: madia
 ms.service: powerbi

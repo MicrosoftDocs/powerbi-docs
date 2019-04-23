@@ -25,7 +25,7 @@ Query workloads are optimized for and limited by resources determined by your Pr
 
 |                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| AI | 20% default; min TBD| 20% default; min TBD | 20% default; min TBD | 20% default; min TBD | 20% default; min TBD |
+| AI | N/A | N/A | 20% default; 20% minimum | 20% default; 10% minimum | 20% default; 5% minimum |
 | Dataflows | N/A |20% default; 12% minimum  | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum  |
 | Paginated reports | N/A |N/A | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
 | | | | | | |
@@ -34,7 +34,7 @@ Query workloads are optimized for and limited by resources determined by your Pr
 
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| AI (Cognitive Services) | N/A                      | 20% default; min TBD                      | 20% default; min TBD                     | 20% default; min TBD | 20% default; min TBD | 20% default; min TBD |
+| AI | N/A                      | 20% default; 100% minimum                     | 20% default; 50% minimum                     | 20% default; 20% minimum | 20% default; 10% minimum | 20% default; 5% minimum |
 | Dataflows         | 40% default; 40% minimum | 24% default; 24% minimum | 20% default; 12% minimum | 20% default; 5% minimum  | 20% default; 3% minimum | 20% default; 2% minimum   |
 | Paginated reports | N/A                      | N/A                      | N/A                     | 20% default; 10% minimum | 20% default; 5% minimum | 20% default; 2.5% minimum |
 | | | | | | |
@@ -98,6 +98,7 @@ The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capaci
 
 ## Next steps
 
+[Optimizing Power BI Premium capacities](service-premium-capacity-optimize.md)     
 [Self-service data prep in Power BI with Dataflows](service-dataflows-overview.md)   
 [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
 

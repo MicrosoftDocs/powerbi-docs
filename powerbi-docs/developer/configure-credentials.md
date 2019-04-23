@@ -1,8 +1,8 @@
 ---
 title: Configure credentials programmatically for Power BI
 description: How to configure credentials programmatically for Power BI for automation
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -49,7 +49,7 @@ Follow these steps to configure credentials programmatically for Power BI.
 
 ### Expired on-premises data source credentials flow
 
-1. [Follow steps 1 and 2 from the previous scenario](#configure-credential-flow-for-data-sources).
+1. [Follow steps 1 and 2 from the previous scenario](#configure-a-credential-flow-for-data-sources).
 
 2. Call [Get Gateway](https://docs.microsoft.com/rest/api/power-bi/gateways/getgateways) to retrieve the gateway public key.
 

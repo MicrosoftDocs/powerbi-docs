@@ -799,6 +799,21 @@
             "source_path": "powerbi-docs/developer/walkthrough-push-data-register-app-with-azure-ad.md",
             "redirect_url": "/power-bi/developer/register-app",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-premium.md",
+            "redirect_url": "/power-bi/service-premium-what-is",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-premium-large-datasets.md",
+            "redirect_url": "/power-bi/service-premium-what-is",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-premium-understand-how-it-works.md",
+            "redirect_url": "/power-bi/service-premium-capacity-optimize",
+            "redirect_document_id": false
         }
     ]
 }
