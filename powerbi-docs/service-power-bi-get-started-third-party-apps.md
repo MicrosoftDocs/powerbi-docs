@@ -1,6 +1,6 @@
 ---
-title: Power BI get started with third party apps
-description: Power BI get started with third party apps
+title: Power BI get started with third-party apps
+description: Power BI get started with third-party apps
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
@@ -13,9 +13,9 @@ ms.date: 08/10/2017
 LocalizationGroup: Get started
 ---
 
-# Get started with third party apps
+# Get started with third-party apps
 
-With Power BI, you can use an app built by a company or individual other than Microsoft. For example, you might use a third party app which integrates Power BI tiles into a custom built web application. When you use a third party app, you will be asked to grant that application certain permissions to your Power BI account and resources. It is important that you only grant permissions to applications that you know and trust. Permissions to an application can be revoked at any time. See [Revoke third party app permissions](#revoke).
+With Power BI, you can use an app built by a company or individual other than Microsoft. For example, you might use a third-party app which integrates Power BI tiles into a custom-built web application. When you use a third-party app, you will be asked to grant that application certain permissions to your Power BI account and resources. It is important that you only grant permissions to applications that you know and trust. Permissions to an application can be revoked at any time. See [Revoke third party app permissions](#revoke).
 
 Here are the types of access an application can request.
 
@@ -42,15 +42,15 @@ Here are the types of access an application can request.
 
 <a name="revoke"/>
 
-## Revoke third party app permissions
+## Revoke third-party app permissions
 
-You revoke permissions for a third party app by going to the Office 365 My Apps site.
+You revoke permissions for a third-party app by going to the Office 365 My Apps site.
 
-On the **Office 365 My apps** site, here's how to revoke third party permissions:
+On the **Office 365 My apps** site, here's how to revoke third-party permissions:
 
 1. Go to [Office 365 My Apps site](https://portal.office.com/myapps).
 
-2. On the **My apps** page, locate the third party app.
+2. On the **My apps** page, locate the third-party app.
 
 3. Hover over the app tile, click the **(...)** button, and click **Remove**.
 

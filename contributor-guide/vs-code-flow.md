@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Code - Flow
-description: Walkthough of how to use Visual Studio code with the Power BI repo.
+description: Walkthrough of how to use Visual Studio code with the Power BI repo.
 ms.service: contributor-guide
 ms.topic: article
 author: mgblythe
@@ -33,7 +33,7 @@ To pull the updates from MicrosoftDocs/powerbi-docs-pr, run the following comman
 
 ![git pull](media/vs-code-flow/gitpull.png)
 
-You will see **MicrosoftDocs** listed in the command above.  In your case, it may be **upstream**.  You will get an error indicating it doesn't exist.  Also, it is *case sensitive*!  You can verify what yours is by doing a *git remote show*.
+You will see **MicrosoftDocs** listed in the command above.  In your case, it may be **upstream**.  You will get an error indicating it doesn't exist.  Also, it is *case-sensitive*!  You can verify what yours is by doing a *git remote show*.
 
 It is a good idea to run a status command to make sure we are in sync.
 
@@ -92,7 +92,7 @@ You can select the **+** on the **Changes** bar by hovering over it.  Or, you ca
 
 Once you have your files staged, you can add a comment in the message box, and then select the check icon.  The checkmark icon will actually do the commit action for Git.
 
-![VS Code commit](media/vs-code-flow/vs-code-commit.png)
+![VS Code commits](media/vs-code-flow/vs-code-commit.png)
 
 ## Pushing the files back to GitHub
 
@@ -104,4 +104,4 @@ You can keep going back into edit files, commit, and push as you work.
 
 ## Pull Request
 
-Once you are don with all of your changes, you will need to issue a **Pull Request** which is done on the GitHub site itself.
+Once you are done with all of your changes, you will need to issue a **Pull Request** which is done on the GitHub site itself.
