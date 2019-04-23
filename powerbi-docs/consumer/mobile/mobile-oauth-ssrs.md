@@ -1,8 +1,8 @@
 ---
 title: Using OAuth to connect to Power BI Report Server and SSRS
 description: Learn how to configure your environment to support OAuth authentication with the Power BI mobile app to connect to SQL Server Reporting Services 2016 or later.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
