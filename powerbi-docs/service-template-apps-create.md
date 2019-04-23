@@ -83,7 +83,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     **Branding**
 
-    ![Branding](media/service-template-apps-create/power-bi-create-TempalteApp-Branding.png)
+    ![Branding](media/service-template-apps-create/power-bi-create-branding.png)
     - App name 
     - Description
     - Support site (link is presented under app info after redistributing template app as org app)
@@ -95,18 +95,18 @@ Now that you have content in your workspace, you're ready to package it in a tem
     
     - App landing page: Define a report or dashboard to be the landing page of your app (Use a landing page that will give the right impression):
 
-    ![Content](media/service-template-apps-create/power-bi-create-TempalteApp-Content.png)
+    ![Content](media/service-template-apps-create/power-bi-create-content.png)
 
     **Control** 
     - Control several limitations and restrictions that your application users will have with the content of your application. You can use this control to protect certain intellectual property your app might contain.
 
-    ![Control](media/service-template-apps-create/power-bi-create-TempalteApp-control.png)
-    >[!Note] Exporting to pbix is disabled for Template apps installers by default.
+    ![Control](media/service-template-apps-create/power-bi-create-control.png)
+    >[!Note] Exporting to pbix is always blocked for users installing the app.
 
     **Parameters** 
     - Use this category to manage parameters behavior on connecting to datasources (Learn how to create query parameters [here](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)):
 
-    ![Parameters](media/service-template-apps-create/power-bi-create-TempalteApp-parameters.png)
+    ![Parameters](media/service-template-apps-create/power-bi-create-parameters.png)
     - Value: default parameter value.
     - Required: use this to require installed to input a user-specific parameter.
     - Lock: Locking prevents installer from updating parameter.
