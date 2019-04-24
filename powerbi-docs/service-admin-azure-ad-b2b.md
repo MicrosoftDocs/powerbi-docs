@@ -4,13 +4,11 @@ description: Power BI integrates with Azure Active Directory Business-to-busines
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 04/25/2019
 ms.author: mblythe
-
 LocalizationGroup: Administration
 ---
 
@@ -24,19 +22,19 @@ Additionally, you can allow guest users outside your organization to edit and ma
 
 Make sure the [Share content with external users](service-admin-portal.md#export-and-sharing-settings) feature is enabled in the Power BI admin portal before inviting guest users.
 
-Additionally, the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#export-and-sharing-settings) feature lets you select which guest user can see and create content in workspaces, including browsing your organization's Power BI.
+You can also use the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#export-and-sharing-settings) feature. It lets you select which guest user can see and create content in workspaces, including browsing your organization's Power BI.
 
 ## Who can you invite?
 
-You can invite guest users with any email address, including personal accounts such as gmail.com, outlook.com, and hotmail.com. In Azure AD B2B, these addresses are called *social identities*.
+You can invite guest users with any email address, including personal accounts like gmail.com, outlook.com, and hotmail.com. In Azure AD B2B, these addresses are called *social identities*.
 
 ## Invite guest users
 
-Invitations are required only for the first time an external guest user is invited to your organization. There are two ways to invite users: planned invites and ad hoc invites.
+Invitations are required only for the first time an external guest user is invited to your organization. There are two ways to invite users: planned invites and unplanned invites.
 
 ### Planned invites
 
-Use a planned invite if you know which users to invite. You can send the invite using the Azure portal or PowerShell. You must be a tenant admin to invite people.
+Use a planned invite if you know which users to invite. You can send the invite using the Azure portal or PowerShell. You must be a tenant admin to unplanned people.
 
 Follow these steps to send an invite in the Azure portal.
 
@@ -58,9 +56,9 @@ The guest user needs to select **Get Started** in the email invitation they rece
 
 ![Guest user email invitation](media/service-admin-azure-ad-b2b/guest-user-invite-email.png)
 
-### Ad-hoc invites
+### Unplanned invites
 
-To perform an invite at anytime, add the external user to your dashboard or report through the share UI, or your app through the access page. Here is an example of what to do when inviting an external user to use an app.
+To invite an external user at any time, add them to your dashboard or report through the share UI, or your app through the access page. Here is an example of what to do when inviting an external user to use an app.
 
 ![External user added to App access list](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
 
@@ -68,23 +66,23 @@ The guest user will receive an email indicating that the app has been shared wit
 
 ![Email for app shared with guest user](media/service-admin-azure-ad-b2b/guest-user-invite-email2.png)
 
-The guest user must sign in with their organization email address. They will be prompted to accept the invitation after signing in. After sign in, the guest user is redirected to the app content. To return to the app, they can bookmark the link or save the email.
+The guest user must sign in with their organization email address. They'll be prompted to accept the invitation after signing in. After sign in, the guest user is redirected to the app content. To return to the app, they can bookmark the link or save the email.
 
 ## Licensing
 
-The guest user must have the proper licensing in place to view the content that was shared. There are three options to accomplish this: use Power BI Premium; assign a Power BI Pro license; or use the guest's Power BI Pro license.
+The guest user must have the proper licensing in place to view the content that was shared. There are three ways to make sure the user has a proper license: use Power BI Premium, assign a Power BI Pro license, or use the guest's Power BI Pro license.
 
 When using the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#export-and-sharing-settings) feature, guest users contributing content to workspaces or sharing content with others require a Power BI Pro license.
 
 ### Use Power BI Premium
 
-Assigning the app workspace to [Power BI Premium capacity](service-premium-what-is.md) enables the guest user to use the app without requiring a Power BI Pro license. Power BI Premium also enables apps to take advantage of other capabilities like increased refresh rates, dedicated capacity, and large model sizes.
+Assigning the app workspace to [Power BI Premium capacity](service-premium-what-is.md) lets the guest user to use the app without requiring a Power BI Pro license. Power BI Premium also lets apps to take advantage of other capabilities like increased refresh rates, dedicated capacity, and large model sizes.
 
 ![Use Power BI Premium](media/service-admin-azure-ad-b2b/license-approach1.png)
 
 ### Assign a Power BI Pro license to guest user
 
-Assigning a Power BI Pro license to the guest user, within your tenant, allows that guest user to view content in the tenant.
+Assigning a Power BI Pro license to the guest user, within your tenant, lets that guest user to view content in the tenant.
 
 ![Assign Pro license from your tenant](media/service-admin-azure-ad-b2b/license-approach2.png)
 
@@ -114,7 +112,7 @@ To help these users login to Power BI, provide them with the Tenant URL. To find
     * Direct publishing from Power BI desktop to the Power BI service
     * Guest users cannot use Power BI desktop to connect to service datasets in the Power BI service
     * Classic workspaces tied to Office 365 Groups: Guest user cannot create or be Admins of these workspaces. They can be members.
-    * Sending ad-hoc invites is not supported for workspace access lists
+    * Sending unplanned invites is not supported for workspace access lists
     * Power BI Publisher for Excel is not supported for guest users
     * Guest users cannot install a Power BI Gateway and connect it to your organization
     * Guest users cannot install apps publish to the entire organization
