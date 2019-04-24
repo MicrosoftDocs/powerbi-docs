@@ -16,7 +16,7 @@ LocalizationGroup: Troubleshooting
 ---
 # Error: We couldn't find any data in your Excel workbook
 
->[!NOTE]
+>[!NOTE]  
 >This article applies to Excel 2007 and later.
 
 When you import an Excel workbook into Power BI, you may see the following error:
