@@ -31,7 +31,7 @@ https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
 ```
 
 > [!IMPORTANT]
-If your content is hosted in special datacenter like Goverment, China, etc. The link should start with the right Power BI address, like ```html app.powerbigov.us``` or  ```html app.powerbi.cn ```   
+> If your content is hosted in special datacenter like Goverment, China, etc. The link should start with the right Power BI address, like ```html app.powerbigov.us``` or  ```html app.powerbi.cn ```   
 >
 
 The **QUERY PARAMS** are:
