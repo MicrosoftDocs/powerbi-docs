@@ -27,22 +27,22 @@ This link format, will make sure that the device is using the app to open the li
 
 The link should start with the following  
 ```html
-https://app.powerbi.com/Redirect?[QUERYPARAMS]
+https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
 ```
 
 > [!IMPORTANT]
-> If your content is hosted in special datacenter like Goverment, China, etc. The link should start with the right Power BI address, like ```html app.powerbigov.us``` or  ```html app.powerbi.cn ```   
+If your content is hosted in special datacenter like Goverment, China, etc. The link should start with the right Power BI address, like ```html app.powerbigov.us``` or  ```html app.powerbi.cn ```   
 >
 
 The **QUERY PARAMS** are:
-* action (mandatory) = OpenApp / OpenDashboard / OpenTile / OpenReport
-* appId = if you want to open a report or dashboard that are part of an app 
-* groupObjectId = if you want to open a report or dashboard that are part of workspace (but not my workspace)
-* dashboardObjectId = dashboard object ID (if action is OpenDashboard or OpenTile)
-* reportObjectId = report object ID (if action is OpenReport)
-* tileObjectId = tile object ID (if action is OpenTile)
-* reportPage = if you want to open specific report section (if action is OpenReport)
-* ctid = item organization ID (relevant for B2B scenario. This can be omitted if the item belongs to the user's organization).
+* **action** (mandatory) = OpenApp / OpenDashboard / OpenTile / OpenReport
+* **appId** = if you want to open a report or dashboard that are part of an app 
+* **groupObjectId** = if you want to open a report or dashboard that are part of workspace (but not my workspace)
+* **dashboardObjectId** = dashboard object ID (if action is OpenDashboard or OpenTile)
+* **reportObjectId** = report object ID (if action is OpenReport)
+* **tileObjectId** = tile object ID (if action is OpenTile)
+* **reportPage** = if you want to open specific report section (if action is OpenReport)
+* **ctid** = item organization ID (relevant for B2B scenario. This can be omitted if the item belongs to the user's organization).
 
 **Examples:**
 
@@ -63,9 +63,13 @@ https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=3e19da2d-95ab-
 
 ### How to get the right link format
 
+#### Links of apps and items in app
+
 For **apps and reports and dashboard that are part of an app**, the easiest way to get the link is to go to the app workspace and choose "Update app". This will open the "Publish app" experience, and in the Access tab, you will find a **Links** section. Expanding that section and you will see list of the app and all its content links that can be used to access them directly.
 
 ![Power BI publish app links ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
+
+#### Links of items not in app 
 
 For reports and dashboards that are not part of an app, you need to extract the IDs from the item URL.
 
@@ -82,6 +86,8 @@ https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSecti
 The above URL contains also specific report page **"ReportSection3"**.
 
 ## Use links inside Power BI
+
+Links inside Power BI are working in the mobile apps exactly as in Power BI Service.
 
 If you want to add link to your report that points to another Power BI item, you can just copy that item URL from the browser address bar. Read more about [how to add a hyperlink to a text box in a report](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
 
