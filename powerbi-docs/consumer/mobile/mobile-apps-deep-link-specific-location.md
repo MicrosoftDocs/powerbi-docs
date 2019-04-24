@@ -13,12 +13,12 @@ ms.author: mshenhav
 
 ---
 # Create a link to a specific location in the Power BI mobile apps
-Use can use links to directly access specific items in Power BI: Report, Dashboard and Tile.
+Use can use links to directly access specific items in Power BI: Report, Dashboard, and Tile.
 
 There are mainly two scenarios for using links in Power BI Mobile: 
 
-* To open Power BI from **outside of the app**, and land on specific content (report/dashboard/app). This is usualy an integration scenario, when you want to open Power BI Mobile from other app. 
-* To **navigate** inside Power BI. This is usualy when you want to create a custom navigation in Power BI.
+* To open Power BI from **outside of the app**, and land on specific content (report/dashboard/app). This is usually an integration scenario, when you want to open Power BI Mobile from other app. 
+* To **navigate** inside Power BI. This is usually when you want to create a custom navigation in Power BI.
 
 
 ## Use links from outside of Power BI
@@ -38,11 +38,11 @@ The **QUERY PARAMS** are:
 * action (mandatory) = OpenApp / OpenDashboard / OpenTile / OpenReport
 * appId = if you want to open a report or dashboard that are part of an app 
 * groupObjectId = if you want to open a report or dashboard that are part of workspace (but not my workspace)
-* dashboardObjectId = dashboard object id (if action is OpenDashboard or OpenTile)
-* reportObjectId = report object id (if action is OpenReport)
-* tileObjectId = tile object id (if action is OpenTile)
+* dashboardObjectId = dashboard object ID (if action is OpenDashboard or OpenTile)
+* reportObjectId = report object ID (if action is OpenReport)
+* tileObjectId = tile object ID (if action is OpenTile)
 * reportPage = if you want to open specific report section (if action is OpenReport)
-* ctid = item organization id (relevant for B2B scenario. This can omitted if the item belongs to the user's organization).
+* ctid = item organization ID (relevant for B2B scenario. This can be omitted if the item belongs to the user's organization).
 
 **Examples:**
 
@@ -63,19 +63,19 @@ https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=3e19da2d-95ab-
 
 ### How to get the right link format
 
-For **apps and reports and dashboard that are part of an app**, the easiest way to get the links is to go to the app workspace and choose "Update app". This will open the publish app experience, and in the Access tab, you will find a **Links** section. Expanding that section and you will see list of the app and all its content links that can be used to access them directly.
+For **apps and reports and dashboard that are part of an app**, the easiest way to get the link is to go to the app workspace and choose "Update app". This will open the "Publish app" experience, and in the Access tab, you will find a **Links** section. Expanding that section and you will see list of the app and all its content links that can be used to access them directly.
 
 ![Power BI publish app links ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
-For reports and dashboards that are not part of an app, you will to extract the ids from the item URL.
+For reports and dashboards that are not part of an app, you need to extract the IDs from the item URL.
 
-For example, to find the 36-character **dashboard** object id, navigate to the specific dashboard in the Power BI service 
+For example, to find the 36-character **dashboard** object ID, navigate to the specific dashboard in the Power BI service 
 
 ```html
 https://app.powerbi.com/groups/me/dashboards/**dashboard guid comes here**?ctid=**organization id comes here**`
 ```
 
-To find  the 36-character **report** object id, navigate to the specific report in the Power BI service 
+To find  the 36-character **report** object ID, navigate to the specific report in the Power BI service 
 ```html
 https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**`
 ```
