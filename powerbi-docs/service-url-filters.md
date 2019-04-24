@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/23/2019
+ms.date: 04/24/2019
 LocalizationGroup: Reports
 ---
 
@@ -38,11 +38,11 @@ URL?filter=***Table***/***Field*** eq '***value***'
 
 ### Reports in apps
 
-If you want to add a URL filter to a report in an app, the formatting is a little different. Links to reports in an app have a query parameter (ctid) that gets added to the URL. Query parameters need to be separated by an ampersand (&). So you need to append the query with “&filter=” (after the ctid parameter) instead of “?filter=”. 
+If you want to add a URL filter to a report in an app, the formatting is a little different. Links to reports in an app have a query parameter (ctid) that gets added to the URL. Query parameters need to be separated by an ampersand (&). So you need to append the query with “&filter=” instead of “?filter=”, and move the ctid parameter to the end of the URL. 
 
 Like this example:
 
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?ctid=*ctid*&filter=*Table*/*Field* eq '*value*'
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?&filter=*Table*/*Field* eq '*value*'ctid=*ctid*
 
 ### Field types
 
