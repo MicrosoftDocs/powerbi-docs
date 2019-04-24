@@ -53,12 +53,12 @@ https://app.powerbi.com/Redirect?action=OpenApp&appId=appidguid&ctid=organizatio
 
 * Open dashboard that is part of an app 
 ```html
-https://app.powerbi.com/Redirect?action=OpenDashboard&appId=appidguis&dashboardObjectId=dashboardidguid&ctid=organizationid
+https://app.powerbi.com/Redirect?action=OpenDashboard&appId=**appidguid**&dashboardObjectId=**dashboardidguid**&ctid=**organizationid**
 ```
 
 * Open report that is part of a workspace
 ```html
-https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=3e19da2d-95ab-43ca-9db2-dc1d6d1c6ef6&groupObjectId=38ccb253-e927-49b3-988b-7fd0ed0ff0b1&reportPage=ReportSection
+https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=**reportidguid**&groupObjectId=**groupidguid**&reportPage=**ReportSectionName**
 ```
 
 ### How to get the right link format
