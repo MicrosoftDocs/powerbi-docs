@@ -106,6 +106,10 @@ Alternatively, you can share a report directly with users by embedding the repor
 
 10. Now the end user can go to the team site in SharePoint Online and view the reports on the page.
 
+When you use a Power BI Premium capacity workspace to share an app, there is something you need to keep in mind. When the "install app automatically" option is checked, a user is given a link to the Power BI app. Then when a user logs into Power BI, they can automatically view the app without any issues. This scenario is possible because when using a Power BI Premium capacity workspace a user does not need to have a Power BI license (pro or non-pro),  because when a user selects the link given to the Power BI app the user automatically is assigned a Power BI license so that they can view the app.
+
+However, suppose the user is trying to view the app, which is embedded in SharePoint. They aren't automatically assigned a Power BI license. So they get a "this content isn't unavailable" error. That is until an administrator manually assigns them a Power BI license. Then after the admin assigns the license the user can view the app in Sharepoint.
+
 ## Multi-factor authentication
 
 If your Power BI environment requires you to sign in using multi-factor authentication, you may be asked to sign in with a security device to verify your identity. This occurs if you did not sign in to SharePoint Online using multi-factor authentication but your Power BI environment requires an account validated by a security device.
