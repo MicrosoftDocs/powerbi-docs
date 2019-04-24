@@ -108,7 +108,7 @@ Alternatively, you can share a report directly with users by embedding the repor
 
 When you use a Power BI Premium capacity workspace to share an app, there is something you need to keep in mind. When the "install app automatically" option is checked, a user is given a link to the Power BI app. Then when a user logs into Power BI, they can automatically view the app without any issues. This scenario is possible because when using a Power BI Premium capacity workspace a user does not need to have a Power BI license.
 
-However, suppose the user is trying to view the app that is embedded in SharePoint. The user might get a "this content isn't unavailable" error. in this case, the admin needs to assign the user a Power BI license. Then after the admin assigns the license, the user can view the app in Sharepoint.
+However, suppose the user is trying to view the app that is embedded in SharePoint. The user might get a "this content isn't unavailable" error. In this case, the admin needs to assign the user a Power BI license. Then after the admin assigns the license, the user can view the app in Sharepoint.
 
 ## Multi-factor authentication
 
