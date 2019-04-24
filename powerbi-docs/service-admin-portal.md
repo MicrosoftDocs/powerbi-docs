@@ -41,7 +41,7 @@ There are nine tabs in the portal. The rest of this article provides information
 * [Capacity settings](#capacity-settings)
 * [Embed codes](#embed-codes)
 * [Organization visuals](#organization-visuals)
-* [Dataflow storage (preview)](#dataflow-storage-(preview))
+* [Dataflow storage (preview)](#dataflowStorage)
 * [Workspaces](#workspaces)
 
 ## Usage metrics
@@ -146,7 +146,7 @@ The admin portal also has another section of settings about the workspaces in yo
 
 Users in the organization can share dashboards with users outside the organization. [Learn more](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
 
-![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-03doc.png)
+![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-03.png)
 
 The following image shows the message that appears when you share with an external user.
 
@@ -398,7 +398,7 @@ As an administrator, you can view the embed codes that are generated for your te
 
 ![Embed codes within the Power BI admin portal](media/service-admin-portal/embed-codes.png)
 
-## Organization visuals
+## <a name="organizational-visuals">Organization visuals</a>
 
 The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization.md)
 
@@ -458,7 +458,7 @@ Make sure the Visual ID remains unchanged. The new file replaces the previous fi
 
 For more information, visit [Frequently asked questions about organizational custom visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
 
-## Dataflow storage (preview)
+## <a name="dataflowStorage">Dataflow storage (preview)</a>
 
 By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md).
 
