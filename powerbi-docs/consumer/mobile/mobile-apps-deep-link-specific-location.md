@@ -31,7 +31,7 @@ https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
 ```
 
 > [!IMPORTANT]
-> If your content is hosted in special datacenter like Goverment, China, etc. The link should start with the right Power BI address, like ```html app.powerbigov.us``` or  ```html app.powerbi.cn ```   
+> If your content is hosted in special datacenter like Goverment, China, etc. The link should start with the right Power BI address, like ``` app.powerbigov.us``` or  ``` app.powerbi.cn ```   
 >
 
 
@@ -80,11 +80,17 @@ For example, to find the 36-character **dashboard** object ID, navigate to the s
 https://app.powerbi.com/groups/me/dashboards/**dashboard guid comes here**?ctid=**organization id comes here**`
 ```
 
-To find  the 36-character **report** object ID, navigate to the specific report in the Power BI service 
+To find  the 36-character **report** object ID, navigate to the specific report in the Power BI service.
+This is an example of report from "My Workspace"
 ```html
 https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**`
 ```
 The above URL contains also specific report page **"ReportSection3"**.
+
+This is an example of a report from a workspace (not My Workspace)
+```html
+https://app.powerbi.com/groups/**groupid comes here**/reports/**reportid comes here**/ReportSection1?ctid=**organizationid comes here**
+```
 
 ## Use links inside Power BI
 
