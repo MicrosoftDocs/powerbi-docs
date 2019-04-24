@@ -1241,8 +1241,6 @@
       href: service-gateway-sql-tutorial.md
   - name: Concepts
     items:
-    - name: "Monthly updates"
-      href: service-gateway-monthly-updates.md
     - name: "Guidance for deploying a data gateway"
       href: service-gateway-deployment-guidance.md
     - name: "On-premises data gateway FAQ"
@@ -1289,6 +1287,10 @@
       href: service-gateway-custom-connectors.md
     - name: "Troubleshooting the on-premises data gateway"
       href: service-gateway-onprem-tshoot.md
+  - name: "Resources"
+    items:
+    - name: "Monthly gateway updates"
+      href: service-gateway-monthly-updates.md
 - name: Administration
   items:
   - name: Overview
