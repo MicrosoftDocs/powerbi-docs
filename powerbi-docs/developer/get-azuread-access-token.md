@@ -192,6 +192,10 @@ var authenticationContext = new AuthenticationContext(AuthorityUrl);
 m_tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
 ```
 
+## Troubleshoot
+
+* Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) if you experience an "'AuthenticationContext' does not contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)" error.
+
 ## Next steps
 
 Now that you have the access token, you can call the Power BI REST API to embed content. For information on how to embed your content, see [How to embed your Power BI content](embed-sample-for-customers.md#embed-content-within-your-application).
