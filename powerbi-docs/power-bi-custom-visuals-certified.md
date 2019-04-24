@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/10/2019
+ms.date: 04/15/2019
 ---
 
 # Certified custom visuals
@@ -40,11 +40,28 @@ Microsoft can remove a visual from the [certified list](#list-of-custom-visuals-
 To get your custom visual [certified](#certified-custom-visuals), make sure your custom visual complies with the below:  
 
 * Microsoft AppSource approved. Your custom visual should be in our [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* Custom visual is written with versioned API 1.2 or higher.
+* Custom visual is written with versioned **API v2.5** or higher.
 * Code repository available for review by Power BI team (for instance, source code (JavaScript or TypeScript) in human readable format available to us, through GitHub).
 
     >[!Note]
     > You don’t have to publicly share your code in Github.
+* Code repository requirements:
+   * Must include package.json and package-lock.json.
+   * Must not include node_modules folder (add node_modules to .gitingore file)
+   * **npm install** command must not return any errors.
+   * **npm audit** command must not return any warnings with high or moderate level.
+   * **pbiviz package** command must not return any errors.
+   * Must include [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) with no overridden configuration, and this command must not return any lint errors.
+   * The compiled package of the Custom Visual must match submitted package (md5 hash of both files should be equal).
+* Source Code requirements:
+   * The visual must support [Rendering Events API](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
+   * Ensure no arbitrary/dynamic code is run (bad: eval(), unsafe to use of settimeout(), requestAnimationFrame(), setinterval(some function with user input), running user input/data).
+   * Ensure DOM is manipulated safely (bad: innerHTML, D3.html(<some user/data input>), use sanitization for user input/data before adding it to the DOM.
+   * Ensure there are no javascript errors/exceptions in the browser console for any input data. Users might use your visual with a different range of unexpected data, so the visual must not fail. You can use [this sample report](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) as a test dataset.
+
+* If any properties in capabilities.json are changed, make sure that they do not break existing user's reports.
+
+* Make sure the visual complies with the [guidelines for Power BI visuals](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **No watermarks are allowed**.
 
 * Uses only public reviewable OSS components (JS libraries or TypeScript that are public. The source code is available for reviewing and doesn't have known vulnerabilities). We can't verify a custom visual using a commercial component.
 
