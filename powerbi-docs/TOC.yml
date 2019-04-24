@@ -1241,7 +1241,7 @@
       href: service-gateway-sql-tutorial.md
   - name: Concepts
     items:
-    - name: "Monthly updtes"
+    - name: "Monthly updates"
       href: service-gateway-monthly-updates.md
     - name: "Guidance for deploying a data gateway"
       href: service-gateway-deployment-guidance.md
