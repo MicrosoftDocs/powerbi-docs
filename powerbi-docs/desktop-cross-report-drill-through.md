@@ -21,16 +21,16 @@ With the cross-report drillthrough feature in Power BI Desktop, you can contextu
 
 The following definitions are important to understand, before we begin setting up and using cross-report drillthrough:
 
-* **Source Visual:** The visual that  invokes the drillthrough action by using the visual context menu.
-* **Source Report:** The report containing the source visual for cross-report drillthrough.
-* **Target Page:** The page that a user lands on after initiating a drillthrough action.
-* **Target Report:** The report containing the target page for cross-report drillthrough.
+* **Source visual:** The visual that invokes the drillthrough action by using the visual context menu.
+* **Source report:** The report that contains the source visual for cross-report drillthrough.
+* **Target page:** The page that a user lands on after initiating a drillthrough action.
+* **Target report:** The report that contains the target page for cross-report drillthrough.
 
 ## Enable cross-report drillthrough
 
 To enable a report to be the target of a cross-report drillthrough, you must enable the feature for that report in the **Options** window. Go to **File** > **Options and settings** > **Options**, and then go to **Report settings** near the bottom of the page on the left.
 
-Select the check box to **Allow visuals in this report to use drillthrough targets from other reports**, as shown in the following image.
+Select the **Allow visuals in this report to use drillthrough targets from other reports** check box, as shown in the following image.
 
 ![Screenshot of Options window, with Report settings highlighted](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
 
@@ -75,7 +75,7 @@ The previous section described how to enable cross-report drillthrough for Power
 4. Make sure the cross-report drillthrough toggle is **On**.
 5. Save your report.
 
-That's it, your report is ready for the cross-report drillthrough experience. 
+That's it. Your report is ready for the cross-report drillthrough experience. 
 
 In the next section, we take a look at the experience from the user's perspective.
 
@@ -83,7 +83,7 @@ In the next section, we take a look at the experience from the user's perspectiv
 
 When you configure the cross-report drillthrough experience for a report, you can put the feature to use.
 
-Select the source report in the Power BI service, and then select a visual that uses the field or fields in the way you specified when you set up the target page. Next, right-click on a data point to open the visual context menu, and select **Drillthrough**.
+Select the source report in the Power BI service, and then select a visual that uses the field or fields in the way you specified when you set up the target page. Next, right-click a data point to open the visual context menu, and select **Drillthrough**.
 
 ![Screenshot of source report in the Power BI service, with Drillthrough highlighted](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 
