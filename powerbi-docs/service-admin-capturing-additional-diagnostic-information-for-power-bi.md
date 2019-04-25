@@ -25,11 +25,11 @@ These instructions provide two potential options for manually collecting additio
 
 1. Press **F12** to open the Microsoft Edge developer tools.
 
-   ![Developer tools](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
+   ![Screenshot of Microsoft Edge Developer tools Elements tab.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
 
 1. Select the **Network** tab. It will list traffic it has already captured.
 
-   ![Microsoft Edge network tab](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
+   ![Screenshot of Microsoft Edge Developer tools Network tab.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
 
     You can:
 
@@ -39,11 +39,11 @@ These instructions provide two potential options for manually collecting additio
 
 1. To stop profiling the session, you can select the red square on the **Network** tab of the developer tools area.
 
-   ![Stop the capture](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
+   ![Screenshot of Microsoft Edge Developer tools Network tab with a call out of the Stop button.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
 
 1. Select on the diskette icon to export the data as an HTTP Archive (HAR) file.
 
-   ![Export the file](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
+   ![Screenshot of Microsoft Edge Developer tools Network tab with a callout of the diskette icon.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
 
 1. Provide a file name and save the HAR file.
 
