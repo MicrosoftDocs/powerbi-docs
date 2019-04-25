@@ -25,7 +25,7 @@ Business users get your apps in a few different ways. If the Power BI administra
 You can create the app with its own built-in navigation, so your users can easily find their way around your content. They can’t modify the contents of the app. They can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. If you give them access, they can also save their own copy of the report or make new content based on the dataset in the app.  They get updates automatically and you can control how frequently the data refreshes. Read more about the [app experience for business users](consumer/end-user-apps.md).
 
 ## Licenses for apps
-Each member of an app workspace needs a Power BI Pro license. For app consumers, there are two options.
+Each *member* of an app workspace needs a Power BI Pro license. For app *consumers*, there are two options.
 
 * Option 1: All business users need **Power BI Pro** licenses to view your app. 
 * Option 2: If your app resides in a Power BI Premium capacity, free users in your organization can view app content. Read [What is Power BI Premium?](service-premium.md) for details.
@@ -33,11 +33,11 @@ Each member of an app workspace needs a Power BI Pro license. For app consumers,
 ## Publish your app
 When the dashboards and reports in your workspace are ready, you choose which dashboards and reports you want to publish, then you publish them as an app. 
 
-1. In the workspace list view, decide which dashboards and reports you want to include in the app.
+1. In the workspace list view, decide which dashboards and reports you want  **Included in app**.
 
      ![Select the dashboard to publish](media/service-create-distribute-new-apps-preview/power-bi-apps-incude-dashboard.png)
 
-     If you choose not to publish a report, you see a warning next to the report and its related dashboard. You can still publish the app, but the related dashboard will be missing the tiles from that report.
+     If you choose not to include a report that has a related dashboard, you see a warning next to the report. You can still publish the app, but the related dashboard won't have the tiles from that report.
 
      ![Warning about related dashboard](media/service-create-distribute-new-apps-preview/power-bi-apps-report-warning.png)
 
@@ -49,7 +49,7 @@ When the dashboards and reports in your workspace are ready, you choose which da
    
      ![Build your app](media/service-create-distribute-new-apps-preview/power-bi-apps-build-your-apps.png)
 
-4. On **Navigation**, you select the content to be published as part of the app. Then you add app navigation, to organize them in sections. 
+4. On **Navigation**, you select the content to be published as part of the app. Then you add app navigation, to organize the content in sections. 
    
      ![App navigation](media/service-create-distribute-new-apps-preview/power-bi-apps-navigation.png)
 
