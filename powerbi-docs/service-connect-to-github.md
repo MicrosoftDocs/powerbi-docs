@@ -44,7 +44,7 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 
 5. Enter your GitHub credentials (this step might be skipped if you're already signed in with your browser). 
 6. For **Authentication Method**, select **oAuth2** \> **Sign In**. 
-7. Follow the Github authentication screens. Grant the GitHub for Power BI template app permission to the GitHub data.
+7. Follow the GitHub authentication screens. Grant the GitHub for Power BI template app permission to the GitHub data.
    
    ![Power BI GitHub authorize](media/service-connect-to-github/github_authorize.png)
    
@@ -108,7 +108,7 @@ The first part "Azure" is the owner and the second part "azure-sdk-for-php" is t
 ## Troubleshooting
 If necessary, you can verify your GitHub credentials.  
 
-1. In another browser window, go to the GitHub web site and log in to GitHub. You can see you’re logged in, in the upper-right corner of the GitHub site.    
+1. In another browser window, go to the GitHub web site and sign in to GitHub. You can see you’re logged in, in the upper-right corner of the GitHub site.    
 2. In GitHub, navigate to the URL of the repo you plan to access in Power BI. For example: https://github.com/dotnet/corefx.  
 3. Back in Power BI, try connecting to GitHub. In the Configure GitHub dialog box, use the names of the repo and repo owner for that same repo.  
 
