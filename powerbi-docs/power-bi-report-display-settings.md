@@ -69,7 +69,7 @@ The second set of *Page view* settings control the positioning of objects on the
 ## Next Steps
 [Learn how to use Page view and Page size settings in your own Power BI reports](consumer/end-user-report-view.md).
 
-Read more about [reports in Power B](consumer/end-user-reports.md)
+Read more about [reports in Power BI](consumer/end-user-reports.md)
 
 [Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
 
