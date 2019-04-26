@@ -23,7 +23,7 @@ When you import an Excel workbook into Power BI, you may see the following error
 
 *Error: We couldn't find any data formatted as a table. To import from Excel into the Power BI service, you need to format the data as a table. Select all the data you want in the table and press Ctrl+T.*
 
-![Couldn't find data in workbook](media/service-admin-troubleshoot-excel-workbook-data/pbi_wecouldntfindanydata2.png)
+![Couldn't find data in workbook](media/service-admin-troubleshoot-excel-workbook-data/pbi_wecouldntfindanydata.png)
 
 ## Quick solution
 1. Edit your workbook in Excel.
