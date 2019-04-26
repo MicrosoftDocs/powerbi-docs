@@ -35,7 +35,7 @@ Add the following to the end of the report page URL:
    
 ?filter=*tablename*/*fieldname* eq *value*
    
-The field must be of type **string**. The *tablename* or *fieldname* values can't contain spaces.
+The field must be of type number, datetime, or string. The *tablename* or *fieldname* values can't contain spaces.
    
 In our example, the name of the table is **Store**, the name of the field is **Territory**, and the value we want to filter on is **NC**:
    
