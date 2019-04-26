@@ -174,7 +174,7 @@ There are a couple of things to be aware of when using the query string paramete
 
 * When using the *in* operator, the values to the right of *in* must be a comma-separated list enclosed in parentheses.    
 * In Power BI Report Server, you can [pass report parameters](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) by including them in a report URL. These URL parameters aren't prefixed because they're passed directly to the report processing engine.
-* Query string filtering doesn't work with [Publish to web](service-publish-to-web.md).
+* Query string filtering doesn't work with [Publish to web](service-publish-to-web.md) or [Export to PDF](consumer/end-user-pdf.md).
 * [Embed with report web part in SharePoint Online](service-embed-report-spo.md) doesn't support URL filters.
 * The long data type is (2^53-1) due to Javascript limitations.
 * Report URL filters have a 10-expression limit (10 filters connected by AND).
