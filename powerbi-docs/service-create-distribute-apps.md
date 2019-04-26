@@ -141,7 +141,8 @@ Any member of an app workspace can unpublish the app.
 This action uninstalls the app for everyone you've published it to, and they no longer have access to it. It doesn't delete the app workspace or its contents.
 
 ## Next steps
-* [Create an app workspace](service-create-workspaces.md)
+
+* [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
 * [Install and use apps in Power BI](consumer/end-user-apps.md)
 * [Power BI apps for external services](service-connect-to-services.md)
 * [Power BI Admin Portal](https://docs.microsoft.com/power-bi/service-admin-portal)
