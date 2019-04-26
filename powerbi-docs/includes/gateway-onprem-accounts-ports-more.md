@@ -23,19 +23,20 @@ It is recommended that you whitelist the IP addresses, for your data region, in 
 
 Here is a listing of the fully qualified domain names used by the gateway.
 
-| Domain names | Outbound ports | Description |
-| --- | --- | --- |
-| *.download.microsoft.com |80 |HTTP used to download the installer. |
-| *.powerbi.com |443 |HTTPS |
-| *.analysis.windows.net |443 |HTTPS |
-| *.login.windows.net |443 |HTTPS |
-| *.servicebus.windows.net |5671-5672 |Used for Advanced Message Queuing Protocol (AMQP) |
-| *.servicebus.windows.net |443, 9350-9354 |Listeners on Service Bus Relay over TCP (requires 443 for Access Control token acquisition) |
-| *.frontend.clouddatahub.net |443 |HTTPS |
-| *.core.windows.net |443 |HTTPS |
-| login.microsoftonline.com |443 |HTTPS |
-| *.msftncsi.com |443 |Used to test internet connectivity if the gateway is unreachable by the Power BI service. |
-| *.microsoftonline-p.com |443 |Used for authentication depending on configuration. |
+| Domain names | Outbound ports | Description |  |
+|-----------------------------|----------------|--------------------------------------------------------------------------------------------------------------------|---|
+| *.download.microsoft.com | 80 | Used to download the installer. This is also used by the data gateway app to check for version and gateway region. |  |
+| *.powerbi.com | 443 | Used for identifying the relevant Power BI cluster. |  |
+| *.analysis.windows.net | 443 | Used for identifying the relevant Power BI cluster. |  |
+| *.login.windows.net | 443 | Used for authenticating the data gateway app with Azure Active Directory / OAuth2. |  |
+| *.servicebus.windows.net | 5671-5672 | Used for Advanced Message Queuing Protocol (AMQP). |  |
+| *.servicebus.windows.net | 443, 9350-9354 | Used by listeners on Service Bus Relay over TCP (requires 443 for access control token acquisition). |  |
+| *.frontend.clouddatahub.net | 443 | Deprecated - no longer required. Will be removed from documentation in the future. |  |
+| *.core.windows.net | 443 | Used by dataflows in Power BI to write data to Azure Data Lake. |  |
+| login.microsoftonline.com | 443 | Used for authenticating the data gateway app with Azure Active Directory / OAuth2. |  |
+| *.msftncsi.com | 443 | Used to test internet connectivity and whether the gateway is unreachable by the Power BI service. |  |
+| *.microsoftonline-p.com | 443 | Used for authenticating the data gateway app with Azure Active Directory / OAuth2. |  |
+| | |
 
 > [!NOTE]
 > Once the gateway is installed and registered, the only required ports/IPs are the ones needed by the Azure service bus (servicebus.windows.net above). You can obtain the list of required ports by performing the [Network port test](../service-gateway-onprem-tshoot.md#network-ports-test) on the on-premises data gateway application.

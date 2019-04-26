@@ -285,7 +285,7 @@
         href: desktop-conditional-format-visual-titles.md        
       - name: "Sort by column in Power BI Desktop"
         href: desktop-sort-by-column.md
-      - name: "Create reports optimized for mobile apps"
+      - name: "Optimize reports for mobile apps"
         href: desktop-create-phone-report.md
       - name: "Use See Data and See Records"
         href: desktop-see-data-see-records.md
@@ -541,7 +541,7 @@
         href: service-dashboard-edit-tile.md
       - name: "Tips for designing a great dashboard"
         href: service-dashboards-design-tips.md
-      - name: "Create a phone view of a dashboard"
+      - name: "Optimize a dashboard for phones"
         href: service-create-dashboard-mobile-phone-view.md
       - name: "Create a QR code for a tile"
         href: service-create-qr-code-for-tile.md
@@ -1242,7 +1242,7 @@
   - name: Concepts
     items:
     - name: "Guidance for deploying a data gateway"
-      href: service-gateway-deployment-guidance.md      
+      href: service-gateway-deployment-guidance.md
     - name: "On-premises data gateway FAQ"
       href: service-gateway-onprem-faq.md
   - name: How to
@@ -1287,6 +1287,10 @@
       href: service-gateway-custom-connectors.md
     - name: "Troubleshooting the on-premises data gateway"
       href: service-gateway-onprem-tshoot.md
+  - name: "Resources"
+    items:
+    - name: "Monthly gateway updates"
+      href: service-gateway-monthly-updates.md
 - name: Administration
   items:
   - name: Overview
