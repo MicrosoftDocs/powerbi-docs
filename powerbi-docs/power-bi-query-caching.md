@@ -8,7 +8,7 @@ ms.reviewer: 'bhmerc'
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/03/2019
+ms.date: 04/25/2019
 ms.author: maggies
 
 LocalizationGroup: 
@@ -23,9 +23,7 @@ Organizations with Power BI Premium can take advantage of *query caching* to spe
 
 Cached query results are specific to user and dataset context and always respect security rules. At present the service only does query caching for the initial page that you land on. In other words, queries aren't cached when you interact with the report. The cache reflects personal bookmarks and persistent filters. [Dashboard tiles](service-dashboard-tiles.md) that are powered by the same queries also benefit once the query is cached. Performance especially benefits when a dataset is accessed frequently and doesn't need to be refreshed often. Query caching can also reduce load on your Premium capacity by reducing the overall number of queries.
 
-You control query caching behavior on the **Settings** page for the dataset in the Power BI service. It has three possible settings:
-
-- **Capacity Default**: The dataset inherits the setting from the Premium capacity. The capacity default is controlled by the Power BI Premium capacity administrator.
+You control query caching behavior on the **Settings** page for the dataset in the Power BI service. It has two possible settings:
 
 - **Off**: Don't use query caching for this dataset.
 
