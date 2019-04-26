@@ -40,7 +40,7 @@ After you've installed the template app, you can change the dashboard and report
 
     ![Get started with your new app](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect-data.png)
 
-4. Provide the URL associated with your account. This will be in the form **https://company.zendesk.com**, see details on [finding these parameters](#FindingParams) below.
+4. Provide the URL associated with your account. The URL has the form **https://company.zendesk.com**. See details on [finding these parameters](#FindingParams) below.
    
    ![](media/service-connect-to-zendesk/pbi_zendeskconnect.png)
 
@@ -77,13 +77,13 @@ You've installed the Zendesk template app. That means you've also created the Ze
     Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
 
 ## System requirements
-A Zendesk Administrator account is required to access the Zendesk content pack. If you're an agent or an end user and are interested in viewing your Zendesk data, please add a suggestion and review the Zendesk connector in the [Power BI Desktop](desktop-connect-to-data.md).
+A Zendesk Administrator account is required to access the Zendesk content pack. If you're an agent or an end user and are interested in viewing your Zendesk data, add a suggestion and review the Zendesk connector in the [Power BI Desktop](desktop-connect-to-data.md).
 
 ## Finding parameters
 Your Zendesk URL will be the same as the URL you use to sign into your Zendesk account. If you're not sure of your Zendesk URL, you can use the Zendesk [login help](https://www.zendesk.com/login/).
 
 ## Troubleshooting
-If you're having issues connecting, please check your Zendesk URL and confirm you're using an Zendesk administrator account.
+If you're having issues connecting, check your Zendesk URL and confirm you're using a Zendesk administrator account.
 
 ## Next steps
 
