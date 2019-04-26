@@ -78,7 +78,7 @@ To filter the report to show data only for stores in "NC" (North Carolina), appe
 
 Our report is filtered for North Carolina; all the visualizations on the report page show data for only North Carolina.
 
-![](media/service-url-filters/power-bi-report4.png)
+![Report filtered for North Carolina](media/service-url-filters/power-bi-report4.png)
 
 ## Filter on multiple fields
 
