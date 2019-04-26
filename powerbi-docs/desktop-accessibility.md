@@ -141,6 +141,12 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Right click | <ul><li>Windows keyboard: Windows context key + F10.  The Windows context key is between the Left Alt key and the Left Arrow Key</li><li>Other keyboard: Shift + F10</li></ul> |
 | Clear selection | Ctrl + Shift + C |
 
+### Table & Matrix Navigation
+| To do this           | Press                |
+| :------------------- | :------------------- |
+| Move focus up / down one cell (across all cells in all areas)  | Up arrow key / Down arrow key |
+| Move focus left / right one cell (across all cells in all areas)  | Left arrow key / Right arrow key |
+
 ### Pane Navigation
 | To do this           | Press                |
 | :------------------- | :------------------- |
