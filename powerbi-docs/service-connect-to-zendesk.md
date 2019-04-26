@@ -24,7 +24,7 @@ Connect to the [Zendesk content pack](https://app.powerbi.com/getdata/services/z
 After you've installed the template app, you can change the dashboard and report. Then you can distribute it as an app to colleagues in your organization.
 
 >[!NOTE]
->You need a Zendesk Admin account to connect. More details on [requirements](#Requirements) below.
+>You need a Zendesk Admin account to connect. More details on [requirements](#system-requirements) below.
 
 ## How to connect
 
@@ -40,9 +40,9 @@ After you've installed the template app, you can change the dashboard and report
 
     ![Get started with your new app](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect-data.png)
 
-4. Provide the URL associated with your account. The URL has the form **https://company.zendesk.com**. See details on [finding these parameters](#FindingParams) below.
+4. Provide the URL associated with your account. The URL has the form **https://company.zendesk.com**. See details on [finding these parameters](#finding-parameters) below.
    
-   ![](media/service-connect-to-zendesk/pbi_zendeskconnect.png)
+   ![Connect to Zendesk](media/service-connect-to-zendesk/pbi_zendeskconnect.png)
 
 5. When prompted, enter your Zendesk credentials.  Select **oAuth 2** as the Authentication Mechanism and click **Sign In**. Follow the Zendesk authentication flow. (If you're already signed in to Zendesk in your browser, you may not be prompted for credentials.)
    
@@ -50,10 +50,10 @@ After you've installed the template app, you can change the dashboard and report
    > This content pack requires that you connect with a Zendesk Admin account. 
    > 
    
-   ![](media/service-connect-to-zendesk/pbi_zendesksignin.png)
+   ![Sign in with oAuth2](media/service-connect-to-zendesk/pbi_zendesksignin.png)
 6. Click **Allow** to allow Power BI to access your Zendesk data.
    
-   ![](media/service-connect-to-zendesk/zendesk2.jpg)
+   ![Click Allow](media/service-connect-to-zendesk/zendesk2.jpg)
 7. Click **Connect** to begin the import process. 
 8. After Power BI imports the data, you see the content list for your Zendesk app: a new dashboard, report, and dataset.
 9. Select the dashboard to start the exploration process.
