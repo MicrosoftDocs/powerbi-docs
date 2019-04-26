@@ -32,7 +32,7 @@ Your account needs to be marked as a **Global Admin**, within Office 365 or Azur
 
 There are nine tabs in the portal. The rest of this article provides information about each of these tabs.
 
-![Admin portal navigation](media/service-admin-portal/powerbi-admin-landing-page2.png)
+![Admin portal navigation](media/service-admin-portal/powerbi-admin-landing-page.png)
 
 * [Usage metrics](#usage-metrics)
 * [Users](#users)
@@ -146,11 +146,11 @@ The admin portal also has another section of settings about the workspaces in yo
 
 Users in the organization can share dashboards with users outside the organization. [Learn more](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
 
-![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-03.png)
+![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
 The following image shows the message that appears when you share with an external user.
 
-![Share with external user](media/service-admin-portal/powerbi-admin-sharing-external.png)
+![Share with external user](media/service-admin-portal/powerbi-admin-sharing-external.png)  
 
 ### Publish to web
 
@@ -158,7 +158,7 @@ Users in the organization can publish reports to the web. [Learn more](service-p
 
 The following image shows the **File** menu for a report when the **Publish to web** setting is enabled.
 
-![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web2.png)
+![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web.png)
 
 Users see different options in the UI based on what the **Publish to web** setting is.
 
@@ -186,7 +186,7 @@ Users in the organization can export Power BI reports as PowerPoint files or PDF
 
 The following image shows the **File** menu for a report when the **Export reports as PowerPoint presentations or PDF documents** setting is enabled.
 
-![Export reports as PowerPoint presentations](media/service-admin-portal/powerbi-admin-powerpoint2.png)
+![Export reports as PowerPoint presentations](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
 ### Print dashboards and reports
 
@@ -198,7 +198,7 @@ The following image shows the option to print a dashboard.
 
 The following image shows the **File** menu for a report when the **Print dashboards and reports** setting is enabled.
 
-![Print report](media/service-admin-portal/powerbi-admin-print-report2.png)
+![Print report](media/service-admin-portal/powerbi-admin-print-report.png)
 
 ### Allow external guest users to edit and manage content in the organization
 Azure B2B guest users can edit and manage content in the organization. [Learn more](service-admin-azure-ad-b2b.md)
