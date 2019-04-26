@@ -14,7 +14,7 @@ ms.author: maggies
 LocalizationGroup: Reports
 ---
 # Create a report in the Power BI service by importing a dataset
-You've read [Reports in Power BI](consumer/end-user-reports.md) and now you want to create your own. There are different ways to create a report. In this article we'll start by creating a basic report in the Power BI service from an Excel dataset. Once you understand the basics of creating a report, check out the [Next steps](#next-steps) at the end for more advanced report topics.  
+You've read [Reports in Power BI](consumer/end-user-reports.md) and now you want to create your own. There are different ways to create a report. In this article, we'll start by creating a basic report in the Power BI service from an Excel dataset. Once you understand the basics of creating a report, check out the [Next steps](#next-steps) at the end for more advanced report topics.  
 
 ## Prerequisites
 - [Sign up for the Power BI service](service-self-service-signup-for-power-bi.md). For creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md). 
@@ -26,7 +26,7 @@ This method of creating a report starts with a dataset and a blank report canvas
 1. We'll create the report in a Power BI service workspace, so select an existing workspace or create a one.
    
    ![list of App workspaces](media/service-report-create-new/power-bi-workspaces2.png)
-2. From the bottom of the left navpane, select **Get data**.
+2. From the bottom of the left navigation pane, select **Get data**.
    
    ![Get data](media/service-report-create-new/power-bi-get-data3.png)
 3. Select **Files** and navigate to the location where you saved the Retail Analysis sample.
@@ -74,7 +74,7 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
    
     ![report editor with Area chart active](media/service-report-create-new/power-bi-report-step5.png)
 5. To sort the visualization by time period, select the ellipses and choose **Sort by Period**.
-6. Now let's add the slicer. Select an empty area on the canvas and choose the Slicer ![Slicer icon](media/service-report-create-new/power-bi-slicer-icon.png)    template. This adds an empty slicer to our canvas.
+6. Now let's add the slicer. Select an empty area on the canvas and choose the Slicer ![Slicer icon](media/service-report-create-new/power-bi-slicer-icon.png) template. We now have an empty slicer on our canvas.
    
     ![report canvas](media/service-report-create-new/power-bi-report-step6.png)    
 7. From the Fields pane, select **District** > **District**. Move and resize the slicer.
