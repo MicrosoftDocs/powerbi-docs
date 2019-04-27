@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 04/10/2019
+ms.date: 04/19/2019
 ms.author: maggies
 #customer intent: "As a Power BI end user, I want to connect to GitHub as an example, so I understand how to connect to my data on other services."
 
@@ -70,6 +70,9 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
 8. After Power BI imports the data, you see the contents of your new GitHub workspace. 
 9. Select the arrow next to the workspace name in the left navigation bar. You see the workspace contains a dashboard and a report. 
+
+    ![App in the left navigation pane](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+
 10. Select the ellipsis (...) next to the dashboard name > **Rename** > type **GitHub dashboard**.
  
     ![Power BI GitHub tile](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
