@@ -50,11 +50,11 @@
       "feedback_product_url": "https://ideas.powerbi.com/forums/265200-power-bi"
     },
     "fileMetadata": {
-          "featureFlags": {
-              "**/*.md": [
-                  "show_binary_rating"
-              ]
-          }
+          "featureFlags": {
+              "**/*.md": [
+                 "show_binary_rating"
+              ]
+          }
     },
     "template": [],
     "dest": "powerbi-docs",
