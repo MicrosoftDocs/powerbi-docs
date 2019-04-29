@@ -142,7 +142,7 @@ The following activities are audited by Power BI:
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used                       |
 | Analyzed Power BI dataset                         | AnalyzedByExternalApplication               |                                          |
 | Analyzed Power BI report                          | AnalyzeInExcel                              |                                          |
-| Bound Power BI dataset to gateway                | BindToGateway                               |                                          |
+| Binded Power BI dataset to gateway                | BindToGateway                               |                                          |
 | Changed capacity state                            | ChangeCapacityState                         |                                          |
 | Changed capacity user assignment                  | UpdateCapacityUsersAssignment               |                                          |
 | Changed Power BI dataset connections              | SetAllConnections                           |                                          |
