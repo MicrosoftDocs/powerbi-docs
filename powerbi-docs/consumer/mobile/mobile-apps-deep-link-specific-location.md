@@ -13,7 +13,7 @@ ms.author: mshenhav
 
 ---
 # Create a link to a specific location in the Power BI mobile apps
-Use can use links to directly access specific items in Power BI: Report, Dashboard, and Tile.
+You can use links to directly access specific items in Power BI: Report, Dashboard, and Tile.
 
 There are mainly two scenarios for using links in Power BI Mobile: 
 
@@ -31,7 +31,7 @@ https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
 ```
 
 > [!IMPORTANT]
-> If your content is hosted in special datacenter like Goverment, China, etc. The link should start with the right Power BI address, like ``` app.powerbigov.us``` or  ``` app.powerbi.cn ```   
+> If your content is hosted in special datacenter like Goverment, China, etc. The link should start with the right Power BI address, like `app.powerbigov.us` or  `app.powerbi.cn`.   
 >
 
 
@@ -48,19 +48,19 @@ The **QUERY PARAMS** are:
 **Examples:**
 
 * Open app link 
-```html
-https://app.powerbi.com/Redirect?action=OpenApp&appId=appidguid&ctid=organizationid
-```
+  ```html
+  https://app.powerbi.com/Redirect?action=OpenApp&appId=appidguid&ctid=organizationid
+  ```
 
 * Open dashboard that is part of an app 
-```html
-https://app.powerbi.com/Redirect?action=OpenDashboard&appId=**appidguid**&dashboardObjectId=**dashboardidguid**&ctid=**organizationid**
-```
+  ```html
+  https://app.powerbi.com/Redirect?action=OpenDashboard&appId=**appidguid**&dashboardObjectId=**dashboardidguid**&ctid=**organizationid**
+  ```
 
 * Open report that is part of a workspace
-```html
-https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=**reportidguid**&groupObjectId=**groupidguid**&reportPage=**ReportSectionName**
-```
+  ```html
+  https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=**reportidguid**&groupObjectId=**groupidguid**&reportPage=**ReportSectionName**
+  ```
 
 ### How to get the right link format
 
@@ -82,12 +82,14 @@ https://app.powerbi.com/groups/me/dashboards/**dashboard guid comes here**?ctid=
 
 To find  the 36-character **report** object ID, navigate to the specific report in the Power BI service.
 This is an example of report from "My Workspace"
+
 ```html
 https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**`
 ```
 The above URL contains also specific report page **"ReportSection3"**.
 
 This is an example of a report from a workspace (not My Workspace)
+
 ```html
 https://app.powerbi.com/groups/**groupid comes here**/reports/**reportid comes here**/ReportSection1?ctid=**organizationid comes here**
 ```
