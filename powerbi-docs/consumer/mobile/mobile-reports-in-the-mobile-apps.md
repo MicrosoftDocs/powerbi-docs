@@ -53,7 +53,7 @@ Tap equals to a mouse click. So if you want to cross highlight the report based 
 Tapping on a slicer value, makes that value selected and slicing the rest of the report by that value. 
 Tapping on a link, button or bookmark will activate it based on the action defined by the author.
 
-You probably noticed that when you tap on a visual, a border appears. On the top-right corner of the border, there is ellipsis (...). This is a menu with actions you can do on that visual.
+You probably noticed that when you tap on a visual, a border appears. On the top-right corner of the border, there is ellipsis (...). Tapping on it will bring a menu with actions you can do on that visual.
 
 ![report visual and menu](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
@@ -63,7 +63,7 @@ When you long tap (tap and hold) a data point, a tooltip will show up presenting
 
 ![report tooltip](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
 
-Report authors can define hierarchies in the data and relationships between report pages. This allows drill down, drill up, and drill through another report page from a visual and a value. So, when you long tap on a value, in addition to the tooltip, the relevant drill options will appear in the footer. 
+Report authors can define hierarchies in the data and relationships between report pages. Hierarchy allows drill down, drill up, and drill through another report page from a visual and a value. So, when you long tap on a value, in addition to the tooltip, the relevant drill options will appear in the footer. 
 
 ![report drill actions](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
 
@@ -94,12 +94,12 @@ Tapping on the ... option in the report footer, will bring all the actions you c
 
 ![report all actions](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
 
-Some of the actions might be disabled, since they are dependant on the specific report capabilities.
+Some of the actions might be disabled, since they are dependent on the specific report capabilities.
 For example:
-1) **Filter by current location** is enabled if the data in your report was categorized by the author with geographical data. [Follow this to learn how to Identify geographic data in your report](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
-2) **Scan to filter the report by barcode** is enabled only if the dataset in your report was tagged as barcode. [This is how you tag barcodes in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes). 
-3) **Invite** is enabled only if you have permission to share this report with others. You will have permission only if you are the owner of the report or if you were given re-share permission by the owner.
-4) **Annotate and share** might be disbale if there is an [Intune protection policy](https://docs.microsoft.com/intune/app-protection-policies) in your organization that prohibited sharing from Power BI Mobile app. 
+1) **Filter by current location** is enabled if the data in your report was categorized by the author with geographical data. [Larn how to Identify geographic data in your report](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
+2) **Scan to filter the report by barcode** is enabled only if the dataset in your report was tagged as barcode. [How you tag barcodes in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes). 
+3) **Invite** is enabled only if you have permission to share this report with others. You will have permission only if you are the owner of the report or if you were given reshare permission by the owner.
+4) **Annotate and share** might be disable if there is an [Intune protection policy](https://docs.microsoft.com/intune/app-protection-policies) in your organization that prohibited sharing from Power BI Mobile app. 
 
 ## Next steps
 * [View and interact with Power BI reports optimized for your phone](mobile-apps-view-phone-report.md)
