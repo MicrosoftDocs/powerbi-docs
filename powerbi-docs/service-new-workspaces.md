@@ -73,7 +73,7 @@ The new workspaces offer three roles: admins, members, and contributors.
 Everyone you add to a workspace needs a Power BI Pro license. In the workspace, these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. If you want to distribute content to others inside your organization, you can assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
 
 > [!NOTE]
-> Publishing reports to new workspace experience has stricter enforcement existing licensing rules. Users who try to publish from Power BI Desktop or other clients tools without a Pro license see the error "Only users with Powre BI Pro licenses can publish to this workspace."
+> Publishing reports to new workspace experience has stricter enforcement existing licensing rules. Users who try to publish from Power BI Desktop or other clients tools without a Pro license see the error "Only users with Power BI Pro licenses can publish to this workspace."
 
 ## How are the new workspaces different from current workspaces?
 
