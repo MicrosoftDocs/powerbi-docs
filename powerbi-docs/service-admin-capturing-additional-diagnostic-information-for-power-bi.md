@@ -17,7 +17,7 @@ LocalizationGroup: Troubleshooting
 
 ## CaptureAdditional Diagnostic Information for Power BI
 
-These instructions provide instructions for manually collecting additional diagnostic information from the Power BI web client.
+This article provides instructions for manually collecting additional diagnostic information from the Power BI web client.
 
 ## Network Capture - Microsoft Edge & Internet Explorer
 
@@ -41,7 +41,7 @@ These instructions provide instructions for manually collecting additional diagn
 
    ![Screenshot of Microsoft Edge Developer tools Network tab with a call out of the Stop button.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
 
-1. Select on the diskette icon to export the data as an HTTP Archive (HAR) file.
+1. Select the diskette icon to export the data as an HTTP Archive (HAR) file.
 
    ![Screenshot of Microsoft Edge Developer tools Network tab with a callout of the diskette icon.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
 

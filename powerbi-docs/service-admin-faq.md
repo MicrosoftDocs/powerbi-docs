@@ -185,7 +185,7 @@ When you do an external takeover, the service places Power BI content that was c
 
 ### If I have multiple domains, can I control the Office 365 tenant that users get added to?
 
-If you do nothing, the service creates a tenant for each user email domain and subdomain. If you want all users to be in the same tenant regardless of their email address extensions: Create a target tenant ahead of time, or use an existing tenant Then add all the existing domains and subdomains that you want consolidated within that tenant. Every user with email addresses ending in those domains and subdomains automatically join the target tenant when they sign up.
+If you do nothing, the service creates a tenant for each user email domain and subdomain. If you want all users to be in the same tenant regardless of their email address extensions: Create a target tenant ahead of time, or use an existing tenant. Then add all the existing domains and subdomains that you want consolidated within that tenant. Every user with email addresses ending in those domains and subdomains automatically join the target tenant when they sign up.
 
 > [!IMPORTANT]
 > Once you've created users, there's no supported automated mechanism to move users across tenants. To learn about adding domains to a single Office 365 tenant, see [Add your users and domain to Office 365](/office365/admin/setup/add-domain/).
