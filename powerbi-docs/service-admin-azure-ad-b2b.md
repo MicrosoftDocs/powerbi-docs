@@ -30,7 +30,7 @@ You can invite guest users with any email address, including personal accounts l
 
 ## Invite guest users
 
-Guest users only require invitations the first time you invite them to your organization. There are two ways to invite users: planned invites and unplanned invites.
+Guest users only require invitations the first time you invite them to your organization. There are two ways to invite users: planned invites and ad hoc invites.
 
 ### Planned invites
 
@@ -56,7 +56,7 @@ The guest user needs to select **Get Started** in the email invitation they rece
 
 ![Screenshot of Guest user email invitation.](media/service-admin-azure-ad-b2b/guest-user-invite-email.png)
 
-### Unplanned invites
+### Ad hoc invites
 
 To invite an external user at any time, add them to your dashboard or report through the share UI, or your app through the access page. Here is an example of what to do when inviting an external user to use an app.
 
@@ -114,7 +114,7 @@ To help these users sign in to Power BI, provide them with the Tenant URL. To fi
     * Classic workspaces tied to Office 365 Groups:
         * Guest user can't create or be Admins of these workspaces
         * Guest users can be members
-    * Sending unplanned invites isn't supported for workspace access lists
+    * Sending ad hoc invites isn't supported for workspace access lists
     * Power BI Publisher for Excel isn't supported for guest users
     * Guest users can't install a Power BI Gateway and connect it to your organization
     * Guest users can't install apps publish to the entire organization
