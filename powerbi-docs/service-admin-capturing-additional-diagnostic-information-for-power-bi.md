@@ -13,13 +13,9 @@ ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ---
 
-# Capture additional diagnostic information
-
-## CaptureAdditional Diagnostic Information for Power BI
+# Capture additional diagnostic information for Power BI
 
 This article provides instructions for manually collecting additional diagnostic information from the Power BI web client.
-
-## Network Capture - Microsoft Edge & Internet Explorer
 
 1. Browse to [Power BI](https://app.powerbi.com) with Microsoft Edge or Internet Explorer.
 
