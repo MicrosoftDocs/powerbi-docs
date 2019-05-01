@@ -13,6 +13,13 @@ ms.author: gepopell
 
 LocalizationGroup: Connect to data
 ---
+# Why do you need Trusted Third-Party Connectors?
+
+In Power BI, we generally recommend keeping your 'Data extension security' level at the higher level, which prevents loading of code not certified by Microsoft. However, there may be many cases in which you want to load specific connectors--ones you've written, or ones provided to you by a consultant or vendor outside the Microsoft certification path.
+
+The developer of a given connector can sign it with a certificate and provide you with the information you need to securely load it without lowering your security settings.
+
+If you want to know more about the security settings, you can read about them [here](https://docs.microsoft.com/en-us/power-bi/desktop-connector-extensibility).
 
 # Trusting Third-Party Connectors
 
