@@ -131,7 +131,7 @@ The AAD setting that controls sign up is **AllowAdHocSubscriptions**. In most te
      connect-msolservice -credential $msolcred
     ```
 
-   ![Azure Active Directory sign in](media/service-admin-licensing-organization/aad-signin.png)
+   ![Azure Active Directory sign in](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
 1. Once you are signed in, run the following command to see how your tenant is currently configured.
 

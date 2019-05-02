@@ -42,11 +42,11 @@ Follow these steps to send an invite in the Azure portal.
 
 1. Under **Manage**, select **Users** > **All users** > **New guest user**.
 
-    ![Screenshot of the Azure portal with the New guest user option called out.](media/service-admin-azure-ad-b2b/azuread-portal-new-guest-user.png)
+    ![Screenshot of the Azure portal with the New guest user option called out.](media/service-admin-azure-ad-b2b/azure-ad-portal-new-guest-user.png)
 
 1. Enter an **email address** and **personal message**.
 
-    ![Screenshot of the Azure AD Portal New Guest User dialog.](media/service-admin-azure-ad-b2b/azuread-portal-invite-message.png)
+    ![Screenshot of the Azure AD Portal New Guest User dialog.](media/service-admin-azure-ad-b2b/azure-ad-portal-invite-message.png)
 
 1. Select **Invite**.
 
@@ -64,7 +64,7 @@ To invite an external user at any time, add them to your dashboard or report thr
 
 The guest user will receive an email indicating that you shared the app with them.
 
-![Screenshot of Email for app shared with guest user](media/service-admin-azure-ad-b2b/guest-user-invite-email2.png)
+![Screenshot of Email for app shared with guest user](media/service-admin-azure-ad-b2b/guest-user-invite-email-2.png)
 
 The guest user must sign in with their organization email address. They'll receive a prompt to accept the invitation after signing in. After sign in, the app opens for the guest user. To return to the app, they can bookmark the link or save the email.
 
@@ -78,19 +78,19 @@ When using the [Allow external guest users to edit and manage content in the org
 
 Assigning the app workspace to [Power BI Premium capacity](service-premium-what-is.md) lets the guest user use the app without requiring a Power BI Pro license. Power BI Premium also lets apps take advantage of other capabilities like increased refresh rates, dedicated capacity, and large model sizes.
 
-![Diagram of guest user experience with Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach1.png)
+![Diagram of guest user experience with Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
 ### Assign a Power BI Pro license to guest user
 
 Assigning a Power BI Pro license to the guest user, within your tenant, lets that guest user  view content in the tenant.
 
-![Diagram of guest user experience with Assign Pro license from your tenant.](media/service-admin-azure-ad-b2b/license-approach2.png)
+![Diagram of guest user experience with Assign Pro license from your tenant.](media/service-admin-azure-ad-b2b/license-approach-2.png)
 
 ### Guest user brings their own Power BI Pro license
 
 The guest user already has a Power BI Pro license assigned within their tenant.
 
-![Diagram of guest user experience when they bring their own license.](media/service-admin-azure-ad-b2b/license-approach3.png)
+![Diagram of guest user experience when they bring their own license.](media/service-admin-azure-ad-b2b/license-approach-3.png)
 
 ## Guest users who can edit and manage content 
 

@@ -128,7 +128,7 @@ Use the following PowerShell script to disable ad hoc subscriptions. ([Learn mor
      connect-msolservice -credential $msolcred
     ```
 
-   ![Screenshot of Azure Active Directory sign in through PowerShell](media/service-admin-licensing-organization/aad-signin.png)
+   ![Screenshot of Azure Active Directory sign in through PowerShell](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
 1. Once you sign in, run the following command to see how your tenant is currently set up.
 
