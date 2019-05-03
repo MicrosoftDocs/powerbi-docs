@@ -180,6 +180,10 @@ User consent is disabled for the tenant.
 
 *Grant permissions* to the application by an admin - either for the entire tenant or a specific user.
 
+### CS1061 error
+
+Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) if you experience an "'AuthenticationContext' does not contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)" error.
+
 ## Data sources
 
 ### ISV wants to have different credentials for the same data source
