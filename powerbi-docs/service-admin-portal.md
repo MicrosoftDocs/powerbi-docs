@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 05/03/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -134,9 +134,11 @@ It is also possible to specify a URL to direct users to a custom solution for li
 
 ### Create workspaces
 
-Admins use this setting to decide which users in the organization can create app workspaces to collaborate on dashboards, reports, and other content. [Learn more about app workspaces](service-create-the-new-workspaces.md).
+Admins use this setting to decide which users in the organization can create app workspaces to collaborate on dashboards, reports, and other content. Learn more about [app workspaces](service-create-the-new-workspaces.md).
 
-The admin portal also has another section of settings about the workspaces in your tenant. In that section, you can sort and filter the list of workspaces and display the details for each workspace. See [Workspaces](#workspaces) for details.
+The admin portal has another section of settings about the workspaces in your tenant. In that section, you can sort and filter the list of workspaces and display the details for each workspace. See [Workspaces](#workspaces) for details.
+
+In the admin portal, you also control who has permissions to distribute the apps that users create in workspaces. See [Publish content packs and apps to the entire organization](#publish-content-packs-and-apps-to-the-entire-organization) for details.
 
 ## Export and sharing settings
 
@@ -209,15 +211,15 @@ The following image shows the option to Allow external guest users to edit and m
 
 ### Publish content packs and apps to the entire organization
 
-Users in the organization can publish content packs and apps to the entire organization, rather than just specific groups. [Learn more](service-organizational-content-pack-manage-update-delete.md)
+Admins use this setting to decide which users can publish content packs and apps to the entire organization, rather than just specific groups. Learn more about [publishing apps](service-create-distribute-apps.md).
 
 The following image shows the **My entire organization** option when creating a content pack.
 
 ![Publish content pack to organization](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### Create template organizational content packs and apps
+### Create template apps and organizational content packs
 
-Users in the organization can create template content packs and apps that use datasets built on one data source in Power BI Desktop. Learn more about [template apps](template-content-pack-authoring.md)
+Users in the organization can create template apps and organizational content packs that use datasets built on one data source in Power BI Desktop. Learn more about [template apps](template-content-pack-authoring.md).
 
 ### Push apps to end users
 
@@ -469,7 +471,8 @@ As an administrator, you can view the workspaces that exist in your tenant. You 
 
 ## Next steps
 
-[Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  [Understanding the Power BI admin role](service-admin-role.md)  
+[Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
+[Understanding the Power BI admin role](service-admin-role.md)  
 [Auditing Power BI in your organization](service-admin-auditing.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
