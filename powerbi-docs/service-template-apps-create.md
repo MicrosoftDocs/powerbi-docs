@@ -60,6 +60,8 @@ To create a template app you can distribute to other Power BI tenants, you need 
     ![Develop a template app](media/service-template-apps-create/power-bi-template-app-develop.png)
 
 5. Select **Save**.
+>!Note
+>You need permissions from your Power BI admin to promote template apps.
 
 ## Create the content in your template app
 
@@ -87,7 +89,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
     - App name
     - Description
     - Support site (link is presented under app info after redistributing template app as org app)
-    - App logo (optional)
+    - App logo (45K file size limit, 1:1 aspect ratio, .png .jpg .jpeg formats)
     - App theme color
 
     **Content**
@@ -165,13 +167,15 @@ Let's go through the stages:
     ![Get started with your app](media/service-template-apps-create/power-bi-template-app-get-started.png)
 8. Select **Explore App** to verify the test app with the sample data.
 9. To make any changes, go back to the app in the original workspace. Update the test app until you're satisfied.
-10. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the **Release Management** pane and select **Promote app** next to **Testing**.
+10. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the **Release Management** pane and select **Promote app**. 
 
     ![Promote app to pre-production](media/service-template-apps-create/power-bi-template-app-promote.png)
-11. Select **Promote** to confirm your choice.
-12. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource by creating a [new Cloud Partner Portal offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Submit only pre-production links to the Cloud Partner Portal. Only after the app is approved and you get notification that it is published in AppSource, then you can promote this package to production in Power BI.
-13. When your app is ready for production or sharing via AppSource, go back to the **Release Management** pane and select **Promote app** next to **Pre-production**.
-14. Select **Promote** to confirm your choice.
+>!Note
+> When the app is promoted it becomes publicly available outside your organization.  
+1. Select **Promote** to confirm your choice.
+1. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource by creating a [new Cloud Partner Portal offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Submit only pre-production links to the Cloud Partner Portal. Only after the app is approved and you get notification that it is published in AppSource, then you can promote this package to production in Power BI.
+1. When your app is ready for production or sharing via AppSource, go back to the **Release Management** pane and select **Promote app** next to **Pre-production**.
+1. Select **Promote** to confirm your choice.
 
     Now your app is in production, and ready for distribution.
 
