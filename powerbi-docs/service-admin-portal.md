@@ -134,11 +134,11 @@ It is also possible to specify a URL to direct users to a custom solution for li
 
 ### Create workspaces
 
-Admins use this setting to decide which users in the organization can create app workspaces to collaborate on dashboards, reports, and other content. Learn more about [app workspaces](service-create-the-new-workspaces.md).
+Admins use the **Create workspaces** setting to indicate which users in the organization can create app workspaces to collaborate on dashboards, reports, and other content. Learn more about [app workspaces](service-create-the-new-workspaces.md).
 
 The admin portal has another section of settings about the workspaces in your tenant. In that section, you can sort and filter the list of workspaces and display the details for each workspace. See [Workspaces](#workspaces) for details.
 
-In the admin portal, you also control who has permissions to distribute the apps that users create in workspaces. See [Publish content packs and apps to the entire organization](#publish-content-packs-and-apps-to-the-entire-organization) for details.
+In the admin portal, you also control which users have permissions to distribute apps to the organization. See [Publish content packs and apps to the entire organization](#publish-content-packs-and-apps-to-the-entire-organization) in this article for details.
 
 ## Export and sharing settings
 
@@ -223,7 +223,7 @@ Users in the organization can create template apps and organizational content pa
 
 ### Push apps to end users
 
-Users can share apps directly with end users without requiring installation from AppSource. [Learn more](service-create-distribute-apps.md)
+Report creators can share apps directly with end users without requiring installation from AppSource. Learn more about [automatically installing apps for end users](service-create-distribute-apps.md#automatically-install-apps-for-end-users).
 
 ## Integration settings
 
