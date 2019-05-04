@@ -230,8 +230,7 @@ The Datasets page has different *areas*, which include  **Refreshes**, **Query D
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| Overall Usage | Total count: Number of AI functions in a workspace or dataflow. <br> Reliability: The percentage of refreshes that completed.<br> Avg. Wait Time: The average lag between the scheduled time and start of a refresh, in milliseconds.<br> Max Wait Time: The maximum wait time, in milliseconds.<br> Avg. Duration: The average duration of a refresh, in milliseconds.<br> Max Duration: The duration of the longest-running refresh, in milliseconds.<br> Avg Input Size: The average input size, in bytes, for the AI function executed by a dataflow refresh.<br> Avg Output size: The average output size, in bytes, for the AI function executed by a dataflow refresh.
-|
+| Overall Usage | Total count: Number of AI functions in a workspace or dataflow. <br> Reliability: The percentage of refreshes that completed.<br> Avg. Wait Time: The average lag between the scheduled time and start of a refresh, in milliseconds.<br> Max Wait Time: The maximum wait time, in milliseconds.<br> Avg. Duration: The average duration of a refresh, in milliseconds.<br> Max Duration: The duration of the longest-running refresh, in milliseconds.<br> Avg Input Size: The average input size, in bytes, for the AI function executed by a dataflow refresh.<br> Avg Output size: The average output size, in bytes, for the AI function executed by a dataflow refresh. |
 | Top 5 AI Functions by Average Duration | The five functions with the longest average refresh duration, in milliseconds. |
 | Top 5 AI Functions by Average Input Size | The five functions with the largest average data input size, in bytes. |
 | Hourly Refresh Count and Memory Consumption | Successes, failures, and memory consumption, split into one-hour buckets, reported in UTC time. |
