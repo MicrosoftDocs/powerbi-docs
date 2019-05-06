@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 04/23/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -30,7 +30,7 @@ Your account needs to be marked as a **Global Admin**, within Office 365 or Azur
 
     ![Settings to admin portal](media/service-admin-portal/powerbi-admin-settings.png)
 
-There are seven tabs in the portal. The rest of this article provides information about each of these tabs.
+There are nine tabs in the portal. The rest of this article provides information about each of these tabs.
 
 ![Admin portal navigation](media/service-admin-portal/powerbi-admin-landing-page.png)
 
@@ -40,7 +40,9 @@ There are seven tabs in the portal. The rest of this article provides informatio
 * [Tenant settings](#tenant-settings)
 * [Capacity settings](#capacity-settings)
 * [Embed codes](#embed-codes)
-* [Organizational visuals](#organizational-visuals)
+* [Organization visuals](#organization-visuals)
+* [Dataflow storage (preview)](#dataflowStorage)
+* [Workspaces](#workspaces)
 
 ## Usage metrics
 
@@ -148,7 +150,7 @@ Users in the organization can share dashboards with users outside the organizati
 
 The following image shows the message that appears when you share with an external user.
 
-![Share with external user](media/service-admin-portal/powerbi-admin-sharing-external.png)
+![Share with external user](media/service-admin-portal/powerbi-admin-sharing-external.png)  
 
 ### Publish to web
 
@@ -221,7 +223,7 @@ Users in the organization can create template content packs and apps that use da
 
 ### Push apps to end users
 
-Users can share apps directly with end users without requiring installation from AppSource. [Learn more](service-create-distribute-apps.md)
+Users can share apps directly with end users without requiring installation from [AppSource](https://appsource.microsoft.com). [Learn more](service-create-distribute-apps.md)
 
 ## Integration settings
 
@@ -365,13 +367,13 @@ Two settings control template apps.
 
 ### Create Template Apps (preview)
 
-Users in the organization can create template apps. Template app creators can then distribute them to clients outside your organization by way of AppSource or other distribution methods.
+Users in the organization can create template apps. Template app creators can then distribute them to clients outside your organization by way of [AppSource](https://appsource.microsoft.com) or other distribution methods.
 
 ![Power BI admin portal, Create template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
 
 ### Install template apps (preview)
 
-Users in the organization can download and install template apps from AppSource or another source.
+Users in the organization can download and install template apps from [AppSource](https://appsource.microsoft.com) or another source.
 
 > [!NOTE]
 > This setting determines which users can install template apps on their Power BI accounts.
@@ -396,9 +398,9 @@ As an administrator, you can view the embed codes that are generated for your te
 
 ![Embed codes within the Power BI admin portal](media/service-admin-portal/embed-codes.png)
 
-## Organizational visuals
+## <a name="organizational-visuals">Organization visuals</a>
 
-The **Organizational visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization.md)
+The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the organization's repository.
@@ -456,7 +458,7 @@ Make sure the Visual ID remains unchanged. The new file replaces the previous fi
 
 For more information, visit [Frequently asked questions about organizational custom visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
 
-## Dataflow storage (preview)
+## <a name="dataflowStorage">Dataflow storage (preview)</a>
 
 By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md).
 
@@ -472,4 +474,4 @@ As an administrator, you can view the workspaces that exist in your tenant. You 
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  [Understanding the Power BI admin role](service-admin-role.md)  
 [Auditing Power BI in your organization](service-admin-auditing.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
