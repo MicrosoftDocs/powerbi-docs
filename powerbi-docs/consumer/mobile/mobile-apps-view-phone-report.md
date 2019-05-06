@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 04/22/2019
 ms.author: mshenhav
 
 ---
@@ -73,14 +73,26 @@ Some actions are only possible in focus mode, due to screen size constraints:
     Revert is available at the report level, clearing exploration from all visuals, or at the visual level, clearing exploration from the selected visual.   
 
 ## Drill down in a visual
-If hierarchy levels are defined in a visual, you can drill down into the detailed information displayed in a visual, then back up. You [add drill-down to a visual](../end-user-drill.md) either in the Power BI service or in Power BI Desktop. Drill-down only works in phone-optimized Power BI reports when you view them on a phone. 
+If hierarchy levels are defined in a visual, you can drill down into the detailed information displayed in a visual, then back up. You [add drill-down to a visual](../end-user-drill.md) either in the Power BI service or in Power BI Desktop.
 
+There are few types of drill-down:
+
+### Drill down on a value
+1. Long tap (tap and hold) on a data point in a visual.
+2. Tooltip will show up, and if hierarchy is defined, then the tooltip footer will show drill down and up arrow.
+3. Tap on the down arrow for drill-down
+
+    ![Tap drill down](././media/mobile-apps-view-phone-report/report-drill-down.png)
+    
+4. Tap on the up arrow for drill-up.
+
+### Drill to next level
 1. In a report on a phone, tap the ellipsis (**...**) in the upper-right corner > **Expand to focus mode**.
    
     ![Expand to focus mode](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
    
     In this example, the bars show the values for states.
-2. Tap the explore icon ![Explore icon](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) in the lower-left.
+2. Tap the explore icon ![Explore icon](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) in the lower left.
    
     ![Explore mode](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-mode.png)
 3. Tap **Show next level** or **Expand to next level**.
@@ -96,6 +108,23 @@ If hierarchy levels are defined in a visual, you can drill down into the detaile
 5. To go back up to the original level, tap the ellipsis (**...**) again > **Revert**.
    
     ![Revert](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
+
+## Drill through from a value
+Drill through connects values in one report page, with other report pages. When you drill through from a data point to another report page, the data point values are used to filter the drilled through page, or it will be in the context of the selected data.
+Report authors can [define drill through](https://docs.microsoft.com/power-bi/desktop-drillthrough) when they create the report.
+
+1. Long tap (tap and hold) on a data point in a visual.
+2. Tooltip will show up, and if drill through is defined, then the tooltip footer will show drill through arrow.
+3. Tap on the arrow for drill through
+
+    ![Tap drill through](././media/mobile-apps-view-phone-report/report-drill-through1.png)
+
+4. Choose which report page to drill through
+
+    ![Choose report page](././media/mobile-apps-view-phone-report/report-drill-through2.png)
+
+5. Use the back button, at the app header to go back to the page you started from.
+
 
 ## Next steps
 * [Create reports optimized for the Power BI phone apps](../../desktop-create-phone-report.md)
