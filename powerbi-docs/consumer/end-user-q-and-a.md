@@ -32,7 +32,7 @@ You’ll be delighted by the insights and discoveries you make.
 The experience is truly interactive…and fast! Powered by an in-memory storage, response is almost instantaneous.
 
 ## Where can I use Q&A?
-You'll find Q&A on dashboards in Power BI service, at the bottom of the dashboard in Power BI mobile, and above the visualization in Power BI Embedded. 
+You'll find Q&A on dashboards and reports in Power BI service, and at the bottom of the dashboard in Power BI mobile. 
 Unless the designer has given you edit permissions, you'll be able to use Q&A to explore data but won't be able to save any visualizations created with Q&A.
 
 ![question box](media/end-user-q-and-a/powerbi-qna.png)
@@ -68,7 +68,7 @@ You can also tell Q&A which visualization to use by adding it to your question. 
 **Answer 1**: If you don't see a question box, first check your settings. To do this, select the cog icon in the upper right corner of your Power BI toolbar.   
 ![cog icon](media/end-user-q-and-a/power-bi-settings.png)
 
-Then choose **Settings** > **Dashboards**. Make sure there is a checkmark next to **Show the Q&A search box on this dashboard**.
+Then choose **Settings** > **Dashboards**. Make sure there is a checkmark next to **Show the Q&A search box on this dashboard**.    
 ![Q&A settings for dashboard](media/end-user-q-and-a/power-bi-turn-on.png)  
 
 
