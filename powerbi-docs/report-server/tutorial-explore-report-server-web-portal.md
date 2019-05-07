@@ -80,13 +80,13 @@ Luckily, the Power BI team has created a VM that comes with Power BI Report Serv
 
     ![Connect to the virtual machine](media/tutorial-explore-report-server-web-portal/power-bi-report-server-connect-to-virtual-machine.png)
 
-5. In the **Connect to virtual machine** pane, keeps the defaults and select **Download RDP File**.
+5. In the **Connect to virtual machine** pane, keep the defaults and select **Download RDP File**.
 
 1. In the **Remote Desktop Connection** dialog box, select **Connect**.
 
 6. Enter the name and password you created for the VM > **OK**.
 
-7. In the next dialog box that says **The identity of the remote computer cannot be identified**, select **Yes**.
+7. The next dialog box says **The identity of the remote computer cannot be identified**. Select **Yes**.
 
    Voila, your new VM opens.
 
@@ -94,7 +94,7 @@ Luckily, the Power BI team has created a VM that comes with Power BI Report Serv
 
 When your VM opens, here are the items you see on the desktop.
 
-![Power BI Report Server virtual machine starts](media/tutorial-explore-report-server-web-portal/power-bi-report-server-vm-numbered.png)
+![Power BI Report Server virtual machine starts](media/tutorial-explore-report-server-web-portal/power-bi-report-server-vm-5-numbers.png)
 
 |Number  |What it is  |
 |---------|---------|
