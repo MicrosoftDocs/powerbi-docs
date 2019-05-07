@@ -29,6 +29,7 @@ A Power BI report is an interactive view of your data, with visuals representing
 Power BI reports are stored in different places in the mobile app, depending on where you got them. They can be in Apps, Shared with me, Workspaces (including My Workspace), or on a report server. Sometimes you go through a related dashboard to get to a report, and sometimes they're listed.
 
 In lists and menus, you will find an icon next to a report name, helping you understand that this item is a report. 
+
 ![reports in my workspace](./media/mobile-reports-in-the-mobile-apps/reports-my-workspace.png) 
 
 There are two icons for reports in Power BI Mobile apps:
@@ -96,7 +97,7 @@ Tapping on the ... option in the report footer, will bring all the actions you c
 
 Some of the actions might be disabled, since they are dependent on the specific report capabilities.
 For example:
-1) **Filter by current location** is enabled if the data in your report was categorized by the author with geographical data. [Larn how to Identify geographic data in your report](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
+1) **Filter by current location** is enabled if the data in your report was categorized by the author with geographical data. [Learn how to Identify geographic data in your report](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
 2) **Scan to filter the report by barcode** is enabled only if the dataset in your report was tagged as barcode. [How you tag barcodes in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes). 
 3) **Invite** is enabled only if you have permission to share this report with others. You will have permission only if you are the owner of the report or if you were given reshare permission by the owner.
 4) **Annotate and share** might be disable if there is an [Intune protection policy](https://docs.microsoft.com/intune/app-protection-policies) in your organization that prohibited sharing from Power BI Mobile app. 
