@@ -94,7 +94,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     **Content**
 
-    App landing page: Define a report or dashboard to be the landing page of your app (Use a landing page that will give the right impression):
+    **App landing page:** Define a report or dashboard to be the landing page of your app, use a landing page that will give the right impression:
 
     ![Content](media/service-template-apps-create/power-bi-create-content.png)
 
@@ -172,10 +172,10 @@ Let's go through the stages:
     ![Promote app to pre-production](media/service-template-apps-create/power-bi-template-app-promote.png)
 >!Note
 > When the app is promoted it becomes publicly available outside your organization.  
-1. Select **Promote** to confirm your choice.
-1. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource by creating a [new Cloud Partner Portal offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Submit only pre-production links to the Cloud Partner Portal. Only after the app is approved and you get notification that it is published in AppSource, then you can promote this package to production in Power BI.
-1. When your app is ready for production or sharing via AppSource, go back to the **Release Management** pane and select **Promote app** next to **Pre-production**.
-1. Select **Promote** to confirm your choice.
+11. Select **Promote** to confirm your choice.
+12. Copy this new URL to share outside your tenant for testing. This link is also the one you submit to begin the process of distributing your app on AppSource by creating a [new Cloud Partner Portal offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Submit only pre-production links to the Cloud Partner Portal. Only after the app is approved and you get notification that it is published in AppSource, then you can promote this package to production in Power BI.
+13. When your app is ready for production or sharing via AppSource, go back to the **Release Management** pane and select **Promote app** next to **Pre-production**.
+14. Select **Promote** to confirm your choice.
 
     Now your app is in production, and ready for distribution.
 
