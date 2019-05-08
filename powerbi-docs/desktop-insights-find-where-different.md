@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -44,7 +44,7 @@ To use insights to find where distributions seen on charts are different, just r
 
 The values with the selected filter applied are shown using the normal default color. The overall values, as seen on the original starting visual, are shown in grey for easy comparison. Up to three different filters might be included (*Touring Bikes*, *Mountain Bikes*, *Road Bikes* in this example) and different filters can be chosen by clicking on them (or using ctrl-click to select multiple).
 
-For simple additive measures, like *Total Sales* in this example, the comparison is based on the relative, rather than absolute, values. Hence while the sales for Touring Bikes is certainly lower than overall sales for all categories, by default the visual uses a dual axis to allow the comparison between the proportion of sales across different countries, for Touring Bikes versus all categories of bikes.  Switching the toggle below the visual allows the two values to be displayed in the same axis, allowing the absolute values to easily be compared (as shown in the following image).    
+For simple additive measures, like *Total Sales* in this example, the comparison is based on the relative, rather than absolute, values. Hence while the sales for Touring Bikes are lower than overall sales for all categories, by default the visual uses a dual axis to allow the comparison between the proportion of sales across different countries, for Touring Bikes versus all categories of bikes.  Switching the toggle below the visual allows the two values to be displayed in the same axis, allowing the absolute values to easily be compared (as shown in the following image).    
 
 ![visuals shown when using insights](media/desktop-insights-find-where-different/find-where-different_04.png)
 
@@ -59,7 +59,7 @@ You can use insights when your report is in reading or editing mode, making it v
 ## Details of the returned results
 You can think of the algorithm as taking all the other columns in the model, and for all of the values of those columns, applying them as filters to the original visual, and finding which of those filter values produces the most *different* result from the original.
 
-Of course, you likely wonder what *different* means. For example, say that the overall split of sales between the USA and Canada was the following:
+You likely wonder what *different* means. For example, say that the overall split of sales between the USA and Canada was the following:
 
 |Country  |Sales ($M)|
 |---------|----------|
@@ -93,7 +93,7 @@ Given the nature of such measures, this *is* considered interestingly different.
 
 The visuals displayed are thus intended to clearly show the differences found between the overall distribution (as seen in the original visual) and the value with the particular filter applied.  
 
-So for additive measures, like *Sales* in the previous example, a column and line chart is used, where the use of a dual axis with appropriate scaling such that the relative values can easily be compared. The columns show the value with the filter applied, and the line shows the overall value (with the column axis being on the left, and the line axis on the right, as normal). The line is shown using a *stepped* style, with a dashed line, filled with grey, For the previous example, if the column axis maximum value is 4, and the line axis maximum value is 20, then it would allow easy comparison of the relative values between USA and Canada for the filtered and overall values. 
+So for additive measures, like *Sales* in the previous example, a column and line chart is used, where the use of a dual axis with appropriate scaling such that the relative values can easily be compared. The columns show the value with the filter applied, and the line shows the overall value (with the column axis being on the left, and the line axis on the right, as normal). The line is shown using a *stepped* style, with a dashed line, filled with grey. For the previous example, if the column axis maximum value is 4, and the line axis maximum value is 20, then it would allow easy comparison of the relative values between USA and Canada for the filtered and overall values. 
 
 Similarly, for non-additive measures like *Margin* in the previous example, a column and line chart is used, where the use of a single axis means the absolute values can easily be compared. Again the line (filled with grey) shows the overall value. Whether comparing actual or relative numbers, the determination of the degree to which two distributions are different is not simply a matter of calculating the difference in the values. For example:
 
@@ -103,7 +103,7 @@ Similarly, for non-additive measures like *Margin* in the previous example, a co
 
 * Various heuristics are employed to select the most meaningful results, for example by considering other relationships between the data.
      
-After examining different columns, and the values for each of those columns, the set of values that give the biggest differences are chosen. For ease of understanding, these are then output grouped by column, with the column whose values give the biggest difference listed first. Up to three values are shown per column, but less might be shown either if there were less than three values that have a large effect, or if some values are much more impactful than others. 
+After examining different columns, and the values for each of those columns, the set of values that give the biggest differences are chosen. For ease of understanding, these are then output grouped by column, with the column whose values give the biggest difference listed first. Up to three values are shown per column, but less might be shown either if there were fewer than three values that have a large effect, or if some values are much more impactful than others. 
 
 It is not necessarily the case that all of the columns in the model will be examined in the time available, so it is not guaranteed that the most impactful columns and values are displayed. However, various heuristics are employed to ensure that the most likely columns are examined first. For example, say that after examining all the columns, it is determined that the following columns/values have the biggest impact on the distribution, from most impact to least:
 

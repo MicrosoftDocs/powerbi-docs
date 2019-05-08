@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 04/23/2019
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -131,12 +131,12 @@ The AAD setting that controls sign up is **AllowAdHocSubscriptions**. In most te
      connect-msolservice -credential $msolcred
     ```
 
-   ![Azure Active Directory sign in](media/service-admin-licensing-organization/aad-signin.png)
+   ![Azure Active Directory sign in](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
-1. Once you are signed in, run the following command to see how your tenant is currently configured.
+1. Once you are signed in, run the following command to see how your tenant is currently configured. (Note that 'fl' below uses the letter 'l', not the number 1.)
 
     ```powershell
-     Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
+     Get-MsolCompanyInformation | fl AllowAdHocSubscriptions 
     ```
 1. Run the following command to enable ($true) or disable ($false) **AllowAdHocSubscriptions**.
 

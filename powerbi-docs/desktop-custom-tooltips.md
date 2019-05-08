@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/07/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -18,10 +18,10 @@ Tooltips are an elegant way of providing more contextual information and detail 
 
 ![Default tooltip](media/desktop-custom-tooltips/custom-tooltips-1.png)
 
-When a visualization is created, the default tooltip displays the data point's value and category. There are many instances when being able to customize the tooltip information would be useful, and would provide additional context and information for users viewing the visual. Custom tooltips enable you to specify additional data points that display as part of the tooltip.
+When a visualization is created, the default tooltip displays the data point's value and category. There are many instances when customizing the tooltip information is useful, and could provide additional context and information for users viewing the visual. Custom tooltips enable you to specify additional data points that display as part of the tooltip.
 
 ## How to customize tooltips
-To create a customized tooltip, in the **Fields** well of the **Visualizations** pane, simply drag a field into the **Tooltips** bucket, shown in the following image. In the following image, two fields have been placed into the **Tooltips** bucket.
+To create a customized tooltip, in the **Fields** well of the **Visualizations** pane drag a field into the **Tooltips** bucket, shown in the following image. In the following image, two fields have been placed into the **Tooltips** bucket.
 
 ![Adding tooltip fields](media/desktop-custom-tooltips/custom-tooltips-2.png)
 
@@ -34,5 +34,5 @@ You can further customize a tooltip by selecting an aggregation function or a *Q
 
 ![Tooltip with Quick Calc](media/desktop-custom-tooltips/custom-tooltips-4.png)
 
-There are many ways to customize **Tooltips**, using any field available in your dataset, to convey quick information and insights to users viewing your dashboards or reports.
+There are many ways to customize **tooltips**, using any field available in your dataset, to convey quick information and insights to users viewing your dashboards or reports.
 

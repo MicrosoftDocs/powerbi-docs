@@ -1,22 +1,20 @@
 ---
-title: Closing your Power BI Account
-description: Closing your Power BI Account
+title: Close your Power BI account
+description: If you don't want to use Power BI any longer, you can close your Power BI account.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 04/26/2019
 ms.author: mblythe
-
 LocalizationGroup: Administration
 ---
 
-# Closing your Power BI Account
+# Close your Power BI account
 
-If you don't want to use Power BI any longer, you can close your Power BI account.  After your account is closed, you can no longer sign in to Power BI. Any customer data you uploaded or created in Power BI is deleted, according to the data retention policy in the Power BI Terms of Service.
+If you don't want to use Power BI any longer, you can close your Power BI account.  After you close your account, you can't sign in to Power BI. Also, as it states in the data retention policy in the Power BI Terms of Service, Power BI deletes any customer data you uploaded or created. It is not retained.
 
 ## Individual Power BI users
 
@@ -24,28 +22,28 @@ If you signed up for Power BI as an individual, you can close your account from 
 
 1. In Power BI, select the gear in the upper right, then select **Settings**.
 
-    ![Settings](media/service-admin-closing-your-account/closeaccount-settings.png)
+    ![Screenshot of the upper-right corner of the UI with the gear icon and the settings option called out.](media/service-admin-closing-your-account/close-account-settings.png)
 
 1. On the **General** tab, select **Close Account**.
 
-    ![Close account](media/service-admin-closing-your-account/closeaccount-settings2.png)
+    ![Screenshot of the upper-left corner of the settings page with the Close account option called out.](media/service-admin-closing-your-account/close-account-settings-2.png)
 
 1. Select a reason for closing the account (1). You can also provide further information (2). Then select **Close account**.
 
-    ![Select a reason](media/service-admin-closing-your-account/closeaccount-settings3.png)
+    ![Screenshot of the Close account dialog with the Close account option called out.](media/service-admin-closing-your-account/close-account-settings-3.png)
 
 1. Confirm that you want to close your account.
 
-    ![Confirm closure](media/service-admin-closing-your-account/closeaccount-settings4.png)
+    ![Screenshot of the Close account confirmation dialog with the Yes option called out.](media/service-admin-closing-your-account/close-account-settings-4.png)
 
-    You should see a confirmation that your account is closed. You can reopen your account from here if necessary.
+    You should see a confirmation that Power BI closed your account. You can reopen your account from here if necessary.
 
-    ![Account confirmation](media/service-admin-closing-your-account/closeaccount-settings5.png)
+    ![Screenshot of the Your account is closed dialog.](media/service-admin-closing-your-account/close-account-settings-5.png)
 
 ## Managed tenant users
 
 If your organization signed you up for Power BI, contact your tenant admin. Ask them to unassign the license from your account.
 
-![Managed close account](media/service-admin-closing-your-account/closeaccountmanaged.png)
+![Managed close account](media/service-admin-closing-your-account/close-account-managed.png)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/19/2019
+ms.date: 05/02/2019
 LocalizationGroup: Conceptual
 ---
 
@@ -41,7 +41,7 @@ Each Power BI deployment consists of two clusters – a Web Front End (**WFE**) 
 
 ![The WFE and Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-Power BI uses Azure Active Directory (**AAD**) for account authentication and management. Power BI also uses the **Azure Traffic Manager (ATM)** to direct user traffic to the nearest datacenter, determined by the DNS record of the client attempting to connect, for the authentication process and to download static content and files. Power BI uses the **Azure Content Delivery Network (CDN)** to efficiently distribute the necessary static content and files to users based on geographical locale.
+Power BI uses Azure Active Directory (**AAD**) for account authentication and management. Power BI also uses the **Azure Traffic Manager (ATM)** to direct user traffic to the nearest datacenter, determined by the DNS record of the client attempting to connect, for the authentication process and to download static content and files. Power BI uses the geographically closest WFE to efficiently distribute the necessary static content and files to users, with the exception of custom visuals which are delivered using the **Azure Content Delivery Network (CDN)**.
 
 ### The WFE Cluster
 
@@ -226,7 +226,7 @@ For cloud-based data sources, the Data Movement Role encrypts encryption keys us
 
     b. ETL – encrypted in Azure Blob storage, but all data currently in Azure Blob storage of the Power BI service uses [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well.
 
-    c. Push data v1 – stored encrypted in Azure Blob storage, but all data currently in Azure Blob storage in the Power BI service uses [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well.
+    c. Push data v1 – stored encrypted in Azure Blob storage, but all data currently in Azure Blob storage in the Power BI service uses [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well. Push data v1 were discontinued beginning 2016. 
 
     d. Push data v2 – stored encrypted in Azure SQL.
 
@@ -277,7 +277,7 @@ Regardless of the encryption method used, Microsoft manages the key encryption o
 
 ### Data Transiently Stored on Non-Volatile Devices
 
-The following describes data that is transiently stored on non-volatile devices.
+Non-volatile devices are devices that have memory that persists without constant power. The following describes data that is transiently stored on non-volatile devices. 
 
 #### Datasets
 
@@ -290,6 +290,9 @@ The following describes data that is transiently stored on non-volatile devices.
     a. Analysis Services on-premises – nothing is stored
 
     b. DirectQuery – This depends whether the model is created in the service directly in which case it is stored in the connection string, in encrypted format with the encryption key stored in clear text in the same place (alongside the encrypted information); or if the model is imported from Power BI Desktop in which case the credentials are not stored on non-volatile devices.
+
+    > [!NOTE]
+    > The service-side model creation feature were discontinued beginning in 2017.
 
     c. Pushed data – none (not applicable)
 
