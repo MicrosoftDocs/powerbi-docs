@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 04/15/2019
+ms.date: 05/9/2019
 ---
 
 # Certified custom visuals
@@ -41,12 +41,18 @@ To get your custom visual [certified](#certified-custom-visuals), make sure your
 
 * Microsoft AppSource approved. Your custom visual should be in our [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
 * Custom visual is written with versioned **API v2.5** or higher.
-* Code repository available for review by Power BI team (for instance, source code (JavaScript or TypeScript) in human readable format available to us, through GitHub).
+* Code repository is available for review by Power BI team (for instance, source code (JavaScript or TypeScript) in human readable format is available to us, through GitHub).
 
     >[!Note]
     > You don’t have to publicly share your code in Github.
 * Code repository requirements:
-   * Must include package.json and package-lock.json.
+   * Must include the minimal required set of files:
+      * .gitignore
+      * capabilities.json
+      * pbiviz.json
+      * package.json
+      * package-lock.json
+      * tsconfig.json
    * Must not include node_modules folder (add node_modules to .gitingore file)
    * **npm install** command must not return any errors.
    * **npm audit** command must not return any warnings with high or moderate level.
