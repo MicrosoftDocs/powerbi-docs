@@ -33,7 +33,7 @@ In the example below:
 
 - **Segment**, **Country**, **Product**, **Month**, and **Month Name** contain categorical data
 
-   ![Sample data set](media/service-aggregates/power-bi-aggregate-chart.png)
+   ![Screenshot of a sample data set.](media/service-aggregates/power-bi-aggregate-chart.png)
 
 When creating a visualization in Power BI, the service will aggregate numeric fields (the default is *sum*) over some categorical field.  For example, "Units Sold ***by Product***", "Units Sold ***by Month***" and "Manufacturing Price ***by Segment***". Power BI refers to some numeric fields as **measures**. It's easy to identify measures in the Power BI report editor -- The **Fields** list shows measures with the ∑ symbol next to them. See [The report editor... take a tour](service-the-report-editor-take-a-tour.md) for more info.
 
@@ -64,7 +64,7 @@ Say you have a chart that sums the units sold for different products, but you'd 
 
 1. Your visualization is now using aggregated by average.
 
-   ![Screenshot of the chart now displaying Average of Units Sold by Product.](media/service-aggregates/power-bi-aggregate-average2.png)
+   ![Screenshot of the chart now displaying Average of Units Sold by Product.](media/service-aggregates/power-bi-aggregate-average-2.png)
 
 ## Ways to aggregate your data
 
@@ -128,21 +128,21 @@ Would give the following results:
 
 You can also aggregate a non-numeric field. For example, if you have a product name field, you can add it as a value and then set it to **Count**, **Distinct count**, **First**, or **Last**.
 
-1. In this example, we've dragged the **Product** field into the **Values** well. The **Values** well is typically used for numeric fields. Power BI recognizes that this field is a text field, sets the aggregate to **Do not summarize**, and presents us with a single-column table.
+1. Drag the **Product** field into the **Values** well. The **Values** well is typically used for numeric fields. Power BI recognizes that this field is a text field, sets the aggregate to **Do not summarize**, and presents you with a single-column table.
 
-   ![Product field in the values well](media/service-aggregates/power-bi-aggregate-value.png)
+   ![Screenshot of the Product field in the Values well.](media/service-aggregates/power-bi-aggregate-value.png)
 
-1. If we change the aggregation from the default **Do not summarize** to **Count (Distinct)**, Power BI counts the number of different products. In this case, there are 4.
+1. If you change the aggregation from the default **Do not summarize** to **Count (Distinct)**, Power BI counts the number of different products. In this case, there are four.
   
-   ![Count distinct of products](media/service-aggregates/power-bi-aggregates-count.png)
+   ![Screenshot of the distinct count of products.](media/service-aggregates/power-bi-aggregate-count.png)
 
-1. And if we change the aggregation to **Count**, Power BI counts the total number. In this case, there are seven entries for **Product**.
+1. And if you change the aggregation to **Count**, Power BI counts the total number. In this case, there are seven entries for **Product**.
 
-   ![Count of products](media/service-aggregates/power-bi-aggregate-count2.png)
+   ![Screenshot of the count of products.](media/service-aggregates/power-bi-aggregate-count-2.png)
 
 1. By dragging the same field (in this case **Product**) into the **Values** well, and leaving the default aggregation **Do not summarize**, Power BI breaks down the count by product.
 
-   ![Product and count of products](media/service-aggregates/power-bi-aggregate-final.png)
+   ![Screenshot of the product and the count of products.](media/service-aggregates/power-bi-aggregate-final.png)
 
 ## Considerations and Troubleshooting
 
@@ -158,7 +158,7 @@ A2: If the field has a calculator icon, that means it's a *calculated measure*. 
 
 A3:  Another possibility is that you've dropped the field into a *bucket* that only allows categorical values.  In that case, your only options will be count and distinct count.
 
-A4:  And a third possibility is that you're using the field for an axis. On a bar chart axis, for example, Power BI shows one bar for each distinct value -- it doesn't aggregate the field values at all.
+A4:  And a fourth possibility is that you're using the field for an axis. On a bar chart axis, for example, Power BI shows one bar for each distinct value -- it doesn't aggregate the field values at all.
 
 >[!NOTE]
 >The exception to this rule is scatter charts, which *require* aggregated values for the X and Y axes.
