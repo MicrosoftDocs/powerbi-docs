@@ -15,7 +15,7 @@ LocalizationGroup: Create reports
 ---
 # Multi-select data elements in visuals using Power BI Desktop
 
-In **Power BI Desktop** you can highlight a data point in a given visual by simply clicking on the data point in the visual. For example, if you have an important bar or chart element, and you want other visuals on the report page to highlight data based on your selection, you can click the data element in one visual and see results reflected in other visuals on the page. This is basic, or single-select highlighting. The following image shows a basic highlight. 
+In Power BI Desktop,** you can highlight a data point in a given visual by simply clicking on the data point in the visual. For example, if you have an important bar or chart element, and you want other visuals on the report page to highlight data based on your selection, you can click the data element in one visual and see results reflected in other visuals on the page. This is basic, or single-select highlighting. The following image shows a basic highlight. 
 
 ![](media/desktop-multi-select/multi-select_01.png)
 
