@@ -21,11 +21,11 @@ Sometimes you want to mathematically combine values in your data. The mathematic
 
 When Power BI service and Power BI Desktop create visualizations, they may aggregate your data. Often the aggregate is just what you need, but other times you may want to aggregate the values in a different way.  For example, a sum versus an average. There are several different ways to manage and change the aggregate Power BI uses in a visualization.
 
-First, let's take a look at data *types* because the type of data determines how, and if, Power BI can aggregate it.
+First, let's take a look at data *types* because the type of data determines how, and whether, Power BI can aggregate it.
 
 ## Types of data
 
-Most datasets have more than one type of data. At the most basic level, the data is either numeric or it isn't. Power BI can aggregate numeric data using a sum, average, count, minimum, variance, and much more. The service can even aggregate textual data, often called *categorical* data. If you try to aggregate a categorical field by placing it in a numeric only bucket like **Values** or **Tooltips**, Power BI will count the occurrences of each category or count the distinct occurrences of each category. Special types of data, like dates, have a few of their own aggregate options: earliest, latest, first, and last.
+Most datasets have more than one type of data. At the most basic level, the data is either numeric or it isn't. Power BI can aggregate numeric data using a sum, average, count, minimum, variance, and much more. The service can even aggregate textual data, often called *categorical* data. If you try to aggregate a categorical field by placing it in a numeric-only bucket like **Values** or **Tooltips**, Power BI will count the occurrences of each category or count the distinct occurrences of each category. Special types of data, like dates, have a few of their own aggregate options: earliest, latest, first, and last.
 
 In the example below:
 
@@ -43,9 +43,9 @@ When creating a visualization in Power BI, the service will aggregate numeric fi
 
 Working with aggregates in Power BI service can be confusing. Maybe you have a numeric field and Power BI won't let you change the aggregation. Or maybe you have a field, like a year, and you don't want to aggregate it, you just want to count the number of occurrences.
 
-Most often, the source of the problem is how the dataset owner who created it defined the field in the dataset. Maybe the dataset owner defined the field as text and that explains why Power BI can't sum or average it. Unfortunately, [only the dataset owner can change the way a field is categorized](desktop-measures.md). So if you have owner permissions to the dataset, either in Desktop or the program used to create the dataset (for example, Excel), you can fix this problem. Otherwise, you'll need to contact the dataset owner for help.  
+Typically, the underlying issue is the field definition in the dataset. Maybe the dataset owner defined the field as text and that explains why Power BI can't sum or average it. Unfortunately, [only the dataset owner can change the way a field is categorized](desktop-measures.md). So if you have owner permissions to the dataset, either in Desktop or the program used to create the dataset (for example, Excel), you can fix this problem. Otherwise, you'll need to contact the dataset owner for help.  
 
-To help you navigate the confusion, there is a special section at the end of this article called [**Considerations and troubleshooting**](#considerations-and-troubleshooting). If you don't find your answer there, post your question on the [Power BI Community forum](http://community.powerbi.com). You'll get a quick response directly from the Power BI team.
+There is a special section at the end of this article called [**Considerations and troubleshooting**](#considerations-and-troubleshooting). It provides tips and guidance. If you don't find your answer there, post your question on the [Power BI Community forum](http://community.powerbi.com). You'll get a quick response directly from the Power BI team.
 
 ## Change how a numeric field is aggregated
 
@@ -55,7 +55,7 @@ Say you have a chart that sums the units sold for different products, but you'd 
 
    ![Screenshot of the chart, Visualizations pane and Fields list with Sum called out.](media/service-aggregates/power-bi-aggregate-sum.png)
 
-1. In the **Visualizations** pane, right-click the measure, and select the aggregate type you need. In this case, we're selecting **Average**. If you don't see the aggregation you need, see "Considerations and troubleshooting" below.  
+1. In the **Visualizations** pane, right-click the measure, and select the aggregate type you need. In this case, we're selecting **Average**. If you don't see the aggregation you need, see the [**Considerations and troubleshooting**](#considerations-and-troubleshooting) section.
 
    ![Screenshot of the aggregate list with Average selected and called out.](media/service-aggregates/power-bi-aggregate-average.png)
 
@@ -152,7 +152,7 @@ A:  The field you've selected is likely a calculated measure or advanced measure
 
 Q:  My field **is** numeric, why are my only choices **Count** and **Distinct count**?
 
-A1:  The likely explanation is that the dataset owner has, accidentally or intentionally, *not* classified the field as a number. For example, if a dataset has a **year** field, the dataset owner may categorize the value as text. It's more likely that Power BI will count the **year** field (for example, number of people born in 1974). It's less likely that Power BI will sum or average it. If you're the owner, you can open the dataset in Power BI Desktop and use the **Modeling** tab to change the data type.
+A1:  The likely explanation is that the dataset owner has *not* classified the field as a number. For example, if a dataset has a **year** field, the dataset owner may categorize the value as text. It's more likely that Power BI will count the **year** field (for example, number of people born in 1974). It's less likely that Power BI will sum or average it. If you're the owner, you can open the dataset in Power BI Desktop and use the **Modeling** tab to change the data type.
 
 A2: If the field has a calculator icon, that means it's a *calculated measure*. Each calculated measure has its own hard-coded formula that only the dataset owner can change. The calculation Power BI uses may be a simple aggregation like an average or sum. It may also be something more complicated like a "percent of contribution to parent category" or "running total since start of the year". Power BI isn't going to sum or average the results. Instead, it will just recalculate (using the hard-coded formula) for each data point.
 

@@ -14,7 +14,7 @@ LocalizationGroup: Get started
 
 # Sign up for Power BI as an individual
 
-Power BI can be your personal report and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains how to sign up for a Power BI trial as an individual. If you're a Power BI admin, see [Power BI licensing in your organization](service-admin-licensing-organization.md).
+Power BI can be your personal report and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains how to sign up for a Power BI Pro trial as an individual. If you're a Power BI admin, see [Power BI licensing in your organization](service-admin-licensing-organization.md).
 
 ![Power BI dashboard](media/service-self-service-signup-for-power-bi/dashboard.png)
 
@@ -46,13 +46,13 @@ Follow these steps to sign up for a Power BI Pro trial. See the next section, [T
 
     ![Existing account](media/service-self-service-signup-for-power-bi/existing-account.png)
 
-1. Enter the code that you received then select **Sign up**.
-
-    ![Sign up](media/service-self-service-signup-for-power-bi/sign-up.png)
-
 1. Check your email for a message like this one.
 
     ![Email verification](media/service-self-service-signup-for-power-bi/email-verification.png)
+
+1. Enter the code that you received then select **Sign up**.
+
+    ![Sign up](media/service-self-service-signup-for-power-bi/sign-up.png)
 
 1. On the next screen, enter your information and the verification code from the email. Select a region, review the policies that are linked from this screen, then select **Start**.
 
@@ -64,13 +64,13 @@ Follow these steps to sign up for a Power BI Pro trial. See the next section, [T
 
 ## Trial expiration
 
-When your Power BI pro trial expires, your license changes to a Power BI (free) license. After this happens, you no longer have access to features that require a Power BI Pro license. For more information, see [Features by license type](service-features-license-type.md).
+When your Power BI Pro trial expires, your license changes to a Power BI (free) license. After this happens, you no longer have access to features that require a Power BI Pro license. For more information, see [Features by license type](service-features-license-type.md).
 
 If a Power BI (free) license is sufficient, you don't have to do anything else. To take advantage of Power BI Pro features, contact your IT admin about purchasing a Power BI Pro license.
 
 ## Troubleshooting the sign-up process
 
-In most cases, you can sign up for Power BI by following the described process. That said, there are issues that can prevent you from signing up. We cover these issues and workarounds in the following table.
+In most cases, you can sign up for Power BI by following the described process. Some of the issues that may prevent you from signing up are described in the following table, with possible workarounds.
 
 | Symptom / Error Message | Cause and Workaround |
 | ----------------------- | -------------------- |
