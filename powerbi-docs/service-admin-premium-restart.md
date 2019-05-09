@@ -27,7 +27,7 @@ Power BI is constantly improving in how it protects Premium capacity users again
 
 ## Is the restart process safe? Will I lose any data?
 
-All the saved data, definitions, reports, and dashboards on your capacity remain fully intact after restart. When you restart a capacity, all ongoing scheduled and ad-hoc refreshes are stopped. Refreshes are restarted when the capacity is available. Users interacting with the capacity will lose unsaved work. They should refresh their browsers after the restart is complete.
+All the saved data, definitions, reports, and dashboards on your capacity remain fully intact after restart. When you restart a capacity, all ongoing scheduled and ad-hoc refreshes are stopped. The service attempts to retry refreshes when the capacity is available. Users interacting with the capacity will lose unsaved work. They should refresh their browsers after the restart is complete.
 
 ## How do I restart a capacity?
 
