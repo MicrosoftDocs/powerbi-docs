@@ -1,5 +1,5 @@
 ---
-title: Connect to a PDF file in Power BI Desktop (Preview)
+title: Connect to a PDF file in Power BI Desktop
 description: Easily connect to and use data from PDF files in Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -8,26 +8,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# Connect to a PDF file in Power BI Desktop (Preview)
+# Connect to a PDF file in Power BI Desktop
 In Power BI Desktop, you can connect to a **PDF file** and use the included data from the file, just like any other data source in Power BI Desktop.
 
 ![Connect to data in PDF files](media/desktop-connect-pdf/connect-pdf_04.png)
 
 The following sections describe how to connect to a **PDF file**, select data, and bring that data into **Power BI Desktop**.
-
-## Enable the PDF connector
-The PDF connector is in preview for **Power BI Desktop**, and must be enabled. To enable the PDF connector, select **File > Options and Settings > Options > Preview features**, then select the checkbox beside **Get data from PDF files**. 
-
-![Enable the PDF connector from Options > Preview features](media/desktop-connect-pdf/connect-pdf_01.png)
-
-You'll need to restart **Power BI Desktop** after you make the selection.
-
-When you first use the **PDF (beta)** connector, you'll be warned that the PDF connector is still under development, and may change in the future. Select **Continue** to use the connector.
 
 We always recommend upgrading to the most recent release of **Power BI Desktop**, which you can get from a link in [get Power BI Desktop](desktop-get-the-desktop.md). 
 

@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -46,7 +46,7 @@ Let's create a simple example of using a **What if** parameter. We created the *
 
 ![](media/desktop-what-if/what-if_05.png)
 
-The new measure is simply going to be the total sales amount, with the discount rate applied. You can create complex and interesting measures, of course, that let the consumers of your reports visualize the variable of your **What if** parameter. For example, you could create a report that let sales people see their compensation if they meet certain sales goals or percentages, or see the affect of increased sales to deeper discounts.
+The new measure is simply going to be the total sales amount, with the discount rate applied. You can create complex and interesting measures, of course, that let the consumers of your reports visualize the variable of your **What if** parameter. For example, you could create a report that lets sales people see their compensation if they meet certain sales goals or percentages, or see the effect of increased sales to deeper discounts.
 
 Once we type the measure formula into the formula bar, and name it **Sales after Discount**, we see its result:
 
