@@ -46,13 +46,13 @@ Follow these steps to sign up for a Power BI Pro trial. See the next section, [T
 
     ![Existing account](media/service-self-service-signup-for-power-bi/existing-account.png)
 
-1. Check your email for a message like this one.
-
-    ![Email verification](media/service-self-service-signup-for-power-bi/email-verification.png)
-
 1. Enter the code that you received then select **Sign up**.
 
     ![Sign up](media/service-self-service-signup-for-power-bi/sign-up.png)
+
+1. Check your email for a message like this one.
+
+    ![Email verification](media/service-self-service-signup-for-power-bi/email-verification.png)
 
 1. On the next screen, enter your information and the verification code from the email. Select a region, review the policies that are linked from this screen, then select **Start**.
 
