@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 05/10/2019
 ms.author: chwade
 LocalizationGroup: Premium
 ---
@@ -154,3 +154,7 @@ let
 in
     #"Filtered Rows"
 ```
+
+## Limitations
+
+Currently, for [composite models](desktop-composite-models.md), incremental refresh is supported for SQL, Oracle, and Teradata data sources only.
