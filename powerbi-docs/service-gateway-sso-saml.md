@@ -70,7 +70,7 @@ The resulting IdP certificate will be valid for a year (see the -days option). N
 
     ![Configure SAML](media/service-gateway-sso-saml/configure-saml.png)
 
-1. Select the identity provider you created in step 2. For **External Identity** , enter the Power BI user's UPN, then select **Add**.
+1. Select the identity provider you created in step 2. For **External Identity**, enter the Power BI user's UPN (typically the email address the user logs in to Power BI with), then select **Add**. Note that if you've configured your Gateway to use the ADUserNameReplacementProperty configuration option you should enter the value that will replace the Power BI user's original UPN. For example, if you set the ADUserNameReplacementProperty to SAMAccountName you should enter the user's SAMAccountName.
 
     ![Select identity provider](media/service-gateway-sso-saml/select-identity-provider.png)
 
