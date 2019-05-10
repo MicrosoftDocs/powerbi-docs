@@ -22,13 +22,11 @@ Here's how to get an authentication access token.
 ## Get an authentication access token
 
 > **NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dataset](walkthrough-push-data.md) walkthrough.
-> 
-> 
 
-1. In Visual Studio 2015, create a **Console Application** project.
-2. Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
+1. In Visual Studio (2015 or later), create a **Console Application** project.
+2. Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
 
-     a. In Visual Studio 2015, choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
+     a. In Visual Studio (2015 or later), choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
 
      b. In **Package Manager Console**, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
 3. Add the code below into class Program {...}.
