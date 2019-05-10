@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: hub-page
-ms.date: 04/09/2019
+ms.date: 05/10/2019
 ms.author: mihart
 layout: HubPage
 ms.custom: seodec18
