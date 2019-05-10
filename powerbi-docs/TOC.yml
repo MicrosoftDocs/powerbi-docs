@@ -1251,6 +1251,8 @@
       href: service-gateway-install.md
     - name: "Manage gateways"
       href: service-gateway-manage.md
+    - name: "Monitor gateway performance"
+      href: service-gateway-performance-monitoring.md
     - name: "Manage your enterprise data source - Analysis Services"
       href: service-gateway-enterprise-manage-ssas.md
     - name: "Manage your enterprise data source - SAP HANA"
