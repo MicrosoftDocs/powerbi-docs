@@ -19,7 +19,40 @@ To monitor performance, gateway admins have traditionally depended on manually m
 > [!NOTE]
 > This feature is currently available only for the on-premises data gateway in the standard mode and not for the personal mode.
 
-## Log files
+## Enable performance logging
+
+To enable this feature, make the following changes to the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file in the "\Program Files\On-premises data gateway" folder:
+
+1. Update **QueryExecutionReportOn** to _True_ to enable additional logging for queries executed using the gateway. Enabling this option creates both the Query Execution Report and the Query Execution Aggregation Report files.
+
+   ``` xml
+   <setting name="QueryExecutionReportOn" serializeAs="String">
+     <value>True</value>
+   </setting>
+   ```
+
+1. Update **SystemCounterReportOn** to _True_ to enable additional logging for memory and CPU system counters. Enabling this option creates the System Counter Aggregation Report file.
+
+   ```xml
+   <setting name="SystemCounterReportOn" serializeAs="String">
+     <value>True</value>
+   </setting>
+   ```
+
+1. There are other values in the config file that you can update as needed.
+
+    - **ReportFilePath**: Determines the path where the three log files are stored. By default, this path is either "\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report" or "Windows\ServiceProfiles\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report", depending on the OS version. If you use a service account for the gateway other than _PBIEgwService_, replace this part of the path with the service account name.
+    - **ReportFileCount**: Determines the number of log files of each kind to retain. The default value is 10.
+    - **ReportFileSizeInBytes**: Determines the size of the file to maintain. The default value is 104857600.
+    - **QuerExecutionAggregationTimeInMinutes**: Determines the number of minutes for which the query execution information is aggregated. The default value is 5.
+    - **SystemCounterAggregationTimeInMinutes**: Determines the number of minutes for which the system counters is aggregated. The default value is 5.
+
+1. After you've made the changes to the config file, restart the gateway for these config values to take effect. You'll now start seeing the report files being generated in the location you specified for **ReportFilePath**.
+
+    > [!NOTE]
+    > Please wait for 5 minutes until the aggregate files start showing up in the folder.
+
+## Understand performance logs
 
 When you turn this feature on, we create three new log files:
 
@@ -76,40 +109,7 @@ The System Counter Aggregation Report contains system counter values aggregated 
 |**Average** |Average value for the system counter for the aggregation time window. |
 | | |
 
-## Enable logging
-
-To enable this feature, make the following changes to the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file in the "\Program Files\On-premises data gateway" folder:
-
-1. Update **QueryExecutionReportOn** to _True_ to enable additional logging for queries executed using the gateway. Enabling this option creates both the Query Execution Report and the Query Execution Aggregation Report files.
-
-   ``` xml
-   <setting name="QueryExecutionReportOn" serializeAs="String">
-     <value>True</value>
-   </setting>
-   ```
-
-1. Update **SystemCounterReportOn** to _True_ to enable additional logging for memory and CPU system counters. Enabling this option creates the System Counter Aggregation Report file.
-
-   ```xml
-   <setting name="SystemCounterReportOn" serializeAs="String">
-     <value>True</value>
-   </setting>
-   ```
-
-1. There are other values in the config file that you can update as needed.
-
-    - **ReportFilePath**: Determines the path where the three log files are stored. By default, this path is either "\Users\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report" or "Windows\ServiceProfiles\PBIEgwService\AppData\Local\Microsoft\On-premises data gateway\Report", depending on the OS version. If you use a service account for the gateway other than _PBIEgwService_, replace this part of the path with the service account name.
-    - **ReportFileCount**: Determines the number of log files of each kind to retain. The default value is 10.
-    - **ReportFileSizeInBytes**: Determines the size of the file to maintain. The default value is 104857600.
-    - **QuerExecutionAggregationTimeInMinutes**: Determines the number of minutes for which the query execution information is aggregated. The default value is 5.
-    - **SystemCounterAggregationTimeInMinutes**: Determines the number of minutes for which the system counters is aggregated. The default value is 5.
-
-1. After you've made the changes to the config file, restart the gateway for these config values to take effect. You'll now start seeing the report files being generated in the location you specified for **ReportFilePath**.
-
-    > [!NOTE]
-    > Please wait for 5 minutes until the aggregate files start showing up in the folder.
-
-## Visualize log file data
+## Visualize gateway performance
 
 Now, you can visualize the data that's in the log files.
 
