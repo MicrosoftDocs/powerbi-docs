@@ -9,7 +9,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/09/2019
+ms.date: 05/11/2019
 
 LocalizationGroup: Common tasks
 ---
@@ -43,7 +43,7 @@ Whether you're subscribing to a dashboard or report, the process is similar. The
 
 4. Use the yellow slider to turn the subscription on and off.  Setting the slider to Off doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
-4. Your email address is automatically added to the **Subscribe** field. To subscribe others, add their email addresses here as well. 
+4. Your email address is automatically added to the **Subscribe** field. To subscribe others in your organization, add their email addresses here as well. 
 
 5. Optionally, add email message details. 
 
@@ -59,7 +59,7 @@ Whether you're subscribing to a dashboard or report, the process is similar. The
    
    ![email snapshot of dashboard](media/end-user-subscribe/power-bi-subscribe-email.png)
    
-    Refreshing the report page does not refresh the dataset. Only the dataset owner can manually refresh a dataset. To look up the owner name of the underlying dataset(s), select **View related** from the top menubar.
+    Refreshing the report page does not refresh the dataset. Only the dataset owner can manually refresh a dataset. To look up the owner name of the underlying dataset(s), select **View related** from the top menubar or look up the original subscription email.
    
     ![Related datasets](./media/end-user-subscribe/power-bi-view-related-screen.png)
 

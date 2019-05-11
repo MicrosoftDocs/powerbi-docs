@@ -9,23 +9,23 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/09/2019
+ms.date: 05/10/2019
 ms.author: mihart
 
 LocalizationGroup: Create reports
 ---
 # What are bookmarks?
-Bookmarks capture the currently configured view of a report page, including filtering and the state of visuals. When you select a bookmark, Power BI takes you back to that view. There are two types of bookmarks - those you create yourself and those created by report *designers*.
+Bookmarks capture the currently configured view of a report page, including filters, slicers, and the state of visuals. When you select a bookmark, Power BI takes you back to that view. There are two types of bookmarks - those you create yourself and those created by report *designers*.
 
 ## Use bookmarks to share insights and build stories in Power BI 
-There are many uses for bookmarks. Say you discover an interesting insight and want to preserve it -- create a bookmark so you can return later. Need to leave and want to preserve your current work, create a bookmark. 
+There are many uses for bookmarks. Say you discover an interesting insight and want to preserve it -- create a bookmark so you can return later. Need to leave and want to preserve your current work, create a bookmark. You can even make a bookmark your default view of the report, so each time you return, that view of the report page opens first. 
 
 You can also create a collection of bookmarks, arrange them in the order you want, and subsequently step through each bookmark in a presentation to highlight a series of insights that tell a story.  
 
 ![Show Bookmarks Pane by selecting it from ribbon.](media/end-user-bookmarks/power-bi-bookmarks-pane.png)
 
 ## Using bookmarks
-To open the Bookmarks pane, select **Bookmarks** from the menubar. 
+To open the Bookmarks pane, select **Bookmarks** from the menubar. To return to the original published view of the report, select **Reset to default**.
 
 ### Report bookmarks
 If the report *designer* included report bookmarks, you'll find them under the **Report bookmarks** heading. 
@@ -151,6 +151,7 @@ In this release of the **bookmarks**, there are a few limitations and considerat
 * Most custom visuals should work well with bookmarking. If you run into trouble with bookmarking and a custom visual, contact the creator of that custom visual and ask them to add support for bookmarks to their visual. 
 * If you add a visual on a report page after creating a bookmark, the visual will be displayed in its default state. This also means that if you introduce a slicer into a page where you previously created bookmarks, the slicer will behave in its default state.
 * Moving around visuals after a bookmark has been created will be reflected in the bookmark. 
+* Generally, your bookmarks will not be affected if the report *designer* updates or republishes the report. However, if the designer makes maor changes to the report, such as removing fields used by a bookmark, then you will receive an error message the next time you attempt to open that bookmark. 
 
 <!--
 ## Next steps
