@@ -64,7 +64,7 @@ If you've received apps from colleagues or from AppSource, those apps are availa
 
 8. Select one of the apps to open it. Depending on the options set by the app *designer*, the app will open either a dashboard, a report, or an app content list. If selecting the app:
     - opens the report, you're all set.
-    - opens a dashboard, see [Open a report from a dashboard](#Open-a-report-from-a-dashboard), below.
+    - opens a dashboard, see ***Open a report from a dashboard***, below.
     - opens the app content list, under **Reports**, select the report to open it.
 
 
