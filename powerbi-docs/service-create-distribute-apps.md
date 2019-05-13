@@ -63,6 +63,7 @@ When the dashboards and reports in your workspace are ready, you choose which da
 
 6. If you have permissions, you can install the app automatically for the recipients. A Power BI admin can enable this setting in the Power BI Admin Portal. Read more about [automatically installing an app](#automatically-install-apps-for-end-users).
 
+     ![App permissions](media/service-create-distribute-apps/power-bi-apps-permissions.png)
 
 7. When you select **Publish app**, you see a message confirming it’s ready to publish. In the **Share this app** dialog box, you can copy the URL that’s a direct link to this app.
    
