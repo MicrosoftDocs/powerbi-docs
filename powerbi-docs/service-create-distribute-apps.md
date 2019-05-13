@@ -111,6 +111,7 @@ When you add a **link**, in **Link details** you can choose where the link will 
 
 ### Considerations for using the new navigation builder option
 Here are things to keep in mind when using the new navigation builder:
+* Report pages are shown in the app navigation area as an expandable section
 * When adding links to your app navigation and selecting the Content area option:
   * Ensure the link can be embedded since some services block the embedding of their content in 3rd party sites like Power BI.
   * Embedding Power BI service content like reports or dashboards in other workspaces is not supported. 
