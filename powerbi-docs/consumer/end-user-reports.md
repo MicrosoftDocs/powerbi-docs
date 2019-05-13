@@ -52,7 +52,7 @@ That doesn't mean you can't save your changes; you can, but those changes only a
 | Customization |No  |Can filter, export, view related content, add bookmarks, generate QR codes, analyze in Excel, and more.   |
 
 <!--| Available in Power BI Desktop |No |Yes, can create and view reports in Desktop |
-| Pinning |Can pin existing visuals (tiles) only from current dashboard to your other dashboards |Can pin visuals (as tiles) to any of your dashboards. Can pin entire report pages to any of your dashboards. | -->
+| Pinning |Can pin existing visuals (tiles) only from current dashboard to your other dashboards |Can pin visuals (as tiles) to any of your dashboards. Can pin entire report pages to any of your dashboards.| -->
 
 ## Report ***creators*** and report ***consumers***
 Depending on your role, you may be a *designer*, someone who creates reports for your own use or to share with colleagues. You want to learn how to create and share reports. Or, you may be someone who receives reports from others. You want to learn how to understand and interact with the reports. If you are a report **consumer**, these links are for you. 
