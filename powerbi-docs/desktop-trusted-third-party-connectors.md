@@ -39,4 +39,8 @@ Add the thumbprints of the certificates you want to trust. You can add multiple 
 
  ![Power BI Desktop Registry with a trusted third-party key set](media/desktop-trusted-third-party-connectors/desktoptrustedthird3.png)
 
-If you’ve followed the instructions properly, and have been given the proper thumbprint by your developer, you should now be able to securely trust connectors signed with the associated certificate. 
+If you’ve followed the instructions properly, and have been given the proper thumbprint by your developer, you should now be able to securely trust connectors signed with the associated certificate.
+
+## How to Sign Connectors
+
+If you have a connector you or a developer need to sign, you can read about it in the Power Query docs [here](https://docs.microsoft.com/power-query/handlingconnectorsigning).
