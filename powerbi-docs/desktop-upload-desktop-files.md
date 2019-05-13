@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -24,7 +24,7 @@ Publishing from **Power BI Desktop** has the same effect as using **Get Data** i
 > 
 
 ## To publish a Power BI Desktop dataset and reports
-1. In Power BI Desktop \> **File** \> **Publish** \> **Publish to Power BI** or click **Publish** on the ribbon.  
+1. In Power BI Desktop select **File** \> **Publish** \> **Publish to Power BI** or click **Publish** on the ribbon.  
 
    ![Publish button](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 
@@ -40,7 +40,7 @@ When complete, you receive a link to your report. Click the link to open the rep
 ## Re-publish or replace a dataset published from Power BI Desktop
 When you publish a **Power BI Desktop** file, the dataset and any reports you created in **Power BI Desktop** are uploaded to your Power BI site. When you re-publish your **Power BI Desktop** file, the dataset in your Power BI site will be replaced with the updated dataset from the **Power BI Desktop** file.
 
-This is all pretty straightforward, but there are a few things you should know:
+This is all straightforward, but there are a few things you should know:
 
 * If you already have two or more datasets in Power BI with the same name as the **Power BI Desktop** file, publish could fail. Make sure you have only one dataset in Power BI with the same name. You can also rename the file and publish, creating a new dataset with same name as the file.
 * If you rename or delete a column or measure, any visualizations you already have in Power BI with that field could be broken. 

@@ -1,8 +1,8 @@
 ---
 title: Power BI Premium FAQ
 description: Browse a list of frequently asked questions and answers about the Power BI Premium offering.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 

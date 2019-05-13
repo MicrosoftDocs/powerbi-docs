@@ -66,8 +66,6 @@ A well-defined data model ensures your customers can easily and intuitively inte
 
 > [!NOTE]
 > You should do much of the basic modeling (typing, column names) in the [queries](#queries).
->
-
 
 ### Q&A
 The modeling also affects how well Q&A can provide results for your customers. Ensure you add synonyms to commonly used columns and you've properly named your columns in the [queries](#queries).
@@ -75,8 +73,9 @@ The modeling also affects how well Q&A can provide results for your customers. E
 ### Additional data model tips
 
 Make sure you've:
+
 * Applied formatting to all value columns. Apply types in the query.  
-* Applied formatting to all measures. 
+* Applied formatting to all measures.
 * Set default summarization. Especially "Do Not Summarize", when applicable (for unique values, for example).  
 * Set data category, when applicable.  
 * Set relationships, as necessary.  
@@ -113,19 +112,35 @@ To create a dashboard for your template app, just upload your PBIX through Get D
 
 ## Sample data
 Template apps, as part of the app creation stage, wraps the cache data in the workspace as part of the app:
+
 * Allows the installer to understand the functionality and purpose of the app before connecting data.
-* Creates an experience that drives the installer to further explore app capabilities, which leads to connecting the app to datasources.
-<p>It is recommended to have quality sample data prior to creating the app as well as insuring your report and dashboards are populated with data.
+* Creates an experience that drives the installer to further explore app capabilities, which leads to connecting the app dataset.
+
+We recommend having quality sample data before creating the app. ensure the app report and dashboards are populated with data.
+
+## Publishing on AppSource
+Template apps can be published on AppSource, follow these guidelines before submitting your app to AppSource:
+
+* Make sure you create a template app with engaging sample data that can help the installer understand what the app can do (empty report & dashboard aren't approved).
+Template apps support sample data only apps, make sure to check the static app checkbox. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Have instruction for the validation team to follow which includes credentials and parameters that are required to connect to data.
+* Application must include an App icon in Power BI and on your CPP offer. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Landing page configured. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Make sure to follow the documentation on [Power BI App offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+* In case a dashboard is part of your app, make sure it's not empty.
+* Install the app using the app link before submitting it, make sure you can connect the dataset and the app experience is as you planned.
+* Before uploading bpix into the template app workspace, make sure to unload any unnecessary connections.
+* Follow Power BI [Best design practices for reports and visuals](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) to achieve maximum impact on your users and getting approved for distribution.
 
 ## Known limitations
 
 | Feature | Known Limitation |
 |---------|---------|
 |Contents:  Datasets   | Exactly one dataset should be present. Only datasets built in Power BI Desktop (.pbix files) are allowed. <br>Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (.rdl files), Excel workbooks |
-|Contents: Dashboards | Real-time tiles aren’t allowed (in other words, no support for PushDataset or pubnub) |
+|Contents: Dashboards | Real-time tiles aren’t allowed (in other words, no support for push or streaming datasets) |
 |Contents: Dataflows | Not supported: Dataflows |
 |Contents from files | Only PBIX files are allowed. <br>Not supported: .rdl files (paginated reports), Excel workbooks   |
-| Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. <br>Not supported: <li> DirectQuery</li><li>Live connections (no Azure AS)</li> <li>On-premises data sources (personal and enterprise gateways aren't supported)</li> <li>Real-time (no support for pushdataset)</li> <li>Composite models</li></ul> |
+| Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. <br>Not supported: <li> DirectQuery</li><li>Live connections (no Azure AS)</li> <li>On-premises data sources (personal and enterprise gateways aren't supported)</li> <li>Real time (no support for push dataset)</li> <li>Composite models</li></ul> |
 | Dataset: cross-workspace | No cross-workspace datasets are allowed  |
 | Query parameters | Not supported: Parameters of type "Any" or "Binary" type block refresh operation for dataset |
 | Custom visuals | Only publicly available custom visuals are supported. [Organizational custom visuals](power-bi-custom-visuals-organization.md) not supported |

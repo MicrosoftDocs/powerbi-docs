@@ -36,7 +36,7 @@ The Power BI service administrator role does not provide the following capabilit
 
 To assign users to the Power BI admin role in the Microsoft 365 admin center, follow these steps.
 
-1. In the Microsoft 365 admin center, select **Users** > **Active Users**.
+1. In the [Microsoft 365 admin center](https://portal.office.com/adminportal/home#/homepage), select **Users** > **Active Users**.
 
     ![Microsoft 365 admin center](media/service-admin-role/powerbi-admin-users.png)
 
@@ -58,9 +58,14 @@ You should see **Power BI service administrator** listed for the role of that us
 
 ## Assign users to the admin role with PowerShell
 
-You can also assign users to roles by using PowerShell. Users are managed in Azure Active Directory (Azure AD. If you don't already have the Azure AD PowerShell module, [download and install the latest version](https://www.powershellgallery.com/packages/AzureAD/).
+You can also assign users to roles by using PowerShell. Users are managed in Azure Active Directory (Azure AD). If you don't already have the Azure AD PowerShell module, [download and install the latest version](https://www.powershellgallery.com/packages/AzureAD/).
 
-1. First, get the **ObjectId** for the **Power BI Service Administrator** role. You can run [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole) to get the **ObjectId**
+1. First, connect to Azure AD:
+   ```
+   PS C:\Windows\system32> Connect-AzureAD
+   ```
+
+1. Second, get the **ObjectId** for the **Power BI Service Administrator** role. You can run [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole) to get the **ObjectId**
 
     ```
     PS C:\Windows\system32> Get-AzureADDirectoryRole
@@ -82,7 +87,7 @@ You can also assign users to roles by using PowerShell. Users are managed in Azu
 1. Next, get the user's **ObjectId**. You can find that by running [Get-AzureADUser](/powershell/module/azuread/get-azureaduser).
 
     ```
-    PS C:\Windows\system32> Get-AzureADUser -SearchString 'tim@contoso.com'
+    PS C:\Windows\system32> Get-AzureADUser -ObjectId 'tim@contoso.com'
 
     ObjectId                             DisplayName UserPrincipalName      UserType
     --------                             ----------- -----------------      --------

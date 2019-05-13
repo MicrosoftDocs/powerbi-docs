@@ -9,7 +9,7 @@ editor: davidi
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 10/21/2017
+ms.date: 05/08/2019
 ms.author: selvar
 
 LocalizationGroup: Connect to data

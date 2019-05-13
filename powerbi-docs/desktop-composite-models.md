@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/19/2019
+ms.date: 05/09/2019
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -164,7 +164,9 @@ Additionally, the use of *many-to-many* relationships means that separate querie
 
 ## Limitations and considerations
 
-This release of composite models presents a few limitations.
+This release of composite models presents a few limitations:
+
+Currently, [incremental refresh](service-premium-incremental-refresh.md) is supported for composite models connecting to SQL, Oracle, and Teradata data sources only.
 
 The following Live Connect (multi-dimensional) sources can't be used with composite models:
 
