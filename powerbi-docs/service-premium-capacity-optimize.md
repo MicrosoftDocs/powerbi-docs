@@ -1,8 +1,8 @@
 ---
 title: Optimize Microsoft Power BI Premium capacities
 description: Describes optimization strategies for Power BI Premium capacities.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
