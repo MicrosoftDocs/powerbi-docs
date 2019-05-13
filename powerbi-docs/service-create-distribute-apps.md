@@ -53,7 +53,7 @@ When the dashboards and reports in your workspace are ready, you choose which da
    
      ![Build your app](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
 
-4. On **Navigation**, you select the content to be published as part of the app. Then you add app navigation, to organize the content in sections. 
+4. On **Navigation**, you select the content to be published as part of the app. Then you add app navigation, to organize the content in sections. See [Design the navigation experience for your app](#design-the-navigation-experience-for-your-app) for details.
    
      ![App navigation](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
