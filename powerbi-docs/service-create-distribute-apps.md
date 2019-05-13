@@ -1,5 +1,5 @@
 ---
-title: Publish an app in Power BI (Preview)
+title: Publish an app in Power BI
 description: Learn how to publish the new apps, which are collections of dashboards and reports with built-in navigation.
 author: maggiesMSFT
 manager: kfile
@@ -12,7 +12,7 @@ ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Publish an app in Power BI (Preview)
+# Publish an app in Power BI
 
 In Power BI, you can create official packaged content, then distribute it to a broad audience as an *app*. You create apps in *app workspaces*, where you can collaborate on Power BI content with your colleagues. Then you can publish the finished apps to large groups of people in your organization. 
 
@@ -61,11 +61,10 @@ When the dashboards and reports in your workspace are ready, you choose which da
     - In [classic workspaces](service-create-workspaces.md): everyone in your organization, specific people, or Azure Active Directory (AAD) security groups.
     - In the [new experience workspaces](service-create-the-new-workspaces.md): specific people, AAD security groups and distribution lists, and Office 365 Groups.
 
-6. You can choose to allow app users to build new content on the underlying datasets, or to make a copy of the app reports. Also, if you have permissions, you can install the app automatically for the recipients. A Power BI admin can enable this setting in the Power BI Admin Portal. Read more about [automatically installing an app](#automatically-install-apps-for-end-users).
+6. If you have permissions, you can install the app automatically for the recipients. A Power BI admin can enable this setting in the Power BI Admin Portal. Read more about [automatically installing an app](#automatically-install-apps-for-end-users).
 
-    ![App permissions](media/service-create-distribute-apps/power-bi-apps-permissions.png)
 
-6. When you select **Publish app**, you see a message confirming it’s ready to publish. In the **Share this app** dialog box, you can copy the URL that’s a direct link to this app.
+7. When you select **Publish app**, you see a message confirming it’s ready to publish. In the **Share this app** dialog box, you can copy the URL that’s a direct link to this app.
    
      ![App finish](media/service-create-distribute-apps/power-bi-apps-success.png)
 
@@ -90,6 +89,35 @@ After you publish your app, you may want to change or update it. It’s easy to 
 1. Update **Setup**, **Navigation**, and **Permissions**, if you need to, then select **Update app**.
    
 The people you’ve published the app to automatically see the updated version of the app. 
+
+## Designing navigation experiences for your app
+The **New navigation builder** option allows you to build a custom navigation for your app. The custom navigation makes it easier for your users to find and use content in the app. Existing apps have this option turned off and new apps default to the option being on.
+
+When the option is off, you can select the **App landing page** to be either **Specific content**, for example a dashboard or report, or select **None** to show a basic list of content to the user.
+
+When you set **New navigation builder** to on you can design a custom navigation. By default all the reports, dashboards, and Excel workbooks you included in your app are listed as a flat list. 
+
+![App navigation](media/service-create-distribute-apps/power-bi-apps-navigation.png)
+
+You can further customize the app navigation by:
+* Reordering the items using the up / down arrows 
+* Renaming items in the **Report details**, **Dashboard details**, and **Workbook details**
+* Hiding certain items from the navigation
+* Using the **New** option to add **sections** to group related content
+* Using the **New** option to add a **link** to an external resource to the left navigation 
+
+When you add a **link**, in **Link details** you can choose where the link will open. By default links open in the **Current tab**, but you can select **New tab**, or **Content area**. 
+
+### Considerations for using the new navigation builder option
+Here are things to keep in mind when using the new navigation builder:
+* When adding links to your app navigation and selecting the Content area option:
+  * Ensure the link can be embedded since some services block the embedding of their content in 3rd party sites like Power BI.
+  * Embedding Power BI service content like reports or dashboards in other workspaces is not supported. 
+  * Embedding Power BI Report Server content through its native embed URL content from an on premises deployment. Use the steps in [creating the Power BI Report Server URL](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#creating-the-power-bi-report-server-report-url) to get the URL. Be aware however, that regular authentication rules apply so viewing the content will require a VPN connection to the on premise server. 
+  * A security warning is shown at the top of the embedded content to indicate the content is not in Power BI.
+* If you turn off the new navigation builder and then publish or update your app, you will lose the customizations you’ve made. For example sections, ordering, links, and custom names for navigation items are all lost.
+
+
 
 ## Automatically install apps for end users
 If an admin gives you permissions, you can install apps automatically, *pushing* them to end users. This push functionality makes it easier to distribute the right apps to the right people or groups. Your app appears automatically in your end users' Apps content list. They don't have to find it from Microsoft AppSource or follow an installation link. See how admins enable [pushing apps to end users](service-admin-portal.md#push-apps-to-end-users) in the Power BI admin portal article.
