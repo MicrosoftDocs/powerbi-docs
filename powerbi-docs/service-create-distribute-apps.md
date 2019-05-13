@@ -7,7 +7,7 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/03/2019
+ms.date: 05/13/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -91,33 +91,34 @@ After you publish your app, you may want to change or update it. It’s easy to 
    
 The people you’ve published the app to automatically see the updated version of the app. 
 
-## Designing navigation experiences for your app
+## Design the navigation experience for your app
 The **New navigation builder** option allows you to build a custom navigation for your app. The custom navigation makes it easier for your users to find and use content in the app. Existing apps have this option turned off and new apps default to the option being on.
 
 When the option is off, you can select the **App landing page** to be either **Specific content**, for example a dashboard or report, or select **None** to show a basic list of content to the user.
 
-When you set **New navigation builder** to on you can design a custom navigation. By default all the reports, dashboards, and Excel workbooks you included in your app are listed as a flat list. 
+When you turn on **New navigation builder**, you can design a custom navigation. By default all the reports, dashboards, and Excel workbooks you included in your app are listed as a flat list. 
 
 ![App navigation](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
 You can further customize the app navigation by:
-* Reordering the items using the up / down arrows 
-* Renaming items in the **Report details**, **Dashboard details**, and **Workbook details**
-* Hiding certain items from the navigation
-* Using the **New** option to add **sections** to group related content
-* Using the **New** option to add a **link** to an external resource to the left navigation 
+* Reordering the items using the up / down arrows. 
+* Renaming items in the **Report details**, **Dashboard details**, and **Workbook details**.
+* Hiding certain items from the navigation.
+* Using the **New** option to add **sections** to group related content.
+* Using the **New** option to add a **link** to an external resource to the left navigation. 
 
-When you add a **link**, in **Link details** you can choose where the link will open. By default links open in the **Current tab**, but you can select **New tab**, or **Content area**. 
+When you add a **link**, in **Link details** you can choose where the link opens. By default links open in the **Current tab**, but you can select **New tab**, or **Content area**. 
 
 ### Considerations for using the new navigation builder option
-Here are things to keep in mind when using the new navigation builder:
+Here are general things to keep in mind when using the new navigation builder:
 * Report pages are shown in the app navigation area as an expandable section
-* When adding links to your app navigation and selecting the Content area option:
-  * Ensure the link can be embedded since some services block the embedding of their content in 3rd party sites like Power BI.
-  * Embedding Power BI service content like reports or dashboards in other workspaces is not supported. 
-  * Embedding Power BI Report Server content through its native embed URL content from an on premises deployment. Use the steps in [creating the Power BI Report Server URL](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#creating-the-power-bi-report-server-report-url) to get the URL. Be aware however, that regular authentication rules apply so viewing the content will require a VPN connection to the on premise server. 
-  * A security warning is shown at the top of the embedded content to indicate the content is not in Power BI.
-* If you turn off the new navigation builder and then publish or update your app, you will lose the customizations you’ve made. For example sections, ordering, links, and custom names for navigation items are all lost.
+* If you turn off the new navigation builder and then publish or update your app, you lose the customizations you’ve made. For example, sections, ordering, links, and custom names for navigation items are all lost.
+
+When adding links to your app navigation and selecting the Content area option:
+* Ensure the link can be embedded. Some services block the embedding of their content in third-party sites like Power BI.
+* Embedding Power BI service content like reports or dashboards in other workspaces isn't supported. 
+* Embed Power BI Report Server content through its native embed URL content from an on premises deployment. Use the steps in [creating the Power BI Report Server URL](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#creating-the-power-bi-report-server-report-url) to get the URL. Be aware that regular authentication rules apply, so viewing the content requires a VPN connection to the on premise server. 
+* A security warning is shown at the top of the embedded content to indicate the content isn't in Power BI.
 
 
 
@@ -137,7 +138,7 @@ After you push an app, it shows up in their Apps list automatically. In this way
 ### Considerations for automatically installing apps
 Here are things to keep in mind when pushing apps to end users:
 
-* Installing an app automatically to users can take time. Most apps will install immediately for users, but pushing apps can take time.  It depends on the number of items in the app and the number of people given access. We recommend pushing apps during off hours with plenty of time before users need them. Verify with several users before sending broad communication about the apps' availability.
+* Installing an app automatically to users can take time. Most apps install immediately for users, but pushing apps can take time.  It depends on the number of items in the app and the number of people given access. We recommend pushing apps during off hours with plenty of time before users need them. Verify with several users before sending broad communication about the apps' availability.
 
 * Refresh the browser. Before seeing the pushed app in the Apps list, the user may need to refresh, or close and reopen their browser.
 
