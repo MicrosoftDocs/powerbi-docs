@@ -53,7 +53,7 @@ When the dashboards and reports in your workspace are ready, you choose which da
    
      ![Build your app](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
 
-4. On **Navigation**, you select the content to be published as part of the app. Then you add app navigation, to organize the content in sections. See [Design the navigation experience for your app](#design-the-navigation-experience-for-your-app) for details.
+4. On **Navigation**, you select the content to be published as part of the app. Then you add app navigation, to organize the content in sections. See [Design the navigation experience for your app](#design-the-navigation-experience-for-your-app) in this article for details.
    
      ![App navigation](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
@@ -61,7 +61,7 @@ When the dashboards and reports in your workspace are ready, you choose which da
     - In [classic workspaces](service-create-workspaces.md): everyone in your organization, specific people, or Azure Active Directory (AAD) security groups.
     - In the [new experience workspaces](service-create-the-new-workspaces.md): specific people, AAD security groups and distribution lists, and Office 365 Groups.
 
-6. If you have permissions, you can install the app automatically for the recipients. A Power BI admin can enable this setting in the Power BI Admin Portal. Read more about [automatically installing an app](#automatically-install-apps-for-end-users).
+6. If you have permissions, you can install the app automatically for the recipients. A Power BI admin can enable this setting in the Power BI Admin Portal. Read more about [automatically installing an app](#automatically-install-apps-for-end-users) in this article.
 
      ![App permissions](media/service-create-distribute-apps/power-bi-apps-permissions.png)
 
