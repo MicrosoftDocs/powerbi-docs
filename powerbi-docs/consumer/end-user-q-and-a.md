@@ -1,5 +1,5 @@
 ---
-title: Overview of Q&A in Power BI service
+title: Q&A for Power BI consumers
 description: Documentation overview topic for Power BI Q&A natural language queries.
 author: mihart
 manager: kvivek

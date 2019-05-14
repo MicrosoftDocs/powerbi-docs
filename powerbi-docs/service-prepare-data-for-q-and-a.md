@@ -1,5 +1,5 @@
 ---
-title: How to make your Excel data work well with Q&A in Power BI
+title: Make Excel data work well with Q&A in Power BI
 description: How to make your data work well with Q&A in Power BI
 author: maggiesMSFT
 manager: kfile
@@ -8,24 +8,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 05/13/2019
 ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
 ---
-# How to make your Excel data work well with Q&A in Power BI
+# Make Excel data work well with Q&A in Power BI
 If you are a person who creates data models or builds Excel workbooks that will be used with Power BI, read on...
 
 In Power BI, Q&A can search structured data and choose the right visualization for your question -- that's what makes it a compelling tool to use.   
 
 Q&A can work on any uploaded Excel file that has tables, ranges, or contains a PowerPivot model, but the more optimizations and data cleaning you do, the more robust Q&A performance is.  If you plan on sharing reports and dashboards based on your dataset, you'll want your colleagues to have an easy time asking questions and getting quality answers.
 
-### How Q&A works with Excel
+## How Q&A works with Excel
 Q&A has a set of core natural language understanding abilities that work across your data. It has context-dependent keyword search for your Excel table, column, and calculated field names. It also has built-in knowledge for how to filter, sort, aggregate, group, and display data. 
 
-For example, in an Excel table named “Sales”, with columns “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”, you could ask questions about any of those entities.  You could ask to show sales, total profit by month, sort products by units sold, and many others. Read more about the [kinds of questions you can ask](consumer/end-user-q-and-a.md), and [visualization types you can specify in a Q&A query](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+For example, in an Excel table named “Sales”, with columns “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”, you could ask questions about any of those entities.  You could ask to show sales, total profit by month, sort products by units sold, and many others. Read more about [using Q&A in dashboards and reports](power-bi-tutorial-q-and-a), and [visualization types you can specify in a Q&A query](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
-### Prepare an Excel dataset for Q&A
+## Prepare an Excel dataset for Q&A
 Q&A relies on the names of tables, columns, and calculated fields to answer data-specific questions, meaning what you call entities in your workbook is important!
 
 Here are some tips for making the most of Q&A in your workbook.
@@ -40,9 +40,9 @@ Here are some tips for making the most of Q&A in your workbook.
 * Open the dataset in Power BI Desktop and create new columns, create calculated measures, concatenate fields to create unique values, classify data by type (e.g., dates, strings, geography, images, URLs), and more.
 
 ## Next steps
-Back to [Q&A in Power BI](consumer/end-user-q-and-a.md)  
+[Q&A for consumers](consumer/end-user-q-and-a.md)  
+[Use Q&A in dashboards and reports](power-bi-tutorial-q-and-a)
 [Prepare on-premises datasets for Q&A](service-q-and-a-direct-query.md)   
-[Q&A quickstart](power-bi-visualization-introduction-to-q-and-a.md)  
 [Get data (for Power BI)](service-get-data.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

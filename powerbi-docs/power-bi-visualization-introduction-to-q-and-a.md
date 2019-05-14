@@ -1,6 +1,6 @@
 ---
-title: Get started with Power BI Q&A 
-description: 'Get started with Q&A in Power BI service using the Retail Analysis sample'
+title: Create a visual with Power BI Q&A
+description: 'Learn to create a visual with Q&A in the Power BI service using the Retail Analysis sample'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,14 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/21/2018
+ms.date: 05/13/2019
 ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
 ---
-# Get started with Power BI Q&A
 
-Sometimes the fastest way to get an answer from your data is to ask a question using natural language.  In this quickstart we'll look at two different ways of creating the same visualization: first, building it in a report and, second, asking a question with Q&A. We'll use Power BI service, but the process is almost identical using Power BI Desktop.
+# Create a visual with Power BI Q&A
+
+Sometimes the fastest way to get an answer from your data is to ask a question using natural language.  In this article, we look at two different ways of creating the same visualization: first, building it in a report and, second, asking a question with Q&A. We use the Power BI service, but the process is almost identical using Power BI Desktop.
 
 To follow along, you must use a report that you can edit, so we'll use one of the samples available with Power BI.
 
@@ -54,8 +55,8 @@ How would we go about creating this same line chart using Q&A?
 4. To pin the chart to your dashboard, select the pin icon ![Pin icon](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png).
 
 ## Next steps
-[Q&A in Power BI](consumer/end-user-q-and-a.md)
-
+[Q&A for consumers](consumer/end-user-q-and-a.md)
+[Use Q&A in dashboards and reports](power-bi-tutorial-q-and-a)  
 [Make your data work well with Q&A in Power BI](service-prepare-data-for-q-and-a.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
