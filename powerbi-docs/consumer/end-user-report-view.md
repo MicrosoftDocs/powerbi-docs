@@ -23,7 +23,7 @@ The options in the View menu give you flexibility to display report pages at the
 
 - Let's say you're viewing a report on a small device and it's hard to see titles and legends.  Select **View** > **Actual size** to increase the size of the report page. Use the scrollbars to move around the report. 
 
-    ![report displays in canvas, with two scrollbar](media/end-user-report-view/power-bi-actal-size-new.png)
+    ![report displays in canvas, with two scrollbar](media/end-user-report-view/power-bi-actual-size-new.png)
 
 
 - Another option is to fit the report to your screen width by selecting **Fit to width**. This may still require the use of a vertical scrollbar.

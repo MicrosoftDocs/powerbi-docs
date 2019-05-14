@@ -19,7 +19,7 @@ This article takes a look at the report Filters pane in Power BI service. Use th
 
 There are many different ways to filter data in Power BI and we recommend first reading [About filters and highlighting](../power-bi-reports-filters-and-highlighting.md).
 
-![report in browser](media/end-user-report-filter/power-bi-browser-new.png)
+![report in browser](media/end-user-report-filter/power-bi-browser-new2.png)
 
 ## Working with the report Filters pane
 When a colleague shares a report with you, be sure to look for the **Filters** pane. Sometimes it's collapsed along the right edge of the report. Select it to expand it.   
