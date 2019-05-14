@@ -1285,9 +1285,9 @@
       href: service-gateway-onprem-indepth.md
     - name: "On-premises data gateway (personal mode)"
       href: service-gateway-personal-mode.md
-    - name: "Custom Connectors"
+    - name: "Custom connectors"
       href: service-gateway-custom-connectors.md
-    - name: "Trusting Signed Third Party Connectors"
+    - name: "Trusting signed third-party connectors"
       href: desktop-trusted-third-party-connectors.md
     - name: "Troubleshooting the on-premises data gateway"
       href: service-gateway-onprem-tshoot.md
