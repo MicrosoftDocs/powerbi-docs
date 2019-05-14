@@ -63,7 +63,7 @@ How would we go about creating this line chart using Q&A?
    
     ![Visualizations pane](media/power-bi-visualization-introduction-to-q-and-a/gnatutorial_3-new.png)
 
-    You see they ended up with the same visual. Creating it this way wasn't too complicapted. But creating it with Q&A was easier!
+    You see they ended up with the same visual. Creating it this way wasn't too complicated. But creating it with Q&A was easier!
 
 ## Next steps
 
