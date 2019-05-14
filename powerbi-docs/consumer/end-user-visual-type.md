@@ -22,7 +22,7 @@ This article is an overview of the visualizations that are packaged with Power B
 > To learn about custom visuals, search for them in the **Power BI visuals** section of [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). For each visual, you'll find a description, creator information, and either screenshots or a video. 
 
 ## List of visualizations available in Power BI
-All of these visualizations can be found in Power BI apps, dashboards, reports, and [specified in Q&A](qna). To learn how to interact with visualizations, see [Interact with visualizations in reports, dashboards, and apps](end-user-visualizations.md)
+All of these visualizations can be found in Power BI apps, dashboards, reports, and [specified in Q&A](#qna). To learn how to interact with visualizations, see [Interact with visualizations in reports, dashboards, and apps](end-user-visualizations.md)
 
 ### Area charts: Basic (Layered) and Stacked
 ![area chart](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
@@ -222,7 +222,7 @@ Waterfall charts are a great choice:
 - to illustrate the beginning and the ending headcount for your company in a year
 - to visualize how much money you make and spend each month, and the running balance for your account.
 
-## Tell Q&A which visualization to use
+## <a href="qna"></a>Tell Q&A which visualization to use
 When typing natural language queries with Power BI Q&A, you can specify the visualization type in your query.  For example:
 
 "***sales by state as a treemap***"
