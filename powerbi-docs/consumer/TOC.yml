@@ -40,6 +40,8 @@
         href: end-user-reports.md
       - name: "View a report"
         href: end-user-report-open.md
+      - name: "Change the way a report displays"
+        href: end-user-report-view.md
       - name: "Use filters in a report"
         href: end-user-report-filter.md
       - name: "Learn how report visuals cross-filter each other"

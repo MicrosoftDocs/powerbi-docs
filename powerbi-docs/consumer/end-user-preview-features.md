@@ -9,19 +9,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/13/2019
 ms.author: mihart
 
 LocalizationGroup: Get started
 ---
 # Opt-in for Power BI service preview features
 ## What are *preview features*?
-As we make improvements to Power BI service, we'll release some new functionality as *preview features*. Preview features can be turned on and off, giving you the opportunity to try them out.
+As we make improvements to the Power BI service, we'll release some new functionality as *preview features*. Preview features can be turned on and off, giving you the opportunity to try them out.
 
-> [!TIP]
-> Preview features are also available for Power BI Desktop, for more information [visit the Power BI Desktop community forum](https://community.powerbi.com/t5/Desktop/bd-p/power-bi-designer).
-> 
-> 
 
 ## Find previews and turn them on (and off)
 1. Open your Settings menu by selecting the gear icon in the top right corner of your Power BI screen and choosing **Settings**.

@@ -38,7 +38,7 @@ You can also select a single dashboard as a [featured dashboard](end-user-featur
 
 ## Add an app as a *favorite*
 
-1. From the left navpane, select **Apps**.
+1. From the navigation pane, select **Apps**.
 
    ![dashboard](./media/end-user-favorite/power-bi-favorite-apps.png)
 
@@ -50,7 +50,7 @@ You can also select a single dashboard as a [featured dashboard](end-user-featur
 1. To access your favorites, select the flyout arrow to the right of **Favorites**.  From here you can select a favorite to open it. Only five favorites are listed (alphabetically). If you have more than five, select **See all** to open the favorites content list (see #2, below). 
    
    ![Favorites flyout](./media/end-user-favorite/power-bi-favorite-flyout.png)
-2. To see **all** the content that you have added as favorites, in the left navpane, select **Favorites** or the Favorites ![star icon](./media/end-user-favorite/power-bi-favorites-icon.png)  icon.  
+2. To see **all** the content that you have added as favorites, in the navigation pane, select **Favorites** or the Favorites ![star icon](./media/end-user-favorite/power-bi-favorites-icon.png)  icon.  
    
     ![favorite window](./media/end-user-favorite/power-bi-favorites-screen.png)
    

@@ -151,7 +151,7 @@ In this release of the **bookmarks**, there are a few limitations and considerat
 * Most custom visuals should work well with bookmarking. If you run into trouble with bookmarking and a custom visual, contact the creator of that custom visual and ask them to add support for bookmarks to their visual. 
 * If you add a visual on a report page after creating a bookmark, the visual will be displayed in its default state. This also means that if you introduce a slicer into a page where you previously created bookmarks, the slicer will behave in its default state.
 * Moving around visuals after a bookmark has been created will be reflected in the bookmark. 
-* Generally, your bookmarks will not be affected if the report *designer* updates or republishes the report. However, if the designer makes maor changes to the report, such as removing fields used by a bookmark, then you will receive an error message the next time you attempt to open that bookmark. 
+* Generally, your bookmarks will not be affected if the report *designer* updates or republishes the report. However, if the designer makes major changes to the report, such as removing fields used by a bookmark, then you will receive an error message the next time you attempt to open that bookmark. 
 
 <!--
 ## Next steps
