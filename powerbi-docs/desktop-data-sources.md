@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/12/2019
+ms.date: 05/15/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -110,7 +110,7 @@ The **Azure** category provides the following data connections:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB (Beta)
-* Azure Data Lake Storage
+* Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
@@ -184,7 +184,9 @@ The **Other** category provides the following data connections:
 * Paxata 
 * QubolePresto (Beta)
 * Quick Base (Beta)
+* Roamler (Beta)
 * SurveyMonkey (Beta)
+* Tenforce (Beta)
 * Workforce Dimensions (Beta)
 * Blank Query
 
