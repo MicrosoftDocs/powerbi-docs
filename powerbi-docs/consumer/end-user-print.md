@@ -58,6 +58,7 @@ Reports can be printed one page at a time.
 1. [Open the visual in Focus mode](end-user-focus.md) by hovering over the tile and selecting the Focus icon ![Focus icon](./media/end-user-print/power-bi-focus-icon.png) from the top-right corner.
 
 2. From the upper left corner, select **Export** > **Print** to print the visual.
+
     ![Power BI File menu](./media/end-user-print/power-bi-report-print.png)
 
 
