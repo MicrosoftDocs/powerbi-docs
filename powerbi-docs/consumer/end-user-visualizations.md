@@ -42,7 +42,7 @@ Visuals are created by report and dashboard *designers* and shared with *consume
 |[Print](end-user-print.md).     |  yes       |   yes      | no  |
 |[Dig into the visual by adding and modifying visual filters.](end-user-report-filter.md)     |    no     |   yes      | yes  |
 |Hover over a visual to reveal additional details and tooltips.     |    yes     |   yes      | yes  |
-|[Cross-filter and cross-highlight other visuals on the page. ](end-user-interations.md)    |   no      |   yes      | na  |
+|[Cross-filter and cross-highlight other visuals on the page.](end-user-interactions.md)    |   no      |   yes      | na  |
 |[Show the data used to create the visual](end-user-show-data.md).     |  no       |   yes      | no  |
 | [Change the way the visual is sorted](end-user-search-sort.md). | no  | yes  | can change sort by rewording the question  |
 | Add a spotlight to a visual. | no  | yes  |  no |

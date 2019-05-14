@@ -25,7 +25,7 @@ When you select a dashboard as *featured*, each time you open the Power BI servi
 
 You can also select a few dashboards and set them as *favorites*. See [Dashboard favorites](end-user-favorite.md).
 
-If you haven't yet set a featured dashboard, Power BI will open to the last dashboard you used or to [Power BI Home](end-user-home.md).  
+If you haven't yet set a featured dashboard, Power BI will open to the last dashboard you used or to Power BI Home.  
 
 ### To set a dashboard as **featured**
 Watch Amanda create a featured dashboard and then follow the instructions below the video to try it out yourself.
