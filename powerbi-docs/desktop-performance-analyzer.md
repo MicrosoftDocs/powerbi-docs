@@ -19,7 +19,7 @@ In **Power BI Desktop** you can find out how each of your report elements, such 
 
 ![Performance analyzer](media/desktop-performance-analyzer/performance-analyzer-01.png)
 
-Performance Analyzer inspects and displays the duration necessary for updating or refreshing all visuals that user interactions initiate, and presents the information so you can view, drill down, or export the results. Performace Analyzer can help you identify visuals that are impacting the performance of your reports, and identify the reason for the impact.
+Performance Analyzer inspects and displays the duration necessary for updating or refreshing all visuals that user interactions initiate, and presents the information so you can view, drill down, or export the results. Performance Analyzer can help you identify visuals that are impacting the performance of your reports, and identify the reason for the impact.
 
 ## Displaying the Performance Analyzer pane
 
@@ -41,7 +41,7 @@ Any actions you take in the report are displayed and logged in the Performance A
 
 Once you start recording, the **Start recording** button is grayed out (inactive, since you've already begun recording) and the **Stop** button is active. 
 
-Performance analyzer collects and displays the performance measurement information in real time. So each time you click on a visual, move a slicer, or interact in any other way, Performance Anazlyzer immediately displays the performance results in its pane.
+Performance analyzer collects and displays the performance measurement information in real time. So each time you click on a visual, move a slicer, or interact in any other way, Performance Analyzer immediately displays the performance results in its pane.
 
 If the pane has more information than can be displayed, a scroll bar appears to navigate to additional information.
 
@@ -52,8 +52,8 @@ Each interaction has a section identifier in the pane, describing the action tha
 Each visual's log information includes the time spent (duration) to complete the following categories of tasks:
 
 * **DAX query** - if a DAX query was required, this is the time between the visual sending the query, and for Analysis Services to return the results.
-* **Visual display** - time required for the visual to draw on the screen, including any time required to retrieve web images or geocoding. 
-* **Other** - time required by the visual for preparing queries, wiating for other visuals to complete, or performing other background processing.
+* **Visual display** - time required for the visual to draw on the screen, including time required to retrieve any web images or geocoding. 
+* **Other** - time required by the visual for preparing queries, waiting for other visuals to complete, or performing other background processing.
 
 ![elements of log information](media/desktop-performance-analyzer/performance-analyzer-06.png)
 
@@ -61,11 +61,11 @@ After you've interacted with elements of the report you want to measure with Per
 
 To clear out the information in the Performance Analyzer pane, select **Clear**. All information is erased and is not saved when you select **Clear**. See the next section to learn how to save information in logs. 
 
-## Refrehsing visuals
+## Refreshing visuals
 
 You can select **Refresh visuals** in the Performance Analyzer pane to refresh all visuals on the current page of the report, and thereby have Performance Analyzer gather information about all such visuals.
 
-You can also refresh individual visuals. When Performance Analyzer is recording, you can select **Refresh this visual** found in the top right corner of each visual, to refresh that visual and capture its performance information.
+You can also refresh individual visuals. When Performance Analyzer is recording, you can select **Refresh this visual** found in the top-right corner of each visual, to refresh that visual, and capture its performance information.
 
 ![refresh an individual visual](media/desktop-performance-analyzer/performance-analyzer-07.png)
 
