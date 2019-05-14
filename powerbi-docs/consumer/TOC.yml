@@ -46,6 +46,8 @@
         href: end-user-interactions.md
       - name: "Export a report to PDF"
         href: end-user-pdf.md
+      - name: "Add a bookmark to a report"
+        href: end-user-bookmarks.md
     - name: Visualizations
       items: 
       - name: "What can I do with visualizations?"
