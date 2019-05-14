@@ -26,7 +26,7 @@ If you own a dataset, you can add your own featured questions to that dataset. P
 This article uses the [Retail Analysis Sales sample](sample-datasets.md). Follow these step-by-step instructions to try exploring a dataset yourself.
 
 1. On the dashboard, select the Q&A question box.   Notice that Q&A is already being helpful by displaying a list of terms that appear in the dataset.
-2. To add to this list, select the gear icon in the top right corner of Power BI.  
+2. To add to this list, select the gear icon in the top-right corner of Power BI.  
    ![gear icon](media/service-q-and-a-create-featured-questions/pbi_gearicon2.jpg)
 3. Select **Settings** &gt; **Datasets** &gt; **Retail Analysis sample** &gt; **Featured Q&A Questions**.  
 4. Select **Add a question**.
