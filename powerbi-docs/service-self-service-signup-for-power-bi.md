@@ -58,7 +58,7 @@ Follow these steps to sign up for a Power BI Pro trial. See the next section, [T
 
     ![Create account](media/service-self-service-signup-for-power-bi/create-account.png)
 
-1. You're then taken to [Power BI sign in page](https://powerbi.microsoft.com/en-us/landing/signin/), and you can begin using Power BI.
+1. You're then taken to [Power BI sign in page](https://powerbi.microsoft.com/landing/signin/), and you can begin using Power BI.
 
     ![Existing account](media/service-self-service-signup-for-power-bi/welcome-screen.png)
 
