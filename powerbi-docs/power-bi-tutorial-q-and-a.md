@@ -112,8 +112,8 @@ With Q&A, not only can you ask your data to speak for itself, you can tell Power
 
 ## Next steps
 
-[Q&A for consumers](consumer/end-user-q-and-a.md)   
-[Tips for asking questions in Q&A](consumer/end-user-q-and-a-tips.md)   
-[Prepare a workbook for Q&A](service-prepare-data-for-q-and-a.md)  
-[Prepare an on-premises dataset for Q&A](service-q-and-a-direct-query.md)   
-[Pin a tile to the dashboard from Q&A](service-dashboard-pin-tile-from-q-and-a.md)
+- [Q&A for consumers](consumer/end-user-q-and-a.md)   
+- [Tips for asking questions in Q&A](consumer/end-user-q-and-a-tips.md)   
+- [Prepare a workbook for Q&A](service-prepare-data-for-q-and-a.md)  
+- [Prepare an on-premises dataset for Q&A](service-q-and-a-direct-query.md)   
+- [Pin a tile to the dashboard from Q&A](service-dashboard-pin-tile-from-q-and-a.md)

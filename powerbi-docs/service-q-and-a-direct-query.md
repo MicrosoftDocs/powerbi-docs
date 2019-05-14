@@ -48,18 +48,19 @@ Once you have the data gateway set up, connect to your data from Power BI.  Eith
 When you enable Q&A for your on-premises data, a subset of your data is cached in the service. This is done to ensure that Q&A works with a reasonable performance. Power BI excludes values longer than 24 characters from caching. The cache is deleted within a few hours when you disable Q&A by unchecking **Turn on Q&A for this dataset**, or when you delete your dataset.
 
 ## Considerations and troubleshooting
-During the Preview phase of this feature, there are several limitations:
+The feature has some limitations:
 
-* Initially the feature is only available for SQL Server 2016 Analysis Services Tabular data sources. The feature is optimized to work with tabular data. The Q&A experience is not yet supported for multi-dimensional. Additional data sources supported by the on-premises data gateway will be rolled out over time.
-* Full support for row level security defined in SQL Server Analysis Services is not available initially in the public preview. While asking questions in Q&A, the “auto-complete” of questions while typing can show string values a user does not have access to. However, RLS defined in the model is respected for report and chart visuals so no underlying numerical data can be exposed. Options to control this behavior will be released in coming updates.
-* Object level security (OLS) is not supported. Q&A does not respect object level security and can reveal table or column names to users who don't have access to them. You should enable RLS to ensure data values are secured appropriately as well. 
-* Live connections are only supported with the on-premises data gateway. As a result, this cannot be used with the personal gateway.
+* Initially the feature is only available for SQL Server 2016 Analysis Services Tabular data sources. The feature is optimized to work with tabular data. The Q&A experience isn't yet supported for multi-dimensional. Additional data sources supported by the on-premises data gateway will be rolled out over time.
+* Full support for row-level security defined in SQL Server Analysis Services isn't available initially. While asking questions in Q&A, the “auto-complete” of questions while typing can show string values a user doesn't have access to. However, RLS defined in the model is respected for report and chart visuals so no underlying numerical data can be exposed. Options to control this behavior will be released in coming updates.
+* Object level security (OLS) isn't supported. Q&A doesn't respect object level security and can reveal table or column names to users who don't have access to them. You should enable RLS to ensure data values are secured appropriately as well. 
+* Live connections are only supported with the on-premises data gateway. As a result, this can't be used with the personal gateway.
 
 ## Next steps
-[On-premises data gateway](service-gateway-onprem.md)  
-[Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
-[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)  
-[Power BI Q&A Overview](consumer/end-user-q-and-a.md)  
+
+- [On-premises data gateway](service-gateway-onprem.md)  
+- [Manage your data source - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
+- [Power BI: Basic Concepts](consumer/end-user-basic-concepts.md)  
+- [Power BI Q&A Overview](consumer/end-user-q-and-a.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

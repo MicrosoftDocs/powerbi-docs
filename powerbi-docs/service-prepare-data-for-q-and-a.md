@@ -40,10 +40,11 @@ Here are some tips for making the most of Q&A in your workbook.
 * Open the dataset in Power BI Desktop and create new columns, create calculated measures, concatenate fields to create unique values, classify data by type (e.g., dates, strings, geography, images, URLs), and more.
 
 ## Next steps
-[Q&A for consumers](consumer/end-user-q-and-a.md)  
-[Use Q&A in dashboards and reports](power-bi-tutorial-q-and-a.md)
-[Prepare on-premises datasets for Q&A](service-q-and-a-direct-query.md)   
-[Get data (for Power BI)](service-get-data.md)  
+
+- [Q&A for consumers](consumer/end-user-q-and-a.md)  
+- [Use Q&A in dashboards and reports](power-bi-tutorial-q-and-a.md)
+- [Prepare on-premises datasets for Q&A](service-q-and-a-direct-query.md)   
+- [Get data (for Power BI)](service-get-data.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
