@@ -10,39 +10,35 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/11/2019
 ms.author: mihart
 
 LocalizationGroup: Common tasks
 ---
 # Favorite dashboards, reports, and apps in Power BI service
-When you make content a *favorite*,  you'll be able to access it from all of your workspaces.  Favorites are typically the content that you visit most often.
+When you make content a *favorite*,  you'll be able to access it quickly from the **Favorites** content list and from **Power BI Home** > **Favorites and frequents**.  Favorites are typically  content that you visit most often and are identified with a yellow star.
 
-> [!NOTE]
-> This topic applies to Power BI service, and not to Power BI Desktop.
-> 
-> 
+   ![Favorite icon](./media/end-user-favorite/power-bi-favorite-nav.png)
 
-You can also select a single dashboard as a [featured dashboard](end-user-featured.md) in Power BI service.
+   ![Favorite icon](./media/end-user-favorite/power-bi-home.png)
+
+You can also select a single dashboard as a [featured dashboard](end-user-featured.md) in the Power BI service.
 
 ## Add a dashboard or report as a *favorite*
-Watch Amanda add favorites to her workspace, then follow the step-by-step instructions below the video to try it out yourself.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
-
 
 1. Open a dashboard or report that you use often. Even content that has been shared with you can be a *favorite*.
-2. From the upper right corner of Power BI service, select **Favorite** or the star ![star icon](./media/end-user-favorite/power-bi-favorite-icon.png)  icon.
+
+2. From the upper ribbon of the Power BI service, select **Favorite** or the star ![star icon](./media/end-user-favorite/power-bi-favorite-icon.png)  icon.
    
    ![Favorite icon](./media/end-user-favorite/powerbi-dashboard-favorite.png)
    
-   You can also favorite a dashboard or report from your workspace **Dashboards** or **Reports** content view tab.
+   You can also favorite a dashboard or report from anywhere you see the star icon, such as Home, Recent, Apps, and Shared with me. 
    
-   ![Dashboard tab with yellow star](./media/end-user-favorite/power-bi-dashboard-favorite.png)
+   ![Dashboard tab with yellow star](./media/end-user-favorite/power-bi-recent.png)
 
 ## Add an app as a *favorite*
 
-1. From the left navpane, select **Apps**.
+1. From the navigation pane, select **Apps**.
 
    ![dashboard](./media/end-user-favorite/power-bi-favorite-apps.png)
 
@@ -51,10 +47,10 @@ Watch Amanda add favorites to her workspace, then follow the step-by-step instru
    ![hover over app](./media/end-user-favorite/power-bi-favorite-app.png)
 
 ## Working with *favorites*
-1. To access your favorites, from any workspace, select the flyout arrow to the right of **Favorites**.  From here you can select a favorite to open it. Only five favorites are listed (alphabetically). If you have more than five, select **See all** to open the favorites screen (see #2, below). 
+1. To access your favorites, select the flyout arrow to the right of **Favorites**.  From here you can select a favorite to open it. Only five favorites are listed (alphabetically). If you have more than five, select **See all** to open the favorites content list (see #2, below). 
    
-   ![Favorites flyout](./media/end-user-favorite/power-bi-favorite-flyout-new.png)
-2. To see **all** the content that you have added as favorites, in the left navpane, select **Favorites** or the Favorites ![star icon](./media/end-user-favorite/power-bi-favorites-icon.png)  icon.  
+   ![Favorites flyout](./media/end-user-favorite/power-bi-favorite-flyout.png)
+2. To see **all** the content that you have added as favorites, in the navigation pane, select **Favorites** or the Favorites ![star icon](./media/end-user-favorite/power-bi-favorites-icon.png)  icon.  
    
     ![favorite window](./media/end-user-favorite/power-bi-favorites-screen.png)
    
@@ -73,8 +69,6 @@ No longer use a report as often as you used to?  You can unfavorite it. When you
 > 
 
 ## Next steps
-[What is Power BI?](../power-bi-overview.md)
-
 [Power BI - Basic Concepts](end-user-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

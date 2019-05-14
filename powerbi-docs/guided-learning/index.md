@@ -4,7 +4,7 @@ description: Start your learning journey with this sequenced collection of cours
 layout: LandingPage
 ms.service: powerbi
 ms.author: davidiseminger
-ms.date: 10/01/2018
+ms.date: 05/10/2019
 ms.topic: hub-page
 
 ---

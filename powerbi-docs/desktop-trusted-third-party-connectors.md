@@ -13,9 +13,9 @@ ms.author: gepopell
 
 LocalizationGroup: Connect to data
 ---
-# Trusting Third-Party Connectors
+# Trusting third-party connectors
 
-## Why do you need Trusted Third-Party Connectors?
+## Why do you need trusted third-party connectors?
 
 In Power BI, we generally recommend keeping your 'Data extension security' level at the higher level, which prevents loading of code not certified by Microsoft. However, there may be many cases in which you want to load specific connectors--ones you've written, or ones provided to you by a consultant or vendor outside the Microsoft certification path.
 
@@ -23,7 +23,7 @@ The developer of a given connector can sign it with a certificate and provide yo
 
 If you want to know more about the security settings, you can read about them [here](https://docs.microsoft.com/power-bi/desktop-connector-extensibility).
 
-## Using the registry to trust Third-Party Connectors
+## Using the registry to trust third-party connectors
 
 Trusting third-party connectors in Power BI is done by listing the thumbprint of the certificate you want to trust in a specified registry value. If this thumbprint matches the thumbprint of the certificate on the connector you want to load, you will be able to load it in the ‘Recommended’ security level of Power BI. 
 
@@ -39,4 +39,8 @@ Add the thumbprints of the certificates you want to trust. You can add multiple 
 
  ![Power BI Desktop Registry with a trusted third-party key set](media/desktop-trusted-third-party-connectors/desktoptrustedthird3.png)
 
-If you’ve followed the instructions properly, and have been given the proper thumbprint by your developer, you should now be able to securely trust connectors signed with the associated certificate. 
+If you’ve followed the instructions properly, and have been given the proper thumbprint by your developer, you should now be able to securely trust connectors signed with the associated certificate.
+
+## How to Sign Connectors
+
+If you have a connector you or a developer need to sign, you can read about it in the Power Query docs [here](https://docs.microsoft.com/power-query/handlingconnectorsigning).

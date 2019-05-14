@@ -1,8 +1,8 @@
 ---
 title: How to purchase Power BI Premium
 description: Learn how you can purchase Power BI Premium and enable access to content for your entire organization.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
