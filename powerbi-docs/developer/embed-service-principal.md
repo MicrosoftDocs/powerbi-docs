@@ -5,7 +5,8 @@ author: rkarlin
 ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
-ms.subservice: power-bi-developer
+ms.service: powerbi
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
 ms.date: 03/29/2019
