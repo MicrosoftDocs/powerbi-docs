@@ -1,5 +1,5 @@
 ---
-title: Overview of Q&A in Power BI service
+title: Q&A for Power BI consumers
 description: Documentation overview topic for Power BI Q&A natural language queries.
 author: mihart
 manager: kvivek
@@ -16,7 +16,8 @@ LocalizationGroup: Ask questions of your data
 ---
 # Q&A for Power BI **consumers**
 ## What is Q&A?
-Sometimes the fastest way to get an answer from your data is to ask a question using natural language. For example, "what were total sales last year."  
+Sometimes the fastest way to get an answer from your data is to ask a question using natural language. For example, "what were total sales last year."
+
 Use Q&A to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. Q&A is different from a search engine -- Q&A only provides results about the data in Power BI.
 
 **Power BI Q&A** only supports answering natural language queries asked in English. There is a preview available for Spanish that can be enabled by your Power BI administrator.
