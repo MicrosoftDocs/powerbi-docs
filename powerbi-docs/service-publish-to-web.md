@@ -19,16 +19,16 @@ With Power BI **Publish to web**, you can easily embed interactive Power BI visu
 You can also easily edit, update, refresh, or unshare your published visuals.
 
 > [!WARNING]
-> When you use **Publish to web**, the report or visual you publish can be viewed by anyone on the Internet. There is no authentication used when viewing these reports. Only use Publish to web with reports and data that the anyone on the Internet (unauthenticated members of the public) should be able to see. This includes detail level data that is aggregated in your reports. Before publishing this report, ensure you have the right to share the data and visualizations publicly. Do not publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
+> When you use **Publish to web**, anyone on the Internet can view your published report or visual. Viewing these reports requires no authentication. This includes detail level data aggregated in your reports. Before publishing a report, make sure it is ok for you to share the data and visualizations publicly. Do not publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
 
 >[!Note]
 >To embed your content securely in an internal portal or website, use the [Embed](service-embed-secure.md) or [Embed in SharePoint Online](service-embed-report-spo.md) options. This ensures all permissions and data security is enforced when your users are viewing your internal data.
 
 ## How to use Publish to Web
 
-**Publish to web** is available on reports in your personal or group workspaces that you can edit.  You cannot use Publish to web with reports that were shared with you, or reports that rely on row level security to secure the data. See the **Limitations** section below for a complete list of cases where Publish to web isn't supported. Review the **Warning** earlier in this article before using Publish to web.
+**Publish to web** is available for reports in your editable personal or group workspaces.  It isn't available for reports shared with you, or ones relying on row level security to secure data. See the **Limitations** section below for a complete list of cases where Publish to web isn't supported. Review the **Warning** earlier in this article before using Publish to web.
 
-You can watch how this feature works in the following *short video*. Then, follow the steps below to try it yourself.
+The following *short video* shows how this feature works. Then, try it yourself in the next procedure that follows.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UF9QtqE7s4Y" frameborder="0" allowfullscreen></iframe>
 
@@ -38,15 +38,15 @@ The following steps describe how to use **Publish to web**.
 
    ![PtW1](media/service-publish-to-web/publish_to_web1.png)
 
-2. Review the content on the dialog, and select **Create embed code** as shown in the following dialog.
+2. Review the dialog content and select **Create embed code**.
 
    ![PtW2](media/service-publish-to-web/publish_to_web2_ga.png)
 
-3. Review the warning, shown in the following dialog, and confirm that the data is okay to embed in a public website. If so, select **Publish**.
+3. Review the warning, as shown here, and confirm that the data is okay to embed in a public website. If it is, select **Publish**.
 
    ![PtW3](media/service-publish-to-web/publish_to_web3_ga.png)
 
-4. A dialog appears that provides a link that can be sent in email, embedded in code (such as an iFrame), or that you can paste directly into your web page or blog.
+4. A dialog appears with a link. You can send this link in an email, embed it in code such as an iFrame, or paste it directly into a web page or blog.
 
    ![PtW4](media/service-publish-to-web/publish_to_web4.png)
 
@@ -56,7 +56,7 @@ The following steps describe how to use **Publish to web**.
 
 ## Tips and Tricks for View modes
 
-When you embed content within a blog post, you typically need to fit it within a specific size of the screen.  You can also adjust the height and the width in the iFrame tag as needed, but you may also need to ensure your report fits within the given area of the iFrame, so you also need to set an appropriate View Mode when editing the report.
+When you embed content within a blog post, you typically need to fit it within a specific screen size.  You can also adjust the height and the width in the iFrame tag as needed, but you may also need to ensure your report fits within the given iFrame area, so you also need to set an appropriate View Mode when editing the report.
 
 The following table provides guidance about the View Mode, and how it will appear when embedded.
 
@@ -64,7 +64,7 @@ The following table provides guidance about the View Mode, and how it will appea
 | --- | --- |
 | ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Fit to page** will respect the page height and width of your report. If you set your page to 'Dynamic' ratios like 16:9 or 4:3 your content will scale to fit within the iFrame, you provided. When embedded in an iFrame, using **Fit to page** can result in **letterboxing**, where a gray background is shown in areas of the iFrame after the content as scaled to fit within the iFrame. To minimize letterboxing, set your iFrame height/width appropriately. |
 | ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Actual size** will ensure the report preserves its size as set on the report page. This can result in scrollbars being present in your iFrame. Set the iFrame height and width to avoid the scrollbars. |
-| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Fit to width** ensures the content fits within the horizontal area for your iFrame. A border will still be shown, but the content will scale to use all the horizontal space available. |
+| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Fit to width** ensures the content fits within the iFrame's horizontal area. A border is still shown, but the content scale to use all the horizontal space available. |
 
 ## Tips and tricks for iFrame height and width
 
