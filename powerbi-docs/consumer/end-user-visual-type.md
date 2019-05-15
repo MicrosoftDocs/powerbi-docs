@@ -25,7 +25,7 @@ This article is an overview of the visuals that are packaged with Power BI.  The
 All of these visuals can be found in Power BI apps, dashboards, reports, and [specified in Q&A](end-user-q-and-a.md). To learn how to interact with visuals, see [Interact with visuals in reports, dashboards, and apps](end-user-visualizations.md)
 
 ### Area charts: Basic (Layered) and Stacked
-![area chart](media/end-user-visual-type/basic-area-mapsmall.png)
+![area chart](media/end-user-visual-type/basic-area-map-small.png)
 
 The basic area chart is based on the line chart with the area between the axis and line filled in. Area charts emphasize the magnitude of change over time, and can be used to draw attention to the total value across a trend. For example, data that represents profit over time can be plotted in an area chart to emphasize the total profit.
 
@@ -230,5 +230,5 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 ![q&a session](media/end-user-visual-type/qa-treemap.png)
 
 ## Next steps
-[Interact with visuals in reports, dashboards, and apps](end-user-visuals.md)    
+[Interact with visuals in reports, dashboards, and apps](end-user-visualizations.md)    
 [The right visual reference from sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
