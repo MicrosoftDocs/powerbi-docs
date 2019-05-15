@@ -58,7 +58,7 @@ The first time you change a report, the button for **Reset to default** lights u
 4. Resize and drag the slicer and other elements on the canvas to make room for the slicer. Note that the slicer items are cut off if you resize the slicer too small. 
 5. Select names on the slicer and note the effects on the other visualizations on the page. Select names again to deselect them, and hold down the **Ctrl** key to select more than one name. Selecting all names has the same effect as selecting none. \
 
-6. Alternately, select the paint roller icon to format your slicer. There are simply too many options to describe them all here - so experiment and create a slicer that works for you.  iIn the examples below, the first slicer has been converted to a dropdown to consesrve space and the option to "Select all" has been added.  The second slicer has been formatted with colors, fonts sizes, and only allows a single selection.
+6. Alternately, select the paint roller icon to format your slicer. There are simply too many options to describe them all here - so experiment and create a slicer that works for you. In the examples below, the first slicer has been converted to a dropdown to conserve space and the option to "Select all" has been added.  The second slicer has been formatted with colors, fonts sizes, and only allows a single selection.
 
    ![new slicer](media/power-bi-visualization-slicers/power-bi-filter-examples.png)
 >[!TIP]
