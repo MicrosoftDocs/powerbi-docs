@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 
 # Publish to web from Power BI
 
-With Power BI **Publish to web**, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device.
+With Power BI's **Publish to web** option, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device.
 
 You can also easily edit, update, refresh, or unshare your published visuals.
 
@@ -26,7 +26,7 @@ You can also easily edit, update, refresh, or unshare your published visuals.
 
 ## How to use Publish to Web
 
-**Publish to web** is available for reports in your editable personal or group workspaces.  It isn't available for reports shared with you, or ones relying on row level security to secure data. See the **Limitations** section below for a complete list of cases where Publish to web isn't supported. Review the **Warning** earlier in this article before using Publish to web.
+**Publish to web** is available for reports in your editable personal or group workspaces.  It isn't available for reports shared with you, or ones relying on row level security to secure data. See the [**Limitations**](#limitations) section below for a complete list of cases where Publish to web isn't supported. Review the **Warning** earlier in this article before using Publish to web.
 
 The following *short video* shows how this feature works. Then, try it yourself in the next procedure that follows.
 
@@ -50,29 +50,32 @@ The following steps describe how to use **Publish to web**.
 
    ![PtW4](media/service-publish-to-web/publish_to_web4.png)
 
-5. If you’ve previously created an embed code for the report, the embed code quickly appears. You can only create one embed code for each report.
+5. If you previously created an embed code for a report and you select **Publish to web**, you won't see the dialogs in steps 2-4. Instead, the **Embed code** dialog box appears: .
 
    ![PtW5](media/service-publish-to-web/publish_to_web5.png)
 
-## Tips and Tricks for View modes
+   You can only create one embed code for each report.
 
-When you embed content within a blog post, you typically need to fit it within a specific screen size.  You can also adjust the height and the width in the iFrame tag as needed, but you may also need to ensure your report fits within the given iFrame area, so you also need to set an appropriate View Mode when editing the report.
+
+## Tips and tricks for view modes
+
+When you embed content within a blog post, you typically need to fit it within a specific screen size.  You can adjust the height and the width in the iFrame tag as needed. However, you need to ensure your report fits within the given iFrame area, so you also need to set an appropriate View Mode when editing the report.
 
 The following table provides guidance about the View Mode, and how it will appear when embedded.
 
 | View Mode | How it looks when embedded |
 | --- | --- |
-| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Fit to page** will respect the page height and width of your report. If you set your page to 'Dynamic' ratios like 16:9 or 4:3 your content will scale to fit within the iFrame, you provided. When embedded in an iFrame, using **Fit to page** can result in **letterboxing**, where a gray background is shown in areas of the iFrame after the content as scaled to fit within the iFrame. To minimize letterboxing, set your iFrame height/width appropriately. |
-| ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Actual size** will ensure the report preserves its size as set on the report page. This can result in scrollbars being present in your iFrame. Set the iFrame height and width to avoid the scrollbars. |
-| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Fit to width** ensures the content fits within the iFrame's horizontal area. A border is still shown, but the content scale to use all the horizontal space available. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Fit to page** will respect your report's page height and width. If you set your page to 'Dynamic' ratios like 16:9 or 4:3 your content will scale to fit within the iFrame, you provided. When embedded in an iFrame, using **Fit to page** can result in **letterboxing**, where a gray background is shown in iFrame areas after the content as scaled to fit within the iFrame. To minimize letterboxing, set your iFrame height/width appropriately. |
+| ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Actual size** ensures the report preserves its size as set on the report page. This can result in scrollbars appearing in your iFrame. Set the iFrame height and width to avoid scrollbars. |
+| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Fit to width** ensures the content fits within the iFrame's horizontal area. A border is still shown, but the content scales to use all the horizontal space available. |
 
 ## Tips and tricks for iFrame height and width
 
-The embed code you receive after you Publish to web will look like the following:
+A Publish to web embed code looks like the following:
 
 ![PtW7](media/service-publish-to-web/publish_to_web7.png)
-
-You can edit the width and height manually to ensure it's precisely how you want it to fit onto the page into which you're embedding it.
+ 
+You can edit the width and height manually to ensure it's precisely how you want it to fit in the page where it's being embedded.
 
 To achieve a more perfect fit, you can try adding 56 pixels to the height dimension of the iFrame. This accommodates the current size of the bottom bar. If your report page uses the Dynamic size, the table below provides some sizes you can use to achieve a fit without letterboxing.
 
@@ -87,7 +90,7 @@ To achieve a more perfect fit, you can try adding 56 pixels to the height dimens
 
 ## Managing embed codes
 
-Once you create a **Publish to web** embed code, you can manage the codes you create from the **Settings** menu of the Power BI service. Managing embed codes includes the ability to remove the destination visual or report for a code (rendering the embed code unusable), or getting the embed code again.
+Once you create a **Publish to web** embed code, you can manage your codes from the **Settings** menu in Power BI. Managing embed codes includes the ability to remove the destination visual or report for a code (rendering the embed code unusable), or getting the embed code again.
 
 1. To manage your **Publish to web** embed codes, open the **Settings** gear and select **Manage embed codes**.
 
@@ -107,15 +110,15 @@ Once you create a **Publish to web** embed code, you can manage the codes you cr
 
 ## Updates to reports, and data refresh
 
-After you create your **Publish to web** embed code and share it, the report is updated with any changes you make. However, it’s important to know that it can take a while for update to be visible to your users. Updates to a report or visual take approximately one hour to be reflected in Publish to web embed codes.
+After you create your **Publish to web** embed code and share it, the report is updated with any changes you make. However, it’s important to know that it can take a while for the update to be visible to your users. Updates to a report or visual take approximately one hour to be reflected in Publish to web embed codes.
 
-When you initially use **Publish to web** to get an embed code, the embed code link is immediately active and can be viewed by anyone who opens the link.  After the initial Publish to web action, subsequent updates to reports or visuals to which a Publish to web link points can take approximately one hour to be visible to your users.
+When you initially use **Publish to web** to get an embed code, the embed code link is immediately active and anyone who opens the link can view it.  After the initial Publish to web action, later updates to reports or visuals can take approximately one hour to be visible to your users.
 
 To learn more, see the **How it works** section later in this article. If you need your updates to be immediately available, you can delete the embed code and create a new one.
 
 ## Data refresh
 
-Data refreshes are automatically reflected in your embedded report or visual. It can take approximately 1 hour for refreshed data to be visible from embed codes. You can disable automatic refresh by selecting **don't refresh** on the schedule for the dataset used by the report.  
+Data refreshes are automatically reflected in your embedded report or visual. It can take approximately 1 hour for refreshed data to be visible from embed codes. To disable automatic refresh, you can select **don't refresh** on the schedule for the dataset the report uses.  
 
 ## Custom visuals
 
@@ -139,7 +142,7 @@ Custom visuals are supported in **Publish to web**. When you use Publish to web,
 
 ## Tenant setting
 
-Power BI administrators can enable or disable the publish to web feature. They may also restrict access to specific groups. Your ability to create an embed code changes based on this setting.
+Power BI administrators can enable or disable the Publish to web feature. They can also restrict access to specific groups, which can impact your ability to create an embed code.
 
 |Feature |Enabled for entire organization |Disabled for entire organization |Specific security groups   |
 |---------|---------|---------|---------|
@@ -155,8 +158,8 @@ When viewing the **Manage embed codes** page for your **Publish to web** embed c
 | Status | Description |
 | --- | --- |
 | **Active** |The report is available for Internet users to view and interact with. |
-| **Blocked** |The content of the report violates the [Power BI Terms of Service](https://powerbi.microsoft.com/terms-of-service). It has been blocked by Microsoft. Contact support if you believe the content was blocked in error. |
-| **Not supported** |The report's data set is using row level security, or another unsupported configuration. See the **Limitations** section for a complete list. |
+| **Blocked** |The report content violates the [Power BI Terms of Service](https://powerbi.microsoft.com/terms-of-service). Microsoft has blocked it. Contact support if you believe the content was blocked in error. |
+| **Not supported** |The report's data set is using row level security, or another unsupported configuration. See the [**Limitations**](#limitations) section for a complete list. |
 | **Infringed** |The embed code is outside of the defined tenant policy. This typically occurs when an embed code was created and then the publish to web tenant setting was changed to exclude the user that owns the embed code. If the tenant setting is disabled, or the user is no longer allowed to create embed codes, existing embed codes will show the status of **Infringed**. |
 
 ## How to report a concern with Publish to web content
@@ -169,13 +172,13 @@ To report a concern, select the **flag** icon in the bottom bar of the Publish t
 
 ## Licensing and Pricing
 
-You need to be a Microsoft Power BI user to use **Publish to web**. The consumers of your report (the readers, viewers) do not need to be Power BI users.
+You need to be a Microsoft Power BI user to use **Publish to web**. Your report's viewers do not need to be Power BI users.
 
 ## How it works (technical details)
 
-When you create an embed code using **Publish to web**, the report is made visible to users on the Internet. It’s publicly available so you can expect viewers to easily share the report through social media in the future. As users view the report, either by opening the direct public URL or viewing it embedded in a web page or blog, Power BI caches the report definition and the results of the queries required to view the report. This approach ensures the report can be viewed by thousands of concurrent users without any impact on performance.
+When you create an embed code using **Publish to web**, the report is made visible to Internet users. It’s publicly available, so you can expect viewers to easily share the report through social media in the future. As users view the report, either by opening the direct public URL or viewing it embedded in a web page or blog, Power BI caches the report definition and the results of the queries required to view the report. This approach ensures that thousands of concurrent users can view the report without any impact on performance.
 
-The cache is long-lived, so if you update the report definition (for example, if you change its View mode) or refresh the report data, it can take approximately one hour before changes are reflected in the version of the report viewed by your users. It is therefore recommended that you stage your work ahead of time, and create the **Publish to web** embed code only when you’re satisfied with the settings.
+The cache is long-lived, so if you update the report definition (for example, if you change its View mode) or refresh the report data, it can take approximately one hour before changes are reflected in the version of the report your users view. It is therefore recommended that you stage your work ahead of time, and create the **Publish to web** embed code only when you’re satisfied with the settings.
 
 ## Next steps
 
