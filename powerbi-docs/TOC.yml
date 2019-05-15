@@ -377,6 +377,8 @@
       href: desktop-privacy-levels.md
     - name: "Connector extensibility in Power BI"
       href: desktop-connector-extensibility.md
+    - name: "Trusting signed third-party connectors"
+      href: desktop-trusted-third-party-connectors.md
   - name: Resources
     items: 
     - name: "Power BI Desktop videos"
@@ -1287,8 +1289,6 @@
       href: service-gateway-personal-mode.md
     - name: "Custom connectors"
       href: service-gateway-custom-connectors.md
-    - name: "Trusting signed third-party connectors"
-      href: desktop-trusted-third-party-connectors.md
     - name: "Troubleshooting the on-premises data gateway"
       href: service-gateway-onprem-tshoot.md
   - name: "Resources"
