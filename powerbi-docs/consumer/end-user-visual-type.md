@@ -222,7 +222,7 @@ Waterfall charts are a great choice:
 - to illustrate the beginning and the ending headcount for your company in a year
 - to visualize how much money you make and spend each month, and the running balance for your account.
 
-## Tell Q&A which visualization to use
+## <a name="qna"></a>Tell Q&A which visualization to use
 When typing natural language queries with Power BI Q&A, you can specify the visualization type in your query.  For example:
 
 "***sales by state as a treemap***"
