@@ -19,6 +19,7 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
 
 ## Push data to dataset code
 
+```csharp
       using System;
       using Microsoft.IdentityModel.Clients.ActiveDirectory;
       using System.Net;
@@ -215,6 +216,7 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
               #endregion
           }
       }
+```
 
 ## Next steps
 
