@@ -583,11 +583,11 @@
         href: power-bi-reports-performance.md  
     - name: Ask questions of your data
       items:
-      - name: "Get started with Power BI Q&A"
-        href: power-bi-visualization-introduction-to-q-and-a.md
-      - name: "Use Q&A to create visuals and reports"
+      - name: "Use Q&A to explore your data"
         href: power-bi-tutorial-q-and-a.md
-      - name: "Make your data work well with Q&A"
+      - name: "Create a visual with Q&A"
+        href: power-bi-visualization-introduction-to-q-and-a.md
+      - name: "Make Excel data work well with Q&A"
         href: service-prepare-data-for-q-and-a.md
       - name: "Create featured questions for Q&A"
         href: service-q-and-a-create-featured-questions.md
@@ -601,7 +601,7 @@
         href: service-cortana-enable.md
       - name: "Quick Insights in Power BI"
         href: service-insights.md
-      - name: "Optimize your data for  Quick Insights"
+      - name: "Optimize data for Quick Insights"
         href: service-insights-optimize.md
     - name: Collaborate in Power BI
       items: 
