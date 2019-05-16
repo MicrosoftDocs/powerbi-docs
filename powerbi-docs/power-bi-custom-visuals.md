@@ -8,7 +8,7 @@ ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/18/2018
+ms.date: 05/15/2019
 LocalizationGroup: Visualizations
 ---
 
@@ -20,7 +20,7 @@ When creating or editing a Power BI report, there are many different types of vi
 
 But you aren't limited to this set of visuals, selecting the ellipses opens up another source of report visuals: *custom visuals*.
 
-Custom visuals are created by developers, using the custom visuals SDK, to enable business users to see their data in a way that fits the business best. Report authors can then import the custom visuals files into their reports and use them as any other Power BI visuals. Custom visuals are first class citizens in Power BI and can be filtered, highlighted, edited, shared, etc.
+Developers create custom visuals using the custom visuals SDK. These visuals enable business users to see their data in a way that best fits their business. Report authors can then import the custom visual files into their reports and use them as they would any other Power BI visuals. Custom visuals are first class citizens in Power BI and can be filtered, highlighted, edited, shared, etc.
 
 Custom visuals can be in the form of three deployment channels:
 
@@ -30,22 +30,22 @@ Custom visuals can be in the form of three deployment channels:
 
 ## Custom visual files
 
-Custom visuals are packages that include code for rendering the data that is served to them. Anyone can create a custom visual and package it as a single `.pbiviz` file, that can be imported into a Power BI report.
+Custom visuals are packages that include code for rendering the data served to them. Anyone can create a custom visual and package it as a single `.pbiviz` file, that can then be imported into a Power BI report.
 
 > [!WARNING]
-> A custom visual could contain code with security or privacy risks; Make sure you trust the author and the source of the custom visual before importing it to your report.
+> A custom visual could contain code with security or privacy risks. Make sure you trust the author and custom visual source before importing it to your report.
 
 ## Organizational visuals
 
-Power BI admins can deploy custom visuals into their organization, so that report authors can easily discover and use the custom visuals that the admin has approved to use inside of the organization. The admin then has control to choose specific custom visuals to deploy in the organization, as well as an easy way to manage (for example, update version, disable/enable) those visuals. For the report author, it is an easy way to discover visuals that are unique to the organization, as well as a seamless support for updating those visuals.
+Power BI admins can approve and deploy custom visuals into their organization, which report authors can easily discover, update, and use. The admin can easily manage (for example, update version, disable/enable) those visuals.
 
-To get more information about organization custom visuals, [read more about organizational visuals](power-bi-custom-visuals-organization.md).
+ [Read more about organizational visuals](power-bi-custom-visuals-organization.md).
 
 ## Marketplace visuals
 
-Members of the community, as well as Microsoft, have contributed their custom visuals to the benefit of the public and published them to [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) marketplace. These visuals can be downloaded and added to Power BI reports. All of these custom visuals have been tested and approved by Microsoft for functionality and quality.
+Community members and Microsoft have contributed their custom visuals for public benefit and published them to [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) marketplace. You can download these visuals add them to your Power BI reports. Microsoft has tested and approved all these custom visuals for functionality and quality.
 
-What is [AppSource](developer/office-store.md)? Put, it is the place to find apps, add-ins, and extensions for your Microsoft software. [AppSource](https://appsource.microsoft.com/) connects millions of users of products like Office 365, Azure, Dynamics 365, Cortana, and Power BI to solutions that help them get work done more efficiently, more insightfully, or more beautifully than before.
+What is [AppSource](developer/office-store.md)? Simply put, it is the place you can find apps, add-ins, and extensions for your Microsoft software. [AppSource](https://appsource.microsoft.com/) connects millions of users of products like Office 365, Azure, Dynamics 365, Cortana, and Power BI to solutions that help them get work done more efficiently, more insightfully, or more beautifully than before.
 
 ### Certified visuals
 
