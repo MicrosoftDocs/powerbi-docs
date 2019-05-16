@@ -48,7 +48,7 @@ You might get this error in Settings for \<dataset\> if you have a scheduled ref
 
 **Solution:** In Power BI, go to the refresh settings for a dataset. In Manage Data Sources, for any data source with an error, select **Edit credentials** and sign in to the data source again.
 
-**Error: The credentials provided for the dataset are invalid. Update the credentials through a refresh or in the Data Source Settings dialog to continue.**
+**Error: The credentials provided for the dataset are invalid. Please update the credentials through a refresh or in the Data Source Settings dialog to continue.**
 
 **Solution**: If you get a credentials message, it could mean:
 
@@ -64,7 +64,7 @@ You might get this error in Settings for \<dataset\> if you have a scheduled ref
 * The data source isn't currently supported for refresh in Power BI. 
 * The Excel workbook doesn't contain a data model, only worksheet data. Power BI currently only supports refresh if the uploaded Excel workbook contains a data model. When you import data using Power Query in Excel, be sure to choose the option to Load data to data model. This option ensures data is imported into a data model. 
 
-**Error: [Unable to combine data] &lt;query part&gt;/&lt;…&gt;/&lt;…&gt; is accessing data sources that have privacy levels, which cannot be used together. Rebuild this data combination.**
+**Error: [Unable to combine data] &lt;query part&gt;/&lt;…&gt;/&lt;…&gt; is accessing data sources that have privacy levels, which cannot be used together. Please rebuild this data combination.**
 
 **Solution**: This error is because of the privacy level restrictions and the types of data sources you're using.
 
@@ -120,7 +120,7 @@ The **Data Management Gateway** and **PowerBIGateway** logs are present under **
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/event-logs.png)
 
 ### Fiddler trace
-[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic. You can see the communication with the Power BI service from the client machine. This tool may show errors and other related information.
+[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic. You can see the communication with the Power BI service from the client machine. This communication may show errors and other related information.
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/fiddler.png)
 
