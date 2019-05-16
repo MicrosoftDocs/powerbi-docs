@@ -64,7 +64,7 @@ Are you a Web developer and interested in creating your own visualizations and a
 
     ![import from file](media/power-bi-custom-visuals/power-bi-custom-visual-import-from-file.png)
 
-3. From the Open file menu, select the `.pbiviz` file that you want to import and then select **Open**. The icon for the custom visual is added to the bottom of your Visualizations pane and is now available for use in your report.
+3. From the Open file menu, select the `.pbiviz` file that you want to import and then select **Open**. The custom visual's icon is added to the bottom of your Visualizations pane and is now available for use in your report.
 
     ![cv imported](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
 
