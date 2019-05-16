@@ -39,7 +39,7 @@ There are two main scenarios for embedding Power BI content:
  
 2. Embedding for your users and customers who don't need Power BI licenses. 
 
-The [Power BI REST API](https://docs.microsoft.com/en-us/rest/api/power-bi/) allows for both scenarios.
+The [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) allows for both scenarios.
 
 For customers and users without Power BI licenses, you can embed dashboards and reports into your custom application, using the same API to either service your organization or your customers. Your customers see the application-managed data. Also, your organization's Power BI users have additional options to view *their data* directly in Power BI or in the  embedded application's context. You can take full advantage of the JavaScript and REST APIs for your embedding needs.
 
@@ -75,7 +75,7 @@ The Power BI Pro account acts as your application's master account (think of it 
 
 [Service principal](embed-service-principal.md) can embed Power BI content into an application using an **app-only** token. It also allows you to generate embed tokens that provide access to your application's Power BI dashboards and reports.
 
-Developers using Power BI Embedded can spend time focused on building their application's core competency rather than spending time developing visuals and analytics. They can rapidly meet customer report and dashboard demands and embed easily with fully documented APIs and SDKs. By enabling easy-to-navigate data exploration in apps, ISVs allow customers to make quick, data-driven decisions in context from any device.
+Developers using Power BI Embedded can spend time focused on building their application's core functionality rather than spending time developing visuals and analytics. They can rapidly meet customer report and dashboard demands and embed easily with fully documented APIs and SDKs. By enabling easy-to-navigate data exploration in apps, ISVs allow customers to make quick, data-driven decisions in context from any device.
 
 > [!IMPORTANT]
 > While embedding requires the Power BI service, your customers do not need to have a Power BI account to view your application's embedded content. 
