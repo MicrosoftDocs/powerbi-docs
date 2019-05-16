@@ -25,7 +25,7 @@ Linked entities are **read only**. If you want to create transformations for a l
 
 ## Linked entity availability
 
-Linked entities require a [Power BI Premium](service-premium.md) subscription to refresh. Linked entities are available in any dataflow on a workspace that is hosted on Power BI Premium capacity. There are no limitations on the source dataflow.
+Linked entities require a [Power BI Premium](service-premium-what-is.md) subscription to refresh. Linked entities are available in any dataflow on a workspace that is hosted on Power BI Premium capacity. There are no limitations on the source dataflow.
 
 Linked entities only work properly in new Power BI workspaces. You can learn more about [new Power BI workspaces](service-create-the-new-workspaces.md). All linked dataflows must be located in new workspaces to work properly.
 

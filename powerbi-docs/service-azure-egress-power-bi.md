@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Data from databases
@@ -29,7 +29,7 @@ For Power BI Premium Multi-Geo customers, if your Power BI tenant is not in the 
 
 For more information about Power BI Premium or Multi-Geo, take a look at the following resources:
 
-* [What is Microsoft Power BI Premium?](service-premium.md)
+* [What is Microsoft Power BI Premium?](service-premium-what-is.md)
 * [How to purchase Power BI Premium](service-admin-premium-purchase.md)
 * [Multi-Geo support for Power BI Premium (Preview)](service-admin-premium-multi-geo.md)
 * [Where is my Power BI tenant located?](service-admin-where-is-my-tenant-located.md)

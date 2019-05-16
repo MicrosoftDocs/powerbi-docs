@@ -1,14 +1,14 @@
 ---
 title: Connect to Power BI Premium datasets with client applications and tools (Preview)
 description: Describes how to connect to datasets in Power BI Premium from client applications and tools.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/28/2019
+ms.date: 04/26/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -65,7 +65,7 @@ For example, `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`
 
 In **Connect to Server** > **Server Type**, select **Analysis Services**. In **Server name**, enter the URL. In **Authentication**, select **Active Directory - Universal with MFA Support**, and then in **User name**, enter your organizational user ID. 
 
-When connected, the workspace is shown as an Analysis Services server, and datasets in the workspace are shown as databases.
+When connected, the workspace is shown as an Analysis Services server, and datasets in the workspace are shown as databases.  
 
 ![SSMS](media/service-premium-connect-tools/connect-tools-ssms.png)
 
@@ -86,6 +86,16 @@ When connecting to a dataset with the same name as another dataset in the same w
 ### Delay in datasets shown
 
 When connecting to a workspace, changes from new, deleted, and renamed datasets can take up to 5 minutes to appear. 
+
+### Unsupported datasets
+
+The following datasets are not accessible by using XMLA endpoints: 
+
+- Datasets with a Live connection to a datasource. 
+- Datasets with Push data by using the REST API.
+- Excel workbook datasets. 
+
+These datasets not *will not* appear under the workspace in SSMS or in other tools.
 
 ## Audit logs 
 

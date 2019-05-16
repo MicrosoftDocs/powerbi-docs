@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
 ---
 # Enroll your US Government organization in the Power BI service
-The **Power BI service** has a version available for United States Government customers as part of the **Office 365 US Government Community** subscriptions. The **Power BI service** version discussed in this article is specifically designed for US Government customers, and is separate and different from the commercial version of the **Power BI service**.
+The **Power BI service** has a version available for United States Government customers as part of the **Office 365 US Government Community** subscriptions. The **Power BI service** version discussed in this article is designed for US Government customers, and is separate and different from the commercial version of the **Power BI service**.
 
 For more information about the **Power BI service** for US Government, including its features and limitations, check out [Power BI for United States Government customers - Overview](service-govus-overview.md).
 
@@ -54,7 +54,7 @@ If your organization is an existing **Office Government Cloud** customer, but yo
 > 
 > 
 
-1. Log in to your existing Office Government Cloud account and go to the admin portal
+1. Sign in to your existing Office Government Cloud account and go to the admin portal
 2. Select **Billing**.
 3. Select **Purchase Service**.
 4. Select the Power BI Pro Government Option and choose between **Try** and **Buy Now**
@@ -62,7 +62,7 @@ If your organization is an existing **Office Government Cloud** customer, but yo
 6. Assign users to the account.
    
    ![](media/service-govus-signup/service_govus_signup_5.png)
-7. Log in to the **Power BI service** for US Government customers at [https://app.powerbigov.us](https://app.powerbigov.us)
+7. Sign in to the **Power BI service** for US Government customers at [https://app.powerbigov.us](https://app.powerbigov.us)
 
 ## Additional Signup Information
 The below is additional information for signing up for **Power BI US Government** in various licensing migration cases.
@@ -71,7 +71,7 @@ The below is additional information for signing up for **Power BI US Government*
 * Click and follow through the Billing > Purchase Service > Power BI Pro Gov and select purchase and not Trial
 * Fill in the necessary and get the licenses
 * Remove the Power BI Pro Trial or remove the old licenses and Assign the new ones to the users
-* Log in to [https://app.powerbigov.us](https://app.powerbigov.us)
+* Sign in to [https://app.powerbigov.us](https://app.powerbigov.us)
 
 ### Reseller Power BI Trial to Pro Customer Onboarding
 Go to **Billing > Subscriptions** and select **Power BI Pro for Government** subscription. There you will see:
@@ -86,14 +86,14 @@ Go to **Billing > Subscriptions** and select **Power BI Pro for Government** sub
 ### Whitelisting Instructions
 *Whitelisting* is a process that the Power BI engineering team uses to move customers from the commercial cloud environment into the secure, Government cloud environment. This ensures that features available in the US Government cloud work as expected. All existing (or new) US Government customers that purchase US Government **Power BI** services for the first time *must* initiate the following whitelisting process. The process must be done prior to setup or migration to US Government **Power BI** services. 
 
-To have your tenant *whitelisted* for the US Government cloud, contact the Microsoft account team for assistance with whiteplisting. Note that only administrators can make this request. The process for *whitelisting* takes approximately three weeks, during which the Power BI engineering team makes appropriate changes to ensure your tenant operates properly in the US Government cloud.
+To have your tenant *whitelisted* for the US Government cloud, contact the Microsoft account team for assistance with whitelisting. Only administrators can make this request. The process for *whitelisting* takes approximately three weeks, during which the Power BI engineering team makes appropriate changes to ensure your tenant operates properly in the US Government cloud.
 
 Customers migrating from Power BI **Free** licenses to **Power BI US Government** (and by definition, migrating to the associated **Pro** license features described earlier in this article) will encounter the issues described in the following section of this article, until their tenant is *whitelisted* by the Power BI engineering team.
 
 ### Mixed Free and Pro licenses in US Government tenants
 If you have both Free and US Government Pro licenses in your tenant, both Free and (US Government) Pro licenses remain present, but one or the other license types will not work properly. If your tenant successfully goes through the *whitelisting* process, then the following occurs:
 
-* Any Free license users will no longer be able to log in to Power BI using **Power BI Desktop**, and will experience functionality gaps described in the following section.
+* Any Free license users will no longer be able to sign in to Power BI using **Power BI Desktop**, and will experience functionality gaps described in the following section.
 * All clients assigned to US Government Pro licenses will work as expected, including use of gateways, Power BI Desktop, and Mobile apps.
 
 When using a mix of Free and Pro licenses in a US Government tenant, and going through the *whitelisting* process, the following can be expected:

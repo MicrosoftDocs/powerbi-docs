@@ -55,7 +55,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                           <h3>Power BI licensing</h3> 
                                           <p></p>
                                                 <a href="service-admin-licensing-organization.md">Power BI licensing in your organization</a><br/> 
-                                                <a href="service-premium.md">Power BI Premium: What is it?</a> 
+                                                <a href="service-premium-what-is.md">Power BI Premium: What is it?</a> 
                                     </div> 
                               </div> 
                         </div> 

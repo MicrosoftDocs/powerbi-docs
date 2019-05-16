@@ -1,8 +1,8 @@
 ---
 title: "Tutorial: Create a paginated report and upload it to the Power BI service (Preview)"
 description: In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Report Builder to create a paginated report. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service.  
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -39,7 +39,7 @@ Here are the prerequisites for creating the paginated report:
 Here are the prerequisites for uploading your paginated report to the Power BI service:
 
 - You need a [Power BI Pro license](service-admin-power-bi-pro-in-your-organization.md).
-- Your need an app workspace on the service in a [Power BI Premium capacity](service-premium.md). It has a diamond icon ![Premium diamond icon](media/paginated-reports-quickstart-aw/premium-diamond.png) next to the workspace name.
+- Your need an app workspace on the service in a [Power BI Premium capacity](service-premium-what-is.md). It has a diamond icon ![Premium diamond icon](media/paginated-reports-quickstart-aw/premium-diamond.png) next to the workspace name.
 
 ## Create the matrix with a wizard
   
