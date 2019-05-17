@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 
 # Publish to web from Power BI
 
-With Power BI's **Publish to web** option, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device.
+With Power BI's **Publish to web** option, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, from any device.
 
 You can also easily edit, update, refresh, or unshare your published visuals.
 
