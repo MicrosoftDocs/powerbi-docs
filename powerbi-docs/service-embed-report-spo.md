@@ -69,7 +69,7 @@ To embed your report into SharePoint Online, you need to get the report URL and 
 
 ## Grant access to reports
 
-Embedding a report in SharePoint Online doesn't automatically give users permission to view the report. You need to set view permissions in Power BI.
+Embedding a report in SharePoint Online doesn't automatically give users permission to view the report - you need to set view permissions in Power BI.
 
 > [!IMPORTANT]
 > Make sure to review who can see the report within the Power BI service and grant access to those not listed.
@@ -78,19 +78,19 @@ There are two ways to provide report access in Power BI. The first way, if you'r
 
 The second way is to embed a report within an app and share it directly with users:  
 
-1. The author (needs to be a Pro user) creates a report in an app workspace. *To share with **Power BI free users**, the app workspace needs to be set as a **Premium workspace**.*
+1. The author (needs to be a Pro user) creates a report in an app workspace. To share with **Power BI free users**, the app workspace needs to be set as a **Premium workspace**.
 
-2. The author publishes the app and installs it. *The author needs to make sure to install the app to have access to the report URL that is used to embed in SharePoint Online.*
+2. The author publishes the app and installs it. The author needs to make sure to install the app to have access to the report URL that is used to embed in SharePoint Online.
 
 3. Now all end users need to install the app too. You can also use the **Install app automatically** feature, which you can enable in the [Power BI admin portal](service-admin-portal.md), to have the app pre-installed for end users. ![Install app automatically](media/service-embed-report-spo/install-app-automatically.png)
 
 4. The author opens the app and goes to the report.
 
-5. The author copies the embed report URL from the report the app installed. *Do Not use the original report URL from the app workspace.*
+5. The author copies the embed report URL from the report the app installed. **Do Not use the original report URL from the app workspace.**
 
 6. Create a new team site in SharePoint Online.
 
-7. Add the report URL copied from step 6 to the Power BI web part.
+7. Add the previously-copied report URL to the Power BI web part.
 
 8. Add all end users and/or groups who are going to consume the data on the SharePoint Online page and in the Power BI app you created.
 
@@ -101,7 +101,7 @@ Now the end user can go to the team site in SharePoint Online and view the repor
 
 ## Multi-factor authentication
 
-If your Power BI environment requires you to sign in using multi-factor authentication, you may be asked to sign in with a security device to verify your identity. This occurs if you did not sign in to SharePoint Online using multi-factor authentication but your Power BI environment requires a security device to validate an account.
+If your Power BI environment requires you to sign in using multi-factor authentication, you may be asked to sign in with a security device to verify your identity. This occurs if you did not sign in to SharePoint Online using multi-factor authentication, but your Power BI environment requires a security device to validate an account.
 
 > [!NOTE]
 > Azure Active Directory 2.0 does not support multi-factor authentication. Users receive a message saying *error*. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
@@ -121,11 +121,9 @@ Below are the settings you can adjust for the Power BI web part for SharePoint O
 
 ## Reports that do not load
 
-If your report does not load within the Power BI web part, you may see the following message.
+If your report does not load within the Power BI web part, you may see the following message:
 
-*This content isn't available.*
-
-![Report not found message](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
+![This content isn't available message](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
 
 There are two common reasons for this message.
 
