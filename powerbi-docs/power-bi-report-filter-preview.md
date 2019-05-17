@@ -132,7 +132,8 @@ You can also format these elements for filter cards, depending on if they're app
     ![Expand Filter card](media/power-bi-report-filter-preview/power-bi-filter-format-card-font.png)
 
 ## Theming for filter pane
-You can now modify the default settings of the filter pane with the theme file. Here’s a sample theme snippet to get you started: 
+You can now modify the default settings of the filter pane with the theme file. Here’s a sample theme snippet to get you started:
+
  
 `
 "outspacePane": [{ 
