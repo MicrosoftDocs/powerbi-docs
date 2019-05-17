@@ -136,49 +136,79 @@ You can now modify the default settings of the filter pane with the theme file. 
  
 `
 "outspacePane": [{ 
+
 "backgroundColor": {"solid": {"color": "#0000ff"}}, 
+
 "foregroundColor": {"solid": {"color": "#00ff00"}}, 
+
 "transparency": 50, 
+
 "titleSize": 35, 
+
 "headerSize": 8, 
+
 "fontFamily": "Georgia", 
+
 "border": true, 
+
 "borderColor": {"solid": {"color": "#ff0000"}} 
+
 }], 
+
 "filterCard": [ 
+
 { 
+
 "$id": "Applied", 
+
 "transparency": 0, 
+
 "backgroundColor": {"solid": {"color": "#ff0000"}}, 
+
 "foregroundColor": {"solid": {"color": "#45f442"}}, 
+
 "textSize": 30, 
+
 "fontFamily": "Arial", 
+
 "border": true, 
+
 "borderColor": {"solid": {"color": "#ffffff"}}, 
+
 "inputBoxColor": {"solid": {"color": "#C8C8C8"}} 
+
 }, 
+
 { 
+
 "$id": "Available", 
+
 "transparency": 40, 
+
 "backgroundColor": {"solid": {"color": "#00ff00"}}, 
+
 "foregroundColor": {"solid": {"color": "#ffffff"}}, 
+
 "textSize": 10, 
+
 "fontFamily": "Times New Roman", 
+
 "border": true, 
+
 "borderColor": {"solid": {"color": "#123456"}}, 
+
 "inputBoxColor": {"solid": {"color": "#777777"}} 
+
 }] 
 `
 
 ## Sort the filter pane
 
-Custom sort functionality is now part of the new filter pane experience. Report creators can now drag and drop filters to rearrange them in the order they desire.
+Custom sort functionality is part of the new filter pane experience. Report creators can drag and drop filters to rearrange them in the order they desire.
 
-[add gif here]
+![Rearrange filter sort order](media/power-bi-report-filter-preview/power-bi-filter-sort.gif)
 
-Keep in mind that the default sort order is alphabetical for filters. To start custom sort mode, just drag any filter to a new position. You can only sort filters within the level they apply to -- for example, a visual-level, page-level, or report-level filter.
-
-You can test out the feature in DXT, just upload a report with the new filter pane turned on.
+The default sort order is alphabetical for filters. To start custom sort mode, just drag any filter to a new position. You can only sort filters within the level they apply to -- for example, a visual-level, page-level, or report-level filter.
 
 ## Filters pane scaling
 
