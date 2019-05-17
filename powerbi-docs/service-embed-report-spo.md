@@ -10,7 +10,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 11/01/2018
+ms.date: 05/16/2019
 ---
 
 # Embed with report web part in SharePoint Online
