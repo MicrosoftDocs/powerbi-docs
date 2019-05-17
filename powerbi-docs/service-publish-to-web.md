@@ -96,15 +96,15 @@ Once you create a **Publish to web** embed code, you can manage your codes from 
 
    ![PtW8](media/service-publish-to-web/publish_to_web8.png)
 
-2. The list of embed codes you’ve created appears, as shown in the following image.
+2. Your embed codes appear:
 
    ![PtW9](media/service-publish-to-web/publish_to_web9.png)
 
-3. For each **Publish to web** embed code in the list, you can either retrieve the embed code, or delete the embed code and thus make any links to that report or visual no longer work.
+3. You can either retrieve or delete an embed code. Deleting it disables any links to that report or visual.
 
    ![PtW10](media/service-publish-to-web/publish_to_web10.png)
 
-4. If you select **Delete**, you’re asked if you’re sure you want to delete the embed code.
+4. If you select **Delete**, you’re asked for a confirmation.
 
    ![PtW11](media/service-publish-to-web/publish_to_web11.png)
 
@@ -133,11 +133,11 @@ Custom visuals are supported in **Publish to web**. When you use **Publish to we
 - Reports shared to you directly or through an organizational content pack.
 - Reports in a group in which you are not an edit member.
 - "R" Visuals are not currently supported in **Publish to web** reports.
-- Exporting Data from visuals in a report, which has been published to the web
-- ArcGIS Maps for Power BI visuals
-- Reports containing report-level DAX measures
-- Single sign-on data query models
-- [Secure confidential or proprietary information](#publish-to-web-from-power-bi)
+- Exporting Data from visuals in a report, which has been published to the web.
+- ArcGIS Maps for Power BI visuals.
+- Reports containing report-level DAX measures.
+- Single sign-on data query models.
+- [Secure confidential or proprietary information](#publish-to-web-from-power-bi).
 - The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embed-sample-for-your-organization.md) approach to embedding. Learn more about [user owns data](developer/embed-sample-for-your-organization.md).
 
 ## Tenant setting
@@ -153,7 +153,7 @@ Power BI administrators can enable or disable the **Publish to web** feature. Th
 
 ## Understanding the embed code status column
 
-When viewing the **Manage embed codes** page for your **Publish to web** embed codes, a status column is provided. Embed codes are active by default, but you may encounter any of the states listed below.
+The **Manage embed codes** page includes a status column. By default, embed codes are **Active**, but could also be one of the statuses listed below.
 
 | Status | Description |
 | --- | --- |
@@ -164,7 +164,7 @@ When viewing the **Manage embed codes** page for your **Publish to web** embed c
 
 ## How to report a concern with Publish to web content
 
-To report a concern related to **Publish to web** content embedded in a website or blog, use the **Flag** icon in the bottom bar, shown in the following image. You’ll be asked to send an email to Microsoft explaining the concern. Microsoft will evaluate the content based on the Power BI Terms of Service, and take appropriate action.
+To report a concern related to **Publish to web** content embedded in a website or blog, use the **Flag** icon in the bottom bar, as shown in the following image. You’ll be asked to send an email to Microsoft explaining your concern. Microsoft will evaluate the content based on the Power BI Terms of Service and take appropriate action.
 
 To report a concern, select the **flag** icon in the bottom bar of the **Publish to web** report you see.
 
@@ -176,7 +176,7 @@ You need to be a Microsoft Power BI user to use **Publish to web**. Your report'
 
 ## How it works (technical details)
 
-When you create an embed code using **Publish to web**, the report is made visible to Internet users. It’s publicly available, so you can expect viewers to easily share the report through social media in the future. As users view the report, either by opening the direct public URL or viewing it embedded in a web page or blog, Power BI caches the report definition and the results of the queries required to view the report. This approach ensures that thousands of concurrent users can view the report without impacting performance.
+When you create an embed code using **Publish to web**, the report is made visible to Internet users. It’s publicly available, so you can expect viewers to easily share the report through social media in the future. As users view the report, either by opening the direct public URL or viewing it embedded in a web page or blog, Power BI caches the report definition and the results of the queries required to view the report. This ensures that thousands of concurrent users can view the report without impacting performance.
 
 The cache is long-lived, so if you update the report definition (for example, if you change its View mode) or refresh the report data, it can take approximately one hour before changes are reflected in the version of the report your users view. It is therefore recommended that you stage your work ahead of time, and create the **Publish to web** embed code only when you’re satisfied with the settings.
 
