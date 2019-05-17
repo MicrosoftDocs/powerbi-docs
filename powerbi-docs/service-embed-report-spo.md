@@ -82,11 +82,13 @@ The second way is to embed a report within an app and share it directly with use
 
 2. The author publishes the app and installs it. The author needs to make sure to install the app to have access to the report URL that is used to embed in SharePoint Online.
 
-3. Now all end users need to install the app too. You can also use the **Install app automatically** feature, which you can enable in the [Power BI admin portal](service-admin-portal.md), to have the app pre-installed for end users. ![Install app automatically](media/service-embed-report-spo/install-app-automatically.png)
+3. Now all end users need to install the app too. You can also use the **Install app automatically** feature, which you can enable in the [Power BI admin portal](service-admin-portal.md), to have the app pre-installed for end users.
+
+   ![Install app automatically](media/service-embed-report-spo/install-app-automatically.png)
 
 4. The author opens the app and goes to the report.
 
-5. The author copies the embed report URL from the report the app installed. **Do Not use the original report URL from the app workspace.**
+5. The author copies the embed report URL from the report the app installed. **Don't use the original report URL from the app workspace.**
 
 6. Create a new team site in SharePoint Online.
 
@@ -104,7 +106,7 @@ Now the end user can go to the team site in SharePoint Online and view the repor
 If your Power BI environment requires you to sign in using multi-factor authentication, you may be asked to sign in with a security device to verify your identity. This occurs if you did not sign in to SharePoint Online using multi-factor authentication, but your Power BI environment requires a security device to validate an account.
 
 > [!NOTE]
-> Azure Active Directory 2.0 does not support multi-factor authentication. Users receive a message saying *error*. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
+> Azure Active Directory 2.0 does not support multi-factor authentication - users will see an error message. If the user signs in again to SharePoint Online using their security device, they may be able to view the report.
 
 ## Web part settings
 

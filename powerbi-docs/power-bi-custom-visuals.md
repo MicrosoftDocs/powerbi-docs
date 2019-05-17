@@ -56,7 +56,7 @@ Are you a Web developer and interested in creating your own visualizations and a
 
 ### Import a custom visual from a file
 
-1. Select the ellipses from the bottom of the Visualizations pane.
+1. Select the ellipses from the bottom of the **Visualizations** pane.
 
     ![visualizations2](media/power-bi-custom-visuals/power-bi-visualizations2.png)
 
@@ -64,13 +64,13 @@ Are you a Web developer and interested in creating your own visualizations and a
 
     ![import from file](media/power-bi-custom-visuals/power-bi-custom-visual-import-from-file.png)
 
-3. From the Open file menu, select the `.pbiviz` file that you want to import and then select **Open**. The custom visual's icon is added to the bottom of your Visualizations pane and is now available for use in your report.
+3. From the Open file menu, select the `.pbiviz` file that you want to import and then select **Open**. The custom visual's icon is added to the bottom of your **Visualizations** pane and is now available for use in your report.
 
     ![cv imported](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
 
 ### Import organizational visuals
 
-1. Select the ellipses from the bottom of the Visualizations pane.
+1. Select the ellipses from the bottom of the **Visualizations** pane.
 
     ![visual org 1](media/power-bi-custom-visuals/power-bi-visual-org-01.png)
 
@@ -86,7 +86,7 @@ Are you a Web developer and interested in creating your own visualizations and a
 
     ![visual org 4](media/power-bi-custom-visuals/power-bi-visual-org-04.png)
 
-5. Select **Add** to import the custom visual. Its icon is added to the bottom of your Visualizations pane and is now available for use in your report.
+5. Select **Add** to import the custom visual. Its icon is added to the bottom of your **Visualizations** pane and is now available for use in your report.
 
     ![visual org 5](media/power-bi-custom-visuals/power-bi-visual-org-05.png)
 
@@ -96,7 +96,7 @@ You have two options for downloading and importing custom visuals: from within P
 
 ### Import custom visuals from within Power BI
 
-1. Select the ellipses from the bottom of the Visualizations pane.
+1. Select the ellipses from the bottom of the **Visualizations** pane.
 
     ![visualizations 2](media/power-bi-custom-visuals/power-bi-visualizations2.png)
 
@@ -120,7 +120,7 @@ You have two options for downloading and importing custom visuals: from within P
 
     ![Reviews](media/power-bi-custom-visuals/power-bi-reviews.png)
 
-7. Select **Add** to import the custom visual. Its icon is added to the bottom of your Visualizations pane and is now available for use in your report.
+7. Select **Add** to import the custom visual. Its icon is added to the bottom of your **Visualizations** pane and is now available for use in your report.
 
     ![visual imported](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
 
@@ -152,9 +152,9 @@ You have two options for downloading and importing custom visuals: from within P
 
     ![Try Sample](media/power-bi-custom-visuals/powerbi-custom-try-sample.png)
 
-6. Save the '.pbiviz' file and then open Power BI.
+6. Save the `.pbiviz` file and then open Power BI.
 
-7. Import the '.pbiviz' file into your report. (See the [Import a custom visual from a file](#import-a-custom-visual-from-a-file) section above.)
+7. Import the `.pbiviz` file into your report. (See the [Import a custom visual from a file](#import-a-custom-visual-from-a-file) section above.)
 
 ## Considerations and limitations
 
