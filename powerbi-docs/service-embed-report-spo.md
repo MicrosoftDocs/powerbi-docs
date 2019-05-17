@@ -146,7 +146,7 @@ Users viewing a report in SharePoint need either a **Power BI Pro license** or t
   
   1. Sign out of SharePoint and sign back in. Be sure to close all browser windows before signing back in.
 
-  2. If your user account requires multi-factor authentication (MFA), then sign in to SharePoint using your MFA device (phone app, smart card, etc.)
+  2. If your user account requires multi-factor authentication (MFA), then sign in to SharePoint using your MFA device (phone app, smart card, etc.).
   
   3. Azure B2B Guest users accounts are not supported. Users see the Power BI logo that shows the part is loading, but it doesn't show the report.
 
