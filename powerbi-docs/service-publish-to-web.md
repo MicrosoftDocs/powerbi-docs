@@ -26,7 +26,7 @@ You can also easily edit, update, refresh, or unshare your published visuals.
 
 ## How to use Publish to Web
 
-**Publish to web** is available for reports in your personal or group workspaces you can edit.  It isn't available for reports shared with you, or ones relying on row level security to secure data. See the [**Limitations**](#limitations) section below for a complete list of cases where Publish to web isn't supported. Review the **Warning** earlier in this article before using Publish to web.
+**Publish to web** is available for reports in your personal or group workspaces you can edit.  It isn't available for reports shared with you, or ones relying on row level security to secure data. See the [**Limitations**](#limitations) section below for a complete list of cases where **Publish to web** isn't supported. Review the **Warning** earlier in this article before using **Publish to web**.
 
 The following *short video* shows how this feature works. Then, try it yourself in the steps below.
 
@@ -71,7 +71,7 @@ The following table provides guidance about the View Mode, and how it will appea
 
 ## Tips and tricks for iFrame height and width
 
-A Publish to web embed code looks like the following:
+A **Publish to web** embed code looks like the following:
 
 ![PtW7](media/service-publish-to-web/publish_to_web7.png)
  
@@ -110,9 +110,9 @@ Once you create a **Publish to web** embed code, you can manage your codes from 
 
 ## Updates to reports, and data refresh
 
-After you create your **Publish to web** embed code and share it, the report is updated with any changes you make. However, it’s important to know that it can take a while for the update to be visible to your users. Updates to a report or visual take approximately one hour to be reflected in Publish to web embed codes.
+After you create your **Publish to web** embed code and share it, the report is updated with any changes you make. However, it’s important to know that it can take a while for the update to be visible to your users. Updates to a report or visual take approximately one hour to be reflected in **Publish to web** embed codes.
 
-When you initially use **Publish to web** to get an embed code, the embed code link is immediately active and anyone who opens the link can view it.  After the initial Publish to web action, later updates to reports or visuals can take approximately one hour to be visible to your users.
+When you initially use **Publish to web** to get an embed code, the embed code link is immediately active and anyone who opens the link can view it.  After the initial **Publish to web** action, later updates to reports or visuals can take approximately one hour to be visible to your users.
 
 To learn more, see the **How it works** section later in this article. If you need your updates to be immediately available, you can delete the embed code and create a new one.
 
@@ -122,17 +122,17 @@ Data refreshes are automatically reflected in your embedded report or visual. It
 
 ## Custom visuals
 
-Custom visuals are supported in **Publish to web**. When you use Publish to web, users with whom you share your published visual do not need to enable custom visuals to view the report.
+Custom visuals are supported in **Publish to web**. When you use **Publish to web**, users with whom you share your published visual do not need to enable custom visuals to view the report.
 
 ## Limitations
 
-**Publish to web** is supported for the vast majority of data sources and reports in the Power BI service, however, the following are **not currently supported or available** with Publish to web:
+**Publish to web** is supported for the vast majority of data sources and reports in the Power BI service, however, the following are **not currently supported or available** with **Publish to web**:
 
 - Reports using row level security.
 - Reports using any Live Connection data source, including Analysis Services Tabular hosted on-premises, Analysis Services Multidimensional, and Azure Analysis Services.
 - Reports shared to you directly or through an organizational content pack.
 - Reports in a group in which you are not an edit member.
-- "R" Visuals are not currently supported in Publish to web reports.
+- "R" Visuals are not currently supported in **Publish to web** reports.
 - Exporting Data from visuals in a report, which has been published to the web
 - ArcGIS Maps for Power BI visuals
 - Reports containing report-level DAX measures
@@ -142,7 +142,7 @@ Custom visuals are supported in **Publish to web**. When you use Publish to web,
 
 ## Tenant setting
 
-Power BI administrators can enable or disable the Publish to web feature. They can also restrict access to specific groups, which can impact your ability to create an embed code.
+Power BI administrators can enable or disable the **Publish to web** feature. They can also restrict access to specific groups, which can impact your ability to create an embed code.
 
 |Feature |Enabled for entire organization |Disabled for entire organization |Specific security groups   |
 |---------|---------|---------|---------|
@@ -160,13 +160,13 @@ When viewing the **Manage embed codes** page for your **Publish to web** embed c
 | **Active** |The report is available for Internet users to view and interact with. |
 | **Blocked** |The report content violates the [Power BI Terms of Service](https://powerbi.microsoft.com/terms-of-service). Microsoft has blocked it. Contact support if you believe the content was blocked in error. |
 | **Not supported** |The report's data set is using row level security, or another unsupported configuration. See the [**Limitations**](#limitations) section for a complete list. |
-| **Infringed** |The embed code is outside of the defined tenant policy. This typically occurs when an embed code was created and then the publish to web tenant setting was changed to exclude the user that owns the embed code. If the tenant setting is disabled, or the user is no longer allowed to create embed codes, existing embed codes will show the status of **Infringed**. |
+| **Infringed** |The embed code is outside the defined tenant policy. This typically occurs when an embed code was created and then the **Publish to web** tenant setting was changed to exclude the user owning the embed code. If the tenant setting is disabled, or the user is no longer allowed to create embed codes, existing embed codes show an **Infringed** status. |
 
 ## How to report a concern with Publish to web content
 
 To report a concern related to **Publish to web** content embedded in a website or blog, use the **Flag** icon in the bottom bar, shown in the following image. You’ll be asked to send an email to Microsoft explaining the concern. Microsoft will evaluate the content based on the Power BI Terms of Service, and take appropriate action.
 
-To report a concern, select the **flag** icon in the bottom bar of the Publish to web report you see.
+To report a concern, select the **flag** icon in the bottom bar of the **Publish to web** report you see.
 
 ![PtW12](media/service-publish-to-web/publish_to_web12_ga.png)
 
