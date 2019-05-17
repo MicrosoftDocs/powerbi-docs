@@ -135,7 +135,7 @@ You can also format these elements for filter cards, depending on if they're app
 You can now modify the default settings of the filter pane with the theme file. Here’s a sample theme snippet to get you started:
 
  
-`
+```
 "outspacePane": [{ 
 
 "backgroundColor": {"solid": {"color": "#0000ff"}}, 
@@ -201,7 +201,7 @@ You can now modify the default settings of the filter pane with the theme file. 
 "inputBoxColor": {"solid": {"color": "#777777"}} 
 
 }] 
-`
+```
 
 ## Sort the filter pane
 
