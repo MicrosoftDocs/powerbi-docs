@@ -54,19 +54,19 @@ items:
     > [!Video https://www.youtube.com/embed/758Lnhj9DRo?rel=0]
 
     [!INCLUDE [](includes/6-1-create-groups.md)]
-- title: Build content packs
+- title: Build Apps
   durationInMinutes: 5
   content: |
     > [!Video https://www.youtube.com/embed/8V2WP4nFCiA?rel=0]
 
     [!INCLUDE [](includes/6-2-create-content-packs.md)]
-- title: Use content packs
+- title: Use Apps
   durationInMinutes: 7
   content: |
     > [!Video https://www.youtube.com/embed/fE9R6ydo8yk?rel=0]
 
     [!INCLUDE [](includes/6-3-use-content-packs.md)]
-- title: Update content packs
+- title: Update Apps
   durationInMinutes: 4
   content: |
     > [!Video https://www.youtube.com/embed/nem2r4NpTyU?rel=0]

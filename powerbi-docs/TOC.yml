@@ -213,6 +213,8 @@
         href: desktop-import-and-display-kpis.md
     - name: Create reports
       items: 
+      - name: "Use performance analyzer in Power BI Desktop"
+        href: desktop-performance-analyzer.md        
       - name: "Visual elements for reports"
         href: desktop-visual-elements-for-reports.md   
       - name: "Create tooltips based on report pages"
