@@ -262,7 +262,7 @@ Power BI's integration with Azure AD B2B gives Contoso a seamless, hassle-free w
     ![Invitation link](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_17.png)
 
 
-    Once the guest user clicks the link, he/she can access content in the Contoso Azure AD tenant.
+    Once the guest users clicks the link, they can access content in the Contoso Azure AD tenant.
 
     > [!NOTE]
     > It is possible to change the layout of the invitation email using the Azure AD branding feature as described [here](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-invitation-email).
