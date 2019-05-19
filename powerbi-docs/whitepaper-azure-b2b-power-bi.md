@@ -272,7 +272,7 @@ Power BI's integration with Azure AD B2B gives Contoso a seamless, hassle-free w
 
     What if Contoso does not know all the guest users it wants to invite ahead of time? Or, what if the analyst in Contoso who created the BI portal wants to distribute content to guest users herself? We also support this scenario in Power BI with ad-hoc invites.
 
-    The analyst can just add the external users to the access list of the app when she is publishing it. The guest user gets an invite and once they accept it, they are automatically redirected to the Power BI content.
+    The analyst can just add the external users to the access list of the app when they are publishing it. The guest users gets an invite and once they accept it, they are automatically redirected to the Power BI content.
 
     ![Add external user](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_18.png)
 
@@ -435,7 +435,7 @@ Contoso also creates another "AllRole" for its internal users who can see everyt
 
 After uploading the Power BI desktop file to the service, Contoso can assign guest users to the  "SecurityRole" and internal users to the "AllRole"
 
-Now, when the guest user now opens the report, he only sees sales from group A:
+Now, when the guest users open the report, they only sees sales from group A:
 
 ![Only from group A](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_38.png)
 
