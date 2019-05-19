@@ -32,7 +32,7 @@ A fourth element, **Power BI Report Server**, allows you to publish Power BI rep
 ## How Power BI matches your role
 How you use Power BI may depend on your role in a project or on a team. And other people, in other roles, might use Power BI differently, which is fine.
 
-For example, you might primarily use the **Power BI service**. But your number-crunching, business-report-creating coworker might make extensive use of **Power BI Desktop** to create reports, then publish those reports to the Power BI service, where you can view them. Another coworker, in sales, might mainly use her Power BI phone app to monitor progress on her sales quotas, and to drill into new sales lead details.
+For example, you might primarily use the **Power BI service**. But your number-crunching, business-report-creating coworker might make extensive use of **Power BI Desktop** to create reports, then publish those reports to the Power BI service, where you can view them. Another coworker, in sales, might mainly use their Power BI phone app to monitor progress on their sales quotas, and to drill into new sales lead details.
 
 If you're a developer, you might use Power BI APIs to push data into datasets or to embed dashboards and reports into your own custom applications. Have an idea for a new visual? Build it yourself and share it with others.  
 
