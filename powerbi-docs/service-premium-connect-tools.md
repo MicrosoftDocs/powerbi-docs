@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/26/2019
+ms.date: 05/20/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -89,13 +89,15 @@ When connecting to a workspace, changes from new, deleted, and renamed datasets 
 
 ### Unsupported datasets
 
-The following datasets are not accessible by using XMLA endpoints: 
+The following datasets are not accessible by using XMLA endpoints. These datasets *will not* appear under the workspace in SSMS or in other tools: 
 
-- Datasets with a Live connection to a datasource. 
+- Datasets with a Live connection to an Analysis Services models. 
 - Datasets with Push data by using the REST API.
 - Excel workbook datasets. 
 
-These datasets not *will not* appear under the workspace in SSMS or in other tools.
+The following datasets are not supported in the Power BI service:   
+
+- Datasets with a Live connection to a Power BI Dataset.
 
 ## Audit logs 
 
