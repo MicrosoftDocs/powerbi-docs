@@ -701,7 +701,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **April 15, 2015**
 
-* You can now visualize and explore your **Google Analytics** data with our new content pack! With the Google Analytics content pack you will get a dashboard, report and dataset that allow you to gain insights into the usage of your site in the last 6 months. You can read [our blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx) and [documentation](service-connect-to-google-analytics.md) for more information.
+* You can now visualize and explore your **Google Analytics** data with our new content pack! With the Google Analytics content pack you will get a dashboard, report and dataset that allow you to gain insights into the usage of your site in the last 6 months. You can read [our blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx).
 * You can now **pin all cards** expect those containing KPIs and Images from Q&A and reports
 * You can now **use cards in Q&A** by using the phrase 'as card' at the end of your query
 

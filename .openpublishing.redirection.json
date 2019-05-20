@@ -586,6 +586,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/service-connect-to-google-analytics.md",
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-marketing.md",
             "redirect_url": "/power-bi/service-connect-to-services",
             "redirect_document_id": false
