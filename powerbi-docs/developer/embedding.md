@@ -68,8 +68,8 @@ You can go through the [Embedding setup tool](https://aka.ms/embedsetup/UserOwns
 Power BI Embedded has benefits for an ISV, their developers, and customers. For example, an ISV can start creating visuals for free with Power BI Desktop. By minimizing visual analytic development efforts, ISVs achieve faster time to market and stand out from competitors with differentiated data experiences. ISVs can also opt to charge a premium for the additional value they create with embedded analytics.
 
 With Power BI Embedded, your customers don't need to know anything about Power BI. You can use two different methods to create an embedded application:
-1. Power BI Pro account 
-2. Service principal 
+- Power BI Pro account 
+- Service principal 
 
 The Power BI Pro account acts as your application's master account (think of it as a proxy account). This account allows you to generate embed tokens that provide access to your application's Power BI dashboards and reports.
 
