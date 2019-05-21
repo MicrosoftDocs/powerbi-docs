@@ -35,9 +35,9 @@ Choose the solution that is right for you:
 ## Use APIs
 
 There are two main scenarios for embedding Power BI content:
-1. Embedding for your organization's users (who have Power BI licenses). 
+- Embedding for your organization's users (who have Power BI licenses). 
  
-2. Embedding for your users and customers who don't need Power BI licenses. 
+- Embedding for your users and customers who don't need Power BI licenses. 
 
 The [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) allows for both scenarios.
 
