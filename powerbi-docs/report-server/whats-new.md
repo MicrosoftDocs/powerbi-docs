@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/22/2019
+ms.date: 05/22/2019
 ---
 
 # What's new in Power BI Report Server
@@ -22,6 +22,10 @@ For related Power BI "What's New" information, see:
 * [What's new in the Power BI service](../service-whats-new.md)
 * [What's new in Power BI Desktop](../desktop-latest-update.md)
 * [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## May 2019
+
+
 
 ## January 2019
 
