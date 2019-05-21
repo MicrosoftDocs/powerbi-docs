@@ -28,6 +28,7 @@ For detailed information about new features, see [What's new in Power BI Report 
                 - Fix to set cookies sent over https as Secure
                 - Fix to issues with pop ups due to script errors
                 - Fix for display issues with Mobile App on Android phones
+                - Fix for Mobile Report Time Navigator to show the correct week numbers irrespective of the start of Fiscal year
                 - Added 'RestrictedResourceMimeTypeForUpload' configurable property for admins to specify banned mime types
          - Features
             - Adding support for Trusted Visuals to PBIRS
