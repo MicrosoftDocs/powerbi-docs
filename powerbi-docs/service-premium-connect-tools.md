@@ -1,14 +1,14 @@
 ---
 title: Connect to Power BI Premium datasets with client applications and tools (Preview)
 description: Describes how to connect to datasets in Power BI Premium from client applications and tools.
-author: mgblythe
-ms.author: mblythe
+author: minewiskan
+ms.author: owend
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/26/2019
+ms.date: 05/20/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -32,9 +32,9 @@ The vast majority of client applications and tools do not explicitly communicate
 
 These tools support read-only access to Power BI Premium workspaces and datasets:
 
-**SQL Server Management Studio (SSMS)** - Supports DAX, MDX, XMLA, and TraceEvent queries. Requires version 18.0 (Preview). Download [here](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms). 
+**SQL Server Management Studio (SSMS)** - Supports DAX, MDX, XMLA, and TraceEvent queries. Requires version 18.0. Download [here](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms). 
 
-**SQL Server Profiler** - Included with SSMS 18.0 (Preview), this tool provides tracing and debugging of server events. You can capture and save data about each event to a file or table to analyze later. While officially deprecated for SQL Server, Profiler continues to be included in SSMS and remains supported for Analysis Services and Power BI Premium. To learn more, see [SQL Server Profiler](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler).
+**SQL Server Profiler** - Included with SSMS 18.0 (Preview), this tool provides tracing and debugging of server events. You can capture and save data about each event to a file or table to analyze later. While officially deprecated for SQL Server, Profiler continues to be included in SSMS and remains supported for Analysis Services and now, Power BI Premium. To learn more, see [SQL Server Profiler](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler).
 
 **DAX Studio** - Open-source, community tool for executing and analyzing DAX queries against Analysis Services. Requires version 2.8.2 or higher. To learn more, see [daxstudio.org](https://daxstudio.org/).
 
@@ -89,13 +89,15 @@ When connecting to a workspace, changes from new, deleted, and renamed datasets 
 
 ### Unsupported datasets
 
-The following datasets are not accessible by using XMLA endpoints: 
+The following datasets are not accessible by using XMLA endpoints. These datasets *will not* appear under the workspace in SSMS or in other tools: 
 
-- Datasets with a Live connection to a datasource. 
+- Datasets with a Live connection to an Analysis Services models. 
 - Datasets with Push data by using the REST API.
 - Excel workbook datasets. 
 
-These datasets not *will not* appear under the workspace in SSMS or in other tools.
+The following datasets are not supported in the Power BI service:   
+
+- Datasets with a Live connection to a Power BI Dataset.
 
 ## Audit logs 
 
