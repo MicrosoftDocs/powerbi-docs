@@ -20,7 +20,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 ## May 2019
 
 - **Power BI Report Server**          
-    - *Version 1.5.7074.36177 Build 15.0.1102.371), Released: May 21, 2019*
+    - *Version 1.5.7074.36177 (Build 15.0.1102.371), Released: May 21, 2019*
         - Bug Fixes
             - Paginated Reports
                 - Fix to always enable pdf font-embedding.
