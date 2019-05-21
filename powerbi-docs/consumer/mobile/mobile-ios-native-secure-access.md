@@ -28,7 +28,7 @@ An additional change will be that, instead of seeing Power BI content when switc
 
 # Use MDM tool to force Power BI app to require Face ID, Touch ID or passcode
 
-Some organizations have security policies and compliance requirements for using additional identification in order to access business sensative data. 
+Some organizations have security policies and compliance requirements to have additional identification before accessing business sensative data. 
 Power BI mobile iOS app allows admins to control that setting by pushing App configuration setting from Microsoft Intune and other device management solutions, so this can be forced for all/group of users based on the policy definition.
 
 |Key  |Type  |Description  |
