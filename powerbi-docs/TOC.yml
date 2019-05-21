@@ -781,8 +781,6 @@
           href: service-connect-to-connect-to.md
         - name: "GitHub"
           href: service-connect-to-github.md
-        - name: "Google Analytics"
-          href: service-connect-to-google-analytics.md
         - name: "Insightly"
           href: service-connect-to-insightly.md
         - name: "IntelliBoard"

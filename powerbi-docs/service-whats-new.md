@@ -13,7 +13,6 @@ ms.author: nikhilga
 
 LocalizationGroup: Get started
 ---
----
 # What's new in the Power BI service
 Check this page for known issues and recently released features in the **Power BI Service**. For related "What's New" information, see:
 
@@ -41,7 +40,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 ### February 2019
 * Workloads and active dataset size metrics in [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 * Export to PDF for Power BI reports.
-* [On-demand e-mail subcriptions](service-report-subscribe.md).
+* [On-demand e-mail subscriptions](service-report-subscribe.md).
 * Bulk operations in the Admin Portal.
 * Filtered export for PPT and PDF.
 * [Help and support settings](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) in the Admin Portal.
@@ -73,8 +72,8 @@ Also, check out the YouTube channels for information about "What's new" and feat
 
 ### September 2018
 * [Dashboard commenting](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) in the Power BI service.
-* Public preivew of [Power BI Home and Global Search](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
-* Abiliy to [monitoring queries](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) in the [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Public preview of [Power BI Home and Global Search](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
+* Ability to [monitoring queries](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) in the [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### August 2018
 * [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) for Power BI Premium.
@@ -195,7 +194,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Explore your [Jira project-management data](https://powerbi.microsoft.com/blog/explore-your-jira-data-with-power-bi/) with this Power BI content pack
 * Explore your [Insightcentr data](https://powerbi.microsoft.com/blog/explore-your-insightcentr-data-with-power-bi/) with this Power BI content pack
 * Create infographics quickly with the [infographic designer custom visual](https://powerbi.microsoft.com/blog/quickly-create-infographics-with-the-infographic-designer-custom-visual-for-power-bi/)
-* Private preview: [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) outputs Power BI streaming datasets, with which you can create streaming tiles.
+* Preview: [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) outputs Power BI streaming datasets, with which you can create streaming tiles.
 * Preview: Add [ESRI ArcGIS Maps Visualizations](https://powerbi.microsoft.com/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) to your reports and dashboards
 
 ### October 2016
@@ -337,7 +336,7 @@ This month we made some updates to dashboards, Quick Insights, and Q&A.
 
 ***Quick Insights***
 
-* The Trend and Correlaction insights now have trend lines to make it easier to see patterns in the data.
+* The Trend and Correlation insights now have trend lines to make it easier to see patterns in the data.
 
 ***Q&A***
 
@@ -500,7 +499,7 @@ For all the details, including a video demonstrating many of these updates, visi
 * Improved loading of on-premises reports
 * Share dashboards directly to another user's workspace
 * Improved Google Analytics connector experience
-* Close your power bi account
+* Close your Power BI account
 
 For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-weekly-service-update-1124.aspx)
 
@@ -701,7 +700,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **April 15, 2015**
 
-* You can now visualize and explore your **Google Analytics** data with our new content pack! With the Google Analytics content pack you will get a dashboard, report and dataset that allow you to gain insights into the usage of your site in the last 6 months. You can read [our blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx) and [documentation](service-connect-to-google-analytics.md) for more information.
+* You can now visualize and explore your **Google Analytics** data with our new content pack! With the Google Analytics content pack you will get a dashboard, report and dataset that allow you to gain insights into the usage of your site in the last 6 months. You can read [our blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx).
 * You can now **pin all cards** expect those containing KPIs and Images from Q&A and reports
 * You can now **use cards in Q&A** by using the phrase 'as card' at the end of your query
 
