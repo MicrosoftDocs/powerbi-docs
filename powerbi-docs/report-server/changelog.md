@@ -24,7 +24,6 @@ For detailed information about new features, see [What's new in Power BI Report 
         - Bug Fixes
             - Paginated Reports
                 - Fix to always enable pdf font-embedding.
-                - Fixes XMLA endpoints to work for ReportServer
                 - Fix to set cookies sent over https as Secure
                 - Fix to issues with pop ups due to script errors
                 - Fix for display issues with Mobile App on Android phones
