@@ -20,7 +20,7 @@ For detailed information about new features, see [What's new in Power BI Report 
 ## May 2019
 
 - **Power BI Report Server**          
-    - *Version 1.5.7074.36177 (Build 15.0.1102.371), Released: May 21, 2019*
+    - *Version 1.5.7074.36177 (Build 15.0.1102.371), Released: May 20, 2019*
         - Bug Fixes
             - Paginated Reports
                 - Fix to always enable pdf font-embedding.
@@ -34,7 +34,7 @@ For detailed information about new features, see [What's new in Power BI Report 
             - Adding support for Trusted Visuals to PBIRS
 
 - **Power BI Desktop (optimized for Power BI Report Server)**
-    - *Version: 2.69.5467.1801 (May 2019), Released: May 21, 2019*
+    - *Version: 2.69.5467.1801 (May 2019), Released: May 20, 2019*
         - Bug fixes
             - Fix to avoid re-entry of credentials during PBIX upload to PBIRS
             - Fixes opening documents with # in the filename
