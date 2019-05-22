@@ -16,7 +16,7 @@ ms.author: mshenhav
 
 In many cases, the data managed in Power BI is sensitive and needs to be protected and accessed by authorized users only. 
 
-Power BI iOS app lets you configure additional identification, so your Face ID, Touch ID, or passcode will be required every time you launch the app or bring it from the background to the foreground.
+Power BI iOS app lets you configure additional identification, so you will need to provide Face ID, Touch ID, or passcode every time you launch the app or bring it from the background to the foreground.
 
 | ![iPhone](./media/tutorial-mobile-apps-ios-qna/iphone-logo-50-px.png) | ![iPad](./media/tutorial-mobile-apps-ios-qna/ipad-logo-50-px.png) |
 |:--- |:--- |
@@ -37,7 +37,7 @@ The decision to ask for Face ID, Touch ID, or passcode is done by iOS, based on 
 ## Use MDM tool to enforce Face ID, Touch ID, or passcode in Power BI iOS app
 
 Some organizations have security policies and compliance requirements to have additional identification before accessing business sensitive data. 
-Power BI mobile iOS app allows admins to control that setting by pushing App configuration setting from Microsoft Intune and other device management solutions. Admins can use app prtection policy to turn on this setting for all or group of users.
+Power BI mobile iOS app allows admins to control that setting by pushing App configuration setting from Microsoft Intune and other device management solutions. Admins can use app protection policy to turn on this setting for all or group of users.
 
 |Key  |Type  |Description  |
 |---------|---------|---------|
