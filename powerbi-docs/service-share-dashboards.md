@@ -108,13 +108,13 @@ People outside your organization can't see any data if role- or row-level securi
 
 If you send a link from a Power BI mobile app to people outside your organization, clicking the link opens the dashboard in a browser, not in the Power BI mobile app.
 
-If you [allow external guest users to edit and manage content in the organization](service-admin-portal.md#export-and-sharing-settings), the default consumption-only experience doesn't apply to them. [Learn more](service-admin-azure-ad-b2b.md)
+If you [allow external guest users to edit and manage content in the organization](service-admin-portal.md#export-and-sharing-settings), the default consumption-only experience doesn't apply to them. [Learn more](service-admin-azure-ad-b2b.md).
 
 ## Limitations and considerations
 Things to keep in mind about sharing dashboards and reports:
 
 * In general, you and your colleagues see the same data in the dashboard or report. Thus, if you have permissions to see more data than they do, they'll be able to see all your data in the dashboard or report. However, if [row-level security (RLS)](service-admin-rls.md) is applied to the dataset underlying a dashboard or report, then the credentials of every person are used to determine which data they can access.
-* Everyone you share your dashboard with can see it and interact with the related reports in [Reading view](consumer/end-user-reading-view.md). They can't create reports or save changes to existing reports.
+* Everyone you share your dashboard with can see it and interact with the related reports in [Reading view](consumer/end-user-reading-view.md#reading-view). They can't create reports or save changes to existing reports.
 * Although no one can see or download the dataset, they can access the dataset directly by using the Analyze in Excel feature. An admin can restrict the ability to use Analyze in Excel for everyone in a group. However, the restriction is for everyone in that group for every workspace the group belongs to.
 * Everyone can manually [refresh the data](refresh-data.md).
 * If you use Office 365 for email, you can share with members of a distribution group by entering the email address associated with the distribution group.
