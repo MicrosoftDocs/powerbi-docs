@@ -29,7 +29,7 @@ The next section is a general discussion of Power BI API operations that push da
 
 ## Power BI API operations to push data
 
-With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, tiles on the dashboard are updated automatically with the updated data. To push data, you use the [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) operation along with the [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) operation. To find a dataset, you use the [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) operation. For any of these operations, you can pass a group id to work with a group. Use the [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) operation to get a list of group id's.
+With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, tiles on the dashboard are updated automatically with the updated data. To push data, use the [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset) and [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) operations. To find a dataset, use the [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) operation. You can pass a group id to work with a group for any of these operations. To get a group id list use the [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) operation.
 
 Here are the operations to push data into a dataset:
 
@@ -54,7 +54,7 @@ The JSON string for a dataset has the following format:
         ]
     }
 
-So, for our Sales Marketing dataset example, you would pass a JSON string such as the example below. In this example, **SalesMarketing** is the name of the dataset, and **Product** is the name of the table. After you define the table, you define the table schema. For the **SalesMarketing** dataset, the table schema has these columns: ProductID, Manufacturer, Category, Segment, Product, and IsCompete.
+So, for our Sales Marketing dataset example, you would pass a JSON string such as the example below. In this example, **SalesMarketing** is the dataset name, and **Product** is the table name. After you define the table, you define the table schema. For the **SalesMarketing** dataset, the table schema has these columns: ProductID, Manufacturer, Category, Segment, Product, and IsCompete.
 
 **Example dataset object JSON**
 
