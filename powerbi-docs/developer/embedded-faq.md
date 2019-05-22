@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019 
+ms.date: 05/22/2019 
 ---
 
 # Frequently asked questions about Power BI Embedded
@@ -24,7 +24,7 @@ ms.date: 02/05/2019
 
 ### Who is the target audience for Power BI Embedded?
 
-Developers and software companies authoring applications. Also referred to as independent software vendors (ISVs).
+Developers and software companies, aka independent software vendors (ISVs), coding applications.
 
 ### How is Power BI Embedded different from Power BI the service?
 
@@ -340,7 +340,7 @@ The [Embedding setup tool](https://aka.ms/embedsetup) allows you to quickly get 
 
 ### I've downloaded the sample app, which solution do I choose?
 
-If you're working with the **Embed for your customers'** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\App Owns Data* folder and run the *PowerBIEmbedded_AppOwnsData.sln* file.
+If you're working with the **Embed for your customers** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\App Owns Data* folder and run the *PowerBIEmbedded_AppOwnsData.sln* file.
 
 If you're working with the **Embed for your organization** experience, save and unzip the *PowerBI-Developer-Samples.zip* file. Then open the *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* folder and run the *pbi-saas-embed-report.sln* file.
 
