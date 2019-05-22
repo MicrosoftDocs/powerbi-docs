@@ -9,7 +9,7 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 05/22/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -49,7 +49,7 @@ To create your own combo chart, sign in to Power BI service and select **Get Dat
 
     b.  Drag **Sales** \> **Gross Margin This Year** to the **Value** well.
 
-    c.  Select **Time** \> **FiscalMonth** to add it to the **Axis** well.
+    c. Select **Time** \> **FiscalMonth** to add it to the **Axis** well.
 
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
 5. Select the ellipsis (...) in the upper-right corner of the visualization, and select **Sort by > FiscalMonth**. To change the sort order, select the ellipsis again and choose either **Sort ascending** or **Sort descending**.
@@ -68,7 +68,7 @@ To create your own combo chart, sign in to Power BI service and select **Get Dat
 ## Create a combo chart with two axes
 In this task, we'll compare gross margin and sales.
 
-1. Create a new line chart that tracks **Gross Margin last year %** by **Month**. Select the ellipsis to sort it by **Month** and **Ascending**.  
+1. Create a new line chart that tracks **Gross Margin last year %** by **FiscalMonth**. Select the ellipsis to sort it by **Month** and **Ascending**.  
 In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
 
    ![](media/power-bi-visualization-combo-chart/combo1_new.png)
@@ -80,22 +80,22 @@ In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again
    ![](media/power-bi-visualization-combo-chart/converttocombo_new.png)
 4. Drag **Gross Margin Last Year %** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the datasets to be scaled differently; the left measures sales dollars and the right measures percentage. And we see the answer to our question; yes, we do see a similar pattern.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-combochart.png)    
+   ![](media/power-bi-visualization-combo-chart/power-bi-clustered-combo.png)    
 
 ## Add titles to the axes
 1. Select the paint roller icon ![](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) to open the Formatting pane.
 2. Select the down arrow to expand the **Y-axis** options.
-3. For **Y-Axis (Column)**, set **Position** to **Left**, set **Title** to **On**, **Style** to  **Show title only**, and **Display** as **Millions**.
+3. For **Y-Axis (Column)**, set **Position** to **Left**, set **Title** to **On**, **Style** to  **Show title only**, and **Display units** as **Millions**.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-y-axis-column.png)
-4. Under **Y-Axis (Column)**, scroll down and ensure that **Show Secondary** is set to **On**. This displays options for formatting the line chart portion of the combo chart.
+   ![](media/power-bi-visualization-combo-chart/power-bi-open-y.png)
+4. Under **Y-Axis (Column)**, scroll down until you see **Show secondary**. Because there are so many options for the Y axes, you may have to use both scrollbars. The Show secondary section displays options for formatting the line chart portion of the combo chart.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-show-secondary.png)
+   ![](media/power-bi-visualization-combo-chart/power-bi-secondary.png)
 5. For **Y-Axis (Line)**, leave **Position** as **Right**, turn **Title** to **On**, and set **Style** to **Show title only**.
 
    Your combo chart now displays dual axes, both with titles.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-titles-on.png)
+   ![](media/power-bi-visualization-combo-chart/power-bi-2-titles.png)
 
 6. Optionally, modify the text font, size, and color and set other formatting options to improve the display and readability of the chart.
 
