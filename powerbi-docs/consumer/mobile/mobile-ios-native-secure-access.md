@@ -24,13 +24,13 @@ Power BI iOS app lets you configure additional identification, so your Face ID, 
 
 ## Turn on Face ID, Touch ID, or passcode in Power BI app setting
 
-To use Face ID, Touch ID, or passcode in Power BI, go to the app setting, under the "Privacy and Security" section you will have the option to turn on Face, Touch ID, or passcode, based on your device capabilities.
+To use additional identification in Power BI, go to the app setting, under the "Privacy and Security" section you'll see the option to turn on Face, Touch ID, or passcode, based on your device capabilities.
 
 ![Power BI iOS app setting page](./media/mobile-ios-native-secure-access/mobile-ios-native-secured-setting.png)
 
-Once this setting is turned on, every time you launch Power BI or bring it from the background, you will be asked to provide your ID before you will be able to access the app. 
+Once this setting is turned on, every time you launch Power BI or bring it from the background, it will ask you to provide your ID before you could access the app. 
 
-It is iOS decision, based on the device capability, if to ask for Face ID, Touch ID, or passcode.
+The decision to ask for Face ID, Touch ID, or passcode is done by iOS, based on the device capability. So, if your device supports Face ID, you will need to use Face ID, and if it supports Touch ID, you will need to use Touch ID. If neither are supported, then you will need you provide Passcode.
 
 ![Power BI iOS Face ID](./media/mobile-ios-native-secure-access/mobile-ios-native-secured-faceid.png)
 
