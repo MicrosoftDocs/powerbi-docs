@@ -27,6 +27,64 @@ For related Power BI "What's New" information, see:
 
 See the [Power BI Report Server May 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) blog post for details about all the new features.
 
+Here are some of the highlights of the release:
+
+### Performance analyzer 
+
+If your report runs slower than you expect, try the Performance Analyzer in Power BI Desktop. When you start it, it creates a log file with information about every action you take in the report. Read more about the [Performance Analyzer](../desktop-performance-analyzer.md).
+
+### New modeling view
+
+In the new Modeling view in Power BI Desktop, you can view and work with complex datasets that contain many tables. Highlights include multiple diagram layouts and bulk editing of columns, measures, and tables. Read more about [Modeling view](../desktop-modeling-view.md).
+
+### Accessible visual interaction
+
+You can now access data points on many of the built-in visuals using keyboard navigation. Read more about [accessibility in Power BI reports](../desktop-accessibility.md).
+
+### Conditional formatting titles and web URL actions
+
+Power BI reports are interactive. It makes sense that titles in a report would be dynamic, to reflect the current state of the report. You can use the same expression-bound formatting to make the URLs of your buttons, shapes, and images dynamic. Read more about [expression-based titles](../desktop-conditional-format-visual-titles.md).
+
+### Cross-highlight by axis labels
+
+Select the axis category labels in a visual to cross-highlight the other elements on a page, just as you would select the data points in a visual. Read more about [cross-highlighting](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+
+### All the new features
+
+Here's the list of all the new features:
+
+### Reporting
+
+- Cross-highlight on a single point in line charts 
+- Word wrap on titles 
+- Update default visual interaction to cross-filter ¬
+- Rounded corners for visual borders 
+- Single select slicer  
+- Heat map support for Bing maps  
+- Cross-highlight by axis labels  
+- Default tooltip formatting  
+- Static web URL support for buttons, shapes & images  
+- Page alignment options   
+- Selection pane improvements  
+- Accessible visual interaction  
+- Conditional formatting for visual titles  
+- Conditional formatting for web URL actions for buttons, shapes, and images
+- Performance analyzer pane
+- Table and matrix keyboard navigation
+- Line data label position control
+- KPI visual Indicator text size control
+
+### Analytics
+
+- Show dates as a hierarchy now generally available  
+
+### Modeling
+
+- New modelling view now generally available
+- New DAX functions
+- Update to the ALLSELECTED DAX function
+- Disable auto-date tables for new reports
+
 ## January 2019
 
 Support for these features in Power BI reports:

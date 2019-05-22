@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22.2019
+ms.date: 05/22/2019
 ---
 
 # Install Power BI Report Server
@@ -17,7 +17,9 @@ Learn how to install Power BI Report Server.
 
 ## Download Power BI Report Server
 
-To download Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/), and select **Download free trial**.
+[Download Power BI Report Server](https://www.microsoft.com/download/details.aspx?id=56722) from the Microsoft Download Center.
+
+There's also a free trial version. On the [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/) page, select **Download free trial**.
 
 ## Before you install
 
@@ -27,6 +29,13 @@ Before you install Power BI Report Server, we recommend you review the [Hardware
  > While you can install Power BI Report Server in an environment that has a Read-Only Domain Controller (RODC), Power BI Report Server needs access to a Read-Write Domain Controller to function properly. If Power BI Report Server only has access to a RODC, you may encounter errors when trying to administer the service.
 
 ### Power BI Report Server product key
+
+You can get the product key for Power BI Report Server from two different sources:
+
+- Power BI Premium
+- SQL Server Enterprise Software Assurance (SA)
+
+Read on for details.
 
 #### Power BI Premium
 
