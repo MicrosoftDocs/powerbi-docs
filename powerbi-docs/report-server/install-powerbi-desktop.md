@@ -27,7 +27,7 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 
     ![Download Power BI Desktop from the web portal](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Or go directly to [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=2055039) (Optimized for Power BI Report Server - May 2019) in the Microsoft Download Center.
+    Or go directly to [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (Optimized for Power BI Report Server - May 2019) in the Microsoft Download Center.
 
 2. In the Download Center page, select **Download**.
 
@@ -39,14 +39,14 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 
 1. After you download the installer, run the Power BI Desktop (May 2019) Setup Wizard.
 
-2. At the end of the installation, check **Start Power BI Desktop now**.
+2. At the end of the installation, select **Launch Power BI Desktop**.
 
     It starts automatically and you're ready to go.
 
 ## Verify you're using the correct version
 It's easy to verify that you're using the correct Power BI Desktop: Look at the launch screen or title bar within Power BI Desktop. The title bar indicates the month and year of the release. Also, the Power BI logo colors are reversed, yellow on black instead of black on yellow.
 
-![Title bar for Power BI Desktop optimized for Power BI Report Server](media/install-powerbi-desktop/power-bi-report-server-desktop-jan-2019.png)
+![Title bar for Power BI Desktop optimized for Power BI Report Server](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2019.png)
 
 The Power BI Desktop version for the Power BI service doesn't have the month and year in the title bar.
 
@@ -57,7 +57,7 @@ If you have Power BI Desktop and then install Power BI Desktop optimized for Pow
 
 You can always open the version of Power BI Desktop you want to use first. And then open the file from within Power BI Desktop.
 
-Editing a Power BI report from within Power BI Report Server, or creating a new Power BI report from the web portal, always opens the correct version of Power BI Destop.
+Editing a Power BI report from within Power BI Report Server, or creating a new Power BI report from the web portal, always opens the correct version of Power BI Desktop.
 
 ## Considerations and limitations
 
@@ -65,11 +65,7 @@ Power BI reports in Power BI Report Server, in the Power BI service (http://app.
 
 ### In a browser
 
-Power BI Report Server reports support all visualizations, including:
-
-* Custom visuals
-
-Power BI Report Server reports don’t support:
+Power BI Report Server reports support almost all visualizations, including custom visuals. Power BI Report Server reports don’t support:
 
 * R visuals
 * ArcGIS maps
@@ -94,9 +90,9 @@ Power BI Report Server reports don’t support these features in the Power BI mo
 
 ## Power BI Desktop for earlier versions of Power BI Report Server
 
-If your report server is an earlier version, you need the corresponding version of Power BI Desktop. Here's the previous version.
+If your report server is an earlier version, you need the corresponding version of Power BI Desktop. Here's the link to download the previous version.
 
-- Microsoft Power BI Desktop ([Optimized for Power BI Report Server - August 2018](https://www.microsoft.com/download/details.aspx?id=57271))
+- Microsoft Power BI Desktop ([Optimized for Power BI Report Server - January 2019](https://go.microsoft.com/fwlink/?linkid=2055039))
 
 ## Next steps
 

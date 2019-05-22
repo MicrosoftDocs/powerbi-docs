@@ -25,7 +25,7 @@ For related Power BI "What's New" information, see:
 
 ## May 2019
 
-
+See the [Power BI Report Server May 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) blog post for details about all the new features.
 
 ## January 2019
 

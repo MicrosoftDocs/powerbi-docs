@@ -8,18 +8,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/07/2018
+ms.date: 05/22.2019
 ---
 
 # Install Power BI Report Server
 
 Learn how to install Power BI Report Server.
 
- **Download** ![download](media/install-report-server/download.png "download")
+## Download Power BI Report Server
 
-To download Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/), and select **Download free trial**. 
+To download Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/), and select **Download free trial**.
 
-## Before you begin
+## Before you install
 
 Before you install Power BI Report Server, we recommend you review the [Hardware and Software Requirements for installing Power BI Report Server](system-requirements.md).
 
@@ -61,8 +61,8 @@ You don't need a SQL Server Database Engine server available at the time of inst
 
     ![Edition 2](media/install-report-server/pbireportserver-choose-edition2.png)
 
-    Otherwise, you can enter a product key for the server that you acquired from either the Power BI service or the Volume License Service Center. For more information about how to get your product key, see the [Before you begin](#before-you-begin) section.
-4. Read and agree to the license terms and conditions and then select **Next**.
+    Otherwise, enter the product key that you got from either the Power BI service or the Volume License Service Center. For more information about how to get your product key, see the [Before you install](#before-you-install) section above.
+4. Read and agree to the license terms and conditions, then select **Next**.
 
     ![License terms](media/install-report-server/pbireportserver-eula.png)
 5. You need to have a Database Engine available to store the report server database. Select **Next** to install the report server only.
@@ -78,7 +78,7 @@ You don't need a SQL Server Database Engine server available at the time of inst
 
     ![Configure the report server](media/install-report-server/pbireportserver-configure.png)
 
-## Configuring your report server
+## Configure your report server
 
 After you select **Configure Report Server** in the setup, you're presented with Reporting Services Configuration Manager. For more information, see [Reporting Services Configuration Manager](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 
