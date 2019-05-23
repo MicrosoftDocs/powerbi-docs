@@ -48,9 +48,10 @@ By the way, this procedure uses the Retail Analysis sample, if you'd like to dow
 ### Filter the fields in the visual
 
 
-1. Open your [report in Editing view](service-the-report-editor-take-a-tour.md).
+1. Select **Edit report** to open your report in Editing view.
    
    ![Edit report button](media/power-bi-report-add-filter/power-bi-edit-view.png)
+
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
    
    ![Visualizations, Filters, and Fields panes](media/power-bi-report-add-filter/power-bi-display-panes.png)
@@ -91,8 +92,11 @@ Now let's add a new field to our visualization as a visual-level filter.
 
 ## Add a filter to an entire page
 
-You can also add a filter to an entire page (a page-view filter)
-1. Open your [report in Editing view](service-the-report-editor-take-a-tour.md).
+You can also add a page-level filter to filter an entire page.
+
+1. Select **Edit report** to open your report in Editing view.
+   
+   ![Edit report button](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
 3. From the Fields pane, select the field you want to add as a new page-level filter, and drag it into the **Page level filters** area.  
 4. Select the values you want to filter and set either  **Basic** or **Advanced** filtering controls.
@@ -107,7 +111,11 @@ You can also add a filter to an entire page (a page-view filter)
 With drillthrough in Power BI service and Power BI Desktop, you can create a *destination* report page that focuses on a specific entity - such as a supplier, or customer, or manufacturer. Now, from the other report pages, users can right-click on a data point for that entity and drillthrough to the focused page.
 
 ### Create a drillthrough filter
-To follow along, open the Customer Profitability sample in Editing view. Let's say that you want a page that focuses on Executive business areas.   
+To follow along, download the [Customer Profitability sample](sample-customer-profitability.md). Let's say that you want a page that focuses on Executive business areas.
+
+1. Select **Edit report** to open the report in Editing view.
+   
+   ![Edit report button](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
 1. Add a new page to the report and name it **Team Executive**. This page will be the drillthrough *destination*.
 2. Add visualizations that track key metrics for the team executives' business areas.    
@@ -130,9 +138,13 @@ Let's see how the drillthrough filter works.
    
     ![Select the drillthrough action](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 
-## Add a filter to an entire report (aka Report filter)
-1. Open your [report in Editing view](service-the-report-editor-take-a-tour.md).
-2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
+## Add a report-level filter to filter an entire report
+
+1. Select **Edit report** to open the report in Editing view.
+   
+   ![Edit report button](media/power-bi-report-add-filter/power-bi-edit-view.png)
+
+2. Open the Visualizations and Filters pane and the Fields pane, if they're not already open.
 3. From the Fields pane, select the field you want to add as a new report-level filter, and drag it into the **Report level filters** area.  
 4. Select the values you want to filter.
 
