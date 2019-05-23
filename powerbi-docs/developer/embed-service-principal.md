@@ -169,7 +169,7 @@ Below is a sample script to retrieve the service principal object ID with PowerS
 * You can't install or manage an on-premises data gateway using service principal.
 * [Embed for your organization](embed-sample-for-your-organization.md) applications are unable to use service principal.
 * [Dataflows](../service-dataflows-overview.md) management is not supported.
-* Service principal does not support admin APIs.
+* Service principal currently does not support any admin APIs.
 
 ## Next steps
 
