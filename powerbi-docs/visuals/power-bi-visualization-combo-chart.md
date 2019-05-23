@@ -37,11 +37,11 @@ Combo charts are a great choice:
 
 Combo charts are available in Power BI service and Power BI Desktop. This tutorial uses Power BI service to create a Combo chart. Make sure you have user credentials to sign in to Power BI.
 
-## Create a basic, single-axis, Combo Chart
-
 Watch Will create a combo chart using the Sales and Marketing sample.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>  
+
+## Create a basic, single-axis, Combo Chart
 
 To follow along, open Power BI service and connect to the **Retail Analysis sample**. To create your own combo chart, sign in to Power BI service and select **Get Data** > **Samples** > **Retail Analysis Sample** > **Connect**. The **Retail Analysis Sample** dashboard appears.
 
@@ -139,7 +139,7 @@ From here you might want to:
 
 ## Cross-highlighting and cross-filtering
 
-Highlighting a column or line in a combo chart cross-highlights and cross-filters the other visualizations on the report page... and the other way around. Use [visual interactions](../service-reports-visual-interactions.md) to change this default behavior.
+Highlighting a column or line in a combo chart cross-highlights and cross-filters the other visualizations on the report page. Use [visual interactions](../service-reports-visual-interactions.md) to change this default behavior.
 
 ## Next steps
 

@@ -58,7 +58,7 @@ Watch the following video to learn more about expand/collapse in the matrix:
 
 ## Using drill down with the Matrix visual
 
-With the **Matrix** visual, you can do all sorts of interesting drill down activities that weren't available before.You can drill down into rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
+With the **Matrix** visual, you can do all sorts of interesting drill down activities that weren't available before. You can drill down into rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
 
 ### Drill down on row headers
 
@@ -157,13 +157,15 @@ Also use Ctrl+Click for cross-highlighting. For example, in the following screen
 
 Your matrix or table may have content that you'd like to use in other applications: Dynamics CRM, Excel, and other Power BI reports. With the Power BI right-click, you can copy a single cell or a selection of cells onto your clipboard. Then, paste them into the other application.
 
-![Screenshot of the Matrix visual with an arrow pointing to a value and the right-click menu expanded with the Copy value and Copy selection options called out.](media/desktop-matrix-visual/power-bi-cell-copy.png)
-
 * To copy the value of a single cell, select the cell,  right-click, and choose **Copy value**. With the unformatted cell value on your clipboard, you can now paste it into another application.
+
+    ![Screenshot of the Matrix visual with an arrow pointing to a value and the right-click menu expanded with the Copy value and Copy selection options called out.](media/desktop-matrix-visual/power-bi-cell-copy.png)
+
+* To copy more than a single cell, select a range of cells or use CTRL to select one or more cells.
 
     ![Screenshot of the Matrix visual with an arrow pointing from three called out values to the right-click menu expanded with the Copy value and Copy selection options called out.](media/desktop-matrix-visual/power-bi-copy.png)
 
-* To copy more than a single cell, select a range of cells or use CTRL to select one or more cells. The copy will include the column and row headers.
+* The copy will include the column and row headers.
 
     ![Screenshot showing Excel rows and columns with the values pasted into them.](media/desktop-matrix-visual/power-bi-copy-selection.png)
 

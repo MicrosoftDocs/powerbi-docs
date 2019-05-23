@@ -21,7 +21,7 @@ Watch Will export the data from one of the visualizations in his report, save it
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KjheMTGjDXw" frameborder="0" allowfullscreen></iframe>
 
-## From a visualization on a Power BI dashboard
+## Export data from a Power BI dashboard
 
 1. Select the ellipses in the upper-right corner of the visualization.
 
@@ -37,17 +37,17 @@ Watch Will export the data from one of the visualizations in his report, save it
 
     ![Screenshot of the .csv file with the exported data displayed.](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
 
-## From a visualization in a report
+## Export data from a report
 
 To follow along, open the [Procurement analysis sample report](../sample-procurement.md) in Editing view. Add a new blank report page. Then follow the steps below to add an aggregation and a visualization-level filter.
 
 1. Create a new **Stacked column chart**.
 
-1. From the **Fields** pane, select **Location > City** and **Invoice > Discount Percent**.  You may have to move **Discount Percent** into the Value well.
+1. From the **Fields** pane, select **Location > City** and **Invoice > Discount Percent**.  You may have to move **Discount Percent** into the **Value** well.
 
     ![Screenshot of the visualization being built with the City and Count of Discount Percent called out.](media/power-bi-visualization-export-data/power-bi-export-data3.png)
 
-1. Change the aggregation for **Discount Percent** from **Count** to **Average**. In the Value well, select the arrow to the right of **Discount Percent** (it may say **Count of Discount Percent**), and choose **Average**.
+1. Change the aggregation for **Discount Percent** from **Count** to **Average**. In the **Value** well, select the arrow to the right of **Discount Percent** (it may say **Count of Discount Percent**), and choose **Average**.
 
     ![Screenshot of the aggregation list with the Average option called out.](media/power-bi-visualization-export-data/power-bi-export-data6.png)
 
@@ -69,7 +69,7 @@ To follow along, open the [Procurement analysis sample report](../sample-procure
 
     In Power BI Desktop, you'll only have the option for **Summarized data**. For help understanding aggregates, see [Aggregates in Power BI](../service-aggregates.md).
 
-1. From **Export data**, select **Summarized data**, either choose *.xlsx* or *.csv*, and then select **Export** . Power BI exports the data.
+1. From **Export data**, select **Summarized data**, either choose *.xlsx* or *.csv*, and then select **Export**. Power BI exports the data.
 
     ![Screenshot of the Export data screenshot with the Summarized data, xlsx, and Export options called out.](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 
@@ -81,10 +81,10 @@ To follow along, open the [Procurement analysis sample report](../sample-procure
 
     ![Screenshot of the .csv file with the exported data displayed.](media/power-bi-visualization-export-data/power-bi-export-data7.png)
 
-1. Now try selecting **Underlying data** > *.xlsx* > **Export**. Power BI exports the data. If you applied filters to the visualization, the exported data will export as filtered. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
+1. Now try selecting **Underlying data**, *.xlsx*, and then **Export**. Power BI exports the data. If you applied filters to the visualization, the exported data will export as filtered. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
 
     >[!WARNING]
-    >Exporting underlying data lets users to see all the detailed data -- every column in the data. Power BI service admins can turn this off for their organization. If you are a dataset owner, you can set proprietary columns to "hidden" so that they don't show up in the Field list in Desktop or Power BI service.
+    >Exporting underlying data lets users to see all the detailed data -- every column in the data. Power BI service admins can turn this off for their organization. If you are a dataset owner, you can set proprietary columns to **hidden** so that they don't show up in the **Field** list in Desktop or Power BI service.
 
     **Underlying data**: Select this option if you want to see the data in the visual ***and*** additional data from the model (see chart below for details). If your visualization has an aggregate, selecting *Underlying data* removes the aggregate. When you select **Export**, Power BI exports the data to an *.xlsx* file and your browser prompts you to save the file. Once saved, open the file in Excel.
 
@@ -149,7 +149,13 @@ It's important to note that if the Power BI admin portal settings conflict with 
 
 - Export using *Underlying data* won't work if you enable the *Show items with no data* option for the visualization Power BI is exporting.
 
-- When using DirectQuery, the maximum amount of data that Power BI can export is 16 MB. An unintended result may be that you export less than the maximum number of rows. This is likely if there are many columns, there's data that is difficult to compress, or other factors are at play that increase file size and decrease the number of rows Power BI can export.
+- When using DirectQuery, the maximum amount of data that Power BI can export is 16 MB. An unintended result may be that you export less than the maximum number of rows. This is likely if:
+
+    - There are many columns.
+
+    - There's data that is difficult to compress.
+
+    - Other factors are at play that increase file size and decrease the number of rows Power BI can export.
 
 - If the visualization uses data from more than one data table, and no relationship exists for those tables in the data model, Power BI only exports data for the first table.
 
