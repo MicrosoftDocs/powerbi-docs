@@ -38,7 +38,7 @@ Because filters *persist*, when you navigate away from the report Power BI retai
 ![persistent filter button](media/power-bi-report-add-filter/power-bi-reset-to-default.png)
 
 ## Add a filter to a visual
-You can add a filter to a specific visual in two different ways (aka, a "visual filter"). 
+You can add a visual-level filter to a specific visual in two different ways. 
 
 * Filter a field that is already being used by the visualization.
 * Identify a field that is not already being used by the visualization, and add that field directly to the **Visual level filters** bucket.
@@ -66,7 +66,7 @@ By the way, this procedure uses the Retail Analysis sample, if you'd like to dow
     
     Set either **Basic**, **Advanced**, or **Top N** filtering controls. In this example, we'll search in Basic filtering for **cha** and select those five stores.
      
-    ![Seach in Basic filtering](media/power-bi-report-add-filter/power-bi-search-filter.png) 
+    ![Search in Basic filtering](media/power-bi-report-add-filter/power-bi-search-filter.png) 
    
     The visual changes to reflect the new filter. If you save your report with the filter, report readers will see the visual filtered to begin with, and can interact with the filter in Reading view, selecting or clearing values.
      

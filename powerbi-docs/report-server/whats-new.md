@@ -78,7 +78,7 @@ Here's the list of all the new features:
 
 ### Modeling
 
-- New modelling view now generally available
+- New modeling view now generally available
 - New DAX functions
 - Update to the ALLSELECTED DAX function
 - Disable auto-date tables for new reports

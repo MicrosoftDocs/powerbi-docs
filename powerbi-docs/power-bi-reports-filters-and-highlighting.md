@@ -80,7 +80,7 @@ As in Reading view, we see this page of the report has six page-level filters an
 
 We can do more with filters and highlighting in Editing view. Mainly, we can add new filters. Learn how to [Add a filter to a report](power-bi-report-add-filter.md) and much more.
 
-## Ad-hoc highlighting
+## Ad hoc highlighting
 Select a value or axis label in a visual to highlight the other visuals on the page. To remove the highlighting, select the value again, or select any empty space in the same visual. Highlighting is a fun way to quickly explore data impacts. To fine-tune how this type of cross-highlighting works, see [Visual interactions](service-reports-visual-interactions.md).
 
 ![Cross-highlighting](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)

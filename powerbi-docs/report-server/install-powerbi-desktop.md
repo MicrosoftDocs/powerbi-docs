@@ -84,7 +84,7 @@ Power BI Report Server reports don’t support these features in the Power BI mo
 * ArcGIS maps
 * Custom visuals
 * Breadcrumbs
-* Geofiltering or bar codes
+* Geo filtering or bar codes
 
 ## Power BI Desktop for earlier versions of Power BI Report Server
 
