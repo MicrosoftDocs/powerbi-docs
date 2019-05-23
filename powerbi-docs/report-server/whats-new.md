@@ -23,7 +23,7 @@ For related Power BI "What's New" information, see:
 * [What's new in Power BI Desktop](../desktop-latest-update.md)
 * [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
 
-## May 2019
+## May 2019: Power BI Desktop for Power BI Report Server
 
 See the [Power BI Report Server May 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) blog post for details about all the new features.
 
@@ -84,6 +84,16 @@ Here's the list of all the new features:
 - New DAX functions
 - Update to the ALLSELECTED DAX function
 - Disable auto-date tables for new reports
+
+## May 2019: Power BI Report Server
+
+### Support for trusted visuals
+
+We've added support for Trusted Visuals to Power BI Report Server. Currently we support Mapbox and PowerOn visuals. ESRI, Visio, and PowerApps aren't supported for this release.)
+
+### Better Security features
+
+**RestrictedResourceMimeTypeForUpload**, which admins can use to specify a comma-separated list of banned mime types, for example text/html.
 
 ## January 2019
 
