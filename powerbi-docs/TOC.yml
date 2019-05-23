@@ -189,8 +189,6 @@
         href: desktop-project-online-connect-to-data.md
     - name: Transform and shape data
       items: 
-      - name: "Use Shape Maps in Power BI Desktop (Preview)"
-        href: visuals/desktop-shape-map.md
       - name: "Combine binaries"
         href: desktop-combine-binaries.md
     - name: Model your data
@@ -353,6 +351,8 @@
         href: visuals/power-bi-visualization-scatter.md
       - name: "High density scatter charts"
         href: visuals/desktop-high-density-scatter-charts.md
+      - name: "Use Shape Maps in Power BI Desktop (Preview)"
+        href: visuals/desktop-shape-map.md
       - name: "Slicers in Power BI"
         href: visuals/power-bi-visualization-slicers.md
       - name: "Tables in Power BI"

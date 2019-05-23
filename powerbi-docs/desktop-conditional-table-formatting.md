@@ -128,6 +128,12 @@ And you could then get results like the following matrix.
 
 There are many more variations you could create, just by using your imagination and a bit of DAX.
 
+You can use any of the values listed in the CSS color spec at [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/) to color your visuals:
+* 3, 6 or 8 digit hex codes e.g. #3E4AFF
+* RGB or RGBA values e.g. RGBA(234, 234, 234, 0.5)
+* HSL or HSLA values e.g. HSLA(123, 75%, 75%, 0.5)
+* Color names e.g. Green, SkyBlue, PeachPuff 
+
 ## Next steps
 For more information, see the following article:  
 
