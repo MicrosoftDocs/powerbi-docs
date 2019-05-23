@@ -13,9 +13,7 @@ ms.date: 05/22/2019
 
 # What's new in Power BI Report Server
 
-Learn about what's new in Power BI Report Server. This article covers the major feature areas and is updated as new items are released.
-
-To download the latest versions of Power BI Report Server and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+Learn about what's new in Power BI Report Server and Power BI Desktop optimized for Power BI Report Server. This article covers the major feature areas and is updated as new items are released.
 
 For related Power BI "What's New" information, see:
 
@@ -91,7 +89,7 @@ Here's the list of all the new features:
 
 We've added support for Trusted Visuals to Power BI Report Server. Currently we support Mapbox and PowerOn visuals. ESRI, Visio, and PowerApps aren't supported for this release.)
 
-### Better Security features
+### Improved security features
 
 **RestrictedResourceMimeTypeForUpload**, which admins can use to specify a comma-separated list of banned mime types, for example text/html.
 
