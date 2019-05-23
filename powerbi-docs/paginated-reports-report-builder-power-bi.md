@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 12/05/2018
+ms.date: 05/20/2019
 ---
 
 # What are paginated reports in Power BI Premium? (Preview)
@@ -61,7 +61,13 @@ When you design a paginated report, you're really creating a *report definition*
 
 ## View your paginated report
 You view your paginated report in the Power BI service in a browser, and also in the Power BI mobile apps. From the Power BI service, you can export the report to a number of formats, such as HTML, MHTML, PDF, XML, CSV, TIFF, Word, and Excel. You can also share it with others.  
-  
+
+## Create a subscription to your report
+
+You can now set up email subscriptions for yourself and others for paginated reports in the Power BI service. In general, the process is the same as subscribing to reports and dashboards in the Power BI service. In setting up subscriptions, you choose how often you want to receive the emails: daily, weekly, or hourly. The subscription contains a PDF attachment of the entire report output.
+
+For details, see the article [Subscribe yourself and others to paginated reports in the Power BI service](paginated-reports-subscriptions.md). 
+
 ## Limitations and considerations
 
 Here are some other features that aren't supported in the initial release:
@@ -69,7 +75,6 @@ Here are some other features that aren't supported in the initial release:
 - Pinning report pages or visuals to Power BI dashboards. You can still pin visualizations to a Power BI dashboard from an on-premises paginated report on a Power BI Report Server or Reporting Services report server. See [Pin Reporting Services items to Power BI dashboards](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards) for more information.
 - Interactive features such as document maps and show/hide buttons.
 - Subreports and drillthrough reports.
-- Subscriptions.
 - Shared data sources and shared datasets.
 - Visuals from Power BI reports.
  
