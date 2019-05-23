@@ -559,11 +559,11 @@
       items: 
       - name: "Create a report from a dataset"
         href: service-report-create-new.md
-      - name: "About filters and highlighting in reports"
+      - name: "Filters and highlighting in reports"
         href: power-bi-reports-filters-and-highlighting.md
       - name: "Add a filter to a report"
         href: power-bi-report-add-filter.md
-      - name: "Save a report in Power BI"
+      - name: "Save a report"
         href: service-report-save.md
       - name: "Interact with a report in Editing View"
         href: service-interact-with-a-report-in-editing-view.md
