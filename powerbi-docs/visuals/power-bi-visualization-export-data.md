@@ -8,7 +8,7 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/21/2019
+ms.date: 05/23/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---

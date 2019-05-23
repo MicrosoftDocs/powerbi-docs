@@ -8,11 +8,7 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-<<<<<<< HEAD
-ms.date: 05/21/2019
-=======
-ms.date: 05/22/2019
->>>>>>> b0cb07b4a4aa3bfee4796d89d5e0a9098867765f
+ms.date: 05/23/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -63,11 +59,7 @@ To follow along, open Power BI service and connect to the **Retail Analysis samp
 
     1. Select **Time** \> **FiscalMonth** to add it to the **Axis** well.
 
-<<<<<<< HEAD
         ![Screenshot of the newly created column chart.](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-=======
-    c. Select **Time** \> **FiscalMonth** to add it to the **Axis** well.
->>>>>>> b0cb07b4a4aa3bfee4796d89d5e0a9098867765f
 
 1. Select the ellipsis in the upper-right corner of the visualization, and select **Sort by > FiscalMonth**. To change the sort order, select the ellipsis again and choose either **Sort ascending** or **Sort descending**.
 
@@ -87,7 +79,6 @@ To follow along, open Power BI service and connect to the **Retail Analysis samp
 
 In this task, we'll compare gross margin and sales.
 
-<<<<<<< HEAD
 1. Create a new line chart that tracks **Gross Margin last year %** by **Month**. Select the ellipsis to sort it by **Month** and **Ascending**.
 
     ![Screenshot of the new line chart.](media/power-bi-visualization-combo-chart/combo1_new.png)
@@ -99,10 +90,6 @@ In this task, we'll compare gross margin and sales.
     ![Screenshot of the line chart with Value and Last Year Sales added.](media/power-bi-visualization-combo-chart/flatline_new.png)
 
 1. To make the visual easier to read and interpret, convert the line chart to a Line and Stacked Column chart.
-=======
-1. Create a new line chart that tracks **Gross Margin last year %** by **FiscalMonth**. Select the ellipsis to sort it by **Month** and **Ascending**.  
-In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
->>>>>>> b0cb07b4a4aa3bfee4796d89d5e0a9098867765f
 
     ![Screenshot of the visualizations pane with the Line and stacked column chart option called out.](media/power-bi-visualization-combo-chart/converttocombo_new.png)
 
@@ -110,7 +97,6 @@ In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again
 
     ![Screenshot of the Line and stacked column chart](media/power-bi-visualization-combo-chart/power-bi-combochart.png)
 
-<<<<<<< HEAD
     Power BI creates two axes, allowing the service so scale the datasets differently. The left measures sales dollars and the right measures percentage. And we see the answer to our question: Yes, we do see a similar pattern.
 
 ## Add titles to the axes
@@ -118,24 +104,9 @@ In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again
 1. Select the paint roller icon ![Screenshot f the paint roller icon.](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) to open the Formatting pane.
 
 1. Select the down arrow to expand the **Y-axis** options.
-=======
-   ![](media/power-bi-visualization-combo-chart/power-bi-clustered-combo.png)    
-
-## Add titles to the axes
-1. Select the paint roller icon ![](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) to open the Formatting pane.
-2. Select the down arrow to expand the **Y-axis** options.
-3. For **Y-Axis (Column)**, set **Position** to **Left**, set **Title** to **On**, **Style** to  **Show title only**, and **Display units** as **Millions**.
-
-   ![](media/power-bi-visualization-combo-chart/power-bi-open-y.png)
-4. Under **Y-Axis (Column)**, scroll down until you see **Show secondary**. Because there are so many options for the Y axes, you may have to use both scrollbars. The Show secondary section displays options for formatting the line chart portion of the combo chart.
-
-   ![](media/power-bi-visualization-combo-chart/power-bi-secondary.png)
-5. For **Y-Axis (Line)**, leave **Position** as **Right**, turn **Title** to **On**, and set **Style** to **Show title only**.
->>>>>>> b0cb07b4a4aa3bfee4796d89d5e0a9098867765f
 
 1. For **Y-Axis (Column)**, select these options:
 
-<<<<<<< HEAD
     | Setting | Value |
     | ------- | ----- |
     | Position | Select **Left**. |
@@ -143,9 +114,6 @@ In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again
     | Title | Move slider to **On**. |
     | Style | Select **Show title only**. |
     | Show secondary | Move slider to **On**.  This shows options for formatting the line chart portion of the combo chart. |
-=======
-   ![](media/power-bi-visualization-combo-chart/power-bi-2-titles.png)
->>>>>>> b0cb07b4a4aa3bfee4796d89d5e0a9098867765f
 
 1. For **Y-Axis (Line)**, select these options:
 
