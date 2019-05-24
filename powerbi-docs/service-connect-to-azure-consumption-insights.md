@@ -31,7 +31,7 @@ Connect to the [Microsoft Azure Consumption Insights content pack](https://app.p
 4. Provide the number months of data you want to import and your Azure Enterprise enrollment number. See details on [finding these parameters](#FindingParams) below.
    
     ![](media/service-connect-to-azure-consumption-insights/azureconsumptionparams.png)
-5. Provide your Access key to connect. The key for your enrollment can be found in your Azure EA Portal. 
+5. Provide your Access key to connect. You can find your enrollment key in the Azure EA Portal. 
    
     ![](media/service-connect-to-azure-consumption-insights/msazureconsumptioncreds.png)
 6. The import process begins automatically. When complete, a new dashboard, report, and model appear in the Navigation Pane. Select the dashboard to view your imported data.
@@ -43,7 +43,7 @@ Connect to the [Microsoft Azure Consumption Insights content pack](https://app.p
 * Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
 * [Select a tile](consumer/end-user-tiles.md) to open the underlying report.
-* While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+* While your dataset is scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## What's included
 The Microsoft Azure Consumption Insights content pack includes monthly reporting data for the month range you provided when connecting. The range is a moving window, so the dates included are updated as the dataset refreshes.

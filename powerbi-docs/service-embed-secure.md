@@ -1,6 +1,6 @@
 ---
 title: Embed a report in a secure portal or website
-description: With the Power BI secure embed feature, you can enable users to easily and securely embed reports in internal web portals.
+description: The Power BI embeds feature enables users to easily and securely embed reports in internal web portals.
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -28,7 +28,7 @@ The **Embed** option supports [URL Filters](service-url-filters.md) and URL sett
 
     ![Embed option dialog box](media/service-embed-secure/secure-embed-code-dialog.png)
 
-3. Whether your URL is embedded in a web portal or opened directly, a user needs to be authenticated before given report access. The following screen appears if a user has not signed-in to Power BI in their browser session. When they select **Sign-In**, a new browser window or tab could open. Have them check for pop-up blockers if they don't get prompted to sign in.
+3. Whether a user opens a report URL directly or one embedded in a web portal, report access requires authentication. The following screen appears if a user has not signed-in to Power BI in their browser session. When they select **Sign-In**, a new browser window or tab could open. Have them check for pop-up blockers if they don't get prompted to sign in.
 
     ![Sign in to view this report](media/service-embed-secure/secure-embed-sign-in.png)
 
@@ -44,7 +44,7 @@ The **Embed** option supports [URL Filters](service-url-filters.md) and URL sett
 
 The **Embed** option doesn't automatically permit users to view the report. View permissions are set in the Power BI service.
 
-In the Power BI service, you can share the embedded report with users requiring access. If you're using an Office 365 Group, you can list the user as an app workspace member. For more information, see how to [manage your app workspace in Power BI and Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
+In the Power BI service, you can share embedded reports with users requiring access. If you're using an Office 365 Group, you can list the user as an app workspace member. For more information, see how to [manage your app workspace in Power BI and Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## Licensing
 
@@ -52,14 +52,14 @@ To view the embedded report, users need either a Power BI Pro license or the con
 
 ## Customize your embed experience using URL settings
 
-The embed URL supports several input settings you can use to customize the user experience. If you’re using the iFrame provided, make sure you update the URL in the iFrame’s **src** settings.
+You can customize the user experience using the embed URL's input settings. In the provided iFrame, you can update the URL's  **src** settings.
 
 | Property  | Description  |  |  |  |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
 | pageName  | You can use the **pageName** query string parameter to set which report page to open. You can find this value at the report URL's end when viewing a report in the Power BI service, as shown below. |  |  |  |
 | URL Filters  | You can use [URL Filters](service-url-filters.md) in the embed URL you received from the Power BI UI to filter the embed content. This way you can build low-code integrations with only basic HTML and JavaScript experience.  |  |  |  |
 
-## Set which page opens when the report is embedded
+## Set which page opens for an embedded report 
 
 You can find the **pageName** value at the report URL's end  when viewing a report in the Power BI service.
 
