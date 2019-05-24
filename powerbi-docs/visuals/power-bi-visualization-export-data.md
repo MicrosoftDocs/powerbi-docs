@@ -23,13 +23,13 @@ Watch Will export the data from one of the visualizations in his report, save it
 
 ## Export data from a Power BI dashboard
 
-1. Select the ellipses in the upper-right corner of the visualization.
+1. Select the ellipsis in the upper-right corner of the visualization.
 
-    ![Screenshot of a visualization with an arrow pointing to the ellipses button.](media/power-bi-visualization-export-data/pbi-export-tile3.png)
+    ![Screenshot of a visualization with an arrow pointing to the ellipsis button.](media/power-bi-visualization-export-data/pbi-export-tile3.png)
 
 1. Choose the **Export data** icon.
 
-    ![Screenshot of the ellipses drop-down with the Export data option called out.](media/power-bi-visualization-export-data/pbi_export_dash.png)
+    ![Screenshot of the ellipsis drop-down with the Export data option called out.](media/power-bi-visualization-export-data/pbi_export_dash.png)
 
 1. Power BI exports the data to a *.csv* file. If you've filtered the visualization, then the app will filter the downloaded data.
 
@@ -57,9 +57,9 @@ To follow along, open the [Procurement analysis sample report](../sample-procure
 
    Now we're ready to try out both options for exporting data.
 
-1. Select the ellipses in the upper-right corner of the visualization. Select **Export data**.
+1. Select the ellipsis in the upper-right corner of the visualization. Select **Export data**.
 
-    ![Screenshot of the upper-right corner with the ellipses button and the Export data option called out.](media/power-bi-visualization-export-data/power-bi-export-data2.png)
+    ![Screenshot of the upper-right corner with the ellipsis button and the Export data option called out.](media/power-bi-visualization-export-data/power-bi-export-data2.png)
 
     In Power BI online, if your visualization has an aggregate (one example would be if you changed **Count** to *average*, *sum*, or *minimum*),  you'll have two options:
 
@@ -119,7 +119,9 @@ Power BI report designers control the types of data export options that are avai
     > [!IMPORTANT]
     > We recommend that report designers revisit old reports and manually reset the export option as needed.
 
-1. To set these options, start in Power BI Desktop.
+To set these options:
+
+1. Start in Power BI Desktop.
 
 1. From the upper left corner, select **File** > **Options and Settings** > **Options**.
 
@@ -165,7 +167,7 @@ It's important to note that if the Power BI admin portal settings conflict with 
 
 - In Power BI, you can rename a field (column) by double-clicking the field and typing a new name. Power BI refers to the new name as an *alias*. It's possible that a Power BI report can end up with duplicate field names, but Excel doesn't allow duplicates. So when Power BI exports the data to Excel, the field aliases revert to their original field (column) names.  
 
-- If there is unicode character in the *.csv* file, the text in Excel may not display properly. Examples of unicode characters are currency symbols and foreign words. You can open the file in Notepad and the unicode will display correctly. If you want to open the file in Excel, the workaround is to import the *.csv*. To import the file into Excel:
+- If there are Unicode characters in the *.csv* file, the text in Excel may not display properly. Examples of Unicode characters are currency symbols and foreign words. You can open the file in Notepad and the Unicode will display correctly. If you want to open the file in Excel, the workaround is to import the *.csv*. To import the file into Excel:
 
   1. Open Excel.
 
