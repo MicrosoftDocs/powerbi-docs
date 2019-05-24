@@ -28,7 +28,7 @@ The **Embed** option supports [URL Filters](service-url-filters.md) and URL sett
 
     ![Embed option dialog box](media/service-embed-secure/secure-embed-code-dialog.png)
 
-3. Whether a user opens a report URL directly or one embedded in a web portal, report access requires authentication. The following screen appears if a user has not signed-in to Power BI in their browser session. When they select **Sign-In**, a new browser window or tab could open. Have them check for pop-up blockers if they don't get prompted to sign in.
+3. Whether a user opens a report URL directly, or one embedded in a web portal, report access requires authentication. The following screen appears if a user has not signed-in to Power BI in their browser session. When they select **Sign-In**, a new browser window or tab could open. Have them check for pop-up blockers if they don't get prompted to sign in.
 
     ![Sign in to view this report](media/service-embed-secure/secure-embed-sign-in.png)
 
