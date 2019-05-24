@@ -1,5 +1,5 @@
 ---
-title: Share your Power BI dashboards and reports with coworkers and others
+title: Share Power BI dashboards and reports with coworkers and others
 description: How to share Power BI dashboards and reports with colleagues in and out of your organization, and what you need to know about sharing.
 author: maggiesMSFT
 manager: kfile
@@ -9,12 +9,12 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/17/2019
+ms.date: 05/24/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Share your Power BI dashboards and reports with coworkers and others
+# Share Power BI dashboards and reports with coworkers and others
 *Sharing* is a good way to give a few people access to your dashboards and reports. Power BI also offers [several other ways to collaborate and distribute dashboards and reports](service-how-to-collaborate-distribute-dashboards-reports.md).
 
 ![Share icon in a list of favorite dashboards](media/service-share-dashboards/power-bi-share-dash-report-favorites.png)
@@ -41,13 +41,13 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
    ![Warning about sharing externally](media/service-share-dashboards/power-bi-share-dialog-warning.png) 
  
    >[!NOTE]
-   >The input box supports, at most, 100 users or groups. If you need to share with large numbers of users, you can share multiple times or share with a user group.
+   >The input box supports, at most, 100 users or groups. If you need to share with large numbers of users, consider creating the dashboard in a workspace and [distributing it as an app](service-create-distribute-apps.md).
    > 
    > 
 
 
 3. Add a message if you want. It's optional.
-4. To let your coworkers share your content with others, check **Allow recipients to share your dashboard**.
+4. To let your coworkers share your content with others, check **Allow recipients to share your dashboard (or report)**.
    
    Allowing others to share is called *resharing*. If you let them, they can reshare from the Power BI service and the mobile apps, or forward the email invitation to others in your organization. The invitation expires after one month. People outside your organization can't reshare. As the owner of the content, you can turn off resharing, or revoke resharing on an individual basis. See [Stop sharing or stop others from sharing](#stop-sharing-or-stop-others-from-sharing).
 
@@ -67,7 +67,7 @@ Watch Amanda share her dashboard with colleagues inside and outside her company.
 Sometimes you need to see the people you've shared with, and see who they've shared it with:
 
 1. In the list of dashboards and reports, or in the dashboard or report itself, select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png). 
-2. In the **Share dashboard** dialog box, select **Access**.
+2. In the **Share dashboard** or **Share report** dialog box, select **Access**.
    
     ![Share dashboard dialog box, Access tab](media/service-share-dashboards/power-bi-share-dialog-access.png)
 
@@ -77,11 +77,11 @@ Sometimes you need to see the people you've shared with, and see who they've sha
 Only the dashboard or report owner can turn resharing on and off.
 
 ### If you haven't sent the sharing invitation yet
-* Clear the **Allow recipients to share your dashboard** check box at the bottom of the invitation before you send it.
+* Clear the **Allow recipients to share your dashboard (or report)** check box at the bottom of the invitation before you send it.
 
 ### If you've already shared the dashboard or report
 1. In the list of dashboards and reports, or in the dashboard or report itself, select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png). 
-2. In the **Share dashboard** dialog box, select **Access**.
+2. In the **Share dashboard** or **Share report** dialog box, select **Access**.
    
     ![Share dashboard dialog box, Access tab](media/service-share-dashboards/power-bi-share-dialog-access.png)
 3. Select the ellipsis (**...**) next to **Read and reshare** and select:
