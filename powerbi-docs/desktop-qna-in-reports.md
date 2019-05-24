@@ -19,7 +19,7 @@ Using common phrases and natural language to ask questions of your data is power
 To enable Q&A to successfully interpret the large collection of questions it's capable of responding to, Q&A must make assumptions about the model. If the structure of your model doesn't meet one or more of these assumptions, you'll need to adjust your model. Those adjustments for Q&A are the same best-practice optimizations for any model in Power BI, regardless whether you use Q&A. 
 
 > [!NOTE]
-> Q&A is only available when working with a model that contains **imported** data. Live connections to SSAS and DirectQuery models are not supported.
+> Q&A is only available when working with a model that contains **imported** data or to Live connections to SSAS. DirectQuery models are not supported.
 >
 > Q&A requires the following C runtime update if you're using a version of Windows prior to Windows 10. You can try installing important updates from Windows Update or manually install the required component from Microsoft (KB2999226). https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows
 >

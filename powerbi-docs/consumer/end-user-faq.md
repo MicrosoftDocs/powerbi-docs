@@ -27,8 +27,9 @@ Power BI Pro is an individual license that allows access to all content and capa
 Premium provides dedicated capacity to deliver more consistent performance and support larger data volumes in Power BI. For individual users, Premium also enables widespread distribution of content by Pro users without requiring per-user licenses for recipients viewing the content.
 
 ## What happens if my Power BI Pro license expires?
-There is a 30-day grace period after a Power BI Pro license expires.
-Power BI Pro has the same subscription lifecycle as Office 365. For more information, see [What happens to my data and access when my Office 365 for business subscription ends?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
+There is a grace period after a Power BI Pro license expires. For licenses that are part of a volume license purchase, the grace period is 90 days. If you purchased the license directly, the grace period is 30 days.
+
+Power BI Pro has the same subscription lifecycle as Office 365. For more information, see [What happens to my data and access when my Office 365 for business subscription ends?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
 ## What if I have questions about Power BI Premium?
 For questions related to Power BI Premium, see [Power BI Premium FAQ](../service-premium-faq.md).
@@ -86,11 +87,6 @@ Here's a complete list of [regions and languages supported by Power BI](../suppo
 You can purchase Power BI Pro licenses directly or chat with a representative at [www.powerbi.com](http://www.powerbi.com).
 
 You can also find a [Microsoft Partner](https://partner.microsoft.com/) to help you with your Power BI implementation.
-
-## What happens if my Power BI Pro license expires?
-There is a grace period after a Power BI Pro license expires. For licenses that are part of a volume license purchase, the grace period is 90 days. If you purchased the license directly, the grace period is 30 days.
-
-Power BI Pro has the same subscription lifecycle as Office 365. For more information, see [What happens to my data and access when my Office 365 for business subscription ends?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
 
 ## Does Power BI meet national, regional, and industry-specific compliance requirements?
 Learn more about Power BI compliance, at the [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).

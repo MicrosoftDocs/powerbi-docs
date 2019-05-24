@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/21/2019
+ms.date: 04/15/2019
 ms.author: davidi
 
 ---
@@ -23,8 +23,17 @@ Administrators use the following registry key to disable the sign-in form. This 
 Key: HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop
 valueName: ShowLeadGenDialog
 ```
+You can also try the following key, which has been successful for some customers based on their configurations:
+
+```
+Key: HKEY_CURRENT_USER\SOFTWARE\Microsoft\Microsoft Power BI Desktop
+valueName: ShowLeadGenDialog
+```
 
 A value of 0 will disable the dialog.
+
+
+
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

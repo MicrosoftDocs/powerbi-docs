@@ -1,15 +1,15 @@
 ---
 title: Troubleshooting refresh scenarios
 description: Troubleshooting refresh scenarios
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
-ms.author: davidi
+ms.author: mblythe
 
 LocalizationGroup: Data refresh
 ---
@@ -54,6 +54,9 @@ The maximum size for datasets imported into the **Power BI service** is 1 GB. Th
 
 ## Scheduled refresh timeout
 Scheduled refresh for imported datasets timeout after two hours. This timeout is increased to five hours for datasets in **Premium** workspaces. If you are encountering this limit, you can consider reducing the size or complexity of your dataset, or consider breaking the dataset into smaller pieces.
+
+## Scheduled refresh failures
+If a scheduled refresh fails four times in a row, Power BI disables the refresh. Address the underlying problem, and then re-enable the scheduled refresh.
 
 ## Access to the resource is forbidden  
 This error could occur because of expired cached credentials. Clear your internet browser cache by going signing into Power BI and going to https://app.powerbi.com?alwaysPromptForContentProviderCreds=true. This forces an update of your credentials. 

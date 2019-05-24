@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 05/20/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -30,7 +30,7 @@ Your account needs to be marked as a **Global Admin**, within Office 365 or Azur
 
     ![Settings to admin portal](media/service-admin-portal/powerbi-admin-settings.png)
 
-There are seven tabs in the portal. The rest of this article provides information about each of these tabs.
+There are nine tabs in the portal. The rest of this article provides information about each of these tabs.
 
 ![Admin portal navigation](media/service-admin-portal/powerbi-admin-landing-page.png)
 
@@ -40,7 +40,9 @@ There are seven tabs in the portal. The rest of this article provides informatio
 * [Tenant settings](#tenant-settings)
 * [Capacity settings](#capacity-settings)
 * [Embed codes](#embed-codes)
-* [Organizational visuals](#organizational-visuals)
+* [Organization visuals](#organization-visuals)
+* [Dataflow storage (preview)](#dataflowStorage)
+* [Workspaces](#workspaces)
 
 ## Usage metrics
 
@@ -122,15 +124,27 @@ Settings can have three states:
 
 The next few sections provide an overview of the different types of tenant settings.
 
+## Help and support settings
+
+### Publish "Get Help" information
+
+Users in the organization can go to internal help and support resources from the Power BI help menu. Specifically, these parameters change the behavior of the Learn, Community, and Get help menu items.
+
+It is also possible to specify a URL to direct users to a custom solution for licensing requests. This parameter customizes the target URL of the Upgrade account button that a user without a Power BI Pro license can find in the Update to Power BI Pro dialog box as well as in the Manage personal storage page.
+
 ## Workspace settings
 
-### Create workspaces (preview)
+### Create workspaces
 
-Users in the organization can create app workspaces to collaborate on dashboards, reports, and other content. [Learn more](service-create-the-new-workspaces.md)
+Admins use the **Create workspaces** setting to indicate which users in the organization can create app workspaces to collaborate on dashboards, reports, and other content. Learn more about [app workspaces](service-create-the-new-workspaces.md).
+
+The admin portal has another section of settings about the workspaces in your tenant. In that section, you can sort and filter the list of workspaces and display the details for each workspace. See [Workspaces](#workspaces) for details.
+
+In the admin portal, you also control which users have permissions to distribute apps to the organization. See [Publish content packs and apps to the entire organization](#publish-content-packs-and-apps-to-the-entire-organization) in this article for details.
 
 ## Export and sharing settings
 
-### Share content to external users
+### Share content with external users
 
 Users in the organization can share dashboards with users outside the organization. [Learn more](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
 
@@ -138,7 +152,7 @@ Users in the organization can share dashboards with users outside the organizati
 
 The following image shows the message that appears when you share with an external user.
 
-![Share with external user](media/service-admin-portal/powerbi-admin-sharing-external.png)
+![Share with external user](media/service-admin-portal/powerbi-admin-sharing-external.png)  
 
 ### Publish to web
 
@@ -199,19 +213,19 @@ The following image shows the option to Allow external guest users to edit and m
 
 ### Publish content packs and apps to the entire organization
 
-Users in the organization can publish content packs and apps to the entire organization, rather than just specific groups. [Learn more](service-organizational-content-pack-manage-update-delete.md)
+Admins use this setting to decide which users can publish content packs and apps to the entire organization, rather than just specific groups. Learn more about [publishing apps](service-create-distribute-apps.md).
 
 The following image shows the **My entire organization** option when creating a content pack.
 
 ![Publish content pack to organization](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### Create template apps
+### Create template apps and organizational content packs
 
-Users in the organization can create template apps that use datasets built in Power BI Desktop. Learn more about [template apps](template-content-pack-authoring.md)
+Users in the organization can create template apps and organizational content packs that use datasets built on one data source in Power BI Desktop. Learn more about [template apps](template-content-pack-authoring.md).
 
 ### Push apps to end users
 
-Users can share apps directly with end users without requiring installation from AppSource. [Learn more](service-create-distribute-apps.md)
+Report creators can share apps directly with end users without requiring installation from [AppSource](https://appsource.microsoft.com). Learn more about [automatically installing apps for end users](service-create-distribute-apps.md#automatically-install-apps-for-end-users).
 
 ## Integration settings
 
@@ -331,11 +345,18 @@ Users in the organization can tag dashboards with classifications that indicate 
 
 Users in the organization can embed Power BI dashboards and reports in Software as a Service (SaaS) applications. Disabling this setting prevents users from being able to use the REST APIs to embed Power BI content within their application. [Learn more](developer/embedding.md)
 
-## Dataflow settings (preview)
+### Allow service principals to use Power BI APIs
 
-### Create and use dataflows (preview)
+Web apps registered in Azure Active Directory (Azure AD) will use an assigned service principal to access Power BI APIs without a signed in user. To allow an app to use service principal authentication its service principal must be included in an allowed security group. [Learn more](developer/embed-service-principal.md)
 
-Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI (Preview)](service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
+> [!NOTE]
+> Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions, create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
+
+## Dataflow settings
+
+### Create and use dataflows
+
+Users in the organization can create and use dataflows. For an overview of dataflows, see [Self-service data prep in Power BI](service-dataflows-overview.md). To enable dataflows in a Premium capacity, see [Configure workloads](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
@@ -346,11 +367,18 @@ Two settings control template apps.
 
 ![Power BI admin portal template apps settings](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
 
-The first setting, **Create template apps**, controls who in your organization can create template apps. Template app creators can then distribute them to clients outside your organization by way of AppSource or other distribution method.
+### Create Template Apps (preview)
+
+Users in the organization can create template apps. Template app creators can then distribute them to clients outside your organization by way of [AppSource](https://appsource.microsoft.com) or other distribution methods.
 
 ![Power BI admin portal, Create template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
 
-With the second setting, **Install template apps**, you control who in your organization can download and install template apps from AppSource or another source
+### Install template apps (preview)
+
+Users in the organization can download and install template apps from [AppSource](https://appsource.microsoft.com) or another source.
+
+> [!NOTE]
+> This setting determines which users can install template apps on their Power BI accounts.
 
 ## Capacity settings
 
@@ -362,7 +390,7 @@ The **Power BI Premium** tab enables you to manage any Power BI Premium capaciti
 
 ### Power BI Embedded
 
-The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](developer/azure-pbie-create-capacity.md) from **the Azure Portal**.
+The **Power BI Embedded** tab enables you to view your Power BI Embedded (A SKU) capacities that you've purchased for your customer. Since you can only purchase A SKUs from Azure, you [manage embedded capacities in Azure](developer/azure-pbie-create-capacity.md) from **the Azure portal**.
 
 For more information about how to manage Power BI Embedded (A SKU) settings, see [What is Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
 
@@ -372,9 +400,9 @@ As an administrator, you can view the embed codes that are generated for your te
 
 ![Embed codes within the Power BI admin portal](media/service-admin-portal/embed-codes.png)
 
-## Organizational visuals
+## <a name="organizational-visuals">Organization visuals</a>
 
-The **Organizational visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization.md)
+The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the organization's repository.
@@ -432,19 +460,21 @@ Make sure the Visual ID remains unchanged. The new file replaces the previous fi
 
 For more information, visit [Frequently asked questions about organizational custom visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
 
-## Dataflow storage (preview)
+## <a name="dataflowStorage">Dataflow storage (preview)</a>
 
 By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. For more information, see [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md).
 
-## Workspaces (preview)
+## Workspaces
 
-As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. Note that the table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, legacy workspaces are of type **Group**, and modern workspaces are of type **Workspace**. For more information, see [Create the new workspaces (preview) in Power BI](service-create-the-new-workspaces.md).
+As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. The table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Create the new workspaces in Power BI](service-create-the-new-workspaces.md).
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
+
 ## Next steps
 
-[Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  [Understanding the Power BI admin role](service-admin-role.md)  
+[Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
+[Understanding the Power BI admin role](service-admin-role.md)  
 [Auditing Power BI in your organization](service-admin-auditing.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

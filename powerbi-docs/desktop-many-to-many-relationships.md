@@ -21,7 +21,7 @@ With the *relationships with a many-many cardinality* feature in Power BI Deskto
 
 The *relationships with a many-many cardinality* capability in Power BI Desktop is one of three related features:
 
-* **Composite models**: Allows a report to have two or more data connections, including DirectQuery connections or Import, in any combination. For more information, see [Composite models in Power BI Desktop (preview)](desktop-composite-models.md).
+* **Composite models**: Allows a report to have two or more data connections, including DirectQuery connections or Import, in any combination. For more information, see [Composite models in Power BI Desktop](desktop-composite-models.md).
 
 * **Relationships with a many-many cardinality**: With *composite models*, you can establish *relationships with a many-many cardinality* between tables. This approach removes requirements for unique values in tables. It also removes previous workarounds, such as introducing new tables only to establish relationships. The feature is described further in this article.
 
@@ -153,7 +153,7 @@ The existing limitations of using DirectQuery still apply when you use *relation
 ## Next steps
 
 For more information about composite models and DirectQuery, see the following articles:
-* [Composite models in Power BI Desktop (preview)](desktop-composite-models.md)
+* [Composite models in Power BI Desktop](desktop-composite-models.md)
 * [Storage mode in Power BI Desktop (preview)](desktop-storage-mode.md)
 * [Use DirectQuery in Power BI Desktop](desktop-directquery-about.md)
 * [Data sources supported by DirectQuery in Power BI Desktop](desktop-directquery-data-sources.md)

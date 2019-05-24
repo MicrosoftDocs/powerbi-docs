@@ -2,14 +2,14 @@
 title: Comparing Power BI Report Server and the Power BI service
 description: This article compares the features of Power BI Report Server and the Power BI service.
 keywords: 
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.date: 02/06/2019
+ms.date: 05/22/2019
 #customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
 ---
 
@@ -34,7 +34,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Distribute group of reports using apps | No | Yes | [Create and publish apps with dashboards and reports](../service-create-distribute-apps.md) |
 | Content packs | No | Yes | [Organizational content packs: Introduction](../service-organizational-content-pack-introduction.md) |
 | Connect to services like Salesforce | Yes | Yes | [Connect to the services you use](../service-connect-to-services.md) with content packs in the Power BI service. In Power BI Report Server, use certified connectors to connect to services. See [Power BI report data sources in Power BI Report Server](data-sources.md) for details. |
-| Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../consumer/end-user-q-and-a.md) 
+| Q&A | No | Yes | [Q&A in the Power BI service and Power BI Desktop](../power-bi-tutorial-q-and-a.md) 
 | Quick insights | No | Yes | [Automatically generate data insights with Power BI](../consumer/end-user-insights.md) |
 | Analyze in Excel | No | Yes | [Analyze in Excel](../service-analyze-in-excel.md) 
 | Paginated reports | Yes | Yes | [Paginated reports are available in the Power BI service](../paginated-reports-report-builder-power-bi.md) in preview in a Premium capacity |

@@ -1,8 +1,8 @@
 ---
 title: Embed a report using an iFrame
 description: Embedding Power BI Report Server report in an iFrame in SharePoint Server
-author: markingmyname
-ms.author: maghan 
+author: maggiesMSFT
+ms.author: maggies 
 ms.date: 05/04/2018
 ms.topic: quickstart
 ms.service: powerbi

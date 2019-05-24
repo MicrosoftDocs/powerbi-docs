@@ -1,8 +1,8 @@
 ---
 title: Using OAuth to connect to Power BI Report Server and SSRS
 description: Learn how to configure your environment to support OAuth authentication with the Power BI mobile app to connect to SQL Server Reporting Services 2016 or later.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -20,7 +20,7 @@ Learn how to configure your environment to support OAuth authentication with the
 You can use OAuth to connect to Power BI Report Server and Reporting Services to display mobile reports or KPIs. Windows Server 2016 provides some improvements to the Web Application Proxy (WAP) role to allow this type of authentication.
 
    > [!NOTE]
-   > Viewing Power BI Reports hosted in Power BI Report Server using WAP to authenticate is not officially supported at this time.
+   > Viewing Power BI Reports hosted in Power BI Report Server using WAP to authenticate is currently supported only in iOS app. Android  app is not officially supported at this time.
 
 ## Requirements
 
@@ -113,7 +113,7 @@ You can create the application group with the following steps.
    > [!NOTE]
    > This URL is case sensitive!
 
-   *https://<url to report server>/reports*
+   *https://< report server url >/reports*
 
    ![ADFS Application Group Wizard 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Select **Next**.
@@ -186,7 +186,7 @@ To configure constrained delegation, you will want to do the following.
 While you can publish applications within the Report Access Management Console, we will want to create the application via PowerShell. Here is the command to add the application.
 
 ```powershell
-Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/reports/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/reports/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
+Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
 ```
 
 | Parameter | Comments |

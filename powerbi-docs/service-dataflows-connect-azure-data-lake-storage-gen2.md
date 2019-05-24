@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/10/2019
+ms.date: 04/15/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -18,8 +18,8 @@ LocalizationGroup: Data from files
 You can configure Power BI workspaces to store dataflows in your organization’s Azure Data Lake Storage Gen2 account. This article describes the general steps necessary to do so, and provides guidance and best practices along the way. There are some advantages to configuring workspaces to store dataflow definitions and datafiles in your data lake, including the following:
 
 * Azure Data Lake Storage Gen2 provides an enormously scalable storage facility for data
-* Dataflow data and definition files can be leveraged by your IT department's developers to leverage Azure Data and artificial intelligence (AI) services as demonstrated in the [github samples from Azure Data Services](https://aka.ms/cdmadstutorial)
-* Enables developers in your organization to integrate dataflow data into internal applications, and line of business solutions, using developer resources for dataflows and Azure
+* Dataflow data and definition files can be leveraged by your IT department's developers to leverage Azure Data and artificial intelligence (AI) services as demonstrated in the [GitHub samples from Azure Data Services](https://aka.ms/cdmadstutorial)
+* Enables developers in your organization to integrate dataflow data into internal applications, and line-of-business solutions, using developer resources for dataflows and Azure
 
 To use Azure Data Lake Storage Gen2 for dataflows, you need the following:
 
@@ -27,11 +27,13 @@ To use Azure Data Lake Storage Gen2 for dataflows, you need the following:
 * **A Global Administrator account** - this account is required to connect and configure Power BI to store the dataflow definition, and data, in your Azure Data Lake Storage Gen2 account
 * **An Azure subscription** - you need an Azure subscription to use Azure Data Lake Storage Gen2
 * **Resource group** - use a resource group you already have, or you can create a new one
-* **An Azure Storage account with Data Lake Storage Gen2 (Preview) feature enabled** - to connect to Azure Data Lake Storage Gen2, you need to sign up for its public preview
+* **An Azure Storage account with Data Lake Storage Gen2 feature enabled** 
 
 > [!TIP]
 > If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 
+> [!WARNING]
+> Once a dataflow storage location is configured, it cannot be changed. See the [considerations and limitations](#considerations-and-limitations) section near the end of this article for other important elements to consider.
 
 ## Prepare your Azure Data Lake Storage Gen2 for Power BI
 
@@ -45,9 +47,6 @@ Before you can configure Power BI with an Azure Data Lake Storage Gen2 account, 
 6. Power BI services must be authorized to the **powerbi** filesystem you create.
 
 The following sections walk through the steps necessary to configure your Azure Data Lake Storage Gen2 account in detail.
-
-> [!NOTE]
-> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
 
 ### Create the storage account
 
@@ -67,7 +66,9 @@ In the **Add role assignment** window, select the **Reader** role to assign to t
 
 ![Power BI service assigned to Reader role](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
 
-Note: Please allow minimum 30 minute for permission for propogate to Power BI from Portal. Anytime you change permission in Portal, you should give 30 minutes to refelect the same in Power BI to retry. 
+
+> [!NOTE]
+> Allow at least 30 minutes for permission for propagate to Power BI from the portal. Any time you change permissions in the portal, allow 30 minutes for those permissions to be reflected in Power BI. 
 
 
 ### Create a file system for Power BI
@@ -110,7 +111,7 @@ To find your tenant applications, follow these steps:
 
     ![Search for Power applications](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Select and copy both Object IDs for Power BI service and Power BI premium from the results of your search. Be ready to paste those values in subsequent steps.
+5. Select and copy both Object IDs for Power BI service and Power Query online from the results of your search. Be ready to paste those values in subsequent steps.
 
 7. Next, use **Azure Storage Explorer** to navigate to the *powerbi* file system you created in the previous section. Follow the instructions in [Managing access](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) section of [Set file and directory level permissions using Azure Storage explorer](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) article.
 
@@ -128,15 +129,15 @@ To find your tenant applications, follow these steps:
 
 ## Connect your Azure Data Lake Storage Gen2 to Power BI
 
-Once you've set up your Azure Data Lake Storage Gen2 account in the Azure Portal, you connect it to Power BI in the **Power BI admin portal**. You also manage Power BI dataflow storage in the **Dataflow storage (preview)** settings section of the Power BI admin portal. For guidance on launching and basic use, see [How to get to the admin portal](service-admin-portal.md) for detailed information.
+Once you've set up your Azure Data Lake Storage Gen2 account in the Azure portal, you connect it to Power BI in the **Power BI admin portal**. You also manage Power BI dataflow storage in the **Dataflow storage** settings section of the Power BI admin portal. For guidance on launching and basic use, see [How to get to the admin portal](service-admin-portal.md) for detailed information.
 
 You connect your **Azure Data Lake Storage Gen2** account with the following steps:
 
-1. Navigate to the **Dataflow settings (preview)** tab of the **Power BI admin portal**
+1. Navigate to the **Dataflow settings** tab of the **Power BI admin portal**
 
-    ![Power BI admin portal](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_08.jpg) 
+    ![Power BI admin portal](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-08b.png) 
 
-2. Select the **Connect your Azure Data Lake Storage Gen2 Preview** button. The following window appears.
+2. Select the **Connect your Azure Data Lake Storage Gen2** button. The following window appears.
 
     ![Azure Data Lake Storage Gen2](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_09.jpg) 
 
@@ -157,7 +158,7 @@ Next you need to enable people in your organization to configure their workspace
 
 By default, dataflow definition and data files are stored in the storage provided by Power BI. To access dataflow files in your own storage account, workspace admins must first configure the workspace to allow assignment and storage of dataflows in the new storage account. Before a workspace admin can configure dataflow storage settings, the admin must be granted storage assignment permissions in the **Power BI admin portal**.
 
-To grant storage assignment permissions, go to the **Dataflow settings (Preview)** tab in the **Power BI admin portal**. There is a radio button to *Allow workspace admins to assign workspaces to this storage account* which must be set to **allow**. Once you enable that slider, select the **Apply** button for the change to take effect. 
+To grant storage assignment permissions, go to the **Dataflow settings** tab in the **Power BI admin portal**. There is a radio button to *Allow workspace admins to assign workspaces to this storage account* which must be set to **allow**. Once you enable that slider, select the **Apply** button for the change to take effect. 
 
 ![Allow admins to assign workspaces](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_10.jpg) 
 
@@ -179,7 +180,7 @@ Power BI Desktop customers cannot access dataflows stored in an **Azure Data Lak
 
 1. Anna has created a new app workspace and configured it to store dataflows in the organization’s data lake. 
 2. Ben, who is also a member of the workspace Anna created, would like to leverage Power BI Desktop and the dataflow connector to get data from the Dataflow Anna created.
-3. Ben receives an error similar to the following image, because he was not authorized to the dataflow’s CDM folder in the lake
+3. Ben receives an error similar because he was not authorized to the dataflow’s CDM folder in the lake.
 
 Common questions and answers include the following:
 
@@ -205,9 +206,9 @@ For more information about dataflows, CDM, and Azure Data Lake Storage Gen2, tak
 For information about dataflows overall, check out these articles:
 
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
-* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
-* [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows](service-dataflows-developer-resources.md)
 
 For more information about Azure storage, you can read these articles:
 * [Azure Storage security guide](https://docs.microsoft.com/azure/storage/common/storage-security-guide)

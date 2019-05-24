@@ -1,14 +1,14 @@
 ---
 title: 'Tutorial: Explore Power BI Report Server in a VM'
 description: In this tutorial, you create a virtual machine with Power BI Report Server already installed, and explore the web portal.
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
-ms.date: 05/18/2018
-ms.author: maghan
+ms.date: 05/06/2019
+ms.author: maggies
 #intent statement: As a Power BI admin or end user, I want to see how Power BI Report Server is structured, and where I go to manage my files.
 ---
 
@@ -33,32 +33,38 @@ For this tutorial, you need an Azure subscription. If you don’t have one, crea
 
 Luckily, the Power BI team has created a VM that comes with Power BI Report Server already installed.
 
-1. In the Azure Marketplace, open [Power BI Report Server](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
+1. In the Azure Marketplace, select Power BI Report Server. This link opens it directly: [Power BI Report Server](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
 
 2. Select **Get it now**.
 3. To agree to the provider's terms of use and privacy policy, select **Continue**.
 
-    ![Create Power BI Report Server VM](media/tutorial-explore-report-server-web-portal/power-bi-report-server-virtual-machine-create.png)
+4. Select **Create**.
 
-4. **Step 1 Basics**, for **VM Name**, call it **reportservervm**.
+    ![Create Power BI Report Server VM](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create.png)
+
+5. In **Step 1 Basics**, for **VM Name**, call it **reportservervm**.
+
+    The Power BI Report Server VM name can't contain dashes.
 
 5. Create a user name and password.
 
-6. For **Resource group**, keep **Create new**, and call it **reportserverresourcegroup**.
+6. For **Resource group**, select **Create new**, and call it **reportserverresourcegroup** > **OK**.
 
     If you go through the tutorial more than once, you need to give the resource group a different name after the first time. You can't use the same resource group name twice in one subscription. 
 
-7. Keep the other defaults > **OK**.
-
     ![Name the VM and resource group](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create-resource-group.png)
 
-8. **Step 2 Settings**, keep the defaults > **OK**.
+7. Keep the other defaults > **OK**.
 
-9. **Step 3 Summary** > **OK**.
+8. In **Step 2 Settings**, keep the defaults > **OK**.
+ 
+    The **SQL Storage account** and **Diagnostics Storage account** values must also be unique. If you go through the tutorial more than once, you need to give them different names.
 
-10. **Step 4**, review the Terms of user and privacy policy > **Create**.
+9. In **Step 3 Summary**, review your selections > **OK**.
 
-    The **Submitting deployment for Power BI Report Server** process takes a several minutes.
+10. In **Step 4 Buy**, review the Terms of user and privacy policy > **Create**.
+
+    The **Submitting deployment for Power BI Report Server** process may take several minutes.
 
 ## Connect to your virtual machine
 
@@ -74,11 +80,13 @@ Luckily, the Power BI team has created a VM that comes with Power BI Report Serv
 
     ![Connect to the virtual machine](media/tutorial-explore-report-server-web-portal/power-bi-report-server-connect-to-virtual-machine.png)
 
-5. In the Remote Desktop Connection dialog box, select **Connect**.
+5. In the **Connect to virtual machine** pane, keep the defaults and select **Download RDP File**.
+
+1. In the **Remote Desktop Connection** dialog box, select **Connect**.
 
 6. Enter the name and password you created for the VM > **OK**.
 
-7. The next dialog box says the identity of the remote computer cannot be identified. Select **Yes**.
+7. The next dialog box says **The identity of the remote computer cannot be identified**. Select **Yes**.
 
    Voila, your new VM opens.
 
@@ -86,15 +94,15 @@ Luckily, the Power BI team has created a VM that comes with Power BI Report Serv
 
 When your VM opens, here are the items you see on the desktop.
 
-![Power BI Report Server virtual machine starts](media/tutorial-explore-report-server-web-portal/power-bi-report-server-start-vm-numbered.png)
+![Power BI Report Server virtual machine starts](media/tutorial-explore-report-server-web-portal/power-bi-report-server-vm-5-numbers.png)
 
 |Number  |What it is  |
 |---------|---------|
-|![Number 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Starts SQL Server Data Tools, for creating paginated (.RDL) reports |
-|![Number 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Sample Power BI (.PBIX) reports  |
-|![Number 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Links to Power BI Report Server documentation   |
-|![Number 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Starts Power BI Desktop optimized for Power BI Report Server (March 2018)  |
-|![Number 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Opens Power BI Report Server web portal in the browser   |
+|![Number 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Sample Power BI (.PBIX) reports |
+|![Number 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Links to Power BI Report Server documentation |
+|![Number 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Starts Power BI Desktop optimized for Power BI Report Server (January 2019) |
+|![Number 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Opens Power BI Report Server web portal in the browser |
+|![Number 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Starts SQL Server Data Tools, for creating paginated (.RDL) reports |
 
 Double-click the **Report Server Web Portal** icon. The browser opens `http://localhost/reports/browse`. In the web portal, you see various files grouped by type. 
 
@@ -151,11 +159,9 @@ You can view and interact with Power BI reports in the web portal, and start Pow
 
 1. Select **Allow** to allow this web site to open a program on your computer. 
 
-     The report opens in Power BI Desktop. Note the name in the top bar, "Power BI Desktop (March 2018)". That's the version optimized for Power BI Report Server.
+     The report opens in Power BI Desktop. Note the name in the top bar, "Power BI Desktop (January 2019)". That's the version optimized for Power BI Report Server.
 
-    ![Power BI Desktop](media/tutorial-explore-report-server-web-portal/power-bi-report-server-power-bi-desktop.png)
-
-     Use the version of Power BI Desktop that's installed on the VM. You can't go across domains to upload a report.
+    Use the version of Power BI Desktop that's installed on the VM. You can't go across domains to upload a report.
 
 3. In the Fields pane, expand the Customers table and drag the Occupation field to Report level filters.
 

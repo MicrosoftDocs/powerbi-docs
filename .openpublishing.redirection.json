@@ -586,6 +586,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/service-connect-to-google-analytics.md",
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-marketing.md",
             "redirect_url": "/power-bi/service-connect-to-services",
             "redirect_document_id": false
@@ -794,6 +799,26 @@
             "source_path": "powerbi-docs/developer/embed-sample-for-customers-sovereign-clouds.md",
             "redirect_url": "/power-bi/developer/embed-sample-for-customers-national-clouds",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/walkthrough-push-data-register-app-with-azure-ad.md",
+            "redirect_url": "/power-bi/developer/register-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-premium.md",
+            "redirect_url": "/power-bi/service-premium-what-is",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-premium-large-datasets.md",
+            "redirect_url": "/power-bi/service-premium-what-is",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-premium-understand-how-it-works.md",
+            "redirect_url": "/power-bi/service-premium-capacity-optimize",
+            "redirect_document_id": false
         }
     ]
 }

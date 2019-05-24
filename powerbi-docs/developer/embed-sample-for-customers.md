@@ -1,15 +1,15 @@
 ---
 title: Embedded analytics to embed Power BI content in your application for your customers
 description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your customers. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
-author: markingmyname
-ms.author: maghan 
+author: rkarlin
+ms.author: rkarlin 
 manager: kfile
 ms.reviewer: nishalit
 ms.topic: tutorial
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 02/05/2019
+ms.date: 04/02/2019
 #Customer intent: As an ISV developer, I want to embed a report, dashboard or tile into an application so that my customers can share data.
 ---
 
@@ -188,23 +188,19 @@ To get the **ApplicationSecret**, follow these steps:
 
 2. In the left-hand navigation pane, select **All services** and then select **App registrations**.
 
-    ![App registration search](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+    ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
 3. Select the application that needs to use the **ApplicationSecret**.
 
-    ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Choose an app](media/embed-sample-for-customers/embed-sample-for-customers-0038.png)
 
-4. Select **Settings**.
+4. Select **Certificates and secrets** under **Manage**.
 
-    ![Select Settings](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
-
-5. Select **Keys**.
-
-    ![Select Keys](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+5. Select **New client secrets**.
 
 6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
 
-    ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Key value](media/embed-sample-for-customers/embed-sample-for-customers-042.png)
 
 ### Tenant
 

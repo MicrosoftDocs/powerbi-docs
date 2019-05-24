@@ -1,7 +1,7 @@
 ---
 title: How to find your report server product key
 description: Learn how you can find your Power BI Report Server product key to install your server in a production environment.
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/24/2018
-ms.author: maghan
+ms.author: maggies
 
 ---
 # How to find your report server product key

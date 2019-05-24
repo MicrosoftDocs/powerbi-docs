@@ -13,11 +13,11 @@ ms.service: powerbi
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2018
+ms.date: 05/13/2019
 ms.author: mihart
 #As a Power BI consumer, I want to get a quick lesson on what I can do with Power BI service so that I can get up and running quickly.
 ---
-<!-- once the sample aps are live, change this so consumers can follow along -->
+<!-- once the sample apps are live, change this so consumers can follow along -->
 # Quickstart: learn about the Power BI capabilities for ***consumers***
 In this quickstart, you'll learn how to interact with Power BI to discover data-driven business insights. This article isn't intended to be a deep dive, but rather a quick trip through many of the actions available for Power BI **consumers**.
 
@@ -182,7 +182,7 @@ A Power BI visualization is constructed using data from underlying datasets. If 
 1. In Power BI service, open a report and select a visual.  
 2. To display the data behind the visual, select the ellipsis (...) and choose **Show data**.
    
-   ![select Show Data](./media/end-user-show-data/power-bi-show-data2.png)
+   ![select Show Data](./media/end-user-show-data/power-bi-explore-show-data.png)
 
 This has been a quick overview of just some of the things **consumers** can do with Power BI service.  
 

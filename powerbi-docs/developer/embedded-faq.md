@@ -1,8 +1,8 @@
 ---
 title: Frequently asked questions about Power BI Embedded
 description: Browse a list of frequently asked questions and answers about Power BI Embedded.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -36,7 +36,7 @@ Power BI is a software-as-a-service analytics solution that gives organizations 
 
 Power BI Premium is capacity geared toward enterprises, who want a complete BI solution that provides a single view of its organization, partners, customers, and suppliers. Power BI Premium helps your organization make decisions. Power BI Premium is a SaaS product and comes with the ability for users to consume content through the Power BI portal, mobile app, and through internally developed apps.
 
-Power BI Embedded is for ISVs or developers who are building applications and want to embed visuals into those applications. Power BI Embedded helps your customers make decisions because Power BI Embedded is for application developers, customers of that application can consume content stored on Power BI Embedded capacity, including anyone inside or outside the organization. Power BI Embedded capacity content can't be shared through one-click publish to Web or one-click publish to SharePoint, and it doesn't support SSRS reports.
+Power BI Embedded is for ISVs or developers who are building applications and want to embed visuals into those applications. Power BI Embedded helps your customers make decisions because Power BI Embedded is for application developers, customers of that application can consume content stored on Power BI Embedded capacity, including anyone inside or outside the organization. Power BI Embedded capacity content can't be shared through one-click publish to Web or one-click publish to SharePoint.
 
 ### What is the Microsoft recommendation for when a customer should buy Power BI Premium vs. Power BI Embedded?
 
@@ -170,6 +170,12 @@ var userAssertion = new AD.UserAssertion(userAccessToken);
 var clientAssertion = new AD.ClientAssertionCertificate(MyAppId, MyAppCertificate)
 var authenticationResult = await context.AcquireTokenAsync(resourceId, clientAssertion, userAssertion);
 ```
+
+### What object ID is the service principal object ID?
+
+The *Object ID* from the main screen of a registered app is the object ID for the app.
+
+The object ID found in the *Managed application in local directory > Properties* section is the service principal object ID you need to use. This object ID is to reference a service principal for operations or to make changes to the service principal object ID. Such as applying a service principal as an admin to a workspace.
 
 ### How is Power BI Embedded different from other Azure services?
 

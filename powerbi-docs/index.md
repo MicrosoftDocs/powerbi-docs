@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.author: maggies
 author: maggiesMSFT
 ms.topic: hub-page
-ms:date: 10/26/2018
+ms:date: 05/10/2019
 ---
 <div id="main" class="v2">
     <div class="container">

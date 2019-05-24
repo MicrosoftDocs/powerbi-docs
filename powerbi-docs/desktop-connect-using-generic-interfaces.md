@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -48,7 +48,7 @@ The following list details a few examples of data sources to which **Power BI De
 | ODBC |Couchbase DB |[Couchbase and Power BI](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
 | ODBC |DynamoDB |[DynamoDB ODBC driver](http://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
 | ODBC |Google BigQuery |[BigQuery ODBC driver](http://www.simba.com/drivers/bigquery-odbc-jdbc/) |
-| ODBC |Hbase |[Hbase ODBC driver](http://www.simba.com/drivers/hbase-odbc-jdbc/) |
+| ODBC |HBase |[HBase ODBC driver](http://www.simba.com/drivers/hbase-odbc-jdbc/) |
 | ODBC |Hive |[Hive ODBC driver](http://www.simba.com/drivers/hive-odbc-jdbc/) |
 | ODBC |IBM Netezza |[IBM Netezza information](https://www.ibm.com/support/knowledgecenter/SSULQD_7.2.1/com.ibm.nz.datacon.doc/c_datacon_plg_overview.html) |
 | ODBC |Presto |[Presto ODBC driver](http://www.simba.com/drivers/presto-odbc-jdbc/) |
