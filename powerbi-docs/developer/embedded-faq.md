@@ -20,7 +20,7 @@ ms.date: 05/22/2019
 
 ### What is Power BI Embedded?
 
-[Microsoft Power BI Embedded (PBIE)](azure-pbie-what-is-power-bi-embedded.md)allows application developers to embed stunning, fully interactive reports into their applications without having to build their own data visualizations and controls from scratch.
+[Microsoft Power BI Embedded (PBIE)](azure-pbie-what-is-power-bi-embedded.md) allows application developers to embed stunning, fully interactive reports into their applications without having to build their own data visualizations and controls from scratch.
 
 ### Who is the target audience for Power BI Embedded?
 
