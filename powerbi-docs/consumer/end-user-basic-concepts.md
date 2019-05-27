@@ -210,7 +210,8 @@ I hope this article gave you an understanding of the building blocks that make u
 
 - Take a [tour of Power BI service](end-user-experience.md)
 
-- Read the [overview of Power BI written especially for consumers](end-user-consumer.md)    
+- Read the [overview of Power BI written especially for consumers](end-user-consumer.md)
 
-- Watch a video in which Will reviews the basic concepts and gives a tour of Power BI service. 
-- <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
+- Watch a video in which Will reviews the basic concepts and gives a tour of Power BI service.
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
