@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/22/2019 
+ms.date: 05/27/2019 
 ---
 
 # Frequently asked questions about Power BI Embedded
@@ -106,6 +106,13 @@ Capacity provisioning (scale/resume/create) may fail. You can use the Get Detail
 
 With the [Multi-geo (Preview)](embedded-multi-geo.md) feature, you can purchase a [Power BI Embedded capacity](azure-pbie-create-capacity.md) in a different region than your Power BI home tenant location
 
+### Why can’t I see a workspace although I have permissions?
+
+When a user is granted permissions to a workspace, app, or artifact, it might not be immediately available through API calls.
+The result can either be a missing artifact in a 'GET' API response, or an error when trying to use the artifact.
+The user can resolve this issue by calling [refreshUserPermissions API](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions), which updates the user permissions.
+
+
 ### How can I find my PBI tenant region?
 
 You can use the PBI portal to find your PBI Tenant region.
@@ -128,7 +135,7 @@ Power BI requires you to sign up with an organizational account. Trying to sign 
 
 Yes, there are Powershell cmdlets and Azure Resource Manager REST APIs you can use to create and manage PBIE resources.
 
-* [Rest APIs](https://docs.microsoft.com/rest/api/power-bi-embedded/)
+* [Rest APIs](https://docs.microsoft.com/rest/api/power-bi-embedded/) 
 * [Powershell cmdlets](https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/)
 
 ### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
@@ -187,10 +194,6 @@ You must have a Power BI account before purchasing Power BI Embedded in Azure. Y
 * Pause/resume service
 
 Use PowerBI.com to assign/un-assign workspaces to your Power BI Embedded capacity.
-
-### What are the supported deploy regions?
-
-Australia Southeast, Brazil South, Canada Central, East US 2, India West, Japan East, North Central US, North Europe, South Central US, Southeast Asia, UK South, West Europe, West US, and West US 2.
 
 ### What content pack data types can you embed?
 
