@@ -157,7 +157,7 @@ Having a treemap that shows us only a postal code isn't informative.  So let's e
 
 As you work in Drill mode, you get to decide how drill down and expanding impacts the other visualizations on the page.
 
-By default, drilling won't filter other visuals in a report. But this feature can be enabled in Power BI Desktop and Power BI service.
+By default, drilling won't filter other visuals in a report. You can enable this feature in Power BI Desktop and Power BI service.
 
 1. In Desktop, select the **Format** tab and select the checkbox for **Drilling filters other visuals**.
 
@@ -176,15 +176,15 @@ By default, drilling won't filter other visuals in a report. But this feature ca
 
 ## Learn about the hierarchy axis and hierarchy group
 
-You can think of the hierarchy axis and the hierarchy group as the mechanisms that you can use to increase and decrease the granularity of data you want to view. Any data that can be organized into categories and subcategories qualifies as having a hierarchy including dates and times.
+You can think of the hierarchy axis and the hierarchy group as the mechanisms that you can use to increase and decrease the granularity of data you want to view. Any data that you can organize into categories and subcategories qualifies as having a hierarchy including dates and times.
 
 You can create a visualization in Power BI to have a hierarchy by selecting one or more data fields to add to either the **Axis** well or the **Group** well. Then, add the data you want to examine as data fields in the **Values** well. You'll know if your data is hierarchical if *Drill mode* icons appear on the upper-left and right corners of your visualization.
 
 Essentially, it's convenient to think of two types of hierarchical data:
 
-- Date and time data - If you have a data field with a DateTime data type, you already have hierarchical data. Power BI automatically creates a hierarchy for any data field whose values can be parsed into a [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx) structure. You only need to add one DateTime field to the **Axis** or **Group** well.
+- Date and time data - If you have a data field with a DateTime data type, you already have hierarchical data. Power BI automatically creates a hierarchy for any data field. YOu can parse the values into a [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx) structure. You only need to add one DateTime field to the **Axis** or **Group** well.
 
-- Categorical data - If your data is derived from collections that contain subcollections, or otherwise has rows of data that share common values, you have hierarchical data.
+- Categorical data - If Power BI derives your data from collections that contain subcollections, or otherwise has rows of data that share common values, you have hierarchical data.
 
 Power BI lets you expand by one or by all subsets. You can drill down through your data to see a single subset at each level, or you can drill down to see all of the subsets simultaneously at each level. For example, you can drill down for a specific year, or see all of the results for each year as you go down the hierarchy.
 
@@ -237,7 +237,7 @@ For this example:
     | Well | Field |
     | ---- | ----- |
     | Value |Sales<br>\|\_ Total Units This Year |
-    | Axis | Store<br>\|\_ Territory<br>\|\_ City<br>\|\_ Postal Code<br>\|\_ Name
+    | Axis | Store<br>\|\_ Territory<br>\|\_ City - you may need to drag City from the **Legend** well to the **Axis** well.<br>\|\_ Postal Code<br>\|\_ Name |
 
     ![Screenshot of the bar chart showing Total units this year by territory.](media/end-user-drill/power-bi-hierarchical-axis-category-1.png)
 
