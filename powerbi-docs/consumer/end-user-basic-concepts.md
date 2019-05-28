@@ -20,7 +20,7 @@ LocalizationGroup: Get started
 
 This article assumes that you've already read the [Power BI overview](../power-bi-overview.md) and have identified yourself as a Power BI ***consumer***. Consumers receive Power BI content, like dashboards and reports, from colleagues. Consumers use Power BI service, which is the website-based version of Power BI.
 
-You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop." It is a stand-alone tool used by *designers* who build and share dashboards and reports with you. It's important to know that there are other Power BI tools out there. As long as you're a consumer, you'll only work with Power BI service. This article applies only to Power BI service.
+You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop." It is the stand-alone tool used by *designers* who build and share dashboards and reports with you. It's important to know that there are other Power BI tools out there. As long as you're a consumer, you'll only work with Power BI service. This article applies only to Power BI service.
 
 ## Terminology and concepts
 
@@ -30,7 +30,7 @@ This article isn't a visual tour of Power BI, nor is it a hands-on tutorial. Ins
 
 Most Power BI consumers get Power BI service because 1) their company buys licenses and 2) an admin assigns the licenses to employees like you.
 
-To get started, open a browser and enter **app.powerbi.com**. The first time you open Power BI service, you'll see something the following:
+To get started, open a browser and enter **app.powerbi.com**. The first time you open Power BI service, you'll see something like the following:
 
 ![A screenshot of the Welcome screen for Power BI service.](media/end-user-basic-concepts/power-bi-open.png)
 
@@ -158,7 +158,7 @@ What are some purposes for dashboards?  Here are just a few:
 
 - to monitor the most-important info about your business
 
-- to ensure all colleagues are on the same page, viewing and using the same info
+- to ensure all colleagues are on the same page; viewing and using the same info
 
 - to monitor the health of a business or product or business unit or marketing campaign, and so on
 
@@ -196,7 +196,7 @@ You can get apps in a few different ways:
 
 - The app designer can send you a direct link to an app.
 
-- You can search for it in Microsoft AppSource, where you see all the apps that you can use.
+- You can search for it in [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi), where you see all the apps that you can use.
 
 In Power BI on your mobile device, you can only install apps from a direct link, and not from AppSource. If the app designer installs the app automatically, you'll see it in your list of apps.
 

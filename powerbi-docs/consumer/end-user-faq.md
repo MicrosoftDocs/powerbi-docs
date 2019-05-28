@@ -20,7 +20,7 @@ LocalizationGroup: Get started
 
 ## What is Microsoft Power BI service?
 
-Power BI service is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of cloud-based and on-premises data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life. Read more about [What is Power BI](../power-bi-overview.md).
+Power BI service is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of cloud-based and on-premises data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life. Read more about [Power BI](../power-bi-overview.md).
 
 ## What’s the difference between Power BI Pro and Power BI Premium?
 
@@ -32,7 +32,7 @@ Power BI Premium provides dedicated capacity to deliver more consistent performa
 
 Theses a grace period after a Power BI Pro license expires. For licenses that are part of a volume license purchase, the grace period is 90 days. If you purchased the license directly, the grace period is 30 days.
 
-Power BI Pro has the same subscription lifecycle as Office 365. For more information, see [What happens to my data and access when my Office 365 for business subscription ends?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
+Power BI Pro has the same subscription lifecycle as Office 365. For more info, see [What happens to my data and access when my Office 365 for business subscription ends?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
 ## What if I have questions about Power BI Premium?
 
@@ -40,11 +40,11 @@ For questions related to Power BI Premium, see [Power BI Premium FAQ](../service
 
 ## How do I find out who in my organization has a Power BI account?
 
-You can view the Azure Active Directory Integrated Applications report for Power BI to see the active users within your organization. The Azure AD report doesn't indicate what type of license each user has. It only reports which users have signed in to Power BI and when they logged in. For more information, see [Find Power BI users that have signed in](../service-admin-access-usage.md).
+You can view the Azure Active Directory Integrated Applications report for Power BI to see the active users within your organization. The Azure AD report doesn't indicate what type of license each user has. It only reports which users have signed in to Power BI and when they logged in. For more info, see [Find Power BI users that have signed in](../service-admin-access-usage.md).
 
 ## What is Power BI Desktop?
 
-Power BI Desktop is a free application you can install right on their own computers. Power BI Desktop works cohesively with the Power BI service.  Data scientists, admins, and developers work with Power BI Desktop to produce reports and make them available to Power BI service users, like you. Read more about [What is Power BI Desktop](../desktop-what-is-desktop.md).
+Power BI Desktop is a free application you can install right on your own computers. Power BI Desktop works cohesively with the Power BI service.  Data scientists, admins, and developers work with Power BI Desktop to produce reports and make them available to Power BI service users, like you. Read more about [What is Power BI Desktop](../desktop-what-is-desktop.md).
 
 ## What do I need to use Power BI service?
 
@@ -78,7 +78,7 @@ You can download the Power BI mobile apps from their respective stores, also for
 
 ## Where do I get started with Power BI?
 
-The following resources are available to help get your started:
+The following resources are available to help get you started:
 
 * [Power BI Blog](http://blogs.msdn.com/b/powerbi/)
 * [Webinars](../webinars.md)
@@ -111,7 +111,7 @@ Learn more about Power BI security, privacy, and compliance here:
 
 * This [Power BI Security](http://go.microsoft.com/fwlink/?LinkId=829185) white paper
 
-* Our [Power BI security support](../service-admin-power-bi-security.md) article
+* This [Power BI security support](../service-admin-power-bi-security.md) article
 
 ## How do I undo in Power BI?
 
