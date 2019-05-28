@@ -9,7 +9,7 @@ featuredvideoid: SYk_gWrtKvM
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/01/2019
+ms.date: 05/28/2019
 LocalizationGroup: Visualizations 
 ---
 
@@ -47,7 +47,7 @@ Try [changing the type of visualization](power-bi-report-change-visualization-ty
 In Power BI service, when you have the visualization the way you want it, you can [pin it to a dashboard](../service-dashboard-pin-tile-from-report.md) as a tile. If you change the visualization being used in the report after you pin it, the tile on the dashboard doesn't change -- if it was a line chart, it stays a line chart, even if you changed it to a Doughnut chart in the report.
 
 ## Limitations and considerations
-- Depending on the data source and the number of measures and columns, a visual may load slowly.  We recommend limiting visuals to 10-20 total fields, both for readability and performance reasons. 
+- Depending on the data source and the number of fields (measures or columns), a visual may load slowly.  We recommend limiting visuals to 10-20 total fields, both for readability and performance reasons. 
 
 - The upper limit for visuals is 100 fields (measures or columns). If your visual fails to load, reduce the number of fields.   
 
