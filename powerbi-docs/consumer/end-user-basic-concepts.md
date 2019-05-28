@@ -50,17 +50,17 @@ _______________________________________________________
 
 ### Introduction to building blocks
 
-For a Power BI consumer, the five building blocks are: ***visualizations***, ***dashboards***, ***reports***, ***apps***, and ***datasets***. These are sometimes referred to as *Power BI* ***content***. *Content* exists in ***workspaces***. A typical workflow involves all of the building blocks: A Power BI *designer* (yellow in diagram below) collects data from *datasets*, brings it into Power BI for analysis, creates *reports* full of *visualizations* that highlight interesting facts and insights, pins visualizations from reports to a dashboard and shares the reports and dashboards with *consumers* like you (black in diagram below). The *designer* shares them in the form of *apps* or other types of shared content.
+For a Power BI consumer, the five building blocks are: ***visualizations***, ***dashboards***, ***reports***, ***apps***, and ***datasets***. These are sometimes referred to as *Power BI* ***content***. *Content* exists in ***workspaces***. A typical workflow involves all of the building blocks: A Power BI *designer* (yellow in diagram below) collects data from *datasets*, brings it into Power BI for analysis, creates *reports* full of *visualizations* that highlight interesting facts and insights, pins visualizations from reports to a dashboard, and shares the reports and dashboards with *consumers* like you (black in diagram below). The *designer* shares them in the form of *apps* or other types of shared content.
 
 ![A basic Power BI workflow chart.](media/end-user-basic-concepts/power-bi-workflow.png)
 
-At its most basic.
+At its most basic:
 
 - ![A screenshot of the visualization icon.](media/end-user-basic-concepts/visual.png) a ***visualization*** (or *visual*), is a type of chart built by Power BI *designers*. The visuals display the data from *reports* and *datasets*. Typically, *designers* build the visuals in Power BI Desktop.
 
     For more info, see [Interact with Visuals in reports, dashboards, and apps](end-user-visualizations.md).
 
-- ![A screenshot of the database icon.](media/end-user-basic-concepts/power-bi-dataset-icon.png) A *dataset* is container of data. For example, it might be an Excel file from the World Health Organization. It could also be a company-owned database of customers or it might be a Salesforce file.  
+- ![A screenshot of the database icon.](media/end-user-basic-concepts/power-bi-dataset-icon.png) A *dataset* is a container of data. For example, it might be an Excel file from the World Health Organization. It could also be a company-owned database of customers or it might be a Salesforce file.  
 
 - ![A screenshot of the dashboard icon.](media/end-user-basic-concepts/dashboard.png) A *dashboard* is a single screen with interactive visuals, text, and graphics. A dashboard collects your most important metrics, on one screen, to tell a story or answer a question. The dashboard content comes from one or more reports and one or more datasets.
 
@@ -82,7 +82,7 @@ A *dataset* is a collection of data that *designers* import or connect to and th
 
 Each dataset represents a single source of data. For example, the source could be an Excel workbook on OneDrive, an on-premises SQL Server Analysis Services tabular dataset, or a Salesforce dataset. Power BI supports many different data sources.
 
-When a designer shares an app with you, you can see which the designer included datasets with the app.
+When a designer shares an app with you, you can see which datasets the designer included datasets with the app.
 
 ![Screenshot of the Power BI user interface showing Apps selected and arrow pointing to the Datasets section on canvas.](media/end-user-basic-concepts/power-bi-dataset-list.png)
 
@@ -136,7 +136,7 @@ What you can do with **ONE** report...
 
 - You can create it using data from only one dataset.  
 
-- You can make it part of multiple apps
+- You can make it part of multiple apps.
 
   ![A graphic showing the relationships for a report.](media/end-user-basic-concepts/drawing5.png)
 
