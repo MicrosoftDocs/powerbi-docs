@@ -1,23 +1,23 @@
 ---
-title: Using slicers Power BI Desktop
+title: Using slicers in Power BI Desktop reports
 description: You can use slicers in Power BI Desktop to filter, highlight, and customize reports
-author: mihart
-manager: kvivek
+author: davidi
+manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 05/13/2019
 ms.author: mihart
 
 LocalizationGroup: Create reports
 ---
 # Using slicers Power BI Desktop
 
-You can use a **slicer** in **Power BI Desktop** to filter the results of visuals on your report page. And with slicers, you can easily adjust the filter that's applied by interacting with the slicer itself. You can also specify options for how your slicer appears, and how you interact with it. The following image shows a slicer, with its *type* drop-down visible. 
+You can use a **slicer** to filter the results of visuals on your report page. And with slicers, you can easily adjust the filter that's applied by interacting with the slicer itself. You can also specify options for how your slicer appears, and how you interact with it. The following image shows a slicer, with its *type* drop-down visible. 
 
-![slicers in Desktop](./media/desktop-slicers/desktop-slicers_01.png)
+![slicers in Desktop](media/desktop-slicers/desktop-slicers_01.png)
 
 A slicer can be shown from one of various types:
 

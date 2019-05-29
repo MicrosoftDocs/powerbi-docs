@@ -8,20 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/05/2018
+ms.date: 05/29/2019
 ms.author: mihart
 
-LocalizationGroup: Create reports
+LocalizationGroup: Visualizations
 ---
 # Use the Matrix visual in Power BI
-With the **Matrix** visual feature, you can create matrix visuals (sometimes also referred to as *tables*) in **Power BI Desktop** and **Power BI service** reports and cross-highlight elements within the matrix with other visuals. In addition, you can select rows, columns, and even individual cells and cross-highlight. Individual cells and multiple cell selections can by copied and pasted into other applications. Lastly, to make better use of layout space, the matrix visual supports a stepped layout.
+The **matrix** visual is similar to a **table**.  A table supports 2 dimensions and the data is flat, meaning duplicate values are displayed and not aggregated. A matrix makes it easier to display data meaningfully across multiple dimensions -- it supports a stepped layout. The matrix automatically aggregates the data and enables drill down. 
+
+You can create matrix visuals in **Power BI Desktop** and **Power BI service** reports and cross-highlight elements within the matrix with other visuals on that report page. For example, you can select rows, columns, and even individual cells and cross-highlight. Also, individual cells and multiple cell selections can by copied and pasted into other applications. 
 
 ![](media/desktop-matrix-visual/matrix-visual_2a.png)
 
 There are many features associated with the matrix, and we'll go through them in the following sections of this article.
 
-## Report themes
-Both matrix and table visuals reflect styling (including colors) from the applied **Report Theme**. These may not be the colors you expect for your matrix visual, which you can change in your **Report Theme** configuration. For more information, see [**Use Report Themes in Power BI Desktop**](../desktop-report-themes.md) for more information about themes.
 
 ## Understanding how Power BI calculates totals
 
@@ -60,42 +60,44 @@ With the **Matrix** visual, you can do all sorts of interesting drill down activ
 ### Drill down on row headers
 In the **Visualizations** pane, when you add multiple fields to the **Rows** section of the **Fields** well, you enable drill down on the rows of the matrix visual. This is similar to creating a hierarchy, which then allows you to drill down (and then back up) through that hierarchy, and analyze the data at each level.
 
-In the following image, the **Rows** section contains *Category* and *SubCategory*, creating a grouping (or hierarchy) in the rows that we can drill through.
+In the following image, the **Rows** section contains *Sales stage* and *Opportunity size*, creating a grouping (or hierarchy) in the rows that we can drill through.
 
-![](media/desktop-matrix-visual/matrix-visual_4.png)
+![](media/desktop-matrix-visual/power-bi-rows-matrix.png)
 
 When the visual has grouping created in the **Rows** section, the visual itself displays the *drill* and *expand* icons in the top-left corner of the visual.
 
-![](media/desktop-matrix-visual/matrix-visual_5.png)
+![](media/desktop-matrix-visual/power-bi-matrix-drilldown.png)
 
-Similar to the drill and expand behavior in other visuals, selecting those buttons lets us drill down (or back up) through the hierarchy. In this case, we can drill down from *Category* to *SubCategory*, as shown in the following image, where the drill down one level icon (the pitchfork) has been selected.
+Similar to the drill and expand behavior in other visuals, selecting those buttons lets us drill down (or back up) through the hierarchy. In this case, we can drill down from *Sales stage* to *Opportunity size*, as shown in the following image, where the drill down one level icon (the pitchfork) has been selected.
 
-![](media/desktop-matrix-visual/matrix-visual_6.png)
+![](media/desktop-matrix-visual/power-bi-matrix-drill3.png)
 
 In addition to using those icons, you can right-click on any of those row headers and drill down by selecting from the menu that appears.
 
-![](media/desktop-matrix-visual/matrix-visual_7.png)
+![](media/desktop-matrix-visual/power-bi-matrix-menu.png)
 
 Notice there are a few options from the menu that appears, which generate different results:
 
-Selecting **Drill Down** expands the matrix for *that* row level, *excluding* all other row headings except the row header that was right-clicked. In the following image, *Computers* was right-clicked, and **Drill Down** was selected. Notice that other top-level rows no longer appear in the matrix. This way to drill is a useful feature, and becomes especially cool when we get to the **cross-highlighting** section.
+Selecting **Drill Down** expands the matrix for *that* row level, *excluding* all other row headings except the row header that was right-clicked. In the following image, *Proposal* was right-clicked, and **Drill Down** was selected. Notice that other top-level rows no longer appear in the matrix. This way to drill is a useful feature, and becomes especially cool when we get to the **cross-highlighting** section.
 
-![](media/desktop-matrix-visual/matrix-visual_8.png)
+![](media/desktop-matrix-visual/power-bi-drill-down-matrix.png)
 
-You can click the **Drill up** icon to get back to the previous top-level view. If you then select **Show Next Level** from the right-click menu, you get an alphabetical listing of all the next-level items (in this case, the *SubCategory* field), without the higher-level hierarchy categorization.
+You can click the **Drill up** icon to get back to the previous top-level view. If you then right-click *Proposal* and select **Show Next Level**, you get an ascending listing of all the next-level items (in this case, the *Opportunity size* field), without the higher-level hierarchy categorization.
 
-![](media/desktop-matrix-visual/matrix-visual_8a.png)
+![](media/desktop-matrix-visual/power-bi-next-level-matrix.png)
 
-When you click on the **Drill up** icon in the upper-left corner to have the matrix show all top-level categories, then right-click again and select **Expand to next level**, you see the following visual.
+When you click on the **Drill up** icon in the upper-left corner to have the matrix show all top-level categories, then right-click *Proposal* again and select **Expand to next level**, you see all the values for both levels of the hierarchy - *Sales stage* and *Opportunity size*.
 
-![](media/desktop-matrix-visual/matrix-visual_9.png)
+![](media/desktop-matrix-visual/power-bi-matrix-expand-next.png)
 
-You can also use the **Include** and **Exclude** menu items to keep (or remove, respectively) the right-clicked row (and any subcategories) from the matrix.
+You can also use the **Expand** menu item to control the display further.  For example, right-click *Proposal* and select  **Expand** > **Selection**. Power BI displays one total row for each *Sales stage* and all the *Opportunity size* options for *Proposal*.
+
+![](media/desktop-matrix-visual/power-bi-matrix-expand.png)
 
 ### Drill down on column headers
 Similar to the ability to drill down on Rows, you can also drill down on **Columns**. In the following image, you can see that there are two fields in the **Columns** field well, creating a hierarchy similar to what we used for the rows earlier in this article. In the **Columns** field well, we have *Class* and *Color*.
 
-![](media/desktop-matrix-visual/matrix-visual_10.png)
+![](media/desktop-matrix-visual/power-bi-matrix-row.png)
 
 In the **Matrix** visual, when we right-click a column, we see the option to drill down. In the following image, we right-click on *Deluxe* and select **Drill Down**.
 
