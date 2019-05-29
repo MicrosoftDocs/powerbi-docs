@@ -27,7 +27,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
 ## May 2019
-* [Custom navigation](service-create-distribute-apps) for Power BI Apps.
+* [Custom navigation](service-create-distribute-apps.md) for Power BI Apps.
 * Additional attachments types (PPTX, XLSX, DOCX, CSV, XML) available for e-mail subcriptions within paginated reports.
 
 ## Previous months (2019)
