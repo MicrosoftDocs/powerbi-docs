@@ -21,7 +21,10 @@ LocalizationGroup: Get started
 Power BI can be simple and fast, capable of creating quick insights from an Excel spreadsheet or a local database. But Power BI is also robust and enterprise-grade, ready for extensive modeling and real-time analytics, as well as custom development. It can be your personal report and visualization tool, and also serve as the analytics and decision engine for group projects, divisions, or entire corporations.
 
 ## The parts of Power BI
-Power BI consists of a Windows desktop application called **Power BI Desktop**, an online SaaS (*Software as a Service*) service called the **Power BI service**, and Power BI **mobile apps** for Windows, iOS, and Android devices.
+Power BI consists of: 
+- A Windows desktop application called **Power BI Desktop**
+- An online SaaS (*Software as a Service*) service called the **Power BI service** 
+- Power BI **mobile apps** for Windows, iOS, and Android devices
 
 ![Power BI Desktop, service, mobile](media/power-bi-overview/power-bi-blocks.png)
 
@@ -55,7 +58,7 @@ Here's a detailed [comparison of Power BI Desktop and the Power BI service](serv
 But what if you're not ready to move to the cloud, and want to keep your reports behind a corporate firewall?  Read on.
 
 ## On-premises reporting with Power BI Report Server
-Create, deploy, and manage Power BI, mobile and paginated reports on premises with the range of ready-to-use tools and services that Power BI Report Server provides.
+Create, deploy, and manage Power BI mobile and paginated reports on premises with the range of ready-to-use tools and services that Power BI Report Server provides.
 
 ![diagram for on-premises](media/power-bi-overview/power-bi-report-server2.png)
 
