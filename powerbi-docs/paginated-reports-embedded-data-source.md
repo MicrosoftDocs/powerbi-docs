@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/05/2018
+ms.date: 05/16/2019
 ---
 
 # Create an embedded data source for paginated reports in the Power BI service (Preview)
@@ -18,12 +18,13 @@ In this article, you learn how to create and modify an embedded data source for 
 - Azure SQL Database and Data Warehouse
 - SQL Server
 - SQL Server Analysis Services
-- Azure Analysis Services
+- Oracle 
+- Teradata 
 
-You may also connect to the following data sources in Power BI Report Builder, but can't yet publish them to the Power BI service
-- Power BI Premium Datasets (Preview)
-- Oracle (Preview)
-- Teradata (Preview)
+For these data sources, use the [SQL Server Analysis Services connection](service-premium-connect-tools.md) option:
+
+- Azure Analysis Services
+- Power BI Premium datasets
 
 Paginated reports connect to on-premises data sources by way of a gateway. You set up the gateway after you publish the report to the Power BI service. Read more about [Power BI gateways](service-gateway-getting-started.md). 
 

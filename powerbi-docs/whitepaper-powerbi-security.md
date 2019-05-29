@@ -311,7 +311,7 @@ To monitor data integrity for data in process, Power BI uses HTTPS, TCP/IP and T
 
 ## User Authentication to Data Sources
 
-With each data source, a user establishes a connection based on his or her login, and accesses the data with those credentials. Users can then create queries, dashboards, and reports based on the underlying data.
+With each data source, a user establishes a connection based on their login, and accesses the data with those credentials. Users can then create queries, dashboards, and reports based on the underlying data.
 
 When a user shares queries, dashboards, reports, or any visualization, access to that data and those visualizations is dependent on whether the underlying data sources support Role Level Security (RLS).
 
