@@ -64,7 +64,8 @@ No longer use a report as often as you used to?  You can unfavorite it. When you
    ![Favorites screen](./media/end-user-favorite/power-bi-unfavorites-screen.png)
 2. Select the yellow star next to the content to unfavorite.
 
-> **NOTE**: You can also unfavorite a dashboard, report, or app itself. Just open and de-select the yellow icon.   
+> [!NOTE]
+> You can also unfavorite a dashboard, report, or app itself. Just open and de-select the yellow icon.   
 > 
 > 
 ## Limitations and considerations
