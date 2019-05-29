@@ -1,6 +1,6 @@
 ---
 title: What is Power BI?
-description: Overview of Power BI and how the different parts fit together - Power BI Desktop, Power BI service, Power BI mobile, Report Server, Power BI embedded.
+description: Overview of Power BI and how the different parts fit together - Power BI Desktop, the Power BI service, Power BI mobile, Report Server, and Power BI embedded.
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
@@ -67,6 +67,6 @@ Power BI Report Server is a solution that you deploy behind your firewall and th
 Read more about [Power BI Report Server](report-server/get-started.md).
 
 ## Next steps
-- [Quickstart: Learn your way around Power BI service](service-the-new-power-bi-experience.md)   
+- [Quickstart: Learn your way around the Power BI service](service-the-new-power-bi-experience.md)   
 - [Tutorial: Get started with the Power BI service](service-get-started.md)
 - [Quickstart: Connect to data in Power BI Desktop](desktop-quickstart-connect-to-data.md)
