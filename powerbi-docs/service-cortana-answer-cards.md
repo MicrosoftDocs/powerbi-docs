@@ -16,10 +16,10 @@ LocalizationGroup: Create reports
 # Use Power BI service or Power BI Desktop to create a custom Answer Page for Cortana
 Use the full capabilities of Power BI to create special report pages, called *Cortana answer pages* (and sometimes called *Cortana answer cards*) designed specifically to answer Cortana questions.
 
-![](media/service-cortana-answer-cards/power-bi-cortana.png)
-
 > [!IMPORTANT]
 > Cortana integration is being deprecated in Power BI. Starting June 11, Cortana will no longer work for any dashboards and reports.
+
+![](media/service-cortana-answer-cards/power-bi-cortana.png)
 
 ## Before you begin
 You have four documents that guide you through setting up and using Cortana for Power BI. If you haven't already, start by reading article one. Article two is especially important because it describes some steps you'll need to take before you can begin using Cortana answer pages.
