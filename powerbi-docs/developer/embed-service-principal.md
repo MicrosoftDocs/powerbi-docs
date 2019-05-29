@@ -115,7 +115,7 @@ Different from the traditional use of a master account, using the service princi
 
 5. Add the service principal as an **admin** to the new workspace you created. You can manage this task through the [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) or with the Power BI service.
 
-    ![Add a service principal to a workspace](media/embed-service-principal/add-service-principal-in-the-UI.png)
+    ![Add a service principal as an admin to a workspace](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Now choose to embed your content within a sample application, or within your own application.
 
