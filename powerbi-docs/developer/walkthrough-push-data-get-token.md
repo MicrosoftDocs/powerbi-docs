@@ -25,7 +25,7 @@ This article requires Visual Studio 2015 or later.
 
 1. In Visual Studio, create a new C# **Console Application** project.
 
-2. Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). Your .Net apps need this package to get an authentication security token. 
+2. Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). Your .Net app needs this package to get an authentication security token. 
 
      a. Select **Tools** > **NuGet Package Manager** > **Package Manager Console**.
 
@@ -35,7 +35,7 @@ This article requires Visual Studio 2015 or later.
 
 4. Add the sample code listed after step 6 to Program.cs.
 
-5. Replace "{ClientID}", with the **Client ID** you got in the [previous series article](walkthrough-push-data-register-app-with-azure-ad.) when you registered your app.
+5. Replace "{ClientID}", with the **Client ID** you got in the [previous series article](walkthrough-push-data-register-app-with-azure-ad.md) when you registered your app.
 
 6. Run your console app and sign in to your Power BI account. 
 
