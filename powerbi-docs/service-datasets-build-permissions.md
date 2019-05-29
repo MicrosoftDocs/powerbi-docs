@@ -1,5 +1,5 @@
 ---
-title: Use datasets across workspaces (Preview) - Power BI
+title: Build permissions for shared datasets (Preview) - Power BI
 description: Learn how you can share a dataset with users across the organization. Then they can build reports based on your dataset in their own workspaces.
 author: maggiesMSFT
 manager: kfile
@@ -12,7 +12,7 @@ ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Use datasets across workspaces (Preview)
+# Build permissions for shared datasets (Preview)
 
 Learn how you can share a dataset with users across your organization. Then they can build reports based on your dataset in their own workspaces.
 
