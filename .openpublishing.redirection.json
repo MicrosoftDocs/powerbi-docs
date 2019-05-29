@@ -402,7 +402,7 @@
         },
         {
             "source_path": "powerbi-docs/desktop-slicers.md", 
-            "redirect_url": "/power-bi/visuals/desktop-slicers",
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-slicers",
             "redirect_document_id": true
         },
         {
@@ -517,6 +517,11 @@
         },
         {
             "source_path": "powerbi-docs/power-bi-visualization-slicers.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-slicers",
+            "redirect_document_id": true
+        },
+		        {
+            "source_path": "powerbi-docs/visuals/desktop-slicers.md", 
             "redirect_url": "/power-bi/visuals/power-bi-visualization-slicers",
             "redirect_document_id": true
         },
