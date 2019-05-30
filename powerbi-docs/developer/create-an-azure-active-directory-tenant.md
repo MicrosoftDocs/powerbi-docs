@@ -23,7 +23,7 @@ Your organization may already have an Azure AD tenant that you can use for your 
 
 ## Create an Azure Active Directory tenant
 
-To integrate Power BI into your custom application, you need to define an application within Azure AD, which requires an Azure AD directory. This directory is your *tenant*. If your organization doesn't have a tenant yet, because they aren't using Power BI or Office 365, then [you need to create one](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). You also need to create one if you don't want your application mixing with your organization's tenant, allowing you to keep things isolated.
+To integrate Power BI into your custom application, you need to define an application within Azure AD, which requires an Azure AD directory. This directory is your *tenant*. If your organization doesn't have a tenant yet, because they aren't using Power BI or Office 365, then [you need to set up a dev environment](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). You also need to create one if you don't want your application mixing with your organization's tenant, allowing you to keep things isolated.
 
 Or, you may just want to create a tenant for testing purposes.
 
@@ -41,7 +41,7 @@ To create a new Azure AD tenant:
 
 4. Select **Create**.
 
-5. Provide a **name for the organization** along with the **initial domain name**. Then select **Create**. Your directory is created.
+5. Provide a **Organization name** and a **Initial domain name**. Then select **Create**. Your directory is created.
 
     ![Org and domain](media/create-an-azure-active-directory-tenant/organization-and-domain.png)
 
@@ -50,7 +50,7 @@ To create a new Azure AD tenant:
 
 6. After directory creation is complete, select the information box to manage your new directory.
 
-Your directory is now created. Next, you re going to add tenant users.
+Next, you re going to add tenant users.
 
 ## Create Azure Active Directory tenant users
 
@@ -70,11 +70,11 @@ Now that you have a directory, let's create at least two users. One is a tenant 
 
 3. Select **All users** and then select **+ New user**.
 
-4. Provide a name and username for your tenant Global Admin. Change the **Directory role** to **Global administrator**. You can also show the temporary password. When you're done, select **Create**.
+4. Provide a **Name** and **User name** for your tenant Global Admin. Change the **Directory role** to **Global administrator**. You can also show the temporary password. When you're done, select **Create**.
 
     ![](media/create-an-azure-active-directory-tenant/global-admin.png)
 
-5. Do the same thing for a regular tenant user. You can use this account for your master embedding account. This time, for Directory role, leaves it as **User**. Note the password, then select **Create**.
+5. Do the same thing for a regular tenant user. You can use this account for your master embedding account. This time, for **Directory role**, leaves it as **User**. Note the password, then select **Create**.
 
     ![](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
 
