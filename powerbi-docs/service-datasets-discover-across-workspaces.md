@@ -1,5 +1,5 @@
 ---
-title: Copy reports from other workspaces (Preview) - Power BI
+title: Discover datasets from different workspaces (Preview) - Power BI
 description: Learn how you can share a dataset with users across the organization. Then they can build reports based on your dataset in their own workspaces.
 author: maggiesMSFT
 manager: kfile
@@ -7,22 +7,14 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 05/29/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Copy reports from other workspaces (Preview)
+# Discover datasets from different workspaces (Preview)
 
-Learn how you can share a dataset with users across your organization. Then they can build reports based on your dataset in their own workspaces.
-
-Business intelligence is a collaborative activity. It is important to establish standardized datasets that can be the 'one source of truth.' Discovering and reusing existing datasets is a key part of this. When report creators start with the official datasets to build reports, the organization has consistent data for decisions and a healthy data culture.
-
-Power BI makes it easy for report authors to find quality, official datasets they can use wherever they are in Power BI. As a dataset owner, you can certify or promote your datasets so others can discover them easily. You can keep control of who has access to the data by using the [Build permission](#build-permission-for-datasets). You can also make it easier to discover your dataset by [endorsing your dataset](service-datasets-promote.md). Tenant administrators have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
-
-## Discover datasets (Preview)
-
-When building a report on top of an existing dataset, the first step is to connect to the dataset, either in the Power service or Power BI Desktop. 
+Learn how you can find and use datasets from other workspaces to build reports in your own workspaces. To build a report on top of an existing dataset, the first step is to find the dataset, either in the Power service or Power BI Desktop.
 
 - In the Power BI service: **Get data** > **Published datasets**.
 - In Power BI Desktop: **Get data** > **Power BI datasets**.
@@ -48,21 +40,16 @@ You can save the report to the current workspace in the Power BI service, or pub
 
 ![Dataset actions](media/service-datasets-across-workspaces/power-bi-dataset-actions.png)
 
-## Build permission for datasets
+## Find an endorsed dataset
 
-The Build permission type is only relevant for datasets. With it, users can build new content on a dataset, such as reports, dashboards, pinned tiles from Q&A, and Insights Discovery. They can also build new content on the dataset outside Power BI, such as Excel sheets via Analyze in Excel, XMLA, and export.
+Promoted and certified datasets display *badges* that you see both when looking for a dataset and in the list of datasets in a workspace. 
 
-Users can get the permission in different ways:
+- In the Power BI service: **Get data** > **Published datasets**.
+- In Power BI Desktop: **Get data** > **Power BI datasets**.
 
-- A member of the workspace where the dataset resides can assign the permission to specific users or security groups in the Permission Center. Click the ellipsis (…) next to a dataset > **Manage Permissions**.
-- An admin or member of the workspace where the dataset resides can decide during app publishing that all users with permission for the app also get Build permission for the underlying datasets.
-- Say you have Reshare and Build permissions on a dataset. When you share a report or dashboard built on top of that dataset you can specify that the recipients also get Build permission for the underlying dataset.
+    In the **Select a dataset** dialog box, endorsed datasets top the list by default. 
 
-![Build permissions](media/service-datasets-across-workspaces/power-bi-dataset-build-permissions.png)
-
-Power BI introduced this permission in April 2019 as a complement to the existing permissions Read and Reshare. All users who already had Read permission for datasets via app permissions, sharing, or workspace access at that time also get Build permissions for those same datasets. They get Build permission automatically because Read permission already granted them the right to build new content on top of the dataset, by using Analyze in Excel, or Export. 
-
-With this more granular Build permission, you can choose who can only view the content in the existing report or dashboard and who can create content connected to the underlying datasets.
+    ![Promoted dataset](media/service-datasets-certify-promote/power-bi-dataset-promoted.png)
 
 ## Considerations and limitations
 
@@ -71,10 +58,11 @@ With this more granular Build permission, you can choose who can only view the c
 - You can create reports in app workspaces that are based on datasets in a different workspace. However, you can't create an app for a workspace that contains those datasets.
 - Free users in Desktop only see datasets from My Workspace and from Premium-based workspaces.
 - If a dataset is being used by a report outside of the dataset workspace, you can't delete that dataset. Instead, you see an error message.
+- “Publish to web” doesn’t work for a report based on a shared dataset. This is by design.
 
 ## Next steps
 
-- [Promote datasets](service-datasets-promote.md)
 - [Certify datasets](service-datasets-certify.md)
+- [Promote datasets](service-datasets-promote.md)
 - [Govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

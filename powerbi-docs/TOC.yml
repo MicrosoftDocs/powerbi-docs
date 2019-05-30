@@ -491,8 +491,10 @@
       items: 
       - name: "Use datasets across workspaces"
         href: service-datasets-across-workspaces.md
-      - name: "Certify and promote datasets"
-        href: service-datasets-certify-promote.md
+      - name: "Promote datasets"
+        href: service-datasets-promote.md
+      - name: "Certify datasets"
+        href: service-datasets-certify.md
       - name: "Control the use of datasets"
         href: service-datasets-admin-across-workspaces.md
     - name: Get data from databases

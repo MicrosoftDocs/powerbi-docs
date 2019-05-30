@@ -1,5 +1,5 @@
 ---
-title: Control the use of datasets across workspaces (preview) - Power BI
+title: Control the use of datasets across workspaces (Preview) - Power BI
 description: Learn how to restrict the flow of information in the Power BI tenant.
 author: maggiesMSFT
 manager: kfile
@@ -7,7 +7,7 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/25/2019
+ms.date: 05/29/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -15,18 +15,23 @@ LocalizationGroup: Share your work
 
 # Control the use of datasets across workspaces
 
-Using datasets across workspaces is a powerful way to drive data culture and data democratization within an organization. Still, sometimes Power BI admins want to restrict the flow of information with their Power BI tenant. With the tenant setting **Use datasets across workspaces**, they can restrict dataset reuse either completely or partially per security groups. 
+Using datasets across workspaces is a powerful way to drive data culture and data democratization within an organization. Still, if you're a Power BI admin, sometimes you want to restrict the flow of information within your Power BI tenant. With the tenant setting **Use datasets across workspaces**, you can restrict dataset reuse either completely or partially per security groups.
 
-If they do, then report creators can't produce new content within Power BI across different workspaces:
+If you turn off this setting, here are the effects on report creators:
 
-- When working in the service, the dataset discovery experience only shows datasets within the current workspace or datasets from workspaces where the user is a member.
-- When working in Power BI Desktop, they can only publish reports to the workspace that also holds the dataset.
-- The **Create Report** button is blocked for existing reference items.
-- The **Make a copy** button is blocked for existing content packs.
-- The **Save As** button is not available for reports that are based on a dataset in a different workspace.
+- The button to copy reports across workspaces isn't available. 
+- In a report based on a shared dataset, the **Edit report** button isn't available. 
+- In the Power BI service, the discovery experience only shows datasets in the current workspace.
+- In Power BI Desktop, the discovery experience only shows datasets from workspaces where you're a member.
 
 ![Power BI admin workspace settings](media/service-datasets-admin-across-workspaces/power-bi-admin-workspace-settings.png)
 
+## Provide a link for the certification process
+
+As a tenant admin, you can provide a URL for the **Learn more** link on the **Endorsement** setting page.  This link can go to documentation about your certification process. If you don't provide a destination for the **Learn more** link, by default it points to the [dataset certification](service-datasets-certify.md) article.
+
+![Dataset certification Learn more](media/service-datasets-certify-promote/power-bi-dataset-learn-more-certification.png)
+
 ## Next steps
 
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
