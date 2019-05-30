@@ -895,8 +895,6 @@
     items: 
     - name: What are paginated reports? (Preview)
       href: paginated-reports-report-builder-power-bi.md
-    - name: Paginated reports FAQ (Preview)
-      href: paginated-reports-faq.md
   - name: Tutorials
     items: 
     - name: Create a paginated report and upload it (Preview)
@@ -905,6 +903,8 @@
     items: 
     - name: Get around Report Design View (Preview)
       href: paginated-reports-report-design-view.md
+    - name: Paginated reports FAQ (Preview)
+      href: paginated-reports-faq.md
   - name: How to
     items: 
     - name: Enter data directly in a paginated report (Preview)
