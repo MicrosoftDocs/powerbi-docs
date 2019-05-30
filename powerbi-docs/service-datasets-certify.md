@@ -30,7 +30,7 @@ Your tenant admin can provide a URL for the **Learn more** link on the **Endorse
 Being named someone who can certify datasets is clearly a big responsibility. When a dataset creator contacts you about certifying a dataset, that's the beginning of your vetting process. When you're satisfied that a dataset merits certification, here are your last steps.
 
 1. The dataset owner needs to give you member permissions for the workspace where the dataset resides.
-1. If your tenant admin has named you as someone who can certify datasets, the **Certified** option in the **Endorsement** section of **Settings** is available. Select **Certified**.
+1. If your tenant admin has named you as someone who can certify datasets, the **Certified** option in the **Endorsement** section of **Settings** for the dataset is available. Select **Certified**.
 1. Select **Apply**.
 
 Read more about how tenant admins [control the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).

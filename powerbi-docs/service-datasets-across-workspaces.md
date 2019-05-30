@@ -18,7 +18,23 @@ Business intelligence is a collaborative activity. Learn how members of your org
 
 It's important to establish standardized datasets that can be the 'one source of truth.' Discovering and reusing existing datasets is key. When expert data modelers in your organization create and share optimized datasets, report creators can start with those datasets to build accurate reports. The organization has consistent data for decisions and a healthy data culture.
 
-Power BI makes it easy for dataset owners to certify or promote datasets so others can discover them. Then report authors to find quality, official datasets they can use wherever they are in Power BI. As a dataset owner, you can keep control of who has access to the data by using the [Build permission](service-datasets-build-permissions.md). You can also make it easier to discover your dataset by [endorsing your dataset](service-datasets-promote.md). Tenant administrators have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
+Power BI makes it easy for dataset owners to certify or promote datasets so others can discover them. Then report authors to find quality, official datasets they can use wherever they are in Power BI. As a dataset owner, you can keep control of who has access to the data by using the [Build permission](service-datasets-build-permissions.md). Tenant administrators have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
+
+## Copy a report
+from a workspace or from an app
+consumers can start their own exploration of data, don't have to start from scratch, use what someone else built.
+
+## Promotion and certification
+
+If you create datasets, you can make it easier for others to discover them by [promoting your datasets](service-datasets-promote.md).
+
+## Dataset sharing and the new workspace experience
+
+Building reports based on datasets in different workspaces and copying reports to different workspaces are tightly coupled with the new workspace experience:
+- In the service, the Dataset Catalog only shows datasets that are in Personal or Modern Workspaces; also, when opened in a Classic Workspace the catalog only shows datasets within that workspace, not from different workspaces
+- In the Desktop, Live Connect reports can be published to different workspaces as long as their datasets are in Modern Workspaces
+- When copying reports across workspaces, the target workspace needs to be a Modern Workspace.
+
 
 ## Discover datasets (Preview)
 

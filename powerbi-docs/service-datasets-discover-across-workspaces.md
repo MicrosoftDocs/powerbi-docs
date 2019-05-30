@@ -12,7 +12,7 @@ ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Discover datasets from different workspaces (Preview)
+# Create reports based on datasets from different workspaces (Preview)
 
 Learn how you can find and use datasets from other workspaces to build reports in your own workspaces. To build a report on top of an existing dataset, the first step is to find the dataset, either in the Power service or Power BI Desktop.
 
