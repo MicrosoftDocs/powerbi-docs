@@ -74,7 +74,7 @@ Now that you have a directory, let's create at least two users. One is a tenant 
 
     ![](media/create-an-azure-active-directory-tenant/global-admin.png)
 
-5. Do the same thing for a regular tenant user. You can use this account for your master embedding account. This time, for **Directory role**, leave it as **User**. Note the password, then select **Create**.
+5. Do the same thing for a regular tenant user. You can use this account for your master embedding account. This time, for Directory role, leaves it as **User**. Note the password, then select **Create**.
 
     ![](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
 
@@ -82,14 +82,14 @@ Now that you have a directory, let's create at least two users. One is a tenant 
 
     ![](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
 
-    When you sign up, you're prompted to try Power BI Pro free for 60 days. You can opt into that to become a Pro user. This gives you the option to start developing an embedded solution.
+    When you sign up, you're prompted to try Power BI Pro free for 60 days. You can opt into that to become a Pro user, which gives you the option to start developing an embedded solution.
 
    > [!NOTE]
    > Make sure you sign up with your user account's email address.
 
 ## Next steps
 
-Now that you have an Azure AD tenant, you can use this tenant to test items within Power BI. You can also embed Power BI dashboards and reports in your application. For more information on how to embed items, see [How to embed your Power BI dashboards, reports, and tiles](embedding-content.md).
+Now that you have an Azure AD tenant, you can use this tenant to test items within Power BI. You can also embed Power BI dashboards and reports in your application. For more information, see [How to embed your Power BI dashboards, reports, and tiles](embedding-content.md).
 
 [What is an Azure Active directory?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) 
  

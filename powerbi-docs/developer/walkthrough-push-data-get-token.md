@@ -21,7 +21,7 @@ In step 1, you [registered a client app in Azure AD](walkthrough-push-data-regis
 
 Before starting, make sure you've completed the [previous step](walkthrough-push-data-register-app-with-azure-ad.md) in the [Push data into a Power BI dataset](walkthrough-push-data.md) series. 
 
-This article requires Visual Studio 2015 or later.
+This procedure requires Visual Studio 2015 or later.
 
 1. In Visual Studio, create a new C# **Console Application** project.
 
@@ -31,13 +31,13 @@ This article requires Visual Studio 2015 or later.
 
      b. Enter **Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612**
 
-3. In Program.cs, add `using Microsoft.IdentityModel.Clients.ActiveDirectory;`.
+     c. In Program.cs, add `using Microsoft.IdentityModel.Clients.ActiveDirectory;`.
 
-4. Add the sample code listed after step 6 to Program.cs.
+3. Add the sample code listed after these steps to Program.cs.
 
-5. Replace "{ClientID}", with the **Client ID** you got in the [previous series article](walkthrough-push-data-register-app-with-azure-ad.md) when you registered your app.
+4. Replace "{ClientID}", with the **Client ID** you got in the [previous series article](walkthrough-push-data-register-app-with-azure-ad.md) when you registered your app.
 
-6. Run your console app and sign in to your Power BI account. 
+5. Run your console app and sign in to your Power BI account. 
 
    A token string should appear in the console window.
 
