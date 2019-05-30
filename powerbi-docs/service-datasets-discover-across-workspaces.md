@@ -19,7 +19,7 @@ Learn how you can find and use datasets from other workspaces to build reports i
 - In the Power BI service: **Get data** > **Published datasets**.
 - In Power BI Desktop: **Get data** > **Power BI datasets**.
 
-    ![Connect to an existing dataset](media/service-datasets-across-workspaces/power-bi-connect-dataset.png)
+    ![Connect to an existing dataset](media/service-datasets-across-workspaces/power-bi-connect-dataset-pk.png)
    
 In either case, the dataset discovery experience starts in this dialog box, **Select a dataset to create a report**. You see all the datasets you have access to, regardless of the workspace you are in currently:
 
@@ -27,7 +27,7 @@ In either case, the dataset discovery experience starts in this dialog box, **Se
 
 The datasets you see in this list meet at least one of the following conditions:
 
-- The dataset is in one of the new workspace experience workspaces, and you're a member of that workspace (see [Considerations and limitations](#considerations-and-limitations)).
+- The dataset is in one of the new workspace experience workspaces, and you're a member of that workspace. See [Considerations and limitations](service-datasets-across-workspaces.md#considerations-and-limitations).
 - You have Build permission for the dataset, which is in a new workspace experience workspace.
 - The dataset is in your My Workspace.
 
@@ -51,18 +51,9 @@ Promoted and certified datasets display *badges* that you see both when looking 
 
     ![Promoted dataset](media/service-datasets-certify-promote/power-bi-dataset-promoted.png)
 
-## Considerations and limitations
-
-- Building a report on top of a dataset in a different workspace requires the new workspace experience at both ends: the report needs to be in the new workspace experience and the dataset needs to be in the new workspace experience.
-- In a classic workspace, the dataset discovery experience only shows the datasets in that workspace.
-- You can create reports in app workspaces that are based on datasets in a different workspace. However, you can't create an app for a workspace that contains those datasets.
-- Free users in Desktop only see datasets from My Workspace and from Premium-based workspaces.
-- If a dataset is being used by a report outside of the dataset workspace, you can't delete that dataset. Instead, you see an error message.
-- “Publish to web” doesn’t work for a report based on a shared dataset. This is by design.
-
 ## Next steps
 
-- [Certify datasets](service-datasets-certify.md)
 - [Promote datasets](service-datasets-promote.md)
+- [Certify datasets](service-datasets-certify.md)
 - [Govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

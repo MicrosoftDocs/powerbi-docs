@@ -7,14 +7,14 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 05/29/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Copy reports from other workspaces (Preview)
 
-Learn how you can share a dataset with users across your organization. Then they can build reports based on your dataset in their own workspaces.
+Learn how you can copy a report from one workspace and save it to a different workspace. Then you can modify that report, adding or deleting visuals and other elements.
 
 Business intelligence is a collaborative activity. It is important to establish standardized datasets that can be the 'one source of truth.' Discovering and reusing existing datasets is a key part of this. When report creators start with the official datasets to build reports, the organization has consistent data for decisions and a healthy data culture.
 
@@ -27,7 +27,7 @@ When building a report on top of an existing dataset, the first step is to conne
 - In the Power BI service: **Get data** > **Published datasets**.
 - In Power BI Desktop: **Get data** > **Power BI datasets**.
 
-    ![Connect to an existing dataset](media/service-datasets-across-workspaces/power-bi-connect-dataset.png)
+    ![Connect to an existing dataset](media/service-datasets-across-workspaces/power-bi-connect-dataset-pk.png)
    
 In either case, the dataset discovery experience starts in this dialog box, **Select a dataset to create a report**. You see all the datasets you have access to, regardless of the workspace you are in currently:
 

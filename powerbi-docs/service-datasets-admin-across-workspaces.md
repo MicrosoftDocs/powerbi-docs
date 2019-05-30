@@ -17,14 +17,14 @@ LocalizationGroup: Share your work
 
 Using datasets across workspaces is a powerful way to drive data culture and data democratization within an organization. Still, if you're a Power BI admin, sometimes you want to restrict the flow of information within your Power BI tenant. With the tenant setting **Use datasets across workspaces**, you can restrict dataset reuse either completely or partially per security groups.
 
+![Power BI admin workspace settings](media/service-datasets-admin-across-workspaces/power-bi-admin-workspace-settings.png)
+
 If you turn off this setting, here are the effects on report creators:
 
 - The button to copy reports across workspaces isn't available. 
 - In a report based on a shared dataset, the **Edit report** button isn't available. 
 - In the Power BI service, the discovery experience only shows datasets in the current workspace.
 - In Power BI Desktop, the discovery experience only shows datasets from workspaces where you're a member.
-
-![Power BI admin workspace settings](media/service-datasets-admin-across-workspaces/power-bi-admin-workspace-settings.png)
 
 ## Provide a link for the certification process
 
