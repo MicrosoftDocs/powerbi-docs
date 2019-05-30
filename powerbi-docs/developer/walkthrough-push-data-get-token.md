@@ -15,7 +15,7 @@ ms.date: 05/29/2019
 
 This article is the second step in the series [Push data into a Power BI dataset](walkthrough-push-data.md).
 
-In step one, you [registered a client app in Azure AD](walkthrough-push-data-register-app-with-azure-ad.md). In this step, you get an authentication access token. Power BI apps are integrated with Azure Active Directory to provide your app with secure sign in and authorization. Your app uses a token to authenticate to Azure AD and gain access to Power BI resources.
+In step 1, you [registered a client app in Azure AD](walkthrough-push-data-register-app-with-azure-ad.md). In this step, you get an authentication access token. Power BI apps are integrated with Azure Active Directory to provide your app with secure sign in and authorization. Your app uses a token to authenticate to Azure AD and gain access to Power BI resources.
 
 ## Get an authentication access token
 
