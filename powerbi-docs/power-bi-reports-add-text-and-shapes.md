@@ -27,31 +27,31 @@ Watch Will use Power BI Desktop to [add static images to a report](guided-learni
 
 2. Place your cursor in any blank area on the report canvas and select **Text box** from the top menu.
    
-   ![select text box](media/power-bi-reports-add-text-and-shapes/pbi_textbox.png)
+   ![Select text box](media/power-bi-reports-add-text-and-shapes/pbi_textbox.png)
 3. Type your text into the text box and, optionally, set the format font, color, and text alignment. 
    
-   ![enter text](media/power-bi-reports-add-text-and-shapes/pbi_textbox2new.png)
+   ![Enter text](media/power-bi-reports-add-text-and-shapes/pbi_textbox2new.png)
 4. To position the text box, select the grey area at the top and drag. To resize the text box, select and drag any of the outline handles. 
    
-   ![position text box](media/power-bi-reports-add-text-and-shapes/textboxsmaller.gif)
+   ![Position text box](media/power-bi-reports-add-text-and-shapes/textboxsmaller.gif)
 
 5. With the text box still selected, add additional formatting in the **Visualizations** pane. In this example, we've formatted the background and border. You can also create an exact size and position for a text box.  
 
-   ![position text box](media/power-bi-reports-add-text-and-shapes/power-bi-borders.png)
+   ![Text box formatting](media/power-bi-reports-add-text-and-shapes/power-bi-borders.png)
 
 6. To close the text box, select any blank space on the report canvas. 
 
-7. Select the pin icon  ![pin icon](media/power-bi-reports-add-text-and-shapes/pbi_pintile.png) to pin the text box to a dashboard. 
+7. Select the pin icon  ![Pin icon](media/power-bi-reports-add-text-and-shapes/pbi_pintile.png) to pin the text box to a dashboard. 
 
 ## Add a shape to a report
 1. Place your cursor anywhere on the report canvas and select **Shapes**.
    
-   ![select shapes](media/power-bi-reports-add-text-and-shapes/power-bi-shapes.png)
+   ![Select shapes](media/power-bi-reports-add-text-and-shapes/power-bi-shapes.png)
 2. From the dropdown, select a shape to add it to your report canvas. For this example, add an arrow to direct attention to the bubble with the highest total sales variance. 
    
    In the **Format shape** pane, customize your shape. In this example we've created a red arrow with a dark red border, rotated 90 degrees.
    
-   ![customize shape](media/power-bi-reports-add-text-and-shapes/power-bi-arrrow.png)
+   ![Customize shape](media/power-bi-reports-add-text-and-shapes/power-bi-arrrow.png)
 3. To position the shape, select the grey area at the top and drag. To resize the shape, select and drag any of the outline handles. As with the text box, you can also create an exact size and position for a shape.
 
    > [!NOTE]
