@@ -34,8 +34,7 @@ Exactly how the visuals on a page interact is set by the report *designer*. Desi
 > The terms *cross-filter* and *cross-highlight* are used to distinguish the behavior described here from what happens when you use the **Filters** pane to filter and highlight visualizations.  
 
 ## Considerations and troubleshooting
-- If your report has a visualization that supports [drilling](../power-bi-visualization-drill-down.md), by default, drilling one visualization has no impact on the other visualizations on the report page. 
-- 
+- If your report has a visualization that supports [drilling](../power-bi-visualization-drill-down.md), by default, drilling one visualization has no impact on the other visualizations on the report page.     
 - If you use visualA to interact with visualB, visual-level filters from visualA will be applied to visualB.
 
 ### Next steps
