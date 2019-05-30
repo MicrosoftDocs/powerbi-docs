@@ -54,7 +54,7 @@ Watch Will use Power BI Desktop to [add static images to a report](guided-learni
    ![customize shape](media/power-bi-reports-add-text-and-shapes/power-bi-arrrow.png)
 3. To position the shape, select the grey area at the top and drag. To resize the shape, select and drag any of the outline handles. As with the text box, you can also create an exact size and position for a shape.
 
-   > **NOTE** 
+   > [!NOTE]
    > Shapes cannot be pinned to a dashboard, except as one of the visuals when you [pin a live page](service-dashboard-pin-live-tile-from-report.md). 
    > 
    > 
