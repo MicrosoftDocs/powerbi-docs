@@ -673,32 +673,6 @@
         href: service-cognitive-services.md   
       - name: "Automated Machine Learning in Power BI (Preview)"
         href: service-machine-learning-automated.md              
-    - name: Paginated reports in Power BI
-      items: 
-      - name: What are paginated reports? (Preview)
-        href: paginated-reports-report-builder-power-bi.md
-      - name: Paginated reports FAQ (Preview)
-        href: paginated-reports-faq.md
-      - name: Create a paginated report and upload it (Preview)
-        href: paginated-reports-quickstart-aw.md
-      - name: Get around Report Design View (Preview)
-        href: paginated-reports-report-design-view.md
-      - name: Enter data directly in a paginated report (Preview)
-        href: paginated-reports-enter-data.md
-      - name: Create an embedded data source (Preview)
-        href: paginated-reports-embedded-data-source.md
-      - name: Create an embedded dataset (Preview)
-        href: paginated-reports-create-embedded-dataset.md
-      - name: Create parameters (Preview)
-        href: paginated-reports-parameters.md
-      - name: Publish a paginated report (Preview)
-        href: paginated-reports-save-to-power-bi-service.md
-      - name: View a paginated report (Preview)
-        href: paginated-reports-view-power-bi-service.md
-      - name: Interact with parameters (Preview)
-        href: paginated-reports-view-parameters.md
-      - name: Subscribe yourself or others
-        href: paginated-reports-subscriptions.md
     - name: Template apps
       items: 
       - name: "Template apps overview"
@@ -915,6 +889,40 @@
       href: service-admin-premium-restart.md
     - name: Connect to datasets with client applications and tools
       href: service-premium-connect-tools.md
+- name: Paginated reports in Power BI
+  items: 
+  - name: Overview
+    items: 
+    - name: What are paginated reports? (Preview)
+      href: paginated-reports-report-builder-power-bi.md
+    - name: Paginated reports FAQ (Preview)
+      href: paginated-reports-faq.md
+  - name: Tutorials
+    items: 
+    - name: Create a paginated report and upload it (Preview)
+      href: paginated-reports-quickstart-aw.md
+  - name: Concepts
+    items: 
+    - name: Get around Report Design View (Preview)
+      href: paginated-reports-report-design-view.md
+  - name: How to
+    items: 
+    - name: Enter data directly in a paginated report (Preview)
+      href: paginated-reports-enter-data.md
+    - name: Create an embedded data source (Preview)
+      href: paginated-reports-embedded-data-source.md
+    - name: Create an embedded dataset (Preview)
+      href: paginated-reports-create-embedded-dataset.md
+    - name: Create parameters (Preview)
+      href: paginated-reports-parameters.md
+    - name: Publish a paginated report (Preview)
+      href: paginated-reports-save-to-power-bi-service.md
+    - name: View a paginated report (Preview)
+      href: paginated-reports-view-power-bi-service.md
+    - name: Interact with parameters (Preview)
+      href: paginated-reports-view-parameters.md
+    - name: Subscribe yourself or others
+      href: paginated-reports-subscriptions.md
 - name: Power BI for developers
   items:
   - name: "What can developers do with Power BI"
