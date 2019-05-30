@@ -35,6 +35,7 @@ With the Build permission type, you can allow others in your organization to bui
 - You can create reports in app workspaces that are based on datasets in a different workspace. However, you can't create an app for a workspace that contains those datasets.
 - Free users in Desktop only see datasets from My Workspace and from Premium-based workspaces.
 - If a dataset is being used by a report outside of the dataset workspace, you can't delete that dataset. Instead, you see an error message.
+- If you want to add a report to an app where the report is based on a shared dataset, you have to be a member of the dataset's workspace. This is a known issue.
 - “Publish to web” doesn’t work for a report based on a shared dataset. This is by design.
 
 
