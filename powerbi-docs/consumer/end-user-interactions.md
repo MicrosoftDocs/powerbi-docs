@@ -37,5 +37,5 @@ Exactly how the visuals on a page interact is set by the report *designer*. Desi
 - If your report has a visualization that supports [drilling](../power-bi-visualization-drill-down.md), by default, drilling one visualization has no impact on the other visualizations on the report page.     
 - If you use visualA to interact with visualB, visual-level filters from visualA will be applied to visualB.
 
-### Next steps
+## Next steps
 [How to use report filters](../power-bi-how-to-report-filter.md)
