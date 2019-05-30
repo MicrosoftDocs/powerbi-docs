@@ -23,15 +23,13 @@ Your organization may already have an Azure AD tenant that you can use for your 
 
 ## Create an Azure Active Directory tenant
 
-To integrate Power BI into your custom application, you need to define an application within Azure AD, which requires an Azure AD directory. This directory is your *tenant*. If your organization doesn't have a tenant yet, because they aren't using Power BI or Office 365, then [you need to set up a dev environment](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). You also need to create one if you don't want your application mixing with your organization's tenant, allowing you to keep things isolated.
-
-Or, you may just want to create a tenant for testing purposes.
+To integrate Power BI into your custom application, you need to define an application within Azure AD, which requires an Azure AD directory. This directory is your *tenant*. If your organization doesn't have a tenant yet, because they aren't using Power BI or Office 365, then [you need to set up a dev environment](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). You also need to create one if you don't want your application mixing with your organization's tenant, allowing you to keep things isolated. Or, you may just want to create a tenant for testing purposes.
 
 To create a new Azure AD tenant:
 
 1. Browse to the [Azure portal](https://portal.azure.com) and sign in with an account that has an Azure subscription.
 
-2. Select the **plus icon (+)** and search for *Azure Active Directory*.
+2. Select the **plus icon (+)** and search for **Azure Active Directory**.
 
     ![Plus icon (+)](media/create-an-azure-active-directory-tenant/new-directory.png)
 
@@ -41,7 +39,7 @@ To create a new Azure AD tenant:
 
 4. Select **Create**.
 
-5. Provide a **Organization name** and a **Initial domain name**. Then select **Create**. Your directory is created.
+5. Provide an **Organization name** and an **Initial domain name**. Then select **Create**. Your directory is created.
 
     ![Org and domain](media/create-an-azure-active-directory-tenant/organization-and-domain.png)
 
@@ -74,7 +72,7 @@ Now that you have a directory, let's create at least two users. One is a tenant 
 
     ![](media/create-an-azure-active-directory-tenant/global-admin.png)
 
-5. Do the same thing for a regular tenant user. You can use this account for your master embedding account. This time, for **Directory role**, leaves it as **User**. Note the password, then select **Create**.
+5. Do the same thing for a regular tenant user. You can use this account for your master embedding account. This time, for **Directory role**, leave it as **User**. Note the password, then select **Create**.
 
     ![](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
 
@@ -82,7 +80,7 @@ Now that you have a directory, let's create at least two users. One is a tenant 
 
     ![](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
 
-    When you sign up, you're prompted to try Power BI Pro free for 60 days. You can opt into that to become a Pro user, which gives you the option to start developing an embedded solution.
+    When you sign up, you're prompted to try Power BI Pro free for 60 days. You can opt into that to become a Pro user, which gives you the option to [start developing an embedded solution](embedding-content.md).
 
    > [!NOTE]
    > Make sure you sign up with your user account's email address.
