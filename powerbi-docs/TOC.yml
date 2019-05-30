@@ -895,6 +895,8 @@
     items: 
     - name: What are paginated reports? (Preview)
       href: paginated-reports-report-builder-power-bi.md
+    - name: Report Builder in Power BI (Preview)
+      href: report-builder-in-power-bi.md
   - name: Tutorials
     items: 
     - name: Create a paginated report and upload it (Preview)
@@ -903,10 +905,30 @@
     items: 
     - name: Get around Report Design View (Preview)
       href: paginated-reports-report-design-view.md
+    - name:  (Preview)
+      href: .md
     - name: Paginated reports FAQ (Preview)
       href: paginated-reports-faq.md
   - name: How to
     items: 
+    - name: Report Builder design tips (Preview)
+      href: report-builder-design-tips.md
+    - name: Report Builder planning a report (Preview)
+      href: report-builder-planning-report.md
+    - name: Report Builder tables, matrixes, lists (Preview)
+      href: report-builder-tables-matrices-lists.md
+    - name: Report Builder preview reports (Preview)
+      href: report-builder-previewing-reports.md
+    - name: Report Builder parameters concepts (Preview)
+      href: report-builder-parameters-concepts.md
+    - name: Report Builder parameters (Preview)
+      href: report-builder-parameters.md
+    - name: Report Builder expressions (Preview)
+      href: report-builder-expressions.md
+    - name: Report Builder expression examples (Preview)
+      href: report-builder-expression-examples.md
+    - name: Report Builder data (Preview)
+      href: report-builder-data.md
     - name: Enter data directly in a paginated report (Preview)
       href: paginated-reports-enter-data.md
     - name: Create an embedded data source (Preview)
