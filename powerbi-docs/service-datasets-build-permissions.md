@@ -16,11 +16,6 @@ LocalizationGroup: Share your work
 
 As a dataset creator, you can create datasets that others can discover and reuse them easily. Learn how you can  keep control of who has access to the data by using the Build permission.
 
-Maggie:
-If you delete the dataset, you get the error message
-Can remove build permissions – I can look at the report, I still have read perms, but I can’t edit the report. 
-What about if you try to edit it in Desktop?
-
 ## Steps to sharing your dataset
 
 1. You create a .pbix file with a data model in Power BI Desktop. If you're planning to offer this dataset for others to build reports, you may not even design a report in the .pbix file.
@@ -32,8 +27,6 @@ What about if you try to edit it in Desktop?
     Already, others can create reports in other workspaces based on this dataset.
 
 1. Now you can create an app from this workspace. When you do, you can specify permissions for the app recipients.
- 
-
 
 ## Build permissions for shared datasets
 
@@ -55,9 +48,11 @@ Power BI introduced the Build permission in June 2019 as a complement to the exi
 
 With this more granular Build permission, you can choose who can only view the content in the existing report or dashboard and who can create content connected to the underlying datasets.
 
+If your dataset is being used by a report outside the dataset workspace, you can't delete that dataset. Instead, you see an error message.
+
+You can remove build permissions. If you do, the people whose permissions you have revoked can still see the report, but can no longer edit the report.
+
 ## Track your dataset usage
-
-
 
 ## Next steps
 
