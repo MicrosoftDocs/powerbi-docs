@@ -14,14 +14,14 @@ LocalizationGroup: Share your work
 ---
 # Create reports based on datasets from different workspaces (Preview)
 
-Learn how you can find and use datasets from other workspaces to build reports in your own workspaces. To build a report on top of an existing dataset, the first step is to find the dataset, either in the Power service or Power BI Desktop.
+Learn how you can create reports in your own workspaces based on datasets in other workspaces. To build a report on top of an existing dataset, start from your My Workspace or from a new experience workspace. The first step is to find the dataset, either in the Power service or Power BI Desktop.
 
 - In the Power BI service: **Get data** > **Published datasets**.
 - In Power BI Desktop: **Get data** > **Power BI datasets**.
 
     ![Connect to an existing dataset](media/service-datasets-across-workspaces/power-bi-connect-dataset-pk.png)
    
-In either case, the dataset discovery experience starts in this dialog box, **Select a dataset to create a report**. You see all the datasets you have access to, regardless of the workspace you are in currently:
+In both cases, the dataset discovery experience starts in this dialog box, **Select a dataset to create a report**. You see all the datasets you have access to, regardless of the workspace you are in currently:
 
 ![Select a dataset](media/service-datasets-across-workspaces/power-bi-select-dataset.png)
 
@@ -34,15 +34,17 @@ The datasets you see in this list meet at least one of the following conditions:
 > [!NOTE]
 > Free users only see datasets in their My Workspace, or datasets for which they have Build permission that are in Premium-capacity workspaces.
 
-When you click **Create**, you create a Live Connection to the dataset, and the report creation experience opens with the full dataset available. You can use all tables and measures in the dataset to build your own reports. Row-level security (RLS) restrictions on the dataset are in effect, so you only see data you have permissions to see based on your RLS role.
+When you click **Create**, you create a live connection to the dataset, and the report creation experience opens with the full dataset available. You haven't made a copy of the dataset. The dataset still resides in its original location. You can use all tables and measures in the dataset to build your own reports. Row-level security (RLS) restrictions on the dataset are in effect, so you only see data you have permissions to see based on your RLS role.
 
-You can save the report to the current workspace in the Power BI service, or publish the report to a workspace from Power BI Desktop. Power BI automatically creates an entry in the list of datasets if the report is based on a dataset outside of the workspace. The icon for this entry is different from the icon for datasets in the workspace. That way, members of the workspace can tell which reports and dashboards use datasets that are outside the workspace. The entry shows meta-information about the dataset, and a few select actions.
+You can save the report to the current workspace in the Power BI service, or publish the report to a workspace from Power BI Desktop. Power BI automatically creates an entry in the list of datasets if the report is based on a dataset outside of the workspace. The icon for this dataset is different from the icon for datasets in the workspace: ![Shared dataset icon](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
+
+That way, members of the workspace can tell which reports and dashboards use datasets that are outside the workspace. The entry shows information about the dataset, and a few select actions.
 
 ![Dataset actions](media/service-datasets-across-workspaces/power-bi-dataset-actions.png)
 
 ## Find an endorsed dataset
 
-Promoted and certified datasets display *badges* that you see both when looking for a dataset and in the list of datasets in a workspace. 
+THere are two different kinds of endorsed datasets. Dataset owners can *promote* a dataset that they recommend to you. The Power BI tenant admin can designate experts in your organization who can *certify* datasets for everyone to use. Promoted and certified datasets both display *badges* that you see both when looking for a dataset, and in the list of datasets in a workspace. 
 
 - In the Power BI service: **Get data** > **Published datasets**.
 - In Power BI Desktop: **Get data** > **Power BI datasets**.

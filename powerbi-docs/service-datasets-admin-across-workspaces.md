@@ -22,9 +22,10 @@ Using datasets across workspaces is a powerful way to drive data culture and dat
 If you turn off this setting, here are the effects on report creators:
 
 - The button to copy reports across workspaces isn't available. 
-- In a report based on a shared dataset, the **Edit report** button isn't available. 
+- In a report based on a shared dataset, the **Edit report** button isn't available.
 - In the Power BI service, the discovery experience only shows datasets in the current workspace.
 - In Power BI Desktop, the discovery experience only shows datasets from workspaces where you're a member.
+- In Power BI Desktop, if users open a .pbix file with a live connection to a dataset outside any workspaces they are a member of, they see an error message asking them to connect to a different dataset.
 
 ## Provide a link for the certification process
 
