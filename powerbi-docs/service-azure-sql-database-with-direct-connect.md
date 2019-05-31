@@ -37,8 +37,6 @@ These restrictions and notes may change as we continue to improve the experience
 
 In order to connect to Azure SQL Database using DirectQuery, you will need to use Power BI Desktop. This approach provides additional flexibility and capabilities. Reports created using Power BI Desktop can then be published to the Power BI service. You can learn more about how to connect to [Azure SQL Database using DirectQuery](desktop-use-directquery.md) within Power BI Desktop.
 
-[!INCLUDE [direct-query-sso](includes/direct-query-sso.md)]
-
 ## Finding Parameter Values
 
 Your fully qualified server name and database name can be found in the Azure Portal.
@@ -46,6 +44,8 @@ Your fully qualified server name and database name can be found in the Azure Por
 ![New Azure port update](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
 
 ![Azure portal update](media/service-azure-sql-database-with-direct-connect/azureportal_update.png)
+
+[!INCLUDE [direct-query-sso](includes/direct-query-sso.md)]
 
 ## Next steps
 
