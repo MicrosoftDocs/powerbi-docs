@@ -45,9 +45,7 @@ When you find a report you like, in a workspace or an app, you can make a copy o
 
     ![Dataset actions](media/service-datasets-across-workspaces/power-bi-dataset-actions.png)
 
-## View related items
-
-### View related datasets
+## View related datasets
 
 When you have a report in your workspace, you may need to know what dataset it's based on.
 

@@ -24,9 +24,16 @@ As a dataset creator, you can create datasets for others to easily discover and 
 
 1. Publish the .pbix file to a [new experience workspace](service-create-the-new-workspaces.md) in the Power BI service.
     
-    Already, others can create reports in other workspaces based on this dataset, if they have Build permissions.
+    Already, others can create reports in other workspaces based on this dataset, if they're members of this workspace.
 
-1. Now you can [create an app](service-create-distribute-apps.md) from this workspace. When you do, you can specify permissions for the app recipients.
+1. Now you can [create an app](service-create-distribute-apps.md) from this workspace. When you do, on the **Permissions** page, you specify who has permissions and what they can do.
+
+    > [!NOTE]
+    > If you select **Entire organization**, then no one in the organization will have Build permissions. This issue is already known. Instead, specify email addresses in **Specific individuals or groups**.  If you want your entire organization to have Build permissions, specify an email alias for the entire organization.
+
+    ![Set app permissions](media/service-datasets-build-permissions/power-bi-dataset-app-permissions.png)
+
+1. Select **Publish app**, or **Update app**, if it's already published.
 
 ## Build permissions for shared datasets
 
@@ -36,8 +43,6 @@ Users can get the permission in different ways:
 
 - A member of the workspace where the dataset resides can assign the permission to specific users or security groups in the Permission Center. Click the ellipsis (…) next to a dataset > **Manage Permissions**.
 - An admin or member of the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets.
-    > [!NOTE]
-    > If you publish the app to **Entire organization**, then no one in the organization will have Build permissions. You need to specify email addresses in **Specific individuals or groups** I f you want the entire organization to have Build permissions, you need to specify an email alias for the entire organization.
 - Say you have Reshare and Build permissions on a dataset. When you share a report or dashboard built on top of that dataset you can specify that the recipients also get Build permission for the underlying dataset.
 
 ![Build permissions](media/service-datasets-build-permissions/power-bi-share-report-allow-users.png)
