@@ -80,6 +80,8 @@ SQL Data Warehouse is also listed on the Power BI Get Data page.
 
     ![Explore 3](media/service-azure-sql-data-warehouse-with-direct-connect/explore3.png)
 
+[!INCLUDE [direct-query-sso](includes/direct-query-sso.md)]
+
 ## Finding Parameter Values
 
 Your fully qualified server name and database name can be found in the Azure portal. Note that SQL Data Warehouse only have a presence in the Azure Preview portal at this time.
