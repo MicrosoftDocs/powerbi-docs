@@ -39,7 +39,7 @@ In order to connect to Azure SQL Database using DirectQuery, you will need to us
 
 ## Finding Parameter Values
 
-Your fully qualified server name and database name can be found in the Azure Portal.
+Your fully qualified server name and database name can be found in the Azure portal.
 
 ![New Azure port update](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
 
