@@ -113,7 +113,8 @@ Watch recorded sessions at any time
 <br>by Reid Havens
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
-### Partners ###
+### Partner Solutions Series ###
+[Watch this series](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
 
 **Achieving a Win-Win for Consumer Product Goods Manufacturers and Retailers**
 <br>by Liz McCreesh from Thorogood
