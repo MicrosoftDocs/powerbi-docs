@@ -18,7 +18,11 @@ Data is at the heart of Power BI. Let's say you're exploring data, creating char
 
 In this article, we're going to cover the data source types you can connect to from the Power BI service. Keep in mind that there are many other types of data sources you can get data from, too. But those sources might require first using Power BI Desktop or Excel's advanced data query and modeling features. We'll go into more about those options later. For now, let's look at the different types of data sources available right from your Power BI service site.
 
-You can get data from any of these data sources in Power BI by clicking **My Workspace** > **Get Data**.
+You can get data from any of these data sources in Power BI by selecting **Get Data** in the bottom left corner of the page.
+
+![](media/service-get-data/pbi_getdata_navigation_link.png) 
+
+After you select **Get Data**, you can choose the data you want to access
 
 ![](media/service-get-data/pbi_getdata_startscreen.png)
 
@@ -27,9 +31,9 @@ You can get data from any of these data sources in Power BI by clicking **My Wor
 
 **Excel** (.xlsx, .xlsm) - Excel is unique. In Excel, a workbook may include different data types. For example, it can include data you've entered into worksheets yourself. It can also include data that you've queried and loaded from external data sources by using Power Query. Power Query is available through Get & Transform in Excel 2016 or Power Pivot. You may import data from tables in worksheets (the data *must* be in a table), or import data that is loaded into a data model. To learn more, see [Get data from Excel](service-get-data-from-files.md).
 
-**Power BI Desktop** (.pbix) -  You can use Power BI Desktop to query and load data from external data sources, extend your data model with measures and relationships, and create reports. You can import your Power BI Desktop file into your Power BI site. Power BI Desktop is best for more advanced users. Typically these users are ones who have a good understanding of their data sources. They also understand data query and transformation and data modeling concepts. To learn more, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
+**Power BI Desktop** (.pbix) - You can use Power BI Desktop to query and load data from external data sources, extend your data model with measures and relationships, and create reports. You can import your Power BI Desktop file into your Power BI site. Power BI Desktop is best for more advanced users. Typically these users are ones who have a good understanding of their data sources. They also understand data query and transformation, and data modeling concepts. To learn more, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
 
-**Comma-Separated Value** (.csv) -  Files are simple text files with rows of data. Each row may contain one or more values, each separated by a comma. For example, a .csv containing name and address data might have a number of rows. Each row may have values for first name, last name, street address, city, state, and so on. You can't import data into a .csv file, but many applications, like Excel, can save simple table data as a .csv file.
+**Comma-Separated Value** (.csv) - Files are simple text files with rows of data. Each row may contain one or more values, each separated by a comma. For example, a .csv containing name and address data might have a number of rows. Each row may have values for first name, last name, street address, city, state, and so on. You can't import data into a .csv file, but many applications, like Excel, can save simple table data as a .csv file.
 
 For other file types like XML Table (.xml) or text (.txt) files, you can use Get & Transform to query, transform, and load that data into an Excel or Power BI Desktop file first. You can then import the Excel or Power BI Desktop file into Power BI.
 
