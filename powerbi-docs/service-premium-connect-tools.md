@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 05/31/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -58,8 +58,6 @@ Workspace connections use the following URL format to address a workspace as tho
 `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]` 
 
 For example, `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`
-> [!NOTE]
-> `[workspace name]` is case sensitive and can include spaces. 
 
 ### To connect in SSMS
 
