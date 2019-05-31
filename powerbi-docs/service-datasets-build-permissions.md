@@ -7,14 +7,14 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/30/2019
+ms.date: 05/31/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Create and share datasets (Preview)
 
-As a dataset creator, you can create datasets that others can discover and reuse them easily. Learn how you can  keep control of who has access to the data by using the Build permission.
+As a dataset creator, you can create datasets for others to easily discover and reuse. Learn how to share them, and how you control who has access to the data by using the Build permission.
 
 ## Steps to sharing your dataset
 
@@ -22,11 +22,11 @@ As a dataset creator, you can create datasets that others can discover and reuse
 
     A best practice is to save the .pbix file to an Office 365 group.
 
-1. Publish the .pbix file to a new experience workspace in the Power BI service.
+1. Publish the .pbix file to a [new experience workspace](service-create-the-new-workspaces.md) in the Power BI service.
     
-    Already, others can create reports in other workspaces based on this dataset.
+    Already, others can create reports in other workspaces based on this dataset, if they have Build permissions.
 
-1. Now you can create an app from this workspace. When you do, you can specify permissions for the app recipients.
+1. Now you can [create an app](service-create-distribute-apps.md) from this workspace. When you do, you can specify permissions for the app recipients.
 
 ## Build permissions for shared datasets
 
@@ -53,6 +53,16 @@ If your dataset is being used by a report outside the dataset workspace, you can
 You can remove build permissions. If you do, the people whose permissions you have revoked can still see the report, but can no longer edit the report.
 
 ## Track your dataset usage
+
+When you have a shared dataset in your workspace, you may need to know what reports in other workspaces are based on it.
+
+1. In the Datasets list view, select **View related**.
+
+    ![View related icon](media/service-datasets-build-permissions/power-bi-dataset-view-related-to-dataset.png)
+
+1. The **Related content** dialog box shows all related items. In this list, you see the related items in this workspace and in **Other workspaces**.
+ 
+    ![Related content dialog box](media/service-datasets-build-permissions/power-bi-dataset-related-workspaces.png)
 
 ## Next steps
 

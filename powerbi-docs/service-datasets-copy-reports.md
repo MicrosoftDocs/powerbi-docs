@@ -32,15 +32,33 @@ When you find a report you like, in a workspace or an app, you can make a copy o
 
     ![Save a copy dialog box](media/service-datasets-copy-reports/power-bi-dataset-save-report.png)
 
-    You only see workspaces that are new experience workspaces, in which you're a member.
+    You can save the report to the current workspace or a different one in the Power BI service. You only see workspaces that are new experience workspaces, in which you're a member.
   
-When you save a copy of the report, you create a Live Connection to the dataset, and you can open the report creation experience with the full dataset available. You haven't made a copy of the dataset. The dataset still resides in its original location. You can use all tables and measures in the dataset to build your own reports. Row-level security (RLS) restrictions on the dataset are in effect, so you only see data you have permissions to see based on your RLS role.
+4. Select **Save**.
 
-You can save the report to the current workspace or a different one in the Power BI service. Power BI automatically creates an entry in the list of datasets if the report is based on a dataset outside of the workspace. The icon for this dataset is different from the icon for datasets in the workspace: ![Shared dataset icon](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
+    When you save a copy of the report, you create a live connection to the dataset, and you can open the report creation experience with the full dataset available. You haven't made a copy of the dataset. The dataset still resides in its original location. You can use all tables and measures in the dataset in your own report. Row-level security (RLS) restrictions on the dataset are in effect, so you only see data you have permissions to see based on your RLS role.
 
-That way, members of the workspace can tell which reports and dashboards use datasets that are outside the workspace. The entry shows information about the dataset, and a few select actions.
+    Power BI automatically creates an entry in the list of datasets if the report is based on a dataset outside of the workspace. The icon for this dataset is different from the icon for datasets in the workspace: ![Shared dataset icon](media/service-datasets-discover-across-workspaces/power-bi-shared-dataset-icon.png)
 
-![Dataset actions](media/service-datasets-across-workspaces/power-bi-dataset-actions.png)
+
+    That way, members of the workspace can tell which reports and dashboards use datasets that are outside the workspace. The entry shows information about the dataset, and a few select actions.
+
+    ![Dataset actions](media/service-datasets-across-workspaces/power-bi-dataset-actions.png)
+
+## View related items
+
+### View related datasets
+
+When you have a report in your workspace, you may need to know what dataset it's based on.
+
+1. In the Reports list view, select **View related**.
+
+    ![View related icon](media/service-datasets-copy-reports/power-bi-dataset-view-related.png)
+
+1. The **Related content** dialog box shows all related items. In this list, the dataset looks like any other. You can't tell it resides in a different workspace.
+ 
+    ![Related content dialog box](media/service-datasets-copy-reports/power-bi-dataset-related.png)
+
 
 ## Next steps
 
