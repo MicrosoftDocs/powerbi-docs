@@ -14,11 +14,11 @@ ms.author: davidi
 LocalizationGroup: Get started
 ---
 # Data sources for the Power BI service
-Data is at the heart of Power BI. Let's say you're exploring data, creating charts and dashboards, or asking questions with Q&A. The visualizations and answers you see are getting their underlying data from a dataset. But where does that dataset come from? Well, from a data source.
+Data is at the heart of Power BI. Let's say you're exploring data, creating charts and dashboards, or asking questions with Q&A. The visualizations and answers you see are getting their underlying data from a dataset. But where does that dataset come from? Well, it comes from a data source.
 
-In this article, we're going to cover the data source types you can connect to from the Power BI service. Keep in mind that there are many other types of data sources you can get data from, too. But those sources might require first using Power BI Desktop or Excel's advanced data query and modeling features. We'll go into more about those options later. For now, let's look at the different types of data sources available right from your Power BI service site.
+In this article, we're going to cover the data source types you can connect to from the Power BI service. Keep in mind that there are many other types of data sources you can get data from, too. But those sources might require using Power BI Desktop or Excel's advanced data query and modeling features first. We'll go into more about those options later. For now, let's look at the different types of data sources available right from your Power BI service site.
 
-You can get data from any of these data sources in Power BI by selecting **Get Data** in the bottom-left corner of the page.
+You can get data from any of the data sources in Power BI by selecting **Get Data** in the bottom-left corner of the page.
 
 ![](media/service-get-data/pbi_getdata_navigation_link.png) 
 
@@ -29,7 +29,7 @@ After you select **Get Data**, you can choose the data you want to access
 ## Discover content
 ![](media/service-get-data/pbi_getdata_discovercontent.png)
 
-The **Discover content** section contains all of the data and reports you need already prepared for you. In Power BI, there are two types of content packs. One type is created and shared by other users in your organization. The other type includes the services like Google Analytics, Marketo, or Salesforce. 
+The **Discover content** section contains all of the data and reports you need already prepared for you. In Power BI, there are two types of content packs. One type, named **Organizational**, is created and shared by other users in your organization. The other type, named **Services**, includes the services like Google Analytics, Marketo, or Salesforce. 
 
 **Organizational** - If you and other users in your organization have a Power BI Pro account, you can create, share, and use content packs. To learn more, see [Organizational content packs](service-organizational-content-pack-introduction.md).
 
