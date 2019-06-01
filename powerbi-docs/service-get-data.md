@@ -78,7 +78,7 @@ You're probably thinking, "But the logistics data on that database changes every
 
 You see, even though you can't connect to your data source directly from the Power BI service you can still get that data into Power BI. It just might take a few more steps and maybe some help from your IT department. See [Data sources in Power BI Desktop](desktop-data-sources.md) to learn more.
 
-### Some more details
+## Some more details
 You'll see the terms dataset and data source used a lot in Power BI. They're often used synonymously. But they really are two different things, although they're related.
 
 You create a **dataset** automatically in Power BI when you use Get Data. With Get Data, you connect to and import data from a content pack, file, or you connect to a live data source. A dataset contains information about the data source and data-source credentials. In many cases, it also includes a subset of data copied from the data source. When you create visualizations in reports and dashboards, you're often looking at data in the dataset.
@@ -89,7 +89,7 @@ A **data source** is where the data in a dataset comes from. For example, the da
 * A database in the cloud like Azure SQL Database
 * A database or file on a local computer or server in your own organization
 
-### Data refresh
+## Data refresh
 If you save your files on your local drive or a drive somewhere in your organization, you may need a Power BI gateway so that you can refresh the dataset in Power BI. You'll also need the computer that stores the file to be on when a refresh happens. You can reimport your file or use Publish from Excel or Power BI Desktop, but those options aren't automated processes.
 
 If you save your files on OneDrive for Business or SharePoint - Team Sites, you can then connect to or import them into Power BI. Then, your dataset, reports, and dashboard will always be up-to-date. Because both OneDrive and Power BI are in the cloud, Power BI can connect directly to your saved file. It connects about once every hour and checks for updates. The dataset and any visualizations refresh automatically if there are any updates.
