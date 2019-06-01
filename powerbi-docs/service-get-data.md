@@ -70,7 +70,7 @@ Some data sources already have data formatted for the Power BI service. These so
 
 In other cases, it might be necessary to query and load the data you want into a file. For example, let's say you have logistics data in your organization. You store that data in a data warehouse database on a server. In the Power BI service, you can't connect to that database and begin exploring its data unless it's a tabular model database. But, you can use Power BI Desktop or Excel to query and load that logistics data into a data model you then save as a file. You can then import that file into Power BI where a dataset exists.
 
-You're probably thinking, "But the logistics data on that database changes every day. How do I make sure my dataset in Power BI is refreshed?" When you import the data into the dataset, you also import the connection information from either the Power BI Desktop or the Excel file. Let's say you configure a scheduled refresh or do a manual refresh on the dataset. Power BI uses the connection information from the dataset, along with a couple of other settings, to connect directly to the database. It then queries for updates and loads those updates into the dataset. As a side note, a Power BI gateway will likely be required to secure any data transfer between your on-premises server and Power BI. When the transfer is complete, any visualizations in reports and dashboards are refreshed automatically.
+You're probably thinking, "But the logistics data on that database changes every day. How do I make sure my dataset in Power BI is refreshed?" When you import the data into the dataset, you also import the connection information from either the Power BI Desktop or the Excel file. Let's say you configure a scheduled refresh or do a manual refresh on the dataset. Power BI uses the connection information from the dataset, along with a couple of other settings, to connect directly to the database. It then queries for updates and loads those updates into the dataset. As a side note, a Power BI gateway will likely be required to secure any data transfer between your on-premises server and Power BI. When the transfer is complete, any visualizations in reports and dashboards refresh automatically.
 
 You see, even though you can't connect to your data source directly from the Power BI service you can still get that data into Power BI. It just might take a few more steps and maybe some help from your IT department. See [Data sources in Power BI Desktop](desktop-data-sources.md) to learn more.
 
@@ -90,7 +90,7 @@ If you save your files on your local drive or a drive somewhere in your organiza
 
 If you save your files on OneDrive for Business or SharePoint - Team Sites, you can then connect to or import them into Power BI. Then, your dataset, reports, and dashboard will always be up-to-date. Because both OneDrive and Power BI are in the cloud, Power BI can connect directly to your saved file. It connects about once every hour and checks for updates. The dataset and any visualizations refresh automatically if there are any updates.
 
-Content packs from services are automatically updated. In most cases, they're updated once a day. You can manually refresh, but if you see any updated data will depend on the service provider. Updates based on content packs from other people in your organization will depend on the data sources used and how the person who created the content pack set up the refresh.
+Content packs from services are automatically updated. In most cases, they're updated once a day. You can manually refresh, but if you see any updated data will depend on the service provider. Updates to content packs from people in your organization will depend on the data sources used. They'll also depend on how the person who created the content pack configured the refresh.
 
 Azure SQL Database, Azure SQL Data Warehouse, and Spark on Azure HDInsight are unique in that they're data sources in the Cloud. Because the Power BI service is also in the cloud, Power BI can connect to them live, using DirectQuery. What you see in Power BI is always in sync and there's no need to set up a scheduled refresh.
 
@@ -99,7 +99,7 @@ SQL Server Analysis Services is unique. When you connect to it from Power BI, it
 Data refresh is a super important part of Power BI, and much too deep to cover here. If you want to get a thorough understanding, be sure to check out [Data Refresh in Power BI](refresh-data.md).
 
 ## Considerations and limitations
-For all data sources used in the Power BI service, consider the following limitations. There are other limitations that apply to specific features, but the following list applies to the Power BI service overall:
+For all data sources used in the Power BI service, consider the following limitations. There are other limitations that apply to specific features, but the following list applies to the full Power BI service:
 
 * **Dataset size limit**: There's a 1-GB limit for each dataset in the Power BI service.
 * **Row limit**: The maximum number of rows in your dataset when not using DirectQuery is 2 billion. Three of those rows are reserved so that results in a usable maximum of 1,999,999,997 rows. The maximum number of rows when using DirectQuery is 1 million rows.
