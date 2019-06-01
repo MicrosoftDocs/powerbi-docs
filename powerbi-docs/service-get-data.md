@@ -27,7 +27,7 @@ After you select **Get Data**, you can choose the data you want to access
 ![](media/service-get-data/pbi_getdata_startscreen.png)
 
 ## Discover content
-![](media/service-get-datapbi_getdata_discovercontent.png)
+![](media/service-get-data/pbi_getdata_discovercontent.png)
 
 The **Discover content** section contains all of the data and reports you need already prepared for you. In Power BI, there are two types of content packs. One type is created and shared by other users in your organization. The other type includes the services like Google Analytics, Marketo, or Salesforce. 
 
