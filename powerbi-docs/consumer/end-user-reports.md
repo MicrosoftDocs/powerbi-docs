@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 5/10/2018
+ms.date: 5/30/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ---
@@ -21,7 +21,7 @@ A Power BI report is a multi-perspective view into a dataset, with visuals that 
 
 ![Screenshot of a report page.](./media/end-user-reports/power-bi-report.png)
 
-This report has four pages (or tabs) and you're currently viewing the **Sentiment** page. On this page are three different visuals and a page title. If you're new to Power BI, you can get a good foundation by reading [Basic concepts for Power BI service consumers](end-user-basic-concepts.md). Reports are available for viewing, sharing, and annotating on mobile devices. For more info, see [Explore reports in the Power BI mobile apps](mobile/mobile-reports-in-the-mobile-apps.md).
+This report has six pages (or tabs) and you're currently viewing the **Sentiment** page. On this page are five different visuals and a page title. If you're new to Power BI, you can get a good foundation by reading [Basic concepts for Power BI service consumers](end-user-basic-concepts.md). Reports are available for viewing, sharing, and annotating on mobile devices. For more info, see [Explore reports in the Power BI mobile apps](mobile/mobile-reports-in-the-mobile-apps.md).
 
 ## Advantages of reports
 
