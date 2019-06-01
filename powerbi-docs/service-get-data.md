@@ -29,7 +29,7 @@ After you select **Get Data**, you can choose the data you want to access
 ## Discover content
 ![](media/service-get-data/pbi_getdata_discovercontent.png)
 
-The **Discover content** section contains all the data and reports you need already prepared for you. In Power BI, there are two types of content packs. One type, **Organizational**, is created and shared by other users in your organization. The other type, **Services**, includes the services like Google Analytics, Marketo, or Salesforce. 
+The **Discover content** section contains all the data and reports you need already prepared for you. In Power BI, there are two types of content packs: Organizational and Services. 
 
 **Organizational**: If you and other users in your organization have a Power BI Pro account, you can create, share, and use content packs. To learn more, see [Organizational content packs](service-organizational-content-pack-introduction.md).
 
@@ -37,7 +37,7 @@ The **Discover content** section contains all the data and reports you need alre
 
 ## Create new content
 
-The **Create new content** section contains options for creating and importing content yourself. In Power BI, there are two ways to create or import your own content. One is through the use of **Files**. The other is through the use of **Databases**. 
+The **Create new content** section contains options for creating and importing content yourself. In Power BI, there are two ways to create or import your own content: Files and Databases. 
 
 ### Files
 ![](media/service-get-data/pbi_getdata_files.png)
@@ -63,7 +63,7 @@ Where you store your files makes a significant difference, too. OneDrive for Bus
 
 Connections from Power BI to these databases are live. Let's say you connect to an Azure SQL Database. You then begin exploring its data by creating reports in Power BI. Whenever you slice your data or add another field to a visualization, Power BI makes a query right to the database. To learn more, see [Azure and Power BI](service-azure-and-power-bi.md).
 
-**Databases on-premises**: From the Power BI service, you can connect directly to SQL Server Analysis Services Tabular model databases. To do so, you'll need a Power BI Enterprise gateway. If you're not clear on how to connect to your organization's tabular model database, check with your administrator or IT department. To learn more, see [SQL Server Analysis Tabular data in Power BI](sql-server-analysis-services-tabular-data.md).
+**Databases on-premises** -  From the Power BI service, you can connect directly to SQL Server Analysis Services Tabular model databases. To do so, you'll need a Power BI Enterprise gateway. If you're not clear on how to connect to your organization's tabular model database, check with your administrator or IT department. To learn more, see [SQL Server Analysis Tabular data in Power BI](sql-server-analysis-services-tabular-data.md).
 
 For other database types in your organization, you'll need to use Power BI Desktop or Excel to connect to, query, and load data into a data model. You can then import your file into Power BI where a dataset exists. If you configure a scheduled refresh, Power BI will use that configuration and connection information from the file to connect directly to the datasource and query for updates. Power BI then loads those updates into the dataset. To learn more, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
 
@@ -107,7 +107,7 @@ Data refresh is a super important part of Power BI, and much too deep to cover h
 ## Considerations and limitations
 For all data sources used in the Power BI service, consider the following limitations. There are other limitations that apply to specific features, but the following list applies to the full Power BI service:
 
-* **Dataset size limit**: There's a 1-GB limit for each dataset in the Power BI service.
-* **Row limit**: The maximum number of rows in your dataset when not using DirectQuery is 2 billion. Three of those rows are reserved so that results in a usable maximum of 1,999,999,997 rows. The maximum number of rows when using DirectQuery is 1 million rows.
-* **Column limit**: The maximum number of columns allowed in a dataset, across all tables in the dataset, is 16,000 columns. This limit applies to the Power BI service and to datasets used in Power BI Desktop. Power BI uses an internal row number column per table in the dataset, which means the maximum number of columns is 16,000 minus one for each table in the dataset.
+* **Dataset size limit** - There's a 1-GB limit for each dataset in the Power BI service.
+* **Row limit** - The maximum number of rows in your dataset when not using DirectQuery is 2 billion. Three of those rows are reserved so that results in a usable maximum of 1,999,999,997 rows. The maximum number of rows when using DirectQuery is 1 million rows.
+* **Column limit** - The maximum number of columns allowed in a dataset, across all tables in the dataset, is 16,000 columns. This limit applies to the Power BI service and to datasets used in Power BI Desktop. Power BI uses an internal row number column per table in the dataset, which means the maximum number of columns is 16,000 minus one for each table in the dataset.
 
