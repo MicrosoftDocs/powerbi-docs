@@ -7,7 +7,7 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 05/31/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -60,7 +60,5 @@ When you have a report in your workspace, you may need to know what dataset it's
 
 ## Next steps
 
-- [Promote datasets](service-datasets-promote.md)
-- [Certify datasets](service-datasets-certify.md)
-- [Govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md)
+- [Use datasets across workspaces (Preview)](service-datasets-across-workspaces.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

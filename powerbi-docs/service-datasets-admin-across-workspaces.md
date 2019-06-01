@@ -7,7 +7,7 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 05/31/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -35,4 +35,5 @@ As a tenant admin, you can provide a URL for the **Learn more** link on the **En
 
 ## Next steps
 
+- [Use datasets across workspaces (Preview)](service-datasets-across-workspaces.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)

@@ -14,13 +14,14 @@ LocalizationGroup: Share your work
 ---
 # Use datasets across workspaces (Preview)
 
-Business intelligence is a collaborative activity. It's important to establish standardized datasets that can be the 'one source of truth.' Discovering and reusing existing datasets is key. When expert data modelers in your organization create and share optimized datasets, report creators can start with those datasets to build accurate reports. Then your organization has consistent data for making decisions, and a healthy data culture.
+Business intelligence is a collaborative activity. It's important to establish standardized datasets that can be the 'one source of truth.' Discovering and reusing those standardized datasets is key. When expert data modelers in your organization create and share optimized datasets, report creators can start with those datasets to build accurate reports. Then your organization has consistent data for making decisions, and a healthy data culture.
 
-Power BI makes it easy for dataset owners to certify or promote datasets so others can discover them. Then report authors to find quality, official datasets they can use wherever they are in Power BI. Dataset owners can keep control of who has access to their data by using the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Tenant administrators have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
+Power BI makes it easy for dataset creators to certify or promote datasets so others can discover them. Then report authors find quality, official datasets they can use wherever they are in Power BI. Dataset owners can keep control of who has access to their data by using the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Tenant administrators have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
 
 ## Dataset sharing and the new workspace experience
 
-Building reports based on datasets in different workspaces, and copying reports to different workspaces, are tightly coupled with the new workspace experience:
+Building reports based on datasets in different workspaces, and copying reports to different workspaces, are tightly coupled with the [new workspace experience](service-create-the-new-workspaces.md):
+
 - In the service, when you open the dataset catalog from a new workspace experience, the dataset catalog shows datasets that are in your My Workspace and in new workspace experience workspaces. 
 - When you open the dataset catalog from a classic workspace, you only see the datasets in that workspace, not the ones in other workspaces.
 - In the Desktop, you can publish Live Connect reports to different workspaces, as long as their datasets are in new experience workspaces.
@@ -41,6 +42,15 @@ When you find a report you like, in a workspace or an app, you can make a copy o
 ## Promotion and certification
 
 If you create datasets, hen you create one that others can benefit from, you can make it easier for them to discover it by [promoting your dataset](service-datasets-promote.md). You can also request that experts in your organization [certify your dataset](service-datasets-certify.md).
+
+## Licensing
+
+The specific features and experiences built on shared dataset capabilities are licensed according to their existing scenarios.  For example:
+
+- In general, discovering and connecting to shared datasets is available to anyone. However, users without a Pro license can only connect to datasets that reside in their personal My Workspace or in Premium workspaces.
+- Promoting and certifying datasets outside of personal workspaces requires a Pro license, because you need a Pro license to be a member in an app workspace.
+- Copying reports between workspaces requires a Pro license, again because you need a Pro license to be a member in an app workspace.
+- Copying reports from an app requires a Pro license, as was required for organizational content packs.
 
 ## Considerations and limitations
 

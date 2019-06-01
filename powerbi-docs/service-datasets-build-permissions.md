@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 ---
 # Create and share datasets (Preview)
 
-As a *dataset*, or *data model*, creator, you can create datasets for others to easily discover and reuse. Learn how to share them, and how you control who has access to the data by using the Build permission.
+As a creator of *data models* in Power BI Desktop, you can share them as *datasets* in the Power BI service. Then report creators can easily discover and reuse the datasets you've shared. Learn how to share them, and how you control who has access to the data by using the Build permission.
 
 ## Steps to sharing your dataset
 
@@ -81,7 +81,5 @@ When you have a shared dataset in your workspace, you may need to know what repo
 
 ## Next steps
 
-- [Promote datasets](service-datasets-promote.md)
-- [Certify datasets](service-datasets-certify.md)
-- [Govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md)
+- [Use datasets across workspaces (Preview)](service-datasets-across-workspaces.md)
 - Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
