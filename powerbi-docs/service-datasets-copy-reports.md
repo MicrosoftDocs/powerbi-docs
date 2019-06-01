@@ -53,7 +53,7 @@ When you have a report in your workspace, you may need to know what dataset it's
 
     ![View related icon](media/service-datasets-copy-reports/power-bi-dataset-view-related.png)
 
-1. The **Related content** dialog box shows all related items. In this list, the dataset looks like any other. You can't tell it resides in a different workspace.
+1. The **Related content** dialog box shows all related items. In this list, the dataset looks like any other. You can't tell it resides in a different workspace. This issue is known.
  
     ![Related content dialog box](media/service-datasets-copy-reports/power-bi-dataset-related.png)
 

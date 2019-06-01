@@ -14,17 +14,17 @@ LocalizationGroup: Share your work
 ---
 # Create and share datasets (Preview)
 
-As a dataset creator, you can create datasets for others to easily discover and reuse. Learn how to share them, and how you control who has access to the data by using the Build permission.
+As a *dataset*, or *data model*, creator, you can create datasets for others to easily discover and reuse. Learn how to share them, and how you control who has access to the data by using the Build permission.
 
 ## Steps to sharing your dataset
 
-1. You create a .pbix file with a data model in Power BI Desktop. If you're planning to offer this dataset for others to build reports, you may not even design a report in the .pbix file.
+1. You start by creating a .pbix file with a data model in Power BI Desktop. If you're planning to offer this dataset for others to build reports, you may not even design a report in the .pbix file.
 
     A best practice is to save the .pbix file to an Office 365 group.
 
 1. Publish the .pbix file to a [new experience workspace](service-create-the-new-workspaces.md) in the Power BI service.
     
-    Already, others can create reports in other workspaces based on this dataset, if they're members of this workspace.
+    Already, other members of this workspace can create reports in other workspaces based on this dataset.
 
 1. Now you can [create an app](service-create-distribute-apps.md) from this workspace. When you do, on the **Permissions** page, you specify who has permissions and what they can do.
 
@@ -33,19 +33,29 @@ As a dataset creator, you can create datasets for others to easily discover and 
 
     ![Set app permissions](media/service-datasets-build-permissions/power-bi-dataset-app-permissions.png)
 
-1. Select **Publish app**, or **Update app**, if it's already published.
+1. Select **Publish app**, or **Update app** if it's already published.
 
 ## Build permissions for shared datasets
 
 The Build permission type is only relevant for datasets. With it, users can build new content on a dataset, such as reports, dashboards, pinned tiles from Q&A, and Insights Discovery. They can also build new content on the dataset outside Power BI, such as Excel sheets via Analyze in Excel, XMLA, and export.
 
-Users can get the permission in different ways:
+Users get Build permission in different ways:
 
-- A member of the workspace where the dataset resides can assign the permission to specific users or security groups in the Permission Center. Click the ellipsis (…) next to a dataset > **Manage Permissions**.
-- An admin or member of the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets.
+- A member of the workspace where the dataset resides can assign the permission to specific users or security groups in the Permission center. Select the ellipsis (…) next to a dataset > **Manage Permissions**.
+
+    ![Select the ellipsis](media/service-datasets-build-permissions/power-bi-dataset-manage-permissions.png)
+
+    That opens the Permission center for that dataset, where you can set and change permissions.
+
+    ![Permission center](media/service-datasets-build-permissions/power-bi-dataset-permissions.png)
+
+- An admin or member of the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets. See [Steps to sharing your dataset](#steps-to-sharing-your-dataset) for details.
+
 - Say you have Reshare and Build permissions on a dataset. When you share a report or dashboard built on top of that dataset you can specify that the recipients also get Build permission for the underlying dataset.
 
-![Build permissions](media/service-datasets-build-permissions/power-bi-share-report-allow-users.png)
+    ![Build permissions](media/service-datasets-build-permissions/power-bi-share-report-allow-users.png)
+
+You can remove people's Build permissions for a dataset. If you do, they can still see the report built on the shared dataset, but they can no longer edit it.
 
 ## More granular permissions
 
