@@ -1,5 +1,5 @@
 ---
-title: Discover datasets from different workspaces (Preview) - Power BI
+title: Create reports based on datasets from different workspaces (Preview) - Power BI
 description: Learn how you can share a dataset with users across the organization. Then they can build reports based on your dataset in their own workspaces.
 author: maggiesMSFT
 manager: kfile
