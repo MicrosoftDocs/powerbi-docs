@@ -47,6 +47,36 @@ Some of the filters have **(All)** next to them. **(All)** means all values are 
 
 Anyone viewing this report can interact with these filters.
 
+### View only those filters applied to a visual
+To get a closer look at the filters applied to a specific visual, hover over the visual to reveal the filter icon ![icon](media/end-user-report-filter/power-bi-filter-icon.png). Select that filter icon to see a pop-up with all the filters, slicers, and so on, affecting that visual. The filters on the pop-up are the same filters displayed on the **Filters** pane. 
+
+![list of filters](media/end-user-report-filter/power-bi-hover-visual-filter.png)
+
+ 
+Here are the types of filters this view can display:
+- Basic filters
+- Slicers
+- Cross-highlighting
+- Cross-filtering
+- Advanced filters
+- Top N filters
+- Relative Date filters
+- Sync-slicers
+- Include/Exclude filters
+- Filters passed through a URL
+
+
+
+In the example, below:
+1. We can see that the column chart has been cross-filtered.
+2. **Included** tells us that the cross-filter is for **Segment**, and three are included. 
+3. A slicer has been applied for **Quarter**.
+4. **Region** is a filter applied to this report page, and
+5. **isVanArsdel** and **Year** are filters applied to this visual.
+
+
+![list of filters](media/end-user-report-filter/power-bi-visual-pop-up.png)
+
 ### Search in a filter
 
 Sometimes a filter can have a long list of values. Use the search box to find and select the value you want.

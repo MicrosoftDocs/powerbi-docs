@@ -86,6 +86,8 @@
         href: end-user-search-sort.md
       - name: "View automatic insights for dashboard tiles"
         href: end-user-insights.md
+      - name: "Turn on preview features"
+        href: end-user-preview-features.md
     - name: Get data
       items: 
       - name: "Apps in Power BI"
