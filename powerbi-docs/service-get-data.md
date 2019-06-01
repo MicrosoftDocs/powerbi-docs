@@ -35,7 +35,11 @@ The **Discover content** section contains all the data and reports you need alre
 
 **Services**: There are literally dozens of services with content packs for Power BI, and more are being added all the time. Most services require you to have an account. To learn more, see [Connect to services](service-connect-to-services.md).
 
-## Files
+## Create new content
+
+The **Create new content** section contains options for creating and importing content yourself. In Power BI, there are two ways to create or import your own content. One is through the use of **Files**. The other is throug the use of **Databases**. 
+
+### Files
 ![](media/service-get-data/pbi_getdata_files.png)
 
 **Excel** (*.xlsx*, *.xlsm*) - Excel is unique. In Excel, a workbook may include different data types. For example, it can include data you've entered into worksheets yourself. It can also include data that you've queried and loaded from external data sources by using Power Query. Power Query is available through Get & Transform in Excel 2016 or Power Pivot. You may import data from tables in worksheets, or import data from a data model. To learn more, see [Get data from Excel](service-get-data-from-files.md).
@@ -48,7 +52,7 @@ For other file types, like XML Table (*.xml*) or text (*.txt*) files, you can us
 
 Where you store your files makes a significant difference, too. OneDrive for Business provides the greatest amount of flexibility and integration with Power BI. It's OK to keep your files on your local drive. Though if you need to refresh your data, there are a few extra steps. For more information, see the article links below.
 
-## Databases
+### Databases
 ![](media/service-get-data/pbi_getdata_databases.png)
 
 **Databases in the Cloud** - From the Power BI service, you can connect live to:
@@ -63,7 +67,7 @@ Connections from Power BI to these databases are live. Let's say you connect to 
 
 For other database types in your organization, you'll need to use Power BI Desktop or Excel to connect to, query, and load data into a data model. You can then import your file into Power BI where a dataset exists. If you configure a scheduled refresh, Power BI will use that configuration and connection information from the file to connect directly to the datasource and query for updates. Power BI then loads those updates into the dataset. To learn more, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
 
-### What if my data comes from a different source?
+## What if my data comes from a different source?
 There are hundreds of different data sources you can use with Power BI. Wherever you get your data from, that data has to be in a format consumable by the Power BI service. With consumable data, the Power BI service can create reports and dashboards, answer questions with Q & A, and so on.
 
 Some data sources already have data formatted for the Power BI service. These sources are like content packs from service providers like Google Analytics and Twilio. SQL Server Analysis Services Tabular model databases are ready for use, too. You can also connect live to databases in the cloud like Azure SQL Database and Spark on HDInsight.
