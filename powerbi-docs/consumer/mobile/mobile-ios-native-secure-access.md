@@ -46,4 +46,4 @@ Power BI mobile iOS app allows admins to control that setting by pushing app con
 
 ## Next steps
 
-
+![Use MDM to remotely configure Power BI iOS app](mobile-app-configuration.md)
