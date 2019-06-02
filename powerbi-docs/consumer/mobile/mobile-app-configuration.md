@@ -23,8 +23,6 @@ Power BI Mobile app for iOS supports the following configuration scenarios:
 - Report Server configuration
 - Data protection settings
 
-These configuration scenarios only work with enrolled devices; however, any MDM provider is supported. If you are not using Intune, you'll need to consult with your MDM documentation on how to deploy these settings. 
-
 ## Report server configuration
 
 Power BI iOS app allows administrators to remotely "push" Report Server configuration with enrolled devices.
@@ -99,22 +97,18 @@ Power BI iOS app offers administrators the ability to customize the default conf
 </tbody>
 </table>
 
-### Deploying app configuration settings with Intune
-
-The Intune portal enables administrators to easily deploy these settings to Power BI iOS app via App Configuration Policies.
+## Deploying app configuration settings
 
 The following steps will allow you to create an app configuration policy. After the configuration policy is created, you can assign its settings to groups of users.
 
-### Create an app configuration policy for Power BI app
+1. Connect your MDM tool.
 
-1. Sign into the Azure portal.
+2. Create and name a new app configuration policy.
 
-2. Select **More Services** \> **Monitoring + Management** \> **Intune**.
+3. Choose which users to distribute this app configuration policy to.
 
-3. On the **Client apps** blade of the Manage list, select **App configuration policies**.
+4. Create key-value pairs for the setting you want to push to your users.
 
-4. On the **App Configuration policies** blade, choose **Add**.
+The Intune portal enables administrators to easily deploy these settings to Power BI iOS app via App Configuration Policies.
+However, any MDM provider is supported. If you are not using Intune, you'll need to consult with your MDM documentation on how to deploy these settings.
 
-5. On the **Add app configuration** blade, enter a **Name**, and optional **Description** for the app configuration settings.
-
-6. 
