@@ -182,6 +182,8 @@
         href: mobile/mobile-apple-watch.md
       - name: "Scan a barcode from the app on your iPhone"
         href: mobile/mobile-apps-scan-barcode-iphone.md
+      - name: "Remotely configure Power BI iOS app using mobile device management (MDM) tool"
+        href: mobile/mobile-app-configuration.md
     - name: Android devices
       items: 
       - name: "Get started with the Android app"
