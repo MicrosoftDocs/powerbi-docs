@@ -24,17 +24,17 @@ To get easy and quick access to your frequently used reports or dashboards, use 
     2. Use the 'Siri shortcut' button from the ‘Actions’ menu.
     3. Use the 'Suggested shortcuts' in the device settings (Device Setting -> Siri & Search), you can add a shortcut to the item in the suggestion list bu pressing th '+' button.
      
-     ![](media\mobile-apps-iOS-siri-and-search\power-bi-siri-create-shortcut.png)
+     ![](./media/mobile-apps-iOS-siri-and-search/power-bi-siri-create-shortcut.png)
 
 2. All the options above will open the 'Add to Siri' page with a suggested phrase to record. You can use the suggested phrase or any phrase you wish for.
     
-    ![](media\mobile-apps-iOS-siri-and-search\power-bi-siri-add-page.png)
+    ![](./media/mobile-apps-iOS-siri-and-search/power-bi-siri-add-page.png)
 
 
 ## Use Siri shortcut 
 Every time you’d like to access the dashboard or the report you created a shortcut for, open Siri and say your phrase. Power BI will automatically open with the item you asked for in focus.
 
-  ![](media\mobile-apps-iOS-siri-and-search\power-bi-siri-open.png)
+  ![](./media/mobile-apps-iOS-siri-and-search/power-bi-siri-open.png)
   
 The shortcuts will be available to you from your iOS devices (iPhone and iPad)
 ## Edit Siri phrase 
