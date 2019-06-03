@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/30/2019
+ms.date: 06/03/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ---
@@ -21,7 +21,7 @@ Reports are viewed on many different devices with varying screen sizes and aspec
 
 ## Explore the View menu
 
-The options in the **View** menu give you flexibility to display report pages at the size and width you choose.
+The options in the **View** menu give you flexibility to display report pages at the size and width you choose:
 
 - Let's say you're viewing a report on a small device and it's hard to see titles and legends.  Select **View** > **Actual size** to increase the size of the report page. Use the scroll bars to move around the report.
 
@@ -45,7 +45,3 @@ The options in the **View** menu give you flexibility to display report pages at
     ![report displays full screen](media/end-user-report-view/power-bi-full-screen.png)
 
 When you exit the report, your **View** settings aren't saved, but revert to the default. If it's important to you to save these settings, use [bookmarks](end-user-bookmarks.md).
-
-## Next steps
-
-[Create reports for Cortana](../service-cortana-answer-cards.md)s

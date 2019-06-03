@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 06/03/2019
 ms.author: mihart
 LocalizationGroup: Create reports
 ---
@@ -32,7 +32,7 @@ For the relative date slicer, select *Relative*.
 
 You can then select the settings.
 
-For the first drop-down in the *relative date slicer*, you have the following choices:
+For the first setting in the *relative date slicer*, you have the following choices:
 
 ![Screenshot of the Relative config options with the first setting called out.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
 

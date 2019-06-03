@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 5/30/2019
+ms.date: 06/03/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ---
@@ -32,7 +32,7 @@ Power BI bases a report on a single dataset. Report *designers* create the visua
 As you explore and interact with your content: filtering, slicing, subscribing, and exporting, you can't break the reports. Your work doesn't affect the underlying dataset or the original shared content. This applies to dashboards, reports, and apps.
 
 > [!NOTE]
-> Remember, you cannot hurt your data. Power BI is a great place for you to explore and experiment without worrying that you’ll “break” anything.
+> Remember, you cannot hurt your data. Power BI is a great place for you to explore and experiment without worrying that you’ll break anything.
 
 ### Save your changes or revert to the default settings
 
@@ -57,12 +57,12 @@ That doesn't mean you can't save your changes. You can, but those changes only a
 
 ## Report designers and report consumers
 
-Depending on your role, you may be a *designer*, someone who creates reports for your own use or to share with colleagues. You want to learn how to create and share reports. Or, you may be a *consumer* someone who receives reports from others. You want to learn how to understand and interact with the reports. If you're a report *consumer*, these links are for you:
+Depending on your role, you may be a *designer*, someone who creates reports for your own use or to share with colleagues. You'll want to learn how to create and share reports. Or, you may be a *consumer* someone who receives reports from others. You'll want to learn how to understand and interact with the reports. If you're a report *consumer*, these links are for you:
 
 * Start with a [tour of Power BI service](end-user-basic-concepts.md) so you know where to find reports and report tools.
 * Learn how to [open a report](end-user-report-open.md) and all the interaction available in [Reading view](end-user-reading-view.md).
 * Get comfortable with reports by taking a tour of one of our [samples](../sample-tutorial-connect-to-the-samples.md).  
-* To see which dataset the report is using and which dashboards have tiles pinned from the report, [view related content](end-user-related.md).
+* To see which dataset the report is using and which dashboards have tiles pinned from the report, see [View related content in Power BI service](end-user-related.md).
 <!--* Don't need the report any more? You can [remove it](../service-delete.md).-->
 
 > [!TIP]

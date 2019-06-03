@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 06/03/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
 ---
@@ -107,7 +107,7 @@ You can enter a new column simply by typing a new column name (in the blank colu
 >
 > If you only have two-letter abbreviations, check out [this external blog post](https://blog.ailon.org/how-to-display-2-letter-country-data-on-a-power-bi-map-85fc738497d6#.yudauacxp) for steps on how to associate your two-letter country/region abbreviations with three-letter country/region abbreviations.
 
-## Preview behavior and requirements
+## Preview considerations and requirements
 
 There are a few considerations and requirements for this Preview release of **Shape Map**:
 
