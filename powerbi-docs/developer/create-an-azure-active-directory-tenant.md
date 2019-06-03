@@ -48,7 +48,7 @@ To create a new Azure AD tenant:
 
 6. After directory creation is complete, select the information box to manage your new directory.
 
-Next, you re going to add tenant users.
+Next, you're going to add tenant users.
 
 ## Create Azure Active Directory tenant users
 
