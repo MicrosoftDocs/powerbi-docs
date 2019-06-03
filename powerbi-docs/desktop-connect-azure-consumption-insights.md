@@ -29,7 +29,7 @@ Power BI currently supports connecting to Enterprise Agreement and Customer Agre
 
 Azure Consumption Insights allows you to connect to Azure Enterprise Agreement billing accounts.
 
-In this section, you will learn how to connect get the data you need, how to migrate from using the Azure Enterprise Connector, and you'll find a mapping of *usage details columns* available in the **ACI** (Azure Consumption Insights) API.
+In this section, you will learn how to get the data you need, how to migrate from using the Azure Enterprise Connector, and you'll find a mapping of *usage details columns* available in the **ACI** (Azure Consumption Insights) API.
 
 To successfully connect using the **Azure Consumption Insights** connector, you need to have access to the Enterprise features within the Azure portal.
 
