@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/10/2019
+ms.date: 05/31/2019
 LocalizationGroup: Connect to data
 ---
 
@@ -21,8 +21,8 @@ The following data sources support DirectQuery in Power BI:
 * Amazon Redshift
 * AtScale (Beta)
 * Azure HDInsight Spark
-* Azure SQL Database
-* Azure SQL Data Warehouse
+* [Azure SQL Database](service-azure-sql-database-with-direct-connect.md)
+* [Azure SQL Data Warehouse](service-azure-sql-data-warehouse-with-direct-connect.md)
 * Google BigQuery
 * HDInsight Interactive Query
 * IBM DB2 database
@@ -52,22 +52,39 @@ The following table specifies whether an **On-premises data gateway** is require
 
 | Source | Gateway required? |
 | --- | --- |
-| SQL Server |Yes |
+| Amazon Redshift |No |
+| Azure HDInsight Spark (Beta) |No |
 | Azure SQL Database |No |
 | Azure SQL Data Warehouse |No |
-| SAP HANA |Yes |
-| Oracle Database |Yes |
-| Teradata Database |Yes |
-| Amazon Redshift |No |
-| Impala (version 2.x) |Yes |
-| Snowflake |Yes |
-| Spark (beta), version 0.9 and later |Yes |
-| Azure HDInsight Spark (Beta) |No |
+| Google BigQuery |No |
 | IBM Netezza |Yes |
+| Impala (version 2.x) |Yes |
+| Oracle Database |Yes |
 | SAP Business Warehouse Application Server |Yes |
 | SAP Business Warehouse Message Server |Not yet supported in the **Power BI service** |
-| Google BigQuery |No |
+| SAP HANA |Yes |
+| Snowflake |Yes |
+| Spark (beta), version 0.9 and later |Yes |
+| SQL Server |Yes |
+| Teradata Database |Yes |
 
+## Single sign-on (SSO) for DirectQuery sources
+
+When the SSO option is enabled and your users access reports built atop the data source, Power BI sends their authenticated Azure AD credentials in the queries to the underlying data source. This enables Power BI to respect the security settings that are configured at the data source level.
+
+The SSO option takes affect across all datasets that use this data source. It does not affect the authentication method used for import scenarios. The following data sources support SSO for connections through DirectQuery:
+
+- Azure SQL Database
+- Azure SQL Data Warehouse
+- Impala
+- SAP HANA
+- SAP BW
+- Spark
+- SQL Server
+- Teradata
+
+> [!Note]
+> Azure Multi-Factor Authentication (MFA) is not supported. Users who want to use SSO with DirectQuery must be exempted from MFA.
 
 ## Next steps
 For more information about DirectQuery, check out the following resources:

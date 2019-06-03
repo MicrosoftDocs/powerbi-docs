@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 05/31/2019
 ms.author: davidi
 
 LocalizationGroup: conceptual
@@ -65,7 +65,14 @@ The steps in this article describe how to grant a Power BI user access to a mode
 
 Data scientists primarily use Python to develop, and even deploy, their machine learning models for the Machine Learning Service.  Unlike the Machine Learning Studio, which helps automate the task of creating a schema file for the model, in the case of the Machine Learning Service, the data scientist must explicitly generate the schema file using Python.
 
-This schema file must be included in the
+This schema file must be included in the deployed web service for Machine Learning Service models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. Please see the subsection on (Optional) Automatic Swagger schema generation in the Deploy models with the Azure Machine Learning service documentation. The link includes the example entry script with the statements for the schema generation. 
+
+Specifically, the *@input_schema* and *@output_schema* functions in the entry script reference the input and output sample formats in the *input_sample* and *output_sample* variables, and use these samples to generate an OpenAPI (Swagger) specification for the web service during deployment.
+
+These instructions for schema generation by updating the entry script must also be applied to models created using automated machine learning experiments using the Azure Machine Learning SDK.
+
+> [!NOTE]
+> Models created using the Azure Machine Learning service visual interface (preview) do not currently support schema generation, but will in subsequent releases. 
 
 ## Invoking the Azure ML model in Power BI
 
