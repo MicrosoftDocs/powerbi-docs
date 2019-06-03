@@ -59,7 +59,7 @@
       href: desktop-aggregations.md      
     - name: "Composite models in Power BI Desktop"
       href: desktop-composite-models.md
-    - name: "Many-to-many relationships in Power BI Desktop (Preview)"
+    - name: "Many-to-many relationships in Power BI Desktop"
       href: desktop-many-to-many-relationships.md
     - name: "Storage mode in Power BI Desktop (Preview)"
       href: desktop-storage-mode.md
@@ -259,7 +259,7 @@
         href: desktop-add-custom-column.md
       - name: "Create responsive visuals in Power BI"
         href: visuals/desktop-create-responsive-visuals.md
-      - name: "Use inline hierarchy labels in Power BI Desktop (Preview)"
+      - name: "Use inline hierarchy labels in Power BI Desktop"
         href: desktop-inline-hierarchy-labels.md
       - name: "Use the numeric range slicer"
         href: desktop-slicer-numeric-range.md
