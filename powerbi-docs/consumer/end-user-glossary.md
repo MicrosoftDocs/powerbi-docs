@@ -8,9 +8,9 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: resource
-ms.date: 12/06/2018
+ms.date: 05/14/2019
 ms.author: mihart
-#Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and t hey don't get confused or frustrated and instead get the result they expect.
+#Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
 
 # Glossary for Power BI service
@@ -180,6 +180,9 @@ A bridge to underlying data sources. It provides quick and secure data transfer 
 ## H
 **high-density visuals**
 Visuals with more data points than Power BI can render. Power BI samples the data to show the shape and outliers.
+
+**Home**
+The default landing age for Power BI service users. Doesn't modify anything. Can be called Power BI Home or simply Home.
 
 ## I
 

@@ -1,6 +1,6 @@
 ---
 title: Embed a report in a secure portal or website
-description: With the Power BI secure embed feature, you can enable users to easily and securely embed reports in internal web portals.
+description: The Power BI embeds feature enables users to easily and securely embed reports in internal web portals.
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -8,15 +8,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/08/2019
+ms.date: 05/20/2019
 LocalizationGroup: Share your work
 ---
 
 # Embed a report in a secure portal or website
 
-The new secure **Embed** option for reports in Power BI enables users to easily and securely embed reports in internal web portals, whether **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Reports embedded in this way respect all item permissions and data security through row-level security (RLS). The feature is designed to allow no-code embedding into any portal that accepts a URL or iFrame to embed.
+With the new **Embed** option for Power BI reports, you can easily and securely embed reports in internal web portals. These portals can be **cloud-based** or **hosted on-premises**, such as SharePoint 2019. Embedded reports respect all item permissions and data security through [row-level security (RLS)](service-admin-rls.md). They provide no-code embedding into any portal that accepts a URL or iFrame. 
 
-The **Embed** option also supports [URL Filters](service-url-filters.md) and URL settings. The **Embed** option allows you to integrate with portals using a low-code approach that requires basic HTML and JavaScript knowledge.
+The **Embed** option supports [URL Filters](service-url-filters.md) and URL settings. It allows you to integrate with portals using a low-code approach requiring only basic HTML and JavaScript knowledge.
 
 ## How to **Embed** Power BI reports into portals
 
@@ -24,66 +24,66 @@ The **Embed** option also supports [URL Filters](service-url-filters.md) and URL
 
     ![Secure Embed option drop-down option](media/service-embed-secure/secure-embed-drop-down-menu.png)
 
-2. Select the Embed option to open a dialog that provides a link and an iFrame that is used to embed the report securely.
+2. Select the **Embed** option to open a dialog that provides a link and an iFrame you can use to embed the report securely.
 
     ![Embed option dialog box](media/service-embed-secure/secure-embed-code-dialog.png)
 
-3. After you embed your URL in your web portal, or if you open the URL directly, the user is authenticated before given access to the report. Below, the user has not signed-in to Power BI in the browser session. When they press **Sign-In**, a new browser window or tab may need to open. Check for pop-up blockers if you don't get prompted to sign in.
+3. Whether a user opens a report URL directly, or one embedded in a web portal, report access requires authentication. The following screen appears if a user has not signed-in to Power BI in their browser session. When they select **Sign-In**, a new browser window or tab could open. Have them check for pop-up blockers if they don't get prompted to sign in.
 
     ![Sign in to view this report](media/service-embed-secure/secure-embed-sign-in.png)
 
-4. After the user has signed in, the report opens, showing the data and allowing users to navigate between pages and to set filters. The report is shown only to users who have permission to view the report in Power BI. All row-level security (RLS) rules are also applied. Lastly, the user needs to be correctly licensed – either they need a Power BI Pro license, or the report must be in a workspace that is in a Power BI Premium capacity. The user needs to sign in each time they open a new browser window, but after they’ve signed in once other reports load automatically.
+4. After the user has signed in, the report opens, showing the data and allowing page navigation and filter setting. Only users who have view permission can see the report in Power BI. All [row-level security (RLS)](service-admin-rls.md) rules are also applied. Lastly, the user needs to be correctly licensed – either they need a Power BI Pro license, or the report must be in a workspace that is in a Power BI Premium capacity. The user needs to sign in each time they open a new browser window. However, once signed in, other reports load automatically.
 
     ![Embed report](media/service-embed-secure/secure-embed-report.png)
 
-5. When using the iFrame option, it's best to edit the HTML provided to specify the desired height and width to fit into your portal’s web page.
+5. When using an iFrame, you may need to edit the **height** and **width** to have it fit in your portal’s web page.
 
     ![Set height and width](media/service-embed-secure/secure-embed-size.png)
 
-## Granting access to reports
+## Granting report access
 
-The Embed option doesn't automatically permit users to view the report. The permissions to view the report are set within the Power BI service.
+The **Embed** option doesn't automatically permit users to view the report. View permissions are set in the Power BI service.
 
-To provide access to the report within the Power BI service, you can share the report with the users who require access to the embedded report. If you're using an Office 365 Group, you can list the user as a member of the app workspace within the Power BI service. For more information, see how to [manage an app workspace](service-manage-app-workspace-in-power-bi-and-office-365.md).
+In the Power BI service, you can share embedded reports with users requiring access. If you're using an Office 365 Group, you can list the user as an app workspace member. For more information, see how to [manage your app workspace in Power BI and Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## Licensing
 
-Users viewing the embedded report need either a Power BI Pro license or the content needs to be in a workspace that's in a [Power BI Premium capacity (EM or P SKU)](service-admin-premium-purchase.md).
+To view the embedded report, users need either a Power BI Pro license or the content needs to be in a workspace that's in a [Power BI Premium capacity (EM or P SKU)](service-admin-premium-purchase.md).
 
 ## Customize your embed experience using URL settings
 
-The embed URL supports several input settings that help you customize your user experience. If you’re using the iFrame provided, make sure you update the URL in the iFrame’s src settings.
+You can customize the user experience using the embed URL's input settings. In the provided iFrame, you can update the URL's  **src** settings.
 
 | Property  | Description  |  |  |  |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
-| pageName  | You can use the **pageName** query string parameter to set which page of the report to open. The **pageName** value corresponds to the end of the report URL when viewing a report in the Power BI service, as shown below. |  |  |  |
-| URL Filters  | You can use [URL Filters](service-url-filters.md) in the embed URL you received from the Power BI UI to filter the content of the embed. This way you can build low-code integrations with only basic HTML and JavaScript experience.  |  |  |  |
+| pageName  | You can use the **pageName** query string parameter to set which report page to open. You can find this value at the report URL's end when viewing a report in the Power BI service, as shown below. |  |  |  |
+| URL Filters  | You can use [URL Filters](service-url-filters.md) in the embed URL you received from the Power BI UI to filter the embed content. This way you can build low-code integrations with only basic HTML and JavaScript experience.  |  |  |  |
 
-## Set which page opens when the report is embedded
+## Set which page opens for an embedded report 
 
-The value provided in the *pageName* setting corresponds to the end of the report URL when viewing a report in the Power BI service.
+You can find the **pageName** value at the report URL's end  when viewing a report in the Power BI service.
 
-1. Open the report from the Power BI service in your web browser, and then copy the URL from the address bar.
+1. Open the report from the Power BI service in your web browser, and then copy the address bar URL.
 
     ![Report section](media/service-embed-secure/secure-embed-report-section.png)
 
-2. Append the *pageName* setting to the URL.
+2. Append the **pageName** setting to the URL.
 
     ![Append pageName](media/service-embed-secure/secure-embed-append-page-name.png)
 
-## Filter report content using URL filters
+## Filter report content using URL filters 
 
-For some advanced features, you can [URL Filters](service-url-filters.md) to build more experiences using the report. For example, the URL below filters the report to show data for the Energy industry.
+You can use [URL Filters](service-url-filters.md) to provide different report views. For example, the URL below filters the report to show data for the Energy industry.
 
 Using the combination of **pageName** and [URL Filters](service-url-filters.md) can be powerful. You can build experiences using basic HTML and JavaScript.
 
-For example, here’s how you can add a button to an HTML page:
+For example, here’s a button you can add to an HTML page:
 
 ```html
 <button class="textLarge" onclick='show("ReportSection", "Energy");' style="display: inline-block;">Show Energy</button>
 ```
 
-When pressed, the button calls a function to update the iFrame with an updated URL, which includes the filter for the Energy industry.
+When selected, the button calls a function to update the iFrame with an updated URL, which includes the Energy industry filter.
 
 ```javascript
 function show(pageName, filterValue)
@@ -119,20 +119,20 @@ You can add as many buttons as you’d like to create a low-code custom experien
 
 * Secure embed works for reports published to the Power BI service.
 
-* The user needs to sign-in to view the report whenever they open a new browser window.
+* The user needs to sign in to view the report whenever they open a new browser window.
 
-* Some browsers require you to refresh the page after sign-in, especially when using  InPrivate or Incognito modes.
+* Some browsers require you to refresh the page after sign in, especially when using  InPrivate or Incognito modes.
 
-* To achieve a single sign-on experience, use the Embed in SharePoint Online option, or build a custom integration using the [user owns data](developer/embed-sample-for-your-organization.md) approach. Learn more about [user owns data](developer/embed-sample-for-your-organization.md).
+* To achieve a single sign-on experience, use the Embed in SharePoint Online option, or build a custom integration using the [user owns data](developer/embed-sample-for-your-organization.md) embedding method. 
 
-* The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embed-sample-for-your-organization.md) approach to embedding. Learn more about [user owns data](developer/embed-sample-for-your-organization.md).
+* The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embed-sample-for-your-organization.md) embedding method. 
 
 ## Next steps
 
-* [Ways to share your work](service-how-to-collaborate-distribute-dashboards-reports.md)
+* [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 
-* [URL filters](service-url-filters.md)
+* [Filter a report using query string parameters in the URL](service-url-filters.md)
 
-* [SharePoint Online report web part](service-embed-report-spo.md)
+* [Embed with report web part in SharePoint Online](service-embed-report-spo.md)
 
-* [Publish to Web](service-publish-to-web.md)
+* [Publish to Web from Power BI](service-publish-to-web.md)

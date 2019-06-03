@@ -73,6 +73,10 @@ Watch recorded sessions at any time
 <br>by Wim Coorevits and Enrique Plaza Garcia
 <br>[Register and watch now](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
 
+**Best Practices for Managing Power BI Embedded Analytics for Multi-Tenant Deployments**
+<br>by Nimrod Shalit
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-PBI-webinar-Best-Practices-for-Managing-Power-BI-Embedded-video.html?LCID=EN-US)
+
 **Power BI: Analytics Done Right**
 <br>by Gohul Shanmugalingam
 <br>[Register and watch now](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
@@ -109,7 +113,8 @@ Watch recorded sessions at any time
 <br>by Reid Havens
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
-### Partners ###
+### Partner Solutions Series ###
+[Watch this series](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
 
 **Achieving a Win-Win for Consumer Product Goods Manufacturers and Retailers**
 <br>by Liz McCreesh from Thorogood
