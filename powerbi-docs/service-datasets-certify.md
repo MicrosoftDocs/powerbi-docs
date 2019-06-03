@@ -1,5 +1,5 @@
 ---
-title: Certify datasets (Preview)
+title: Certify datasets (Preview) - Power BI
 description: Learn how to guide enterprise users to reliable, high-quality datasets.
 author: maggiesMSFT
 manager: kfile

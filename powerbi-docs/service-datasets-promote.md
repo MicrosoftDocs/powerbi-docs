@@ -25,15 +25,15 @@ Your dataset needs to be in a new workspace experience workspace in the Power BI
 
 1. Go to the list of datasets in the workspace.
  
-3. Select the ellipsis (...), then select **Settings**.
+1. Select the ellipsis (...), then select **Settings**.
 
     ![Select the ellipsis by the dataset](media/service-datasets-certify-promote/power-bi-dataset-settings.png)
 
-4. Expand **Endorsement** > select **Promoted**.
+1. Expand **Endorsement** > select **Promoted**.
 
     ![Select Promoted and Apply](media/service-datasets-certify-promote/power-bi-dataset-promoted-endorsement.png)
 
-5. Select **Apply**.
+1. Select **Apply**.
 
 ## Request dataset certification
 
@@ -43,7 +43,7 @@ Your tenant admin has identified people in your organization who can certify dat
 
 1. In the **Endorsement** section of **Settings**, **Certified** is grayed out.
 
-2. Select the **Learn more** link.
+1. Select the **Learn more** link.
 
     Your Power BI tenant admin can configure the **Learn more** link to go to a specified location with details about the certification process in your tenant.   If they haven't customized the **Learn more** link, by default it points to the [dataset certification](service-datasets-certify.md) article.
 
