@@ -30,6 +30,7 @@ To get easy and quick access to your frequently used reports or dashboards, use 
     
     ![](media\mobile-apps-iOS-siri-and-search\power-bi-siri-add-page.png)
 
+
 ## Use Siri shortcut 
 Every time you’d like to access the dashboard or the report you created a shortcut for, open Siri and say your phrase. Power BI will automatically open with the item you asked for in focus.
 
