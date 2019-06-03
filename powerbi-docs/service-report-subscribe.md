@@ -26,7 +26,6 @@ You can only create subscriptions in the Power BI service. You receive an email 
 
 - **Creating** a subscription is a Power BI Pro feature.
 - You don't need edit permissions to the content (dashboard or report) to create a subscription for yourself, but you must have edit permissions to create one for someone else. 
-- As of January 2019, you no longer must have dataset refresh set up to run a subscription.  It runs independent of any scheduled refreshes you have set up.  
 
 ## Subscribe to a dashboard, report page, or paginated report
 
@@ -84,7 +83,8 @@ A subscription ends if the Pro license expires, the owner deletes the dashboard 
 ## Considerations and troubleshooting
 
 * Dashboards with over 25 pinned tiles, or 4 pinned live report pages, may not render fully in subscription e-mails sent to users.  Subscriptions to dashboards over these number of tiles aren't blocked. However, they're considered unsupported if you encounter issues. Consider modifying them accordingly to fall within a supported range.
-* When setting up your e-mail subscriptions, keep in mind there is a delay between when the subscription job starts, and the exact time the e-mail is sent.  To minimize the delay between the two, set up a different time for your scheduled data refresh than when your e-mail subscription is scheduled to run.
+* Please note that this is the time the subscription job will start, but it may take up a few minutes until the e-mail is delivered to your inbox in certain scenarios.
+* On rare occasions, e-mail subscriptions may take longer than fifteen minutes to be delivered to their recipients. If this happens, we recommend running your data refresh and e-mail subscription at different times to ensure timely delivery. If the issue persists, please contact support.
 * For dashboard email subscriptions, if any tiles have row-level security (RLS) applied, those tiles don't display.  
 * For report email subscriptions, if the dataset uses RLS, you can create a subscription for yourself. You can't subscribe others to a report with row-level security (RLS) applied.
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page and then rename it, you have to re-create your subscription.
