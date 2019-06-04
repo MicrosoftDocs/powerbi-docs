@@ -32,7 +32,7 @@ ms.author: maggies
   
 -   When you work with nested items in tablix cells or rectangles, you can set different background colors for the container and contained items. By default, the background color is **No color**. Items with a specific background color show through items with a background color set to **No color**. This technique can help you select the right item to set display properties, such as border visibility on tablix cells.  
   
- For more information about things to consider as you design your report, see [Planning a Report &#40;Report Builder&#41;](../../reporting-services/report-design/planning-a-report-report-builder.md).  
+ For more information about things to consider as you design your report, see [Planning a Report in Report Builder](report-builder-planning-report.md)).  
   
 ##  <a name="NamingConventions"></a> Naming Conventions for Reports, Data Sources, and Datasets  
   
@@ -112,7 +112,7 @@ ms.author: maggies
   
 ###  <a name="Expressions"></a> Working with Expressions  
   
--   Understand simple and complex expression formats. You can type simple expression format directly into text boxes, properties in the Property pane, or in locations in dialog boxes that accept an expression. For more information, see [Expressions &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expressions-report-builder-and-ssrs.md).  
+-   Understand simple and complex expression formats. You can type simple expression format directly into text boxes, properties in the Property pane, or in locations in dialog boxes that accept an expression. For more information, see [Expressions in Report Builder](report-builder-expressions.md).  
   
 -   When you create an expression, it helps to create each part independently and verify its value. You can then combine all the parts into a final expression. A useful technique is to add a text box in a matrix cell, display each part of the expression, and set conditional visibility on the text box. To control the border style and color when the text box is hidden, first place the text box in a rectangle, and then set the border style and color of the rectangle to match the matrix.  
   
@@ -151,8 +151,7 @@ ms.author: maggies
  The combination of this behavior, the width and height properties of report items, the size of the report body, the page height and page width definition, the margin settings of the parent report, and the renderer-specific support for paging all combine to determine what report items fit together on a rendered page. For more information, see [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](../../reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs.md).  
   
 ## See Also  
- [Report Builder in SQL Server](../../reporting-services/report-builder/report-builder-in-sql-server-2016.md)   
- [Reporting Services Tutorials &#40;SSRS&#41;](../../reporting-services/reporting-services-tutorials-ssrs.md)   
+ [Power BI Report Builder](report-builder-in-power-bi.md)   
  [Report Builder Tutorials](../../reporting-services/report-builder-tutorials.md)  
   
   

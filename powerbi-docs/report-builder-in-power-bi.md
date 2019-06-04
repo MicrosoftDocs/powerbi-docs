@@ -69,19 +69,14 @@ You can also publish a paginated report to the Power BI service. Read more about
   [Tutorial: Creating a Quick Chart Report Offline](../../reporting-services/report-builder/tutorial-create-a-quick-chart-report-offline-report-builder.md)  
  Introduces Report Builder and the wizards available to help you create reports. The tutorial provides a set of data for you to work with so you do not need to connect to a data source to get started.  
   
- [Planning a Report &#40;Report Builder&#41;](../../reporting-services/report-design/planning-a-report-report-builder.md)  
+ [Planning a report in Power BI Report Builder](report-builder-planning-report.md)  
  Provides information on what you should consider before you start to build your report.  
   
- [Report Authoring Concepts &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/report-authoring-concepts-report-builder-and-ssrs.md)  
+ [Report authoring concepts in Power BI Report Builder](report-builder-authoring-concepts.md)  
  Defines key concepts used in throughout Report Builder documentation.  
   
- [Report Design View &#40;Report Builder&#41;](../../reporting-services/report-builder/report-design-view-report-builder.md)  
+ [Report Design View in Power BI Report Builder](paginated-reports-report-design-view.md)  
  Explains the different panes and regions of report design view.  
-  
- [Shared Dataset Design View &#40;Report Builder&#41;](../../reporting-services/report-builder/shared-dataset-design-view-report-builder.md)  
- Explains the different panes and regions of shared dataset design view.  
-  
+
  [Keyboard Shortcuts &#40;Report Builder&#41;](../../reporting-services/report-builder/keyboard-shortcuts-report-builder.md)  
  Outlines the shortcut keys available for navigating and designing reports in Report Builder.  
-  
-

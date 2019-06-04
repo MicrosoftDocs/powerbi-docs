@@ -102,7 +102,7 @@ Simple expressions use symbols to indicate whether the reference is to a field, 
  For more information and examples, see the following topics:  
   
 -   [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs.md)  
--   [Expression Examples &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expression-examples-report-builder-and-ssrs.md)  
+-   [Expression examples in Power BI Report Builder](report-builder-expression-exampless.md)  
 -   [Filter Equation Examples &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs.md)  
 -   [Group Expression Examples &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/group-expression-examples-report-builder-and-ssrs.md)  
 -   [Tutorial: Introducing Expressions](Tutorial:%20Introducing%20Expressions.md)
