@@ -13,20 +13,22 @@ ms.author: michalfo
 
 ---
 # Siri integration with Power BI Mobile iOS App 
-Use Siri shortcuts to find and access the content you need
+### Use Siri shortcuts to find and access the content you need
 
 To get easy and quick access to your frequently used reports or dashboards, use the Siri shortcut integration. Create a shortcut to your item and use it when you want to view it.
 
 
 ## Create Siri shortcut for a report or dashboard
 1. There are three ways to create Siri shortcut to your reports and dashboards.
-    1. A banner with a ***'Add to Siri’*** option will be added to your frequently used reports and dashboards. Press the button to open the 'Add to Siri' page.
-    2. Use the 'Siri shortcut' button from the ‘Actions’ menu.
-    3. Use the 'Suggested shortcuts' in the device settings (Device Setting -> Siri & Search), you can add a shortcut to the item in the suggestion list bu pressing th '+' button.
+    1. A banner with a ***'Add to Siri’*** option will be added to your frequently used reports and dashboards. Press the button to open the 'Add to Siri' page
+    
+    2. Use the 'Siri shortcut' button from the ‘Actions’ menu
+    
+    3. Use the 'Suggested shortcuts' in the device settings (Device Setting -> Siri & Search), you can add a shortcut to the item in the suggestion list bu pressing th '+' button
      
      ![](./media/mobile-apps-iOS-siri-and-search/power-bi-siri-create-shortcut.png)
 
-2. All the options above will open the 'Add to Siri' page with a suggested phrase to record. You can use the suggested phrase or any phrase you wish for.
+2. All the options above will open the 'Add to Siri' page with a suggested phrase to record. You can use the suggested phrase or any phrase you wish for
     
     ![](./media/mobile-apps-iOS-siri-and-search/power-bi-siri-add-page.png)
 
@@ -44,7 +46,6 @@ You can also go to 'My Shortcuts' list (from device settings-> Siri & Search) vi
 
 ## Delete Siri shortcut 
 To delete a shortcut to your item go to your item, press on the Siri shortcut button in the action menu, the Siri page will open. Press on the 'Delete Shortcut' and the shortcut will be deleted
-
 You can also go to 'My Shortcuts' list (from device settings-> Siri & Search) and delete the shortcuts from the list.
 
 ## 
