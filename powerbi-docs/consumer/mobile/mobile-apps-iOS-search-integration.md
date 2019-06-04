@@ -17,7 +17,6 @@ ms.author: michalfo
 
 You can search your item using device level search (spotlight) to find what you looked for and easily open it in Power BI app.
 
-
 To find items
 1. Swipe down from the middle of the ‘Home’ screen to get into the device search
 2. Tap the ‘Search‘ field and enter a word relevant for the item you’re looking for.
@@ -27,19 +26,16 @@ To find items
     * Reports
     * Apps
     * Workspaces
-    
-    
-    You can also search by someone’s name to get items that were shared by that person. 
-    ![](./media/mobile-apps-iOS-siri-and-search/power-bi-spotlight-search.png)
-
- 
+   You can also search by someone’s name to get items that were shared by that person. 
+   <br>
+     ![](./media/mobile-apps-iOS-siri-and-search/power-bi-spotlight-search.png)
  3. Once you find the item you want, tap on it and the Power BI app land you on the item you wanted. 
 
 Search, powered by Siri will provide you suggestion to frequent actions that are being done in Power BI app. Siri suggestion will be shown the search and lock screen
 
 
 To disable device search and Siri suggestion, go to device settings->Power BI settings->Siri & Search, and disable the Siri & suggestions setting
-
+    
 
 > [!NOTE]
 >- This feature is currently a preview version
