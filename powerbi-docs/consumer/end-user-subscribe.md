@@ -49,7 +49,7 @@ Whether you're subscribing to a dashboard or report, the process is similar. The
 
 5. Select a **Frequency** for your subscription.  You may choose Daily, Weekly, or After data refresh (Daily).  To receive the subscription email only on certain days, select **Weekly** and choose which days you'd like to receive it.  For example, if you'd like to receive the subscription email only on workdays, select **Weekly** for your frequency and uncheck the boxes for Sat and Sun.   
 
-6. Schedule the time the email is sent by selecting Daily or Weekly for your frequency, and entering a **Scheduled** **Time** for the subscription.  Please note that this is the time the subscription job will start, but it may take up a few minutes until the e-mail is delivered to your inbox in certain scenarios.    
+6. Schedule the time the email is sent by selecting Daily or Weekly for your frequency, and entering a **Scheduled** **Time** for the subscription.  This time is when the subscription job starts. It may take up a few minutes before the e-mail is delivered to your inbox in certain scenarios.    
 
 7. Schedule the start and end date by entering dates in the date fields. By default, the start time for your subscription will be the date you create it and the end date will be one year later. When a subscription reaches an end date, it stops until you re-enable it.  You will receive notification(s) before the scheduled end date to ask if you'd like to extend it.     
 
