@@ -17,16 +17,16 @@ LocalizationGroup: Share your work
 With Power BI's **Publish to web** option, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, from any device. You can also easily edit, update, refresh, or unshare your published visuals.
 
 > [!WARNING]
-> When you use **Publish to web**, anyone on the Internet can view your published report or visual. This requires no authentication and includes viewing detail level data your reports aggregate. Before publishing a report, make sure it is ok for you to share the data and visualizations publicly. Do not publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
+> When you use **Publish to web**, anyone on the Internet can view your published report or visual. This requires no authentication and includes viewing detail level data your reports aggregate. Before publishing a report, make sure it is okay for you to share the data and visualizations publicly. Do not publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
 
 >[!Note]
 >To embed your content securely in an internal portal or website, use the [Embed](service-embed-secure.md) or [Embed in SharePoint Online](service-embed-report-spo.md) options. This ensures all permissions and data security is enforced when your users are viewing your internal data.
 
 ## How to use Publish to Web
 
-**Publish to web** is available for reports in your personal or group workspaces you can edit.  It isn't available for reports shared with you, or ones relying on row level security to secure data. See the [**Limitations**](#limitations) section below for a complete list of cases where **Publish to web** isn't supported. Review the **Warning** earlier in this article before using **Publish to web**.
+**Publish to web** is available for reports you can edit in your personal and group workspaces.  It isn't available for reports shared with you, or ones relying on row level security to secure data. See the [**Limitations**](#limitations) section below for a complete list of cases where **Publish to web** isn't supported. Review the **Warning** earlier in this article before using **Publish to web**.
 
-The following *short video* shows how this feature works. Then, try it yourself in the steps below.
+The following short video shows how this feature works. Then, try it yourself in the steps below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UF9QtqE7s4Y" frameborder="0" allowfullscreen></iframe>
 
@@ -63,7 +63,7 @@ The following table provides guidance about the View Mode, and how it will appea
 
 | View Mode | How it looks when embedded |
 | --- | --- |
-| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Fit to page** will respect your report's page height and width. If you set your page to 'Dynamic' ratios like 16:9 or 4:3 your content will scale to fit within the iFrame. When embedded in an iFrame, using **Fit to page** can result in **letterboxing**, where a gray background is shown in iFrame areas after the content as scaled to fit within the iFrame. To minimize letterboxing, set your iFrame's height and width appropriately. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Fit to page** respects your report's page height and width. If you set your page to *dynamic* ratios like 16:9 or 4:3 your content will scale to fit within the iFrame. When embedded in an iFrame, using **Fit to page** can result in *letterboxing*, where a gray background is shown in iFrame areas after the content is scaled to fit within the iFrame. To minimize letterboxing, set your iFrame's height and width appropriately. |
 | ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Actual size** ensures the report preserves its size as set on the report page. This can result in scrollbars appearing in your iFrame. Set the iFrame height and width to avoid scrollbars. |
 | ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Fit to width** ensures the content fits within the iFrame's horizontal area. A border is still shown, but the content scales to use all the horizontal space available. |
 
@@ -75,7 +75,7 @@ A **Publish to web** embed code looks like the following:
  
 You can edit the width and height manually to ensure it's precisely how you want it to fit in the page where you're embedding it.
 
-To achieve a more perfect fit, you can try adding 56 pixels to the iFrame's height to accommodate the current size of the bottom bar. If your report page uses the Dynamic size, the table below provides some sizes you can use to achieve a fit without letterboxing.
+To achieve a more perfect fit, you can try adding 56 pixels to the iFrame's height to accommodate the current size of the bottom bar. If your report page uses the dynamic size, the table below provides some sizes you can use to achieve a fit without letterboxing.
 
 | Ratio | Size | Dimension (Width x Height) |
 | --- | --- | --- |
@@ -108,11 +108,11 @@ Once you create a **Publish to web** embed code, you can manage your codes from 
 
 ## Updates to reports, and data refresh
 
-After you create your **Publish to web** embed code and share it, the report is updated with any changes you make and the embed code link is immediately active and anyone who opens the link can view it. After this initial action, however, updates to reports or visuals can take approximately one hour before becoming visible to your users. If you need your updates to be immediately available, you can delete the embed code and create a new one. To learn more, see the [**How it works**](#howitworks) section later in this article. 
+After you create your **Publish to web** embed code and share it, the report is updated with any changes you make, and the embed code link is immediately active. Anyone who opens the link can view it. After this initial action, however, updates to reports or visuals can take approximately one hour before becoming visible to your users. If you need your updates to be immediately available, you can delete the embed code and create a new one. To learn more, see the [**How it works**](#howitworks) section later in this article. 
 
 ## Data refresh
 
-Data refreshes are automatically reflected in your embedded report or visual. It can take approximately 1 hour for refreshed data to be visible from embed codes. To disable automatic refresh, you can select **don't refresh** on the schedule for the dataset the report uses.  
+Data refreshes are automatically reflected in your embedded report or visual. It can take approximately one hour for refreshed data to be visible from embed codes. To disable automatic refresh, select **don't refresh** on the schedule for the dataset the report uses.  
 
 ## Custom visuals
 
@@ -120,7 +120,7 @@ Custom visuals are supported in **Publish to web**. When you use **Publish to we
 
 ## Limitations
 
-**Publish to web** is supported for the vast majority of data sources and reports in the Power BI service, however, the following are **not currently supported or available** with **Publish to web**:
+**Publish to web** is supported for the vast majority of data sources and reports in the Power BI service, however, the following are not currently supported or available with **Publish to web**:
 
 - Reports using row level security.
 - Reports using any Live Connection data source, including Analysis Services Tabular hosted on-premises, Analysis Services Multidimensional, and Azure Analysis Services.
