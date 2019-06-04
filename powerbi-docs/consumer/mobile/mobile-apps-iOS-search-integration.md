@@ -26,9 +26,8 @@ To find items
     * Reports
     * Apps
     * Workspaces
-   * Items shared by the contact you search for 
-   
-     ![](./media/mobile-apps-iOS-siri-and-search/power-bi-spotlight-search.png)
+    * Items shared by the contact you search for ![](./media/mobile-apps-iOS-siri-and-search/power-bi-spotlight-search.png)
+
  3. Once you find the item you want, tap on it and the Power BI app land you on the item you wanted. 
 
 Search, powered by Siri will provide you suggestion to frequent actions that are being done in Power BI app. Siri suggestion will be shown the search and lock screen
@@ -36,12 +35,12 @@ Search, powered by Siri will provide you suggestion to frequent actions that are
 
 To disable device search and Siri suggestion, go to device settings->Power BI settings->Siri & Search, and disable the Siri & suggestions setting
     
-## 
+
 > [!NOTE]
 >- This feature is currently a preview version
 >- Spotlight search integration is available available from iOS9  
 > 
-## 
+
 ### Next steps
 Your feedback will help us decide what to implement in the future, so don’t forget to vote for other features that you would like to see in Power BI mobile apps. 
 
