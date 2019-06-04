@@ -36,13 +36,13 @@ Search, powered by Siri will provide you suggestion to frequent actions that are
 
 To disable device search and Siri suggestion, go to device settings->Power BI settings->Siri & Search, and disable the Siri & suggestions setting
     
-
+## 
 > [!NOTE]
 >- This feature is currently a preview version
 >- Spotlight search integration is available available from iOS9  
 > 
-
-## Next steps
+## 
+### Next steps
 Your feedback will help us decide what to implement in the future, so don’t forget to vote for other features that you would like to see in Power BI mobile apps. 
 
 * Download the [Power BI iPhone mobile app](http://go.microsoft.com/fwlink/?LinkId=522062)
