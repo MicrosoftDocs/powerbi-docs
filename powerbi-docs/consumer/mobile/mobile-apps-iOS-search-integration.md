@@ -26,8 +26,8 @@ To find items
     * Reports
     * Apps
     * Workspaces
-   You can also search by someone’s name to get items that were shared by that person. 
-   <br>
+   * Items shared by the contact you search for 
+   
      ![](./media/mobile-apps-iOS-siri-and-search/power-bi-spotlight-search.png)
  3. Once you find the item you want, tap on it and the Power BI app land you on the item you wanted. 
 
