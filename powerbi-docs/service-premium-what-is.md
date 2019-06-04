@@ -223,7 +223,7 @@ Microsoft tools like SQL Server Management Studio and SQL Server Profiler, and t
 
 To learn more, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md).
 
-## Acknowledgements
+## Acknowledgments
 
 Peter Myers, Data Platform MVP and independent BI expert with [Bitwise Solutions](https://www.bitwisesolutions.com.au/), and the Microsoft Power BI Customer Advisory Team (CAT) are major contributors to this article.
 
