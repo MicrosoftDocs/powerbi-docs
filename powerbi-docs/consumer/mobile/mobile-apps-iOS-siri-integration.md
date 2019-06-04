@@ -47,12 +47,12 @@ To delete a shortcut to your item go to your item, press on the Siri shortcut bu
 
 You can also go to 'My Shortcuts' list (from device settings-> Siri & Search) and delete the shortcuts from the list.
 
-
+## 
 > [!NOTE]
 >- This feature is currently a preview version
 >- Siri shortcut integration is available from iOS12  
 > 
-
+## 
 
 ## Next steps
 Your feedback will help us decide what to implement in the future, so don’t forget to vote for other features that you would like to see in Power BI mobile apps. 
