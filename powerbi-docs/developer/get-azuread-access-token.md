@@ -49,7 +49,7 @@ var @params = new NameValueCollection
 };
 ```
 
-After you construct a query string, you redirect to Azure AD to get an 'authorization code'.  Below is a complete C# method to construct an authorization code query string, and redirect to Azure AD. You cthen use the authorization code to get an access token.
+After you construct a query string, you redirect to Azure AD to get an 'authorization code'.  Below is a complete C# method to construct an authorization code query string, and redirect to Azure AD. You then use the authorization code to get an access token.
 
 Within redirect.aspx.cs, [AuthenticationContext.AcquireTokenByAuthorizationCode](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) calls to generate the token.
 
@@ -160,7 +160,7 @@ protected void Page_Load(object sender, EventArgs e)
 
 ## Access token for non-Power BI users (app owns data)
 
-This approach is typically used for independent software vendor (ISV) type applications where the app owns access to the data. Users aren't necessarily Power BI users, and the application controls end user authentication and access.
+This approach is typically used for independent software vendor (ISV) type applications where the app owns access to the data. Users aren't necessarily Power BI users, and the application controls user authentication and access.
 
 ### Access token with a master account
 
@@ -194,7 +194,9 @@ m_tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bea
 
 ## Troubleshoot
 
-* Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) if you experience an "'AuthenticationContext' doesn't contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)" error.
+Error message: "'AuthenticationContext' doesn't contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)".
+
+   Try downloading [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) if you see this error.
 
 ## Next steps
 
