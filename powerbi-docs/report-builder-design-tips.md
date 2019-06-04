@@ -12,7 +12,7 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Report design tips in Power BI Report Builder
-  Use the following tips to help design your Reporting Services paginated reports.  
+  Use the following tips to help design your Report Builder paginated reports.  
   
    
   
