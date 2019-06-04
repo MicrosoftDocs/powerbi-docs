@@ -921,8 +921,6 @@
     items: 
     - name: Get around Report Design View (Preview)
       href: paginated-reports-report-design-view.md
-    - name:  (Preview)
-      href: .md
     - name: Paginated reports FAQ (Preview)
       href: paginated-reports-faq.md
   - name: How to

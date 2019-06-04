@@ -70,7 +70,7 @@ ms.author: maggies
   
  You can also drag built-in fields from the Report Data pane to the report design surface. When rendered, these fields provide information about the report, such as the report name, the total number of pages in the report, and the current page number.  
   
- Some things are automatically added to the Report Data pane when you add something to the report design surface. For example, if you add a report part from the Report Part Gallery, and the report part is a data region, the dataset is automatically added to the Report Data pane. For more information, see [Report Parts and Datasets in Report Builder](../../reporting-services/report-data/report-parts-and-datasets-in-report-builder.md). Also, if you embed an image in your report, it will be added to the Images folder in the Report Data pane.  
+ Some things are automatically added to the Report Data pane when you add something to the report design surface. For example, if you embed an image in your report, it will be added to the Images folder in the Report Data pane.  
   
 > [!NOTE]  
 >  You can use the **New** button to add a new item to the Report Data pane. You can add multiple datasets from the same data source or from other data sources to the report. You can add shared datasets from the report server. To add a new dataset from the same data source, right-click a data source, and then click **Add Dataset**.  
@@ -89,18 +89,7 @@ ms.author: maggies
   
 -   [Dataset Fields Collection &#40;Report Builder and SSRS&#41;](../../reporting-services/report-data/dataset-fields-collection-report-builder-and-ssrs.md)  
   
-  
-##  <a name="ReptPartGallery"></a> The Report Part Gallery  
- The easiest way to create a report is to find an existing report part, like a table or chart, on the report server or a report server integrated into a SharePoint site.  
-  
- Click **Report Parts** on the Insert tab to open the Report Part Gallery. There you can search for report parts to add to your report. You can filter the report parts by all or part of the name of the report part, who created it, who last modified it, when it was last modified, where it's stored, or what type of report part it is. For example, you could search for all charts created last week by one of your coworkers.  
-  
-> [!NOTE]  
->  To view the Report Part Gallery, you need to be connected to a server.  
-  
- You can view the search results either as thumbnails or as a list, and sort the search results by name, created and modified dates, and creator. For more information, see [Report Parts &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/report-parts-report-builder-and-ssrs.md)..  
-  
-  
+
 ##  <a name="PropertiesPane"></a> The Properties Pane (Report Builder)  
  Every item in a report, including data regions, images, text boxes, and the report body itself, has properties associated with it. For example, the BorderColor property for a text box shows the color value of the text box's border, and the PageSize property for the report shows the page size of the report.  
   

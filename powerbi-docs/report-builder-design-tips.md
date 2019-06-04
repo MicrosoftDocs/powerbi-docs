@@ -43,10 +43,8 @@ ms.author: maggies
     2.  **Datasets.** Use a name that indicates which data source it is based on.  
   
     3.  **Data regions.** Indicate the type of data region and what data it displays. Data region names are useful in the following scenarios:  
-  
-        1.  **Data region as a report part.** When report authors browse the Report Part Gallery, a descriptive name helps them find the report parts they are looking for.  
-  
-        2.  **Data region as a data feed.** With appropriate permissions, a report reader can create an ATOM data feed from a data region.  
+
+         - **Data region as a data feed.** With appropriate permissions, a report reader can create an ATOM data feed from a data region.
   
 -   Use underscores instead of spaces in report names. If you download a report from a Reporting Services web portal, spaces are replaced by underscores. If you use the download feature to save reports locally, and then include them in SQL Server Data Tools (SSDT), using underscores helps to keep report dependencies for subreports and drillthrough links accurate.  
   
