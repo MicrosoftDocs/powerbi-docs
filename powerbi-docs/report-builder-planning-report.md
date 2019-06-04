@@ -7,9 +7,6 @@ ms.technology: report-design
 
 
 ms.topic: conceptual
-helpviewer_keywords: 
-  - "getting started"
-  - "report design"
 ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
 author: maggiesMSFT
 ms.author: maggies
@@ -19,7 +16,7 @@ ms.author: maggies
   
 -   **What format do you want the report to appear in?**  
   
-     You can render reports online in a browser such as the [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] web portal or export them to other formats such as Excel, Word, or PDF. The final form your report takes is an important consideration because not all features are available in all export formats. For more information, see [Export Reports &#40;Report Builder and SSRS&#41;](../../reporting-services/report-builder/export-reports-report-builder-and-ssrs.md).  
+     You can render reports online in a browser such as the Reporting Services web portal or export them to other formats such as Excel, Word, or PDF. The final form your report takes is an important consideration because not all features are available in all export formats. For more information, see [Export Reports &#40;Report Builder and SSRS&#41;](../../reporting-services/report-builder/export-reports-report-builder-and-ssrs.md).  
   
 -   **What structure do you want to use to present the data in the report?**  
   

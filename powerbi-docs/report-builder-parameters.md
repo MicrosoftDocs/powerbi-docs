@@ -15,19 +15,7 @@ ms.date: 12/06/2018
 
 # Report Parameters (Report Builder and Report Designer)
 
-::: moniker range="<=sql-server-2016||=sqlallproducts-allversions"
-
-[!INCLUDE[ssrs-appliesto](../../includes/ssrs-appliesto.md)] [!INCLUDE[ssrs-appliesto-2016-and-later](../../includes/ssrs-appliesto-2016-and-later.md)] [!INCLUDE[ssrs-appliesto-sharepoint-2013-2016](../../includes/ssrs-appliesto-sharepoint-2013-2016.md)]
-
-::: moniker-end
-
-::: moniker range=">=sql-server-2017||=sqlallproducts-allversions"
-
-[!INCLUDE[ssrs-appliesto](../../includes/ssrs-appliesto.md)] [!INCLUDE[ssrs-appliesto-2016-and-later](../../includes/ssrs-appliesto-2016-and-later.md)]
-
-::: moniker-end
-
-This topic describes the common uses for [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] report parameters, the properties you can set, and much more. Report parameters enable you to control report data, connect related reports together, and vary report presentation. You can use report parameters in paginated reports you create in [!INCLUDE[ssRBnoversion](../../includes/ssrbnoversion.md)] and Report Designer,  and also in mobile reports you create in [!INCLUDE[SS_MobileReptPub_Long](../../includes/ss-mobilereptpub-long.md)]. Read more about [Report Parameters Concepts](../../reporting-services/report-design/report-parameters-concepts-report-builder-and-ssrs.md).  
+This topic describes the common uses for Reporting Services report parameters, the properties you can set, and much more. Report parameters enable you to control report data, connect related reports together, and vary report presentation. You can use report parameters in paginated reports you create in Report Builder and Report Designer. Read more about [Report Parameters Concepts](../../reporting-services/report-design/report-parameters-concepts-report-builder-and-ssrs.md).  
 
 To try adding a parameter to a report yourself, see [Tutorial: Add a Parameter to Your Report &#40;Report Builder&#41;](../../reporting-services/tutorial-add-a-parameter-to-your-report-report-builder.md).  
 
@@ -41,7 +29,7 @@ To try adding a parameter to a report yourself, see [Tutorial: Add a Parameter t
   
 - Filter data from a shared dataset. When you add a shared dataset to a paginated report, you cannot change the query. In the report, you can add a dataset filter that includes a reference to a report parameter that you create.  
   
-- Filter data from a shared dataset in a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] mobile report. See [Create mobile reports with SQL Server Mobile Report Publisher](../../reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher.md) for more information.  
+- Filter data from a shared dataset in a SQL Server mobile report. See [Create mobile reports with SQL Server Mobile Report Publisher](../../reporting-services/mobile-reports/create-mobile-reports-with-sql-server-mobile-report-publisher.md) for more information.  
   
 - Enable users to specify values to customize the data in a paginated report. For example, provide two parameters for the start date and end date for sales data.  
   
@@ -162,7 +150,7 @@ Create a parameter manually from the Report Data pane. You can configure report 
   
  Use the query designer for the data source to help build a parameterized query.  
   
--   For [!INCLUDE[tsql](../../includes/tsql-md.md)] queries, different data sources support different syntax for parameters. Support ranges from parameters that are identified in the query by position or by name. For more information, see topics for specific external data source types in [Report Datasets &#40;SSRS&#41;](../../reporting-services/report-data/report-datasets-ssrs.md). In the relational query designer, you must select the parameter option for a filter to create a parameterized query. For more information, see [Relational Query Designer User Interface &#40;Report Builder&#41;](../../reporting-services/report-data/relational-query-designer-user-interface-report-builder.md).  
+-   For Transact-SQL queries, different data sources support different syntax for parameters. Support ranges from parameters that are identified in the query by position or by name. For more information, see topics for specific external data source types in [Report Datasets &#40;SSRS&#41;](../../reporting-services/report-data/report-datasets-ssrs.md). In the relational query designer, you must select the parameter option for a filter to create a parameterized query. For more information, see [Relational Query Designer User Interface &#40;Report Builder&#41;](../../reporting-services/report-data/relational-query-designer-user-interface-report-builder.md).  
   
 -   For queries that are based on a multidimensional data source such as Microsoft SQL Server Analysis Services, SAP NetWeaver BI, or Hyperion Essbase, you can specify whether to create a parameter based on a filter that you specify in the query designer. For more information, see the query designer topic in [Query Designers &#40;Report Builder&#41;](https://msdn.microsoft.com/library/553f0d4e-8b1d-4148-9321-8b41a1e8e1b9) that corresponds to the data extension.  
   

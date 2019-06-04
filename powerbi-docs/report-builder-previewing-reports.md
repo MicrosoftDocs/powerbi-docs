@@ -12,7 +12,7 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Previewing Reports in Report Builder
-  While you create a [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] paginated report, it is helpful to preview the report often to verify that the report displays what you want. To preview your report, click **Run**. The report renders in preview mode.  
+  While you create a Reporting Services paginated report, it is helpful to preview the report often to verify that the report displays what you want. To preview your report, click **Run**. The report renders in preview mode.  
   
  Report Builder improves the preview experience by using edit sessions when connected to a report server. The edit session creates a data cache and makes the datasets in the cache available for repeated report previews. An edit session is not a feature that you interact with directly, but understanding when the cached dataset is refreshed will help you improve performance when you preview a report and understand why the report renders faster or slower.  
   

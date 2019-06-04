@@ -12,11 +12,11 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Expressions (Report Builder and SSRS)
-  Expressions are widely used throughout [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)] paginated reports to retrieve, calculate, display, group, sort, filter, parameterize, and format data. 
+  Expressions are widely used throughout Reporting Services paginated reports to retrieve, calculate, display, group, sort, filter, parameterize, and format data. 
   
-  Many report item properties can be set to an expression. Expressions help you control the content, design, and interactivity of your report. Expressions are written in [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], saved in the report definition, and evaluated by the report processor when you run the report.  
+  Many report item properties can be set to an expression. Expressions help you control the content, design, and interactivity of your report. Expressions are written in Microsoft Visual Basic, saved in the report definition, and evaluated by the report processor when you run the report.  
   
- Unlike applications such as [!INCLUDE[msCoName](../../includes/msconame-md.md)] Office Excel where you work with data directly in a worksheet, in a report, you work with expressions that are placeholders for data. To see the actual data from the evaluated expressions, you must preview the report. When you run the report, the report processor evaluates each expression as it combines report data and report layout elements such as tables and charts.  
+ Unlike applications such as Microsoft Office Excel where you work with data directly in a worksheet, in a report, you work with expressions that are placeholders for data. To see the actual data from the evaluated expressions, you must preview the report. When you run the report, the report processor evaluates each expression as it combines report data and report layout elements such as tables and charts.  
   
  As you design a report, many expressions for report items are set for you. For example, when you drag a field from the data pane to a table cell on the report design surface, the text box value is set to a simple expression for the field. In the following figure, the Report Data pane displays the dataset fields ID, Name, SalesTerritory, Code, and Sales. Three fields have been added to the table: [Name], [Code], and [Sales]. The notation [Name] on the design surface represents the underlying expression `=Fields!Name.Value`.  
   
@@ -26,13 +26,12 @@ ms.author: maggies
   
  To enter expressions manually, select an item on the design surface, and use shortcut menus and dialog boxes to set the properties of the item. When you see the ***(fx)*** button or the value `<Expression>` in a drop-down list, you know that you can set the property to an expression. For more information, see [Add an Expression &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-an-expression-report-builder-and-ssrs.md).  
   
- To develop complex expressions or expressions that use custom code or custom assemblies, we recommend that you use Report Designer in [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]. For more information, see [Custom Code and Assembly References in Expressions in Report Designer &#40;SSRS&#41;](../../reporting-services/report-design/custom-code-and-assembly-references-in-expressions-in-report-designer-ssrs.md).  
+ To develop complex expressions or expressions that use custom code or custom assemblies, we recommend that you use Report Designer in SQL Server Data Tools (SSDT). For more information, see [Custom Code and Assembly References in Expressions in Report Designer &#40;SSRS&#41;](../../reporting-services/report-design/custom-code-and-assembly-references-in-expressions-in-report-designer-ssrs.md).  
   
-> [!NOTE]  
->  [!INCLUDE[ssRBRDDup](../../includes/ssrbrddup-md.md)]  
+   
   
 ##  <a name="Types"></a> Understanding Simple and Complex Expressions  
- Expressions begin with an equal sign (=) and are written in [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]. Expressions can include a combination of constants, operators, and references to built-in values (fields, collections, and functions), and to external or custom code.  
+ Expressions begin with an equal sign (=) and are written in Microsoft Visual Basic. Expressions can include a combination of constants, operators, and references to built-in values (fields, collections, and functions), and to external or custom code.  
   
  You can use expressions to specify the value of many report item properties. The most common properties are values for text boxes and placeholder text. Typically, if a text box contains only one expression, the expression is the value of the text box property. If a text box contains multiple expressions, each expression is the value of placeholder text in the text box.  
   
@@ -67,7 +66,7 @@ Simple expressions use symbols to indicate whether the reference is to a field, 
  Expressions can include references to functions, operators, constants, fields, parameters, items from built-in collections, and to embedded custom code or custom assemblies.  
   
 > [!NOTE]
->  To develop complex expressions or expressions that use custom code or custom assemblies, we recommend that you use Report Designer in [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)][!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]. For more information, see [Custom Code and Assembly References in Expressions in Report Designer &#40;SSRS&#41;](../../reporting-services/report-design/custom-code-and-assembly-references-in-expressions-in-report-designer-ssrs.md).  
+>  To develop complex expressions or expressions that use custom code or custom assemblies, we recommend that you use Report Designer in SQL ServerSQL Server Data Tools (SSDT). For more information, see [Custom Code and Assembly References in Expressions in Report Designer &#40;SSRS&#41;](../../reporting-services/report-design/custom-code-and-assembly-references-in-expressions-in-report-designer-ssrs.md).  
   
  The following table lists the kinds of references you can include in an expression:  
   
@@ -77,7 +76,7 @@ Simple expressions use symbols to indicate whether the reference is to a field, 
 |[Operators](../../reporting-services/report-design/operators-in-expressions-report-builder-and-ssrs.md)|Describes the operators you can use to combine references in an expression. For example, the **&** operator is used for concatenating strings.|`="The report ran at: " & Globals!ExecutionTime & "."`|  
 |[Built-in Collections](../../reporting-services/report-design/built-in-collections-in-expressions-report-builder.md)|Describes the built-in collections that you can include in an expression, such as `Fields`, `Parameters`, and `Variables`.|`=Fields!Sales.Value`<br /><br /> `=Parameters!Store.Value`<br /><br /> `=Variables!MyCalculation.Value`|  
 |[Built-in Report and Aggregate Functions](../../reporting-services/report-design/report-builder-functions-aggregate-functions-reference.md)|Describes the built-in functions, such as `Sum` or `Previous`, that you can access from an expression.|`=Previous(Sum(Fields!Sales.Value))`|  
-|[Custom Code and Assembly References in Expressions in Report Designer &#40;SSRS&#41;](../../reporting-services/report-design/custom-code-and-assembly-references-in-expressions-in-report-designer-ssrs.md)|Describes how you can access the built-in CLR classes <xref:System.Math> and <xref:System.Convert>, other CLR classes, [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] run-time library functions, or methods from an external assembly.<br /><br /> Describes how you can access custom code that is embedded in your report, or that you compile and install as a custom assembly on both the report client and the report server.|`=Sum(Fields!Sales.Value)`<br /><br /> `=CDate(Fields!SalesDate.Value)`<br /><br /> `=DateAdd("d",3,Fields!BirthDate.Value)`<br /><br /> `=Code.ToUSD(Fields!StandardCost.Value)`|  
+|[Custom Code and Assembly References in Expressions in Report Designer &#40;SSRS&#41;](../../reporting-services/report-design/custom-code-and-assembly-references-in-expressions-in-report-designer-ssrs.md)|Describes how you can access the built-in CLR classes <xref:System.Math> and <xref:System.Convert>, other CLR classes, Visual Basic run-time library functions, or methods from an external assembly.<br /><br /> Describes how you can access custom code that is embedded in your report, or that you compile and install as a custom assembly on both the report client and the report server.|`=Sum(Fields!Sales.Value)`<br /><br /> `=CDate(Fields!SalesDate.Value)`<br /><br /> `=DateAdd("d",3,Fields!BirthDate.Value)`<br /><br /> `=Code.ToUSD(Fields!StandardCost.Value)`|  
    
 ##  <a name="Valid"></a> Validating Expressions  
  When you create an expression for a specific report item property, the references that you can include in an expression depend on the values that the report item property can accept and the scope in which the property is evaluated. For example:  
@@ -86,7 +85,7 @@ Simple expressions use symbols to indicate whether the reference is to a field, 
   
 -   For the value for a Font property, the value must evaluate to the name of a font.  
   
--   Expression syntax is validated at design time. Expression scope validation occurs when you publish the report. For validation that depends on the actual data, errors can only be detected at run-time. Some of these expressions produce #Error as an error message in the rendered report. To help determine the issues for this kind of error, you must use Report Designer in [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]. Report Designer provides an Output window that provides more information about these errors.  
+-   Expression syntax is validated at design time. Expression scope validation occurs when you publish the report. For validation that depends on the actual data, errors can only be detected at run-time. Some of these expressions produce #Error as an error message in the rendered report. To help determine the issues for this kind of error, you must use Report Designer in SQL Server Data Tools (SSDT). Report Designer provides an Output window that provides more information about these errors.  
   
  For more information, see [Expression Reference &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expression-reference-report-builder-and-ssrs.md).  
   

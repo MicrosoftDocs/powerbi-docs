@@ -7,17 +7,6 @@ ms.technology: report-builder
 
 
 ms.topic: conceptual
-f1_keywords: 
-  - "10440"
-  - "10426"
-  - "10439"
-  - "10434"
-  - "10438"
-  - "10436"
-helpviewer_keywords: 
-  - "reports, creating"
-  - "user interface"
-  - "overview of Report Builder"
 ms.assetid: 1544472c-2803-448d-af52-e901cb457a00
 author: maggiesMSFT
 ms.author: maggies

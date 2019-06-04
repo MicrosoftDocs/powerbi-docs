@@ -7,18 +7,14 @@ ms.technology: report-design
 
 
 ms.topic: conceptual
-helpviewer_keywords: 
-  - "concepts"
-  - "terminology"
 ms.assetid: 99311b36-5dc5-4039-ac93-4d2826701327
 author: maggiesMSFT
 ms.author: maggies
 ---
 # Report Authoring Concepts (Report Builder and SSRS)
-  This section briefly defines some key concepts used to describe paginated reports  in the Report Builder and Report Designer documentation. For definitions of specific words or terms, see the [Glossary &#40;Report Builder&#41;](../../reporting-services/report-builder/glossary-report-builder.md).  
+  This section briefly defines some key concepts used to describe paginated reports  in the Report Builder and Report Designer documentation.  
   
-> [!NOTE]  
->  [!INCLUDE[ssRBRDDup](../../includes/ssrbrddup-md.md)]  
+   
   
 ## In This Section  
  [Reports, Report Parts, and Report Definitions &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/reports-report-parts-and-report-definitions-report-builder-and-ssrs.md)  
