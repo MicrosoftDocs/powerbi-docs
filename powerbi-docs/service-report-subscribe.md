@@ -84,7 +84,7 @@ A subscription ends if the Pro license expires, the owner deletes the dashboard 
 
 * Dashboards with over 25 pinned tiles, or 4 pinned live report pages, may not render fully in subscription e-mails sent to users.  Subscriptions to dashboards over these number of tiles aren't blocked. However, they're considered unsupported if you encounter issues. Consider modifying them accordingly to fall within a supported range.
 * This time is when the subscription job starts. It may take up a few minutes until the e-mail is delivered to your inbox in certain scenarios.
-* On rare occasions, e-mail subscriptions may take longer than fifteen minutes to be delivered to their recipients. If this happens, we recommend running your data refresh and e-mail subscription at different times to ensure timely delivery. If the issue persists, please contact support.
+* On rare occasions, e-mail subscriptions may take longer than fifteen minutes to be delivered to their recipients. If this happens, we recommend running your data refresh and e-mail subscription at different times to ensure timely delivery. If the issue persists, contact Power BI support.
 * For dashboard email subscriptions, if any tiles have row-level security (RLS) applied, those tiles don't display.  
 * For report email subscriptions, if the dataset uses RLS, you can create a subscription for yourself. You can't subscribe others to a report with row-level security (RLS) applied.
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page and then rename it, you have to re-create your subscription.
