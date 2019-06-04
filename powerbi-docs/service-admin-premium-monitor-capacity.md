@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/27/2019
+ms.date: 05/31/2019
 LocalizationGroup: Premium 
 ---
 
@@ -132,14 +132,14 @@ The dashboard includes the following metrics:
 
 | Metric | Description |
 | --- | --- |
-| Refreshes Total | Total number of refreshes in the past seven days. |
-| Refresh Reliability (%) | Number of successful refreshes divided by the total number of refreshes in the past seven days. |
+| AI Function Execution | Total number of executions in the past seven days. |
+| AI Function Execution Reliability (%) | Number of successful executions divided by the total number of executions in the past seven days. |
 | CPU Max (%)| Max CPU consumption by the AI workload in the past seven days. |
 | Memory Max (GB) | Max memory consumption by the AI workload in the past seven days.|
-| Refreshes Max Wait Time (MS) | Maximum amount of time before starting refresh. |
-| Refreshes Average Wait Time (MS)| Average amount of time before starting refresh. |
-| Refreshes Max Duration (MS) | Maximum amount of time to complete refresh. |
-| Refreshes Average Duration (MS)| Average amount of time to complete refresh. |
+| AI Function Execution Max Wait Time (MS) | Maximum amount of time before starting execution. |
+| AI Function Execution Average Wait Time (MS)| Average amount of time before starting execution. |
+| AI Function Execution Max Duration (MS) | Maximum amount of time to complete execution. |
+| AI Function Execution Average Duration (MS)| Average amount of time to complete execution. |
 | | |
 
 ### Reports
@@ -230,11 +230,9 @@ The Datasets page has different *areas*, which include  **Refreshes**, **Query D
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| Overall Usage | Total count: Number of AI functions in a workspace or dataflow. <br> Reliability: The percentage of refreshes that completed.<br> Avg. Wait Time: The average lag between the scheduled time and start of a refresh, in milliseconds.<br> Max Wait Time: The maximum wait time, in milliseconds.<br> Avg. Duration: The average duration of a refresh, in milliseconds.<br> Max Duration: The duration of the longest-running refresh, in milliseconds.<br> Avg Input Size: The average input size, in bytes, for the AI function executed by a dataflow refresh.<br> Avg Output size: The average output size, in bytes, for the AI function executed by a dataflow refresh. |
-| Top 5 AI Functions by Average Duration | The five functions with the longest average refresh duration, in milliseconds. |
-| Top 5 AI Functions by Average Input Size | The five functions with the largest average data input size, in bytes. |
-| Hourly Refresh Count and Memory Consumption | Successes, failures, and memory consumption, split into one-hour buckets, reported in UTC time. |
-| Hourly Average Duration Time | The average duration of a refresh, split into one-hour buckets, reported in UTC time. |
+| AI Memory Consumption | Memory consumption in GB, split into one-hour buckets, reported in UTC time. |
+| Hourly AI Function Execution and Average Wait Time | AI executions and average wait time, in milliseconds, split into one-hour buckets, reported in UTC time. |
+| Overall Usage | Total count: Number of AI functions in a workspace or dataflow. <br> System Reliability: The percentage of executions that completed.<br> Avg. Wait Time: The average lag between the scheduled time and start of an execution, in milliseconds.<br> Max Wait Time: The maximum wait time, in milliseconds.<br> Avg. Duration: The average duration of an execution, in milliseconds.<br> Max Duration: The duration of the longest-running execution, in milliseconds.<br> Avg Total Size: The average size, in bytes, of the input and output data for the AI function. |
 | | |
 
 ### Resource Consumption

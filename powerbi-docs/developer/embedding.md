@@ -37,7 +37,7 @@ Choose the solution that is right for you:
 There are two main scenarios for embedding Power BI content:
 - Embedding for your organization's users (who have Power BI licenses). 
  
-- Embedding for your users and customers who don't need Power BI licenses. 
+- Embedding for your users and customers without requiring Power BI licenses. 
 
 The [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) allows for both scenarios.
 
@@ -47,7 +47,7 @@ To understand how embedding works, see the [JavaScript embed sample](https://mic
 
 ## Embedding for your organization
 
-**Embedding for your organization** allows you to extend the Power BI service. This embedding requires your application's users sign into the Power BI service to view the content. Once someone in your organization signs in, they only have access to dashboards and reports that they own or that someone shared with them in the Power BI service.
+**Embedding for your organization** allows you to extend the Power BI service. This type of embedding requires your application's users sign into the Power BI service to view the content. Once someone in your organization signs in, they only have access to dashboards and reports that they own or that someone shared with them in the Power BI service.
 
 Organization embedding examples include internal applications such as [SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Microsoft Teams integration (you must have Admin rights)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), and [Microsoft Dynamics](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard).
 
@@ -59,7 +59,7 @@ You can go through the [Embedding setup tool](https://aka.ms/embedsetup/UserOwns
 
 ## Embedding for your customers
 
-**Embedding for your customers** lets you embed dashboards and reports for users who don't have a Power BI account. This embedding is also known as *Power BI Embedded*.
+**Embedding for your customers** lets you embed dashboards and reports for users who don't have a Power BI account. This type of embedding is also known as *Power BI Embedded*.
 
 [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md) is a **Microsoft Azure** service that lets independent software vendors (ISVs) and developers quickly embed visuals, reports, and dashboards into an application. This embedding is done through a capacity-based, hourly metered model.
 
