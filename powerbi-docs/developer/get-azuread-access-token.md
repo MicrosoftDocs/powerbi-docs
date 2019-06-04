@@ -23,9 +23,9 @@ Depending on how you're embedding content, the access token is retrieved differe
 
 This example is for when your users manually sign into Azure AD with their organization sign in. This task is used when embedding content for users that have Power BI service access.
 
-### Get an authorization code from Azure AD
+### Get an Azure AD authorization code
 
-The first step to get an access token is to get an authorization code from Azure AD. Construct a query string with the following properties, and redirect to Azure AD.
+The first step to get an **access token** is to get an authorization code from **Azure AD**. Construct a query string with the following properties, and redirect to **Azure AD**.
 
 #### Authorization code query string
 
@@ -49,7 +49,7 @@ var @params = new NameValueCollection
 };
 ```
 
-After you construct a query string, you redirect to Azure AD to get an 'authorization code'.  Below is a complete C# method to construct an authorization code query string, and redirect to Azure AD. You then use the authorization code to get an access token.
+After you construct a query string, you redirect to **Azure AD** to get an **authorization code**.  Below is a complete C# method to construct an **authorization code** query string, and redirect to **Azure AD**. You then use the **authorization code** to get an **access token**.
 
 Within redirect.aspx.cs, [AuthenticationContext.AcquireTokenByAuthorizationCode](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) calls to generate the token.
 
