@@ -20,7 +20,7 @@ ms.author: maggies
   
 -   **What structure do you want to use to present the data in the report?**  
   
-     You have a choice among tabular, matrix (similar to a cross-tab or PivotTable report), chart, free-form structures, or any combination of these to present data. For more information, see [Tables, Matrices, and Lists &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/tables-matrices-and-lists-report-builder-and-ssrs.md) and [Charts &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/charts-report-builder-and-ssrs.md).  
+     You have a choice among tabular, matrix (similar to a cross-tab or PivotTable report), chart, free-form structures, or any combination of these to present data. For more information, see [Tables, Matrices, and Lists in Power BI Report Builder](report-builder-tables-matrices-lists.md) and [Charts &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/charts-report-builder-and-ssrs.md).  
   
 -   **What do you want your report to look like?**  
   
@@ -28,11 +28,11 @@ ms.author: maggies
   
 -   **What data do you want your readers to see? Should the data or format be filtered for different audiences?**  
   
-     You might want to narrow the scope of the report to specific users or locations, or to a particular time period. To filter the report data, use parameters to retrieve and display only the data you want. For more information, see [Report Parameters &#40;Report Builder and Report Designer&#41;](../../reporting-services/report-design/report-parameters-report-builder-and-report-designer.md).  
+     You might want to narrow the scope of the report to specific users or locations, or to a particular time period. To filter the report data, use parameters to retrieve and display only the data you want. For more information, see [Report parameters in Power BI Report Builder](.md).  
   
 -   **Do you need to create your own calculations?**  
   
-     Sometimes, your data source and datasets do not contain the exact fields that you need for your report. In that situation, you might have to create your own calculated fields. For example, you might want to multiply the price per unit times the quantity to get a line item sales amount. Expressions are also used to provide conditional formatting and other advanced features. For more information, see [Expressions &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expressions-report-builder-and-ssrs.md).  
+     Sometimes, your data source and datasets do not contain the exact fields that you need for your report. In that situation, you might have to create your own calculated fields. For example, you might want to multiply the price per unit times the quantity to get a line item sales amount. Expressions are also used to provide conditional formatting and other advanced features. For more information, see [Expressions in Power BI Report Builder](report-builder-expressions.md).  
   
 -   **Do you want to hide report items initially?**  
   
@@ -43,8 +43,8 @@ ms.author: maggies
      You can save your report to your local computer and continue to work on it, or run it locally for your own information. However, to share your report with others, you need to save the report to a report server that is configured in native mode or a report server in SharePoint integrated mode. Saving it to a server lets others run it whenever they want to. Alternatively, the report server administrator can set up a subscription to the report or set up e-mail delivery of the report to other individuals. You can have the report delivered in a specific export format if you prefer. For more information, see [Finding, Viewing, and Managing Reports &#40;Report Builder and SSRS &#41;](../../reporting-services/report-builder/finding-viewing-and-managing-reports-report-builder-and-ssrs.md).  
   
 ## See Also  
- [Report Builder in SQL Server](../../reporting-services/report-builder/report-builder-in-sql-server-2016.md)   
- [Report Authoring Concepts &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/report-authoring-concepts-report-builder-and-ssrs.md)   
+ [Power BI Report Builder](report-builder-in-power-bi.md)   
+ [Report Authoring Concepts in Power BI Report Builder](report-builder-authoring-concepts.md)   
  [Report Builder Tutorials](../../reporting-services/report-builder-tutorials.md)  
   
   
