@@ -17,11 +17,10 @@ ms.author: michalfo
 
 You can search your item using device level search (spotlight) to find what you looked for and easily open it in Power BI app.
 
-To find items
+To find items using device search:
 1. Swipe down from the middle of the ‘Home’ screen to get into the device search
-2. Tap the ‘Search‘ field and enter a word relevant for the item you’re looking for.
-
-    The search results will include Power BI 
+2. Tap the ‘Search‘ field and enter a word relevant for the item you’re looking for
+   The search results will include Power BI 
     * Dashboards
     * Reports
     * Apps
