@@ -81,7 +81,7 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 * For dashboard subscriptions specifically, certain types of tiles are not yet supported.  These include: streaming tiles, video tiles, custom web content tiles.     
 * Subscriptions may fail on dashboards or reports with extremely large images due to email size limits.    
 * Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months.  However, if you add a subscription to a dashboard or report, it won't pause even if it goes unvisited.
-* On rare occasions, e-mail subscriptions may take longer than fifteen minutes to be delivered to their recipients.  If this happens, we recommend running your data refresh and e-mail subscription at different times to ensure timely delivery.  If the issue persists, please contact support.
+* On rare occasions, e-mail subscriptions may take longer than fifteen minutes to be delivered to their recipients.  If this happens, we recommend running your data refresh and e-mail subscription at different times to ensure timely delivery.  If the issue persists, contact Power BI support.
 
 ## Next steps
 
