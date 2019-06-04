@@ -1,9 +1,9 @@
 ---
-title: Embed a report using an iFrame
-description: Embedding Power BI Report Server report in an iFrame in SharePoint Server
+title: "Quickstart: Embed a Power BI Report Server report using an iFrame in SharePoint Server"
+description: This quickstart shows how to embed a Power BI Report Server report in an iFrame in SharePoint Server
 author: maggiesMSFT
 ms.author: maggies 
-ms.date: 05/04/2018
+ms.date: 06/04/2019
 ms.topic: quickstart
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -13,19 +13,20 @@ manager: kfile
 ---
 # Quickstart: Embed a Power BI Report Server report using an iFrame in SharePoint Server
 
-In this quickstart you will learn how to embed a Power BI Report Server report by using an iFrame in a SharePoint page. If you are working with SharePoint Online, Power BI Report Server must be publicly accessible. In SharePoint Online, the Power BI Web Part that works with the Power BI service doesn’t work with Power BI Report Server. 
+In this quickstart, you'll learn how to embed a Power BI Report Server report by using an iFrame in a SharePoint page. If you're working with SharePoint Online, Power BI Report Server must be publicly accessible. In SharePoint Online, the Power BI Web part that works with the Power BI service won't work with Power BI Report Server. 
 
 ![iFrame sample](media/quickstart-embed/quickstart_embed_01.png)
+
 ## Prerequisites
-* You will need to have [Power BI Report Server](https://powerbi.microsoft.com/report-server/) installed and configured.
-* You will need to have [Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md) installed.
-* You will need to have a [SharePoint](https://docs.microsoft.com/sharepoint/install/install) environment installed and configured.
+* [Power BI Report Server](https://powerbi.microsoft.com/report-server/) installed and configured.
+* [Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md) installed.
+* A [SharePoint](https://docs.microsoft.com/sharepoint/install/install) environment installed and configured.
 
-## Creating the Power BI Report Server report URL
+## Create the Power BI Report Server report URL
 
-1. Download the sample from GitHub - [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples).
+1. Download the sample from GitHub: [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples).
 
-    ![download sample PBIX file](media/quickstart-embed/quickstart_embed_14.png)
+    ![Download sample PBIX file](media/quickstart-embed/quickstart_embed_14.png)
 
 2. Open the sample PBIX file from GitHub in **Power BI Desktop optimized for Power BI Report Server**.
 
@@ -35,50 +36,47 @@ In this quickstart you will learn how to embed a Power BI Report Server report b
 
     ![PBI RS Save](media/quickstart-embed/quickstart_embed_03.png)
 
-4. View report in the **Web Portal**.
+4. View report in the **Web Portal** of the Report Server.
 
     ![Web Portal](media/quickstart-embed/quickstart_embed_04.png)
 
-### Capturing the URL parameter
+### Capture the URL parameter
 
-Once you have your URL, you can create an iFrame within a SharePoint page, to host the report. For any Power BI Report Server report URL you can add a querystring parameter of `?rs:embed=true` to embed your report into an iFrame. 
+Once you have your URL, you can create an iFrame within a SharePoint page to host the report. For any Power BI Report Server report URL, you can add a query string parameter of `?rs:embed=true` to embed your report in a SharePoint iFrame. 
 
    For example:
     ``` 
     http://myserver/reports/powerbi/Sales?rs:embed=true
     ```
-## Embedding a Power BI Report Server report in a SharePoint iFrame
+## Embed a Power BI Report Server report in a SharePoint iFrame
 
 1. Navigate to a SharePoint **Site Contents** page.
 
-    ![Site Content Page](media/quickstart-embed/quickstart_embed_05.png)
+    ![Site Contents page](media/quickstart-embed/quickstart_embed_05.png)
 
 2. Choose the page where you want to add your report.
 
-    ![Site Content Page App](media/quickstart-embed/quickstart_embed_06.png)
+    ![Site Contents page app](media/quickstart-embed/quickstart_embed_06.png)
 
-3. Select the gear on the top right and select **Edit Page**.
+3. Select the gear icon on the top right, and then select **Edit page**.
 
-    ![Edit Page option](media/quickstart-embed/quickstart_embed_07.png)
+    ![Edit page option](media/quickstart-embed/quickstart_embed_07.png)
 
-4. Select **Add Web Part**.
+4. Select **Add a Web Part**.
 
     ![Add Web Part](media/quickstart-embed/quickstart_embed_08.png)
 
-5. Under **Categories** select **Media and Content**, under **Parts**, select **Content Editor**, and then select **Add**.
+5. Under **Categories**, select **Media and Content**. Under **Parts**, select **Content Editor**, and then select **Add**.
 
     ![Select Content Editor Web Part](media/quickstart-embed/quickstart_embed_09.png)
-    ![Select Add](media/quickstart-embed/quickstart_embed_091.png)
 
 6. Select **Click here to add new content**.
 
-    ![Add new content](media/quickstart-embed/quickstart_embed_10.png)
-
-7. In the ribbon select the **Format Text** tab then select **Edit Source**.
+7. From the top menu, select **Format Text**, and then select **Edit Source**.
 
      ![Edit Source](media/quickstart-embed/quickstart_embed_11.png)
 
-8. In the Edit Source window paste your iFrame code and select OK.
+8. In the **Edit Source** window, paste your iFrame code in **HTML Source**, and then select **OK**.
 
     ![iFrame code](media/quickstart-embed/quickstart_embed_12.png)
 
@@ -87,11 +85,11 @@ Once you have your URL, you can create an iFrame within a SharePoint page, to ho
      <iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
      ```
 
-9. In the ribbon select the **Page** tab and select **Stop Editing**.
+9. In the top menu, select **Page**, and then select **Stop Editing**.
 
     ![Stop Editing](media/quickstart-embed/quickstart_embed_13.png)
 
-10. Now you should see the report on the page.
+10. You should now see the report on the page.
 
     ![iFrame sample](media/quickstart-embed/quickstart_embed_01.png)
 
@@ -100,4 +98,4 @@ Once you have your URL, you can create an iFrame within a SharePoint page, to ho
 [Quickstart: Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md)  
 [Quickstart: Create a paginated report for Power BI Report Server](quickstart-create-paginated-report.md)  
 
-More questions? [Try asking the Power BI Community](https://community.powerbi.com/) 
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/). 
