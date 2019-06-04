@@ -56,5 +56,5 @@ The Lithium content pack requires a Lithium community v15.9 or greater. Please c
 ## Next steps
 [What is Power BI?](power-bi-overview.md)
 
-[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
+[Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
