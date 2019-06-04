@@ -26,7 +26,7 @@ Read more about the [Salesforce integration](https://powerbi.microsoft.com/integ
 2. In the **Services** box, select **Get**.
    
    ![](media/service-connect-to-salesforce/pbi_getservices.png) 
-3. Click **Analytics for Salesforce** and select **Get**.  
+3. Select **Analytics for Salesforce** and select **Get**.  
    
    ![](media/service-connect-to-salesforce/salesforce.png)
 4. Select **Sign In** to start the sign in flow.
@@ -50,11 +50,11 @@ Read more about the [Salesforce integration](https://powerbi.microsoft.com/integ
      
      If you don't see any reports, add or create them in your Salesforce account and try connecting again.
 
-7. Click **Connect** to begin the import process. During the import, you see a notification showing the import is in progress. When the import is complete, you see a dashboard, report, and dataset for your Salesforce data listed in the left navigation pane.
+7. Select **Connect** to begin the import process. During the import, you see a notification showing the import is in progress. When the import is complete, you see a dashboard, report, and dataset for your Salesforce data listed in the left navigation pane.
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 
-You can change the dashboard to display your data how you'd like. You can ask questions with Q&A or [click a tile](consumer/end-user-tiles.md) to open the underlying report and [edit or remove dashboard tiles](service-dashboard-edit-tile.md).
+You can change the dashboard to display your data how you'd like. You can ask questions with Q&A or [select a tile](consumer/end-user-tiles.md) to open the underlying report and [edit or remove dashboard tiles](service-dashboard-edit-tile.md).
 
 **What now?**
 
