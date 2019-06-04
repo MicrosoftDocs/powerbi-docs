@@ -1,5 +1,5 @@
 ---
-title: "Report Parameters (Report Builder and Report Designer) | Microsoft Docs"
+title: "Report parameters in Power BI Report Builder"
 description: This topic describes the common uses for Reporting Services report parameters, the properties you can set, and much more.
 ms.prod: reporting-services
 ms.prod_service: "reporting-services-native"
@@ -13,7 +13,7 @@ ms.custom: ""
 ms.date: 12/06/2018
 ---
 
-# Report Parameters (Report Builder and Report Designer)
+# Report parameters in Power BI Report Builder
 
 This topic describes the common uses for Reporting Services report parameters, the properties you can set, and much more. Report parameters enable you to control report data, connect related reports together, and vary report presentation. You can use report parameters in paginated reports you create in Report Builder and Report Designer. Read more about [Report Parameters Concepts in Power BI Report Builder](report-builder-parameters-concepts.md).  
 

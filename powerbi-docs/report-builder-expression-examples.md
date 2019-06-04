@@ -1,5 +1,5 @@
 ---
-title: "Expression Examples (Report Builder and SSRS) | Microsoft Docs"
+title: "Expression examples in Power BI Report Builder"
 ms.date: 04/06/2017
 ms.prod: reporting-services
 ms.prod_service: "reporting-services-native"
@@ -11,7 +11,7 @@ ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Expression Examples (Report Builder and SSRS)
+# Expression examples in Power BI Report Builder
 Expressions are used frequently in Reporting Services paginated reports to control content and report appearance. Expressions are written in Microsoft Visual Basic, and can use built-in functions, custom code, report and group variables, and user-defined variables. Expressions begin with an equal sign (=). For more information about the expression editor and the types of references that you can include, see [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs.md), and [Add an Expression &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-an-expression-report-builder-and-ssrs.md).  
 
 This topic provides examples of expressions that can be used for common tasks in a report.  

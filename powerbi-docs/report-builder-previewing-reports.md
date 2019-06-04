@@ -1,5 +1,5 @@
 ---
-title: "Previewing Reports in Report Builder | Microsoft Docs"
+title: "Previewing reports in Power BI Report Builder"
 ms.date: 01/09/2017
 ms.prod: reporting-services
 ms.prod_service: "reporting-services-native"
@@ -11,7 +11,7 @@ ms.assetid: ba6b5bdd-d8c6-4aa8-ba32-3a10b11969d4
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Previewing Reports in Report Builder
+# Previewing reports in Power BI Report Builder
   While you create a Reporting Services paginated report, it is helpful to preview the report often to verify that the report displays what you want. To preview your report, click **Run**. The report renders in preview mode.  
   
  Report Builder improves the preview experience by using edit sessions when connected to a report server. The edit session creates a data cache and makes the datasets in the cache available for repeated report previews. An edit session is not a feature that you interact with directly, but understanding when the cached dataset is refreshed will help you improve performance when you preview a report and understand why the report renders faster or slower.  

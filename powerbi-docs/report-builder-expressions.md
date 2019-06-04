@@ -1,5 +1,5 @@
 ---
-title: "Expressions (Report Builder and SSRS) | Microsoft Docs"
+title: "Expressions in Power BI Report Builder"
 ms.date: 09/06/2016
 ms.prod: reporting-services
 ms.prod_service: "reporting-services-native"
@@ -11,7 +11,7 @@ ms.assetid: 76d3ac86-650c-46fe-8086-8b3edcea3882
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Expressions (Report Builder and SSRS)
+# Expressions in Power BI Report Builder
   Expressions are widely used throughout Reporting Services paginated reports to retrieve, calculate, display, group, sort, filter, parameterize, and format data. 
   
   Many report item properties can be set to an expression. Expressions help you control the content, design, and interactivity of your report. Expressions are written in Microsoft Visual Basic, saved in the report definition, and evaluated by the report processor when you run the report.  

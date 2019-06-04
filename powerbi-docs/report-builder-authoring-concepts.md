@@ -1,5 +1,5 @@
 ---
-title: "Report Authoring Concepts (Report Builder and SSRS) | Microsoft Docs"
+title: "Report authoring concepts in Power BI Report Builder"
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: "reporting-services-native"
@@ -11,7 +11,7 @@ ms.assetid: 99311b36-5dc5-4039-ac93-4d2826701327
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Report Authoring Concepts (Report Builder and SSRS)
+# Report authoring concepts in Power BI Report Builder
   This section briefly defines some key concepts used to describe paginated reports  in the Report Builder and Report Designer documentation.  
   
    

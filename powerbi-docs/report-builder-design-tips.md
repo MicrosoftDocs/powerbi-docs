@@ -1,5 +1,5 @@
 ---
-title: "Report Design Tips (Report Builder and SSRS) | Microsoft Docs"
+title: "Report design tips in Power BI Report Builder"
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: "reporting-services-native"
@@ -11,7 +11,7 @@ ms.assetid: c1490ff0-5b8a-43c1-8d22-e459395db4f6
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Report Design Tips (Report Builder and SSRS)
+# Report design tips in Power BI Report Builder
   Use the following tips to help design your Reporting Services paginated reports.  
   
    

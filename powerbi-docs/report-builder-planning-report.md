@@ -1,5 +1,5 @@
 ---
-title: "Planning a Report (Report Builder) | Microsoft Docs"
+title: "Planning a report in Power BI Report Builder"
 ms.date: 03/03/2017
 ms.prod: reporting-services
 ms.prod_service: "reporting-services-native"
@@ -11,7 +11,7 @@ ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Planning a Report (Report Builder)
+# Planning a report in Power BI Report Builder
   Report Builder lets you create many kinds of paginated reports. For example, you can create reports that show summary or detailed sales data, marketing and sales trends, operational reports, or dashboards. You can also create reports that take advantage of richly formatted text, such as for sales orders, product catalogs, or form letters. All these reports are created by using different combinations of the same basic building blocks in Report Builder. To create a useful, easily understood report, it helps to plan first. Here are some things you might want to consider before you get started:  
   
 -   **What format do you want the report to appear in?**  
