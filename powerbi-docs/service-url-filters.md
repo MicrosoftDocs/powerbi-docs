@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/31/2019
+ms.date: 04/24/2019
 LocalizationGroup: Reports
 ---
 
@@ -38,11 +38,11 @@ URL?filter=***Table***/***Field*** eq '***value***'
 
 ### Reports in apps
 
-If you want to add a URL filter to a report in an app, the formatting is a little different. Links to reports in an app have a query parameter (ctid) that gets added to the URL. Query parameters need to be separated by an ampersand (&). So you need to append the query with “&filter=” (after the ctid parameter) instead of “?filter=”. 
+If you want to add a URL filter to a report in an app, the formatting is a little different. Links to reports in an app have a query parameter (ctid) that gets added to the URL. Separate the query parameters with an ampersand (&). Keep “?filter=” and move the ctid parameter to the end of the URL, preceded by an ampersand (&). 
 
 Like this example:
 
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?ctid=*ctid*&filter=*Table*/*Field* eq '*value*'
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*&'ctid=*ctid*
 
 ### Field types
 
@@ -78,7 +78,7 @@ To filter the report to show data only for stores in "NC" (North Carolina), appe
 
 Our report is filtered for North Carolina; all the visualizations on the report page show data for only North Carolina.
 
-![](media/service-url-filters/power-bi-report4.png)
+![Report filtered for North Carolina](media/service-url-filters/power-bi-report4.png)
 
 ## Filter on multiple fields
 
@@ -128,9 +128,9 @@ A Power BI URL filter can include numbers in the following formats.
 
 ### Date data types
 
-Power BI supports both OData V3 and V4 for **Date** and **DateTimeOffset** data types.  Dates are represented using the EDM format (2019-02-12T00:00:00), so when you specify a date as YYYY-MM-DD, Power BI interprets it as YYYY-MM-DDT00:00:00.
+Power BI supports both OData V3 and V4 for **Date** and **DateTimeOffset** data types.  Dates are represented using the EDM format (2019-02-12T00:00:00), so when you specify a date as 'YYYY-MM-DD', Power BI interprets it as 'YYYY-MM-DDT00:00:00'.
 
-Why does this distinction matter? Let's say you create a query string parameter **Table/Date gt 2018-08-03**.  Will the results include August 3, 2018 or start with August 4, 2018? Since Power BI translates your query to **Table/Date gt 2018-08-03T00:00:00**, your results include any dates that have a non-zero time part since those dates would be greater than **2018-08-03T00:00:00**.
+Why does this distinction matter? Let's say you create a query string parameter **Table/Date gt '2018-08-03'**.  Will the results include August 3, 2018 or start with August 4, 2018? Since Power BI translates your query to **Table/Date gt '2018-08-03T00:00:00'**, your results include any dates that have a non-zero time part since those dates would be greater than **'2018-08-03T00:00:00'**.
 
 ## Special characters in URL filters
 
@@ -140,7 +140,7 @@ Special characters and spaces require some additional formatting. When your quer
 |---------|---------|---------|
 |**Table Name**     | Space is 0x20        |  Table_x0020_Name       |
 |**Column**@**Number**     |   @ is 0x40     |  Column_x0040_Number       |
-|**[Column]**     |  [ is 0x0058 ] is 0x0050       |  _x0058_Column_x0050       |
+|**[Column]**     |  [ is 0x0058 ] is 0x0050       |  _x0058_Column_x0050_       |
 |**Column+Plus**     | + is 0x2B        |  Column_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3
@@ -174,7 +174,7 @@ There are a couple of things to be aware of when using the query string paramete
 
 * When using the *in* operator, the values to the right of *in* must be a comma-separated list enclosed in parentheses.    
 * In Power BI Report Server, you can [pass report parameters](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) by including them in a report URL. These URL parameters aren't prefixed because they're passed directly to the report processing engine.
-* Query string filtering doesn't work with [Publish to web](service-publish-to-web.md).
+* Query string filtering doesn't work with [Publish to web](service-publish-to-web.md) or [Export to PDF](consumer/end-user-pdf.md).
 * [Embed with report web part in SharePoint Online](service-embed-report-spo.md) doesn't support URL filters.
 * The long data type is (2^53-1) due to Javascript limitations.
 * Report URL filters have a 10-expression limit (10 filters connected by AND).

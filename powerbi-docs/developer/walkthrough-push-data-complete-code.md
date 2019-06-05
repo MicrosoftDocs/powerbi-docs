@@ -1,8 +1,8 @@
 ---
 title: Complete code listing
 description: Walkthrough to push data - Complete code listing
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
@@ -19,6 +19,7 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
 
 ## Push data to dataset code
 
+```csharp
       using System;
       using Microsoft.IdentityModel.Clients.ActiveDirectory;
       using System.Net;
@@ -66,7 +67,7 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
                   string resourceUri = "https://analysis.windows.net/powerbi/api";
 
                   //OAuth2 authority Uri
-                  string authorityUri = "https://login.microsoftonline.net/common/";
+                  string authorityUri = "https://login.microsoftonline.com/common/";
 
                   //Get access token:
                   // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken
@@ -215,6 +216,7 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
               #endregion
           }
       }
+```
 
 ## Next steps
 

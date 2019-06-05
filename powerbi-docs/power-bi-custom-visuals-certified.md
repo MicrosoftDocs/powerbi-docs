@@ -1,16 +1,15 @@
 ---
 title: Certified Power BI custom visuals
 description: Requirements and process to submit a custom visual for certification. And a list of already certified custom visuals.
-author: markingmyname
-ms.author: maghan
+author: sranins
+ms.author: rasala
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: maghan
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 11/21/2018
+ms.date: 05/9/2019
 ---
 
 # Certified custom visuals
@@ -41,11 +40,34 @@ Microsoft can remove a visual from the [certified list](#list-of-custom-visuals-
 To get your custom visual [certified](#certified-custom-visuals), make sure your custom visual complies with the below:  
 
 * Microsoft AppSource approved. Your custom visual should be in our [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* Custom visual is written with versioned API 1.2 or higher.
-* Code repository available for review by Power BI team (for instance, source code (JavaSCriptS or TypeScript) in human readable format available to us, through GitHub).
+* Custom visual is written with versioned **API v2.5** or higher.
+* Code repository is available for review by Power BI team (for instance, source code (JavaScript or TypeScript) in human readable format is available to us, through GitHub).
 
     >[!Note]
     > You don’t have to publicly share your code in Github.
+* Code repository requirements:
+   * Must include the minimal required set of files:
+      * .gitignore
+      * capabilities.json
+      * pbiviz.json
+      * package.json
+      * package-lock.json
+      * tsconfig.json
+   * Must not include node_modules folder (add node_modules to .gitingore file)
+   * **npm install** command must not return any errors.
+   * **npm audit** command must not return any warnings with high or moderate level.
+   * **pbiviz package** command must not return any errors.
+   * Must include [TSlint from Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) with no overridden configuration, and this command must not return any lint errors.
+   * The compiled package of the Custom Visual must match submitted package (md5 hash of both files should be equal).
+* Source Code requirements:
+   * The visual must support [Rendering Events API](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
+   * Ensure no arbitrary/dynamic code is run (bad: eval(), unsafe to use of settimeout(), requestAnimationFrame(), setinterval(some function with user input), running user input/data).
+   * Ensure DOM is manipulated safely (bad: innerHTML, D3.html(<some user/data input>), use sanitization for user input/data before adding it to the DOM.
+   * Ensure there are no javascript errors/exceptions in the browser console for any input data. Users might use your visual with a different range of unexpected data, so the visual must not fail. You can use [this sample report](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) as a test dataset.
+
+* If any properties in capabilities.json are changed, make sure that they do not break existing user's reports.
+
+* Make sure the visual complies with the [guidelines for Power BI visuals](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **No watermarks are allowed**.
 
 * Uses only public reviewable OSS components (JS libraries or TypeScript that are public. The source code is available for reviewing and doesn't have known vulnerabilities). We can't verify a custom visual using a commercial component.
 
@@ -70,6 +92,7 @@ To submit a custom visual for certification:
 
 | Link to AppSource | Link to video |
 | --- | --- |
+| [3AG Systems - Bar Chart With Relative Variance](https://appsource.microsoft.com/en/product/power-bi-visuals/WA104381912) | |
 | [3AG Systems - Column Chart With Relative Variance](https://appsource.microsoft.com/product/power-bi-visuals/WA104381803) | |
 | [Advanced Donut Visual](https://appsource.microsoft.com/product/power-bi-visuals/WA104381941) | |
 | [Advanced Network Visualization](https://appsource.microsoft.com/product/power-bi-visuals/WA104381942) | |
@@ -162,6 +185,10 @@ To submit a custom visual for certification:
 | [User List by CloudScope](https://appsource.microsoft.com/product/power-bi-visuals/WA104381426) | |
 | [Waffle Chart](https://appsource.microsoft.com/product/power-bi-visuals/WA104381049) | [Video](https://youtu.be/1vRqYUsm3Vk) |
 | [Word Cloud](https://appsource.microsoft.com/product/power-bi-visuals/WA104380752) | [Video](https://youtu.be/AblTenl9fqo) |
+
+## FAQ
+
+For more information about visuals, see [Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.md#certified-custom-visuals).
 
 ## Next steps
 

@@ -1,12 +1,11 @@
 ---
 title: Frequently asked questions about Power BI custom visuals
 description: Browse a list of frequently asked questions and answers about Power BI custom visuals
-author: markingmyname
-ms.author: maghan
+author: sranins
+ms.author: rasala
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: maghan
 ms.service: powerbi
-ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
@@ -19,7 +18,7 @@ ms.date: 12/17/2018
 
 ### How can the admin manage the organizational custom visuals?
 
-In the Admin portal, under the "Organizational custom visuals" tab the admin can see and [manage all the organizational custom visuals in the enterprise](https://docs.microsoft.com/power-bi/service-admin-portal#organization-visuals): add, disable, enable, and delete.
+In the Admin portal, under the "Organizational custom visuals" tab, the admin can see and [manage all the organizational custom visuals in the enterprise](service-admin-portal.md#organizational-visuals): add, disable, enable, and delete.
 There's no need to share those visuals by emails or shared folder anymore! Once deployed into the organizational repository, users in the organization can easily find them, and import the organizational custom visuals into their reports directly from Power BI Desktop or Service. The organizational custom visuals can be found from the built-in store (in desktop and service) under the *MY ORGANIZATION* tab. Once the admin uploads a new organizational custom visual’s version, everyone in the organization gets the same updated version. Report authors don't need to delete the visual in their reports to get the new version of these visuals as all reports using these visuals are automatically updated! The update mechanism is similar to the marketplace visuals.
 
 ### If an admin uploads a custom visual from the public marketplace to the organization store, is it automatically updated once a vendor updates the visual in the public marketplace?
@@ -53,13 +52,53 @@ Yes, if the admin disables the custom visuals from the admin portal, it doesn’
 
 ### What are certified custom visuals?
 
-Certified custom visuals are visuals in the [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that met certain [specified](power-bi-custom-visuals-certified.md) code requirements and testing by the Power BI team.  The tests performed are designed to check that the visual doesn't access external services or resources. However, Microsoft isn't the author of third-party custom visuals. We advise customers to contact the author directly to verify the functionality of such visual.
+Certified custom visuals are visuals in the [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that meet certain [specified](power-bi-custom-visuals-certified.md) code requirements and testing by the Power BI team.  The tests performed are designed to check that the visual does not access external services or resources. However, Microsoft isn't the author of third-party custom visuals, and we advise customers to contact the author directly to verify the functionality of such visual.
 
+### What tests are done during the certification process?
+
+The certification process tests include but are not limited to: 
+Code reviews, static code analysis, data leakage, data fuzzing, penetration testing, access XSS testing, malicious data injection, input validation and functional testing.
+ 
+### Do you certify visuals every submission?
+
+Yes. Every time a new version of certified visual is submitted to the Marketplace, the visual’s version update goes under the same certification checks.
+
+Note for developers: if you are submitting a version update of certified visual, you do not need to send a separate email as [first time certification request.](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified#process-for-submitting-a-custom-visual-for-certification) 
+Certification of version update happens automatically, and any violations that cause a rejection are sent an email to explain what things need to be fixed. 
+
+### Is it possible that a certified visual stops being certified with a new update?
+
+No, this is not possible. A certified visual can’t be uncertified with a new update. The update is rejected.
+ 
+### Do I need to share my code in public repository if I am submitting to the certification process?
+
+No, you don’t need to share your code publicly. 
+However, you need to give us read permissions to check the visuals code. E.g. private repository in GitHub.
+ 
+### Do we have to [publish](https://docs.microsoft.com/power-bi/developer/office-store) the visual in the [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) to certify it?
+
+Yes. Publishing the visual to Marketplace first is an obligatory requirement for certification.
+To certify a custom visual, it should be in our servers. We cannot certify private visuals.
+ 
+### How long does it take to certify my visual?
+
+For updated version it may take up to 3 weeks. For a new submission (first-time certification) it may take up to 4 weeks. 
+
+### Does the Certification process ensure that no data leakage occurs?
+
+The tests performed are designed to check that the visual does not access external services or resources. 
+However, Microsoft is not the author of third-party custom visuals, and we advise customers to contact the author directly to verify the functionality of such visual.
+ 
+### Are uncertified custom visuals safe to use?
+
+Uncertified custom visuals do not necessarily mean unsafe visuals.
+Some visuals aren't certified because they don’t comply with one or more of the [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
+ 
 ## Visuals with additional purchases
 
 ### What is a visual with additional purchases?
 
-A visual with additional purchases is similar to in-app purchase (IAP) adds-in in the marketplace, these adds-in have a price tag **Additional purchase may be required**.
+A visual with additional purchases is similar to in-app purchase (IAP) adds-in in the marketplace, these adds-in have a price tag **Additional purchase may be required**.
 
 IAP custom visuals are free, downloadable custom visuals - users pay nothing to download those custom visuals from the marketplace. IAP visuals offer optional in-app purchases for advanced features.  
 
@@ -94,6 +133,8 @@ If you’re working on an IAP custom visual or already have one, make sure t
 If you have a logo in the custom visual, make sure it complies to the logo guidelines (color, location, size, and action triggering).
 
 You can also find, in the guidelines, best practice notes.  
+> [!Note]
+> All free visuals should keep same free features previously offered. You may add optional advanced paid features on top of the old free features. We recommend to submit the IAP visuals with the advanced features as new visuals and not to update the old free ones.
 
 ### Can I get my IAP custom visual certified?
 

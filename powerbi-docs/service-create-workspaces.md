@@ -1,31 +1,29 @@
 ---
-title: Create workspaces with your colleagues in Power BI
-description: Learn how to create workspaces, collections of dashboards and reports built to deliver key metrics for your organization.
+title: Create classic workspaces in Power BI
+description: Learn how to create workspaces, collections of dashboards, reports, and paginated reports built to deliver key metrics for your organization.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 04/18/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Create workspaces with your colleagues in Power BI
+# Create classic workspaces in Power BI
 
-In Power BI, you can create *workspaces*, places to collaborate with colleagues to create and refine collections of dashboards and reports. Then you bundle the collection together into *apps* that you can distribute to your whole organization or to specific people or groups. 
+In Power BI, you can create *workspaces*, places to collaborate with colleagues to create and refine collections of dashboards, reports, and paginated reports. Then you can bundle the collection together into *apps* that you can distribute to your whole organization or to specific people or groups. 
 
-![Power BI apps](media/service-create-workspaces/power-bi-apps-left-nav.png)
+**Did you know?** Power BI offers a new workspace experience, which is now the default. Read [Organize work in the new workspaces](service-new-workspaces.md) for details about the new workspaces. 
 
-When you create a workspace, you're creating an underlying, associated Office 365 group. All the workspace administration is in Office 365. You can add colleagues to these workspaces as members or admins. In the workspace, you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience. Everyone you add to an app workspace needs a Power BI Pro license. 
-
-**Did you know?** Power BI is previewing a new workspace experience. Read [Organize work in the new workspaces (preview)](service-new-workspaces.md) for details about the new workspaces. 
+When you create a classic workspace, you're creating an underlying, associated Office 365 group. All the workspace administration is in Office 365. You can add colleagues to these workspaces as members or admins. In the workspace, you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience. Everyone you add to an app workspace needs a Power BI Pro license. 
 
 ## Video: Apps and app workspaces
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## Create an app workspace based on an Office 365 group
+## Create a classic app workspace based on an Office 365 group
 
 When you create an app workspace, it’s built on an Office 365 group.
 
@@ -47,6 +45,8 @@ By default, Power BI creates a little colored circle for your app, with the app'
 3. Select the pencil icon again, and find the image you want to use.
    
      ![Select the pencil again](media/service-create-distribute-apps/power-bi-apps-workspace-edit-group.png)
+
+     Images can be .png, .jpg, or .bmp files. Their file size can be large, up to 3 MB. 
 
 4. Select **Save**.
    
@@ -73,9 +73,16 @@ In the current workspaces, you can also connect using organizational content pac
 
 ## Distribute an app
 
-When the content is ready, you choose which dashboards and reports you want to publish, and then you publish it as an *app*. Your coworkers can get your apps in a few different ways. You can install them automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. Otherwise, they can find and install your apps from Microsoft AppSource, or you can send them a direct link. They get updates automatically and you can control how frequently the data refreshes. See [Publish apps with dashboards and reports in Power BI](service-create-distribute-apps.md) for details.
+If you want to distribute official content to a large audience within your organization, you can publish an app from your workspace.  When the content is ready, you choose which dashboards and reports you want to publish, and then publish it as an *app*. You can create one app from each workspace.
 
-## Power BI apps FAQ
+The Apps list in the left navigation shows all the apps you've installed. Your coworkers can get your app in a few different ways. 
+- They can find and install your app from Microsoft AppSource
+- You can send them a direct link. 
+- You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission. 
+
+Users see updated app content automatically after you publish an update from your workspace. You can control how frequently the data refreshes by setting the refresh schedule in the datasets used by the app content in your workspace. See [Publish an app from the new workspaces in Power BI](service-create-distribute-apps.md) for details.
+
+## Power BI classic apps FAQ
 
 ### How are apps different from organizational content packs?
 Apps are the evolution of organizational content packs. If you have organizational content packs already, they'll continue to work side by side with apps. Apps and content packs have a few major differences. 

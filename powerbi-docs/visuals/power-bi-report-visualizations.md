@@ -9,7 +9,7 @@ featuredvideoid: SYk_gWrtKvM
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/21/2018
+ms.date: 05/28/2019
 LocalizationGroup: Visualizations 
 ---
 
@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 Visualizations (aka visuals) display insights that have been discovered in the data. A Power BI report might have a single page with one visual or it might have pages full of visuals. In Power BI service, visuals can be [pinned from reports to dashboards](../service-dashboard-pin-tile-from-report.md).
 
-It's important to make the distinction between report *creators* and report *consumers*  If you are the person building or modifying the report, then you are a creator.  Creators have edit permissions to the report and its underlying dataset. In Power BI Desktop, this means you can open the dataset in Data view and create visuals in Report view. In Power BI service, this means you can open the dataset or report in the report editor in [Editing view](../consumer/end-user-reading-view.md). If a report or dashboard has been [shared with you ](../consumer/end-user-shared-with-me.md), you are a report **consumer**. You'll be able to view and interact with the report and its visuals but you won't be able to save changes.
+It's important to make the distinction between report *designers* and report *consumers*  If you are the person building or modifying the report, then you are a designer.  Designers have edit permissions to the report and its underlying dataset. In Power BI Desktop, this means you can open the dataset in Data view and create visuals in Report view. In Power BI service, this means you can open the data set or report in the report editor in [Editing view](../consumer/end-user-reading-view.md). If a report or dashboard has been [shared with you ](../consumer/end-user-shared-with-me.md), you are a report **consumer**. You'll be able to view and interact with the report and its visuals but you won't be able to save major changes.
 
 There are many different visual types available directly from the Power BI VISUALIZATIONS pane.
 
@@ -45,6 +45,11 @@ Try [changing the type of visualization](power-bi-report-change-visualization-ty
 ## Pin the visualization
 
 In Power BI service, when you have the visualization the way you want it, you can [pin it to a dashboard](../service-dashboard-pin-tile-from-report.md) as a tile. If you change the visualization being used in the report after you pin it, the tile on the dashboard doesn't change -- if it was a line chart, it stays a line chart, even if you changed it to a Doughnut chart in the report.
+
+## Limitations and considerations
+- Depending on the data source and the number of fields (measures or columns), a visual may load slowly.  We recommend limiting visuals to 10-20 total fields, both for readability and performance reasons. 
+
+- The upper limit for visuals is 100 fields (measures or columns). If your visual fails to load, reduce the number of fields.   
 
 ## Next steps
 

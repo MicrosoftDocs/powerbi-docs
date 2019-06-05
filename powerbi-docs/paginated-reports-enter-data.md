@@ -2,9 +2,9 @@
 title: "Enter data directly in a paginated report in Report Builder (Preview)"
 description: In this article, you see how you can enter data directly into a paginated report in Report Builder. 
 author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
@@ -19,7 +19,7 @@ In this article, you learn about a feature in the new version of SQL Server 2016
 ## Prerequisites
 
 - To enter data directly in a paginated report, install the new version of [Report Builder from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53613). 
-- To save your paginated report to the Power BI service, you need a [Power BI Pro account](service-self-service-signup-for-power-bi.md) and write access to a workspace in a [Power BI Premium capacity](service-premium.md).
+- To save your paginated report to the Power BI service, you need a [Power BI Pro account](service-self-service-signup-for-power-bi.md) and write access to a workspace in a [Power BI Premium capacity](service-premium-what-is.md).
 - To save your paginated report to a report server, you need permissions to [edit the RsReportServer.config file](#upload-the-paginated-report-to-a-report-server).
 
 ## Get started
@@ -78,11 +78,11 @@ Now that paginated reports are supported in the Power BI service in preview, you
 
 You can also upload your paginated report to a Power BI Report Server or SQL Server Reporting Services 2016 or 2017 report server. Before you do, you need to add the following item to your RsReportServer.config as an additional data extension. Back up your RsReportServer.config file before you make the change, in case you run into any issues.
 
-```
-<Extension Name=”ENTERDATA” Type=”Microsoft.ReportingServices.DataExtensions.XmlDPConnection,Microsoft.ReportingServices.DataExtensions”>
-<Configuration>
-<ConfigName>ENTERDATA</ConfigName>
-</Configuration>
+```xml
+<Extension Name="ENTERDATA" Type="Microsoft.ReportingServices.DataExtensions.XmlDPConnection,Microsoft.ReportingServices.DataExtensions">
+    <Configuration>
+        <ConfigName>ENTERDATA</ConfigName>
+    </Configuration>
 </Extension>
 ```
 

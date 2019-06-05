@@ -76,6 +76,26 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/service-content-pack-overview.md", 
+            "redirect_url": "/power-bi/service-template-apps-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/template-content-pack-authoring.md", 
+            "redirect_url": "/power-bi/service-template-apps-create",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/template-content-pack-experience.md", 
+            "redirect_url": "/power-bi/service-template-apps-install-distribute",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/template-content-pack-testing.md", 
+            "redirect_url": "/power-bi/service-template-apps-tests",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/developer/embed-sample-for-customers-us-govt.md", 
             "redirect_url": "/power-bi/developer/embed-sample-for-customers-sovereign-clouds",
             "redirect_document_id": true
@@ -116,6 +136,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "power-bi/mobile-windows-10-phone-app-get-started.md", 
+            "redirect_url": "/power-bi/consumer/mobile/mobile-windows-10-phone-app-get-started",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/developer/integrate-dashboard.md", 
             "redirect_url": "/power-bi/developer/embed-sample-for-your-organization",
             "redirect_document_id": false
@@ -137,8 +162,8 @@
         },
         {
             "source_path": "powerbi-docs/developer/template-content-pack-authoring.md", 
-            "redirect_url": "/power-bi/template-content-pack-authoring",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/service-template-apps-create",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/consumer/end-user-export-data.md", 
@@ -377,8 +402,8 @@
         },
         {
             "source_path": "powerbi-docs/desktop-slicers.md", 
-            "redirect_url": "/power-bi/visuals/desktop-slicers",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-slicers",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/power-bi-map-tips-and-tricks.md", 
@@ -456,6 +481,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/visuals/service-histogram.md", 
+            "redirect_url": "/power-bi/desktop-grouping-and-binning",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/power-bi-visualization-kpi.md", 
             "redirect_url": "/power-bi/visuals/power-bi-visualization-kpi",
             "redirect_document_id": true
@@ -472,7 +502,12 @@
         },
         {
             "source_path": "powerbi-docs/power-bi-visualizations-arcgis.md", 
-            "redirect_url": "/power-bi/consumer/power-bi-visualizations-arcgis",
+            "redirect_url": "/power-bi/visuals/power-bi-visualizations-arcgis",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/power-bi-visualizations-arcgis.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualizations-arcgis",
             "redirect_document_id": true
         },
         {
@@ -484,6 +519,11 @@
             "source_path": "powerbi-docs/power-bi-visualization-slicers.md", 
             "redirect_url": "/power-bi/visuals/power-bi-visualization-slicers",
             "redirect_document_id": true
+        },
+		        {
+            "source_path": "powerbi-docs/visuals/desktop-slicers.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-slicers",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/power-bi-visualization-tables.md", 
@@ -549,6 +589,11 @@
             "source_path": "powerbi-docs/service-browser-support.md",
             "redirect_url": "/power-bi/consumer/end-user-browsers",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-connect-to-google-analytics.md",
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-marketing.md",
@@ -738,6 +783,46 @@
         {
             "source_path": "powerbi-docs/service-gateway-enterprise-tshoot.md",
             "redirect_url": "/power-bi/service-gateway-onprem-tshoot",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/spark-on-hdinsight-with-direct-connect.md",
+            "redirect_url": "/power-bi/desktop-directquery-data-sources",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-admin-premium-manage.md",
+            "redirect_url": "/power-bi/service-premium",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/office-store-in-app-purchase-visual-guidelines.md",
+            "redirect_url": "/power-bi/developer/guidelines-powerbi-visuals",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/embed-sample-for-customers-sovereign-clouds.md",
+            "redirect_url": "/power-bi/developer/embed-sample-for-customers-national-clouds",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/developer/walkthrough-push-data-register-app-with-azure-ad.md",
+            "redirect_url": "/power-bi/developer/register-app",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-premium.md",
+            "redirect_url": "/power-bi/service-premium-what-is",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-premium-large-datasets.md",
+            "redirect_url": "/power-bi/service-premium-what-is",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-premium-understand-how-it-works.md",
+            "redirect_url": "/power-bi/service-premium-capacity-optimize",
             "redirect_document_id": false
         }
     ]

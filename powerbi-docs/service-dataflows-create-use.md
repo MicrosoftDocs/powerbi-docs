@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
 ---
-# Creating and using dataflows in Power BI (Preview)
+# Creating and using dataflows in Power BI
 
 With advanced data preparation available in **Power BI**, you can create a collection of data called a dataflow, which you can then use to connect with business data from various sources, clean the data, transform it, and then load it to Power BI storage.
 
@@ -30,9 +30,6 @@ There are three primary steps to using a dataflow:
 3. Build the dataset using your dataflow, using Power BI Desktop 
 
 In the following sections, we look at each of these steps and become familiar with the tools provided to complete each step. Let’s get started.
-
-> [!NOTE]
-> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
 
 ## Creating a dataflow
 To create a dataflow, launch the Power BI service in a browser then select an **app workspace** (dataflows are not available in *my-workspace* in the Power BI service) from the navigation pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow. 
@@ -153,14 +150,18 @@ There may be occasions when connecting to data sources for dataflows run into is
 
 * **SharePoint connector** - Make sure you supply the root address of the SharePoint site, without any subfolders or documents. For example, use link similar to the following: https://microsoft.sharepoint.com/teams/ObjectModel/ 
 
+* **JSON File connector** - Currently you can connect to a JSON file using basic authentication only.  Connecting to a JSON file by providing the credentials within the URL (for example, https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg... ) is **not** currently supported.  
+
+* **Azure SQL Data Warehouse** - Dataflows do not currently support Azure Active Directory (AAD) authentication for Azure SQL Data Warehouse. Use Basic authentication for this scenario.
+
 ## Next Steps
 
 This article described how you can create your own **dataflow** and create a dataset and report in **Power BI Desktop** to take advantage of it. The following articles are useful for further information and scenarios when using dataflows:
 
 * [Self-service data prep with dataflows](service-dataflows-overview.md)
-* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
-* [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows](service-dataflows-developer-resources.md)
 * [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md)
 
 For more information about the Common Data Model, you can read its overview article:

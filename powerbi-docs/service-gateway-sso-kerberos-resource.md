@@ -18,7 +18,7 @@ Use [resource-based Kerberos constrained delegation](/windows-server/security/ke
 
 ## Preparing for resource-based Kerberos constrained delegation
 
-Several items must be configured for Kerberos Constrained Delegation to work properly, including _Service Principal Names_ (SPN) and delegation settings on service accounts.
+Several items must be configured for Kerberos Constrained Delegation to work properly, including _Service Principal Names_ (SPN) and delegation settings on service accounts. 
 
 ### Prerequisite 1: Operating system requirements
 
@@ -34,7 +34,7 @@ In a standard installation, the gateway runs as a machine-local service account 
 
 ![Domain account](media/service-gateway-sso-kerberos-resource/domain-account.png)
 
-To enable **Kerberos Constrained Delegation, the gateway must run as a domain account, unless your Azure AD is already synchronized with your local Active Directory (using Azure AD DirSync/Connect). If you need to switch the account to a domain account, see [Switching the gateway to a domain account](service-gateway-sso-kerberos.md#switching-the-gateway-to-a-domain-account) later in this article.
+To enable **Kerberos Constrained Delegation, the gateway must run as a domain account, unless your Azure AD is already synchronized with your local Active Directory (using Azure AD DirSync/Connect). If you need to switch the account to a domain account, see [Switching the gateway to a domain account](service-gateway-sso-kerberos.md).
 
 If Azure AD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need to perform local AD lookups at runtime. You can use the local Service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration (they are simply applied to the gateway's computer object in Active Directory, instead of the domain account).
 
@@ -100,8 +100,8 @@ Given those example names and settings, use the following configuration steps:
 1. Open command prompt and run the following commands n the domain controller for **PBIEgwTestBack-end** domain to update msDS-AllowedToActOnBehalfOfOtherIdentity attribute of the back-end service account:
 
     ```powershell
-    $c=get-adgroupResourceDelGroup
-    set-aduser **SQLService** -principalsAllowedToDelegateToAccount$c
+    $c = Get-ADGroup ResourceDelGroup
+    Set-ADUser SQLService -PrincipalsAllowedToDelegateToAccount $c
     ```
 
 1. You can verify that the update is reflected in the "Attribute Editor" tab in the properties for the back-end service account in **Active Directory Users and Computers.**

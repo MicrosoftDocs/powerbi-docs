@@ -8,11 +8,10 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 05/28/2019
 ms.author: nikhilga
 
 LocalizationGroup: Get started
----
 ---
 # What's new in the Power BI service
 Check this page for known issues and recently released features in the **Power BI Service**. For related "What's New" information, see:
@@ -27,10 +26,66 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## September 2018
-* [Dashboard commenting](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) in the Power BI service.
+## May 2019
+* [Custom navigation](service-create-distribute-apps.md) for Power BI Apps.
+* Additional attachments types (PPTX, XLSX, DOCX, CSV, XML) available for e-mail subcriptions within paginated reports.
 
-## Previous months (2018)
+## Previous months (2019)
+### April 2019
+* General availability of Power BI [dataflows](service-dataflows-overview.md).
+* General availability of the new workspaces experience.
+* New Power BI regions in France and Korea.
+* Updated Q&A experience for dashboards.
+* Support for Azure Analysis Services within [paginated reports](paginated-reports-report-builder-power-bi.md).
+* Paginated reports supported in Power BI Apps.
+* [E-mail subscriptions](https://powerbi.microsoft.com/en-us/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) with PDF attachments for paginated reports.
+* Power BI Premium summary and workload metrics supported in Admin Portal
+* [Query caching](power-bi-query-caching.md) available in Power BI Premium.
+* General availability of [Power BI Home](https://powerbi.microsoft.com/en-us/blog/announcing-power-bi-home-general-availability-ga-roadmap/).
+
+### March 2019
+* General Availability of Multi-Geo for Power BI Premium.
+* Editing and managing Power BI content support for Azure B2B.
+* Public preview of read-only [XMLA endpoint](https://powerbi.microsoft.com/en-us/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/).
+
+### February 2019
+* Workloads and active dataset size metrics in [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Export to PDF for Power BI reports.
+* [On-demand e-mail subscriptions](service-report-subscribe.md).
+* Bulk operations in the Admin Portal.
+* Filtered export for PPT and PDF.
+* [Help and support settings](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) in the Admin Portal.
+* Data lineage experience for [dataflows](service-dataflows-overview.md).
+* Certified custom visuals setting in the Admin Portal.
+
+### January 2019
+* [Embedding secure Power BI reports](service-embed-secure.md) in internal portals or websites.
+* Updates to [dataflows](service-dataflows-overview.md) editor with new connectors, and support for native SQL queries and Power Query Online transformations.
+* [Personal bookmarks](https://powerbi.microsoft.com/en-us/blog/announcing-personal-bookmarks-in-the-power-bi-service/) in the Power BI service.
+* Time-based scheduling with e-mail subscriptions.
+
+## 2018
+### December 2018
+* AI-powered [recommended apps](https://powerbi.microsoft.com/en-us/blog/announcing-ai-powered-app-recommendations-getting-the-right-insights-to-the-right-people/) in Power BI Home.
+* [Workspace management](https://powerbi.microsoft.com/en-us/blog/workspace-management-in-the-admin-portal/) in the Admin Portal.
+* Preview of Power BI Dataflows and Azure Data Lake Storage Gen2 Integration in [dataflows](service-dataflows-overview.md).
+* Power BI solution templates became open source.
+
+### November 2018
+* Power BI data prep available with [dataflows](service-dataflows-overview.md) public preview.
+* Public preview of [paginated reports](paginated-reports-report-builder-power-bi.md) in Power BI Premium.
+* Data size and count of datasets in memory in the [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+
+### October 2018
+* Aggregations[desktop-aggregations.md] in the Power BI service.
+* Power BI expanded to three new regions: Central India, Australia East, and Central US (Iowa). 
+* Export to PowerPoint made generally available.
+
+### September 2018
+* [Dashboard commenting](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) in the Power BI service.
+* Public preview of [Power BI Home and Global Search](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
+* Ability to [monitoring queries](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) in the [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+
 ### August 2018
 * [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) for Power BI Premium.
 * Power BI [Report URL filter](service-url-filters.md) improvements.
@@ -74,7 +129,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 *	Scheduled refresh support for Azure Analysis Services (AAS).
 
 ## Previous months (2017)
-## October and November 2017
+### October and November 2017
 *	Selective publish of content with [Power BI Apps](service-create-distribute-apps.md).
 *	External user distribution with [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
 * AI-powered app recommendations.
@@ -82,7 +137,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * E-mail subscriptions support for apps. 
 * Granular admin control for [publish to web](https://docs.microsoft.com/power-bi/service-admin-portal#export-and-sharing-settings).
 
-## September 2017
+### September 2017
 * In Premium capacity, share dashboards to users who don't have a Power BI Pro license.
 * Allocate capacities to suit your business needs with v-core pooling.
 * Instantly scale-up or scale-down capacities with one click.
@@ -150,7 +205,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Explore your [Jira project-management data](https://powerbi.microsoft.com/blog/explore-your-jira-data-with-power-bi/) with this Power BI content pack
 * Explore your [Insightcentr data](https://powerbi.microsoft.com/blog/explore-your-insightcentr-data-with-power-bi/) with this Power BI content pack
 * Create infographics quickly with the [infographic designer custom visual](https://powerbi.microsoft.com/blog/quickly-create-infographics-with-the-infographic-designer-custom-visual-for-power-bi/)
-* Private preview: [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) outputs Power BI streaming datasets, with which you can create streaming tiles.
+* Preview: [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) outputs Power BI streaming datasets, with which you can create streaming tiles.
 * Preview: Add [ESRI ArcGIS Maps Visualizations](https://powerbi.microsoft.com/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) to your reports and dashboards
 
 ### October 2016
@@ -292,7 +347,7 @@ This month we made some updates to dashboards, Quick Insights, and Q&A.
 
 ***Quick Insights***
 
-* The Trend and Correlaction insights now have trend lines to make it easier to see patterns in the data.
+* The Trend and Correlation insights now have trend lines to make it easier to see patterns in the data.
 
 ***Q&A***
 
@@ -312,7 +367,7 @@ Today we released a long list of top-requested features. [Read the blog post](ht
 
 ***Admin Portal***
 
-* Easy user management with a link to the O365 Admin Center
+* Easy user management with a link to the Microsoft 365 admin center
 * Ability to disable publish to web
 * Prevent users from publishing content packs to the entire org
 * Ability to disable sharing content to external users
@@ -444,7 +499,7 @@ For all the details, including a video demonstrating many of these updates, visi
 * [Visualize your VMob data in Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
 * [Power BI integration with Cortana](http://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [Preview of Power BI gateway for enterprise](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
-* Introducting a new content pack: [Search Analytics from Bing on Power BI dashboards](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
+* Introducing a new content pack: [Search Analytics from Bing on Power BI dashboards](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
 * New Developer-focused enhancements: [Two new APIs and easier app  registration](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
 
 **November 24, 2015**
@@ -455,7 +510,7 @@ For all the details, including a video demonstrating many of these updates, visi
 * Improved loading of on-premises reports
 * Share dashboards directly to another user's workspace
 * Improved Google Analytics connector experience
-* Close your power bi account
+* Close your Power BI account
 
 For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-weekly-service-update-1124.aspx)
 
@@ -474,7 +529,7 @@ For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/a
 * New site for Power BI documentation, localized
 * Improved load time for reports
 * Update organizational content packs with report-only changes
-* Power BI health status in Office 365 Admin Portal
+* Power BI health status in Microsoft 365 admin center
 * KPIs and images in tables, matrices, and cards
 
 For all the details, visit the [Power BI Blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/11/power-bi-weekly-service-update-1110.aspx)
@@ -553,7 +608,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **September 8, 2015**
 
-* ﻿Friendly Hyperlinks now allow you to provide links for your users without needing to display the entire URL in the textbox.
+* Friendly Hyperlinks now allow you to provide links for your users without needing to display the entire URL in the textbox.
 * Drill Support has been added to Power BI Reports. You can create a Drill path that enables users to navigate from one level of data to related data.
 * Two new Industry Related Samples, It Spend Analysis and Supplier Quality Analysis, have been added under the samples section of the Get Data experience. These samples are great examples of how you can use your data to create insightful reports and dashboards.
 * We have a new content pack for tyGraph, which allows you to easily gain deeper insights into your Yammer data. The content pack includes a dashboard, a set of reports and a curated dataset to explore and provide insights such as the Measure of Active Engagement (The MAE Score) and content consumption metrics such as File Views and File Downloads. Learn more on our [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/09/analyze-and-monitor-your-tygraph-data-with-power-bi.aspx) and [help topic](service-connect-to-tygraph.md).
@@ -648,7 +703,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **April 28, 2015**
 
-* ﻿Power BI is now available in **44 languages**. Read our [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/28/power-bi-preview-now-available-in-your-language.aspx) to see the full list.
+* Power BI is now available in **44 languages**. Read our [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/28/power-bi-preview-now-available-in-your-language.aspx) to see the full list.
 
 **April 23, 2015**
 
@@ -656,7 +711,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **April 15, 2015**
 
-* You can now visualize and explore your **Google Analytics** data with our new content pack! With the Google Analytics content pack you will get a dashboard, report and dataset that allow you to gain insights into the usage of your site in the last 6 months. You can read [our blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx) and [documentation](service-connect-to-google-analytics.md) for more information.
+* You can now visualize and explore your **Google Analytics** data with our new content pack! With the Google Analytics content pack you will get a dashboard, report and dataset that allow you to gain insights into the usage of your site in the last 6 months. You can read [our blog post](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx).
 * You can now **pin all cards** expect those containing KPIs and Images from Q&A and reports
 * You can now **use cards in Q&A** by using the phrase 'as card' at the end of your query
 

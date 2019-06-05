@@ -5,7 +5,7 @@ author: mihart
 manager: kvivek
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: mihart
@@ -20,7 +20,7 @@ Remember, there are several ways to get a new app. A report designer colleague c
 
 In Power BI on your mobile device, you can only install an app from a direct link, and not from AppSource. If the app author installs the app automatically, you'll see it in your list of apps.
 
-### Install an app from a direct link
+## Install an app from a direct link
 The easiest way to install a new app yourself is to get a direct link, in email, from the app author.  
 
 **On your computer** 
@@ -35,8 +35,8 @@ When you select the link in email on your mobile device, the app installs automa
 
 ![App content list on mobile device](./media/end-user-app-view/power-bi-app-index-it-spend-360.png)
 
-### Get the app from Microsoft AppSource
-You can also find and install apps from Microsoft AppSource. Only apps that you an access (i.e., the app author has given you or given everyone permission) are displayed.
+## Get the app from Microsoft AppSource
+You can also find and install apps from Microsoft AppSource. Only apps that you can access (i.e., the app author has given you or given everyone permission) are displayed.
 
 1. Select **Apps** ![Apps in the left navigation pane](./media/end-user-apps/power-bi-apps-bar.png) > **Get apps**. 
    

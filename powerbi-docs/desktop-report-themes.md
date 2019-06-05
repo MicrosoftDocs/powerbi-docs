@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 04/15/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -20,21 +20,7 @@ With **Report Themes** you can apply a color theme to your entire report, such a
 
 When you apply a **Report Theme**, you need a JSON file that uses a basic structure. You can then import this JSON file into Power BI Desktop and apply it to your report. The JSON file structure, and the process of importing it, are quick and easy (just a few button clicks).
 
-Starting with the September 2017 version of **Power BI Desktop**, you can define even more report theme elements by using a JSON file. You can also customize and standardize nearly all elements. To customize, you use the JSON file, which you manually adjust in the **Formatting** pane. The goal with the September 2017 release (and later) is to give you full control over how your reports look and feel, to a granular level.
-
-### Enable Report themes
-Starting with the August 2018 version of **Power BI Desktop**, report theming is generally available and doesn't need to be enabled. 
-
-If you're using an earlier version of **Power BI Desktop**, you can enable it as a preview feature by taking the following steps: 
-
-1. Select **File > Options and Settings > Options > Preview Features**. 
-2. Next, select the check box next to **Custom Report Themes**. 
-
-You'll need to restart **Power BI Desktop** after you make the selection.
-
-![Custom report themes](media/desktop-report-themes/report-themes_2.png)
-
-We always recommend that you upgrade to the most recent version of **Power BI Desktop**, which you can get from a link in [Get Power BI Desktop](desktop-get-the-desktop.md). 
+You can also customize and standardize nearly all elements. To customize, you use the JSON file, which you manually adjust in the **Formatting** pane. The goal is to give you full control over how your reports look and feel, to a granular level.
 
 ## How Report Themes work
 To apply a Report Theme to a Power BI Desktop report, select from among the available built-in report themes or import a custom theme.
@@ -97,6 +83,7 @@ To apply a style to a **table** or **matrix** visual, take the following steps:
 
 Following is the text of the *St Patrick's Day.json* file that you can use to create your own JSON file:
 
+```json
     {
         "name": "St Patricks Day",
         "dataColors": ["#568410", "#3A6108", "#70A322", "#915203", "#D79A12", "#bb7711", "#114400", "#aacc66"],
@@ -104,10 +91,11 @@ Following is the text of the *St Patrick's Day.json* file that you can use to cr
         "foreground": "#3A6108",
         "tableAccent": "#568410"
     }
+```
 
 From there, you can enter your own color hex code for your selected colors.
 
-Starting with the September 2017 version of **Power BI Desktop**, the JSON file can be much more elaborate. In the JSON file, you define only the formatting that you want to adjust, and anything that's *not* specified in your JSON file simply reverts to the Power BI default settings.
+In the JSON file, you define only the formatting that you want to adjust, and anything that's *not* specified in your JSON file simply reverts to the Power BI default settings.
 
 The advantages of creating a JSON file are many. For example, you can specify that all charts use a font size of 12, or that certain visuals use a particular font family. Or you can turn off data labels for specific chart types.
 
@@ -154,6 +142,7 @@ Want to get started with **Report Themes**? Here are a few ready-made Report The
 
 Rather than give you a download, we've provided the code for the Valentine's day JSON file:
 
+```json
     {
         "name": "Valentine's Day",
         "dataColors": ["#990011", "#cc1144", "#ee7799", "#eebbcc", "#cc4477", "#cc5555", "#882222", "#A30E33"],
@@ -161,6 +150,7 @@ Rather than give you a download, we've provided the code for the Valentine's day
         "foreground": "#ee7799",
         "tableAccent": "#990011"
     }
+```
 
 **Report Themes** can make your Power BI Desktop reports a colorful reflection of you, your organization, or even the current season or holiday. 
 
@@ -299,7 +289,8 @@ The following table defines *cardName* values. The first value in each cell is t
 ### Properties within each card
 The following section defines the properties within each card:
 
-    "general":
+```json
+      "general":
         "responsive": {
           "type": [
             "bool"
@@ -367,7 +358,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "categoryAxis": {
+      "categoryAxis": {
         "show": {
           "type": [
             "bool"
@@ -553,7 +544,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "valueAxis": {
+      "valueAxis": {
         "show": {
           "type": [
             "bool"
@@ -861,7 +852,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "dataPoint": {
+      "dataPoint": {
         "defaultColor": {
           "type": [
             "fill"
@@ -897,7 +888,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "labels": {
+      "labels": {
         "show": {
           "type": [
             "bool"
@@ -1015,7 +1006,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "lineStyles": {
+      "lineStyles": {
         "strokeWidth": {
           "type": [
             "numeric"
@@ -1090,7 +1081,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "plotArea": {
+      "plotArea": {
         "transparency": {
           "type": [
             "numeric"
@@ -1103,7 +1094,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "trend": {
+      "trend": {
         "show": {
           "type": [
             "bool"
@@ -1293,7 +1284,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "referenceLine": {
+      "referenceLine": {
         "show": {
           "type": [
             "bool"
@@ -1429,7 +1420,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "line": {
+      "line": {
         "lineColor": {
           "type": [
             "fill"
@@ -1466,7 +1457,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "fill": {
+      "fill": {
         "show": {
           "type": [
             "bool"
@@ -1495,7 +1486,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "rotation": {
+      "rotation": {
         "angle": {
           "type": [
             "numeric"
@@ -1505,7 +1496,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "categoryLabels": {
+      "categoryLabels": {
         "show": {
           "type": [
             "bool"
@@ -1542,7 +1533,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "wordWrap": {
+      "wordWrap": {
         "show": {
           "type": [
             "bool"
@@ -1552,7 +1543,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "dataLabels": {
+      "dataLabels": {
         "color": {
           "type": [
             "fill"
@@ -1581,7 +1572,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "cardTitle": {
+      "cardTitle": {
         "color": {
           "type": [
             "fill"
@@ -1610,7 +1601,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "card": {
+      "card": {
         "outline": {
           "type": [
             "enumeration"
@@ -1691,7 +1682,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "percentBarLabel": {
+      "percentBarLabel": {
         "show": {
           "type": [
             "bool"
@@ -1728,7 +1719,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "axis": {
+      "axis": {
         "min": {
           "type": [
             "numeric"
@@ -1754,7 +1745,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "target": {
+      "target": {
         "show": {
           "type": [
             "bool"
@@ -1813,7 +1804,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "calloutValue": {
+      "calloutValue": {
         "show": {
           "type": [
             "bool"
@@ -1856,7 +1847,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "forecast": {
+      "forecast": {
         "show": {
           "type": [
             "bool"
@@ -1923,7 +1914,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "bubbles": {
+      "bubbles": {
         "bubbleSize": {
           "type": [
             "formatting"
@@ -1933,7 +1924,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "mapControls": {
+      "mapControls": {
         "autoZoom": {
           "type": [
             "bool"
@@ -1958,7 +1949,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "mapStyles": {
+      "mapStyles": {
         "mapTheme": {
           "type": [
             "enumeration"
@@ -1968,7 +1959,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "shape": {
+      "shape": {
         "map": {
           "type": [
             "geoJson"
@@ -1986,7 +1977,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "zoom": {
+      "zoom": {
         "autoZoom": {
           "type": [
             "bool"
@@ -2021,7 +2012,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "xAxisReferenceLine": {
+      "xAxisReferenceLine": {
         "show": {
           "type": [
             "bool"
@@ -2146,7 +2137,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "fillPoint": {
+      "fillPoint": {
         "show": {
           "type": [
             "bool"
@@ -2156,7 +2147,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "colorByCategory": {
+      "colorByCategory": {
         "show": {
           "type": [
             "bool"
@@ -2166,7 +2157,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "plotAreaShading": {
+      "plotAreaShading": {
         "show": {
           "type": [
             "bool"
@@ -2209,7 +2200,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "ratioLine": {
+      "ratioLine": {
         "show": {
           "type": [
             "bool"
@@ -2249,7 +2240,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "grid": {
+      "grid": {
         "outlineColor": {
           "type": [
             "fill"
@@ -2369,7 +2360,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "columnHeaders": {
+      "columnHeaders": {
         "outline": {
           "type": [
             "enumeration"
@@ -2444,7 +2435,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "values": {
+      "values": {
         "outline": {
           "type": [
             "enumeration"
@@ -2563,7 +2554,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "total": {
+      "total": {
         "outline": {
           "type": [
             "enumeration"
@@ -2627,7 +2618,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "columnFormatting": {
+      "columnFormatting": {
         "fontColor": {
           "type": [
             "fill"
@@ -2683,7 +2674,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "rowHeaders": {
+      "rowHeaders": {
         "outline": {
           "type": [
             "enumeration"
@@ -2772,7 +2763,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "subTotals": {
+      "subTotals": {
         "outline": {
           "type": [
             "enumeration"
@@ -2844,7 +2835,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "selection": {
+      "selection": {
         "selectAllCheckboxEnabled": {
           "type": [
             "bool"
@@ -2862,7 +2853,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "header": {
+      "header": {
         "show": {
           "type": [
             "bool"
@@ -2915,7 +2906,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "items": {
+      "items": {
         "fontColor": {
           "type": [
             "fill"
@@ -2960,7 +2951,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "numericInputStyle": {
+      "numericInputStyle": {
         "fontColor": {
           "type": [
             "fill"
@@ -2997,7 +2988,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "slider": {
+      "slider": {
         "show": {
           "type": [
             "bool"
@@ -3015,7 +3006,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "dateRange": {
+      "dateRange": {
         "includeToday": {
           "type": [
             "bool"
@@ -3025,7 +3016,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "sentimentColors": {
+      "sentimentColors": {
         "increaseFill": {
           "type": [
             "fill"
@@ -3059,7 +3050,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "breakdown": {
+      "breakdown": {
         "maxBreakdowns": {
           "type": [
             "integer"
@@ -3072,7 +3063,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "indicator": {
+      "indicator": {
         "indicatorDisplayUnits": {
           "type": [
             "formatting"
@@ -3104,7 +3095,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "trendline": {
+      "trendline": {
         "show": {
           "type": [
             "bool"
@@ -3114,7 +3105,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "goals": {
+      "goals": {
         "showGoal": {
           "type": [
             "bool"
@@ -3132,7 +3123,7 @@ The following section defines the properties within each card:
           ]
         }
       },
-    "status": {
+      "status": {
         "direction": {
           "type": [
             "enumeration"
@@ -3166,13 +3157,14 @@ The following section defines the properties within each card:
           ]
         }
       }
-
+```
 
 
 
 ### Enumerations in the JSON file
 The following section defines the enumerations that you can use in the JSON file.
 
+```json
     {
         "legend": {
             "position": [
@@ -4201,3 +4193,4 @@ The following section defines the enumerations that you can use in the JSON file
          ]
        }
     }
+```

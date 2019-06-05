@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/08/2018
+ms.date: 04/08/2019
 ms.author: mshenhav
 
 ---
@@ -18,6 +18,50 @@ For related "What's New" information, see:
 * [Power BI team blog for the mobile apps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
+
+## April 2019
+
+### Key Influencers visual 
+Key Influencers visual is now available on your mobile app. This visual lets you perform analysis of key drivers over your data with just a few taps.
+
+### Add comments to report content (Android and iOS)
+Now you can use comments to collaborate and share your feedback on report pages and visuals. Read more about report commenting in Power BI Service and Mobile [in this blog](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/). 
+
+### Maximize the view with full screen mode (Android and iOS)
+We added new button that let you control when to focus on your data by removing report headers and footers and giving you maximum space for viewing your reports.
+
+## March 2019
+
+### Supporting external guest users in Power BI apps (iOS, Android)
+
+You can access Power BI content shared with you from other organization directly from the app (also known as B2B). Read more on Power BI mobile apps B2B [here](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-now-support-azure-ad-b2b-guest-users/).
+
+### Enhancing Windows presentation mode with slideshow (Windows)
+
+With [slideshow](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) you can use public displays located in your office to run Power BI reports in full screen that will auto rotate between report pages.  
+
+### Supporting PBI-RS reports over ADFS and WAP configuration (iOS only)
+
+Power BI Reports (PBIX) hosted in PBI-RS over ADFS configuration can now be accessed from Power BI iOS app.
+
+### Enabling single tap interaction with report visuals
+
+We changed report interaction so it will require only one tap on a visual, button, or slicer to interact with its data right away. Users will no longer need to tap on a visual to select it and to tap again to interact with it,  a single tap will do them both.
+
+![Single tap interaction](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
+
+> [!NOTE]
+> Existing users will need to turn on this behavior in the app setting. For more information, see the [How to configure single tap report interaction](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap) article.
+
+## January - February 2019
+ 
+### Visio visuals
+
+Enabling Single sign on (SSO) in Visio visuals, so no additional sign-in steps are required when viewing report with Visio visual in the app. 
+
+### Dashboard commenting is coming to Power BI Mobile Windows app
+
+You can add comments directly to dashboards and specific tiles to discuss your data, and anyone viewing the dashboard will see your comments. 
 
 ## December 2018
 

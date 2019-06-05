@@ -1,6 +1,6 @@
 ---
-title: 'Create a new report from a dataset '
-description: Create a new Power BI report from a dataset.
+title: 'Create a report from a dataset'
+description: Create a Power BI report from a dataset.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,25 +8,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/24/2018
+ms.date: 04/25/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
 ---
-# Create a new report in Power BI service by importing a dataset
-You've read [Reports in Power BI](consumer/end-user-reports.md) and now you want to create your own. There are many different ways to create a report, and in this article we'll start by creating a very basic report from an Excel dataset using Power BI service. Once you understand the basics of creating a report, the **Next steps** at the bottom will direct you to more-advanced report topics.  
+# Create a report in the Power BI service by importing a dataset
+You've read [Reports in Power BI](consumer/end-user-reports.md) and now you want to create your own. There are different ways to create a report. In this article, we'll start by creating a basic report in the Power BI service from an Excel dataset. Once you understand the basics of creating a report, check out the [Next steps](#next-steps) at the end for more advanced report topics.  
 
 ## Prerequisites
-> - Power BI service (for creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md) )  
-> - Retail Analysis sample dataset
+- [Sign up for the Power BI service](service-self-service-signup-for-power-bi.md). For creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md). 
+- [Download the Retail Analysis sample Excel dataset](http://go.microsoft.com/fwlink/?LinkId=529778) and save it to OneDrive for Business or locally.
 
 ## Import the dataset
-This method of creating a report starts with a dataset and a blank report canvas. To follow along, [download the Retail Analysis sample Excel dataset](http://go.microsoft.com/fwlink/?LinkId=529778) and save it to OneDrive for Business (preferred) or locally.
+This method of creating a report starts with a dataset and a blank report canvas. You can follow along in the Retail Analysis sample Excel dataset.
 
-1. We'll create the report in a Power BI service workspace, so select an existing workspace or create a new one.
+1. We'll create the report in a Power BI service workspace, so select an existing workspace or create a one.
    
    ![list of App workspaces](media/service-report-create-new/power-bi-workspaces2.png)
-2. From the bottom of the left navpane, select **Get data**.
+2. From the bottom of the left navigation pane, select **Get data**.
    
    ![Get data](media/service-report-create-new/power-bi-get-data3.png)
 3. Select **Files** and navigate to the location where you saved the Retail Analysis sample.
@@ -42,8 +42,8 @@ This method of creating a report starts with a dataset and a blank report canvas
    
    ![report editor](media/service-report-create-new/power-bi-blank-report.png)
 
-> **TIP**: If you're unfamiliar with the report editing canvas, or need a refresher, [Take a tour of the report editor ](service-the-report-editor-take-a-tour.md) before continuing.
-> 
+> [!TIP]
+> If you're unfamiliar with the report editing canvas, or need a refresher, [Take a tour of the report editor](service-the-report-editor-take-a-tour.md) before continuing.> 
 > 
 
 ## Add a Radial Gauge to the report
@@ -52,13 +52,13 @@ Now that our dataset is imported, let's start answering some questions.  Our Chi
 1. In the Fields pane, select **Sales** > **This Year Sales** > **Value**.
    
     ![bar chart in report editor](media/service-report-create-new/power-bi-report-step1.png)
-2. Convert the visual to a Gauge by selecting the Gauge template ![Gauge icon](media/service-report-create-new/powerbi-gauge-icon.png) from the **VIsualizations** pane.
+2. Convert the visual to a Gauge by selecting the Gauge template ![Gauge icon](media/service-report-create-new/powerbi-gauge-icon.png) from the **Visualizations** pane.
    
     ![Gauge visual in report editor](media/service-report-create-new/power-bi-report-step2.png)
 3. Drag **Sales** > **This Year Sales** > **Goal** to the **Target value** well. Looks like we're very close to our goal.
    
     ![Gauge visual with Goal as Target value](media/service-report-create-new/power-bi-report-step3.png)
-4. Now would be a good time to [save your report](service-report-save.md).
+4. Now would be a good time to save your report.
    
    ![File menu](media/service-report-create-new/powerbi-save.png)
 
@@ -69,12 +69,12 @@ Our CMO has some additional questions for us to answer. She'd like to know how s
 2. Deselect the gauge. In the Fields pane, select **Sales** > **This Year Sales** > **Value** and select **Sales** > **Last Year Sales**.
    
     ![report editor with Gauge and bar chart](media/service-report-create-new/power-bi-report-step4.png)
-3. Convert the visual to an Area chart by selecting the Area chart template ![chart icon](media/service-report-create-new/power-bi-areachart-icon.png) from the **VIsualizations** pane.
+3. Convert the visual to an Area chart by selecting the Area chart template ![chart icon](media/service-report-create-new/power-bi-areachart-icon.png) from the **Visualizations** pane.
 4. Select **Time** > **Period** to add it to the **Axis** well.
    
     ![report editor with Area chart active](media/service-report-create-new/power-bi-report-step5.png)
 5. To sort the visualization by time period, select the ellipses and choose **Sort by Period**.
-6. Now let's add the slicer. Select an empty area on the canvas and choose the Slicer ![Slicer icon](media/service-report-create-new/power-bi-slicer-icon.png)    template. This adds an empty slicer to our canvas.
+6. Now let's add the slicer. Select an empty area on the canvas and choose the Slicer ![Slicer icon](media/service-report-create-new/power-bi-slicer-icon.png) template. We now have an empty slicer on our canvas.
    
     ![report canvas](media/service-report-create-new/power-bi-report-step6.png)    
 7. From the Fields pane, select **District** > **District**. Move and resize the slicer.

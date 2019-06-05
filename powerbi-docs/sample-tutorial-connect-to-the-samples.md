@@ -74,7 +74,7 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
     ![report page with matching visual highlighted](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > If the tile had been created using [Power BI Q&A](consumer/end-user-q-and-a.md), the Q&A page would've opened instead. If the tile was [pinned from Excel](service-dashboard-pin-tile-from-excel.md), Excel Online would've opened inside of Power BI.
+   > If the tile had been created using [Power BI Q&A](power-bi-tutorial-q-and-a.md), the Q&A page would've opened instead. If the tile was [pinned from Excel](service-dashboard-pin-tile-from-excel.md), Excel Online would've opened inside of Power BI.
    > 
    > 
 1. Back on your **Datasets** tab, you have several options for exploring your dataset.  You won't be able to open it and see all the rows and columns (as you can in Power BI Desktop or Excel).  When someone shares a content pack with colleagues, they typically want to share the insights, not give their colleagues direct access to the data. But that doesn't mean you can't explore the dataset.  
@@ -125,11 +125,9 @@ Now explore the dataset, relationships, and report on your own. For help getting
 
 
 ## Next steps
-[Power BI basic concepts](consumer/end-user-basic-concepts.md)
 
-[Samples for Power BI service](sample-datasets.md)
-
-[Data sources for Power BI](service-get-data.md)
+- [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
+- [Samples for Power BI service](sample-datasets.md)
+- [Data sources for Power BI](service-get-data.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-

@@ -83,7 +83,7 @@ You can create the application, or the policy first. The order in which they are
 
 1. Select **Managed iOS App from the App Store** from the drop down.
 
-1. Enter the app URL, that we got from [Step 1](#step-1-get-the-URL-for-the-application), and select **Next**.
+1. Enter the app URL, that we got from [Step 1](#step-1-get-the-url-for-the-application), and select **Next**.
 
     ![Software setup: iOS](media/service-admin-mobile-intune/intune-add-software-ios1.png)
 
@@ -101,7 +101,7 @@ You can create the application, or the policy first. The order in which they are
 
 1. Select **External Link** from the drop down.
 
-1. Enter the app URL, that we got from [Step 1](#step-1-get-the-URL-for-the-application), and select **Next**.
+1. Enter the app URL, that we got from [Step 1](#step-1-get-the-url-for-the-application), and select **Next**.
 
     ![Software setup: Android](media/service-admin-mobile-intune/intune-add-software-android1.png)
 

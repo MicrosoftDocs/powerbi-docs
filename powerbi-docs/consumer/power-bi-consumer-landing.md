@@ -4,9 +4,9 @@ description: Getting started with Power BI? Get to know the features and capabil
 author: mihart
 manager: kvivek
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: hub-page
-ms.date: 12/10/2018
+ms.date: 05/29/2019
 ms.author: mihart
 layout: HubPage
 ms.custom: seodec18
@@ -62,6 +62,7 @@ LocalizationGroup: Get started
                                                 <p><a href="/power-bi/consumer/end-user-report-open" data-linktype="absolute-path">View a report</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-dashboard-open" data-linktype="absolute-path">View a dashboard</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-app-view" data-linktype="absolute-path">View an app</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-export" data-linktype="absolute-path">Export data</a>
                                             </div>
                                         </div>
                                     </div>
@@ -118,8 +119,8 @@ LocalizationGroup: Get started
                                             </div>
                                             <div class="cardText">
                                                 <h3>Get help</h3>
-                                            <!--    <p><a href="/power-bi/guided-learning/index" data-linktype="absolute-path">Microsoft LEARN self-paced training</a></p>
-                                               --> <p><a href="https://powerbi.microsoft.com/blog/" data-linktype="absolute-path">Read the Power BI blog</a></p>
+                                            <p><a href="https://docs.microsoft.com/en-us/learn/paths/consume-data-with-power-bi/" data-linktype="absolute-path">Microsoft LEARN self-paced training</a></p>
+                                                <p><a href="https://powerbi.microsoft.com/blog/" data-linktype="absolute-path">Read the Power BI blog</a></p>
                                                 <p><a href="http://community.powerbi.com/" data-linktype="absolute-path">Ask questions in the Power BI forums</a></p>
                                             </div>
                                         </div>
@@ -132,7 +133,7 @@ LocalizationGroup: Get started
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img alt="All Power BI consumer documentation" src="media/end-user-consumer/interact-analyze.svg" data-linktype="relative-path">
+                                                    <img alt="All Power BI consumer documentation" src="media/end-user-consumer/see-all.svg" data-linktype="relative-path">
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -258,7 +259,7 @@ LocalizationGroup: Get started
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="" alt="All Power BI consumer documentation" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/See_All_400x140.svg" alt="All Power BI consumer documentation" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -363,7 +364,7 @@ LocalizationGroup: Get started
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="" alt="All Power BI consumer documentation" data-linktype="relative-path">
+                                                        <img src="media/end-user-consumer/See_All_400x140.svg" alt="All Power BI consumer documentation" data-linktype="relative-path">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

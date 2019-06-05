@@ -59,5 +59,5 @@ If you're seeing long load times, please review the number of incidents and numb
 ## Next steps
 [What is Power BI?](power-bi-overview.md)
 
-[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
+[Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 

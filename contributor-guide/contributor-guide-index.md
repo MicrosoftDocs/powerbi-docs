@@ -43,4 +43,3 @@ ms.author: mblythe
 * [Custom markdown extensions used in our technical articles](custom-markdown-extensions.md)
 * [Markdown template for technical articles](../examples/_markdown-template.md)
 * [Metadata for Power BI technical articles](article-metadata.md)
-

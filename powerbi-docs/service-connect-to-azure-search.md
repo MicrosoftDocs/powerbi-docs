@@ -54,5 +54,5 @@ Ensure the storage account name is correctly provided along with the full access
 ## Next steps
 [What is Power BI?](power-bi-overview.md)
 
-[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
+[Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 

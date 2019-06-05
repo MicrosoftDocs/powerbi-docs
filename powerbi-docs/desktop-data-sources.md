@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 05/15/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -47,7 +47,7 @@ The **File** category provides the following data connections:
 * XML
 * JSON
 * Folder
-* PDF (Beta)
+* PDF
 * SharePoint Folder
 
 The following image shows the **Get Data** window for **File**.
@@ -73,13 +73,18 @@ The **Database** category provides the following data connections:
 * Amazon Redshift
 * Impala
 * Google BigQuery
+* Vertica
 * Snowflake
-* Essbase (Beta)
+* Essbase
+* AtScale cubes (Beta)
 * BI Connector
+* Dremio
 * Exasol
-* Dremio (Beta)
+* Indexima (Beta)
+* InterSystems IRIS (Beta)
 * Jethro (Beta)
 * Kyligence Enterprise (Beta)
+* MarkLogic (Beta)
 
 > [!NOTE]
 > Some database connectors require that you enable them by selecting **File > Options and settings > Options** then selecting **Preview Features** and enabling the connector. If you don't see some of the connectors mentioned above and want to use them, check your **Preview Features** settings. Also note that any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
@@ -91,7 +96,7 @@ The following image shows the **Get Data** window for **Database**.
 The **Power BI** category provides the following data connections:
 
 * Power BI datasets
-* Power BI dataflows (Beta)
+* Power BI dataflows
 
 The following image shows the **Get Data** window for **Power BI**.
 
@@ -105,11 +110,12 @@ The **Azure** category provides the following data connections:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB (Beta)
-* Azure Data Lake Storage
+* Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
-* Azure Data Explorer (Beta)
+* Azure Data Explorer (Kusto)
+* Azure Cost Management (Beta)
 
 The following image shows the **Get Data** window for **Azure**.
 
@@ -132,8 +138,6 @@ The **Online Services** category provides the following data connections:
 * Google Analytics
 * Adobe Analytics
 * appFigures (Beta)
-* comScore Digital Analytix (Beta)
-* Dynamics 365 for Customer Insights (Beta)
 * Data.World - Get Dataset (Beta)
 * Facebook
 * GitHub (Beta)
@@ -152,6 +156,9 @@ The **Online Services** category provides the following data connections:
 * tyGraph (Beta)
 * Webtrends (Beta)
 * Zendesk (Beta)
+* Emigo Data Source (Beta)
+* IndustrialAppStore (Beta)
+* Microsoft Graph Security (Beta)
 * TeamDesk (Beta)
 
 The following image shows the **Get Data** window for **Online Services**.
@@ -160,7 +167,6 @@ The following image shows the **Get Data** window for **Online Services**.
 
 The **Other** category provides the following data connections:
 
-* Vertica
 * Web
 * SharePoint List
 * OData Feed
@@ -172,8 +178,16 @@ The **Other** category provides the following data connections:
 * Python script
 * ODBC
 * OLE DB
+* BI360 - Budgeting & Financial Reporting (Beta)
 * Denado
-* Paxata (Beta)
+* Information Grid (Beta)
+* Paxata 
+* QubolePresto (Beta)
+* Quick Base (Beta)
+* Roamler (Beta)
+* SurveyMonkey (Beta)
+* Tenforce (Beta)
+* Workforce Dimensions (Beta)
 * Blank Query
 
 The following image shows the **Get Data** window for **Other**.
@@ -186,7 +200,7 @@ The following image shows the **Get Data** window for **Other**.
 ## Connecting to a Data Source
 To connect to a data source, select the data source from the **Get Data** window and select **Connect**. In the following image, **Web** is selected from the **Other** data connection category.
 
-![Connect to web](media/desktop-data-sources/data-sources_08a.png)
+![Connect to web](media/desktop-data-sources/data-sources_08.png)
 
 A connection window is displayed, specific to the type of data connection. If credentials are required, you’ll be prompted to provide them. The following image shows a URL being entered to connect to a Web data source.
 

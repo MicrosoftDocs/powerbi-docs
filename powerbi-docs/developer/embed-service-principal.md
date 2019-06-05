@@ -1,14 +1,15 @@
 ---
 title: Service principal with Power BI
 description: Learn how to register an application within Azure Active Directory using service principal for use with embedding Power BI content.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
-ms.subservice: power-bi-developer
+ms.service: powerbi
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ""
-ms.date: 02/05/2019
+ms.date: 03/29/2019
 ---
 
 # Service principal with Power BI (Preview)
@@ -48,7 +49,7 @@ You can only use service principal if your Power BI artifacts and resources are 
 
 There are differences between using a service principal and a standard master account (Power BI Pro license) for authentication. The below table highlights some significant differences.
 
-| Function | Master User Account </br> (Power BI Pro license) | Service Principal </br> (app-only token) |
+| Function | Master User Account <br> (Power BI Pro license) | Service Principal <br> (app-only token) |
 |------------------------------------------------------|---------------------|-------------------|
 | Can sign in to the Power BI service  | Yes | No |
 | Enabled in the Power BI Admin portal | No | Yes |
@@ -106,13 +107,15 @@ Different from the traditional use of a master account, using the service princi
 3. As a Power BI admin, you need to enable service principal in the **Developer settings** in the Power BI admin portal. Add the security group that you created in Azure AD to the **Specific security group** section in the **Developer settings**.
 
    > [!Important]
-   > Service principals inherit the permissions for all Power BI tenant settings from their security group. To restrict permissions create a dedicated security group for service principals and add it to the 'Except specific security groups' list for the relevant, enabled Power BI settings.
+   > Service principals have access to any tenant settings that are enabled for the entire organization or enabled for security groups that have service principals as a part of the group. To restrict service principal access to specific tenant settings, allow access only to specific security groups, or create a dedicated security group for service principals and exclude it.
 
     ![Admin portal](media/embed-service-principal/admin-portal.png)
 
 4. Set up your [Power BI environment](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
 5. Add the service principal as an **admin** to the new workspace you created. You can manage this task through the [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) or with the Power BI service.
+
+    ![Add a service principal as an admin to a workspace](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Now choose to embed your content within a sample application, or within your own application.
 
@@ -160,15 +163,17 @@ Below is a sample script to retrieve the service principal object ID with PowerS
 
 * Service principal only works with [new app workspaces](../service-create-the-new-workspaces.md).
 * **My Workspace** isn't supported when using service principal.
-* [Dedicated capacity](../service-admin-premium-manage.md) is required when moving to production.
+* Dedicated capacity is required when moving to production.
 * You can't sign into the Power BI portal using service principal.
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
 * You can't install or manage an on-premises data gateway using service principal.
 * [Embed for your organization](embed-sample-for-your-organization.md) applications are unable to use service principal.
 * [Dataflows](../service-dataflows-overview.md) management is not supported.
+* Service principal currently does not support any admin APIs.
 
 ## Next steps
 
 * [Register an app](register-app.md)
 * [Power BI Embedded for your customers](embed-sample-for-customers.md)
 * [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+* [Row-level security using on-premises data gateway with service principal (Preview)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)

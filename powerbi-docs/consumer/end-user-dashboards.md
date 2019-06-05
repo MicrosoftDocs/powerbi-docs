@@ -7,9 +7,9 @@ ms.custom: seodec18
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/22/2019
+ms.date: 05/12/2019
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -20,7 +20,7 @@ A Power BI ***dashboard*** is a single page, often called a canvas, that uses vi
 
 ![dashboard](media/end-user-dashboards/power-bi-dashboard2.png)
 
-The visualizations you see on the dashboard are called *tiles* and are *pinned* to the dashboard by report designers. Selecting a tile takes you to the report page where the visualization was created. If you're new to Power BI, you can get a good foundation by reading [Power BI basic concepts](end-user-basic-concepts.md).
+The visualizations you see on the dashboard are called *tiles* and are *pinned* to the dashboard by report *designers*. In most cases, selecting a tile takes you to the report page where the visualization was created. If you're new to Power BI, you can get a good foundation by reading [Power BI basic concepts](end-user-basic-concepts.md).
 
 > [!NOTE]
 > Dashboards can be [viewed and shared on mobile devices](mobile/mobile-apps-view-dashboard.md).
@@ -35,7 +35,7 @@ The visualizations on a dashboard come from reports and each report is based on 
 ## Advantages of dashboards
 Dashboards are a wonderful way to monitor your business, to look for answers, and to see all of your most-important metrics at a glance. The visualizations on a dashboard may come from one underlying dataset or many, and from one underlying report or many. A dashboard can combine on-premises and cloud data, providing a consolidated view regardless of where the data lives.
 
-A dashboard isn't just a pretty picture; it's highly interactive and highly customizable and the tiles update as the underlying data changes.
+A dashboard isn't just a pretty picture; it's interactive and the tiles update as the underlying data changes.
 
 ## Dashboards versus reports for Power BI ***consumers***
 Reports are often confused with dashboards since they too are canvases filled with visualizations. But there are some major differences from a Power BI *consumers* point of view.
@@ -44,11 +44,9 @@ Reports are often confused with dashboards since they too are canvases filled wi
 | --- | --- | --- |
 | Pages |One page |One or more pages |
 | Data sources |One or more reports and one or more datasets per dashboard |A single dataset per report |
-| Subscribe |Can subscribe to dashboard emails |Can subscribe to report page emails |
 | Filtering |Can't filter or slice |Many different ways to filter, highlight, and slice |
 | Set alerts |Can create alerts to email you when certain conditions are met |No |
 | Featured |Can set one dashboard as your "featured" dashboard |Cannot create a featured report |
-| Natural language queries |Available from dashboard |Not available from reports |
 | Can see underlying dataset tables and fields |No. Can export data but can't see tables and fields in the dashboard itself. |Yes. Can see dataset tables and fields and values. |
 
 

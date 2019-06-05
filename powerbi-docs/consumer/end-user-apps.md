@@ -6,9 +6,9 @@ manager: kvivek
 ms.reviewer: lukaszp
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/21/2019
+ms.date: 05/11/2019
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -26,10 +26,10 @@ Your apps are organized in the **Apps** content list.
 > The use of the apps feature require a Power BI Pro license. <!-- add link to how to figure out your license -->
 
 ## App ***designers*** and app ***consumers***
-Depending on your role, you may be someone who creates apps (designer) for your own use or to share with colleagues. Or, you may be someone who receives and downloads apps (consumer) created by others. This article is for app *consumers*.
+Depending on your role, you may be someone who creates apps (*designer*) for your own use or to share with colleagues. Or, you may be someone who receives and downloads apps (*consumer*) created by others. This article is for app *consumers*.
 
 ## Advantages of apps
-Apps are easy to find and install in Power BI service ([https://powerbi.com](https://powerbi.com)) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards because they're all together in one app, in your browser or on your mobile device.
+Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards because they're all together in one app, in your browser or on your mobile device.
 
 With apps, whenever the app author releases updates, you automatically see the changes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping it up to date. 
 

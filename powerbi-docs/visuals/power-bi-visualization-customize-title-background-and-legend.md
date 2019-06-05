@@ -19,7 +19,7 @@ In this tutorial you'll learn a few different ways to customize your visualizati
 
 Not all visualizations can be customized, [see the complete list](#list).  
 
-Watch Amanda customize visualizations in her report (fast-forward to 4:50 in the video). Then follow the instructions below the video to try it out yourself with your own data.
+Fast-forward to 4:50 in the video for a demonstration of how to customize visualizations. Then follow the instructions below the video to try it out yourself with your own data.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 

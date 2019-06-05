@@ -47,7 +47,7 @@ Don't worry, deleting a report does not delete the dataset that the report is ba
    >
 
 ## Delete a workbook
-Workooks can be removed. However, removing a workbook also removes all reports and dashboard tiles that contain data from this workbook.
+Workbooks can be removed. However, removing a workbook also removes all reports and dashboard tiles that contain data from this workbook.
 
 If the workbook is stored on OneDrive for Business, deleting it from Power BI does not delete it from OneDrive.
 
