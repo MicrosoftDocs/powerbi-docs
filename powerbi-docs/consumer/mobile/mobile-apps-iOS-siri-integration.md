@@ -12,7 +12,7 @@ ms.date: 06/03/2019
 ms.author: michalfo
 
 ---
-# Using Siri shortcuts in Power BI Mobile iOS App 
+# Using Siri shortcuts in Power BI Mobile iOS App (preview)
 
 ### Use Siri shortcuts to directly access the Power BI content you need.
 
@@ -30,30 +30,29 @@ There are three ways to create Siri shortcut to your reports and dashboards.
      
      ![](./media/mobile-apps-iOS-siri-and-search/power-bi-siri-create-shortcut.png)
 
-All the options above will open the 'Add to Siri' page. In this page you will need to record a phrase, that you will be used later to open the report or dashboard. The app offers you a suggested phrase but you can use any phrase as well.
+All the options above will open the 'Add to Siri' page. In this page you will need to record a phrase, that you will be used later with Siri in order to open the report or dashboard. 
     
     ![](./media/mobile-apps-iOS-siri-and-search/power-bi-siri-add-page.png)
 
 ## Use Siri shortcut 
 
-Every time you’d like to access the dashboard or the report you created a shortcut for, just ask Siri by using the phrase recorded in the shortcut. Siri will launch Power BI and land on the report or dashboard in the shortcut.
+Once you created a shortcut, every time you’d like to access the dashboard or the report you created a shortcut for, just ask Siri by using the phrase recorded in the shortcut. Siri will launch Power BI and land on the report or dashboard in the shortcut.
 
   ![](./media/mobile-apps-iOS-siri-and-search/power-bi-siri-open.png)
   
-The shortcuts will be available to you from your iOS devices (iPhone and iPad)
-## Edit Siri phrase 
-You can edit your shortcut phrase by pressing 'Siri shortcut' button in the action menu. The Siri page will open with an option to 'Re-Record phrase' 
+## Edit Siri shortcut phrase 
+You can edit your shortcut phrase by pressing 'Siri shortcut' button in the report or dashboard {...} Actions menu. The Siri shortcut page will be opened with an option to 'Re-Record phrase'. 
 
-You can also go to 'My Shortcuts' list (from device settings-> Siri & Search) view your shourctus and edit the phrase.
+You can also go to 'My Shortcuts' list (from device settings-> Siri & Search) to view your shourctus and edit the phrase.
 
 ## Delete Siri shortcut 
-To delete a shortcut to your item go to your item, press on the Siri shortcut button in the action menu, the Siri page will open. Press on the 'Delete Shortcut' and the shortcut will be deleted
+To delete a shortcut, go to the item, and from the {...} Actions menu, tap shortcut action. Siri shortcut page will be opened. Choose 'Delete Shortcut' and the shortcut will be deleted.
+
 You can also go to 'My Shortcuts' list (from device settings-> Siri & Search) and delete the shortcuts from the list.
 
 ## 
 > [!NOTE]
->- This feature is currently a preview version
->- Siri shortcut integration is available from iOS12  
+>- Siri shortcut integration with Power BI app is available for iPhone and iPad running iOS12 and higher.
 > 
 ## 
 
