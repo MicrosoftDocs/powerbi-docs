@@ -28,9 +28,9 @@ Starting with June Power BI, when the Firewall buffers a nested table/record/lis
 
 ## Effect on Load/Refresh
 
-While the change is motivated by Firewall buffering, its impact extends to Load/Refresh as well. In order to address the Firewall buffering behavior, we also had to change the behavior of loading nested tables/records/etc. to the Power BI Model, as well as Excel sheets and the Excel Data Model in PQ for Excel. Before, nested tables/records/etc. would be loaded as text values (such as “[Table]” or “[Record]”). Now, they will now be treated as errors, which will result in a null value in the loaded table and an error count increment in the load results.
+While the change is motivated by Firewall buffering, its impact extends to Load/Refresh as well. In order to address the Firewall buffering behavior, we also had to change the behavior of loading nested tables/records/etc. to the Power BI Model and the Excel Data Model in PQ for Excel. Before, nested tables/records/etc. would be loaded as text values (such as “[Table]” or “[Record]”). They'll now be treated as errors, which will result in a null value in the loaded table and an error count increment in the load results.
 
-One thing to be aware of with these errors: since they only occur during Load/Refresh, they will not appear in the Power Query Editor.
+Since these errors only occur during Load/Refresh, they will not appear in the Power Query Editor.
 
 ### Before
 
