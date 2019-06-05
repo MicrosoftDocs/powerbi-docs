@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/21/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -18,7 +18,7 @@ LocalizationGroup: Create reports
 
 Often in visuals, you see a large increase and then a sharp drop in values, and wonder about  the cause of such fluctuations. With **insights** in **Power BI Desktop** you can learn the cause with just a few clicks.
 
-For example, consider the following visual that shows *Sales Amount* by *Year* and *Country*. A large decrease in sales occurs in 2014, with sales dropping sharply between *Qtr 1* and *Qtr 2*. In such cases you can explore the data, to help explain the change that occurred. 
+For example, consider the following visual that shows *Sales Amount* by *Year* and *Quarter*. A large decrease in sales occurs in 2014, with sales dropping sharply between *Qtr 1* and *Qtr 2*. In such cases you can explore the data, to help explain the change that occurred. 
 
 ![Visual with increases and decreases](media/desktop-insights/insights_01a.png)
 
@@ -112,7 +112,7 @@ The following list is the collection of currently unsupported scenarios for **ex
 * Measure filters
 * Non-numeric measures
 * Use of "Show value as"
-* Filtered measures - filtered measures are visual level calculations with a specific filter applied (for example, *Total Sales for France*), and are used on some of hte visuals created by the insights feature
+* Filtered measures - filtered measures are visual level calculations with a specific filter applied (for example, *Total Sales for France*), and are used on some of the visuals created by the insights feature
 * Categorical columns on X-axis unless it defines a sort by column that is scalar. If using a hierarchy, then every column in the active hierarchy has to match this condition
 
 

@@ -54,13 +54,13 @@ To run the PowerShell commands in the table, you first need to take the followin
 1. Open a PowerShell command window, as an Administrator
 2. Then run the following one-time PowerShell command (this presumes you've never run PowerShell commands on the current machine):
 
-    ```
+    ```powershell
     Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
     ```
 
 3. Next, navigate to the On-premises data gateway installation folder in the PowerShell window, and import the necessary module using the following command:
 
-    ```
+    ```powershell
     Import-Module .\OnPremisesDataGatewayHAMgmt.psm1
     ```
 

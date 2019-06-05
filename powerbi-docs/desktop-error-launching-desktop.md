@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Troubleshooting
@@ -28,7 +28,7 @@ If you no longer need the Power BI On-premises data gateway, you can uninstall i
 ### Resolution 3: Run Power BI Desktop with administrator privilege
 Alternatively, you can successfully launch Power BI Desktop as administrator, which also allows Power BI Desktop to successfully launch. It is still recommended that you install the latest version of Power BI On-premises data gateway, as described earlier in this article.
 
-It's important to note that Power BI Desktop is engineered as a multiprocess architecture, and several of these processes communicate using Windows named pipes. There may be other processes that interfere with those named pipes. The most common reason for such interference is security, including situations where antivirus software or firewalls might be blocking the pipes or redirecting traffic to a specific port. Launching Power BI Desktop with administrator privilege may resolve that issue. If launching with administrator privelege isn't possible, contact your administrator to determine which security rules are getting applied that prevent named pipes from properly communicating, and whitelist Power BI Desktop and its respective subprocesses.
+It's important to note that Power BI Desktop is engineered as a multiprocess architecture, and several of these processes communicate using Windows named pipes. There may be other processes that interfere with those named pipes. The most common reason for such interference is security, including situations where antivirus software or firewalls might be blocking the pipes or redirecting traffic to a specific port. Launching Power BI Desktop with administrator privilege may resolve that issue. If launching with administrator privilege isn't possible, contact your administrator to determine which security rules are getting applied that prevent named pipes from properly communicating, and whitelist Power BI Desktop and its respective subprocesses.
 
 ## Resolve issues when connecting to SQL Server
 If you encounter an error message similar to the following, when connecting to a SQL Server database, you can often resolve the issue by launching **Power BI Desktop** as an administrator, and then making the SQL Server connection:

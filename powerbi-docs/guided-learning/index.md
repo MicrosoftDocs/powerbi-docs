@@ -4,7 +4,7 @@ description: Start your learning journey with this sequenced collection of cours
 layout: LandingPage
 ms.service: powerbi
 ms.author: davidiseminger
-ms.date: 10/01/2018
+ms.date: 05/10/2019
 ms.topic: hub-page
 
 ---
@@ -368,15 +368,15 @@ ms.topic: hub-page
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=7">Build content packs</a>
+                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=7">Build Apps</a>
                                 <span style="margin-left: 32px; align-self: center;">5m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=8">Use content packs</a>
+                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=8">Use Apps</a>
                                 <span style="margin-left: 32px; align-self: center;">7m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=9">Update content packs</a>
+                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=9">Update Apps</a>
                                 <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">

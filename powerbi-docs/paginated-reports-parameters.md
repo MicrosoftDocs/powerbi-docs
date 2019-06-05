@@ -2,20 +2,20 @@
 title: "Create parameters for paginated reports in the Power BI service (Preview)"
 description: In this article, you learn how to create parameters for paginated reports in the Power BI service.
 author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.author: maggies
 ---
+
 # Create parameters for paginated reports in the Power BI service (Preview)
 
 In this article, you learn how to create parameters for paginated reports in the Power BI service.  A report parameter provides a way to choose report data and vary the report presentation. You can provide a default value and a list of available values, and your report readers can change the selection.  
 
-The following illustration shows Design view in Report Builder for a report with the parameters @BuyingGroup, @Customer, @FromDate, and @ToDate. 
+The following illustration shows Design view in Power BI Report Builder for a report with the parameters @BuyingGroup, @Customer, @FromDate, and @ToDate. 
   
 ![Parameters in Report Builder](media/paginated-reports-parameters/power-bi-paginated-parameters-report-builder.png)
   
@@ -32,7 +32,7 @@ The following illustration shows Design view in Report Builder for a report with
   
 ## Create or edit a report parameter  
   
-1.  Open your paginated report in Report Builder.
+1.  Open your paginated report in Power BI Report Builder.
 
 1. In the **Report Data** pane, right-click the **Parameters** node > **Add Parameter**. The **Report Parameter Properties** dialog box opens.  
   

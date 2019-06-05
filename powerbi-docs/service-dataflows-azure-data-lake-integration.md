@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 04/02/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -18,9 +18,6 @@ LocalizationGroup: Data from files
 By default, data used with Power BI is stored in internal storage provided by Power BI. With the integration of dataflows and Azure Data Lake Storage Gen2 (ADLS Gen2), you can store your dataflows in your organization's Azure Data Lake Storage Gen2 account. 
 
 ![dataflows in Azure storage](media/service-dataflows-azure-data-lake-integration/dataflows-azure-integration_01.jpg)
-
-> [!NOTE]
-> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
 
 ## How CDM folders relate to dataflows
 
@@ -61,7 +58,7 @@ To create and manage CDM folders within the Power BI file system, read, write an
 
 Sharing CDM folders with data consumers, such as users or services that need to read the data, is simplified with Active Directory OAuth Bearer tokens and POSIX ACLs. Doing so provides administrators with the ability to monitor who accessed the CDM folder. The only action required is to grant access to an Active Directory object of your choice (such as a user group or service) to the CDM Folder. We recommend that all access to the CDM folder, for any identity other than the data producer, be granted as read-only. Doing so protects the integrity of the data that the producer generates.
 
-To add CDM folders to Power BI, the user adding the CDM Folder should have *Read* Access ACLs on both CDM folder itself and any files or folders within it. In addition, *Execute* Access ACLs on both CDM folder itself and any folders within it. It is recommneded you review both [Access control lists on files and directory](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-access-control#access-control-lists-on-files-and-directories) and [Best practices for using Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-best-practices) articles for more information.
+To add CDM folders to Power BI, the user adding the CDM Folder should have *Read* Access ACLs on both CDM folder itself and any files or folders within it. In addition, *Execute* Access ACLs on both CDM folder itself and any folders within it. It is recommended you review both [Access control lists on files and directory](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-access-control#access-control-lists-on-files-and-directories) and [Best practices for using Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-best-practices) articles for more information.
 
 
 ### Alternative forms of authorization
@@ -83,9 +80,9 @@ For more information about dataflows, CDM, and Azure Data Lake Storage Gen2, tak
 For information about dataflows overall, check out these articles:
 
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
-* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
-* [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows](service-dataflows-developer-resources.md)
 
 For more information about Azure storage, you can read these articles:
 * [Azure Storage security guide](https://docs.microsoft.com/azure/storage/common/storage-security-guide)

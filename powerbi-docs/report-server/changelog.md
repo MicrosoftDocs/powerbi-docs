@@ -1,23 +1,55 @@
 ---
 title: Changelog for Power BI Report Server
 description: This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
+ms.author: jtarquino
 author: jtarquino
 manager: kfile
 ms.reviewer: maggies
-
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.author: jtarquino
 ---
+
 # Changelog for Power BI Report Server
 
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 
 For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
 
+## May 2019
+
+- **Power BI Report Server**          
+    - *Version 1.5.7074.36177 (Build 15.0.1102.371), Released: May 21, 2019*
+        - Bug Fixes
+            - Paginated Reports
+                - Fix to always enable pdf font-embedding.
+                - Fix to set cookies sent over https as Secure
+                - Fix to issues with pop ups due to script errors
+                - Fix for display issues with Mobile App on Android phones
+                - Fix for Mobile Report Time Navigator to show the correct week numbers irrespective of the start of Fiscal year
+                - Added 'RestrictedResourceMimeTypeForUpload' configurable property for admins to specify banned mime types
+         - Features
+            - Adding support for Trusted Visuals to PBIRS
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.69.5467.1801 (May 2019), Released: May 21, 2019*
+        - Bug fixes
+            - Fix to avoid re-entry of credentials during PBIX upload to PBIRS
+            - Fixes opening documents with # in the filename
+            - Added easier link for back navigation on PBIRS Selection window
+            - Fix to High Contrast mode in PBIRS to display Back button, show warning visual messages.
+            - UI fixes to Selection pane, canvas scaling.
+
 ## January 2019
+
+- **Power BI Report Server**          
+    - *Version 1.4.7024.16477 (Build 15.0.1102.299), Released: March 28, 2019*
+        - Bug Fixes
+            - Power BI Reports
+                - Fix for issue with basic credentials when using direct query for SAP Hana and SAP BW
+                - Fix for OData feed data refresh fails with "Could not load file or assembly 'Microsoft.OData.Core.NetFX35.V7"
+
 - **Power BI Report Server**            
     - *Version 1.4.6969.7395 (Build 15.0.1102.235), Released: January 30, 2019*
         - Bug Fixes
@@ -60,6 +92,7 @@ For detailed information about new features, see [What's new in Power BI Report 
         - Contains changes required for connection with Power BI Report Server (January 2019)  
 
 ## August 2018
+
 - **Power BI Report Server**
     - *Version 1.3.6816.37243 (Build 15.0.2.557), Released: August 30, 2018*
         - Bug fixes
@@ -81,6 +114,7 @@ For detailed information about new features, see [What's new in Power BI Report 
         - Contains changes required for connection with Power BI Report Server (August 2018)         
         
 ## March 2018
+
 - **Power BI Report Server**
     - *Version 1.2.6690.34729 (Build 15.0.2.402), Released: April 27, 2018*
         - Bug fixes
@@ -89,7 +123,7 @@ For detailed information about new features, see [What's new in Power BI Report 
                 - Reports can be refresh when a server is configured to use custom authentication
                 - Modifying the properties of a report does not reset data source credentials
             - For Paginated Reports (RDL)
-                - Usage of `Lookup()` or derivative functions such as `LookupSet()` and `MultiLookup()` in RDL Expresssions no longer result in `#Error`
+                - Usage of `Lookup()` or derivative functions such as `LookupSet()` and `MultiLookup()` in RDL Expressions no longer result in `#Error`
                 - Linked reports respect the page size of the target report when printing
                 - Subscriptions can be created for linked reports that use cascading parameters
                 - Multi-value parameter defaults can be modified when using IE11

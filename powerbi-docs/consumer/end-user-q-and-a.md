@@ -1,5 +1,5 @@
 ---
-title: Overview of Q&A in Power BI service
+title: Q&A for Power BI consumers
 description: Documentation overview topic for Power BI Q&A natural language queries.
 author: mihart
 manager: kvivek
@@ -7,16 +7,17 @@ ms.reviewer: ''
 ms.custom: seodec18
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/01/2019
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
 ---
 # Q&A for Power BI **consumers**
 ## What is Q&A?
-Sometimes the fastest way to get an answer from your data is to ask a question using natural language. For example, "what were total sales last year."  
+Sometimes the fastest way to get an answer from your data is to ask a question using natural language. For example, "what were total sales last year."
+
 Use Q&A to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. Q&A is different from a search engine -- Q&A only provides results about the data in Power BI.
 
 **Power BI Q&A** only supports answering natural language queries asked in English. There is a preview available for Spanish that can be enabled by your Power BI administrator.
@@ -32,7 +33,7 @@ You’ll be delighted by the insights and discoveries you make.
 The experience is truly interactive…and fast! Powered by an in-memory storage, response is almost instantaneous.
 
 ## Where can I use Q&A?
-You'll find Q&A on dashboards in Power BI service, at the bottom of the dashboard in Power BI mobile, and above the visualization in Power BI Embedded. 
+You'll find Q&A on dashboards and reports in Power BI service, and at the bottom of the dashboard in Power BI mobile. 
 Unless the designer has given you edit permissions, you'll be able to use Q&A to explore data but won't be able to save any visualizations created with Q&A.
 
 ![question box](media/end-user-q-and-a/powerbi-qna.png)
@@ -68,7 +69,7 @@ You can also tell Q&A which visualization to use by adding it to your question. 
 **Answer 1**: If you don't see a question box, first check your settings. To do this, select the cog icon in the upper right corner of your Power BI toolbar.   
 ![cog icon](media/end-user-q-and-a/power-bi-settings.png)
 
-Then choose **Settings** > **Dashboards**. Make sure there is a checkmark next to **Show the Q&A search box on this dashboard**.
+Then choose **Settings** > **Dashboards**. Make sure there is a checkmark next to **Show the Q&A search box on this dashboard**.    
 ![Q&A settings for dashboard](media/end-user-q-and-a/power-bi-turn-on.png)  
 
 

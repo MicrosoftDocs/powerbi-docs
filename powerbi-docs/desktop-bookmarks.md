@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 02/22/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -21,6 +21,9 @@ You can also create a collection of bookmarks, arrange them in the order you wan
 ![Bookmarks in Power BI](media/desktop-bookmarks/bookmarks_01.png)
 
 There are many uses for bookmarking. You can use them to keep track of your own progress in creating reports (bookmarks are easy to add, delete, and rename) and you can create bookmarks to build a PowerPoint-like presentation that steps through bookmarks in order, thereby telling a story with your report. There may be other uses, too, based on how you think bookmarks could best be used.
+
+> [!TIP]
+> For information about using Personal Bookmarks in the Power BI service, take a look at the [blog announcement](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/) of the Personal Bookmarks feature. 
 
 ### Enable the bookmarks preview (versions prior to March 2018)
 Beginning with the March 2018 version of Power BI Desktop, bookmarks are generally available. 
@@ -57,7 +60,7 @@ Configure a report page the way you want it to appear in the bookmark. Once your
 
 Once you have a bookmark, you can display it by simply clicking on the bookmark in the **Bookmarks** pane. 
 
-You can also select whether each bookmark will apply *data* properties, such as filters and slicers, the *display* properties such as spotlight and its visibility, and page changes that presents the page that was visible when the bookmark was added. These capabilities are useful when you use bookmarks to switch between visual types - in which case you would likely want to turn data properties off, so filters aren't reset as users change visual types. 
+You can also select whether each bookmark will apply *data* properties, such as filters and slicers, the *display* properties such as spotlight and its visibility, and page changes that presents the page that was visible when the bookmark was added. These capabilities are useful when you use bookmarks to switch between report views or selections of visuals - in which case you would likely want to turn data properties off, so filters aren't reset when users switch views by selecting a bookmark. 
 
 To make such changes select the ellipses next to the bookmark's name, as shown in the previous image, then select or unselect the check marks next to *Data*, *Display*, and other controls. 
 
@@ -113,7 +116,7 @@ When you are in editing mode you can use ctrl+click to follow the link, and when
 
 Beginning with the August 2018 release of **Power BI Desktop**, you can create and use bookmark groups. A bookmark group is a collection of bookmarks that you specify, which can be shown and organized as a group. 
 
-To create a bookmark group, hold down the CTRL key and select the bookmarks you want to include in the group, then click the elipses beside any of the selected bookmarks, and select **Group** from the menu that appears.
+To create a bookmark group, hold down the CTRL key and select the bookmarks you want to include in the group, then click the ellipses beside any of the selected bookmarks, and select **Group** from the menu that appears.
 
 ![Create a bookmark group](media/desktop-bookmarks/bookmarks_15.png)
 

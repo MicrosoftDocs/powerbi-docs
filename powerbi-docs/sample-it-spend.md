@@ -64,7 +64,7 @@ Selecting the **Var Plan % by Sales Region** dashboard tile takes you to the “
 
 But just looking at this chart and drawing conclusions can be misleading. We need to look at actual dollar amounts to put things in perspective.
 
-1. Select **Aus and NZ**﻿ in the Var Plan % by Sales Region chart, and observe Var Plan by IT Area chart.
+1. Select **Aus and NZ** in the Var Plan % by Sales Region chart, and observe Var Plan by IT Area chart.
 
    ![](media/sample-it-spend/it3.png)
 2. Now select **USA**. You get the idea — Australia is a really small part of our overall spend as compared to US.

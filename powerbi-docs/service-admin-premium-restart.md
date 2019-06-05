@@ -1,8 +1,8 @@
 ---
 title: Restart a Power BI Premium capacity
 description: Learn how to restart a Power BI Premium capacity to address performance issues.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -27,7 +27,7 @@ Power BI is constantly improving in how it protects Premium capacity users again
 
 ## Is the restart process safe? Will I lose any data?
 
-All the saved data, definitions, reports, and dashboards on your capacity remain fully intact after restart. When you restart a capacity, all ongoing scheduled and ad-hoc refreshes are stopped. Refreshes are restarted when the capacity is available. Users interacting with the capacity will lose unsaved work. They should refresh their browsers after the restart is complete.
+All the saved data, definitions, reports, and dashboards on your capacity remain fully intact after restart. When you restart a capacity, all ongoing scheduled and ad-hoc refreshes are stopped. The service attempts to retry refreshes when the capacity is available. Users interacting with the capacity will lose unsaved work. They should refresh their browsers after the restart is complete.
 
 ## How do I restart a capacity?
 
@@ -53,6 +53,6 @@ We also recommend that you [monitor your capacities](service-admin-premium-monit
 
 ## Next steps
 
-[What is Power BI Premium?](service-premium.md)
+[What is Power BI Premium?](service-premium-what-is.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

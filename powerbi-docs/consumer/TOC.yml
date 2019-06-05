@@ -40,12 +40,16 @@
         href: end-user-reports.md
       - name: "View a report"
         href: end-user-report-open.md
+      - name: "Change the way a report displays"
+        href: end-user-report-view.md
       - name: "Use filters in a report"
         href: end-user-report-filter.md
       - name: "Learn how report visuals cross-filter each other"
         href: end-user-interactions.md
       - name: "Export a report to PDF"
         href: end-user-pdf.md
+      - name: "Add a bookmark to a report"
+        href: end-user-bookmarks.md
     - name: Visualizations
       items: 
       - name: "What can I do with visualizations?"
@@ -60,6 +64,8 @@
         href: ../power-bi-visualizations-arcgis.md
     - name: Common tasks
       items: 
+      - name: "Export data to Excel"
+        href: end-user-export.md
       - name: "Look up the content owner and last refreshed date"
         href: end-user-fresh.md
       - name: "Different ways to zoom into content using Focus and Full screen modes"
@@ -80,10 +86,14 @@
         href: end-user-search-sort.md
       - name: "View automatic insights for dashboard tiles"
         href: end-user-insights.md
+      - name: "Turn on preview features"
+        href: end-user-preview-features.md
     - name: Get data
       items: 
-      - name: "Install and use apps"
+      - name: "Apps in Power BI"
         href: end-user-apps.md
+      - name: "Install and use apps"
+        href: end-user-app-view.md
       - name: "Connect to services"
         href: end-user-connect-to-services.md
     - name: Ask questions of your data
@@ -128,12 +138,18 @@
     items: 
     - name: All mobile apps
       items: 
-      - name: "Share a dashboard from the Power BI mobile apps"
-        href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
+      - name: "Dashboards for mobile Power BI"
+        href: mobile/mobile-apps-view-dashboard.md
+      - name: "Reports in the mobile apps"
+        href: mobile/mobile-reports-in-the-mobile-apps.md
       - name: "Interact with tiles in the mobile apps"
         href: mobile/mobile-tiles-in-the-mobile-apps.md
+      - name: "Share a dashboard from the Power BI mobile apps"
+        href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
       - name: "Favorites in the mobile apps"
         href: mobile/mobile-apps-favorites.md
+      - name: "Configure report interaction in the mobile apps (phone only)"
+        href: mobile/mobile-app-single-tap.md
       - name: "Set data alerts in the Power BI mobile apps"
         href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
       - name: "Get notifications in the Power BI mobile apps"
@@ -142,20 +158,20 @@
         href: mobile/mobile-apps-deep-link-specific-location.md
       - name: "Filter a report by location in the Power BI mobile apps"
         href: mobile/mobile-apps-geographic-filtering.md
-      - name: "Dashboards for mobile Power BI"
-        href: mobile/mobile-apps-view-dashboard.md
-      - name: "Reports in the mobile apps"
-        href: mobile/mobile-reports-in-the-mobile-apps.md
       - name: "Using OAuth to connect to Reporting Services"
         href: mobile/mobile-oauth-ssrs.md
-    - name: Android devices
+    - name: iOS and Android
       items: 
-      - name: "Get started with the Android app"
-        href: mobile/mobile-android-app-get-started.md
-      - name: "Fixing 'Your corporate SSL certificate is untrusted'"
-        href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
-      - name: "Fixing 'Need to update Android System Webview'"
-        href: mobile/mobile-android-error-update-android-system-webview.md
+      - name: "View reports optimized for your phone"
+        href: mobile/mobile-apps-view-phone-report.md
+      - name: "View on-premises reports in the mobile apps"
+        href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+      - name: "Access content from an external organization (B2B)"
+        href: mobile/mobile-apps-b2b.md
+      - name: "Scan a Power BI QR code from your phone"
+        href: mobile/mobile-apps-qr-code.md
+      - name: "Annotate and share in the mobile apps"
+        href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
     - name: iOS
       items: 
       - name: "Get started with the iOS app"
@@ -166,16 +182,14 @@
         href: mobile/mobile-apple-watch.md
       - name: "Scan a barcode from the app on your iPhone"
         href: mobile/mobile-apps-scan-barcode-iphone.md
-    - name: iOS and Android
+    - name: Android devices
       items: 
-      - name: "View on-premises reports in the mobile apps"
-        href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-      - name: "View reports optimized for your phone"
-        href: mobile/mobile-apps-view-phone-report.md
-      - name: "Scan a Power BI QR code from your phone"
-        href: mobile/mobile-apps-qr-code.md
-      - name: "Annotate and share in the mobile apps"
-        href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
+      - name: "Get started with the Android app"
+        href: mobile/mobile-android-app-get-started.md
+      - name: "Fixing 'Your corporate SSL certificate is untrusted'"
+        href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+      - name: "Fixing 'Need to update Android System Webview'"
+        href: mobile/mobile-android-error-update-android-system-webview.md
     - name: Power BI app for Windows 10 devices
       items: 
       - name: "Get started with the Windows 10 app"

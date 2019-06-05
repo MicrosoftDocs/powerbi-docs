@@ -1,8 +1,8 @@
 ---
 title: Power BI Premium FAQ
 description: Browse a list of frequently asked questions and answers about the Power BI Premium offering.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 
@@ -15,7 +15,7 @@ LocalizationGroup: Premium
 ---
 # Power BI Premium FAQ
 
-This article addresses questions frequently asked about Power BI Premium. For an overview, see [What is Power BI Premium?](service-premium.md).
+This article addresses questions frequently asked about Power BI Premium. For an overview, see [What is Power BI Premium?](service-premium-what-is.md).
 
 * If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
@@ -62,7 +62,7 @@ A capacity is a grouping of one or more nodes that is provisioned by an admin th
 Power BI Premium is billed monthly with an annual commitment.
 
 **How do I buy Power BI Premium?**  
-Power BI Premium is available from the Office 365 admin center. For more information, see [How to purchase Power BI Premium](service-admin-premium-purchase.md). You can also contact your Microsoft representative for more information.
+Power BI Premium is available from the Microsoft 365 admin center. For more information, see [How to purchase Power BI Premium](service-admin-premium-purchase.md). You can also contact your Microsoft representative for more information.
 
 **How do I know how much Power BI Premium capacity I need to purchase?**  
 Use the [cost calculator](https://powerbi.microsoft.com/calculator/) to estimate how much Power BI Premium capacity you may need.
@@ -80,7 +80,7 @@ For more information, see [Get started with Power BI Report Server](report-serve
 
 **Next steps**
 
-[What is Power BI Premium?](service-premium.md)
+[What is Power BI Premium?](service-premium-what-is.md)
 [Power BI Premium release notes](service-premium-release-notes.md)
 [Microsoft Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)

@@ -1,8 +1,8 @@
 ---
 title: Authenticate users and get an Azure AD access token for your application
 description: Learn how to register an application in Azure Active Directory for use with embedding Power BI content.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -15,7 +15,7 @@ ms.date: 02/05/2019
 
 Learn how you can authenticate users in your Power BI application and retrieve an access token to use with the REST API.
 
-Before you can call the Power BI REST API, you need to get an Azure Active Directory (Azure AD) **authentication access token** (access token). An **access token** is used to allow your app access to **Power BI** dashboards, tiles, and reports. To learn more about Azure Active Directory **access token** flow, see [Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx).
+Before you can call the Power BI REST API, you need to get an Azure Active Directory (Azure AD) **authentication access token** (access token). An **access token** is used to allow your app access to **Power BI** dashboards, tiles, and reports. To learn more about Azure Active Directory **access token** flow, see [Azure AD Authorization Code Grant Flow](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code).
 
 Depending on how you're embedding content, the access token is retrieved differently. Two different approaches are used in this article.
 
@@ -51,7 +51,7 @@ var @params = new NameValueCollection
 
 After you construct a query string, you redirect to **Azure AD** to get an **authorization code**.  Below is a complete C# method to construct an **authorization code** query string, and redirect to **Azure AD**. After you have the authorization code, you get an **access token** using the **authorization code**.
 
-Within redirect.aspx.cs, [AuthenticationContext.AcquireTokenByAuthorizationCode](https://msdn.microsoft.com/library/azure/dn479531.aspx) calls to generate the token.
+Within redirect.aspx.cs, [AuthenticationContext.AcquireTokenByAuthorizationCode](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) calls to generate the token.
 
 #### Get authorization code
 
@@ -84,7 +84,7 @@ protected void signInButton_Click(object sender, EventArgs e)
 
     //Redirect authority
     //Authority Uri is an Azure resource that takes a client id to get an Access token
-    // AADAuthorityUri = https://login.microsoftonline.net/common/
+    // AADAuthorityUri = https://login.microsoftonline.com/common/
     string authorityUri = Properties.Settings.Default.AADAuthorityUri;
     var authUri = String.Format("{0}?{1}", authorityUri, queryString);
     Response.Redirect(authUri);
@@ -191,6 +191,10 @@ var authenticationContext = new AuthenticationContext(AuthorityUrl);
 
 m_tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
 ```
+
+## Troubleshoot
+
+* Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) if you experience an "'AuthenticationContext' does not contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)" error.
 
 ## Next steps
 

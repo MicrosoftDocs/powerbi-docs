@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -76,7 +76,7 @@ There are certain limitations to using **SSAS MD**:
 
 * Servers must be running SQL Server 2012 SP1 CU4 or later versions of Analysis Services for the Power BI Desktop SSAS MD connector to work properly
 * *Actions* and *Named Sets* are not exposed to Power BI, but you can still connect to cubes that also contain *Actions* or *Named sets* and create visuals and reports.
-* You may encounter an issue where Power BI displays metadata for an SSAS model, but you're unable to retreive data from the model. This can occur when you have the 32-bit version of the MSOLAP provider installed on your system, and do not have the 64-bit version. Installing the 64-bit version may resolve the issue.
+* You may encounter an issue where Power BI displays metadata for an SSAS model, but you're unable to retrieve data from the model. This can occur when you have the 32-bit version of the MSOLAP provider installed on your system, and do not have the 64-bit version. Installing the 64-bit version may resolve the issue.
 * You can't create 'report level' measures when authoring a report that is connected live to an SSAS multidimensional model. The only measures that are available are those defined in the MD model.
 
 ## Supported Features of SSAS MD in Power BI Desktop

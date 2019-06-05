@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -214,6 +214,29 @@ This section provides troubleshooting situations (and solutions) for working wit
    * BAPI_IOBJ_GETDETAIL
 
    To solve this issue, verify that the user has access to the various *MDPROVIDER* modules as well as *BAPI_IOBJ_GETDETAIL*. To further troubleshoot this or similar issues, select *Enable tracing* on the *Diagnostics* window within Power BI Desktop's *Options*. Attempt to retrieve data from SAP BW while tracing is active, and examine the trace file for more detail.
+
+## SAP BW Connection support
+
+The following table details the current support for SAP BW.
+
+
+
+|Product  |Mode  |Authentication  |Connector  |SNC Library  |Supported  |
+|---------|---------|---------|---------|---------|---------|
+|Power BI Desktop     |Any         | User / password  | Application Server | N/A  | Yes  |
+|Power BI Desktop     |Any         | Windows          | Application Server | sapcrypto + gsskrb5/gx64krb5  | Yes  |
+|Power BI Desktop     |Any         | Windows via impersonation | Application Server | sapcrypto + gsskrb5/gx64krb5  | Yes  |
+|Power BI Desktop     |Any         | User / password        | Message Server | N/A  | Yes  |
+|Power BI Desktop     |Any         | Windows        | Message Server | sapcrypto + gsskrb5/gx64krb5  | Yes  |
+|Power BI Desktop     |Any         | Windows via impersonation | Message Server | sapcrypto + gsskrb5/gx64krb5  | Yes  |
+|Power BI Gateway     |Import      | Same as Power BI Desktop |         |   |   |
+|Power BI Gateway     |DirectQuery | User / password        | Application Server | N/A  | Yes  |
+|Power BI Gateway     |DirectQuery | Windows via impersonation (fixed user, no SSO) | Application Server | sapcrypto + gsskrb5/gx64krb5  | Yes  |
+|Power BI Gateway     |DirectQuery | Use SSO via Kerberos for DirectQuery queries option | Application Server | *only with* gsskrb5/gx64krb5   | Yes  |
+|Power BI Gateway     |DirectQuery | User / password        | Message Server | N/A  | Yes  |
+|Power BI Gateway     |DirectQuery | Windows via impersonation (fixed user, no SSO) | Message Server | sapcrypto + gsskrb5/gx64krb5  | Yes  |
+|Power BI Gateway     |DirectQuery | Use SSO via Kerberos for DirectQuery queries option | Message Server | sapcrypto + gsskrb5/gx64krb5  | No  |
+
 
 
 ## Next steps

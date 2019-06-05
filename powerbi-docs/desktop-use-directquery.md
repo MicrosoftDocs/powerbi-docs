@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 02/28/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -37,26 +37,26 @@ The [Power BI and DirectQuery](desktop-directquery-about.md) article describes *
 ## Benefits of using DirectQuery
 There are a few benefits to using **DirectQuery**:
 
-* **DirectQuery** lets you build visualizations over very large datasets, where it otherwise would be unfeasible to first import all of the data with pre-aggregation
+* **DirectQuery** lets you build visualizations over very large datasets, where it would otherwise be unfeasible to first import all of the data with pre-aggregation
 * Underlying data changes can require a refresh of data, and for some reports, the need to display current data can require large data transfers, making re-importing data unfeasible. By contrast, **DirectQuery** reports always use current data
-* The 1 GB dataset limitation does *not* apply to **DirectQuery**
+* The 1-GB dataset limitation does *not* apply to **DirectQuery**
 
 ## Limitations of DirectQuery
 There are currently a few limitations to using **DirectQuery**:
 
-* All tables must come from a single database
+* All tables must come from a single database, unless using [composite models](desktop-composite-models.md)
 * If the **Query Editor** query is overly complex, an error will occur. To remedy the error you must either delete the problematic step in **Query Editor**, or *Import* the data instead of using **DirectQuery**. For multi-dimensional sources like SAP Business Warehouse, there is no **Query Editor**
 * Relationship filtering is limited to a single direction, rather than both directions (though it is possible to enable cross filtering in both directions for **DirectQuery** as a Preview feature). For multi-dimensional sources like SAP Business Warehouse, there are no relationships defined in the model
-* Time intelligence capabilities are not available in **DirectQuery**. For example, special treatment of date columns (year, quarter, month, day, so on) are not supported in **DirectQuery** mode.
+* Time intelligence capabilities are not available in **DirectQuery**. For example, special treatment of date columns (year, quarter, month, day, so on) is not supported in **DirectQuery** mode.
 * By default, limitations are placed on DAX expressions allowed in measures; see the following paragraph (after this bulleted list) for more information
-* There is a 1 million row limit for returning data when using **DirectQuery**. This does not affect aggregations or calculations used to create the dataset returned using **DirectQuery**, only the rows returned. For example, you can aggregate 10 million rows with your query that runs on the data source, and accurately return the results of that aggregation to Power BI using **DirectQuery** as long as the data returned to Power BI is less than 1 million rows. If more than 1 million rows would be returned from **DirectQuery**, Power BI returns an error.
+* There is a one-million-row limit for returning data when using **DirectQuery**. The limit does not affect aggregations or calculations used to create the dataset returned using **DirectQuery**, only the rows returned. For example, you can aggregate 10 million rows with your query that runs on the data source, and accurately return the results of that aggregation to Power BI using **DirectQuery** as long as the data returned to Power BI is less than 1 million rows. If more than 1 million rows would be returned from **DirectQuery**, Power BI returns an error.
 
 To ensure that queries sent to the underlying data source have acceptable performance, limitations are imposed on measures by default. Advanced users can choose to bypass this limitation by selecting **File > Options and settings > Options** and then **DirectQuery**, then selecting the option *Allow unrestricted measures in DirectQuery mode*. When that option is selected, any DAX expression that is valid for a measure can be used. Users must be aware, however, that some expressions that perform very well when the data is imported may result in very slow queries to the backend source when in DirectQuery mode.
 
 ## Important considerations when using DirectQuery
 The following three points should be taken into consideration when using **DirectQuery**:
 
-* **Performance and load** - All **DirectQuery** requests are sent to the source database, so the time required to refresh a visual is dependent on how long that back-end source takes to respond with the results from the query (or queries). The recommended response time (with requested data being returned) for using **DirectQuery** for visuals is five seconds or less, with a maximum recommended results response time of 30 seconds. Any longer, and the experience of a user consuming the report becomes unacceptably poor. In addition, once a report is published to the Power BI service, any query that takes longer than a few minutes will timeout, and the user will receive an error.
+* **Performance and load** - All **DirectQuery** requests are sent to the source database, so the time required to refresh a visual is dependent on how long that back-end source takes to respond with the results from the query (or queries). The recommended response time (with requested data being returned) for using **DirectQuery** for visuals is five seconds or less, with a maximum recommended results response time of 30 seconds. Any longer, and the experience of a user consuming the report becomes unacceptably poor. In addition, once a report is published to the Power BI service, any query that takes longer than a few minutes will time out, and the user will receive an error.
   
   Load on the source database should also be considered, based on the number of Power BI users who will consume the published report. Using *Row Level Security* (RLS) can have a significant impact as well; a non-RLS dashboard tile shared by multiple users results in a single query to the database, but using RLS on a dashboard tile usually means the refresh of a tile requires one query *per user*, thus significantly increasing load on the source database and potentially impacting performance.
   

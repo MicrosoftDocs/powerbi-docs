@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -47,7 +47,7 @@ The report **page** is always in the foreground (when compared to the wallpaper)
 
 For all new reports, the default settings are the following:
 
-* The report **page** is set to **white** and its trasparency is set to **100%**
+* The report **page** is set to **white** and its transparency is set to **100%**
 * The **wallpaper** is set to **white** and its transparency is set to **0%**
 
 When you set your page background to greater than 50% transparency, a dotted border appears while you are creating or editing your report, to show you the boundary of the report canvas border. 

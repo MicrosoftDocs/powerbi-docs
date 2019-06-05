@@ -1,6 +1,6 @@
 ---
 title: Add hyperlinks to a table
-description: Use Power BI Desktop to create hyperlinks. Then use either Desktop or Power BI service to add those hyperlinks to your report tables and matrixes.
+description: Use Power BI Desktop to create hyperlinks. Then use either Power BI Desktop or the Power BI service to add those hyperlinks to your report tables and matrixes.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/16/2019
+ms.date: 04/09/2019
 ms.author: maggies
 
 LocalizationGroup: Visualizations
@@ -19,11 +19,11 @@ This topic teaches you how to use Power BI Desktop to create hyperlinks. Then us
 ![Table with hyperlinks](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
 
 > [!NOTE]
-> Hyperlinks in [tiles on dashboards](service-dashboard-edit-tile.md) and [text boxes on dashboards](service-dashboard-add-widget.md) can be created on-the-fly using Power BI service. Hyperlinks in [text boxes in reports](service-add-hyperlink-to-text-box.md) can be created on-the-fly using Power BI service and Power BI Desktop.
+> You can create hyperlinks in [tiles on dashboards](service-dashboard-edit-tile.md) and [text boxes on dashboards](service-dashboard-add-widget.md) on-the-fly using the Power BI service. You can create hyperlinks in [text boxes in reports](service-add-hyperlink-to-text-box.md) on-the-fly using Power BI service and Power BI Desktop.
 > 
 
 ## To create a hyperlink in a table or matrix using Power BI Desktop
-Hyperlinks in tables and matrixes can be created in Power BI Desktop, but not from Power BI Service. Hyperlinks can also be created in Excel Power Pivot before the workbook is imported into Power BI. Both methods are described below.
+You can create hyperlinks in tables and matrixes in Power BI Desktop, but not in the Power BI Service. You can also create hyperlinks in Excel Power Pivot before you import the workbook into Power BI. Both methods are described below.
 
 ## Create a table or matrix hyperlink in Power BI Desktop
 The procedure for adding a hyperlink depends on whether you've imported the data or connected to it using DirectQuery. Both scenarios are described below.
@@ -44,10 +44,15 @@ The procedure for adding a hyperlink depends on whether you've imported the data
    
 1. If you don't want to display a long URL in a table, you can display a hyperlink icon  ![Hyperlink icon](media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png) instead. Note that you can't display icons in matrixes.
    
-   * Select the chart to make it active.
-   * Select the paint roller icon ![Paint roller icon](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) to open the Formatting tab.
-   * Expand **Values**, locate **URL icon**, and turn it to **On.**
-6. (Optional) [Publish the report from Desktop to Power BI service](guided-learning/publishingandsharing.yml?tutorial-step=2) and open the report in Power BI service. The hyperlinks will work there as well.
+    Select the chart to make it active.
+
+    Select the Format icon ![Paint roller icon](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) to open the Formatting tab.
+
+    Expand **Values**, locate **URL icon**, and turn it to **On.**
+
+    ![Turn on URL icon](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
+
+1. (Optional) [Publish the report from Desktop to Power BI service](guided-learning/publishingandsharing.yml?tutorial-step=2) and open the report in Power BI service. The hyperlinks will work there as well.
 
 ### For data connected with DirectQuery
 You can't create a new column in DirectQuery mode.  But if your data already contains URLs, you can turn them into hyperlinks.
@@ -89,7 +94,7 @@ A: No. You can use a link icon. If you need custom text for your hyperlinks and 
 ## Next steps
 [Visualizations in Power BI reports](visuals/power-bi-report-visualizations.md)
 
-[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
+[Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

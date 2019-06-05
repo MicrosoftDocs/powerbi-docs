@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -77,7 +77,7 @@ Then, in the **Page** dropdown, select the tooltip page you want to use for the 
 
 ![Select a tooltip page for manual tooltip](media/desktop-tooltips/desktop-tooltips_10.png)
 
-Being able to manually set a tooltip has many uses. You can set a blank page for a tooltip, and thereby override the default Power BI tooltip selection. Another use is when you don't want the tooltip that is automatically selected by Power BI to be the tooltip. For example, if you have a visual that includes two fields, and both of those fields have an assocaited tooltip, Power BI selects only one to show. You might not want that to be the case, so you could manually select which tooltip should be displayed.
+Being able to manually set a tooltip has many uses. You can set a blank page for a tooltip, and thereby override the default Power BI tooltip selection. Another use is when you don't want the tooltip that is automatically selected by Power BI to be the tooltip. For example, if you have a visual that includes two fields, and both of those fields have an associated tooltip, Power BI selects only one to show. You might not want that to be the case, so you could manually select which tooltip should be displayed.
 
 ## Reverting to default tooltips
 
@@ -93,7 +93,7 @@ There are a few considerations to keep in mind when your report tooltips are int
 
 When a report tooltip is displayed for a line chart, only one tooltip for all lines in the chart is displayed. This is similar to the default tooltip behavior for line charts, which also displays only one tooltip. 
 
-This is because the field in the legend does not get passed through as a filter for the tooltip. In the following image, the tooltip being displayed is showing all uints sold on that day across all three classes displayed in the report tooltip (in this example, Deluxe, Economy, and Regular). 
+This is because the field in the legend does not get passed through as a filter for the tooltip. In the following image, the tooltip being displayed is showing all units sold on that day across all three classes displayed in the report tooltip (in this example, Deluxe, Economy, and Regular). 
 
 ![Line charts only show aggregated tooltip data](media/desktop-tooltips/desktop-tooltips_12.png)
 

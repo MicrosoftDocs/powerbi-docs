@@ -13,15 +13,12 @@ ms.author: davidi
 
 LocalizationGroup: Data from files
 ---
-# Using dataflows with on-premises data sources (Preview)
+# Using dataflows with on-premises data sources
 
 With **dataflows**, you can create a collection of data from various sources, clean the data, transform it, and then load it to Power BI storage. When creating dataflow you may want to use on-premises data sources. This article clarifies requirement associated with creating dataflows and how your **Enterprise Gateway** needs to be configured to enabled those connections.
 
 ![Dataflows and gateways](media/service-dataflows-onpremises-gateways/onpremises-gateways_01.png)
 
-> [!NOTE]
-> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
- 
 ## Configuring an Enterprise Gateway for use with dataflows
 
 To use an on-premises data source in a dataflow, any user creating the dataflow must have an **Enterprise Gateway** installed and configured. The user creating the dataflow also must be the Enterprise Gateway's administrator in order to use that gateway for a dataflow.
@@ -76,8 +73,8 @@ This article provided information about using on-premises data source for datafl
 
 * [Self-service data prep with dataflows](service-dataflows-overview.md)
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
-* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Developer resources for Power BI dataflows](service-dataflows-developer-resources.md)
 
 For more information about Power Query and scheduled refresh, you can read these articles:
 * [Query overview in Power BI Desktop](desktop-query-overview.md)

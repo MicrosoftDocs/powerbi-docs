@@ -1,8 +1,8 @@
 ---
 title: Power BI REST API limitations
 description: The Power BI REST API has the following limitations
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi

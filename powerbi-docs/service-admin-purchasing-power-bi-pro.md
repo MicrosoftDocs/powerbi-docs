@@ -30,7 +30,7 @@ To assign licenses in Azure, you must be an owner of the Azure subscription that
 
 Follow these steps to purchase Power BI Pro licenses:
 
-1. Open the [Office 365 admin center](https://portal.office.com/adminportal/home#/homepage).
+1. Open the [Microsoft 365 admin center](https://portal.office.com/adminportal/home#/homepage).
 
 2. On the left navigation pane, select **Billing** > **Subscriptions**.
 
@@ -68,7 +68,7 @@ Follow these steps to purchase Power BI Pro licenses:
 
 Follow these steps to assign Power BI Pro licenses to individual user accounts:
 
-1. Open the [Office 365 admin center](https://portal.office.com/adminportal/home#/homepage).
+1. Open the [Microsoft 365 admin center](https://portal.office.com/adminportal/home#/homepage).
 
 2. On the left navigation pane, expand **Users**, and then select **Active users**.
 

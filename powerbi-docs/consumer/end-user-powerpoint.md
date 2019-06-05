@@ -7,9 +7,9 @@ ms.custom: seodec18
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/28/2019
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -32,6 +32,10 @@ In the Power BI service, select a report to display it on the canvas. You can al
 When the report you want to export to PowerPoint is displayed on the canvas, select **File > Export to PowerPoint** from the menu bar in the Power BI service.
 
 ![Close up left navbar with My Workspace selected, File dropdown selected](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
+   
+A pop-up will appear where you have the option to select the **Current view** or **Default view**.  **Current view** exports the report in the current state, which includes the active changes you made to slicer and filter values.  Most users select this option.  Alternately, selecting **Default view** exports the report in the original state (as the author shared it), and doesn't reflect any changes you made to the original state.
+    
+Additionally, there is a checkbox to select whether or not to export the hidden tabs of a report.  Simply check this box if you would like to only export report tabs that are visibile to you in your browser.  If you'd prefer to get all the hidden tabs as part of your export, you may leave this unchecked.  If the checkbox is greyed out, there are no hidden tabs in the report.  Once you have made your selections, click **Export** to continue.
 
 You'll see a notification banner in the upper right corner of the Power BI service browser window that the report is being exported to PowerPoint. This might take a few minutes, and you can continue to work in Power BI while the report is being exported.
 
@@ -71,7 +75,6 @@ What you do with your PowerPoint deck from there, or any of the high resolution 
 ## Limitations
 There are a few considerations and limitations to keep in mind when working with the **Export to PowerPoint** feature.
 
-* In-session interactivity such as highlighting and filtering, drill-down, and so on, are not yet supported when exporting to PowerPoint. The exported PowerPoint shows the original visuals as they were saved in the report. If you've applied filters and slicers and want this preserved in the export, save the report and then do the export.
 * **R visuals** are not currently supported. Any such visuals are exported as a blank image into PowerPoint with an error message that states the visual is not supported.
 * **Custom visuals** that have been **certified** are supported. For more information on certified custom visuals, including how to get a custom visual certified, see [getting a custom visual certified](../power-bi-custom-visuals-certified.md). Custom visuals that have not been certified are not supported, and are exported as a blank image into PowerPoint with an error message that states the visual is not supported.
 * Reports with more than 30 report pages can't currently be exported.
@@ -81,9 +84,11 @@ There are a few considerations and limitations to keep in mind when working with
 * Pages in PowerPoint are always created in the standard 9:16 size, regardless of the original page sizes or dimensions in the Power BI report.
 * Reports that are owned by a user outside your Power BI tenant domain (such as, a report owned by someone outside your organization, and shared with you) cannot be published to PowerPoint.
 * If you share a dashboard with someone outside of your organization (and thereby, a user who is not in your Power BI tenant), that user will not be able to export the shared dashboard's associated reports to PowerPoint. For example, if you are aaron@contoso.com, you can share with david@cohowinery.com. But david@cohowinery.com cannot export the associated reports to PowerPoint.
+* Export may not work with older versions of PowerPoint.
 * As previously mentioned, each report page is exported as a single image in the PowerPoint file.
 * The Power BI service uses your Power BI language setting as the language for the PowerPoint export. To see or set your language preference, select the cog icon ![cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) **> Settings > General > Language**.
 * The **Downloaded at** time on the cover slide for the exported PowerPoint file is set to your computer's time zone at the time of the export.
+* URL filters aren't currently respected when choosing "Current Values" for your export.
 
 ## Next steps
 [Print a report](end-user-print.md)

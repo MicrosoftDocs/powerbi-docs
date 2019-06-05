@@ -1,15 +1,15 @@
 ---
 title: Developing a Power BI Custom Visual
 description: A tutorial on how to develop a Power BI custom visual
-author: markingmyname
-ms.author: maghan
+author: sranins
+ms.author: rasala
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
-ms.date: 11/06/2018
+ms.date: 03/15/2019
 ---
 
 # Tutorial: Developing a Power BI custom visual
@@ -201,6 +201,9 @@ You can [download](https://github.com/Microsoft/PowerBI-visuals-circlecard) the 
     ```
     ![New CircleCard result](media/custom-visual-develop-tutorial/new-circle-card-result.png)
 
+    > [!Note]
+    > You create the new project at the current location of the prompt.
+
 4. Navigate to the project folder.
 
     ```powershell
@@ -281,7 +284,7 @@ HTML5, and CSS standards.
 Now you can develop the custom visual to display a circle with text.
 
 > [!Note]
-> Many text entries in this tutorial can be copied from [here](https://github.com/uve/circlecard).
+> Many text entries in this tutorial can be copied from [here](https://github.com/Microsoft/powerbi-visuals-circlecard).
 
 1. To install the **D3 library** in PowerShell, enter the command below.
 
@@ -452,7 +455,7 @@ Now we can explore how to develop the custom visual to show a circle and sample 
 9. In PowerShell, start the custom visual.
 
     ```powershell
-    pbiviz
+    pbiviz start
     ```
 
 ### Toggle auto reload
@@ -555,14 +558,14 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
     This statement assigns the *dataView* to a variable for easy access, and declares the variable to reference the *dataView* object.
 
-2. In the **update** method, replace.text(“Value”)** with the following.
+2. In the **update** method, replace **.text("Value")** with the following.
 
     ```typescript
     .text(dataView.single.value as string)
     ```
     ![Replace textValue](media/custom-visual-develop-tutorial/text-value-replace.png)
 
-3. In the **update** method, replace **.text(“Label”)** with the following.
+3. In the **update** method, replace **.text("Label")** with the following.
 
     ```typescript
     .text(dataView.metadata.columns[0].displayName)

@@ -151,7 +151,7 @@ If you are listed in the **Users** tab of the data source configured within the 
 ![](media/service-gateway-onprem-manage-oracle/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## Troubleshooting
-You may encounter serveral errors from Oracle when the naming syntax is either incorrect or not configured properly.
+You may encounter several errors from Oracle when the naming syntax is either incorrect or not configured properly.
 
 * ORA-12154: TNS: could not resolve the connect identifier specified  
 * ORA-12514: TNS listener does not currently know of service requested in connect descriptor  
@@ -172,7 +172,7 @@ For additional troubleshooting information relating to the gateway, see [Trouble
 [On-premises data gateway](service-gateway-onprem.md)  
 [On-premises data gateway - in-depth](service-gateway-onprem-indepth.md)  
 [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
-[Power BI Premium](service-premium.md)
+[Power BI Premium](service-premium-what-is.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

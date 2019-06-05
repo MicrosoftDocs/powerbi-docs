@@ -1,46 +1,118 @@
 ---
 title: Monitor Power BI Premium capacities by using the admin portal
 description: Use the Power BI admin portal to monitor your Premium capacities.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 04/10/2019
 LocalizationGroup: Premium 
 ---
 
 # Monitor capacities in the Admin portal
 
-This article describes how you can use the Capacity settings area in the Admin portal to get a quick view of your capacity's performance.  To get the most in-depth metrics about your capacity, it's best to use the [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) app.
+The **Health** tab in the **Capacity settings** area in the Admin portal provides a metrics summary about your capacity and enabled workloads.  
 
-## Capacity metrics
+![Capacity Health tab in the portal](media/service-admin-premium-monitor-portal/admin-portal-health.png)
 
-The **Capacity settings** area of the admin portal provides four gauges that indicate the loads placed and the resources utilized by your capacity for the past seven days. These four tiles work on an hourly time window that indicates how many hours in the past seven days the corresponding metric was above 80%. This metric indicates a potential degradation for the end-user experience.
+If you need more comprehensive metrics, use the [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) app. The app provides drill-down and filtering, and the most detailed metrics for near every aspect affecting capacity performance. To learn more, see [Monitor Premium capacities with the app](service-admin-premium-monitor-capacity.md).
 
-![Usage in 7 days](media/service-admin-premium-monitor-capacity/usage-in-days.png)
+## System Metrics
+
+On the **Health** tab, at the highest level, CPU utilization and memory usage provide a quick view of the most important metrics for the capacity. These metrics are cumulative, including all enabled workloads for the capacity.
 
 | **Metric** | **Description** |
 | --- | --- |
-| CPU |Number of times CPU exceeded 80% utilization. |
-| Memory Thrashing |Represents the memory pressure on your backend cores. Specifically, this is a metric of how many times datasets are evicted from memory due to memory pressure from the usage of multiple datasets. |
-| Memory Usage |Average memory usage, represented in gigabytes (GB). |
-| DQ/s | Number of times Direct Query and Live Connections count exceeded 80% of the limit. <br>  The total number of DirectQuery and live connection queries per second is limited. The limits are 30/s for P1, 60/s for P2 and 120/s for P3.  Direct Query and live connection queries count add to the above throttle. For example, if you have 15 DirectQueries and 15 live connections in a second, you hit your throttle<br> This applies equally to on-premises and cloud connections. |
-|  |  |
+| CPU UTILIZATION | Average CPU utilization, as a percentage of total available CPU. |
+| MEMORY USAGE | Average memory usage in gigabytes (GB).|
 
-Metrics reflect utilization over the past week.  If you'd like to see a more detailed view of the metrics, you can do so by clicking any of the summary tiles.  This will take you to detailed charts for each of the metrics for your premium capacity. The following chart shows details for the CPU metric.
+## Workload metrics
 
-![Detailed usage chart CPU](media/service-admin-premium-monitor-capacity/premium-usage-detailed-chart-cpu.png)
+For each workload enabled for the capacity. CPU utilization and memory usage are shown.
 
-These charts are summarized on an hourly basis for the past week, and can help isolate when you may have had specific performance-related events in your premium capacity.
+| **Metric** | **Description** |
+| --- | --- |
+| CPU UTILIZATION | Average CPU utilization, as a percentage of total available CPU. |
+| MEMORY USAGE | Average memory usage in gigabytes (GB).|
 
-You may also export the underlying data for any of the metrics to a csv file.  This export will give you detailed information in three minute intervals for each day of the past week.
+### Detailed workload metrics
+
+Each workload has additional metrics. The type of metrics shown depend on the workload. To see detailed metrics for a workload, click the expand (down) arrow.
+
+![Workload health expand](media/service-admin-premium-monitor-portal/admin-portal-health-expand.png)
+
+#### Dataflows
+
+##### Dataflow Operations
+
+| **Metric** | **Description** |
+| --- | --- |
+| Total Count | Total refreshes for each dataflow. |
+| Success Count | Total successful refreshes for each dataflow.|
+| Average Duration (min) | The average duration of refresh for the dataflow, in minutes |
+| Max Duration (min) | The duration of the longest-running refresh for the dataflow, in minutes. |
+| Average Wait Time (min) | The average lag between the scheduled time and start of a refresh for the dataflow, in minutes. |
+| Max Wait Time (min) | The maximum wait time for the dataflow, in minutes.  |
+
+#### Datasets
+
+##### Refresh
+
+| **Metric** | **Description** |
+| --- | --- |
+| Total Count | Total refreshes for each dataset. |
+| Success Count | Total successful refreshes for each dataset. |
+| Failure Count | Total failed refreshes for each dataset. |
+| Success Rate  | Number of successful refreshes divided by the total refreshes to measure. reliability. |
+| Average Duration (min) | The average duration of refresh for the dataset, in minutes.  |
+| Max Duration (min) | The duration of the longest-running refresh for the dataset, in minutes. |
+| Average Wait Time (min) | The average lag between the scheduled time and start of a refresh for the dataset, in minutes. |
+| Max Wait Time (min) | The maximum wait time for the dataset, in minutes. |
+
+##### Query
+
+| **Metric** | **Description** |
+| --- | --- |
+| Total Count | The total number of queries run for the dataset. |
+| Average Duration (ms) |The average query duration for the dataset, in milliseconds|
+| Max Duration (ms) |The duration of the longest-running query in the dataset, in milliseconds. |
+| Average Wait Time (ms) |The average query wait time for the dataset, in milliseconds. |
+| Max Wait Time (ms) |The duration of the longest-waiting query in the dataset, in milliseconds. |
+
+##### Eviction
+
+| **Metric** | **Description** |
+| --- | --- |
+| Model Count | The total number of dataset evictions for this capacity. When a capacity faces memory pressure, the node evicts one or more datasets from memory. Datasets that are inactive (with no query/refresh operation currently executing) are evicted first. Then the eviction order is based on a measure of 'least recently used' (LRU). |
+
+#### Paginated Reports
+
+##### Report Execution
+
+| **Metric** | **Description** |
+| --- | --- |
+| Execution Count  | The number of times the report was been executed and viewed by users.|
+
+##### Report Usage
+
+| **Metric** | **Description** |
+| --- | --- |
+| Success Count | The number of times the report has been viewed by a user. |
+| Failure Count |The number of times the report has been viewed by a user.|
+| Row Count |The number of rows of data in the report. |
+| Data Retrieval Duration (ms) |The average amount of time it takes to retrieve data for the report, in milliseconds. Long durations can indicate slow queries or other data source issues.  |
+| Processing Duration (ms) |The average amount of time it takes to process the data for a report, in milliseconds. |
+| Rendering Duration (ms) |The average amount of time it takes to render a report in the browser, in milliseconds. |
+
+> [!NOTE]
+> Detailed metrics for the **AI** workload are not yet available.
 
 ## Next steps
 
 Now that you understand how to monitor Power BI Premium capacities, learn more about optimizing capacities.
 
 > [!div class="nextstepaction"]
-> [Power BI Premium capacity resource management and optimization](service-premium-understand-how-it-works.md)
+> [Optimizing Power BI Premium capacities](service-premium-capacity-optimize.md)

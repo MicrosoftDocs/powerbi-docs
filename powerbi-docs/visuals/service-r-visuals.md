@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/07/2018
+ms.date: 02/19/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -29,7 +29,7 @@ R visuals are created in a [Power BI Desktop report](../desktop-get-the-desktop.
 
 ![](media/service-r-visuals/r-visuals-service_2a.png)
 
-Once the report is created in **Power BI Desktop**, you can publish the report containing one or more R visuals to the Power BI service. R visuals currently can only be created in **Power BI Desktop**, and then published to the Power BI service. For more information on creating R visuals, see [Create Power BI visuals using R (Power BI Desktop)](../desktop-r-visuals.md).
+Once the report is created in **Power BI Desktop**, you can publish the report containing one or more R visuals to the Power BI service. R visuals currently can only be created in **Power BI Desktop**, and then published to Power BI service. For more information on creating R visuals, see [Create Power BI visuals using R (Power BI Desktop)](../desktop-r-visuals.md).
 
 Note that in the service not all of the R packages are supported. See supported packages at the end of this article for the list of packages currently supported in the Power BI service.
 
@@ -60,13 +60,21 @@ As another example, the following image shows the error message that appears whe
 ![](media/service-r-visuals/r-visuals-service_5.png)
 
 ## Licensing
-R visuals require a [Power BI Pro](../service-self-service-signup-for-power-bi.md) license to render in reports, refresh, filter and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../service-premium.md)
+R visuals require a [Power BI Pro](../service-self-service-signup-for-power-bi.md) license to render in reports, refresh, filter and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../service-premium-what-is.md)
 
-Free users of Power BI can only consume tiles shared with them. See [purchasing Power BI Pro](../service-admin-purchasing-power-bi-pro.md) for more information.
+Free users of Power BI can only consume tiles shared with them in Premium workspaces. See [purchasing Power BI Pro](../service-admin-purchasing-power-bi-pro.md) for more information.
 
 The following table describes R visuals capabilities based on licensing.
 
-![](media/service-r-visuals/r-visuals-service_6a.png)
+
+|  |Author R visuals in Power BI Desktop  | Create PBI service reports with R visuals |View R visuals in reports  | View R tiles in dashboards |
+|---------|---------|---------|---------|--------|
+|**Guest** (Power BI embedded)     |  Not relevant|  Not relevant       | Not supported  | Not relevant |
+|**Unmanaged tenant** (domain not verified) | Supported | Not supported |  Not supported |Supported (B2B scenario) |
+|**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported in Premium capacity only    | Supported |
+**Managed tenant** with Pro license     |   Supported      | Supported      | Supported    |Supported|
+
+
 
 ## Known Limitations
 R visuals in the Power BI service have a few limitations:
