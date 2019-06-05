@@ -66,5 +66,5 @@ If you're seeing a credentials error or an error trying to refresh due to invali
 
 ## Next steps
 [What is Power BI?](power-bi-overview.md)  
-[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)  
+[Basic concepts for designers in the Power BI service](service-basic-concepts.md)  
 

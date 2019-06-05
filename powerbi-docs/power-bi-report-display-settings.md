@@ -74,7 +74,7 @@ The second set of Page view settings controls the positioning of objects on the 
 
 Read more about [reports in Power BI](consumer/end-user-reports.md)
 
-[Basic concepts for Power BI service consumers](consumer/end-user-basic-concepts.md)
+[Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
