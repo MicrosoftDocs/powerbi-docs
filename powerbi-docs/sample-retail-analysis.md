@@ -161,5 +161,5 @@ We hope this tour has shown how Power BI dashboards, Q&A, and reports can provid
 * [Download a zip file of all the sample files](http://go.microsoft.com/fwlink/?LinkId=535020)    
 * [Download the Excel workbook for this Power BI sample](http://go.microsoft.com/fwlink/?LinkId=529778)    
 * [Get data (for Power BI)](service-get-data.md)    
-* [Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)    
+* [Basic concepts for designers in the Power BI service](service-basic-concepts.md)    
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)

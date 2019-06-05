@@ -35,7 +35,7 @@ These restrictions and notes may change as we continue to improve the experience
 
 The easiest way to move between your SQL Data Warehouse and Power BI is with the **Open in Power BI** button within the Azure portal. This button allows you to seamlessly begin creating new dashboards in Power BI.
 
-1. To get started, navigate to your SQL Data Warehouse instance in the Azure portal. Note that SQL Data Warehouse only have a presence in the Azure Preview portal at this time.
+1. To get started, navigate to your SQL Data Warehouse instance in the Azure portal. Note that SQL Data Warehouse only have a presence in the Azure portal at this time.
 
 2. Click the **Open in Power BI** button
 
@@ -61,7 +61,7 @@ SQL Data Warehouse is also listed on the Power BI Get Data page.
 
     ![Azure SQL DW with direct connect](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
 
-4. Enter the necessary information to connect. The **Finding Parameters** section below shows where this data can be located in your Azure Portal.
+4. Enter the necessary information to connect. The **Finding Parameters** section below shows where this data can be located in your Azure portal.
 
     ![Server name](media/service-azure-sql-data-warehouse-with-direct-connect/servername.png)
 
@@ -82,12 +82,14 @@ SQL Data Warehouse is also listed on the Power BI Get Data page.
 
 ## Finding Parameter Values
 
-Your fully qualified server name and database name can be found in the Azure portal. Note that SQL Data Warehouse only have a presence in the Azure Preview portal at this time.
+Your fully qualified server name and database name can be found in the Azure portal. Note that SQL Data Warehouse only have a presence in the Azure portal at this time.
 
 ![Azure portal](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
 > [!NOTE]
 > If your Power BI tenant is in the same region as the Azure SQL Data Warehouse there will be no egress charges. You can find where your Power BI tenant is located using [these instructions](https://docs.microsoft.com/power-bi/service-admin-where-is-my-tenant-located).
+
+[!INCLUDE [direct-query-sso](includes/direct-query-sso.md)]
 
 ## Next steps
 

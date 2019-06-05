@@ -57,11 +57,11 @@ When the dashboards and reports in your workspace are ready, you choose which da
    
      ![App navigation](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
-5. On **Access**, decide who has access to the app. 
+5. On **Permission**, decide who has access to the app, and what they can do with it. 
     - In [classic workspaces](service-create-workspaces.md): everyone in your organization, specific people, or Azure Active Directory (AAD) security groups.
     - In the [new experience workspaces](service-create-the-new-workspaces.md): specific people, AAD security groups and distribution lists, and Office 365 Groups.
 
-6. If you have permissions, you can install the app automatically for the recipients. A Power BI admin can enable this setting in the Power BI Admin Portal. Read more about [automatically installing an app](#automatically-install-apps-for-end-users) in this article.
+6. You can install the app automatically for the recipients, if your Power BI admin has enabled this setting for you in the Power BI Admin Portal. Read more about [automatically installing an app](#automatically-install-apps-for-end-users) in this article.
 
      ![App permissions](media/service-create-distribute-apps/power-bi-apps-permissions.png)
 

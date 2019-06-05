@@ -8,14 +8,14 @@ ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 05/22/2019
 ---
 
 # Push data into a Power BI dataset
 
-With the Power BI API, you can push data into a Power BI dataset. For example, you want to extend an existing business workflow to push key data into your dataset. In this case, you want to push a Sales Marketing dataset which has a Product table into a dataset.
+The Power BI API lets you push data into a Power BI dataset. In this article, we show you how to push a Sales Marketing dataset containing a Product table into an existing dataset.
 
-Before you get started pushing data into a dataset, you need an Azure Active Directory (Azure AD) and a [Power BI account](create-an-azure-active-directory-tenant.md).
+Before getting started, you need an Azure Active Directory (Azure AD) and a [Power BI account](create-an-azure-active-directory-tenant.md).
 
 ## Steps to push data into a dataset
 
@@ -29,7 +29,7 @@ The next section is a general discussion of Power BI API operations that push da
 
 ## Power BI API operations to push data
 
-With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, tiles on the dashboard are updated automatically with the updated data. To push data, you use the [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) operation along with the [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) operation. To find a dataset, you use the [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) operation. For any of these operations, you can pass a group id to work with a group. Use the [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) operation to get a list of group id's.
+With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, dashboard tiles update automatically with the new data. To push data, use the [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset) and [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) operations. To find a dataset, use the [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) operation. You can pass a group ID to work with a group for any of these operations. To get a group ID list, use the [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) operation.
 
 Here are the operations to push data into a dataset:
 
@@ -54,7 +54,7 @@ The JSON string for a dataset has the following format:
         ]
     }
 
-So, for our Sales Marketing dataset example, you would pass a JSON string such as the example below. In this example, **SalesMarketing** is the name of the dataset, and **Product** is the name of the table. After you define the table, you define the table schema. For the **SalesMarketing** dataset, the table schema has these columns: ProductID, Manufacturer, Category, Segment, Product, and IsCompete.
+For our Sales Marketing dataset example, you would pass a JSON string as shown below. In this example, **SalesMarketing** is the dataset name, and **Product** is the table name. After defining the table, you define the table schema. For the **SalesMarketing** dataset, the table schema has these columns: ProductID, Manufacturer, Category, Segment, Product, and IsCompete.
 
 **Example dataset object JSON**
 
@@ -100,10 +100,10 @@ For a Power BI table schema, you can use the following data types.
 | **Data type** | **Restrictions** |
 | --- | --- |
 | Int64 |Int64.MaxValue and Int64.MinValue not allowed. |
-| Double |Double.MaxValue and Double.MinValue values not allowed. NaN not supported.+Infinity and -Infinity not supported in some functions (e.g. Min, Max). |
+| Double |Double.MaxValue and Double.MinValue values not allowed. NaN not supported.+Infinity and -Infinity not supported in some functions (for example, Min, Max). |
 | Boolean |None |
-| Datetime |During data loading we quantize values with day fractions to whole multiples of 1/300 seconds (3.33ms). |
-| String |Currently allows up to 128K characters. |
+| Datetime |During data loading, we quantize values with day fractions to whole multiples of 1/300 seconds (3.33 ms). |
+| String |Currently allows up to 128 K characters. |
 
 ## Learn more about pushing data into Power BI
 

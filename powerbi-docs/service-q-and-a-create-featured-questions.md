@@ -44,7 +44,7 @@ This article uses the [Retail Analysis Sales sample](sample-datasets.md). Follow
 
 - [Q&A for consumers](consumer/end-user-q-and-a.md)  
 - [Use Q&A in dashboards and reports](power-bi-tutorial-q-and-a.md)  
-- [Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)  
+- [Basic concepts for designers in the Power BI service](service-basic-concepts.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

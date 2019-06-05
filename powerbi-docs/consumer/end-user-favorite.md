@@ -10,7 +10,7 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/11/2019
+ms.date: 05/28/2019
 ms.author: mihart
 
 LocalizationGroup: Common tasks
@@ -64,9 +64,12 @@ No longer use a report as often as you used to?  You can unfavorite it. When you
    ![Favorites screen](./media/end-user-favorite/power-bi-unfavorites-screen.png)
 2. Select the yellow star next to the content to unfavorite.
 
-> **NOTE**: You can also unfavorite a dashboard, report, or app itself. Just open and de-select the yellow icon.   
+> [!NOTE]
+> You can also unfavorite a dashboard, report, or app itself. Just open and de-select the yellow icon.   
 > 
 > 
+## Limitations and considerations
+At the current time, you can favorite an app and this automatically favorites all the reports and dashboards for that app. It is not possible to favorite individual app reports or dashboards. 
 
 ## Next steps
 [Power BI - Basic Concepts](end-user-basic-concepts.md)

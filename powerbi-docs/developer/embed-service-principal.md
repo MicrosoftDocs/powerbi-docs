@@ -115,7 +115,7 @@ Different from the traditional use of a master account, using the service princi
 
 5. Add the service principal as an **admin** to the new workspace you created. You can manage this task through the [APIs](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) or with the Power BI service.
 
-    ![Add a service principal to a workspace](media/embed-service-principal/add-service-principal-in-the-UI.png)
+    ![Add a service principal as an admin to a workspace](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Now choose to embed your content within a sample application, or within your own application.
 
@@ -163,16 +163,17 @@ Below is a sample script to retrieve the service principal object ID with PowerS
 
 * Service principal only works with [new app workspaces](../service-create-the-new-workspaces.md).
 * **My Workspace** isn't supported when using service principal.
-* Dedicated Premium capacity is required when moving to production.
+* Dedicated capacity is required when moving to production.
 * You can't sign into the Power BI portal using service principal.
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
 * You can't install or manage an on-premises data gateway using service principal.
 * [Embed for your organization](embed-sample-for-your-organization.md) applications are unable to use service principal.
 * [Dataflows](../service-dataflows-overview.md) management is not supported.
-* Service principal does not support admin APIs.
+* Service principal currently does not support any admin APIs.
 
 ## Next steps
 
 * [Register an app](register-app.md)
 * [Power BI Embedded for your customers](embed-sample-for-customers.md)
 * [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+* [Row-level security using on-premises data gateway with service principal (Preview)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)
