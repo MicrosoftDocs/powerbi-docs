@@ -63,7 +63,7 @@ For more information, see [Pin an entire report page](service-dashboard-pin-live
 
 [Data refresh in Power BI](refresh-data.md)
 
-[Power BI Basic Concepts](consumer/end-user-basic-concepts.md)
+[Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

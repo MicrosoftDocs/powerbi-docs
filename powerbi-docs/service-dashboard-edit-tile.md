@@ -142,7 +142,7 @@ By default, selecting a tile usually takes you to the report where the tile was 
 
 [Dashboards in Power BI](consumer/end-user-dashboards.md)
 
-[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
+[Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
