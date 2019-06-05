@@ -1127,8 +1127,6 @@
         href: service-admin-troubleshooting-power-bi-personal-gateway.md
       - name: "Troubleshooting unsupported data source for refresh"
         href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
-      - name: "Troubleshooting nested values returned as text"
-        href: service-troubleshooting-nested-values.md
       - name: "Troubleshooting scheduled refresh for Azure SQL Databases"
         href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
       - name: "Error: We couldn't find any data in your Excel workbook"
