@@ -15,14 +15,13 @@ ms.author: maggies
   While you create a Report Builder paginated report, it is helpful to preview the report often to verify that the report displays what you want. To preview your report, click **Run**. The report renders in preview mode.  
   
  Report Builder improves the preview experience by using edit sessions when connected to a report server. The edit session creates a data cache and makes the datasets in the cache available for repeated report previews. An edit session is not a feature that you interact with directly, but understanding when the cached dataset is refreshed will help you improve performance when you preview a report and understand why the report renders faster or slower.  
-  
- Other benefits of edit sessions are the abilities to edit reports that use embedded data sources or reference items such as images or subreports that are stored on the report server.  
+
   
 > [!NOTE]  
 > There are some differences between previewing in Report Builder and viewing in a browser. For example, a calendar control, which is added to a report when you specify a Date/Time type parameter, is different in Report Builder and in a browser. 
   
 ## Improving Preview Performance  
- How you create and update reports affects how fast the report renders in preview. The first time that you preview a report that relies on a server reference, an edit session is created for you and the data used when the report is run is added to a data cache that is stored on the report server. When you make changes to the report that does not affect the data, the cached copy of the data is used by the report. This means that you will not see data change each time you preview the report. If you want new data, click the **Refresh** button on the ribbon.  
+ How you create and update reports affects how fast the report renders in preview. The first time that you preview a report that relies on a server reference, an edit session is created for you and the data used when the report is run is added to a data cache that is stored. When you make changes to the report that does not affect the data, the cached copy of the data is used by the report. This means that you will not see data change each time you preview the report. If you want new data, click the **Refresh** button on the ribbon.  
   
  The following actions cause the cache to be refreshed and slow down report rendering the next time you preview the report:  
   
@@ -33,7 +32,7 @@ ms.author: maggies
   
 -   Add, change, or delete a data source. This includes changing the name or properties of the data source, the data extension of the data source, or the properties of the connection to the data source.  
   
--   Change the shared data source that the report uses to a different data source.  
+-   Change the data source that the report uses to a different data source.  
   
 -   Change the language of the report.  
   
@@ -57,23 +56,15 @@ ms.author: maggies
   
 -   Change page breaks.  
   
- The edit session is created the first time that you preview a report. By default, an edit session lasts 7200 seconds (2 hours). The session is reset to two hours every time you run the report. When the edit session expires, the data cache is deleted. If the edit session expires, one is automatically created again the next time that you preview the report. The expiration time for edit sessions is configurable. If you find that two hours is too long or too short, contact the administrator of the report server.  
+The edit session is created the first time that you preview a report. By default, an edit session lasts 7200 seconds (2 hours). The session is reset to two hours every time you run the report. When the edit session expires, the data cache is deleted. If the edit session expires, one is automatically created again the next time that you preview the report.
   
- By default, the data cache can hold up to five datasets. If you use many different combinations of parameter values, the report might need more data. This requires the cache be refreshed and the report renders more slowly the next time that you preview it. The number of entries in the cache is configurable by the administrator of the report server.  
+By default, the data cache can hold up to five datasets. If you use many different combinations of parameter values, the report might need more data. This requires the cache be refreshed and the report renders more slowly the next time that you preview it. 
   
 ## Concurrency of Report Updates  
- Frequently, you preview a report as a step in updating and then saving a report to a report server. When you are updating a report, it is possible that someone else is updating and then saving the report at the same time. The report that is saved last is the version of report that is available for future viewing and updating. This means that the version of the report that you previewed might not be the version you reopen. You have the option to save the report with a new name by using the **Save As** option on the Report Builder menu.  
+Frequently, you preview a report as a step in updating and then saving a report to the Power BI service. When you are updating a report, it is possible that someone else is updating and then saving the report at the same time. The report that is saved last is the version of report that is available for future viewing and updating. This means that the version of the report that you previewed might not be the version you reopen. You have the option to save the report with a new name by using the **Save As** option on the Report Builder menu.  
   
 ## External Report Items  
- Your report might include items such as shared data sources, external images, and subreports that are stored separately from the report. Because the items are stored separately is possible that they can be moved to a different location on the report server or deleted. If this happens, your report could fail to preview. You can either update the report to indicate the updated location of the item or if the item was deleted, replace it with an existing item, or remove the reference to the item it from the report.  
+ Your report might include items such as external images that are stored separately from the report. Because the items are stored separately it is possible that they can be moved to a different location or be deleted. If this happens, your report could fail to preview. You can either update the report to indicate the updated location of the item or if the item was deleted, replace it with an existing item, or remove the reference to the item it from the report.  
   
- If a subreport used by your report is changed after your edit session was created, the report will not render in preview. To successfully preview the report, you should save the report or click **Refresh** to get fresh data.  
-  
-## See Also  
- [Report Datasets &#40;SSRS&#41;](../../reporting-services/report-data/report-datasets-ssrs.md)   
- [Formatting Report Items &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/formatting-report-items-report-builder-and-ssrs.md)   
- [Tables, Matrices, and Lists in Power BI Report Builder](report-builder-tables-matrices-lists.md)   
- [Charts &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/charts-report-builder-and-ssrs.md)   
- [Saving Reports &#40;Report Builder&#41;](../../reporting-services/report-builder/saving-reports-report-builder.md)  
-  
+
   
