@@ -62,6 +62,6 @@ Watch Will use Power BI Desktop to [add static images to a report](guided-learni
 ## Next steps
 [Add a hyperlink to a text box](service-add-hyperlink-to-text-box.md)
 
-[Basic concepts for Power BI service consumers](consumer/end-user-basic-concepts.md)
+[Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
