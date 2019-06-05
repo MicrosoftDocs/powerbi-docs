@@ -63,7 +63,7 @@ In the following image, the **Rows** section contains *Sales stage* and *Opportu
 
 ![Filters card showing which rows are chosen](media/desktop-matrix-visual/power-bi-rows-matrix.png)
 
-![Screenshot of the Visuals and Fields panes with an arrow pointing at the Rows well.](media/desktop-matrix-visual/matrix-visual_4.png)
+When the visual has grouping created in the **Rows** section, the visual itself displays the *drill* and *expand* icons in the top-left corner of the visual.
 
 ![matrix with drill controls outlined](media/desktop-matrix-visual/power-bi-matrix-drilldown.png)
 
