@@ -37,9 +37,11 @@ To find items using device search:
 
 Device search, powered by Siri will also include suggestion of the frequent actions you are doing in Power BI app. Siri suggestion will be shown the search and lock screen.
 
->- [!NOTE]
->- To disable device search and Siri suggestion, go to device settings->Power BI settings->Siri & Search, 
->- and disable the Siri & suggestions setting.
+>[!NOTE]
+>
+>To disable device search and Siri suggestion, go to device settings->Power BI settings->Siri & Search,
+>and disable the Siri & suggestions setting.
+>
 
 ### Next steps
 Your feedback will help us decide what to implement in the future, so don’t forget to vote for other features that you would like to see in Power BI mobile apps. 
