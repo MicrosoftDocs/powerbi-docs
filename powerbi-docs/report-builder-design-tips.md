@@ -12,7 +12,7 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Report design tips in Power BI Report Builder
-  Use the following tips to help design your Report Builder paginated reports.  
+  Use the following tips to help design your paginated reports.  
   
    
   
@@ -20,11 +20,9 @@ ms.author: maggies
   
 -   A well-designed report conveys information that leads to action. Identify the questions that the report helps to answer. Keep those questions in mind as you design the report.  
   
--   To design effective data visualizations, think about how to display information that is easy for the report user to understand. Choose a data region that is a good match for the data that you want to visualize. For example, a chart effectively conveys summary and aggregated information better than a table that spans many pages of detailed information. You can visualize data from a dataset in any data region, which includes charts, maps, indicators, sparklines, databars, and tabular data in various grid layouts based on a tablix.  
+-   To design effective data visualizations, think about how to display information that is easy for the report user to understand. Choose a data region that is a good match for the data that you want to visualize. For example, a chart effectively conveys summary and aggregated information better than a table that spans many pages of detailed information. You can visualize data from a dataset in any data region, which includes charts, maps, indicators, sparklines, databars, and tabular data in various grid layouts based on a tablix. 
   
 -   If you plan to deliver the report in a specific export format, test the export format early in your design. Feature support varies based on the renderer that you choose.  
-  
--   If you plan to deliver the report as a subscription, test the subscription early in your design. Parameter support varies based on the subscription that you create.  
   
 -   When you build complex layouts, build the layout in stages. You can use rectangles as containers to organize report items. You can build data regions directly on the design surface to maximize your working area, and then, as you complete each one, drag it to the rectangle container. By using rectangles as containers, you can position all its contents in one step. Rectangles also help control the way report items render on each page.  
   
@@ -41,12 +39,6 @@ ms.author: maggies
     1.  **Data sources.** If you do not want to use an actual server or database due to security reasons, use an alias that indicates to the user what the source of data is.  
   
     2.  **Datasets.** Use a name that indicates which data source it is based on.  
-  
-    3.  **Data regions.** Indicate the type of data region and what data it displays. Data region names are useful in the following scenarios:  
-
-         - **Data region as a data feed.** With appropriate permissions, a report reader can create an ATOM data feed from a data region.
-  
--   Use underscores instead of spaces in report names. If you download a report from a Reporting Services web portal, spaces are replaced by underscores. If you use the download feature to save reports locally, and then include them in SQL Server Data Tools (SSDT), using underscores helps to keep report dependencies for subreports and drillthrough links accurate.  
   
 ##  <a name="Data"></a> Working with Data  
   
@@ -110,7 +102,7 @@ ms.author: maggies
   
 ###  <a name="Expressions"></a> Working with Expressions  
   
--   Understand simple and complex expression formats. You can type simple expression format directly into text boxes, properties in the Property pane, or in locations in dialog boxes that accept an expression. For more information, see [Expressions in Report Builder](report-builder-expressions.md).  
+-   Understand simple and complex expression formats. You can type simple expression format directly into text boxes, properties in the Property pane, or in locations in dialog boxes that accept an expression.
   
 -   When you create an expression, it helps to create each part independently and verify its value. You can then combine all the parts into a final expression. A useful technique is to add a text box in a matrix cell, display each part of the expression, and set conditional visibility on the text box. To control the border style and color when the text box is hidden, first place the text box in a rectangle, and then set the border style and color of the rectangle to match the matrix.  
   
@@ -146,8 +138,8 @@ ms.author: maggies
   
     4.  In column headers, change the text box property WritingMode to use vertical text.  
   
- The combination of this behavior, the width and height properties of report items, the size of the report body, the page height and page width definition, the margin settings of the parent report, and the renderer-specific support for paging all combine to determine what report items fit together on a rendered page. For more information, see [Pagination in Reporting Services &#40;Report Builder  and SSRS&#41;](../../reporting-services/report-design/pagination-in-reporting-services-report-builder-and-ssrs.md).  
-  
+ The combination of this behavior, the width and height properties of report items, the size of the report body, the page height and page width definition, the margin settings of the parent report, and the renderer-specific support for paging all combine to determine what report items fit together on a rendered page. 
+ 
 ## See Also  
  [Power BI Report Builder](report-builder-in-power-bi.md)   
  [Report Builder Tutorials](../../reporting-services/report-builder-tutorials.md)  
