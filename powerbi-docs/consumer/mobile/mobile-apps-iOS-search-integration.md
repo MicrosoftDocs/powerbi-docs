@@ -1,5 +1,5 @@
 ---
-title: Device search integration in iOS devices
+title: iOS device search integration
 description: Use device search (spotlight) to find and access the content you need
 author: michalfo
 manager: mshenhav
