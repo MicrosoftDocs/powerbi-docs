@@ -20,13 +20,15 @@ You can search your item using device level search (spotlight) to find what you 
 To find items using device search:
 1. Swipe down from the middle of the ‘Home’ screen to get into the device search
 2. Tap the ‘Search‘ field and enter a word relevant for the item you’re looking for
+  
    The search results will include Power BI 
+
     * Dashboards
     * Reports
     * Apps
     * Workspaces
     * Items shared by the contact you search for
-    
+
 ![](./media/mobile-apps-iOS-siri-and-search/power-bi-spotlight-search.png)
 
  3. Once you find the item you want, tap on it and the Power BI app land you on the item you wanted. 
