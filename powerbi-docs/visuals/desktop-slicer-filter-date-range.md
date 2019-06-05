@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/03/2019
+ms.date: 06/05/2019
 ms.author: mihart
 LocalizationGroup: Create reports
 ---
@@ -64,13 +64,13 @@ The third setting lets you pick the date measurement. You have the following cho
 
 * Years (Calendar)
 
-If you select *Months* from that list, and enter **2** in the middle setting, this is what will happen:
+If you select **Months** from that list, and enter *2* in the middle setting, this is what will happen:
 
 * if today is July 20th
 
-    * the data included in visuals constrained by the slicer will show data for the previous two months
+* the data included in visuals constrained by the slicer will show data for the previous two months
 
-        * starting on May 20th and going through July 20th (today's date)
+* starting on May 20th and going through July 20th (today's date)
 
 In comparison, if you selected *Months (Calendar)*, the visuals constrained would show data from May 1st through June 30th (the last two complete calendar months).
 
@@ -80,7 +80,7 @@ You can also create a relative date range filter for your report page or your en
 
 ![Screenshot of the OrderDate field being gragged into the page level filters well.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-06.png)
 
-Once there, you can change the relative date range. It's a similar process to how you can customized the **relative date slicer**. Select **Relative date filtering** from the **Filter Type** drop-down.
+Once there, you can change the relative date range. It's similar to how you can customize the **relative date slicer**. Select **Relative date filtering** from the **Filter Type** drop-down.
 
 ![Screenshot showing the Filter Type drop-down and the mouse pointer on Relative Date filtering.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-07.png)
 
@@ -94,6 +94,6 @@ The following limitations and considerations currently apply to the **relative d
 
 * Data models in **Power BI** don't include time zone info. The models can store times, but there's no indication of the time zone they're in.
 
-* The slicer and filter are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you'll both see the same data. Unless you are in the UTC time zone, you **must** account for the time offset that you ill experience. So will your colleague.
+* The slicer and filter are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you'll both see the same data. Unless you are in the UTC time zone, you and your colleague must account for the time offset you’ll experience.
 
 * You can convert data captured in a local time zone to UTC using the **Query Editor**.

@@ -8,24 +8,24 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/03/2019
+ms.date: 06/05/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ---
 
 # Reports in Power BI
 
-## What is a Power BI report?
-
 A Power BI report is a multi-perspective view into a dataset, with visuals that represent different findings and insights from that dataset.  A report can have a single visual or pages full of visuals. Depending on your job role, you may be someone who *designs* reports. You also may be someone who *consumes* or uses reports.
 
 ![Screenshot of a report page.](./media/end-user-reports/power-bi-report.png)
 
-This report has six pages (or tabs) and you're currently viewing the **Sentiment** page. On this page are five different visuals and a page title. If you're new to Power BI, you can get a good foundation by reading [Basic concepts for Power BI service consumers](end-user-basic-concepts.md). Reports are available for viewing, sharing, and annotating on mobile devices. For more info, see [Explore reports in the Power BI mobile apps](mobile/mobile-reports-in-the-mobile-apps.md).
+This report has four pages (or tabs) and you're currently viewing the **Sentiment** page. On this page are five different visuals and a page title.
+
+If you're new to Power BI, you can get a good foundation by reading [Basic concepts for Power BI service consumers](end-user-basic-concepts.md). Reports are available for viewing, sharing, and annotating on mobile devices. For more info, see [Explore reports in the Power BI mobile apps](mobile/mobile-reports-in-the-mobile-apps.md).
 
 ## Advantages of reports
 
-Power BI bases a report on a single dataset. Report *designers* create the visuals in a report and represent a nugget of information. And the visuals aren't static. You can interact with the visuals and filters as you dig into the data to discover insights and look for answers. Like a dashboard, but more-so, a report is highly interactive and highly customizable. The visuals update as the underlying data changes.
+Power BI bases a report on a single dataset. Report *designers* create the visuals in a report that represent a nugget of information. The visuals aren't static.  They update as the underlying data changes.You can interact with the visuals and filters as you dig into the data to discover insights and look for answers. Like a dashboard, a report is highly interactive and highly customizable.
 
 ### Safely interact with content
 
@@ -49,15 +49,17 @@ That doesn't mean you can't save your changes. You can, but those changes only a
 | Filtering |Can't filter or slice |Many different ways to filter, highlight, and slice |
 | Set alerts |Can create alerts to email you when the dashboard meets certain conditions |No |
 | Feature |Can set one dashboard as your featured dashboard |Can't create a featured report |
-| Can see underlying dataset tables and fields |No. Can export data but can't see the dataset tables and fields in the dashboard itself. |Yes. Can see dataset tables and fields and values that you have permissions to see. |
-| Customization |No  |Can filter, export, view related content, add bookmarks, generate QR codes, analyze in Excel, and more.   |
+| Can see underlying dataset tables and fields |No. Can export data but can't see the dataset tables and fields in the dashboard itself |Yes. Can see dataset tables and fields and values that you have permissions to see |
+| Customization |No  |Can filter, export, view related content, add bookmarks, generate QR codes, analyze in Excel, and more |
 
 <!--| Available in Power BI Desktop |No |Yes, can create and view reports in Desktop |
 | Pinning |Can pin existing visuals (tiles) only from current dashboard to your other dashboards |Can pin visuals (as tiles) to any of your dashboards. Can pin entire report pages to any of your dashboards. | -->
 
 ## Report designers and report consumers
 
-Depending on your role, you may be a *designer*, someone who creates reports for your own use or to share with colleagues. You'll want to learn how to create and share reports. Or, you may be a *consumer* someone who receives reports from others. You'll want to learn how to understand and interact with the reports. If you're a report *consumer*, these links are for you:
+Depending on your role, you may be a *designer*, someone who creates reports for your own use or to share with colleagues. You'll want to learn how to create and share reports.
+
+Or you may be a *consumer*, someone who receives reports from others. You'll want to learn how to understand and interact with the reports. If you're a report *consumer*, these links are for you:
 
 * Start with a [tour of Power BI service](end-user-basic-concepts.md) so you know where to find reports and report tools.
 * Learn how to [open a report](end-user-report-open.md) and all the interaction available in [Reading view](end-user-reading-view.md).
@@ -66,7 +68,7 @@ Depending on your role, you may be a *designer*, someone who creates reports for
 <!--* Don't need the report any more? You can [remove it](../service-delete.md).-->
 
 > [!TIP]
-> If you didn’t find what you’re looking for here, use the Table of Contents to the left to browse all *report* topics.
+> If you didn’t find what you’re looking for here, use the Table of Contents to the left to browse all *Report* articles.
 
 ## Next steps
 

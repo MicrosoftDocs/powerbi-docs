@@ -1,40 +1,40 @@
 ---
-title: Use Shape Maps in Power BI Desktop (Preview)
-description: Create relative comparisons to regions using shape maps in Power BI Desktop
+title: Use Shape maps in Power BI Desktop (Preview)
+description: Create relative comparisons to regions using Shape maps in Power BI Desktop
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/03/2019
+ms.date: 06/05/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
 ---
 
-# Shape Maps in Power BI Desktop (Preview)
+# Shape maps in Power BI Desktop (Preview)
 
-Create a **Shape Map** visual to compare regions on a map using color. Unlike the **Map** visual, **Shape Map** can't show precise geographical locations of data points on a map. Instead, its main purpose is to show relative comparisons of regions on a map by coloring them differently.
+Create a **Shape map** visual to compare regions on a map using color. Unlike the **Map** visual, **Shape map** can't show precise geographical locations of data points on a map. Instead, its main purpose is to show relative comparisons of regions on a map by coloring them differently.
 
-Power BI bases **Shape Map** visuals on ESRI/TopoJSON maps, which have the compelling ability to use custom maps that you can create. Examples of custom maps are: geographical, seating arrangements, floor plans, and others. The ability to use custom maps isn't available in this Preview release of **Shape Map**.
+Power BI bases **Shape map** visuals on ESRI/TopoJSON maps, which have the compelling ability to use custom maps that you can create. Examples of custom maps are: geographical, seating arrangements, floor plans, and others. The ability to use custom maps isn't available in this Preview release of **Shape map**.
 
-## Creating Shape Maps
+## Create Shape maps
 
-You can test the **Shape Map** control with the maps that are shipping with this Preview release. You can also use your own custom map as long as it meets the requirements outlined in the [**Use Custom Maps**](#use-custom-maps) section.
+You can test the **Shape map** control with the maps that are shipping with this Preview release. You can also use your own custom map as long as it meets the requirements outlined in the [**Use Custom Maps**](#use-custom-maps) section.
 
-The **Shape Map** visual is one of the Preview Features, and you must enable it in Power BI Desktop. To enable **Shape Map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape Map Visual** checkbox. You'll need to restart Power BI Desktop after you make the selection.
+The **Shape map** visual is one of the Preview Features, and you must enable it in Power BI Desktop. To enable **Shape map**, select **File > Options and Settings > Options > Preview features**, then select the **Shape map visual** checkbox. You'll need to restart Power BI Desktop after you make the selection.
 
 ![Screenshot of the Options dialog with Preview features selected and Shape map visual selected.](media/desktop-shape-map/shape-map_1a.png)
 
-Once **Shape Map** is enabled, click the **Shape Map** control from the **Visualizations** pane.
+Once **Shape map** is enabled, select the **Shape map** control from the **Visualizations** pane.
 
-![Screenshot of the Visualizations pane with an arrow pointing to the Shape Map icon.](media/desktop-shape-map/shape-map_2.png)
+![Screenshot of the Visualizations pane with an arrow pointing to the Shape map icon.](media/desktop-shape-map/shape-map_2.png)
 
-Power BI Desktop creates an empty **Shape Map** visual design canvas.
+Power BI Desktop creates an empty **Shape map** visual design canvas.
 
-![Screenshot of an an empty Shape Map visual design canvas.](media/desktop-shape-map/shape-map_3.png)
+![Screenshot of an an empty Shape map visual design canvas.](media/desktop-shape-map/shape-map_3.png)
 
-Do the following to create a **Shape Map**:
+Do the following to create a **Shape map**:
 
 1. In the **Fields** pane, drag a data field that has the region names (or abbreviations) into the **Location** well.
 
@@ -43,14 +43,14 @@ Do the following to create a **Shape Map**:
    ![Screenshot of the canvas and the Visualizations pane with arrows pointing to the Fields icon, ahd Location well, and the Color saturation well.](media/desktop-shape-map/shape-map_3a.png)
 
    > [!NOTE]
-   > See the [**Get Map Data**](#get-map-data) section below for information on how to quickly get map data to test **Shape Map**.
+   > See the [**Get map data**](#get-map-data) section below for information on how to quickly get map data to test **Shape map**.
 
 1. In the **Format** settings pane, expand **Shape**, and select from the **Standard Maps** drop-down to show your data. At this point, the rendering appears:
 
    ![Screenshot of the canvas and the Visualizations pane with arrows pointing to the Format icon, the Shape drop-down, and the Standard Maps drop-down. Also, the map rendering appears.](media/desktop-shape-map/shape-map_3b.png)
 
    > [!NOTE]
-   > In the [**Region Keys**](#region-keys) section at the end of this article is a collection of tables that have map regions keys you can use to test the **Shape Map** visual.
+   > In the [**Region keys**](#region-keys) section at the end of this article is a collection of tables that have map regions keys you can use to test the **Shape map** visual.
 
 1. You can then modify the map projection, zooming settings, and the colors of data points from the **Format** settings pane. For example, you can change colors, set maximums and minimums, and so on.
 
@@ -60,7 +60,7 @@ Do the following to create a **Shape Map**:
 
 ## Use custom maps
 
-You can use custom maps with **Shape Map** as long as they are in the **TopoJSON** format. If your map is in another format, you can use online tools such as [**Map Shaper**](http://mapshaper.org/) to convert your *shapefiles* or your *GeoJSON* maps into the **TopoJSON** format.
+You can use custom maps with **Shape map** as long as they are in the **TopoJSON** format. If your map is in another format, you can use online tools such as [**Map Shaper**](http://mapshaper.org/) to convert your *shapefiles* or your *GeoJSON* maps into the **TopoJSON** format.
 
 To use your **TopoJSON** map file:
 
@@ -74,29 +74,29 @@ To use your **TopoJSON** map file:
 
 1. Select **+ Add Map**.
 
-## Sample Custom Map
+## Sample custom map
 
 The *Offices of the United States Attorneys* release an annual fiscal report on their litigation and caseload data. You can find all of their reports on the [Offices of the United States Attorneys](https://www.justice.gov/usao/resources/annual-statistical-reports) website.
 
-Since you can divide states into multiple districts, we have to use a custom shape map. By importing the **TopoJSON** map of the U.S. judicial districts into **Power BI Desktop**, we can then visualize the annual fiscal district attorney data. The image below shows an example of this map.
+Since you can divide states into multiple districts, we have to use a custom Shape map. By importing the **TopoJSON** map of the U.S. judicial districts into **Power BI Desktop**, we can then visualize the annual fiscal district attorney data. The image below shows an example of this map.
 
 ![Screenshot of a custom map of the United States with borders that represent district boundaries.](media/desktop-shape-map/shape-map_7a.png)
 
-You can do interesting things with the individual state maps as well, and show more detail based on the districts it contains.
+You can do interesting things with the individual state maps as well, and show more detail based on the districts they contains.
 
 ![Screenshot of a custom map of the state of Texas with borders that represent district boundaries.](media/desktop-shape-map/shape-map_7b.png)
 
 If you’d like to experiment with this dataset and visualization, you can download the original PBIX file used to generate this report at the following link:
 
-* [Custom shape map demo .PBIX file](http://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
+* [Custom Shape map demo `.pbix` file](http://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
 ## Get map data
 
-To quickly get data into a model so you can test **Shape Map**, copy one of the tables at the end of this article, then select **Enter Data** from the **Home** ribbon.
+To quickly get data into a model so you can test **Shape map**, copy one of the tables at the end of this article, then select **Enter Data** from the **Home** ribbon.
 
 ![Screenshot of the Power BI menu bar with an arrow pointed at the Enter Data option.](media/desktop-shape-map/shape-map_4.png)
 
-If your data has multiple columns, you'll need to use an editor like Excel to paste the data, then copy each data column separately. You can then paste the data into Power BI Desktop. The top row is automatically identified as a header.
+If your data has multiple columns, you'll need to use an editor like Excel to paste the data, then copy each data column separately. You can then copy and paste the data from Excel into Power BI Desktop. The top row is automatically identified as a header.
 
 ![Screenshot of the Create Table dialog.](media/desktop-shape-map/shape-map_5.png)
 
@@ -109,23 +109,23 @@ You can enter a new column simply by typing a new column name (in the blank colu
 
 ## Preview considerations and requirements
 
-There are a few considerations and requirements for this Preview release of **Shape Map**:
+There are a few considerations and requirements for this Preview release of **Shape map**:
 
-* The **Shape Map** visual is one of the Preview Features, and you must enable it in Power BI Desktop. To enable **Shape Map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape Map Visual** checkbox.
+* The **Shape map** visual is one of the Preview Features, and you must enable it in Power BI Desktop. To enable **Shape map**, select **File > Options and Settings > Options > Preview features**, then select the **Shape map visual** checkbox.
 
 * Currently, you must also have the **Color saturation** well set in order for the **Legend** classification to work properly.
 
-* The final release version of **Shape Map** will have a user interface that shows the map keys of the currently selected map. There's no date set for final release. **Shape Map** is still one of the Preview Features. In this Preview release, you can reference the map region keys in the tables. You can find them in the next section.
+* The final release version of **Shape map** will have a user interface that shows the map keys of the currently selected map. There's no date set for final release. **Shape map** is still one of the Preview Features. In this Preview release, you can reference the map region keys in the tables. You can find them in the next section.
 
-* The **Shape Map** visual will plot up to a maximum of 1,000 data points.
+* The **Shape map** visual will plot up to a maximum of 1,000 data points.
 
 ## Region keys
 
-Use the following **Region Keys** in this Preview release to test **Shape Map**.
+Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Australia: States
 
-| `id` | `abbr` | `iso` | `name` | `postal` |
+| id | abbr | iso | name | postal |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -138,7 +138,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Austria: States
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| id | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -152,7 +152,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Brazil: States
 
-| `id` |
+| id |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -188,7 +188,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Canada: Provinces
 
-| `id` | `iso` | `name` | `postal` |
+| id | iso | name | postal |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -206,7 +206,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### France: Regions
 
-| `id` | `name` | `name-en` |
+| id | name | name-en |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
@@ -233,7 +233,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Germany: States
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| id | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -254,7 +254,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Ireland: Counties
 
-| `id` |
+| id |
 | --- |
 | Wicklow |
 | Wexford |
@@ -285,7 +285,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Italy: Regions
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| id | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -310,7 +310,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Mexico: States
 
-| `id` | `abreviatura` | `iso` | `name` | `name-en` | `postal` |
+| id | abreviatura | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -347,7 +347,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Netherlands: Provinces
 
-| `id` | `iso` | `name` | `name-en` |
+| id | iso | name | name-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -364,7 +364,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### UK: Countries
 
-| `id` | `iso` | `name` |
+| id | iso | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Scotland |
@@ -373,7 +373,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### USA: States
 
-| `id` | `name` | `postal` |
+| id | name | postal |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
