@@ -1,6 +1,6 @@
 ---
 title: Siri shortcuts integration
-description: Create and use Siri shortcut to find and access the content you need
+description: How to use Siri shortcuts to directly access the Power BI content you need.
 author: michalfo
 manager: mshenhav
 ms.reviewer: ''
@@ -12,29 +12,31 @@ ms.date: 06/03/2019
 ms.author: michalfo
 
 ---
-# Siri integration with Power BI Mobile iOS App 
-### Use Siri shortcuts to find and access the content you need
+# Using Siri shortcuts in Power BI Mobile iOS App 
 
-To get easy and quick access to your frequently used reports or dashboards, use the Siri shortcut integration. Create a shortcut to your item and use it when you want to view it.
+### Use Siri shortcuts to directly access the Power BI content you need.
 
+To get easy and quick access to your frequently used reports or dashboards, use the Siri shortcut integration. Create a shortcut to your item. Anf then you can ask Siri to launch it when even you need to have a look on the data.
 
 ## Create Siri shortcut for a report or dashboard
-1. There are three ways to create Siri shortcut to your reports and dashboards.
-    1. A banner with a ***'Add to Siri’*** option will be added to your frequently used reports and dashboards. Press the button to open the 'Add to Siri' page
+
+There are three ways to create Siri shortcut to your reports and dashboards.
+
+    1. A banner with a ***'Add to Siri’*** option will be added to your frequently used reports and dashboards. Tapp the action to open the 'Add to Siri' page.
     
-    2. Use the 'Siri shortcut' button from the ‘Actions’ menu
+    2. Use the 'Siri shortcut' action from the {...} Report/Dashboard menu.
     
     3. Use the 'Suggested shortcuts' in the device settings (Device Setting -> Siri & Search), you can add a shortcut to the item in the suggestion list bu pressing th '+' button
      
      ![](./media/mobile-apps-iOS-siri-and-search/power-bi-siri-create-shortcut.png)
 
-2. All the options above will open the 'Add to Siri' page with a suggested phrase to record. You can use the suggested phrase or any phrase you wish for
+All the options above will open the 'Add to Siri' page. In this page you will need to record a phrase, that you will be used later to open the report or dashboard. The app offers you a suggested phrase but you can use any phrase as well.
     
     ![](./media/mobile-apps-iOS-siri-and-search/power-bi-siri-add-page.png)
 
-
 ## Use Siri shortcut 
-Every time you’d like to access the dashboard or the report you created a shortcut for, open Siri and say your phrase. Power BI will automatically open with the item you asked for in focus.
+
+Every time you’d like to access the dashboard or the report you created a shortcut for, just ask Siri by using the phrase recorded in the shortcut. Siri will launch Power BI and land on the report or dashboard in the shortcut.
 
   ![](./media/mobile-apps-iOS-siri-and-search/power-bi-siri-open.png)
   
