@@ -11,11 +11,11 @@ ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
 ---
-# Report Builder in SQL Server
+# Power BI Report Builder
 
- Report Builder is a tool for authoring paginated reports, for business users who prefer to work in a stand-alone environment instead of using Report Designer in Visual Studio / SSDT.  When you design a paginated report, you're creating a report definition that specifies what data to retrieve, where to get it, and how how to display it. When you run the report, the report processor takes the report definition you have specified, retrieves the data, and combines it with the report layout to generate the report. You can preview your report in Report Builder. Then publish your report to a Reporting Services report server in native mode or in SharePoint integrated mode (2016 and earlier). 
+ Report Builder is a tool for authoring paginated reports.  When you design a paginated report, you're creating a report definition that specifies what data to retrieve, where to get it, and how how to display it. When you run the report, the report processor takes the report definition you have specified, retrieves the data, and combines it with the report layout to generate the report. You can preview your report in Report Builder. Then publish your report to the Power BI service.
 
-You can also publish a paginated report to the Power BI service. Read more about [paginated reports in Power BI Premium](https://docs.microsoft.com/power-bi/paginated-reports-report-builder-power-bi) (Preview).
+You can also publish a paginated report to the Power BI service. Read more about [paginated reports in Power BI Premium](https://docs.microsoft.com/power-bi/paginated-reports-report-builder-power-bi).
   
  ![rs_GettingStartedReport](../../reporting-services/report-builder/media/rs-gettingstartedreport.png "rs_GettingStartedReport")  
   
@@ -33,11 +33,12 @@ You can also publish a paginated report to the Power BI service. Read more about
   
 -   **Create paginated reports with table, matrix, chart, and free-form report layouts.** Create table reports for column-based data, matrix reports (like cross-tab or PivotTable reports) for summarized data, chart reports for graphical data, and free-form reports for anything else. Reports can embed other reports and charts, together with lists, graphics, and controls for dynamic Web-based applications.  
   
--   **Report from a variety of data sources.** Build reports using data from any data source type that has a Microsoft .NET Framework-managed data provider, OLE DB provider, or ODBC data source. You can create reports that use relational and multidimensional data from SQL Server and Analysis Services, Oracle, Hyperion, and other databases. You can use an XML data processing extension to retrieve data from any XML data source. You can use table-valued functions to design custom data sources.  
+-   **Report from a variety of data sources.** You can create reports that use relational and multidimensional data from SQL Server and Analysis Services, Oracle, Power BI datasets and other databases.  
   
 -   **Modify existing reports.** By using Report Builder, you can customize and update reports that were created in SQL Server Data Tools (SSDT)Report Designer.  
   
 -   **Modify your data** by filtering, grouping, and sorting data, or by adding formulas or expressions.  
+
 -   **Add charts, gauges, sparklines, and indicators** to summarize data in a visual format, and present large volumes of aggregated information at a glance.  
   
 -   **Add interactive features** such as document maps, show/hide buttons, and drillthrough links to subreports and drillthrough reports. Use parameters and filters to filter data for customized views.  
@@ -48,33 +49,6 @@ You can also publish a paginated report to the Power BI service. Read more about
   
 -   **Save the definition of the report** to your computer or to the report server, where you can manage it and share it with others.  
   
--   **Choose a presentation format** when you open the report, or after you open the report. You can select Web-oriented, page-oriented, and desktop application formats. Formats include HTML, MHTML, PDF, XML, CSV, TIFF, Word, and Excel.  
+-   **Choose a presentation format** when you open the report, or after you open the report. You can select Web-oriented, page-oriented, and desktop application formats. Formats include MHTML, PDF, XML, CSV, Word, and Excel.  
   
--   **Set up subscriptions.** After you publish the report to the report server or a report server in SharePoint integrated mode, you can configure your report to run at a specific time, create a report history, and set up e-mail subscriptions.  
-  
--   **Generate data feeds** from your report by using the Reporting Services Atom rendering extension.  
-  
-> [!NOTE]  
->  Published reports are managed on a report server or a report server in SharePoint integrated mode by a report server administrator. Report server administrators can define security, set properties, and schedule operations such as report history and e-mail report delivery. They can create shared schedules and shared data sources and make them available for general use. Administrators also manage all of the report server folders. The ability to perform management tasks depends on user permissions.  
-  
-## See Also  
-  [Start Report Builder](../../reporting-services/report-builder/start-report-builder.md)  
-  
-  [Install Report Builder](../../reporting-services/install-windows/install-report-builder.md)
-
-  [What's New in SQL Server Reporting Services and Report Builder](~/reporting-services/what-s-new-in-sql-server-reporting-services-ssrs.md)  
-  Describes the new features in this version of Reporting Services and Report Builder.   
-  [Tutorial: Creating a Quick Chart Report Offline](../../reporting-services/report-builder/tutorial-create-a-quick-chart-report-offline-report-builder.md)  
- Introduces Report Builder and the wizards available to help you create reports. The tutorial provides a set of data for you to work with so you do not need to connect to a data source to get started.  
-  
- [Planning a report in Power BI Report Builder](report-builder-planning-report.md)  
- Provides information on what you should consider before you start to build your report.  
-  
- [Report authoring concepts in Power BI Report Builder](report-builder-authoring-concepts.md)  
- Defines key concepts used in throughout Report Builder documentation.  
-  
- [Report Design View in Power BI Report Builder](paginated-reports-report-design-view.md)  
- Explains the different panes and regions of report design view.  
-
- [Keyboard Shortcuts &#40;Report Builder&#41;](../../reporting-services/report-builder/keyboard-shortcuts-report-builder.md)  
- Outlines the shortcut keys available for navigating and designing reports in Report Builder.  
+-   **Set up subscriptions.** After you publish the report to the Power BI service, you can configure your report to run at a specific time and send as an e-mail subscriptions.  
