@@ -21,11 +21,11 @@ Register to hear from Power BI experts and participate in live Q&A sessions.
 
 **Microsoft Runs on Power BI: Using Power BI in Modern Treasury**
 <br>by Pankaj Gudimella and Guru Kirthigavasan
-<br>[Register now](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
+<br>[Register to watch on June 25th, 10:00 AM–11:00 AM PST](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Power BI: How to Get Insights from Your Workday HR Data**
 <br>by Iman Eftekhari, Julia Paton from Agile Analytics and Shahram Karimi from QBE Insurance
-<br>[Register now](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
+<br>[Register to watch on June 27th, 1:30 PM–2:30 PM PST](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
 
 >[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
