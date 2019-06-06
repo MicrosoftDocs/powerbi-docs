@@ -1,6 +1,6 @@
 ---
 title: "Expressions in Power BI Report Builder"
-ms.date: 09/06/2016
+ms.date: 06/05/2019
 ms.prod: reporting-services
 ms.prod_service: "reporting-services-native"
 ms.technology: report-design
@@ -20,7 +20,7 @@ ms.author: maggies
   
  As you design a report, many expressions for report items are set for you. For example, when you drag a field from the data pane to a table cell on the report design surface, the text box value is set to a simple expression for the field. In the following figure, the Report Data pane displays the dataset fields ID, Name, SalesTerritory, Code, and Sales. Three fields have been added to the table: [Name], [Code], and [Sales]. The notation [Name] on the design surface represents the underlying expression `=Fields!Name.Value`.  
   
- ![rs_DataDesignandPreview](../../reporting-services/report-data/media/rs-datadesignandpreview.gif "rs_DataDesignandPreview")  
+![Report Builder Design View](media/report-builder-expressions/report-builder-data-design-preview.png)
   
  When you preview the report, the report processor combines the table data region with the actual data from the data connection and displays a row in the table for every row in the result set.  
   
@@ -39,12 +39,12 @@ ms.author: maggies
   
  The following figure shows typical simple and complex expressions for both text boxes and placeholder text.  
   
- ![rs_ExpressionDefaultFormat](../../reporting-services/report-design/media/rs-expressiondefaultformat.gif "rs_ExpressionDefaultFormat")  
+![Report Builder expression default format](media/report-builder-expressions/report-builder-expression-default-format.png) 
   
  To display sample values instead of text for expressions, apply formatting to the text box or placeholder text. The following figure shows the report design surface toggled to show sample values:  
   
- ![rs_ExpressionSampleValuesFormat](../../reporting-services/report-design/media/rs-expressionsamplevaluesformat.gif "rs_ExpressionSampleValuesFormat")  
-  
+![Report Builder expression sample format](media/report-builder-expressions/report-builder-expression-sample-values-format.png)  
+
  For more information, see [Formatting Text and Placeholders &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/formatting-text-and-placeholders-report-builder-and-ssrs.md).  
   
 ## <a name="DisplayText"></a> Understanding Prefix Symbols in Simple Expressions  
