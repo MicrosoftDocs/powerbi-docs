@@ -1,6 +1,6 @@
 ---
-title: BYOK (Preview)
-description: BYOK (Preview).
+title: Bring your own encryption keys for Power BI (preview)
+description: Learn how to use your own encryption keys in Power BI Premium.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -8,82 +8,107 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/17/2019
+ms.date: 06/08/2019
 
 LocalizationGroup: Premium
 ---
 
-# BYOK (Preview)
+# Bring your own encryption keys for Power BI (preview)
 
-Power BI encrypts data *at rest* and *in process*. By default, Power BI uses Microsoft-managed keys to encrypt your data, but in Power BI Premium you can also use your own keys for data at rest. This approach is often described as *bring your own key* (BYOK).
+Power BI encrypts data _at-rest_ and _in process_. By default, Power BI uses Microsoft-managed keys to encrypt your data. In Power BI Premium you can also use your own keys for data at-rest that is imported into a dataset (see [Data source and storage considerations](#data-source-and-storage-considerations) for more information). This approach is often described as _bring your own key_ (BYOK).
 
-TODO: Do we keep calling this feature BYOK, b/c Azure uses the phrase ["custom keys"](/azure/storage/common/storage-service-encryption-customer-managed-keys); SQL seems to use BYOK more.
+## Why use BYOK?
 
-Why use your own key? BYOK gives you more flexibility, so that you can create, rotate, disable, and define access controls. BYOK also enables you to audit the encryption keys used to protect your data.
+BYOK makes it easier to meet compliance requirements that specify key arrangements with the cloud service provider (in this case Microsoft). With BYOK, you provide and control the encryption keys for your Power BI data at-rest at the application level. As a result, you can exercise control and revoke your organization's keys, should you decide to exit the service. By revoking the keys, the data is unreadable to the service.
 
-TODO: previous paragraph is from Azure docs. Might need an edit, e.g. "disable" if we don't allow that yet.
+In the next section you learn how to configure Azure Key Vault, which is where you store encryption keys for BYOK.
 
-## Encryption in Power BI
+## Data source and storage considerations
 
-In this section, we provide some basic information so you can understand the BYOK process. For detailed information about encryption in Power BI, see [Power BI data storage and movement](whitepaper-powerbi-security.md#data-storage-and-movement).
+To use BYOK, you must upload data to the Power BI service from a Power BI Desktop (PBIX) file. When you connect to data sources in Power BI Desktop, you must specify a storage mode of Import. You cannot use BYOK in the following scenarios:
 
-The following diagram shows the components of a PBIX file that is hosted in the Power BI service.
-
-![PBIX file components](media/service-encryption-byok/pbix-file-components.png)
-
-TODO: Query cache is in a different spot in the OneNote diagram, i.e. it's not in the blob.
-
-Data and metadata for the components are stored in two places: Azure SQL Database and Azure Blob storage. The following diagram shows the storage and encryption used by default for each component.
-
-![PBIX file component encryption](media/service-encryption-byok/encryption-approaches.png)
-
-1. Azure SQL database, using [Transparent Data Encryption](/azure/sql-database/transparent-data-encryption-azure-sql).
-
-2. Azure SQL database, using [Always Encrypted](/azure/sql-database/sql-database-always-encrypted-azure-key-vault). For on-premises data sources, there is also an encryption key stored on the computer where the on-premises data gateway runs.
-
-3. Azure storage blobs, using [Azure Storage Service Encryption for data at rest](/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fblobs%2ftoc.json).
-
-In this preview release, we support BYOK for the components in Azure Blob storage: datasets, PBIX and XLSX artifacts, and query result caches. As shown in the following diagram, we use [client side encryption](/azure/storage/common/storage-client-side-encryption) to enable BYOK.
-
-![Client side encryption](media/service-encryption-byok/client-side-encryption.png)
-
-In the next section you learn how to configure [Azure Key Vault](/azure/key-vault/key-vault-whatis), which is where you store encryption keys for BYOK.
+- DirectQuery
+- Analysis Services Live Connection
+- Excel workbooks (unless data is first imported into Power BI Desktop)
+- Push datasets
 
 ## Configure Azure Key Vault
 
-Azure Key Vault is a tool for securely storing and accessing secrets, like encryption keys. You can use an existing vault to store encryption keys, or you can create a new one specifically for use with Power BI. In either case, follow the configuration guidelines described in this section.
+Azure Key Vault is a tool for securely storing and accessing secrets, like encryption keys. You can use an existing key vault to store encryption keys, or you can create a new one specifically for use with Power BI.
 
-TODO: Get the specific details from the [SQL docs](https://docs.microsoft.com/en-us/azure/sql-database/transparent-data-encryption-byok-azure-sql?view=sql-server-2017#guidelines-for-configuring-tde-with-azure-key-vault) that are relevant to Power BI.
+The instructions in this section assume basic knowledge of Azure Key Vault. For more information, see [What is Azure Key Vault?](/azure/key-vault/key-vault-whatis). Configure your key vault in the following way:
+
+1. Add the Power BI service as a service principal for the key vault, with wrap and unwrap permissions.
+
+1. Create an RSA key with a 4096-bit length (or use an existing key of this type), with wrap and unwrap permissions.
+
+1. Recommended: Check that the key vault has the _soft delete_ option enabled.
+
+### Add the service principal
+
+1. In the Azure portal, in your key vault, under **Access policies** , select **Add New**.
+
+1. Under **Select principal** , search for and select Microsoft.Azure.AnalysisServices.
+
+1. Under **Key permissions** , select **Unwrap Key** and **Wrap Key**.
+
+    ![PBIX file components](media/service-encryption-byok/service-principal.png)
+
+1. Select **OK** , then **Save**.
+
+### Create an RSA key
+
+1. In your key vault, under **Keys** , select **Generate/Import**.
+
+1. Select a **Key Type** of RSA and an **RSA Key Size** of 4096.
+
+    ![PBIX file components](media/service-encryption-byok/create-rsa-key.png)
+
+1. Select **Create**.
+
+1. Under **Keys** , select the key you created.
+
+1. Select the GUID for the **Current Version** of the key.
+
+1. Check that **Wrap Key** and **Unwrap Key** are both selected. Copy the **Key Identifier** to use when you enable BYOK in Power BI.
+
+    ![PBIX file components](media/service-encryption-byok/key-properties.png)
+
+### Soft delete option
+
+We recommend that you enable [soft-delete](/azure/key-vault/key-vault-ovw-soft-delete) on your key vault, to protect from data loss in case of accidental key – or key vault – deletion. You must use [PowerShell to enable the "soft-delete" property](/azure/key-vault/key-vault-soft-delete-powershell) on the key vault, because this option is not available from the Azure Portal yet.
 
 With Azure Key Vault properly configured, you're ready to enable BYOK on your tenant.
 
 ## Enable BYOK on your tenant
 
-You enable BYOK at the tenant level, using an encryption key that you've created and stored in Azure Key Vault. You can use a single key or two keys that you rotate; only one key is active at a time for your tenant. By default, when you enable BYOK, it's used for all dedicated capacities in a tenant. You can control this behavior.
+You enable BYOK at the tenant level with PowerShell, by first introducing to your Power BI tenant the encryption keys you created and stored in Azure Key Vault. You then assign these keys per Premium capacity to be used as encryption keys for content in the capacity.
 
 ### Important considerations
 
 Before you enable BYOK, keep the following considerations in mind:
 
-- At this time, you cannot disable BYOK after you enable it. You can control how BYOK is used in your dedicated capacities, but you cannot turn it off.
+- The cmdlet you use to enable BYOK (`Add-PowerBIEncryptionKey`) accepts three parameters that affect encryption for current and future capacities:
 
-- You cannot move a workspace that uses BYOK from a dedicated capacity in Power BI Premium to shared capacity.
+  - `-Activate`: Indicates that this key will be used for all existing capacities in the tenant.
+
+  - `-Default`: Indicates that this key is now the default for the entire tenant. When you create a new capacity, the capacity inherits this key.
+
+  - `-DefaultAndActivate` (the default): Indicates that this key will be used for all existing capacities and any new capacities you create.
+
+- At this time, you cannot disable BYOK after you enable it. Depending on how you specify parameters for `Add-PowerBIEncryptionKey`, you can choose not to use BYOK for one or more of your capacities. However, you can't undo the introduction of keys to your tenant.
+
+- If you specify `-Default` or `-DefaultAndActivate`, all of the capacities created on this tenant from this point will be encrypted using the key you specify (or an updated default key). You cannot undo the default operation, so you lose the ability to create a premium capacity that doesn't use BYOK in your tenant.
+
+- You cannot _directly_ move a workspace that uses BYOK from a dedicated capacity in Power BI Premium to shared capacity. You must first move the workspace to a dedicated capacity that doesn't have BYOK enabled.
 
 ### Enable BYOK
 
 To enable BYOK, you must be a tenant administrator of the Power BI service, signed in using the `Connect-PowerBIServiceAccount` cmdlet. Then use `Add-PowerBIEncryptionKey` to enable BYOK, as shown in the following example:
 
-  ```powershell
-  Add-PowerBIEncryptionKey -Name 'Contoso Sales' -KeyVaultKeyUri 'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
-  ```
-
-This cmdlet also accepts `-Default` and `-Activate` parameters, which are enabled by default:
-
-- `-Activate`: Indicates to activate any inactivated capacities to use this key for encryption.
-
-- `-Default`: Indicates that this key is now the default for the entire tenant. When you create a new capacity, the capacity inherits this key.
-
-TODO: Need a better description of active/inactive.
+```powershell
+Add-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
+```
 
 ## Manage BYOK
 
@@ -91,28 +116,46 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
 
 - Use `Get-PowerBIEncryptionKey` to get the key that your tenant is currently using:
 
-  ```powershell
-  Get-PowerBIEncryptionKey
-  ```
+    ```powershell
+    Get-PowerBIEncryptionKey
+    ```
 
 - Use `Get-PowerBIWorkspaceEncryptionStatus` to see whether the datasets in a workspace are encrypted and whether their encryption status is in sync with the workspace:
 
-  ```powershell
-  Get-PowerBIWorkspaceEncryptionStatus -Name 'Contoso Sales'
-  ```
+    ```powershell
+    Get-PowerBIWorkspaceEncryptionStatus -Name'Contoso Sales'
+    ```
 
-  Note that encryption is enabled at the capacity level, but you get encryption status at the dataset level for the specified workspace.
+    Note that encryption is enabled at the capacity level, but you get encryption status at the dataset level for the specified workspace.
 
-- Use `Switch-PowerBIEncryptionKey` to switch (or *rotate*) the key currently used for encryption:
+- Use `Set-PowerBICapacityEncryptionKey` to update the encryption key for the Power BI capacity:
 
-  ```powershell
-  Switch-PowerBIEncryptionKey -Name 'Contoso Sales' -KeyVaultKeyUri 'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
-  ```
+    ```powershell
+    Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
+    ```
 
-## Next steps
+- `Use Switch-PowerBIEncryptionKey` to switch (or _rotate_) the key currently used for encryption. The cmdlet simply updates the `-KeyVaultKeyUri` for a key `-Name`:
 
-[Power BI data storage and movement](whitepaper-powerbi-security.md#data-storage-and-movement)
-[Azure Storage Service Encryption for data at rest](/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
-[Storage Service Encryption using customer-managed keys in Azure Key Vault](/azure/storage/common/storage-service-encryption-customer-managed-keys)
+    ```powershell
+    Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
+    ```
 
-TODO: Links OK, or swap out first Azure storage one with .NET link from above?
+## How BYOK works
+
+The following diagram shows the components of a PBIX file that is hosted in the Power BI service.
+
+![PBIX file components](media/service-encryption-byok/pbix-file-components.png)
+
+The service stores data and metadata for the components in two places: Azure SQL Database and Azure Blob storage. The following diagram shows the storage and encryption used by default for each component.
+
+![PBIX file component encryption](media/service-encryption-byok/encryption-approaches.png)
+
+1. Azure SQL database, using [Transparent Data Encryption](/azure/sql-database/transparent-data-encryption-azure-sql).
+
+1. Azure SQL database, using [Always Encrypted](/azure/sql-database/sql-database-always-encrypted-azure-key-vault). For on-premises data sources, there is also an encryption key stored on the computer where the on-premises data gateway runs.
+
+1. Azure storage blobs, using [Azure Storage Service Encryption for data at rest](/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fblobs%2ftoc.json).
+
+When you publish content to a Premium capacity, the Power BI service transforms the imported PBIX data model into an [Analysis Services backup file (.abf)](/sql/analysis-services/multidimensional-models/backup-and-restore-of-analysis-services-databases). The .abf file storage is part of the 100TB of storage provided with Premium, and the file resides on an Azure storage blob container dedicated to your capacity. By default, this container is encrypted with a Microsoft-managed key. With BYOK, Power BI uses Azure storage [client-side encryption](/azure/storage/common/storage-client-side-encryption) to replace the Microsoft-managed key with a customer-managed key.
+
+In this preview release, we support BYOK for datasets in Azure storage blobs.
