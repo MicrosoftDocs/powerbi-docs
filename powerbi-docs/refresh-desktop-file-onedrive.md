@@ -18,17 +18,17 @@ LocalizationGroup: Data refresh
 Importing files from OneDrive or SharePoint Online into the Power BI service is a great way to make sure your work in **Power BI Desktop** stays in sync with the Power BI service.
 
 ## Advantages of storing a Power BI Desktop file on OneDrive or SharePoint Online
-When you store a **Power BI Desktop** file on OneDrive or SharePoint Online, any data you’ve loaded into your file’s model is imported into the dataset. Any reports you’ve created in the file are loaded into **Reports** in the Power BI serviced. Let's say you make changes to your file on OneDrive or SharePoint Online. These changes can include adding new measures, changing column names, or editing visualizations. Once you save the file, those changes will be updated in the Power BI service too, usually within about an hour.
+When you store a **Power BI Desktop** file on OneDrive or SharePoint Online, any data you’ve loaded into your file’s model is imported into the dataset. Any reports you’ve created in the file are loaded into **Reports** in the Power BI service. Let's say you make changes to your file on OneDrive or SharePoint Online. These changes can include adding new measures, changing column names, or editing visualizations. Once you save the file, Power BI service syncs with those changes too, usually within about an hour.
 
-You can do a one-time, manual refresh right in Power BI Desktop by selecting **Refresh** on the Home ribbon. When you select **Refresh**, you refresh the file’s model with updated data from the original data source. This kind of refresh happens entirely from within the Power BI Desktop application itself. It's different from a manual or scheduled refresh in Power BI, and it’s important to understand the distinction.
+You can do a one-time, manual refresh right in **Power BI Desktop** by selecting **Refresh** on the Home ribbon. When you select **Refresh**, you refresh the file’s model with updated data from the original data source. This kind of refresh happens entirely from within the **Power BI Desktop** application itself. It's different from a manual or scheduled refresh in Power BI, and it’s important to understand the distinction.
 
 ![](media/refresh-desktop-file-onedrive/pbix-refresh.png)
 
-When you import your Power BI Desktop file from OneDrive or SharePoint Online, you load data and model information into a dataset in Power BI. You'll want to refresh data in the dataset in the Power BI service because that is what your reports are based on. The data sources are external. You'll want to manually refresh the dataset by using **Refresh** or set up a refresh schedule by using **Schedule Refresh**.
+When you import your **Power BI Desktop** file from OneDrive or SharePoint Online, you load data and model information into a dataset in Power BI. You'll want to refresh the dataset in the Power BI service because that's what your reports are based on. The data sources are external. You'll want to manually refresh the dataset by using **Refresh** or set up a refresh schedule by using **Schedule Refresh**.
 
 ![](media/refresh-desktop-file-onedrive/powerbi-service-refresh.png)
 
-When you refresh the dataset, Power BI doesn't connect to the file on OneDrive or SharePoint Online to query for updated data. It uses information in the dataset to connect directly to the data sources to query for updated data. Then it loads that data into the dataset. This refreshed data in the dataset isn't synchronized back to the file on OneDrive, or SharePoint Online.
+When you refresh the dataset, Power BI doesn't connect to the file on OneDrive or SharePoint Online to query for updated data. It uses information in the dataset to connect directly to the data sources to query for updated data. Then, it loads that data into the dataset. This refreshed data in the dataset isn't synchronized back to the file on OneDrive or SharePoint Online.
 
 ## What’s supported?
 Power BI supports **Refresh** and **Schedule Refresh** datasets you create from Power BI Desktop files. You can import the files from a local drive where you use **Get Data** or **Query Editor** to connect to and load data from the following data sources.

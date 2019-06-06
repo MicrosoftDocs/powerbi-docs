@@ -1,15 +1,15 @@
 ---
 title: Power BI webinars
 description: Power BI webinars
-author: maikelson
+author: v-tatero
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/26/2018
-ms.author: maikelson
+ms.date: 06/01/2019
+ms.author: v-tatero
 ---
 # Power BI webinars
 
