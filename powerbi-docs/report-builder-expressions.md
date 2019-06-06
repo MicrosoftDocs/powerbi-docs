@@ -24,11 +24,7 @@ ms.author: maggies
   
  When you preview the report, the report processor combines the table data region with the actual data from the data connection and displays a row in the table for every row in the result set.  
   
- To enter expressions manually, select an item on the design surface, and use shortcut menus and dialog boxes to set the properties of the item. When you see the ***(fx)*** button or the value `<Expression>` in a drop-down list, you know that you can set the property to an expression. For more information, see [Add an Expression &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-an-expression-report-builder-and-ssrs.md).  
-  
- To develop complex expressions or expressions that use custom code or custom assemblies, we recommend that you use Report Designer in SQL Server Data Tools (SSDT). For more information, see [Custom Code and Assembly References in Expressions in Report Designer &#40;SSRS&#41;](../../reporting-services/report-design/custom-code-and-assembly-references-in-expressions-in-report-designer-ssrs.md).  
-  
-   
+ To enter expressions manually, select an item on the design surface, and use shortcut menus and dialog boxes to set the properties of the item. When you see the ***(fx)*** button or the value `<Expression>` in a drop-down list, you know that you can set the property to an expression. 
   
 ##  <a name="Types"></a> Understanding Simple and Complex Expressions  
  Expressions begin with an equal sign (=) and are written in Microsoft Visual Basic. Expressions can include a combination of constants, operators, and references to built-in values (fields, collections, and functions), and to external or custom code.  
@@ -65,9 +61,6 @@ Simple expressions use symbols to indicate whether the reference is to a field, 
 ##  <a name="References"></a> Writing Complex Expressions  
  Expressions can include references to functions, operators, constants, fields, parameters, items from built-in collections, and to embedded custom code or custom assemblies.  
   
-> [!NOTE]
->  To develop complex expressions or expressions that use custom code or custom assemblies, we recommend that you use Report Designer in SQL ServerSQL Server Data Tools (SSDT). For more information, see [Custom Code and Assembly References in Expressions in Report Designer &#40;SSRS&#41;](../../reporting-services/report-design/custom-code-and-assembly-references-in-expressions-in-report-designer-ssrs.md).  
-  
  The following table lists the kinds of references you can include in an expression:  
   
 |References|Description|Example|  
@@ -81,30 +74,8 @@ Simple expressions use symbols to indicate whether the reference is to a field, 
 ##  <a name="Valid"></a> Validating Expressions  
  When you create an expression for a specific report item property, the references that you can include in an expression depend on the values that the report item property can accept and the scope in which the property is evaluated. For example:  
   
--   By default, the expression [Sum] calculates the sum of data that is in scope at the time the expression is evaluated. For a table cell, the scope depends on row and column group memberships. For more information, see [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections.md).  
+-   By default, the expression [Sum] calculates the sum of data that is in scope at the time the expression is evaluated. For a table cell, the scope depends on row and column group memberships. 
   
 -   For the value for a Font property, the value must evaluate to the name of a font.  
   
--   Expression syntax is validated at design time. Expression scope validation occurs when you publish the report. For validation that depends on the actual data, errors can only be detected at run-time. Some of these expressions produce #Error as an error message in the rendered report. To help determine the issues for this kind of error, you must use Report Designer in SQL Server Data Tools (SSDT). Report Designer provides an Output window that provides more information about these errors.  
-  
- For more information, see [Expression Reference &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expression-reference-report-builder-and-ssrs.md).  
-  
-##  <a name="Section"></a> In This Section  
- [Add an Expression &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-an-expression-report-builder-and-ssrs.md)  
-  
- [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs.md)  
-  
- [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections.md)  
-  
- [Expression Reference &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expression-reference-report-builder-and-ssrs.md)  
-
-## See Also
- For more information and examples, see the following topics:  
-  
--   [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs.md)  
--   [Expression examples in Power BI Report Builder](report-builder-expression-exampless.md)  
--   [Filter Equation Examples &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs.md)  
--   [Group Expression Examples &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/group-expression-examples-report-builder-and-ssrs.md)  
--   [Tutorial: Introducing Expressions](Tutorial:%20Introducing%20Expressions.md)
--   [Report Samples (Report Builder and SSRS)](https://go.microsoft.com/fwlink/?LinkId=198283)  
-  
+-   Expression syntax is validated at design time. Expression scope validation occurs when you publish the report. For validation that depends on the actual data, errors can only be detected at run-time. Some of these expressions produce #Error as an error message in the rendered report. 
