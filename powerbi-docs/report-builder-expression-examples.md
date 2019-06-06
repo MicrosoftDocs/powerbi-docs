@@ -12,7 +12,7 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Expression examples in Power BI Report Builder
-Expressions are used frequently in Report Builder paginated reports to control content and report appearance. Expressions are written in Microsoft Visual Basic, and can use built-in functions, custom code, report and group variables, and user-defined variables. Expressions begin with an equal sign (=). For more information about the expression editor and the types of references that you can include, see [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs.md), and [Add an Expression &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-an-expression-report-builder-and-ssrs.md).  
+Expressions are used frequently in Report Builder paginated reports to control content and report appearance. Expressions are written in Microsoft Visual Basic, and can use built-in functions, custom code, report and group variables, and user-defined variables. Expressions begin with an equal sign (=).   
 
 This topic provides examples of expressions that can be used for common tasks in a report.  
   
@@ -28,20 +28,7 @@ This topic provides examples of expressions that can be used for common tasks in
   
 -   [Custom Code](#CustomCode) Examples of embedded custom code.  
   
-For expression examples for specific uses, see the following topics:  
-  
--   [Group Expression Examples &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/group-expression-examples-report-builder-and-ssrs.md)  
-  
--   [Filter Equation Examples &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs.md)  
-  
--   [Commonly Used Filters &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/commonly-used-filters-report-builder-and-ssrs.md)  
-  
--   [Report and Group Variables Collections References &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/built-in-collections-report-and-group-variables-references-report-builder.md)  
-  
-For more information about simple and complex expressions, where you can use expressions, and the types of references that you can include in an expression, see topics under [Expressions in Power BI Report Builder](report-builder-expressions.md). For more information about the context in which expressions are evaluated for calculating aggregates, see [Expression Scope for Totals, Aggregates, and Built-in Collections &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections.md).  
-  
-To learn how to write expressions that use many of the functions and operators also used by expression examples in this topic, but in the context of writing a report, see [Tutorial: Introducing Expressions](../../reporting-services/tutorial-introducing-expressions.md).  
-
+For more information about simple and complex expressions, where you can use expressions, and the types of references that you can include in an expression, see topics under [Expressions in Power BI Report Builder](report-builder-expressions.md). 
   
 ## Functions  
  Many expressions in a report contain functions. You can format data, apply logic, and access report metadata using these functions. You can write expressions that use functions from the Microsoft Visual Basic run-time library, and from the <xref:System.Convert> and <xref:System.Math> namespaces. You can add references to functions from other assemblies or custom code. You can also use classes from the Microsoft .NET Framework, including <xref:System.Text.RegularExpressions>.  
@@ -140,7 +127,7 @@ To learn how to write expressions that use many of the functions and operators a
     =DateAdd(DateInterval.Month,DateDiff(DateInterval.Month,CDate("01/01/1900"),Now())-1,CDate("01/01/1900"))  
     ```  
   
--   The following expression generates the interval years between SellStartDate and LastReceiptDate. These fields are in two different datasets, DataSet1 and DataSet2. The [First Function &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/report-builder-functions-first-function.md), which is an aggregate function, returns the first value of SellStartDate in DataSet1 and the first value of LastReceiptDate in DataSet2.  
+-   The following expression generates the interval years between SellStartDate and LastReceiptDate. These fields are in two different datasets, DataSet1 and DataSet2.  
   
     ```  
     =DATEDIFF("yyyy", First(Fields!SellStartDate.Value, "DataSet1"), First(Fields!LastReceiptDate.Value, "DataSet2"))  
@@ -307,7 +294,7 @@ To learn how to write expressions that use many of the functions and operators a
     ```  
   
 ##  <a name="ReportFunctions"></a> Report Functions  
- In an expression, you can add a reference to additional report functions that manipulate data in a report. This section provides examples for two of these functions. For more information about report functions and examples, see [Aggregate Functions Reference &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/report-builder-functions-aggregate-functions-reference.md).  
+ In an expression, you can add a reference to additional report functions that manipulate data in a report. This section provides examples for two of these functions. 
   
 ###  <a name="Sum"></a> Sum  
   
@@ -391,8 +378,6 @@ To learn how to write expressions that use many of the functions and operators a
     =Ceiling(RowNumber(Nothing)/Parameters!RowsPerPage.Value)  
     ```  
   
-     For more information about setting page breaks for a group, see [Add a Page Break &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-a-page-break-report-builder-and-ssrs.md).  
-  
 ##  <a name="Properties"></a> Properties  
  Expressions are not only used to display data in text boxes. They can also be used to change how properties are applied to report items. You can change style information for a report item, or change its visibility.  
   
@@ -424,7 +409,7 @@ To learn how to write expressions that use many of the functions and operators a
 >  Available colors come from the .NET Framework KnownColor enumeration.  
   
 ### Chart Colors  
- To specify colors for a Shape chart, you can use custom code to control the order that colors are mapped to data point values. This helps you use consistent colors for multiple charts that have the same category groups. For more information, see [Specify Consistent Colors across Multiple Shape Charts &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/specify-consistent-colors-across-multiple-shape-charts-report-builder-and-ssrs.md).  
+ To specify colors for a Shape chart, you can use custom code to control the order that colors are mapped to data point values. This helps you use consistent colors for multiple charts that have the same category groups. 
   
 ###  <a name="Visibility"></a> Visibility  
  You can show and hide items in a report using the visibility properties for the report item. In a data region such as a table, you can initially hide detail rows based on the value in an expression.  
@@ -455,8 +440,6 @@ To learn how to write expressions that use many of the functions and operators a
     ```  
     ="https://adventure-works/MyInfo?ID=" & Fields!EmployeeID.Value  
     ```  
-  
-     For more information, see [Add a Hyperlink to a URL &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/add-a-hyperlink-to-a-url-report-builder-and-ssrs.md).  
   
 -   The following expression conditionally controls whether to add a URL in a text box. This expression depends on a parameter named `IncludeURLs` that allows a user to decide whether to include active URLs in a report. This expression is set as an action on a text box. By setting the parameter to False and then viewing the report, you can export the report Microsoft Excel without hyperlinks.  
   
@@ -489,12 +472,10 @@ To learn how to write expressions that use many of the functions and operators a
     ```  
   
 ##  <a name="CustomCode"></a> Custom Code  
- You can use custom code in a report. Custom code is either embedded in a report or stored in a custom assembly which is used in the report. For more information about custom code, see [Custom Code and Assembly References in Expressions in Report Designer &#40;SSRS&#41;](../../reporting-services/report-design/custom-code-and-assembly-references-in-expressions-in-report-designer-ssrs.md).  
+ You can use custom code in a report. Custom code is either embedded in a report or stored in a custom assembly which is used in the report.  
   
 ### Using Group Variables for Custom Aggregation  
- You can initialize the value for a group variable that is local to a particular group scope and then include a reference to that variable in expressions. One of the ways that you can use a group variable with custom code is to implement a custom aggregate. For more information, see [Using Group Variables in Reporting Services 2008 for Custom Aggregation](https://go.microsoft.com/fwlink/?LinkId=128714).  
-  
- For more information about variables, see [Report and Group Variables Collections References &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/built-in-collections-report-and-group-variables-references-report-builder.md).  
+ You can initialize the value for a group variable that is local to a particular group scope and then include a reference to that variable in expressions. One of the ways that you can use a group variable with custom code is to implement a custom aggregate. 
   
 ## Suppressing Null or Zero Values at Run Time  
  Some values in an expression can evaluate to null or undefined at report processing time. This can create run-time errors that result in **#Error** displaying in the text box instead of the evaluated expression. The **IIF** function is particularly sensitive to this behavior because, unlike an If-Then-Else statement, each part of the **IIF** statement is evaluated (including function calls) before being passed to the routine that tests for **true** or **false**. The statement `=IIF(Fields!Sales.Value is NOTHING, 0, Fields!Sales.Value)` generates **#Error** in the rendered report if `Fields!Sales.Value` is NOTHING.  
@@ -528,12 +509,5 @@ To learn how to write expressions that use many of the functions and operators a
     ```  
   
      This helps to avoid run-time exceptions. You can now use an expression like `=IIF(Me.Value < 0, "red", "black")` in the **Color** property of the text box to conditionally the display text based on whether the values are greater than or less than 0.  
-  
-## See Also  
- [Filter Equation Examples &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/filter-equation-examples-report-builder-and-ssrs.md)   
- [Group Expression Examples &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/group-expression-examples-report-builder-and-ssrs.md)   
- [Expression Uses in Reports &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs.md)   
- [Expressions in Power BI Report Builder](report-builder-expressions.md)   
- [Commonly Used Filters &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/commonly-used-filters-report-builder-and-ssrs.md)  
   
   
