@@ -1,15 +1,15 @@
 ---
 title: Power BI webinars
 description: Power BI webinars
-author: maikelson
+author: v-tatero
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/26/2018
-ms.author: maikelson
+ms.date: 06/01/2019
+ms.author: v-tatero
 ---
 # Power BI webinars
 
@@ -17,7 +17,15 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-No webinars scheduled yet. Check back soon for more upcoming events.
+Register to hear from Power BI experts and participate in live Q&A sessions.
+
+**Microsoft Runs on Power BI: Using Power BI in Modern Treasury**
+<br>by Pankaj Gudimella and Guru Kirthigavasan
+<br>[Register to watch on June 25th, 10:00 AM–11:00 AM PST](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
+
+**Power BI: How to Get Insights from Your Workday HR Data**
+<br>by Iman Eftekhari, Julia Paton from Agile Analytics and Shahram Karimi from QBE Insurance
+<br>[Register to watch on June 27th, 1:30 PM–2:30 PM PST](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
 
 >[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 

@@ -5,7 +5,7 @@ author: christianwade
 manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/10/2019
 ms.author: chwade
