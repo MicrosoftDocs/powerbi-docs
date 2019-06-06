@@ -10,7 +10,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ""
 ms.custom: ""
-ms.date: 12/06/2018
+ms.date: 06/06/2019
 ---
 
 # Report parameters in Power BI Report Builder
@@ -141,6 +141,8 @@ Create a parameter manually from the Report Data pane. You can configure report 
   
 -   **On-demand report.**  For an on-demand report, you can specify a different parameter value than the published value for each parameter listed for the report. For example, suppose you have a Call Service report that uses a *Time Period* parameter to return customer service requests for the current day, week, or month. If the default parameter value for the report is set to **today**, your subscription can use a different parameter value (such as **week** or **month**) to produce a report that contains weekly or monthly figures.  
   
-  
+## Next steps
+
+- [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)  
  
  

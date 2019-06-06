@@ -42,5 +42,6 @@ ms.author: maggies
   
      You can save your report to your local computer and continue to work on it, or run it locally for your own information. However, to share your report with others, you need to save the report to Power BI. Saving it to Power BI lets others run it whenever they want to. Alternatively, you can set up a subscription and e-mail delivery of the report to other individuals. You can have the report delivered in a specific export format if you prefer. 
   
-## See Also  
- [Power BI Report Builder](report-builder-in-power-bi.md) 
+## Next steps
+
+- [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)

@@ -1,6 +1,6 @@
 ---
 title: "Expression examples in Power BI Report Builder"
-ms.date: 04/06/2017
+ms.date: 06/06/2019
 ms.prod: reporting-services
 ms.prod_service: "reporting-services-native"
 ms.technology: report-design
@@ -510,4 +510,7 @@ For more information about simple and complex expressions, where you can use exp
   
      This helps to avoid run-time exceptions. You can now use an expression like `=IIF(Me.Value < 0, "red", "black")` in the **Color** property of the text box to conditionally the display text based on whether the values are greater than or less than 0.  
   
+## Next steps
+
+- [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
   

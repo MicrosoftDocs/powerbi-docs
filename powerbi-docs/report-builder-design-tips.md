@@ -1,6 +1,6 @@
 ---
 title: "Report design tips in Power BI Report Builder"
-ms.date: 03/01/2017
+ms.date: 06/06/2019
 ms.prod: reporting-services
 ms.prod_service: "reporting-services-native"
 ms.technology: report-design
@@ -140,8 +140,6 @@ ms.author: maggies
   
  The combination of this behavior, the width and height properties of report items, the size of the report body, the page height and page width definition, the margin settings of the parent report, and the renderer-specific support for paging all combine to determine what report items fit together on a rendered page. 
  
-## See Also  
- [Power BI Report Builder](report-builder-in-power-bi.md)   
- [Report Builder Tutorials](../../reporting-services/report-builder-tutorials.md)  
-  
-  
+## Next steps
+
+- [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)  

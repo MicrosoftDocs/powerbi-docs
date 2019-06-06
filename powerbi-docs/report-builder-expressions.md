@@ -79,3 +79,7 @@ Simple expressions use symbols to indicate whether the reference is to a field, 
 -   For the value for a Font property, the value must evaluate to the name of a font.  
   
 -   Expression syntax is validated at design time. Expression scope validation occurs when you publish the report. For validation that depends on the actual data, errors can only be detected at run-time. Some of these expressions produce #Error as an error message in the rendered report. 
+
+## Next steps
+
+- [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)

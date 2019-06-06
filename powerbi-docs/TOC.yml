@@ -689,6 +689,14 @@
         href: service-cognitive-services.md   
       - name: "Automated Machine Learning in Power BI (Preview)"
         href: service-machine-learning-automated.md              
+    - name: Paginated reports in Power BI
+      items: 
+      - name: View a paginated report (Preview)
+        href: paginated-reports-view-power-bi-service.md
+      - name: Interact with parameters (Preview)
+        href: paginated-reports-view-parameters.md
+      - name: Subscribe yourself or others
+        href: paginated-reports-subscriptions.md
     - name: Template apps
       items: 
       - name: "Template apps overview"
@@ -923,26 +931,26 @@
     items: 
     - name: Get around Report Design View (Preview)
       href: paginated-reports-report-design-view.md
-    - name: Paginated reports FAQ (Preview)
-      href: paginated-reports-faq.md
-  - name: How to
-    items: 
-    - name: Report Builder design tips (Preview)
-      href: report-builder-design-tips.md
     - name: Report Builder planning a report (Preview)
       href: report-builder-planning-report.md
+    - name: Report Builder data (Preview)
+      href: report-builder-data.md
+    - name: Report Builder design tips (Preview)
+      href: report-builder-design-tips.md
     - name: Report Builder tables, matrixes, lists (Preview)
       href: report-builder-tables-matrices-lists.md
-    - name: Report Builder preview reports (Preview)
-      href: report-builder-previewing-reports.md
     - name: Report Builder parameters (Preview)
       href: report-builder-parameters.md
     - name: Report Builder expressions (Preview)
       href: report-builder-expressions.md
     - name: Report Builder expression examples (Preview)
       href: report-builder-expression-examples.md
-    - name: Report Builder data (Preview)
-      href: report-builder-data.md
+    - name: Report Builder preview reports (Preview)
+      href: report-builder-previewing-reports.md
+    - name: Paginated reports FAQ (Preview)
+      href: paginated-reports-faq.md
+  - name: How to
+    items: 
     - name: Enter data directly in a paginated report (Preview)
       href: paginated-reports-enter-data.md
     - name: Create an embedded data source (Preview)
@@ -953,12 +961,6 @@
       href: paginated-reports-parameters.md
     - name: Publish a paginated report (Preview)
       href: paginated-reports-save-to-power-bi-service.md
-    - name: View a paginated report (Preview)
-      href: paginated-reports-view-power-bi-service.md
-    - name: Interact with parameters (Preview)
-      href: paginated-reports-view-parameters.md
-    - name: Subscribe yourself or others
-      href: paginated-reports-subscriptions.md
 - name: Power BI for developers
   items:
   - name: "What can developers do with Power BI"

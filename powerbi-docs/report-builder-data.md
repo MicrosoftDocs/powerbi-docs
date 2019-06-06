@@ -9,12 +9,14 @@ ms.prod_service: reporting-services-native
 ms.technology: report-data
 ms.topic: conceptual
 ms.custom: seodec18
-ms.date: 12/14/2018
+ms.date: 06/06/2019
 ---
 
 # Report Data in Power BI Report Builder
 
   Report data can come from multiple sources of data in your organization. Your first step in designing a report is to create data sources and datasets that represent the underlying report data. Each data source includes data connection information. Each dataset includes a query command that defines the set of fields to use as data from a data source. To visualize data from each dataset, add a data region, such as a table, matrix, chart, or map. When the report is processed, the queries run on the data source, and each data region expands as needed to display the query results for the dataset.  
+
+Learn how to [Create an embedded data source for paginated reports in Power BI Report Builder (Preview)](paginated-reports-embedded-data-source.md).
 
 
 ##  <a name="BkMk_ReportDataTerms"></a> Terms  
@@ -51,4 +53,6 @@ ms.date: 12/14/2018
   
 - Data sources and datasets are authored in a report and published to the Power BI service. After they are published, you can configure credentials directly in the Power BI service or in your Enterprise Gateway. 
 
-  
+## Next steps
+
+- [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)  

@@ -1,6 +1,6 @@
 ---
 title: "Previewing reports in Power BI Report Builder"
-ms.date: 01/09/2017
+ms.date: 06/06/2019
 ms.prod: reporting-services
 ms.prod_service: "reporting-services-native"
 ms.technology: report-builder
@@ -66,5 +66,7 @@ Frequently, you preview a report as a step in updating and then saving a report 
 ## External Report Items  
  Your report might include items such as external images that are stored separately from the report. Because the items are stored separately it is possible that they can be moved to a different location or be deleted. If this happens, your report could fail to preview. You can either update the report to indicate the updated location of the item or if the item was deleted, replace it with an existing item, or remove the reference to the item it from the report.  
   
+## Next steps
 
+- [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
   
