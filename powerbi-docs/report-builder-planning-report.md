@@ -1,6 +1,6 @@
 ---
 title: "Planning a report in Power BI Report Builder"
-ms.date: 03/03/2017
+ms.date: 06/06/2019
 ms.prod: reporting-services
 ms.prod_service: "reporting-services-native"
 ms.technology: report-design
@@ -20,7 +20,7 @@ ms.author: maggies
   
 -   **What structure do you want to use to present the data in the report?**  
   
-     You have a choice among tabular, matrix (similar to a cross-tab or PivotTable report), chart, free-form structures, or any combination of these to present data. For more information, see [Tables, Matrices, and Lists in Power BI Report Builder](report-builder-tables-matrices-lists.md) and [Charts &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/charts-report-builder-and-ssrs.md).  
+     You have a choice among tabular, matrix (similar to a cross-tab or PivotTable report), chart, free-form structures, or any combination of these to present data. For more information, see [Tables, Matrices, and Lists in Power BI Report Builder](report-builder-tables-matrices-lists.md).  
   
 -   **What do you want your report to look like?**  
   
@@ -28,7 +28,7 @@ ms.author: maggies
   
 -   **What data do you want your readers to see? Should the data or format be filtered for different audiences?**  
   
-     You might want to narrow the scope of the report to specific users or locations, or to a particular time period. To filter the report data, use parameters to retrieve and display only the data you want. For more information, see [Report parameters in Power BI Report Builder](.md).  
+     You might want to narrow the scope of the report to specific users or locations, or to a particular time period. To filter the report data, use parameters to retrieve and display only the data you want. For more information, see [Report parameters in Power BI Report Builder](paginated-reports-parameters.md).  
   
 -   **Do you need to create your own calculations?**  
   
@@ -43,8 +43,4 @@ ms.author: maggies
      You can save your report to your local computer and continue to work on it, or run it locally for your own information. However, to share your report with others, you need to save the report to Power BI. Saving it to Power BI lets others run it whenever they want to. Alternatively, you can set up a subscription and e-mail delivery of the report to other individuals. You can have the report delivered in a specific export format if you prefer. 
   
 ## See Also  
- [Power BI Report Builder](report-builder-in-power-bi.md)   
- [Report Authoring Concepts in Power BI Report Builder](report-builder-authoring-concepts.md)   
- [Report Builder Tutorials](../../reporting-services/report-builder-tutorials.md)  
-  
-  
+ [Power BI Report Builder](report-builder-in-power-bi.md) 
