@@ -16,13 +16,13 @@ ms.author: michalfo
 
 Use Siri Shortcuts to directly access the Power BI content you need.
 
-To get easy and quick access to your frequently used reports or dashboards, use the Siri Shortcuts integration. Create a shortcut to your item. And then you can ask Siri to launch it when even you need to have a look on the data.
+To get easy and quick access to your frequently used reports or dashboards, use the Siri Shortcuts integration. Create a shortcut to your item, and then you can ask Siri to launch it when ever you need to have a look on the data.
 
 ## Create Siri shortcut for a report or dashboard
 
 There are three ways to create Siri shortcut to your reports and dashboards.
 
-1. A banner with a ***'Add to Siri’*** option will be added to your frequently used reports and dashboards. Tap the action to open the 'Add to Siri' page.
+1. A banner with a **Add to Siri** option will be added to your frequently used reports and dashboards. Tap the action to open the 'Add to Siri' page.
     
 2. Use the 'Siri shortcut' action from the {...} Report/Dashboard menu.
     
@@ -30,7 +30,7 @@ There are three ways to create Siri shortcut to your reports and dashboards.
      
      ![](./media/mobile-apps-iOS-siri-and-search/power-bi-siri-create-shortcut.png)
 
-For Power BI report, the shortcut will cupture the current page you are viewing when creating the shortcut. 
+For Power BI report, the shortcut will capture the current page you are viewing when creating the shortcut. 
 
 All the options above will open the 'Add to Siri' page. In this page you will need to record a phrase, that you will use later with Siri  to open the report or dashboard. 
    
