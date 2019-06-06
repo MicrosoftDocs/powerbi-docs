@@ -1,6 +1,6 @@
 ---
 title: "Tables, matrixes, and lists in Power BI Report Builder"
-ms.date: 03/14/2017
+ms.date: 06/05/2019
 ms.prod: reporting-services
 ms.prod_service: "reporting-services-native"
 ms.technology: report-design
@@ -21,13 +21,13 @@ ms.author: maggies
  Lists are a little different. They support a free-layout that and can include multiple peer tables or matrices, each using data from a different dataset. Lists can also be used for forms, such as invoices.  
   
  The following pictures show simple reports with a table, matrix, or list.  
-  
- ![RS_TableMatrixList](../../reporting-services/report-design/media/rs-tablematrixlist.gif "RS_TableMatrixList")  
+
+![Report Builder table, matrix, and list](media/report-builder-tables-matrices-lists/report-builder-table-matrix-list.png)
   
 ##  <a name="Table"></a> Table  
  Use a table to display detail data, organize the data in row groups, or both. The Table template contains three columns with a table header row and a details row for data. The following figure shows the initial table template, selected on the design surface:  
-  
- ![Table template on design surface, selected](../../reporting-services/report-design/media/rs-tabletemplatenewselected.gif "Table template on design surface, selected")  
+
+![Report Builder table template on design surface, selected](media/report-builder-tables-matrices-lists/report-builder-new-table.png)
   
  You can group data by a single field, by multiple fields, or by writing your own expression. You can create nested groups or independent, adjacent groups and display aggregated values for grouped data, or add totals to groups. For example, if your table has a row group called [Category], you can add a subtotal for each group as well as a grand total for the report. To improve the appearance of the table and highlight data you want to emphasize, you can merge cells and apply formatting to data and table headings.  
   
@@ -35,9 +35,9 @@ ms.author: maggies
   
 ##  <a name="Matrix"></a> Matrix  
  Use a matrix to display aggregated data summaries, grouped in rows and columns, similar to a PivotTable or crosstab. The number of rows and columns for groups is determined by the number of unique values for each row and column groups. The following figure shows the initial matrix template, selected on the design surface:  
-  
- ![New Matrix added from Toolbox, selected](../../reporting-services/report-design/media/rs-matrixtemplatenewselected.gif "New Matrix added from Toolbox, selected")  
-  
+
+![Report Builder new matrix added from Toolbox, selected](media/report-builder-tables-matrices-lists/report-builder-new-matrix.png)
+ 
  You can group data by multiple fields or expressions in row and column groups. At run time, when the report data and data regions are combined, a matrix grows horizontally and vertically on the page as columns for column groups and rows for row groups are added. The matrix cells display aggregate values that are scoped to the intersection of the row and column groups to which the cell belongs. For example, if your matrix has a row group (Category) and two column groups (Territory and Year) that display the sum of sales, the report displays two cells with sums of sales for each value in the Category group. The scope of the cells are the two intersections are: Category and Territory and Category and Year. The matrix can include nested and adjacent groups. Nested groups have a parent-child relationship and adjacent groups a peer relationship. You can add subtotals for any and all levels of nested row and column groups within the matrix.  
   
  To make the matrix data more readable and highlight the data you want to emphasize, you can merge cells or split horizontally and vertically and apply formatting to data and group headings.  
@@ -46,8 +46,8 @@ ms.author: maggies
   
 ##  <a name="List"></a> List  
  Use a list to create a free-form layout. You are not limited to a grid layout, but can place fields freely inside the list. You can use a list to design a form for displaying many dataset fields or as a container to display multiple data regions side by side for grouped data. For example, you can define a group for a list; add a table, chart, and image; and display values in table and graphic form for each group value, as you might for an employee or patient record.  
-  
- ![New List added from Toolbox, selected](../../reporting-services/report-design/media/rs-listtemplatenewselected.gif "New List added from Toolbox, selected")  
+
+![Report Builder new list added from Toolbox, selected](media/report-builder-tables-matrices-lists/report-builder-new-list.png)
   
  For more information, see [Create Invoices and Forms with Lists].  
   
