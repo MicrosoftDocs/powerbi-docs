@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 05/31/2019
-ms.author: v-thepet
+ms.author: davidi
 
 LocalizationGroup: Learn more
 ---
