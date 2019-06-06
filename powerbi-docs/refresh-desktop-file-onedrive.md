@@ -28,14 +28,14 @@ When you import your **Power BI Desktop** file from OneDrive or SharePoint Onlin
 
 ![](media/refresh-desktop-file-onedrive/powerbi-service-refresh.png)
 
-When you refresh the dataset, Power BI doesn't connect to the file on OneDrive or SharePoint Online to query for updated data. It uses information in the dataset to connect directly to the data sources to query for updated data. Then, it loads that data into the dataset. This refreshed data in the dataset isn't synchronized back to the file on OneDrive or SharePoint Online.
+When you refresh the dataset, Power BI doesn't connect to the file on OneDrive or SharePoint Online to query for updated data. It uses information in the dataset to connect directly to the data sources and query for updated data. Then, it loads that data into the dataset. This refreshed data in the dataset isn't synchronized back to the file on OneDrive or SharePoint Online.
 
 ## What’s supported?
-Power BI supports **Refresh** and **Schedule Refresh** datasets you create from Power BI Desktop files. You can import the files from a local drive where you use **Get Data** or **Query Editor** to connect to and load data from the following data sources.
+Power BI supports **Refresh** and **Schedule Refresh** datasets you create from **Power BI Desktop** files. You can import the files from a local drive where you use **Get Data** or **Query Editor** to connect to and load data from the following data sources.
 
 ### Power BI Gateway - Personal
-* All online data sources shown in Power BI Desktop’s Get Data and Query Editor.
-* All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
+* All online data sources shown in **Power BI Desktop**’s **Get Data** and **Query Editor**.
+* All on-premises data sources shown in **Power BI Desktop**’s **Get Data** and **Query Editor** except for Hadoop File (HDFS) and Microsoft Exchange.
 
 <!-- Refresh Data sources-->
 [!INCLUDE [refresh-datasources](./includes/refresh-datasources.md)]
@@ -48,16 +48,16 @@ Power BI supports **Refresh** and **Schedule Refresh** datasets you create from 
 ## OneDrive or OneDrive for Business. What’s the difference?
 If you have both a personal OneDrive and OneDrive for Business, you should keep any files you want to import into Power BI in OneDrive for Business. Here’s why: You likely use two different accounts to sign into them.
 
-When you connect to OneDrive for Business in Power BI, connection is typically seamless. It's seamless because the same account you use to sign into Power BI with is often the same account used to sign into OneDrive for Business. But, with personal OneDrive, you usually sign in with a different [Microsoft account](https://account.microsoft.com).
+When you connect to OneDrive for Business in Power BI, connection is easy because your Power BI account is often the same account as your OneDrive for Business account. With personal OneDrive, you usually sign in with a different [Microsoft account](https://account.microsoft.com).
 
 When you sign in with your Microsoft account, be sure to select **Keep me signed in**. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI.
 
 ![](media/refresh-desktop-file-onedrive/refresh_signin_keepmesignedin.png)
 
-You may end up having a hard time logging into your Microsoft account because your credentials have changed. Let's say that you make changes to your file on OneDrive. And then, that file can't be synchronized with the dataset or reports in Power BI. You’ll need to connect to and import your file again from your personal OneDrive.
+You may end up having a hard time logging into your Microsoft account because your credentials might change. Let's say that you make changes to your file on OneDrive. And then, you can't synchronize that file with the dataset or reports in Power BI. You’ll need to connect to and import your file again from your personal OneDrive.
 
 ## How do I schedule refresh?
-When you set up a refresh schedule, Power BI will connect directly to the data sources. It uses connection information and credentials in the dataset to query for updated data. Then Power BI loads the updated data into the dataset. Any report visualizations and dashboards based on that dataset in the Power BI service are also updated.
+When you set up a refresh schedule, Power BI connects directly to the data sources. Power BI uses connection information and credentials in the dataset to query for updated data. Then Power BI loads the updated data into the dataset. It then updates any report visualizations and dashboards based on that dataset in the Power BI service.
 
 For details on how to setup schedule refresh, see [Configure Schedule Refresh](refresh-scheduled-refresh.md).
 
