@@ -59,7 +59,7 @@
       href: desktop-aggregations.md      
     - name: "Composite models in Power BI Desktop"
       href: desktop-composite-models.md
-    - name: "Many-to-many relationships in Power BI Desktop (Preview)"
+    - name: "Many-to-many relationships in Power BI Desktop"
       href: desktop-many-to-many-relationships.md
     - name: "Storage mode in Power BI Desktop (Preview)"
       href: desktop-storage-mode.md
@@ -189,8 +189,6 @@
         href: desktop-project-online-connect-to-data.md
     - name: Transform and shape data
       items: 
-      - name: "Use Shape Maps in Power BI Desktop (Preview)"
-        href: visuals/desktop-shape-map.md
       - name: "Combine binaries"
         href: desktop-combine-binaries.md
     - name: Model your data
@@ -213,6 +211,8 @@
         href: desktop-import-and-display-kpis.md
     - name: Create reports
       items: 
+      - name: "Use performance analyzer in Power BI Desktop"
+        href: desktop-performance-analyzer.md        
       - name: "Visual elements for reports"
         href: desktop-visual-elements-for-reports.md   
       - name: "Create tooltips based on report pages"
@@ -259,7 +259,7 @@
         href: desktop-add-custom-column.md
       - name: "Create responsive visuals in Power BI"
         href: visuals/desktop-create-responsive-visuals.md
-      - name: "Use inline hierarchy labels in Power BI Desktop (Preview)"
+      - name: "Use inline hierarchy labels in Power BI Desktop"
         href: desktop-inline-hierarchy-labels.md
       - name: "Use the numeric range slicer"
         href: desktop-slicer-numeric-range.md
@@ -351,6 +351,8 @@
         href: visuals/power-bi-visualization-scatter.md
       - name: "High density scatter charts"
         href: visuals/desktop-high-density-scatter-charts.md
+      - name: "Use Shape Maps in Power BI Desktop (Preview)"
+        href: visuals/desktop-shape-map.md
       - name: "Slicers in Power BI"
         href: visuals/power-bi-visualization-slicers.md
       - name: "Tables in Power BI"
@@ -485,6 +487,22 @@
         href: service-publish-from-excel.md
       - name: "Reduce the size of an Excel workbook"
         href: reduce-the-size-of-an-excel-workbook.md
+    - name: Get data from shared datasets
+      items: 
+      - name: "Use datasets across workspaces"
+        href: service-datasets-across-workspaces.md
+      - name: "Create and share datasets (Preview)"
+        href: service-datasets-build-permissions.md
+      - name: "Create reports based on datasets"
+        href: service-datasets-discover-across-workspaces.md
+      - name: "Copy reports based on datasets"
+        href: service-datasets-copy-reports.md
+      - name: "Promote datasets"
+        href: service-datasets-promote.md
+      - name: "Certify datasets"
+        href: service-datasets-certify.md
+      - name: "Control the use of datasets"
+        href: service-datasets-admin-across-workspaces.md
     - name: Get data from databases
       items: 
       - name: "Azure and Power BI"
@@ -557,11 +575,11 @@
       items: 
       - name: "Create a report from a dataset"
         href: service-report-create-new.md
-      - name: "About filters and highlighting in reports"
+      - name: "Filters and highlighting in reports"
         href: power-bi-reports-filters-and-highlighting.md
       - name: "Add a filter to a report"
         href: power-bi-report-add-filter.md
-      - name: "Save a report in Power BI"
+      - name: "Save a report"
         href: service-report-save.md
       - name: "Interact with a report in Editing View"
         href: service-interact-with-a-report-in-editing-view.md
@@ -729,6 +747,8 @@
         href: service-admin-troubleshooting-power-bi-personal-gateway.md
       - name: "Troubleshooting unsupported data source for refresh"
         href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
+      - name: "Troubleshooting Nested Values returned as text"
+        href: service-troubleshooting-nested-values.md
       - name: "Troubleshooting scheduled refresh for Azure SQL Databases"
         href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
       - name: "Error: We couldn't find any data in your Excel workbook"
@@ -779,8 +799,6 @@
           href: service-connect-to-connect-to.md
         - name: "GitHub"
           href: service-connect-to-github.md
-        - name: "Google Analytics"
-          href: service-connect-to-google-analytics.md
         - name: "Insightly"
           href: service-connect-to-insightly.md
         - name: "IntelliBoard"

@@ -402,8 +402,8 @@
         },
         {
             "source_path": "powerbi-docs/desktop-slicers.md", 
-            "redirect_url": "/power-bi/visuals/desktop-slicers",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-slicers",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/power-bi-map-tips-and-tricks.md", 
@@ -520,6 +520,11 @@
             "redirect_url": "/power-bi/visuals/power-bi-visualization-slicers",
             "redirect_document_id": true
         },
+		        {
+            "source_path": "powerbi-docs/visuals/desktop-slicers.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-visualization-slicers",
+            "redirect_document_id": false
+        },
         {
             "source_path": "powerbi-docs/power-bi-visualization-tables.md", 
             "redirect_url": "/power-bi/visuals/power-bi-visualization-tables",
@@ -584,6 +589,11 @@
             "source_path": "powerbi-docs/service-browser-support.md",
             "redirect_url": "/power-bi/consumer/end-user-browsers",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/service-connect-to-google-analytics.md",
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-marketing.md",
