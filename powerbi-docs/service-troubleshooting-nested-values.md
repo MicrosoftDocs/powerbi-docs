@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Nested Values returned as Text in Power BI Service
 description: Learn about how to fix nested values being converted to a string when using improper data source privacy settings
-author: gepopell
+author: cpopell
 manager: kfile
 ms.reviewer: ''
 
