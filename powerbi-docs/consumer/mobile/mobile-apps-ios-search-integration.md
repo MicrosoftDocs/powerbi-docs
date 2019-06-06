@@ -15,7 +15,7 @@ ms.author: michalfo
 # iOS Device Search (Spotlight) integration with Power BI Mobile iOS App (preview)
 Use iOS device search to find and access the content you need
 
-When you use iOS device search (spotliight) to look for specific conten, Power BI items are included in the result list. Tapping on Power BI item fromt the result list will take you directly to that item inside Power BI app.
+When you use iOS device search (spotlight) to look for specific content, Power BI items are included in the result list. Tapping on Power BI item from the result list will take you directly to that item inside Power BI app.
 
 To find items using device search:
 
@@ -33,7 +33,7 @@ To find items using device search:
 
     ![Screenshot showing Power BI search results in iOS device search](./media/mobile-apps-iOS-siri-and-search/power-bi-spotlight-search.png)
 
- 3. Once you find the item you want, tap on it and Power BI app will be opend directly on the selected item. 
+ 3. Once you find the item you want, tap on it and Power BI app will be opened directlyd on the selected item. 
 
 Device search, powered by Siri will also include suggestion of the frequent actions you are doing in Power BI app. Siri suggestions will be shown the search and lock screen.
 
