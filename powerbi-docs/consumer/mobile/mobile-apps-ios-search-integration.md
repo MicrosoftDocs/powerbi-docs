@@ -33,7 +33,7 @@ To find items using device search:
 
     ![Screenshot showing Power BI search results in iOS device search](./media/mobile-apps-iOS-siri-and-search/power-bi-spotlight-search.png)
 
- 3. Once you find the item you want, tap on it and Power BI app will be opened directlyd on the selected item. 
+ 3. Once you find the item you want, tap on it and Power BI app will be opened directly on the selected item. 
 
 Device search, powered by Siri will also include suggestion of the frequent actions you are doing in Power BI app. Siri suggestions will be shown the search and lock screen.
 
