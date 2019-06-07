@@ -14,12 +14,12 @@ LocalizationGroup: Visualizations
 
 # Best design practices for reports and visuals
 
+> [!NOTE]
+> The recommendations made in this article are guidelines for you to apply when and where it makes sense. For every principle we describe below, there are usually valid reasons to “break the rule.”
+
 This article provides best practices for designing reports in Power BI. It discusses principles of design that you can apply to your reports and to the pages and individual visuals that make up reports. Many of these best practices apply to dashboard design as well.
 
 We hope this article will be a jumping-off point for you, that you’ll apply what you learn to your own reports and visualizations, and that you’ll continue the conversation on [Microsoft Power BI Community](community.powerbi.com). BI report design and visualization usage is a hot topic right now. There are many thought leaders, bloggers, and websites that look at this topic in breadth and depth. We’ve listed a few at the end of the article.
-
-> [!NOTE]
-> The recommendations made in this article are guidelines for you to apply when and where it makes sense. For every principle we describe below, there are usually valid reasons to “break the rule.”
 
 > *We are overwhelmed by information, not because there is too much, but because we don't know how to tame it.*
 -- Stephen Few
@@ -66,7 +66,7 @@ The report canvas has a finite amount of space. If you can’t fit all the eleme
 
 * "What is our Marketing campaign’s impact on Sentiment?"
 
-It may be better to approach it as a progressive story. Maybe the first page in an overview or attention-grabbing “hook”, the second page continues the data story, the third page more deeply explores the story, and so on. If your entire report fits on a single page, that works too. If it doesn’t, create separate report pages that logically chunk the content. And don’t forget to give the pages meaningful and helpful names.
+It may be better to approach it as a progressive story. Maybe the first page in an overview or attention-grabbing “hook”, the second page continues the data story, the third page more deeply explores the story, and so on. If your entire report fits on a single page, that works too. If it doesn’t, create separate report pages that logically chunk the content. Don’t forget to give the pages meaningful and helpful names.
 
 Think about filling an art gallery. You wouldn’t put 50 pieces of artwork into a small room, fill it with chairs, and paint each wall a different color. As the curator, you’d choose just pieces that have a common theme. You'd lay them out around the room with plenty of space for visitors to move and think. You might even place informational cards that describe what they’re looking at. There’s a reason most modern galleries have plain walls!
 
@@ -88,7 +88,7 @@ The example above has many space-related (layout) design issues that we’ll dis
 
 The layout of your report elements impacts reader comprehension and guides them through the report page. How you place and position elements tells a story. The story might be “start here and then look here” or “these three elements are related to each other.”
 
-* In most cultures, people scan from left to right and top to bottom. Position the most important element in the top-left corner of your report. And organize the rest of the visuals in a way that leads to logical navigation and comprehension of the info.
+* In most cultures, people scan from left to right and top to bottom. Position the most important element in the top-left corner of your report. Organize the rest of the visuals in a way that leads to logical navigation and comprehension of the info.
 
 * Position elements that require the reader to make a choice to the left of the visualizations the choice will impact: slicers, for example.
 
@@ -110,7 +110,7 @@ Let’s take a closer look at alignment.
 
 #### Alignment
 
-Alignment doesn’t mean that the different components need to be the same size. And it doesn't mean you must have the same number of components on each row of the report. It just means that there's a structure to the page that aids in navigation and readability.
+Alignment doesn’t mean that the different components need to be the same size. It doesn't mean you must have the same number of components on each row of the report. It just means that there's a structure to the page that aids in navigation and readability.
 
 We can see in our updated report that we have aligned the report components on the left and right edges. We also aligned each report row horizontally and vertically. Our slicers are to the left of the visuals they impact.
 
@@ -124,7 +124,7 @@ Power BI includes tools to help you align your visuals. In Power BI Desktop, wit
 
 **Figure 3: Align visual tools in Power BI Desktop**
 
-In the Power BI service and Power BI Desktop, you also have precise control over the size and position of visuals. You can find this control on the **General** tab on the format pane for all visuals:
+In the Power BI service and Power BI Desktop, you also have precise control over the size and position of visuals. You can find this control on the **General** tab on the **Format** pane for all visuals:
 
 ![Set exact position for your visual.](media/power-bi-visualization-best-practices/power-bi-align-vizs.png)
 
@@ -138,7 +138,7 @@ Make the best use of the space you have. If you know how people will view and di
 
 ##### Adjust the page size
 
-By reducing the page size, individual elements become larger relative to the overall page. Clear the selection of any visuals on the page and using the **Page Size** tab in the format pane.
+By reducing the page size, individual elements become larger relative to the overall page. Clear the selection of any visuals on the page and using the **Page Size** tab in the **Format** pane.
 
 Here is a report page using page size **4:3** and then using **16:9**. Notice how the layout suits 16:9 so much better. There's even enough room to remove the scroll bar from the second visual.
 
@@ -150,11 +150,11 @@ Here is a report page using page size **4:3** and then using **16:9**. Notice ho
 
 **Figure 5b: The report at 16:9 page size ratio**
 
-Will people view your report in 4:3, 16:9 or another aspect ratio? On small screens or huge screens? Or will they view your report on all possible screen ratios and sizes? Design with this point in mind.
+Will people view your report in 4:3, 16:9 or another aspect ratio? On small screens or huge screens? Will they view your report on all possible screen ratios and sizes? Design with this point in mind.
 
 Our example report page seems a bit cramped. With no visual selected:
 
-1. Open the format pane by selecting the paint roller icon.
+1. Select ![Paint roller icon for Format pane.](media/power-bi-visualization-best-practices/power-bi-paint-roller.png) to open the **Format** pane.
 
 1. Expand **Page Size**.
 
@@ -228,13 +228,13 @@ What does our example page look like now? Figure 11 shows a cleaner, less clutte
 
 In our example, we added a report page title in the top-left corner; the first place readers look. Font size is 28 point and font is Segoe Bold to help it stand out from the rest of the page. Our text style guide calls for no backgrounds, black titles, legends, and labels. We applied that to all visuals on the page, where possible (the Combo chart axes and labels aren't editable). Additionally these elements were configured to the style guide specs:
 
-* Cards: **Category label** set to Off, **Title** set to **On**, 12 point, black, and centered.
+* Cards: **Category label** set to **Off**, **Title** set to **On**, 12 point, black, and centered.
 
 * Visual titles: If turned **On**, set to 12 point and left-aligned.
 
 * Slicers: **Header** set to **Off**, **Title** turned **On**. Leave **Items** > **Text** grey and 10 point.
 
-* Scatter and column charts: black font for X and Y axes and X and Y axes titles, if used.
+* Scatter and Column charts: black font for X and Y axes and X and Y axes titles, if used.
 
 #### Color
 
@@ -280,7 +280,7 @@ When we changed the background to black, our title disappeared because the text 
 
 For the card visuals:
 
-1. Open the format pane (paint roller icon).
+1. Select ![Paint roller icon for Format pane.](media/power-bi-visualization-best-practices/power-bi-paint-roller.png) to open the **Format** pane.
 
 1. Set **Background** to **On**.
 
@@ -330,7 +330,7 @@ The rectangle has also disappeared into the black background. To fix this issue:
 
 1. Select the shape.
 
-1. In the **Format shape** pane, turn **Background** On.
+1. In the **Format shape** pane, slide **Background** to **On**.
 
     ![Format the shape](media/power-bi-visualization-best-practices/power-bi-shape-format.png)
 
@@ -338,7 +338,7 @@ The rectangle has also disappeared into the black background. To fix this issue:
 
 #### Column charts, bubble chart, filled map, and treemap
 
-Add a white background to the remaining visuals on the report page. From the format pane:
+Add a white background to the remaining visuals on the report page. From the **Format** pane:
 
 1. Expand the **Line** option
 
@@ -364,9 +364,9 @@ This is what the report looks like after you reformat it:
 
 We discussed much of what we would consider aesthetics above: alignment, color, font choices, and clutter. There are a few more best practices for report design worth discussing. They deal with the overall appearance of the report.
 
-Remember that the function of your report is to meet a business need; not to be pretty. But some level of beauty is required, especially when it comes to first impressions. Nashville consultant Tony Bodoh explains, "Emotion fires a half-second before logic can kick in." Readers will first react at an emotional level to your report page. Then they will take more time to dig deeper. If your page looks disorganized, confusing, or unprofessional, your reader may never discover the powerful story it tells.
+Remember that the function of your report is to meet a business need; not to be pretty. Some level of beauty is required, especially when it comes to first impressions. Nashville consultant Tony Bodoh explains, "Emotion fires a half-second before logic can kick in." Readers will first react at an emotional level to your report page. Then they will take more time to dig deeper. If your page looks disorganized, confusing, or unprofessional, your reader may never discover the powerful story it tells.
 
-Blogger and TechTarget industry analyst Wayne Eckerson has a great analogy. Designing a report is like decorating a room. Over time you buy a vase, a sofa, end table, a painting. Separately you like all of these elements. But although each individual selection makes sense, collectively the objects clash or compete for attention.
+Blogger and TechTarget industry analyst Wayne Eckerson has a great analogy. Designing a report is like decorating a room. Over time you buy a vase, a sofa, end table, a painting. Separately you like all of these elements. Although each individual selection makes sense, collectively the objects clash or compete for attention.
 
 Concentrate on these things:
 
@@ -388,7 +388,7 @@ Just as it’s important to plan out your report before you start building, each
 
 Understand the difference between categorical and quantitative data and know which visual types work best with what type of data. Quantitative data is often referred to as measures and it’s typically numeric. Categorical data is often referred to as dimensions and you can classify it. It's discussed in more depth in the [Choose the right measure](#choose-the-right-measure) section.
 
-Avoid the temptation to use fancy or more-complex visual types just to make your report look more impressive. What you want is the most simple option for conveying your story. Horizontal bar charts and simple line charts convey info quickly. They're familiar and comfortable and most readers interpret them easily. An added advantage is that most of your audience reads left-to-right and top-to-bottom, so they can scan these two chart types and comprehended the info quickly.
+Avoid the temptation to use fancy or more-complex visual types just to make your report look more impressive. What you want is the most simple option for conveying your story. Horizontal Bar charts and simple Line charts convey info quickly. They're familiar and comfortable and most readers interpret them easily. An added advantage is that most of your audience reads left-to-right and top-to-bottom, so they can scan these two chart types and comprehended the info quickly.
 
 Does your visual require scrolling to tell the story? Avoid scrolling if you can. Try applying filters and making use of hierarchies/drill-downs. If those elements don’t remove the scroll bar, consider choosing a different visual type. If you can’t eliminate scrolling, your readers will tolerate horizontal scrolling better than vertical scrolling.
 
@@ -398,11 +398,11 @@ Even when you choose the absolute best visual for the story, you might still nee
 
 Is the story your visual is telling compelling? Does it matter? Don’t build visuals for the sake of building visuals. Maybe you thought the data would tell an interesting story, but it doesn’t. Don’t be afraid to start over and look for a more-interesting story. Maybe the story is there but you need to measure it in a different way.
 
-Say you want to measure the success of your sales managers. What measure would you use to do this? Would you measure that best by looking at total sales or total profit, growth over previous year or performance against a target goal? Salesperson Sally might have the largest profit. If you showed total profit by salesperson in a bar chart, compared to the other salespeople, she would look like a rock star. But if Sally has a high cost of sales (travel expenses, shipping costs, manufacturing costs, and so on.), simply looking at sales doesn’t tell the best story.
+Say you want to measure the success of your sales managers. What measure would you use to do this? Would you measure that best by looking at total sales or total profit, growth over previous year or performance against a target goal? Salesperson Sally might have the largest profit. If you showed total profit by salesperson in a bar chart, compared to the other salespeople, she would look like a rock star. If Sally has a high cost of sales (travel expenses, shipping costs, manufacturing costs, and so on), simply looking at sales doesn’t tell the best story.
 
-#### Reflect reality/don’t distort reality
+#### Reflect reality, don’t distort reality
 
-It’s possible to build a visual that distorts the truth. There’s a website where data enthusiasts share “bad” visuals. And the common theme in the comments is disappointment in the company that created and distributed that visual. A bad visual sends the message that the company can’t be trusted.
+It’s possible to build a visual that distorts the truth. There’s a website where data enthusiasts share what they consider to be bad visuals. The common theme in the comments is disappointment in the company that created and distributed that visual. A bad visual sends the message that the company can’t be trusted.
 
 So create visuals that don’t intentionally distort reality and that aren’t manipulated to tell the story you want them to tell. Here is an example:
 
@@ -434,9 +434,9 @@ Once you’ve selected a type and measure and created the visual, it’s time to
 
 #### Tweaking visuals for best use of space
 
-If you’re trying to fit multiple charts into a report, maximizing your data-ink ratio will help make the story in your data stand out. As mentioned above, Edward Tufte coined ‘data-ink’ ratio: the goal is to remove as many marks from a chart as possible without impairing a reader’s ability to interpret the data.
+If you’re trying to fit multiple charts into a report, maximizing your data-ink ratio will help make the story in your data stand out. As mentioned above, Edward Tufte coined ‘data-ink’ ratio. The goal is to remove as many marks from a chart as possible without impairing a reader’s ability to interpret the data.
 
-In the first set of charts below, there are redundant axis labels (Jan 2014, Apr 2014 and so on) and titles (“by Date”). The titles for each chart also require dedicated horizontal space across each chart. By removing the chart titles and turning on individual axis labels, we remove some ink and have better use of the overall space. We can remove the axis labels for the top two charts to further reduce ink and use more of the space for data.
+In the first set of charts below, there are redundant axis labels: **Jan 2014**, **Apr 2014**, and so on. In the titles, **by Date** is repeated. The titles for each chart also require dedicated horizontal space across each chart. By removing the chart titles and turning on individual axis labels, we remove some ink and have better use of the overall space. We can remove the axis labels for the top two charts to further reduce ink and use more of the space for data.
 
 If there were particular time periods that you wanted to call out, you could draw lines or rectangles behind all the charts. Doing so will help draw the eye up and down to aid comparisons.
 
@@ -450,90 +450,119 @@ If there were particular time periods that you wanted to call out, you could dra
 
 **To turn axis titles on and off**
 
-Select the visual to make it active and open the Formatting pane. Expand the options for the **X-axis** or **Y-axis** and drag the slider for **Title** on or off.
+1. Select the visual to make it active.
 
-![Turn axis titles on and off.](media/power-bi-visualization-best-practices/power-bi-axis-titles.png)
+1. Select ![Paint roller icon for Format pane.](media/power-bi-visualization-best-practices/power-bi-paint-roller.png) to open the **Format** pane.
 
-**Figure 26: Turn axis titles on and off**
+1. Expand the options for the **X-axis** or **Y-axis**.
 
-**To turn axis labels on and off**
+1. Drag the slider for **Title** on or off.
 
-Select the visual to make it active and open the Formatting pane. Next to **X-Axis** and **Y-Axis** are sliders.  Drag the slider to turn axis labels on or off.
+    ![Turn axis titles on and off.](media/power-bi-visualization-best-practices/power-bi-axis-titles.png)
 
-![Turn axis labels on and off.](media/power-bi-visualization-best-practices/power-bi-axis-labels.png)
+    **Figure 26: Turn axis titles on and off**
 
-**Figure 27: Turn axis labels on and off**
+##### To turn axis labels on and off
 
-> [!TIP]
-> One scenario where you might turn Y-axis labels off would be if you had **Data labels** turned on.
+1. Select the visual to make it active.
 
-**To remove visual titles**
+1. Select ![Paint roller icon for Format pane.](media/power-bi-visualization-best-practices/power-bi-paint-roller.png) to open the **Format** pane.
 
-Select the visual to make it active and open the Formatting pane. Set the slider for **Title** to Off.
+1. Next to **X-Axis** and **Y-Axis** are sliders.
 
-![Remove titles from visuals.](media/power-bi-visualization-best-practices/power-bi-title-off.png)
+1. Drag the slider to turn axis labels on or off.
 
-**Figure 28: Remove titles from visuals**
+    ![Turn axis labels on and off.](media/power-bi-visualization-best-practices/power-bi-axis-labels.png)
+
+    **Figure 27: Turn axis labels on and off**
+
+    > [!TIP]
+    > One scenario where you might turn Y-axis labels off would be if you had **Data labels** turned on.
+
+##### To remove visual titles
+
+1. Select the visual to make it active.
+
+1. Select ![Paint roller icon for Format pane.](media/power-bi-visualization-best-practices/power-bi-paint-roller.png) to open the **Format** pane.
+
+1. Set the slider for **Title** to **Off**.
+
+    ![Remove titles from visuals.](media/power-bi-visualization-best-practices/power-bi-title-off.png)
+
+    **Figure 28: Remove titles from visuals**
 
 Consider how your readers will view the report. Make sure your visuals and text are large enough and dark enough so people can read them. If you have a proportionally larger visual on the page, readers may assume it’s the most important. Put enough space between the visuals that your report doesn’t look cluttered and confusing. Align your visuals to help direct the eyes of your readers.
 
-**To resize a visual**
+##### To resize a visual
 
-Select the visual to make it active. Grab and drag one of the handles to adjust the size.
+1. Select the visual to make it active.
 
-![Resize visual.](media/power-bi-visualization-best-practices/power-bi-drag-handles.png)
+1. Grab and drag one of the handles to adjust the size.
 
-**Figure 29: Resize visual**
+    ![Resize visual.](media/power-bi-visualization-best-practices/power-bi-drag-handles.png)
 
-**To move a visual**
+    **Figure 29: Resize visual**
 
-Select the visual to make it active. Select and hold the gripper bar at the top middle of the visual and drag the visual to its new location.
+##### To move a visual
 
-![Move a visual.](media/power-bi-visualization-best-practices/power-bi-move.png)
+1. Select the visual to make it active.
 
-**Figure 30: Move a visual**
+1. Select and hold the gripper bar at the top-middle of the visual
+
+1. Drag the visual to its new location.
+
+    ![Move a visual.](media/power-bi-visualization-best-practices/power-bi-move.png)
+
+    **Figure 30: Move a visual**
 
 #### Titles and labels that are part of the visualizations
 
-Make sure titles and labels are easy to read and self-explanatory. Text in titles and labels must be an optimal size with colors that stand out (like black instead of the default grey). Remember our style guide (see "Text" above)? Limit the number of colors and sizes -- too many different font sizes and colors make the page look busy and confusing. Consider using the same font color and size for the title of all visuals on a report page. Also, choose the same alignment for all titles on a report page.
+Make sure titles and labels are easy to read and self-explanatory. Text in titles and labels must be an optimal size with colors that stand out. Remember our style guide (see [Text](#text) earlier in the article)? Limit the number of colors and sizes -- too many different font sizes and colors make the page look busy and confusing. Consider using the same font color and size for the title of all visuals on a report page. Also, choose the same alignment for all titles on a report page.
 
-**The format pane**
+**The Format pane**
 
-For each of the formatting changes listed below, select the paint roller icon to open the Formatting pane.
+For each of the formatting changes listed below, select the paint roller icon ![Paint roller icon for Format pane.](media/power-bi-visualization-best-practices/power-bi-paint-roller.png) to open the **Format** pane.
 
-![Open the Formatting pane.](media/power-bi-visualization-best-practices/power-bi-paintbrush.png)
+![Open the Format pane.](media/power-bi-visualization-best-practices/power-bi-paintbrush.png)
 
-**Figure 31: Open the Formatting pane**
+**Figure 31: Open the Format pane**
 
-Then select the visual element to adjust and make sure it's set to On. Examples of visual elements are: **X-Axis**, **Y-Axis**, **Title**, **Data labels**, and **Legend**. The example below shows the **Title** element.
+Then select the visual element to adjust and make sure it's set to **On**. Examples of visual elements are: **X-Axis**, **Y-Axis**, **Title**, **Data labels**, and **Legend**. The example below shows the **Title** element.
 
 ![Format a visual title.](media/power-bi-visualization-best-practices/power-bi-title-formatting.png)
 
 **Figure 32: Format a visual title**
 
-**Set the text size**
+##### Set the text size
 
 You can adjust text size for titles and data labels, but not for X or Y axes or legends. For data labels specifically, play with the **Display units** and number of **Decimal Places**. Eventually, you'll find the optimal level of detail for displaying info on your report.
 
-**Set the text alignment**
+##### Set the text alignment
 
 You can choose a title alignment of left, right, or center. Choose one and apply that same setting to all visuals on the page.
 
-**Set the text position**
+##### Set the text position
 
 You can adjust the text position for some Y axes and for the legend. Whichever you choose, do the same for the other Y axes and any other legend on the page.
 
-**Set the title and label length**
+##### Set the title and label length
 
-Adjust the length of titles, axes titles, data labels, and legends. If you decide to display any of these elements, adjusting the length (along with text size) ensures that Power BI won't truncate the values. For **Title** and **Legend**, the setting is **Title Text**. Type in the actual title that will appear on the visual. For **X-Axis** and **Y-Axis**, the setting is **Style** and you select from a dropdown. For **Data labels**, the settings are **Display** and **Decimal**. Use the **Display** dropdown to select the units of measurement: millions, thousands, none, auto, and so on. Use the **Decimal** field to tell Power BI how many decimal places to display.
+Adjust the length of titles, axes titles, data labels, and legends. If you decide to display any of these elements, adjusting the length (along with text size) ensures that Power BI won't truncate the values:
 
-**Set the text color**
+* For **Title** and **Legend**, the setting is **Title Text**. Enter the actual title that will appear on the visual.
+
+* For **X-Axis** and **Y-Axis**, the setting is **Style** and you select from a drop-down.
+
+* For **Data labels**, the settings are **Display** and **Decimal**. Use the **Display** drop-down to select the units of measurement: **millions**, **thousands**, **none**, **auto**, and so on. Use the **Decimal** field to tell Power BI how many decimal places to display.
+
+##### Set the text color
 
 You can adjust the text color for titles, axes, and data labels.
 
 #### Titles and labels that aren't part of the visualizations
 
 Earlier in this article we discussed adding text boxes to report pages. Sometimes the titles on visualizations aren’t enough to tell the story. Add text boxes to communicate additional info to the readers of your reports.
+
 To keep your report page from looking too confusing or too busy, be consistent in your use of text box fonts, sizes, colors, and alignment. To make a change to the text in a text box, select the text box to reveal the formatting menu.
 
 ![Format the font used in a text box.](media/power-bi-visualization-best-practices/power-bi-text-box-edit.png)
@@ -542,9 +571,17 @@ To keep your report page from looking too confusing or too busy, be consistent i
 
 #### Sorting
 
-A simple opportunity to provide faster insight is to set the sorting of visuals. For example, sorting bar charts in descending or ascending order that is based on the value in the bars lets you quickly show significant incremental info without using more real estate.
+A simple opportunity to provide faster insight is to set the sorting of visuals. For example, sorting Bar charts in descending or ascending order that is based on the value in the bars lets you quickly show significant incremental info without using more real estate.
 
-To sort a chart, select the ellipses (…) in the top right of the chart, select **Sort** and choose the field you want to sort by and the direction. For more info, see [Change how a visual is sorted](../consumer/end-user-change-sort.md).
+To sort a chart:
+
+1. Select the ellipsis in the top-right corner of the chart.
+
+1. Select **Sort**.
+
+1. Choose the field you want to sort by and the direction.
+
+For more info, see [Change how a visual is sorted](../consumer/end-user-change-sort.md).
 
 #### Chart interaction and interplay
 
@@ -561,22 +598,22 @@ Then, for each visual on the page, decide whether you want the selected visual t
 
 #### The use of color in visuals
 
-Earlier in this article we talked about the importance of having a plan for how you’re going to use color across a report. This section will have some overlap but primarily applies to how you use color in individual visuals. And the same principles apply: use color to tie the report together, add emphasis to important data, and to improve the reader’s comprehension of the visual. Using too many different colors can be distracting. It makes it difficult for the reader to know where to look. Don’t sacrifice comprehension for beauty. Only add color if it improves comprehension.
+Earlier in this article we talked about the importance of having a plan for how you’re going to use color across a report. This section will have some overlap but primarily applies to how you use color in individual visuals. The same principles apply: use color to tie the report together, add emphasis to important data, and to improve the reader’s comprehension of the visual. Using too many different colors can be distracting. It makes it difficult for the reader to know where to look. Don’t sacrifice comprehension for beauty. Only add color if it improves comprehension.
 
 > [!TIP]
 > Know your audience and any inherent color rules. For example, in the United States, green typically means “good” and red typically means “not good”.
 
-We broke down this section to cover:
+This section covers:
 
-1. Data color
+* Data color
 
-1. Data label color
+* Data label color
 
-1. Color for categorical values
+* Color for categorical values
 
-1. Color for numerical values
+* Color for numerical values
 
-**Use colors to highlight interesting data**
+##### Use colors to highlight interesting data
 
 The simplest way to use color is by changing one or more data point’s color(s) to call attention to it. In this example, the color changes when the Olympic games moved from a 4-year cycle to a 2-year cycle of alternating Summer and Winter games.
 
@@ -584,7 +621,7 @@ The simplest way to use color is by changing one or more data point’s color(s)
 
 **Figure 35: Use color to tell a story**
 
-You can change data point colors from the **Data colors** tab in the format pane. To customize each data point individually, make sure **Show all** is set to On.
+You can change data point colors from the **Data colors** tab in the **Format** pane. To customize each data point individually, make sure **Show all** is set to **On**.
 
 ![Set data point colors.](media/power-bi-visualization-best-practices/power-bi-colors.png)
 
@@ -592,28 +629,30 @@ You can change data point colors from the **Data colors** tab in the format pane
 
 > [!NOTE]
 > Power BI applies a default theme to your report visuals. Designers chose the theme colors to provide variety and contrast. To divert from the default theme palette, select **Custom color**.
+>
+> ![Choose a custom color.](media/power-bi-visualization-best-practices/power-bi-custom-color.png)
+>
+> **Figure 37: Choose a custom color**
 
-![Choose a custom color.](media/power-bi-visualization-best-practices/power-bi-custom-color.png)
-
-**Figure 37: Choose a custom color**
-
-In Power BI Desktop, you can even highlight outliers or a section of a line by using a second series:
+In Power BI Desktop, you can even highlight **Outliers** or a section of a line by using a second series:
 
 ![Using Desktop to plot outliers.](media/power-bi-visualization-best-practices/power-bi-outliers.png)
 
-**Figure 38: Using Desktop to plot outliers**
+**Figure 38: Use Power BI Desktop to plot Outliers**
 
-Here, values in the ‘Outliers’ series only exist where the average August temperature drops below 60. We did this by creating a DAX calculated column using this formula:
+Here, values in the **Outliers** series only exist where the average August temperature drops below 60. We did this by creating a DAX calculated column using this formula:
 
+```
 Outliers = if(Editions[Temp]<60, Editions[Temp], BLANK())
+```
 
-In our example, there were three outliers: 1952, 1956, and 2000.
+In our example, there were three outliers: **1952**, **1956**, and **2000**.
 
-**Colors for labels and titles**
+##### Colors for labels and titles
 
-As you explore all of the formatting options available to you, you’ll find many different places to add color to titles and legends. For example, you can change the color of data labels and axes titles. Be careful though. Generally, you want to use a single color for every visual title. As with the the other guidelines in this article, there are always situations and reasons to “break the rules.” If you do decide to break the rules, do it for a good reason.
+As you explore all of the formatting options available to you, you’ll find many different places to add color to titles and legends. For example, you can change the color of data labels and axes titles. Be careful though. Generally, you want to use a single color for every visual title. As with the the other guidelines in this article, there are always situations and reasons to break the rules. If you do decide to break the rules, do it for a good reason.
 
-**Colors for categorical values**
+##### Colors for categorical values
 
 Charts with a series typically have a categorical value in the legend. For example, each color in the legend below represents a different category of Country/Region.
 
@@ -628,25 +667,30 @@ Designers chose the default colors Power BI uses to provide a good color separat
 **Figure 40: Color applied as hues of a single color**
 
 By sticking to a single hue and varying the intensity of the color, this visual has introduced a false sense of ordering between the categories. It implies the darker bubbles are higher or lower on some scale than the lighter hues. Other than alphabetical, there’s normally no inherent order in this sort of categorical value.
-To change the default colors, open the Formatting pane, and select **Data colors**.
 
-**Colors for numerical values**
+To change the default colors, select ![Paint roller icon for Format pane.](media/power-bi-visualization-best-practices/power-bi-paint-roller.png) to open the **Format** pane, and select **Data colors**.
 
-For fields that do have some inherent order and numerical value, you can also color data points by the value. Coloring data points by value can be helpful to show the spread of values across the data, and also allow Power BI to show two variables on a single chart. , this chart makes it clear that although China has the highest medal count, Japan and Thailand have participated in more Olympic games.
+##### Colors for numerical values
+
+For fields that do have some inherent order and numerical value, you can also color data points by the value. Coloring data points by value can be helpful to show the spread of values across the data, and also allow Power BI to show two variables on a single chart. The following chart makes it clear that although China has the highest medal count, Japan and Thailand have participated in more Olympic games.
 
 ![Color data points by the value.](media/power-bi-visualization-best-practices/power-bi-saturation.png)
 
 **Figure 41: Color data points by the value**
 
-To create this chart, add a value to the Color saturation field and then adjust those colors in the Formatting pane.
+To create this chart:
 
-![Add a color saturation field.](media/power-bi-visualization-best-practices/power-bi-saturation2.png)
+1. Add a value to the **Color saturation** field in the **Fields** pane.
 
-**Figure 42: Add a color saturation field**
+    ![Add a color saturation field.](media/power-bi-visualization-best-practices/power-bi-saturation2.png)
 
-![Adjust the colors used for saturation.](media/power-bi-visualization-best-practices/power-bi-color-controls.png)
+    **Figure 42: Add a color saturation field**
 
-**Figure 43: Adjust the colors used for saturation**
+1. Adjust those colors in the **Format** pane.
+
+    ![Adjust the colors used for saturation.](media/power-bi-visualization-best-practices/power-bi-color-controls.png)
+
+    **Figure 43: Adjust the colors used for saturation**
 
 You can also use color to emphasize variance around a central value. For example, coloring positive values green and negative values red. Be aware of cultural differences when assigning colors to positive or negative values. Not all cultures use red for bad and green for good.
 
@@ -672,30 +716,25 @@ After
 
 #### What did we do?
 
-1. Slicer: removed blanks from the slicers by adding a page level filter and selecting only gold, silver, bronze. Changed **Selection Controls** to Off for **Single Select** and **Select All**.
-
-1. Bubble: there are so many items in the legend that they scroll off the screen. Removed the legend and turned on **Category labels** instead. Customers can hover over the bubbles to see the details. Shortened the title and removed “by country region” since that seems self-evident. Turned axes labels On for both to make the chart easier to understand.
-
-1. Filled map: changed the **Data colors** to make it stand out more. Turned **Diverging** on and set the **Minimum** to pink and the **Maximum** to red.
-
-1. Treemap: removed filter that was set for only USA. Set the **Data labels** to one decimal place. The visual was using the Class field that isn’t useful since it will almost always be 33% (Gold/Silver/Bronze). Selected a different more-interesting field, gender. Changed Aquatics to blue and Athletics to grey for design.
-
-1. Top bar chart: shortened the title, removed data labels, turned off legend title. Changed word order of title to match the chart below.
-
-1. Bottom bar chart: sorted by year ascending to match chart above. Changed colors to match class. Changed title. Turned off legend for more space for data. Turned on data labels. They won't show up in the report because the visual is too small for the labels to be easy to read. They will show up when the reader opens the visual in **Focus** mode. Learn about [Focus mode](../consumer/end-user-focus.md). Added Count of Event (Distinct) to **Tooltips**. Now, when you hover over a stacked column, the tooltips also tell you how many events the people contested that year.
-
-1. Visual Interactions: turned off interactions for both cards since I always want them to show total games and sports.
+| Item | Description |
+| ---- | ----------- |
+| Slicer | Removed blanks from the slicers by adding a page level filter and selecting only **Gold**, **Silver**, **Bronze**. <br> Changed **Selection Controls** to **Off** for **Single Select** and **Select All**. |
+| Bubble | There are so many items in the legend that they scroll off the screen. Removed the legend and turned on **Category labels** instead. Customers can hover over the bubbles to see the details .<br> Shortened the title and removed “by country region” since that seems self-evident. <br> Turned axes labels **On** for both to make the chart easier to understand. |
+| Filled map | Changed the **Data colors** to make it stand out more. <br> Turned **Diverging** on and set the **Minimum** to pink and the **Maximum** to red.
+| Treemap | Removed filter that was set for only USA. <br> Set the **Data labels** to one decimal place. <br> The visual was using the Class field that isn’t useful since it will almost always be 33% for the 3 medals: Gold, Silver, and Bronze. <br> Selected a different more-interesting field, gender. Changed Aquatics to blue and Athletics to grey for design.
+| Top bar chart | Shortened the title, removed data labels, turned off legend title. <br> Changed word order of title to match the chart below.
+| Bottom bar chart | Sorted by year ascending to match chart above. <br> Changed colors to match class. <br> Changed title. <br> Turned off legend for more space for data. <br> Turned on data labels. They won't show up in the report because the visual is too small for the labels to be easy to read. They will show up when the reader opens the visual in **Focus** mode. Learn about [Focus mode](../consumer/end-user-focus.md). <br> Added **Count of Event (Distinct)** to **Tooltips**. Now, when you hover over a stacked column, the tooltips also tell you how many events the people contested that year. |
+| Visual Interactions | Turned off interactions for both cards since we always want them to show total games and sports. |
 
 ## Visual types and best practices
 
-Power BI provides many native visual types. To these visuals, add the custom visuals available from Microsoft and from the Power BI community and total visual options become too numerous to document here. But let’s look at some of the most-used native visual types.
+Power BI provides many native visual types. Add the list of custom visuals available from Microsoft and from the Power BI community and the total options becomes too numerous to document here. Let’s look at some of the most-used native visual types.
 
 ### Line charts
 
 ![Line chart.](media/power-bi-visualization-best-practices/power-bi-line-chartb.png)
 
-Line charts are a powerful way to look at data over time. Looking at data in tables doesn’t really take advantage of the speed in which our eyes spot peaks, valleys, cycles, and patterns.
-The example below shows the trends in the number of medals awarded and the number of athletes winning those medals.
+Line charts are a powerful way to look at data over time. Looking at data in tables doesn’t really take advantage of the speed in which our eyes spot peaks, valleys, cycles, and patterns. The example below shows the trends in the number of medals awarded and the number of athletes winning those medals.
 
 ![Line charts.](media/power-bi-visualization-best-practices/power-bi-line-chart.png)
 
@@ -703,17 +742,23 @@ The example below shows the trends in the number of medals awarded and the numbe
 
 #### Best practices
 
-* When people look at line charts, the first thing they see is the shape of the curve. So you need to have an x-axis that makes the curve meaningful such a time or distribution categories. If you put categorical fields like product or geography on the x-axis, the line chart will not be interesting. The shape of the curve would provide no meaningful info.
+* When people look at Line charts, the first thing they see is the shape of the curve. So you need to have an x-axis that makes the curve meaningful such a time or distribution categories. If you put categorical fields like product or geography on the x-axis, the line chart will not be interesting. The shape of the curve would provide no meaningful info.
 
-* If you choose to place multiple charts above and below each other like this, to make it easier to compare across series, line up the X-axis. Use filters to make sure that Power BI shows the same range of values. For example, if you’re looking at date ranges, ensure they're the same date ranges. For example, 1896 to 2012 on both charts.
+* If you choose to place multiple charts above and below each other to make it easier to compare across series like this, line up the X-axis. Use filters to make sure that Power BI shows the same range of values. For example, if you’re looking at date ranges, ensure they're the same date ranges. For example, 1896 to 2012 on both charts.
 
-* Make full use of the space. If it makes sense for your data, set the start and end points for the Y-axis to eliminate empty space at the top and bottom of your chart. It also helps the visual to focus in on the actual data points. To set the start and end points, select the paint roller icon to open the Formatting pane. Expand the **Y-Axis** area and set the **Start** and **End** points.
+* Make full use of the space. If it makes sense for your data, set the start and end points for the Y-axis to eliminate empty space at the top and bottom of your chart. It also helps the visual to focus in on the actual data points. To set the start and end points:
+
+  1. Select the visual to make it active.
+
+  1. Select ![Paint roller icon for Format pane.](media/power-bi-visualization-best-practices/power-bi-paint-roller.png) to open the **Format** pane.
   
-  ![Set the start and end points.](media/power-bi-visualization-best-practices/power-bi-start-end.png)
+  1. Expand the **Y-Axis** area and set the **Start** and **End** points.
   
-  **Figure 48: Set the start and end points**
+      ![Set the start and end points.](media/power-bi-visualization-best-practices/power-bi-start-end.png)
+  
+      **Figure 48: Set the start and end points**
 
-* Another reason to explicitly set the Start and End points is if you’re comparing two or more charts on the same page using the same Y-axis field. For example, if you’re looking at cumulative event counts, and the United Kingdom has counts that range from 1 to 70 and Australia has counts that range from 1 to 12, the two line charts will display different Y-axes (Figure x). It makes it difficult to compare at a glance. Instead, set the charts to use the same Y-axis range (Figure x).
+* Another reason to explicitly set the **Start** and **End** points is if you’re comparing two or more charts on the same page using the same Y-axis field. For example, if you’re looking at cumulative event counts, and the United Kingdom has counts that range from 1 to 70 and Australia has counts that range from 1 to 12, the two Line charts will display different Y-axes (Figure 49). It makes it difficult to compare at a glance. Instead, set the charts to use the same Y-axis range (Figure 50).
   
   ![Line charts with different y-axes.](media/power-bi-visualization-best-practices/power-bi-line-chart2.png)
   
@@ -731,11 +776,11 @@ For more info, see:
 
 * [Data Visualization 101: Line Charts](http://www.columnfivemedia.com/data-visualization-101-line-charts)
 
-### Bar/Column charts
+### Bar and Column charts
 
-![Bar charts.](media/power-bi-visualization-best-practices/power-bi-bar-chart.png)
+![Bar and column charts.](media/power-bi-visualization-best-practices/power-bi-bar-chart.png)
 
-If line charts are the standard for looking at data over time, bar charts are the standard for looking at a specific value across different categories. If you sort the bars based on the number, you'll instantly see the top values and distribution. Horizontal bar charts work well with long labels.
+If Line charts are the standard for looking at data over time, Bar charts are the standard for looking at a specific value across different categories. If you sort the bars based on the number, you'll instantly see the top values and distribution. Horizontal Bar charts work well with long labels.
 
 ![Horizontal bar chart.](media/power-bi-visualization-best-practices/power-bi-horizontal-scroll.png)
 
@@ -743,19 +788,25 @@ If line charts are the standard for looking at data over time, bar charts are th
 
 #### Best practices
 
-* Display data labels for values. It makes it easier to identify specific values. To display data labels, open the Formatting pane, and set **Data labels** to On.
+* Display data labels for values. It makes it easier to identify specific values. To display data labels: 
 
-  ![Turn on data labels.](media/power-bi-visualization-best-practices/power-bi-data-labels.png)
+  1. Select the visual to make it active.
 
-  **Figure 52: Turn on data labels**
+  1. Select ![Paint roller icon for Format pane.](media/power-bi-visualization-best-practices/power-bi-paint-roller.png) to open the **Format** pane.
+  
+  1. Set **Data labels** to **On**.
 
-* The bar chart above is useful to compare one measure against many **at a single point in time**. While the line chart showed us the trend over time, the bar chart shows us the trend for a single category at a specific point in time. At a glance, our bar chart shows us Spain has one of the worst unemployment rates in the world, at 25%.
+      ![Turn on data labels.](media/power-bi-visualization-best-practices/power-bi-data-labels.png)
 
-* When an entire Bar/Column chart doesn’t fit into the allotted space, Power BI adds scroll bars. When possible, and if it makes sense, structure the visual and report to show the entire chart. Then the reader gets an overview of the entire distribution. Unfortunately, it isn't possible in our example given the significant number of countries around the world.
+      **Figure 52: Turn on data labels**
 
-  One way to limit the values included is to use a filter. For example, add a Visual level filter that shows the country only if unemployment rate is above 20%.
+* The bar chart above is useful to compare one measure against many measures at a single point in time. While the line chart showed us the trend over time, the bar chart shows us the trend for a single category at a specific point in time. At a glance, our bar chart shows us Spain has one of the worst unemployment rates in the world, at 24.70%.
 
-* You can drill down (and back up again) on Bar/Column charts. It's a great way to pack more info into a visual without taking up more real estate. The example below has a hierarchy for Regions > Countries. Double-clicking a region bar drills down to the countries that make up that region. For more info on drill, see [Drill mode in a visualization in Power BI](../consumer/end-user-drill.md).
+* When an entire Bar or Column chart doesn’t fit into the allotted space, Power BI adds scroll bars. When possible, and if it makes sense, structure the visual and report to show the entire chart. Then the reader gets an overview of the entire distribution. Unfortunately, it isn't possible in our example given the significant number of countries around the world.
+
+  One way to limit the values included is to use a filter. For example, add a **Visual level** filter that shows the country only if unemployment rate is above 20%.
+
+* You can drill down (and back up again) on Bar and Column charts. It's a great way to pack more info into a visual without taking up more real estate. The example below has a hierarchy for Regions > Countries. Double-clicking a region bar drills down to the countries that make up that region. For more info on drill mode, see [Drill mode in a visualization in Power BI](../consumer/end-user-drill.md).
   
   ![Drill down.](media/power-bi-visualization-best-practices/power-bi-drill.png)
   
@@ -769,17 +820,17 @@ For more details on Bar and Column charts:
 
 * [Data Visualization Catalogue: Multi-set Bar Chart](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
 
-### Stacked Bar/Column charts
+### Stacked Bar and Column charts
 
 ![Stacked charts.](media/power-bi-visualization-best-practices/power-bi-stacked.png)
 
-Add another dimension to your bar/column charts by stacking different categories within the bar or column. Now the chart conveys info about one overall trend (based on height/length) but also shows the influence of the categories on that trend. The chart below shows the overall growth of Top soccer team revenue above 6 billion in 2014.
+Add another dimension to your Bar and Column charts by stacking different categories within the bar or column. Now the chart conveys info about one overall trend (based on height and length) but also shows the influence of the categories on that trend. The following chart shows the overall growth of top soccer team revenue above 6 billion in 2014.
 
-![](media/power-bi-visualization-best-practices/power-bi-deloite.png)
+![Stacked column chart](media/power-bi-visualization-best-practices/power-bi-deloite.png)
 
 **Figure 54: Stacked column chart**
 
-This stacked column chart shows us that total revenue is growing over time and that the Commercial and the Broadcasting categories are increasing steadily over time – contributing to overall revenue increase. But this chart doesn’t make it easy to compare the impact each of the three categories has on each other. For example, how does the growth of Commercial compare to the growth of Broadcasting or Match Day? A better choice for this data, or a companion visual for this data, would be a line chart.
+This stacked column chart shows us that **Total Revenue** is growing over time and that the **Commercial** and the **Broadcasting** categories are increasing steadily over time – contributing to overall revenue increase. However, this chart doesn’t make it easy to compare the impact each of the three categories has on each other. For example, "How does the growth of Commercial compare to the growth of Broadcasting or Match Day?" A better choice for this data, or a companion visual for this data, would be a line chart.
 
 ![Convert to a line chart.](media/power-bi-visualization-best-practices/power-bi-deloite2.png)
 
@@ -789,69 +840,83 @@ In this line chart, it's easier to see how commercial revenue has grown the most
 
 #### Best practices
 
-* As with columns/bars, you have the option of horizontal or vertical display. Horizontal is a better choice if you have long labels and vertical if you have time series data.
+* As with Column and Bar charts, you have the option of horizontal or vertical display. Horizontal is a better choice if you have long labels and vertical if you have time series data.
 
-* Avoid stacked Bar/Column charts if you want to show trends and other patterns of change over time. Other charts, like Line charts, do a much better job.
+* Avoid Stacked Bar and Column charts if you want to show trends and other patterns of change over time. Other charts, like Line charts, do a much better job.
 
-* You can also have the distribution based on total volume or as a % of total.
+* You can also have the distribution based on total volume or as a percentage of a total.
 
 * As Few noted:
 
     > *... it is difficult to compare the segments of a stacked bar. If you arranged the segments side-by-side and all grew upwards from the same baseline, it would be easy to compare their heights, but when stacked upon one another, the task becomes hard. Plus, although it’s fairly easy to see how (revenue) changed from month to month it is quite difficult to see how (revenue) in the other (categories) changed*.
 
-* 100% Stacked charts are a good choice when using percentages that add up to 100. In the example below, we see the category distribution by team. The percentages are relative and let us to, at a glance, see patterns. For example, Everton’s revenue comes primarily from Broadcasting (over 70%) while PSG only derives 20% of its revenue from Broadcasting. The choice of a horizontal display makes it easier to fit the team labels and to see the impact of revenue type.
+* 100% Stacked charts are a good choice when using percentages that add up to 100. In the example below, we see the category distribution by team. The percentages are relative and let us to, at a glance, see patterns. Everton’s revenue comes primarily from Broadcasting (over 70%) while PSG only derives 20% of its revenue from Broadcasting. The choice of a horizontal display makes it easier to fit the team labels and to see the impact of revenue type.
 
   ![Horizontal stacked chart.](media/power-bi-visualization-best-practices/power-bi-deloite3.png)
 
   **Figure 56: Horizontal stacked chart**
 
-For more info on stacked charts:
+For more info on Stacked charts:
 
 * [Data Visualization Catalogue: Stacked Bar Graphs](http://www.datavizcatalogue.com/methods/stacked_bar_graph.html#top)
 
 * [When are 100% stacked bar graphs useful?](http://www.perceptualedge.com/blog/?p=2239)
 
-### Combo Bar/Column charts
+### Combo Bar and Column charts
 
 ![Combo charts.](media/power-bi-visualization-best-practices/power-bi-combo.png)
 
-In Power BI, you can combine column and line charts into a combo chart. The choices are: Line and Stacked Column chart and Line and Clustered Column chart. Save valuable canvas space by combining two separate visuals into one.
+In Power BI, you can combine Column and Line charts into a Combo chart. The choices are: Line and Stacked Column chart and Line and Clustered Column chart. Save valuable canvas space by combining two separate visuals into one.
 
-The two screenshots below show a before and after. The first page has two separate visuals: a Column chart showing population over time and a Line chart showing GDP over time. These charts are a good candidate for a Combo chart because they have the same X-Axis (year) and values (2002 through 2012). Why not combine them to compare these two trends on a single visual? Combining these two charts lets you make a quicker comparison of the data.
-
-The new report page has a single visual: a line and stacked column chart. We could have easily created a line and clustered column chart. It’s now easier to look for a relationship between the two trends. We can see that up until 2008, population and GDP followed a similar trend. But starting in 2009, as population growth flattened, GDP was more volatile.
+The next two screenshots show a before and after.
 
 ![As two separate charts.](media/power-bi-visualization-best-practices/power-bi-spain-line.png)
 
  **Figure 57: As two separate charts**
 
+The first has two separate visuals: a Column chart showing population over time and a Line chart showing GDP over time. These charts are a good candidate for a Combo chart because they have the same X-Axis (year) and values (2002 through 2012). Why not combine them to compare these two trends on a single visual? Combining these two charts lets you make a quicker comparison of the data.
+
 ![As a single combo chart.](media/power-bi-visualization-best-practices/power-bi-spain-combo.png)
 
  **Figure 58: As a single combo chart**
 
+The new report page has a single visual: a Line and Stacked Column chart. We could have easily created a line and clustered column chart. It’s now easier to look for a relationship between the two trends. We can see that up until 2008, population and GDP followed a similar trend. But starting in 2009, as population growth flattened, GDP was more volatile.
+
 #### Best practices
 
-Combo charts work best when both visuals have at least one axis in common.
+* Combo charts work best when both visuals have at least one axis in common.
 
-Watch your axes! Is your Combo chart easy to read and interpret? Or does it use dissimilar ranges and values? If the scale of the column chart’s Y-Axis is much smaller than the scale of the line chart’s Y-Axis, your combo chart won’t be meaningful. Notice the third line (aqua color) way down at the bottom.
+* Watch your axes! Is your Combo chart easy to read and interpret? Does it use dissimilar ranges and values? If the scale of the column chart’s Y-Axis is much smaller than the scale of the line chart’s Y-Axis, your combo chart won’t be meaningful. Notice the third line (aqua color) way down at the bottom.
 
    ![An unsuccessful line chart.](media/power-bi-visualization-best-practices/power-bi-dual-line.png)
 
    **Figure 59: An unsuccessful line chart**
 
-Also, your combo chart won’t be meaningful if your column chart and line chart use two different measures and you don’t create dual axes. For example, dollars versus percent. Be sure to include both axes to help the reader understand the chart and consider adding axes labels as well.
+  Also, your combo chart won’t be meaningful if your column chart and line chart use two different measures and you don’t create dual axes. For example, dollars versus percent. Be sure to include both axes to help the reader understand the chart and consider adding axes labels as well.
 
-To create dual axes, open the Formatting pane, expand **Y-Axis** and set **Show Secondary** to On (if it isn’t already on). This setting is sometimes difficult to find; expand **Y-Axis (Column)** and scroll down until you see **Show secondary**. Also, set the Y-Axis (Column) **Title** to On and set the Y-Axis (Line) **Title** to On.
+  To create dual axes:
 
-![Show secondary axis.](media/power-bi-visualization-best-practices/power-bi-show-secondary-new.png)
+    1. Select the visual to make it active.
 
-**Figure 60: Show secondary axis**
+    1. Select ![Paint roller icon for Format pane.](media/power-bi-visualization-best-practices/power-bi-paint-roller.png) to open the **Format** pane.
 
-![Create a combo chart instead.](media/power-bi-visualization-best-practices/power-bi-combo-chart.png)
+    1. Expand **Y-Axis** and set **Show Secondary** to **On**.
 
-**Figure 61: Create a combo chart instead**
+          ![Show secondary axis.](media/power-bi-visualization-best-practices/power-bi-show-secondary-new.png)
 
-* Take advantage of dual axes. It’s a great way to compare multiple measures with different value ranges. And it’s a great way to illustrate the correlation between two measures in one visual.
+          **Figure 60: Show secondary axis**
+
+    1. Set the **Y-Axis (Column)** > **Title** to **On**.
+
+    1. Set the **Y-Axis (Line)** > **Title** to **On**.
+
+  Here's what the chart will look like:
+
+  ![Create a combo chart instead.](media/power-bi-visualization-best-practices/power-bi-combo-chart.png)
+
+  **Figure 61: Create a combo chart instead**
+
+* Take advantage of dual axes. It’s a great way to compare multiple measures with different value ranges. It’s a great way to illustrate the correlation between two measures in one visual.
 
 For more info:
 
@@ -863,15 +928,17 @@ For more info:
 
 ![Scatter chart](media/power-bi-visualization-best-practices/power-bi-scatter.png)
 
-Sometimes we have many variables that we want to see together, and a scatter chart can be a useful way to get an overall picture. Scatter charts display relationships between 2 (Scatter) or 3 (Bubble) quantitative measures. A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart shows points at the intersection of an x and y numerical value, combining these values into single data points. Power BI may distribute these data points evenly or unevenly across the horizontal axis, depending on the data.
+Sometimes we have many variables that we want to see together, and a scatter chart can be a useful way to get an overall picture. Scatter charts display relationships between 2 (Scatter) or 3 (Bubble) quantitative measures. A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart shows points at the intersection of an x and y numerical value, combining these values into single data points. Power BI may distribute these data points evenly or unevenly across the horizontal axis. It depends on the data.
 
 A bubble chart replaces the data points with bubbles, with the bubble size representing an additional dimension of the data.
 
-The bubble chart below looks at South America and compares GDP per capita (Y-Axis) sum of GDP (X-Axis) and population by South American country. The size of the bubbles represents total population for that country. Brazil has the largest population (bubble size) and the largest share of South America’s GDP (it's farthest along on the X-Axis). But notice that GDP per capita for Uruguay, Chile, and Argentina is higher than Brazil (farther up on the Y-Axis).
+The bubble chart below looks at South America and compares GDP per capita (Y-Axis) sum of GDP (X-Axis) and population by South American country.
 
 ![South America GDP and population as a bubble chart.](media/power-bi-visualization-best-practices/power-bi-bubble.png)
 
 **Figure 62: South America GDP and population as a bubble chart**
+
+The size of the bubbles represents total population for that country. Brazil has the largest population (bubble size) and the largest share of South America’s GDP. It's farthest along on the X-Axis. But notice that GDP per capita for Uruguay, Chile, and Argentina is higher than Brazil. They're farther up on the Y-Axis.
 
 If you add a play axis, you can pretend you're Hans Rosling and tell the story over time: [From Data to Insight & Impact: Showing Africa's Progress with Power View and PPI by Microsoft](https://www.youtube.com/watch?v=PbaDBJWCeD4). To add a play axis, drag a datetime field into the **Play Axis** well.
 
@@ -881,31 +948,31 @@ If you add a play axis, you can pretend you're Hans Rosling and tell the story o
 
     > *The strength of this approach is when it’s used to tell a story. When Rosling narrates what’s happening in the chart as the bubbles move around and change in value, pointing to what he wants us to see, the information comes alive. Animated bubble charts, however, are much less effective for exploring and making sense of data on our own. I doubt that Rosling uses this method to discover the stories, but only to tell them once they’re known. We can’t attend more than one bubble at once as they’re moving around, so we’re forced to run the animation over and over to try to get a sense of what’s going on. We can add trails to selected bubbles, which make it possible to review the full path these bubble have taken, but if you use trails for more than a few bubbles the chart will quickly become too cluttered. Essentially, what I’m pointing out is that this is not the best way to display this information for exploration and analysis.*
 
-* Add X and Y axes labels to help tell the story. Especially with bubble charts, there are many components at play and labels help readers understand the visual.
+* Add X and Y axes labels to help tell the story. Especially with Bubble charts, there are many components at play and labels help readers understand the visual.
 
-* Add data labels to make the visual easier to interpret. Especially with bubble charts, when you have many items in the Legend, it may be difficult to distinguish between similar colors. In the visual above, the legend colors for Suriname, Columbia, and Ecuador are similar.
+* Add data labels to make the visual easier to interpret. Especially with Bubble charts, when you have many items in the Legend, it may be difficult to distinguish between similar colors. In the visual above, the legend colors for Suriname, Columbia, and Ecuador are similar.
 
-* Did you create a scatter chart and see only one data point that aggregates all the values on the X and Y axes? Or, your chart aggregates all the values along a single horizontal or vertical line? To fix the aggregation, add a field to the **Details** area to tell Power BI how to group the values. The field must be unique for each point you want to plot. For help, refer to the [Power BI scatter and bubble chart tutorial](power-bi-visualization-scatter.md).
+* Did you create a scatter chart and see only one data point that aggregates all the values on the X and Y axes? Does your chart aggregate all the values along a single horizontal or vertical line? To fix the aggregation, add a field to the **Details** area to tell Power BI how to group the values. The field must be unique for each point you want to plot. For help, refer to the [Power BI scatter and bubble chart tutorial](power-bi-visualization-scatter.md).
 
 ### Treemap charts
 
 ![Treemap charts.](media/power-bi-visualization-best-practices/power-bi-treemap.png)
 
-Treemaps can be useful for giving a good overview of the relative size of different components that make up a whole -- especially when you can group them by categories. Anytime I try to understand a new business, having a treemap of the main components can be useful in knowing the overall distribution.
+Treemaps can be useful for giving a good overview of the relative size of different components that make up a whole; especially when you can group them by categories. Anytime I try to understand a new business, having a treemap of the main components can be useful in knowing the overall distribution.
 
-In the first chart below, you can see right away that Brazil makes up approximately half of South America’s GDP. You can also see that Venezuela and Argentina are roughly the same size.
+In the first chart below, you can see right away that Brazil makes up approximately half of South America’s GDP. You can also see that Columbia and Chile are roughly the same size.
 
 Let's say you want to have broader context and still have an idea of the impact of the top contributing countries. Create visual hierarchies with category members (countries) nested inside regions. Primarily, the second treemap gives us an idea of the relative size of the regions. Then, within each region, we can see which individual countries contribute the most. We see that there are three massive regions: Europe, Asia and North America. Within those regions, we can easily see the top countries/regions.
 
-The main limitation of a treemap is that it's difficult to compare the smaller rectangles. It's a good chart for an overview, but column and bar charts are probably a better choice to have more precise idea of the relative size of different components.
+The main limitation of a treemap is that it's difficult to compare the smaller rectangles. It's a good chart for an overview, but Column and Bar charts are probably a better choice to have more precise idea of the relative size of different components.
 
-The first treemap gives a broad indication of the order of the GDP size. However, it’s hard to identify specific differences between countries, particularly the smaller unlabeled boxes. For this data, where you compare a single grouping, a bar or column chart might be a better choice.
+The first treemap gives a broad indication of the order of the GDP size. However, it’s hard to identify specific differences between countries, particularly the smaller unlabeled leaves. For this data, where you compare a single grouping, a Bar or Column chart might be a better choice.
 
 ![South America GDP comparison as a treemap.](media/power-bi-visualization-best-practices/power-bi-treemap3.png)
 
 **Figure 63: South America GDP comparison as a treemap**
 
-Here we’ve added another level of data, region, and we can see the overall contribution to GDP by regions. Also, we can see the relative impact within the regions. Beware that doing this with non-summative measure (like averages), the sum of the details might not represent the actual value at the aggregate level.
+Next, we’ve added Region as another level of data. We can see the overall contribution to GDP by regions. Also, we can see the relative impact within the regions. Beware that doing this with non-summative measure (like averages), the sum of the details might not represent the actual value at the aggregate level.
 
 ![GDP by region and country as a treemap.](media/power-bi-visualization-best-practices/power-bi-treemap2.png)
 
@@ -923,19 +990,19 @@ For more info on treemaps:
 
 ![Pie or Donut charts](media/power-bi-visualization-best-practices/power-bi-donut.png)
 
-In general, bar/column/line charts will serve most purposes. It’s well understood that pie and donut charts are difficult for humans to interpret correctly. In fact, they can often distort data. Avoid them where possible. Stephen Few has an excellent write-up on the history and dangers in [Save the Pies for Dessert]([www.percetualedge.com/articles/08-21-07.pdf].
+In general, Bar, Column, and Line charts will serve most purposes. It’s well understood that Pie and Donut charts are difficult for humans to interpret correctly. In fact, they can often distort data. Avoid them where possible. Stephen Few has an excellent write-up on the history and dangers in [Save the Pies for Dessert](www.percetualedge.com/articles/08-21-07.pdf).
 
-He does explain the one time where pie charts can be useful, when comparing part-to-whole relationships. It is rarely better than, say, a 100% stacked bar chart.
+He does explain the one time where **Pie** charts can be useful, when comparing part-to-whole relationships. It is rarely better than a 100% Stacked Bar chart.
 
-You can find another fun article (and animation) about pie charts on the [Darkhorse Analytics site](http://www.darkhorseanalytics.com/blog/salvaging-the-pie).
+You can find another fun article (and animation) about **Pie** charts on the [Darkhorse Analytics site](http://www.darkhorseanalytics.com/blog/salvaging-the-pie).
 
-#### Radial Gauges & KPIs
+#### Radial gauges & KPIs
 
-![Radial gauges & KPIs.](media/power-bi-visualization-best-practices/power-bi-gauge.png)
+![Radial Gauges & KPIs.](media/power-bi-visualization-best-practices/power-bi-gauge.png)
 
-Radial gauges seem like a good visual for indicating performance against a target, and they are popular in executive dashboards. However, they suffer in two main ways. As with pie charts, it’s difficult to interpret the angle of the shaded area compared to the full 180-degree arc or target line. It also uses a lot of space to show a single metric.
+**Radial** gauges seem like a good visual for indicating performance against a target, and they are popular in executive dashboards. However, they suffer in two main ways. As with **Pie** charts, it’s difficult to interpret the angle of the shaded area compared to the full 180-degree arc or target line. It also uses a lot of space to show a single metric.
 
-A good alternative is a simple KPI visual
+A good alternative is a simple KPI visual:
 
 ![A simple KPI visual.](media/power-bi-visualization-best-practices/power-bi-kpi.png)
 
@@ -943,16 +1010,16 @@ KPIs show the value, status, goal, variance from the goal and trend in the same 
 
 For more info, see:
 
-* [Radial gauge charts in Power BI](power-bi-visualization-radial-gauge-charts.md)
+* [Radial Gauge charts in Power BI](power-bi-visualization-radial-gauge-charts.md)
 
 * [KPI visuals](power-bi-visualization-kpi.md)
 
 ## Conclusion
 
-Now it’s time for you to put these best practices to the test. Keep in touch and share your own best practices. Don’t agree with our recommendations or found a great reason to “break the rules?” We’d love to hear about those experiences as well.
+Now it’s time for you to put these best practices to the test. Keep in touch and share your own best practices. Don’t agree with our recommendations or found a great reason to break the rules? We’d love to hear about those experiences as well.
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
 ### Book recommendations
 
-There are many good books available today to help teams refresh their knowledge on visual design techniques. Stephen Few’s *Information Dashboard Design* book is a must-read. He delves into greater detail in two other books, *Show Me the Numbers* and *Now You See It*. Few and others have drawn inspiration from Edward R. Tufte, whose book *The Visual Display of Quantitative Information*. Professionals consider it a classic in the field. Tufte has also written *Visual Explanations*, *Envisioning Information*, and *Beautiful Evidence*. Andy Kirk’s new book *Data Visualization: A Handbook for Data Driven Design* is another great option. Some other recommended authors are: Lachlan James, William McKnight, and Boris Evelson (Forrester), Darkhorse Analytics.
-
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+There are many good books available today to help teams refresh their knowledge on visual design techniques. Stephen Few’s *Information Dashboard Design* is a must-read. He delves into greater detail in two other books: *Show Me the Numbers* and *Now You See It*. Few and others have drawn inspiration from Edward R. Tufte, whose book *The Visual Display of Quantitative Information* is considered a classic in the field. Tufte has also written *Visual Explanations*, *Envisioning Information*, and *Beautiful Evidence*. Andy Kirk’s new book *Data Visualization: A Handbook for Data Driven Design* is another great option. Some other recommended authors are: Lachlan James, William McKnight, and Boris Evelson (Forrester), Darkhorse Analytics.

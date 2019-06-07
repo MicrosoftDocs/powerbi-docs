@@ -8,7 +8,7 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2019
+ms.date: 06/06/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -21,7 +21,9 @@ This article gives a quick introduction to creating a visualization in a report.
 
 ## Open a report and add a new page
 
-1. Open a [report in Editing View](../consumer/end-user-reading-view.md). This tutorial uses the [Sales and Marketing sample](../sample-datasets.md).
+1. Open a [report in Editing View](../consumer/end-user-reading-view.md).
+
+    This tutorial uses the [Sales and Marketing sample](../sample-datasets.md).
 
 1. If the Fields pane isn't visible, select the arrow icon to open it.
 
@@ -31,11 +33,11 @@ This article gives a quick introduction to creating a visualization in a report.
 
 ## Add visualizations to the report
 
-1. Create a visualization by selecting a field from the **Fields** pane.  
+1. Create a visualization by selecting a field from the **Fields** pane.
 
-   **Start with a numeric field** like **SalesFact** > **Sales $**. Power BI creates a column chart with a single column.
+    **Start with a numeric field** like **SalesFact** > **Sales $**. Power BI creates a column chart with a single column.
 
-   ![](media/power-bi-report-add-visualizations-i/pbi_onecolchart.png)
+    ![Screenshot of a column chart with a single column.](media/power-bi-report-add-visualizations-i/pbi_onecolchart.png)
 
    **Or, start with a category field**, such as **Name** or **Product**: Power BI creates a Table and adds that field to the **Values** well.
 
