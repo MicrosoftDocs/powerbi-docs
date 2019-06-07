@@ -55,7 +55,7 @@ The following steps will allow you to create an app configuration policy. After 
 The Intune portal enables administrators to easily deploy these settings to Power BI iOS app via app configuration policies.
 However, any MDM provider is supported. If you are not using Intune, you'll need to consult with your MDM documentation on how to deploy these settings.
 
-### Next steps
+## Next steps
 
 * Download the [Power BI iPhone mobile app](http://go.microsoft.com/fwlink/?LinkId=522062)
 * Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
