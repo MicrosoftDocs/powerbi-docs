@@ -123,13 +123,13 @@ The value for the *ServiceBusSystemConnectivityModeString* parameter is case-sen
 
 Alternatively, you can force the gateway to adopt this behavior using the gateway user interface. In the gateway user interface select **Network**, then toggle the **Azure Service Bus connectivity mode** to **On**.
 
-![](./media/gateway-onprem-accounts-ports-more/gw-onprem_01.png)
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_01.png)
 
 Once changed, when you select **Apply** (a button that only appears when you make a change), the *gateway Windows service* restarts automatically, so the change can take effect.
 
 For future reference, you can restart the *gateway Windows service* from the user interface dialog by selecting **Service Settings** then select *Restart Now*.
 
-![](./media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
 ### Additional guidance
 This section provides additional guidance for deploying and managing gateways.
