@@ -169,7 +169,7 @@ Select each of your queries in the **Queries** list on the left side of Power Qu
 ![Products query Applied Steps](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/15.png) &nbsp;&nbsp; ![Orders query Applied Steps](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/17.png)
 
 >[!TIP]
->Underlying the Applied Steps are formulas written in the **Power Query Language**, also known as the [**M** language](/powerquery-m/power-query-m-reference). To see and edit the formulas, select **Advanced Editor** in the **Query** group of the Home tab of the ribbon. 
+>Underlying the Applied Steps are formulas written in the **Power Query Language**, also known as the [**M** language](https://docs.microsoft.com/powerquery-m/power-query-m-reference). To see and edit the formulas, select **Advanced Editor** in the **Query** group of the Home tab of the ribbon. 
 
 ## Import the transformed queries
 
