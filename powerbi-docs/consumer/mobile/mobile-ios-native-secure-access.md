@@ -24,7 +24,7 @@ Power BI iOS app lets you protect your data by configuring additional identifica
 
 ## Turn on Face ID, Touch ID, or passcode in app setting
 
-To use additional identification in Power BI, go to the app setting under **Privacy and Security**. You'll see the option to turn on Face, Touch ID, or passcode, based on your device capabilities.
+To use additional identification in Power BI, go to the app setting under **Privacy and Security**. You'll see the option to turn on Face ID, Touch ID, or passcode, based on your device capabilities.
 
 ![Power BI iOS app setting page](./media/mobile-ios-native-secure-access/mobile-ios-native-secured-setting.png)
 
