@@ -50,7 +50,7 @@ If you have both a personal OneDrive and OneDrive for Business, you should keep 
 
 When you connect to OneDrive for Business in Power BI, connection is easy because your Power BI account is often the same account as your OneDrive for Business account. With personal OneDrive, you usually sign in with a different [Microsoft account](https://account.microsoft.com).
 
-When you sign in with your Microsoft account, be sure to select **Keep me signed in**. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI.
+When you sign in with your Microsoft account, be sure to select **Keep me signed in**. Power BI can then synchronize any updates you make in the file in **Power BI Desktop** with datasets in Power BI.
 
 ![](media/refresh-desktop-file-onedrive/refresh_signin_keepmesignedin.png)
 
@@ -59,12 +59,12 @@ You may end up having a hard time logging into your Microsoft account because yo
 ## How do I schedule refresh?
 When you set up a refresh schedule, Power BI connects directly to the data sources. Power BI uses connection information and credentials in the dataset to query for updated data. Then Power BI loads the updated data into the dataset. It then updates any report visualizations and dashboards based on that dataset in the Power BI service.
 
-For details on how to setup schedule refresh, see [Configure Schedule Refresh](refresh-scheduled-refresh.md).
+For details on how to setup schedule refresh, see [Configure scheduled refresh](refresh-scheduled-refresh.md).
 
 ## When things go wrong
 When things go wrong, it’s usually because Power BI can’t sign into data sources. Things may also go wrong if the dataset tries to connect to an on-premises data source but the gateway is offline. To avoid these issues, make sure Power BI can sign into data sources. Try signing into your data sources in Data Source Credentials. Sometimes the password you use to sign into a data source changes or Power BI gets signed out from a data source.
 
-When you save your changes to the Power BI Desktop file on OneDrive, you may not see those changes in Power BI within an hour or so. If you don't see the changes, it could be because Power BI can't connect to your OneDrive. Try connecting to the file on OneDrive again. If you’re prompted to sign in, make sure you select Keep me signed in. Because Power BI wasn't able to connect to your OneDrive to synchronize with the file, you’ll need to import your file again.
+When you save your changes to the **Power BI Desktop** file on OneDrive, you may not see those changes in Power BI within an hour or so. If you don't see the changes, it could be because Power BI can't connect to your OneDrive. Try connecting to the file on OneDrive again. If you’re prompted to sign in, make sure you select Keep me signed in. Because Power BI wasn't able to connect to your OneDrive to synchronize with the file, you’ll need to import your file again.
 
 Be sure to leave the **Send refresh failure notification email to me** checked. You’ll want to know right away if a scheduled refresh fails.
 
@@ -75,5 +75,5 @@ Sometimes refreshing data may not go as expected. You'll typically run into data
 
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? Try asking the [Power BI Community](http://community.powerbi.com/).
 
