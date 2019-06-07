@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/11/2019
+ms.date: 06/06/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -103,11 +103,11 @@ When in **Power BI Desktop**, notice that some areas such as the **Visualization
 ## Considerations and limitations
 There are a few known issues and limitations with the accessibility features, described in the following list:
 
-* When using screen readers with **Power BI Desktop**, you'll have the best experience if you open your screen reader of choice prior to opening any files in Power BI Desktop.
+* When using screen readers with **Power BI Desktop**, you'll have the best experience if you open your screen reader of choice prior to opening any files in **Power BI Desktop**.
 * If you are using Narrator, there are some limitations around navigating Show data as an HTML table.
 
 ## Keyboard Shortcuts
-Keyboard shortcuts are helpful for moving around in Power BI reports using a keyboard. The following tables describe the shortcuts available in a Power BI report. In addition to using these keyboard shortcuts in Power BI Desktop, these shortcuts work in the following experiences as well:
+Keyboard shortcuts are helpful for moving around in Power BI reports using a keyboard. The following tables describe the shortcuts available in a Power BI report. In addition to using these keyboard shortcuts in **Power BI Desktop**, these shortcuts work in the following experiences as well:
 
 * Q&A Explorer dialog
 * Getting Started dialog
