@@ -163,7 +163,7 @@ Below is a sample script to retrieve the service principal object ID with PowerS
 
 * Service principal only works with [new app workspaces](../service-create-the-new-workspaces.md).
 * **My Workspace** isn't supported when using service principal.
-* Dedicated Premium capacity is required when moving to production.
+* Dedicated capacity is required when moving to production.
 * You can't sign into the Power BI portal using service principal.
 * Power BI admin rights are required to enable service principal in developer settings within the Power BI admin portal.
 * You can't install or manage an on-premises data gateway using service principal.

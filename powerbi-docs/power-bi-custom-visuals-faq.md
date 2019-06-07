@@ -82,7 +82,7 @@ To certify a custom visual, it should be in our servers. We cannot certify priva
  
 ### How long does it take to certify my visual?
 
-For updated version it may take up to 2 weeks. For a new submission (first-time certification) it may take up to 3 weeks. 
+For updated version it may take up to 3 weeks. For a new submission (first-time certification) it may take up to 4 weeks. 
 
 ### Does the Certification process ensure that no data leakage occurs?
 
