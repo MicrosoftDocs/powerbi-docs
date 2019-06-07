@@ -1,10 +1,8 @@
 ---
 title: "Expressions in Power BI Report Builder"
 ms.date: 06/06/2019
-ms.prod: reporting-services
-ms.prod_service: "reporting-services-native"
-ms.technology: report-design
-
+ms.service: powerbi
+ms.subservice: report-builder
 
 ms.topic: conceptual
 ms.assetid: 76d3ac86-650c-46fe-8086-8b3edcea3882

@@ -1,10 +1,8 @@
 ---
 title: "Power BI Paginated Report Builder"
 ms.date: 06/06/2019
-ms.prod: reporting-services
-ms.prod_service: "reporting-services-native"
-ms.technology: report-builder
-
+ms.service: powerbi
+ms.subservice: report-builder
 
 ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5

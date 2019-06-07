@@ -1,9 +1,8 @@
 ---
 title: "Report parameters in Power BI Report Builder"
 description: This topic describes the common uses for Power BI Report Builder report parameters, the properties you can set, and much more.
-ms.prod: reporting-services
-ms.prod_service: "reporting-services-native"
-ms.technology: report-design
+ms.service: powerbi
+ms.subservice: report-builder
 ms.custom: seodec18
 ms.topic: conceptual
 author: maggiesMSFT

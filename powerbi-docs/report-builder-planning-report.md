@@ -1,10 +1,8 @@
 ---
 title: "Planning a report in Power BI Report Builder"
 ms.date: 06/06/2019
-ms.prod: reporting-services
-ms.prod_service: "reporting-services-native"
-ms.technology: report-design
-
+ms.service: powerbi
+ms.subservice: report-builder
 
 ms.topic: conceptual
 ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813

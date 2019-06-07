@@ -1,10 +1,8 @@
 ---
 title: "Tables, matrixes, and lists in Power BI Report Builder"
 ms.date: 06/05/2019
-ms.prod: reporting-services
-ms.prod_service: "reporting-services-native"
-ms.technology: report-design
-
+ms.service: powerbi
+ms.subservice: report-builder
 
 ms.topic: conceptual
 ms.assetid: 9dcf3fc8-bf9c-4a14-a03d-e78254aa4098
