@@ -1,5 +1,6 @@
 ---
 title: "Expression examples in Power BI Report Builder"
+description: 
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -29,14 +30,14 @@ This topic provides examples of expressions that can be used for common tasks in
 For more information about simple and complex expressions, where you can use expressions, and the types of references that you can include in an expression, see topics under [Expressions in Power BI Report Builder](report-builder-expressions.md). 
   
 ## Functions  
- Many expressions in a report contain functions. You can format data, apply logic, and access report metadata using these functions. You can write expressions that use functions from the Microsoft Visual Basic run-time library, and from the <xref:System.Convert> and <xref:System.Math> namespaces. You can add references to functions from other assemblies or custom code. You can also use classes from the Microsoft .NET Framework, including <xref:System.Text.RegularExpressions>.  
+ Many expressions in a report contain functions. You can format data, apply logic, and access report metadata using these functions. You can write expressions that use functions from the Microsoft Visual Basic run-time library, and from the `xref:System.Convert` and `xref:System.Math` namespaces. You can add references to functions from other assemblies or custom code. You can also use classes from the Microsoft .NET Framework, including `xref:System.Text.RegularExpressions`.  
   
-##  <a name="VisualBasicFunctions"></a> Visual Basic Functions  
+##  <a name="VisualBasicFunctions"></a> Visual Basic functions  
  You can use Visual Basic functions to manipulate the data that is displayed in text boxes or that is used for parameters, properties, or other areas of the report. This section provides examples demonstrating some of these functions. For more information, see [Visual Basic Runtime Library Members](https://go.microsoft.com/fwlink/?LinkId=198941) on MSDN.  
   
  The .NET Framework provides many custom format options, for example, for specific date formats. For more information, see [Formatting Types](https://go.microsoft.com/fwlink/?LinkId=112024) on MSDN.  
   
-### Math Functions  
+### Math functions  
   
 -   The **Round** function is useful to round numbers to the nearest integer. The following expression rounds a 1.3 to 1:  
   
@@ -50,7 +51,7 @@ For more information about simple and complex expressions, where you can use exp
     = Round(1.3*5)/5  
     ```  
   
-###  <a name="DateFunctions"></a> Date Functions  
+###  <a name="DateFunctions"></a> Date functions  
   
 -   The **Today** function provides the current date. This expression can be used in a text box to display the date on the report, or in a parameter to filter data based on the current date.  
   
@@ -155,7 +156,7 @@ For more information about simple and complex expressions, where you can use exp
 |One Year Ago|`=DateSerial(Year(Parameters!TodaysDate.Value)-1,Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value))`|  
 |Two Years Ago|`=DateSerial(Year(Parameters!TodaysDate.Value)-2,Month(Parameters!TodaysDate.Value),Day(Parameters!TodaysDate.Value))`|  
   
-###  <a name="StringFunctions"></a> String Functions  
+###  <a name="StringFunctions"></a> String functions  
   
 -   Combine more than one field by using concatenation operators and Visual Basic constants. The following expression returns two fields, each on a separate line in the same text box:  
   
@@ -177,7 +178,7 @@ For more information about simple and complex expressions, where you can use exp
     =Right(Parameters!User.Value, Len(Parameters!User.Value) - InStr(Parameters!User.Value, "\"))  
     ```  
   
-     The following expression results in the same value as the previous one, using members of the .NET Framework <xref:System.String> class instead of Visual Basic functions:  
+     The following expression results in the same value as the previous one, using members of the .NET Framework `xref:System.String` class instead of Visual Basic functions:  
   
     ```  
     =Parameters!User.Value.Substring(Parameters!User.Value.IndexOf("\")+1, Parameters!User.Value.Length-Parameters!User.Value.IndexOf("\")-1)  
@@ -196,14 +197,14 @@ For more information about simple and complex expressions, where you can use exp
   
     ```  
   
--   The **Regex** functions from the .NET Framework <xref:System.Text.RegularExpressions> are useful for changing the format of existing strings, for example, formatting a telephone number. The following expression uses the **Replace** function to change the format of a ten-digit telephone number in a field from "*nnn*-*nnn*-*nnnn*" to "(*nnn*) *nnn*-*nnnn*":  
+-   The **Regex** functions from the .NET Framework `xref:System.Text.RegularExpressions` are useful for changing the format of existing strings, for example, formatting a telephone number. The following expression uses the **Replace** function to change the format of a ten-digit telephone number in a field from "*nnn*-*nnn*-*nnnn*" to "(*nnn*) *nnn*-*nnnn*":  
   
     ```  
     =System.Text.RegularExpressions.Regex.Replace(Fields!Phone.Value, "(\d{3})[ -.]*(\d{3})[ -.]*(\d{4})", "($1) $2-$3")  
     ```  
   
     > [!NOTE]  
-    >  Verify that the value for Fields!Phone.Value has no extra spaces and is of type <xref:System.String>.  
+    >  Verify that the value for Fields!Phone.Value has no extra spaces and is of type `xref:System.String`.  
   
 ### Lookup  
   
@@ -221,7 +222,7 @@ For more information about simple and complex expressions, where you can use exp
     =Join(LookupSet(Fields!ContactID.Value, Fields!PersonID.Value, Fields!PhoneNumber.Value, "PhoneList"),",")  
     ```  
   
-###  <a name="ConversionFunctions"></a> Conversion Functions  
+###  <a name="ConversionFunctions"></a> Conversion functions  
  You can use Visual Basic functions to convert a field from the one data type to a different data type. Conversion functions can be used to convert the default data type for a field to the data type needed for calculations or to combine text.  
   
 -   The following expression converts the constant 500 to type Decimal in order to compare it to a Transact-SQL money data type in the Value field for a filter expression.  
@@ -236,7 +237,7 @@ For more information about simple and complex expressions, where you can use exp
     =CStr(Parameters!MySelection.Count)  
     ```  
   
-###  <a name="DecisionFunctions"></a> Decision Functions  
+###  <a name="DecisionFunctions"></a> Decision functions  
   
 -   The **Iif** function returns one of two values depending on whether the expression is true or not. The following expression uses the **Iif** function to return a Boolean value of **True** if the value of `LineTotal` exceeds 100. Otherwise it returns **False**:  
   
@@ -291,7 +292,7 @@ For more information about simple and complex expressions, where you can use exp
   
     ```  
   
-##  <a name="ReportFunctions"></a> Report Functions  
+##  <a name="ReportFunctions"></a> Report functions  
  In an expression, you can add a reference to additional report functions that manipulate data in a report. This section provides examples for two of these functions. 
   
 ###  <a name="Sum"></a> Sum  
@@ -318,10 +319,10 @@ For more information about simple and complex expressions, where you can use exp
     =RowNumber(Nothing)  
     ```  
   
-##  <a name="AppearanceofReportData"></a> Appearance of Report Data  
+##  <a name="AppearanceofReportData"></a> Appearance of report data  
  You can use expressions to manipulate how data appears on a report. For example, you can display the values of two fields in a single text box, display information about the report, or affect how page breaks are inserted in the report.  
   
-###  <a name="PageHeadersandFooters"></a> Page Headers and Footers  
+###  <a name="PageHeadersandFooters"></a> Page headers and footers  
  When designing a report, you may want to display the name of the report and page number in the report footer. To do this, you can use the following expressions:  
   
 -   The following expression provides the name of the report and the time it was run. It can be placed in a text box in the report footer or in the body of the report. The time is formatted with the .NET Framework formatting string for short date:  
@@ -361,7 +362,7 @@ For more information about simple and complex expressions, where you can use exp
 > [!NOTE]  
 >  You can refer to only one report item per expression in a page header or footer. Also, you can refer to the text box name, but not the actual data expression within the text box, in page header and footer expressions.  
   
-###  <a name="PageBreaks"></a> Page Breaks  
+###  <a name="PageBreaks"></a> Page breaks  
  In some reports, you may want to place a page break at the end of a specified number of rows instead of, or in addition to, on groups or report items. To do this, create a group that contains the groups or detail records you want, add a page break to the group, and then add a group expression to group by a specified number of rows.  
   
 -   The following expression, when placed in the group expression, assigns a number to each set of 25 rows. When a page break is defined for the group, this expression results in a page break every 25 rows.  
@@ -406,7 +407,7 @@ For more information about simple and complex expressions, where you can use exp
 > [!NOTE]  
 >  Available colors come from the .NET Framework KnownColor enumeration.  
   
-### Chart Colors  
+### Chart colors  
  To specify colors for a Shape chart, you can use custom code to control the order that colors are mapped to data point values. This helps you use consistent colors for multiple charts that have the same category groups. 
   
 ###  <a name="Visibility"></a> Visibility  
@@ -445,7 +446,7 @@ For more information about simple and complex expressions, where you can use exp
     =IIF(Parameters!IncludeURLs.Value,"https://adventure-works.com/productcatalog",Nothing)  
     ```  
   
-##  <a name="ReportData"></a> Report Data  
+##  <a name="ReportData"></a> Report data  
  Expressions can be used to manipulate the data that is used in the report. You can refer to parameters and other report information. You can even change the query that is used to retrieve data for the report.  
   
 ###  <a name="Parameters"></a> Parameters  
@@ -469,13 +470,13 @@ For more information about simple and complex expressions, where you can use exp
     =Fields(Parameters!ParameterField.Value).Value  
     ```  
   
-##  <a name="CustomCode"></a> Custom Code  
+##  <a name="CustomCode"></a> Custom code  
  You can use custom code in a report. Custom code is either embedded in a report or stored in a custom assembly which is used in the report.  
   
-### Using Group Variables for Custom Aggregation  
+### Using group variables for custom aggregation  
  You can initialize the value for a group variable that is local to a particular group scope and then include a reference to that variable in expressions. One of the ways that you can use a group variable with custom code is to implement a custom aggregate. 
   
-## Suppressing Null or Zero Values at Run Time  
+## Suppressing null or zero values at run time  
  Some values in an expression can evaluate to null or undefined at report processing time. This can create run-time errors that result in **#Error** displaying in the text box instead of the evaluated expression. The **IIF** function is particularly sensitive to this behavior because, unlike an If-Then-Else statement, each part of the **IIF** statement is evaluated (including function calls) before being passed to the routine that tests for **true** or **false**. The statement `=IIF(Fields!Sales.Value is NOTHING, 0, Fields!Sales.Value)` generates **#Error** in the rendered report if `Fields!Sales.Value` is NOTHING.  
   
  To avoid this condition, use one of the following strategies:  

@@ -1,5 +1,6 @@
 ---
 title: "Report design tips in Power BI Report Builder"
+description: 
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder

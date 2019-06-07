@@ -1,5 +1,6 @@
 ---
 title: "Expressions in Power BI Report Builder"
+description: 
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -66,7 +67,7 @@ Simple expressions use symbols to indicate whether the reference is to a field, 
 |Operators|Describes the operators you can use to combine references in an expression. For example, the **&** operator is used for concatenating strings.|`="The report ran at: " & Globals!ExecutionTime & "."`|  
 |Built-in Collections|Describes the built-in collections that you can include in an expression, such as `Fields`, `Parameters`, and `Variables`.|`=Fields!Sales.Value`<br /><br /> `=Parameters!Store.Value`<br /><br /> `=Variables!MyCalculation.Value`|  
 |Built-in Report and Aggregate Functions|Describes the built-in functions, such as `Sum` or `Previous`, that you can access from an expression.|`=Previous(Sum(Fields!Sales.Value))`|  
-|Custom Code and Assembly References in Expressions in Report Builder |Describes how you can access the built-in CLR classes <xref:System.Math> and <xref:System.Convert>, other CLR classes, Visual Basic run-time library functions, or methods from an external assembly.<br /><br /> Describes how you can access custom code that is embedded in your report, or that you compile and install as a custom assembly on both the report client and the report server.|`=Sum(Fields!Sales.Value)`<br /><br /> `=CDate(Fields!SalesDate.Value)`<br /><br /> `=DateAdd("d",3,Fields!BirthDate.Value)`<br /><br /> `=Code.ToUSD(Fields!StandardCost.Value)`|  
+|Custom Code and Assembly References in Expressions in Report Builder |Describes how you can access the built-in CLR classes `xref:System.Math` and `xref:System.Convert`, other CLR classes, Visual Basic run-time library functions, or methods from an external assembly.<br /><br /> Describes how you can access custom code that is embedded in your report, or that you compile and install as a custom assembly on both the report client and the report server.|`=Sum(Fields!Sales.Value)`<br /><br /> `=CDate(Fields!SalesDate.Value)`<br /><br /> `=DateAdd("d",3,Fields!BirthDate.Value)`<br /><br /> `=Code.ToUSD(Fields!StandardCost.Value)`|  
    
 ##  <a name="Valid"></a> Validating expressions  
  When you create an expression for a specific report item property, the references that you can include in an expression depend on the values that the report item property can accept and the scope in which the property is evaluated. For example:  

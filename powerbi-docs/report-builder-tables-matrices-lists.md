@@ -1,5 +1,6 @@
 ---
 title: "Tables, matrixes, and lists in Power BI Report Builder"
+description: 
 ms.date: 06/05/2019
 ms.service: powerbi
 ms.subservice: report-builder
