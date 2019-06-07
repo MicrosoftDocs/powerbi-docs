@@ -102,7 +102,7 @@ The gateway creates an outbound connection to the **Azure Service Bus**. The gat
 
 The gateway does *not* require inbound ports. All required ports are listed in the above list.
 
-It is recommended that you whitelist the IP addresses, for your data region, in your firewall. You can download list of IP addresses, which are found in the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653). That list is updated weekly. The gateway will communicate with **Azure Service Bus** using the specified IP address, along with the fully qualified domain name (FQDN). If you're forcing the gateway to communicate using HTTPS, the gateway strictly uses FQDN only, and no communication will occur using IP addresses.
+It is recommended that you add the IP addresses to an allow list, for your data region, in your firewall. You can download list of IP addresses, which are found in the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653). That list is updated weekly. The gateway will communicate with **Azure Service Bus** using the specified IP address, along with the fully qualified domain name (FQDN). If you're forcing the gateway to communicate using HTTPS, the gateway strictly uses FQDN only, and no communication will occur using IP addresses.
 
 #### Forcing HTTPS communication with Azure Service Bus
 
