@@ -20,7 +20,7 @@ ms.author: maggies
 > [!NOTE]  
 > There are some differences between previewing in Report Builder and viewing in a browser. For example, a calendar control, which is added to a report when you specify a Date/Time type parameter, is different in Report Builder and in a browser. 
   
-## Improving Preview Performance  
+## Improving preview performance  
  How you create and update reports affects how fast the report renders in preview. The first time that you preview a report that relies on a server reference, an edit session is created for you and the data used when the report is run is added to a data cache that is stored. When you make changes to the report that does not affect the data, the cached copy of the data is used by the report. This means that you will not see data change each time you preview the report. If you want new data, click the **Refresh** button on the ribbon.  
   
  The following actions cause the cache to be refreshed and slow down report rendering the next time you preview the report:  
@@ -28,7 +28,7 @@ ms.author: maggies
 -   Add, change, or delete a dataset. The cached dataset contains all the datasets that a report uses and modification to any dataset invalidates the cached dataset. This includes changing the name, query, or fields in the dataset.  
   
     > [!NOTE]  
-    >  If the dataset has a large number of fields that you do not expect to use, you should consider updating the dataset to omit those fields. Although this creates a new edit session and the first preview of the report is slower, there smaller cached dataset is overall beneficial to the performance of the report server.  
+    >  If the dataset has a large number of fields that you don't expect to use, you should consider updating the dataset to omit those fields. Although this creates a new edit session and the first preview of the report is slower, there smaller cached dataset is overall beneficial to the performance of the report server.  
   
 -   Add, change, or delete a data source. This includes changing the name or properties of the data source, the data extension of the data source, or the properties of the connection to the data source.  
   
@@ -40,7 +40,7 @@ ms.author: maggies
   
 -   Add, change, or delete the query parameters in the report or parameter values.  
   
- Changes to the report layout and data formatting do not affect the cached dataset. You can do the following actions without refreshing the cached dataset:  
+ Changes to the report layout and data formatting don't affect the cached dataset. You can do the following actions without refreshing the cached dataset:  
   
 -   Add or remove data regions such as tables, matrices or charts.  
   
@@ -60,10 +60,10 @@ The edit session is created the first time that you preview a report. By default
   
 By default, the data cache can hold up to five datasets. If you use many different combinations of parameter values, the report might need more data. This requires the cache be refreshed and the report renders more slowly the next time that you preview it. 
   
-## Concurrency of Report Updates  
+## Concurrency of report updates  
 Frequently, you preview a report as a step in updating and then saving a report to the Power BI service. When you are updating a report, it is possible that someone else is updating and then saving the report at the same time. The report that is saved last is the version of report that is available for future viewing and updating. This means that the version of the report that you previewed might not be the version you reopen. You have the option to save the report with a new name by using the **Save As** option on the Report Builder menu.  
   
-## External Report Items  
+## External report items  
  Your report might include items such as external images that are stored separately from the report. Because the items are stored separately it is possible that they can be moved to a different location or be deleted. If this happens, your report could fail to preview. You can either update the report to indicate the updated location of the item or if the item was deleted, replace it with an existing item, or remove the reference to the item it from the report.  
   
 ## Next steps

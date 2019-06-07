@@ -12,28 +12,28 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Tables, matrixes, and lists in Power BI Report Builder
- In Report Builder, tables, matrices, and lists are *data regions* that display paginated report data in cells that are organized into rows and columns. The cells typically contain text data such as text, dates, and numbers but they can also contain gauges, charts, or report items such as images. Collectively, tables, matrices, and lists are frequently referred to as *tablix* data regions.  
+ In Report Builder, tables, matrixes, and lists are *data regions* that display paginated report data in cells that are organized into rows and columns. The cells typically contain text data such as text, dates, and numbers but they can also contain gauges, charts, or report items such as images. Collectively, tables, matrixes, and lists are frequently referred to as *tablix* data regions.  
   
  The table, matrix, and list templates are built on the tablix data region, which is a flexible grid that can display data in cells. In the table and matrix templates, cells are organized into rows and columns. Because templates are variations of the underlying generic tablix data region, you can display data in combination of template formats and change the table, matrix, or list on to include the features of another data region as you develop your report. For example, if you add a table and find it does not serve your needs, you can add column groups to make the table a matrix.  
   
- The table and matrix data regions can display complex data relationships by including nested tables, matrices, lists, charts and gauges. Tables and matrices have a tabular layout and their data comes from a single dataset, built on a single data source. The key difference between tables and matrices is that tables can include only row groups, where as matrices have row groups and column groups.  
+ The table and matrix data regions can display complex data relationships by including nested tables, matrixes, lists, charts and gauges. Tables and matrixes have a tabular layout and their data comes from a single dataset, built on a single data source. The key difference between tables and matrixes is that tables can include only row groups, where as matrixes have row groups and column groups.  
   
- Lists are a little different. They support a free-layout that and can include multiple peer tables or matrices, each using data from a different dataset. Lists can also be used for forms, such as invoices.  
+ Lists are a little different. They support a free-layout that and can include multiple peer tables or matrixes, each using data from a different dataset. Lists can also be used for forms, such as invoices.  
   
  The following pictures show simple reports with a table, matrix, or list.  
 
 ![Report Builder table, matrix, and list](media/report-builder-tables-matrices-lists/report-builder-table-matrix-list.png)
   
-##  <a name="Table"></a> Table  
+##  <a name="Table"></a> Tables  
  Use a table to display detail data, organize the data in row groups, or both. The Table template contains three columns with a table header row and a details row for data. The following figure shows the initial table template, selected on the design surface:  
 
 ![Report Builder table template on design surface, selected](media/report-builder-tables-matrices-lists/report-builder-new-table.png)
   
- You can group data by a single field, by multiple fields, or by writing your own expression. You can create nested groups or independent, adjacent groups and display aggregated values for grouped data, or add totals to groups. For example, if your table has a row group called [Category], you can add a subtotal for each group as well as a grand total for the report. To improve the appearance of the table and highlight data you want to emphasize, you can merge cells and apply formatting to data and table headings.  
+ You can group data by a single field, by multiple fields, or by writing your own expression. You can create nested groups or independent, adjacent groups and display aggregated values for grouped data, or add totals to groups. For example, if your table has a row group called **Category**, you can add a subtotal for each group as well as a grand total for the report. To improve the appearance of the table and highlight data you want to emphasize, you can merge cells and apply formatting to data and table headings.  
   
  You can initially hide detail or grouped data, and include drilldown toggles to enable a user to interactively choose how much data to show.  
   
-##  <a name="Matrix"></a> Matrix  
+##  <a name="Matrix"></a> Matrixes  
  Use a matrix to display aggregated data summaries, grouped in rows and columns, similar to a PivotTable or crosstab. The number of rows and columns for groups is determined by the number of unique values for each row and column groups. The following figure shows the initial matrix template, selected on the design surface:  
 
 ![Report Builder new matrix added from Toolbox, selected](media/report-builder-tables-matrices-lists/report-builder-new-matrix.png)
@@ -44,27 +44,25 @@ ms.author: maggies
   
  You can also include drilldown toggles that initially hide detail data; the user can then click the toggles to display more or less detail as needed.  
   
-##  <a name="List"></a> List  
+##  <a name="List"></a> Lists  
  Use a list to create a free-form layout. You are not limited to a grid layout, but can place fields freely inside the list. You can use a list to design a form for displaying many dataset fields or as a container to display multiple data regions side by side for grouped data. For example, you can define a group for a list; add a table, chart, and image; and display values in table and graphic form for each group value, as you might for an employee or patient record.  
 
 ![Report Builder new list added from Toolbox, selected](media/report-builder-tables-matrices-lists/report-builder-new-list.png)
   
- For more information, see [Create Invoices and Forms with Lists].  
-  
-##  <a name="PreparingData"></a> Preparing Data  
+##  <a name="PreparingData"></a> Preparing data  
  A table, matrix, and list data regions display data from a dataset. You can prepare the data in the query that retrieves the data for the dataset or by setting properties in the table, matrix, or list.  
   
  The query languages such as Transact-SQL, that you use to retrieve the data for the report datasets can prepare the data by applying filters to include only a subset of the data, replacing null values or blanks with constants that make the report more readable, and sorting and grouping data.  
   
  If you choose to prepare the data in the table, matrix, or list data region of a report, you set properties on the data region or cells within the data region. If you want to filter or sort the data, set the properties on the data region. For example, to sort the data you specify the columns to sort on and the sort direction. If you want to provide an alternative value for a field, you set the values of the cell text that displays the field. For example, to display Blank when a field is empty or null, you use an expression to set the value.  
   
-##  <a name="BuildingConfiguringTableMatrixList"></a> Building and Configuring a Table, Matrix, or List  
- When you add tables or matrices to your report, you can use the Table and Matrix Wizard or build them manually from the templates that Report Builder and Report Designer provide. Lists are built manually from the list template.  
+##  <a name="BuildingConfiguringTableMatrixList"></a> Building and configuring a table, matrix, or list  
+ When you add tables or matrixes to your report, you can use the Table and Matrix Wizard or build them manually from the templates that Report Builder and Report Designer provide. Lists are built manually from the list template.  
   
  The wizard guides you through the steps to quickly build and configure a table or matrix. After you complete the wizard or if you build the tablix data regions from scratch, you can further configure and refine them. The dialog boxes, available from the right-click menus on the data regions, make it easy to set the most commonly used properties for page breaks, repeatability and visibility of headers and footers, display options, filters, and sorting. But the tablix data region provides a wealth of additional properties, which you can set only in the Properties pane of Report Builder. For example, if you want to display a message when the dataset for a table, matrix, or list is empty, you specify the message text in the NoRowsMessage tablix property in the Properties pane.  
   
-##  <a name="ChangingBetweenTablixTemplates"></a> Changing Between Tablix Templates  
- You are not limited by your initial tablix template choice. As you add groups, totals, and labels, you might want to modify your tablix design. For example, you might start with a table and then delete the details row and add column groups. For more information, see [Exploring the Flexibility of a Tablix Data Region &#40;Report Builder and SSRS&#41;](../../reporting-services/report-design/exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs.md).  
+##  <a name="ChangingBetweenTablixTemplates"></a> Changing between tablix templates  
+ You are not limited by your initial tablix template choice. As you add groups, totals, and labels, you might want to modify your tablix design. For example, you might start with a table and then delete the details row and add column groups.  
   
  You can continue to develop a table, matrix, or list by adding any tablix feature. Tablix features include displaying detail data or aggregates for grouped data on rows and columns. You can create nested groups, independent adjacent groups, or recursive groups. You can filter and sort grouped data, and easily combine groups by including multiple group expressions in a group definition  
   

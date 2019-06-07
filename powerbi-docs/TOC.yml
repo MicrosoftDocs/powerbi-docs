@@ -915,7 +915,7 @@
       href: service-admin-premium-restart.md
     - name: Connect to datasets with client applications and tools
       href: service-premium-connect-tools.md
-- name: Power BI Report Builder
+- name: Power BI Paginated Report Builder
   items: 
   - name: Overview
     items: 
@@ -931,21 +931,21 @@
     items: 
     - name: Get around Report Design View (Preview)
       href: paginated-reports-report-design-view.md
-    - name: Report Builder planning a report (Preview)
+    - name: Planning a report (Preview)
       href: report-builder-planning-report.md
     - name: Report Builder data (Preview)
       href: report-builder-data.md
-    - name: Report Builder design tips (Preview)
+    - name: Design tips (Preview)
       href: report-builder-design-tips.md
-    - name: Report Builder tables, matrixes, lists (Preview)
+    - name: Tables, matrixes, lists (Preview)
       href: report-builder-tables-matrices-lists.md
-    - name: Report Builder parameters (Preview)
+    - name: Parameters (Preview)
       href: report-builder-parameters.md
-    - name: Report Builder expressions (Preview)
+    - name: Expressions (Preview)
       href: report-builder-expressions.md
-    - name: Report Builder expression examples (Preview)
+    - name: Expression examples (Preview)
       href: report-builder-expression-examples.md
-    - name: Report Builder preview reports (Preview)
+    - name: Previewing reports (Preview)
       href: report-builder-previewing-reports.md
     - name: Paginated reports FAQ (Preview)
       href: paginated-reports-faq.md

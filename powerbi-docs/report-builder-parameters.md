@@ -1,6 +1,6 @@
 ---
 title: "Report parameters in Power BI Report Builder"
-description: This topic describes the common uses for Report Builder report parameters, the properties you can set, and much more.
+description: This topic describes the common uses for Power BI Report Builder report parameters, the properties you can set, and much more.
 ms.prod: reporting-services
 ms.prod_service: "reporting-services-native"
 ms.technology: report-design
@@ -15,31 +15,31 @@ ms.date: 06/06/2019
 
 # Report parameters in Power BI Report Builder
 
-This topic describes the common uses for Report Builder report parameters, the properties you can set, and much more. Report parameters enable you to control report data, connect related reports together, and vary report presentation. You can use report parameters in paginated reports you create in Report Builder and Report Designer. Read more about [Report Parameters Concepts in Power BI Report Builder](report-builder-parameters-concepts.md).  
+This topic describes the common uses for Power BI Report Builder report parameters, the properties you can set, and much more. Report parameters enable you to control report data, connect related reports together, and vary report presentation. You can use report parameters in paginated reports you create in Report Builder.
 
-## <a name="bkmk_Common_Uses_for_Parameters"></a> Common Uses for Parameters
+## <a name="bkmk_Common_Uses_for_Parameters"></a> Common uses for parameters
 
  Here are some of the most common ways to use parameters.  
   
-**Control Paginated Report Data**
+**Control paginated report data**
   
 - Filter paginated report data at the data source by writing dataset queries that contain variables.  
   
 - Enable users to specify values to customize the data in a paginated report. For example, provide two parameters for the start date and end date for sales data.  
   
-**Vary Report Presentation**
+**Vary report presentation**
   
 - Enable users to specify values to help customize the appearance of a report. For example, provide a Boolean parameter to indicate whether to expand or collapse all nested row groups in a table.  
   
 - Enable users to customize report data and appearance by including parameters in an expression.  
   
-## <a name="UserInterface"></a> Viewing a Report with Parameters
+## <a name="UserInterface"></a> Viewing a report with parameters
 
 When you view a report that has parameters, the report viewer toolbar displays each parameter so you can interactively specify values. The following illustration shows the parameter area for a report with parameters @ReportMonth, @ReportYear, @EmployeeID, @ShowAll, @ExpandTableRows, @CategoryQuota, and @SalesDate.  
 
-![View report with parameters](../../reporting-services/report-design/media/ssrb-rptparamviewrpt.png "View report with parameters")  
+![View report with parameters](media/report-builder-parameters/report-builder-parameters-power-bi-service.png "View report with parameters")
   
-1. **Parameters pane** The report viewer toolbar displays a prompt and default value for each parameter. You can customize the layout of parameters in the parameters pane. For more information, see [Customize the Parameters Pane in a Report &#40;Report Builder&#41;](../../reporting-services/report-design/customize-the-parameters-pane-in-a-report-report-builder.md).  
+1. **Parameters pane** The report viewer toolbar displays a prompt and default value for each parameter. You can customize the layout of parameters in the parameters pane.  
   
 2. **@SalesDate parameter** The parameter @SalesDate is data type **DateTime**. The prompt Select the Date appears next to the text box. To modify the date, type a new date in the text box or use the calendar control.  
   
@@ -51,7 +51,7 @@ When you view a report that has parameters, the report viewer toolbar displays e
   
 6. **View Report**  After you enter parameter values, click **View Report** to run the report. If all parameters have default values, the report runs automatically on first view.  
   
-## <a name="bkmk_Create_Parameters"></a> Creating Parameters
+## <a name="bkmk_Create_Parameters"></a> Creating parameters
 
 You can create report parameters in a few different ways.
   
@@ -62,7 +62,8 @@ You can create report parameters in a few different ways.
   
  Add a dataset query that contains variables or a dataset stored procedure that contains input parameters. A dataset parameter is created for each variable or input parameter, and a report parameter is created for each dataset parameter.  
   
- ![Report Builder Parameter Dataset Properties](../../reporting-services/report-design/media/ssrb-paramdatasetprops.png "Report Builder Parameter Dataset Properties")  
+![Report Builder Parameter Dataset Properties](media/report-builder-parameters/report-builder-parameter-dataset.png "Report Builder Parameter Dataset Properties")
+
   
  This image from Report Builder shows:  
   
@@ -81,7 +82,7 @@ Create a parameter manually from the Report Data pane. You can configure report 
 > [!NOTE]  
 >  Because parameters are managed independently on the server, republishing a main report with new parameter settings does not overwrite the existing parameters settings on the report.  
 
-### Parameter Values
+### Parameter values
 
  The following are options for selecting parameter values in the report.  
   
@@ -93,7 +94,7 @@ Create a parameter manually from the Report Data pane. You can configure report 
   
 - Run the report without having to first select a parameter value because a default value has been created for the parameter.  
   
-## <a name="bkmk_Report_Parameters"></a> Report Parameter Properties
+## <a name="bkmk_Report_Parameters"></a> Report parameter properties
 
  You can change the report parameter properties by using the Report Properties dialog box. The following table summarizes the properties that you can set for each parameter:  
   
@@ -101,18 +102,18 @@ Create a parameter manually from the Report Data pane. You can configure report 
 |--------------|-----------------|  
 |Name|Type a case-sensitive name for the parameter. The name must begin with a letter and can have letters, numbers, an underscore (_). The name cannot have spaces. For automatically generated parameters, the name matches the parameter in the dataset query. By default, manually created parameters are similar to ReportParameter1.|  
 |Prompt|The text that appears next to the parameter on the report viewer toolbar.|  
-|Data type|A report parameter must be one of the following data types:<br /><br /> **Boolean**. The user selects True or False from a radio button.<br /><br /> **DateTime**. The user selects a date from a calendar control.<br /><br /> **Integer**. The user types values in a text box.<br /><br /> **Float**. The user types values in a text box.<br /><br /> **Text**. The user types values in a text box.<br /><br /> When available values are defined for a parameter, the user chooses values from a drop-down list, even when the data type is **DateTime**.<br /><br /> For more information about report data types, see [RDL Data Types](../../reporting-services/reports/report-definition-language-ssrs.md#bkmk_RDL_Data_Types).|  
+|Data type|A report parameter must be one of the following data types:<br /><br /> **Boolean**. The user selects True or False from a radio button.<br /><br /> **DateTime**. The user selects a date from a calendar control.<br /><br /> **Integer**. The user types values in a text box.<br /><br /> **Float**. The user types values in a text box.<br /><br /> **Text**. The user types values in a text box.<br /><br /> When available values are defined for a parameter, the user chooses values from a drop-down list, even when the data type is **DateTime**.|  
 |Allow blank value|Select this option if the value of the parameter can be an empty string or a blank.<br /><br /> If you specify valid values for a parameter, and you want a blank value to be one of the valid values, you must include it as one of the values that you specify. Selecting this option does not automatically include a blank for available values.|  
 |Allow null value|Select this option if the value of the parameter can be a null.<br /><br /> If you specify valid values for a parameter, and you want null to be one of the valid values, you must include null as one of the values that you specify. Selecting this option does not automatically include a null for available values.|  
 |Allow multiple values|Provide available values to create a drop-down list that your users can choose from. This is a good way to ensure that only valid values are submitted in the dataset query.<br /><br /> Select this option if the value for the parameter can be multiple values that are displayed in a drop-down list. Null values are not allowed. When this option is selected, check boxes are added to the list of available values in a parameter drop-down list. The top of the list includes a check box for **Select All**. Users can check the values that they want.<br /><br /> If the data that provides values changes rapidly, the list the user sees might not be the most current.|  
 |Visible|Select this option to display the report parameter at the top of the report when it is run. This option allows users to select parameter values at run time.|  
 |Hidden|Select this option to hide the report parameter in the published report. The report parameter values can still be set on a report URL, in a subscription definition, or on the report server.|  
 |Internal|Select this option to hide the report parameter. In the published report, the report parameter can only be viewed in the report definition.|  
-|Available values|If you have specified available values for a parameter, the valid values always appear as a drop-down list. For example, if you provide available values for a **DateTime** parameter, a drop-down list for dates appears in the parameter pane instead of a calendar control.<br /><br /> To ensure that a list of values is consistent among a report and subreports, you can set an option on the data source to use a single transaction for all queries in the datasets that are associated with a data source.<br /><br /> **Security Note** In any report that includes a parameter of data type **Text**, be sure to use an available values list (also known as a valid values list) and ensure that any user running the report has only the permissions necessary to view the data in the report. For more information, see [Security &#40;Report Builder&#41;](../../reporting-services/report-builder/security-report-builder.md).|  
+|Available values|If you have specified available values for a parameter, the valid values always appear as a drop-down list. For example, if you provide available values for a **DateTime** parameter, a drop-down list for dates appears in the parameter pane instead of a calendar control.<br /><br /> To ensure that a list of values is consistent among a report and subreports, you can set an option on the data source to use a single transaction for all queries in the datasets that are associated with a data source.<br /><br /> **Security Note** In any report that includes a parameter of data type **Text**, be sure to use an available values list (also known as a valid values list) and ensure that any user running the report has only the permissions necessary to view the data in the report.|  
 |Default values|Set default values from a query or from a static list.<br /><br /> When each parameter has a default value, the report runs automatically on first view.|  
-|Advanced|Set the report definition attribute **UsedInQuery**, a value that indicates whether this parameter directly or indirectly affects the data in a report.<br /><br /> **Automatically determine when to refresh**<br /> Choose this option when you want the report processor to determine a setting for this value. The value is **True** if the report processor detects a dataset query with a direct or indirect reference to this parameter, or if the report has subreports.<br /><br /> **Always refresh**<br /> Choose this option when the report parameter is used directly or indirectly in a dataset query or parameter expression. This option sets **UsedInQuery** to True.<br /><br /> **Never refresh**<br /> Choose this option when the report parameter is not used directly or indirectly in a dataset query or parameter expression. This option sets **UsedInQuery** to False.<br /><br /> **Caution** Use **Never Refresh** with caution. On the report server, **UsedInQuery** is used to help control cache options for report data and for rendered reports, and parameter options for snapshot reports. If you set **Never Refresh** incorrectly, you could cause incorrect report data or reports to be cached, or cause a snapshot report to have inconsistent data. For more information, see [Report Definition Language &#40;SSRS&#41;](../../reporting-services/reports/report-definition-language-ssrs.md).|  
+|Advanced|Set the report definition attribute **UsedInQuery**, a value that indicates whether this parameter directly or indirectly affects the data in a report.<br /><br /> **Automatically determine when to refresh**<br /> Choose this option when you want the report processor to determine a setting for this value. The value is **True** if the report processor detects a dataset query with a direct or indirect reference to this parameter, or if the report has subreports.<br /><br /> **Always refresh**<br /> Choose this option when the report parameter is used directly or indirectly in a dataset query or parameter expression. This option sets **UsedInQuery** to True.<br /><br /> **Never refresh**<br /> Choose this option when the report parameter is not used directly or indirectly in a dataset query or parameter expression. This option sets **UsedInQuery** to False.<br /><br /> **Caution** Use **Never Refresh** with caution. On the report server, **UsedInQuery** is used to help control cache options for report data and for rendered reports, and parameter options for snapshot reports. If you set **Never Refresh** incorrectly, you could cause incorrect report data or reports to be cached, or cause a snapshot report to have inconsistent data. |  
   
-##  <a name="bkmk_Dataset_Parameters"></a> Dataset Query  
+##  <a name="bkmk_Dataset_Parameters"></a> Dataset query  
  To filter data in the dataset query, you can include a restriction clause that limits the retrieved data by specifying values to include or exclude from the result set.  
   
  Use the query designer for the data source to help build a parameterized query.  
@@ -121,7 +122,7 @@ Create a parameter manually from the Report Data pane. You can configure report 
   
 -   For queries that are based on a multidimensional data source such as Microsoft SQL Server Analysis Services, you can specify whether to create a parameter based on a filter that you specify in the query designer. 
   
-##  <a name="bkmk_Manage_Parameters"></a> Parameter Management for a Published Report  
+##  <a name="bkmk_Manage_Parameters"></a> Parameter management for a published report  
  When you design a report, report parameters are saved in the report definition. When you publish a report, report parameters are saved and managed separately from the report definition.  
   
  For a published report, you can use the following:  
@@ -136,7 +137,7 @@ Create a parameter manually from the Report Data pane. You can configure report 
   
  Report execution options can affect how parameters are processed. A report that runs as a snapshot cannot use parameters that are derived from a query unless the query includes default values for the parameters.  
   
-##  <a name="bkmk_Parameters_Subscription"></a> Parameters for a Subscription  
+##  <a name="bkmk_Parameters_Subscription"></a> Parameters for a subscription  
  You can define a subscription for an on demand or for a snapshot and specify parameter values to use during subscription processing.  
   
 -   **On-demand report.**  For an on-demand report, you can specify a different parameter value than the published value for each parameter listed for the report. For example, suppose you have a Call Service report that uses a *Time Period* parameter to return customer service requests for the current day, week, or month. If the default parameter value for the report is set to **today**, your subscription can use a different parameter value (such as **week** or **month**) to produce a report that contains weekly or monthly figures.  
