@@ -16,7 +16,7 @@ LocalizationGroup: Connect to data
 ---
 # Dynamic row level security with Analysis services tabular model
 
-Using a sample dataset to work through the steps below, this tutorial shows you how to implement [**row level security**](service-admin-rls) in an **Analysis Services Tabular Model** and use it in a Power BI report. 
+Using a sample dataset to work through the steps below, this tutorial shows you how to implement [**row level security**](service-admin-rls.md) in an **Analysis Services Tabular Model** and use it in a Power BI report. 
 
 * Create a new security table in the [**AdventureworksDW2012** database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 * Build the tabular model with necessary fact and dimension tables
