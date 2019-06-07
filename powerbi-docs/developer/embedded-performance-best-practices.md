@@ -6,7 +6,7 @@ ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-embedded
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/12/2018
 ---

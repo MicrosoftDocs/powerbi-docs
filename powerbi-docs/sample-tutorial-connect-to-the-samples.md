@@ -126,7 +126,7 @@ Now explore the dataset, relationships, and report on your own. For help getting
 
 ## Next steps
 
-- [Power BI basic concepts](consumer/end-user-basic-concepts.md)
+- [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 - [Samples for Power BI service](sample-datasets.md)
 - [Data sources for Power BI](service-get-data.md)
 
