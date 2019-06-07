@@ -34,11 +34,11 @@ Power BI iOS app allows administrators to remotely "push" Report Server configur
 
 ## Data protection setting
 
-Power BI iOS app offers administrators the ability to customize the default configuration for security and privacy settings. YOu can force users to provide their Face ID, Touch ID, or a passcode when accessing Power BI app.
+Power BI iOS app offers administrators the ability to customize the default configuration for security and privacy settings. You can force users to provide their Face ID, Touch ID, or a passcode when accessing Power BI app.
 
 | Key | Type | Description |
 |---|---|---|
-| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolean | Default value is False<br><br>Biometrics, such as TouchID or FaceID, can be required for users to access the app on their device. When required, biometrics are used in addition to the authentication.<br><br>If using App Protection Policies, Microsoft recommends disabling this setting to prevent dual access prompts. |
+| com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolean | Default value is False. <br><br>Biometrics, such as TouchID or FaceID, can be required for users to access the app on their device. When required, biometrics are used in addition to authentication.<br><br>If using app protection policies, Microsoft recommends disabling this setting to prevent dual access prompts. |
 
 ## Deploying app configuration settings
 
