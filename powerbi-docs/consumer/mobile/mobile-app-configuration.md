@@ -56,7 +56,6 @@ The Intune portal enables administrators to easily deploy these settings to Powe
 However, any MDM provider is supported. If you are not using Intune, you'll need to consult with your MDM documentation on how to deploy these settings.
 
 ### Next steps
-Your feedback will help us decide what to implement in the future, so don’t forget to vote for other features that you would like to see in Power BI mobile apps. 
 
 * Download the [Power BI iPhone mobile app](http://go.microsoft.com/fwlink/?LinkId=522062)
 * Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
