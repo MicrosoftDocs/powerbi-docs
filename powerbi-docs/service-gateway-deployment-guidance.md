@@ -105,11 +105,31 @@ The gateway does *not* require inbound ports. All required ports are listed in t
 It is recommended that you whitelist the IP addresses, for your data region, in your firewall. You can download list of IP addresses, which are found in the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653). That list is updated weekly. The gateway will communicate with **Azure Service Bus** using the specified IP address, along with the fully qualified domain name (FQDN). If you're forcing the gateway to communicate using HTTPS, the gateway strictly uses FQDN only, and no communication will occur using IP addresses.
 
 #### Forcing HTTPS communication with Azure Service Bus
-You can force the gateway to communicate with the **Azure Service Bus** by using HTTPS, instead of direct TCP. Doing so will slightly reduce performance. You can also force the gateway to communicate with the **Azure Service Bus** by using HTTPS by using the gateway's user interface (beginning with the March 2017 release of the gateway).
 
-To do so, in the gateway select **Network**, then turn the **Azure Service Bus connectivity mode** **On**.
+You can force the gateway to communicate with Azure Service Bus using HTTPS instead of direct TCP.
 
-![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_04.png)
+> [!NOTE]
+> Starting with the June 2019 release, new installs (not updates) default to HTTPS instead of TCP, based on recommendations from Azure Service Bus.
+
+To force communication over HTTPS, modify the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file by changing the value from `AutoDetect` to `Https`, as shown in the code snippet directly following this paragraph. That file is located (by default) at *C:\Program Files\On-premises data gateway*.
+
+```xml
+<setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
+    <value>Https</value>
+</setting>
+```
+
+The value for the *ServiceBusSystemConnectivityModeString* parameter is case-sensitive. Valid values are *AutoDetect* and *Https*.
+
+Alternatively, you can force the gateway to adopt this behavior using the gateway user interface. In the gateway user interface select **Network**, then toggle the **Azure Service Bus connectivity mode** to **On**.
+
+![](./media/gateway-onprem-accounts-ports-more/gw-onprem_01.png)
+
+Once changed, when you select **Apply** (a button that only appears when you make a change), the *gateway Windows service* restarts automatically, so the change can take effect.
+
+For future reference, you can restart the *gateway Windows service* from the user interface dialog by selecting **Service Settings** then select *Restart Now*.
+
+![](./media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
 ### Additional guidance
 This section provides additional guidance for deploying and managing gateways.
