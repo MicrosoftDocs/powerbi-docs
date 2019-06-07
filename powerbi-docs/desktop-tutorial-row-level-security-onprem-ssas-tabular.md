@@ -35,7 +35,7 @@ You can find many articles describing how to define row level dynamic security w
 
 The steps here require using the **AdventureworksDW2012** relational database.
 
-1. In **AdventureworksDW2012**, create the **DimUserSecurity** table as shown below. You can use [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) to create the table.
+1. In **AdventureworksDW2012**, create the **DimUserSecurity** table as shown below. You can use [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms.md) to create the table.
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable.png)
 
@@ -61,7 +61,7 @@ The steps here require using the **AdventureworksDW2012** relational database.
 
 ## Task 2: Create the tabular model with facts and dimension tables
 
-1. Once your relational data warehouse is in place, you need to define the tabular model. You can create the model using [**SQL Server Data Tools (SSDT)**](/sql/ssdt/sql-server-data-tools). For more information, see [Create a New Tabular Model Project](https://msdn.microsoft.com/library/hh231689.aspx).
+1. Once your relational data warehouse is in place, you need to define the tabular model. You can create the model using [**SQL Server Data Tools (SSDT)**](/sql/ssdt/sql-server-data-tools.md). For more information, see [Create a New Tabular Model Project](https://msdn.microsoft.com/library/hh231689.aspx).
 
 2. Import all the necessary tables into the model as shown below.
    
@@ -158,13 +158,13 @@ Once your tabular model is deployed and ready for consumption, you need to add a
 
 ## Task 6: Understand what happens behind the scenes
 
-This task assumes you're familiar with [SQL Profiler](/sql/tools/sql-server-profiler/sql-server-profiler), since you need to capture a SQL Server profiler trace on your on-premises SSAS tabular instance.
+This task assumes you're familiar with [SQL Profiler](/sql/tools/sql-server-profiler/sql-server-profiler.md), since you need to capture a SQL Server profiler trace on your on-premises SSAS tabular instance.
 
 1. The session gets initialized as soon as the user (Jon Doe) accesses the dashboard in the Power BI service. You can see that the **salesterritoryusers** role takes an immediate effect with the effective user name as **<EffectiveUserName>jondoe@moonneo.com</EffectiveUserName>**
    
        <PropertyList><Catalog>DefinedSalesTabular</Catalog><Timeout>600</Timeout><Content>SchemaData</Content><Format>Tabular</Format><AxisFormat>TupleFormat</AxisFormat><BeginRange>-1</BeginRange><EndRange>-1</EndRange><ShowHiddenCubes>false</ShowHiddenCubes><VisualMode>0</VisualMode><DbpropMsmdFlattened2>true</DbpropMsmdFlattened2><SspropInitAppName>PowerBI</SspropInitAppName><SecuredCellValue>0</SecuredCellValue><ImpactAnalysis>false</ImpactAnalysis><SQLQueryMode>Calculated</SQLQueryMode><ClientProcessID>6408</ClientProcessID><Cube>Model</Cube><ReturnCellProperties>true</ReturnCellProperties><CommitTimeout>0</CommitTimeout><ForceCommitTimeout>0</ForceCommitTimeout><ExecutionMode>Execute</ExecutionMode><RealTimeOlap>false</RealTimeOlap><MdxMissingMemberMode>Default</MdxMissingMemberMode><DisablePrefetchFacts>false</DisablePrefetchFacts><UpdateIsolationLevel>2</UpdateIsolationLevel><DbpropMsmdOptimizeResponse>0</DbpropMsmdOptimizeResponse><ResponseEncoding>Default</ResponseEncoding><DirectQueryMode>Default</DirectQueryMode><DbpropMsmdActivityID>4ea2a372-dd2f-4edd-a8ca-1b909b4165b5</DbpropMsmdActivityID><DbpropMsmdRequestID>2313cf77-b881-015d-e6da-eda9846d42db</DbpropMsmdRequestID><LocaleIdentifier>1033</LocaleIdentifier><EffectiveUserName>jondoe@moonneo.com</EffectiveUserName></PropertyList>
 
-2. Based on the effective user name request, Analysis Services converts the request to the actual moonneo\jondoe credential after querying the local Active Directory. Once **Analysis Services** gets the credential,  **Analysis Services** returns the data the user has permission to view and access.
+2. Based on the effective user name request, Analysis Services converts the request to the actual moonneo/jondoe credential after querying the local Active Directory. Once **Analysis Services** gets the credential,  **Analysis Services** returns the data the user has permission to view and access.
 
 3. If more activity occurs with the dashboard, for example, if Jon Doe goes from the dashboard to the underlying report, with SQL Profiler you would see a specific query coming back to the Analysis Services tabular model as a DAX query.
    
