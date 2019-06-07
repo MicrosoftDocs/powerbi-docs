@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/05/2018
+ms.date: 06/06/2019
 ---
 
 # Create parameters for paginated reports in the Power BI service (Preview)
@@ -62,4 +62,4 @@ The following illustration shows Design view in Power BI Report Builder for a re
 
 See [View parameters for paginated reports](paginated-reports-view-parameters.md) to see how the parameters look in the Power BI service.
 
-For in-depth information about parameters in paginated reports, see the [Report Parameters (Report Builder and Report Designer)](https://docs.microsoft.com/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer) article in the SQL Server Reporting Services documentation  
+For in-depth information about parameters in paginated reports, see [Report parameters in Power BI Report Builder](report-builder-parameters.md).

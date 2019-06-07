@@ -15,7 +15,7 @@ ms.author: maggies
   
    
   
-##  <a name="DesigningReports"></a> Designing Reports  
+##  <a name="DesigningReports"></a> Designing reports  
   
 -   A well-designed report conveys information that leads to action. Identify the questions that the report helps to answer. Keep those questions in mind as you design the report.  
   
@@ -31,15 +31,15 @@ ms.author: maggies
   
  For more information about things to consider as you design your report, see [Planning a Report in Report Builder](report-builder-planning-report.md)).  
   
-##  <a name="NamingConventions"></a> Naming Conventions for Reports, Data Sources, and Datasets  
+##  <a name="NamingConventions"></a> Naming conventions for reports, data sources, and datasets  
   
 -   Use naming conventions for data sources and datasets that document the source of data.  
   
-    1.  **Data sources.** If you do not want to use an actual server or database due to security reasons, use an alias that indicates to the user what the source of data is.  
+    1.  **Data sources.** If you don't want to use an actual server or database due to security reasons, use an alias that indicates to the user what the source of data is.  
   
-    2.  **Datasets.** Use a name that indicates which data source it is based on.  
+    2.  **Datasets.** Use a name that indicates which data source it's based on.  
   
-##  <a name="Data"></a> Working with Data  
+##  <a name="Data"></a> Working with data  
   
 -   As a first step, get all the data that you want to work with to appear in the Report Data pane. As you refine the questions that the report is designed to answer, think about how to limit the data in the report datasets to just what is needed.  
   
@@ -49,7 +49,7 @@ ms.author: maggies
   
 -   Depending on your requirements, you can display names and locations of report data sources, dataset query command text, and parameter values in the report. The first question many new users have is about where the data comes from. To reduce clutter in the report, you can conditionally hide text boxes with this type of information and let users choose whether to see it. Try adding this information on the last page of report. Set the text box visibility based on a parameter that the user can change.  
   
-##  <a name="DesignSurface"></a> Interacting with the Report Design Surface  
+##  <a name="DesignSurface"></a> Interacting with the report design surface  
  The report design surface is not WYSIWIG. When you place report items on the design surface, their relative location affects the way that the items appear on the rendered report page. White space is preserved.  
   
 -   Use snaplines and layout buttons to align and arrange items on the report design surface. For example, you can align the tops or edges of selected items, expand an item to match the size of another item, or adjust the spacing between items.  
@@ -72,7 +72,7 @@ ms.author: maggies
   
 -   To drag fields from the Report Data pane to the Grouping pane, avoid dragging the field across other report items on the design surface because this selects the other items and unselects the tablix data region. Drag the field down the Report Data pane and then across to the Grouping pane.  
   
-###  <a name="Selecting"></a> Selecting Items  
+###  <a name="Selecting"></a> Selecting items  
  To help select the object that you want on the report design surface, use the ESC key, the right-click context menu, the Properties pane, and the Grouping pane.  
   
 -   -   Press ESC to cycle through the stack of report items that occupy the same space on the design surface.  
@@ -82,34 +82,33 @@ ms.author: maggies
     -   The Properties pane displays properties for the current selection.  
   
     -   To work with row groups and column groups in a tablix data region, select the group from the Grouping pane.  
+
   
- In Report Designer in SQL Server Data Tools (SSDT), you can select from the drop-down list of objects in the Properties pane toolbar or from the hierarchical view of report items in the Document Outline window. You can select items in this pane and see which item is selected on the design surface. To open the Document Outline window, from the **View** menu, point to **Other Windows**, and then click **Document Outline**.  
+##  <a name="ReportItems"></a> Working with specific types of report items  
   
-##  <a name="ReportItems"></a> Working with Specific Types of Report Items  
-  
-###  <a name="Parameters"></a> Working with Parameters  
+###  <a name="Parameters"></a> Working with parameters  
   
 -   The primary purpose of report parameters is to filter data at the data source, and retrieve just what is needed for the purpose of the report.  
   
 -   For report parameters, find a balance between enabling interactivity and helping a user get the results they want. For example, you can set default values for a parameter to values that you know are popular.  
   
-###  <a name="Text"></a> Working with Text  
+###  <a name="Text"></a> Working with text  
   
 -   When you paste multiline into a text box, the text is added as one text run. Each text run can only be formatted as a unit. To format each line independently, insert a new line by pressing RETURN in the text run as needed. You can then apply formatting and styles to each independent line of text in the text box.  
   
--   You can set format properties and actions on a text box or on placeholder text in the text box. If there is only one line of text, it is more efficient to set properties on the text box than on the text.  
+-   You can set format properties and actions on a text box or on placeholder text in the text box. If there is only one line of text, it's more efficient to set properties on the text box than on the text.  
   
-###  <a name="Expressions"></a> Working with Expressions  
+###  <a name="Expressions"></a> Working with expressions  
   
 -   Understand simple and complex expression formats. You can type simple expression format directly into text boxes, properties in the Property pane, or in locations in dialog boxes that accept an expression.
   
 -   When you create an expression, it helps to create each part independently and verify its value. You can then combine all the parts into a final expression. A useful technique is to add a text box in a matrix cell, display each part of the expression, and set conditional visibility on the text box. To control the border style and color when the text box is hidden, first place the text box in a rectangle, and then set the border style and color of the rectangle to match the matrix.  
   
-###  <a name="Indicators"></a> Working with Indicators  
+###  <a name="Indicators"></a> Working with indicators  
   
 -   By default, an indicator shows at least three states. After you add an indicator to a report, you can configure it by adding or removing states. For easier viewing by your users, choose an indicator that varies by both color and shape.  
   
-##  <a name="Rendering"></a> Controlling the Rendering of Report Items on the Report Page  
+##  <a name="Rendering"></a> Controlling the rendering of report items on the report page  
   
 -   On the report design surface, report items grow to accommodate the contents from the associated dataset, expression, subreport, or text.  
   

@@ -261,13 +261,13 @@ For more information about simple and complex expressions, where you can use exp
   
      Values greater than or equal to 10 display with a green background, between 1 and 9 display with a blue background, equal to 1 display with a yellow background, and 0 or less display with a red background.  
   
--   Test the value of the `ImportantDate` field and return "Red" if it is more than a week old, and "Blue" otherwise. This expression can be used to control the Color property of a text box in a report item:  
+-   Test the value of the `ImportantDate` field and return "Red" if it's more than a week old, and "Blue" otherwise. This expression can be used to control the Color property of a text box in a report item:  
   
     ```  
     =IIF(DateDiff("d",Fields!ImportantDate.Value, Now())>7,"Red","Blue")  
     ```  
   
--   Test the value of the `PhoneNumber` field and return "No Value" if it is **null** (**Nothing** in Visual Basic); otherwise return the phone number value. This expression can be used to control the value of a text box in a report item.  
+-   Test the value of the `PhoneNumber` field and return "No Value" if it's **null** (**Nothing** in Visual Basic); otherwise return the phone number value. This expression can be used to control the value of a text box in a report item.  
   
     ```  
     =IIF(Fields!PhoneNumber.Value Is Nothing,"No Value",Fields!PhoneNumber.Value)  
@@ -464,7 +464,7 @@ For more information about simple and complex expressions, where you can use exp
     =Parameters!Department.Value  
     ```  
   
--   Parameters can be created in a report but set to hidden. When the report runs on the report server, the parameter does not appear in the toolbar and the report reader cannot change the default value. You can use a hidden parameter set to a default value as custom constant. You can use this value in any expression, including a field expression. The following expression identifies the field specified by the default parameter value for the parameter named *ParameterField*:  
+-   Parameters can be created in a report but set to hidden. When the report runs on the report server, the parameter doesn't appear in the toolbar and the report reader cannot change the default value. You can use a hidden parameter set to a default value as custom constant. You can use this value in any expression, including a field expression. The following expression identifies the field specified by the default parameter value for the parameter named *ParameterField*:  
   
     ```  
     =Fields(Parameters!ParameterField.Value).Value  

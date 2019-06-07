@@ -21,7 +21,7 @@ Learn how to [Create an embedded data source for paginated reports in Power BI R
 
 ##  <a name="BkMk_ReportDataTerms"></a> Terms  
   
-- **Data connection.** Also known as a *data source*. A data connection includes a name and connection properties that are dependent on the connection type. By design, a data connection does not include credentials. A data connection does not specify which data to retrieve from the external data source. To do that, you specify a query when you create a dataset.  
+- **Data connection.** Also known as a *data source*. A data connection includes a name and connection properties that are dependent on the connection type. By design, a data connection doesn't include credentials. A data connection doesn't specify which data to retrieve from the external data source. To do that, you specify a query when you create a dataset.  
   
 - **Connection string.** A connection string is a string version of the connection properties that are needed to connect to a data source. Connection properties differ based on data connection type.  
   
@@ -29,7 +29,7 @@ Learn how to [Create an embedded data source for paginated reports in Power BI R
   
 - **Credentials.** Credentials are the authentication information that must be provided to allow you access to external data.  
   
-##  <a name="BkMk_ReportDataTips"></a> Tips for Specifying Report Data
+##  <a name="BkMk_ReportDataTips"></a> Tips for specifying report data
 
  Use the following information to design your report data strategy.  
   
