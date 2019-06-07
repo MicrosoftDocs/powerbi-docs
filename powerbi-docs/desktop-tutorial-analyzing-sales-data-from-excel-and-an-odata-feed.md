@@ -55,7 +55,7 @@ A table preview opens in the **Power Query Editor**, where you can apply transfo
 
 ## Clean up the products columns
 
-Your combined report is only going to use the Excel workbook's  **ProductID**, **ProductName**, **QuantityPerUnit**, and **UnitsInStock** columns. The other columns you can remove. 
+Your combined report will use the Excel workbook's  **ProductID**, **ProductName**, **QuantityPerUnit**, and **UnitsInStock** columns. You can remove the other columns. 
 
 1. In **Power Query Editor**, select the **ProductID**, **ProductName**, **QuantityPerUnit**, and **UnitsInStock** columns. You can use **Ctrl**+**Click** to select more than one column, or **Shift**+**Click** to select columns next to each other.
    
@@ -107,7 +107,7 @@ After you expand the **Order_Details** table, three new nested table columns rep
 
 ## Create a custom calculated column
 
-Power Query Editor lets you create calculations and custom fields to enrich your data. You'll create a custom column that multiples the unit price by item quantity to calculate the total price for each order's line item.
+Power Query Editor lets you create calculations and custom fields to enrich your data. You'll create a custom column that multiplies the unit price by item quantity to calculate the total price for each order's line item.
 
 1. In the Power Query Editor's **Add Column** ribbon tab, select **Custom Column**.
    
@@ -162,14 +162,14 @@ Finally, to make the **LineTotal** column easier to access, drag and drop it to 
 
 ## Review the query steps
 
-Your Power Query Editor actions to shape and transform data are recorded. Each action appears on the right in the **Query Settings** pane under **Applied Steps**. You can step back through the **Applied Steps** to review your steps, and edit, delete, or rearrange them if necessary. However, changing preceding steps is risky as they can break later steps.
+Your Power Query Editor actions to shape and transform data are recorded. Each action appears on the right in the **Query Settings** pane under **Applied Steps**. You can step back through the **Applied Steps** to review your steps, and edit, delete, or rearrange them if necessary. However, changing preceding steps is risky as that can break later steps.
 
 Select each of your queries in the **Queries** list on the left side of Power Query Editor, and review the **Applied Steps** in **Query Settings**. After applying the previous data transformations, the **Applied Steps** for your two queries should look like this:
 
 ![Products query Applied Steps](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/15.png) &nbsp;&nbsp; ![Orders query Applied Steps](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/17.png)
 
 >[!TIP]
->Underlying the Applied Steps are formulas written in the **Power Query Language**, also known as the [**M** language](https://docs.microsoft.com/powerquery-m/power-query-m-reference). To see and edit the formulas, select **Advanced Editor** in the **Query** group of the Home tab of the ribbon. 
+>Underlying the Applied Steps are formulas written in the **Power Query Language**, also known as the [**M** language](/powerquery-m/power-query-m-reference). To see and edit the formulas, select **Advanced Editor** in the **Query** group of the Home tab of the ribbon. 
 
 ## Import the transformed queries
 
@@ -231,7 +231,7 @@ Next, create a chart showing order dollar amounts (**LineTotal**) over time (**O
 
 1. With nothing selected on the canvas, select **LineTotal** from **Orders** in the **Fields** pane, or drag it to a blank space on the canvas. The stacked column chart shows the total dollar amount of all orders. 
    
-2. With the stacked chart, select **OrderDate** from **Orders**, or drag it onto the chart. The chart now shows line totals for each order date. 
+2. Select the stacked chart, then select **OrderDate** from **Orders**, or drag it onto the chart. The chart now shows line totals for each order date. 
    
 3. Drag the corners to resize the visualization and see more data. 
    
@@ -244,7 +244,7 @@ Finally, create a map visualization showing order amounts from each country.
 
 1. With nothing selected on the canvas, select **ShipCountry** from **Orders** in the **Fields** pane, or drag it to a blank space on the canvas. Power BI Desktop detects that the data is country names. It then automatically creates a map visualization, with a data point for each country with orders. 
    
-2. Drag the **LineTotal** field onto the map to make the data point sizes reflect each country's order amounts. You can also drag it to **Drag data fields here** under **Size** in the **Visualizations** pane. The sizes of the circles on the map now reflect the dollar amounts of the orders from each country. 
+2. To make the data point sizes reflect each country's order amounts, drag the **LineTotal** field onto the map. You can also drag it to **Drag data fields here** under **Size** in the **Visualizations** pane. The sizes of the circles on the map now reflect the dollar amounts of the orders from each country. 
    
    ![LineTotals by ShipCountry map visualization](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/21.png)
 
