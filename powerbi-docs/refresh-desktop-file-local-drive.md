@@ -8,7 +8,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 06/04/2019
 ms.author: mblythe
 
 LocalizationGroup: Data refresh
@@ -34,9 +34,9 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created 
 
 You can perform a one-time, manual refresh in Power BI Desktop by selecting **Refresh** on the Home ribbon. When you select **Refresh** here, the data in the *file’s* model is refreshed with updated data from the original data source. This kind of refresh, entirely from within the Power BI Desktop application itself, is different from manual or scheduled refresh in Power BI, and it’s important to understand the distinction.
 
-![](media/refresh-desktop-file-local-drive/pbix-refresh.png)
+![Refresh](media/refresh-desktop-file-local-drive/pbix-refresh.png)
 
-When you import your Power BI Desktop file from a local drive, data, along with other information about the model, is loaded into a dataset in the Power BI service. In the Power BI service, not Power BI Desktop, you want to refresh data in the dataset because that is what your reports, in the Power BI service, are based on. Because the data sources are external, you can manually refresh the dataset by using **Refresh now** or you can setup a refresh schedule by using **Schedule Refresh**.
+When you import your Power BI Desktop file from a local drive, data, along with other information about the model, is loaded into a dataset in the Power BI service. In the Power BI service, not Power BI Desktop, you want to refresh data in the dataset because that is what your reports, in the Power BI service, are based on. Because the data sources are external, you can manually refresh the dataset by using **Refresh now** or you can set up a refresh schedule by using **Schedule Refresh**.
 
 When you refresh the dataset, Power BI does not connect to the file on the local drive to query for updated data. It uses information in the dataset to connect directly to the data sources to query for updated data it then loads into the dataset.
 
@@ -47,9 +47,9 @@ When you refresh the dataset, Power BI does not connect to the file on the local
 
 ## How do I schedule refresh?
 
-When you setup a refresh schedule, Power BI connects directly to the data sources using connection information and credentials in the dataset to query for updated data, then loads the updated data into the dataset. Any visualizations in reports and dashboards based on that dataset in the Power BI service are also updated.
+When you set up a refresh schedule, Power BI connects directly to the data sources using connection information and credentials in the dataset to query for updated data, then loads the updated data into the dataset. Any visualizations in reports and dashboards based on that dataset in the Power BI service are also updated.
 
-For details on how to setup schedule refresh, see [Configure scheduled refresh](refresh-scheduled-refresh.md).
+For details on how to set up scheduled refresh, see [Configure scheduled refresh](refresh-scheduled-refresh.md).
 
 ## When things go wrong
 

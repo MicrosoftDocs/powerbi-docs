@@ -8,7 +8,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 06/06/2019
 ms.author: mblythe
 
 LocalizationGroup: Data refresh
@@ -23,11 +23,11 @@ Importing files from OneDrive, or SharePoint Online, is a great way to make sure
 
 When you import an Excel workbook from your personal OneDrive, any data in the workbook, like tables in worksheets and/or data that are loaded into the Excel data model and the structure of the data model, are imported into a new dataset in Power BI. Any Power View visualizations are re-created in Reports. Power BI automatically connects to the workbook on OneDrive, or SharePoint Online, about every hour to check for updates. If the workbook has changed, Power BI will refresh the dataset and reports in the Power BI service.
 
-You can refresh on the dataset in the Power BI service. When you manually refresh, or schedule refresh, on the dataset, Power BI connects directly to the external data sources to query for updated data it then loads into the dataset. Refreshing a dataset from within Power BI does not refresh the data in the workbook on OneDrive, or SharePoint Online. 
+You can refresh the dataset in the Power BI service. When you manually refresh, or schedule refresh, on the dataset, Power BI connects directly to the external data sources to query for updated data it then loads into the dataset. Refreshing a dataset from within Power BI does not refresh the data in the workbook on OneDrive, or SharePoint Online. 
 
 ## What’s supported?
 
-In Power BI, Refresh Now and Schedule Refresh is supported for datasets created from Power BI Desktop files imported from a local drive where Get Data/Query Editor is used to connect to and load data from any of the following data sources:  
+In Power BI, **Refresh Now** and **Schedule Refresh** are supported for datasets created from Power BI Desktop files imported from a local drive where Get Data/Query Editor is used to connect to and load data from any of the following data sources:  
 
 ### Power BI Gateway - Personal
 
@@ -46,11 +46,11 @@ In Power BI, Refresh Now and Schedule Refresh is supported for datasets created 
 
 If you have both a personal OneDrive and OneDrive for Business, it’s recommended you keep any files you want to import into Power BI in OneDrive for Business. Here’s why: You likely use two different accounts to sign into them.
 
-Connecting to OneDrive for Business in Power BI is typically seamless because the same account you use to sign into Power BI with is often the same account used to sign into OneDrive for Business. But, with personal OneDrive, you likely sign in with a different [Microsoft account](https://account.microsoft.com).
+Connecting to OneDrive for Business in Power BI is typically seamless because the same account you use to sign into Power BI is often the same account used to sign into OneDrive for Business. But, with personal OneDrive, you likely sign in with a different [Microsoft account](https://account.microsoft.com).
 
 When you sign in with your Microsoft account, be sure to select **Keep me signed in**. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI.  
 
-    ![](media/refresh-excel-file-onedrive/refresh_signin_keepmesignedin.png)
+![Keep me signed in check box](media/refresh-excel-file-onedrive/refresh_signin_keepmesignedin.png)
 
 If you make changes to your file on OneDrive that cannot be synchronized with the dataset or reports in Power BI, because your Microsoft account credentials might have changed, you’ll need to connect to and import your file again from your personal OneDrive.
 
@@ -68,7 +68,7 @@ When you set up a refresh schedule this way, the only difference is refreshed da
 
 ## How do I make sure data is loaded to the Excel data model?
 
-When you use Power Query (Get & Transform data in Excel 2016) to connect to a data source, you have several options where to load the data. To make sure you load data into the data model, you must select the **Add this data to the Data Model** option in the **Load To** dialog box.
+When you use Power Query (**Get & Transform** in Excel 2016) to connect to a data source, you have several options where to load the data. To make sure you load data into the data model, you must select the **Add this data to the Data Model** option in the **Load To** dialog box.
 
 > [!NOTE]
 > The images here show Excel 2016.
@@ -77,15 +77,15 @@ When you use Power Query (Get & Transform data in Excel 2016) to connect to a da
 
 In **Navigator**, click **Load To…**  
 
-    ![](media/refresh-excel-file-onedrive/refresh_loadtodm_1.png)
+![Load To... command](media/refresh-excel-file-onedrive/refresh_loadtodm_1.png)
 
-Or, If you click **Edit** in Navigator, you’ll open the Query Editor. There you can click **Close & Load To….**  
+Or, If you click **Edit** in **Navigator**, you’ll open the Query Editor. There you can click **Close & Load To….**  
 
-    ![](media/refresh-excel-file-onedrive/refresh_loadtodm_2.png)
+![Close & Load To... command](media/refresh-excel-file-onedrive/refresh_loadtodm_2.png)
 
 Then in **Load To**, make sure you select **Add this data to the Data Model**.  
 
-    ![](media/refresh-excel-file-onedrive/refresh_loadtodm_3.png)
+![Add this to the Data Model check box](media/refresh-excel-file-onedrive/refresh_loadtodm_3.png)
 
 ### What if I use Get External Data in Power Pivot?
 
@@ -93,9 +93,9 @@ No problem. Whenever you use Power Pivot to connect to and query data from an on
 
 ## How do I schedule refresh?
 
-When you set up a refresh schedule, Power BI will connect directly to the data sources using connection information and credentials in the dataset to query for updated data, then load the updated data into the dataset. Any visualizations in reports and dashboards based on that dataset in the Power BI service are also updated.
+When you set up a refresh schedule, Power BI connects directly to the data sources using connection information and credentials in the dataset to query for updated data, then loads the updated data into the dataset. Any visualizations in reports and dashboards based on that dataset in the Power BI service are also updated.
 
-For details on how to set up schedule refresh, see [Configure Schedule Refresh](refresh-scheduled-refresh.md).
+For details on how to set up scheduled refresh, see [Configure scheduled refresh](refresh-scheduled-refresh.md).
 
 ## When things go wrong
 

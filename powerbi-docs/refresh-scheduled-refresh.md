@@ -8,7 +8,7 @@ ms.reviewer: kayu''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/30/2019
+ms.date: 06/06/2019
 ms.author: mblythe
 
 LocalizationGroup: Data refresh
@@ -16,20 +16,20 @@ LocalizationGroup: Data refresh
 # Configure scheduled refresh
 
 >[!NOTE]
->After two months of inactivity, scheduled refresh on your dataset is paused. For more information, see [*Schedule refresh*](#schedule-refresh) later in this article.
+>After two months of inactivity, scheduled refresh on your dataset is paused. For more information, see [*Scheduled refresh*](#scheduled-refresh) later in this article.
 >
 >
 
-If your dataset supports scheduled refresh, by using **Refresh Now** and **Schedule Refresh**, there are a few requirements and settings important for refresh to be successful. These are **Gateway connection**, **Data source credentials**, and **Schedule refresh**. Let’s take a closer look at each.
+If your dataset supports scheduled refresh, by using **Refresh Now** and **Schedule Refresh**, there are a few requirements and settings important for refresh to be successful. These are **Gateway connection**, **Data source credentials**, and **Scheduled refresh**. Let’s take a closer look at each.
 
 This will describe the options available for both the [On-premises data gateway (personal mode)](service-gateway-personal-mode.md) and the [On-premises data gateway](service-gateway-onprem.md).
 
-To get to the schedule refresh screen, you can do the following.
+To get to the **Scheduled refresh** screen, you can do the following.
 
 1. Select the **ellipsis (...)** next to a dataset listed under **Datasets**.
 2. Select **Schedule Refresh**.
 
-    ![Schedule refresh](media/refresh-scheduled-refresh/dataset-menu.png)
+    ![Schedule Refresh](media/refresh-scheduled-refresh/dataset-menu.png)
 
 ## Gateway connection
 You will see different options here depending on whether you have a personal, or enterprise, gateway online and available.
@@ -48,7 +48,7 @@ You can also select the enterprise gateway if one is available for you. You will
 ### Power BI Gateway - Personal
 If you are using the personal gateway to refresh data, you must supply the credentials to connect to the back-end data source. If you connected to a content pack from an online service, the credentials you entered to connect are carried over for scheduled refresh.
 
-![Datasource credentials](media/refresh-scheduled-refresh/data-source-credentials-pgw.png)
+![Data source credentials](media/refresh-scheduled-refresh/data-source-credentials-pgw.png)
 
 You’re only required to sign in to a data source the first time you use refresh on that dataset. Once entered, those credentials are retained with the dataset.
 
@@ -62,7 +62,7 @@ When things go wrong, the problem usually has something to do with either the ga
 ### On-premises data gateway
 If you are using the On-premises data gateway to refresh data, you do not need to supply credentials, as they are defined for the data source by the gateway administrator.
 
-![](media/refresh-scheduled-refresh/data-source-credentials-egw.png)
+![Schedule Refresh command](media/refresh-scheduled-refresh/data-source-credentials-egw.png)
 
 > [!NOTE]
 > When connecting to on-premises SharePoint for data refresh, Power BI supports only *Anonymous*, *Basic*, and *Windows (NTLM/Kerberos)* authentication mechanisms. Power BI does not support *ADFS* or any *Forms-Based Authentication* mechanisms for data refresh of on-premises SharePoint data sources.
@@ -70,16 +70,16 @@ If you are using the On-premises data gateway to refresh data, you do not need t
 >
 
 ## Scheduled refresh
-The **Scheduled Refresh** section is where you define the frequency and time slots to refresh the dataset. Some data sources do not require a gateway to be configurable for refresh; other data sources require a gateway.
+The **Scheduled refresh** section is where you define the frequency and time slots to refresh the dataset. Some data sources do not require a gateway to be configurable for refresh; other data sources require a gateway.
 
-Set the **Keep your data up to date** slider to **Yes** to configure the settings.
+Set the **Keep your data up to date** slider to **On** to configure the settings.
 
 > [!NOTE]
 > The Power BI service targets initiating the refresh of your data within **15 minutes** of your scheduled refresh time.
 >
 >
 
-![](media/refresh-scheduled-refresh/scheduled-refresh.png)
+![Scheduled refresh dialog box](media/refresh-scheduled-refresh/scheduled-refresh.png)
 
 > [!NOTE]
 > After two months of inactivity, scheduled refresh on your dataset is paused. A dataset is considered inactive when no user has visited any dashboard or report built on the dataset. At that time, the dataset owner is sent an email indicating the scheduled refresh is paused, and the refresh schedule for the dataset is displayed as **disabled**. To resume scheduled refresh, simply revisit any dashboard or report built on the dataset.
@@ -104,7 +104,7 @@ Certain datasets are supported against different gateways for scheduled refresh.
 
 * All online data sources shown in Power Query.
 * All on-premises data sources shown in Power Query except for Hadoop file (HDFS) and Microsoft Exchange.
-* All online data sources shown in Power Pivot.\*
+* All online data sources shown in Power Pivot.
 * All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS) and Microsoft Exchange.
 
 <!-- Refresh Data sources-->
