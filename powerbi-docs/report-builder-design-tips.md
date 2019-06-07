@@ -19,7 +19,7 @@ ms.author: maggies
   
 -   A well-designed report conveys information that leads to action. Identify the questions that the report helps to answer. Keep those questions in mind as you design the report.  
   
--   To design effective data visualizations, think about how to display information that is easy for the report user to understand. Choose a data region that is a good match for the data that you want to visualize. For example, a chart effectively conveys summary and aggregated information better than a table that spans many pages of detailed information. You can visualize data from a dataset in any data region, which includes charts, maps, indicators, sparklines, databars, and tabular data in various grid layouts based on a tablix. 
+-   To design effective data visualizations, think about how to display information that is easy for the report user to understand. Choose a data region that is a good match for the data that you want to visualize. For example, a chart effectively conveys summary and aggregated information better than a table that spans many pages of detailed information. You can visualize data from a dataset in any data region, which includes charts, maps, indicators, sparklines, data bars, and tabular data in various grid layouts based on a tablix. 
   
 -   If you plan to deliver the report in a specific export format, test the export format early in your design. Feature support varies based on the renderer that you choose.  
   
