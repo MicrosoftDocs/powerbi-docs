@@ -1,7 +1,7 @@
 ---
 title: "Tables, matrixes, and lists in Power BI Report Builder"
-description: 
-ms.date: 06/05/2019
+description: In Power BI Paginated Report Builder, tables, matrixes, and lists are data regions that display paginated report data in cells that are organized into rows and columns. 
+ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -56,7 +56,7 @@ ms.author: maggies
  If you choose to prepare the data in the table, matrix, or list data region of a report, you set properties on the data region or cells within the data region. If you want to filter or sort the data, set the properties on the data region. For example, to sort the data you specify the columns to sort on and the sort direction. If you want to provide an alternative value for a field, you set the values of the cell text that displays the field. For example, to display Blank when a field is empty or null, you use an expression to set the value.  
   
 ##  <a name="BuildingConfiguringTableMatrixList"></a> Building and configuring a table, matrix, or list  
- When you add tables or matrixes to your report, you can use the Table and Matrix Wizard or build them manually from the templates that Report Builder and Report Designer provide. Lists are built manually from the list template.  
+ When you add tables or matrixes to your report, you can use the Table and Matrix Wizard or build them manually from the templates that Report Builder provides. Lists are built manually from the list template.  
   
  The wizard guides you through the steps to quickly build and configure a table or matrix. After you complete the wizard or if you build the tablix data regions from scratch, you can further configure and refine them. The dialog boxes, available from the right-click menus on the data regions, make it easy to set the most commonly used properties for page breaks, repeatability and visibility of headers and footers, display options, filters, and sorting. But the tablix data region provides a wealth of additional properties, which you can set only in the Properties pane of Report Builder. For example, if you want to display a message when the dataset for a table, matrix, or list is empty, you specify the message text in the NoRowsMessage tablix property in the Properties pane.  
   

@@ -1,6 +1,6 @@
 ---
 title: "Expressions in Power BI Report Builder"
-description: 
+description: Expressions are widely used throughout Power BI Paginated Report Builder paginated reports to retrieve, calculate, display, group, sort, filter, parameterize, and format data.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -11,7 +11,7 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Expressions in Power BI Report Builder
-  Expressions are widely used throughout Report Builder paginated reports to retrieve, calculate, display, group, sort, filter, parameterize, and format data. 
+  Expressions are widely used throughout Power BI Paginated Report Builder paginated reports to retrieve, calculate, display, group, sort, filter, parameterize, and format data. 
   
   Many report item properties can be set to an expression. Expressions help you control the content, design, and interactivity of your report. Expressions are written in Microsoft Visual Basic, saved in the report definition, and evaluated by the report processor when you run the report.  
   

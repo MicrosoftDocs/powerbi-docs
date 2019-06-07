@@ -1,6 +1,6 @@
 ---
 title: "Expression examples in Power BI Report Builder"
-description: 
+description: Expressions are used frequently in Power BI Paginated Report Builder paginated reports to control content and report appearance.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -11,7 +11,7 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Expression examples in Power BI Report Builder
-Expressions are used frequently in Report Builder paginated reports to control content and report appearance. Expressions are written in Microsoft Visual Basic, and can use built-in functions, custom code, report and group variables, and user-defined variables. Expressions begin with an equal sign (=).   
+Expressions are used frequently in Power BI Paginated Report Builder paginated reports to control content and report appearance. Expressions are written in Microsoft Visual Basic, and can use built-in functions, custom code, report and group variables, and user-defined variables. Expressions begin with an equal sign (=).   
 
 This topic provides examples of expressions that can be used for common tasks in a report.  
   

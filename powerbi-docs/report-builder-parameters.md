@@ -1,6 +1,6 @@
 ---
 title: "Report parameters in Power BI Report Builder"
-description: This topic describes the common uses for Power BI Report Builder report parameters, the properties you can set, and much more.
+description: This topic describes the common uses for Power BI Paginated Report Builder report parameters, the properties you can set, and much more.
 ms.service: powerbi
 ms.subservice: report-builder
 ms.custom: seodec18
@@ -14,7 +14,7 @@ ms.date: 06/06/2019
 
 # Report parameters in Power BI Report Builder
 
-This topic describes the common uses for Power BI Report Builder report parameters, the properties you can set, and much more. Report parameters enable you to control report data, connect related reports together, and vary report presentation. You can use report parameters in paginated reports you create in Report Builder.
+This topic describes the common uses for Power BI Paginated Report Builder report parameters, the properties you can set, and much more. Report parameters enable you to control report data, connect related reports together, and vary report presentation. You can use report parameters in paginated reports you create in Report Builder.
 
 ## <a name="bkmk_Common_Uses_for_Parameters"></a> Common uses for parameters
 

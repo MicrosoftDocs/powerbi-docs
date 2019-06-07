@@ -1,6 +1,6 @@
 ---
 title: "Previewing reports in Power BI Report Builder"
-description: 
+description: While you create a Report Builder paginated report, it's helpful to preview the report often to verify that the report displays what you want.
 ms.date: 06/06/2019
 ms.service: powerbi
 ms.subservice: report-builder
@@ -11,7 +11,7 @@ author: maggiesMSFT
 ms.author: maggies
 ---
 # Previewing reports in Power BI Report Builder
-  While you create a Report Builder paginated report, it is helpful to preview the report often to verify that the report displays what you want. To preview your report, click **Run**. The report renders in preview mode.  
+  While you create a Report Builder paginated report, it's helpful to preview the report often to verify that the report displays what you want. To preview your report, click **Run**. The report renders in preview mode.  
   
  Report Builder improves the preview experience by using edit sessions when connected to a report server. The edit session creates a data cache and makes the datasets in the cache available for repeated report previews. An edit session is not a feature that you interact with directly, but understanding when the cached dataset is refreshed will help you improve performance when you preview a report and understand why the report renders faster or slower.  
 
@@ -60,10 +60,10 @@ The edit session is created the first time that you preview a report. By default
 By default, the data cache can hold up to five datasets. If you use many different combinations of parameter values, the report might need more data. This requires the cache be refreshed and the report renders more slowly the next time that you preview it. 
   
 ## Concurrency of report updates  
-Frequently, you preview a report as a step in updating and then saving a report to the Power BI service. When you are updating a report, it is possible that someone else is updating and then saving the report at the same time. The report that is saved last is the version of report that is available for future viewing and updating. This means that the version of the report that you previewed might not be the version you reopen. You have the option to save the report with a new name by using the **Save As** option on the Report Builder menu.  
+Frequently, you preview a report as a step in updating and then saving a report to the Power BI service. When you are updating a report, it's possible that someone else is updating and then saving the report at the same time. The report that is saved last is the version of report that is available for future viewing and updating. This means that the version of the report that you previewed might not be the version you reopen. You have the option to save the report with a new name by using the **Save As** option on the Report Builder menu.  
   
 ## External report items  
- Your report might include items such as external images that are stored separately from the report. Because the items are stored separately it is possible that they can be moved to a different location or be deleted. If this happens, your report could fail to preview. You can either update the report to indicate the updated location of the item or if the item was deleted, replace it with an existing item, or remove the reference to the item it from the report.  
+ Your report might include items such as external images that are stored separately from the report. Because the items are stored separately it's possible that they can be moved to a different location or be deleted. If this happens, your report could fail to preview. You can either update the report to indicate the updated location of the item or if the item was deleted, replace it with an existing item, or remove the reference to the item it from the report.  
   
 ## Next steps
 
