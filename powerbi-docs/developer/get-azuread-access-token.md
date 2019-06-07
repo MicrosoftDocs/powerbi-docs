@@ -93,7 +93,7 @@ protected void signInButton_Click(object sender, EventArgs e)
 
 ### Get an access token from authorization code
 
-You should now have an Azure AD authorization code, which you can use to get an access token. Below is a C# sample that you can use in your redirect page and the default.aspx's `Page_Load` event.
+Once **Azure AD** redirects back to your web app with an **authorization code**, you can use it to get an access token. Below is a C# sample that you can use in your redirect page and the default.aspx's `Page_Load` event.
 
 You can retrieve the **Microsoft.IdentityModel.Clients.ActiveDirectory** namespace from the [Active Directory Authentication Library](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) NuGet package.
 
