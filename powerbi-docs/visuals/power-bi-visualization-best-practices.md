@@ -14,12 +14,12 @@ LocalizationGroup: Visualizations
 
 # Best design practices for reports and visuals
 
+This article provides best practices for designing reports in Power BI. It discusses principles of design that you can apply to your reports and to the pages and individual visuals that make up reports. Many of these best practices apply to dashboard design as well.
+
 > [!NOTE]
 > The recommendations made in this article are guidelines for you to apply when and where it makes sense. For every principle we describe below, there are usually valid reasons to “break the rule.”
 
-This article provides best practices for designing reports in Power BI. It discusses principles of design that you can apply to your reports and to the pages and individual visuals that make up reports. Many of these best practices apply to dashboard design as well.
-
-We hope this article will be a jumping-off point for you, that you’ll apply what you learn to your own reports and visualizations, and that you’ll continue the conversation on [Microsoft Power BI Community](http://community.powerbi.com/). BI report design and visualization usage is a hot topic right now. There are many thought leaders, bloggers, and websites that look at this topic in breadth and depth. We’ve listed a few at the end of the article.
+The hope is that this article will be a jumping-off point for you, that you’ll apply what you learn to your own reports and visualizations, and that you’ll continue the conversation on [Microsoft Power BI Community](http://community.powerbi.com/). BI report design and visualization usage is a hot topic right now. There are many thought leaders, bloggers, and websites that look at BI report design in breadth and depth. We’ve listed a few at the end of the article.
 
 > *We are overwhelmed by information, not because there is too much, but because we don't know how to tame it.*
 -- Stephen Few
@@ -34,7 +34,7 @@ In-depth guidance and instructions for creating and using Power BI reports is av
 
 ## Before you build your first visualization, focus on requirements
 
-Creating a report starts before you build your first visual because a good report needs planning. Know what data you have to work with and write down the requirements for the report. Ask yourself these questions:
+Creating a report starts before you build your first visual. A good report needs planning. Know what data you have to work with and write down the requirements for the report. Ask yourself these questions:
 
 * What is the business need?
 
@@ -42,7 +42,7 @@ Creating a report starts before you build your first visual because a good repor
 
 * Who is going to use this data?
 
-A key question is, “What decisions does the reader want to be able to make based on this report?”
+* “What decisions does the reader want to be able to make based on this report?”
 
 The answer to those questions will drive your design. Every report tells a story. Make sure the story matches the business need. It may be tempting to add visuals that show dramatic insights, but if those insights don’t match the business need, then the report won’t be useful. You might actually distract your users with those visuals. Also, you may find you can't glean the info to make that decision from this data. Can you use this report to measure what you need to measure?
 
@@ -54,7 +54,7 @@ Once you’ve identified the business need, the customers, and the metrics you�
 
 ## Principles of report design
 
-A report page has limited space and one of the hardest things is to fit all the elements you want into that space – and still have that info be easily understood. Also, don’t underplay the value of a visually appealing report. The key is to find the balance between appealing and useful.
+A report page has limited space and one of the hardest things is to fit all the elements you want into that space – and still have that info be easily understood. Also, don’t underplay the value of a visually appealing report. The key is to find the balance between a report that is appealing and one that is useful.
 
 Let’s take a look at layout, clarity, and aesthetics.
 
@@ -68,7 +68,7 @@ The report canvas has a finite amount of space. If you can’t fit all the eleme
 
 It may be better to approach it as a progressive story. Maybe the first page in an overview or attention-grabbing “hook”, the second page continues the data story, the third page more deeply explores the story, and so on. If your entire report fits on a single page, that works too. If it doesn’t, create separate report pages that logically chunk the content. Don’t forget to give the pages meaningful and helpful names.
 
-Think about filling an art gallery. You wouldn’t put 50 pieces of artwork into a small room, fill it with chairs, and paint each wall a different color. As the curator, you’d choose just pieces that have a common theme. You'd lay them out around the room with plenty of space for visitors to move and think. You might even place informational cards that describe what they’re looking at. There’s a reason most modern galleries have plain walls!
+Think about filling an art gallery. You wouldn’t put 50 pieces of artwork into a small room, fill it with chairs, and paint each wall a different color. As the curator, you’d only choose pieces that have a common theme. You'd lay them out around the room with plenty of space for visitors to move and think. You might even place informational cards that describe what they’re looking at. There’s a reason most modern galleries have plain walls!
 
 For this article, we’ll start with a report example that needs a lot of work. As we apply our best practices and principles of design, our report will improve.
 
@@ -88,7 +88,7 @@ The example above has many space-related (layout) design issues that we’ll dis
 
 The layout of your report elements impacts reader comprehension and guides them through the report page. How you place and position elements tells a story. The story might be “start here and then look here” or “these three elements are related to each other.”
 
-* In most cultures, people scan from left to right and top to bottom. Position the most important element in the top-left corner of your report. Organize the rest of the visuals in a way that leads to logical navigation and comprehension of the info.
+* In many cultures, people scan from left to right and top to bottom. Position the most important element in the top-left corner of your report. Organize the rest of the visuals in a way that leads to logical navigation and comprehension of the info.
 
 * Position elements that require the reader to make a choice to the left of the visualizations the choice will impact: slicers, for example.
 
@@ -118,7 +118,7 @@ We can see in our updated report that we have aligned the report components on t
 
 **Figure 2: Our ugly report example improved with layout edits**
 
-Power BI includes tools to help you align your visuals. In Power BI Desktop, with multiple visuals selected, you can use the **Align** and **Distribute** options on the **Visual Toolss** ribbon tab to match up the position of visuals.
+Power BI includes tools to help you align your visuals. In Power BI Desktop, with multiple visuals selected, you can use the **Align** and **Distribute** options on the **Visual Tools** ribbon tab to match up the position of visuals.
 
 ![Align visuals in Power BI Desktop.](media/power-bi-visualization-best-practices/power-bi-visualization.png)
 
@@ -148,7 +148,7 @@ Here is a report page using page size **4:3** and then using **16:9**. Notice ho
 
 ![The report at 16:9 page size ratio.](media/power-bi-visualization-best-practices/power-bi-page-view-after.png)
 
-**Figure 5b: The report at 16:9 page size ratio**
+**Figure 5b: The report at 16:9 page size**
 
 Will people view your report in 4:3, 16:9 or another aspect ratio? On small screens or huge screens? Will they view your report on all possible screen ratios and sizes? Design with this point in mind.
 
@@ -160,7 +160,7 @@ Our example report page seems a bit cramped. With no visual selected:
 
 1. For **Type**, select **Custom**.
 
-1.  Change **Height** to *900*.
+1. Change **Height** to **900**.
 
 ![Increase page height.](media/power-bi-visualization-best-practices/power-bi-page-size.png)
 
@@ -168,11 +168,11 @@ Our example report page seems a bit cramped. With no visual selected:
 
 #### Reduce clutter
 
-A cluttered report page will be hard to understand at-a-glance and may be so overwhelming that readers won’t even try. Get rid of all report elements that aren’t necessary. Don’t add bells-and-whistles that don’t help comprehension or navigation. Your report page needs to convey the info as clearly, quickly, and cohesively as it can.
+A cluttered report page will be hard to understand at-a-glance and may be so overwhelming that readers won’t even try. Get rid of all report elements that aren’t necessary. Don’t add features that don’t help comprehension or navigation. Your report page needs to convey the info as clearly, quickly, and cohesively as it can.
 
 Edward Tufte calls it “data to ink ratio” in his book *The Visual Display of Quantitative Information*. Basically, remove anything that isn’t essential.
 
-The clutter you remove will increase the whitespace on your report page. It will give you more real estate for applying the best practices we learned about in the [Alignment, order, and proximity](#alignment-order-and-proximity) section.
+The clutter you remove will increase the white space on your report page. It will give you more real estate for applying the best practices we learned about in the [Alignment, order, and proximity](#alignment-order-and-proximity) section.
 
 Our example is already looking better. We’ve removed clutter and added shapes to group elements together. The background image is gone, the unnecessary arrow shape and text box are gone, we moved one visual to another page in the report, and so on. We’ve also lengthened the page size to increase white space.
 
@@ -182,7 +182,7 @@ Our example is already looking better. We’ve removed clutter and added shapes 
 
 ### Tell a story at a glance
 
-The overall test should be that somebody without any prior knowledge can quickly understand the report without any explanation from anybody. With a quick glance, readers can quickly see what the page is about and what each chart/table conveys.
+The overall test should be that somebody without any prior knowledge can quickly understand the report without any explanation from anybody. With a quick glance, readers can see what the page is about and what each chart/table conveys.
 
 When readers look at your report, their eyes should focus on the element you want them to look at first. Their eyes will then continue left-right and top-down. Change this behavior by adding visual cues like text box labels, shapes, borders, size, and color.
 
@@ -206,7 +206,7 @@ Don’t overdo it though. Too much text on a report and detracts from the visual
 
 #### Text
 
-Create a text style guide and apply it to all pages of your report. Pick just a few fonts, text sizes, and colors. Apply this style guide to textual elements. Also apply it to the font choices you make within your visualizations. See [Titles and labels that are part of the visualizations](#titles-and-labels-that-are-part-of-the-visualizations). Set rules for when you’ll use bold, italics, increased font size, specific colors, and more. Try to avoid using all capitalization or underlining.
+Create a text style guide and apply it to all pages of your report. Pick just a few fonts, text sizes, and colors. Apply this style guide to textual elements. Also apply it to the font choices you make within your visualizations. See the [Titles and labels that are part of the visualizations](#titles-and-labels-that-are-part-of-the-visualizations) section. Set rules for when you’ll use bold, italics, increased font size, specific colors, and more. Try to avoid using all capitalization or underlining.
 
 #### Shapes
 
@@ -238,11 +238,11 @@ In our example, we added a report page title in the top-left corner; the first p
 
 #### Color
 
-Use color for consistency. We’ll talk more about color later in [Principles of visual design](#principles-of-visual-design). Here, we’re talking about being deliberate in your selection of color. It's so that the colors doesn’t detract from your readers ability to quickly understand your report. Too many bright colors barrage the senses. This section is more what not to do with color.
+Use color for consistency. We’ll talk more about color later in [Principles of visual design](#principles-of-visual-design). Here, we’re talking about being deliberate in your selection of color. It's so that the color doesn’t detract from your readers ability to quickly understand your report. Too many bright colors barrage the senses. This section is more what not to do with color.
 
 #### Backgrounds
 
-When setting backgrounds for report pages, choose colors that don’t overshadow the report, clash with other colors on the page, or generally hurt the eyes. Realize that some colors have inherent meaning. For example, in the US, red in a report is typically interpreted as “bad”.
+When setting backgrounds for report pages, choose colors that don’t overshadow the report, clash with other colors on the page, or generally hurt the eyes. Realize that some colors have inherent meaning. For example, in the United States, red in a report is typically interpreted as “bad”.
 
 ![Set report background.](media/power-bi-visualization-best-practices/power-bi-page-background.png)
 
@@ -262,13 +262,13 @@ Here are the additional steps we took to improve the example report:
 
 When we changed the background to black, our title disappeared because the text box field only allows black font. To fix this issue, add a text box title instead:
 
-1. With the text box selected, erase the text
+1. With the text box selected, erase the text.
 
 1. On the Visualizations tab, select **Title** and turn it **On**.
 
-1. Select the arrow to expand the **Title** options
+1. Select the arrow to expand the **Title** options.
 
-1. Enter **Summer Olympic Games** into the **Title Text** field
+1. Enter **Summer Olympic Games** into the **Title Text** field.
 
 1. From **Font color**, select white.
 
@@ -366,7 +366,7 @@ We discussed much of what we would consider aesthetics above: alignment, color, 
 
 Remember that the function of your report is to meet a business need; not to be pretty. Some level of beauty is required, especially when it comes to first impressions. Nashville consultant Tony Bodoh explains, "Emotion fires a half-second before logic can kick in." Readers will first react at an emotional level to your report page. Then they will take more time to dig deeper. If your page looks disorganized, confusing, or unprofessional, your reader may never discover the powerful story it tells.
 
-Blogger and TechTarget industry analyst Wayne Eckerson has a great analogy. Designing a report is like decorating a room. Over time you buy a vase, a sofa, end table, a painting. Separately you like all of these elements. Although each individual selection makes sense, collectively the objects clash or compete for attention.
+Blogger and TechTarget industry analyst Wayne Eckerson has a great analogy. Designing a report is like decorating a room. Over time you buy a vase, a sofa, end table, and a painting. Separately you like all of these elements. Although each individual selection makes sense, collectively the objects clash or compete for attention.
 
 Concentrate on these things:
 
@@ -386,7 +386,7 @@ We’re going to leave our example report page alone for a while and look at oth
 
 Just as it’s important to plan out your report before you start building, each visual also requires planning. Ask yourself, “What story am I trying to tell with this visual,” and then figure out which visual type will tell the story best. You could show progress through a sales cycle as a bar chart, but wouldn’t a waterfall or funnel chart tell it better? For help with this process, read the last section of this article, [Visual types and best practices](#visual-types-and-best-practices). It describes best practices for some of the more-common types of visuals. Don’t be surprised if the first visual type you pick doesn’t end up being your best option. Try more than one visual type to see which one makes the point best.
 
-Understand the difference between categorical and quantitative data and know which visual types work best with what type of data. Quantitative data is often referred to as measures and it’s typically numeric. Categorical data is often referred to as dimensions and you can classify it. It's discussed in more depth in the [Choose the right measure](#choose-the-right-measure) section.
+Understand the difference between quantitative and categorical data and know which visual types work best with what type of data. Quantitative data is often referred to as measures and it’s typically numeric. Categorical data is often referred to as dimensions and you can classify it. It's discussed in more depth in the [Choose the right measure](#choose-the-right-measure) section.
 
 Avoid the temptation to use fancy or more-complex visual types just to make your report look more impressive. What you want is the most simple option for conveying your story. Horizontal Bar charts and simple Line charts convey info quickly. They're familiar and comfortable and most readers interpret them easily. An added advantage is that most of your audience reads left-to-right and top-to-bottom, so they can scan these two chart types and comprehended the info quickly.
 
@@ -434,7 +434,7 @@ Once you’ve selected a type and measure and created the visual, it’s time to
 
 #### Tweaking visuals for best use of space
 
-If you’re trying to fit multiple charts into a report, maximizing your data-ink ratio will help make the story in your data stand out. As mentioned above, Edward Tufte coined ‘data-ink’ ratio. The goal is to remove as many marks from a chart as possible without impairing a reader’s ability to interpret the data.
+If you’re trying to fit multiple charts into a report, maximizing your data-ink ratio will help make the story in your data stand out. As mentioned above, Edward Tufte coined "data-ink ratio." The goal is to remove as many marks from a chart as possible without impairing a reader’s ability to interpret the data.
 
 In the first set of charts below, there are redundant axis labels: **Jan 2014**, **Apr 2014**, and so on. In the titles, **by Date** is repeated. The titles for each chart also require dedicated horizontal space across each chart. By removing the chart titles and turning on individual axis labels, we remove some ink and have better use of the overall space. We can remove the axis labels for the top two charts to further reduce ink and use more of the space for data.
 
@@ -603,7 +603,7 @@ Earlier in this article we talked about the importance of having a plan for how 
 > [!TIP]
 > Know your audience and any inherent color rules. For example, in the United States, green typically means “good” and red typically means “not good”.
 
-This section covers:
+The following sections cover:
 
 * Data color
 
@@ -723,7 +723,7 @@ After
 | Filled map | Changed the **Data colors** to make it stand out more. <br> Turned **Diverging** on and set the **Minimum** to pink and the **Maximum** to red.
 | Treemap | Removed filter that was set for only USA. <br> Set the **Data labels** to one decimal place. <br> The visual was using the Class field that isn’t useful since it will almost always be 33% for the 3 medals: Gold, Silver, and Bronze. <br> Selected a different more-interesting field, gender. Changed Aquatics to blue and Athletics to grey for design.
 | Top bar chart | Shortened the title, removed data labels, turned off legend title. <br> Changed word order of title to match the chart below.
-| Bottom bar chart | Sorted by year ascending to match chart above. <br> Changed colors to match class. <br> Changed title. <br> Turned off legend for more space for data. <br> Turned on data labels. They won't show up in the report because the visual is too small for the labels to be easy to read. They will show up when the reader opens the visual in **Focus** mode. Learn about [Focus mode](../consumer/end-user-focus.md). <br> Added **Count of Event (Distinct)** to **Tooltips**. Now, when you hover over a stacked column, the tooltips also tell you how many events the people contested that year. |
+| Bottom bar chart | Sorted by year ascending to match chart above. <br> Changed colors to match class. <br> Changed title. <br> Turned off legend for more space for data. <br> Turned on data labels. They won't show up in the report because the visual is too small for the labels to be easy to read. They will show up when the reader opens the visual in **Focus** mode. Learn about [Focus mode](../consumer/end-user-focus.md). <br> Added **Count of Event (Distinct)** to **Tooltips**. Now, when you hover over a stacked column, the tooltips also tell you how many events the people competed in that year. |
 | Visual Interactions | Turned off interactions for both cards since we always want them to show total games and sports. |
 
 ## Visual types and best practices
@@ -742,9 +742,9 @@ Line charts are a powerful way to look at data over time. Looking at data in tab
 
 #### Best practices
 
-* When people look at Line charts, the first thing they see is the shape of the curve. So you need to have an x-axis that makes the curve meaningful such a time or distribution categories. If you put categorical fields like product or geography on the x-axis, the line chart will not be interesting. The shape of the curve would provide no meaningful info.
+* When people look at Line charts, the first thing they see is the shape of the curve. So you need to have an x-axis that makes the curve meaningful such as time or distribution categories. If you put categorical fields like product or geography on the x-axis, the line chart will not be interesting. The shape of the curve would provide no meaningful info.
 
-* If you choose to place multiple charts above and below each other to make it easier to compare across series like this, line up the X-axis. Use filters to make sure that Power BI shows the same range of values. For example, if you’re looking at date ranges, ensure they're the same date ranges. For example, 1896 to 2012 on both charts.
+* If you choose to place multiple charts above and below each other to make it easier to compare across series like this, line up the X-axis. Use filters to make sure that Power BI shows the same range of values. If you’re looking at date ranges, ensure they're the same date ranges. For example, 1896 to 2012 on both charts.
 
 * Make full use of the space. If it makes sense for your data, set the start and end points for the Y-axis to eliminate empty space at the top and bottom of your chart. It also helps the visual to focus in on the actual data points. To set the start and end points:
 
@@ -850,7 +850,7 @@ In this line chart, it's easier to see how commercial revenue has grown the most
 
     > *... it is difficult to compare the segments of a stacked bar. If you arranged the segments side-by-side and all grew upwards from the same baseline, it would be easy to compare their heights, but when stacked upon one another, the task becomes hard. Plus, although it’s fairly easy to see how (revenue) changed from month to month it is quite difficult to see how (revenue) in the other (categories) changed*.
 
-* 100% Stacked charts are a good choice when using percentages that add up to 100. In the example below, we see the category distribution by team. The percentages are relative and let us to, at a glance, see patterns. Everton’s revenue comes primarily from Broadcasting (over 70%) while PSG only derives 20% of its revenue from Broadcasting. The choice of a horizontal display makes it easier to fit the team labels and to see the impact of revenue type.
+* 100% Stacked charts are a good choice when using percentages that add up to 100. In the example below, we see the category distribution by team. The percentages are relative and let us see the patterns at a glance. Everton’s revenue comes primarily from Broadcasting (over 70%) while PSG only derives 20% of its revenue from Broadcasting. The choice of a horizontal display makes it easier to fit the team labels and to see the impact of revenue type.
 
   ![Horizontal stacked chart.](media/power-bi-visualization-best-practices/power-bi-deloite3.png)
 
@@ -866,7 +866,13 @@ For more info on Stacked charts:
 
 ![Combo charts.](media/power-bi-visualization-best-practices/power-bi-combo.png)
 
-In Power BI, you can combine Column and Line charts into a Combo chart. The choices are: Line and Stacked Column chart and Line and Clustered Column chart. Save valuable canvas space by combining two separate visuals into one.
+In Power BI, you can combine Column and Line charts into a Combo chart. The choices are: 
+
+* Line and Stacked Column chart 
+
+* Line and Clustered Column chart
+
+Save valuable canvas space by combining two separate visuals into one.
 
 The next two screenshots show a before and after.
 
@@ -916,7 +922,7 @@ The new report page has a single visual: a Line and Stacked Column chart. We cou
 
   **Figure 61: Create a combo chart instead**
 
-* Take advantage of dual axes. It’s a great way to compare multiple measures with different value ranges. It’s a great way to illustrate the correlation between two measures in one visual.
+* Take advantage of dual axes. It’s a great way to compare multiple measures with different value ranges. It helps to illustrate the correlation between two measures in one visual.
 
 For more info:
 
@@ -944,7 +950,7 @@ If you add a play axis, you can pretend you're Hans Rosling and tell the story o
 
 #### Best practices
 
-* Scatter and Bubble charts are great storytellers. But they aren't as useful when trying to explore data. Stephen Few points that out in the paragraph below:
+* Scatter and Bubble charts are great storytellers. But they aren't as useful when trying to explore data. Stephen Few points that out:
 
     > *The strength of this approach is when it’s used to tell a story. When Rosling narrates what’s happening in the chart as the bubbles move around and change in value, pointing to what he wants us to see, the information comes alive. Animated bubble charts, however, are much less effective for exploring and making sense of data on our own. I doubt that Rosling uses this method to discover the stories, but only to tell them once they’re known. We can’t attend more than one bubble at once as they’re moving around, so we’re forced to run the animation over and over to try to get a sense of what’s going on. We can add trails to selected bubbles, which make it possible to review the full path these bubble have taken, but if you use trails for more than a few bubbles the chart will quickly become too cluttered. Essentially, what I’m pointing out is that this is not the best way to display this information for exploration and analysis.*
 
@@ -958,7 +964,7 @@ If you add a play axis, you can pretend you're Hans Rosling and tell the story o
 
 ![Treemap charts.](media/power-bi-visualization-best-practices/power-bi-treemap.png)
 
-Treemaps can be useful for giving a good overview of the relative size of different components that make up a whole; especially when you can group them by categories. Anytime I try to understand a new business, having a treemap of the main components can be useful in knowing the overall distribution.
+Treemaps can be useful for giving a good overview of the relative size of different components that make up a whole; especially when you can group them by categories. Anytime you try to understand a new business, having a treemap of the main components can be useful in knowing the overall distribution.
 
 In the first chart below, you can see right away that Brazil makes up approximately half of South America’s GDP. You can also see that Columbia and Chile are roughly the same size.
 
@@ -972,7 +978,7 @@ The first treemap gives a broad indication of the order of the GDP size. However
 
 **Figure 63: South America GDP comparison as a treemap**
 
-Next, we’ve added Region as another level of data. We can see the overall contribution to GDP by regions. Also, we can see the relative impact within the regions. Beware that doing this with non-summative measure (like averages), the sum of the details might not represent the actual value at the aggregate level.
+Next, we’ve added Region as another level of data. We can see the overall contribution to GDP by regions. Also, we can see the relative impact within the regions. Be aware that doing this with non-summative measure (like averages), the sum of the details might not represent the actual value at the aggregate level.
 
 ![GDP by region and country as a treemap.](media/power-bi-visualization-best-practices/power-bi-treemap2.png)
 
@@ -1000,7 +1006,7 @@ You can find another fun article (and animation) about **Pie** charts on the [Da
 
 ![Radial Gauges & KPIs.](media/power-bi-visualization-best-practices/power-bi-gauge.png)
 
-**Radial** gauges seem like a good visual for indicating performance against a target, and they are popular in executive dashboards. However, they suffer in two main ways. As with **Pie** charts, it’s difficult to interpret the angle of the shaded area compared to the full 180-degree arc or target line. It also uses a lot of space to show a single metric.
+Radial gauges seem like a good visual for indicating performance against a target, and they are popular in executive dashboards. However, they suffer in two main ways. As with **Pie** charts, it’s difficult to interpret the angle of the shaded area compared to the full 180-degree arc or target line. It also uses a lot of space to show a single metric.
 
 A good alternative is a simple KPI visual:
 

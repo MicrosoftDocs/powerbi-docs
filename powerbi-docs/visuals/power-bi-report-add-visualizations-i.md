@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 
 # Part 1, Add visualizations to a Power BI report
 
-This article gives a quick introduction to creating a visualization in a report. It applies to both the Power BI service or Power BI Desktop. For more-advanced content, [see Part 2](power-bi-report-add-visualizations-ii.md) of this series. Watch Amanda demonstrate a few different ways to create, edit, and format visuals on the report canvas. Then try it out yourself using the [Sales and Marketing sample](../sample-datasets.md) to create your own report.
+This article gives a quick introduction to creating a visualization in a report. It applies to both the Power BI service and Power BI Desktop. For more-advanced content, [see Part 2](power-bi-report-add-visualizations-ii.md) of this series. Watch Amanda demonstrate a few different ways to create, edit, and format visuals on the report canvas. Then try it out yourself using the [Sales and Marketing sample](../sample-datasets.md) to create your own report.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -61,10 +61,12 @@ This article gives a quick introduction to creating a visualization in a report.
   
 ## Next steps
 
- Continue on to [Part 2: Add visualizations to a Power BI report](power-bi-report-add-visualizations-ii.md)
+ Continue on to:
 
-   [Interact with the visualizations](../consumer/end-user-reading-view.md) in the report.
+* [Part 2: Add visualizations to a Power BI report](power-bi-report-add-visualizations-ii.md)
 
-   [Do even more with visualizations](power-bi-report-visualizations.md).
+* [Interact with the visualizations](../consumer/end-user-reading-view.md) in the report.
 
-   [Save your report](../service-report-save.md).
+* [Do even more with visualizations](power-bi-report-visualizations.md).
+
+* [Save your report](../service-report-save.md).
