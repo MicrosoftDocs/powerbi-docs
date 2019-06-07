@@ -82,23 +82,13 @@ With Azure Key Vault properly configured, you're ready to enable BYOK on your te
 
 ## Enable BYOK on your tenant
 
-You enable BYOK at the tenant level with PowerShell, by first introducing to your Power BI tenant the encryption keys you created and stored in Azure Key Vault. You then assign these keys per Premium capacity to be used as encryption keys for content in the capacity.
+You enable BYOK at the tenant level with PowerShell, by first introducing to your Power BI tenant the encryption keys you created and stored in Azure Key Vault. You then assign these encryption keys per Premium capacity for encrypting content in the capacity.
 
 ### Important considerations
 
 Before you enable BYOK, keep the following considerations in mind:
 
-- The cmdlet you use to enable BYOK (`Add-PowerBIEncryptionKey`) accepts three parameters that affect encryption for current and future capacities:
-
-  - `-Activate`: Indicates that this key will be used for all existing capacities in the tenant.
-
-  - `-Default`: Indicates that this key is now the default for the entire tenant. When you create a new capacity, the capacity inherits this key.
-
-  - `-DefaultAndActivate` (the default): Indicates that this key will be used for all existing capacities and any new capacities you create.
-
-- At this time, you cannot disable BYOK after you enable it. Depending on how you specify parameters for `Add-PowerBIEncryptionKey`, you can choose not to use BYOK for one or more of your capacities. However, you can't undo the introduction of keys to your tenant.
-
-- If you specify `-Default` or `-DefaultAndActivate`, all of the capacities created on this tenant from this point will be encrypted using the key you specify (or an updated default key). You cannot undo the default operation, so you lose the ability to create a premium capacity that doesn't use BYOK in your tenant.
+- At this time, you cannot disable BYOK after you enable it. Depending on how you specify parameters for `Add-PowerBIEncryptionKey`, you can control how you use BYOK for one or more of your capacities. However, you can't undo the introduction of keys to your tenant. For more information, see [Enable BYOK](#enable-byok).
 
 - You cannot _directly_ move a workspace that uses BYOK from a dedicated capacity in Power BI Premium to shared capacity. You must first move the workspace to a dedicated capacity that doesn't have BYOK enabled.
 
@@ -109,6 +99,18 @@ To enable BYOK, you must be a tenant administrator of the Power BI service, sign
 ```powershell
 Add-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
 ```
+
+The cmdlet accepts three switch parameters that affect encryption for current and future capacities. By default, none of the switches are set:
+
+- `-Activate`: Indicates that this key will be used for all existing capacities in the tenant.
+
+- `-Default`: Indicates that this key is now the default for the entire tenant. When you create a new capacity, the capacity inherits this key.
+
+- `-DefaultAndActivate`: Indicates that this key will be used for all existing capacities and any new capacities you create.
+
+If you specify `-Default` or `-DefaultAndActivate`, all of the capacities created on this tenant from this point will be encrypted using the key you specify (or an updated default key). You cannot undo the default operation, so you lose the ability to create a premium capacity that doesn't use BYOK in your tenant.
+
+You have control over how you use BYOK across your tenant. For example, to encrypt a single capacity, call `Add-PowerBIEncryptionKey` without `-Activate`, `-Default`, or `-DefaultAndActivate`. Then call `Set-PowerBICapacityEncryptionKey` for the capacity where you want to enable BYOK.
 
 ## Manage BYOK
 
