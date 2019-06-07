@@ -28,13 +28,13 @@ There are three ways to create Siri shortcuts to your reports and dashboards:
     
 - Use the **Suggested shortcuts** in the device settings (**Device Setting** > **Siri & Search**). You can add a shortcut to the item in the suggestion by using the plus (+) button.
      
-     ![Create a shortcut](./media/mobile-apps-iOS-siri-and-search/power-bi-siri-create-shortcut.png)
+     ![Create a shortcut](./media/mobile-apps-ios-siri-search/power-bi-siri-create-shortcut.png)
 
 For a Power BI report, the shortcut will capture the current page that you're viewing when creating the shortcut. 
 
 All options will open the **Add to Siri** page. In this page, you will need to record a phrase that you will use later with Siri to open the report or dashboard. 
    
-![Add to Siri page](./media/mobile-apps-iOS-siri-and-search/power-bi-siri-add-page.png)
+![Add to Siri page](./media/mobile-apps-ios-siri-search/power-bi-siri-add-page.png)
     
 
 ## Use Siri Shortcuts to view report or dashboard
@@ -45,7 +45,7 @@ Activate Siri and provide the phrase you recorded for the shortcut. Siri will la
 For a Power BI report, you will land on the page captured when you created the shortcut.
 
 
-  ![Siri launches Power BI to open the shortcut](./media/mobile-apps-iOS-siri-and-search/power-bi-siri-open.png)
+  ![Siri launches Power BI to open the shortcut](./media/mobile-apps-ios-siri-search/power-bi-siri-open.png)
   
 
 ## Edit Siri shortcut phrase 
@@ -60,9 +60,9 @@ To delete a shortcut, go to the item, and from the actions menu (...), tap the *
 > 
 
 ## Next steps
-Your feedback will help us decide what to implement in the future, so don’t forget to vote for other features that you would like to see in Power BI mobile apps. 
+Learn more about the Power BI mobile app by doing the following: 
 
-* Download the [Power BI iPhone mobile app](http://go.microsoft.com/fwlink/?LinkId=522062)
-* Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
-* Join the conversation at the [Power BI Community](http://community.powerbi.com/)
+* Downloading the [Power BI iPhone mobile app](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Following [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
+* Joining the conversation at the [Power BI Community](http://community.powerbi.com/)
 

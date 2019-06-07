@@ -17,6 +17,8 @@ Use iOS device search to find and access the content you need.
 
 When you use iOS device search (spotlight) to look for specific content, Power BI items are included in the result list. Tapping on a Power BI item from the result list takes you directly to that item inside the Power BI app.
 
+## Find items using device search
+
 To find items using device search:
 
 1. Swipe down from the middle of the **Home** screen to get into the device search.
@@ -31,7 +33,7 @@ To find items using device search:
     * Workspaces
     * Items shared by the contact you search for
 
-    ![Screenshot showing Power BI search results in iOS device search](./media/mobile-apps-iOS-siri-and-search/power-bi-spotlight-search.png)
+    ![Screenshot showing Power BI search results in iOS device search](./media/mobile-apps-ios-siri-search/power-bi-spotlight-search.png)
 
  3. Once you find the item you want, tap on it. The Power BI app will open directly on the selected item. 
 
@@ -43,10 +45,10 @@ Device search, powered by Siri, will also include suggestions based on your freq
 >and disable the **Siri & suggestions** setting.
 >
 
-### Next steps
-Your feedback will help us decide what to implement in the future, so don’t forget to vote for other features that you would like to see in Power BI mobile apps. 
+## Next steps
+Learn more about the Power BI mobile app by doing the following: 
 
-* Download the [Power BI iPhone mobile app](http://go.microsoft.com/fwlink/?LinkId=522062)
-* Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
-* Join the conversation at the [Power BI Community](http://community.powerbi.com/)
+* Downloading the [Power BI iPhone mobile app](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Following [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
+* Joining the conversation at the [Power BI Community](http://community.powerbi.com/)
 
