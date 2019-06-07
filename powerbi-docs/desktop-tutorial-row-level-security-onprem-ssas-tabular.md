@@ -35,7 +35,7 @@ You can find many articles describing how to define row level dynamic security w
 
 The steps here require using the **AdventureworksDW2012** relational database.
 
-1. In **AdventureworksDW2012**, create the **DimUserSecurity** table as shown below. You can use [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms.md) to create the table.
+1. In **AdventureworksDW2012**, create the **DimUserSecurity** table as shown below. You can use [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) to create the table.
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable.png)
 
@@ -61,7 +61,7 @@ The steps here require using the **AdventureworksDW2012** relational database.
 
 ## Task 2: Create the tabular model with facts and dimension tables
 
-1. Once your relational data warehouse is in place, you need to define the tabular model. You can create the model using [**SQL Server Data Tools (SSDT)**](/sql/ssdt/sql-server-data-tools.md). For more information, see [Create a New Tabular Model Project](https://msdn.microsoft.com/library/hh231689.aspx).
+1. Once your relational data warehouse is in place, you need to define the tabular model. You can create the model using [**SQL Server Data Tools (SSDT)**](https://docs.microsoft.com/sql/ssdt/sql-server-data-tools). For more information, see [Create a New Tabular Model Project](https://msdn.microsoft.com/library/hh231689.aspx).
 
 2. Import all the necessary tables into the model as shown below.
    
@@ -158,7 +158,7 @@ Once your tabular model is deployed and ready for consumption, you need to add a
 
 ## Task 6: Understand what happens behind the scenes
 
-This task assumes you're familiar with [SQL Profiler](/sql/tools/sql-server-profiler/sql-server-profiler.md), since you need to capture a SQL Server profiler trace on your on-premises SSAS tabular instance.
+This task assumes you're familiar with [SQL Profiler](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler), since you need to capture a SQL Server profiler trace on your on-premises SSAS tabular instance.
 
 1. The session gets initialized as soon as the user (Jon Doe) accesses the dashboard in the Power BI service. You can see that the **salesterritoryusers** role takes an immediate effect with the effective user name as **<EffectiveUserName>jondoe@moonneo.com</EffectiveUserName>**
    
