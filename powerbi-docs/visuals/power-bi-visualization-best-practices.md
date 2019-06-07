@@ -19,7 +19,7 @@ LocalizationGroup: Visualizations
 
 This article provides best practices for designing reports in Power BI. It discusses principles of design that you can apply to your reports and to the pages and individual visuals that make up reports. Many of these best practices apply to dashboard design as well.
 
-We hope this article will be a jumping-off point for you, that you’ll apply what you learn to your own reports and visualizations, and that you’ll continue the conversation on [Microsoft Power BI Community](community.powerbi.com). BI report design and visualization usage is a hot topic right now. There are many thought leaders, bloggers, and websites that look at this topic in breadth and depth. We’ve listed a few at the end of the article.
+We hope this article will be a jumping-off point for you, that you’ll apply what you learn to your own reports and visualizations, and that you’ll continue the conversation on [Microsoft Power BI Community](http://community.powerbi.com/). BI report design and visualization usage is a hot topic right now. There are many thought leaders, bloggers, and websites that look at this topic in breadth and depth. We’ve listed a few at the end of the article.
 
 > *We are overwhelmed by information, not because there is too much, but because we don't know how to tame it.*
 -- Stephen Few
@@ -990,7 +990,7 @@ For more info on treemaps:
 
 ![Pie or Donut charts](media/power-bi-visualization-best-practices/power-bi-donut.png)
 
-In general, Bar, Column, and Line charts will serve most purposes. It’s well understood that Pie and Donut charts are difficult for humans to interpret correctly. In fact, they can often distort data. Avoid them where possible. Stephen Few has an excellent write-up on the history and dangers in [Save the Pies for Dessert](www.percetualedge.com/articles/08-21-07.pdf).
+In general, Bar, Column, and Line charts will serve most purposes. It’s well understood that Pie and Donut charts are difficult for humans to interpret correctly. In fact, they can often distort data. Avoid them where possible. Stephen Few has an excellent write-up on the history and dangers in [Save the Pies for Dessert](https://www.perceptualedge.com/articles/08-21-07.pdf).
 
 He does explain the one time where **Pie** charts can be useful, when comparing part-to-whole relationships. It is rarely better than a 100% Stacked Bar chart.
 

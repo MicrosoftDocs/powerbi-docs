@@ -41,23 +41,23 @@ This article gives a quick introduction to creating a visualization in a report.
 
    **Or, start with a category field**, such as **Name** or **Product**: Power BI creates a Table and adds that field to the **Values** well.
 
-   ![](media/power-bi-report-add-visualizations-i/pbi_agif_createchart3.gif)
+   ![GIF of a person selecting Product and then category to create a table.](media/power-bi-report-add-visualizations-i/pbi_agif_createchart3.gif)
 
    **Or, start with a geography field**, such as **Geo** > **City**. Power BI and Bing Maps create a map visualization.
 
-   ![](media/power-bi-report-add-visualizations-i/power-bi-map.png)
+   ![Screenshot of a map visualization.](media/power-bi-report-add-visualizations-i/power-bi-map.png)
 
 1. Create a visualization and then change its type. Select **Product** > **Category** and then **Product** > **Count of Product** to add them both to the **Values** well.
 
-   ![](media/power-bi-report-add-visualizations-i/part1table1.png)
+   ![Screenshot of the Fields pane with the Values well called out.](media/power-bi-report-add-visualizations-i/part1table1.png)
 
 1. Change the visualization to a column chart by selecting the **Stacked column chart** icon.
 
-   ![](media/power-bi-report-add-visualizations-i/part1converttocolumn.png)
+   ![Screenshot of the Visualizations pane with the Stacked column chart icon called out.](media/power-bi-report-add-visualizations-i/part1converttocolumn.png)
 
-1. When you create visualizations in your report, you can [pin them to your dashboard](../service-dashboard-pin-tile-from-report.md). To pin the visualization, select the pin icon ![](media/power-bi-report-add-visualizations-i/pinnooutline.png).
+1. When you create visualizations in your report, you can [pin them to your dashboard](../service-dashboard-pin-tile-from-report.md). To pin the visualization, select the pin icon ![Screenshot of the pin icon.](media/power-bi-report-add-visualizations-i/pinnooutline.png).
 
-   ![](media/power-bi-report-add-visualizations-i/part1pin1.png)
+   ![Screenshot of a column chart visualization with the pin icon called out.](media/power-bi-report-add-visualizations-i/part1pin1.png)
   
 ## Next steps
 
