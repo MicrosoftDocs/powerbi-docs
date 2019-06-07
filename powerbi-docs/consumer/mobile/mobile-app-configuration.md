@@ -14,7 +14,7 @@ ms.author: mshenhav
 
 # Remotely configure Power BI iOS app using mobile device management (MDM) tool
 
-Power BI Mobile app for iOS supports app settings that allow Office 365 and mobile device management (MDM), like Intune, administrators to customize the behavior of the app.
+Power BI Mobile app for iOS supports app settings that allow administrators for Office 365 and mobile device management (MDM), such as Intune, to customize the behavior of the app.
 
 Power BI Mobile app for iOS supports the following configuration scenarios:
 
@@ -34,7 +34,7 @@ Power BI iOS app allows administrators to remotely "push" Report Server configur
 
 ## Data protection setting
 
-Power BI iOS app offers administrators the ability to customize the default configuration for security and privacy setting. Forcing users to provide their Face ID, Touch ID, or a passcode when accessing Power BI app.
+Power BI iOS app offers administrators the ability to customize the default configuration for security and privacy settings. YOu can force users to provide their Face ID, Touch ID, or a passcode when accessing Power BI app.
 
 | Key | Type | Description |
 |---|---|---|
@@ -52,7 +52,7 @@ The following steps will allow you to create an app configuration policy. After 
 
 4. Create key-value pairs for the setting you want to push to your users.
 
-The Intune portal enables administrators to easily deploy these settings to Power BI iOS app via App Configuration Policies.
+The Intune portal enables administrators to easily deploy these settings to Power BI iOS app via app configuration policies.
 However, any MDM provider is supported. If you are not using Intune, you'll need to consult with your MDM documentation on how to deploy these settings.
 
 ### Next steps
