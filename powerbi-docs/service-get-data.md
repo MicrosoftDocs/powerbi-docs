@@ -20,7 +20,7 @@ In this article, we're going to cover the data source types you can connect to f
 
 You can get data from any of the data sources in Power BI by selecting **Get Data** in the bottom-left corner of the page.
 
-![](media/service-get-data/pbi_getdata_navigation_link.png) 
+![](media/service-get-data/pbi-getdata-navigation-link.png) 
 
 After you select **Get Data**, you can choose the data you want to access
 
