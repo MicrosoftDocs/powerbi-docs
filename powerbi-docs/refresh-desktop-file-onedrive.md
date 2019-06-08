@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 112/06/2018
+ms.date: 12/06/2018
 ms.author: mblythe
 
 LocalizationGroup: Data refresh
