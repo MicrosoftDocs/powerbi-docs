@@ -24,10 +24,10 @@ You can get data from any of the data sources in Power BI by selecting **Get Dat
 
 After you select **Get Data**, you can choose the data you want to access
 
-![](media/service-get-data/pbi_getdata_startscreen.png)
+![](media/service-get-data/pbi-Sgetdata-startscreen.png)
 
 ## Discover content
-![](media/service-get-data/pbi_getdata_discovercontent.png)
+![](media/service-get-data/pbi-getdata-discovercontent.png)
 
 The **Discover content** section contains all the data and reports you need already prepared for you. In Power BI, there are two types of content packs: Organizational and Services. 
 
