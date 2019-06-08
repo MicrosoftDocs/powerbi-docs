@@ -16,7 +16,7 @@ LocalizationGroup: Share your work
 
 Business intelligence is a collaborative activity. It's important to establish standardized datasets that can be the 'one source of truth.' Discovering and reusing those standardized datasets is key. When expert data modelers in your organization create and share optimized datasets, report creators can start with those datasets to build accurate reports. Then your organization has consistent data for making decisions, and a healthy data culture.
 
-![Select a shared dataset](media/service-datasets-across-workspaces/power-bi-select-dataset.png)
+![Select a shared dataset](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
 Power BI makes it easy for dataset creators to certify or promote datasets so others can discover them. Then report authors find quality, official datasets they can use wherever they are in Power BI. Dataset owners can keep control of who has access to their data by using the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Tenant administrators have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
 

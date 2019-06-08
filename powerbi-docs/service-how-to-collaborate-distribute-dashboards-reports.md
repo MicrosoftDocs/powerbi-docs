@@ -14,9 +14,7 @@ LocalizationGroup: Share your work
 
 # Ways to share your work in Power BI
 
-You've created dashboards and reports. Maybe you collaborated on them with your coworkers, too. Now you want others to have access to them. What's the best way to distribute them?
-
-In this article, we compare these options for collaborating and sharing in Power BI:
+You've created dashboards and reports. Maybe you collaborated on them with your coworkers, too. Now you want others to have access to them. What's the best way to distribute them? In this article, we compare these options for collaborating and sharing in Power BI:
 
 * Collaborate with coworkers to create meaningful reports and dashboards in *workspaces*.
 * Bundle those dashboards and reports into *apps* and distribute them to a larger group or your whole organization.
