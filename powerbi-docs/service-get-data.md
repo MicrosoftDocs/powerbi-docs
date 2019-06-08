@@ -24,7 +24,7 @@ You can get data from any of the data sources in Power BI by selecting **Get Dat
 
 After you select **Get Data**, you can choose the data you want to access
 
-![](media/service-get-data/pbi-Sgetdata-startscreen.png)
+![](media/service-get-data/pbi-getdata-startscreen.png)
 
 ## Discover content
 ![](media/service-get-data/pbi-getdata-discovercontent.png)
