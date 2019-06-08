@@ -8,7 +8,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/04/2019 
+ms.date: 06/07/2019 
 LocalizationGroup: Share your work
 ---
 
@@ -19,9 +19,9 @@ You've created dashboards and reports. Maybe you collaborated on them with your 
 In this article, we compare these options for collaborating and sharing in Power BI:
 
 * Collaborate with coworkers to create meaningful reports and dashboards in *workspaces*.
-* Bundle those dashboards and reports into *apps* and publishing them to a larger group or your whole organization.
-* Create *shared datasets* that your coworkers can use as the basis for their reports, in their own workspaces.
-* Create a *template app* that you can distribute to all Power BI users, via Microsoft AppSource. 
+* Bundle those dashboards and reports into *apps* and distribute them to a larger group or your whole organization.
+* Create *shared datasets* that your coworkers can use as the basis for their own reports, in their own workspaces.
+* Create a *template app* that you can distribute to external Power BI users, via Microsoft AppSource.
 * Share dashboards or reports with a few people, from the service or the Power BI mobile apps.
 * Print reports.
 * *Embed* reports in secure portals or public web sites.
@@ -32,7 +32,7 @@ No matter which option you choose, to share your content you need a [Power BI Pr
 
 *Apps in the Power BI service*
 
-## Collaborate with coworkers in a workspace
+## Collaborate in a workspace
 
 When teams work together, they need access to the same documents so they can quickly collaborate. In Power BI workspaces, teams come together to share the ownership and management of their dashboards, reports, datasets, and workbooks. Sometimes Power BI users organize their workspaces based on organizational structures, other times they create them for specific projects. Still other organizations use several workspaces to store different versions of reports or dashboards they use. 
 
@@ -48,13 +48,11 @@ Let’s imagine you have a finished dashboard you need to share with your collea
 - If colleagues just need to see that dashboard and not all the content in the workspace, you again have alternatives. If a few people need just that one dashboard, then sharing the dashboard could be the best solution.
 - However, if the dashboard is part of a bigger set of content you need to distribute to many colleagues, then publishing an *app* is likely the best choice.
 
-Read more about [creating workspaces](service-create-workspaces.md).
+Power BI has a new workspace experience. Read [Create the new workspaces](service-create-the-new-workspaces.md) to see how workspaces have changed. 
 
-**Did you know?** Power BI has a new workspace experience. Read [Create the new workspaces](service-create-the-new-workspaces.md) to see how workspaces are changing. 
+## Distribute insights in an app
 
-## Distribute data and insights by creating an app
-
-Say you want to distribute your dashboard to a broad audience. You and your coworkers have created a *workspace*, then created and refined dashboards, reports, and datasets in the workspace. Now you select the dashboards and reports you want and publish them as an app &#151; either to a group or to your whole organization.
+Say you want to distribute your dashboard to a broad audience in your organization. You and your coworkers have created a *workspace*, then created and refined dashboards, reports, and datasets in the workspace. Now you select the dashboards and reports you want and publish them as an app &#151; either to a group or to your whole organization.
 
 ![Publish app icon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
@@ -64,7 +62,13 @@ After they install an app, they can view it in their browser or mobile device.
 
 For your users to view your app, either they need to have a Power BI Pro license, too, or the app needs to be stored in a Power BI Premium capacity. Read [What is Power BI Premium?](service-premium-what-is.md) for details.
 
-You can publish apps to those outside your organization, too. They can view and interact with the app content, but can’t share it with others.
+You can publish apps to those outside your organization, too. They can view and interact with the app content, but can’t share it with others. Now you can create *template apps* deploy them to any Power BI customer.
+
+## Share a dataset
+
+Let's face it, some people are more skilled at creating high-quality, well-designed data models in their reports. Maybe you're that person. Your whole organization can benefit from using the same well-designed data models. *Shared datasets* fill that role. When you create a report with a data model that everyone should use, you can save that report to the Power BI service and give the right people permission to use it. Then they can build their reports on your dataset. That way, everyone is basing their reports on the same data, and seeing the same "version of the truth."
+
+Read more about [creating and using shared datasets](service-datasets-across-workspaces.md).
 
 ## Share dashboards and reports
 
@@ -112,6 +116,11 @@ With **Publish to web**, you can publish Power BI reports to the whole Internet 
 
 >[!Warning]
 >Use [Publish to web](service-publish-to-web.md) only to share content publicly, not for internal sharing.
+
+## Create and deploy template apps
+
+*Template apps* are designed to be distributed publicly, often in Microsoft AppSource. You build an app, and with little or no coding, you can deploy it to any Power BI customer. Your customers connect to their own data and instantiate their own accounts. Read more about [Power BI template apps](service-template-apps-overview.md).
+
 
 ## Next steps
 
