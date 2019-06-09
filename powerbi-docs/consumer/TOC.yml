@@ -176,12 +176,16 @@
       items: 
       - name: "Get started with the iOS app"
         href: mobile/mobile-iphone-app-get-started.md
+      - name: "Protect with Face ID, Touch ID, or Passcode"
+        href: mobile/mobile-ios-native-secure-access.md
       - name: "Q&A virtual analyst in iOS mobile apps"
         href: mobile/mobile-apps-ios-qna.md
       - name: "Power BI Apple Watch app"
         href: mobile/mobile-apple-watch.md
       - name: "Scan a barcode from the app on your iPhone"
         href: mobile/mobile-apps-scan-barcode-iphone.md
+      - name: "Configure using mobile device management"
+        href: mobile/mobile-app-configuration.md
     - name: Android devices
       items: 
       - name: "Get started with the Android app"
