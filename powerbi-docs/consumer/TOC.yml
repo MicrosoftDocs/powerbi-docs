@@ -180,6 +180,10 @@
         href: mobile/mobile-ios-native-secure-access.md
       - name: "Q&A virtual analyst in iOS mobile apps"
         href: mobile/mobile-apps-ios-qna.md
+      - name: "Power BI mobile app integration with Siri Shortcuts"
+        href: mobile/mobile-apps-iOS-siri-Shortcuts.md
+      - name: "iOS device search integration"
+        href: mobile/mobile-apps-iOS-search-integration.md
       - name: "Power BI Apple Watch app"
         href: mobile/mobile-apple-watch.md
       - name: "Scan a barcode from the app on your iPhone"
