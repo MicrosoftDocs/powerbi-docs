@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 06/10/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -129,7 +129,7 @@ The **Online Services** category provides the following data connections:
 * Dynamics NAV
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (on-premises)
-* Common Data Service for Apps (Beta)
+* Common Data Service
 * Microsoft Azure Consumption Insights (Beta)
 * Azure DevOps (Beta)
 * Azure DevOps Server (Beta)
@@ -157,8 +157,11 @@ The **Online Services** category provides the following data connections:
 * Webtrends (Beta)
 * Zendesk (Beta)
 * Emigo Data Source (Beta)
-* IndustrialAppStore (Beta)
+* Entersoft Business Suite (Beta)
+* Industrial App Store
+* Intune Data Warehouse (Beta)
 * Microsoft Graph Security (Beta)
+* Quick Base
 * TeamDesk (Beta)
 
 The following image shows the **Get Data** window for **Online Services**.
@@ -183,10 +186,9 @@ The **Other** category provides the following data connections:
 * Information Grid (Beta)
 * Paxata 
 * QubolePresto (Beta)
-* Quick Base (Beta)
 * Roamler (Beta)
 * SurveyMonkey (Beta)
-* Tenforce (Beta)
+* Tenforce (Smart)List (Beta)
 * Workforce Dimensions (Beta)
 * Blank Query
 
