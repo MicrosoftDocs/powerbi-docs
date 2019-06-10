@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.author: teddybercovitz
+ms.author: tebercov
 ---
 
 # Tips for authoring template apps in Power BI
