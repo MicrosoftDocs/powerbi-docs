@@ -110,7 +110,7 @@ With the [Multi-geo (Preview)](embedded-multi-geo.md) feature, you can purchase 
 
 When a user is granted permissions to a workspace, app, or artifact, it might not be immediately available through API calls.
 The result can either be a missing artifact in a 'GET' API response, or an error when trying to use the artifact.
-The user can resolve this issue by calling [refreshUserPermissions API](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions), which updates the user permissions.
+The user can resolve this issue by calling [refreshUserPermissions API](https://docs.microsoft.com/rest/api/power-bi/users/refreshuserpermissions), which updates the user permissions.
 
 
 ### How can I find my PBI tenant region?
