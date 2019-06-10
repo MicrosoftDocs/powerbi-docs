@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/08/2019
+ms.date: 06/10/2019
 
 LocalizationGroup: Premium
 ---
@@ -141,23 +141,3 @@ Power BI provides additional cmdlets to help manage BYOK in your tenant:
     ```powershell
     Switch-PowerBIEncryptionKey -Name'Contoso Sales' -KeyVaultKeyUri'https://contoso-vault2.vault.azure.net/keys/ContosoKeyVault/b2ab4ba1c7b341eea5ecaaa2wb54c4d2'
     ```
-
-## How BYOK works
-
-The following diagram shows the components of a PBIX file that is hosted in the Power BI service.
-
-![PBIX file components](media/service-encryption-byok/pbix-file-components.png)
-
-The service stores data and metadata for the components in two places: Azure SQL Database and Azure Blob storage. The following diagram shows the storage and encryption used by default for each component.
-
-![PBIX file component encryption](media/service-encryption-byok/encryption-approaches.png)
-
-1. Azure SQL database, using [Transparent Data Encryption](/azure/sql-database/transparent-data-encryption-azure-sql).
-
-1. Azure SQL database, using [Always Encrypted](/azure/sql-database/sql-database-always-encrypted-azure-key-vault). For on-premises data sources, there is also an encryption key stored on the computer where the on-premises data gateway runs.
-
-1. Azure storage blobs, using [Azure Storage Service Encryption for data at rest](/azure/storage/common/storage-service-encryption?toc=%2fazure%2fstorage%2fblobs%2ftoc.json).
-
-When you publish content to a Premium capacity, the Power BI service transforms the imported PBIX data model into an [Analysis Services backup file (.abf)](/sql/analysis-services/multidimensional-models/backup-and-restore-of-analysis-services-databases). The .abf file storage is part of the 100TB of storage provided with Premium, and the file resides on an Azure storage blob container dedicated to your capacity. By default, this container is encrypted with a Microsoft-managed key. With BYOK, Power BI uses Azure storage [client-side encryption](/azure/storage/common/storage-client-side-encryption) to replace the Microsoft-managed key with a customer-managed key.
-
-In this preview release, we support BYOK for datasets in Azure storage blobs.
