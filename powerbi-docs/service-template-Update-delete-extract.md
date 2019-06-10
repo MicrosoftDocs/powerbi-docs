@@ -1,6 +1,6 @@
 ---
-title: Create template apps in Power BI
-description: How to create template apps in Power BI that you can distribute to any Power BI customer.
+title: Update, delete and extract template app
+description: How to Update, delete and extract template app.
 author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
