@@ -927,6 +927,8 @@
       href: service-premium-incremental-refresh.md
     - name: Configure Multi-Geo
       href: service-admin-premium-multi-geo.md
+    - name: Bring your own encryption keys
+      href: service-encryption-byok.md
     - name: Restart a Premium capacity
       href: service-admin-premium-restart.md
     - name: Connect to datasets with client applications and tools
