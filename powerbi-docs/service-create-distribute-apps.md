@@ -59,7 +59,15 @@ When the dashboards and reports in your workspace are ready, you choose which da
 
 5. On **Permission**, decide who has access to the app, and what they can do with it. 
     - In [classic workspaces](service-create-workspaces.md): everyone in your organization, specific people, or Azure Active Directory (AAD) security groups.
-    - In the [new experience workspaces](service-create-the-new-workspaces.md): specific people, AAD security groups and distribution lists, and Office 365 Groups.
+    - In the [new experience workspaces](service-create-the-new-workspaces.md): specific people, AAD security groups and distribution lists, and Office 365 Groups. All workspace users are automatically given access to the app for the workspace.
+    - You can allow app users to connec to the app's underlying datasets using the Build permission. These datasets will appear in dataset serch experiences.
+    - You can allow app users to make a copy of reports in this app to their My workspace. 
+    
+>[!IMPORTANT]
+>If your app relies on datasets from other workspaces, it is your responsibility to ensure all app users have access to the underlying datasets.
+> 
+>     
+
 
 6. You can install the app automatically for the recipients, if your Power BI admin has enabled this setting for you in the Power BI Admin Portal. Read more about [automatically installing an app](#automatically-install-apps-for-end-users) in this article.
 
@@ -129,6 +137,14 @@ If an admin gives you permissions, you can install apps automatically, *pushing*
 Once the admin has assigned you permissions, you have a new option to **install the app automatically**. When you check the box and select **Publish app** (or **Update app**), the app is pushed to all users or groups defined in the **Permissions** section of the app on the **Access** tab.
 
 ![Enable pushing apps](media/service-create-distribute-apps//power-bi-apps-access.png)
+
+## Allowing users to connect to the app's underlying datasets
+By checking the option to allow all users to connect to the app's underlying datasets, the app users receive the Build permission on the underlying dataset. This allows users to [use the app datasets across workspaces](service-datasets-across-workspaces.md) to search for these datasets in Power BI Desktop and the service get data experiences, and to create reports and dashboards using these datasets. 
+
+When you unckeck this option, new users you add to the app are no longer given the build permission. However, existing permission on the underlying datasets are not changed. You can use the provided UI to remove the build permission manually from app users. 
+
+## Allowing users to make a copy of the reports in the app
+By checking the option to allow users to make a copy of the reports in this app, you're allowing users to save any of the reports in the app to their My Workspace. This allows users to customize the reports to their unique needs. This option requires the allow all users to connect to the app's underlying datasets using the Build permission to be enabled. This capability behaves like the new [copy reports from other workspaces](service-datasets-copy-reports.md) capability.
 
 ### How users get the apps that you push to them
 After you push an app, it shows up in their Apps list automatically. In this way, you can curate the apps that specific users or job roles in your organization need to have at their fingertips.
