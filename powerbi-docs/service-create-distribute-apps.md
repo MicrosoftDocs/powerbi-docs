@@ -63,8 +63,8 @@ When the dashboards and reports in your workspace are ready, you choose which da
     - You can allow app users to connect to the app's underlying datasets using the Build permission. These datasets will appear in dataset search experiences.
     - You can allow app users to make a copy of reports in this app to their My workspace. 
     
->[!IMPORTANT]
->If your app relies on datasets from other workspaces, it is your responsibility to ensure all app users have access to the underlying datasets.
+    >[!IMPORTANT]
+    >If your app relies on datasets from other workspaces, it is your responsibility to ensure all app users have access to the underlying datasets.
 > 
 >     
 
