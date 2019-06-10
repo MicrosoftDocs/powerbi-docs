@@ -9,21 +9,18 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/20/2017
+ms.date: 05/29/2019
 ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
 ---
 # Troubleshoot Cortana for Power BI
-This article is part of a series. If you haven't already, we recommend reading the following three articles.
+This article is part of a series. 
 
-**Article 1**: [Understand how Cortana and Power BI work together to search for Power BI dashboards and reports](service-cortana-intro.md)
+> [!IMPORTANT]
+> Cortana integration is being deprecated in Power BI. Starting June 11, Cortana will no longer work for any dashboards and reports.
 
-**Article 2**: [For searching reports: enable the Cortana - Power BI - Windows integration](service-cortana-enable.md)
-
-**Article 3**: [For searching reports: create special *Cortana answer cards*](service-cortana-answer-cards.md)
-
-If you're still having problems getting Cortana to integrate with Power BI, you've come to the right place. Follow the steps below to diagnose and fix the problem.
+If you're having problems getting Cortana to integrate with Power BI, you've come to the right place. Follow the steps below to diagnose and fix the problem.
 
 ## Why doesn't Cortana find answers from my Power BI reports or dashboards?
 1. Do you have a Power BI account?  If not, [sign up for a free trial](https://powerbi.microsoft.com/get-started/).

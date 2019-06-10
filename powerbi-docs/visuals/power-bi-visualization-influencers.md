@@ -5,9 +5,9 @@ author: mihart
 manager: kvivek
 ms.reviewer: juluczni
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 02/12/2019
+ms.date: 05/22/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -93,7 +93,7 @@ More precisely, your consumers are 2.57 times more likely to give your service a
   
 - 14.93% of consumers give a low score. 
 - On average, all other roles give a low score 5.78% of the time.
-- Consumers are 2.57 times more likely to give a low score compared to all other roles. See the difference between the green bar and the red dotted line. 
+- Consumers are 2.57 times more likely to give a low score compared to all other roles. You can determine this by dividing the green bar by the red dotted line. 
 
 ### Second single factor that influences the likelihood of a low rating
 
@@ -101,7 +101,7 @@ The key influencers visual compares and ranks factors from many different variab
 
 ![Select Theme is usability](media/power-bi-visualization-influencers/power-bi-theme.png)
 
-The second most important factor is related to the theme of the customer’s review. Customers who commented about the usability of the product were 2.21 times more likely to give a low score compared to customers who commented on other themes, such as reliability, design, or speed. 
+The second most important factor is related to the theme of the customer’s review. Customers who commented about the usability of the product were 2.55 times more likely to give a low score compared to customers who commented on other themes, such as reliability, design, or speed. 
 
 Between the visuals, the average, which is shown by the red dotted line, changed from 5.78% to 11.34%. The average is dynamic because it's based on the average of all other values. For the first influencer, the average excluded the customer role. For the second influencer, it excluded the usability theme. 
  

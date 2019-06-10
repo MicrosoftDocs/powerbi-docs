@@ -1,15 +1,15 @@
 ---
 title: Power BI report scheduled refresh in Power BI Report Server
 description: Power BI reports can connect to different data sources. Depending on how data is used, different data sources are available.
-author: markingmyname
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.author: maghan
+ms.author: mblythe
 
 ---
 # Power BI report scheduled refresh in Power BI Report Server
@@ -30,6 +30,7 @@ Several components are involved when using scheduled refresh for your Power BI r
 * The data model is loaded within an Analysis Services instance.
 * For some data sources, the Power Query mashup engine is used to connect to data sources and transform the data. Other data sources may be connected to directly from an Analysis Services service used to host the data models for Power BI Report Server.
 * New data is loaded into the data model within Analysis Services.
+* In a scale-out configuration, the data model can be replicated across nodes.
 * Analysis Services processes the data and executes any needed calculations.
 
 Power BI Report Server maintains an event queue for all scheduled operations. It polls the queue at regular intervals to check for new events. By default, the queue is scanned at 10 second intervals. You can change the interval by modifying the **PollingInterval**, **IsNotificationService**, and **IsEventService** configuration settings in the RSReportServer.config file. **IsDataModelRefreshService** can also be used to set whether a report server process scheduled events.

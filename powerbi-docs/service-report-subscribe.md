@@ -1,6 +1,6 @@
 ---
-title: Subscribe yourself and others to reports and dashboards in the Power BI service
-description: Learn how to subscribe yourself and others to a snapshot of a Power BI report or dashboard.
+title: Subscribe yourself and others to reports and dashboards - Power BI
+description: Learn how to subscribe yourself and others to a snapshot of a Power BI report page, dashboard, or paginated report.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -9,26 +9,29 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 05/20/2019
 ms.author: maggies
 
 LocalizationGroup: Common tasks
 ---
-# Subscribe yourself and others to a report or dashboard in the Power BI service
+# Subscribe yourself and others to reports and dashboards in the Power BI service
 
-You can subscribe yourself and your colleagues to the report pages and dashboards that matter most to you, and Power BI emails a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, or once a day after the initial data refresh.  If you choose daily or weekly, you can choose the time(s) you'd like to have the subscription run.  In all, you can set up to 24 different subscriptions per day, for every report page and dashboard.
+You can subscribe yourself and your colleagues to the report pages, dashboards, and paginated reports that matter most to you. Power BI emails a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, or once a day after the initial data refresh.  If you choose daily or weekly, you can choose the time you'd like to have the subscription run.  In all, you can set up to 24 different subscriptions per day, for every report page and dashboard.
 
 ![email snapshot of dashboard](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 
 You can only create subscriptions in the Power BI service. You receive an email with a snapshot of the report page or dashboard, with a link to open the report or dashboard. On mobile devices with Power BI apps installed, selecting this link launches the Power BI app, instead of opening the report or dashboard in the Power BI web site.
 
 ## Requirements
+
 - **Creating** a subscription is a Power BI Pro feature.
 - You don't need edit permissions to the content (dashboard or report) to create a subscription for yourself, but you must have edit permissions to create one for someone else. 
-- As of January 2019, you no longer must have dataset refresh set up to run a subscription.  It runs independent of any scheduled refreshes you have set up.  
 
-## Subscribe to a dashboard or a report page
-Whether you're subscribing to a dashboard or report, the process is similar. The same button allows you to subscribe to Power BI service dashboards and reports.
+## Subscribe to a dashboard, report page, or paginated report
+
+Whether you're subscribing to a dashboard, report, or paginated report, the process is similar. The same button allows you to subscribe to Power BI service dashboards and reports.
+
+Subscribing to paginated reports is a little different. See [Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscriptions.md) for details.
  
 ![select the Subscribe icon](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
@@ -39,7 +42,7 @@ Whether you're subscribing to a dashboard or report, the process is similar. The
 
 3. Use the yellow slider to turn the subscription on and off.  Setting the slider to **Off** doesn't delete the subscription. To delete the subscription, select the trashcan icon.
 
-4. Your email is already in the **Subscribe** box. You can add other email addresses to the subscription as well, but only in the same domain. If the report or dashboard is hosted in [Premium capacity](service-premium.md), you can subscribe other individual email addresses and group aliases. If the report or dashboard isn't hosted in Premium capacity, you can subscribe other individuals, but they too must have Power BI Pro licenses. See [Considerations and troubleshooting](#considerations-and-troubleshooting) below for details. 
+4. Your email is already in the **Subscribe** box. You can add other email addresses to the subscription as well, but only in the same domain. If the report or dashboard is hosted in [Premium capacity](service-premium-what-is.md), you can subscribe other individual email addresses and group aliases. If the report or dashboard isn't hosted in Premium capacity, you can subscribe other individuals, but they too must have Power BI Pro licenses. See [Considerations and troubleshooting](#considerations-and-troubleshooting) below for details. 
 
 5. Fill in the email **Subject** and **Message** details. 
 
@@ -56,7 +59,7 @@ Whether you're subscribing to a dashboard or report, the process is similar. The
 7. Select **Save and close**. Those subscribed receive an email and snapshot of the dashboard or report page for the frequency and time you selected. In all, you may create up to 24 subscriptions per report or dashboard, and can provide unique recipients, times, and frequencies for each subscription.  All subscriptions set to **After Data Refresh** for your dashboard or report will still only send an email after the first scheduled refresh.   
       
    > [!TIP]
-   > Want to send the email from a subscription right away or on-demand at any time? Select **Run Now** for the subscriptions for the dashboard or report you want to send. You'll see a notification that an e-mail is on its way to everyone for that particular subscription.  You may do this as often as you'd like. It doesn't count against your limit of 24 scheduled subscription runs per day per report or dashboard. Note this does NOT trigger a data refresh of the underlying dataset. 
+   > Want to send the email from a subscription right away or on-demand at any time? Select **Run Now** for the subscriptions for the dashboard or report you want to send. You'll see a notification that an e-mail is on its way to everyone for that particular subscription.  You may do this as often as you like. It doesn't count against your limit of 24 scheduled subscription runs per day per report or dashboard. It does NOT trigger a data refresh of the underlying dataset. 
    > 
    > 
    
@@ -78,16 +81,17 @@ The particular subscriptions displayed depend on which workspace is currently ac
 A subscription ends if the Pro license expires, the owner deletes the dashboard or report, or the user account used to create the subscription is deleted.
 
 ## Considerations and troubleshooting
-* Dashboards with over 25 pinned tiles, or 4 pinned live report pages, may not render fully in subscription e-mails sent to users.  Subscriptions to dashboards over these number of tiles will not be blocked, however, they will be considered unsupported if you encounter issues and should be modified accordingly to fall within a supported range.
-* When setting up your e-mail subscriptions, please keep in mind there is a delay between when the subscription job is started, and the exact time the e-mail is sent.  To minimize the delay between the between when the job starts and the subsequent e-mail is sent, it is recommended you set up a different time for your scheduled data refresh than when your e-mail subscription is scheduled to run.
-* For dashboard email subscriptions, if any tiles have row level security (RLS) applied, those tiles don't display.  For report email subscriptions, if the dataset uses RLS, you can't be able to create a subscription.
+
+* Dashboards with over 25 pinned tiles, or 4 pinned live report pages, may not render fully in subscription e-mails sent to users.  Subscriptions to dashboards over these number of tiles aren't blocked. However, they're considered unsupported if you encounter issues. Consider modifying them accordingly to fall within a supported range.
+* This time is when the subscription job starts. It may take up a few minutes until the e-mail is delivered to your inbox in certain scenarios.
+* On rare occasions, e-mail subscriptions may take longer than fifteen minutes to be delivered to their recipients. If this happens, we recommend running your data refresh and e-mail subscription at different times to ensure timely delivery. If the issue persists, contact Power BI support.
+* For dashboard email subscriptions, if any tiles have row-level security (RLS) applied, those tiles don't display.  
+* For report email subscriptions, if the dataset uses RLS, you can create a subscription for yourself. You can't subscribe others to a report with row-level security (RLS) applied.
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page and then rename it, you have to re-create your subscription.
 * Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI.  These limitations include, but aren't limited to, having multi-factor authentication or IP range restrictions when accessing resources.
 * Currently, email subscriptions for reports/dashboards using live connection datasets aren't supported when subscribing users other than yourself.
 * Email subscriptions don't support most [custom visuals](power-bi-custom-visuals.md).  The one exception is those custom visuals that have been [certified](power-bi-custom-visuals-certified.md).  
 * Email subscriptions don't support R-powered custom visuals at this time.  
-* If any dashboard tiles have row level security (RLS) applied, those tiles don't display.
-* You can't subscribe other users to a report that has row level security (RLS) applied.
 * Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make after subscribing don't show up in the email.    
 * For dashboards subscriptions specifically, certain types of tiles aren't yet supported.  These include: streaming tiles, video tiles, custom web content tiles.     
 * If you share a dashboard with a colleague outside of your tenant, you can't also create a subscription for that colleague. So if you are aaron@xyz.com, you can share with anyone@ABC.com, but you can't yet subscribe anyone@ABC.com and they can't subscribe to shared content.      
@@ -96,6 +100,7 @@ A subscription ends if the Pro license expires, the owner deletes the dashboard 
 * If your dashboard or report is in Premium capacity, you can use group email aliases for subscriptions, instead of subscribing colleagues one email address at a time. The aliases are based on the current active directory. 
 
 ## Next steps
-* More questions? [Try asking the Power BI Community](http://community.powerbi.com/)    
-* [Read the blog post](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)
 
+- [Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscriptions.md)
+- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)    
+- [Read the blog post](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)

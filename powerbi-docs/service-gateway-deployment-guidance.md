@@ -40,7 +40,7 @@ There is a constraint in **Power BI** that allows only *one* gateway per *report
 ### Connection type
 **Power BI** offers two types of connections: **DirectQuery** and **Import**. Not all data sources support both connection types, and many reasons may contribute to choosing one over the other, such as security requirements, performance, data limits, and data model sizes. You can learn more about connection type and supported data sources in the *list of available data source types* section of the [On-premises data gateway article](service-gateway-onprem.md).
 
-Depending on which type of connection are use, gateway usage can be different. For example, you should try to separate **DirectQuery** data sources from **Scheduled Refresh** data sources whenever possible (assuming they're in different reports and can be separated). Doing so prevents the gateway from having thousands of DirectQuery requests queued up, at the same time as the morning's scheduled refresh of a large size data model that's used for the company's main dashboard. Here's what to consider for each:
+Depending on which type of connection is used, gateway usage can be different. For example, you should try to separate **DirectQuery** data sources from **Scheduled Refresh** data sources whenever possible (assuming they're in different reports and can be separated). Doing so prevents the gateway from having thousands of **DirectQuery** requests queued up, at the same time as the morning's scheduled refresh of a large size data model that's used for the company's main dashboard. Here's what to consider for each:
 
 * For **Scheduled Refresh**: depending on your query size and the number of refreshes occurring per day, you can choose to stay between the recommended minimum hardware requirements or upgrade to a higher performance machine. If a given query is not folded, transformations occur on the gateway machine, and as such, the gateway machine benefits from having more available RAM.
 * For **DirectQuery**: a query is be sent each time any user opens the report or looks at data. So if you anticipate more than 1,000 users accessing the data concurrently, you'll want to make sure your computer has robust and capable hardware components. More CPU cores will result in better throughput for a **DirectQuery** connection.
@@ -102,14 +102,34 @@ The gateway creates an outbound connection to the **Azure Service Bus**. The gat
 
 The gateway does *not* require inbound ports. All required ports are listed in the above list.
 
-It is recommended that you whitelist the IP addresses, for your data region, in your firewall. You can download list of IP addresses, which are found in the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653). That list is updated weekly. The gateway will communicate with **Azure Service Bus** using the specified IP address, along with the fully qualified domain name (FQDN). If you're forcing the gateway to communicate using HTTPS, the gateway strictly uses FQDN only, and no communication will occur using IP addresses.
+It is recommended that you add the IP addresses to an allow list, for your data region, in your firewall. You can download list of IP addresses, which are found in the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653). That list is updated weekly. The gateway will communicate with **Azure Service Bus** using the specified IP address, along with the fully qualified domain name (FQDN). If you're forcing the gateway to communicate using HTTPS, the gateway strictly uses FQDN only, and no communication will occur using IP addresses.
 
 #### Forcing HTTPS communication with Azure Service Bus
-You can force the gateway to communicate with the **Azure Service Bus** by using HTTPS, instead of direct TCP. Doing so will slightly reduce performance. You can also force the gateway to communicate with the **Azure Service Bus** by using HTTPS by using the gateway's user interface (beginning with the March 2017 release of the gateway).
 
-To do so, in the gateway select **Network**, then turn the **Azure Service Bus connectivity mode** **On**.
+You can force the gateway to communicate with Azure Service Bus using HTTPS instead of direct TCP.
 
-![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_04.png)
+> [!NOTE]
+> Starting with the June 2019 release, new installs (not updates) default to HTTPS instead of TCP, based on recommendations from Azure Service Bus.
+
+To force communication over HTTPS, modify the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file by changing the value from `AutoDetect` to `Https`, as shown in the code snippet directly following this paragraph. That file is located (by default) at *C:\Program Files\On-premises data gateway*.
+
+```xml
+<setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
+    <value>Https</value>
+</setting>
+```
+
+The value for the *ServiceBusSystemConnectivityModeString* parameter is case-sensitive. Valid values are *AutoDetect* and *Https*.
+
+Alternatively, you can force the gateway to adopt this behavior using the gateway user interface. In the gateway user interface select **Network**, then toggle the **Azure Service Bus connectivity mode** to **On**.
+
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_01.png)
+
+Once changed, when you select **Apply** (a button that only appears when you make a change), the *gateway Windows service* restarts automatically, so the change can take effect.
+
+For future reference, you can restart the *gateway Windows service* from the user interface dialog by selecting **Service Settings** then select *Restart Now*.
+
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
 ### Additional guidance
 This section provides additional guidance for deploying and managing gateways.

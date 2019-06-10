@@ -1,8 +1,8 @@
 ---
 title: Embedded analytics to embed Power BI content in your application for your organization
 description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your organization. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
-author: markingmyname
-ms.author: maghan 
+author: rkarlin
+ms.author: rkarlin 
 manager: kfile
 ms.reviewer: ""
 ms.service: powerbi
@@ -390,7 +390,7 @@ Now that you've completed developing your application, it's time to back your ap
 
 ### Create a dedicated capacity
 
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. You can create a dedicated capacity by using [Power BI Premium](../service-premium.md).
+By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. You can create a dedicated capacity by using [Power BI Premium](../service-premium-what-is.md).
 
 The following table lists the Power BI Premium SKUs available in [Microsoft Office 365](../service-admin-premium-purchase.md):
 

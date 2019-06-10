@@ -1,14 +1,14 @@
 ---
 title: Use row-level security with Power BI embedded content
 description: Learn about the steps you need to take to embed Power BI content within your application.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/27/2019 
+ms.date: 06/10/2019 
 ---
 
 # Row-level security with Power BI Embedded
@@ -305,7 +305,7 @@ The value provided in the identity blob should be a valid access token to Azure 
 
    ![App registration](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
 
-## On-premises data gateway with service principal (Preview)
+## On-premises data gateway with service principal
 
 Customers that configure row-level security (RLS) using an SQL Server Analysis Services (SSAS) on-premises live connection data source can enjoy the new [service principal](embed-service-principal.md) capability to manage users and their access to data in SSAS when integrating with **Power BI Embedded**.
 

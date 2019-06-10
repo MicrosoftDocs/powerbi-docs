@@ -5,23 +5,23 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/07/2019
+ms.date: 04/19/2019
 ms.author: maggies
 ---
 
 # Install and distribute template apps in your organization - Power BI (preview)
 
-The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer. This article is for Power BI analysts. It explains how you install, customize, and distribute a template app that a Power BI partner created. If you're interested in creating template apps to distribute yourself, see [Create a template app in Power BI](service-template-apps-create.md).
+Are you a Power BI analyst? If so, this article explains how you install *template apps* to connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. You can modify the dashboard and reports to meet the needs of your organization, and then distribute them to your colleagues as an *app*. 
 
 ![Power BI apps installed](media/service-template-apps-install-distribute/power-bi-get-apps.png)
 
-When you install a template app that a Power BI partner has created, you can modify it to meet the needs of your organization, and then distribute it to your colleagues as an app.  
+If you're interested in creating template apps to distribute yourself, see [Create a template app in Power BI](service-template-apps-create.md). Power BI partners can build Power BI apps with little or no coding, and deploy them to Power BI customers. 
 
 ## Prerequisites  
 
-Here are the requirements for installing, customizing, and distributing a template app:  
+Here are the requirements for installing, customizing, and distributing a template app: 
 
 - A [Power BI pro license](service-self-service-signup-for-power-bi.md)
 - Familiarity with the [basic concepts of Power BI ](service-basic-concepts.md)

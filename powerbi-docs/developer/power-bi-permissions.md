@@ -1,8 +1,8 @@
 ---
 title: Power BI permissions
 description: Power BI permissions
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi

@@ -1,15 +1,15 @@
 ---
 title: Using incremental refresh with Power BI dataflows
 description: Learn how to configure incremental refresh for dataflows
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/02/2019
-ms.author: davidi
+ms.author: mblythe
 
 LocalizationGroup: Data from files
 ---
@@ -23,7 +23,7 @@ With dataflows, you can bring large amounts of data into Power BI to create comp
 
 ![Incremental refresh for dataflows](media/service-dataflows-incremental-refresh/dataflows-incremental-refresh_03.png)
 
-Using incremental refresh for Power BI dataflows requires that the workspace where the dataflow resides be in [Premium capacity](service-premium.md) to run, and the data source ingested into the dataflow must have a *datetime* field on which incremental refresh can filter. 
+Using incremental refresh for Power BI dataflows requires that the workspace where the dataflow resides be in [Premium capacity](service-premium-what-is.md) to run, and the data source ingested into the dataflow must have a *datetime* field on which incremental refresh can filter. 
 
 ## Configuring incremental refresh for dataflows
 

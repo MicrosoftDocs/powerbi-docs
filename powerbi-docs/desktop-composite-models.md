@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/12/2018
+ms.date: 05/09/2019
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
 ---
 # Use composite models in Power BI Desktop
 
-Previously in Power BI Desktop, when you used a DirectQuery in a report, no other data connections&mdash;whether DirectQuery or Import&mdash;were allowed for that report. With composite models, that restriction is removed. A report can seamlessly include data connections from more than one DirectQuery or Import data connection, in any combination you choose.
+Previously in Power BI Desktop, when you used a DirectQuery in a report, no other data connections - whether DirectQuery or Import - were allowed for that report. With composite models, that restriction is removed. A report can seamlessly include data connections from more than one DirectQuery or Import data connection, in any combination you choose.
 
 ![Composite models in Power BI Desktop](media/desktop-composite-models/composite-models_01.png)
 
@@ -35,7 +35,7 @@ With composite models, you can connect to a variety of data sources when you use
 * By importing data to Power BI, which is the most common way to get data.
 * By connecting directly to data in its original source repository by using DirectQuery. To learn more about DirectQuery, see [Use DirectQuery in Power BI](desktop-directquery-about.md).
 
-When you use DirectQuery, *composite models* makes it possible to create a Power BI model (such as a single *.pbix* Power BI Desktop file) that does either or both of the following:
+When you use DirectQuery, *composite models* make it possible to create a Power BI model (such as a single *.pbix* Power BI Desktop file) that does either or both of the following:
 
 * Combines data from one or more DirectQuery sources.
 * Combines data from DirectQuery sources and Import data.
@@ -48,8 +48,6 @@ For example, by using composite models, you can build a model that combines the 
 
 A model that combines data from more than one DirectQuery source or that combines DirectQuery with Import data is called a *composite model*.
 
-> [!NOTE]
-> Beginning with the October 2018 release of Power BI Desktop, you *can* publish composite models to the Power BI service. For scheduled refresh and dashboard tile refresh, composite models in the Power BI service behave in the same way as Import models. 
 
 You can create relationships between tables as you always have, even when those tables come from different sources, with the following restriction: any relationships that are cross-source must be defined as having a cardinality of *many-to-many*, regardless of their actual cardinality. The behavior of such relationships is then the same as normal for *many-to-many* relationships, as described in [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md). 
 
@@ -98,7 +96,7 @@ We can now create visuals by using any of the fields in the **Fields** list. Thi
 
 ![The Fields pane](media/desktop-composite-models/composite-models_11.png)
 
-The following example displays a common case of a *dimension* table&mdash;such as *Product* or *Customer*&mdash;that's extended with some extra data imported from somewhere else. It's also possible to have tables use DirectQuery to connect to various sources. To continue with our example, imagine that *Sales Targets* per *Country* and *Period* are stored in a separate departmental database. As usual, you can use *GetData* to connect to that data, as shown in the following image: 
+The following example displays a common case of a *dimension* table - such as *Product* or *Customer* - that's extended with some extra data imported from somewhere else. It's also possible to have tables use DirectQuery to connect to various sources. To continue with our example, imagine that *Sales Targets* per *Country* and *Period* are stored in a separate departmental database. As usual, you can use *GetData* to connect to that data, as shown in the following image: 
 
 ![The Navigator window](media/desktop-composite-models/composite-models_12.png)
 
@@ -150,7 +148,7 @@ For similar reasons, be careful when you open a Power BI Desktop file that's sen
 
 When you use DirectQuery, you should always consider performance, primarily to ensure that the back-end source has sufficient resources to provide a good experience for users. A good experience means that the visuals refresh in five seconds or less. You should also follow the performance advice in the [Use DirectQuery in Power BI](desktop-directquery-about.md) article. 
 
-Using composite models adds additional performance considerations. A single visual can result in sending queries to multiple sources, which often passes the results from one query across to a second source. This situation can result in the following forms of execution:
+Using composite models adds additional performance considerations. A single visual can result in sending queries to multiple sources, which often pass the results from one query across to a second source. This situation can result in the following forms of execution:
 
 * **A SQL query that includes a large number of literal values**: For example, a visual that requests total *Sales Amount* for a set of selected *Product Managers* would first need to find which *Products* were managed by those product managers. This sequence must happen before the visual sends a SQL query that includes all of the product IDs in a *WHERE* clause.
 
@@ -158,7 +156,7 @@ Using composite models adds additional performance considerations. A single visu
 
 * **Multiple SQL queries, one per group by value**: When the aggregation uses **DistinctCount** and is grouped by a column from another source, and if the external source does not support efficient passing of many literal values that define the grouping, it's necessary to send one SQL query per group by value. 
 
-   For example, a visual that requests a distinct count of *CustomerAccountNumber* (from the SQL Server table) by *Product Manager* (imported from the spreadsheet) would need to pass in the details from the *Product Managers* table in the query that's sent to SQL Server. Over other sources (Redshift, for example), this action is unfeasible. Instead, there would be one SQL query sent per *Sales Manager*&mdash;up to some practical limit, at which point the query would fail. 
+   For example, a visual that requests a distinct count of *CustomerAccountNumber* (from the SQL Server table) by *Product Manager* (imported from the spreadsheet) would need to pass in the details from the *Product Managers* table in the query that's sent to SQL Server. Over other sources (Redshift, for example), this action is unfeasible. Instead, there would be one SQL query sent per *Sales Manager* - up to some practical limit, at which point the query would fail. 
 
 Each of these cases has its own implications on performance, and the exact details vary for each data source. Although the cardinality of the columns used in the relationship that joins the two sources remains low (a few thousand), performance should not be affected. As this cardinality grows, you should pay more attention to the impact on the resulting performance. Apply this guidance as a good rule of thumb. 
 
@@ -166,7 +164,9 @@ Additionally, the use of *many-to-many* relationships means that separate querie
 
 ## Limitations and considerations
 
-This release of composite models presents a few limitations.
+This release of composite models presents a few limitations:
+
+Currently, [incremental refresh](service-premium-incremental-refresh.md) is supported for composite models connecting to SQL, Oracle, and Teradata data sources only.
 
 The following Live Connect (multi-dimensional) sources can't be used with composite models:
 
@@ -183,8 +183,8 @@ The existing limitations of DirectQuery still apply when you use composite model
 ## Next steps
 
 For more information about composite models and DirectQuery, see the following articles:
-* [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md)
-* [Storage mode in Power BI Desktop (preview)](desktop-storage-mode.md)
+* [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md)
+* [Storage mode in Power BI Desktop](desktop-storage-mode.md)
 * [Use DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data sources supported by DirectQuery in Power BI](desktop-directquery-data-sources.md)
 

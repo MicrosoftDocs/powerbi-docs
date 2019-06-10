@@ -1,14 +1,14 @@
 ---
 title: Monitor Power BI Premium capacities with the Premium Capacity Metrics app.
 description: Use the Power BI admin portal and Power BI Premium Capacity Metrics app
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 03/27/2019
+ms.date: 05/31/2019
 LocalizationGroup: Premium 
 ---
 
@@ -31,7 +31,6 @@ You can go straight to [Premium Capacity Metrics app](https://app.powerbi.com/gr
 4. Subscribe to install the app.
 
 Be patient. It takes a few minutes to install and refresh metrics. If the app shows blank metrics, press F5 to refresh your browser.
-
 
 ## Get app refresh history
 
@@ -129,6 +128,19 @@ The dashboard includes the following metrics:
 | Memory - Paginated Reports Average (GB) | Average memory consumption by paginated report workload in the past seven days. |
 |||
 
+#### AI Summary
+
+| Metric | Description |
+| --- | --- |
+| AI Function Execution | Total number of executions in the past seven days. |
+| AI Function Execution Reliability (%) | Number of successful executions divided by the total number of executions in the past seven days. |
+| CPU Max (%)| Max CPU consumption by the AI workload in the past seven days. |
+| Memory Max (GB) | Max memory consumption by the AI workload in the past seven days.|
+| AI Function Execution Max Wait Time (MS) | Maximum amount of time before starting execution. |
+| AI Function Execution Average Wait Time (MS)| Average amount of time before starting execution. |
+| AI Function Execution Max Duration (MS) | Maximum amount of time to complete execution. |
+| AI Function Execution Average Duration (MS)| Average amount of time to complete execution. |
+| | |
 
 ### Reports
 
@@ -136,10 +148,11 @@ Reports provide more detailed metrics. To see reports for capacities for which y
 
 At the bottom of the report, there are five *tabs*:
 
-[**Datasets**](#datasets) - Provides detailed metrics on the health of the Power BI datasets in your capacities.   
-[**Paginated Reports**](#paginated-reports) - Provides detailed metrics on the health of the paginated reports in your capacities.   
-[**Dataflows**](#dataflows) - Provides detailed refresh metrics for dataflows in your capacities.   
-[**Resource Consumption**](#resource-consumption) - Provides detailed resource metrics including memory and CPU high utilization.    
+[**Datasets**](#datasets) - Provides detailed metrics on the health of the Power BI datasets in your capacities.
+[**Paginated Reports**](#paginated-reports) - Provides detailed metrics on the health of the paginated reports in your capacities.
+[**Dataflows**](#dataflows) - Provides detailed refresh metrics for dataflows in your capacities.
+[**AI**](#ai) - Provides detailed metrics on the health of the AI functions used in your capacities.
+[**Resource Consumption**](#resource-consumption) - Provides detailed resource metrics including memory and CPU high utilization.
 [**IDs and Info**](#ids-and-info) - Names, IDs, and owners for capacities, workspaces, and workloads.
 
 Each tab opens a page where you can filter metrics by capacity and date range. If no filters are selected, the report defaults to show the past week’s metrics for all capacities that are reporting metrics. 
@@ -152,7 +165,7 @@ The Datasets page has different *areas*, which include  **Refreshes**, **Query D
 
 | Report section | Metrics |
 | --- | --- |
-| Refreshes |  Total Count: Total refreshes for each dataset.<br>  Reliability: the percentage of refreshes that completed for each dataset.<br>  Avg Wait Time: The average lag between the scheduled time and start of a refresh for the dataset, in minutes.<br>  Max Wait Time: The maximum wait time for the dataset, in minutes.<br>  Avg Duration: The average duration of refresh for the dataset, in minutes.<br>  Max Duration: The duration of the longest-running refresh for the dataset, in minutes. |
+| Refreshes |  Total Count: Total refreshes for each dataset.<br>  Reliability: The percentage of refreshes that completed for each dataset.<br>  Avg Wait Time: The average lag between the scheduled time and start of a refresh for the dataset, in minutes.<br>  Max Wait Time: The maximum wait time for the dataset, in minutes.<br>  Avg Duration: The average duration of refresh for the dataset, in minutes.<br>  Max Duration: The duration of the longest-running refresh for the dataset, in minutes. |
 | Top 5 Datasets by Average Duration (minutes) |  The five datasets with the longest average refresh duration, in minutes. |
 | Top 5 Datasets by Average Wait Time (minutes) |  The five datasets with the longest average refresh wait time,  in minutes. |
 | Hourly Refresh Count and Memory Consumption (GB) |  Successes, failures, and memory consumption, split into one-hour buckets, reported in UTC time. |
@@ -206,12 +219,21 @@ The Datasets page has different *areas*, which include  **Refreshes**, **Query D
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| Refreshes |  Total: Total refreshes for each dataflow.<br>  Reliability: the percentage of refreshes that completed for each dataflow.<br>  Avg Wait Time: The average lag between the scheduled time and start of a refresh for the dataflow, in minutes.<br>  Max Wait Time: The maximum wait time for the dataflow, in minutes.<br>  Avg Duration: The average duration of refresh for the dataflow, in minutes.<br>  Max Duration: The duration of the longest-running refresh for the dataflow, in minutes. |
+| Refreshes |  Total: Total refreshes for each dataflow.<br>  Reliability: The percentage of refreshes that completed for each dataflow.<br>  Avg Wait Time: The average lag between the scheduled time and start of a refresh for the dataflow, in minutes.<br>  Max Wait Time: The maximum wait time for the dataflow, in minutes.<br>  Avg Duration: The average duration of refresh for the dataflow, in minutes.<br>  Max Duration: The duration of the longest-running refresh for the dataflow, in minutes. |
 | Top 5 dataflows by Average Refresh Duration |  The five dataflows with the longest average refresh duration, in minutes. |
 | Top 5 dataflows by Average Wait Time |  The five dataflows with the longest average refresh wait time,  in minutes. |
 | Hourly Average Refresh Wait Times |  The average refresh wait time, split into one-hour buckets, reported in UTC time. Multiple spikes with high refresh wait times are indicative of the capacity running hot. |
 | Hourly Refresh Count and Memory Consumption |  Successes, failures, and memory consumption, split into one-hour buckets, reported in UTC time. |
 |  |  |
+
+### AI
+
+| **Report section** | **Metrics** |
+| --- | --- |
+| AI Memory Consumption | Memory consumption in GB, split into one-hour buckets, reported in UTC time. |
+| Hourly AI Function Execution and Average Wait Time | AI executions and average wait time, in milliseconds, split into one-hour buckets, reported in UTC time. |
+| Overall Usage | Total count: Number of AI functions in a workspace or dataflow. <br> System Reliability: The percentage of executions that completed.<br> Avg. Wait Time: The average lag between the scheduled time and start of an execution, in milliseconds.<br> Max Wait Time: The maximum wait time, in milliseconds.<br> Avg. Duration: The average duration of an execution, in milliseconds.<br> Max Duration: The duration of the longest-running execution, in milliseconds.<br> Avg Total Size: The average size, in bytes, of the input and output data for the AI function. |
+| | |
 
 ### Resource Consumption
 
@@ -267,7 +289,7 @@ You can use the Power BI Premium Capacity Metrics app to monitor *A SKU* capacit
 
 1. Open your capacity in the Azure portal.
 
-1. Click **Access control (IAM)**, and then add the **Power BI Premium** app to the reader role. If you are unable to find the app by name, you can also add it by client Id: `cb4dc29f-0bf4-402a-8b30-7511498ed654`.
+1. Click **Access control (IAM)**, and then add the **Power BI Premium** app to the reader role. If you are unable to find the app by name, you can also add it by client identifier: `cb4dc29f-0bf4-402a-8b30-7511498ed654`.
 
     ![Permissions for Power BI Embedded](media/service-admin-premium-monitor-capacity/embedded-permissions.png)
 
@@ -278,4 +300,4 @@ You can use the Power BI Premium Capacity Metrics app to monitor *A SKU* capacit
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Power BI Premium capacity resource management and optimization](service-premium-understand-how-it-works.md)
+> [Optimizing Power BI Premium capacities](service-premium-capacity-optimize.md)

@@ -1,22 +1,22 @@
 ---
 title: Create classic workspaces in Power BI
-description: Learn how to create workspaces, collections of dashboards and reports built to deliver key metrics for your organization.
+description: Learn how to create workspaces, collections of dashboards, reports, and paginated reports built to deliver key metrics for your organization.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/03/2019
+ms.date: 04/18/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Create classic workspaces in Power BI
 
-In Power BI, you can create *workspaces*, places to collaborate with colleagues to create and refine collections of dashboards and reports. Then you can bundle the collection together into *apps* that you can distribute to your whole organization or to specific people or groups. 
+In Power BI, you can create *workspaces*, places to collaborate with colleagues to create and refine collections of dashboards, reports, and paginated reports. Then you can bundle the collection together into *apps* that you can distribute to your whole organization or to specific people or groups. 
 
-**Did you know?** Power BI offers a new workspace experience. Read [Organize work in the new workspaces](service-new-workspaces.md) for details about the new workspaces. 
+**Did you know?** Power BI offers a new workspace experience, which is now the default. Read [Organize work in the new workspaces](service-new-workspaces.md) for details about the new workspaces. 
 
 When you create a classic workspace, you're creating an underlying, associated Office 365 group. All the workspace administration is in Office 365. You can add colleagues to these workspaces as members or admins. In the workspace, you can all collaborate on dashboards, reports, and other articles that you plan to publish to a wider audience. Everyone you add to an app workspace needs a Power BI Pro license. 
 
@@ -45,6 +45,8 @@ By default, Power BI creates a little colored circle for your app, with the app'
 3. Select the pencil icon again, and find the image you want to use.
    
      ![Select the pencil again](media/service-create-distribute-apps/power-bi-apps-workspace-edit-group.png)
+
+     Images can be .png, .jpg, or .bmp files. Their file size can be large, up to 3 MB. 
 
 4. Select **Save**.
    

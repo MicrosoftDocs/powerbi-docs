@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 04/23/2019
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -24,9 +24,15 @@ This article focuses on per-user licensing from an administrator perspective.
 
 As an administrator, you can purchase and assign Power BI Pro licenses; and you can sign up for a Power BI Pro trial for your organization. Individuals can also sign up for a Power BI Pro trial.
 
-### Purchasing Power BI Pro
+### Purchase Power BI Pro
 
 You purchase Power BI Pro licenses through Microsoft Office 365 or through a certified Microsoft partner. After you purchase the licenses, you assign them to individual users. For more information, see [Purchase and assign Power BI Pro licenses](service-admin-purchasing-power-bi-pro.md).
+
+### Power BI Pro license expiration
+
+There is a grace period after a Power BI Pro license expires. For licenses that are part of a volume license purchase, the grace period is 90 days. If you purchased the license directly, the grace period is 30 days.
+
+Power BI Pro has the same subscription lifecycle as Office 365. For more information, see [What happens to my data and access when my Office 365 for business subscription ends?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
 ### Power BI Pro trial for individuals
 
@@ -125,12 +131,12 @@ The AAD setting that controls sign up is **AllowAdHocSubscriptions**. In most te
      connect-msolservice -credential $msolcred
     ```
 
-   ![Azure Active Directory sign in](media/service-admin-licensing-organization/aad-signin.png)
+   ![Azure Active Directory sign in](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
-1. Once you are signed in, run the following command to see how your tenant is currently configured.
+1. Once you are signed in, run the following command to see how your tenant is currently configured. (Note that 'fl' below uses the letter 'l', not the number 1.)
 
     ```powershell
-     Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
+     Get-MsolCompanyInformation | fl AllowAdHocSubscriptions 
     ```
 1. Run the following command to enable ($true) or disable ($false) **AllowAdHocSubscriptions**.
 

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/07/2019
+ms.date: 05/02/2019
 LocalizationGroup: Conceptual
 ---
 
@@ -41,7 +41,7 @@ Each Power BI deployment consists of two clusters – a Web Front End (**WFE**) 
 
 ![The WFE and Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-Power BI uses Azure Active Directory (**AAD**) for account authentication and management. Power BI also uses the **Azure Traffic Manager (ATM)** to direct user traffic to the nearest datacenter, determined by the DNS record of the client attempting to connect, for the authentication process and to download static content and files. Power BI uses the **Azure Content Delivery Network (CDN)** to efficiently distribute the necessary static content and files to users based on geographical locale.
+Power BI uses Azure Active Directory (**AAD**) for account authentication and management. Power BI also uses the **Azure Traffic Manager (ATM)** to direct user traffic to the nearest datacenter, determined by the DNS record of the client attempting to connect, for the authentication process and to download static content and files. Power BI uses the geographically closest WFE to efficiently distribute the necessary static content and files to users, with the exception of custom visuals which are delivered using the **Azure Content Delivery Network (CDN)**.
 
 ### The WFE Cluster
 
@@ -226,7 +226,7 @@ For cloud-based data sources, the Data Movement Role encrypts encryption keys us
 
     b. ETL – encrypted in Azure Blob storage, but all data currently in Azure Blob storage of the Power BI service uses [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well.
 
-    c. Push data v1 – stored encrypted in Azure Blob storage, but all data currently in Azure Blob storage in the Power BI service uses [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well.
+    c. Push data v1 – stored encrypted in Azure Blob storage, but all data currently in Azure Blob storage in the Power BI service uses [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), also known as server-side encryption. Multi-geo uses SSE as well. Push data v1 were discontinued beginning 2016. 
 
     d. Push data v2 – stored encrypted in Azure SQL.
 
@@ -243,23 +243,24 @@ Power BI provides data integrity monitoring in the following ways:
 1. Metadata (report definition)
 
    a. Reports can either be Excel for Office 365 reports, or Power BI reports. The following applies for metadata based on the type of report:
+        
+    &ensp; &ensp; a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
 
-       a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
-
-       b. Power BI reports are stored encrypted in Azure SQL database.
+    &ensp; &ensp; b. Power BI reports are stored encrypted in Azure SQL database.
 
 2. Static data
 
    Static data includes artifacts such as background images and custom visuals.
 
-    a. For reports created with Excel for Office 365, nothing is stored.
+    &ensp; &ensp; a. For reports created with Excel for Office 365, nothing is stored.
 
-    b. For Power BI reports, the static data is stored and is encrypted in Azure Blob storage.
+    &ensp; &ensp; b. For Power BI reports, the static data is stored and is encrypted in Azure Blob storage.
 
 3. Caches
-    a. For reports created with Excel for Office 365, nothing is cached.
 
-    b. For Power BI reports, data for the visuals shown are cached encrypted in Azure SQL Database.
+    &ensp; &ensp; a. For reports created with Excel for Office 365, nothing is cached.
+
+    &ensp; &ensp; b. For Power BI reports, data for the visuals shown are cached encrypted in Azure SQL Database.
  
 
 4. Original Power BI Desktop (.pbix) or Excel (.xlsx) files published to Power BI
@@ -276,7 +277,7 @@ Regardless of the encryption method used, Microsoft manages the key encryption o
 
 ### Data Transiently Stored on Non-Volatile Devices
 
-The following describes data that is transiently stored on non-volatile devices.
+Non-volatile devices are devices that have memory that persists without constant power. The following describes data that is transiently stored on non-volatile devices. 
 
 #### Datasets
 
@@ -289,6 +290,9 @@ The following describes data that is transiently stored on non-volatile devices.
     a. Analysis Services on-premises – nothing is stored
 
     b. DirectQuery – This depends whether the model is created in the service directly in which case it is stored in the connection string, in encrypted format with the encryption key stored in clear text in the same place (alongside the encrypted information); or if the model is imported from Power BI Desktop in which case the credentials are not stored on non-volatile devices.
+
+    > [!NOTE]
+    > The service-side model creation feature were discontinued beginning in 2017.
 
     c. Pushed data – none (not applicable)
 
@@ -307,7 +311,7 @@ To monitor data integrity for data in process, Power BI uses HTTPS, TCP/IP and T
 
 ## User Authentication to Data Sources
 
-With each data source, a user establishes a connection based on his or her login, and accesses the data with those credentials. Users can then create queries, dashboards, and reports based on the underlying data.
+With each data source, a user establishes a connection based on their login, and accesses the data with those credentials. Users can then create queries, dashboards, and reports based on the underlying data.
 
 When a user shares queries, dashboards, reports, or any visualization, access to that data and those visualizations is dependent on whether the underlying data sources support Role Level Security (RLS).
 
@@ -447,6 +451,12 @@ The following questions are common security questions and answers for Power BI. 
 **Are there other Power BI visuals that send information outside the customer network?**
 
 * Yes. Bing Maps and ESRI visuals transmit data out of the Power BI service for visuals that use those services. For more information, and detailed descriptions of out-of-Power-BI tenant traffic, see [**Power BI and ExpressRoute**](service-admin-power-bi-expressroute.md).
+
+**For Template Apps, does Microsoft perform any security or privacy assessment of the Template app prior to publishing items to the Gallery?**
+* No. The app publisher is responsible for the content while the customer's responsibility to review and determine whether to trust the Template app publisher. 
+
+**Are there Template apps that can send information outside the customer network?**
+* Yes. It is the customer's responsibility to review the publisher's privacy policy and determine whether to install the Template app on Tenant. Furthermore, the publisher is responsible to notify of the app's behavior and capabilities.
 
 **What about data sovereignty? Can we provision tenants in data centers located in specific geographies, to ensure data doesn't leave the country borders?**
 

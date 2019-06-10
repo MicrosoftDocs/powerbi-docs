@@ -1,8 +1,8 @@
 ---
 title: Troubleshooting your embedded application
 description: This article discusses some common issues you may encounter when embedding content from Power BI.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -75,6 +75,7 @@ A fiddler capture may be required to investigate further. There could be several
 * The Azure AD auth token expired.
 * The authenticated user isn't a member of the group (app workspace).
 * The authenticated user isn't an admin of the group (app workspace).
+* The authenticated user doesn't have permissions. Permissions can be updated using [refreshUserPermissions API](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions)
 * The authorization header may not be listed correctly. Make sure there are no typos.
 
 The backend of the application may need to refresh the auth token before calling GenerateToken.
@@ -179,6 +180,10 @@ User consent is disabled for the tenant.
     ![Consent Test Fix](media/embedded-troubleshoot/consent-test-02.png)
 
 *Grant permissions* to the application by an admin - either for the entire tenant or a specific user.
+
+### CS1061 error
+
+Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) if you experience an "'AuthenticationContext' does not contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)" error.
 
 ## Data sources
 

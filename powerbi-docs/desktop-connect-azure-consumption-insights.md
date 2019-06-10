@@ -21,14 +21,15 @@ Power BI desktop can connect to Azure and get in-depth data about your organizat
 
 Power BI currently supports connecting to Enterprise Agreement and Customer Agreement billing accounts.
 
-Enterprise Agreement users should connect with the Azure Consumption Insights connector. Customer agreement account users should connect with the Azure Cost Management connector.
+* **Enterprise Agreement** users should connect with the **Azure Consumption Insights connector**.
+
+* **Customer Agreement** users should connect with the **Azure Cost Management connector**.
 
 ## Connect with Azure Consumption Insights
 
 Azure Consumption Insights allows you to connect to Azure Enterprise Agreement billing accounts.
 
-In this section, you will learn how to connect get the data you need, how to migrate fr
-om using the Azure Enterprise Connector, and you'll find a mapping of *usage details columns* available in the **ACI** (Azure Consumption Insights) API.
+In this section, you will learn how to get the data you need, how to migrate from using the Azure Enterprise Connector, and you'll find a mapping of *usage details columns* available in the **ACI** (Azure Consumption Insights) API.
 
 To successfully connect using the **Azure Consumption Insights** connector, you need to have access to the Enterprise features within the Azure portal.
 
@@ -41,9 +42,9 @@ In the dialog that appears, provide your *Enrollment Number*.
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
 
 * You can get your enrollment number from the [Azure Enterprise Portal](https://ea.azure.com), in the location shown in the following image:
-  
+
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
-  
+
   This version of the connector only supports enterprise enrollments from https://ea.azure.com. China enrollments are not currently supported.
 
 Next, provide your *Access key* to connect.
@@ -51,11 +52,11 @@ Next, provide your *Access key* to connect.
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
 
 * Your Access key for enrollment can be found on the [Azure Enterprise Portal](https://ea.azure.com).
-  
+
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
-Once you provide your *Access key* and select **Connect**, a **Navigator** window appears and shows the nine tables available to you: 
-* **Budgets**: Provides budget details to view actual costs or usage against existing budget targets. 
+Once you provide your *Access key* and select **Connect**, a **Navigator** window appears and shows the nine tables available to you:
+* **Budgets**: Provides budget details to view actual costs or usage against existing budget targets.
 * **MarketPlace**: Provides usage-based Azure Marketplace charges.
 * **PriceSheets**: Provides applicable rates by meter for an enrollment.
 * **RICharges**: Provides charges associated to your Reserved Instances over the last 24 months.
@@ -71,8 +72,8 @@ You can select a checkbox beside any table to see a preview. You can select one 
 
 > [!NOTE]
 > The *Summary* and *PriceSheet* tables are only available for the enrollment-level API Key. Also, the data in these tables has, by default, the current month's data for *Usage* and *PriceSheet*. The *Summary* and *MarketPlace* tables are not constrained to the current month.
-> 
-> 
+>
+>
 
 When you select **Load** the data is loaded into **Power BI Desktop**.
 
@@ -137,7 +138,7 @@ Next you'll need to move any custom columns or measures you created into the new
 
 1. Open Notepad (or another text editor).
 2. Select the measure you want to move, copy the text from the *Formula* field, and place it in Notepad.
-   
+
    ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_11.png)
 3. Rename *Query1* to the original details table name.
 4. Create new measures and custom columns in your table by right-clicking on your table, and choosing **New Measure**, then cut and paste your stored measures and columns until they're all done.
@@ -146,7 +147,7 @@ Next you'll need to move any custom columns or measures you created into the new
 Many dashboards have additional tables that are used for lookup or filtering, such as date tables or tables used for custom projects. Reestablishing those relationships resolves most remaining issues. Here's how to do it.
 
 - In the **Modeling** tab in **Power BI Desktop**, select **Manage Relationships** to bring up a window that lets you manage relationships within the model. Re-link your tables, as needed.
-   
+
     ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
 ### Step 5: Verify your visuals, and adjust field formatting as needed
@@ -210,6 +211,11 @@ The columns and names of details in the Azure Portal are similar in the API and 
 
 In this section, you'll learn how to connect to your Customer Agreement billing account.
 
+> [!NOTE]
+> The Azure Cost Management connector currently supports customers on the **Customer Agreement**.  **Enterprise Agreement** customers should use the Microsoft Azure Consumption Insights connector.
+>
+>
+
 To connect using the **Azure Cost Management** connector, select **Get Data** from the **Home** ribbon in **Power BI Desktop**.  Select **Azure** fromfrom the categories on the left, and you see **Azure Cost Management (Beta)**. Select **Connect**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
@@ -225,7 +231,7 @@ You can get your billing profile ID from the [Azure portal](https://portal.azure
 You'll be prompted to log in with your Azure email and password.  Once you authenticate, you'll be shown a **Navigator** window with the twelve tables available to you:
 
 * **Billing events**: Provides event log of new invoices, credit purchases, and more.
-* **Budgets**: Provides budget details to view actual costs or usage against existing budget targets. 
+* **Budgets**: Provides budget details to view actual costs or usage against existing budget targets.
 * **Charges**: Provides a month-level summary of Azure usage, market place charges, and charges billed separately.
 * **Credit lots**: Provides Azure credit lot purchase details for the provided billing profile.
 * **Credit summary**: Provides credit summary for provided billing profile.
@@ -248,6 +254,8 @@ When you select **Load** the data is loaded into **Power BI Desktop**.
 Once the data you selected is loaded, the tables and fields you selected can be seen in the **Fields** pane.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-05.png)
+
+Watch the [How to analyze spending in Power BI with Azure Consumption Insights](https://www.youtube.com/watch?v=QKBMXXrlpEk) video about reviewing your cost data in Power BI desktop using the Azure Consumption Insights connector.
 
 ## Writing custom queries
 
@@ -279,4 +287,3 @@ In addition to modifying the `numberOfMonths` to any value between 1 and 36, you
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   
 * [Enter data directly into Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
-

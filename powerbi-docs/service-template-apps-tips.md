@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 04/19/2019
 ms.author: maggies
 ---
 
@@ -18,7 +18,8 @@ When you're [authoring your template app](service-template-apps-create.md) in Po
 * With **queries**, you [connect](desktop-connect-to-data.md) and [transform](desktop-query-overview.md) the data, and define [parameters](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). 
 * In the **data model**, you create [relationships](desktop-create-and-manage-relationships.md), [measures](desktop-measures.md), and Q&A improvements.  
 * **[Report pages](desktop-report-view.md)** include visuals and filters to provide insights into your data.  
-* **[Dashboards](consumer/end-user-dashboards.md)** and [tiles](service-dashboard-create.md) offer an overview of the insights included.  
+* **[Dashboards](consumer/end-user-dashboards.md)** and [tiles](service-dashboard-create.md) offer an overview of the insights included.
+* Sample data makes your app discoverable immediately after installation.
 
 You may be familiar with each piece as existing Power BI features. When building a template app, there are additional things to consider for each piece. See each section below for more details.
 
@@ -33,7 +34,7 @@ To get started, you need to connect to your API from Power BI Desktop to start b
 You can use the Data Connectors that are available out of the box in Power BI Desktop to connect to your API. You can use the Web Data Connector (Get Data -> Web) to connect to your Rest API or the OData connector (Get Data -> OData feed) to connect to your OData feed. These connectors work out of the box only if your API supports Basic Authentication.
 
 > [!NOTE]
-> If your API uses any other authentication types, like OAuth 2.0 or Web API Key, then you need to develop your own Data Connector to allow Power BI Desktop to successfully connect and authenticate to your API. For details on how to develop your own Data Connector for your template app, check the [Data Connectors documentation](https://aka.ms/DataConnectors). 
+> If your API uses any other authentication types, like OAuth 2.0 or Web API Key, then you need to develop your own Data Connector to allow Power BI Desktop to successfully connect and authenticate to your API. Your custom connector must be added to PBI service for it to be accessed by Template app installer. <br> For details on how to develop your own Data Connector for your template app, check the [Data Connectors documentation](https://aka.ms/DataConnectors). 
 >
 >
 
@@ -65,8 +66,6 @@ A well-defined data model ensures your customers can easily and intuitively inte
 
 > [!NOTE]
 > You should do much of the basic modeling (typing, column names) in the [queries](#queries).
->
-
 
 ### Q&A
 The modeling also affects how well Q&A can provide results for your customers. Ensure you add synonyms to commonly used columns and you've properly named your columns in the [queries](#queries).
@@ -74,8 +73,9 @@ The modeling also affects how well Q&A can provide results for your customers. E
 ### Additional data model tips
 
 Make sure you've:
+
 * Applied formatting to all value columns. Apply types in the query.  
-* Applied formatting to all measures. 
+* Applied formatting to all measures.
 * Set default summarization. Especially "Do Not Summarize", when applicable (for unique values, for example).  
 * Set data category, when applicable.  
 * Set relationships, as necessary.  
@@ -83,10 +83,6 @@ Make sure you've:
 ## Reports
 The report pages offer additional insight into the data included in your template app. Use the pages of the reports to answer the key business questions your template app is trying to address. Create the report using Power BI Desktop.
 
-> [!NOTE]
-> You can only include one report in a template app, so take advantage of the different pages to call out particular sections of your scenario.
->
->
 
 ### Additional report tips
 
@@ -105,10 +101,6 @@ The dashboard is the main point of interaction with your template app for your c
 
 To create a dashboard for your template app, just upload your PBIX through Get Data > Files or publish directly from Power BI Desktop.
 
-> [!NOTE]
-> template apps currently require a single report and dataset per template app. Do not pin content from multiple reports/datasets onto the dashboard used in the template app.
->
->
 
 ### Additional dashboard tips
 
@@ -118,18 +110,38 @@ To create a dashboard for your template app, just upload your PBIX through Get D
 * All dashboard tiles should have appropriate titles/subtitles.  
 * Consider groupings in the dashboard for different scenarios, either vertically or horizontally.  
 
+## Sample data
+Template apps, as part of the app creation stage, wraps the cache data in the workspace as part of the app:
+
+* Allows the installer to understand the functionality and purpose of the app before connecting data.
+* Creates an experience that drives the installer to further explore app capabilities, which leads to connecting the app dataset.
+
+We recommend having quality sample data before creating the app. ensure the app report and dashboards are populated with data.
+
+## Publishing on AppSource
+Template apps can be published on AppSource, follow these guidelines before submitting your app to AppSource:
+
+* Make sure you create a template app with engaging sample data that can help the installer understand what the app can do (empty report & dashboard aren't approved).
+Template apps support sample data only apps, make sure to check the static app checkbox. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Have instruction for the validation team to follow which includes credentials and parameters that are required to connect to data.
+* Application must include an App icon in Power BI and on your CPP offer. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Landing page configured. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Make sure to follow the documentation on [Power BI App offer](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+* In case a dashboard is part of your app, make sure it's not empty.
+* Install the app using the app link before submitting it, make sure you can connect the dataset and the app experience is as you planned.
+* Before uploading bpix into the template app workspace, make sure to unload any unnecessary connections.
+* Follow Power BI [Best design practices for reports and visuals](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) to achieve maximum impact on your users and getting approved for distribution.
+
 ## Known limitations
 
 | Feature | Known Limitation |
 |---------|---------|
 |Contents:  Datasets   | Exactly one dataset should be present. Only datasets built in Power BI Desktop (.pbix files) are allowed. <br>Not supported: Datasets from other template apps, cross-workspace datasets, paginated reports (.rdl files), Excel workbooks |
-|Contents: Reports     | Up to one report    |
-| Contents: Dashboards | Up to one non-empty dashboard <br>Not supported: Real-time tiles (in other words, no support for PushDataset or pubnub) |
-| Contents: Dataflows | Not supported: Dataflows |
-| Contents from files | Only PBIX files are allowed. <br>Not supported: .rdl files (paginated reports), Excel workbooks   |
-| Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. <br>Not supported: <br>DirectQuery <br>Live connections (no Azure AS) <br>On-premises data sources (personal and enterprise gateways aren’t supported) <br>Real time (no support for pushdataset) <br>Composite models |
+|Contents: Dashboards | Real-time tiles aren’t allowed (in other words, no support for push or streaming datasets) |
+|Contents: Dataflows | Not supported: Dataflows |
+|Contents from files | Only PBIX files are allowed. <br>Not supported: .rdl files (paginated reports), Excel workbooks   |
+| Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. <br>Not supported: <li> DirectQuery</li><li>Live connections (no Azure AS)</li> <li>On-premises data sources (personal and enterprise gateways aren't supported)</li> <li>Real time (no support for push dataset)</li> <li>Composite models</li></ul> |
 | Dataset: cross-workspace | No cross-workspace datasets are allowed  |
-| Content: Dashboards | Real-time tiles aren’t allowed (in other words, no support for PushDataset or pubnub) |
 | Query parameters | Not supported: Parameters of type "Any" or "Binary" type block refresh operation for dataset |
 | Custom visuals | Only publicly available custom visuals are supported. [Organizational custom visuals](power-bi-custom-visuals-organization.md) not supported |
 

@@ -19,6 +19,17 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
 
+## April 2019
+
+### Key Influencers visual 
+Key Influencers visual is now available on your mobile app. This visual lets you perform analysis of key drivers over your data with just a few taps.
+
+### Add comments to report content (Android and iOS)
+Now you can use comments to collaborate and share your feedback on report pages and visuals. Read more about report commenting in Power BI Service and Mobile [in this blog](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/). 
+
+### Maximize the view with full screen mode (Android and iOS)
+We added new button that let you control when to focus on your data by removing report headers and footers and giving you maximum space for viewing your reports.
+
 ## March 2019
 
 ### Supporting external guest users in Power BI apps (iOS, Android)
