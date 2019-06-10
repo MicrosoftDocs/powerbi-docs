@@ -1,17 +1,17 @@
 ---
-title: Distribute template apps in your organization - Power BI (preview)
+title: Distribute template apps in your organization - Power BI
 description: Learn about installing, customizing, and distributing template apps in your organization in Power BI.
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/19/2019
-ms.author: maggies
+ms.date: 06/10/2019
+ms.author: teddybercovitz
 ---
 
-# Install and distribute template apps in your organization - Power BI (preview)
+# Install and distribute template apps in your organization - Power BI
 
 Are you a Power BI analyst? If so, this article explains how you install *template apps* to connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. You can modify the dashboard and reports to meet the needs of your organization, and then distribute them to your colleagues as an *app*. 
 
@@ -50,14 +50,14 @@ In a browser, select this link to open AppSource filtered to Power BI apps:
 
 3. Browse or search for the app, then select **Get it now**.
 
-2. In the dialog box, select **Install**.
+4. In the dialog box, select **Install**.
 
+    ![Install app](media/service-template-apps-install-distribute/power-install-dialog.png)
     If you have a Power BI Pro license, the app is installed with its associated app workspace. You customize the app in the associated workspace.
 
-    When installation succeeds, you see a notification that your new app is ready. 
-
-3. Select **Go to app**.
-4. In **Get started with your new app**, select one of three options:
+    When installation succeeds, you see a notification that your new app is ready.
+4. Select **Go to app**.
+5. In **Get started with your new app**, select one of three options:
 
     ![Get started with your app](media/service-template-apps-create/power-bi-template-app-get-started.png)
 
@@ -65,13 +65,22 @@ In a browser, select this link to open AppSource filtered to Power BI apps:
     - **Connect data**: Change the data source from the sample data to your own data source. You can redefine dataset parameters and data source credentials. See [Known limitations](service-template-apps-tips.md#known-limitations) in the template apps tips article. 
     - **Go to workspace** (most advanced option): you can make any changes allowed by the app builder.
 
-    Or skip this dialog box and access the associated workspace directly via **Workspaces** in the left navigation pane.   
+    Or skip this dialog box and access the associated workspace directly via **Workspaces** in the left navigation pane.
+    >[!NOTE]
+    >Installing a template app installed both an **Org app** & an **app workspace**
  
-5. Before you share it with your coworkers, you'll want to connect to your own data. You may also want to modify the report or dashboard to make it work for your organization. You can also add other reports or dashboards at this point.
+6. Before you share it with your coworkers, you'll want to connect to your own data. You may also want to modify the report or dashboard to make it work for your organization. You can also add other reports or dashboards at this point.
+
+   In case you pressed an installation link for an app which is not listed on AppSource you will get the validation dialog box confirming your choice.
+
+   ![Install app](media/service-template-apps-install-distribute/power-install-unvalidated-dialog.png)
+
+   >[!NOTE]
+   >In order to install template apps which are not listed on AppSource you need to request from your admin permissions. See the Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings-preview) for details.
 
 ## Update and distribute the app
 
-After you've updated the app for your organization, you're ready to publish it. The steps are the same as for publishing any other app. 
+After you've updated the app for your organization, you're ready to publish it. The steps are the same as for publishing any other app.
 
 1. When you've finished customizing, in the workspace list view select **Update app** in the upper-right corner.  
 
