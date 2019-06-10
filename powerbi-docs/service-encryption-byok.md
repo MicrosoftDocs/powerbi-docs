@@ -21,8 +21,6 @@ Power BI encrypts data _at-rest_ and _in process_. By default, Power BI uses Mic
 
 BYOK makes it easier to meet compliance requirements that specify key arrangements with the cloud service provider (in this case Microsoft). With BYOK, you provide and control the encryption keys for your Power BI data at-rest at the application level. As a result, you can exercise control and revoke your organization's keys, should you decide to exit the service. By revoking the keys, the data is unreadable to the service.
 
-In the next section you learn how to configure Azure Key Vault, which is where you store encryption keys for BYOK.
-
 ## Data source and storage considerations
 
 To use BYOK, you must upload data to the Power BI service from a Power BI Desktop (PBIX) file. When you connect to data sources in Power BI Desktop, you must specify a storage mode of Import. You cannot use BYOK in the following scenarios:
@@ -31,6 +29,8 @@ To use BYOK, you must upload data to the Power BI service from a Power BI Deskto
 - Analysis Services Live Connection
 - Excel workbooks (unless data is first imported into Power BI Desktop)
 - Push datasets
+
+In the next section you learn how to configure Azure Key Vault, which is where you store encryption keys for BYOK.
 
 ## Configure Azure Key Vault
 
