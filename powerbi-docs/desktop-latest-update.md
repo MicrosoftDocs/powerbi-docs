@@ -34,42 +34,43 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 The following updates are new to **Power BI Desktop** this month:
 
 ### Reporting
-* Updated pane design  [[video]](https://youtu.be/O8GlHDz8xUQ?t=10)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#panes) 
-* Visual level filters for slicers  [[video]](https://youtu.be/O8GlHDz8xUQ?t=377)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#slicerFilters)
-* Sorting for the performance analyzer pane [[video]](https://youtu.be/O8GlHDz8xUQ?t=518)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#perfAnalyzer)
-* Conditional formatting updates for formatting options [[video]](https://youtu.be/O8GlHDz8xUQ?t=572)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#conditionalFormatting)
-* Visual header tooltips [[video]](https://youtu.be/O8GlHDz8xUQ?t=664)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#headerTooltips)
-* Table and matrix total label customization [[video]](https://youtu.be/O8GlHDz8xUQ?t=664)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#totalLabels)
-* Sync slicer support for hierarchy slicer [[video]](https://youtu.be/O8GlHDz8xUQ?t=664)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#syncSlicer)
-* Consistent font sizes across visuals [[video]](https://youtu.be/O8GlHDz8xUQ?t=664)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#fontSizes)
+* Updated pane design  [[video]](https://youtu.be/7k-nP38uHyQ?t=8)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#panes) 
+* Visual level filters for slicers  [[video]](https://youtu.be/7k-nP38uHyQ?t=116)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#slicerFilters)
+* Sorting for the performance analyzer pane [[video]](https://youtu.be/7k-nP38uHyQ?t=237)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#perfAnalyzer)
+* Conditional formatting updates for formatting options [[video]](https://youtu.be/7k-nP38uHyQ?t=311)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#conditionalFormatting)
+* Visual header tooltips [[video]](https://youtu.be/7k-nP38uHyQ?t=530)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#headerTooltips)
+* Table and matrix total label customization [[video]](https://youtu.be/7k-nP38uHyQ?t=722)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#totalLabels)
+* Sync slicer support for hierarchy slicer [[video]](https://youtu.be/7k-nP38uHyQ?t=859)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#syncSlicer)
+* Consistent font sizes across visuals [[video]](https://youtu.be/7k-nP38uHyQ?t=962)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#fontSizes)
 
 
 ### Analytics
-* Key influencers visual updates (preview) [[video]](https://youtu.be/O8GlHDz8xUQ?t=717)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#keyInfluencers) 
+* Key influencers visual updates (preview) [[video]](https://youtu.be/7k-nP38uHyQ?t=1064)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#keyInfluencers) 
     * Key influencers with Live connect to Power BI datasets
     * Key influencers accessibility
     * Support for Cloud RLS
-* Manage aggregations dialog accessibility [[video]](https://youtu.be/O8GlHDz8xUQ?t=717)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#aggregationsAccessibility) 
+* Manage aggregations dialog accessibility [[video]](https://youtu.be/7k-nP38uHyQ?t=1213)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#aggregationsAccessibility) 
 
 ### Modeling
-* New == DAX comparison operator [[video]](https://youtu.be/O8GlHDz8xUQ?t=1080)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#dax) 
+* New == DAX comparison operator [[video]](https://youtu.be/7k-nP38uHyQ?t=1267)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#dax) 
 
 
 ### Visuals
-* Personalized visualization pane (preview)  [[video]](https://youtu.be/O8GlHDz8xUQ?t=1093)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#personalizedVizPane) 
-* Three new custom visuals and updates  [[video]](https://youtu.be/O8GlHDz8xUQ?t=1199)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#synopticVisual) 
+* Personalized visualization pane (preview)  [[video]](https://youtu.be/7k-nP38uHyQ?t=1349)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#personalizedVizPane) 
+* Three new custom visuals and updates  [[video]](https://youtu.be/7k-nP38uHyQ?t=1391)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#synopticVisual) 
 
 
 ### Data connectivity
-* Connect to shared and certified datasets [[video]](https://youtu.be/O8GlHDz8xUQ?t=2518)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#sharedCertifiedDatasets) 
-* Common Data Service connector is now generally available  [[video]](https://youtu.be/O8GlHDz8xUQ?t=2538)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#cds) 
-* Azure Data Explorer connector is now generally available [[video]](https://youtu.be/O8GlHDz8xUQ?t=2560)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#azureDataExplorer) 
-* Enhancements to the Cosmos DB connector [[video]](https://youtu.be/O8GlHDz8xUQ?t=2596)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#cosmosDB) 
-* Entersoft data connector [[video]](https://youtu.be/O8GlHDz8xUQ?t=2596)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#entersoft) 
+* Connect to shared and certified datasets [[video]](https://youtu.be/7k-nP38uHyQ?t=1739)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#sharedCertifiedDatasets) 
+* Common Data Service connector is now generally available  [[video]](https://youtu.be/7k-nP38uHyQ?t=1807)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#cds) 
+* Azure Data Explorer connector is now generally available [[video]](https://youtu.be/7k-nP38uHyQ?t=1823)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#azureDataExplorer) 
+* Enhancements to the Cosmos DB connector [[video]](https://youtu.be/7k-nP38uHyQ?t=1835)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#cosmosDB)
+* Entersoft data connector [[video]](https://youtu.be/7k-nP38uHyQ?t=1851)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#entersoft) 
 
 
 ### Data preparation
-* Improvements to M Intellisense [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#intellisense) 
+* Improvements to M Intellisense [[video]](https://youtu.be/7k-nP38uHyQ?t=1866)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#intellisense) 
+
 
 > [!NOTE]
 > You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
@@ -79,7 +80,8 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/O8GlHDz8xUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7k-nP38uHyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
