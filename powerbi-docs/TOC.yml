@@ -257,8 +257,6 @@
         href: desktop-add-column-from-example.md
       - name: "Add a custom column"
         href: desktop-add-custom-column.md
-      - name: "Create responsive visuals in Power BI"
-        href: visuals/desktop-create-responsive-visuals.md
       - name: "Use inline hierarchy labels in Power BI Desktop"
         href: desktop-inline-hierarchy-labels.md
       - name: "Use the numeric range slicer"
