@@ -7,7 +7,7 @@ ms.reviewer:
 ms.custom:  
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: how-to
+ms.topic: conceptual
 ms.date: 01/24/2019
 ms.author: mihart
 
