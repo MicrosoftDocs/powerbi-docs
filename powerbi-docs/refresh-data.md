@@ -66,13 +66,15 @@ Because Power BI does not import the data, you don't need to run a data refresh.
 
 ![Refresh schedule](media/refresh-data/refresh-schedule.png)
 
-Note: The **Scheduled cache refresh** section of the **Datasets** tab is not available for datasets in import mode. These datasets don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh.
+> [!NOTE]
+> The **Scheduled cache refresh** section of the **Datasets** tab is not available for datasets in import mode. These datasets don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh.
 
 #### Push datasets
 
 Push datasets don't contain a formal definition of a data source, so they don't require you to perform a data refresh in Power BI. You refresh them by pushing your data into the dataset through an external service or process, such as Azure Stream Analytics. This is a common approach for real-time analytics with Power BI. Power BI still performs cache refreshes for any tiles used on top of a push dataset. For a detailed walkthrough, see [Tutorial: Stream Analytics and Power BI: A real-time analytics dashboard for streaming data](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
 
-Note: Push Mode has several limitations as documented in [Power BI REST API limitations](developer/api-rest-api-limitations.md).
+> [!NOTE]
+> Push Mode has several limitations as documented in [Power BI REST API limitations](developer/api-rest-api-limitations.md).
 
 ### Power BI refresh types
 
@@ -94,7 +96,8 @@ It is also important to call out that the daily refresh limitation applies to bo
 
 ![Refresh now](media/refresh-data/refresh-now.png)
 
-Note: Data refreshes must complete in less than 2 hours. If your datasets require longer refresh operations, consider moving the dataset onto a Premium capacity. On Premium, the maximum refresh duration is 5 hours.
+> [!NOTE]
+> Data refreshes must complete in less than 2 hours. If your datasets require longer refresh operations, consider moving the dataset onto a Premium capacity. On Premium, the maximum refresh duration is 5 hours.
 
 #### OneDrive refresh
 
@@ -163,7 +166,8 @@ You have the following options:
 - Choose an enterprise data gateway with the required data source definition
 - Deploy a personal data gateway
 
-Note: You can find a list of data source types that require a data gateway in the article [Manage your data source - Import/Scheduled Refresh](service-gateway-enterprise-manage-scheduled-refresh.md).
+> [!NOTE]
+> You can find a list of data source types that require a data gateway in the article [Manage your data source - Import/Scheduled Refresh](service-gateway-enterprise-manage-scheduled-refresh.md).
 
 #### Using an enterprise data gateway
 
@@ -173,7 +177,8 @@ Connecting a dataset to an enterprise gateway is relatively straightforward if y
 
 ![Add to gateway](media/refresh-data/add-to-gateway.png)
 
-Note: A dataset can only use a single gateway connection. In other words, it is not possible to access on-premises data sources across multiple gateway connections. Accordingly, you must add all required data source definitions to the same gateway.
+> [!NOTE]
+> A dataset can only use a single gateway connection. In other words, it is not possible to access on-premises data sources across multiple gateway connections. Accordingly, you must add all required data source definitions to the same gateway.
 
 #### Deploying a personal data gateway
 
@@ -183,7 +188,8 @@ Unlike for an enterprise data gateway, you don't need to add data source definit
 
 ![Configure data source credentials for gateway](media/refresh-data/configure-data-source-credentials-gateway.png)
 
-Note: The personal data gateway does not support datasets in DirectQuery/LiveConnect mode. The dataset settings page might prompt you to install it, but if you only have a personal gateway, you can't configure a gateway connection. Make sure you have an enterprise data gateway to support these types of datasets.
+> [!NOTE]
+> The personal data gateway does not support datasets in DirectQuery/LiveConnect mode. The dataset settings page might prompt you to install it, but if you only have a personal gateway, you can't configure a gateway connection. Make sure you have an enterprise data gateway to support these types of datasets.
 
 ### Accessing cloud data sources
 
@@ -197,7 +203,8 @@ A dataset can get data from multiple sources, and these sources can reside on-pr
 
 ![Cloud and on-premises data sources](media/refresh-data/cloud-on-premises-data-sources-diagram.png)
 
-Note: If a dataset uses separate mashup queries to connect to on-premises and cloud sources, Power BI uses a gateway connection to reach the on-premises sources and a direct network connection to the cloud sources. If a mashup query merges or appends data from on-premises and cloud sources, Power BI switches to the gateway connection even for the cloud sources.
+> [!NOTE]
+> If a dataset uses separate mashup queries to connect to on-premises and cloud sources, Power BI uses a gateway connection to reach the on-premises sources and a direct network connection to the cloud sources. If a mashup query merges or appends data from on-premises and cloud sources, Power BI switches to the gateway connection even for the cloud sources.
 
 Power BI datasets rely on Power Query to access and retrieve source data. The following mashup listing shows a basic example of a query that merges data from an on-premises source and a cloud source.
 
@@ -244,13 +251,15 @@ in
     TableData
 ```
 
-Note: Query parameters are only supported for Import mode datasets. DirectQuery/LiveConnect mode does not support query parameter definitions.
+> [!NOTE]
+> Query parameters are only supported for Import mode datasets. DirectQuery/LiveConnect mode does not support query parameter definitions.
 
 To ensure that a parameterized dataset accesses the correct data, you must configure the mashup query parameters in the dataset settings. You can also update the parameters programmatically by using the [Power BI REST API](/rest/api/power-bi/datasets/updateparametersingroup). The following screenshot shows the user interface to configure the query parameters for a dataset that uses the above mashup query.
 
 ![Configure query parameters](media/refresh-data/configure-query-parameters.png)
 
-Note: Power BI currently does not support parameterized data source definitions, also known as dynamic data sources. For example, you can't parameterize the data access function Sql.Database("SqlServer01", "AdventureWorks"). If your dataset relies on dynamic data sources, Power BI informs you that it detected unknown or unsupported data sources. You must replace the parameters in your data access functions with static values if you want Power BI to be able to identify and connect to the data sources. For more information, see [Troubleshooting unsupported data source for refresh](service-admin-troubleshoot-unsupported-data-source-for-refresh.md).
+> [!NOTE]
+> Power BI currently does not support parameterized data source definitions, also known as dynamic data sources. For example, you can't parameterize the data access function Sql.Database("SqlServer01", "AdventureWorks"). If your dataset relies on dynamic data sources, Power BI informs you that it detected unknown or unsupported data sources. You must replace the parameters in your data access functions with static values if you want Power BI to be able to identify and connect to the data sources. For more information, see [Troubleshooting unsupported data source for refresh](service-admin-troubleshoot-unsupported-data-source-for-refresh.md).
 
 ## Configure scheduled refresh
 
@@ -266,7 +275,8 @@ Having configured a refresh schedule, the dataset settings page informs you abou
 
 Note also that the configured refresh time might not be the exact time when Power BI starts the next scheduled process. Power BI starts scheduled refreshes on a best effort basis. The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner.
 
-Note: Power BI deactivates your refresh schedule after four consecutive failures or when the service detects an unrecoverable error that requires a configuration update, such as invalid or expired credentials. It is not possible to change the consecutive failures threshold.
+> [!NOTE]
+> Power BI deactivates your refresh schedule after four consecutive failures or when the service detects an unrecoverable error that requires a configuration update, such as invalid or expired credentials. It is not possible to change the consecutive failures threshold.
 
 ### Getting refresh failure notifications
 
@@ -288,7 +298,8 @@ The warning icon helps to indicate current dataset issues, but it is also a good
 
 ![Refresh history messages](media/refresh-data/refresh-history-messages.png)
 
-Note: You can find a link to display the refresh history in the dataset settings. You can also retrieve the refresh history programmatically by using the [Power BI REST API](/rest/api/power-bi/datasets/getrefreshhistoryingroup). By using a custom solution, you can monitor the refresh history of multiple datasets in a centralized way.
+> [!NOTE]
+> You can find a link to display the refresh history in the dataset settings. You can also retrieve the refresh history programmatically by using the [Power BI REST API](/rest/api/power-bi/datasets/getrefreshhistoryingroup). By using a custom solution, you can monitor the refresh history of multiple datasets in a centralized way.
 
 ## Best Practices
 
