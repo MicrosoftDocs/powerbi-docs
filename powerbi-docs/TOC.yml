@@ -683,9 +683,9 @@
         href: service-dataflows-configure-workspace-storage-settings.md  
       - name: "Add a CDM folder to Power BI as a dataflow (Preview)"
         href: service-dataflows-add-cdm-folder.md                                
-      - name: "Integrate Machine Learning in Power BI (Preview)"
+      - name: "Integrate Machine Learning in Power BI"
         href: service-machine-learning-integration.md
-      - name: "Use Cognitive Services in Power BI (Preview)"
+      - name: "Use Cognitive Services in Power BI"
         href: service-cognitive-services.md   
       - name: "Automated Machine Learning in Power BI (Preview)"
         href: service-machine-learning-automated.md              
@@ -729,8 +729,6 @@
         href: service-admin-troubleshooting-power-bi-personal-gateway.md
       - name: "Troubleshooting unsupported data source for refresh"
         href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
-      - name: "Troubleshooting Nested Values returned as text"
-        href: service-troubleshooting-nested-values.md
       - name: "Troubleshooting scheduled refresh for Azure SQL Databases"
         href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
       - name: "Error: We couldn't find any data in your Excel workbook"
@@ -911,6 +909,8 @@
       href: service-premium-incremental-refresh.md
     - name: Configure Multi-Geo
       href: service-admin-premium-multi-geo.md
+    - name: Bring your own encryption keys
+      href: service-encryption-byok.md
     - name: Restart a Premium capacity
       href: service-admin-premium-restart.md
     - name: Connect to datasets with client applications and tools
