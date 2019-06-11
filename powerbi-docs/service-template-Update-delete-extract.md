@@ -15,7 +15,6 @@ ms.author: tebercov
 
 ## Update your app
 
-Now that your app is in production, you can start over in the test phase, without disrupting the app in production.
 
 1. In the **Release management** pane, select **Create app**.
 2. Go back through the app creation process.
