@@ -48,7 +48,7 @@ Your new workspace versioning resets and you can continue to develop and distrib
 A template app workspace is the source of an active distributed template app. To protect the template app users, it's not possible to delete a workspace without first removing all the created app versions in the workspace.
 Deleting an app version also deletes the app url that will no longer work.
 
-1. In the release management pane, press more **(...)** and then **Delete**.
+1. In the release management pane, press select the ellipsis **(...)** and then **Delete**.
  ![Delete template app version](media/service-template-apps-update-extract-delete/power-bi-template-app-delete.png)
  ![Delete template app version](media/service-template-apps-update-extract-delete/power-bi-template-app-delete-dialog.png)
 
