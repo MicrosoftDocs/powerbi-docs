@@ -28,7 +28,7 @@ Now that your app is in production, you can start over in the test phase, withou
 
 5. When you're ready to promote your app to pre-production for further testing outside your tenant, go back to the Release Management pane and select **Promote app** next to **Testing**.
 6. Your link is now live. Submit it again to the Cloud Partner Portal (CPP) by following the steps at [Power BI App offer update](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
-7. In CPP you must **publish** your offer again as well as to have it validated again. 
+7. In CPP you must **publish** your offer again as well as have it validated again. 
 
 >[!NOTE]
 >Promote your app to production stage only after your app is approved by Cloud Partner Portal and you published it.
