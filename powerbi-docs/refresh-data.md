@@ -149,9 +149,7 @@ This refresh process is less important because it is only relevant for live conn
 
 ## Review data infrastructure dependencies
 
-Regardless of storage modes, no data refresh can succeed unless the underlying data sources are accessible. Your data sources might reside on-premises or in the cloud, or both.
-
-There are three main data access scenarios:
+Regardless of storage modes, no data refresh can succeed unless the underlying data sources are accessible. There are three main data access scenarios:
 
 - A dataset uses data sources that reside on-premises
 - A dataset uses data sources in the cloud
@@ -318,10 +316,9 @@ In addition, consider the following recommendations to establish and maintain re
 - Ensure that Power BI can send refresh failure notifications to your mailbox. Spam filters might block the email messages or move them into a separate folder where you might not notice them immediately.
 
 ## Next steps
-[Tools for troubleshooting refresh issues](service-gateway-onprem-tshoot.md)  
-[Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md)  
-[Power BI Gateway - Personal](service-gateway-personal-mode.md)  
-[On-premises data gateway](service-gateway-onprem.md)  
+
+[Configuring scheduled refresh](refresh-scheduled-refresh.md)
+[Tools for troubleshooting refresh issues](service-gateway-onprem-tshoot.md)
+[Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-
