@@ -19,7 +19,7 @@ Paginated reports can have many pages. For example, this report has 563 pages. E
 
 ![Paginated](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-![Paginated report in the Power BI service](media/report-builder-in-power-bi/report-builder-get-started-paginated-report.png)
+![Paginated report in the Power BI service](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
 You can preview your report in Report Builder, then publish it to the Power BI service, http://app.powerbi.com. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in app workspaces, as long as the workspace is in a Power BI Premium capacity. Also, a Power BI admin needs to enable paginated reports in the [Premium capacities section](service-admin-premium-workloads.md#paginated-reports-preview) of the Power BI admin portal. 
 
@@ -38,8 +38,7 @@ A single paginated report can have a number of different data sources. It doesn'
 - Power BI Premium Datasets
 - Oracle
 - Teradata
- 
-More data sources will be coming.
+- Additional sources as they're added
 
 ## Design your report  
 
