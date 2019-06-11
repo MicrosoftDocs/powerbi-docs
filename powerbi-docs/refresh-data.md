@@ -317,8 +317,8 @@ In addition, consider the following recommendations to establish and maintain re
 
 ## Next steps
 
-[Configuring scheduled refresh](refresh-scheduled-refresh.md)
-[Tools for troubleshooting refresh issues](service-gateway-onprem-tshoot.md)
-[Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md)
+[Configuring scheduled refresh](refresh-scheduled-refresh.md)  
+[Tools for troubleshooting refresh issues](service-gateway-onprem-tshoot.md)  
+[Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
