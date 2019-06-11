@@ -8,7 +8,7 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/06/2019
+ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -21,7 +21,7 @@ This article gives a quick introduction to creating a visualization in a report.
 
 ## Open a report and add a new page
 
-1. Open a [report in Editing View](../service-interact-with-a-report-in-editing-view).
+1. Open a [report in Editing View](../service-interact-with-a-report-in-editing-view.md).
 
     This tutorial uses the [Sales and Marketing sample](../sample-datasets.md).
 
