@@ -59,6 +59,8 @@ With the matrix visual, you can do all sorts of interesting drill down activitie
 
 ### Drill down on row headers
 
+In the Visualizations pane, when you add multiple fields to the **Rows** section of the **Fields** well, you enable drill down on the rows of the matrix visual. This is similar to creating a hierarchy, which then allows you to drill down (and then back up) through that hierarchy, and analyze the data at each level.
+
 In the following image, the **Rows** section contains *Sales stage* and *Opportunity size*, creating a grouping (or hierarchy) in the rows that we can drill through.
 
 ![Filters card showing which rows are chosen](media/desktop-matrix-visual/power-bi-rows-matrix.png)
@@ -115,9 +117,11 @@ The rest of the menu items work on columns in the same way they do for rows (see
 
 The **Matrix** visual automatically indents subcategories in a hierarchy beneath each parent, called a **Stepped layout**.
 
-![old way of default format for matrixes](media/desktop-matrix-visual/matrix-visual_14.png)
+In the original version of the matrix visual, subcategories were shown in an entirely different column, taking up much more space in the visual. The following image shows the table in original **Matrix** visual; notice the subcategories in a separate column.
 
 ![Screenshot of the old Matrix visual showing the subcatagories in a separate column.](media/desktop-matrix-visual/matrix-visual_14.png)
+
+In the following image, you see a **Matrix** visual, with **Stepped layout** in action. Notice the category *Computers* has its subcategories (Computers Accessories, Desktops, Laptops, Monitors, and so on) slightly indented, providing a cleaner and much more condensed visual.
 
 ![current way that matrix formats data](media/desktop-matrix-visual/matrix-visual_13.png)
 
@@ -128,6 +132,8 @@ You can easily adjust the stepped layout settings. With the **Matrix** visual se
 If you turn off **Stepped layout**, Power BI shows the subcategories in another column rather than indented beneath the parent category.
 
 ## Subtotals with matrix visuals
+
+You can turn subtotals on or off in matrix visuals, for both rows and columns. In the following image, you can see that the row subtotals are set to **On**.
 
 ![matrix showing totals and subtotals](media/desktop-matrix-visual/matrix-visual_20.png)
 
@@ -141,7 +147,7 @@ The same process applies for column subtotals.
 
 With the **Matrix** visual, you can select any elements in the matrix as the basis for cross-highlighting. Select a column in a **Matrix** and Power BI highlights the column, as does any other visuals on the report page. This type of cross-highlighting has been a common feature of other visuals and data point selections, so now the **Matrix** visual offers the same function.
 
-![report page cross highighted by a matrix](media/desktop-matrix-visual/matrix-visual_16.png)
+In addition, using Ctrl+Click also works for cross-highlighting. For example, in the following image a collection of subcategories were selected from the **Matrix** visual. Notice how items that weren't selected from the visual are grayed out, and how the other visuals on the page reflect the selections made in the **Matrix** visual.
 
 ![Screenshot of the Matrix visual along with two other visuals demonstrating the Ctrl+Click function for cross-highlighting.](media/desktop-matrix-visual/matrix-visual_16.png)
 
@@ -149,15 +155,13 @@ With the **Matrix** visual, you can select any elements in the matrix as the bas
 
 Your matrix or table may have content that you'd like to use in other applications: Dynamics CRM, Excel, and other Power BI reports. With the Power BI right-click, you can copy a single cell or a selection of cells onto your clipboard. Then, paste them into the other application.
 
-* To copy the value of a single cell, select the cell,  right-click, and choose **Copy value**. With the unformatted cell value on your clipboard, you can now paste it into another application.
-
     ![Screenshot of the Matrix visual with an arrow pointing to a value and the right-click menu expanded with the Copy value and Copy selection options called out.](media/desktop-matrix-visual/power-bi-cell-copy.png)
 
-* To copy more than a single cell, select a range of cells or use CTRL to select one or more cells.
+* To copy the value of a single cell, select the cell,  right-click, and choose **Copy value**. With the unformatted cell value on your clipboard, you can now paste it into another application.
 
     ![Screenshot of the Matrix visual with an arrow pointing from three called out values to the right-click menu expanded with the Copy value and Copy selection options called out.](media/desktop-matrix-visual/power-bi-copy.png)
 
-* The copy will include the column and row headers.
+* To copy more than a single cell, select a range of cells or use CTRL to select one or more cells. The copy will include the column and row headers.
 
     ![Screenshot showing Excel rows and columns with the values pasted into them.](media/desktop-matrix-visual/power-bi-copy-selection.png)
 
