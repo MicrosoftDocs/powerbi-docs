@@ -1,6 +1,6 @@
 ---
 title: Data refresh in Power BI
-description: Data refresh in Power BI
+description: This article describes the data refresh features of Power BI and their dependencies at a conceptual level.
 author: mgblythe
 manager: kfile
 ms.reviewer: kayu
@@ -8,262 +8,303 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/21/2019
+ms.date: 06/12/2019
 ms.author: mblythe
 
 LocalizationGroup: Data refresh
 ---
+
 # Data refresh in Power BI
-Making sure you’re always getting the latest data is often critical in making the right decisions. You’ve probably already used Get Data in Power BI to connect to and upload some data, created some reports and a dashboard. Now, you want to make sure your data really is the latest and greatest.
 
-In many cases, you don’t need to do anything at all. Some data, like from a Salesforce or Marketo content pack is automatically refreshed for you. If your connection makes use of a live connection or DirectQuery, the data will be update to date. But, in other cases, like with an Excel workbook or Power BI Desktop file that connects to an external online or on-premises data source, you’ll need to refresh manually or setup a refresh schedule so Power BI can refresh the data in your reports and dashboards for you.
+Power BI enables you to go from data to insight to action quickly, yet you must make sure the data in your Power BI reports and dashboards is recent. Knowing how to refresh the data is often critical in delivering accurate results.
 
-This article, along with a few others, are meant to help you understand how data refresh in Power BI really works, whether or not you need to setup a refresh schedule, and what needs to be in-place to refresh your data successfully.
+This article describes the data refresh features of Power BI and their dependencies at a conceptual level. It also provides best practices and tips to avoid common refresh issues. The content lays a foundation to help you understand how data refresh works. For targeted step-by-step instructions to configure data refresh, refer to the tutorials and how-to guides listed in the Next steps section at the end of this article.
 
 ## Understanding data refresh
-Before setting up refresh, it’s important to understand what it is you’re refreshing and where you’re getting your data.
 
-A *data source* is where the data you explore in your reports and dashboards really comes from; for example, an online service like Google Analytics or QuickBooks, a database in the cloud like Azure SQL Database, or a database or file on a local computer or server in your own organization. These are all data sources. The type of data source determines how data from it is refreshed. We’ll go into refresh for each type of data source a little later in the [What can be refreshed?](#what-can-be-refreshed) section.
+Whenever you refresh data, Power BI must query the underlying data sources, possibly load the source data into a dataset, and then update any visualizations in your reports or dashboards that rely on the updated dataset. The entire process consists of multiple phases, depending on the storage modes of your datasets, as explained in the following sections.
 
-A *dataset* is automatically created in Power BI when you use Get Data to connect to and upload data from a content pack, file, or you connect to a live data source. In Power BI Desktop and Excel 2016, you can also publish your file right to the Power BI service, which is just like using Get Data.
+To understand how Power BI refreshes your datasets, reports, and dashboards, you must be aware of the following concepts:
 
-In each case, a dataset is created and appears in the My Workspace, or Group, containers in the Power BI service. When you select the **ellipse (...)** for a dataset, you can explore the data in a report, edit settings, and setup refresh.
+- **Storage modes and dataset types**: The storage modes and dataset types that Power BI supports have different refresh requirements. You can choose between re-importing data into Power BI to see any changes that occurred or querying the data directly at the source.
+- **Power BI refresh types**: Regardless of dataset specifics, knowing the various refresh types can help you understand where Power BI might spend its time during a refresh operation. And combining these details with storage mode specifics helps to understand what exactly Power BI performs when you select **Refresh Now** for a dataset.
 
-![](media/refresh-data/dataset-menu.png)
+### Storage modes and dataset types
 
-A dataset can get data from one or more data sources. For example, you can use Power BI Desktop to get data from a SQL Database in your organization, and get other data from an OData feed online. Then, when you publish the file to Power BI, a single dataset is created, but it will have data sources for both the SQL Database and the OData feed.
+A Power BI dataset can operate in one of the following modes to access data from a variety of data sources. For a more information, see [Storage mode in Power BI Desktop](desktop-storage-mode.md).
 
-A dataset contains information about the data sources, data source credentials, and in most cases, a sub-set of data copied from the data source. When you create visualizations in reports and dashboards, you’re looking at data in the dataset, or in the case of a live connection like Azure SQL Database, the dataset defines the data you see right from the data source. For a live connection to Analysis Services, the dataset definition comes from Analysis Services directly.
+- Import mode
+- DirectQuery mode
+- LiveConnect mode
+- Push mode
 
-> *When you refresh data, you are updating the data in the dataset that is stored in Power BI from your data source. This refresh is a full refresh and not incremental.*
-> 
-> 
+The following diagram illustrates the different data flows, based on storage mode. The most significant point is that only Import mode datasets require a source data refresh. They require refresh because only this type of dataset imports data from its data sources, and the imported data might be updated on a regular or ad-hoc basis. DirectQuery datasets and datasets in LiveConnect mode to Analysis Services don't import data; they query the underlying data source with every user interaction. Datasets in push mode don't access any data sources directly but expect you to push the data into Power BI. Dataset refresh requirements vary depending on the storage mode/dataset type.
 
-Whenever you refresh data in a dataset, whether by using Refresh Now or by setting up a refresh schedule, Power BI uses information in the dataset to connect to the data sources defined for it, query for updated data, and then loads the updated data into the dataset. Any visualizations in your reports or dashboards based on the data are updated automatically.
+![Storage modes and dataset types](media/refresh-data/storage-modes-dataset-types-diagram.png)
 
-Before we go any further, there’s something else that's very important to understand:
+#### Datasets in Import mode
 
-> *Regardless of how often you refresh the dataset, or how often you look at live data, it is the data at the data source that must be up-to-date first.*
-> 
-> 
+Power BI imports the data from the original data sources into the dataset. Power BI report and dashboard queries submitted to the dataset return results from the imported tables and columns. You might consider such a dataset a point-in-time copy. Because Power BI copies the data, you must refresh the dataset to fetch changes from the underlying data sources.
 
-Most organizations process their data once a day, usually in the evening. If you schedule refresh for a dataset created from a Power BI Desktop file that connects to an on-premises database, and your IT department runs processing on that SQL database once in the evening, then you only need to setup scheduled refresh to run once-a-day. For example, after processing on the database happens, but before you come into work. Of course, this isn’t always the case. Power BI provides many ways to connect to data sources that are updated frequently or even real-time.
+Because Power BI caches the data, Import mode dataset sizes can be substantial. Refer to the following table for maximum dataset sizes per capacity. Stay well below the maximum dataset sizes to avoid refresh issues that might occur if your datasets require more than the maximum available resources during a refresh operation.
 
-## Types of refresh
-There are four main types of refresh that happen within Power BI. Package refresh, model/data refresh, tile refresh and visual container refresh.
+| Capacity type | Maximum dataset size |
+| --- | --- |
+| Shared, A1, A2, or A3 | 1 GB |
+| A4 or P1 | 3 GB |
+| A4 or P2 | 6 GB |
+| A6 or P3 | 10 GB |
+| | |
 
-### Package refresh
-This synchronizes your Power BI Desktop, or Excel, file between the Power BI service and OneDrive, or SharePoint Online. This does not pull data from the original data source. The dataset in Power BI will only be updated with what is in the file within OneDrive, or SharePoint Online.
+#### Datasets in DirectQuery/LiveConnect mode
 
-![](media/refresh-data/package-refresh.png)
+Power BI does not import data over connections that operate in DirectQuery/LiveConnect mode. Instead, the dataset returns results from the underlying data source whenever a report or dashboard queries the dataset. Power BI transforms and forwards the queries to the data source.
 
-### Model/data refresh
-This is referring to refreshing the dataset, within the Power BI service, with data from the original data source. This is done by either using scheduled refresh, or refresh now. This requires a gateway for on-premises data sources.
+Although DirectQuery mode and LiveConnect mode are similar in that Power BI forwards the queries to the source, it is important to note that Power BI does not have to transform queries in LiveConnect mode. The queries go directly to the Analysis Services instance hosting the database without consuming resources on shared capacity or a Premium capacity.
 
-### Tile refresh
-Tile refresh updates the cache for tile visuals, on the dashboard, once data changes. This happens about every fifteen minutes. You can also force a tile refresh by selecting the **ellipsis (...)** in the upper right of a dashboard and selecting **Refresh dashboard tiles**.
+Because Power BI does not import the data, you don't need to run a data refresh. However, Power BI still performs tile refreshes and possibly report refreshes, as the next section on refresh types explains. A tile is a report visual pinned to a dashboard, and dashboard tile refreshes happen about every hour so that the tiles show recent results. You can change the schedule in the dataset settings, as in the screenshot below, or force a dashboard update manually by using the **Refresh Now** option.
 
-![](media/refresh-data/dashboard-tile-refresh.png)
+![Refresh schedule](media/refresh-data/refresh-schedule.png)
 
-For details around common tile refresh errors, see [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md).
+Note: The **Scheduled cache refresh** section of the **Datasets** tab is not available for datasets in import mode. These datasets don't require a separate tile refresh because Power BI refreshes the tiles automatically during each scheduled or on-demand data refresh.
 
-### Visual container refresh
-Refreshing the visual container updates the cached report visuals, within a report, once the data changes.
+#### Push datasets
 
-## What can be refreshed?
-In Power BI, you’ll typically use Get Data to import data from a file on a local drive, OneDrive or SharePoint Online, publish a report from Power BI Desktop, or connect directly to a database in the cloud in your own organization. Just about any data in Power BI can be refreshed, but whether or not you need to depends on how your dataset was created from and the data sources it connects to. Let’s look at how each of these refresh data.
+Push datasets don't contain a formal definition of a data source, so they don't require you to perform a data refresh in Power BI. You refresh them by pushing your data into the dataset through an external service or process, such as Azure Stream Analytics. This is a common approach for real-time analytics with Power BI. Power BI still performs cache refreshes for any tiles used on top of a push dataset. For a detailed walkthrough, see [Tutorial: Stream Analytics and Power BI: A real-time analytics dashboard for streaming data](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
 
-Before we go further, here are some important definitions to understand:
+Note: Push Mode has several limitations as documented in [Power BI REST API limitations](developer/api-rest-api-limitations.md).
 
-**Automatic refresh**  - This means no user configuration is necessary in order for the dataset to be refreshed on a regular basis. Data refresh settings are configured for you by Power BI. For online service providers, refresh usually occurs once-a-day. For files loaded from OneDrive, automatic refresh occurs about every hour for data that does not come from an external data source. While you can configure different schedule refresh settings and manually refresh, you probably don’t need to.
+### Power BI refresh types
 
-**User configured manual or scheduled refresh** – This means you can manually refresh a dataset by using Refresh Now or setup a refresh schedule by using Schedule Refresh in a dataset’s settings. This type of refresh is required for Power BI Desktop files and Excel workbooks that connect to external online and on-premises data sources.
+A Power BI refresh operation can consist of multiple refresh types, including data refresh, OneDrive refresh, refresh of query caches, tile refresh, and refresh of report visuals. While Power BI determines the required refresh steps for a given dataset automatically, you should know how they contribute to the complexity and duration of a refresh operation. For a quick reference, refer to the following table.
 
-> [!NOTE]
-> When you configure a time for scheduled refresh, there can be a delay of up to one hour before it begins.
-> 
-> 
+| Storage mode | Data refresh | OneDrive refresh | Query caches | Tile refresh | Report visuals |
+| --- | --- | --- | --- | --- | --- |
+| Import | Scheduled and on-demand | Yes, for connected datasets | If enabled on Premium capacity | Automatically and on-demand | No |
+| DirectQuery | Not applicable | Yes, for connected datasets | If enabled on Premium capacity | Automatically and on-demand | No |
+| LiveConnect | Not applicable | Yes, for connected datasets | If enabled on Premium capacity | Automatically and on-demand | Yes |
+| Push | Not applicable | Not applicable | Not practical | Automatically and on-demand | No |
+| | | | | | |
 
-**Live/DirectQuery** – This means there is a live connection between Power BI and the data source. For on-premises data sources, Admins will need to have a data source configured within an enterprise gateway, but user interaction may not be needed.
+#### Data refresh
 
-> [!NOTE]
-> To enhance performance, dashboards with data connected using DirectQuery are automatically updated. You can also manually refresh a tile at any time, by using the **More** menu on the tile.
-> 
-> 
+For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight daily refreshes. If the dataset resides on a Premium capacity, you can perform up to 48 refreshes per day. For more information, see Configuring scheduled refresh later in this article.
 
-## Local files and files on OneDrive or SharePoint Online
-Data refresh is supported for Power BI Desktop files and Excel workbooks that connect to external online or on-premises data sources. This will only refresh the data for the dataset within the Power BI service. It will not update your local file.
+It is also important to call out that the daily refresh limitation applies to both, scheduled and on-demand refreshes combined. You can trigger an on-demand refresh by selecting **Refresh Now** in the dataset menu, as the following screenshot depicts. You can also trigger a data refresh programmatically by using the Power BI REST API. See [Datasets - Refresh Dataset](/rest/api/power-bi/datasets/refreshdataset) if you are interested in building your own refresh solution.
 
-Keeping your files on OneDrive, or SharePoint Online, and connecting to them from Power BI, provides a great amount of flexibility. But with all that flexibility, it also makes it one of the most challenging to understand. Scheduled refresh for files stored in OneDrive, or SharePoint Online, are different from package refresh. You can learn more in the [Types of refresh](#types-of-refresh) section.
+![Refresh now](media/refresh-data/refresh-now.png)
 
-### Power BI Desktop file
+Note: Data refreshes must complete in less than 2 hours. If your datasets require longer refresh operations, consider moving the dataset onto a Premium capacity. On Premium, the maximum refresh duration is 5 hours.
 
-| **Data source** | **Automatic refresh** | **User configured manual or scheduled refresh** | **Gateway required** |
-| --- | --- | --- | --- |
-| Get Data (on the ribbon) is used to connect to and query data from any listed online data source. |No |Yes |No (see below) |
-| Get Data is used to connect to and explore a live Analysis Services database. |Yes |No |Yes |
-| Get Data is used to connect to and explore a supported on-premises DirectQuery data source. |Yes |No |Yes |
-| Get Data is used to connect to and query data from an Azure SQL Database, Azure SQL Data Warehouse, Azure HDInsight Spark. |Yes |Yes |No |
-| Get Data is used to connect to and query data from any listed  on-premises data source except for Hadoop file (HDFS) and Microsoft Exchange. |No |Yes |Yes |
+#### OneDrive refresh
 
-> [!NOTE]
-> If you are using the [**Web.Page**](https://msdn.microsoft.com/library/mt260924.aspx) function, you do need a gateway if you have republished the dataset or your report after  November 18th, 2016.
-> 
-> 
+If you created your datasets and reports based on a Power BI Desktop file, Excel workbook, or comma separated value (.csv) file on OneDrive or SharePoint Online, Power BI performs another type of refresh, known as OneDrive refresh. For more information, see [Get data from files for Power BI](service-get-data-from-files.md).
 
-For details, see [Refresh a dataset created from a Power BI Desktop file on OneDrive](refresh-desktop-file-onedrive.md).
+Unlike a dataset refresh during which Power BI imports data from a data source into a dataset, OneDrive refresh synchronizes datasets and reports with their source files. By default, Power BI checks about every hour if a dataset connected to a file on OneDrive or SharePoint Online requires synchronization. To review past synchronization cycles, check the OneDrive tab in the refresh history. The following screenshot shows a completed synchronization cycle for a sample dataset.
 
-### Excel workbook
+![Refresh history](media/refresh-data/refresh-history.png)
 
-| **Data source** | **Automatic refresh** | **User configured manual or scheduled refresh** | **Gateway required** |
-| --- | --- | --- | --- |
-| Tables of data in a worksheet not loaded into the Excel data model. |Yes, hourly *(OneDrive/SharePoint Online only)* |Manual only *(OneDrive/SharePoint Online only)* |No |
-| Tables of data in a worksheet linked to a table in the Excel data model (linked tables). |Yes, hourly *(OneDrive/SharePoint Online only)* |Manual only *(OneDrive/SharePoint Online only)* |No |
-| Power Query* is used to connect to and query data from any listed online data source and load data into the Excel data model. |No |Yes |No |
-| Power Query* is used to connect to and query data from any listed on-premises data source except for Hadoop file (HDFS) and Microsoft Exchange and load data into the Excel data model. |No |Yes |Yes |
-| Power Pivot is used to connect to and query data from any listed online data source and load data into the Excel data model. |No |Yes |No |
-| Power Pivot is used to connect to and query data from any listed on-premises data source and load data into the Excel data model. |No |Yes |Yes |
+As the above screenshot shows, Power BI identified this OneDrive refresh as a **Scheduled** refresh, but it is not possible to configure the refresh interval. You can only deactivate OneDrive refresh in the dataset's settings. Deactivating refresh is useful if you don't want your datasets and reports in Power BI to pick up any changes from the source files automatically.
 
-*\* Power Query is known as Get & Transform Data in Excel 2016.*
+Note that the dataset settings page only shows the **OneDrive Credentials** and **OneDrive refresh** sections if the dataset is connected to a file in OneDrive or SharePoint Online, as in the following screenshot. Datasets that are not connected to sources file in OneDrive or SharePoint Online don't show these sections.
 
-For more detailed information, see [Refresh a dataset created from an Excel workbook on OneDrive](refresh-excel-file-onedrive.md).
+![OneDrive Credentials and OneDrive refresh](media/refresh-data/onedrive-credentials-refresh.png)
 
-### Comma separated value (.csv) file on OneDrive or SharePoint Online
+If you disable OneDrive refresh for a dataset, you can still synchronize your dataset on-demand by selecting **Refresh Now** in the dataset menu. As part of the on-demand refresh, Power BI checks if the source file on OneDrive or SharePoint Online is newer than the dataset in Power BI and synchronizes the dataset if this is the case. The **Refresh history** lists these activities as on-demand refreshes on the **OneDrive** tab.
 
-| **Data source** | **Automatic refresh** | **User configured manual or scheduled refresh** | **Gateway required** |
-| --- | --- | --- | --- |
-| Simple comma separated value |Yes, hourly |Manual only |No |
+Keep in mind that OneDrive refresh does not pull data from the original data sources. OneDrive refresh simply updates the resources in Power BI with the metadata and data from the .pbix, .xlsx, or .csv file, as the following diagram illustrates. To ensure that the dataset has the most recent data from the data sources, Power BI also triggers a data refresh as part of an on-demand refresh. You can verify this in the **Refresh history** if you switch to the **Scheduled** tab.
 
-For more detailed information, see [Refresh a dataset created from a comma separated value (.csv) file on OneDrive](refresh-csv-file-onedrive.md).
+![OneDrive refresh diagram](media/refresh-data/onedrive-refresh-diagram.png)
 
-## Content packs
-There are two types of content packs in Power BI:
+If you keep OneDrive refresh enabled for a OneDrive or SharePoint Online-connected dataset and you want to perform data refresh on a scheduled basis, make sure you configure the schedule so that Power BI performs the data refresh after the OneDrive refresh. For example, if you created your own service or process to update the source file in OneDrive or SharePoint Online every night at 1 am, you could configure scheduled refresh for 2:30 am to give Power BI enough time to complete the OneDrive refresh before starting the data refresh.
 
-**Content packs from online services**: like Adobe Analytics, SalesForce, and Dynamics CRM Online. Datasets created from online services are refreshed automatically once a day. While it’s probably not necessary, you can manually refresh or setup a refresh schedule. Because online services are in the cloud, a gateway is not required.
+#### Refresh of query caches
 
-**Organizational content packs**: created and shared by users in your own organization. Content pack consumers cannot setup a refresh schedule or manually refresh. Only the content pack creator can setup refresh for the datasets in the content pack. Refresh settings are inherited with the dataset.
+If your dataset resides on a Premium capacity, you might be able to improve the performance of any associated reports and dashboards by enabling query caching, as in the following screenshot. Query caching instructs the Premium capacity to use its local caching service to maintain query results, avoiding having the underlying data source compute those results. For more information, see [Query caching in Power BI Premium](power-bi-query-caching.md).
 
-### Content packs from online services
+![Query caching](media/refresh-data/query-caching.png)
 
-| **Data source** | **Automatic refresh** | **User configured manual or scheduled refresh** | **Gateway required** |
-| --- | --- | --- | --- |
-| Online services in Get Data &gt; Services |Yes |Yes |No |
+Following a data refresh, however, previously cached query results are no longer valid. Power BI discards these cached results and must rebuild them. For this reason, query caching might not be as beneficial for reports and dashboards associated with datasets that you refresh very often, such as 48 times per day.
 
-### Organizational content packs
-Refresh capabilities for a dataset included within an organization content pack depends on the dataset. See information above in relation to local files, OneDrive or SharePoint Online.
+#### Tile refresh
 
-To learn more, see [Introduction to organizational content packs](service-organizational-content-pack-introduction.md).
+Power BI maintains a cache for every tile visual on your dashboards and proactively updates the tile caches when data changes. In other words, tile refresh happens automatically following a data refresh. This is true for both, scheduled and on-demand refresh operations. You can also force a tile refresh by selecting the ellipsis (...) in the upper right of a dashboard and selecting **Refresh dashboard tiles**.
 
-## Live connections and DirectQuery to on-premises data sources
-With the On-premises data gateway, you can issue queries from Power BI to your on-premises data sources. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. Because there is a direct connection between Power BI and the database, there is no need to schedule refresh.
+![Refresh dashboard tiles](media/refresh-data/refresh-dashboard-tiles.png)
 
-When connecting to a SQL Service Analysis Services (SSAS) data source using a Live connection, unlike DirectQuery, the Live connection to a SSAS source can run against the cache, even upon loading a report. This behavior improves load performance for the report. You can request the latest data from the SSAS data source by using the **refresh** button. Owners of SSAS data sources can configure the scheduled cache refresh frequency for the dataset to ensure reports are as up to date as they require. 
+Because it happens automatically, you can consider tile refresh an intrinsic part of data refresh. Among other things, you might notice that the refresh duration increases with the number of tiles. The tile refresh overhead can be significant.
 
-When you configure a data source with the On-premises data gateway, you can use that data source as the scheduled refresh option. This would be instead of using the personal gateway.
+By default, Power BI maintains a single cache for every tile, but if you use dynamic security to restrict data access based on user roles, as covered in the article [row-level security (RLS) with Power BI](service-admin-rls.md), then Power BI must maintain a cache for every role and every tile. The number of tile caches multiplies by the number of roles.
 
-> [!NOTE]
-> If your dataset is configured for a live or DirectQuery connection, datasets are refreshed approximately each hour or when interaction with the data occurs. You can manually adjust the *refresh frequency* in the *Scheduled cache refresh* option in the Power BI service.
-> 
-> 
+The situation can get even more involved if your dataset uses a live connection to an Analysis Services data model with RLS, as highlighted in the tutorial [Dynamic row level security with Analysis services tabular model](desktop-tutorial-row-level-security-onprem-ssas-tabular.md). In this situation, Power BI must maintain and refresh a cache for every tile and every user who ever viewed the dashboard. It is not uncommon that the tile refresh portion of such a data refresh operation far exceeds the time it takes to fetch the data from the source. For more details around tile refresh, see [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md).
 
-| **Data source** | **Live/DirectQuery** | **User configured manual or scheduled refresh** | **Gateway required** |
-| --- | --- | --- | --- |
-| Analysis Services Tabular |Yes |Yes |Yes |
-| Analysis Services Multidimensional |Yes |Yes |Yes |
-| SQL Server |Yes |Yes |Yes |
-| SAP HANA |Yes |Yes |Yes |
-| Oracle |Yes |Yes |Yes |
-| Teradata |Yes |Yes |Yes |
+#### Refresh of report visuals
 
-To learn more, see [On-premises data gateway](service-gateway-onprem.md)
+This refresh process is less important because it is only relevant for live connections to Analysis Services. For these connections, Power BI caches the last state of the report visuals so that when you view the report again, Power BI does not have to query the Analysis Services tabular model. When you interact with the report, such as by changing a report filter, Power BI queries the tabular model and updates the report visuals automatically. If you suspect that a report is showing stale data, you can also select the Refresh button of the report to trigger a refresh of all report visuals, as the following screenshot illustrates.
 
-## Databases in the cloud
-With DirectQuery, there is a direct connection between Power BI and the database in the cloud. When you interact with a visualization, queries are sent from Power BI directly to the database. Updated data is then returned and visualizations are updated. And, because both the Power BI service and the data source are in the cloud, there is no need for a Personal Gateway.
+![Refresh report visuals](media/refresh-data/refresh-report-visuals.png)
 
-If there is no user interaction in a visualization, data is refreshed automatically approximately every hour. You can change that refresh frequency using the *Scheduled cache refresh* option, and set the refresh frequency.
+## Review data infrastructure dependencies
 
-To set the frequency, select the **gear** icon in the upper right corner of the Power BI service, then select **Settings**.
+Regardless of storage modes, no data refresh can succeed unless the underlying data sources are accessible. Your data sources might reside on-premises or in the cloud, or both.
 
-![](media/refresh-data/refresh-data_2.png)
+There are three main data access scenarios:
 
-The **Settings** page appears, where you can select the dataset for which you want to adjust the frequency. On that page, select the **Datasets** tab along the top.
+- A dataset uses data sources that reside on-premises
+- A dataset uses data sources in the cloud
+- A dataset uses data from both, on-premises and cloud sources
 
-![](media/refresh-data/refresh-data_3.png)
+### Connecting to on-premises data sources
 
-Select the dataset, and in the right pane you'll see a collection of options for that dataset. For the DirectQuery/Live connection, you can set the refresh frequency from 15 minutes to weekly using the associated drop-down menu, as shown in the following image.
+If your dataset uses a data source that Power BI can't access over a direct network connection, you must configure a gateway connection for this dataset before you can enable a refresh schedule or perform an on-demand data refresh. For more information about data gateways and how they work, see [What are on-premises data gateways?](service-gateway-getting-started.md)
 
-![](media/refresh-data/refresh-data_1.png)
+You have the following options:
 
-| **Data source** | **Live/DirectQuery** | **User configured manual or scheduled refresh** | **Gateway required** |
-| --- | --- | --- | --- |
-| SQL Azure Data Warehouse |Yes |Yes |No |
-| Spark on HDInsight |Yes |Yes |No |
+- Choose an enterprise data gateway with the required data source definition
+- Deploy a personal data gateway
 
-To learn more, see [Azure and Power BI](service-azure-and-power-bi.md).
+Note: You can find a list of data source types that require a data gateway in the article [Manage your data source - Import/Scheduled Refresh](service-gateway-enterprise-manage-scheduled-refresh.md).
 
-## Real-time dashboards
-Real-time dashboards use the Microsoft Power BI REST API, or Microsoft Stream Analytics, to make sure the data is up-to-date. Since real time dashboards do not require users to configure refresh, they are outside the scope of this article.
+#### Using an enterprise data gateway
 
-| **Data source** | **Automatic** | **User configured manual or scheduled refresh** | **Gateway required** |
-| --- | --- | --- | --- |
-| Custom apps developed with the Power BI Rest API or Microsoft Stream Analytics |Yes, live streaming |No |No |
+Microsoft recommends using an enterprise data gateway instead of a personal gateway to connect a dataset to an on-premises data source. Make sure the gateway is properly configured, which means the gateway must have the latest updates and all required data source definitions. A data source definition provides Power BI with the connection information for a given source, including connection endpoints, authentication mode, and credentials. For more information about managing data sources on a gateway, see [Manage your data source - import/scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md).
+
+Connecting a dataset to an enterprise gateway is relatively straightforward if you are a gateway administrator. With admin permissions, you can promptly update the gateway and add missing data sources, if necessary. In fact, you can add a missing data source to your gateway straight from the dataset settings page. Expand the toggle button to view the data sources and select the **Add to gateway** link, as in the following screenshot. If you are not a gateway administrator, on the other hand, use the displayed contact information to send a request to a gateway admin for adding the required data source definition.
+
+![Add to gateway](media/refresh-data/add-to-gateway.png)
+
+Note: A dataset can only use a single gateway connection. In other words, it is not possible to access on-premises data sources across multiple gateway connections. Accordingly, you must add all required data source definitions to the same gateway.
+
+#### Deploying a personal data gateway
+
+If you have no access to an enterprise data gateway and you're the only person who manages datasets so you don't need to share data sources with others, you can deploy a data gateway in personal mode. In the **Gateway connection** section, under **You have no personal gateways installed** , select **Install now**. The personal data gateway has several limitations as documented in [On-premises data gateway (personal mode)](service-gateway-personal-mode.md).
+
+Unlike for an enterprise data gateway, you don't need to add data source definitions to a personal gateway. Instead, you manage the data source configuration by using the **Data source credentials** section in the dataset settings, as the following screenshot illustrates.
+
+![Configure data source credentials for gateway](media/refresh-data/configure-data-source-credentials-gateway.png)
+
+Note: The personal data gateway does not support datasets in DirectQuery/LiveConnect mode. The dataset settings page might prompt you to install it, but if you only have a personal gateway, you can't configure a gateway connection. Make sure you have an enterprise data gateway to support these types of datasets.
+
+### Accessing cloud data sources
+
+Datasets that use cloud data sources, such as Azure SQL DB, don't require a data gateway if Power BI can establish a direct network connection to the source. Accordingly, you can manage the configuration of these data sources by using the **Data source credentials** section in the dataset settings. As the following screenshot shows, you don't need to configure a gateway connection.
+
+![Configure data source credentials without a gateway](media/refresh-data/configure-data-source-credentials.png)
+
+### Accessing on-premises and cloud sources in the same source query
+
+A dataset can get data from multiple sources, and these sources can reside on-premises or in the cloud. However, a dataset can only use a single gateway connection, as mentioned earlier. While cloud data sources don't necessarily require a gateway, a gateway is required if a dataset connects to both on-premises and cloud sources in a single mashup query. In this scenario, Power BI must use a gateway for the cloud data sources as well. The following diagram illustrates how such a dataset accesses its data sources.
+
+![Cloud and on-premises data sources](media/refresh-data/cloud-on-premises-data-sources-diagram.png)
+
+Note: If a dataset uses separate mashup queries to connect to on-premises and cloud sources, Power BI uses a gateway connection to reach the on-premises sources and a direct network connection to the cloud sources. If a mashup query merges or appends data from on-premises and cloud sources, Power BI switches to the gateway connection even for the cloud sources.
+
+Power BI datasets rely on Power Query to access and retrieve source data. The following mashup listing shows a basic example of a query that merges data from an on-premises source and a cloud source.
+
+```
+Let
+
+    OnPremSource = Sql.Database("on-premises-db", "AdventureWorks"),
+
+    CloudSource = Sql.Databases("cloudsql.database.windows.net", "AdventureWorks"),
+
+    TableData1 = OnPremSource{[Schema="Sales",Item="Customer"]}[Data],
+
+    TableData2 = CloudSource {[Schema="Sales",Item="Customer"]}[Data],
+
+    MergedData = Table.NestedJoin(TableData1, {"BusinessEntityID"}, TableData2, {"BusinessEntityID"}, "MergedData", JoinKind.Inner)
+
+in
+
+    MergedData
+```
+
+There are two options to configure a data gateway to support merging or appending data from on-premises and cloud sources:
+
+- Add a data source definition for the cloud source to the data gateway in addition to the on-premises data sources.
+- Enable the checkbox **Allow user's cloud data sources to refresh through this gateway cluster**.
+
+![Refresh through gateway cluster](media/refresh-data/refresh-gateway-cluster.png)
+
+If you enable the checkbox **Allow user's cloud data sources to refresh through this gateway cluster in the gateway configuration** , as in the screenshot above, Power BI can use the configuration that the user defined for the cloud source under **Data source credentials** in the dataset settings. This can help to lower the gateway configuration overhead. On the other hand, if you want to have greater control over the connections that your gateway establishes, you should not enable this checkbox. In this case, you must add an explicit data source definition for every cloud source that you want to support to your gateway. It is also possible to enable the checkbox and add explicit data source definitions for your cloud sources to a gateway. In this case, the gateway uses the data source definitions for all matching sources.
+
+### Configuring query parameters
+
+The mashup or M queries you create by using Power Query can vary in complexity from trivial steps to parameterized constructs. The following listing shows a small sample mashup query that uses two parameters called _SchemaName_ and _TableName_ to access a given table in an AdventureWorks database.
+
+```
+let
+
+    Source = Sql.Database("SqlServer01", "AdventureWorks"),
+
+    TableData = Source{[Schema=SchemaName,Item=TableName]}[Data]
+
+in
+
+    TableData
+```
+
+Note: Query parameters are only supported for Import mode datasets. DirectQuery/LiveConnect mode does not support query parameter definitions.
+
+To ensure that a parameterized dataset accesses the correct data, you must configure the mashup query parameters in the dataset settings. You can also update the parameters programmatically by using the [Power BI REST API](/rest/api/power-bi/datasets/updateparametersingroup). The following screenshot shows the user interface to configure the query parameters for a dataset that uses the above mashup query.
+
+![Configure query parameters](media/refresh-data/configure-query-parameters.png)
+
+Note: Power BI currently does not support parameterized data source definitions, also known as dynamic data sources. For example, you can't parameterize the data access function Sql.Database("SqlServer01", "AdventureWorks"). If your dataset relies on dynamic data sources, Power BI informs you that it detected unknown or unsupported data sources. You must replace the parameters in your data access functions with static values if you want Power BI to be able to identify and connect to the data sources. For more information, see [Troubleshooting unsupported data source for refresh](service-admin-troubleshoot-unsupported-data-source-for-refresh.md).
 
 ## Configure scheduled refresh
-To learn how to configure scheduled refresh, see [Configure scheduled refresh](refresh-scheduled-refresh.md)
 
-## Common data refresh scenarios
-Sometimes the best way to learn about data refresh in Power BI is to look at examples. Here are some of the more common data refresh scenarios:
+Establishing connectivity between Power BI and your data sources is by far the most challenging task in configuring a data refresh. The remaining steps are relatively straightforward and include setting the refresh schedule and enabling refresh failure notifications. For step-by-step instructions, see the how-to guide [Configuring scheduled refresh](refresh-scheduled-refresh.md).
 
-### Excel workbook with tables of data
-You have an Excel workbook with several tables of data, but none of them are loaded into the Excel data model. You use Get Data to upload the workbook file from your local drive into Power BI, and create a dashboard. But, now you’ve made some changes to a couple of the workbook’s tables on your local drive, and you want to update your dashboard in Power BI with the new data.
+### Setting a refresh schedule
 
-Unfortunately, refresh is not supported in this scenario. In order to refresh the dataset for your dashboard, you will have to re-upload the workbook. However, there’s a really great solution: Put your workbook file on OneDrive, or SharePoint Online!
+The **Scheduled refresh** section is where you define the frequency and time slots to refresh a dataset. As mentioned earlier, you can configure up to eight daily time slots if your dataset is on shared capacity, or 48 time slots on Power BI Premium. The following screenshot shows a refresh schedule on a twelve-hour interval.
 
-When you connect to a file on OneDrive, or SharePoint Online, your reports and dashboards will show data as it is in the file. In this case, your Excel workbook. Power BI automatically checks the file, about every hour, for updates. If you make changes to the workbook (stored in OneDrive or SharePoint Online), those changes are reflected in your dashboard and reports within an hour. You don’t need to setup refresh at all. However, if you need to see your updates in Power BI immediately, you can manually refresh the dataset by using Refresh Now.
+![Configure scheduled refresh](media/refresh-data/configure-scheduled-refresh.png)
 
-To learn more, see [Excel data in Power BI](service-excel-workbook-files.md), or [Refresh a dataset created from an Excel workbook on OneDrive](refresh-excel-file-onedrive.md).
+Having configured a refresh schedule, the dataset settings page informs you about the next refresh time, as in the screenshot above. If you want to refresh the data sooner, such as to test your gateway and data source configuration, perform an on-demand refresh by using the Refresh Now option in the dataset menu in the left navigation pane. On-demand refreshes don't affect the next scheduled refresh time, but they count against the daily refresh limit, as explained earlier in this article.
 
-### Excel workbook connects to a SQL database in your company
-Let’s say you have an Excel workbook named SalesReport.xlsx on your local computer. Power Query in Excel was used to connect to a SQL database on a server in your company and query for sales data that is loaded into the data model. Each morning, you open the workbook and hit Refresh to update your PivotTables.
+Note also that the configured refresh time might not be the exact time when Power BI starts the next scheduled process. Power BI starts scheduled refreshes on a best effort basis. The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner.
 
-Now you want to explore your sales data in Power BI, so you use Get Data to connect to and upload the SalesReport.xlsx workbook from your local drive.
+Note: Power BI deactivates your refresh schedule after four consecutive failures or when the service detects an unrecoverable error that requires a configuration update, such as invalid or expired credentials. It is not possible to change the consecutive failures threshold.
 
-In this case, you can manually refresh the data in the SalesReport.xlsx dataset or setup a refresh schedule. Because the data really comes from the SQL database in your company, you’ll need to download and install a gateway. Once you’ve installed and configured the gateway, you’ll need to go into the SalesReport dataset’s settings and sign in to the data source; but you’ll only have to do this once. You can then setup a refresh schedule so Power BI automatically connects to the SQL database and gets updated data. Your reports and dashboards will also be updated automatically.
+### Getting refresh failure notifications
 
-> [!NOTE]
-> This will only update the data within the dataset in the Power BI service. Your local file will not be updated as part of the refresh.
-> 
-> 
+By default, Power BI sends refresh failure notifications through email to the dataset owner so that the owner can act in a timely manner should refresh issues occur. Power BI also sends you a notification when the service disables your schedule due to consecutive failures. Microsoft recommends that you leave the checkbox **Send refresh failure notification emails to me** enabled.
 
-To learn more, see  [Excel data in Power BI](service-excel-workbook-files.md), [Power BI Gateway - Personal](service-gateway-personal-mode.md), [On-premises data gateway](service-gateway-onprem.md), [Refresh a dataset created from an Excel workbook on a local drive](refresh-excel-file-local-drive.md).
+Note that Power BI not only sends notifications on refresh failures but also when the service pauses a scheduled refresh due to inactivity. After two months, when no user has visited any dashboard or report built on the dataset, Power BI considers the dataset inactive. In this situation, Power BI sends an email message to the dataset owner indicating that the service disabled the refresh schedule for the dataset. See the following screenshot for an example of such a notification.
 
-### Power BI Desktop file with data from an OData feed
-In this case, you use Get Data in Power BI Desktop to connect to and import census data from an OData feed.  You create several reports in Power BI Desktop, then name the file WACensus and save it on a share in your company. You then publish the file to the Power BI service.
+![Email for paused refresh](media/refresh-data/email-paused-refresh.png)
 
-In this case, you can manually refresh the data in the WACensus dataset or setup a refresh schedule. Because the data in the data source comes from an OData feed online, you do not need to install a gateway, but you will need to go into the WACensus dataset’s settings and sign in to the OData data source. You can then setup a refresh schedule so Power BI automatically connects to the OData feed and gets updated data. Your reports and dashboards will also be updated automatically.
+To resume scheduled refresh, visit a report or dashboard built using this dataset or manually refresh the dataset using the **Refresh Now** option.
 
-To learn more, see [Publish from Power BI Desktop](desktop-upload-desktop-files.md), [Refresh a dataset created from a Power BI Desktop file on a local drive](refresh-desktop-file-local-drive.md), [Refresh a dataset created from a Power BI Desktop file on OneDrive](refresh-desktop-file-onedrive.md).
+### Checking refresh status and history
 
-### Shared content pack from another user in your organization
-You’ve connected to an organizational content pack. It includes a dashboard, several reports, and a dataset.
+In addition to failure notifications, it is a good idea to check your datasets periodically for refresh errors. A quick way is to view the list of datasets in a workspace. Datasets with errors show a small warning icon. Select the warning icon to obtain additional information, as in the following screenshot. For more information about troubleshooting specific refresh errors, see [Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md).
 
-In this scenario, you cannot setup refresh for the dataset. The data analyst who created the content pack is responsible for making sure the dataset is refreshed, depending on the data sources used.
+![Refresh status warning](media/refresh-data/refresh-status-warning.png)
 
-If your dashboards and reports from the content pack aren’t updating, you’ll want to talk to the data analyst who created the content pack.
+The warning icon helps to indicate current dataset issues, but it is also a good idea to check the refresh history occasionally. As the name implies, the refresh history enables you to review the success or failure status of past synchronization cycles. For example, a gateway administrator might have updated an expired set of database credentials. As you can see in the following screenshot, the refresh history shows when an affected refresh started working again.
 
-To learn more, see [Introduction to organizational content packs](service-organizational-content-pack-introduction.md), [Work with organizational content packs](service-organizational-content-pack-copy-refresh-access.md).
+![Refresh history messages](media/refresh-data/refresh-history-messages.png)
 
-### Content pack from an online service provider like Salesforce
-In Power BI you used Get Data to connect to and import your data from an online service provider like Salesforce. Well, not much to do here. Your Salesforce data set is automatically scheduled to refresh once a day. 
+Note: You can find a link to display the refresh history in the dataset settings. You can also retrieve the refresh history programmatically by using the [Power BI REST API](/rest/api/power-bi/datasets/getrefreshhistoryingroup). By using a custom solution, you can monitor the refresh history of multiple datasets in a centralized way.
 
-Like most online service providers, Salesforce updates data once a day, usually at night. You can manually refresh your Salesforce dataset, or setup a refresh schedule, but it’s not necessary because Power BI will automatically refresh the dataset and your reports and dashboards will be updated too.
+## Best Practices
 
-To learn more, see [Salesforce content pack for Power BI](service-connect-to-salesforce.md).
+Checking the refresh history of your datasets regularly is one of the most important best practices you can adopt to ensure that your reports and dashboards use current data. If you discover issues, address them promptly and follow up with data source owners and gateway administrators if necessary.
 
-## Troubleshooting
-When things go wrong, it’s usually because Power BI can’t sign into data sources, or the dataset connects to an on-premises data source and the gateway is offline. Make sure Power BI can sign into data sources. If a password you use to sign into a data source changes, or Power BI gets signed out from a data source, be sure to try signing into your data sources again in Data Source Credentials.
+In addition, consider the following recommendations to establish and maintain reliable data refresh processes for your datasets:
 
-For more information about troubleshooting, see [Tools for troubleshooting refresh issues](service-gateway-onprem-tshoot.md) and [Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md).
+- Schedule your refreshes for less busy times, especially if your datasets are on Power BI Premium. If you distribute the refresh cycles for your datasets across a broader time window, you can help to avoid peaks that might otherwise overtax available resources. Delays starting a refresh cycle are an indicator of resource overload. If a Premium capacity is completely exhausted, Power BI might even skip a refresh cycle.
+- Keep refresh limits in mind. If the source data changes frequently or the data volume is substantial, consider using DirectQuery/LiveConnect mode instead of Import mode if the increased load at the source and the impact on query performance are acceptable. Avoid constantly refreshing an Import mode dataset. However, DirectQuery/LiveConnect mode has several limitations, such as a one-million-row limit for returning data and a 225 seconds response time limit for running queries, as documented in [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md). These limitations might require you to use Import mode nonetheless. For very large data volumes, consider the use of [aggregations in Power BI](desktop-aggregations.md).
+- Verify that your dataset refresh time does not exceed the maximum refresh duration. Use Power BI Desktop to check the refresh duration. If it takes more than 2 hours, consider moving your dataset to Power BI Premium. Your dataset might not be refreshable on shared capacity. Also consider using [incremental refresh in Power BI Premium](service-premium-incremental-refresh.md) for datasets that are larger than 1GB or take several hours to refresh.
+- Optimize your datasets to include only those tables and columns that your reports and dashboards use. Optimize your mashup queries and, if possible, avoid dynamic data source definitions and expensive DAX calculations. Specifically avoid DAX functions that test every row in a table because of the high memory consumption and processing overhead.
+- Apply the same privacy settings as in Power BI Desktop to ensure that Power BI can generate efficient source queries. Keep in mind that Power BI Desktop does not publish privacy settings. You must manually reapply the settings in the data source definitions after publishing your dataset.
+- Limit the number of visuals on your dashboards, especially if you use [row-level security (RLS)](service-admin-rls.md). As explained earlier in this article, an excessive number of dashboard tiles can significantly increase the refresh duration.
+- Use a reliable enterprise data gateway deployment to connect your datasets to on-premises data sources. If you notice gateway-related refresh failures, such as gateway unavailable or overloaded, follow up with gateway administrators to either add additional gateways to an existing cluster or deploy a new cluster (scale up versus scale out).
+- Use separate data gateways for Import datasets and DirectQuery/LiveConnect datasets so that the data imports during scheduled refresh don't impact the performance of reports and dashboards on top of DirectQuery/LiveConnect datasets, which query the data sources with each user interaction.
+- Ensure that Power BI can send refresh failure notifications to your mailbox. Spam filters might block the email messages or move them into a separate folder where you might not notice them immediately.
 
 ## Next steps
 [Tools for troubleshooting refresh issues](service-gateway-onprem-tshoot.md)  
