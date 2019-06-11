@@ -1,5 +1,5 @@
 ---
-title: Card visualizations (aka big number tiles)
+title: Card visualizations (big number tiles)
 description: Create a Card visualization in Power BI
 author: mihart
 manager: kvivek
@@ -85,9 +85,9 @@ You have many options for changing labels, text, color and more. The best way to
 
 The Formatting pane is available when interacting with the card in a report. If you make changes to a card in a report, re-pin it to see those changes on your dashboard. 
 
-1. Start by selecting the paintroller icon to open the Formatting pane. 
+1. Start by selecting the paint roller icon to open the Formatting pane. 
 
-    ![card with paintroller outlined](media/power-bi-visualization-card/power-bi-format-card-2.png)
+    ![card with paint roller outlined](media/power-bi-visualization-card/power-bi-format-card-2.png)
 2. With the card selected, expand **Data label** and change the color, size, and font family. If you had thousands of stores, you could use **Display units** to show the number of stores by thousands and control the decimal places as well. For example, 125.8K instead of 125,832.00.
 
 3.  Expand **Category label** and change the color and size.

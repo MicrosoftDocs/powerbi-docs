@@ -70,7 +70,7 @@ To change color based on a value, open the Formatting pane and select the **Cond
 
 ![select the conditional formatting option by clicking the three vertical dots](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting.png)
 
-In the Defalt colors pane, use the dropdowns to identify the fields to use for conditional formatting. In this example, we've selected the **Sales fact** > **Total Units** field and selected light blue for the **Lowest value** and dark blue for **Highest value**. 
+In the Default colors pane, use the dropdowns to identify the fields to use for conditional formatting. In this example, we've selected the **Sales fact** > **Total Units** field and selected light blue for the **Lowest value** and dark blue for **Highest value**. 
 
 ![settings for conditional formatting by data color](media/service-tips-and-tricks-for-color-formatting/power-bi-conditional-formatting2-new.png)
 
