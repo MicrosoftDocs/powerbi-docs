@@ -21,11 +21,11 @@ This article gives a quick introduction to creating a visualization in a report.
 
 ## Open a report and add a new page
 
-1. Open a [report in Editing View](../consumer/end-user-reading-view.md).
+1. Open a [report in Editing View](../service-interact-with-a-report-in-editing-view).
 
     This tutorial uses the [Sales and Marketing sample](../sample-datasets.md).
 
-1. If the Fields pane isn't visible, select the arrow icon to open it.
+1. If the **Fields** pane isn't visible, select the arrow icon to open it.
 
    ![](media/power-bi-report-add-visualizations-i/pbi_nancy_fieldsfiltersarrow.png)
 
@@ -35,17 +35,17 @@ This article gives a quick introduction to creating a visualization in a report.
 
 1. Create a visualization by selecting a field from the **Fields** pane.
 
-    **Start with a numeric field** like **SalesFact** > **Sales $**. Power BI creates a column chart with a single column.
+    Start with a numeric field like **SalesFact** > **Sales $**. Power BI creates a column chart with a single column.
 
     ![Screenshot of a column chart with a single column.](media/power-bi-report-add-visualizations-i/pbi_onecolchart.png)
 
-   **Or, start with a category field**, such as **Name** or **Product**: Power BI creates a Table and adds that field to the **Values** well.
+    Or, start with a category field, such as **Name** or **Product**. Power BI creates a table and adds that field to the **Values** well.
 
-   ![GIF of a person selecting Product and then category to create a table.](media/power-bi-report-add-visualizations-i/pbi_agif_createchart3.gif)
+    ![GIF of a person selecting Product and then category to create a table.](media/power-bi-report-add-visualizations-i/pbi_agif_createchart3.gif)
 
-   **Or, start with a geography field**, such as **Geo** > **City**. Power BI and Bing Maps create a map visualization.
+    Or, start with a geography field, such as **Geo** > **City**. Power BI and Bing Maps create a map visualization.
 
-   ![Screenshot of a map visualization.](media/power-bi-report-add-visualizations-i/power-bi-map.png)
+    ![Screenshot of a map visualization.](media/power-bi-report-add-visualizations-i/power-bi-map.png)
 
 1. Create a visualization and then change its type. Select **Product** > **Category** and then **Product** > **Count of Product** to add them both to the **Values** well.
 
