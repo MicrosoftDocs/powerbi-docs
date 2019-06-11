@@ -65,7 +65,7 @@ To create the template app, you need permissions to create one. See the Power BI
 
 To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Cloud Marketplace Publisher](https://docs.microsoft.com/azure/marketplace/become-publisher).
  > [!NOTE] 
- > Template apps submissions are managed in [Cloud Partner Portal](https://cloudpartner.azure.com). Use the same Microsoft Developer Center registration account to sign in to the . You should have only one Microsoft account for your AppSource offerings. Accounts shouldn't be specific to individual services or offers.
+ > Template apps submissions are managed in [Cloud Partner Portal](https://cloudpartner.azure.com). Use the same Microsoft Developer Center registration account to sign in. You should have only one Microsoft account for your AppSource offerings. Accounts shouldn't be specific to individual services or offers.
 
 ## Tips 
 
