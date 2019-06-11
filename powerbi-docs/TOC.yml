@@ -689,24 +689,6 @@
         href: service-machine-learning-automated.md              
     - name: Paginated reports in Power BI
       items: 
-      - name: What are paginated reports? (Preview)
-        href: paginated-reports-report-builder-power-bi.md
-      - name: Paginated reports FAQ (Preview)
-        href: paginated-reports-faq.md
-      - name: Create a paginated report and upload it (Preview)
-        href: paginated-reports-quickstart-aw.md
-      - name: Get around Report Design View (Preview)
-        href: paginated-reports-report-design-view.md
-      - name: Enter data directly in a paginated report (Preview)
-        href: paginated-reports-enter-data.md
-      - name: Create an embedded data source (Preview)
-        href: paginated-reports-embedded-data-source.md
-      - name: Create an embedded dataset (Preview)
-        href: paginated-reports-create-embedded-dataset.md
-      - name: Create parameters (Preview)
-        href: paginated-reports-parameters.md
-      - name: Publish a paginated report (Preview)
-        href: paginated-reports-save-to-power-bi-service.md
       - name: View a paginated report (Preview)
         href: paginated-reports-view-power-bi-service.md
       - name: Interact with parameters (Preview)
@@ -931,6 +913,52 @@
       href: service-admin-premium-restart.md
     - name: Connect to datasets with client applications and tools
       href: service-premium-connect-tools.md
+- name: Power BI Paginated Report Builder
+  items: 
+  - name: Overview
+    items: 
+    - name: What are paginated reports?
+      href: paginated-reports-report-builder-power-bi.md
+    - name: Report Builder in Power BI
+      href: report-builder-power-bi.md
+  - name: Tutorials
+    items: 
+    - name: Create a paginated report and upload Interact
+      href: paginated-reports-quickstart-aw.md
+  - name: Concepts
+    items: 
+    - name: Get around Report Design View
+      href: paginated-reports-report-design-view.md
+    - name: Planning a report
+      href: report-builder-planning-report.md
+    - name: Report Builder data
+      href: report-builder-data.md
+    - name: Design tips
+      href: report-builder-design-tips.md
+    - name: Tables, matrixes, lists
+      href: report-builder-tables-matrices-lists.md
+    - name: Parameters
+      href: report-builder-parameters.md
+    - name: Expressions
+      href: report-builder-expressions.md
+    - name: Expression examples
+      href: report-builder-expression-examples.md
+    - name: Previewing reports
+      href: report-builder-previewing-reports.md
+    - name: Paginated reports FAQ
+      href: paginated-reports-faq.md
+  - name: How to
+    items: 
+    - name: Enter data directly in a paginated report
+      href: paginated-reports-enter-data.md
+    - name: Create an embedded data source
+      href: paginated-reports-embedded-data-source.md
+    - name: Create an embedded dataset
+      href: paginated-reports-create-embedded-dataset.md
+    - name: Create parameters
+      href: paginated-reports-parameters.md
+    - name: Publish a paginated report
+      href: paginated-reports-save-to-power-bi-service.md
 - name: Power BI for developers
   items:
   - name: "What can developers do with Power BI"
