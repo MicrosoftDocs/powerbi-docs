@@ -1,5 +1,5 @@
 ---
-title: "Enter data directly in a paginated report in Report Builder (Preview)"
+title: "Enter data directly in a paginated report in Report Builder"
 description: In this article, you see how you can enter data directly into a paginated report in Report Builder. 
 author: maggiesMSFT
 ms.author: maggies
@@ -12,7 +12,7 @@ ms.date: 06/06/2019
 ms.author: maggies
 ---
 
-# Enter data directly in a paginated report in Report Builder (Preview) - Power BI
+# Enter data directly in a paginated report in Report Builder - Power BI
 
 In this article, you learn about a feature in the new version of SQL Server 2016 Report Builder that lets you enter data directly into an RDL report as an embedded dataset.  This feature is similar to Power BI Desktop. You can type the data directly in a dataset in your report, or paste it from another program like Microsoft Excel. After you've created a dataset by entering data, you can use it just like you would any other embedded dataset you've created. Plus you can add more than one table and use one as a filter for the other. This feature is especially useful for small, static datasets you might need to use in your report, like report parameters.
  
@@ -72,7 +72,7 @@ You can use your dataset as the basis for data visualizations in your report. Yo
 
 ## Upload the paginated report to the Power BI service
 
-Now that paginated reports are supported in the Power BI service in preview, you can upload your paginated report to a Premium capacity. See [Upload a paginated report](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report) for details.
+Now that paginated reports are supported in the Power BI service, you can upload your paginated report to a Premium capacity. See [Upload a paginated report](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report) for details.
 
 ## Upload the paginated report to a report server
 
@@ -94,5 +94,5 @@ That’s it – you can now publish reports that use this new functionality to y
 
 ## Next steps
 
-- [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 - [What is Power BI Report Server?](report-server/get-started.md)

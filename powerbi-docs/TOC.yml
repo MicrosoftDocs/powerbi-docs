@@ -919,47 +919,47 @@
   items: 
   - name: Overview
     items: 
-    - name: What are paginated reports? (Preview)
+    - name: What are paginated reports?
       href: paginated-reports-report-builder-power-bi.md
-    - name: Report Builder in Power BI (Preview)
+    - name: Report Builder in Power BI
       href: report-builder-in-power-bi.md
   - name: Tutorials
     items: 
-    - name: Create a paginated report and upload it (Preview)
+    - name: Create a paginated report and upload Interact
       href: paginated-reports-quickstart-aw.md
   - name: Concepts
     items: 
-    - name: Get around Report Design View (Preview)
+    - name: Get around Report Design View
       href: paginated-reports-report-design-view.md
-    - name: Planning a report (Preview)
+    - name: Planning a report
       href: report-builder-planning-report.md
-    - name: Report Builder data (Preview)
+    - name: Report Builder data
       href: report-builder-data.md
-    - name: Design tips (Preview)
+    - name: Design tips
       href: report-builder-design-tips.md
-    - name: Tables, matrixes, lists (Preview)
+    - name: Tables, matrixes, lists
       href: report-builder-tables-matrices-lists.md
-    - name: Parameters (Preview)
+    - name: Parameters
       href: report-builder-parameters.md
-    - name: Expressions (Preview)
+    - name: Expressions
       href: report-builder-expressions.md
-    - name: Expression examples (Preview)
+    - name: Expression examples
       href: report-builder-expression-examples.md
-    - name: Previewing reports (Preview)
+    - name: Previewing reports
       href: report-builder-previewing-reports.md
-    - name: Paginated reports FAQ (Preview)
+    - name: Paginated reports FAQ
       href: paginated-reports-faq.md
   - name: How to
     items: 
-    - name: Enter data directly in a paginated report (Preview)
+    - name: Enter data directly in a paginated report
       href: paginated-reports-enter-data.md
-    - name: Create an embedded data source (Preview)
+    - name: Create an embedded data source
       href: paginated-reports-embedded-data-source.md
-    - name: Create an embedded dataset (Preview)
+    - name: Create an embedded dataset
       href: paginated-reports-create-embedded-dataset.md
-    - name: Create parameters (Preview)
+    - name: Create parameters
       href: paginated-reports-parameters.md
-    - name: Publish a paginated report (Preview)
+    - name: Publish a paginated report
       href: paginated-reports-save-to-power-bi-service.md
 - name: Power BI for developers
   items:

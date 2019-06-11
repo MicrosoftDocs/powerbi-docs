@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Create a paginated report and upload it to the Power BI service (Preview)"
+title: "Tutorial: Create a paginated report and upload it to the Power BI service"
 description: In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Report Builder to create a paginated report. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service.  
 author: maggiesMSFT
 ms.author: maggies
@@ -11,9 +11,9 @@ ms.topic: tutorial
 ms.date: 11/06/2018
 ---
 
-# Tutorial: Create a paginated report and upload it to the Power BI service (Preview)
+# Tutorial: Create a paginated report and upload it to the Power BI service
 
-In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Power BI Report Builder to create a paginated report with a table that wraps to multiple pages. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service. Paginated reports in the Power BI service are currently in preview.
+In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Power BI Report Builder to create a paginated report with a table that wraps to multiple pages. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service.
 
 ![Paginated report in the Power BI service](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
@@ -324,5 +324,5 @@ Now that you've created this paginated report, it's time to upload it to the Pow
 
 ## Next steps
 
-[What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
+[What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 

@@ -511,5 +511,5 @@ For more information about simple and complex expressions, where you can use exp
   
 ## Next steps
 
-- [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
   

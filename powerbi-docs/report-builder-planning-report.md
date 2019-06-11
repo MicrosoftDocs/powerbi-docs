@@ -43,4 +43,4 @@ Consider whether you want to hide report items, including data regions, groups a
   
 ## Next steps
 
-- [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
