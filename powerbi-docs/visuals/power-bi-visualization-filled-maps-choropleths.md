@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 # Filled maps (choropleths) in Power BI
 A filled map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region.  Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).    
 
-![US map](media/power-bi-visualization-filled-maps-choropleths/large_map.png)
+![US map](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
 
 ## What is sent to Bing
 Power BI integrates with Bing to provide default map coordinates (a process called geo-coding). When you create a map visualization in Power BI service or Power BI Desktop, the data in the **Location**, **Latitude**, and **Longitude** buckets (that is being used to create that visualization) is sent to Bing.
@@ -120,7 +120,7 @@ Highlighting a location in a filled Map cross-filters the other visualizations o
 ## Considerations and troubleshooting
 Map data can be ambiguous.  For example, there's a Paris, France, but there's also a Paris, Texas. Your geographic data is probably stored in separate columns – a column for city names, a column for state or province names, etc. – so Bing may not be able to tell which Paris is which. If your dataset already contains latitude and longitude data, Power BI has special fields to help make the map data unambiguous. Just drag the field that contains your latitude data into the Visualizations \> Latitude area.  And do the same for your longitude data.    
 
-![Visualizations and Fields panes](media/power-bi-visualization-filled-maps-choropleths/pbi_latitude.png)
+![Visualizations and Fields panes](media/power-bi-visualization-filled-maps-choropleths/pbi-latitude.png)
 
 If you have permissions to edit the dataset in Power BI Desktop, watch this video for help addressing map ambiguity.
 
