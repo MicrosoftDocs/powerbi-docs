@@ -1,7 +1,7 @@
 ---
 title: Changelog for Power BI Report Server
 description: This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
-ms.author: jtarquino
+ms.author: jaimeta
 author: jtarquino
 manager: kfile
 ms.reviewer: maggies
