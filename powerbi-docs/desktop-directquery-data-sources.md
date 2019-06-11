@@ -20,6 +20,7 @@ The following data sources support DirectQuery in Power BI:
 
 * Amazon Redshift
 * AtScale (Beta)
+* Azure Data Explorer
 * Azure HDInsight Spark
 * [Azure SQL Database](service-azure-sql-database-with-direct-connect.md)
 * [Azure SQL Data Warehouse](service-azure-sql-data-warehouse-with-direct-connect.md)

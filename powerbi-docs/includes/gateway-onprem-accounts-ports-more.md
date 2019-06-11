@@ -15,7 +15,7 @@ If you encounter authentication issues with your proxy server, try changing the 
 
 The gateway creates an outbound connection to Azure Service Bus. It communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 through 9354.  The gateway does not require inbound ports.
 
-It is recommended that you whitelist the IP addresses, for your data region, in your firewall. You can download the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653), which is updated weekly. Alternatively you can obtain the list of required ports by performing the [Network port test](../service-gateway-onprem-tshoot.md#network-ports-test) on the on-premises data gateway application. The gateway will communicate with Azure Service Bus using the IP address along with the fully qualified domain name (FQDN). If you are forcing the gateway to communicate using HTTPS it will strictly use FQDN only, and no communication will happen using IP addresses.
+It is recommended that you add the IP addresses to an allow list, for your data region, in your firewall. You can download the [Microsoft Azure Datacenter IP list](https://www.microsoft.com/download/details.aspx?id=41653), which is updated weekly. Alternatively you can obtain the list of required ports by performing the [Network port test](../service-gateway-onprem-tshoot.md#network-ports-test) on the on-premises data gateway application. The gateway will communicate with Azure Service Bus using the IP address along with the fully qualified domain name (FQDN). If you are forcing the gateway to communicate using HTTPS it will strictly use FQDN only, and no communication will happen using IP addresses.
 
 
 > [!NOTE]
@@ -43,7 +43,12 @@ Here is a listing of the fully qualified domain names used by the gateway.
 
 ## Forcing HTTPS communication with Azure Service Bus
 
-You can force the gateway to communicate with Azure Service Bus using HTTPS instead of direct TCP. using HTTPS may have an impact on performance. To do so, modify the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file by changing the value from `AutoDetect` to `Https`, as shown in the code snippet directly following this paragraph. That file is located (by default) at *C:\Program Files\On-premises data gateway*.
+You can force the gateway to communicate with Azure Service Bus using HTTPS instead of direct TCP.
+
+> [!NOTE]
+> Starting with the June 2019 release, new installs (not updates) default to HTTPS instead of TCP, based on recommendations from Azure Service Bus.
+
+To force communication over HTTPS, modify the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file by changing the value from `AutoDetect` to `Https`, as shown in the code snippet directly following this paragraph. That file is located (by default) at *C:\Program Files\On-premises data gateway*.
 
 ```xml
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
