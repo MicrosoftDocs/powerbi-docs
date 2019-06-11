@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/11/2018
+ms.date: 06/10/2019
 ms.author: mihart
 
 LocalizationGroup: Transform and shape data
@@ -23,15 +23,15 @@ You can test the **Shape Map** control with the maps that are shipping with this
 
 The **Shape Map** visual is in Preview, and must be enabled in Power BI Desktop. To enable **Shape Map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape Map Visual** checkbox. You'll need to restart Power BI Desktop after you make the selection.
 
-![](media/desktop-shape-map/shape-map_1a.png)
+![enable the Shape map preview feature](media/desktop-shape-map/power-bi-preview-features.png)
 
-Once **Shape Map** is enabled, click the **Shape Map** control from the **Visualizations** pane.
+Once **Shape Map** is enabled, select the **Shape Map** icon from the **Visualizations** pane.
 
-![](media/desktop-shape-map/shape-map_2.png)
+![select the template for shape map](media/desktop-shape-map/power-bi-shape-map-template2.png)
 
 Power BI Desktop creates an empty **Shape Map** visual design canvas.
 
-![](media/desktop-shape-map/shape-map_3.png)
+![an empty shape map appears on your canvas](media/desktop-shape-map/shape-map-3.png)
 
 Take the following steps to create a **Shape Map**:
 
@@ -42,26 +42,23 @@ Take the following steps to create a **Shape Map**:
    > 
    > 
 
-   ![](media/desktop-shape-map/shape-map_3a.png)
+   ![build your shape map](media/desktop-shape-map/shape-map-3a.png)
 2. In the **Format** settings pane, expand **Shape**, and select from the **Standard Maps** drop-down to show your data. At this point, the rendering appears, as shown in the following image.
 
-   ![](media/desktop-shape-map/shape-map_3b.png)
+   ![open the Formatting pane and select Shape](media/desktop-shape-map/shape-map-3b-new.png)
 
    > [!NOTE]
    > In the **Region Keys** section at the end of this article is a collection of tables that have map regions keys you can use to test the **Shape Map** visual.
    > 
    > 
-3. You can then modify the map projection and zooming settings, as well as the colors of data points, from the **Format** settings pane. You can also modify zoom settings. For example, you can change colors, set maximums and minimums, and so on.
-
-   ![](media/desktop-shape-map/shape-map_3d.png)
-4. You can also add a category data column to the **Legend** bucket, and classify the map regions based on categories.
+3. You can then modify the map using the Formatting options such as **Default color**, **Zoom**, and more. And, you can also add a category data column to the **Legend** bucket, and classify the map regions based on categories.
 
 ## Use custom maps
 You can use custom maps with **Shape Map** as long as they are in the **TopoJSON** format. If your map is in another format, you can use online tools such as [**Map Shaper**](http://mapshaper.org/) to convert your *shapefiles* or your *GeoJSON* maps into the **TopoJSON** format.
 
 To use your **TopoJSON** map file, add a ShapeMap visual to your report and add some data to the *Location* and *Color saturation* buckets. Then, in the **Visualizations** pane with the **Format** section selected (shown as (1) in the following image), expand the **Shape** section and select **+ Add Map**.
 
-![](media/desktop-shape-map/shape-map_6.png)
+![open Formatting pane and select Add Map](media/desktop-shape-map/shape-map-6-new.png)
 
 ## Sample Custom Map
 The *Offices of the United States Attorneys* release an annual fiscal report on their litigation and caseload data.  All of their reports can be found in the link below,
@@ -70,11 +67,11 @@ https://www.justice.gov/usao/resources/annual-statistical-reports
 
 Since states can be divided into multiple districts, we have to use a custom shape map.  By importing the **TopoJSON** map of the U.S. judicial districts into **Power BI Desktop**, we can then visualize the annual fiscal district attorney data.  The image below shows an example of this map.
 
-![](media/desktop-shape-map/shape-map_7a.png)
+![custom shape map](media/desktop-shape-map/shape-map-7a.png)
 
 You can do interesting things with the individual state maps as well, and show more detail based on the districts it contains. 
 
-![](media/desktop-shape-map/shape-map_7b.png)
+![Texas shape map](media/desktop-shape-map/shape-map-7b.png)
 
 If you’d like to experiment with this dataset and visualization, you can download the original PBIX file that was used to generate this report using the following link.
 
@@ -83,11 +80,11 @@ If you’d like to experiment with this dataset and visualization, you can downl
 ## Getting map data
 To quickly get data into a model so you can test **Shape Map**, you can copy one of the tables at the end of this article, then select **Enter Data** from the **Home** ribbon.
 
-![](media/desktop-shape-map/shape-map_4.png)
+![In Desktop, select Enter Data](media/desktop-shape-map/shape-map-4-new.png)
 
 If your data has multiple columns, you will need to use an editor like Excel to paste the data, then copy each data column separately. You can then paste the data into Power BI Desktop. The top row is automatically identified as a header.
 
-![](media/desktop-shape-map/shape-map_5.png)
+![Create Table pane](media/desktop-shape-map/shape-map-5.png)
 
 You can enter a new column simply by typing a new column name (in the blank column to the right), then add values in each cell, just like you can do in Excel. When finished, select **Load** and the table is added to the data model for Power BI Desktop.
 
