@@ -67,7 +67,7 @@ In a browser, select this link to open AppSource filtered to Power BI apps:
 
     Or skip this dialog box and access the associated workspace directly via **Workspaces** in the left navigation pane.
     >[!NOTE]
-    >Installing a template app installed both an **Org app** & an **app workspace**
+    >Installing a template app installed both an *organizational app* and an *app workspace*. Read more about [distributing apps in Power BI](service-create-distribute-apps.md).
  
 6. Before you share it with your coworkers, you'll want to connect to your own data. You may also want to modify the report or dashboard to make it work for your organization. You can also add other reports or dashboards at this point.
 
