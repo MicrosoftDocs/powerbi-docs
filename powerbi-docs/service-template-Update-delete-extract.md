@@ -13,6 +13,7 @@ ms.author: tebercov
 
 # Update, delete, and extract template app
 
+Now that your app is in production, you can start over in the test phase, without disrupting the app in production.
 ## Update your app
 
 
