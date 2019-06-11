@@ -71,7 +71,7 @@ In a browser, select this link to open AppSource filtered to Power BI apps:
  
 6. Before you share it with your coworkers, you'll want to connect to your own data. You may also want to modify the report or dashboard to make it work for your organization. You can also add other reports or dashboards at this point.
 
-   In case you pressed an installation link for an app which is not listed on AppSource you will get the validation dialog box confirming your choice.
+   If you select an installation link for an app that isn't listed on AppSource, you get the validation dialog box asking you to confirm your choice.
 
    ![Install app](media/service-template-apps-install-distribute/power-install-unvalidated-dialog.png)
 
