@@ -101,7 +101,7 @@ In this task, we'll compare gross margin and sales.
 
 ## Add titles to the axes
 
-1. Select the paint roller icon ![Screenshot f the paint roller icon.](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) to open the Formatting pane.
+1. Select the paint roller icon ![Screenshot of the paint roller icon.](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) to open the Formatting pane.
 
 1. Select the down arrow to expand the **Y-axis** options.
 
@@ -125,7 +125,7 @@ In this task, we'll compare gross margin and sales.
 
     Your combo chart now shows dual axes, both with titles.
 
-    ![](media/power-bi-visualization-combo-chart/power-bi-titles-on.png)
+    ![Screenshot of the Line and stacked column chart with titles turned on.](media/power-bi-visualization-combo-chart/power-bi-titles-on.png)
 
 1. Optionally, change the text font, size, and color and set other formatting options to improve the display and readability of the chart.
 

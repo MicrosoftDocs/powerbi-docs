@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 ---
 
 # Use the Matrix visual in Power BI
-The **matrix** visual is similar to a **table**.  A table supports 2 dimensions and the data is flat, meaning duplicate values are displayed and not aggregated. A matrix makes it easier to display data meaningfully across multiple dimensions -- it supports a stepped layout. The matrix automatically aggregates the data and enables drill down. 
+The **matrix** visual is similar to a **table**.  A table supports two dimensions and the data is flat, meaning duplicate values are displayed and not aggregated. A matrix makes it easier to display data meaningfully across multiple dimensions -- it supports a stepped layout. The matrix automatically aggregates the data and enables drill down. 
 
 You can create matrix visuals in **Power BI Desktop** and **Power BI service** reports and cross-highlight elements within the matrix with other visuals on that report page. For example, you can select rows, columns, and even individual cells and cross-highlight. Also, individual cells and multiple cell selections can be copied and pasted into other applications. 
 
@@ -106,7 +106,7 @@ To drill down on columns, select **Columns** from the *Drill on* menu that can b
 
 When you select **Drill Down**, the next level of the column hierarchy for *Region > East* displays, which in this case is *Opportunity count*. The other region displays, but is greyed out.
 
-![matrix with colum drill down one level](media/desktop-matrix-visual/power-bi-matrix-column-drill.png)
+![matrix with column drill down one level](media/desktop-matrix-visual/power-bi-matrix-column-drill.png)
 
 The rest of the menu items work on columns in the same way they do for rows (see the previous section, **Drill down on row headers**). You can **Show Next Level** and **Expand to next level** with columns just as you can with rows.
 
@@ -119,7 +119,7 @@ The **Matrix** visual automatically indents subcategories in a hierarchy beneath
 
 In the original version of the matrix visual, subcategories were shown in an entirely different column, taking up much more space in the visual. The following image shows the table in original **Matrix** visual; notice the subcategories in a separate column.
 
-![Screenshot of the old Matrix visual showing the subcatagories in a separate column.](media/desktop-matrix-visual/matrix-visual_14.png)
+![Screenshot of the old Matrix visual showing the subcategories in a separate column.](media/desktop-matrix-visual/matrix-visual_14.png)
 
 In the following image, you see a **Matrix** visual, with **Stepped layout** in action. Notice the category *Computers* has its subcategories (Computers Accessories, Desktops, Laptops, Monitors, and so on) slightly indented, providing a cleaner and much more condensed visual.
 
@@ -155,7 +155,7 @@ In addition, using Ctrl+Click also works for cross-highlighting. For example, in
 
 Your matrix or table may have content that you'd like to use in other applications: Dynamics CRM, Excel, and other Power BI reports. With the Power BI right-click, you can copy a single cell or a selection of cells onto your clipboard. Then, paste them into the other application.
 
-    ![Screenshot of the Matrix visual with an arrow pointing to a value and the right-click menu expanded with the Copy value and Copy selection options called out.](media/desktop-matrix-visual/power-bi-cell-copy.png)
+![Screenshot of the Matrix visual with an arrow pointing to a value and the right-click menu expanded with the Copy value and Copy selection options called out.](media/desktop-matrix-visual/power-bi-cell-copy.png)
 
 * To copy the value of a single cell, select the cell,  right-click, and choose **Copy value**. With the unformatted cell value on your clipboard, you can now paste it into another application.
 
