@@ -31,7 +31,7 @@ Now that your app is in production, you can start over in the test phase, withou
 7. In CPP you must **publish** your offer again as well as have it validated again. 
 
 >[!NOTE]
->Promote your app to production stage only after your app is approved by Cloud Partner Portal and you published it.
+>Promote your app to production stage only after your app is approved by Cloud Partner Portal and you publish it.
 
 ## Extract workspace
 Rolling back to the previous version of a template app is now easier than ever with the extract capability. The following steps will extract a specific app version from various release stages into a new workspace:
