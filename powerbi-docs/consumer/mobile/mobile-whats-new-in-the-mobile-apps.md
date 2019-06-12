@@ -19,15 +19,44 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
 
+## May 2019
+
+### Siri Shortcuts support (iOS)
+Users can create Siri Shortcuts to their Power BI reports and dashboards, and then open them directly from Siri voice interface. [Read how to use Siri Shortcuts in Power BI iOS app](https://powerbi.microsoft.com/blog/introducing-siri-integration-with-power-bi-mobile-ios-app-preview/).
+
+### Device search (iOS)
+Integrating Power BI with iOS device search (Spotlight). Searching for content in iPhone or iPad will now include Power BI items as well. When users use device native search, Power BI reports, dashboards, apps, workspaces and people matching the search criteria, will be listed in the results as well. [Visit the blog post to learn more](https://powerbi.microsoft.com/blog/introducing-siri-integration-with-power-bi-mobile-ios-app-preview/).
+
+
+### Single tap report interaction - GA
+
+Single tap is now GA, and will become the default touch interaction for new users. Users will still be able to turn it off and have double tap in the app settings.
+
+### Enhanced conditional access protection
+
+We integrated with AAD [new app protection-based conditional access capability](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) to increase security by limiting access to Power BI before app policy is applied.
+
+### Device protection (iOS)
+
+Users can use device built-in protection to secure Power BI, by asking for Face ID, Touch ID or passcode for accessing Power BI. This can be control by the user using the app settings, but also by admins using Intune and any other MDM tool. [Learn more](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-ios-native-secure-access).
+
+### One page report Slideshow (Windows)
+
+Supporting auto refresh also for one-page reports in slideshow. So, if the report's underline data source is updated, we will pick it up and update the data in the page.
+
+
 ## April 2019
 
 ### Key Influencers visual 
+
 Key Influencers visual is now available on your mobile app. This visual lets you perform analysis of key drivers over your data with just a few taps.
 
 ### Add comments to report content (Android and iOS)
+
 Now you can use comments to collaborate and share your feedback on report pages and visuals. Read more about report commenting in Power BI Service and Mobile [in this blog](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/). 
 
 ### Maximize the view with full screen mode (Android and iOS)
+
 We added new button that let you control when to focus on your data by removing report headers and footers and giving you maximum space for viewing your reports.
 
 ## March 2019
