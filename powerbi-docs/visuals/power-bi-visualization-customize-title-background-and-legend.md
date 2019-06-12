@@ -5,117 +5,153 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
-
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/22/2018
+ms.date: 06/14/2019
 ms.author: mihart
-
 LocalizationGroup: Visualizations
 ---
+
 # Customize visualization titles, legends, and backgrounds
-In this tutorial you'll learn a few different ways to customize your visualizations.   There are so many options for customizing your visualizations, the best way to learn about them all is by exploring the Formatting pane (select the paintroller icon).  To get you started, this article shows you how to customize a visualization title, legend, and background.  
 
-Not all visualizations can be customized, [see the complete list](#list).  
+In this tutorial, you'll learn a few different ways to customize your visualizations. There are so many options for customizing your visualizations. The best way to learn about them all is by exploring the **Format** pane (select the paint roller icon). To get you started, this article shows you how to customize a visualization title, legend, and background.
 
-Fast-forward to 4:50 in the video for a demonstration of how to customize visualizations. Then follow the instructions below the video to try it out yourself with your own data.
+You can't customize all visualizations. See the [complete list](#visualization-types-that-you-can-customize).
+
+Fast-forward to 4:50 in the video for a demonstration of how to customize visualizations:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-### Prerequisites
-- Power BI service or Power BI Desktop
-- Retail Analysis sample
+Now, follow the instructions below to try it out yourself with your own data.
+
+## Prerequisites
+
+- The Power BI service or Power BI Desktop
+
+- Retail Analysis Sample report
 
 ## Customize visualization titles in reports
-To follow along, sign into Power BI service (app.powerbi.com) and [open the Retail Analysis Sample](../sample-datasets.md) report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
+
+To follow along, sign into [the Power BI service](app.powerbi.com) and open the [Retail Analysis Sample](../sample-datasets.md) report in [Edit report](../service-interact-with-a-report-in-editing-view.md) view.
 
 > [!NOTE]
-> When you pin a visualization to a dashboard, it becomes a dashboard tile.  The tiles themselves can also be customized with [new titles and subtitles, hyperlinks, and resized](../service-dashboard-edit-tile.md).
-> 
-> 
+> When you pin a visualization to a dashboard, it becomes a dashboard tile. You can also customize the tiles themselves with [new titles and subtitles, hyperlinks, and resized](../service-dashboard-edit-tile.md).
 
-1. Navigate to the "New Stores" page of the report and select the "Open Store Count by Open Month..." column chart.
-2. In the Visualizations pane, select the paintroller icon to reveal the formatting options.  and select **Title** to expand that section.  
+1. Go to the **New Stores** page of the **Retail Analysis Sample** report.
 
-   ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
-3. Turn  **Title** on and off by selecting the On (or Off) slider. For now, leave it **On**.  
+1. Select the **Open Store Count by Open Month and Chain** Clustered column chart.
 
-   ![](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
-4. Change **Title Text** by typing **Store count by month opened** in the text field.  
-5. Change **Font color** to orange and **Background Color** to yellow.
+1. In the **Visualizations** pane, select the paint roller icon to reveal the format options.
 
-   * Select the dropdown and choose a color from the **Theme Colors**, **Recent Colors**, or **Custom color**.
-   * Select the dropdown to close the color window.  
-     ![](media/power-bi-visualization-customize-title-background-and-legend/customizecolorpicker.png)
+1. Select **Title** to expand that section.
 
-   You can always revert to the default colors by selecting **Revert to default** in the color window.
-6. Increase the text size to 12.
-7. The last customization we'll make to the chart title is to align it in the center of the visualization. The title position defaults to left-aligned.  
-   ![](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
+   ![Screenshot of the Format pane with the paint roller icon called out and an arrow to the Title drop-down.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
 
-    At this point in the tutorial, your column chart **title** should look like something like this:  
-    ![](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
+1. Turn **Title** on and off by selecting the **On** (or **Off**) slider. For now, leave it **On**.
 
-    To revert all the title customization we've done so far, select **Revert To Default**, at the bottom of the **Title** customization pane.  
-    ![](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
+   ![Screenshot of the On slider.](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
+
+1. Enter *Store count by month opened* in the **Title Text** by text field to change the title.
+
+1. Change **Font color** to orange and **Background color** to yellow.
+
+    1. Select the drop-down and choose a color from **Theme colors**, **Recent colors**, or **Custom color**.
+
+        ![Screenshot of the Font color and Background color options.](media/power-bi-visualization-customize-title-background-and-legend/customizecolorpicker.png)
+
+    1. Select the drop-down to close the color window.
+
+       You can always revert to the default colors by selecting **Revert to default** in the color window.
+
+1. Increase the text size to **12 pt**.
+
+1. The last customization you'll make to the chart title is to align it in the center of the visualization.
+
+    ![Screenshot of the Alignment controls with the Center option selected.](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
+
+At this point in the tutorial, your Clustered column chart title will look something like this:
+
+![Screenshot of the newly configured Clustered column chart.](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
+
+To revert all the title customization you've done, select **Revert To Default**, at the bottom of the **Title** customization pane.
+
+![Screenshot of the Revert to default option.](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
 
 ## Customize visualization backgrounds
-With the same column chart selected, expand the Background options.
 
-1. Turn the background on and off by selecting the On (or Off) slider. For now, leave it **On**.
-2. Change the background color to 74% grey.
+With the same Clustered column chart selected, expand the **Background** options.
 
-   * Select the dropdown and choose a grey color from the **Theme Colors**, **Recent Colors**, or **Custom color**.
-   * Change Transparency to 74%.   
-     ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
+1. Turn the background on and off by selecting the **On** (or **Off**) slider. For now, leave it **On**.
 
-   To revert all the title background customization we've done so far, select **Revert To Default**, at the bottom of the **Background** customization pane.
+1. Select the drop-down and choose a grey color from **Theme colors**, **Recent colors**, or **Custom color**.
+
+1. Change **Transparency** to **74%**.
+
+At this point in the tutorial, your Clustered column chart background will look something like this:
+
+![Screenshot of the Clustered column chart with background color updated.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
+
+To revert all the title background customization you've done, select **Revert to default**, at the bottom of the **Background** customization pane.
 
 ## Customize visualization legends
-1. Open the **Overview** report page and select the "Total Sales Variance by FiscalMonth and District Manager" chart.
-2. In the Visualization tab, select the paintbrush icon to open the formatting pane.  
-3. Expand **Legend** options.
 
-      ![](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
-4. Turn the legend on and off by selecting the On (or Off) slider. For now, leave it **On**.
-5. Move the legend to the left side of the visualization.    
-6. Add a legend title by toggling **Title** to **On** and, in the **Legend name** field, typing **Managers**.
-   ![](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
+1. Open the **Overview** report page and select the **Total Sales Variance by FiscalMonth and District Manager** chart.
 
-   To revert all the legend customization we've done so far, select **Revert To Default**, at the bottom of the **Legend** customization pane.
+1. In the **Visualization** tab, select the paint brush icon to open the Format pane.
 
-<a name="list"></a>
+1. Expand **Legend** options:
 
-## Visualization types that can be customized
+      ![Screenshot of the Legend option.](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
+
+1. Turn the legend on and off by selecting the **On** (or **Off**) slider. For now, leave it **On**.
+
+1. Move the legend to the left side of the visualization.
+
+1. Add a legend title by toggling **Title** to **On**.
+
+1. Enter *Managers* in the **Legend name** field.
+
+At this point in the tutorial, your Clustered column chart legend will look something like this:
+
+![Screenshot of the updated Legend in the Clustered column chart.](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
+
+To revert all the legend customization you've done, select **Revert to default**, at the bottom of the **Legend** customization pane.
+
+## Visualization types that you can customize
+
+Here is a list of the visualizations and the customization options that are available for each:
 
 | Visualization | Title | Background | Legend |
 |:--- |:--- |:--- |:--- |
-| area |yes |yes |yes |
-| bar |yes |yes |yes |
-| card |yes |yes |n/a |
-| multi row card |yes |yes |n/a |
-| column |yes |yes |yes |
-| combo |yes |yes |yes |
-| donut |yes |yes |yes |
-| filled map |yes |yes |yes |
-| funnel |yes |yes |n/a |
-| gauge |yes |yes |n/a |
-| kpi |yes |yes |n/a |
-| line |yes |yes |yes |
-| map |yes |yes |yes |
-| matrix |yes |yes |n/a |
-| pie |yes |yes |yes |
-| scatter |yes |yes |yes |
-| slicer |yes |yes |n/a |
-| table |yes |yes |n/a |
-| textbox |no |yes |n/a |
-| treemap |yes |yes |yes |
-| waterfall |yes |yes |yes |
+| Area | yes | yes |yes |
+| Bar | yes | yes |yes |
+| Card | yes | yes |n/a |
+| Multi-row Card | yes | yes | n/a |
+| Column | yes | yes | yes |
+| Combo | yes | yes | yes |
+| Donut | yes | yes | yes |
+| Filled map | yes | yes | yes |
+| Funnel | yes | yes | n/a |
+| Gauge | yes | yes | n/a |
+| KPI | yes | yes | n/a |
+| Line | yes | yes | yes |
+| Map | yes | yes | yes |
+| Matrix | yes | yes | n/a |
+| Pie | yes | yes | yes |
+| Scatter | yes | yes | yes |
+| Slicer | yes | yes | n/a |
+| Table | yes | yes | n/a |
+| Textbox | no | yes | n/a |
+| Treemap | yes | yes | yes |
+| Waterfall | yes | yes | yes |
 
 ## Next steps
-[Customize X-axis and Y-axis](power-bi-visualization-customize-x-axis-and-y-axis.md)  
-[Customize colors and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)  
-[Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
+- [Customize X-axis and Y-axis](power-bi-visualization-customize-x-axis-and-y-axis.md)
+
+- [Customize colors and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
+
+- [Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
+
+More questions? [Try the Power BI Community](http://community.powerbi.com/)
