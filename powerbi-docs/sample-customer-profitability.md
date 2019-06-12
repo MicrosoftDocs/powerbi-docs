@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 06/11/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -27,7 +27,8 @@ Want to follow along? This tutorial uses the Power BI service and the Customer P
 
 ### Get the content pack for this sample
 
-1. Open the Power BI service (app.powerbi.com) and sign in.
+1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
+
 2. In the bottom-left corner, select **Get Data**.
 
     ![Get data](media/sample-datasets/power-bi-get-data.png)
@@ -47,12 +48,13 @@ Alternatively, you can download the [Customer Profitability Sample](http://downl
 
 ### Get the Excel workbook for this sample
 
-If you want to view the datasource for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529781). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, then select **Power Pivot > Manage**. 
+If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529781). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
+
 
 
 ## What is our dashboard telling us?
 
-Under **My Workspace**, find the dashboard for the Customer Profitability sample and select it:
+In the workspace where you saved the sample, find the Customer Profitability dashboard and select it:
 
 ![Dashboard for the Customer Profitability sample](media/sample-customer-profitability/power-bi-dash.png)
 
@@ -65,7 +67,7 @@ Under **My Workspace**, find the dashboard for the Customer Profitability sample
 
 - The company's gross margin is 42.5%.
 - It has 80 customers.
-- It sells 5 different products.
+- It sells five different products.
 - It had its lowest revenue % variance to budget in February, followed by the highest in March.
 - Most of our revenue comes from the east and north regions. Gross margin has never exceeded budget, with the ER-0 and MA-0 business units requiring further investigation.
 - Total revenue for the year is close to budget.
@@ -106,9 +108,11 @@ Two tiles on this dashboard, **Target vs Actual** and **Year Over Year Revenue G
 5. Use your browser's back arrow to return to the dashboard.
 
 ### Open the underlying Power BI report
-The majority of the tiles on the Customer Profitability sample dashboard were pinned from the underlying Customer Profitability sample report.
+Many of the tiles on the Customer Profitability sample dashboard were pinned from the underlying Customer Profitability sample report.
 
-1. Select one of these tiles to open the report in reading view.
+1. Select one of these tiles to open the report in Reading view.
+
+   If the tile was created in Q&A, selecting it opens the Q&A window. Select **Exit Q&A** to return to the dashboard and try a different tile.
 
 2. The report has three pages. Each tab at the bottom of the report represents a different page.
 
@@ -127,8 +131,9 @@ Let’s look at two of the team members in detail and see what insights can be g
 * The **Revenue % Variance to Budget by Month and Executive** chart shows that, except for a dip in February, Andrew is doing well overall. His dominant region is the east region, he handles 49 customers, and 5 out of 7 products. His GM% is not the highest or the lowest.
 * The **RevenueTY and Revenue % Var to Budget by Month** chart shows a steady, even-profit story. However, if you filter by selecting the square for **Central** in the region treemap, you discover that Andrew has revenue only in March and only in Indiana. Is this intentional or is it something that needs looking into?
 
-Now on to Valery. In the **Executive** box, select Valery’s name to filter the report page to display data only about her.  
-![Vaery's data](media/sample-customer-profitability/customer3.png)
+Now on to Valery. In the **Executive** box, select Valery’s name to filter the report page to display data only about her. 
+
+![Valery's data](media/sample-customer-profitability/customer3.png)
 
 * Notice the red KPI for **Revenue Status (Total Year)**. This item definitely needs further investigation.
 * Her revenue variance also paints a worrying picture; she is not meeting her revenue margins.
@@ -159,7 +164,7 @@ This page is formatted as a Cortana answer page for Cortana. To learn more, see 
 ## Dig into the data by asking questions with Q&A
 For our analysis, it might be helpful to determine which industry generates the most revenue for Valery. Let’s use Q&A.
 
-1. Open the report in editing view by selecting **Edit report**. Editing view is available only if you own the report; this is sometimes referred to as **creator** mode. If instead, this report was only shared with you, you won't be able to open it in editing view.
+1. Open the report in Editing view by selecting **Edit report**. Editing view is available only if you own the report. This view is sometimes called **creator** mode. If instead, this report was only shared with you, you can't open it in Editing view.
 
 2.  From the top menu bar, select **Ask a question** to open the Q&A question box.
 
