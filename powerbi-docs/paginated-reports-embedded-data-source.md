@@ -1,5 +1,5 @@
 ---
-title: "Embedded data sources for paginated reports in the Power BI service (Preview)"
+title: "Embedded data sources for paginated reports in the Power BI service"
 description: In this article, you learn how to create and modify an embedded data source in a paginated report in the Power BI service.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,10 +8,10 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/16/2019
+ms.date: 06/06/2019
 ---
 
-# Create an embedded data source for paginated reports in the Power BI service (Preview)
+# Create an embedded data source for paginated reports in the Power BI service
 
 In this article, you learn how to create and modify an embedded data source for a paginated report in the Power BI service. You define an embedded data source in a single report, and use it only in that report. Currently, paginated reports published to the Power BI service need embedded datasets and embedded data sources, and can connect to these data sources:
 
@@ -21,12 +21,14 @@ In this article, you learn how to create and modify an embedded data source for 
 - Oracle 
 - Teradata 
 
-For these data sources, use the [SQL Server Analysis Services connection](service-premium-connect-tools.md) option:
+For the following data sources, use the [SQL Server Analysis Services connection](service-premium-connect-tools.md) option:
 
 - Azure Analysis Services
 - Power BI Premium datasets
 
-Paginated reports connect to on-premises data sources by way of a gateway. You set up the gateway after you publish the report to the Power BI service. Read more about [Power BI gateways](service-gateway-getting-started.md). 
+Paginated reports connect to on-premises data sources by way of a [Power BI gateway](service-gateway-getting-started.md). You set up the gateway after you publish the report to the Power BI service.
+
+See [Report Data in Power BI Report Builder](report-builder-data.md) for more detailed information.
 
 ## Create an embedded data source
   
@@ -63,4 +65,4 @@ Paginated reports connect to on-premises data sources by way of a gateway. You s
 ## Next steps
 
 - [Create an embedded dataset for a paginated report in the Power BI service](paginated-reports-create-embedded-dataset.md)
-- [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
