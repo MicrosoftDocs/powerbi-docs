@@ -32,7 +32,7 @@ Integrating Power BI with iOS device search (Spotlight). Searching for content i
 
 Single tap is now GA, and will become the default touch interaction for new users. Users will still be able to turn it off and have double tap in the app settings.
 
-### Enhanced conditional access protection
+### Enhanced conditional access protection (iOS, Android)
 
 We integrated with AAD [new app protection-based conditional access capability](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) to increase security by limiting access to Power BI before app policy is applied.
 
