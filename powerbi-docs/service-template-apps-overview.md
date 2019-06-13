@@ -1,17 +1,17 @@
 ---
-title: What are Power BI template apps? (preview)
+title: What are Power BI template apps?
 description: This article is an overview of the Power BI template app program. Learn how to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/26/2019
-ms.author: maggies
+ms.date: 06/10/2019
+ms.author: tebercov
 ---
 
-# What are Power BI template apps? (preview)
+# What are Power BI template apps?
 
 The new Power BI *template apps* enable Power BI partners to build Power BI apps with little or no coding, and deploy them to any Power BI customer.  This article is an overview of the Power BI template app program.
 
@@ -32,7 +32,7 @@ The general process to develop and submit a template app involves several stages
 | **Three** | |  | Promote the test package to preproduction for validation outside your Power BI tenant, and submit it to AppSource  |  | With your preproduction package, create a Power BI template app offer and start the validation process |
 | **Four** | |  | Promote the preproduction package to production |  | Go live |
 
-## Requirements
+## Before you begin
 
 To create the template app, you need permissions to create one. See the Power BI admin portal, Template app settings for details. 
 
@@ -64,6 +64,8 @@ Here are the high-level steps.
 To create the template app, you need permissions to create one. See the Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings-preview) for details. 
 
 To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Cloud Marketplace Publisher](https://docs.microsoft.com/azure/marketplace/become-publisher).
+ > [!NOTE] 
+ > Template apps submissions are managed in [Cloud Partner Portal](https://cloudpartner.azure.com). Use the same Microsoft Developer Center registration account to sign in. You should have only one Microsoft account for your AppSource offerings. Accounts shouldn't be specific to individual services or offers.
 
 ## Tips 
 
@@ -73,7 +75,7 @@ To publish a template app to the Power BI service and AppSource, you must meet t
 - Consider offering more than one template app for separate unique scenarios. 
 - Enable data customization, for example support custom connection and parameters configuration by the installer.
 
-See [Tips for authoring template apps in Power BI (preview)](service-template-apps-tips.md) for more suggestions.
+See [Tips for authoring template apps in Power BI](service-template-apps-tips.md) for more suggestions.
 
 ## Support
 For support during development, use [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). We actively monitor and manage this site. Customer incidents quickly find their way to the appropriate team.
