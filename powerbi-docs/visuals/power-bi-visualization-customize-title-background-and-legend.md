@@ -148,10 +148,10 @@ Here is a list of the visualizations and the customization options that are avai
 
 ## Next steps
 
-- [Customize X-axis and Y-axis](power-bi-visualization-customize-x-axis-and-y-axis.md)
+- [Customize X-Axis and Y-Axis properties](power-bi-visualization-customize-x-axis-and-y-axis.md)
 
-- [Customize colors and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
+- [Getting started with color formatting and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 
-- [Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
+- [Basic concepts for Power BI service consumers](../consumer/end-user-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

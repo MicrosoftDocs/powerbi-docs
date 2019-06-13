@@ -190,7 +190,7 @@ With a visualization that's so complicated, it helps to add axes titles.  Titles
 
    ![Screenshot of the customized dual Y-Axes chart.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo-chart.png)
 
-For more info, see [Tips and tricks for color formatting, labeling, and axis properties](service-tips-and-tricks-for-color-formatting.md).
+For more info, see [Tips and tricks for color formatting in Power BI](service-tips-and-tricks-for-color-formatting.md).
 
 ## Considerations and troubleshooting
 
@@ -198,12 +198,12 @@ If the X-Axis is categorized by the report owner as a date type, the **Type** op
 
 ## Next steps
 
-More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)
+- [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
-- [Customize titles, backgrounds, and legends](power-bi-visualization-customize-title-background-and-legend.md)
+- [Customize visualization titles, legends, and backgrounds](power-bi-visualization-customize-title-background-and-legend.md)
 
-- [Customize colors and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
+- [Getting started with color formatting and axis properties](service-getting-started-with-color-formatting-and-axis-properties.md)
 
-- [Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
+- [Basic concepts for Power BI service consumers](../consumer/end-user-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
