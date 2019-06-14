@@ -1,5 +1,5 @@
 ---
-title: Azure Machine Learning integration in Power BI (Preview)
+title: Azure Machine Learning integration in Power BI
 description: Learn how to use Machine Learning with Power BI
 author: davidiseminger
 manager: kfile
@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 05/31/2019
 ms.author: davidi
 
 LocalizationGroup: conceptual
 ---
 
-# Azure Machine Learning integration in Power BI (Preview)
+# Azure Machine Learning integration in Power BI
 
 Numerous organizations use **Machine Learning** models for better insights and predictions about their business. The ability to visualize and invoke insights from these models, in your reports and dashboards and other analytics, can help disseminate these insights to the business users who need it the most.  Power BI now makes it simple to incorporate the insights from models hosted on the Azure Machine Learning service, using straightforward point-and-click gestures.
 
@@ -65,7 +65,14 @@ The steps in this article describe how to grant a Power BI user access to a mode
 
 Data scientists primarily use Python to develop, and even deploy, their machine learning models for the Machine Learning Service.  Unlike the Machine Learning Studio, which helps automate the task of creating a schema file for the model, in the case of the Machine Learning Service, the data scientist must explicitly generate the schema file using Python.
 
-This schema file must be included in the
+This schema file must be included in the deployed web service for Machine Learning Service models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. Please see the subsection on (Optional) Automatic Swagger schema generation in the Deploy models with the Azure Machine Learning service documentation. The link includes the example entry script with the statements for the schema generation. 
+
+Specifically, the *@input_schema* and *@output_schema* functions in the entry script reference the input and output sample formats in the *input_sample* and *output_sample* variables, and use these samples to generate an OpenAPI (Swagger) specification for the web service during deployment.
+
+These instructions for schema generation by updating the entry script must also be applied to models created using automated machine learning experiments using the Azure Machine Learning SDK.
+
+> [!NOTE]
+> Models created using the Azure Machine Learning service visual interface do not currently support schema generation, but will in subsequent releases. 
 
 ## Invoking the Azure ML model in Power BI
 
@@ -97,9 +104,9 @@ Once you save your dataflow, the model is automatically invoked when the dataflo
 
 This article provided an overview of integrating Machine Learning into the Power BI service. The following articles might also be interesting and useful. 
 
-* [Tutorial: Invoke a Machine Learning Studio model in Power BI (Preview)](service-tutorial-invoke-machine-learning-model.md)
+* [Tutorial: Invoke a Machine Learning Studio model in Power BI](service-tutorial-invoke-machine-learning-model.md)
 * [Tutorial: Using Cognitive Services in Power BI](service-tutorial-use-cognitive-services.md)
-* [Cognitive Services in Power BI (Preview)](service-cognitive-services.md)
+* [Cognitive Services in Power BI](service-cognitive-services.md)
 
 For more information about dataflows, you can read these articles:
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)

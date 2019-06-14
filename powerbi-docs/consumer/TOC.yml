@@ -86,6 +86,8 @@
         href: end-user-search-sort.md
       - name: "View automatic insights for dashboard tiles"
         href: end-user-insights.md
+      - name: "Turn on preview features"
+        href: end-user-preview-features.md
     - name: Get data
       items: 
       - name: "Apps in Power BI"
@@ -174,12 +176,20 @@
       items: 
       - name: "Get started with the iOS app"
         href: mobile/mobile-iphone-app-get-started.md
+      - name: "Protect with Face ID, Touch ID, or Passcode"
+        href: mobile/mobile-ios-native-secure-access.md
       - name: "Q&A virtual analyst in iOS mobile apps"
         href: mobile/mobile-apps-ios-qna.md
+      - name: "Power BI mobile app integration with Siri Shortcuts"
+        href: mobile/mobile-apps-iOS-siri-Shortcuts.md
+      - name: "iOS device search integration"
+        href: mobile/mobile-apps-iOS-search-integration.md
       - name: "Power BI Apple Watch app"
         href: mobile/mobile-apple-watch.md
       - name: "Scan a barcode from the app on your iPhone"
         href: mobile/mobile-apps-scan-barcode-iphone.md
+      - name: "Configure using mobile device management"
+        href: mobile/mobile-app-configuration.md
     - name: Android devices
       items: 
       - name: "Get started with the Android app"

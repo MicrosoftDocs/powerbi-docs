@@ -115,6 +115,6 @@ If you want to return to the source report after the cross-report drillthrough a
 
 You might also be interested in the following articles:
 
-* [Using slicers Power BI Desktop](visuals/desktop-slicers.md)
+* [Using slicers Power BI Desktop](visuals/power-bi-visualization-slicers.md)
 * [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
 

@@ -57,5 +57,5 @@ This content pack contains data from the last 45 days in the following tables:
 ## Next steps
 [What is Power BI?](power-bi-overview.md)
 
-[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
+[Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 

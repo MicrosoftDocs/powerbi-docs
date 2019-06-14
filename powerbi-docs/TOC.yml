@@ -59,7 +59,7 @@
       href: desktop-aggregations.md      
     - name: "Composite models in Power BI Desktop"
       href: desktop-composite-models.md
-    - name: "Many-to-many relationships in Power BI Desktop (Preview)"
+    - name: "Many-to-many relationships in Power BI Desktop"
       href: desktop-many-to-many-relationships.md
     - name: "Storage mode in Power BI Desktop (Preview)"
       href: desktop-storage-mode.md
@@ -257,9 +257,7 @@
         href: desktop-add-column-from-example.md
       - name: "Add a custom column"
         href: desktop-add-custom-column.md
-      - name: "Create responsive visuals in Power BI"
-        href: visuals/desktop-create-responsive-visuals.md
-      - name: "Use inline hierarchy labels in Power BI Desktop (Preview)"
+      - name: "Use inline hierarchy labels in Power BI Desktop"
         href: desktop-inline-hierarchy-labels.md
       - name: "Use the numeric range slicer"
         href: desktop-slicer-numeric-range.md
@@ -487,6 +485,22 @@
         href: service-publish-from-excel.md
       - name: "Reduce the size of an Excel workbook"
         href: reduce-the-size-of-an-excel-workbook.md
+    - name: Get data from shared datasets
+      items: 
+      - name: "Use datasets across workspaces"
+        href: service-datasets-across-workspaces.md
+      - name: "Create and share datasets (Preview)"
+        href: service-datasets-build-permissions.md
+      - name: "Create reports based on datasets"
+        href: service-datasets-discover-across-workspaces.md
+      - name: "Copy reports based on datasets"
+        href: service-datasets-copy-reports.md
+      - name: "Promote datasets"
+        href: service-datasets-promote.md
+      - name: "Certify datasets"
+        href: service-datasets-certify.md
+      - name: "Control the use of datasets"
+        href: service-datasets-admin-across-workspaces.md
     - name: Get data from databases
       items: 
       - name: "Azure and Power BI"
@@ -667,32 +681,14 @@
         href: service-dataflows-configure-workspace-storage-settings.md  
       - name: "Add a CDM folder to Power BI as a dataflow (Preview)"
         href: service-dataflows-add-cdm-folder.md                                
-      - name: "Integrate Machine Learning in Power BI (Preview)"
+      - name: "Integrate Machine Learning in Power BI"
         href: service-machine-learning-integration.md
-      - name: "Use Cognitive Services in Power BI (Preview)"
+      - name: "Use Cognitive Services in Power BI"
         href: service-cognitive-services.md   
       - name: "Automated Machine Learning in Power BI (Preview)"
         href: service-machine-learning-automated.md              
     - name: Paginated reports in Power BI
       items: 
-      - name: What are paginated reports? (Preview)
-        href: paginated-reports-report-builder-power-bi.md
-      - name: Paginated reports FAQ (Preview)
-        href: paginated-reports-faq.md
-      - name: Create a paginated report and upload it (Preview)
-        href: paginated-reports-quickstart-aw.md
-      - name: Get around Report Design View (Preview)
-        href: paginated-reports-report-design-view.md
-      - name: Enter data directly in a paginated report (Preview)
-        href: paginated-reports-enter-data.md
-      - name: Create an embedded data source (Preview)
-        href: paginated-reports-embedded-data-source.md
-      - name: Create an embedded dataset (Preview)
-        href: paginated-reports-create-embedded-dataset.md
-      - name: Create parameters (Preview)
-        href: paginated-reports-parameters.md
-      - name: Publish a paginated report (Preview)
-        href: paginated-reports-save-to-power-bi-service.md
       - name: View a paginated report (Preview)
         href: paginated-reports-view-power-bi-service.md
       - name: Interact with parameters (Preview)
@@ -709,6 +705,8 @@
         href: service-template-apps-tips.md
       - name: "Install & distribute template apps"
         href: service-template-apps-install-distribute.md
+      - name: "Update, delete, and extract a Power BI template app"
+        href: service-template-update-delete-extract.md
     - name: Troubleshoot
       items: 
       - name: "Forgot your password for Power BI?"
@@ -911,10 +909,58 @@
       href: service-premium-incremental-refresh.md
     - name: Configure Multi-Geo
       href: service-admin-premium-multi-geo.md
+    - name: Bring your own encryption keys
+      href: service-encryption-byok.md
     - name: Restart a Premium capacity
       href: service-admin-premium-restart.md
     - name: Connect to datasets with client applications and tools
       href: service-premium-connect-tools.md
+- name: Power BI Paginated Report Builder
+  items: 
+  - name: Overview
+    items: 
+    - name: What are paginated reports?
+      href: paginated-reports-report-builder-power-bi.md
+    - name: Report Builder in Power BI
+      href: report-builder-power-bi.md
+  - name: Tutorials
+    items: 
+    - name: Create a paginated report and upload Interact
+      href: paginated-reports-quickstart-aw.md
+  - name: Concepts
+    items: 
+    - name: Get around Report Design View
+      href: paginated-reports-report-design-view.md
+    - name: Planning a report
+      href: report-builder-planning-report.md
+    - name: Report Builder data
+      href: report-builder-data.md
+    - name: Design tips
+      href: report-builder-design-tips.md
+    - name: Tables, matrixes, lists
+      href: report-builder-tables-matrices-lists.md
+    - name: Parameters
+      href: report-builder-parameters.md
+    - name: Expressions
+      href: report-builder-expressions.md
+    - name: Expression examples
+      href: report-builder-expression-examples.md
+    - name: Previewing reports
+      href: report-builder-previewing-reports.md
+    - name: Paginated reports FAQ
+      href: paginated-reports-faq.md
+  - name: How to
+    items: 
+    - name: Enter data directly in a paginated report
+      href: paginated-reports-enter-data.md
+    - name: Create an embedded data source
+      href: paginated-reports-embedded-data-source.md
+    - name: Create an embedded dataset
+      href: paginated-reports-create-embedded-dataset.md
+    - name: Create parameters
+      href: paginated-reports-parameters.md
+    - name: Publish a paginated report
+      href: paginated-reports-save-to-power-bi-service.md
 - name: Power BI for developers
   items:
   - name: "What can developers do with Power BI"

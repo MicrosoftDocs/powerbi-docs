@@ -35,7 +35,7 @@ After you make changes to a report in Power BI, you can save it, save it with a 
 ### Next steps
 Read more about [reports in Power BI](consumer/end-user-reports.md)
 
-[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
+[Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

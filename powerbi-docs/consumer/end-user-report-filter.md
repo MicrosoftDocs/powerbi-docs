@@ -9,13 +9,13 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/10/2018
+ms.date: 05/30/2019
 ms.author: mihart
 
 LocalizationGroup: Reports
 ---
 # Take a tour of the report Filters pane
-This article takes a look at the report Filters pane in Power BI service. Use the filters to discover new insights in your data.
+This article takes a look at the report Filters pane in the Power BI service. Use the filters to discover new insights in your data.
 
 There are many different ways to filter data in Power BI and we recommend first reading [About filters and highlighting](../power-bi-reports-filters-and-highlighting.md).
 
@@ -28,14 +28,16 @@ When a colleague shares a report with you, be sure to look for the **Filters** p
 
 The Filters pane contains filters that were added to the report by the report *designer*. *Consumers* like you, can interact with the existing filters and save your changes, but cannot add new filters to the report. For example, in the screenshot above the designer added two page level filters: Segment and Running Year. You can interact and change these filters, but you cannot add a third page level filter.
 
-In the Power BI service, reports retain any changes you make in the Filters pane, and those changes are carried through to the mobile version of the report. To reset the Filter pane to the designer's defaults, select **Reset to default** from the top menubar.     
+In the Power BI service, reports retain any changes you make in the Filters pane, and those changes are carried through to the mobile version of the report. To reset the Filter pane to the designer's defaults, select **Reset to default** from the top menubar.  
+
+![reset to default](media/end-user-report-filter/power-bi-reset-to-default.png)   
 
 ## View all the filters for a report page
-The Filters pane displays all filters added to the report by the  *designer*. The Filters pane is also the area where you can view information about the filters and interact with them. You can save the changes you make or use the **Reset to default** to revert to the original filter settings.
+The Filters pane displays all filters added to the report by the  *designer*. The Filters pane is also the area where you can view information about the filters and interact with them. You can save the changes you make or use **Reset to default** to revert to the original filter settings.
 
 If there are changes you'd like to save, you can also create a personal bookmark.  For more information, see [Add a bookmark to a report](end-user-bookmarks.md).
 
-There are several types of report filters that are displayed and managed from the Filters pane. , those applied to a visual, to a report page, and to the entire report.
+There are several types of report filters that are displayed and managed from the Filters pane, those applied to a visual, to a report page, and to the entire report.
 
 In this example, we've selected a visual that has 2 filters. The report page also has filters, listed under the **Filters on this page** heading. And the entire report has a filter for Date.
 
@@ -44,6 +46,36 @@ In this example, we've selected a visual that has 2 filters. The report page als
 Some of the filters have the word **All** next to them and this means that all values are being included in the filter.  For example, **Segment(All)** in the screenshot above tells us that this report page includes data about all the product segments.  On the other hand, the page level filter of **Region is West** tells us that the report page only includes data for the West region.
 
 Anyone viewing this report can interact with these filters.
+
+### View only those filters applied to a visual
+To get a closer look at the filters applied to a specific visual, hover over the visual to reveal the filter icon ![icon](media/end-user-report-filter/power-bi-filter-icon.png). Select that filter icon to see a pop-up with all the filters, slicers, and so on, affecting that visual. The filters on the pop-up are the same filters displayed on the **Filters** pane. 
+
+![list of filters](media/end-user-report-filter/power-bi-hover-visual-filter.png)
+
+ 
+Here are the types of filters this view can display:
+- Basic filters
+- Slicers
+- Cross-highlighting
+- Cross-filtering
+- Advanced filters
+- Top N filters
+- Relative Date filters
+- Sync-slicers
+- Include/Exclude filters
+- Filters passed through a URL
+
+
+
+In the example, below:
+1. We can see that the column chart has been cross-filtered.
+2. **Included** tells us that the cross-filter is for **Segment**, and three are included. 
+3. A slicer has been applied for **Quarter**.
+4. **Region** is a filter applied to this report page, and
+5. **isVanArsdel** and **Year** are filters applied to this visual.
+
+
+![list of filters](media/end-user-report-filter/power-bi-visual-pop-up.png)
 
 ### Search in a filter
 Sometimes a filter can have a long list of values. Use the search box to find and select the value you want. 

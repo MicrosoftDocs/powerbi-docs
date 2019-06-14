@@ -1,5 +1,5 @@
 ---
-title: "Publish a paginated report to the Power BI service (Preview)"
+title: "Publish a paginated report to the Power BI service"
 description: In this tutorial, you learn to publish a paginated report to the Power BI service by uploading it from your local computer.  
 author: maggiesMSFT
 ms.author: maggies
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 11/05/2018
 ---
 
-# Publish a paginated report to the Power BI service (Preview)
+# Publish a paginated report to the Power BI service
 
 In this article, you learn about publishing a paginated report to the Power BI service by uploading it from your local computer. You can upload paginated reports to your My Workspace or any other workspace, as long as the workspace is in a Premium capacity. Look for the diamond icon ![Power BI Premium capacity diamond icon](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) next to the workspace name. 
 
@@ -84,5 +84,5 @@ Currently gateways don't support multi-value parameters.
 ## Next steps
 
 - [View a paginated report in the Power BI service](paginated-reports-view-power-bi-service.md)
-- [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 

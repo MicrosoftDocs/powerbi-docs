@@ -31,7 +31,7 @@ This article is not meant to provide in-depth details about every feature of Pow
 
 Power BI Premium is a tenant-level Office 365 subscription available in two SKU (Stock-Keeping Unit) families:
 
-- **EM** SKUs (EM1-EM3) for embedding, requiring a yearly commitment, billed monthly.
+- **EM** SKUs (EM1-EM3) for embedding, requiring a yearly commitment, billed monthly. EM1 and EM2 SKUs are available only through volume licensing plans. You can't purchase them directly.
 - **P** SKUs (P1-P3) for embedding and enterprise features, requiring a monthly or yearly commitment, billed monthly, and includes a license to install Power BI Report Server on-premises.
 
 An alternative approach is to purchase an **Azure Power BI Embedded** subscription, which has a single **A** (A1-A6) SKU family for embedding and capacity testing purposes only. All SKUs deliver v-cores to create capacities, but the EM SKUs are restricted for smaller scale embedding. EM1, EM2, A1 and A2 SKUs with less than four v-cores do not run on dedicated infrastructure.
@@ -222,10 +222,6 @@ Microsoft tools like SQL Server Management Studio and SQL Server Profiler, and t
 ![SSMS](media/service-premium-what-is/connect-tools-ssms-dax.png)
 
 To learn more, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md).
-
-## Acknowledgements
-
-Peter Myers, Data Platform MVP and independent BI expert with [Bitwise Solutions](https://www.bitwisesolutions.com.au/), and the Microsoft Power BI Customer Advisory Team (CAT) are major contributors to this article.
 
 ## Next steps
 

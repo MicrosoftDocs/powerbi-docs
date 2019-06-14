@@ -14,7 +14,7 @@ ms.author: sarinas
 LocalizationGroup: Connect to services
 ---
 # Connect to IntelliBoard with Power BI
-IntelliBoard offers simplified access to your Moodle learning management system data through reporting services. The IntelliBoard content pack for Power BI offers additional analytics, including metrics on your courses, registered users, overall performance, and your LMS activity.
+IntelliBoard offers simplified access to your Moodle learning management system data through Reporting Services. The IntelliBoard content pack for Power BI offers additional analytics, including metrics on your courses, registered users, overall performance, and your LMS activity.
 
 Connect to the [IntelliBoard content pack](https://app.powerbi.com/getdata/services/intelliboard) for Power BI.
 
@@ -64,5 +64,5 @@ An IntelliBoard account with permissions to the above tables is required in orde
 ## Next steps
 [What is Power BI?](power-bi-overview.md)
 
-[Power BI - Basic Concepts](consumer/end-user-basic-concepts.md)
+[Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 

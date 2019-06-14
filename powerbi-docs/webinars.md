@@ -1,15 +1,15 @@
 ---
 title: Power BI webinars
 description: Power BI webinars
-author: maikelson
+author: v-tatero
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/26/2018
-ms.author: maikelson
+ms.date: 06/01/2019
+ms.author: v-tatero
 ---
 # Power BI webinars
 
@@ -17,7 +17,15 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-No webinars scheduled yet. Check back soon for more upcoming events.
+Register to hear from Power BI experts and participate in live Q&A sessions.
+
+**Microsoft Runs on Power BI: Using Power BI in Modern Treasury**
+<br>by Pankaj Gudimella and Guru Kirthigavasan
+<br>[Register to watch on June 25th, 10:00 AM–11:00 AM PST](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
+
+**Power BI: How to Get Insights from Your Workday HR Data**
+<br>by Iman Eftekhari, Julia Paton from Agile Analytics and Shahram Karimi from QBE Insurance
+<br>[Register to watch on June 27th, 1:30 PM–2:30 PM PST](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
 
 >[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -113,7 +121,8 @@ Watch recorded sessions at any time
 <br>by Reid Havens
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
-### Partners ###
+### Partner Solutions Series ###
+[Watch this series](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
 
 **Achieving a Win-Win for Consumer Product Goods Manufacturers and Retailers**
 <br>by Liz McCreesh from Thorogood
@@ -127,17 +136,9 @@ Watch recorded sessions at any time
 <br>by Stephen Cracknell and Stuart Macanliss from US Medical IT
 <br>[Register and watch now](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
-**Boost Your BI with Location Intelligence**
-<br>by Scott Ball from Esri and Enrique Plaza from Microsoft
-<br>[Register and watch now](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
-
 **Applied Intelligence for Sales & Services**
 <br>by Ed Bobrin from Avanade
 <br>[Register and watch now](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
-
-**5 Habits of a Successful Trend Curator - Rohit Bhargava**
-<br>by Rohit Bhargava from Non-Obvious
-<br>[Register and watch now](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 **Manufacturers: Your industry is going through a digital transformation - Maintain leadership by leveraging analytics to maximize profitability**
 <br>by Jon Thompson from Blue Margin and Jim Pastor from Elgin Fastener Group
@@ -146,6 +147,14 @@ Watch recorded sessions at any time
 **Visualize public or private datasets with the new Power BI and data.world connector**
 <br>by Patrick McGarry and Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
+
+**Boost Your BI with Location Intelligence**
+<br>by Scott Ball from Esri and Enrique Plaza from Microsoft
+<br>[Register and watch now](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
+
+**5 Habits of a Successful Trend Curator - Rohit Bhargava**
+<br>by Rohit Bhargava from Non-Obvious
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 ### Community ###
 
