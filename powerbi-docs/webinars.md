@@ -136,17 +136,9 @@ Watch recorded sessions at any time
 <br>by Stephen Cracknell and Stuart Macanliss from US Medical IT
 <br>[Register and watch now](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
-**Boost Your BI with Location Intelligence**
-<br>by Scott Ball from Esri and Enrique Plaza from Microsoft
-<br>[Register and watch now](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
-
 **Applied Intelligence for Sales & Services**
 <br>by Ed Bobrin from Avanade
 <br>[Register and watch now](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
-
-**5 Habits of a Successful Trend Curator - Rohit Bhargava**
-<br>by Rohit Bhargava from Non-Obvious
-<br>[Register and watch now](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 **Manufacturers: Your industry is going through a digital transformation - Maintain leadership by leveraging analytics to maximize profitability**
 <br>by Jon Thompson from Blue Margin and Jim Pastor from Elgin Fastener Group
@@ -155,6 +147,14 @@ Watch recorded sessions at any time
 **Visualize public or private datasets with the new Power BI and data.world connector**
 <br>by Patrick McGarry and Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
+
+**Boost Your BI with Location Intelligence**
+<br>by Scott Ball from Esri and Enrique Plaza from Microsoft
+<br>[Register and watch now](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
+
+**5 Habits of a Successful Trend Curator - Rohit Bhargava**
+<br>by Rohit Bhargava from Non-Obvious
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 ### Community ###
 
