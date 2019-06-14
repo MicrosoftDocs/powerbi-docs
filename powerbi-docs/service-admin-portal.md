@@ -361,24 +361,29 @@ Users in the organization can create and use dataflows. For an overview of dataf
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
 
-## Template apps settings (preview)
+## Template apps settings
 
-Two settings control template apps. 
+Three settings control template apps ability to publish or install template apps
 
 ![Power BI admin portal template apps settings](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
 
-### Create Template Apps (preview)
+### Publish Template Apps
 
-Users in the organization can create template apps. Template app creators can then distribute them to clients outside your organization by way of [AppSource](https://appsource.microsoft.com) or other distribution methods.
+Users in the organization can create template apps workspaces. Control which users can publish template apps or distribute them to clients outside your organization by way of [AppSource](https://appsource.microsoft.com) or other distribution methods.
 
 ![Power BI admin portal, Create template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
 
-### Install template apps (preview)
+### Install template apps listed on AppSource
 
-Users in the organization can download and install template apps from [AppSource](https://appsource.microsoft.com) or another source.
+Users in the organization can download and install template apps **only** from [AppSource](https://appsource.microsoft.com). Control which specific users or security groups can install template apps from AppSource.
 
-> [!NOTE]
-> This setting determines which users can install template apps on their Power BI accounts.
+![Power BI admin portal, Install template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-appsource.png)
+
+### Install template apps not listed on AppSource
+
+Control which users in the organization can download and install template apps **not listed on [AppSource](https://appsource.microsoft.com)**.
+
+![Power BI admin portal, Install template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-nonappsource.png)
 
 ## Capacity settings
 
