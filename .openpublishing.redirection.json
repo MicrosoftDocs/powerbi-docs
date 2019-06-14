@@ -377,8 +377,13 @@
         },
         {
             "source_path": "powerbi-docs/desktop-create-responsive-visuals.md", 
-            "redirect_url": "/power-bi/visuals/desktop-create-responsive-visuals",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/visuals/power-bi-report-visualizations",
+            "redirect_document_id": false
+        },
+		{
+            "source_path": "powerbi-docs/visuals/desktop-create-responsive-visuals.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-report-visualizations",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/desktop-matrix-visual.md", 
