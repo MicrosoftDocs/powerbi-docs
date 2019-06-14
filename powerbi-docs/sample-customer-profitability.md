@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/11/2019
+ms.date: 06/14/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -18,12 +18,14 @@ LocalizationGroup: Samples
 ## Overview of the Customer Profitability sample
 The Customer Profitability Sample content pack contains a dashboard, report, and dataset for a company that manufactures marketing materials. This dashboard was created by a CFO to see key metrics about her five business unit managers (executives), products, customers, and gross margins (GM). At a glance, she can see what factors are impacting profitability.
 
-![Power BI dashboard](media/sample-customer-profitability/power-bi-dash.png)
+![Dashboard for the Customer Profitability sample](media/sample-customer-profitability/power-bi-dash.png)
 
-This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports, and dashboards. This sample was created with real data by obviEnce ([www.obvience.com](http://www.obvience.com/)) that has been anonymized. The data is available in several formats: content pack/app, Excel workbook, or .pbix Power BI Desktop file. See [Samples for Power BI](sample-datasets.md).
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. This sample was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, Excel workbook, or .pbix Power BI Desktop file. See [Samples for Power BI](sample-datasets.md). This tutorial uses the Power BI service and the Customer Profitability Sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
 
 ## Prerequisites
-Want to follow along? This tutorial uses the Power BI service and the Customer Profitability Sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. Instructions for connecting to the content pack and the .pbix file are described in the following section.
+
+Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [pbix file](#get-the-pbix-file-for-this-sample), or 
+[Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the content pack for this sample
 
@@ -43,13 +45,11 @@ Want to follow along? This tutorial uses the Power BI service and the Customer P
 
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the [Customer Profitability Sample](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix) as a .pbix file, which is designed for use with Power BI Desktop.
-
+Alternatively, you can download the [Customer Profitability sample](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix) as a .pbix file, which is designed for use with Power BI Desktop.
 
 ### Get the Excel workbook for this sample
 
 If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529781). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
-
 
 
 ## What is our dashboard telling us?
@@ -194,11 +194,11 @@ Let's take a look at the Distribution industry.
 
     We can similarly explore other industries and even add customers to our visuals to understand causes for Valery's performance.
 
-This environment is a safe one to play in. You can always choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
+This environment is a safe one to play in. You can always choose not to save your changes. But if you do save them, you can select **Get Data** for a new copy of this sample.
 
 You can also [download just the dataset (Excel workbook) for this sample](http://go.microsoft.com/fwlink/?LinkId=529781).
 
 ## Next steps: Connect to your data
-We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into customer data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. Learn more about [getting started with the Power BI](service-get-started.md).
+We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into customer data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](service-get-started.md).
 
 [Samples for Power BI](sample-datasets.md)  
