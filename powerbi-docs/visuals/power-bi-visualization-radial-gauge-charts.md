@@ -89,7 +89,7 @@ These instructions use the Power BI service. To follow along, sign in to Power B
    ![Screenshot of the Gauge chart with the Average of COGS added.](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress_new.png)
 
    > [!NOTE]
-   > You can also manually enter a target value. See the [Use manual format options to set Minimum, Maximum, and Target values](#Use-manual-format-options-to-set-minimum-maximum-and-target-values) section.
+   > You can also manually enter a target value. See the [Use manual format options to set Minimum, Maximum, and Target values](#use-manual-format-options-to-set-minimum-maximum-and-target-values) section.
 
 ### Step 4: Set a maximum value
 
