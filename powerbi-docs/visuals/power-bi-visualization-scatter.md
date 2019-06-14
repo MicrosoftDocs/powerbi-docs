@@ -68,9 +68,9 @@ They're a great choice if you want to include categorical data along the X-Axis.
 
 ## Prerequisites
 
-- The Power BI service
+* The Power BI service
 
-- Retail Analysis Sample report
+* Retail Analysis Sample report
 
 ## Create a Scatter chart
 
@@ -90,7 +90,7 @@ To follow along, sign into [the Power BI service](https://app.powerbi.com) and o
 
 1. In the **Visualization** pane, select  ![Screenshot of the Scatter chart icon.](media/power-bi-visualization-scatter/power-bi-scatter-chart-icon.png) to convert the Cluster column chart to a Scatter chart.
 
-   ![](media/power-bi-visualization-scatter/power-bi-scatter-new.png).
+   ![Screenshot of the Cluster column chart becoming a Scatter chart.](media/power-bi-visualization-scatter/power-bi-scatter-new.png).
 
 1. Drag **District** from **Details** to **Legend**.
 

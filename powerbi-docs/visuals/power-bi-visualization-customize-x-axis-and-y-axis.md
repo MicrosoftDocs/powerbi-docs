@@ -140,7 +140,8 @@ First you'll create a Combo chart that looks at the impact store count has on sa
 
     ![Screenshot of the new Line chart.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-line-chart.png)
 
-    > [!NOTE] For help sorting by month, see [Sorting using other criteria](../consumer/end-user-change-sort.md#other).
+    > [!NOTE]
+    > For help sorting by month, see [Sorting using other criteria](../consumer/end-user-change-sort.md#other).
 
     In January Gross Margin percentage was 35%, peaked in April at 45%, dropped in July, and peaked again in August. Will we see a similar pattern in sales last year and this year?
 
