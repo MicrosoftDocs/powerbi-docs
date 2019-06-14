@@ -8,7 +8,7 @@ featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/14/2019
+ms.date: 06/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -60,7 +60,7 @@ In addition to what Scatter charts can do for you, Bubble charts are a great cho
 
 ### Dot Plot charts
 
-A Dot Plot chart similar to a Bubble chart and Scatter chart, but you can also plot numerical or categorical data along the X-Axis.
+A Dot Plot chart is similar to a Bubble chart and Scatter chart, but you can also plot numerical or categorical data along the X-Axis.
 
 ![Screenshot of a Dot Plot chart.](media/power-bi-visualization-scatter/power-bi-dot-plot.png)
 
@@ -90,7 +90,7 @@ To follow along, sign into [the Power BI service](https://app.powerbi.com) and o
 
 1. In the **Visualization** pane, select  ![Screenshot of the Scatter chart icon.](media/power-bi-visualization-scatter/power-bi-scatter-chart-icon.png) to convert the Cluster column chart to a Scatter chart.
 
-   ![Screenshot of the Cluster column chart becoming a Scatter chart.](media/power-bi-visualization-scatter/power-bi-scatter-new.png).
+   ![Screenshot of the Cluster column chart becoming a Scatter chart.](media/power-bi-visualization-scatter/power-bi-scatter-new.png)
 
 1. Drag **District** from **Details** to **Legend**.
 
@@ -121,11 +121,11 @@ Now let's add a third dimension.
 
 1. You can [format the visualization colors, labels, titles, background, and more](service-getting-started-with-color-formatting-and-axis-properties.md).
 
-    To [improve accessibility](../desktop-accessibility.md), consider adding marker shapes to each line. To select the marker shape, expand the **Shapes**, select **Marker shape**, and select a shape.
+    To [improve accessibility](../desktop-accessibility.md), consider adding marker shapes to each line. To select the marker shape, expand **Shapes**, select **Marker shape**, and select a shape.
 
     ![Screenshot of the Shapes drop-down with the Marker shape options called out.](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
-    You can change the marker shape to a diamond, triangle, or square. Using a different Marker shape for each line makes it easier for report consumers to differentiate lines (or areas) from each other.
+    You can change the marker shape to a diamond, triangle, or square. Using a different marker shape for each line makes it easier for report consumers to differentiate lines (or areas) from each other.
 
 ## Create a Dot Plot chart
 
@@ -139,7 +139,7 @@ From the **X-Axis** pane, remove **Sales per sq ft** and replace it with **Distr
 
 ### Your Scatter chart has only one data point
 
-Does your Scatter chart have only one data point that aggregates all the values on the X and Y axes?  Or maybe it aggregates all the values along a single horizontal or vertical line?
+Does your Scatter chart have only one data point that aggregates all the values on the X- and Y-axes?  Or maybe it aggregates all the values along a single horizontal or vertical line?
 
 ![Screenshot of a Scatter chart with one data point.](media/power-bi-visualization-scatter/pbi_scatter_tshoot1.png)
 
@@ -147,7 +147,7 @@ Add a field to the **Details** well to tell Power BI how to group the values. Th
 
 ![Screenshot of a Scatter chart with RowNum added to the Details well.](media/power-bi-visualization-scatter/pbi_scatter_tshoot.png)
 
-Or if you don’t have that in your data, create a field that concatenates your X and Y values together into something unique per point:
+If you don’t have that in your data, create a field that concatenates your X and Y values together into something unique per point:
 
 ![Screenshot of a Scatter chart with TempTime added to the Details well.](media/power-bi-visualization-scatter/pbi_scatter_tshoot2.png)
 

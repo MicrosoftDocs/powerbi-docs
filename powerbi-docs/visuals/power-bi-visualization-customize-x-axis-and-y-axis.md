@@ -8,7 +8,7 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual 
-ms.date: 06/14/2019
+ms.date: 06/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -36,9 +36,9 @@ To follow along, sign into [the Power BI service](https://app.powerbi.com) and o
 
 ### Create a Stacked column chart visualization
 
-Before you can customize you visualization, you have to build it.
+Before you can customize your visualization, you have to build it.
 
-1. In the Power BI service, expand **My Workspace**
+1. In the Power BI service, expand **My Workspace**.
 
 1. Scroll down and select **Retail Analysis Sample** from the list of **Datasets**.
 
@@ -62,11 +62,11 @@ Now you can customize your X-Axis.
 
    ![Screenshot of the X-axis options.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-axis.png)
 
-1. Turn the X-Axis on and off by selecting the **On** (or **Off**) slider. For now, leave it **On**.  
-
-    One reason you might want to turn off the X-Axis is to save space for more data.
+1. Turn the X-Axis on and off by selecting the **On** (or **Off**) slider. For now, leave it **On**.
 
     ![Screenshot ot the On slider.](media/power-bi-visualization-customize-x-axis-and-y-axis/onoffslider.png)
+
+    One reason you might want to turn off the X-Axis is to save space for more data.
 
 1. Format the text color, size, and font:
 
@@ -76,7 +76,7 @@ Now you can customize your X-Axis.
 
     - **Font family**: Select **Arial Black**
 
-1. Slide the **Title** option to **On** to display the name of the X-Axis. In this case, t's **FiscalMonth**.
+1. Slide the **Title** option to **On** to display the name of the X-Axis. In this case, it's **FiscalMonth**.
 
 1. Format the title text color, size, and font:
 
@@ -102,9 +102,9 @@ Next, you'll customize your Y-Axis.
 
 1. Turn the Y-Axis on and off by selecting the **On** (or **Off**) slider. For now, leave it **On**.  
 
-    One reason you might want to turn off the Y-Axis is to save space for more data.
-
     ![Screenshot ot the On slider.](media/power-bi-visualization-customize-x-axis-and-y-axis/onoffslider.png)
+
+    One reason you might want to turn off the Y-Axis is to save space for more data.
 
 1. Set the Y-Axis **Position** to **Right**.
 
@@ -116,7 +116,7 @@ Next, you'll customize your Y-Axis.
 
     - **Font family**: Select **Arial Black**
 
-1. Set **Display units** set to **Millions** and **Value decimal places** to *0*.
+1. Set **Display units** to **Millions** and **Value decimal places** to *0*.
 
 1. For this visualization, having a Y-Axis title doesn't improve the visual, so leave **Title** turned **Off**.  
 
@@ -124,7 +124,7 @@ Next, you'll customize your Y-Axis.
 
     - **Color**: Select dark grey
 
-    - **Stroke**: Enter *2*.
+    - **Stroke**: Enter *2*
 
 After all these customizations, your column chart should look something like this:
 
@@ -149,7 +149,7 @@ First you'll create a Combo chart that looks at the impact store count has on sa
 
     ![Screenshot of the Line chart with the new data added.](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
 
-    The scale of **Gross Margin Last Year %** (the blue line running along the **0M%** gridline) is much smaller than the scale of **Sales, which makes it difficult to compare. And the Y-Axis label percentages are ridiculous.
+    The scale of **Gross Margin Last Year %** (the blue line running along the **0M%** gridline) is much smaller than the scale of **Sales**, which makes it difficult to compare. And the Y-Axis label percentages are ridiculous.
 
 1. To make the visual easier to read and interpret, convert the Line chart to a Line and stacked column chart.
 

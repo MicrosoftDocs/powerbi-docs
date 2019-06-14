@@ -8,14 +8,14 @@ featuredvideoid: xmja6Epqa
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/14/2019
+ms.date: 06/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 
 # Radial gauge charts in Power BI
 
-A radial gauge chart has a circular arc and shows a single value that measures progress toward a goal or a Key Performance Indicator (KPI). The line (or *needle*) represents the goal or target value. The shading represnets the progress toward that goal. The The value inside the arc represents the progress value. Power BI spreads all possible values evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
+A Radial gauge chart has a circular arc and shows a single value that measures progress toward a goal or a Key Performance Indicator (KPI). The line (or *needle*) represents the goal or target value. The shading represents the progress toward that goal. The The value inside the arc represents the progress value. Power BI spreads all possible values evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
 
 ![Screenshot of  Radial gauge.](media/power-bi-visualization-radial-gauge-charts/gauge_m.png)
 
@@ -49,7 +49,7 @@ These instructions use the Power BI service. To follow along, sign in to Power B
 
 ### Step 1: Open the Financial Sample Excel file
 
-1. Download the [Financial Sample Excel file](../sample-financial-download.md) if you haven't already. Remember where you saved it.
+1. If you haven't already, download the [Financial Sample Excel file](../sample-financial-download.md). Remember where you saved it.
 
 1. In the Power BI service, select **Get Data** > **Files**.
 
@@ -84,9 +84,11 @@ These instructions use the Power BI service. To follow along, sign in to Power B
 
 1. Change the aggregation to **Average**.
 
-   Power BI adds a needle to represent our target value of **$145.48K**. Notice that we've exceeded our target.
+   Power BI adds a needle to represent our target value of **$145.48K**.
 
    ![Screenshot of the Gauge chart with the Average of COGS added.](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress_new.png)
+
+    Notice that we've exceeded our target.
 
    > [!NOTE]
    > You can also manually enter a target value. See the [Use manual format options to set Minimum, Maximum, and Target values](#use-manual-format-options-to-set-minimum-maximum-and-target-values) section.

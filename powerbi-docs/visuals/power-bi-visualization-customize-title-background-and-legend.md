@@ -8,7 +8,7 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/14/2019
+ms.date: 06/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 In this tutorial, you'll learn a few different ways to customize your visualizations. There are so many options for customizing your visualizations. The best way to learn about them all is by exploring the **Format** pane (select the paint roller icon). To get you started, this article shows you how to customize a visualization title, legend, and background.
 
-You can't customize all visualizations. See the [complete list](#visualization-types-that-you-can-customize).
+You can't customize all visualizations. See the [complete list](#visualization-types-that-you-can-customize) of visualizations for details.
 
 Fast-forward to 4:50 in the video for a demonstration of how to customize visualizations:
 
@@ -52,7 +52,7 @@ To follow along, sign into [the Power BI service](https://app.powerbi.com) and o
 
    ![Screenshot of the On slider.](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
 
-1. Enter *Store count by month opened* in the **Title Text** by text field to change the title.
+1. To change the title, enter *Store count by month opened* in the **Title text** field.
 
 1. Change **Font color** to orange and **Background color** to yellow.
 
@@ -98,7 +98,7 @@ To revert all the title background customization you've done, select **Revert to
 
 1. Open the **Overview** report page and select the **Total Sales Variance by FiscalMonth and District Manager** chart.
 
-1. In the **Visualization** tab, select the paint brush icon to open the Format pane.
+1. In the **Visualization** tab, select the paint roller icon to open the Format pane.
 
 1. Expand **Legend** options:
 

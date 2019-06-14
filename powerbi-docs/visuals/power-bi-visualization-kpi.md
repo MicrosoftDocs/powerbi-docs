@@ -8,7 +8,7 @@ featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 06/24/2019
+ms.date: 06/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 #Customer intent: as a report creator, I want to understand when to use a KPI to visualize my data because there are so many different visual types, I want to be sure that a KPI is the best choice for my intent.  
@@ -81,15 +81,15 @@ To follow along, open the [Retail Analysis .PBIX file](http://download.microsoft
 
     * **Trend axis** - when set to **On**, the visual shows the trend axis as the background of the KPI visual.  
 
-    * **Goals** - when set to **On**, the visual shows the goal and the distance from the goal as a percentage.
+    * **Target goals** - when set to **On**, the visual shows the goal and the distance from the goal as a percentage.
 
     * **Color coding > Direction** - people consider some KPIs better for *higher* values and consider some better for *lower* values. For example, earnings versus wait time. Typically a higher value of earnings is better versus a higher value of wait time. Select **high is good** and, optionally, change the color settings.
 
-KPIs are also available in the Power BI service and on your mobile devices – keeping you always connected to your business's heartbeat.
+KPIs are also available in the Power BI service and on your mobile devices. It gives you the option to be always connected to your business's heartbeat.
 
 ## Considerations and troubleshooting
 
-If your KPI doesn't look like the one above, it may be because you didn't sort by FiscalMonth. KPIs don't have a sort option. You'll need to start again and sort by FiscalMonth *before* you convert your visualization to a KPI.
+If your KPI doesn't look like the one above, it may be because you didn't sort by **FiscalMonth**. KPIs don't have a sort option. You'll need to start again and sort by **FiscalMonth** *before* you convert your visualization to a KPI.
 
 ## Next steps
 
