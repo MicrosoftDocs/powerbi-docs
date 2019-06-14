@@ -15,11 +15,11 @@ LocalizationGroup: Visualizations
 
 # Radial gauge charts in Power BI
 
-A radial gauge chart has a circular arc and shows a single value that measures progress toward a goal or a Key Performance Indicator (KPI).  The goal, or target value, is represented by the line (needle). Progress toward that goal is represented by the shading.  The value that represents that progress is shown inside the arc. All possible values are spread evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
+A radial gauge chart has a circular arc and shows a single value that measures progress toward a goal or a Key Performance Indicator (KPI). The line (or *needle*) represents the goal or target value. The shading represnets the progress toward that goal. The The value inside the arc represents the progress value. Power BI spreads all possible values evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
 
 ![Screenshot of  Radial gauge.](media/power-bi-visualization-radial-gauge-charts/gauge_m.png)
 
-In this example, you're a car retailer tracking the sales team's average sales per month. The goal is 140 and represented by the needle. The minimum possible average sales is 0 and the maximum is 200.  The blue shading shows that the team is averaging approximately 120 sales this month. Luckily, there is still another week to reach the goal.
+In this example, you're a car retailer tracking the sales team's average sales per month. The goal is 140 and represented by the needle. The minimum possible average sales is 0 and the maximum is 200.  The blue shading shows that the team is averaging approximately 120 sales this month. Luckily, there's still another week to reach the goal.
 
 Watch Will show you how to create single metric visuals: gauges, cards, and KPIs.
 
@@ -55,11 +55,11 @@ These instructions use the Power BI service. To follow along, sign in to Power B
 
 1. Select **Local File** and browse to the location where you saved the file.
 
-1. Select **Import**. The Financial Sample is added to your workspace as a dataset.
+1. Select **Import**. Power BI adds the Financial Sample to your workspace as a dataset.
 
 1. From the **Datasets** content list, select the **Create report** icon for the **Financial Sample**.
 
-    ![Screenshot of the Datasets list with the an arrow to the Create report icon for the Financial Sample.](media/power-bi-visualization-radial-gauge-charts/power-bi-dataset.png)
+    ![Screenshot of the Datasets list with an arrow pointing to the Create report icon for the Financial Sample.](media/power-bi-visualization-radial-gauge-charts/power-bi-dataset.png)
 
 ### Step 2: Create a gauge to track Gross Sales
 
@@ -76,7 +76,7 @@ These instructions use the Power BI service. To follow along, sign in to Power B
     ![Screenshot of the Gauge chart.](media/power-bi-visualization-radial-gauge-charts/gauge_no_target.png)
 
     > [!TIP]
-    > By default, Power BI creates a Gauge chart where the current value (in this case, **Average of Gross Sales**) is assumed to be at the halfway point on the gauge. Since the **Average of Gross Sales** value is $182.76K, the start value (Minimum) is set to 0 and the end value (Maximum) is set to double the current value.
+    > By default, Power BI creates a Gauge chart where it assumes the current value (in this case, **Average of Gross Sales**) is at the halfway point on the gauge. Since the **Average of Gross Sales** value is $182.76K, the start value (Minimum) is set to 0 and the end value (Maximum) is set to double the current value.
 
 ### Step 3: Set a target value
 

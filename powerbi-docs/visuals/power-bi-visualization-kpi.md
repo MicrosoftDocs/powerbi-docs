@@ -16,7 +16,7 @@ LocalizationGroup: Visualizations
 
 # Key Performance Indicator (KPI) visuals
 
-A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more about KPIs, see [Key Performance Indicators (KPIs) in PowerPivot](https://docs.microsoft.com/previous-versions/sql/sql-server-2012/hh272050(v=sql.110)).
+A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more about KPIs, see [Key Performance Indicators (KPIs) in PowerPivot](/previous-versions/sql/sql-server-2012/hh272050(v=sql.110)).
 
 Watch Will show you how to create single metric visuals: gauges, cards, and KPIs.
 
