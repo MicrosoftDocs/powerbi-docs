@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/05/2019
+ms.date: 06/17/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ---
@@ -21,7 +21,7 @@ A Power BI report is a multi-perspective view into a dataset, with visuals that 
 
 This report has four pages (or tabs) and you're currently viewing the **Sentiment** page. On this page are five different visuals and a page title.
 
-If you're new to Power BI, you can get a good foundation by reading [Basic concepts for Power BI service consumers](end-user-basic-concepts.md). Reports are available for viewing, sharing, and annotating on mobile devices. For more info, see [Explore reports in the Power BI mobile apps](mobile/mobile-reports-in-the-mobile-apps.md).
+If you're new to Power BI, you can get a good foundation by reading [Basic concepts for the Power BI service consumers](end-user-basic-concepts.md). Reports are available for viewing, sharing, and annotating on mobile devices. For more info, see [Explore reports in the Power BI mobile apps](mobile/mobile-reports-in-the-mobile-apps.md).
 
 ## Advantages of reports
 
@@ -61,10 +61,10 @@ Depending on your role, you may be a *designer*, someone who creates reports for
 
 Or you may be a *consumer*, someone who receives reports from others. You'll want to learn how to understand and interact with the reports. If you're a report *consumer*, these links are for you:
 
-* Start with a [tour of Power BI service](end-user-basic-concepts.md) so you know where to find reports and report tools.
+* Start with a [tour of the Power BI service](end-user-basic-concepts.md) so you know where to find reports and report tools.
 * Learn how to [open a report](end-user-report-open.md) and all the interaction available in [Reading view](end-user-reading-view.md).
 * Get comfortable with reports by taking a tour of one of our [samples](../sample-tutorial-connect-to-the-samples.md).  
-* To see which dataset the report is using and which dashboards have tiles pinned from the report, see [View related content in Power BI service](end-user-related.md).
+* To see which dataset the report is using and which dashboards have tiles pinned from the report, see [View related content in the Power BI service](end-user-related.md).
 <!--* Don't need the report any more? You can [remove it](../service-delete.md).-->
 
 > [!TIP]
@@ -74,4 +74,4 @@ Or you may be a *consumer*, someone who receives reports from others. You'll wan
 
 [What is Power BI?](../power-bi-overview.md)
 
-[Basic concepts for Power BI service consumers](end-user-basic-concepts.md)
+[Basic concepts for the Power BI service consumers](end-user-basic-concepts.md)
