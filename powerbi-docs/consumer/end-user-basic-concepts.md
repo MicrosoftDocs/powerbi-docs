@@ -96,7 +96,7 @@ On dataset...
 
   ![A graphic showing a dataset with many to one relationships](media/end-user-basic-concepts/drawing2.png)
 
-Additionally, you can use datasets from other workspaces to create content (reports, dashboards) in your workspace. Power BI shows these datasets using the referenced dataset icon:
+Additionally, designers can use datasets from other workspaces to create content (reports, dashboards) in their workspace. Power BI shows these datasets using the referenced dataset icon:
 
 ![A screenshot of a database with link icon.](media/end-user-basic-concepts/power-bi-dataset-reference-icon.png)
 
