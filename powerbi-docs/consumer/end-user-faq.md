@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 6/17/2019
 ms.author: mihart
 LocalizationGroup: Get started
 ---
@@ -18,9 +18,9 @@ LocalizationGroup: Get started
 * If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
 * Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 
-## What is Microsoft Power BI service?
+## What is the Microsoft Power BI service?
 
-Power BI service is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of cloud-based and on-premises data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life. Read more about [Power BI](../power-bi-overview.md).
+The Power BI service is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of cloud-based and on-premises data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life. Read more about [Power BI](../power-bi-overview.md).
 
 ## What’s the difference between Power BI Pro and Power BI Premium?
 
@@ -44,9 +44,9 @@ You can view the Azure Active Directory Integrated Applications report for Power
 
 ## What is Power BI Desktop?
 
-Power BI Desktop is a free application you can install right on your own computers. Power BI Desktop works cohesively with the Power BI service.  Data scientists, admins, and developers work with Power BI Desktop to produce reports and make them available to Power BI service users, like you. Read more about [What is Power BI Desktop](../desktop-what-is-desktop.md).
+Power BI Desktop is a free application you can install right on your own computers. Power BI Desktop works cohesively with the Power BI service.  Data scientists, admins, and developers work with Power BI Desktop to produce reports and make them available to the Power BI service users, like you. Read more about [What is Power BI Desktop](../desktop-what-is-desktop.md).
 
-## What do I need to use Power BI service?
+## What do I need to use the Power BI service?
 
 Just a Web browser and work email address. You can sign up with a *.gov* and *.mil* email address. See [Enroll your US Government organization in the Power BI service](../service-govus-signup.md) for more info.
 

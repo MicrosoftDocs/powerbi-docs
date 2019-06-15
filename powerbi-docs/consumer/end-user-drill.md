@@ -1,6 +1,6 @@
 ---
 title: Drill down and drill up in a visualization
-description: This document shows how to drill down in a visualization in Microsoft Power BI service and Power BI Desktop.
+description: This document shows how to drill down in a visualization in the Microsoft Power BI service and Power BI Desktop.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 6/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -34,7 +34,7 @@ Dates are a unique type of hierarchy. When you add a date field to a visualizati
 
 ## Prerequisites
 
-1. In Power BI service or Desktop, drill requires a visualization with a hierarchy.
+1. In the Power BI service or Desktop, drill requires a visualization with a hierarchy.
 
 1. To follow along, open the [Retail Analysis sample](../sample-datasets.md). Create a **Treemap** visualization that looks at:
 
@@ -157,7 +157,7 @@ Having a treemap that shows us only a postal code isn't informative.  So let's e
 
 As you work in Drill mode, you get to decide how drill down and expanding impacts the other visualizations on the page.
 
-By default, drilling won't filter other visuals in a report. You can enable this feature in Power BI Desktop and Power BI service.
+By default, drilling won't filter other visuals in a report. You can enable this feature in Power BI Desktop and the Power BI service.
 
 1. In Desktop, select the **Format** tab and select the checkbox for **Drilling filters other visuals**.
 
@@ -170,9 +170,9 @@ By default, drilling won't filter other visuals in a report. You can enable this
     ![Screenshot of the another result in Desktop.](./media/end-user-drill/power-bi-drill-filters2.png)
 
 > [!NOTE]
-> To enable this in Power BI service, from the top menu bar, select **Visual interactions** > **Drilling filters other visuals**.
+> To enable this in the Power BI service, from the top menu bar, select **Visual interactions** > **Drilling filters other visuals**.
 >
-> ![Screenshot of the Drilling filters other visuals setting in Power BI service](./media/end-user-drill/power-bi-drill-filters-service.png)
+> ![Screenshot of the Drilling filters other visuals setting in the Power BI service](./media/end-user-drill/power-bi-drill-filters-service.png)
 
 ## Learn about the hierarchy axis and hierarchy group
 
