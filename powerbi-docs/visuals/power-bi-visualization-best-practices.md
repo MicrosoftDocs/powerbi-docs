@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/11/2019
+ms.date: 06/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -190,11 +190,11 @@ When readers look at your report, their eyes should focus on the element you wan
 
 Sometimes the titles on visualizations aren’t enough to tell the story. Add text boxes to communicate with the people viewing your reports. Use text boxes to describe the report page, a grouping of visuals, or describe an individual visual. They explain results or better-define a visual, components in the visual, or relationships between visuals. You can use text boxes to draw attention based on different criteria called out in the text box.
 
-In Power BI service, from the top menu bar, select **Text Box**. (In Power BI Desktop, select **Text Box** from the **Insert** area of the ribbon.)
+In the Power BI service, from the top menu bar, select **Text Box**. (In Power BI Desktop, select **Text Box** from the **Insert** area of the ribbon.)
 
-![Add a text box.](media/power-bi-visualization-best-practices/power-bi-text-boxes.png)
+![Add a text box in the Power BI service.](media/power-bi-visualization-best-practices/power-bi-text-boxes.png)
 
-**Figure 8: Add a text box in Power BI service**
+**Figure 8: Add a text box in the Power BI service**
 
 Enter text in the empty box. Then use the controls at the bottom to set font, size, alignment, and more. Use the handles to resize the box.
 
@@ -212,9 +212,9 @@ Create a text style guide and apply it to all pages of your report. Pick just a 
 
 Shapes can also aid navigation and comprehension. Use shapes to group related info together, highlight important data, and use arrows to direct the eye. Shapes help readers understand where to start and how to interpret your report. In design terms, it's often referred to as *contrast*.
 
-![Shapes in Power BI service.](media/power-bi-visualization-best-practices/shapes.png)
+![Shapes in the Power BI service.](media/power-bi-visualization-best-practices/shapes.png)
 
-**Figure 10a: Shapes in Power BI service**
+**Figure 10a: Shapes in the Power BI service**
 
 ![Shapes in Power BI Desktop.](media/power-bi-visualization-best-practices/power-bi-desktop-shapes2new.png)
 
