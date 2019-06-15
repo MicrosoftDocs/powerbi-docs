@@ -81,7 +81,7 @@ Beginning with the October 2018 release of **Power BI Desktop**, the **Fields** 
 
 To improve the process of creating reports with screen readers, a context menu is available to allow moving fields in the well up or down in the **Fields** list, or moving the field to other wells, such as **Legend** or **Value** or others.
 
-![Context menu in the Fields well lets you move fields up, down, or to another area](media/desktop-accessibility/accessibility_09.png)
+![Context menu in the Fields well lets you move fields up, down, or to another area](media/desktop-accessibility/accessibility-09.png)
 
 ## High contrast support for reports
 
