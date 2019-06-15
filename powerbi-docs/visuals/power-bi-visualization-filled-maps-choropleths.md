@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 06/12/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 # Filled maps (choropleths) in Power BI
 A filled map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region.  Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).    
 
-![US map](media/power-bi-visualization-filled-maps-choropleths/large_map.png)
+![US map](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
 
 ## What is sent to Bing
 Power BI integrates with Bing to provide default map coordinates (a process called geo-coding). When you create a map visualization in Power BI service or Power BI Desktop, the data in the **Location**, **Latitude**, and **Longitude** buckets (that is being used to create that visualization) is sent to Bing.
@@ -51,10 +51,11 @@ In this video, Kim creates a basic map and converts it to a filled map.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 ### Get data and add a new blank page to the report
-1. To create your own filled map, [download the Sales and Marketing sample](../sample-datasets.md) by signing in to Power BI and selecting **Get Data \> Samples \> Sales and Marketing \> Connect**.
-2. When the success message appears, close it and select the **Reports** tab. Then choose **Sales and Marketing Sample** to open the report.
+1. To create your own filled map, [download the Sales and Marketing sample](../sample-datasets.md) by signing in to Power BI and selecting **Get Data \> Samples \> Sales and Marketing \> Connect**. Or get the **Power BI Sales and Marketing** app on appsource.com. 
 
-   ![Reports content list](media/power-bi-visualization-filled-maps-choropleths/power-bi-content-reports2.png)
+2. Open the Sales and Marketing report.
+
+   ![Sales and marketing report opens](media/power-bi-visualization-filled-maps-choropleths/power-bi-report-canvas.png)
 3. Power BI opens the report. Select **Edit report** to open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
 
 4. Add a new page by selecting the yellow plus sign at the bottom of the report canvas.
@@ -85,7 +86,7 @@ In this video, Kim creates a basic map and converts it to a filled map.
 9. [Save the report](../service-report-save.md).
 ##    Adjust the color formatting
 Power BI gives you plenty of control over the appearance of your filled map.
-1. Select the paintroller icon to open the Formatting pane.
+1. Select the paint roller icon to open the Formatting pane.
 
     ![Formatting pane](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-colors.png)
 
@@ -119,13 +120,13 @@ Highlighting a location in a filled Map cross-filters the other visualizations o
 ## Considerations and troubleshooting
 Map data can be ambiguous.  For example, there's a Paris, France, but there's also a Paris, Texas. Your geographic data is probably stored in separate columns – a column for city names, a column for state or province names, etc. – so Bing may not be able to tell which Paris is which. If your dataset already contains latitude and longitude data, Power BI has special fields to help make the map data unambiguous. Just drag the field that contains your latitude data into the Visualizations \> Latitude area.  And do the same for your longitude data.    
 
-![Visualizations and Fields panes](media/power-bi-visualization-filled-maps-choropleths/pbi_latitude.png)
+![Visualizations and Fields panes](media/power-bi-visualization-filled-maps-choropleths/pbi-latitude.png)
 
 If you have permissions to edit the dataset in Power BI Desktop, watch this video for help addressing map ambiguity.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Co2z9b-s_yM" frameborder="0" allowfullscreen></iframe>
 
-If you do not have access to latitude and longitude data, [follow these instructions to update your dataset](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
+If you do not have access to latitude and longitude data, but you do have edit access to the dataset, [follow these instructions to update your dataset](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 
 For more help with Map visualizations, see [Tips and tricks for map visualizations](../power-bi-map-tips-and-tricks.md).
 

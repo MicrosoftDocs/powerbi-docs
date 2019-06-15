@@ -37,4 +37,4 @@ In setting up subscriptions, you choose how often you want to receive the emails
 
 [Subscribe yourself and others to reports and dashboards in the Power BI service](service-report-subscribe.md)
 
-[What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
+[What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)

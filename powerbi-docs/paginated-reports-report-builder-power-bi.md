@@ -1,5 +1,5 @@
 ---
-title: "What are paginated reports in Power BI Premium? (Preview)"
+title: "What are paginated reports in Power BI Premium?"
 description: Paginated reports, long the standard report format in SQL Server Reporting Services, are now available in the Power BI service. These reports can be printed or shared. You can control the report layout exactly. They display all the data in a table, for example, even if the table spans multiple pages.  
 author: maggiesMSFT
 ms.author: maggies
@@ -8,18 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 05/20/2019
+ms.date: 06/06/2019
 ---
 
-# What are paginated reports in Power BI Premium? (Preview)
+# What are paginated reports in Power BI Premium?
 
 Paginated reports, long the standard report format in SQL Server Reporting Services, are now available in the Power BI service. These reports can be printed or shared. They're called "paginated" because they're formatted to fit well on a page. They display all the data in a table, even if the table spans multiple pages. They're sometimes called "pixel perfect" because you can control their report page layout exactly. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. Report Builder is the standalone tool for authoring paginated reports. 
 
 Paginated reports can have many pages. For example, this report has 563 pages. Each page is laid out exactly, with one page per invoice and repeating headers and footers.
 
-![Paginated report in the Power BI service](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
+![Paginated](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-You can preview your report in Report Builder, then publish it to the Power BI service, http://app.powerbi.com. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in app workspaces, as long as the workspace is in a Power BI Premium capacity. Also, a Power BI admin needs to enable paginated reports in the Power BI admin portal. 
+![Paginated report in the Power BI service](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
+
+You can preview your report in Report Builder, then publish it to the Power BI service, http://app.powerbi.com. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in app workspaces, as long as the workspace is in a Power BI Premium capacity. Also, a Power BI admin needs to enable paginated reports in the [Premium capacities section](service-admin-premium-workloads.md#paginated-reports-preview) of the Power BI admin portal. 
 
 ## Create reports in Power BI Report Builder
 
@@ -36,8 +38,7 @@ A single paginated report can have a number of different data sources. It doesn'
 - Power BI Premium Datasets
 - Oracle
 - Teradata
- 
-More data sources will be coming during the preview period.
+- Additional sources as they're added
 
 ## Design your report  
 
