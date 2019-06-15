@@ -16,10 +16,10 @@ LocalizationGroup: Create reports
 # Accessibility in Power BI Desktop reports
 Power BI has features that enable people with disabilities to more easily consume and interact with Power BI reports. These features include the ability to consume a report using the keyboard or a screen reader, tabbing to focus on various objects on a page, and thoughtful use of markers in visualizations.
 
-![Use different markers for line and area charts to improve accessibility](media/desktop-accessibility/accessibility_01.png)
+![Use different markers for line and area charts to improve accessibility](media/desktop-accessibility/accessibility-01.png)
 
 ## Consuming a Power BI Desktop report with a keyboard or screen reader
-Beginning with the September 2017 release of **Power BI Desktop**, you can press **Shift**+**?** to show a window that describes the accessibility keyboard shortcuts available in **Power BI Desktop**.
+Beginning with the September 2017 release of **Power BI Desktop**, you can press **Shift + ?** to show a window that describes the accessibility keyboard shortcuts available in **Power BI Desktop**.
 
 ![Press Shift+? in Power BI Desktop to show accessibility keyboard shortcuts](media/desktop-accessibility/accessibility_03.png)
 
@@ -27,32 +27,32 @@ With the accessibility enhancements, you can consume a Power BI report with a ke
 
 When viewing a report, generally you should have scan mode off.
 
-You can switch focus between the report page tabs, or objects on a given report page, using **Ctrl**+**F6**.
+You can switch focus between the report page tabs, or objects on a given report page, using **Ctrl + F6**.
 
 * When focus is on *report page tabs*, use the **Tab** or **Arrow** keys to move focus from one report page to the next. The title of the report page, and whether it's currently selected, is read out by the screen reader. To load the report page currently under focus, use the **Enter** key or spacebar.
-* When focus is on a loaded *report page*, use the **Tab** key to shift focus to each object on the page, which includes all textboxes, images, shapes, and charts. The screen reader reads the type of object, the object's title (if it has one), and a description of that object if it's provided by the report author. 
+* When focus is on a loaded *report page*, use the **Tab** key to shift focus to each object on the page, which includes all textboxes, images, shapes, and charts. The screen reader reads the type of object and the object's title (if it has one). The screen reader also reads a description of that object if it's provided by the report author. 
 
-As you navigate between visuals you can press **Alt**+**Shift**+**F10** to move focus to the visual header, which contains various options including sorting, exporting the data behind the chart, and Focus mode. 
+As you navigate between visuals you can press **Alt + Shift + F10** to move focus to the visual header, which contains various options including sorting, exporting the data behind the chart, and Focus mode. 
 
 ![Press Alt+Shift+F10 in Power BI Desktop to move focus to the visual header](media/desktop-accessibility/accessibility_08.png)
 
-You can press **Alt**+**Shift**+**F11** to present an accessible version of the **Show data** window. This lets you explore the data used in the visual in an HTML table, using the same keyboard shortcuts you normally use with your screen reader. 
+You can press **Alt + Shift + F11** to present an accessible version of the **Show data** window. This lets you explore the data used in the visual in an HTML table, using the same keyboard shortcuts you normally use with your screen reader. 
 
 ![Press Alt+Shift+F11 in Power BI Desktop to display an accessible See Data window for a visual](media/desktop-accessibility/accessibility_04.png)
 
 > [!NOTE]
 > The Show data feature is only accessible to a screen reader through this keyboard shortcut. If you open Show data through the option in the visual header, it won't be accessible to a screen reader. When using Show data, turn on scan mode to take advantage of all the hot keys your screen reader provides.
 
-Beginning with the July 2018 release of **Power BI Desktop**, slicers also have accessibility functionality built in. When you select a slicer, to adjust the value of a slicer use **Ctrl**+**Right arrow key** (control plus the Right arrow key) to move through the various controls within the slicer. For example, when you initially press **Crtl**+**Right arrow key**, the focus is on the eraser, and pressing the spacebar is equivalent to clicking the eraser button, which erases all values on the slicer. 
+Beginning with the July 2018 release of **Power BI Desktop**, slicers also have accessibility functionality built in. When you select a slicer, to adjust the value of a slicer use **Ctrl + Right arrow** (control plus the Right arrow key) to move through the various controls within the slicer. For example, when you initially press **Crtl + Right arrow**, the focus is on the eraser, and pressing the spacebar is equivalent to clicking the eraser button, which erases all values on the slicer. 
 
 You can move through the controls in a slicer by pressing the **Tab** key. Pressing the **Tab** key when on the eraser moves to the drop-down button. Another **Tab** then moves to the first slicer value (if there are multiple values for the slicer, such as a range). 
 
-![Press CTRL+Right arrow key in Power BI Desktop to adjust element or values in a slicer, press the spacebar to select the element and adjust its value](media/desktop-accessibility/accessibility_07.png)
+![Press Ctrl + Right arrow key in Power BI Desktop to adjust element or values in a slicer, press the spacebar to select the element and adjust its value](media/desktop-accessibility/accessibility_07.png)
 
 These accessibility additions were created to let users fully consume Power BI reports using a screen reader and keyboard navigation.
 
 ## Tips for creating accessible reports
-The following tips can help you create **Power BI Desktop** reports that are more accessible.
+The following tips can help you create **Power BI Desktop reports that are more accessible.
 
 ### General tips for accessible reports
 
@@ -61,7 +61,7 @@ The following tips can help you create **Power BI Desktop** reports that are mor
   * To turn *Markers* on, select the **Format** section in the **Visualizations** pane, expand the **Shapes** section, then scroll down to find the **Markers** toggle and turn it to *On*.
   * Then, select the name of each line (or area, if using an **Area** chart) from the drop-down box in that **Shapes** section. Below the drop-down, you can then adjust many aspects of the marker used for the selected line, including its shape, color, and size.
   
-  ![Use different markers for line and area charts to improve accessibility](media/desktop-accessibility/accessibility_01.png)
+  ![Use different markers for line and area charts to improve accessibility](media/desktop-accessibility/accessibility-01.png)
   
   * Using a different *Marker shape* for each line makes it easier for report consumers to differentiate lines (or areas) from each other.
 * As a follow on to the previous bullet, don't rely on color to convey information. In addition to using shapes on line and scatter charts, don't rely on conditional formatting to provide insights in tables and matrices. 
