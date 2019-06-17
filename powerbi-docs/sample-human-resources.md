@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/14/2019
+ms.date: 06/17/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -68,44 +68,52 @@ Let’s explore new hires first.
 
    ![New Hires page](media/sample-human-resources/hr3.png)
 
-Items of interest:
+   Items of interest:
 
-* The **New Hire Count, New Hires SPLY and Actives YoY % Change by Month** combo chart shows we hired more people every month this year compared to last year. Significantly more people in some months.
-* In the combo chart **New Hire Count and Active Employee Count by Region and Ethnicity**, notice we’re hiring fewer people in the **East** region.
-* The **New Hires YoY Var by Age Group** waterfall chart shows we’re hiring mainly younger people. This trend may be due to the mostly part-time nature of the jobs.
-* The **New Hire Count by Gender** pie chart shows a roughly even split.
+   * The **New Hire Count, New Hires SPLY and Actives YoY % Change by Month** combo chart shows we hired more people every month this year compared to last year. Significantly more people in some months.
+   * In the combo chart **New Hire Count and Active Employee Count by Region and Ethnicity**, notice we’re hiring fewer people in the **East** region.
+   * The **New Hires YoY Var by Age Group** waterfall chart shows we’re hiring mainly younger people. This trend may be due to the mostly part-time nature of the jobs.
+   * The **New Hire Count by Gender** pie chart shows a roughly even split.
 
-Can you find more insights; for example, a region where the gender split is not even? Select different age groups and genders in the charts to explore the relationships between age, gender, region, and ethnicity group.
+   Can you find more insights? For example, a region where the gender split is not even. Select different age groups and genders in the charts to explore the relationships between age, gender, region, and ethnicity group.
 
-Select **Human Resource Sample** from the top navbar to return to the dashboard.
+4. Select **Human Resource Sample** from the top navbar to return to the dashboard.
 
-![Return to dashboard](media/sample-human-resources/power-bi-breadcrumbs.png)
+   ![Return to dashboard](media/sample-human-resources/power-bi-breadcrumbs.png)
 
 ## Compare currently active and former employees
 Let’s explore data for currently active employees and employees who no longer work for the company.
 
-On the dashboard, select the **Active Employee Count by Age Group** tile.  
-![Active Employee Count by Age Group tile](media/sample-human-resources/pbi_hr_sample_activepie.png)
+- On the dashboard, select the **Active Employee Count by Age Group** tile.
 
-The Human Resources Sample report opens to the **Active Employees vs. Separations** page.  
-![Active Employees vs. Separations page](media/sample-human-resources/hr5.png)
+   ![Active Employee Count by Age Group tile](media/sample-human-resources/pbi_hr_sample_activepie.png)
 
-Items of interest:
+   The Human Resources Sample report opens to the **Active Employees vs. Separations** page.  
 
-* The two combo charts on the left show the year-over-year change for active employees and employee separations. We have more active employees this year due to rapid hiring, but also more separations than last year.
-* In August, we had more separations compared to other months. Select the different age groups, genders, or regions to see if you can find any outliers.
-* Looking at the pie charts, we notice we have an even split in our active employees by gender and age groups. Select different age groups to see how the gender split differs by age. Do we have an even split by gender in every age group?
+   ![Active Employees vs. Separations page](media/sample-human-resources/hr5.png)
+
+   Items of interest:
+
+   * The two combo charts on the left show the year-over-year change for active employees and employee separations. We have more active employees this year due to rapid hiring, but also more separations than last year.
+   * In August, we had more separations compared to other months. Select the different age groups, genders, or regions to see if you can find any outliers.
+   * Looking at the pie charts, we notice we have an even split in our active employees by gender and age groups. Select different age groups to see how the gender split differs by age. Do we have an even split by gender in every age group?
 
 ## Reasons for separation
-Let’s look at the report in Editing View. Select **Edit report** in the upper-left corner.
+Let’s look at the report in Editing View. You can change the pie charts to show employee separations data instead of active employee data.
 
-Change the pie charts to show employee separations data instead of active employees.
+1. Select **Edit report** in the upper-left corner.
 
-1. Select the **Active Employee Count by Age Group** pie chart.
-2. In **Fields**, select **Employees** to expand the **Employees** table. Clear **Active Employee Count** to remove that field.
-3. Select **Separation Count** in the **Employees** table to add it to the **Values** box in the **Fields** area.
-4. On the report canvas, select the **Voluntary** bar in the **Separation Count by Separation Reason** bar chart. This bar highlights those employees who left voluntarily in the other visuals in the report.
-5. Select the 50+ slice of the **Separation Count by Age Group** pie chart.
+2. Select the **Active Employee Count by Age Group** pie chart.
+
+3. In **Fields**, select **Employees** to expand the **Employees** table. Clear **Active Employee Count** to remove that field.
+
+4. Select **Separation Count** in the **Employees** table to add it to the **Values** box in the **Fields** area.
+
+5. On the report canvas, select the **Voluntary** bar in the **Separation Count by Separation Reason** bar chart. 
+
+   This bar highlights those employees who left voluntarily in the other visuals in the report.
+
+6. Select the 50+ slice of the **Separation Count by Age Group** pie chart.
 
    Look at the line chart in the lower-right corner. This chart is filtered to show voluntary separations.  
 
@@ -113,8 +121,9 @@ Change the pie charts to show employee separations data instead of active employ
 
    Notice the trend in the 50+ age group. During the latter part of the year, more employees over age 50 left voluntarily. This trend is an area to investigate further with more data.
 
-6. You can also follow the same steps for the **Active Employee Count by Gender** pie chart, changing it to separations instead of active employees. Look at the voluntary separation data by gender to see if you find any other insights.
-7. Select **Human Resource Sample** from the top navbar to return to the dashboard. You can choose to save the changes you’ve made to the report.
+7. You can also follow the same steps for the **Active Employee Count by Gender** pie chart, changing it to separations instead of active employees. Look at the voluntary separation data by gender to see if you find any other insights.
+
+8. Select **Human Resource Sample** from the top navbar to return to the dashboard. You can choose to save the changes you’ve made to the report.
 
 ## Bad hires
 The last area to explore is bad hires. Bad hires are defined as employees who didn’t last for more than 60 days. We’re hiring rapidly, but are we hiring good candidates?
@@ -122,10 +131,13 @@ The last area to explore is bad hires. Bad hires are defined as employees who di
 1. Select the **Bad Hires as % of Actives by Age Group** dashboard tile. The report opens to tab three, **Bad Hires**.
 
    ![Bad Hires as % of Actives by Age Group tile](media/sample-human-resources/hr7.png)  
-2. Select **Northwest** in the **Region** box on the left and select **Male** in the **Bad Hire Count by Gender** donut chart. Look at the other charts on the **Bad Hires** page: notice there are more male bad hires than females and many Group A bad hires.
+2. Select **Northwest** in the **Region** box on the left and select **Male** in the **Bad Hire Count by Gender** donut chart. Look at the other charts on the **Bad Hires** page. Notice there are more male bad hires than females and many Group A bad hires.
+
    ![Northwest bad hires](media/sample-human-resources/pbi_hr_sample_badhirespage.png)  
-2. If you look at the **Bad Hire Count by Gender** donut chart and select different regions in the **Region** box, you'll notice that the East region is the only region with more female than male bad hires.  
-3. Select the name of the dashboard from the top navbar to return to the dashboard.
+
+3. If you look at the **Bad Hire Count by Gender** donut chart and select different regions in the **Region** box, you'll notice that the East region is the only region with more female than male bad hires.  
+
+4. Select the name of the dashboard from the top navbar to return to the dashboard.
 
 ## Ask a question in the Q&A box
 In the [Q&A question box](power-bi-tutorial-q-and-a.md), you can ask a question about your data by using natural language. Q&A recognizes the words you type and figures out where in your dataset to find the answer.

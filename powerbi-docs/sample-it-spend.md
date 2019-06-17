@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/14/2019
+ms.date: 06/17/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -78,11 +78,12 @@ However, just looking at this chart and drawing conclusions can be misleading. W
    In the first IT area, **Infrastructure**, the percentage has changed drastically between the initial variance plan and the variance plan latest estimate.
 
 ## YTD Spend by Cost Elements page
-Return to the dashboard and look at the **Variance Plan %, Variance Latest Estimate % - Quarter 3** dashboard tile.
 
-![Var Plan %, Var LE3 tile](media/sample-it-spend/it5.png)
+1. Return to the dashboard and look at the **Variance Plan %, Variance Latest Estimate % - Quarter 3** dashboard tile.
 
-Notice that the Infrastructure area stands out with a large positive variance to the plan.
+   ![Var Plan %, Var LE3 tile](media/sample-it-spend/it5.png)
+
+   Notice that the Infrastructure area stands out with a large positive variance to the plan.
 
 1. Select this tile to view the **YTD Spend by Cost Elements** page.
 2. Select the **Infrastructure** bar in the **Var Plan % and Var LE3 % by IT Area** chart on the lower right, and observe the variance-to-plan in the **Var Plan % by Sales Region** chart on the lower left.
@@ -91,18 +92,19 @@ Notice that the Infrastructure area stands out with a large positive variance to
 3. Select each name in each **Cost Element Group** box to find the cost element with the largest variance.
 4. With **Other** selected, select **Infrastructure** in the **IT Area** box and select subareas in the **IT Sub Area** box to find the subarea with the largest variance.  
 
-   Notice the large variance for **Networking**.
-
-   Apparently the company decided to give its employees phone services as a benefit, even though this move was not planned for.
+   Notice the large variance for **Networking**. Apparently the company decided to give its employees phone services as a benefit, even though this move was not planned for.
 
 ## Plan Variance Analysis page
-Select the **Plan Variance Analysis** tab on the bottom of the page.
 
-In the **Var Plan and Var Plan % by Business Area** chart on the left, select the **Infrastructure** column to highlight infrastructure business area values in the rest of the page.
+1. Select the **Plan Variance Analysis** tab on the bottom of the page.
 
-![Plan Variance Analysis page](media/sample-it-spend/it7.png)
+2. In the **Var Plan and Var Plan % by Business Area** chart on the left, select the **Infrastructure** column to highlight infrastructure business area values in the rest of the page.
 
-Notice in the **Var plan % by Month and Business Area** chart that the infrastructure business area started a positive variance in February. Also, notice how the variance-to-plan value for that business area varies by country, as compared to all other business areas. Use the **IT Area** and **IT Sub Area** boxes on the right to filter the values in the rest of the page and to explore the data. 
+    ![Plan Variance Analysis page](media/sample-it-spend/it7.png)
+
+   Notice in the **Var plan % by Month and Business Area** chart that the infrastructure business area started a positive variance in February. Also, notice how the variance-to-plan value for that business area varies by country, as compared to all other business areas. 
+
+3. Use the **IT Area** and **IT Sub Area** boxes on the right to filter the values in the rest of the page and to explore the data. 
 
 ## Edit the report
 Select **Edit Report** in the upper-left corner to explore in Editing view:

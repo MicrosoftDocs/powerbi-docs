@@ -125,23 +125,25 @@ Many of the tiles on the Customer Profitability sample dashboard were pinned fro
 ### Team Scorecard page
 ![Team scorecard report page](media/sample-customer-profitability/customer2.png)
 
-Let’s look at two of the team members in detail and see what insights can be gained. In the **Executive** box on the left, select Andrew's name to filter the report page to display only data about Andrew.
+Let’s look at two of the team members in detail and see what insights can be gained. 
 
-* For a quick KPI, look at Andrew’s **Revenue Status (Total Year)**; it's green, which means he’s performing well.
-* The **Revenue % Variance to Budget by Month and Executive** chart shows that, except for a dip in February, Andrew is doing well overall. His dominant region is the east region, he handles 49 customers, and 5 out of 7 products. His GM% is not the highest or the lowest.
-* The **RevenueTY and Revenue % Var to Budget by Month** chart shows a steady, even-profit story. However, if you filter by selecting the square for **Central** in the region treemap, you discover that Andrew has revenue only in March and only in Indiana. Is this intentional or is it something that needs looking into?
+1. In the **Executive** box on the left, select Andrew's name to filter the report page to display only data about Andrew:
 
-Now on to Valery. In the **Executive** box, select Valery’s name to filter the report page to display data only about her. 
+   * For a quick KPI, look at Andrew’s **Revenue Status (Total Year)**; it's green, which means he’s performing well.
+   * The **Revenue % Variance to Budget by Month and Executive** chart shows that, except for a dip in February, Andrew is doing well overall. His dominant region is the east region, he handles 49 customers, and 5 out of 7 products. His GM% is not the highest or the lowest.
+   * The **RevenueTY and Revenue % Var to Budget by Month** chart shows a steady, even-profit story. However, if you filter by selecting the square for **Central** in the region treemap, you discover that Andrew has revenue only in March and only in Indiana. Is this intentional or is it something that needs looking into?
 
-![Valery's data](media/sample-customer-profitability/customer3.png)
+2. Now on to Valery. In the **Executive** box, select Valery’s name to filter the report page to display data only about her. 
 
-* Notice the red KPI for **Revenue Status (Total Year)**. This item definitely needs further investigation.
-* Her revenue variance also paints a worrying picture; she is not meeting her revenue margins.
-* Valery has only nine customers, handles only two products, and works almost exclusively with customers in the north region. This specialization could explain the wide fluctuations in her metrics.
-* If you select the **North** square in the tree map, it shows that Valery’s gross margin in the north region is consistent with her overall margin.
-* Selecting the other **Total Revenue by Region** squares tells an interesting story: her GM% ranges from 23% to 79%. Her revenue numbers, in all regions except the north region, are extremely seasonal.
+   ![Valery's data](media/sample-customer-profitability/customer3.png)
 
-Continue exploring to find out why Valery’s area is not performing well. Look at regions, the other business units, and the next page in the report: **Industry Margin Analysis**.
+   * Notice the red KPI for **Revenue Status (Total Year)**. This item definitely needs further investigation.
+   * Her revenue variance also paints a worrying picture; she is not meeting her revenue margins.
+   * Valery has only nine customers, handles only two products, and works almost exclusively with customers in the north region. This specialization could explain the wide fluctuations in her metrics.
+   * If you select the **North** square in the tree map, it shows that Valery’s gross margin in the north region is consistent with her overall margin.
+   * Selecting the other **Total Revenue by Region** squares tells an interesting story: her GM% ranges from 23% to 79%. Her revenue numbers, in all regions except the north region, are extremely seasonal.
+
+3. Continue exploring to find out why Valery’s area is not performing well. Look at regions, the other business units, and the next page in the report: **Industry Margin Analysis**.
 
 ### Industry Margin Analysis
 This report page provides a different slice of the data. It looks at gross margin for the entire industry, broken down by segment. The CFO uses this page to compare company and business unit metrics to industry metrics to help her explain trends and profitability. You might wonder why the **Gross Margin % by Month and Executive**  chart is on this page, because it's team-specific. Having it here lets us filter the page by business unit manager.  
