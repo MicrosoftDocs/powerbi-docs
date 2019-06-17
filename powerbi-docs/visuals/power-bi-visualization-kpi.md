@@ -9,7 +9,7 @@ featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/24/2018
+ms.date: 06/12/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -63,7 +63,7 @@ Or watch Will show you how to create single metric visuals: gauges, cards, and K
    * **Color coding > Direction** - some KPIs are considered *better* for higher values and some are considered *better* for lower values. For example, earnings versus wait time. Typically a higher value of earnings is better versus a higher value of wait time. Select **high is better** and, optionally, change the color settings.
 
 
-KPIs are also available in Power BI service and on your mobile devices – keeping you always connected to your businesses heartbeat.
+KPIs are also available in the Power BI service and on your mobile devices – keeping you always connected to your businesses heartbeat.
 
 ## Considerations and troubleshooting
 * If your KPI doesn't look like the one above, it may be because you need to sort by fiscalmonth. Since KPIs don't have a sort option, you'll need to sort by fiscalmonth *before* you convert your visualization to a KPI.
