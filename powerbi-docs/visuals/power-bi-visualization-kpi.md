@@ -8,11 +8,7 @@ featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-<<<<<<< HEAD
 ms.date: 06/17/2019
-=======
-ms.date: 06/12/2019
->>>>>>> afc49f5788575ba7801870b5de60f2916367b835
 ms.author: mihart
 LocalizationGroup: Visualizations
 #Customer intent: as a report creator, I want to understand when to use a KPI to visualize my data because there are so many different visual types, I want to be sure that a KPI is the best choice for my intent.  
