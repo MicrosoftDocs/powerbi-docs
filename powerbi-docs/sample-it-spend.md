@@ -82,7 +82,7 @@ Return to the dashboard and look at the **Variance Plan %, Variance Latest Estim
 
 ![Var Plan %, Var LE3 tile](media/sample-it-spend/it5.png)
 
-Notices that the Infrastructure area stands out with a large positive variance to the plan.
+Notice that the Infrastructure area stands out with a large positive variance to the plan.
 
 1. Select this tile to view the **YTD Spend by Cost Elements** page.
 2. Select the **Infrastructure** bar in the **Var Plan % and Var LE3 % by IT Area** chart on the lower right, and observe the variance-to-plan in the **Var Plan % by Sales Region** chart on the lower left.
@@ -107,12 +107,12 @@ Notice in the **Var plan % by Month and Business Area** chart that the infrastru
 ## Edit the report
 Select **Edit Report** in the upper-left corner to explore in Editing view:
 
-* See how the pages are made, the fields in each chart and the filters on the pages.
+* See how the pages are made, the fields in each chart, and the filters on the pages.
 * Add pages and charts, based on the same data.
 * Change the visualization type for each chart.
 * Pin charts of interest to your dashboard.
 
-This environment is a safe one to play in. You can always choose not to save your changes. But if you do save them, you can select **Get Data** for a new copy of this sample.
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
 
 ## Next steps: Connect to your data
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into IT spend data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](service-get-started.md).
