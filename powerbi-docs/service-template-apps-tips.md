@@ -1,17 +1,17 @@
 ---
-title: Tips for authoring template apps in Power BI (preview)
+title: Tips for authoring template apps in Power BI
 description: Tips about authoring queries, data models, reports, and dashboards for making good template apps
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/19/2019
-ms.author: maggies
+ms.date: 06/10/2019
+ms.author: tebercov
 ---
 
-# Tips for authoring template apps in Power BI (preview)
+# Tips for authoring template apps in Power BI
 
 When you're [authoring your template app](service-template-apps-create.md) in Power BI, part of it is the logistics of creating the workspace, testing it, and production. But the other important part is obviously authoring the report and the dashboard. We can break down the authoring process into four main components. Working on these components helps you create the best possible template app:
 
@@ -147,4 +147,4 @@ Template apps support sample data only apps, make sure to check the static app c
 
 ## Next steps
 
-[What are Power BI template apps? (preview)](service-template-apps-overview.md)
+[What are Power BI template apps?](service-template-apps-overview.md)
