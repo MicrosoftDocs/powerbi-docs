@@ -27,7 +27,7 @@ You can set the number of data points, up to a maximum of 10,000.
 
 ### Scatter and Bubble charts
 
-A Scatter chart shows the relationship between two numerical values. A Bubble chart replaces data points with bubbles, with the bubble *size* representing an additional third dimension of the data.
+A Scatter chart shows the relationship between two numerical values. A Bubble chart replaces data points with bubbles, with the bubble *size* representing an additional third data dimension.
 
 ![Screenshot of a sample Bubble chart.](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
 
@@ -37,7 +37,7 @@ Scatter charts are a great choice:
 
 * To plot two groups of numbers as one series of x and y coordinates.
 
-* Instead of a line chart when you want to change the scale of the horizontal axis.
+* To use instead of a line chart when you want to change the scale of the horizontal axis.
 
 * To turn the horizontal axis into a logarithmic scale.
 
@@ -151,7 +151,7 @@ If you don’t have that in your data, create a field that concatenates your X a
 
 ![Screenshot of a Scatter chart with TempTime added to the Details well.](media/power-bi-visualization-scatter/pbi_scatter_tshoot2.png)
 
-To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../desktop-add-custom-column.md) to your dataset. Then add this column to the **Details** well of your visualization.
+To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../desktop-add-custom-column.md) to your dataset. Then add this column to your visualization's **Details** well.
 
 ## Next steps
 

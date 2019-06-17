@@ -48,7 +48,7 @@ To follow along, sign into [the Power BI service](https://app.powerbi.com) and o
 
    ![Screenshot of the Format pane with the paint roller icon called out and an arrow to the Title drop-down.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
 
-1. Turn **Title** on and off by selecting the **On** (or **Off**) slider. For now, leave it **On**.
+1. Move the **Title** slider to **On**.
 
    ![Screenshot of the On slider.](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
 
@@ -62,7 +62,9 @@ To follow along, sign into [the Power BI service](https://app.powerbi.com) and o
 
     1. Select the drop-down to close the color window.
 
-       You can always revert to the default colors by selecting **Revert to default** in the color window.
+       Save the changes you've made.
+
+       If you ever need to revert all of the changes, you can go back to the default colors by selecting **Revert to default** in the color window.
 
 1. Increase the text size to **12 pt**.
 
@@ -74,7 +76,9 @@ At this point in the tutorial, your Clustered column chart title will look somet
 
 ![Screenshot of the newly configured Clustered column chart.](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
 
-To revert all the title customization you've done, select **Revert To Default**, at the bottom of the **Title** customization pane.
+Save the changes you've made and move to the next section.
+
+If you ever need to revert all of the changes, select **Revert to default**, at the bottom of the **Title** customization pane.
 
 ![Screenshot of the Revert to default option.](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
 
@@ -82,7 +86,7 @@ To revert all the title customization you've done, select **Revert To Default**,
 
 With the same Clustered column chart selected, expand the **Background** options.
 
-1. Turn the background on and off by selecting the **On** (or **Off**) slider. For now, leave it **On**.
+1. Move the **Background** slider to **On**.
 
 1. Select the drop-down and choose a grey color from **Theme colors**, **Recent colors**, or **Custom color**.
 
@@ -92,7 +96,9 @@ At this point in the tutorial, your Clustered column chart background will look 
 
 ![Screenshot of the Clustered column chart with background color updated.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
 
-To revert all the title background customization you've done, select **Revert to default**, at the bottom of the **Background** customization pane.
+Save the changes you've made and move to the next section.
+
+If you ever need to revert all of the changes, select **Revert to default**, at the bottom of the **Background** customization pane.
 
 ## Customize visualization legends
 
@@ -104,7 +110,7 @@ To revert all the title background customization you've done, select **Revert to
 
       ![Screenshot of the Legend option.](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
 
-1. Turn the legend on and off by selecting the **On** (or **Off**) slider. For now, leave it **On**.
+1. Move the **Legend** slider to **On**.
 
 1. Move the legend to the left side of the visualization.
 
@@ -116,7 +122,9 @@ At this point in the tutorial, your Clustered column chart legend will look some
 
 ![Screenshot of the updated Legend in the Clustered column chart.](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
 
-To revert all the legend customization you've done, select **Revert to default**, at the bottom of the **Legend** customization pane.
+Save the changes you've made and move to the next section.
+
+If you ever need to revert all of the changes, select **Revert to default**, at the bottom of the **Legend** customization pane.
 
 ## Visualization types that you can customize
 

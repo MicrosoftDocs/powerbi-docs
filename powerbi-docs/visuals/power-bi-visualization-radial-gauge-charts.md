@@ -19,7 +19,7 @@ A Radial gauge chart has a circular arc and shows a single value that measures p
 
 ![Screenshot of  Radial gauge.](media/power-bi-visualization-radial-gauge-charts/gauge_m.png)
 
-In this example, you're a car retailer tracking the sales team's average sales per month. The goal is 140 and represented by the needle. The minimum possible average sales is 0 and the maximum is 200.  The blue shading shows that the team is averaging approximately 120 sales this month. Luckily, there's still another week to reach the goal.
+In this example, you're a car retailer tracking the sales team's average sales per month. The needle represents a 140 cars sales goal. The minimum possible average sales is 0 and the maximum is 200.  The blue shading shows that the team is averaging approximately 120 sales this month. Luckily, there's still another week to reach the goal.
 
 Watch Will show you how to create single metric visuals: gauges, cards, and KPIs.
 
@@ -33,9 +33,9 @@ Radial gauges are a great choice to:
 
 * Represent a percentile measure, like a KPI.
 
-* Show the health of a single measure.
+* Show a single measure's the health of a single measure.
 
-* Display information that can be quickly scanned and understood.
+* Display information you can quickly scan and understand.
 
 ## Prerequisites
 
@@ -49,11 +49,11 @@ These instructions use the Power BI service. To follow along, sign in to Power B
 
 ### Step 1: Open the Financial Sample Excel file
 
-1. If you haven't already, download the [Financial Sample Excel file](../sample-financial-download.md). Remember where you saved it.
+1. If you haven't already, download the [Financial Sample Excel file](../sample-financial-download.md). Remember where you save it.
 
 1. In the Power BI service, select **Get Data** > **Files**.
 
-1. Select **Local File** and browse to the location where you saved the file.
+1. Select **Local File** and browse to the sample file's location.
 
 1. Select **Import**. Power BI adds the Financial Sample to your workspace as a dataset.
 
@@ -117,7 +117,7 @@ In Step 2, Power BI used the **Value** field to automatically set minimum and ma
 
 1. Remove **Max of Gross Sales** from the **Maximum value** well.
 
-1. Open the **Format** pane by selecting the paint roller icon.
+1. Select the paint roller icon to open the **Format** pane.
 
    ![Screenshot of the Gauge chart and the Format pane with the paint roller icon called out.](media/power-bi-visualization-radial-gauge-charts/power-bi-roller.png)
 

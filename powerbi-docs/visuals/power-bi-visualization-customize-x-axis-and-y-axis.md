@@ -62,7 +62,7 @@ Now you can customize your X-Axis.
 
    ![Screenshot of the X-axis options.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-x-axis.png)
 
-1. Turn the X-Axis on and off by selecting the **On** (or **Off**) slider. For now, leave it **On**.
+1. Move the **X-Axis** slider to **On**.
 
     ![Screenshot ot the On slider.](media/power-bi-visualization-customize-x-axis-and-y-axis/onoffslider.png)
 
@@ -90,7 +90,9 @@ After you finish the customizations, your Stacked column chart will look somethi
 
 ![Screenshot of the customized Stacked column chart.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-customize-axis.png)
 
-To revert all the X-Axis customization you've done so far, select **Revert to default** at the bottom of the **X-Axis** customization pane.
+Save the changes you've made and move to the next section.
+
+If you ever need to revert all of the changes, select **Revert to default** at the bottom of the **X-Axis** customization pane.
 
 ### Customize the Y-Axis
 
@@ -100,7 +102,7 @@ Next, you'll customize your Y-Axis.
 
    ![Screenshot of the Y-axis options.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axis.png)
 
-1. Turn the Y-Axis on and off by selecting the **On** (or **Off**) slider. For now, leave it **On**.  
+1. Move the **Y-Axis** slider to **On**.  
 
     ![Screenshot ot the On slider.](media/power-bi-visualization-customize-x-axis-and-y-axis/onoffslider.png)
 
