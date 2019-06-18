@@ -21,11 +21,11 @@ This article answers many common questions people have about paginated reports i
 
 ### What size Premium capacity do I need for paginated reports?
 
-The paginated reports workload is available on P1 – P3 SKUs for public preview.  You may also use it for test/dev scenarios with A4 – A6 SKUs.
+The paginated reports workload is available on P1 – P3 SKUs for public preview.  You may also use it with A4 – A6 SKUs for embed scenarios.
 
 ### What is the maximum memory threshold I can put for paginated reports in my capacity?
 
-Currently, you may only reserve 50% of the memory for this workload. 
+You may use up to 100% of the memory for this workload by the end of June 2019. 
 
 ### How does user access work for paginated reports?
 
@@ -33,7 +33,7 @@ User access for paginated reports is the same as user access for all other conte
 
 ### How do I turn on/off my paginated reports workload?
 
-The capacity admin can enable or disable the paginated reports workload in the capacity admin portal page.  
+The capacity admin can enable or disable the paginated reports workload in the capacity admin portal page.  By default, the workload will be on for any new capacities you create.  
 
 ### How can I monitor usage of paginated reports in my tenant?
 
@@ -58,7 +58,7 @@ Yes, monitoring is available as a new tab with the same relevant details you hav
 
 ### Do I need a Pro license to create and publish paginated reports?
 
-Yes. You can't upload reports to the workspace without a Pro license. We encourage you to download and use Power BI Report Builder even without the Pro license, but you can't publish the paginated reports you create without it. 
+You can upload paginated reports to your My Workspace without a Pro license, provided it's in a Premium Capacity.  For other workspaces, you must have a Pro license to author and publish content to them. We encourage you to download and use Power BI Report Builder even without the Pro license, but you can't publish the paginated reports you create without it. 
 
 ### What if I have a paginated report in a workspace and the paginated report workload is turned off?
 
@@ -94,7 +94,7 @@ You need to download the report from the server, then upload it to Power BI thro
 
 ### Can I open reports and publish directly to the service?
 
-At this point, no. We're adding support for opening reports and publishing them directly to the service from Power BI Report Builder prior to GA, like you can with Power BI Desktop.
+Yes. We've recently added support for opening reports and publishing them directly to the service from Power BI Report Builder.
 
 ### What paginated report features in SSRS aren’t yet supported in Power BI?
 
@@ -103,7 +103,7 @@ Currently, paginated reports don’t support the following items:
 - Shared data sources
 - Shared datasets
 - Subreports
-- Click-through and drill-through actions
+- Drillthrough and click-through to other reports
 - Linked reports
 - Bookmarks
 - Bing map layers
@@ -117,7 +117,8 @@ We support the following data source -
 
 - Power BI Premium Datasets
 - Azure Analysis Services (via single sign on (SSO))
-- Azure SQL Database
+- Azure SQL Data Warehouse
+- Azure SQL Database (username/password and oAuth)
 - SQL Server*
 - SQL Server Analysis Services (SSAS) tabular (DAX) and multidimensional (MDX) models* 
 - Oracle* 
@@ -129,11 +130,11 @@ When accessing SSAS through the Gateway, the user whose credentials are stored n
 
 ### What authentication methods do you support?
 
-We support SSO for both Azure Analysis Services and Power BI Premium data sources.  For all other data sources, you currently need to store a user name and password with the data source in the portal or gateway.  
+We support SSO for both Azure Analysis Services and Power BI Premium data sources, and we support oAuth and SSO for Azure SQL Database.  For other data sources, you currently need to store a user name and password with the data source in the portal or gateway.  
 
 ### Can I use a Power BI dataset as a data source for my paginated report?
 
-Yes, we now support Power BI Premium datasets as data sources for your paginated reports.
+Yes, we support Power BI Premium datasets as data sources for your paginated reports.
 
 ### Can I use stored procedures through the Gateway?
 
@@ -149,23 +150,15 @@ Yes, printing is available for paginated reports, including a new and improved p
 
 ### Are e-mail subscriptions available yet for paginated reports?
 
-No, e-mail subscriptions are coming soon, however.
-
-### What features from SSRS will you be supporting in the Power BI service?
-
-Our plan is to provide feature parity for most scenarios, but certain things about SSRS and Power BI may not make sense to try to change to fit existing SSRS patterns.  For example, the different permission models in Power BI can't be mapped back to SSRS.  We will be looking for feedback from customers and partners to make those types of decisions.
+Yes, e-mail subscriptions are fully supported for paginated reports and include support for six different file formats and parameter values.
 
 ### Can I run custom code in my report?
 
 Yes, we support the ability to run code in your reports as you can in SSRS.
 
-### Does this mean SSRS is going away?
-
-Not at all.  This new offering offers customers a cloud-based option for their paginated reports.  
-
 ### Can I use Power BI embedded to embed my paginated reports into an app I’m hosting?
 
-We plan to support this scenario with the existing Power BI APIs, but we don’t yet have a timeframe on when this scenario will be available.
+SaaS embedding will be supported in the June timeframe.  We plan to also support PaaS embedding with the existing Power BI APIs, but we don’t yet have a timeframe on when this scenario will be available.
 
 ### Can I drill through from a Power BI report to a paginated report?
 
@@ -193,7 +186,7 @@ No, a report viewer control isn’t available currently.
 
 ### Can you search for paginated reports from the new Home experience in the Power BI service?
 
-No, you can't currently search for your paginated reports from Home.  You do see them, however, in the other parts of the new Home experience.
+Yes, you can now search for your paginated reports from Home.  You also see them in other parts of the new Home experience.
 
 ## Next steps
 
