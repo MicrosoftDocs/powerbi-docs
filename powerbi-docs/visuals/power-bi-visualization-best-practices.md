@@ -196,7 +196,7 @@ In the Power BI service, from the top menu bar, select **Text Box**. (In Power B
 
 **Figure 8: Add a text box in the Power BI service**
 
-Enter text in the empty box. Then use the controls at the bottom to set font, size, alignment, and more. Use the handles to resize the box.
+Enter text in the empty box. Then use the controls to set font, size, alignment, and more. Use the handles to resize the box.
 
 ![Format the text box.](media/power-bi-visualization-best-practices/power-bi-text-box-edit.png)
 
@@ -340,11 +340,11 @@ The rectangle has also disappeared into the black background. To fix this issue:
 
 Add a white background to the remaining visuals on the report page. From the **Format** pane:
 
-1. Expand the **Line** option.
+1. Expand the **Background** option.
 
-1. Set the **Line Color** to white.
+1. Set the **Color** to white.
 
-1. Set the **Weight** to 3.
+1. Set the **Transparency** to 0.
 
     ![Add a white background to remaining visualizations.](media/power-bi-visualization-best-practices/power-bi-background.png)
 
