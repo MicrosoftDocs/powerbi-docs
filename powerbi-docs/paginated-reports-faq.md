@@ -1,5 +1,5 @@
 ---
-title: "Paginated reports in Power BI: FAQ (Preview)"
+title: "Paginated reports in Power BI: FAQ"
 description: This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. 
 author: maggiesMSFT
 ms.author: maggies
@@ -11,7 +11,7 @@ ms.topic: overview
 ms.date: 11/05/2018
 ---
 
-# Paginated reports in Power BI: FAQ (Preview)
+# Paginated reports in Power BI: FAQ 
 
 This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
 
@@ -21,7 +21,7 @@ This article answers many common questions people have about paginated reports i
 
 ### What size Premium capacity do I need for paginated reports?
 
-The paginated reports workload is available on P1 – P3 SKUs for public preview.  You may also use it with A4 – A6 SKUs for embed scenarios.
+The paginated reports workload is available on P1 – P3 SKUs.  You may also use it with A4 – A6 SKUs for SaaS embed scenarios.
 
 ### What is the maximum memory threshold I can put for paginated reports in my capacity?
 
@@ -116,7 +116,7 @@ You get an error message if you try to upload a file that has an unsupported fea
 We support the following data source - 
 
 - Power BI Premium Datasets
-- Azure Analysis Services (via single sign on (SSO))
+- Azure Analysis Services (via single sign on (SSO) and oAuth)
 - Azure SQL Data Warehouse
 - Azure SQL Database (username/password and oAuth)
 - SQL Server*
@@ -178,7 +178,7 @@ We're evaluating options here to allow content to be moved to Power BI in an aut
 
 ### Will I ever be able to create both paginated reports and Power BI reports in a single authoring tool?
 
-Potentially.  We're currently looking at ways to enable this scenario, or if we simply distribute the authoring tools together as a single BI suite vs. having individual downloads/branding.
+We've looked at ways to enable this scenario, but we don't have this in our plans at this time.
 
 ### Is there a report viewer control for paginated reports in the Power BI service?
 
