@@ -680,13 +680,17 @@ For fields that do have some inherent order and numerical value, you can also co
 
 To create this chart:
 
-1. Add a value to the **Color saturation** field in the **Fields** pane.
+1. Select the visual to make it active.
 
-    ![Add a color saturation field.](media/power-bi-visualization-best-practices/power-bi-saturation2.png)
+1. Select ![Paint roller icon for Format pane.](media/power-bi-visualization-best-practices/power-bi-paint-roller.png) to open the **Format** pane.
 
-    **Figure 42: Add a color saturation field**
+1. Select **Data colors** > option > **Conditional formatting**:
 
-1. Adjust those colors in the **Format** pane.
+    ![Select Conditional formatting.](media/power-bi-visualization-best-practices/power-bi-conditional-formatting.png)
+
+    **Figure 42: Select Conditional formatting**
+
+1. Adjust those colors in the **Default color - *Data colors*** dialog.
 
     ![Adjust the colors used for saturation.](media/power-bi-visualization-best-practices/power-bi-color-controls.png)
 
