@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.author: maggies
 author: maggiesMSFT
 ms.topic: hub-page
-ms:date: 05/10/2019
+ms:date: 06/10/2019
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -32,7 +32,7 @@ ms:date: 05/10/2019
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Power BI for consumers</h3>
-                                                    <p>Getting started with Power BI? Get to know the different products and services that make up Power BI, and see what you can do with them.</p>
+                                                    <p>Do you use reports and dashboards, created by others, to make business decisions? Get to know the Power BI service for *consumers*.</p>
                                                 </div>
                                             </div>
                                         </div>
