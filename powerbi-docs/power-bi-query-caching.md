@@ -34,4 +34,7 @@ You control query caching behavior on the **Settings** page for the dataset in t
 > [!NOTE]
 > When you change caching settings from **On** to **Off**, all previously saved query results for the dataset are removed from the capacity cache. You can turn off caching either explicitly or by reverting to capacity default setting that an administrator has set to **Off**. Turning it off can introduce a small delay the next time any report runs queries against this dataset. The delay is caused by those report queries running on demand and not leveraging saved results. Also, the required dataset may need to be loaded into memory before it can service queries.
 
+> [!NOTE]
+> When the query cache is refreshed, Power BI must run queries against the underlying data models to get the latest results. If the there are a large number of datasets with query caching enabled and the Premium capacity is under heavy load, some performance degradation may occur during cache refresh due to increased volume queries being executed.
+
 
