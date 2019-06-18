@@ -103,7 +103,7 @@ Currently, paginated reports don’t support the following items:
 - Shared data sources
 - Shared datasets
 - Subreports
-- Drillthrough and click-thru to other reports
+- Drillthrough and click-through to other reports
 - Linked reports
 - Bookmarks
 - Bing map layers
