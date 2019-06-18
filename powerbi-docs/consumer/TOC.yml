@@ -107,7 +107,7 @@
     - name: "Glossary and terminology"
       href: end-user-glossary.md
     - name: "Frequently asked questions"
-      href: end-user-questions.md
+      href: end-user-faq.md
     - name: "Supported browsers"
       href: end-user-browsers.md
     - name: "Types of Quick Insights supported by Power BI"
