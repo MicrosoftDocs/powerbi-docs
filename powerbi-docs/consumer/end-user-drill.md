@@ -1,6 +1,6 @@
 ---
 title: Drill down and drill up in a visualization
-description: This document shows how to drill down in a visualization in the Microsoft Power BI service and Power BI Desktop.
+description: This article shows how to drill down in a visualization in the Microsoft Power BI service and Power BI Desktop.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -14,6 +14,8 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 # Drill mode in a visualization in Power BI
+
+This article shows how to drill down in a visualization in the Microsoft Power BI service and Power BI Desktop. Power BI reports allow multiple hierarchies of data to provide you with maximum insight into your data. Using drill down and drill up on your data points, you can explore in-depth details about your data. You can even take advantage of it even on the small form factor of your mobile devices.
 
 ## Drill requires a hierarchy
 
