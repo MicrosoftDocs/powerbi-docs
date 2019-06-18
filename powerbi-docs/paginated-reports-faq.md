@@ -58,7 +58,7 @@ Yes, monitoring is available as a new tab with the same relevant details you hav
 
 ### Do I need a Pro license to create and publish paginated reports?
 
-You can upload paginated reports your My Workspace without a Pro license, provided it is in a Premium Capacity.  For other workspaces, you must have a Pro license to author and publish content to them. We encourage you to download and use Power BI Report Builder even without the Pro license, but you can't publish the paginated reports you create without it. 
+You can upload paginated reports to your My Workspace without a Pro license, provided it's in a Premium Capacity.  For other workspaces, you must have a Pro license to author and publish content to them. We encourage you to download and use Power BI Report Builder even without the Pro license, but you can't publish the paginated reports you create without it. 
 
 ### What if I have a paginated report in a workspace and the paginated report workload is turned off?
 
