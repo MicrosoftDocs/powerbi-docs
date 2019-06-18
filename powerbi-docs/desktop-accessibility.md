@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/06/2019
+ms.date: 06/17/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -29,7 +29,7 @@ When viewing a report, generally you should have scan mode off.
 
 You can switch focus between the report page tabs, or objects on a given report page, using **Ctrl + F6**.
 
-* When focus is on *report page tabs*, use the **Tab** or **Arrow** keys to move focus from one report page to the next. The title of the report page, and whether it's currently selected, is read out by the screen reader. To load the report page currently under focus, use the **Enter** key or spacebar.
+* When focus is on *report page tabs*, use the **Tab** or **Arrow** keys to move focus from one report page to the next. The screen reader reads out the title of the report page, and whether it's currently selected. To load the report page currently under focus, use the **Enter** key or spacebar.
 * When focus is on a loaded *report page*, use the **Tab** key to shift focus to each object on the page, which includes all textboxes, images, shapes, and charts. The screen reader reads the type of object and the object's title (if it has one). The screen reader also reads a description of that object if it's provided by the report author. 
 
 As you navigate between visuals, you can press **Alt + Shift + F10** to move focus to the visual header. The visual header contains various options including sorting, exporting the data behind the chart, and Focus mode. 
@@ -49,7 +49,7 @@ You can move through the controls in a slicer by pressing the **Tab** key. Press
 
 ![Press Ctrl + Right arrow key in Power BI Desktop to adjust element or values in a slicer, press the spacebar to select the element and adjust its value](media/desktop-accessibility/accessibility_07.png)
 
-These accessibility additions were created to let users fully consume Power BI reports using a screen reader and keyboard navigation.
+These accessibility additions let users fully consume Power BI reports using a screen reader and keyboard navigation.
 
 ## Tips for creating accessible reports
 The following tips can help you create **Power BI Desktop** reports that are more accessible.
@@ -77,7 +77,7 @@ The following tips can help you create **Power BI Desktop** reports that are mor
 * Avoid decorative shapes and images in your report if possible, as they're included in the tab order of the report. If you need to include decorative objects in your report, update the object's alt text to let screen reader users know that it is for decoration.
 
 ### Arranging items in Field buckets
-Beginning with the October 2018 release of **Power BI Desktop**, the **Fields** well can be navigated with a keyboard and interacts with screen readers. 
+Beginning with the October 2018 release of **Power BI Desktop**, you can navigate the **Fields** well with a keyboard and it interacts with screen readers. 
 
 To improve the process of creating reports with screen readers, a context menu is available. The menu allows moving fields in the well up or down in the **Fields** list, or moving the field to other wells, such as **Legend** or **Value** or others.
 
@@ -89,7 +89,7 @@ When you use high contrast modes in Windows, those settings and the palette you 
 
 ![High contrast windows settings](media/desktop-accessibility/accessibility_05.png)
 
-**Power BI Desktop** automatically detects which high contrast theme is being used in Windows, and applies those settings to your reports. Those high contrast colors follow the report when published to the Power BI service, or elsewhere.
+**Power BI Desktop** automatically detects which high contrast theme Windows is using and applies those settings to your reports. Those high contrast colors follow the report when published to the Power BI service, or elsewhere.
 
 ![High contrast windows settings](media/desktop-accessibility/accessibility-05b.png)
 
