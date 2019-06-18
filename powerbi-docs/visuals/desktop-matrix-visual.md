@@ -1,10 +1,9 @@
 ---
 title: Use the matrix visual in Power BI
-description: Learn how the matrix visual enables step layouts and granular highlighting in Power BI
+description: Learn how the matrix visual enables step layouts and granular highlighting in Power BI.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
@@ -13,8 +12,9 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
+
 # Use the Matrix visual in Power BI
-The **matrix** visual is similar to a **table**.  A table supports 2 dimensions and the data is flat, meaning duplicate values are displayed and not aggregated. A matrix makes it easier to display data meaningfully across multiple dimensions -- it supports a stepped layout. The matrix automatically aggregates the data and enables drill down. 
+The **matrix** visual is similar to a **table**.  A table supports two dimensions and the data is flat, meaning duplicate values are displayed and not aggregated. A matrix makes it easier to display data meaningfully across multiple dimensions -- it supports a stepped layout. The matrix automatically aggregates the data and enables drill down. 
 
 You can create matrix visuals in **Power BI Desktop** and **Power BI service** reports and cross-highlight elements within the matrix with other visuals on that report page. For example, you can select rows, columns, and even individual cells and cross-highlight. Also, individual cells and multiple cell selections can be copied and pasted into other applications. 
 
@@ -25,7 +25,7 @@ There are many features associated with the matrix, and we'll go through them in
 
 ## Understanding how Power BI calculates totals
 
-Before jumping into how to use the **Matrix** visual, it's important to understand how Power BI calculates total and subtotal values in tables and matrices. For total and subtotal rows, the measure is evaluated over all rows in the underlying data – it is *not* just a simple addition of the values in the visible or displayed rows. This means you can end up with different values in the total row than you might expect. 
+Before jumping into how to use the **Matrix** visual, it's important to learn how Power BI calculates total and subtotal values in tables and matrices. For total and subtotal rows, Power BI evaluates the measure over all rows in the underlying data – it isn't just a simple addition of the values in the visible or displayed rows. This means you can end up with different values in the total row than you might expect.
 
 Take a look at the following matrix visuals. 
 
@@ -33,7 +33,7 @@ Take a look at the following matrix visuals.
 
 In this example, each row in the matrix visual farthest to the right is showing the *Amount* for each salesperson/date combination. However, since a salesperson shows up against multiple dates, the numbers can appear more than once. Thus, the accurate total from the underlying data, and a simple addition of the visible values, do not equate. This is a common pattern when the value you’re summing is on the ‘one’ side of a one-to-many relationship.
 
-When looking at total and subtotals, remember that those values are based on the underlying data, and not solely based on the visible values. 
+When you look at totals and subtotals, remember that those values are based on the underlying data. They aren't solely based on the visible values.
 
 <!-- use Nov blog post video
 
@@ -58,7 +58,8 @@ Watch the following video to learn more about expand/collapse in the matrix:
 With the matrix visual, you can do all sorts of interesting drill down activities that weren't available before. This includes the ability to drill down using rows, columns, and even into individual sections and cells. Let's take a look at how each of these works.
 
 ### Drill down on row headers
-In the **Visualizations** pane, when you add multiple fields to the **Rows** section of the **Fields** well, you enable drill down on the rows of the matrix visual. This is similar to creating a hierarchy, which then allows you to drill down (and then back up) through that hierarchy, and analyze the data at each level.
+
+In the Visualizations pane, when you add multiple fields to the **Rows** section of the **Fields** well, you enable drill down on the rows of the matrix visual. This is similar to creating a hierarchy, which then allows you to drill down (and then back up) through that hierarchy, and analyze the data at each level.
 
 In the following image, the **Rows** section contains *Sales stage* and *Opportunity size*, creating a grouping (or hierarchy) in the rows that we can drill through.
 
@@ -105,21 +106,20 @@ To drill down on columns, select **Columns** from the *Drill on* menu that can b
 
 When you select **Drill Down**, the next level of the column hierarchy for *Region > East* displays, which in this case is *Opportunity count*. The other region displays, but is greyed out.
 
-![matrix with colum drill down one level](media/desktop-matrix-visual/power-bi-matrix-column-drill.png)
+![matrix with column drill down one level](media/desktop-matrix-visual/power-bi-matrix-column-drill.png)
 
 The rest of the menu items work on columns in the same way they do for rows (see the previous section, **Drill down on row headers**). You can **Show Next Level** and **Expand to next level** with columns just as you can with rows.
 
 > [!NOTE]
 > The drill down and drill up icons in the upper-left of the matrix visual only apply to rows. In order to drill down on columns, you must use the right-click menu.
-> 
-> 
 
 ## Stepped layout with matrix visuals
-The **Matrix** visual automatically indents subcategories in a hierarchy beneath each parent, which is called a **Stepped layout**.
 
-In the *original* version of the matrix visual, subcategories were shown in an entirely different column, taking up much more space in the visual. The following image shows the table in original **Matrix** visual; notice the subcategories in a separate column.
+The **Matrix** visual automatically indents subcategories in a hierarchy beneath each parent, called a **Stepped layout**.
 
-![old way of default format for matrixes](media/desktop-matrix-visual/matrix-visual_14.png)
+In the original version of the matrix visual, subcategories were shown in an entirely different column, taking up much more space in the visual. The following image shows the table in original **Matrix** visual; notice the subcategories in a separate column.
+
+![Screenshot of the old Matrix visual showing the subcategories in a separate column.](media/desktop-matrix-visual/matrix-visual_14.png)
 
 In the following image, you see a **Matrix** visual, with **Stepped layout** in action. Notice the category *Computers* has its subcategories (Computers Accessories, Desktops, Laptops, Monitors, and so on) slightly indented, providing a cleaner and much more condensed visual.
 
@@ -129,39 +129,41 @@ You can easily adjust the stepped layout settings. With the **Matrix** visual se
 
 ![Row headers card displaying Stepped layout control](media/desktop-matrix-visual/power-bi-stepped-matrix.png)
 
-If you turn off **Stepped layout**, the subcategories are shown in another column rather than indented beneath the parent category.
+If you turn off **Stepped layout**, Power BI shows the subcategories in another column rather than indented beneath the parent category.
 
 ## Subtotals with matrix visuals
-You can turn subtotals on or off in matrix visuals, for both rows and columns. In the following image, you can see that the row subtotals are set to **on**.
+
+You can turn subtotals on or off in matrix visuals, for both rows and columns. In the following image, you can see that the row subtotals are set to **On**.
 
 ![matrix showing totals and subtotals](media/desktop-matrix-visual/matrix-visual_20.png)
 
-In the **Format** section of the **Visualizations** pane, expand the **Subtotals** card, and turn the **Row subtotals** slider to **Off**. When you do so, the subtotals are not shown.
+In the **Format** section of the **Visualizations** pane, expand the **Subtotals** card, and turn the **Row subtotals** slider to **Off**. When you do so, the subtotals aren't shown.
 
 ![matrix with subtotals turned off](media/desktop-matrix-visual/matrix-visual_21.png)
 
 The same process applies for column subtotals.
 
 ## Cross-highlighting with matrix visuals
-With the **Matrix** visual, you can select any elements in the matrix as the basis for cross-highlighting. Select a column in a **Matrix** and that column is highlighted, as are any other visuals on the report page. This type of cross-highlighting has been a common feature of other visuals and data point selections, so now the **Matrix** visual offers the same function.
+
+With the **Matrix** visual, you can select any elements in the matrix as the basis for cross-highlighting. Select a column in a **Matrix** and Power BI highlights the column, as does any other visuals on the report page. This type of cross-highlighting has been a common feature of other visuals and data point selections, so now the **Matrix** visual offers the same function.
 
 In addition, using Ctrl+Click also works for cross-highlighting. For example, in the following image a collection of subcategories were selected from the **Matrix** visual. Notice how items that weren't selected from the visual are grayed out, and how the other visuals on the page reflect the selections made in the **Matrix** visual.
 
-![report page cross highighted by a matrix](media/desktop-matrix-visual/matrix-visual_16.png)
+![Screenshot of the Matrix visual along with two other visuals demonstrating the Ctrl+Click function for cross-highlighting.](media/desktop-matrix-visual/matrix-visual_16.png)
 
 ## Copying values from Power BI for use in other applications
 
-Your matrix or table may have content that you'd like to use in other applications, like Dynamics CRM, Excel, and even other Power BI reports. With the Power BI right-click, you can copy a single cell or a selection of cells onto your clipboard, and paste into the other application.
+Your matrix or table may have content that you'd like to use in other applications: Dynamics CRM, Excel, and other Power BI reports. With the Power BI right-click, you can copy a single cell or a selection of cells onto your clipboard. Then, paste them into the other application.
 
-![copy options](media/desktop-matrix-visual/power-bi-cell-copy.png)
+![Screenshot of the Matrix visual with an arrow pointing to a value and the right-click menu expanded with the Copy value and Copy selection options called out.](media/desktop-matrix-visual/power-bi-cell-copy.png)
 
 * To copy the value of a single cell, select the cell,  right-click, and choose **Copy value**. With the unformatted cell value on your clipboard, you can now paste it into another application.
 
-    ![copy options](media/desktop-matrix-visual/power-bi-copy.png)
+    ![Screenshot of the Matrix visual with an arrow pointing from three called out values to the right-click menu expanded with the Copy value and Copy selection options called out.](media/desktop-matrix-visual/power-bi-copy.png)
 
 * To copy more than a single cell, select a range of cells or use CTRL to select one or more cells. The copy will include the column and row headers.
 
-    ![paste into Excel](media/desktop-matrix-visual/power-bi-copy-selection.png)
+    ![Screenshot showing Excel rows and columns with the values pasted into them.](media/desktop-matrix-visual/power-bi-copy-selection.png)
 
 ## Shading and font colors with matrix visuals
 With the matrix visual, you can apply **Conditional formatting** (colors and shading and data bars) to the background of cells within the matrix, and you can apply conditional formatting to the text and values themselves.
