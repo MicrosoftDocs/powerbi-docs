@@ -93,12 +93,12 @@ When you use high contrast modes in Windows, those settings and the palette you 
 
 ![High contrast windows settings](media/desktop-accessibility/accessibility-05b.png)
 
-The Power BI service also attempts to detect the high contrast settings selected for Windows, but how effective and accurate that detection is depends on the browser being used for the Power BI service. If you want to set the theme manually in the Power BI service, you can select **View** > **High contrast colors** and then select the theme you would like to apply to the report.
+The Power BI service also attempts to detect the high contrast settings selected for Windows, but how effective and accurate that detection is depends on the browser showing the Power BI service. If you want to set the theme manually in the Power BI service, you can select **View** > **High contrast colors** and then select the theme you would like to apply to the report.
 
 ![Setting high contrast in the Power BI service](media/desktop-accessibility/accessibility_06.png)
 
 ## Considerations and limitations
-There are a few known issues and limitations with the accessibility features that are described in the following list:
+There are a few known issues and limitations with the accessibility features. Descriptions of those issues and limitations are in the following list:
 
 * When using screen readers with **Power BI Desktop**, you'll have the best experience if you open your screen reader before opening any files in **Power BI Desktop**.
 * If you're using Narrator, there are some limitations around navigating **Show data** as an HTML table.
