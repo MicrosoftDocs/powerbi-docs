@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 06/18/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -96,6 +96,10 @@ The following datasets are not accessible by using XMLA endpoints. These dataset
 The following datasets are not supported in the Power BI service:   
 
 - Datasets with a Live connection to a Power BI Dataset.
+
+### Roles and role memberships
+
+Currently, model roles and role memberships are not discoverable or displayed by using XMLA endpoints.
 
 ## Audit logs 
 
