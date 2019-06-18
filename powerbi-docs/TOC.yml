@@ -1093,8 +1093,12 @@
         href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/
       - name: "Advanced Edit Mode"
         href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/advanced-edit-mode/
-      - name: "Migrating to versioned API guide"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/migrating-to-versioned-api-guide/
+      - name: "Filter API" 
+        href: developer/visual/filter-api.md
+      - name: "Fetch more data" 
+        href: developer/visual/fetch-more-data.md
+      - name: "Launch URL" 
+        href: developer/visual/launch-url.md
     - name: How to
       items:
       - name: "Get a custom visual certified"

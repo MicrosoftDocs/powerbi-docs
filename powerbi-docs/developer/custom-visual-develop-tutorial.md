@@ -75,7 +75,7 @@ Now you need to install the **pbiviz** package.
     pbiviz --install-cert
     ```
 
-  It returns a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_** starts the Certificate Import Wizard.
+  It returns a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_**. It also starts the Certificate Import Wizard.
 
   ![Cert created via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
 
