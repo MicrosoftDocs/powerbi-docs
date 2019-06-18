@@ -43,7 +43,7 @@ You can press **Alt + Shift + F11** to present an accessible version of the **Sh
 > [!NOTE]
 > The **Show data** feature is only accessible to a screen reader through this keyboard shortcut. If you open **Show data** through the option in the visual header, it won't be accessible to a screen reader. When using **Show data**, turn on scan mode to take advantage of all the hot keys your screen reader provides.
 
-Beginning with the July 2018 release of **Power BI Desktop**, slicers also have accessibility functionality built in. When you select a slicer, to adjust the value of a slicer use **Ctrl + Right arrow** (control plus the Right arrow key) to move through the various controls within the slicer. For example, when you initially press **Ctrl + Right arrow**, the focus is on the eraser. Then, pressing the spacebar is equivalent to clicking the eraser button, which erases all values on the slicer. 
+Beginning with the July 2018 release of **Power BI Desktop**, slicers also have accessibility functionality built in. When you select a slicer, to adjust the value of a slicer use **Ctrl + Right arrow** (Control key plus the Right arrow key) to move through the various controls within the slicer. For example, when you initially press **Ctrl + Right arrow**, the focus is on the eraser. Then, pressing the spacebar is equivalent to clicking the eraser button, which erases all values on the slicer. 
 
 You can move through the controls in a slicer by pressing the **Tab** key. Pressing the **Tab** key when on the eraser moves to the drop-down button. Another **Tab** then moves to the first slicer value (if there are multiple values for the slicer, such as a range). 
 
