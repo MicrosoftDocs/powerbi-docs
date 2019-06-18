@@ -209,6 +209,9 @@ The following image shows the option to Allow external guest users to edit and m
 
 ![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
 
+### Email Subscriptions
+Users in the organization can create email subscriptions
+
 ## Content pack and app settings
 
 ### Publish content packs and apps to the entire organization
