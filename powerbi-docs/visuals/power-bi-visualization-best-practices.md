@@ -585,7 +585,7 @@ For more info, see [Change how a visual is sorted](../consumer/end-user-change-s
 
 #### Chart interaction and interplay
 
-One of the most compelling features of Power BI is the ability to edit the way charts interact with each other. By default, charts are cross-highlighted: when you select a data point, the related data of other charts light up and the unrelated data dims. You can override this behavior to use any chart as a true filter. It'll save you real estate on your page. Select **Visual Interactions** from the menu bar to make the change.
+One of the most compelling features of Power BI is the ability to edit the way charts interact with each other. By default, charts are cross-highlighted: when you select a data point, the related data of other charts light up and the unrelated data dims. You can override this behavior to use any chart as a true filter. It'll save you real estate on your page. In the Power BI service, select **Visual Interactions** from the menu bar to make the change.
 
 ![Visual interactions.](media/power-bi-visualization-best-practices/power-bi-visual-interactions.png)
 
