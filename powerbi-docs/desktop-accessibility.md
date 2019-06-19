@@ -107,12 +107,12 @@ There are a few known issues and limitations with the accessibility features. De
 ## Keyboard shortcuts
 Keyboard shortcuts are helpful for moving around in Power BI reports using a keyboard. The following tables describe the shortcuts available in a Power BI report. In addition to using these keyboard shortcuts in **Power BI Desktop**, these shortcuts work in the following experiences as well:
 
-* Q&A Explorer dialog
-* Getting Started dialog
-* File menu and About dialog
-* Warning bar
-* File Restore dialog
-* Frowns dialog
+* **Q&A Explorer** dialog
+* **Getting Started** dialog
+* **File** menu and **About** dialog
+* **Warning** bar
+* **File Restore** dialog
+* **Frowns** dialog
 
 In our continued effort to improve accessibility, the previous list of experiences also support screen readers and high contrast settings.
 
@@ -153,7 +153,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Expand a single table | **Right arrow key** |
 | Collapse all tables | **Alt + Shift + 1** |
 | Expand all tables | **Alt + Shift + 9** |
-| Open a context menu | <ul><li>Windows keyboard: **Windows context key + F10**.  The Windows context key is between the Left Alt key and the Left Arrow Key</li><li>Other keyboard: Shift + F10</li></ul> |
+| Open a context menu | <ul><li>Windows keyboard: **Windows context key + F10**.  The Windows context key is between the Left Alt key and the Left Arrow Key</li><li>Other keyboard: **Shift + F10**</li></ul> |
 
 ### Slicer
 | To do this action         | Press                |
