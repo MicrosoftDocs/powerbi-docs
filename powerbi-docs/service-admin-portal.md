@@ -55,11 +55,11 @@ Once the dashboard loads, you see two sections of tiles. The first section inclu
 
 Here’s a breakdown of what you can see in each tile:
 
-* Distinct count of all dashboards, reports, and datasets in the user workspace
+* Distinct count of all dashboards, reports, and datasets in the user workspace.
   
     ![Distinct count of dashboards, reports, datasets](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
-* Most consumed dashboard by number of users who can access it. For example, if you have a dashboard that you shared with 3 users, and you also added it to a content pack that two different users connected to, its count would be 6 (1 + 3 + 2)
+* Most consumed dashboard by number of users who can access it. For example, if you have a dashboard that you shared with 3 users, and you also added it to a content pack that two different users connected to, its count would be 6 (1 + 3 + 2).
   
     ![Most consumed dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
@@ -71,7 +71,7 @@ Here’s a breakdown of what you can see in each tile:
   
     ![Top users - dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-dashboards.png)
 
-* A view of your top users based on how many reports they have
+* A view of your top users based on how many reports they have.
   
     ![Top users - reports](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
 
@@ -363,7 +363,7 @@ Users in the organization can create and use dataflows. For an overview of dataf
 
 ## Template apps settings
 
-Three settings control template apps ability to publish or install template apps
+Three settings control template apps ability to publish or install template apps.
 
 ![Power BI admin portal template apps settings](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
 
