@@ -25,10 +25,11 @@ BYOK makes it easier to meet compliance requirements that specify key arrangemen
 
 To use BYOK, you must upload data to the Power BI service from a Power BI Desktop (PBIX) file. When you connect to data sources in Power BI Desktop, you must specify a storage mode of Import. You cannot use BYOK in the following scenarios:
 
-- DirectQuery
 - Analysis Services Live Connection
 - Excel workbooks (unless data is first imported into Power BI Desktop)
 - Push datasets
+
+
 
 In the next section you learn how to configure Azure Key Vault, which is where you store encryption keys for BYOK.
 
