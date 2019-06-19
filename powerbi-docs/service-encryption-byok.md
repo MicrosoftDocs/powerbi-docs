@@ -29,11 +29,11 @@ To use BYOK, you must upload data to the Power BI service from a Power BI Deskto
 - Excel workbooks (unless data is first imported into Power BI Desktop)
 - Push datasets
 
-In the next section you learn how to configure Azure Key Vault, which is where you store encryption keys for BYOK.
+BYOK applies only to the dataset associated with the PBIX file, not the query result caches for tiles and visuals.
 
 ## Configure Azure Key Vault
 
-Azure Key Vault is a tool for securely storing and accessing secrets, like encryption keys. You can use an existing key vault to store encryption keys, or you can create a new one specifically for use with Power BI.
+In this section you learn how to configure Azure Key Vault, a tool for securely storing and accessing secrets, like encryption keys. You can use an existing key vault to store encryption keys, or you can create a new one specifically for use with Power BI.
 
 The instructions in this section assume basic knowledge of Azure Key Vault. For more information, see [What is Azure Key Vault?](/azure/key-vault/key-vault-whatis). Configure your key vault in the following way:
 
@@ -75,7 +75,7 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 ### Soft delete option
 
-We recommend that you enable [soft-delete](/azure/key-vault/key-vault-ovw-soft-delete) on your key vault, to protect from data loss in case of accidental key – or key vault – deletion. You must use [PowerShell to enable the "soft-delete" property](/azure/key-vault/key-vault-soft-delete-powershell) on the key vault, because this option is not available from the Azure Portal yet.
+We recommend that you enable [soft-delete](/azure/key-vault/key-vault-ovw-soft-delete) on your key vault, to protect from data loss in case of accidental key – or key vault – deletion. You must use [PowerShell to enable the "soft-delete" property](/azure/key-vault/key-vault-soft-delete-powershell) on the key vault, because this option is not available from the Azure portal yet.
 
 With Azure Key Vault properly configured, you're ready to enable BYOK on your tenant.
 
