@@ -2,7 +2,7 @@
 title: Landing page
 description:
 author: sranins
-ms.author: ranin.salameh
+ms.author: rasala
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi

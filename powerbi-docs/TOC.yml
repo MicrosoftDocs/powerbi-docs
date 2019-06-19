@@ -1086,13 +1086,13 @@
       - name: "Custom visuals FAQ"
         href: power-bi-custom-visuals-faq.md
       - name: "Using Capabilities"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/
+        href: developer/visuals/capabilities.md
       - name: "Data View Mappings"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/dataviewmappings/ 
+        href: developer/visuals/dataviewmappings.md
       - name: "Objects and Properties"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/
+        href: developer/visuals/objects-and-properties.md
       - name: "Advanced Edit Mode"
-        href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/advanced-edit-mode/
+        href: developer/visuals/advanced-edit-mode.md
       - name: "Filter API" 
         href: developer/visuals/filter-api.md
       - name: "Fetch more data" 

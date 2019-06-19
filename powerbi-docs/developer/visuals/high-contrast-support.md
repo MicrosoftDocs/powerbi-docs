@@ -2,7 +2,7 @@
 title: High-Contrast mode support
 description:
 author: sranins
-ms.author: ranin.salameh
+ms.author: rasala
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi

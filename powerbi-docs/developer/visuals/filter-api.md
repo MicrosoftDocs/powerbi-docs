@@ -2,7 +2,7 @@
 title: Visual Filters API
 description: Visuals can filter other visuals
 author: sranins
-ms.author: ranin.salameh
+ms.author: rasala
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
