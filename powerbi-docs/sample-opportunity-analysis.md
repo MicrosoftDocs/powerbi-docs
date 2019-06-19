@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/20/2018
+ms.date: 06/20/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -16,65 +16,64 @@ LocalizationGroup: Samples
 # Opportunity Analysis sample for Power BI: Take a tour
 
 ## Overview of the Opportunity Analysis sample
-The **Opportunity Analysis Sample** contains a dashboard (and associated report) for a software company that has 2 sales channels: *direct* and *partner*. The Sales Manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
+The Opportunity Analysis Sample content pack contains a dashboard, report, and dataset for a software company that has two sales channels: *direct* and *partner*. The sales manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
 
-The Sales Manager relies on two measures of revenue:
+This sample relies on two measures of revenue:
 
-* **Revenue** – this is a salesperson’s estimate of what he believes the revenue will be.
-* **Factored Revenue** – this is calculated as Revenue X Probability% and is generally accepted as being a more-accurate predictor of actual sales revenue. Probability is determined by the deal’s current ***Sales Stage***.
-  * Lead – 10%  
-  * Qualify – 20%  
-  * Solution – 40%  
-  * Proposal – 60%  
-  * Finalize – 80%
+* Revenue: A salesperson’s estimate of what the revenue will be.
+* Factored revenue: Calculated as revenue X probability% and is accepted as being a more-accurate predictor of actual sales revenue. Probability is determined by the deal’s current *sales stage*.
+  * Lead: 10%  
+  * Qualify: 20%  
+  * Solution: 40%  
+  * Proposal: 60%  
+  * Finalize: 80%
 
-  ![](media/sample-opportunity-analysis/opportunity1.png)
+![Dashboard for the Opportunity Analysis sample](media/sample-opportunity-analysis/opportunity1.png)
 
-This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+
+This tutorial uses the Power BI service and the Opportunity Analysis Sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
 
 ## Prerequisites
 
- Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample), [.pbix file](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix), or [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529782).
+Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the content pack for this sample
 
-1. Open the Power BI service (app.powerbi.com) and log in.
-2. In the bottom left corner select **Get data**.
-   
-    ![](media/sample-datasets/power-bi-get-data.png)
-3. On the Get Data page that appears, select the **Samples** icon.
-   
-   ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Select the **Opportunity Analysis Sample**, then choose **Connect**.  
-  
-   ![Get Data](media/sample-opportunity-analysis/opportunity-connect.png)
-   
-5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. 
-   
-   ![Aterisk](media/sample-opportunity-analysis/opportunity-asterisk.png)
-  
+1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
+
+2. In the bottom-left corner, select **Get Data**.
+
+    ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
+3. On the **Get Data** page that appears, select **Samples**.
+
+4. Select **Opportunity Analysis Sample**, and then choose **Connect**.  
+
+   ![Connect to sample](media/sample-opportunity-analysis/opportunity-connect.png)
+5. Power BI imports the content pack, and then adds a new dashboard, report, and dataset to your current workspace.
+
+   ![](media/sample-opportunity-analysis/opportunity-asterisk.png)
+
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
-
- * [Opportunity Analysis Sample](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
+Alternatively, you can download the [Opportunity Analysis sample](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix) as a .pbix file, which is designed for use with Power BI Desktop.
 
 ### Get the Excel workbook for this sample
-You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529782) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
 
+If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529782). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
 
 ## What is our dashboard telling us?
-Our Sales Manager has created a dashboard to track those metrics most important to her. When she sees something interesting, she can select a tile to dig into the data.
+Our sales manager has created a dashboard to track those metrics most important to her. When she sees something interesting, she can select a tile to look into the data:
 
-1. Company revenue is $2 billion and factored revenue is $461 million.
-2. Opportunity count and revenue follow a familiar funnel pattern, with totals decreasing each subsequent stage.
-3. Most of our opportunities are in the East region.
-4. The large opportunities generate more revenue than the medium or small opportunities.
-5. Partner large deals generate more revenue: $8M on average versus $6M for direst sales.
+- Company revenue is $2 billion and factored revenue is $461 million.
+- Opportunity count and revenue follow a familiar funnel pattern, with totals decreasing with each subsequent stage.
+- Most of our opportunities are in the East region.
+- The large opportunities generate more revenue than the medium or small opportunities.
+- Partner large deals generate more revenue: $8M on average versus $6M for direst sales.
 
-Since the effort to land a deal is the same whether the deal is classified as large, medium, or small; our company should dig into the data to learn more about large opportunities.
+Because the effort to land a deal is the same whether the deal is classified as large, medium, or small, our company should dig into the data to learn more about large opportunities.
 
-Select the **Opportunity Count by Partner Driven and Sales Stage** tile to open page 1 of the report.  
+Select the **Opportunity Count by Partner Driven, Sales Stage** tile to open page 1 of the report.  
 ![](media/sample-opportunity-analysis/opportunity2.png)
 
 ## Explore the pages in the report
@@ -93,7 +92,7 @@ This page takes a similar look at the data but using a revenue perspective inste
 * East is our biggest region not only in opportunity count but in revenue also.  
 * Filtering by Partner driven (select **Yes** in the legend in the top right) reveals revenue of $1.5B and $294M. Compare this to $644B and $166M for non-partner driven revenue.  
 * Average revenue for large accounts is larger (8M) if the opportunity is partner driven as compared to 6M for non-partner driven business.  
-* For partner driven business, average revenue for large opportunities is almost double that of medium sized opportunities (4M).  
+* For partner driven business, average revenue for large opportunities is almost double that of medium-sized opportunities (4M).  
 * Average revenue for small and medium businesses is comparable for both partner driven and non-partner driven business.   
 
 Clearly our partners are doing a better job selling to customers.  It might make sense to funnel more deals through our partners.
@@ -118,6 +117,6 @@ Our CFO uses this page to manage workload. By looking at the revenue opportuniti
 This is a safe environment to play in. You can always choose not to save your changes. But if you do save them, you can always go to **Get Data** for a new copy of this sample.
 
 ## Next steps: Connect to your data
-We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into opportunity tracking data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](service-get-started.md).
+We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into opportunity tracking data. Now it’s your turn — connect to your own data. With Power BI, you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](service-get-started.md).
 
 [Download samples](sample-datasets.md)  

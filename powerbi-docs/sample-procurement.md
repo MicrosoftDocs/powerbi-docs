@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/23/2018
+ms.date: 06/20/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -16,45 +16,46 @@ LocalizationGroup: Samples
 # Procurement Analysis sample for Power BI: Take a tour
 
 ## Overview of the Procurement Analysis sample
-This industry sample dashboard and underlying report analyze a manufacturing company’s spending on vendors by category and location. In the sample, we explore these areas:
+The Procurement Analysis Sample content pack contains a dashboard, report, and dataset that analyzes a manufacturing company’s spending on vendors by category and location. In the sample, we explore these areas:
 
 * Who the top vendors are
-* What categories we spend most on
+* What categories we spend the most on
 * Which vendors give us the highest discount and when
-
-This sample is part of a series that illustrates how you can use  Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce ([www.obvience.com)](http://www.obvience.com/) that has been anonymized.
 
 ![](media/sample-procurement/procurement1.png)
 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+
+This tutorial uses the Power BI service and the Procurement Analysis Sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
+
 ## Prerequisites
 
- Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-procurement#get-the-content-pack-for-this-sample), [.pbix file](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix), or [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529784).
+Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the content pack for this sample
 
-1. Open the Power BI service (app.powerbi.com) and log in.
-2. In the bottom left corner select **Get data**.
-   
-    ![](media/sample-datasets/power-bi-get-data.png)
-3. On the Get Data page that appears, select the **Samples** icon.
-   
-   ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Select the **Procurement Analysis Sample**, then choose **Connect**.  
+1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
+
+2. In the bottom-left corner, select **Get Data**.
+
+    ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
+3. On the **Get Data** page that appears, select **Samples**.
+
+4. Select **Procurement Analysis Sample**, and then choose **Connect**.  
   
-   ![Get Data](media/sample-procurement/procurement1a.png)
+   ![Connect to sample](media/sample-procurement/procurement1a.png)
    
-5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. 
+5. Power BI imports the content pack, and then adds a new dashboard, report, and dataset to your current workspace.
    
-   ![Asterisk](media/sample-procurement/procurement1b.png)
+   ![](media/sample-procurement/procurement1b.png)
   
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
-
- * [Procurement Analysis Sample](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
+Alternatively, you can download the [Procurement Analysis sample](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix) as a .pbix file, which is designed for use with Power BI Desktop. 
 
 ### Get the Excel workbook for this sample
-You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529784) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
+
+If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529784). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
 
 
 ## Spending trends
