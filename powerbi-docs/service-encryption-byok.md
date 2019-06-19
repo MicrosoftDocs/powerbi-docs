@@ -29,8 +29,6 @@ To use BYOK, you must upload data to the Power BI service from a Power BI Deskto
 - Excel workbooks (unless data is first imported into Power BI Desktop)
 - Push datasets
 
-
-
 In the next section you learn how to configure Azure Key Vault, which is where you store encryption keys for BYOK.
 
 ## Configure Azure Key Vault
