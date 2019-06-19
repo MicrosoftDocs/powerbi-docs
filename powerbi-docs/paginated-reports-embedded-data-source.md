@@ -84,7 +84,7 @@ RDL in different workspace as dataset (same owner)	- Supported
 - Shared .rdl: You need build permissions assigned for each user viewing the report at the dataset level
 - Shared app: You need build permissions assigned for each user viewing the report at the dataset level
 - .rdl in same workspace as dataset (different user) - Supported
-RDL in different workspace as dataset (different user)	- - You need build permissions assigned for each user viewing the report at the dataset level
+- .rdl in different workspace as dataset (different user): You need build permissions assigned for each user viewing the report at the dataset level
 Role level security - You need build permissions assigned for each user viewing the report at the dataset level to have it enforced
 
 ## Next steps
