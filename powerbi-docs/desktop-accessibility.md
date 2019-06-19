@@ -123,7 +123,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Move focus between sections  | **Ctrl + F6** |
 | Move focus forward in section | **Tab**         |
 | Move focus backward in section | **Shift + Tab** |
-| Select or de-select an object | **Enter** or **spacebar** |
+| Select or clear selection of an object | **Enter** or **spacebar** |
 | Multi-select objects | **Ctrl + spacebar** |
 
 ### On visual
@@ -134,7 +134,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Enter a visual | **Ctrl + Right arrow** |
 | Enter a layer | **Enter** |
 | Exit a layer or visual | **Esc** |
-| Select or unselect data point | **Enter** or **spacebar** |
+| Select or clear selection of a data point | **Enter** or **spacebar** |
 | Multi-select | **Ctrl + Enter** or **Ctrl + spacebar** |
 | Right click | <ul><li>Windows keyboard: **Windows context key + F10**. The Windows context key is between the Left Alt key and the Left Arrow Key</li><li>Other keyboard: **Shift + F10**</li></ul> |
 | Clear selection | **Ctrl + Shift + C** |
@@ -176,7 +176,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Insert line below | **Ctrl + Enter** |
 | Insert line above | **Ctrl + Shift + Enter** |
 | Jump to matching bracket | **Ctrl + Shift + \** |
-| Indent / outdent line | **Ctrl + ]** / **[** |
+| Indent line / Extend line into the margin | **Ctrl + ]** / **[** |
 | Insert cursor | **Alt + Click** |
 | Select current line | **Ctrl + I** |
 | Select all occurrences of current selection | **Ctrl + Shift + L** |
