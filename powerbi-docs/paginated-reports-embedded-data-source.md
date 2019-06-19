@@ -65,7 +65,7 @@ See [Report Data in Power BI Report Builder](report-builder-data.md) for more de
      
 ## Limitations and Considerations
 
-Paginated Reports connecting to Power BI datasets follow the rules for shared datasets in Power BI with some minor changes.  For users to properly view paginated reports using Power BI datasets, and to ensure RLS is enabled and enforced for your viewers, you need to ensure you are following the rules below:
+Paginated reports connecting to Power BI datasets follow the rules for shared datasets in Power BI with some minor changes.  For users to properly view paginated reports using Power BI datasets, and to ensure  row-level security (RLS) is enabled and enforced for your viewers, make sure you follow these rules:
 
 Apps/App Workspace (Original)
 
