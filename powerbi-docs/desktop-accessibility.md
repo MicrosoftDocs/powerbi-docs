@@ -35,7 +35,7 @@ You can switch focus between the report page tabs, or objects on a given report 
 
 As you navigate between visuals, you can press **Alt + Shift + F10** to move focus to the visual header. The visual header contains various options including sorting, exporting the data behind the chart, and Focus mode. 
 
-![Press Alt + Shift + F10 in Power BI Desktop to move focus to the visual header](media/desktop-accessibility/accessibility_08.png)
+![Press Alt + Shift + F10 in Power BI Desktop to move focus to the visual header](media/desktop-accessibility/accessibility-08.png)
 
 You can press **Alt + Shift + F11** to present an accessible version of the **Show data** window. This window lets you explore the data used in the visual in an HTML table, using the same keyboard shortcuts you normally use with your screen reader. 
 
