@@ -25,12 +25,13 @@ Beginning with the September 2017 release of **Power BI Desktop**, you can press
 
 With the accessibility enhancements, you can consume a Power BI report with a keyboard or a screen reader with the following techniques:
 
-When viewing a report, generally you should have scan mode off.
+> [!NOTE]
+> When viewing a report, generally you should have scan mode off.
 
 You can switch focus between the report page tabs, or objects on a given report page, using **Ctrl + F6**.
 
-* When focus is on *report page tabs*, use the **Tab** or **Arrow** keys to move focus from one report page to the next. The screen reader reads out the title of the report page, and whether it's currently selected. To load the report page currently under focus, use the **Enter** key or spacebar.
-* When focus is on a loaded *report page*, use the **Tab** key to shift focus to each object on the page, which includes all textboxes, images, shapes, and charts. The screen reader reads the type of object and the object's title (if it has one). The screen reader also reads a description of that object if it's provided by the report author. 
+* When focus is on report page tabs, use the **Tab** or **Arrow** keys to move focus from one report page to the next. The screen reader reads out the title of the report page, and whether it's currently selected. To load the report page currently under focus, use the **Enter** key or spacebar.
+* When focus is on a loaded report page, use the **Tab** key to shift focus to each object on the page, which includes all textboxes, images, shapes, and charts. The screen reader reads the type of object and the object's title (if it has one). The screen reader also reads a description of that object if it's provided by the report author. 
 
 As you navigate between visuals, you can press **Alt + Shift + F10** to move focus to the visual header. The visual header contains various options including sorting, exporting the data behind the chart, and Focus mode. 
 
@@ -61,7 +62,7 @@ The following tips can help you create **Power BI Desktop** reports that are mor
   * To turn the **Show markers** toggle on, select the **Format** section in the **Visualizations** pane and expand the **Shapes** section. Scroll down to find the **Show markers** toggle and turn it to **On**.
   * To customize individual lines, find the **Customize series** toggle and turn it to **On**. Then, select the name of each line (or area, if using an **Area** chart) from the drop-down box in that **Shapes** section. Below the drop-down, you can then adjust many aspects of the marker used for the selected line, including its shape, color, and size.
   
-  ![Use different markers for line and area charts to improve accessibility](media/desktop-accessibility/accessibility-01.png)
+    ![Use different markers for line and area charts to improve accessibility](media/desktop-accessibility/accessibility-format-section.png)
   
   * Using a different **Marker shape** for each line makes it easier for report consumers to differentiate lines (or areas) from each other.
 * As a follow on to the previous bullet, don't rely on color to convey information. When using shapes on line and scatter charts, don't rely on conditional formatting to provide insights in tables and matrices. 
@@ -79,7 +80,7 @@ The following tips can help you create **Power BI Desktop** reports that are mor
 ### Arranging items in Field buckets
 Beginning with the October 2018 release of **Power BI Desktop**, you can navigate the **Fields** well with a keyboard and it interacts with screen readers. 
 
-To improve the process of creating reports with screen readers, a context menu is available. The menu allows moving fields in the well up or down in the **Fields** list, or moving the field to other wells, such as **Legend** or **Value** or others.
+To improve the process of creating reports with screen readers, a context menu is available. The menu allows moving fields in the well up or down in the **Fields** list. The menu also allows moving the field to other wells, such as **Legend** or **Value** or others.
 
 ![Context menu in the Fields well lets you move fields up, down, or to another area](media/desktop-accessibility/accessibility-09.png)
 
@@ -93,7 +94,7 @@ When you use high contrast modes in Windows, those settings and the palette you 
 
 ![High contrast windows settings](media/desktop-accessibility/accessibility-05b.png)
 
-The Power BI service also attempts to detect the high contrast settings selected for Windows, but how effective and accurate that detection is depends on the browser showing the Power BI service. If you want to set the theme manually in the Power BI service, you can select **View** > **High contrast colors** and then select the theme you would like to apply to the report.
+The Power BI service also attempts to detect the high contrast settings selected for Windows. The effectiveness and accuracy of that detection depends on the browser showing the Power BI service. If you want to set the theme manually in the Power BI service, you can select **View** > **High contrast colors** and then select the theme you would like to apply to the report.
 
 ![Setting high contrast in the Power BI service](media/desktop-accessibility/accessibility_06.png)
 
