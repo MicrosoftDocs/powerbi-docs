@@ -69,7 +69,7 @@ Paginated reports connecting to Power BI datasets follow the rules for shared da
 
 ### Classic apps and app workspaces
 
-RDL in same workspace as dataset (same owner)	- Supported
+- .rdl in same workspace as dataset (same owner): Supported
 RDL in different workspace as dataset (same owner)	- Supported
 Shared Rdl	- You need build permissions assigned for each user viewing the report at the dataset level
 Shared App	- You need build permissions assigned for each user viewing the report at the dataset level
