@@ -52,7 +52,7 @@ Add required libraries into package.json at `devDependencies` section:
 "webpack": "4.26.0"
 ```
 
-To find out more about the package see the description below.
+See the description below to find out more about the package.
 
 Save `package.json` and execute on command line at `package.json` location:
 
@@ -62,7 +62,7 @@ npm install
 
 The package manager will install all new packages added to `package.json`
 
-For running unit tests we will need to configure the test runner and webpack config. The sample of config you can find here 
+For running unit tests, we will need to configure the test runner and webpack config. The sample of config you can find here 
 
 Sample of `test.webpack.config.js`:
 
@@ -251,13 +251,13 @@ Some settings of `karma.conf.js`:
 
 Some properties of config:
 
-* `singleRun: true` - tests usually run on CI system. And it is enough to single one time. 
-You can change to `false` for debugging your tests. Karma will keep running browser, and it will allow you use the console to debug.
+* `singleRun: true` - tests run on CI system. And it is enough to single one time. 
+You can change to `false` for debugging your tests. Karma will keep running browser, and it will allow you to use the console for debugging.
 
 * `files: [...]` - in this array, you can set files for loading to the browser.
 Usually, there are source files, test cases, libraries (jasmine, test utils). You can add to list other files if you need.
 
-* `preprocessors` - this section of config you configure actions, which executes before unit tests execution. There are precompiling of typescript to JS and preparing sourcemap files and generating code to generate code coverage report. You can disable `coverage` for debugging your tests. Coverage generates additional code for check code for the test coverage and it will complicate debugging tests. 
+* `preprocessors` - this section of config you configure actions, which execute before unit tests execution. There are precompiling of typescript to JS and preparing sourcemap files and generating code to generate code coverage report. You can disable `coverage` for debugging your tests. Coverage generates additional code for check code for the test coverage and it will complicate debugging tests. 
 
 **Description of all configurations you can find in the [documentation](https://karma-runner.github.io/1.0/config/configuration-file.html) of karma.js**
 
@@ -309,11 +309,11 @@ export class BarChartBuilder extends VisualBuilderBase<VisualClass> {
 }
 ```
 
-There is `build` method for creating an instance of your visual. `mainElement` is a get method which returns an instance of "root" DOM element in your visual. The getter is optional, but it makes writing unit test easier..
+There is `build` method for creating an instance of your visual. `mainElement` is a get method, which returns an instance of "root" DOM element in your visual. The getter is optional but it makes writing unit test easier..
 
-So, we have the builder of an instance of visual. Let's write the test case. It will be a simple test case to check those SVG elements created when your visual displays.
+So, we have the builder of an instance of visual. Let's write the test case. It will be a test case to check those SVG elements created when your visual displays.
 
-Add `visualTest.ts` file for test cases with these code:
+Add `visualTest.ts` file for test cases with these codes:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -348,9 +348,9 @@ There are calling of several methods.
 
 * `it` defines a single spec. [`it`](https://jasmine.github.io/api/2.6/global.html#it) method should contain one or more `expectations`.
 
-* [`expect`](https://jasmine.github.io/api/2.6/global.html#expect) - method creates expectation for a spec. A spec will succeed if will be passing all expectations and a spec with any failures of expectations will fail.
+* [`expect`](https://jasmine.github.io/api/2.6/global.html#expect) - method creates expectation for a spec. A spec will succeed if all expectations pass without any failures.
 
-* `toBeInDOM` - it's one of matchers method. About exists matchers you can read in [documentation](https://jasmine.github.io/api/2.6/matchers.html) of jasmine framework.
+* `toBeInDOM` - it's one of matchers methods. About exists matchers you can read in [documentation](https://jasmine.github.io/api/2.6/matchers.html) of jasmine framework.
 
 **Read more about jasmine framework in official [documentation](https://jasmine.github.io/).**
 
@@ -364,7 +364,7 @@ To run the unit test, you can type this command in the command line tool.
 npm run test 
 ```
 
-> Please note that Google Chrome has to be installed locally.
+> Note that Google Chrome has to be installed locally.
 
 karma.js will run chrome browser and will execute the test case.
 
@@ -393,7 +393,7 @@ Lines        : 20.85% ( 44/211 )
 
 ## How to add static data for unit tests
 
-Create `visualData.ts` file in `test`folder. With these code:
+Create `visualData.ts` file in `test`folder. With these codes:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -492,7 +492,7 @@ In `sampleBarChart` visual [capabilities.json](https://github.com/Microsoft/Powe
 ],
 ```
 
-To generate the same mapping you must set the following params to `createCategoricalDataViewBuilder` method:
+To generate the same mapping, you must set the following params to `createCategoricalDataViewBuilder` method:
 
 ```typescript
 ([
@@ -541,7 +541,7 @@ Now, you can use `SampleBarChartDataBuilder` class in your unit test.
 `ValueType` class defined in `powerbi-visuals-utils-testutils` package. And 
 `createCategoricalDataViewBuilder` method requires `lodash` library.
 
-You need to add these packages to dependencies
+You need to add these packages to dependenciesu need to add these packages to dependencies
 
 In `package.json` at `devDependencies` section
 ```json
@@ -581,7 +581,7 @@ And you must see started Chrome Browser with your visual.
 
 ![](./media/KarmaJSChromeUTRunned.png)
 
-Make attention coverage summary increased. Please open `coverage\index.html` to find out more about current code coverage
+Make attention coverage summary increased. Open `coverage\index.html` to find out more about current code coverage
 
 ![](./media/CodeCoverageIndex.png)
 

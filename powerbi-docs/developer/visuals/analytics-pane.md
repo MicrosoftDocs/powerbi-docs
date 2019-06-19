@@ -18,7 +18,7 @@ As of API v2.5.0, custom visuals too can present and manage their properties in 
 
 ![Analytics Pane](./media/visualization_pane_analytics_tab.png)
 
-This is handled similarly to [managing properties in the Format pane](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options), 
+It is handled similarly to [managing properties in the Format pane](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options), 
 by defining an object in the visual's capabilities.json file. 
 
 The differences are as follows:
@@ -55,9 +55,9 @@ objectCategory defaults to "Formatting" if omitted.
 Any other properties may be defined in the same way as done for Format objects. Object enumeration is done exactly the same as in **Format pane**. 
 
 ***Known limitations and issues***
-  1.	No multi-instance support yet (coming soon). Objects cannot have a [selector](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector) other than static (i.e. "selector": null), and custom visuals can't have user-defined multiple instances of a card.
+  1.	No multi-instance support yet (coming soon). Objects cannot have a [selector](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector) other than static (that is "selector": null), and custom visuals can't have user-defined multiple instances of a card.
   2.	Properties of type `integer` are not displayed correctly. As a workaround, use type `numeric` instead.
 
-As a general guideline, and on par with out-of-the-box visuals, please use the Analytics pane only for objects that add new information or shed new light on the presented information. For instance, dynamic reference lines illustrating important trends.
+As a general guideline, and on par with out-of-the-box visuals, use the Analytics pane only for objects that add new information or shed new light on the presented information. For instance, dynamic reference lines illustrating important trends.
 Any options that control the look-and-feel of the visual, i.e. formatting, should be kept in the Formatting pane.
 

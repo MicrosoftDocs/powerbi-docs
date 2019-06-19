@@ -56,12 +56,12 @@ Power BI will produce a `DataView` with a single `categorical` mapping (`table` 
 
 Describes conditions for a particular data mapping. You can provide multiple sets of conditions and if the data matches one of the described sets of conditions the visual will accept the data as valid.
 
-Currently, for each field you can specify a min and max value. This represents the number of fields that can be bound to that data role. 
+Currently, for each field you can specify a min and max value. It represents the number of fields that can be bound to that data role. 
 > Note: if a data role is omitted in the condition, it can have any number of fields.
 
 **Example 1**
 
-By default, you can drag multiple fields into each data role. In this example we limit category to 1 data field and measure to 2 data fields.
+By default, you can drag multiple fields into each data role. In this example, we limit category to one data field and measure to two data fields.
 
 ```json
 "conditions": [
@@ -71,7 +71,7 @@ By default, you can drag multiple fields into each data role. In this example we
 
 **Example 2**
 
-In this example, one of two conditions are required. Either exactly 1 category data field and exactly 2 measures, or exactly 2 categories and exactly one measure.
+In this example, one of two conditions is required. Either exactly one category data field and exactly two measures, or exactly two categories and exactly one measure.
 
 ```json
 "conditions": [
@@ -82,9 +82,9 @@ In this example, one of two conditions are required. Either exactly 1 category d
 
 ## Single Data Mapping
 
-Single data mapping is the simplest form of data mapping. It accepts a single measure field and gives you the total. If the field is numeric it will give you the sum. Otherwise it will give you a count of unique values.
+Single data mapping is the simplest form of data mapping. It accepts a single measure field and gives you the total. If the field is numeric, it will give you the sum. Otherwise it will give you a count of unique values.
 
-To use single data mapping you simply define the name of the data role you want to map. This will only work with a single measure field. If a second field is assigned no data view will be generated so it is also good practice to include a condition that limits the data to a single field.
+To use single data mapping, you need to define the name of the data role you want to map. This mapping will only work with a single measure field. If a second field is assigned no data view will be generated, so it is also good practice to include a condition that limits the data to a single field.
 
 > **Note**: This data mapping cannot be used in conjunction with any other data mapping. It is meant to reduce data into a single numeric value.
 
@@ -107,7 +107,7 @@ The resulting data view will still contain the other types (table, categorical, 
 
 ## Categorical Data Mapping
 
-Categorical data mapping is used to get one or two independent grouping of data.
+Categorical data mapping is used to get one or two independent groupings of data.
 
 **Example 1**
 Here is the definition from our previous example on DataRoles.
@@ -140,7 +140,7 @@ Now for the mapping:
     }
 }
 ```
-This is a very simple example, in plain english it reads "Map my `category` DataRole so that for every field I drag into `category`, its data is mapped to `categorical.categories`. Also map my `measure` DataRole to `categorical.values`."
+It is a simple example, in plain english it reads "Map my `category` DataRole so that for every field I drag into `category`, its data is mapped to `categorical.categories`. Also map my `measure` DataRole to `categorical.values`."
 
 * **for...in** - For all the items in this data role, include them in the data query.
 * **bind...to** - Produces the same result as for...in, but expects that the DataRole will have a condition restricting it to a single field.
@@ -215,7 +215,7 @@ Here are the dataRoles.
 ]
 ```
 
-Here are the dataViewMappings.
+Here is the dataViewMapping.
 ```json
 "dataViewMappings": [
     {
@@ -244,7 +244,7 @@ Here are the dataViewMappings.
 The categorical dataview could be visualized like this.
 ![](./media/CategoricalData.png)
 
-PowerBI will produce you this as the categorical dataview. This is the set of categories.
+Power BI will produce you it as the categorical dataview. It is the set of categories.
 ![](./media/CategoricalDataView.png)
 
 Each category maps to a set of values as well. Each of these values is grouped by series, which is years.
@@ -286,7 +286,7 @@ With the given capabilities:
 The table dataview could be visualized like this.  
 ![](./media/TableData.png)
 
-PowerBI will produce you this as the table dataview. Do not assume there is an ordering.  
+Power BI will produce you is as the table dataview. Do not assume there is an ordering.  
 ![](./media/TableDataView.png)
 
 The data can be aggregated by selecting the desired field and clicking sum.  
@@ -452,7 +452,7 @@ The visual gets data stucture as described below (only the first two rows are pr
 
 A `DataReductionAlgorithm` can be applied if you want to control the amount of data received in the DataView.
 
-By default all Custom Visuals have the top DataReductionAlgorithm applied with the "count" set to 1000 dataPoints. This is equivalent to setting the following properties in the capabilities.json:
+By default all Custom Visuals have the top DataReductionAlgorithm applied with the "count" set to 1000 dataPoints. It is equivalent to setting the following properties in the capabilities.json:
 ```json
 "dataReductionAlgorithm": {
     "top": {
@@ -464,9 +464,9 @@ You can modify the 'count' value to any integer value up to 30000. R-based custo
 
 ## Data Reduction Algorithm types 
 
-There are four types of `DataReductionAlgorithm` settings::
-* `top` - if you want limit the data to values taken from the top of the dataset. The top first "count" values will be taken from the data set.
-* `bottom` - if you want limit the data to values taken from the bottom of the dataset. The last "count" values will be taken from the data set.
+There are four types of `DataReductionAlgorithm` settings:
+* `top` - if you want to limit the data to values taken from the top of the dataset. The top first "count" values will be taken from the data set.
+* `bottom` - if you want to limit the data to values taken from the bottom of the dataset. The last "count" values will be taken from the data set.
 * `sample` - reduce the dataset by a simple sampling algorithm limited to a "count" number of items. 
 It means first and last items are included, as well as a "count" number of items having equal intervals between them.
 For example if you got a data set [0, 1, 2, ... 100] and a `count: 9` then you will receive the following values [0, 10, 20 ... 100]
@@ -476,7 +476,7 @@ For example if you got a data set [0, 1, 2, ... 100] and a `count: 9` then you w
 
 `DataReductionAlgorithm` can be used in categorical, table or matrix dataview mapping.
 
-For categorical data mapping it can be set into `categories` and/or group section of `values`.
+For categorical data mapping, it can be set into `categories` and/or group section of `values`.
 
 **Example 1**
 ```json
@@ -510,7 +510,7 @@ For categorical data mapping it can be set into `categories` and/or group sectio
 }
 ```
 
-For table dataview mapping the data reduction algorithm can be applied to the `rows` section.
+The data reduction algorithm can be applied to the `rows` section of table dataview mapping.
 
 **Example 2**
 ```json
@@ -532,4 +532,4 @@ For table dataview mapping the data reduction algorithm can be applied to the `r
 ]
 ```
 
-For `matrix` dataview mapping the data reduction algorithm can be applied to the `rows` and/or `columns` section.
+The data reduction algorithm can be applied to the `rows` and/or `columns` section of `matrix` dataview mapping .

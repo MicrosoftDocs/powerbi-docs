@@ -29,14 +29,14 @@ The second necessary aspect is enabled option in `capabilities.json` (see a samp
 }
 ```
 
-After this you can see Sync Slicers options panel when you click on your custom slicer visual.
+After this, you can see Sync Slicers options panel when you click on your custom slicer visual.
 
 `Also, pay attention that if your slicer has more than 1 field (category or measure) the feature will be disabled because Sync Slicers don't support several fields.`
 
 ![](./media/sync-slicers-panel.png)
 
-In the panel you can see that your slicer visibility and its filtration may be applied for several report pages.
+In the panel, you can see that your slicer visibility and its filtration may be applied for several report pages.
 
-You can download the following report to try this feature [demo PowerBI report with sync slicer](./media/SampleSlicerSync.pbix)
+You can download the following report to try this feature [demo Power BI report with sync slicer](./media/SampleSlicerSync.pbix)
 
 
