@@ -1,8 +1,8 @@
 ---
 title: Visuals tooltips
 description: Visuals can displays PowerBI's tooltips
-author: Microsoft
-ms.author: Microsoft
+author: AviSander
+ms.author: AviSander
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -10,6 +10,8 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ---
+
+# Visuals tooltips
 
 Visuals can now make use of PowerBI's tooltip support. PowerBI tooltips handle the following interactions:
 
@@ -21,7 +23,7 @@ Tooltips can display a textual element with a title, a value at a given color an
 
 For example, tooltips in the sample BarChart .
 
-![Sample BarChart tooltips](../media/TooltipsInSampleBarChart.png)
+![Sample BarChart tooltips](./media/TooltipsInSampleBarChart.png)
 
 The tooltip above illustrates a single bar category and value. This can be extended to display multiple values within a single tooltip. This is totally at the developer's control. 
 

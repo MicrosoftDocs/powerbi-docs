@@ -1,8 +1,8 @@
 ---
 title: Unit test introduction
 description: Customizable properties of the visual
-author: Microsoft
-ms.author: Microsoft
+author: zBritva
+ms.author: zBritva
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi

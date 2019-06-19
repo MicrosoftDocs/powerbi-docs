@@ -1,8 +1,8 @@
 ---
 title: Rendering events
 description: Visuals can notify Power BI that they are ready to exporting to Power Point/PDF
-author: Microsoft
-ms.author: Microsoft
+author: Yarovinsky
+ms.author: Yarovinsky
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -11,6 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
+# Rendering events
 
 The new API consists of three methods (started, finished or failed) which should be called during rendering.
 

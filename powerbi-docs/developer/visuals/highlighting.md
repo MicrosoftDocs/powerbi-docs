@@ -1,8 +1,8 @@
 ---
 title: Highlighting
 description:
-author: Microsoft
-ms.author: Microsoft
+author: sranins
+ms.author: sranins
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -10,6 +10,8 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ---
+
+# Highlighting
 
 By default whenever an element is selected the `values` array in the `dataView` object will be filtered to just the selected values. This will cause all other visuals on the page to display just the selected data.
 

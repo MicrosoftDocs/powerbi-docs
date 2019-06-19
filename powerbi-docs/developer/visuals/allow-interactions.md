@@ -1,8 +1,8 @@
 ---
 title: Allow interactions
 description:
-author: Microsoft
-ms.author: Microsoft
+author: shaym83
+ms.author: shaym83
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -10,6 +10,8 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ---
+
+# Allow interactions
 
 Visuals can query the value of the 'allowInteractions' flag, that indicate whether the visual should allow visual interactions.
 For example, visuals should be interactive during report viewing or editing, but not interactive when viewed in a dashboard.

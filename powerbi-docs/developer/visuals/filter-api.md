@@ -1,8 +1,8 @@
 ---
 title: Visual Filters API
 description: Visuals can filter other visuals
-author: Microsoft
-ms.author: Microsoft
+author: sranins
+ms.author: sranins
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-## Visual Filters API
+# Visual Filters API
 
 Filter-visuals allow to filter data. The main difference from selections is that other visuals will be filtered in any way despite highlight support by other visual.
 
@@ -270,7 +270,7 @@ Starting from API 2.2 **JSON Filters** can be restored from **VisualUpdateOption
 ```
 
 Power BI calls `update` method of the visual, when use switch bookmarks and the visual gets correspond `filter` object.
-[Read more about bookmarks support](./bookmarks-support)
+[Read more about bookmarks support](bookmarks-support)
 
 #### Sample JSON Filter
 

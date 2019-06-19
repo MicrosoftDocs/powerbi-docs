@@ -1,8 +1,8 @@
 ---
 title: Analytics pane
 description:
-author: Microsoft
-ms.author: Microsoft
+author: Guy-Moses
+ms.author: Guy-Moses
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-**Analytics pane** was [introduced for native visuals](https://docs.microsoft.com/en-us/power-bi/desktop-analytics-pane) on November 2018. 
+**Analytics pane** was [introduced for native visuals](https://docs.microsoft.com/power-bi/desktop-analytics-pane) on November 2018. 
 As of API v2.5.0, custom visuals too can present and manage their properties in the **Analytics pane**.
 
-![Analytics Pane](../media/visualization_pane_analytics_tab.png)
+![Analytics Pane](./media/visualization_pane_analytics_tab.png)
 
-This is handled similarly to [managing properties in the Format pane](https://docs.microsoft.com/en-us/power-bi/developer/custom-visual-develop-tutorial-format-options), 
+This is handled similarly to [managing properties in the Format pane](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options), 
 by defining an object in the visual's capabilities.json file. 
 
 The differences are as follows:

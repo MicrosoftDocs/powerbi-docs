@@ -1,8 +1,8 @@
 ---
 title: Fetch more data
 description: Enable segmented fetch of large datasets
-author: Microsoft
-ms.author: Microsoft
+author: AviSander
+ms.author: AviSander
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -10,6 +10,8 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ---
+
+# Fetch more data
 
 Load more data API overcome the hard limit of 30K data point. It brings data in chunks. The chunk size is configurable to improve performance according to use case.  
 

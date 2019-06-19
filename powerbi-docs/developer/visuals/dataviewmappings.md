@@ -1,8 +1,8 @@
 ---
 title: Data view mappings
 description: How Power BI transforms data before passing into the visual
-author: Microsoft
-ms.author: Microsoft
+author: wesyao
+ms.author: wesyao
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -11,6 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
+# Data view mappings
 
 A `dataViewMappings` describes how the data roles relate to each other and allows you to specify conditional requirements for the them.
 There is a section for each of the `dataMappings`.

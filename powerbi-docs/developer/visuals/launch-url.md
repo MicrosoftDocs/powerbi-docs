@@ -1,8 +1,8 @@
 ---
 title: Launch URL
 description: Visuals can open URL on new tab
-author: Microsoft
-ms.author: Microsoft
+author: Guy-Moses
+ms.author: Guy-Moses
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -11,6 +11,8 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
+# Launch URL
+
 Launch URL allows opening a new browser tab (or window), by delegating the actual work to Power BI.
 
 #### Parameters
@@ -18,7 +20,6 @@ Launch URL allows opening a new browser tab (or window), by delegating the actua
 | Name | Type | Description |
 |---|---|---|
 | url | string | external weblink |
-
 
 #### Sample
 
@@ -58,7 +59,7 @@ private createHelpLinkElement(): Element {
     linkElement.setAttribute("title", "Open documentation");
     linkElement.setAttribute("class", "helpLink");
     linkElement.addEventListener("click", () => {
-        this.host.launchUrl("https://docs.microsoft.com/en-us/power-bi/developer/custom-visual-develop-tutorial");
+        this.host.launchUrl("https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial");
     });
     return linkElement;
 };
@@ -115,7 +116,7 @@ A `showHelpLink` boolean static object was added to `capabilities.json` objects 
     }
 ```
 
-![](../images/launchURLtoggle.png)
+![](./media/launchURLtoggle.png)
 
 And, in the visual's `update` function, the following lines were added:
 ```typescript

@@ -1,8 +1,8 @@
 ---
 title: Bookmarks
 description: Visual can handle bookmarks switching
-author: Microsoft
-ms.author: Microsoft
+author: zBritva
+ms.author: zBritva
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -11,8 +11,9 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
+# Bookmarks
 
-Power BI report bookmarks allow capturing the currently configured view of a report page, selection state, filtering state of the visual etc. But it requires additional action from custom visuals side to support the bookmark and react correctly to changes of report state. Read more about bookmarks in the [documentation](https://docs.microsoft.com/en-us/power-bi/desktop-bookmarks)
+Power BI report bookmarks allow capturing the currently configured view of a report page, selection state, filtering state of the visual etc. But it requires additional action from custom visuals side to support the bookmark and react correctly to changes of report state. Read more about bookmarks in the [documentation](https://docs.microsoft.com/power-bi/desktop-bookmarks)
 
 ## Report bookmarks support in your visual
 
@@ -35,9 +36,9 @@ Once created, the user can switch between the bookmarks.
 
 When the user views a bookmark, PowerBI restores the saved filter or selection state and passes them to the all the visuals. Other visuals will be highlighted or filtered according to the state stored in the bookmark, this is handled by Power BI host. Your visual is responsible for correctly reflecting the new selection state (e.g. change color of rendered data points).
 
-The new selection state is communicated to the visual through the `update` method. The `options` argument will contain a special property: `options.dataViews[0].metadata.objects.general.filter`. This is the raw expression tree of the filter, it is not recommended to use this object directly.
+The new selection state is communicated to the visual through the `update` method. The `options` argument will contain a special property: `options.jsonFilters`. This is JSONFilter. Property can caontain Advanced Filter, Basic Filter, Tuple Filter.
 
-Instead, use `FilterManager.restoreSelectionIds` method to convert the filter object to an array of `ISelectionId`s.
+The visual should restore filter values to display correspond state of the visual for selected bookmark.
 
 Alternatively, use the special callback function call registred `registerOnSelectCallback` method of ISelectionManager, if the visual use selections only.
 
@@ -151,13 +152,16 @@ const filter: IAdvancedFilter = FilterManager.restoreFilter(
 If the `filter` object is not null, the visual should restore filter conditions from the object:
 
 ```typescript
-if (filter
-    && filter.conditions
-    && filter.conditions[0]
-    && filter.conditions[1]
+const jsonFilters: AdvancedFilter = this.options.jsonFilters as AdvancedFilter[];
+
+if (jsonFilters
+    && jsonFilters[0]
+    && jsonFilters[0].conditions
+    && jsonFilters[0].conditions[0]
+    && jsonFilters[0].conditions[1]
 ) {
-    const startDate: Date = filter.conditions[0].value as any;
-    const endDate: Date = filter.conditions[1].value as any;
+    const startDate: Date = new Date(`${jsonFilters[0].conditions[0].value}`);
+    const endDate: Date = new Date(`${jsonFilters[0].conditions[1].value}`);
 
     // apply restored conditions
 } else {

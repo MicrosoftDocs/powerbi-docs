@@ -1,8 +1,8 @@
 ---
 title: Sort
 description: Default sorting behavior for the visual.
-author: Microsoft
-ms.author: Microsoft
+author: zBritva
+ms.author: zBritva
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -10,6 +10,8 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ---
+
+# Sorting options
 
 `Sorting` specifies the default sorting behavior for the visual.
 Capability requires one of the parameters described below:

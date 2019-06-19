@@ -1,8 +1,8 @@
 ---
 title: Object and properties
 description: Customizable properties of the visual
-author: Microsoft
-ms.author: Microsoft
+author: MrMeison
+ms.author: sranins
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -11,6 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
+# Object and properties
 
 Objects describe customizable properties associated with the visual.
 Each object can have multiple properties and each property has a type associated with it.

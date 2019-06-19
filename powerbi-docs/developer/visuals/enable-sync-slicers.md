@@ -1,8 +1,8 @@
 ---
 title: Enable Sync Slicers
 description: Visual can handle bookmarks switching
-author: Microsoft
-ms.author: Microsoft
+author: EugeneElkin
+ms.author: EugeneElkin
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -11,7 +11,9 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-To support [Sync Slicers](https://docs.microsoft.com/en-us/power-bi/desktop-slicers) your custom slicer visual must use API 1.13 or higher.
+# Sync Slicers
+
+To support [Sync Slicers](https://docs.microsoft.com/power-bi/desktop-slicers) your custom slicer visual must use API 1.13 or higher.
 
 The second necessary aspect is enabled option in `capabilities.json` (see a sample below).
 

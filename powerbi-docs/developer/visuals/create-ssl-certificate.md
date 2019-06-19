@@ -1,8 +1,8 @@
 ---
 title: Creating SSL certificate
 description: Workaround instructions to create certificates manually for developer server
-author: Microsoft
-ms.author: Microsoft
+author: zBritva
+ms.author: zBritva
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -11,6 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
+# Creating SSL certificate
 
 Run the following command to generates the certificate by using powershell New-SelfSignedCertificate cmdlet on Windows 8 or higher.
 
