@@ -88,7 +88,7 @@ To improve the process of creating reports with screen readers, a context menu i
 
 When you use high contrast modes in Windows, those settings and the palette you select are also applied to reports in **Power BI Desktop**. 
 
-![High contrast windows settings](media/desktop-accessibility/accessibility_05.png)
+![High contrast windows settings](media/desktop-accessibility/accessibility-05.png)
 
 **Power BI Desktop** automatically detects which high contrast theme Windows is using and applies those settings to your reports. Those high contrast colors follow the report when published to the Power BI service, or elsewhere.
 
