@@ -175,7 +175,7 @@ In our continued effort to improve accessibility, the previous list of experienc
 | Copy line up / down | **Shift + Alt + Up arrow key** / **Down arrow key** |
 | Insert line below | **Ctrl + Enter** |
 | Insert line above | **Ctrl + Shift + Enter** |
-| Jump to matching bracket | **Ctrl + Shift + \\** |
+| Jump to matching bracket | **Ctrl + Shift +** \ |
 | Indent line / Extend line into the margin | **Ctrl + ]** / **[** |
 | Insert cursor | **Alt + Click** |
 | Select current line | **Ctrl + I** |
