@@ -25,7 +25,7 @@ You can only create subscriptions in the Power BI service. You receive an email 
 ## Requirements
 
 - **Creating** a subscription can be done by - 
-1. Users with a Power BI Pro license
+- Users with a Power BI Pro license
 2. Users viewing content in a Premium Workspace or App may also subscribe to content located there, even without a pro license.
 
 - You don't need edit permissions to the content (dashboard or report) to create a subscription for yourself, but you must have edit permissions to create one for someone else. 
