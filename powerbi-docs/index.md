@@ -32,7 +32,7 @@ ms:date: 06/10/2019
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Power BI for consumers</h3>
-                                                    <p>Do you use reports and dashboards, created by others, to make business decisions? Get to know the Power BI service for *consumers*.</p>
+                                                    <p>Do you use reports and dashboards, created by others, to make business decisions? Get to know the Power BI service for consumers.</p>
                                                 </div>
                                             </div>
                                         </div>
