@@ -2,7 +2,7 @@
 title: Creating SSL certificate
 description: Workaround instructions to create certificates manually for developer server
 author: zBritva
-ms.author: zBritva
+ms.author: v-ilgali
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi

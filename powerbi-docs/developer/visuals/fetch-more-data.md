@@ -2,7 +2,7 @@
 title: Fetch more data
 description: Enable segmented fetch of large datasets
 author: AviSander
-ms.author: AviSander
+ms.author: asander
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi

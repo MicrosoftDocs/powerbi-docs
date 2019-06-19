@@ -2,7 +2,7 @@
 title: Rendering events
 description: Visuals can notify Power BI that they are ready to exporting to Power Point/PDF
 author: Yarovinsky
-ms.author: Yarovinsky
+ms.author: alexyar
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Advanced Edit Mode
 description: Visuals that require advanced UI controls can declare support of Advanced Edit Mode
 author: shaym83
-ms.author: shaym83
+ms.author: shaym
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi

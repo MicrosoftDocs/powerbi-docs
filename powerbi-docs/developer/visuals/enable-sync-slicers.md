@@ -2,7 +2,7 @@
 title: Enable Sync Slicers
 description: Visual can handle bookmarks switching
 author: EugeneElkin
-ms.author: EugeneElkin
+ms.author: v-evelk
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi

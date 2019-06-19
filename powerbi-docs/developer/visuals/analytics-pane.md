@@ -2,7 +2,7 @@
 title: Analytics pane
 description:
 author: Guy-Moses
-ms.author: Guy-Moses
+ms.author: guymos
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -10,6 +10,8 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
 ---
+
+# Analytics pane
 
 **Analytics pane** was [introduced for native visuals](https://docs.microsoft.com/power-bi/desktop-analytics-pane) on November 2018. 
 As of API v2.5.0, custom visuals too can present and manage their properties in the **Analytics pane**.

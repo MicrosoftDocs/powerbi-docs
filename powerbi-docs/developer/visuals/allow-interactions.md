@@ -2,7 +2,7 @@
 title: Allow interactions
 description:
 author: shaym83
-ms.author: shaym83
+ms.author: shaym
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -20,7 +20,7 @@ Note, that tooltips are expected be enabled in all scenarios, regardless of this
 
 ## Getting the 'allowInteractions' value
 
-The 'allowInteractions' flag is passed as a boolean during the initialization of the visual, as a member of the [IVisualHost interface](../../../../api/references/ivisualhost/).
+The 'allowInteractions' flag is passed as a boolean during the initialization of the visual, as a member of the IVisualHost interface.
 
 In any Power BI scenario that requires the visuals not to be interactive (e.g. Dashboard tiles) - 'allowInteractions' flag will be set to false.
 Otherwise (e.g. Report), 'allowInteractions' will be set to true.

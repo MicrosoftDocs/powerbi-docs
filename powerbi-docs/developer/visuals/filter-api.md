@@ -2,7 +2,7 @@
 title: Visual Filters API
 description: Visuals can filter other visuals
 author: sranins
-ms.author: sranins
+ms.author: ranin.salameh
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -270,7 +270,7 @@ Starting from API 2.2 **JSON Filters** can be restored from **VisualUpdateOption
 ```
 
 Power BI calls `update` method of the visual, when use switch bookmarks and the visual gets correspond `filter` object.
-[Read more about bookmarks support](bookmarks-support)
+[Read more about bookmarks support](bookmarks-support.md)
 
 #### Sample JSON Filter
 

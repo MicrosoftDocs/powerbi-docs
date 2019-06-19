@@ -2,7 +2,7 @@
 title: Visuals tooltips
 description: Visuals can displays PowerBI's tooltips
 author: AviSander
-ms.author: AviSander
+ms.author: asander
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi

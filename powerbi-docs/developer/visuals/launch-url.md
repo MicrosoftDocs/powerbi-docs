@@ -2,7 +2,7 @@
 title: Launch URL
 description: Visuals can open URL on new tab
 author: Guy-Moses
-ms.author: Guy-Moses
+ms.author: guymos
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi

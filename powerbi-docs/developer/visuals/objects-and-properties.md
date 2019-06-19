@@ -2,7 +2,7 @@
 title: Object and properties
 description: Customizable properties of the visual
 author: MrMeison
-ms.author: sranins
+ms.author: ranin.salameh
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi

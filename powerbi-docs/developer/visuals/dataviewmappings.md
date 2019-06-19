@@ -1,8 +1,8 @@
 ---
 title: Data view mappings
 description: How Power BI transforms data before passing into the visual
-author: wesyao
-ms.author: wesyao
+author: asander
+ms.author: asander
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
@@ -448,7 +448,7 @@ The visual gets data stucture as described below (only the first two rows are pr
 }
 ```
 
-# Data Reduction Algorithm
+## Data Reduction Algorithm
 
 A `DataReductionAlgorithm` can be applied if you want to control the amount of data received in the DataView.
 

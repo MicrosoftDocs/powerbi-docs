@@ -1094,11 +1094,11 @@
       - name: "Advanced Edit Mode"
         href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/advanced-edit-mode/
       - name: "Filter API" 
-        href: developer/visual/filter-api.md
+        href: developer/visuals/filter-api.md
       - name: "Fetch more data" 
-        href: developer/visual/fetch-more-data.md
+        href: developer/visuals/fetch-more-data.md
       - name: "Launch URL" 
-        href: developer/visual/launch-url.md
+        href: developer/visuals/launch-url.md
     - name: How to
       items:
       - name: "Get a custom visual certified"

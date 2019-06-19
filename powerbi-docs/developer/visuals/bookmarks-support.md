@@ -2,7 +2,7 @@
 title: Bookmarks
 description: Visual can handle bookmarks switching
 author: zBritva
-ms.author: zBritva
+ms.author: v-ilgali
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
