@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 11/05/2018
+ms.date: 06/18/2019
 ---
 
 # Paginated reports in Power BI: FAQ 
