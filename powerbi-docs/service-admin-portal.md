@@ -212,6 +212,8 @@ The following image shows the option to Allow external guest users to edit and m
 ### Email Subscriptions
 Users in the organization can create email subscriptions
 
+![Enable email subscriptions](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
+
 ## Content pack and app settings
 
 ### Publish content packs and apps to the entire organization
