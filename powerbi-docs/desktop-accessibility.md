@@ -21,7 +21,7 @@ Power BI has features that enable people with disabilities to more easily consum
 ## Consuming a Power BI Desktop report with a keyboard or screen reader
 Beginning with the September 2017 release of **Power BI Desktop**, you can press **Shift + ?** to show a window that describes the accessibility keyboard shortcuts available in **Power BI Desktop**.
 
-![Press Shift + ? in Power BI Desktop to show accessibility keyboard shortcuts](media/desktop-accessibility/accessibility_03.png)
+![Press Shift + ? in Power BI Desktop to show accessibility keyboard shortcuts](media/desktop-accessibility/accessibility-03.png)
 
 With the accessibility enhancements, you can consume a Power BI report with a keyboard or a screen reader with the following techniques:
 
@@ -48,7 +48,7 @@ Beginning with the July 2018 release of **Power BI Desktop**, slicers also have 
 
 You can move through the controls in a slicer by pressing the **Tab** key. Pressing the **Tab** key when on the eraser moves to the drop-down button. Another **Tab** then moves to the first slicer value (if there are multiple values for the slicer, such as a range). 
 
-![Press Ctrl + Right arrow key in Power BI Desktop to adjust element or values in a slicer, press the spacebar to select the element and adjust its value](media/desktop-accessibility/accessibility_07.png)
+![Press Ctrl + Right arrow key in Power BI Desktop to adjust element or values in a slicer, press the spacebar to select the element and adjust its value](media/desktop-accessibility/accessibility-07.png)
 
 These accessibility additions let users fully consume Power BI reports using a screen reader and keyboard navigation.
 
@@ -96,7 +96,7 @@ When you use high contrast modes in Windows, those settings and the palette you 
 
 The Power BI service also attempts to detect the high contrast settings selected for Windows. The effectiveness and accuracy of that detection depends on the browser showing the Power BI service. If you want to set the theme manually in the Power BI service, you can select **View** > **High contrast colors** and then select the theme you would like to apply to the report.
 
-![Setting high contrast in the Power BI service](media/desktop-accessibility/accessibility_06.png)
+![Setting high contrast in the Power BI service](media/desktop-accessibility/accessibility-06.png)
 
 ## Considerations and limitations
 There are a few known issues and limitations with the accessibility features. Descriptions of those issues and limitations are in the following list:
