@@ -254,7 +254,7 @@ When setting backgrounds for report pages, choose colors that don’t overshadow
 
 You’re not creating a work of art, but a functional report. Choose a color that improves the readability and prominence of the report elements. A study on the use of color and visualizations within web pages found that higher contrast between colors increases the speed of comprehension. Two white papers explore this topic:
 
-* [The effect of text and background colour on visual search of Web pages](https://www.sciencedirect.com/science/article/pii/S0141938202000410)
+* [The effect of text and background color on visual search of Web pages](https://www.sciencedirect.com/science/article/pii/S0141938202000410)
 
 * [Determining Users’ Perception of Web Page Visual Complexity and Aesthetic Characteristics](https://www.researchgate.net/publication/301362579_Determining_Users'_Perception_of_Web_Page_Visual_Complexity_and_Aesthetic_Characteristics)
 
@@ -820,9 +820,9 @@ For more details on Bar and Column charts:
 
 * [Data Visualization 101: Bar Charts](http://blog.newscred.com/article/data-visualization-101-bar-charts)
 
-* [Data Visualization Catalogue: Bar Chart](http://www.datavizcatalogue.com/methods/bar_chart.html#.VYV-hY3bLJw)
+* [Data Visualization Catalog: Bar Chart](http://www.datavizcatalogue.com/methods/bar_chart.html#.VYV-hY3bLJw)
 
-* [Data Visualization Catalogue: Multi-set Bar Chart](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
+* [Data Visualization Catalog: Multi-set Bar Chart](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
 
 ### Stacked Bar and Column charts
 
@@ -862,7 +862,7 @@ In this Line chart, it's easier to see how commercial revenue has grown the most
 
 For more info on Stacked charts:
 
-* [Data Visualization Catalogue: Stacked Bar Graphs](http://www.datavizcatalogue.com/methods/stacked_bar_graph.html#top)
+* [Data Visualization Catalog: Stacked Bar Graphs](http://www.datavizcatalogue.com/methods/stacked_bar_graph.html#top)
 
 * [When are 100% stacked bar graphs useful?](http://www.perceptualedge.com/blog/?p=2239)
 
@@ -992,7 +992,7 @@ For more info on treemaps:
 
 * [Discovering Business Intelligence Using Treemap Visualizations](http://www.perceptualedge.com/articles/b-eye/treemaps.pdf)
 
-* [Data Visualization Catalogue: Treemap](http://www.datavizcatalogue.com/methods/treemap.html#.VYhylI3bL7Y)
+* [Data Visualization Catalog: Treemap](http://www.datavizcatalogue.com/methods/treemap.html#.VYhylI3bL7Y)
 
 ### Other charts
 
