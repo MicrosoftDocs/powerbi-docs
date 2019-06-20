@@ -1,5 +1,5 @@
 ---
-title: Cognitive Services in Power BI (Preview)
+title: Cognitive Services in Power BI
 description: Learn how to use Cognitive Services with Power BI
 author: davidiseminger
 manager: kfile
@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 06/10/2019
 ms.author: davidi
 
 LocalizationGroup: conceptual
 ---
 
-# Cognitive Services in Power BI (Preview)
+# Cognitive Services in Power BI 
 
 With the Cognitive Services in Power BI, you can apply different algorithms from [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) to enrich your data in the self-service data prep for Dataflows.
 
@@ -22,7 +22,7 @@ The services that are supported today are [Sentiment Analysis](https://docs.micr
 
 ## **Enabling AI features**
 
-Cognitive services are supported for Premium capacity nodes EM2, A2, or P1 and above. A separate AI workload on the capacity is used to run cognitive services. During public preview, this workload is disabled by default. Before using cognitive services in Power BI, the AI workload needs to be enabled in the capacity settings of the admin portal. You can turn on the AI workload in the workloads section, and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
+Cognitive services are supported for Premium capacity nodes EM2, A2, or P1 and above. A separate AI workload on the capacity is used to run cognitive services. During public preview (prior to June 2019), this workload was disabled by default. Before using cognitive services in Power BI, the AI workload needs to be enabled in the capacity settings of the admin portal. You can turn on the AI workload in the workloads section, and define the maximum amount of memory you would like this workload to consume. The recommended memory limit is 20%. Exceeding this limit causes the query to slow down.
 
 ![Cognitive services in Power BI](media/service-cognitive-services/cognitive-services_01.png)
 
@@ -92,8 +92,8 @@ This function requires an image URL or abase-64 field as input. At this time, im
 
 This article provided an overview of using Cognitive Services with Power BI service. The following articles might also be interesting and useful. 
 
-* [Tutorial: Invoke a Machine Learning Studio model in Power BI (Preview)](service-tutorial-invoke-machine-learning-model.md)
-* [Azure Machine Learning integration in Power BI (Preview)](service-machine-learning-integration.md)
+* [Tutorial: Invoke a Machine Learning Studio model in Power BI](service-tutorial-invoke-machine-learning-model.md)
+* [Azure Machine Learning integration in Power BI](service-machine-learning-integration.md)
 * [Tutorial: Using Cognitive Services in Power BI](service-tutorial-use-cognitive-services.md)
 
 

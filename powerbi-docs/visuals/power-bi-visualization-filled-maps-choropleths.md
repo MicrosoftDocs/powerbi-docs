@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 06/19/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 # Filled maps (choropleths) in Power BI
 A filled map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region.  Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).    
 
-![US map](media/power-bi-visualization-filled-maps-choropleths/large_map.png)
+![US map](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
 
 ## What is sent to Bing
 Power BI integrates with Bing to provide default map coordinates (a process called geo-coding). When you create a map visualization in Power BI service or Power BI Desktop, the data in the **Location**, **Latitude**, and **Longitude** buckets (that is being used to create that visualization) is sent to Bing.
@@ -51,10 +51,11 @@ In this video, Kim creates a basic map and converts it to a filled map.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 ### Get data and add a new blank page to the report
-1. To create your own filled map, [download the Sales and Marketing sample](../sample-datasets.md) by signing in to Power BI and selecting **Get Data \> Samples \> Sales and Marketing \> Connect**.
-2. When the success message appears, close it and select the **Reports** tab. Then choose **Sales and Marketing Sample** to open the report.
+1. To create your own filled map, [download the Sales and Marketing sample](../sample-datasets.md) by signing in to Power BI and selecting **Get Data \> Samples \> Sales and Marketing \> Connect**. Or get the **Power BI Sales and Marketing** app on appsource.com. 
 
-   ![Reports content list](media/power-bi-visualization-filled-maps-choropleths/power-bi-content-reports2.png)
+2. Open the Sales and Marketing report.
+
+   ![Sales and marketing report opens](media/power-bi-visualization-filled-maps-choropleths/power-bi-report-canvas.png)
 3. Power BI opens the report. Select **Edit report** to open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
 
 4. Add a new page by selecting the yellow plus sign at the bottom of the report canvas.
@@ -65,10 +66,10 @@ In this video, Kim creates a basic map and converts it to a filled map.
 1. From the Fields pane, select the **Geo** \> **State** field.    
 
    ![yellow check mark next to State](media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png)
-5. [Convert the chart](power-bi-report-change-visualization-type.md) to a filled map. Notice that **State** is now in the **Location** well. Bing Maps uses the field in the **Location** well to create the map.  The location can be a variety of valid locations: countries, states, counties, cities, zip codes or other postal codes etc. Bing Maps provides filled map shapes for locations around the world. Without a valid entry in the Location well, Power BI cannot create the filled map.  
+2. [Convert the chart](power-bi-report-change-visualization-type.md) to a filled map. Notice that **State** is now in the **Location** well. Bing Maps uses the field in the **Location** well to create the map.  The location can be a variety of valid locations: countries, states, counties, cities, zip codes or other postal codes etc. Bing Maps provides filled map shapes for locations around the world. Without a valid entry in the Location well, Power BI cannot create the filled map.  
 
    ![templates with the icon for filled map highlighted](media/power-bi-visualization-filled-maps-choropleths/img003.png)
-6. Filter the map to display only the continental United States.
+3. Filter the map to display only the continental United States.
 
    a.  At the bottom of the Visualizations pane, look for the **Filters** area.
 
@@ -78,21 +79,24 @@ In this video, Kim creates a basic map and converts it to a filled map.
    c.  Place a check mark next to **All** and remove the check mark next to **AK**.
 
    ![State dropdown with All and AK not selected](media/power-bi-visualization-filled-maps-choropleths/img005.png)
-7. Select **SalesFact** \> **Sentiment** to add it to the **Color saturation** well. The field in the **Color saturation** well controls the map shading.  
-   ![Sentiment in the Color saturation field well](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map.png)
-8. The filled map is shaded in green and red, with red representing the lower sentiment numbers and green representing the higher, more-positive sentiment.  Here I've highlighted the state of Wyoming (WY) and see that Sentiment is very good, 74.  
-   ![black dialog showing state and sentiment](media/power-bi-visualization-filled-maps-choropleths/power-bi-wy.png)
-9. [Save the report](../service-report-save.md).
-##    Adjust the color formatting
-Power BI gives you plenty of control over the appearance of your filled map.
-1. Select the paintroller icon to open the Formatting pane.
+4. Select the paint roller icon to open the Formatting pane, and choose **Data colors**.
 
-    ![Formatting pane](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-colors.png)
+    ![Formatting pane showing Data colors option](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-color.png)
 
-2. Select **Data colors** to display color options.
-3. Set the Minimum and Maximum colors to yellow and blue. And add Minimum and Maximum values, based on your data. Play around with these controls until you get the look you want. 
+5. Select the three vertical dots and choose **Conditional formatting**.
 
-    ![non-diverging colors](media/power-bi-visualization-filled-maps-choropleths/power-bi-color.png)
+    ![Data colors conditional formatting button](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional-formatting.png)
+
+6. Use the **Default color - Data colors** screen to determine how your filled map will be shaded. The options available to you include which field to base the shading, and how to apply the shading. In this example we're using the field **SalesFact** > **Sentiment**, and setting the lowest value for sentiment as red and the highest value as green. Values that fall between the maximum and minimum will be shades of red and green. The illustration at the bottom of the screen shows the range of colors that will be used. 
+
+    ![Default color pane with Sentiment selected](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment.png)
+
+7. The filled map is shaded in green and red, with red representing the lower sentiment numbers and green representing the higher, more-positive sentiment.  To display additional detail, drag a field into the Tooltips well.  Here I've added **Sentiment gap** and highlighted the state of Idaho (ID) and see that sentiment gap is low, at 6.
+   ![filled map showing Idaho tooltips](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map-idaho.png)
+
+10. [Save the report](../service-report-save.md).
+
+Power BI gives you plenty of control over the appearance of your filled map.Play around with these data color controls until you get the look you want. 
 
 ## Highlighting and cross-filtering
 For information about using the Filters pane, see [Add a filter to a report](../power-bi-report-add-filter.md).
@@ -119,13 +123,13 @@ Highlighting a location in a filled Map cross-filters the other visualizations o
 ## Considerations and troubleshooting
 Map data can be ambiguous.  For example, there's a Paris, France, but there's also a Paris, Texas. Your geographic data is probably stored in separate columns – a column for city names, a column for state or province names, etc. – so Bing may not be able to tell which Paris is which. If your dataset already contains latitude and longitude data, Power BI has special fields to help make the map data unambiguous. Just drag the field that contains your latitude data into the Visualizations \> Latitude area.  And do the same for your longitude data.    
 
-![Visualizations and Fields panes](media/power-bi-visualization-filled-maps-choropleths/pbi_latitude.png)
+![Visualizations and Fields panes](media/power-bi-visualization-filled-maps-choropleths/pbi-latitude.png)
 
 If you have permissions to edit the dataset in Power BI Desktop, watch this video for help addressing map ambiguity.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Co2z9b-s_yM" frameborder="0" allowfullscreen></iframe>
 
-If you do not have access to latitude and longitude data, [follow these instructions to update your dataset](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
+If you do not have access to latitude and longitude data, but you do have edit access to the dataset, [follow these instructions to update your dataset](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 
 For more help with Map visualizations, see [Tips and tricks for map visualizations](../power-bi-map-tips-and-tricks.md).
 
