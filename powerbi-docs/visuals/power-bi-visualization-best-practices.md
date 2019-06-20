@@ -122,7 +122,11 @@ Power BI includes tools to help you align your visuals. In Power BI Desktop, wit
 
 ![Align visuals in Power BI Desktop.](media/power-bi-visualization-best-practices/power-bi-visualization.png)
 
-**Figure 3: Align visual tools in Power BI Desktop**
+**Figure 3a: Align visual tools in Power BI Desktop**
+
+![Align visuals in Power BI Desktop.](media/power-bi-visualization-best-practices/power-bi-visualization-pbi-service.png)
+
+**Figure 3b: Align visual tools in the Power BI service**
 
 In the Power BI service and Power BI Desktop, you also have precise control over the size and position of visuals. You can find this control on the **General** tab on the **Format** pane for all visuals:
 
@@ -250,9 +254,9 @@ When setting backgrounds for report pages, choose colors that don’t overshadow
 
 You’re not creating a work of art, but a functional report. Choose a color that improves the readability and prominence of the report elements. A study on the use of color and visualizations within web pages found that higher contrast between colors increases the speed of comprehension. Two with papers explore this topic:
 
-* **The effect of text and background colour on visual search of web pages**
+* [The effect of text and background colour on visual search of Web pages](https://www.sciencedirect.com/science/article/pii/S0141938202000410)
 
-* **Determining Users’ Perception of Web Page Visual Complexity and Aesthetic Characteristics**
+* [Determining Users’ Perception of Web Page Visual Complexity and Aesthetic Characteristics](https://www.researchgate.net/publication/301362579_Determining_Users'_Perception_of_Web_Page_Visual_Complexity_and_Aesthetic_Characteristics)
 
 We’ve applied some color best practices to our example report (Figure 20 and 21). The most notable was that we changed the background color to black. The yellow was too bright and strained our eyes. Also, on the **Count of athlete name by year and class** chart, the yellow portion of the bars disappeared into the yellow background. Using a black (or white) background gives us maximum contrast and makes the visuals the focus of attention.
 
