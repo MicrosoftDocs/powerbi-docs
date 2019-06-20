@@ -25,7 +25,10 @@ When you receive the email it includes a link to "go to report or dashboard". On
 
 
 ## Requirements
-**Creating** a subscription is a Power BI Pro feature.   
+**Creating** a subscription can be done by - 
+
+- Users with a Power BI Pro license
+- Users viewing content in a Premium workspace or app may also subscribe to content located there, even without a Power BI Pro license.
 
 ## Subscribe to a dashboard or a report page
 Whether you're subscribing to a dashboard or report, the process is similar. The same button allows you to subscribe to Power BI service dashboards and reports.
