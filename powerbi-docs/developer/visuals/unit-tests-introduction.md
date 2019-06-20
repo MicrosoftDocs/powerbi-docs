@@ -14,7 +14,7 @@ ms.date: 06/18/2019
 
 # Custom visuals unit tests
 
-This tutorial describes basics of writing unit tests for your custom visuals. In this tutorial, we will consider how to use test runner karma.js, testing framework - jasmine.js and also we will consider how to use powerbi-visuals-utils-testutils package. It is a set of mocks and fakes to simplify unit testing for Power BI custom visuals.
+This tutorial describes basics of writing unit tests for your custom visuals. In this tutorial, we'll consider how to use test runner karma.js, testing framework - jasmine.js and also we'll consider how to use powerbi-visuals-utils-testutils package. It's a set of mocks and fakes to simplify unit testing for Power BI custom visuals.
 
 ## Install and configure karma.js and jasmine
 
@@ -62,7 +62,7 @@ npm install
 
 The package manager will install all new packages added to `package.json`
 
-For running unit tests, we will need to configure the test runner and webpack config. The sample of config you can find here 
+For running unit tests, we'll need to configure the test runner and webpack config. The sample of config you can find here 
 
 Sample of `test.webpack.config.js`:
 
@@ -235,29 +235,29 @@ module.exports = (config: Config) => {
 };
 ```
 
-You can modify this configuration if it is required.
+You can modify this configuration if it's required.
 
 Some settings of `karma.conf.js`:
 
-* `recursivePathToTests` variable locates place of code of tests
+* `recursivePathToTests` variable locates place of code of tests.
 
-* `srcRecursivePath` variable locates output JS code after compilling
+* `srcRecursivePath` variable locates output JS code after compiling.
 
 * `srcCssRecursivePath` variable locates output CSS after compilling less file with styles.
 
-* `srcOriginalRecursivePath` variable locates source code of your visual
+* `srcOriginalRecursivePath` variable locates source code of your visual.
 
 * `coverageFolder` - variable determines a place where the report of coverage will be created.
 
 Some properties of config:
 
-* `singleRun: true` - tests run on CI system. And it is enough to single one time. 
+* `singleRun: true` - tests run on CI system. And it's enough to single one time. 
 You can change to `false` for debugging your tests. Karma will keep running browser, and it will allow you to use the console for debugging.
 
 * `files: [...]` - in this array, you can set files for loading to the browser.
 Usually, there are source files, test cases, libraries (jasmine, test utils). You can add to list other files if you need.
 
-* `preprocessors` - this section of config you configure actions, which execute before unit tests execution. There are precompiling of typescript to JS and preparing sourcemap files and generating code to generate code coverage report. You can disable `coverage` for debugging your tests. Coverage generates additional code for check code for the test coverage and it will complicate debugging tests. 
+* `preprocessors` - this section of config you configure actions, which execute before unit tests execution. There are precompiling of typescript to JS and preparing source map files and generating code to generate code coverage report. You can disable `coverage` for debugging your tests. Coverage generates additional code for check code for the test coverage and it will complicate debugging tests. 
 
 **Description of all configurations you can find in the [documentation](https://karma-runner.github.io/1.0/config/configuration-file.html) of karma.js**
 
@@ -344,7 +344,7 @@ There are calling of several methods.
 
 * [`describe`](https://jasmine.github.io/api/2.6/global.html#describe) method describes test case. In a context of jasmine framework often called suite or group of specs.
 
-* `beforeEach` method will be called before each call of `it` method, which defined inside of [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach) method. 
+* `beforeEach` method will be called before each call of `it` method, which defined inside in [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach) method. 
 
 * `it` defines a single spec. [`it`](https://jasmine.github.io/api/2.6/global.html#it) method should contain one or more `expectations`.
 
@@ -354,11 +354,11 @@ There are calling of several methods.
 
 **Read more about jasmine framework in official [documentation](https://jasmine.github.io/).**
 
-After that, you can run your simple unit test typing a command in command line tool.
+After that, you can run your unit test typing a command in command-line tool.
 
 This test checks that root SVG element of the visuals is created.
 
-To run the unit test, you can type this command in the command line tool.
+To run the unit test, you can type this command in the command-line tool.
 
 ```
 npm run test 
@@ -370,7 +370,7 @@ karma.js will run chrome browser and will execute the test case.
 
 ![](./media/KarmaJSChrome.png)
 
-In command line you will get following output:
+In command line you'll get following output:
 
 ```
 > karma start
@@ -435,17 +435,17 @@ export class SampleBarChartDataBuilder extends TestDataViewBuilder {
 
 The `SampleBarChartDataBuilder` class extends `TestDataViewBuilder` and implements abstract method `getDataView`.
 
-When you put data into data field buckets Power BI produces a categorical dataview object based on your data.
+When you put data into data field buckets, Power BI produces a categorical dataview object based on your data.
 
 ![](./media/FieldsBuckets.png)
 
-In unit tests, you don't have Power BI core functions to reproduce it. But you need to map your static data to categorical dataview. And `TestDataViewBuilder` class will help you in that.
+In unit tests, you don't have Power BI core functions to reproduce it. But you need to map your static data to categorical dataview. And `TestDataViewBuilder` class will help you in it.
 
 [Read more about DataViewMapping](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md)
 
-In `getDataView` method you just call `createCategoricalDataViewBuilder` method with your data.
+In `getDataView` method, you just call `createCategoricalDataViewBuilder` method with your data.
 
-In `sampleBarChart` visual [capabilities.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/capabilities.json#L2) we have a dataRoles and dataViewMapping objects:
+In `sampleBarChart` visual [capabilities.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/capabilities.json#L2), we have a dataRoles and dataViewMapping objects:
 
 ```json
 "dataRoles": [
@@ -541,7 +541,7 @@ Now, you can use `SampleBarChartDataBuilder` class in your unit test.
 `ValueType` class defined in `powerbi-visuals-utils-testutils` package. And 
 `createCategoricalDataViewBuilder` method requires `lodash` library.
 
-You need to add these packages to dependenciesu need to add these packages to dependencies
+Add these packages to dependencies.
 
 In `package.json` at `devDependencies` section
 ```json
@@ -549,7 +549,7 @@ In `package.json` at `devDependencies` section
 "powerbi-visuals-utils-testutils": "2.2.0"
 ```
 
-You will need to call 
+Call 
 ```
 npm install 
 ```

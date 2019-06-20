@@ -37,6 +37,6 @@ After this, you can see Sync Slicers options panel when you click on your custom
 
 In the panel, you can see that your slicer visibility and its filtration may be applied for several report pages.
 
-You can download the following report to try this feature [demo Power BI report with sync slicer](./media/SampleSlicerSync.pbix)
+You can download the following report to try this feature [demo Power BI report with sync slicer](https://github.com/microsoft/PowerBI-visuals/blob/gh-pages/docs/how-to-guide/images/SampleSlicerSync.pbix?raw=true)
 
 

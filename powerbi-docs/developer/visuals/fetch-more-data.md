@@ -13,7 +13,7 @@ ms.date: 06/18/2019
 
 # Fetch more data
 
-Load more data API overcome the hard limit of 30K data point. It brings data in chunks. The chunk size is configurable to improve performance according to use case.  
+Load more data API overcome the hard limit of 30 K data point. It brings data in chunks. The chunk size is configurable to improve performance according to use case.  
 
 ## Enable segmented fetch of large datasets
 
@@ -52,7 +52,7 @@ The indication of whether or not more data exists by checking the existence of `
     }
 ```
 
-It is also possible to check whether it is the first or subsequent update by checking `options.operationKind`.
+It's also possible to check whether it's the first or subsequent update by checking `options.operationKind`.
 
 `VisualDataChangeOperationKind.Create` means the first segment, and `VisualDataChangeOperationKind.Append` means subsequent segments.
 
@@ -84,7 +84,7 @@ btn_click(){
 		let request_accepted: bool = this.host.fetchMoreData();
 		// handle rejection
 		if (!request_accepted) {
-			// for example when the 100MB limit has been reached
+			// for example when the 100 MB limit has been reached
 		}
 	}
 
@@ -93,4 +93,4 @@ btn_click(){
 
 Power BI will call `update` method of the visual with new segment of data as resopnse to call `this.host.fetchMoreData` method.
 
-*Please note that Power BI will presently limit the total fetched data to **100MB** to avoid client memory constraints. You can detect this limit being reached when fetchMoreData() returns 'false'.*
+*Note that Power BI will presently limit the total fetched data to **100 MB** to avoid client memory constraints. You can detect this limit being reached when fetchMoreData() returns 'false'.*
