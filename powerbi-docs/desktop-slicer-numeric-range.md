@@ -33,9 +33,9 @@ For the numeric range, you can select from the following three options:
 * **Less than or equal to**
 * **Greater than or equal to**
 
-When you select **Between** from the menu, a slider appears. You can use the slider to select numeric values that fall between the numbers. You can also use the slider and select either box to type in the values we want. This option is convenient when you want to slice on specific numbers. Sometimes the granularity of moving the slicer bar makes it difficult to land exactly on that number.
+When you select **Between** from the menu, a slider appears. You can use the slider to select numeric values that fall between the numbers. Sometimes the granularity of moving the slicer bar makes it difficult to land exactly on that number. You can also use the slider and select either box to type in the values we want. This option is convenient when you want to slice on specific numbers. 
 
-In the following image, the report page is filtered for **LineTotal** values that range between 2500.00 and 6000.00.
+In the following image, the report page filters for **LineTotal** values that range between 2500.00 and 6000.00.
 
 ![Numeric range slicer with Between](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-3-between-range.png)
 
@@ -53,7 +53,7 @@ A numeric range slicer snaps to whole numbers if the data type of the underlying
 
 ## Display formatting with the date range slicer
 
-When you use a slicer to display or set a range of dates, the dates display in the **Short Date** format. This date format is based on the user's browser or operating system locale. As such, it will be the display format no matter what the data type settings are for the underlying data or model. 
+When you use a slicer to display or set a range of dates, the dates display in the **Short Date** format. The user's browser or operating system locale determine the date format. As such, it will be the display format no matter what the data type settings are for the underlying data or model. 
 
 You could, for example, have a long date format for the underlying data type. In this case, a date format such as *dddd, MMMM d, yyyy* would format a date in other visuals or circumstances as *Wednesday, March 14, 2001*. But in the date range slicer, that date displays in the slicer as *03/14/2001*.
 
@@ -62,6 +62,6 @@ Displaying the **Short Date** format in the slicer ensures the length of the str
 ## Limitations and considerations
 The following limitations and considerations apply to the **numeric range slicer**:
 
-* The **numeric range slicer** filters every underlying row in the data, not any aggregated value. For example, let's say that a *Sales Amount* field is used. The slicer then filters each transaction based on *Sales Amount*, not the sum of *Sales Amount* for each data point of a visual.
+* The **numeric range slicer** filters every underlying row in the data, not any aggregated value. For example, let's say that you use a *Sales Amount* field. The slicer then filters each transaction based on *Sales Amount*, not the sum of *Sales Amount* for each data point of a visual.
 * It doesn't currently work with measures.
 * You can type any number into the textboxes on a numeric slicer, even if it is outside the range of values in the underlying column. This option lets you set up filters if you know the data may change in future.
