@@ -53,7 +53,7 @@ Treemaps are a great choice:
 
 * To spot patterns, outliers, most-important contributors, and exceptions.
 
-### Prerequisites
+## Prerequisites
 
 * The Power BI service or Power BI Desktop
 
@@ -61,7 +61,7 @@ Treemaps are a great choice:
 
 ## Create a basic treemap
 
-These instructions use the Retail Analysis Sample. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If someone shares a report with you, you can't create visualizations in reports. To follow along, sign in to the Power BI service and select **Get Data** > **Samples** > **Retail Analysis Sample** > **Connect**. When the sample is available, in the left navigation pane, select **My Workspace** Under **Dashboards**, select **Retail Analysis Sample**.
+These instructions use the Retail Analysis Sample. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If someone shares a report with you, you can't create visualizations in reports. To follow along, sign in to the Power BI service and select **Get Data** > **Samples** > **Retail Analysis Sample** > **Connect**. When the sample is available, in the left navigation pane, select **My Workspace**. Under **Dashboards**, select **Retail Analysis Sample**.
 
 1. Select the **Total stores** tile to open the **Store Sales Overview** report.
 
@@ -69,11 +69,11 @@ These instructions use the Retail Analysis Sample. Creating a visualization requ
 
 1. Select ![Screenshot of the yellow plus icon](media/power-bi-visualization-treemaps/treemap-yellow-plus-icon.png) to open a new page in the report.
 
-1. Select the **Sales** > **Last Year Sales** measure.
+1. From the **Fields** pane, select the **Sales** > **Last Year Sales** measure.
 
    ![](media/power-bi-visualization-treemaps/treemapfirstvalue_new.png)
 
-1. Select the **Treemap** icon ![Screenshot of the yellow plus icon](media/power-bi-visualization-treemaps/power-bi-treemap-icon.png) to convert the chart to a treemap.
+1. Select the **Treemap** icon ![Screenshot of the Treemap icon](media/power-bi-visualization-treemaps/power-bi-treemap-icon.png) to convert the chart to a treemap.
 
    ![](media/power-bi-visualization-treemaps/treemapconvertto_new.png)
 
