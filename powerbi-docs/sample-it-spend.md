@@ -16,13 +16,13 @@ LocalizationGroup: Samples
 # IT Spend Analysis sample for Power BI: Take a tour
 
 ## Overview of the IT Spend Analysis sample
-The IT Spend Analysis Sample content pack contains a dashboard, report, and dataset that analyzes the planned vs. actual costs of an IT department. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new latest estimate (LE) to help analyze changes in IT spend over the fiscal year.
+The IT Spend Analysis sample content pack contains a dashboard, report, and dataset that analyzes the planned vs. actual costs of an IT department. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new latest estimate (LE) to help analyze changes in IT spend over the fiscal year.
 
 ![Dashboard for the IT Spend Analysis sample](media/sample-it-spend/it1.png)
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-This tutorial uses the Power BI service and the IT Spend Analysis Sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file.
+This tutorial uses the Power BI service and the IT Spend Analysis sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file.
 
 ## Prerequisites
 
@@ -47,7 +47,7 @@ This tutorial uses the Power BI service and the IT Spend Analysis Sample content
   
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the [IT Spend Analysis sample](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix) as a .pbix file, which is designed for use with Power BI Desktop.
+Alternatively, you can download the IT Spend Analysis sample as a [.pbix file](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
 
 ### Get the Excel workbook for this sample
 
