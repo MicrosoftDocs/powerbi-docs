@@ -8,7 +8,7 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -136,8 +136,9 @@ You can also update this setting in Power BI service.
 It's important to note that if the Power BI admin portal settings conflict with the report settings for export data, the admin settings will override the export data settings.
 
 ## Limitations and considerations
+These limitations and considerations apply to Power BI Desktop and the Power BI service, including Power BI Pro and Premium.
 
-- To export the data from a visual, you need to have [Build permission for the underlying dataset](https://docs.microsoft.com/en-us/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
+- To export the data from a visual, you need to have [Build permission for the underlying dataset](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
 
 -  The maximum number of rows that **Power BI Desktop** and **Power BI service** can export to a *.csv* file is 30,000.
 
