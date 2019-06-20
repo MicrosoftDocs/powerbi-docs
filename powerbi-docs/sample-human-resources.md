@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/17/2019
+ms.date: 06/20/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -24,12 +24,13 @@ The Human Resources Sample content pack contains a dashboard, report, and datase
 
 ![Dashboard for the Human Resources sample](media/sample-human-resources/hr1.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. This sample was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, Excel workbook, or .pbix Power BI Desktop file. See [Samples for Power BI](sample-datasets.md). This tutorial uses the Power BI service and the Human Resources Sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+
+This tutorial uses the Power BI service and the Human Resources Sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
 
 ## Prerequisites
 
-Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [pbix file](#get-the-pbix-file-for-this-sample), or 
-[Excel workbook](#get-the-excel-workbook-for-this-sample).
+Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the content pack for this sample
 
@@ -37,12 +38,12 @@ Before you can use the sample, you must first download it as a [content pack](#g
 
 2. In the bottom-left corner, select **Get Data**.
    
-    ![Get data](media/sample-datasets/power-bi-get-data.png)
+   ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
 3. On the **Get Data** page that appears, select **Samples**.
    
 4. Select **Human Resources Sample**, then choose **Connect**.  
    
-   ![Get Data](media/sample-human-resources/pbi_hr_sample_connect.png)
+   ![Connect to sample](media/sample-human-resources/pbi_hr_sample_connect.png)
 
 5. Power BI imports the content pack and then adds a new dashboard, report, and dataset to your current workspace.
    
@@ -54,7 +55,7 @@ Alternatively, you can download the [Human Resources sample](http://download.mic
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529780). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
+If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529780). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
 
 ## New hires
 Let’s explore new hires first.
@@ -77,7 +78,7 @@ Let’s explore new hires first.
 
    Can you find more insights? For example, a region where the gender split is not even. Select different age groups and genders in the charts to explore the relationships between age, gender, region, and ethnicity group.
 
-4. Select **Human Resource Sample** from the top navbar to return to the dashboard.
+4. Select **Human Resource Sample** from the top navigation bar to return to the dashboard.
 
    ![Return to dashboard](media/sample-human-resources/power-bi-breadcrumbs.png)
 
@@ -123,7 +124,7 @@ Let’s look at the report in Editing View. You can change the pie charts to sho
 
 7. You can also follow the same steps for the **Active Employee Count by Gender** pie chart, changing it to separations instead of active employees. Look at the voluntary separation data by gender to see if you find any other insights.
 
-8. Select **Human Resource Sample** from the top navbar to return to the dashboard. You can choose to save the changes you’ve made to the report.
+8. Select **Human Resource Sample** from the top navigation bar to return to the dashboard. You can choose to save the changes you’ve made to the report.
 
 ## Bad hires
 The last area to explore is bad hires. Bad hires are defined as employees who didn’t last for more than 60 days. We’re hiring rapidly, but are we hiring good candidates?
@@ -131,22 +132,22 @@ The last area to explore is bad hires. Bad hires are defined as employees who di
 1. Select the **Bad Hires as % of Actives by Age Group** dashboard tile. The report opens to tab three, **Bad Hires**.
 
    ![Bad Hires as % of Actives by Age Group tile](media/sample-human-resources/hr7.png)  
-2. Select **Northwest** in the **Region** box on the left and select **Male** in the **Bad Hire Count by Gender** donut chart. Look at the other charts on the **Bad Hires** page. Notice there are more male bad hires than females and many Group A bad hires.
+2. Select **Northwest** in the **Region** slicer on the left and select **Male** in the **Bad Hire Count by Gender** donut chart. Look at the other charts on the **Bad Hires** page. Notice there are more male bad hires than females and many Group A bad hires.
 
    ![Northwest bad hires](media/sample-human-resources/pbi_hr_sample_badhirespage.png)  
 
-3. If you look at the **Bad Hire Count by Gender** donut chart and select different regions in the **Region** box, you'll notice that the East region is the only region with more female than male bad hires.  
+3. If you look at the **Bad Hire Count by Gender** donut chart and select different regions in the **Region** slicer, you'll notice that the East region is the only region with more female than male bad hires.  
 
-4. Select the name of the dashboard from the top navbar to return to the dashboard.
+4. Select the name of the dashboard from the top navigation bar to return to the dashboard.
 
-## Ask a question in the Q&A box
-In the [Q&A question box](power-bi-tutorial-q-and-a.md), you can ask a question about your data by using natural language. Q&A recognizes the words you type and figures out where in your dataset to find the answer.
+## Ask a question in the dashboard Q&A box
+In the [Q&A question box](power-bi-tutorial-q-and-a.md) in the dashboard, you can ask a question about your data by using natural language. Q&A recognizes the words you type and figures out where in your dataset to find the answer.
 
 1. Select the Q&A question box. Notice that even before you start typing, Q&A displays suggestions to help you form your question.
 
    ![Q&A box suggestions](media/sample-human-resources/pbi_hr_sample_qabox.png)
 
-2. Enter the following text: *show age group, gender, and bad hires SPLY where region is east*.  
+2. You can pick one of those suggestions, or enter: *show age group, gender, and bad hires SPLY where region is east*.  
 
    ![Q&A box answers](media/sample-human-resources/pbi_hr_sample_qa_answer.png)
 

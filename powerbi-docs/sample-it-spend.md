@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/17/2019
+ms.date: 06/20/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -20,12 +20,13 @@ The IT Spend Analysis Sample content pack contains a dashboard, report, and data
 
 ![Dashboard for the IT Spend Analysis sample](media/sample-it-spend/it1.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. This sample was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, Excel workbook, or .pbix Power BI Desktop file. See [Samples for Power BI](sample-datasets.md). This tutorial uses the Power BI service and the Human Resources Sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+
+This tutorial uses the Power BI service and the IT Spend Analysis Sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file.
 
 ## Prerequisites
 
- Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [pbix file](#get-the-pbix-file-for-this-sample), or 
-[Excel workbook](#get-the-excel-workbook-for-this-sample).
+ Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the content pack for this sample
 
@@ -33,12 +34,12 @@ This sample is part of a series that shows how you can use Power BI with busines
 
 2. In the bottom-left corner, select **Get Data**.
    
-    ![Get data](media/sample-datasets/power-bi-get-data.png)
+   ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
 3. On the **Get Data** page that appears, select **Samples**.
    
 4. Select **IT Spend Analysis Sample**, then choose **Connect**.  
   
-   ![Get Data](media/sample-it-spend/it-connect.png)
+   ![Connect to sample](media/sample-it-spend/it-connect.png)
    
 5. Power BI imports the content pack and then adds a new dashboard, report, and dataset to your current workspace.
    
@@ -50,10 +51,10 @@ Alternatively, you can download the [IT Spend Analysis sample](http://download.m
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529783). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
+If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529783). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
 
 ## IT Spend Analysis Sample dashboard
-The two numbers tiles on the left of the dashboard, **Var Plan %** and **Variance Latest Estimate % Quarter 3**, give us an overview of how well we're doing against the plan and against the latest quartly estimate (LE3 = latest estimate quarter 3). Overall, we're about 6% off the plan. Let’s explore the cause of this variance: when, where, and which category.
+The two numbers tiles on the left of the dashboard, **Var Plan %** and **Variance Latest Estimate % Quarter 3**, give us an overview of how well we're doing against the plan and against the latest quarterly estimate (LE3 = latest estimate quarter 3). Overall, we're about 6% off the plan. Let’s explore the cause of this variance: when, where, and in which category.
 
 ## YTD IT Spend Trend Analysis page
 When you select the **Var Plan % by Sales Region** dashboard tile, it displays the **YTD IT Spend Trend Analysis** page of the IT Spend Analysis Sample report. At a glance, we see that we have positive variance in the United States and Europe and negative variance in Canada, Latin America, and Australia. The United States has about 6% +LE variance and Australia has about 7% -LE variance.
@@ -71,11 +72,16 @@ However, just looking at this chart and drawing conclusions can be misleading. W
 
 ## Ask questions of the data
 1. Select **IT Spend Analysis Sample** in the top navigation bar to return to the sample dashboard.
-2. In the Q&A box, enter *show IT areas, var plan % and var le3 % bar chart*.
+2. Select **Ask a question about your data**.
+3. From the **Questions to get you started** list on the left side, select **what is the plan by IT area**.
+
+   ![Plan by IT Area chart](media/sample-it-spend/it-area-chart.png)
+
+4. In the Q&A box, clear the previous entry and enter *show IT areas, var plan % and var le3 % bar chart*.
 
    ![Var Plan % and Var LE3 % by IT Area chart](media/sample-it-spend/it4.png)
 
-   In the first IT area, **Infrastructure**, the percentage has changed drastically between the initial variance plan and the variance plan latest estimate.
+   In the first IT area, **Infrastructure**, notice that the percentage has changed drastically between the initial variance plan and the variance plan latest estimate.
 
 ## YTD Spend by Cost Elements page
 
@@ -85,12 +91,12 @@ However, just looking at this chart and drawing conclusions can be misleading. W
 
    Notice that the Infrastructure area stands out with a large positive variance to the plan.
 
-1. Select this tile to view the **YTD Spend by Cost Elements** page.
-2. Select the **Infrastructure** bar in the **Var Plan % and Var LE3 % by IT Area** chart on the lower right, and observe the variance-to-plan in the **Var Plan % by Sales Region** chart on the lower left.
+1. Select this tile to open the report and view the **YTD Spend by Cost Elements** page.
+2. Select the **Infrastructure** bar in the **Var Plan % and Var LE3 % by IT Area** chart on the lower right, and observe the variance-to-plan values in the **Var Plan % by Sales Region** chart on the lower left.
 
     ![YTD Spend by Cost Elements page](media/sample-it-spend/it6.png)
-3. Select each name in each **Cost Element Group** box to find the cost element with the largest variance.
-4. With **Other** selected, select **Infrastructure** in the **IT Area** box and select subareas in the **IT Sub Area** box to find the subarea with the largest variance.  
+3. Select each name in turn in the **Cost Element Group** slicer to find the cost element with the largest variance.
+4. With **Other** selected, select **Infrastructure** in the **IT Area** slicer and select subareas in the **IT Sub Area** slicer to find the subarea with the largest variance.  
 
    Notice the large variance for **Networking**. Apparently the company decided to give its employees phone services as a benefit, even though this move was not planned for.
 
@@ -104,7 +110,7 @@ However, just looking at this chart and drawing conclusions can be misleading. W
 
    Notice in the **Var plan % by Month and Business Area** chart that the infrastructure business area started a positive variance in February. Also, notice how the variance-to-plan value for that business area varies by country, as compared to all other business areas. 
 
-3. Use the **IT Area** and **IT Sub Area** boxes on the right to filter the values in the rest of the page and to explore the data. 
+3. Use the **IT Area** and **IT Sub Area** slicers on the right to filter the values in the rest of the page and to explore the data. 
 
 ## Edit the report
 Select **Edit Report** in the upper-left corner to explore in Editing view:

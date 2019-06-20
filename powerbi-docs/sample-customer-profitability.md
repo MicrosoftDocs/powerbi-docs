@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/14/2019
+ms.date: 06/20/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -20,12 +20,13 @@ The Customer Profitability Sample content pack contains a dashboard, report, and
 
 ![Dashboard for the Customer Profitability sample](media/sample-customer-profitability/power-bi-dash.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. This sample was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, Excel workbook, or .pbix Power BI Desktop file. See [Samples for Power BI](sample-datasets.md). This tutorial uses the Power BI service and the Customer Profitability Sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+
+This tutorial uses the Power BI service and the Customer Profitability Sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
 
 ## Prerequisites
 
-Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [pbix file](#get-the-pbix-file-for-this-sample), or 
-[Excel workbook](#get-the-excel-workbook-for-this-sample).
+Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the content pack for this sample
 
@@ -33,15 +34,15 @@ Before you can use the sample, you must first download it as a [content pack](#g
 
 2. In the bottom-left corner, select **Get Data**.
 
-    ![Get data](media/sample-datasets/power-bi-get-data.png)
+   ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
 3. On the **Get Data** page that appears, select **Samples**.
 
 4. Select **Customer Profitability Sample**, then choose **Connect**.  
 
-   ![Get data](media/sample-customer-profitability/get-supplier-sample.png)
+    ![Connect to sample](media/sample-customer-profitability/get-supplier-sample.png)
 5. Power BI imports the content pack and then adds a new dashboard, report, and dataset to your current workspace.
 
-   ![Customer Profitability Sample entry](media/sample-customer-profitability/customer-profitability-sample-entry.png)
+    ![Customer Profitability Sample entry](media/sample-customer-profitability/customer-profitability-sample-entry.png)
 
 ### Get the .pbix file for this sample
 
@@ -49,8 +50,7 @@ Alternatively, you can download the [Customer Profitability sample](http://downl
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529781). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
-
+If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529781). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
 
 ## What is our dashboard telling us?
 
@@ -71,7 +71,6 @@ In the workspace where you saved the sample, find the Customer Profitability das
 - It had its lowest revenue % variance to budget in February, followed by the highest in March.
 - Most of our revenue comes from the east and north regions. Gross margin has never exceeded budget, with the ER-0 and MA-0 business units requiring further investigation.
 - Total revenue for the year is close to budget.
-
 
 ### Manager-specific dashboard tiles
 The tiles on the right side of the dashboard provide a team scorecard. The CFO needs to keep track of her managers and these tiles give her a high-level overview of profit, by using GM%. If the GM% trend is unexpected for any manager, then she can investigate further.
@@ -190,9 +189,9 @@ Let's take a look at the Distribution industry.
    ![filter for Distribution](media/sample-customer-profitability/customer7.png)
 4. The **Gross Margin % by Month and Executive** chart tells us that only Valery and Tina have customers in this industry and Valery worked with this industry only from June to November.   
 5. Select **Tina** and then **Valery** in the **Gross Margin by Month and Executive** chart legend. Notice Tina's portion of the **Total Revenue by Product** chart is small compared to Valery.
-6. To see actual revenue, use Q&A to enter *total revenue by executive for distribution by scenario*.  
+6. To see actual revenue, use the Q&A box in the dashboard to enter *total revenue by executive for distribution by scenario*.  
 
-     ![type question in question box to see bar chart](media/sample-customer-profitability/power-bi-qna2.png)
+     ![Type question in Q&A box](media/sample-customer-profitability/power-bi-qna2.png)
 
     We can similarly explore other industries and even add customers to our visuals to understand causes for Valery's performance.
 
