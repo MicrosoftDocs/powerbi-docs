@@ -252,7 +252,7 @@ When setting backgrounds for report pages, choose colors that don’t overshadow
 
 **Figure 12: Set report background**
 
-You’re not creating a work of art, but a functional report. Choose a color that improves the readability and prominence of the report elements. A study on the use of color and visualizations within web pages found that higher contrast between colors increases the speed of comprehension. Two with papers explore this topic:
+You’re not creating a work of art, but a functional report. Choose a color that improves the readability and prominence of the report elements. A study on the use of color and visualizations within web pages found that higher contrast between colors increases the speed of comprehension. Two white papers explore this topic:
 
 * [The effect of text and background colour on visual search of Web pages](https://www.sciencedirect.com/science/article/pii/S0141938202000410)
 
