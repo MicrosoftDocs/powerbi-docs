@@ -18,8 +18,8 @@ With the numeric range slicer, you can apply all sorts of filters to any numeric
 
 ![Visual with numeric range slicer](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
 
-## Using the numeric range slicer
-You can use the numeric range slicer like you would use any other slicer. Just create a **slicer** visual for your report, and then select a numeric value for the **Field** value. In the following image, the **LineTotal** field is selected.
+## Use the numeric range slicer
+You can use the numeric range slicer like you would use any other slicer. Just create a **slicer** visual for your report, and then select a numeric value for the **Field** value. In the following image, we selected the **LineTotal** field.
 
 ![Create a numeric range slicer](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-1-create.png)
 
@@ -49,7 +49,7 @@ Lastly, if you select **Greater than or equal to**, then the right (higher value
 
 ## Snap to whole numbers with the numeric range slicer
 
-A numeric range slicer snaps to whole numbers if the data type of the underlying field is **Whole Number**. This feature lets your slicer cleanly align to whole numbers. **Decimal Number**-type fields let you enter or select fractions of a number. The formatting set in the textbox matches the formatting set on the field, even though you can type in or select more precise numbers.
+A numeric range slicer snaps to whole numbers if the data type of the underlying field is **Whole Number**. This feature lets your slicer cleanly align to whole numbers. **Decimal Number** fields let you enter or select fractions of a number. The formatting set in the textbox matches the formatting set on the field, even though you can type in or select more precise numbers.
 
 ## Display formatting with the date range slicer
 
@@ -62,6 +62,6 @@ Displaying the **Short Date** format in the slicer ensures the length of the str
 ## Limitations and considerations
 The following limitations and considerations apply to the **numeric range slicer**:
 
-* The **numeric range slicer** filters every underlying row in the data, not any aggregated value. For example, let's say that you use a *Sales Amount* field. The slicer then filters each transaction based on *Sales Amount*, not the sum of *Sales Amount* for each data point of a visual.
+* The **numeric range slicer** filters every underlying row in the data, not any aggregated value. For example, let's say that you use a *Sales Amount* field. The slicer then filters each transaction based on the sales amount, not the sum of the sales amount for each data point of a visual.
 * It doesn't currently work with measures.
 * You can type any number into the textboxes on a numeric slicer, even if it is outside the range of values in the underlying column. This option lets you set up filters if you know the data may change in future.
