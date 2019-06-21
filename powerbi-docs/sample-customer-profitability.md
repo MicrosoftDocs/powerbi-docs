@@ -65,12 +65,13 @@ In the workspace where you saved the sample, find the Customer Profitability das
 
     ![Tiles for managers](media/sample-customer-profitability/power-bi-manager.png)
 
-- The company's gross margin is 42.5%.
-- It has 80 customers.
-- It sells five different products.
-- It had its lowest revenue % variance to budget in February, followed by the highest in March.
-- Most of our revenue comes from the east and north regions. Gross margin has never exceeded budget, with the ER-0 and MA-0 business units requiring further investigation.
-- Total revenue for the year is close to budget.
+   Note the following details:
+   - The company's gross margin is 42.5%.
+   - It has 80 customers.
+   - It sells five different products.
+   - It had its lowest revenue % variance to budget in February, followed by the highest in March.
+   - Most of our revenue comes from the east and north regions. Gross margin has never exceeded budget, with the ER-0 and MA-0 business units requiring further investigation.
+   - Total revenue for the year is close to budget.
 
 ### Manager-specific dashboard tiles
 The tiles on the right side of the dashboard provide a team scorecard. The CFO needs to keep track of her managers and these tiles give her a high-level overview of profit, by using GM%. If the GM% trend is unexpected for any manager, then she can investigate further.
@@ -151,15 +152,16 @@ This report page provides a different slice of the data. It looks at gross margi
 
 ![Industry margin analysis report page](media/sample-customer-profitability/customer6.png)
 
-How does profitability vary by industry? How do the products and customers break down by industry? To answer these questions, select one or more industries from the top left (start with the CPG industry). To clear the filter, select the eraser icon.
+1. How does profitability vary by industry? How do the products and customers break down by industry? To answer these questions, select one or more industries from the top left (start with the CPG industry). To clear the filter, select the eraser icon.
 
-On the **Revenue Var % to Budget, GM%, and RevenueTY by Industry** bubble chart, the CFO looks for the largest bubbles, because they have the biggest impact on revenue. To easily see each manager’s impact by industry segment, filter the page by clicking on each manager's name in the area chart.
+2. On the **Revenue Var % to Budget, GM%, and RevenueTY by Industry** bubble chart, the CFO looks for the largest bubbles, because they have the biggest impact on revenue. To easily see each manager’s impact by industry segment, filter the page by select each manager's name in turn in the area chart.
 
-* Andrew's area of influence spans many different industry segments with widely varying GM% (most on the positive side) and Var%.
-* Annelie's chart is similar, except that she concentrates on only a handful of industry segments with a focus on the Federal segment and a focus on the Gladius product.
-* Carlos has a clear focus on the services segment, with good profit. He's greatly improved Var% for the High Tech segment and a new segment for him, Industrial, performed exceptionally well compared to budget.
-* Tina works with a handful of segments and has the highest GM%, but the mostly small size of her bubbles shows that her impact on the company's bottom line is minimal.
-* Valery, who is responsible for only one product, works in only five industry segments. Her industry influence is seasonal, but always produces a large bubble, indicating a significant impact on the company’s bottom line. Do the industry segments explain her negative performance?
+3. As you select each manager in the chart, note the following details:
+   * Andrew's area of influence spans many different industry segments with widely varying GM% (most on the positive side) and Var%.
+   * Annelie's chart is similar, except that she concentrates on only a handful of industry segments with a focus on the Federal segment and a focus on the Gladius product.
+   * Carlos has a clear focus on the services segment, with good profit. He's greatly improved Var% for the High Tech segment and a new segment for him, Industrial, performed exceptionally well compared to budget.
+   * Tina works with a handful of segments and has the highest GM%, but the mostly small size of her bubbles shows that her impact on the company's bottom line is minimal.
+   * Valery, who is responsible for only one product, works in only five industry segments. Her industry influence is seasonal, but always produces a large bubble, indicating a significant impact on the company’s bottom line. Do the industry segments explain her negative performance?
 
 ### Executive Scorecard
 This page is formatted as a Cortana answer page. To learn more, see [Create a custom answer page for Cortana](service-cortana-answer-cards.md).
@@ -191,7 +193,7 @@ Let's take a look at the Distribution industry.
    ![filter for Distribution](media/sample-customer-profitability/customer7.png)
 4. The **Gross Margin % by Month and Executive** chart tells us that only Valery and Tina have customers in this industry and Valery worked with this industry only from June to November.   
 5. Select **Tina** and then **Valery** in the **Gross Margin by Month and Executive** chart legend. Notice Tina's portion of the **Total Revenue by Product** chart is small compared to Valery.
-6. To see actual revenue, use the Q&A box in the dashboard to enter *total revenue by executive for distribution by scenario*.  
+6. To see actual revenue, select the Q&A box in the dashboard and enter *total revenue by executive for distribution by scenario*.  
 
      ![Type question in Q&A box](media/sample-customer-profitability/power-bi-qna2.png)
 
