@@ -210,7 +210,7 @@ The following image shows the option to Allow external guest users to edit and m
 ![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
 
 ### Email Subscriptions
-Users in the organization can create email subscriptions
+Users in the organization can create email subscriptions. Learn more about [subscriptions](service-report-subscribe.md).
 
 ![Enable email subscriptions](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
 
