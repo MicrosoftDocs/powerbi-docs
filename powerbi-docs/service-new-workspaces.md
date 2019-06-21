@@ -19,18 +19,19 @@ LocalizationGroup: Share your work
 The new workspace experience has reached general availability (GA), and is now the default workspace. You can still continue to create and use [classic workspaces](service-create-workspaces.md) based on Office 365 Groups. 
 
 > [!NOTE]
-> To enforce row-level security (RLS) for Power BI Pro users browsing content in a workspace, continue to use [classic workspaces](service-create-workspaces.md). Select the **Members can only view Power BI content** option. Alternatively, publish an Power BI app to those users, or use sharing to distribute content. The forthcoming Viewer Role will enable this scenario in future in new workspace experience workspaces.
+> To enforce row-level security (RLS) for users browsing content in a workspace, use the Viewer role. If the Viewer role is not yet available in your tenant, continue to use [classic workspaces](service-create-workspaces.md) and select the **Members can only view Power BI content** option. Alternatively, publish an Power BI app to those users, or use sharing to distribute content.
 
 With the new workspaces, you can:
 
 - Assign workspace roles to user groups: security groups, distribution lists, Office 365 groups, and individuals.
 - Create a workspace in Power BI without creating an Office 365 group.
 - Use more granular workspaces roles for more flexible permissions management in a workspace.
+- The Power BI admin can control who can create workspaces in Power BI.
 
 When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the workspace administration is in Power BI, not in Office 365. In the new workspace experience, you can now add an Office 365 group in the workspace access list to continue managing user access to content through Office 365 groups.
 
 ## Administering new workspace experience workspaces
-Administration for new workspace experience workspaces is now in Power BI, Power BI admins decide who in an organization can create workspaces. They can also manage and recover workspace. To do this they need to use the Power BI admin portal or the PowerShell CmdLets. For classic workspaces based on Office 365 Groups, administration continues to occur in Office 365 admin portal and Azure Active Directory.
+Administration for new workspace experience workspaces is now in Power BI, Power BI admins decide who in an organization can create workspaces. They can also manage and recover workspaces. To do this they need to use the Power BI admin portal or the PowerShell CmdLets. For classic workspaces based on Office 365 Groups, administration continues to occur in Office 365 admin portal and Azure Active Directory.
 
 In **Workspace settings** in the admin portal, admins can use the Create workspaces (new workspace experience) setting to allow everybody or nobody in an organization to create new workspace experience workspaces. They can also limit creation to members of specific security groups.
 
@@ -49,28 +50,33 @@ New, upgraded workspaces, and existing classic workspaces coexist side by side, 
 
 ## Roles in the new workspaces
 
-To grant access to a new workspace, add user groups or individuals to one of the workspace roles: members, contributors, or admins. Everyone in a user group gets the role you’ve defined. If an individual is in several user groups, they get the highest level of permission provided by the roles they are assigned.
+To grant access to a new workspace, add user groups or individuals to one of the workspace roles: viewers, members, contributors, or admins. Everyone in a user group gets the role you’ve defined. If an individual is in several user groups, they get the highest level of permission provided by the roles they are assigned.
 
 Roles let you manage who can do what in a workspace, so teams can collaborate. New workspaces allow you to assign roles to individuals, and to user groups: security groups, Office 365 groups, and distribution lists. 
 
 When you assign roles to a user group, the individuals in the group have access to content. If you nest user groups, all the contained users have permission. A user who's in several user groups with different roles gets the highest level of permission granted them. 
 
-The new workspaces offer three roles: admins, members, and contributors.
+The new workspaces offer four roles: admins, members, contributors, and viewers.
 
-|Capability   | Admin  | Member  | Contributor  | 
-|---|---|---|---|
-| Update and delete the workspace.  | X  |   |   |
-| Add/remove people, including other admins.  | X  |   |   |
-| Add members or others with lower permissions.  |  X | X  |   |
-| Publish and update an app. |  X | X  |   |
-| Share an item or share an app. |  X | X  |   |
-| Allow others to reshare items. |  X | X  |   |
-| Create, edit, and delete content in the workspace.  |  X | X  | X  |
-| Publish reports to the workspace, delete content. |  X | X  | X  |
+|Capability   | Admin  | Member  | Contributor  | Viewer |
+|---|---|---|---|---|
+| Update and delete the workspace.  | X  |   |   |   | 
+| Add/remove people, including other admins.  | X  |   |   |   |
+| Add members or others with lower permissions.  |  X | X  |   |   |
+| Publish and update an app. |  X | X  |   |   |
+| Share an item or share an app. |  X | X  |   |   |
+| Allow others to reshare items. |  X | X  |   |   |
+| Create, edit, and delete content in the workspace.  |  X | X  | X  |   |
+| Publish reports to the workspace, delete content.  |  X | X  | X  |   |
+| View an item. |  X | X  | X  | X  |
  
  
 ## Licensing
-Everyone you add to a workspace needs a Power BI Pro license. In the workspace, these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. If you want to distribute content to others inside your organization, you can assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
+Everyone you add to a workspace in the shared capacity needs a Power BI Pro license. In the workspace, these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. 
+
+If you want to distribute content to others inside your organization, you can assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
+
+When the workspace is in a Power BI Premium capacity, users with the Viewer role can access the workspace even if they don't have a Power BI Pro license. However, if you assign these Free users a higher role like Admin, Member, or Contributor, they will not be able to access the workspace and will be prompted to start a Pro Trial when they try to access the workspace. To leverage this capability for Free users, ensure the users in Viewer role are not in other workspace roles either individually or through a user group. 
 
 > [!NOTE]
 > Publishing reports to new workspace experience has stricter enforcement existing licensing rules. Users who try to publish from Power BI Desktop or other clients tools without a Pro license see the error "Only users with Power BI Pro licenses can publish to this workspace."
@@ -122,7 +128,9 @@ Some features work differently from current workspaces in the new workspaces. Th
 
 - Licensing enforcement: Publishing reports to new workspace experience enforces existing licensing rules that require a Power BI Pro license for users collaborating in workspaces or sharing content to others in the Power BI service. Users without a Pro license see the error "Only users with Powre BI Pro licenses can publish to this workspace."
 - Members can or can't reshare: replaced by the Contributor role
-- Read-only workspaces: Instead of granting users read-only access to a workspace, you'll assign users to a forthcoming Viewer role, which allows similar read-only access to the content in a workspace.
+- Read-only workspaces: Instead of granting users read-only access to a workspace, you'll assign users to the Viewer role, which allows similar read-only access to the content in a workspace.
+- Users with a Free license can access the workspace if the workspace is in a Power BI Premium capacity and the user only has the Viewer role.
+- To allow users with Viewer role to export data, ensure they have Build permission on the datasets in the workspace.
 - No **Leave workspace** button.
 
 ## Frequently asked questions
