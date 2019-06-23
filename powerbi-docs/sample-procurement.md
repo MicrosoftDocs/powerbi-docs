@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/20/2019
+ms.date: 06/24/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -16,17 +16,17 @@ LocalizationGroup: Samples
 # Procurement Analysis sample for Power BI: Take a tour
 
 ## Overview of the Procurement Analysis sample
-The Procurement Analysis Sample content pack contains a dashboard, report, and dataset that analyzes a manufacturing company’s spending on vendors by category and location. In the sample, we explore these areas:
+The Procurement Analysis sample content pack contains a dashboard, report, and dataset that analyzes a manufacturing company’s spending on vendors by category and location. In the sample, we explore these areas:
 
 * Who the top vendors are
 * What categories we spend the most on
 * Which vendors give us the highest discount and when
 
-![](media/sample-procurement/procurement1.png)
+![Dashboard for the Procurement Analysis sample](media/sample-procurement/procurement1.png)
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-This tutorial uses the Power BI service and the Procurement Analysis Sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
+This tutorial uses the Power BI service and the Procurement Analysis sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
 
 ## Prerequisites
 
@@ -47,11 +47,11 @@ Before you can use the sample, you must first download it as a [content pack](#g
    
 5. Power BI imports the content pack, and then adds a new dashboard, report, and dataset to your current workspace.
    
-   ![](media/sample-procurement/procurement1b.png)
+   ![Procurement Analysis Sample entry](media/sample-procurement/procurement-entry.png)
   
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the [Procurement Analysis sample](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix) as a .pbix file, which is designed for use with Power BI Desktop. 
+Alternatively, you can download the Procurement Analysis sample as a [.pbix file](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop. 
 
 ### Get the Excel workbook for this sample
 
@@ -59,10 +59,10 @@ If you want to view the data source for this sample, it's also available as an [
 
 
 ## Spending trends
-Let’s first look for trends in spending by category and location.  
+First, let’s look for trends in spending by category and location.  
 
-1. From your workspace, open the **Dashboards** tab and select the Procurement Analysis dashboard.
-2. Select the dashboard tile **Total Invoice by Country/Region**. It opens to the "Spend Overview" page of the “Procurement Analysis Sample” report.
+1. From your workspace, open the **Dashboards** tab, and then select the **Procurement Analysis Sample** dashboard.
+2. Select the dashboard tile, **Total Invoice by Country/Region**, which opens to the "Spend Overview" page of the “Procurement Analysis Sample” report.
 
     ![](media/sample-procurement/procurement2.png)
 

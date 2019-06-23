@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/20/2019
+ms.date: 06/24/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -16,11 +16,11 @@ LocalizationGroup: Samples
 # Opportunity Analysis sample for Power BI: Take a tour
 
 ## Overview of the Opportunity Analysis sample
-The Opportunity Analysis Sample content pack contains a dashboard, report, and dataset for a software company that has two sales channels: *direct* and *partner*. The sales manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
+The Opportunity Analysis sample content pack contains a dashboard, report, and dataset for a software company that has two sales channels: *direct* and *partner*. The sales manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
 
 This sample relies on two measures of revenue:
 
-* Revenue: A salesperson’s estimate of what the revenue will be.
+* Estimated revenue: A salesperson’s estimate of what the revenue will be.
 * Factored revenue: Calculated as revenue X probability% and is accepted as being a more-accurate predictor of actual sales revenue. Probability is determined by the deal’s current *sales stage*.
   * Lead: 10%  
   * Qualify: 20%  
@@ -32,7 +32,7 @@ This sample relies on two measures of revenue:
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-This tutorial uses the Power BI service and the Opportunity Analysis Sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
+This tutorial uses the Power BI service and the Opportunity Analysis sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
 
 ## Prerequisites
 
@@ -52,11 +52,11 @@ Before you can use the sample, you must first download it as a [content pack](#g
    ![Connect to sample](media/sample-opportunity-analysis/opportunity-connect.png)
 5. Power BI imports the content pack, and then adds a new dashboard, report, and dataset to your current workspace.
 
-   ![](media/sample-opportunity-analysis/opportunity-asterisk.png)
+   ![Opportunity Analysis Sample entry](media/sample-opportunity-analysis/opportunity-entry.png)
 
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the [Opportunity Analysis sample](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix) as a .pbix file, which is designed for use with Power BI Desktop.
+Alternatively, you can download the Opportunity Analysis sample as a [.pbix file](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
 
 ### Get the Excel workbook for this sample
 
@@ -69,15 +69,15 @@ Our sales manager has created a dashboard to track those metrics most important 
 - Opportunity count and revenue follow a familiar funnel pattern, with totals decreasing with each subsequent stage.
 - Most of our opportunities are in the East region.
 - The large opportunities generate more revenue than the medium or small opportunities.
-- Partner large deals generate more revenue: $8M on average versus $6M for direst sales.
+- Large partner deals generate more revenue: $8M on average versus $6M for direct sales.
 
-Because the effort to land a deal is the same whether the deal is classified as large, medium, or small, our company should dig into the data to learn more about large opportunities.
+Because the effort to land a deal is the same whether the deal is classified as large, medium, or small, our company should analyze the data to learn more about large opportunities.
 
 Select the **Opportunity Count by Partner Driven, Sales Stage** tile to open page 1 of the report.  
 ![](media/sample-opportunity-analysis/opportunity2.png)
 
 ## Explore the pages in the report
-### Page 1 of our report is titled “Opportunity Count Overview.”
+### Page 1: “Opportunity Count Overview”
 ![](media/sample-opportunity-analysis/opportunity3.png)
 
 * East is our biggest region in terms of opportunity counts.  
@@ -85,7 +85,7 @@ Select the **Opportunity Count by Partner Driven, Sales Stage** tile to open pag
 * The Opportunity Count by Partner Driven and Opportunity Size column chart clearly shows that most of the large opportunities are partner-driven and more of the small and medium opportunities are not partner-driven.
 * Select each Sales Stage in the bar chart in the bottom left to see the difference in regional count and notice that even though East is our biggest region in terms of counts, in the Solution, Proposal and Finalize stages all 3 regions have comparable counts. This means we close a higher percent of deals in Central and West.
 
-### Page 2 of our report is titled “Revenue Overview.”
+### Page 2: “Revenue Overview”
 This page takes a similar look at the data but using a revenue perspective instead of count.  
 ![](media/sample-opportunity-analysis/opportunity4.png)
 
@@ -97,22 +97,22 @@ This page takes a similar look at the data but using a revenue perspective inste
 
 Clearly our partners are doing a better job selling to customers.  It might make sense to funnel more deals through our partners.
 
-### Page 3 of our report is titled "Region Stage Counts"
+### Page 3: "Region Stage Counts"
 This page looks at similar data but breaks it down by region and stage.  
 ![](media/sample-opportunity-analysis/opportunity5.png)
 
-* Filtering by East (select **East** in the pie chart) reveals that the opportunities in the east are split almost equal between partner driven and non-partner driven.
-* Large opportunities are most common in the central region, small opportunities are most common in the east region, and medium opportunities are most common in the west region.
+* If you select **East** in the pie chart to filter by the East region, you see that the opportunities in this region are split almost equally between partner driven and non-partner driven.
+* Large opportunities are most common in the Central region, small opportunities are most common in the East region, and medium opportunities are most common in the West region.
 
-### Page 4 of our report is titled “Upcoming Opportunities”
-Again, we’re looking at similar factors, but this time from a date/time perspective.  
+### Page 4: “Upcoming Opportunities”
+Again, we’re looking at similar factors, but in this case it's from a date/time perspective.  
 ![](media/sample-opportunity-analysis/opportunity6.png)
 
 Our CFO uses this page to manage workload. By looking at the revenue opportunities by sales stage and month, she can plan appropriately.
 
 * Average revenue for the Finalize stage is the highest. Closing these deals is a top priority.
-* Filtering by month (by selecting the month name in the left slicer) shows that January has a high proportion of large deals in the Finalize stage with factored revenue of $75M. February, on the other hand, has mostly medium deals in Solution and Proposal stage.
-* In general, the factored revenue numbers fluctuate based on sales stage, number of opportunities, and deal size. Add filters (using the filter pane on the right) for these factors to discover further insights.
+* Filtering by month (by selecting the month name in the left slicer) shows that January has a high proportion of large deals in the Finalize stage with a factored revenue of $75M. February, on the other hand, has mostly medium deals in the Solution and Proposal stage.
+* In general, the factored revenue numbers fluctuate based on sales stage, number of opportunities, and deal size. Add filters for these factors by using the filter pane on the right to discover further insights.
 
 This is a safe environment to play in. You can always choose not to save your changes. But if you do save them, you can always go to **Get Data** for a new copy of this sample.
 

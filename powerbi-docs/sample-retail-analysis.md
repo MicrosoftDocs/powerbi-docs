@@ -8,20 +8,20 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/20/2019
+ms.date: 06/24/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
 ---
 # Retail Analysis sample for Power BI: Take a tour
 
-The Retail Analysis Sample content pack contains a dashboard, report, and dataset that analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year’s performance to last year’s for sales, units, gross margin, and variance, as well as new-store analysis. 
+The Retail Analysis sample content pack contains a dashboard, report, and dataset that analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year’s performance to last year’s for sales, units, gross margin, and variance, as well as new-store analysis. 
 
-![](media/sample-retail-analysis/retail1.png)
+![Dashboard for the Retail Analysis sample](media/sample-retail-analysis/retail1.png)
 
 This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-This tutorial uses the Power BI service and the Retail Analysis Sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
+This tutorial uses the Power BI service and the Retail Analysis sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
 
 ## Prerequisites
 
@@ -42,11 +42,11 @@ This tutorial uses the Power BI service and the Retail Analysis Sample content p
    
 5. Power BI imports the content pack, and then adds a new dashboard, report, and dataset to your current workspace.
    
-   ![](media/sample-retail-analysis/retail17.png)
+   ![Retail Analysis Sample entry](media/sample-retail-analysis/retail-entry.png)
   
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the [Retail Analysis sample](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) as a .pbix file, which is designed for use with Power BI Desktop. 
+Alternatively, you can download the Retail Analysis sample as a [.pbix file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop. 
 
 ### Get the Excel workbook for this sample
 
