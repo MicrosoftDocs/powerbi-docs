@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/17/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ---
@@ -41,7 +41,7 @@ The **Filters** pane displays and manages several types of report filters. They 
 
 In this example, we've selected a visual that has two filters. The report page also has filters, listed under the **Filters on this page** heading. Also, the entire report has a filter for **Date**.
 
-![Screenshot of a report with a visualization and it's related filters called out.](media/end-user-report-filter/power-bi-all-filters2.png)
+![Screenshot of a report with a visualization and its related filters called out.](media/end-user-report-filter/power-bi-all-filters2.png)
 
 Some of the filters have **(All)** next to them. **(All)** means all values are being included in the filter. In the screenshot above, **Segment(All)** tells us this report page includes data about all the product segments. If you select the **Region is West** page level filter, the report page only includes data for the West region.
 
