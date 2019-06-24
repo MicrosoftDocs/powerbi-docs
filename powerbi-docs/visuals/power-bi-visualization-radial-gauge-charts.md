@@ -63,7 +63,7 @@ These instructions use the Power BI service. To follow along, sign in to Power B
 
 ### Step 2: Create a gauge to track Gross Sales
 
-In the last section, whenyou selected the **Create report** icon, a blank report was created in the editing view.
+In the last section, when you selected the **Create report** icon, Power BI created a blank report in the editing view.
 
 1. From the **Fields** pane, select **Gross Sales**.
 
