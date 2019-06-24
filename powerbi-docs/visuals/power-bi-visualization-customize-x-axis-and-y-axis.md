@@ -8,7 +8,7 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual 
-ms.date: 06/17/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -34,7 +34,7 @@ Watch Amanda customize her X- and Y-Axes. She'll demonstrate the different ways 
 
 To follow along, sign into [the Power BI service](https://app.powerbi.com) and open the [Retail Analysis Sample](../sample-datasets.md) report in [Edit report](../service-interact-with-a-report-in-editing-view.md) view.
 
-### Create a Stacked column chart visualization
+### Create a stacked column chart visualization
 
 Before you can customize your visualization, you have to build it.
 
@@ -42,15 +42,15 @@ Before you can customize your visualization, you have to build it.
 
 1. Scroll down and select **Retail Analysis Sample** from the list of **Datasets**.
 
-1. From the **Visualizations** pane, select the **Stacked column chart** icon.
+1. From the **Visualizations** pane, select the stacked column chart icon.
 
-    ![Screenshot of the Visualizations pane and an empty Stacked column chart](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-stacked-column-chart.png)
+    ![Screenshot of the Visualizations pane and an empty stacked column chart](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-stacked-column-chart.png)
 
 1. To set the X-Axis values, from the **Fields** pane, select **Time** > **FiscalMonth**.
 
 1. To set the Y-Axis values, from the **Fields** pane, select **Sales** > **Last Year Sales** and **Sales** > **This Year Sales** > **Value**.
 
-    ![Screenshot of the populated Stacked column chart.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-create-chart.png)
+    ![Screenshot of the populated stacked column chart.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-create-chart.png)
 
 ### Customize the X-Axis
 
@@ -86,9 +86,9 @@ Now you can customize your X-Axis.
 
     - **Title text size**: Enter *21*
 
-After you finish the customizations, your Stacked column chart will look something like this:
+After you finish the customizations, your stacked column chart will look something like this:
 
-![Screenshot of the customized Stacked column chart.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-customize-axis.png)
+![Screenshot of the customized stacked column chart.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-customize-axis.png)
 
 Save the changes you've made and move to the next section.
 
@@ -134,13 +134,13 @@ After all these customizations, your column chart should look something like thi
 
 ## Customizing visualizations with dual Y-Axes
 
-First you'll create a Combo chart that looks at the impact store count has on sales. It's the same chart that is created in the [Combo chart tutorial](power-bi-visualization-combo-chart.md). Then you'll format the dual Y-Axes.
+First you'll create a combo chart that looks at the impact store count has on sales. It's the same chart that is created in the [Combo chart tutorial](power-bi-visualization-combo-chart.md). Then you'll format the dual Y-Axes.
 
 ### Create a chart with two Y-Axes
 
-1. Create a new Line chart that tracks **Sales > Gross Margin last year %** by **Time > FiscalMonth**.
+1. Create a new line chart that tracks **Sales > Gross Margin last year %** by **Time > FiscalMonth**.
 
-    ![Screenshot of the new Line chart.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-line-chart.png)
+    ![Screenshot of the new line chart.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-line-chart.png)
 
     > [!NOTE]
     > For help sorting by month, see [Sorting using other criteria](../consumer/end-user-change-sort.md#other).
@@ -149,21 +149,21 @@ First you'll create a Combo chart that looks at the impact store count has on sa
 
 1. Add **This Year Sales > Value** and **Last Year Sales** to the line chart.
 
-    ![Screenshot of the Line chart with the new data added.](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
+    ![Screenshot of the line chart with the new data added.](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
 
     The scale of **Gross Margin Last Year %** (the blue line running along the **0M%** gridline) is much smaller than the scale of **Sales**, which makes it difficult to compare. And the Y-Axis label percentages are ridiculous.
 
-1. To make the visual easier to read and interpret, convert the Line chart to a Line and stacked column chart.
+1. To make the visual easier to read and interpret, convert the line chart to a Line and stacked column chart.
 
-   ![Screenshot of the Visualizations pane with the Line and stacked column chart icon called out.](media/power-bi-visualization-customize-x-axis-and-y-axis/converttocombo_new.png)
+   ![Screenshot of the Visualizations pane with the line and stacked column chart icon called out.](media/power-bi-visualization-customize-x-axis-and-y-axis/converttocombo_new.png)
 
 1. Drag **Gross Margin Last Year %** from **Column Values** into **Line Values**.
 
-    ![Screenshot of the Line and stacked column chart with all three values clearly represented.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes.png)
+    ![Screenshot of the line and stacked column chart with all three values clearly represented.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes.png)
 
-    Now you have the stacked column chart you created in the first section with a Line chart overlaid on top of it. Optionally, use what you learned above to format the axes font color and size.
+    Now you have the stacked column chart you created in the first section with a line chart overlaid on top of it. Optionally, use what you learned above to format the axes font color and size.
 
-   ![Screenshot of the customized Line and stacked column chart.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes-new.png)
+   ![Screenshot of the customized line and stacked column chart.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes-new.png)
 
    Power BI creates two Y-Axes allowing the datasets to be scaled differently. The left axis measures dollars and the right axis measures percentage.
 
@@ -189,7 +189,7 @@ With a visualization that's so complicated, it helps to add axes titles.  Titles
 
    ![Screenshot of the Title and Style options.](media/power-bi-visualization-customize-x-axis-and-y-axis/yaxissettings.png)
 
-1. Your Combo chart now shows dual axes, both with titles.
+1. Your combo chart now shows dual axes, both with titles.
 
    ![Screenshot of the customized dual Y-Axes chart.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo-chart.png)
 

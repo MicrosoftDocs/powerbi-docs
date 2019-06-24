@@ -8,7 +8,7 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/17/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -40,7 +40,7 @@ To follow along, sign into [the Power BI service](https://app.powerbi.com) and o
 
 1. Go to the **New Stores** page of the **Retail Analysis Sample** report.
 
-1. Select the **Open Store Count by Open Month and Chain** Clustered column chart.
+1. Select the **Open Store Count by Open Month and Chain** clustered column chart.
 
 1. In the **Visualizations** pane, select the paint roller icon to reveal the format options.
 
@@ -72,9 +72,9 @@ To follow along, sign into [the Power BI service](https://app.powerbi.com) and o
 
     ![Screenshot of the Alignment controls with the Center option selected.](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
 
-At this point in the tutorial, your Clustered column chart title will look something like this:
+At this point in the tutorial, your clustered column chart title will look something like this:
 
-![Screenshot of the newly configured Clustered column chart.](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
+![Screenshot of the newly configured clustered column chart.](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
 
 Save the changes you've made and move to the next section.
 
@@ -84,17 +84,17 @@ If you ever need to revert all of the changes, select **Revert to default**, at 
 
 ## Customize visualization backgrounds
 
-With the same Clustered column chart selected, expand the **Background** options.
+With the same clustered column chart selected, expand the **Background** options.
 
 1. Move the **Background** slider to **On**.
 
-1. Select the drop-down and choose a grey color from **Theme colors**, **Recent colors**, or **Custom color**.
+1. Select the drop-down and choose a grey color.
 
 1. Change **Transparency** to **74%**.
 
-At this point in the tutorial, your Clustered column chart background will look something like this:
+At this point in the tutorial, your clustered column chart background will look something like this:
 
-![Screenshot of the Clustered column chart with background color updated.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
+![Screenshot of the clustered column chart with background color updated.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
 
 Save the changes you've made and move to the next section.
 
@@ -118,9 +118,9 @@ If you ever need to revert all of the changes, select **Revert to default**, at 
 
 1. Enter *Managers* in the **Legend name** field.
 
-At this point in the tutorial, your Clustered column chart legend will look something like this:
+At this point in the tutorial, your clustered column chart legend will look something like this:
 
-![Screenshot of the updated Legend in the Clustered column chart.](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
+![Screenshot of the updated Legend in the clustered column chart.](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
 
 Save the changes you've made and move to the next section.
 

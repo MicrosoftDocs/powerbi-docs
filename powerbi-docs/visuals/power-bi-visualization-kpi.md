@@ -8,7 +8,7 @@ featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 06/17/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 #Customer intent: as a report creator, I want to understand when to use a KPI to visualize my data because there are so many different visual types, I want to be sure that a KPI is the best choice for my intent.  
@@ -48,7 +48,7 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 
 To follow along, open the [Retail Analysis .PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) in Power BI Desktop. You'll create a KPI that measures the progress you've made toward a sales goal.
 
-1. Open the **Retail Analysis Sample** in report view ![Screenshot of the Report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Open the **Retail Analysis Sample** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
@@ -81,7 +81,7 @@ To follow along, open the [Retail Analysis .PBIX file](http://download.microsoft
 
     * **Trend axis** - when set to **On**, the visual shows the trend axis as the background of the KPI visual.  
 
-    * **Target goals** - when set to **On**, the visual shows the goal and the distance from the goal as a percentage.
+    * **Goals** - when set to **On**, the visual shows the goal and the distance from the goal as a percentage.
 
     * **Color coding > Direction** - people consider some KPIs better for *higher* values and consider some better for *lower* values. For example, earnings versus wait time. Typically a higher value of earnings is better versus a higher value of wait time. Select **high is good** and, optionally, change the color settings.
 

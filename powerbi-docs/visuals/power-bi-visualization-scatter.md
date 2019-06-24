@@ -1,6 +1,6 @@
 ---
-title: Scatter, Bubble, and Dot Plot charts in Power BI
-description: 'Scatter chart, Dot Plot charts, and Bubble charts in Power BI'
+title: Scatter, bubble, and dot plot charts in Power BI
+description: 'Scatter chart, dot plot charts, and bubble charts in Power BI'
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,28 +8,28 @@ featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/17/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 
 # Scatter charts, Bubble charts, and Dot Plot charts in Power BI
 
-A Scatter chart always has two value axes to show: one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. Power BI may distribute these data points evenly or unevenly across the horizontal axis. It depends on the data the chart represents.
+A scatter chart always has two value axes to show: one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. Power BI may distribute these data points evenly or unevenly across the horizontal axis. It depends on the data the chart represents.
 
-Watch this video to see Will create a Scatter chart and then follow the steps below to create one yourself.
+Watch this video to see Will create a scatter chart and then follow the steps below to create one yourself.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 You can set the number of data points, up to a maximum of 10,000.  
 
-## When to use a Scatter chart, Bubble chart, or a Dot Plot chart
+## When to use a scatter chart, bubble chart, or a dot plot chart
 
 ### Scatter and Bubble charts
 
-A Scatter chart shows the relationship between two numerical values. A Bubble chart replaces data points with bubbles, with the bubble *size* representing an additional third data dimension.
+A scatter chart shows the relationship between two numerical values. A bubble chart replaces data points with bubbles, with the bubble *size* representing an additional third data dimension.
 
-![Screenshot of a sample Bubble chart.](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
+![Screenshot of a sample bubble chart.](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
 
 Scatter charts are a great choice:
 
@@ -44,11 +44,11 @@ Scatter charts are a great choice:
 * To display worksheet data that includes pairs or grouped sets of values.
 
     > [!TIP]
-    > In a Scatter chart, you can adjust the independent scales of the axes to reveal more information about the grouped values.
+    > In a scatter chart, you can adjust the independent scales of the axes to reveal more information about the grouped values.
 
 * To show patterns in large sets of data, for example by showing linear or non-linear trends, clusters, and outliers.
 
-* To compare large numbers of data points without regard to time.  The more data that you include in a Scatter chart, the better the comparisons that you can make.
+* To compare large numbers of data points without regard to time.  The more data that you include in a sScatter chart, the better the comparisons that you can make.
 
 In addition to what Scatter charts can do for you, Bubble charts are a great choice:
 
@@ -60,9 +60,9 @@ In addition to what Scatter charts can do for you, Bubble charts are a great cho
 
 ### Dot Plot charts
 
-A Dot Plot chart is similar to a Bubble chart and Scatter chart, but you can also plot numerical or categorical data along the X-Axis.
+A dot plot chart is similar to a bubble chart and scatter chart, but you can also plot numerical or categorical data along the X-Axis.
 
-![Screenshot of a Dot Plot chart.](media/power-bi-visualization-scatter/power-bi-dot-plot.png)
+![Screenshot of a dot plot chart.](media/power-bi-visualization-scatter/power-bi-dot-plot.png)
 
 They're a great choice if you want to include categorical data along the X-Axis.
 
@@ -72,7 +72,7 @@ They're a great choice if you want to include categorical data along the X-Axis.
 
 * Retail Analysis Sample report
 
-## Create a Scatter chart
+## Create a scatter chart
 
 To follow along, sign into [the Power BI service](https://app.powerbi.com) and open the [Retail Analysis Sample](../sample-datasets.md) report in [Edit report](../service-interact-with-a-report-in-editing-view.md) view.
 
@@ -86,31 +86,31 @@ To follow along, sign into [the Power BI service](https://app.powerbi.com) and o
 
     * **District** > **District**
 
-    ![Screenshot of the Cluster column chart, the Visualizations pane, and the Fields pane with the fields that you selected called out.](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
+    ![Screenshot of the cluster column chart, the Visualizations pane, and the Fields pane with the fields that you selected called out.](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
 
-1. In the **Visualization** pane, select  ![Screenshot of the Scatter chart icon.](media/power-bi-visualization-scatter/power-bi-scatter-chart-icon.png) to convert the Cluster column chart to a Scatter chart.
+1. In the **Visualization** pane, select  ![Screenshot of the scatter chart icon.](media/power-bi-visualization-scatter/power-bi-scatter-chart-icon.png) to convert the cluster column chart to a scatter chart.
 
-   ![Screenshot of the Cluster column chart becoming a Scatter chart.](media/power-bi-visualization-scatter/power-bi-scatter-new.png)
+   ![Screenshot of the cluster column chart becoming a scatter chart.](media/power-bi-visualization-scatter/power-bi-scatter-new.png)
 
 1. Drag **District** from **Details** to **Legend**.
 
-    Power BI displays a Scatter chart that plots **Total Sales Variance %** along the Y-Axis, and plots **Sales Per Square Feet** along the X-Axis. The data point colors represent districts:
+    Power BI displays a scatter chart that plots **Total Sales Variance %** along the Y-Axis, and plots **Sales Per Square Feet** along the X-Axis. The data point colors represent districts:
 
-    ![Screenshot of the Scatter chart.](media/power-bi-visualization-scatter/power-bi-scatter2.png)
+    ![Screenshot of the scatter chart.](media/power-bi-visualization-scatter/power-bi-scatter2.png)
 
 Now let's add a third dimension.
 
-## Create a Bubble chart
+## Create a bubble chart
 
 1. From the **Fields** pane, drag **Sales** > **This Year Sales** > **Value** to the **Size** well. The data points expand to volumes proportionate with the sales value.
 
-   ![Screenshot of the Scatter chart becoming a Bubble chart by adding Sales Vale to the Size well.](media/power-bi-visualization-scatter/power-bi-scatter-chart-size.png)
+   ![Screenshot of the scatter chart becoming a bubble chart by adding Sales Vale to the Size well.](media/power-bi-visualization-scatter/power-bi-scatter-chart-size.png)
 
 1. Hover over a bubble. The size of the bubble reflects the value of **This Year Sales**.
 
     ![tooltips display](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 
-1. To set the number of data points to show in your Bubble chart, in the **Format** section of the **Visualizations** pane, expand **General**, and adjust the **Data Volume**.
+1. To set the number of data points to show in your bubble chart, in the **Format** section of the **Visualizations** pane, expand **General**, and adjust the **Data Volume**.
 
     ![Screenshot of the Visualizations pane with the Format icon, General drop-down, and Data Volume option called out.](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png)
 
@@ -127,29 +127,29 @@ Now let's add a third dimension.
 
     You can change the marker shape to a diamond, triangle, or square. Using a different marker shape for each line makes it easier for report consumers to differentiate lines (or areas) from each other.
 
-## Create a Dot Plot chart
+## Create a dot plot chart
 
-To create a Dot Plot chart, replace the numerical **X-Axis** field with a categorical field.
+To create a dot plot chart, replace the numerical **X-Axis** field with a categorical field.
 
 From the **X-Axis** pane, remove **Sales per sq ft** and replace it with **District** > **District Manager**.
 
-![Screenshot of a new Dot Plot chart.](media/power-bi-visualization-scatter/power-bi-dot-plot-squares.png)
+![Screenshot of a new dot plot chart.](media/power-bi-visualization-scatter/power-bi-dot-plot-squares.png)
 
 ## Considerations and Troubleshooting
 
-### Your Scatter chart has only one data point
+### Your scatter chart has only one data point
 
-Does your Scatter chart have only one data point that aggregates all the values on the X- and Y-axes?  Or maybe it aggregates all the values along a single horizontal or vertical line?
+Does your scatter chart have only one data point that aggregates all the values on the X- and Y-axes?  Or maybe it aggregates all the values along a single horizontal or vertical line?
 
-![Screenshot of a Scatter chart with one data point.](media/power-bi-visualization-scatter/pbi_scatter_tshoot1.png)
+![Screenshot of a scatter chart with one data point.](media/power-bi-visualization-scatter/pbi_scatter_tshoot1.png)
 
 Add a field to the **Details** well to tell Power BI how to group the values. The field must be unique for each point you want to plot. A simple row number or ID field will do.
 
-![Screenshot of a Scatter chart with RowNum added to the Details well.](media/power-bi-visualization-scatter/pbi_scatter_tshoot.png)
+![Screenshot of a scatter chart with RowNum added to the Details well.](media/power-bi-visualization-scatter/pbi_scatter_tshoot.png)
 
 If you don’t have that in your data, create a field that concatenates your X and Y values together into something unique per point:
 
-![Screenshot of a Scatter chart with TempTime added to the Details well.](media/power-bi-visualization-scatter/pbi_scatter_tshoot2.png)
+![Screenshot of a scatter chart with TempTime added to the Details well.](media/power-bi-visualization-scatter/pbi_scatter_tshoot2.png)
 
 To create a new field, [use the Power BI Desktop Query Editor to add an Index Column](../desktop-add-custom-column.md) to your dataset. Then add this column to your visualization's **Details** well.
 
