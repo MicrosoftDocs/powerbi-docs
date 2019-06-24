@@ -105,7 +105,6 @@ Currently, paginated reports don’t support the following items:
 - Subreports
 - Drillthrough and click-through to other reports
 - Linked reports
-- Bookmarks
 - Bing map layers
 - Custom fonts
 
