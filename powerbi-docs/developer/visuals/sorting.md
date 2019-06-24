@@ -31,9 +31,9 @@ This option enables sorting of the 'DataMappings' by the user and to specify the
 
 ## Implicit sorting
 
-`implicit` is sorting with array parameter - `clauses` which describes sorting for each data roles.
+`implicit` is sorting with array parameter - `clauses` which describes sorting for each data role.
 `implicit` means that visual's user can't change the sorting order.
-Power BI will not display sorting options in visual's menu. However, Power BI will sort data according to specified settings.
+Power BI won't display sorting options in visual's menu. However, Power BI will sort data according to specified settings.
 
 `clauses` params can contain several objects with two parameters:
 

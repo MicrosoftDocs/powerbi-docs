@@ -19,17 +19,17 @@ Show a tooltip.
 Hide a tooltip.
 Move a tooltip.
 
-Tooltips can display a textual element with a title, a value at a given color and opacity at a specified set of coordinates. This data is provided to the API and the Power BI host renders it the same way it renders tooltips for native visuals.
+Tooltips can display a textual element with a title, a value at a given color and opacity at a specified set of coordinates. This data is provided to the API. And the Power BI host renders it the same way it renders tooltips for native visuals.
 
 For example, tooltips in the sample BarChart.
 
 ![Sample BarChart tooltips](./media/TooltipsInSampleBarChart.png)
 
-The tooltip above illustrates a single bar category and value. It can be extended to display multiple values within a single tooltip. It is totally at the developer's control. 
+The tooltip above illustrates a single bar category and value. It can be extended to display multiple values within a single tooltip. It's totally at the developer's control. 
 
 ## Handling Tooltips `TooltipService`
 
-The interface through which you manage tooltips is the 'ITooltipService'. This interface is used to notify the host that a tooltip needs to be displayed, removed or moved.
+The interface through which you manage tooltips is the 'ITooltipService'. This interface is used to notify the host that a tooltip needs to be displayed, removed, or moved.
 
 ```typescript
     interface ITooltipService {
@@ -41,18 +41,18 @@ The interface through which you manage tooltips is the 'ITooltipService'. This i
 ```
 
 Your visual will need to listen to the mouse events within your visual and call the `show()`, `move()` and `hide()` delegates as needed with the appropriate content populated in the `Tooltip****Options` objects. 
-`TooltipShowOptions`, `TooltipMoveOptions` and `TooltipHideOptions` would in turn define what to display and how to behave in these events. 
+`TooltipShowOptions`, and `TooltipHideOptions` would in turn define what to display and how to behave in these events. 
 Because the calling these methods would involve user events such as mouse moves or touch events, a good idea would be to create listeners for these events, which would in turn invoke the `TooltipService` members.
 Our sample aggregates in a class called `TooltipServiceWrapper` 
 
 ### `TooltipServiceWrapper`
-The basic idea behind this class is to hold the instance of the `TooltipService`, listen to D3 mouse events over relevant elements, and then make the calls to `show()`, `move()` and `hide()` when needed.
+The basic idea behind this class is to hold the instance of the `TooltipService`, listen to D3 mouse events over relevant elements, and then make the calls to `show()`, and `hide()` when needed.
 The class holds and manages any relevant state and logic for these events, mostly geared at interfacing with the underlying D3 code. The D3 interfacing and conversion is out of scope for this document. 
 You can find the full sample code at [tooltips for the SampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14)
 
 ### Creating the `TooltipServiceWrapper`
 
-The BarChart constructor now has a `tooltipServiceWrapper` member which is instantiated in the constructor with the host `tooltipService` instance.
+The BarChart constructor now has a `tooltipServiceWrapper` member, which is instantiated in the constructor with the host `tooltipService` instance.
 
 ```typescript
         private tooltipServiceWrapper: ITooltipServiceWrapper;
@@ -60,7 +60,7 @@ The BarChart constructor now has a `tooltipServiceWrapper` member which is insta
         this.tooltipServiceWrapper = createTooltipServiceWrapper(this.host.tooltipService, options.element);
 ```
 
-The `TooltipServiceWrapper` class holds the `tooltipService` instance,  as well as the root D3 element of the visual and touch parameters.
+The `TooltipServiceWrapper` class holds the `tooltipService` instance, also as the root D3 element of the visual and touch parameters.
 
 ```typescript
     class TooltipServiceWrapper implements ITooltipServiceWrapper {
@@ -140,9 +140,9 @@ as you can see `addTooltip` will exit with no action if the `tooltipService` is 
 ```
 
 * **makeTooltipEventArgs**
-    * Extracts the context from the D3 selected elements into a tooltipEventArgs. This will calculate the coordinates as well.
+    * Extracts the context from the D3 selected elements into a tooltipEventArgs. It will calculate the coordinates as well.
 * **getTooltipInfoDelegate**
-    * Then builds the tooltip content from the tooltipEventArgs. This is a callback to the BarChart class since this is the visual's logic. It is the actual text content to display in th tooltip.
+    * Then builds the tooltip content from the tooltipEventArgs. This is a callback to the BarChart class since this is the visual's logic. It's the actual text content to display in th tooltip.
 * **getDataPointIdentity**
     * Unused in this sample 
 * **this.visualHostTooltipService.show**
@@ -152,7 +152,7 @@ Additional handling can be found in the sample for `mouseout` and `mousemove` ev
 
 ### Populating the tooltip content: `getTooltipData`
 
-The `BarChart` was added with a member `getTooltipData` which simply extracts the category, value and color of the datapoint into a VisualTooltipDataItem[] element.
+The `BarChart` was added with a member `getTooltipData` which simply extracts the category, value, and color of the datapoint into a VisualTooltipDataItem[] element.
 
 ```typescript
         private static getTooltipData(value: any): VisualTooltipDataItem[] {
@@ -165,7 +165,7 @@ The `BarChart` was added with a member `getTooltipData` which simply extracts th
         }
 ```
 
-In the above implementation, the `header` member is constant but can be used for more complex implementations, which require dynamic values. Please note that you can populate the `VisualTooltipDataItem[]` with more than one element which will add multiple lines to the tooltip. It can be useful in visuals such as stacked barcharts where the tooltip may display data from more than a single datapoint.
+In the above implementation, the `header` member is constant but can be used for more complex implementations, which require dynamic values. You can populate the `VisualTooltipDataItem[]` with more than one element, which will add multiple lines to the tooltip. It can be useful in visuals such as stacked barcharts where the tooltip may display data from more than a single datapoint.
 
 ### Calling `addTooltip`
 

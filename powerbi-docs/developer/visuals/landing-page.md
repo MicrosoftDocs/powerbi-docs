@@ -13,7 +13,7 @@ ms.date: 06/18/2019
 
 # Landing page
 
-As of API 2.3.0, you can add a landing page to your visual, to do so, simply add `supportsLandingPage` to the capabilities and set it to true, this will make your visual initialize and update even before adding data to it (meaning it will no longer show a watermark) so you can design your own landing page to show in the visual as long as it has no data.
+With API 2.3.0, you can add a landing page to your visual, to do so, add `supportsLandingPage` to the capabilities and set it to true, it will make your visual initialize and update even before adding data to it (meaning it will no longer show a watermark) so you can design your own landing page to show in the visual as long as it has no data.
 
 ### Usage
 ```typescript

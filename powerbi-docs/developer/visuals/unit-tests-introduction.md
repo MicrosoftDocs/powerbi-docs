@@ -62,7 +62,7 @@ npm install
 
 The package manager will install all new packages added to `package.json`
 
-For running unit tests, we'll need to configure the test runner and webpack config. The sample of config you can find here 
+For running unit tests, we'll need to configure the test runner and `webpack` config. The sample of config you can find here 
 
 Sample of `test.webpack.config.js`:
 
@@ -243,7 +243,7 @@ Some settings of `karma.conf.js`:
 
 * `srcRecursivePath` variable locates output JS code after compiling.
 
-* `srcCssRecursivePath` variable locates output CSS after compilling less file with styles.
+* `srcCssRecursivePath` variable locates output CSS after compiling less file with styles.
 
 * `srcOriginalRecursivePath` variable locates source code of your visual.
 
@@ -257,7 +257,7 @@ You can change to `false` for debugging your tests. Karma will keep running brow
 * `files: [...]` - in this array, you can set files for loading to the browser.
 Usually, there are source files, test cases, libraries (jasmine, test utils). You can add to list other files if you need.
 
-* `preprocessors` - this section of config you configure actions, which execute before unit tests execution. There are precompiling of typescript to JS and preparing source map files and generating code to generate code coverage report. You can disable `coverage` for debugging your tests. Coverage generates additional code for check code for the test coverage and it will complicate debugging tests. 
+* `preprocessors` - this section of config you configure actions, which execute before unit tests execution. There are precompiling of typescript to JS and preparing source map files and generate code coverage report. You can disable `coverage` for debugging your tests. Coverage generates additional code for check code for the test coverage and it will complicate debugging tests. 
 
 **Description of all configurations you can find in the [documentation](https://karma-runner.github.io/1.0/config/configuration-file.html) of karma.js**
 
@@ -274,7 +274,7 @@ o convenient use, you can add test command into `scripts`:
 },
 ```
 
-So, you are ready to begin writing your unit tests.
+So, you're ready to begin writing your unit tests.
 
 ## Simple unit test for check DOM element of the visual.
 
@@ -309,7 +309,7 @@ export class BarChartBuilder extends VisualBuilderBase<VisualClass> {
 }
 ```
 
-There is `build` method for creating an instance of your visual. `mainElement` is a get method, which returns an instance of "root" DOM element in your visual. The getter is optional but it makes writing unit test easier..
+There's `build` method for creating an instance of your visual. `mainElement` is a get method, which returns an instance of "root" DOM element in your visual. The getter is optional but it makes writing unit test easier..
 
 So, we have the builder of an instance of visual. Let's write the test case. It will be a test case to check those SVG elements created when your visual displays.
 
@@ -364,7 +364,8 @@ To run the unit test, you can type this command in the command-line tool.
 npm run test 
 ```
 
-> Note that Google Chrome has to be installed locally.
+> [!NOTE]
+> Google Chrome has to be installed locally.
 
 karma.js will run chrome browser and will execute the test case.
 
@@ -421,7 +422,7 @@ export class SampleBarChartDataBuilder extends TestDataViewBuilder {
             ...
         ], columnNames).build();
 
-        //there is client side computed maxValue
+        // there's client side computed maxValue
         let maxLocal = 0;
         this.valuesMeasure.forEach((item) => {
                 if (item > maxLocal) {
@@ -435,11 +436,11 @@ export class SampleBarChartDataBuilder extends TestDataViewBuilder {
 
 The `SampleBarChartDataBuilder` class extends `TestDataViewBuilder` and implements abstract method `getDataView`.
 
-When you put data into data field buckets, Power BI produces a categorical dataview object based on your data.
+When you put data into data field buckets, Power BI produces a categorical `dataview` object based on your data.
 
 ![](./media/FieldsBuckets.png)
 
-In unit tests, you don't have Power BI core functions to reproduce it. But you need to map your static data to categorical dataview. And `TestDataViewBuilder` class will help you in it.
+In unit tests, you don't have Power BI core functions to reproduce it. But you need to map your static data to categorical `dataview`. And `TestDataViewBuilder` class will help you in it.
 
 [Read more about DataViewMapping](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md)
 
@@ -589,7 +590,7 @@ Or in scope of `src` folder
 
 ![](./media/CodeCoverageSrcFolder.png)
 
-In the scope of file, you can look at source code. `Coverage` utils would mark row background to red if a code were not executed during running of unit tests.
+In the scope of file, you can look at source code. `Coverage` utils would mark row background to red if a code weren't executed during running of unit tests.
 
 ![](./media/CodeCoverageVisualSrc.png)
 

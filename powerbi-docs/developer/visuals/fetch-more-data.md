@@ -13,12 +13,12 @@ ms.date: 06/18/2019
 
 # Fetch more data
 
-Load more data API overcome the hard limit of 30 K data point. It brings data in chunks. The chunk size is configurable to improve performance according to use case.  
+Load more data API overcome the hard limit of 30-K data point. It brings data in chunks. The chunk size is configurable to improve performance according to use case.  
 
 ## Enable segmented fetch of large datasets
 
-For dataview segment mode, define a "window" dataReductionAlgorithm in the visual's `capabilities.json` for the required dataViewMapping.
-The `count` will determine the window size, which limits the number of new data rows appended to the dataview in each update. 
+For `dataview` segment mode, define a "window" dataReductionAlgorithm in the visual's `capabilities.json` for the required dataViewMapping.
+The `count` will determine the window size, which limits the number of new data rows appended to the `dataview` in each update. 
 
 To be added in capabilities.json 
  
@@ -39,11 +39,11 @@ To be added in capabilities.json
     }
 ] 
 ```
-New segments are appended to the existing dataview and provided to the visual as an `update` call.
+New segments are appended to the existing `dataview` and provided to the visual as an `update` call.
 
 ## Usage in the custom visual
 
-The indication of whether or not more data exists by checking the existence of `dataView.metadata.segment`: 
+The indication data exists or not can be determined by checking the existence of `dataView.metadata.segment`: 
 ```typescript
     public update(options: VisualUpdateOptions) {
         const dataView = options.dataViews[0];
@@ -91,6 +91,7 @@ btn_click(){
 }
 ```
 
-Power BI will call `update` method of the visual with new segment of data as resopnse to call `this.host.fetchMoreData` method.
+Power BI will call `update` method of the visual with new segment of data as response to call `this.host.fetchMoreData` method.
 
-*Note that Power BI will presently limit the total fetched data to **100 MB** to avoid client memory constraints. You can detect this limit being reached when fetchMoreData() returns 'false'.*
+> [!NOTE]
+> Power BI will presently limit the total fetched data to **100 MB** to avoid client memory constraints. You can detect this limit being reached when fetchMoreData() returns 'false'.*

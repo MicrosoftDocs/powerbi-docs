@@ -13,7 +13,9 @@ ms.date: 06/18/2019
 
 # Bookmarks
 
-Power BI report bookmarks allow capturing the currently configured view of a report page, selection state, filtering state of the visual etc. But it requires additional action from custom visuals side to support the bookmark and react correctly to changes of report state. Read more about bookmarks in the [documentation](https://docs.microsoft.com/power-bi/desktop-bookmarks)
+Power BI report bookmarks allow capturing configured view of a report page, selection state, filtering state of the visual. But it requires additional action from custom visuals side to support the bookmark and react correctly to changes.
+
+Read more about bookmarks in the [documentation](https://docs.microsoft.com/power-bi/desktop-bookmarks)
 
 ## Report bookmarks support in your visual
 
@@ -21,9 +23,9 @@ If your visual interacts with other visuals, selects data points or filters othe
 
 ## How to add report bookmarks support
 
-1. Install (or update) the required util: `powerbi-visuals-utils-interactivityutils`(https://github.com/Microsoft/PowerBI-visuals-utils-interactivityutils/) version 3.0.0 or higher. It contains additional classes to manipulate with state selection or filter. It is required for filter visuals, and any visual using the `InteractivityService`.
+1. Install (or update) the required util: `powerbi-visuals-utils-interactivityutils`(https://github.com/Microsoft/PowerBI-visuals-utils-interactivityutils/) version 3.0.0 or higher. It contains additional classes to manipulate with state selection or filter. It's required for filter visuals, and any visual using the `InteractivityService`.
 
-2. Update visual API to 1.11.0 to use `registerOnSelectCallback` in instance of `SelectionManager`. It is required for non-filter visuals using the plain `SelectionManager` rather than the `InteractivityService`.
+2. Update visual API to 1.11.0 to use `registerOnSelectCallback` in instance of `SelectionManager`. It's required for non-filter visuals using the plain `SelectionManager` rather than the `InteractivityService`.
 
 ### How custom visuals interact with Power BI in the report bookmarks scenario
 
@@ -34,13 +36,13 @@ First, the user selects a data point in your visual. The visual interacts with P
 It happens repeatedly as the user changes selection and adds new bookmarks.
 Once created, the user can switch between the bookmarks.
 
-When the user views a bookmark, Power BI restores the saved filter or selection state and passes them to the all the visuals. Other visuals will be highlighted or filtered according to the state stored in the bookmark, it is handled by Power BI host. Your visual is responsible for correctly reflecting the new selection state (for example, change color of rendered data points).
+When users select a bookmark, Power BI restores the saved filter or selection state and passes to the visuals. Other visuals will be highlighted or filtered according to the state stored in the bookmark. Power BI host responsible for actions. Your visual is responsible for correctly reflecting the new selection state (for example, change color of rendered data points).
 
-The new selection state is communicated to the visual through the `update` method. The `options` argument will contain a special property: `options.jsonFilters`. It is JSONFilter, property can contain `Advanced Filter`, `Basic Filter` and `Tuple Filter`.
+The new selection state is communicated to the visual through the `update` method. The `options` argument will contain a special property: `options.jsonFilters`. It's JSONFilter, property can contain `Advanced Filter`, and `Tuple Filter`.
 
 The visual should restore filter values to displays correspond state of the visual for selected bookmark.
 
-Alternatively, use the special callback function call registred `registerOnSelectCallback` method of ISelectionManager, if the visual use selections only.
+Or, use the special callback function call registered `registerOnSelectCallback` method of ISelectionManager, if the visual use selections only.
 
 ### Visuals with selections
 
@@ -93,7 +95,7 @@ this.selectionManager.registerOnSelectCallback(
 );
 ```
 
-After updating the data points, they will reflect the current selection state stored in `filter` object. Then when the data points are rendered, the custom visual's selection state will match the state of the bookmark.
+After updating the data points, they'll reflect the current selection state stored in `filter` object. Then when the data points are rendered, the custom visual's selection state will match the state of the bookmark.
 
 ### Using `InteractivityService` for control selections in the visual.
 
@@ -149,7 +151,7 @@ const filter: IAdvancedFilter = FilterManager.restoreFilter(
 ) as IAdvancedFilter;
 ```
 
-If the `filter` object is not null, the visual should restore filter conditions from the object:
+If the `filter` object isn't null, the visual should restore filter conditions from the object:
 
 ```typescript
 const jsonFilters: AdvancedFilter = this.options.jsonFilters as AdvancedFilter[];
@@ -169,9 +171,10 @@ if (jsonFilters
 }
 ```
 
-After that, the visual should change its internal state - data points and visualization objects (lines, rectangles, etc.) - to reflect the current conditions.
+After that, the visual should change its internal state - data points and visualization objects (lines, rectangles, so on) - to reflect the current conditions.
 
-**Important:** In the report bookmarks scenario, the visual shouldn't call `applyJsonFilter` to filter other visuals - they will already be filtered by Power BI.
+> [!IMPORTANT]
+> In the report bookmarks scenario, the visual shouldn't call `applyJsonFilter` to filter other visuals - they will already be filtered by Power BI.
 
 Example: [Timeline Slicer](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380786) changes range selector to correspond data ranges, see [this commit](https://github.com/Microsoft/powerbi-visuals-timeline/commit/606f1152f59f82b5b5a367ff3b117372d129e597?diff=unified#diff-b6ef9a9ac3a3225f8bd0de84bee0a0df) for reference.
 

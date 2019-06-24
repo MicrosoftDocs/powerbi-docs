@@ -1,6 +1,6 @@
 ---
 title: Rendering events
-description: Visuals can notify Power BI that they are ready to exporting to Power Point/PDF
+description: Visuals can notify Power BI that they're ready to exporting to Power Point/PDF
 author: Yarovinsky
 ms.author: alexyar
 manager: AviSander
@@ -13,13 +13,13 @@ ms.date: 06/18/2019
 
 # Rendering events
 
-The new API consists of three methods (started, finished or failed) which should be called during rendering.
+The new API consists of three methods (started, finished, or failed) which should be called during rendering.
 
 When rendering starts, the custom visual code calls the renderingStarted method to indicate that rendering process has started.
 
-If the rendering has completed successfully, the custom visual code will immediately call the renderingFinished method notifying the listeners (**primarily 'export to PDF' and 'export to PowerPoint'**) that the visual's image is ready.
+If the rendering has completed successfully, the custom visual code will immediately call the `renderingFinished` method notifying the listeners (**primarily 'export to PDF' and 'export to PowerPoint'**) that the visual's image is ready.
 
-In case a problem occurred during the rendering process, preventing the custom visual from completing successfully, the custom visual code should call the renderingFailed method notifying the listener that the rendering process has not completed. This method also provides an optional string for the cause of failure.
+In case a problem occurred during the rendering process, preventing the custom visual from completing successfully. The custom visual code should call the `renderingFailed` method notifying the listener that the rendering process hasn't completed. This method also provides an optional string for the cause of failure.
 
 ### Usage
 ```typescript

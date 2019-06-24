@@ -29,7 +29,7 @@ Launch URL allows opening a new browser tab (or window), by delegating the actua
 
 
 ## Usage
-Use the `host.launchUrl()` API call, passing your destenation URL as a string argument:
+Use the `host.launchUrl()` API call, passing your destination URL as a string argument:
 
 ```typescript
 this.host.launchUrl('http://some.link.net');
@@ -37,11 +37,11 @@ this.host.launchUrl('http://some.link.net');
 
 ## Restrictions
 * Use only absolute paths, not relative ones. `http://some.link.net/subfolder/page.html` is fine, `/page.html` won't be opened.
-* Currently only `http` and `https` protocols are supported. Avoid `ftp`, `mailto` etc.
+* Currently only `http` and `https` protocols are supported. Avoid `ftp`, `mailto` so on.
 
 ## Best practices
-1. For most cases, it is best to only open a link as a response to a user's explicit action. Make it easy for the user to understand that clicking the link or button will result in opening a new tab. Triggering a `launchUrl()` call without a user's action, or as a side effect of a different action can be confusing or frustrating for the user.
-2. If the link is not crucial for the proper functioning of the visual, it is recommanded to provide the report's author a way to disable and hide the link. This is especially relevant for special Power BI use-cases, such as embedding a report in a 3rd party application or publishing it to the web.
+1. For most cases, it's best to only open a link as a response to a user's explicit action. Make it easy for the user to understand that clicking the link or button will result in opening a new tab. Triggering a `launchUrl()` call without a user's action, or as a side effect of a different action can be confusing or frustrating for the user.
+2. If the link is not crucial for the proper functioning of the visual, it's recommanded to provide the report's author a way to disable and hide the link. This is especially relevant for special Power BI use-cases, such as embedding a report in a third party application or publishing it to the web.
 3. Avoid Triggering a `launchUrl()` call from inside a loop, the visual's `update` function, or any other frequently recurring code.
 
 ## Step by step example

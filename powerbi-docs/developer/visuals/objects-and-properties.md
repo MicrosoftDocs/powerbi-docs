@@ -43,7 +43,8 @@ Types refer to what the property will be. See below for more information about t
 }
 ```
 
-**NOTE**: `show` is a special property that enables a switch to toggle the object.
+> [!NOTE]
+> `show` is a special property that enables a switch to toggle the object.
 
 Example:
 
@@ -58,7 +59,7 @@ Example:
 
 ### Property Types
 
-There are 2 types of property types: `ValueTypeDescriptor` and `StructuralTypeDescriptor`.
+There are two types of property types: `ValueTypeDescriptor` and `StructuralTypeDescriptor`.
 
 #### Value Type Descriptor
 `ValueTypeDescriptor` are mostly primitive types and are typically used as a static object.
@@ -125,7 +126,7 @@ See the example below:
     }
 }
 ```
-Please, pay attention to the `"fill"` and `"fillRule"` properties. The first is the color picker, the second is the substitution rule for gradient that will substitute the "fill" property `visually` when the rule conditions will be met.
+Pay attention to the `"fill"` and `"fillRule"` properties. The first is the color picker, the second is the substitution rule for gradient that will substitute the "fill" property `visually` when the rule conditions will be met.
 
 This link between the fill property and the substitution rule is set in `"rule"`->`"output"` section of the `"fillRule"` property.
 
@@ -157,7 +158,7 @@ Below you can see an example of the data role that triggers the fill rule (`the 
 ```
 
 ## enumerateObjectInstances
-To use objects effectively you will need a function in your custom visual called `enumerateObjectInstances`. This function will populate the propery pane with objects and will also determine where your objects should be bound within the dataView.  
+To use objects effectively, you'll need a function in your custom visual called `enumerateObjectInstances`. This function will populate the property pane with objects and will also determine where your objects should be bound within the dataView.  
 
 Here is what a typical setup looks like:
 ```typescript
@@ -198,7 +199,7 @@ selector: {
 }
 ```
 #### selector 
-This object will be bound to the element we have created a `selectionID` for. In this example, we will assume that we have created `selectionID`'s for some dataPoints, and we are looping through them.
+This object will be bound to the element we have created a `selectionID` for. In this example, we'll assume that we have created `selectionID`'s for some dataPoints, and we're looping through them.
 
 ```typescript
 for (let dataPoint in dataPoints) {

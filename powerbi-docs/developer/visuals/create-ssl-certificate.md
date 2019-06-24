@@ -1,6 +1,6 @@
 ---
 title: Creating SSL certificate
-description: Workaround instructions to create certificates manually for developer server
+description: Work around instructions to create certificates manually for developer server
 author: zBritva
 ms.author: v-ilgali
 manager: AviSander
@@ -13,9 +13,9 @@ ms.date: 06/18/2019
 
 # Creating SSL certificate
 
-Run the following command to generates the certificate by using powershell New-SelfSignedCertificate cmdlet on Windows 8 or higher.
+Run the following command to generate the certificate by using powershell New-SelfSignedCertificate cmdlet on Windows 8 or higher.
 
-For **Windows** **7** tool requires OpenSSL installation. Util `openssll` must be available from command line.
+Tool requires OpenSSL installation for **Windows** **7**. Util `openssll` must be available from command line.
 
 For install OpenSSL visit [https://www.openssl.org](https://www.openssl.org) or [https://wiki.openssl.org/index.php/Binaries](https://wiki.openssl.org/index.php/Binaries)
 
@@ -56,7 +56,7 @@ For *APT* package manager:
 sudo apt-get install openssl
 ```
 
-For *Yellowdog Updater, Modified*:
+For *Yellowdog Updater*:
 
 ```
 yum install openssl
