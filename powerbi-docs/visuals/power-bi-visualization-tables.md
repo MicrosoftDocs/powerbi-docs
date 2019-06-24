@@ -8,7 +8,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/20/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -38,11 +38,27 @@ Tables are a great choice:
 
 * The Power BI service or Power BI Desktop
 
-* Retail Analysis Sample
+* Retail Analysis Sample report
+
+## Get the Retail Analysis Sample report
+
+These instructions use the Retail Analysis Sample. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If someone shares a report with you, you can't create visualizations in reports. To follow along, get the **Retail Analysis Sample** report:
+
+1. Sign in to the Power BI service.
+
+1. In the lower-left corner, select **Get Data**.
+
+1. On the **Get Data** page, select **Samples**.
+
+1. Select **Retail Analysis Sample** > **Connect**.
+
+1. When the sample is available, select **View dataset**.
+
+Now that you have the **Retail Analysis Sample** dataset in front of you, you can get started.
 
 ## Create a table
 
-You'll create the table pictured above to display sales values by item category.  Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If someone shares a report with you, you can't create visualizations in reports. To follow along, sign in to the Power BI service and select **Get Data** > **Samples** > **Retail Analysis Sample** > **Connect**. Select **View dataset**. Now that you have the **Retail Analysis Sample** dataset in front of you, you can get started.
+You'll create the table pictured above to display sales values by item category.
 
 1. From the **Fields** pane, select **Item** > **Category**.
 
@@ -64,7 +80,7 @@ You'll create the table pictured above to display sales values by item category.
 
 There are many ways to format a table. Only a few are covered here. A great way to learn about the other formatting options is to open the **Format** pane (paint roller icon ![paint roller](media/power-bi-visualization-tables/power-bi-format.png)) and explore.
 
-* Try formatting the table grid. Here you'll add a blue vertical grid, add space to the rows, increase the outline and text size a bit.
+* Try formatting the table grid. Here you'll add a blue vertical grid, add space to the rows, and increase the outline and text size.
 
     ![Grid card](media/power-bi-visualization-tables/power-bi-table-gridnew.png)
 
@@ -94,16 +110,16 @@ With conditional formatting for tables, you can specify customized cell backgrou
 
 1. In the **Visualizations** pane, select the **Fields** icon ![fields icon](media/power-bi-visualization-tables/power-bi-fields-icon.png).
 
-1. Now select the down-arrow beside the value in the **Values** well that you want to format (or right-click the field).
+1. Select the down-arrow beside the value in the **Values** well that you want to format (or right-click the field).
 
     > [!NOTE]
     > You can only manage conditional formatting for fields in the **Values** area of the **Fields** well.
 
     ![path to Background color scales](media/power-bi-visualization-tables/power-bi-conditional-formatting-background.png)
 
-1. Select **Background color scales**.
+1. Select **Background color**.
 
-1. In the dialog that appears, you can configure the color, the *Minimum* value, and the *Maximum* value. If you select the **Diverging** option, you can configure an optional *Center* value as well.
+1. In the dialog that appears, you can configure the color, the **Minimum** value, and the **Maximum** value. If you select the **Diverging** option, you can configure an optional **Center** value as well.
 
     ![Background color scales screen](media/power-bi-visualization-tables/power-bi-conditional-formatting-background2.png)
 
@@ -124,7 +140,7 @@ With conditional formatting for tables, you can specify customized cell backgrou
 
 1. Select **OK**.
 
-    Data bars replace the numerical values in the table making it easier to scan.
+    Data bars replace the numerical values in the table, making it easier to scan.
 
     ![same table but with bars in last column](media/power-bi-visualization-tables/power-bi-conditional-formatting-data-bars2.png)
 
@@ -135,7 +151,7 @@ If you'd like to remove conditional formatting from a visualization, right-click
 
 ## Copy values from Power BI tables for use in other applications
 
-Your table or matrix may have content that you'd like to use in other applications, like Dynamics CRM, Excel, and even other Power BI reports. In Power BI, when you right-click inside a cell, you can copy a the data in a single cell or a selection of cells onto your clipboard, and paste it into the other applications.
+Your table or matrix may have content that you'd like to use in other applications, like Dynamics CRM, Excel, and even other Power BI reports. In Power BI, when you right-click inside a cell, you can copy the data in a single cell or a selection of cells onto your clipboard, and paste it into the other applications.
 
 To copy the value of a single cell:
 

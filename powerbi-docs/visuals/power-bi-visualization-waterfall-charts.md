@@ -8,7 +8,7 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/20/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 Waterfall charts show a running total as Power BI adds and subtracts values. They're useful for understanding how an initial value (like net income) is affected by a series of positive and negative changes.
 
-The columns are color coded so you can quickly tell increases and decreases. The initial and the final value columns often [start on the horizontal axis](https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "start on the horizontal axis"), while the intermediate values are floating columns. Because of this "look", waterfall charts are also called bridge charts.
+The columns are color coded so you can quickly notice increases and decreases. The initial and the final value columns often [start on the horizontal axis](https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "start on the horizontal axis"), while the intermediate values are floating columns. Because of this style, waterfall charts are also called bridge charts.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qKRZPBnaUXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -39,11 +39,18 @@ Waterfall charts are a great choice:
 
 * The Power BI service or Power BI Desktop
 
-* Retail Analysis Sample
+* Retail Analysis Sample report
+
+## Get the Retail Analysis Sample report
+
+These instructions use the Retail Analysis Sample. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If someone shares a report with you, you can't create visualizations in reports. To follow along, sign in to the Power BI service and select **Get Data** > **Samples** > **Retail Analysis Sample** > **Connect**.
+
+
+When the sample is available, select **View dataset**.
+
+Now that you have the **Retail Analysis Sample** dataset in front of you, you can get started.
 
 ## Create a waterfall chart
-
-These instructions use the Retail Analysis Sample. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If someone shares a report with you, you can't create visualizations in reports. To follow along, sign in to the Power BI service and select **Get Data** > **Samples** > **Retail Analysis Sample** > **Connect**. When the sample is available, select **View dataset**.
 
 You'll create a waterfall chart that displays sales variance (estimated sales versus actual sales) by month.
 
@@ -51,7 +58,7 @@ You'll create a waterfall chart that displays sales variance (estimated sales ve
 
    ![Screenshot of Sales > Total Sales Varience selected and the visual that results.](media/power-bi-visualization-waterfall-charts/power-bi-first-value.png)
 
-1. Select the **Waterfall** icon ![Screenshot of the Waterfall icon](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png) to convert the chart to a treemap.
+1. Select the waterfall icon ![Screenshot of the waterfall icon](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png) to convert the chart to a treemap.
 
     If **Total Sales Variance** isn't in the **Y-Axis** area, drag it there.
 
@@ -63,7 +70,7 @@ You'll create a waterfall chart that displays sales variance (estimated sales ve
 
 1. Make sure Power BI sorted the waterfall chart chronologically. From the top-right corner of the chart, select the ellipsis (...).
 
-    Check that there is a yellow indicator next the left of the **Sort ascending** and **FiscalMonth** options
+    Check that there is a yellow indicator next to the left of the **Sort ascending** and **FiscalMonth** options
 
     ![Select sort by > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
 
@@ -81,7 +88,7 @@ You'll create a waterfall chart that displays sales variance (estimated sales ve
 
     You're only interested in the top two contributors.
 
-1. In the **Format** pane, select **Breakdown** and set **Maximum** to *2*.
+1. In the **Format** pane, select **Breakdown** and set **Max breakdowns** to *2*.
 
     ![Format > Breakdown](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
 
@@ -99,9 +106,9 @@ You'll create a waterfall chart that displays sales variance (estimated sales ve
 
 ## Highlighting and cross-filtering
 
-For information about using the Filters pane, see [Add a filter to a report in Editing view](../power-bi-report-add-filter.md).
+For information about using the **Filters** pane, see [Add a filter to a report in Editing view](../power-bi-report-add-filter.md).
 
-Highlighting a column in a waterfall chart cross-filters the other visualizations on the report page and the other way around. However, the Total column doesn't trigger highlighting or respond to cross-filtering.
+Highlighting a column in a waterfall chart cross-filters the other visualizations on the report page and the other way around. However, the **Total** column doesn't trigger highlighting or respond to cross-filtering.
 
 ## Next steps
 

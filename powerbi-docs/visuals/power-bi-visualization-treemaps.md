@@ -8,18 +8,18 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/19/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 
 # Treemaps in Power BI
 
-Treemaps display hierarchical data as a set of nested rectangles. Each level of the hierarchy is represented by a colored rectangle (a "branch") containing smaller rectangles ("leaves"). Power BI bases the size of the space inside each rectangle on the measured value. The rectangles are arranged in size from top left (largest) to bottom right (smallest).
+Treemaps display hierarchical data as a set of nested rectangles. Each level of the hierarchy is represented by a colored rectangle (branch) containing smaller rectangles (leaves). Power BI bases the size of the space inside each rectangle on the measured value. The rectangles are arranged in size from top left (largest) to bottom right (smallest).
 
 ![Screenshot of a Count of Product by Category, and Manufacturer treemap.](media/power-bi-visualization-treemaps/pbi-nancy_viz_treemap.png)
 
-For example, if you're analyzing your sales, you might have top-level rectangles ("branches"), for the clothing categories: **Urban**, **Rural**, **Youth**, and **Mix**. Power BI would split your category rectangles into smaller rectangles ("leaves"), for the clothing manufacturers within that category. These smaller rectangles would be sized and shaded based on the number sold.
+For example, if you're analyzing your sales, you might have top-level branches, for the clothing categories: **Urban**, **Rural**, **Youth**, and **Mix**. Power BI would split your category rectangles into leaves, for the clothing manufacturers within that category. These leaves would be sized and shaded based on the number sold.
 
 In the **Urban** branch above, lots of **Maximus** clothing was sold. Less **Natura** and **Fama** was sold. Only a few **Leo** were sold. So, the **Urban** branch of your Treemap has:
 
@@ -57,11 +57,29 @@ Treemaps are a great choice:
 
 * The Power BI service or Power BI Desktop
 
-* Retail Analysis Sample
+* Retail Analysis Sample report
+
+## Get the Retail Analysis Sample report
+
+These instructions use the Retail Analysis Sample. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If someone shares a report with you, you can't create visualizations in reports. To follow along, get the **Retail Analysis Sample** report:
+
+1. Sign in to the Power BI service.
+
+1. In the lower-left corner, select **Get Data**.
+
+1. On the **Get Data** page, select **Samples**.
+
+1. Select **Retail Analysis Sample** > **Connect**.
+
+1. When the sample is available, in the left navigation pane, select **My Workspace**.
+
+1. Under **Dashboards**, select **Retail Analysis Sample**.
+
+Now that you have the **Retail Analysis Sample** dashboard is in front of you, you can get started.
 
 ## Create a basic treemap
 
-These instructions use the Retail Analysis Sample. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If someone shares a report with you, you can't create visualizations in reports. To follow along, sign in to the Power BI service and select **Get Data** > **Samples** > **Retail Analysis Sample** > **Connect**. When the sample is available, in the left navigation pane, select **My Workspace**. Under **Dashboards**, select **Retail Analysis Sample**.
+YOu'll edit a report to add a basic treemap.
 
 1. Select the **Total stores** tile to open the **Store Sales Overview** report.
 
@@ -73,7 +91,7 @@ These instructions use the Retail Analysis Sample. Creating a visualization requ
 
    ![Screenshot of Sales > Last Tear Sales selected and the resulting visual.](media/power-bi-visualization-treemaps/treemapfirstvalue_new.png)
 
-1. Select the **Treemap** icon ![Screenshot of the Treemap icon](media/power-bi-visualization-treemaps/power-bi-treemap-icon.png) to convert the chart to a treemap.
+1. Select the treemap icon ![Screenshot of the treemap icon](media/power-bi-visualization-treemaps/power-bi-treemap-icon.png) to convert the chart to a treemap.
 
    ![Screenshot of the treemap without configuration.](media/power-bi-visualization-treemaps/treemapconvertto_new.png)
 
@@ -96,9 +114,9 @@ These instructions use the Retail Analysis Sample. Creating a visualization requ
 
    ![Screenshot of the Home tooltip that appears.](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
 
-1. [Add the treemap as a dashboard tile (pin the visual)](../service-dashboard-tiles.md).
+1. Add the treemap as a [dashboard tile (pin the visual)](../service-dashboard-tiles.md).
 
-1. [Save the report](../service-report-save.md).
+1. Save [the report](../service-report-save.md).
 
 ## Highlighting and cross-filtering
 
@@ -113,7 +131,7 @@ Highlighting a **Category** or **Detail** in a treemap cross-highlights and cros
 1. In the **Last Year Sales by Chain** pie chart, selecting the **Fashions Direct** slice, cross-filters the treemap.
    ![GIF demonstration of the cross-filtering feature.](media/power-bi-visualization-treemaps/treemapnoowl.gif)
 
-1. To manage how charts cross-highlight and cross-filter each other, see [Change how visuals interact in a Power BI report](../service-reports-visual-interactions.md)
+1. To manage how charts cross-highlight and cross-filter each other, see [Change how visuals interact in a Power BI report](../service-reports-visual-interactions.md).
 
 ## Next steps
 
