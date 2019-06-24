@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 A table is a grid that contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons where you're looking at many values for a single category. For example, this table displays five different measures for **Category**.
 
-![](media/power-bi-visualization-tables/table.png)
+![Screenshot of a table that displays five different measures for Category.](media/power-bi-visualization-tables/table.png)
 
 Create tables in reports and cross-highlight elements within the table with other visuals on the same report page. You can select rows, columns, and even individual cells and cross-highlight. You can also copy and paste individual cells and multiple cell selections into other applications.
 
@@ -82,7 +82,7 @@ There are many ways to format a table. Only a few are covered here. A great way 
 
     ![Field formatting for This year sales in the table](media/power-bi-visualization-tables/power-bi-field-formatting-1.png)
 
-* And after some additional formatting, here is our final table.
+* After some additional formatting, here is our final table.
 
     ![table with all formatting so far](media/power-bi-visualization-tables/power-bi-table-format.png)
 
@@ -92,7 +92,7 @@ There are many ways to format a table. Only a few are covered here. A great way 
 
 With conditional formatting for tables, you can specify customized cell background colors and font colors based on cell values, including using gradient colors.
 
-1. In the **Visualizations** pane, select the **Fields** icon ![fields icon](media/power-bi-visualization-tables/power-bi-fields-icon.png)).
+1. In the **Visualizations** pane, select the **Fields** icon ![fields icon](media/power-bi-visualization-tables/power-bi-fields-icon.png).
 
 1. Now select the down-arrow beside the value in the **Values** well that you want to format (or right-click the field).
 
@@ -103,7 +103,7 @@ With conditional formatting for tables, you can specify customized cell backgrou
 
 1. Select **Background color scales**.
 
-1. In the dialog that appears, you can configure the color, the *Minimum* value, and the *Maximum* value. If you select the **Diverging** box, you can configure an optional *Center* value as well.
+1. In the dialog that appears, you can configure the color, the *Minimum* value, and the *Maximum* value. If you select the **Diverging** option, you can configure an optional *Center* value as well.
 
     ![Background color scales screen](media/power-bi-visualization-tables/power-bi-conditional-formatting-background2.png)
 
@@ -131,7 +131,7 @@ With conditional formatting for tables, you can specify customized cell backgrou
 If you'd like to remove conditional formatting from a visualization, right-click the field again, and select **Remove Conditional Formatting**.
 
 > [!TIP]
-> Conditional formatting is also available from the Format pane (paintroller icon). Select the value to format and then set **Color scales** or **Data bars** to **On** to apply the default settings or, to customize the settings, select **Advanced controls**.
+> Conditional formatting is also available from the **Format** pane. Select the value to format and then set **Color scales** or **Data bars** to **On** to apply the default settings or, to customize the settings, select **Advanced controls**.
 
 ## Copy values from Power BI tables for use in other applications
 

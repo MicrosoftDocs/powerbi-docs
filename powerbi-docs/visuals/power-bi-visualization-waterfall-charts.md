@@ -49,8 +49,7 @@ You'll create a waterfall chart that displays sales variance (estimated sales ve
 
 1. From the **Fields** pane, select **Sales** > **Total Sales Variance**.
 
-
-   ![](media/power-bi-visualization-waterfall-charts/power-bi-first-value.png)
+   ![Screenshot of Sales > Total Sales Varience selected and the visual that results.](media/power-bi-visualization-waterfall-charts/power-bi-first-value.png)
 
 1. Select the **Waterfall** icon ![Screenshot of the Waterfall icon](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png) to convert the chart to a treemap.
 
@@ -76,7 +75,7 @@ You'll create a waterfall chart that displays sales variance (estimated sales ve
 
     ![Shows Store in Breakdown bucket](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 
-    By default, Power BI adds the top five contributors to increases or decreases by month. 
+    By default, Power BI adds the top five contributors to increases or decreases by month.
 
     ![Shows Store in Breakdown bucket](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-initial.png)
 
