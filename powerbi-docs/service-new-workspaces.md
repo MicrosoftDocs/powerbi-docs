@@ -12,6 +12,7 @@ ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
+
 # Organize work in the new workspaces in Power BI
 
  *Workspaces* are places to collaborate with colleagues to create collections of dashboards, reports, and paginated reports. The new workspace experience helps you better manage access to content. This article describes the new workspaces, and how they differ from the classic workspaces.  As with classic workspaces, you still use them to create and distribute apps. Read about how to [create a new workspace experience](service-create-the-new-workspaces.md).
