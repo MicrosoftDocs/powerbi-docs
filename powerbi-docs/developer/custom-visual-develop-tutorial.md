@@ -69,21 +69,15 @@ Now you need to install the **pbiviz** package.
 
 #### Windows
 
-1. To create a certificate, enter the following command.
-
-    ```powershell
-    pbiviz --create-cert
-    ```
-
-  It returns a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_**.
-
-  ![Cert created via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
-
-2. Now we need to install the certificate. to install the certificate, enter the following command.
+1. To create and install a certificate, enter the following command.
 
     ```powershell
     pbiviz --install-cert
     ```
+
+  It returns a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_** starts the Certificate Import Wizard.
+
+  ![Cert created via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
 
 3. In the Certificate Import Wizard, verify that the store location is set to Current User. Then select *Next*.
 

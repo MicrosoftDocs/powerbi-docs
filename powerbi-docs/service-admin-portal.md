@@ -55,11 +55,11 @@ Once the dashboard loads, you see two sections of tiles. The first section inclu
 
 Here’s a breakdown of what you can see in each tile:
 
-* Distinct count of all dashboards, reports, and datasets in the user workspace
+* Distinct count of all dashboards, reports, and datasets in the user workspace.
   
     ![Distinct count of dashboards, reports, datasets](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
-* Most consumed dashboard by number of users who can access it. For example, if you have a dashboard that you shared with 3 users, and you also added it to a content pack that two different users connected to, its count would be 6 (1 + 3 + 2)
+* Most consumed dashboard by number of users who can access it. For example, if you have a dashboard that you shared with 3 users, and you also added it to a content pack that two different users connected to, its count would be 6 (1 + 3 + 2).
   
     ![Most consumed dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
@@ -71,7 +71,7 @@ Here’s a breakdown of what you can see in each tile:
   
     ![Top users - dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-dashboards.png)
 
-* A view of your top users based on how many reports they have
+* A view of your top users based on how many reports they have.
   
     ![Top users - reports](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
 
@@ -208,6 +208,11 @@ Azure B2B guest users can edit and manage content in the organization. [Learn mo
 The following image shows the option to Allow external guest users to edit and manage content in the organization.
 
 ![Allow external guest users to edit and manage content in the organization](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
+### Email Subscriptions
+Users in the organization can create email subscriptions. Learn more about [subscriptions](service-report-subscribe.md).
+
+![Enable email subscriptions](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
 
 ## Content pack and app settings
 
@@ -361,24 +366,29 @@ Users in the organization can create and use dataflows. For an overview of dataf
 > [!NOTE]
 > This setting applies to the entire organization and cannot be limited to specific groups.
 
-## Template apps settings (preview)
+## Template apps settings
 
-Two settings control template apps. 
+Three settings control template apps ability to publish or install template apps.
 
 ![Power BI admin portal template apps settings](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
 
-### Create Template Apps (preview)
+### Publish Template Apps
 
-Users in the organization can create template apps. Template app creators can then distribute them to clients outside your organization by way of [AppSource](https://appsource.microsoft.com) or other distribution methods.
+Users in the organization can create template apps workspaces. Control which users can publish template apps or distribute them to clients outside your organization by way of [AppSource](https://appsource.microsoft.com) or other distribution methods.
 
 ![Power BI admin portal, Create template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
 
-### Install template apps (preview)
+### Install template apps listed on AppSource
 
-Users in the organization can download and install template apps from [AppSource](https://appsource.microsoft.com) or another source.
+Users in the organization can download and install template apps **only** from [AppSource](https://appsource.microsoft.com). Control which specific users or security groups can install template apps from AppSource.
 
-> [!NOTE]
-> This setting determines which users can install template apps on their Power BI accounts.
+![Power BI admin portal, Install template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-appsource.png)
+
+### Install template apps not listed on AppSource
+
+Control which users in the organization can download and install template apps **not listed on [AppSource](https://appsource.microsoft.com)**.
+
+![Power BI admin portal, Install template apps setting](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-nonappsource.png)
 
 ## Capacity settings
 
