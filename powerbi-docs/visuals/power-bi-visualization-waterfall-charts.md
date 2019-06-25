@@ -95,7 +95,7 @@ You'll create a waterfall chart that displays sales variance (estimated sales ve
 
     You're only interested in the top two contributors.
 
-1. In the **Format** pane, select **Breakdown** and set **Max breakdowns** to *2*.
+1. In the **Format** pane, select **Breakdown** and set **Max breakdowns** to **2**.
 
     ![Format > Breakdown](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
 
