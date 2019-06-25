@@ -69,7 +69,7 @@ To follow along, open the [Retail Analysis .PBIX file](http://download.microsoft
 
 1. Convert the visual to a KPI by selecting the **KPI** icon from the **Visualization** pane.
 
-    ![Screenshot of teh Visualizations pane with the KPI icon called out.](media/power-bi-visualization-kpi/power-bi-kpi-template.png)
+    ![Screenshot of the Visualizations pane with the KPI icon called out.](media/power-bi-visualization-kpi/power-bi-kpi-template.png)
 
 1. To add a goal, drag **Total Units Last Year** to the **Target goals** field.
 
