@@ -427,7 +427,7 @@
         href: service-get-data.md
       - name: "Data refresh in Power BI"
         href: refresh-data.md
-    - name: Collaborating in Power BI
+    - name: Collaborate in Power BI
       items: 
       - name: "Organize your work"
         href: service-new-workspaces.md
