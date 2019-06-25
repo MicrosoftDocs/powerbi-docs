@@ -19,10 +19,6 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 Register to hear from Power BI experts and participate in live Q&A sessions.
 
-**Microsoft Runs on Power BI: Using Power BI in Modern Treasury**
-<br>by Pankaj Gudimella and Guru Kirthigavasan
-<br>[Register to watch on June 25th, 10:00 AM–11:00 AM PST](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
-
 **Power BI: How to Get Insights from Your Workday HR Data**
 <br>by Iman Eftekhari, Julia Paton from Agile Analytics and Shahram Karimi from QBE Insurance
 <br>[Register to watch on June 27th, 1:30 PM–2:30 PM PST](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
@@ -56,6 +52,10 @@ Get started with these popular on-demand webinars
 **Microsoft Runs on Power BI – Financial Planning & Analysis Made Easy**
 <br>by Cory Hrncirik and Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Microsoft Runs on Power BI: Using Power BI in Modern Treasury**
+<br>by Pankaj Gudimella and Guru Kirthigavasan
+<br>[Register and watch now](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Supercharge Your Applications Using the Power BI JavaScript API**
 <br>by Nimrod Shalit
