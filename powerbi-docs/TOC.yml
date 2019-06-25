@@ -429,9 +429,9 @@
         href: refresh-data.md
     - name: Collaborating in Power BI
       items: 
-      - name: "Organizing your work"
+      - name: "Organize your work"
         href: service-new-workspaces.md
-      - name: "Ways to share your work"
+      - name: "Share your work"
         href: service-how-to-collaborate-distribute-dashboards-reports.md
       - name: "Monitor Power BI usage"
         href: service-usage-metrics.md
