@@ -19,7 +19,7 @@ This article takes a look at the report **Filters** pane in the Power BI service
 
 There are many different ways to filter data in Power BI. For more info about filters, see [Filters and highlighting in Power BI reports](../power-bi-reports-filters-and-highlighting.md).
 
-![Screenshot of a report in the browser wiht an arrow pointing to the Filters option.](media/end-user-report-filter/power-bi-browser-new2.png)
+![Screenshot of a report in the browser with an arrow pointing to the Filters option.](media/end-user-report-filter/power-bi-browser-new2.png)
 
 ## Working with the report Filters pane
 
@@ -29,7 +29,9 @@ When a colleague shares a report with you, be sure to look for the **Filters** p
 
 The **Filters** pane contains filters that the report *designer* added to the report. *Consumers* like you can interact with the existing filters and save your changes, but you can't add new filters to the report. For example, in the screenshot above the designer added two page level filters: **Segment** and **Year**. You can interact and change these filters, but you can't add a third page level filter.
 
-In the Power BI service, reports keep any changes you make in the **Filters** pane. The service carries those changes through to the mobile version of the report. To reset the **Filters** pane to the designer's defaults, select ![Screenshot of the Reset to default option.](media/end-user-report-filter/power-bi-reset.png) from the top menu bar.
+In the Power BI service, reports keep any changes you make in the **Filters** pane. The service carries those changes through to the mobile version of the report.
+
+To reset the **Filters** pane to the designer's defaults, select ![Screenshot of the Reset to default option.](media/end-user-report-filter/power-bi-reset.png) from the top menu bar.
 
 ## View all the filters for a report page
 
@@ -51,7 +53,7 @@ Anyone viewing this report can interact with these filters.
 
 To get a closer look at the filters applied to a specific visual, hover over the visual to reveal the filter icon ![Screenshot of the Filter icon.](media/end-user-report-filter/power-bi-filter-icon.png). Select that filter icon to see a pop-up with all the filters, slicers, and so on, affecting that visual. The filters on the pop-up are the same filters displayed on the **Filters** pane.
 
-![Screenshot of a list of filters with arrows pointing to where those filters reside on the Filters pane.](media/end-user-report-filter/power-bi-hover-visual-filter.png)
+![Screenshot of a list of filters with arrows pointing to where those filters are on the Filters pane.](media/end-user-report-filter/power-bi-hover-visual-filter.png)
 
 Here are the types of filters this view can display:
 
@@ -87,7 +89,7 @@ In the following example:
 
 1. **isVanArsdel** and **Year** are filters applied to this visual.
 
-![Screenshot a a report and its filters with the list of filters numbered to coincide with the numbered list above.](media/end-user-report-filter/power-bi-visual-pop-up.png)
+![Screenshot of a report and its filters with the list of filters numbered to coincide with the numbered list above.](media/end-user-report-filter/power-bi-visual-pop-up.png)
 
 ### Search in a filter
 

@@ -26,7 +26,7 @@ You can use the relative date slicer just like any other slicer. Create a **slic
 
 Select the slicer on your canvas and then the carat in the upper-right corner of the slicer visual. If the visual has date data, the menu will display the option for **Relative**.
 
-![Screenshot of the slicer visual with a callout arount the carat and an arrow pointing to Relative.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-03.png)
+![Screenshot of the slicer visual with a call out around the carat and an arrow pointing to Relative.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-03.png)
 
 For the relative date slicer, select *Relative*.
 
@@ -66,19 +66,19 @@ The third setting lets you pick the date measurement. You have the following cho
 
 If you select **Months** from that list, and enter *2* in the middle setting, this is what will happen:
 
-* if today is July 20th
+* if today is July 20
 
 * the data included in visuals constrained by the slicer will show data for the previous two months
 
-* starting on May 20th and going through July 20th (today's date)
+* starting on May 20 and going through July 20 (today's date)
 
-In comparison, if you selected *Months (Calendar)*, the visuals constrained would show data from May 1st through June 30th (the last two complete calendar months).
+In comparison, if you selected *Months (Calendar)*, the visuals constrained would show data from May 1 through June 30 (the last two complete calendar months).
 
 ## Using the relative date range filter
 
 You can also create a relative date range filter for your report page or your entire report. To do so, drag a date field into the **Page level filters** well or the **Report level filters** well in the **Field** pane:
 
-![Screenshot of the OrderDate field being gragged into the page level filters well.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-06.png)
+![Screenshot of the OrderDate field being dragged into the page level filters well.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-06.png)
 
 Once there, you can change the relative date range. It's similar to how you can customize the **relative date slicer**. Select **Relative date filtering** from the **Filter Type** drop-down.
 
@@ -97,3 +97,7 @@ The following limitations and considerations currently apply to the **relative d
 * The slicer and filter are always based on the time in UTC. If you set up a filter in a report and send it to a colleague in a different time zone, you'll both see the same data. Unless you are in the UTC time zone, you and your colleague must account for the time offset you’ll experience.
 
 * You can convert data captured in a local time zone to UTC using the **Query Editor**.
+
+## Next steps
+
+Learn how to [use grouping and binning in Power BI Desktop](../desktop-grouping-and-binning.md).

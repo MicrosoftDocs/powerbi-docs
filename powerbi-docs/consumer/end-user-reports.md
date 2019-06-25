@@ -25,7 +25,7 @@ If you're new to Power BI, you can get a good foundation by reading [Basic conce
 
 ## Advantages of reports
 
-Power BI bases a report on a single dataset. Report *designers* create the visuals in a report that represent a nugget of information. The visuals aren't static.  They update as the underlying data changes.You can interact with the visuals and filters as you dig into the data to discover insights and look for answers. Like a dashboard, a report is highly interactive and highly customizable.
+Power BI bases a report on a single dataset. Report *designers* create the visuals in a report that represent a nugget of information. The visuals aren't static.  They update as the underlying data changes. You can interact with the visuals and filters as you dig into the data to discover insights and look for answers. Like a dashboard, a report is highly interactive and highly customizable.
 
 ### Safely interact with content
 
@@ -65,7 +65,6 @@ Or you may be a *consumer*, someone who receives reports from others. You'll wan
 * Learn how to [open a report](end-user-report-open.md) and all the interaction available in [Reading view](end-user-reading-view.md).
 * Get comfortable with reports by taking a tour of one of our [samples](../sample-tutorial-connect-to-the-samples.md).  
 * To see which dataset the report is using and which dashboards have tiles pinned from the report, see [View related content in the Power BI service](end-user-related.md).
-<!--* Don't need the report any more? You can [remove it](../service-delete.md).-->
 
 > [!TIP]
 > If you didn’t find what you’re looking for here, use the Table of Contents to the left to browse all *Report* articles.

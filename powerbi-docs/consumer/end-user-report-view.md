@@ -32,14 +32,14 @@ The options in the **View** menu give you flexibility to display report pages at
 
 - Another option is to fit the report to your screen width by selecting **Fit to width**. Since it's just the width and not the height, you may still need to use the vertical scroll bar.
 
-  ![Screenshot of a report set to Fit to width with the vertical scroll scroll bar called out.](media/end-user-report-view/power-bi-fit-to-width-new.png)
+  ![Screenshot of a report set to Fit to width with the vertical scroll bar called out.](media/end-user-report-view/power-bi-fit-to-width-new.png)
 
 - If you don't want any scroll bars, but want to make the best use of your screen size, select **Fit to Page**.
 
    ![Screenshot of a report set to Fit to page.](media/end-user-report-view/power-bi-fit-to-width.png)
 
 - You can also choose from four **High contrast colors**: High contrast #1, High contrast #2, High contrast black, and High contrast white. It's an accessibility feature that you can use so people who may have impaired vision can see the reports better:
- 
+
     ![Screenshot of a report set to High contrast #1.](media/end-user-report-view/power-bi-high-contrast-1.png)![Screenshot of a report set to High contrast #2.](media/end-user-report-view/power-bi-high-contrast-2.png)
     ![Screenshot of a report set to High contrast black.](media/end-user-report-view/power-bi-high-contrast-black.png)![Screenshot of a report set to High contrast white.](media/end-user-report-view/power-bi-high-contrast-white.png)
 
