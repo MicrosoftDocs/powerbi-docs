@@ -43,10 +43,17 @@ Waterfall charts are a great choice:
 
 ## Get the Retail Analysis Sample report
 
-These instructions use the Retail Analysis Sample. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If someone shares a report with you, you can't create visualizations in reports. To follow along, sign in to the Power BI service and select **Get Data** > **Samples** > **Retail Analysis Sample** > **Connect**.
+These instructions use the Retail Analysis Sample. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If someone shares a report with you, you can't create visualizations in reports. To follow along, get the **Retail Analysis Sample** report:
 
+1. Sign in to the Power BI service.
 
-When the sample is available, select **View dataset**.
+1. In the lower-left corner, select **Get Data**.
+
+1. On the **Get Data** page, select **Samples**.
+
+1. Select **Retail Analysis Sample** > **Connect**.
+
+1. When the sample is available, select **View dataset**.
 
 Now that you have the **Retail Analysis Sample** dataset in front of you, you can get started.
 

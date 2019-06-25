@@ -58,7 +58,7 @@ Now that you have the **Retail Analysis Sample** dataset in front of you, you ca
 
 ## Create a table
 
-You'll create the table pictured above to display sales values by item category.
+You'll create the table pictured at the beginning of the article to display sales values by item category.
 
 1. From the **Fields** pane, select **Item** > **Category**.
 

@@ -71,7 +71,7 @@ These instructions use the Retail Analysis Sample. Creating a visualization requ
 
 1. Select **Retail Analysis Sample** > **Connect**.
 
-1. When the sample is available, in the left navigation pane, select **My Workspace**.
+1. When the sample is available, in the left navigation pane, expand **My Workspace**.
 
 1. Under **Dashboards**, select **Retail Analysis Sample**.
 
@@ -79,7 +79,7 @@ Now that you have the **Retail Analysis Sample** dashboard is in front of you, y
 
 ## Create a basic treemap
 
-YOu'll edit a report to add a basic treemap.
+You'll edit a report to add a basic treemap.
 
 1. Select the **Total stores** tile to open the **Store Sales Overview** report.
 
