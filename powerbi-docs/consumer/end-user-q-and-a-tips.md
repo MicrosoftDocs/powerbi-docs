@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 06/26/2019
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
@@ -70,15 +70,15 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 ## Q&A helps you phrase the question
 Q&A does its best to understand and answer the question being asked. It does this in several ways. For all of these, you can accept the action in full, in part, or not at all. As you type your question, Q&A:
 
-* autocompletes words and questions. It uses various strategies, including autocompleting recognized words, and previously used questions that returned valid responses. If more than one autocomplete option is available, they're presented in a dropdown list.
+* autocompletes words and questions. It uses various strategies, including autocompleting recognized words, stored questions, and previously used questions that returned valid responses. If more than one autocomplete option is available, they're presented in a dropdown list.
 * corrects spelling.
-* provides a preview of the answer in the form of a visualization. The visualization updates as you type and edit the question (it doesn't wait for you to press Enter).
+* provides a preview of the answer in the form of a visual. The visual updates as you type and edit the question (it doesn't wait for you to press Enter).
 * suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
 * restates the question based on the data in the underlying dataset(s). Q&A replaces the words you used with synonyms from the underlying dataset(s). By reading the restatement, you know whether Q&A understood your question or not. 
 * dims words it doesn't understand.
 
 ## Don't stop now
-After Q&A displays your results, keep the conversation going! Use the interactive features of the visualization and of Q&A to uncover more insights.
+After Q&A displays your results, keep the conversation going! Use the interactive features of the visual and of Q&A to uncover more insights.
 
 ## Next steps
 Back to [Q&A in Power BI](end-user-q-and-a.md)  
