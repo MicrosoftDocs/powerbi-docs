@@ -15,62 +15,64 @@ LocalizationGroup: Reports
 ---
 # Types of filters in Power BI reports
 
-Understanding the different types of filters
-Overview
-Not all filters behave exactly the same because not all filters are created the same way. In the next section we will take a look at the different ways that filters are created to understand how they behave in the new filter pane in editing mode. 
-First let’s start with the two most common filter types.
+Not all filters behave exactly the same way because not all filters are created the same way. In the next section, we take a look at the different ways that you can create filters. How you create them influences how they behave in the new filter pane in editing mode. 
+Let’s start with the two most common filter types.
 
-## Manual Filters 
+## Manual filters 
 
-These are the filters that the report creators drag and drop anywhere on the new filter pane. With these filters, users with edit permission to the report can edit, delete, clear, hide, lock, rename, or sort this filter in the new pane.
+Manual filters are the filters that report creators drag and drop anywhere in the new filter pane. Users with edit permission to the report can edit, delete, clear, hide, lock, rename, or sort this filter in the new pane.
 
-## Automatic Filters 
+## Automatic filters 
 
-These are the filters that get automatically added to the visual level of the filter pane when you build a visual; these filters are based on the fields that make up your visual. With these filters, users with edit permission to the report can edit, clear, hide, lock, rename, or sort this filter in the new pane, but they cannot delete automatic filters, since the visual references those fields.
+Automatic filters are the filters that get automatically added to the visual level of the filter pane when you build a visual. These filters are based on the fields that make up your visual. Users with edit permission to the report can edit, clear, hide, lock, rename, or sort this filter in the new pane. They can't delete automatic filters, because the visual refers to those fields.
 
 ## More advanced filters
 
-The next filter types are less common, but it is still important to understand them if they are displayed in your report. 
+These next filter types are less common, but it's still important to understand them if they're displayed in your report. Besides, you might find them useful in creating just the right filter for your report.
 
-## Include/Exclude Filters
+## Include and exclude filters
 
-These are the filters that get automatically added to the filter pane when you use the include or exclude functionality for a visual in your report. With these filters, users with edit permission to the report can delete, lock, hide, or sort this filter in the new pane but they cannot edit, clear, nor rename an include/exclude filter because it is associated with the include/exclude functionality of visuals.
+Include and exclude filters get automatically added to the filter pane when you use the include or exclude functionality for a visual in your report. Users with edit permission to the report can delete, lock, hide, or sort this filter in the new pane. They can't edit, clear, or rename an include or exclude filter, because it's associated with the include and exclude functionality of visuals.
 
-## Drill Down Filters
+## Drill-down filters
 
-These are the filters that get automatically added to the filter pane when you use the drill down functionality for a visual in your report. With these filters, users with edit permission to the report can edit or clear the filter in the new pane, but they cannot delete, hide, lock, rename, or sort this filter in the new pane because it is associated with the drill down functionality of visuals. To remove the drill down filter you will need to click the drill up button for the visual.
+Drill-down filters get automatically added to the filter pane when you use the drill-down functionality for a visual in your report. Users with edit permission to the report can edit or clear the filter in the new pane. They can't delete, hide, lock, rename, or sort this filter because it's associated with the drill-down functionality of visuals. To remove the drill-down filter, you click the drill-up button for the visual.
 
-## Cross Drill Filters
+## Cross-drill filters
 
-Cross Drill filters are automatically added to the new pane when a drill down filter is passed to another visual on the report page via the cross-filter or cross-highlight feature. Users with edit permission to the report cannot delete, clear, hide, lock, rename, or sort this filter in the new pane because it is associated with the drill down functionality of visuals. They also cannot edit this filter because it comes from another visual’s drill down. To remove the drill down filter you will need to click the drill up button for the visual that is passing the filter.
+Cross-drill filters are automatically added to the new pane when a drill-down filter is passed to another visual on the report page via the cross-filter or cross-highlight feature. Users with edit permission to the report can't delete, clear, hide, lock, rename, or sort this filter because it's associated with the drill-down functionality of visuals. They also can't edit this filter because it comes from drilling down in another visual. To remove the drill-down filter, you click the drill-up button for the visual that's passing the filter.
 
-## Drill through Filters
+## Drillthrough filters
 
-Drillthrough filters are the filters that get passed from one page to another via the drillthrough feature and will show up in the drillthrough pane. There are two types of drill through filters. First is the one that invokes the drill through. For this type, report editors can edit, delete, clear, hide, or lock this filter. Second type is the drill through filters that get passed along to the target based on the page level filters of the source page. For this transient type of drill through filter, Report editors can edit, delete, clear, this filter, but they cannot lock or hide this filter for the end users.
+Drillthrough filters get passed from one page to another via the drillthrough feature. They show up in the drillthrough pane. There are two types of drillthrough filters. The first type is the one that invokes the drillthrough. Report editors can edit, delete, clear, hide, or lock this type of filter. The second type is the drillthrough filter that get passed to the target, based on the page-level filters of the source page. Report editors can edit, delete, or clear, this transient type of drillthrough filter. They can't lock or hide this filter for end users.
 
-## URL Filters
+## URL filters
 
-These are filters that get added to the new pane by adding a URL query parameter. Users with edit permission to the report can edit, delete, or clear the filter in the new pane, but cannot hide, lock, rename, or sort this filter in the new pane because it is associated with the URL parameters functionality. To remove the filter, you need to remove the parameter from the URL.
+URL filters get added to the new pane by adding a URL query parameter. Users with edit permission to the report can edit, delete, or clear the filter in the new pane. They can't hide, lock, rename, or sort this filter because it's associated with the URL parameter. To remove the filter, you remove the parameter from the URL. Here's an example URL with a parameter:
 
 app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=Stores~2FStatus%20eq%20'Off'
 
-## Pass Through Filters
+Read more about [URL filters](service-url-filters.md).
 
-These are visual-level filters that are created through Q&A. Authors can delete, hide, or sort these filters in the new pane; however, they cannot rename, edit, clear or lock these filters.
+## Pass-through filters
+
+Pass-through filters are visual-level filters created through Q&A. Authors can delete, hide, or sort these filters in the new pane. However, they can't rename, edit, clear or lock these filters.
 
 ## Comparing filter types
 
+This table compares what authors can do with the different types of filters.
 
 | Filter type | Edit | Clear | Delete | Hide | Lock | Sort | Rename |
-| Manual Filters | Y | Y | Y | Y | Y | Y | Y |
-| Auto Filters | Y | Y | N | Y | Y | Y | Y |
-| Include/Exclude Filters | N | N | Y | Y | Y | Y | N |
-| Drill Down Filters | Y | Y | N | N | N | N | N |
-| Cross Drill Filters | N | N | N | N | N | N | N |
-| Drill through Filters (Invokes Drill through) | Y | Y | Y | Y | Y | N | N |
-| Drill through Filters (Transient) | Y | Y | Y | N | N | N | N |
-| URL Filters - transient | Y | Y | Y | N | N | N | N |
-| Pass Through Filters | N | N | Y | Y | N | Y | N |
+|----|----|----|----|----|----|----|----|
+| Manual filters | Y | Y | Y | Y | Y | Y | Y |
+| Auto filters | Y | Y | N | Y | Y | Y | Y |
+| Include/Exclude filters | N | N | Y | Y | Y | Y | N |
+| Drill-down filters | Y | Y | N | N | N | N | N |
+| Cross Drill filters | N | N | N | N | N | N | N |
+| Drillthrough filters (Invokes drillthrough) | Y | Y | Y | Y | Y | N | N |
+| Drillthrough filters (Transient) | Y | Y | Y | N | N | N | N |
+| URL filters - transient | Y | Y | Y | N | N | N | N |
+| Pass Through filters | N | N | Y | Y | N | Y | N |
 
 
 
