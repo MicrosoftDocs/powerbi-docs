@@ -223,14 +223,16 @@
         href: desktop-qna-in-reports.md
       - name: "Analytics pane in Power BI Desktop"
         href: desktop-analytics-pane.md
-      - name: "Using insights to explain increases and decreases"
+      - name: "Use insights to explain increases and decreases"
         href: desktop-insights.md
-      - name: "Using insights to find where distribution is different in charts"
+      - name: "Use insights to find where distribution is different in charts"
         href: desktop-insights-find-where-different.md
       - name: "Bookmarks in Power BI"
         href: desktop-bookmarks.md
-      - name: "Use Report themes"
+      - name: "Use report themes"
         href: desktop-report-themes.md
+      - name: "Types of filters"
+        href: power-bi-report-filter-types.md
       - name: "Try the new filter experience"
         href: power-bi-report-filter-preview.md
       - name: "Use Quick Measures"
