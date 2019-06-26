@@ -35,7 +35,7 @@ These next filter types are less common, but it's still important to understand 
 
 ## Include and exclude filters
 
-Include and exclude filters get automatically added to the filter pane when you use the include or exclude functionality for a visual in your report. Users with edit permission to the report can delete, lock, hide, or sort this filter in the new pane. They can't edit, clear, or rename an include or exclude filter, because it's associated with the include and exclude functionality of visuals.
+Include and exclude filters get automatically added to the filter pane when you use the include or exclude functionality for a visual. Users with edit permission to the report can delete, lock, hide, or sort this filter in the new pane. They can't edit, clear, or rename an include or exclude filter, because it's associated with the include and exclude functionality of visuals.
 
 ![Exclude filter](media/power-bi-report-filter-types/power-bi-filters-exclude.png)
 
@@ -65,7 +65,7 @@ Read more about [URL filters](service-url-filters.md).
 
 ## Pass-through filters
 
-Pass-through filters are visual-level filters created through Q&A. Authors can delete, hide, or sort these filters in the new pane. However, they can't rename, edit, clear or lock these filters.
+Pass-through filters are visual-level filters created through Q&A. Authors can delete, hide, or sort these filters in the new pane. However, they can't rename, edit, clear, or lock these filters.
 
 ![Pass-through filter with Q&A](media/power-bi-report-filter-types/power-bi-filters-qna.png)
 
