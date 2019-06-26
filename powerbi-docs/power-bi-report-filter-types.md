@@ -15,7 +15,7 @@ LocalizationGroup: Reports
 ---
 # Types of filters in Power BI reports
 
-Filters don't all behave the same way because they're not created the same way. How you create them influences how they behave in the new filter pane in editing mode. In this article, we describe the different kinds of filters: the different ways you create them and the different things they're good for. In the next section, we take a look at the different ways that you can create filters. 
+Filters don't all behave the same way because they're not created the same way. How you create them influences how they behave in the new filter pane in editing mode. In this article, we describe the different kinds of filters: the different ways you create them and the different things they're good for. Read about how to [add filters to reports](power-bi-report-add-filter.md). 
 
 ![Filter pane](media/power-bi-report-filter-types/power-bi-filter-pane.png)
 
@@ -88,13 +88,12 @@ This table compares what authors can do with the different types of filters.
 
 
 ## Next steps
+
+[Add filters to reports](power-bi-report-add-filter.md)
+
 [Take a tour of the report Filters pane](consumer/end-user-report-filter.md)
 
 [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
-
-[Interact with filters and highlighting in report Reading view](consumer/end-user-reading-view.md)
-
-[Change how report visuals cross-filter and cross-highlight each other](consumer/end-user-interactions.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
