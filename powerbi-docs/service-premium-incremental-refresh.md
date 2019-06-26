@@ -1,14 +1,14 @@
 ---
 title: Incremental refresh in Power BI Premium
 description: Learn how to enable very large datasets in the Power BI Premium service.
-author: christianwade
+author: mgblythe
 manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/10/2019
-ms.author: chwade
+ms.author: mblythe
 LocalizationGroup: Premium
 ---
 # Incremental refresh in Power BI Premium
@@ -35,7 +35,7 @@ Large datasets with potentially billions of rows may not fit into a Power BI Des
 
 #### RangeStart and RangeEnd parameters
 
-For incremental refresh, datasets are filtered by using Power Query date/time parameters with the reserved, case-sensitive names **RangeStart** and **RangeEnd**. These parameters are used to filter the data imported into Power BI Desktop, and also to dynamically partition the data into ranges once published to the Power BI service. The parameter values are substituted by the service to filter for each partition. Once published, the parameter values are overridden automatically by the Power BI service. There's no need to set them in dataset settings in the service. Once published, the parameter values are overridden automatically by the Power BI service. 
+For incremental refresh, datasets are filtered by using Power Query date/time parameters with the reserved, case-sensitive names **RangeStart** and **RangeEnd**. These parameters are used to filter the data imported into Power BI Desktop, and also to dynamically partition the data into ranges once published to the Power BI service. The parameter values are substituted by the service to filter for each partition. There's no need to set them in dataset settings in the service. Once published, the parameter values are overridden automatically by the Power BI service.
 
 To define the parameters with default values, in the Power Query Editor, select **Manage Parameters**.
 

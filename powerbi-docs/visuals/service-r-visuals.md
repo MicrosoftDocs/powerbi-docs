@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/20/2019
+ms.date: 06/24/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -60,7 +60,7 @@ As another example, the following image shows the error message that appears whe
 ![](media/service-r-visuals/r-visuals-service_5.png)
 
 ## Licensing
-R visuals require a [Power BI Pro](../service-self-service-signup-for-power-bi.md) license to render in reports, refresh, filter and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../service-premium-what-is.md)
+R visuals require a [Power BI Pro](../service-self-service-signup-for-power-bi.md) license to render in reports, refresh, filter and cross-filter. For more information about Power BI Pro licenses, and how they differ from free licenses, see [Power BI Pro content - what is it?](../service-admin-purchasing-power-bi-pro.md)
 
 Free users of Power BI can only consume tiles shared with them in Premium workspaces. See [purchasing Power BI Pro](../service-admin-purchasing-power-bi-pro.md) for more information.
 
@@ -69,7 +69,7 @@ The following table describes R visuals capabilities based on licensing.
 
 |  |Author R visuals in Power BI Desktop  | Create PBI service reports with R visuals |View R visuals in reports  | View R tiles in dashboards |
 |---------|---------|---------|---------|--------|
-|**Guest** (Power BI embedded)     |  Supported in Premium capacity only|  Supported in Premium capacity only       | Supported in Premium capacity only  | Supported in Premium capacity only |
+|**Guest** (Power BI embedded)     |  Supported|  Not supported      | Supported in Premium/Azure capacity only  | Supported in Premium/Azure capacity only |
 |**Unmanaged tenant** (domain not verified) | Supported | Not supported |  Not supported |Supported (B2B scenario) |
 |**Managed tenant** with free license    |  Supported       |  Not supported       |    Supported in Premium capacity only    | Supported |
 **Managed tenant** with Pro license     |   Supported      | Supported      | Supported    |Supported|
