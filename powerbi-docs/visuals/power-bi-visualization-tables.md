@@ -42,23 +42,17 @@ Tables are a great choice:
 
 ## Get the Retail Analysis Sample report
 
-These instructions use the Retail Analysis Sample. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If someone shares a report with you, you can't create visualizations in reports. To follow along, get the **Retail Analysis Sample** report:
+These instructions use the Retail Analysis Sample. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If someone shares a report with you, you can't create visualizations in reports. To follow along, get the [Retail Analysis Sample report](../sample-datasets).
 
-1. Sign in to the Power BI service.
-
-1. In the lower-left corner, select **Get Data**.
-
-1. On the **Get Data** page, select **Samples**.
-
-1. Select **Retail Analysis Sample** > **Connect**.
-
-1. When the sample is available, select **View dataset**.
-
-Now that you have the **Retail Analysis Sample** dataset in front of you, you can get started.
+After you get the **Retail Analysis Sample** dataset, you can get started.
 
 ## Create a table
 
 You'll create the table pictured at the beginning of the article to display sales values by item category.
+
+1. From **My Workspace**, select **Datasets** > **Create a report**.
+
+    ![Screenshot of Datasets > Create a report.](media/power-bi-visualization-tables/power-bi-create-a-report.png)
 
 1. From the **Fields** pane, select **Item** > **Category**.
 

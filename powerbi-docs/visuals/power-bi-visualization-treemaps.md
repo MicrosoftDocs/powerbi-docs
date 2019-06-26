@@ -17,13 +17,13 @@ LocalizationGroup: Visualizations
 
 Treemaps display hierarchical data as a set of nested rectangles. Each level of the hierarchy is represented by a colored rectangle (branch) containing smaller rectangles (leaves). Power BI bases the size of the space inside each rectangle on the measured value. The rectangles are arranged in size from top left (largest) to bottom right (smallest).
 
-![Screenshot of a Count of Product by Category, and Manufacturer treemap.](media/power-bi-visualization-treemaps/pbi-nancy_viz_treemap.png)
+![Screenshot of a Count of Product by Category, and Manufacturer treemap.](media/power-bi-visualization-treemaps/pbi-nancy-viz-treemap.png)
 
-For example, if you're analyzing your sales, you might have top-level branches, for the clothing categories: **Urban**, **Rural**, **Youth**, and **Mix**. Power BI would split your category rectangles into leaves, for the clothing manufacturers within that category. These leaves would be sized and shaded based on the number sold.
+For example, if you're analyzing your sales, you might have top-level branches for the clothing categories: **Urban**, **Rural**, **Youth**, and **Mix**. Power BI would split your category rectangles into leaves, for the clothing manufacturers within that category. These leaves would be sized and shaded based on the number sold.
 
-In the **Urban** branch above, lots of **Maximus** clothing was sold. Less **Natura** and **Fama** was sold. Only a few **Leo** were sold. So, the **Urban** branch of your Treemap has:
+In the **Urban** branch above, lots of **VanArsdel** clothing was sold. Less **Natura** and **Fama** was sold. Only a few **Leo** were sold. So, the **Urban** branch of your Treemap has:
 
-* The largest rectangle for **Maximus** in the top-left corner.
+* The largest rectangle for **VanArsdel** in the top-left corner.
 
 * Slightly smaller rectangles for **Natura** and **Fama**.
 
@@ -61,31 +61,17 @@ Treemaps are a great choice:
 
 ## Get the Retail Analysis Sample report
 
-These instructions use the Retail Analysis Sample. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If someone shares a report with you, you can't create visualizations in reports. To follow along, get the **Retail Analysis Sample** report:
+These instructions use the Retail Analysis Sample. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If someone shares a report with you, you can't create visualizations in reports. To follow along, get the [Retail Analysis Sample report](../sample-datasets).
 
-1. Sign in to the Power BI service.
-
-1. In the lower-left corner, select **Get Data**.
-
-1. On the **Get Data** page, select **Samples**.
-
-1. Select **Retail Analysis Sample** > **Connect**.
-
-1. When the sample is available, in the left navigation pane, expand **My Workspace**.
-
-1. Under **Dashboards**, select **Retail Analysis Sample**.
-
-Now that you have the **Retail Analysis Sample** dashboard is in front of you, you can get started.
+After you get the **Retail Analysis Sample** dataset, you can get started.
 
 ## Create a basic treemap
 
-You'll edit a report to add a basic treemap.
+You'll create a report and add a basic treemap.
 
-1. Select the **Total stores** tile to open the **Store Sales Overview** report.
+1. From **My Workspace**, select **Datasets** > **Create a report**.
 
-1. Select  [Edit report](../service-interact-with-a-report-in-editing-view.md).
-
-1. Select ![Screenshot of the yellow plus icon](media/power-bi-visualization-treemaps/treemap-yellow-plus-icon.png) to open a new page in the report.
+    ![Screenshot of Datasets > Create a report.](media/power-bi-visualization-treemaps/power-bi-create-a-report.png)
 
 1. From the **Fields** pane, select the **Sales** > **Last Year Sales** measure.
 
@@ -124,7 +110,7 @@ For information about using the **Filters** pane, see [Add a filter to a report]
 
 Highlighting a **Category** or **Detail** in a treemap cross-highlights and cross-filters the other visualizations on the report page and the other way around. To follow along, either add some visuals to this report page or copy the treemap to one of the other pages in this report.
 
-1. On the treemap, select either a **Category** or a **Chain** within a **Category**. That will cross-highlight the other visualizations on the page. Selecting **050-Shoes**, for example, shows me that last year's sales for shoes was **$3,640,471** with **Fashions Direct** accounting for **$2,174,185** of those sales.
+1. On the treemap, select either a **Category** or a **Chain** within a **Category**. That will cross-highlight the other visualizations on the page. Selecting **050-Shoes**, for example, shows you that last year's sales for shoes was **$3,640,471** with **Fashions Direct** accounting for **$2,174,185** of those sales.
 
    ![Screenshot of the Store Sales Overview report showing cross-highlighting.](media/power-bi-visualization-treemaps/treemaphiliting.png)
 
