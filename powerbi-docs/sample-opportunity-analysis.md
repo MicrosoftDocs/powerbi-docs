@@ -8,20 +8,19 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 06/26/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
 ---
 # Opportunity Analysis sample for Power BI: Take a tour
 
-## Overview of the Opportunity Analysis sample
 The Opportunity Analysis sample content pack contains a dashboard, report, and dataset for a software company that has two sales channels: *direct* and *partner*. The sales manager created this dashboard to track opportunities and revenue by region, deal size, and channel.
 
 This sample relies on two measures of revenue:
 
-* Estimated revenue: A salesperson’s estimate of what the revenue will be.
-* Factored revenue: Calculated as revenue X probability% and is accepted as being a more-accurate predictor of actual sales revenue. Probability is determined by the deal’s current *sales stage*.
+* Revenue: A salesperson’s estimate of what the revenue will be.
+* Factored revenue: Calculated as revenue X probability% and is accepted as being a more-accurate predictor of actual sales revenue. Probability is determined by the deal’s current *sales stage*:
   * Lead: 10%  
   * Qualify: 20%  
   * Solution: 40%  
@@ -68,55 +67,66 @@ Our sales manager has created a dashboard to track those metrics most important 
 - Company revenue is $2 billion and factored revenue is $461 million.
 - Opportunity count and revenue follow a familiar funnel pattern, with totals decreasing with each subsequent stage.
 - Most of our opportunities are in the East region.
-- The large opportunities generate more revenue than the medium or small opportunities.
-- Large partner deals generate more revenue: $8M on average versus $6M for direct sales.
+- Large opportunities generate more revenue than medium or small opportunities.
+- Large partner deals generate more revenue: $8 million on average versus $6 million for direct sales.
 
 Because the effort to land a deal is the same whether the deal is classified as large, medium, or small, our company should analyze the data to learn more about large opportunities.
 
-Select the **Opportunity Count by Partner Driven, Sales Stage** tile to open page 1 of the report.  
-![](media/sample-opportunity-analysis/opportunity2.png)
+Select the **Opportunity Count by Partner Driven, Sales Stage** tile to open the first page of the Opportunity Analysis Sample Report. 
+
+![Opportunity Count by Partner Driven, Sales Stage tile](media/sample-opportunity-analysis/opportunity2.png)
 
 ## Explore the pages in the report
-### Page 1: “Opportunity Count Overview”
-![](media/sample-opportunity-analysis/opportunity3.png)
 
+View each page in the report by selecting a page tab at the bottom.
+
+### Opportunity Count page
+![Opportunity Count page](media/sample-opportunity-analysis/opportunity3.png)
+
+Note the following details:
 * East is our biggest region in terms of opportunity counts.  
-* On the pie chart, select each region one at a time to filter the page. For each region, partners are pursuing significantly more large opportunities.   
-* The Opportunity Count by Partner Driven and Opportunity Size column chart clearly shows that most of the large opportunities are partner-driven and more of the small and medium opportunities are not partner-driven.
-* Select each Sales Stage in the bar chart in the bottom left to see the difference in regional count and notice that even though East is our biggest region in terms of counts, in the Solution, Proposal and Finalize stages all 3 regions have comparable counts. This means we close a higher percent of deals in Central and West.
+* On the **Opportunity Count by Region** pie chart, select each region in turn to filter the page by region. For each region, partners are pursuing significantly more large opportunities.   
+* The **Opportunity Count by Partner Driven and Opportunity Size** column chart shows that most of the large opportunities are partner-driven while most of the small and medium opportunities are not.
+* In the **Opportunity Count by Sales Stage** bar chart, select each **Sales Stage** in turn to see the difference in regional count. Notice that although the East region has the largest opportunity count, all three regions in the Solution, Proposal, and Finalize sales stages have comparable counts. This result means we close a higher percent of deals in the Central and West regions.
 
-### Page 2: “Revenue Overview”
-This page takes a similar look at the data but using a revenue perspective instead of count.  
-![](media/sample-opportunity-analysis/opportunity4.png)
+### Revenue Overview page
+This page takes a similar look at the data, but uses a revenue perspective instead of count.  
 
-* East is our biggest region not only in opportunity count but in revenue also.  
-* Filtering by Partner driven (select **Yes** in the legend in the top right) reveals revenue of $1.5B and $294M. Compare this to $644B and $166M for non-partner driven revenue.  
-* Average revenue for large accounts is larger (8M) if the opportunity is partner driven as compared to 6M for non-partner driven business.  
-* For partner driven business, average revenue for large opportunities is almost double that of medium-sized opportunities (4M).  
+![Revenue Overview page](media/sample-opportunity-analysis/opportunity4.png)
+
+Note the following details:
+* East is our biggest region, not only in opportunity count but also in revenue.  
+* If you filter the **Revenue by Sales Stage and Partner Driven** chart by selecting **Yes** for **Partner Driven**, you see a revenue of $1.5 billion and a factored revenue of $294 million. Compare these amounts to $644 million and $166 million for non-partner driven revenue. 
+* Average revenue for large accounts is larger at 8 million if the opportunity is partner driven, compared to 6 million for non-partner driven business.  
+* For partner driven businesses, average revenue for large-sized opportunities is almost double that of medium-sized opportunities.  
 * Average revenue for small and medium businesses is comparable for both partner driven and non-partner driven business.   
 
-Clearly our partners are doing a better job selling to customers.  It might make sense to funnel more deals through our partners.
+Clearly our partners are doing a better job than non-partners selling to customers. It might make sense to funnel more deals through our partners.
 
-### Page 3: "Region Stage Counts"
-This page looks at similar data but breaks it down by region and stage.  
-![](media/sample-opportunity-analysis/opportunity5.png)
+### Region Stage Counts page
+This page of the report looks at similar data as the previous page but breaks it down by region and stage. 
 
-* If you select **East** in the pie chart to filter by the East region, you see that the opportunities in this region are split almost equally between partner driven and non-partner driven.
+![Region Stage Counts page](media/sample-opportunity-analysis/opportunity5.png)
+
+Note the following details:
+* If you select **East** in the **Opportunity Count by Region** pie chart to filter by the East region, you see that the opportunities in this region are split almost equally between partner driven and non-partner driven.
 * Large opportunities are most common in the Central region, small opportunities are most common in the East region, and medium opportunities are most common in the West region.
 
-### Page 4: “Upcoming Opportunities”
-Again, we’re looking at similar factors, but in this case it's from a date/time perspective.  
-![](media/sample-opportunity-analysis/opportunity6.png)
+### Upcoming Opportunities page
+For this page we’re looking at similar factors, but from a date/time perspective. 
+ 
+![Upcoming Opportunities page](media/sample-opportunity-analysis/opportunity6.png)
 
 Our CFO uses this page to manage workload. By looking at the revenue opportunities by sales stage and month, she can plan appropriately.
 
-* Average revenue for the Finalize stage is the highest. Closing these deals is a top priority.
-* Filtering by month (by selecting the month name in the left slicer) shows that January has a high proportion of large deals in the Finalize stage with a factored revenue of $75M. February, on the other hand, has mostly medium deals in the Solution and Proposal stage.
-* In general, the factored revenue numbers fluctuate based on sales stage, number of opportunities, and deal size. Add filters for these factors by using the filter pane on the right to discover further insights.
+Note the following details:
+* Average revenue for the Finalize sales stage is the highest. Closing these deals is a top priority.
+* If you filter by month (by selecting a month in the **Month** slicer), you see that January has a high proportion of large deals in the Finalize sales stage with a factored revenue of $75 million. February, on the other hand, has mostly medium deals in the Solution and Proposal sales stages.
+* In general, the factored revenue numbers fluctuate based on sales stage, number of opportunities, and deal size. Add filters for these factors by using the **Filter** pane on the right to discover further insights.
 
-This is a safe environment to play in. You can always choose not to save your changes. But if you do save them, you can always go to **Get Data** for a new copy of this sample.
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
 
 ## Next steps: Connect to your data
-We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into opportunity tracking data. Now it’s your turn — connect to your own data. With Power BI, you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](service-get-started.md).
+We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into opportunity tracking data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](service-get-started.md).
 
 [Download samples](sample-datasets.md)  
