@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 06/26/2019
 ms.author: tebercov
 ---
 
@@ -31,12 +31,10 @@ For template apps, queries developed in Power BI Desktop are used to connect to 
 ### Connect to your API
 To get started, you need to connect to your API from Power BI Desktop to start building your queries.
 
-You can use the Data Connectors that are available out of the box in Power BI Desktop to connect to your API. You can use the Web Data Connector (Get Data -> Web) to connect to your Rest API or the OData connector (Get Data -> OData feed) to connect to your OData feed. These connectors work out of the box only if your API supports Basic Authentication.
+You can use the Data Connectors that are available in Power BI Desktop to connect to your API. You can use the Web Data Connector (Get Data -> Web) to connect to your Rest API or the OData connector (Get Data -> OData feed) to connect to your OData feed.
 
 > [!NOTE]
-> If your API uses any other authentication types, like OAuth 2.0 or Web API Key, then you need to develop your own Data Connector to allow Power BI Desktop to successfully connect and authenticate to your API. Your custom connector must be added to PBI service for it to be accessed by Template app installer. <br> For details on how to develop your own Data Connector for your template app, check the [Data Connectors documentation](https://aka.ms/DataConnectors). 
->
->
+> Currently template apps do not support custom connectors, it is recommended to explore using Odatafeed Auth 2.0 as a mitigation for some of the connection use-cases or to submit your connector for certification. For details on how to develop a connector and certify it check the [Data Connectors documentation](https://aka.ms/DataConnectors).
 
 ### Consider the source
 The queries define the data that's included in the data model. Depending on the size of your system, these queries should also include filters to ensure your customers are dealing with a manageable size that fits your business scenario.

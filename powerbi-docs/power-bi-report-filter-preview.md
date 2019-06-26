@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/16/2019
+ms.date: 06/25/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -238,6 +238,7 @@ Give the new filter experience a try. Give us your feedback for this feature, an
 
 - [How to use report filters](consumer/end-user-report-filter.md)
 - [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
+- [Different kinds of filters in Power BI](power-bi-report-filter-types.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
