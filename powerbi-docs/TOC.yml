@@ -705,14 +705,14 @@
       items: 
       - name: "Forgot your password for Power BI?"
         href: service-admin-forgot-your-password.md
+      - name: "Can't sign in?"
+        href: power-bi-cannot-sign-in.md
       - name: "Capturing additional diagnostic information for Power BI"
         href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
       - name: "Alternate email address for Power BI"
         href: service-admin-alternate-email-address-for-power-bi.md
       - name: "How to use the same account login for Power BI and Azure"
         href: service-admin-how-to-use-the-same-account-as-azure.md
-      - name: "Can't sign in"
-        href: power-bi-cannot-sign-in.md
       - name: "Office 365 dedicated - known issues"
         href: service-admin-office-365-dedicated-known-issues.md
       - name: "Troubleshoot refresh scenarios"
@@ -860,7 +860,7 @@
   - name: Reference
     items:
     - name: "Supported languages and countries/regions"
-    href: supported-languages-countries-regions.md
+      href: supported-languages-countries-regions.md
   - name: Resources
     items:
     - name: Whitepapers
