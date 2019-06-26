@@ -20,10 +20,8 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 Use Q&A to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. Q&A is different from a search engine -- Q&A only provides results about the data in Power BI.
 
-**Power BI Q&A** only supports answering natural language queries asked in English. There is a preview available for Spanish that can be enabled by your Power BI administrator.
+**Power BI Q&A** is available with a Pro or Premium license.  [Q&A in the Power BI mobile apps](mobile/mobile-apps-ios-qna.md) and [Q&A with Power BI Embedded](../developer/qanda.md) are covered in separate articles. At the current time, **Power BI Q&A** only supports answering natural language queries asked in English, although there is a preview available for Spanish that can be enabled by your Power BI administrator.
 
-**Power BI Q&A** is available with a Pro or Premium license.  [Q&A in the Power BI mobile apps](mobile/mobile-apps-ios-qna.md) and [Q&A with Power BI Embedded](../developer/qanda.md) are covered in separate articles.
->
 
 ![q&a created treemap](media/end-user-q-and-a/power-bi-treemap.png)
 
@@ -55,7 +53,7 @@ Once you're familiar with the data, head back to the dashboard  and place your c
 
 ![Q&A screen](media/end-user-q-and-a/power-bi-screen.png) 
 
-Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and complete questions containing the names of the tables in the underlying datasets and may even see complete questions listed if the dataset owner has created featured questions.
+Even before you start typing, Q&A displays a new screen with suggestions to help you form your question. You see phrases and questions containing the names of the tables in the underlying datasets and may even see *featured** questions created by the dataset owner .
 
 You can select any of these to add them to the question box and then refine them to find a specific answer. 
 
