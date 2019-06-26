@@ -1,6 +1,6 @@
 ---
 title: Data view mappings
-description: How Power BI transforms data before passing into the visual
+description: How Power BI transforms data before passing into the visuals
 author: asander
 ms.author: asander
 manager: AviSander
@@ -62,7 +62,7 @@ Currently, for each field you can specify a min and max value. It represents the
 > [!NOTE]
 > If a data role is omitted in the condition, it can have any number of fields.
 
-**Example 1**
+### Example 1
 
 You can drag multiple fields into each data role. In this example, we limit category to one data field and measure to two data fields.
 
@@ -72,7 +72,7 @@ You can drag multiple fields into each data role. In this example, we limit cate
 ]
 ```
 
-**Example 2**
+### Example 2
 
 In this example, one of two conditions is required. Either exactly one category data field and exactly two measures, or exactly two categories and exactly one measure.
 
@@ -92,7 +92,7 @@ To use single data mapping, you need to define the name of the data role you wan
 > [!NOTE]
 > This data mapping cannot be used in conjunction with any other data mapping. It's meant to reduce data into a single numeric value.
 
-**Example**
+### Example 3
 
 ```json
 "dataViewMappings": {
@@ -107,14 +107,31 @@ To use single data mapping, you need to define the name of the data role you wan
 
 The resulting data view will still contain the other types (table, categorical, so on), but each mapping will only contain the single value. Best practice is to just access the value in single.
 
-![](./media/DataViewMappingResultSingle.png)
+```JSON
+{
+    "dataView": [
+        {
+            "metadata": null,
+            "categorical": null,
+            "matrix": null,
+            "table": null,
+            "tree": null,
+            "single": {
+                "value": 94163140.3560001
+            }
+        }
+    ]
+}
+```
 
 ## Categorical Data Mapping
 
 Categorical data mapping is used to get one or two independent groupings of data.
 
-**Example 1**
+### Example 4
+
 Here is the definition from our previous example on DataRoles.
+
 ```json
 "dataRole":[
     {
@@ -129,7 +146,9 @@ Here is the definition from our previous example on DataRoles.
     }
 ]
 ```
+
 Now for the mapping:
+
 ```json
 "dataViewMappings": {
     "categorical": {
@@ -144,14 +163,16 @@ Now for the mapping:
     }
 }
 ```
+
 It's a simple example, in plain english it reads "Map my `category` DataRole so that for every field I drag into `category`, its data is mapped to `categorical.categories`. Also map my `measure` DataRole to `categorical.values`."
 
 * **for...in** - For all the items in this data role, include them in the data query.
 * **bind...to** - Produces the same result as for...in, but expects that the DataRole will have a condition restricting it to a single field.
 
-**Example2**
+### Example 5
 
 In this example, we'll use the first two DataRoles from the previous example, additionally defining `grouping` and `measure2`.
+
 ```json
 "dataRole":[
     {
@@ -176,7 +197,9 @@ In this example, we'll use the first two DataRoles from the previous example, ad
     }
 ]
 ```
-Now for the mapping: 
+
+Now for the mapping:
+
 ```json
 "dataViewMappings":{
     "categorical": {
@@ -195,10 +218,13 @@ Now for the mapping:
     }
 }
 ```
-Here the difference is in how we are mapping categorical.values. We are saying "Map my `measure` and `measure2` Data roles to be grouped by the Data role `grouping`." 
 
-**Example3**
+Here the difference is in how we are mapping categorical.values. We are saying "Map my `measure` and `measure2` Data roles to be grouped by the Data role `grouping`."
+
+### Example 6
+
 Here are the dataRoles.
+
 ```json
 "dataRoles": [
     {
@@ -220,6 +246,7 @@ Here are the dataRoles.
 ```
 
 Here is the dataViewMapping.
+
 ```json
 "dataViewMappings": [
     {
@@ -246,20 +273,94 @@ Here is the dataViewMapping.
 ```
 
 The categorical `dataview` could be visualized like this.
-![](./media/CategoricalData.png)
+
+| Categorical |  |  | | | |
+|-----|-----|------|------|------|------|
+| | Year | 2013 | 2014 | 2015 | 2016 |
+| Country | | |
+| USA | | x | x | 125 | 100 |
+| Canada | | x | 50 | 200 | x |
+| Mexico | | 300 | x | x | x |
+| UK | | x | x | 75 | x |
 
 Power BI will produce you it as the categorical dataview. It's the set of categories.
-![](./media/CategoricalDataView.png)
+
+```JSON
+{
+    "categorical": {
+        "categories": [
+            {
+                "source": {...},
+                "values": [
+                    "Canada",
+                    "Mexico",
+                    "UK",
+                    "USA"
+                ],
+                "identity": [...],
+                "identityFields": [...],
+            }
+        ]
+    }
+}
+```
 
 Each category maps to a set of values as well. Each of these values is grouped by series, which is years.
-For example, Canada sales in 2013 is null, Canada sales in 2014 is 50.  
-![](./media/CategoricalValuesDataView.png)
 
+For example, Canada sales in 2013 is null, Canada sales in 2014 is 50.
+
+```JSON
+{
+    "values": [
+        {
+            "source": {...},
+            "values": [
+                null,
+                300,
+                null,
+                null
+            ],
+            "identity": [...],
+        },
+        {
+            "source": {...},
+            "values": [
+                50,
+                null,
+                150,
+                null
+            ],
+            "identity": [...],
+        },
+        {
+            "source": {...},
+            "values": [
+                200,
+                null,
+                null,
+                125
+            ],
+            "identity": [...],
+        },
+        {
+            "source": {...},
+            "values": [
+                null,
+                null,
+                null,
+                100
+            ],
+            "identity": [...],
+        }
+    ]
+}
+```
 
 ## Table Data Mapping
+
 The table data view is a simple data mapping. Essentially, it's a list of data points, where numeric data points could be aggregated.
 
-**Example1**
+### Example 7
 
 With the given capabilities:
 
@@ -288,13 +389,67 @@ With the given capabilities:
 ```
 
 The table `dataview` could be visualized like this.  
-![](./media/TableData.png)
+
+| Country| Year | Sales |
+|-----|-----|------|
+| USA | 2016 | 100 |
+| USA | 2015 | 50 |
+| Canada | 2015 | 200 |
+| Canada | 2015 | 50 |
+| Mexico | 2013 | 300 |
+| UK | 2014 | 150 |
+| USA | 2015 | 75 |
 
 Power BI will produce you are as the table dataview. Don't assume there's an ordering.
-![](./media/TableDataView.png)
+
+```JSON
+{
+    "table" : {
+        "columns": [...],
+        "rows": [
+            [
+                "Canada",
+                2014,
+                50
+            ],
+            [
+                "Canada",
+                2015,
+                200
+            ],
+            [
+                "Mexico",
+                2013,
+                300
+            ],
+            [
+                "UK",
+                2014,
+                150
+            ],
+            [
+                "USA",
+                2015,
+                100
+            ],
+            [
+                "USA",
+                2015,
+                75
+            ],
+            [
+                "USA",
+                2016,
+                100
+            ]
+        ]
+    }
+}
+```
 
 The data can be aggregated by selecting the desired field and clicking sum.  
-![](./media/DataAggregation.png)
+
+![Data aggregation](./media/data-aggregation.png)
 
 ## Matrix Data Mapping
 
@@ -375,9 +530,9 @@ Dataset:
 
 Core Matrix visual of Power BI renders it like a table.
 
-![Matrix visual](./media/MatrixVisualSmaple.png)
+![Matrix visual](./media/matrix-visual-smaple.png)
 
-The visual gets data structure as described below (only the first two rows are presented): 
+The visual gets data structure as described below (only the first two rows are presented):
 
 ```json
 {
@@ -457,6 +612,7 @@ The visual gets data structure as described below (only the first two rows are p
 A `DataReductionAlgorithm` can be applied if you want to control the amount of data received in the DataView.
 
 By default all Custom Visuals have the top DataReductionAlgorithm applied with the "count" set to 1000 dataPoints. It's equivalent to setting the following properties in the capabilities.json:
+
 ```json
 "dataReductionAlgorithm": {
     "top": {
@@ -464,11 +620,13 @@ By default all Custom Visuals have the top DataReductionAlgorithm applied with t
     }
 }
 ```
+
 You can modify the 'count' value to any integer value up to 30000. R-based custom visuals can support up to 150000 rows.
 
-## Data Reduction Algorithm types 
+## Data Reduction Algorithm types
 
 There are four types of `DataReductionAlgorithm` settings:
+
 * `top` - if you want to limit the data to values taken from the top of the dataset. The top first "count" values will be taken from the data set.
 * `bottom` - if you want to limit the data to values taken from the bottom of the dataset. The last "count" values will be taken from the data set.
 * `sample` - reduce the dataset by a simple sampling algorithm limited to a "count" number of items. 
@@ -482,7 +640,8 @@ For example if you got a data set [0, 1, 2, ... 100] and a `count: 9` then you'l
 
 It can be set into `categories` and/or group section of `values` for categorical data mapping.
 
-**Example 1**
+### Example 8
+
 ```json
 "dataViewMappings": {
     "categorical": {
@@ -492,7 +651,7 @@ It can be set into `categories` and/or group section of `values` for categorical
                 "window": {
                     "count": 300
                 }
-            }   
+            }  
         },
         "values": {
             "group": {
@@ -516,7 +675,8 @@ It can be set into `categories` and/or group section of `values` for categorical
 
 The data reduction algorithm can be applied to the `rows` section of table `dataview` mapping.
 
-**Example 2**
+### Example 9
+
 ```json
 "dataViewMappings": [
     {

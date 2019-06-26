@@ -1,6 +1,6 @@
 ---
 title: Object and properties
-description: Customizable properties of the visual
+description: Customizable properties of Power BI Visual
 author: MrMeison
 ms.author: rasala
 manager: AviSander
@@ -29,9 +29,11 @@ Types refer to what the property will be. See below for more information about t
 ```
 
 ## Display Name
+
 `displayName` is the name that will be shown in the property pane.
 
 ## Properties
+
 `properties` is a map of properties defined by the developer.
 
 ```json
@@ -57,11 +59,12 @@ Example:
 }
 ```
 
-### Property Types
+### Property types
 
 There are two types of property types: `ValueTypeDescriptor` and `StructuralTypeDescriptor`.
 
 #### Value Type Descriptor
+
 `ValueTypeDescriptor` are mostly primitive types and are typically used as a static object.
 Here are some of the common `ValueTypeDescriptor`
 
@@ -75,6 +78,7 @@ export interface ValueTypeDescriptor {
 ```
 
 #### Structural Type Descriptor
+
 `StructuralTypeDescriptor` are mostly used for data bound objects.
 Fill is the most common `StructuralTypeDescriptor`
 
@@ -85,6 +89,7 @@ export interface StructuralTypeDescriptor {
 ```
 
 ## Gradient property
+
 The gradient property is a property that cannot be set as a standard property. Instead, you need to set a rule for substitution of the color picker property (fill type).
 See the example below:
 
@@ -126,6 +131,7 @@ See the example below:
     }
 }
 ```
+
 Pay attention to the `"fill"` and `"fillRule"` properties. The first is the color picker, the second is the substitution rule for gradient that will substitute the "fill" property `visually` when the rule conditions will be met.
 
 This link between the fill property and the substitution rule is set in `"rule"`->`"output"` section of the `"fillRule"` property.
@@ -135,32 +141,36 @@ This link between the fill property and the substitution rule is set in `"rule"`
 Below you can see an example of the data role that triggers the fill rule (`the last item`).
 
 ```json
-"dataRoles": [
-        {
-            "name": "Category",
-            "kind": "Grouping",
-            "displayName": "Details",
-            "displayNameKey": "Role_DisplayName_Details"
-        },
-        {
-            "name": "Series",
-            "kind": "Grouping",
-            "displayName": "Legend",
-            "displayNameKey": "Role_DisplayName_Legend"
-        },
-        {
-            "name": "Gradient",
-            "kind": "Measure",
-            "displayName": "Color saturation",
-            "displayNameKey": "Role_DisplayName_Gradient"
-        }
-]
+{
+    "dataRoles": [
+            {
+                "name": "Category",
+                "kind": "Grouping",
+                "displayName": "Details",
+                "displayNameKey": "Role_DisplayName_Details"
+            },
+            {
+                "name": "Series",
+                "kind": "Grouping",
+                "displayName": "Legend",
+                "displayNameKey": "Role_DisplayName_Legend"
+            },
+            {
+                "name": "Gradient",
+                "kind": "Measure",
+                "displayName": "Color saturation",
+                "displayNameKey": "Role_DisplayName_Gradient"
+            }
+    ]
+}
 ```
 
-## enumerateObjectInstances
+## `enumerateObjectInstances` method
+
 To use objects effectively, you'll need a function in your custom visual called `enumerateObjectInstances`. This function will populate the property pane with objects and will also determine where your objects should be bound within the dataView.  
 
 Here is what a typical setup looks like:
+
 ```typescript
 public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration {
     let objectName: string = options.objectName;
@@ -180,25 +190,34 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 }
 ```
 
-## properties
-The properties in `enumerateObjectInstances` will reflect the properties you defined in your capabilities. See example at bottom of page. 
+### Properties
 
-## selector
-The selector in `enumerateObjectInstances` determines where each object will be bound in the dataView. There are four distinct options. 
+The properties in `enumerateObjectInstances` will reflect the properties you defined in your capabilities. See example at bottom of page.
 
-#### static 
+### Objects selector
+
+The selector in `enumerateObjectInstances` determines where each object will be bound in the dataView. There are four distinct options.
+
+#### static
+
 This object will be bound to metadata `dataviews[index].metadata.objects`
+
 ```typescript
-selector: null 
+selector: null
 ```
-#### columns 
-This object will be bound to columns with the matching `QueryName`. 
+
+#### columns
+
+This object will be bound to columns with the matching `QueryName`.
+
 ```typescript
 selector: {
     metadata: 'QueryName'
 }
 ```
-#### selector 
+
+#### selector
+
 This object will be bound to the element we have created a `selectionID` for. In this example, we'll assume that we have created `selectionID`'s for some dataPoints, and we're looping through them.
 
 ```typescript
@@ -207,7 +226,9 @@ for (let dataPoint in dataPoints) {
     selector: dataPoint.selectionID.getSelector()
 }
 ```
-#### scope identity 
+
+#### Scope identity
+
 This object will be bound to particular values at the intersection of groups. For example, if I have categories `["Jan", "Feb", "March", ...]` and series `["Small", "Medium", "Large"]`, I may want to have an object on the intersection of values matching `Feb` and `Large`. To accomplish this I could get the `DataViewScopeIdentity` of both columns, push them to variable `identities`, and use this syntax with the selector.
 
 ```typescript
@@ -216,8 +237,10 @@ selector: {
 }
 ```
 
-## Example:
+##### Example
+
 In this example, we show what one objectEnumeration would look like for a customColor object with one property `fill`. We want this object bound statically to `dataViews[index].metadata.objects`
+
 ```typescript
 objectEnumeration.push({
     objectName: "customColor",

@@ -1,6 +1,6 @@
 ---
 title: Fetch more data
-description: Enable segmented fetch of large datasets
+description: Enable segmented fetch of large datasets for Power BI Visuals
 author: AviSander
 ms.author: asander
 manager: AviSander
@@ -18,32 +18,34 @@ Load more data API overcome the hard limit of 30-K data point. It brings data in
 ## Enable segmented fetch of large datasets
 
 For `dataview` segment mode, define a "window" dataReductionAlgorithm in the visual's `capabilities.json` for the required dataViewMapping.
-The `count` will determine the window size, which limits the number of new data rows appended to the `dataview` in each update. 
+The `count` will determine the window size, which limits the number of new data rows appended to the `dataview` in each update.
 
-To be added in capabilities.json 
- 
+To be added in capabilities.json
+
 ```typescript
 "dataViewMappings": [
-    { 
-        "table": { 
-            "rows": { 
+    {
+        "table": {
+            "rows": {
                 "for": {
                     "in": "values"
-                }, 
-                "dataReductionAlgorithm": { 
-                    "window": { 
-                        "count": 100 
-                    } 
-                } 
-            } 
+                },
+                "dataReductionAlgorithm": {
+                    "window": {
+                        "count": 100
+                    }
+                }
+            }
     }
-] 
+]
 ```
+
 New segments are appended to the existing `dataview` and provided to the visual as an `update` call.
 
 ## Usage in the custom visual
 
-The indication data exists or not can be determined by checking the existence of `dataView.metadata.segment`: 
+The indication data exists or not can be determined by checking the existence of `dataView.metadata.segment`:
+
 ```typescript
     public update(options: VisualUpdateOptions) {
         const dataView = options.dataViews[0];
@@ -57,37 +59,38 @@ It's also possible to check whether it's the first or subsequent update by check
 `VisualDataChangeOperationKind.Create` means the first segment, and `VisualDataChangeOperationKind.Append` means subsequent segments.
 
 See the code snippet below for a sample implementation:
+
 ```typescript
 // CV update implementation
 public update(options: VisualUpdateOptions) {
-	// indicates this is the first segment of new data.
-	if (options.operationKind == VisualDataChangeOperationKind.Create) {
+    // indicates this is the first segment of new data.
+    if (options.operationKind == VisualDataChangeOperationKind.Create) {
 
-	} 
+    }
 
-	// on second or subesquent segments:
-	if (options.operationKind == VisualDataChangeOperationKind.Append) {
+    // on second or subesquent segments:
+    if (options.operationKind == VisualDataChangeOperationKind.Append) {
 
-	}
+    }
 
-	// complete update implementation
+    // complete update implementation
 }
 ```
 
 The `fetchMoreData` method could also be invoked from a UI event handler
+
 ```typescript
 btn_click(){
 {
-	// check if more data is expected for the current dataview
-	if (dataView.metadata.segment) {
-		//request for more data if available, as resopnce Power BI will call update method
-		let request_accepted: bool = this.host.fetchMoreData();
-		// handle rejection
-		if (!request_accepted) {
-			// for example when the 100 MB limit has been reached
-		}
-	}
-
+    // check if more data is expected for the current dataview
+    if (dataView.metadata.segment) {
+        //request for more data if available, as resopnce Power BI will call update method
+        let request_accepted: bool = this.host.fetchMoreData();
+        // handle rejection
+        if (!request_accepted) {
+            // for example when the 100 MB limit has been reached
+        }
+    }
 }
 ```
 

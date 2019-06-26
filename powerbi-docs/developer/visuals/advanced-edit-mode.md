@@ -1,6 +1,6 @@
 ---
 title: Advanced Edit Mode
-description: Visuals that require advanced UI controls can declare support of Advanced Edit Mode
+description: Power BI Visuals with advanced UI controls
 author: shaym83
 ms.author: shaym
 manager: AviSander
@@ -12,7 +12,6 @@ ms.date: 06/18/2019
 ---
 
 # Advanced Edit Mode
-
 
 Visuals that require advanced UI controls can declare support of Advanced Edit Mode.
 If supported, when in report editing mode, an `Edit` button will appear in the visual's menu.
@@ -31,15 +30,17 @@ The possible values are:
 - 2 - SupportedInFocus
 
 ## Entering Advanced Edit Mode
+
 `Edit` button will be visible if:
-- 1 - `advancedEditModeSupport` property set in capabilities.json to either `SupportedNoAction` or `SupportedInFocus`
-- 2 - The visual is viewed in report editing mode.
+- 1- `advancedEditModeSupport` property set in capabilities.json to either `SupportedNoAction` or `SupportedInFocus`
+- 2- The visual is viewed in report editing mode.
+
 If `advancedEditModeSupport` property is missing from capabilities.json, or set to `NotSupported`, the 'Edit' button will disappear.
 
-
-![Enter edit mode](./media/EditMode.png)
+![Enter edit mode](./media/edit-mode.png)
 
 When the user clicks on `Edit`, the visual will get an update() call with EditMode set to `Advanced`.
 According to the value set in the capabilities, the following actions will occur:
+
 * `SupportedNoAction` - No further action by the host.
 * `SupportedInFocus` - The host pops out the visual into in focus mode.

@@ -1,6 +1,6 @@
 ---
 title: Launch URL
-description: Visuals can open URL on new tab
+description: Power BI Visuals can open URL on new tab
 author: Guy-Moses
 ms.author: guymos
 manager: AviSander
@@ -15,20 +15,14 @@ ms.date: 06/18/2019
 
 Launch URL allows opening a new browser tab (or window), by delegating the actual work to Power BI.
 
-#### Parameters
-
-| Name | Type | Description |
-|---|---|---|
-| url | string | external weblink |
-
-#### Sample
+## Sample
 
 ```typescript
    this.host.launchUrl('https://powerbi.microsoft.com');
 ```
 
-
 ## Usage
+
 Use the `host.launchUrl()` API call, passing your destination URL as a string argument:
 
 ```typescript
@@ -36,22 +30,29 @@ this.host.launchUrl('http://some.link.net');
 ```
 
 ## Restrictions
+
 * Use only absolute paths, not relative ones. `http://some.link.net/subfolder/page.html` is fine, `/page.html` won't be opened.
 * Currently only `http` and `https` protocols are supported. Avoid `ftp`, `mailto` so on.
 
 ## Best practices
+
 1. For most cases, it's best to only open a link as a response to a user's explicit action. Make it easy for the user to understand that clicking the link or button will result in opening a new tab. Triggering a `launchUrl()` call without a user's action, or as a side effect of a different action can be confusing or frustrating for the user.
 2. If the link is not crucial for the proper functioning of the visual, it's recommanded to provide the report's author a way to disable and hide the link. This is especially relevant for special Power BI use-cases, such as embedding a report in a third party application or publishing it to the web.
 3. Avoid Triggering a `launchUrl()` call from inside a loop, the visual's `update` function, or any other frequently recurring code.
 
 ## Step by step example
+
 ### Adding a link launching element
+
 The following lines were added to the visual's `constructor` function:
+
 ```typescript
     this.helpLinkElement = this.createHelpLinkElement();
     options.element.appendChild(this.helpLinkElement);
 ```
+
 And, a private function creating and attaching the anchor element was added:
+
 ```typescript
 private createHelpLinkElement(): Element {
     let linkElement = document.createElement("a");
@@ -64,6 +65,7 @@ private createHelpLinkElement(): Element {
     return linkElement;
 };
 ```
+
 Finally, an entry in the visual.less file defines the style for the link element:
 
 ```less
@@ -97,6 +99,7 @@ Finally, an entry in the visual.less file defines the style for the link element
 ```
 
 ### Adding a toggling mechanism
+
 This requires adding a static object (see [static object tutorial](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties)), so that the report's author can toggle the visibility of the link element (default is set to hidden).
 A `showHelpLink` boolean static object was added to `capabilities.json` objects entry:
 
@@ -108,7 +111,7 @@ A `showHelpLink` boolean static object was added to `capabilities.json` objects 
                 "showHelpLink": {
                     "displayName": "Show Help Button",
                     "type": {
-                        "bool": true 
+                        "bool": true
                     }
                 }
             }
@@ -116,14 +119,16 @@ A `showHelpLink` boolean static object was added to `capabilities.json` objects 
     }
 ```
 
-![](./media/launchURLtoggle.png)
+![Launch URL toggle](./media/launchurl-toggle.png)
 
 And, in the visual's `update` function, the following lines were added:
+
 ```typescript
-    if (settings.generalView.showHelpLink) {
-        this.helpLinkElement.classList.remove("hidden");
-    } else {
-        this.helpLinkElement.classList.add("hidden");
-    }
+if (settings.generalView.showHelpLink) {
+    this.helpLinkElement.classList.remove("hidden");
+} else {
+    this.helpLinkElement.classList.add("hidden");
+}
 ```
+
 The `hidden` class is defined in visual.less to control the display of the element.

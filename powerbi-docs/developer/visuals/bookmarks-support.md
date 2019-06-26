@@ -1,6 +1,6 @@
 ---
 title: Bookmarks
-description: Visual can handle bookmarks switching
+description: Power BI Visual can handle bookmarks switching
 author: zBritva
 ms.author: v-ilgali
 manager: AviSander
@@ -97,7 +97,7 @@ this.selectionManager.registerOnSelectCallback(
 
 After updating the data points, they'll reflect the current selection state stored in `filter` object. Then when the data points are rendered, the custom visual's selection state will match the state of the bookmark.
 
-### Using `InteractivityService` for control selections in the visual.
+### Using `InteractivityService` for control selections in the visual
 
 If your visual uses `InteractivityService`, you don't need any additional actions to support bookmarks in your visual.
 
@@ -185,4 +185,3 @@ The `filterState` property makes a property of a part of filtering. The visual c
 To save the property value as filter state the object property should be marked as `"filterState": true` in `capabilities.json`.
 
 Example: `Timeline Slicer` [stores](https://github.com/microsoft/powerbi-visuals-timeline/commit/8b7d82dd23cd2bd71817f1bc5d1e1732347a185e#diff-290828b604cfa62f1cb310f2e90c52fdR334) `Granularity` property values in filter. And it allows to change current granularity on changing of bookmarks by user.
-

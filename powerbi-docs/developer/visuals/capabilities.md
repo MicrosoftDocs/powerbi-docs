@@ -1,6 +1,6 @@
 ---
 title: Capabilities
-description: Work-around instructions to create certificates manually for developer server
+description: Power BI Visuals capabilities and properties
 author: asander
 ms.author: asander
 manager: AviSander
@@ -23,7 +23,7 @@ Your visual's capabilities are loaded from
     "dataViewMappings": [ ... ],
     "objects":  { ... },
     "supportsHighlight": true|false,
-	"advancedEditModeSupport": 0|1|2
+    "advancedEditModeSupport": 0|1|2,
     "sorting": { ... }
 }
 
@@ -38,7 +38,7 @@ To define fields that can be bound to data, we use `dataRoles` which takes an ar
 * **name** - the internal name of this data field (must be unique)
 * **kind** - the kind of field:
     * `Grouping` - Discrete values used for grouping of measure fields
-    * `Measure` - Numeric data values 
+    * `Measure` - Numeric data values
     * `GroupingOrMeasure` - Can be used as either a grouping or measure
 * **displayName** - the name displayed to the user in the properties pane
 * **description** - a short description of the field (optional)
@@ -46,6 +46,7 @@ To define fields that can be bound to data, we use `dataRoles` which takes an ar
 * **preferredTypes** - the preferred type of data for this data role (optional)
 
 ### Valid data types in "requiredTypes" and "preferredTypes"
+
 * **bool** - a boolean value
 * **integer** - an integer (whole number) value
 * **numeric** - a numeric value
@@ -153,8 +154,7 @@ To define fields that can be bound to data, we use `dataRoles` which takes an ar
 
 The above data roles would create the following fields
 
-![](./media/DataRoleDisplay.png)
-
+![Data role displaying](./media/data-role-display.png)
 
 ## Define how you want the data mapped - `dataViewMappings`
 
@@ -175,7 +175,6 @@ Most visuals provide a single mapping, but you can provide multiple dataViewMapp
 ```
 
 [Learn more about DataViewMappings](dataviewmappings.md)
-
 
 ## Define property pane options - `objects`
 
@@ -204,10 +203,12 @@ By default this value is set to false, which means your "Values" will be automat
 
 A visual can declare its support of Advanced Edit Mode.
 By default, a visual doesn't support Advanced Edit Mode, unless stated otherwise in the capabilities json.
+
 [Learn more about advancedEditModeSupport](advanced-edit-mode.md)
 
 ## Data sorting options for visual - `sorting`
 
 A visual can define its sorting behavior via its capabilities.
 By default, a visual doesn't support modifying its sorting order unless stated otherwise in the capabilities.json.
+
 [Learn more about sorting](sorting.md)

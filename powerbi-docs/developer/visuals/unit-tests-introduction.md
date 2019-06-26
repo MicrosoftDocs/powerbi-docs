@@ -1,16 +1,15 @@
 ---
 title: Unit test introduction
-description: Customizable properties of the visual
+description: How to write unit tests for Power BI Visuals project
 author: zBritva
 ms.author: v-ilgali
 manager: AviSander
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 06/18/2019
 ---
-
 
 # Custom visuals unit tests
 
@@ -56,13 +55,13 @@ See the description below to find out more about the package.
 
 Save `package.json` and execute on command line at `package.json` location:
 
-```
+```cmd
 npm install
 ```
 
 The package manager will install all new packages added to `package.json`
 
-For running unit tests, we'll need to configure the test runner and `webpack` config. The sample of config you can find here 
+For running unit tests, we'll need to configure the test runner and `webpack` config. The sample of config you can find here
 
 Sample of `test.webpack.config.js`:
 
@@ -251,13 +250,13 @@ Some settings of `karma.conf.js`:
 
 Some properties of config:
 
-* `singleRun: true` - tests run on CI system. And it's enough to single one time. 
+* `singleRun: true` - tests run on CI system. And it's enough to single one time.
 You can change to `false` for debugging your tests. Karma will keep running browser, and it will allow you to use the console for debugging.
 
 * `files: [...]` - in this array, you can set files for loading to the browser.
 Usually, there are source files, test cases, libraries (jasmine, test utils). You can add to list other files if you need.
 
-* `preprocessors` - this section of config you configure actions, which execute before unit tests execution. There are precompiling of typescript to JS and preparing source map files and generate code coverage report. You can disable `coverage` for debugging your tests. Coverage generates additional code for check code for the test coverage and it will complicate debugging tests. 
+* `preprocessors` - this section of config you configure actions, which execute before unit tests execution. There are precompiling of typescript to JS and preparing source map files and generate code coverage report. You can disable `coverage` for debugging your tests. Coverage generates additional code for check code for the test coverage and it will complicate debugging tests.
 
 **Description of all configurations you can find in the [documentation](https://karma-runner.github.io/1.0/config/configuration-file.html) of karma.js**
 
@@ -276,9 +275,9 @@ o convenient use, you can add test command into `scripts`:
 
 So, you're ready to begin writing your unit tests.
 
-## Simple unit test for check DOM element of the visual.
+## Simple unit test for check DOM element of the visual
 
-For testing visual, we must create an instance of visual. 
+For testing visual, we must create an instance of visual.
 
 Add `visualBuilder.ts` file into `test` folder with next code:
 
@@ -344,7 +343,7 @@ There are calling of several methods.
 
 * [`describe`](https://jasmine.github.io/api/2.6/global.html#describe) method describes test case. In a context of jasmine framework often called suite or group of specs.
 
-* `beforeEach` method will be called before each call of `it` method, which defined inside in [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach) method. 
+* `beforeEach` method will be called before each call of `it` method, which defined inside in [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach) method.
 
 * `it` defines a single spec. [`it`](https://jasmine.github.io/api/2.6/global.html#it) method should contain one or more `expectations`.
 
@@ -360,8 +359,8 @@ This test checks that root SVG element of the visuals is created.
 
 To run the unit test, you can type this command in the command-line tool.
 
-```
-npm run test 
+```cmd
+npm run test
 ```
 
 > [!NOTE]
@@ -369,11 +368,11 @@ npm run test
 
 karma.js will run chrome browser and will execute the test case.
 
-![](./media/KarmaJSChrome.png)
+![KarmaJS launched in Chrome](./media/karmajs-chrome.png)
 
 In command line you'll get following output:
 
-```
+```cmd
 > karma start
 
 23 05 2017 12:24:26.842:WARN [watcher]: Pattern "E:/WORKSPACE/PowerBI/PowerBI-visuals-sampleBarChart/data/*.csv" does not match any file.
@@ -438,7 +437,7 @@ The `SampleBarChartDataBuilder` class extends `TestDataViewBuilder` and implemen
 
 When you put data into data field buckets, Power BI produces a categorical `dataview` object based on your data.
 
-![](./media/FieldsBuckets.png)
+![Filed buckets](./media/fields-buckets.png)
 
 In unit tests, you don't have Power BI core functions to reproduce it. But you need to map your static data to categorical `dataview`. And `TestDataViewBuilder` class will help you in it.
 
@@ -539,27 +538,29 @@ public valuesMeasure: number[] = [742731.43, 162066.43, 283085.78, 300263.49, 37
 
 Now, you can use `SampleBarChartDataBuilder` class in your unit test.
 
-`ValueType` class defined in `powerbi-visuals-utils-testutils` package. And 
+`ValueType` class defined in `powerbi-visuals-utils-testutils` package. And
 `createCategoricalDataViewBuilder` method requires `lodash` library.
 
 Add these packages to dependencies.
 
 In `package.json` at `devDependencies` section
+
 ```json
 "lodash-es": "4.17.1",
 "powerbi-visuals-utils-testutils": "2.2.0"
 ```
 
-Call 
-```
-npm install 
+Call
+
+```cmd
+npm install
 ```
 
 to install `lodash-es` library.
 
 Now, you can run the unit test again. You must get this output
 
-```
+```cmd
 > karma start
 
 23 05 2017 16:19:54.318:WARN [watcher]: Pattern "E:/WORKSPACE/PowerBI/PowerBI-visuals-sampleBarChart/data/*.csv" does not match any file.
@@ -580,19 +581,18 @@ Lines        : 52.83% ( 112/212 )
 
 And you must see started Chrome Browser with your visual.
 
-![](./media/KarmaJSChromeUTRunned.png)
+![UT runned in Chrome](./media/karmajs-chrome-ut-runned.png)
 
 Make attention coverage summary increased. Open `coverage\index.html` to find out more about current code coverage
 
-![](./media/CodeCoverageIndex.png)
+![UT coverage index](./media/code-coverage-index.png)
 
 Or in scope of `src` folder
 
-![](./media/CodeCoverageSrcFolder.png)
+![Coverage of src folder](./media/code-coverage-src-folder.png)
 
 In the scope of file, you can look at source code. `Coverage` utils would mark row background to red if a code weren't executed during running of unit tests.
 
-![](./media/CodeCoverageVisualSrc.png)
+![Code coverge of visual.ts file](./media/code-coverage-visual-src.png)
 
 But code coverage doesn't mean that you have good functionality coverage of visual. One simple unit test provided over 96% of coverage in `src\visual.ts`.
-

@@ -1,6 +1,6 @@
 ---
 title: Visual Filters API
-description: Visuals can filter other visuals
+description: How Power BI Visuals can filter other visuals
 author: sranins
 ms.author: rasala
 manager: AviSander
@@ -29,13 +29,13 @@ To enable filtering for the visual, the visual should contain `filter` object in
                     }
                 }
             }
-        }    
+        }
     }
 ```
 
 Filter API interfaces are available in [`powerbi-models`](https://www.npmjs.com/package/powerbi-models) package. The package also contains classes to create filter instances.
 
-```
+```cmd
 npm install powerbi-models --save
 ```
 
@@ -52,7 +52,7 @@ export interface IFilter {
 
 `target` - is table column on datasource.
 
-### Basic filter API
+## Basic filter API
 
 Basic filter interface is
 
@@ -110,7 +110,7 @@ The visual invokes the filter using the method applyJsonFilter() on the host int
 visualHost.applyJsonFilter(filter, "general", "filter", FilterAction.merge);
 ```
 
-### Advanced filter API
+## Advanced filter API
 
 The [Advanced Filter API](https://github.com/Microsoft/powerbi-models) enables complex cross-visual data-point selection/filtering queries based on multiple criteria (such as "LessThan", "Contains", "Is", "IsBlank", so on).
 
@@ -158,7 +158,7 @@ SELECT * FROM table WHERE col1 < 0;
 
 Complete sample code of using Advanced Filter API can be found in [`Sampleslicer visual` repository](https://github.com/Microsoft/powerbi-visuals-sampleslicer).
 
-### Tuple filter API (Multi column filter)
+## Tuple filter API (Multi column filter)
 
 Tuple Filter API was introduced in Visuals API 2.3.0.
 
@@ -177,9 +177,11 @@ interface ITupleFilter extends IFilter {
 ```
 
 `target` is an array of columns with table names:
-  ```typescript
-  declare type ITupleFilterTarget = IFilterTarget[];
-  ```
+
+```typescript
+declare type ITupleFilterTarget = IFilterTarget[];
+```
+
   The filter can address columns from different tables.
 
 `$schema` is "http://powerbi.com/product/schema#tuple"
@@ -190,59 +192,60 @@ interface ITupleFilter extends IFilter {
 
 `values` is an array of value tuples, where each tuple represents one permitted combination of the target column values 
 
-  ```typescript
-  declare type TupleValueType = ITupleElementValue[];
+```typescript
+declare type TupleValueType = ITupleElementValue[];
 
-  interface ITupleElementValue {
-      value: PrimitiveValueType
-  }
-  ```
+interface ITupleElementValue {
+    value: PrimitiveValueType
+}
+```
+
 Complete example:
 
-  ```typescript
-  let target: ITupleFilterTarget = [
-      {
-          table: "DataTable",
-          column: "Team"
-      },
-      {
-          table: "DataTable",
-          column: "Value"
-      }
-  ];
+```typescript
+let target: ITupleFilterTarget = [
+    {
+        table: "DataTable",
+        column: "Team"
+    },
+    {
+        table: "DataTable",
+        column: "Value"
+    }
+];
 
-  let values = [
-      [
-          // the 1st column combination value (aka column tuple/vector value) that the filter will pass through
-          {
-              value: "Team1" // the value for `Team` column of `DataTable` table
-          },
-          {
-              value: 5 // the value for `Value` column of `DataTable` table
-          }
-      ],
-      [
-          // the 2nd column combination value (aka column tuple/vector value) that the filter will pass through
-          {
-              value: "Team2" // the value for `Team` column of `DataTable` table
-          },
-          {
-              value: 6 // the value for `Value` column of `DataTable` table
-          }
-      ]
-  ];
+let values = [
+    [
+        // the 1st column combination value (aka column tuple/vector value) that the filter will pass through
+        {
+            value: "Team1" // the value for `Team` column of `DataTable` table
+        },
+        {
+            value: 5 // the value for `Value` column of `DataTable` table
+        }
+    ],
+    [
+        // the 2nd column combination value (aka column tuple/vector value) that the filter will pass through
+        {
+            value: "Team2" // the value for `Team` column of `DataTable` table
+        },
+        {
+            value: 6 // the value for `Value` column of `DataTable` table
+        }
+    ]
+];
 
-  let filter: ITupleFilter = {
-      $schema: "http://powerbi.com/product/schema#tuple",
-      filterType: FilterType.Tuple,
-      operator: "In",
-      target: target,
-      values: values
-  }
+let filter: ITupleFilter = {
+    $schema: "http://powerbi.com/product/schema#tuple",
+    filterType: FilterType.Tuple,
+    operator: "In",
+    target: target,
+    values: values
+}
 
-  // invoke the filter
-  visualHost.applyJsonFilter(filter, "general", "filter", FilterAction.merge);
-  ```
+// invoke the filter
+visualHost.applyJsonFilter(filter, "general", "filter", FilterAction.merge);
+```
 
 **Order of column names and values of condition are sensitive.**
 
@@ -252,27 +255,26 @@ SQL equivalent is
 SELECT * FROM DataTable WHERE ( Team = "Team1" AND Value = 5 ) OR ( Team = "Team2" AND Value = 6 );
 ```  
 
-
-### Restoring JSON Filter from DataView
+## Restoring JSON Filter from DataView
 
 Starting from API 2.2 **JSON Filters** can be restored from **VisualUpdateOptions**
 
 ```typescript
-    export interface VisualUpdateOptions extends extensibility.VisualUpdateOptions {
-        viewport: IViewport;
-        dataViews: DataView[];
-        type: VisualUpdateType;
-        viewMode?: ViewMode;
-        editMode?: EditMode;
-        operationKind?: VisualDataChangeOperationKind;
-        jsonFilters?: IFilter[];
-    }
+export interface VisualUpdateOptions extends extensibility.VisualUpdateOptions {
+    viewport: IViewport;
+    dataViews: DataView[];
+    type: VisualUpdateType;
+    viewMode?: ViewMode;
+    editMode?: EditMode;
+    operationKind?: VisualDataChangeOperationKind;
+    jsonFilters?: IFilter[];
+}
 ```
 
 Power BI calls `update` method of the visual, when use switch bookmarks and the visual gets correspond `filter` object.
 [Read more about bookmarks support](bookmarks-support.md)
 
-#### Sample JSON Filter
+### Sample JSON Filter
 
 ![Screenshot JSON Filter](./media/json-filter.jpg)
 
@@ -280,7 +282,7 @@ Power BI calls `update` method of the visual, when use switch bookmarks and the 
 
 Filter API accepts `null` value of filter as reset or clear.
 
+```typescript
+// invoke the filter
+visualHost.applyJsonFilter(null, "general", "filter", FilterAction.merge);
 ```
-  // invoke the filter
-  visualHost.applyJsonFilter(null, "general", "filter", FilterAction.merge);
-  ```

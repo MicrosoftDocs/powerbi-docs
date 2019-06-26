@@ -1087,11 +1087,11 @@
         href: developer/guidelines-powerbi-visuals.md
       - name: "Custom visuals FAQ"
         href: power-bi-custom-visuals-faq.md
-      - name: "Using Capabilities"
+      - name: "Using capabilities"
         href: developer/visuals/capabilities.md
       - name: "Data View Mappings"
         href: developer/visuals/dataviewmappings.md
-      - name: "Objects and Properties"
+      - name: "Objects and properties"
         href: developer/visuals/objects-and-properties.md
       - name: "Advanced Edit Mode"
         href: developer/visuals/advanced-edit-mode.md
@@ -1103,7 +1103,7 @@
         href: developer/office-store.md
       - name: "Use R-powered custom visuals in Power BI"
         href: desktop-r-powered-custom-visuals.md
-      - name: "Allow interactions"
+      - name: "Visuals interactions"
         href: developer/visuals/allow-interactions.md
       - name: "Add visuals tooltips"
         href: developer/visuals/adding-tooltips.md
@@ -1119,6 +1119,8 @@
         href: developer/visuals/highlighting.md
       - name: "Add High-Contrast mode support"
         href: developer/visuals/high-contrast-support.md
+      - name: "Enable sync slicers"
+        href: developer/visuals/enable-sync-slicers.md
       - name: Troubleshoot
         items:
         - name: "Troubleshoot developing custom visuals"

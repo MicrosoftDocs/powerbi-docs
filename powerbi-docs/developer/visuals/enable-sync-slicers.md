@@ -1,6 +1,6 @@
 ---
 title: Enable Sync Slicers
-description: Visual can handle bookmarks switching
+description: How to add sync slicers feature for Power BI Visuals
 author: EugeneElkin
 ms.author: v-evelk
 manager: AviSander
@@ -33,10 +33,6 @@ After changes in `capabilities.json`, you can see Sync Slicers options panel whe
 
 `Also, pay attention that if your slicer has more than 1 field (category or measure) the feature will be disabled because Sync Slicers don't support several fields.`
 
-![](./media/sync-slicers-panel.png)
+![Sync slicers panel](./media/sync-slicers-panel.png)
 
 In the panel, you can see that your slicer visibility and its filtration may be applied for several report pages.
-
-You can download the following report to try feature [demo Power BI report with sync slicer](https://github.com/microsoft/PowerBI-visuals/blob/gh-pages/docs/how-to-guide/images/SampleSlicerSync.pbix?raw=true)
-
-

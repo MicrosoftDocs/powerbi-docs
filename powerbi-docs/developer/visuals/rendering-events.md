@@ -1,6 +1,6 @@
 ---
 title: Rendering events
-description: Visuals can notify Power BI that they're ready to exporting to Power Point/PDF
+description: Power BI Visuals can notify Power BI that they're ready to exporting to Power Point/PDF
 author: Yarovinsky
 ms.author: alexyar
 manager: AviSander
@@ -21,40 +21,39 @@ If the rendering has completed successfully, the custom visual code will immedia
 
 In case a problem occurred during the rendering process, preventing the custom visual from completing successfully. The custom visual code should call the `renderingFailed` method notifying the listener that the rendering process hasn't completed. This method also provides an optional string for the cause of failure.
 
-### Usage
+## Usage
+
 ```typescript
 export interface IVisualHost extends extensibility.IVisualHost {
-	…
-	eventService: IVisualEventService ;
-	…
+    eventService: IVisualEventService ;
 }
 
-/** 
- * An interface for reporting rendering events 
+/**
+ * An interface for reporting rendering events
  */
 export interface IVisualEventService {
-	/**
-	 * Should be called just before the actual rendering was started. 
-	 * Usually at the very start of the update method.
-	 * 
-	 * @param options - the visual update options received as update parameter
-	 */
-	renderingStarted(options: VisualUpdateOptions): void;
-	
-	/**
-	 * Shoudl be called immediately after finishing successfull rendering.
-	 * 
-	 * @param options - the visual update options received as update parameter
-	 */
-	renderingFinished(options: VisualUpdateOptions): void;
-	
-	/**
-	 * Called when rendering failed with optional reason string
-	 * 
-	 * @param options - the visual update options received as update parameter
-	 * @param reason - the option failure reason string
-	 */
-	renderingFailed(options: VisualUpdateOptions, reason?: string): void;
+    /**
+     * Should be called just before the actual rendering was started. 
+     * Usually at the very start of the update method.
+     *
+     * @param options - the visual update options received as update parameter
+     */
+    renderingStarted(options: VisualUpdateOptions): void;
+
+    /**
+     * Shoudl be called immediately after finishing successfull rendering.
+     * 
+     * @param options - the visual update options received as update parameter
+     */
+    renderingFinished(options: VisualUpdateOptions): void;
+
+    /**
+     * Called when rendering failed with optional reason string
+     * 
+     * @param options - the visual update options received as update parameter
+     * @param reason - the option failure reason string
+     */
+    renderingFailed(options: VisualUpdateOptions, reason?: string): void;
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: Sort
-description: Default sorting behavior for the visual.
+description: Default sorting behavior for the Power BI Visual.
 author: zBritva
 ms.author: v-ilgali
 manager: AviSander
@@ -27,7 +27,7 @@ This option enables sorting of the 'DataMappings' by the user and to specify the
     }
 ```
 
-![](./media/Sorting.png)
+![Sorting options in context menu](./media/sorting.png)
 
 ## Implicit sorting
 
@@ -60,4 +60,4 @@ Power BI won't display sorting options in visual's menu. However, Power BI will 
 
 ## Custom sorting
 
-`custom` means the sorting is managed by developer in visual's code
+`custom` means the sorting is managed by developer in visual's code.
