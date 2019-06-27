@@ -56,6 +56,7 @@ If you want to view the data source for this sample, it's also available as an [
 
 1. In the workspace where you saved the sample, open the **Dashboards** tab, then find the **Retail Analysis Sample** dashboard and select it. 
 2. On the dashboard, select the **Total Stores New & Existing Stores** tile, which opens to the **Store Sales Overview** page in the Retail Analysis Sample report. 
+
    ![Total Stores tile](media/sample-retail-analysis/retail-analysis-7.png)  
 
    On this report page, you see we have a total of 104 stores, 10 of which are new. We have two chains, Fashions Direct and Lindseys. Fashions Direct stores are larger, on average.
@@ -88,7 +89,7 @@ Let’s get more specific.
    ![This year's sales by district in Q&A](media/sample-retail-analysis/retail8.png)
 2. Now change the question to *this year sales **by zip and chain***.
 
-   Notice how it answers the question as you type with the appropriate charts.
+   Notice how Power BI answers the question as you type and displays the appropriate chart.
 3. Experiment with more questions and see what kind of results you get.
 4. When you’re ready, return to the dashboard.
 
@@ -99,7 +100,7 @@ Now let's explore on a more detailed level, looking at the districts' performanc
 
    ![This Year's Sales, Last Year's Sales tile](media/sample-retail-analysis/pbi_sample_retanlareacht.png)
 
-   In the **Total Sales Variance % by Fiscal Month** chart, notice the large variability on variance % to last year, with January, April, and July being particularly bad months.
+   In the **Total Sales Variance % by Fiscal Month** chart, notice the large variability on variance % compared to last year, with January, April, and July being particularly bad months.
 
    ![Total Sales Variance % by Fiscal Month chart](media/sample-retail-analysis/pbi_sample_retanlsalesvarcol.png)
 
@@ -108,13 +109,13 @@ Now let's explore on a more detailed level, looking at the districts' performanc
 
    ![Select 020-Mens](media/sample-retail-analysis/retail11.png)  
 
-   Observe that although the men's category wasn't as severely affected in April as the business overall, January and July were still problematic months.
-3. Select the **010-Womens** bubble.
+   Observe that although the men's category wasn't as severely affected in April as the overall business, January and July were still problematic months.
+1. Select the **010-Womens** bubble.
 
    ![Select 010-Womens](media/sample-retail-analysis/retail12.png)
 
-   Notice the women's category performed much worse than business overall across all months, and in almost every month compared to the previous year.
-4. Select the bubble again to clear the filter.
+   Notice the women's category performed much worse than the overall business across all months, and in almost every month compared to the previous year.
+1. Select the bubble again to clear the filter.
 
 ## Try out the slicer
 Let’s look at how specific districts are doing.
@@ -152,9 +153,7 @@ The last area we want to explore is our growth by examining the new stores opene
 5. Select **Cincinnati 2 Fashions Direct** in the slicer and observe in the line chart that it was opened in June and appears to be the worst performing store.
 6. Explore by selecting other bars, lines, and bubbles throughout the charts and see what insights you can discover.
 
+## Next steps: Connect to your data
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
 
-## Next steps: Connect to your data
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into opportunity tracking data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](service-get-started.md).
-
-[Download samples](sample-datasets.md)  

@@ -72,24 +72,26 @@ Our sales manager has created a dashboard to track those metrics most important 
 
 Because the effort to land a deal is the same whether the deal is classified as large, medium, or small, our company should analyze the data to learn more about large opportunities.
 
-Select the **Opportunity Count by Partner Driven, Sales Stage** tile to open the first page of the Opportunity Analysis Sample Report. 
+1. In the workspace where you saved the sample, open the **Dashboards** tab, then find the **Opportunity Analysis Sample** dashboard and select it.
+
+2. Select the **Opportunity Count by Partner Driven, Sales Stage** tile to open the first page of the Opportunity Analysis Sample report. 
 
 ![Opportunity Count by Partner Driven, Sales Stage tile](media/sample-opportunity-analysis/opportunity2.png)
 
 ## Explore the pages in the report
 
-View each page in the report by selecting a page tab at the bottom.
+View each page in the report by selecting the page tabs at the bottom.
 
-### Opportunity Count page
+### Opportunity Count Overview page
 ![Opportunity Count page](media/sample-opportunity-analysis/opportunity3.png)
 
 Note the following details:
 * East is our biggest region in terms of opportunity counts.  
-* On the **Opportunity Count by Region** pie chart, select each region in turn to filter the page by region. For each region, partners are pursuing significantly more large opportunities.   
-* The **Opportunity Count by Partner Driven and Opportunity Size** column chart shows that most of the large opportunities are partner-driven while most of the small and medium opportunities are not.
+* On the **Opportunity Count by Region** pie chart, select each region in turn to filter the page by region. For each region, notice that partners are pursuing significantly more large opportunities.   
+* The **Opportunity Count by Partner Driven and Opportunity Size** column chart shows that most of the large opportunities are partner driven, while most of the small and medium opportunities are not.
 * In the **Opportunity Count by Sales Stage** bar chart, select each **Sales Stage** in turn to see the difference in regional count. Notice that although the East region has the largest opportunity count, all three regions in the Solution, Proposal, and Finalize sales stages have comparable counts. This result means we close a higher percent of deals in the Central and West regions.
 
-### Revenue Overview page
+### Revenue Analysis page
 This page takes a similar look at the data, but uses a revenue perspective instead of count.  
 
 ![Revenue Overview page](media/sample-opportunity-analysis/opportunity4.png)
@@ -103,7 +105,7 @@ Note the following details:
 
 Clearly our partners are doing a better job than non-partners selling to customers. It might make sense to funnel more deals through our partners.
 
-### Region Stage Counts page
+### Opportunity Count by Region and Stage
 This page of the report looks at similar data as the previous page but breaks it down by region and stage. 
 
 ![Region Stage Counts page](media/sample-opportunity-analysis/opportunity5.png)
@@ -112,21 +114,20 @@ Note the following details:
 * If you select **East** in the **Opportunity Count by Region** pie chart to filter by the East region, you see that the opportunities in this region are split almost equally between partner driven and non-partner driven.
 * Large opportunities are most common in the Central region, small opportunities are most common in the East region, and medium opportunities are most common in the West region.
 
-### Upcoming Opportunities page
-For this page we’re looking at similar factors, but from a date/time perspective. 
+### Upcoming Opportunities by Month page
+For this page we’re looking at similar factors, but from a date and time perspective. 
  
 ![Upcoming Opportunities page](media/sample-opportunity-analysis/opportunity6.png)
 
-Our CFO uses this page to manage workload. By looking at the revenue opportunities by sales stage and month, she can plan appropriately.
+Our CFO uses this page to manage workload. By looking at the revenue opportunities by sales stage and month, she can plan accordingly.
 
 Note the following details:
 * Average revenue for the Finalize sales stage is the highest. Closing these deals is a top priority.
 * If you filter by month (by selecting a month in the **Month** slicer), you see that January has a high proportion of large deals in the Finalize sales stage with a factored revenue of $75 million. February, on the other hand, has mostly medium deals in the Solution and Proposal sales stages.
 * In general, the factored revenue numbers fluctuate based on sales stage, number of opportunities, and deal size. Add filters for these factors by using the **Filter** pane on the right to discover further insights.
 
+## Next steps: Connect to your data
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
 
-## Next steps: Connect to your data
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into opportunity tracking data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](service-get-started.md).
 
-[Download samples](sample-datasets.md)  

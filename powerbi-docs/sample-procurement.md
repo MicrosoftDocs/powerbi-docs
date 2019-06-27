@@ -80,46 +80,43 @@ Let’s explore the spending areas in Mexico.
    ![Select Mexico in Spend Overview page](media/sample-procurement/pbi_procsample_spendmexico.png)
 2. Drill down into the **Indirect Goods & Services** column:
 
-   * Select the drill-down arrow ![Drill-down arrow](media/sample-procurement/pbi_drilldown_icon.png) in the upper-right corner of the chart.
+   * In the **Total Invoice by Sub Category** chart, select the drill-down arrow ![Drill-down arrow](media/sample-procurement/pbi_drilldown_icon.png) in the upper-right corner of the chart.
    * Select the **Indirect Goods & Services** column.
 
-      By far, the biggest spending in this category is **Sales & Marketing**.
+      As you can see, the highest spending by far is for the **Sales & Marketing** subcategory.
    * Select **Mexico** in the map again.
 
-      For Mexico, the biggest spending in this category in Mexico is **Maintenance & Repair**.
+      For Mexico, the biggest spending is in the **Maintenance & Repair** subcategory.
 
       ![Indirect Goods & Services drill down for Mexico](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Select the up arrow on the upper-left corner of the chart to drill back up.
 4. Select the drill-down arrow again to turn drill down off.  
-5. Select **Procurement Analysis Sample** in the top navigation bar to return to the dashboard.
+5. In the top navigation bar, select **Procurement Analysis Sample** to return to the dashboard.
 
 ## Evaluate different cities
 We can use highlighting to evaluate different cities.
 
 1. Select the dashboard tile, **Total Invoice, Discount % By Month**, which opens to the **Discount Analysis** page of the **Procurement Analysis Sample** report.
-2. In the **Total Invoice by City** treemap, select each city in turn to see how they compare. Notice that almost all of Miami’s invoices are from Tier 1 vendors.
+2. In the **Total Invoice by City** tree map, select each city in turn to see how they compare. Notice that almost all of Miami’s invoices are from tier 1 vendors.
 
    ![City vs discount % by tier](media/sample-procurement/pbi_procsample_miamitreemap2.png)
 
 ## Vendor discounts
-Let’s also explore the discounts available from vendors, and the time periods when we get the most discounts.
-
-![Discount analysis page](media/sample-procurement/procurement4.png)
-
-Specifically, these questions:
-
+Let’s also explore the discounts available from vendors, and the time periods when we get the most discounts:
 * Are the discounts different each month or do they remain the same?
 * Do some cities get more discounts than others?
+
+![Discount analysis page](media/sample-procurement/procurement4.png)
 
 ### Discount by month
 If you look at the **Total Invoice and Discount % by Month** combo chart, we see that February is the busiest month, and September is the least busy month. 
 
-Now look at the discount percent during these months: when volume increases, the discount shrinks, and when volume is low, the discount increases. The more we need the discount, the worse of a deal we get.
+Look at the discount percent during these months: when volume increases, the discount shrinks, and when volume is low, the discount increases. The more we need the discount, the worse of a deal we get.
 
 ![Total Invoice and Discount % by Month chart](media/sample-procurement/procurement5.png)
 
 ### Discount by city
-Another area to explore is the discount by city. Select each city in turn in the treemap and see how the other charts change.
+Another area to explore is the discount by city. Select each city in turn in the tree map and see how the other charts change:
 
 * St. Louis had a large spike in total invoices in February and a large dip in discount savings in April.
 * Mexico City has the highest discount percentage (11.05%) and Atlanta has the smallest (0.08%).
@@ -127,16 +124,15 @@ Another area to explore is the discount by city. Select each city in turn in the
 ![Discount graphs for Mexico City](media/sample-procurement/procurement6.png)
 
 ### Edit the report
-Select **Edit report** in the upper-left corner and explore in Editing view.
+Select **Edit report** in the upper-left corner and explore in Editing view:
 
 * See how the pages are made.
 * Add pages and charts based on the same data.
-* Change the visualization type for a chart; for example, change the treemap to a donut chart.
+* Change the visualization type for a chart; for example, change the tree map to a donut chart.
 * Pin charts to your dashboard.
 
+## Next steps: Connect to your data
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
 
-## Next steps: Connect to your data
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into opportunity tracking data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](service-get-started.md).
 
-[Download samples](sample-datasets.md)  
