@@ -15,7 +15,6 @@ LocalizationGroup: Samples
 ---
 # IT Spend Analysis sample for Power BI: Take a tour
 
-## Overview of the IT Spend Analysis sample
 The IT Spend Analysis sample content pack contains a dashboard, report, and dataset that analyzes the planned vs. actual costs of an IT department. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new latest estimate (LE) to help analyze changes in IT spend over the fiscal year.
 
 ![Dashboard for the IT Spend Analysis sample](media/sample-it-spend/it1.png)
@@ -120,7 +119,7 @@ Select **Edit Report** in the upper-left corner to explore in Editing view:
 * Change the visualization type for each chart.
 * Pin charts of interest to your dashboard.
 
+## Next steps: Connect to your data
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
 
-## Next steps: Connect to your data
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into IT spend data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](service-get-started.md).
