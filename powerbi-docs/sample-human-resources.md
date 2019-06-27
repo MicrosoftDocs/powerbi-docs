@@ -15,7 +15,6 @@ LocalizationGroup: Samples
 ---
 # Human Resources sample for Power BI: Take a tour
 
-## Overview of the Human Resources sample
 The Human Resources sample content pack contains a dashboard, report, and dataset for a human resources department. In this sample, the human resources department has the same reporting model across different companies, even when they differ by industry or size. This sample looks at new hires, active employees, and employees who have left. It strives to uncover any trends in the hiring strategy. Our main objectives are to understand:
 
 * Who we hire
@@ -155,7 +154,7 @@ In the [Q&A question box](power-bi-tutorial-q-and-a.md) in the dashboard, you ca
 
    Notice most of the female bad hires are under 30.
 
+## Next steps: Connect to your data
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
 
-## Next steps: Connect to your data
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into human resources data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](service-get-started.md).
