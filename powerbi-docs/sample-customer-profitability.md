@@ -15,7 +15,6 @@ LocalizationGroup: Samples
 ---
 # Customer Profitability sample for Power BI: Take a tour
 
-## Overview of the Customer Profitability sample
 The Customer Profitability sample content pack contains a dashboard, report, and dataset for a company that manufactures marketing materials. This dashboard was created by a CFO to see key metrics about her five business unit managers (executives), products, customers, and gross margins (GM). At a glance, she can see what factors are impacting profitability.
 
 ![Dashboard for the Customer Profitability sample](media/sample-customer-profitability/power-bi-dash.png)
@@ -199,9 +198,8 @@ Let's take a look at the Distribution industry.
 
     We can similarly explore other industries and even add customers to our visuals to understand causes for Valery's performance.
 
+## Next steps: Connect to your data
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
 
-## Next steps: Connect to your data
 We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into customer data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](service-get-started.md).
 
-[Samples for Power BI](sample-datasets.md)  

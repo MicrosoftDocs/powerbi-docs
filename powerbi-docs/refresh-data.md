@@ -31,7 +31,7 @@ To understand how Power BI refreshes your datasets, reports, and dashboards, you
 
 ### Storage modes and dataset types
 
-A Power BI dataset can operate in one of the following modes to access data from a variety of data sources. For a more information, see [Storage mode in Power BI Desktop](desktop-storage-mode.md).
+A Power BI dataset can operate in one of the following modes to access data from a variety of data sources. For more information, see [Storage mode in Power BI Desktop](desktop-storage-mode.md).
 
 - Import mode
 - DirectQuery mode
@@ -231,7 +231,7 @@ There are two options to configure a data gateway to support merging or appendin
 
 ![Refresh through gateway cluster](media/refresh-data/refresh-gateway-cluster.png)
 
-If you enable the checkbox **Allow user's cloud data sources to refresh through this gateway cluster in the gateway configuration** , as in the screenshot above, Power BI can use the configuration that the user defined for the cloud source under **Data source credentials** in the dataset settings. This can help to lower the gateway configuration overhead. On the other hand, if you want to have greater control over the connections that your gateway establishes, you should not enable this checkbox. In this case, you must add an explicit data source definition for every cloud source that you want to support to your gateway. It is also possible to enable the checkbox and add explicit data source definitions for your cloud sources to a gateway. In this case, the gateway uses the data source definitions for all matching sources.
+If you enable the checkbox **Allow user's cloud data sources to refresh through this gateway cluster in the gateway configuration**, as in the screenshot above, Power BI can use the configuration that the user defined for the cloud source under **Data source credentials** in the dataset settings. This can help to lower the gateway configuration overhead. On the other hand, if you want to have greater control over the connections that your gateway establishes, you should not enable this checkbox. In this case, you must add an explicit data source definition for every cloud source that you want to support to your gateway. It is also possible to enable the checkbox and add explicit data source definitions for your cloud sources to a gateway. In this case, the gateway uses the data source definitions for all matching sources.
 
 ### Configuring query parameters
 
@@ -269,7 +269,7 @@ The **Scheduled refresh** section is where you define the frequency and time slo
 
 ![Configure scheduled refresh](media/refresh-data/configure-scheduled-refresh.png)
 
-Having configured a refresh schedule, the dataset settings page informs you about the next refresh time, as in the screenshot above. If you want to refresh the data sooner, such as to test your gateway and data source configuration, perform an on-demand refresh by using the Refresh Now option in the dataset menu in the left navigation pane. On-demand refreshes don't affect the next scheduled refresh time, but they count against the daily refresh limit, as explained earlier in this article.
+Having configured a refresh schedule, the dataset settings page informs you about the next refresh time, as in the screenshot above. If you want to refresh the data sooner, such as to test your gateway and data source configuration, perform an on-demand refresh by using the **Refresh Now** option in the dataset menu in the left navigation pane. On-demand refreshes don't affect the next scheduled refresh time, but they count against the daily refresh limit, as explained earlier in this article.
 
 Note also that the configured refresh time might not be the exact time when Power BI starts the next scheduled process. Power BI starts scheduled refreshes on a best effort basis. The target is to initiate the refresh within 15 minutes of the scheduled time slot, but a delay of up to one hour can occur if the service can't allocate the required resources sooner.
 
@@ -280,7 +280,7 @@ Note also that the configured refresh time might not be the exact time when Powe
 
 By default, Power BI sends refresh failure notifications through email to the dataset owner so that the owner can act in a timely manner should refresh issues occur. Power BI also sends you a notification when the service disables your schedule due to consecutive failures. Microsoft recommends that you leave the checkbox **Send refresh failure notification emails to me** enabled.
 
-Note that Power BI not only sends notifications on refresh failures but also when the service pauses a scheduled refresh due to inactivity. After two months, when no user has visited any dashboard or report built on the dataset, Power BI considers the dataset inactive. In this situation, Power BI sends an email message to the dataset owner indicating that the service disabled the refresh schedule for the dataset. See the following screenshot for an example of such a notification.
+Note that Power BI not only sends notifications on refresh failures but also when the service pauses a scheduled refresh due to inactivity. After two months, when no user has visited any dashboard or report built on the dataset, Power BI considers the dataset inactive. In this situation, Power BI sends an email message to the dataset owner indicating that the service paused the refresh schedule for the dataset. See the following screenshot for an example of such a notification.
 
 ![Email for paused refresh](media/refresh-data/email-paused-refresh.png)
 
