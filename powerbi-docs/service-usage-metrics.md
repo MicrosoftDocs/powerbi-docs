@@ -9,33 +9,34 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/19/2018
+ms.date: 06/27/2019
 LocalizationGroup: Dashboards
 ---
 
 # Monitor usage metrics for Power BI dashboards and reports
 
-If you create dashboards and reports, usage metrics help you understand their impact. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization; what is being used, by whom, and for what purpose.  
+If you create dashboards and reports, usage metrics help you understand their impact. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization, who's using them, and for what purpose.  
 
-> [!NOTE]
-> Usage metrics track usage of reports that are embedded in SharePoint Online. However, usage metrics don't track embedding of dashboards and reports via the “user owns credentials” or “app owns credentials” flow. Usage metrics also don't track usage of reports embedding via [publish to web](service-publish-to-web.md).
-
-These usage metrics reports are read-only. However, you can personalize a usage metrics report by using "Save as." This creates a brand new dataset and converts the read-only report to a full-featured Power BI report that you can edit. Not only does the personalized report contain metrics for the selected dashboard or report, but by removing the default filter, you now have access to usage metrics for all dashboards or all reports in the selected workspace. And you can even see the names of your end users.
+Usage metrics reports are read-only. However, you can copy a usage metrics report. Copying creates a standard Power BI report that you can edit. The copied report contains metrics for the selected dashboard or report. You can remove the default filter and have access to usage metrics for all dashboards or all reports in the selected workspace. You may even see the names of specific users, if your admin has allowed that.
 
 ![usage metrics report](media/service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
+
+> [!NOTE]
+> Usage metrics track usage of reports that are embedded in SharePoint Online. However, usage metrics don't track dashboards and reports embedded via the “user owns credentials” or “app owns credentials” flow. Usage metrics also don't track usage of reports embedded via [publish to web](service-publish-to-web.md).
 
 ## Why are usage metrics important to me?
 
 Knowing how your content is being used helps you demonstrate your impact and prioritize your efforts. Your usage metrics may show that one of your reports is used daily by a huge segment of the organization and it may show that a dashboard you created isn't being viewed at all. This type of feedback is invaluable in guiding your work efforts.
 
-Running usage metrics reports is only available in Power BI service.  However, if you save a usage metrics report or pin it to a dashboard, you can open and interact with that report on mobile devices.
+You can only run usage metrics reports in the Power BI service. However, if you save a usage metrics report or pin it to a dashboard, you can open and interact with that report on mobile devices.
 
 ### Prerequisites
 
-- The usage metrics feature captures usage information from all users, regardless of the license they're assigned. However, a Power BI Pro license is required to run and access the usage metrics data.
-- Usage metrics are provided on dashboards or reports in the selected workspace. To  access usage metrics for a particular dashboard or report, you must:    
-    • Have edit access to that dashboard or report
-    • Have a Pro license
+- The usage metrics feature captures usage information from all users, regardless of the license they're assigned. However, you need a Power BI Pro license to run and access the usage metrics data.
+- Usage metrics are provided on dashboards or reports in the selected workspace. To  access usage metrics for a particular dashboard or report, you must:  
+  
+  - Have edit access to that dashboard or report
+  - Have a Pro license
 
 ## About the Usage Metrics report
 
@@ -91,7 +92,7 @@ To dig down into the report data, or to build your own reports against the datas
 
 ![Report usage metrics report](media/service-usage-metrics/power-bi-report-usage-metrics-update.png)
 
-## Save the Usage Metrics report as a full-featured Power BI report (personalize)
+## Save a copy of the Usage Metrics report
 
 ![Save as](media/service-usage-metrics/power-bi-save-as.png)
 
