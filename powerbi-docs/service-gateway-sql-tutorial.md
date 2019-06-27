@@ -81,9 +81,9 @@ Use the following procedure to create a basic Power BI report using the Adventur
 
 7. On the **Home** tab select **Publish** \> **My Workspace** \> **Select**. Sign in to the Power BI service if you're asked to do so.
 
-    ![Publish to Power BI](media\service-gateway-sql-tutorial\publish-to-power-bi.png)
-
 8. On the **Success** screen, select **Open 'AdventureWorksProducts.pbix' in Power BI**.
+
+    [Publish to Power BI](media\service-gateway-sql-tutorial\publish-to-power-bi.png)
 
 ## Connect a dataset to a SQL Server database
 
@@ -95,7 +95,7 @@ In Power BI Desktop, you connected directly to your on-premises SQL Server datab
 
 2. On the **Datasets** tab, select the dataset **AdventureWorksProducts** , so you can connect to your on-premises SQL Server database through a data gateway.
 
-3. Expand **Gateway connection** and verify that at least one gateway is listed. If you don't have a gateway, see the "Prerequisites" section earlier in this tutorial for a link to the product documentation for installing and configuring a gateway.
+3. Expand **Gateway connection** and verify that at least one gateway is listed. If you don't have a gateway, see the [Prerequisites](#prerequisites) section earlier in this tutorial for a link to the product documentation for installing and configuring a gateway.
 
     ![Gateway connection](media\service-gateway-sql-tutorial\gateway-connection.png)
 
