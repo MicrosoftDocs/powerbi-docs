@@ -17,11 +17,7 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-Register to hear from Power BI experts and participate in live Q&A sessions.
-
-**Power BI: How to Get Insights from Your Workday HR Data**
-<br>by Iman Eftekhari, Julia Paton from Agile Analytics and Shahram Karimi from QBE Insurance
-<br>[Register to watch on June 27th, 1:30 PM–2:30 PM PST](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
+No webinars scheduled yet. Check back soon for more upcoming events.
 
 >[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -123,6 +119,10 @@ Watch recorded sessions at any time
 
 ### Partner Solutions Series ###
 [Watch this series](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
+
+**Power BI: How to Get Insights from Your Workday HR Data**
+<br>by Iman Eftekhari, Julia Paton from Agile Analytics and Shahram Karimi from QBE Insurance
+<br>[Register and watch now](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
 
 **Achieving a Win-Win for Consumer Product Goods Manufacturers and Retailers**
 <br>by Liz McCreesh from Thorogood
