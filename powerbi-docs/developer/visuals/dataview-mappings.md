@@ -137,12 +137,12 @@ Here is the definition from our previous example on DataRoles.
     {
         "displayName": "Category",
         "name": "category",
-        "kind": 0
+        "kind": "Grouping"
     },
     {
         "displayName": "Y Axis",
         "name": "measure",
-        "kind": 1
+        "kind": "Measure"
     }
 ]
 ```
@@ -178,22 +178,22 @@ In this example, we'll use the first two DataRoles from the previous example, ad
     {
         "displayName": "Category",
         "name": "category",
-        "kind": 0
+        "kind": "Grouping"
     },
     {
         "displayName": "Y Axis",
         "name": "measure",
-        "kind": 1
+        "kind": "Measure"
     },
     {
         "displayName": "Grouping with",
         "name": "grouping",
-        "kind": 0
+        "kind": "Grouping"
     },
     {
         "displayName": "X Axis",
         "name": "measure2",
-        "kind": 1
+        "kind": "Grouping"
     }
 ]
 ```
@@ -230,17 +230,17 @@ Here are the dataRoles.
     {
         "displayName": "Categories",
         "name": "category",
-        "kind": 0
+        "kind": "Grouping"
     },
     {
         "displayName": "Measures",
         "name": "measure",
-        "kind": 1
+        "kind": "Measure"
     },
     {
         "displayName": "Series",
         "name": "series",
-        "kind": 0
+        "kind": "Measure"
     }
 ]
 ```
@@ -369,7 +369,7 @@ With the given capabilities:
     {
         "displayName": "Values",
         "name": "values",
-        "kind": 2
+        "kind": "Measure"
     }
 ]
 ```
@@ -378,7 +378,7 @@ With the given capabilities:
 "dataViewMappings": [
     {
         "table": {
-            "rows": {`
+            "rows": {
                 "for": {
                     "in": "values"
                 }
