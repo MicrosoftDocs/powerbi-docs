@@ -35,29 +35,31 @@ The differences are as follows:
     2. `displayName` of type text. The default value you'll choose will become the instance's initial display name.
 
 ```json
-"objects": {
-  "YourAnalyticsPropertiesCard": {
-    "displayName": "Your analytics properties card's name",
-    "objectCategory": 2,
-    "properties: {
-      "show": {
-        "type": {
-          "bool": true
-        }
-      },
-      "displayName": {
-        "type": {
-          "text": true
-        }
-      },
-    ... //any other properties for your Analytics card
+{
+  "objects": {
+    "YourAnalyticsPropertiesCard": {
+      "displayName": "Your analytics properties card's name",
+      "objectCategory": 2,
+      "properties: {
+        "show": {
+          "type": {
+            "bool": true
+          }
+        },
+        "displayName": {
+          "type": {
+            "text": true
+          }
+        },
+      ... //any other properties for your Analytics card
+      }
     }
+  ...
   }
-...
 }
 ```
 
-Any other properties may be defined in the same way as done for Format objects. Object enumeration is done exactly the same as in **Format pane**. 
+Any other properties may be defined in the same way as done for Format objects. Object enumeration is done exactly the same as in **Format pane**.
 
 ***Known limitations and issues***
 

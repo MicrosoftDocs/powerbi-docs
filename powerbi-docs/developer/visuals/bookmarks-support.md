@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Bookmarks
+# Add bookmarks support for Power BI VIsuals
 
 Power BI report bookmarks allow capturing configured view of a report page, selection state, filtering state of the visual. But it requires additional action from custom visuals side to support the bookmark and react correctly to changes.
 

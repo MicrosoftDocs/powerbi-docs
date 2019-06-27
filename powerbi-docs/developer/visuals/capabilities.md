@@ -13,9 +13,9 @@ ms.date: 06/18/2019
 
 # Visual capabilities
 
-Capabilities are used to provide information to the host about your visual. All properties on the Capabilities model are ```optional```
+Capabilities provides information to the host about your visual. All properties on the Capabilities model are `optional`
 
-Your visual's capabilities are loaded from
+Root objects of visual's capabilities are `dataRoles`, `dataViewMappings`, so on.
 
 ```json
 {
@@ -174,7 +174,7 @@ Most visuals provide a single mapping, but you can provide multiple dataViewMapp
 ]
 ```
 
-[Learn more about DataViewMappings](dataviewmappings.md)
+[Learn more about DataViewMappings](dataview-mappings.md)
 
 ## Define property pane options - `objects`
 

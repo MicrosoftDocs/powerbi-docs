@@ -11,9 +11,20 @@ ms.topic: tutorial
 ms.date: 06/18/2019
 ---
 
-# Custom visuals unit tests
+# Tutorial: add unit tests for Power BI Visual projects
 
-This tutorial describes basics of writing unit tests for your custom visuals. In this tutorial, we'll consider how to use test runner karma.js, testing framework - jasmine.js and also we'll consider how to use powerbi-visuals-utils-testutils package. It's a set of mocks and fakes to simplify unit testing for Power BI custom visuals.
+This tutorial describes basics of writing unit tests for your Power BI Vsuals.
+
+In this tutorial, we'll consider
+
+* how to use test runner karma.js, testing framework - jasmine.js
+* how to use powerbi-visuals-utils-testutils package
+* how set of mocks and fakes help to simplify unit testing for Power BI Visuals.
+
+## Prerequisites
+
+* You have Power BI Visuals project
+* Configured Node.JS enviroment
 
 ## Install and configure karma.js and jasmine
 
@@ -152,7 +163,7 @@ module.exports = (config: Config) => {
     config.set(<ConfigOptions>{
         mode: "development",
         browserNoActivityTimeout: 100000,
-        browsers: ["ChromeHeadless"],
+        browsers: ["ChromeHeadless"], // or Chrome to use locally installed Chrome browser
         colors: true,
         frameworks: ["jasmine"],
         reporters: [
@@ -260,17 +271,20 @@ Usually, there are source files, test cases, libraries (jasmine, test utils). Yo
 
 **Description of all configurations you can find in the [documentation](https://karma-runner.github.io/1.0/config/configuration-file.html) of karma.js**
 
-o convenient use, you can add test command into `scripts`:
+To convenient use, you can add test command into `scripts`:
 
 ```json
-"scripts": {
-    "pbiviz": "pbiviz",
-    "start": "pbiviz start",
-    "typings":"node node_modules/typings/dist/bin.js i",
-    "lint": "tslint -r \"node_modules/tslint-microsoft-contrib\"  \"+(src|test)/**/*.ts\"",
-    "pretest": "pbiviz package --resources --no-minify --no-pbiviz --no-plugin",
-    "test": "karma start"
-},
+{
+    "scripts": {
+        "pbiviz": "pbiviz",
+        "start": "pbiviz start",
+        "typings":"node node_modules/typings/dist/bin.js i",
+        "lint": "tslint -r \"node_modules/tslint-microsoft-contrib\"  \"+(src|test)/**/*.ts\"",
+        "pretest": "pbiviz package --resources --no-minify --no-pbiviz --no-plugin",
+        "test": "karma start"
+    }
+    ...
+}
 ```
 
 So, you're ready to begin writing your unit tests.
@@ -278,6 +292,8 @@ So, you're ready to begin writing your unit tests.
 ## Simple unit test for check DOM element of the visual
 
 For testing visual, we must create an instance of visual.
+
+### Creating visual instance builder
 
 Add `visualBuilder.ts` file into `test` folder with next code:
 
@@ -311,6 +327,8 @@ export class BarChartBuilder extends VisualBuilderBase<VisualClass> {
 There's `build` method for creating an instance of your visual. `mainElement` is a get method, which returns an instance of "root" DOM element in your visual. The getter is optional but it makes writing unit test easier..
 
 So, we have the builder of an instance of visual. Let's write the test case. It will be a test case to check those SVG elements created when your visual displays.
+
+### Creating typescript file to write test cases
 
 Add `visualTest.ts` file for test cases with these codes:
 
@@ -357,18 +375,20 @@ After that, you can run your unit test typing a command in command-line tool.
 
 This test checks that root SVG element of the visuals is created.
 
+### Launch unit tests
+
 To run the unit test, you can type this command in the command-line tool.
 
 ```cmd
 npm run test
 ```
 
-> [!NOTE]
-> Google Chrome has to be installed locally.
-
-karma.js will run chrome browser and will execute the test case.
+`karma.js` runs chrome browser and will execute the test case.
 
 ![KarmaJS launched in Chrome](./media/karmajs-chrome.png)
+
+> [!NOTE]
+> Google Chrome has to be installed locally.
 
 In command line you'll get following output:
 
@@ -391,7 +411,7 @@ Lines        : 20.85% ( 44/211 )
 ================================================================================
 ```
 
-## How to add static data for unit tests
+### How to add static data for unit tests
 
 Create `visualData.ts` file in `test`folder. With these codes:
 
@@ -595,4 +615,11 @@ In the scope of file, you can look at source code. `Coverage` utils would mark r
 
 ![Code coverge of visual.ts file](./media/code-coverage-visual-src.png)
 
-But code coverage doesn't mean that you have good functionality coverage of visual. One simple unit test provided over 96% of coverage in `src\visual.ts`.
+> [!IMPORTANT]
+> But code coverage doesn't mean that you have good functionality coverage of visual. One simple unit test provided over 96% of coverage in `src\visual.ts`.
+
+## Next steps
+
+When your visual is ready, you can submit your visual to publication.
+
+[Read more about publishing visuals to AppSource](../office-store.md)

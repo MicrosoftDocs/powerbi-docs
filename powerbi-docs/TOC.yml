@@ -1090,7 +1090,7 @@
       - name: "Using capabilities"
         href: developer/visuals/capabilities.md
       - name: "Data View Mappings"
-        href: developer/visuals/dataviewmappings.md
+        href: developer/visuals/dataview-mappings.md
       - name: "Objects and properties"
         href: developer/visuals/objects-and-properties.md
       - name: "Advanced Edit Mode"
@@ -1104,7 +1104,7 @@
       - name: "Use R-powered custom visuals in Power BI"
         href: desktop-r-powered-custom-visuals.md
       - name: "Visuals interactions"
-        href: developer/visuals/allow-interactions.md
+        href: developer/visuals/visuals-interactions.md
       - name: "Add visuals tooltips"
         href: developer/visuals/adding-tooltips.md
       - name: "Add analytics pane" 
