@@ -101,7 +101,7 @@ To dig into the report data, or to build your own reports against the underlying
 
 Use **Save as** to convert the usage metrics report to a regular Power BI report that you can customize to your specific needs. You can also use Power BI Desktop to build custom usage metrics reports. See [Establish a connection to a published dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
 
-Better yet, the underlying dataset includes the usage details for all dashboards or reports in the workspace. This opens up more possibilities. You could, for example, create a report that compares all dashboards in your workspace based on usage. Or you could create a usage metrics dashboard for your Power BI app by aggregating usage across all the content distributed within that app.  See [remove the page-level filter](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) later in this article.
+Better yet, the underlying dataset includes the usage details for all dashboards or reports in the workspace. This opens up more possibilities. You could, for example, create a report that compares all dashboards in your workspace based on usage. Or you could create a usage metrics dashboard for your Power BI app by aggregating usage across all the content distributed within that app.  See [remove the page-level filter ](#remove-the-filter-to-see-all-workspace-usage-metrics) later in this article.
 
 ### Create a copy of the usage report
 
