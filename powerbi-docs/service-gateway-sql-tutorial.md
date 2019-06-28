@@ -44,11 +44,11 @@ Use the following procedure to create a basic Power BI report using the Adventur
 
 1. In Power BI Desktop, on the **Home** tab, select **Get Data** \> **SQL Server**.
 
-2. In the **SQL Server database** dialog box, enter the **Server** and **Database (optional)** names, make sure the **Data Connectivity mode** is **Import** , and then select **OK**.
+2. In the **SQL Server database** dialog box, enter the **Server** and **Database (optional)** names, make sure the **Data Connectivity mode** is **Import**, and then select **OK**.
 
     ![SQL Server database](./media/service-gateway-sql-tutorial/sql-server-database.png)
 
-3. Verify your **credentials** , then select **Connect**.
+3. Verify your **credentials**, then select **Connect**.
 
     > [!NOTE]
     > If you're unable to authenticate, make sure you select the correct authentication method and use an account with database access. In test environments, you might use Database authentication with an explicit username and password. In production environments, you typically use Windows authentication. Refer to [Troubleshooting refresh scenarios](refresh-troubleshooting-refresh-scenarios.md) and contact your database administrator for additional assistance.
@@ -67,7 +67,7 @@ Use the following procedure to create a basic Power BI report using the Adventur
 
     ![Fields pane](./media/service-gateway-sql-tutorial/fields-pane.png)
 
-5. Drag the **EndDate** onto **Report level filters** ,and under **Basic filtering** select only the checkbox for **(Blank)**.
+5. Drag the **EndDate** onto **Report level filters**, and under **Basic filtering** select only the checkbox for **(Blank)**.
 
     ![Report level filters](./media/service-gateway-sql-tutorial/report-level-filters.png)
 
@@ -93,13 +93,13 @@ In Power BI Desktop, you connected directly to your on-premises SQL Server datab
 
     ![Power BI settings](./media/service-gateway-sql-tutorial/power-bi-settings.png)
 
-2. On the **Datasets** tab, select the dataset **AdventureWorksProducts** , so you can connect to your on-premises SQL Server database through a data gateway.
+2. On the **Datasets** tab, select the dataset **AdventureWorksProducts**, so you can connect to your on-premises SQL Server database through a data gateway.
 
 3. Expand **Gateway connection** and verify that at least one gateway is listed. If you don't have a gateway, see the [Prerequisites](#prerequisites) section earlier in this tutorial for a link to the product documentation for installing and configuring a gateway.
 
     ![Gateway connection](./media/service-gateway-sql-tutorial/gateway-connection.png)
 
-4. Under **Actions** , expand the toggle button to view the data sources and select the **Add to gateway** link.
+4. Under **Actions**, expand the toggle button to view the data sources and select the **Add to gateway** link.
 
     ![Add data source to gateway](./media/service-gateway-sql-tutorial/add-data-source-gateway.png)
 
@@ -128,14 +128,14 @@ In Power BI Desktop, you connected directly to your on-premises SQL Server datab
 
 Now you've connected your dataset in Power BI to your SQL Server database on-premises through a data gateway, follow these steps to configure a refresh schedule. Refreshing your dataset on a scheduled basis helps to ensure that your reports and dashboards have the most recent data.
 
-1. In the left navigation pane, open **My Workspace** \> **Datasets**. Select the ellipsis (**. . .)** for the **AdventureWorksProducts** dataset, then select **Schedule refresh**.
+1. In the left navigation pane, open **My Workspace** \> **Datasets**. Select the ellipsis (**. . .**) for the **AdventureWorksProducts** dataset, then select **Schedule refresh**.
 
     > [!NOTE]
     > Make sure you select the ellipsis for the **AdventureWorksProducts** dataset and not the ellipsis for the report with the same name. The context menu of the **AdventureWorksProducts** report does not include a **Schedule refresh** option.
 
-2. In the **Scheduled refresh** section, under **Keep your data up to date** , set refresh to **On**.
+2. In the **Scheduled refresh** section, under **Keep your data up to date**, set refresh to **On**.
 
-3. Select an appropriate **Refresh frequency** , ( **Daily** for this example), and then under **Time** , select **Add another time** to specify the desired refresh time (6:30 AM and PM for this example).
+3. Select an appropriate **Refresh frequency**, ( **Daily** for this example), and then under **Time**, select **Add another time** to specify the desired refresh time (6:30 AM and PM for this example).
 
     ![Configure scheduled refresh](./media/service-gateway-sql-tutorial/configure-scheduled-refresh.png)
 
@@ -162,7 +162,7 @@ Now follow these steps so the updated data can flow through the gateway connecti
 
 1. In the Power BI Service, in the left navigation pane, select and expand **My Workspace**.
 
-2. Under **Datasets** , for the **AdventureWorksProducts** dataset, select the ellipsis (**. . .)** then select **Refresh now**.
+2. Under **Datasets**, for the **AdventureWorksProducts** dataset, select the ellipsis (**. . .**) then select **Refresh now**.
 
     ![Refresh now](./media/service-gateway-sql-tutorial/refresh-now.png)
 
@@ -178,13 +178,13 @@ It is a good idea to check the outcomes of past refresh cycles periodically in t
 
 1. In the upper-right corner of the Power BI user interface, select the settings gear icon and then select **Settings**.
 
-2. Switch to **Datasets** and select the dataset, such as **AdventureWorksProducts** , you want to examine.
+2. Switch to **Datasets** and select the dataset, such as **AdventureWorksProducts**, you want to examine.
 
 3. Select the **Refresh history** link to open the **Refresh history** dialog.
 
     ![Refresh history link](./media/service-gateway-sql-tutorial/refresh-history-link.png)
 
-4. On the **Scheduled** tab, notice the past scheduled and on-demand refreshes with their **Start** and **End** times, and a **Status** of **Completed** , which indicates that Power BI performed the refreshes successfully. For failed refreshes, you can see the error message and examine error details.
+4. On the **Scheduled** tab, notice the past scheduled and on-demand refreshes with their **Start** and **End** times, and a **Status** of **Completed**, which indicates that Power BI performed the refreshes successfully. For failed refreshes, you can see the error message and examine error details.
 
     ![Refresh history details](./media/service-gateway-sql-tutorial/refresh-history-details.png)
 
