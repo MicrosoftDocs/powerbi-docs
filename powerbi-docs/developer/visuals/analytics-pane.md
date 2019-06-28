@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Analytics pane
+# Analytics pane in Power BI Visuals
 
 **Analytics pane** was [introduced for native visuals](https://docs.microsoft.com/power-bi/desktop-analytics-pane) on November 2018.
 Custom visuals with api API v2.5.0 can present and manage their properties in the **Analytics pane**.

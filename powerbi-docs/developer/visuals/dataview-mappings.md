@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Data view mappings
+# Data view mappings in Power Bi Visuals
 
 A `dataViewMappings` describes how the data roles relate to each other and allows you to specify conditional requirements for the them.
 There's a section for each of the `dataMappings`.

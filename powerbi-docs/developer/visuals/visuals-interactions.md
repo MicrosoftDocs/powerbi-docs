@@ -31,7 +31,7 @@ You can find the full sample code at [SampleBarChart with allowInteractions](htt
    let allowInteractions = options.host.allowInteractions;
    bars.on('click', function(d) {
        if (allowInteractions) {
-           selectionManager.select(d.selectionId); 
+           selectionManager.select(d.selectionId);
            ...
        }
    });

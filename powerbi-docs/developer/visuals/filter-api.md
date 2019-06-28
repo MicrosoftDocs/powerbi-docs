@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Visual Filters API
+# Power BI Visual Filters API
 
 Filter-visual allows filter data. The main difference from selections is that other visuals will be filtered in any way, despite highlight support by other visual.
 

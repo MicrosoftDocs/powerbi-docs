@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Visual capabilities
+# Power BI Visual capabilities
 
 Capabilities provides information to the host about your visual. All properties on the Capabilities model are `optional`
 

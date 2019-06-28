@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Fetch more data
+# Fetch more data from Power BI
 
 Load more data API overcome the hard limit of 30-K data point. It brings data in chunks. The chunk size is configurable to improve performance according to use case.  
 

@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Advanced Edit Mode
+# Advanced edit mode
 
 Visuals that require advanced UI controls can declare support of Advanced Edit Mode.
 If supported, when in report editing mode, an `Edit` button will appear in the visual's menu.
