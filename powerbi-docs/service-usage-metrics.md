@@ -40,11 +40,14 @@ You can only run usage metrics reports in the Power BI service. However, if you 
 
 ## About the Usage Metrics report
 
-When you select **Usage metrics** or the icon ![usage metrics icon](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png), Power BI generates a pre-built report with usage metrics for that content for the last 90 days.  The report looks similar to the Power BI reports you're already familiar with, but it's designed to be informational -- not interactive. You’ll be able to slice based on how your end users received access, whether they were accessing via the web or mobile app, etc. As your dashboards and reports evolve, so too will the usage metrics report, which updates every day with new data.  
+When you select **Usage metrics** or the icon ![usage metrics icon](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) next to a dashboard or report, Power BI generates a pre-built report with usage metrics for that content for the last 90 days.  The report looks similar to the Power BI reports you're already familiar with. You can slice based on how your end users received access, whether they accessed via the web or mobile app, etc. As your dashboards and reports evolve, so too will the usage metrics report, which updates every day with new data.  
 
-Usage metrics reports won't show up in **Recent**, **Workspaces**, **Favorites**, or other content lists. They cannot be added to an app. If you pin a tile from a usage metrics report to a dashboard, that dashboard cannot be added to an app or content pack.
+Usage metrics reports don't show up in **Recent**, **Workspaces**, **Favorites**, or other content lists. They can't be added to an app. If you pin a tile from a usage metrics report to a dashboard, you can't add that dashboard to an app.
 
-To dig down into the report data, or to build your own reports against the dataset, use **Save as** (see [Save the Usage Metrics report as a full-featured Power BI report](#save-the-usage-metrics-report-as-a-full-featured-power-bi-report-personalize)).
+To dig into the report data, or to build your own reports against the underlying dataset, you have two options: 
+
+    - Make a copy of the report in the Power BI service. See [Save the Usage Metrics report as a Power BI report](#save-the-usage-metrics-report-as-a-full-featured-power-bi-report-personalize) later for details.
+    - Connect to the dataset from Power BI Desktop. See [Establish a connection to a published dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
 
 ## Open a Usage Metrics report for a dashboard or report
 
@@ -57,14 +60,14 @@ To dig down into the report data, or to build your own reports against the datas
 3. The first time you do this, Power BI creates the usage metrics report and lets you know when it's ready.
 
     ![metrics are ready](media/service-usage-metrics/power-bi-usage-metrics-ready.png)
-4. To open the results, select **View usage metrics**.
+4. To see the results, select **View usage metrics**.
 
     Usage metrics are a powerful ally as you work to deploy and maintain Power BI dashboards and reports. Wondering which pages of your report are most useful, and which ones you should phase out? Slice by **Report page** to find out. Wondering if you should build a mobile layout for your dashboard? Slice by **Platforms** to discover how many users are accessing your content via the mobile apps vs. via web browser.
 
-5. Optionally, hover over a visualization and select the pin icon to add the visualization to a dashboard. Or, from the top menubar, select **Pin Live Page** to add the entire page to a dashboard. From the dashboard you can monitor the usage metrics more-easily or share them with others.
+5. Optionally, hover over a visualization and select the pin icon to add the visualization to a dashboard. Or, from the top menu bar, select **Pin Live Page** to add the entire page to a dashboard. From the dashboard you can monitor the usage metrics more easily or share them with others.
 
     > [!NOTE]
-    > If you pin a tile from a usage metrics report to a dashboard, that dashboard cannot be added to an app or content pack.
+    > If you pin a tile from a usage metrics report to a dashboard, you can't add that dashboard to an app.
 
 ## Which metrics are reported?
 
@@ -96,7 +99,7 @@ To dig down into the report data, or to build your own reports against the datas
 
 ![Save as](media/service-usage-metrics/power-bi-save-as.png)
 
-Use **Save as** to convert the usage metrics report to a full-featured Power BI report that can be customized and shared. Once you’ve created a personalized copy, you’ll get full access to the underlying dataset, allowing you to customize the usage metrics report to your specific needs. You can even use Power BI Desktop to build custom usage metrics reports using the [live connection to Power BI service feature](https://powerbi.microsoft.com/blog/connecting-to-datasets-in-the-power-bi-service-from-desktop).
+Use **Save as** to convert the usage metrics report to a regular Power BI report that you can customize and share. After you create a copy, you can customize the usage metrics report to your specific needs. You can also use Power BI Desktop to build custom usage metrics reports using the [live connection to Power BI service feature](https://powerbi.microsoft.com/blog/connecting-to-datasets-in-the-power-bi-service-from-desktop).
 
 Better yet, the underlying dataset includes the usage details for all dashboards or reports in the workspace. This opens up yet another world of possibilities. You could, for example, create a report which compares all dashboards in your workspace based on usage. Or, you could create a usage metrics dashboard for your Power BI app by aggregating usage across all the content distributed within that app.  See [remove the Page level filter](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) below.
 
@@ -104,7 +107,7 @@ Better yet, the underlying dataset includes the usage details for all dashboards
 
 When Power BI creates the full-featured report, it also creates a new dataset **made up of all the dashboards or all the reports contained in the current workspace** that have been accessed in the last 90 days. For example, say you have a workspace named "Sales" and it contains three dashboards and two reports, and you create a usage metrics report on the "Northeast" dashboard. And then you use **Save as** to personalize and convert it to a full-featured report. The dataset for that new report contains the usage metrics *not only for that one dashboard named "Northeast"* but for all three dashboards in the "Sales" workspace. By default, the report displays data for the "Northeast" dashboard and you'll need to [remove a filter](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) (single click) to display data for all three dashboards.
 
-### Create a copy of the usage report using "Save as"
+### Create a copy of the usage report
 
 When you create a copy using "Save as" (personalize), Power BI converts the read-only pre-built report to a full-featured report.  At first glance, it looks exactly the same. However, you can now open the report in Editing view, add new visualizations, filters, and pages, modify or delete existing visualizations, and so much more. Power BI saves the brand new report and dataset in the current workspace. In the example below, the current workspace is **mihart**.
 
