@@ -24,19 +24,18 @@ Usage metrics reports are read-only. However, you can copy a usage metrics repor
 > [!NOTE]
 > Usage metrics track usage of reports that are embedded in SharePoint Online. However, usage metrics don't track dashboards and reports embedded via the “user owns credentials” or “app owns credentials” flow. Usage metrics also don't track usage of reports embedded via [publish to web](service-publish-to-web.md).
 
-## Why are usage metrics important to me?
+## Why usage metrics are important
 
 Knowing how your content is being used helps you demonstrate your impact and prioritize your efforts. Your usage metrics may show that one of your reports is used daily by a huge segment of the organization and it may show that a dashboard you created isn't being viewed at all. This type of feedback is invaluable in guiding your work efforts.
 
 You can only run usage metrics reports in the Power BI service. However, if you save a usage metrics report or pin it to a dashboard, you can open and interact with that report on mobile devices.
 
-### Prerequisites
+## Prerequisites
 
-- The usage metrics feature captures usage information from all users, regardless of the license they're assigned. However, you need a Power BI Pro license to run and access the usage metrics data.
-- Usage metrics are provided on dashboards or reports in the selected workspace. To  access usage metrics for a particular dashboard or report, you must:  
-  
-  - Have edit access to that dashboard or report
-  - Have a Pro license
+- You need a Power BI Pro license to run and access the usage metrics data. However, the usage metrics feature captures usage information from all users, regardless of the license they're assigned.
+- To access usage metrics for a particular dashboard or report, you must have edit access to that dashboard or report.
+- Your Power BI admin has to have enabled usage metrics for content creators. 
+- You Power BI admin may have also enabled collecting per-user data in usage metrics.
 
 ## About the Usage Metrics report
 
@@ -69,6 +68,15 @@ To dig into the report data, or to build your own reports against the underlying
     > [!NOTE]
     > If you pin a tile from a usage metrics report to a dashboard, you can't add that dashboard to an app.
 
+### Dashboard Usage Metrics report
+
+![Dashboard usage metrics report](media/service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
+
+### Report Usage Metrics report
+
+![Report usage metrics report](media/service-usage-metrics/power-bi-report-usage-metrics-update.png)
+
+
 ## Which metrics are reported?
 
 | Metric | Dashboard | Report | Description |
@@ -87,75 +95,53 @@ To dig into the report data, or to build your own reports against the underlying
 | Rank: Total views |yes |yes |For total views of all dashboards or reports in the organization over the past 90 days, where does this dashboard or report rank. |
 | Rank: Total shares |yes |no |For total shares of all dashboards in the organization over the past 90 days, where does this dashboard or report rank. |
 
-### Dashboard Usage Metrics report
-
-![Dashboard usage metrics report](media/service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
-
-### Report Usage Metrics report
-
-![Report usage metrics report](media/service-usage-metrics/power-bi-report-usage-metrics-update.png)
-
 ## Save a copy of the Usage Metrics report
 
 ![Save as](media/service-usage-metrics/power-bi-save-as.png)
 
-Use **Save as** to convert the usage metrics report to a regular Power BI report that you can customize and share. After you create a copy, you can customize the usage metrics report to your specific needs. You can also use Power BI Desktop to build custom usage metrics reports using the [live connection to Power BI service feature](https://powerbi.microsoft.com/blog/connecting-to-datasets-in-the-power-bi-service-from-desktop).
+Use **Save as** to convert the usage metrics report to a regular Power BI report that you can customize to your specific needs. You can also use Power BI Desktop to build custom usage metrics reports. See [Establish a connection to a published dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
 
-Better yet, the underlying dataset includes the usage details for all dashboards or reports in the workspace. This opens up yet another world of possibilities. You could, for example, create a report which compares all dashboards in your workspace based on usage. Or, you could create a usage metrics dashboard for your Power BI app by aggregating usage across all the content distributed within that app.  See [remove the Page level filter](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) below.
-
-### What is created when using "Save as"?
-
-When Power BI creates the full-featured report, it also creates a new dataset **made up of all the dashboards or all the reports contained in the current workspace** that have been accessed in the last 90 days. For example, say you have a workspace named "Sales" and it contains three dashboards and two reports, and you create a usage metrics report on the "Northeast" dashboard. And then you use **Save as** to personalize and convert it to a full-featured report. The dataset for that new report contains the usage metrics *not only for that one dashboard named "Northeast"* but for all three dashboards in the "Sales" workspace. By default, the report displays data for the "Northeast" dashboard and you'll need to [remove a filter](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) (single click) to display data for all three dashboards.
+Better yet, the underlying dataset includes the usage details for all dashboards or reports in the workspace. This opens up more possibilities. You could, for example, create a report that compares all dashboards in your workspace based on usage. Or you could create a usage metrics dashboard for your Power BI app by aggregating usage across all the content distributed within that app.  See [remove the page-level filter](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) later in this article.
 
 ### Create a copy of the usage report
 
-When you create a copy using "Save as" (personalize), Power BI converts the read-only pre-built report to a full-featured report.  At first glance, it looks exactly the same. However, you can now open the report in Editing view, add new visualizations, filters, and pages, modify or delete existing visualizations, and so much more. Power BI saves the brand new report and dataset in the current workspace. In the example below, the current workspace is **mihart**.
+When you create a copy of the read-only, pre-built usage report, Power BI creates an editable copy of the report. At first glance, it looks the same. However, you can now open the report in Editing view, add new visualizations, filters, and pages, modify or delete existing visualizations, and so on. Power BI saves the new report in the current workspace.
 
-1. From the pre-built usage metrics report, select **File > Save As**. Power BI converts the usage metrics report into a full-featured Power BI report. This is called a *personalized* usage metrics report. The personalized usage report and dataset are saved in the current workspace which is named **mihart*.
+1. From the pre-built usage metrics report, select **File > Save As**. Power BI creates an editable Power BI report, saved in the current workspace.
 
     ![Save as](media/service-usage-metrics/power-bi-save-as.png)
 2. Open the report in Editing view and [interact with it as you would with any other Power BI report](service-interact-with-a-report-in-editing-view.md). For example, add new pages and build new visualizations, add filters, format the fonts and colors, etc.
 
-    ![open report in Editing view](media/service-usage-metrics/power-vi-editing-view.png)
-3. Alternately, start with the new dataset and build a report from scratch.
-
-    ![Datasets tab](media/service-usage-metrics/power-bi-new-dataset.png)
-4. The new report is saved in the current workspace (mihart) and also added to the **Recent** content list.
+    ![Open report in Editing view](media/service-usage-metrics/power-vi-editing-view.png)
+3. The new report is saved to the **Reports** tab in the current workspace, and added to the **Recent** content list.
 
     ![Reports tab](media/service-usage-metrics/power-bi-new-report.png)
 
-### Remove the filter to see ***all*** the usage metrics data in the workspace
+## Remove the filter to see ***all*** workspace usage metrics
 
-To see the metrics for all the dashboards or for all the reports in the workspace, you'll have to remove a filter. By default, the personalized report is filtered to display metrics for only the dashboard or report that was used to create it.
+To see the metrics for all the dashboards or for all the reports in the workspace, you have to remove a filter. By default, the report is filtered to display metrics for only the dashboard or report that you used to create it.
 
-If, for example, you used the dashboard named "European sales" to create this new personalized report, only usage data from the "European sales" dashboard displays. To remove the filter, and enable data from all the dashboards in that workspace:
-
-1. Open the personalized report in Editing view.
+1. Select **Edit report** to open the new editable report in Editing view.
 
     ![select Edit report](media/service-usage-metrics/power-bi-editing-view.png)
-2. In the Filters pane, locate the **Report level filters** bucket and remove the filter by selecting the "x".
+2. In the Filters pane, locate the **Report level filters** bucket and remove the filter by selecting the eraser next to **ReportGuid**.
 
-    ![remove the filter](media/service-usage-metrics/power-bi-report-level-filter2.png)
+    ![Remove the filter](media/service-usage-metrics/power-bi-usage-report-clear-filter.png)
 
     Now your personalized report displays metrics for the entire workspace.
 
-## Admin controls for usage metrics - for Power BI administrators
+## Power BI admin controls for usage metrics
 
-Usage metrics reports are a feature that the Power BI or Office 365 administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are On by default for all users in the organization.
+Usage metrics reports are a feature that the Power BI or Office 365 administrator can turn on or off. Administrators have granular control over which users have access to usage metrics; they are **On** by default for all users in the organization.
 
-1. Open the Admin portal by selecting the gear icon in the top-right-corner of Power BI service and choosing **Admin portal**.
+> [!NOTE]
+> Only admins for the Power BI tenant can see the Admin portal and edit settings. 
 
-    ![select gear icon](media/service-usage-metrics/power-bi-admin-portal-new.png)
-2. From the Admin portal, select **Tenant settings** and choose **Usage metrics for content creators**.
+By default, per-user data is enabled for usage metrics, and content creator account information is included in the metrics report. If admins don’t want to expose this information for some or all users, they can disable the feature for specified security groups or for an entire organization. Account information then shows in the report as *Unnamed*.
 
-    ![Admin portal](media/service-usage-metrics/power-bi-usage-settings.png)
-3. Enable (or disable) usage metrics and select **Apply**.
+When disabling usage metrics for their entire organization, admins can use the **delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
 
-    ![Usage metrics enabled](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
-
-By default, per-user data is enabled for usage metrics, and content creator account information is included in the metrics report. If you don’t want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information then shows in the report as *Unnamed*.
-
-When disabling usage metrics for their entire organization, admins can use the **delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports and datasets. This option removes all access to usage metrics data for all users in the organization who may already be using it. Be careful, because deleting existing usage metrics content is irreversible.
+See [Usage metrics](service-admin-portal.md#usage-metrics) in the Admin portal article for details on these settings. 
 
 ## Usage metrics in national clouds
 

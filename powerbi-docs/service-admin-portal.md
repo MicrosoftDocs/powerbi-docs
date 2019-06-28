@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 06/27/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -78,6 +78,37 @@ Here’s a breakdown of what you can see in each tile:
 The second section shows the same type of information, but based on groups. This lets you see which groups in your organization are most active and what kind of content they are consuming.
 
 With this information, you can get real insights into how people are using Power BI across your organization, and be able to recognize those users and groups who are very active in your organization.
+
+## Control usage metrics
+
+Usage metrics reports are a feature that the Power BI or Office 365 administrator can turn on or off. Administrators have granular control over which users have access to usage metrics. They are **On** by default for all users in the organization.
+
+Admins can also determine whether content creators can see per-user data in usage metrics. 
+
+### Usage metrics for content creators
+
+2. In the Admin portal, select **Tenant settings** > **Usage metrics for content creators**.
+
+    ![Admin portal](media/service-usage-metrics/power-bi-usage-settings.png)
+3. Enable (or disable) usage metrics > **Apply**.
+
+    ![Usage metrics enabled](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
+
+
+### Per-user data in usage metrics
+
+By default, per-user data is enabled for usage metrics, and content creator account information is included in the metrics report. If you don’t want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information then shows in the report as *Unnamed*.
+
+![Per-user usage data](media/service-admin-portal/power-bi-admin-per-user-usage-data.png)
+
+### Delete all existing usage metrics content
+
+When disabling usage metrics for their entire organization, admins can also choose one or both options to:
+
+- **Delete all existing usage metrics content** to delete all existing reports and dashboard tiles that were built using the usage metrics reports and datasets. This option removes all access to usage metrics data for all users in the organization who may already be using it. 
+- **Delete all existing per-user data in current usage metrics content** This option removes all access to per-user data for all users in the organization who may already be using it. 
+
+Be careful, because deleting existing usage and per-user metrics content is irreversible.
 
 ## Users
 
