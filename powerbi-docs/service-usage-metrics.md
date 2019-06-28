@@ -45,7 +45,7 @@ Usage metrics reports don't show up in **Recent**, **Workspaces**, **Favorites**
 
 To dig into the report data, or to build your own reports against the underlying dataset, you have two options: 
 
-    - Make a copy of the report in the Power BI service. See [Save the Usage Metrics report as a Power BI report](#save-the-usage-metrics-report-as-a-full-featured-power-bi-report-personalize) later for details.
+    - Make a copy of the report in the Power BI service. See [Save a copy of the Usage Metrics report](#save-a-copy-of-the-usage-metrics-report) later in this article for details.
     - Connect to the dataset from Power BI Desktop. See [Establish a connection to a published dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
 
 ## Open a Usage Metrics report for a dashboard or report
@@ -128,7 +128,7 @@ To see the metrics for all the dashboards or for all the reports in the workspac
 
     ![Remove the filter](media/service-usage-metrics/power-bi-usage-report-clear-filter.png)
 
-    Now your personalized report displays metrics for the entire workspace.
+    Now your report displays metrics for the entire workspace.
 
 ## Power BI admin controls for usage metrics
 
@@ -145,14 +145,14 @@ See [Usage metrics](service-admin-portal.md#usage-metrics) in the Admin portal a
 
 ## Usage metrics in national clouds
 
-Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Due to this unique model for local regulations, usage metrics are not available in national clouds. For more information, see [national clouds](https://powerbi.microsoft.com/clouds/).
+Power BI is available in separate national clouds. These clouds offer the same levels of security, privacy, compliance and transparency as the global version of Power BI, combined with a unique model for local regulations on service delivery, data residency, access, and control. Due to this unique model for local regulations, usage metrics aren't available in national clouds. For more information, see [national clouds](https://powerbi.microsoft.com/clouds/).
 
 ## Considerations and limitations
 
-It's important to understand that differences that can occur when comparing usage metrics and audit logs, and why. *Audit logs* are collected using data from the Power BI service, and *Usage metrics* are collected on the client. Because of that difference, aggregate counts of activities in audit logs may not always match usage metrics, because of the following:
+It's important to understand that differences can occur when comparing usage metrics and audit logs, and why. *Audit logs* are collected using data from the Power BI service, and *Usage metrics* are collected on the client. Aggregate counts of activities in audit logs may not always match usage metrics, because of the following:
 
 * Usage metrics may sometimes undercount activities due to inconsistent network connections, ad blockers, or other issues that can disrupt sending the events from the client.
-* Certain types of views are not included in usage metrics, as described earlier in this article.
+* Certain types of views aren't included in usage metrics, as described earlier in this article.
 * Usage metrics may sometimes overcount activities, in situations where the client refreshes without the need for a request being sent back to the Power BI service.
 
 ## Frequently asked questions
@@ -165,21 +165,21 @@ In addition to potential differences between usage metrics and audit logs, the f
 
 **Q:**    Do usage metrics capture views from embedded dashboards and reports?
 
-**A:**    Usage metrics currently does not support capturing usage for embedded dashboards, reports, and the [publish to web](service-publish-to-web.md) flow.          In those cases, we recommend using existing web analytics platforms to track usage for the hosting app or portal.
+**A:**    Usage metrics currently doesn't support capturing usage for embedded dashboards, reports, and the [publish to web](service-publish-to-web.md) flow.          In those cases, we recommend using existing web analytics platforms to track usage for the hosting app or portal.
 
 **Q:**    I can't run usage metrics on any content at all.
 
-**A1:**    Admins can turn off this feature for their organization.  Contact your Admin to see if this is the case.
+**A1:**    Admins can turn off this feature for their organization.  Contact your admin to see if this is the case.
 
 **A2:**    Usage metrics is a Power BI Pro feature.
 
-**Q:**    The data doesn't seem up-to-date. For example, distribution methods don't show up, report pages are missing, etc.
+**Q:**    The data doesn't seem up to date. For example, distribution methods don't show up, report pages are missing, etc.
 
 **A:**    It can take up to 24 hours for data to update.
 
 **Q:**    There are four reports in the workspace but the usage metrics report only displays three.
 
-**A:**    The usage metrics report only includes reports (or dashboards) that have been accessed in the past 90 days.  If a report (or dashboard) does not show up, likely it hasn't been used in more than 90 days.
+**A:**    The usage metrics report only includes reports (or dashboards) that have been accessed in the past 90 days.  If a report (or dashboard) doesn't show up, likely it hasn't been used in more than 90 days.
 
 ## Next steps
 
