@@ -3,7 +3,7 @@ title: Data view mappings
 description: How Power BI transforms data before passing into the visuals
 author: asander
 ms.author: asander
-manager: AviSander
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

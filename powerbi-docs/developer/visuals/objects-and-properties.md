@@ -3,7 +3,7 @@ title: Object and properties
 description: Customizable properties of Power BI Visual
 author: MrMeison
 ms.author: rasala
-manager: AviSander
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

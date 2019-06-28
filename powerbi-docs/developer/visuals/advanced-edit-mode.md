@@ -3,7 +3,7 @@ title: Advanced Edit Mode
 description: Power BI Visuals with advanced UI controls
 author: shaym83
 ms.author: shaym
-manager: AviSander
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

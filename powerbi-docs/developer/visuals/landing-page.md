@@ -3,7 +3,7 @@ title: Landing page
 description: How to add landing page to Power Bi Visuals
 author: sranins
 ms.author: rasala
-manager: AviSander
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

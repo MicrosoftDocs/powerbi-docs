@@ -3,7 +3,7 @@ title: Analytics pane
 description: How to allow to create dynamic reference lines in Power BI Visuals
 author: Guy-Moses
 ms.author: guymos
-manager: AviSander
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

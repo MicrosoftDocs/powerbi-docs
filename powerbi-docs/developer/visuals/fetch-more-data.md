@@ -3,7 +3,7 @@ title: Fetch more data
 description: Enable segmented fetch of large datasets for Power BI Visuals
 author: AviSander
 ms.author: asander
-manager: AviSander
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

@@ -3,7 +3,7 @@ title: Visuals interactions
 description: How to check that Power BI Visual should allow visual interactions
 author: shaym83
 ms.author: shaym
-manager: AviSander
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

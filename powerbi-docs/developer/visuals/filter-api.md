@@ -3,7 +3,7 @@ title: Visual Filters API
 description: How Power BI Visuals can filter other visuals
 author: sranins
 ms.author: rasala
-manager: AviSander
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
