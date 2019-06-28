@@ -46,7 +46,7 @@ There are nine tabs in the portal. The rest of this article provides information
 
 ## Usage metrics
 
-The **Usage metrics** enables you to monitor Power BI usage for your organization. It also provides the ability to see which users, and groups, are the most active within Power BI for your organization.
+The **Usage metrics** enables you to monitor Power BI usage for your organization. It also provides the ability to see which users, and groups, are the most active within Power BI for your organization. See [Monitor usage metrics for Power BI dashboards and reports](service-usage-metrics.md) for details about the reports themselves.
 
 > [!NOTE]
 > The first time you access the dashboard, or after you visit again after a long period of not viewing the dashboard, you'll likely see a loading screen while we load the dashboard.
