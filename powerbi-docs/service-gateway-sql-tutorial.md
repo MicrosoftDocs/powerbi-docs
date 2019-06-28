@@ -46,7 +46,7 @@ Use the following procedure to create a basic Power BI report using the Adventur
 
 2. In the **SQL Server database** dialog box, enter the **Server** and **Database (optional)** names, make sure the **Data Connectivity mode** is **Import** , and then select **OK**.
 
-    ![SQL Server database](media/service-gateway-sql-tutorial/sql-server-database.png)
+    ![SQL Server database](./media/service-gateway-sql-tutorial/sql-server-database.png)
 
 3. Verify your **credentials** , then select **Connect**.
 
@@ -57,23 +57,23 @@ Use the following procedure to create a basic Power BI report using the Adventur
 
 2. In the **Navigator** dialog box, select the **DimProduct** table, then select **Load**.
 
-    ![Data source navigator](media/service-gateway-sql-tutorial/data-source-navigator.png)
+    ![Data source navigator](./media/service-gateway-sql-tutorial/data-source-navigator.png)
 
 3. In the Power BI Desktop **Report** view, in the **Visualizations** pane, select the **Stacked column chart**.
 
-    ![Stacked column chart](media/service-gateway-sql-tutorial/stacked-column-chart.png)
+    ![Stacked column chart](./media/service-gateway-sql-tutorial/stacked-column-chart.png)
 
 4. With the column chart selected in the report canvas, in the **Fields** pane select the **EnglishProductName** and **ListPrice** fields.
 
-    ![Fields pane](media/service-gateway-sql-tutorial/fields-pane.png)
+    ![Fields pane](./media/service-gateway-sql-tutorial/fields-pane.png)
 
 5. Drag the **EndDate** onto **Report level filters** ,and under **Basic filtering** select only the checkbox for **(Blank)**.
 
-    ![Report level filters](media/service-gateway-sql-tutorial/report-level-filters.png)
+    ![Report level filters](./media/service-gateway-sql-tutorial/report-level-filters.png)
 
     The chart should now look like the following.
 
-    ![Finished column chart](media/service-gateway-sql-tutorial/finished-column-chart.png)
+    ![Finished column chart](./media/service-gateway-sql-tutorial/finished-column-chart.png)
 
     Notice that the five **Road-250** products are listed with the highest list price. This will change when you update the data and refresh the report later in this tutorial.
 
@@ -83,7 +83,7 @@ Use the following procedure to create a basic Power BI report using the Adventur
 
 8. On the **Success** screen, select **Open 'AdventureWorksProducts.pbix' in Power BI**.
 
-    [Publish to Power BI](media/service-gateway-sql-tutorial/publish-to-power-bi.png)
+    [Publish to Power BI](./media/service-gateway-sql-tutorial/publish-to-power-bi.png)
 
 ## Connect a dataset to a SQL Server database
 
@@ -91,17 +91,17 @@ In Power BI Desktop, you connected directly to your on-premises SQL Server datab
 
 1. Sign in to Power BI. In the upper-right corner, select the settings gear icon and then select **Settings**.
 
-    ![Power BI settings](media/service-gateway-sql-tutorial/power-bi-settings.png)
+    ![Power BI settings](./media/service-gateway-sql-tutorial/power-bi-settings.png)
 
 2. On the **Datasets** tab, select the dataset **AdventureWorksProducts** , so you can connect to your on-premises SQL Server database through a data gateway.
 
 3. Expand **Gateway connection** and verify that at least one gateway is listed. If you don't have a gateway, see the [Prerequisites](#prerequisites) section earlier in this tutorial for a link to the product documentation for installing and configuring a gateway.
 
-    ![Gateway connection](media/service-gateway-sql-tutorial/gateway-connection.png)
+    ![Gateway connection](./media/service-gateway-sql-tutorial/gateway-connection.png)
 
 4. Under **Actions** , expand the toggle button to view the data sources and select the **Add to gateway** link.
 
-    ![Add data source to gateway](media/service-gateway-sql-tutorial/add-data-source-gateway.png)
+    ![Add data source to gateway](./media/service-gateway-sql-tutorial/add-data-source-gateway.png)
 
     > [!NOTE]
     > If you're not a gateway administrator and don't want to install a gateway yourself, contact a gateway administrator in your organization. They can create the required data source definition to connect your dataset to your SQL Server database.
@@ -118,11 +118,11 @@ In Power BI Desktop, you connected directly to your on-premises SQL Server datab
     | Username | The user account you use to connect to SQL Server. |
     | Password | The password for the account you use to connect to SQL Server. |
 
-    ![Data source settings](media/service-gateway-sql-tutorial/data-source-settings.png)
+    ![Data source settings](./media/service-gateway-sql-tutorial/data-source-settings.png)
 
 6. On the **Datasets** tab, expand the **Gateway connection** section again. Select the data gateway you configured, which shows a **Status** of running on the machine where you installed it, and select **Apply**.
 
-    ![Update gateway connection](media/service-gateway-sql-tutorial/update-gateway-connection.png)
+    ![Update gateway connection](./media/service-gateway-sql-tutorial/update-gateway-connection.png)
 
 ## Configure a refresh schedule
 
@@ -137,7 +137,7 @@ Now you've connected your dataset in Power BI to your SQL Server database on-pre
 
 3. Select an appropriate **Refresh frequency** , ( **Daily** for this example), and then under **Time** , select **Add another time** to specify the desired refresh time (6:30 AM and PM for this example).
 
-    ![Configure scheduled refresh](media/service-gateway-sql-tutorial/configure-scheduled-refresh.png)
+    ![Configure scheduled refresh](./media/service-gateway-sql-tutorial/configure-scheduled-refresh.png)
 
     > [!NOTE]
     > You can configure up to 8 daily time slots if your dataset is on shared capacity, or 48 time slots on Power BI Premium.
@@ -164,13 +164,13 @@ Now follow these steps so the updated data can flow through the gateway connecti
 
 2. Under **Datasets** , for the **AdventureWorksProducts** dataset, select the ellipsis (**. . .)** then select **Refresh now**.
 
-    ![Refresh now](media/service-gateway-sql-tutorial/refresh-now.png)
+    ![Refresh now](./media/service-gateway-sql-tutorial/refresh-now.png)
 
     Note in the upper right corner, that Power BI is preparing to perform the requested refresh.
 
 3. Select **My Workspace \> Reports \> AdventureWorksProducts**. See how the updated data flowed through, and the product with the highest list price is now **Road-250 Red, 58**.
 
-    ![Updated column chart](media/service-gateway-sql-tutorial/updated-column-chart.png)
+    ![Updated column chart](./media/service-gateway-sql-tutorial/updated-column-chart.png)
 
 ## Review the refresh history
 
@@ -182,11 +182,11 @@ It is a good idea to check the outcomes of past refresh cycles periodically in t
 
 3. Select the **Refresh history** link to open the **Refresh history** dialog.
 
-    ![Refresh history link](media/service-gateway-sql-tutorial/refresh-history-link.png)
+    ![Refresh history link](./media/service-gateway-sql-tutorial/refresh-history-link.png)
 
 4. On the **Scheduled** tab, notice the past scheduled and on-demand refreshes with their **Start** and **End** times, and a **Status** of **Completed** , which indicates that Power BI performed the refreshes successfully. For failed refreshes, you can see the error message and examine error details.
 
-    ![Refresh history details](media/service-gateway-sql-tutorial/refresh-history-details.png)
+    ![Refresh history details](./media/service-gateway-sql-tutorial/refresh-history-details.png)
 
     > [!NOTE]
     > The OneDrive tab is only relevant for datasets connected to Power BI Desktop files, Excel workbooks, or CSV files on OneDrive or SharePoint Online, as explained in more detail in [Data refresh in Power BI](refresh-data.md).
