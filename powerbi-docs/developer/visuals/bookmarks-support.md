@@ -87,9 +87,11 @@ At this point, the visual should compare the array of `ISelectionId[]` with the 
 this.selectionManager.registerOnSelectCallback(
     (ids: ISelectionId[]) => {
         visualDataPoints.forEach(dataPoint => {
-            if (ids.key === dataPoint.selectionId.key) {
-                dataPoint.selected = true;
-            }
+            ids.forEach(bookmarkSelection => {
+                if (bookmarkSelection.equals(dataPoint.selectionId)) {
+                    dataPoint.selected = true;
+                }
+            });
         });
     });
 );
