@@ -34,8 +34,7 @@ You can only run usage metrics reports in the Power BI service. However, if you 
 
 - You need a Power BI Pro license to run and access the usage metrics data. However, the usage metrics feature captures usage information from all users, regardless of the license they're assigned.
 - To access usage metrics for a particular dashboard or report, you must have edit access to that dashboard or report.
-- Your Power BI admin has to have enabled usage metrics for content creators. 
-- You Power BI admin may have also enabled collecting per-user data in usage metrics.
+- Your Power BI admin has to have enabled usage metrics for content creators. You Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](service-admin-portal.md#control-usage-metrics). 
 
 ## About the Usage Metrics report
 
@@ -45,8 +44,8 @@ Usage metrics reports don't show up in **Recent**, **Workspaces**, **Favorites**
 
 To dig into the report data, or to build your own reports against the underlying dataset, you have two options: 
 
-    - Make a copy of the report in the Power BI service. See [Save a copy of the Usage Metrics report](#save-a-copy-of-the-usage-metrics-report) later in this article for details.
-    - Connect to the dataset from Power BI Desktop. See [Establish a connection to a published dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
+- Make a copy of the report in the Power BI service. See [Save a copy of the Usage Metrics report](#save-a-copy-of-the-usage-metrics-report) later in this article for details.
+- Connect to the dataset from Power BI Desktop. See [Establish a connection to a published dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
 
 ## Open a Usage Metrics report for a dashboard or report
 
@@ -97,9 +96,7 @@ To dig into the report data, or to build your own reports against the underlying
 
 ## Save a copy of the Usage Metrics report
 
-![Save as](media/service-usage-metrics/power-bi-save-as.png)
-
-Use **Save as** to convert the usage metrics report to a regular Power BI report that you can customize to your specific needs. You can also use Power BI Desktop to build custom usage metrics reports. See [Establish a connection to a published dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
+Use **Save as** to convert the usage metrics report to a regular Power BI report that you can customize to meet your specific needs. You can also use Power BI Desktop to build custom usage metrics reports. See [Establish a connection to a published dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
 
 Better yet, the underlying dataset includes the usage details for all dashboards or reports in the workspace. This opens up more possibilities. You could, for example, create a report that compares all dashboards in your workspace based on usage. Or you could create a usage metrics dashboard for your Power BI app by aggregating usage across all the content distributed within that app.  See [remove the page-level filter ](#remove-the-filter-to-see-all-workspace-usage-metrics) later in this article.
 
@@ -183,6 +180,6 @@ In addition to potential differences between usage metrics and audit logs, the f
 
 ## Next steps
 
-[Favorite a dashboard](consumer/end-user-favorite.md)
+[Administering Power BI in the admin portal](service-admin-portal.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
