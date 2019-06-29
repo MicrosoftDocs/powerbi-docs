@@ -46,7 +46,7 @@ There are nine tabs in the portal. The rest of this article provides information
 
 ## Usage metrics
 
-The **Usage metrics** enables you to monitor Power BI usage for your organization. It also provides the ability to see which users, and groups, are the most active within Power BI for your organization. See [Monitor usage metrics for Power BI dashboards and reports](service-usage-metrics.md) for details about the reports themselves.
+The **Usage metrics** enables you to monitor Power BI usage for your organization. It also provides the ability to see which users, and groups, are the most active within Power BI for your organization. 
 
 > [!NOTE]
 > The first time you access the dashboard, or after you visit again after a long period of not viewing the dashboard, you'll likely see a loading screen while we load the dashboard.
@@ -85,11 +85,14 @@ Usage metrics reports are a feature that the Power BI or Office 365 administrato
 
 Admins can also determine whether content creators can see per-user data in usage metrics. 
 
+See [Monitor usage metrics for Power BI dashboards and reports](service-usage-metrics.md) for details about the reports themselves.
+
 ### Usage metrics for content creators
 
 2. In the Admin portal, select **Tenant settings** > **Usage metrics for content creators**.
 
-    ![Admin portal](media/service-usage-metrics/power-bi-usage-settings.png)
+    ![Admin portal tenant settings usage metrics](media/service-admin-portal/power-bi-admin-usage-metrics.png)
+
 3. Enable (or disable) usage metrics > **Apply**.
 
     ![Usage metrics enabled](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
@@ -97,7 +100,7 @@ Admins can also determine whether content creators can see per-user data in usag
 
 ### Per-user data in usage metrics
 
-By default, per-user data is enabled for usage metrics, and content creator account information is included in the metrics report. If you don’t want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information then shows in the report as *Unnamed*.
+By default, per-user data is enabled for usage metrics, and content consumer account information is included in the metrics report. If you don’t want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information then shows in the report as *Unnamed*.
 
 ![Per-user usage data](media/service-admin-portal/power-bi-admin-per-user-usage-data.png)
 
