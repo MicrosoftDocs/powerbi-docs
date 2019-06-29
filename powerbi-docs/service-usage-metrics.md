@@ -17,7 +17,7 @@ LocalizationGroup: Dashboards
 
 If you create dashboards and reports, usage metrics help you understand their impact. When you run either dashboard usage metrics or report usage metrics, you discover how those dashboards and reports are being used throughout your organization, who's using them, and for what purpose.  
 
-Usage metrics reports are read-only. However, you can copy a usage metrics report. Copying creates a standard Power BI report that you can edit. You can also build your own reports based on the underlying dataset, which contains usage metrics for all dashboards or all reports in the selected workspace. The copied report shows metrics for the selected dashboard or report. You can remove the default filter and have access to the underlying dataset, with all the usage metrics of the selected workspace. You may even see the names of specific users, if your admin has allowed that.
+Usage metrics reports are read-only. However, you can copy a usage metrics report. Copying creates a standard Power BI report that you can edit. You can also build your own reports in Power BI Desktop based on the underlying dataset, which contains usage metrics for all dashboards or all reports in a workspace. To begin with, the copied report shows metrics just for the selected dashboard or report. You can remove the default filter and have access to the underlying dataset, with all the usage metrics of the selected workspace. You may even see the names of specific users, if your admin has allowed that.
 
 ![usage metrics report](media/service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
 
@@ -136,7 +136,7 @@ Usage metrics reports are a feature that the Power BI or Office 365 administrato
 > [!NOTE]
 > Only admins for the Power BI tenant can see the Admin portal and edit settings. 
 
-By default, per-user data is enabled for usage metrics, and content creator account information is included in the metrics report. If admins don’t want to expose this information for some or all users, they can disable the feature for specified security groups or for an entire organization. Account information then shows in the report as *Unnamed*.
+By default, per-user data is enabled for usage metrics, and content consumer account information is included in the metrics report. If admins don’t want to expose this information for some or all users, they can disable the feature for specified security groups or for an entire organization. Account information then shows in the report as *Unnamed*.
 
 When disabling usage metrics for their entire organization, admins can use the **delete all existing usage metrics content** option to delete all existing reports and dashboard tiles that were built using the usage metrics reports. This option removes all access to usage metrics data for all users in the organization who may already be using it. Deleting existing usage metrics content is irreversible.
 
