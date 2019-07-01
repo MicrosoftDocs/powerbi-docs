@@ -9,7 +9,7 @@ featuredvideoid: SYk_gWrtKvM
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 07/01/2019
 LocalizationGroup: Visualizations 
 ---
 
@@ -28,7 +28,7 @@ And for even more choices, visit the [Microsoft AppSource community site](https:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 
-  If you're new to Power BI, or need a refresher, use the links below to learn the basics of Power BI visualizations.  Alternately, use our Table of Contents (along the left side of this article) to find even more helpful information.
+If you're new to Power BI, or need a refresher, use the links below to learn the basics of Power BI visualizations.  Alternately, use our Table of Contents (along the left side of this article) to find even more helpful information.
 
 ## Add a visualization in Power BI
 
@@ -37,6 +37,14 @@ And for even more choices, visit the [Microsoft AppSource community site](https:
 ## Upload a custom visualization and use it in Power BI
 
 Add a custom visualization that you created yourself or that you found in the [Microsoft AppSource community site](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Feeling creative? Dig into our source code and use our [developer tools](../developer/custom-visual-develop-tutorial.md) to create a new visualization type and [share it with the community](../developer/office-store.md). To learn more about developing a custom visual, visit [Developing a Power BI custom visual](../developer/custom-visual-develop-tutorial.md).
+
+## Personalize your visualization pane (preview)
+
+If you find yourself using the same custom visual across many reports, you can pin the custom visualization to your visualization pane. To pin the visualization, right-click on the visual to pin it to the pane.
+
+Once a visual has been pinned, it moves up to live with the other built-in visuals. This visual is now tied to your signed in account, so any new reports you built will automatically have this visual included, assuming you are signed in. This makes it very easy to standardize on a particular visual without needing to add it to every single report.
+
+While this feature is in preview, you’ll only see your pinned visuals in Power BI Desktop. Additionally, you must be signed in for this feature to be available.
 
 ## Change the visualization type
 
