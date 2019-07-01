@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 06/06/2018
+ms.date: 05/28/2019
 ms.author: mblythe
 
 LocalizationGroup: Gateways
@@ -16,12 +16,18 @@ LocalizationGroup: Gateways
 
 # Merge or append on-premises and cloud data sources
 
-The On-premises data gateway enables you to merge or append on-premises and cloud data sources in the same query. This is helpful when you want to mashup data from multiple sources without having to use separate queries.
+The on-premises data gateway enables you to merge or append on-premises and cloud data sources in the same query. This is helpful when you want to combine data from multiple sources without having to use separate queries.
+
+>[!NOTE]
+>This article applies only to datasets that have cloud and on-premises data sources merged or appended in a single query. For datasets, which include separate queries - one connecting to an on-premises and the other to a cloud data source - the query using the cloud data source won't be executed using the gateway.
 
 ## Prerequisites
 
-- A [gateway installed](service-gateway-install.md) on a local computer.
+- A [gateway installed](/data-integration/gateway/service-gateway-install) on a local computer.
 - A Power BI Desktop file with queries that combine on-premises and cloud data sources.
+
+>[!NOTE]
+>To access any cloud data sources, you must ensure that the gateway has access to those data sources.
 
 1. In the upper-right corner of the Power BI service, select the gear icon ![Settings gear icon](media/service-gateway-mashup-on-premises-cloud/icon-gear.png) > **Manage gateways**.
 
@@ -45,8 +51,9 @@ The On-premises data gateway enables you to merge or append on-premises and clou
 
      ![Dataset settings](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
 
-7. With the cloud credentials set, you can now refresh the dataset using the **Refresh now** option, or schedule it to refresh periodically.
+   Make sure privacy levels for both cloud and on-premises data sources are set appropriately to ensure the joins are handled securely.
 
+7. With the cloud credentials set, you can now refresh the dataset using the **Refresh now** option, or schedule it to refresh periodically.
 
 ## Next steps
 
