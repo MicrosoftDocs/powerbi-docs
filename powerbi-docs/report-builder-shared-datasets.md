@@ -18,9 +18,12 @@ Picture a scenario in which you've created a Power BI report in Power BI Desktop
 ## Prerequisites
 
 - Install Power BI Report Builder.
-- Download the Power BI sample.
+- Download the Power BI Sales and Marketing sample template app.
 
+## Connect to the Power BI dataset
 
+1. In Power BI Report Builder in the Report Data pane, select **New** > **Power BI Dataset Connection**.
+1. Sign in to your Power BI account.
 
 Power BI Paginated Report Builder is a tool for authoring paginated reports.  When you design a paginated report, you're creating a report definition that specifies what data to retrieve, where to get it, and how to display it. When you run the report, the report processor takes the report definition you have specified, retrieves the data, and combines it with the report layout to generate the report. You can preview your report in Report Builder. Then publish your report to the Power BI service.
 
