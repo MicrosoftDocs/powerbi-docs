@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 07/02/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -19,17 +19,21 @@ The Retail Analysis sample content pack contains a dashboard, report, and datase
 
 ![Dashboard for the Retail Analysis sample](media/sample-retail-analysis/retail1.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-This tutorial uses the Power BI service and the Retail Analysis sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
+This tutorial explores the Retail Analysis sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
-## Prerequisites
+You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro license, you can save the sample to your My Workspace in the Power BI service. 
+
+## Get the sample
 
  Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the content pack for this sample
 
-1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
+1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample. 
+
+    If you don't have a Power BI Pro license, you can save the sample to your My Workspace.
 
 2. In the bottom-left corner, select **Get Data**.
 
@@ -133,7 +137,7 @@ Let’s look at how specific districts are doing.
 3. Explore the other district managers and categories; what other insights can you find?
 4. When you are ready, return to the dashboard.
 
-## What is our data telling us about sales growth this year?
+## What the data says about sales growth this year
 The last area we want to explore is our growth by examining the new stores opened this year.
 
 1. Select the **Stores Opened This Year by Open Month, Chain** tile, which opens the **New Stores Analysis** page of the report.

@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 07/02/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -29,17 +29,21 @@ This sample relies on two measures of revenue:
 
 ![Dashboard for the Opportunity Analysis sample](media/sample-opportunity-analysis/opportunity1.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-This tutorial uses the Power BI service and the Opportunity Analysis sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
+This tutorial explores the Opportunity Analysis sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
-## Prerequisites
+You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro license, you can save the sample to your My Workspace in the Power BI service. 
+
+## Get the sample
 
 Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the content pack for this sample
 
-1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
+1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample. 
+
+    If you don't have a Power BI Pro license, you can save the sample to your My Workspace.
 
 2. In the bottom-left corner, select **Get Data**.
 
@@ -76,7 +80,7 @@ Because the effort to land a deal is the same whether the deal is classified as 
 
 2. Select the **Opportunity Count by Partner Driven, Sales Stage** tile to open the first page of the Opportunity Analysis Sample report. 
 
-![Opportunity Count by Partner Driven, Sales Stage tile](media/sample-opportunity-analysis/opportunity2.png)
+    ![Opportunity Count by Partner Driven, Sales Stage tile](media/sample-opportunity-analysis/opportunity2.png)
 
 ## Explore the pages in the report
 
@@ -106,7 +110,7 @@ Note the following details:
 Clearly our partners are doing a better job than non-partners selling to customers. It might make sense to funnel more deals through our partners.
 
 ### Opportunity Count by Region and Stage
-This page of the report looks at similar data as the previous page but breaks it down by region and stage. 
+This page of the report looks at data similar to the data on the previous page but breaks it down by region and stage. 
 
 ![Region Stage Counts page](media/sample-opportunity-analysis/opportunity5.png)
 
