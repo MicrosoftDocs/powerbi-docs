@@ -15,9 +15,9 @@ LocalizationGroup: Visualizations
 
 # Visualizations in Power BI reports
 
-Visualizations (aka visuals) display insights that have been discovered in the data. A Power BI report might have a single page with one visual or it might have pages full of visuals. In Power BI service, visuals can be [pinned from reports to dashboards](../service-dashboard-pin-tile-from-report.md).
+Visualizations (known as visuals for short) display insights that have been discovered in the data. A Power BI report might have a single page with one visual or it might have pages full of visuals. In Power BI service, visuals can be [pinned from reports to dashboards](../service-dashboard-pin-tile-from-report.md).
 
-It's important to make the distinction between report *designers* and report *consumers*  If you are the person building or modifying the report, then you are a designer.  Designers have edit permissions to the report and its underlying dataset. In Power BI Desktop, this means you can open the dataset in Data view and create visuals in Report view. In Power BI service, this means you can open the data set or report in the report editor in [Editing view](../consumer/end-user-reading-view.md). If a report or dashboard has been [shared with you ](../consumer/end-user-shared-with-me.md), you are a report **consumer**. You'll be able to view and interact with the report and its visuals but you won't be able to save major changes.
+It's important to make the distinction between report *designers* and report *consumers*.  If you are the person building or modifying the report, then you are a designer.  Designers have edit permissions to the report and its underlying dataset. In Power BI Desktop, this means you can open the dataset in Data view and create visuals in Report view. In Power BI service, this means you can open the data set or report in the report editor in [Editing view](../consumer/end-user-reading-view.md). If a report or dashboard has been [shared with you ](../consumer/end-user-shared-with-me.md), you are a report **consumer**. You'll be able to view and interact with the report and its visuals but you won't be able to save major changes.
 
 There are many different visual types available directly from the Power BI VISUALIZATIONS pane.
 
