@@ -58,7 +58,7 @@ For information on how to configure the proper Service Principal Name (SPN) for 
 
 ### Enabling negotiate authentication
 
-To enable a report server to use Kerberos authentication, you will need to configure the Authentication Type of the report server to be RSWindowsNegotiate. This is done within the rsreportserver.config file.
+To enable a report server to use Kerberos authentication, you will need to configure the Authentication Type of the report server to be RSWindowsNegotiate. You do it in the rsreportserver.config file.
 
 ```xml
 <AuthenticationTypes>  
@@ -76,7 +76,7 @@ You will need to configure ADFS on a Windows 2016 server within your environment
 
 ### Create an application group
 
-Within the AD FS Management screen, you will want to create an application group for Reporting Services which will include information for the Power BI Mobile apps.
+Within the AD FS Management screen, you will want to create an application group for Reporting Services, which will include information for the Power BI Mobile apps.
 
 You can create the application group with the following steps.
 
@@ -108,7 +108,7 @@ You can create the application group with the following steps.
    ![ADFS Application Group Wizard 02](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
 7. Select **Next**.
 
-8. Supply the URL for your Report Server. This is the external URL that will hit your Web Application Proxy. It should be in the following format.
+8. Supply the URL for your Report Server. The URL is the external URL that will hit your Web Application Proxy. It should be in the following format.
 
    > [!NOTE]
    > This URL is case sensitive!
@@ -136,7 +136,7 @@ When completed, you should see the properties of your application group look sim
 
 ## Web Application Proxy (WAP) Configuration
 
-You will want to enable the Web Application Proxy (Role) Windows role on a server in your environment. This must be on a Windows 2016 server. For more information, see [Web Application Proxy in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) and [Publishing Applications using AD FS Preauthentication](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
+You will want to enable the Web Application Proxy (Role) Windows role on a server in your environment. It must be on a Windows 2016 server. For more information, see [Web Application Proxy in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) and [Publishing Applications using AD FS Preauthentication](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
 
 ### Constrained delegation configuration
 
@@ -234,7 +234,7 @@ You can enable multi-factor authentication to enable additional security for you
 
 ## Troubleshooting
 
-### You receive the error Failed to login to SSRS server. Please verify server configuration.
+### You receive the error Failed to login to SSRS server. Verify server configuration.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
