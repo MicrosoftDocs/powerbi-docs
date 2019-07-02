@@ -19,6 +19,19 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
 
+## June 2019
+
+### Barcode scanning is now available in Android
+Now you can use your Power BI app on Android (phone and tablet) to scan barcodes printed on products or shelves at your store to display related Power BI reports filtered by the scanned value. More about [filtering your data with barcodes](mobile-apps-scan-barcode-iphone.md).
+
+### Supporting PBIX reports hosted in PBI-RS over ADFS configuration (iOS, Android)
+
+Power BI Reports (PBIX) hosted in PBI-RS over ADFS configuration can now be accessed also from Power BI mobile apps.
+
+### Enhanced conditional access protection
+
+We integrated with [AAD new app protection-based conditional access capability](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) to increase security by limiting access to Power BI before app policy is applied.
+
 ## May 2019
 
 ### Siri Shortcuts support (iOS)
