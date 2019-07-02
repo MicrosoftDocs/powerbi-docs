@@ -28,10 +28,6 @@ Now you can use your Power BI app on Android (phone and tablet) to scan barcodes
 
 Power BI Reports (PBIX) hosted in PBI-RS over ADFS configuration can now be accessed also from Power BI mobile apps.
 
-### Enhanced conditional access protection
-
-We integrated with [AAD new app protection-based conditional access capability](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) to increase security by limiting access to Power BI before app policy is applied.
-
 ## May 2019
 
 ### Siri Shortcuts support (iOS)
