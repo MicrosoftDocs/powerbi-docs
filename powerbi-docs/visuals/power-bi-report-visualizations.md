@@ -42,7 +42,11 @@ Add a custom visualization that you created yourself or that you found in the [M
 
 If you find yourself using the same custom visual across many reports, you can pin the custom visualization to your visualization pane. To pin the visualization, right-click on the visual to pin it to the pane.
 
+![Pin to visualization pane](media/power-bi-report-visualizations/power-bi-pin-custom-visual-option.png)
+
 Once a visual has been pinned, it moves up to live with the other built-in visuals. This visual is now tied to your signed in account, so any new reports you built will automatically have this visual included, assuming you are signed in. This makes it very easy to standardize on a particular visual without needing to add it to every single report.
+
+![Personalized visualization pane](media/power-bi-report-visualizations/power-bi-personalized-visualization-pane.png)
 
 While this feature is in preview, you’ll only see your pinned visuals in Power BI Desktop. Additionally, you must be signed in for this feature to be available.
 
