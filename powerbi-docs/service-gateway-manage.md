@@ -28,6 +28,8 @@ If you've just installed a gateway, we recommend that you next [add a data sourc
 
 Power BI supports many on-premises data sources, and each has its own requirements. A gateway can be used for a single data source or multiple data sources. For this example, we'll show you how to add SQL Server as a data source, but the steps are similar for other data sources.
 
+> [!NOTE]
+> Gateway admins can now create multiple data sources connecting to the same source, each with a different credential, and add users to each of these data sources based on their access level.
 
 ### Add a data source
 
@@ -51,6 +53,9 @@ Power BI supports many on-premises data sources, and each has its own requiremen
 1. For SQL Server, you would choose an **Authentication Method** of **Windows** or **Basic** (SQL Authentication).  If you choose **Basic**, enter the credentials for your data source.
 
 1. If this data source is currently unavailable or slow then select **Skip Test Connection**. Otherwise the data source creation might fail.
+
+    > [!NOTE]
+    > Skipping the test connection isn't supported for Analysis Services.
 
 1. Under **Advanced settings**, optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)) for your data source (does not apply to [DirectQuery](desktop-directquery-about.md)).
 
