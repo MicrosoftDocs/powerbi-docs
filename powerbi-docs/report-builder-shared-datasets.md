@@ -33,7 +33,7 @@ Here's a list of what you need and don't need to use a shared dataset in Power B
     ![New dataset in the Report Data pane](media/report-builder-shared-datasets/power-bi-report-builder-new-dataset.png)
 
     > [!NOTE]
-    > You can't connect to a Power BI dataset by using the Report Builder Table, Matrix, or Chart wizards.
+    > You can't create the data source or dataset for a Power BI dataset by using the Report Builder Table, Matrix, or Chart wizards. After you've created them, you can use the wizards to create tables, matrixes, or charts based on them.
 
 1. Search or browse for the dataset or the workspace where it resides > **Select**.
     Report Builder fills in the dataset name.
@@ -49,7 +49,7 @@ Here's a list of what you need and don't need to use a shared dataset in Power B
 
 ## Get the query for the dataset
 
-In this scenario, where we want the data in the Power BI report and the Report Builder report to be the same, it's not enough to connect to the dataset. You also need the query that's built on that dataset.
+In this scenario, where you want the data in the Power BI report and the Report Builder report to be the same, it's not enough to connect to the dataset. You also need the query that's built on that dataset.
 
 1. Open the Power BI report (.pbix) in Power BI Desktop.
 1. Make sure you have a table that contains all the data you want in your paginated report. 
@@ -65,7 +65,14 @@ In this scenario, where we want the data in the Power BI report and the Report B
 1. In the Expression dialog box, paste the DAX formula after the equal sign (**+**).
 1. Select **OK**, and select **OK** again.
     Now you see your dataset in the Report Data pane.
-1. 
+
+## Create the table in the report
+
+One quick way to create a table is to use the Table wizard.
+
+1. On the **Insert** ribbon, select **Table** > **Table wizard**.
+1. Choose the dataset you created with the DAX query > **Next**.
+1. Select all the 
 
 Power BI Paginated Report Builder is a tool for authoring paginated reports.  When you design a paginated report, you're creating a report definition that specifies what data to retrieve, where to get it, and how to display it. When you run the report, the report processor takes the report definition you have specified, retrieves the data, and combines it with the report layout to generate the report. You can preview your report in Report Builder. Then publish your report to the Power BI service.
 
