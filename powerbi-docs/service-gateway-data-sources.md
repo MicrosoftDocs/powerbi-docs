@@ -85,7 +85,7 @@ OAuth is a supported authentication scheme only for custom connectors with the o
 
 ## Manage users
 
-After you add a data source to a gateway, you give users and security groups access to the specific data source (not the entire gateway). The data source users list controls only who is allowed to publish reports that include data from the data source. Report owners can create dashboards, content packs, and apps, and then share those with other users.
+After you add a data source to a gateway, you give users and email-enabled security groups access to the specific data source (not the entire gateway). The data source users list controls only who is allowed to publish reports that include data from the data source. Report owners can create dashboards, content packs, and apps, and then share those with other users.
 
 You can also give users and security groups administrative access to the gateway.
 
