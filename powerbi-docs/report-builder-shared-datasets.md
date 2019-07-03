@@ -91,15 +91,23 @@ In this scenario, where you want the data in the Power BI report and the Report 
 One quick way to create a table is to use the Table wizard.
 
 1. On the **Insert** ribbon, select **Table** > **Table wizard**.
-1. Choose the dataset you created with the DAX query > **Next**.
-1. Select all the fields
 
-Power BI Paginated Report Builder is a tool for authoring paginated reports.  When you design a paginated report, you're creating a report definition that specifies what data to retrieve, where to get it, and how to display it. When you run the report, the report processor takes the report definition you have specified, retrieves the data, and combines it with the report layout to generate the report. You can preview your report in Report Builder. Then publish your report to the Power BI service.
+    ![Start the Table Wizard](media/report-builder-shared-datasets/power-bi-report-builder-table-wizard.png)
+
+1. Choose the dataset you created with the DAX query > **Next**.
+
+    ![Choose a dataset](media/report-builder-shared-datasets/power-bi-report-builder-choose-dataset.png)
+
+1. To make a flat table, select all the fields you want in **Available fields** and drag them to **Values** > **Next**.
+1. Choose the layout options you want > **Next**.
+1. Select **Finish**.
+    You see your table in Design View.
+1. Select **Run** to preview your report.
 
 ## Limitations and considerations 
 
-- For datasets that use a Live Connection to Analysis Services, you can connect directly by using the underlying Analysis Services connection instead.
-- Datasets with endorsements appear in the list of available datasets, but they aren't marked as Promoted and Certified. 
+- For datasets that use a Live Connection to Analysis Services, you can connect directly by using the underlying Analysis Services connection instead of a shared dataset.
+- Datasets with Promoted or Certified endorsements appear in the list of available datasets, but they aren't marked as such. 
 
 
 ## Next steps
