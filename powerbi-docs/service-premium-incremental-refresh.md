@@ -7,7 +7,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/10/2019
+ms.date: 07/03/2019
 ms.author: mblythe
 LocalizationGroup: Premium
 ---
@@ -157,4 +157,4 @@ in
 
 ## Limitations
 
-Currently, for [composite models](desktop-composite-models.md), incremental refresh is supported for SQL, Oracle, and Teradata data sources only.
+Currently, for [composite models](desktop-composite-models.md), incremental refresh is supported for SQL Server, Azure SQL Database, SQL Data Warehouse, Oracle, and Teradata data sources only.
