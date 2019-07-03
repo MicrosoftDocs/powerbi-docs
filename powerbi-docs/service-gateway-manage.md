@@ -71,7 +71,7 @@ To remove a data source, go to the data source then select **Remove**.
 
 ## Manage users and administrators
 
-After you add a data source to a gateway, you give users and security groups access to the specific data source (not the entire gateway). The data source users list controls only who is allowed to publish reports that include data from the data source. Report owners can create dashboards, content packs, and apps, and then share those with other users.
+After you add a data source to a gateway, you give users and email-enabled security groups access to the specific data source (not the entire gateway). The data source users list controls only who is allowed to publish reports that include data from the data source. Report owners can create dashboards, content packs, and apps, and then share those with other users.
 
 You can also give users and security groups administrative access to the gateway.
 
@@ -95,14 +95,14 @@ And that’s all there is to it. Remember that you need to add users to each dat
 
 ### Remove users from a data source
 
-On the **Users** tab for the data source, you can remove users and security groups that use this data source.
+On the **Users** tab for the data source, you can remove users and email-enabled security groups that use this data source.
 
 ![Remove user](media/service-gateway-manage/remove-user.png)
 
 
 ### Add and remove administrators
 
-On the **Administrators** tab for the gateway, add and remove users (or security groups) that can administer the gateway.
+On the **Administrators** tab for the gateway, add and remove users (or email-enabled security groups) that can administer the gateway.
 
 ![Administrators tab](media/service-gateway-manage/administrators-tab.png)
 
