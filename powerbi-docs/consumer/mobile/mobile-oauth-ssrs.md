@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/07/2018
+ms.date: 07/03/2019
 ---
 
 # Using OAuth to connect to Power BI Report Server and SSRS
@@ -113,7 +113,7 @@ You can create the application group with the following steps.
    > [!NOTE]
    > This URL is case sensitive!
 
-   *https://< report server url >/reports*
+   *https://< report server url >/*
 
    ![ADFS Application Group Wizard 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Select **Next**.
