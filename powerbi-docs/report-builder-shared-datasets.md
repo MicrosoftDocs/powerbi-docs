@@ -52,19 +52,39 @@ Here's a list of what you need and don't need to use a shared dataset in Power B
 In this scenario, where you want the data in the Power BI report and the Report Builder report to be the same, it's not enough to connect to the dataset. You also need the query that's built on that dataset.
 
 1. Open the Power BI report (.pbix) in Power BI Desktop.
-1. Make sure you have a table that contains all the data you want in your paginated report. 
+1. Make sure you have a table in your report that contains all the data you want in your paginated report. 
+
 1. On the **View** ribbon, select **Performance Analyzer**.
+
+    ![Open the Performance Analyzer](media/report-builder-shared-datasets/power-bi-performance-analyzer.png)
+
 1. In the **Performance Analyzer** pane, select **Start recording**, then select **Refresh visuals**.
+
+    ![Refresh visuals](media/report-builder-shared-datasets/power-bi-performance-analyzer-refresh-visuals.png)
+
 1. Expand the plus sign (**+**) next to the table name, and select **Copy query**. The query is the DAX formula you need for the dataset in Power BI Report Builder.
+
+    ![Copy the query](media/report-builder-shared-datasets/power-bi-performance-analyzer-copy-query.png)
 
 ## Create the dataset with the query
 
 1. Go back to Power BI Report Builder.
-1. Right-click the dataset under Data Sources > New Dataset.
+1. Right-click the dataset under **Data Sources** and select **Add Dataset**.
+
+    ![Add dataset](media/report-builder-shared-datasets/power-bi-report-builder-add-dataset.png)
+
 1. In Dataset Properties, give it a name, and select the Expression icon.
+
+    ![Expression icon](media/report-builder-shared-datasets/power-bi-report-builder-expression-button.png)
+
 1. In the Expression dialog box, paste the DAX formula after the equal sign (**+**).
+
+    ![Paste the DAX formula](media/report-builder-shared-datasets/power-bi-report-builder-dax-expression.png)
+
 1. Select **OK**, and select **OK** again.
     Now you see your dataset in the Report Data pane.
+
+    ![Dataset in the Report Data pane](media/report-builder-shared-datasets/power-bi-report-builder-dataset.png)
 
 ## Create the table in the report
 
@@ -72,7 +92,7 @@ One quick way to create a table is to use the Table wizard.
 
 1. On the **Insert** ribbon, select **Table** > **Table wizard**.
 1. Choose the dataset you created with the DAX query > **Next**.
-1. Select all the 
+1. Select all the fields
 
 Power BI Paginated Report Builder is a tool for authoring paginated reports.  When you design a paginated report, you're creating a report definition that specifies what data to retrieve, where to get it, and how to display it. When you run the report, the report processor takes the report definition you have specified, retrieves the data, and combines it with the report layout to generate the report. You can preview your report in Report Builder. Then publish your report to the Power BI service.
 
