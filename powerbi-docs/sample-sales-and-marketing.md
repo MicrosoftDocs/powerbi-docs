@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/23/2018
+ms.date: 07/02/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -16,120 +16,145 @@ LocalizationGroup: Samples
 # Sales and Marketing sample for Power BI: Take a tour
 
 ## Overview of the Sales and Marketing sample
-The **Sales and Marketing Sample** contains a dashboard and report for a fictitious manufacturing company named VanArsdel Ltd. This dashboard was created by the VanArsdel Chief Marketing Officer (CMO) to keep an eye on the industry and his company’s market share, product volume, sales, and sentiment.
+The Sales and Marketing sample contains a dashboard and report for a fictitious manufacturing company named VanArsdel Ltd. This dashboard was created by the VanArsdel Chief Marketing Officer (CMO) to keep an eye on the industry and the company’s market share, product volume, sales, and sentiment.
 
-VanArsdel has many competitors but is the market leader in its industry. The CMO wants to increase market share and discover growth opportunities. But, for some reason, VanArsdel’s market share has started to decline, with significant dips in June.
+VanArsdel has many competitors, but is the market leader in its industry. The CMO wants to increase market share and discover growth opportunities. However, for unknown reasons, VanArsdel’s market share has started to decline, with significant dips in June.
 
-This sample is part of a series that illustrates how you can use Power BI with business-oriented data, reports and dashboards. This is real data from obviEnce (www.obvience.com) that has been anonymized.
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-![](media/sample-sales-and-marketing/sales1.png)
+This tutorial explores the Sales and Marketing sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
-## Prerequisites
+You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro license, you can save the sample to your My Workspace in the Power BI service. 
 
- Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-sales-and-marketing#get-the-content-pack-for-this-sample), [.pbix](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), or
-[Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529785).
+![Dashboard for the Sales and Marketing sample](media/sample-sales-and-marketing/sales1.png)
+
+## Get the sample
+
+Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the content pack for this sample
 
-1. Open the Power BI service (app.powerbi.com) and log in.
-2. In the bottom left corner select **Get data**.
+1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
+
+   If you don't have a Power BI Pro license, you can save the sample to your My Workspace.
+
+2. In the bottom-left corner, select **Get Data**.
    
-    ![](media/sample-datasets/power-bi-get-data.png)
-3. On the Get Data page that appears, select the **Samples** icon.
+   ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
+3. On the **Get Data** page that appears, select **Samples**.
    
-   ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Select the **Sales and Marketing Sample**, then choose **Connect**.  
+4. Select **Sales and Marketing Sample**, then choose **Connect**.   
   
-   ![Sales and Marketing sample](media/sample-sales-and-marketing/sales9.png)
+   ![Connect to sample](media/sample-sales-and-marketing/sales9.png)
    
-5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. 
+5. Power BI imports the content pack and then adds a new dashboard, report, and dataset to your current workspace.
    
-   ![Asterisk](media/sample-sales-and-marketing/sales10.png)
+   ![Sales and Marketing Sample entry](media/sample-sales-and-marketing/sales11.png)
   
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
-
- * [Sales and Marketing Sample](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
+Alternatively, you can download the Sales and Marketing sample as a [.pbix file](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
 
 ### Get the Excel workbook for this sample
-You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529785) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
+
+If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529785). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
 
 ## What is our dashboard telling us?
-Let’s start our tour at the dashboard and look at the tiles the CMO has chosen to pin. We see information about our market share, sales, and sentiment. And we see that data broken down by region, time, and competition.
+Let’s start our tour at the dashboard and look at the tiles the CMO has chosen to pin. We see information about our market share, sales, and sentiment. Data is broken down by region, time, and competition.
 
-* The number tiles down the left column show industry sales volume this past year (50K), market share (32.86%), sales volume (16K), sentiment score (68), sentiment gap (4), and total units sold (1M).
-* The top line chart shows how our market share fluctuates over time. Our market share really drops in June. Also, our R12M (Rolling 12 Months) share which was increasing for a while, is starting to stall.
-* Our biggest competitor is Aliqui (evident in the middle column chart tile.)
+* The number tiles along the left column show industry sales volume for the past year (50,000), market share (32.86%), sales volume (16,000), sentiment score (68), sentiment gap (4), and total units sold (1 million).
+* The top line chart (**% Units Market Share vs. % Units Market Share Rolling 12 Months**) shows how our market share fluctuates over time, Notice the large drop in June. Our rolling 12-month (R12M) share, which was increasing for a while, is now starting to stall.
+* Our biggest competitor is Aliqui, as evident in the middle column chart tile (**Total Units YTD Variance %**).
 * Most of our business is in the East and Central regions.
-* The line chart at the bottom shows that our dip in June is not seasonal – none of our competitors show the same trend.
-* The two “Total Units” tiles show units sold, by segment and by region/manufacturer. The largest market segment for our industry are **Productivity** and **Convenience**.
+* The line chart at the bottom (**Total Units for 2014**) shows that our dip in June is not seasonal; none of our competitors show the same trend.
+* The **Total Units Overall** and **Total Units YTD** tiles on the right show units sold, by segment and by region/manufacturer. The largest market segments for our industry are **Productivity** and **Convenience**.
 
-### Use Q&A to dig a little deeper
-#### Which segments drive our sales? Does it match the industry trend?
-1. Select the “Total Units Overall by Segment” tile which will open Q&A.
-2. Type **for VanArsdel** at the end of the existing query. Q&A interprets the question and displays an updated chart with the answer. Our product volume comes from Convenience and Moderation.
+## Use Q&A to dig a little deeper
 
-   ![](media/sample-sales-and-marketing/sales2.png)
-3. Our share in the **Moderation** and **Convenience** categories is very high; these are the segments where we compete.
-4. Navigate back to the dashboard by selecting the dashboard name in the top navbar (breadcrumbs).
+By using Q&A, you can discover additional details in the data.
 
-#### What does total unit market share look like for category (versus region)?
-1. Notice the “Total Units YTD by Manufacturer, Region” tile. I wonder how the total unit market share looks by category?
+### Which segments drive our sales? Do they match the industry trend?
+1. Select the **Total Units Overall by Segment** tile, which opens Q&A and populates it with the query, *total units by segment*.
+2. Type *for VanArsdel* at the end of the existing query. Q&A interprets the question and displays an updated chart with the answer. Notice that our product volume is mostly from the **Convenience** and **Moderation** segments.
 
-   ![](media/sample-sales-and-marketing/sales3.png)
-2. In the question box at the top of the dashboard, type the question **total units by manufacturer and category for 2014 as a treemap**. Notice how the visualization updates as you type the question.
-   ![](media/sample-sales-and-marketing/totalunitsbymanufacturerandcategoryfor2014asatreemap-new.png)
-3. To compare the findings, pin the chart to your dashboard. Very interesting; in 2014 VanArsdel only sold products that fall into the **Urban** category.
-4. Navigate back to the dashboard.
+   ![Q&A question: Total units by segment for VanArsdel](media/sample-sales-and-marketing/sales2.png)
+3. Our share in the **Moderation** and **Convenience** categories is high; these segments are the ones where we compete.
+4. Return to the dashboard by selecting the **Sales and Marketing Sample** in the top navigation bar.
 
-Dashboards are also an entry point into reports.  If a tile was created from an underlying report, clicking that tile opens the report.
+### What does total unit market share look like for category (versus region)?
+1. Notice the **Total Units YTD by Manufacturer, Region** tile. What is the total unit market share by category?
 
-On our dashboard, the R12M (Rolling 12 Months) line shows that our market share is no longer increasing over time, it’s even declining a bit. And why do we have a big market share dip in June? To investigate further, click this visualization to open the underlying report.
+   ![Total Units YTD by Manufacturer, Region tile](media/sample-sales-and-marketing/sales3.png)
+2. Select the question box at the top of the dashboard and type the question *total units by manufacturer and category for 2014 as a treemap*. Notice how the visualization updates as you type the question.
+   ![Q&A question: Total units by manufacturer and category](media/sample-sales-and-marketing/sales12.png)
+3. To compare the findings, pin the chart to your dashboard. Notice this interesting fact: In 2014, VanArsdel sold only products in the **Urban** category.
+4. Return to the dashboard.
 
-### Our report has 4 pages
-#### Page 1 of our report focuses on VanArsdel’s market share.
-![](media/sample-sales-and-marketing/sales5.png)
+Dashboards are also an entry point into reports.  If a tile was created from an underlying report, selecting that tile opens the report.
 
-1. Look at the “Total Units by Month and isVanArsdel” column chart at the bottom. The black column represents VanArsdel (our products) and green is our competition. The drop in June 2014 that VanArsdel experienced is not experienced by the competition.
-2. The “Total Category Volume by Segment” bar chart in the middle on the right, is filtered to show VanArsdel’s top 2 segments. Take a look at how this filter was created:  
+On our dashboard, the R12M line in the **% Units Market Share vs. % Units Market Share Rolling 12 Months** charts shows that our market share is no longer increasing over time, it’s even declining a bit. And why do we have a large market share dip in June? To investigate further, select this chart to open the underlying report.
 
-   a.  Expand the Filters pane on the right.  
-   b.  Click to select the visualization.  
-   c.  Under Visual Level Filters, notice that **Segment** is filtered to include only **Convenience** and **Moderation**.  
-   d.  Modify the filter by selecting Segment to expand that section and then checking **Productivity** to add that segment as well.  
-3. In “Total Units by Month and isVanArsdel”, select the black “Yes” in the legend to cross-filter the page by VanArsdel. Notice that we don’t compete in the Productivity segment.
-4. Select the black “Yes” again to remove the filter.
-5. Take a look at the line chart. It shows our monthly market share and 12 month rolling market shares. Rolling 12 months data help in smoothing out monthly fluctuations and shows the long term trends. Select Convenience and then Moderation in the bar chart to see how much fluctuation in market share there is for each segment. The Moderation segment shows much more fluctuation in market share than the Convenience segment.
+## Sales and Marketing Sample report
+The report for the Sales and Marketing sample has four pages.
+ 
+### VanArsdel - Market Share page
+Page one of the report focuses on VanArsdel’s market share.
 
-We’re still looking to find out why our market share dipped so low in June. Let’s check Sentiment.
+![VanArsdel - Market Share page](media/sample-sales-and-marketing/sales5.png)
 
-#### Page 3 of our report focuses on Sentiment.
-![](media/sample-sales-and-marketing/sales6.png)
+1. Select the **% Units Market Share vs. % Units Market Share Rolling 12 Months** chart to open the **VanArsdel - Market Share** page of the Sales and Marketing Sample report.
 
-Tweets, Facebook, blogs, articles, etc. contribute to sentiment which is shown in the two line charts. The sentiment chart in the top left shows that sentiment for our products were pretty much neutral up until February. Then a big drop started in February and bottomed out in June. What happened to cause this drop in sentiment? We need to look at external sources. In February, several articles and blog posts rated VanArsdel’s customer service the worst in the industry. This bad press had a direct correlation to customer sentiment and sales. VanArsdel worked hard to improve customer service and customers and the industry took note. In July positive sentiment started to rise and then reached an all-time high in the 60s. This uptick in sentiment can be seen reflected in “Total Units by Month” on pages 1 and 3. Perhaps this partially explains our market share dips for June?
+2. Look at the **Total Units by Month and isVanArsdel** column chart at the bottom of the report. The black column represents VanArsdel (our products) and the green column is our competition. The drop in June 2014 that VanArsdel experienced was not experienced by the competition.
 
-Sentiment gap would be another area to explore: which districts have the highest sentiment gap, how can management capitalize on this, and discover ways to replicate it in other districts.
+3. The **Total Category Volume by Segment** bar chart on the right is filtered to show VanArsdel’s top two segments. Take a look at how this filter was created:  
 
-#### Page 2 of our report focuses on YTD Category Trend
-![](media/sample-sales-and-marketing/reportpage2.png)
+   a. Select the **Total Category Volume by Segment** chart.
+   b. Select the **Filters** pane on the right to expand it.  
+   c. Under **Visual level filters**, notice that **Segment** is filtered to include only **Convenience** and **Moderation** segments.  
+   d. Modify the filter by selecting **Segment** to expand it and then checking **Productivity** to add that segment.  
 
-* Of all the companies in this category, VanArsdel is the largest and our biggest competitors are Natura, Aliqui, and Pirium. We’ll keep our eyes on them.
+4. In the **Total Units by Month and isVanArsdel** chart, select **Yes** in the legend to cross-filter the page by VanArsdel. In the **Total Category Volume by Segment** chart, notice that we don’t compete in the **Productivity** segment.
+
+5. Select the **Yes** again to remove the filter.
+
+6. Look at the **% Units Market Share and % Units Market Share R12M by Month** line chart. It shows our monthly market share and rolling 12-month market shares. Rolling-months data helps to smooth out monthly fluctuations and shows the long-term trends. In the **Total Category Volume by Segment** bar chart, select **Convenience**, and then **Moderation** to see the fluctuation in market share for each segment. Notice that the **Moderation** segment shows much more fluctuation in market share.
+
+We’re still looking to find out why our market share dipped so low in June. Let’s check the **Sentiment Analysis** page of the report.
+
+### Sentiment Analysis page
+Page three of the report focuses on consumer sentiment.
+
+![Sentiment Analysis page](media/sample-sales-and-marketing/sales6.png)
+
+Tweets, Facebook, blogs, and articles all contribute to consumer sentiment, which is shown in the two line charts on the page. The **VanArsdel - Sentiment by Month** chart in the top-left corner shows that sentiment for our products was mostly neutral up until February. Then, a large drop started in February and bottomed out in June. What happened to cause this drop in sentiment? 
+
+Let's look at external sources. In February, several articles and blog posts rated VanArsdel’s customer service the worst in the industry. This bad press had a direct correlation to customer sentiment and sales. VanArsdel worked hard to improve customer service, and customers and the industry took note. In July, positive sentiment started to rise and then reached an all-time high in the 60s. This uptick in sentiment is reflected in the **Total Units by Month** charts on pages one and two of the report. Perhaps this partially explains our market share dips for June?
+
+Sentiment gap might be another area to explore: which districts have the highest sentiment gap, and how can management capitalize on it and discover ways to replicate it in other districts.
+
+#### YTD Category Trend Analysis page
+Page two of the report focuses on the year-to-date category trend.
+
+![YTD Category Trend Analysis page](media/sample-sales-and-marketing/reportpage2.png)
+
+* VanArsdel is the largest company in this category and its biggest competitors are Natura, Aliqui, and Pirium. We’ll keep our eyes on them.
 * Aliqui is growing, but product volume compared to us is still low.
-* The treemap shows VanArsdel in green. In the East, customers prefer our competition, in Central we’re doing OK, and our share in the East is our lowest.
-* Geography has an impact on units sold. East is the dominant region for most manufacturers and VanArsdel has a strong presence in the Central region as well.
-* On the chart “Total Units YTD Var % by Month and Manufacturer” in the bottom right– we have positive variance and that is a good sign, we are doing better than last year but so is another competitor, Aliqui.
+* The treemap shows VanArsdel in green. In the East, customers prefer our competition, in Central we’re doing okay, and our share in the East is our lowest.
+* Geography has an impact on units sold. The East region is the dominant region for most manufacturers and VanArsdel has a strong presence in the Central region as well.
+* On the **Total Units YTD Var % by Month and Manufacturer** chart in the bottom right, notice that we have positive variance, which is a good sign. We're doing better than last year, but so is another competitor, Aliqui.
 
-#### Page 4 of our report focuses on competitive product analysis.
-![](media/sample-sales-and-marketing/sales8.png)
+#### Growth Opportunities page
+Page four of the report focuses on competitive product analysis.
 
-* The bottom left chart shows all the category segments except for VanArsdel’s two strongest segments. Filtering by category by clicking on the bars helps identify potential expansion areas for VanArsdel. The **Extreme** and **Productivity** segments are growing faster than others.
-* But we don’t compete in these segments. If we want to move into these areas, we can use our data to see which segments are popular in which regions. We can further investigate questions like which region is growing faster and who would be our biggest competitor in that segment.
-* Remember our market share dip in June? June is a huge month for the Productivity segment – a segment we don’t compete in at all. This could help explain our market share dip in June.
+![Growth Opportunities page](media/sample-sales-and-marketing/sales8.png)
+
+* The **Total Units by Segment** chart in the bottom-left shows all the category segments, except for VanArsdel’s two strongest segments. Select each of the segments in turn to identify potential expansion areas for VanArsdel. 
+* Notice that the **Extreme** and **Productivity** segments are growing faster than others. However, we don’t compete in those segments; if we want to move into these segments, we can use our data to see which segments are popular in which regions. We can further investigate such questions as which region is growing faster and who would be our biggest competitor in that segment.
+* Remember our market share dip in June? June is a significant month for the **Productivity** segment, a segment we don’t compete in at all. This detail could help explain our market share dip in June.
 
 By filtering the visualizations by VanArsdel, by segment, by month, and by region, we can discover growth opportunities for VanArsdel.
 
-This is a safe environment to play in. You can always choose not to save your changes. But if you do save them, you can always go to **Get Data** for a new copy of this sample.
-
 ## Next steps: Connect to your data
-We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sales and marketing data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](service-get-started.md).  
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
+
+We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into human resources data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](service-get-started.md).
