@@ -89,11 +89,11 @@ See [Monitor usage metrics for Power BI dashboards and reports](service-usage-me
 
 ### Usage metrics for content creators
 
-2. In the Admin portal, select **Tenant settings** > **Usage metrics for content creators**.
+1. In the Admin portal, select **Tenant settings** > **Usage metrics for content creators**.
 
     ![Admin portal tenant settings usage metrics](media/service-admin-portal/power-bi-admin-usage-metrics.png)
 
-3. Enable (or disable) usage metrics > **Apply**.
+1. Enable (or disable) usage metrics > **Apply**.
 
     ![Usage metrics enabled](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
 
