@@ -24,7 +24,7 @@ In Power BI, dataset creators can *certify* or *promote* datasets so others can 
 
 Building reports based on datasets in different workspaces, and copying reports to different workspaces, are tightly coupled with the [new workspace experience](service-create-the-new-workspaces.md):
 
-- In the service, when you open the dataset catalog from a new workspace experience, the dataset catalog shows datasets that are in your My Workspace and in new workspace experience workspaces. 
+- In the service, when you open the dataset catalog from a new workspace experience, the dataset catalog shows datasets that are in your My Workspace and in other new workspace experience workspaces. 
 - When you open the dataset catalog from a classic workspace, you only see the datasets in that workspace, not the ones in other workspaces.
 - In the Desktop, you can publish Live Connect reports to different workspaces, as long as their datasets are in new experience workspaces.
 - When copying reports across workspaces, the target workspace needs to be a new experience workspace.
@@ -53,21 +53,6 @@ The specific features and experiences built on shared dataset capabilities are l
 - Promoting and certifying datasets outside of personal workspaces requires a Pro license, because you need a Pro license to be a member in an app workspace.
 - Copying reports between workspaces requires a Pro license, again because you need a Pro license to be a member in an app workspace.
 - Copying reports from an app requires a Pro license, as was required for organizational content packs.
-
-## Delete a report and its shared dataset
-
-You may decide you no longer want the report and its associated shared dataset in workspace.
-
-1. Delete the report. In the list of reports in the workspace, select the **Delete** icon.
-
-    ![Delete report icon](media/service-datasets-across-workspaces/power-bi-datasets-delete-report.png)
-
-2. In the list of datasets, you see the shared datasets don't have **Delete** icons. Refresh the page, or go to a different page and return. The dataset will be gone. If not, check **View related**. It may be related to another table in your workspace.
-
-    ![View related icon](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
-
-    > [!NOTE]
-    > Deleting the shared dataset in this workspace doesn't delete the dataset. It just deletes the reference to it.
 
 ## Considerations and limitations
 
