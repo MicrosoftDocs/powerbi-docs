@@ -7,7 +7,7 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -46,7 +46,7 @@ That way, members of the workspace can tell which reports and dashboards use dat
 
 ## Find an endorsed dataset
 
-THere are two different kinds of endorsed datasets. Dataset owners can *promote* a dataset that they recommend to you. The Power BI tenant admin can designate experts in your organization who can *certify* datasets for everyone to use. Promoted and certified datasets both display *badges* that you see both when looking for a dataset, and in the list of datasets in a workspace. 
+THere are two different kinds of endorsed datasets. Dataset owners can *promote* a dataset that they recommend to you. Also, the Power BI tenant admin can designate experts in your organization who can *certify* datasets for everyone to use. Promoted and certified datasets both display *badges* that you see both when looking for a dataset, and in the list of datasets in a workspace. The name of the person who certified a dataset is displayed in a tooltip during the dataset discovery experience; hover over the **Certified** label and you see it.
 
 - In the Power BI service: **Get data** > **Published datasets**.
 - In Power BI Desktop: **Get data** > **Power BI datasets**.
