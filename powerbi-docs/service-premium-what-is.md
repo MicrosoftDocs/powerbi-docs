@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 07/06/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -18,14 +18,15 @@ LocalizationGroup: Premium
 
 Power BI Premium provides dedicated and enhanced resources to run the Power BI service for your organization. For example:
 
-- Greater scale and performance
-- Flexibility to license by capacity
-- Unify self-service and enterprise BI
-- Extend on-premises BI with Power BI Report Server
-- Support for data residency by region (Multi-Geo)
-- Share data with anyone without purchasing a per-user license
+> [!div class="checklist"]
+> * Greater scale and performance
+> * Flexibility to license by capacity
+> * Unify self-service and enterprise BI
+> * Extend on-premises BI with Power BI Report Server
+> * Support for data residency by region (Multi-Geo)
+> * Share data with anyone without purchasing a per-user license
 
-This article is not meant to provide in-depth details about every feature of Power BI Premium - in fact, it just touches the surface. Where necessary, links to additional articles with more detailed information are provided.
+This article introduces key features in Power BI Premium. Where necessary, links to additional articles with more detailed information are provided.
 
 ## Subscriptions and licensing
 
