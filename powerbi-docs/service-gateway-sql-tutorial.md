@@ -32,7 +32,7 @@ In this tutorial, you complete the following steps:
 
 - If you don't already have one, sign up for a [free Power BI trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 - [Install Power BI Desktop](https://powerbi.microsoft.com/desktop/) on a local computer.
-- [Install SQL Server](/sql/database-engine/install-windows/install-sql-server) on a local computer, and restore the [sample database from a backup]((https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak)). For more information about AdventureWorks, see [AdventureWorks installation and configuration](/sql/samples/adventureworks-install-configure).
+- [Install SQL Server](/sql/database-engine/install-windows/install-sql-server) on a local computer, and restore the [sample database from a backup](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). For more information about AdventureWorks, see [AdventureWorks installation and configuration](/sql/samples/adventureworks-install-configure).
 - [Install an on-premises data gateway](service-gateway-install.md) on the same local computer as SQL Server (in production, it would typically be a different computer).
 
 > [!NOTE]
