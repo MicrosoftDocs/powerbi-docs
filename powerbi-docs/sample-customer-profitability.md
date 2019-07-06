@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/20/2019
+ms.date: 07/05/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -19,17 +19,21 @@ The Customer Profitability sample content pack contains a dashboard, report, and
 
 ![Dashboard for the Customer Profitability sample](media/sample-customer-profitability/power-bi-dash.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack/app, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
-This tutorial uses the Power BI service and the Customer Profitability sample content pack. Because the report experiences are so similar, you can also follow along by using Power BI Desktop and the sample .pbix file. 
+This tutorial explores the Customer Profitability sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
-## Prerequisites
+You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro license, you can save the sample to your My Workspace in the Power BI service. 
+
+## Get the Sample
 
 Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the content pack for this sample
 
 1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample.
+
+   If you don't have a Power BI Pro license, you can save the sample to your My Workspace.
 
 2. In the bottom-left corner, select **Get Data**.
 
@@ -131,8 +135,8 @@ Let’s look at two of the team members in detail and see what insights can be g
 1. In the **Executive** slicer on the left, select Andrew's name to filter the report page to display only data about Andrew:
 
    * For a quick KPI, look at Andrew’s **Revenue Status (Total Year)**; it's green, which means he’s performing well.
-   * The **Revenue % Variance to Budget by Month and Executive** chart shows that, except for a dip in February, Andrew is doing well overall. His dominant region is the east region, he handles 49 customers, and 5 out of 7 products. His GM% is not the highest or the lowest.
-   * The **RevenueTY and Revenue % Var to Budget by Month** chart shows a steady, even-profit story. However, if you filter by selecting the square for **Central** in the region treemap, you discover that Andrew has revenue only in March and only in Indiana. Is this intentional or is it something that needs looking into?
+   * The **Revenue % Variance to Budget by Month and Executive** chart shows that, except for a dip in February, Andrew is doing well. His dominant region is the east region, he handles 49 customers, and five out of seven products. His GM% is not the highest or the lowest.
+   * The **RevenueTY and Revenue % Var to Budget by Month** chart shows a steady, even-profit story. However, if you filter by selecting the square for **Central** in the region treemap, you discover that Andrew has revenue only in March and only in Indiana. Is this trend intentional or is it something that needs looking into?
 
 2. Now on to Valery. In the **Executive** slicer, select Valery’s name to filter the report page to display data only about her. 
 
