@@ -685,9 +685,9 @@
         href: service-machine-learning-automated.md              
     - name: Paginated reports in Power BI
       items: 
-      - name: View a paginated report (Preview)
+      - name: View a paginated report
         href: paginated-reports-view-power-bi-service.md
-      - name: Interact with parameters (Preview)
+      - name: Interact with parameters
         href: paginated-reports-view-parameters.md
       - name: Subscribe yourself or others
         href: paginated-reports-subscriptions.md

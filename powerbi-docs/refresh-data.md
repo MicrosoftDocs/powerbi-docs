@@ -175,6 +175,8 @@ Connecting a dataset to an enterprise gateway is relatively straightforward if y
 
 ![Add to gateway](media/refresh-data/add-to-gateway.png)
 
+Make sure you map the correct data source definition to your data source. As the above screenshot illustrates, gateway admins can create multiple definitions on a single gateway connecting to the same data source, each with different credentials. In the example shown, a dataset owner in the Sales department would choose the AdventureWorksProducts-Sales data source definition while a dataset owner in the Support department would map the dataset to the AdventureWorksProducts-Support data source definition. If the names of the data source definition aren’t intuitive, contact your gateway admin to clarify which definition to pick.
+
 > [!NOTE]
 > A dataset can only use a single gateway connection. In other words, it is not possible to access on-premises data sources across multiple gateway connections. Accordingly, you must add all required data source definitions to the same gateway.
 
