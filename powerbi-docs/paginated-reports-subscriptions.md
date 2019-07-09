@@ -29,6 +29,8 @@ In setting up subscriptions, you choose how often you want to receive the emails
 
 - Email subscriptions can be sent with either the currently selected or default parameters for your report.  You may set different parameter values for each subscription you create for your report. 
 
+- If your report author has set expression based parameters (for example, the default is always today's date), the subscription will use that as the default value even if you've changed other parameter values and chosen to use current values unless you explicitly change that valueas well.
+
 - There is no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source. 
 
 ## Next steps
