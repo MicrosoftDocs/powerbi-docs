@@ -8,14 +8,14 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/02/2019
+ms.date: 07/09/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
 ---
 # Supplier Quality Analysis sample for Power BI: Take a tour
 
-This industry sample dashboard and underlying report focus on one of the typical supply chain challenges — supplier quality analysis. Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. 
+This industry sample dashboard and underlying report focus on one of the typical supply chain challenges: supplier quality analysis. Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. 
 
 This sample has two main objectives:
 
@@ -118,7 +118,7 @@ The best managed material type is the one with lowest downtime or no impact, reg
 
    ![Total Defect Quantity by Material Type, Defect Type tile](media/sample-supplier-quality/supplier9.png)
 
-   For the **Raw Materials** material type, notice although it has many total defects, most of those defects are either rejected or have no impact.
+   Notice that although **Raw Materials** material type has many total defects, most of those defects are either rejected or have no impact.
 
    Let’s verify that this material type doesn't cause much downtime, despite high defect quantity.
 
@@ -135,16 +135,16 @@ The best managed material type is the one with lowest downtime or no impact, reg
     ![Total Defect Qty by Month and Year chart](media/sample-supplier-quality/supplier11.png)  
 3. Do more defects translate into more downtime? Ask questions in the Q&A box to find out.  
 4. Select **Supplier Quality Analysis Sample** in the top navigation bar to return to the dashboard.  
-5. Because we know that raw materials have the highest number of defects, in the question box, type *show material types, year and total defect qty*.  
+5. Because we know that raw materials have the highest number of defects, in the question box, type *show material types, year, and total defect qty*.  
 
     There were many more raw materials defects in 2014 than in 2013.  
 
     ![Q&A question: Show material types, year, and total defect qty](media/sample-supplier-quality/supplier12.png)  
-6. Next, change the question to *show material types, year and total **downtime minutes***.  
+6. Next, change the question to: *show material types, year, and total **downtime minutes***.  
 
    ![Q&A question: Show material types, year, and total downtime minutes](media/sample-supplier-quality/supplier13.png)
 
-Notice that downtime for raw materials was about the same in 2013 and 2014, even though there were many more raw materials defects in 2014. It appears that more raw materials defects in 2014 didn’t lead to much more raw materials downtime in 2014.
+Notice that downtime for raw materials was about the same in 2013 and 2014, even though there were many more raw materials defects in 2014. It appears that more defects for raw materials in 2014 didn’t lead to much more downtime for raw materials in 2014.
 
 ### Compare defects to downtime month to month
 Let’s look at another dashboard tile related to total defective quantity.  
@@ -168,4 +168,4 @@ Let’s look at another dashboard tile related to total defective quantity.
 ## Next steps: Connect to your data
 This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
 
-We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into human resources data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](service-get-started.md).
+We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](service-get-started.md).
