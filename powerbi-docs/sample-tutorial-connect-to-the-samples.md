@@ -44,15 +44,15 @@ To familiarize yourself with this particular content pack and its scenario, see
    
 6. Select **Retail Analysis Sample**, and then choose **Connect**.   
    
-   ![yellow connect button](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
+   ![Connect button](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
 
 ## What was imported?
 With the sample content packs, when you select **Connect**, Power BI gets a copy of that content pack and stores it for you in the cloud. Because the person who created the content pack included a dataset, a report, and a dashboard, that's what you get when you select **Connect**. 
 
 1. When you select **Connect**, Power BI creates the new dashboard and lists it on your **Dashboards** tab. 
    
-   ![success message](media/sample-tutorial-connect-to-the-samples/power-bi-new-dashboard.png)
-2. Open the **Reports** tab.  Here you'll see a new report named *Retail Analysis Sample*.
+   ![Retail Analysis Sample entry](media/sample-retail-analysis/retail-entry.png)
+2. Open the **Reports** tab. Here, you'll see a new report named *Retail Analysis Sample*.
    
    ![Retail Analysis Sample report entry](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
    
@@ -64,22 +64,21 @@ With the sample content packs, when you select **Connect**, Power BI gets a copy
 Now explore the dashboard, dataset, and report on your own. There are many different ways to navigate to your dashboards, reports, and datasets. One of these ways is described in the following procedure.  
 
 1. Navigate back to the **Dashboards** tab, and then select the **Retail Analysis Sample** dashboard to open it.       
-   ![Dashboard tab selected](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards.png)
 
    The dashboard opens, which has a variety of visualization tiles.
    
    ![dashboard with visual highlighted](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
-1. Select one of the tiles to open the underlying report. In this example, we'll select **This Year's Sales, Last Year's Sales by Fiscal Month** chart (outlined in pink in the previous image). The report opens to the page that contains that area chart.
+1. Select one of the tiles to open the underlying report. In this example, we'll select **This Year's Sales, Last Year's Sales by Fiscal Month** chart (outlined in pink in the previous image). The report opens to the **District Monthly Sales** page of the report.
    
-    ![report page with matching visual highlighted](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
+    ![District Monthly Sales report page](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
    > If the tile was created by using [Power BI Q&A](power-bi-tutorial-q-and-a.md), the Q&A page will open instead. If the tile was [pinned from Excel](service-dashboard-pin-tile-from-excel.md), Excel Online will open inside of Power BI.
    > 
    > 
-1. On the **Datasets** tab, you have several options for exploring your dataset, although you won't be able to open it and see all the rows and columns (as you can in Power BI Desktop or Excel). When someone shares a content pack with colleagues, they typically want to share only the insights, rather than provide direct access to the data. However, that doesn't mean you can't explore the dataset.  
+1. When someone shares a content pack with colleagues, they typically want to share only the insights, rather than provide direct access to the data. On the **Datasets** tab, you have several options for exploring your dataset. However, you won't be able to view the rows and columns of your data, as you can in Power BI Desktop or Excel. 
    
-   ![Datasets tab](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon2.png)
+![Retail Analysis Sample dataset entry](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
    
 1. One way of exploring the dataset is by creating your own visualizations and reports from scratch. Select the chart icon ![Chart icon](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) to open the dataset in report editing mode.
      
