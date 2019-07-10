@@ -1073,9 +1073,9 @@
         href: power-bi-custom-visuals.md
     - name: Tutorials
       items:
-      - name: "Developing a Power BI custom visual"
+      - name: "Develop a Power BI custom visual"
         href: developer/custom-visual-develop-tutorial.md
-      - name: "Adding formatting options"
+      - name: "Add formatting options"
         href: developer/custom-visual-develop-tutorial-format-options.md
       - name: "Add unit tests for visual project"
         href: developer/visuals/unit-tests-introduction.md
@@ -1097,7 +1097,7 @@
         href: developer/visuals/advanced-edit-mode.md
     - name: How to
       items:
-      - name: "Get a custom visual certified"
+      - name: "Get a visual certified"
         href: power-bi-custom-visuals-certified.md
       - name: "Publish custom visuals to AppSource"
         href: developer/office-store.md
@@ -1115,16 +1115,14 @@
         href: developer/visuals/fetch-more-data.md
       - name: "Add bookmarks support"
         href: developer/visuals/bookmarks-support.md
-      - name: "Highlighting"
+      - name: "Highlight data in visuals"
         href: developer/visuals/highlighting.md
       - name: "Add High-Contrast mode support"
         href: developer/visuals/high-contrast-support.md
       - name: "Enable sync slicers"
         href: developer/visuals/enable-sync-slicers.md
-      - name: Troubleshoot
-        items:
-        - name: "Troubleshoot developing custom visuals"
-          href: power-bi-custom-visuals-troubleshoot.md
+      - name: "Troubleshoot Power BI visuals"
+        href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
       items: 
       - name: "Landing page" 
