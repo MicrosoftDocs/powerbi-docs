@@ -56,7 +56,7 @@ With the sample content packs, when you select **Connect**, Power BI gets a copy
    
    ![Retail Analysis Sample report entry](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
    
-   Check out the **Datasets** tab.  There's a new dataset there as well.
+   Check out the **Datasets** tab; there's a new dataset there as well.
    
    ![Retail Analysis Sample dataset entry](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
 
@@ -65,12 +65,15 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
 
 1. Navigate back to the **Dashboards** tab, and then select the **Retail Analysis Sample** dashboard to open it.       
 
-   The dashboard opens, which has a variety of visualization tiles.
+   The dashboard opens, which has a variety of visualization tiles.   
+ 
+1. Select one of the tiles in the dashboard to open the underlying report. In this example, we'll select the area chart, **This Year's Sales, Last Year's Sales by Fiscal Month**.  
+
+   ![Retail Analysis Sample dashboard with visual highlighted](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
+
+   The report opens to the page that contains the area chart you selected; in this case, the **District Monthly Sales** page of the report.
    
-   ![dashboard with visual highlighted](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
-1. Select one of the tiles to open the underlying report. In this example, we'll select **This Year's Sales, Last Year's Sales by Fiscal Month** chart (outlined in pink in the previous image). The report opens to the **District Monthly Sales** page of the report.
-   
-    ![District Monthly Sales report page](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
+   ![District Monthly Sales report page](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
    > If the tile was created by using [Power BI Q&A](power-bi-tutorial-q-and-a.md), the Q&A page will open instead. If the tile was [pinned from Excel](service-dashboard-pin-tile-from-excel.md), Excel Online will open inside of Power BI.
@@ -78,7 +81,7 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
    > 
 1. When someone shares a content pack with colleagues, they typically want to share only the insights, rather than provide direct access to the data. On the **Datasets** tab, you have several options for exploring your dataset. However, you won't be able to view the rows and columns of your data, as you can in Power BI Desktop or Excel. 
    
-![Retail Analysis Sample dataset entry](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
+   ![Retail Analysis Sample dataset entry](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
    
 1. One way of exploring the dataset is by creating your own visualizations and reports from scratch. Select the chart icon ![Chart icon](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) to open the dataset in report editing mode.
      
