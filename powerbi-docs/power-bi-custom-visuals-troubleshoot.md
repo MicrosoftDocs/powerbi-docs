@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting how to develop Power BI visuals
+title: Troubleshooting how to develop Power BI custom visuals
 description: This article discusses some common issues you may encounter when developing or creating a custom Power BI visual.
 author: sranins
 ms.author: rasala
@@ -12,7 +12,7 @@ ms.subservice: powerbi-custom-visuals
 ms.date: 11/06/2018
 ---
 
-# Troubleshoot Power BI visuals
+# Troubleshoot Power BI custom visuals
 
 ## Debug
 
@@ -35,8 +35,8 @@ If you don't see it, make sure you have enabled it within the Power BI settings.
 
 Run the visual server with the command `pbiviz start` in your terminal's command line from the root of your visual project. If the server is not running, it is likely that your SSL certificates weren't installed correctly.
 
-Feel free to contact the visuals support team: *pbicvsupport@microsoft.com* with any questions, comments, or issues you have.
+Feel free to contact the custom visuals support team: *pbicvsupport@microsoft.com* with any questions, comments, or issues you have.
 
 ## Next steps
 
-For more information, visit [Frequently asked questions about Power BI visuals](power-bi-custom-visuals-faq.md#organizational-visuals).
+For more information, visit [Frequently asked questions about Power BI custom visuals](power-bi-custom-visuals-faq.md#organizational-custom-visuals).

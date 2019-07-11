@@ -1065,15 +1065,15 @@
         href: https://go.microsoft.com/fwlink/?linkid=848280
       - name: "Stack Overflow"
         href: https://go.microsoft.com/fwlink/?linkid=848281
-  - name: Visuals
+  - name: Custom Visuals
     items:
     - name: Overview
       items: 
-      - name: "Visuals in Power BI"
+      - name: "Custom visuals in Power BI"
         href: power-bi-custom-visuals.md
     - name: Tutorials
       items:
-      - name: "Develop a Power BI visual"
+      - name: "Develop a Power BI custom visual"
         href: developer/custom-visual-develop-tutorial.md
       - name: "Add formatting options"
         href: developer/custom-visual-develop-tutorial-format-options.md
@@ -1081,11 +1081,11 @@
         href: developer/visuals/unit-tests-introduction.md
     - name: Concepts
       items:
-      - name: "Organizational visuals in Power BI"
+      - name: "Custom visuals for organizations in Power BI"
         href: power-bi-custom-visuals-organization.md
       - name: "Guidelines for Power BI visuals" 
         href: developer/guidelines-powerbi-visuals.md
-      - name: "Visuals FAQ"
+      - name: "Custom visuals FAQ"
         href: power-bi-custom-visuals-faq.md
       - name: "Using capabilities"
         href: developer/visuals/capabilities.md
@@ -1099,9 +1099,9 @@
       items:
       - name: "Get a visual certified"
         href: power-bi-custom-visuals-certified.md
-      - name: "Publish visuals to AppSource"
+      - name: "Publish custom visuals to AppSource"
         href: developer/office-store.md
-      - name: "Use R-powered visuals in Power BI"
+      - name: "Use R-powered custom visuals in Power BI"
         href: desktop-r-powered-custom-visuals.md
       - name: "Visuals interactions"
         href: developer/visuals/visuals-interactions.md
@@ -1139,7 +1139,7 @@
         href: https://powerbi.microsoft.com/developers/
       - name: "Samples"
         href: https://microsoft.github.io/PowerBI-visuals/samples/
-      - name: "Visuals Git Repo"
+      - name: "Custom Visuals Git Repo"
         href: https://go.microsoft.com/fwlink/?linkid=848277
       - name: "Creating SSL certificate"
         href: developer/visuals/create-ssl-certificate.md
