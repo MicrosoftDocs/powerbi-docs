@@ -1,5 +1,5 @@
 ---
-title: Add image, text, video, streaming data to your dashboard
+title: Add images, text, videos, and more to your dashboard
 description: Documentation on how to use the Add tile widget to add an image, video, text box, web code, and streaming data tile to a dashboard.
 author: maggiesMSFT
 manager: kfile
@@ -14,11 +14,11 @@ ms.author: maggies
 
 LocalizationGroup: Dashboards
 ---
-# Add image, text, video, and more to your dashboard
+# Add images, text, videos, and more to your dashboard
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
 
 
-## Add tile
+## Add a tile
 The **Add tile** control lets you directly add an image, text box, video, streaming data, or web code to your dashboard.
 
 1. Select **Add tile** from the top menu bar of your dashboard. Depending on space limitations, you may see only the plus ![plus sign](media/service-dashboard-add-widget/power-bi-add-tile-icon-small.png) sign.
@@ -29,24 +29,30 @@ The **Add tile** control lets you directly add an image, text box, video, stream
     ![Add tile window](media/service-dashboard-add-widget/power-bi-add-tile.png)
 
 ## Add an image
-Say you want your company logo, or some other image, on your dashboard. To do so, you'll need to save the image file online and link to it. Make sure special credentials aren't required to access the image file. For example, because OneDrive and SharePoint require authentication, images stored there can't be added to a dashboard this way.  
+If you want to add your company logo or some other image to your dashboard, you can do so by saving the image file online and linking to it. Make sure security credentials aren't required to access the image file. For example, because OneDrive and SharePoint require authentication, images stored there can't be added to a dashboard this way.  
 
 1. From the **Add tile** window, select **Image** > **Next**.
-2. From the **Add image tile** window, add image information.
-   
-    ![Add image tile window](media/service-dashboard-add-widget/pbi-widget-add-image-new.png)
+
+2. From the **Add image tile** window, add the image information:   
    
    a. To display a title above the image, select **Display title and subtitle** and enter a **Title** and an optional **Subtitle**.
+
    b. Enter the image **URL**.
-   c. To make the tile a hyperlink, select **Set custom link** and enter the **URL**. When colleagues click this image or title, they'll be taken to this URL.
+
+   c. To make the tile a hyperlink, select **Set custom link** and enter the **URL**. 
+
+      When colleagues click this image or title, they'll be taken to this URL.
+
    d. Select **Apply**. 
+
+    ![Add image tile window](media/service-dashboard-add-widget/pbi-widget-add-image-new.png)
 
 3. On the dashboard, resize and move the image as needed.
      
      ![Image on dashboard](media/service-dashboard-add-widget/power-bi-add-image-dash.png)
 
 ## Add a text box or dashboard heading
-1. Select **Text box > Next**.
+1. From the **Add tile** window, select **Text box** > **Next**.
 
    > [!NOTE]
    > To add a dashboard heading, type your heading in the text box and increase the font.
@@ -55,8 +61,11 @@ Say you want your company logo, or some other image, on your dashboard. To do so
 2. Format the text box:
    
    a. To display a title above the text box, select **Display title and subtitle** and enter a **Title** and an optional **Subtitle**.
+
    b. Enter and format **Content** for the text box.  
+
    c. Optionally, set a custom link for the title. A custom link can be an external site or a dashboard or report in your workspace. However, in this example we've added hyperlinks within the text box itself, so we'll leave **Set custom link** unchecked.
+
    d. Select **Apply**. 
 
      ![Add textbox tile window](media/service-dashboard-add-widget/power-bi-add-textbox.png)
@@ -68,21 +77,24 @@ Say you want your company logo, or some other image, on your dashboard. To do so
 ## Add a video
 When you add a YouTube or Vimeo video tile to your dashboard, the video plays right on your dashboard.
 
-1. Select **Video > Next**.
-2. Add video information in the **Add video tile** window:
-   
-   ![Add video tile window](media/service-dashboard-add-widget/power-bi-add-video-new.png)
+1. From the **Add tile** window, select **Video** > **Next**.
+2. Add video information in the **Add video tile** window:   
    
    a. To display a title and subtitle at the top of the video tile, select **Display title and subtitle** and enter a **Title** and an optional **Subtitle**. In this example, we'll add a **Subtitle**, and then convert it to a hyperlink to the entire YouTube playlist.
-    a. Enter the **Video URL** for the video.
-    b. Add a hyperlink for the **Title** and **Subtitle**, so that your colleagues can view the entire playlist on YouTube after they watch the embedded video. To do so, under **Functionality**, select **Set custom link**, and then enter the **URL** for the playlist.
-    c. Select **Apply**.  
+
+   b. Enter the **Video URL** for the video.
+
+   c. Add a hyperlink for the **Title** and **Subtitle**, so that your colleagues can view the entire playlist on YouTube after they watch the embedded video. To do so, under **Functionality**, select **Set custom link**, and then enter the **URL** for the playlist.
+
+   d. Select **Apply**.  
+
+   ![Add video tile window](media/service-dashboard-add-widget/power-bi-add-video-new.png)
 
 3. On the dashboard, resize and move the video tile as needed.
      
    ![Dashboard with video tile added](media/service-dashboard-add-widget/pbi-widget-video-added-new.png)
-3. Select the video tile to play the video.
-4. Select the subtitle to visit the playlist on YouTube.
+4. Select the video tile to play the video.
+5. Select the subtitle to visit the playlist on YouTube.
 
 ## Add streaming data
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
@@ -90,26 +102,30 @@ When you add a YouTube or Vimeo video tile to your dashboard, the video plays ri
 ## Add web content
 Paste or type in any HTML content. Power BI adds it, as a tile, to your dashboard. Enter the embed code manually or copy/paste from sites such as Twitter, YouTube, embed.ly, and so on.
 
-1. Select **Web content > Next**.
+1. From the **Add tile** window, select **Web content** > **Next**.
+
 2. Add information to the **Add web content tile** window:
    
-    ![Add web content tile window](media/service-dashboard-add-widget/power-bi-add-web-content.png)
-   
    a. To display a title above the tile, select **Display title and subtitle** and enter a **Title** and an optional **Subtitle**.
+
    b. Enter the embed code. In this example, we're copying and pasting a Twitter feed.
+
    c. Select **Apply**.
+
+   ![Add web content tile window](media/service-dashboard-add-widget/power-bi-add-web-content.png)
+   
 
 3. On the dashboard, resize and move the web content tile as needed.
      
    ![Dashboard with four tiles](media/service-dashboard-add-widget/pbi-widget-code-added-new.png)
 
 ## Tips for embedding web content
-* For iframes, use a secure source. If you enter your iframe embed code and get a blank tile, check to see if you're using **http** for the iframe source. If so, change it to **https**.
+* For iframes, use a secure source. If you enter your iframe embed code and get a blank tile, check to see if you're using *http* for the iframe source. If so, change it to *https*.
   
   ```html
   <iframe src="https://xyz.com">
   ```
-* Edit width and height information. This embed code embeds a video and sets the video player to 560 x 315 pixels. This size will not change as you resize the tile.
+* Edit width and height information. The embed code embeds a video and sets the video player to 560 x 315 pixels. This size will not change as you resize the tile.
   
   ```html
   <iframe width="560" height="315"
@@ -140,7 +156,7 @@ Paste or type in any HTML content. Power BI adds it, as a tile, to your dashboar
   ```
 
 ## Edit a tile
-To make changes to a tile:
+To make changes to an existing tile:
 
 1. Hover over the top-right corner of the tile and select the ellipsis (...).
    
