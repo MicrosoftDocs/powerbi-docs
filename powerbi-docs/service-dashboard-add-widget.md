@@ -9,7 +9,7 @@ featuredvideoid: e2PD8m1Q0vU
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/10/2019
+ms.date: 07/12/2019
 ms.author: maggies
 
 LocalizationGroup: Dashboards
@@ -41,7 +41,7 @@ If you want to add your company logo or some other image to your dashboard, you 
 
    c. To make the tile a hyperlink, select **Set custom link** and enter the **URL**. 
 
-      When colleagues click this image or title, they'll be taken to this URL.
+        When colleagues click the image or title, they'll be taken to this URL.
 
    d. Select **Apply**. 
 
@@ -100,7 +100,7 @@ When you add a YouTube or Vimeo video tile to your dashboard, the video plays ri
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
 
 ## Add web content
-Paste or type in any HTML content. Power BI adds it, as a tile, to your dashboard. Enter the embed code manually or copy/paste from sites such as Twitter, YouTube, embed.ly, and so on.
+You can paste or type in any HTML content, as a tile, to your report or dashboard. Enter the embed code manually or copy/paste from sites such as Twitter, YouTube, embed.ly, and so on.
 
 1. From the **Add tile** window, select **Web content** > **Next**.
 
@@ -119,8 +119,8 @@ Paste or type in any HTML content. Power BI adds it, as a tile, to your dashboar
      
    ![Dashboard with four tiles](media/service-dashboard-add-widget/pbi-widget-code-added-new.png)
 
-## Tips for embedding web content
-* For iframes, use a secure source. If you enter your iframe embed code and get a blank tile, check to see if you're using *http* for the iframe source. If so, change it to *https*.
+### Tips for embedding web content
+* For iframes, use a secure source. If you enter your iframe embed code and get a blank tile, verify you're not using *http* for the iframe source. If so, change it to *https*.
   
   ```html
   <iframe src="https://xyz.com">
@@ -140,7 +140,7 @@ Paste or type in any HTML content. Power BI adds it, as a tile, to your dashboar
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
   ```
-* This code embeds a tweet and retains, as separate links on the dashboard, links for the **AFK** podcast, **\@GuyInACube's Twitter page**, **Follow**, **#analytics**, **reply**, **retweet**, and **like**.  Selecting the tile itself takes you to the podcast on Twitter.
+* This code embeds a tweet and retains, as separate links on the dashboard, links for the AFK podcast, \@GuyInACube's Twitter page, Follow, #analytics, reply, retweet, and like.  Selecting the tile itself takes you to the podcast on Twitter.
   
   ```html
   <blockquote class="twitter-tweet" data-partner="tweetdeck">
