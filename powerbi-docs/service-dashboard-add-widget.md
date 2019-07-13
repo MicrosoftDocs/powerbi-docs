@@ -24,7 +24,7 @@ The **Add tile** control lets you directly add an image, text box, video, stream
 1. Select **Add tile** from the top menu bar of your dashboard. Depending on space limitations, you may see only the plus ![plus sign](media/service-dashboard-add-widget/power-bi-add-tile-icon-small.png) sign.
    
     ![Add tile icon](media/service-dashboard-add-widget/power-bi-add-tile-icon.png)
-2. Select which type of tile to add: **Web content**, **Image**, **Text box**, **Video**, or **Custom streaming data**.
+2. Select which type of tile to add: **[Web content](#add-web-content)**, **[Image](#add-an-image)**, **[Text box](#add-a-text-box-or-dashboard-heading)**, **[Video](#add-a-video)**, or **[Custom streaming data](#add-streaming-data)**.
    
     ![Add tile window](media/service-dashboard-add-widget/power-bi-add-tile.png)
 
