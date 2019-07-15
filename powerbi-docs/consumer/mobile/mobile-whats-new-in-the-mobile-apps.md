@@ -21,6 +21,15 @@ For related "What's New" information, see:
 
 ## July 2019
 
+### Report page tooltips
+
+Report page tooltips are now supported when viewing reports in your mobile app. Simply press and hold on a visual that has a report tooltip tied to it and it will be shown.  
+
+![Report canvas tooltip](./media/mobile-whats-new-in-the-mobile-apps/report-canvas-tooltip.png)
+
+640 pixel size and 320 viewport
+
+
 ## June 2019
 
 ### Barcode scanning is now available in Android
