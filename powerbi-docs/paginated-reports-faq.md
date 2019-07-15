@@ -114,7 +114,7 @@ You get an error message if you try to upload a file that has an unsupported fea
 
 We support the following data source - 
 
-- Power BI Datasets (via single sign on (SSO))
+- Power BI Datasets (via single sign-on (SSO))
 - Azure Analysis Services (via single sign on (SSO) and oAuth)
 - Azure SQL Data Warehouse
 - Azure SQL Database (username/password, SSO and oAuth)
