@@ -129,7 +129,7 @@ When accessing SSAS through the Gateway, the user whose credentials are stored n
 
 ### What authentication methods do you support?
 
-We support SSO for Azure Analysis Services, Azure SQL Database and Power BI data sources.  We also support oAuth for Azure SQL Database and Azure Analysis Services.  For other data sources, you currently need to store a user name and password with the data source in the portal or gateway.  
+We support SSO for Azure Analysis Services, Azure SQL Database, and Power BI data sources.  We also support OAuth for Azure SQL Database and Azure Analysis Services.  For other data sources, you currently need to store a user name and password with the data source in the portal or gateway.  
 
 ### Can I use a Power BI dataset as a data source for my paginated report?
 
