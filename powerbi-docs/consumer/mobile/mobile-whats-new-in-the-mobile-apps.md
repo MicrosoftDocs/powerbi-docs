@@ -27,7 +27,8 @@ Report page tooltips are now supported when viewing reports in your mobile app. 
 
 ![Report canvas tooltip](./media/mobile-whats-new-in-the-mobile-apps/report-canvas-tooltip.png)
 
-640 pixel size and 320 viewport
+> [!NOTE]
+> Report tooltips are supported for devices greater than 640 pixel size and 320 viewport. Smaller devices use default tooltips.
 
 
 ## June 2019
