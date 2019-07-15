@@ -21,10 +21,10 @@ Installing and configuring a gateway is usually done by an administrator. It may
 This article doesn’t provide step-by-step guidance on how to install and configure the gateway. For that, be sure to see [On-premises data gateway](service-gateway-onprem.md). This article is meant to provide you with an in-depth understanding of how the gateway works. We’ll also go into some detail about usernames and security in both Azure Active Directory and Analysis Services, and how the cloud service uses the e-mail address a user sign in with, the gateway, and Active Directory to securely connect to and query your on-premises data.
 
 <!-- Shared Requirements Include -->
-[!INCLUDE [gateway-onprem-how-it-works-include](./includes/gateway-onprem-how-it-works-include.md)]
+./includes/gateway-onprem-how-it-works-include.md
 
 <!-- Shared Install steps Include -->
-[!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
+./includes/gateway-onprem-datasources-include.md
 
 ## Sign in account
 Users will sign in with either a work or school account. This is your organization account. If you signed up for an Office 365 offering and didn’t supply your actual work email, it may look like nancy@contoso.onmicrosoft.com. Your account, within a cloud service, is stored within a tenant in Azure Active Directory (AAD). In most cases, your AAD account’s UPN will match the email address.
@@ -109,7 +109,7 @@ In other cases, there might be issues with the type of e-mail address users sign
 Rather than go into troubleshooting gateway issues here, we’ve put a series of troubleshooting steps into another article; [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md). Hopefully, you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
 
 <!-- Account and Port information -->
-[!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
+./includes/gateway-onprem-accounts-ports-more.md
 
 ## Next steps
 
