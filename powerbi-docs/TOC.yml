@@ -1281,26 +1281,16 @@
   items:
   - name: Overview
     items: 
-    - name: "What are Power BI gateways?"
-      href: service-gateway-getting-started.md
-  - name: Tutorials
-    items: 
-    - name: "Connect to SQL Server data"
-      href: service-gateway-sql-tutorial.md
+    - name: "On-premises data gateway"
+      href: service-gateway-onprem.md
   - name: Concepts
     items:
     - name: "Guidance for deploying a data gateway"
       href: service-gateway-deployment-guidance.md
     - name: "On-premises data gateway FAQ"
-      href: service-gateway-onprem-faq.md
+      href: service-gateway-power-bi-faq.md
   - name: How to
     items:
-    - name: "Install gateways"
-      href: service-gateway-install.md
-    - name: "Manage gateways"
-      href: service-gateway-manage.md
-    - name: "Monitor gateway performance"
-      href: service-gateway-performance-monitoring.md
     - name: "Manage your enterprise data source - Analysis Services"
       href: service-gateway-enterprise-manage-ssas.md
     - name: "Manage your enterprise data source - SAP HANA"
@@ -1323,12 +1313,6 @@
         href: service-gateway-sso-kerberos-resource.md
       - name: "Single sign-on (SSO) - SAML"
         href: service-gateway-sso-saml.md
-    - name: "Configuring proxy settings"
-      href: service-gateway-proxy.md
-    - name: "High availability clusters for on-premises data gateway"
-      href: service-gateway-high-availability-clusters.md
-    - name: "On-premises data gateway"
-      href: service-gateway-onprem.md
     - name: "On-premises data gateway - in-depth"
       href: service-gateway-onprem-indepth.md
     - name: "On-premises data gateway (personal mode)"
@@ -1340,7 +1324,7 @@
   - name: "Resources"
     items:
     - name: "Monthly gateway updates"
-      href: service-gateway-monthly-updates.md
+      href: "https://review.docs.microsoft.com/data-integration/gateway/service-gateway-monthly-updates?branch=master"
 - name: Administration
   items:
   - name: Overview
