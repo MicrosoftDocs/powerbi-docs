@@ -1,5 +1,5 @@
 ---
-title: Developing a Power BI Custom Visual
+title: Developing a Power BI visual
 description: A tutorial on how to develop a Power BI custom visual
 author: sranins
 ms.author: rasala
@@ -12,7 +12,7 @@ ms.subservice: powerbi-custom-visuals
 ms.date: 03/15/2019
 ---
 
-# Tutorial: Developing a Power BI custom visual
+# Tutorial: Developing a Power BI visual
 
 We’re enabling developers to easily add custom visuals into Power BI for use in dashboard and reports. To help you get started, we’ve published the code for all of our visualizations to GitHub.
 

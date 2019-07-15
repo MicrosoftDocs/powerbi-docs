@@ -1,5 +1,5 @@
 ---
-title: Frequently asked questions about Power BI custom visuals
+title: Frequently asked questions about Power BI visuals
 description: Browse a list of frequently asked questions and answers about Power BI custom visuals
 author: sranins
 ms.author: rasala
@@ -12,7 +12,7 @@ ms.custom: ''
 ms.date: 12/17/2018
 ---
 
-# Frequently asked questions about Power BI custom visuals
+# Frequently asked questions about Power BI visuals
 
 ## Organizational custom visuals
 

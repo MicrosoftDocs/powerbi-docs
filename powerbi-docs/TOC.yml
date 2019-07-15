@@ -73,7 +73,7 @@
       href: desktop-data-source-prerequisites.md
     - name: "Default member in multidimensional models in Power BI"
       href: desktop-default-member-multidimensional-models.md            
-    - name: "Custom visuals FAQ"
+    - name: "Visuals FAQ"
       href: power-bi-custom-visuals-faq.md   
   - name: How to
     items: 
@@ -1073,7 +1073,7 @@
         href: power-bi-custom-visuals.md
     - name: Tutorials
       items:
-      - name: "Develop a Power BI custom visual"
+      - name: "Develop a Power BI visual"
         href: developer/custom-visual-develop-tutorial.md
       - name: "Add formatting options"
         href: developer/custom-visual-develop-tutorial-format-options.md
@@ -1081,11 +1081,11 @@
         href: developer/visuals/unit-tests-introduction.md
     - name: Concepts
       items:
-      - name: "Custom visuals for organizations in Power BI"
+      - name: "Visuals for organizations in Power BI"
         href: power-bi-custom-visuals-organization.md
       - name: "Guidelines for Power BI visuals" 
         href: developer/guidelines-powerbi-visuals.md
-      - name: "Custom visuals FAQ"
+      - name: "Visuals FAQ"
         href: power-bi-custom-visuals-faq.md
       - name: "Using capabilities"
         href: developer/visuals/capabilities.md
