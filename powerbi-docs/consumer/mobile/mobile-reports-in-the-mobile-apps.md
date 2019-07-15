@@ -64,6 +64,13 @@ When you long tap (tap and hold) a data point, a tooltip will show up presenting
 
 ![report tooltip](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
 
+If the report author configured report page tooltip, then default tooltip will be replaced with report page tooltip.
+
+![report page tooltip](./media/mobile-reports-in-the-mobile-apps/report-page-tooltip.png)
+
+> [!NOTE]
+> Report tooltips are supported for devices greater than 640 pixel size and 320 viewport. If your device is smaller, then the app uses default tooltips.
+
 Report authors can define hierarchies in the data and relationships between report pages. Hierarchy allows drill down, drill up, and drill through another report page from a visual and a value. So, when you long tap on a value, in addition to the tooltip, the relevant drill options will appear in the footer. 
 
 ![report drill actions](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
