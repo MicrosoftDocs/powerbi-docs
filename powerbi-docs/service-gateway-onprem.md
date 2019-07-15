@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
-ms.date: 06/05/2018
+ms.date: 07/15/19
 ---
 
 # On-premises data gateway

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: overview
-ms.date: 04/18/2018
+ms.date: 07/15/19
 ms.author: mblythe
 
 LocalizationGroup: Gateways
