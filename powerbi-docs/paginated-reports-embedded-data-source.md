@@ -27,7 +27,7 @@ For the following data sources, use the [SQL Server Analysis Services connection
 
 - Power BI Premium datasets
 
-Paginated reports connect to on-premises data sources by way of a [Power BI gateway](service-gateway-getting-started.md). You set up the gateway after you publish the report to the Power BI service.
+Paginated reports connect to on-premises data sources by way of a [Power BI gateway](service-gateway-onprem.md). You set up the gateway after you publish the report to the Power BI service.
 
 See [Report Data in Power BI Report Builder](report-builder-data.md) for more detailed information.
 

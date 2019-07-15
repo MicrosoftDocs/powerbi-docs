@@ -33,7 +33,7 @@ In this tutorial, you complete the following steps:
 - If you don't already have one, sign up for a [free Power BI trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 - [Install Power BI Desktop](https://powerbi.microsoft.com/desktop/) on a local computer.
 - [Install SQL Server](/sql/database-engine/install-windows/install-sql-server) on a local computer, and restore the [sample database from a backup](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). For more information about AdventureWorks, see [AdventureWorks installation and configuration](/sql/samples/adventureworks-install-configure).
-- [Install an on-premises data gateway](service-gateway-install.md) on the same local computer as SQL Server (in production, it would typically be a different computer).
+- [Install an on-premises data gateway](service-gateway-onprem.md) on the same local computer as SQL Server (in production, it would typically be a different computer).
 
 > [!NOTE]
 > If you're not a gateway administrator and don't want to install a gateway yourself, contact a gateway administrator in your organization. They can create the required data source definition to connect your dataset to your SQL Server database.
@@ -199,6 +199,6 @@ If you don't want to use the sample data anymore, drop the database in SQL Serve
 
 In this tutorial, you've explored how to import data from an on-premises SQL Server database into a Power BI dataset and how to refresh this dataset on a scheduled and on-demand basis to keep the reports and dashboards that use this dataset updated in Power BI. Now you can learn more about managing data gateways and data sources in Power BI. It might also be a good idea to review the conceptual article Data Refresh in Power BI.
 
-- [Manage a Power BI on-premises gateway](service-gateway-manage.md)
+- [Manage a Power BI on-premises gateway](service-gateway-manage-admins.md)
 - [Manage your data source - Import/Scheduled Refresh](service-gateway-enterprise-manage-scheduled-refresh.md)
 - [Data refresh in Power BI](refresh-data.md)
