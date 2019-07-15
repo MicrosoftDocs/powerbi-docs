@@ -29,7 +29,7 @@ Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile
 ## Download the app
 [Download the iOS app](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iOS app")  from the Apple App Store to your iPhone, iPad, or iPod Touch.
 
-You can run the Power BI for iOS app on iPhone 5 and above, with iOS 10 or later. You can also run it on an iPad or iPod Touch with iOS 10 or later. 
+You can run the Power BI for iOS app on any device running iOS 11 or later. 
 
 ## Sign up for the Power BI service
 If you haven't already signed up, go to [powerbi.com](https://powerbi.microsoft.com/get-started/), and under **Power BI - Cloud collaboration and sharing**, select **Try free**.

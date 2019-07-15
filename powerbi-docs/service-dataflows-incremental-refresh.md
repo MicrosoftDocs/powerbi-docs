@@ -93,7 +93,7 @@ When moving a dataflow from incremental to full refresh, all data accumulated in
 
 ## Dataflow incremental refresh and datasets
 
-Dataflow incremental refresh and dataset incremental refresh are designed to work in tandem. It's is acceptable and supported to have an incrementally refreshing entity in a dataflow, fully loaded into a dataset, or a fully loaded entity in dataflow incrementally loaded to a dataset. 
+Dataflow incremental refresh and dataset incremental refresh are designed to work in tandem. It is acceptable and supported to have an incrementally refreshing entity in a dataflow, fully loaded into a dataset, or a fully loaded entity in dataflow incrementally loaded to a dataset. 
 
 Both approaches according to your specified definitions in the refresh settings.
 You can read more about incremental refresh in [incremental refresh in Power BI Premium](service-premium-incremental-refresh.md).

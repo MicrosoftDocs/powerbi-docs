@@ -59,7 +59,7 @@ Sign in to the Power BI service with the user credentials for whom you granted a
 
 This step assumes you have the data you want to score with your Azure ML model in CSV format.  If you used the **Automobile Pricing Experiment** to create the model in the Machine Learning studio, the dataset for is shared in the following link:
 
-* [Azure Learning Studio sample model](https://raw.githubusercontent.com/santoshc1/PowerBI‑AI‑samples/master/Tutorial\_MLStudio\_model\_integration/Automobile%20price%20data%20\_Raw\_.csv)
+* [Azure Learning Studio sample model](https://github.com/santoshc1/PowerBI-AI-samples/blob/master/Tutorial_MLStudio_model_integration/Automobile%20price%20data%20_Raw_.csv)
 
 ### Create a dataflow
 
