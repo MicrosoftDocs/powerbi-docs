@@ -1069,7 +1069,7 @@
     items:
     - name: Overview
       items: 
-      - name: "Custom visuals in Power BI"
+      - name: "Visuals in Power BI"
         href: power-bi-custom-visuals.md
     - name: Tutorials
       items:
