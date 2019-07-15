@@ -28,6 +28,8 @@ If you've just installed a gateway, we recommend that you next [add a data sourc
 
 Power BI supports many on-premises data sources, and each has its own requirements. A gateway can be used for a single data source or multiple data sources. For this example, we'll show you how to add SQL Server as a data source, but the steps are similar for other data sources.
 
+> [!NOTE]
+> Gateway admins can now create multiple data sources connecting to the same source, each with a different credential, and add users to each of these data sources based on their access level.
 
 ### Add a data source
 
@@ -50,7 +52,12 @@ Power BI supports many on-premises data sources, and each has its own requiremen
 
 1. For SQL Server, you would choose an **Authentication Method** of **Windows** or **Basic** (SQL Authentication).  If you choose **Basic**, enter the credentials for your data source.
 
-1. Under **Advanced settings**, optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for your data source (does not apply to [DirectQuery](desktop-directquery-about.md)).
+1. If this data source is currently unavailable or slow then select **Skip Test Connection**. Otherwise the data source creation might fail.
+
+    > [!NOTE]
+    > Skipping the test connection isn't supported for Analysis Services.
+
+1. Under **Advanced settings**, optionally configure the [privacy level](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)) for your data source (does not apply to [DirectQuery](desktop-directquery-about.md)).
 
     ![Advanced settings](media/service-gateway-manage/advanced-settings.png)
 
@@ -71,7 +78,7 @@ To remove a data source, go to the data source then select **Remove**.
 
 ## Manage users and administrators
 
-After you add a data source to a gateway, you give users and security groups access to the specific data source (not the entire gateway). The data source users list controls only who is allowed to publish reports that include data from the data source. Report owners can create dashboards, content packs, and apps, and then share those with other users.
+After you add a data source to a gateway, you give users and email-enabled security groups access to the specific data source (not the entire gateway). The data source users list controls only who is allowed to publish reports that include data from the data source. Report owners can create dashboards, content packs, and apps, and then share those with other users.
 
 You can also give users and security groups administrative access to the gateway.
 
@@ -95,14 +102,14 @@ And that’s all there is to it. Remember that you need to add users to each dat
 
 ### Remove users from a data source
 
-On the **Users** tab for the data source, you can remove users and security groups that use this data source.
+On the **Users** tab for the data source, you can remove users and email-enabled security groups that use this data source.
 
 ![Remove user](media/service-gateway-manage/remove-user.png)
 
 
 ### Add and remove administrators
 
-On the **Administrators** tab for the gateway, add and remove users (or security groups) that can administer the gateway.
+On the **Administrators** tab for the gateway, add and remove users (or email-enabled security groups) that can administer the gateway.
 
 ![Administrators tab](media/service-gateway-manage/administrators-tab.png)
 

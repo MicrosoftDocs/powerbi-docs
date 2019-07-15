@@ -9,16 +9,16 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 06/26/2019
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
 ---
 # Tips for asking questions in Power BI Q&A
 ## Words and terminology that Q&A recognizes
-This list of keywords on this page isn't exhaustive.  The best way to see if Power BI recognizes a keyword, is to try it out by typing it in the question box.  If the word or term is greyed out, then Power BI doesn't recognize it.
+The list of keywords on this page isn't exhaustive.  The best way to see if Power BI recognizes a keyword, is to try it out by typing it in the question box.  If the word or term is greyed out, then Power BI doesn't recognize it.
 
-The list below uses present tense, but all tenses are recognized in most cases. For example, “is” includes: **are**, **was**, **were**, **will be**, **have**, **has**, **had**, **will have**, **has got**, **do**, **does**, **did**.  And “sort” includes: **sorted** and **sorting**.  Also, Power BI recognizes and includes singular and plural versions of a word. 
+The list below uses present tense, but all tenses are recognized in most cases. For example, “is” includes: **are**, **was**, **were**, **will be**, **have**, **has**, **had**, **will have**, **has got**, **do**, **does**, **did**.  And “sort” includes: **sorted** and **sorting**.  Power BI also recognizes and includes singular and plural versions of a word. 
 
 > [!NOTE]
 > Q&A is also available in the [Microsoft Power BI app for iOS on iPads, iPhones, and iPod Touch devices](mobile/mobile-apps-ios-qna.md).
@@ -37,7 +37,7 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 |     |         |         |
 |**Conjunctions**     |  and, or, each of, with, versus, &, and, but, nor, along with, in addition to       |         
 |          |         |
-|**Contractions**     |  Q&A recognizes almost all contractions, try it out.  Here are a few examples: didn’t, haven’t, he’d, he’s, isn’t, it’s, she’ll, they’d, weren’t, where’ll, who’s, won’t, wouldn’t          |
+|**Contractions**     |  Q&A recognizes almost all contractions, try it out.  Here are a few examples: didn’t, haven’t, he’d, he’s, isn’t, it’s, she’ll, they’d, weren’t, who’s, won’t, wouldn’t          |
 |        |         |
 |**Dates**     |       Power BI recognizes most date terms (day, week, month, year, quarter, decade, ...) and dates written in many different formats (see below). Power BI also recognizes the following keywords: MonthName, Days 1-31, decade. Examples: January 3rd of 1995, January 3rd 1995, jan 03 1995, 3 Jan 1995, the 3rd of January, January 1995, 1995 January, 1995-01, 01/1995, names of months         |
 |        |         |
@@ -58,27 +58,27 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 |**Range**     |      greater, more, larger, above, over, >, less, smaller, fewer, below, under, <,  at least, no less than, >=, at most, no more than, <=, in, between, in the range of, from, later, earlier, sooner, after, on, at, later than, after, since, starting with, starting from, ending with           |
 |        |         |
 **Times**  |am, pm, o'clock, noon, midnight, hour, minute, second, hh:mm:ss  |
-|  |  Examples: 10 pm, 10:35 pm, 10:35:15 pm, 10 oclock, noon, midnight, hour, minute, second.  |
+|  |  Examples: 10 pm, 10:35 pm, 10:35:15 pm, 10 o clock, noon, midnight, hour, minute, second.  |
 |  |  |
 |**Top N**     |     (order, ranking): top, bottom, highest, lowest, first, last, next, earliest, newest, oldest, latest, most recent, next            |
 |        |         |
-|**Visual types**     |  all visual types native to Power BI.  If it's an option in the Visualizations pane, then you can include it in your question.  The exception to this is [custom visuals](../power-bi-custom-visuals.md) that you've manually added to the Visualization pane.  |
+|**Visual types**     |  all visual types native to Power BI.  If it's an option in the Visualizations pane, then you can include it in your question.  The exception to this rule is [custom visuals](../power-bi-custom-visuals.md) that you've manually added to the Visualization pane.  |
 |  |  Example: show districts by month and sales total as bar chart               |
 |        |         |
 |**Wh (relationship, qualified)**  | when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what                |
 
 ## Q&A helps you phrase the question
-Q&A does its best to understand and answer the question being asked. It does this in several ways. For all of these, you can accept the action in full, in part, or not at all. As you type your question, Q&A:
+Q&A does its best to understand and answer the question being asked. It tries to understand in several ways. For all of these phrasings, you can accept the action in full, in part, or not at all. As you type your question, Q&A:
 
-* autocompletes words and questions. It uses various strategies, including autocompleting recognized words, and previously used questions that returned valid responses. If more than one autocomplete option is available, they're presented in a dropdown list.
+* autocompletes words and questions. It uses various strategies, including autocompleting recognized words, stored questions, and previously used questions that returned valid responses. If more than one autocomplete option is available, they're presented in a dropdown list.
 * corrects spelling.
-* provides a preview of the answer in the form of a visualization. The visualization updates as you type and edit the question (it doesn't wait for you to press Enter).
+* provides a preview of the answer in the form of a visual. The visual updates as you type and edit the question (it doesn't wait for you to press Enter).
 * suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
 * restates the question based on the data in the underlying dataset(s). Q&A replaces the words you used with synonyms from the underlying dataset(s). By reading the restatement, you know whether Q&A understood your question or not. 
 * dims words it doesn't understand.
 
 ## Don't stop now
-After Q&A displays your results, keep the conversation going! Use the interactive features of the visualization and of Q&A to uncover more insights.
+After Q&A displays your results, keep the conversation going! Use the interactive features of the visual and of Q&A to uncover more insights.
 
 ## Next steps
 Back to [Q&A in Power BI](end-user-q-and-a.md)  

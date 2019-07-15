@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 06/24/2019
 ms.author: tebercov
 ---
 
@@ -52,7 +52,7 @@ Here are the high-level steps.
 
 1. Create a test package to test the template app yourself within your organization. 
 
-1. Promote the test app to preproduction to submit the app for validation in AppSource, and to test outside your own tenant. 
+1. Promote the test app to pre-production to submit the app for validation in AppSource, and to test outside your own tenant. 
 
 1. Submit the content to Cloud Partner Platform for publishing. 
 
@@ -61,7 +61,7 @@ Here are the high-level steps.
 
 ## Requirements
 
-To create the template app, you need permissions to create one. See the Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings-preview) for details. 
+To create the template app, you need permissions to create one. See the Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings) for details. 
 
 To publish a template app to the Power BI service and AppSource, you must meet the requirements for [becoming a Cloud Marketplace Publisher](https://docs.microsoft.com/azure/marketplace/become-publisher).
  > [!NOTE] 
