@@ -282,7 +282,7 @@ public IdentityBlob(string value);
 
 ### Token-based Identity REST API Usage
 
-If you're calling the [REST API](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetoken#definitions), you can add identity blob inside each identity.
+If you're calling the [REST API](/rest/api/power-bi/embedtoken/reports_generatetokeningroup#definitions), you can add identity blob inside each identity.
 
 ```JSON
 {
