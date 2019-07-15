@@ -19,6 +19,8 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
 
+## July 2019
+
 ## June 2019
 
 ### Barcode scanning is now available in Android
