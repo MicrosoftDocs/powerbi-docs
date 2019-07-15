@@ -21,7 +21,7 @@ This article discusses some common issues you may get when embedding content fro
 
 [Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the traffic with the Power BI APIs from the client machine. This tool may show errors and other related information.
 
-![Fiddler trace](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
+![Fiddler trace](media/embedded-troubleshoot/fiddler.png)
 
 ### F12 in Browser for front-end debugging
 
