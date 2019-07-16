@@ -1,9 +1,49 @@
 {
     "redirections": [
         {
-        "source_path": "powerbi-docs/service-extended-pro-trial.md",
-        "redirect_url": "/power-bi/service-self-service-signup-for-power-bi",
-        "redirect_document_id": false
+            "source_path": "powerbi-docs/service-gateway-getting-started.md",
+            "redirect_url": "/power-bi/service-gateway-onprem",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-high-availability-clusters.md",
+            "redirect_url": "/data-integration/gateway/service-gateway-high-availability-clusters",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-install.md",
+            "redirect_url":  "/data-integration/gateway/service-gateway-install",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-manage.md",
+            "redirect_url":  "/data-integration/gateway/service-gateway-manage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-monthly-updates.md",
+            "redirect_url":  "/data-integration/gateway/service-gateway-monthly-updates",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-onprem-faq.md",
+            "redirect_url":  "/power-bi/service-gateway-power-bi-faq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-performance-monitoring.md",
+            "redirect_url":  "/data-integration/gateway/service-gateway-performance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-proxy.md",
+            "redirect_url":  "/data-integration/gateway/service-gateway-proxy",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-extended-pro-trial.md",
+            "redirect_url": "/power-bi/service-self-service-signup-for-power-bi",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/refresh-enable-fast-combine.md",

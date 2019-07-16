@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 06/18/2019
+ms.date: 07/15/2019
 ---
 
 # Paginated reports in Power BI: FAQ 
@@ -114,10 +114,10 @@ You get an error message if you try to upload a file that has an unsupported fea
 
 We support the following data source - 
 
-- Power BI Premium Datasets
+- Power BI Datasets (via single sign-on (SSO))
 - Azure Analysis Services (via single sign on (SSO) and oAuth)
 - Azure SQL Data Warehouse
-- Azure SQL Database (username/password and oAuth)
+- Azure SQL Database (username/password, SSO and oAuth)
 - SQL Server*
 - SQL Server Analysis Services (SSAS) tabular (DAX) and multidimensional (MDX) models* 
 - Oracle* 
@@ -129,11 +129,11 @@ When accessing SSAS through the Gateway, the user whose credentials are stored n
 
 ### What authentication methods do you support?
 
-We support SSO for both Azure Analysis Services and Power BI Premium data sources, and we support oAuth and SSO for Azure SQL Database.  For other data sources, you currently need to store a user name and password with the data source in the portal or gateway.  
+We support SSO for Azure Analysis Services, Azure SQL Database, and Power BI data sources.  We also support OAuth for Azure SQL Database and Azure Analysis Services.  For other data sources, you currently need to store a user name and password with the data source in the portal or gateway.  
 
 ### Can I use a Power BI dataset as a data source for my paginated report?
 
-Yes, we support Power BI Premium datasets as data sources for your paginated reports.
+Yes, we support Power BI datasets as data sources for your paginated reports.
 
 ### Can I use stored procedures through the Gateway?
 
@@ -174,10 +174,6 @@ We plan to have the reports support the same major scenarios in the service as m
 ### Is a migration tool planned so SSRS customers can move their existing reports and assets to Power BI?
 
 We're evaluating options here to allow content to be moved to Power BI in an automated way, but this won't be available until after GA.
-
-### Will I ever be able to create both paginated reports and Power BI reports in a single authoring tool?
-
-We've looked at ways to enable this scenario, but we don't have this in our plans at this time.
 
 ### Is there a report viewer control for paginated reports in the Power BI service?
 
