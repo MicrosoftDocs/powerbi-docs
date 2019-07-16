@@ -191,7 +191,7 @@ Types refer to what the property will be. See below for more information about t
 }
 ```
 
-[Learn more about objects](objects-and-properties.md)
+[Learn more about objects](objects-properties.md)
 
 ## Handle partial highlighting - `supportsHighlight`
 
