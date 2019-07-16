@@ -16,48 +16,56 @@ LocalizationGroup: Get started
 ---
 # The 'new look' of the Power BI service: Navigating a report in the new look
 
-Power BI service has a new look. We’ve refreshed the user interface for viewing reports, to provide a modern experience that’s simpler and builds on customers’ familiarity with Microsoft products.  Here's an overview of what’s changed in the new look - 
+The Power BI service has a new look. We’ve refreshed the user interface for viewing reports. The new look provides a modern experience that’s simpler and builds on customers’ familiarity with Microsoft products.  Here's an overview of what’s changed in the new look: 
 
-![New look overview of changes](media/powerbi-new-look/New-look-changes.png)
+![New look overview of changes](media/service-new-look/New-look-changes.png)
 
-## How to opt in to the new look?
-All Power BI Service users will be able to opt-in to the new look using the new toggle.
-![Opting in to the new look](media/powerbi-new-look/New-look-opt-in.gif)
+## Opt in to the new look
+All Power BI service users can opt in to the new look using the new toggle.
 
-## 1. New colors and icons
-Across the user interface, we’ve switched to a lighter color theme and updated icons – so that they complement the canvas, making report content the main point of focus. 
+![Opting in to the new look](media/service-new-look/New-look-opt-in.gif)
 
+## New colors and icons
 
-## 2. View metadata 
-We’ve surfaced details such as last refresh date and contact information to help customers find additional context on the report.You can view additional details by opening the menu.
+Across the user interface, we’ve switched to a lighter color theme and updated icons. They complement the canvas, making report content the main point of focus. 
 
 
-## 3. Vertical navigation 
-We've switched the horizontal page tabs to a vertical list of pages. Report pages are now prominent, hard to miss and similar to navigation in Word and PowerPoint. You can increase or decrease the screen area by resizing the pane.
+## View metadata 
+
+We’ve surfaced details such as last refresh date and contact information to give you additional context on the report. You can view additional details by opening the menu.
 
 
-## 4. Simplified action bar 
-A new, updated action bar designed to surface the most relevant commands front and center for end users, making it easier to export, subscribe, collaborate with others, and delve deeper through filters and bookmarks.
+## Vertical navigation 
+We've switched the horizontal page tabs to a vertical list of pages. Report pages are now prominent, hard to miss, and similar to navigation in Word and PowerPoint. You can increase or decrease the screen area by resizing the pane.
 
-![New look - Quick tour](media/powerbi-new-look/New-look-quick-tour.gif)
+## Simplified action bar 
 
-## 5. 100% feature parity
-No functionality has been removed. Additional commands such as edit, save a copy, etc., can be found by expanding the ‘…’ menu in the action bar. Usage metrics can be accessed from the content list.
+A new, updated action bar designed to surface the most relevant commands front and center for report consumers. Now it's easier to export, subscribe, collaborate with others, and delve deeper through filters and bookmarks.
 
-![Report action bar in new look](media/powerbi-new-look/Report-action-bar-new-look.gif)
+![New look - Quick tour](media/service-new-look/New-look-quick-tour.gif)
 
-If you're looking for File menu actions, here's where they've moved
+## No features removed
 
-![File menu in new look](media/powerbi-new-look/File-menu-new-look.gif)
+The new look has 100% parity with the old look. We didn't remove any functionality. You can find the additional commands such as edit, save a copy, and so on by expanding the ellipsis (the ... menu) in the action bar. Access the usage metrics from the content list.
 
-## 6. New filters
-Recent updates such as viewing applied filters and the new filters pane, will be available by default with the new look. This comes in handy for reports where the designers haven't had a chance to upgrade to the new filters experience.   
+![Report action bar in new look](media/service-new-look/Report-action-bar-new-look.gif)
 
-## 7. Consistent experience 
-The action bar is simplified across dashboards, reports and apps, to provide a consistent experience, while retaining the functional differences. Here's a walkthrough of actions in a dashboard. 
-![Dashboard action bar in new look](media/powerbi-new-look/Dashboard-action-bar-new-look.gif)
+Looking for File menu actions? Here's where they've moved:
 
-## 8. No changes to edit mode 
+![File menu in new look](media/service-new-look/File-menu-new-look.gif)
+
+## New filter experience
+
+Recent updates such as viewing applied filters and the new filters pane are available by default with the new look. Even if the report designers haven't upgraded to the new filters experience, you see the new filters pane.
+
+## Consistent experience 
+
+The action bar is simplified across dashboards, reports, and apps to provide a consistent experience, while retaining the functional differences. Here's a walkthrough of actions in a dashboard.
+ 
+![Dashboard action bar in new look](media/service-new-look/Dashboard-action-bar-new-look.gif)
+
+## No changes to edit mode 
+
 We’ve kept the authoring experience similar to that in Desktop. The new look changes only apply to the reading view.
 
 
