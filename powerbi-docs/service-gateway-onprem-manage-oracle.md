@@ -13,7 +13,10 @@ ms.author: mblythe
 
 LocalizationGroup: Gateways
 ---
+
 # Manage your data source - Oracle
+
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
 Once you've [installed the on-premises data gateway](/data-integration/gateway/service-gateway-install), you'll need to [add data sources](service-gateway-data-sources.md#add-a-data-source) that can be used with the gateway. This article will look at how to work with gateways and Oracle data sources either for scheduled refresh or for DirectQuery.
 

@@ -15,6 +15,8 @@ LocalizationGroup: Gateways
 ---
 # Manage your data source - Analysis Services
 
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+
 Once you've [installed the on-premises data gateway](/data-integration/gateway/service-gateway-install), you'll need to [add data sources](service-gateway-data-sources.md#add-a-data-source) that can be used with the gateway. This article looks at how to work with gateways and Analysis Services data sources that are used either for scheduled refresh or for live connections.
 
 To learn more about how to set up a live connection to Analysis Services, [watch this video](https://www.youtube.com/watch?v=GPf0YS-Xbyo&feature=youtu.be).

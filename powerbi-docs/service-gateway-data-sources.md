@@ -17,6 +17,8 @@ LocalizationGroup: Gateways
 
 # Manage data sources
 
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+
 Power BI supports many on-premises data sources, and each has its own requirements. A gateway can be used for a single data source or multiple data sources. For this example, we'll show you how to add SQL Server as a data source, but the steps are similar for other data sources.
 
 >[!NOTE]

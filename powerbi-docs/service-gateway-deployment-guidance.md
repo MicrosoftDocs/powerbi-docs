@@ -16,6 +16,8 @@ LocalizationGroup: Gateways
 
 # Guidance for deploying a data gateway for Power BI
 
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+
 This article provides guidance and considerations for deploying a data gateway for Power BI in your network environment.
 
 For information about how to download, install, configure, and manage the on-premises data gateway, see [What is an on-premises data gateway](/data-integration/gateway/service-gateway-onprem). You can also find out more about the on-premises data gateway and Power BI by visiting the [Microsoft Power blog](https://powerbi.microsoft.com/blog/) and the [Microsoft Power BI Community](https://community.powerbi.com/) site.

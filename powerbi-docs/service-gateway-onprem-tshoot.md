@@ -14,10 +14,9 @@ LocalizationGroup: Gateways
 
 # Troubleshoot gateways - Power BI
 
-This article discusses some common issues when using the **on-premises data gateway** with Power BI.
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
->[!NOTE]
->If you encounter an issue that is not listed below, you can use the Power BI [communities](http://community.powerbi.com) site or you can create a [support ticket](http://powerbi.microsoft.com/support).
+This article discusses some common issues when using the **on-premises data gateway** with Power BI. If you encounter an issue that is not listed below, you can use the Power BI [communities](http://community.powerbi.com) site or you can create a [support ticket](http://powerbi.microsoft.com/support).
 
 ## Configuration
 

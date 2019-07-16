@@ -13,15 +13,17 @@ ms.author: mblythe
 
 LocalizationGroup: Troubleshooting
 ---
+
 # Troubleshooting Power BI Gateway - Personal
+
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+
 The following sections go through some common issues you may come across when using the Power BI Gateway - Personal.
 
-> [!NOTE]
-> The current version of the gateway for personal use is the **On-premises data gateway (personal)**. Please update your installation to use that version.
-> 
-> 
-
 ## Update to the latest version
+
+The current version of the gateway for personal use is the **On-premises data gateway (personal)**. Please update your installation to use that version.
+
 Many issues can surface when the gateway version is out of date.  It's a good general practice to make sure you're on the latest version. If you haven't updated the gateway for a month, or longer, consider installing the latest version of the gateway. Then, see if you can reproduce the issue.
 
 ## Installation

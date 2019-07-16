@@ -13,7 +13,11 @@ ms.author: mblythe
 
 LocalizationGroup: Gateways
 ---
+
 # On-premises data gateway in-depth
+
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+
 It's possible for users in your organization to access on-premises data (to which they already have access authorization), but before those users can connect to your on-premises data source, an On-premises data gateway needs to be installed and configured. The gateway facilitates quick and secure behind-the-scenes communication between a user in the cloud, to your on-premises data source, and then back to the cloud.
 
 Installing and configuring a gateway is usually done by an administrator. It may require special knowledge of your on-premises servers and in some cases may require Server Administrator permissions.

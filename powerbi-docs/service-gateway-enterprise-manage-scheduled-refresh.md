@@ -13,7 +13,10 @@ ms.author: mblythe
 
 LocalizationGroup: Gateways
 ---
+
 # Manage your data source - Import/Scheduled Refresh
+
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
 Once you have [installed the on-premises data gateway](/data-integration/gateway/service-gateway-install), you'll need to [add data sources](service-gateway-data-sources.md#add-a-data-source) that can be used with the gateway. This article looks at how to work with gateways and data sources that are used for scheduled refresh as opposed to DirectQuery or live connections.
 
