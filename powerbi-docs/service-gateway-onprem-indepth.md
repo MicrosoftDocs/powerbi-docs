@@ -22,7 +22,7 @@ We moved the information from this article to several articles across the Power 
 
 ## How the gateway works
 
-See [On-premises data gateway architecture](https://review.docs.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem-indepth?branch=master).
+See [On-premises data gateway architecture](/data-integration/gateway/service-gateway-onprem-indepth).
 
 ## List of available data source types
 
@@ -30,7 +30,7 @@ See [Manage data sources](service-gateway-data-sources.md).
 
 ## Authentication to on-premises data sources
 
-See [Authentication to on-premises data sources](https://review.docs.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem-indepth?branch=master#authentication-to-on-premises-data-sources).
+See [Authentication to on-premises data sources](/data-integration/gateway/service-gateway-onprem-indepth#authentication-to-on-premises-data-sources).
 
 ## Authentication to a live Analysis Services data source
 
@@ -46,11 +46,11 @@ See [Row-level security](service-gateway-enterprise-manage-ssas.md#row-level-sec
 
 ## What about Azure Active Directory?
 
-See [Azure Active Directory](https://review.docs.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem-indepth?branch=master#azure-active-directory).
+See [Azure Active Directory](/data-integration/gateway/service-gateway-onprem-indepth#azure-active-directory).
 
 ## How do I tell what my UPN is?
 
-See [How do I tell what my UPN is?](https://review.docs.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem-indepth?branch=master#how-do-i-tell-what-my-upn-is).
+See [How do I tell what my UPN is?](/data-integration/gateway/service-gateway-onprem-indepth#how-do-i-tell-what-my-upn-is).
 
 ## Mapping usernames for Analysis Services data sources
 
@@ -58,7 +58,7 @@ See [Mapping usernames for Analysis Services data sources](service-gateway-enter
 
 ## Synchronize an on-premises Active Directory with Azure Active Directory
 
-See [Synchronize an on-premises Active Directory with Azure Active Directory](https://review.docs.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem-indepth?branch=master#synchronize-an-on-premises-active-directory-with-azure-active-directory).
+See [Synchronize an on-premises Active Directory with Azure Active Directory](/data-integration/gateway/service-gateway-onprem-indepth#synchronize-an-on-premises-active-directory-with-azure-active-directory).
 
 ## What to do next?
 
@@ -73,31 +73,31 @@ See the articles on data sources:
 
 ## Where things can go wrong
 
-See [Troubleshoot the on-premises data gateway](https://review.docs.microsoft.com/en-us/data-integration/gateway/service-gateway-tshoot?branch=master) and [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md).
+See [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot) and [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md).
 
 ## Sign in account
 
-See [Sign in account](https://review.docs.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem-indepth?branch=master#sign-in-account).
+See [Sign in account](/data-integration/gateway/service-gateway-onprem-indepth#sign-in-account).
 
 ## Windows Service account
 
-See [Change the on-premises data gateway service account](https://review.docs.microsoft.com/en-us/data-integration/gateway/service-gateway-service-account?branch=master).
+See [Change the on-premises data gateway service account](/data-integration/gateway/service-gateway-service-account).
 
 ## Ports
 
-See [Ports](https://review.docs.microsoft.com/en-us/data-integration/gateway/service-gateway-communication?branch=master#ports).
+See [Ports](/data-integration/gateway/service-gateway-communication#ports).
 
 ## Forcing HTTPS communication with Azure Service Bus
 
-See [Force HTTPS communication with Azure Service Bus](https://review.docs.microsoft.com/en-us/data-integration/gateway/service-gateway-communication?branch=master#force-https-communication-with-azure-service-bus).
+See [Force HTTPS communication with Azure Service Bus](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
 
 ## Support for TLS 1.2
 
-See [TLS 1.2 for gateway traffic](https://review.docs.microsoft.com/en-us/data-integration/gateway/service-gateway-communication?branch=master#tls-12-for-gateway-traffic).
+See [TLS 1.2 for gateway traffic](/data-integration/gateway/service-gateway-communication#tls-12-for-gateway-traffic).
 
 ## How to restart the gateway
 
-See [Restart a gateway](https://review.docs.microsoft.com/en-us/data-integration/gateway/service-gateway-restart?branch=master).
+See [Restart a gateway](/data-integration/gateway/service-gateway-restart).
 
 ## Next steps
 

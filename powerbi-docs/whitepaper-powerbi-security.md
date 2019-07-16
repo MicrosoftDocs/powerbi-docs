@@ -417,7 +417,7 @@ The following questions are common security questions and answers for Power BI. 
 
 **Which ports are used by on-premises data gateway and personal gateway? Are there any domain names that need to be allowed for connectivity purposes?**
 
-* The detailed answer to this question is available at the following link: [Gateway ports](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-communication?branch=master#ports)
+* The detailed answer to this question is available at the following link: [Gateway ports](/data-integration/gateway/service-gateway-communication#ports)
 
 **When working with the on-premises data gateway, how are recovery keys used and where are they stored? What about secure credential management?**
 
@@ -433,7 +433,7 @@ The following questions are common security questions and answers for Power BI. 
 
   - **AMQP 1.0 – TCP + TLS**: This protocol requires ports 443, 5671-5672, and 9350-9354 to be open for outgoing communication. This protocol is preferred, since it has lower communication overhead.
 
-  - **HTTPS – WebSockets over HTTPS + TLS**: This protocol uses port 443 only. The WebSocket is initiated by a single HTTP CONNECT message. Once the channel is established, the communication is essentially TCP+TLS. You can force the gateway to use this protocol by modifying a setting described in the [on-premises gateway article](https://review.docs.microsoft.com/data-integration/gateway/service-gateway-communication?branch=master#force-https-communication-with-azure-service-bus).
+  - **HTTPS – WebSockets over HTTPS + TLS**: This protocol uses port 443 only. The WebSocket is initiated by a single HTTP CONNECT message. Once the channel is established, the communication is essentially TCP+TLS. You can force the gateway to use this protocol by modifying a setting described in the [on-premises gateway article](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
 
 **What is the role of Azure CDN in Power BI?**
 
