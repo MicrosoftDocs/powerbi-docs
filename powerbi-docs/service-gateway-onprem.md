@@ -22,7 +22,7 @@ The on-premises data gateway acts as a bridge, providing quick and secure data t
 
 ![Gateway overview](media/service-on-prem/on-premises-data-gateway.png)
 
-For detailed information on how the gateway works, see [On-premises data gateway architecture](\data-integration\gateway\service-gateway-onprem-indepth).
+For detailed information on how the gateway works, see [On-premises data gateway architecture](/data-integration/gateway/service-gateway-onprem-indepth).
 
 ## Types of gateways
 
@@ -36,14 +36,14 @@ There are two different types of gateways, each for a different scenario:
 
 There are four main steps for using a gateway:
 
-1. [Download and install the gateway](\data-integration\gateway\service-gateway-install) on a local computer.
-2. [Configure](\data-integration\gateway\service-gateway-app) the gateway based on your firewall and other network requirements.
+1. [Download and install the gateway](/data-integration/gateway/service-gateway-install) on a local computer.
+2. [Configure](/data-integration/gateway/service-gateway-app) the gateway based on your firewall and other network requirements.
 3. [Add gateway admins](service-gateway-manage-admins.md) who can also manage and administer other network requirements.
 4. [Troubleshoot](service-gateway-onprem-tshoot.md) the gateway in case of errors.
 
 ## Next steps
 
-* [Install the on-premises data gateway](\data-integration\gateway\service-gateway-install)
+* [Install the on-premises data gateway](/data-integration/gateway/service-gateway-install)
 
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
