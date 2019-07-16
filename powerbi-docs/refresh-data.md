@@ -157,7 +157,7 @@ Regardless of storage modes, no data refresh can succeed unless the underlying d
 
 ### Connecting to on-premises data sources
 
-If your dataset uses a data source that Power BI can't access over a direct network connection, you must configure a gateway connection for this dataset before you can enable a refresh schedule or perform an on-demand data refresh. For more information about data gateways and how they work, see [What are on-premises data gateways?](service-gateway-getting-started.md)
+If your dataset uses a data source that Power BI can't access over a direct network connection, you must configure a gateway connection for this dataset before you can enable a refresh schedule or perform an on-demand data refresh. For more information about data gateways and how they work, see [What are on-premises data gateways?](service-gateway-onprem.md)
 
 You have the following options:
 
