@@ -18,7 +18,7 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-The information from this article has moved to several articles across the Power BI and general docs. Follow the links under each heading to find the relevant content.
+We moved the information from this article to several articles across the Power BI and general docs. Follow the links under each heading to find the relevant content.
 
 ## How the gateway works
 
