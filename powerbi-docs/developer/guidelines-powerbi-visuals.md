@@ -13,11 +13,11 @@ ms.date: 07/16/2019
 ---
 
 # Guidelines for Power BI visuals
-Before you [publish](https://docs.microsoft.com/power-bi/developer/office-store) your visual to AppSource for others to discover and use, make sure that you follow the guidlines to create a great experience for your users. 
+Before you [publish](https://docs.microsoft.com/power-bi/developer/office-store) your visual to AppSource for others to discover and use, make sure that you follow the guidelines to create a great experience for your users. 
 
 ## Context menu
 Context menu is the right-click menu that is displayed when the user is hovering over a visual.
-All Power BI visuals should enable the context menu to bring a unified expereince. 
+All Power BI visuals should enable the context menu to bring a unified experience. 
 Please check [this article](https://github.com/Microsoft/PowerBI-visuals/blob/gh-pages/tutorials/building-bar-chart/adding-context-menu-to-the-bar.md) to learn how to add a context menu.
 
 
@@ -26,7 +26,7 @@ Please check [this article](https://github.com/Microsoft/PowerBI-visuals/blob/gh
 This section describes the specifications for adding logos and logotypes in visuals.
 
 > [!IMPORTANT]
-> Logos are allowed in **edit mode only**. Logos **can't** be displayed in view mode.
+> Logos are allowed in *edit mode only*. Logos *can't* be displayed in view mode.
 
 ![Definitions](media/guidelines-powerbi-visuals/definitions.png)
 
@@ -59,7 +59,7 @@ Developers upload their IAP visuals to AppSource via the Seller Dashboard, as th
 
 ## What is a Power BI visual with IAP features?
 
-An IAP visual is a **free** visual that offers **free features**. It also has some advanced features for which extra charges may be applied to operate them. In the visual's description, developers must notify users about the features that require additional purchases to operate. Currently, Microsoft does not provide native APIs to support the purchase of apps and add-ins.
+An IAP visual is a *free* visual that offers *free features*. It also has some advanced features for which extra charges may be applied to operate them. In the visual's description, developers must notify users about the features that require additional purchases to operate. Currently, Microsoft does not provide native APIs to support the purchase of apps and add-ins.
 
 Developers may use any third-party payment system for these purchases. For more information, see [our store policy](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
 
