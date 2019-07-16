@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/25/2019
+ms.date: 07/15/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -210,10 +210,6 @@ Custom sort functionality is part of the new filter pane experience. Report crea
 ![Rearrange filter sort order](media/power-bi-report-filter-preview/power-bi-filter-sort.gif)
 
 The default sort order is alphabetical for filters. To start custom sort mode, just drag any filter to a new position. You can only sort filters within the level they apply to -- for example, a visual-level, page-level, or report-level filter.
-
-## Filters pane scaling
-
-The new Filters pane scales with the report page and visuals, so the report page and Filters pane stay in proportion with each other.
 
 ## Improved Filters pane accessibility
 
