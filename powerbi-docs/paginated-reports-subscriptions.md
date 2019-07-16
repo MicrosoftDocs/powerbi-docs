@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/24/2019
+ms.date: 07/15/2019
 ---
 
 # Subscribe yourself and others to paginated reports in the Power BI service 
