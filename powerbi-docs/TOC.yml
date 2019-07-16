@@ -725,10 +725,6 @@
         href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
       - name: "Troubleshoot tile errors"
         href: refresh-troubleshooting-tile-errors.md
-      - name: "Troubleshoot the on-premises data gateway"
-        href: service-gateway-onprem-tshoot.md
-      - name: "Troubleshoot Power BI gateway - personal"
-        href: service-admin-troubleshooting-power-bi-personal-gateway.md
       - name: "Troubleshoot analyze in Excel"
         href: desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find any data in your Excel workbook"
@@ -1281,7 +1277,7 @@
   items:
   - name: Overview
     items: 
-    - name: "On-premises data gateway"
+    - name: "What is an on-premises data gateway?"
       href: service-gateway-onprem.md
   - name: Concepts
     items:
@@ -1291,18 +1287,28 @@
       href: service-gateway-power-bi-faq.md
   - name: How to
     items:
-    - name: "Manage your enterprise data source - Analysis Services"
-      href: service-gateway-enterprise-manage-ssas.md
-    - name: "Manage your enterprise data source - SAP HANA"
-      href: service-gateway-enterprise-manage-sap.md
-    - name: "Manage your enterprise data source - SQL"
-      href: service-gateway-enterprise-manage-sql.md
-    - name: "Manage your data source - Oracle"
-      href: service-gateway-onprem-manage-oracle.md
-    - name: "Manage your enterprise data source - import/scheduled refresh"
-      href: service-gateway-enterprise-manage-scheduled-refresh.md
-    - name: "Merge on-premises and cloud data sources"
-      href: service-gateway-mashup-on-premises-cloud.md
+    - name: "On-premises data gateway - in-depth"
+      href: service-gateway-onprem-indepth.md
+    - name: "On-premises data gateway (personal mode)"
+      href: service-gateway-personal-mode.md
+    - name: "Manage users and admins"
+      href: service-gateway-manage-admins.md
+    - name: "Manage data sources"
+      items:
+      - name: "Manage data sources"
+        href: service-gateway-data-sources.md
+      - name: "Manage your enterprise data source - Analysis Services"
+        href: service-gateway-enterprise-manage-ssas.md
+      - name: "Manage your enterprise data source - SAP HANA"
+        href: service-gateway-enterprise-manage-sap.md
+      - name: "Manage your enterprise data source - SQL"
+        href: service-gateway-enterprise-manage-sql.md
+      - name: "Manage your data source - Oracle"
+        href: service-gateway-onprem-manage-oracle.md
+      - name: "Manage your enterprise data source - import/scheduled refresh"
+        href: service-gateway-enterprise-manage-scheduled-refresh.md
+      - name: "Merge on-premises and cloud data sources"
+        href: service-gateway-mashup-on-premises-cloud.md
     - name: "Enable single sign-on (SSO)"
       items:
       - name: "Single sign-on (SSO) - overview"
@@ -1313,14 +1319,12 @@
         href: service-gateway-sso-kerberos-resource.md
       - name: "Single sign-on (SSO) - SAML"
         href: service-gateway-sso-saml.md
-    - name: "On-premises data gateway - in-depth"
-      href: service-gateway-onprem-indepth.md
-    - name: "On-premises data gateway (personal mode)"
-      href: service-gateway-personal-mode.md
-    - name: "Custom connectors"
-      href: service-gateway-custom-connectors.md
-    - name: "Troubleshoot the on-premises data gateway"
+    - name: "Troubleshoot the gateway"
       href: service-gateway-onprem-tshoot.md
+    - name: "Troubleshoot the gateway (personal mode)"
+      href: service-admin-troubleshooting-power-bi-personal-gateway.md
+    - name: "Use custom connectors"
+      href: service-gateway-custom-connectors.md
   - name: "Resources"
     items:
     - name: "Monthly gateway updates"
