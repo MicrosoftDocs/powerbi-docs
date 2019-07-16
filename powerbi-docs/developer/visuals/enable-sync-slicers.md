@@ -31,7 +31,8 @@ The second necessary aspect is enabled option in `capabilities.json` (see a samp
 
 After changes in `capabilities.json`, you can see Sync Slicers options panel when you click on your custom slicer visual.
 
-`Also, pay attention that if your slicer has more than 1 field (category or measure) the feature will be disabled because Sync Slicers don't support several fields.`
+> [!NOTE]
+> If your slicer has more than 1 field (category or measure) the feature will be disabled because Sync Slicers don't support several fields.
 
 ![Sync slicers panel](./media/sync-slicers-panel.png)
 

@@ -16,6 +16,8 @@ ms.date: 12/17/2018
 
 ## Organizational custom visuals
 
+The admin portal enables you to manage a Power BI visuals for your organization.
+
 ### How can the admin manage the organizational custom visuals?
 
 In the Admin portal, under the "Organizational custom visuals" tab, the admin can see and [manage all the organizational custom visuals in the enterprise](service-admin-portal.md#organizational-visuals): add, disable, enable, and delete.

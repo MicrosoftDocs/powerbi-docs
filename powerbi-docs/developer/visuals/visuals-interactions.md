@@ -18,8 +18,6 @@ For example, visuals are interactive during report viewing or editing, but not i
 These interactions are click, pan, zoom, selection, and others.
 Note, that tooltips should be enabled in all scenarios, whatever of this flag.
 
-## Getting the 'allowInteractions' value
-
 The 'allowInteractions' flag is passed as a boolean during the initialization of the visual, as a member of the IVisualHost interface.
 
 In any Power BI scenario that requires the visuals not to be interactive (for example, Dashboard tiles) - 'allowInteractions' flag will be set to false.

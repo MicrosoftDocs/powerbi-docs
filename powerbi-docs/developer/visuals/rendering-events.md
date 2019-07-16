@@ -106,3 +106,7 @@ If the visual has animations or async functions for rendering, the `renderingFin
             });
         }
 ```
+
+## Rendering events for visual certification
+
+The support of rendering events by the visual is one of requirements of visuals certification. Read more about [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements)

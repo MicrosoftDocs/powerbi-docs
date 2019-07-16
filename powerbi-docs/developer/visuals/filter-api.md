@@ -276,7 +276,7 @@ Power BI calls `update` method of the visual, when use switch bookmarks and the 
 
 ### Sample JSON Filter
 
-![Screenshot JSON Filter](./media/json-filter.jpg)
+![Screenshot JSON Filter](./media/json-filter.png)
 
 ### Clear JSON Filter
 

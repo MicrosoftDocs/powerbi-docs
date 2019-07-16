@@ -179,3 +179,42 @@ The final step is to call `addTooltip` when the actual data may change. This cal
             (tooltipEvent: TooltipEventArgs<number>) => BarChart.getTooltipData(tooltipEvent.data),
             (tooltipEvent: TooltipEventArgs<number>) => null);
 ```
+
+## Adding Report Page Tooltips
+
+To add report page tooltips support, most changes will be located in capabilities.json. 
+
+A sample schema is
+
+```json
+{
+    "tooltips": {
+        "supportedTypes": {
+            "default": true,
+            "canvas": true
+        },
+        "roles": [
+            "tooltips"
+        ]
+    }
+}
+```
+
+Report page tooltips definition can be done on the Format pane.
+![Report page tooltip](media/report-page-tooltip.png)
+
+`supportedTypes` is the tooltips configuration supported by the visual and reflected on the field well. `default` specifies whether the "automatic" tooltips binding via data field is supported. canvas specifies whether the report page tooltips are supported.
+
+`roles` optional. Once defined, instructs what data roles will be bound to the selected tooltip option in fields well.
+
+For more information, see the Report Page Tooltips usage guidlines [Report Page Tooltips](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips)
+
+For displaying the report page tooltip, upon calling `ITooltipService.Show(options: TooltipShowOptions)` or `ITooltipService.Move(options: TooltipMoveOptions)`, the PowerBI host will consume the selectionId (`identities` property of `options` argument above). Therefore, the SelectionId should represent the selected data (category, series, etc) of the item you hovered above to be retreived by the tooltip.
+
+Example of sending the selectionId to tooltip display calls:
+
+```typescript
+    this.tooltipServiceWrapper.addTooltip(this.barContainer.selectAll('.bar'),
+        (tooltipEvent: TooltipEventArgs<number>) => BarChart.getTooltipData(tooltipEvent.data),
+        (tooltipEvent: TooltipEventArgs<number>) => tooltipEvent.data.selectionID);
+```

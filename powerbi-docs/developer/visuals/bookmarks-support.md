@@ -105,8 +105,6 @@ If your visual uses `InteractivityService`, you don't need any additional action
 
 The util will handle the visual's selection state when the user selects bookmarks.
 
-### Sync selection manager with current filter/selection
-
 ### Visuals with filter
 
 Let's assume that the visual creates a filter of data by date range. So, we have `startDate` and `endDate` as start and end of the range.
@@ -178,7 +176,7 @@ After that, the visual should change its internal state - data points and visual
 > [!IMPORTANT]
 > In the report bookmarks scenario, the visual shouldn't call `applyJsonFilter` to filter other visuals - they will already be filtered by Power BI.
 
-Example: [Timeline Slicer](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380786) changes range selector to correspond data ranges, see [this commit](https://github.com/Microsoft/powerbi-visuals-timeline/commit/606f1152f59f82b5b5a367ff3b117372d129e597?diff=unified#diff-b6ef9a9ac3a3225f8bd0de84bee0a0df) for reference.
+Example: [Timeline Slicer](https://appsource.microsoft.com/product/power-bi-visuals/WA104380786) changes range selector to correspond data ranges, see [this commit](https://github.com/Microsoft/powerbi-visuals-timeline/commit/606f1152f59f82b5b5a367ff3b117372d129e597?diff=unified#diff-b6ef9a9ac3a3225f8bd0de84bee0a0df) for reference.
 
 ### Filter state to save visual properties in bookmarks
 

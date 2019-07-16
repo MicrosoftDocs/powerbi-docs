@@ -17,8 +17,6 @@ By default whenever an element is selected the `values` array in the `dataView` 
 
 ![highlight `dataview` default behavior](./media/highlight-dataview.png)
 
-## supportsHighlight property
-
 If you set the `supportsHighlight` property in your `capabilities.json` to `true`, you'll receive the full unfiltered `values` array along with a `highlights` array. The `highlights` array will be the same length as the values array and any non-selected values will be set to `null`. With this property enabled it's the visual's responsibility to highlight the appropriate data by comparing the `values` array to the `highlights` array.
 
 ![highlight `dataview` supportshighlight](./media/highlight-dataview-supports.png)

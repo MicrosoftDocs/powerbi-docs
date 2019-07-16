@@ -63,7 +63,7 @@ Any other properties may be defined in the same way as done for Format objects. 
 
 ***Known limitations and issues***
 
-  1. No multi-instance support yet (coming soon). Objects can't have a [selector](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector) other than static (that is "selector": null), and custom visuals can't have user-defined multiple instances of a card.
+  1. No multi-instance support yet. Objects can't have a [selector](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector) other than static (that is "selector": null), and custom visuals can't have user-defined multiple instances of a card.
   2. Properties of type `integer` are't displayed correctly. As a workaround, use type `numeric` instead.
 
 > [!NOTE]

@@ -1089,10 +1089,10 @@
         href: power-bi-custom-visuals-faq.md
       - name: "Using capabilities"
         href: developer/visuals/capabilities.md
-      - name: "Data View Mappings"
+      - name: "Data view mappings"
         href: developer/visuals/dataview-mappings.md
       - name: "Objects and properties"
-        href: developer/visuals/objects-and-properties.md
+        href: developer/visuals/objects-properties.md
       - name: "Advanced Edit Mode"
         href: developer/visuals/advanced-edit-mode.md
     - name: How to

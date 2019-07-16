@@ -14,16 +14,16 @@ ms.date: 06/18/2019
 # High-Contrast mode support
 
 Windows *High-Contrast* setting makes text and apps easier to see by using more distinct colors.
-Read more about [high-contrast support in Power BI](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-june-2018-feature-summary/#highContrast).
+Read more about [high-contrast support in Power BI](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast).
 
 Adding high-contrast support to your visual requires the following:
 
 1. On init: Detect whether Power BI is in high-contrast mode and if so, get current high-contrast colors.
 2. Every update: Change the way the visual renders to make it easier to see.
 
-See this [commit](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6) to learn how high-contrast was implemented in Sample Bar Chart. 
+See this [commit](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6) to learn how high-contrast was implemented in Sample Bar Chart.
 
-The files [src/barChart.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6#diff-433142f7814fee940a0ffc98dc75bfcb) and [capabilities.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6#diff-290828b604cfa62f1cb310f2e90c52fd) contain the main changes. 
+The files [src/barChart.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6#diff-433142f7814fee940a0ffc98dc75bfcb) and [capabilities.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6#diff-290828b604cfa62f1cb310f2e90c52fd) contain the main changes.
 
 ## On Init
 The colorPalette member of `options.host` has several properties for high-contrast mode. Use these properties to determine whether high-contrast mode is active, and if so, what colors to use.
