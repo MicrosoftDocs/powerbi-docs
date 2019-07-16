@@ -38,7 +38,7 @@ There are four main steps for using a gateway:
 
 1. [Download and install the gateway](/data-integration/gateway/service-gateway-install) on a local computer.
 2. [Configure](/data-integration/gateway/service-gateway-app) the gateway based on your firewall and other network requirements.
-3. [Add gateway admins](service-gateway-manage-admins.md) who can also manage and administer other network requirements.
+3. [Add gateway admins](\data-integration\gateway\service-gateway-manage) who can also manage and administer other network requirements.
 4. [Troubleshoot](service-gateway-onprem-tshoot.md) the gateway in case of errors.
 
 ## Next steps
