@@ -52,7 +52,7 @@ Because Power BI caches the data, Import mode dataset sizes can be substantial. 
 | --- | --- |
 | Shared, A1, A2, or A3 | 1 GB |
 | A4 or P1 | 3 GB |
-| A4 or P2 | 6 GB |
+| A5 or P2 | 6 GB |
 | A6 or P3 | 10 GB |
 | | |
 
@@ -281,6 +281,8 @@ Note also that the configured refresh time might not be the exact time when Powe
 ### Getting refresh failure notifications
 
 By default, Power BI sends refresh failure notifications through email to the dataset owner so that the owner can act in a timely manner should refresh issues occur. Power BI also sends you a notification when the service disables your schedule due to consecutive failures. Microsoft recommends that you leave the checkbox **Send refresh failure notification emails to me** enabled.
+
+It is also a good idea to specify additional recipients by using the **Email these users when the refresh fails** textbox. The specified recipients receive refresh failure notifications in addition to the dataset owner. This might be a colleague taking care of your datasets while you are on vacation. It could also be the email alias of your support team taking care of refresh issues for your department or organization. Sending refresh failure notifications to others in addition to the dataset owner is helpful to ensure issues get noticed and addressed in a timely manner.
 
 Note that Power BI not only sends notifications on refresh failures but also when the service pauses a scheduled refresh due to inactivity. After two months, when no user has visited any dashboard or report built on the dataset, Power BI considers the dataset inactive. In this situation, Power BI sends an email message to the dataset owner indicating that the service paused the refresh schedule for the dataset. See the following screenshot for an example of such a notification.
 
