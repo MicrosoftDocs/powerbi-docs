@@ -16,7 +16,7 @@ ms.date: 07/16/2019
 Before you [publish](https://docs.microsoft.com/power-bi/developer/office-store) your visual to AppSource for others to discover and use, make sure that you follow the guidlines to create a great experience for your users. 
 
 ## Context menu
-Context menu is the right-click menu that is displayed when the user is hovering over a data point in the visual.
+Context menu is the right-click menu that is displayed when the user is hovering over a visual.
 All Power BI visuals should enable the context menu to bring a unified expereince. 
 Please check [this article](https://github.com/Microsoft/PowerBI-visuals/blob/gh-pages/tutorials/building-bar-chart/adding-context-menu-to-the-bar.md) to learn how to add a context menu.
 
