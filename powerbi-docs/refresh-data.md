@@ -52,7 +52,7 @@ Because Power BI caches the data, Import mode dataset sizes can be substantial. 
 | --- | --- |
 | Shared, A1, A2, or A3 | 1 GB |
 | A4 or P1 | 3 GB |
-| A4 or P2 | 6 GB |
+| A5 or P2 | 6 GB |
 | A6 or P3 | 10 GB |
 | | |
 
