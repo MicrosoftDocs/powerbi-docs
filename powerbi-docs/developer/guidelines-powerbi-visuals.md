@@ -13,7 +13,7 @@ ms.date: 07/16/2019
 ---
 
 # Guidelines for Power BI visuals
-Before you [publish](https://docs.microsoft.com/en-us/power-bi/developer/office-store) your visual to AppSource for others to discover and use, make sure that you follow the guidlines to create a great experience for your users. 
+Before you [publish](https://docs.microsoft.com/power-bi/developer/office-store) your visual to AppSource for others to discover and use, make sure that you follow the guidlines to create a great experience for your users. 
 
 ## Context menu
 Context menu is the right-click menu that is displayed when the user is hovering over a data point in the visual.
