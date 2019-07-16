@@ -22,17 +22,17 @@
         },
         {
             "source_path": "powerbi-docs/service-gateway-monthly-updates.md",
-            "redirect_url":  "https:/review.docs.microsoft.com/data-integration/gateway/service-gateway-monthly-updates?branch=master",
+            "redirect_url":  "/data-integration/gateway/service-gateway-monthly-updates?branch=master",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-gateway-onprem-faq.md",
-            "redirect_url":  "https:/review.docs.microsoft.com/data-integration/gateway/service-gateway-power-bi-faq?branch=master",
+            "redirect_url":  "/data-integration/gateway/service-gateway-power-bi-faq?branch=master",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/service-gateway-performance-monitoring.md",
-            "redirect_url":  "https:/review.docs.microsoft.com/data-integration/gateway/service-gateway-performance?branch=master",
+            "redirect_url":  "/data-integration/gateway/service-gateway-performance?branch=master",
             "redirect_document_id": false
         },
         {
