@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 01/08/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
 ---
 
@@ -18,15 +18,15 @@ Use [resource-based Kerberos constrained delegation](/windows-server/security/ke
 
 ## Preparing for resource-based Kerberos constrained delegation
 
-Several items must be configured for Kerberos Constrained Delegation to work properly, including _Service Principal Names_ (SPN) and delegation settings on service accounts. 
+Several items must be configured for Kerberos Constrained Delegation to work properly, including _Service Principal Names_ (SPN) and delegation settings on service accounts.
 
 ### Prerequisite 1: Operating system requirements
 
 Resource-based constrained delegation can only be configured on a domain controller running Windows Server 2012 R2 or Windows Server 2012 or higher.
 
-### Prerequisite 2: Install and configure the On-premises data gateway
+### Prerequisite 2: Install and configure the on-premises data gateway
 
-This release of the On-premises data gateway supports an in-place upgrade, and _settings takeover_ of existing gateways.
+The on-premises data gateway supports an in-place upgrade, and _settings takeover_ of existing gateways.
 
 ### Prerequisite 3: Run the gateway Windows service as a domain account
 
@@ -34,7 +34,7 @@ In a standard installation, the gateway runs as a machine-local service account 
 
 ![Domain account](media/service-gateway-sso-kerberos-resource/domain-account.png)
 
-To enable **Kerberos Constrained Delegation, the gateway must run as a domain account, unless your Azure AD is already synchronized with your local Active Directory (using Azure AD DirSync/Connect). If you need to switch the account to a domain account, see [Switching the gateway to a domain account](service-gateway-sso-kerberos.md).
+To enable **Kerberos Constrained Delegation, the gateway must run as a domain account, unless your Azure AD is already synchronized with your local Active Directory (using Azure AD DirSync/Connect). If you need to switch the account to a domain account, see [Change the gateway service account](/data-integration/gateway/service-gateway-service-account).
 
 If Azure AD DirSync / Connect is configured and user accounts are synchronized, the gateway service does not need to perform local AD lookups at runtime. You can use the local Service SID (instead of requiring a domain account) for the gateway service. The Kerberos Constrained Delegation configuration steps outlined in this article are the same as that configuration (they are simply applied to the gateway's computer object in Active Directory, instead of the domain account).
 
@@ -46,9 +46,9 @@ While it is technically possible for a domain administrator to temporarily or pe
 
 To properly configure the system, we need to configure or validate the following two items:
 
-1. If needed, configure an SPN for the gateway service domain account.
+* If needed, configure an SPN for the gateway service domain account.
 
-1. Configure delegation settings on the gateway service domain account.
+* Configure delegation settings on the gateway service domain account.
 
 Note that you must be a domain administrator to perform those two configuration steps.
 
@@ -56,15 +56,15 @@ The following sections describe these steps in turn.
 
 ### Configure an SPN for the gateway service account
 
-First, determine whether an SPN was already created for the domain account used as the gateway service account, but following these steps:
+First, determine whether an SPN was already created for the domain account used as the gateway service account, by following these steps:
 
 1. As a domain administrator, launch **Active Directory Users and Computers**.
 
-1. Right-click on the domain, select **Find**, and type in the account name of the gateway service account
+1. Right-click on the domain, select **Find**, and type in the account name of the gateway service account.
 
 1. In the search result, right-click on the gateway service account and select **Properties**.
 
-1. If the **Delegation** tab is visible on the **Properties** dialog, then an SPN was already created and you can jump ahead to the next subsection about configuring Delegation settings.
+1. If the **Delegation** tab is visible on the **Properties** dialog, then an SPN was already created and you can jump ahead to the next subsection about [configuring Delegation settings](#configure-delegation-settings).
 
     If there is no **Delegation** tab on the **Properties** dialog, you can manually create an SPN on that account, which adds the **Delegation** tab (that is the easiest way to configure delegation settings). Creating an SPN can be done using the [setspn tool](https://technet.microsoft.com/library/cc731241.aspx) that comes with Windows (you need domain admin rights to create the SPN).
 
@@ -78,10 +78,10 @@ First, determine whether an SPN was already created for the domain account used 
 
 In the following steps, we assume an on-premises environment with two machines in different domains: a gateway machine and a database server running SQL Server. For the sake of this example, we also assume the following settings and names:
 
-- Gateway machine name: **PBIEgwTestGW**
-- Gateway service account: **PBIEgwTestFrontEnd\GatewaySvc** (account display name: Gateway Connector)
-- SQL Server data source machine name: **PBIEgwTestSQL**
-- SQL Server data source service account: **PBIEgwTestBackEnd\SQLService**
+* Gateway machine name: **PBIEgwTestGW**
+* Gateway service account: **PBIEgwTestFrontEnd\GatewaySvc** (account display name: Gateway Connector)
+* SQL Server data source machine name: **PBIEgwTestSQL**
+* SQL Server data source service account: **PBIEgwTestBackEnd\SQLService**
 
 Given those example names and settings, use the following configuration steps:
 
@@ -97,7 +97,7 @@ Given those example names and settings, use the following configuration steps:
 
     ![Group properties](media/service-gateway-sso-kerberos-resource/group-properties.png)
 
-1. Open command prompt and run the following commands n the domain controller for **PBIEgwTestBack-end** domain to update msDS-AllowedToActOnBehalfOfOtherIdentity attribute of the back-end service account:
+1. Open a command prompt and run the following commands in the domain controller for **PBIEgwTestBack-end** domain to update the msDS-AllowedToActOnBehalfOfOtherIdentity attribute of the back-end service account:
 
     ```powershell
     $c = Get-ADGroup ResourceDelGroup
@@ -134,10 +134,10 @@ This configuration will work in most cases. However, with Kerberos there can be 
 
 ## Next steps
 
-For more information about the **On-premises data gateway** and **DirectQuery**, check out the following resources:
+For more information about the **on-premises data gateway** and **DirectQuery**, check out the following resources:
 
-- [On-premises data gateway](service-gateway-onprem.md)
-- [DirectQuery in Power BI](desktop-directquery-about.md)
-- [Data sources supported by DirectQuery](desktop-directquery-data-sources.md)
-- [DirectQuery and SAP BW](desktop-directquery-sap-bw.md)
-- [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
+* [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem.md)
+* [DirectQuery in Power BI](desktop-directquery-about.md)
+* [Data sources supported by DirectQuery](desktop-directquery-data-sources.md)
+* [DirectQuery and SAP BW](desktop-directquery-sap-bw.md)
+* [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
