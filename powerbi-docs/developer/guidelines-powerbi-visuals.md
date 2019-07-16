@@ -9,10 +9,37 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/10/2019
+ms.date: 07/16/2019
 ---
 
 # Guidelines for Power BI visuals
+Before you [publish](https://docs.microsoft.com/en-us/power-bi/developer/office-store) your visual to AppSource for others to discover and use, make sure that you follow the guidlines to create a great experience for your users. 
+
+## Context menu
+Context menu is the right-click menu that is displayed when the user is hovering over a data point in the visual.
+All Power BI visuals should enable the context menu to bring a unified expereince. 
+Please check [this article](https://github.com/Microsoft/PowerBI-visuals/blob/gh-pages/tutorials/building-bar-chart/adding-context-menu-to-the-bar.md) to learn how to add a context menu.
+
+
+## Logo guidelines
+
+This section describes the specifications for adding logos and logotypes in visuals.
+
+> [!IMPORTANT]
+> Logos are allowed in **edit mode only**. Logos **can't** be displayed in view mode.
+
+![Definitions](media/guidelines-powerbi-visuals/definitions.png)
+
+![Things to keep in mind](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
+
+![Things to avoid](media/guidelines-powerbi-visuals/things-to-avoid.png)
+
+![Size and format](media/guidelines-powerbi-visuals/size-and-format.png)
+
+![Margins and sizing](media/guidelines-powerbi-visuals/margins-and-sizes.png)
+
+![Edit mode](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
+
 
 ## Guidelines for Power BI visuals with additional purchases
 
@@ -39,24 +66,6 @@ Developers may use any third-party payment system for these purchases. For more 
 > [!NOTE]
 > Watermarks are not allowed on the free features or free visuals. Watermarks may only be used on paid features that are used without a valid license. We recommend to display a pop-up window with all the license related information, if the advanced paid features are used without a valid license.  
 
-## Logo guidelines
-
-This section describes the specifications for adding logos and logotypes in visuals.
-
-> [!IMPORTANT]
-> Logos are allowed in **edit mode only**. Logos **can't** be displayed in view mode.
-
-![Definitions](media/guidelines-powerbi-visuals/definitions.png)
-
-![Things to keep in mind](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
-
-![Things to avoid](media/guidelines-powerbi-visuals/things-to-avoid.png)
-
-![Size and format](media/guidelines-powerbi-visuals/size-and-format.png)
-
-![Margins and sizing](media/guidelines-powerbi-visuals/margins-and-sizes.png)
-
-![Edit mode](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 ## Best practices
 
