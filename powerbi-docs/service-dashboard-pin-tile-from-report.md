@@ -9,7 +9,7 @@ featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/16/2019
+ms.date: 07/17/2019
 ms.author: maggies
 
 LocalizationGroup: Dashboards
@@ -30,12 +30,13 @@ You can't pin tiles from reports that have been shared with you or from Power BI
 
 ## Pin a tile from a report
 Watch Amanda create a dashboard by pinning visuals and images from a Power BI report.
+    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
 Now create your own dashboard by using one of the Power BI sample reports.
 
-1. In the report, hover over the visualization you want to pin, and select the pin ![Pin icon](media/service-dashboard-pin-tile-from-report/pbi_pintile_small.png) icon. Power BI opens the **Pin to dashboard** screen.
+1. In the report, hover over the visualization you want to pin, and select the pin icon. ![Pin icon](media/service-dashboard-pin-tile-from-report/pbi_pintile_small.png). Power BI opens the **Pin to dashboard** screen.
    
      ![Pin to dashboard window](media/service-dashboard-pin-tile-from-report/pbi_themes2.png)
 2. Select whether to pin to an existing dashboard or new dashboard.

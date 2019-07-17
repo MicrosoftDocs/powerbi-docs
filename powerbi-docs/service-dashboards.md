@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/16/2019
+ms.date: 07/17/2019
 ms.author: maggies
 
 LocalizationGroup: Dashboards
@@ -50,8 +50,8 @@ A dashboard isn't just a pretty picture. It's highly interactive and the tiles u
 | Featured |Yes. Can set one dashboard as your *featured* dashboard |No |
 | Favorite | Yes. Can set multiple dashboards as *favorites* | Yes. Can set multiple reports as *favorites*
 | Set alerts |Yes. Available for dashboard tiles in certain circumstances |No |
-| Natural language queries (Q&A) |Yes | Yes, provided you have edit permissions for the report and underlying dataset. |
-| Can see underlying dataset tables and fields |No. Can export data but can't see tables and fields in the dashboard itself. |Yes |
+| Natural language queries (Q&A) |Yes | Yes, provided you have edit permissions for the report and underlying dataset |
+| Can see underlying dataset tables and fields |No. Can export data but can't see tables and fields in the dashboard itself |Yes |
 
 
 ## Next steps
