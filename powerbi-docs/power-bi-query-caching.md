@@ -8,7 +8,7 @@ ms.reviewer: 'bhmerc'
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/25/2019
+ms.date: 07/16/2019
 ms.author: maggies
 
 LocalizationGroup: 
@@ -31,7 +31,12 @@ You control query caching behavior on the **Settings** page for the dataset in t
 
 ![Query caching dialog box](media/power-bi-query-caching/power-bi-query-caching.png)
 
-> [!NOTE]
-> When you change caching settings from **On** to **Off**, all previously saved query results for the dataset are removed from the capacity cache. You can turn off caching either explicitly or by reverting to capacity default setting that an administrator has set to **Off**. Turning it off can introduce a small delay the next time any report runs queries against this dataset. The delay is caused by those report queries running on demand and not leveraging saved results. Also, the required dataset may need to be loaded into memory before it can service queries.
+## Considerations and limitations
 
+- When you change caching settings from **On** to **Off**, all previously saved query results for the dataset are removed from the capacity cache. You can turn off caching either explicitly or by reverting to capacity default setting that an administrator has set to **Off**. Turning it off can introduce a small delay the next time any report runs queries against this dataset. The delay is caused by those report queries running on demand and not leveraging saved results. Also, the required dataset may need to be loaded into memory before it can service queries.
+- When the query cache is refreshed, Power BI must run queries against the underlying data models to get the latest results. If a large number of datasets have query caching enabled and the Premium capacity is under heavy load, some performance degradation may occur during cache refresh. Degradation results from the increased volume of queries being executed.
+
+## Next steps
+
+[What is Power BI Premium?](service-premium-what-is.md)
 
