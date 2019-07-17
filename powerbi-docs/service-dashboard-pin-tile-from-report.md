@@ -19,7 +19,7 @@ LocalizationGroup: Dashboards
 
 One way to add a [dashboard tile](consumer/end-user-tiles.md) is from within a [Power BI report](consumer/end-user-reports.md). When you select one of these tiles, it opens in the report.
 
-Entire report pages can be pinned to a dashboard, which is called pinning a *live* tile. It's called a live tile because you can interact with the tile on the dashboard. Unlike with individual visualization tiles, changes made in the report are automatically synced with the dashboard. For more information, see [Pin an entire report page](pin-an-entire-report-page).
+Entire report pages can be pinned to a dashboard, which is called pinning a *live* tile. It's called a live tile because you can interact with the tile on the dashboard. Unlike with individual visualization tiles, changes made in the report are automatically synced with the dashboard. For more information, see [Pin an entire report page](#pin-an-entire-report-page).
 
 You can't pin tiles from reports that have been shared with you or from Power BI Desktop. 
 
