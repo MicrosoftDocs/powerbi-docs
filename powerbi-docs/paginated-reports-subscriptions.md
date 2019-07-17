@@ -1,6 +1,6 @@
 ---
 title: "Subscribe to paginated reports in the Power BI service"
-description: In this article, you learn things to keep in mind about subscribing to  paginated reports in the Power BI service. 
+description: In this article, you learn things to keep in mind about subscribing to paginated reports in the Power BI service. 
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/24/2019
+ms.date: 07/15/2019
 ---
 
 # Subscribe yourself and others to paginated reports in the Power BI service 
@@ -21,15 +21,15 @@ In setting up subscriptions, you choose how often you want to receive the emails
 
 - Unlike subscriptions for dashboards or Power BI reports, your subscription contains an attachment of the entire report output.  The following attachment types are supported: PDF, PowerPoint presentation (PPTX), Excel Workbook (XLSX), Word Document (DOCX), CSV file, and XML.
 
-- There is no preview image of the report in the email body.  We are planning to have the image of the first page of the report as an optional item. 
+- You may include a preview image of the report in the email body.  This is optional, and may differ slightly than the first page of your attached report document, depending on the attachment format selected. 
 
 - The maximum report attachment size is 25 MB. 
 
 - You can subscribe other users for paginated reports that connect to any currently supported data sources, including Azure Analysis Services or Power BI datasets. Keep in mind the report attachment reflects the data based on your permissions, just as SQL Server Reporting Services does today. 
 
-- Report page subscriptions are tied to the name of the report.  
+- Email subscriptions can be sent with either the currently selected or default parameters for your report.  You may set different parameter values for each subscription you create for your report. 
 
-- Email subscriptions are sent with the report's default parameter values. 
+- If your report author has set expression-based parameters (for example, the default is always today's date), the subscription uses that as the default value. You can change other parameter values and choose to use current values, but unless you explicitly change that value as well, the subscription uses the expression-based parameter.
 
 - There is no **After Data Refresh** option for frequency with paginated reports. You always get the latest values from the underlying data source. 
 
