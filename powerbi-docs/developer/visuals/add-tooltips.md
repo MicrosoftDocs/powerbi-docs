@@ -25,7 +25,7 @@ For example, tooltips in the sample BarChart.
 
 ![Sample BarChart tooltips](./media/tooltips-in-samplebarchart.png)
 
-The tooltip above illustrates a single bar category and value. It can be extended to display multiple values within a single tooltip. It's totally at the developer's control.
+The tooltip above illustrates a single bar category and value. It can be extended to display multiple values within a single tooltip.
 
 ## Handling Tooltips
 
@@ -109,7 +109,7 @@ The single entry point for this class to register event listeners is the `addToo
 * **reloadTooltipDataOnMouseMove?: boolean**
 * boolean indicating whether to refresh the tooltip data during a mouseMove event - unused in this sample
 
-as you can see `addTooltip` will exit with no action if the `tooltipService` is disabled or there is no real selection.
+as you can see `addTooltip` will exit with no action if the `tooltipService` is disabled or there's no real selection.
 
 ### Call of show method to display a tooltip
 
@@ -145,7 +145,7 @@ as you can see `addTooltip` will exit with no action if the `tooltipService` is 
 * **makeTooltipEventArgs**
 * Extracts the context from the D3 selected elements into a tooltipEventArgs. It will calculate the coordinates as well.
 * **getTooltipInfoDelegate**
-* Then builds the tooltip content from the tooltipEventArgs. This is a callback to the BarChart class since this is the visual's logic. It's the actual text content to display in th tooltip.
+* Then builds the tooltip content from the tooltipEventArgs. It's a callback to the BarChart class since it is the visual's logic. It's the actual text content to display in th tooltip.
 * **getDataPointIdentity**
 * Unused in this sample
 * **this.visualHostTooltipService.show**
@@ -168,7 +168,7 @@ The `BarChart` was added with a member `getTooltipData` which simply extracts th
         }
 ```
 
-In the above implementation, the `header` member is constant but can be used for more complex implementations, which require dynamic values. You can populate the `VisualTooltipDataItem[]` with more than one element, which will add multiple lines to the tooltip. It can be useful in visuals such as stacked barcharts where the tooltip may display data from more than a single datapoint.
+In the above implementation, the `header` member is constant but can be used for more complex implementations, which require dynamic values. You can populate the `VisualTooltipDataItem[]` with more than one element, which will add multiple lines to the tooltip. It can be useful in visuals such as stacked bar charts where the tooltip may display data from more than a single datapoint.
 
 ### Calling addTooltip method
 
@@ -207,9 +207,9 @@ Report page tooltips definition can be done on the Format pane.
 
 `roles` optional. Once defined, instructs what data roles will be bound to the selected tooltip option in fields well.
 
-For more information, see the Report Page Tooltips usage guidlines [Report Page Tooltips](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips)
+For more information, see the Report Page Tooltips usage guidelines [Report Page Tooltips](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips)
 
-For displaying the report page tooltip, upon calling `ITooltipService.Show(options: TooltipShowOptions)` or `ITooltipService.Move(options: TooltipMoveOptions)`, the PowerBI host will consume the selectionId (`identities` property of `options` argument above). Therefore, the SelectionId should represent the selected data (category, series, etc) of the item you hovered above to be retreived by the tooltip.
+For displaying the report page tooltip, upon calling `ITooltipService.Show(options: TooltipShowOptions)` or `ITooltipService.Move(options: TooltipMoveOptions)`, the Power BI host will consume the selectionId (`identities` property of `options` argument above). The SelectionId should represent the selected data (category, series and so on) of the item you hovered above to be retrieved by the tooltip.
 
 Example of sending the selectionId to tooltip display calls:
 

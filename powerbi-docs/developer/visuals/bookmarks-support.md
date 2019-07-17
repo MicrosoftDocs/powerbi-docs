@@ -46,7 +46,7 @@ Or, use the special callback function call registered `registerOnSelectCallback`
 
 ### Visuals with selections
 
-If your visuals interact with other visuals by using [selections](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md). You have two ways to add bookmarks. 
+If your visuals interact with other visuals by using [selections](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md). You have two ways to add bookmarks.
 
 * You can use `FilterManager.restoreSelectionIds` method if you **didn't use [`InteractivityService`](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md)** before in your visual.
 
@@ -184,4 +184,6 @@ The `filterState` property makes a property of a part of filtering. The visual c
 
 To save the property value as filter state the object property should be marked as `"filterState": true` in `capabilities.json`.
 
-Example: `Timeline Slicer` [stores](https://github.com/microsoft/powerbi-visuals-timeline/commit/8b7d82dd23cd2bd71817f1bc5d1e1732347a185e#diff-290828b604cfa62f1cb310f2e90c52fdR334) `Granularity` property values in filter. And it allows to change current granularity on changing of bookmarks by user.
+Example: `Timeline Slicer` stores `Granularity` property values in filter. And it allows to change current granularity on changing of bookmarks by user.
+
+See [Timeline Slicer repository](https://github.com/microsoft/powerbi-visuals-timeline/commit/8b7d82dd23cd2bd71817f1bc5d1e1732347a185e#diff-290828b604cfa62f1cb310f2e90c52fdR334) for more details.

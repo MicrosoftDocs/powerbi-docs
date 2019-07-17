@@ -1,6 +1,6 @@
 ---
 title: Analytics pane
-description: How to allow to create dynamic reference lines in Power BI Visuals
+description: How to create dynamic reference lines in Power BI Visuals
 author: Guy-Moses
 ms.author: guymos
 manager: rkarlin
@@ -25,10 +25,10 @@ The differences are as follows:
 
 1. Under the `object`'s definition, add an `objectCategory` field with a value of 2.
 
-> [!NOTE]
-> The `objectCategory` field is an optional field introduced in API 2.5.0. It defines the aspect of the visual that the object controls (1 = Formatting, 2 = Analytics). "Formatting" is used for look-and-feel, colors, axes, labels etc. "Analytics" is used for forecasts, trendlines, reference lines, and shapes so on.
->
-> `objectCategory` defaults to "Formatting" if omitted.
+    > [!NOTE]
+    > The `objectCategory` field is an optional field introduced in API 2.5.0. It defines the aspect of the visual that the object controls (1 = Formatting, 2 = Analytics). "Formatting" is used for look-and-feel, colors, axes, labels etc. "Analytics" is used for forecasts, trendlines, reference lines, and shapes so on.
+    >
+    > `objectCategory` defaults to "Formatting" if omitted.
 
 2. The object must have the two following properties:
     1. `show` of type bool, with default value of false.
@@ -40,7 +40,7 @@ The differences are as follows:
     "YourAnalyticsPropertiesCard": {
       "displayName": "Your analytics properties card's name",
       "objectCategory": 2,
-      "properties: {
+      "properties": {
         "show": {
           "type": {
             "bool": true

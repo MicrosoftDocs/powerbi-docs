@@ -13,18 +13,18 @@ ms.date: 06/18/2019
 
 # Tutorial: add unit tests for Power BI Visual projects
 
-This tutorial describes basics of writing unit tests for your Power BI Vsuals.
+This tutorial describes basics of writing unit tests for your Power BI visuals.
 
 In this tutorial, we'll consider
 
 * how to use test runner karma.js, testing framework - jasmine.js
 * how to use powerbi-visuals-utils-testutils package
-* how set of mocks and fakes help to simplify unit testing for Power BI Visuals.
+* how set of mocks and fakes help to simplify unit testing for Power BI visuals.
 
 ## Prerequisites
 
-* You have Power BI Visuals project
-* Configured Node.JS enviroment
+* You have Power BI visuals project
+* Configured Node.JS environment
 
 ## Install and configure karma.js and jasmine
 
@@ -601,7 +601,7 @@ Lines        : 52.83% ( 112/212 )
 
 And you must see started Chrome Browser with your visual.
 
-![UT runned in Chrome](./media/karmajs-chrome-ut-runned.png)
+![UT launches in Chrome](./media/karmajs-chrome-ut-runned.png)
 
 Make attention coverage summary increased. Open `coverage\index.html` to find out more about current code coverage
 

@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Rendering events
+# Event service
 
 The new API consists of three methods (started, finished, or failed) which should be called during rendering.
 

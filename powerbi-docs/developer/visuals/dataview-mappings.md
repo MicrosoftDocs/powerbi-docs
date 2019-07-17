@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Data view mappings in Power Bi Visuals
+# Data view mappings in Power BI Visuals
 
 A `dataViewMappings` describes how the data roles relate to each other and allows you to specify conditional requirements for the them.
 There's a section for each of the `dataMappings`.
@@ -33,7 +33,7 @@ Each valid mapping will produce a `DataView`, but currently we only support perf
 > [!NOTE]
 > Important to note that Power BI creates a mapping to a DataView if and only if the valid mapping is filled in `dataViewMappings`.
 
-In other words if `categorical` is defined in `dataViewMappings` but other mappings such as `table`, `single`, etc. aret, as in the following example:
+In other words if `categorical` is defined in `dataViewMappings` but other mappings such as `table`, `single`, etc. aren't, as in the following example:
 ```json
 "dataViewMappings": [
     {
