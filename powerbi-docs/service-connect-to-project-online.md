@@ -12,11 +12,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
----
-# Connect to Project Online with Power BI
-Microsoft Project Online is a flexible online solution for project portfolio management (PPM) and everyday work. Project Online enables organizations to get started, prioritize project portfolio investments and deliver the intended business value. The Project Online content pack for Power BI allows you to unlock insight from Project Online to help manage projects, portfolios and resources.
 
-Connect to the [Project Online content pack](https://app.powerbi.com/getdata/services/project-online) for Power BI.
+# Connect to Project Web App with Power BI
+Microsoft Project Web App is a flexible online solution for project portfolio management (PPM) and everyday work. Project Web App enables organizations to get started, prioritize project portfolio investments and deliver the intended business value. The Project Web App Template App for Power BI allows you to unlock insight from Project Web App to help manage projects, portfolios and resources.
+
+Connect to the [Project Web App Template App](https://appsource.microsoft.com/product/power-bi/pbi_msprojectonline.pbi-microsoftprojectwebapp) for Power BI.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.
