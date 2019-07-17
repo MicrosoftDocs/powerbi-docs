@@ -199,6 +199,6 @@ If you don't want to use the sample data anymore, drop the database in SQL Serve
 
 In this tutorial, you've explored how to import data from an on-premises SQL Server database into a Power BI dataset and how to refresh this dataset on a scheduled and on-demand basis to keep the reports and dashboards that use this dataset updated in Power BI. Now you can learn more about managing data gateways and data sources in Power BI. It might also be a good idea to review the conceptual article Data Refresh in Power BI.
 
-- [Manage a Power BI on-premises gateway](service-gateway-manage-admins.md)
+- [Manage an on-premises data gateway](/data-integration/gateway/service-gateway-manage)
 - [Manage your data source - Import/Scheduled Refresh](service-gateway-enterprise-manage-scheduled-refresh.md)
 - [Data refresh in Power BI](refresh-data.md)
