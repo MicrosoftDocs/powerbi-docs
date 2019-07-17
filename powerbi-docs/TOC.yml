@@ -1106,7 +1106,7 @@
       - name: "Visuals interactions"
         href: developer/visuals/visuals-interactions.md
       - name: "Add visuals tooltips"
-        href: developer/visuals/adding-tooltips.md
+        href: developer/visuals/add-tooltips.md
       - name: "Add analytics pane" 
         href: developer/visuals/analytics-pane.md
       - name: "Filter visuals" 
@@ -1116,7 +1116,7 @@
       - name: "Add bookmarks support"
         href: developer/visuals/bookmarks-support.md
       - name: "Highlight data in visuals"
-        href: developer/visuals/highlighting.md
+        href: developer/visuals/highlight.md
       - name: "Add High-Contrast mode support"
         href: developer/visuals/high-contrast-support.md
       - name: "Enable sync slicers"
@@ -1130,9 +1130,9 @@
       - name: "Launch URL" 
         href: developer/visuals/launch-url.md
       - name: "Rendering events" 
-        href: developer/visuals/rendering-events.md
+        href: developer/visuals/event-service.md
       - name: "Sorting"
-        href: developer/visuals/sorting.md
+        href: developer/visuals/sorting-options.md
     - name: Resources
       items:
       - name: "Dev Center"
