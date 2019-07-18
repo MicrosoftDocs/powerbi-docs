@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 07/15/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -29,6 +29,90 @@ The links beside each update mean the following:
 You can also watch the **Latest Updates** video from the beginning, right inside this article, by clicking on the **play** icon on the video image found below the list of updates.
 
 The following sections describe previous months' updates to **Power BI Desktop**.
+
+
+## June 2019 Update (2.70.5494.561)
+
+Our June updates spread sunshine and blue skies on your reports, with a refreshing and bright new color scheme for your Power BI Desktop, and a host of other improvements. 
+
+You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
+
+The links beside each update mean the following:
+
+* **[video]** excerpts play in a new browser tab, when the feature is being discussed.
+* Some features have an **[article]** that provides more detail.
+* Most features are explained in the monthly update **[blog]** post.
+* Lastly, some features are self-explanatory and don't need and article or video.
+
+You can also watch the **Latest Updates** video from the beginning, right inside this article, by clicking on the **play** icon on the video image found below the list of updates.
+
+The following updates are new to **Power BI Desktop** this month:
+
+### Reporting
+* Updated pane design  [[video]](https://youtu.be/7k-nP38uHyQ?t=8)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#panes) 
+* Visual level filters for slicers  [[video]](https://youtu.be/7k-nP38uHyQ?t=116)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#slicerFilters)
+* Sorting for the performance analyzer pane [[video]](https://youtu.be/7k-nP38uHyQ?t=237)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#perfAnalyzer)
+* Conditional formatting updates for formatting options [[video]](https://youtu.be/7k-nP38uHyQ?t=311)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#conditionalFormatting)
+* Visual header tooltips [[video]](https://youtu.be/7k-nP38uHyQ?t=530)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#headerTooltips)
+* Table and matrix total label customization [[video]](https://youtu.be/7k-nP38uHyQ?t=722)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#totalLabels)
+* Sync slicer support for hierarchy slicer [[video]](https://youtu.be/7k-nP38uHyQ?t=859)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#syncSlicer)
+* Consistent font sizes across visuals [[video]](https://youtu.be/7k-nP38uHyQ?t=962)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#fontSizes)
+
+
+### Analytics
+* Key influencers visual updates (preview) [[video]](https://youtu.be/7k-nP38uHyQ?t=1064)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#keyInfluencers) 
+    * Key influencers with Live connect to Power BI datasets
+    * Key influencers accessibility
+    * Support for Cloud RLS
+* Manage aggregations dialog accessibility [[video]](https://youtu.be/7k-nP38uHyQ?t=1213)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#aggregationsAccessibility) 
+
+### Modeling
+* New == DAX comparison operator [[video]](https://youtu.be/7k-nP38uHyQ?t=1267)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#dax) 
+
+
+### Visuals
+* Personalized visualization pane (preview)  [[video]](https://youtu.be/7k-nP38uHyQ?t=1349)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#personalizedVizPane) 
+* Three new custom visuals and updates  [[video]](https://youtu.be/7k-nP38uHyQ?t=1391)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#synopticVisual) 
+
+
+### Data connectivity
+* Connect to shared and certified datasets [[video]](https://youtu.be/7k-nP38uHyQ?t=1739)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#sharedCertifiedDatasets) 
+* Common Data Service connector is now generally available  [[video]](https://youtu.be/7k-nP38uHyQ?t=1807)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#cds) 
+* Azure Data Explorer connector is now generally available [[video]](https://youtu.be/7k-nP38uHyQ?t=1823)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#azureDataExplorer) 
+* Enhancements to the Cosmos DB connector [[video]](https://youtu.be/7k-nP38uHyQ?t=1835)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#cosmosDB)
+* Entersoft data connector [[video]](https://youtu.be/7k-nP38uHyQ?t=1851)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#entersoft) 
+
+
+### Data preparation
+* Improvements to M Intellisense [[video]](https://youtu.be/7k-nP38uHyQ?t=1866)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#intellisense) 
+
+
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+
+
+The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7k-nP38uHyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+* We only archive the English versions of Power BI Desktop.
+
+Select the following links to download this earlier version: 
+
+* [May 2019 version of Power BI Desktop - 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06.msi)
+* [May 2019 version of Power BI Desktop - 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06_x64.msi)
+
 
 ## May 2019 Update (2.69.5467.1251)
 
