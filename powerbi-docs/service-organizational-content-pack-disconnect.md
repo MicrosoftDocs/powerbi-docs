@@ -3,17 +3,22 @@ title: Disconnect from an organizational content pack - Power BI
 description: Read about removing your connection to an organizational content pack by deleting its dataset in Power BI.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 08/02/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Remove your connection to a Power BI organizational content pack
+
+> [!NOTE]
+> You can't create organizational content packs or install them in the new workspace experiences preview. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
+> 
+
 A coworker created a content pack. You discovered it in AppSource and added it to your Power BI workspace. Now you don't need it any longer.  How do you remove it?
 
 To remove a content pack, you remove its dataset.  
@@ -27,6 +32,6 @@ Removing the dataset also removes all associated reports and dashboards. However
 ## Next steps
 * [Introduction to organizational content packs](service-organizational-content-pack-introduction.md) 
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md) 
-* [Power BI basic concepts](service-basic-concepts.md)  
+* [Basic concepts for designers in the Power BI service](service-basic-concepts.md)  
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

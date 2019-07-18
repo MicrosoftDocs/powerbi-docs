@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/22/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Learn more
@@ -84,7 +84,7 @@ To get back to the report, select **< Back to Report** in the upper-left corner 
 > - You can't use **See Records** when you are connected to a live multidimensional (MD) model.
 
 ## Next steps
-﻿There are all sorts of report formatting and data management features in **Power BI Desktop**. Check out the following resources for a few examples:
+There are all sorts of report formatting and data management features in **Power BI Desktop**. Check out the following resources for a few examples:
 
 * [Use grouping and binning in Power BI Desktop](desktop-grouping-and-binning.md)
 * [Use gridlines, snap-to-grid, z-order, alignment and distribution in Power BI Desktop reports](desktop-gridlines-snap-to-grid.md)

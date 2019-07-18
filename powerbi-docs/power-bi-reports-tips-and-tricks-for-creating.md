@@ -1,15 +1,15 @@
 ---
 title: Tips for creating stunning reports
 description: Tips and tricks for creating reports in Power BI service and Power BI Desktop
-author: mihart
+author: davidiseminger
 manager: kfile
 ms.reviewer: 'willthom'
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/13/2018
-ms.author: mihart
+ms.author: davidi
 
 LocalizationGroup: Reports
 ---
@@ -143,7 +143,7 @@ To create a relationship in this case, we need to create a logical dataset of al
 4. In the **CustomerNames** query, select the **Append** option in the ribbon, select the query **Temp**.
 5. In the **CustomerNames** query, select **Remove Duplicates**.
 
-Now you have a dimension table that you can use to relate to CustomerIndicents and WorkItems that contains all the values of each.  
+Now you have a dimension table that you can use to relate to CustomerIncidents and WorkItems that contains all the values of each.  
 
 ### Patterns to jump start your use of the Query Editor
 Query Editor is very powerful in how it can manipulate data to shape and clean it so it is ready to be visualized or modeled. There are a few patterns you should be aware of.
@@ -165,7 +165,7 @@ DAX is the calculations formula language in Power BI Desktop.  It's optimized fo
 
 ## Power BI service *and* Power BI Desktop
 
-### Read the whitepaper: [Principles for designing Power BI reports](power-bi-visualization-best-practices.md)
+### Read the whitepaper: [Principles for designing Power BI reports](visuals/power-bi-visualization-best-practices.md)
 This paper provides best practices for designing reports in Power BI. Starting with planning, it discusses principles of design that you can apply to your reports and to the pages and individual visuals that make up that report. Many of these best practices apply to dashboard design as well.
 
 ### Read and/or watch "How to design visually stunning reports (and dashboards) in Power BI"
@@ -204,10 +204,10 @@ Avoid visualization variety for the sake of variety.  Visualizations should pain
 * Try to avoid mixing levels of precision and time. Make sure that time frames are well understood.  Don’t have one chart that has last month next to filtered charts from a specific month of the year.    
 * Also try to avoid mixing big and small measures on the same scale, such as on a line or bar chart.  For example one measure can be in the millions and the other measure in the thousands.  With such a large scale, it would be difficult to see the differences of the measure that is in the thousands.  If you need to mix, choose a visualization, like a combo chart, that allows the use of a second axis.    
 * Avoid cluttering your charts with data labels that are not needed. The values in bar charts, ***if large enough***, are usually well understood without displaying the actual number.   
-* Pay attention to how [charts are sorted](power-bi-report-change-sort.md).  If you want to draw attention to the highest or lowest number, sort by the measure.  If you want people to be able to quickly find a particular category within many other categories, sort by the axis.  
+* Pay attention to how [charts are sorted](consumer/end-user-change-sort.md).  If you want to draw attention to the highest or lowest number, sort by the measure.  If you want people to be able to quickly find a particular category within many other categories, sort by the axis.  
 * Pie charts are best if they have fewer than eight categories. Because you can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts. And Gauge charts are great for displaying the current status in the context of a goal.    
 
-For more visualization-specific guidance, see [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).  
+For more visualization-specific guidance, see [Visualization types in Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
 ### Learn more about Best Practice Dashboard Design
 A few of our favorite books include:
@@ -220,8 +220,8 @@ A few of our favorite books include:
 * *Advanced Presentations Design* by Andrew Abela   
 
 ## Next steps
-[Power BI - Basic Concepts](service-basic-concepts.md)
+[Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
-[Reports in Power BI](service-reports.md)
+[Reports in Power BI](consumer/end-user-reports.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

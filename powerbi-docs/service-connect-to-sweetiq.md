@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
@@ -37,10 +37,10 @@ Connect to the [SweetIQ content pack](https://app.powerbi.com/groups/me/getdata/
 
 **What now?**
 
-* Try [asking a question in the Q&A box](power-bi-q-and-a.md) at the top of the dashboard
+* Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
-* [Select a tile](service-dashboard-tiles.md) to open the underlying report.
-* While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+* [Select a tile](consumer/end-user-tiles.md) to open the underlying report.
+* While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## Finding parameters
 The Client ID and API key for this content pack is not the same as your SweetIQ username and password.
@@ -50,7 +50,7 @@ Select a Client ID for one of the clients your account has access to. You can fi
 Talk to your administrator for your API key, to access the data for specific client.
 
 ## Next steps
-[Get started with Power BI](service-get-started.md)
+[What is Power BI?](power-bi-overview.md)
 
 [Get Data for Power BI](service-get-data.md)
 

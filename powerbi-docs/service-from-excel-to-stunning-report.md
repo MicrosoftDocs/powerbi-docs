@@ -1,15 +1,15 @@
 ---
 title: 'From Excel workbook to stunning report in no time'
 description: 'From Excel workbook to stunning report in no time'
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2018
-ms.author: mihart
+ms.date: 08/28/2018
+ms.author: maggies
 
 LocalizationGroup: Data from files
 ---
@@ -30,7 +30,7 @@ Next, format your data as a table. In Excel, on the Home tab, in the Styles grou
 ![data formatted as a table](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
 
 ## Upload your Excel file into Power BI
-Power BI connects to many data sources, including Excel files that live on your computer. To get started, sign in to Power BI. If you haven’t signed up, [you can do so for free](https://powerbi.com).
+Power BI connects to many data sources, including Excel files that live on your computer. To get started, sign in to Power BI service. If you haven’t signed up, [you can do so for free](https://powerbi.com).
 
 You want to create a new dashboard. Open **My workspace** and select the **+ Create** icon.
 
@@ -94,6 +94,6 @@ Next steps
 
 * [Get started with Power BI service](service-get-started.md)
 * [Get started with Power BI Desktop](desktop-getting-started.md)
-* [Power BI - Basic Concepts](service-basic-concepts.md)
+* [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 * More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

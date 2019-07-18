@@ -1,15 +1,15 @@
 ---
 title: Tips for designing a great Power BI dashboard
 description: Tips for designing a great Power BI dashboard
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/22/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Dashboards
 ---
@@ -19,7 +19,7 @@ Now that you've created a dashboard and added some tiles, think about how to mak
 Here are a few tips.
 
 > [!TIP]
-> Many of the design principles for reports apply to dashboards as well.  Read our whitepaper [Best design principles for reports and visualizations](power-bi-visualization-best-practices.md).
+> Many of the design principles for reports apply to dashboards as well.  Read our whitepaper [Best design principles for reports and visualizations](visuals/power-bi-visualization-best-practices.md).
 >
 >
 
@@ -39,7 +39,7 @@ Because dashboards are meant to show important information at a glance, having a
 Is the dashboard too cluttered?  Remove all but essential information that can be easily read and interpreted.
 
 ## Make use of full screen mode
-Display your dashboard in [full screen](service-fullscreen-mode.md) without distractions.
+Display your dashboard in [full screen](consumer/end-user-focus.md) without distractions.
 
 ## Make the most important information biggest
 If the text and visualizations on your dashboard are all the same size, your readers will have a hard time focusing on what's most important. For example, card visualizations are a good way to display an important number prominently:  
@@ -47,7 +47,7 @@ If the text and visualizations on your dashboard are all the same size, your rea
 
 But be sure to provide context.  
 
-Read about [creating a tile with just a number](power-bi-visualization-card.md).
+Read about [creating a tile with just a number](visuals/power-bi-visualization-card.md).
 
 ## Put the most important information in the upper corner
 Most people read from top to bottom, so put the highest level of detail at the top and show more detail as you move in the direction the audience uses for reading (left-to-right, right-to-left).
@@ -61,10 +61,10 @@ Avoid visualization variety for the sake of variety.  Visualizations should pain
 * Don’t mix levels of precision and time. Make sure that time frames are well understood.  Don’t have one chart that has last month next to filtered charts from a specific month of the year.
 * Don’t mix big and small measures on the same scale, such as on a line or bar chart.  For example one measure can be in the millions and the other measure in the thousands.  With such a large scale, it would be difficult to see the differences of the measure that is in the thousands.  If you need to mix, choose a visualization that allows the use of a second axis.
 * Don’t clutter your charts with data labels that are not needed. The values in bar charts are usually well understood without displaying the actual number.
-* Pay attention to how [charts are sorted](power-bi-report-change-sort.md).  If you want to draw attention to the highest or lowest number, sort by the measure.  If you want people to be able to quickly find a particular category within many other categories, sort by the axis.  
+* Pay attention to how [charts are sorted](consumer/end-user-change-sort.md).  If you want to draw attention to the highest or lowest number, sort by the measure.  If you want people to be able to quickly find a particular category within many other categories, sort by the axis.  
 * Pie charts are best if they have fewer than eight categories. Because you can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts. And Gauge charts are great for displaying the current status in the context of a goal.
 
-For more visualization-specific guidance, see [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).  
+For more visualization-specific guidance, see [Visualization types in Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
 ## Learning More about Best Practice Dashboard Design
 To master the art of excellent dashboard design, consider learning basic Gestalt Principles of visual perception and how to clearly communicate actionable information in context. Luckily, there is a plethora of resources already widely available and sprinkled within our blogs. A few of our favorite books include:
@@ -77,5 +77,5 @@ To master the art of excellent dashboard design, consider learning basic Gestalt
 
 ## Next steps
 [Create a dashboard from a report](service-dashboard-create.md)  
-[Power BI - Basic Concepts](service-basic-concepts.md)  
+[Basic concepts for designers in the Power BI service](service-basic-concepts.md)  
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

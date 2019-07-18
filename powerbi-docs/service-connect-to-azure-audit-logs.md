@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: sarinas
@@ -28,13 +28,13 @@ With the Azure Audit Logs content pack you can analyze and visualize the informa
 3. Select **Azure Audit Logs** > **Get**.  
    
    ![](media/service-connect-to-azure-audit-logs/azureauditlogs.png)
-4. When prompted, enter your **Azure Subscription ID**. See details on finding your [subscription ID](#FindingParams) below.   
+4. When prompted, enter your **Azure Subscription Id**. See details on finding your [subscription ID](#FindingParams) below.   
    
     ![](media/service-connect-to-azure-audit-logs/parameters.png)
 5. For **Authentication Method**, select **oAuth2** \> **Sign In**.
    
     ![](media/service-connect-to-azure-audit-logs/creds.png)
-6. Enter your account credentials to finish the sign in process.
+6. Enter your account credentials to finish the sign-in process.
    
     ![](media/service-connect-to-azure-audit-logs/login.png)
 7. Power BI will retrieve your Azure Audit Log data and create a ready-to-use dashboard and report. 
@@ -43,13 +43,13 @@ With the Azure Audit Logs content pack you can analyze and visualize the informa
 
 **What now?**
 
-* Try [asking a question in the Q&A box](power-bi-q-and-a.md) at the top of the dashboard
+* Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
-* [Select a tile](service-dashboard-tiles.md) to open the underlying report.
-* While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+* [Select a tile](consumer/end-user-tiles.md) to open the underlying report.
+* While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## System requirements
-The Azure Audit logs content pack requires access to Audit Logs in the Azure Portal. More details [here](https://azure.microsoft.com/documentation/articles/insights-debugging-with-events/).
+The Azure Audit logs content pack requires access to Audit Logs in the Azure portal. More details [here](/azure/azure-resource-manager/resource-group-audit/).
 
 <a name="FindingParams"></a>
 
@@ -59,12 +59,12 @@ There are two easy ways to find your Subscription Id.
 1. From https://portal.azure.com -&gt; Browse -&gt; Subscriptions -&gt; Subscription Id
 2. From https://manage.windowsazure.com -&gt; Settings  -&gt; Subscription Id
 
-Your subscription ID will be long set of numbers and characters, similar to the example in Step \#4 above. 
+Your subscription Id will be long set of numbers and characters, similar to the example in Step \#4 above. 
 
 ## Troubleshooting
-If you're seeing a credentials error or an error trying to refresh due to invalid credentials, please try deleting all instances of the Azure Audit logs content pack and reconnecting.
+If you're seeing a credentials error or an error trying to refresh due to invalid credentials, try deleting all instances of the Azure Audit logs content pack and reconnecting.
 
 ## Next steps
-[Get started with Power BI](service-get-started.md)  
-[Power BI - Basic Concepts](service-basic-concepts.md)  
+[What is Power BI?](power-bi-overview.md)  
+[Basic concepts for designers in the Power BI service](service-basic-concepts.md)  
 

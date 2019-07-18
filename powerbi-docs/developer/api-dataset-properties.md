@@ -1,12 +1,12 @@
 ---
 title: Power BI dataset properties
 description: Learn about the properties of Power BI dataset APIs
-author: markingmyname
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
-ms.author: maghan
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
 ---
@@ -15,9 +15,8 @@ ms.date: 06/08/2018
 
 The current v1 of datasets API only allows for a dataset to be created with a name and a collection of tables. Each table can have a name and a collection of columns. Each column has a name and datatype. We are expanding these properties most notably with support for measures and relationships between tables. The complete list of supported properties for this release is as follows:
 
-> [!IMPORTANT]  
-It can be accessed at the [Datasets Operation Groups](https://docs.microsoft.com/rest/api/power-bi/datasets) page.
->
+> [!IMPORTANT]
+> It can be accessed at the [Datasets Operation Groups](https://docs.microsoft.com/rest/api/power-bi/datasets) page.
 
 ## Dataset
 
@@ -27,7 +26,7 @@ id     |  Guid       | System wide unique identifier for the dataset.        | T
 name     | String        | User defined name of the dataset.        | False        | True        
 tables     | Table[]        | Collection of tables.        |  False       | False        
 relationships     | Relationship[]        | Collection of relationships between tables.        | False        |  False  
-defaultMode     | String        | Determines whether the dataset is pushed, streamed, or both, with values of "Push", "Streaming", and "PushStreaming".         | False        |  False
+defaultMode     | String        | Determines whether the dataset is pushed, streamed, or both, with values of "Push" and "Streaming."         | False        |  False
 
 ## Table
 
@@ -58,7 +57,7 @@ name     | String        |  User defined name of the measure.       |  False    
 expression     | String        | A valid DAX expression.        | False        |  True       
 formatString     | String        |  A string describing how the value should be formatted when it is displayed. To learn more about string formatting, see [FORMAT_STRING Contents](https://msdn.microsoft.com/library/ms146084.aspx).       | False        | False        
 isHidden     | String        |  If true, table will be hidden from client tools.       |  False       | False       
-  
+
 ## Relationship
 
 Name  |Type  |Description  |Read Only  |Required 
@@ -86,7 +85,7 @@ Decimal|precision=28, scale=4
 ## Example
 The following code sample includes a number of these properties:
 
-```
+```json
 {
 
   "name": "PushAdvanced",

@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -45,10 +45,10 @@ The following list details a few examples of data sources to which **Power BI De
 | Power BI Desktop generic connector | External data source | Link for more information |
 | --- | --- | --- |
 | ODBC |Cassandra |[Cassandra ODBC driver](http://www.simba.com/drivers/cassandra-odbc-jdbc/) |
-| ODBC |Couchbase DB |[Couchbase and Power BI](https://powerbi.microsoft.com/en-us/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
+| ODBC |Couchbase DB |[Couchbase and Power BI](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
 | ODBC |DynamoDB |[DynamoDB ODBC driver](http://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
 | ODBC |Google BigQuery |[BigQuery ODBC driver](http://www.simba.com/drivers/bigquery-odbc-jdbc/) |
-| ODBC |Hbase |[Hbase ODBC driver](http://www.simba.com/drivers/hbase-odbc-jdbc/) |
+| ODBC |HBase |[HBase ODBC driver](http://www.simba.com/drivers/hbase-odbc-jdbc/) |
 | ODBC |Hive |[Hive ODBC driver](http://www.simba.com/drivers/hive-odbc-jdbc/) |
 | ODBC |IBM Netezza |[IBM Netezza information](https://www.ibm.com/support/knowledgecenter/SSULQD_7.2.1/com.ibm.nz.datacon.doc/c_datacon_plg_overview.html) |
 | ODBC |Presto |[Presto ODBC driver](http://www.simba.com/drivers/presto-odbc-jdbc/) |
@@ -87,7 +87,7 @@ The following list details a few examples of the data sources to which **Power B
 
 | Power BI Desktop generic connector | External data source | Link for more information |
 | --- | --- | --- |
-| REST APIs |Couchbase DB |[Couchbase REST API information](https://powerbi.microsoft.com/en-us/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
+| REST APIs |Couchbase DB |[Couchbase REST API information](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
 
 ## Data sources accessible through R Script
 You can use **R scripts** to access data sources, and use that data in **Power BI Desktop**.
@@ -103,9 +103,9 @@ The following list details a few examples of the data sources to which **Power B
 | R Script |R Statistical Files |[R script guidance from CRAN](https://cran.r-project.org/doc/manuals/R-data.html) |
 
 ## Next steps
-﻿There are all sorts of data sources you can connect to using **Power BI Desktop**. For more information on data sources, check out the following resources:
+There are all sorts of data sources you can connect to using **Power BI Desktop**. For more information on data sources, check out the following resources:
 
-* [Getting Started with Power BI Desktop](desktop-getting-started.md)
+* [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Connect to Excel workbooks in Power BI Desktop](desktop-connect-excel.md)   

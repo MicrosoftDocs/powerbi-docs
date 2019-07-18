@@ -5,9 +5,9 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/04/2018
+ms.date: 05/07/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -70,6 +70,6 @@ You can try or test the buttons you create for your report by using *CTRL+CLICK*
 For more information about features that are similar or interact with buttons, take a look at the following articles:
 
 * [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
-* [Display a dashboard tile or report visual in Focus mode](service-focus-mode.md)
+* [Display a dashboard tile or report visual in Focus mode](consumer/end-user-focus.md)
 * [Use bookmarks to share insights and build stories in Power BI](desktop-bookmarks.md)
 

@@ -1,27 +1,25 @@
 ---
 title: Create custom Power BI answer pages for Cortana
 description: Create custom answer pages for Cortana in Power BI
-author: yaron
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
-ms.author: mihart
+ms.date: 05/29/2019
+ms.author: maggies
 
 LocalizationGroup: Create reports
 ---
 # Use Power BI service or Power BI Desktop to create a custom Answer Page for Cortana
 Use the full capabilities of Power BI to create special report pages, called *Cortana answer pages* (and sometimes called *Cortana answer cards*) designed specifically to answer Cortana questions.
 
-![](media/service-cortana-answer-cards/power-bi-cortana.png)
-
 > [!IMPORTANT]
-> If you are trying out the Cortana and Power BI **dashboard** preview, you can skip the rest of this article. There are no setup requirements for Cortana to be able to search your Power BI dashboards.
-> 
-> 
+> Cortana integration is being deprecated in Power BI. Starting June 11, Cortana will no longer work for any dashboards and reports.
+
+![](media/service-cortana-answer-cards/power-bi-cortana.png)
 
 ## Before you begin
 You have four documents that guide you through setting up and using Cortana for Power BI. If you haven't already, start by reading article one. Article two is especially important because it describes some steps you'll need to take before you can begin using Cortana answer pages.
@@ -37,7 +35,7 @@ You have four documents that guide you through setting up and using Cortana for 
 ## Create a Cortana answer page designed specifically for Cortana
 A *Cortana answer page* in a report is sized specifically for Cortana so that Cortana can display it in-screen as an answer to a question. To create an answer page for Cortana:
 
-1. We recommend starting with a [blank report page](power-bi-report-add-page.md).
+1. We recommend starting with a blank report page.
 2. In the **Visualizations** pane, select the paint roller icon and choose **Page Size** > **Type** > **Cortana**.
    
     ![](media/service-cortana-answer-cards/pbi-cortana-page-size-new.png)

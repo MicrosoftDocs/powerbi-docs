@@ -3,20 +3,19 @@ title: 'Organizational content packs: Manage and update'
 description: Read about managing, updating, and deleting organizational content packs in Power BI.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/08/2018
+ms.date: 08/02/2018
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Manage, update, and delete organizational content packs
 > [!NOTE]
-> Have you heard about the new *apps* yet? Apps are the new way to distribute content to large audiences in Power BI. We plan to deprecate organizational content packs soon, so we recommend using apps instead. Learn [more about apps](service-install-use-apps.md).
-> 
+> You can't create organizational content packs or install them in the new workspace experiences preview. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
 > 
 
 You can package up and share your dashboards, reports, Excel workbooks, and datasets with your colleagues as [organizational content packs](service-organizational-content-pack-introduction.md). Your colleagues can use them as-is, or they can create their own copies.
@@ -48,7 +47,7 @@ When you make and save a change to the dashboard that you included in a content 
 4. Make any necessary changes in the **Update Content Pack** window and select **Update**. A **Success** message appears.
    
    * For group members who haven't customized the content pack, the update is automatically applied.
-   * Group members who have customized the content pack receive a notification that there is a new version.  They can go to AppSource and get the updated content pack without losing their personalized version.  They'll now have 2 versions: the personalized version and the updated content pack.  In the personalized version, all tiles from the original content pack will be gone.  But tiles pinned from other reports will still render.    
+   * Group members who have customized the content pack receive a notification that there is a new version.  They can go to AppSource and get the updated content pack without losing their personalized version.  They'll now have 2 versions: the personalized version and the updated content pack.  In the personalized version, all tiles from the original content pack will be gone.  But tiles pinned from other reports will still render. However, if the content pack owner deletes the dataset the content pack is based on, then the whole report will be gone.  
 
 ## Update the audience: expand or restrict access
 Another modification available to content pack creators is expanding and restricting access to the content pack.  Perhaps you published a content pack to a broad audience and you've decided to restrict access to a smaller group.  

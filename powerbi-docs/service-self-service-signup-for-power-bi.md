@@ -1,146 +1,86 @@
 ---
-title: Signing up for Power BI as an individual
+title: Sign up for Power BI as an individual
 description: Learn how to sign up for Power BI and begin using it for your personal report and visualization needs.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 05/09/2019
 ms.author: mblythe
-
 LocalizationGroup: Get started
 ---
-# Signing up for Power BI as an individual
-Learn how to sign up for Power BI and begin using it for your personal report and visualization needs.
 
-![](media/service-self-service-signup-for-power-bi/dashboard-report.png "Power BI dashboard and report")
+# Sign up for Power BI as an individual
 
-Power BI can be your personal report and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations.
+Power BI can be your personal report and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains how to sign up for a Power BI Pro trial as an individual. If you're a Power BI admin, see [Power BI licensing in your organization](service-admin-licensing-organization.md).
 
-This article will walk you through your options on how to sign up and begin using the Power BI service. For information on the differences between Power BI Free and Pro, see [Power BI Free vs Pro](service-free-vs-pro.md).
+![Power BI dashboard](media/service-self-service-signup-for-power-bi/dashboard.png)
 
-## You have a few options
-As an individual you have several options to sign up and begin using Power BI. You can choose to sign up for free or you can purchase a Power BI Pro subscription. If you sign up for a free account, once you are in the service, you can opt into a free 60 day trial of Power BI Pro.
+## Supported email addresses
 
-If you are part of an existing organization, that uses Office 365, you can still sign up for a free account. Your IT Admin also has some options to purchase Power BI Pro and assign licenses. For more information about what options are available as an IT Admin, see [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md).
+Before you start the sign-up process, it's important to learn which types of email addresses that you can use in Power BI:
 
-> [!NOTE]
-> If you are in an organization, individual sign up may be disabled. See [Individual Sign up has been turned off](#individual-sign-up-has-been-turned-off) for more information if you get an error indicating it has been turned off.
->
+* Power BI requires that you use a work or school email address to sign up. You can't sign up using email addresses provided by consumer email services or telecommunication providers. This includes outlook.com, hotmail.com, gmail.com, and others.
 
-## What you need to sign up?
+* After you sign up, you can [invite guest users](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) to see your Power BI content with any email address, including personal accounts.
 
-In order to sign up for Power BI, you need a working email address. A personal email address will not work when trying to sign up for Power BI.
+* You can sign-up for Power BI with .gov or .mil addresses, but this requires a different process. For more info, see [Enroll your US Government organization in the Power BI service](service-govus-signup.md).
 
-### What email address can be used with Power BI?
-Power BI requires that you use a work, or school, email address to sign up. You cannot sign up got Power BI using email addresses provided by consumer email services or telecommunication providers. This includes outlook.com, hotmail.com, gmail.com and others.
+## Sign up for a trial
 
-If you try to sign up with a personal email address, you will get a message indicating to use a work or school email address.
+Follow these steps to sign up for a Power BI Pro trial. See the next section, [Trial expiration](#trial-expiration), to learn about the options you have when this trial expires.
 
-> [!NOTE]
-> You can sign-up for Power BI with .gov or .mil addresses. For information take a look at [Enroll your US Government organization in the Power BI service](https://docs.microsoft.com/en-us/power-bi/service-govus-signup).
->
+1. Go to the [sign-up page](https://signup.microsoft.com/signup?sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235) in Power BI.
 
-> [!NOTE]
-> After you sign up you can [invite guest users](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) to see content in your Power BI tenant with any email address including personal accounts.
->
+1. Enter your email address then select **Sign up**.
 
-## Which one do you need?
-You can determine which one you need by reviewing what comes with each license type. Free users have most of the functionality of the services with the exception of sharing and collaboration features. Power BI Pro users can make use of all features in the service, but is not free. If you don't have a need to share any content, Free may be the route for you. You can learn more on the [Power BI Pricing page](https://powerbi.microsoft.com//pricing/).
+    ![Get started](media/service-self-service-signup-for-power-bi/get-started.png)
 
-The remainder of this article will look at how to sign up for each option.
+1. If you get a message like this one, choose an option to receive a verification code, then continue to the next step in this procedure.
 
-## Signing up for Power BI (free) as an individual
-The quickest way to sign up for Power BI is to sign up for a Power BI (free) account. There is no cost to this account, and it allows you to use many of the features available in the service.
+    ![Prove you're not a robot](media/service-self-service-signup-for-power-bi/prove-robot.png)
 
-> [!NOTE]
-> If you receive a message that we already know you, try navigating to https://app.powerbi.com and signing in.
-> 
-> 
+    If you get a message like this one, finish the steps to sign in and use Power BI.
 
-To sign up for Power BI, you can do the following.
+    ![Existing account](media/service-self-service-signup-for-power-bi/existing-account.png)
 
-1. Browse to [powerbi.com](https://powerbi.microsoft.com).
-2. Select **Start Free** or **Sign up free**.
-   
-    ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup1.png)
-3. On the get started page, select **Try Free >** under Power BI.
-   
-    ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup2.png)
-4. Enter the email address you are signing up with, and then select **Sign up**. Be sure your email address is allowed for sign up. For more information about what email address you can use, see [What email address can be used with Power BI](#what-email-address-can-be-used-with-power-bi).
-   
-    ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup3.png)
-5. You will get a message indicating to check your email.
-   
-    ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup4.png)
-6. Select the link within the email to verify your email address. This will bring you back into the sign up flow. You may need to supply some additional information about yourself.
-7. You will then be taken to https://app.powerbi.com and you can begin using Power BI as a free user.
+1. Enter the code that you received then select **Sign up**.
 
-### What this looks like within the service
-When you are in the service, you can verify that you have a free account by going to the **gear** icon and selecting **Manage personal storage**.
+    ![Sign up](media/service-self-service-signup-for-power-bi/sign-up.png)
 
-![](media/service-self-service-signup-for-power-bi/powerbi-free-signup7.png)
+1. Check your email for a message like this one.
 
-### What if you're already part of an existing organization?
-If your account is part of an existing organization, you will get a message asking you to sign in with that account. Select **Continue** and sign in with your Office 365 login.
+    ![Email verification](media/service-self-service-signup-for-power-bi/email-verification.png)
 
-![](media/service-self-service-signup-for-power-bi/powerbi-free-signup5.png)
+1. On the next screen, enter your information and the verification code from the email. Select a region, review the policies that are linked from this screen, then select **Start**.
 
-You will then see a message asking you to select **Start**.
+    ![Create account](media/service-self-service-signup-for-power-bi/create-account.png)
 
-![](media/service-self-service-signup-for-power-bi/powerbi-free-signup6.png)
+1. You're then taken to [Power BI sign in page](https://powerbi.microsoft.com/landing/signin/), and you can begin using Power BI.
 
-## In-service Power BI Pro 60-day trial
-After you have signed up for your free account, you can optionally choose to try Pro free for 60 days. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional sharing and collaboration features. For more information, see [Power BI Pricing](https://powerbi.microsoft.com/pricing). To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
+    ![Existing account](media/service-self-service-signup-for-power-bi/welcome-screen.png)
 
-* [Create an app worksapce](service-create-distribute-apps.md)
-* [Share a dashboard](service-share-dashboards.md)
+## Trial expiration
 
-When you try any of these features, you will be prompted to start your free trial. You can also choose to make use of it by going to the gear icon and selecting **Manage personal storage**. Then select **Try Pro for free** on the right.
+When your Power BI Pro trial expires, your license changes to a Power BI (free) license. After this happens, you no longer have access to features that require a Power BI Pro license. For more information, see [Features by license type](service-features-license-type.md).
 
-![](media/service-self-service-signup-for-power-bi/powerbi-pro-trial1.png)
+If a Power BI (free) license is sufficient, you don't have to do anything else. To take advantage of Power BI Pro features, contact your IT admin about purchasing a Power BI Pro license.
 
-Then you can select **Start trial**.
+## Troubleshooting the sign-up process
 
-![](media/service-self-service-signup-for-power-bi/powerbi-pro-trial2.png)
+In most cases, you can sign up for Power BI by following the described process. Some of the issues that may prevent you from signing up are described in the following table, with possible workarounds.
 
->[!NOTE]
->Users taking advantage of this in-product Power BI Pro trial do not appear in the Office 365 admin portal as Power BI Pro Trial users (they appear as Power BI free users). They will, however, show up as Power BI Pro Trial users in the **manage storage** page in Power BI.
-
->[!NOTE]
->If you are an IT Administrator wishing to acquire and deploy Power BI trial licenses to multiple users in your organization without having individual users accept trial terms individually, you can sign up for a [Power BI Pro subscription trial](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO). You will need to be an Office 365 Global or Billing Admin or create a new tenant to sign up for an admin trial. For more information, see [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md).
-> 
-> [!NOTE]
-> With the availability of Power BI Premium, and the changes to the Power BI Free offering on June 1, 2017, you may be eligible for an Extended Pro Trial. For more information, see [Extended Pro Trial activation](service-extended-pro-trial.md).
-> 
-> 
-
-### What this looks like within the service
-When you are in the service, you can verify that you have a Pro trial account by going to the **gear* icon and selecting **Manage personal storage**.
-
-![](media/service-self-service-signup-for-power-bi/powerbi-pro-trial3.png)
-
-## What if you want the full Power BI Pro?
-There is not a way to get the Power BI Pro license as an individual. You will need to speak to your IT Admin to purchase and assign the license to your account. For more information, see [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md).
-
-## Troubleshooting
-In many cases, registering for Power BI can be achieved by following the simple self-service signup process listed above. However, there are several reasons why you may not be able to complete self-service signup.  The table below summarizes some of the most common reasons you may not be able to complete signup and ways you can workaround these issues.
-
-| **Symptom / Error Message** | **Cause and Workaround** |
-| --- | --- |
-| **Personal email addresses (e.g. nancy@gmail.com)** You receive a message like the following during signup: <br /><br /> *You entered a personal email address: Please enter your work email address so we can securely store your company's data.* <br /><br /> or <br /><br /> *That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.* |Power BI does not support email addresses provided by consumer email services or telecommunications providers. <br /><br /> To complete signup, try again using an email address assigned by your work or school. <br /><br /> If you still can't sign up and are willing to complete a more advanced setup process, you can [register for a new Office 365 trial subscription and use that email address to sign up](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). <br /><br /> Have the user account invited as an [Azure B2B guest](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b). |
-| **Self-service signup disabled** You receive a message like the following during signup: <br /><br /> *We can't finish signing you up. Your IT department has turned off signup for Microsoft Power BI. Contact them to complete signup.* <br /><br /> or <br /><br /> *That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.* |Your organization’s IT administrator has disabled self-service signup for Power BI. <br /><br /> To complete signup, contact your IT administrator and ask them to follow the instructions on the page below to allow existing users to sign up for Power BI and to allow new users to join your existing tenant. <br/><br/> You may also experience this problem if you signed up for Office 365 through a partner. [Learn more](service-admin-syndication-partner.md) <br /><br /> [Power BI in Your Organization](https://support.office.com/en-ca/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5#BKMK_HowCanIAllowO365Tenant) |
-| **Email address is not an Office 365 ID** You receive a message like the following during signup: <br /><br /> *We can't find you at contoso.com.  Do you use a different ID at work or school? <br /><br /> Try signing in with that, and if it doesn't work, contact your IT department.* |Your organization uses IDs to sign in to Office 365 and other Microsoft services that are different than your email address.  For example, your email address might be Nancy.Smith@contoso.com but your ID is nancys@contoso.com. <br /><br /> To complete signup, use the ID that your organization has assigned to for signing in to Office 365 or other Microsoft services.  If you don't know what this is, contact your IT administrator. <br /><br /> If you still can't sign up and are able to complete a more advanced setup process, you can [register for a new Office 365 trial subscription and use that email address to sign up](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
+| Symptom / Error Message | Cause and Workaround |
+| ----------------------- | -------------------- |
+| <strong>Personal email addresses (for example nancy@gmail.com)</strong> You'll receive a message similar to this one during signup: <br /><br /> *You entered a personal email address: Please enter your work email address so we can securely store your company's data.* <br /><br /> or <br /><br /> *That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.* | Power BI doesn't support email addresses provided by consumer email services or telecommunications providers. <br /><br /> To finish signing up, try again using an email address assigned by your work or school. <br /><br /> If you still can't sign up and are willing to complete a more advanced setup process, you can [register for a new Office 365 trial subscription and use that email address to sign up](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). <br /><br /> You can also have an existing user [invite you as a guest](service-admin-azure-ad-b2b.md). |
+| **Self-service signup disabled**: You receive a message like this one during signup: <br /><br /> *We can't finish signing you up. Your IT department has turned off signup for Microsoft Power BI. Contact them to complete signup.* <br /><br /> or <br /><br /> *That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.* | Your organization’s IT admin has disabled self-service signup for Power BI. <br /><br /> To finish signing up, contact your IT admin and ask them to [follow the instructions to enable sign-up](service-admin-licensing-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory). <br/><br/> You may also experience this problem if you [signed up for Office 365 through a partner](service-admin-syndication-partner.md). |
+| **Email address isn't an Office 365 ID** You receive a message like this one during signup: <br /><br /> *We can't find you at contoso.com.  Do you use a different ID at work or school? <br /><br /> Try signing in with that, and if it doesn't work, contact your IT department.* | Your organization uses IDs to sign in to Office 365 and other Microsoft services that are different than your email address.  For example, your email address might be Nancy.Smith@contoso.com but your ID is nancys@contoso.com. <br /><br /> To finish signing up, use the ID that your organization has assigned to you for signing in to Office 365 or other Microsoft services.  If you don't know what this is, contact your IT admin. <br /><br /> If you still can't sign up and are willing to complete a more advanced setup process, you can [register for a new Office 365 trial subscription and use that email address to sign up](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 
 ## Next steps
-[Power BI (free) in your organization](service-admin-service-free-in-your-organization.md)  
+
 [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI Service agreement for individual users](https://powerbi.microsoft.com/terms-of-service/)  
-[Power BI Premium - what is it?](service-premium.md)  
-[Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-

@@ -1,19 +1,20 @@
 ---
-title: Analytics pane in Power BI service
+title: Create dynamic reference lines for visuals
 description: Create dynamic reference lines for visuals in Power BI service
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2017
+ms.date: 11/14/2018
 ms.author: mihart
 
 LocalizationGroup: Reports
 ---
-# Analytics pane in Power BI service
+# Create dynamic reference lines for visuals in the Power BI service
+
 With the **Analytics** pane in **Power BI service**, you can add dynamic *reference
 lines* to visualizations, and provide focus for important trends or insights.
 
@@ -24,7 +25,7 @@ lines* to visualizations, and provide focus for important trends or insights.
 > 
 > 
 
-## Using the Analytics pane
+## Use the Analytics pane
 With the **Analytics** pane, you can create the following types of dynamic reference lines (not all lines are available for all visual types):
 
 * X-Axis constant line
@@ -47,11 +48,11 @@ To view the available dynamic reference lines for a visual, follow these steps:
 
 3. To create a new line, select **+ Add** and decide the measure that will be used to create the line.  The **Measure** dropdown is automatically populated with available data from the selected visualization. Let's use **Open store count**.
 
-5. You have all sorts of options for your line, such as color, transparecy, style, and position (relative to the visual's data elements). If you want to label the line, give it a title and then move the **Data label** slider to **On**.  In this case, we'll title the line *Avg # Open Stores*, and customize a few of the other options as shown below.
+5. You have all sorts of options for your line, such as color, transparency, style, and position (relative to the visual's data elements). If you want to label the line, give it a title and then move the **Data label** slider to **On**.  In this case, we'll title the line *Avg # Open Stores*, and customize a few of the other options as shown below.
    
    ![customize Average line analytics](media/service-analytics-pane/power-bi-average-line2.png)
 
-1. Notice the number that appears next to the **Average line** item in the **Analytics** pane. That tells you how many dyanmic lines you currently have on your visual, and of which type. If we add a **Constant line** as a store count goal of 9, you can see that the **Analytics** pane shows that we now also have a **Constant line** reference line applied to this visual.
+1. Notice the number that appears next to the **Average line** item in the **Analytics** pane. That tells you how many dynamic lines you currently have on your visual, and of which type. If we add a **Constant line** as a store count goal of 9, you can see that the **Analytics** pane shows that we now also have a **Constant line** reference line applied to this visual.
    
    ![](media/service-analytics-pane/power-bi-reference-lines.png)
    

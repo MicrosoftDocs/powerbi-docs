@@ -1,38 +1,43 @@
 ---
 title: Track Power BI service health in Office 365
-description: Learn how to view current and historical service health in the Office 365 admin center.
+description: Learn how to view current and historical service health in the Microsoft 365 admin center.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
-
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/09/2018
+ms.date: 05/14/2019
 ms.author: mblythe
-
 LocalizationGroup: Administration
 ---
 
 # Track Power BI service health in Office 365
 
-The Office 365 admin center provides important tools for Power BI administrators, including current and historical information about service health. To access this information, you must be in one of the following roles: Power BI Service Administrator or Office 365 Global Administrator. For more information about roles, see [Administrator roles related to Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
+The Microsoft 365 admin center provides important tools for Power BI admins. The tools include current and historical information about service health. To access service health info, you must be in one of the following roles:
 
+* Power BI Service Administrator
 
-1. Sign in to the [Office 365 admin center](https://portal.office.com/adminportal).
+* Office 365 Global Administrator
 
-2. Select the **Service health** tile.
+For more info about roles, see [Administrator roles related to Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 
-    ![Service health tile](media/service-admin-health/service-health-tile.png)
+1. Sign in to the [Microsoft 365 admin center](https://portal.office.com/adminportal).
 
-3. In the current list select **N advisories** or **N incidents**, and review the results. In the graphic below, you see one of three active advisories.
+1. From the left navigation bar, select **Show all** > **Health** > **Service health**. The Service health page appears:
 
-    ![Active advisories](media/service-admin-health/active-advisories.png)
+    ![Screenshot of the Microsoft 365 admin center with the Health and Service health options called out.](media/service-admin-health/service-health-tile.png)
 
-4. To see more information, select **Show details** for an item. In the graphic below, you see additional details, including recent status updates.
+1. From the **All services** list, select **Advisories** or **Incidents** and review the results. In the screenshot below, you see one of three active advisories.
 
-    ![Advisory details](media/service-admin-health/advisory-details.png)
+    ![Screenshot of the Service health page with the three advisories for Power BI and Show details option called out.](media/service-admin-health/active-advisories.png)
+
+1. To see more information, select **Show details** for an item. In the screenshot below, you see additional details, including recent status updates.
+
+    ![Screenshot of Advisory details.](media/service-admin-health/advisory-details.png)
 
     Scroll down to see more info, then close the pane when you're finished.
 
-5. To see historical information across all services, in the upper right of the main list select **View history**. Then select **Last 7 days** or **Last 30 days**. To return to current service health, select **View current status**.
+1. To see historical information across all services, in the upper-right corner of the **Service health** page, select **View history**. Then select **Last 7 days** or **Last 30 days**. 
+
+1. To return to current service health, select **View current status**.

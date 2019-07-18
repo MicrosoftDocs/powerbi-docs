@@ -4,7 +4,7 @@ To manage the z-order of elements in a report, select an element, and use the **
 
 ![](media/3-11f-arrange-visual-zorder/3-11f_1.png)
 
-By using the options in the **Arrange** button menu, you can get the ordering of elements on you report just the way you want it. You can move a visual one layer forward or backward, or send it all the way to the front of the back of the order.
+By using the options in the **Arrange** button menu, you can get the ordering of elements on your report just the way you want it. You can move a visual one layer forward or backward, or send it all the way to the front of the back of the order.
 
 Using the Arrange button is particularly useful when using shapes as decorative backgrounds or borders, or to highlight particular sections of an individual chart or graph. You can also use them to create a background, such as the following light-blue rectangle being used for a report title background.
 
