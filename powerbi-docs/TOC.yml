@@ -1291,8 +1291,6 @@
       href: service-gateway-onprem-indepth.md
     - name: "On-premises data gateway (personal mode)"
       href: service-gateway-personal-mode.md
-    - name: "Manage users and admins"
-      href: service-gateway-manage-admins.md
     - name: "Manage data sources"
       items:
       - name: "Manage data sources"
