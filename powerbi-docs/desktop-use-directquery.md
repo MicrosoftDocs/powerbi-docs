@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 07/18/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -48,10 +48,8 @@ There are currently a few limitations to using **DirectQuery**:
 * If the **Query Editor** query is overly complex, an error will occur. To remedy the error you must either delete the problematic step in **Query Editor**, or *Import* the data instead of using **DirectQuery**. For multi-dimensional sources like SAP Business Warehouse, there is no **Query Editor**
 * Relationship filtering is limited to a single direction, rather than both directions (though it is possible to enable cross filtering in both directions for **DirectQuery** as a Preview feature). For multi-dimensional sources like SAP Business Warehouse, there are no relationships defined in the model
 * Time intelligence capabilities are not available in **DirectQuery**. For example, special treatment of date columns (year, quarter, month, day, so on) is not supported in **DirectQuery** mode.
-* By default, limitations are placed on DAX expressions allowed in measures; see the following paragraph (after this bulleted list) for more information
+* Limitations are placed on DAX expressions allowed in measures to ensure that queries sent to the underlying data source have acceptable performance.
 * There is a one-million-row limit for returning data when using **DirectQuery**. The limit does not affect aggregations or calculations used to create the dataset returned using **DirectQuery**, only the rows returned. For example, you can aggregate 10 million rows with your query that runs on the data source, and accurately return the results of that aggregation to Power BI using **DirectQuery** as long as the data returned to Power BI is less than 1 million rows. If more than 1 million rows would be returned from **DirectQuery**, Power BI returns an error.
-
-To ensure that queries sent to the underlying data source have acceptable performance, limitations are imposed on measures by default. Advanced users can choose to bypass this limitation by selecting **File > Options and settings > Options** and then **DirectQuery**, then selecting the option *Allow unrestricted measures in DirectQuery mode*. When that option is selected, any DAX expression that is valid for a measure can be used. Users must be aware, however, that some expressions that perform very well when the data is imported may result in very slow queries to the backend source when in DirectQuery mode.
 
 ## Important considerations when using DirectQuery
 The following three points should be taken into consideration when using **DirectQuery**:

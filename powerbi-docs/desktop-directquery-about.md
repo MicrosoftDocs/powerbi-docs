@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/13/2019
+ms.date: 07/18/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -244,7 +244,7 @@ When defining the model, consider doing the following:
   
   The reason for doing this is simply to avoid a performance issue that can occur otherwise if a visual includes the primary key column.
 * **Examine all uses of calculated columns and data type changes.** Use of these capabilities are not necessarily harmful, they result in the queries sent to the underlying source containing expressions rather than simple references to columns, that again might result in indexes not being used.  
-* **Avoid use of the (preview) bi-directional cross filtering on relationships.**
+* **Avoid use of the bi-directional cross filtering on relationships.** Use of bi-directional cross filtering can lead to query statements that don't perform well.
 * **Experiment with setting *Assume referential integrity*.** The *Assume Referential Integrity* setting on relationships enables queries to use INNER JOIN statements rather than OUTER JOIN. This generally improves query performance, though it does depend on the specifics of the data source.
 * **Do not use the relative data filtering in Query Editor.** It's possible to define relative date filtering in Query Editor. For example, to filter to the rows where the date is in the last 14 days.
   
