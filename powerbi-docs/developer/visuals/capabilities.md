@@ -211,4 +211,4 @@ By default, a visual doesn't support Advanced Edit Mode, unless stated otherwise
 A visual can define its sorting behavior via its capabilities.
 By default, a visual doesn't support modifying its sorting order unless stated otherwise in the capabilities.json.
 
-[Learn more about sorting](sorting-options.md)
+[Learn more about sorting](sort-options.md)

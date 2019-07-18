@@ -48,8 +48,9 @@ Our sample aggregates in a class called `TooltipServiceWrapper`.
 ### TooltipServiceWrapper class
 
 The basic idea behind this class is to hold the instance of the `TooltipService`, listen to D3 mouse events over relevant elements, and then make the calls to `show()`, and `hide()` when needed.
-The class holds and manages any relevant state and logic for these events, mostly geared at interfacing with the underlying D3 code. The D3 interfacing and conversion is out of scope for this document. 
-You can find the full sample code at [tooltips for the SampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14)
+The class holds and manages any relevant state and logic for these events, mostly geared at interfacing with the underlying D3 code. The D3 interfacing and conversion is out of scope for this document.
+
+You can find the full sample code in [SampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14)
 
 ### Creating TooltipServiceWrapper
 
@@ -151,7 +152,9 @@ as you can see `addTooltip` will exit with no action if the `tooltipService` is 
 * **this.visualHostTooltipService.show**
 * The call to display the tooltip  
 
-Additional handling can be found in the sample for `mouseout` and `mousemove` events. See [tooltips for the SampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14) for the full code sample.
+Additional handling can be found in the sample for `mouseout` and `mousemove` events.
+
+For more information, see the [SampleBarChart visual reposiroty](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
 
 ### Populating the tooltip content by getTooltipData method
 
@@ -182,7 +185,7 @@ The final step is to call `addTooltip` when the actual data may change. This cal
 
 ## Adding Report Page Tooltips
 
-To add report page tooltips support, most changes will be located in capabilities.json. 
+To add report page tooltips support, most changes will be located in capabilities.json.
 
 A sample schema is
 
@@ -201,6 +204,7 @@ A sample schema is
 ```
 
 Report page tooltips definition can be done on the Format pane.
+
 ![Report page tooltip](media/report-page-tooltip.png)
 
 `supportedTypes` is the tooltips configuration supported by the visual and reflected on the field well. `default` specifies whether the "automatic" tooltips binding via data field is supported. canvas specifies whether the report page tooltips are supported.

@@ -21,9 +21,9 @@ Adding high-contrast support to your visual requires the following:
 1. On init: Detect whether Power BI is in high-contrast mode and if so, get current high-contrast colors.
 2. Every update: Change the way the visual renders to make it easier to see.
 
-[PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6) has implementation of high-contrast support.
+PowerBI-visuals-sampleBarChart visual has implementation of high-contrast support.
 
-The files [src/barChart.ts](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6#diff-433142f7814fee940a0ffc98dc75bfcb) and [capabilities.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6#diff-290828b604cfa62f1cb310f2e90c52fd) contain the main changes.
+For more information, see the [PowerBI-visuals-sampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6)
 
 ## On Init
 
