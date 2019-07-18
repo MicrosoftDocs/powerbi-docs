@@ -34,13 +34,12 @@ Connect to the [Project Web App Template App](https://appsource.microsoft.com/pr
 5. In the **Apps** pane, select the **Microsoft Project Web App** tile. 
    
     ![](media/service-connect-to-project-online/getstarted.png)
-6. In **Get started wtih your new app**, select **Connect data**.
+6. In **Get started with your new app**, select **Connect data**.
    
    ![](media/service-connect-to-project-online/mproject.png)
 7. In the **Project Web App URL** text box, enter the URL for the Project Web Add (PWA) you want to connect to.  Note this may differ from the example if you have a custom domain. In the **PWA Site Language** text box, type the number that corresponds to your PWA site language. Type the single digit '1' for English, '2' for French, '3' for German, '4' for Portuguese (Brazil), '5' for Portuguese (Portugal) and '6' for Spanish. 
    
-    ![](media/service-connect-to-project-
-    /params.png)
+    ![](media/service-connect-to-project-online/params.png)
 8. For Authentication Method, select **oAuth2** \> **Sign In**. When prompted, enter your Project Web App credentials and follow the authentication process.
    
     ![](media/service-connect-to-project-online/creds.png)
