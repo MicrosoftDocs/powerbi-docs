@@ -117,7 +117,7 @@ Here's how to configure the delegation settings:
 
 6. In the new dialog box, select **Users or Computers**.
 
-7. Enter the service account for the SQL Server data source (**PBIEgwTest\SQLService**), and select **OK**.
+7. Enter the service account for the data source, for example, a SQL Server data source may have a service account like  **PBIEgwTest\SQLService**. Once the account has been added, select **OK**.
 
 8. Select the SPN that you created for the database server. In our example, the SPN begins with **MSSQLSvc**. If you added both the FQDN and the NetBIOS SPN for your database service, select both. You might only see one.
 
@@ -127,7 +127,7 @@ Here's how to configure the delegation settings:
 
     ![Screenshot of Gateway Connector Properties dialog box](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
-Finally, on the machine running the gateway service (**PBIEgwTestGW** in our example), you must grant the gateway service account the local policy **Impersonate a client after authentication**. You can perform and verify this with the Local Group Policy Editor (**gpedit**).
+Finally, on the machine running the gateway service (**PBIEgwTestGW** in our example), you must grant the gateway service account the local policy **Impersonate a client after authentication** and **Act as part of the operating system (SeTcbPrivilege)**. You can perform and verify this configuration with the Local Group Policy Editor (**gpedit**).
 
 1. On the gateway machine, run: *gpedit.msc*.
 
@@ -171,20 +171,20 @@ Now that you understand how Kerberos works with a gateway, you can configure SSO
 
 This guide attempts to be as comprehensive as possible. If you've already completed some of these steps, you can skip them. For example, you might have already created a service user for your SAP BW server and mapped an SPN to it, or you might have already installed the `gsskrb5` library.
 
-### Set up gsskrb5 on client machines and the SAP BW server
+### Set up gsskrb5/gx64krb5 on client machines and the SAP BW server
 
 > [!NOTE]
-> `gsskrb5` is no longer actively supported by SAP. For more information, see [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Also note that `gsskrb5` doesn't allow for SSO connections from the data gateway to SAP BW Message Servers. Only connections to SAP BW Application Servers are possible.
+> `gsskrb5/gx64krb5` is no longer actively supported by SAP. For more information, see [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Also note that `gsskrb5/gx64krb5` doesn't allow for SSO connections from the data gateway to SAP BW Message Servers. Only connections to SAP BW Application Servers are possible. It is now possible to use sapcrypto/CommonCryptoLib as the SNC Library which simplies the setup process. 
 
-`gsskrb5` must be in use by both the client and server to complete an SSO connection through the gateway. The Common Crypto Library (sapcrypto) isn't currently supported.
+`gsskrb5` must be in use by both the client and server to complete an SSO connection through the gateway.
 
-1. Download `gsskrb5` - `gx64krb5` from [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-user required). Ensure you have at least version 1.0.11.x of gsskrb5.dll and gx64krb5.dll.
+1. Download `gsskrb5` or `gx64krb5` depending on your desired bitness from [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-user required). Ensure you have at least version 1.0.11.x.
 
 1. Put the library in a location on your gateway machine that is accessible by your gateway instance (and also by the SAP GUI if you want to test the SSO connection by using SAP Logon).
 
 1. Put another copy on your SAP BW server machine in a location accessible by the SAP BW server.
 
-1. On the client and server machines, set the `SNC\_LIB` and `SNC\_LIB\_64` environment variables to point to the locations of gsskrb5.dll and gx64krb5.dll, respectively.
+1. On the client and server machines, set the `SNC_LIB` or `SNC_LIB_64` environment variables to point to the location of gsskrb5.dll or gx64krb5.dll, respectively. Note that you only need one of these libraries, not both.
 
 ### Create a SAP BW service user and enable SNC communication
 
@@ -337,13 +337,13 @@ If you don't have Azure AD Connect configured, follow these steps for every Powe
 
 Add the SAP BW data source to your gateway by following the instructions earlier in this article on [running a report](#run-a-power-bi-report).
 
-1. In the data source configuration window, enter the Application Server's **Hostname**, **System Number**, and **client ID**, as you would to sign in to your SAP BW server from Power BI Desktop. For the **Authentication Method**, select **Windows**.
+1. In the data source configuration window, enter the Application Server's **Hostname**, **System Number**, and **client ID**, as you would to sign in to your SAP BW server from Power BI Desktop.
 
 1. In the **SNC Partner Name** field, enter p: \<the SPN you mapped to your SAP BW service user\>. For example, if the SPN is SAP/BWServiceUser@MYDOMAIN.COM, you should enter p:SAP/BWServiceUser@MYDOMAIN.COM in the **SNC Partner Name** field.
 
-1. For the SNC Library, select **SNC\_LIB** or **SNC\_LIB\_64**.
+1. For the SNC Library, select **SNC_LIB** or **SNC_LIB_64**. Use **SNC_LIB** for 32-bit scenarios and **SNC_LIB_64** for 64 bit scenarios. Make sure that these environment variables point to gsskrb5.dll or gx64krb5.dll, respectively, depending on your bitness.
 
-1. The **Username** and **Password** should be the username and password of an Active Directory user with permission to sign in to the SAP BW server with SSO. In other words, these should belong to an Active Directory user who has been mapped to a SAP BW user through the SU01 transaction. These credentials are only used if the **Use SSO via Kerberos for DirectQuery queries** box is not checked.
+1. If you have selected **Windows** for **Authentication Method**, the **Username** and **Password** should be the username and password of an Active Directory user with permission to sign in to the SAP BW server with SSO. In other words, these should belong to an Active Directory user who has been mapped to a SAP BW user through the SU01 transaction. If you have selected **Basic**, the **Username** and **Password** should be set to a SAP BW user's name and password, respectively. These credentials are only used if the **Use SSO via Kerberos for DirectQuery queries** box is not checked.
 
 1. Select the **Use SSO via Kerberos for DirectQuery queries** box, and select **Apply**. If the test connection is not successful, verify that the previous setup and configuration steps were completed correctly.
 
