@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Model your data
@@ -79,33 +79,31 @@ Let’s create a simple formula. This task will help you further understand form
 ### Task: Create a measure formula
 To complete this task, you’ll need to open the Contoso Sales Sample Power BI Desktop file.
     
-1.  In Report view, in the field list, right-click on the **Sales** table, and then click **New Measure**.
+1. In Report view, in the field list, right-click on the **Sales** table, and then click **New Measure**.
     
-2.  In the formula bar, replace **Measure** by typing a new measure name, **Previous Quarter Sales**.
+2. In the formula bar, replace **Measure** by typing a new measure name, **Previous Quarter Sales**.
     
-3.  After the equals sign, type **SUM** followed by an opening parenthesis.
-    
-    Rather than type a column name to sum up right away, we’re going to enter another function, to *filter* the data we want to sum up.
-    
-4.  Between the parentheses, type **CALCULATE**, followed by an opening parenthesis.
-    
-    You’ll use the CALCULATE function to filter the amounts we want to sum by an argument we pass to the CALCULATE function. This is what’s referred to as nesting functions. The CALCULATE function has at least two arguments. The first is the expression to be evaluated, and the second is a filter.
+3. After the equals sign, type the first few letters **CAL**, and then double-click the function you want to use. In this formula, you want to use the **CALCULATE** function.
+
+   You’ll use the CALCULATE function to filter the amounts we want to sum by an argument we pass to the CALCULATE function. This is what’s referred to as nesting functions. The CALCULATE function has at least two arguments. The first is the expression to be evaluated, and the second is a filter.
    
-5.  Between the parenthesis **()** for the **CALCULATE** function, type **Sales[SalesAmount]**. This is the first expression argument for our CALCULATE function.
+4. After the opening parenthesis **(** for the **CALCULATE** function, type **SUM** followed by another opening parenthesis **(**. Now we need to pass an argument to the SUM function.
+
+5. Begin typing **Sal**, and then select **Sales[SalesAmount]**, followed by a closing parenthesis **)**. This is the first expression argument for our CALCULATE function.
     
-6.  Type a comma (**,**) to specify the first filter, then type **PREVIOUSQUARTER** followed by an opening parenthesis.
+6. Type a comma (**,**) followed by a space to specify the first filter, and then type **PREVIOUSQUARTER**. This will be our filter.
     
-    You’ll use the PREVIOUSQUARTER time intelligence function to filter our SUM results by the previous quarter.
+   You’ll use the PREVIOUSQUARTER time intelligence function to filter SUM results by the previous quarter.
     
-7.  Between the parenthesis **()** for the PREVIOUSQUARTER function, type **Calendar[DateKey]**.
+7. After the opening parenthesis **(** for the PREVIOUSQUARTER function, type **Calendar[DateKey]**.
     
-    The PREVIOUSQUARTER function has one argument, a column containing a contiguous range of dates.
+   The PREVIOUSQUARTER function has one argument, a column containing a contiguous range of dates. In our case, that's the DateKey column in the Calendar table.
     
-8.  Make sure both the arguments being passed to the PREVIOUSQUARTER function and the CALCULATE function are closed by two closing parentheses **))**.
+8. Make sure both the arguments being passed to the PREVIOUSQUARTER function and the CALCULATE function are closed by typing two closing parenthesis **))**.
     
    Your formula should now look like this:
     
-    **Previous Quarter Sales = CALCULATE(SUM(Sales[SalesAmount]), PREVIOUSQUARTER(Calendar[DateKey]))**
+   **Previous Quarter Sales = CALCULATE(SUM(Sales[SalesAmount]), PREVIOUSQUARTER(Calendar[DateKey]))**
     
 9. Click the checkmark ![](media/desktop-quickstart-learn-dax-basics/qsdax_syntax_taskcheckmark.png) in the formula bar or press Enter to validate the formula and add it to the model.
 
@@ -140,7 +138,7 @@ DAX includes the following categories of functions: [Date and Time](https://msdn
 * DAX includes a variety of time intelligence functions. These functions let you define or select date ranges, and perform dynamic calculations based on them. For example, you can compare sums across parallel periods.
 * Excel has a very popular function, VLOOKUP. DAX functions don’t take a cell or cell range as a reference like VLOOKUP does in Excel. DAX functions take a column or a table as a reference. Keep in mind, in Power BI Desktop, you’re working with a relational data model. Looking up values in another table is really quite easy, and in most cases you don’t need to create any formula at all.
   
-  As you can see, functions in DAX can help you create very powerful formulas. We really only touched on the basics of functions. As your DAX skills grow, you'll create formulas using many different functions. One of the best places to learn details about each of the DAX functions is in the [DAX Function Reference](https://msdn.microsoft.com/library/ee634396.aspx).
+  As you can see, functions in DAX can help you create very powerful formulas. We really only touched on the basics of functions. As your DAX skills grow, you'll create formulas using many different functions. One of the best places to learn details about each of the DAX functions is in the [DAX Function Reference](https://msdn.microsoft.com/query-bi/dax/data-analysis-expressions-dax-reference).
 
 ### Functions QuickQuiz
 1. What does a function always reference?

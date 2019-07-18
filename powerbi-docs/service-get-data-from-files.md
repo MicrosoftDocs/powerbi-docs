@@ -1,19 +1,20 @@
 ---
-title: Get data from files
+title: Get data from files for Power BI
 description: Learn how to get data from Excel, Power BI Desktop, and CSV files into Power BI
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
+ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
 ---
-# Get data from files
+# Get data from files for Power BI
 ![](media/service-get-data-from-files/file_icons.png)
 
 In Power BI, you can connect to or import data and reports from three types of files.

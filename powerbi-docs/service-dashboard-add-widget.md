@@ -1,16 +1,16 @@
 ---
 title: Add image, text, video, streaming data to your dashboard
 description: Documentation on how to use the Add tile widget to add an image, video, text box, web code, and streaming data tile to a dashboard.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: e2PD8m1Q0vU
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
-ms.author: mihart
+ms.author: maggies
 
 LocalizationGroup: Dashboards
 ---
@@ -97,12 +97,12 @@ Paste or type in any HTML content.  Power BI adds it, as a tile, to your dashboa
 ## Tips for embedding web content
 * For iframes, use a secure source. If you enter your iframe embed code and get a blank tile, check to see if you're using **http** for the iframe source.  If so, change it to **https**.
   
-  ```
+  ```html
   <iframe src="https://xyz.com">
   ```
 * Edit width and height information. This embed code embeds a video and sets the video player to 560 x 315 pixels.  This size will not change as you resize the tile.
   
-  ```
+  ```html
   <iframe width="560" height="315"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
@@ -110,14 +110,14 @@ Paste or type in any HTML content.  Power BI adds it, as a tile, to your dashboa
   
   If you'd like the player to resize to fit the tile size, set width and height to 100%.
   
-  ```
+  ```html
   <iframe width="100%" height="100%"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
   ```
-* This code embeds a tweet and retains, as separate links on the dashboard, links for the **AFK** podcast, **@GuyInACube's Twitter page**, **Follow**, **#analytics**, **reply**, **retweet**, and **like**.  Selecting the tile itself takes you to the podcast on Twitter.
+* This code embeds a tweet and retains, as separate links on the dashboard, links for the **AFK** podcast, **\@GuyInACube's Twitter page**, **Follow**, **#analytics**, **reply**, **retweet**, and **like**.  Selecting the tile itself takes you to the podcast on Twitter.
   
-  ```
+  ```html
   <blockquote class="twitter-tweet" data-partner="tweetdeck">
   <p lang="en" dir="ltr">Listen to
   <a href="https://twitter.com/GuyInACube">@GuyInACube</a> talk to
@@ -145,7 +145,7 @@ To make changes to a tile...
 * If you'd like to embed some content from a website, but the website doesn't give you embed code to copy and paste, check out embed.ly for help generating the embed code.
 
 ## Next steps
-[Dashboard tiles](service-dashboard-tiles.md)
+[Dashboard tiles](consumer/end-user-tiles.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/).
 

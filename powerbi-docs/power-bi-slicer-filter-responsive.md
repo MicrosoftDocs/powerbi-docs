@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/04/2018
 ms.author: maggies
@@ -76,5 +76,5 @@ You can follow the same steps to make a time or range slicer responsive. After y
 
 ## Next steps
 
-- [Slicers in the Power BI service](power-bi-visualization-slicers.md)
+- [Slicers in the Power BI service](visuals/power-bi-visualization-slicers.md)
 - More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

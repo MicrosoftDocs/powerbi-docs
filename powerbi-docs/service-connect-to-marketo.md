@@ -6,7 +6,7 @@ manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
@@ -44,10 +44,10 @@ Connect to the [Marketo content pack](https://app.powerbi.com/getdata/services/m
 
 **What now?**
 
-* Try [asking a question in the Q&A box](power-bi-q-and-a.md) at the top of the dashboard
+* Try [asking a question in the Q&A box](consumer/end-user-q-and-a.md) at the top of the dashboard
 * [Change the tiles](service-dashboard-edit-tile.md) in the dashboard.
-* [Select a tile](service-dashboard-tiles.md) to open the underlying report.
-* While your dataset will be schedule to refreshed daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
+* [Select a tile](consumer/end-user-tiles.md) to open the underlying report.
+* While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## What's included
 The following data is available from Marketo in Power BI where the activity occurred between today and one year ago:
@@ -55,7 +55,7 @@ The following data is available from Marketo in Power BI where the activity occu
 | Table name | Description |
 | --- | --- |
 | EmailActivities |Data about email sent to leads/contacts, with details about devices, categories, bounced count and percentage, clicked count and percentage, opened count and percentage, and program name. The Email Activities as shown in Power BI is an absolute email deliverability report, it does not apply any additional logic to the data. You might see some different results between the Marketo client and Power BI because of this. |
-| ProgramActivites |Data on programs that have had a change a Status. This includes details such as: Reason, Success, Program acquisition count and percentage, and Program success count and percentage. |
+| ProgramActivities |Data on programs that have had a change a Status. This includes details such as: Reason, Success, Program acquisition count and percentage, and Program success count and percentage. |
 | WebPageActivities |Data from user web page visits, including search agent, User agent, web page and hour of day. |
 | Datetable |Dates from today and the past year.  Allows you to analyze your Marketo data by date. |
 | Leads |Lead information like company, revenue size, number of employees,   country, industry, Lead score and Lead status. The leads are retrieved based on their presence in the email, program, and webpage activities data. |
@@ -82,7 +82,7 @@ The amount of API calls Power BI makes to Marketo depends on the amount of data 
 | **Total API Calls** | |**2,200** |
 
 ## Next steps
-[Get started with Power BI](service-get-started.md)
+[What is Power BI?](power-bi-overview.md)
 
 [Get Data for Power BI](service-get-data.md)
 

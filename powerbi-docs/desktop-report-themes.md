@@ -1,64 +1,89 @@
 ---
-title: Use Report Themes in Power BI Desktop (Preview)
+title: Use Report Themes in Power BI Desktop
 description: Learn how to use a custom color palette, and apply it to an entire report in Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/02/2018
+ms.date: 04/15/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Use Report Themes in Power BI Desktop (Preview)
-With **Report Themes** you can apply a color theme to your entire report, such as corporate colors, seasonal coloring, or any other color theme you might want to apply. When you apply a **Report Theme**, all visuals in your report use the colors from your selected theme (a few exceptions apply, described later in this article).
+# Use Report Themes in Power BI Desktop
+With **Report Themes** you can apply a color theme to your entire report, such as corporate colors, seasonal coloring, or other color themes. When you apply a **Report Theme**, all visuals in your report use the colors from your selected theme. A few exceptions apply, and they're described later in this article.
 
-![](media/desktop-report-themes/report-themes_1.png)
+![Report themes](media/desktop-report-themes/report-themes_1.png)
 
-Applying a **Report Theme** requires a JSON file, using a basic structure, which you can then import into Power BI Desktop and apply to your report. The JSON file structure, and the process of importing (it's just a few button clicks) are quick and easy.
+When you apply a **Report Theme**, you need a JSON file that uses a basic structure. You can then import this JSON file into Power BI Desktop and apply it to your report. The JSON file structure, and the process of importing it, are quick and easy (just a few button clicks).
 
-Beginning with the September 2017 release of **Power BI Desktop**, you can define even more report theme elements using a JSON file, and customize (and standardize) nearly all elements using the JSON file that you can manually adjust in the **Formatting** pane. The goal with the September 2017 release (and later) is to enable full control over how your reports look and feel, to a granular level.
-
-### Enable Report Themes in Preview
-You can try the new **Report Themes** feature beginning with the **March 2017** release of **Power BI Desktop**. To enable this preview feature, select **File > Options and Settings > Options > Preview Features**, then select the checkbox beside **Custom Report Themes**. You'll need to restart **Power BI Desktop** after you make the selection.
-
-![](media/desktop-report-themes/report-themes_2.png)
+You can also customize and standardize nearly all elements. To customize, you use the JSON file, which you manually adjust in the **Formatting** pane. The goal is to give you full control over how your reports look and feel, to a granular level.
 
 ## How Report Themes work
-To apply a Report Theme to a Power BI Desktop report, select **Switch Theme** button from the **Home** ribbon, then select **Import Theme** from the drop-down.
+To apply a Report Theme to a Power BI Desktop report, select from among the available built-in report themes or import a custom theme.
 
-![](media/desktop-report-themes/report-themes_3.png)
+| Built-In report theme	| Default color sequence 	|
+|------	|----------	|
+| Default 	| ![#01B8AA](https://placehold.it/20/01B8AA/000000?text=+) ![#374649](https://placehold.it/20/374649/000000?text=+) ![#FD625E](https://placehold.it/20/FD625E/000000?text=+) ![#F2C80F](https://placehold.it/20/F2C80F/000000?text=+) ![#5F6B6D](https://placehold.it/20/5F6B6D/000000?text=+) ![#8AD4EB](https://placehold.it/20/8AD4EB/000000?text=+) ![#FE9666](https://placehold.it/20/FE9666/000000?text=+) ![#A66999](https://placehold.it/20/A66999/000000?text=+)|
+| City park 	| ![#73B761](https://placehold.it/20/73B761/000000?text=+) ![#4A588A](https://placehold.it/20/4A588A/000000?text=+) ![#ECC846](https://placehold.it/20/ECC846/000000?text=+) ![#CD4C46](https://placehold.it/20/CD4C46/000000?text=+) ![#71AFE2](https://placehold.it/20/71AFE2/000000?text=+) ![#8D6FD1](https://placehold.it/20/8D6FD1/000000?text=+) ![#EE9E64](https://placehold.it/20/EE9E64/000000?text=+) ![#95DABB](https://placehold.it/20/95DABB/000000?text=+)|
+| Classroom 	| ![#4A8DDC](https://placehold.it/20/4A8DDC/000000?text=+) ![#4C5D8A](https://placehold.it/20/4C5D8A/000000?text=+) ![#F3C911](https://placehold.it/20/F3C911/000000?text=+) ![#DC5B57](https://placehold.it/20/DC5B57/000000?text=+) ![#33AE81](https://placehold.it/20/33AE81/000000?text=+) ![#95C8F0](https://placehold.it/20/95C8F0/000000?text=+) ![#DD915F](https://placehold.it/20/DD915F/000000?text=+) ![#9A64A0](https://placehold.it/20/9A64A0/000000?text=+)|
+| Colorblind safe 	| ![#074650](https://placehold.it/20/074650/000000?text=+) ![#009292](https://placehold.it/20/009292/000000?text=+) ![#FE6DB6](https://placehold.it/20/FE6DB6/000000?text=+) ![#FEB5DA](https://placehold.it/20/FEB5DA/000000?text=+) ![#480091](https://placehold.it/20/480091/000000?text=+) ![#B66DFF](https://placehold.it/20/B66DFF/000000?text=+) ![#B5DAFE](https://placehold.it/20/B5DAFE/000000?text=+) ![#6DB6FF](https://placehold.it/20/6DB6FF/000000?text=+)|
+| Electric 	| ![#118DFF](https://placehold.it/20/118DFF/000000?text=+) ![#750985](https://placehold.it/20/750985/000000?text=+) ![#C83D95](https://placehold.it/20/C83D95/000000?text=+) ![#FF985E](https://placehold.it/20/FF985E/000000?text=+) ![#1DD5EE](https://placehold.it/20/1DD5EE/000000?text=+) ![#42F7C0](https://placehold.it/20/42F7C0/000000?text=+) ![#3049AD](https://placehold.it/20/3049AD/000000?text=+) ![#F64F5C](https://placehold.it/20/F64F5C/000000?text=+)|
+| High contrast 	| ![#107C10](https://placehold.it/20/107C10/000000?text=+) ![#002050](https://placehold.it/20/002050/000000?text=+) ![#A80000](https://placehold.it/20/A80000/000000?text=+) ![#5C2D91](https://placehold.it/20/5C2D91/000000?text=+) ![#004B50](https://placehold.it/20/004B50/000000?text=+) ![#0078D7](https://placehold.it/20/0078D7/000000?text=+) ![#D83B01](https://placehold.it/20/D83B01/000000?text=+) ![#B4009E](https://placehold.it/20/B4009E/000000?text=+)|
+| Sunset 	| ![#B6B0FF](https://placehold.it/20/B6B0FF/000000?text=+) ![#3049AD](https://placehold.it/20/3049AD/000000?text=+) ![#FF994E](https://placehold.it/20/FF994E/000000?text=+) ![#C83D95](https://placehold.it/20/C83D95/000000?text=+) ![#FFBBED](https://placehold.it/20/FFBBED/000000?text=+) ![#42F9F9](https://placehold.it/20/42F9F9/000000?text=+) ![#00B2D9](https://placehold.it/20/00B2D9/000000?text=+) ![#FFD86C](https://placehold.it/20/FFD86C/000000?text=+)|
+| Twilight 	| ![#F17925](https://placehold.it/20/F17925/000000?text=+) ![#004753](https://placehold.it/20/004753/000000?text=+) ![#CCAA14](https://placehold.it/20/CCAA14/000000?text=+) ![#4B4C4E](https://placehold.it/20/4B4C4E/000000?text=+) ![#D82C20](https://placehold.it/20/D82C20/000000?text=+) ![#A3D0D4](https://placehold.it/20/A3D0D4/000000?text=+) ![#536F18](https://placehold.it/20/536F18/000000?text=+) ![#46ABB0](https://placehold.it/20/46ABB0/000000?text=+)|
 
-A window appears that lets you navigate to the location of the JSON theme file. Power BI Desktop looks for .JSON files, which is the Power BI Report Theme File type. In the following image, a handful of holiday theme files are available. We'll choose a holiday theme that happens in March.
+To select from available built-in report themes, select **Switch Theme** button from the **Home** ribbon, then select one of the included themes from the drop-down menu.
 
-![](media/desktop-report-themes/report-themes_4.png)
+![Select a report theme](media/desktop-report-themes/report-themes_2a.png)
 
-When the theme file is successfully loaded, Power BI Desktop lets you know.
+Your report theme is applied to the report, and you're ready to go.
 
-![](media/desktop-report-themes/report-themes_5.png)
+### Importing Report Themes
+
+To import a custom Report Theme, select the **Switch Theme** button from the **Home** ribbon. Then select **Import Theme** from the drop-down menu.
+
+![Import theme](media/desktop-report-themes/report-themes_3.png)
+
+A window appears that lets you browse to the location of the JSON theme file. Power BI Desktop looks for JSON files because JSON is the Power BI Report Theme file type. In the following image, a handful of holiday theme files are available. We'll choose a holiday theme for March.
+
+![Holiday theme](media/desktop-report-themes/report-themes_4.png)
+
+When the theme file has loaded successfully, Power BI Desktop lets you know.
+
+![Theme imported successfully](media/desktop-report-themes/report-themes_5.png)
 
 Now that we've imported a theme file, let's take a look at the simple and straightforward JSON file structure.
 
 ## Structure of a Report Theme JSON file
-The basic JSON file selected in the previous section (the *St Patricks Day.json* file), when opened in an editor, looks like the following.
+ When opened in an editor, the basic JSON file that we selected in the previous section (the *St Patrick's Day.json* file), looks like the following screenshot:
 
-![](media/desktop-report-themes/report-themes_6.png)
+![St. Patrick's day JSON file](media/desktop-report-themes/report-themes_6.png)
 
 That JSON file has the following required lines:
 
-* **name** - this is the theme name, which is the only required field
-* **dataColors** - A list of hexcode color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as desired
-* **background**, **foreground**, and **tableAccent** - These values are colors that should be applied in various types of visuals. The **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. The **background** applies to button fill, and combo chart label background. How these colors are used depends on the specific visual style applied. The **table** and **matrix** visuals apply these styles by default.
+* **name**: The theme name, which is the only required field.
 
-To apply a style to a **table** or **matrix** visual, select the visual and in the **Visualizations** pane select the **Format** section, then expand **Matrix style** and select a style from the **Style** drop-down.
+* **dataColors**: The list of hex code color codes to use for data in Power BI Desktop visuals. The list can have as many or as few colors as you want.
 
-![](media/desktop-report-themes/report-themes_7.png)
+* **background**, **foreground**, and **tableAccent**: The colors that should be applied in various types of visuals. 
+  - **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. 
+  - **background** applies to button fill and combo chart label background. How these colors are used depends on the specific visual style that's applied. 
+  - **table** and **matrix** visuals apply these styles by default.
 
-For easy cut-and-paste to create your own JSON file, here's the text of the *St Patricks Day.json* file:
+To apply a style to a **table** or **matrix** visual, take the following steps: 
+1. Select the visual. 
+2. Then, in the **Visualizations** pane, select the **Format** section.
+3. Expand **Matrix style**, and then select a style from the **Style** drop-down.
 
+![Style drop-down](media/desktop-report-themes/report-themes_7.png)
+
+Following is the text of the *St Patrick's Day.json* file that you can use to create your own JSON file:
+
+```json
     {
         "name": "St Patricks Day",
         "dataColors": ["#568410", "#3A6108", "#70A322", "#915203", "#D79A12", "#bb7711", "#114400", "#aacc66"],
@@ -66,56 +91,58 @@ For easy cut-and-paste to create your own JSON file, here's the text of the *St 
         "foreground": "#3A6108",
         "tableAccent": "#568410"
     }
+```
 
-From there, you can enter your own color hexcode for your selected colors.
+From there, you can enter your own color hex code for your selected colors.
 
-Beginning with the September 2017 release of **Power BI Desktop**, the JSON file can be much more elaborate. In the JSON file, you only define the formatting that you want to affect, and anything *not* specified in your JSON file simply reverts to the Power BI default settings.
+In the JSON file, you define only the formatting that you want to adjust, and anything that's *not* specified in your JSON file simply reverts to the Power BI default settings.
 
-The advantages of creating a JSON file are many. For example, you can specify that all charts use a font size of 12, or that certain visuals use a particular font family, or turn off data labels for specific chart types.
+The advantages of creating a JSON file are many. For example, you can specify that all charts use a font size of 12, or that certain visuals use a particular font family. Or you can turn off data labels for specific chart types.
 
-With the ability to use a granular JSON file, you can create a theme file that standardizes your charts and reports, making it easy for your organization reports to be consistent.
+When you use a granular JSON file, you can create a theme file that standardizes your charts and reports, making it easy for your organization's reports to be consistent.
 
-For information about the format of the detailed JSON file, see the **Report theme JSON file format** section at the end of this article.
+For information about the format of the detailed JSON file, see the **Report theme JSON file format** section later in this article.
 
 ## How Report Theme colors stick to your reports
 When you publish your report to the **Power BI service**, your Report Theme colors stay with it.
 
-In addition, the **Data colors** section of the **Format** panel reflect your Report Theme. For example, after applying the multitude of green and brown colors from the **St. Patrick's Day** theme, when we select a visual and go to **Format > Data colors**, we see the following.
+The **Data colors** section of the **Format** panel reflects your Report Theme. For example, after we apply the multitude of green and brown colors from the **St. Patrick's Day** theme, we select a visual. Then we go to **Format > Data colors** and see the following information:
 
-![](media/desktop-report-themes/report-themes_8.png)
+![Visualizations](media/desktop-report-themes/report-themes_8.png)
 
-See all that green? That's because those colors were part of the **Report Theme** we imported and applied.
+See all that green? That's because those colors were part of the **Report Theme** that we imported and applied.
 
 ### Situations when Report Theme colors won't stick to your reports
-If you apply a custom color set (or individual color) to a particular data point in a visual, applying a Report Theme will *not* override that customized data point color.
+Let's say you apply a custom color set (or individual color) to a particular data point in a visual. When you apply a Report Theme, it will *not* override that customized data point color.
 
-In addition, if you've manually set a data point's color using the Theme colors section of the color palette, that color (or colors) will *not* be updated when you apply a new Report Theme. To get your default colors back (so they'll update when you apply a new Report Theme), you can select **Revert to default** in the **Theme colors** palette.
+Maybe you also want to manually set the color of a data point color by using the Theme colors section. The colors will *not* be updated when you apply a new Report Theme. If you want to get your default colors back, so they'll update when you apply a new Report Theme, select **Revert to default** in the **Theme colors** palette.
 
-![](media/desktop-report-themes/report-themes_9.png)
+![Revert to default](media/desktop-report-themes/report-themes_9.png)
 
-Also, many **Custom Visuals** will not apply Report Themes.
+Also, many **Custom Visuals** won't apply to Report Themes.
 
 ## Report Theme files you can use right now
-Want to get started with **Report Themes**? Great! Here are a handful of ready-made Report Theme JSON files that you can download and import into your **Power BI Desktop** report, along with an image of that Report Theme applied to the report used in this article.
+Want to get started with **Report Themes**? Here are a few ready-made Report Theme JSON files that you can download and import into your **Power BI Desktop** report. We've also included an image of the Report Theme that's applied to the report in this article.
 
 * The [theme](https://go.microsoft.com/fwlink/?linkid=843924) used in the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/) that announced the first release of **Report Themes**, called [*waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
 
-![](media/desktop-report-themes/report-themes_10.png)
+  ![The waverform.json theme](media/desktop-report-themes/report-themes_10.png)
 
-* The [theme that's more visually impaired friendly](https://go.microsoft.com/fwlink/?linkid=843923) than the default color theme, called [*ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
+* The [theme that's easier to read for the visually impaired](https://go.microsoft.com/fwlink/?linkid=843923) than the default color theme. It's called [*ColorblindSafe-Longer.json*](https://go.microsoft.com/fwlink/?linkid=843923).
 
-![](media/desktop-report-themes/report-themes_11.png)
+  ![The ColorblindSafe-Longer.json theme.](media/desktop-report-themes/report-themes_11.png)
 
-* A whole bunch of [Power View themes](https://go.microsoft.com/fwlink/?linkid=843925) wrapped in a zip file, including one called [*Apothecary.json*](https://go.microsoft.com/fwlink/?linkid=843925) shown below.
+* A group of [Power View themes](https://go.microsoft.com/fwlink/?linkid=843925) wrapped in a zip file, including one called [*Apothecary.json*](https://go.microsoft.com/fwlink/?linkid=843925), which is shown below.
 
-![](media/desktop-report-themes/report-themes_12.png)
+  ![The Apothecary.json theme](media/desktop-report-themes/report-themes_12.png)
 
-* Lastly, here's one that is love-ly (the *Valentine's Day* theme) and sure to get your attention.
+* Lastly, here's the *Valentine's Day* theme.
 
-![](media/desktop-report-themes/report-themes_13.png)
+  ![The Valentine's Day theme](media/desktop-report-themes/report-themes_13.png)
 
-Rather than a download, here's the code for the Valentine's day JSON file:
+Rather than give you a download, we've provided the code for the Valentine's day JSON file:
 
+```json
     {
         "name": "Valentine's Day",
         "dataColors": ["#990011", "#cc1144", "#ee7799", "#eebbcc", "#cc4477", "#cc5555", "#882222", "#A30E33"],
@@ -123,10 +150,11 @@ Rather than a download, here's the code for the Valentine's day JSON file:
         "foreground": "#ee7799",
         "tableAccent": "#990011"
     }
+```
 
-**Report Themes** can make your Power BI Desktop reports a colorful reflection of you, your organization, or even the current season or holiday. Enjoy them, they're easy!
+**Report Themes** can make your Power BI Desktop reports a colorful reflection of you, your organization, or even the current season or holiday. 
 
-Here are a few more report themes you can use as starting points, too:
+Here are a few more report themes you can use as starting points:
 
 * [Sunflower-twilight](https://community.powerbi.com/t5/Themes-Gallery/Sunflower-Twilight/m-p/140749)
 * [Plum](https://community.powerbi.com/t5/Themes-Gallery/Plum/m-p/140711)
@@ -136,11 +164,11 @@ Here are a few more report themes you can use as starting points, too:
 ## Report theme JSON file format
 The basic JSON file has five required lines:
 
-* **name** - this is the theme name, which is the only required field
-* **dataColors** - A list of hexcode color codes to use for data in Power BI Desktop visuals. The list can contain as many or as few colors as desired
-* **background**, **foreground** and **tableAccent** - These values are colors that should be applied in various types of visuals. The **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. The **background** applies to button fill, and combo chart label background. How these colors are used depends on the specific visual style applied. The **table** and **matrix** visuals apply these styles by default.
+* **name**: The theme name, which is the only required field.
+* **dataColors**: The list of hex code color codes to use for data in Power BI Desktop visuals. The list can have as many or as few colors as you want.
+* **background**, **foreground**, and **tableAccent**: The colors that should be applied in various types of visuals. The **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. The **background** applies to button fill and combo chart label background. How these colors are used depends on the specific visual style that's applied. The **table** and **matrix** visuals apply these styles by default.
 
-To create an extended format JSON file, with more detailed and granular control over formatting, you need to add a **visualStyles** section to the JSON file, and nest formatting specifics in that section. The format of the **visualStyles** section looks like the following:
+To create an extended-format JSON file, with more detailed and granular control over formatting, you also need to add a **visualStyles** section to the JSON file. You nest the formatting specifics in the  **visualStyles** section. The  **visualStyles** section looks similar to the following format:
 
     visualStyles: {
         visualName: {
@@ -152,17 +180,17 @@ To create an extended format JSON file, with more detailed and granular control 
         }
     }
 
-For the **visualName** and **cardName** sections, you can list a specific visual and cardName, or you can use an asterisk ("\*") if you want that setting to apply to all visuals or all cards that contain a property for a specific visual. You can use the asterisk ("\*") when you want to apply a setting globally in your report, such as a font size or specific font family that should be used throughout all visuals in your report.
+For the **visualName** and **cardName** sections,   use a specific visual and cardName. Use an asterisk ("\*") if you want that setting to apply to all visuals or cards that have a property for a specific visual. You can also use the asterisk ("\*") when you want to apply a setting globally in your report, such as a font size or specific font family for the visuals.
 
 > [!NOTE]
-> You only need to specify the formatting elements you want to affect. Any formatting elements that are not included in the JSON file simply revert to their default values and settings.
+> You only need to specify the formatting elements you want to adjust. Any formatting elements that are not included in the JSON file simply revert to their default values and settings.
 > 
 > 
 
 ### JSON file element definitions
-The tables in this section define visual names (*visualName*), card names (*cardName*), and the enumerations necessary to create your JSON file.
+The tables in this section define visual names (*visualName*), card names (*cardName*), and the enumerations that are necessary to create your JSON file.
 
-When using *dateTime*, the date must be an ISO date in single quotes, with datetime at the beginning, like the following:
+When you're using *dateTime*, the date must be an ISO date in single quotes, with datetime at the beginning. Following is an example:
 
     “datetime’2011-10-05T14:48:00.000Z’”
 
@@ -202,7 +230,7 @@ Booleans are either *true* or *false*. Strings must be in double quotes, as in "
 | treemap |
 | waterfallChart |
 
-The following table defines *cardName* values. The first value in each cell is the JSON file term, the second value is the name of the card as seen in the **Power BI Desktop** user interface.
+The following table defines *cardName* values. The first value in each cell is the JSON file term. The second value is the name of the card as seen in the **Power BI Desktop** user interface.
 
 | **cardName** |
 | --- |
@@ -259,9 +287,10 @@ The following table defines *cardName* values. The first value in each cell is t
 | zoom: Zoom |
 
 ### Properties within each card
-The following section defines the properties within each card.
+The following section defines the properties within each card:
 
-    "general":
+```json
+      "general":
         "responsive": {
           "type": [
             "bool"
@@ -329,7 +358,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "categoryAxis": {
+      "categoryAxis": {
         "show": {
           "type": [
             "bool"
@@ -515,7 +544,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "valueAxis": {
+      "valueAxis": {
         "show": {
           "type": [
             "bool"
@@ -823,7 +852,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "dataPoint": {
+      "dataPoint": {
         "defaultColor": {
           "type": [
             "fill"
@@ -859,7 +888,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "labels": {
+      "labels": {
         "show": {
           "type": [
             "bool"
@@ -977,7 +1006,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "lineStyles": {
+      "lineStyles": {
         "strokeWidth": {
           "type": [
             "numeric"
@@ -1052,7 +1081,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "plotArea": {
+      "plotArea": {
         "transparency": {
           "type": [
             "numeric"
@@ -1065,7 +1094,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "trend": {
+      "trend": {
         "show": {
           "type": [
             "bool"
@@ -1147,7 +1176,7 @@ The following section defines the properties within each card.
             "Value"
           ],
           "description": [
-            "Set reference line numeric value "
+            "Set reference line numeric value"
           ]
         },
         "lineColor": {
@@ -1255,7 +1284,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "referenceLine": {
+      "referenceLine": {
         "show": {
           "type": [
             "bool"
@@ -1283,7 +1312,7 @@ The following section defines the properties within each card.
             "Value"
           ],
           "description": [
-            "Set reference line numeric value "
+            "Set reference line numeric value"
           ]
         },
         "lineColor": {
@@ -1391,7 +1420,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "line": {
+      "line": {
         "lineColor": {
           "type": [
             "fill"
@@ -1428,7 +1457,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "fill": {
+      "fill": {
         "show": {
           "type": [
             "bool"
@@ -1457,7 +1486,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "rotation": {
+      "rotation": {
         "angle": {
           "type": [
             "numeric"
@@ -1467,7 +1496,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "categoryLabels": {
+      "categoryLabels": {
         "show": {
           "type": [
             "bool"
@@ -1504,7 +1533,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "wordWrap": {
+      "wordWrap": {
         "show": {
           "type": [
             "bool"
@@ -1514,7 +1543,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "dataLabels": {
+      "dataLabels": {
         "color": {
           "type": [
             "fill"
@@ -1543,7 +1572,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "cardTitle": {
+      "cardTitle": {
         "color": {
           "type": [
             "fill"
@@ -1572,7 +1601,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "card": {
+      "card": {
         "outline": {
           "type": [
             "enumeration"
@@ -1653,7 +1682,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "percentBarLabel": {
+      "percentBarLabel": {
         "show": {
           "type": [
             "bool"
@@ -1690,7 +1719,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "axis": {
+      "axis": {
         "min": {
           "type": [
             "numeric"
@@ -1716,7 +1745,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "target": {
+      "target": {
         "show": {
           "type": [
             "bool"
@@ -1775,7 +1804,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "calloutValue": {
+      "calloutValue": {
         "show": {
           "type": [
             "bool"
@@ -1818,7 +1847,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "forecast": {
+      "forecast": {
         "show": {
           "type": [
             "bool"
@@ -1885,7 +1914,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "bubbles": {
+      "bubbles": {
         "bubbleSize": {
           "type": [
             "formatting"
@@ -1895,7 +1924,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "mapControls": {
+      "mapControls": {
         "autoZoom": {
           "type": [
             "bool"
@@ -1920,7 +1949,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "mapStyles": {
+      "mapStyles": {
         "mapTheme": {
           "type": [
             "enumeration"
@@ -1930,7 +1959,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "shape": {
+      "shape": {
         "map": {
           "type": [
             "geoJson"
@@ -1948,7 +1977,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "zoom": {
+      "zoom": {
         "autoZoom": {
           "type": [
             "bool"
@@ -1983,7 +2012,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "xAxisReferenceLine": {
+      "xAxisReferenceLine": {
         "show": {
           "type": [
             "bool"
@@ -2000,7 +2029,7 @@ The following section defines the properties within each card.
             "Value"
           ],
           "description": [
-            "Set reference line numeric value "
+            "Set reference line numeric value"
           ]
         },
         "lineColor": {
@@ -2108,7 +2137,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "fillPoint": {
+      "fillPoint": {
         "show": {
           "type": [
             "bool"
@@ -2118,7 +2147,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "colorByCategory": {
+      "colorByCategory": {
         "show": {
           "type": [
             "bool"
@@ -2128,7 +2157,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "plotAreaShading": {
+      "plotAreaShading": {
         "show": {
           "type": [
             "bool"
@@ -2171,7 +2200,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "ratioLine": {
+      "ratioLine": {
         "show": {
           "type": [
             "bool"
@@ -2211,7 +2240,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "grid": {
+      "grid": {
         "outlineColor": {
           "type": [
             "fill"
@@ -2331,7 +2360,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "columnHeaders": {
+      "columnHeaders": {
         "outline": {
           "type": [
             "enumeration"
@@ -2406,7 +2435,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "values": {
+      "values": {
         "outline": {
           "type": [
             "enumeration"
@@ -2525,7 +2554,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "total": {
+      "total": {
         "outline": {
           "type": [
             "enumeration"
@@ -2589,7 +2618,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "columnFormatting": {
+      "columnFormatting": {
         "fontColor": {
           "type": [
             "fill"
@@ -2645,7 +2674,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "rowHeaders": {
+      "rowHeaders": {
         "outline": {
           "type": [
             "enumeration"
@@ -2734,7 +2763,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "subTotals": {
+      "subTotals": {
         "outline": {
           "type": [
             "enumeration"
@@ -2806,7 +2835,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "selection": {
+      "selection": {
         "selectAllCheckboxEnabled": {
           "type": [
             "bool"
@@ -2824,7 +2853,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "header": {
+      "header": {
         "show": {
           "type": [
             "bool"
@@ -2877,7 +2906,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "items": {
+      "items": {
         "fontColor": {
           "type": [
             "fill"
@@ -2922,7 +2951,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "numericInputStyle": {
+      "numericInputStyle": {
         "fontColor": {
           "type": [
             "fill"
@@ -2959,7 +2988,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "slider": {
+      "slider": {
         "show": {
           "type": [
             "bool"
@@ -2977,7 +3006,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "dateRange": {
+      "dateRange": {
         "includeToday": {
           "type": [
             "bool"
@@ -2987,7 +3016,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "sentimentColors": {
+      "sentimentColors": {
         "increaseFill": {
           "type": [
             "fill"
@@ -3021,7 +3050,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "breakdown": {
+      "breakdown": {
         "maxBreakdowns": {
           "type": [
             "integer"
@@ -3034,7 +3063,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "indicator": {
+      "indicator": {
         "indicatorDisplayUnits": {
           "type": [
             "formatting"
@@ -3066,7 +3095,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "trendline": {
+      "trendline": {
         "show": {
           "type": [
             "bool"
@@ -3076,7 +3105,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "goals": {
+      "goals": {
         "showGoal": {
           "type": [
             "bool"
@@ -3094,7 +3123,7 @@ The following section defines the properties within each card.
           ]
         }
       },
-    "status": {
+      "status": {
         "direction": {
           "type": [
             "enumeration"
@@ -3128,13 +3157,14 @@ The following section defines the properties within each card.
           ]
         }
       }
-
+```
 
 
 
 ### Enumerations in the JSON file
-The following section defines the enumerations you can use in the JSON file.
+The following section defines the enumerations that you can use in the JSON file.
 
+```json
     {
         "legend": {
             "position": [
@@ -4163,3 +4193,4 @@ The following section defines the enumerations you can use in the JSON file.
          ]
        }
     }
+```

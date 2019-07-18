@@ -6,9 +6,9 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/02/2018
+ms.date: 04/15/2019
 ms.author: davidi
 
 ---
@@ -20,11 +20,20 @@ The first time Power BI Desktop is launched, a sign-in form is displayed. Inform
 Administrators use the following registry key to disable the sign-in form. This can also be pushed to an entire organization by using global policies.
 
 ```
-Key: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Power BI Desktop
+Key: HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop
+valueName: ShowLeadGenDialog
+```
+You can also try the following key, which has been successful for some customers based on their configurations:
+
+```
+Key: HKEY_CURRENT_USER\SOFTWARE\Microsoft\Microsoft Power BI Desktop
 valueName: ShowLeadGenDialog
 ```
 
 A value of 0 will disable the dialog.
+
+
+
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

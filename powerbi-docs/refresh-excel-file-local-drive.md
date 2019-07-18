@@ -1,15 +1,15 @@
 ---
 title: Refresh a dataset created from an Excel workbook - local
 description: Refresh a dataset created from an Excel workbook on a local drive
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2018
-ms.author: davidi
+ms.date: 11/28/2018
+ms.author: mblythe
 
 LocalizationGroup: Data refresh
 ---

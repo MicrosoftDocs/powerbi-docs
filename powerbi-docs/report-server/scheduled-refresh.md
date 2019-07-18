@@ -1,15 +1,15 @@
 ---
 title: Power BI report scheduled refresh in Power BI Report Server
 description: Power BI reports can connect to different data sources. Depending on how data is used, different data sources are available.
-author: markingmyname
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.author: maghan
+ms.author: mblythe
 
 ---
 # Power BI report scheduled refresh in Power BI Report Server
@@ -30,6 +30,7 @@ Several components are involved when using scheduled refresh for your Power BI r
 * The data model is loaded within an Analysis Services instance.
 * For some data sources, the Power Query mashup engine is used to connect to data sources and transform the data. Other data sources may be connected to directly from an Analysis Services service used to host the data models for Power BI Report Server.
 * New data is loaded into the data model within Analysis Services.
+* In a scale-out configuration, the data model can be replicated across nodes.
 * Analysis Services processes the data and executes any needed calculations.
 
 Power BI Report Server maintains an event queue for all scheduled operations. It polls the queue at regular intervals to check for new events. By default, the queue is scanned at 10 second intervals. You can change the interval by modifying the **PollingInterval**, **IsNotificationService**, and **IsEventService** configuration settings in the RSReportServer.config file. **IsDataModelRefreshService** can also be used to set whether a report server process scheduled events.
@@ -45,7 +46,7 @@ Not all Power BI Reports can have a scheduled refresh plan created on them. The 
 * Your report contains one or more data sources, which use DirectQuery.
 * Your report does not contain any data source. For example, data is manually entered via *Enter Data* or a report contains only static content like images, text, etc.
 
-In addition to the above list, there are specific scenarios with data sources in *import* mode, for which you cannot created refresh plans.
+In addition to the above list, there are specific scenarios with data sources in *import* mode, for which you cannot create refresh plans.
 
 * If a *File* or *Folder* data source is used and the file path is a local path (e.g. C:\Users\user\Documents), then a refresh plan cannot be created. The path must be a path the report server can connect to like a network share. For example, *\\myshare\Documents*.
 * If data source can be connected using only OAuth (e.g. Facebook, Google Analytics, Salesforce, etc.), then cache refresh plan cannot be created. At the moment, RS does not support OAuth authentication for any data source whether it is for paginated, mobile or Power BI reports.

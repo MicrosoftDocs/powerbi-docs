@@ -6,16 +6,16 @@ manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 04/18/2019
 ms.author: maggies
 
 LocalizationGroup: Get started
 ---
 # Supported languages and countries/regions for Power BI
 
-This article provides lists of supported languages and countries/regions for the Power BI service, Power BI Desktop, and Power BI documentation.
+This article lists supported languages and countries/regions for the Power BI service, Power BI Desktop, and Power BI documentation.
 
 ## Countries and regions where Power BI is available
 For a list of countries and regions where Power BI is available, see the [international availability list](https://products.office.com/business/international-availability). 
@@ -69,11 +69,11 @@ The Power BI service (in the browser) is available in the following 44 languages
 * Vietnamese - Tiếng Việt
 
 ### What's translated
-Menus, buttons, messages, and other elements of the experience are translated into your language, making it easier to navigate and interact with Power BI.
+Power BI translates menus, buttons, messages, and other elements of the experience into your language.
 
 At this time, a few features are available in English only:
 
-* Dashboards and reports that Power BI creates for you when you connect to services such as Microsoft Dynamics CRM, Google Analytics, Salesforce, and so on. (You can still create your own dashboards and reports in your own language.)
+* Dashboards and reports that Power BI creates when you connect to services such as Microsoft Dynamics CRM, Google Analytics, and Salesforce. You can still create your own dashboards and reports in your own language.
 * Exploring your data with Q&A.
 
 Stay tuned as we work to bring additional features to other languages. 
@@ -116,7 +116,7 @@ You have two ways of getting Power BI Desktop: You can download it, or install i
 
 * When you [install Power BI Desktop from the Windows Store](#choose-a-language-for-power-bi-desktop-installed-from-the-windows-store), it installs all the languages and shows the language that corresponds to the Windows default language.
 * When you [download Power BI Desktop](#choose-a-language-when-you-download-power-bi-desktop), you choose the language when you download it. 
-* You can also [choose a locale to be used when importing data](#choose-the-locale-to-be-used-when-importing-data-into-power-bi-desktop) for a specific report. 
+* You can also [choose a locale to be used when importing data](#choose-the-locale-for-importing-data-into-power-bi-desktop) for a specific report.
 
 ### Choose a language for Power BI Desktop installed from the Windows Store
 1. [Install Power BI Desktop](http://aka.ms/pbidesktopstore) from the Windows Store.
@@ -138,7 +138,7 @@ The language you choose for Power BI Desktop affects the display format of numbe
 To change the language in Power BI Desktop, go back to the download page and download it in a different language.
 
 ### Choose the locale for importing data into Power BI Desktop
-Whether you download Power BI Desktop or install it from the Windows Store, you can choose a locale for a specific report to be something other than the locale in your version of Power BI Desktop. This changes the way data is interpreted when it’s imported from your data source, for example whether "3/4/2017" is interpreted as 3rd April or March 4th. 
+Whether you download Power BI Desktop or install it from the Windows Store, you can choose a locale for a specific report to be something other than the locale in your version of Power BI Desktop. The locale changes the way data is interpreted when it’s imported from your data source, for example whether "3/4/2017" is interpreted as 3 April or March 4. 
 
 1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
 2. Under **Current file**, select **Regional Settings**.
@@ -187,7 +187,7 @@ Help is localized in these 10 languages:
 * Spanish - español
 
 ## Next steps
-* Are you using one of the Power BI mobile apps? See [Supported languages in the Power BI mobile apps](mobile-apps-supported-languages.md) for details.
+* Are you using one of the Power BI mobile apps? See [Supported languages in the Power BI mobile apps](consumer/mobile/mobile-apps-supported-languages.md) for details.
 * Questions? Try asking the [Power BI Community](http://community.powerbi.com/).
-* Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
+* Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 

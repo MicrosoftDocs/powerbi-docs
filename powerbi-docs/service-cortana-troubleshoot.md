@@ -1,29 +1,26 @@
 ---
 title: Troubleshoot Cortana for Power BI
 description: If you're having trouble using Cortana with Power BI, try these suggestions.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/20/2017
-ms.author: mihart
+ms.date: 05/29/2019
+ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
 ---
 # Troubleshoot Cortana for Power BI
-This article is part of a series. If you haven't already, we recommend reading the following three articles.
+This article is part of a series. 
 
-**Article 1**: [Understand how Cortana and Power BI work together to search for Power BI dashboards and reports](service-cortana-intro.md)
+> [!IMPORTANT]
+> Cortana integration is being deprecated in Power BI. Starting June 11, Cortana will no longer work for any dashboards and reports.
 
-**Article 2**: [For searching reports: enable the Cortana - Power BI - Windows integration](service-cortana-enable.md)
-
-**Article 3**: [For searching reports: create special *Cortana answer cards*](service-cortana-answer-cards.md)
-
-If you're still having problems getting Cortana to integrate with Power BI, you've come to the right place. Follow the steps below to diagnose and fix the problem.
+If you're having problems getting Cortana to integrate with Power BI, you've come to the right place. Follow the steps below to diagnose and fix the problem.
 
 ## Why doesn't Cortana find answers from my Power BI reports or dashboards?
 1. Do you have a Power BI account?  If not, [sign up for a free trial](https://powerbi.microsoft.com/get-started/).
@@ -75,7 +72,7 @@ Still having trouble?  Now is a good time to run the Cortana troubleshooting too
 
    ![Answer card](media/service-cortana-troubleshoot/power-bi-answer-card-new.png)
 
-   </br>
+   <br>
 
    ![Answer card tab in Power BI](media/service-cortana-troubleshoot/power-bi-answer-card2.png)
 4. Sometimes, the first time you type something into the **Utterance** field, nothing happens. Think of it as priming the system; you're letting the troubleshooting tool know that it's time to turn on. Cut and paste or retype into the **Utterance** field again. In this example, the name of our answer card is **Cortana stores**. Pasting or typing **Cortana stores** into the tool produces a single result that displays in the **Interpretations** field. Click to see the answer card displayed in the Cortana window -- in this case, **Cortana stores**.

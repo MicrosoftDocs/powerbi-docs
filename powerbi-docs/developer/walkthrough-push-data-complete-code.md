@@ -1,23 +1,25 @@
 ---
 title: Complete code listing
 description: Walkthrough to push data - Complete code listing
-author: markingmyname
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
-ms.reviewer: ''
-
+ms.reviewer: madia
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-
+ms.date: 02/05/2019
 ---
+
 # Push data to a dataset complete code listing
+
 This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
 
 After you follow Steps 2 to 5 in **Push data into a dataset**, your complete source code should look like the following.
 
 ## Push data to dataset code
+
+```csharp
       using System;
       using Microsoft.IdentityModel.Clients.ActiveDirectory;
       using System.Net;
@@ -65,7 +67,7 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
                   string resourceUri = "https://analysis.windows.net/powerbi/api";
 
                   //OAuth2 authority Uri
-                  string authorityUri = "https://login.windows.net/common/oauth2/authorize";
+                  string authorityUri = "https://login.microsoftonline.com/common/";
 
                   //Get access token:
                   // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken
@@ -214,9 +216,10 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
               #endregion
           }
       }
-
+```
 
 ## Next steps
+
 [Push data into a Power BI dataset](walkthrough-push-data.md)  
 [Walkthrough - Push data into a Power BI dataset](walkthrough-push-data.md)  
 [Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  
@@ -227,6 +230,4 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
 [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 
-
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
