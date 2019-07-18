@@ -1132,7 +1132,7 @@
       - name: "Rendering events" 
         href: developer/visuals/event-service.md
       - name: "Sorting"
-        href: developer/visuals/sorting-options.md
+        href: developer/visuals/sort-options.md
     - name: Resources
       items:
       - name: "Dev Center"
