@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 07/18/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -53,7 +53,7 @@ The new filter experience is turned on by default for new reports. You can enabl
 
 ## View filters for a visual in Reading mode
 
-In Reading mode, hover over the filter icon for a visual to see a pop-up with all the filters, slicers, and so on, affecting that visual. The formatting of the pop-up is the same as the Filters pane formatting. 
+In Reading mode, hover over the filter icon for a visual to see a pop-up filter list with all the filters, slicers, and so on, affecting that visual. The formatting of the pop-up filter list is the same as the Filters pane formatting. 
 
 ![Filters affecting a visual](media/power-bi-report-filter/power-bi-filter-per-visual.png)
 
@@ -89,7 +89,7 @@ You can lock or hide individual filter cards. If you lock a filter, your report 
 
    ![Hide or lock filters](media/power-bi-report-filter/power-bi-filter-lock-hide.png)
 
-As you turn these settings on and off in the new Filters pane, you see the changes reflected in the report. Hidden filters don't show up in the filter pop-up for a visual.
+As you turn these settings on and off in the new Filters pane, you see the changes reflected in the report. Hidden filters don't show up in the pop-up filter list for a visual.
 
 You can also configure the new Filters pane state to flow with your report bookmarks. The pane’s open, close, and visibility state are all bookmarkable.
  
