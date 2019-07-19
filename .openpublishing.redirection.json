@@ -206,6 +206,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/power-bi-report-filter-preview.md",
+            "redirect_url": "/power-bi/power-bi-report-filter",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/developer/template-content-pack-authoring.md", 
             "redirect_url": "/power-bi/service-template-apps-create",
             "redirect_document_id": false
