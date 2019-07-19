@@ -29,7 +29,7 @@ After an incident is resolved, you receive a follow-up email.
 > [!NOTE]
 > This feature is currently available only for dedicated capacities in Power BI Premium. It's not available for shared capacity.
 
-# Enable notifications
+## Enable notifications
 
 A Power BI tenant administrator enables notifications in the admin portal:
 
@@ -41,7 +41,7 @@ A Power BI tenant administrator enables notifications in the admin portal:
 
     ![Enable service notifications](media/service-interruption-notifications/enable-notifications.png)
 
-# Next steps
+## Next steps
 
 [Power BI Pro and Power BI Premium support options](service-support-options.md)
 
