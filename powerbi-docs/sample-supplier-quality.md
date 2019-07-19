@@ -144,7 +144,7 @@ The best managed material type is the one with lowest downtime or no impact, reg
 
    ![Q&A question: Show material types, year, and total downtime minutes](media/sample-supplier-quality/supplier13.png)
 
-Notice that downtime for raw materials was about the same in 2013 and 2014, even though there were many more raw materials defects in 2014. It appears that more defects for raw materials in 2014 didn’t lead to much more downtime for raw materials in 2014.
+   Notice that downtime for raw materials was about the same in 2013 and 2014, even though there were many more raw materials defects in 2014. It appears that more defects for raw materials in 2014 didn’t lead to much more downtime for raw materials in 2014.
 
 ### Compare defects to downtime month to month
 Let’s look at another dashboard tile related to total defective quantity.  

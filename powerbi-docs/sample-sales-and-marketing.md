@@ -74,7 +74,7 @@ By using Q&A, you can discover additional details in the data.
 
 ### Which segments drive our sales? Do they match the industry trend?
 1. Select the **Total Units Overall by Segment** tile, which opens Q&A and populates it with the query, *total units by segment*.
-2. Type *for VanArsdel* at the end of the existing query. Q&A interprets the question and displays an updated chart with the answer. Notice that our product volume is mostly from the **Convenience** and **Moderation** segments.
+2. At the end of the existing query, add: *for VanArsdel*. Q&A interprets the question and displays an updated chart with the answer. Notice that our product volume is mostly from the **Convenience** and **Moderation** segments.
 
    ![Q&A question: Total units by segment for VanArsdel](media/sample-sales-and-marketing/sales2.png)
 3. Our share in the **Moderation** and **Convenience** categories is high; these segments are the ones where we compete.
@@ -136,7 +136,7 @@ Let's look at external sources. In February, several articles and blog posts rat
 
 Sentiment gap might be another area to explore. Which districts have the highest sentiment gap, how can management capitalize on it, and how can they replicate it in other districts?
 
-#### YTD Category Trend Analysis page
+### YTD Category Trend Analysis page
 Page two of the report focuses on the year-to-date category trend.
 
 ![YTD Category Trend Analysis page](media/sample-sales-and-marketing/reportpage2.png)
@@ -148,7 +148,7 @@ Notice the following details:
 * Geography has an impact on units sold. The East region is the dominant region for most manufacturers and VanArsdel has a strong presence in the Central region as well.
 * On the **Total Units YTD Var % by Month and Manufacturer** chart in the bottom right, notice that we have positive variance, which is a good sign. We're doing better than last year, but so is our competitor, Aliqui.
 
-#### Growth Opportunities page
+### Growth Opportunities page
 Page four of the report focuses on competitive product analysis.
 
 ![Growth Opportunities page](media/sample-sales-and-marketing/sales8.png)
