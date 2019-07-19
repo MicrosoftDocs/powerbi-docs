@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/09/2019
+ms.date: 07/19/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -28,7 +28,7 @@ The *Retail Analysis* sample content pack used in this tutorial consists of a da
 To familiarize yourself with this particular content pack and its scenario, see
  [Retail Analysis sample for Power BI: Take a tour](sample-retail-analysis.md) before you begin.
 
-## Samples and the Power BI service
+## Samples in the Power BI service
 
 1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample. 
 
@@ -79,7 +79,7 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
    > If the tile was created by using [Power BI Q&A](power-bi-tutorial-q-and-a.md), the Q&A page will open instead. If the tile was [pinned from Excel](service-dashboard-pin-tile-from-excel.md), Excel Online will open inside of Power BI.
    > 
    > 
-1. When someone shares a content pack with colleagues, they typically want to share only the insights, rather than provide direct access to the data. On the **Datasets** tab, you have several options for exploring your dataset. However, you won't be able to view the rows and columns of your data, as you can in Power BI Desktop or Excel. 
+1. When someone shares a content pack with colleagues, they typically want to share only the insights, rather than provide direct access to the data. On the **Datasets** tab, you have several options for exploring your dataset. However, you can't view the rows and columns of your data, as you can in Power BI Desktop or Excel. 
    
    ![Retail Analysis Sample dataset entry](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
    
@@ -91,10 +91,12 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
      
     ![Insights report](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
-## Samples and Power BI Desktop 
-When you first open the sample .pbix file in Power BI Desktop, it displays in Report view where you can explore, create, and modify any number of report pages with visualizations. Report view provides almost the same design experience as a report’s Editing view in the Power BI service. You can move visualizations around, copy and paste, merge, and so on. Unlike Editing view in the Power BI service, when you use Power BI Desktop in Report view, you can work with your queries and model your data to ensure your data supports the best insights in your reports. You can then save your Power BI Desktop file wherever you like, whether it's to your local drive or to the cloud.
+## Samples in Power BI Desktop 
+When you first open the sample .pbix file in Power BI Desktop, it displays in Report view where you can explore, create, and modify any number of report pages with visualizations. Report view provides almost the same design experience as a report’s Editing view in the Power BI service. You can move visualizations around, copy and paste, merge, and so on. 
 
-1. Open the [Retail Analysis sample .pbix file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) in Power BI Desktop. 
+Unlike editing a report in the Power BI service, in Power BI Desktop you can also work with your queries and model your data to ensure your data supports the best insights in your reports. You can then save your Power BI Desktop file wherever you like, whether it's to your local drive or to the cloud.
+
+1. Download the [Retail Analysis sample .pbix file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) and open it in Power BI Desktop. 
 
     ![Sample in Power BI report view](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
 
@@ -104,14 +106,15 @@ When you first open the sample .pbix file in Power BI Desktop, it displays in Re
 
 1. For a deep dive into the report editor, see [Take a tour of the report editor](service-the-report-editor-take-a-tour.md).
 
-## What was imported?
-When you open the sample .pbix file in Power BI Desktop, Power BI gets a copy of that data and stores it for you in the cloud. From Power BI Desktop, you have access to the report *and the underlying dataset*. When the data is loaded, Power BI Desktop attempts to find and create relationships for you.  
+## What's in your report?
+When you download a sample .pbix file, you've downloaded not just a report but also the *underlying dataset*. When you open the file, Power BI Desktop loads the data with its associated queries and relationships. You can view the underlying data and relationships, but you can't view the underlying queries in the Query Editor.
+
 
 1. Switch to [Data view](desktop-data-view.md) by selecting the table icon ![table icon](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png).
  
     ![Desktop data view](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png)
 
-    Data view helps you to inspect, explore, and understand data in your Power BI Desktop model. It's different from how you view tables, columns, and data in Query editor. With Data view, you’re looking at your data after it's been loaded into the model.
+    In Data view, you can inspect, explore, and understand data in your Power BI Desktop model. It's different from how you view tables, columns, and data in the Query Editor. The data in Data view is already loaded into the model.
 
     When you’re modeling your data, sometimes you want to see what's actually in the rows and columns of a table, without creating a visual on the report canvas. This is especially true when you’re creating measures and calculated columns, or you need to identify a data type or data category.
 

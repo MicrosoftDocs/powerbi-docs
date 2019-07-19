@@ -8,25 +8,24 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/09/2019
+ms.date: 07/19/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
 ---
 # Sales and Marketing sample for Power BI: Take a tour
 
-## Overview of the Sales and Marketing sample
-The Sales and Marketing sample contains a dashboard and report for a fictitious manufacturing company named VanArsdel Ltd. This dashboard was created by the VanArsdel Chief Marketing Officer (CMO) to keep an eye on the industry and the company’s market share, product volume, sales, and sentiment.
+The Sales and Marketing sample contains a dashboard and report for a fictitious manufacturing company named VanArsdel Ltd. The VanArsdel Chief Marketing Officer (CMO) created this dashboard to keep an eye on the industry and the company’s market share, product volume, sales, and sentiment.
 
 VanArsdel has many competitors, but is the market leader in its industry. The CMO wants to increase market share and discover growth opportunities. However, for unknown reasons, VanArsdel’s market share has started to decline, with significant dips in June.
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+![Dashboard for the Sales and Marketing sample](media/sample-sales-and-marketing/sales1.png)
+
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
 This tutorial explores the Sales and Marketing sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
 You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro license, you can save the sample to your My Workspace in the Power BI service. 
-
-![Dashboard for the Sales and Marketing sample](media/sample-sales-and-marketing/sales1.png)
 
 ## Get the sample
 
@@ -66,7 +65,7 @@ Let’s start our tour at the dashboard and look at the tiles the CMO has chosen
 * The top line chart (**% Units Market Share vs. % Units Market Share Rolling 12 Months**) shows how our market share fluctuates over time. Notice the large drop in June. Our rolling 12-month (R12M) share, which was increasing for a while, is now starting to stall.
 * Our biggest competitor is Aliqui, as evident in the middle column chart tile (**Total Units YTD Variance %**).
 * Most of our business is in the East and Central regions.
-* The line chart at the bottom (**Total Units for 2014**) shows that our dip in June is not seasonal; none of our competitors show the same trend.
+* The line chart at the bottom (**Total Units for 2014**) shows that our dip in June isn't seasonal; none of our competitors show the same trend.
 * The **Total Units Overall** and **Total Units YTD** tiles on the right show units sold, by segment and by region/manufacturer. The largest market segments for our industry are **Productivity** and **Convenience**.
 
 ## Use Q&A to dig a little deeper
@@ -91,19 +90,20 @@ By using Q&A, you can discover additional details in the data.
 3. To compare the findings, pin the chart to your dashboard. Notice this interesting fact: In 2014, VanArsdel sold only products in the **Urban** category.
 4. Return to the dashboard.
 
-Dashboards are also an entry point into reports.  If a tile was created from an underlying report, selecting that tile opens the report.
-
-On our dashboard, the **% Units Market Share R12M** line in the **% Units Market Share vs. % Units Market Share Rolling 12 Months** chart shows that our market share is no longer increasing over time, it’s even declining a bit. And why do we have a large market share dip in June? To investigate further, select this chart to open the underlying report.
-
 ## Sales and Marketing Sample report
+
+Dashboards are an entry point into reports. If a tile was created from an underlying report, selecting that tile opens the report.
+
+On our dashboard, the **% Units Market Share R12M** line in the **% Units Market Share vs. % Units Market Share Rolling 12 Months** chart shows that our market share is no longer increasing over time. It’s even declining a bit. And why do we have a large market share dip in June? 
+
 The report for the Sales and Marketing sample has four pages.
  
 ### VanArsdel - Market Share page
 Page one of the report focuses on VanArsdel’s market share.
 
-![VanArsdel - Market Share page](media/sample-sales-and-marketing/sales5.png)
+1. On the dashboard, select the **% Units Market Share vs. % Units Market Share Rolling 12 Months** chart to open the **VanArsdel - Market Share** page of the Sales and Marketing Sample report.
 
-1. Select the **% Units Market Share vs. % Units Market Share Rolling 12 Months** chart to open the **VanArsdel - Market Share** page of the Sales and Marketing Sample report.
+   ![VanArsdel - Market Share page](media/sample-sales-and-marketing/sales5.png)
 
 2. Look at the **Total Units by Month and isVanArsdel** column chart at the bottom of the report. The black column represents VanArsdel (our products) and the green column is our competition. The drop in June 2014 that VanArsdel experienced was not experienced by the competition.
 

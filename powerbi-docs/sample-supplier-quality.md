@@ -8,7 +8,7 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/09/2019
+ms.date: 07/19/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
@@ -24,7 +24,7 @@ This sample has two main objectives:
 
 ![Dashboard for the Supplier Quality Analysis sample](media/sample-supplier-quality/supplier1.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created with real data by [obviEnce](http://www.obvience.com/), which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
 This tutorial explores the Supplier Quality Analysis sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
@@ -72,7 +72,7 @@ Let’s analyze the downtime caused by defective materials and see which vendors
 
    Notice we have 33 million defective pieces, causing a total downtime of 77,000 minutes. Although some materials have fewer defective pieces, they can cause delays, which result in more downtime. Let’s explore them on the report page.  
 2. If we look at the **Total Downtime Minutes** line in the **Defects and Downtime (min) by Material Type** combo chart, we can see that corrugate materials cause the most downtime.  
-3. Select the **Corrugate** column to see which plants are impacted most by this defect and which vendor is responsible.  
+3. Select the **Corrugate** column to see which plants are affected most by this defect and which vendor is responsible.  
 
    ![Select Corrugate column](media/sample-supplier-quality/supplier3.png)  
 4. In the **Downtime (min) by Plant** map, select individual plants in turn to see which vendor or material is responsible for the downtime at that plant.
@@ -95,7 +95,7 @@ Let’s analyze the downtime caused by defective materials and see which vendors
 ### Comparing plants
 Now let’s explore which plant does a better job managing defective material, resulting in less downtime.  
 
-1. Select the **Total Defect Reports by Plant, Defect Type** map tile.      
+1. On the dashboard, select the **Total Defect Reports by Plant, Defect Type** map tile.      
 
    ![Total Defect Reports by Plant, Defect Type tile](media/sample-supplier-quality/supplier6.png)  
 
@@ -109,7 +109,7 @@ Now let’s explore which plant does a better job managing defective material, r
 3. Select the **Logistics** bubble in the bubble chart and observe the plants in Springfield and Naperville, IL. Naperville seems to be doing a much better job of managing defective supplies as it has a high number of rejects and few impacts, compared to Springfield’s large number for impacts.  
 
    ![Select Logistics](media/sample-supplier-quality/supplier8.png)  
-4. Select **Supplier Quality Analysis Sample** in the top navigation bar to return to your active workspace.
+4. Select **Supplier Quality Analysis Sample** in the top navigation bar to return to the dashboard.
 
 ## Which material type is best managed?
 The best managed material type is the one with lowest downtime or no impact, regardless of defect quantity.
@@ -135,7 +135,7 @@ The best managed material type is the one with lowest downtime or no impact, reg
     ![Total Defect Qty by Month and Year chart](media/sample-supplier-quality/supplier11.png)  
 3. Do more defects translate into more downtime? Ask questions in the Q&A box to find out.  
 4. Select **Supplier Quality Analysis Sample** in the top navigation bar to return to the dashboard.  
-5. Because we know that raw materials have the highest number of defects, in the question box, type *show material types, year, and total defect qty*.  
+5. Because we know that raw materials have the highest number of defects, type in the question box: *show material types, year, and total defect qty*.  
 
     There were many more raw materials defects in 2014 than in 2013.  
 
