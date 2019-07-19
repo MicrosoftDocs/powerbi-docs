@@ -55,7 +55,7 @@
       href: desktop-latest-update.md
     - name: "Modeling view in Power BI Desktop"
       href: desktop-modeling-view.md      
-    - name: "Aggregations in Power BI Desktop (Preview)"
+    - name: "Aggregations in Power BI Desktop"
       href: desktop-aggregations.md      
     - name: "Composite models in Power BI Desktop"
       href: desktop-composite-models.md
@@ -234,7 +234,7 @@
       - name: "Types of filters"
         href: power-bi-report-filter-types.md
       - name: "Try the new filter experience"
-        href: power-bi-report-filter-preview.md
+        href: power-bi-report-filter.md
       - name: "Use Quick Measures"
         href: desktop-quick-measures.md
       - name: "Using What if parameters"

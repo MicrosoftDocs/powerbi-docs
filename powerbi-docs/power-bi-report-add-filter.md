@@ -17,7 +17,7 @@ LocalizationGroup: Reports
 
 This article explains how to add a page filter, visualization filter, report filter, or drillthrough filter to a report in Power BI. The examples in this article are in the Power BI service. The steps are almost identical in Power BI Desktop.
 
-**Did you know?** Power BI has a new filter experience, currently in preview. Read more about [the new filter experience in Power BI reports](power-bi-report-filter-preview.md).
+**Did you know?** Power BI has a new filter experience, currently in preview. Read more about [the new filter experience in Power BI reports](power-bi-report-filter.md).
 
 ![New filter experience](media/power-bi-report-add-filter/power-bi-filter-reading.png)
 
