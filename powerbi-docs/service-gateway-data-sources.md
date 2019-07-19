@@ -119,6 +119,8 @@ When you add a data source to the gateway, you need to provide credentials for t
 
 ## List of available data source types
 
+The on-premises data gateway supports the following data sources for Power BI. In addition to on-premises data sources, sources behind a firewall, VPN, or virtual network might also need a data gateway.
+
 | **Data source** | **Live/DirectQuery** | **User configured manual or scheduled refresh** |
 | --- | --- | --- |
 | ActiveDirectory |No |Yes |
@@ -167,9 +169,6 @@ When you add a data source to the gateway, you need to provide credentials for t
 | Vertica |Yes |Yes |
 | Web |No |Yes |
 | Workforce Dimensions |No |Yes |
-
->[!NOTE]
->In addition to on-premises data sources, sources behind a firewall, VPN, or virtual network might also need a data gateway.
 
 ## Next steps
 
