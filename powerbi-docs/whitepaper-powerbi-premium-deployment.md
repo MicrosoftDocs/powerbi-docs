@@ -79,7 +79,7 @@ Power BI datasets represent a source of data ready for reporting and visualizati
 - Uploading an Excel workbook (containing one or more Excel tables and/or a workbook data model) or uploading a Comma-Separated Value (CSV) file
 - Using the Power BI service to create a push, streaming or hybrid streaming dataset
 
-Except for streaming datasets \[[3](#endnote-03)\], the dataset represents a data model which leverages the mature modeling technologies of Analysis Services.
+Except for streaming datasets (also known as Push Datasets) \[[3](#endnote-03)\], the dataset represents a data model which leverages the mature modeling technologies of Analysis Services.
 
 Note that in documentation, sometimes the terminologies datasets and models are interchangeable. Generally, from a Power BI service perspective it is referred to as a **dataset** , and from a development perspective it is referred to as a **model**. In the context of this whitepaper they mean much the same thing.
 
