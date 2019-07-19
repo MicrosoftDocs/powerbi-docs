@@ -42,7 +42,7 @@ In addition to the natively supported data sources above, the following data sou
 
 For paginated reports, Azure SQL Database and Azure Analysis Services currently can't be accessed via a Power BI data gateway.
 
-## Azure SQL Database Authentication
+## Azure SQL Database authentication
 
 For Azure SQL Database data sources, you need to set an authentication type before you run the report. That applies only when you use a data source for the first time in a workspace. That first time, you see the following message:
 
