@@ -51,9 +51,9 @@ The on-premises data gateway enables you to merge or append on-premises and clou
 
    - Under **Data source credentials**, edit the cloud data source credentials as necessary.
 
-     ![Dataset settings](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
+    Make sure privacy levels for both cloud and on-premises data sources are set appropriately to ensure the joins are handled securely.
 
-   Make sure privacy levels for both cloud and on-premises data sources are set appropriately to ensure the joins are handled securely.
+     ![Dataset settings](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
 
 7. With the cloud credentials set, you can now refresh the dataset using the **Refresh now** option, or schedule it to refresh periodically.
 
