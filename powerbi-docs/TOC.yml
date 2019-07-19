@@ -234,7 +234,7 @@
       - name: "Types of filters"
         href: power-bi-report-filter-types.md
       - name: "Try the new filter experience"
-        href: power-bi-report-filter-preview.md
+        href: power-bi-report-filter.md
       - name: "Use Quick Measures"
         href: desktop-quick-measures.md
       - name: "Using What if parameters"
