@@ -210,7 +210,7 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 The following updates are new to **Power BI Desktop** this month:
 
 ### Reporting
-* Filter pane improvements  [[video]](https://youtu.be/vih35kSrEHU?t=9)  [[article]](power-bi-report-filter-preview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#filterPane) 
+* Filter pane improvements  [[video]](https://youtu.be/vih35kSrEHU?t=9)  [[article]](power-bi-report-filter.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#filterPane) 
 * Conditional formatting for visual titles  [[video]](https://youtu.be/vih35kSrEHU?t=254)  [[article]](desktop-conditional-format-visual-titles.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicTitles)
 * Conditional formatting for web URL actions for buttons, shapes and images [[video]](https://youtu.be/vih35kSrEHU?t=439)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicURLs)
 
