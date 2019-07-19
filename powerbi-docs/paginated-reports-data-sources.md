@@ -25,7 +25,7 @@ Paginated reports natively support the following list of data sources:
 | Premium Power BI dataset (XMLA) | SSO |   |
 | Enter Data | N/A | Data is embedded in the report. |
 
-Except for Azure SQL Database, all data sources are ready to use after you have uploaded the report to the Power Bi service. The data sources default to using single sign-on (SSO), where applicable. For Azure Analysis Services, you can change the authentication type to OAuth2.
+Except for Azure SQL Database, all data sources are ready to use after you have uploaded the report to the Power BI service. The data sources default to using single sign-on (SSO), where applicable. For Azure Analysis Services, you can change the authentication type to OAuth2.
 
 For Azure SQL Database data sources, you need to supply more information, as described in the Azure SQL Database Authentication section.
 
@@ -36,7 +36,7 @@ In addition to the natively supported data sources above, the following data sou
 - Oracle
 - Teradata
 
-Note that for paginated reports, Azure SQL Database and Azure Analysis Services currently can't be accessed via a Power BI data gateway.
+For paginated reports, Azure SQL Database and Azure Analysis Services currently can't be accessed via a Power BI data gateway.
 
 ## Azure SQL Database Authentication
 
@@ -44,7 +44,7 @@ For Azure SQL Database data sources, you need to set an authentication type befo
 
 ![Publishing to Power BI](media/paginated-reports-data-sources/power-bi-paginated-publishing.png)
 
-If you don't supply any credentials, an error occurs when you run the report. Select **Continue**  to go to the **Edit Credentials** page for the just uploaded report:
+If you don't supply any credentials, an error occurs when you run the report. Select **Continue**  to go to the **Edit Credentials** page for the report you just uploaded:
 
 ![Settings for the Azure SQL Database](media/paginated-reports-data-sources/power-bi-paginated-settings-azure-sql.png)
 
