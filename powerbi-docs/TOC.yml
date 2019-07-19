@@ -687,6 +687,8 @@
       items: 
       - name: View a paginated report
         href: paginated-reports-view-power-bi-service.md
+      - name: Supported data sources
+        href: paginated-reports-data-sources.md
       - name: Interact with parameters
         href: paginated-reports-view-parameters.md
       - name: Subscribe yourself or others
