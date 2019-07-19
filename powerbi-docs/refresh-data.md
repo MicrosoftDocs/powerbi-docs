@@ -52,7 +52,7 @@ Because Power BI caches the data, Import mode dataset sizes can be substantial. 
 | --- | --- |
 | Shared, A1, A2, or A3 | 1 GB |
 | A4 or P1 | 3 GB |
-| A4 or P2 | 6 GB |
+| A5 or P2 | 6 GB |
 | A6 or P3 | 10 GB |
 | | |
 
@@ -157,7 +157,7 @@ Regardless of storage modes, no data refresh can succeed unless the underlying d
 
 ### Connecting to on-premises data sources
 
-If your dataset uses a data source that Power BI can't access over a direct network connection, you must configure a gateway connection for this dataset before you can enable a refresh schedule or perform an on-demand data refresh. For more information about data gateways and how they work, see [What are on-premises data gateways?](service-gateway-getting-started.md)
+If your dataset uses a data source that Power BI can't access over a direct network connection, you must configure a gateway connection for this dataset before you can enable a refresh schedule or perform an on-demand data refresh. For more information about data gateways and how they work, see [What are on-premises data gateways?](service-gateway-onprem.md)
 
 You have the following options:
 
@@ -171,9 +171,14 @@ You have the following options:
 
 Microsoft recommends using an enterprise data gateway instead of a personal gateway to connect a dataset to an on-premises data source. Make sure the gateway is properly configured, which means the gateway must have the latest updates and all required data source definitions. A data source definition provides Power BI with the connection information for a given source, including connection endpoints, authentication mode, and credentials. For more information about managing data sources on a gateway, see [Manage your data source - import/scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md).
 
-Connecting a dataset to an enterprise gateway is relatively straightforward if you are a gateway administrator. With admin permissions, you can promptly update the gateway and add missing data sources, if necessary. In fact, you can add a missing data source to your gateway straight from the dataset settings page. Expand the toggle button to view the data sources and select the **Add to gateway** link, as in the following screenshot. If you are not a gateway administrator, on the other hand, use the displayed contact information to send a request to a gateway admin for adding the required data source definition.
+Connecting a dataset to an enterprise gateway is relatively straightforward if you are a gateway administrator. With admin permissions, you can promptly update the gateway and add missing data sources, if necessary. In fact, you can add a missing data source to your gateway straight from the dataset settings page. Expand the toggle button to view the data sources and select the **Add to gateway** link, as in the following screenshot. If you are not a gateway administrator, on the other hand, you must contact a gateway admin to add the required data source definition.
+
+> [!NOTE]
+> Only gateway admins can add data sources to a gateway. Also make sure your gateway admin adds your user account to the list of users with permissions to use the data source. The dataset settings page only lets you select an enterprise gateway with a matching data source that you have permission to use.
 
 ![Add to gateway](media/refresh-data/add-to-gateway.png)
+
+Make sure you map the correct data source definition to your data source. As the above screenshot illustrates, gateway admins can create multiple definitions on a single gateway connecting to the same data source, each with different credentials. In the example shown, a dataset owner in the Sales department would choose the AdventureWorksProducts-Sales data source definition while a dataset owner in the Support department would map the dataset to the AdventureWorksProducts-Support data source definition. If the names of the data source definition aren’t intuitive, contact your gateway admin to clarify which definition to pick.
 
 > [!NOTE]
 > A dataset can only use a single gateway connection. In other words, it is not possible to access on-premises data sources across multiple gateway connections. Accordingly, you must add all required data source definitions to the same gateway.
@@ -279,6 +284,8 @@ Note also that the configured refresh time might not be the exact time when Powe
 ### Getting refresh failure notifications
 
 By default, Power BI sends refresh failure notifications through email to the dataset owner so that the owner can act in a timely manner should refresh issues occur. Power BI also sends you a notification when the service disables your schedule due to consecutive failures. Microsoft recommends that you leave the checkbox **Send refresh failure notification emails to me** enabled.
+
+It is also a good idea to specify additional recipients by using the **Email these users when the refresh fails** textbox. The specified recipients receive refresh failure notifications in addition to the dataset owner. This might be a colleague taking care of your datasets while you are on vacation. It could also be the email alias of your support team taking care of refresh issues for your department or organization. Sending refresh failure notifications to others in addition to the dataset owner is helpful to ensure issues get noticed and addressed in a timely manner.
 
 Note that Power BI not only sends notifications on refresh failures but also when the service pauses a scheduled refresh due to inactivity. After two months, when no user has visited any dashboard or report built on the dataset, Power BI considers the dataset inactive. In this situation, Power BI sends an email message to the dataset owner indicating that the service paused the refresh schedule for the dataset. See the following screenshot for an example of such a notification.
 

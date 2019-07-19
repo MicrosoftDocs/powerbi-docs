@@ -55,7 +55,7 @@
       href: desktop-latest-update.md
     - name: "Modeling view in Power BI Desktop"
       href: desktop-modeling-view.md      
-    - name: "Aggregations in Power BI Desktop (Preview)"
+    - name: "Aggregations in Power BI Desktop"
       href: desktop-aggregations.md      
     - name: "Composite models in Power BI Desktop"
       href: desktop-composite-models.md
@@ -234,7 +234,7 @@
       - name: "Types of filters"
         href: power-bi-report-filter-types.md
       - name: "Try the new filter experience"
-        href: power-bi-report-filter-preview.md
+        href: power-bi-report-filter.md
       - name: "Use Quick Measures"
         href: desktop-quick-measures.md
       - name: "Using What if parameters"
@@ -685,9 +685,11 @@
         href: service-machine-learning-automated.md              
     - name: Paginated reports in Power BI
       items: 
-      - name: View a paginated report (Preview)
+      - name: View a paginated report
         href: paginated-reports-view-power-bi-service.md
-      - name: Interact with parameters (Preview)
+      - name: Supported data sources
+        href: paginated-reports-data-sources.md
+      - name: Interact with parameters
         href: paginated-reports-view-parameters.md
       - name: Subscribe yourself or others
         href: paginated-reports-subscriptions.md
@@ -725,10 +727,6 @@
         href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
       - name: "Troubleshoot tile errors"
         href: refresh-troubleshooting-tile-errors.md
-      - name: "Troubleshoot the on-premises data gateway"
-        href: service-gateway-onprem-tshoot.md
-      - name: "Troubleshoot Power BI gateway - personal"
-        href: service-admin-troubleshooting-power-bi-personal-gateway.md
       - name: "Troubleshoot analyze in Excel"
         href: desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find any data in your Excel workbook"
@@ -1283,38 +1281,36 @@
   items:
   - name: Overview
     items: 
-    - name: "What are Power BI gateways?"
-      href: service-gateway-getting-started.md
-  - name: Tutorials
-    items: 
-    - name: "Connect to SQL Server data"
-      href: service-gateway-sql-tutorial.md
+    - name: "What is an on-premises data gateway?"
+      href: service-gateway-onprem.md
   - name: Concepts
     items:
     - name: "Guidance for deploying a data gateway"
       href: service-gateway-deployment-guidance.md
     - name: "On-premises data gateway FAQ"
-      href: service-gateway-onprem-faq.md
+      href: service-gateway-power-bi-faq.md
   - name: How to
     items:
-    - name: "Install gateways"
-      href: service-gateway-install.md
-    - name: "Manage gateways"
-      href: service-gateway-manage.md
-    - name: "Monitor gateway performance"
-      href: service-gateway-performance-monitoring.md
-    - name: "Manage your enterprise data source - Analysis Services"
-      href: service-gateway-enterprise-manage-ssas.md
-    - name: "Manage your enterprise data source - SAP HANA"
-      href: service-gateway-enterprise-manage-sap.md
-    - name: "Manage your enterprise data source - SQL"
-      href: service-gateway-enterprise-manage-sql.md
-    - name: "Manage your data source - Oracle"
-      href: service-gateway-onprem-manage-oracle.md
-    - name: "Manage your enterprise data source - import/scheduled refresh"
-      href: service-gateway-enterprise-manage-scheduled-refresh.md
-    - name: "Merge on-premises and cloud data sources"
-      href: service-gateway-mashup-on-premises-cloud.md
+    - name: "On-premises data gateway - in-depth"
+      href: service-gateway-onprem-indepth.md
+    - name: "On-premises data gateway (personal mode)"
+      href: service-gateway-personal-mode.md
+    - name: "Manage data sources"
+      items:
+      - name: "Manage data sources"
+        href: service-gateway-data-sources.md
+      - name: "Manage your enterprise data source - Analysis Services"
+        href: service-gateway-enterprise-manage-ssas.md
+      - name: "Manage your enterprise data source - SAP HANA"
+        href: service-gateway-enterprise-manage-sap.md
+      - name: "Manage your enterprise data source - SQL"
+        href: service-gateway-enterprise-manage-sql.md
+      - name: "Manage your data source - Oracle"
+        href: service-gateway-onprem-manage-oracle.md
+      - name: "Manage your enterprise data source - import/scheduled refresh"
+        href: service-gateway-enterprise-manage-scheduled-refresh.md
+      - name: "Merge on-premises and cloud data sources"
+        href: service-gateway-mashup-on-premises-cloud.md
     - name: "Enable single sign-on (SSO)"
       items:
       - name: "Single sign-on (SSO) - overview"
@@ -1325,24 +1321,16 @@
         href: service-gateway-sso-kerberos-resource.md
       - name: "Single sign-on (SSO) - SAML"
         href: service-gateway-sso-saml.md
-    - name: "Configuring proxy settings"
-      href: service-gateway-proxy.md
-    - name: "High availability clusters for on-premises data gateway"
-      href: service-gateway-high-availability-clusters.md
-    - name: "On-premises data gateway"
-      href: service-gateway-onprem.md
-    - name: "On-premises data gateway - in-depth"
-      href: service-gateway-onprem-indepth.md
-    - name: "On-premises data gateway (personal mode)"
-      href: service-gateway-personal-mode.md
-    - name: "Custom connectors"
-      href: service-gateway-custom-connectors.md
-    - name: "Troubleshoot the on-premises data gateway"
+    - name: "Troubleshoot the gateway"
       href: service-gateway-onprem-tshoot.md
+    - name: "Troubleshoot the gateway (personal mode)"
+      href: service-admin-troubleshooting-power-bi-personal-gateway.md
+    - name: "Use custom connectors"
+      href: service-gateway-custom-connectors.md
   - name: "Resources"
     items:
     - name: "Monthly gateway updates"
-      href: service-gateway-monthly-updates.md
+      href: "https://review.docs.microsoft.com/data-integration/gateway/service-gateway-monthly-updates?branch=master"
 - name: Administration
   items:
   - name: Overview
