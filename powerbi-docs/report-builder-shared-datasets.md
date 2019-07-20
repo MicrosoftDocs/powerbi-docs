@@ -13,7 +13,7 @@ ms.author: maggies
 
 You can use a dataset that you create in Power BI Desktop as a data source for Power BI Report Builder paginated reports. Picture this scenario: You've created a Power BI report in Power BI Desktop. You spent a lot of time designing the data model, then created a beautiful Power BI report with all sorts of great visuals. Your report has a matrix with many rows, so you have to scroll to see them all. Your report readers want a report they can print out, that will show all the rows in that matrix. A Power BI paginated report can do that: print a table or matrix that runs to multiple pages, with page headers and footers and a perfect page layout that you design. It will complement the Power BI Desktop report. You want them to be based on the exact same data, no discrepancies, so you use the same dataset.
 
-![Paginated report](media/report-builder-shared-datasets/power-bi-report-builder-print-p1-p2.png)
+![Power BI Desktop to Report Builder paginated report](media/report-builder-shared-datasets/power-bi-desktop-report-builder-arrow.png)
 
 The dataset doesn't have to be in a workspace in a Premium capacity, and you don't need to be a member of that workspace. You just need to have [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) for the dataset. To publish your paginated report, you do need a Power BI Pro license. You also need at least a Contributor role for a workspace in a Premium capacity.
 
@@ -25,7 +25,7 @@ Here's a list of what you need and don't need to use a shared dataset in Power B
 - To access a Power BI dataset, you need to have Build permission for the dataset. Read about [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 - You don't need a Power BI Pro license to create a paginated report in Report Builder. 
 - You do need a Power BI Pro license to publish your paginated report. You also need at least a Contributor role for a workspace in a Premium capacity. 
-- Optional: If you want to follow along with this article, download the Power BI Desktop [Retail Analysis sample .pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file, open it in Power BI Desktop and add a table with a lot of columns, and then save it to a workspace in the Power BI service. 
+- Optional: If you want to follow along with this article, download the Power BI Desktop [Retail Analysis sample .pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file, open it in Power BI Desktop and add a table with a lot of columns. Then save it to a workspace in the Power BI service. 
 
 ## Connect to the Power BI dataset
 
