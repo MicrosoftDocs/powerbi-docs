@@ -41,6 +41,9 @@ A Power BI tenant administrator enables notifications in the admin portal:
 
     ![Enable service notifications](media/service-interruption-notifications/enable-notifications.png)
 
+> [!NOTE]
+> Power BI sends notifications from the account _no-reply-powerbi@microsoft.com_. Ensure that this account is whitelisted so that notifications don't end up in a spam or junk folder.
+
 ## Next steps
 
 [Power BI Pro and Power BI Premium support options](service-support-options.md)
