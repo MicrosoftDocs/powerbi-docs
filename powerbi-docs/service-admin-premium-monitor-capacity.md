@@ -36,7 +36,7 @@ Be patient. It takes a few minutes to install and refresh metrics. If the app sh
 
 To check the last time your Premium Capacity Metrics app refreshed, click **Settings** > **Datasets** > **Power BI Premium Capacity Metrics** > **Refresh History**. 
 
-![Refresh history in Settings](media/settings-refresh-history.png)
+![Refresh history in Settings](media/service-admin-premium-monitor-capacity/settings-refresh-history.png)
 
 The last refresh is shown, or click **Refresh history** to see scheduled and on demand refreshes.
 
