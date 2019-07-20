@@ -455,6 +455,8 @@
         href: service-support-options.md
       - name: "Ten tips for getting help"
         href: service-tips-for-finding-help.md
+      - name: "Service interruption notifications"
+        href: service-interruption-notifications.md
     - name: Extend Power BI
       items:         
       - name: "Microsoft Flow and Power BI"
