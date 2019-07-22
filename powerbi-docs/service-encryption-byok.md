@@ -43,6 +43,8 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 1. Recommended: Check that the key vault has the _soft delete_ option enabled.
 
+note: **only 4096 bit length is supported by Power BI BYOK**
+
 ### Add the service principal
 
 1. In the Azure portal, in your key vault, under **Access policies** , select **Add New**.
@@ -54,6 +56,8 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
     ![PBIX file components](media/service-encryption-byok/service-principal.png)
 
 1. Select **OK** , then **Save**.
+
+Note: The service prinicpal name might be discoverable by searchins as described above. If you can't find "Microsoft.Azure.AnalysisServices" it is likely due to the fact the Azure subscription associated with your Azure Key Vault never had a Power BI resource associated with it. The correct service princiapl will be returned by submitting the fullowing string in the search box: **00000009-0000-0000-c000-000000000000**
 
 ### Create an RSA key
 
