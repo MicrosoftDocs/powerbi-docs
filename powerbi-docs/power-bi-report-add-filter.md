@@ -92,7 +92,7 @@ Now let's add a new field to our visualization as a visual-level filter.
 
     If you save your report with this filter, report readers can interact with the **District Manager** filter in Reading view, selecting or clearing values.
     
-    If drag a *numeric column* to the filter pane to create a visual-level filter, the filter is applied to the *underlying rows of data*. For example, adding a filter on the **UnitCost** field and setting it where **UnitCost** > 20 would only show data for the Product rows where the Unit Cost was greater than 20, irrelevant of the total Unit Cost for the datapoints shown in the visual.
+    If you drag a *numeric column* to the filter pane to create a visual-level filter, the filter is applied to the *underlying rows of data*. For example, adding a filter on the **UnitCost** field and setting it where **UnitCost** > 20 would only show data for the Product rows where the Unit Cost was greater than 20, regardless of the total Unit Cost for the data points shown in the visual.
 
 ## Add a filter to an entire page
 
