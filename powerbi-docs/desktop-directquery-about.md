@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 07/22/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -68,7 +68,7 @@ When using **Get Data** in **Power BI Desktop** to connect to a data source, and
 * Visuals, or entire report pages, can be pinned as Dashboard tiles. To ensure that opening a dashboard will be fast, the tiles are automatically refreshed on a schedule (for example, every hour). The frequency of this refresh can be controlled, to reflect how frequently the data is changing, and how important it is to see the latest data. Thus, when opening a dashboard, the tiles will reflect the data as of the time of the last refresh, and not necessarily the latest changes made to the underlying source. An open dashboard can always be Refreshed to ensure it is up-to-date.    
 
 ### Live connections
-When connecting to **SQL Server Analysis Services** (SSAS), there is an option to either import data from, or connect live to, the selected data model. If you select **import**, then you define a query against that external SSAS source, and the data is imported as normal. If you select to **connect live**, then there is no query defined, and the entire external model is shown in the field list. If you select **DirectQuery**, as visuals are built, queries are sent to the external SSAS source. However, unlike DirectQuery, there is no sense in which a new *model* is being created; in other words, it's not possible to define new calculated columns, hierarchies, relationships, and so on. Instead you are simply connecting directly to the external SSAS model.
+When connecting to **SQL Server Analysis Services** (SSAS), there is an option to either import data from, or connect live to, the selected data model. If you select **import**, then you define a query against that external SSAS source, and the data is imported as normal. If you select to **connect live**, then there is no query defined, and the entire external model is shown in the field list.
 
 The situation described in the previous paragraph applies to connecting to the following sources as well, except that there is no option to import the data:
 
@@ -112,8 +112,8 @@ When using **DirectQuery**, the overall experience depends very much on the perf
 
 Along with the performance of the underlying source, careful consideration should be paid to the load that will be placed upon it (that often impacts the performance). As discussed further below, each user that opens a shared report, and each dashboard tile that is periodically refreshed, will be sending at least one query per visual to the underlying source. This fact requires that the source be able to handle such a query load, while still maintaining reasonable performance.
 
-### Limited to a single source
-When importing data, it is possible to combine data from multiple sources into a single model, for example, to easily join some data from a corporate SQL Server database with some local data maintained in an Excel file. This is not possible when using DirectQuery. When selecting DirectQuery for a source, it will then only be possible to use data from that single source (such as a single SQL Server database).
+### Security implications when combining data sources
+It's possible to use multiple data sources in a DirectQuery model, just as when you import data, by using the [Composite models](desktop-composite-models.md) feature. When you do this, it's important to understand how data is moved back and forth between the underlying data sources, and the [security implications](desktop-composite-models.md#security-implications) it brings.
 
 ### Limited data transformations
 Similarly, there are limitations in the data transformations that can be applied within **Query Editor**. With imported data, a sophisticated set of transformations can easily be applied to clean and reshape the data before using it to create visuals (such as parsing JSON documents, or pivoting data from a column to a row orientated form). Those transformations are more limited in DirectQuery. First, when connecting to an OLAP source like SAP Business Warehouse, no transformations can be defined at all, and the entire external ‘model’ is taken from the source. For relational sources, like SQL Server, it is still possible to define a set of transformations per query, but those transformations are limited for performance reasons. Any such transformation will need to be applied on every query to the underlying source, rather than once on data refresh, so they are limited to those transformations that can reasonably be translated into a single native query. If you use a transformation that is too complex, then you will receive an error that either it must be deleted, or the model switched to Import mode.
@@ -300,11 +300,11 @@ Once a report is published, the maximum number of concurrent queries sent to the
 ### Diagnosing performance issues
 This section describes how to diagnose performance issues, or how to get more detailed information to allow the reports to be optimized.
 
-It's strongly recommended that any diagnosis of performance issues starts in **Power BI Desktop**, rather than in the **Power BI service**. It's commonly the case that performance issues are simply based on the level of performance of the underlying source, and these are more easily identified and diagnosed in the much more isolated environment of **Power BI Desktop**, and initially eliminates certain components (such as the Power BI gateway). Only if the performance issues are found to not be present with Power BI Desktop should investigation focus on the specifics of the report in the Power BI service.
+It's strongly recommended that any diagnosis of performance issues starts in **Power BI Desktop**, rather than in the **Power BI service**. It's commonly the case that performance issues are simply based on the level of performance of the underlying source, and these are more easily identified and diagnosed in the much more isolated environment of **Power BI Desktop**, and initially eliminates certain components (such as the Power BI gateway). Only if the performance issues are found to not be present with Power BI Desktop should investigation focus on the specifics of the report in the Power BI service. The [performance analyzer](desktop-performance-analyzer.md) is a useful tool for identifying issues throughout this process.
 
 Similarly, it is recommended to first try to isolate any issues to an individual visual, rather than many visuals on a page.
 
-So, let's say those steps (in the previous paragraphs in this section) have been taken - we now have a single visual on a page in **Power BI Desktop** that is still sluggish. To determine the queries that are sent to the underlying source by Power BI Desktop, it's possible to view traces/diagnostic information that might be emitted by that source. Such traces might also contain useful information about  the details of how the query was executed, and how it can be improved.
+Let's say those steps (in the previous paragraphs in this section) have been taken - we now have a single visual on a page in **Power BI Desktop** that is still sluggish. To determine the queries that are sent to the underlying source by Power BI Desktop, you can use the [performance analyzer](desktop-performance-analyzer.md). It's also possible to view traces/diagnostic information that might be emitted by the underlying data source. Such traces might also contain useful information about  the details of how the query was executed, and how it can be improved.
 
 Further, even in the absence of such traces from the source, it's possible to view the queries sent by Power BI, along with their execution times, as described next.
 
