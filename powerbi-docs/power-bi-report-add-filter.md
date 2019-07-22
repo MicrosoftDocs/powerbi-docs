@@ -72,7 +72,7 @@ By the way, this procedure uses the Retail Analysis sample, if you'd like to dow
      
     ![The filtered visual](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
     
-    When you use the filter on a field used in the visual where the field is aggregated (for example a sum, average or count), you're filtering on the *aggregated* value in each data point. So, asking to filter the visual above where **This Year Sales > 500000** means you would see only the **13 - Charleston Fashion Direct** data point in the result. Filters on [model measures](desktop-measures.md) always apply to the aggregated value of the data point.
+    When you use the filter on a field used in the visual where the field is aggregated (for example a sum, average, or count), you're filtering on the *aggregated* value in each data point. So, asking to filter the visual above where **This Year Sales > 500000** means you would see only the **13 - Charleston Fashion Direct** data point in the result. Filters on [model measures](desktop-measures.md) always apply to the aggregated value of the data point.
 
 ### Filter with a field that's not in the visual
 
