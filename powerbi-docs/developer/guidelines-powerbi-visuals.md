@@ -23,7 +23,7 @@ Please check [this article](https://github.com/Microsoft/PowerBI-visuals/blob/gh
 
 ## Logo guidelines
 
-This section describes the specifications for adding logos and logotypes in visuals. Logos are not mandatory. If added they must follow this guidlines. 
+This section describes the specifications for adding logos and logotypes in visuals. Logos are not mandatory. If added they must follow these guidelines. 
 
 > [!IMPORTANT]
 > Logos are allowed in *edit mode only*. Logos *can't* be displayed in view mode.
