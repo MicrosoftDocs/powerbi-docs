@@ -16,7 +16,9 @@ LocalizationGroup: Dashboards
 ---
 # Add images, videos, and more to your dashboard
 
-Watch Amanda add tiles to your dashboard.
+By adding a tile to your dashboard, you can place an image, text box, video, streaming data, or web code on your dashboard. 
+
+Watch Amanda add tiles to a dashboard.
 
    
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
@@ -115,20 +117,35 @@ You can use PubNub to add streaming data, such as Twitter feeds or sensor data, 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
 
 1. From the **Add tile** window, select **Custom Streaming Data** > **Next**.
+
 2. Select **Add streaming dataset**.
+
 3. Create a **New streaming dataset** using the Power BI API or PubNub.
+
 4. Fill in the fields for **Dataset name**, **Subscription key**, and **Channel name**. If it's a secure connection, it also has an authorization key. You can use the sample values from PubNub to try it out.
+
 5. Select **Next**.
-    You see the fields that are available in the dataset, with their data types and JSON format.
+
+   You see the fields that are available in the dataset, with their data types and JSON format.
+
 6. Select **Connect**.
-    You've created a streaming dataset.
+
+   You've created a streaming dataset.
+
 7. Go back to the dashboard and again select **Add tile** > **Custom Streaming Data** > **Next**.
+
 8. Select the sensor data dataset you created > **Next**.
+
 9. Select the visual type you want. Often a line chart works well for this data.
+
 10. Select the **Axis**, **Legend**, and **Values**.
+
 11. Decide the amount of time you want to display, either in seconds, minutes, or hours.
+
 12. Select **Next**.
+
 13. Optionally, give it a **Title** and **Subtitle**.
+
 14. Pin it to your dashboard.
 
 ## Add web content
@@ -199,7 +216,7 @@ To make changes to an existing tile:
 
 ## Considerations and troubleshooting
 * To make it easier to move the tile on your dashboard, add a title and an optional subtitle.
-* If you'd like to embed content from a web site, but the web site doesn't provide embed code to copy and paste, see embed.ly for help with generating the embed code.
+* If you'd like to embed content from a website, but the website doesn't provide embed code to copy and paste, see embed.ly for help with generating the embed code.
 
 ## Next steps
 [Intro to dashboard tiles for Power BI designers](service-dashboard-tiles.md)
