@@ -694,7 +694,9 @@ The test content can be added to the workspaces created on the Azure capacity, a
 
 It is important that the tests are repeatable: Tests should be run several times and they should deliver approximately the same result each time. An average of these results can be used to extrapolate and estimate a workload under true production conditions.
 
-To generate a stress test, consider developing a load testing application to simulate a realistic workload. The specifics of how to achieve this are outside the scope of this whitepaper. For further information including a code sample, refer to the [Load Testing Power BI Applications with Visual Studio Load Test](https://blogs.msdn.microsoft.com/charles_sterling/2018/04/04/webinar-load-testing-power-bi-applications-with-visual-studio-load-test/) webinar.
+If you already have a capacity and the reports you want to load test for, use the [PowerShell load generating tool](https://aka.ms/PowerBILoadTestingTool) to quickly generate a load test. The tool enables you to estimate how many instances of each report your capacity can run in an hour. You can use the tool to evaluate your capacity's ability for individual report rendering or for rendering several different reports in parallel. For more information, see the video [Microsoft Power BI: Premium capacity](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw).
+
+To generate a more complex test, consider developing a load testing application that simulates a realistic workload. For more information, see the webinar [Load Testing Power BI Applications with Visual Studio Load Test](https://blogs.msdn.microsoft.com/charles_sterling/2018/04/04/webinar-load-testing-power-bi-applications-with-visual-studio-load-test/).
 
 ## Exploring Real-World Scenarios
 
