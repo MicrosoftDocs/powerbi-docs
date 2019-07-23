@@ -154,7 +154,7 @@ as you can see `addTooltip` will exit with no action if the `tooltipService` is 
 
 Additional handling can be found in the sample for `mouseout` and `mousemove` events.
 
-For more information, see the [SampleBarChart visual reposiroty](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
+For more information, see the [SampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
 
 ### Populating the tooltip content by getTooltipData method
 
