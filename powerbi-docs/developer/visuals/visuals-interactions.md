@@ -23,7 +23,7 @@ The 'allowInteractions' flag is passed as a boolean during the initialization of
 In any Power BI scenario that requires the visuals not to be interactive (for example, Dashboard tiles) - 'allowInteractions' flag will be set to false.
 Otherwise (for example, Report), 'allowInteractions' will be set to true.
 
-For more information, see the [SampleBarChart visual reposiroty](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/59a47935d8f5272ce145fe804193599ddb7e2001)
+For more information, see the [SampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/59a47935d8f5272ce145fe804193599ddb7e2001)
 
 ```typescript
    ...
