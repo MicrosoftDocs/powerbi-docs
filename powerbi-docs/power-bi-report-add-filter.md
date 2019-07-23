@@ -17,7 +17,7 @@ LocalizationGroup: Reports
 
 This article explains how to add a page filter, visualization filter, report filter, or drillthrough filter to a report in Power BI. The examples in this article are in the Power BI service. The steps are almost identical in Power BI Desktop.
 
-**Did you know?** Power BI has a new filter experience, currently in preview. Read more about [the new filter experience in Power BI reports](power-bi-report-filter-preview.md).
+**Did you know?** Power BI has a new filter experience, currently in preview. Read more about [the new filter experience in Power BI reports](power-bi-report-filter.md).
 
 ![New filter experience](media/power-bi-report-add-filter/power-bi-filter-reading.png)
 
@@ -72,6 +72,8 @@ By the way, this procedure uses the Retail Analysis sample, if you'd like to dow
     The visual changes to reflect the new filter. If you save your report with the filter, report readers will see the visual filtered to begin with, and can interact with the filter in Reading view, selecting or clearing values.
      
     ![The filtered visual](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
+    
+    When you use the filter on a field used in the visual where the field is aggregated (for example a sum, average, or count), you're filtering on the *aggregated* value in each data point. So, asking to filter the visual above where **This Year Sales > 500000** means you would see only the **13 - Charleston Fashion Direct** data point in the result. Filters on [model measures](desktop-measures.md) always apply to the aggregated value of the data point.
 
 ### Filter with a field that's not in the visual
 
@@ -90,6 +92,8 @@ Now let's add a new field to our visualization as a visual-level filter.
     ![The filtered visual](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
 
     If you save your report with this filter, report readers can interact with the **District Manager** filter in Reading view, selecting or clearing values.
+    
+    If you drag a *numeric column* to the filter pane to create a visual-level filter, the filter is applied to the *underlying rows of data*. For example, adding a filter on the **UnitCost** field and setting it where **UnitCost** > 20 would only show data for the Product rows where the Unit Cost was greater than 20, regardless of the total Unit Cost for the data points shown in the visual.
 
 ## Add a filter to an entire page
 
@@ -154,10 +158,6 @@ Let's see how the drillthrough filter works.
 1. Select the back arrow to return to the previous report page.
 
 ## Considerations and troubleshooting
-
-- There are situations where your visual-level filter and page-level filter may return different results.  For example, when you add a visual-level filter, Power BI filters on the aggregated results.  The default aggregation is Sum, but you can [change the aggregation type](service-aggregates.md).  
-
-    Then, when you add a page-level filter, Power BI filters without aggregating.  It doesn't aggregate because a page can have many visuals, each of which can utilize different aggregation types.  So the filter is applied on each data row.
 
 - If you do not see the Fields pane, make sure you're in report [Editing view](service-interact-with-a-report-in-editing-view.md)    
 - If you've made lots of changes to the filters and want to return to the report author default settings, select **Reset to default** from the top menubar.

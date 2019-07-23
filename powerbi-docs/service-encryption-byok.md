@@ -41,6 +41,9 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 1. Create an RSA key with a 4096-bit length (or use an existing key of this type), with wrap and unwrap permissions.
 
+    > [!IMPORTANT]
+    > Power BI BYOK supports only RSA keys with a 4096-bit length.
+
 1. Recommended: Check that the key vault has the _soft delete_ option enabled.
 
 ### Add the service principal
@@ -48,6 +51,9 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 1. In the Azure portal, in your key vault, under **Access policies** , select **Add New**.
 
 1. Under **Select principal** , search for and select Microsoft.Azure.AnalysisServices.
+
+    > [!NOTE]
+    > If you can't find "Microsoft.Azure.AnalysisServices", it's likely that the Azure subscription associated with your Azure Key Vault never had a Power BI resource associated with it. Try searching for the following string instead: 00000009-0000-0000-c000-000000000000.
 
 1. Under **Key permissions** , select **Unwrap Key** and **Wrap Key**.
 
