@@ -1,5 +1,5 @@
 ---
-title: Add images, text, videos, and more to your dashboard
+title: Add images, videos, and more to your dashboard
 description: Documentation on how to use the Add tile widget to add an image, video, text box, web code, and streaming data tile to a dashboard.
 author: maggiesMSFT
 manager: kfile
@@ -9,27 +9,41 @@ featuredvideoid: e2PD8m1Q0vU
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/12/2019
+ms.date: 07/22/2019
 ms.author: maggies
 
 LocalizationGroup: Dashboards
 ---
-# Add images, text, videos, and more to your dashboard
+# Add images, videos, and more to your dashboard
+
+Watch Amanda add tiles to your dashboard.
+
+   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
 
 
-## Add a tile
-The **Add tile** control lets you directly add an image, text box, video, streaming data, or web code to your dashboard.
+## Add an image, video, or other tile
+You can add an image, text box, video, streaming data, or web code directly to your dashboard.
 
 1. Select **Add tile** from the top menu bar of your dashboard. Depending on space limitations, you may see only the plus ![plus sign](media/service-dashboard-add-widget/power-bi-add-tile-icon-small.png) sign.
    
     ![Add tile icon](media/service-dashboard-add-widget/power-bi-add-tile-icon.png)
-2. Select which type of tile to add: **[Web content](#add-web-content)**, **[Image](#add-an-image)**, **[Text box](#add-a-text-box-or-dashboard-heading)**, **[Video](#add-a-video)**, or **[Custom streaming data](#add-streaming-data)**.
+2. Select which type of tile to add: 
+
+    - **[Web content](#add-web-content)**
+
+    - **[Image](#add-an-image)**
+
+    - **[Text box](#add-a-text-box-or-dashboard-heading)**
+
+    - **[Video](#add-a-video)**
+
+    - **[Custom streaming data](#add-streaming-data)**
    
     ![Add tile window](media/service-dashboard-add-widget/power-bi-add-tile.png)
 
 ## Add an image
-If you want to add your company logo or some other image to your dashboard, you can do so by saving the image file online and linking to it. Make sure security credentials aren't required to access the image file. For example, because OneDrive and SharePoint require authentication, images stored there can't be added to a dashboard this way.  
+If you want to add your company logo or some other image to your dashboard, you save the image file online and link to it. Make sure security credentials aren't required to access the image file. For example, because OneDrive and SharePoint require authentication, images stored there can't be added to a dashboard this way.  
 
 1. From the **Add tile** window, select **Image** > **Next**.
 
@@ -41,22 +55,21 @@ If you want to add your company logo or some other image to your dashboard, you 
 
    c. To make the tile a hyperlink, select **Set custom link** and enter the **URL**. 
 
-        When colleagues click the image or title, they'll be taken to this URL.
+      When colleagues click the image or title, they'll be taken to this URL.
 
    d. Select **Apply**. 
 
-    ![Add image tile window](media/service-dashboard-add-widget/pbi-widget-add-image-new.png)
+      ![Add image tile window](media/service-dashboard-add-widget/pbi-widget-add-image-new.png)
 
 3. On the dashboard, resize and move the image as needed.
      
      ![Image on dashboard](media/service-dashboard-add-widget/power-bi-add-image-dash.png)
 
 ## Add a text box or dashboard heading
-1. From the **Add tile** window, select **Text box** > **Next**.
 
-   > [!NOTE]
-   > To add a dashboard heading, type your heading in the text box and increase the font.
-   > 
+To add a dashboard heading, type your heading in the text box and increase the font.
+
+1. From the **Add tile** window, select **Text box** > **Next**.
 
 2. Format the text box:
    
@@ -97,7 +110,26 @@ When you add a YouTube or Vimeo video tile to your dashboard, the video plays ri
 5. Select the subtitle to visit the playlist on YouTube.
 
 ## Add streaming data
+You can use PubNub to add streaming data, such as Twitter feeds or sensor data, to a tile in your dashboard. Power BI has created an integration to get the data from PubNub. Here, Will explains how it works.
+   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kOuINwgkEkQ" frameborder="0" allowfullscreen></iframe>
+
+1. From the **Add tile** window, select **Custom Streaming Data** > **Next**.
+2. Select **Add streaming dataset**.
+3. Create a **New streaming dataset** using the Power BI API or PubNub.
+4. Fill in the fields for **Dataset name**, **Subscription key**, and **Channel name**. If it's a secure connection, it also has an authorization key. You can use the sample values from PubNub to try it out.
+5. Select **Next**.
+    You see the fields that are available in the dataset, with their data types and JSON format.
+6. Select **Connect**.
+    You've created a streaming dataset.
+7. Go back to the dashboard and again select **Add tile** > **Custom Streaming Data** > **Next**.
+8. Select the sensor data dataset you created > **Next**.
+9. Select the visual type you want. Often a line chart works well for this data.
+10. Select the **Axis**, **Legend**, and **Values**.
+11. Decide the amount of time you want to display, either in seconds, minutes, or hours.
+12. Select **Next**.
+13. Optionally, give it a **Title** and **Subtitle**.
+14. Pin it to your dashboard.
 
 ## Add web content
 You can paste or type in any HTML content, as a tile, to your report or dashboard. Enter the embed code manually or copy/paste from sites such as Twitter, YouTube, embed.ly, and so on.
@@ -120,12 +152,12 @@ You can paste or type in any HTML content, as a tile, to your report or dashboar
    ![Dashboard with four tiles](media/service-dashboard-add-widget/pbi-widget-code-added-new.png)
 
 ### Tips for embedding web content
-* For iframes, use a secure source. If you enter your iframe embed code and get a blank tile, verify you're not using *http* for the iframe source. If so, change it to *https*.
+* For iframes, use a secure source. If you enter your iframe embed code and get a blank tile, verify you're not using *http* for the iframe source. If you are, change it to *https*.
   
   ```html
   <iframe src="https://xyz.com">
   ```
-* Edit width and height information. The embed code embeds a video and sets the video player to 560 x 315 pixels. This size will not change as you resize the tile.
+* Edit width and height information. The embed code embeds a video and sets the video player to 560 x 315 pixels. This size doesn't change as you resize the tile.
   
   ```html
   <iframe width="560" height="315"
@@ -167,10 +199,10 @@ To make changes to an existing tile:
 
 ## Considerations and troubleshooting
 * To make it easier to move the tile on your dashboard, add a title and an optional subtitle.
-* If you'd like to embed content from a website, but the website doesn't provide embed code to copy-and-paste, see embed.ly for help with generating the embed code.
+* If you'd like to embed content from a web site, but the web site doesn't provide embed code to copy and paste, see embed.ly for help with generating the embed code.
 
 ## Next steps
-[Dashboard tiles in Power BI](consumer/end-user-tiles.md)
+[Intro to dashboard tiles for Power BI designers](service-dashboard-tiles.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/).
 

@@ -1,6 +1,6 @@
 ---
 title: Add a hyperlink to a text box in a report
-description: Add a hyperlink to a text box in the Power BI service and Desktop
+description: Add a hyperlink to a text box in Power BI Desktop and the Power BI service
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/12/2019
+ms.date: 07/22/2019
 ms.author: maggies
 
 LocalizationGroup: Visualizations
@@ -17,13 +17,11 @@ LocalizationGroup: Visualizations
 # Add a hyperlink to a text box in a report
 You can add a text box to a report, pin it from a report to a dashboard, or add it directly to a dashboard. Wherever the text box is, you can always add a hyperlink to it. The article shows how to add a hyperlink to a text box in a report. 
 
-> [!NOTE]
-> For information on hyperlinks in Power BI tables and matrixes, see [Add hyperlinks to a table](power-bi-hyperlinks-in-tables.md). For information on adding text boxes to your dashboard, see [Add images, text, videos, and more to your dashboard](service-dashboard-add-widget.md). 
->  
-
->    
-> <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew#t=0m55s" frameborder="0" allowfullscreen></iframe>
->
+Watch Will Thompson create a text box and add a hyperlink to it. 
+    
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew#t=0m55s" frameborder="0" allowfullscreen></iframe>
+  
+For information on hyperlinks in Power BI tables and matrixes, see [Add hyperlinks to a table](power-bi-hyperlinks-in-tables.md). For information on adding text boxes to your dashboard, see [Add images, videos, and more to your dashboard](service-dashboard-add-widget.md). 
 
 ## To add a hyperlink to a text box
 1. Open a report, [create a text box](power-bi-reports-add-text-and-shapes.md), and add some text. 
