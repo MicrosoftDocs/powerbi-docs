@@ -69,7 +69,9 @@ Looking for **File** menu actions? The actions that used to be on the **File** m
 
 Recent updates such as viewing applied filters and the new filters pane are available by default with the new look. Even if the report designers haven't upgraded to the new filters experience, you see the new filters pane.
 
-## 7. Dashboard 'new look' experience 
+![Filter restatement](media/service-new-look/power-bi-new-look-filters.png)
+
+## Dashboard 'new look' experience 
 
 Dashboards also have a simplified action bar, just like reports and apps, for a consistent experience, while retaining the functional differences. Here's a walkthrough of actions in a dashboard.
  
