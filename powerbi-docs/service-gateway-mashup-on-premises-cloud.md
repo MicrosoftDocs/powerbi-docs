@@ -48,7 +48,6 @@ You can use the on-premises data gateway to merge or append on-premises and clou
 6. On the **Dataset settings** page for the new data set:
 
    - For the on-premises source, select the gateway associated with this data source.
-
    - Under **Data source credentials**, edit the cloud data source credentials, as necessary.
 
     Make sure privacy levels for both cloud and on-premises data sources are set appropriately to ensure the joins are handled securely.
