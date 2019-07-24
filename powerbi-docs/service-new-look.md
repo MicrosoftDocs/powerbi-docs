@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/22/2019
+ms.date: 07/24/2019
 ms.author: maggies
 # Customer intent: As a Power BI customer or potential customer, I'd like to know what the differences are between the previous look of the Power BI service and the new look
 LocalizationGroup: Get started
@@ -18,13 +18,13 @@ LocalizationGroup: Get started
 
 The Power BI service has a new look. We’ve made it easier for you to view reports. The new look is a modern experience that’s simpler and builds on your familiarity with other Microsoft products. Across the Power BI service, we’ve made report content the main point of focus by switching to a lighter color theme and updating icons. Here's an overview of what’s changed in the new look. See the numbered sections for details:
 
-![New look overview of changes](media/service-new-look/New-look-changes.png)
+![New look overview of changes](media/service-new-look/power-bi-new-look-changes.png)
 
 ## Quick tour of the changes
 
 This animation demonstrates the changes to the way reports look, in action.
 
-![New look - Quick tour](media/service-new-look/New-look-quick-tour.gif)
+![New look - Quick tour](media/service-new-look/power-bi-new-look-quick-tour.gif)
 
 ## 1. Opt in to the new look
 
@@ -57,13 +57,13 @@ The updated action bar across the top features the most relevant commands, front
 
 We didn't remove any of the functionality from the old look. You can find the additional commands such as edit, save a copy, and so on, by expanding the ellipsis (the ... menu) in the action bar. Also, you can access the usage metrics from the content list.
 
-![Report action bar in new look](media/service-new-look/Report-action-bar-new-look.gif)
+![Report action bar in new look](media/service-new-look/power-bi-report-action-bar-new-look.gif)
 
 ### Where are File menu actions?
 
 Looking for **File** menu actions? The actions that used to be on the **File** menu are also on the ellipsis (...) menu now. 
 
-![File menu in new look](media/service-new-look/File-menu-new-look.gif)
+![File menu in new look](media/service-new-look/power-bi-file-menu-new-look.gif)
 
 ## 6. New filter experience
 
@@ -75,10 +75,12 @@ Recent updates such as viewing applied filters and the new filters pane are avai
 
 Dashboards also have a simplified action bar, just like reports and apps, for a consistent experience, while retaining the functional differences. Here's a walkthrough of actions in a dashboard.
  
-![Dashboard action bar in new look](media/service-new-look/Dashboard-action-bar-new-look.gif)
+![Dashboard action bar in new look](media/service-new-look/power-bi-dashboard-action-bar-new-look.gif)
 
 ## No changes to edit mode 
 
 We’ve kept the authoring experience similar to that in Desktop. The new look changes only apply to the reading view.
 
+## Next steps
 
+[Power BI for consumers](consumer/end-user-consumer.md)
