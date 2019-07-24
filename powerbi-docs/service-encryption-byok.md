@@ -57,7 +57,9 @@ note: **only 4096 bit length is supported by Power BI BYOK**
 
 1. Select **OK** , then **Save**.
 
-Note: The service prinicpal name might be discoverable by searchins as described above. If you can't find "Microsoft.Azure.AnalysisServices" it is likely due to the fact the Azure subscription associated with your Azure Key Vault never had a Power BI resource associated with it. The correct service princiapl will be returned by submitting the fullowing string in the search box: **00000009-0000-0000-c000-000000000000**
+Note: The service prinicpal name might be discoverable by searchins as described above. If you can't find "Microsoft.Azure.AnalysisServices" it is likely due to the fact the Azure subscription associated with your Azure Key Vault never had a Power BI resource associated with it. The correct service princiapl will be returned by submitting the fullowing string in the search box: **00000009-0000-0000-c000-000000000000** 
+
+Note: To revoke access of Power BI to your data in the futurem remove access rights to this service principal from your Azure Key Vault.
 
 ### Create an RSA key
 
