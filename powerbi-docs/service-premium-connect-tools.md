@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 07/24/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -16,7 +16,7 @@ LocalizationGroup: Premium
 
 # Connect to datasets with client applications and tools (Preview)
 
-Power BI Premium workspaces and datasets support *read-only* connections from Microsoft and third-party client applications and tools. 
+Power BI Premium workspaces and datasets support *read-only* connections from Microsoft and third-party client applications and tools. By default, connections are enabled
 
 > [!NOTE]
 > This article is intended only to introduce read-only connectivity to Power BI Premium workspaces and datasets. It *is not* intended to provide in-depth information about programmability, specific tools and applications, architecture, and workspace and dataset management. Subjects described here require a solid understanding of Analysis Services tabular model database architecture and  administration.
@@ -100,6 +100,10 @@ The following datasets are not supported in the Power BI service:
 ### Roles and role memberships
 
 Currently, model roles and role memberships are not discoverable or displayed by using XMLA endpoints.
+
+## Disable connectivity
+
+By default, XMLA Endpoint connectivity is enabled for the Datasets workload. You can disable connectivity in [Workload settings](service-admin-premium-workloads.md#workload-settings).
 
 ## Audit logs 
 
