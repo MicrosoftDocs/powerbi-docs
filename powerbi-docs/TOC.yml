@@ -935,6 +935,8 @@
       href: report-builder-planning-report.md
     - name: Report Builder data
       href: report-builder-data.md
+    - name: Use Power BI shared datasets
+      href: report-builder-shared-datasets.md
     - name: Design tips
       href: report-builder-design-tips.md
     - name: Tables, matrixes, lists

@@ -8,6 +8,8 @@
       href: end-user-consumer.md
     - name: "Basic concepts and terminology for Power BI consumers"
       href: end-user-basic-concepts.md
+    - name: "Navigate the 'new look'"
+      href: ../service-new-look.md
   - name: Quickstarts
     items: 
     - name: "Find your way around in Power BI"

@@ -18,10 +18,10 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-The on-premises data gateway enables you to merge or append on-premises and cloud data sources in the same query. This is helpful when you want to combine data from multiple sources without having to use separate queries.
+You can use the on-premises data gateway to merge or append on-premises and cloud data sources in the same query. This solution is helpful when you want to combine data from multiple sources without having to use separate queries.
 
 >[!NOTE]
->This article applies only to datasets that have cloud and on-premises data sources merged or appended in a single query. For datasets, which include separate queries - one connecting to an on-premises and the other to a cloud data source - the query using the cloud data source won't be executed using the gateway.
+>This article applies only to datasets that have cloud and on-premises data sources merged or appended in a single query. For datasets that include separate queries--one that connects to an on-premises data source and the other to a cloud data source--the gateway doesn't execute the query for the cloud data source.
 
 ## Prerequisites
 
@@ -48,14 +48,13 @@ The on-premises data gateway enables you to merge or append on-premises and clou
 6. On the **Dataset settings** page for the new dataset:
 
    - For the on-premises source, select the gateway associated with this data source.
-
-   - Under **Data source credentials**, edit the cloud data source credentials as necessary.
+   - Under **Data source credentials**, edit the cloud data source credentials, as necessary.
 
     Make sure privacy levels for both cloud and on-premises data sources are set appropriately to ensure the joins are handled securely.
 
      ![Dataset settings](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
 
-7. With the cloud credentials set, you can now refresh the dataset using the **Refresh now** option, or schedule it to refresh periodically.
+7. With the cloud credentials set, you can now refresh the dataset by using the **Refresh now** option. Or, you can schedule it to refresh periodically.
 
 ## Next steps
 
