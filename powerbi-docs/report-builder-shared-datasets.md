@@ -152,7 +152,7 @@ You have several formatting options to make your table fit on one page.
 1. You can narrow the page margins in the Properties pane. If you don't see the Properties pane, on the **View** ribbon, select the **Properties** check box.
 
 1. Select the report, not the table or title.
-1. In the **Properties** pane, under **Page**, expand **Margins** and change each one to **0.75in**.
+1. In the **Report Properties** pane, under **Page**, expand **Margins** and change each one to **0.75in**.
 
     ![Set page margins](media/report-builder-shared-datasets/power-bi-report-builder-page-margins.png)
 
@@ -191,7 +191,7 @@ For example, say your report has an 8.5" X 11" format and you've set the side ma
 
     ![Set body size](media/report-builder-shared-datasets/power-bi-report-builder-body-size.png)
 
-1. Select **Run** to preview your report and make sure you've gotten rid of the blank pages.
+1. Select **Run** to preview your report and make sure you've gotten rid of the blank pages. This report now has only 26 pages, instead of the original 54. Success!
 
     ![Print no blank pages](media/report-builder-shared-datasets/power-bi-report-builder-print-26-pgs.png)
 
