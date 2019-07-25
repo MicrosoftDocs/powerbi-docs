@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/27/2019
+ms.date: 07/25/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
