@@ -42,11 +42,11 @@ A constraint in Power BI allows only *one* gateway per *report*. Even if a repor
 
 Power BI offers two types of connections: DirectQuery and Import. Not all data sources support both connection types. Many factors might contribute to your choice of one over the other, such as security requirements, performance, data limits, and data model sizes. To learn more about connection types and supported data sources, see the [list of available data source types](service-gateway-data-sources.md#list-of-available-data-source-types).
 
-Depending on which type of connection is used, gateway usage can be different. For example, try to separate DirectQuery data sources from Scheduled Refresh data sources whenever possible. The assumption is that they're in different reports and can be separated. Separating sources prevents the gateway from having thousands of DirectQuery requests queued up at the same time as the morning's scheduled refresh of a large-size data model that's used for the company's main dashboard. 
+Depending on which type of connection is used, gateway usage can be different. For example, try to separate DirectQuery data sources from scheduled refresh data sources whenever possible. The assumption is that they're in different reports and can be separated. Separating sources prevents the gateway from having thousands of DirectQuery requests queued up at the same time as the morning's scheduled refresh of a large-size data model that's used for the company's main dashboard. 
 
 Here's what to consider for each option:
 
-* **Scheduled Refresh**: Depending on your query size and the number of refreshes that occur per day, you can choose to stay between the recommended minimum hardware requirements or upgrade to a higher performance machine. If a given query isn't folded, transformations occur on the gateway machine. As a result, the gateway machine benefits from having more available RAM.
+* **Scheduled refresh**: Depending on your query size and the number of refreshes that occur per day, you can choose to stay between the recommended minimum hardware requirements or upgrade to a higher performance machine. If a given query isn't folded, transformations occur on the gateway machine. As a result, the gateway machine benefits from having more available RAM.
 
 * **DirectQuery**: A query is sent each time any user opens the report or looks at data. If you expect more than 1,000 users to access the data concurrently, make sure your computer has robust and capable hardware components. More CPU cores result in better throughput for a DirectQuery connection.
 
