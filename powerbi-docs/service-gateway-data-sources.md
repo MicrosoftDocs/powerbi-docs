@@ -33,7 +33,7 @@ Power BI supports many on-premises data sources, and each has its own requiremen
 
     ![Manage gateways](media/service-gateway-data-sources/manage-gateways.png)
 
-2.  Select a gatewa,y and then select **Add data source**. Or, go to **Gateways** > **Add data source**.
+2.  Select a gateway and then select **Add data source**. Or, go to **Gateways** > **Add data source**.
 
     ![Add data source](media/service-gateway-data-sources/add-data-source.png)
 
@@ -59,7 +59,7 @@ You can now use this data source to include data from SQL Server in your Power B
 
 ## Remove a data source
 
-You can remove a data source if you're no longer using it. Be aware that removing a data source breaks any dashboards and reports that rely on that data source.
+You can remove a data source if you no longer use it. Removing a data source breaks any dashboards and reports that rely on that data source.
 
 To remove a data source, go to the data source and then select **Remove**.
 
@@ -105,7 +105,7 @@ You can also give users and security groups administrative access to the gateway
 
     ![Add user](media/service-gateway-data-sources/add-user.png)
 
-Remember that you need to add users to each data source that you want to grant access to. Each data source has a separate list of users. You must add users to each data source separately.
+Remember that you need to add users to each data source that you want to grant access to. Each data source has a separate list of users. Add users to each data source separately.
 
 ### Remove users from a data source
 
@@ -115,7 +115,7 @@ On the **Users** tab for the data source, you can remove users and security grou
 
 ## Store encrypted credentials in the cloud
 
-When you add a data source to the gateway, you must provide credentials for that data source. All queries to the data source will run by using these credentials. The credentials are encrypted securely. They use symmetric encryption so that they can't be decrypted in the cloud before they're stored in the cloud. The credentials are sent to the machine running the gateway, on-premises, where they're decrypted when the data sources are accessed.
+When you add a data source to the gateway, you must provide credentials for that data source. All queries to the data source will run by using these credentials. The credentials are encrypted securely. They use symmetric encryption so that they can't be decrypted in the cloud before they're stored in the cloud. The credentials are sent to the machine that runs the gateway, on-premises, where they're decrypted when the data sources are accessed.
 
 ## List of available data source types
 
