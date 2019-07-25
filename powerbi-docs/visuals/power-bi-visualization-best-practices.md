@@ -402,7 +402,7 @@ Even when you choose the absolute best visual for the story, you might still nee
 
 Is the story your visual is telling compelling? Does it matter? Don’t build visuals for the sake of building visuals. Maybe you thought the data would tell an interesting story, but it doesn’t. Don’t be afraid to start over and look for a more-interesting story. Maybe the story is there but you need to measure it in a different way.
 
-Say you want to measure the success of your sales managers. What measure would you use to do this? Would you measure that best by looking at total sales or total profit, growth over previous year or performance against a target goal? Salesperson Sally might have the largest profit. If you showed total profit by salesperson in a bar chart, compared to the other salespeople, she would look like a rock star. If Sally has a high cost of sales (travel expenses, shipping costs, manufacturing costs, and so on), simply looking at sales doesn’t tell the best story.
+Say you want to measure the success of your sales managers. What measure would you use to do this? Would you measure that best by looking at total sales or total profit, growth over previous year or performance against a target goal? Salesperson Sally might have the largest profit. If you showed total profit by salesperson in a bar chart, compared to the other salespeople, they would look like a rock star. If Sally has a high cost of sales (travel expenses, shipping costs, manufacturing costs, and so on), simply looking at sales doesn’t tell the best story.
 
 #### Reflect reality, don’t distort reality
 
@@ -1002,7 +1002,7 @@ For more info on treemaps:
 
 In general, Bar, Column, and Line charts will serve most purposes. It’s well understood that Pie and Donut charts are difficult for humans to interpret correctly. In fact, they can often distort data. Avoid them where possible. Stephen Few has an excellent write-up on the history and dangers in [Save the Pies for Dessert](https://www.perceptualedge.com/articles/08-21-07.pdf).
 
-He does explain the one time where Pie charts can be useful, when comparing part-to-whole relationships. It is rarely better than a 100% Stacked Bar chart.
+They do explain the one time where Pie charts can be useful, when comparing part-to-whole relationships. It is rarely better than a 100% Stacked Bar chart.
 
 You can find another fun article (and animation) about Pie charts on the [Darkhorse Analytics site](http://www.darkhorseanalytics.com/blog/salvaging-the-pie).
 
@@ -1032,4 +1032,4 @@ More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
 ### Book recommendations
 
-There are many good books available today to help teams refresh their knowledge on visual design techniques. Stephen Few’s *Information Dashboard Design* is a must-read. He delves into greater detail in two other books: *Show Me the Numbers* and *Now You See It*. Few and others have drawn inspiration from Edward R. Tufte, whose book *The Visual Display of Quantitative Information* is considered a classic in the field. Tufte has also written *Visual Explanations*, *Envisioning Information*, and *Beautiful Evidence*. Andy Kirk’s new book *Data Visualization: A Handbook for Data Driven Design* is another great option. Some other recommended authors are: Lachlan James, William McKnight, and Boris Evelson (Forrester), Darkhorse Analytics.
+There are many good books available today to help teams refresh their knowledge on visual design techniques. Stephen Few’s *Information Dashboard Design* is a must-read. They delve into greater detail in two other books: *Show Me the Numbers* and *Now You See It*. Few and others have drawn inspiration from Edward R. Tufte, whose book *The Visual Display of Quantitative Information* is considered a classic in the field. Tufte has also written *Visual Explanations*, *Envisioning Information*, and *Beautiful Evidence*. Andy Kirk’s new book *Data Visualization: A Handbook for Data Driven Design* is another great option. Some other recommended authors are: Lachlan James, William McKnight, and Boris Evelson (Forrester), Darkhorse Analytics.

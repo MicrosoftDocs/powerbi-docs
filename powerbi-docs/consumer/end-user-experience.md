@@ -17,7 +17,7 @@ LocalizationGroup: Get started
 ---
 # Quickstart - Getting around in Power BI service
 
-Now that you know the basics of Power BI, let's take a look around **Power BI service**. As mentioned earlier, someone on your team might spend all of her time in **Power BI Desktop**, combining data and creating reports for others. But you, on the other hand, might spend all of your time in Power BI service, viewing and interacting with content created by others (**consuming** experience). In this quickstart you'll be importing sample data and using that data to learn your way around Power BI service. 
+Now that you know the basics of Power BI, let's take a look around **Power BI service**. As mentioned earlier, someone on your team might spend all of their time in **Power BI Desktop**, combining data and creating reports for others. But you, on the other hand, might spend all of your time in Power BI service, viewing and interacting with content created by others (**consuming** experience). In this quickstart you'll be importing sample data and using that data to learn your way around Power BI service. 
  
 ## Prerequisites
 

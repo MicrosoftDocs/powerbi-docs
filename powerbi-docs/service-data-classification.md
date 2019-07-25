@@ -75,7 +75,7 @@ Once you fill in the form with your classification types, select **Apply** to sa
 
 ![](media/service-data-classification/filled_in_classification_form.png)
 
-At this point, all dashboards will be assigned the default classification, and dashboard owners will now be able to update the classification type to the one appropriate for her content. You can return here in the future to add or remove classification types or change the default.  
+At this point, all dashboards will be assigned the default classification, and dashboard owners will now be able to update the classification type to the one appropriate for their content. You can return here in the future to add or remove classification types or change the default.  
 
 > [!NOTE]
 > There are a few important things to remember when you come back to make changes:

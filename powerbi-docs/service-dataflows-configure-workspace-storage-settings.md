@@ -101,7 +101,7 @@ There are some additional considerations as well, described in the following lis
 
 1.	Anna creates a new app workspace and configures it to store dataflows in the organization’s data lake.
 2.	Ben, who is also a member of the workspace Anna created, wants to use Power BI Desktop and the dataflow connector to get data from the dataflow Anna created.
-3.	Ben receives an error because he was not added as an authorized user to the dataflow’s CDM folder in the data lake.
+3.	Ben receives an error because they were not added as an authorized user to the dataflow’s CDM folder in the data lake.
 
     ![Error attempting to use dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 

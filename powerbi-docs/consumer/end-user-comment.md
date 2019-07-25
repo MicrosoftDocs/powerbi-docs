@@ -27,7 +27,7 @@ When you add a comment to a report, Power BI captures the current filter and sli
 
 ![report with filters video](media/end-user-comment/comment-reports-with-filters/comment-reports-with-filters.gif)
 
-Why is this important? Say a colleague applied a filter that revealed an interesting insight that he wants to share with the team. Without that filter selected, the comment might not make sense. 
+Why is this important? Say a colleague applied a filter that revealed an interesting insight that they want to share with the team. Without that filter selected, the comment might not make sense. 
 
 ### Add a general comment to a dashboard or report
 The processes for adding comments to a dashboard or report are similar. In this example, we're using a dashboard. 
@@ -83,7 +83,7 @@ In addition to adding comments to an entire dashboard or to an entire report pag
 ### Get your colleagues attention by using the @ sign
 Whether you're creating a dashboard, report, tile, or visual comment, grab your colleagues' attention by using the "\@" symbol.  When you type the "\@" symbol, Power BI opens a dropdown where you can search for and select individuals from your organization. Any verified name prefaced with the "\@" symbol, appears in blue font. 
 
-Here's a conversation I'm having with the visualization *designer*. He uses the @ symbol to ensure I see the comment. I know this comment is for me. When I open this app dashboard in Power BI, I select **Comments** from the header. The **Comments** pane displays our conversation.
+Here's a conversation I'm having with the visualization *designer*. They use the @ symbol to ensure I see the comment. I know this comment is for me. When I open this app dashboard in Power BI, I select **Comments** from the header. The **Comments** pane displays our conversation.
 
 ![Add a comment mention](media/end-user-comment/power-bi-comment-convo.png)  
 

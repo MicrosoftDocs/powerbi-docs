@@ -140,7 +140,7 @@ Once your tabular model is deployed and ready for consumption, you need to add a
    
    In the role as **Sales Manager**,  Sumit can see data from all the different sales regions. Sumit creates this report (the report created in the previous task steps) and publishes it to the Power BI service.
    
-   Once Sumit publishes the report, he creates a dashboard in the Power BI service called **TabularDynamicSec** based on that report. In the following image, notice that Sumit can see the data corresponding to all the sales region.
+   Once Sumit publishes the report, they create a dashboard in the Power BI service called **TabularDynamicSec** based on that report. In the following image, notice that Sumit can see the data corresponding to all the sales region.
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/donut_chart_1.png)
 
@@ -150,7 +150,7 @@ Once your tabular model is deployed and ready for consumption, you need to add a
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_dashboard.png)
 
-3. When Jon Doe logs in to the **Power BI** service and views the shared dashboard that Sumit created, he should **only** see sales from the his region. 
+3. When Jon Doe logs in to the **Power BI** service and views the shared dashboard that Sumit created, they should **only** see sales from their region. 
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/dashboard_jon_doe.png)
 

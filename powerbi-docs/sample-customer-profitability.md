@@ -15,7 +15,7 @@ LocalizationGroup: Samples
 ---
 # Customer Profitability sample for Power BI: Take a tour
 
-The Customer Profitability sample content pack contains a dashboard, report, and dataset for a company that manufactures marketing materials. This dashboard was created by a CFO to see key metrics about her five business unit managers (executives), products, customers, and gross margins (GM). At a glance, she can see what factors are impacting profitability.
+The Customer Profitability sample content pack contains a dashboard, report, and dataset for a company that manufactures marketing materials. This dashboard was created by a CFO to see key metrics about their five business unit managers (executives), products, customers, and gross margins (GM). At a glance, they can see what factors are impacting profitability.
 
 ![Dashboard for the Customer Profitability sample](media/sample-customer-profitability/power-bi-dash.png)
 
@@ -62,7 +62,7 @@ In the workspace where you saved the sample, find the Customer Profitability das
 ![Dashboard for the Customer Profitability sample](media/sample-customer-profitability/power-bi-dash.png)
 
 ### Company-wide dashboard tiles
-1. Open the dashboard in the Power BI service. The dashboard tiles give our CFO a view of the high-level company metrics important to her. When she sees something interesting, she can select a tile to dig into the data.
+1. Open the dashboard in the Power BI service. The dashboard tiles give our CFO a view of the high-level company metrics important to them. When they see something interesting, they can select a tile to dig into the data.
 
 2. Review the tiles on the left side of the dashboard.
 
@@ -77,7 +77,7 @@ In the workspace where you saved the sample, find the Customer Profitability das
    - Total revenue for the year is close to budget.
 
 ### Manager-specific dashboard tiles
-The tiles on the right side of the dashboard provide a team scorecard. The CFO needs to keep track of her managers and these tiles give her a high-level overview of profit, by using GM%. If the GM% trend is unexpected for any manager, then she can investigate further.
+The tiles on the right side of the dashboard provide a team scorecard. The CFO needs to keep track of their managers and these tiles give them a high-level overview of profit, by using GM%. If the GM% trend is unexpected for any manager, then they can investigate further.
 
 ![GM% for managers](media/sample-customer-profitability/power-bi-manager2.png)
 
@@ -85,7 +85,7 @@ By analyzing the manager-specific dashboard tiles, we can make the following obs
 
 - All executives, except Carlos, have already exceeded their target sales. However, Carlos' actual sales are the highest.
 - Annelie’s GM% is the lowest, but we see a steady increase since March.
-- Valery, on the other hand, has seen her GM% drop significantly.
+- Valery, on the other hand, has seen their GM% drop significantly.
 - Andrew had a volatile year.
 
 ## Explore the dashboard's underlying data
@@ -102,7 +102,7 @@ Two tiles on this dashboard, **Target vs Actual** and **Year Over Year Revenue G
 
     a. From the **Executive** slider, select **Carlos Grilo**.   
 
-    b. The first PivotTable tells us that Carlos' revenue growth for his top product, Primus, is down 152% from last year. The **YoY Revenue Variance** chart shows that for most months he's below budget.  
+    b. The first PivotTable tells us that Carlos' revenue growth for his top product, Primus, is down 152% from last year. The **YoY Revenue Variance** chart shows that for most months they've been below budget.  
 
     ![PivotTable](media/sample-customer-profitability/power-bi-pivotchart.png)
 
@@ -135,23 +135,23 @@ Let’s look at two of the team members in detail and see what insights can be g
 1. In the **Executive** slicer on the left, select Andrew's name to filter the report page to display only data about Andrew:
 
    * For a quick KPI, look at Andrew’s **Revenue Status (Total Year)**; it's green, which means he’s performing well.
-   * The **Revenue % Variance to Budget by Month and Executive** chart shows that, except for a dip in February, Andrew is doing well. His dominant region is the east region, he handles 49 customers, and five out of seven products. His GM% is not the highest or the lowest.
+   * The **Revenue % Variance to Budget by Month and Executive** chart shows that, except for a dip in February, Andrew is doing well. Their dominant region is the east region, they handle 49 customers, and five out of seven products. Their GM% is not the highest or the lowest.
    * The **RevenueTY and Revenue % Var to Budget by Month** chart shows a steady, even-profit story. However, if you filter by selecting the square for **Central** in the region treemap, you discover that Andrew has revenue only in March and only in Indiana. Is this trend intentional or is it something that needs looking into?
 
-2. Now on to Valery. In the **Executive** slicer, select Valery’s name to filter the report page to display data only about her. 
+2. Now on to Valery. In the **Executive** slicer, select Valery’s name to filter the report page to display data only about them. 
 
    ![Valery's data](media/sample-customer-profitability/customer3.png)
 
    * Notice the red KPI for **Revenue Status (Total Year)**. This item definitely needs further investigation.
-   * Her revenue variance also paints a worrying picture; she is not meeting her revenue margins.
-   * Valery has only nine customers, handles only two products, and works almost exclusively with customers in the north region. This specialization could explain the wide fluctuations in her metrics.
-   * If you select the **North** square in the tree map, it shows that Valery’s gross margin in the north region is consistent with her overall margin.
-   * Selecting each of the other **Total Revenue by Region** squares tells an interesting story: her GM% ranges from 23% to 79%. Her revenue numbers, in all regions except the north region, are extremely seasonal.
+   * Their revenue variance also paints a worrying picture; they are not meeting their revenue margins.
+   * Valery has only nine customers, handles only two products, and works almost exclusively with customers in the north region. This specialization could explain the wide fluctuations in their metrics.
+   * If you select the **North** square in the tree map, it shows that Valery’s gross margin in the north region is consistent with their overall margin.
+   * Selecting each of the other **Total Revenue by Region** squares tells an interesting story: their GM% ranges from 23% to 79%. Their revenue numbers, in all regions except the north region, are extremely seasonal.
 
 3. Continue exploring to find out why Valery’s area is not performing well. Look at regions, the other business units, and the next page in the report: **Industry Margin Analysis**.
 
 ### Industry Margin Analysis
-This report page provides a different slice of the data. It looks at gross margin for the entire industry, broken down by segment. The CFO uses this page to compare company and business unit metrics to industry metrics to help her explain trends and profitability. You might wonder why the **Gross Margin % by Month and Executive** chart is on this page, because it's team-specific. Having it here lets us filter the page by business unit manager.  
+This report page provides a different slice of the data. It looks at gross margin for the entire industry, broken down by segment. The CFO uses this page to compare company and business unit metrics to industry metrics to help them explain trends and profitability. You might wonder why the **Gross Margin % by Month and Executive** chart is on this page, because it's team-specific. Having it here lets us filter the page by business unit manager.  
 
 ![Industry margin analysis report page](media/sample-customer-profitability/customer6.png)
 
@@ -161,10 +161,10 @@ This report page provides a different slice of the data. It looks at gross margi
 
 3. As you select each manager in the chart, note the following details:
    * Andrew's area of influence spans many different industry segments with widely varying GM% (most on the positive side) and Var%.
-   * Annelie's chart is similar, except that she concentrates on only a handful of industry segments with a focus on the Federal segment and a focus on the Gladius product.
-   * Carlos has a clear focus on the services segment, with good profit. He's greatly improved Var% for the High Tech segment and a new segment for him, Industrial, performed exceptionally well compared to budget.
+   * Annelie's chart is similar, except that they concentrate on only a handful of industry segments with a focus on the Federal segment and a focus on the Gladius product.
+   * Carlos has a clear focus on the services segment, with good profit. They've greatly improved Var% for the High Tech segment and a new segment for them, Industrial, performed exceptionally well compared to budget.
    * Tina works with a handful of segments and has the highest GM%, but the mostly small size of her bubbles shows that her impact on the company's bottom line is minimal.
-   * Valery, who is responsible for only one product, works in only five industry segments. Her industry influence is seasonal, but always produces a large bubble, indicating a significant impact on the company’s bottom line. Do the industry segments explain her negative performance?
+   * Valery, who is responsible for only one product, works in only five industry segments. Their industry influence is seasonal, but always produces a large bubble, indicating a significant impact on the company’s bottom line. Do the industry segments explain their negative performance?
 
 ### Executive Scorecard
 This page is formatted as a Cortana answer page. To learn more, see [Create a custom answer page for Cortana](service-cortana-answer-cards.md).
