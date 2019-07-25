@@ -52,14 +52,14 @@ The lifecycle looks something like this:
 2. Nate sends mail to the distribution group, telling them about the new content pack.
 3. In Power BI Pro, Jane, a member of the Marketing distribution group, searches for and connects to this content pack in AppSource. They now have a read-only copy.  They know it's read-only because in the left Navigation Pane, there is a sharing icon to the left of the dashboard name and report name. And when they select the dashboard, a lock icon lets Jane know they are looking at a content pack dashboard. 
 4. Say they decide to customize it. They now have their own copy of the dashboard and reports. Their work does not affect the source, the original content pack, or other distribution group members. They are now working on their own copy of the dashboard and report.
-5. Nate makes updates to the dashboard and when it's ready, they publishe a new version of the content pack.
+5. Nate makes updates to the dashboard and when it's ready, they publish a new version of the content pack.
    
    * Julio, another distribution group member, didn't customize the original content pack. The new changes are automatically applied to their version of the content pack.  
    * Jane did customize the content pack. they receive a notification that there's a new version.  They can go to AppSource and get the updated content pack without losing their personalized version. They'll now have two versions: their personalized version and the updated content pack.
 6. Say Nate changes the security settings. Julio and Jane no longer have access to the content. Or say they're removed from the Marketing distribution group.
    
    * Julio didn't customize the original content pack, so the content is automatically removed. 
-   * Jane did customize the content pack. The next time she opens the dashboard all tiles from the original content pack are gone, but tiles they pinned from other reports (that they still have permission to use) still appear. The associated reports and dataset are no longer available (and don't appear in their left navigation pane).
+   * Jane did customize the content pack. The next time they open the dashboard all tiles from the original content pack are gone, but tiles they pinned from other reports (that they still have permission to use) still appear. The associated reports and dataset are no longer available (and don't appear in their left navigation pane).
 7. Or Nate deletes the content pack.
    
    * Julio didn't customize the original content pack, so the content is automatically removed. 
