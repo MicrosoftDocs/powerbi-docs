@@ -629,7 +629,7 @@
         href: service-admin-manage-your-data-storage-in-power-bi.md
       - name: "Connect to files on your group's OneDrive"
         href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
-      - name: "Collaborate in your group workspace"
+      - name: "Collaborate in a classic workspace"
         href: service-collaborate-power-bi-workspace.md
       - name: "Manage your group in Power BI and Office 365"
         href: service-manage-app-workspace-in-power-bi-and-office-365.md

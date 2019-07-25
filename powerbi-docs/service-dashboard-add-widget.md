@@ -9,7 +9,7 @@ featuredvideoid: e2PD8m1Q0vU
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/22/2019
+ms.date: 07/25/2019
 ms.author: maggies
 
 LocalizationGroup: Dashboards
@@ -32,15 +32,15 @@ You can add an image, text box, video, streaming data, or web code directly to y
     ![Add tile icon](media/service-dashboard-add-widget/power-bi-add-tile-icon.png)
 2. Select which type of tile to add: 
 
-    - **[Web content](#add-web-content)**
+    **[Web content](#add-web-content)**
 
-    - **[Image](#add-an-image)**
+    **[Image](#add-an-image)**
 
-    - **[Text box](#add-a-text-box-or-dashboard-heading)**
+    **[Text box](#add-a-text-box-or-dashboard-heading)**
 
-    - **[Video](#add-a-video)**
+    **[Video](#add-a-video)**
 
-    - **[Custom streaming data](#add-streaming-data)**
+    **[Custom streaming data](#add-streaming-data)**
    
     ![Add tile window](media/service-dashboard-add-widget/power-bi-add-tile.png)
 

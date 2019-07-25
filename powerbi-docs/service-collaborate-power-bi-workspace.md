@@ -1,6 +1,6 @@
 ---
-title: Collaborate in a classic app workspace
-description: Read about collaborating on Power BI Desktop files in your app workspace, and with Office 365 services like sharing files on OneDrive for Business, conversations in Exchange, calendar, and tasks.
+title: Collaborate in a classic workspace
+description: Read about collaborating on Power BI Desktop files in your workspace, and with Office 365 services like sharing files on OneDrive for Business, conversations in Exchange, calendar, and tasks.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
@@ -8,20 +8,20 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/22/2019
+ms.date: 07/25/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Collaborate in a classic app workspace
-Power BI app workspaces are great places to collaborate with your colleagues on dashboards, reports, and datasets to create *apps*. This article is about the original, *classic* workspaces.  
+# Collaborate in a classic workspace
+Power BI workspaces are great places to collaborate with your colleagues on dashboards, reports, and datasets to create *apps*. This article is about the original, *classic* workspaces.  
 
 Collaboration doesn’t end with workspaces in Power BI. When you create one of the classic workspaces in Power BI, you're automatically creating an Office 365 group in the background. Office 365 offers other group services, such as sharing files on OneDrive for Business, conversations in Exchange, shared calendar and tasks, and so on. Read more about [groups in Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
 
 > [!NOTE]
 > The new workspace experience changes the relationship between Power BI workspaces and Office 365 groups. When you create one of the new workspaces in Power BI, you no longer automatically create an Office 365 group in the background. For more information, see [Create the new workspaces in Power BI](service-create-the-new-workspaces.md).
 
-App workspaces are only available with a [Power BI Pro license](service-features-license-type.md).
+You need a [Power BI Pro license](service-features-license-type.md) to create a workspace.
 
 ## Collaborate on Power BI Desktop files in a workspace
 After you create a Power BI Desktop file, you can publish it to a workspace so everyone in the workspace can collaborate on it.
@@ -47,7 +47,7 @@ Collaborating in Office 365 starts from the classic workspace in Power BI.
 2. From this menu, you can collaborate with your group in a few ways: 
    
    * Have a [group conversation in Office 365](#have-a-group-conversation-in-office-365).
-   * [Schedule an event](#schedule-an-event-on-the-group-workspace-calendar) on the app's group workspace calendar.
+   * [Schedule an event](#schedule-an-event-on-the-group-workspace-calendar) on the group workspace calendar.
    
    The first time you go to your group workspace in Office 365, it may take some time. Give it 15 to 30 minutes, then refresh your browser.
 
@@ -56,7 +56,7 @@ Collaborating in Office 365 starts from the classic workspace in Power BI.
    
     ![Conversations tab](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
-   The email and conversation site for your app's group workspace opens in Outlook for Office 365.
+   The email and conversation site for your group workspace opens in Outlook for Office 365.
    
    ![Calendar menu item](media/service-collaborate-power-bi-workspace/pbi_grps_o365convo.png)
 2. Read more about [group conversations in Outlook for Office 365](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
@@ -71,7 +71,7 @@ Collaborating in Office 365 starts from the classic workspace in Power BI.
    ![Outlook for Office 365](media/service-collaborate-power-bi-workspace/pbi_grps_o365_calendar.png)
 2. Read more about [group calendars in Outlook in Office 365](https://support.office.com/Article/Add-edit-and-subscribe-to-group-events-0cf1ad68-1034-4306-b367-d75e9818376a).
 
-## Manage an app workspace
+## Manage a classic workspace
 If you’re an owner or administrator for a workspace, you can also add or remove workspace members. Read more about [managing a Power BI workspace](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## Next steps
