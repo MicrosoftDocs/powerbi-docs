@@ -58,10 +58,9 @@ The following three points should be taken into consideration when using **Direc
   
   Load on the source database should also be considered, based on the number of Power BI users who will consume the published report. Using *Row Level Security* (RLS) can have a significant impact as well; a non-RLS dashboard tile shared by multiple users results in a single query to the database, but using RLS on a dashboard tile usually means the refresh of a tile requires one query *per user*, thus significantly increasing load on the source database and potentially impacting performance.
   
-  Power BI creates queries that are as efficient as possible. Under certain situations however, the generated query may not be efficient enough to avoid refresh that would fail. One example of this situation is when a generated query would retrieve an excessively large number of rows (more than 1 million) from the back-end data source, in which case the following error occurs:
+  Power BI creates queries that are as efficient as possible. Under certain situations however, the generated query may not be efficient enough to avoid refresh that would fail. One example of this situation is when a generated query would retrieve an excessively large number of rows from the back-end data source, in which case the following error occurs:
   
       The resultset of a query to external data source has exceeded
-      the maximum allowed size of '1000000' rows.
   
   This situation can occur with a simple chart that includes a very high cardinality column, with the aggregation option set to *Don’t Summarize*. The visual needs to only have columns with a cardinality below 1 million, or must have appropriate filters applied.
 * **Security** - All users who consume a published report connect to the back-end data source using the credentials entered after publication to the Power BI service. This is the same situation as data that is imported: all users see the same data, irrespective of any security rules defined in the backend source. Customers who want per-user security implemented with DirectQuery sources should use RLS. [Learn more about RLS](service-admin-rls.md).
