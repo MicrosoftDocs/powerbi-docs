@@ -37,7 +37,7 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 |     |         |         |
 |**Conjunctions**     |  and, or, each of, with, versus, &, and, but, nor, along with, in addition to       |         
 |          |         |
-|**Contractions**     |  Q&A recognizes almost all contractions, try it out.  Here are a few examples: didn’t, haven’t, isn’t, it’s, they’ll, they’d, weren’t, who’s, won’t, wouldn’t          |
+|**Contractions**     |  Q&A recognizes almost all contractions, try it out.  Here are a few examples: didn’t, haven’t, he’d, he’s, isn’t, it’s, she’ll, they’d, weren’t, who’s, won’t, wouldn’t          |
 |        |         |
 |**Dates**     |       Power BI recognizes most date terms (day, week, month, year, quarter, decade, ...) and dates written in many different formats (see below). Power BI also recognizes the following keywords: MonthName, Days 1-31, decade. Examples: January 3rd of 1995, January 3rd 1995, jan 03 1995, 3 Jan 1995, the 3rd of January, January 1995, 1995 January, 1995-01, 01/1995, names of months         |
 |        |         |
@@ -52,7 +52,7 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 |        |         |
 |**Names**     |       If a column in the dataset contains the phrase "name" (for example, EmployeeName), Q&A understands the values in that column are names. You can ask questions like "which employees are named robert."          |
 |        |         |
-**Pronouns**  | it, itself, its, they, their, them, themselves, theirs, this, these, that, those
+**Pronouns**  | he, him, himself, his, she, herself, her, hers, it, itself, its, they, their, them, themselves, theirs, this, these, that, those
 |**Query commands**     |    sorted, sort by, direction, group, group by, by, show, list, display, give me, name, just, only, arrange, rank, compare, to, with, against, alphabetically, ascending, descending, order             |
 |        |         |
 |**Range**     |      greater, more, larger, above, over, >, less, smaller, fewer, below, under, <,  at least, no less than, >=, at most, no more than, <=, in, between, in the range of, from, later, earlier, sooner, after, on, at, later than, after, since, starting with, starting from, ending with           |
