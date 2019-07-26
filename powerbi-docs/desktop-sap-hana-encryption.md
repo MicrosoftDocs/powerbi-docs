@@ -64,7 +64,7 @@ Get the certificate signed by a certificate authority (CA) that is trusted by th
     openssl x509 -req -days 365 -in Server\_Req.pem -sha256 -extfile /etc/ssl/openssl.cnf -extensions usr\_cert -CA CA\_Cert.pem -CAkey CA\_Key.pem -CAcreateserial -out Server\_Cert.pem
     ```
 
-    If you don't already have a CA you can use, you can create a root CA yourself by followingthe steps outlined in[Securing the Communication between SAP HANA Studio and SAP HANA Server through SSL](https://blogs.sap.com/2015/09/28/securing-the-communication-between-sap-hana-studio-and-sap-hana-server-through-ssl/).
+    If you don't already have a CA you can use, you can create a root CA yourself by following the steps outlined in[Securing the Communication between SAP HANA Studio and SAP HANA Server through SSL](https://blogs.sap.com/2015/09/28/securing-the-communication-between-sap-hana-studio-and-sap-hana-server-through-ssl/).
 
 1. Create the HANA server certificate chain by combining the server certificate, key, and the CA's certificate (the key.pem name is the convention for SAP HANA):
 
@@ -84,7 +84,7 @@ Get the certificate signed by a certificate authority (CA) that is trusted by th
 
     The client must trust the CA used to sign the HANA server's X509 certificate before an encrypted connection can be made to the HANA server from the client's machine.
 
-    There are various ways to ensure this trust relationship exists using Microsoft Management Console (mmc) or the command line. You can import the CA's X509 certificate (trust.pem) into the Trusted Root Certification Authorities folder for the user that will establish the connection, or into the same folder for the client machine itself, if that is desirable.
+    There are various ways to ensure this trust relationship exists using Microsoft Management Console (mmc) or the command line. You can import the CA's X509 certificate (trust.pem) into the **Trusted Root Certification Authorities** folder for the user that will establish the connection, or into the same folder for the client machine itself, if that is desirable.
 
     ![Trusted Root Certification Authorities folder](media/desktop-sap-hana-encryption/trusted-root-certification.png)
 
@@ -100,7 +100,7 @@ Get the certificate signed by a certificate authority (CA) that is trusted by th
 
 Test the connection in Power BI Desktop or the Power BI service.
 
-1. In Power BI Desktop or in the **Manage gateways** page of the Power BI service, ensure that **Validate server certificate** is enabled before attempting to establish a connection to your SAP HANA server. For **SSL crypto provider**, select mscrypto if you've followed the OpenSSL setup steps and commoncrypto if you've configured that library as your crypto provider. Leave the **SSL key store** and **SSL trust store** fields blank.
+1. In Power BI Desktop or in the **Manage gateways** page of the Power BI service, ensure that **Validate server certificate** is enabled before attempting to establish a connection to your SAP HANA server. For **SSL crypto provider**, select mscrypto if you've followed the OpenSSL setup steps and commoncrypto if you've configured that library as your crypto provider. Leave the SSL key store and SSL trust store fields blank.
 
     - Power BI Desktop
 
