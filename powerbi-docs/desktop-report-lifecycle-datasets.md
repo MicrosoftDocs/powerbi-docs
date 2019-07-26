@@ -96,8 +96,8 @@ When using the **Power BI service live connection**, there are a few limitations
 
 * Only users with Build permission for a dataset can connect to a published dataset using the **Power BI service live connection**. 
 * Free users only see datasets in their My Workspace and in Premium-based workspaces.
-* Since this is a live connection, left-navigation and modeling are disabled, similar to the behavior when connected to **SQL Server Analysis Services**.
-* Since this is a live connection, RLS (row- and role-level security), OneDrive for Business, and other such connection behaviors are enforced, just as they are when connected to **SQL Server Analysis Services**.
+* Since this is a live connection, left-navigation and modeling are disabled, similar to the behavior when connected to **SQL Server Analysis Services**, and you can only connect to one dataset in each report.
+* Since this is a live connection, RLS (row- and role-level security) and other such connection behaviors are enforced, just as they are when connected to **SQL Server Analysis Services**.
 * If the owner modifies the original shared .pbix file, the dataset and report that is shared in the **Power BI service** is overwritten. Reports based on that dataset aren't overwritten, but any changes to the dataset are reflected in the report.
 * Members of a workspace cannot replace the originally shared report. Attempts to do so result in a warning that prompts you to rename the file, and publish.
 * If you delete the shared dataset in the **Power BI service**, then other reports based on that dataset will no longer work properly or display their visuals.
