@@ -127,8 +127,13 @@ The visualization shows that every time tenure goes up by 13.44 months, on avera
  
 The scatter plot in the right pane plots the average percentage of low ratings for each value of tenure. It highlights the slope with a trend line.
 
-
 ![Scatter plot for Tenure](media/power-bi-visualization-influencers/power-bi-tenure.png)
+
+## Binned continuous key influencers
+
+In some cases you may find that your continuous factors were automatically turned into categorical ones. This is because we realized the relationship between the variables is not linear and so we cannot describe the relationship as simply increasing or decreasing (like we did in the example above).
+
+We run correlation tests to determine how linear the influencer is with regards to the target. If the target is continuous, we run Perasons correlation and if the target is categorical, we run Point Biserial correlation tests. If we detect the relationship is not sufficiently linear we conduct supervised binning and generate a maximum of 5 bins. To figure out which bins make the most sense we use a supervised binning method which looks at the relationship between the explanatory factor and the target being analyzed.
 
 ## Interpret measures and aggregates as key influencers 
  
@@ -204,15 +209,14 @@ Top segments for numerical targets show groups where the house prices on average
 
 ## Considerations and troubleshooting 
  
-**What are the limitations for the preview?** 
+**What are the limitations for the visual?** 
  
-The key influencers visual is currently in public preview, and it has some limitations. Functionality that's currently not available includes: 
-- Analyzing metrics that are aggregates or measures.
-- Consuming the visual in Power BI Embedded.
-- Consuming the visual on Power BI mobile apps.
-- RLS support.
-- Direct Query support.
-- Live Connection support.
+The key influencers visual has some limitations:
+
+- Direct Query is not supported
+- Live Connection to Azure Analysis Services and Sql Server Analysis Services is not supported
+- Publish to web is not supported
+- .NET Framework 4.6 or higher is required
 
 ![Numeric question](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
 
@@ -258,7 +262,7 @@ This error appears because the device isn't defined at the customer level. One c
 - You can change the summarization of devices to count. For example, use count if the number of devices might affect the score that a customer gives. 
 - You can pivot the device column to see if consuming the service on a specific device influences a customer’s rating.
  
-In this example, the data was pivoted to create new columns for browser, mobile, and tablet. You can now use these specific devices in **Explain by**. All devices turn out to be influencers, and the browser has the largest effect on customer score.
+In this example, the data was pivoted to create new columns for browser, mobile, and tablet (make sure you delete and re-create your relationships in the modeling view after pivoting your data). You can now use these specific devices in **Explain by**. All devices turn out to be influencers, and the browser has the largest effect on customer score.
 
 More precisely, customers who don't use the browser to consume the service are 3.79 times more likely to give a low score than the customers who do. Lower down in the list, for mobile the inverse is true. Customers who use the mobile app are more likely to give a low score than the customers  who don’t. 
 
