@@ -149,9 +149,9 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 
 - To export the data from a visual, you need to have [Build permission for the underlying dataset](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
 
--  The maximum number of rows that **Power BI Desktop** and **Power BI service** can export to a *.csv* file is 30,000.
+-  The maximum number of rows that **Power BI Desktop** and **Power BI service** can export from an **import mode report** to a *.csv* file is 30,000.
 
-- The maximum number of rows that the applications can export to an *.xlsx* file is 150,000.
+- The maximum number of rows that the applications can export from an **import mode report** to an *.xlsx* file is 150,000.
 
 - Export using *Underlying data* won't work if:
 
@@ -165,7 +165,7 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 
 - Export using *Underlying data* won't work if you enable the *Show items with no data* option for the visualization Power BI is exporting.
 
-- When using DirectQuery, the maximum amount of data that Power BI can export is 16 MB. An unintended result may be that you export less than the maximum number of rows. This is likely if:
+- When using DirectQuery, the maximum amount of data that Power BI can export is 16 MB uncompressed data. An unintended result may be that you export less than the maximum number of rows. This is likely if:
 
     - There are many columns.
 

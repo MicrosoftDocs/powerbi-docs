@@ -26,7 +26,7 @@ You can share dashboards and reports from most places in the Power BI service: F
 You can also [share a dashboard from any of the Power BI mobile apps](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md). However, you can't share dashboards from Power BI Desktop.
 
 ## Video: Share a dashboard
-Watch Amanda share her dashboard with colleagues inside and outside her company. Then follow the step-by-step instructions below the video to try it out yourself.
+Watch Amanda share the dashboard with colleagues inside and outside Amanda's company. Then follow the step-by-step instructions below the video to try it out yourself.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0tUwn8DHo3s?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
@@ -102,7 +102,7 @@ After they sign in, they see the shared dashboard or report in its own browser w
 
 They can't edit any content in this dashboard or report. Although they can interact with the charts and change filters or slicers, they can't save their changes. 
 
-Only your direct recipients can see the shared dashboard or report. For example, if you sent the email to Vicki@contoso.com, only Vicki can see the dashboard. No one else can see the dashboard, even if they have the link. Vicki must use the same email address to access it; if she signs up with any other email address, she won't have access to the dashboard.
+Only your direct recipients can see the shared dashboard or report. For example, if you sent the email to Vicki@contoso.com, only Vicki can see the dashboard. No one else can see the dashboard, even if they have the link. Vicki must use the same email address to access it; if someone signs up with any other email address, they won't have access to the dashboard.
 
 People outside your organization can't see any data if role- or row-level security is implemented on on-premises Analysis Services tabular models.
 

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.author: mblythe
 ---
 
@@ -24,10 +24,10 @@ At this time, we send emails for the following _reliability scenarios_:
 - Model refresh reliability
 - Query refresh reliability
 
-After an incident is resolved, you receive a follow-up email.
+Examples of these notifications include when users experience an extended delay in operations like opening reports, dataset refresh, or query executions. After an incident is resolved, you receive a follow-up email.
 
 > [!NOTE]
-> This feature is currently available only for dedicated capacities in Power BI Premium. It's not available for shared capacity.
+> This feature is currently available only for dedicated capacities in Power BI Premium. It's not available for shared or embedded capacity.
 
 ## Enable notifications
 

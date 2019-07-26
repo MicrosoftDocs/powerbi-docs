@@ -16,7 +16,7 @@ ms.author: mihart
 LocalizationGroup: Dashboards
 ---
 # Tutorial: Set data alerts in Power BI service
-Set alerts to notify you when data in your dashboards changes beyond limits you set. 
+Set alerts to notify you when data in your dashboards changes beyond limits you set.  
 
 You can set alerts on tiles if you have a Power BI Pro license, or if a dashboard has been shared with you from a [Premium capacity](../service-premium-what-is.md). Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs and cards. Alerts can be set on visuals created from streaming datasets that have been pinned from a report to a dashboard, but cannot be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**. 
 
@@ -40,7 +40,7 @@ This tutorial covers the following.
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
 ## Set data alerts in Power BI service
-Watch Amanda add some alerts to tiles on her dashboard. Then follow the step-by-step instructions below the video to try it out yourself.
+Watch Amanda add some alerts to tiles on the dashboard. Then follow the step-by-step instructions below the video to try it out yourself.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
 
