@@ -327,7 +327,7 @@ Power BI's integration with Azure AD B2B works with all business email addresses
 ![Integration flow chart](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_23.png)
 
 
-It is important to recognize that the Azure AD account will be used or created in the external party's Azure AD, this will make it possible that Lucy can use their own username and password and their credentials will automatically stop working in other tenants whenever they leave the company when their organization also uses Azure AD.
+It is important to recognize that the Azure AD account will be used or created in the external party's Azure AD, this will make it possible for Lucy to use their own username and password and their credentials will automatically stop working in other tenants whenever Lucy leaves the company when their organization also uses Azure AD.
 
 ## Licensing
 

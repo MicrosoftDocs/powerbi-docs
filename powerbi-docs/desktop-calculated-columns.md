@@ -27,23 +27,23 @@ Calculated columns calculate results by using [Data Analysis Expressions](https:
 DAX formulas are similar to Excel formulas. In fact, DAX has many of the same functions as Excel. DAX functions, however, are meant to work over data interactively sliced or filtered in a report, like in Power BI Desktop. Unlike Excel, where you can have a different formula for each row in a table, when you create a DAX formula for a new column, it will calculate a result for every row in the table. Column values are recalculated as necessary, like when the underlying data is refreshed and values have changed.
 
 ## Let’s look at an example
-Jeff is a shipping manager at Contoso.They want to create a report showing the number of shipments to different cities. They have a Geography table with separate fields for city and state. But, Jeff wants their reports to show City, State as a single value on the same row. Right now, Jeff’s Geography table doesn’t have the field they want.
+Jeff is a shipping manager at Contoso, and wants to create a report showing the number of shipments to different cities. Jeff has a Geography table with separate fields for city and state. But, Jeff wants their reports to show City, State as a single value on the same row. Right now, Jeff’s Geography table doesn’t have the desired field.
 
 ![](media/desktop-calculated-columns/calccolinpbid_cityandstatefields.png)
 
 But with a calculated column, Jeff can put together, or concatenate, the cities from the City column with the states from the State column.
 
-Jeff right clicks on the Geography table and then clicks New Column. They then enter the following DAX formula into the formula bar:
+Jeff right clicks on the Geography table and then clicks New Column. Jeff then enters the following DAX formula into the formula bar:
 
 ![](media/desktop-calculated-columns/calccolinpbid_formula.png)
 
 This formula simply creates a new column named CityState, and for each row in the Geography table, it takes values from the City column, adds a comma and a space, and then concatenates values from the State column.
 
-Now Jeff has the field they want.
+Now Jeff has the desired field.
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatefield.png)
 
-They can add it to their report canvas along with the number of shipments. Very quickly and with minimal effort, Jeff now has a City, State field they can add to just about any type of visualization. Jeff sees that when they create a map visualization, Power BI Desktop even knows how to read the City, State values in their new column.
+Jeff can now add it to the report canvas along with the number of shipments. Very quickly and with minimal effort, Jeff now has a City, State field that can be added to just about any type of visualization. Jeff sees that when a map visualization is created, Power BI Desktop already knows how to read the City, State values in the new column.
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 

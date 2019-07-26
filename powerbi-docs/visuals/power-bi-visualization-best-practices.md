@@ -1002,7 +1002,7 @@ For more info on treemaps:
 
 In general, Bar, Column, and Line charts will serve most purposes. It’s well understood that Pie and Donut charts are difficult for humans to interpret correctly. In fact, they can often distort data. Avoid them where possible. Stephen Few has an excellent write-up on the history and dangers in [Save the Pies for Dessert](https://www.perceptualedge.com/articles/08-21-07.pdf).
 
-They do explain the one time where Pie charts can be useful, when comparing part-to-whole relationships. It is rarely better than a 100% Stacked Bar chart.
+Stephen explains the one time where Pie charts can be useful, when comparing part-to-whole relationships. It is rarely better than a 100% Stacked Bar chart.
 
 You can find another fun article (and animation) about Pie charts on the [Darkhorse Analytics site](http://www.darkhorseanalytics.com/blog/salvaging-the-pie).
 

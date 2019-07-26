@@ -35,7 +35,7 @@ Jeff, a project manager at Contoso, has a table with employees in the Northwest 
 
  ![](media/desktop-calculated-tables/calctables_swempl.png)
 
-Putting these two tables together with a calculated table is quite easy. While Jeff can create a calculated table in either Report View or Data View, it’s a bit easier to do it in Data View because they can immediately see their new calculated table.
+Putting these two tables together with a calculated table is quite easy. While Jeff can create a calculated table in either Report View or Data View, it’s a bit easier to do it in Data View because then Jeff can immediately see the new calculated table.
 
 In **Data View**, on the **Modeling** tab, Jeff clicks **New Table**. A formula bar appears.
 
@@ -50,7 +50,7 @@ A new table named Western Region Employees is created.
  ![](media/desktop-calculated-tables/calctables_westregionempl.png)
 
 Jeff’s new Western Region Employees table appears just like any other
-table in the Fields list. They can create relationships to other tables,
+table in the Fields list. Jeff can even create relationships to other tables,
 add calculated columns and measures, and add any of its fields to
 reports just like any other table.
 

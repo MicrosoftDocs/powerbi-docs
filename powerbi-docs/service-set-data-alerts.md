@@ -29,7 +29,7 @@ Only you can see the alerts you set, even if you share your dashboard. Data aler
 > 
 
 ## Set data alerts in Power BI service
-Watch Amanda add some alerts to tiles on their dashboard. Then follow the step-by-step instructions below the video to try it out yourself.
+Watch Amanda add some alerts to tiles on the dashboard. Then follow the step-by-step instructions below the video to try it out yourself.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
 

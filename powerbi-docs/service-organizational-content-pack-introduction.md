@@ -46,24 +46,24 @@ The lifecycle looks something like this:
 1. In Power BI Pro, Nate creates a content pack and publishes it to the Marketing distribution group. The refresh settings are inherited with the dataset and can only be changed by Nate.
    
    > [!NOTE]
-   > If Nate creates the content pack from within a [Power BI app workspace](service-create-distribute-apps.md) that they belong to, then even if they leave the workspace, others in the Power BI workspace can take over ownership.
+   > If Nate creates the content pack from within a [Power BI app workspace](service-create-distribute-apps.md) that Nate belongs to, then even if Nate leaves the workspace, others in the Power BI workspace can take over ownership.
    > 
    > 
 2. Nate sends mail to the distribution group, telling them about the new content pack.
-3. In Power BI Pro, Jane, a member of the Marketing distribution group, searches for and connects to this content pack in AppSource. They now have a read-only copy.  They know it's read-only because in the left Navigation Pane, there is a sharing icon to the left of the dashboard name and report name. And when they select the dashboard, a lock icon lets Jane know they are looking at a content pack dashboard. 
-4. Say they decide to customize it. They now have their own copy of the dashboard and reports. Their work does not affect the source, the original content pack, or other distribution group members. They are now working on their own copy of the dashboard and report.
-5. Nate makes updates to the dashboard and when it's ready, they publish a new version of the content pack.
+3. In Power BI Pro, Jane, a member of the Marketing distribution group, searches for and connects to a content pack in AppSource. Jane now has a read-only copy. Jane knows it's read-only because in the left Navigation Pane, there is a sharing icon to the left of the dashboard name and report name. And when Jane selects the dashboard, a lock icon lets Jane know they are looking at a content pack dashboard. 
+4. Say Jane decides to customize it. Jane will now have their own copy of the dashboard and reports. Jane's work does not affect the source, the original content pack, or other distribution group members. They are now each working on their own copy of the dashboard and report.
+5. Nate makes updates to the dashboard and when it's ready, will publish a new version of the content pack.
    
-   * Julio, another distribution group member, didn't customize the original content pack. The new changes are automatically applied to their version of the content pack.  
-   * Jane did customize the content pack. they receive a notification that there's a new version.  They can go to AppSource and get the updated content pack without losing their personalized version. They'll now have two versions: their personalized version and the updated content pack.
+   * Julio, another distribution group member, didn't customize the original content pack. The new changes are automatically applied to Jane's version of the content pack.  
+   * Jane did customize the content pack. Jane then receives a notification that there's a new version.  Jane can go to AppSource and get the updated content pack without losing the personalized version. Jane now has two versions: the personalized version and the updated content pack.
 6. Say Nate changes the security settings. Julio and Jane no longer have access to the content. Or say they're removed from the Marketing distribution group.
    
    * Julio didn't customize the original content pack, so the content is automatically removed. 
-   * Jane did customize the content pack. The next time they open the dashboard all tiles from the original content pack are gone, but tiles they pinned from other reports (that they still have permission to use) still appear. The associated reports and dataset are no longer available (and don't appear in their left navigation pane).
+   * Jane did customize the content pack. The next time Jane opens the dashboard all tiles from the original content pack are gone, but tiles pinned from other reports (that Jane still has permission to use) still appear. The associated reports and dataset are no longer available (and don't appear in their left navigation pane).
 7. Or Nate deletes the content pack.
    
    * Julio didn't customize the original content pack, so the content is automatically removed. 
-   * Jane did customize the content pack. The  next time they open the dashboard all tiles from the original content pack are gone, but tiles they pinned from other reports still appear. The associated reports and dataset are no longer available (and don't appear in their left navigation pane).
+   * Jane did customize the content pack. The  next time Jane opens the dashboard all tiles from the original content pack are gone, but tiles pinned from other reports still appear. The associated reports and dataset are no longer available (and don't appear in their left navigation pane).
 
 ## Data security
 All distribution group members have the same permissions to the data as the content pack creator. The one exception to this is SQL Server Analysis Services (SSAS) on-premises tabular datasets. Because the reports and dashboards are connecting live to the on-premises SSAS model, the credentials of each individual distribution group member are used to determine the data they can access.
