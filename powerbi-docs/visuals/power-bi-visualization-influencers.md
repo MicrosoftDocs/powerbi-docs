@@ -262,7 +262,7 @@ This error appears because the device isn't defined at the customer level. One c
 - You can change the summarization of devices to count. For example, use count if the number of devices might affect the score that a customer gives. 
 - You can pivot the device column to see if consuming the service on a specific device influences a customer’s rating.
  
-In this example, the data was pivoted to create new columns for browser, mobile, and tablet (make sure you delete and re-create your realtionships in the modelling view after pivoting your data). You can now use these specific devices in **Explain by**. All devices turn out to be influencers, and the browser has the largest effect on customer score.
+In this example, the data was pivoted to create new columns for browser, mobile, and tablet (make sure you delete and re-create your relationships in the modeling view after pivoting your data). You can now use these specific devices in **Explain by**. All devices turn out to be influencers, and the browser has the largest effect on customer score.
 
 More precisely, customers who don't use the browser to consume the service are 3.79 times more likely to give a low score than the customers who do. Lower down in the list, for mobile the inverse is true. Customers who use the mobile app are more likely to give a low score than the customers  who don’t. 
 
