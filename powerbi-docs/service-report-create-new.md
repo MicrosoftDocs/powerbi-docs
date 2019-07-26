@@ -63,7 +63,7 @@ Now that our dataset is imported, let's start answering some questions.  Our Chi
    ![File menu](media/service-report-create-new/powerbi-save.png)
 
 ## Add an area chart and slicer to the report
-Our CMO has some additional questions for us to answer. She'd like to know how sales this year compare to last year. And, she'd like to see the findings by district.
+Our CMO has some additional questions for us to answer. They'd like to know how sales this year compare to last year. And, they'd like to see the findings by district.
 
 1. First, let's make some room on our canvas. Select the Gauge and move it into the top-right corner. Then grab and drag one of the corners and make it smaller.
 2. Deselect the gauge. In the Fields pane, select **Sales** > **This Year Sales** > **Value** and select **Sales** > **Last Year Sales**.
