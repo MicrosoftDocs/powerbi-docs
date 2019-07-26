@@ -23,7 +23,7 @@ When you open a report in Power BI service, each page of the report has its own 
 
 Say you're working in Power BI Desktop. You want to create a report that has links to other Power BI reports, but you want to show only some of the information in the other reports. First, filter the reports using query string parameters and save the URLs. Next, create a table in Desktop with these new report URLs.  Then publish and share the report.
 
-Another use for query string parameters is for someone creating an advanced Power BI solution.  Using DAX, they create a report that generates a filtered report URL dynamically based on the selection their customer makes in the current report. When customers select the URL, they see only the intended information. 
+Another use for query string parameters is for someone creating an advanced Power BI solution.  Using DAX, she creates a report that generates a filtered report URL dynamically based on the selection her customer makes in the current report. When customers select the URL, they see only the intended information. 
 
 ## Query string parameter syntax for filtering
 
