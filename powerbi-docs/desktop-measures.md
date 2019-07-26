@@ -37,21 +37,21 @@ Measures calculate a result from an expression formula. When you create your own
 DAX formulas are a lot like Excel formulas. DAX even has many of the same functions as Excel, such like DATE, SUM, and LEFT. But, DAX’s functions are meant to work with relational data like we have in Power BI Desktop.
 
 ## Let’s look at an example
-Jan is a sales manager at Contoso. She’s been asked to provide reseller sales projections over the next fiscal year. Jan decides to base the estimates on last year’s sales amounts, with a six percent annual increase resulting from various promotions that are scheduled over the next six months.
+Jan is a sales manager at Contoso. Jan has been asked to provide reseller sales projections over the next fiscal year. Jan decides to base the estimates on last year’s sales amounts, with a six percent annual increase resulting from various promotions that are scheduled over the next six months.
 
-To report the estimates, Jan imports last year’s sales data into Power BI Desktop. She finds the SalesAmount field in the Reseller Sales table. Because the imported data only contains sales amounts for last year, Jan renames the SalesAmount field to Last Years Sales. Jan then drag Last Years Sales onto the report canvas. It appears in a chart visualization as single value that is the sum of all reseller sales from last year.
+To report the estimates, Jan imports last year’s sales data into Power BI Desktop. Jan finds the SalesAmount field in the Reseller Sales table. Because the imported data only contains sales amounts for last year, Jan renames the SalesAmount field to Last Years Sales. Jan then drags Last Years Sales onto the report canvas. It appears in a chart visualization as single value that is the sum of all reseller sales from last year.
 
-Jan notices that even though she did not specify a calculation herself, one has been provided automatically. Power BI Desktop created its own measure by summing up all of the values in Last Years Sales.
+Jan notices that even though they did not specify a calculation, one has been provided automatically. Power BI Desktop created its own measure by summing up all of the values in Last Years Sales.
 
-But, Jan needs a measure to calculate sales projections for the coming year, which will be based on last year’s sales multiplied by 1.06 to account for the expected 6 percent increase in business. For this calculation, she’ll create her own measure. Using the New Measure feature, she creates a new measure, then enters the following DAX formula:
+But, Jan needs a measure to calculate sales projections for the coming year, which will be based on last year’s sales multiplied by 1.06 to account for the expected 6 percent increase in business. For this calculation, Jan will create their own measure. Using the New Measure feature, they create a new measure, then enters the following DAX formula:
 
     Projected Sales = SUM('Sales'[Last Years Sales])*1.06
 
-Jan then drags her new Projected Sales measure into the chart.
+Jan then drags their new Projected Sales measure into the chart.
 
 ![](media/desktop-measures/measuresinpbid_lastyearsales.png)
 
-Quickly and with minimal effort, Jan now has a measure to calculate projected sales. Jan can further analyze her projections by filtering on specific resellers or by adding other fields to her report.
+Quickly and with minimal effort, Jan now has a measure to calculate projected sales. Jan can further analyze the projections by filtering on specific resellers or by adding other fields to their report.
 
 ## Data categories for measures
 

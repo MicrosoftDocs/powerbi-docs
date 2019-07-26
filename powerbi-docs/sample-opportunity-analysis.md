@@ -66,7 +66,7 @@ Alternatively, you can download the Opportunity Analysis sample as a [.pbix file
 If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529782). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
 
 ## What is our dashboard telling us?
-Our sales manager has created a dashboard to track those metrics most important to her. When she sees something interesting, she can select a tile to look into the data:
+Our sales manager has created a dashboard to track those metrics most important to them. When they see something interesting, they can select a tile to look into the data:
 
 - Company revenue is $2 billion and factored revenue is $461 million.
 - Opportunity count and revenue follow a familiar funnel pattern, with totals decreasing with each subsequent stage.
@@ -123,7 +123,7 @@ For this page we’re looking at similar factors, but from a date and time persp
  
 ![Upcoming Opportunities page](media/sample-opportunity-analysis/opportunity6.png)
 
-Our CFO uses this page to manage workload. By looking at the revenue opportunities by sales stage and month, she can plan accordingly.
+Our CFO uses this page to manage workload. By looking at the revenue opportunities by sales stage and month, they can plan accordingly.
 
 Note the following details:
 * Average revenue for the Finalize sales stage is the highest. Closing these deals is a top priority.
