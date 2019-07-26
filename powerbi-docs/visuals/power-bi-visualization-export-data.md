@@ -75,7 +75,7 @@ To follow along, open the [Procurement analysis sample report](../sample-procure
 
     If you applied filters to the visualization, the exported data will export as filtered. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
     
-    Data is exported on a visual level. If you've drilled down to another level of the visualization, the exported data will include all of the data, not just the data from the currently drilled level.
+    Data is not exported based on the drill level for the visual. For example, if you've drilled down to another level of the visualization, the exported data will include all of the data in the hierarchy, not just the data used to create the visual at its currently drilled level.
 
     **Summarized data**: Select this option if you want to export data for what you see in that visual.  This type of export shows you only the data (columns and measures) that you chose to create the visual.  If the visual has an aggregate, you'll export aggregated data. For example, if you have a bar chart showing four bars, you'll get four rows of data. Summarized data is available as *.xlsx* and *.csv*.
 
@@ -90,7 +90,7 @@ To follow along, open the [Procurement analysis sample report](../sample-procure
 
     If you applied filters to the visualization, the exported data will export as filtered. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
     
-    Exporting data happens on a visual-level. If you drill down to another level of the visualization, the exported data will include all of the data hierarchy that your visual is grouped by, not just the data from the level you have drilled down to.
+        Data is not exported based on the drill level for the visual. For example, if you've drilled down to another level of the visualization, the exported data will include all of the data in the hierarchy, not just the data used to create the visual at its currently drilled level.
 
     >[!WARNING]
     >Exporting underlying data lets users to see all the detailed data -- every column in the data. Power BI service admins can turn this off for their organization. If you are a dataset owner, you can set proprietary columns to **hidden** so that they don't show up in the **Field** list in Desktop or the Power BI service.
