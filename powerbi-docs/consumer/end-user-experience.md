@@ -57,7 +57,7 @@ If you are a new user, you'll only see one workspace -- **My Workspace**.
 
 ![short video of workspace](./media/end-user-experience/nav.gif)
 
-Within those tabs (aka *content views*), you'll see information about the content as well as actions you can take with that content.  For example, from the Dashboards tab you can open a dashboard, search, sort, and much more.
+Within those tabs (also called *content views*), you'll see information about the content as well as actions you can take with that content.  For example, from the Dashboards tab you can open a dashboard, search, sort, and much more.
 
 ![Dashboards tab](./media/end-user-experience/power-bi-dashboard-tab.png)
 
