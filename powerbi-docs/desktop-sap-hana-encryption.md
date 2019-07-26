@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/25/2019
+ms.date: 07/26/2019
 ms.author: mblythe
 
 LocalizationGroup: Connect to data
@@ -17,11 +17,7 @@ LocalizationGroup: Connect to data
 
 # Enable encryption for SAP HANA
 
-You can encrypt connections to an SAP HANA server from Power BI Desktop or the Power BI service. We recommend encrypted connections in general, and we strongly recommend them when connecting to a HANA server from the Power BI service using SAML SSO.
-
-We strongly recommend encryption because the SAML assertion that the HANA ODBC driver sends is _not_ encrypted by default. Without encryption enabled, the assertion could be vulnerable to eavesdropping by third parties.
-
-You can enable HANA encryption using both OpenSSL and SAP's proprietary CommonCryptoLib (formerly known as sapcrypto) library. SAP recommends using CommonCryptoLib, but basic encryption features are available using either library.
+We recommend that you encrypt connections to an SAP HANA server from Power BI Desktop and the Power BI service. You can enable HANA encryption using both OpenSSL and SAP's proprietary CommonCryptoLib (formerly known as sapcrypto) library. SAP recommends using CommonCryptoLib, but basic encryption features are available using either library.
 
 This article provides an overview of enabling encryption using OpenSSL and references some specific areas of the SAP documentation. We update content and links periodically, but for comprehensive instructions and support, always refer to the official SAP documentation. If you want to set up encryption using CommonCryptoLib instead of OpenSSL, see [How to Configure TLS/SSL in SAP HANA 2.0](https://blogs.sap.com/2018/11/13/how-to-configure-tlsssl-in-sap-hana-2.0/) For steps on how to migrate from OpenSSL to CommonCryptoLib, see [SAP Note 2093286](https://launchpad.support.sap.com/#/notes/2093286) (s-user required).
 
