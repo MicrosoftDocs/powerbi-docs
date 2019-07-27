@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 07/27/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
 ---
@@ -318,11 +318,11 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 | mx-gro |Gro. |MX-GRO |Guerrero |Guerrero |GR |
 | mx-gua |Gto. |MX-GUA |Guanajuato |Guanajuato |GT |
 | mx-dur |Dgo. |MX-DUR |Durango |Durango |DU |
-| mx-dif |Col. |MX-DIF |Ciudad de México |Mexico City |DF |
-| mx-col |Coah. |MX-COL |Colima |Colima |CL |
-| mx-coa |Chis. |MX-COA |Coahuila |Coahuila |CA |
+| mx-dif |CDMX.|MX-DIF |Ciudad de México |Mexico City |DF |
+| mx-col |Col. |MX-COL |Colima |Colima |CL |
+| mx-coa |Coah. |MX-COA |Coahuila |Coahuila |CA |
 | mx-chh |Chih. |MX-CHH |Chihuahua |Chihuahua |CH |
-| mx-chp |CDMX. |MX-CHP |Chiapas |Chiapas |CP |
+| mx-chp |Chis. |MX-CHP |Chiapas |Chiapas |CP |
 | mx-cam |Camp. |MX-CAM |Campeche |Campeche |CM |
 | mx-bcs |B.C.S. |MX-BCS |Baja California Sur |Baja California Sur |BS |
 | mx-bcn |B.C. |MX-BCN |Baja California |Baja California |BN |
