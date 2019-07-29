@@ -157,7 +157,7 @@ Yes, we support the ability to run code in your reports as you can in SSRS.
 
 ### Can I use Power BI embedded to embed my paginated reports into an app I’m hosting?
 
-SaaS embedding is already supported. We plan to also support PaaS embedding with the existing Power BI APIs, but we don’t yet have a timeframe on when this scenario will be available.
+SaaS embedding is already supported. PaaS embedding is not currently supported.
 
 ### Can I drill through from a Power BI report to a paginated report?
 
