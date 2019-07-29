@@ -464,7 +464,7 @@ The result is that the gateway can't impersonate the originating user properly, 
 
 For more information about the **on-premises data gateway** and **DirectQuery**, check out the following resources:
 
-* [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-getting-started)
+* [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data sources supported by DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery and SAP BW](desktop-directquery-sap-bw.md)
