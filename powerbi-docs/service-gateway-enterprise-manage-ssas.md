@@ -213,7 +213,7 @@ For Analysis Services to determine if a user connecting to it belongs to a role 
 
 EffectiveUserName can't be used on a non-domain-joined Analysis Services server. The Analysis Services server must be joined to a domain to avoid any login errors.
 
-### How do I tell what my UPN is?
+## How do I tell what my UPN is?
 
 You might not know what your UPN is, and you might not be a domain administrator. You can use the following command from your workstation to find out the UPN for your account.
 
