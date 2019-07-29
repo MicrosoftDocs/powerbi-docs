@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/06/2019
+ms.date: 07/26/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -44,8 +44,7 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to o
 * USGov Texas
 * USGov Arizona
 
-In the public cloud the IP spaces are available, but for the government cloud, you must open an Azure Support ticket to request the IP ranges for the above listed datacenters. 
-
+In the public cloud the IP spaces are available. For the government cloud, please refer to the downloadable [Azure government service documentation](https://www.microsoft.com/download/details.aspx?id=57063) for the latest information.
 
 ## Limitations of Power BI US Government
 Some of the features that are available in the commercial version of the **Power BI service** are *not* available in the **Power BI service** for US Government customers. The Power BI team is actively working on making these features available to US Government customers, and will update this article when these features become available.
