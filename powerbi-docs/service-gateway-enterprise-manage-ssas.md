@@ -66,7 +66,7 @@ Power BI allows for mapping user names for Analysis Services data sources. You c
 You can map user names for Analysis Services in two different ways:
 
 * Manual user remapping
-* On-premises Active Directory Property Lookup to remap Azure AD UPNs to Active Directory users (Active Directory Lookup mapping)
+* On-premises Active Directory property lookup to remap Azure AD UPNs to Active Directory users (Active Directory lookup mapping)
 
 It's possible to perform manual mapping by using the second approach, but doing so is time consuming and difficult to maintain. It's especially difficult when pattern matching doesn't suffice. Examples are when domain names are different between Azure AD and on-premises Active Directory or when user account names are different between Azure AD and Active Directory. That's why manual mapping with the second approach isn't recommended.
 
@@ -88,16 +88,16 @@ To get to the UPN mapping screen, follow these steps.
 You see options to add rules and test for a given user.
 
 > [!NOTE]
-> You might change a user that you didn't intend to change. For example, if **Replace (original value)** is <em>@contoso.com</em> and **With (New name)** is <em>@contoso.local</em>, all users with a sign-in that contains <em>@contoso.com</em> are then replaced with <em>@contoso.local</em>. Also, if **Replace (Original name)** is <em>dave@contoso.com</em> and **With (New name)** is <em>dave@contoso.local</em>, a user with the sign-in of v-dave@contoso.com is sent as v-dave<em>@contoso.local</em>.
+> You might change a user that you didn't intend to change. For example, if **Replace (original value)** is contoso.com and **With (New name)** is @contoso.local, all users with a sign-in that contains @contoso.com are then replaced with @contoso.local. Also, if **Replace (Original name)** is dave@contoso.com and **With (New name)** is dave@contoso.local, a user with the sign-in of v-dave@contoso.com is sent as v-dave@contoso.local.
 
-### Active Directory Lookup mapping
+### Active Directory lookup mapping
 
-To perform on-premises Active Directory Property Lookup to remap Azure AD UPNs to Active Directory users, follow the steps in this section. To begin with, let's review how this works.
+To perform on-premises Active Directory property lookup to remap Azure AD UPNs to Active Directory users, follow the steps in this section. To begin with, let's review how this works.
 
 In the Power BI service, the following occurs:
 
 * For each query by a Power BI Azure AD user to an on-premises SQL Server Analysis Services (SSAS) server, a UPN string is passed along, such as
-       firstName.lastName@contoso.com
+       firstName.lastName@contoso.com.
 
 > [!NOTE]
 > Any manual UPN user mappings defined in the Power BI data source configuration are still applied *before* the user name string is sent to the on-premises data gateway.
@@ -105,24 +105,24 @@ In the Power BI service, the following occurs:
 In the on-premises data gateway with configurable custom user mapping, follow these steps.
 
 1. Find Active Directory to search. You can use automatic or configurable.
-2. Look up the attribute of the Active Directory person, such as *Email*, from the Power BI service. The attribute is based on an incoming UPN string like firstName.lastName@contoso.com.
-3. If the Active Directory Lookup fails, it attempts to use the passed-along UPN as EffectiveUser to SSAS.
-4. If the Active Directory Lookup succeeds, it retrieves *UserPrincipalName* of that Active Directory person.
-5. It passes the *UserPrincipalName* email as *EffectiveUser* to SSAS, such as <em>Alias@corp.on-prem.contoso</em>.
+2. Look up the attribute of the Active Directory person, such as Email, from the Power BI service. The attribute is based on an incoming UPN string like firstName.lastName@contoso.com.
+3. If the Active Directory lookup fails, it attempts to use the passed-along UPN as EffectiveUser to SSAS.
+4. If the Active Directory lookup succeeds, it retrieves UserPrincipalName of that Active Directory person.
+5. It passes the UserPrincipalName email as EffectiveUser to SSAS, such as Alias@corp.on-prem.contoso.
 
-To configure your gateway to perform the Active Directory Lookup:
+To configure your gateway to perform the Active Directory lookup:
 
 1. [Download and install the latest gateway](/data-integration/gateway/service-gateway-install).
 
-2. In the gateway, change the on-premises data gateway service to run with a domain account instead of a local service account. Otherwise, the Active Directory Lookup won’t work properly at runtime. Go to the [on-premises data gateway app](/data-integration/gateway/service-gateway-app) on your machine, and then go to **Service settings** > **Change service account**. Make sure you have the recovery key for this gateway because you need to restore it on the same machine unless you want to create a new gateway instead. Restart the gateway service for the change to take effect.
+2. In the gateway, change the on-premises data gateway service to run with a domain account instead of a local service account. Otherwise, the Active Directory lookup won’t work properly at runtime. Go to the [on-premises data gateway app](/data-integration/gateway/service-gateway-app) on your machine, and then go to **Service settings** > **Change service account**. Make sure you have the recovery key for this gateway because you need to restore it on the same machine unless you want to create a new gateway instead. Restart the gateway service for the change to take effect.
 
-3. Go to the gateway’s installation folder, *C:\Program Files\On-premises data gateway* as an administrator, to ensure that you have write permissions. Open the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file.
+3. Go to the gateway’s installation folder, C:\Program Files\On-premises data gateway, as an administrator to ensure that you have write permissions. Open the Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config file.
 
 4. Edit the following two configuration values according to *your* Active Directory attribute configurations for your Active Directory users. The following configuration values are examples. Specify the values based on your Active Directory configuration. These configurations are case sensitive, so make sure they match the values in Active Directory.
 
     ![Azure AD settings](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
 
-    If no value is provided for the ADServerPath configuration, the gateway uses the default Global Catalog. You can also specify multiple values for the ADServerPath. Each value must be separated by a semicolon, as shown in the following example:
+    If no value is provided for the ADServerPath configuration, the gateway uses the default global catalog. You can also specify multiple values for the ADServerPath. Each value must be separated by a semicolon, as shown in the following example:
 
     ```xml
     <setting name="ADServerPath" serializeAs="String">
@@ -150,12 +150,12 @@ To configure your gateway to perform the Active Directory Lookup:
 
 ### Work with mapping rules
 
-To create a mapping rule, enter a value for **Original name** and **New Name** and then select **Add**.
+To create a mapping rule, enter a value for **Original name** and **New name** and then select **Add**.
 
 | Field | Description |
 | --- | --- |
 | Replace (Original name) |The email address that you used to sign in to Power BI. |
-| With (New Name) |The value you want to replace it with. The result of the replacement is what is passed to the *EffectiveUserName* property for the Analysis Services connection. |
+| With (New name) |The value you want to replace it with. The result of the replacement is what is passed to the EffectiveUserName property for the Analysis Services connection. |
 
 ![Creating a mapping rule](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names-effective-user-names.png)
 
@@ -163,9 +163,9 @@ When you select an item in the list, you can choose to reorder it by using the c
 
 ![Reordering an item in the list](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names-entry-selected.png)
 
-### Use a wildcard (*)
+### Use a wildcard
 
-You can use a wildcard for your **Replace (Original name)** string. It can only be used on its own and not with any other string part. Use a wildcard if you want to take all users and pass a single value to the data source. This feature is useful when you want all users in your organization to use the same user in your local environment.
+You can use a wildcard (*) for your **Replace (Original name)** string. It can only be used on its own and not with any other string part. Use a wildcard if you want to take all users and pass a single value to the data source. This feature is useful when you want all users in your organization to use the same user in your local environment.
 
 ### Test a mapping rule
 
@@ -198,7 +198,7 @@ Row-level security is specific to Analysis Services row-level security. Models c
 
 A user’s ability to query and view model data is determined by:
 
-- The roles that their Windows user account are a member of.
+- The roles that their Windows user account belong to as a member.
 - Dynamic row-level security, if it's configured.
 
 Implementing role and dynamic row-level security in models are beyond the scope of this article. To learn more, see [Roles (SSAS tabular)](https://msdn.microsoft.com/library/hh213165.aspx) and [Security roles (Analysis Services - Multidimensional data)](https://msdn.microsoft.com/library/ms174840.aspx) on MSDN. For the most in-depth understanding of tabular model security, download and read the [Securing the tabular BI semantic model whitepaper](https://msdn.microsoft.com/library/jj127437.aspx).
@@ -274,7 +274,7 @@ You can use a live connection against tabular or multidimensional instances.
 | 2016 |Standard SKU or higher |
 
 * Cell level formatting and translation features aren't supported.
-* Actions and named sets aren't exposed to Power BI. You can still connect to multidimensional cubes that also contain Actions or named sets and create visuals and reports.
+* Actions and named sets aren't exposed to Power BI. You can still connect to multidimensional cubes that also contain actions or named sets and create visuals and reports.
 
 ## Next steps
 
