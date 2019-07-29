@@ -31,7 +31,7 @@ To get started, you're required to have:
 * A [Power BI Pro account](../service-self-service-signup-for-power-bi.md).
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription.
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
-* For embedding paginated reports you need at least an A4/P1 capacity [See here](https://docs.microsoft.com/en-us/power-bi/paginated-reports-faq#what-size-premium-capacity-do-i-need-for-paginated-reports).
+* For embedding paginated reports you need at least an A4/P1 capacity [See What size Premium capacity do I need for paginated reports?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
@@ -79,7 +79,7 @@ You can create your reports and datasets by using Power BI Desktop. Then you can
    
 ### Create and publish your paginated reports
 
-You can create your paginated reports by using [Power BI Report Builder](https://docs.microsoft.com/en-us/power-bi/paginated-reports-report-builder-power-bi#create-reports-in-power-bi-report-builder).Then you can [upload the report](https://docs.microsoft.com/en-us/power-bi/paginated-reports-quickstart-aw#upload-the-report-to-the-service) to an app workspace assigned to at least A4/P1 capacity.The end-user uploading the report needs to jave a Power BI Pro license to publish to an app workspace.
+You can create your paginated reports by using [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder).Then you can [upload the report](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an app workspace assigned to at least A4/P1 capacity.The end-user uploading the report needs to jave a Power BI Pro license to publish to an app workspace.
    
 ## Embed your content by using the sample application
 
@@ -151,7 +151,7 @@ Power BI Report URL <br>
 
 Paginated Report URL <br>
 
-TBD
+
 
 Powershell <br>
 
