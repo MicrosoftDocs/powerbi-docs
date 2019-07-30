@@ -56,7 +56,7 @@ The following section describes general best practices for connecting via Direct
 ### DB design guidance
 
 - Push calculated columns and measures to the source where possible. The closer to the source, the higher the likelihood of performance.
-- Optimize! Understand the run plans for your queries, add indices for commonly filtered columns, and so on.
+- Optimize! Understand the execution plans for your queries, add indices for commonly filtered columns, and so on.
 
 ### Modeling guidance
 
@@ -77,7 +77,7 @@ The following section describes general best practices for connecting via Direct
 
 ## Understand dashboards and query caches
 
-Visuals pinned to dashboards are served by the query cache when the dashboard loads. Conversely, when visiting a report, the queries are made on-the-fly to the data source – either the Power BI service (as with import) or the data source that you specify (as with DirectQuery or live connection).  
+Visuals pinned to dashboards are served by the query cache when the dashboard loads. Conversely, when visiting a report, the queries are made on-the-fly to the data source – either the Power BI service (in the case of import) or the data source that you specify (in the case of DirectQuery or live connection).  
 
 > [!NOTE]
 > When you pin live report tiles to a dashboard, they're not served from the query cache – instead, they behave like reports, and make queries to back-end cores on the fly.
