@@ -21,7 +21,7 @@ After you [install the on-premises data gateway](/data-integration/gateway/servi
 
 ## Add a data source
 
-For information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source).
+For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Under **Data Source Type**, select SQL Server.
 
 ![Select the SQL Server data source](media/service-gateway-enterprise-manage-sql/datasourcesettings2.png)
 
@@ -52,7 +52,7 @@ Optionally, you can configure the privacy level for your data source. This setti
 After you create the data source, it's available to use with either DirectQuery connections or through scheduled refresh.
 
 > [!NOTE]
-> The server and database name must match between Power BI Desktop and the data source within the on-premises data gateway.
+> The server and database names must match between Power BI Desktop and the data source within the on-premises data gateway.
 
 The link between your dataset and the data source within the gateway is based on your server name and database name. These names must match. For example, if you supply an IP address for the server name within Power BI Desktop, you must use the IP address for the data source within the gateway configuration. If you use *SERVER\INSTANCE* in Power BI Desktop, you must use it within the data source configured for the gateway.
 
@@ -60,13 +60,13 @@ This requirement is the case for both DirectQuery and scheduled refresh.
 
 ### Use the data source with DirectQuery connections
 
-Make sure that the server and database name matches between Power BI Desktop and the configured data source for the gateway. You also need to make sure your user is listed in the **Users** tab of the data source to publish DirectQuery datasets. The selection for DirectQuery occurs within Power BI Desktop when you first import data. For more information about how to use DirectQuery, see [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md).
+Make sure that the server and database names match between Power BI Desktop and the configured data source for the gateway. You also need to make sure your user is listed in the **Users** tab of the data source to publish DirectQuery datasets. The selection for DirectQuery occurs within Power BI Desktop when you first import data. For more information about how to use DirectQuery, see [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md).
 
 After you publish, either from Power BI Desktop or **Get Data**, your reports start to work. It might take several minutes after you create the data source within the gateway for the connection to be usable.
 
 ### Use the data source with scheduled refresh
 
-If you're listed in the **Users** tab of the data source configured within the gateway and the server and database name match, you see the gateway as an option to use with scheduled refresh.
+If you're listed in the **Users** tab of the data source configured within the gateway and the server name and database name match, you see the gateway as an option to use with scheduled refresh.
 
 ![Displaying the users](media/service-gateway-enterprise-manage-sql/powerbi-gateway-enterprise-schedule-refresh.png)
 
