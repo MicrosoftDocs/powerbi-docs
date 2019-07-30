@@ -31,7 +31,7 @@ What are the key metrics that will help them make decisions? How will the dashbo
 
 Keep in mind that the dashboard is an overview, a single place to monitor the current state of the data. The dashboard is based on underlying reports and datasets, and those items often contain loads of details. Your readers can drill into the reports from your dashboard. So, don't put the detail on the dashboard unless that's what your readers need to monitor.
 
-Where is the dashboard going to be displayed? If it will be on a large monitor, you can put more content on it. But, if readers will view it on their tablets, fewer tiles will be more readable.
+Where is the dashboard going to be displayed? If it's on a large monitor, you can put more content on it. But if readers view it on their tablets, a dashboard with fewer tiles is more readable.
 
 ## Tell a story and keep it to one screen
 Because dashboards are meant to show important information at a glance, having all the tiles on one screen is best. Can you avoid scroll bars on your dashboard?
