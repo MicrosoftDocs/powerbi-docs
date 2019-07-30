@@ -24,7 +24,7 @@ In a Venn diagram comparing Power BI Desktop and the Power BI service, the area 
 
 The **Power BI service** is a cloud-based service. It supports light report editing and collaboration for teams and organizations. You can connect to data sources in the Power BI service, too, but modeling is limited. 
 
-Most report designers who work on business intelligence projects use **Power BI Desktop** to create reports, and then use the **Power BI service** to share their reports with others.
+Most report designers who work on business intelligence projects use **Power BI Desktop** to create reports, and then use the **Power BI service** to distribute their reports with others.
 
 ## Report editing
 
