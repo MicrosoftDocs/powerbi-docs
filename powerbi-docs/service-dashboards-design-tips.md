@@ -62,7 +62,6 @@ Avoid visualization variety for the sake of variety.  Visualizations should pain
 * Don’t mix large and small measures on the same scale, such as on a line or bar chart. For example, one measure can be in the millions and the other measure in the thousands. With such a large scale, it would be difficult to see the differences of the measure that's in the thousands. If you need to mix, choose a visualization that allows the use of a second axis.
 * Don’t clutter your charts with data labels that aren't needed. The values in bar charts are usually understood without displaying the actual number.
 * Pay attention to how [charts are sorted](consumer/end-user-change-sort.md). If you want to draw attention to the highest or lowest number, sort by the measure. If you want people to quickly find a particular category within many other categories, sort by the axis.  
-* Pie charts are best if they have fewer than eight categories. Because you can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts. And, Gauge charts are great for displaying the current status in the context of a goal.
 
 For more visualization-specific guidance, see [Visualization types in Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
