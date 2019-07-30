@@ -42,7 +42,10 @@ This video shows the report editor in Power BI Desktop.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-## Collaborating in the Power BI service
+## Working in the Power BI service
+
+### Collaborating
+
 
 After you've created your reports, you can save them to a *workspace* in the **Power BI service**, where you and your colleagues collaborate. You build *dashboards* on top of those reports. Then, you share those dashboards and reports with report consumers inside and outside your organization. Your report consumers view them in the Power BI service in [Reading view](consumer/end-user-reading-view.md), not Editing view. They don't have access to all the features available to report creators. 
 
