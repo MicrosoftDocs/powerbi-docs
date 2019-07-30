@@ -327,7 +327,7 @@ Power BI's integration with Azure AD B2B works with all business email addresses
 ![Integration flow chart](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_23.png)
 
 
-It is important to recognize that the Azure AD account will be used or created in the external party's Azure AD, this will make it possible that Lucy can use her own username and password and her credentials will automatically stop working in other tenants whenever she leaves the company when her organization also uses Azure AD.
+It is important to recognize that the Azure AD account will be used or created in the external party's Azure AD, this will make it possible for Lucy to use their own username and password and their credentials will automatically stop working in other tenants whenever Lucy leaves the company when their organization also uses Azure AD.
 
 ## Licensing
 
@@ -359,7 +359,7 @@ With this approach, Contoso assigns pro licenses to guest users from partner org
 
 ### Approach 3: Guest users bring their own Power BI Pro license
 
-With this approach, Supplier 1 assigns a Power BI Pro license to Lucy. She can then access Contoso's Power BI app with this license. Since Lucy can use her Pro license from her own organization when accessing an external Power BI environment, this approach is sometimes referred to as _bring your own license_ (BYOL). If both organizations are using Power BI, this offers advantageous licensing for the overall analytics solution and minimizes overhead of assigning licenses to external users.
+With this approach, Supplier 1 assigns a Power BI Pro license to Lucy. They can then access Contoso's Power BI app with this license. Since Lucy can use their Pro license from their own organization when accessing an external Power BI environment, this approach is sometimes referred to as _bring your own license_ (BYOL). If both organizations are using Power BI, this offers advantageous licensing for the overall analytics solution and minimizes overhead of assigning licenses to external users.
 
 > [!NOTE]
 > _The pro license given to Lucy by Supplier 1 applies to any Power BI tenant where Lucy is a guest user. Pro licenses enable access to content that is not in a Power BI Premium capacity. However, external users with a Pro license are restricted by default to a consumption only experience. This can be change by using the approach described in the_ _Enabling external users to edit and manage content within Power BI_ _section later in this document._
@@ -405,7 +405,7 @@ When this gets resolved by Azure AD, Contoso can see the name show up in the win
 
 ![Show roles](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_32.png)
 
-Now when this user opens the app that was shared with him, he only sees a report with data from Europe:
+Now when this user opens the app that was shared with them, they only see a report with data from Europe:
 
 ![View content](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_33.png)
 
@@ -435,7 +435,7 @@ Contoso also creates another "AllRole" for its internal users who can see everyt
 
 After uploading the Power BI desktop file to the service, Contoso can assign guest users to the  "SecurityRole" and internal users to the "AllRole"
 
-Now, when the guest users open the report, they only sees sales from group A:
+Now, when the guest users open the report, they only see sales from group A:
 
 ![Only from group A](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_38.png)
 

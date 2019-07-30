@@ -67,7 +67,7 @@ Now you can begin to create visualizations. Your manager wants to see profit ove
 > 
 > 
 
-Your manager wants to know which countries are the most profitable. Impress her with a map visualization. Select a blank area on your canvas, and from the Fields pane, simply drag over the **Country** and then **Profit** fields. Power BI creates a map visual with bubbles representing the relative profit of each location.
+Your manager wants to know which countries are the most profitable. Impress them with a map visualization. Select a blank area on your canvas, and from the Fields pane, simply drag over the **Country** and then **Profit** fields. Power BI creates a map visual with bubbles representing the relative profit of each location.
 
 ![map visual in report editor](media/service-from-excel-to-stunning-report/pbi_report_map-new.png)
 

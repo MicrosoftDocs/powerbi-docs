@@ -377,7 +377,7 @@ The following questions are common security questions and answers for Power BI. 
 
 * **Power BI credentials and domain credentials:** Users sign in to Power BI using an email address; when a user attempts to connect to a data resource, Power BI passes the Power BI login email address as credentials. For domain-connected resources (either on-premises or cloud-based), the login email is matched with a _User Principal Name_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) by the directory service to determine whether sufficient credentials exist to allow access. For organizations that use work-based email addresses to sign in to Power BI (the same email they use to login to work resources, such as _david@contoso.com_), the mapping can occur seamlessly; for organizations that did not use work-based email addresses (such as _david@contoso.onmicrosoft.com_), directory mapping must be established in order to allow access to on-premises resources with Power BI login credentials.
 
-* **SQL Server Analysis Services and Power BI:** For organizations that use on-premises SQL Server Analysis Services, Power BI offers the Power BI on-premises data gateway (which is a **Gateway**, as referenced in previous sections).  The Power BI on-premises data gateway can enforce role-level security on data sources (RLS). For more information on RLS, see **User Authentication to Data Sources** earlier in this document. You can also read an in-depth article about [Power BI Gateway](service-gateway-manage.md).
+* **SQL Server Analysis Services and Power BI:** For organizations that use on-premises SQL Server Analysis Services, Power BI offers the Power BI on-premises data gateway (which is a **Gateway**, as referenced in previous sections).  The Power BI on-premises data gateway can enforce role-level security on data sources (RLS). For more information on RLS, see **User Authentication to Data Sources** earlier in this document. For more information about gateways, see [on-premises data gateway](service-gateway-onprem.md).
 
   In addition, organizations can use Kerberos for **single sign-on** (SSO) and seamlessly connect from Power BI to on-premises data sources such as SQL Server, SAP HANA, and Teradata. For more information, and the specific configuration requirements, see [**Use Kerberos for SSO from Power BI to on-premises data sources**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
@@ -417,18 +417,15 @@ The following questions are common security questions and answers for Power BI. 
 
 **Which ports are used by on-premises data gateway and personal gateway? Are there any domain names that need to be allowed for connectivity purposes?**
 
-* The detailed answer to this question is available at the following link: [Power BI Gateway](service-gateway-manage.md)
+* The detailed answer to this question is available at the following link: [Gateway ports](/data-integration/gateway/service-gateway-communication#ports)
 
 **When working with the on-premises data gateway, how are recovery keys used and where are they stored? What about secure credential management?**
 
-* During gateway installation and configuration, the administrator types in a gateway **Recovery Key**. That **Recovery Key** is used to generate two sets of much stronger keys:
+* During gateway installation and configuration, the administrator types in a gateway **Recovery Key**. That **Recovery Key** is used to generate a strong **AES** symmetric key. An **RSA** asymmetric key is also created at the same time.
 
-  - An **RSA** asymmetric key
-  - An **AES** symmetric key
+    Those generated keys (**RSA** and **AES**) are stored in a file located on the local machine. That file is also encrypted. The contents of the file can only be decrypted by that particular Windows machine, and only by that particular gateway service account.
 
-  Those generated keys (**RSA** and **AES**) are stored in a file located on the local machine. That file is also encrypted. The contents of the file can only be decrypted by that particular Windows machine, and only by that particular gateway service account.
-
-  When a user enters data source credentials in the Power BI service UI, the credentials are encrypted with the public key in the browser. The gateway re-encrypts the (already encrypted) credentials with an AES symmetric key before the data is stored in Power BI. With this process, the Power BI service never has access to the unencrypted data.
+    When a user enters data source credentials in the Power BI service UI, the credentials are encrypted with the public key in the browser. The gateway decrypts the credentials using the RSA private key and re-encrypts them with an AES symmetric key before the data is stored in the Power BI service. With this process, the Power BI service never has access to the unencrypted data.
 
 **Which communication protocols are used by the on-premises data gateway, and how are they secured?**
 
@@ -436,7 +433,7 @@ The following questions are common security questions and answers for Power BI. 
 
   - **AMQP 1.0 – TCP + TLS**: This protocol requires ports 443, 5671-5672, and 9350-9354 to be open for outgoing communication. This protocol is preferred, since it has lower communication overhead.
 
-  - **HTTPS – WebSockets over HTTPS + TLS**: This protocol uses port 443 only. The WebSocket is initiated by a single HTTP CONNECT message. Once the channel is established, the communication is essentially TCP+TLS. You can force the gateway to use this protocol by modifying a setting described in the [On-Premises Gateway article](service-gateway-manage.md).
+  - **HTTPS – WebSockets over HTTPS + TLS**: This protocol uses port 443 only. The WebSocket is initiated by a single HTTP CONNECT message. Once the channel is established, the communication is essentially TCP+TLS. You can force the gateway to use this protocol by modifying a setting described in the [on-premises gateway article](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
 
 **What is the role of Azure CDN in Power BI?**
 
@@ -484,10 +481,9 @@ For more information on Power BI, see the following resources.
 
 - [Groups in Power BI](https://support.powerbi.com/knowledgebase/articles/654247)
 - [Getting Started with Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
-- [Power BI Gateway](service-gateway-manage.md)
 - [Power BI REST API - Overview](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Power BI API reference](https://msdn.microsoft.com/library/mt147898.aspx)
-- [On-premises data gateway](service-gateway-manage.md)
+- [On-premises data gateway](service-gateway-onprem.md)
 - [Power BI and ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Power BI National Clouds](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)

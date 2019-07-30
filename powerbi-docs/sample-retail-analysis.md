@@ -8,158 +8,156 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2018
+ms.date: 07/02/2019
 ms.author: maggies
 
 LocalizationGroup: Samples
 ---
 # Retail Analysis sample for Power BI: Take a tour
 
-This industry sample dashboard and underlying report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year’s performance to last year’s in these areas:  sales, units, gross margin, and variance, as well as new store analysis. This is real data from obviEnce ([www.obvience.com](http://www.obvience.com)) that has been anonymized.
+The Retail Analysis sample content pack contains a dashboard, report, and dataset that analyzes retail sales data of items sold across multiple stores and districts. The metrics compare this year’s performance to last year’s for sales, units, gross margin, and variance, as well as new-store analysis. 
 
-![](media/sample-retail-analysis/retail1.png)
+![Dashboard for the Retail Analysis sample](media/sample-retail-analysis/retail1.png)
 
-## Prerequisites
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
- Before you can use the sample, you must first download it as a [content pack](https://docs.microsoft.com/power-bi/sample-datasets#get-and-open-a-sample-content-pack-in-power-bi-service), [.pbix file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), or [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529778).
+This tutorial explores the Retail Analysis sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
+You don't need a Power BI license to explore the samples in Power BI Desktop. If you don't have a Power BI Pro license, you can save the sample to your My Workspace in the Power BI service. 
+
+## Get the sample
+
+ Before you can use the sample, you must first download it as a [content pack](#get-the-content-pack-for-this-sample), [.pbix file](#get-the-pbix-file-for-this-sample), or [Excel workbook](#get-the-excel-workbook-for-this-sample).
 
 ### Get the content pack for this sample
 
-1. Open the Power BI service (app.powerbi.com) and log in.
-2. In the bottom left corner select **Get data**.
+1. Open the Power BI service (app.powerbi.com), sign in, and open the workspace where you want to save the sample. 
+
+    If you don't have a Power BI Pro license, you can save the sample to your My Workspace.
+
+2. In the bottom-left corner, select **Get Data**.
+
+    ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
+3. On the **Get Data** page that appears, select **Samples**.
    
-    ![](media/sample-datasets/power-bi-get-data.png)
-3. On the Get Data page that appears, select the **Samples** icon.
-   
-   ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Select the **Retail Analysis Sample**, then choose **Connect**.  
+4. Select **Retail Analysis Sample**, and then choose **Connect**.  
   
-   ![Retail Analysis Sample](media/sample-retail-analysis/retail16.png)
+   ![Connect to sample](media/sample-retail-analysis/retail16.png)
    
-5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace. The new content is marked with a yellow asterisk. 
+5. Power BI imports the content pack, and then adds a new dashboard, report, and dataset to your current workspace.
    
-   ![Retail Analysis Sample](media/sample-retail-analysis/retail17.png)
+   ![Retail Analysis Sample entry](media/sample-retail-analysis/retail-entry.png)
   
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the sample as a .pbix file, which is designed for use with Power BI Desktop. 
-
- * [Retail Analysis Sample](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+Alternatively, you can download the Retail Analysis sample as a [.pbix file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop. 
 
 ### Get the Excel workbook for this sample
-You can also [download just the dataset (Excel workbook)](http://go.microsoft.com/fwlink/?LinkId=529778) for this sample. The workbook contains Power View sheets that you can view and modify. To see the raw data select **Power Pivot > Manage**.
+
+If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529778). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
 
 ## Start on the dashboard and open the report
-1. On the dashboard, select the "Total Stores" tile:
 
-   ![](media/sample-retail-analysis/retail-analysis-7.png)  
+1. In the workspace where you saved the sample, open the **Dashboards** tab, then find the **Retail Analysis Sample** dashboard and select it. 
+2. On the dashboard, select the **Total Stores New & Existing Stores** tile, which opens to the **Store Sales Overview** page in the Retail Analysis Sample report. 
 
-   This takes you to the "Store Sales Overview" page in the report. You see we have 104 total stores, 10 of them new. We have two chains, Fashions Direct and Lindseys. Fashions Direct stores are larger on average.
-2. In the pie chart, select **Fashions Direct**.
+   ![Total Stores tile](media/sample-retail-analysis/retail-analysis-7.png)  
 
-   ![](media/sample-retail-analysis/retail3.png)  
+   On this report page, you see we have a total of 104 stores, 10 of which are new. We have two chains, Fashions Direct and Lindseys. Fashions Direct stores are larger, on average.
+3. In the **This Year Sales by Chain** pie chart, select **Fashions Direct**.
 
-   Notice the result in the bubble chart:
+   ![This Year Sales by Chain chart](media/sample-retail-analysis/retail3.png)  
 
-   ![](media/sample-retail-analysis/pbi_sample_retanlbubbles.png)  
+   Notice the result in the **Total Sales Variance %** bubble chart:
 
-   FD-01 district has the highest Average Sales per Square Foot, FD-02 has the lowest Variance in Sales compared to last year, FD-03 and FD-04 are worst performers overall.
-3. Select individual bubbles or other charts to see cross highlighting, revealing the impact of your selections.
-4. To return to the dashboard, select its name from the top navbar (breadcrumbs).
+   ![Total Sales Variance % chart](media/sample-retail-analysis/pbi_sample_retanlbubbles.png)  
 
-   ![](media/sample-retail-analysis/power-bi-breadcrumbs.png)
-5. On the dashboard, select the tile that has "This Year’s Sales."
+   The **FD-01** district has the highest average **Sales per Square Foot** and FD-02 has the lowest **Total Sales Variance** compared to last year. FD-03 and FD-04 are worst performers overall.
+4. Select individual bubbles or other charts to see cross highlighting, revealing the impact of your selections.
+5. To return to the dashboard, select  **Retail Analysis Sample** from the top navigation bar.
 
-   ![](media/sample-retail-analysis/pbi_sample_retanlthisyrsales.png)
+   ![Navigation bar](media/sample-retail-analysis/power-bi-breadcrumbs.png)
+6. On the dashboard, select the **This Year's Sales New & Existing Stores** tile, which is equivalent to typing *This year sales* in the Q&A question box.
 
-   This is equivalent to typing "This year sales" in the question box.
+   ![This Year's Sales tile](media/sample-retail-analysis/pbi_sample_retanlthisyrsales.png)
 
-   You see this screen:
+   The Q&A results appear:
 
-   ![](media/sample-retail-analysis/retail7.png)
+   ![This year's sales in Q&A](media/sample-retail-analysis/retail7.png)
 
 ## Review a tile created with Power BI Q&A
 Let’s get more specific.
 
-1. Add “this year sales **by district**” onto the question. Observe the result: It automatically put the answer in a bar chart and suggests other phrases:
+1. Change the question to *this year sales **by district***. Observe the result: Q&A automatically places the answer in a bar chart and suggests other phrases:
 
-   ![](media/sample-retail-analysis/retail8.png)
-2. Now change the question to “this year sales **by zip and chain**”.
+   ![This year's sales by district in Q&A](media/sample-retail-analysis/retail8.png)
+2. Now change the question to *this year sales **by zip and chain***.
 
-   Notice how it answers the question as you type with the appropriate charts.
-3. Play around with more questions and see what kind of results you get.
+   Notice how Power BI answers the question as you type and displays the appropriate chart.
+3. Experiment with more questions and see what kind of results you get.
 4. When you’re ready, return to the dashboard.
 
 ## Dive deeper into the data
 Now let's explore on a more detailed level, looking at the districts' performances.
 
-1. On the dashboard, select the tile comparing this year's sales to last year’s.
+1. On the dashboard, select the **This Year's Sales, Last Year's Sales** tile, which opens the **District Monthly Sales** page of the report.
 
-   ![](media/sample-retail-analysis/pbi_sample_retanlareacht.png)
+   ![This Year's Sales, Last Year's Sales tile](media/sample-retail-analysis/pbi_sample_retanlareacht.png)
 
-   Notice the large variability on Variance % to last year, with Jan, Apr, and Jul being particularly bad months.
+   In the **Total Sales Variance % by Fiscal Month** chart, notice the large variability on variance % compared to last year, with January, April, and July being particularly bad months.
 
-   ![](media/sample-retail-analysis/pbi_sample_retanlsalesvarcol.png)
+   ![Total Sales Variance % by Fiscal Month chart](media/sample-retail-analysis/pbi_sample_retanlsalesvarcol.png)
 
    Let’s see if we can narrow down where the issues might be.
-2. Select the bubble chart, and choose **020-Mens**.
+2. In the bubble chart, select the **020-Mens** bubble.
 
-   ![](media/sample-retail-analysis/retail11.png)  
+   ![Select 020-Mens](media/sample-retail-analysis/retail11.png)  
 
-   Observe the men's category wasn't as severely affected in April as the business overall, but January and July were still problem months.
-3. Now, select the **010-Womens’ bubble**.
+   Observe that although the men's category wasn't as severely affected in April as the overall business, January and July were still problematic months.
+1. Select the **010-Womens** bubble.
 
-   ![](media/sample-retail-analysis/retail12.png)
+   ![Select 010-Womens](media/sample-retail-analysis/retail12.png)
 
-   Notice the women's category performed much worse than business overall across all months, and much worse in almost every month compared to the previous year.
-4. Select the bubble again to clear the filter.
+   Notice the women's category performed much worse than the overall business across all months, and in almost every month compared to the previous year.
+1. Select the bubble again to clear the filter.
 
 ## Try out the slicer
 Let’s look at how specific districts are doing.
 
-1. Select Allan Guinot in the slicer on the top left.
+1. Select **Allan Guinot** in the **District Manager** slicer on the top left.
 
-   ![](media/sample-retail-analysis/retail13.png)
+   ![Select Allan Guinot](media/sample-retail-analysis/retail13.png)
 
-   Note that Allan’s district outperformed Last Year in March and June.
-2. Now, while Allan is still selected, select the Women’s bubble.
+   Note that Allan’s district outperformed in March and June, compared to last year.
+2. With **Allan Guinot** still selected, select the **Womens-10** bubble in the bubble chart.
 
-   ![](media/sample-retail-analysis/power-bi-allan.png)
+   ![Allan Guinot and Womens-10 selected](media/sample-retail-analysis/power-bi-allan.png)
 
-   Note that for the Women’s category, his district never met last year’s volume.
-3. Explore the other district managers and categories – what other insights can you find?
-4. When you are ready – return to the dashboard.
+   Notice that for the Womens-10 category, Allan's district didn't meet last year’s volume.
+3. Explore the other district managers and categories; what other insights can you find?
+4. When you are ready, return to the dashboard.
 
-## What is our data telling us about sales growth this year?
-The last area we want to explore is our growth – new stores opened this year.
+## What the data says about sales growth this year
+The last area we want to explore is our growth by examining the new stores opened this year.
 
-1. Select the 'Stores Opened This Year’ tile.
+1. Select the **Stores Opened This Year by Open Month, Chain** tile, which opens the **New Stores Analysis** page of the report.
 
-   ![](media/sample-retail-analysis/retail15.png)
+   ![New Stores Analysis page](media/sample-retail-analysis/retail15.png)
 
-   As evident from the tile – more Fashions Direct stores than Lindseys stores opened this year.
-2. Observe the 'Sales Per Sq Ft by Name' chart:
+   As evident from the tile, more Fashions Direct stores than Lindseys stores opened this year.
+2. Observe the **Sales Per Sq Ft by Name** chart:
 
-   ![](media/sample-retail-analysis/retail14.png)
+   ![Sales Per Sq Ft by Name chart](media/sample-retail-analysis/retail14.png)
 
-    There is quite a bit of difference in Average Sales per SQF across the new stores.
-3. Click on the Fashions Direct legend item in the top right chart. Notice, even for the same chain, the best store (Winchester Fashions Direct) significantly outperforms the worst store (Cincinnati 2 Fashions Direct) $21.22 vs $12.86 respectively.
+    Notice the difference in average sales/square foot across the new stores.
+3. Select the **Fashions Direct** legend item in the **Open Store Count by Open Month and Chain** top-right chart. Notice, even for the same chain, the best store (Winchester Fashions Direct) significantly outperforms the worst store (Cincinnati 2 Fashions Direct) by $21.22 vs $12.86, respectively.
 
-   ![](media/sample-retail-analysis/power-bi-lindseys.png)
-4. Click Winchester Fashions Direct in the slicer and observe the line chart. The first sales numbers were reported in February.
-5. Click on Cincinnati 2 Fashions Direct in the slicer and you will see in the line chart that it was opened in June and it seems to be the worst performing store.
-6. As before, explore by clicking on other bars, lines and bubbles throughout the charts and see what insights you can discover.
+   ![Fashions Direct selected](media/sample-retail-analysis/power-bi-lindseys.png)
+4. Select **Winchester Fashions Direct** in the **Name** slicer and observe the line chart. The first sales numbers were reported in February.
+5. Select **Cincinnati 2 Fashions Direct** in the slicer and observe in the line chart that it was opened in June and appears to be the worst performing store.
+6. Explore by selecting other bars, lines, and bubbles throughout the charts and see what insights you can discover.
 
-This is a safe environment to play in. You can always choose not to save your changes. But if you do save them, you can always go to Get Data for a new copy of this sample.
+## Next steps: Connect to your data
+This environment is a safe one to play in, because you can choose not to save your changes. But if you do save them, you can always select **Get Data** for a new copy of this sample.
 
-## Connect to your data
-We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into retail data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about [getting started with Power BI](service-get-started.md).
-
-## Next steps
-* [Download the Retail Analysis sample content pack](sample-tutorial-connect-to-the-samples.md)
-* [Download a zip file of all the sample files](http://go.microsoft.com/fwlink/?LinkId=535020)    
-* [Download the Excel workbook for this Power BI sample](http://go.microsoft.com/fwlink/?LinkId=529778)    
-* [Get data (for Power BI)](service-get-data.md)    
-* [Basic concepts for designers in the Power BI service](service-basic-concepts.md)    
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+We hope this tour has shown how Power BI dashboards, Q&A, and reports can provide insights into sample data. Now it's your turn; connect to your own data. With Power BI, you can connect to a wide variety of data sources. To learn more, see [Get started with the Power BI service](service-get-started.md).
