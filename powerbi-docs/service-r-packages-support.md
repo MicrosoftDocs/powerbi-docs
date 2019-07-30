@@ -25,6 +25,7 @@ Supported R packages for the **Power BI service** are found in the following sec
 ## Requirements and Limitations of R packages
 There are a handful of requirements and limitations for R packages:
 
+* Current R runtime: Microsoft R 3.4.4
 * The Power BI service, for the most part, supports R packages with free and open-source software licenses such as GPL-2, GPL-3, MIT+, and so on.
 * The Power BI service supports packages published in CRAN. The service does not support private or custom R packages. Users are encouraged to make their private packages available on CRAN prior to requesting the package be available in the Power BI service.
 * The **Power BI Desktop** has two variations for R packages:
