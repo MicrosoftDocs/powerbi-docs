@@ -33,7 +33,7 @@ LocalizationGroup: Gateways
 **Answer:** For a dashboard connected to Analysis Services, users will only see the data they have access to. If the users do not have the same permissions, they will not be able to see any data. For other data sources, all users will share the credentials entered by the admin for that data source.
 
 **Question:** Why can't I connect to my Oracle server?  
-**Answer:** You may need to install the Oracle client and configure the tnsnames.ora file with the proper server information in order to connect to your Oracle server. This is a separate install outside of the gateway. For more information, see [Installing the Oracle Client](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+**Answer:** You may need to install the Oracle client and configure the tnsnames.ora file with the proper server information in order to connect to your Oracle server. This is a separate install outside of the gateway. For more information, see [Install the Oracle client](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
 
 **Question:** Will the gateway work with ExpressRoute?  
 **Answer:** Yes. For more information about ExpressRoute and Power BI, see [Power BI and ExpressRoute](service-admin-power-bi-expressroute.md).

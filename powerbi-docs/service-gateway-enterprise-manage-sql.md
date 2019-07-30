@@ -33,7 +33,7 @@ Then fill in the information for the data source, which includes **Server** and 
 Under **Authentication Method**, choose either **Windows** or **Basic**. Choose **Basic** if you plan to use SQL authentication instead of Windows authentication. Then enter the credentials to be used for this data source.
 
 > [!NOTE]
-> All queries to the data source will run by using these credentials, unless Kerberos single sign-on (SSO) is configured and enabled for the data source. With SSO, import datasets use the stored credentials. DirectQuery datasets use the current Power BI user to execute the queries by using SSO. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud). Or, see the article that describes how to [use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](service-gateway-sso-kerberos.md).
+> All queries to the data source will run by using these credentials, unless Kerberos single sign-on (SSO) is configured and enabled for the data source. With SSO, import datasets use the stored credentials. DirectQuery datasets use the current Power BI user to execute the queries by using SSO. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud). Or, see the article that describes how to [use Kerberos for SSO (single sign-on) from Power BI to on-premises data sources](service-gateway-sso-kerberos.md). 
 
 ![Filling in the data source settings](media/service-gateway-enterprise-manage-sql/datasourcesettings3.png)
 
