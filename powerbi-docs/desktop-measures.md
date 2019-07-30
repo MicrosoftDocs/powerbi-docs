@@ -17,11 +17,11 @@ LocalizationGroup: Model your data
 
 **Power BI Desktop** helps you create insights into your data with just a few clicks. But sometimes that data just doesn’t include everything you need to answer some of your most important questions. Measures can help you get there.
 
-Measures are used in some of the most common data analyses. For example sums, averages, minimum or maximum values, counts, or more advanced calculations you create yourself using a DAX formula. The calculated results of measures are always changing in response to your interaction with your reports, allowing for fast and dynamic ad-hoc data exploration. Let’s take a closer look.
+Measures are used in some of the most common data analyses. Simple summarizations such as sums, averages, minimum, maximum and counts can be set through the Fields Well, as discussed in the [Summarization and category](https://docs.microsoft.com/power-bi/guided-learning/visualizations?tutorial-step=16) video. You can create more advanced calculations yourself using a DAX formula. The calculated results of measures are always changing in response to your interaction with your reports, allowing for fast and dynamic ad-hoc data exploration. Let’s take a closer look.
 
 ## Understanding measures
 
-In **Power BI Desktop**, measures are created and used in **Report View** or **Data View**. Measures you create yourself appear in the Fields list with a calculator icon. You can name measures whatever you want, and add them to a new or existing visualization just like any other field.
+In **Power BI Desktop**, measures are created and displayed in **Report View** or **Data View**. Measures you create yourself appear in the Fields list with a calculator icon. You can name measures whatever you want, and add them to a new or existing visualization just like any other field.
 
 ![](media/desktop-measures/measuresinpbid_measinfieldlist.png)
 
@@ -64,7 +64,7 @@ You could create tables that display the measures as Web URLs, and be able to cl
 
 ## Organizing your measures
 
-Measures have a *Home* table that defines where they're fond in the field list. You can change their location by choosing a location from the tables in your model.
+Measures have a *Home* table that defines where they're found in the field list. You can change their location by choosing a location from the tables in your model.
 
 ![Select a table for your measure](media/desktop-measures/measures-03.png)
 
@@ -72,7 +72,7 @@ You can also organize fields in a table into *Display Folders*. Select **Model V
 
 ![Create a field for measures](media/desktop-measures/measures-04.gif)
 
-You can create subfolders by using a backlash character. For example *Finance\Currencies* creates a *Finance* folder and within it, a *Currencies* folder.
+You can create subfolders by using a backslash character. For example *Finance\Currencies* creates a *Finance* folder and within it, a *Currencies* folder.
 
 You can make a field appear in multiple folders by using a semicolon to separate the folder names. For example, *Products\Names;Departments* results in the field appearin in a *Departments* folder as well as a *Names* folder inside a *Products* folder.
 
