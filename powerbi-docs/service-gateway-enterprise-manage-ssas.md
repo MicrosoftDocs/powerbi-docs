@@ -33,7 +33,7 @@ For information about how to add a data source, see [Add a data source](service-
 You'll then want to fill in the information for the data source, which includes the **Server** and the **Database**. The **Username** and **Password** that you enter will be used by the gateway to connect to the Analysis Services instance.
 
 > [!NOTE]
-> The Windows account you enter must have Server Administrator permissions for the instance you are connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. To learn more about how credentials are stored, see [Storing encrypted credentials in the cloud](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud).
+> The Windows account you enter must have Server Administrator permissions for the instance you are connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Filling in the data source settings](media/service-gateway-enterprise-manage-ssas/datasourcesettings3-ssas.png)
 
