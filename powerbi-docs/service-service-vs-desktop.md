@@ -47,7 +47,11 @@ This video shows the report editor in Power BI Desktop.
 ### Collaborating
 
 
-After you've created your reports, you can save them to a *workspace* in the **Power BI service**, where you and your colleagues collaborate. You build *dashboards* on top of those reports. Then, you share those dashboards and reports with report consumers inside and outside your organization. Your report consumers view them in the Power BI service in [Reading view](consumer/end-user-reading-view.md), not Editing view. They don't have access to all the features available to report creators. 
+After you've created your reports, you can save them to a *workspace* in the **Power BI service**, where you and your colleagues collaborate. You build *dashboards* on top of those reports. Then, you share those dashboards and reports with report consumers inside and outside your organization. Your report consumers view them in the Power BI service in a *Reading view*, not Editing view. They don't have access to all the features available to report creators.  You can also share your datasets and let others build their own reports from them. Read more about [collaborating in the Power BI service](service-new-workspaces.md).
+
+## Self-service data prep with dataflows
+
+Dataflows help organizations unify data from disparate sources and prepare it for modeling. Analysts can easily create dataflows, using familiar, self-service tools. Analysts use dataflows to ingest, transform, integrate, and enrich big data by defining data source connections, ETL logic, refresh schedules, and more. Read more about [self-service data prep with dataflows](service-dataflows-overview.md).
 
 ## Next steps
 
