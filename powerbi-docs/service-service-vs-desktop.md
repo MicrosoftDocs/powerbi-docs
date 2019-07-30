@@ -22,7 +22,7 @@ In a Venn diagram comparing Power BI Desktop and the Power BI service, the area 
 
 **Power BI Desktop** is a complete data analysis and report creation tool. When you install the free application on your local computer, you can connect to many different sources of data, and combine them (often called modeling) into a data model. The [Power BI Desktop getting started guide](desktop-getting-started.md) walks through the process.
 
-The **Power BI service** is a cloud-based service. It supports light report editing and collaboration for teams and businesses. You can connect to data sources in the Power BI service, too, but modeling is limited. 
+The **Power BI service** is a cloud-based service. It supports light report editing and collaboration for teams and organizations. You can connect to data sources in the Power BI service, too, but modeling is limited. 
 
 Most report designers who work on business intelligence projects use **Power BI Desktop** to create reports, and then use the **Power BI service** to share their reports with others.
 
