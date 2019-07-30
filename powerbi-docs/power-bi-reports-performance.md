@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 07/30/2018
 LocalizationGroup: Reports
 ---
 
@@ -85,7 +85,7 @@ Visuals pinned to dashboards are served by the query cache when the dashboard lo
 As the name suggests, retrieving the data from the query cache provides better and more consistent performance than relying on the data source. One way to take advantage of this functionality is to have dashboards be the first landing page for your users. Pin often-used and highly requested visuals to the dashboards. In this way, dashboards become a valuable “first line of defense”, which provide consistent performance with less load on the capacity. Users can still click through to the report to dig into the details.  
  
 
-For DirectQuery and live connection, the query cache is updated on a periodic basis by querying the data source. By default, it happens every hour, though it can be configured in dataset settings. Each query cache update will send queries to the underlying data source to update the cache. The number of queries that generate depends on the number of visuals pinned to dashboards that rely on the data source. Notice that if row-level security is enabled, queries are generated for each different security context. For example, if you have two different roles that categorize your users, and they have two different views of the data, during query cache refresh, two sets of queries generate. 
+For DirectQuery and live connection, the query cache is updated on a periodic basis by querying the data source. By default, it happens every hour, though it can be configured in dataset settings. Each query cache update will send queries to the underlying data source to update the cache. The number of queries that generate depends on the number of visuals pinned to dashboards that rely on the data source. Notice that if row-level security is enabled, queries are generated for each different security context. For example, if you have two different roles that categorize your users, and they have two different views of the data, during query cache refresh, Power BI generates two sets of queries. 
 
 ## Understand custom visual performance 
 
