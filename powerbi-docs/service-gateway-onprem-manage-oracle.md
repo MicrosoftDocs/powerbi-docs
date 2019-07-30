@@ -109,7 +109,7 @@ If you're listed in the **Users** tab of the data source configured within the g
 
 ## Troubleshooting
 
-You might encounter several errors from Oracle when the naming syntax is either incorrect or not configured properly.
+You might encounter several errors from Oracle when the naming syntax is either incorrect or not configured properly:
 
 * ORA-12154: TNS: Could not resolve the connect identifier specified.
 * ORA-12514: TNS: Listener does not currently know of service requested in connect descriptor.
