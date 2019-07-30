@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 04/02/2019
+ms.date: 07/29/2019
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
@@ -152,6 +152,10 @@ Power BI Report URL <br>
 Paginated Report URL <br>
 
 
+
+Paginated Report URL<br>
+
+![Paginated reportId](media/embed-sample-for-your-organization/paginated-reports-url.png)
 
 Powershell <br>
 
