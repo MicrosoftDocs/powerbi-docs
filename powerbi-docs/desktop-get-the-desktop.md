@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2019
+ms.date: 07/31/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -38,7 +38,7 @@ Regardless of which way you choose to download, once **Power BI Desktop** is dow
 
 ![](media/desktop-get-the-desktop/getpbid_3.png)
 
-Beginning with the July 2019 release, **Power BI Desktop** ships as a single .exe installation package that contains all supported languages. There are separate .exe files for 32-bit and 64-bit versions. The .msi packages will be discontinued after the September 2019 release, after which you must use the .exe executable for installation. This approach makes distribution, updates, and installation (especially for administrators) much easier and more convenient.
+Beginning with the July 2019 release, **Power BI Desktop** ships as a single .exe installation package that contains all supported languages. There are separate .exe files for 32-bit and 64-bit versions. The .msi packages will be discontinued after the September 2019 release, after which you must use the .exe executable for installation. This approach makes distribution, updates, and installation (especially for administrators) much easier and more convenient. You can also use command-line parameters to customize the installation proecess, as described in the [using command-line options during installation](#using-command-line-options-during-installation) section later in this article.
 
 Once you launch the installation package, **Power BI Desktop** is installed as an application and runs on your desktop.
 
