@@ -25,6 +25,7 @@ Multi-Geo is a Power BI Premium feature that helps multinational customers addre
 - India
 - Asia Pacific
 - Australia
+- Africa
 
 Multi-Geo isn't available for Power BI Germany, Power BI China operated by 21Vianet, or Power BI for the US government.
 
