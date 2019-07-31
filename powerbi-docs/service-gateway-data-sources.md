@@ -113,7 +113,7 @@ On the **Users** tab for the data source, you can remove users and security grou
 
 ![Remove user](media/service-gateway-data-sources/remove-user.png)
 
-## Storing encrypted credentials in the cloud
+## Store encrypted credentials in the cloud
 
 When you add a data source to the gateway, you need to provide credentials for that data source. All queries to the data source will run using these credentials. The credentials are encrypted securely, using symmetric encryption so that they can't be decrypted in the cloud, before they're stored in the cloud. The credentials are sent to the machine running the gateway, on-premises, where they're decrypted when the data sources are accessed.
 

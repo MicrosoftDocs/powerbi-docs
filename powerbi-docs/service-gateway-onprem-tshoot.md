@@ -105,7 +105,7 @@ This error occurs if you have a single row greater than 4 MB in size. Determine 
 
 This error can occur when the certificate common name is for the server's fully qualified domain name (FQDN), but you supplied only the NetBIOS name for the server. This situation causes a mismatch for the certificate. To resolve this issue, make the server name within the gateway data source and the PBIX file use the FQDN of the server.
 
-### You don't see the on-premises data gateway present when you configure scheduled refresh.
+### Error: You don't see the on-premises data gateway present when you configure scheduled refresh.
 
 A few different scenarios could be responsible for this error:
 
@@ -119,7 +119,7 @@ The exact limitation is 10 GB of uncompressed data per table. If you're hitting 
 
 ## Reports
 
-### Report could not access the data source because you do not have access to our data source via an on-premises data gateway.
+### Error: Report could not access the data source because you do not have access to our data source via an on-premises data gateway.
 
 This error is usually caused by one of the following:
 
