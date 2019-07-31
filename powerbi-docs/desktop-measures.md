@@ -74,7 +74,7 @@ You can also organize fields in a table into *Display Folders*. Select **Model V
 
 You can create subfolders by using a backslash character. For example *Finance\Currencies* creates a *Finance* folder and within it, a *Currencies* folder.
 
-You can make a field appear in multiple folders by using a semicolon to separate the folder names. For example, *Products\Names;Departments* results in the field appearin in a *Departments* folder as well as a *Names* folder inside a *Products* folder.
+You can make a field appear in multiple folders by using a semicolon to separate the folder names. For example, *Products\Names;Departments* results in the field appearing in a *Departments* folder as well as a *Names* folder inside a *Products* folder.
 
 Finally, you can create a special table that contains only measures that always appears at the top of the **Field List**. To do so, create a table with just one column. You can use **Enter Data** to create that table. Then move your measures to that table. Finally, hide the column (not the table) that you created. You’ll need to close and re-open the **Field List** in order for Power BI Desktop to display it correctly, by clicking the chevron at the top of the **Field List**.
 

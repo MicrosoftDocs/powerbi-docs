@@ -61,6 +61,9 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 
 1. Select **OK** , then **Save**.
 
+> [!NOTE]
+> To revoke access of Power BI to your data in the futurem remove access rights to this service principal from your Azure Key Vault.
+
 ### Create an RSA key
 
 1. In your key vault, under **Keys** , select **Generate/Import**.
