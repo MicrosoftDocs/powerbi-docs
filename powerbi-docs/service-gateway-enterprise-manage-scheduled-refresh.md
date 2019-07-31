@@ -24,7 +24,7 @@ After you [install the on-premises data gateway](/data-integration/gateway/servi
 
 For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Select a data source type.
 
-All of the data source types listed can be used for scheduled refresh with the on-premises data gateway. Azure Analysis Services, SQL Server, and SAP HANA can be used for either scheduled refresh or DirectQuery/live connections.
+All of the data source types listed can be used for scheduled refresh with the on-premises data gateway. Analysis Services, SQL Server, and SAP HANA can be used for either scheduled refresh or DirectQuery/live connections.
 
 ![Select the data source](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings2.png)
 
