@@ -30,11 +30,11 @@ LocalizationGroup: Gateways
 
 **Question:** Can I upload Excel workbooks with Power Pivot data models that connect to on-premises data sources? Do I need a gateway for this scenario? 
 
-**Answer:** Yes, you can upload the workbook. And, no, you don’t need a gateway. But, because the data will reside in the Excel data model, reports in Power BI based on the Excel workbook will not be live. To refresh reports in Power BI, you have to re-upload an updated workbook each time. Or, use the gateway with scheduled refresh.
+**Answer:** Yes, you can upload the workbook. And, no, you don’t need a gateway. But, because the data will reside in the Excel data model, reports in Power BI based on the Excel workbook won't be live. To refresh reports in Power BI, you have to re-upload an updated workbook each time. Or, use the gateway with scheduled refresh.
 
 **Question:** If users share dashboards that have a DirectQuery connection, will those other users be able to see the data even though they might not have the same permissions? 
 
-**Answer:** For a dashboard connected to Azure Analysis Services, users will see only the data they have access to. If the users don't have the same permissions, they will not be able to see any data. For other data sources, all users will share the credentials entered by the admin for that data source.
+**Answer:** For a dashboard connected to Azure Analysis Services, users will see only the data they have access to. If the users don't have the same permissions, they won't be able to see any data. For other data sources, all users will share the credentials entered by the admin for that data source.
 
 **Question:** Why can't I connect to my Oracle server? 
 
@@ -70,5 +70,5 @@ LocalizationGroup: Gateways
 
 * [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? Try the [Power BI Community](http://community.powerbi.com/).
 

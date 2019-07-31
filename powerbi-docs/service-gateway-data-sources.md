@@ -21,19 +21,15 @@ LocalizationGroup: Gateways
 
 Power BI supports many on-premises data sources, and each has its own requirements. A gateway can be used for a single data source or multiple data sources. For this example, we show you how to add SQL Server as a data source. The steps are similar for other data sources.
 
->[!NOTE]
->Most data sources management operations can be performed by using APIs as well. For more information, see [Rest APIs (Gateways)](/rest/api/power-bi/gateways).
+Most data sources management operations can be performed by using APIs as well. For more information, see [REST APIs (Gateways)](/rest/api/power-bi/gateways).
 
 ## Add a data source
-
->[!NOTE]
->Groups without an email can't be added.
 
 1. In the upper-right corner of the Power BI service, select the gear icon ![Settings gear icon](media/service-gateway-data-sources/icon-gear.png) > **Manage gateways**.
 
     ![Manage gateways](media/service-gateway-data-sources/manage-gateways.png)
 
-2.  Select a gateway and then select **Add data source**. Or, go to **Gateways** > **Add data source**.
+2. Select a gateway and then select **Add data source**. Or, go to **Gateways** > **Add data source**.
 
     ![Add data source](media/service-gateway-data-sources/add-data-source.png)
 
@@ -121,7 +117,7 @@ When you add a data source to the gateway, you must provide credentials for that
 
 The on-premises data gateway supports the following data sources for Power BI. In addition to on-premises data sources, sources behind a firewall, VPN, or virtual network might also need a data gateway.
 
-| **Data source** | **Live/DirectQuery** | **User configured manually or by scheduled refresh** |
+| **Data source** | **Live/DirectQuery** | **Manual or scheduled refresh (user-configured)** |
 | --- | --- | --- |
 | Amazon Redshift |Yes |Yes |
 | AtScale cubes |Yes |Yes |
@@ -176,7 +172,7 @@ The on-premises data gateway supports the following data sources for Power BI. I
 * [Manage your data source - SAP HANA](service-gateway-enterprise-manage-sap.md)
 * [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)
 * [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md)
-* [Manage your data source - Import/Scheduled Refresh](service-gateway-enterprise-manage-scheduled-refresh.md)
+* [Manage your data source - Import/scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)
 * [Guidance for deploying a data gateway](service-gateway-deployment-guidance.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? Try the [Power BI Community](http://community.powerbi.com/).
