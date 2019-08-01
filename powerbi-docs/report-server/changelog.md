@@ -41,6 +41,10 @@ For detailed information about new features, see [What's new in Power BI Report 
             - Fix to High Contrast mode in PBIRS to display Back button, show warning visual messages.
             - UI fixes to Selection pane, canvas scaling.
 
+    - *Version: 2.69.5467.5201 (May 2019), Released: July 30, 2019*
+        - Bug fixes
+            - Fix for incorrect telemetry logging
+
 ## January 2019
 
 - **Power BI Report Server**          
