@@ -61,7 +61,7 @@ You can also [map your Power BI sign-in name with a local directory UPN](service
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eATPS-c7YRU" frameborder="0" allowfullscreen></iframe>
 
-Power BI allows for mapping user names for Analysis Services data sources. You can configure rules to map a user name signed in with Power BI to a name that's passed for EffectiveUserName on the Analysis Services connection. The map user names feature is a great way to work around when your user name in Azure Active Directory (Azure AD) doesn't match a UPN in your local Active Directory. For example, if your email address is nancy@contoso.onmicrsoft.com, you map it to nancy@contoso.com and that value is passed to the gateway.
+Power BI allows for mapping user names for Analysis Services data sources. You can configure rules to map a user name signed in with Power BI to a name that's passed for EffectiveUserName on the Analysis Services connection. The map user names feature is a great way to work around when your user name in Azure Active Directory (Azure AD) doesn't match a UPN in your local Active Directory instance. For example, if your email address is nancy@contoso.onmicrsoft.com, you map it to nancy@contoso.com and that value is passed to the gateway.
 
 You can map user names for Analysis Services in two different ways:
 
@@ -207,7 +207,7 @@ Implementing role and dynamic row-level security in models are beyond the scope 
 
 Microsoft cloud services use [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) to take care of authenticating users. Azure AD is the tenant that contains user names and security groups. Typically, the email address a user signs in with is the same as the UPN of the account.
 
-## What is my local Active Directory’s role?
+## What is the role of my local Active Directory instance?
 
 For Analysis Services to determine if a user connecting to it belongs to a role with permissions to read data, the server needs to convert the effective user name passed from Azure AD to the gateway and on to the Analysis Services server. The Analysis Services server passes the effective user name to a Windows Active Directory domain controller (DC). The Active Directory DC then validates that the effective user name is a valid UPN on a local account. It returns that user’s Windows user name back to the Analysis Services server.
 
@@ -225,7 +225,7 @@ The result looks similar to an email address, but it's the UPN that's on your do
 
 If you plan to use Analysis Services live connections, your local Active Directory accounts must match Azure AD. The UPN must match between the accounts.
 
-The cloud services only know about accounts within Azure AD. It doesn’t matter if you added an account in your local Active Directory. If the account doesn’t exist in Azure AD, it can't be used. There are different ways that you can match your local Active Directory accounts with Azure AD:
+The cloud services only know about accounts within Azure AD. It doesn’t matter if you added an account in your local Active Directory instance. If the account doesn’t exist in Azure AD, it can't be used. There are different ways that you can match your local Active Directory accounts with Azure AD:
 
 - You can add accounts manually to Azure AD.
 
@@ -235,7 +235,7 @@ The cloud services only know about accounts within Azure AD. It doesn’t matter
 
    The Azure AD Connect tool provides options for directory synchronization and setting up authentication. Options include password hash sync, pass-through authentication, and federation. If you're not a tenant admin or a local domain administrator, contact your IT admin to help with configuration.
 
-   Using Azure AD Connect ensures that the UPN matches between Azure AD and your local Active Directory.
+   Using Azure AD Connect ensures that the UPN matches between Azure AD and your local Active Directory instance.
 
 > [!NOTE]
 > Synchronizing accounts with the Azure AD Connect tool creates new accounts within your Azure AD tenant.
