@@ -58,7 +58,7 @@ This requirement is the case for both DirectQuery and scheduled refresh.
 
 Make sure that the server and database names match between Power BI Desktop and the configured data source for the gateway. You also need to make sure your user is listed in the **Users** tab of the data source to publish DirectQuery datasets. The selection for DirectQuery occurs within Power BI Desktop when you first import data. For more information about how to use DirectQuery, see [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md).
 
-After you publish, either from Power BI Desktop or **Get Data**, your reports start to work. It might take several minutes after you create the data source within the gateway for the connection to be usable.
+After you publish, either from Power BI Desktop or **Get Data**, your reports should start to work. It might take several minutes after you create the data source within the gateway for the connection to be usable.
 
 ### Use the data source with scheduled refresh
 
@@ -71,5 +71,5 @@ If you're listed in the **Users** tab of the data source configured within the g
 * [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md) 
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? Try asking the [Power BI Community](http://community.powerbi.com/).
 

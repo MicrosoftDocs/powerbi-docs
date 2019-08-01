@@ -32,7 +32,7 @@ For 64-bit versions of Power BI Desktop or for the on-premises data gateway, use
 
 * [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
-After the client is installed, configure your tnsnames.ora file with the proper information for your database. Power BI Desktop and the gateway go off of the net_service_name defined in the tnsnames.ora file. If the file isn't configured, you can't connect. The default path for tnsnames.ora is `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. For more information about how to configure tnsnames.ora files, see [Oracle: Local naming parameters (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
+After the client is installed, configure your tnsnames.ora file with the proper information for your database. Power BI Desktop and the gateway go off of the net_service_name defined in the tnsnames.ora file. If the net_service_name isn't configured, you can't connect. The default path for tnsnames.ora is `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. For more information about how to configure tnsnames.ora files, see [Oracle: Local naming parameters (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
 
 ### Example tnsnames.ora file entry
 
@@ -99,7 +99,7 @@ This requirement is the case for both DirectQuery and scheduled refresh.
 
 Make sure that the server and database names match between Power BI Desktop and the configured data source for the gateway. You also need to make sure your user is listed in the **Users** tab of the data source to publish DirectQuery datasets. The selection for DirectQuery occurs within Power BI Desktop when you first import data. For more information about how to use DirectQuery, see [Use DirectQuery in Power BI Desktop](desktop-use-directquery.md).
 
-After you publish, either from Power BI Desktop or **Get Data**, your reports start to work. It might take several minutes after you create the data source within the gateway for the connection to be usable.
+After you publish, either from Power BI Desktop or **Get Data**, your reports should start to work. It might take several minutes after you create the data source within the gateway for the connection to be usable.
 
 ### Use the data source with scheduled refresh
 
@@ -111,11 +111,11 @@ If you're listed in the **Users** tab of the data source configured within the g
 
 You might encounter several errors from Oracle when the naming syntax is either incorrect or not configured properly:
 
-* ORA-12154: TNS: Could not resolve the connect identifier specified.
-* ORA-12514: TNS: Listener does not currently know of service requested in connect descriptor.
-* ORA-12541: TNS: No listener.
-* ORA-12170: TNS: Connect timeout occurred.
-* ORA-12504: TNS: Listener was not given the SERVICE_NAME in CONNECT_DATA.
+* ORA-12154: TNS:could not resolve the connect identifier specified.
+* ORA-12514: TNS:listener does not currently know of service requested in connect descriptor.
+* ORA-12541: TNS:no listener.
+* ORA-12170: TNS:connect timeout occurred.
+* ORA-12504: TNS:listener was not given the SERVICE_NAME in CONNECT_DATA.
 
 These errors might occur if the Oracle client either isn't installed or isn't configured properly. If it's installed, verify that the tnsnames.ora file is properly configured and you're using the proper net_service_name. You also need to make sure that the net_service_name is the same between the machine that uses Power BI Desktop and the machine that runs the gateway. For more information, see [Install the Oracle client](#install-the-oracle-client).
 
@@ -129,5 +129,5 @@ For additional troubleshooting information that relates to the gateway, see [Tro
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)
 * [Power BI Premium](service-premium.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? Try asking the [Power BI Community](http://community.powerbi.com/).
 
