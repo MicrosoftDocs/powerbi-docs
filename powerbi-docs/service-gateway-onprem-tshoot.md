@@ -249,4 +249,4 @@ For more information about troubleshooting refresh scenarios, see [Troubleshoot 
 * [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
 * [Manage your data source - Import/scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? Try the [Power BI Community](http://community.powerbi.com/).

@@ -31,7 +31,7 @@ All of the data source types listed can be used for scheduled refresh with the o
 Then fill in the information for the data source, which includes the source information and credentials that are used to access the data source.
 
 > [!NOTE]
-> All queries to the data source run by using these credentials. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
+> All queries to the data source will run using these credentials. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Filling in the data source settings](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings3-oracle.png)
 
@@ -72,4 +72,4 @@ OAuth isn't a supported authentication scheme with the on-premises data gateway.
 * [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? Try the [Power BI Community](http://community.powerbi.com/).
