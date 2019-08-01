@@ -146,7 +146,7 @@ Optionally, you can see what Power BI gets from Azure Active Directory.
         https://graph.windows.net/me?api-version=1.5
 4. Look for **userPrincipalName**.
 
-If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map user names](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources) feature to replace it with a valid value. Or, you can work with either your tenant admin or local Active Directory admin to get your UPN changed.
+If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the [Map user names](service-gateway-enterprise-manage-ssas.md#mapping-usernames-for-analysis-services-data-sources) feature to replace it with a valid value. Or, you can work with either your tenant admin or local Active Directory admin to get your UPN changed.
 
 ## Kerberos
 
