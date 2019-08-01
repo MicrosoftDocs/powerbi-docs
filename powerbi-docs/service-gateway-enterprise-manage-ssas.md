@@ -17,7 +17,7 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-After you [install the on-premises data gateway](/data-integration/gateway/service-gateway-install), you need to [add data sources](service-gateway-data-sources.md#add-a-data-source) that can be used with the gateway. This article looks at how to work with gateways and Azure Analysis Services data sources that are used either for scheduled refresh or for live connections.
+After you [install the on-premises data gateway](/data-integration/gateway/service-gateway-install), you need to [add data sources](service-gateway-data-sources.md#add-a-data-source) that can be used with the gateway. This article looks at how to work with gateways and SQL Server Analysis Services (SSAS) data sources that are used either for scheduled refresh or for live connections.
 
 To learn more about how to set up a live connection to Analysis Services, [watch this video](https://www.youtube.com/watch?v=GPf0YS-Xbyo&feature=youtu.be).
 
@@ -26,7 +26,7 @@ To learn more about how to set up a live connection to Analysis Services, [watch
 
 ## Add a data source
 
-For information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Select Analysis Services for **Data Source Type** if you connect to either a multidimensional or tabular server.
+For information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Select **Analysis Services** for **Data Source Type** if you're connecting to either a multidimensional or tabular server.
 
 ![Add the Analysis Services data source](media/service-gateway-enterprise-manage-ssas/datasourcesettings2-ssas.png)
 
@@ -53,7 +53,7 @@ Optionally, you can configure the privacy level for your data source. This setti
 
 Each time a user interacts with a report connected to Analysis Services, the effective user name is passed to the gateway and then passed on to your on-premises Analysis Services server. The email address that you use to sign in to Power BI is passed to Analysis Services as the effective user. It's passed in the connection property [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth). 
 
-The email address must match a defined user principal name (UPN) within the local Active Directory domain. The UPN is a property of an Active Directory account. The Windows account must be present in an Analysis Services role. If a match can't be found in Active Directory, the login isn't successful. To learn more about Active Directory and user naming, see [User naming attributes](https://msdn.microsoft.com/library/ms677605.aspx).
+The email address must match a defined user principal name (UPN) within the local Active Directory domain. The UPN is a property of an Active Directory account. The Windows account must be present in an Analysis Services role. If a match can't be found in Active Directory, the sign-in isn't successful. To learn more about Active Directory and user naming, see [User naming attributes](https://msdn.microsoft.com/library/ms677605.aspx).
 
 You can also [map your Power BI sign-in name with a local directory UPN](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
 
@@ -61,7 +61,7 @@ You can also [map your Power BI sign-in name with a local directory UPN](service
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eATPS-c7YRU" frameborder="0" allowfullscreen></iframe>
 
-Power BI allows for mapping user names for Analysis Services data sources. You can configure rules to map a user name logged in with Power BI to a name that's passed for EffectiveUserName on the Analysis Services connection. The map user names feature is a great way to work around when your user name in Azure Active Directory (Azure AD) doesn't match a UPN in your local Active Directory. For example, if your email address is nancy@contoso.onmicrsoft.com, you map it to nancy@contoso.com and that value is passed to the gateway.
+Power BI allows for mapping user names for Analysis Services data sources. You can configure rules to map a user name signed in with Power BI to a name that's passed for EffectiveUserName on the Analysis Services connection. The map user names feature is a great way to work around when your user name in Azure Active Directory (Azure AD) doesn't match a UPN in your local Active Directory. For example, if your email address is nancy@contoso.onmicrsoft.com, you map it to nancy@contoso.com and that value is passed to the gateway.
 
 You can map user names for Analysis Services in two different ways:
 
@@ -74,7 +74,7 @@ We describe these two approaches, in order, in the following two sections.
 
 ### Manual user name remapping
 
-For Analysis Services data sources, you can configure custom UPN rules. Custom rules help you if your Power BI service login names don't match your local directory UPN. For example, if you sign in to Power BI with john@contoso.com but your local directory UPN is john@contoso.local, you can configure a mapping rule to have john@contoso.local passed to Analysis Services.
+For Analysis Services data sources, you can configure custom UPN rules. Custom rules help you if your Power BI service sign-in names don't match your local directory UPN. For example, if you sign in to Power BI with john@contoso.com but your local directory UPN is john@contoso.local, you can configure a mapping rule to have john@contoso.local passed to Analysis Services.
 
 To get to the UPN mapping screen, follow these steps.
 
@@ -96,7 +96,7 @@ To perform on-premises Active Directory property lookup to remap Azure AD UPNs t
 
 In the Power BI service, the following occurs:
 
-* For each query by a Power BI Azure AD user to an on-premises SQL Server Analysis Services (SSAS) server, a UPN string is passed along, such as
+* For each query by a Power BI Azure AD user to an on-premises SSAS server, a UPN string is passed along, such as
        firstName.lastName@contoso.com.
 
 > [!NOTE]
@@ -116,7 +116,7 @@ To configure your gateway to perform the Active Directory lookup:
 
 2. In the gateway, change the on-premises data gateway service to run with a domain account instead of a local service account. Otherwise, the Active Directory lookup won’t work properly at runtime. Go to the [on-premises data gateway app](/data-integration/gateway/service-gateway-app) on your machine, and then go to **Service settings** > **Change service account**. Make sure you have the recovery key for this gateway because you need to restore it on the same machine unless you want to create a new gateway instead. Restart the gateway service for the change to take effect.
 
-3. Go to the gateway’s installation folder, C:\Program Files\On-premises data gateway, as an administrator to ensure that you have write permissions. Open the Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config file.
+3. Go to the gateway’s installation folder, *C:\Program Files\On-premises* data gateway, as an administrator to ensure that you have write permissions. Open the *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* file.
 
 4. Edit the following two configuration values according to *your* Active Directory attribute configurations for your Active Directory users. The following configuration values are examples. Specify the values based on your Active Directory configuration. These configurations are case sensitive, so make sure they match the values in Active Directory.
 
@@ -165,7 +165,7 @@ When you select an item in the list, you can choose to reorder it by using the c
 
 ### Use a wildcard
 
-You can use a wildcard (*) for your **Replace (Original name)** string. It can only be used on its own and not with any other string part. Use a wildcard if you want to take all users and pass a single value to the data source. This feature is useful when you want all users in your organization to use the same user in your local environment.
+You can use a wildcard (*) for your **Replace (Original name)** string. It can only be used on its own and not with any other string part. Use a wildcard if you want to take all users and pass a single value to the data source. This approach is useful when you want all users in your organization to use the same user in your local environment.
 
 ### Test a mapping rule
 
@@ -184,7 +184,7 @@ Mapping is for the specific data source that's being configured. It's not a glob
 
 Each time a user interacts with Analysis Services, the effective user name is passed to the gateway and then on to your on-premises Analysis Services server. The UPN, which is typically the email address you use to sign in to the cloud, is passed to Analysis Services as the effective user. The UPN is passed in the connection property EffectiveUserName. 
 
-This email address should match a defined UPN within the local Active Directory domain. The UPN is a property of an Active Directory account. That Windows account must be present in an Analysis Services role to have access to the server. If no match is found in Active Directory, the login won't be successful.
+This email address should match a defined UPN within the local Active Directory domain. The UPN is a property of an Active Directory account. That Windows account must be present in an Analysis Services role to have access to the server. If no match is found in Active Directory, the sign-in won't be successful.
 
 Analysis Services can also provide filtering based on this account. The filtering can occur with either role-based security or row-level security.
 
@@ -209,9 +209,9 @@ Microsoft cloud services use [Azure AD](/azure/active-directory/fundamentals/act
 
 ## What is my local Active Directory’s role?
 
-For Analysis Services to determine if a user connecting to it belongs to a role with permissions to read data, the server needs to convert the effective user name passed from Azure AD to the gateway and on to the Analysis Services server. The Analysis Services server passes the effective user name to a Windows Active Directory domain controller (DC). The Active Directory DC then validates the effective user name as a valid UPN on a local account. It returns that user’s Windows user name back to the Analysis Services server.
+For Analysis Services to determine if a user connecting to it belongs to a role with permissions to read data, the server needs to convert the effective user name passed from Azure AD to the gateway and on to the Analysis Services server. The Analysis Services server passes the effective user name to a Windows Active Directory domain controller (DC). The Active Directory DC then validates that the effective user name is a valid UPN on a local account. It returns that user’s Windows user name back to the Analysis Services server.
 
-EffectiveUserName can't be used on a non-domain-joined Analysis Services server. The Analysis Services server must be joined to a domain to avoid any login errors.
+EffectiveUserName can't be used on a non-domain-joined Analysis Services server. The Analysis Services server must be joined to a domain to avoid any sign-in errors.
 
 ## How do I tell what my UPN is?
 
@@ -229,11 +229,11 @@ The cloud services only know about accounts within Azure AD. It doesn’t matter
 
 - You can add accounts manually to Azure AD.
 
-   You can create an account on the Azure portal, or within the Microsoft 365 admin center, and the account name will match the UPN of the local Active Directory account.
+   You can create an account on the Azure portal, or within the Microsoft 365 admin center, and the account name matches the UPN of the local Active Directory account.
 
 - You can use the [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) tool to synchronize local accounts to your Azure AD tenant.
 
-   The Azure AD Connect tool provides options for directory synchronization and setting up authentication. Options include password hash sync, pass-through authentication, and federation. If you're not a tenant admin or a local domain administrator, contact your IT admin to get this feature configured.
+   The Azure AD Connect tool provides options for directory synchronization and setting up authentication. Options include password hash sync, pass-through authentication, and federation. If you're not a tenant admin or a local domain administrator, contact your IT admin to help with configuration.
 
    Using Azure AD Connect ensures that the UPN matches between Azure AD and your local Active Directory.
 
@@ -255,7 +255,7 @@ This requirement is the case for both live connections and scheduled refresh.
 
 Make sure that the server and database name matches between Power BI Desktop and the configured data source for the gateway. You also need to make sure your user is listed in the **Users** tab of the data source to publish live connection datasets. The selection for live connections occurs within Power BI Desktop when you first import data.
 
-After you publish, either from Power BI Desktop or **Get Data**, your reports start to work. It might take several minutes after you create the data source within the gateway for the connection to be usable.
+After you publish, either from Power BI Desktop or **Get Data**, your reports should start to work. It might take several minutes after you create the data source within the gateway for the connection to be usable.
 
 ### Use the data source with scheduled refresh
 
@@ -281,5 +281,5 @@ You can use a live connection against tabular or multidimensional instances.
 * [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? Try the [Power BI Community](http://community.powerbi.com/).
 
