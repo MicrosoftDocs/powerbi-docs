@@ -22,11 +22,11 @@ After you [install the on-premises data gateway](/data-integration/gateway/servi
 
 ## Add a data source
 
-For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Select SAP HANA for the **Data Source Type**.
+For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Under **Data Source Type**, select **SAP HANA**.
 
 ![Add the SAP HANA data source](media/service-gateway-enterprise-manage-sap/datasourcesettings2-sap.png)
 
-After you select the SAP HANA data source type, you then fill in the **Server**, **Username**, and **Password** information for the data source.
+After you select the SAP HANA data source type, fill in the **Server**, **Username**, and **Password** information for the data source.
 
 > [!NOTE]
 > All queries to the data source will run using these credentials. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).

@@ -21,7 +21,7 @@ After you [install the on-premises data gateway](/data-integration/gateway/servi
 
 ## Add a data source
 
-For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Under **Data Source Type**, select SQL Server.
+For more information about how to add a data source, see [Add a data source](service-gateway-data-sources.md#add-a-data-source). Under **Data Source Type**, select **SQL Server**.
 
 ![Select the SQL Server data source](media/service-gateway-enterprise-manage-sql/datasourcesettings2.png)
 
