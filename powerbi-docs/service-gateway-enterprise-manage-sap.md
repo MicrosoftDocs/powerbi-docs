@@ -29,7 +29,7 @@ For information about how to add a data source, see [Add a data source](service-
 Once you've selected the SAP HANA data source type, you'll then fill in the **Server**, **Username**, and **Password** information for the data source.
 
 > [!NOTE]
-> All queries to the data source will run using these credentials. To learn more about how credentials are stored, see [Storing encrypted credentials in the cloud](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud).
+> All queries to the data source will run using these credentials. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Filling in the data source settings](media/service-gateway-enterprise-manage-sap/datasourcesettings3-sap.png)
 
