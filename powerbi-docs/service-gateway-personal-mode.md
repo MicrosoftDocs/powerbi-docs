@@ -47,7 +47,7 @@ To install the on-premises data gateway (personal mode):
 
    ![Select the on-premises data gateway (personal mode)](media/service-gateway-personal-mode/personal-gateway-select.png)
 
-After the installation finishes successfully and you sign in, you see the following screen.
+The gateway files are installed in _"%localappdata%\Microsoft\On-premises data gateway (personal mode)_. After the installation finishes successfully and you sign in, you see the following screen.
 
 ![On-premises data gateway (personal mode) succeeded](media/service-gateway-personal-mode/personal-gateway-complete.png)
 
@@ -100,4 +100,3 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whi
 * [Configuring proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)  
 
 More questions? Try the [Power BI Community](http://community.powerbi.com/).
-
