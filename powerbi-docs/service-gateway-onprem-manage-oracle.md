@@ -70,7 +70,7 @@ After you select the Oracle data source type, fill in the information for the da
 Under **Authentication Method**, you can choose either **Windows** or **Basic**. Choose **Basic** if you plan to use an account that's created within Oracle instead of Windows authentication. Then enter the credentials to be used for this data source.
 
 > [!NOTE]
-> All queries to the data source will run by using these credentials. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud). 
+> All queries to the data source will run using these credentials. To learn more about how credentials are stored, see [Store encrypted credentials in the cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Filling in the data source settings](media/service-gateway-onprem-manage-oracle/data-source-oracle2.png)
 

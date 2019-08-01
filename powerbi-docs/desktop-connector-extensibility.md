@@ -41,9 +41,11 @@ Under **Data Extensions** you can select from two levels of security:
 
 If you plan on using **Custom Connectors** or connectors that you or a third party have developed, you must select **"(Not Recommended) Allow any extension to load without warning"**. We don't recommend this security setting unless you absolutely trust your Custom Connectors. Because, the code in there can handle credentials, including sending them over HTTP, and ignore privacy levels.
 
-At the **"(Recommended)"** security setting, if there are custom connectors on your system, an error appears that describes the connectors that can't load because of security.
+At the **"(Recommended)"** security setting, if there are custom connectors on your system, you will get the error "The following connector has not been certified, and we are unable to verify that is secure to use" followed by a list of connectors that can't securely load.
 
 ![A dialog describes Custom Connectors that can't load because of security settings, in this case TripPin](media/desktop-connector-extensibility/data-extension-security-2.png)
+
+To resolve the error without changing security, remove the unsigned connectors from your 'Custom Connectors' folder.
 
 To resolve the error and use those connectors, change your security settings to the **"(Not Recommended) Allow any extension to load without warning"** setting as described earlier. Then, restart **Power BI Desktop**.
 
