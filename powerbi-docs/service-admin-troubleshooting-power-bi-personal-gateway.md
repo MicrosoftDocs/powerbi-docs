@@ -85,17 +85,21 @@ You might get this error in settings for \<dataset\> if you have a scheduled ref
 
 **Windows authentication is not supported for Access database:** Power BI currently only supports Anonymous authentication for the Access database. We're working on enabling Windows authentication for the Access database.
 
-**Sign-in error when you enter credentials for a data source:** If you get an error like this one when you enter Windows credentials for a data source, you might still be on an older version of the gateway (personal mode). For more information, see [Install the latest version of Power BI gateway (personal mode)](https://powerbi.microsoft.com/gateway/).
+**Error: Sign-in error when you enter credentials for a data source:** If you get an error like this one when you enter Windows credentials for a data source: 
 
-  ![](media/service-admin-troubleshooting-power-bi-personal-gateway/pbi_pg_credentialserror.jpg.png)
+  ![Windows credential error message](media/service-admin-troubleshooting-power-bi-personal-gateway/pbi_pg_credentialserror.jpg.png)
+
+You might still be on an older version of the gateway (personal mode). 
+
+**Solution:** For more information, see [Install the latest version of Power BI gateway (personal mode)](https://powerbi.microsoft.com/gateway/).
 
 **Error: Sign-in error when you select Windows authentication for a data source using ACE OLEDB:** If you get the following error when you enter data source credentials for a data source using an ACE OLEDB provider:
 
-![Credential error message](media/service-admin-troubleshooting-power-bi-personal-gateway/aceoledberror.png)
+![Data source credential error message](media/service-admin-troubleshooting-power-bi-personal-gateway/aceoledberror.png)
 
 Power BI doesn't currently support Windows authentication for a data source using an ACE OLEDB provider.
 
-**Solution:** To work around this error, you can select **Anonymous authentication**. For a legacy ACE OLEDB provider, anonymous credentials are equal to Windows credentials.
+**Solution:** To work around this error, select **Anonymous authentication**. For a legacy ACE OLEDB provider, anonymous credentials are equal to Windows credentials.
 
 ## Tile refresh
 If you receive an error when dashboard tiles refresh, see [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md).
@@ -132,10 +136,10 @@ If the gateway (personal mode) fails to install, you'll see a link to show the s
 
 ![Link to the setup log](media/service-admin-troubleshooting-power-bi-personal-gateway/setup-log.png)
 
-Or, you can go to your *Temp* folder (%temp%) and look for files that start with *Power\_BI\_*.
+Or, you can go to your Temp folder (%temp%) and look for files that start with *Power\_BI\_*.
 
 > [!NOTE]
-> Going to %temp% might take you to a subfolder of temp. The *Power\_BI\_* files are in the root of the temp directory. You might need to go up a level or two.
+> Going to %temp% might take you to a subfolder of Temp. The *Power\_BI\_* files are in the root of the Temp directory. You might need to go up a level or two.
 > 
 > 
 
