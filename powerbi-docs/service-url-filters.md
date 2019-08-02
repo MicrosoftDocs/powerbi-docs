@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/24/2019
+ms.date: 07/25/2019
 LocalizationGroup: Reports
 ---
 
@@ -23,7 +23,7 @@ When you open a report in Power BI service, each page of the report has its own 
 
 Say you're working in Power BI Desktop. You want to create a report that has links to other Power BI reports, but you want to show only some of the information in the other reports. First, filter the reports using query string parameters and save the URLs. Next, create a table in Desktop with these new report URLs.  Then publish and share the report.
 
-Another use for query string parameters is for someone creating an advanced Power BI solution.  Using DAX, she creates a report that generates a filtered report URL dynamically based on the selection her customer makes in the current report. When customers select the URL, they see only the intended information. 
+Another use for query string parameters is for someone creating an advanced Power BI solution.  Using DAX, they create a report that generates a filtered report URL dynamically based on the selection their customer makes in the current report. When customers select the URL, they see only the intended information. 
 
 ## Query string parameter syntax for filtering
 
@@ -48,9 +48,9 @@ app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter
 
 Field type can be a number, datetime, or string and the type used must match the type set in the dataset.  For example, specifying a table column of type "string" won't work if you're looking for a datetime or numeric value in a dataset column set as a date, such as Table/StringColumn eq 1.
 
-* **Strings** must be enclosed with single quotes - 'manager name'.
-* **Numbers** require no special formatting
-* **Dates and times** must be enclosed with single quotes. In OData v3 they must be preceded by the word datetime, but datetime isn’t needed in OData v4.
+* **Strings** must be enclosed with single quotes, as in 'manager name'.
+* **Numbers** require no special formatting. See [Numeric data types](#numeric-data-types) in this article for details.
+* **Dates and times** See [Date data types](#date-data-types) in this article. 
 
 If it's still confusing, continue reading and we'll break it down.  
 
@@ -128,9 +128,17 @@ A Power BI URL filter can include numbers in the following formats.
 
 ### Date data types
 
-Power BI supports both OData V3 and V4 for **Date** and **DateTimeOffset** data types.  Dates are represented using the EDM format (2019-02-12T00:00:00), so when you specify a date as 'YYYY-MM-DD', Power BI interprets it as 'YYYY-MM-DDT00:00:00'.
+Power BI supports both OData V3 and V4 for **Date** and **DateTimeOffset** data types. For OData V3, dates must be enclosed in single quotes and be preceded by the word datetime. Single quotes and the word datetime aren't needed in OData V4. 
+  
+Dates are represented using the EDM format (2019-02-12T00:00:00): When you specify a date as 'YYYY-MM-DD', Power BI interprets it as 'YYYY-MM-DDT00:00:00'. Make sure month and day are two digits, MM and DD.
 
-Why does this distinction matter? Let's say you create a query string parameter **Table/Date gt '2018-08-03'**.  Will the results include August 3, 2018 or start with August 4, 2018? Since Power BI translates your query to **Table/Date gt '2018-08-03T00:00:00'**, your results include any dates that have a non-zero time part since those dates would be greater than **'2018-08-03T00:00:00'**.
+Why does this distinction matter? Let's say you create a query string parameter **Table/Date gt '2018-08-03'**.  Will the results include August 3, 2018 or start with August 4, 2018? Power BI translates your query to **Table/Date gt '2018-08-03T00:00:00'**. So, your results include any dates that have a non-zero time part, because those dates would be greater than **'2018-08-03T00:00:00'**.
+
+There are other differences between V3 and V4. OData V3 does not support Dates, only DateTime. So if you use the V3 format, you must qualify it with the full date time. Date literals like "datetime'2019-05-20'" aren't supported in V3 notation. But you can just write it as "2019-05-20" in V4 notation. Here are two equivalent filter queries in V3 and V4:
+
+- OData V4 format: filter=Table/Date gt 2019-05-20
+- OData V3 format: filter=Table/Date gt datetime'2019-05-20T00:00:00'
+
 
 ## Special characters in URL filters
 

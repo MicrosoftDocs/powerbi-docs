@@ -28,7 +28,7 @@ Note that for HANA it is **highly** recommended that encryption be enabled befor
 
 To use SAML, you must establish a trust relationship between the HANA server(s) for which you want to enable SSO and the gateway, which serves as the SAML Identity Provider (IdP) in this scenario. There are various ways to establish this relationship, such as importing the gateway IdP's x509 certificate into the HANA server(s) trust store, or by having the gateway's X509 certificate signed by a root Certification Authority (CA) trusted by the HANA server(s). We describe the latter approach in this guide, but you may use another approach if it is more convenient.
 
-Also note that while this guide uses OpenSSL as the HANA server's cryptographic provider, it is also possible to use the SAP Cryptographic Library (also known as CommonCryptoLib or sapcrypto) instead of OpenSSL to complete the setup steps where we establish the trust relationship. Refer to the official SAP documentation for further information.
+Also note that while this guide uses OpenSSL as the HANA server's cryptographic provider, it is reccomended by SAP to use the SAP Cryptographic Library (also known as CommonCryptoLib or sapcrypto) instead of OpenSSL to complete the setup steps where we establish the trust relationship. Refer to the official SAP documentation for further information.
 
 The following steps describe how to establish a trust relationship between a HANA server and the gateway IdP by signing the gateway IdP's X509 certificate using a Root CA trusted by the HANA server.
 
@@ -175,7 +175,7 @@ Server-side authentication traces provide detailed information for troubleshooti
 
 For more information about the **on-premises data gateway** and **DirectQuery**, check out the following resources:
 
-* [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-getting-started)
+* [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data sources supported by DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery and SAP BW](desktop-directquery-sap-bw.md)
