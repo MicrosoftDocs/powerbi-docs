@@ -31,7 +31,7 @@ Need help with understanding the building blocks that make up Power BI? See [Bas
 > 
 
 ## Pin a tile
-There are many different ways to add (pin) a tile to a dashboard. Tiles can be pinned from:
+There are many different ways to add (pin) a tile to a dashboard. You can pin tiles from:
 
 * [Power BI Q&A](service-dashboard-pin-tile-from-q-and-a.md)
 * [A report](service-dashboard-pin-tile-from-report.md)
@@ -41,11 +41,11 @@ There are many different ways to add (pin) a tile to a dashboard. Tiles can be p
 * [Quick Insights](service-insights.md)
 * [Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
-Standalone tiles for images, text boxes, videos, streaming data, and web content can be created directly on the dashboard by using [Add tile](service-dashboard-add-widget.md).
+You create standalone tiles for images, text boxes, videos, streaming data, and web content directly on the dashboard by using the [Add tile](service-dashboard-add-widget.md) control.
 
   ![Add tile icon](media/service-dashboard-tiles/add_widgetnew.png)
 
-## Interacting with tiles on a dashboard
+## Interact with tiles on a dashboard
 After you've added a tile to a dashboard, you can move and resize it, or change its appearance and behavior.
 
 ### Move and resize a tile
@@ -61,22 +61,22 @@ Grab a tile and [move it around on the dashboard](service-dashboard-edit-tile.md
    
     From here you can:
    
-     * [Add comments to the dashboard](consumer/end-user-comment.md) 
-     * [Open the report that was used to create this tile](service-reports.md)  
-     * [View in focus mode](service-focus-mode.md)   
-     * [Export the data used in the tile](visuals/power-bi-visualization-export-data.md) !
-     * [Edit the title and subtitle and add a hyperlink](service-dashboard-edit-tile.md) 
-     * [Run insights](service-insights.md) 
-     * [Pin the tile to another dashboard](service-pin-tile-to-another-dashboard.md)
-     * [Delete the tile](service-dashboard-edit-tile.md)
+     * [Add comments to the dashboard](consumer/end-user-comment.md).
+     * [Open the report that was used to create this tile](service-reports.md).  
+     * [View in focus mode](service-focus-mode.md).   
+     * [Export the data used in the tile](visuals/power-bi-visualization-export-data.md).
+     * [Edit the title and subtitle and add a hyperlink](service-dashboard-edit-tile.md). 
+     * [Run insights](service-insights.md). 
+     * [Pin the tile to another dashboard](service-pin-tile-to-another-dashboard.md).
+     * [Delete the tile](service-dashboard-edit-tile.md).
 
 3. To close the action menu, select a blank area in the dashboard.
 
 ### Select a tile
-When you select a tile, what happens next depends on how you created the tile. Also, if it has a [custom link](service-dashboard-edit-tile.md), selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, on-premises Reporting Services report, or Q&A question that was used to create the tile.
+When you select a tile, what happens next depends on how you created the tile. Or, if it has a [custom link](service-dashboard-edit-tile.md), selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, on-premises Reporting Services report, or Q&A question that was used to create the tile.
 
 > [!NOTE]
-> The exception to this is video tiles created directly on the dashboard using **Add tile**. Selecting a video tile (that was created this way) causes the video to play right there on the dashboard.   
+> An exception is video tiles created directly on the dashboard by using **Add tile**. Selecting a video tile (that was created this way) causes the video to play directly on the dashboard.   
 > 
 > 
 

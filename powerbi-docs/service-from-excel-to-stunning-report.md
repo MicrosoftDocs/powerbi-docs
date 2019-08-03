@@ -35,34 +35,39 @@ Let’s take a simple Excel file as an example.
 
    ![Data formatted as a table](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
 
-## Upload your Excel file into Power BI
-Power BI connects to many data sources, including Excel files that live on your computer. 
+## Upload your Excel file to the Power BI service
+The Power BI service connects to many data sources, including Excel files that live on your computer. 
 
 1. To get started, sign in to the Power BI service. If you haven’t signed up, [you can do so for free](https://powerbi.com).
 
-2. You want to create a new dashboard. Open **My workspace** and select the **+ Create** icon.
+2. You want to create a new dashboard. Open **My workspace** and select the **Create** icon.
 
    ![Create icon](media/service-from-excel-to-stunning-report/power-bi-new-dash.png)
 
-3. Select **Dashboard**, enter a name, and select **Create**. 
+3. Select **Dashboard**, enter a name, and then select **Create**. 
 
    The new dashboard displays, with no data.
 
    ![Create dropdown](media/service-from-excel-to-stunning-report/power-bi-create-dash.png)
 
-4. At the bottom of the left navigation pane, select **Get Data**. On the Get Data page, under Import or Connect to Data, in the Files box, select **Get**.
+4. At the bottom of the left navigation pane, select **Get data**. 
 
-![Get data from files](media/service-from-excel-to-stunning-report/pbi_get_files.png)
+5. On the **Get Data** page, in the **Files** box under **Create new content**, select **Get**.
 
-5. On the Files page, select **Local File**. Navigate to the Excel workbook file on your computer and select it to load into Power BI. Select **Import**.
+   ![Get data from files](media/service-from-excel-to-stunning-report/pbi_get_files.png)
 
-   > **NOTE**: To follow along with the rest of this tutorial, use the [Financial sample workbook](sample-financial-download.md).
+6. On the **Files** page, select **Local File**. Navigate to the Excel workbook file on your computer and select **Open** to load it into the Power BI service. 
+
+7. From the **Local File** page, select **Import**.
+
+   > [!NOTE] 
+   > To follow along with the rest of this tutorial, use the [Financial sample workbook](sample-financial-download.md).
    > 
 
    ![Get data > Files window](media/service-from-excel-to-stunning-report/pbi_local_file.png)
 
 ## Build your report
-After Power BI imports your Excel file, you start building your report. 
+After the Power BI service imports your Excel file, you start building your report. 
 
 1. When the **Your dataset is ready** message appears, select **View dataset**.  
 
@@ -81,14 +86,14 @@ After Power BI imports your Excel file, you start building your report.
    ![Column chart in report editor](media/service-from-excel-to-stunning-report/pbi_report_pin-new.png)
 
    > [!TIP]
-   > If your chart doesn't look like you expected, check your aggregations. For example, in the **Value** well, right click the field you just added and ensure the data is being aggregated the way you'd like it. In this example, we're using **Sum**.
+   > If your chart doesn't look like you expect, check your aggregations. For example, in the **Value** well, right click the field you just added and ensure the data is being aggregated the way you'd like it. In this example, we're using **Sum**.
    > 
 
 Your manager wants to know which countries are the most profitable. Impress them with a map visualization. 
 
-1. Select a blank area on your canvas. 
+1. Select a blank area on your report canvas. 
 
-2. From the **Fields** pane, drag over the **Country** and the **Profit** fields. 
+2. From the **Fields** pane, drag the **Country** and the **Profit** fields to your report canvas.
 
    Power BI creates a map visual with bubbles representing the relative profit of each location.
 
@@ -100,13 +105,13 @@ What about displaying a visual showing sales by product and market segment? Easy
    
    Power BI creates a bar chart instantly. 
 
-2. Change the type of chart by choosing one of the icons in the **Visualizations** menu. For instance, change it to a Stacked Bar chart. 
+2. Change the type of chart by choosing one of the icons in the **Visualizations** menu. For instance, change it to a **Stacked column chart**. 
 
 3. To sort the chart, select the ellipsis (...) > **Sort by**.
 
    ![Stacked column chart in report editor](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
 
-Pin all of your visuals to your dashboard. You’re ready to share it with your colleagues.
+Pin all of your visuals to your dashboard. You’re now ready to share it with your colleagues.
 
    ![Dashboard with the three visuals pinned](media/service-from-excel-to-stunning-report/pbi_report.png)
 
@@ -117,9 +122,9 @@ Let's say you want to share your dashboard with your manager, Paula. You can sha
 
    ![Share icon](media/service-from-excel-to-stunning-report/power-bi-share.png)
 
-   Power BI displays the **Share Dashboard** page. 
+   Power BI displays the **Share dashboard** page. 
 
-2. In the top area, enter the email addresses of the recipients and add a message in the field below it. 
+2. Enter the email addresses of the recipients in the **Enter email addresses** box and add a message in the box below it. 
 
 3. To allow recipients to share your dashboard with others, select **Allow recipients to share your dashboard**. Select **Share**.
 
@@ -127,7 +132,7 @@ Let's say you want to share your dashboard with your manager, Paula. You can sha
 
 ## Next steps
 
-* [Tutorial: Get started with the Power BI service](service-get-started.md)
+* [Get started with the Power BI service](service-get-started.md)
 * [Get started with Power BI Desktop](desktop-getting-started.md)
 * [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
