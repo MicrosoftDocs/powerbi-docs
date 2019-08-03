@@ -58,13 +58,13 @@ The Power BI service connects to many data sources, including Excel files that l
 
 6. On the **Files** page, select **Local File**. Navigate to the Excel workbook file on your computer and select **Open** to load it into the Power BI service. 
 
+   ![Get data > Files window](media/service-from-excel-to-stunning-report/pbi_local_file.png)
+
 7. From the **Local File** page, select **Import**.
 
    > [!NOTE] 
    > To follow along with the rest of this tutorial, use the [Financial sample workbook](sample-financial-download.md).
    > 
-
-   ![Get data > Files window](media/service-from-excel-to-stunning-report/pbi_local_file.png)
 
 ## Build your report
 After the Power BI service imports your Excel file, you start building your report. 
