@@ -167,7 +167,7 @@ A **junk dimension** is useful when there are many dimensions, especially consis
 
 The design objective of a junk dimension is to consolidate many "small" dimensions into a single dimension to both reduce the model storage size and also reduce **Fields** pane clutter by surfacing fewer model tables.
 
-A junk dimension table is typically the Cartesian product of all dimension attribute members, with a surrogate key column. The surrogate key provides a unique reference to each row in the table. You can build the dimension in a data warehouse, or by using Power Query to create a query that performs [full outer query joins](https://docs.microsoft.com/en-us/powerquery-m/table-join), then adds a surrogate key (index column).
+A junk dimension table is typically the Cartesian product of all dimension attribute members, with a surrogate key column. The surrogate key provides a unique reference to each row in the table. You can build the dimension in a data warehouse, or by using Power Query to create a query that performs [full outer query joins](https://docs.microsoft.com/powerquery-m/table-join), then adds a surrogate key (index column).
 
 ![Junk dimension example](media/star-schema/junk-dimension.png)
 
