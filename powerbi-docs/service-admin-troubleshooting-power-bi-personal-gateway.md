@@ -29,7 +29,7 @@ Many issues can surface when the gateway version is out of date. It's a good gen
 ## Installation
 **Gateway (personal mode) operates on 64-bit versions:** If your machine is a 32-bit version, you can't install the gateway (personal mode). Your operating system has to be a 64-bit version. Install a 64-bit version of Windows or install the gateway (personal mode) on a 64-bit machine.
 
-**Gateway (personal mode) fails to install as a service even though you're a local administrator for the computer:** Installation can fail if the user is in the computer’s local Administrator group, but Group Policy doesn't allow that username to sign in as a service. At the moment, ensure that Group Policy lets a user sign in as a service. We’re working on a fix for this issue. For more information, see [Add the Log on as a service right to an account](https://technet.microsoft.com/library/cc739424.aspx).
+**Gateway (personal mode) fails to install as a service even though you're a local administrator for the computer:** Installation can fail if the user is in the computer’s local Administrator group, but Group Policy doesn't allow that username to sign in as a service. Ensure that Group Policy lets a user sign in as a service. We’re working on a fix for this issue. For more information, see [Add the Log on as a service right to an account](https://technet.microsoft.com/library/cc739424.aspx).
 
 **Operation timed out:** This message is common if the computer (physical machine or VM) on which you’re installing the gateway (personal mode) has a single core processor. Close any applications, turn off any non-essential processes, and try installing again.
 
@@ -40,7 +40,7 @@ Many issues can surface when the gateway version is out of date. It's a good gen
 > 
 > 
 
- **Proxy configuration:** You might see issues with configuring the gateway (personal mode) if your environment needs the use of a proxy. To learn more about how to configure proxy information, see [Configuring proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy).
+ **Proxy configuration:** You might see issues with configuring the gateway (personal mode) if your environment needs the use of a proxy. To learn more about how to configure proxy information, see [Configure proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy).
 
 ## Schedule refresh
 **Error: The credential stored in the cloud is missing.**
@@ -83,7 +83,7 @@ You might get this error in settings for \<dataset\> if you have a scheduled ref
 >[!NOTE]
 >If you have a 32-bit version of Excel, you can't install a 64-bit version ACE provider on the same computer.
 
-**Windows authentication is not supported for Access database:** Power BI currently only supports Anonymous authentication for the Access database. We're working on enabling Windows authentication for the Access database.
+**Windows authentication is not supported for Access database:** Power BI currently only supports Anonymous authentication for the Access database.
 
 **Error: Sign-in error when you enter credentials for a data source:** If you get an error like this one when you enter Windows credentials for a data source: 
 
