@@ -48,14 +48,14 @@ Lastly, it's important to understand that optimal model design is part science a
 
 There are many additional concepts related to star schema design that can be applied to a Power BI model. These include:
 
-- Measures
-- Surrogate keys
-- Snowflake dimensions
+- [Measures](#measures)
+- [Surrogate keys](#surrogate-keys)
+- [Snowflake dimensions](#snowflake-dimensions)
 - [Role-playing dimensions](#role-playing-dimensions)
-- Slowly changing dimensions
-- Junk dimensions
-- Degenerate dimensions
-- Factless fact tables
+- [Slowly changing dimensions](#slowly-changing-dimensions)
+- [Junk dimensions](#junk-dimensions)
+- [Degenerate dimensions](#degenerate-dimensions)
+- [Factless fact tables](#factless-fact-tables)
 
 ## Measures
 
