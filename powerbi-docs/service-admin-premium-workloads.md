@@ -19,7 +19,7 @@ This article describes enabling and configuring workloads for Power BI Premium c
 
 ## Default memory settings
 
-Query workloads are optimized for and limited by resources determined by your Premium capacity SKU. Premium capacities also support additional workloads that can use your capacity's resources. Default memory values for these workloads are based on the capacity nodes available for your SKU. Max memory settings are not cumulative. Memory up to the max value specified is dynamically allocated for AI and dataflows, but is statically allocated for paginated reports. 
+Query workloads are optimized for and limited by resources determined by your Premium capacity SKU. Premium capacities also support additional workloads that can use your capacity's resources. Default memory values for these workloads are based on the capacity nodes available for your SKU. Max memory settings are not cumulative. Memory up to the max value specified is dynamically allocated for AI and dataflows, but is statically allocated for paginated reports.
 
 ### Microsoft Office SKUs for software as a service (SaaS) scenarios
 
@@ -47,8 +47,9 @@ In addition to the **Max Memory** setting, the AI workload has an additional set
 
 ### Datasets (Preview)
 
-By default, the Datasets workload is enabled and cannot be disabled. 
-This workload contains an additional setting, **XMLA Endpoint**. The default is **1**, meaning enabled. This setting specifies connections from client applications honor the security group membership set at the workspace and app levels. To learn more, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md).
+By default, the Datasets workload is enabled and cannot be disabled. This workload contains additional settings for an _XMLA endpoint_. This setting specifies that connections from client applications honor the security group membership set at the workspace and app levels. To learn more, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md).
+
+
 
 ### Dataflows
 
@@ -61,9 +62,9 @@ When refreshing a dataflow, the dataflow workload spawns a container for each en
 
 It's recommend you use the [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) app to analyze Dataflow workload performance. 
 
-In some cases, increasing container size may not improve performance. For example, if the dataflow is getting data only from a source without performing significant calculations, changing container size probably won’t help. Increasing container size might help if it will enable the Dataflow workload to allocate more memory for entity refresh operations. By having more memory allocated, it can reduce the time it takes to refresh heavily computed entities. 
+In some cases, increasing container size may not improve performance. For example, if the dataflow is getting data only from a source without performing significant calculations, changing container size probably won’t help. Increasing container size might help if it will enable the Dataflow workload to allocate more memory for entity refresh operations. By having more memory allocated, it can reduce the time it takes to refresh heavily computed entities.
 
-The Container Size value can’t exceed the maximum memory for the Dataflows workload. For example, a P1 capacity has 25GB of memory. If the Dataflow workload Max Memory (%) is set to 20%, Container Size (MB) cannot exceed 5000. In all cases, the Container Size cannot exceed the Max Memory, even if you set a higher value. 
+The Container Size value can’t exceed the maximum memory for the Dataflows workload. For example, a P1 capacity has 25GB of memory. If the Dataflow workload Max Memory (%) is set to 20%, Container Size (MB) cannot exceed 5000. In all cases, the Container Size cannot exceed the Max Memory, even if you set a higher value.
 
 ### Paginated reports (Preview)
 
@@ -73,7 +74,7 @@ In some cases, the Paginated Reports workload can become unavailable. In this ca
 
 ## Configure workloads
 
-Maximize your capacity's available resources by enabling workloads only if they will be used. Change memory settings only when you have determined default settings are not meeting your capacity resource requirements.  
+Maximize your capacity's available resources by enabling workloads only if they will be used. Change memory and other settings only when you have determined default settings are not meeting your capacity resource requirements.
 
 ### To configure workloads in the Power BI admin portal
 
@@ -81,12 +82,9 @@ Maximize your capacity's available resources by enabling workloads only if they 
 
 1. Under **MORE OPTIONS**, expand **Workloads**.
 
-1. Enable one or more workloads, and set a value for **Max Memory**.   
+1. Enable one or more workloads, and set a value for **Max Memory** and other settings.
 
-    
-    ![Enable workloads](media/service-admin-premium-workloads/admin-portal-workloads.png)
-
-1. Click **Apply**.
+1. Select **Apply**.
 
 ### REST API
 
