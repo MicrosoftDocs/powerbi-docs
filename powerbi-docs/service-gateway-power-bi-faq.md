@@ -38,7 +38,7 @@ LocalizationGroup: Gateways
 
 **Question:** Why can't I connect to my Oracle server? 
 
-**Answer:** You might need to install the Oracle client and configure the tnsnames.ora file with the proper server information in order to connect to your Oracle server. This is a separate installation outside of the gateway. For more information, see [Installing the Oracle client](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+**Answer:** You might need to install the Oracle client and configure the tnsnames.ora file with the proper server information in order to connect to your Oracle server. This is a separate installation outside of the gateway. For more information, see [Install the Oracle client](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
 
 **Question:** Will the gateway work with Azure ExpressRoute? 
 
