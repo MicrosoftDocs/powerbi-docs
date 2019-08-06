@@ -79,7 +79,7 @@ You can create your reports and datasets by using Power BI Desktop. Then you can
    
 ### Create and publish your paginated reports
 
-You can create your paginated reports by using [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder).Then you can [upload the report](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an app workspace assigned to at least A4/P1 capacity.The end-user uploading the report needs to jave a Power BI Pro license to publish to an app workspace.
+You can create your paginated reports by using [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder).Then you can [upload the report](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an app workspace assigned to at least A4/P1 capacity. The end-user uploading the report must have a Power BI Pro license to publish to an app workspace.
    
 ## Embed your content by using the sample application
 
