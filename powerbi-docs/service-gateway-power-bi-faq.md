@@ -20,9 +20,9 @@ LocalizationGroup: Gateways
 
 ## Power BI
 
-**Question:** Do I need to upgrade the personal gateway? 
+**Question:** Do I need to upgrade the on-premises data gateway (personal mode)?
 
-**Answer:** No, you can keep using the personal gateway for Power BI.
+**Answer:** No, you can keep using the gateway (personal mode) for Power BI.
 
 **Question:** Are any special permissions required to install the gateway and manage it in the Power BI service?
 
