@@ -9,18 +9,18 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 08/06/2019
 ms.author: maggies
 
 LocalizationGroup: Dashboards
 ---
 # Generate data insights automatically with Power BI
-Have a new dataset and not quite sure where to start?  Need to build a dashboard quickly?  Want to look for insights you may have missed?
+Do you have a new dataset and aren't quite sure where to start?  Need to build a dashboard quickly?  Want to look for insights you may have missed?
 
 Run quick insights to generate interesting interactive visualizations based on your data. Quick insights can be run on an entire dataset (quick insights) or on a specific dashboard tile (scoped insights). You can even run insights on an insight!
 
 > [!NOTE]
-> Insights doesn't work with DirectQuery - it only works with data uploaded to Power BI.
+> Insights doesn't work with DirectQuery; it only works with data uploaded to Power BI.
 > 
 
 The insights feature is built on a growing [set of advanced analytical algorithms](service-insight-types.md) developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
@@ -31,9 +31,9 @@ Watch Amanda run quick insights on a dataset, open an insight in Focus mode, pin
 <iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
 
 
-Now it's your turn. Explore insights using the [Supplier Quality Analysis sample](sample-supplier-quality.md).
+Now it's your turn. Explore insights by using the [Supplier Quality Analysis sample](sample-supplier-quality.md).
 
-1. From the **Datasets** tab, select the ellipses (...) and choose **Get insights**.
+1. From the **Datasets** tab, select the ellipsis (...) and choose **Get quick insights**.
    
     ![Datasets tab](media/service-insights/power-bi-ellipses.png)
    
@@ -49,23 +49,26 @@ Now it's your turn. Explore insights using the [Supplier Quality Analysis sample
     > Some datasets can't generate insights because the data isn't statistically significant.  To learn more, see [Optimize your data for insights](service-insights-optimize.md).
    > 
     
-1. The visualizations display in a special **Quick Insights** canvas with up to 32 separate insight cards. Each card has a chart or graph plus a short description.
+4. The visualizations display in a special **Quick Insights** canvas with up to 32 separate insight cards. Each card has a chart or graph plus a short description.
    
     ![Quick Insights canvas](media/service-insights/power-bi-insights.png)
 
 ## Interact with the insight cards
-  ![pin icon](media/service-insights/pbi_hover.png)
 
 1. Hover over a card and select the pin icon to add the visualization to a dashboard.
-2. Hover over a card, select the ellipses (...) and choose **View insights**. This opens the insight fullscreen.
+
+2. Hover over a card, select the ellipses (...) and choose **View insights**. 
+
+    The insight screen opens in Focus mode.
    
-    ![Insight full screen](media/service-insights/power-bi-insight-focus.png)
+    ![Insight Focus mode](media/service-insights/power-bi-insight-focus.png)
 3. In Focus mode you can:
    
-   * Filter the visualizations.  To display the filters, in the top right corner, select the arrow to expand the Filters pane.
-        ![insight an Filters menu expanded](media/service-insights/power-bi-insights-filter-new.png)
-   * Pin the insight card to a dashboard by selecting the pin ![pin icon](media/service-insights/power-bi-pin-icon.png)  icon or **Pin visual**.
-   * Run insights on the card itself. This is often referred to as **scoped insights**. In the top-right corner, select the lightbulb icon ![Get insights icon](media/service-insights/power-bi-bulb-icon.png)  or **Get insights**.
+   * Filter the visualizations. If the **Filters** pane isn't already open, expand it by select the arrow on the right side of the window.
+
+        ![Insight Filters menu expanded](media/service-insights/power-bi-insights-filter-new.png)
+   * Pin the insight card to a dashboard by selecting **Pin visual**.
+   * Run insights on the card itself, which is often referred to as *scoped insights*. In the top-right corner, select the lightbulb icon ![Get insights icon](media/service-insights/power-bi-bulb-icon.png) or **Get insights**.
      
        ![menubar showing Get Insights icon](media/service-insights/pbi-autoinsights-tile.png)
      
@@ -75,7 +78,7 @@ Now it's your turn. Explore insights using the [Supplier Quality Analysis sample
 4. To return to the original insights canvas, in the top-left corner, select **Exit Focus mode**.
 
 ## Run insights on a dashboard tile
-Instead of searching for insights against an entire dataset, narrow your search to the data used to create a single dashboard tile. This too is often referred to as **scoped insights**.
+Instead of searching for insights against an entire dataset, narrow your search to the data that's used to create a single dashboard tile. This technique is often referred to as a *scoped insight*.
 
 1. Open a dashboard.
 2. Hover over a tile. select the ellipses (...), and choose **View insights**. The tile opens in [Focus mode](service-focus-mode.md) with the insights cards displayed along the right.    
