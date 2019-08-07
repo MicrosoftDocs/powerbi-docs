@@ -130,7 +130,7 @@ You have two ways of getting Power BI Desktop: You can download it, or install i
    
      The next time you start Power BI Desktop it will use the language you set as the default. 
 
-To override this and use Power BI Desktop in a language other than your Windows language do the following.
+To override the default and use Power BI Desktop in a language other than your Windows language do the following.
 1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
 2. Under **Global Settings**, select **Regional Settings**.
 3. In the **Application Language** box, select a different locale. 
