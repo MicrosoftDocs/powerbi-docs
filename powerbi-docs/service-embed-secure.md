@@ -127,6 +127,8 @@ You can add as many buttons as you’d like to create a low-code custom experien
 
 * The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embed-sample-for-your-organization.md) embedding method. 
 
+* The authentication token lifetime is controled based on your AAD settings. When the authentication token timesout, the user will need to refresh their browser to get an updated authentication token.
+
 ## Next steps
 
 * [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
