@@ -33,17 +33,17 @@ Watch Amanda run quick insights on a dataset, open an insight in Focus mode, pin
 
 Now it's your turn. Explore insights by using the [Supplier Quality Analysis sample](sample-supplier-quality.md).
 
-1. From the **Datasets** tab, select the ellipsis (...) and choose **Get quick insights**.
+1. From the **Datasets** tab, select the ellipsis (...), and then choose **Get quick insights**.
    
     ![Datasets tab](media/service-insights/power-bi-ellipses.png)
    
-    ![ellipses menu](media/service-insights/power-bi-tab.png)
+    ![Ellipsis menu](media/service-insights/power-bi-tab.png)
 2. Power BI uses [various algorithms](service-insight-types.md) to search for trends in your dataset.
    
     ![Searching for insights dialog](media/service-insights/pbi_autoinsightssearching.png)
 3. Within seconds, your insights are ready.  Select **View insights** to display visualizations.
    
-    ![success message](media/service-insights/pbi_autoinsightsuccess.png)
+    ![Success message](media/service-insights/pbi_autoinsightsuccess.png)
    
     > [!NOTE]
     > Some datasets can't generate insights because the data isn't statistically significant.  To learn more, see [Optimize your data for insights](service-insights-optimize.md).
@@ -57,7 +57,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
 
 1. Hover over a card and select the pin icon to add the visualization to a dashboard.
 
-2. Hover over a card, select the ellipses (...) and choose **View insights**. 
+2. Hover over a card, select the ellipsis (...), and then choose **View insights**. 
 
     The insight screen opens in Focus mode.
    
@@ -68,9 +68,9 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
 
         ![Insight Filters menu expanded](media/service-insights/power-bi-insights-filter-new.png)
    * Pin the insight card to a dashboard by selecting **Pin visual**.
-   * Run insights on the card itself, which is often referred to as *scoped insights*. In the top-right corner, select the lightbulb icon ![Get insights icon](media/service-insights/power-bi-bulb-icon.png) or **Get insights**.
+   * Run insights on the card itself, which is often referred to as *scoped insights*. In the top-right corner, select the lightbulb icon ![Get insights icon](media/service-insights/power-bi-bulb-icon.png) or **Get Insights**.
      
-       ![menubar showing Get Insights icon](media/service-insights/pbi-autoinsights-tile.png)
+       ![Get Insights icon](media/service-insights/pbi-autoinsights-tile.png)
      
      The insight displays on the left and new cards, based solely on the data in that single insight, display along the right.
      
@@ -78,19 +78,18 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
 4. To return to the original insights canvas, in the top-left corner, select **Exit Focus mode**.
 
 ## Run insights on a dashboard tile
-Instead of searching for insights against an entire dataset, narrow your search to the data that's used to create a single dashboard tile. This technique is often referred to as a *scoped insight*.
+Instead of searching for insights against an entire dataset, narrow your search to do a scoped insight on the the data that's used to create a single dashboard tile. 
 
 1. Open a dashboard.
-2. Hover over a tile. select the ellipses (...), and choose **View insights**. The tile opens in [Focus mode](service-focus-mode.md) with the insights cards displayed along the right.    
+2. Hover over a tile. select the ellipsis (...), and then choose **View insights**. The tile opens in [Focus mode](service-focus-mode.md) with the insights cards displayed along the right.    
    
     ![Focus mode](media/service-insights/pbi-insights-tile.png)    
 4. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.    
 6. Continue digging into your data, and when you find an interesting insight, pin it to your dashboard by selecting **Pin visual** from the top-right corner.
 
 ## Next steps
-If you own a dataset, [optimize it for Quick Insights](service-insights-optimize.md)
+- If you own a dataset, [optimize it for Quick Insights](service-insights-optimize.md).
+- Learn about the [types of Quick Insights available](service-insight-types.md).
 
-Learn about the [types of Quick Insights available](service-insight-types.md)
-
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](http://community.powerbi.com/).
 
