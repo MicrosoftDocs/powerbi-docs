@@ -31,9 +31,6 @@ Tables are a great choice:
 
 * To display numerical data by categories.
 
-> [!NOTE]
-> If a table has too many values, consider converting it to a matrix and/or using drill down. The maximum data points a table will display is 3,500.
-
 ## Prerequisites
 
 * The Power BI service or Power BI Desktop
