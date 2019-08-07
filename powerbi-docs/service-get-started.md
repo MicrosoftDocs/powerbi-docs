@@ -60,13 +60,18 @@ Here's an example of getting data from a CSV file. Want to follow along with thi
 
 1. [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? No worries, you can sign up for a free trial.
 2. Power BI opens in your browser. Select **Get data** at the bottom of the left navigation bar.
-   
-3. Select **Files**. 
+
+    The **Get Data** page opens.   
+
+3. Under the **Create new content** section, select **Files**. 
    
    ![Get files](media/service-get-started/gs1.png)
-4. Browse to the file on your computer, and choose **Open**. If you saved it in  OneDrive for Business, select that option. If you saved it locally, select **Local file**. 
+4.  Select **Local file**.
    
-   ![Get Data > Files screen](media/service-get-started/gs2.png)
+     ![Get Data > Files screen](media/service-get-started/gs2.png)
+
+5. Browse to the file on your computer, and choose **Open**.
+
 5. For this tutorial, we'll select **Import** to add the Excel file as a dataset, which we can then use to create reports and dashboards. If you select **Upload**, the entire Excel workbook is uploaded to Power BI, where you can open and edit it in Excel online.
    
    ![Choose Import](media/service-get-started/power-bi-import.png)
