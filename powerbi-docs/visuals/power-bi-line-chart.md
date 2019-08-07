@@ -3,12 +3,12 @@ title: Line charts in Power BI
 description: 'Line charts in Power BI'
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: 'amac'
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 06/26/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -21,7 +21,7 @@ A line chart is a series of data points that are represented by dots and connect
 ## Create a line chart
 These instructions use the Sales and Marketing Sample app to create a line chart that displays this year's sales by category. To follow along, get the sample app from appsource.com.
 
-1. Start on a blank report page. If you're using Power BI service, make sure you open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
+1. Start on a blank report page. If you're using the Power BI service, make sure you open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
 
 2. From the Fields pane, select **SalesFact** \> **Total units**, and select **Date** > **Month**.  Power BI creates a column chart on your report canvas.
 
@@ -61,6 +61,21 @@ What if you want to look at total sales and total units on the same chart? Sales
 To display highly diverging values on one chart, use a combo chart. You can learn all about combo charts by reading [Combo charts in Power BI](power-bi-visualization-combo-chart.md). In our example below, we can display sales and total units together on one chart by adding a second Y axis. 
 
    ![highly diverging values](media/power-bi-line-charts/power-bi-dual-axes.png)
+
+## Highlighting and cross-filtering
+For information about using the Filters pane, see [Add a filter to a report](../power-bi-report-add-filter.md).
+
+Selecting a data point on a line chart cross-highlights and cross-filters the other visualizations on the report page... and vice versa. To follow along, open the **Market Share** tab.  
+
+On a line chart, a single data point is the intersection of a point on the X-axis and Y-axis. When you select a data point, Power BI adds markers indicating which point(for a single line) or points (if there are two or more lines) are the source for the cross-highlighting and cross-filtering of the other visuals on the report page. If your visual is very dense, Power BI will select the closest point to where you click on the visual.
+
+In this example, we've selected a data point that encompasses: July 2014, %Units Market Share R12 of 33.16 and %Units Market Share of 34.74.
+
+![select a single data point on a line chart](media/power-bi-line-charts/power-bi-single-select.png)
+
+Notice how the column chart is cross-highlighted, and the gauge is cross-filtered.
+
+To manage how charts cross-highlight and cross-filter each other, see [Visualization interactions in a Power BI report](../service-reports-visual-interactions.md)
 
 ## Considerations and troubleshooting
 * One line chart cannot have dual Y axes.  You'll need to use a combo chart instead.

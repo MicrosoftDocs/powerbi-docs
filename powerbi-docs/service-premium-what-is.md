@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 07/06/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -18,14 +18,15 @@ LocalizationGroup: Premium
 
 Power BI Premium provides dedicated and enhanced resources to run the Power BI service for your organization. For example:
 
-- Greater scale and performance
-- Flexibility to license by capacity
-- Unify self-service and enterprise BI
-- Extend on-premises BI with Power BI Report Server
-- Support for data residency by region (Multi-Geo)
-- Share data with anyone without purchasing a per-user license
+> [!div class="checklist"]
+> * Greater scale and performance
+> * Flexibility to license by capacity
+> * Unify self-service and enterprise BI
+> * Extend on-premises BI with Power BI Report Server
+> * Support for data residency by region (Multi-Geo)
+> * Share data with anyone without purchasing a per-user license
 
-This article is not meant to provide in-depth details about every feature of Power BI Premium - in fact, it just touches the surface. Where necessary, links to additional articles with more detailed information are provided.
+This article introduces key features in Power BI Premium. Where necessary, links to additional articles with more detailed information are provided.
 
 ## Subscriptions and licensing
 
@@ -34,9 +35,9 @@ Power BI Premium is a tenant-level Office 365 subscription available in two SKU 
 - **EM** SKUs (EM1-EM3) for embedding, requiring a yearly commitment, billed monthly. EM1 and EM2 SKUs are available only through volume licensing plans. You can't purchase them directly.
 - **P** SKUs (P1-P3) for embedding and enterprise features, requiring a monthly or yearly commitment, billed monthly, and includes a license to install Power BI Report Server on-premises.
 
-An alternative approach is to purchase an **Azure Power BI Embedded** subscription, which has a single **A** (A1-A6) SKU family for embedding and capacity testing purposes only. All SKUs deliver v-cores to create capacities, but the EM SKUs are restricted for smaller scale embedding. EM1, EM2, A1 and A2 SKUs with less than four v-cores do not run on dedicated infrastructure.
+An alternative approach is to purchase an **Azure Power BI Embedded** subscription, which has a single **A** (A1-A6) SKU family for embedding and capacity testing purposes only. All SKUs deliver v-cores to create capacities, but the EM SKUs are restricted for smaller scale embedding. EM1, EM2, A1, and A2 SKUs with less than four v-cores do not run on dedicated infrastructure.
 
-While the focus of this article is on the P SKUs, much of what is described is also relevant to the A SKUs. In contrast to the Premium subscription SKUs, Azure SKUs require no time commitment and are billed hourly. They deliver full elasticity enabling scale up, scale down, pause, resume and delete. 
+While the focus of this article is on the P SKUs, much of what is described is also relevant to the A SKUs. In contrast to the Premium subscription SKUs, Azure SKUs require no time commitment and are billed hourly. They deliver full elasticity enabling scale up, scale down, pause, resume, and delete. 
 
 Azure Power BI Embedded is largely out of scope for this article, but it is described in the [Testing Approaches](service-premium-capacity-optimize.md#testing-approaches) section of the Optimizing Premium capacities article as a practical and economic option to test and measure workloads. To learn more about Azure SKUs, see [Azure Power BI Embedded Documentation](https://azure.microsoft.com/services/power-bi-embedded/).
 
@@ -46,9 +47,9 @@ Power BI Premium subscriptions are purchased by administrators in the Microsoft 
 
 ## Dedicated capacities
 
-With Power BI Premium, you get *dedicated capacities*. In contrast to a shared capacity where workloads run on computational resources shared with other customers, a dedicated capacity is for exclusive use by an organization. It's isolated with dedicated computational resources which provide dependable and consistent performance for hosted content. 
+With Power BI Premium, you get *dedicated capacities*. In contrast to a shared capacity where workloads run on computational resources shared with other customers, a dedicated capacity is for exclusive use by an organization. It's isolated with dedicated computational resources, which provide dependable and consistent performance for hosted content. 
 
-Workspaces reside within capacities. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces can be created to enable collaboration and deployment, and these are known as **App Workspaces**. By default workspaces, including personal workspaces, are created in the shared capacity. When you have Premium capacities, both My Workspaces and App workspaces can be assigned to Premium capacities.
+Workspaces reside within capacities. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces known as **App Workspaces** can be created to enable collaboration. By default workspaces, including personal workspaces, are created in the shared capacity. When you have Premium capacities, both My Workspaces and App workspaces can be assigned to Premium capacities.
 
 ### Capacity nodes
 
@@ -56,7 +57,7 @@ As described in the [Subscriptions and Licensing](#subscriptions-and-licensing) 
 
 Processing is achieved by a set number of v-cores, divided equally between backend and frontend.
 
-**Backend v-cores** are responsible for core Power BI functionality, including query processing, cache management, running R services, model refresh, natural language processing (Q&A), and server-side rendering of reports and images. Backend v-cores are assigned a fixed amount of memory which is primarily used to host models, also known as active datasets.
+**Backend v-cores** are responsible for core Power BI functionality, including query processing, cache management, running R services, model refresh, natural language processing (Q&A), and server-side rendering of reports and images. Backend v-cores are assigned a fixed amount of memory that is primarily used to host models, also known as active datasets.
 
 **Frontend v-cores** are responsible for the web service, dashboard and report document management, access rights management, scheduling, APIs, uploads and downloads, and generally for everything related to the user experiences.
 
@@ -96,9 +97,9 @@ Import models must be fully loaded into memory so they can be queried or refresh
 
 Import models are therefore loaded into and removed from memory according to usage. An import model is loaded when it is queried (interactive operation) and not yet in memory, or when it's to be refreshed (background operation).
 
-The removal of a model from memory is known as *eviction*. It's an operation Power BI can perform quickly depending on the size of the models. If the capacity is not experiencing any memory pressure, models are simply loaded into memory and remain there. However, when insufficient memory is available to load a model, the Power BI service will first need to free-up memory. It frees memory by detecting models that have become inactive by seeking models which have not been used in the last three minutes \[[1](#endnote-1)\], and then evicting them. If there are no inactive models to evict, the Power BI service seeks to evict models loaded for background operations. A last resort, after 30 seconds of failed attempts \[[1](#endnote-1)\], is to fail the interactive operation. In this case, the report user is notified of failure with a suggestion to try again shortly. In some cases, models may be unloaded from memory due to service operations.
+The removal of a model from memory is known as *eviction*. It's an operation Power BI can perform quickly depending on the size of the models. If the capacity is not experiencing any memory pressure, models are simply loaded into memory and remain there. However, when insufficient memory is available to load a model, the Power BI service will first need to free-up memory. It frees memory by detecting models that have become inactive by seeking models that have not been used in the last three minutes \[[1](#endnote-1)\], and then evicting them. If there are no inactive models to evict, the Power BI service seeks to evict models loaded for background operations. A last resort, after 30 seconds of failed attempts \[[1](#endnote-1)\], is to fail the interactive operation. In this case, the report user is notified of failure with a suggestion to try again shortly. In some cases, models may be unloaded from memory due to service operations.
 
-It's important to stress that dataset eviction is a normal and expected behavior. It strives to maximize memory usage by loading and unloading models whose combined sizes can exceed available memory. This is by design, and completely transparent to report users. High eviction rates do not necessarily mean the capacity is insufficiently resourced. They can, however, become a concern if query or refresh responsiveness is suffering because of high eviction rates.
+It's important to stress that dataset eviction is a normal and expected behavior. It strives to maximize memory usage by loading and unloading models whose combined sizes can exceed available memory. This is by design, and transparent to report users. High eviction rates do not necessarily mean the capacity is insufficiently resourced. They can, however, become a concern if query or refresh responsiveness is suffering because of high eviction rates.
 
 Refreshes of import models are always memory intensive as models must be loaded into memory. Additional memory is required for processing. A full refresh can use approximately double the amount of memory required by the model. This ensures the model can be queried even when being processed, because queries are sent to the existing model, until the refresh has completed and the new model data is available. Incremental refresh will require less memory and could complete faster, and so can substantially reduce pressure on capacity resources. Refreshes can also be CPU-intensive for models, especially those with complex Power Query transformations, or calculated tables/columns that are complex or are based on large tables.
 
@@ -121,7 +122,7 @@ When capacities are created, most administrative tasks are completed in the [Adm
 
 ![Admin portal](media/service-premium-what-is/premium-admin-portal.png)
 
-Capacity admins can assign workspaces to the capacity, manage user permissions, and assign other admins. Capacity admins can also configure workloads, adjusting memory allocations, and if necessary, restart a capacity, resetting operations in case of a capacity overload.
+Capacity admins can assign workspaces to the capacity, manage user permissions, and assign other admins. Capacity admins can also configure workloads, adjusting memory allocations, and if necessary, restart a capacity, resetting operations in a capacity becomes overloaded.
 
 ![Admin portal](media/service-premium-what-is/premium-admin-portal-mgmt.png)
 
@@ -141,7 +142,7 @@ The **Power BI Premium Capacity Metrics** app provides the most in-depth informa
 
 ![Metrics app dashboard](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
-From the app's dashboard you can click a metric cell to open an in-depth report. Reports provide in-depth metrics and filtering capability to drill-down on the most important information you need to keep your capacities running smoothly.
+From the app's dashboard, you can click a metric cell to open an in-depth report. Reports provide in-depth metrics and filtering capability to drill-down on the most important information you need to keep your capacities running smoothly.
 
 ![Periodic peaks of query wait time counts indicate potential CPU saturation](media/service-premium-capacity-scenarios/peak-query-wait-times.png)
 
@@ -171,7 +172,7 @@ The following table describes recommended SKUs for various .pbix sizes:
    |P2    | < 6 GB        |
    |P3, P4, P5    | up to 10 GB   |
 
-The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3. Note that publishing large models to A and EM SKUs might return errors that aren't specific to the model size limitation error in the shared capacity. Refresh errors for large models in A and EM SKUs are likely to point to timeouts. 
+The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3. Publishing large models to A and EM SKUs might return errors that aren't specific to the model size limitation error in the shared capacity. Refresh errors for large models in A and EM SKUs are likely to point to timeouts. 
 
 Your .pbix files represent data in a *highly compressed state*. The data will likely expand several times when loaded in memory, and from there it may expand several more times during data refresh.
 
@@ -199,7 +200,7 @@ To learn more, see [Paginated reports in Power BI Premium](paginated-reports-rep
 
 ## Power BI Report Server
  
-Included with with Power BI Premium, Power BI Report Server is an *on-premises* report server with a web portal. You can build your BI environment on-premises and distribute reports behind your organization’s firewall. Report Server gives users access to rich, interactive, and enterprise reporting capabilities of SQL Server Reporting Services. Users can explore visual data and quickly discover patterns to make better, faster decisions. Report Server provides governance on your own terms. If and when the time comes, Power BI Report Server makes it easy to migrate to the cloud, where your organization can take full advantage of all Power BI Premium functionality.
+Included with Power BI Premium, Power BI Report Server is an *on-premises* report server with a web portal. You can build your BI environment on-premises and distribute reports behind your organization’s firewall. Report Server gives users access to rich, interactive, and enterprise reporting capabilities of SQL Server Reporting Services. Users can explore visual data and quickly discover patterns to make better, faster decisions. Report Server provides governance on your own terms. If and when the time comes, Power BI Report Server makes it easy to migrate to the cloud, where your organization can take full advantage of all Power BI Premium functionality.
 
 To learn more, see [Power BI Report Server](report-server/get-started.md).
 

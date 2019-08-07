@@ -1,5 +1,5 @@
 ---
-title: Organize work in the new workspaces - Power BI
+title: Organize work in the new workspaces in Power BI
 description: Learn about the new workspaces, which are collections of dashboards and reports built to deliver key metrics for your organization.
 author: maggiesMSFT
 manager: kfile
@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 06/26/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -131,7 +131,7 @@ Some features work differently from current workspaces in the new workspaces. Th
 - Members can or can't reshare: replaced by the Contributor role
 - Read-only workspaces: Instead of granting users read-only access to a workspace, assign users to the Viewer role, which allows similar read-only access to the content in a workspace.
 - Users without a Pro license can access the workspace if the workspace is in a Power BI Premium capacity, even if users have only the Viewer role.
-- To allow users with Viewer role to export data, ensure they have Build permission on the datasets in the workspace.
+- To allow users with Viewer role to export data, ensure they have Build permission on the datasets in the workspace. Read more about [Build permission for datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 - No **Leave workspace** button.
 
 ## Frequently asked questions

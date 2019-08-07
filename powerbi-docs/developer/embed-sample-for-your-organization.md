@@ -1,6 +1,6 @@
 ---
 title: Embedded analytics to embed Power BI content in your application for your organization
-description: Learn how to integrate or embed, a report, dashboard, or tile into an application using the Power BI APIs for embedded analytics for your organization. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
+description: Learn how to integrate or embed, a report (Power BI or Paginated), dashboard, or tile into an application using the Power BI APIs for embedded analytics for your organization. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
 author: rkarlin
 ms.author: rkarlin 
 manager: kfile
@@ -9,20 +9,20 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 04/02/2019
+ms.date: 07/29/2019
 #Customer intent: As a developer, I want to embed Power BI content into an application, so users of an organization can share data.
 ---
 
 # Tutorial: Embed Power BI content into an application for your organization
 
-In **Power BI**, you can embed reports, dashboards, or tiles into an application by using user owns data. **User owns data** lets your application extend the Power BI service so it can use embedded analytics. This tutorial demonstrates how to integrate a report into an application. You use the Power BI .NET SDK with the Power BI JavaScript API to embed Power BI into an application for your organization.
+In **Power BI**, you can embed reports (Power BI or Paginated), dashboards, or tiles into an application by using user owns data. **User owns data** lets your application extend the Power BI service so it can use embedded analytics. This tutorial demonstrates how to integrate a report (Power BI or Paginated) into an application. You use the Power BI .NET SDK with the Power BI JavaScript API to embed Power BI into an application for your organization.
 
 ![Power BI Embed Report](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 In this tutorial, you learn the following tasks:
 > [!div class="checklist"]
 > * Register an application in Azure.
-> * Embed a Power BI report into an application using your Power BI tenant.
+> * Embed a Power BI or Paginated report into an application using your Power BI tenant.
 
 ## Prerequisites
 
@@ -31,6 +31,7 @@ To get started, you're required to have:
 * A [Power BI Pro account](../service-self-service-signup-for-power-bi.md).
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription.
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
+* For embedding paginated reports you need at least an A4/P1 capacity [See What size Premium capacity do I need for paginated reports?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
@@ -40,9 +41,9 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 
 Before you start embedding reports, dashboard, or tiles into your application, you need to make sure your environment allows for embedding with Power BI.
 
-You can go through the [Embedding setup tool](https://aka.ms/embedsetup/UserOwnsData), so you can quickly get started and download a sample application that helps you walk through creating an environment and embedding a report.
+You can go through the [Embedding setup tool](https://aka.ms/embedsetup/UserOwnsData), so you can quickly get started and download a sample application that helps you walk through creating an environment and embedding a report. In the case of embedding a paginated report you need to assign at least A4/P1 capacity to the created app workspace.
 
-However, if you choose to set up the environment manually, you can continue below.
+If you choose to set up the environment manually, you can continue below.
 
 ### Register an application in Azure Active Directory
 
@@ -56,7 +57,7 @@ You need to proceed with registering a **server-side web application** app. You 
 
 If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within an app workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../service-create-workspaces.md) or the [new workspaces](../service-create-the-new-workspaces.md).
 
-### Create and publish your reports
+### Create and publish your Power BI reports
 
 You can create your reports and datasets by using Power BI Desktop. Then you can publish those reports to an app workspace. The end user publishing the reports needs to have a Power BI Pro license to publish to an app workspace.
 
@@ -75,7 +76,11 @@ You can create your reports and datasets by using Power BI Desktop. Then you can
     Now you can view the report in the Power BI service online.
 
    ![View a Power BI Desktop report](media/embed-sample-for-your-organization/embed-sample-for-your-organization-029.png)
+   
+### Create and publish your paginated reports
 
+You can create your paginated reports by using [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder).Then you can [upload the report](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an app workspace assigned to at least A4/P1 capacity. The end-user uploading the report must have a Power BI Pro license to publish to an app workspace.
+   
 ## Embed your content by using the sample application
 
 This sample is deliberately kept simple for demonstration purposes.
@@ -120,30 +125,6 @@ To get the **applicationId**, follow these steps:
 
     ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
 
-### Application secret
-
-This attribute is needed only for the [service principal](embed-service-principal.md) AuthenticationType.
-
-Fill in the **ApplicationSecret** information from the **Keys** section of your **App registrations** section in **Azure**.  This attribute works when using [service principal](embed-service-principal.md).
-
-To get the **ApplicationSecret**, follow these steps:
-
-1. Sign in to the [Azure portal](https://portal.azure.com).
-
-2. In the left-hand navigation pane, select **All services** and then select **App registrations**.
-
-3. Select the application that needs to use the **ApplicationSecret**.
-
-    ![Choose an app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
-
-4. Select **Certificates and secrets** under **Manage**.
-
-5. Select **New client secret**.
-
-6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
-
-    ![Key value](media/embed-sample-for-your-organization/embed-sample-for-your-organization-046.png)
-
 ### Workspace ID
 
 Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
@@ -164,9 +145,17 @@ Get-PowerBIworkspace -name "User Owns Embed Test"
 
 Fill in the **reportId** information with the report GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
-URL <br>
+Power BI Report URL <br>
 
-![reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+![PBI reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+
+Paginated Report URL <br>
+
+
+
+Paginated Report URL<br>
+
+![Paginated reportId](media/embed-sample-for-your-organization/paginated-reports-url.png)
 
 Powershell <br>
 
@@ -210,7 +199,7 @@ Within your application, you must get an access token from Azure AD before you c
 
 ### Get a report
 
-To get a Power BI report, you use the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation, which gets a list of Power BI reports. From the list of reports, you can get a report ID.
+To get a Power BI or paginated report, you use the [Get Reports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) operation, which gets a list of Power BI and paginated reports. From the list of reports, you can get a report ID.
 
 ### Get reports by using an access token
 
@@ -271,6 +260,7 @@ public class PBIReports
 public class PBIReport
 {
     public string id { get; set; }
+    public string reportType { get; set }
     public string name { get; set; }
     public string webUrl { get; set; }
     public string embedUrl { get; set; }
@@ -390,7 +380,7 @@ Now that you've completed developing your application, it's time to back your ap
 
 ### Create a dedicated capacity
 
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. You can create a dedicated capacity by using [Power BI Premium](../service-premium-what-is.md).
+By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. For paginated reports you must back your app workspace with at least A4/P1 capacity.You can create a dedicated capacity by using [Power BI Premium](../service-premium-what-is.md).
 
 The following table lists the Power BI Premium SKUs available in [Microsoft Office 365](../service-admin-premium-purchase.md):
 
@@ -432,7 +422,7 @@ Global admins or Power BI service administrators can turn the ability to use the
 
 ## Next steps
 
-In this tutorial, you learned how to embed Power BI content into an application by using your Power BI organization account. You can now try to embed Power BI content into an application by using apps. You can also try to embed Power BI content for your customers:
+In this tutorial, you learned how to embed Power BI content into an application by using your Power BI organization account. You can now try to embed Power BI content into an application by using apps. You can also try to embed Power BI content for your customers(not supported yet for embedding paginated reports):
 
 > [!div class="nextstepaction"]
 > [Embed from apps](embed-from-apps.md)

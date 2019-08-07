@@ -15,7 +15,9 @@ ms.date: 06/06/2019
 
 In this article, you learn how to create and modify an embedded data source for a paginated report in the Power BI service. You define an embedded data source in a single report, and use it only in that report. Currently, paginated reports published to the Power BI service need embedded datasets and embedded data sources, and can connect to these data sources:
 
-- Azure SQL Database and Data Warehouse
+- Azure Analysis Services
+- Azure SQL Database and 
+- Azure SQL Data Warehouse
 - SQL Server
 - SQL Server Analysis Services
 - Oracle 
@@ -23,10 +25,9 @@ In this article, you learn how to create and modify an embedded data source for 
 
 For the following data sources, use the [SQL Server Analysis Services connection](service-premium-connect-tools.md) option:
 
-- Azure Analysis Services
 - Power BI Premium datasets
 
-Paginated reports connect to on-premises data sources by way of a [Power BI gateway](service-gateway-getting-started.md). You set up the gateway after you publish the report to the Power BI service.
+Paginated reports connect to on-premises data sources by way of a [Power BI gateway](service-gateway-onprem.md). You set up the gateway after you publish the report to the Power BI service.
 
 See [Report Data in Power BI Report Builder](report-builder-data.md) for more detailed information.
 
@@ -61,6 +62,30 @@ See [Report Data in Power BI Report Builder](report-builder-data.md) for more de
 5.  Select **OK**.  
   
      The data source appears in the Report Data pane.  
+     
+## Limitations and Considerations
+
+Paginated reports connecting to Power BI datasets follow the rules for shared datasets in Power BI with some minor changes.  For users to properly view paginated reports using Power BI datasets, and to ensure  row-level security (RLS) is enabled and enforced for your viewers, make sure you follow these rules:
+
+### Classic apps and app workspaces
+
+- .rdl in same workspace as dataset (same owner): Supported
+- .rdl in different workspace as dataset (same owner): Supported
+- Shared .rdl: You need build permissions assigned for each user viewing the report at the dataset level
+- Shared app: You need build permissions assigned for each user viewing the report at the dataset level
+- .rdl in same workspace as dataset (different user): Supported
+- .rdl in different workspace as dataset (different user):You need build permissions assigned for each user viewing the report at the dataset level
+- Role-level security: You need build permissions assigned for each user viewing the report at the dataset level to have it enforced.
+
+### New experience apps and app workspaces
+
+- .rdl in same workspace as dataset: Supported
+- .rdl in different workspace as dataset (same owner): Supported
+- Shared .rdl: You need build permissions assigned for each user viewing the report at the dataset level
+- Shared app: You need build permissions assigned for each user viewing the report at the dataset level
+- .rdl in same workspace as dataset (different user) - Supported
+- .rdl in different workspace as dataset (different user): You need build permissions assigned for each user viewing the report at the dataset level
+- Role-level security: You need build permissions assigned for each user viewing the report at the dataset level to have it enforced
 
 ## Next steps
 

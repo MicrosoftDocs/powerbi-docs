@@ -19,6 +19,27 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
 
+## July 2019
+
+### Report page tooltips
+
+Report page tooltips are now supported when viewing reports in your mobile app. Simply press and hold on a visual that has a report tooltip tied to it and it will be shown.  
+
+![Report canvas tooltip](./media/mobile-whats-new-in-the-mobile-apps/report-canvas-tooltip.png)
+
+> [!NOTE]
+> Report tooltips are supported for devices greater than 640 pixel size and 320 viewport. Smaller devices use default tooltips.
+
+
+## June 2019
+
+### Barcode scanning is now available in Android
+Now you can use your Power BI app on Android (phone and tablet) to scan barcodes printed on products or shelves at your store to display related Power BI reports filtered by the scanned value. More about [filtering your data with barcodes](mobile-apps-scan-barcode-iphone.md).
+
+### Supporting PBIX reports hosted in PBI-RS over ADFS configuration (iOS, Android)
+
+Power BI Reports (PBIX) hosted in PBI-RS over ADFS configuration can now be accessed also from Power BI mobile apps.
+
 ## May 2019
 
 ### Siri Shortcuts support (iOS)
@@ -669,8 +690,6 @@ Read the [Power BI Mobile Apps blog for March 2016](https://powerbi.microsoft.co
 View dashboards in [landscape mode on Android phones](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone). 
 
 #### Power BI app for Windows 10 devices
-View dashboards in [landscape mode in Windows 10 phones](mobile-apps-view-dashboard.md#view-dashboards-on-your-windows-10-device).
-
 View [reports on your Windows 10 phone](mobile-reports-in-the-mobile-apps.md).
 
 Faster time to [insights on your Windows 10 mobile dashboards](mobile-tiles-in-the-mobile-apps.md): Share a tile snapshot or open a report directly from the dashboard.
