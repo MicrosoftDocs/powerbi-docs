@@ -8,7 +8,7 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/26/2019
+ms.date: 08/07/2019
 ms.author: maggies
 
 LocalizationGroup: Connect to services
@@ -32,7 +32,7 @@ Connect to the [MailChimp template app](https://app.powerbi.com/getdata/services
 
 6. In **Get started with your new app**, select **Connect data**.
 
-    ![Get started with your new app](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect-data.png)
+    ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
 
 1. For Authentication Method, select **oAuth2** \> **Sign In**.
    
