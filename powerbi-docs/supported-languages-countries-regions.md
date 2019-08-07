@@ -138,7 +138,7 @@ To override the default and use Power BI Desktop in a language other than your W
 Langauge support in Power BI Desktop is limited to the languages displayed in the Application Language dropdown.
 
 ### Choose a language when you download Power BI Desktop
-If you use the .msi version of the Power BI Desktop installer the language is set at the time you download it. The [download Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=45331) page lets you choose the language. 
+If you use the .msi version of the Power BI Desktop installer the language is set at the time you download it. You choose the language on the [Download Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=45331) page. 
 
 To change the language in Power BI Desktop when installed this way, go back to the download page and download it in a different language.
 
