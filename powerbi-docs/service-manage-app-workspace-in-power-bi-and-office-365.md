@@ -59,7 +59,7 @@ You can also edit aspects of an app workspace directly in Outlook for Office 365
 
    ![Edit workspaces in Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis-members.png)
 
-   This opens the Outlook for Office 365 group view of your app workspace. You may need to sign into your corporate account.
+   This opens the Outlook for Office 365 group view of your app workspace. You may need to sign in to your corporate account.
 
 1. Select the role next to a teammate's name to make the person a **Member** or an **Owner**. Select the **X** to remove the person from the group.
 

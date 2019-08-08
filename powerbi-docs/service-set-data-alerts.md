@@ -46,9 +46,9 @@ This example uses a card tile from the Retail Analysis sample dashboard.
 
 1. Scroll down and enter the alert details.  In this example, you'll create an alert that notifies you once a day if the number of total stores goes above 100.
 
-    Alerts will appear in your Notification center. Power BI will also send you an email about the alert.
-
    ![Manage alerts window, set Threshold](media/service-set-data-alerts/power-bi-set-alert-details.png)
+
+    Alerts will appear in your Notification center. Power BI will also send you an email about the alert.
 
 1. Select **Save and close**.
 

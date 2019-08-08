@@ -21,13 +21,13 @@ Creating content packs is different from sharing dashboards or collaborating on 
 Creating an organizational content pack requires a [Power BI Pro account](https://powerbi.microsoft.com/pricing) for you and your colleagues.
 
 > [!NOTE]
-> You can't create or install organizational content packs in the new workspace experiences preview. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
+> You can't create or install organizational content packs in the new workspace experiences preview. If you haven't started yet, Now is a good time to upgrade your content packs to apps. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
 
 Imagine you're the Release Manager at Contoso and you're getting ready for a new product launch.  You've created a dashboard with reports that you'd like to share. Other employees managing the launch will find them useful. You want a way to package up the dashboard and reports as a solution for your colleagues to use.
 
 Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data** > **Samples** > **Opportunity Analysis Sample** > **Connect** to get your own copy.
 
-1. In the left navigation pane, select **My workspaces** > then the **Opportunity Analysis Sample** dashboard.
+1. In the left navigation pane, select **My workspaces** then select the **Opportunity Analysis Sample** dashboard.
 
 1. From the top navigation bar, select the cog icon ![Screenshot of the cog icon.](media/service-organizational-content-pack-create-and-publish/cog.png) > **Create content pack**.
 
@@ -41,7 +41,7 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 
     1. Select **Specific Groups**.
 
-    1. Enter the full email addresses for individuals, [Office 365 groups](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), distribution groups, or security groups. For example: *salesmgrs@contoso.com; sales@contoso.com*
+    1. Enter the full email addresses for individuals, [Office 365 groups](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), distribution groups, or security groups. For example: salesmgrs@contoso.com; sales@contoso.com
 
         For this tutorial, try using your group's email address.
 
