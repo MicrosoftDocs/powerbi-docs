@@ -26,13 +26,13 @@ Despite the efficiencies achieved by the VertiPaq storage engine, it is importan
 
 There are seven different data reduction techniques covered in this article. These include:
 
-- Remove unnecessary columns
-- Remove unnecessary rows
-- Group by and summarize
-- Optimize column data types
-- Preference for custom columns
-- Disable Power Query query load
-- Switch to Mixed mode
+- [Remove unnecessary columns](#remove-unnecessary-columns)
+- [Remove unnecessary rows](#remove-unnecessary-rows)
+- [Group by and summarize](#group-by-and-summarize)
+- [Optimize column data types](#optimize-column-data-types)
+- [Preference for custom columns](#preference-for-custom-columns)
+- [Disable Power Query query load](#disable-power-query-query-load)
+- [Switch to Mixed mode](#switch-to-mixed-mode)
 
 ## Remove unnecessary columns
 
@@ -57,7 +57,7 @@ Model tables should be loaded with as few rows as possible. This can be achieved
 
 Perhaps the most effective technique to reduce a model size is to load pre-summarized data. This technique can be used to raise the grain of fact-type tables. There is a distinct trade-off, however, resulting in loss of detail.
 
-For example, a source sales fact table stores one row per order line. Significant data reduction could be achieved by summarizing all sales metrics, grouping by date, customer and product. Consider, then, that an even more significant data reduction could be achieved by grouping by date _at month level_. This could achieve a possible 99% reduction in model size, but of course, reporting at day level, or individual order level is no longer possible. Deciding to summarize fact-type data always involves tradeoffs. This tradeoff could be mitigated by a Mixed model design, and this will be discussed later in the Switch to Mixed mode topic.
+For example, a source sales fact table stores one row per order line. Significant data reduction could be achieved by summarizing all sales metrics, grouping by date, customer and product. Consider, then, that an even more significant data reduction could be achieved by grouping by date _at month level_. This could achieve a possible 99% reduction in model size, but of course, reporting at day level, or individual order level is no longer possible. Deciding to summarize fact-type data always involves tradeoffs. This tradeoff could be mitigated by a Mixed model design, and this will be discussed later in the [Switch to Mixed mode](#switch-to-mixed-mode) topic.
 
 ## Optimize column data types
 
@@ -85,7 +85,7 @@ Power Query queries that are intended support data integration with other querie
 
 In Power BI Desktop, a Mixed mode design produces a Composite model. Essentially, it allows you to determine storage mode _for each table_. Therefore, each table can have its Storage Mode property set as Import or DirectQuery (Dual is another option).
 
-An effective technique to reduce the model size is to set the Storage Mode property for larger fact-type tables to DirectQuery. Consider that this design approach could work well in conjunction with the Group by and summarize topic introduced earlier. For example, summarized sales data could be used to achieve high performance "summary" reporting. A drill through page could display granular sales for specific (and narrow) filter context, displaying all in-context sales orders. In this example, the drill through page would include visuals based on a DirectQuery table to retrieve the sales order data.
+An effective technique to reduce the model size is to set the Storage Mode property for larger fact-type tables to DirectQuery. Consider that this design approach could work well in conjunction with the [Group by and summarize](#group-by-and-summarize) topic introduced earlier. For example, summarized sales data could be used to achieve high performance "summary" reporting. A drill through page could display granular sales for specific (and narrow) filter context, displaying all in-context sales orders. In this example, the drill through page would include visuals based on a DirectQuery table to retrieve the sales order data.
 
 There are, however, many security and performance implications related to Composite models. For further information, read the [Use composite models in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-composite-models) article.
 
