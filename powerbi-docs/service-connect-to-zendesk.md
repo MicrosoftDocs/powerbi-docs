@@ -8,7 +8,7 @@ ms.reviewer: sarinas
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 04/26/2019
+ms.date: 08/07/2019
 ms.author: maggies
 
 LocalizationGroup: Connect to services
@@ -19,7 +19,7 @@ This article walks you through pulling your data from your Zendesk account with 
 
 After you've installed the template app, you can customize the dashboard and report to highlight the information you care about most. Then you can distribute it as an app to colleagues in your organization.
 
-Connect to the [Zendesk content pack](https://app.powerbi.com/getdata/services/zendesk) or read more about the [Zendesk integration](https://powerbi.microsoft.com/integrations/zendesk) with Power BI.
+Connect to the [Zendesk template app](https://app.powerbi.com/getdata/services/zendesk) or read more about the [Zendesk integration](https://powerbi.microsoft.com/integrations/zendesk) with Power BI.
 
 After you've installed the template app, you can change the dashboard and report. Then you can distribute it as an app to colleagues in your organization.
 
@@ -36,9 +36,9 @@ After you've installed the template app, you can change the dashboard and report
 
     ![Power BI Zendesk app tile](media/service-connect-to-zendesk/power-bi-zendesk-tile.png)
 
-6. In **Get started with your new app**, select **Connect data**.
+6. In **Get started with your new app**, select **Connect**.
 
-    ![Get started with your new app](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect-data.png)
+    ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
 
 4. Provide the URL associated with your account. The URL has the form **https://company.zendesk.com**. See details on [finding these parameters](#finding-parameters) below.
    
@@ -47,7 +47,7 @@ After you've installed the template app, you can change the dashboard and report
 5. When prompted, enter your Zendesk credentials.  Select **oAuth 2** as the Authentication Mechanism and click **Sign In**. Follow the Zendesk authentication flow. (If you're already signed in to Zendesk in your browser, you may not be prompted for credentials.)
    
    > [!NOTE]
-   > This content pack requires that you connect with a Zendesk Admin account. 
+   > This template app requires that you connect with a Zendesk Admin account. 
    > 
    
    ![Sign in with oAuth2](media/service-connect-to-zendesk/pbi_zendesksignin.png)
@@ -77,7 +77,7 @@ You've installed the Zendesk template app. That means you've also created the Ze
     Read about [distributing apps](service-create-distribute-apps.md) to your colleagues.
 
 ## System requirements
-A Zendesk Administrator account is required to access the Zendesk content pack. If you're an agent or an end user and are interested in viewing your Zendesk data, add a suggestion and review the Zendesk connector in the [Power BI Desktop](desktop-connect-to-data.md).
+A Zendesk Administrator account is required to access the Zendesk template app. If you're an agent or an end user and are interested in viewing your Zendesk data, add a suggestion and review the Zendesk connector in the [Power BI Desktop](desktop-connect-to-data.md).
 
 ## Finding parameters
 Your Zendesk URL will be the same as the URL you use to sign into your Zendesk account. If you're not sure of your Zendesk URL, you can use the Zendesk [login help](https://www.zendesk.com/login/).
