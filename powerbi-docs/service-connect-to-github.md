@@ -34,7 +34,7 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 
     ![Power BI GitHub tile](media/service-connect-to-github/power-bi-github-tile.png)
 
-6. In **Get started with your new app**, select **Connect data**.
+6. In **Get started with your new app**, select **Connect**.
 
     ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
 

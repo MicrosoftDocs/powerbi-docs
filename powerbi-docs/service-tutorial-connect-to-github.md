@@ -52,9 +52,9 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
 4. In **Install this Power BI App?** select **Install**.
 5. In **Your new app is ready**, select **Go to app**.
-6. In **Get started with your new app**, select **Connect data**.
+6. In **Get started with your new app**, select **Connect**.
 
-    ![Get started with your new app](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect-data.png)
+    ![Get started with your new app](media/service-tutorial-connect-to-github/power-bi-new-app-connect-get-started.png)
 
 7. Enter the repository name and repository owner of the repo. The URL for this repo is https://github.com/MicrosoftDocs/powerbi-docs, so **Repository Owner** is **MicrosoftDocs**, and **Repository** is **powerbi-docs**. 
    

@@ -37,7 +37,7 @@ Connect to the [QuickBooks Online template app](https://dxt.powerbi.com/getdata/
 
    ![Select the QuickBooks tile](media/service-connect-to-quickbooks-online/power-bi-quickbooks-tile.png)
 
-6. In **Get started with your new app**, select **Connect data**.
+6. In **Get started with your new app**, select **Connect**.
 
     ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
 
@@ -49,12 +49,12 @@ Connect to the [QuickBooks Online template app](https://dxt.powerbi.com/getdata/
    
    ![Almost ready in QuickBooks](media/service-connect-to-quickbooks-online/pbi_qbo_almost.png)
 
-7. Select **Authorize** in the next screen to begin the import process. This can take a few minutes depending on the size of your company data. 
+7. Select **Authorize** in the next screen to begin the import process. The process can take a few minutes depending on the size of your company data. 
    
    ![Authorize QuickBooks](media/service-connect-to-quickbooks-online/pbi_qbo_authorizesm.png)
    
 8. After Power BI imports the data, you see the content list for your QuickBooks app: a new dashboard, report, and dataset.
-9. Select the QuickBooks dashboard to start the exploration process. This is the dashboard Power BI created automatically to display your imported data.
+9. Select the QuickBooks dashboard to start the exploration process. Power BI created this dashboard automatically to display your imported data.
 
     ![QuickBooks dashboard](media/service-connect-to-quickbooks-online/power-bi-connect-quickbooks-sample.png)
 
@@ -70,13 +70,13 @@ Connect to the [QuickBooks Online template app](https://dxt.powerbi.com/getdata/
 
 If you get this message after selecting **Authorize**:
 
-“Oops! An error has occurred." Please close this window and try again.
+“Oops! An error has occurred." Close this window and try again.
 
-The application has already been subscribed to by another user for this company. Please contact [admin email] to make changes to this subscription.”
+The application has already been subscribed to by another user for this company. Contact [admin email] to make changes to this subscription.”
 
 ![Oops! An error has occurred](media/service-connect-to-quickbooks-online/pbi_qbo_oopssm.png)
 
-... this means another admin in your company has already connected to your company data with Power BI. Ask that admin to share the dashboard with you. Currently, only one admin user can connect a particular QuickBooks Online company dataset to Power BI. After Power BI creates the dashboard, the admin can shared it with multiple colleagues on the same Power BI tenants.
+... this error means another admin in your company has already connected to your company data with Power BI. Ask that admin to share the dashboard with you. Currently, only one admin user can connect a particular QuickBooks Online company dataset to Power BI. After Power BI creates the dashboard, the admin can share it with multiple colleagues on the same Power BI tenants.
 
 **"This app is not set up to allow connections from your country"**
 

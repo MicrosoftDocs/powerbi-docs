@@ -31,7 +31,7 @@ Connect to the [Xero template app](https://app.powerbi.com/getdata/services/xero
 
    ![Select the Xero tile](media/service-connect-to-xero/power-bi-start-xero.png)
 
-6. In **Get started with your new app**, select **Connect data**.
+6. In **Get started with your new app**, select **Connect**.
 
     ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
 
@@ -39,7 +39,7 @@ Connect to the [Xero template app](https://app.powerbi.com/getdata/services/xero
 
     ![Organization nickname](media/service-connect-to-xero/params.png)
 
-5. For **Authentication Method** and select **OAuth**. When prompted sign into your Xero account and select the organization to connect to. Once the login completes, select **Sign In** to start the loading process.
+5. For **Authentication Method** and select **OAuth**. When prompted sign into your Xero account and select the organization to connect to. Once sign-in is complete, select **Sign In** to start the loading process.
    
     ![Authentication method](media/service-connect-to-xero/creds.png)
    
@@ -90,16 +90,16 @@ The following roles are required to access the Xero template app: "Standard + Re
 <a name="FindingParams"></a>
 
 ## Finding parameters
-Provide a name for your organization to track in Power BI. This allows you to connect to multiple different organizations. Note that you cannot connect to the same organization multiple times, as it will affect the scheduled refresh.   
+Provide a name for your organization to track in Power BI. This allows you to connect to multiple different organizations. You can't connect to the same organization multiple times, as it will affect the scheduled refresh.   
 
 ## Troubleshooting
 * Xero users must have the following roles to access the Xero template app for Power BI: "Standard + Reports" or "Advisor". The template app relies on the user-based permissions to access reporting data through Power BI.  
-* If you receive a failure after loading for some time, verify how long it took to see that error message. Note that the access token provided by Xero is only valid for 30min so accounts with more data than can be loaded in that time frame will fail. We're actively working to improve this.
-* During the load the tiles on the dashboard will be in a generic loading state. This is not expected to change until the full load completes. If you receive a notification that your load completed but the tiles are still loading, try refreshing the dashboard tiles using the ... in the top right of your dashboard.
-* If your template app fails to refresh, please check if you have connected to the same organization more than once in Power BI. Xero only allows a single active connection to an organization and you may see an error indicating your credentials are invalid if you connect to the same one more than once.  
-* For issues connecting the Xero template app for Power BI like error messages or very slow load times, first clear the cache / cookies and restart the browser, then reconnect to Power BI.  
+* If you receive a failure after loading for some time, verify how long it took to see that error message. The access token provided by Xero is only valid for 30 minutes, so accounts with more data than can be loaded in that time frame will fail. We're actively working to improve this limitation.
+* During the load, the tiles on the dashboard are in a generic loading state. They stay that way until the full load completes. If you receive a notification that your load completed but the tiles are still loading, try refreshing the dashboard tiles using the ... in the top right of your dashboard.
+* If your template app fails to refresh, check if you have connected to the same organization more than once in Power BI. Xero only allows a single active connection to an organization and you may see an error indicating your credentials are invalid if you connect to the same one more than once.  
+* For issues connecting the Xero template app for Power BI, like error messages or slow load times, first clear the cache / cookies and restart the browser, then reconnect to Power BI.  
 
-For other issues, please file a ticket at http://support.powerbi.com if the issue persists.
+For other issues, file a ticket at http://support.powerbi.com if the issue persists.
 
 ## Next steps
 [Get started in Power BI](service-get-started.md)

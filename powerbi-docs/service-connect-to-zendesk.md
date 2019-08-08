@@ -36,7 +36,7 @@ After you've installed the template app, you can change the dashboard and report
 
     ![Power BI Zendesk app tile](media/service-connect-to-zendesk/power-bi-zendesk-tile.png)
 
-6. In **Get started with your new app**, select **Connect data**.
+6. In **Get started with your new app**, select **Connect**.
 
     ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
 

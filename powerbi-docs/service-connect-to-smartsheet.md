@@ -33,7 +33,7 @@ Connect to the [Smartsheet template app](https://app.powerbi.com/groups/me/getda
 
     ![Power BI Smartsheet app tile](media/service-connect-to-smartsheet/power-bi-smartsheet-tile.png)
 
-6. In **Get started with your new app**, select **Connect data**.
+6. In **Get started with your new app**, select **Connect**.
 
     ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
 
@@ -43,7 +43,7 @@ Connect to the [Smartsheet template app](https://app.powerbi.com/groups/me/getda
    
    ![Smartsheet credentials](media/service-connect-to-smartsheet/creds.png)
    
-   ![Smartsheet sign in](media/service-connect-to-smartsheet/creds2.png)
+   ![Smartsheet sign-in](media/service-connect-to-smartsheet/creds2.png)
 
 5. After Power BI imports the data, the Smartsheet dashboard opens.
    
