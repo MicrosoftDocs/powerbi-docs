@@ -61,9 +61,10 @@ Here is a partial list of feature differences.
 
 | Feature | Power BI Embedded | Power BI Premium Capacity | Power BI Premium Capacity |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
-|   | (A SKUs) | (EM SKUs) | (P SKUs) |
-| Embed artifacts from a Power BI App workspace | Azure capacity | Office 365 capacity | Office 365 capacity |
-| Consume Power BI reports in an   Embedded application | Yes | Yes | Yes |
+|   | A SKUs-Azure capacity | EM SKUs-O365 capacity | P SKUs-O365 capacity |
+| Embed artifacts from a Power BI App workspace | Yes | Yes | Yes |
+| Consume Power BI reports in an   embedded application-SaaS | No | Yes | Yes |
+| Consume Power BI reports in an   embedded application-PaaS | Yes | Yes | Yes |
 | Consume Power BI reports in SharePoint | No | Yes | Yes |
 | Consume Power BI reports in Dynamics | No | Yes | Yes |
 | Consume Power BI reports in Teams (excludes mobile app) | No | Yes | Yes |
