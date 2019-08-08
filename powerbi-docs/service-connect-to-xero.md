@@ -14,7 +14,7 @@ ms.author: maggies
 LocalizationGroup: Connect to services
 ---
 # Connect to Xero with Power BI
-Xero is easy to use online accounting software that’s designed specifically for small businesses. Create compelling visualizations based on your Xero financials with this Power BI template app. Your default dashboard includes many small business metrics like cash position, revenue vs. expenses, profit loss trend, debtor days and return on investment.
+Xero is easy to use online accounting software that’s designed specifically for small businesses. Create compelling visualizations based on your Xero financials with this Power BI template app. Your default dashboard includes many small business metrics like cash position, revenue vs. expenses, profit loss trend, debtor days, and return on investment.
 
 Connect to the [Xero template app](https://app.powerbi.com/getdata/services/xero) for Power BI or learn more about the [Xero and Power BI](https://help.xero.com/Power-BI) integration.
 
@@ -35,16 +35,16 @@ Connect to the [Xero template app](https://app.powerbi.com/getdata/services/xero
 
     ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
 
-4. Enter a nickname for the organization associated with your Xero account. Anything will do, this is mostly to help users with multiple Xero organizations keep them all straight. See details on [below](#FindingParams).
+4. Enter a nickname for the organization associated with your Xero account. Anything will do, it's mostly to help users with multiple Xero organizations keep them all straight. See details on [finding parameters](#FindingParams) later in this article.
 
     ![Organization nickname](media/service-connect-to-xero/params.png)
 
-5. For **Authentication Method** and select **OAuth**. When prompted sign into your Xero account and select the organization to connect to. Once sign-in is complete, select **Sign In** to start the loading process.
+5. For **Authentication Method**, select **OAuth**. When prompted sign into your Xero account and select the organization to connect to. Once sign-in is complete, select **Sign In** to start the loading process.
    
     ![Authentication method](media/service-connect-to-xero/creds.png)
    
     ![Welcome to Xero](media/service-connect-to-xero/creds2.png)
-6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+6. After approving, the import process will begin automatically. When complete, a new dashboard, report, and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
    
      ![Xero dashboard](media/service-connect-to-xero/power-bi-xero-dashboard.png)
 
@@ -90,7 +90,7 @@ The following roles are required to access the Xero template app: "Standard + Re
 <a name="FindingParams"></a>
 
 ## Finding parameters
-Provide a name for your organization to track in Power BI. This allows you to connect to multiple different organizations. You can't connect to the same organization multiple times, as it will affect the scheduled refresh.   
+Provide a name for your organization to track in Power BI. A specific name allows you to connect to multiple different organizations. You can't connect to the same organization multiple times, as it will affect the scheduled refresh.   
 
 ## Troubleshooting
 * Xero users must have the following roles to access the Xero template app for Power BI: "Standard + Reports" or "Advisor". The template app relies on the user-based permissions to access reporting data through Power BI.  
