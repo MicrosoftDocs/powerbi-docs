@@ -41,7 +41,7 @@ Admins can also set an URL for a tag to provide additional information.
 ## Setting a dashboard’s classification
 If data classification is turned on for your company, all dashboards start out with a default classification type, but as a dashboard owner, you can change the classification to match your dashboards security level.
 
-To change the classification type, do the following.
+To change the classification type, do the following:
 
 1. Go to the dashboard settings by selecting the **ellipsis** next to the dashboard name and select **Settings**.
    
@@ -54,7 +54,7 @@ To change the classification type, do the following.
 After you apply the change, anyone you shared with will see the update the next time they reload the dashboard.
 
 ## Working with data classification tags as an admin
-Data classification is set up by the global admin for your organization. To turn data classification on, do the following.
+Data classification is set up by the global admin for your organization. To turn data classification on, do the following:
 
 1. Select the Settings gear and select **Admin Portal**.
    
@@ -75,7 +75,7 @@ Once you fill in the form with your classification types, select **Apply** to sa
 
 ![](media/service-data-classification/filled_in_classification_form.png)
 
-At this point, all dashboards will be assigned the default classification, and dashboard owners will now be able to update the classification type to the one appropriate for her content. You can return here in the future to add or remove classification types or change the default.  
+At this point, all dashboards will be assigned the default classification. Dashboard owners can now update the classification type to the one appropriate for their content. You can return here in the future to add or remove classification types or change the default.  
 
 > [!NOTE]
 > There are a few important things to remember when you come back to make changes:

@@ -13,7 +13,9 @@ ms.author: davidi
 
 LocalizationGroup: Troubleshooting
 ---
+
 # Troubleshooting Analyze in Excel
+
 There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. This page provides solutions for common issues when using Analyze in Excel.
 
 > [!NOTE]
@@ -53,8 +55,6 @@ You can download the most recent version of the Excel OLE DB provider libraries 
 If your Excel OLE DB provider client libraries are up to date, you'll be presented with a dialog that looks like the following:
 
 ![](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
-
-C:\Users\davidi\Desktop\powerbi-content-pr\articles\media\powerbi-desktop-troubleshooting-analyze-in-excel
 
 Alternatively, if the new version you are installing is newer than the version on your computer, the following dialog appears:
 

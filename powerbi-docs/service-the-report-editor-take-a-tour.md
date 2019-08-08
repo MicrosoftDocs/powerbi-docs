@@ -93,7 +93,7 @@ A new filter experience is currently in preview. In the new filters, you can for
 
 ![New filter experience](media/service-the-report-editor-take-a-tour/power-bi-filter-reading.png)
 
-Read more about the [new filter experience](power-bi-report-filter-preview.md).
+Read more about the [new filter experience](power-bi-report-filter.md).
 
 - - -
 ## The Fields pane

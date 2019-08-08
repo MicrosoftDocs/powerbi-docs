@@ -1,5 +1,5 @@
 ---
-title: "Getting around in Report Design View for paginated reports (Preview)"
+title: "Getting around in Report Design View for paginated reports"
 description: Report Design View in Report Builder is the design space for creating paginated reports that you can publish in the Power BI service.  
 author: maggiesMSFT
 ms.author: maggies
@@ -11,7 +11,7 @@ ms.topic: overview
 ms.date: 11/05/2018
 ---
 
-# Getting around in Report Design View for paginated reports (Preview)
+# Getting around in Report Design View for paginated reports
 
 Report Design View in Power BI Report Builder is the design space for creating paginated reports that you can publish to the Power BI service. The design surface is at the center of Report Builder, with the ribbon and panes around it. The design surface is where you add and organize your report items. This article explains the panes you use to add, select, and organize your report resources, and change report item properties.  
 
@@ -104,7 +104,7 @@ The current report status bar shows the name of the server the report is connect
 
 ## Next steps
 
-[What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md) 
+[What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md) 
 
   
   

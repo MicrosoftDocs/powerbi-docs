@@ -24,7 +24,7 @@ There are many different ways you can filter and highlight reports in Power BI. 
 * A detailed tour of the [filter and highlighting controls available in Editing view](power-bi-report-add-filter.md) in Power BI Desktop and the Power BI service. The article takes an in-depth look at types of filters such as date and time, numeric, and text. It also covers the differences between basic and advanced options.
 * After you've learned how filters and highlighting work by default, learn how to [change the way visualizations on a page filter and highlight each other](service-reports-visual-interactions.md)
 
-**Did you know?** Power BI has a new filter experience, currently in preview. Read more about [the new filter experience in Power BI reports](power-bi-report-filter-preview.md).
+**Did you know?** Power BI has a new filter experience, currently in preview. Read more about [the new filter experience in Power BI reports](power-bi-report-filter.md).
 
 ![New filter experience](media/power-bi-reports-filters-and-highlighting/power-bi-filter-reading.png)
 
@@ -88,7 +88,7 @@ Select a value or axis label in a visual to highlight the other visuals on the p
 
 ## Next steps
 
-[The new filter experience in Power BI reports](power-bi-report-filter-preview.md)
+[The new filter experience in Power BI reports](power-bi-report-filter.md)
 
 [Add a filter to a report (in Editing view)](power-bi-report-add-filter.md)
 

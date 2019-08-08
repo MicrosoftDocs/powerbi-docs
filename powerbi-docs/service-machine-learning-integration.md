@@ -1,5 +1,5 @@
 ---
-title: Azure Machine Learning integration in Power BI (Preview)
+title: Azure Machine Learning integration in Power BI
 description: Learn how to use Machine Learning with Power BI
 author: davidiseminger
 manager: kfile
@@ -14,7 +14,7 @@ ms.author: davidi
 LocalizationGroup: conceptual
 ---
 
-# Azure Machine Learning integration in Power BI (Preview)
+# Azure Machine Learning integration in Power BI
 
 Numerous organizations use **Machine Learning** models for better insights and predictions about their business. The ability to visualize and invoke insights from these models, in your reports and dashboards and other analytics, can help disseminate these insights to the business users who need it the most.  Power BI now makes it simple to incorporate the insights from models hosted on the Azure Machine Learning service, using straightforward point-and-click gestures.
 
@@ -72,7 +72,7 @@ Specifically, the *@input_schema* and *@output_schema* functions in the entry sc
 These instructions for schema generation by updating the entry script must also be applied to models created using automated machine learning experiments using the Azure Machine Learning SDK.
 
 > [!NOTE]
-> Models created using the Azure Machine Learning service visual interface (preview) do not currently support schema generation, but will in subsequent releases. 
+> Models created using the Azure Machine Learning service visual interface do not currently support schema generation, but will in subsequent releases. 
 
 ## Invoking the Azure ML model in Power BI
 
@@ -104,9 +104,9 @@ Once you save your dataflow, the model is automatically invoked when the dataflo
 
 This article provided an overview of integrating Machine Learning into the Power BI service. The following articles might also be interesting and useful. 
 
-* [Tutorial: Invoke a Machine Learning Studio model in Power BI (Preview)](service-tutorial-invoke-machine-learning-model.md)
+* [Tutorial: Invoke a Machine Learning Studio model in Power BI](service-tutorial-invoke-machine-learning-model.md)
 * [Tutorial: Using Cognitive Services in Power BI](service-tutorial-use-cognitive-services.md)
-* [Cognitive Services in Power BI (Preview)](service-cognitive-services.md)
+* [Cognitive Services in Power BI](service-cognitive-services.md)
 
 For more information about dataflows, you can read these articles:
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)

@@ -6,7 +6,7 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: overview
-ms.date: 05/29/2019
+ms.date: 05/30/2019
 ms.author: maggies
 
 LocalizationGroup: Get started

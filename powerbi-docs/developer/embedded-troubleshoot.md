@@ -21,7 +21,7 @@ This article discusses some common issues you may get when embedding content fro
 
 [Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the traffic with the Power BI APIs from the client machine. This tool may show errors and other related information.
 
-![Fiddler trace](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
+![Fiddler trace](media/embedded-troubleshoot/fiddler.png)
 
 ### F12 in Browser for front-end debugging
 
@@ -75,6 +75,7 @@ A fiddler capture may be required to investigate further. There could be several
 * The Azure AD auth token expired.
 * The authenticated user isn't a member of the group (app workspace).
 * The authenticated user isn't an admin of the group (app workspace).
+* The authenticated user doesn't have permissions. Permissions can be updated using [refreshUserPermissions API](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions)
 * The authorization header may not be listed correctly. Make sure there are no typos.
 
 The backend of the application may need to refresh the auth token before calling GenerateToken.

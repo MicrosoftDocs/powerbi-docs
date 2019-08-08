@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 06/10/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -23,7 +23,7 @@ To follow along, open the [Retail analysis sample report](../sample-retail-analy
 
 1. To create a ribbon chart, select **Ribbon chart** from the **Visualizations** panel.
 
-    ![visualization templates](media/desktop-ribbon-charts/ribbon-charts_02.png)
+    ![visualization templates](media/desktop-ribbon-charts/power-bi-template.png)
 
     Ribbon charts connect a category of data over the visualized time continuum using ribbons, enabling you to see how a given category ranks throughout the span of the chart's x-axis (usually the timeline).
 

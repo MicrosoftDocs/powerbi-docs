@@ -41,6 +41,10 @@ For detailed information about new features, see [What's new in Power BI Report 
             - Fix to High Contrast mode in PBIRS to display Back button, show warning visual messages.
             - UI fixes to Selection pane, canvas scaling.
 
+    - *Version: 2.69.5467.5201 (May 2019), Released: July 30, 2019*
+        - Bug fixes
+            - Fix for incorrect telemetry logging
+
 ## January 2019
 
 - **Power BI Report Server**          
@@ -88,8 +92,11 @@ For detailed information about new features, see [What's new in Power BI Report 
         - Shortcut and pinned icons remain after uninstalling Power BI Report Server
         - Fix for pinning Power BI Report Server to start menu giving black text on a black icon
 
-    - *Version: 2.65.5313.1421 (January 2019), Released: January 22, 2019*
-        - Contains changes required for connection with Power BI Report Server (January 2019)  
+    - *Version: 2.65.5313.1421 (January 2019), Released: January 22, 2019* (new build and new version)
+        - Contains changes required for connection with Power BI Report Server (January 2019) 
+    - *Version: 2.65.5313.5141 (January 2019), Released: July 31, 2019* (new build and new version)
+        - Bug fixes
+            - Fix for incorrect telemetry logging
 
 ## August 2018
 

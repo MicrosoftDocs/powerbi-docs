@@ -17,7 +17,6 @@ With [Azure resource diagnostic logs](https://docs.microsoft.com/azure/monitorin
 Using Diagnostics can answer a few scenarios, such as:
 
 * Detection of long-running or problematic queries.
-* Detecting errors when reaching the limit of your capacity.
 * Derivation of [capacity metrics](https://powerbi.microsoft.com/blog/power-bi-developer-community-april-update/).
 * Tracking usage of specific datasets.
 
@@ -122,9 +121,6 @@ The engine category instructs the resource to log the following events, and on e
 | JobID | 0 | Job ID for progress. |
 | ObjectID | 464 | Object ID |
 | ObjectType | 802012 | ObjectType |
-| ObjectName | SalesLT Customer | ObjectName |
-| ObjectPath | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527.Model.SalesLT Customer | Object path. A comma-separated list of parents, starting with the object's parent. |
-| ObjectReference | <Object><Table>SalesLT Customer</Table><Model>Model</Model><Database>5eaa550e-06ac-4adf-aba9-dbf0e8fd1527</Database></Object> | Object reference. Encoded as XML for all parents, using tags to describe the object. |
 | EndTime | 2018-04-06T18:30:11.9137358Z | Time at which the event ended. |
 | Duration | 0 | Amount of time (in milliseconds) taken by the event. |
 | SessionType | User | Session type (what entity caused the operation). |
@@ -133,7 +129,6 @@ The engine category instructs the resource to log the following events, and on e
 | Severity | 0 | Severity level of an exception. |
 | Success | 1 | 1 = success. 0 = failure (for example, a 1 means success of a permissions check and a 0 means a failure of that check). |
 | Error | 0 | Error number of a given event. |
-| TextData | SET DC_KIND=\"AUTO\";  SELECT  [SalesLT Customer (464)].[rowguid (606)] AS [SalesLT Customer (464)$rowguid (606)]  FROM [SalesLT Customer (464)]; [Estimated size (volume marshalling bytes): 850 6800] | Text data associated with the event. |
 | ConnectionID | 3 | Unique connection ID. |
 | DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | Id of the dataset in which the statement of the user is running. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Session GUID. |
@@ -141,8 +136,7 @@ The engine category instructs the resource to log the following events, and on e
 | ClientProcessID | null | The process ID of the client application. |
 | ApplicationName | null | Name of the client application that created the connection to the server. |
 | CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | The name of the Power BI Embedded capacity resource. |
-| RequestParameters |  |  |
-| RequestProperties |  |  |
+
 
 ### AllMetrics
 

@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 
 ms.service: powerbi
-ms.subservice: powerbi-visuals
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/10/2019
 ms.author: mihart

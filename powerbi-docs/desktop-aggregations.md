@@ -1,5 +1,5 @@
 ---
-title: Use Aggregations in Power BI Desktop (Preview)
+title: Use Aggregations in Power BI Desktop
 description: Perform interactive analysis over big data in Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -13,7 +13,7 @@ ms.author: davidi
 
 LocalizationGroup: Transform and shape data
 ---
-# Aggregations in Power BI Desktop (Preview)
+# Aggregations in Power BI Desktop
 
 Using **aggregations** in Power BI enables interactive analysis over big data in ways that previously weren't possible. **Aggregations** can dramatically reduce the cost of unlocking large datasets for decision making.
 
@@ -32,16 +32,6 @@ Table-level storage is normally used with the aggregations feature. See the [sto
 Aggregations are used with data sources representing dimensional models, such as a data warehouses, data marts, and Hadoop-based big-data sources. This article describes typical modeling differences in Power BI for each type of data source.
 
 All Power BI Import and (non-multidimensional) DirectQuery sources work with aggregations.
-
-## Enabling the aggregations preview feature
-
-The **aggregations** feature is in Preview, and must be enabled in **Power BI Desktop**. To enable **aggregations**, select **File > Options and Settings > Options > Preview Features**, then select the **composite models** and the **Manage aggregations** checkboxes. 
-
-![enabling preview features](media/desktop-aggregations/aggregations_01.jpg)
-
-You'll need to restart **Power BI Desktop** for the feature to be enabled.
-
-![restart required for changes to take effect](media/desktop-composite-models/composite-models_03.png)
 
 ## Aggregations based on relationships
 
@@ -99,8 +89,10 @@ The only case where a *cross-source* relationship is considered strong is if bot
 
 For *cross-source* aggregation hits that don't depend on relationships, see section below on aggregations based on group-by columns.
 
-### Aggregation table is hidden
-The **Sales Agg** table is hidden. Aggregation tables should always be hidden from consumers of the dataset. Consumers and queries refer to the detail table, not the aggregation table; they don't even need to know the aggregation table exists.
+### Aggregation tables are not addressable
+Users with read-only access to the dataset cannot query aggregation tables. This avoids security concerns when used with RLS. Consumers and queries refer to the detail table, not the aggregation table; they don't even need to know the aggregation table exists.
+
+For this reason, the **Sales Agg** table should be hidden. If it is not, the Manage aggregations dialog will set it to hidden upon clicking the Apply all button.
 
 ### Manage aggregations dialog
 Next we define the aggregations. Select the **Manage aggregations** context menu for the **Sales Agg** table, by right-clicking on the table.
@@ -132,11 +124,7 @@ The following notable validations are enforced by the dialog:
 * The detail column selected must have the same datatype as the aggregation column except for the Count and Count table rows summarization functions. Count and Count table rows are only offered for integer aggregation columns, and don't require a matching datatype.
 * Chained aggregations covering three or more tables aren't allowed. For example, it is not possible to set up aggregations on **Table A** referring to **Table B** that has aggregations referring to **Table C**.
 * Duplicate aggregations where two entries use the same summarization function and refer to the same detail table/column aren't allowed.
-
-During this public preview for **aggregations**, the following validations are also enforced. We intend to remove these validations upon releasing for general availability.
-
-* Aggregations cannot be used with row-level security (RLS). *Public preview limitation.*
-* Detail table must be DirectQuery, not Import. *Public preview limitation.*
+* Detail table must be DirectQuery, not Import.
 
 Most such validations are enforced by disabling dropdown values and showing explanatory text in the tooltip, as shown in the following image.
 
@@ -145,6 +133,9 @@ Most such validations are enforced by disabling dropdown values and showing expl
 ### Group by columns
 
 In this example, the three GroupBy entries are optional; they do not affect aggregation behavior (except for the DISTINCTCOUNT example query, shown in the upcoming image). They are included primarily for readability purposes. Without these GroupBy entries, the aggregations would still get hit based on the relationships. This is different behavior from using aggregations without relationships, which is covered by the big data example that follows later in this article.
+
+### Inactive relationships
+Grouping by a foreign key column used by an inactive relationship and relying on the USERELATIONSHIP function for aggregation hits is not supported.
 
 ### Detecting whether aggregations are hit or missed by queries
 
@@ -187,6 +178,17 @@ In some cases, the DISTINCTCOUNT function can benefit from aggregations. The fol
 
 ![query example](media/desktop-aggregations/aggregations-code_07.jpg)
 
+### RLS
+Row level security (RLS) expressions should filter both the aggregation table and the detail table to work correctly. Following the example, an RLS expression on the **Geography** table will work because Geography is on the filtering side of relationships to both the **Sales** table and the **Sales Agg** table. Queries that hit the aggregation table and those that do not will have RLS successfully applied.
+
+![aggregations manage roles](media/desktop-aggregations/manage-roles.jpg)
+
+An RLS expresson on the **Product** table would filter only the **Sales** table, not the **Sales Agg** table. This is not recommended. Queries submitted by users who access the dataset using this role would not benefit from aggregation hits. Since the aggregation table is another representation of the same data in the detail table, it would be insecure to answer queries from the aggregation table because the RLS filter cannot be applied.
+
+An RLS expression on the **Sales Agg** table itself would filter only the aggregation table and not the detail table. This is disallowed.
+
+![aggregations manage roles](media/desktop-aggregations/filter-agg-error.jpg)
+
 ## Aggregations based on group-by columns 
 
 Hadoop-based big data models have different characteristics than dimensional models. To avoid joins between large tables, they often don't rely on relationships. Instead, dimension attributes are often denormalized to fact tables. Such big data models can be unlocked for interactive analysis using **aggregations** based on group-by columns.
@@ -221,6 +223,10 @@ Especially for models that contain filter attributes in fact tables, it's a good
 
 ![filters dialog](media/desktop-aggregations/aggregations_12.jpg)
 
+### RLS
+
+The same RLS rules detailed above for aggregations based on relationships, regarding whether an RLS expression can filter the aggregation table, detail table or both, also apply to aggregations based on group by columns. In the example, an RLS expression applied to the **Driver Activity** table can be used to filter the **Driver Activity Agg** table because all the group by columns in the aggregation table are covered by the detail table. An RLS filter on the **Driver Activity Agg** table on the other hand cannot be applied to the **Driver Activity** table so is disallowed.
+
 ## Aggregation precedence
 
 Aggregation precedence allows multiple aggregation tables to be considered by a single subquery.
@@ -228,8 +234,11 @@ Aggregation precedence allows multiple aggregation tables to be considered by a 
 Consider the following example. It's a [composite model](desktop-composite-models.md) containing multiple DirectQuery sources.
 
 * The **Driver Activity Agg2** Import table is at a high granularity because the group-by attributes are few and low cardinality. The number of rows could be as low as thousands, so it can easily fit into an in-memory cache. These attributes happen to be used by a high-profile executive dashboard, so queries referring to them should be as fast as possible.
-* The **Driver Activity Agg** table is an intermediate aggregation table in DirectQuery mode. It contains over a billion rows and is optimized at the source using columnstore indexes.
+* The **Driver Activity Agg** table is an intermediate aggregation table in DirectQuery mode. It contains over a billion rows in Azure SQL DW and is optimized at the source using columnstore indexes.
 * The **Driver Activity** table is DirectQuery and contains over a trillion rows of IoT data sourced from a big-data system. It serves drillthrough queries to view individual IoT readings in controlled filter contexts.
+
+> [!NOTE]
+> DirectQuery aggregation tables that use a different data source to the detail table are only supported if the aggregation table is from a SQL Server, Azure SQL or Azure SQL DW source.
 
 The memory footprint of this model is relatively small, but it unlocks a huge dataset. It represents a balanced architecture because it spreads the query load across components of the architecture utilizing them based on their strengths.
 
@@ -257,9 +266,6 @@ The following table shows the entries set in the **Manage aggregations** dialog 
 
 ![Sales Agg aggregations table](media/desktop-aggregations/aggregations-table_04.jpg)
 
-> Note:
-> This model requires that the **Date** table be in DirectQuery mode to fill in the manage aggregations dialog, because it is a detail table. This is a Preview limitation that we intend to remove for General Availability.
-
 ### Query examples
 
 The following query hits the aggregation because CalendarMonth is covered by the aggregation table, and CategoryName is accessible via one-to-many relationships. The Sum aggregation for **SalesAmount** is used.
@@ -282,9 +288,9 @@ The following time-intelligence query will not hit the aggregation because the D
 
 The following articles describe more about composite models, and also describe DirectQuery in detail.
 
-* [Composite models in Power BI Desktop (Preview)](desktop-composite-models.md)
-* [Many-to-many relationships in Power BI Desktop (Preview)](desktop-many-to-many-relationships.md)
-* [Storage Mode in Power BI Desktop (Preview)](desktop-storage-mode.md)
+* [Composite models in Power BI Desktop](desktop-composite-models.md)
+* [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md)
+* [Storage Mode in Power BI Desktop](desktop-storage-mode.md)
 
 DirectQuery articles:
 

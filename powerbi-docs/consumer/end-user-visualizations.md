@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 06/17/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -44,7 +44,7 @@ Visuals are created by report and dashboard *designers* and shared with *consume
 |Hover over a visual to reveal additional details and tooltips.     |    yes     |   yes      | yes  |
 |[Cross-filter and cross-highlight other visuals on the page.](end-user-interactions.md)    |   no      |   yes      | na  |
 |[Show the data used to create the visual](end-user-show-data.md).     |  no       |   yes      | no  |
-| [Change the way the visual is sorted](end-user-search-sort.md). | no  | yes  | can change sort by rewording the question  |
+| [Change the way the visual is sorted](end-user-change-sort.md). | no  | yes  | can change sort by rewording the question  |
 | Add a spotlight to a visual. | no  | yes  |  no |
 | Analyze (depending on visual type). | no  | yes  | no  |
 | [Export to Excel.](end-user-export.md) | yes | yes | no|

@@ -9,7 +9,7 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 06/12/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -49,7 +49,7 @@ Watch this video to see Will create a Funnel chart using the Sales and Marketing
 
 Now create your own funnel chart that shows the number of opportunities we have in each of our sales stages.
 
-These instructions use the Opportunity Analysis Sample. To follow along, [download the sample](../sample-datasets.md) for Power BI service (app.powerbi.com) or Power BI Desktop.   
+These instructions use the Opportunity Analysis Sample. To follow along, [download the sample](../sample-datasets.md) for the Power BI service (app.powerbi.com) or Power BI Desktop.   
 
 1. Start on a blank report page and select the **SalesStage** \> **Sales Stage** field. If you're using Power BI service, make sure you open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
    
@@ -57,7 +57,7 @@ These instructions use the Opportunity Analysis Sample. To follow along, [downlo
 2. [Convert the chart](power-bi-report-change-visualization-type.md) to a funnel. Notice that **Sales Stage** is in the **Group** well. 
 3. From the **Fields** pane, select **Fact** \> **Opportunity Count**.
    
-    ![build the funnel chart](media/power-bi-visualization-funnel-charts/power-bi-funnel.png)
+    ![build the funnel chart](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. Hovering over a bar displays a wealth of information.
    
    * The name of the stage

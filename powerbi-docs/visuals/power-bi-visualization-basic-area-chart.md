@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 06/11/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
 # Basic Area chart
-The basic area chart (aka layered area chart.) is based on the line chart. The area between axis and line is filled with colors to indicate volume. 
+The basic area chart (also known as layered area chart.) is based on the line chart. The area between axis and line is filled with colors to indicate volume. 
 
 Area charts emphasize the magnitude of change over time, and can be used to draw attention to the total value across a trend. For example, data that represents profit over time can be plotted in an area chart to emphasize the total profit.
 
@@ -36,11 +36,11 @@ To follow along, sign in to Power BI and select **Get Data \> Samples \> Retail 
  
 
 1. From the "Retail Analysis Sample" dashboard, select the **Total Stores** tile to open the "Retail Analysis Sample" report.
-2. Select **Edit Report** to open the report in Editing View.
+2. Select **Edit** to open the report in Editing view.
 3. Add a new report page by selecting the yellow plus icon (+) at the bottom of the report.
 4. Create an area chart that displays this year's sales and last year's sales by month.
    
-   a. From the FIELDS pane, select **Sales \> Last Year Sales**, and **This Year Sales > Value**.
+   a. From the Fields pane, select **Sales \> Last Year Sales**, and **This Year Sales > Value**.
 
    ![](media/power-bi-visualization-basic-area-chart/power-bi-bar-chart.png)
 

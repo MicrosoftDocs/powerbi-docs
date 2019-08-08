@@ -7,16 +7,14 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Copy reports from other workspaces (Preview)
 
-Learn how you can copy a report from one workspace and save it to a different workspace. Then you can modify that report, adding or deleting visuals and other elements.
-
-When you find a report you like, in a workspace or an app, you can make a copy of it, and then modify it to fit your needs. You don't have to worry about creating the data model. It's already created for you. And it's much easier to modify an existing report than it is to start from scratch.
+When you find a report you like, in a workspace or an app, you can make a copy of it, and save it to a different workspace. Then you can modify that report, adding or deleting visuals and other elements. You don't have to worry about creating the data model. It's already created for you. And it's much easier to modify an existing report than it is to start from scratch. However, you can't publish your copy of the report in an app from the new workspace. See the list of other [considerations and limitations](service-datasets-across-workspaces.md#considerations-and-limitations) in the article "Use datasets across workspaces."
 
 ## Save a copy of a report
 
@@ -56,6 +54,21 @@ When you have a report in your workspace, you may need to know what dataset it's
 1. The **Related content** dialog box shows all related items. In this list, the dataset looks like any other. You can't tell it resides in a different workspace. This issue is known.
  
     ![Related content dialog box](media/service-datasets-copy-reports/power-bi-dataset-related.png)
+
+## Delete a report and its shared dataset
+
+You may decide you no longer want the report and its associated shared dataset in workspace.
+
+1. Delete the report. In the list of reports in the workspace, select the **Delete** icon.
+
+    ![Delete report icon](media/service-datasets-across-workspaces/power-bi-datasets-delete-report.png)
+
+2. In the list of datasets, you see the shared datasets don't have **Delete** icons. Refresh the page, or go to a different page and return. The dataset will be gone. If not, check **View related**. It may be related to another table in your workspace.
+
+    ![View related icon](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
+
+    > [!NOTE]
+    > Deleting the shared dataset in this workspace doesn't delete the dataset. It just deletes the reference to it.
 
 
 ## Next steps
