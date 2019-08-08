@@ -8,12 +8,12 @@ featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/07/2019
+ms.date: 08/08/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ---
 
-# Data alerts in Power BI service
+# Data alerts in the Power BI service
 
 Set alerts to notify you when data in your dashboards changes beyond limits you set.
 
@@ -26,7 +26,7 @@ Only you can see the alerts you set, even if you share your dashboard. Data aler
 > [!WARNING]
 > Data-driven alert notifications provide information about your data. If you view your Power BI data on a mobile device and that device is lost or stolen, we recommend using the Power BI service to turn off all data-driven alert rules.
 
-## Set data alerts in Power BI service
+## Set data alerts in the Power BI service
 
 Watch Amanda add some alerts to tiles on the dashboard. Then follow the step-by-step instructions below the video to try it out yourself.
 
@@ -48,7 +48,7 @@ This example uses a card tile from the Retail Analysis sample dashboard.
 
    ![Manage alerts window, set Threshold](media/service-set-data-alerts/power-bi-set-alert-details.png)
 
-    Alerts will appear in your Notification center. Power BI will also send you an email about the alert.
+    Alerts will appear in your **Notification center**. Power BI will also send you an email about the alert.
 
 1. Select **Save and close**.
 
@@ -56,7 +56,7 @@ This example uses a card tile from the Retail Analysis sample dashboard.
 
 When the tracked data reaches one of the thresholds you've set, several things will happen. First, Power BI checks to see if it's been more than an hour or more than 24 hours (depending on the option you selected) since the last alert. As long as the data is past the threshold, you'll get an alert.
 
-Next, Power BI sends an alert to your notification center and, optionally, an email. Each alert contains a direct link to your data. Select the link to see the relevant tile where you can explore, share, and learn more.  
+Next, Power BI sends an alert to your **Notification center** and, optionally, an email. Each alert contains a direct link to your data. Select the link to see the relevant tile where you can explore, share, and learn more.  
 
 * If you've set the alert to send you an email, you'll find something like this in your Inbox.
 
@@ -66,7 +66,7 @@ Next, Power BI sends an alert to your notification center and, optionally, an em
 
    ![Notification icon in Power BI service](media/service-set-data-alerts/powerbi-alert-notifications.png)
 
-* Your Notification center displays the alert details.
+* Your **Notification center** displays the alert details.
 
     ![read the Alert](media/service-set-data-alerts/powerbi-alert-notification.png)
 
@@ -125,9 +125,9 @@ There are many ways to manage your alerts:
 
 ## Next steps
 
-* [Create a Microsoft Flow that includes a data alert](service-flow-integration.md)
+* [Create a Microsoft Flow that includes a data alert](service-flow-integration.md).
 
-* [Set data alerts on your mobile device](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Set data alerts on your mobile device](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 * [What is Power BI?](power-bi-overview.md)
 

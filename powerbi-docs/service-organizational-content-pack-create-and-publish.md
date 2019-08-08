@@ -12,7 +12,7 @@ ms.author: maggies
 LocalizationGroup: Share your work
 ---
 
-# Create and publish a Power BI organizational content pack (tutorial)
+# Tutorial: Create and publish a Power BI organizational content pack
 
 In this tutorial, you create an organizational content pack, give access to a specific group, and publish it to your organization's content pack library on Power BI.
 
@@ -63,7 +63,7 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
        > [!NOTE]
        > Power BI only lists the dashboards, reports, datasets, and workbooks that you can edit. Thus, the app doesn't display any that were shared with you.
 
-   1. If you have Excel workbooks, you see them under Reports, with an Excel icon. You can add them to the content pack, too.
+   1. If you have Excel workbooks, you see them under **Reports**, with an Excel icon. You can add them to the content pack, too.
 
       ![Screenshot of the Reports section and reports that you can select.](media/service-organizational-content-pack-create-and-publish/pbi_orgcontpkexcel.png)
 
@@ -81,15 +81,15 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
    > [!TIP]
    > The URL displayed in your browser is an unique address for this content pack.  Want to tell your coworkers about this new content pack?  Paste the URL into an email.
 
-1. They select **Connect**, and now they can [view and work with your content pack](service-organizational-content-pack-copy-refresh-access.md).
+1. When your group members select **Connect**, they can [view and work with your content pack](service-organizational-content-pack-copy-refresh-access.md).
 
 ## Next steps
 
-* [Intro to organizational content packs in Power BI](service-organizational-content-pack-introduction.md)
+* [Intro to organizational content packs in Power BI](service-organizational-content-pack-introduction.md).
 
-* [Manage, update, and delete organizational content packs](service-organizational-content-pack-manage-update-delete.md)
+* [Manage, update, and delete organizational content packs](service-organizational-content-pack-manage-update-delete.md).
 
-* [Publish an app in Power BI](service-create-distribute-apps.md)
+* [Publish an app in Power BI](service-create-distribute-apps.md).
 
 * [What is OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
 
