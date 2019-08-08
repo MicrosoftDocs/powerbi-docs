@@ -7,7 +7,7 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 08/07/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -156,13 +156,19 @@ Here are things to keep in mind when pushing apps to end users:
 
 * Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 
-## Allowing users to connect to the app's underlying datasets
-By checking the option to allow all users to connect to the app's underlying datasets, the app users receive the Build permission on the underlying dataset. This allows users to [use the app datasets across workspaces](service-datasets-across-workspaces.md) to search for these datasets in Power BI Desktop and the service get data experiences, and to create reports and dashboards using these datasets. 
+## Allow users to connect to the app's underlying datasets
+
+When you check the option to allow users to connect to the app's underlying datasets, app users receive the Build permission on the underlying dataset. With this permission, they can do several key actions:
+
+- [Use the app datasets across workspaces](service-datasets-across-workspaces.md).
+- Search for these datasets in Power BI Desktop and the service get-data experience.
+- Create reports and dashboards using these datasets. 
 
 When you uncheck this option, new users you add to the app are no longer given the Build permission. However, existing permissions on the underlying datasets don't change. You can use the provided user interface to remove the Build permission manually from app users who should no longer have it. Read more about the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 
-## Allowing users to make a copy of the reports in the app
-By checking the option to **Allow users to make a copy of the reports in this app**, you're allowing users to save any of the reports in the app to their My Workspace. They can then customize the reports to their unique needs. This option requires the **Allow all users to connect to the app's underlying datasets using the Build permission** to be enabled. This capability behaves like the new [copy reports from other workspaces](service-datasets-copy-reports.md) capability.
+## Allow users to make a copy of the reports in the app
+
+When you check the option to **Allow users to make a copy of the reports in this app**, your users can save any of the reports in the app to their My Workspace. To make a copy, users need a Pro license, even if the original report is in a workspace in a Premium capacity. They can then customize the reports to their unique needs. This option requires you to enable **Allow all users to connect to the app's underlying datasets using the Build permission**. This capability behaves like the new [copy reports from other workspaces](service-datasets-copy-reports.md) capability.
 
 ## Unpublish an app
 Any member of an app workspace can unpublish the app.

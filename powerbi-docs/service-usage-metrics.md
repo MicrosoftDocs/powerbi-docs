@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/28/2019
+ms.date: 08/07/2019
 LocalizationGroup: Dashboards
 ---
 
@@ -45,7 +45,7 @@ Usage metrics reports don't show up in **Recent**, **Workspaces**, **Favorites**
 To dig into the report data, or to build your own reports against the underlying dataset, you have two options: 
 
 - Make a copy of the report in the Power BI service. See [Save a copy of the Usage Metrics report](#save-a-copy-of-the-usage-metrics-report) later in this article for details.
-- Connect to the dataset from Power BI Desktop. See [Establish a connection to a published dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
+- Connect to the dataset from Power BI Desktop. For every workspace, the dataset has the name "Report Usage Metrics Model." See [Establish a connection to a published dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
 
     ![Connect to a usage report dataset](media/service-usage-metrics/power-bi-usage-dataset.png)
 
