@@ -1,6 +1,6 @@
 ---
 title: Explore reports in the Power BI mobile apps
-description: 'Learn about viewing and interacting with reports in the Power BI mobile apps on your phone or tablet. You create reports in the Power BI service or Power BI Desktop, then interact with them in the mobile apps.'
+description: 'Learn about viewing and interacting with reports in the Power BI mobile apps on your phone or tablet. You create reports in the Power BI service or Power BI Desktop, and then interact with them in the mobile apps.'
 author: mshenhav
 manager: kfile
 ms.reviewer: ''
@@ -16,31 +16,32 @@ ms.author: mshenhav
 Applies to:
 
 | ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![iPad](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android phone](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Android tablet](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | ![Windows 10 devices](./media/mobile-reports-in-the-mobile-apps/win-10-logo-40-px.png) |
-|:--- |:--- |:--- |:--- |:--- |
+|:---: |:---: |:---: |:---: |:---: |
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
-A Power BI report is an interactive view of your data, with visuals representing different findings and insights from that data. Viewing reports in the Power BI mobile apps is the third step in a three-step process.
+A Power BI report is an interactive view of your data, with visuals that represent different findings and insights from that data. Viewing reports in the Power BI mobile apps is the third step in a three-step process:
 
-1. [Create reports in Power BI Desktop](../../desktop-report-view.md). You can even [optimize a report for phones](mobile-apps-view-phone-report.md) in Power BI Desktop. 
+1. [Create reports in Power BI Desktop](../../desktop-report-view.md). You can even [optimize a report for phones](mobile-apps-view-phone-report.md) in Power BI Desktop.
 2. Publish those reports to the Power BI service [(https://powerbi.com)](https://powerbi.com) or [Power BI Report Server](../../report-server/get-started.md).  
-3. Then interact with those reports in the Power BI mobile apps.
+3. Interact with the reports in the Power BI mobile apps.
 
 ## Open a Power BI report in the mobile app
 Power BI reports are stored in different places in the mobile app, depending on where you got them. They can be in Apps, Shared with me, Workspaces (including My Workspace), or on a report server. Sometimes you go through a related dashboard to get to a report, and sometimes they're listed.
 
-In lists and menus, you will find an icon next to a report name, helping you understand that this item is a report. 
+In lists and menus, you'll find an icon next to a report name, which helps you understand that the item is a report:
 
-![reports in my workspace](./media/mobile-reports-in-the-mobile-apps/reports-my-workspace.png) 
+![Reports in My Workspace](./media/mobile-reports-in-the-mobile-apps/reports-my-workspace.png)
 
-There are two icons for reports in Power BI Mobile apps:
+There are two icons for reports in Power BI mobile apps:
 
-* ![report icon](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) indicates a report that will be presented in landscape orientation in the app and will look the same as it looks in the browser.
+* ![Report icon](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) indicates a report that will be presented in landscape orientation in the app and will look the same as it looks in the browser.
 
-* ![phone report icon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) indicates a report that has at least one phone optimized report page, that will be presented in portrait. 
+* ![Phone report icon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) indicates a report that has at least one phone-optimized report page that will be presented in portrait orientation.
 
-Note: Holding your phone in landscape, you will always get the landscape layout, even if the report page has phone layout. 
+> [!NOTE]
+> When you hold your phone in a landscape orientation, you'll always get the landscape layout, even if the report page is in phone layout.
 
-To get to a report from a dashboard, tap the ellipsis (...) in the upper-right corner of a tile > **Open report**.
+To get to a report from a dashboard, tap the ellipsis (...) in the upper-right corner of a tile and then tap **Open report**:
   
   ![Open report](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
