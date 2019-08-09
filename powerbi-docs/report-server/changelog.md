@@ -119,7 +119,10 @@ For detailed information about new features, see [What's new in Power BI Report 
 - **Power BI Desktop (optimized for Power BI Report Server)**
     - *Version: 2.61.5192.641 (August 2018), Released: August 15, 2018*
         - Contains changes required for connection with Power BI Report Server (August 2018)         
-        
+    - *Version: 2.61.5192.7701 (August 2018), Released: August 8, 2019* (new build and new version)
+        - Bug fixes
+            - Fix for incorrect telemetry logging
+            
 ## March 2018
 
 - **Power BI Report Server**
