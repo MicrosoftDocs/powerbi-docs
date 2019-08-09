@@ -24,7 +24,7 @@ In this quickstart, you'll learn how to embed a Power BI Report Server report by
 
 ## Create the Power BI Report Server report URL
 
-1. Download the sample from GitHub: [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples).
+1. Download the sample from GitHub: [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples). Select **Clone or download**, and then select **Download ZIP**.
 
     ![Download sample PBIX file](media/quickstart-embed/quickstart_embed_14.png)
 
@@ -42,7 +42,7 @@ In this quickstart, you'll learn how to embed a Power BI Report Server report by
 
 ### Capture the URL parameter
 
-After you have your URL, you can create an iFrame within a SharePoint page to host the report. For any Power BI Report Server report URL, add a query string parameter of `?rs:embed=true` to embed your report in a SharePoint iFrame. 
+After you have your URL, you can create an iFrame within a SharePoint page to host the report. For any Power BI Report Server report URL, add the following query string parameter to embed your report in a SharePoint iFrame: `?rs:embed=true`.
 
    For example:
     ``` 
@@ -93,7 +93,7 @@ After you have your URL, you can create an iFrame within a SharePoint page to ho
 
 ## Next steps
 
-- [Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md)  
-- [Create a paginated report for Power BI Report Server](quickstart-create-paginated-report.md)  
+- [Create a Power BI report for Power BI Report Server](quickstart-create-powerbi-report.md).  
+- [Create a paginated report for Power BI Report Server](quickstart-create-paginated-report.md).  
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/). 
