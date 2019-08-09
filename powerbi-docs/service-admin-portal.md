@@ -371,7 +371,7 @@ Users in the organization can see usage metrics for dashboards and reports they 
 
 Usage metrics for content creators will expose display names and email addresses of users who are accessing content. [Learn more](service-usage-metrics.md)
 
-Per-user data is enabled for usage metrics by default, and content creator account information is included in the metrics report. If you don’t want to include this information for some or all users, disable the feature for specified security groups or for an entire organization. Account information will then show in the report as *Unnamed*.
+Per-user data is enabled for usage metrics by default, and content creator account information is included in the metrics report. If you do not wish to gather this information for all users, you can disable the feature for specified security groups or for an entire organization. Account information for the excluded users will then show in the report as *Unnamed*.
 
 ## Dashboard settings
 

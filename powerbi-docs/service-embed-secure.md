@@ -121,11 +121,13 @@ You can add as many buttons as you’d like to create a low-code custom experien
 
 * The user needs to sign in to view the report whenever they open a new browser window.
 
-* Some browsers require you to refresh the page after sign in, especially when using  InPrivate or Incognito modes.
+* Some browsers require you to refresh the page after sign-in, especially when using  InPrivate or Incognito modes.
 
 * To achieve a single sign-on experience, use the Embed in SharePoint Online option, or build a custom integration using the [user owns data](developer/embed-sample-for-your-organization.md) embedding method. 
 
 * The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embed-sample-for-your-organization.md) embedding method. 
+
+* The authentication token lifetime is controlled based on your AAD settings. When the authentication token expires, the user will need to refresh their browser to get an updated authentication token. The default lifetime is one hour, but it could be shorter or longer in your organization.
 
 ## Next steps
 
