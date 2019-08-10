@@ -7,7 +7,7 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/08/2019
+ms.date: 08/09/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
