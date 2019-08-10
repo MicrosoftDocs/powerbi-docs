@@ -7,24 +7,24 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 07/03/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Use datasets across workspaces (Preview)
 
-Business intelligence is a collaborative activity. It's important to establish standardized datasets that can be the 'one source of truth.' Discovering and reusing those standardized datasets is key. When expert data modelers in your organization create and share optimized datasets, report creators can start with those datasets to build accurate reports. Then your organization has consistent data for making decisions, and a healthy data culture.
+Business intelligence is a collaborative activity. It's important to establish standardized datasets that can be the 'one source of truth.' Then discovering and reusing those standardized datasets is key. When expert data modelers in your organization create and share optimized datasets, report creators can start with those datasets to build accurate reports. Then your organization has consistent data for making decisions, and a healthy data culture.
 
 ![Select a shared dataset](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-Power BI makes it easy for dataset creators to certify or promote datasets so others can discover them. Then report authors find quality, official datasets they can use wherever they are in Power BI. Dataset owners can keep control of who has access to their data by using the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Tenant administrators have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
+In Power BI, dataset creators can *certify* or *promote* datasets so others can discover them. That way, report authors know which dataset are high quality and official, and they can use those datasets wherever they author in Power BI. Dataset owners can keep control of who has access to their data by using the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Tenant administrators have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
 
 ## Dataset sharing and the new workspace experience
 
 Building reports based on datasets in different workspaces, and copying reports to different workspaces, are tightly coupled with the [new workspace experience](service-create-the-new-workspaces.md):
 
-- In the service, when you open the dataset catalog from a new workspace experience, the dataset catalog shows datasets that are in your My Workspace and in new workspace experience workspaces. 
+- In the service, when you open the dataset catalog from a new workspace experience, the dataset catalog shows datasets that are in your My Workspace and in other new workspace experience workspaces. 
 - When you open the dataset catalog from a classic workspace, you only see the datasets in that workspace, not the ones in other workspaces.
 - In the Desktop, you can publish Live Connect reports to different workspaces, as long as their datasets are in new experience workspaces.
 - When copying reports across workspaces, the target workspace needs to be a new experience workspace.

@@ -8,7 +8,7 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/23/2019
+ms.date: 07/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -74,6 +74,8 @@ To follow along, open the [Procurement analysis sample report](../sample-procure
     ![Screenshot of the Export data screenshot with the Summarized data, xlsx, and Export options called out.](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 
     If you applied filters to the visualization, the exported data will export as filtered. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
+    
+    All the data used by the hierarchy is exported, not simply the data used for the current drill level for the visual. For example, if the visualization has not been drilled down yet from the top level, the exported data will include all of the data in the hierarchy, not just the data used to create the visual at its currently drilled level.
 
     **Summarized data**: Select this option if you want to export data for what you see in that visual.  This type of export shows you only the data (columns and measures) that you chose to create the visual.  If the visual has an aggregate, you'll export aggregated data. For example, if you have a bar chart showing four bars, you'll get four rows of data. Summarized data is available as *.xlsx* and *.csv*.
 
@@ -81,10 +83,17 @@ To follow along, open the [Procurement analysis sample report](../sample-procure
 
     ![Screenshot of the .csv file with the exported data displayed.](media/power-bi-visualization-export-data/power-bi-export-data7.png)
 
-1. Now try selecting **Underlying data**, *.xlsx*, and then **Export**. Power BI exports the data. If you applied filters to the visualization, the exported data will export as filtered. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
+1. Now try selecting **Underlying data**, *.xlsx*, and then **Export**. Power BI exports the data. 
+
+    > [!NOTE]
+    > Depending on report settings, you may or may not have the option to export underlying data.
+
+    If you applied filters to the visualization, the exported data will export as filtered. When you select  **Export**, your browser prompts you to save the file. Once saved, open the file in Excel.
+    
+    All the data used by the hierarchy is exported, not simply the data used for the current drill level for the visual. For example, if the visualization has not been drilled down yet from the top level, the exported data will include all of the data in the hierarchy, not just the data used to create the visual at its currently drilled level.
 
     >[!WARNING]
-    >Exporting underlying data lets users to see all the detailed data -- every column in the data. Power BI service admins can turn this off for their organization. If you are a dataset owner, you can set proprietary columns to **hidden** so that they don't show up in the **Field** list in Desktop or Power BI service.
+    >Exporting underlying data lets users to see all the detailed data -- every column in the data. Power BI service admins can turn this off for their organization. If you are a dataset owner, you can set proprietary columns to **hidden** so that they don't show up in the **Field** list in Desktop or the Power BI service.
 
     **Underlying data**: Select this option if you want to see the data in the visual ***and*** additional data from the model (see chart below for details). If your visualization has an aggregate, selecting *Underlying data* removes the aggregate. When you select **Export**, Power BI exports the data to an *.xlsx* file and your browser prompts you to save the file. Once saved, open the file in Excel.
 
@@ -136,10 +145,13 @@ You can also update this setting in Power BI service.
 It's important to note that if the Power BI admin portal settings conflict with the report settings for export data, the admin settings will override the export data settings.
 
 ## Limitations and considerations
+These limitations and considerations apply to Power BI Desktop and the Power BI service, including Power BI Pro and Premium.
 
-- The maximum number of rows that **Power BI Desktop** and **Power BI service** can export to a *.csv* file is 30,000.
+- To export the data from a visual, you need to have [Build permission for the underlying dataset](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
 
-- The maximum number of rows that the applications can export to an *.xlsx* file is 150,000.
+-  The maximum number of rows that **Power BI Desktop** and **Power BI service** can export from an **import mode report** to a *.csv* file is 30,000.
+
+- The maximum number of rows that the applications can export from an **import mode report** to an *.xlsx* file is 150,000.
 
 - Export using *Underlying data* won't work if:
 
@@ -148,10 +160,12 @@ It's important to note that if the Power BI admin portal settings conflict with 
   - The version is older than 2016.
 
   - The tables in the model don't have a unique key.
+    
+  -  If an administrator or report designer has disabled this feature.
 
 - Export using *Underlying data* won't work if you enable the *Show items with no data* option for the visualization Power BI is exporting.
 
-- When using DirectQuery, the maximum amount of data that Power BI can export is 16 MB. An unintended result may be that you export less than the maximum number of rows. This is likely if:
+- When using DirectQuery, the maximum amount of data that Power BI can export is 16 MB uncompressed data. An unintended result may be that you export less than the maximum number of rows. This is likely if:
 
     - There are many columns.
 

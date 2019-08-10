@@ -33,7 +33,7 @@ Power BI depends on the required endpoints in the Office 365 authentication and 
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Required:** Authentication and identity | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online)  | N/A |
+| 1 | **Required:** Authentication and identity | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office)  | N/A |
 
 ## General site usage
 
@@ -42,7 +42,7 @@ For the general use of Power BI, you must be able to connect to the endpoints in
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
 | 1 | **Required:** Backend APIs | *.analysis.windows.net | TCP 443 |
-| 2 | **Required:** Office 365 integration | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
+| 2 | **Required:** Office 365 integration | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) | N/A |
 | 3 | **Required:** Portal | app.powerbi.com | TCP 443 |
 | 4 | **Required:** Service telemetry | dc.services.visualstudio.com | TCP 443 |
 | 5 | **Optional:** Informational messages | dynmsg.modpim.com | TCP 443 |
@@ -55,7 +55,7 @@ To perform administrative functions within Power BI, you must be able to connect
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Required:** For managing users and viewing audit logs | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
+| 1 | **Required:** For managing users and viewing audit logs | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) | N/A |
 | | | |
 
 ## Getting data
@@ -77,7 +77,7 @@ Power BI depends on certain endpoints to be able to support your dashboards and 
 
 | Row | Purpose | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Required:** Excel integration | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | N/A |
+| 1 | **Required:** Excel integration | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) | N/A |
 | | | |
 
 ## Custom visuals
@@ -89,7 +89,7 @@ Power BI depends on certain endpoints to be able to view and access the custom v
 | 1 | **Required:** Import a custom visual from the Marketplace interface or from a file | *.azureedge.net <br> *.blob.core.windows.net <br> store.office.com | TCP 443 |
 | 2 | **Optional:** Bing Maps | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
 | 3 | **Optional:** PowerApps | See the [Required services section](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) from the PowerApps system requirements site | N/A |
-| 4 | **Optional:** Visio | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), as well as [SharePoint Online and OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | N/A |
+| 4 | **Optional:** Visio | See the Office 365 documentation for [Office Online and common URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office), as well as [SharePoint Online and OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | N/A |
 | | | |
 
 ## Related external sites

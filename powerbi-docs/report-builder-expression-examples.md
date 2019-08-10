@@ -35,7 +35,7 @@ For more information about simple and complex expressions, where you can use exp
 ##  <a name="VisualBasicFunctions"></a> Visual Basic functions  
  You can use Visual Basic functions to manipulate the data that is displayed in text boxes or that is used for parameters, properties, or other areas of the report. This section provides examples demonstrating some of these functions. For more information, see [Visual Basic Runtime Library Members](https://go.microsoft.com/fwlink/?LinkId=198941) on MSDN.  
   
- The .NET Framework provides many custom format options, for example, for specific date formats. For more information, see [Formatting Types](https://go.microsoft.com/fwlink/?LinkId=112024) on MSDN.  
+ The .NET Framework provides many custom format options, for example, for specific date formats. For more information, see [Formatting Types](/dotnet/standard/base-types/formatting-types).  
   
 ### Math functions  
   

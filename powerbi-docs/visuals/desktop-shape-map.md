@@ -1,22 +1,21 @@
 ---
-title: Use Shape Maps in Power BI Desktop (Preview)
-description: Create relative comparisons to regions using shape maps in Power BI Desktop
+title: Use Shape maps in Power BI Desktop (Preview)
+description: Create relative comparisons to regions using Shape maps in Power BI Desktop
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 06/24/2019
 ms.author: mihart
-
 LocalizationGroup: Transform and shape data
 ---
+
 # Shape Maps in Power BI Desktop (Preview)
 Create a **Shape Map** visual to compare regions on a map using color. Unlike the **Map** visual, **Shape Map** can't show precise geographical locations of data points on a map. Instead,  its main purpose is to show relative comparisons of regions on a map by coloring them differently.
 
-**Shape Map** visuals are based on ESRI/TopoJSON maps, which have the compelling ability to use custom maps that you can create. Examples of custom maps are:geographical, seating arrangements, floor plans, and others. The ability to use custom maps is not available in this Preview release of **Shape Map**.
+**Shape Map** visuals are based on ESRI/TopoJSON maps, which have the compelling ability to use custom maps that you can create. Examples of custom maps are: geographical, seating arrangements, floor plans, and others. The ability to use custom maps is not available in this Preview release of **Shape Map**.
 
 ## Creating Shape Maps
 You can test the **Shape Map** control with the maps that are shipping with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called **Use Custom Maps**.
@@ -104,11 +103,12 @@ There are a few considerations and requirements for this Preview release of **Sh
 * The **Shape Map** visual will plot up to a maximum of 1,000 data points.
 
 ## Region keys
-Use the following **Region Keys** in this Preview release to test **Shape Map**.
+
+Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Australia: States
 
-| `id` | `abbr` | `iso` | `name` | `postal` |
+| id | abbr | iso | name | postal |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -121,7 +121,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Austria: States
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| id | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -135,7 +135,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Brazil: States
 
-| `id` |
+| id |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -171,7 +171,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Canada: Provinces
 
-| `id` | `iso` | `name` | `postal` |
+| id | iso | name | postal |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -189,7 +189,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### France: Regions
 
-| `id` | `name` | `name-en` |
+| id | name | name-en |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
@@ -216,7 +216,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Germany: States
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| id | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -237,7 +237,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Ireland: Counties
 
-| `id` |
+| id |
 | --- |
 | Wicklow |
 | Wexford |
@@ -268,7 +268,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Italy: Regions
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| id | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -293,7 +293,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Mexico: States
 
-| `id` | `abreviatura` | `iso` | `name` | `name-en` | `postal` |
+| id | abreviatura | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -318,11 +318,11 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 | mx-gro |Gro. |MX-GRO |Guerrero |Guerrero |GR |
 | mx-gua |Gto. |MX-GUA |Guanajuato |Guanajuato |GT |
 | mx-dur |Dgo. |MX-DUR |Durango |Durango |DU |
-| mx-dif |Col. |MX-DIF |Ciudad de México |Mexico City |DF |
-| mx-col |Coah. |MX-COL |Colima |Colima |CL |
-| mx-coa |Chis. |MX-COA |Coahuila |Coahuila |CA |
+| mx-dif |CDMX. |MX-DIF |Ciudad de México |Mexico City |DF |
+| mx-col |Col. |MX-COL |Colima |Colima |CL |
+| mx-coa |Coah. |MX-COA |Coahuila |Coahuila |CA |
 | mx-chh |Chih. |MX-CHH |Chihuahua |Chihuahua |CH |
-| mx-chp |CDMX. |MX-CHP |Chiapas |Chiapas |CP |
+| mx-chp |Chis. |MX-CHP |Chiapas |Chiapas |CP |
 | mx-cam |Camp. |MX-CAM |Campeche |Campeche |CM |
 | mx-bcs |B.C.S. |MX-BCS |Baja California Sur |Baja California Sur |BS |
 | mx-bcn |B.C. |MX-BCN |Baja California |Baja California |BN |
@@ -330,7 +330,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### Netherlands: Provinces
 
-| `id` | `iso` | `name` | `name-en` |
+| id | iso | name | name-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -347,7 +347,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### UK: Countries
 
-| `id` | `iso` | `name` |
+| id | iso | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Scotland |
@@ -356,7 +356,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 
 ### USA: States
 
-| `id` | `name` | `postal` |
+| id | name | postal |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
@@ -411,6 +411,7 @@ Use the following **Region Keys** in this Preview release to test **Shape Map**.
 | us-wa |Washington |WA |
 
 ## Next steps
-[Matrix visual in Power BI](desktop-matrix-visual.md)
 
-[Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Matrix visual in Power BI](desktop-matrix-visual.md)
+
+* [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

@@ -12,7 +12,7 @@ ms.date: 04/08/2019
 ms.author: mshenhav
 
 ---
-# Configure report interaction to single tap or double tap (preview)
+# Configure report interaction to single tap or double tap
 Applies to:
 
 | ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Android phone](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | 

@@ -65,10 +65,12 @@ There are a few limitations to the current implementation of expression-based ti
 
 * Expression-based formatting isn’t currently supported on Python visuals, R visuals, or the Key Influencers visual.
 * The field you create for the title must be a string data type. Measures that return numbers or date/time (or any other data type) aren't currently supported.
+* Expression based titles aren't carried over when you pin a visual to a dashboard.
 
 ## Next steps
 
 This article described how to create DAX expressions that turn the titles of your visuals into dynamic fields that can change as users interact with your reports. You might find the following articles useful as well.
 
+* [Conditional formatting in tables](desktop-conditional-table-formatting.md)
 * [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
 * [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)

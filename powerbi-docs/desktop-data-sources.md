@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 06/15/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -110,6 +110,7 @@ The **Azure** category provides the following data connections:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB (Beta)
+* Azure Data Lake Storage Gen2 (Beta)
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
@@ -163,6 +164,7 @@ The **Online Services** category provides the following data connections:
 * Microsoft Graph Security (Beta)
 * Quick Base
 * TeamDesk (Beta)
+* Dynamics 365 Customer Insights (Beta)
 
 The following image shows the **Get Data** window for **Online Services**.
 

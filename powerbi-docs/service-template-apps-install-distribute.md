@@ -76,7 +76,7 @@ In a browser, select this link to open AppSource filtered to Power BI apps:
    ![Install app](media/service-template-apps-install-distribute/power-install-unvalidated-dialog.png)
 
    >[!NOTE]
-   >In order to install template apps which are not listed on AppSource you need to request from your admin permissions. See the Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings-preview) for details.
+   >In order to install template apps which are not listed on AppSource you need to request from your admin permissions. See the Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings) for details.
 
 ## Update and distribute the app
 

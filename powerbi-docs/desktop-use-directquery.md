@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 07/18/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -46,12 +46,10 @@ There are currently a few limitations to using **DirectQuery**:
 
 * All tables must come from a single database, unless using [composite models](desktop-composite-models.md)
 * If the **Query Editor** query is overly complex, an error will occur. To remedy the error you must either delete the problematic step in **Query Editor**, or *Import* the data instead of using **DirectQuery**. For multi-dimensional sources like SAP Business Warehouse, there is no **Query Editor**
-* Relationship filtering is limited to a single direction, rather than both directions (though it is possible to enable cross filtering in both directions for **DirectQuery** as a Preview feature). For multi-dimensional sources like SAP Business Warehouse, there are no relationships defined in the model
+* Relationship filtering is limited to a single direction, rather than both directions (though it is possible to enable cross filtering in both directions for **DirectQuery**). For multi-dimensional sources like SAP Business Warehouse, there are no relationships defined in the model
 * Time intelligence capabilities are not available in **DirectQuery**. For example, special treatment of date columns (year, quarter, month, day, so on) is not supported in **DirectQuery** mode.
-* By default, limitations are placed on DAX expressions allowed in measures; see the following paragraph (after this bulleted list) for more information
+* Limitations are placed on DAX expressions allowed in measures to ensure that queries sent to the underlying data source have acceptable performance.
 * There is a one-million-row limit for returning data when using **DirectQuery**. The limit does not affect aggregations or calculations used to create the dataset returned using **DirectQuery**, only the rows returned. For example, you can aggregate 10 million rows with your query that runs on the data source, and accurately return the results of that aggregation to Power BI using **DirectQuery** as long as the data returned to Power BI is less than 1 million rows. If more than 1 million rows would be returned from **DirectQuery**, Power BI returns an error.
-
-To ensure that queries sent to the underlying data source have acceptable performance, limitations are imposed on measures by default. Advanced users can choose to bypass this limitation by selecting **File > Options and settings > Options** and then **DirectQuery**, then selecting the option *Allow unrestricted measures in DirectQuery mode*. When that option is selected, any DAX expression that is valid for a measure can be used. Users must be aware, however, that some expressions that perform very well when the data is imported may result in very slow queries to the backend source when in DirectQuery mode.
 
 ## Important considerations when using DirectQuery
 The following three points should be taken into consideration when using **DirectQuery**:
@@ -60,10 +58,9 @@ The following three points should be taken into consideration when using **Direc
   
   Load on the source database should also be considered, based on the number of Power BI users who will consume the published report. Using *Row Level Security* (RLS) can have a significant impact as well; a non-RLS dashboard tile shared by multiple users results in a single query to the database, but using RLS on a dashboard tile usually means the refresh of a tile requires one query *per user*, thus significantly increasing load on the source database and potentially impacting performance.
   
-  Power BI creates queries that are as efficient as possible. Under certain situations however, the generated query may not be efficient enough to avoid refresh that would fail. One example of this situation is when a generated query would retrieve an excessively large number of rows (more than 1 million) from the back-end data source, in which case the following error occurs:
+  Power BI creates queries that are as efficient as possible. Under certain situations however, the generated query may not be efficient enough to avoid refresh that would fail. One example of this situation is when a generated query would retrieve an excessively large number of rows from the back-end data source, in which case the following error occurs:
   
       The resultset of a query to external data source has exceeded
-      the maximum allowed size of '1000000' rows.
   
   This situation can occur with a simple chart that includes a very high cardinality column, with the aggregation option set to *Don’t Summarize*. The visual needs to only have columns with a cardinality below 1 million, or must have appropriate filters applied.
 * **Security** - All users who consume a published report connect to the back-end data source using the credentials entered after publication to the Power BI service. This is the same situation as data that is imported: all users see the same data, irrespective of any security rules defined in the backend source. Customers who want per-user security implemented with DirectQuery sources should use RLS. [Learn more about RLS](service-admin-rls.md).

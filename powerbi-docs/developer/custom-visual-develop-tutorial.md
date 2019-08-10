@@ -1,5 +1,5 @@
 ---
-title: Developing a Power BI Custom Visual
+title: Developing a Power BI visual
 description: A tutorial on how to develop a Power BI custom visual
 author: sranins
 ms.author: rasala
@@ -12,7 +12,7 @@ ms.subservice: powerbi-custom-visuals
 ms.date: 03/15/2019
 ---
 
-# Tutorial: Developing a Power BI custom visual
+# Tutorial: Developing a Power BI visual
 
 We’re enabling developers to easily add custom visuals into Power BI for use in dashboard and reports. To help you get started, we’ve published the code for all of our visualizations to GitHub.
 
@@ -75,35 +75,35 @@ Now you need to install the **pbiviz** package.
     pbiviz --install-cert
     ```
 
-  It returns a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_** starts the Certificate Import Wizard.
+    It returns a result that produces a *passphrase*. In this case, the *passphrase* is **_15105661266553327_**. It also starts the Certificate Import Wizard.
 
-  ![Cert created via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
+    ![Cert created via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
 
-3. In the Certificate Import Wizard, verify that the store location is set to Current User. Then select *Next*.
+2. In the Certificate Import Wizard, verify that the store location is set to Current User. Then select *Next*.
 
       ![Cert install](media/custom-visual-develop-tutorial/install-cert-PowerShell.png)
 
-4. At the **File to Import** step, select *Next*.
+3. At the **File to Import** step, select *Next*.
 
-5. At the **Private Key Protection** step, in the Password box, paste the passphrase you received from creating the cert.  Again, in this case it is **_15105661266553327_**.
+4. At the **Private Key Protection** step, in the Password box, paste the passphrase you received from creating the cert.  Again, in this case it is **_15105661266553327_**.
 
       ![Copy passphrase](media/custom-visual-develop-tutorial/cert-install-wizard-show-passphrase.png)
 
-6. At the **Certificate Store** step, select the **Place all certificates in the Following store** option. Then select *Browse*.
+5. At the **Certificate Store** step, select the **Place all certificates in the Following store** option. Then select *Browse*.
 
       ![All certs in the following store](media/custom-visual-develop-tutorial/all-certs-in-the-following-store.png)
 
-7. In the **Select Certificate Store** window, select **Trusted Root Certification Authorities** and then select *OK*. Then select *Next* on the **Certificate Store** screen.
+6. In the **Select Certificate Store** window, select **Trusted Root Certification Authorities** and then select *OK*. Then select *Next* on the **Certificate Store** screen.
 
       ![Trusted root cert](media/custom-visual-develop-tutorial/trusted-root-cert.png)
 
-8. To complete the import, select **Finish**.
+7. To complete the import, select **Finish**.
 
-9. If you receive a security warning, select **Yes**.
+8. If you receive a security warning, select **Yes**.
 
     ![Security warning](media/custom-visual-develop-tutorial/cert-security-warning.png)
 
-10. When notified that the import was successful, select **OK**.
+9. When notified that the import was successful, select **OK**.
 
     ![Cert import successful](media/custom-visual-develop-tutorial/cert-import-successful.png)
 

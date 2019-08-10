@@ -1,14 +1,14 @@
 ---
- title: Create a workspace - Power BI
- description: How to create a workspace - include
- services: powerbi
- author: maggiesMSFT
- 
+title: Create a workspace - Power BI
+description: How to create a workspace - include
+services: powerbi
+author: maggiesMSFT
+
 ms.service: powerbi
- ms.topic: include
- ms.date: 04/04/2019
- ms.author: maggies
- ms.custom: include file
+ms.topic: include
+ms.date: 04/04/2019
+ms.author: maggies
+ms.custom: include file
 ---
 
 1. Start by creating the workspace. Select **Workspaces** > **Create app workspace**. 

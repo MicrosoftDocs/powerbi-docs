@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 07/25/2019
 LocalizationGroup: Gateways
 ---
 
@@ -55,14 +55,14 @@ In a standard installation, the gateway runs as a machine-local service account 
 
 ![Screenshot of service account](media/service-gateway-sso-kerberos/service-account.png)
 
-To enable Kerberos constrained delegation, the gateway must run as a domain account, unless your Azure Active Directory (Azure AD) instance is already synchronized with your local Active Directory instance (using Azure AD DirSync/Connect). To switch to a domain account, see [Switch the gateway to a domain account](#switch-the-gateway-to-a-domain-account) later in this article.
+To enable Kerberos constrained delegation, the gateway must run as a domain account, unless your Azure Active Directory (Azure AD) instance is already synchronized with your local Active Directory instance (using Azure AD DirSync/Connect). To switch to a domain account, see [Change the gateway service account](/data-integration/gateway/service-gateway-service-account).
 
 > [!NOTE]
 > If Azure AD Connect is configured, and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. You can use the local service SID (instead of requiring a domain account) for the gateway service. The Kerberos constrained delegation configuration steps outlined in this article are the same as that configuration. They are simply applied to the gateway's computer object in Azure AD, instead of the domain account.
 
 ### Prerequisite 3: Have domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
 
-It's not recommended for a domain administrator to temporarily or permanently allow rights to someone else to configure SPNs and Kerberos delegation without requiring domain admin rights. In the following section, we cover the recommended configuration steps in more detail.
+We don't recommended that a domain administrator temporarily or permanently allows rights to someone else to configure SPNs and Kerberos delegation without requiring domain admin rights. In the following section, we cover the recommended configuration steps in more detail.
 
 ## Configure Kerberos constrained delegation for the gateway and data source
 
@@ -94,7 +94,7 @@ The second configuration requirement is the delegation settings on the gateway s
 
 We need to configure Kerberos constrained delegation with protocol transiting. With constrained delegation, you must be explicit about which services you want to delegate to. For example, only SQL Server or your SAP HANA server accepts delegation calls from the gateway service account.
 
-This section assumes you have already configured SPNs for your underlying data sources (such as SQL Server, SAP HANA, Teradata, and Spark). To learn how to configure those data source server SPNs, refer to technical documentation for the respective database server. You can also see the [What SPN does your app require?](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/) blog post.
+This section assumes you have already configured SPNs for your underlying data sources (such as SQL Server, SAP HANA, Teradata, and Spark). To learn how to configure those data source server SPNs, refer to technical documentation for the respective database server. You can also see the heading *What SPN does your app require?* in the [My Kerberos Checklist](https://techcommunity.microsoft.com/t5/SQL-Server-Support/My-Kerberos-Checklist-8230/ba-p/316160) blog post.
 
 In the following steps, we assume an on-premises environment with two machines: a gateway machine and a database server running SQL Server. For the sake of this example, we'll also assume the following settings and names:
 
@@ -113,21 +113,21 @@ Here's how to configure the delegation settings:
 
 4. Select **Trust this computer for delegation to specified services only** > **Use any authentication protocol**.
 
-6. Under **Services to which this account can present delegated credentials**, select **Add**.
+5. Under **Services to which this account can present delegated credentials**, select **Add**.
 
-7. In the new dialog box, select **Users or Computers**.
+6. In the new dialog box, select **Users or Computers**.
 
-8. Enter the service account for the SQL Server data source (**PBIEgwTest\SQLService**), and select **OK**.
+7. Enter the service account for the data source, for example, a SQL Server data source may have a service account like  **PBIEgwTest\SQLService**. Once the account has been added, select **OK**.
 
-9. Select the SPN that you created for the database server. In our example, the SPN begins with **MSSQLSvc**. If you added both the FQDN and the NetBIOS SPN for your database service, select both. You might only see one.
+8. Select the SPN that you created for the database server. In our example, the SPN begins with **MSSQLSvc**. If you added both the FQDN and the NetBIOS SPN for your database service, select both. You might only see one.
 
-10. Select **OK**. You should see the SPN in the list now.
+9. Select **OK**. You should see the SPN in the list now.
 
     Optionally, you can select **Expanded** to show both the FQDN and NetBIOS SPN. The dialog box looks similar to the following if you selected **Expanded**. Select **OK**.
 
     ![Screenshot of Gateway Connector Properties dialog box](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
-Finally, on the machine running the gateway service (**PBIEgwTestGW** in our example), you must grant the gateway service account the local policy **Impersonate a client after authentication**. You can perform and verify this with the Local Group Policy Editor (**gpedit**).
+Finally, on the machine running the gateway service (**PBIEgwTestGW** in our example), you must grant the gateway service account the local policy **Impersonate a client after authentication** and **Act as part of the operating system (SeTcbPrivilege)**. You can perform and verify this configuration with the Local Group Policy Editor (**gpedit**).
 
 1. On the gateway machine, run: *gpedit.msc*.
 
@@ -165,40 +165,113 @@ After completing all the configuration steps, you can use the **Manage Gateway**
 
 This configuration works in most cases. However, with Kerberos there can be different configurations depending on your environment. If the report still won't load, contact your domain administrator to investigate further.
 
-## Switch the gateway to a domain account
-
-If necessary, you can switch the gateway from a local service account to run as a domain account, by using the **On-premises data gateway** user interface. Here's how:
-
-1. Open the **On-premises data gateway** configuration tool.
-
-   ![Screenshot of option to launch gateway desktop app](media/service-gateway-sso-kerberos/gateway-desktop-app.png)
-
-2. Select the **Sign-in** button on the main page, and sign in with your Power BI account.
-
-3. After sign-in is completed, select the **Service Settings** tab.
-
-4. Select **Change account** to start the guided walk-through.
-
-   ![Screenshot of On-premises data gateway desktop app, with Change account option highlighted](media/service-gateway-sso-kerberos/change-account.png)
-
-## Configure SAP BW for SSO
+## Configure SAP BW for SSO using CommonCryptoLib
 
 Now that you understand how Kerberos works with a gateway, you can configure SSO for your SAP Business Warehouse (SAP BW). The following steps assume you've already [prepared for Kerberos constrained delegation](#prepare-for-kerberos-constrained-delegation), as described earlier in this article.
 
+> [!NOTE]
+> These instructions cover SSO setup for SAP BW **Application** Servers. Microsoft does not currently support SSO connections to SAP BW **Message** Servers.
+
+1. Ensure that your BW server is correctly configured for Kerberos SSO. If it is, you should be able to use SSO to access your BW server with an SAP tool like SAP GUI. For more information on setup steps, see [SAP Single Sign-On: Authenticate with Kerberos/SPNEGO](https://blogs.sap.com/2017/07/27/sap-single-sign-on-authenticate-with-kerberosspnego/). Your BW server should be using CommonCryptoLib as its SNC Library and have an SNC name that starts with "CN=", such as "CN=BW1". For more information on SNC name requirements, see [SNC Parameters for Kerberos Configuration](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/360534094511490d91b9589d20abb49a.html) (the snc/identity/as parameter).
+
+1. If you haven't already done so, complete the steps under [Prepare for Kerberos constrained delegation](https://docs.microsoft.com/power-bi/service-gateway-sso-kerberos#prepare-for-kerberos-constrained-delegation). Ensure that your gateway Service User is configured to present delegated credentials to the Service User that represents your BW Application Server in your Active Directory environment.
+
+1. If you haven't already done so, install the x64-version of the [SAP .NET Connector](https://support.sap.com/en/product/connectors/msnet.html) on the computer the gateway has been installed on. You can check whether the component has been installed by attempting to connect to your BW server in  Power BI Desktop. If you can't connect using the 2.0 implementation, the .NET Connector isn't installed.
+
+1. Ensure that SAP Secure Login Client (SLC) isn't running on the computer the gateway is installed on. SLC caches Kerberos tickets in a way that can interfere with the gateway's ability to use Kerberos for SSO. If SLC is installed, uninstall it or make sure you exit SAP Secure Login Client: right-click the icon in the system tray and select Log Out and Exit before attempting an SSO connection using the gateway. SLC is not supported for use on Windows Server machines. For more information, see [SAP Note 2780475](https://launchpad.support.sap.com/#/notes/2780475) (s-user required).
+
+    ![SAP Secure Login Client](media/service-gateway-sso-kerberos/sap-secure-login-client.png)
+
+    If you uninstall SLC or select **Log Out** and **Exit** , open a cmd window and enter `klist purge` to clear any cached Kerberos tickets before attempting an SSO connection through the gateway.
+
+1. Download CommonCryptoLib (sapcrypto.dll) version **8.5.25 or greater** from the SAP Launchpad, and copy it to a folder on your gateway machine. In the same directory where you copied sapcrypto.dll, create a file named sapcrypto.ini, with the following content:
+
+    ```
+    ccl/snc/enable\_kerberos\_in\_client\_role = 1
+    ```
+
+    The .ini file contains configuration information required by CommonCryptoLib to enable SSO in the gateway scenario.
+
+    > [!NOTE]
+    > These files must be stored in the same location; in other words, _/path/to/sapcrypto/_ should contain both sapcrypto.ini and sapcrypto.dll.
+
+    Both the gateway Service User and the Active Directory (AD) user that the Service User will impersonate need read and execute permissions for both files. We recommend granting  permissions on both the .ini and .dll files to the Authenticated Users group. For testing purposes, you can also explicitly grant these permissions to both the gateway Service User and the impersonated user. In the screenshot below we've granted the Authenticated Users group **Read &amp; execute** permissions for sapcrypto.dll:
+
+    ![Authenticated users](media/service-gateway-sso-kerberos/authenticated-users.png)
+
+1. If you don't have an SAP Business Warehouse Server data source, on the **Manage gateways** page in the Power BI service, add a data source. If you already have a BW data source associated with the gateway you want the SSO connection to flow through, prepare to edit it.
+
+    For **SNC Library** , select either **SNC\_LIB or SNC\_LIB\_64 environmental variable** or **Custom**. If you select the **SNC\_LIB** option, you must set the value of the SNC\_LIB\_64 environment variable on the gateway machine to the absolute path of the copy of sapcrypto.dll on the gateway machine, such as C:\Users\Test\Desktop\sapcrypto.dll. If you choose **Custom** , paste the absolute path to the sapcrypto .dll into the Custom SNC Library Path field that appears on the **Manage gateways** page.
+
+    Under **Advanced settings** , make sure the **Use SSO via Kerberos for DirectQuery queries** checkbox is selected. The username you enter only needs to have permission to connect to the BW server and is used primarily to test the data source connection after you've created it. The user is also used to refresh reports created from import-based datasets if you have any. If you select **Basic** authentication, you must provide a BW user. If you select **Windows** authentication, you must specify a Windows Active Directory user that's  mapped to a BW user through the SU01 transaction in SAP GUI. The rest of the fields (**System Number **,** Client ID **,** SNC Partner Name**, and so on) must match the information you would enter into Power BI Desktop to connect to your BW server through SSO. Select **Apply** and make sure the test connection is successful.
+
+    ![Authentication method](media/service-gateway-sso-kerberos/authentication-method.png)
+
+1. Create a CCL\_PROFILE system environment variable and point it at sapcrypto.ini:
+
+    ![CCL\_PROFILE system environment variable](media/service-gateway-sso-kerberos/ccl-profile-variable.png)
+
+    Remember that the sapcrypto .dll and .ini files must exist in the same location. In the example shown above where sapcrypto.ini is located on the desktop, sapcrypto.dll should also be located on the desktop.
+
+1. Restart the gateway service:
+
+    ![Restart gateway service](media/service-gateway-sso-kerberos/restart-gateway-service.png)
+
+1. Publish a **DirectQuery-based** BW report from Power BI Desktop. This report must use data that is accessible to the BW user that is mapped to the Azure Active Directory (AAD) user that signs in to the Power BI service. You must use DirectQuery instead of import, because of how refresh works. When refreshing import-based reports, the gateway uses the credentials that you entered into the **Username** and **Password** fields when you created the BW data source. In other words, Kerberos SSO is **not** used. Also, when publishing, make sure you select the gateway you've configured for BW SSO if you have multiple gateways. In the Power BI service you should now be able to refresh the report or create a new report based on the published dataset.
+
+### Troubleshooting
+
+If you're unable to refresh the report in the Power BI service, you can use gateway tracing, CPIC tracing, and CommonCryptoLib tracing to help diagnose the issue. CPIC tracing and CommonCryptoLib are SAP products, so Microsoft can't provide any direct support for them. For Active Directory users that will be granted SSO access to BW, some Active Directory configurations might require the users to be members of the Administrators group on the machine where the gateway is installed.
+
+1. **Gateway logs:** Simply reproduce the issue, open the [gateway app](https://docs.microsoft.com/data-integration/gateway/service-gateway-app), go to the **Diagnostics** tab, and select **Export logs** :
+
+    ![Export gateway logs](media/service-gateway-sso-kerberos/export-gateway-logs.png)
+
+1. **CPIC Tracing:** To enable CPIC tracing, set two environment variables: CPIC\_TRACE and CPIC\_TRACE\_DIR. The first variable sets the trace level, and the second variable sets the trace file directory. The directory must be a location that  members of the Authenticated Users group can write to. Set CPIC\_TRACE to 3 and CPIC\_TRACE\_DIR to whichever directory you want to trace files written to.
+
+    ![CPIC tracing](media/service-gateway-sso-kerberos/cpic-tracing.png)
+
+    Reproduce the issue and check that CPIC\_TRACE\_DIR contains trace files.
+
+1. **CommonCryptoLib Tracing:** Turn on CommonCryptoLib tracing by adding two lines to the sapcrypto.ini file you created earlier:
+
+    ```
+    ccl/trace/level=5
+    ccl/trace/directory=\\<drive\\>:\logs\sectrace
+    ```
+
+    Make sure to change the _ccl/trace/directory_ option to a location members of the Authenticated Users group can write to. Alternatively, create a new .ini file to change this behavior. In the same directory as sapcrypto.ini and sapcrypto.dll, create a file named sectrace.ini, with the following content.  Replace the DIRECTORY option with a location on your machine that Authenticated User can write to:
+
+    ```
+    LEVEL = 5
+    
+    DIRECTORY = \\<drive\\>:\logs\sectrace
+    ```
+
+    Now, reproduce the issue and check that the location pointed to by DIRECTORY contains trace files. Make sure to turn off CPIC and CCL tracing when you are finished.
+
+    For more information on CommonCryptoLib tracing, see [SAP Note 2491573](https://launchpad.support.sap.com/#/notes/2491573) (s-user required).
+
+## Configure SAP BW for SSO using gsskrb5/gx64krb5
+
+If you're unable to use CommonCryptoLib as your SNC library, you can use gsskrb5/gx64krb5 instead. However, the setup steps are significantly more complex and SAP no longer offers support for gsskrb5.
+
 This guide attempts to be as comprehensive as possible. If you've already completed some of these steps, you can skip them. For example, you might have already created a service user for your SAP BW server and mapped an SPN to it, or you might have already installed the `gsskrb5` library.
 
-### Set up gsskrb5 on client machines and the SAP BW server
+### Set up gsskrb5/gx64krb5 on client machines and the SAP BW server
 
 > [!NOTE]
-> `gsskrb5` is no longer actively supported by SAP. For more information, see [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Also note that `gsskrb5` doesn't allow for SSO connections from the data gateway to SAP BW Message Servers. Only connections to SAP BW Application Servers are possible. `gsskrb5` must be in use by both the client and server to complete an SSO connection through the gateway. We now support The Common Crypto Library (sapcrypto) for SAP BW.
+> `gsskrb5/gx64krb5` is no longer actively supported by SAP. For more information, see [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Also note that `gsskrb5/gx64krb5` doesn't allow for SSO connections from the data gateway to SAP BW Message Servers. Only connections to SAP BW Application Servers are possible. It is now possible to use sapcrypto/CommonCryptoLib as the SNC Library which simplies the setup process. 
 
-1. Download `gsskrb5` - `gx64krb5` from [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-user required). Ensure you have at least version 1.0.11.x of gsskrb5.dll and gx64krb5.dll.
+`gsskrb5` must be in use by both the client and server to complete an SSO connection through the gateway.
+
+1. Download `gsskrb5` or `gx64krb5` depending on your desired bitness from [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-user required). Ensure you have at least version 1.0.11.x.
 
 1. Put the library in a location on your gateway machine that is accessible by your gateway instance (and also by the SAP GUI if you want to test the SSO connection by using SAP Logon).
 
 1. Put another copy on your SAP BW server machine in a location accessible by the SAP BW server.
 
-1. On the client and server machines, set the `SNC\_LIB` and `SNC\_LIB\_64` environment variables to point to the locations of gsskrb5.dll and gx64krb5.dll, respectively.
+1. On the client and server machines, set the `SNC_LIB` or `SNC_LIB_64` environment variables to point to the location of gsskrb5.dll or gx64krb5.dll, respectively. Note that you only need one of these libraries, not both.
 
 ### Create a SAP BW service user and enable SNC communication
 
@@ -257,7 +330,7 @@ Map an Active Directory user to an SAP BW Application Server user, and test the 
 
     ![Screenshot of SAP BW User maintenance screen](media/service-gateway-sso-kerberos/user-maintenance.png)
 
-1. Select the **SNC** tab. In the SNC name input box, enter p:\<your Active Directory user\>@\<your domain\>. Note the mandatory p: that must precede the Active Directory user's UPN. The Active Directory user you specify should belong to the person or organization for whom you want to enable SSO access to the SAP BW Application Server. For example, if you want to enable SSO access for the user [testuser@TESTDOMAIN.COM](mailto:testuser@TESTDOMAIN.COM), enter p:testuser@TESTDOMAIN.COM.
+1. Select the **SNC** tab. In the SNC name input box, enter p:\<your Active Directory user\>@\<your domain\>. Note the mandatory p: that must precede the Active Directory user's UPN. The Active Directory user you specify should belong to the person or organization for whom you want to enable SSO access to the SAP BW Application Server. For example, if you want to enable SSO access for the user testuser\@TESTDOMAIN.COM, enter p:testuser@TESTDOMAIN.COM.
 
     ![Screenshot of SAP BW Maintain users screen](media/service-gateway-sso-kerberos/maintain-users.png)
 
@@ -285,17 +358,17 @@ Verify that you can sign in to the server. Use the SAP Logon through SSO as the 
 
 If you encounter any problems, follow these steps to troubleshoot the gsskrb5 installation and SSO connections from the SAP Logon.
 
-- Viewing the server logs (…work\dev\_w0 on the server machine) can be helpful in troubleshooting any errors you encounter in completing the gsskrb5 setup steps. This is particularly true if the SAP BW server won't start after the profile parameters have been changed.
+* Viewing the server logs (…work\dev\_w0 on the server machine) can be helpful in troubleshooting any errors you encounter in completing the gsskrb5 setup steps. This is particularly true if the SAP BW server won't start after the profile parameters have been changed.
 
-- If you're unable to start the SAP BW service due to a logon failure, you might have provided the wrong password when setting the SAP BW "start-as" user. Verify the password by logging in to a machine in your Active Directory environment as the SAP BW service user.
+* If you're unable to start the SAP BW service due to a logon failure, you might have provided the wrong password when setting the SAP BW "start-as" user. Verify the password by logging in to a machine in your Active Directory environment as the SAP BW service user.
 
-- If you get errors about SQL credentials preventing the server from starting, verify that you've granted the service user access to the SAP BW database.
+* If you get errors about SQL credentials preventing the server from starting, verify that you've granted the service user access to the SAP BW database.
 
-- You might get the following message: "(GSS-API) specified target is unknown or unreachable." This usually means you have the wrong SNC name specified. Make sure to use "p:" only, not "p:CN=" or anything else in the client application, other than the service user's UPN.
+* You might get the following message: "(GSS-API) specified target is unknown or unreachable." This usually means you have the wrong SNC name specified. Make sure to use "p:" only, not "p:CN=" or anything else in the client application, other than the service user's UPN.
 
-- You might get the following message: "(GSS-API) An invalid name was supplied." Make sure "p:" is in the value of the server's SNC identity profile parameter.
+* You might get the following message: "(GSS-API) An invalid name was supplied." Make sure "p:" is in the value of the server's SNC identity profile parameter.
 
-- You might get the following message: "(SNC error) the specified module could not be found." This is usually caused by putting the `gsskrb5.dll/gx64krb5.dll` somewhere that requires elevated privileges (administrator rights) to access.
+* You might get the following message: "(SNC error) the specified module could not be found." This is usually caused by putting the `gsskrb5.dll/gx64krb5.dll` somewhere that requires elevated privileges (administrator rights) to access.
 
 ### Add registry entries to the gateway machine
 
@@ -351,13 +424,13 @@ If you don't have Azure AD Connect configured, follow these steps for every Powe
 
 Add the SAP BW data source to your gateway by following the instructions earlier in this article on [running a report](#run-a-power-bi-report).
 
-1. In the data source configuration window, enter the Application Server's **Hostname**, **System Number**, and **client ID**, as you would to sign in to your SAP BW server from Power BI Desktop. For the **Authentication Method**, select **Windows**.
+1. In the data source configuration window, enter the Application Server's **Hostname**, **System Number**, and **client ID**, as you would to sign in to your SAP BW server from Power BI Desktop.
 
 1. In the **SNC Partner Name** field, enter p: \<the SPN you mapped to your SAP BW service user\>. For example, if the SPN is SAP/BWServiceUser@MYDOMAIN.COM, you should enter p:SAP/BWServiceUser@MYDOMAIN.COM in the **SNC Partner Name** field.
 
-1. For the SNC Library, select **SNC\_LIB** or **SNC\_LIB\_64**.
+1. For the SNC Library, select **SNC_LIB** or **SNC_LIB_64**. Use **SNC_LIB** for 32-bit scenarios and **SNC_LIB_64** for 64 bit scenarios. Make sure that these environment variables point to gsskrb5.dll or gx64krb5.dll, respectively, depending on your bitness.
 
-1. The **Username** and **Password** should be the username and password of an Active Directory user with permission to sign in to the SAP BW server with SSO. In other words, these should belong to an Active Directory user who has been mapped to a SAP BW user through the SU01 transaction. These credentials are only used if the **Use SSO via Kerberos for DirectQuery queries** box is not checked.
+1. If you have selected **Windows** for **Authentication Method**, the **Username** and **Password** should be the username and password of an Active Directory user with permission to sign in to the SAP BW server with SSO. In other words, these should belong to an Active Directory user who has been mapped to a SAP BW user through the SU01 transaction. If you have selected **Basic**, the **Username** and **Password** should be set to a SAP BW user's name and password, respectively. These credentials are only used if the **Use SSO via Kerberos for DirectQuery queries** box is not checked.
 
 1. Select the **Use SSO via Kerberos for DirectQuery queries** box, and select **Apply**. If the test connection is not successful, verify that the previous setup and configuration steps were completed correctly.
 
@@ -389,9 +462,9 @@ The result is that the gateway can't impersonate the originating user properly, 
 
 ## Next steps
 
-For more information about the **On-premises data gateway** and **DirectQuery**, check out the following resources:
+For more information about the **on-premises data gateway** and **DirectQuery**, check out the following resources:
 
-* [On-premises data gateway](service-gateway-onprem.md)
+* [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data sources supported by DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery and SAP BW](desktop-directquery-sap-bw.md)

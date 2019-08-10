@@ -50,7 +50,7 @@ If you're having problems getting Cortana to integrate with Power BI, you've com
 1. If you're looking for answers in reports, do you have any reports with Cortana **answer cards**? Answer cards are the only way Cortana can find answers in your Power BI reports.  Learn how to create an answer card by reading [Create Cortana answer cards in Power BI service and Power BI Desktop](service-cortana-answer-cards.md).
 2. Are your running Windows version 1511 or later?  Find out by opening Windows Settings and selecting **System > About**. If not, update your version of Windows.
 3. Are your Windows and Power BI accounts connected? This can be confusing. Follow the instructions in [Enable Cortana for Power BI](service-cortana-enable.md#add-your-power-bi-credentials-to-windows).
-4. Have the underlying datasets been enabled for Cortana? Maybe a colleague has shared a dataset that she has already enabled for Cortana. But, if not, [learn how to enable datasets for Cortana yourself](service-cortana-enable.md). It's quick and easy.
+4. Have the underlying datasets been enabled for Cortana? Maybe a colleague has shared a dataset that has already been enabled for Cortana. But, if not, [learn how to enable datasets for Cortana yourself](service-cortana-enable.md). It's quick and easy.
 
 ## Dashboards only: why doesn't Cortana find answers from my Power BI dashboards
 1. Ensure that you are connected to your work account. Power BI needs this connection so that it can authenticate your access permissions to data. To check that you are connected or if not, to connect your work account, use the Windows search box to navigate to “Connect to work or school”.  

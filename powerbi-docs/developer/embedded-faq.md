@@ -90,7 +90,7 @@ Here is a partial list of feature differences.
 
 * Using the [Power BI Admin portal](../service-admin-portal.md#power-bi-embedded).
 
-* Downloading the [metric app](https://review.docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) in Power BI.
+* Downloading the [metric app](https://docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) in Power BI.
 
 * Using [Azure diagnostic logging](azure-pbie-diag-logs.md).
 

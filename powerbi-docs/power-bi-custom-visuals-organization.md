@@ -1,6 +1,6 @@
 ---
-title: Organization custom visuals in Power BI
-description: Use, manage, and create organizational custom visuals in Power BI
+title: Organization visuals in Power BI
+description: Use, manage, and create organizational visuals in Power BI
 author: sranins
 ms.author: rasala
 manager: kfile
@@ -12,7 +12,7 @@ ms.date: 12/11/2018
 LocalizationGroup: Visualizations
 ---
 
-# Organizational custom visuals in Power BI
+# Organizational visuals in Power BI
 
 You can use custom visuals in Power BI to create a unique type of visual that’s tailored to you. Custom visuals are created by developers, and they're often created when the multitude of visuals that are included in Power BI don’t quite meet their need.
 

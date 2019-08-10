@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/08/2018
+ms.date: 07/23/2019
 ---
 
 # Hardware and software requirements for installing Power BI Report Server
@@ -45,6 +45,7 @@ When you create the report server database on a remote computer, you have to con
 
 Power BI Report Server will install default values to configure the core settings required to make a report server operational. It has the following requirements:
 
+* The supported languages for Power BI Report Server are - English, German, Spanish, Japanese, Italian, French, Russian, Chinese Simplified, Chinese Traditional, Portuguese Brazil, Korean
 * A SQL Server Database Engine must be available after setup and before you configure the database for the report server. The Database Engine instance hosts the report server database that Reporting Services Configuration Manager will create. The Database Engine is not required for the actual setup experience.
 * [Reporting Services Features Supported by the Editions of SQL Server](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) outlines differences between the editions of SQL Server.
 * The user account that runs Setup must be a member of the local Administrators group.

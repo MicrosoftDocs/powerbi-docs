@@ -75,7 +75,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                           <p></p>
                                                 <a href="desktop-quickstart-connect-to-data.md">Connect to data in Power BI Desktop </a><br/> 
                                                 <a href="service-dataflows-overview.md">Dataflows: Self-service data prep</a><br/> 
-                                                <a href="service-gateway-install.md">Gateways for on-premises data</a>
+                                                <a href="service-gateway-onprem.md">Gateways for on-premises data</a>
                                     </div> 
                               </div> 
                         </div> 

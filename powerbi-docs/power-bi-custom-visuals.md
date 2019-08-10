@@ -1,5 +1,5 @@
 ---
-title: Custom visuals in Power BI
+title: Visuals in Power BI
 description: Custom visualizations in Power BI
 author: sranins
 ms.author: rasala
@@ -12,7 +12,7 @@ ms.date: 05/15/2019
 LocalizationGroup: Visualizations
 ---
 
-# Custom visuals in Power BI
+# Visuals in Power BI
 
 When creating or editing a Power BI report, you can use many different types of visuals. The icons for these visuals appear in the **Visualizations** pane. These visuals come pre-packaged when you download [Power BI Desktop](https://powerbi.microsoft.com/desktop/) or open the [Power BI service](https://app.powerbi.com).
 

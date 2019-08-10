@@ -74,7 +74,7 @@ Just like any other Power BI report, if the report data source is on premises, t
 
    ![Manage the paginated report](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-manage.png)
 
-1. See the Power BI service article [Install a gateway](service-gateway-install.md) for details and next steps.
+1. See the Power BI service article [What is an on-premises data gateway](service-gateway-onprem.md) for details and next steps.
 
 ### Gateway limitations
 

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 08/09/2019
 ms.author: mshenhav
 
 ---
@@ -38,7 +38,8 @@ There are two icons for reports in Power BI Mobile apps:
 
 * ![phone report icon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) indicates a report that has at least one phone-optimized report page, that presents in portrait. 
 
-Note: Holding your phone in landscape, you'll always get the landscape layout, even if the report page has phone layout. 
+> [!NOTE]
+> Holding your phone in landscape, you'll always get the landscape layout, even if the report page has phone layout. 
 
 To get to a report from a dashboard, tap the ellipsis (...) in the upper-right corner of a tile > **Open report**.
   
@@ -54,7 +55,7 @@ Tap equals a mouse click. So, if you want to cross-highlight the report based on
 Tapping on a slicer value, makes that value selected and slicing the rest of the report by that value. 
 Tapping on a link, button or bookmark will activate it based on the action defined by the author.
 
-You probably noticed that when you tap on a visual, a border appears. On the top-right corner of the border, you see ellipsis (...). Tapping on it brings up a menu with actions you can do on that visual.
+You probably noticed that when you tap on a visual, a border appears. On the top-right corner of the border, you see an ellipsis (...). Tapping on it brings up a menu with actions you can do on that visual.
 
 ![report visual and menu](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
@@ -64,7 +65,14 @@ When you long tap (tap and hold) a data point, a tooltip will show up presenting
 
 ![report tooltip](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
 
-Report authors can define hierarchies in the data and relationships between report pages. Hierarchy allows drill down, drill up, and drill through another report page from a visual and a value. So, when you long tap on a value, in addition to the tooltip, the relevant drill options appear in the footer. 
+If the report author configured report page tooltip, then default tooltip will be replaced with report page tooltip.
+
+![report page tooltip](./media/mobile-reports-in-the-mobile-apps/report-page-tooltip.png)
+
+> [!NOTE]
+> Report tooltips are supported for devices greater than 640 pixel size and 320 viewport. If your device is smaller, then the app uses default tooltips.
+
+Report authors can define hierarchies in the data and relationships between report pages. Hierarchy allows drill down, drill up, and drill through another report page from a visual and a value. So, when you long tap on a value, in addition to the tooltip, the relevant drill options will appear in the footer. 
 
 ![report drill actions](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
 
