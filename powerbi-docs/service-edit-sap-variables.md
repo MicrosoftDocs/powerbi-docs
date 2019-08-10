@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/08/2019
+ms.date: 08/09/2019
 LocalizationGroup: Data from databases
 ---
 
@@ -73,6 +73,10 @@ You can do so by:
     ![Reset to default](media/service-edit-sap-variables/reset-to-default.png)
 
 When working on a published report in the Power BI service that uses SAP HANA or SAP BW with the **Edit variables** feature enabled, the report owner can change those defaults. The owner of the report can change the variables in edit mode, and save the report to enable those settings to become the *new default settings* for that report. Any other users who access the report after such changes are made by the report owner will see those new settings as the defaults.
+
+## Issues and considerations
+
+At this time the SAP edit variables feature isn't supported in apps.
 
 ## Next steps
 
