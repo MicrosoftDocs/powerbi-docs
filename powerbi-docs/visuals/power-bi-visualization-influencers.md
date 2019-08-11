@@ -20,9 +20,6 @@ The key influencers visual is a great choice if you want to:
 - See which factors affect the metric being analyzed.
 - Contrast the relative importance of these factors. For example, do short-term contracts have more impact on churn than long-term contracts? 
 
-## Key influencer requirements 
-The metric you analyze must be either categorical or numerical field (aggregates and measures are not yet supported).
-
 ## Features of the key influencers visual
 
 ![Features numbered](media/power-bi-visualization-influencers/power-bi-ki-numbers-new.png)
@@ -39,11 +36,9 @@ The metric you analyze must be either categorical or numerical field (aggregates
 
 6. **Right pane**: The right pane contains one visual. In this case, the column chart displays all the values for the key influencer **Theme** that was selected in the left pane. The specific value of **usability** from the left pane is shown in green. All the other values for **Theme** are shown in black.
 
-7. **Average line**: The average is calculated for all the other possible values for **Theme** except **usability**. So the calculation applies to all the values in black. It tells you what percentage of the other **Themes** gave you a low rating. In other words, when a rating is given by a customer, that customer also describes the reason or theme for the rating. Some themes are usability, speed, and security. 
+7. **Average line**: The average is calculated for all possible values for **Theme** except **usability** (which is the selected influencer). So the calculation applies to all the values in black. It tells you what percentage of the other **Themes** had a low rating. In this case 11.35% had a low rating (shown by the dotted line).
 
-   **Theme is usability** is the second-highest key influencer for a low rating, according to the visual in the left pane. If you average all the other themes and their contribution to a rating of **Low**, you get the result shown in red. Of all the other themes given, only 11.35% are higher than **usability**.
-
-8. **Check box**: **Only show values that are influencers**.
+8. **Check box**: Filters out the visual in the right pane to only show values that are influencers for that field. In this example, this would filter the visual to usability, security and navigation.
 
 ## Create a key influencers visual 
  
