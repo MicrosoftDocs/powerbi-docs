@@ -159,9 +159,9 @@ In this group, 74.3% of the customers gave a low rating. The average customer ga
 
 ![Select first top segment](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
 
-## Working with numerical data
+## Analyze a metric that is numeric
 
-If you move a numerical field into the **Analyze** field, you have a choice how to handle that scenario. You can change the behavior of the visual by going into the **Formatting Pane** and switching between **Categorical Analysis Type** and **Continuous Analysis Type**.
+If you move an unsummarized numerical field into the **Analyze** field, you have a choice how to handle that scenario. You can change the behavior of the visual by going into the **Formatting Pane** and switching between **Categorical Analysis Type** and **Continuous Analysis Type**.
 
 ![Change from categorical to continuous](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
 
@@ -205,6 +205,22 @@ Finally, in the case of measures we are looking at the average year a house was 
 Top segments for numerical targets show groups where the house prices on average are higher than in the overall dataset. For example, below we can see that **Segment 1** is made up of houses where **GarageCars** (number of cars the garage can fit) is greater than 2 and the **RoofStyle** is Hip. Houses with those characteristics have an average price of $355K compared to the overall average in the data which is $180K.
 
 ![Numeric target measures influencers](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
+
+## Analyze a metric that is a measure or a summarized column
+
+In the case of a measure or summarized column the analysis defaults to the **Continuous Analysis Type** described above. This cannot be changed. The biggest difference between analyzing a measure/summarized column and an unsummarized numeric column is the level at which the analysis runs.
+
+In the case of unsummarized columns, the analyis always runs at the table level. In the house price example above, we analyzed the **House Price** metric to see what influences a house price to increase/decrease. The analysis automatically runs on the table level. In this case, our table has a unique ID for each house along with all the house attributes that could influence price.
+
+![Numeric question](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
+
+For measures and summarized columns we don't know what level you would like to evaluate your target. If **House Price** was summarized as an **Average**, we would need to consider what level we would like this average house price calculated. Is it the average house price at a neighborhood level? Or perhaps a regional level?
+
+Measures and summarized columns are automatically analyzed at the level of the **Explain by** fields used. Imagine we had three fields in **Explain By** we were interested in: **Kitchen Quality**, **Building Type** and **Air Conditioning**. **Average House Price** would be calculated for each unique combination of those three fields. It is often helpful to switch to a table view to take a look at what the data being evaluated looks like.
+
+![Numeric question](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
+
+This is probably not what we want to evaluate. We actually want to look at the house 
 
 ## Considerations and troubleshooting 
  
