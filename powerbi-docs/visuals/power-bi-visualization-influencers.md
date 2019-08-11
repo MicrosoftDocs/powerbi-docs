@@ -40,9 +40,9 @@ The key influencers visual is a great choice if you want to:
 
 8. **Check box**: Filters out the visual in the right pane to only show values that are influencers for that field. In this example, this would filter the visual to usability, security and navigation.
 
-## Create a key influencers visual 
+## Analyze a metric that is categorical
  
-Watch this video to learn how to create a key influencers visual. Then follow these steps to create one. 
+Watch this video to learn how to create a key influencers visual with a categorical metric. Then follow these steps to create one. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -55,20 +55,24 @@ Your Product Manager wants you to figure out which factors lead customers to lea
 
     ![From Visualizations pane, select Key influencers template](media/power-bi-visualization-influencers/power-bi-template-new.png)
 
-2. Move the metric you want to investigate into the **Analyze** field. The **Analyze** field supports categorical, or noncontinuous, variables only. To see what drives a customer rating of the service to be low, select **Customer Table** > **Rating**. 
+2. Move the metric you want to investigate into the **Analyze** field. To see what drives a customer rating of the service to be low, select **Customer Table** > **Rating**.
+
 3. Move fields that you think might influence **Rating** into the **Explain by** field. You can move as many fields as you want. In this case, start with:
     - Country-Region 
     - Role in Org 
     - Subscription Type 
     - Company Size 
-    - Theme 
-1. To focus on the negative ratings, select **Low** in the **What influences Rating to be** drop-down box.  
+    - Theme
+    
+4. Leave the **Expand by** field empty. This field is only used when analyzing a measure or summarized field. 
+
+5. To focus on the negative ratings, select **Low** in the **What influences Rating to be** drop-down box.  
 
     ![Select Low from drop-down box](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
 
 The analysis runs on the table level of the field that's being analyzed. In this case, it's the **Rating** metric. This metric is defined at a customer level. Each customer has given either a high score or a low score. All the explanatory factors must be defined at the customer level for the visual to make use of them. 
 
-In the previous example, all of the explanatory factors have either a one-to-one or a many-to-one relationship with the metric. In this case, each score has exactly one theme associated with it. This theme was the main theme of the customer review. Similarly, customers come from one country, have one membership type, and perform one role in their organization. The explanatory factors are already attributes of a customer, and no transformations are needed. The visual can make immediate use of them. 
+In the previous example, all of the explanatory factors have either a one-to-one or a many-to-one relationship with the metric. In this case, each customer assigned a single theme to their rating. Similarly, customers come from one country, have one membership type, and perform one role in their organization. The explanatory factors are already attributes of a customer, and no transformations are needed. The visual can make immediate use of them. 
 
 Later in the tutorial, you look at more complex examples that have one-to-many relationships. In those cases, the columns have to first be aggregated down to the customer level before you can run the analysis. 
 
@@ -79,7 +83,7 @@ Let's take a look at the key influencers for low ratings.
 
 ### Top single factor that influences the likelihood of a low rating
 
-The organization in this example has three roles: consumer, administrator, and publisher. Being a consumer is the top factor that contributes to a low rating. 
+The customer in this example can have three roles: consumer, administrator, and publisher. Being a consumer is the top factor that contributes to a low rating. 
 
 ![Select Role in Org is consumer](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
 
