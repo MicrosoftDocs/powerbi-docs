@@ -132,7 +132,7 @@ The scatter plot in the right pane plots the average percentage of low ratings f
 
 In some cases you may find that your continuous factors were automatically turned into categorical ones. This is because we realized the relationship between the variables is not linear and so we cannot describe the relationship as simply increasing or decreasing (like we did in the example above).
 
-We run correlation tests to determine how linear the influencer is with regards to the target. If the target is continuous, we run Perasons correlation and if the target is categorical, we run Point Biserial correlation tests. If we detect the relationship is not sufficiently linear we conduct supervised binning and generate a maximum of 5 bins. To figure out which bins make the most sense we use a supervised binning method which looks at the relationship between the explanatory factor and the target being analyzed.
+We run correlation tests to determine how linear the influencer is with regards to the target. If the target is continuous, we run Pearsons correlation and if the target is categorical, we run Point Biserial correlation tests. If we detect the relationship is not sufficiently linear we conduct supervised binning and generate a maximum of 5 bins. To figure out which bins make the most sense we use a supervised binning method which looks at the relationship between the explanatory factor and the target being analyzed.
 
 ## Interpret measures and aggregates as key influencers 
  
