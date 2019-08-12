@@ -47,9 +47,18 @@ In addition to the **Max Memory** setting, the AI workload has an additional set
 
 ### Datasets (Preview)
 
-By default, the Datasets workload is enabled and cannot be disabled. This workload contains additional settings for an _XMLA endpoint_. This setting specifies that connections from client applications honor the security group membership set at the workspace and app levels. To learn more, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md).
+By default, the Datasets workload is enabled and cannot be disabled. This workload contains an additional setting for the _XMLA endpoint_ and a set of performance-related settings. This **XMLA Endpoint** setting specifies that connections from client applications honor the security group membership set at the workspace and app levels. To learn more, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md).
 
+The performance-related settings ae described in the following table.
 
+| Setting Name | Description | Usage |
+|---------------------------------|----------------------------------------|----------------------------------------|
+| **Max Intermediate Row Set Count** | The max number of intermediate rows returned by DirectQuery. Default value is set to 1000000 and allowable range is between 100000 and 2147483647 | Control the impact of resource-intensive or poorly designed reports. |
+| **Max Offline Dataset Size (GB)** | Maximum size of the offline dataset in memory. This is the compressed size on disk. Default value is set by SKU and the allowable range is from 0.1 – 10 GB | Prevent report creators from publishing a large dataset that could negatively impact the capacity. |
+| **Max Result Row Set Count** | Defines the maximum number of rows returned in a DAX query. Default value is set to -1(no limit) and allowable range is between 100000 and 2147483647 | Control the impact of resource-intensive or poorly designed reports. |
+| **Query Memory Limit (%)** | Applies only to DAX measures and queries. Specified in % and limits how much memory can be used by temporary results during a query. | Control the impact of resource-intensive or poorly designed reports. |
+| **Query Timeout (seconds)** | An integer that defines the timeout, in seconds, for queries. The default is 3600 seconds (or 60   minutes). Zero (0) specifies that no queries will timeout. | Maintain better control of long-running queries. |
+|  |  |  |
 
 ### Dataflows
 
