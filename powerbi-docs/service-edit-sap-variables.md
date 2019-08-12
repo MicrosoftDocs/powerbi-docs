@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/09/2019
+ms.date: 08/12/2019
 LocalizationGroup: Data from databases
 ---
 
@@ -20,7 +20,7 @@ When using SAP Business Warehouse or SAP HANA with DirectQuery, report authors c
 
 This document describes the requirements for editing variables in Power BI, how to enable this preview feature, and where to edit variables in the Power BI service.
 
-# Requirements for SAP edit variables
+## Requirements for SAP edit variables
 
 There are a few requirements for using the SAP edit variables feature. The following list describes these requirements.
 
@@ -41,19 +41,19 @@ There are a few requirements for using the SAP edit variables feature. The follo
 
 **Not supported in Sovereign clouds** – Currently Power Query Online isn't available in Sovereign clouds; therefore, this feature is also not supported in Sovereign clouds.
 
-# How to enable the feature
+## How to enable the feature
 
 To enable the **SAP edit variables** feature, in Power BI Desktop connect to an SAP HANA or SAP BW data source. Then go to **File > Options and settings > Options** and then, in the Current File section in the left pane, select **DirectQuery**. When you select that, in the right pane you see DirectQuery options, and a checkbox where you can **Allow end users to change SAP variables in the report (preview)**, as shown in the following image.
 
 ![DirectQuery options](media/service-edit-sap-variables/sap-preview-setting-in-desktop.png)
 
-# Using SAP edit variables in Power BI Desktop
+## Use SAP edit variables in Power BI Desktop
 
 When using SAP edit variables in Power BI Desktop, you can edit the variables by selecting the Edit variables link from **Edit Queries** menu in the ribbon. From there, the following dialog appears. This feature has been available in Power BI Desktop for a while. Report creators can select variables for the report using the following dialog.
 
 ![Add items](media/service-edit-sap-variables/sap-variables-add-items.png)
 
-# Using SAP edit variables in the service
+## Use SAP edit variables in the service
 
 Once the report is published to the Power BI service, users can see the **Edit variables** link in the new Filter pane. If you're publishing the report for the first time, it may take up to 5 minutes before the Edit variable link appears. If the link hasn't appeared, you will need to manually refresh the dataset.
 You can do so by:
