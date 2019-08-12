@@ -198,7 +198,7 @@ Power BI Report Server does not support OAuth-based authentication for DirectQue
 | Azure SQL Database |No |No |Yes |No |No |
 | Azure SQL Data Warehouse |No |No |Yes |No |No |
 | Oracle Database |No |No |Yes |Yes |Yes |
-| SAP Business Warehouse server |No |No |Yes |No |Yes |
+| SAP Business Warehouse server |No |No |Yes |No |No |
 | SAP HANA Database |No |No |Yes |Yes |No |
 | Teradata Database |No |No |Yes |Yes |Yes |
 

@@ -52,9 +52,9 @@ See [Azure Active Directory](/data-integration/gateway/service-gateway-onprem-in
 
 See [How do I tell what my UPN is?](/data-integration/gateway/service-gateway-onprem-indepth#how-do-i-tell-what-my-upn-is).
 
-## Mapping usernames for Analysis Services data sources
+## Map user names for Analysis Services data sources
 
-See [Mapping usernames for Analysis Services data sources](service-gateway-enterprise-manage-ssas.md#mapping-usernames-for-analysis-services-data-sources).
+See [Map user names for Analysis Services data sources](service-gateway-enterprise-manage-ssas.md#map-user-names-for-analysis-services-data-sources).
 
 ## Synchronize an on-premises Active Directory with Azure Active Directory
 

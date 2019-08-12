@@ -58,4 +58,4 @@ You can use the on-premises data gateway to merge or append on-premises and clou
 
 ## Next steps
 
-To learn more about data refresh for gateways, see [Using the data source for scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md#using-the-data-source-for-scheduled-refresh).
+To learn more about data refresh for gateways, see [Use the data source for scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md#use-the-data-source-for-scheduled-refresh).

@@ -595,6 +595,8 @@
         href: service-export-to-pbix.md
       - name: "Filter a report using parameters in the URL"
         href: service-url-filters.md
+      - name: "Edit SAP variables"
+        href: service-edit-sap-variables.md
       - name: "Best practices for building fast and reliable reports"
         href: power-bi-reports-performance.md  
     - name: Ask questions of your data
@@ -631,7 +633,7 @@
         href: service-admin-manage-your-data-storage-in-power-bi.md
       - name: "Connect to files on your group's OneDrive"
         href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
-      - name: "Collaborate in your group workspace"
+      - name: "Collaborate in a classic workspace"
         href: service-collaborate-power-bi-workspace.md
       - name: "Manage your group in Power BI and Office 365"
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
