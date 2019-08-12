@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/03/2019
+ms.date: 08/12/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -21,7 +21,7 @@ Power BI lets you visualize all sorts of data from various sources. When creatin
 
 ## Determining relevant data
 
-To get started understanding how Power BI determines which data is relevant to display, let's consider a table as a simple example. Using the model represented in the samples section, found at the end of this article, consider building a table with the following settings:
+To get started understanding how Power BI determines which data is relevant to display, let's consider a table as a simple example. Using the model represented in the [example data model](#example-data-model) section, found at the end of this article, consider building a table with the following settings:
 
 **1. Groups from the same table:** *Product[Color] - Product[Size]*
 
@@ -148,6 +148,25 @@ How it appears with **Show items with no data** feature on:
 |Red     |Gloss         |         |
 
 In this case, notice how *ProductStyle[Finish]=None* does not appear in the table. This is because, in this case, Power BI first selected all the *Color* values in the *Product* table. Then for each color, Power BI selected the corresponding *Finish* values that contained data. Since *None* does not show up in any combination of *Color*, it is not selected.
+
+
+## Power BI visual behavior
+
+When **Show items with no data** is enabled on one field in a visual, the feature is automatically enabled for all other fields that are in that same *visual bucket* or hierarchy. A visual bucket or hierarchy can be its **Axis** or **Legend**, or **Category**, **Rows** or **Columns**.
+
+![Fields for axis and legend](media/desktop-show-items-no-data/show-items-no-data-04.png)
+
+For example, on a Matrix visual with four fields in the **Rows** bucket, if one field has **Show items with no data** enabled, all items in the matrix will have it enabled. In the following image, the **Show items with no data** is enabled on the first field in the **Rows** bucket, the *SupplierID* field. The other fields in the **Rows** bucket have it automatically enabled as well.
+
+![Fields in the same visual automatically enable Show items with no data](media/desktop-show-items-no-data/show-items-no-data-05.png)
+
+In contrast, the *Continent* field showin in the **Columns** bucket does *not* have **Show items with no data** automatically enabled. 
+
+This visual behavior if often seen when a visual is converted to a different type, for example, converting a Matrix visual to a table visual. In such conversions, the **Show items with no data** is automatically enabled for any field moved to a bucket where a field in that bucket has the feature enabled. In the previous example, if *SupplierID* has the **Show items with no data** feature enabled and the visual is converted to a table, the *Continent* field from the **Columns** bucket is moved (along with the fields in the **Rows** bucket) into the only bucket used in a table visual - the **Values** bucket. As such, all fields in the **Values** bucket will have **Show items with no data** enabled.
+
+### Exporting data
+
+When using the **Export summarized data** feature, the behavior of the **Show items with no data** feature is the same as if the export were converted to a Table visual. As such, when exporting a visual such as a Chart Matrix visual, the exported data may appear differently than the visual displayed. This is because the conversion to a table visual, as part of the export process, would enable **Show items with no data** for all fields being exported. 
 
 ## Example data model
 

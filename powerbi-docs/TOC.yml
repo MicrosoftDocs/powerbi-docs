@@ -53,6 +53,8 @@
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
       href: desktop-latest-update.md
+    - name: "Grouping visuals in Power BI Desktop"
+      href: desktop-grouping-visuals.md      
     - name: "Modeling view in Power BI Desktop"
       href: desktop-modeling-view.md      
     - name: "Aggregations in Power BI Desktop"

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/15/2019
+ms.date: 08/12/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -93,12 +93,14 @@ The following image shows the **Get Data** window for **Database**.
 
 ![Get Data > Databases](media/desktop-data-sources/data-sources_04.png)
 
-The **Power BI** category provides the following data connections:
+The **Power Platform** category provides the following data connections:
 
 * Power BI datasets
 * Power BI dataflows
+* Common Data Service
+* Power Platform dataflows (Beta)
 
-The following image shows the **Get Data** window for **Power BI**.
+The following image shows the **Get Data** window for **Power Platform**.
 
 ![Get Data > Power BI](media/desktop-data-sources/data-sources_05.png)
 
@@ -109,7 +111,7 @@ The **Azure** category provides the following data connections:
 * Azure Analysis Services database
 * Azure Blob Storage
 * Azure Table Storage
-* Azure Cosmos DB (Beta)
+* Azure Cosmos DB
 * Azure Data Lake Storage Gen2 (Beta)
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
@@ -130,7 +132,6 @@ The **Online Services** category provides the following data connections:
 * Dynamics NAV
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (on-premises)
-* Common Data Service
 * Microsoft Azure Consumption Insights (Beta)
 * Azure DevOps (Beta)
 * Azure DevOps Server (Beta)
@@ -157,6 +158,7 @@ The **Online Services** category provides the following data connections:
 * tyGraph (Beta)
 * Webtrends (Beta)
 * Zendesk (Beta)
+* Dynamics 365 Customer Insights (Beta)
 * Emigo Data Source (Beta)
 * Entersoft Business Suite (Beta)
 * Industrial App Store
@@ -164,7 +166,7 @@ The **Online Services** category provides the following data connections:
 * Microsoft Graph Security (Beta)
 * Quick Base
 * TeamDesk (Beta)
-* Dynamics 365 Customer Insights (Beta)
+
 
 The following image shows the **Get Data** window for **Online Services**.
 
