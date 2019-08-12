@@ -159,6 +159,26 @@ In this group, 74.3% of the customers gave a low rating. The average customer ga
 
 ![Select first top segment](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
 
+## Adding counts
+
+Sometimes an influencer can have a big impact but represent very little of the data. For example, **Theme** is **usability** is the second biggest influencer for low ratings. However there might have only been a handful of customeres who complained about usability. Counts can help you prioritize which influencers you want to focus on.
+
+You can turn counts on through the **Analysis card** of the formatting pane.
+
+![Add counts](media/power-bi-visualization-influencers/power-bi-ki-counts-toggle.png)
+
+Once counts are turned on, you’ll see a ring around each influencer’s bubble, which represents the approximate percentage of data that influencer contains. The more of the bubble the ring circles, the more data it contains. We can see that **Theme** us **usability** contains a very small proportion of data.
+
+![Show counts](media/power-bi-visualization-influencers/power-bi-ki-counts-ring.png)
+
+You can also use the Sort by toggle in the bottom left of the visual to sort the bubbles by count first instead of impact. **Subscription Type** is **Premier** is the top influencer based on count.
+
+![Sort by counts](media/power-bi-visualization-influencers/power-bi-ki-counts-sort.png)
+
+Having a full ring around the circle means the influencer contains 100% of the data. You can change the count type to be relative to the maximum influencer using the **Count type** dropdown in the **Analysis card** of the formatting pane. Now the influencer with the most amount of data will be represented by a full ring and all other counts will be relative to it.
+
+![Show relative counts](media/power-bi-visualization-influencers/power-bi-ki-counts-type.png)
+
 ## Analyze a metric that is numeric
 
 If you move an unsummarized numerical field into the **Analyze** field, you have a choice how to handle that scenario. You can change the behavior of the visual by going into the **Formatting Pane** and switching between **Categorical Analysis Type** and **Continuous Analysis Type**.
@@ -208,7 +228,7 @@ Top segments for numerical targets show groups where the house prices on average
 
 ## Analyze a metric that is a measure or a summarized column
 
-In the case of a measure or summarized column the analysis defaults to the **Continuous Analysis Type** described [above](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#Analyze-a-metric-that-is-numeric). This cannot be changed. The biggest difference between analyzing a measure/summarized column and an unsummarized numeric column is the level at which the analysis runs.
+In the case of a measure or summarized column the analysis defaults to the **Continuous Analysis Type** described above. This cannot be changed. The biggest difference between analyzing a measure/summarized column and an unsummarized numeric column is the level at which the analysis runs.
 
 In the case of unsummarized columns, the analyis always runs at the table level. In the house price example above, we analyzed the **House Price** metric to see what influences a house price to increase/decrease. The analysis automatically runs on the table level. Our table has a unique ID for each house so the analysis runs at a house level.
 
@@ -222,7 +242,7 @@ Measures and summarized columns are automatically analyzed at the level of the *
 
 This analysis is very summarized and so it will be hard for the regression model to find any patterns in the data it can learn from. We should run the analysis at a more detailed level to get better results. If we wanted to analyze the house price at the house level we would need to explicitly add the **ID** field to the analysis. Nevertheless, we don't want the house ID to be considered an influencer. It is not helpful to learn that as house ID increases, the price of a house increase. This is where the **Expand By** fieldwell option comes in handy. You can use **Expand By** to add fields you want to use for setting the level of the analysis without looking for new influencers.
 
-Take a look at what the visualization looks like once we add **ID** to **Expand By**. Once you have defined the level at which you want your measure evaluated, interpreting influencers is exactly the same as for [unsummarized numeric columns](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#Analyze-a-metric-that-is-numeric).
+Take a look at what the visualization looks like once we add **ID** to **Expand By**. Once you have defined the level at which you want your measure evaluated, interpreting influencers is exactly the same as for unsummarized numeric columns.
 
 ![Measures table](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 
