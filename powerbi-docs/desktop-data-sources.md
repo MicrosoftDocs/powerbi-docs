@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/15/2019
+ms.date: 08/12/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -18,11 +18,11 @@ With Power BI Desktop, you can connect to data from many different sources. A fu
 
 To connect to data, select **Get Data** from the **Home** ribbon. Selecting the down arrow, or the **Get Data** text on the button, shows the **Most Common** data types menu shown in the following image:
 
-![Get Data in Power BI Desktop](media/desktop-data-sources/data-sources_01.png)
+![Get Data in Power BI Desktop](media/desktop-data-sources/data-sources-01.png)
 
 Selecting **More…** from the **Most Common** menu displays the **Get Data** window. You can also bring up the **Get Data** window (and bypass the **Most Common** menu) by selecting the **Get Data** **icon button** directly.
 
-![Get Data button](media/desktop-data-sources/data-sources_02.png)
+![Get Data button](media/desktop-data-sources/data-sources-02.png)
 
 > [!NOTE]
 > The Power BI team is continually expanding the data sources available to **Power BI Desktop** and the **Power BI service**. As such, you'll often see early versions of work-in-progress data sources marked as *Beta* or *Preview*. Any data source marked as *Beta* or *Preview* has limited support and functionality, and should not be used in production environments.
@@ -52,7 +52,7 @@ The **File** category provides the following data connections:
 
 The following image shows the **Get Data** window for **File**.
 
-![Get Data > File](media/desktop-data-sources/data-sources_03.png)
+![Get Data > File](media/desktop-data-sources/data-sources-03.png)
 
 The **Database** category provides the following data connections:
 
@@ -91,16 +91,18 @@ The **Database** category provides the following data connections:
 
 The following image shows the **Get Data** window for **Database**.
 
-![Get Data > Databases](media/desktop-data-sources/data-sources_04.png)
+![Get Data > Databases](media/desktop-data-sources/data-sources-04.png)
 
-The **Power BI** category provides the following data connections:
+The **Power Platform** category provides the following data connections:
 
 * Power BI datasets
 * Power BI dataflows
+* Common Data Service
+* Power Platform dataflows (Beta)
 
-The following image shows the **Get Data** window for **Power BI**.
+The following image shows the **Get Data** window for **Power Platform**.
 
-![Get Data > Power BI](media/desktop-data-sources/data-sources_05.png)
+![Get Data > Power BI](media/desktop-data-sources/data-sources-05.png)
 
 The **Azure** category provides the following data connections:
 
@@ -109,7 +111,7 @@ The **Azure** category provides the following data connections:
 * Azure Analysis Services database
 * Azure Blob Storage
 * Azure Table Storage
-* Azure Cosmos DB (Beta)
+* Azure Cosmos DB
 * Azure Data Lake Storage Gen2 (Beta)
 * Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
@@ -120,7 +122,7 @@ The **Azure** category provides the following data connections:
 
 The following image shows the **Get Data** window for **Azure**.
 
-![Get Data > Azure](media/desktop-data-sources/data-sources_06.png)
+![Get Data > Azure](media/desktop-data-sources/data-sources-06.png)
 
 The **Online Services** category provides the following data connections:
 
@@ -130,7 +132,6 @@ The **Online Services** category provides the following data connections:
 * Dynamics NAV
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (on-premises)
-* Common Data Service
 * Microsoft Azure Consumption Insights (Beta)
 * Azure DevOps (Beta)
 * Azure DevOps Server (Beta)
@@ -157,6 +158,7 @@ The **Online Services** category provides the following data connections:
 * tyGraph (Beta)
 * Webtrends (Beta)
 * Zendesk (Beta)
+* Dynamics 365 Customer Insights (Beta)
 * Emigo Data Source (Beta)
 * Entersoft Business Suite (Beta)
 * Industrial App Store
@@ -164,11 +166,11 @@ The **Online Services** category provides the following data connections:
 * Microsoft Graph Security (Beta)
 * Quick Base
 * TeamDesk (Beta)
-* Dynamics 365 Customer Insights (Beta)
+
 
 The following image shows the **Get Data** window for **Online Services**.
 
-![Get Data > Online Services](media/desktop-data-sources/data-sources_07.png)
+![Get Data > Online Services](media/desktop-data-sources/data-sources-07.png)
 
 The **Other** category provides the following data connections:
 
@@ -196,7 +198,7 @@ The **Other** category provides the following data connections:
 
 The following image shows the **Get Data** window for **Other**.
 
-![Get Data > Other](media/desktop-data-sources/data-sources_08.png)
+![Get Data > Other](media/desktop-data-sources/data-sources-08.png)
 
 > [!NOTE]
 > At this time, it's not possible to connect to custom data sources secured using Azure Active Directory.
@@ -204,15 +206,15 @@ The following image shows the **Get Data** window for **Other**.
 ## Connecting to a Data Source
 To connect to a data source, select the data source from the **Get Data** window and select **Connect**. In the following image, **Web** is selected from the **Other** data connection category.
 
-![Connect to web](media/desktop-data-sources/data-sources_08.png)
+![Connect to web](media/desktop-data-sources/data-sources-08.png)
 
 A connection window is displayed, specific to the type of data connection. If credentials are required, you’ll be prompted to provide them. The following image shows a URL being entered to connect to a Web data source.
 
-![input web URL](media/desktop-data-sources/datasources_fromwebbox.png)
+![input web URL](media/desktop-data-sources/datasources-fromwebbox.png)
 
 When the URL or resource connection information is entered, select **OK**. Power BI Desktop makes the connection to the data source, and presents the available data sources in the **Navigator**.
 
-![Navigator screen](media/desktop-data-sources/datasources_fromnavigatordialog.png)
+![Navigator screen](media/desktop-data-sources/datasources-fromnavigatordialog.png)
 
 You can either load the data by selecting the **Load** button at the bottom of the **Navigator** pane, or edit the query before loading data by selecting the **Edit** button.
 

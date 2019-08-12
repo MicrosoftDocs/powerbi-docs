@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/12/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
 # Use Report Themes in Power BI Desktop
-With **Report Themes** you can apply a color theme to your entire report, such as corporate colors, seasonal coloring, or other color themes. When you apply a **Report Theme**, all visuals in your report use the colors from your selected theme. A few exceptions apply, and they're described later in this article.
+With **Report Themes** you can apply a color theme to your entire report, such as corporate colors, seasonal coloring, icon sets, or other color themes. When you apply a **Report Theme**, all visuals in your report use the colors from your selected theme. A few exceptions apply, and they're described later in this article.
 
 ![Report themes](media/desktop-report-themes/report-themes_1.png)
 
