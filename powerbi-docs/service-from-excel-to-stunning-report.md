@@ -1,5 +1,5 @@
 ---
-title: Quickly create a report from an Excel workbook
+title: From Excel workbook to stunning report in the Power BI service
 description: This article shows how you can quickly create a stunning report from an Excel workbook.
 author: maggiesMSFT
 manager: kfile
@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2019
+ms.date: 08/12/2019
 ms.author: maggies
 
 LocalizationGroup: Data from files
 ---
-# Quickly create a report from an Excel workbook
+# From Excel workbook to stunning report in the Power BI service
 Your manager wants to see a report on your latest sales figures combined with your last campaign impressions by the end of the day. But the latest data resides on various third-party systems and on files in your laptop. In the past, it’s taken hours to create visuals and format a report, and you’re beginning to feel anxious.
 
 No worries. With Power BI, you can create a stunning report in no time.
@@ -37,6 +37,9 @@ Let’s take a simple Excel file as an example.
 
 ## Upload your Excel file to the Power BI service
 The Power BI service connects to many data sources, including Excel files that live on your computer. 
+
+ > [!NOTE] 
+ > To follow along with the rest of this tutorial, use the [Financial Sample workbook](sample-financial-download.md).
 
 1. To get started, sign in to the Power BI service. If you haven’t signed up, [you can do so for free](https://powerbi.com).
 
@@ -62,9 +65,6 @@ The Power BI service connects to many data sources, including Excel files that l
 
 7. From the **Local File** page, select **Import**.
 
-   > [!NOTE] 
-   > To follow along with the rest of this tutorial, use the [Financial sample workbook](sample-financial-download.md).
-   > 
 
 ## Build your report
 After the Power BI service imports your Excel file, you start building your report. 
@@ -86,7 +86,7 @@ After the Power BI service imports your Excel file, you start building your repo
    ![Column chart in report editor](media/service-from-excel-to-stunning-report/pbi_report_pin-new.png)
 
    > [!TIP]
-   > If your chart doesn't look like you expect, check your aggregations. For example, in the **Value** well, right click the field you just added and ensure the data is being aggregated the way you'd like it. In this example, we're using **Sum**.
+   > If your chart doesn't look like you expect, check your aggregations. For example, in the **Value** well, right-click the field you just added and ensure the data is being aggregated the way you'd like it. In this example, we're using **Sum**.
    > 
 
 Your manager wants to know which countries are the most profitable. Impress them with a map visualization. 
@@ -116,7 +116,7 @@ Pin all of your visuals to your dashboard. You’re now ready to share it with y
    ![Dashboard with the three visuals pinned](media/service-from-excel-to-stunning-report/pbi_report.png)
 
 ## Share your dashboard
-Let's say you want to share your dashboard with your manager, Paula. You can share your dashboard and underlying report with any colleague who has a Power BI account. They can interact with your report, but can't save changes.
+Let's say you want to share your dashboard with your manager. You can share your dashboard and underlying report with any colleague who has a Power BI account. They can interact with your report, but can't save changes.
 
 1. To share your report, at the top of the dashboard, select **Share**.
 
