@@ -23,11 +23,11 @@ Creating an organizational content pack requires a [Power BI Pro account](https:
 > [!NOTE]
 > You can't create or install organizational content packs in the new workspace experiences preview. If you haven't started yet, Now is a good time to upgrade your content packs to apps. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
 
-Imagine you're the Release Manager at Contoso and you're getting ready for a new product launch.  You've created a dashboard with reports that you'd like to share. Other employees managing the launch will find them useful. You want a way to package up the dashboard and reports as a solution for your colleagues to use.
+Imagine you're the Release Manager at Contoso and you're getting ready for a new product launch.  You've created a dashboard with reports that you'd like to share. Other employees managing the launch may find them useful. You want a way to package up the dashboard and reports as a solution for your colleagues to use.
 
-Want to follow along? In the [Power BI service](https://powerbi.com), go to **Get Data** > **Samples** > **Opportunity Analysis Sample** > **Connect** to get your own copy.
+Want to follow along? In the [Power BI service](https://powerbi.com), go to your **My Workspace**. Then go to **Get Data** > **Samples** > **Opportunity Analysis Sample** > **Connect** to get your own copy.
 
-1. In the left navigation pane, select **My workspaces** then select the **Opportunity Analysis Sample** dashboard.
+1. In the left navigation pane, select **Workspaces** > **My workspaces**.
 
 1. From the top navigation bar, select the cog icon ![Screenshot of the cog icon.](media/service-organizational-content-pack-create-and-publish/cog.png) > **Create content pack**.
 
@@ -35,7 +35,7 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
 
 1. In the **Create Content Pack** window, enter the following information.  
 
-   Keep in mind that your organization's content pack library might fill up quickly. The library could end up with hundreds of content packs published for the organization or for groups. Take time to give your content pack a meaningful name, add a good description, and select the right audience.  Use words that will make your content pack easy to find via search. It will make it easier to find in the future.
+   Keep in mind that your organization's content pack library might fill up quickly. The library could end up with hundreds of content packs published for the organization or for groups. Take time to give your content pack a meaningful name, add a good description, and select the right audience.  Use words that makes your content pack easy to find via search. It makes it easier to find in the future.
 
       ![Screenshot of the complete Create content pack form.](media/service-organizational-content-pack-create-and-publish/cpwindow.png)
 
@@ -48,13 +48,13 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to **Ge
     1. Name the content pack *Sales Opportunities*.
 
         > [!TIP]
-        > Consider including the name of the dashboard in the name of the content pack. That way, your colleagues will find the dashboard more easily after they connect to your content pack.
+        > Consider including the name of the dashboard in the name of the content pack. That way, your colleagues can find the dashboard more easily after they connect to your content pack.
 
     1. Recommended: Add a description. It helps coworkers more easily find the content packs that they need. Besides a description, add keywords your coworkers might use to search for this content pack. Include contact information in case your coworkers have a question or need help.
 
     1. Upload an image or logo to make it easier for group members to find the content pack.
 
-        It's faster to scan for an image than to scan for text. The screenshot shows an image of the **Opportunity Count%** column chart tile.
+        It's faster to scan for an image than to scan for text. The screenshot shows an image of the **Opportunity Count** column chart tile.
 
     1. Select the **Opportunity Analysis Sample** dashboard to add it to the content pack.
 
