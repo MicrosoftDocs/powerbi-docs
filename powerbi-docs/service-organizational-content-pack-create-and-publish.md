@@ -23,6 +23,8 @@ Creating an organizational content pack requires a [Power BI Pro account](https:
 > [!NOTE]
 > You can't create or install organizational content packs in the new workspace experiences preview. If you haven't started yet, Now is a good time to upgrade your content packs to apps. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
 
+## Create and publish a content pack
+
 Imagine you're the Release Manager at Contoso and you're getting ready for a new product launch.  You've created a dashboard with reports that you'd like to share. Other employees managing the launch may find them useful. You want a way to package up the dashboard and reports as a solution for your colleagues to use.
 
 Want to follow along? In the [Power BI service](https://powerbi.com), go to your **My Workspace**. Then go to **Get Data** > **Samples** > **Opportunity Analysis Sample** > **Connect** to get your own copy.
@@ -33,7 +35,7 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to your
 
    ![Screenshot of the UI with focus on the cog icon and the Create content pack option.](media/service-organizational-content-pack-create-and-publish/pbi_create_contpk.png)
 
-1. In the **Create Content Pack** window, enter the following information.  
+1. In the **Create content pack** window, enter the following information.  
 
    Keep in mind that your organization's content pack library might fill up quickly. The library could end up with hundreds of content packs published for the organization or for groups. Take time to give your content pack a meaningful name, add a good description, and select the right audience.  Use words that makes your content pack easy to find via search. It makes it easier to find in the future.
 
