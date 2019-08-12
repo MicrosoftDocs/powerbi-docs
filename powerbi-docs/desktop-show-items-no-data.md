@@ -160,7 +160,7 @@ For example, on a Matrix visual with four fields in the **Rows** bucket, if one 
 
 ![Fields in the same visual automatically enable Show items with no data](media/desktop-show-items-no-data/show-items-no-data-05.png)
 
-In contrast, the *Continent* field showin in the **Columns** bucket does *not* have **Show items with no data** automatically enabled. 
+In contrast, the *Continent* field shown in the **Columns** bucket does *not* have **Show items with no data** automatically enabled. 
 
 This visual behavior if often seen when a visual is converted to a different type, for example, converting a Matrix visual to a table visual. In such conversions, the **Show items with no data** is automatically enabled for any field moved to a bucket where a field in that bucket has the feature enabled. In the previous example, if *SupplierID* has the **Show items with no data** feature enabled and the visual is converted to a table, the *Continent* field from the **Columns** bucket is moved (along with the fields in the **Rows** bucket) into the only bucket used in a table visual - the **Values** bucket. As such, all fields in the **Values** bucket will have **Show items with no data** enabled.
 
