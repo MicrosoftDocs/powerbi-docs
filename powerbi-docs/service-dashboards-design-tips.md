@@ -50,7 +50,7 @@ But be sure to provide context.
 Read about [creating a tile with just a number](visuals/power-bi-visualization-card.md).
 
 ## Put the most important information in the upper corner
-Most people read from top to bottom. So, put the highest level of detail at the top and show more detail as you move in the direction the audience uses for reading (left-to-right, right-to-left).
+Most people read from top to bottom. So, put the highest level of data at the top and show more detail as you move in the direction the audience uses for reading (left-to-right, right-to-left).
 
 ## Use the right visualization for the data and format it for easy reading
 Avoid visualization variety for the sake of variety.  Visualizations should paint a picture and be easy to "read" and interpret.  For some data and visualizations, a simple graphic visualization is enough. But other data may call for a more-complex visualization - be sure to make use of titles and labels and other customization to help the reader.  
