@@ -595,6 +595,8 @@
         href: service-export-to-pbix.md
       - name: "Filter a report using parameters in the URL"
         href: service-url-filters.md
+      - name: "Edit SAP variables"
+        href: service-edit-sap-variables.md
       - name: "Best practices for building fast and reliable reports"
         href: power-bi-reports-performance.md  
     - name: Ask questions of your data
