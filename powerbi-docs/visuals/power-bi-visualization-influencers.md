@@ -161,7 +161,7 @@ In this group, 74.3% of the customers gave a low rating. The average customer ga
 
 ## Adding counts
 
-Sometimes an influencer can have a big impact but represent very little of the data. For example, **Theme** is **usability** is the second biggest influencer for low ratings. However there might have only been a handful of customeres who complained about usability. Counts can help you prioritize which influencers you want to focus on.
+Sometimes an influencer can have a big impact but represent very little of the data. For example, **Theme** is **usability** is the second biggest influencer for low ratings. However there might have only been a handful of customers who complained about usability. Counts can help you prioritize which influencers you want to focus on.
 
 You can turn counts on through the **Analysis card** of the formatting pane.
 
@@ -230,7 +230,7 @@ Top segments for numerical targets show groups where the house prices on average
 
 In the case of a measure or summarized column the analysis defaults to the **Continuous Analysis Type** described above. This cannot be changed. The biggest difference between analyzing a measure/summarized column and an unsummarized numeric column is the level at which the analysis runs.
 
-In the case of unsummarized columns, the analyis always runs at the table level. In the house price example above, we analyzed the **House Price** metric to see what influences a house price to increase/decrease. The analysis automatically runs on the table level. Our table has a unique ID for each house so the analysis runs at a house level.
+In the case of unsummarized columns, the analysis always runs at the table level. In the house price example above, we analyzed the **House Price** metric to see what influences a house price to increase/decrease. The analysis automatically runs on the table level. Our table has a unique ID for each house so the analysis runs at a house level.
 
 ![Measures table](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
 
@@ -253,7 +253,7 @@ Take a look at what the visualization looks like once we add **ID** to **Expand 
 The key influencers visual has some limitations:
 
 - Direct Query is not supported
-- Live Connection to Azure Analysis Services and Sql Server Analysis Services is not supported
+- Live Connection to Azure Analysis Services and SQL Server Analysis Services is not supported
 - Publish to web is not supported
 - .NET Framework 4.6 or higher is required
 
@@ -278,6 +278,12 @@ The visualization works by looking at patterns in the data for one group compare
 We recommend that you have at least 100 observations for the selected state. In this case, the state is customers who churn. You also need at least 10 observations for the states you use for comparison. In this case, the comparison state is customers who don't churn.
 
 If you are analyzing a numeric field you may want to switch from **Categorical Analysis** to **Continuous Analysis** in the **Formatting Pane** under the **Analysis** card.
+
+**I see an error that when 'Analyze' is not summarized, the analysis always runs at the row level of its parent table. Changing this level via 'Expand by' fields is not allowed. Why is that?**
+
+When analyzing a numeric or categorical column, the analysis always runs at the table level. For example, if you are analyzing house prices and your table contains an ID column, the analysis will automatically run at the house ID level. 
+
+When you are analyzing a measure or summarized column, you need to explicitly state at which level you would like the analysis to run at. You can use **Expand by** to change the level of the analysis for measures and summarized columns without adding new influencers. If  **House price** was defined as a measure you could add the house ID column to **Expand by** to change the level of the analysis.
 
 **I see an error that a field in *Explain by* isn't uniquely related to the table that contains the metric I'm analyzing. Why is that?**
  
