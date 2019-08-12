@@ -39,7 +39,7 @@ Because dashboards are meant to show important information at a glance, having a
 Is the dashboard too cluttered?  Remove all but essential information that's easily read and interpreted.
 
 ## Make use of full screen mode
-Display your dashboard in [full screen](consumer/end-user-focus.md) without distractions.
+When presenting a dashboard, display it in [full screen mode](consumer/end-user-focus.md), without distractions.
 
 ## Make the most important information biggest
 If the text and visualizations on your dashboard are all the same size, your readers will have a hard time focusing on what's most important. For example, card visualizations are a good way to display an important number prominently:  
