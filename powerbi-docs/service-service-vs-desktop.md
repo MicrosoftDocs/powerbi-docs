@@ -9,7 +9,7 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 7/23/2019
+ms.date: 08/12/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
