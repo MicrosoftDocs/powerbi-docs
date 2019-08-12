@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 08/12/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -55,9 +55,9 @@ To grant access to a new workspace, add user groups or individuals to one of the
 
 Roles let you manage who can do what in a workspace, so teams can collaborate. New workspaces allow you to assign roles to individuals, and to user groups: security groups, Office 365 groups, and distribution lists. 
 
-When you assign roles to a user group, the individuals in the group have access to content. If you nest user groups, all the contained users have permission. A user who's in several user groups with different roles gets the highest level of permission granted them. 
+When you assign roles to a user group, the individuals in the group have access to content. If you nest user groups, all the contained users have permission.
 
-The new workspaces offer four roles: admins, members, contributors, and viewers.
+Here are the capabilities of the four roles: admins, members, contributors, and viewers.
 
 |Capability   | Admin  | Member  | Contributor  | Viewer |
 |---|---|---|---|---|
@@ -70,23 +70,25 @@ The new workspaces offer four roles: admins, members, contributors, and viewers.
 | Create, edit, and delete content in the workspace.  |  X | X  | X  |   |
 | Publish reports to the workspace, delete content.  |  X | X  | X  |   |
 | View an item. |  X | X  | X  | X  |
- 
+| Copy a report<sup>1</sup>. | X | X | X | X |
+
+1. Also requires [Build permission for datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
  
 ## Licensing
 Everyone you add to a workspace in the shared capacity needs a Power BI Pro license. In the workspace, these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. 
 
 If you want to distribute content to others inside your organization, you can assign Power BI Pro licenses to those users or place the workspace in a Power BI Premium capacity.
 
-When the workspace is in a Power BI Premium capacity, users with the Viewer role can access the workspace even if they don't have a Power BI Pro license. However, if you assign these users a higher role like Admin, Member, or Contributor, they won't be able to access the workspace. They'll be prompted to start a Pro Trial when they try to access the workspace. To leverage the Viewer capability for users without Pro licenses, ensure the users in the Viewer role aren't in other workspace roles, either individually or through a user group. 
+When the workspace is in a Power BI Premium capacity, users with the Viewer role can access the workspace even if they don't have a Power BI Pro license. However, if you assign these users a higher role like Admin, Member, or Contributor, they'll be prompted to start a Pro Trial when they try to access the workspace. To leverage the Viewer capability for users without Pro licenses, ensure the users in the Viewer role aren't in other workspace roles, either individually or through a user group. 
 
 > [!NOTE]
-> Publishing reports to new workspace experience has stricter enforcement of existing licensing rules. Users who try to publish from Power BI Desktop or other clients tools without a Pro license see the error "Only users with Power BI Pro licenses can publish to this workspace."
+> Publishing reports to new workspace experience has stricter enforcement of existing licensing rules. Users who try to publish from Power BI Desktop or other client tools without a Pro license see the error "Only users with Power BI Pro licenses can publish to this workspace."
 
-## How are the new workspaces different from current workspaces?
+## How the new workspaces are different
 
-With the new workspaces, we're redesigning some features. Here are the changes you can expect to be permanent. 
+With the new workspaces, we've redesigned some features. Here are the changes you can expect to be permanent. 
 
-* Creating these workspaces won't create Office 365 groups like classic workspaces do. However, you can now use an Office 365 group to give users access to your workspace by assigning it a role. 
+* Creating these workspaces doesn't create Office 365 groups like classic workspaces do. However, you can now use an Office 365 group to give users access to your workspace by assigning it a role. 
 * In classic workspaces, you can add only individuals to the members and admin lists. In the new workspaces, you can add multiple AD security groups, distribution lists, or Office 365 groups to these lists to allow for easier user management. 
 - You can create an organizational content pack from a classic workspace. You can't create one from the new workspaces.
 - You can consume an organizational content pack from a classic workspace. You can’t consume one from the new workspaces.

@@ -7,7 +7,7 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/09/2019
+ms.date: 08/12/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -58,6 +58,7 @@ The specific features and experiences built on shared dataset capabilities are l
 ## Considerations and limitations
 
 - Building a report on top of a dataset in a different workspace requires the new workspace experience at both ends: The report needs to be in a new workspace experience and the dataset needs to be in a new workspace experience.
+- Say you create a report in Workspace A that's based on a dataset in Workspace B. When you create an app for Workspace A, you can include that report in the Workspace A app only if you are also a member of Workspace B.
 - In a classic workspace, the dataset discovery experience only shows the datasets in that workspace.
 - If you want to add a report based on a shared dataset to an app, you have to be a member of the dataset workspace. This is a known issue.
 - “Publish to web” doesn’t work for a report based on a shared dataset. This is by design.

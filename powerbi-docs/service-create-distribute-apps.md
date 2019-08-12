@@ -7,14 +7,14 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/07/2019
+ms.date: 08/12/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Publish an app in Power BI
 
-In Power BI, you can create official packaged content, then distribute it to a broad audience as an *app*. You create apps in *app workspaces*, where you can collaborate on Power BI content with your colleagues. Then you can publish the finished apps to large groups of people in your organization. 
+In Power BI, you can create official packaged content, then distribute it to a broad audience as an *app*. You create apps in *workspaces*, where you can collaborate on Power BI content with your colleagues. Then you can publish the finished apps to large groups of people in your organization. 
 
 ![Power BI apps](media/service-create-distribute-apps/power-bi-new-apps.png)
 
@@ -32,7 +32,7 @@ You can create the app with its own built-in navigation, so your users can easil
 To create or update an app, you need a Power BI Pro license. For app *consumers*, there are two options.
 
 * Option 1: All business users need **Power BI Pro** licenses to view your app. 
-* Option 2: If your app workspace resides in a Power BI Premium capacity, free users in your organization can view app content. Read [What is Power BI Premium?](service-premium.md) for details.
+* Option 2: If your workspace resides in a Power BI Premium capacity, free users in your organization can view app content. Read [What is Power BI Premium?](service-premium.md) for details.
 
 ## Publish your app
 When the dashboards and reports in your workspace are ready, you choose which dashboards and reports you want to publish, then you publish them as an app. 
@@ -80,20 +80,20 @@ When the dashboards and reports in your workspace are ready, you choose which da
 You can send that direct link to the people you’ve shared it with, or they can find your app on the Apps tab by going to **Download and explore more apps from AppSource**. Read more about the [app experience for business users](consumer/end-user-apps.md).
 
 ## Change your published app
-After you publish your app, you may want to change or update it. It’s easy to update it if you’re an admin or member in the new app workspace. 
+After you publish your app, you may want to change or update it. It’s easy to update it if you’re an admin or member in the new workspace. 
 
-1. Open the app workspace that corresponds to the app. 
+1. Open the workspace that corresponds to the app. 
    
      ![Open workspace](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
 
 2. Make any changes you want to the dashboards or reports.
  
-     The app workspace is your staging area, so your changes aren't live in the app until you publish again. This lets you make changes without affecting the published apps.  
+     The workspace is your staging area, so your changes aren't live in the app until you publish again. This lets you make changes without affecting the published apps.  
  
     > [!IMPORTANT]
     > If you remove a report and update the app, even if you add the report back to the app, your app consumers lose all customizations such as bookmarks, comments, etc.  
  
-3. Go back to the app workspace list of contents and select **Update app** in the upper-right corner.
+3. Go back to the workspace list of contents and select **Update app** in the upper-right corner.
    
 1. Update **Setup**, **Navigation**, and **Permissions**, if you need to, then select **Update app**.
    
@@ -156,33 +156,33 @@ Here are things to keep in mind when pushing apps to end users:
 
 * Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 
-## Allow users to connect to the app's underlying datasets
+## Allow users to connect to the app's datasets
 
-When you check the option to allow users to connect to the app's underlying datasets, app users receive the Build permission on the underlying dataset. With this permission, they can do several key actions:
+When you check the option to allow users to connect to the app's underlying datasets, you're giving app users Build permission on the underlying dataset. With this permission, they can do several key actions:
 
 - [Use the app datasets across workspaces](service-datasets-across-workspaces.md).
-- Search for these datasets in Power BI Desktop and the service get-data experience.
-- Create reports and dashboards using these datasets. 
+- Search for these datasets in Power BI Desktop and in the get-data experience in the Power BI service.
+- Create reports and dashboards based on these datasets.
 
-When you uncheck this option, new users you add to the app are no longer given the Build permission. However, existing permissions on the underlying datasets don't change. You can use the provided user interface to remove the Build permission manually from app users who should no longer have it. Read more about the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+When you clear this option, new users you add to the app don't get the Build permission. However, permissions on the underlying datasets for existing app users don't change. You can remove the Build permission manually from app users who should no longer have it. Read more about the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 
-## Allow users to make a copy of the reports in the app
+## Allow users to copy reports in the app
 
-When you check the option to **Allow users to make a copy of the reports in this app**, your users can save any of the reports in the app to their My Workspace. To make a copy, users need a Pro license, even if the original report is in a workspace in a Premium capacity. They can then customize the reports to their unique needs. This option requires you to enable **Allow all users to connect to the app's underlying datasets using the Build permission**. This capability behaves like the new [copy reports from other workspaces](service-datasets-copy-reports.md) capability.
+When you check the option to **Allow users to make a copy of the reports in this app**, your users can save any of the reports in the app to their My Workspace or another workspace. To make a copy, users need a Pro license, even if the original report is in a workspace in a Premium capacity. They can then customize the reports to their unique needs. This option requires you to enable **Allow all users to connect to the app's underlying datasets using the Build permission**. By selecting these options, you're enabling the new [copy reports from other workspaces](service-datasets-copy-reports.md) capability.
 
 ## Unpublish an app
-Any member of an app workspace can unpublish the app.
+Any member of a workspace can unpublish the app.
 
 >[!IMPORTANT]
 >When you unpublish an app, app users lose their customizations. They lose any personal bookmarks, comments, or subscriptions associated with content in the app. Only unpublish an app if you need to remove it.
 > 
 > 
 
-* In an app workspace, select the ellipsis (**...**) in the upper-right corner > **Unpublish app**.
+* In a workspace, select the ellipsis (**...**) in the upper-right corner > **Unpublish app**.
   
      ![Unpublish app](media/service-create-distribute-apps/power-bi-app-unpublish.png)
 
-This action uninstalls the app for everyone you've published it to, and they no longer have access to it. It doesn't delete the app workspace or its contents.
+This action uninstalls the app for everyone you've published it to, and they no longer have access to it. It doesn't delete the workspace or its contents.
 
 ## View your published app
 
@@ -191,7 +191,7 @@ When your app consumers open your app, they see the navigation you created, inst
 ![App with navigation](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
 ## Next steps
-* [Create an app workspace](service-create-workspaces.md)
+* [Create a workspace](service-create-workspaces.md)
 * [Install and use apps in Power BI](consumer/end-user-apps.md)
 * [Power BI apps for external services](service-connect-to-services.md)
 * [Power BI Admin Portal](https://docs.microsoft.com/power-bi/service-admin-portal)
