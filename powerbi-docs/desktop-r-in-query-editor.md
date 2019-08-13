@@ -26,12 +26,21 @@ LocalizationGroup: Connect to data
 
 ## Install R
 
- You can download  **R** for free from the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
+You can download  **R** for free from the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
 
-> [!NOTE]
-> You need to have the **mice** library installed in your R environment for the sample script code to work properly. To install **mice**, launch the R.exe program (for example, C:\Program Files\Microsoft\R Open\R-3.5.3\bin\R,exe), then run this at the command line:
->
->`&gt;  install.packages('mice')`
+### Install mice
+
+You need to have the [**mice** library](https://www.rdocumentation.org/packages/mice/versions/3.5.0/topics/mice) installed in your R environment. Without **mice**, the sample script code won't work properly. The **mice** package implements a method to deal with missing data.
+
+To install **mice**:
+
+1. Launch the R.exe program (for example, C:\Program Files\Microsoft\R Open\R-3.5.3\bin\R.exe)  
+
+2. Run the install command:
+
+   ``` 
+   >  install.packages('mice') 
+   ```
 
 ## Use R in Query Editor
 
@@ -39,7 +48,7 @@ To demonstrate using **R** in **Query Editor**, we'll use an example stock marke
 
 1. [Download the **EuStockMarkets_NA.csv** file](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Remember where you save it.
 
-1. Load the file into **Power BI Desktop**: select **Get Data > Text/CSV** from the **Home** ribbon in **Power BI Desktop**.
+1. Load the file into **Power BI Desktop**: from the **Home** ribbon, select **Get Data > Text/CSV**.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_1.png)
 
@@ -51,15 +60,17 @@ To demonstrate using **R** in **Query Editor**, we'll use an example stock marke
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_3.png)
 
-1. Open **Query Editor**: select **Edit Queries** from the **Home** tab in **Power BI Desktop**.
+1. To open **Query Editor**, from the **Home** ribbon select **Edit Queries**.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_4.png)
 
-1. In the **Transform** tab, select **Run R Script**. The **Run R Script** editor appears as shown in the next step. Notice that rows 15 and 20 have missing data, as do other rows you can't see in the following image. The steps below show how R completes those rows for you.
+1. In the **Transform** ribbon, select **Run R Script**. The **Run R Script** editor appears.  
+
+   Rows 15 and 20 have missing data, as do other rows you can't see in the image. The steps below show how R completes those rows for you.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_5d.png)
 
- 1. For this example, enter the following script code. Be sure to replace '&lt;Your File Path&gt;' with the path to **EuStockMarkets_NA.csv** on your local file system, for example, C:/Users/John Doe/Documents/Microsoft/EuStockMarkets_NA.csv
+1. For this example, enter the following script code. Be sure to replace '&lt;Your File Path&gt;' with the path to **EuStockMarkets_NA.csv** on your local file system, for example, C:/Users/John Doe/Documents/Microsoft/EuStockMarkets_NA.csv
 
     ```r
        dataset <- read.csv(file="<Your File Path>/EuStockMarkets_NA.csv", header=TRUE, sep=",")
