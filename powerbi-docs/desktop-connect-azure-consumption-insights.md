@@ -31,7 +31,7 @@ Azure Consumption Insights allows you to connect to Azure Enterprise Agreement b
 
 In this section, you learn how to get the data you need migrate using the Azure Enterprise Connector. You'll also find a *usage details columns* mapping available in the **ACI** (Azure Consumption Insights) API.
 
-To successfully use the **Azure Consumption Insights** connector, you need access to the Azure Portal Enterprise features.
+To successfully use the **Azure Consumption Insights** connector, you need access to the Azure portal Enterprise features.
 
 To use the **Azure Consumption Insights** connector in **Power BI Desktop**: 
 
@@ -94,7 +94,7 @@ Once the data you selected is loaded, the tables and fields you selected can be 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_06.png)
 
 ## Using Azure Consumption Insights
-To use the **Azure Consumption Insights** connector, you access to the Azure Portal Enterprise features.
+To use the **Azure Consumption Insights** connector, you access to the Azure portal Enterprise features.
 
 Once you successfully load data using the **Azure Consumption Insights** connector, you can create your own custom measures and columns using **Query Editor**. You can also create visuals, reports, and dashboards for sharing in the **Power BI service**.
 
@@ -127,7 +127,7 @@ When working with reports and creating queries, you can:
 
 ## Migrate from the Azure Enterprise Connector
 
-Some customers created visuals using the *Azure Enterprise Connector (Beta)*. Eventually, this will be discontinued and replaced with the **Azure Consumption Insights** connector. The new connector has features and enhancements that include:
+Some customers created visuals using the *Azure Enterprise Connector (Beta)*. Eventually, it will be replaced with the **Azure Consumption Insights** connector. The new connector has features and enhancements that include:
 
 * Additional data sources available for *Balance Summary* and *Marketplace Purchases*
 * New and advanced parameters, such as *startBillingDataWindow* and *endBillingDataWindow*
@@ -139,7 +139,7 @@ The next steps show how to transition to the **Azure Consumption Insights** conn
 The first step is use the **Azure Consumption Insights** connector described in detail earlier in this article. In this step, select **Get Data > Blank Query** from the **Home** ribbon in **Power BI Desktop**.
 
 ### Step 2: Create a query in Advanced Editor
-In **Query Editor**, select **Advanced Editor** from the **Query** section of the **Home** ribbon. In the **Advanced Editor** window that appears, enter this query:
+In **Query Editor**, select **Advanced Editor** from the **Home** ribbon's **Query** section. In the **Advanced Editor** window that appears, enter this query:
 
     let    
         enrollmentNumber = "100",
@@ -155,7 +155,7 @@ You'll need to replace the *enrollmentNumber* value with your enrollment number.
 Once you select **Done** in the **Advanced Editor** window, the preview refreshes and data from the specified month range appears in the table. Select **Close & Apply** and return.
 
 ### Step 3: Move measures and custom columns to the new report
-Next you'll need to move any custom columns or measures you created into the new details table. Here are the steps.
+Next, you'll need to move any custom columns or measures you created into the new details table. Here are the steps.
 
 1. Open Notepad (or another text editor).
 2. Select the measure you want to move, copy the text from the *Formula* field, and place it in Notepad.
@@ -255,14 +255,14 @@ You can get your ID from the [Azure portal](https://portal.azure.com):
 
 1. Navigate to **Cost Management + Billing**
 2. Select your billing account
-3. Select **Bling profiles** in the sidebar.
+3. Select **Billing profiles** in the sidebar.
 4. Select your billing profile
 5. Select **Properties** in the sidebar.
 6. Copy your billing profile ID.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-02.png)
 
-You'll be prompted to sign in with your Azure email and password. Once you authenticate, you'll be shown a **Navigator** window with the 12 available tables:
+You'll be prompted to sign in with your Azure email and password.  Once you authenticate, you'll be shown a **Navigator** window with 12 available tables:
 
 * **Billing events**: Event log of new invoices, credit purchases, and more.
 * **Budgets**: Budget details to view actual costs or usage against existing budget targets.
@@ -317,12 +317,12 @@ in
 
 Besides modifying the `numberOfMonths` to any value between 1 and 36, you can also provide:
 
-* `apiVersion` to customize which version of the API the query will call.
+* `apiVersion` to customize which API version the query calls.
 * `lookbackWindow`, for RI recommendations (single or shared), to modify the window in which to generate recommendations from (valid options: 7, 30, or 60 days)
 
 ## Next steps
 
-You can connect many different types of data to using Power BI Desktop. For more information on data sources, check out the following articles:
+You can connect to many different data source using Power BI Desktop. For more information, see the following articles:
 
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
