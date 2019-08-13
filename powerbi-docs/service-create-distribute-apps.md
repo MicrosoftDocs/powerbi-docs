@@ -158,13 +158,13 @@ Here are things to keep in mind when pushing apps to end users:
 
 ## Allow users to connect to the app's datasets
 
-When you check the option to allow users to connect to the app's underlying datasets, you're giving app users Build permission on the underlying dataset. With this permission, they can do several key actions:
+When you check the option to allow users to connect to the app's underlying datasets, you're giving app users Build permission on those datasets. With this permission, they can do several key actions:
 
-- [Use the app datasets across workspaces](service-datasets-across-workspaces.md).
+- [Use the app datasets](service-datasets-across-workspaces.md) as the basis for their reports, .
 - Search for these datasets in Power BI Desktop and in the get-data experience in the Power BI service.
 - Create reports and dashboards based on these datasets.
 
-When you clear this option, new users you add to the app don't get the Build permission. However, permissions on the underlying datasets for existing app users don't change. You can remove the Build permission manually from app users who should no longer have it. Read more about the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+When you clear this option, new users you add to the app don't get the Build permission. However, for existing app users, permissions on the underlying datasets don't change. You can remove the Build permission manually from app users who should no longer have it. Read more about the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 
 ## Allow users to copy reports in the app
 
