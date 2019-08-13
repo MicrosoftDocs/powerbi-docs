@@ -88,10 +88,10 @@ If you want to view the data source for this sample, it's also available as an [
 ## Review a tile created with Power BI Q&A
 Let’s get more specific.
 
-1. Change the question to *this year sales **by district***. Observe the result: Q&A automatically places the answer in a bar chart and suggests other phrases:
+1. Change the question to _this year sales **by district**_. Observe the result: Q&A automatically places the answer in a bar chart and suggests other phrases:
 
    ![This year's sales by district in Q&A](media/sample-retail-analysis/retail8.png)
-2. Now change the question to *this year sales **by zip and chain***.
+2. Now change the question to _this year sales **by zip and chain**_.
 
    Notice how Power BI answers the question as you type and displays the appropriate chart.
 3. Experiment with more questions and see what kind of results you get.

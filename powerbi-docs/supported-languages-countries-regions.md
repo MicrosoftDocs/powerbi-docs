@@ -69,7 +69,7 @@ The Power BI service (in the browser) is available in the following 44 languages
 * Vietnamese - Tiếng Việt
 
 ### What's translated
-Power BI translates menus, buttons, messages, and other elements of the experience into your language.
+Power BI translates menus, buttons, messages, and other elements of the experience into your language. Report content such as automatically generated titles, filters, and tooltips are translated, but your data isn't automatically translated. Inside reports, the layout of visuals doesn't change if you're using a right-to-left language such as Hebrew.
 
 At this time, a few features are available in English only:
 
@@ -130,12 +130,17 @@ You have two ways of getting Power BI Desktop: You can download it, or install i
    
      The next time you start Power BI Desktop it will use the language you set as the default. 
 
+To override the default and use Power BI Desktop in a language other than your Windows language do the following.
+1. In Power BI Desktop, go to **File** > **Options and settings** > **Options**.
+2. Under **Global Settings**, select **Regional Settings**.
+3. In the **Application Language** box, select a different locale. 
+
+Langauge support in Power BI Desktop is limited to the languages displayed in the Application Language dropdown.
+
 ### Choose a language when you download Power BI Desktop
-The language you choose for Power BI Desktop affects the display format of numbers and dates in reports. 
+If you use the .msi version of the Power BI Desktop installer the language is set at the time you download it. You choose the language on the [Download Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=45331) page. 
 
-* Select a language when you [download Power BI Desktop](https://powerbi.microsoft.com/desktop). 
-
-To change the language in Power BI Desktop, go back to the download page and download it in a different language.
+To change the language in Power BI Desktop when installed this way, go back to the download page and download it in a different language.
 
 ### Choose the locale for importing data into Power BI Desktop
 Whether you download Power BI Desktop or install it from the Windows Store, you can choose a locale for a specific report to be something other than the locale in your version of Power BI Desktop. The locale changes the way data is interpreted when it’s imported from your data source, for example whether "3/4/2017" is interpreted as 3 April or March 4. 
