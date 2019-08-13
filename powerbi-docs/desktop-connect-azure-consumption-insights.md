@@ -29,15 +29,25 @@ Power BI currently supports connecting to Enterprise Agreement and Customer Agre
 
 Azure Consumption Insights allows you to connect to Azure Enterprise Agreement billing accounts.
 
-In this section, you learn how to get the data you need, how to migrate from using the Azure Enterprise Connector, and you'll find a mapping of *usage details columns* available in the **ACI** (Azure Consumption Insights) API.
+In this section, you learn how to get the data you need migrate using the Azure Enterprise Connector. You'll also find a *usage details columns* mapping available in the **ACI** (Azure Consumption Insights) API.
 
-To successfully connect using the **Azure Consumption Insights** connector, you need to have access to the Enterprise features within the Azure portal.
+To successfully use the **Azure Consumption Insights** connector, you need access to the Azure Portal Enterprise features.
 
-To connect using the **Azure Consumption Insights** connector, select **Get Data** from the **Home** ribbon in **Power BI Desktop**. Select **Online Services** from the categories on the left, and you see **Microsoft Azure Consumption Insights (Beta)**. Select **Connect**.
+To use the **Azure Consumption Insights** connector in **Power BI Desktop**: 
+
+1. Select the **Home** ribbon. 
+
+2. Select **Get Data**.  
+
+3. From the categories on the left, select **Online Services**.  
+
+4. Select **Microsoft Azure Consumption Insights (Beta)**. 
+
+5. Select **Connect**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
 
-In the dialog that appears, provide your *Enrollment Number*.
+In the dialog that appears, enter your **Azure Enrollment Number**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
 
@@ -45,7 +55,7 @@ In the dialog that appears, provide your *Enrollment Number*.
 
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
 
-  This version of the connector only supports enterprise enrollments from https://ea.azure.com. China enrollments aren't currently supported.
+  This connector version only supports enterprise enrollments from https://ea.azure.com. China enrollments aren't currently supported.
 
 Next, provide your *Access key* to connect.
 
@@ -55,16 +65,16 @@ Next, provide your *Access key* to connect.
 
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
-Once you provide your *Access key* and select **Connect**, a **Navigator** window appears and shows the nine tables available to you:
-* **Budgets**: Provides budget details to view actual costs or usage against existing budget targets.
-* **MarketPlace**: Provides usage-based Azure Marketplace charges.
-* **PriceSheets**: Provides applicable rates by meter for an enrollment.
-* **RICharges**: Provides charges associated to your Reserved Instances over the last 24 months.
-* **RIRecommendations_Single**: Provides Reserved Instance purchase recommendations based on your single subscription usage trends over the last 7, 30, or 60 days.
-* **RIRecommendations_Shared**: Provides Reserved Instance purchase recommendations based on your usage trends across all your subscriptions over the last 7, 30, or 60 days.
-* **RIUsage**: Provides consumption details for your existing Reserved Instances over the last month.
-* **Summaries**: Provides a monthly summary for balances, new purchases, Azure Marketplace service charges, adjustments, and overage charges.
-* **UsageDetails**: Provides a breakdown of consumed quantities and estimated charges for an enrollment.
+Once you provide your *Access key* and select **Connect**, a **Navigator** window appears and shows nine available tables:
+* **Budgets**: Budget details to view actual costs or usage against existing budget targets.
+* **MarketPlace**: Usage-based Azure Marketplace charges.
+* **PriceSheets**: Applicable rates by meter for an enrollment.
+* **RICharges**: Charges associated to your Reserved Instances over the last 24 months.
+* **RIRecommendations_Single**: Reserved Instance purchase recommendations based on your single subscription usage trends over the last 7, 30, or 60 days.
+* **RIRecommendations_Shared**: Reserved Instance purchase recommendations based on your usage trends across all your subscriptions over the last 7, 30, or 60 days.
+* **RIUsage**: Consumption details for your existing Reserved Instances over the last month.
+* **Summaries**: A monthly summary for balances, new purchases, Azure Marketplace service charges, adjustments, and overage charges.
+* **UsageDetails**: A consumed quantities breakdown and estimated enrollment charges.
 
 You can select a checkbox beside any table to see a preview. You can select one or more tables by checking the box beside their name, then select **Load**.
 
@@ -84,11 +94,21 @@ Once the data you selected is loaded, the tables and fields you selected can be 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_06.png)
 
 ## Using Azure Consumption Insights
-To use the **Azure Consumption Insights** connector, you need to have access to the Enterprise features within the Azure portal.
+To use the **Azure Consumption Insights** connector, you access to the Azure Portal Enterprise features.
 
 Once you successfully load data using the **Azure Consumption Insights** connector, you can create your own custom measures and columns using **Query Editor**. You can also create visuals, reports, and dashboards for sharing in the **Power BI service**.
 
-With a blank query, you can retrieve a sample custom queries collection included with Azure. In **Power BI Desktop's Home** ribbon, select **Get Data** > **Blank Query**. To do this retrieval in **Query Editor**, right-click in the left **Queries** pane and select **New Query > Blank Query** from the menu that appears.
+With a blank query, you can retrieve a sample Azure custom queries collection. There are two ways you can do this retrieval: 
+
+In **Power BI Desktop**: 
+
+1. Select the **Home** ribbon 
+2. Select **Get Data** > **Blank Query** 
+
+Or, in **Query Editor**: 
+
+1. Right-click in the left **Queries** pane 
+2. Select **New Query > Blank Query** from the menu that appears
 
 In the **Formula bar**, type:
 
@@ -105,19 +125,20 @@ When working with reports and creating queries, you can:
 * To define a period of months in a historical time window, use *startBillingDataWindow* and *endBillingDataWindow*
 * Don't use *numberOfMonth* together with *startBillingDataWindow* or *endBillingDataWindow*
 
-## Migrating from the Azure Enterprise Connector
-Some customers created visuals using the *Azure Enterprise Connector (Beta)*, which will eventually be discontinued, and is being replaced by the **Azure Consumption Insights** connector. The **Azure Consumption Insights** connector has features and enhancements that include:
+## Migrate from the Azure Enterprise Connector
+
+Some customers created visuals using the *Azure Enterprise Connector (Beta)*. Eventually, this will be discontinued and replaced with the **Azure Consumption Insights** connector. The new connector has features and enhancements that include:
 
 * Additional data sources available for *Balance Summary* and *Marketplace Purchases*
 * New and advanced parameters, such as *startBillingDataWindow* and *endBillingDataWindow*
 * Better performance and responsiveness
 
-The next steps show how to transition to the **Azure Consumption Insights** connector. These steps preserve the work already done in creating custom dashboards or reports.
+The next steps show how to transition to the **Azure Consumption Insights** connector. These steps preserve the work you've already done in creating custom dashboards or reports.
 
 ### Step 1: Connect to Azure using the new connector
-The first step is to connect using the **Azure Consumption Insights** connector, which was described earlier in this article in detail. In this step, select **Get Data > Blank Query** from the **Home** ribbon in **Power BI Desktop**.
+The first step is use the **Azure Consumption Insights** connector described in detail earlier in this article. In this step, select **Get Data > Blank Query** from the **Home** ribbon in **Power BI Desktop**.
 
-### Step 2: Use the Advanced Editor to create a query
+### Step 2: Create a query in Advanced Editor
 In **Query Editor**, select **Advanced Editor** from the **Query** section of the **Home** ribbon. In the **Advanced Editor** window that appears, enter this query:
 
     let    
@@ -129,9 +150,9 @@ In **Query Editor**, select **Advanced Editor** from the **Query** section of th
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_10.png)
 
-You'll need to replace the value of *enrollmentNumber* with your own enrollment number, which you can get from the [Azure Enterprise Portal](https://ea.azure.com). The *numberOfMonth* parameter is how many months of data you want going back, from the current data. Use zero (0) for the current month.
+You'll need to replace the *enrollmentNumber* value with your enrollment number. You can get your number from the [Azure Enterprise Portal](https://ea.azure.com). The *numberOfMonth* parameter is how many months of data you want going back, from the current dat. Use zero (0) for the current month.
 
-Once you select **Done** in the **Advanced Editor** window, the preview refreshes and you'll see data from the specified month range in the table. Select **Close & Apply** and return.
+Once you select **Done** in the **Advanced Editor** window, the preview refreshes and data from the specified month range appears in the table. Select **Close & Apply** and return.
 
 ### Step 3: Move measures and custom columns to the new report
 Next you'll need to move any custom columns or measures you created into the new details table. Here are the steps.
@@ -151,13 +172,13 @@ Many dashboards have additional tables that are used for lookup or filtering, su
     ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
 ### Step 5: Verify your visuals, and adjust field formatting as needed
-At this point, most of your original visuals, tables, and drill-downs should be working as expected. Some minor tweaks may be necessary, however, to precisely format the look and feel. Take a bit of time to look over each of your dashboards and visuals, to ensure they look how you want them.
+At this point, most of your original visuals, tables, and drill-downs should be working as expected. Some minor tweaks may be necessary, however, to precisely format the look and feel. Take a bit of time to look over each of your dashboards and visuals to ensure they look how you want them.
 
 ## Using the Azure Consumption and Insights (ACI) API to get consumption data
 Azure also provides the [**Azure Consumption and Insights (ACI) API**](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). You can create your own custom solutions to gathering, reporting, and visualizing Azure consumption information using the ACI API.
 
 ### Mapping names and usage details between the portal, the connector, and the API
-The Azure portal columns and details names are similar in the API and the connector, though not always identical. To help clarify, the following table provides a mapping between the API, the connector, and columns you see in the Azure portal. Also indicated is whether the column is obsolete. For more information and definitions of these terms, take a look at the [Azure billing data dictionary](https://docs.microsoft.com/azure/billing/billing-enterprise-api-usage-detail).
+The Azure portal columns and details names are similar in the API and the connector, though not always identical. To help clarify, the following table provides a mapping. Also indicated is whether the column is obsolete. For more information, and term definitions, see the [Azure billing data dictionary](https://docs.microsoft.com/azure/billing/billing-enterprise-api-usage-detail).
 
 | ACI Connector / ContentPack ColumnName | ACI API Column Name | EA Column Name | Obsolete / Present for backward compatibility |
 | --- | --- | --- | --- |
@@ -216,34 +237,47 @@ In this section, you'll learn how to connect to your Customer Agreement billing 
 >
 >
 
-To connect using the **Azure Cost Management** connector, select **Get Data** from the **Home** ribbon in **Power BI Desktop**.  Select **Azure** from the categories on the left, and you see **Azure Cost Management (Beta)**. Select **Connect**.
+To use the **Azure Cost Management** connector in **Power BI Desktop**:
+
+1. Select the **Home** ribbon
+2. Select **Get Data**
+3. From the categories on the left, select **Azure**
+4. Select **Azure Cost Management (Beta)** on the right
+5. Select **Connect**
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
 
-In the dialog that appears, input your *billing profile ID*.
+In the dialog that appears, enter your **Billing profile ID**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-01.png)
 
-You can get your billing profile ID from the [Azure portal](https://portal.azure.com).  Navigate to **Cost Management + Billing**, select your billing account, and then select **Biling profiles** in the sidebar.  Select your billing profile and select **Properties** in the sidebar.  Copy your billing profile ID.
+You can get your ID from the [Azure portal](https://portal.azure.com):
+
+1. Navigate to **Cost Management + Billing**
+2. Select your billing account
+3. Select **Bling profiles** in the sidebar.
+4. Select your billing profile
+5. Select **Properties** in the sidebar.
+6. Copy your billing profile ID.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-02.png)
 
-You'll be prompted to sign in with your Azure email and password.  Once you authenticate, you'll be shown a **Navigator** window with the 12 tables available to you:
+You'll be prompted to sign in with your Azure email and password. Once you authenticate, you'll be shown a **Navigator** window with the 12 available tables:
 
-* **Billing events**: Provides event log of new invoices, credit purchases, and more.
-* **Budgets**: Provides budget details to view actual costs or usage against existing budget targets.
-* **Charges**: Provides a month-level summary of Azure usage, market place charges, and charges billed separately.
-* **Credit lots**: Provides Azure credit lot purchase details for the provided billing profile.
-* **Credit summary**: Provides credit summary for provided billing profile.
-* **Marketplace**: Provides usage-based Azure Marketplace charges.
-* **Pricesheets**: Provides applicable rates by meter for the provided billing profile.
-* **RI charges**: Provides charges associated to your Reserved Instances over the last 24 months.
-* **RI recommendations (single)**: Provides Reserved Instance purchase recommendations based on your single subscription usage trends over the last 7, 30 or 60 days.
-* **RI recommendations (shared)**: Provides Reserved Instance purchase recommendations based on your usage trends across all your subscriptions over the last 7, 30 or 60 days.
-* **RI usage**: Provides consumption details for your existing Reserved Instances over the last month.
-* **Usage details**: Provides a breakdown of consumed quantities and estimated charges for the given billing profile ID.
+* **Billing events**: Event log of new invoices, credit purchases, and more.
+* **Budgets**: Budget details to view actual costs or usage against existing budget targets.
+* **Charges**: A month-level summary of Azure usage, market place charges, and charges billed separately.
+* **Credit lots**: Azure credit lot purchase details for the provided billing profile.
+* **Credit summary**: Credit summary for provided billing profile.
+* **Marketplace**: Usage-based Azure Marketplace charges.
+* **Pricesheets**: Applicable meter rates for the provided billing profile.
+* **RI charges**: Charges associated to your Reserved Instances over the last 24 months.
+* **RI recommendations (single)**: Reserved Instance purchase recommendations based on your single subscription usage trends for the last 7, 30 or 60 days.
+* **RI recommendations (shared)**: Reserved Instance purchase recommendations based on all your subscription usage trends for the last 7, 30 or 60 days.
+* **RI usage**: Consumption details for your existing Reserved Instances over the last month.
+* **Usage details**: A breakdown of consumed quantities and estimated charges for the given billing profile ID.
 
-You can select a checkbox next to any table to see a preview.  You can select one or more tables by checking the box beside their name and selecting **Load**.
+You can select a table checkbox to see a preview.  You can select one or more tables by checking the box beside their name and selecting **Load**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-03.png)
 
@@ -255,13 +289,21 @@ Once the data you selected is loaded, the tables and fields you selected can be 
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-05.png)
 
-Watch the [How to analyze spending in Power BI with Azure Consumption Insights](https://www.youtube.com/watch?v=QKBMXXrlpEk). This video explains reviewing your cost data in Power BI desktop using the Azure Consumption Insights connector.
+Watch [How to analyze spending in Power BI with Azure Consumption Insights](https://www.youtube.com/watch?v=QKBMXXrlpEk). This video explains reviewing your cost data in Power BI desktop using the Azure Consumption Insights connector.
 
 ## Writing custom queries
 
-You can create a custom M query customize the number of months, change the api version, or do more advanced logic on the returned data, you can create a custom M query.
+You can create a custom [M query](/powerquery-m/power-query-m-reference) to customize the number of months, change the API version, or do more advanced logic on the returned data.
 
-On the **Power BI Desktop's** **Home** ribbon, select the **Get Data** dropdown and then select **Blank Query**.  To do the same thing in **Query Editor**, right-click in the left **Queries** pane. Then, select **New Query > Blank Menu** from the menu that appears.
+In **Power BI Desktop**:
+
+1. Select the **Home** ribbon
+2. Select **Get Data** > **Blank Query**
+
+Or, in **Query Editor**:
+
+1. Right-click in the left **Queries** pane
+2. Select **New Query > Blank Menu** from the menu that appears
 
 In the **Formula bar**, type the following, replacing `billingProfileId` with your actual ID, and "charges" with any valid table name (list above).
 
@@ -278,10 +320,9 @@ Besides modifying the `numberOfMonths` to any value between 1 and 36, you can al
 * `apiVersion` to customize which version of the API the query will call.
 * `lookbackWindow`, for RI recommendations (single or shared), to modify the window in which to generate recommendations from (valid options: 7, 30, or 60 days)
 
-
 ## Next steps
 
-There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
+You can connect many different types of data to using Power BI Desktop. For more information on data sources, check out the following articles:
 
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
