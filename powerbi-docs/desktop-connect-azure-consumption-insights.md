@@ -42,23 +42,23 @@ To use the **Azure Consumption Insights** connector in **Power BI Desktop**:
 
 1. Select **Connect**.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
+   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
 
-In the dialog that appears, enter your **Azure Enrollment Number**.
+   In the dialog that appears, enter your **Azure Enrollment Number**.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
+   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
 
-* You can get your enrollment number from the [Azure Enterprise Portal](https://ea.azure.com), in the location shown in the following image:
+   * You can get your enrollment number from the [Azure Enterprise Portal](https://ea.azure.com), in the location shown in the following image:
 
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
 
-  This connector version only supports enterprise enrollments from https://ea.azure.com. China enrollments aren't currently supported.
+   This connector version only supports enterprise enrollments from https://ea.azure.com. China enrollments aren't currently supported.
 
-Next, provide your *Access key* to connect.
+   Next, provide your *Access key* to connect.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
+   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
 
-* Your Access key for enrollment can be found on the [Azure Enterprise Portal](https://ea.azure.com).
+   * Your Access key for enrollment can be found on the [Azure Enterprise Portal](https://ea.azure.com).
 
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
@@ -248,24 +248,29 @@ To use the **Azure Cost Management** connector in **Power BI Desktop**:
 1. Select **Connect**.
 
 
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
+   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
 
-In the dialog that appears, enter your **Billing profile ID**.
+   In the dialog that appears, enter your **Billing profile ID**.
 
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-01.png)
+   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-01.png)
 
 You can get your ID from the [Azure portal](https://portal.azure.com):
 
-1. Navigate to **Cost Management + Billing**
-2. Select your billing account
-3. Select **Billing profiles** in the sidebar.
-4. Select your billing profile
-5. Select **Properties** in the sidebar.
-6. Copy your billing profile ID.
+1. Navigate to **Cost Management + Billing**.
 
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-02.png)
+1. Select your billing account.
 
-You'll be prompted to sign in with your Azure email and password.  Once you authenticate, you'll be shown a **Navigator** window with 12 available tables:
+1. Select **Billing profiles** in the sidebar.
+
+1. Select your billing profile.
+
+1. Select **Properties** in the sidebar.
+
+1. Copy your billing profile ID.
+
+   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-02.png)
+
+   You'll be prompted to sign in with your Azure email and password.  Once you authenticate, you'll be shown a **Navigator** window with 12 available tables:
 
 | Table        | Description |
 |-------------------- | -------------------------------------------------------------|
@@ -323,7 +328,7 @@ in
 Besides modifying the `numberOfMonths` to any value between 1 and 36, you can also provide:
 
 * `apiVersion` to customize which API version the query calls.
-* `lookbackWindow`, for RI recommendations (single or shared), to modify the window in which to generate recommendations from (valid options: 7, 30, or 60 days)
+* `lookbackWindow`, for RI recommendations (single or shared), to modify the window in which to generate recommendations from (valid options: 7, 30, or 60 days).
 
 ## Next steps
 
