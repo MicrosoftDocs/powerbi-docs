@@ -47,7 +47,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
    
     > [!NOTE]
     > Some datasets can't generate insights because the data isn't statistically significant.  To learn more, see [Optimize your data for insights](service-insights-optimize.md).
-   > 
+    > 
     
 4. The visualizations display in a special **Quick Insights** canvas with up to 32 separate insight cards. Each card has a chart or graph plus a short description.
    
@@ -66,7 +66,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
    
    * Filter the visualizations. If the **Filters** pane isn't already open, expand it by select the arrow on the right side of the window.
 
-        ![Insight Filters menu expanded](media/service-insights/power-bi-insights-filter-new.png)
+       ![Insight Filters menu expanded](media/service-insights/power-bi-insights-filter-new.png)
    * Pin the insight card to a dashboard by selecting **Pin visual**.
    * Run insights on the card itself, which is often referred to as *scoped insights*. In the top-right corner, select the lightbulb icon ![Get insights icon](media/service-insights/power-bi-bulb-icon.png) or **Get Insights**.
      
@@ -74,18 +74,18 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
      
      The insight displays on the left and new cards, based solely on the data in that single insight, display along the right.
      
-       ![insights on insights](media/service-insights/power-bi-insights-on-insights-new.png)
+       ![Insights on insights](media/service-insights/power-bi-insights-on-insights-new.png)
 4. To return to the original insights canvas, in the top-left corner, select **Exit Focus mode**.
 
 ## Run insights on a dashboard tile
-Instead of searching for insights against an entire dataset, narrow your search to do a scoped insight on the the data that's used to create a single dashboard tile. 
+Instead of searching for insights against an entire dataset, narrow your search to do a scoped insight on the data that's used to create a single dashboard tile. 
 
 1. Open a dashboard.
 2. Hover over a tile. select the ellipsis (...), and then choose **View insights**. The tile opens in [Focus mode](service-focus-mode.md) with the insights cards displayed along the right.    
    
     ![Focus mode](media/service-insights/pbi-insights-tile.png)    
-4. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.    
-6. Continue digging into your data, and when you find an interesting insight, pin it to your dashboard by selecting **Pin visual** from the top-right corner.
+3. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.    
+4. Continue digging into your data, and when you find an interesting insight, pin it to your dashboard by selecting **Pin visual** from the top-right corner.
 
 ## Next steps
 - If you own a dataset, [optimize it for Quick Insights](service-insights-optimize.md).
