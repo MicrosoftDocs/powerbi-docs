@@ -34,9 +34,9 @@ In lists and menus, you'll find an icon next to a report name, which helps you u
 
 There are two icons for reports in the Power BI mobile apps:
 
-* ![Report icon](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) indicates a report that will be presented in landscape orientation in the app and will look the same as it looks in the browser.
+* ![Report icon](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) indicates a report that will appear in landscape orientation in the app. It will look the same as it looks in a browser.
 
-* ![Phone report icon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) indicates a report that has at least one phone-optimized report page that will be presented in portrait orientation.
+* ![Phone report icon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) indicates a report that has at least one phone-optimized page that will appear in portrait orientation.
 
 > [!NOTE]
 > When you hold your phone in a landscape orientation, you'll always get the landscape layout, even if the report page is in phone layout.
@@ -51,7 +51,7 @@ To get to a report from a dashboard, tap the ellipsis (...) in the upper-right c
 After you have a report open in the app, you can start working with it. You can do many things with your report and its data. In the report footer, you'll find actions that you can take on the report. By tapping and long tapping on the data shown in the report, you can also slice and dice the data.
 
 ### Using tap and long tap
-A tap is the same as a mouse click. So if you want to cross-highlight the report based on a data point, tap that data point.
+A tap is the same as a mouse click. So, if you want to cross-highlight the report based on a data point, tap that data point.
 When you tap a slicer value, the value is selected and the rest of the report is sliced by that value.
 When you tap a link, button, or bookmark, the action defined by the report author will occur.
 
@@ -65,7 +65,7 @@ When you long tap (tap and hold) a data point, a tooltip that shows the values t
 
 ![Tooltip](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
 
-If the report author configured a report page tooltip, the default tooltip will be replaced with report page tooltip:
+If the report author configured a report page tooltip, the default tooltip is replaced with the report page tooltip:
 
 ![Report page tooltip](./media/mobile-reports-in-the-mobile-apps/report-page-tooltip.png)
 
@@ -86,14 +86,14 @@ For more information, read about how to [add drillthrough in Power BI Desktop](.
    
    
 ### Using the actions in the report footer
-From the report footer, you can perform several actions on the current report page or on the entire report. The footer provides quick access to the most commonly used actions. You can access other actions by tapping the ellipsis (...) botton:
+From the report footer, you can perform several actions on the current report page or on the entire report. The footer provides quick access to the most commonly used actions. You can access other actions by tapping the ellipsis (...) button:
 
 ![Report footer](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
 You can perform from these actions from the footer:
 - Reset the report filter and cross-highlight selections back to their original state.
 - Open the conversation pane to view comments or to add comments to the report.
-- Open the filter pane to view or modify the filter currently applied on the report.
+- Open the filter pane to view or modify the filter currently applied to the report.
 - List all pages in the report. Tapping a page name will load and present that page.
 You can move between report pages by swiping from the edge of your screen to the center.
 - View all report actions.
