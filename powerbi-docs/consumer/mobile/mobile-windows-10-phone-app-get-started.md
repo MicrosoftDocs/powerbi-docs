@@ -13,7 +13,7 @@ ms.author: mshenhav
 
 ---
 # Get started with the Power BI mobile app for Windows 10
-The Power BI mobile app for Windows 10 brings Power BI to your tablet or phone. You get up-to-date, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere &#151; right on your [Windows Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
+The Power BI mobile app for Windows 10 brings Power BI to your tablet or phone. You get up-to-date, touch-enabled mobile access to your business information. View and interact with your company dashboards from anywhere - right on your [Windows Start screen](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
 ![Windows live tile](./media/mobile-windows-10-phone-app-get-started/pbi_win10_livetile.gif)
 
