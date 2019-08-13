@@ -16,14 +16,20 @@ LocalizationGroup: Connect to data
 ---
 # Use R in Query Editor
 
-You can use **R**, a programming language widely used by statisticians, data scientists, and data analysts, in the Power BI Desktop **Query Editor**. This integration of R into **Query Editor** lets you perform data cleansing using R, and perform advanced data shaping and analytics in datasets, including completion of missing data, predictions, and clustering, just to name a few. **R** is a powerful language, and can be used in **Query Editor** to prepare your data model and create reports.
+[**R**](https://mran.microsoft.com/documents/what-is-r) is a powerful programming language that many statisticians, data scientists, and data analysts use. You can use **R** in Power BI Desktop's **Query Editor** to:
+
+* Prepare data models
+
+* Create reports
+
+* Do data cleansing, advanced data shaping, and dataset analytics, which include missing data completion, predictions, clustering, and more.  
 
 ## Install R
 
-To use **R** in Power BI Desktop's **Query Editor**, you need to install **R** on your local machine. You can download and install **R** for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
+ You can download  **R** for free from the [Revolution Open download page](https://mran.revolutionanalytics.com/download/) and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
 
 > [!NOTE]
-> You need to have the **mice** library installed in your R environment for the sample script code to work properly. To install mice, launch the R.exe program (for example, C:\Program Files\Microsoft\R Open\R-3.5.3\bin\R,exe), then run this at the command line:
+> You need to have the **mice** library installed in your R environment for the sample script code to work properly. To install **mice**, launch the R.exe program (for example, C:\Program Files\Microsoft\R Open\R-3.5.3\bin\R,exe), then run this at the command line:
 >
 >`&gt;  install.packages('mice')`
 
@@ -33,7 +39,7 @@ To demonstrate using **R** in **Query Editor**, we'll use an example stock marke
 
 1. [Download the **EuStockMarkets_NA.csv** file](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Remember where you save it.
 
-1. Load the file into **Power BI Desktop**. Select **Get Data > Text/CSV** from the **Home** ribbon in **Power BI Desktop**.
+1. Load the file into **Power BI Desktop**: select **Get Data > Text/CSV** from the **Home** ribbon in **Power BI Desktop**.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_1.png)
 
@@ -67,7 +73,7 @@ To demonstrate using **R** in **Query Editor**, we'll use an example stock marke
 7. After selecting **OK**, **Query Editor** displays a warning about data privacy.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_6.png)
-8. For the R scripts to work properly in the Power BI service, all data sources need to be set to **public**. For more information about privacy settings and their implications, see [Privacy Levels](desktop-privacy-levels.md).
+8. For the R scripts to work properly in the Power BI service, you need to set all data sources **public**. For more information about privacy settings and their implications, see [Privacy Levels](desktop-privacy-levels.md).
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_7.png)
 
@@ -77,7 +83,7 @@ To demonstrate using **R** in **Query Editor**, we'll use an example stock marke
 
 ## Create visuals from R script data
 
-Now we can create a visual to see how the R script code using the *mice* library completed the missing values, as shown in the following image:
+Now we can create a visual to see how the R script code using the **mice** library completed the missing values, as shown in the following image:
 
 ![](media/desktop-r-in-query-editor/r-in-query-editor_8a.png)
 
