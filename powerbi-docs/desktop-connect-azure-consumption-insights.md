@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 08/14/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -17,19 +17,19 @@ LocalizationGroup: Connect to data
 
 # Analyze Azure cost and usage data in Power BI desktop
 
-Power BI desktop can connect to Azure and get in-depth data about your organization's Azure service usage. With it, you can create custom reports and measures to better understand and analyze your Azure spend.
+You can use Power BI desktop to connect to Azure and get in-depth data about your organization's Azure service usage. With this data, you can create custom reports and measures to better understand and analyze your Azure spending.
 
 Power BI currently supports connecting to Enterprise Agreement and Customer Agreement billing accounts.
 
-* **Enterprise Agreement** users should connect with the **Azure Consumption Insights connector**.
+* **Enterprise Agreement** users should connect with the **Azure Consumption Insights connector** (below).
 
-* **Customer Agreement** users should connect with the **Azure Cost Management connector**.
+* **Customer Agreement** users should connect with the [**Azure Cost Management connector**](#Connect-with-Azure-Cost-Management).
 
 ## Connect with Azure Consumption Insights
 
 Azure Consumption Insights allows you to connect to Azure Enterprise Agreement billing accounts.
 
-In this section, you will learn how to get the data you need, how to migrate from using the Azure Enterprise Connector, and you'll find a mapping of *usage details columns* available in the **ACI** (Azure Consumption Insights) API.
+In this section, you learn how to get the data you need, how to migrate from using the Azure Enterprise Connector, and you'll find a mapping of *usage details columns* available in the **ACI** (Azure Consumption Insights) API.
 
 To successfully connect using the **Azure Consumption Insights** connector, you need to have access to the Enterprise features within the Azure portal.
 
