@@ -113,3 +113,12 @@ There are some limitations to queries that include R scripts created in **Query 
 
 There are all sorts of things you can do with R and custom queries, so explore and shape your data just the way you want it to appear.
 
+## Next Steps
+
+* [Introduction to R](https://mran.microsoft.com/documents/what-is-r) 
+
+* [Run R scripts in Power BI Desktop](desktop-r-scripts.md) 
+
+* [Use an external R IDE with Power BI](desktop-r-ide.md) 
+
+* [R packages in the Power BI service](service-r-packages-support.md)
