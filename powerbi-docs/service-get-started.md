@@ -87,7 +87,7 @@ Here's an example of getting data from a CSV file. Want to follow along with thi
 
     ![Reading view option](media/service-get-started/power-bi-editing-view.png)
 
-    While in Editing view, you can create and modify your reports, because you're the *owner* of the report. That is, you're a *creator*. When you share your report with colleagues, they can only interact with the report in Reading view; your collegues are *consumers*. Learn more about [Reading view and Editing view](consumer/end-user-reading-view.md).
+    While in Editing view, you can create and modify your reports, because you're the *owner* of the report. That is, you're a *creator*. When you share your report with colleagues, they can only interact with the report in Reading view; your colleagues are *consumers*. Learn more about [Reading view and Editing view](consumer/end-user-reading-view.md).
     
     A great way to get familiar with the report editor is to [take a tour](service-the-report-editor-take-a-tour.md).
  
