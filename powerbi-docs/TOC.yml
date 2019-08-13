@@ -1424,3 +1424,7 @@
       href: service-admin-governance.md
     - name: "Power BI security"
       href: service-admin-power-bi-security.md
+- name: Guidance
+  items:
+  - name: "What is a star schema"
+    href: guidance/star-schema.md
