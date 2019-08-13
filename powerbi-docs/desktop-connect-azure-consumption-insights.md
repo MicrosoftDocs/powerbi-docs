@@ -11,7 +11,6 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: davidi
-
 LocalizationGroup: Connect to data
 ---
 
@@ -35,15 +34,13 @@ To successfully use the **Azure Consumption Insights** connector, you need acces
 
 To use the **Azure Consumption Insights** connector in **Power BI Desktop**: 
 
-1. Select the **Home** ribbon. 
+1. From the **Home** ribbon, select **Get Data**.
 
-2. Select **Get Data**.  
+1. From the categories on the left, select **Online Services**.  
 
-3. From the categories on the left, select **Online Services**.  
+1. Select **Microsoft Azure Consumption Insights (Beta)**. 
 
-4. Select **Microsoft Azure Consumption Insights (Beta)**. 
-
-5. Select **Connect**.
+1. Select **Connect**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
 
@@ -66,15 +63,18 @@ Next, provide your *Access key* to connect.
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
 Once you provide your *Access key* and select **Connect**, a **Navigator** window appears and shows nine available tables:
-* **Budgets**: Budget details to view actual costs or usage against existing budget targets.
-* **MarketPlace**: Usage-based Azure Marketplace charges.
-* **PriceSheets**: Applicable rates by meter for an enrollment.
-* **RICharges**: Charges associated to your Reserved Instances over the last 24 months.
-* **RIRecommendations_Single**: Reserved Instance purchase recommendations based on your single subscription usage trends over the last 7, 30, or 60 days.
-* **RIRecommendations_Shared**: Reserved Instance purchase recommendations based on your usage trends across all your subscriptions over the last 7, 30, or 60 days.
-* **RIUsage**: Consumption details for your existing Reserved Instances over the last month.
-* **Summaries**: A monthly summary for balances, new purchases, Azure Marketplace service charges, adjustments, and overage charges.
-* **UsageDetails**: A consumed quantities breakdown and estimated enrollment charges.
+
+| Table        | Description |
+|------------- | -------------------------------------------------------------|
+| **Budgets** | Budget details to view actual costs or usage against existing budget targets. |
+| **MarketPlace** | Usage-based Azure Marketplace charges. |
+| **PriceSheets** | Applicable rates by meter for an enrollment. |
+| **RICharges** | Charges associated to your Reserved Instances over the last 24 months. |
+| **RIRecommendations_Single** | Reserved Instance purchase recommendations based on your single subscription usage trends over the last 7, 30, or 60 days. |
+| **RIRecommendations_Shared** | Reserved Instance purchase recommendations based on your usage trends across all your subscriptions over the last 7, 30 or 60 days. |
+| **RIUsage** | Consumption details for your existing Reserved Instances over the last month. |
+| **Summaries** | A monthly summary for balances, new purchases, Azure Marketplace service charges, adjustments, and overage charges. |
+| **UsageDetails** | A consumed quantities breakdown and estimated enrollment charges. |
 
 You can select a checkbox beside any table to see a preview. You can select one or more tables by checking the box beside their name, then select **Load**.
 
@@ -121,7 +121,7 @@ The following image shows a samples collection that appears.
 When working with reports and creating queries, you can:
 
 * To define the number of months starting from the current date, use *numberOfMonth*
-  * Use a value between one and 36 to represent the number of months, from the current date, you want to import. We recommend getting no more than 12 months of data. This limit avoids Power BI query import constraints and data volume thresholds.
+  * Use a value between one and 36. Represent the number of months, from the current date, you want to import. We recommend getting no more than 12 months of data. This limit avoids Power BI query import constraints and data volume thresholds.
 * To define a period of months in a historical time window, use *startBillingDataWindow* and *endBillingDataWindow*
 * Don't use *numberOfMonth* together with *startBillingDataWindow* or *endBillingDataWindow*
 
@@ -239,11 +239,14 @@ In this section, you'll learn how to connect to your Customer Agreement billing 
 
 To use the **Azure Cost Management** connector in **Power BI Desktop**:
 
-1. Select the **Home** ribbon
-2. Select **Get Data**
-3. From the categories on the left, select **Azure**
-4. Select **Azure Cost Management (Beta)** on the right
-5. Select **Connect**
+1. From the **Home** ribbon, select **Get Data**.
+
+1. From the categories on the left, select **Azure**.
+
+1. Select **Azure Cost Management (Beta)** on the right.
+
+1. Select **Connect**.
+
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
 
@@ -264,18 +267,20 @@ You can get your ID from the [Azure portal](https://portal.azure.com):
 
 You'll be prompted to sign in with your Azure email and password.  Once you authenticate, you'll be shown a **Navigator** window with 12 available tables:
 
-* **Billing events**: Event log of new invoices, credit purchases, and more.
-* **Budgets**: Budget details to view actual costs or usage against existing budget targets.
-* **Charges**: A month-level summary of Azure usage, market place charges, and charges billed separately.
-* **Credit lots**: Azure credit lot purchase details for the provided billing profile.
-* **Credit summary**: Credit summary for provided billing profile.
-* **Marketplace**: Usage-based Azure Marketplace charges.
-* **Pricesheets**: Applicable meter rates for the provided billing profile.
-* **RI charges**: Charges associated to your Reserved Instances over the last 24 months.
-* **RI recommendations (single)**: Reserved Instance purchase recommendations based on your single subscription usage trends for the last 7, 30 or 60 days.
-* **RI recommendations (shared)**: Reserved Instance purchase recommendations based on all your subscription usage trends for the last 7, 30 or 60 days.
-* **RI usage**: Consumption details for your existing Reserved Instances over the last month.
-* **Usage details**: A breakdown of consumed quantities and estimated charges for the given billing profile ID.
+| Table        | Description |
+|-------------------- | -------------------------------------------------------------|
+| **Billing events** | Event log of new invoices, credit purchases, and more. |
+| **Budgets** | Budget details to view actual costs or usage against existing budget targets. |
+| **Charges** | A month-level summary of Azure usage, market place charges, and charges billed separately. |
+| **Credit lots** | Azure credit lot purchase details for the provided billing profile. |
+| **Credit summary** | Credit summary for provided billing profile. |
+| **Marketplace** | Usage-based Azure Marketplace charges. |
+| **Pricesheets** | Applicable meter rates for the provided billing profile. |
+| **RI charges** | Charges associated to your Reserved Instances over the last 24 months. |
+| **RI recommendations (single)** | Reserved Instance purchase recommendations based on your single subscription usage trends for the last 7, 30 or 60 days. |
+| **RI recommendations (shared)** | Reserved Instance purchase recommendations based on all your subscription usage trends for the last 7, 30 or 60 days. |
+| **RI usage** | Consumption details for your existing Reserved Instances over the last month. |
+| **Usage details** | A breakdown of consumed quantities and estimated charges for the given billing profile ID. |
 
 You can select a table checkbox to see a preview.  You can select one or more tables by checking the box beside their name and selecting **Load**.
 
@@ -322,7 +327,7 @@ Besides modifying the `numberOfMonths` to any value between 1 and 36, you can al
 
 ## Next steps
 
-You can connect to many different data source using Power BI Desktop. For more information, see the following articles:
+You can connect to many different data sources using Power BI Desktop. For more information, see the following articles:
 
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
