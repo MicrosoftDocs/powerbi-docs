@@ -26,7 +26,7 @@ You can only download reports [created with Power BI Desktop](guided-learning/pu
 
 To download the .pbix file, follow these steps:
 
-1. In the Power BI service, open the report you want to download in [Editing view](https://docs.microsoft.com/en-us/power-bi/service-interact-with-a-report-in-editing-view).
+1. In the Power BI service, open the report you want to download in [Editing view](https://docs.microsoft.com/power-bi/service-interact-with-a-report-in-editing-view).
 
 2. From the top navigation bar, select **File > Download report**.
    
