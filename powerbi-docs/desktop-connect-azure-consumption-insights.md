@@ -1,5 +1,5 @@
 ---
-title: Connect to Azure cost and usage from Power BI Desktop
+title: Analyze Azure cost and usage data in Power BI desktop
 description: Easily connect to Azure and gain insights about consumption and usage using Power BI Desktop
 author: davidiseminger
 manager: kfile
