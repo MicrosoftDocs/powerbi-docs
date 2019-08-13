@@ -1291,6 +1291,8 @@
         href: report-server/configure-kerberos-powerbi-reports.md
       - name: "Configure mobile app access remotely"
         href: report-server/configure-powerbi-mobile-apps-remote.md
+      - name: "Remote mobile access with Azure AD"
+        href: https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi
       - name: "Host Excel workbooks"
         href: report-server/excel-oos.md
   - name: Reference
