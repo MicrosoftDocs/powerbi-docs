@@ -34,7 +34,7 @@ The Power BI report editor is divided into several main sections:
 1. **Visualizations** pane
 1. **Fields** pane
 
-![The report editor sections](media/service-the-report-editor-take-a-tour/power-bi-report-canvas.png)
+![The report editor sections](media/service-the-report-editor-take-a-tour/power-bi-report-editor-overview-numbered.png)
 
 
 ## 1. The top navigation bar
@@ -46,23 +46,21 @@ The report canvas is where your work displays. When you use the Fields, Filters,
 
 ## The report editor panes
 
-![Power BI report editor](media/service-the-report-editor-take-a-tour/power-bi-report-panes.png)
-
-Three panes are visible when you first open a report: Filters, Visualizations, and Fields. The panes on the left side, Filters and Visualizations, control what your visualizations look like -- type, colors, filtering, formatting. The pane on the right, Fields, manages the underlying data being used in the visualizations. 
+Three panes are visible when you first open a report: Filters, Visualizations, and Fields. The panes on the left side, Filters and Visualizations, control what your visualizations look like: type, colors, filtering, and formatting. The pane on the right, Fields, manages the underlying data being used in the visualizations. 
 
 The content displayed in the report editor varies by selections you make in the report canvas.  For example, when you select an individual visual:
 
-![Report editor panes](media/service-the-report-editor-take-a-tour/power-bi-panes.png)
-
-The top of the Visualization pane identifies the type of visual in use. In this example, a Clustered column chart. The bottom of the Visualization pane displays the fields in the visual. You may have to scroll down to see all the details. This chart is using StoreNumberName and This Year Sales.
+![Power BI report editor](media/service-the-report-editor-take-a-tour/power-bi-report-editor-panes.png)
 
 The Filters pane displays any filters on the visual, the page, or on all pages. In this case, there are page-level filters, but no visual-level filters.
 
+The top of the Visualization pane identifies the type of visual in use. In this example, a Clustered column chart. The bottom of the Visualization pane displays the fields in the visual. You may have to scroll down to see all the details. This chart is using StoreNumberName and This Year Sales.
+
+![Paint roller icon](media/service-the-report-editor-take-a-tour/power-bi-paint-roller.png) To display the formatting pane for the selected visualization, select the paint roller icon.
+
+![magnifying glass icon](media/service-the-report-editor-take-a-tour/power-bi-magnifying-glass.png) To display the Analytics pane, select the magnifying glass icon.
+
 The Fields pane lists the tables available. If you expand a table, you see the fields that make up that table. The yellow check mark lets you know that at least one field from that table is in the visualization.
-
-![paint roller icon](media/service-the-report-editor-take-a-tour/power-bi-paint-roller-icon.png) To display the formatting pane for the selected visualization, select the paint roller icon.
-
-![magnifying glass icon](media/service-the-report-editor-take-a-tour/power-bi-magnifying-icon.png) To display the Analytics pane, select the magnifying glass icon.
 
 Read on for details about each pane.
 
@@ -75,20 +73,21 @@ The new filter experience offers more flexibility. For example, you can format f
 
 ![New filter experience](media/service-the-report-editor-take-a-tour/power-bi-filter-reading.png)
 
-Read more about the [new filter experience](power-bi-report-filter.md).
+Read more about the [new filter experience](power-bi-filters-pane.md).
 
 ## 4. The Visualizations pane
 
 The visualizations pane has four sections itself. We'll start at the top of the pane.
 
-![Top of Visualization pane](media/service-the-report-editor-take-a-tour/selectviz.png)
+![Top of Visualization pane](media/service-the-report-editor-take-a-tour/power-bi-visual-pane-icons.png)
 
 Here's where you select a visualization type. The small icons show the different types of visualizations you can create. In the image above, the bubble chart is selected. If you start building a visualization by selecting fields without selecting a visualization type first, Power BI picks the visualization type for you. You can keep Power BI's selection, or change the type by selecting a different icon.
 
 You can download custom visualizations to Power BI Desktop. Their icons will show up in this pane, too. 
 
 ### Manage the fields in a visualization
-![middle of Visualization pane](media/service-the-report-editor-take-a-tour/power-bi-field-list.png)
+
+![Bottom of Visualization pane](media/service-the-report-editor-take-a-tour/power-bi-visualization-field-manager.png)
 
 The buckets (sometimes called *wells*) in this pane vary depending on the type of visualization you've selected.  For example, if you've selected a bar chart, you see Axis, Legend, and Values. When you select a field or drag it onto the canvas, Power BI adds that field to one of the buckets.  You can also drag fields from the Fields list directly into the buckets.  Some buckets are limited to certain types of data.  For example, **Values** won't accept non-numeric fields. So if you drag a **Category** field into the **Values** bucket, Power BI changes it to **Count of Category**.
 
@@ -99,7 +98,7 @@ This part of the pane also has options to control drillthrough and filter behavi
 ### Format your visuals
 Select the paint roller icon to display the Format pane. The options available depend on the type of visualization selected.
 
-![Formatting pane in the report editor](media/service-the-report-editor-take-a-tour/power-bi-formatting.png)
+![Formatting pane in the report editor](media/service-the-report-editor-take-a-tour/power-bi-visual-pane-format.png)
 
 The formatting possibilities are almost endless.  To learn more, explore on your own, or visit these articles:
 
@@ -110,7 +109,7 @@ The formatting possibilities are almost endless.  To learn more, explore on your
 ### Add analytics to your visualizations
 Select the magnifying glass icon to display the Analytics pane. The options available depend on the type of visualization selected.
 
-![Analytics pane in the report editor](media/service-the-report-editor-take-a-tour/power-bi-analytics.png)
+![Analytics pane in the report editor](media/service-the-report-editor-take-a-tour/power-bi-visual-pane-analytics.png)
 
 With the Analytics pane in the Power BI service, you can add dynamic reference lines to visualizations, and provide focus for important trends or insights. To learn more, see  [Analytics pane in Power BI Desktop](desktop-analytics-pane.md).
 
@@ -119,44 +118,30 @@ The Fields pane displays the tables, folders, and fields in your data that are a
 
 |  |  |
 | --- | --- |
-| ![The Fields pane](media/service-the-report-editor-take-a-tour/reportfields.png) |<ul><li>Drag a field onto the page to start a new visualization.  You can also drag a field onto an existing visualization to add the field to that visualization.<br><br></li> <li>When you add a checkmark next to a field, Power BI adds that field to the active (or new) visualization. And it also decides which bucket to place that field into.  For example, should the field be used a legend, axis, or value? Power BI makes a best-guess and you can move it from that bucket to another if necessary. <br><br></li><li>Either way, each selected field is added to the Visualizations pane in the report editor.</li></ul> |
+| ![The Fields pane](media/service-the-report-editor-take-a-tour/power-bi-fields-list.png) |<ul><li>Drag a field onto the page to start a new visualization.  You can also drag a field onto an existing visualization to add the field to that visualization.<br><br></li> <li>When you add a checkmark next to a field, Power BI adds that field to the active (or new) visualization. And it also decides which bucket to place that field into.  For example, should the field be used a legend, axis, or value? Power BI makes a best-guess and you can move it from that bucket to another if necessary. <br><br></li><li>Either way, each selected field is added to the Visualizations pane in the report editor.</li></ul> |
 
 In Power BI Desktop, you also have options to show/hide fields, add calculations, etc.
 
 ## The field icons
 
-Power BI uses a number of different icons to indicate the types of fields in a report. When you can recognize them, you understand better how they act in different visuals.
+Power BI uses a number of different icons to indicate the types of fields in a report. When you can recognize them, you understand better how they act in different visuals. Here are some of the more common ones.
 
 
 |Icon  |Meaning  |
 |---------|---------|
-|![Hierarchy icon](media/service-the-report-editor-take-a-tour/power-bi-field-list-hierarchy.png)     |   **Hierarchy**     |
-|![Calculated column](media/service-the-report-editor-take-a-tour/power-bi-field-list-calculated-column.png)     |  Calculated column       |
-|![Numeric field](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric.png)     | Numeric field        |
-|Row4     |         |
-|Row5     |         |
-|Row6     |         |
-|Row7     |         |
-|Row8     |         |
-|Row9     |         |
-|Row10     |         |
-
-
-**∑ Aggregates**
-An aggregate is a numeric value that will be summed or averaged, for example. Aggregates are imported with the data (defined in the data model your report is based on).
-  For more information, see [Aggregates in Power BI reports](service-aggregates.md).
-
-![calculator icon](media/service-the-report-editor-take-a-tour/pbi_calculated_icon.png) **Calculated measures (also called calculated fields)**  
-Each calculated field has its own hard-coded formula. You can’t change the calculation, for example, if it’s a sum, it can only be a sum. For more information, [read Understanding measures](desktop-measures.md)
-
-![Unique field icon](media/service-the-report-editor-take-a-tour/icon.png) **Unique fields**  
-Fields with this icon were imported from Excel and are set to show all values, even if they have duplicates. For example, your data might have two records for people named 'John Smith', and each will be treated as unique -- they won't be summed.  
-
-**![Geography icon](media/service-the-report-editor-take-a-tour/pbi_geo_icon.png) Geography fields**  
-Location fields can be used to create map visualizations. 
-
-**![Hierarchy icon](media/service-the-report-editor-take-a-tour/power-bi-hierarchy-icon.png) Hierarchy**  
-Select the arrow to reveal the fields that make up the hierarchy. 
+|![Hierarchy icon](media/service-the-report-editor-take-a-tour/power-bi-field-list-hierarchy.png)     |  Hierarchy of fields: Select the arrow to see the fields that make up the hierarchy.  |
+|![Calculated column](media/service-the-report-editor-take-a-tour/power-bi-field-list-calculated-column.png) | Calculated column with a non-numeric data type |
+|![Numeric field](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric.png) | Numeric field: Numeric fields are aggregates that can be summed or averaged, for example. Aggregates are imported with the data and defined in the data model your report is based on.
+  For more information, see [Aggregates in Power BI reports](service-aggregates.md). |
+|![KPI icon](media/service-the-report-editor-take-a-tour/power-bi-field-list-kpi.png) |      KPI |
+|![Measure](media/service-the-report-editor-take-a-tour/power-bi-field-list-measure.png) |  Measure: measure has its own hard-coded formula. You can’t change the calculation, for example, if it’s a sum, it can only be a sum. For more information, [read Understanding measures](desktop-measures.md) |
+|![Measure group](media/service-the-report-editor-take-a-tour/power-bi-field-list-measure-group.png)     | Measure group  |
+|![Numeric calculated column](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric-calculated-column.png)     |   Numeric calculated column      |
+|![Geo data](media/service-the-report-editor-take-a-tour/power-bi-field-list-geo-data.png)     | Geo data: These location fields can be used to create map visualizations. |
+| ![Identity field](media/service-the-report-editor-take-a-tour/power-bi-field-list-identity.png)     | Identity field: Fields with this icon are *unique fields*, set to show all values, even if they have duplicates. For example, your data might have records for two different people named 'Robin Smith', and each will be treated as unique. They won't be summed.   |
+|![Parameter](media/service-the-report-editor-take-a-tour/power-bi-field-list-parameter.png)   | Parameter  |
+| ![Folder](media/service-the-report-editor-take-a-tour/power-bi-field-list-folder.png) | Folder in the Fields list |
+| ![Calendar](media/service-the-report-editor-take-a-tour/power-bi-field-list-calendar.png) | Calendar date field with a built-in date table |
 
 ## Next steps
 [Create a report](service-report-create-new.md)
