@@ -19,8 +19,8 @@ Import models are loaded with data that is compressed and optimized and then sto
 
 Despite the efficiencies achieved by the VertiPaq storage engine, it is important that you strive to minimize the data that is to be loaded into your models. This is especially true for large models, or models that you anticipate will grow to become large over time. Four compelling reasons include:
 
-- Larger model sizes may not be supported by your capacity. Shared capacity can host models up to 1 GB in size, while Premium capacities can host models up to 13 GB in size. For further information, read the [Power BI Premium support for large datasets](service-premium-large-datasets.md) article.
-- Smaller model sizes reduce contention for capacity resources, in particular memory. This allows more models to be concurrently loaded for longer periods of time, resulting in lower eviction rates. For further information, read the [How Capacities Function](whitepaper-powerbi-premium-deployment.md#how-capacities-function) topic of the [Power BI Premium Deployment](whitepaper-powerbi-premium-deployment.md) white paper.
+- Larger model sizes may not be supported by your capacity. Shared capacity can host models up to 1 GB in size, while Premium capacities can host models up to 13 GB in size. For further information, read the [Power BI Premium support for large datasets](../service-premium-large-datasets.md) article.
+- Smaller model sizes reduce contention for capacity resources, in particular memory. This allows more models to be concurrently loaded for longer periods of time, resulting in lower eviction rates. For further information, read the [How Capacities Function](../whitepaper-powerbi-premium-deployment.md#how-capacities-function) topic of the [Power BI Premium Deployment](../whitepaper-powerbi-premium-deployment.md) white paper.
 - Smaller models achieve faster data refresh, resulting in lower latency reporting, higher dataset refresh throughput, and less pressure on source system and capacity resources.
 - Smaller table row counts can result in faster calculation evaluations, which can deliver better overall query performance.
 
@@ -87,11 +87,11 @@ In Power BI Desktop, a Mixed mode design produces a Composite model. Essentially
 
 An effective technique to reduce the model size is to set the Storage Mode property for larger fact-type tables to DirectQuery. Consider that this design approach could work well in conjunction with the [Group by and summarize](#group-by-and-summarize) topic introduced earlier. For example, summarized sales data could be used to achieve high performance "summary" reporting. A drill through page could display granular sales for specific (and narrow) filter context, displaying all in-context sales orders. In this example, the drill through page would include visuals based on a DirectQuery table to retrieve the sales order data.
 
-There are, however, many security and performance implications related to Composite models. For further information, read the [Use composite models in Power BI Desktop](desktop-composite-models.md) article.
+There are, however, many security and performance implications related to Composite models. For further information, read the [Use composite models in Power BI Desktop](../desktop-composite-models.md) article.
 
 ## Next steps
 
 For more information about Power BI Import model design, see the following articles:
 
-- [Use composite models in Power BI Desktop](desktop-composite-models.md)
-- [Storage mode in Power BI Desktop](desktop-storage-mode.md)
+- [Use composite models in Power BI Desktop](../desktop-composite-models.md)
+- [Storage mode in Power BI Desktop](../desktop-storage-mode.md)
