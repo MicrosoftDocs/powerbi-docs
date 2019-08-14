@@ -55,9 +55,7 @@ For example, when you select an individual visual such as this column chart:
 
 **The top of the Visualization pane** identifies the type of visual in use. In this example, a Clustered column chart. 
 
-**The bottom of the Visualization pane**
-
-The bottom of the Visualization pane has three tabs.
+**The bottom of the Visualization pane** has three tabs:
 
 ![Fields in the visualization](media/service-the-report-editor-take-a-tour/power-bi-fields-visualization-pane.png) **Fields** displays the fields in the visual. You may have to scroll down to see all the details. This chart is using StoreNumberName and This Year Sales.
 
