@@ -1434,3 +1434,5 @@
   items:
   - name: "What is a star schema?"
     href: guidance/star-schema.md
+  - name: "Reduce data model size"
+    href: guidance/import-modeling-data-reduction.md
