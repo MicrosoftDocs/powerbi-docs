@@ -30,7 +30,7 @@ In the Power BI service, the report editor is only available in Editing View. To
 
 The Power BI report editor is divided into several main sections:  
 
-1. Top navigation bars
+1. Top navigation bar
 1. Report canvas
 1. Filters pane
 1. Visualizations pane
