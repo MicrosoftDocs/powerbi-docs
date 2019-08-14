@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 08/14/2019
 ms.author: maggies
 
 LocalizationGroup: Dashboards
@@ -16,15 +16,13 @@ LocalizationGroup: Dashboards
 # Tips for designing a great Power BI dashboard
 Now that you've created a dashboard and added some tiles, think about how to make your dashboard not just pretty, but also functional. In general, it means making the most important information stand out and making it clean and uncluttered.
 
+Many of the design principles for reports apply to dashboards as well. Read our whitepaper [Best design principles for reports and visualizations](visuals/power-bi-visualization-best-practices.md) for more.
+
 Here are a few tips.
 
-> [!TIP]
-> Many of the design principles for reports apply to dashboards as well. Read our whitepaper [Best design principles for reports and visualizations](visuals/power-bi-visualization-best-practices.md).
->
->
+## Dashboard design best practices video
 
-## Watch the [Dashboard Makeover webinar](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html)
-See Microsoft Principal Program Manager and Power BI dashboard expert Marc Reguera [conduct dashboard makeovers](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html).
+Watch this video, [Dashboard design best practices in Power BI](https://www.youtube.com/watch?v=-tdkUYrzrio), for design tips from Marco Russo of SQLBI.com.
 
 ## Consider your audience
 What are the key metrics that will help them make decisions? How will the dashboard be used? What learned or cultural assumptions may affect design choices? What information does your audience need to be successful?
