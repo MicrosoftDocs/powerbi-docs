@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 08/14/2019
 
 ms.author: davidi
 
@@ -35,7 +35,7 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 The following updates are new to **Power BI Desktop** this month:
 
 ### Reporting
-* Grouping visuals [[video]](https://youtu.be/sf4n7VXoQHY?t=10)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#grouping) 
+* Grouping visuals [[video]](https://youtu.be/sf4n7VXoQHY?t=10)  [[article]](desktop-grouping-visuals.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#grouping) 
 * Filter pane migration  [[video]](https://youtu.be/sf4n7VXoQHY?t=360)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#filterPane)
 * Icon style picker for conditional formatting of icons [[video]](https://youtu.be/sf4n7VXoQHY?t=509)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#iconStyles)
 * Conditional formatting warnings [[video]](https://youtu.be/sf4n7VXoQHY?t=621)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#conditionalFormatting)
