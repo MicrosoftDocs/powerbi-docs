@@ -26,23 +26,23 @@ Either approach will get the latest version of **Power BI Desktop** onto your co
 ## Download Power BI Desktop
 To download the most recent version of **Power BI Desktop**, you can select the download icon from the upper right corner of the Power BI service, and select **Power BI Desktop**.
 
-![](media/desktop-get-the-desktop/getpbid_downloads.png)
+![Download the most recent version of Power BI Desktop](media/desktop-get-the-desktop/getpbid_downloads.png)
 
 You can also download the latest version of Power BI Desktop from the following download page:
 
 * [**Power BI Desktop download** (both 32-bit and 64-bit versions)](https://powerbi.microsoft.com/desktop).
   
-  [![](media/service-admin-power-bi-security/PBI_Security_01.png)](https://powerbi.microsoft.com/desktop)
+  [![Download the latest version of Power BI Desktop](media/service-admin-power-bi-security/PBI_Security_01.png)](https://powerbi.microsoft.com/desktop)
 
 Regardless of which way you choose to download, once **Power BI Desktop** is downloaded you're prompted to run the installation file:
 
-![](media/desktop-get-the-desktop/getpbid_3.png)
+![Run the Power BI Desktop installation file](media/desktop-get-the-desktop/getpbid_3.png)
 
-Beginning with the July 2019 release, **Power BI Desktop** ships as a single .exe installation package that contains all supported languages. There are separate .exe files for 32-bit and 64-bit versions. The .msi packages will be discontinued after the September 2019 release, after which you must use the .exe executable for installation. This approach makes distribution, updates, and installation (especially for administrators) much easier and more convenient. You can also use command-line parameters to customize the installation proecess, as described in the [using command-line options during installation](#using-command-line-options-during-installation) section later in this article.
+Beginning with the July 2019 release, **Power BI Desktop** ships as a single .exe installation package that contains all supported languages. There are separate .exe files for 32-bit and 64-bit versions. The .msi packages will be discontinued after the September 2019 release, after which you must use the .exe executable for installation. This approach makes distribution, updates, and installation (especially for administrators) much easier and more convenient. You can also use command-line parameters to customize the installation process, as described in the [using command-line options during installation](#using-command-line-options-during-installation) section later in this article.
 
 Once you launch the installation package, **Power BI Desktop** is installed as an application and runs on your desktop.
 
-![](media/desktop-get-the-desktop/designer_gsg_install.png)
+![Power BI Desktop application runs on your desktop](media/desktop-get-the-desktop/designer_gsg_install.png)
 
 > [!NOTE]
 > Installing the downloaded (MSI) version, and the **Microsoft Store** version of **Power BI Desktop** on the same computer (sometimes referred to as a *side-by-side* installation) is not supported.
@@ -54,7 +54,7 @@ You can also get **Power BI Desktop** from the Microsoft Store, using the follow
 
 * [Install **Power BI Desktop** from the **Microsoft Store**](http://aka.ms/pbidesktopstore)
 
-![](media/desktop-get-the-desktop/getpbid_04.png)
+  ![Get Power BI Desktop from the Microsoft Store](media/desktop-get-the-desktop/getpbid_04.png)
 
 There are a few advantages to getting **Power BI Desktop** from the Microsoft Store:
 
@@ -80,7 +80,7 @@ There are a few consideration and limitations for installing **Power BI Desktop*
 ## Using Power BI Desktop
 When you launch **Power BI Desktop**, a *Welcome* screen is displayed.
 
-![](media/desktop-get-the-desktop/getpbid_05.png)
+![Power BI Desktop Welcome screen](media/desktop-get-the-desktop/getpbid_05.png)
 
 If this is your first time using **Power BI Desktop** (if the installation is not an upgrade), you'll be prompted to fill out a form and answer a few questions, or sign in to the **Power BI service** before you'll be able to proceed.
 
