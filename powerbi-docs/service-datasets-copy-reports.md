@@ -7,14 +7,17 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 08/12/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Copy reports from other workspaces (Preview)
 
-When you find a report you like, in a workspace or an app, you can make a copy of it, and save it to a different workspace. Then you can modify that report, adding or deleting visuals and other elements. You don't have to worry about creating the data model. It's already created for you. And it's much easier to modify an existing report than it is to start from scratch. However, you can't publish your copy of the report in an app from the new workspace. See the list of other [considerations and limitations](service-datasets-across-workspaces.md#considerations-and-limitations) in the article "Use datasets across workspaces."
+When you find a report you like in a workspace or an app, you can make a copy of it and save it to a different workspace. Then you can modify your copy of the report, adding or deleting visuals and other elements. You don't have to worry about creating the data model. It's already created for you. And it's much easier to modify an existing report than it is to start from scratch. However, when you make an app from the new workspace, sometimes you can't publish your copy of the report in the app. See [Considerations and limitations in the article "Use datasets across workspaces"](service-datasets-across-workspaces.md#considerations-and-limitations) for details.
+
+> [!NOTE]
+> To make a copy, you need a Pro license, even if the original report is in a workspace in a Premium capacity.
 
 ## Save a copy of a report
 

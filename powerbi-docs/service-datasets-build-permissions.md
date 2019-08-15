@@ -1,5 +1,5 @@
 ---
-title: Create and share datasets (Preview) - Power BI
+title: Share a dataset (Preview)
 description: As a dataset owner, you can create and share your datasets so others can use them. Learn how you can keep control of who has access to the data by using the Build permission.
 author: maggiesMSFT
 manager: kfile
@@ -7,12 +7,12 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 08/14/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Create and share datasets (Preview)
+# Share a dataset (Preview)
 
 As a creator of *data models* in Power BI Desktop, you can share them as *datasets* in the Power BI service. Then report creators can easily discover and reuse the datasets you've shared. Learn how to share them, and how you control who has access to the data by using the Build permission.
 
@@ -26,7 +26,7 @@ As a creator of *data models* in Power BI Desktop, you can share them as *datase
     
     Already, other members of this workspace can create reports in other workspaces based on this dataset.
 
-1. Now you can [create an app](service-create-distribute-apps.md) from this workspace. When you do, on the **Permissions** page, you specify who has permissions and what they can do.
+1. You can also [publish an app](service-create-distribute-apps.md) from this workspace. When you do, on the **Permissions** page, you specify who has permissions and what they can do.
 
     > [!NOTE]
     > If you select **Entire organization**, then no one in the organization will have Build permissions. This issue is already known. Instead, specify email addresses in **Specific individuals or groups**.  If you want your entire organization to have Build permissions, specify an email alias for the entire organization.
@@ -41,6 +41,8 @@ The Build permission type is only relevant for datasets. With it, users can buil
 
 Users get Build permission in different ways:
 
+- If you're a member of a workspace with at least a Contributor role, you automatically have Build permission for a dataset, and permission to copy a report.
+ 
 - A member of the workspace where the dataset resides can assign the permission to specific users or security groups in the Permission center. Select the ellipsis (…) next to a dataset > **Manage Permissions**.
 
     ![Select the ellipsis](media/service-datasets-build-permissions/power-bi-dataset-manage-permissions.png)
@@ -49,13 +51,13 @@ Users get Build permission in different ways:
 
     ![Permission center](media/service-datasets-build-permissions/power-bi-dataset-permissions.png)
 
-- An admin or member of the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets. See [Steps to sharing your dataset](#steps-to-sharing-your-dataset) for details.
+- An admin or member of the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets. See [Steps to sharing your dataset](#steps-to-sharing-your-dataset) in this article for details.
 
 - Say you have Reshare and Build permissions on a dataset. When you share a report or dashboard built on top of that dataset you can specify that the recipients also get Build permission for the underlying dataset.
 
     ![Build permissions](media/service-datasets-build-permissions/power-bi-share-report-allow-users.png)
 
-You can remove people's Build permissions for a dataset. If you do, they can still see the report built on the shared dataset, but they can no longer edit it.
+You can remove a person's Build permissions for a dataset. If you do, they can still see the report built on the shared dataset, but they can no longer edit it.
 
 ## More granular permissions
 
