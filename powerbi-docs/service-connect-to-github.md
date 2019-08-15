@@ -8,7 +8,7 @@ ms.reviewer: sarinas
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 07/21/2019
+ms.date: 08/07/2019
 ms.author: maggies
 
 LocalizationGroup: Connect to services
@@ -34,9 +34,9 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 
     ![Power BI GitHub tile](media/service-connect-to-github/power-bi-github-tile.png)
 
-6. In **Get started with your new app**, select **Connect data**.
+6. In **Get started with your new app**, select **Connect**.
 
-    ![Get started with your new app](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect-data.png)
+    ![Get started with your new app](media/service-connect-to-zendesk/power-bi-new-app-connect-get-started.png)
 
 5. Enter the repository name and repository owner of the repo. See details on [finding these parameters](#FindingParams) below.
    

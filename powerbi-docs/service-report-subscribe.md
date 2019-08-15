@@ -50,9 +50,9 @@ Subscribing to paginated reports is a little different. See [Subscribe yourself 
 
 5. Fill in the email **Subject** and **Message** details. 
 
-5. Select a **Frequency** for your subscription: **Daily**, **Weekly**, or **After Data Refresh (Daily)**.  To receive the subscription email only on certain days, select **Weekly** and select the days you'd like to receive it.  For example, if you'd like to receive the subscription email only on weekdays, select **Weekly** and uncheck the boxes for **Sat** and **Sun**.  
+5. Select a **Frequency** for your subscription: **Daily**, **Hourly**, **Weekly**, or **After Data Refresh (Daily)**.  To receive the subscription email only on certain days, select **Hourly** or **Weekly** and select the days you'd like to receive it.  For example, if you'd like to receive the subscription email only on weekdays, select **Weekly** and uncheck the boxes for **Sat** and **Sun**.  
 
-6. If you choose **Daily** or **Weekly**, you can also choose a **Scheduled Time** for the subscription.  You have it run on the hour, or at 15, 30, or 45 minutes past.  Select morning (AM) or afternoon/evening (PM). You can also specify the time zone.
+6. If you choose **Daily** or **Weekly**, you can also choose a **Scheduled Time** for the subscription.  You have it run on the hour, or at 15, 30, or 45 minutes past.  Select morning (AM) or afternoon/evening (PM). You can also specify the time zone.  If you choose **Hourly**, select the **Scheduled Time** you want the subscription to start, and it will come every hour subsequent to that.
 
 7. By default, the start date for your subscription is the date you create it. You have the option to select an end date. If you don't set an end date, the end date is automatically one year after the start date. You can change it to any date in the future (up to the year 9999) at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You'll receive notification(s) before the scheduled end date to ask if you'd like to extend it.    
 
@@ -89,13 +89,13 @@ A subscription ends if the Pro license expires, the owner deletes the dashboard 
 * Dashboards with over 25 pinned tiles, or 4 pinned live report pages, may not render fully in subscription e-mails sent to users.  Subscriptions to dashboards over these number of tiles aren't blocked. However, they're considered unsupported if you encounter issues. Consider modifying them accordingly to fall within a supported range.
 * On rare occasions, e-mail subscriptions may take longer than fifteen minutes to be delivered to their recipients. If this happens, we recommend running your data refresh and e-mail subscription at different times to ensure timely delivery. If the issue persists, contact Power BI support.
 * For dashboard email subscriptions, if any tiles have row-level security (RLS) applied, those tiles don't display.  
-* For report email subscriptions, if the dataset uses RLS, you can create a subscription for yourself. You can't subscribe others to a report with row-level security (RLS) applied.
+* For report email subscriptions, if the dataset uses RLS, you can create a subscription for yourself. You can't subscribe others to a report with row-level security (RLS) applied unless you are using a paginated report, which will allow you to send the subscription to others using your security context. 
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page and then rename it, you have to re-create your subscription.
 * Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI.  These limitations include, but aren't limited to, having multi-factor authentication or IP range restrictions when accessing resources.
-* Currently, email subscriptions for reports/dashboards using live connection datasets aren't supported when subscribing users other than yourself.
+* Currently, email subscriptions for reports/dashboards using live connection datasets aren't supported when subscribing users other than yourself unless you are using a paginated report, which will allow you to send the subscription to others using your security context. 
 * Email subscriptions don't support most [custom visuals](power-bi-custom-visuals.md).  The one exception is those custom visuals that have been [certified](power-bi-custom-visuals-certified.md).  
 * Email subscriptions don't support R-powered custom visuals at this time.  
-* Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make after subscribing don't show up in the email.    
+* Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make after subscribing don't show up in the email.  Paginated Reports do support this capability and allow you to set the specific parameter values per subscription.   
 * For dashboards subscriptions specifically, certain types of tiles aren't yet supported.  These include: streaming tiles, video tiles, custom web content tiles.     
 * If you share a dashboard with a colleague outside of your tenant, you can't also create a subscription for that colleague. So if you are aaron@xyz.com, you can share with anyone@ABC.com, but you can't yet subscribe anyone@ABC.com and they can't subscribe to shared content.      
 * Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months.  However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.    
