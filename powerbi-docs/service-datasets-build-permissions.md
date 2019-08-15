@@ -33,7 +33,6 @@ As a creator of *data models* in Power BI Desktop, you can share them as *datase
 
     ![Set app permissions](media/service-datasets-build-permissions/power-bi-dataset-app-permissions.png)
 
-1. 
 1. Select **Publish app**, or **Update app** if it's already published.
 
 ## Build permissions for shared datasets
