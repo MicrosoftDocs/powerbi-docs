@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "powerbi-docs/service-admin-power-bi-archived-workspace.md",
+            "redirect_url": "/power-bi/service-admin-administering-power-bi-in-your-organization",
+            "redirect_document_id": false
+        } ,
+        {
             "source_path": "powerbi-docs/service-gateway-getting-started.md",
             "redirect_url": "/power-bi/service-gateway-onprem",
             "redirect_document_id": false

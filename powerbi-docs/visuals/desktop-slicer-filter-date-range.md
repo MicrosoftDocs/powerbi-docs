@@ -70,7 +70,7 @@ If you select **Months** from that list, and enter *2* in the middle setting, th
 
 * the data included in visuals constrained by the slicer will show data for the previous two months
 
-* starting on May 20 and going through July 20 (today's date)
+* starting on May 21 and going through July 20 (today's date)
 
 In comparison, if you selected *Months (Calendar)*, the visuals constrained would show data from May 1 through June 30 (the last two complete calendar months).
 

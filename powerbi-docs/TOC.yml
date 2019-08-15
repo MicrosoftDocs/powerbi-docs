@@ -53,6 +53,8 @@
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
       href: desktop-latest-update.md
+    - name: "Grouping visuals in Power BI Desktop"
+      href: desktop-grouping-visuals.md      
     - name: "Modeling view in Power BI Desktop"
       href: desktop-modeling-view.md      
     - name: "Aggregations in Power BI Desktop"
@@ -491,7 +493,7 @@
       items: 
       - name: "Use datasets across workspaces"
         href: service-datasets-across-workspaces.md
-      - name: "Create and share datasets (Preview)"
+      - name: "Share datasets (Preview)"
         href: service-datasets-build-permissions.md
       - name: "Create reports based on datasets"
         href: service-datasets-discover-across-workspaces.md
@@ -595,6 +597,8 @@
         href: service-export-to-pbix.md
       - name: "Filter a report using parameters in the URL"
         href: service-url-filters.md
+      - name: "Edit SAP variables"
+        href: service-edit-sap-variables.md
       - name: "Best practices for building fast and reliable reports"
         href: power-bi-reports-performance.md  
     - name: Ask questions of your data
@@ -1289,6 +1293,8 @@
         href: report-server/configure-kerberos-powerbi-reports.md
       - name: "Configure mobile app access remotely"
         href: report-server/configure-powerbi-mobile-apps-remote.md
+      - name: "Remote mobile access with Azure AD"
+        href: https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi
       - name: "Host Excel workbooks"
         href: report-server/excel-oos.md
   - name: Reference
@@ -1424,3 +1430,9 @@
       href: service-admin-governance.md
     - name: "Power BI security"
       href: service-admin-power-bi-security.md
+- name: Guidance
+  items:
+  - name: "What is a star schema?"
+    href: guidance/star-schema.md
+  - name: "Reduce data model size"
+    href: guidance/import-modeling-data-reduction.md
