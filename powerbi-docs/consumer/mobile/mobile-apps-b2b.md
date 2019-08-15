@@ -43,6 +43,7 @@ Even though you need to have a Power BI artifact link to connect to an external 
 
 ## Limitations
 
+- Users must be signed in to their home tenant, before they can access the the content shared with them from an external tenant.
 - Conditional access and other Intune policies are not supported in Azure AD B2B and in Power BI mobile. That means that the app enforces only the home organization's policies, if they exist.
 - Push notifications are received from the home organization site only (even when the user is connected as a guest to an external organization). Opening the notification re-connects the app to the user's home organization site.
 - If the user shuts down the app, when re-opened the app connects automatically to the user's home organization.
