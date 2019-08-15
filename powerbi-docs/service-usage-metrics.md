@@ -99,7 +99,7 @@ To dig into the report data, or to build your own reports against the underlying
 
 Use **Save as** to convert the usage metrics report to a regular Power BI report that you can customize to meet your specific needs. You can also use Power BI Desktop to build custom usage metrics reports based on the underlying dataset. See [Establish a connection to a published dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
 
-Better yet, the underlying dataset includes the usage details for all dashboards or reports in the workspace. This opens up more possibilities. You could, for example, create a report that compares all dashboards in your workspace based on usage. Or you could create a usage metrics dashboard for your Power BI app by aggregating usage across all the content distributed within that app.  See [remove the page-level filter ](#remove-the-filter-to-see-all-workspace-usage-metrics) later in this article.
+Better yet, the underlying dataset includes the usage details for all dashboards or reports in the workspace. This opens up more possibilities. You could, for example, create a report that compares all dashboards in your workspace based on usage. Or you could create a usage metrics dashboard for your Power BI app by aggregating usage across all the content distributed within that app.  See how to remove the filter and [see all usage metrics for the workspace](#see-all-workspace-usage-metrics) later in this article.
 
 ### Create a copy of the usage report
 
@@ -163,7 +163,7 @@ In addition to potential differences between usage metrics and audit logs, the f
 
 **Q:**    Do usage metrics capture views from embedded dashboards and reports?
 
-**A:**    Usage metrics currently doesn't support capturing usage for embedded dashboards, reports, and the [publish to web](service-publish-to-web.md) flow.          In those cases, we recommend using existing web analytics platforms to track usage for the hosting app or portal.
+**A:**    Usage metrics currently don't support capturing usage for embedded dashboards, reports, and the [publish to web](service-publish-to-web.md) flow. In those cases, we recommend using existing web analytics platforms to track usage for the hosting app or portal.
 
 **Q:**    I can't run usage metrics on any content at all.
 
