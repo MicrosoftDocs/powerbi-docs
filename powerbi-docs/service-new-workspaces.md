@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 08/15/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -71,10 +71,9 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 | Publish reports to the workspace, delete content.  |  X | X  | X  |   |
 | View an item. |  X | X  | X  | X  |
 | Create a report in another workspace based on a dataset in this workspace. |  X | X  | X  | X<sup>1</sup>  |
-| Copy a report. | X | X | X | X<sup>1, 2</sup> |
+| Copy a report. | X | X | X | X<sup>1</sup> |
 
 1. Requires a Power BI Pro license and [Build permission for datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
-1. Requires permission to copy reports.
  
 ## Licensing
 Everyone you add to a workspace in the shared capacity needs a Power BI Pro license. In the workspace, these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. 
