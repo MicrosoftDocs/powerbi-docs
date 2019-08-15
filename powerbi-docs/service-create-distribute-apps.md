@@ -18,21 +18,21 @@ In Power BI, you can create official packaged content, then distribute it to a b
 
 ![Power BI apps](media/service-create-distribute-apps/power-bi-new-apps.png)
 
-Your business users often need multiple Power BI dashboards and reports to run their business. With Power BI apps, you can create collections of dashboards and reports and publish these apps to your whole organization or to specific people or groups. For you as a report creator or admin, apps make it easier to manage permissions on these collections.
+Your business users often need multiple Power BI dashboards and reports to run their business. With Power BI apps, you can create collections of dashboards and reports and publish these collections as apps to your whole organization or to specific people or groups. For you as a report creator or admin, apps make it easier to manage permissions on these collections.
 
 Business users get your apps in a few different ways:
 
-- They can find and install your app from Microsoft AppSource
+- They can find and install your app from Microsoft AppSource.
 - You can send them a direct link.
 - You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission.
 
-You can create the app with its own built-in navigation, so your users can easily find their way around your content. They can’t modify the contents of the app. They can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. They get updates automatically and you can control how frequently the data refreshes. Read more about the [app experience for business users](consumer/end-user-apps.md).
+You can create the app with its own built-in navigation, so your users can easily find their way around your content. They can’t modify the contents of the app. They can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. They get updates automatically and you can control how frequently the data refreshes. You can also give them Build permissions to connect to the underlying datasets, and to create copies of the reports in the app. Read more about the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 
 ## Licenses for apps
 To create or update an app, you need a Power BI Pro license. For app *consumers*, there are two options.
 
-* Option 1: All business users need **Power BI Pro** licenses to view your app. 
-* Option 2: If your workspace resides in a Power BI Premium capacity, free users in your organization can view app content. Read [What is Power BI Premium?](service-premium.md) for details.
+* **Option 1** The workspace for this app is *not* in a Power BI Premium capacity: All business users need Power BI Pro licenses to view your app. 
+* **Option 2** The workspace for this app *is* in a Power BI Premium capacity: Business users without Power BI Pro licenses in your organization can view app content. However, they can't connect directly to the underlying datasets or copy the reports. Read [What is Power BI Premium?](service-premium.md) for details.
 
 ## Publish your app
 When the dashboards and reports in your workspace are ready, you choose which dashboards and reports you want to publish, then you publish them as an app. 
@@ -60,14 +60,12 @@ When the dashboards and reports in your workspace are ready, you choose which da
 5. On **Permissions**, decide who has access to the app, and what they can do with it. 
     - In [classic workspaces](service-create-workspaces.md): everyone in your organization, specific people, or Azure Active Directory (AAD) security groups.
     - In the [new experience workspaces](service-create-the-new-workspaces.md): specific people, AAD security groups and distribution lists, and Office 365 Groups. All workspace users are automatically given access to the app for the workspace.
-    - You can allow app users to connect to the app's underlying datasets using the Build permission. These datasets will appear in dataset search experiences.
-    - You can allow app users to make a copy of reports in this app to their My workspace. 
+    - You can allow app users to connect to the app's underlying datasets by giving them Build permission. These datasets will appear in dataset search experiences. Read more about [sharing datasets (Preview)](service-datasets-build-permissions.md).
+    - If you give users Build permission, you can also allow them to copy reports from this app to another workspace. 
     
     >[!IMPORTANT]
     >If your app relies on datasets from other workspaces, it is your responsibility to ensure all app users have access to the underlying datasets.
-> 
->     
-
+    >
 
 6. You can install the app automatically for the recipients, if your Power BI admin has enabled this setting for you in the Power BI Admin Portal. Read more about [automatically installing an app](#automatically-install-apps-for-end-users) in this article.
 
@@ -158,9 +156,9 @@ Here are things to keep in mind when pushing apps to end users:
 
 ## Allow users to connect to the app's datasets
 
-When you check the option to allow users to connect to the app's underlying datasets, you're giving app users Build permission on those datasets. With this permission, they can do several key actions:
+When you check the option to **Allow users to connect to the app's underlying datasets**, you're giving app users *Build permission* on those datasets. With this permission, they can do several key actions:
 
-- [Use the app datasets](service-datasets-across-workspaces.md) as the basis for their reports, .
+- [Use the app datasets](service-datasets-across-workspaces.md) as the basis for their reports.
 - Search for these datasets in Power BI Desktop and in the get-data experience in the Power BI service.
 - Create reports and dashboards based on these datasets.
 
@@ -168,14 +166,13 @@ When you clear this option, new users you add to the app don't get the Build per
 
 ## Allow users to copy reports in the app
 
-When you check the option to **Allow users to make a copy of the reports in this app**, your users can save any of the reports in the app to their My Workspace or another workspace. To make a copy, users need a Pro license, even if the original report is in a workspace in a Premium capacity. They can then customize the reports to their unique needs. This option requires you to enable **Allow all users to connect to the app's underlying datasets using the Build permission**. By selecting these options, you're enabling the new [copy reports from other workspaces](service-datasets-copy-reports.md) capability.
+When you check the option to **Allow users to make a copy of the reports in this app**, your users can save any of the reports in the app to their My Workspace or another workspace. To make a copy, users need a Pro license, even if the original report is in a workspace in a Premium capacity. They can then customize the reports to their unique needs. This option requires you to enable **Allow all users to connect to the app's underlying datasets using the Build permission** first. By selecting these options, you're enabling the new [copy reports from other workspaces](service-datasets-copy-reports.md) capability.
 
 ## Unpublish an app
 Any member of a workspace can unpublish the app.
 
 >[!IMPORTANT]
 >When you unpublish an app, app users lose their customizations. They lose any personal bookmarks, comments, or subscriptions associated with content in the app. Only unpublish an app if you need to remove it.
-> 
 > 
 
 * In a workspace, select the ellipsis (**...**) in the upper-right corner > **Unpublish app**.
