@@ -150,7 +150,7 @@ Here are things to keep in mind when pushing apps to end users:
 
 * If users don’t immediately see the app in the Apps list, they should refresh or close and reopen their browser.
 
-* Try not to overwhelm users. Be careful not to push too mny apps so your users perceive the pre-installed apps are useful to them. It’s best to control who can push apps to end users to coordinate timing. Establish a point of contact for getting apps in your organization pushed to end users.
+* Try not to overwhelm users. Be careful not to push too many apps so your users perceive the pre-installed apps are useful to them. It’s best to control who can push apps to end users to coordinate timing. Establish a point of contact for getting apps in your organization pushed to end users.
 
 * Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 
