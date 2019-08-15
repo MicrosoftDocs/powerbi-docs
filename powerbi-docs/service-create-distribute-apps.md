@@ -7,7 +7,7 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 08/15/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -32,7 +32,7 @@ You can create the app with its own built-in navigation, so your users can easil
 To create or update an app, you need a Power BI Pro license. For app *consumers*, there are two options.
 
 * **Option 1** The workspace for this app is *not* in a Power BI Premium capacity: All business users need Power BI Pro licenses to view your app. 
-* **Option 2** The workspace for this app *is* in a Power BI Premium capacity: Business users without Power BI Pro licenses in your organization can view app content. However, they can't connect directly to the underlying datasets or copy the reports. Read [What is Power BI Premium?](service-premium.md) for details.
+* **Option 2** The workspace for this app *is* in a Power BI Premium capacity: Business users without Power BI Pro licenses in your organization can view app content. However, they can't copy the reports, or create reports based on the underlying datasets. Read [What is Power BI Premium?](service-premium.md) for details.
 
 ## Publish your app
 When the dashboards and reports in your workspace are ready, you choose which dashboards and reports you want to publish, then you publish them as an app. 
@@ -60,8 +60,8 @@ When the dashboards and reports in your workspace are ready, you choose which da
 5. On **Permissions**, decide who has access to the app, and what they can do with it. 
     - In [classic workspaces](service-create-workspaces.md): everyone in your organization, specific people, or Azure Active Directory (AAD) security groups.
     - In the [new experience workspaces](service-create-the-new-workspaces.md): specific people, AAD security groups and distribution lists, and Office 365 Groups. All workspace users are automatically given access to the app for the workspace.
-    - You can allow app users to connect to the app's underlying datasets by giving them Build permission. These datasets will appear in dataset search experiences. Read more about [sharing datasets (Preview)](service-datasets-build-permissions.md).
-    - If you give users Build permission, you can also allow them to copy reports from this app to another workspace. 
+    - You can allow app users to connect to the app's underlying datasets by giving them Build permission. They'll see these datasets when they're searching for shared datasets. Read more about [allowing users to connect to the app's datasets](#allow-users-to-connect-to-datasets), in this article.
+    - Users with Build permission can also have permission to copy reports from this app to another workspace. Read more about [allowing users to copy reports in the app](#allow-users-to-copy-reports), in this article.
     
     >[!IMPORTANT]
     >If your app relies on datasets from other workspaces, it is your responsibility to ensure all app users have access to the underlying datasets.
@@ -97,7 +97,7 @@ After you publish your app, you may want to change or update it. It’s easy to 
    
 The people you’ve published the app to automatically see the updated version of the app. 
 
-## Design the navigation experience for your app
+## Design the navigation experience
 The **New navigation builder** option allows you to build a custom navigation for your app. The custom navigation makes it easier for your users to find and use content in the app. Existing apps have this option turned off and new apps default to the option being on.
 
 When the option is off, you can select the **App landing page** to be either **Specific content**, for example a dashboard or report, or select **None** to show a basic list of content to the user.
@@ -154,7 +154,7 @@ Here are things to keep in mind when pushing apps to end users:
 
 * Guest users who haven't accepted an invite don't get apps automatically installed for them.  
 
-## Allow users to connect to the app's datasets
+## Allow users to connect to datasets
 
 When you check the option to **Allow users to connect to the app's underlying datasets**, you're giving app users *Build permission* on those datasets. With this permission, they can do several key actions:
 
@@ -164,9 +164,9 @@ When you check the option to **Allow users to connect to the app's underlying da
 
 When you clear this option, new users you add to the app don't get the Build permission. However, for existing app users, permissions on the underlying datasets don't change. You can remove the Build permission manually from app users who should no longer have it. Read more about the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 
-## Allow users to copy reports in the app
+## Allow users to copy reports
 
-When you check the option to **Allow users to make a copy of the reports in this app**, your users can save any of the reports in the app to their My Workspace or another workspace. To make a copy, users need a Pro license, even if the original report is in a workspace in a Premium capacity. They can then customize the reports to their unique needs. This option requires you to enable **Allow all users to connect to the app's underlying datasets using the Build permission** first. By selecting these options, you're enabling the new [copy reports from other workspaces](service-datasets-copy-reports.md) capability.
+When you check the option to **Allow users to make a copy of the reports in this app**, your users can save any of the reports in the app to their My Workspace or another workspace. To make a copy, users need a Pro license, even if the original report is in a workspace in a Premium capacity. They can then customize the reports to their unique needs. You have to select the **Allow all users to connect to the app's underlying datasets using the Build permission** option first. By selecting these options, you're enabling the new [copy reports from other workspaces](service-datasets-copy-reports.md) capability.
 
 ## Unpublish an app
 Any member of a workspace can unpublish the app.

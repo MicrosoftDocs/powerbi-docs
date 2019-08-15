@@ -1,5 +1,5 @@
 ---
-title: Use datasets across workspaces (Preview)
+title: Intro to datasets across workspaces (Preview)
 description: Learn how you can share a dataset with users across the organization. Then they can build reports based on your dataset in their own workspaces.
 author: maggiesMSFT
 manager: kfile
@@ -7,12 +7,12 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 08/15/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Use datasets across workspaces (Preview)
+# Intro to datasets across workspaces (Preview)
 
 Business intelligence is a collaborative activity. It's important to establish standardized datasets that can be the 'one source of truth.' Then discovering and reusing those standardized datasets is key. When expert data modelers in your organization create and share optimized datasets, report creators can start with those datasets to build accurate reports. Then your organization has consistent data for making decisions, and a healthy data culture.
 
@@ -49,8 +49,8 @@ If you create datasets, when you create one that others can benefit from, you ca
 
 The specific features and experiences built on shared dataset capabilities are licensed according to their existing scenarios. For example:
 
-- In general, discovering and connecting to shared datasets is available to anyone. However, users without a Pro license can only connect to datasets that reside in their personal My Workspace or in Premium workspaces.
-- In Power BI Desktop, users without a Pro license can only see datasets from their My Workspace and from Premium-based workspaces in which they have at least a contributor role.
+- In general, discovering and connecting to shared datasets is available to anyone. However, users without a Pro license can only connect to datasets that reside in their personal My Workspace.
+- In Power BI Desktop, users without a Pro license can only see datasets from their My Workspace.
 - Copying reports between workspaces requires a Pro license.
 - Copying reports from an app requires a Pro license, as was required for organizational content packs.
 - Promoting and certifying datasets requires a Pro license.
@@ -58,7 +58,7 @@ The specific features and experiences built on shared dataset capabilities are l
 ## Considerations and limitations
 
 - Building a report on top of a dataset in a different workspace requires the new workspace experience at both ends: The report needs to be in a new workspace experience and the dataset needs to be in a new workspace experience.
-- Say you create a report in Workspace A that's based on a dataset in Workspace B. When you create an app for Workspace A, you can include that report in the Workspace A app only if you are also a member of Workspace B.
+- Say you create a report in Workspace A that's based on a dataset in Workspace B. When you create an app for Workspace A, you can only include that report in the Workspace A app if you are also a member of Workspace B.
 - In a classic workspace, the dataset discovery experience only shows the datasets in that workspace.
 - If you want to add a report based on a shared dataset to an app, you have to be a member of the dataset workspace. This is a known issue.
 - “Publish to web” doesn’t work for a report based on a shared dataset. This is by design.

@@ -9,7 +9,7 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/07/2019
+ms.date: 08/15/2019
 LocalizationGroup: Dashboards
 ---
 
@@ -36,20 +36,7 @@ You can only run usage metrics reports in the Power BI service. However, if you 
 - To access usage metrics for a particular dashboard or report, you must have edit access to that dashboard or report.
 - Your Power BI admin has to have enabled usage metrics for content creators. You Power BI admin may have also enabled collecting per-user data in usage metrics. Read about how to [enable these options in the admin portal](service-admin-portal.md#control-usage-metrics). 
 
-## About the Usage Metrics report
-
-When you select **Usage metrics** or the icon ![usage metrics icon](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) next to a dashboard or report, Power BI generates a pre-built report with usage metrics for that content for the last 90 days.  The report looks similar to the Power BI reports you're already familiar with. You can slice based on how your end users received access, whether they accessed via the web or mobile app, etc. As your dashboards and reports evolve, so too will the usage metrics report, which updates every day with new data.  
-
-Usage metrics reports don't show up in **Recent**, **Workspaces**, **Favorites**, or other content lists. They can't be added to an app. If you pin a tile from a usage metrics report to a dashboard, you can't add that dashboard to an app.
-
-To dig into the report data, or to build your own reports against the underlying dataset, you have two options: 
-
-- Make a copy of the report in the Power BI service. See [Save a copy of the Usage Metrics report](#save-a-copy-of-the-usage-metrics-report) later in this article for details.
-- Connect to the dataset from Power BI Desktop. For every workspace, the dataset has the name "Report Usage Metrics Model." See [Establish a connection to a published dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
-
-    ![Connect to a usage report dataset](media/service-usage-metrics/power-bi-usage-dataset.png)
-
-## Open a Usage Metrics report for a dashboard or report
+## View a Usage Metrics report
 
 1. Start in the workspace that contains the dashboard or report.
 2. From either the workspace content list or from the dashboard or report itself, select the icon for **Usage metrics**  ![usage metrics icon](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png).
@@ -77,6 +64,18 @@ To dig into the report data, or to build your own reports against the underlying
 
 ![Report usage metrics report](media/service-usage-metrics/power-bi-report-usage-metrics-update.png)
 
+## About the Usage Metrics report
+
+When you select **Usage metrics** or the icon ![usage metrics icon](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) next to a dashboard or report, Power BI generates a pre-built report with usage metrics for that content for the last 90 days.  The report looks similar to the Power BI reports you're already familiar with. You can slice based on how your end users received access, whether they accessed via the web or mobile app, etc. As your dashboards and reports evolve, so too will the usage metrics report, which updates every day with new data.  
+
+Usage metrics reports don't show up in **Recent**, **Workspaces**, **Favorites**, or other content lists. They can't be added to an app. If you pin a tile from a usage metrics report to a dashboard, you can't add that dashboard to an app.
+
+To dig into the report data, or to build your own reports against the underlying dataset, you have two options: 
+
+- Make a copy of the report in the Power BI service. See [Save a copy of the Usage Metrics report](#save-a-copy-of-the-usage-metrics-report) later in this article for details.
+- Connect to the dataset from Power BI Desktop. For every workspace, the dataset has the name "Report Usage Metrics Model." See [Establish a connection to a published dataset](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset) for details.
+
+    ![Connect to a usage report dataset](media/service-usage-metrics/power-bi-usage-dataset.png)
 
 ## Which metrics are reported?
 
@@ -116,7 +115,7 @@ When you create a copy of the read-only, pre-built usage report, Power BI create
 
     ![Reports tab](media/service-usage-metrics/power-bi-new-report.png)
 
-## Remove the filter to see *all* workspace usage metrics
+## See *all* workspace usage metrics
 
 To see the metrics for all the dashboards or for all the reports in the workspace, you have to remove a filter. By default, the report is filtered to display metrics for only the dashboard or report that you used to create it.
 
