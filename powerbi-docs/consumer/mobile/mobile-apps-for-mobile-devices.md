@@ -18,7 +18,15 @@ ms.reviewer:
 # What are the Power BI mobile apps?
 Power BI offers a set of mobile apps for iOS, Android, and Windows 10 mobile devices. In the mobile apps, you connect to and interact with your cloud and on-premises data. 
 
+<p align="center">
 ![Power BI on mobile devices](./media/mobile-apps-for-mobile-devices/power-bi-mobile-apps-all-up.png)
+  <br><br>
+  <b>Get the app:</b><br>
+  <a href="#">![App Store](./media/mobile-apps-for-mobile-devices/mobile-apps-app-store.png)</a> |
+  <a href="#">![Google Play](./media/mobile-apps-for-mobile-devices/mobile-apps-google-play.png)</a> |
+  <a href="#">![Windows Store](./media/mobile-apps-for-mobile-devices/mobile-apps-windows-store.png)</a> |
+</p>
+
 
 You create reports in Power BI Desktop. You create dashboards, and view dashboards and reports in the Power BI report service ([https://powerbi.com](https://powerbi.com)). You view on-premises Power BI reports on [Power BI Report Server](../../report-server/get-started.md). All these reports and dashboards are available in the Power BI mobile apps, whether they're on premises or in the cloud. Try viewing and interacting with them on your mobile device, be it iOS (iPad, iPhone, iPod Touch, or Apple Watch), Android phone or tablet, or Windows 10 device.
 
