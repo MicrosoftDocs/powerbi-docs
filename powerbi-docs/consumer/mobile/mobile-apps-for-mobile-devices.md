@@ -23,11 +23,11 @@ Power BI offers a set of mobile apps for iOS, Android, and Windows 10 mobile dev
   <br><br>
   <b>Get the app:</b><br>
   <a href="https://go.microsoft.com/fwlink/?LinkId=526218&clcid=0x409">
-    <img src="./media/mobile-apps-for-mobile-devices/mobile-apps-app-store.png")/></a> |
+    <img src="./media/mobile-apps-for-mobile-devices/mobile-apps-app-store.png")/></a>
   <a href="https://go.microsoft.com/fwlink/?LinkId=544867&clcid=0x409">
-    <img src="./media/mobile-apps-for-mobile-devices/mobile-apps-google-play.png" /></a> |
+    <img src="./media/mobile-apps-for-mobile-devices/mobile-apps-google-play.png" /></a>
   <a href="https://go.microsoft.com/fwlink/?LinkId=526478&clcid=0x409">
-    <img src="./media/mobile-apps-for-mobile-devices/mobile-apps-windows-store.png"</a> |
+    <img src="./media/mobile-apps-for-mobile-devices/mobile-apps-windows-store.png"</a>
 </p>
 
 
