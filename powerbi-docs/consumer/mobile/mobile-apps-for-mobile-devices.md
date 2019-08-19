@@ -23,9 +23,8 @@ Power BI offers a set of mobile apps for iOS, Android, and Windows 10 mobile dev
 </p>
 
 Get the app:
-| [![Go to Power BI on App Store](./media/mobile-apps-for-mobile-devices/mobile-apps-app-store.png)](https://go.microsoft.com/fwlink/?LinkId=526218&clcid=0x409) |
-[![Go to Power BI on Google Play](./media/mobile-apps-for-mobile-devices/mobile-apps-google-play.png)](https://go.microsoft.com/fwlink/?LinkId=544867&clcid=0x409) |
-[![Go to Power BI on Windows Store](./media/mobile-apps-for-mobile-devices/mobile-apps-windows-store.png)](https://go.microsoft.com/fwlink/?LinkId=526478&clcid=0x409) |
+
+[![Go to Power BI on App Store](./media/mobile-apps-for-mobile-devices/mobile-apps-app-store.png)](https://go.microsoft.com/fwlink/?LinkId=526218&clcid=0x409) [![Go to Power BI on Google Play](./media/mobile-apps-for-mobile-devices/mobile-apps-google-play.png)](https://go.microsoft.com/fwlink/?LinkId=544867&clcid=0x409) [![Go to Power BI on Windows Store](./media/mobile-apps-for-mobile-devices/mobile-apps-windows-store.png)](https://go.microsoft.com/fwlink/?LinkId=526478&clcid=0x409)
   
 You create reports in Power BI Desktop. You create dashboards, and view dashboards and reports in the Power BI report service ([https://powerbi.com](https://powerbi.com)). You view on-premises Power BI reports on [Power BI Report Server](../../report-server/get-started.md). All these reports and dashboards are available in the Power BI mobile apps, whether they're on premises or in the cloud. Try viewing and interacting with them on your mobile device, be it iOS (iPad, iPhone, iPod Touch, or Apple Watch), Android phone or tablet, or Windows 10 device.
 
