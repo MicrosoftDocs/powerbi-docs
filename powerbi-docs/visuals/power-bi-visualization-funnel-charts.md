@@ -14,6 +14,8 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
+[!INCLUDE [power-bi-visuals-desktop-banner](includes/power-bi-visuals-desktop-banner.md)]
+
 # Funnel charts
 A funnel chart helps you visualize a linear process that has sequential connected stages. For example, a sales funnel that tracks customers through stages: Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
 
@@ -43,15 +45,18 @@ Funnel charts:
 
 ## Create a basic funnel chart
 Watch this video to see Will create a Funnel chart using the Sales and Marketing sample.
-
+   > [!NOTE]
+   > This video is of an older version of Power BI Desktop and may not be up-to-date with the current written guide.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qKRZPBnaUXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
 Now create your own funnel chart that shows the number of opportunities we have in each of our sales stages.
 
-These instructions use the Opportunity Analysis Sample. To follow along, [download the sample](../sample-datasets.md) for the Power BI service (app.powerbi.com) or Power BI Desktop.   
+These instructions use the Opportunity Analysis Sample. To follow along, [download the PBIX sample](../sample-datasets.md) for the Power BI Desktop.   
 
-1. Start on a blank report page and select the **SalesStage** \> **Sales Stage** field. If you're using Power BI service, make sure you open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
+1. Start on a blank report page and select the **SalesStage** \> **Sales Stage** field.
    
     ![select Sales Stage](media/power-bi-visualization-funnel-charts/funnelselectfield_new.png)
 2. [Convert the chart](power-bi-report-change-visualization-type.md) to a funnel. Notice that **Sales Stage** is in the **Group** well. 
@@ -78,15 +83,6 @@ Highlighting a bar in a funnel cross-filters the other visualizations on the rep
    
    ![short video showing visual interactions](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
 2. To set preferences for how visuals cross-highlight and cross-filter each other, see [Visual interactions in Power BI](../service-reports-visual-interactions.md)
-
-## Create a funnel chart using Q&A
-Open the Opportunity Analysis Sample dashboard, or any other dashboard that has at least one visualization pinned from the Opportunity Analysis Sample dataset.  When you type a question in Q&A, Power BI searches for answers in all the datasets that are associated with (have tiles pinned to) the selected dashboard. For more information see, [Power BI - basic concepts](../service-basic-concepts.md).
-
-1. On the Opportunity Analysis Sample dashboard, begin typing your question in the Q&A question box.
-   
-   ![question box and funnel](media/power-bi-visualization-funnel-charts/power-bi-qna.png)
-   
-2. Be sure to add "as funnel" so Power BI knows which visualization type you'd prefer.
 
 ## Next steps
 

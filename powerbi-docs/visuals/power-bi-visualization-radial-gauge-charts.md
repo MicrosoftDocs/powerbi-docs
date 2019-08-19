@@ -12,6 +12,7 @@ ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
+[!INCLUDE [power-bi-visuals-desktop-banner](includes/power-bi-visuals-desktop-banner.md)]
 
 # Radial gauge charts in Power BI
 
@@ -22,7 +23,10 @@ A radial gauge chart has a circular arc and shows a single value that measures p
 In this example, you're a car retailer tracking the sales team's average sales per month. The needle represents a 140 cars sales goal. The minimum possible average sales is 0 and the maximum is 200.  The blue shading shows that the team is averaging approximately 120 sales this month. Luckily, there's still another week to reach the goal.
 
 Watch Will show you how to create single metric visuals: gauges, cards, and KPIs.
-
+   > [!NOTE]
+   > This video is of an older version of Power BI Desktop and may not be up-to-date with the current written guide.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## When to use a radial gauge
@@ -39,31 +43,24 @@ Radial gauges are a great choice to:
 
 ## Prerequisites
 
-* The Power BI service or Power BI Desktop
+* The Power BI Desktop
 
 * Financial sample Excel workbook: [download the sample directly](http://go.microsoft.com/fwlink/?LinkID=521962).
 
+
 ## Create a basic radial gauge
 
-These instructions use the Power BI service. To follow along, sign in to Power BI and open the Excel Financial Sample file.
+These instructions use the Power BI Desktop. To follow along, open the Excel Financial Sample file.
 
 ### Step 1: Open the Financial Sample Excel file
 
 1. If you haven't already, download the [Financial Sample Excel file](../sample-financial-download.md). Remember where you save it.
 
-1. In the Power BI service, select **Get Data** > **Files**.
+1. Open the **Financial Sample** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. Select **Local File** and browse to the sample file's location.
-
-1. Select **Import**. Power BI adds the Financial Sample to your workspace as a dataset.
-
-1. From the **Datasets** content list, select the **Create report** icon for the **Financial Sample**.
-
-    ![Screenshot of the Datasets list with an arrow pointing to the Create report icon for the Financial Sample.](media/power-bi-visualization-radial-gauge-charts/power-bi-dataset.png)
+1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
 ### Step 2: Create a gauge to track Gross Sales
-
-In the last section, when you selected the **Create report** icon, Power BI created a blank report in the editing view.
 
 1. From the **Fields** pane, select **Gross Sales**.
 

@@ -12,13 +12,17 @@ ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
+[!INCLUDE [power-bi-visuals-desktop-banner](includes/power-bi-visuals-desktop-banner.md)]
 
 # Scatter charts, Bubble charts, and Dot Plot charts in Power BI
 
 A scatter chart always has two value axes to show: one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. Power BI may distribute these data points evenly or unevenly across the horizontal axis. It depends on the data the chart represents.
 
 Watch this video to see Will create a scatter chart and then follow the steps below to create one yourself.
-
+   > [!NOTE]
+   > This video is of an older version of Power BI Desktop and may not be up-to-date with the current written guide.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 You can set the number of data points, up to a maximum of 10,000.  
@@ -68,15 +72,22 @@ They're a great choice if you want to include categorical data along the X-Axis.
 
 ## Prerequisites
 
-* The Power BI service
+* The Power BI Desktop
 
 * Retail Analysis Sample report
 
 ## Create a scatter chart
 
-To follow along, sign into [the Power BI service](https://app.powerbi.com) and open the [Retail Analysis Sample](../sample-datasets.md) report in [Edit report](../service-interact-with-a-report-in-editing-view.md) view.
+To follow along, open the [Retail Analysis .PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) in Power BI Desktop.
 
-1. Select the ![Screenshot of the yellow plus icon.](media/power-bi-visualization-scatter/power-bi-yellow-plus-icon.png) to create a blank report page.
+1. From the top left section of the menubar, select **File** and **Open**
+   
+2. Find the **Retail Analysis sample PBIX file** saved on your local machine.
+
+1. Open the **Retail Analysis Sample** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+
 
 1. From the **Fields** pane, select these fields:
 
@@ -135,7 +146,7 @@ From the **X-Axis** pane, remove **Sales per sq ft** and replace it with **Distr
 
 ![Screenshot of a new dot plot chart.](media/power-bi-visualization-scatter/power-bi-dot-plot-squares.png)
 
-## Considerations and Troubleshooting
+## Considerations and troubleshooting
 
 ### Your scatter chart has only one data point
 

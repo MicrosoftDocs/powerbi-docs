@@ -17,9 +17,17 @@ LocalizationGroup: Visualizations
 A doughnut chart is similar to a pie chart in that it shows the relationship of parts to a whole. The only difference is that the center is blank and allows space for a label or icon.
 
 ## Create a doughnut chart
-These instructions use the Retail Analysis Sample to create a doughnut chart that displays this year's sales by category. To follow along, [download the sample](../sample-datasets.md) for Power BI service or Power BI Desktop.
+These instructions use the Retail Analysis Sample to create a doughnut chart that displays this year's sales by category. To follow along, [download the .PBIX sample](../sample-datasets.md) for Power BI Desktop.
 
-1. Start on a blank report page. If you're using Power BI service, make sure you open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
+1. From the top left section of the menubar, select **File** and **Open**
+   
+2. Find the **Retail Analysis sample PBIX file** saved on your local machine.
+
+1. Open the **Retail Analysis Sample** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+
+
 
 2. From the Fields pane, select **Sales** \> **Last Year Sales**.  
    

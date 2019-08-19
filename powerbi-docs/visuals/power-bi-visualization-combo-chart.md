@@ -12,6 +12,7 @@ ms.date: 05/23/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
+[!INCLUDE [power-bi-visuals-desktop-banner](includes/power-bi-visuals-desktop-banner.md)]
 
 # Combo chart in Power BI
 
@@ -35,21 +36,28 @@ Combo charts are a great choice:
 
 ## Prerequisites
 
-Combo charts are available in Power BI service and Power BI Desktop. This tutorial uses Power BI service to create a combo chart. Make sure you have user credentials to sign in to Power BI.
+Combo charts are available in Power BI service and Power BI Desktop. This tutorial uses Power BI Desktop to create a combo chart.
 
 Watch Will create a combo chart using the Sales and Marketing sample.
-
+   > [!NOTE]
+   > This video is of an older version of Power BI Desktop and may not be up-to-date with the current written guide.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>  
 
 ## Create a basic, single-axis, combo chart
 
-To follow along, open Power BI service and connect to the **Retail Analysis sample**. To create your own combo chart, sign in to Power BI service and select **Get Data** > **Samples** > **Retail Analysis Sample** > **Connect**. The **Retail Analysis Sample** dashboard appears.
+This tutorial uses the PBIX [Retail Analysis sample](../sample-retail-analysis.md) file.
 
-1. From the "Retail Analysis Sample" dashboard, select the **Total Stores** tile to open the **Store Sales Overview** report.
+1. From the top left section of the menubar, select **File** and **Open**
+   
+2. Find the **Retail Analysis sample PBIX file** saved on your local machine.
 
-1. Select **Edit Report** to open the report in Editing View.
+1. Open the **Retail Analysis Sample** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-1. At the bottom of the page, select **+** to add a new report page.
+1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+
+
 
 1. Create a column chart that shows this year's sales and gross margin by month.
 
