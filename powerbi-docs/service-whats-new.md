@@ -620,10 +620,6 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 * The dynamic canvas size we display by default renders all our report items with optimal dimensions for the browser window size. If you want to lock in the aspect ratio, or want to fit your report in a different way, we now support another three options for you:Fit to Page, Fit to Width, and Actual Size.
 * We also Increased the limit on the number of datasets and reports you can have. You can now have up to 200 datasets and 200 reports for each dataset in your Power BI account.
 
-**August 25, 2015**
-
-* Now you can use Power BI to monitor, explore and [visualize your Adobe Analytics data](http://blogs.msdn.com/b/powerbi/archive/2015/08/25/exploring-your-adobe-analytics-data-in-power-bi.aspx). With an out-of-box content pack, you can connect and discover insights from your data immediately. To learn more, visit the [Adobe Analytics content pack for Power BI help page](service-connect-to-adobe-analytics.md).
-
 **August 18, 2015**
 
 * Azure Mobile Engagement is an app analytics service that allows developers to track their application’s performance helping them increase retention and app usage. Using the [Power BI Azure Mobile Engagement content pack](http://blogs.msdn.com/b/powerbi/archive/2015/08/17/monitor-and-analyze-your-azure-mobile-engagement-data-in-power-bi.aspx) you can quickly connect to an out-of-box dashboard, a set of reports and a curated data set, and instantly get insights into how well your app is doing. Please see the [Azure Mobile Engagement content pack for Power BI help page](service-connect-to-azure-mobile.md) for more information.
@@ -679,10 +675,6 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 * SweetIQ lets you to easily track your local listings by providing location and review data from your local search ecosystem. Power BI allows you to analyze and monitor that data, by offering [out of box content](http://blogs.msdn.com/b/powerbi/archive/2015/06/16/analyze-and-monitor-your-sweetiq-data-with-power-bi.aspx) built from your SweetIQ data. For additional details on how to get started, please see the SweetIQ content pack for Power BI [help page](service-connect-to-sweetiq.md).
 
-**June 9, 2015**
-
-* Power BI allows you to monitor and explore that data using the [MailChimp APIs](http://blogs.msdn.com/b/powerbi/archive/2015/06/09/user-power-bi-to-monitor-and-visualize-your-mailchimp-data.aspx), offering a set of out-of-box content for your analytics. The dashboard, reports and dataset curated for the MailChimp scenario allow you to easily access data such as Top Campaigns of Total Opens by Day of Week. For additional details on how to get started, please see the MailChimp content pack for Power BI [documentation](service-connect-to-mailchimp.md).
-
 **June 2, 2015**
 
 * Now tracking important statistics about your apps is easy with Power BI and the [appFigures content pack](http://blogs.msdn.com/b/powerbi/archive/2015/06/02/explore-and-analyze-your-appfigures-data-with-power-bi.aspx). For additional details on how to connect and get started, see the [documentation](service-connect-to-appfigures.md) for appFigures content pack for Power BI.
@@ -694,7 +686,6 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **May 13, 2015**
 
-* With the latest update to Power BI, you can connect to the data logged by **SQL Database Auditing** with a set of out of box reports and a customized dashboard. This content pack makes it easy to find suspicious events, unusual activity, and trends, based on a dataset that has been created for your reporting. Learn more in the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/14/monitor-your-azure-sql-database-auditing-activity-with-power-bi.aspx) and [documentation](service-connect-to-azure-sql-database-auditing.md).
 * You can connect directly to data stored in your **Azure SQL Database**. We dynamically generate and send down queries to the source, allowing you to create interactive reports directly over your database. You can read the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/13/using-power-bi-to-visualize-and-explore-azure-sql-databases.aspx) and [documentation](service-azure-sql-database-with-direct-connect.md) for more information.
 
 **May 7, 2015**
