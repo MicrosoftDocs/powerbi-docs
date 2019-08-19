@@ -14,7 +14,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-[!INCLUDE [power-bi-visuals-desktop-banner](includes/power-bi-visuals-desktop-banner.md)]
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 # Funnel charts
 A funnel chart helps you visualize a linear process that has sequential connected stages. For example, a sales funnel that tracks customers through stages: Lead \> Qualified Lead \> Prospect \> Contract \> Close.  At a glance, the shape of the funnel conveys the health of the process you're tracking.
