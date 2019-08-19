@@ -236,7 +236,7 @@ As end users edit or create reports, they can use the production multi-tenant da
 * The number of workspaces V2 (folders) that a single user/application can be a member/admin of is 1000.
 * The number of datasets in a single workspace is 1000.
 * The number of reports/dashboards connected to a single dataset is 1000.
-* THe dataset memory size limit to upload a *.pbix* file is 10 GB.
+* The dataset memory size limit to upload a *.pbix* file is 10 GB.
 
 **Power BI Capacity considerations and limitations:**
 
