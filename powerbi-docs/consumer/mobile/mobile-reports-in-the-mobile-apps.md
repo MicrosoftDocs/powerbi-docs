@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/21/2019
+ms.date: 08/09/2019
 ms.author: mshenhav
 
 ---
@@ -26,7 +26,7 @@ A Power BI report is an interactive view of your data, with visuals that represe
 3. Interact with the reports in the Power BI mobile apps.
 
 ## Open a Power BI report in the mobile app
-Power BI reports are stored in different places in the mobile app, depending on where you got them. They can be in Apps, Shared with me, Workspaces (including My Workspace), or on a report server. Sometimes you go through a related dashboard to get to a report, and sometimes they're listed.
+Power BI reports are stored in different places in the mobile app, depending on where you got them. They can be in Apps, Shared with me, Workspaces (including My Workspace), or on a report server. Sometimes, you go through a related dashboard to get to a report, and sometimes they're listed.
 
 In lists and menus, you'll find an icon next to a report name, which helps you understand that the item is a report:
 
@@ -76,7 +76,9 @@ Report authors can define hierarchies in the data and relationships among report
 
 ![Drill actions](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
 
+
 When you tap a specific part of a visual and then tap the *drillthrough* option, Power BI takes you to a different page in the report, filtered to the value you tapped. A report author can define one or more drillthrough options, each taking you to a different page. In that case, you can choose which option you want to drill through. The back button takes you back to the previous page.
+
 
 For more information, read about how to [add drillthrough in Power BI Desktop](../../desktop-drillthrough.md).
    
@@ -100,6 +102,7 @@ You can move between report pages by swiping from the edge of your screen to the
 
 #### All report actions
 When you tap the ellipsis (...) button in the report footer, you'll see all the actions that you can perform on a report:
+
 
 ![All report actions](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
 

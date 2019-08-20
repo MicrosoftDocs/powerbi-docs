@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 08/12/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -92,7 +92,7 @@ Apps are the evolution of organizational content packs. If you have organization
 * Over time we plan to deprecate organizational content packs, so we recommend you create apps from now on.  
 * With the new workspace experience preview, we're taking the first steps towards deprecating organizational content packs. You can't consume or create them in preview workspaces.
 
-See [How are the new app workspaces different from existing app workspaces?](service-new-workspaces.md#how-are-the-new-workspaces-different-from-current-workspaces) to compare the two. 
+See [How the new app workspaces are different from existing app workspaces](service-new-workspaces.md#how-the-new-workspaces-are-different) to compare the two. 
 
 ## Next steps
 * [Install and use apps in Power BI](service-create-distribute-apps.md)

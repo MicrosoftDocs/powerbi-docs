@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/09/2019
+ms.date: 08/19/2019
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -121,6 +121,9 @@ The storage mode can also be viewed on the tooltip for each table.
 For any Power BI Desktop file (a *.pbix* file) that contains some tables from DirectQuery and some Import tables, the status bar displays a storage mode called **Mixed**. You can click that term in the status bar and easily switch all tables to Import.
 
 For more information about storage mode, see [Storage mode in Power BI Desktop (preview)](desktop-storage-mode.md).  
+
+> [!NOTE]
+> You can use *Mixed* storage mode in Power BI Desktop and in the Power BI service.
 
 ## Calculated tables
 

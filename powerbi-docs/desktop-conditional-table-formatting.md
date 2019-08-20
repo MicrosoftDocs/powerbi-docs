@@ -10,7 +10,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 08/16/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -133,6 +133,12 @@ You can use any of the values listed in the CSS color spec at [https://www.w3.or
 * RGB or RGBA values e.g. RGBA(234, 234, 234, 0.5)
 * HSL or HSLA values e.g. HSLA(123, 75%, 75%, 0.5)
 * Color names e.g. Green, SkyBlue, PeachPuff 
+
+## Considerations and limitations
+There are a few considerations to keep in mind when working with conditional table formatting:
+
+* Conditional formatting is applied only to the values of a **Matrix** visual, and does not apply to any subtotals or grand totals. 
+
 
 ## Next steps
 For more information, see the following article:  

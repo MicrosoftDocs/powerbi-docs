@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/22/2019
+ms.date: 08/19/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -136,11 +136,8 @@ When using **DirectQuery**, many of these model enrichments can still be made, a
 * **Limitations in calculated columns:** Calculated columns are limited to being intra-row, as in, they can only refer to values of other columns of the same table, without the use of any aggregate functions. Additionally, the DAX scalar functions (such as LEFT()) that are allowed, will be limited to those which can simply be pushed to the underlying source, hence will vary depending upon the exact capabilities of the source. Functions that are not supported will not be listed in autocomplete when authoring the DAX for a calculated column, and would result in an error if used.
 * **No support for parent-child DAX functions:** When in DirectQuery model, it is not possible to use the family of DAX PATH() functions, that generally handle Parent-Child structures (such as chart of accounts, or employee hierarchies).
 * **Calculated tables are not supported:** The ability to define a calculated table using a DAX expression is not supported in DirectQuery mode.
-* **Relationship filtering is limited to a single direction:** When using DirectQuery, it is not possible to set the Cross Filter direction on a relationship to “Both”. For example, with the three tables below, it would not be possible to build a visual showing each Customer[Gender], and the number of Product[Category] bought by each. Use of such bi-directional filtering is described [in this detailed whitepaper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (the paper presents examples in the context of SQL Server Analysis Services, but the fundamental points apply equally to Power BI).
-  
-  ![](media/desktop-directquery-about/directquery-about_01.png)
-  
-  Again, the limitation is imposed due to the performance implications. One particularly important application of this is when defining Row Level Security as part of the report, as a common pattern is to have a many-many relationship between the users and the entities they are allowed access to, and use of bi-directional filtering is necessary to enforce this. However, use of bi-directional filtering for DirectQuery models should be used judiciously, with careful attention paid to any detrimental impact on performance.  
+* **Relationship filtering:** Use of bi-directional filtering is described [in this detailed whitepaper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (the paper presents examples in the context of SQL Server Analysis Services, but the fundamental points apply equally to Power BI).
+
 * **No Clustering:** When using DirectQuery, it is not possible to use the Clustering  capability, to automatically find groups
 
 ### Reporting limitations

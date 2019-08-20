@@ -140,7 +140,7 @@ The best managed material type is the one with lowest downtime or no impact, reg
     There were many more raw materials defects in 2014 than in 2013.  
 
     ![Q&A question: Show material types, year, and total defect qty](media/sample-supplier-quality/supplier12.png)  
-6. Next, change the question to: *show material types, year, and total **downtime minutes***.  
+6. Next, change the question to: _show material types, year, and total **downtime minutes**_.  
 
    ![Q&A question: Show material types, year, and total downtime minutes](media/sample-supplier-quality/supplier13.png)
 
