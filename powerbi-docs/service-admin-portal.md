@@ -184,7 +184,7 @@ In the admin portal, you also control which users have permissions to distribute
 
 ### Share content with external users
 
-Users in the organization can share dashboards with users outside the organization. [Learn more](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
+Users in the organization can share dashboards with users outside the organization. Learn more about [sharing externally](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
 
 ![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 

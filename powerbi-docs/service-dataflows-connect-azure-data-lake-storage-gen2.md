@@ -173,6 +173,7 @@ This feature is a preview feature, and its behavior may change as it approaches 
 * Only owners of a dataflow stored in Azure Data Lake Storage Gen2 can access its data by default. To authorize additional people to the dataflows stored in Azure, you must add them to the dataflow’s CDM folder 
 * Creating dataflows with linked entities is only possible when they are stored in the same storage account
 * On-premises data sources, in Power BI shared capacities, are not supported in dataflows stored in your organization’s data lake
+* Snapshots are not deleted automatically on ADLS Gen 2. If you want to free up space you can create an Azure function to periodically clean up old snapshots.
 
 There are also a few known issues, as described in this section.
 
