@@ -63,7 +63,7 @@ Watch Amanda share the dashboard with colleagues inside and outside Amanda's com
    
    ![Shared with me list page](media/service-share-dashboards/power-bi-shared-with-me-new-look.png)
    
-   When recipients outside your organization click the link, they see the dashboard or report, but not in the usual Power BI portal. For more information, see [Share a dashboard or report with people outside your organization](#share-a-dashboard-or-report-with-people-outside-your-organization).
+   When recipients outside your organization click the link, they see the dashboard or report, but not in the usual Power BI portal. For more information, see [Share a dashboard or report with people outside your organization](#share-a-dashboard-or-report-outside-your-organization).
 
 ## See who has access to a dashboard or report
 Sometimes you need to see the people you've shared with, and see who they've shared it with:
