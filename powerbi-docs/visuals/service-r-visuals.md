@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 08/16/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 The Power BI service supports viewing and interacting with visuals created with R scripts. Visuals created with R scripts, commonly called *R visuals*, can present advanced data shaping and analytics such as forecasting, using the rich analytics and visualization power of R.
 
 > [!NOTE]
-> The [R programming language](https://www.r-project.org/) is among the most widely used programming languages by statisticians, data scientists, and business analysts. The R language has an open source community that offers over 7,000 add-on packages, as well as widely used R User Groups. The version of R deployed in the Power BI service is *Revolution R Open 3.2.2.*
+> The [R programming language](https://www.r-project.org/) is among the most widely used programming languages by statisticians, data scientists, and business analysts. The R language has an open source community that offers over 7,000 add-on packages, as well as widely used R User Groups. The version of R deployed in the Power BI service is *Microsoft R 3.4.4.*
 > 
 > 
 

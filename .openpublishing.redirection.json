@@ -161,6 +161,31 @@
             "redirect_document_id": false
         }, 
         {
+            "source_path": "powerbi-docs/service-connect-to-mailchimp.md", 
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/service-connect-to-adobe-analytics.md", 
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/service-connect-to-zuora.md", 
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/service-connect-to-sparkpost.md", 
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/service-connect-to-azure-sql-database-auditing.md", 
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        }, 
+        {
             "source_path": "powerbi-docs/consumer/end-user-connect-to-services.md", 
             "redirect_url": "/power-bi/service-connect-to-services",
             "redirect_document_id": false
