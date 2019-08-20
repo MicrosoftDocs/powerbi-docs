@@ -6,7 +6,7 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: overview
-ms.date: 05/30/2019
+ms.date: 08/19/2019
 ms.author: maggies
 
 LocalizationGroup: Get started
@@ -22,11 +22,11 @@ Power BI can be simple and fast, capable of creating quick insights from an Exce
 
 ## The parts of Power BI
 Power BI consists of: 
-- A Windows desktop application called **Power BI Desktop**
-- An online SaaS (*Software as a Service*) service called the **Power BI service** 
-- Power BI **mobile apps** for Windows, iOS, and Android devices
+- A Windows desktop application called **Power BI Desktop**.
+- An online SaaS (*Software as a Service*) service called the **Power BI service**. 
+- Power BI **mobile apps** for Windows, iOS, and Android devices.
 
-![Power BI Desktop, service, mobile](media/power-bi-overview/power-bi-blocks.png)
+![Power BI Desktop, service, mobile](media/power-bi-overview/power-bi-overview-blocks.png)
 
 These three elements&mdash;Power BI Desktop, the service, and the mobile apps&mdash;are designed to let people create, share, and consume business insights in the way that serves them, or their role, most effectively.
 

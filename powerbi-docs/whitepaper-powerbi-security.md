@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2019
+ms.date: 08/15/2019
 LocalizationGroup: Conceptual
 ---
 
@@ -95,17 +95,16 @@ A Power BI tenant is created in the datacenter deemed closest to the country (or
 
 ### Multiple Geographies (Multi-geo)
 
-Some organizations require a Power BI presence in multiple geographies, or regions, based on business needs. For example, a business may have its Power BI tenant in the United States but may also do business in other geographical areas, such as Australia, and need Power BI services and data to remain in that remote region.  Beginning in the second half of 2018, organizations with their tenant in one geography can also access Power BI resources in another geography when properly provisioned. This feature is referred to as **multi-geo** for convenience and reference throughout this document.
+Some organizations require a Power BI presence in multiple geographies, or regions, based on business needs. For example, a business may have its Power BI tenant in the United States but may also do business in other geographical areas, such as Australia, and need certain Power BI data to remain at rest in that remote region to comply with local regulations. Beginning in the second half of 2018, organizations with their home tenant in one geography can also provision and access Power BI resources located in another geography. This feature is referred to as **multi-geo** for convenience and reference throughout this document.
 
-There are technical implications to keep in mind when operating in different geographies, which are clarified throughout this document. Important considerations include the following:
+The most current and primary article for multi-geo information is the [configure Multi-Geo support for Power BI Premium](service-admin-premium-multi-geo.md) article. 
 
-- A cached query stored in a remote region will stay in that region at rest, however other data in transit may go back and forth between multiple geographies.
-- Reports in PBIX or XLSX files in a remote region that are published to Power BI sometimes result in a copy or shadow copy being stored in Power BI's Azure Blob storage, and when that occurs the data is encrypted using Azure Storage Service Encryption (SSE).
-- When moving data from one region to another in a multi-geo environment, garbage collection in the region from which the data was moved occurs within 7 to 10 days, at which point the copy of data moved from the original region will be destroyed.
+There are multiple technical details that should be evaluated in the context of local laws and regulations when operating in different geographies. These details include the following:
 
-The following image illustrates how the Power BI services provided in the remote region with a multi-geo environment is routed through the **Power BI Back-End** cluster, where a connection to the client's remote Power BI subscription virtual machine is established.
-
-![Multi-geo](media/whitepaper-powerbi-security/powerbi-security-whitepaper_07.png)
+- A remote query execution layer is hosted in the remote capacity region, to ensure that the data model, caches, and most data processing remain in the remote capacity region. There are some exceptions, as detailed on the [multi-geo for Power BI Premium](service-admin-premium-multi-geo.md) article.
+- A cached query text and corresponding result stored in a remote region will stay in that region at rest, however other data in transit may go back and forth between multiple geographies.
+- PBIX or XLSX files that are published (uploaded) to a multi-geo capacity of the Power BI service may result in a copy being temporarily stored in Azure Blob storage in Power BI's tenant region. In such circumstances, the data is encrypted using Azure Storage Service Encryption (SSE), and the copy is scheduled for garbage collection as soon as the file content processing and transfer to the remote region is completed. 
+- When moving data across regions in a multi-geo environment, the instance of the data in the source region will be deleted within 7-30 days. 
 
 ### Datacenters and Locales
 

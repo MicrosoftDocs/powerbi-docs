@@ -53,7 +53,7 @@ After you've created the DAX expression for the field you create in your model, 
 
 To select the field and apply it, go to the **Visualizations** pane. In the **Format** area, select **Title** to show the title options for the visual. 
 
-When you right-click **Title text**, a context menu appears that allows you to select ***fx*Conditional formatting**. When you select that menu item, a **Title text** dialog box appears. 
+When you right-click **Title text**, a context menu appears that allows you to select **<em>fx</em>Conditional formatting**. When you select that menu item, a **Title text** dialog box appears. 
 
 ![Screenshot of Title text dialog box](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 

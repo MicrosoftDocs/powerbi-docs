@@ -140,7 +140,6 @@ Given those example names and settings, complete the following configuration ste
     $c = Get-ADGroup ResourceDelGroup
     Set-ADUser SQLService -PrincipalsAllowedToDelegateToAccount $c
     ```
-
 5. You can verify that the update is reflected in the "Attribute Editor" tab in the properties for the back-end service account in **Active Directory Users and Computers.**
 
 ## Grant the gateway service account local policy rights on the gateway machine
