@@ -55,6 +55,8 @@
       href: desktop-latest-update.md
     - name: "Grouping visuals in Power BI Desktop"
       href: desktop-grouping-visuals.md      
+    - name: "Using templates in Power BI Desktop"
+      href: desktop-templates.md      
     - name: "Modeling view in Power BI Desktop"
       href: desktop-modeling-view.md      
     - name: "Aggregations in Power BI Desktop"
@@ -493,7 +495,7 @@
       items: 
       - name: "Use datasets across workspaces"
         href: service-datasets-across-workspaces.md
-      - name: "Create and share datasets (Preview)"
+      - name: "Share datasets (Preview)"
         href: service-datasets-build-permissions.md
       - name: "Create reports based on datasets"
         href: service-datasets-discover-across-workspaces.md
@@ -757,8 +759,6 @@
           href: service-connect-to-services.md
         - name: "Acumatica"
           href: service-connect-to-acumatica.md
-        - name: "Adobe Analytics"
-          href: service-connect-to-adobe-analytics.md
         - name: "Alpine Metrics Sales Predictions"
           href: service-connect-to-alpine-metrics.md
         - name: "appFigures"
@@ -789,8 +789,6 @@
           href: service-connect-to-intelliboard.md
         - name: "Lithium"
           href: service-connect-to-lithium.md
-        - name: "MailChimp"
-          href: service-connect-to-mailchimp.md
         - name: "Mandrill"
           href: service-connect-to-mandrill.md
         - name: "Marketo"
@@ -821,10 +819,6 @@
           href: service-connect-to-servicenow.md
         - name: "Smartsheet"
           href: service-connect-to-smartsheet.md
-        - name: "SparkPost"
-          href: service-connect-to-sparkpost.md
-        - name: "SQL Database Auditing"
-          href: service-connect-to-azure-sql-database-auditing.md
         - name: "SQL Sentry"
           href: service-connect-to-sql-sentry.md
         - name: "Stripe"
@@ -851,8 +845,6 @@
           href: service-connect-to-zendesk.md
         - name: "Ziosk"
           href: service-connect-to-ziosk.md
-        - name: "Zuora"
-          href: service-connect-to-zuora.md
       - name: Organizational content packs
         items:
         - name: "Intro to organizational content packs"
@@ -1442,3 +1434,5 @@
   items:
   - name: "What is a star schema?"
     href: guidance/star-schema.md
+  - name: "Reduce data model size"
+    href: guidance/import-modeling-data-reduction.md

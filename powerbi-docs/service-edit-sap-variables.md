@@ -1,8 +1,8 @@
 ---
 title: Edit SAP variables in the Power BI service (preview)
 description: Azure and Power BI
-author: maggiesMSFT
-ms.author: maggies
+author: Sujata994
+ms.author: sunaraya
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -33,7 +33,7 @@ There are a few requirements for using the SAP edit variables feature. The follo
 
 **Power BI Premium subscription required** – the SAP edit variables feature currently only works in Power BI Premium subscriptions.
 
-**SSO setup required** – for this feature to work, single sign-on (SSO) must be configured. See [overview of single sign-on (SSO)](service-gateway-sso-overview.md) for more information.
+**SSO set-up required** – for this feature to work, single sign-on (SSO) must be configured. See [overview of single sign-on (SSO)](service-gateway-sso-overview.md) for more information.
 
 **New Gateway bits required** - Download latest gateway and update your existing gateway. See [service gateway](service-gateway-onprem.md) for more information.
 

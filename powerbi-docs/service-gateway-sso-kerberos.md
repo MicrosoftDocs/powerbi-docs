@@ -109,7 +109,7 @@ Now, skip to [Grant the gateway service account local policy rights on the gatew
 ## Configure the gateway service account for resource-based Kerberos constrained delegation
 
 > [!NOTE]
-> Complete the steps in this section if you want to enable resource-based Kerberos constrained delegation. If you want to enable standard Kerberos constrained delegation complete the steps in the [Configure standard Kerberos constrained delegation](#FIX ME) subsection.
+> Complete the steps in this section if you want to enable resource-based Kerberos constrained delegation. If you want to enable standard Kerberos constrained delegation complete the steps in the [Configure standard Kerberos constrained delegation]() subsection.
 
 Use [resource-based Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) to enable single sign-on connectivity for Windows Server 2012 and later versions, permitting front-end and back-end services to be in different domains. For this to work, the back-end service domain needs to trust the front-end service domain.
 
@@ -140,7 +140,6 @@ Given those example names and settings, complete the following configuration ste
     $c = Get-ADGroup ResourceDelGroup
     Set-ADUser SQLService -PrincipalsAllowedToDelegateToAccount $c
     ```
-
 5. You can verify that the update is reflected in the "Attribute Editor" tab in the properties for the back-end service account in **Active Directory Users and Computers.**
 
 ## Grant the gateway service account local policy rights on the gateway machine

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 08/19/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -44,6 +44,10 @@ The new filter experience is turned on by default for new reports. You can enabl
 3. Under **Filtering experience**, select **Enable the updated filter pane, and show filters in the visual header for this report**.
 
 ### Turn on new filters for an existing report in the service
+
+If you've turned on the **New look** in the Power BI service ![New look turned on](media/power-bi-report-filter/power-bi-new-look-on.png), the new filter experience is turned on automatically. Read more about the [new look in the Power BI service](service-new-look.md).
+
+If you haven't turned on the new look, you can still see the new filter experience by following these steps.
 
 1. In the Power BI service, select the **Reports** tab in the content list for a workspace.
 2. Find the report you want to enable, and select the **Settings** icon ![Report Settings icon](media/power-bi-report-filter/power-bi-settings-icon.png) for that report.
@@ -117,15 +121,13 @@ You can also format these elements for filter cards, depending on if they're app
 1. In the report, click the report itself, or the background (*wallpaper*), then in the **Visualizations** pane, select **Format**. 
     You see options for formatting the report page, the wallpaper, and also the Filters pane and Filter cards.
 
-    ![Select the Format icon](media/power-bi-report-filter/power-bi-filter-format.png)    
-
 1. Expand **Filter pane** to set color for the background, icon, and left border, to complement the report page.
 
-    ![Expand Filter pane](media/power-bi-report-filter/power-bi-filter-format-pane-font.png)
+    ![Expand Filter pane](media/power-bi-report-filter/power-bi-format-filter-pane.png)
 
 1. Expand **Filter cards** to set the **Available** and **Applied** color and border. If you make available and applied cards different colors, it's obvious which filters are applied. 
   
-    ![Expand Filter card](media/power-bi-report-filter/power-bi-filter-format-card-font.png)
+    ![Expand Filter card](media/power-bi-report-filter/power-bi-format-filter-cards.png)
 
 ## Theming for filter pane
 You can now modify the default settings of the filter pane with the theme file. Here’s a sample theme snippet to get you started:
@@ -220,7 +222,7 @@ When you're editing the Filters pane, you can double-click the title to edit it.
 
 ## Restrict changes to filter type
 
-Under the Filtering experience section of the report settings you have an option to control if users can change the filter type.
+Under the Filtering experience section of the report settings, you have an option to control if users can change the filter type.
 
 ![Restrict changing filter type](media/power-bi-report-filter/power-bi-filter-restrict-change.png)
 

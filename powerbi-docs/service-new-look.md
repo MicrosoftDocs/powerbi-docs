@@ -1,5 +1,5 @@
 ---
-title: "Navigate the 'new look' of the Power BI service"
+title: "The 'new look' of the Power BI service"
 description: The Power BI service (app.powerbi.com) has a new look. This article describes how to navigate reports using the new look. 
 author: maggiesMSFT
 manager: kfile
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/24/2019
+ms.date: 08/19/2019
 ms.author: maggies
 # Customer intent: As a Power BI customer or potential customer, I'd like to know what the differences are between the previous look of the Power BI service and the new look
 LocalizationGroup: Get started
 
 ---
-# Navigate the 'new look' of the Power BI service
+# The 'new look' of the Power BI service
 
-The Power BI service has a new look. We’ve made it easier for you to view reports. The new look is a modern experience that’s simpler and builds on your familiarity with other Microsoft products. Across the Power BI service, we’ve made report content the main point of focus by switching to a lighter color theme and updating icons. Here's an overview of what’s changed in the new look. See the numbered sections for details:
+The Power BI service (app.powerbi.com) has a new look that makes it easier to view and interact with your reports. The new look is a modern experience that’s simpler and builds on your familiarity with other Microsoft products. Across the Power BI service, we’ve made report content the main point of focus by switching to a lighter color theme and updating icons. Here's an overview of what’s changed in the new look. See the numbered sections for details:
 
 ![New look overview of changes](media/service-new-look/power-bi-new-look-changes.png)
 
@@ -28,11 +28,11 @@ This animation demonstrates the changes to the way reports look, in action.
 
 ## 1. Opt in to the new look
 
-Any Power BI service user can opt in to the new look. Just slide **New look off** to **New look off**.
+Any Power BI service user can opt in to the new look. Just slide **New look off** to **New look on**.
 
 ![Opting in to the new look](media/service-new-look/power-bi-new-look-off.png)
 
-If you need to go back to the old look, select the ellipsis menu in the upper-right corner.
+If you need to return to the old look, just slide it back to **off** ![New look on](media/service-new-look/power-bi-new-look-toggle-on.png). If you don't see it, select the ellipsis menu in the upper-right corner.
 
 ![Opting out to the new look](media/service-new-look/power-bi-new-look-on.png)
 
@@ -79,7 +79,7 @@ Dashboards also have a simplified action bar, just like reports and apps, for a 
 
 ## No changes to edit mode 
 
-We’ve kept the authoring experience similar to that in Desktop. The new look changes only apply to the reading view.
+We’ve kept the authoring experience similar to the experience in Desktop. The new look changes only apply to the reading view.
 
 ## Next steps
 
