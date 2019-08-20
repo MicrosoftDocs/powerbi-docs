@@ -50,5 +50,4 @@ Here are additional details about those steps:
 Now that you understand the basics of SSO through the gateway, read more detailed information about Kerberos and SAML:
 
 * [Single sign-on (SSO) - Kerberos](service-gateway-sso-kerberos.md)
-* [Single sign-on (SSO) - Kerberos - resource-based](service-gateway-sso-kerberos-resource.md)
 * [Single sign-on (SSO) - SAML](service-gateway-sso-saml.md)

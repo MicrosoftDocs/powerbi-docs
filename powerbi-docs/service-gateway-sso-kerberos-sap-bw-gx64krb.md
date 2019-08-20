@@ -12,11 +12,11 @@ ms.date: 08/01/2019
 LocalizationGroup: Gateways
 ---
 > [!NOTE]
-> Complete the steps on this page in addition to the steps in [Configure SSO - Kerberos](#service-gateway-sso-kerberos) before attempting to refresh a SAP BW-based report that uses Kerberos SSO.
+> Complete the steps on this page in addition to the steps in [Configure SSO - Kerberos](#service-gateway-sso-kerberos.md) before attempting to refresh a SAP BW-based report that uses Kerberos SSO.
 
 ## Configure SAP BW for SSO using gx64krb5
 
-Now that you have completed the configuration steps in [Configure SSO - Kerberos](#service-gateway-sso-kerberos) up to "Complete datasource-specific configuration", you can configure your SAP Business Warehouse (SAP BW) server for SSO using the gateway.
+Now that you have completed the configuration steps in [Configure SSO - Kerberos](#service-gateway-sso-kerberos.md) up to "Complete datasource-specific configuration", you can configure your SAP Business Warehouse (SAP BW) server for SSO using the gateway.
 
 > [!NOTE]
 > Microsoft reccomends the use of CommonCryptoLib as your SNC library. SAP no longer offers support for gx64krb5/gsskrb5 and the steps required to configure it for use with the gateway are significantly more complex compared to CommonCryptoLib.
@@ -153,7 +153,7 @@ Add required registry entries to the registry of the machine that the gateway is
 
 1. Select the **Use SSO via Kerberos for DirectQuery queries** box, and select **Apply**. If the test connection is not successful, verify that the previous setup and configuration steps were completed correctly.
 
-1. [Run a Power BI report](service-gateway-sso-kerberos#run-a-power-bi-report)
+1. [Run a Power BI report](service-gateway-sso-kerberos.md#run-a-power-bi-report)
 
 ### Troubleshoot gateway connectivity issues
 

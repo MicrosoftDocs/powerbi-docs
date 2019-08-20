@@ -50,7 +50,7 @@ First, determine whether an SPN was already created for the domain account used 
 
 3. In the search result, right-click on the gateway service account and select **Properties**.
 
-4. If the **Delegation** tab is visible on the **Properties** dialog, then an SPN was already created and you can jump ahead to the next subsection -- [configuring delegation settings](#configure-delegation-settings).
+4. If the **Delegation** tab is visible on the **Properties** dialog, then an SPN was already created and you can jump ahead to the next subsection -- [configuring delegation settings](#configure-delegation-settings.md).
 
     If there is no **Delegation** tab on the **Properties** dialog box, you can manually create an SPN on the account to enable it. Use the [setspn tool](https://technet.microsoft.com/library/cc731241.aspx) that comes with Windows (you need domain admin rights to create the SPN).
 
@@ -140,6 +140,7 @@ Given those example names and settings, complete the following configuration ste
     $c = Get-ADGroup ResourceDelGroup
     Set-ADUser SQLService -PrincipalsAllowedToDelegateToAccount $c
     ```
+
 5. You can verify that the update is reflected in the "Attribute Editor" tab in the properties for the back-end service account in **Active Directory Users and Computers.**
 
 ## Grant the gateway service account local policy rights on the gateway machine
@@ -204,7 +205,7 @@ After completing all the configuration steps, you can use the **Manage Gateway**
 
  Publish a **DirectQuery-based** report from Power BI Desktop. This report must use data that is accessible to the user that is mapped to the (Azure) Active Directory user that signs in to the Power BI service. You must use DirectQuery instead of import, because of how refresh works. When refreshing import-based reports, the gateway uses the credentials that you entered into the **Username** and **Password** fields when you created the data source. In other words, Kerberos SSO is **not** used. Also, when publishing, make sure you select the gateway you've configured for SSO if you have multiple gateways. In the Power BI service you should now be able to refresh the report or create a new report based on the published dataset.
 
-This configuration works in most cases. However, with Kerberos there can be different configurations depending on your environment. If the report still won't load, contact your domain administrator to investigate further. If your data source is SAP BW, you can also refer to the troubleshooting sections of the data source-specific configuration pages for [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-ccl#troubleshooting) and [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb#troubleshoot-installation-and-connections).
+This configuration works in most cases. However, with Kerberos there can be different configurations depending on your environment. If the report still won't load, contact your domain administrator to investigate further. If your data source is SAP BW, you can also refer to the troubleshooting sections of the data source-specific configuration pages for [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-ccl.md#troubleshooting) and [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshoot-installation-and-connections).
 
 ## Next steps
 
