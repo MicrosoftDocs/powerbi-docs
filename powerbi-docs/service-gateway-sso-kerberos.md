@@ -60,12 +60,12 @@ First, determine whether an SPN was already created for the domain account used 
 
  With that step completed, you can begin configuring delegation settings to enable _either_ resource-based constrained Kerberos delegation or standard Kerberos constrained delegation. Use resource-based delegation if your data source belongs to a different domain than your gateway, but note that this approach requires Windows Server 2012 or later. See the [constrained Kerberos delegation overview page](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) for more information on the differences between the two approaches to delegation.
 
- Once you have decided which approach you want to use, proceed to _either_ the [Configure standard Kerberos constrained delegation](#FIX ME) _or_ [Configure resource-based Kerberos constrained delegation](#FIXME) section. Do not complete both subsections.
+ Once you have decided which approach you want to use, proceed to _either_ the [Configure the gateway service account for standard Kerberos constrained delegation](#configure-the-gateway-service-account-for-standard-kerberos-constrained-delegation) _or_ [Configure the gateway service account for resource-based Kerberos constrained delegation](#configure-the-gateway-service-account-for-resource-based-kerberos-constrained-delegation) section. Do not complete both subsections.
 
 ## Configure the gateway service account for standard Kerberos constrained delegation
 
 > [!NOTE]
-> Complete the steps in this section if you want to enable standard Kerberos constrained delegation. If you want to enable resource-based Kerberos constrained delegation complete the steps in the [Configure standard Kerberos constrained delegation](#FIX ME) subsection.
+> Complete the steps in this section if you want to enable standard Kerberos constrained delegation. If you want to enable resource-based Kerberos constrained delegation complete the steps in the [Configure the gateway service account for resource-based Kerberos constrained delegation](#configure-the-gateway-service-account-for-resource-based-kerberos-constrained-delegation) subsection.
 
 We will now set the delegation settings for the gateway service account. There are multiple tools you can use to perform these steps. Here, we'll use Active Directory Users and Computers, which is a Microsoft Management Console (MMC) snap-in to administer and publish information in the directory. It's available on domain controllers by default, but you can also enable it through Windows Feature configuration on other machines.
 
@@ -109,7 +109,7 @@ Now, skip to [Grant the gateway service account local policy rights on the gatew
 ## Configure the gateway service account for resource-based Kerberos constrained delegation
 
 > [!NOTE]
-> Complete the steps in this section if you want to enable resource-based Kerberos constrained delegation. If you want to enable standard Kerberos constrained delegation complete the steps in the [Configure standard Kerberos constrained delegation](#FIX ME) subsection.
+> Complete the steps in this section if you want to enable resource-based Kerberos constrained delegation. If you want to enable standard Kerberos constrained delegation complete the steps in the [Configure the gateway service account for standard Kerberos constrained delegation](#configure-the-gateway-service-account-for-standard-kerberos-constrained-delegation) subsection.
 
 Use [resource-based Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) to enable single sign-on connectivity for Windows Server 2012 and later versions, permitting front-end and back-end services to be in different domains. For this to work, the back-end service domain needs to trust the front-end service domain.
 
