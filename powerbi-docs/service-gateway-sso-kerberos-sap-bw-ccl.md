@@ -1,5 +1,5 @@
 ---
-title: Use Kerberos for single sign-on (SSO) to SAP BW using CommonCryptoLib (sapcrypto.dll)
+title: Use Kerberos for SSO to SAP BW using CommonCryptoLib (sapcrypto.dll)
 description: Configure your SAP BW server to enable SSO from Power BI service using CommonCryptoLib (sapcrypto.dll)
 author: mgblythe
 ms.author: mblythe
@@ -12,11 +12,11 @@ ms.date: 08/01/2019
 LocalizationGroup: Gateways
 ---
 > [!NOTE]
-> Complete the steps on this page in addition to the steps in [Prepare for single sign-on (SSO) - Kerberos](TODO link) before attempting to refresh a SAP BW-based report that uses Kerberos SSO.
+> Complete the steps on this page in addition to the steps in [Configure SSO - Kerberos](#service-gateway-sso-kerberos) before attempting to refresh a SAP BW-based report that uses Kerberos SSO.
 
 ## Configure SAP BW for SSO using CommonCryptoLib
 
-Now that you have completed the configuration steps in [prepare for Kerberos constrained delegation](#prepare-for-kerberos-constrained-delegation) up to "Complete datasource-specific configuration", you can configure your SAP Business Warehouse (SAP BW) server for single sign-on (SSO) using the gateway.
+Now that you have completed the configuration steps in [configure constrained delegation](#service-gateway-sso-kerberos) up to "Complete datasource-specific configuration", you can configure your SAP Business Warehouse (SAP BW) server for SSO using the gateway.
 
 > [!NOTE]
 > These instructions cover SSO setup for SAP BW **Application** Servers. Microsoft does not currently support SSO connections to SAP BW **Message** Servers.
@@ -48,11 +48,7 @@ Now that you have completed the configuration steps in [prepare for Kerberos con
 
 1. If you don't have an SAP Business Warehouse Server data source, on the **Manage gateways** page in the Power BI service, add a data source. If you already have a BW data source associated with the gateway you want the SSO connection to flow through, prepare to edit it.
 
-    For **SNC Library** , select either **SNC\_LIB or SNC\_LIB\_64 environmental variable** or **Custom**. If you select the **SNC\_LIB** option, you must set the value of the SNC\_LIB\_64 environment variable on the gateway machine to the absolute path of the copy of sapcrypto.dll on the gateway machine, e.g. C:\Users\Test\Desktop\sapcrypto.dll. If you choose **Custom** , paste the absolute path to the sapcrypto .dll into the Custom SNC Library Path field that appears on the **Manage gateways** page.
-
-    Under **Advanced settings** , make sure the **Use SSO via Kerberos for DirectQuery queries** checkbox is selected. The username you enter only needs to have permission to connect to the BW server and is used primarily to test the data source connection after you've created it. The user is also used to refresh reports created from import-based datasets if you have any. If you select **Basic** authentication, you must provide credentials for a BW user. If you select **Windows** authentication, you must specify a Windows Active Directory user that's mapped to a BW user through the SU01 transaction in SAP GUI. The rest of the fields (**System Number **,** Client ID **,** SNC Partner Name**, and so on) must match the information you would enter into Power BI Desktop to connect to your BW server through Kerberos SSO. Select **Apply** and make sure the test connection is successful.
-
-    ![Authentication method](media/service-gateway-sso-kerberos/authentication-method.png)
+    For **SNC Library**, select either **SNC\_LIB or SNC\_LIB\_64 environmental variable** or **Custom**. If you select the **SNC\_LIB** option, you must set the value of the SNC\_LIB\_64 environment variable on the gateway machine to the absolute path of the copy of sapcrypto.dll on the gateway machine, e.g. C:\Users\Test\Desktop\sapcrypto.dll. If you choose **Custom** , paste the absolute path to the sapcrypto .dll into the Custom SNC Library Path field that appears on the **Manage gateways** page. For **SNC Partner Name**, enter the SNC Name of the BW server. Under **Advanced settings**, ensure that **Use SSO via Kerberos for DirectQuery queries** is checked.
 
 1. Create a CCL\_PROFILE system environment variable and point it at sapcrypto.ini:
 
@@ -64,7 +60,7 @@ Now that you have completed the configuration steps in [prepare for Kerberos con
 
     ![Restart gateway service](media/service-gateway-sso-kerberos/restart-gateway-service.png)
 
-1. Publish a **DirectQuery-based** BW report from Power BI Desktop. This report must use data that is accessible to the BW user that is mapped to the Azure Active Directory (AAD) user that signs in to the Power BI service. You must use DirectQuery instead of import, because of how refresh works. When refreshing import-based reports, the gateway uses the credentials that you entered into the **Username** and **Password** fields when you created the BW data source. In other words, Kerberos SSO is **not** used. Also, when publishing, make sure you select the gateway you've configured for BW SSO if you have multiple gateways. In the Power BI service you should now be able to refresh the report or create a new report based on the published dataset.
+1. [Run a Power BI report](service-gateway-sso-kerberos#run-a-power-bi-report)
 
 ### Troubleshooting
 
@@ -91,7 +87,7 @@ If you're unable to refresh the report in the Power BI service, you can use gate
 
     ```
     LEVEL = 5
-    
+
     DIRECTORY = \\<drive\\>:\logs\sectrace
     ```
 
@@ -103,7 +99,6 @@ If you're unable to refresh the report in the Power BI service, you can use gate
 
 For more information about the **on-premises data gateway** and **DirectQuery**, check out the following resources:
 
-* TODO run a report (back to the combined doc)....
 * [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-getting-started)
 * [DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data sources supported by DirectQuery](desktop-directquery-data-sources.md)

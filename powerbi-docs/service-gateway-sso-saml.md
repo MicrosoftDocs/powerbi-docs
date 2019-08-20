@@ -1,6 +1,6 @@
 ---
-title: Use SAML for single sign-on (SSO) to on-premises data sources
-description: Configure your gateway with Security Assertion Markup Language (SAML) to enable single sign-on (SSO) from Power BI to on-premises data sources.
+title: Use SAML for SSO to on-premises data sources
+description: Configure your gateway with Security Assertion Markup Language (SAML) to enable SSO from Power BI to on-premises data sources.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -12,7 +12,7 @@ ms.date: 07/15/2019
 LocalizationGroup: Gateways
 ---
 
-# Use Security Assertion Markup Language (SAML) for single sign-on (SSO) from Power BI to on-premises data sources
+# Use Security Assertion Markup Language (SAML) for SSO from Power BI to on-premises data sources
 
 Use [Security Assertion Markup Language (SAML)](https://www.onelogin.com/pages/saml) to enable seamless single sign-on connectivity. Enabling SSO makes it easy for Power BI reports and dashboards to refresh data from on-premises sources.
 
@@ -22,7 +22,10 @@ We currently support SAP HANA with SAML. For more information about setting up a
 
 We support additional data sources with [Kerberos](service-gateway-sso-kerberos.md).
 
-Note that for HANA it is **highly** recommended that encryption be enabled before establishing a SAML SSO connection (that is, you should configure the HANA server to accept encrypted connections and also configure the gateway to use encryption when communicating with your HANA server). The HANA ODBC driver is **not** able to encrypt SAML assertions by default, and without encryption turned on the signed SAML assertion will be sent from the Gateway to the HANA server "in the clear" and be vulnerable to interception and reuse by third parties. TODO: INSERT LINK TO HOW-TO-ENCRYPT DOCUMENT.
+Note that for HANA it is **highly** recommended that encryption be enabled before establishing a SAML SSO connection (that is, you should configure the HANA server to accept encrypted connections and also configure the gateway to use encryption when communicating with your HANA server). The HANA ODBC driver is **not** able to encrypt SAML assertions by default, and without encryption turned on the signed SAML assertion will be sent from the Gateway to the HANA server "in the clear" and be vulnerable to interception and reuse by third parties. See [Enable encryption for SAP HANA](/power-bi/desktop-sap-hana-encryption) for instructions on how to enable encryption for HANA using the OpenSSL library.
+
+* [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem)
+
 
 ## Configuring the gateway and data source
 

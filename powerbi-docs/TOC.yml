@@ -1351,17 +1351,19 @@
       items:
       - name: "Single sign-on (SSO) - overview"
         href: service-gateway-sso-overview.md
-      - name: "Prepare for Single sign-on (SSO) - Kerberos"
-        href: service-gateway-sso-kerberos.md
-      - name: "Datasource-specific configuration for Single sign-on (SSO) - Kerberos"
+      - name: "Kerberos SSO"
         items:
-        - name: "SAP HANA"
-          href: service-gateway-sso-kerberos-sap-hana.md
-        - name: "SAP BW - CommonCryptoLib (sapcrypto.dll)"
-          href: service-gateway-sso-kerberos-sap-bw-ccl.md
-        - name: "SAP BW - gx64krb5/gsskrb5"
-          href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
-      - name: "Single sign-on (SSO) - SAML"
+        - name: "Configure Kerberos SSO"
+          href: service-gateway-sso-kerberos.md
+        - name: "Datasource-specific configuration"
+          items:
+          - name: "SAP HANA"
+            href: service-gateway-sso-kerberos-sap-hana.md
+          - name: "SAP BW - CommonCryptoLib (sapcrypto.dll)"
+            href: service-gateway-sso-kerberos-sap-bw-ccl.md
+          - name: "SAP BW - gx64krb5/gsskrb5"
+            href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
+      - name: "SAML SSO"
         href: service-gateway-sso-saml.md
     - name: "Troubleshoot the gateway"
       href: service-gateway-onprem-tshoot.md

@@ -1,5 +1,5 @@
 ---
-title: Use Kerberos for single sign-on (SSO) to SAP BW using gx64krb5
+title: Use Kerberos for SSO to SAP BW using gx64krb5
 description: Configure your SAP BW server to enable SSO from Power BI service using gx64krb5
 author: mgblythe
 ms.author: mblythe
@@ -12,11 +12,11 @@ ms.date: 08/01/2019
 LocalizationGroup: Gateways
 ---
 > [!NOTE]
-> Complete the steps on this page in addition to the steps in [Prepare for single sign-on (SSO) - Kerberos](TODO link) before attempting to refresh a SAP BW-based report that uses Kerberos SSO.
+> Complete the steps on this page in addition to the steps in [Configure SSO - Kerberos](#service-gateway-sso-kerberos) before attempting to refresh a SAP BW-based report that uses Kerberos SSO.
 
 ## Configure SAP BW for SSO using gx64krb5
 
-Now that you have completed the configuration steps in [prepare for Kerberos constrained delegation](#prepare-for-kerberos-constrained-delegation) up to "Complete datasource-specific configuration", you can configure your SAP Business Warehouse (SAP BW) server for single sign-on (SSO) using the gateway.
+Now that you have completed the configuration steps in [Configure SSO - Kerberos](#service-gateway-sso-kerberos) up to "Complete datasource-specific configuration", you can configure your SAP Business Warehouse (SAP BW) server for SSO using the gateway.
 
 > [!NOTE]
 > Microsoft reccomends the use of CommonCryptoLib as your SNC library. SAP no longer offers support for gx64krb5/gsskrb5 and the steps required to configure it for use with the gateway are significantly more complex compared to CommonCryptoLib.
@@ -143,9 +143,7 @@ Add required registry entries to the registry of the machine that the gateway is
 
 1. REG ADD HKLM\SOFTWARE\SAP\gsskrb5 /v ForceIniCredOK /t REG\_DWORD /d 1 /f
 
-### Add a new SAP BW Application Server data source to the Power BI service
-
-Add the SAP BW data source to your gateway by following the instructions earlier in this article on [running a report](#run-a-power-bi-report).
+### Add a new SAP BW Application Server data source to the Power BI service, or edit an existing one
 
 1. In the data source configuration window, enter the Application Server's **Hostname**, **System Number**, and **client ID**, as you would to sign in to your SAP BW server from Power BI Desktop.
 
@@ -153,12 +151,9 @@ Add the SAP BW data source to your gateway by following the instructions earlier
 
 1. For the SNC Library, select **SNC_LIB** or **SNC_LIB_64**. Make sure that SNC_LIB_64 on the gateway machine points to gx64krb5.dll. Alternatively, you can select the "Custom" option and provide the absolute path the gx64krb5.dll (on the gateway machine).
 
-1. If you have selected **Windows** for **Authentication Method**, the **Username** and **Password** should be the username and password of an Active Directory user with permission to sign in to the SAP BW server with SSO. In other words, these should belong to an Active Directory user who has been mapped to a SAP BW user through the SU01 transaction. If you have selected **Basic**, the **Username** and **Password** should be set to a SAP BW user's name and password, respectively. These credentials are only used if the **Use SSO via Kerberos for DirectQuery queries** box is not checked.
-
 1. Select the **Use SSO via Kerberos for DirectQuery queries** box, and select **Apply**. If the test connection is not successful, verify that the previous setup and configuration steps were completed correctly.
 
-    The gateway always uses the typed-in credentials to establish a test connection to the server, and to do scheduled refreshes of import-based reports. The gateway only attempts to establish an SSO connection if the **Use SSO via Kerberos for DirectQuery queries** is selected, and the user is accessing a direct query-based report or dataset.
-
+1. [Run a Power BI report](service-gateway-sso-kerberos#run-a-power-bi-report)
 
 ### Troubleshoot gateway connectivity issues
 
