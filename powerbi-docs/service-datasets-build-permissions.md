@@ -37,7 +37,7 @@ As a creator of *data models* in Power BI Desktop, you can share them as *datase
 
 ## Build permissions for shared datasets
 
-The Build permission type is only relevant for datasets. With it, users can build new content on a dataset, such as reports, dashboards, pinned tiles from Q&A, and Insights Discovery. They can also build new content on the dataset outside Power BI, such as Excel sheets via Analyze in Excel, XMLA, and export.
+The Build permission type is only relevant for datasets. With it, users can build new content on a dataset, such as reports, dashboards, pinned tiles from Q&A, and Insights Discovery. They can also build new content on the dataset outside Power BI, such as Excel sheets via Analyze in Excel, XMLA, and export underlying data.
 
 Users get Build permission in different ways:
 
@@ -67,7 +67,7 @@ With this more granular Build permission, you can choose who can only view the c
 
 If your dataset is being used by a report outside the dataset workspace, you can't delete that dataset. Instead, you see an error message.
 
-You can remove build permissions. If you do, the people whose permissions you have revoked can still see the report, but can no longer edit the report.
+You can remove build permissions. If you do, the people whose permissions you have revoked can still see the report, but can no longer edit the report or export underlying data. Users with only read permission can still export summarized data. 
 
 ## Track your dataset usage
 
