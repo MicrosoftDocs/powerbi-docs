@@ -79,7 +79,7 @@ Dashboards also have a simplified action bar, just like reports and apps, for a 
 
 ## No changes to edit mode 
 
-We’ve kept the authoring experience similar to that in Desktop. The new look changes only apply to the reading view.
+We’ve kept the authoring experience similar to the experience in Desktop. The new look changes only apply to the reading view.
 
 ## Next steps
 

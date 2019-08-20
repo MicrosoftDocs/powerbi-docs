@@ -222,7 +222,7 @@ When you're editing the Filters pane, you can double-click the title to edit it.
 
 ## Restrict changes to filter type
 
-Under the Filtering experience section of the report settings you have an option to control if users can change the filter type.
+Under the Filtering experience section of the report settings, you have an option to control if users can change the filter type.
 
 ![Restrict changing filter type](media/power-bi-report-filter/power-bi-filter-restrict-change.png)
 
