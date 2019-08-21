@@ -21,7 +21,7 @@ This article describes the basics of writing unit tests for your Power BI visual
 
 ## Prerequisites
 
-* The Power BI visuals project, installed
+* An installed Power BI visuals project
 * A configured Node.js environment
 
 ## Install and configure the Karma JavaScript test runner and Jasmine
@@ -591,7 +591,7 @@ Lines        : 52.83% ( 112/212 )
 ================================================================================
 ```
 
-Your visual opens in Chrome, as shown:
+Your visual opens in the Chrome browser, as shown:
 
 ![UT launches in Chrome](./media/karmajs-chrome-ut-runned.png)
 
