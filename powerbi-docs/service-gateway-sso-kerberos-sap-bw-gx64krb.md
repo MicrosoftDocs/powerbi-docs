@@ -12,11 +12,11 @@ ms.date: 08/01/2019
 LocalizationGroup: Gateways
 ---
 > [!NOTE]
-> Complete the steps on this page in addition to the steps in [Configure SSO - Kerberos](#service-gateway-sso-kerberos.md) before attempting to refresh a SAP BW-based report that uses Kerberos SSO.
+> Complete the steps on this page in addition to the steps in [Configure SSO - Kerberos](service-gateway-sso-kerberos.md) before attempting to refresh a SAP BW-based report that uses Kerberos SSO.
 
 ## Configure SAP BW for SSO using gx64krb5
 
-Now that you have completed the configuration steps in [Configure SSO - Kerberos](#service-gateway-sso-kerberos.md) up to "Complete datasource-specific configuration", you can configure your SAP Business Warehouse (SAP BW) server for SSO using the gateway.
+Now that you have completed the configuration steps in [Configure SSO - Kerberos](service-gateway-sso-kerberos.md) up to "Complete datasource-specific configuration", you can configure your SAP Business Warehouse (SAP BW) server for SSO using the gateway.
 
 > [!NOTE]
 > Microsoft reccomends the use of CommonCryptoLib as your SNC library. SAP no longer offers support for gx64krb5/gsskrb5 and the steps required to configure it for use with the gateway are significantly more complex compared to CommonCryptoLib.
@@ -38,13 +38,12 @@ This guide attempts to be as comprehensive as possible. If you've already comple
 
 1. On the client and server machines, set the `SNC_LIB` or `SNC_LIB_64` environment variables. If you use gsskrb5, set the `SNC_LIB` variable to the absolute path of gsskrb5.dll. If you use gx64krb5, set the `SNC_LIB_64` variable to the absolute path of gx64krb5.dll.
 
-### Create a SAP BW service user and enable SNC communication
+### Configure an SAP BW service user and enable SNC communication
 
-Complete this section if you haven't already configured a Service User for your SAP BW server. Note that the rest of this guide assumes that the SNC name of the SAP BW server starts with "p:", e.g. p:\<the SAP BW service user you've created\>.
+Complete this section if you haven't already configured your SAP BW server for SNC communication (e.g. SSO).
 
-1. On an Active Directory Domain Controller server, create a service user (initially just a plain Active Directory user) for your SAP BW Application Server in your Active Directory environment. Then assign an SPN to it.
-
-    SAP recommends starting the SPN with `SAP/`, but it should also be possible to use other prefixes, such as `HTTP/`. What comes after the `SAP/` is up to you; one option is to use the SAP BW server's service user's username. For example, if you create `BWServiceUser@\<DOMAIN\>` as your service user, you can use the SPN `SAP/BWServiceUser`. One way to set the SPN mapping is the setspn command. For example, to set the SPN on the service user we just created, you would run the following command from a cmd window on a Domain Controller machine: `setspn -s SAP/ BWServiceUser DOMAIN\ BWServiceUser`. For more information, see the SAP BW documentation.
+> [!NOTE]
+> This section assumes that you have already created a Service User for BW and bound a suitable SPN to it (e.g. something that starts with `SAP/`).
 
 1. Give the service user access to your SAP BW Application Server:
 
@@ -119,22 +118,6 @@ Verify that you can sign in to the server using SAP Logon through SSO as the Act
 
 1. Double-click the connection you just created to attempt an SSO connection to your SAP BW server. If this connection succeeds, proceed to the next step. Otherwise, review the earlier steps in this document to make sure they've been completed correctly, or review the troubleshooting section below. Note that if you can't connect to the SAP BW server via SSO in this context you won't be able to connect to the SAP BW server using SSO in the gateway context.
 
-### Troubleshoot gx64krb5/gsskrb5 configuration
-
-If you encounter any problems, follow these steps to troubleshoot the gx64krb5/gsskrb5 installation and SSO connections from the SAP Logon.
-
-* Viewing the server logs (…work\dev\_w0 on the server machine) can be helpful in troubleshooting any errors you encounter in completing the gx64krb5/gsskrb5 setup steps. This is particularly true if the SAP BW server won't start after the profile parameters have been changed.
-
-* If you're unable to start the SAP BW service due to a logon failure, you might have provided the wrong password when setting the SAP BW "start-as" user. Verify the password by logging in to a machine in your Active Directory environment as the SAP BW service user.
-
-* If you get errors about SQL credentials preventing the server from starting, verify that you've granted the service user access to the SAP BW database.
-
-* You might get the following message: "(GSS-API) specified target is unknown or unreachable." This usually means you have the wrong SNC name specified. Make sure to use "p:" only, not "p:CN=" or anything else in the client application, other than the service user's UPN.
-
-* You might get the following message: "(GSS-API) An invalid name was supplied." Make sure "p:" is in the value of the server's SNC identity profile parameter.
-
-* You might get the following message: "(SNC error) the specified module could not be found." This is usually caused by putting the `gsskrb5.dll/gx64krb5.dll` somewhere that requires elevated privileges (administrator rights) to access.
-
 ### Add registry entries to the gateway machine
 
 Add required registry entries to the registry of the machine that the gateway is installed on. Here are the commands to run:
@@ -155,6 +138,24 @@ Add required registry entries to the registry of the machine that the gateway is
 
 1. [Run a Power BI report](service-gateway-sso-kerberos.md#run-a-power-bi-report)
 
+### Troubleshoot gx64krb5/gsskrb5 configuration
+
+If you encounter any problems, follow these steps to troubleshoot the gx64krb5/gsskrb5 installation and SSO connections from the SAP Logon.
+
+* Viewing the server logs (…work\dev\_w0 on the server machine) can be helpful in troubleshooting any errors you encounter in completing the gx64krb5/gsskrb5 setup steps. This is particularly true if the SAP BW server won't start after the profile parameters have been changed.
+
+* If you're unable to start the SAP BW service due to a logon failure, you might have provided the wrong password when setting the SAP BW "start-as" user. Verify the password by logging in to a machine in your Active Directory environment as the SAP BW service user.
+
+* If you get errors about SQL credentials preventing the server from starting, verify that you've granted the service user access to the SAP BW database.
+
+* You might get the following message: "(GSS-API) specified target is unknown or unreachable." This usually means you have the wrong SNC name specified. Make sure to use "p:" only, not "p:CN=" or anything else in the client application, other than the service user's UPN.
+
+* You might get the following message: "(GSS-API) An invalid name was supplied." Make sure "p:" is in the value of the server's SNC identity profile parameter.
+
+* You might get the following message: "(SNC error) the specified module could not be found." This is usually caused by putting the `gsskrb5.dll/gx64krb5.dll` somewhere that requires elevated privileges (administrator rights) to access.
+
+## Troubleshooting
+
 ### Troubleshoot gateway connectivity issues
 
 1. Check the gateway logs. Open the gateway configuration application, and select **Diagnostics** > **Export logs**. The most recent errors are at the bottom of any log files you examine.
@@ -162,18 +163,6 @@ Add required registry entries to the registry of the machine that the gateway is
     ![Screenshot of On-premises data gateway application, with Diagnostics highlighted](media/service-gateway-sso-kerberos/gateway-diagnostics.png)
 
 1. Turn on SAP BW tracing, and review the generated log files. There are several different types of SAP BW tracing available. Consult the SAP documentation for more information.
-
-## Errors from an insufficient Kerberos configuration
-
-If the underlying database server and gateway are not configured properly for Kerberos constrained delegation, you might receive the following error message about failing to load data:
-
-![Screenshot of error message](media/service-gateway-sso-kerberos/load-data-error.png)
-
-The technical details associated with the error message (DM_GWPipeline_Gateway_ServerUnreachable) might look like the following:
-
-![Screenshot of error message technical details](media/service-gateway-sso-kerberos/server-unreachable.png)
-
-The result is that the gateway can't impersonate the originating user properly, and the database connection attempt failed.
 
 ## Next steps
 

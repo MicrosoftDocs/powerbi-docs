@@ -13,7 +13,7 @@ LocalizationGroup: Gateways
 ---
 
 > [!NOTE]
-> Complete the steps on this page in addition to the steps in [Configure SSO - Kerberos](#service-gateway-sso-kerberos.md) before attempting to refresh a SAP HANA-based report that uses Kerberos SSO.
+> Complete the steps on this page in addition to the steps in [Configure SSO - Kerberos](service-gateway-sso-kerberos.md) before attempting to refresh a SAP HANA-based report that uses Kerberos SSO.
 
 ### SAP HANA
 

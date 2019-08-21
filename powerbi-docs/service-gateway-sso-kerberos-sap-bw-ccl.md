@@ -12,11 +12,11 @@ ms.date: 08/01/2019
 LocalizationGroup: Gateways
 ---
 > [!NOTE]
-> Complete the steps on this page in addition to the steps in [Configure SSO - Kerberos](#service-gateway-sso-kerberos.md) before attempting to refresh a SAP BW-based report that uses Kerberos SSO.
+> Complete the steps on this page in addition to the steps in [Configure SSO - Kerberos](service-gateway-sso-kerberos.md) before attempting to refresh a SAP BW-based report that uses Kerberos SSO.
 
 ## Configure SAP BW for SSO using CommonCryptoLib
 
-Now that you have completed the configuration steps in [configure constrained delegation](#service-gateway-sso-kerberos.md) up to "Complete datasource-specific configuration", you can configure your SAP Business Warehouse (SAP BW) server for SSO using the gateway.
+Now that you have completed the configuration steps in [configure constrained delegation](service-gateway-sso-kerberos.md) up to "Complete datasource-specific configuration", you can configure your SAP Business Warehouse (SAP BW) server for SSO using the gateway.
 
 > [!NOTE]
 > These instructions cover SSO setup for SAP BW **Application** Servers. Microsoft does not currently support SSO connections to SAP BW **Message** Servers.
