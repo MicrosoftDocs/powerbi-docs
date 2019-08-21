@@ -1,6 +1,6 @@
 ---
-title: Understand Data View mapping in Power BI visuals
-description: This article describes how Power BI transforms data before passing it into visuals
+title: Understand data view mapping in Power BI visuals
+description: This article describes how Power BI transforms data before passing it into visuals.
 author: asander
 ms.author: asander
 manager: rkarlin
@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Understand Data View mapping in Power BI visuals
+# Understand data view mapping in Power BI visuals
 
-This article discusses Data View mapping and describes how data roles relate to each other and allow you to specify conditional requirements for them. The article also describes each `dataMappings` type.
+This article discusses data view mapping and describes how data roles relate to each other and allow you to specify conditional requirements for them. The article also describes each `dataMappings` type.
 
-Each valid mapping produces a Data View, but we currently support performing only one query per visual. You ordinarily get only one Data View. However, you can provide multiple data mappings in certain conditions, which allow:
+Each valid mapping produces a data view, but we currently support performing only one query per visual. You ordinarily get only one data view. However, you can provide multiple data mappings in certain conditions, which allow:
 
 ```json
 "dataViewMappings": [
@@ -29,7 +29,7 @@ Each valid mapping produces a Data View, but we currently support performing onl
 ]
 ```
 
-Power BI creates a mapping to a Data View if and only if the valid mapping is filled in `dataViewMappings`.
+Power BI creates a mapping to a data view if and only if the valid mapping is filled in `dataViewMappings`.
 
 In other words, `categorical` might be defined in `dataViewMappings` but other mappings, such as `table` or `single`, might not be. For example:
 
@@ -41,7 +41,7 @@ In other words, `categorical` might be defined in `dataViewMappings` but other m
 ]
 ```
 
-Power BI produces a Data View with a single `categorical` mapping, and `table` and other mappings are undefined:
+Power BI produces a data view with a single `categorical` mapping, and `table` and other mappings are undefined:
 
 ```javascript
 {
@@ -221,7 +221,7 @@ Here is the mapping:
 }
 ```
 
-Here the difference is in how we are mapping categorical.values. We are saying that "Map my `measure` and `measure2` data roles are to be grouped by the data role `grouping`."
+Here the difference is in how we are mapping categorical.values. We are saying that "Map my `measure` and `measure2` data roles to be grouped by the data role `grouping`."
 
 ### Example 6
 
@@ -247,7 +247,7 @@ Here are the data roles:
 ]
 ```
 
-Here is the Data View mapping:
+Here is the data view mapping:
 
 ```json
 "dataViewMappings": [
@@ -274,7 +274,7 @@ Here is the Data View mapping:
 ]
 ```
 
-The categorical Data View could be visualized like this:
+The categorical data view could be visualized like this:
 
 | Categorical |  |  | | | |
 |-----|-----|------|------|------|------|
@@ -285,7 +285,7 @@ The categorical Data View could be visualized like this:
 | Mexico | | 300 | x | x | x |
 | UK | | x | x | 75 | x |
 
-Power BI produces it as the categorical Data View. It's the set of categories.
+Power BI produces it as the categorical data view. It's the set of categories.
 
 ```JSON
 {
@@ -360,7 +360,7 @@ For example, Canada sales in 2013 is null, Canada sales in 2014 is 50.
 
 ## Table data mapping
 
-The table Data View is a simple data mapping. Essentially, it's a list of data points, where numeric data points could be aggregated.
+The table data view is a simple data mapping. Essentially, it's a list of data points, where numeric data points could be aggregated.
 
 ### Example 7
 
@@ -390,7 +390,7 @@ With the given capabilities:
 ]
 ```
 
-The table Data View could be visualized like this:  
+You can visualize the table data view as the following:  
 
 | Country| Year | Sales |
 |-----|-----|------|
@@ -402,7 +402,7 @@ The table Data View could be visualized like this:
 | UK | 2014 | 150 |
 | USA | 2015 | 75 |
 
-Power BI will display your data as the table Data View. Don't assume there's an ordering.
+Power BI displays your data as the table data view. You shouldnt assume that the data is ordered.
 
 ```JSON
 {
@@ -453,9 +453,9 @@ You can aggregate the data by selecting the desired field and then selecting sum
 
 ![Data aggregation](./media/data-aggregation.png)
 
-## Matrix Data Mapping
+## Matrix data mapping
 
-Matrix Data Mapping is similar to table data mapping, but rows are presented hierarchically. And one of data role values can be used as a column header value.
+Matrix data mapping is similar to table data mapping, but the rows are presented hierarchically. Any of the data role values can be used as a column header value.
 
 ```json
 {
@@ -611,7 +611,7 @@ The visual gets its data structure as described in the following code (only the 
 
 ## Data reduction algorithm
 
-To control the amount of data to receive in the Data View, you can apply a data reduction algorithm.
+To control the amount of data to receive in the data view, you can apply a data reduction algorithm.
 
 By default, all custom visuals have the top data reduction algorithm applied with the *count* set to 1000 data points. It's the same as setting the following properties in the *capabilities.json* file:
 
@@ -637,7 +637,7 @@ For example, if you have a dataset [0, 1, 2, ... 100] and a *count* of 9,  you'l
 
 ## Data reduction algorithm usage
 
-The data reduction algorithm can be used in categorical, table, or matrix Data View mapping.
+The data reduction algorithm can be used in categorical, table, or matrix data view mapping.
 
 You can set the algorithm into `categories` and/or group section of `values` for categorical data mapping.
 
