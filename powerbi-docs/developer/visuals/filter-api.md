@@ -1,6 +1,6 @@
 ---
-title: Visual Filters API
-description: How Power BI Visuals can filter other visuals
+title: The Visual Filters API in Power BI visuals
+description: This article discusses how Power BI visuals can filter other visuals.
 author: sranins
 ms.author: rasala
 manager: rkarlin
@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# The Power BI Visual Filters API
+# The Visual Filters API in Power BI visuals
 
-Filter-visual allows filter data. The main difference from selections is that other visuals will be filtered in any way, despite highlight support by other visual.
+The Visual Filters API allows you to filter data in Power BI visuals. The main difference from other selections is that other visuals will be filtered in any way, despite highlight support by other visual.
 
-To enable filtering for the visual, the visual should contain a `filter` object in the `general` section of *capabilities.json* code.
+To enable filtering for the visual, it should contain a `filter` object in the `general` section of *capabilities.json* code.
 
 ```json
 "objects": {
@@ -33,7 +33,7 @@ To enable filtering for the visual, the visual should contain a `filter` object 
     }
 ```
 
-Filter API interfaces are available in the [powerbi-models](https://www.npmjs.com/package/powerbi-models) package. The package also contains classes to create filter instances.
+Visual Filters API interfaces are available in the [powerbi-models](https://www.npmjs.com/package/powerbi-models) package. The package also contains classes to create filter instances.
 
 ```cmd
 npm install powerbi-models --save
@@ -255,7 +255,7 @@ The SQL equivalent is:
 SELECT * FROM DataTable WHERE ( Team = "Team1" AND Value = 5 ) OR ( Team = "Team2" AND Value = 6 );
 ```  
 
-## Restore the JSON filter from the Data View
+## Restore the JSON filter from the data view
 
 Starting with API version 2.2, you can restore the JSON filter from *VisualUpdateOptions*, as shown in the following code:
 
@@ -271,8 +271,7 @@ export interface VisualUpdateOptions extends extensibility.VisualUpdateOptions {
 }
 ```
 
-Power BI calls the `update` method of the visual, when use switch bookmarks, and the visual gets a corresponding `filter` object. For more information, see 
-[Add bookmark support for Power BI Visuals](bookmarks-support.md).
+When you switch, bookmarks, Power BI calls the `update` method of the visual, and the visual gets a corresponding `filter` object. For more information, see [Add bookmark support for Power BI visuals](bookmarks-support.md).
 
 ### Sample JSON filter
 
