@@ -13,11 +13,11 @@ ms.date: 06/18/2019
 
 # Fetch more data from Power BI
 
-This article discusses how to load more data to bypass the hard limit of a 30-KB data point. This approach brings data in chunks. The chunk size is configurable to improve performance, depending on your use case.  
+This article discusses how to load more data to bypass the hard limit of a 30-KB data point. This approach provides data in chunks. To improve performance, you can configure the chunk size to accommodate your use case.  
 
 ## Enable a segmented fetch of large datasets
 
-For the `dataview` segment mode, you define a "window" size for dataReductionAlgorithm in the visual's *capabilities.json* file for the required dataViewMapping. The `count` determines the window size, which limits the number of new data rows that can be appended to the `dataview` in each update.
+For the `dataview` segment mode, you define a window size for dataReductionAlgorithm in the visual's *capabilities.json* file for the required dataViewMapping. The `count` determines the window size, which limits the number of new data rows that can be appended to the `dataview` in each update.
 
 Add the following code in the *capabilities.json* file:
 
@@ -53,9 +53,7 @@ You can determine whether data exists by checking the existence of `dataView.met
     }
 ```
 
-You can also check whether it's the first or subsequent update by checking `options.operationKind`.
-
-`VisualDataChangeOperationKind.Create` means the first segment, and `VisualDataChangeOperationKind.Append` means subsequent segments.
+You can also check to see whether it's the first update or a subsequent update by checking `options.operationKind`. In the following code, `VisualDataChangeOperationKind.Create` refers to the first segment, and `VisualDataChangeOperationKind.Append` refers to subsequent segments.
 
 For a sample implementation, see the following code snippet:
 
@@ -96,4 +94,4 @@ btn_click(){
 As a response to calling the `this.host.fetchMoreData` method, Power BI calls the `update` method of the visual with a new segment of data.
 
 > [!NOTE]
-> To avoid client memory constraints, Power BI currently limits the fetched data total to 100 MB. This limit has been reached when fetchMoreData() returns `false`.
+> To avoid client memory constraints, Power BI currently limits the fetched data total to 100 MB. You can see that the limit has been reached when fetchMoreData() returns `false`.
