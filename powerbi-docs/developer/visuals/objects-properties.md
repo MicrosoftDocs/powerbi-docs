@@ -1,6 +1,6 @@
 ---
-title: Objects and properties of Power BI Visuals
-description: This article describes the customizable properties of Power BI Visuals.
+title: Objects and properties of Power BI visuals
+description: This article describes the customizable properties of Power BI visuals.
 author: MrMeison
 ms.author: rasala
 manager: rkarlin
@@ -11,9 +11,9 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Objects and properties of Power BI Visuals
+# Objects and properties of Power BI visuals
 
-Objects describe customizable properties that are associated with the visual. Each object can have multiple properties, and each property has a type that's associated with it. Types refer to what the property will be. This article provides information about objects and property types.
+Objects describe customizable properties that are associated with a visual. An object can have multiple properties, and each property has an associated type that describes what the property will be. This article provides information about objects and property types.
 
 `myCustomObject` is the internal name that's used to reference the object within `dataView` and `enumerateObjectInstances`
 
@@ -89,7 +89,7 @@ export interface StructuralTypeDescriptor {
 
 ## Gradient property
 
-The gradient property is a property that can't be set as a standard property. Instead, you need to set a rule for substitution of the color picker property (*fill* type).
+The gradient property is a property that can't be set as a standard property. Instead, you need to set a rule for the substitution of the color picker property (*fill* type).
 
 An example is shown in the following code:
 
@@ -132,11 +132,11 @@ An example is shown in the following code:
 }
 ```
 
-Pay attention to the *fill* and *fillRule* properties. The first is the color picker, and the second is the substitution rule for the gradient that will replace the *fill" property `visually` when the rule conditions are met.
+Pay attention to the *fill* and *fillRule* properties. The first is the color picker, and the second is the substitution rule for the gradient that will replace the *fill property*, `visually`, when the rule conditions are met.
 
-This link between the fill property and the substitution rule is set in the `"rule"`>`"output"` section of the `"fillRule"` property.
+This link between the *fill* property and the substitution rule is set in the `"rule"`>`"output"` section of the *fillRule* property.
 
-`"Rule"`>`"InputRole"` property sets which data role triggers the rule (condition). In this example, if data role `"Gradient"` contains data, the rule will be applied for the `"fill"` property.
+`"Rule"`>`"InputRole"` property sets which data role triggers the rule (condition). In this example, if data role `"Gradient"` contains data, the rule is applied for the `"fill"` property.
 
 An example of the data role that triggers the fill rule (`the last item`) is shown in the following code:
 
