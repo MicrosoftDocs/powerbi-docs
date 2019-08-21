@@ -13,7 +13,7 @@ ms.date: 06/18/2019
 
 # The Analytics pane in Power BI visuals
 
-The **Analytics** pane was [introduced for native visuals](https://docs.microsoft.com/power-bi/desktop-analytics-pane) in November 2018.
+The **Analytics** pane was introduced for [native visuals](https://docs.microsoft.com/power-bi/desktop-analytics-pane) in November 2018.
 This article discusses how Power BI visuals with API v2.5.0 can present and manage their properties in the **Analytics** pane.
 
 ![The Analytics pane](./media/visualization-pane-analytics-tab.png)
@@ -27,7 +27,7 @@ For the **Analytics** pane, the differences are as follows:
 * Under the object's definition, you add an **objectCategory** field with a value of 2.
 
     > [!NOTE]
-    > The `objectCategory` field is an optional field that was introduced in API 2.5.0. It defines the aspect of the visual that the object controls (1 = Formatting, 2 = Analytics). "Formatting" is used for such elements as look and feel, colors, axes, and labels. "Analytics" is used for such elements as forecasts, trendlines, reference lines, and shapes.
+    > The optional `objectCategory` field was introduced in API 2.5.0. It defines the aspect of the visual that the object controls (1 = Formatting, 2 = Analytics). `Formatting` is used for such elements as look and feel, colors, axes, and labels. `Analytics` is used for such elements as forecasts, trendlines, reference lines, and shapes.
     >
     > If the value isn't specified, `objectCategory` defaults to "Formatting."
 
@@ -60,11 +60,11 @@ For the **Analytics** pane, the differences are as follows:
 }
 ```
 
-You can define any other properties in the same way that you do for **Format** objects. And you enumerate objects just as you do in the **Format** pane.
+You can define other properties in the same way that you do for **Format** objects. And you can enumerate objects just as you do in the **Format** pane.
 
 ## Known limitations and issues of the Analytics pane
 
-* No multi-instance support yet. Objects can't have a [selector](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector) other than static (that is, "selector": null), and Power BI visuals can't have user-defined multiple instances of a card.
+* The **Analytics** pane has no multi-instance support yet. Objects can't have a [selector](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector) other than static (that is, "selector": null), and Power BI visuals can't have user-defined multiple instances of a card.
 * Properties of type `integer` aren't displayed correctly. As a workaround, use type `numeric` instead.
 
 > [!NOTE]
