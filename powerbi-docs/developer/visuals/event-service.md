@@ -1,6 +1,6 @@
 ---
 title: Rendering events
-description: Power BI Visuals can notify Power BI that they're ready to exporting to Power Point/PDF
+description: Power BI visuals can notify Power BI that they're ready for export to PowerPoint or PDF.
 author: Yarovinsky
 ms.author: alexyar
 manager: rkarlin
@@ -13,13 +13,13 @@ ms.date: 06/18/2019
 
 # Event service
 
-The new API consists of three methods (started, finished, or failed) which should be called during rendering.
+The new API consists of three methods (`started`, `finished`, or `failed`) that should be called during rendering.
 
-When rendering starts, the custom visual code calls the renderingStarted method to indicate that rendering process has started.
+When rendering starts, the Power BI visual code calls the `renderingStarted` method to indicate that the rendering process has started.
 
-If the rendering has completed successfully, the custom visual code will immediately call the `renderingFinished` method notifying the listeners (**primarily 'export to PDF' and 'export to PowerPoint'**) that the visual's image is ready.
+If rendering is completed successfully, the Power BI visual code immediately calls the `renderingFinished` method, notifying the listeners (primarily, *export to PDF* and *export to PowerPoint*) that the visual's image is ready for export.
 
-In case a problem occurred during the rendering process, preventing the custom visual from completing successfully. The custom visual code should call the `renderingFailed` method notifying the listener that the rendering process hasn't completed. This method also provides an optional string for the cause of failure.
+If a problem occurs during the process, the Power BI visual is prevented from being rendered successfully. To notify the listeners that the rendering process hasn't been completed, the Power BI visual code should call the `renderingFailed` method. This method also provides an optional string to provide a reason for the failure.
 
 ## Usage
 
@@ -33,31 +33,31 @@ export interface IVisualHost extends extensibility.IVisualHost {
  */
 export interface IVisualEventService {
     /**
-     * Should be called just before the actual rendering was started. 
-     * Usually at the very start of the update method.
+     * Should be called just before the actual rendering starts, 
+     * usually at the start of the update method
      *
-     * @param options - the visual update options received as update parameter
+     * @param options - the visual update options received as an update parameter
      */
     renderingStarted(options: VisualUpdateOptions): void;
 
     /**
-     * Shoudl be called immediately after finishing successfull rendering.
+     * Should be called immediately after rendering finishes successfully
      * 
-     * @param options - the visual update options received as update parameter
+     * @param options - the visual update options received as an update parameter
      */
     renderingFinished(options: VisualUpdateOptions): void;
 
     /**
-     * Called when rendering failed with optional reason string
+     * Called when rendering fails, with an optional reason string
      * 
-     * @param options - the visual update options received as update parameter
-     * @param reason - the option failure reason string
+     * @param options - the visual update options received as an update parameter
+     * @param reason - the optional failure reason string
      */
     renderingFailed(options: VisualUpdateOptions, reason?: string): void;
 }
 ```
 
-### Simple sample. The visual hasn't any animations on rendering
+### Simple sample: The visual displays no animations
 
 ```typescript
     export class Visual implements IVisual {
@@ -78,9 +78,9 @@ export interface IVisualEventService {
         }
 ```
 
-### Sample. The visual with animation
+### Sample: The visual displays animations
 
-If the visual has animations or async functions for rendering, the `renderingFinished` method should be called after animation or inside async function.
+If the visual has animations or async functions for rendering, the `renderingFinished` method should be called after the animation or inside async function.
 
 ```typescript
     export class Visual implements IVisual {
@@ -99,7 +99,7 @@ If the visual has animations or async functions for rendering, the `renderingFin
         public update(options: VisualUpdateOptions) {
             this.events.renderingStarted(options);
             ...
-            // read more https://github.com/d3/d3-transition/blob/master/README.md#transition_end
+            // Learn more at https://github.com/d3/d3-transition/blob/master/README.md#transition_end
             d3.select(this.element).transition().duration(100).style("opacity","0").end().then(() => {
                 // renderingFinished called after transition end
                 this.events.renderingFinished(options);
@@ -109,4 +109,4 @@ If the visual has animations or async functions for rendering, the `renderingFin
 
 ## Rendering events for visual certification
 
-The support of rendering events by the visual is one of requirements of visuals certification. Read more about [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements)
+One requirement of visuals certification is the support of rendering events by the visual. For more information, see [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements).

@@ -1,6 +1,6 @@
 ---
-title: Fetch more data
-description: Enable segmented fetch of large datasets for Power BI Visuals
+title: Fetch more data from Power BI
+description: This article discusses how to enable a segmented fetch of large datasets for Power BI visuals.
 author: AviSander
 ms.author: asander
 manager: rkarlin
@@ -13,14 +13,13 @@ ms.date: 06/18/2019
 
 # Fetch more data from Power BI
 
-Load more data API overcome the hard limit of 30-K data point. It brings data in chunks. The chunk size is configurable to improve performance according to use case.  
+This article discusses how to load more data to bypass the hard limit of a 30-KB data point. This approach brings data in chunks. The chunk size is configurable to improve performance, depending on your use case.  
 
-## Enable segmented fetch of large datasets
+## Enable a segmented fetch of large datasets
 
-For `dataview` segment mode, define a "window" dataReductionAlgorithm in the visual's `capabilities.json` for the required dataViewMapping.
-The `count` will determine the window size, which limits the number of new data rows appended to the `dataview` in each update.
+For the `dataview` segment mode, you define a "window" size for dataReductionAlgorithm in the visual's *capabilities.json* file for the required dataViewMapping. The `count` determines the window size, which limits the number of new data rows that can be appended to the `dataview` in each update.
 
-To be added in capabilities.json
+Add the following code in the *capabilities.json* file:
 
 ```typescript
 "dataViewMappings": [
@@ -42,9 +41,9 @@ To be added in capabilities.json
 
 New segments are appended to the existing `dataview` and provided to the visual as an `update` call.
 
-## Usage in the custom visual
+## Usage in the Power BI visual
 
-The indication data exists or not can be determined by checking the existence of `dataView.metadata.segment`:
+You can determine whether data exists by checking the existence of `dataView.metadata.segment`:
 
 ```typescript
     public update(options: VisualUpdateOptions) {
@@ -54,11 +53,11 @@ The indication data exists or not can be determined by checking the existence of
     }
 ```
 
-It's also possible to check whether it's the first or subsequent update by checking `options.operationKind`.
+You can also check whether it's the first or subsequent update by checking `options.operationKind`.
 
 `VisualDataChangeOperationKind.Create` means the first segment, and `VisualDataChangeOperationKind.Append` means subsequent segments.
 
-See the code snippet below for a sample implementation:
+For a sample implementation, see the following code snippet:
 
 ```typescript
 // CV update implementation
@@ -68,7 +67,7 @@ public update(options: VisualUpdateOptions) {
 
     }
 
-    // on second or subesquent segments:
+    // on second or subsequent segments:
     if (options.operationKind == VisualDataChangeOperationKind.Append) {
 
     }
@@ -77,24 +76,24 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-The `fetchMoreData` method could also be invoked from a UI event handler
+You can also invoke the `fetchMoreData` method from a UI event handler, as shown here:
 
 ```typescript
 btn_click(){
 {
-    // check if more data is expected for the current dataview
+    // check if more data is expected for the current data view
     if (dataView.metadata.segment) {
-        //request for more data if available, as resopnce Power BI will call update method
+        //request for more data if available; as a response, Power BI will call update method
         let request_accepted: bool = this.host.fetchMoreData();
         // handle rejection
         if (!request_accepted) {
-            // for example when the 100 MB limit has been reached
+            // for example, when the 100 MB limit has been reached
         }
     }
 }
 ```
 
-Power BI will call `update` method of the visual with new segment of data as response to call `this.host.fetchMoreData` method.
+As a response to calling the `this.host.fetchMoreData` method, Power BI calls the `update` method of the visual with a new segment of data.
 
 > [!NOTE]
-> Power BI will presently limit the total fetched data to **100 MB** to avoid client memory constraints. You can detect this limit being reached when fetchMoreData() returns 'false'.*
+> To avoid client memory constraints, Power BI currently limits the fetched data total to 100 MB. This limit has been reached when fetchMoreData() returns `false`.

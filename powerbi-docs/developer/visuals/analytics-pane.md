@@ -1,6 +1,6 @@
 ---
-title: Analytics pane
-description: How to create dynamic reference lines in Power BI Visuals
+title: The Analytics pane in Power BI visuals
+description: This article describes how to create dynamic reference lines in Power BI visuals.
 author: Guy-Moses
 ms.author: guymos
 manager: rkarlin
@@ -11,28 +11,29 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Analytics pane in Power BI Visuals
+# The Analytics pane in Power BI visuals
 
-**Analytics pane** was [introduced for native visuals](https://docs.microsoft.com/power-bi/desktop-analytics-pane) on November 2018.
-Custom visuals with api API v2.5.0 can present and manage their properties in the **Analytics pane**.
+The **Analytics** pane was [introduced for native visuals](https://docs.microsoft.com/power-bi/desktop-analytics-pane) in November 2018.
+This article discusses how Power BI visuals with API v2.5.0 can present and manage their properties in the **Analytics** pane.
 
-![Analytics Pane](./media/visualization-pane-analytics-tab.png)
+![The Analytics pane](./media/visualization-pane-analytics-tab.png)
 
-It's handled similarly to [managing properties in the Format pane](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options), 
-by defining an object in the visual's capabilities.json file. 
+## Manage the Analytics pane
 
-The differences are as follows:
+Just as you'd manage properties in the [**Format** pane](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options), you manage the **Analytics** pane by defining an object in the visual's *capabilities.json* file. 
 
-1. Under the `object`'s definition, add an `objectCategory` field with a value of 2.
+For the **Analytics** pane, the differences are as follows:
+
+* Under the object's definition, you add an **objectCategory** field with a value of 2.
 
     > [!NOTE]
-    > The `objectCategory` field is an optional field introduced in API 2.5.0. It defines the aspect of the visual that the object controls (1 = Formatting, 2 = Analytics). "Formatting" is used for look-and-feel, colors, axes, labels etc. "Analytics" is used for forecasts, trendlines, reference lines, and shapes so on.
+    > The `objectCategory` field is an optional field that was introduced in API 2.5.0. It defines the aspect of the visual that the object controls (1 = Formatting, 2 = Analytics). "Formatting" is used for such elements as look and feel, colors, axes, and labels. "Analytics" is used for such elements as forecasts, trendlines, reference lines, and shapes.
     >
-    > `objectCategory` defaults to "Formatting" if omitted.
+    > If the value isn't specified, `objectCategory` defaults to "Formatting."
 
-2. The object must have the two following properties:
-    1. `show` of type bool, with default value of false.
-    2. `displayName` of type text. The default value you'll choose will become the instance's initial display name.
+* The object must have the following two properties:
+    * `show` of type `bool`, with a default value of `false`.
+    * `displayName` of type `text`. The default value that you choose becomes the instance's initial display name.
 
 ```json
 {
@@ -59,13 +60,13 @@ The differences are as follows:
 }
 ```
 
-Any other properties may be defined in the same way as done for Format objects. Object enumeration is done exactly the same as in **Format pane**.
+You can define any other properties in the same way that you do for **Format** objects. And you enumerate objects just as you do in the **Format** pane.
 
-***Known limitations and issues***
+## Known limitations and issues of the Analytics pane
 
-  1. No multi-instance support yet. Objects can't have a [selector](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector) other than static (that is "selector": null), and custom visuals can't have user-defined multiple instances of a card.
-  2. Properties of type `integer` are't displayed correctly. As a workaround, use type `numeric` instead.
+* No multi-instance support yet. Objects can't have a [selector](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector) other than static (that is, "selector": null), and Power BI visuals can't have user-defined multiple instances of a card.
+* Properties of type `integer` aren't displayed correctly. As a workaround, use type `numeric` instead.
 
 > [!NOTE]
-> Use the Analytics pane only for objects that add new information or shed new light on the presented information. For instance, dynamic reference lines illustrating important trends.
-> Any options that control the look-and-feel of the visual, that is, formatting, should be kept in the Formatting pane.
+> * Use the **Analytics** pane only for objects that add new information or shed new light on the presented information (for example, dynamic reference lines that illustrate important trends).
+> * Any options that control the look and feel of the visual (that is, formatting) should be limited to the **Formatting** pane.

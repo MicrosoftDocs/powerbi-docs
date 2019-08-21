@@ -1,6 +1,6 @@
 ---
-title: Launch URL
-description: Power BI Visuals can open URL on new tab
+title: Create a launch URL
+description: This article describes how can open URL on new tab by using Power BI Visuals.
 author: Guy-Moses
 ms.author: guymos
 manager: rkarlin
@@ -11,9 +11,9 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Launch URL
+# Create a launch URL
 
-Launch URL allows opening a new browser tab (or window), by delegating the actual work to Power BI.
+By creating a launch URL, you can open a new browser tab (or window) by delegating the actual work to Power BI.
 
 ## Sample
 
@@ -31,18 +31,21 @@ this.host.launchUrl('http://some.link.net');
 
 ## Restrictions
 
-* Use only absolute paths, not relative ones. `http://some.link.net/subfolder/page.html` is fine, `/page.html` won't be opened.
-* Currently only `http` and `https` protocols are supported. Avoid `ftp`, `mailto` so on.
+* Use only absolute paths, not relative paths. For example, use an absolute path such as `http://some.link.net/subfolder/page.html`. The relative path,`/page.html`, won't be opened.
+
+* Currently, only *HTTP* and *HTTPS* protocols are supported. Avoid *FTP*, *MAILTO*, and so on.
 
 ## Best practices
 
-1. For most cases, it's best to only open a link as a response to a user's explicit action. Make it easy for the user to understand that clicking the link or button will result in opening a new tab. Triggering a `launchUrl()` call without a user's action, or as a side effect of a different action can be confusing or frustrating for the user.
-2. If the link is not crucial for the proper functioning of the visual, it's recommanded to provide the report's author a way to disable and hide the link. This is especially relevant for special Power BI use-cases, such as embedding a report in a third party application or publishing it to the web.
-3. Avoid Triggering a `launchUrl()` call from inside a loop, the visual's `update` function, or any other frequently recurring code.
+* Usually, it's best to open a link only as a response to a user's explicit action. Make it easy for the user to understand that clicking the link or button will result in opening a new tab. Triggering a `launchUrl()` call without a user's action, or as a side effect of a different action can be confusing or frustrating for the user.
 
-## Step by step example
+* If the link isn't essential for the proper functioning of the visual, we recommend that you give the report's author a way to disable and hide the link. This recommendation is especially relevant for special Power BI use cases, such as embedding a report in a third-party application or publishing it to the web.
 
-### Adding a link launching element
+* Avoid triggering a `launchUrl()` call from inside a loop, the visual's `update` function, or any other frequently recurring code.
+
+## A step-by-step example
+
+### Add a link-launching element
 
 The following lines were added to the visual's `constructor` function:
 
@@ -51,7 +54,7 @@ The following lines were added to the visual's `constructor` function:
     options.element.appendChild(this.helpLinkElement);
 ```
 
-And, a private function creating and attaching the anchor element was added:
+A private function that creates and attaches the anchor element was added:
 
 ```typescript
 private createHelpLinkElement(): Element {
@@ -66,7 +69,7 @@ private createHelpLinkElement(): Element {
 };
 ```
 
-Finally, an entry in the visual.less file defines the style for the link element:
+Finally, an entry in the *visual.less* file defines the style for the link element:
 
 ```less
 .helpLink {
@@ -98,10 +101,11 @@ Finally, an entry in the visual.less file defines the style for the link element
 }
 ```
 
-### Adding a toggling mechanism
+### Add a toggling mechanism
 
-This requires adding a static object (see [static object tutorial](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties)), so that the report's author can toggle the visibility of the link element (default is set to hidden).
-A `showHelpLink` boolean static object was added to `capabilities.json` objects entry:
+To add a toggling mechanism, you need to add a static object , so that the report's author can toggle the visibility of the link element (the default is set to *hidden*). For more information, see [static object tutorial](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties).
+
+A `showHelpLink` Boolean static object was added to the *capabilities.json* file's objects entry, as shown in the following code:
 
 ```typescript
 "objects": {
@@ -131,4 +135,4 @@ if (settings.generalView.showHelpLink) {
 }
 ```
 
-The `hidden` class is defined in visual.less to control the display of the element.
+The *hidden* class is defined in the *visual.less* file to control the display of the element.
