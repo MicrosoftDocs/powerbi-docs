@@ -1,6 +1,6 @@
 ---
-title: High-contrast mode support in Power BI Visuals
-description: This article describes how to add high-contrast mode support to Power BI Visuals.
+title: High-contrast mode support in Power BI visuals
+description: This article describes how to add high-contrast mode support to Power BI visuals.
 author: sranins
 ms.author: rasala
 manager: rkarlin
@@ -11,15 +11,15 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# High-contrast mode support in Power BI Visuals
+# High-contrast mode support in Power BI visuals
 
-The Windows *High contrast* setting makes text and apps easier to see by displaying more distinct colors. This article discusses how to add high-contrast mode support to Power BI Visuals. For more information, see [high-contrast support in Power BI](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast).
+The Windows *high contrast* setting makes text and apps easier to see by displaying more distinct colors. This article discusses how to add high-contrast mode support to Power BI visuals. For more information, see [high-contrast support in Power BI](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast).
 
 To view an implementation of high-contrast support, go to the [PowerBI-visuals-sampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6)
 
 ## On initialization
 
-The colorPalette member of `options.host` has several properties for high-contrast mode. Use these properties to determine whether high-contrast mode is active and, if so, what colors to use.
+The colorPalette member of `options.host` has several properties for high-contrast mode. Use these properties to determine whether high-contrast mode is active and, if it is, what colors to use.
 
 ### Detect that Power BI is in high-contrast mode
 
@@ -27,7 +27,7 @@ If `host.colorPalette.isHighContrast` is `true`, high-contrast mode is active an
 
 ### Get high-contrast colors
 
-In high-contrast mode, your visual should limit itself to the following colors:
+In high-contrast mode, your visual should limit itself to the following settings:
 
 * **Foreground** color is used to draw any lines, icons, text, and outline or fill of shapes.
 * **Background** color is used for background, and as the fill color of outlined shapes.
@@ -61,13 +61,13 @@ constructor(options: VisualConstructorOptions) {
     }
 ```
 
-Or, you can store the `host` object during initialization and access the relevant `colorPalette` properties during update.
+Or you can store the `host` object during initialization and access the relevant `colorPalette` properties during update.
 
 ## On update
 
-The specific implementations of high-contrast support vary from visual to visual and depend on the details of the graphic design. High-contrast mode ordinarily requires a slightly different design than the default mode, to keep the important details easy to distinguish with the limited colors.
+The specific implementations of high-contrast support vary from visual to visual and depend on the details of the graphic design. To keep important details easy to distinguish with the limited colors, high-contrast mode ordinarily requires a design that's slightly different from the default mode.
 
-Here are some guidelines followed by Power BI native visuals:
+Power BI native visuals follow these guidelines:
 
 * All data points use the same color (foreground).
 * All text, axes, arrows, lines, and so on use the foreground color.
@@ -76,7 +76,7 @@ Here are some guidelines followed by Power BI native visuals:
 * When a data element is highlighted, all other elements change their opacity to 40%.
 * For slicers, active filter elements use foreground-selected color.
 
-In the following Sample Bar Chart, for example, all bars are drawn with two pixels of thick foreground outline and background fill. Compare the way it looks with default colors and with a couple of high-contrast themes:
+In the following sample bar chart, for example, all bars are drawn with two pixels of thick foreground outline and background fill. Compare the way it looks with default colors and with a couple of high-contrast themes:
 
 ![Sample Bar Chart using standard colors](./media/hc-samplebarchart-standard.png)
 ![Sample Bar Chart using *Dark #2* color theme](./media/hc-samplebarchart-dark2.png)
