@@ -39,7 +39,7 @@ We also recommend following these additional steps, which can yield a small perf
     </setting>
     ```
 
-Now, [run a Power BI report](service-gateway-sso-kerberos.md#run-a-power-bi-report).
+Now, [Run a Power BI report](service-gateway-sso-kerberos.md#run-a-power-bi-report).
 
 ## Next steps
 
