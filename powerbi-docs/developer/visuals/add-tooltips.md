@@ -1,6 +1,6 @@
 ---
-title: Tooltips in Power BI Visuals
-description: This article discusses how Power BI Visuals can display tooltips.
+title: Tooltips in Power BI visuals
+description: This article discusses how you can display tooltips in Power BI visuals.
 author: AviSander
 ms.author: asander
 manager: rkarlin
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Tooltips in Power BI Visuals
+# Tooltips in Power BI visuals
 
 Visuals can now make use of Power BI tooltip support. Power BI tooltips handle the following interactions:
 
@@ -21,13 +21,13 @@ Visuals can now make use of Power BI tooltip support. Power BI tooltips handle t
 
 Tooltips can display a textual element with a title, a value in a given color, and opacity at a specified set of coordinates. This data is provided to the API, and the Power BI host renders it the same way it renders tooltips for native visuals.
 
-A tooltip in a sample BarChart is shown in the following image:
+A tooltip in a sample bar chart is shown in the following image:
 
-![Sample BarChart tooltips](./media/tooltips-in-samplebarchart.png)
+![Sample bar chart tooltips](./media/tooltips-in-samplebarchart.png)
 
 The preceding tooltip image illustrates a single bar category and value. You can extend a single tooltip to display multiple values.
 
-## Handling Tooltips
+## Manage tooltips
 
 The interface through which you manage tooltips is the "ITooltipService." It's used to notify the host that a tooltip needs to be displayed, removed, or moved.
 
@@ -46,7 +46,7 @@ Your visual needs to listen to the mouse events within your visual and call the 
 Because calling these methods involves user events such as mouse moves and touch events, it's a good idea to create listeners for these events, which would in turn invoke the `TooltipService` members.
 Our sample aggregates in a class called `TooltipServiceWrapper`.
 
-### TooltipServiceWrapper class
+### The TooltipServiceWrapper class
 
 The basic idea behind this class is to hold the instance of the `TooltipService`, listen to D3 mouse events over relevant elements, and then make the calls to `show()` and `hide()` the elements when needed.
 
@@ -56,7 +56,7 @@ You can find the full sample code in [SampleBarChart visual repository](https://
 
 ### Create TooltipServiceWrapper
 
-The BarChart constructor now has a `TooltipServiceWrapper` member, which is instantiated in the constructor with the host `tooltipService` instance.
+The bar chart constructor now has a `TooltipServiceWrapper` member, which is instantiated in the constructor with the host `tooltipService` instance.
 
 ```typescript
         private tooltipServiceWrapper: ITooltipServiceWrapper;
@@ -158,7 +158,7 @@ For more information, see the [SampleBarChart visual repository](https://github.
 
 ### Populate the tooltip content by the getTooltipData method
 
-The `BarChart` was added with a `getTooltipData` member, which simply extracts the category, value, and color of the data point into a VisualTooltipDataItem[] element.
+The bar chart was added with a `getTooltipData` member, which simply extracts the `category`, `value`, and `color` of the data point into a VisualTooltipDataItem[] element.
 
 ```typescript
         private static getTooltipData(value: any): VisualTooltipDataItem[] {
@@ -213,7 +213,7 @@ You can define report page tooltips in the **Format** pane.
 
 * `roles`: (Optional) After it's defined, it instructs what data roles are bound to the selected tooltip option in the fields well.
 
-For more information, see [Report Page Tooltips usage guidelines](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips).
+For more information, see [Report page tooltips usage guidelines](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips).
 
 To display the report page tooltip, after the Power BI host calls `ITooltipService.Show(options: TooltipShowOptions)` or `ITooltipService.Move(options: TooltipMoveOptions)`, it consumes the selectionId (`identities` property of the preceding `options` argument). To be retrieved by the tooltip, SelectionId should represent the selected data (category, series, and so on) of the item you hovered over.
 
