@@ -1,5 +1,5 @@
 ---
-title: Power BI visuals capabilities
+title: Capabilities and properties of Power BI visuals
 description: This article describes the capabilities and properties of Power BI visuals.
 author: asander
 ms.author: asander
@@ -29,7 +29,7 @@ The root objects of a visual's capabilities are `dataRoles`, `dataViewMappings`,
 
 ```
 
-## Define the data fields your visual expects: `dataRoles`
+## Define the data fields that your visual expects: dataRoles
 
 To define fields that can be bound to data, you use `dataRoles`. `dataRoles` takes an array of `DataViewRole` objects, which defines all the required properties.
 
@@ -45,7 +45,7 @@ To define fields that can be bound to data, you use `dataRoles`. `dataRoles` tak
 * **requiredTypes**: The required type of data for this data role. Values that don't match are set to null (optional).
 * **preferredTypes**: The preferred type of data for this data role (optional).
 
-### Valid data types in "requiredTypes" and "preferredTypes"
+### Valid data types in requiredTypes and preferredTypes
 
 * **bool**: A boolean value
 * **integer**: An integer (whole number) value
@@ -156,7 +156,7 @@ The preceding data roles would create the fields that are displayed in the follo
 
 ![Data role fields](./media/data-role-display.png)
 
-## Define how you want the data mapped: `dataViewMappings`
+## Define how you want the data mapped: dataViewMappings
 
 A DataViewMappings property describes how the data roles relate to each other and allows you to specify conditional requirements for the them.
 
@@ -176,7 +176,7 @@ Most visuals provide a single mapping, but you can provide multiple dataViewMapp
 
 For more information, see [Understand data view mapping in Power BI visuals](dataview-mappings.md).
 
-## Define property pane options: `objects`
+## Define property pane options: objects
 
 Objects describe customizable properties that are associated with the visual. Each object can have multiple properties, and each property has a type that's associated with it. Types refer to what the property will be. 
 
@@ -191,19 +191,19 @@ Objects describe customizable properties that are associated with the visual. Ea
 
 For more information, see [Objects and properties of Power BI visuals](objects-properties.md).
 
-## Handle partial highlighting: `supportsHighlight`
+## Handle partial highlighting: supportsHighlight
 
 By default, this value is set to `false`, which means that your values are automatically filtered when something on the page is selected. This automatic filtering in turn updates your visual to display only the selected value. If you want to display the full data but highlight only the selected items, you need to set `supportsHighlight` to `true` in your *capabilities.json* file.
 
 For more information, see [Highlight data points in Power BI visuals](highlight.md).
 
-## Handle advanced edit mode: `advancedEditModeSupport`
+## Handle advanced edit mode: advancedEditModeSupport
 
 A visual can declare its support of advanced edit mode. By default, a visual doesn't support advanced edit mode, unless stated otherwise in the *capabilities.json* file.
 
 For more information, see [Advanced edit mode in Power BI visuals](advanced-edit-mode.md).
 
-## Data sorting options for visual: `sorting`
+## Data sorting options for visual: sorting
 
 A visual can define its sorting behavior via its capabilities. By default, a visual doesn't support modifying its sorting order, unless stated otherwise in the *capabilities.json* file.
 
