@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/21/2019
 
 LocalizationGroup: Premium
 ---
@@ -43,43 +43,71 @@ Query workloads are optimized for and limited by resources determined by your Pr
 
 ### AI (Preview)
 
-In addition to the **Max Memory** setting, the AI workload has an additional setting, **Allow usage from Power BI Desktop**. The default is **Off**. This setting is reserved for future use and may not appear in all tenants.
+The AI workload lets you use cognitive services and Automated Machine Learning in Power BI. Use the following settings to control workload behavior.
 
-### Datasets (Preview)
+| Setting Name | Description |
+|---------------------------------|----------------------------------------|
+| **Max Memory (%)** | The maximum percentage of available memory that AI processes can use in a capacity. | Control the percentages of memory for each workload you've enabled in a capacity. |
+| **Allow usage from Power BI Desktop** | This setting is reserved for future use and does not appear in all tenants. |
+| **Allow building machine learning models** | Specifies whether business analysts can train, validate, and invoke machine learning models directly in Power BI. For more information, see [Automated Machine Learning in Power BI (Preview)](service-machine-learning-automated.md). |
+| **Enable parallelism for AI requests** | Specifies whether AI requests can run in parallel. |
+|  |  |
 
-By default, the Datasets workload is enabled and cannot be disabled. This workload contains an additional setting for the _XMLA endpoint_ and a set of performance-related settings. This **XMLA Endpoint** setting specifies that connections from client applications honor the security group membership set at the workspace and app levels. To learn more, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md).
+### Datasets
 
-The performance-related settings ae described in the following table.
+The datasets workload is enabled by default and cannot be disabled. Use the following settings to control workload behavior.
 
-| Setting Name | Description | Usage |
-|---------------------------------|----------------------------------------|----------------------------------------|
-| **Max Intermediate Row Set Count** | The max number of intermediate rows returned by DirectQuery. Default value is set to 1000000 and allowable range is between 100000 and 2147483647 | Control the impact of resource-intensive or poorly designed reports. |
-| **Max Offline Dataset Size (GB)** | Maximum size of the offline dataset in memory. This is the compressed size on disk. Default value is set by SKU and the allowable range is from 0.1 – 10 GB | Prevent report creators from publishing a large dataset that could negatively impact the capacity. |
-| **Max Result Row Set Count** | Defines the maximum number of rows returned in a DAX query. Default value is set to -1(no limit) and allowable range is between 100000 and 2147483647 | Control the impact of resource-intensive or poorly designed reports. |
-| **Query Memory Limit (%)** | Applies only to DAX measures and queries. Specified in % and limits how much memory can be used by temporary results during a query. | Control the impact of resource-intensive or poorly designed reports. |
-| **Query Timeout (seconds)** | An integer that defines the timeout, in seconds, for queries. The default is 3600 seconds (or 60   minutes). Zero (0) specifies that no queries will timeout. | Maintain better control of long-running queries. |
+| Setting Name | Description |
+|---------------------------------|----------------------------------------|
+| **Max Memory (%)** | The maximum percentage of available memory that datasets can use in a capacity. |
+| **XMLA Endpoint** | Specifies that connections from client applications honor the security group membership set at the workspace and app levels. For more information, see [Connect to datasets with client applications and tools](service-premium-connect-tools.md). |
+| **Max Intermediate Row Set Count** | The maximum number of intermediate rows returned by DirectQuery. The default value is 1000000, and the allowable range is between 100000 and 2147483647. Use this setting to control the impact of resource-intensive or poorly designed reports. |
+| **Max Offline Dataset Size (GB)** | The maximum size of the offline dataset in memory. This is the compressed size on disk. The default value is set by SKU, and the allowable range is between 0.1 and 10 GB. Use this setting to prevent report creators from publishing a large dataset that could negatively impact the capacity. |
+| **Max Result Row Set Count** | The maximum number of rows returned in a DAX query. The default value is -1 (no limit), and the allowable range is between 100000 and 2147483647. Use this setting to control the impact of resource-intensive or poorly designed reports. |
+| **Query Memory Limit (%)** | The maximum percentage of available memory that can be used for temporary results in a query or DAX measure. Use this setting to control the impact of resource-intensive or poorly designed reports. |
+| **Query Timeout (seconds)** | The maximum amount of time before a query times out. The default is 3600 seconds (1 hour). A value of 0 specifies that queries won't timeout. Use this setting to maintain better control of long-running queries. |
 |  |  |  |
 
 ### Dataflows
 
-In addition to the **Max Memory** setting, the Dataflows workload has an additional setting, **Container size**. This setting enables you to optimize dataflow workload performance for processing more complex, compute-heavy dataflows.
+The dataflows workload lets you use dataflows self-service data prep, to ingest, transform, integrate, and enrich data. Use the following settings to control workload behavior.
 
-When refreshing a dataflow, the dataflow workload spawns a container for each entity in the dataflow. Each container can take memory up to the volume in specified in the Container size setting. The default for all SKUs is **700 MB**. You might want to change this setting if:
+| Setting Name | Description |
+|---------------------------------|----------------------------------------|
+| **Max Memory (%)** | The maximum percentage of available memory that dataflows can use in a capacity. | Control the percentages of memory for each workload you've enabled in a capacity. |
+| **Enhanced Dataflows Compute Engine (Preview)** | Enable this option for up to 20x faster calculation of computed entities when working with large scale data volumes. **You must restart the capacity to activate the new engine.** For more information, see [Enhanced dataflows compute engine](#enhanced-dataflows-compute-engine). |
+| **Container Size** | The maximum size of the container that dataflows use for each entity in the dataflow. The default value is 700 MB. For more information, see [Container size](#container-size). |
+|  |  |
+
+#### Enhanced dataflows compute engine
+
+To benefit from the new compute engine, split ingestion of data into separate dataflows and put transformation logic into computed entities in different dataflows. This approach is recommended because the compute engine works on dataflows that reference an existing dataflow. It doesn't work on ingestion dataflows. Following this guidance ensures that the new compute engine handles transformation steps, such as joins and merges, for optimal performance.
+
+#### Container size
+
+When refreshing a dataflow, the dataflow workload spawns a container for each entity in the dataflow. Each container can take memory up to the volume specified in the **Container Size setting. The default for all SKUs is 700 MB. You might want to change this setting if:
 
 - Dataflows take too long to refresh, or dataflow refresh fails on a timeout.
 - Dataflow entities include computation steps, for example, a join.  
 
-It's recommend you use the [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) app to analyze Dataflow workload performance. 
+It's recommend you use the [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) app to analyze Dataflow workload performance.
 
 In some cases, increasing container size may not improve performance. For example, if the dataflow is getting data only from a source without performing significant calculations, changing container size probably won’t help. Increasing container size might help if it will enable the Dataflow workload to allocate more memory for entity refresh operations. By having more memory allocated, it can reduce the time it takes to refresh heavily computed entities.
 
 The Container Size value can’t exceed the maximum memory for the Dataflows workload. For example, a P1 capacity has 25GB of memory. If the Dataflow workload Max Memory (%) is set to 20%, Container Size (MB) cannot exceed 5000. In all cases, the Container Size cannot exceed the Max Memory, even if you set a higher value.
 
-### Paginated reports (Preview)
+### Paginated reports
+
+The paginated reports workload lets you run paginated reports, based on the standard SQL Server Reporting Services format, in the Power BI service. Use the following setting to control workload behavior.
+
+| Setting Name | Description |
+|---------------------------------|----------------------------------------|
+| **Max Memory (%)** | The maximum percentage of available memory that paginated reports can use in a capacity. | Control the percentages of memory for each workload you've enabled in a capacity. |
+|  |  |
 
 Paginated reports allow custom code to be run when rendering a report. For example, dynamically changing text color based on content, which can take additional memory. Power BI Premium runs paginated reports in a contained space within the capacity. The Max Memory specified is used *whether or not* the workload is active. If changing the Max Memory setting from default, make sure you set it low enough that it doesn't negatively affect other workloads.
 
-In some cases, the Paginated Reports workload can become unavailable. In this case, the workload shows an error state in the Admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload and then enable it again.
+In some cases, the paginated reports workload can become unavailable. In this case, the workload shows an error state in the Admin portal, and users see timeouts for report rendering. To mitigate this issue, disable the workload and then enable it again.
 
 ## Configure workloads
 
