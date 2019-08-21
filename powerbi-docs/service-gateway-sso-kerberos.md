@@ -55,7 +55,7 @@ First, determine whether an SPN was already created for the domain account used 
 
     If there is no **Delegation** tab on the **Properties** dialog box, you can manually create an SPN on the account to enable it. Use the [setspn tool](https://technet.microsoft.com/library/cc731241.aspx) that comes with Windows (you need domain admin rights to create the SPN).
 
-    For example, imagine the gateway service account is "PBIEgwTest\GatewaySvc", and the name of the machine the gateway service is running on is **Machine1**. To set the SPN for the gateway service account you would run the following command:
+    For example, imagine the gateway service account is **Contoso\GatewaySvc**), and the name of the machine the gateway service is running on is **MyGatewayMachine**. To set the SPN for the gateway service account you would run the following command:
 
     ![Image of set SPN command](media/service-gateway-sso-kerberos/set-spn.png)
 
@@ -78,16 +78,17 @@ This section assumes you have already configured SPNs for your underlying data s
 
 In the following steps, we assume an on-premises environment with two machines: a gateway machine and a database server running SQL Server that has already been configured for Kerberos-based SSO. The steps can be adopted for one of the other supported data sources, so long as the data source has already been configured for Kerberos-based single sign-on. For the sake of this example, we'll also assume the following settings and names:
 
-* Gateway machine name: **PBIEgwTestGW**
-* Gateway service account: **PBIEgwTest\GatewaySvc** (account display name: Gateway Connector)
-* SQL Server data source machine name: **PBIEgwTestSQL**
-* SQL Server data source service account: **PBIEgwTest\SQLService**
+* Active Directory Domain (Netbios): Contoso
+* Gateway machine name: **MyGatewayMachine**
+* Gateway service account: **Contoso\GatewaySvc**
+* SQL Server data source machine name: **MySQLServer**
+* SQL Server data source service account: **Contoso\SQLService**
 
 Here's how to configure the delegation settings:
 
 1. With domain administrator rights, open **Active Directory Users and Computers**.
 
-2. Right-click the gateway service account (**PBIEgwTest\GatewaySvc**), and select **Properties**.
+2. Right-click the gateway service account (**Contoso\GatewaySvc**), and select **Properties**.
 
 3. Select the **Delegation** tab.
 
@@ -97,13 +98,11 @@ Here's how to configure the delegation settings:
 
 6. In the new dialog box, select **Users or Computers**.
 
-7. Enter the service account for the data source, for example, a SQL Server data source may have a service account like  **PBIEgwTest\SQLService**. Once the account has been added, select **OK**.
+7. Enter the service account for the data source, for example, a SQL Server data source may have a service account like  **Contoso\SQLService**. Once the account has been added, select **OK**.
 
 8. Select the SPN that you created for the database server. In our example, the SPN begins with **MSSQLSvc**. If you added both the FQDN and the NetBIOS SPN for your database service, select both. You might only see one.
 
 9. Select **OK**. You should see the SPN in the list now.
-
-    Optionally, you can select **Expanded** to show both the FQDN and NetBIOS SPN. The dialog box looks similar to the following if you selected **Expanded**. Select **OK**.
 
     ![Screenshot of Gateway Connector Properties dialog box](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
@@ -118,26 +117,26 @@ Use [resource-based Kerberos constrained delegation](/windows-server/security/ke
 
 In the following steps, we assume an on-premises environment with two machines in different domains: a gateway machine and a database server running SQL Server that has already been configured for Kerberos-based SSO. The steps can be adopted for one of the other supported data sources, so long as the data source has already been configured for Kerberos-based single sign-on. For the sake of this example, we also assume the following settings and names:
 
-* Gateway machine name: **PBIEgwTestGW**
-* Gateway service account: **PBIEgwTestFrontEnd\GatewaySvc** (account display name: Gateway Connector)
-* SQL Server data source machine name: **PBIEgwTestSQL**
-* SQL Server data source service account: **PBIEgwTestBackEnd\SQLService**
+* Gateway machine name: **MyGatewayMachine**
+* Gateway service account: **ContosoFrontEnd\GatewaySvc**
+* SQL Server data source machine name: **MySQLServer**
+* SQL Server data source service account: **ContosoBackEnd\SQLService**
 
 Given those example names and settings, complete the following configuration steps:
 
-1. On the domain controller for **PBIEgwTestFront-end** domain, make sure no delegation settings are applied for the gateway service account using **Active Directory Users and Computers**, a Microsoft Management Console (MMC) snap-in.
+1. On the domain controller for **ContosoFrontEnd** domain, make sure no delegation settings are applied for the gateway service account using **Active Directory Users and Computers**, a Microsoft Management Console (MMC) snap-in.
 
     ![Gateway connector properties](media/service-gateway-sso-kerberos-resource/gateway-connector-properties.png)
 
-2. Using **Active Directory Users and Computers** on the domain controller for the **PBIEgwTestBack-end** domain, make sure no delegation settings are applied for the back-end service account. In addition, make sure that the **msDS-AllowedToActOnBehalfOfOtherIdentity** attribute for this account is also not set. You can find this attribute in the **Attribute Editor**, as shown in the following image:
+2. Using **Active Directory Users and Computers** on the domain controller for the **ContosoBackEnd** domain, make sure no delegation settings are applied for the back-end service account. In addition, make sure that the **msDS-AllowedToActOnBehalfOfOtherIdentity** attribute for this account is also not set. You can find this attribute in the **Attribute Editor**, as shown in the following image:
 
     ![SQL service properties](media/service-gateway-sso-kerberos-resource/sql-service-properties.png)
 
-3. Create a group in **Active Directory Users and Computers**, on the domain controller for **PBIEgwTestBack-end** domain. Add the gateway service account to this group as shown in the following image. The image shows a new group called _ResourceDelGroup_ and the gateway service account, **GatewaySvc**, added to this group.
+3. Create a group in **Active Directory Users and Computers**, on the domain controller for **ContosoBackEnd** domain. Add the gateway service account to this group as shown in the following image. The image shows a new group called _ResourceDelGroup_ and the gateway service account, **GatewaySvc**, added to this group.
 
     ![Group properties](media/service-gateway-sso-kerberos-resource/group-properties.png)
 
-4. Open a command prompt and run the following commands in the domain controller for **PBIEgwTestBack-end** domain to update the **msDS-AllowedToActOnBehalfOfOtherIdentity** attribute of the back-end service account:
+4. Open a command prompt and run the following commands in the domain controller for **ContosoBackEnd** domain to update the **msDS-AllowedToActOnBehalfOfOtherIdentity** attribute of the back-end service account:
 
     ```powershell
     $c = Get-ADGroup ResourceDelGroup
@@ -148,7 +147,7 @@ Given those example names and settings, complete the following configuration ste
 
 ## Grant the gateway service account local policy rights on the gateway machine
 
-Finally, on the machine running the gateway service (**PBIEgwTestGW** in our example), you must grant the gateway service account the local policy **Impersonate a client after authentication** and **Act as part of the operating system (SeTcbPrivilege)**. You can perform and verify this configuration with the Local Group Policy Editor (**gpedit**).
+Finally, on the machine running the gateway service (**MyGatewayMachine** in our example), you must grant the gateway service account the local policy **Impersonate a client after authentication** and **Act as part of the operating system (SeTcbPrivilege)**. You can perform and verify this configuration with the Local Group Policy Editor (**gpedit**).
 
 1. On the gateway machine, run: *gpedit.msc*.
 
@@ -160,7 +159,7 @@ Finally, on the machine running the gateway service (**PBIEgwTestGW** in our exa
 
     ![Screenshot of Impersonate a client policy](media/service-gateway-sso-kerberos/impersonate-client.png)
 
-    Right-click, and open **Properties**. Check the list of accounts. It must include the gateway service account (**PBIEgwTest\GatewaySvc**).
+    Right-click, and open **Properties**. Check the list of accounts. It must include the gateway service account (**Contoso\GatewaySvc**).
 
 4. Under **User Rights Assignment**, from the list of policies, select **Act as part of the operating system (SeTcbPrivilege)**. Ensure that the gateway service account is included in the list of accounts as well.
 
