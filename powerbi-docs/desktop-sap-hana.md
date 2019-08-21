@@ -50,9 +50,11 @@ There are also a few limitations to using **SAP HANA**, shown below:
 
 
 ## Next steps
-For more information about DirectQuery, check out the following resources:
+For more information about DirectQuery and SAP HANA, check out the following resources:
 
 * [DirectQuery and SAP HANA](desktop-directquery-sap-hana.md)
 * [DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data Sources supported by DirectQuery](desktop-directquery-data-sources.md)
+* [Enable encryption for SAP HANA](desktop-sap-hana-encryption.md)
+
 
