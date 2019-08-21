@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
 ---
-# Understand a star schema and the importance for Power BI
+# Understand star schema and the importance for Power BI
 
 This article targets Power BI Desktop data modelers. It describes star schema design and its relevance to developing Power BI data models optimized for performance and usability.
 
