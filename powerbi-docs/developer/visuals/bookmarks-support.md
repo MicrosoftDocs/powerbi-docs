@@ -1,6 +1,6 @@
 ---
-title: Add bookmark support for Power BI Visuals
-description: Power BI Visuals can handle bookmarks switching
+title: Add bookmark support for Power BI visuals
+description: Power BI visuals can handle bookmarks switching
 author: zBritva
 ms.author: v-ilgali
 manager: rkarlin
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Add bookmark support for Power BI Visuals
+# Add bookmark support for Power BI visuals
 
 With Power BI report bookmarks, you can capture a configured view of a report page, the selection state, and the filtering state of the visual. But it requires additional action from the custom visuals side to support the bookmark and react correctly to changes.
 
@@ -27,31 +27,31 @@ If your visual interacts with other visuals, selects data points, or filters oth
 
 2. Update the visual API to version 1.11.0 to use `registerOnSelectCallback` in an instance of `SelectionManager`. It's required for non-filter visuals that use the plain `SelectionManager` rather than `InteractivityService`.
 
-### How custom visuals interact with Power BI in a report bookmarks scenario
+### How custom visuals interact with Power BI in report bookmarks
 
-Let's consider the following scenario: A user creates several bookmarks on the report page, with a different selection state in each bookmark.
+Let's consider the following scenario: you want to create several bookmarks on the report page, with a different selection state in each bookmark.
 
-First, the user selects a data point in your visual. The visual interacts with Power BI and other visuals by passing selections to the host. The user then selects **Add** in the **Bookmark** pane, and Power BI saves the current selections for the new bookmark.
+First, you select a data point in your visual. The visual interacts with Power BI and other visuals by passing selections to the host. You then select **Add** in the **Bookmark** pane, and Power BI saves the current selections for the new bookmark.
 
-It happens repeatedly as the user changes the selection and adds new bookmarks. After the bookmarks are created, the user can switch between them.
+It happens repeatedly as you change the selection and add new bookmarks. After you create the bookmarks, you can switch between them.
 
-When users select a bookmark, Power BI restores the saved filter or selection state and passes it to the visuals. Other visuals are highlighted or filtered according to the state that's stored in the bookmark. The Power BI host is responsible for the actions. Your visual is responsible for correctly reflecting the new selection state (for example, for changing the colors of rendered data points).
+When you select a bookmark, Power BI restores the saved filter or selection state and passes it to the visuals. Other visuals are highlighted or filtered according to the state that's stored in the bookmark. The Power BI host is responsible for the actions. Your visual is responsible for correctly reflecting the new selection state (for example, for changing the colors of rendered data points).
 
 The new selection state is communicated to the visual through the `update` method. The `options` argument contains a special property, `options.jsonFilters`. Its JSONFilter property can contain `Advanced Filter` and `Tuple Filter`.
 
-The visual should restore the filter values to display the corresponding state of the visual for the selected bookmark. Or you can use the special callback function call that's registered as the `registerOnSelectCallback` method of ISelectionManager, if the visual uses selections only.
+The visual should restore the filter values to display the corresponding state of the visual for the selected bookmark. Or, if the visual uses selections only, you can use the special callback function call that's registered as the `registerOnSelectCallback` method of ISelectionManager.
 
-### Visuals with Selections
+### Visuals with Selection
 
-If your visuals interact with other visuals by using [Selection](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md), you can add bookmarks in either of two ways:
+If your visual interacts with other visuals by using [Selection](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md), you can add bookmarks in either of two ways:
 
-* If your visual hasn't already used [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md), you can use the `FilterManager.restoreSelectionIds` method.
+* If the visual hasn't already used [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md), you can use the `FilterManager.restoreSelectionIds` method.
 
-* If your visual already uses [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md) to manage selections, you should use the `applySelectionFromFilter` method in the instance of `InteractivityService`.
+* If the visual already uses [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md) to manage selections, you should use the `applySelectionFromFilter` method in the instance of `InteractivityService`.
 
 #### Use ISelectionManager.registerOnSelectCallback
 
-When a user clicks a bookmark, Power BI calls the `callback` method of the visual with the corresponding selections. 
+When you select a bookmark, Power BI calls the `callback` method of the visual with the corresponding selections. 
 
 ```typescript
 this.selectionManager.registerOnSelectCallback(
@@ -76,7 +76,7 @@ visualDataPoints.push({
 });
 ```
 
-So, you have `visualDataPoints` as your data points and the `ids` array passed to the `callback` function.
+You now have `visualDataPoints` as your data points and the `ids` array passed to the `callback` function.
 
 At this point, the visual should compare the `ISelectionId[]` array with the selections in your `visualDataPoints` array and mark the corresponding data points as selected.
 
@@ -100,9 +100,9 @@ After you update the data points, they'll reflect the current selection state th
 
 If your visual uses `InteractivityService`, you don't need any additional actions to support the bookmarks in your visual.
 
-When the user selects bookmarks, the utility handles the visual's selection state.
+When you select bookmarks, the utility handles the visual's selection state.
 
-### Visuals with filter
+### Visuals with a filter
 
 Let's assume that the visual creates a filter of data by date range. You have `startDate` and `endDate` as the start and end dates of the range.
 
@@ -139,7 +139,7 @@ this.host.applyJsonFilter(
 );
 ```
 
-Each time a user clicks a bookmark, the custom visual gets an `update` call.
+Each time you select a bookmark, the custom visual gets an `update` call.
 
 The custom visual should check the filter in the object:
 
@@ -185,6 +185,6 @@ The `filterState` property makes a property of a part of filtering. The visual c
 
 To save the property value as a filter state, mark the object property as `"filterState": true` in the *capabilities.json* file.
 
-For example, the Timeline Slicer stores the `Granularity` property values in a filter. It allows the current granularity to change as the user changes the bookmarks.
+For example, the Timeline Slicer stores the `Granularity` property values in a filter. It allows the current granularity to change as you change the bookmarks.
 
 For more information, see the [Timeline Slicer repository](https://github.com/microsoft/powerbi-visuals-timeline/commit/8b7d82dd23cd2bd71817f1bc5d1e1732347a185e#diff-290828b604cfa62f1cb310f2e90c52fdR334).
