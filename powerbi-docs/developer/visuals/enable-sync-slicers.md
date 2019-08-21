@@ -1,6 +1,6 @@
 ---
-title: Enable the Sync Slicers feature in Power BI
-description: This article describes how to add the Sync Slicers feature for Power BI Visuals
+title: Enable the Sync Slicers feature in Power BI visuals
+description: This article describes how to add the Sync Slicers feature to Power BI visuals.
 author: EugeneElkin
 ms.author: v-evelk
 manager: rkarlin
@@ -11,9 +11,9 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Sync slicers in Power BI
+# Sync slicers in Power BI visuals
 
-To support the [Sync Slicers](https://docs.microsoft.com/power-bi/desktop-slicers) feature, your custom slicer visual must use API 1.13 or later.
+To support the [Sync Slicers](https://docs.microsoft.com/power-bi/desktop-slicers) feature, your custom slicer visual must use API version 1.13 or later.
 
 Additionally, you need to enable the option in the *capabilities.json* file, as shown in the following code:
 
