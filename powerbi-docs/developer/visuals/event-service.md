@@ -1,5 +1,5 @@
 ---
-title: Rendering events
+title: Render events in Power BI visuals
 description: Power BI visuals can notify Power BI that they're ready for export to PowerPoint or PDF.
 author: Yarovinsky
 ms.author: alexyar
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Event service
+# Render events in Power BI visuals
 
 The new API consists of three methods (`started`, `finished`, or `failed`) that should be called during rendering.
 
@@ -57,7 +57,7 @@ export interface IVisualEventService {
 }
 ```
 
-### Simple sample: The visual displays no animations
+### Sample: The visual displays no animations
 
 ```typescript
     export class Visual implements IVisual {
