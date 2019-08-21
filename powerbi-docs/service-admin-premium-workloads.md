@@ -47,7 +47,7 @@ The AI workload lets you use cognitive services and Automated Machine Learning i
 
 | Setting Name | Description |
 |---------------------------------|----------------------------------------|
-| **Max Memory (%)** | The maximum percentage of available memory that AI processes can use in a capacity. | Control the percentages of memory for each workload you've enabled in a capacity. |
+| **Max Memory (%)** | The maximum percentage of available memory that AI processes can use in a capacity. |
 | **Allow usage from Power BI Desktop** | This setting is reserved for future use and does not appear in all tenants. |
 | **Allow building machine learning models** | Specifies whether business analysts can train, validate, and invoke machine learning models directly in Power BI. For more information, see [Automated Machine Learning in Power BI (Preview)](service-machine-learning-automated.md). |
 | **Enable parallelism for AI requests** | Specifies whether AI requests can run in parallel. |
@@ -74,7 +74,7 @@ The dataflows workload lets you use dataflows self-service data prep, to ingest,
 
 | Setting Name | Description |
 |---------------------------------|----------------------------------------|
-| **Max Memory (%)** | The maximum percentage of available memory that dataflows can use in a capacity. | Control the percentages of memory for each workload you've enabled in a capacity. |
+| **Max Memory (%)** | The maximum percentage of available memory that dataflows can use in a capacity. |
 | **Enhanced Dataflows Compute Engine (Preview)** | Enable this option for up to 20x faster calculation of computed entities when working with large scale data volumes. **You must restart the capacity to activate the new engine.** For more information, see [Enhanced dataflows compute engine](#enhanced-dataflows-compute-engine). |
 | **Container Size** | The maximum size of the container that dataflows use for each entity in the dataflow. The default value is 700 MB. For more information, see [Container size](#container-size). |
 |  |  |
@@ -102,7 +102,7 @@ The paginated reports workload lets you run paginated reports, based on the stan
 
 | Setting Name | Description |
 |---------------------------------|----------------------------------------|
-| **Max Memory (%)** | The maximum percentage of available memory that paginated reports can use in a capacity. | Control the percentages of memory for each workload you've enabled in a capacity. |
+| **Max Memory (%)** | The maximum percentage of available memory that paginated reports can use in a capacity. |
 |  |  |
 
 Paginated reports allow custom code to be run when rendering a report. For example, dynamically changing text color based on content, which can take additional memory. Power BI Premium runs paginated reports in a contained space within the capacity. The Max Memory specified is used *whether or not* the workload is active. If changing the Max Memory setting from default, make sure you set it low enough that it doesn't negatively affect other workloads.
