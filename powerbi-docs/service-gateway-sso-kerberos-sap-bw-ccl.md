@@ -16,7 +16,7 @@ LocalizationGroup: Gateways
 
 ## Configure SAP BW for SSO using CommonCryptoLib
 
-Now that you have completed the configuration steps in [configure constrained delegation](service-gateway-sso-kerberos.md) up to "Complete datasource-specific configuration", you can configure your SAP Business Warehouse (SAP BW) server for SSO using the gateway.
+Now that you have completed the configuration steps in [Configure Kerberos-based SSO from Power BI service to on-premises data sources](service-gateway-sso-kerberos.md) up to "Complete data source-specific configuration", you can configure your SAP Business Warehouse (SAP BW) server for SSO using the gateway.
 
 > [!NOTE]
 > These instructions cover SSO setup for SAP BW **Application** Servers. Microsoft does not currently support SSO connections to SAP BW **Message** Servers.

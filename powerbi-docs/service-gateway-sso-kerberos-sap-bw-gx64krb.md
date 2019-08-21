@@ -19,7 +19,7 @@ LocalizationGroup: Gateways
 Now that you have completed the configuration steps in [Configure SSO - Kerberos](service-gateway-sso-kerberos.md) up to "Complete datasource-specific configuration", you can configure your SAP Business Warehouse (SAP BW) server for SSO using the gateway.
 
 > [!NOTE]
-> Microsoft reccomends the use of CommonCryptoLib as your SNC library. SAP no longer offers support for gx64krb5/gsskrb5 and the steps required to configure it for use with the gateway are significantly more complex compared to CommonCryptoLib.
+> Microsoft reccomends the use of CommonCryptoLib as your SNC library. SAP no longer offers support for gx64krb5/gsskrb5 and the steps required to configure it for use with the gateway are significantly more complex compared to CommonCryptoLib. See [Configure SAP BW for SSO using CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-ccl.md) for how to configure SSO using CommonCryptoLib.
 
 This guide attempts to be as comprehensive as possible. If you've already completed some of these steps, you can skip them. For example, you might have already created a service user for your SAP BW server and mapped an SPN to it, or you might have already installed the `gsskrb5` or `gx64krb5` library on the SAP BW server.
 
@@ -138,6 +138,8 @@ Add required registry entries to the registry of the machine that the gateway is
 
 1. [Run a Power BI report](service-gateway-sso-kerberos.md#run-a-power-bi-report)
 
+## Troubleshooting
+
 ### Troubleshoot gx64krb5/gsskrb5 configuration
 
 If you encounter any problems, follow these steps to troubleshoot the gx64krb5/gsskrb5 installation and SSO connections from the SAP Logon.
@@ -153,8 +155,6 @@ If you encounter any problems, follow these steps to troubleshoot the gx64krb5/g
 * You might get the following message: "(GSS-API) An invalid name was supplied." Make sure "p:" is in the value of the server's SNC identity profile parameter.
 
 * You might get the following message: "(SNC error) the specified module could not be found." This is usually caused by putting the `gsskrb5.dll/gx64krb5.dll` somewhere that requires elevated privileges (administrator rights) to access.
-
-## Troubleshooting
 
 ### Troubleshoot gateway connectivity issues
 
