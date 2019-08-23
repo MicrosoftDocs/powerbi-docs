@@ -22,8 +22,7 @@ The app is updated regularly with new features and functionality. Make sure you'
 
 You can go straight to [Premium Capacity Metrics app](https://app.powerbi.com/groups/me/getapps/services/capacitymetrics), or install it like you do other apps in Power BI.
 
-
-1. In Power BI, click **Apps**.   
+1. In Power BI, click **Apps**.
     ![Go to Apps](media/service-admin-premium-monitor-capacity/apps.png)
 
 2. On the right side, click **Get apps**.
@@ -240,7 +239,7 @@ The Datasets page has different *areas*, which include  **Refreshes**, **Query D
 | **Report section** | **Metrics** |
 | --- | --- |
 | CPU consumption |  Consumption by workload as a percentage of total CPU capacity. Shown hourly, for the previous seven days. |
-| Memory consumption |  Memory consumption in GB by workload (solid lines) overlaid with workload limits (dotted line). Shown hourly, for the previous seven days. |
+| Memory consumption |  Maximum memory consumption during the hour, in GB by workload (solid lines) overlaid with workload limits (dotted line). Shown hourly, for the previous seven days. |
 |  |  |
 
 ### IDs and Info
