@@ -239,7 +239,7 @@ The Datasets page has different *areas*, which include  **Refreshes**, **Query D
 
 | **Report section** | **Metrics** |
 | --- | --- |
-| CPU consumption |  Consumption by workload as a percentage of total CPU capacity. Shown hourly, for the previous seven days. |
+| CPU consumption |  Maximum CPU consumption during the hour, by workload as a percentage of total CPU capacity. Shown hourly, for the previous seven days. |
 | Memory consumption |  Maximum memory consumption during the hour, in GB by workload (solid lines), overlaid with workload limits (dotted line). Shown hourly, for the previous seven days. |
 |  |  |
 
