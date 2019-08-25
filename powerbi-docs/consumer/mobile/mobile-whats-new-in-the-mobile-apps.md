@@ -23,7 +23,7 @@ For related "What's New" information, see:
 
 ### Secured access with Azure Active Directory (AD) Application Proxy
 
-We partnered with Azure Active Directory team to integrate Power BI mobile applications with Azure Active Directory (AAD) Application Proxy. With this configuration you can connect to Report Server hosted inside the enterprise boundaries from Power BI Mobile app, without the need to setup complex on-premise configuration. Read more on [Power BI mobile and AAD Proxy Integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Learn [how to configure application proxy and Power BI](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
+We partnered with Azure Active Directory team to integrate Power BI mobile applications with Azure Active Directory (AAD) Application Proxy. With this configuration you can connect to Report Server hosted inside the enterprise boundaries from Power BI Mobile app, without the need to set up complex on-premise configuration. Read more on [Power BI mobile and AAD Proxy Integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Learn [how to configure application proxy and Power BI](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## July 2019
 
