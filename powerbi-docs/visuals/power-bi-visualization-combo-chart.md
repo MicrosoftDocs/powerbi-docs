@@ -51,7 +51,7 @@ This tutorial uses the PBIX [Retail Analysis sample](../sample-retail-analysis.m
 
 1. From the top left section of the menubar, select **File** and **Open**
    
-2. Find the **Retail Analysis sample PBIX file** saved on your local machine.
+2. Find the saved **Retail Analysis sample PBIX file**
 
 1. Open the **Retail Analysis Sample** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
