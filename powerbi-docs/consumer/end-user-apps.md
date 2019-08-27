@@ -18,7 +18,7 @@ LocalizationGroup: Share your work
 ## What is a Power BI app?
 An *app* is a Power BI content type that combines related dashboards and reports, all in one place. An app can have one or more dashboards and one or more reports, all bundled together. Apps are created by Power BI *designers* who distribute and share the apps with *consumers* like you. 
 
-Your apps are organized in the **Apps** content list.
+Your apps are organized in the **Apps** content list. Just select **Apps** to display your apps. Hover over an app to see the last updated date and the owner. 
 
 ![Apps in Power BI](./media/end-user-apps/power-bi-apps.png)
 
@@ -42,44 +42,6 @@ You can get apps in a few different ways. Some of the ways are listed below.  Bu
 - In Power BI on your mobile device, you can only install an app from a direct link, and not from AppSource. If the app author installs the app automatically, you'll see it in your list of apps.
 - You can search for apps in [AppSource](https://appsource.microsoft.com). AppSource contains apps published by report designers both inside and outside of your company. For example, you may find an app on AppSource for a service that you already use, such as Google Analytics, GitHub, or Microsoft Dynamics. You'll also find apps that are samples you can use to learn Power BI.  
 
-
-## Get an app from Microsoft AppSource (https://appsource.microsoft.com)
-In this example, we'll open one of the Microsoft sample apps. 
-
-1. In a browser, open https://appsource.microsoft.com, and select **Power BI apps**.
-
-    ![AppSource website with Power BI apps selected  ](./media/end-user-apps/power-bi-appsource.png)
-
-
-2. Select **See all** to display the list of all Power BI apps currently available on AppSource. Scroll or search for the app named **Microsoft Sample - Sales & Marketing**.
-
-    ![AppSource website with Power BI Sales & Marketing app highlighted  ](./media/end-user-apps/power-bi-appsource-samples.png)
-
-3. Select **Get it now** and agree to the terms of use.
-
-    ![AppSource website terms of use ](./media/end-user-apps/power-bi-permission.png)
-
-
-4. Confirm that you want to install this app.
-
-    ![Install this app?  ](./media/end-user-apps/power-bi-app-install.png)
-
-5. The Power BI service will display a success message once the app is installed. Select **Go to app** to open the app. Depending on how the designer created the app, either the app dashboard or app report will display.
-
-    ![App successfully installed ](./media/end-user-apps/power-bi-app-ready.png)
-
-    You can also open the app directly from your app content list by selecting **Apps** and choosing **Sales & Marketing**.
-
-    ![Apps in Power BI](./media/end-user-apps/power-bi-apps.png)
-
-
-6. Choose whether to explore or customize and share your new app. Because we've selected a Microsoft sample app, let's start by exploring. 
-
-    ![Explore with sample data](./media/end-user-apps/power-bi-explore.png)
-
-7.  Your new app opens with a dashboard. From here you might want to  [Open and interact with an app](end-user-app-view.md) or [learn about the visuals you see in your app](end-user-visual-type.md).  
-
-    ![Explore with sample data](./media/end-user-apps/power-bi-new-app.png)
 
 ## Next step
 * [Open and interact with an app](end-user-app-view.md)
