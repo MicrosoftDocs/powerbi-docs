@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/11/2019
+ms.date: 08/26/2019
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -20,7 +20,7 @@ An *app* is a Power BI content type that combines related dashboards and reports
 
 Your apps are organized in the **Apps** content list.
 
-![Apps in Power BI](./media/end-user-apps/power-bi-apps-nav.png)
+![Apps in Power BI](./media/end-user-apps/power-bi-apps.png)
 
 > [!NOTE]
 > The use of the apps feature require a Power BI Pro license. <!-- add link to how to figure out your license -->
@@ -35,12 +35,51 @@ With apps, whenever the app author releases updates, you automatically see the c
 
 <!-- add conceptual art -->
 ## Get a new app
-You can get apps in a few different ways. 
-- The app author can install the app automatically in your Power BI account, and the next time you open Power BI, you'll see the new app in the **Apps** content list. 
-- The app author can email you a direct link to an app. Selecting the link opens the app in Power BI.
-- You can search for apps in AppSource, where you see all the apps that you can access. AppSource contains apps published by report designers both inside and outside of your company. For example, you may find an app on AppSource for a service that you already use, such as Google Analytics, GitHub, or Microsoft Dynamics. 
-- In Power BI on your mobile device, you can only install an app from a direct link, and not from AppSource. If the app author installs the app automatically, you'll see it in your list of apps.
+You can get apps in a few different ways. Some of the ways are listed below.  But for detailed step-by-step instructions for getting and exploring an app, see [Open and interact with an app](end-user-app-view.md).
 
+- The app designer can install the app automatically in your Power BI account, and the next time you open Power BI, you'll see the new app in your **Apps** content list. 
+- The app designer can email you a direct link to an app. Selecting the link opens the app in Power BI.
+- In Power BI on your mobile device, you can only install an app from a direct link, and not from AppSource. If the app author installs the app automatically, you'll see it in your list of apps.
+- You can search for apps in [AppSource](https://appsource.microsoft.com). AppSource contains apps published by report designers both inside and outside of your company. For example, you may find an app on AppSource for a service that you already use, such as Google Analytics, GitHub, or Microsoft Dynamics. You'll also find apps that are samples you can use to learn Power BI.  
+
+
+## Get an app from Microsoft AppSource (https://appsource.microsoft.com)
+In this example, we'll open one of the Microsoft sample apps. 
+
+1. In a browser, open https://appsource.microsoft.com, and select **Power BI apps**.
+
+    ![AppSource website with Power BI apps selected  ](./media/end-user-apps/power-bi-appsource.png)
+
+
+2. Select **See all** to display the list of all Power BI apps currently available on AppSource. Scroll or search for the app named **Microsoft Sample - Sales & Marketing**.
+
+    ![AppSource website with Power BI Sales & Marketing app highlighted  ](./media/end-user-apps/power-bi-appsource-samples.png)
+
+3. Select **Get it now** and agree to the terms of use.
+
+    ![AppSource website terms of use ](./media/end-user-apps/power-bi-permission.png)
+
+
+4. Confirm that you want to install this app.
+
+    ![Install this app?  ](./media/end-user-apps/power-bi-app-install.png)
+
+5. The Power BI service will display a success message once the app is installed. Select **Go to app** to open the app. Depending on how the designer created the app, either the app dashboard or app report will display.
+
+    ![App successfully installed ](./media/end-user-apps/power-bi-app-ready.png)
+
+    You can also open the app directly from your app content list by selecting **Apps** and choosing **Sales & Marketing**.
+
+    ![Apps in Power BI](./media/end-user-apps/power-bi-apps.png)
+
+
+6. Choose whether to explore or customize and share your new app. Because we've selected a Microsoft sample app, let's start by exploring. 
+
+    ![Explore with sample data](./media/end-user-apps/power-bi-explore.png)
+
+7.  Your new app opens with a dashboard. From here you might want to  [Open and interact with an app](end-user-app-view.md) or [learn about the visuals you see in your app](end-user-visual-type.md).  
+
+    ![Explore with sample data](./media/end-user-apps/power-bi-new-app.png)
 
 ## Next step
 * [Open and interact with an app](end-user-app-view.md)
