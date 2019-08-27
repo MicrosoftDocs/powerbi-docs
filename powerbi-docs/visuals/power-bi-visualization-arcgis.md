@@ -71,7 +71,7 @@ This tutorial uses the PBIX [Retail Analysis sample .PBIX file](../sample-retail
 ## Create an ArcGIS map visual
 Watch Will create a few different ArcGIS map visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample .PBIX file](../sample-datasets.md) file.
    > [!NOTE]
-   > This video is of an older version of Power BI Desktop and may not be up-to-date with the current written guide.
+   > This video uses an older version of Power BI Desktop.
    > 
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
