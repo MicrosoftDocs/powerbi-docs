@@ -33,7 +33,7 @@ These instructions use the Retail Analysis sample PBIX file. To follow along, [d
 
 
 ## Create a card from the Q&A question box
-The Q&A question box is the easiest way to make a Card. The Q&A question box is available in Power BI in Desktop report view. The steps below If you'd like to create a card using Q&A in Power BI Desktop, [follow these instructions](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#QandA) for using Q&A for Desktop reports.
+The Q&A question box is the easiest way to make a Card. The Q&A question box is available in Power BI in Desktop report view. Follow the steps below if you'd like to create a card using Q&A in Power BI Desktop.
 
 This example uses the [Opportunity Analysis sample PBIX file](../sample-opportunity-analysis.md) file.
 
