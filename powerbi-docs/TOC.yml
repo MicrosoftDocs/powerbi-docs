@@ -1341,7 +1341,7 @@
         href: service-gateway-mashup-on-premises-cloud.md
     - name: "Enable single sign-on (SSO)"
       items:
-      - name: "Single sign-on (SSO) - overview"
+      - name: "SSO overview"
         href: service-gateway-sso-overview.md
       - name: "Kerberos SSO"
         items:
@@ -1351,9 +1351,9 @@
           items:
           - name: "SAP HANA"
             href: service-gateway-sso-kerberos-sap-hana.md
-          - name: "SAP BW - CommonCryptoLib (sapcrypto.dll)"
+          - name: "SAP BW - sapcrypto.dll (Common Crypto Library)"
             href: service-gateway-sso-kerberos-sap-bw-ccl.md
-          - name: "SAP BW - gx64krb5/gsskrb5"
+          - name: "SAP BW - gx64krb5.dll and gsskrb5.dll"
             href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
       - name: "SAML SSO"
         href: service-gateway-sso-saml.md
