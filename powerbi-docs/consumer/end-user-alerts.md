@@ -15,7 +15,7 @@ ms.author: mihart
 LocalizationGroup: Dashboards
 ---
 # Tutorial: Set dashboard alerts on Power BI dashboards
-Set alerts to notify you when data on your dashboards changes above or below limits you set. Alerts work on gauges, kpis, and cards. This feature is still evolving, so refer to the [Tips and troubleshooting section below](end-user-alerts.md#Tips-and-troubleshooting).
+Set alerts to notify you when data on your dashboards changes above or below limits you set. Alerts work on gauges, kpis, and cards. This feature is still evolving, so refer to the [Tips and troubleshooting section below](#tips-and-troubleshooting).
 
 ![tile, card, kpi](media/end-user-alerts/card-gauge-kpi.png)
 
@@ -76,9 +76,11 @@ Next, Power BI sends an alert to your Notification center and, optionally, in em
   
 
 ## Managing alerts
+
 There are many ways to manage your alerts: From the dashboard tile itself, from the Power BI Settings menu, on an individual tile in the [Power BI mobile app on the iPhone](mobile/mobile-set-data-alerts-in-the-mobile-apps.md) or in the [Power BI mobile app for Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### From the tile itself
+
 1. If you need to change or remove an alert for a tile, re-open the **Manage alerts** window by selecting the bell icon ![Alert icon](media/end-user-alerts/power-bi-bell-icon.png). All the alerts that you've set for that tile are displayed.
    
     ![Manage alerts window](media/end-user-alerts/power-bi-manage-alerts.png).
@@ -90,6 +92,7 @@ There are many ways to manage your alerts: From the dashboard tile itself, from 
       ![trashcan icon selected](media/end-user-alerts/power-bi-alert-delete.png)
 
 ### From the Power BI settings menu
+
 1. Select the gear icon from the Power BI menubar.
    
     ![gear icon](media/end-user-alerts/powerbi-gear-icon.png).
@@ -98,7 +101,8 @@ There are many ways to manage your alerts: From the dashboard tile itself, from 
     ![Alerts tab of Settings window](media/end-user-alerts/power-bi-alert-settings.png)
 3. From here you can turn alerts on and off, open the **Manage alerts** window to make changes, or delete the alert.
 
-## Tips and troubleshooting
+## Tips and troubleshooting 
+
 * Alerts can only be set on gauges, KPIs and cards.
 * If you are unable to set an alert for a gauge, KPI, or card, contact your system administrator for help. Sometimes alerts are turned off or unavailable for your dashboard or for specific types of dashboard tiles.
 * Alerts only work on data that is refreshed. They do not work on static data. Most of the samples supplied by Microsoft are static. 
