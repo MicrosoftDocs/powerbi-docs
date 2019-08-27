@@ -16,12 +16,10 @@ LocalizationGroup: Gateways
 
 ## Configure SAP BW for SSO using gx64krb5
 
-Now that you have completed the configuration steps in [Configure SSO - Kerberos](service-gateway-sso-kerberos.md) up to "Complete datasource-specific configuration", you can configure your SAP Business Warehouse (SAP BW) server for SSO using the gateway.
-
 > [!NOTE]
 > Microsoft reccomends the use of CommonCryptoLib as your SNC library. SAP no longer offers support for gx64krb5/gsskrb5 and the steps required to configure it for use with the gateway are significantly more complex compared to CommonCryptoLib. See [Configure SAP BW for SSO using CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-ccl.md) for how to configure SSO using CommonCryptoLib.
 
-This guide attempts to be as comprehensive as possible. If you've already completed some of these steps, you can skip them. For example, you might have already created a service user for your SAP BW server and mapped an SPN to it, or you might have already installed the `gsskrb5` or `gx64krb5` library on the SAP BW server.
+This guide attempts to be as comprehensive as possible. If you've already completed some of these steps, you can skip them. For example, you might have already configured your SAP BW server for SSO using gx64krb5/gsskrb5.
 
 ### Set up gx64krb5/gsskrb5 on gateway machine and the SAP BW server
 
@@ -32,7 +30,7 @@ This guide attempts to be as comprehensive as possible. If you've already comple
 
 1. Download `gx64krb5` from [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-user required). Ensure you have at least version 1.0.11.x. Only download gsskrb5 (the 32-bit version of the library) if your SAP BW server requires a 32-bit .dll; gateway requires a 64-bit .dll.
 
-1. Put `gx64krb5` in a location on your gateway machine that is accessible by your gateway instance (and also by the SAP GUI if you want to test the SSO connection by using SAP Logon). Both the gateway Service User and the Active Directory (AD) users that the Service User will impersonate need read and execute permissions for the .dll. We recommend granting permissions on the .dll to the Authenticated Users group. For testing purposes, you can also explicitly grant these permissions to both the gateway Service User and the Active Directory user you'll use to test.
+1. Put `gx64krb5` in a location on your gateway machine that is accessible by your gateway service user (and also by the SAP GUI if you want to test the SSO connection by using SAP Logon). Both the gateway Service User and the Active Directory (AD) users that the Service User will impersonate need read and execute permissions for the .dll. We recommend granting permissions on the .dll to the Authenticated Users group. For testing purposes, you can also explicitly grant these permissions to both the gateway Service User and the Active Directory user you'll use to test.
 
 1. If your BW server has not already been configured for SSO using gx64krb5/gsskrb5, put another copy on your SAP BW server machine in a location accessible by the SAP BW server. 
 
@@ -40,7 +38,7 @@ This guide attempts to be as comprehensive as possible. If you've already comple
 
 ### Configure an SAP BW service user and enable SNC communication
 
-Complete this section if you haven't already configured your SAP BW server for SNC communication (e.g. SSO).
+Complete this section if you haven't already configured your SAP BW server for SNC communication (e.g. SSO) using gx64krb5/gsskrb5.
 
 > [!NOTE]
 > This section assumes that you have already created a Service User for BW and bound a suitable SPN to it (e.g. something that starts with `SAP/`).
@@ -82,11 +80,11 @@ Complete this section if you haven't already configured your SAP BW server for S
 
     1. Set the property snc/enable to 1.
 
-1. After setting these profile parameters, open the SAP Management Console on the server machine, and restart the SAP BW instance. If the server won't start, confirm that you've set the profile parameters correctly. For more on profile parameter settings, see the [SAP documentation](https://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/frameset.htm). You can also consult the troubleshooting information later in this section if you encounter problems.
+1. After setting these profile parameters, open the SAP Management Console on the server machine and restart the SAP BW instance. If the server won't start, confirm that you've set the profile parameters correctly. For more on profile parameter settings, see the [SAP documentation](https://help.sap.com/saphelp_nw70ehp1/helpdata/en/e6/56f466e99a11d1a5b00000e835363f/frameset.htm). You can also consult the troubleshooting information later in this section if you encounter problems.
 
 ### Map a SAP BW user to an Active Directory user
 
-If you haven't already, map an Active Directory user to an SAP BW Application Server user, and test the SSO connection in SAP Logon.
+If you haven't already, map an Active Directory user to an SAP BW Application Server user and test the SSO connection in SAP Logon.
 
 1. Sign in to your SAP BW server by using SAP Logon. Run transaction SU01.
 

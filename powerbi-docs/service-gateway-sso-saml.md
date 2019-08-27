@@ -26,14 +26,13 @@ Note that for HANA it is **highly** recommended that encryption be enabled befor
 
 * [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem)
 
-
 ## Configuring the gateway and data source
 
 To use SAML, you must establish a trust relationship between the HANA server(s) for which you want to enable SSO and the gateway, which serves as the SAML Identity Provider (IdP) in this scenario. There are various ways to establish this relationship, such as importing the gateway IdP's x509 certificate into the HANA server(s) trust store, or by having the gateway's X509 certificate signed by a root Certification Authority (CA) trusted by the HANA server(s). We describe the latter approach in this guide, but you may use another approach if it is more convenient.
 
-Also note that while this guide uses OpenSSL as the HANA server's cryptographic provider, it is reccomended by SAP to use the SAP Cryptographic Library (also known as CommonCryptoLib or sapcrypto) instead of OpenSSL to complete the setup steps where we establish the trust relationship. Refer to the official SAP documentation for further information.
+Also note that while this guide uses OpenSSL as the HANA server's cryptographic provider, it is recommended by SAP to use the SAP Cryptographic Library (also known as CommonCryptoLib or sapcrypto) instead of OpenSSL to complete the setup steps where we establish the trust relationship. Refer to the official SAP documentation for further information.
 
-The following steps describe how to establish a trust relationship between a HANA server and the gateway IdP by signing the gateway IdP's X509 certificate using a Root CA trusted by the HANA server.
+The following steps describe how to establish a trust relationship between a HANA server and the gateway IdP by signing the gateway IdP's X509 certificate using a Root CA trusted by the HANA server. You will create this Root CA.
 
 1. Create the Root CA's X509 certificate and private key. For example, to create the Root CA's X509 certificate and private key in .pem format:
 
@@ -78,7 +77,7 @@ The resulting IdP certificate will be valid for a year (see the -days option). N
 
     ![Select identity provider](media/service-gateway-sso-saml/select-identity-provider.png)
 
-Now that you have the Gateway's certificate and identity configured, you convert the certificate to a pfx format and configure the gateway machine to use the certificate.
+Now that you have the Gateway's certificate and identity configured, convert the certificate to a pfx format and configure the gateway machine to use the certificate.
 
 1. Convert the certificate to pfx format by running the following command. Note that this command sets "root" as the pfx file's password.
 
@@ -131,15 +130,15 @@ Finally, follow these steps to add the certificate thumbprint to the gateway con
     ```
 1. Copy the thumbprint for the certificate you created.
 
-1. Navigate to the Gateway directory, which defaults to C:\Program Files\On-premises data gateway.
+1. Navigate to the Gateway directory, which by default is C:\Program Files\On-premises data gateway.
 
-1. Open PowerBI.DataMovement.Pipeline.GatewayCore.dll.config, and find the \*SapHanaSAMLCertThumbprint\* section. Paste in the thumbprint you copied.
+1. Open PowerBI.DataMovement.Pipeline.GatewayCore.dll.config, and find the *SapHanaSAMLCertThumbprint* section. Paste in the thumbprint you copied.
 
 1. Restart the gateway service.
 
 ## Running a Power BI report
 
-Now you can use the **Manage Gateway** page in Power BI to configure the data source, and under its **Advanced Settings** , enable SSO. Then you can publish reports and datasets binding to that data source.
+Now you can use the **Manage Gateway** page in Power BI to configure the SAP HANA data source, and under its **Advanced Settings** , enable SSO. Then you can publish reports and datasets binding to that data source.
 
 ![Advanced settings](media/service-gateway-sso-saml/advanced-settings.png)
 

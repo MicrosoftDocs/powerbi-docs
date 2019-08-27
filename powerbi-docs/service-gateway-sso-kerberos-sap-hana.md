@@ -15,9 +15,9 @@ LocalizationGroup: Gateways
 > [!NOTE]
 > Complete the steps on this page in addition to the steps in [Configure SSO - Kerberos](service-gateway-sso-kerberos.md) before attempting to refresh a SAP HANA-based report that uses Kerberos SSO.
 
-### SAP HANA
+## SAP HANA
 
-To enable SSO for SAP HANA, follow these steps first:
+To enable SSO for SAP HANA, follow these steps:
 
 * Ensure the SAP HANA server is running the required minimum version, which depends on your SAP HANA server platform level:
   * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
@@ -25,7 +25,7 @@ To enable SSO for SAP HANA, follow these steps first:
   * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
 * On the gateway machine, install SAP’s latest HANA ODBC driver.  The minimum version is HANA ODBC version 2.00.020.00 from August 2017.
 
-Configure the SAP HANA server for Kerberos-based SSO.For more information about setting up SSO for SAP HANA by using Kerberos, see [Single Sign-on Using Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html) in the SAP HANA Security Guide. Also see the links from that page, particularly SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory.
+Ensure that the SAP HANA server has been configured for Kerberos-based SSO. For more information about setting up SSO for SAP HANA by using Kerberos, see [Single Sign-on Using Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html) in the SAP HANA Security Guide. Also see the links from that page, particularly SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory.
 
 We also recommend following these additional steps, which can yield a small performance improvement.
 
