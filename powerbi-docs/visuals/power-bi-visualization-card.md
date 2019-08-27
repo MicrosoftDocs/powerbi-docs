@@ -37,7 +37,7 @@ The Q&A question box is the easiest way to make a Card. The Q&A question box is 
 
 This example uses the [Opportunity Analysis sample PBIX file](../sample-opportunity-analysis.md) file.
 
-1. At the top of your dashboard, select the **Ask a Question** icon. 
+1. At the top of your report, select the **Ask a Question** icon. 
 
    ![ask a question icon location](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
