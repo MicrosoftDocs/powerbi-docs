@@ -193,11 +193,11 @@ You can set the `msDS-cloudExtensionAttribute1` property using the Active Direct
 
     ![Screenshot of String Attribute Editor dialog box](media/service-gateway-sso-kerberos/edit-attribute.png)
 
-1. Select **Apply**. Verify that the correct value has been set in the **Value** column.    
+1. Select **Apply**. Verify that the correct value has been set in the **Value** column.
 
 ## Complete data source-specific configuration steps
 
-SAP HANA and SAP BW have additional data-source specific configuration requirements and prerequisites that need to be met before you can establish an SSO connection through the gateway to these data sources. See [the SAP HANA configuration page](service-gateway-sso-kerberos-sap-hana.md) and [the SAP BW - CommonCryptoLib (sapcrypto.dll) configuration page](service-gateway-sso-kerberos-sap-bw-ccl.md) for details. It is also possible to [configure SAP BW for use with the gx64krb5 SNC library](service-gateway-sso-kerberos-sap-bw-gx64krb.md), though this library is not recommended by Microsoft as it is no longer supported by SAP.
+SAP HANA and SAP BW have additional data-source specific configuration requirements and prerequisites that need to be met before you can establish an SSO connection through the gateway to these data sources. See [the SAP HANA configuration page](service-gateway-sso-kerberos-sap-hana.md) and [the SAP BW - CommonCryptoLib (sapcrypto.dll) configuration page](service-gateway-sso-kerberos-sap-bw-ccl.md) for details. It is also possible to [configure SAP BW for use with the gx64krb5 SNC library](service-gateway-sso-kerberos-sap-bw-gx64krb.md), though this library is not recommended by Microsoft as it is no longer supported by SAP. Other SNC libraries may also work for BW SSO, but they are not officially supported by Microsoft.
 
 ## Run a Power BI report
 

@@ -12,7 +12,7 @@ ms.date: 08/01/2019
 LocalizationGroup: Gateways
 ---
 > [!NOTE]
-> Complete the steps on this page in addition to the steps in [Configure SSO - Kerberos](service-gateway-sso-kerberos.md) before attempting to refresh a SAP BW-based report that uses Kerberos SSO.
+> Complete the steps on this page in addition to the steps in [Configure Kerberos SSO](service-gateway-sso-kerberos.md) before attempting to refresh a SAP BW-based report that uses Kerberos SSO.
 
 ## Configure SAP BW for SSO using CommonCryptoLib
 
