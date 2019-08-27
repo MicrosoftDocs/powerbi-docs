@@ -14,7 +14,7 @@ LocalizationGroup: Gateways
 
 # Overview of single sign-on (SSO) for gateways in Power BI
 
-You can get seamless single sign-on connectivity, enabling Power BI reports and dashboards to update from on-premises data, by configuring your on-premises data gateway either with Kerberos constrained delegation or Security Assertion Markup Language (SAML). The on-premises data gateway facilitates SSO using DirectQuery, which it uses to connect to on-premises data sources.
+You can get seamless single sign-on connectivity, enabling Power BI reports and dashboards to update in real time from on-premises data, by configuring your on-premises data gateway either with Kerberos constrained delegation or Security Assertion Markup Language (SAML). The on-premises data gateway supports SSO using DirectQuery, which it uses to connect to on-premises data sources.
 
 We currently support the following data sources:
 
@@ -47,8 +47,7 @@ Here are additional details about those steps:
 
 ## Next steps
 
-Now that you understand the basics of SSO, read more detailed information about Kerberos and SAML:
+Now that you understand the basics of SSO through the gateway, read more detailed information about Kerberos and SAML:
 
 * [Single sign-on (SSO) - Kerberos](service-gateway-sso-kerberos.md)
-* [Single sign-on (SSO) - Kerberos - resource-based](service-gateway-sso-kerberos-resource.md)
 * [Single sign-on (SSO) - SAML](service-gateway-sso-saml.md)
