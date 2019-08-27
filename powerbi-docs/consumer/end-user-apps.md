@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/26/2019
+ms.date: 08/27/2019
 ms.author: mihart
 
 LocalizationGroup: Share your work
