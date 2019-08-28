@@ -17,7 +17,7 @@ With Power BI report bookmarks, you can capture a configured view of a report pa
 
 For more information about bookmarks, see [Use bookmarks to share insights and build stories in Power BI](https://docs.microsoft.com/power-bi/desktop-bookmarks).
 
-## Report bookmark support in your visual
+## Report bookmarks support in your visual
 
 If your visual interacts with other visuals, selects data points, or filters other visuals, you need to restore the state from properties.
 
