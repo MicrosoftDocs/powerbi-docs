@@ -12,19 +12,19 @@ ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
-[!INCLUDE [power-bi-visuals-desktop-banner](includes/power-bi-visuals-desktop-banner.md)]
-
 # Radial gauge charts in Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 A radial gauge chart has a circular arc and shows a single value that measures progress toward a goal or a Key Performance Indicator (KPI). The line (or *needle*) represents the goal or target value. The shading represents the progress toward that goal. The The value inside the arc represents the progress value. Power BI spreads all possible values evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
 
-![Screenshot of radial gauge.](media/power-bi-visualization-radial-gauge-charts/gauge_m.png)
+![Screenshot of radial gauge.](media/power-bi-visualization-radial-gauge-charts/gauge-m.png)
 
 In this example, you're a car retailer tracking the sales team's average sales per month. The needle represents a 140 cars sales goal. The minimum possible average sales is 0 and the maximum is 200.  The blue shading shows that the team is averaging approximately 120 sales this month. Luckily, there's still another week to reach the goal.
 
 Watch Will show you how to create single metric visuals: gauges, cards, and KPIs.
    > [!NOTE]
-   > This video is of an older version of Power BI Desktop and may not be up-to-date with the current written guide.
+   > This video uses an older version of Power BI Desktop.
    > 
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
@@ -43,36 +43,35 @@ Radial gauges are a great choice to:
 
 ## Prerequisites
 
-* The Power BI Desktop
+This tutorial uses the [Financial sample Excel file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Financial sample Excel workbook: [download the sample directly](http://go.microsoft.com/fwlink/?LinkID=521962).
+1. From the upper left section of the menubar, select **Get Data** > **Excel**
+   
+2. Find your copy of the **Financial sample Excel file**
+
+1. Open the **Financial sample Excel file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+
 
 
 ## Create a basic radial gauge
 
-These instructions use the Power BI Desktop. To follow along, open the Excel Financial Sample file.
+### Step 1: Create a gauge to track Gross Sales
 
-### Step 1: Open the Financial Sample Excel file
-
-1. If you haven't already, download the [Financial Sample Excel file](../sample-financial-download.md). Remember where you save it.
-
-1. Open the **Financial Sample** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
-
-1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
-
-### Step 2: Create a gauge to track Gross Sales
+1. Start on a blank report page
 
 1. From the **Fields** pane, select **Gross Sales**.
 
-   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue_new.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue-new.png)
 
 1. Change the aggregation to **Average**.
 
-   ![Screenshot of the Fields pane with Gross Sales and the Average aggregate called out.](media/power-bi-visualization-radial-gauge-charts/changetoaverage_new.png)
+   ![Screenshot of the Fields pane with Gross Sales and the Average aggregate called out.](media/power-bi-visualization-radial-gauge-charts/changetoaverage-new.png)
 
-1. Select the gauge icon ![Screenshot of the gauge icon.](media/power-bi-visualization-radial-gauge-charts/gaugeicon_new.png) to convert the column chart to a gauge chart.
+1. Select the gauge icon ![Screenshot of the gauge icon.](media/power-bi-visualization-radial-gauge-charts/gaugeicon-new.png) to convert the column chart to a gauge chart.
 
-    ![Screenshot of the gauge chart.](media/power-bi-visualization-radial-gauge-charts/gauge_no_target.png)
+    ![Screenshot of the gauge chart.](media/power-bi-visualization-radial-gauge-charts/gauge-no-target.png)
 
     Depending on when you download the **Financial Sample** file, you may see numbers that don't match these numbers.
 
@@ -87,7 +86,7 @@ These instructions use the Power BI Desktop. To follow along, open the Excel Fin
 
    Power BI adds a needle to represent our target value of **$145.48K**.
 
-   ![Screenshot of the gauge chart with the Average of COGS added.](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress_new.png)
+   ![Screenshot of the gauge chart with the Average of COGS added.](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress-new.png)
 
     Notice that we've exceeded our target.
 
@@ -102,7 +101,7 @@ In Step 2, Power BI used the **Value** field to automatically set minimum and ma
 
 1. Change the aggregation to **Maximum**.
 
-   ![Screenshot of the Fields pane with Gross Sales and the Maximum aggregate called out.](media/power-bi-visualization-radial-gauge-charts/setmaximum_new.png)
+   ![Screenshot of the Fields pane with Gross Sales and the Maximum aggregate called out.](media/power-bi-visualization-radial-gauge-charts/setmaximum-new.png)
 
    The gauge is redrawn with a new end value, 1.21 million in gross sales.
 
@@ -111,8 +110,6 @@ In Step 2, Power BI used the **Value** field to automatically set minimum and ma
 ### Step 5: Save your report
 
 1. [Save the report](../service-report-save.md).
-
-1. [Add the gauge chart as a dashboard tile](../service-dashboard-pin-tile-from-report.md). 
 
 ## Use manual format options to set Minimum, Maximum, and Target values
 
@@ -128,7 +125,7 @@ In Step 2, Power BI used the **Value** field to automatically set minimum and ma
 
 1. Clear the **COGS** option in the **Fields** pane to remove the target value.
 
-    ![Screenshot of the cleared COGS option.](media/power-bi-visualization-radial-gauge-charts/pbi_remove_target.png)
+    ![Screenshot of the cleared COGS option.](media/power-bi-visualization-radial-gauge-charts/pbi-remove-target.png)
 
 1. When the **Target** field appears under **Gauge axis**, enter a value.
 

@@ -14,22 +14,27 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 # Doughnut charts in Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 A doughnut chart is similar to a pie chart in that it shows the relationship of parts to a whole. The only difference is that the center is blank and allows space for a label or icon.
 
-## Create a doughnut chart
-These instructions use the Retail Analysis Sample to create a doughnut chart that displays this year's sales by category. To follow along, [download the .PBIX sample](../sample-datasets.md) for Power BI Desktop.
+## Prerequisite
 
-1. From the top left section of the menubar, select **File** and **Open**
+This tutorial uses the [Retail Analysis sample PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+
+1. From the upper left section of the menubar, select **File** > **Open**
    
-2. Find the **Retail Analysis sample PBIX file** saved on your local machine.
+2. Find your copy of the **Retail Analysis sample PBIX file**
 
-1. Open the **Retail Analysis Sample** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Open the **Retail Analysis sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
 
+## Create a doughnut chart
 
-2. From the Fields pane, select **Sales** \> **Last Year Sales**.  
+1. Start on a blank report page and from the Fields pane, select **Sales** \> **Last Year Sales**.  
    
 3. From the Visualizations pane, select the icon for doughnut chart ![doughnut chart icon](media/power-bi-visualization-doughnut-charts/power-bi-icon.png) to convert your bar chart to a doughnut chart. If **Last Year Sales** is not in the **Values** area, drag it there.
      

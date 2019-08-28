@@ -14,9 +14,10 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-[!INCLUDE [power-bi-visuals-desktop-banner](includes/power-bi-visuals-desktop-banner.md)]
-
 # ArcGIS maps in Power BI service and Power BI Desktop by Esri
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 This tutorial is written from the point of view of a person creating an ArcGIS map. Once a creator shares an ArcGIS map with a colleague, that colleague can view and interact with the map but not save changes. To learn more about viewing an ArcGIS map, see [Interacting with ArcGIS maps](power-bi-visualizations-arcgis.md).
 
 The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. Choose from base maps, location types, themes, symbol styles, and reference layers to create gorgeous informative map visualizations. The combination of authoritative data layers on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
@@ -53,7 +54,7 @@ ArcGIS maps are currently available in Power BI service, Power BI Desktop, and P
 ### Enable the ArcGIS map ***in Power BI Desktop (app.powerbi.com)***
 This tutorial uses the PBIX [Retail Analysis sample .PBIX file](../sample-retail-analysis.md). To enable **ArcGIS Maps for Power BI**:
 
-1. From the top left section of the menubar, select **File** and **Open**
+1. From the upper left section of the menubar, select **File** \> **Open**
    
 2. Find the **Retail Analysis sample PBIX file** saved on your local machine.
 
@@ -74,7 +75,7 @@ This tutorial uses the PBIX [Retail Analysis sample .PBIX file](../sample-retail
 ## Create an ArcGIS map visual
 Watch Will create a few different ArcGIS map visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample .PBIX file](../sample-datasets.md) file.
    > [!NOTE]
-   > This video is of an older version of Power BI Desktop and may not be up-to-date with the current written guide.
+   > This video uses an older version of Power BI Desktop.
    > 
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
@@ -95,7 +96,7 @@ Watch Will create a few different ArcGIS map visualizations and then use the ste
 ## Settings and formatting for ArcGIS maps
 To access **ArcGIS Maps for Power BI** formatting features:
 
-1. Access additional features by selecting the ellipsis in the top right corner of the visualization and choosing **Edit**.
+1. Access additional features by selecting the ellipsis in the upper right corner of the visualization and choosing **Edit**.
    
    ![arcgis edit pane](media/power-bi-visualization-arcgis/power-bi-edit2.png)
    
