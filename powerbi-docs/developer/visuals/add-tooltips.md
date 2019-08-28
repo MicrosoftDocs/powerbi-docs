@@ -152,13 +152,13 @@ The `addTooltip` method next listens to the D3 `mouseover` event, as shown in th
 
 * **this.visualHostTooltipService.show**: The call to display the tooltip.  
 
-Additional handling can be found in the sample for `mouseout` and `MouseMove` events.
+Additional handling can be found in the sample for `mouseout` and `mousemove` events.
 
 For more information, see the [SampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
 
 ### Populate the tooltip content by the getTooltipData method
 
-The bar chart was added with a `getTooltipData` member, which simply extracts the `category`, `value`, and `color` of the data point into a VisualTooltipDataItem[] element.
+The BarChart class was added with a `getTooltipData` member, which simply extracts the `category`, `value`, and `color` of the data point into a VisualTooltipDataItem[] element.
 
 ```typescript
         private static getTooltipData(value: any): VisualTooltipDataItem[] {
