@@ -91,7 +91,7 @@ If the OpenSSL utility is already installed in your system, generate a new certi
 openssl req -x509 -newkey rsa:4096 -keyout PowerBICustomVisualTest_private.key -out PowerBICustomVisualTest_public.crt -days 365
 ```
 
-Usually, you can find the PowerBI-visuals-tools web server certificates by running one of the following commands:
+You can usually find the PowerBI-visuals-tools web server certificates by running one the following:
 
 * For the global instance of the tools:
 
@@ -110,7 +110,7 @@ If you use the PEM format, save the certificate file as *PowerBICustomVisualTest
 If you use the PFX format, save the certificate file as *PowerBICustomVisualTest_public.pfx*.
 
 If your PFX certificate file requires a passphrase, do the following:
-1. Run:
+1. In the config file, specify:
 
     ```cmd
     \PowerBI-visuals-tools\config.json
