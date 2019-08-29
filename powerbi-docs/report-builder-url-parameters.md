@@ -63,7 +63,9 @@ For examples of passing report parameters on the URL, see [Pass a report param
 
 ## URL access parameter reference
 
-### Report commands (rdl:) 
+You can use the following parameters as part of a URL to configure the look and feel of your paginated reports in Power BI. The most common parameters are listed in this section. Parameters are case-insensitive and begin with the parameter prefix `rdl:` if related to the output format.  
+
+### Report commands (`rdl:`) 
 
 **Export format**
 Specifies the format in which to render and export a report. Values include: 
