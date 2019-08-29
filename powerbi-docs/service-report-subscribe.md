@@ -16,7 +16,7 @@ LocalizationGroup: Common tasks
 ---
 # Subscribe yourself and others to reports and dashboards in the Power BI service
 
-You can subscribe yourself and your colleagues to the report pages, dashboards, and paginated reports that matter most to you. Power BI emails a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, hourly, monthly or once a day after the initial data refresh.  If you choose daily, weekly, hourly or monthly, you can choose the time you'd like to have the subscription run.  In all, you can set up to 24 different subscriptions per day, for every report page and dashboard.
+You can subscribe yourself and your colleagues to the report pages, dashboards, and paginated reports that matter most to you. Power BI emails a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, hourly, monthly, or once a day after the initial data refresh.  If you choose daily, weekly, hourly, or monthly, you can choose the time you'd like to have the subscription run.  In all, you can set up to 24 different subscriptions per day, for every report page and dashboard.
 
 ![email snapshot of dashboard](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 
