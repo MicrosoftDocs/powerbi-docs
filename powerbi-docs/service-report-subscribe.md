@@ -50,7 +50,7 @@ Subscribing to paginated reports is a little different. See [Subscribe yourself 
 
 5. Fill in the email **Subject** and **Message** details. 
 
-5. Select a **Frequency** for your subscription: **Daily**, **Hourly**, **Weekly**, **Monthly** or **After Data Refresh (Daily)**.  To receive the subscription email only on certain days, select **Hourly** or **Weekly** and select the days you'd like to receive it.  For example, if you'd like to receive the subscription email only on weekdays, select **Weekly** and uncheck the boxes for **Sat** and **Sun**.  If you select **Monthly**, enter the day(s) of the month you wish to recieve the subscription mail.  
+5. Select a **Frequency** for your subscription: **Daily**, **Hourly**, **Weekly**, **Monthly**, or **After Data Refresh (Daily)**.  To receive the subscription email only on certain days, select **Hourly** or **Weekly** and select the days you'd like to receive it.  For example, if you'd like to receive the subscription email only on weekdays, select **Weekly** and clear the boxes for **Sat** and **Sun**.  If you select **Monthly**, enter the day(s) of the month you wish to receive the subscription mail.  
 
 6. If you choose **Daily**, **Hourly, **Monthly** or **Weekly**, you can also choose a **Scheduled Time** for the subscription.  You have it run on the hour, or at 15, 30, or 45 minutes past.  Select morning (AM) or afternoon/evening (PM). You can also specify the time zone.  If you choose **Hourly**, select the **Scheduled Time** you want the subscription to start, and it will come every hour subsequent to that.
 
