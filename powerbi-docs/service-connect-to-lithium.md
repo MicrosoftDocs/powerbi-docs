@@ -15,7 +15,7 @@ LocalizationGroup: Connect to services
 ---
 # Connect to Lithium with Power BI
 >[!IMPORTANT]
->This content pack is about to be deprecated (9/25/19). Content packs which were installed will continue to function but new installation will no longer be available.
+>We will be deprecating this content pack on September 25, 2019. If you installed this content pack before then, it will continue to work, but you won't be able to install a new one after that. 
 
 Lithium builds trusted relationships between the world's best brands and their customers, helping people get answers and share their experiences. By connecting the Lithium content pack to Power BI, you can measure key metrics about your online community to help drive sales, reduce service costs and increase loyalty. 
 
