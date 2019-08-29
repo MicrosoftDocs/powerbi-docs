@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 08/29/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -42,7 +42,7 @@ The **Create new content** section contains options for creating and importing c
 ### Files
 ![](media/service-get-data/pbi_getdata_files.png)
 
-**Excel** (*.xlsx*, *.xlsm*) - Excel is unique. In Excel, a workbook may include different data types. For example, it can include data you've entered into worksheets yourself. It can also include data that you've queried and loaded from external data sources by using Power Query. Power Query is available through **Get & Transform** in Excel 2016 or Power Pivot. You may import data from tables in worksheets, or import data from a data model. To learn more, see [Get data from files for Power BI](service-get-data-from-files.md).
+**Excel** (*.xlsx*, *.xlsm*) - In Excel, a workbook may include different data types. For example, it can include data you've entered into worksheets yourself. It can also include data that you've queried and loaded from external data sources by using Power Query. Power Query is available through **Get & Transform** in Excel 2016 or Power Pivot. You may import data from tables in worksheets, or import data from a data model. To learn more, see [Get data from files for Power BI](service-get-data-from-files.md).
 
 **Power BI Desktop** (*.pbix*) - You can use Power BI Desktop to query and load data from external data sources and create reports. You can also extend your data model with measures and relationships, or import your Power BI Desktop file into your Power BI site. Power BI Desktop is best for more advanced users. Typically these users are ones who have a good understanding of their data sources. They also understand data query and transformation, and data modeling concepts. To learn more, see [Connect to data in Power BI Desktop](desktop-connect-to-data.md).
 
@@ -98,9 +98,9 @@ If you save your files on OneDrive for Business or SharePoint - Team Sites, you 
 
 Content packs from services are automatically updated. In most cases, they're updated once a day. You can manually refresh, but if you see any updated data will depend on the service provider. Updates to content packs from people in your organization will depend on the data sources used. They'll also depend on how the person who created the content pack configured the refresh.
 
-Azure SQL Database, Azure SQL Data Warehouse, and Spark on Azure HDInsight are unique because they're data sources in the Cloud. The Power BI service is also in the cloud so Power BI can connect to those data sources live, using **DirectQuery**. What you see in Power BI is always in sync and there's no need to set up a scheduled refresh.
+Azure SQL Database, Azure SQL Data Warehouse, and Spark on Azure HDInsight are data sources in the Cloud. The Power BI service is also in the cloud so Power BI can connect to those data sources live, using **DirectQuery**. What you see in Power BI is always in sync and there's no need to set up a scheduled refresh.
 
-SQL Server Analysis Services is unique. When you connect to it from Power BI, it's a live connection just like an Azure database in the cloud. The difference is the database itself is on a server in your organization. This type of connection requires a Power BI gateway, which an IT department configures.
+When you connect to SQL Server Analysis Services from Power BI, it's a live connection just like an Azure database in the cloud. The difference is the database itself is on a server in your organization. This type of connection requires a Power BI gateway, which an IT department configures.
 
 Data refresh is a super important part of Power BI, and much too deep to cover here. If you want to get a thorough understanding, be sure to check out [Data Refresh in Power BI](refresh-data.md).
 
