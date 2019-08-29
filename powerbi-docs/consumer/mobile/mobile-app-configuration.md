@@ -1,7 +1,7 @@
 ---
 title: 'Power BI iOS app configuration settings'
 description: How to customize the behavior of Power BI for iOS using MDM tool
-author: mshenhav
+author: paulinbar
 manager: kfile
 ms.reviewer: ''
 
@@ -30,7 +30,7 @@ Power BI iOS app allows administrators to remotely "push" Report Server configur
 | com.microsoft.powerbi.mobile.ServerURL | String | Report Server URL.<br><br>Should start with http/https.|
 | com.microsoft.powerbi.mobile.ServerUsername | String | [optional]<br><br>The username to use for connecting the server.<br><br>If one does not exist, the app prompts the user to type the username for the connection.|
 | com.microsoft.powerbi.mobile.ServerDisplayName | String | [optional]<br><br>Default value is “Report server”<br><br>A friendly name used in the app to represent the server. |
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | [optional]<br><br>Default value is True. When set to True, it overrides any Report Server definition already in the mobile device. Existing servers that are already configured are deleted. Override set to True also prevents the user from removing that configuration.<br><br>Set to False adds the pushed values, leaving any existing settings.If the same server URL is already configured in the mobile app, the app leaves that configuration as is. The app doesn't ask the user to reauthenticate for the same server. |
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | [optional]<br><br>Default value is True. When set to True, it overrides any Report Server definition already in the mobile device. Existing servers that are already configured are deleted. Override set to True also prevents the user from removing that configuration.<br><br>Set to False adds the pushed values, leaving any existing settings. If the same server URL is already configured in the mobile app, the app leaves that configuration as is. The app doesn't ask the user to reauthenticate for the same server. |
 
 ## Data protection setting
 

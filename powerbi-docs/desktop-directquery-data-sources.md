@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 08/29/2019
 LocalizationGroup: Connect to data
 ---
 
@@ -29,6 +29,7 @@ The following data sources support DirectQuery in Power BI:
 * IBM DB2 database
 * IBM Netezza
 * Impala (version 2.x)
+* MarkLogic
 * Oracle Database (version 12 and above)
 * Oracle Essbase
 * SAP Business Warehouse Application Server
