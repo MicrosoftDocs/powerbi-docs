@@ -8,7 +8,7 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 9/29/2019
+ms.date: 8/29/2019
 ms.author: tebercov
 
 LocalizationGroup: Connect to services
