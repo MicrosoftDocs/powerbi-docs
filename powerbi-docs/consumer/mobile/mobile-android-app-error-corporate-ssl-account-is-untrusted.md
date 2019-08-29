@@ -9,7 +9,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 08/28/2019
 ms.author: mshenhav
 
 ---
