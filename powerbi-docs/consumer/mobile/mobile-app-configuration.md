@@ -1,7 +1,7 @@
 ---
 title: 'Power BI iOS app configuration settings'
 description: How to customize the behavior of Power BI for iOS using MDM tool
-author: mshenhav
+author: painbar
 manager: kfile
 ms.reviewer: ''
 
