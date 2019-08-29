@@ -41,7 +41,7 @@ powerbiserviceurl?rp:parametervalueh&rdl:parameter=value
 
 ### powerbiserviceurl 
 
-The Web service URL of the report server. For native mode, it is the Web service URL of the report server instance configured in Reporting Services Configuration Manager (see Configure Report Server URLs (SSRS Configuration Manager)). For example: 
+The Web service URL of your Power BI tenant. For example: 
 
 **&**
 Used to separate name and value pairs of URL access parameters.
@@ -80,4 +80,5 @@ Specifies the format in which to render and export a report. Values include:
 
 ## Next steps
 
+- [Pass a report parameter in a URL for a paginated report in Power BI](report-builder-url-pass-parameters.md)
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)

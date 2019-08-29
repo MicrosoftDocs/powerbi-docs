@@ -77,4 +77,5 @@ https://app.powerbi.com/groups/me/rdlreports/xxxxxxx-abc7-40f0-b456-febzf9cdda4d
 
 ## Next steps
 
+- [URL parameters in paginated reports in Power BI](report-builder-url-parameters.md)
 - [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
