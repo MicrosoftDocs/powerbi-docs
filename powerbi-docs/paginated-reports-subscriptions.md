@@ -15,7 +15,7 @@ ms.date: 08/29/2019
 
 You can now set up email subscriptions for yourself and others for paginated reports in the Power BI service. In general, the process is the same as [subscribing to reports and dashboards in the Power BI service](service-report-subscribe.md). This article spells out the differences and considerations. 
 
-In setting up subscriptions, you choose how often you want to receive the emails: daily, weekly, monthly or hourly. You can choose the time(s) you'd like the subscription to run. In all, you can set up to 24 different subscriptions for every report. 
+In setting up subscriptions, you choose how often you want to receive the emails: daily, weekly, monthly, or hourly. You can also choose the time(s) you'd like the subscription to run. In all, you can set up to 24 different subscriptions for every report. 
 
 ## Considerations for paginated report subscriptions 
 
