@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/29/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -111,19 +111,19 @@ To find your tenant applications, follow these steps:
 
     ![Search for Power applications](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Select and copy both Object IDs for Power BI service and Power Query online from the results of your search. Be ready to paste those values in subsequent steps.
+5. Select and copy both Object IDs for Power BI Premium service and Power Query online from the results of your search. Be ready to paste those values in subsequent steps.
 
-7. Next, use **Azure Storage Explorer** to navigate to the *powerbi* file system you created in the previous section. Follow the instructions in [Managing access](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) section of [Set file and directory level permissions using Azure Storage explorer](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) article.
+6. Next, use **Azure Storage Explorer** to navigate to the *powerbi* file system you created in the previous section. Follow the instructions in [Managing access](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) section of [Set file and directory level permissions using Azure Storage explorer](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) article.
 
-8. For each of the two Power BI Object IDs collected in step 5, Assign **Read**, **Write**, **Execute** Access and Default ACLs to your *powerbi* file system.
+7. For each of the two Power BI Premium Object IDs collected in step 5, Assign **Read**, **Write**, **Execute** Access and Default ACLs to your *powerbi* file system.
 
    ![for both, assign all three](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
 
-9. For the Power Query Online Object ID collected in step 4, Assign **Write**, **Execute** Access and Default ACLs to your *powerbi* file system.
+8. For the Power Query Online Object ID collected in step 4, Assign **Write**, **Execute** Access and Default ACLs to your *powerbi* file system.
 
    ![next, assign write and execute](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
 
-10. In addition, for the **Other**, Assign **Execute** Access and Default ACLs as well.
+9. In addition, for the **Other**, Assign **Execute** Access and Default ACLs as well.
 
     ![last, for other assign execute](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07c.jpg)
 
