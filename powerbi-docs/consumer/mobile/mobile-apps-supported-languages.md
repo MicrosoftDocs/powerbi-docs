@@ -57,5 +57,5 @@ The Power Bi mobile apps currently support these languages:
 ## Next steps
 * [Supported languages and countries/regions for Power BI](../../supported-languages-countries-regions.md)
 * Questions? Try asking the [Power BI Community](http://community.powerbi.com/).
-* Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
+* Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 
