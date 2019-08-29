@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 08/29/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -104,4 +104,5 @@ When using the **Power BI service live connection**, there are a few limitations
 * For Content Packs, you must first create a copy of a content pack before using it as a basis for sharing a .pbix report and dataset to the **Power BI service**.
 * For Content Packs from *My Organization*, once copied, you cannot replace the report created on the service and/or a report created as part of copying a Content Pack with a live connection. Attempts to do so result in a warning that prompts you to rename the file, and publish. In this situation, you can only replace published live connected reports.
 * Deleting a shared dataset in the **Power BI service** means no one can access that dataset any longer from **Power BI Desktop**.
+* Reports that share a dataset on the Power BI service do not support automated deployments using the Power BI REST API.
 
