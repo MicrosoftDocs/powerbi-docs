@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/27/2019
+ms.date: 08/29/2019
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -96,3 +96,4 @@ Ttake some time to explore the data in the dashboards and reports that make up t
 ## Next steps
 * [Back to the apps overview](end-user-apps.md)
 * [View a Power BI report](end-user-report-open.md)
+* [Other ways content is shared with you](end-user-shared-with-me.md)
