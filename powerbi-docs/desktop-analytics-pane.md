@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 08/29/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -80,7 +80,6 @@ Full use of dynamic lines are available on the following visuals:
 * Area chart
 * Line chart
 * Scatter chart
-* Clustered Column chart
 * Clustered Bar chart
 
 The following visuals can use only a *constant line* from the **Analytics** pane:

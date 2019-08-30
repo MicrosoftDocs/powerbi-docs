@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ---
@@ -23,6 +23,10 @@ Power BI currently supports connecting to Enterprise Agreement and Customer Agre
 * **Enterprise Agreement** users should connect with the **Azure Consumption Insights connector** (below).
 
 * **Customer Agreement** users should connect with the [**Azure Cost Management connector**](#connect-with-azure-cost-management).
+
+> [!NOTE]
+> If you're an Enterprise Agreement customer using the Azure Cost Management connector, and you don't see the *Billing Profile ID* in your Cost Management blade, it means you're not in the Modern Commerce Platform. For those cases, use the Azure Consumption Insights connector, which requests the EA enrollment number rather than the *Billing Profile ID*.
+
 
 ## Connect with Azure Consumption Insights
 
