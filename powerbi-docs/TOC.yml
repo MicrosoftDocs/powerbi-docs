@@ -567,8 +567,6 @@
         href: service-create-dashboard-mobile-phone-view.md
       - name: "Create a QR code for a tile"
         href: service-create-qr-code-for-tile.md
-      - name: "Add an image to a dashboard"
-        href: service-dashboard-add-image.md
       - name: "Dashboard data classification"
         href: service-data-classification.md
       - name: "Dashboard themes"
