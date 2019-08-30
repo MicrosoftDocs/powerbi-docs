@@ -16,13 +16,13 @@ LocalizationGroup: Get started
 
 # Power BI for consumers
 
-## The Power BI service for *consumers*
 You live in a data culture, where business decisions are based on facts, not opinions. You need data to make these decisions, and your colleagues don’t let you down.     
  
 They send you all types of reports, spreadsheets, emails with charts, and even printed handouts. As the data piles up, it becomes harder and harder to find what you need quickly, and you worry that you might not be using the most recent information.  
  
 ![Power BI dashboard](media/end-user-consumer/power-bi-consumer-pipes.png)
 
+## The Power BI service for *consumers*
 
 Power BI makes your job easier and more impactful at the same time. All that data becomes charts and graphs, that visualize your data for you. Instead of long lists or tables of numbers and words, your data insights are ***beautiful*** – colorful and compelling visuals that tell stories about the insights in your data. 
 
