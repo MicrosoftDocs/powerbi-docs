@@ -941,8 +941,8 @@
       href: report-builder-tables-matrices-lists.md
     - name: Parameters
       href: report-builder-parameters.md
-    - name: Expressions
-      href: report-builder-expressions.md
+    - name: URL parameters in paginated reports
+      href: report-builder-url-parameters.md
     - name: Expression examples
       href: report-builder-expression-examples.md
     - name: Report pagination
@@ -961,6 +961,8 @@
       href: paginated-reports-create-embedded-dataset.md
     - name: Create parameters
       href: paginated-reports-parameters.md
+    - name: Pass a report parameter in a URL
+      href: report-builder-url-pass-parameters.md
     - name: Publish a paginated report
       href: paginated-reports-save-to-power-bi-service.md
 - name: Power BI for developers
