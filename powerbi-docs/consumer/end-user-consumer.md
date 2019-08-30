@@ -1,6 +1,6 @@
 ---
 title: What is a Power BI "Consumer"?
-description: Overview of Power BI consumer aka business user aka end user.
+description: Overview of Power BI for consumers (also known as end users or business users).
 author: mihart
 manager: kvivek
 ms.service: powerbi
@@ -32,15 +32,15 @@ Just open the Power BI service, in a browser or on a mobile device. You and your
 
 ![Power BI dashboard](media/end-user-consumer/power-bi-funnel.png)
 
-Since the content isn’t static, you can dig in, looking for trends, insights, and other business intelligence. Slice and dice the content, and even ask it questions using your own words. Or, sit back and let your data discover interesting insights for you; send you alerts when data changes, and email reports to you on a schedule you set. All your data, any time, in the cloud or on-premises, from any device. That’s just the beginning of what Power BI can do. 
+Since the content isn’t static, you can dig in, looking for trends, insights, and other business intelligence. Slice and dice the content, and even ask it questions using your own words. Or, sit back and let your data discover interesting insights for you; send you alerts when data changes, and email reports to you on a schedule you set. All your data, anytime, in the cloud or on-premises, from any device. That’s just the beginning of what Power BI can do. 
 
 ## Am I a Power BI *consumer*?
 
-The way you interact with Power BI will depend on your job role. As an end user or *consumer*, you are the person who receives content (dashboards, reports, and apps) from colleagues. You work in the online or mobile version of Power BI, which is called the Power BI service, reviewing and interacting with this content, in order to make business decisions. 
+The way you interact with Power BI will depend on your job role. As an end user or *consumer*, you are the person who receives content (dashboards, reports, and apps) from colleagues. You work in the online or mobile version of Power BI, which is called the Power BI service, reviewing and interacting with this content, to make business decisions. 
    
-As a consumer, you won't have access to the full capabilities of Power BI, and that's ok, because your job isn't building dashboards and reports. You will be using the Power BI service for analysis, monitoring, exploration, and decision making. 
+As a consumer, you won't have access to the full capabilities of Power BI, and that's ok, because your job isn't building dashboards and reports. You'll be using the Power BI service for analysis, monitoring, exploration, and decision making. 
 
-You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop", and this is a stand alone tool used by the *designers* who build and share dashboards and reports with you.  It's important to know that there are other Power BI tools out there, but if you're a consumer, you'll only work with the Power BI service. 
+You'll undoubtedly hear the term "Power BI Desktop" or just "Desktop", and this is a stand-alone tool used by the *designers* who build and share dashboards and reports with you.  It's important to know that there are other Power BI tools out there, but if you're a consumer, you'll only work with the Power BI service. 
 
 
 ## Safely interact with content 
