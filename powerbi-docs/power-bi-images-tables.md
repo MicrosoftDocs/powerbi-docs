@@ -15,9 +15,11 @@ LocalizationGroup: Visualizations
 ---
 # Display images in a table, matrix, or slicer in a report
 
-This topic teaches you how to display images in a table, matrix, slicer, or multi-row card. A good way to enhance your reports is to add images to them. Standalone images on the page are fine, but sometimes you want images that relate to the data in your report.
+A good way to enhance your reports is to add images to them. Static images on the page are good for some purposes. But sometimes you want images that relate to the data in your report. This topic teaches you how to display images in a table, matrix, slicer, or multi-row card. 
 
 ![URL images in a table](media/power-bi-images-tables/power-bi-url-images-table.png)
+
+## Add images to your report
 
 1. Create a column with the URLs of the images.
 
@@ -27,13 +29,17 @@ This topic teaches you how to display images in a table, matrix, slicer, or mult
 
 1. Add the column to a table, matrix, slicer, or multi-row card.
 
+    ![Slicer with images](media/power-bi-images-tables/power-bi-url-images-slicer.png)
+
 ## Considerations
 
-- The image needs to be bmp, jpg, jpeg, gif, png, svg
+- The image needs to be in one of these file formats: .bmp, .jpg, .jpeg, .gif, .png, or  .svg
 - The URL needs to be anonymously accessible, not on a site that requires a sign-in, such as SharePoint. However, if images are hosted on SharePoint or OneDrive, you may be able to get an embed code that points directly to them. 
 
 
 ## Next steps
+
+[Add static shapes, text boxes, and images to a report](https://docs.microsoft.com/power-bi/guided-learning/visualizations?tutorial-step=11)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
