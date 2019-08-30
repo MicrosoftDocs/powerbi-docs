@@ -8,13 +8,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
 ---
 # Connect to Circuit ID with Power BI
 Analyzing your communication data from Circuit ID is easy with Power BI. Power BI retrieves your data, then builds a default dashboard and related reports based on that data. After you have created the connection, you can explore your data and customize the dashboard to meet your needs. Data is automatically refreshed every day.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Connect to the [Circuit ID content pack](https://app.powerbi.com/getdata/services/circuitid) for Power BI.
 

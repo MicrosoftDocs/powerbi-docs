@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/27/2019
+ms.date: 08/29/2019
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -29,7 +29,7 @@ Your apps are organized in the **Apps** content list. Just select **Apps** to di
 Depending on your role, you may be someone who creates apps (*designer*) for your own use or to share with colleagues. Or, you may be someone who receives and downloads apps (*consumer*) created by others. This article is for app *consumers*.
 
 ## Advantages of apps
-Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards because they're all together in one app, in your browser or on your mobile device.
+Apps are an easy way to share different types of content at one time. App *designers* create the dashboards and reports and bundle them together into an app. The *designers* then share or publish the app to a location where you, the *consumer*, can access it. Because related dashboards and reports are bundled together, it's easier for you to find and install in both the Power BI service ([https://powerbi.com](https://powerbi.com)) and on your mobile device. After you install an app, you don't have to remember the names of a lot of different dashboards or reports because they're all together in one app, in your browser or on your mobile device.
 
 With apps, whenever the app author releases updates, you automatically see the changes. The author also controls how often the data is scheduled to refresh, so you don't need to worry about keeping it up to date. 
 
@@ -45,4 +45,5 @@ You can get apps in a few different ways. Some of the ways are listed below.  Bu
 
 ## Next step
 * [Open and interact with an app](end-user-app-view.md)
+* [Other ways to share content](end-user-shared-with-me.md)
 

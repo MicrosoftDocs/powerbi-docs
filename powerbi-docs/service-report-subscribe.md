@@ -9,14 +9,14 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 08/29/2019
 ms.author: maggies
 
 LocalizationGroup: Common tasks
 ---
 # Subscribe yourself and others to reports and dashboards in the Power BI service
 
-You can subscribe yourself and your colleagues to the report pages, dashboards, and paginated reports that matter most to you. Power BI emails a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, or once a day after the initial data refresh.  If you choose daily or weekly, you can choose the time you'd like to have the subscription run.  In all, you can set up to 24 different subscriptions per day, for every report page and dashboard.
+You can subscribe yourself and your colleagues to the report pages, dashboards, and paginated reports that matter most to you. Power BI emails a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, hourly, monthly, or once a day after the initial data refresh.  If you choose daily, weekly, hourly, or monthly, you can choose the time you'd like to have the subscription run.  In all, you can set up to 24 different subscriptions per day, for every report page and dashboard.
 
 ![email snapshot of dashboard](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 
@@ -50,9 +50,9 @@ Subscribing to paginated reports is a little different. See [Subscribe yourself 
 
 5. Fill in the email **Subject** and **Message** details. 
 
-5. Select a **Frequency** for your subscription: **Daily**, **Hourly**, **Weekly**, or **After Data Refresh (Daily)**.  To receive the subscription email only on certain days, select **Hourly** or **Weekly** and select the days you'd like to receive it.  For example, if you'd like to receive the subscription email only on weekdays, select **Weekly** and uncheck the boxes for **Sat** and **Sun**.  
+5. Select a **Frequency** for your subscription: **Daily**, **Hourly**, **Weekly**, **Monthly**, or **After Data Refresh (Daily)**.  To receive the subscription email only on certain days, select **Hourly** or **Weekly** and select the days you'd like to receive it.  For example, if you'd like to receive the subscription email only on weekdays, select **Weekly** and clear the boxes for **Sat** and **Sun**.  If you select **Monthly**, enter the day(s) of the month you wish to receive the subscription mail.  
 
-6. If you choose **Daily** or **Weekly**, you can also choose a **Scheduled Time** for the subscription.  You have it run on the hour, or at 15, 30, or 45 minutes past.  Select morning (AM) or afternoon/evening (PM). You can also specify the time zone.  If you choose **Hourly**, select the **Scheduled Time** you want the subscription to start, and it will come every hour subsequent to that.
+6. If you choose **Daily**, **Hourly, **Monthly**, or **Weekly**, you can also choose a **Scheduled Time** for the subscription.  You have it run on the hour, or at 15, 30, or 45 minutes past.  Select morning (AM) or afternoon/evening (PM). You can also specify the time zone.  If you choose **Hourly**, select the **Scheduled Time** you want the subscription to start, and it will run every hour after that.
 
 7. By default, the start date for your subscription is the date you create it. You have the option to select an end date. If you don't set an end date, the end date is automatically one year after the start date. You can change it to any date in the future (up to the year 9999) at any time before the subscription ends. When a subscription reaches an end date, it stops until you re-enable it. You'll receive notification(s) before the scheduled end date to ask if you'd like to extend it.    
 
@@ -63,7 +63,7 @@ Subscribing to paginated reports is a little different. See [Subscribe yourself 
 7. Select **Save and close**. Those subscribed receive an email and snapshot of the dashboard or report page for the frequency and time you selected. In all, you may create up to 24 subscriptions per report or dashboard, and can provide unique recipients, times, and frequencies for each subscription.  All subscriptions set to **After Data Refresh** for your dashboard or report will still only send an email after the first scheduled refresh.   
       
    > [!TIP]
-   > Want to send the email from a subscription right away or on-demand at any time? Select **Run Now** for the subscriptions for the dashboard or report you want to send. You'll see a notification that an e-mail is on its way to everyone for that particular subscription.  You may do this as often as you like. It doesn't count against your limit of 24 scheduled subscription runs per day per report or dashboard. It does NOT trigger a data refresh of the underlying dataset. 
+   > Want to send the email from a subscription right away or on-demand at any time? Select **Run Now** for the subscriptions for the dashboard or report you want to send. You'll see a notification that an e-mail is on its way to everyone for that particular subscription.  Taking this action doesn't count against your limit of 24 scheduled subscription runs per day per report or dashboard. It does NOT trigger a data refresh of the underlying dataset. 
    > 
    > 
    
@@ -99,7 +99,7 @@ A subscription ends if the Pro license expires, the owner deletes the dashboard 
 * For dashboards subscriptions specifically, certain types of tiles aren't yet supported.  These include: streaming tiles, video tiles, custom web content tiles.     
 * If you share a dashboard with a colleague outside of your tenant, you can't also create a subscription for that colleague. So if you are aaron@xyz.com, you can share with anyone@ABC.com, but you can't yet subscribe anyone@ABC.com and they can't subscribe to shared content.      
 * Power BI automatically pauses refresh on datasets associated with dashboards and reports that haven't been visited in more than two months.  However, if you add a subscription to a dashboard or report, it doesn't pause even if it goes unvisited.    
-* If you aren't receiving the subscription emails, ensure that your User Principal Name (UPN) can receive emails. [The Power BI team is working on relaxing this requirement](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163), so stay tuned. 
+* If you aren't receiving the subscription emails, ensure that your User Principal Name (UPN) can receive emails. 
 * If your dashboard or report is in Premium capacity, you can use group email aliases for subscriptions, instead of subscribing colleagues one email address at a time. The aliases are based on the current active directory. 
 
 ## Next steps
