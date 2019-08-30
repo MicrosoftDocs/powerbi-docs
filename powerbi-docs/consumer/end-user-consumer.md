@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 08/22/2019
+ms.date: 08/21/2019
 ms.author: mihart
 
 LocalizationGroup: Get started
