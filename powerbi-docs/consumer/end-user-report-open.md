@@ -9,9 +9,9 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 5/06/2018
+ms.date: 8/28/2018
 ms.author: mihart
-#This article teaches consumers how to find and open a report whether it's been shared directly or shared via an app, so that the consumer can view and interact with the report to make business decisions.
+#This article teaches consumers how to find and open a report whether it has been shared directly or shared via an app, so that the consumer can view and interact with the report to make business decisions.
 ---
 # View a report in Power BI service for *consumers*
 A report is one or more pages of visuals. Reports are created by Power BI *designers* and [shared with *consumers* directly](end-user-shared-with-me.md) or as part of an [app](end-user-apps.md). 
@@ -24,7 +24,7 @@ There are many different ways to open a report and we'll show you two of them: o
 ## Open a report from Power BI Home
 Let's open a report that's been shared with you directly and then open a report that was shared as part of an app.
 
-   ![Home page](./media/end-user-report-open/power-bi-home.png)
+   ![Home page](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### Open a report that has been shared with you
 Power BI *designers* can share a report directly with you. Content that is shared this way shows up in the **Shared with me** container on your nav bar and in the **Shared with me** section of your Home canvas.
@@ -41,17 +41,17 @@ Power BI *designers* can share a report directly with you. Content that is share
 
 4. Simply select the report *card* to open the report.
 
-   ![report page](./media/end-user-report-open/power-bi-filter-pane.png)
+   ![report page](./media/end-user-report-open/power-bi-report-open.png)
 
 5. Notice the tabs along the left side.  Each tab represents a report *page*. We currently have the *Growth Opportunity* page open. Select the *YTD Category* tab to open that report page instead. 
 
-   ![report page tabs](./media/end-user-report-open/power-bi-tab-new.png)
+   ![report page tabs](./media/end-user-report-open/power-bi-ytd.png)
 
 6. Right now we're seeing the entire report page. To change the display (zoom) of the page, select the View dropdown from the upper right corner (**>**) and choose **Actual size**.
 
    ![change zoom](./media/end-user-report-open/power-bi-fit-new.png)
 
-   ![fit to page](./media/end-user-report-open/power-bi-actual-size.png)
+   ![fit to page](./media/end-user-report-open/power-bi-actual.png)
 
 ### Open a report that is part of an app
 If you've received apps from colleagues or from AppSource, those apps are available from Home and from the **Apps** container on your nav bar. An [app](end-user-apps.md) is a bundle of dashboards and reports.
@@ -65,24 +65,23 @@ If you've received apps from colleagues or from AppSource, those apps are availa
 8. Select one of the apps to open it. Depending on the options set by the app *designer*, the app will open either a dashboard, a report, or an app content list. If selecting the app:
     - opens the report, you're all set.
     - opens a dashboard, see ***Open a report from a dashboard***, below.
-    - opens the app content list, under **Reports**, select the report to open it.
 
 
 ## Open a report from a dashboard
-Reports can be opened from a dashboard. Most dashboard tiles are *pinned* from reports. Selecting a tile opens the report that was used to create the tile. 
+Reports can be opened from a dashboard. Most dashboard [tiles](end-user-tiles.md) are *pinned* from reports. Selecting a tile opens the report that was used to create the tile. 
 
 1. From a dashboard, select a tile. In this example we've selected the "Total Units YTD..." column chart tile.
 
-    ![dashboard with tile selected](./media/end-user-report-open/power-bi-dashboard-new.png)
+    ![dashboard with tile selected](./media/end-user-report-open/power-bi-dashboard.png)
 
 2.  The associated report opens. Notice that we're on the "YTD Category" page. This is the report page that contains the column chart we selected from the dashboard.
 
-    ![report open in Reading view](./media/end-user-report-open/power-bi-report-newer.png)
+    ![report open in Reading view](./media/end-user-report-open/power-bi-report-tabs.png)
 
 > [!NOTE]
 > Not all tiles lead to a report. 
 >If you select a tile that was [created with Q&A](end-user-q-and-a.md), the Q&A screen will open. 
->If you select a tile that was [created using the dashboard **Add tile** widget](../service-dashboard-add-widget.md), several different things may happen.  
+>If you select a tile that was [created using the dashboard **Add tile** widget](../service-dashboard-add-widget.md), several different things may happen: a video may play, a website open, and more.  
 
 
 ##  Still more ways to open a report
