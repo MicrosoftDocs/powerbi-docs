@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/22/2019
+ms.date: 08/29/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -60,3 +60,5 @@ If you downloaded Power BI Desktop from the Microsoft Store, you might be unable
 * Download Power BI Desktop from https://powerbi.microsoft.com/desktop instead.
 
 * If you want to use the version from the Microsoft Store: on your local computer, copy oraons.dll from _12.X.X\client_X_ into _12.X.X\client_X\bin_. The X represents version and directory numbers.
+
+If you see the error message *Object reference not set* in the Power BI Gateway when connecting to an Oracle database, you might be able to solve the issue by following the instructions found in the [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md) article.
