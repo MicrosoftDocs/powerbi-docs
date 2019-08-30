@@ -42,7 +42,10 @@ Funnel charts:
 * Support multiples.
 * Can be highlighted and cross-filtered by other visualizations on the same report page.
 * Can be used to highlight and cross-filter other visualizations on the same report page.
-
+   > [!NOTE]
+   > Watch this video to see Will create a funnel chart using the Sales and Marketing sample. Then follow the steps below the video to try it out yourself using the Opportunity Analysis PBIX sample file
+   > 
+   > 
 ## Prerequisite
 
 This tutorial uses the [Opportunity Analysis sample PBIX file](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix
@@ -59,10 +62,7 @@ This tutorial uses the [Opportunity Analysis sample PBIX file](http://download.m
 
 ## Create a basic funnel chart
 Watch this video to see Will create a Funnel chart using the Sales and Marketing sample.
-   > [!NOTE]
-   > This video uses an older version of Power BI Desktop.
-   > 
-   > 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qKRZPBnaUXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
@@ -71,8 +71,8 @@ Now create your own funnel chart that shows the number of opportunities we have 
 1. Start on a blank report page and select the **SalesStage** \> **Sales Stage** field.
    
     ![select Sales Stage](media/power-bi-visualization-funnel-charts/funnelselectfield-new.png)
-2. [Convert the chart](power-bi-report-change-visualization-type.md) to a funnel. Notice that **Sales Stage** is in the **Group** well. 
-3. From the **Fields** pane, select **Fact** \> **Opportunity Count**.
+
+2. From the **Fields** pane, select **Fact** \> **Opportunity Count**.
    
     ![build the funnel chart](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. Hovering over a bar displays a wealth of information.

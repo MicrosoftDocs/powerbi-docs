@@ -7,4 +7,4 @@ ms.author: mihart
 ---
 
 >[!NOTE]
->These functions can be created and viewed in both Power BI Desktop and the Power BI service. The steps and illustrations in this article are from Power BI Desktop. 
+>These visuals can be created and viewed in both Power BI Desktop and the Power BI service. The steps and illustrations in this article are from Power BI Desktop. 

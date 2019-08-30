@@ -88,15 +88,17 @@ In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again
    ![combo chart flatline example](media/power-bi-visualization-combo-chart/flatline-new.png)
 3. To make the visual easier to read and interpret, convert the line chart to a Line and Stacked Column chart.
 
-   ![](media/power-bi-visualization-combo-chart/converttocombo-new.png)
+   ![convert to combo chart example](media/power-bi-visualization-combo-chart/converttocombo-new.png)
+
 4. Drag **Gross Margin Last Year %** from **Column Values** into **Line Values**. Power BI creates two axes, thus allowing the datasets to be scaled differently; the left measures sales dollars and the right measures percentage. And we see the answer to our question; yes, we do see a similar pattern.
 
    ![cluster combo chart example](media/power-bi-visualization-combo-chart/power-bi-clustered-combo.png)    
 
 ## Add titles to the axes
-1. Select the paint roller icon ![](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) to open the Formatting pane.
-2. Select the down arrow to expand the **Y-axis** options.
-3. For **Y-Axis (Column)**, set **Position** to **Left**, set **Title** to **On**, **Style** to  **Show title only**, and **Display units** as **Millions**.
+1. Select the paint roller icon 
+1. ![paint roller icon](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) to open the Formatting pane.
+1. Select the down arrow to expand the **Y-axis** options.
+1. For **Y-Axis (Column)**, set **Position** to **Left**, set **Title** to **On**, **Style** to  **Show title only**, and **Display units** as **Millions**.
 
    ![combo chart open y example](media/power-bi-visualization-combo-chart/power-bi-open-y.png)
 4. Under **Y-Axis (Column)**, scroll down until you see **Show secondary**. Because there are so many options for the Y axes, you may have to use both scrollbars. The Show secondary section displays options for formatting the line chart portion of the combo chart.

@@ -24,7 +24,7 @@ Sometimes a single number is the most important thing you want to track in your 
 
 ## Prerequisite
 
-This tutorial uses the [Retail Analysis sample PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+This tutorial uses the [Retail Analysis sample PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) for the first option and the [Opportunity Analysis sample PBIX file](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix) for the second.
 
 1. From the upper left section of the menubar, select **File** \> **Open**
    
@@ -36,13 +36,14 @@ This tutorial uses the [Retail Analysis sample PBIX file](http://download.micros
 
 ## Option 1: Create a card using the report editor
 
-The first method to create a card is to use the report editor in Power BI Desktop. 
+The first method to create a card is to use the report editor in Power BI Desktop. This option uses the **Retail Analysis sample PBIX file**.
 
 1. Start on a blank report page and select the **Store** \> **Open store count** field.
 
     Power BI creates a column chart with the one number.
 
-   ![example number tile chart](media/power-bi-visualization-card/pbi-rptnumbertilechart.png)
+   ![example number tile chart](media/power-bi-visualization-card/pbi-overview-chart.png)
+
 2. In the Visualizations pane, select the card icon.
 
    ![example number title card](media/power-bi-visualization-card/power-bi-card-visualization.png)
@@ -50,20 +51,21 @@ The first method to create a card is to use the report editor in Power BI Deskto
 You have now successfully created a card with the report editor. Below is the second option for creating a card using the Q&A question box.
 
 ## Option 2: Create a card from the Q&A question box
-The Q&A question box is another option for you to use when creating a card. The Q&A question box is available in Power BI Desktop report view.
+The Q&A question box is another option for you to use when creating a card. The Q&A question box is available in Power BI Desktop report view. This example uses the **Opportunity Analysis sample PBIX file**.
 
 1. Start on a blank report page
 
 1. At the top of your window, select the **Ask a Question** icon. 
 
-   ![ask a question icon location](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
+    Power BI will create a card and a box for your question. 
 
-2. For example, type "number of opportunities" in the question box.
+   ![ask a question icon location](media/power-bi-visualization-card/power-bi-q-and-a-overview.png)
 
-   ![question box example](media/power-bi-visualization-card/power-bi-q-and-a.png)
+2. For example, type "Total Sales for Tina" in the question box.
 
-   The question box helps you with suggestions and restatements, and finally displays the total number.  
+    The question box helps you with suggestions and restatements, and finally displays the total number.  
 
+   ![question box example](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
    ![card example from question method](media/power-bi-visualization-card/power-bi-q-and-a-card.png)
 
@@ -77,11 +79,14 @@ The Formatting pane is available when interacting with the card in a report.
 1. Start by selecting the paint roller icon to open the Formatting pane. 
 
     ![card with paint roller outlined](media/power-bi-visualization-card/power-bi-format-card-2.png)
+
 2. With the card selected, expand **Data label** and change the color, size, and font family. If you had thousands of stores, you could use **Display units** to show the number of stores by thousands and control the decimal places as well. For example, 125.8K instead of 125,832.00.
+
+    ![card with data format example](media/power-bi-visualization-card/power-bi-card-format-2.png)
 
 3.  Expand **Category label** and change the color and size.
 
-    ![color dark blue selected](media/power-bi-visualization-card/power-bi-card-format-2.png)
+    ![card with category example](media/power-bi-visualization-card/power-bi-card-format-category.png)
 
 4. Expand **Background** and move the slider to On.  Now you can change the background color and transparency.
 
@@ -89,13 +94,10 @@ The Formatting pane is available when interacting with the card in a report.
 
 5. Continue to explore the formatting options until your card is exactly how you'd like it. 
 
-    ![card after all formatting done](media/power-bi-visualization-card/power-bi-formatted-2.png)
-
-
 ## Considerations and troubleshooting
 If you do not see a question box at all, contact your system or tenant administrator.    
 
 ## Next steps
-[combo charts in Power BI](power-bi-visualization-combo-chart.md)
+[Combo charts in Power BI](power-bi-visualization-combo-chart.md)
 
 [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
