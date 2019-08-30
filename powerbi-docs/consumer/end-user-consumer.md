@@ -54,6 +54,6 @@ That doesn't mean you can't save your changes - you can. But those changes only 
 
 
 ## Next steps
-[Terminology and concepts for Power BI *consumers*](end-user-basic-concepts.md)
+[Terminology and concepts for Power BI *consumers*](end-user-basic-concepts.md)    
 [Take a tour of the Power BI service for consumers](end-user-reading-view.md)
 
