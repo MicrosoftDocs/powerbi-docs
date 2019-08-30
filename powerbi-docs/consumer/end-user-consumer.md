@@ -24,7 +24,7 @@ They send you all types of reports, spreadsheets, emails with charts, and even p
 ![Power BI dashboard](media/end-user-consumer/power-bi-consumer-pipes.png)
 
 
-Power BI makes your job easier and more impactful at the same time. All that data becomes charts and graphs, that visualize your data for you. Instead of long lists or tables of numbers and words, your data insights are beautiful – colorful and compelling visuals that tell stories about the insights in your data. 
+Power BI makes your job easier and more impactful at the same time. All that data becomes charts and graphs, that visualize your data for you. Instead of long lists or tables of numbers and words, your data insights are ***beautiful*** – colorful and compelling visuals that tell stories about the insights in your data. 
 
 ![Power BI dashboard](media/end-user-consumer/power-bi-consumer-examples.png)
  
