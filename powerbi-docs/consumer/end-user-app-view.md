@@ -47,7 +47,7 @@ You can also find and install apps from Microsoft AppSource. Only apps that you 
 3. Select **Get it now** to add it to your Apps content list. 
 
 ## Get an app from the Microsoft AppSource website (https://appsource.microsoft.com)
-In this example, we'll open one of the Microsoft sample apps. On AppSource you'll find apps for many of the services that you use to run your business.  Services such as Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo, and many more. To learn more, visit [Apps for services you use with Power BI](service-connect-to-services.md). 
+In this example, we'll open one of the Microsoft sample apps. On AppSource you'll find apps for many of the services that you use to run your business.  Services such as Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo, and many more. To learn more, visit [Apps for services you use with Power BI](../service-connect-to-services.md). 
 
 1. In a browser, open https://appsource.microsoft.com, and select **Power BI apps**.
 
