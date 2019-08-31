@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 08/29/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -101,6 +101,9 @@ When we select **Edit**, Query Editor launches and a representative view of the 
  ![](media/desktop-getting-started/designer_gsg_editquery.png)
 
 For more information about connecting to data, see [Connect to Data in Power BI Desktop](desktop-connect-to-data.md).
+
+> [!NOTE]
+> The table data referred to in this article might change over time. As such, the steps you need to follow might vary from the following, requiring you to be creative about how you adjust steps or outcomes - which is all part of the fun of learning. 
 
 In the next section, we adjust the data so it meets our needs. The process of adjusting connected data is called *shaping* data.
 
