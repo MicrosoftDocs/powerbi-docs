@@ -21,7 +21,7 @@ A good way to enhance your reports is to add images to them. Static images on th
 
 ## Add images to your report
 
-1. Create a column with the URLs of the images.
+1. Create a column with the URLs of the images. See [Considerations](#considerations) later in this article for requirements.
 
 1. Select that column. On the **Modeling** ribbon, for **Data category**, select **Image URL**.
 
