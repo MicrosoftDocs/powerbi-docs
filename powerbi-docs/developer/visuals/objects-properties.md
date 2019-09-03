@@ -15,7 +15,7 @@ ms.date: 06/18/2019
 
 Objects describe customizable properties that are associated with a visual. An object can have multiple properties, and each property has an associated type that describes what the property will be. This article provides information about objects and property types.
 
-`myCustomObject` is the internal name that's used to reference the object within `dataView` and `enumerateObjectInstances`
+`myCustomObject` is the internal name that's used to reference the object within `dataView` and `enumerateObjectInstances`.
 
 ```json
 "objects": {
