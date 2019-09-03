@@ -62,7 +62,7 @@ If you've received apps from colleagues or from AppSource, those apps are availa
 
    ![Home page](./media/end-user-report-open/power-bi-my-apps.png)
 
-8. Select one of the apps to open it. Depending on the options set by the app *designer*, the app will open either a dashboard, a report, or an app content list. If selecting the app:
+8. Select one of the apps to open it. Depending on the options set by the app *designer*, the app will open either a dashboard or a report. If selecting the app:
     - opens the report, you're all set.
     - opens a dashboard, see ***Open a report from a dashboard***, below.
 
@@ -93,5 +93,5 @@ As you get more comfortable navigating the Power BI service, you'll figure out w
 - and more
 
 ## Next steps
-There are [so many ways to interact with a report](end-user-reading-view.md).  Start exploring by selecting each tab to the side of the report canvas.
+[Open and view a dashboard](end-user-dashboard-open.md)
 
