@@ -402,7 +402,7 @@ You can visualize the table data view as the following:
 | UK | 2014 | 150 |
 | USA | 2015 | 75 |
 
-Power BI displays your data as the table data view. You shouldnt assume that the data is ordered.
+Power BI displays your data as the table data view. You shouldn't assume that the data is ordered.
 
 ```JSON
 {
