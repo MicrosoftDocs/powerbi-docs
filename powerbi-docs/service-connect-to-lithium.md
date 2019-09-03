@@ -8,13 +8,16 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
-ms.author: sarinas
+ms.date: 08/29/2019
+ms.author: tebercov
 
 LocalizationGroup: Connect to services
 ---
 # Connect to Lithium with Power BI
+
 Lithium builds trusted relationships between the world's best brands and their customers, helping people get answers and share their experiences. By connecting the Lithium content pack to Power BI, you can measure key metrics about your online community to help drive sales, reduce service costs and increase loyalty. 
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Connect to the [Lithium content pack](https://app.powerbi.com/getdata/services/lithium) for Power BI.
 
