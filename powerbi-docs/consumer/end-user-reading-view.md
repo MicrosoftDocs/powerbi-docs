@@ -185,7 +185,7 @@ In addition to showing the data that is used to create a visual, you can also ex
 
 ![data exported to PowerPoint](./media/end-user-reading-view/power-bi-export-powerpoint.png) -->
 
-This has been a quick overview of just some of the things **consumers** can do with the Power BI service.  
+This has been a quick overview of just some of the things *consumers* can do with the Power BI service.  
 
 ## Clean up resources
 - If you connected to an app, from the left navbar, select **Apps** to open the Apps content list. Hover over the app to delete, and select the trashcan icon.
@@ -193,5 +193,5 @@ This has been a quick overview of just some of the things **consumers** can do w
 - If you imported or connected to a Power BI sample report, from the left navbar, open **My workspace**. Using the tabs at the top, locate the dashboard, report, and dataset, and select the trashcan icon for each.
 
 ## Next steps
-
+[Power BI for consumers](end-user-consumer.md)
 
