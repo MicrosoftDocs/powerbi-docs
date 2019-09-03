@@ -1,6 +1,6 @@
 ---
-title: Object and properties
-description: Customizable properties of Power BI Visual
+title: Objects and properties of Power BI visuals
+description: This article describes the customizable properties of Power BI visuals.
 author: MrMeison
 ms.author: rasala
 manager: rkarlin
@@ -11,13 +11,11 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Object and properties
+# Objects and properties of Power BI visuals
 
-Objects describe customizable properties associated with the visual.
-Each object can have multiple properties and each property has a type associated with it.
-Types refer to what the property will be. See below for more information about types.
+Objects describe customizable properties that are associated with a visual. An object can have multiple properties, and each property has an associated type that describes what the property will be. This article provides information about objects and property types.
 
-`myCustomObject` is the internal name used to reference the object within `dataView` and `enumerateObjectInstances`
+`myCustomObject` is the internal name that's used to reference the object within `dataView` and `enumerateObjectInstances`.
 
 ```json
 "objects": {
@@ -28,13 +26,13 @@ Types refer to what the property will be. See below for more information about t
 }
 ```
 
-## Display Name
+## Display name
 
 `displayName` is the name that will be shown in the property pane.
 
 ## Properties
 
-`properties` is a map of properties defined by the developer.
+`properties` is a map of properties that are defined by the developer.
 
 ```json
 "properties": {
@@ -61,12 +59,13 @@ Example:
 
 ### Property types
 
-There are two types of property types: `ValueTypeDescriptor` and `StructuralTypeDescriptor`.
+There are two property types: `ValueTypeDescriptor` and `StructuralTypeDescriptor`.
 
-#### Value Type Descriptor
+#### Value type descriptor
 
-`ValueTypeDescriptor` are mostly primitive types and are typically used as a static object.
-Here are some of the common `ValueTypeDescriptor`
+`ValueTypeDescriptor` types are mostly primitive and are ordinarily used as a static object.
+
+Here are some of the common `ValueTypeDescriptor` elements:
 
 ```typescript
 export interface ValueTypeDescriptor {
@@ -77,10 +76,10 @@ export interface ValueTypeDescriptor {
 }
 ```
 
-#### Structural Type Descriptor
+#### Structural type descriptor
 
-`StructuralTypeDescriptor` are mostly used for data bound objects.
-Fill is the most common `StructuralTypeDescriptor`
+`StructuralTypeDescriptor` types are mostly used for data-bound objects.
+The most common `StructuralTypeDescriptor` type is *fill*.
 
 ```typescript
 export interface StructuralTypeDescriptor {
@@ -90,8 +89,9 @@ export interface StructuralTypeDescriptor {
 
 ## Gradient property
 
-The gradient property is a property that cannot be set as a standard property. Instead, you need to set a rule for substitution of the color picker property (fill type).
-See the example below:
+The gradient property is a property that can't be set as a standard property. Instead, you need to set a rule for the substitution of the color picker property (*fill* type).
+
+An example is shown in the following code:
 
 ```json
 "properties": {
@@ -132,13 +132,13 @@ See the example below:
 }
 ```
 
-Pay attention to the `"fill"` and `"fillRule"` properties. The first is the color picker, the second is the substitution rule for gradient that will substitute the "fill" property `visually` when the rule conditions will be met.
+Pay attention to the *fill* and *fillRule* properties. The first is the color picker, and the second is the substitution rule for the gradient that will replace the *fill property*, `visually`, when the rule conditions are met.
 
-This link between the fill property and the substitution rule is set in `"rule"`->`"output"` section of the `"fillRule"` property.
+This link between the *fill* property and the substitution rule is set in the `"rule"`>`"output"` section of the *fillRule* property.
 
-`"Rule"`->`"InputRole"` sets which data role triggers the rule (condition). In this example, if data role `"Gradient"` contains data then the rule will be applied for the `"fill"` property.
+`"Rule"`>`"InputRole"` property sets which data role triggers the rule (condition). In this example, if data role `"Gradient"` contains data, the rule is applied for the `"fill"` property.
 
-Below you can see an example of the data role that triggers the fill rule (`the last item`).
+An example of the data role that triggers the fill rule (`the last item`) is shown in the following code:
 
 ```json
 {
@@ -165,9 +165,9 @@ Below you can see an example of the data role that triggers the fill rule (`the 
 }
 ```
 
-## `enumerateObjectInstances` method
+## The enumerateObjectInstances method
 
-To use objects effectively, you'll need a function in your custom visual called `enumerateObjectInstances`. This function will populate the property pane with objects and will also determine where your objects should be bound within the dataView.  
+To use objects effectively, you need a function in your custom visual called `enumerateObjectInstances`. This function populates the property pane with objects and also determines where your objects should be bound within the dataView.  
 
 Here is what a typical setup looks like:
 
@@ -192,15 +192,15 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 
 ### Properties
 
-The properties in `enumerateObjectInstances` will reflect the properties you defined in your capabilities. See example at bottom of page.
+The properties in `enumerateObjectInstances` reflect the properties that you defined in your capabilities. For an example, go to the end of this article.
 
 ### Objects selector
 
-The selector in `enumerateObjectInstances` determines where each object will be bound in the dataView. There are four distinct options.
+The selector in `enumerateObjectInstances` determines where each object is bound in the dataView. There are four distinct options.
 
 #### static
 
-This object will be bound to metadata `dataviews[index].metadata.objects`
+This object is bound to metadata `dataviews[index].metadata.objects`, as shown here.
 
 ```typescript
 selector: null
@@ -208,7 +208,7 @@ selector: null
 
 #### columns
 
-This object will be bound to columns with the matching `QueryName`.
+This object is bound to columns with the matching `QueryName`.
 
 ```typescript
 selector: {
@@ -218,7 +218,7 @@ selector: {
 
 #### selector
 
-This object will be bound to the element we have created a `selectionID` for. In this example, we'll assume that we have created `selectionID`'s for some dataPoints, and we're looping through them.
+This object is bound to the element that you created a `selectionID` for. In this example, let's assume that we've created `selectionID`s for some data points, and that we're looping through them.
 
 ```typescript
 for (let dataPoint in dataPoints) {
@@ -229,7 +229,7 @@ for (let dataPoint in dataPoints) {
 
 #### Scope identity
 
-This object will be bound to particular values at the intersection of groups. For example, if I have categories `["Jan", "Feb", "March", ...]` and series `["Small", "Medium", "Large"]`, I may want to have an object on the intersection of values matching `Feb` and `Large`. To accomplish this I could get the `DataViewScopeIdentity` of both columns, push them to variable `identities`, and use this syntax with the selector.
+This object is bound to particular values at the intersection of groups. For example, if you have categories `["Jan", "Feb", "March", ...]` and series `["Small", "Medium", "Large"]`, you might want to have an object at the intersection of values that match `Feb` and `Large`. To accomplish this, you could get the `DataViewScopeIdentity` of both columns, push them to variable `identities`, and use this syntax with the selector.
 
 ```typescript
 selector: {
@@ -239,7 +239,7 @@ selector: {
 
 ##### Example
 
-In this example, we show what one objectEnumeration would look like for a customColor object with one property `fill`. We want this object bound statically to `dataViews[index].metadata.objects`
+The following example shows what one objectEnumeration would look like for a customColor object with one property, *fill*. We want this object bound statically to `dataViews[index].metadata.objects`, as shown:
 
 ```typescript
 objectEnumeration.push({
