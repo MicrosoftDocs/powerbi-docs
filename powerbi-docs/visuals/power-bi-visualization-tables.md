@@ -15,6 +15,8 @@ LocalizationGroup: Visualizations
 
 # Tables in Power BI reports and dashboards
 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 A table is a grid that contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons where you're looking at many values for a single category. For example, this table displays five different measures for **Category**.
 
 ![Screenshot of a table that displays five different measures for Category.](media/power-bi-visualization-tables/table.png)
@@ -31,25 +33,23 @@ Tables are a great choice:
 
 * To display numerical data by categories.
 
-## Prerequisites
+## Prerequisite
 
-* The Power BI service or Power BI Desktop
+This tutorial uses the [Retail Analysis sample PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Retail Analysis Sample report
+1. From the upper left section of the menubar, select **File** > **Open**
+   
+2. Find your copy of the **Retail Analysis sample PBIX file**
 
-## Get the Retail Analysis Sample report
+1. Open the **Retail Analysis sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-These instructions use the Retail Analysis Sample. Creating a visualization requires edit permissions to the dataset and report. Luckily, the Power BI samples are all editable. If someone shares a report with you, you can't create visualizations in reports. To follow along, get the [Retail Analysis Sample report](../sample-datasets.md).
+1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
-After you get the **Retail Analysis Sample** dataset, you can get started.
 
 ## Create a table
 
 You'll create the table pictured at the beginning of the article to display sales values by item category.
 
-1. From **My Workspace**, select **Datasets** > **Create a report**.
-
-    ![Screenshot of Datasets > Create a report.](media/power-bi-visualization-tables/power-bi-create-a-report.png)
 
 1. From the **Fields** pane, select **Item** > **Category**.
 
@@ -61,11 +61,10 @@ You'll create the table pictured at the beginning of the article to display sale
 
 1. Then select **Sales > This Year Sales** and select all three options: **Value**, **Goal**, and **Status**.
 
-1. In the **Visualizations** pane, locate the **Values** well and drag the values until the order of your chart columns matches the first image on this page. Your **Values** well will look like this:
+1. In the **Visualizations** pane, locate the **Values** well and select the values until the order of your chart columns matches the first image on this page. Your **Values** well will look like this:
 
     ![Values well](media/power-bi-visualization-tables/power-bi-table2.png)
 
-1. Pin the table to the dashboard by selecting the pin icon ![thumbtack](media/power-bi-visualization-tables/pbi_pintile.png) in the upper-right corner of the visual.
 
 ## Format the table
 
