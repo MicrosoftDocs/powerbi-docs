@@ -16,7 +16,7 @@ ms.date: 08/30/2019
 ms.author: mihart
 #As a Power BI consumer, I want to get a quick lesson on what I can do with Power BI service so that I can get up and running quickly.
 ---
-# Quickstart: learn about the Power BI capabilities for ***consumers***
+# Quickstart: learn about the Power BI capabilities for *consumers*
 In this quickstart, you'll learn how to interact with Power BI to discover data-driven business insights. This article isn't intended to be a deep dive, but rather a quick trip through many of the actions available for Power BI **consumers**.
 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
@@ -38,7 +38,9 @@ Read on to learn about these and more.
 
 ## Power BI content
 When we use the term "content" in Power BI, we're referring to reports, dashboards, and apps. These are the building blocks you'll use to explore your data and make business decisions. 
-> Note: Dashboards, reports, and apps can be viewed and shared on mobile devices too.
+
+> [!NOTE]
+> Dashboards, reports, and apps can be viewed and shared on mobile devices, too.
 
 ###  Apps
 
