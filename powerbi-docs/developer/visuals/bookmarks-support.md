@@ -170,7 +170,7 @@ if (jsonFilters
 }
 ```
 
-After that, the visual should change its internal state to reflect the current conditions. The internal state includes the data points and visualization objects (lines, rectangles, so on).
+After that, the visual should change its internal state to reflect the current conditions. The internal state includes the data points and visualization objects (lines, rectangles, and so on).
 
 > [!IMPORTANT]
 > In the report bookmarks scenario, the visual shouldn't call `applyJsonFilter` to filter the other visuals. They will already be filtered by Power BI.
