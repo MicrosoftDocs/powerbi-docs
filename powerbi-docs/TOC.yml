@@ -1360,7 +1360,7 @@
   - name: "Resources"
     items:
     - name: "Monthly gateway updates"
-      href: "https://review.docs.microsoft.com/data-integration/gateway/service-gateway-monthly-updates?branch=master"
+      href: "/data-integration/gateway/service-gateway-monthly-updates"
 - name: Administration
   items:
   - name: Overview
