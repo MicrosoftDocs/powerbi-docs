@@ -69,6 +69,8 @@ To support management of capacities with Multi-Geo through API, we have made som
 
 ## Limitations and considerations
 
+* Multi-Geo isn't available for Power BI Germany, Power BI China operated by 21Vianet, or Power BI for the US government.
+
 * Confirm that any movement you initiate between regions follows all corporate and government compliance requirements before initiating data transfer.
 
 * A cached query stored in a remote region stays in that region at rest. However, other data in transit may go back and forth between different geographies.
