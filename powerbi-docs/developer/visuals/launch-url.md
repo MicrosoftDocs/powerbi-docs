@@ -103,7 +103,7 @@ Finally, an entry in the *visual.less* file defines the style for the link eleme
 
 ### Add a toggling mechanism
 
-To add a toggling mechanism, you need to add a static object , so that the report's author can toggle the visibility of the link element (the default is set to *hidden*). For more information, see [static object tutorial](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties).
+To add a toggling mechanism, you need to add a static object so that the report's author can toggle the visibility of the link element. (The default is set to *hidden*.) For more information, see the [static object tutorial](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties).
 
 A `showHelpLink` Boolean static object was added to the *capabilities.json* file's objects entry, as shown in the following code:
 
