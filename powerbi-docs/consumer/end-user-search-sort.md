@@ -19,11 +19,11 @@ There are many ways to navigate to your content in the Power BI service. The con
 
 ## Navigation within workspaces
 
-Power BI *consumers* typically have only one workspace: **My workspace**. **My workspace** will contain if you've downloaded Microsoft samples or created or downloaded your own content.  
+Power BI *consumers* typically have only one workspace: **My workspace**. **My workspace** will contain content if you've downloaded Microsoft samples or created or downloaded your own dashboards, reports, or apps.  
 
-Within **My workspace**, Power BI service separates your content by type: dashboards, reports, workbooks, and datasets. You'll see this organization when you select a workspace. In this example, **My workspace** contains one dashboards, one report, no workbooks, and one dataset.
+Within **My workspace**, the Power BI service separates your content by type: dashboards, reports, workbooks, and datasets. You'll see this organization when you select a workspace. In this example, **My workspace** contains one dashboards, one report, no workbooks, and one dataset.
 
-![video](./media/end-user-search-sort/nav.gif)
+![video](./media/end-user-search-sort/myworkspace/myworkspace.gif)
 
 ________________________________________
 ## Navigation using the Search field
@@ -51,7 +51,7 @@ The left nav bar classifies your content in ways that help you find what you nee
 - Your apps can be found by selecting **Apps**.
 - **Home** is a single page view of your most important content and suggested content and learning sources.
 
-Additionally, you can tag content as [favorite](end-user-favorite.md) and [featured](end-user-featured.md). Pick the one dashboard or report that you expect to view most often, and set it as your *featured* content. Each time you open the Power BI service, your featured dashboard will display first. Do you have a number of dashboards and apps that you visit often? By setting them as favorites, they'll always be available from your left navbar.
+Additionally, you can tag content as [favorite](end-user-favorite.md) and [featured](end-user-featured.md). Pick the one dashboard or report that you expect to view most often, and set it as your *featured* content. Each time you open the Power BI service, your featured dashboard will display first. Do you have a number of dashboards and apps that you visit often? By setting them as favorites, they'll always be available from your left nav bar.
 
 ![Favorites flyout](./media/end-user-search-sort/power-bi-favorite.png).
 
