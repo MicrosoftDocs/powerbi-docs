@@ -8,21 +8,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 08/21/2019
 ms.author: mihart
 
 LocalizationGroup: Consumer
 ---
 # Visual types in Power BI
-You'll find visuals in reports, dashboards, apps, and Q&A. Some of these visual types are packaged with Power BI, and some are *custom visuals*. Custom visuals are created outside of Power BI and in a way that allows *report designers* to add them to Power BI reports, dashboards, and apps. 
+You'll find visuals in reports, dashboards, and Q&A. Some of these visual types are packaged with Power BI, and some are *custom visuals*. Custom visuals are created outside of Power BI and in a way that allows report *designers* to add them to Power BI reports and dashboards. 
 
-This article is an overview of the visuals that are packaged with Power BI.  These are the visuals that you'll encounter most often. 
+This article is an overview of the visuals that are packaged with the Power BI service.  These are the visuals that you'll encounter most often. For in-depth information about any of these visuals, see the [Power BI report *designer* documentation on visual types](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 > [!NOTE]
 > To learn about custom visuals, search for them in the **Power BI visuals** section of [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). For each visual, you'll find a description, creator information, and either screenshots or a video. 
 
 ## List of visuals available in Power BI
-All of these visuals can be found in Power BI apps, dashboards, reports, and [specified in Q&A](end-user-q-and-a.md). To learn how to interact with visuals, see [Interact with visuals in reports, dashboards, and apps](end-user-visualizations.md)
+All of these visuals can be found in Power BI dashboards and reports, and [specified in Q&A](end-user-q-and-a.md). To learn how to interact with visuals, see [Interact with visuals in reports, dashboards, and apps](end-user-visualizations.md)
 
 ### Area charts: Basic (Layered) and Stacked
 ![area chart](media/end-user-visual-type/basic-area-map-small.png)
@@ -72,14 +72,6 @@ Funnels help visualize a process that has stages, and items flow sequentially fr
 For example, a sales funnel that tracks customers through stages: Lead > Qualified Lead > Prospect > Contract > Close. At a glance, the shape of the funnel conveys the health of the process you're tracking.
 Each funnel stage represents a percentage of the total. So, in most cases, a funnel chart is shaped like a funnel -- with the first stage being the largest, and each subsequent stage smaller than its predecessor. A pear-shaped funnel is also useful -- it can identify a problem in the process. But typically, the first stage, the "intake" stage, is the largest.
 
-Funnel charts are a great choice:
-- when the data is sequential and moves through at least 4 stages.
-- when the number of "items" in the first stage is expected to be greater than the number in the final stage.
-- to calculate potential (revenue/sales/deals/etc.) by stages.
-- to calculate and track conversion and retention rates.
-- to reveal bottlenecks in a linear process.
-- to track a shopping cart workflow.
-- to track the progress and success of click-through advertising/marketing campaigns.
 
 ### Gauge charts
 ![gauge chart](media/end-user-visual-type/gauge-m.png)
@@ -150,7 +142,7 @@ Pie charts show the relationship of parts to a whole.
 
 Ribbon charts show which data category has the highest rank (largest value). Ribbon charts are effective at showing rank change, with the highest range (value) always displayed on top for each time period.
 
-### Scatter, Bubble, and Dot Plot charts
+### Scatter, bubble, and dot plot charts
 
 
 A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points may be distributed evenly or unevenly across the horizontal axis, depending on the data.
@@ -159,7 +151,11 @@ A scatter chart always has two value axes to show one set of numerical data alon
 
 A bubble chart replaces data points with bubbles, with the bubble size representing an additional dimension of the data.
 
-A dot plot chart is similar to a bubble chart and scatter chart except that it can plot numerical or categorical data along the X axis.
+
+
+A dot plot chart is similar to a bubble chart and scatter chart except that it can plot numerical or categorical data along the X axis. This example happens to use squares instead of circles and plots sales along the X axis.
+
+![dot plot chart](media/end-user-visual-type/power-bi-dot-plot-squares.png)
 
 ### Scatter-high density
 ![high density scatter](media/end-user-visual-type/density-scatter.png)
@@ -216,7 +212,7 @@ A waterfall chart shows a running total as values are added or subtracted. It's 
 The columns are color coded so you can quickly tell increases and decreases. The initial and the final value columns often start on the horizontal axis, while the intermediate values are floating columns. Because of this "look", waterfall charts are also called bridge charts.
 
 Waterfall charts are a great choice:
-- when you have changes for the measure across time series or different categories
+- when you have changes for the measure across time or across different categories
 - to audit the major changes contributing to the total value
 - to plot your company's annual profit by showing various sources of revenue and arrive at the total profit (or loss).
 - to illustrate the beginning and the ending headcount for your company in a year
