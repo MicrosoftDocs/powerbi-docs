@@ -52,7 +52,7 @@ What is [AppSource](developer/office-store.md)? It's the place you can find apps
 Power BI certified visuals are marketplace visuals that have passed additional rigorous quality testing and are supported in additional scenarios, such as [email subscriptions](service-report-subscribe.md), and [export to PowerPoint](service-publish-to-powerpoint.md).
 To see the list of certified Power BI visuals or to submit your own, see [Certified Power BI visuals](power-bi-custom-visuals-certified.md).
 
-Are you a Web developer and interested in creating your own visualizations and adding them to AppSource? See [Developing a Power BI custom visual](developer/custom-visual-develop-tutorial.md) and learn how to [publish Power BI visuals to AppSource](developer/office-store.md).
+Are you a Web developer and interested in creating your own visualizations and adding them to AppSource? See [Developing a Power BI custom visual](developer/visuals/custom-visual-develop-tutorial.md) and learn how to [publish custom visuals to AppSource](developer/office-store.md).
 
 ### Import a custom visual from a file
 
