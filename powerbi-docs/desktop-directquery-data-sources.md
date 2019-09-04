@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/03/2019
+ms.date: 09/04/2019
 LocalizationGroup: Connect to data
 ---
 
@@ -24,6 +24,7 @@ The following data sources support DirectQuery in Power BI:
 * Azure HDInsight Spark
 * [Azure SQL Database](service-azure-sql-database-with-direct-connect.md)
 * [Azure SQL Data Warehouse](service-azure-sql-data-warehouse-with-direct-connect.md)
+* Denodo
 * Google BigQuery
 * HDInsight Interactive Query
 * IBM DB2 (Microsoft Provider))

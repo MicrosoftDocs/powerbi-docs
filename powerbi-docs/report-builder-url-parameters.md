@@ -68,12 +68,12 @@ You can use the following parameters as part of a URL to configure the look and 
 ### Report commands (`rdl:`) 
 
 **Export format**
-Specifies the format in which to render and export a report. Values include: 
-- PPTX 
+Specifies the format in which to render and export a report. Available values are: 
+- PPTX (PowerPoint)
 - MHTML 
 - IMAGE 
-- EXCEL 
-- WORD 
+- EXCELOPENXML (EXCEL) 
+- WORDOPENXML (WORD) 
 - CSV 
 - PDF 
 - XML 
