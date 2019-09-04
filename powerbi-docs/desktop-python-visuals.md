@@ -97,11 +97,11 @@ Let's create a scatter plot to see if there's a correlation between age and weig
 
 1. Under **Paste or type your script code here**, enter this code:
 
-```python
-import matplotlib.pyplot as plt 
-dataset.plot(kind='scatter', x='Age', y='Weight', color='red')
-plt.show() 
-```  
+   ```python
+   import matplotlib.pyplot as plt 
+   dataset.plot(kind='scatter', x='Age', y='Weight', color='red')
+   plt.show() 
+   ```  
    Your Python script editor pane should now look like this:
 
    ![](media/desktop-python-visuals/python-visuals-11.png)
