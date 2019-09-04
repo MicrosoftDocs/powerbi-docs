@@ -125,7 +125,7 @@ A filled map uses shading or tinting or patterns to display how a value differs 
 ### Maps: Shape maps
 ![shape map](media/end-user-visual-type/power-bi-shape-map2.png)
 
-Shape maps compare regions on a map using color. Unlike the M\map visual, shape maps can't show precise geographical locations of data points on a map. Instead, its main purpose is to show relative comparisons of regions on a map by coloring them differently.
+Shape maps compare regions on a map using color. A shape map can't show precise geographical locations of data points on a map. Instead, its main purpose is to show relative comparisons of regions on a map by coloring them differently.
 
 ### Matrix
 ![matrix](media/end-user-visual-type/matrix.png)

@@ -31,7 +31,7 @@ It's easy to change the sort from a category (store name) to a value (sales per 
 > Not all visuals can be sorted. For example, the following visuals cannot be sorted: treemap, map, filled map, scatter, gauge, card, waterfall.
 
 ## Saving changes you make to sort order
-Power BI reports retain the filters, slicers, sorting, and other data view changes that you make. So if you navigate away from a report, and return later, your changes are saved.  If you want to revert your changes back to the report designer's settings, select **Reset to default** from the top menubar. 
+Power BI reports retain the filters, slicers, sorting, and other data view changes that you make. So if you navigate away from a report, and return later, your changes are saved.  If you want to revert your changes back to the report designer's settings, select **Reset to default** from the upper menu bar. 
 
 ![persistent sorting](media/end-user-change-sort/power-bi-reset.png)
 
