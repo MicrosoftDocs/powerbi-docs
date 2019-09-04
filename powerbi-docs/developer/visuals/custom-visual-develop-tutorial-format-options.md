@@ -37,6 +37,7 @@ In this tutorial, you learn how to:
     ```json
     "objects": {},
     ```
+
     ![Add objects](media/custom-visual-develop-tutorial-format-options/add-objects.png)
 
 4. Save the **capabilities.json** file.
@@ -100,11 +101,11 @@ You can add custom properties to enable configuring the color of the circle, and
 
     ```typescript
     export class CircleSettings {
-     public circleColor: string = "white";
-     public circleThickness: number = 2;
+        public circleColor: string = "white";
+        public circleThickness: number = 2;
     }
     export class VisualSettings extends DataViewObjectsParser {
-     public circle: CircleSettings = new CircleSettings();
+        public circle: CircleSettings = new CircleSettings();
     }
     ```
 
@@ -116,11 +117,20 @@ You can add custom properties to enable configuring the color of the circle, and
 
 7. Open the **visual.ts** file.
 
-8. In the **Visual** class, add the following property.
+8. In the **visual.ts** file,
+
+    import `VisualSettings` class
+
+    ```typescript
+    import { VisualSettings } from "./settings";
+    ```
+
+    and in the **Visual** class add the following property:
 
     ```typescript
     private visualSettings: VisualSettings;
     ```
+
     This property stores a reference to the **VisualSettings** object, describing the visual settings.
 
     ![Add visual class](media/custom-visual-develop-tutorial-format-options/visual-class-add-on.png)
@@ -129,11 +139,11 @@ You can add custom properties to enable configuring the color of the circle, and
 
     ```typescript
     public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration {
-     const settings: VisualSettings = this.visualSettings ||
-    VisualSettings.getDefault() as VisualSettings;
-     return VisualSettings.enumerateObjectInstances(settings, options);
+        const settings: VisualSettings = this.visualSettings || <VisualSettings>VisualSettings.getDefault();
+        return VisualSettings.enumerateObjectInstances(settings, options);
     }
     ```
+
     This method is used to populate the formatting options.
 
     ![Visual settings object](media/custom-visual-develop-tutorial-format-options/visual-settings-object.png)
@@ -144,9 +154,9 @@ You can add custom properties to enable configuring the color of the circle, and
     this.visualSettings = VisualSettings.parse<VisualSettings>(dataView);
 
     this.visualSettings.circle.circleThickness = Math.max(0, this.visualSettings.circle.circleThickness);
-
     this.visualSettings.circle.circleThickness = Math.min(10, this.visualSettings.circle.circleThickness);
     ```
+
     This code retrieves the format options. It adjusts any value passed into the **circleThickness** property, converting it to 0 if negative, or 10 if it's a value greater than 10.
 
     ![Radius variable](media/custom-visual-develop-tutorial-format-options/radius.png)
@@ -259,4 +269,4 @@ For tips about debugging your custom visual, see the [debugging guide](https://m
 
 ## Next steps
 
-You can list your newly developed visual for others to use by submitting it to the **AppSource**. For more information on this process reference [Publish Power BI visuals to AppSource](office-store.md).
+You can list your newly developed visual for others to use by submitting it to the **AppSource**. For more information on this process reference [Publish custom visuals to AppSource](office-store.md).
