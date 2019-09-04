@@ -18,20 +18,19 @@ This article describes how to create an SSL certificate.
 To generate the certificate by using the PowerShell `New-SelfSignedCertificate` cmdlet on Windows 8 or later, run the following command:
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 The tool requires an OpenSSL installation for Windows 7. The OpenSSL utility must be available from the command line.
 
 To install OpenSSL, go to the [OpenSSL](https://www.openssl.org) or [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries) site.
 
-
-
 ## Create a certificate (Mac OS X)
 
 Usually, the OpenSSL utility is available in the Linux or Mac OS X operating system.
 
 You can also install the utility by running either of the following commands:
+
 * From the *Brew* package manager:
 
     ```cmd
@@ -48,7 +47,7 @@ You can also install the utility by running either of the following commands:
 After you install the OpenSSL utility for generating a new certificate, run the following command:
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 ## Create a certificate (Linux)
@@ -76,7 +75,7 @@ If the OpenSSL utility isn't available in your Linux operating system, you can i
 If the OpenSSL utility is already available in your operating system, generate a new certificate by running the following command:
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 Or you can get the OpenSSL utility by going to the [OpenSSL](https://www.openssl.org) or [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries) site.
