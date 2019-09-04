@@ -370,8 +370,8 @@ button.addEventListener("click", (mouseEvent) => {
 
 * [Read how to use selections for bind visual properties to data points](objects-properties.md#objects-selector)
 
-* [Read how to handle selections on bookmarks switching](bookmarks-support.md#visuals-with-selections)
+* [Read how to handle selections on bookmarks switching](bookmarks-support.md#visuals-with-selection)
 
-* [Read how to add context menu for visuals data points](bookmarks-support.md#visuals-with-selections)
+* [Read how to add context menu for visuals data points](context-menu.md)
 
 * [Read how to use InteractivityUtils to add selections into Power BI Visuals](utils-interactivity-selections.md)
