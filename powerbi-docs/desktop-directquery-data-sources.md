@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 09/03/2019
 LocalizationGroup: Connect to data
 ---
 
@@ -26,12 +26,13 @@ The following data sources support DirectQuery in Power BI:
 * [Azure SQL Data Warehouse](service-azure-sql-data-warehouse-with-direct-connect.md)
 * Google BigQuery
 * HDInsight Interactive Query
-* IBM DB2 database
+* IBM DB2 (Microsoft Provider))
 * IBM Netezza
 * Impala (version 2.x)
 * MarkLogic
 * Oracle Database (version 12 and above)
 * Oracle Essbase
+* PostgreSQL
 * SAP Business Warehouse Application Server
 * SAP Business Warehouse Message Server
 * SAP HANA
@@ -60,15 +61,24 @@ The following table specifies whether an **On-premises data gateway** is require
 | Azure SQL Data Warehouse |No |
 | Google BigQuery |No |
 | IBM Netezza |Yes |
+| IBM DB2 (IBM Provider) |Yes |
+| IBM DB2 (Microsoft Provider) |No |
+| IBM Informix Database |No |
 | Impala (version 2.x) |Yes |
+| MySQL |Yes |
+| ODBC |Yes |
 | Oracle Database |Yes |
+| PostgreSQL |Yes |
 | SAP Business Warehouse Application Server |Yes |
 | SAP Business Warehouse Message Server |Not yet supported in the **Power BI service** |
 | SAP HANA |Yes |
 | Snowflake |Yes |
 | Spark (beta), version 0.9 and later |Yes |
 | SQL Server |Yes |
+| Sybase |Yes |
 | Teradata Database |Yes |
+| Vertica |Yes |
+
 
 ## Single sign-on (SSO) for DirectQuery sources
 
