@@ -33,7 +33,7 @@ In the Power BI service, reports keep any changes you make in the **Filters** pa
 
 To reset the **Filters** pane to the designer's defaults, select **Reset to default** from the upper menu bar.
 
-![Screenshot of the Reset to default icon.](media/end-user-report-filter/power-bi-reset-to-default.png) 
+![Screenshot of the Reset to default icon.](media/end-user-report-filter/power-bi-reset-icon.png) 
 
 ## View all the filters for a report page
 
@@ -109,7 +109,9 @@ If you want to back out of all changes you've made to the filters, select **Rese
 
 ### Clear a filter
 
-If there's just one filter that you'd like to set to **(All)**, clear it by selecting the eraser icon ![Screenshot of the Eraser icon.](media/end-user-report-filter/power-bi-eraser-icon.png) next to the filter name.
+To reset a filter to (All), clear it by selecting the eraser icon next to the filter name.
+
+![Screenshot of the Eraser icon.](media/end-user-report-filter/power-bi-eraser.png)
   
 <!--  too much detail for consumers
 
