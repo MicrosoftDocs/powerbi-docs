@@ -16,6 +16,10 @@ LocalizationGroup: Reports
 
 This article offers guidance for building fast and reliable reports in Power BI.  
 
+## Choose an appropriate storage mode: Import, DirectQuery
+
+In most cases Import mode is the best choice as it offers the highest speed by leveraging locally cached in-memory data that is compressed using columnar storage. Import mode also allows full DAX capability. Consider DirectQuery (and Composite models) when the source data volume is too large to fit into your Power BI capacity. DirectQuery is also useful when you need to fetch the latest data from the source each time a report is loaded. If you do not have these requirements and users only need to see data that is updated a few times per day or less (e.g. from a corporate data warehouse), Import is highly recommended. In DirectQuery mode, users may try to refresh the report without realising they are fetching exactly same data from the source.      
+
 ## Use filters to limit report visuals to display only what’s needed 
 
 The more data that a visual needs to display, the slower that visual is to load. While this principle seems obvious, it's easy to forget. For example: suppose you have a large dataset. Atop of that dataset, you build a report with a table of the table. End users use slicers on the page to get to the rows they want – typically, they’re only interested in a few dozen rows.
@@ -52,7 +56,7 @@ When deploying Power BI reports built on DirectQuery and live connection, try ou
 ## DirectQuery best practices
 
 The following section describes general best practices for connecting via DirectQuery.
-  
+
 ### DB design guidance
 
 - Push calculated columns and measures to the source where possible. The closer to the source, the higher the likelihood of performance.
