@@ -372,7 +372,7 @@ If you encounter any problems, follow these steps to troubleshoot the gsskrb5 in
 
 ### Add registry entries to the gateway machine
 
-Add required registry entries to the registry of the machine that the gateway is installed on. Here are the commands to run:
+Add required registry entries to the registry of the machine that the gateway is installed on, as well as to machines intended to connect from Power BI Desktop. Here are the commands to run:
 
 1. REG ADD HKLM\SOFTWARE\Wow6432Node\SAP\gsskrb5 /v ForceIniCredOK /t REG\_DWORD /d 1 /f
 

@@ -1,14 +1,13 @@
 ---
-title: View a report in Power BI
-description: Reports in Power BI
+title: Reports in the Power BI service
+description: Reports in the Power BI service, for consumers
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 08/24/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ---
@@ -17,9 +16,9 @@ LocalizationGroup: Reports
 
 A Power BI report is a multi-perspective view into a dataset, with visuals that represent different findings and insights from that dataset.  A report can have a single visual or pages full of visuals. Depending on your job role, you may be someone who *designs* reports. You also may be someone who *consumes* or uses reports.
 
-![Screenshot of a report page.](./media/end-user-reports/power-bi-report.png)
+![Screenshot of a report page.](./media/end-user-reports/power-bi-reports.png)
 
-This report has four pages (or tabs) and you're currently viewing the **Sentiment** page. On this page are five different visuals and a page title.
+This report has six pages (or tabs) and you're currently viewing the **Sentiment** page. On this page are five different visuals and a page title. The *Filters* pane shows us one filter applied to all report pages. To collapse the Filters pane, select the arrow (**>**).
 
 If you're new to Power BI, you can get a good foundation by reading [Basic concepts for the Power BI service consumers](end-user-basic-concepts.md). Reports are available for viewing, sharing, and annotating on mobile devices. For more info, see [Explore reports in the Power BI mobile apps](mobile/mobile-reports-in-the-mobile-apps.md).
 
@@ -37,6 +36,8 @@ As you explore and interact with your content: filtering, slicing, subscribing, 
 ### Save your changes or revert to the default settings
 
 That doesn't mean you can't save your changes. You can, but those changes only affect your view of the content. To revert to the original default view of the report, select **Reset to default**.
+
+![Screenshot of the Revert to default icon.](./media/end-user-reports/power-bi-reset.png)
 
 ## Dashboards versus reports
 
@@ -71,6 +72,5 @@ Or you may be a *consumer*, someone who receives reports from others. You'll wan
 
 ## Next steps
 
-[What is Power BI?](../power-bi-overview.md)
-
-[Basic concepts for the Power BI service consumers](end-user-basic-concepts.md)
+[Open and view a report](end-user-report-open.md)    
+[Dashboards in the Power BI service](end-user-dashboards.md)
