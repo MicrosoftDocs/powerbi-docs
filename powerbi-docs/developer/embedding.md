@@ -1,8 +1,8 @@
 ---
 title: Embedded analytics with Power BI
 description: Power BI offers APIs to use embedded analytics for your dashboards and reports into applications. Learn more about embedding with Power BI both in a PaaS environment and a SaaS environment using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
-author: kesharab
-ms.author: kesharab
+author: KesemSharabi
+ms.author: KesemSharabi
 manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
