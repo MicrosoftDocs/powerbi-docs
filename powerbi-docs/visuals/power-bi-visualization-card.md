@@ -24,7 +24,7 @@ Sometimes a single number is the most important thing you want to track in your 
 
 ## Prerequisite
 
-This tutorial uses the [Retail Analysis sample PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) for the first option and the [Opportunity Analysis sample PBIX file](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix) for the second.
+This tutorial uses the [Retail Analysis sample PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
 
 1. From the upper left section of the menubar, select **File** \> **Open**
    
@@ -36,7 +36,7 @@ This tutorial uses the [Retail Analysis sample PBIX file](http://download.micros
 
 ## Option 1: Create a card using the report editor
 
-The first method to create a card is to use the report editor in Power BI Desktop. This option uses the **Retail Analysis sample PBIX file**.
+The first method to create a card is to use the report editor in Power BI Desktop.
 
 1. Start on a blank report page and select the **Store** \> **Open store count** field.
 
@@ -51,7 +51,7 @@ The first method to create a card is to use the report editor in Power BI Deskto
 You have now successfully created a card with the report editor. Below is the second option for creating a card using the Q&A question box.
 
 ## Option 2: Create a card from the Q&A question box
-The Q&A question box is another option for you to use when creating a card. The Q&A question box is available in Power BI Desktop report view. This example uses the **Opportunity Analysis sample PBIX file**.
+The Q&A question box is another option for you to use when creating a card. The Q&A question box is available in Power BI Desktop report view.
 
 1. Start on a blank report page
 

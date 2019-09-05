@@ -14,7 +14,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# ArcGIS maps in Power BI service and Power BI Desktop by Esri
+# ArcGIS maps in Power BI Desktop by Esri
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -50,7 +50,8 @@ ArcGIS Maps for Power BI is provided by Esri (www.esri.com). Your use of ArcGIS 
 
 
 ### Enable the ArcGIS map ***in Power BI Desktop (app.powerbi.com)***
-This tutorial uses the PBIX [Retail Analysis sample .PBIX file](../sample-retail-analysis.md). To enable **ArcGIS Maps for Power BI**:
+This tutorial uses the PBIX [Retail Analysis sample .PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix
+). To enable **ArcGIS Maps for Power BI**:
 
 1. From the upper left section of the menubar, select **File** \> **Open**
    

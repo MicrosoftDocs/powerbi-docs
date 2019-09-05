@@ -51,6 +51,10 @@ This tutorial uses the [Financial sample Excel file](http://download.microsoft.c
 
 1. Open the **Financial sample Excel file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
+1. Select **financials** and **Sheet1**
+
+1. Click **Load**
+
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
 

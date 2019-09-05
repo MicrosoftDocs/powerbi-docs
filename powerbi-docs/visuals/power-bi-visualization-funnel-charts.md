@@ -61,7 +61,7 @@ This tutorial uses the [Opportunity Analysis sample PBIX file](http://download.m
 
 
 ## Create a basic funnel chart
-Watch this video to see Will create a Funnel chart using the Sales and Marketing sample.
+Watch this video to see Will create a funnel chart using the Sales and Marketing sample.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qKRZPBnaUXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -71,6 +71,8 @@ Now create your own funnel chart that shows the number of opportunities we have 
 1. Start on a blank report page and select the **SalesStage** \> **Sales Stage** field.
    
     ![select Sales Stage](media/power-bi-visualization-funnel-charts/funnelselectfield-new.png)
+
+1. Select the funnel icon ![funnel chart icon](media/power-bi-visualization-funnel-charts/power-bi-funnel-icon.png) to convert the column chart to a funnel chart.
 
 2. From the **Fields** pane, select **Fact** \> **Opportunity Count**.
    
