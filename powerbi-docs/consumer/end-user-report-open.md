@@ -4,16 +4,15 @@ description: This topic shows Power BI consumers and end users had to open and v
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 8/28/2018
+ms.date: 08/28/2018
 ms.author: mihart
 #This article teaches consumers how to find and open a report whether it has been shared directly or shared via an app, so that the consumer can view and interact with the report to make business decisions.
 ---
-# View a report in Power BI service for *consumers*
+# View a report in the Power BI service for *consumers*
 A report is one or more pages of visuals. Reports are created by Power BI *designers* and [shared with *consumers* directly](end-user-shared-with-me.md) or as part of an [app](end-user-apps.md). 
 
 There are many different ways to open a report and we'll show you two of them: open from Home and open from a dashboard. 
@@ -27,7 +26,7 @@ Let's open a report that's been shared with you directly and then open a report 
    ![Home page](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### Open a report that has been shared with you
-Power BI *designers* can share a report directly with you. Content that is shared this way shows up in the **Shared with me** container on your nav bar and in the **Shared with me** section of your Home canvas.
+Power BI *designers* can share an individual report directly with you via a link in email or by adding it to your Power BI Home. Content that is shared this way shows up in the **Shared with me** container on your nav bar and in the **Shared with me** section of your Home canvas.
 
 1. Open the Power BI service (app.powerbi.com).
 
@@ -41,13 +40,13 @@ Power BI *designers* can share a report directly with you. Content that is share
 
 4. Simply select the report *card* to open the report.
 
-   ![report page](./media/end-user-report-open/power-bi-report-open.png)
+   ![report page](./media/end-user-report-open/power-bi-open.png)
 
 5. Notice the tabs along the left side.  Each tab represents a report *page*. We currently have the *Growth Opportunity* page open. Select the *YTD Category* tab to open that report page instead. 
 
    ![report page tabs](./media/end-user-report-open/power-bi-ytd.png)
 
-6. Right now we're seeing the entire report page. To change the display (zoom) of the page, select the View dropdown from the upper right corner (**>**) and choose **Actual size**.
+6. Right now we're seeing the entire report page. To change the display (zoom) of the page, select the View dropdown from the upper right corner and choose **Actual size**.
 
    ![change zoom](./media/end-user-report-open/power-bi-fit-new.png)
 
