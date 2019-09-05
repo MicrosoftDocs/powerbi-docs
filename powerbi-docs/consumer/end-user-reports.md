@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/24/2019
+ms.date: 09/04/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ---
@@ -63,9 +63,9 @@ Depending on your role, you may be a *designer*, someone who creates reports for
 Or you may be a *consumer*, someone who receives reports from others. You'll want to learn how to understand and interact with the reports. If you're a report *consumer*, these links are for you:
 
 * Start with a [tour of the Power BI service](end-user-basic-concepts.md) so you know where to find reports and report tools.
-* Learn how to [open a report](end-user-report-open.md) and all the interaction available in [Reading view](end-user-reading-view.md).
+* Learn how to [open a report](end-user-report-open.md) and all the [interactions available to consumers](end-user-reading-view.md).
 * Get comfortable with reports by taking a tour of one of our [samples](../sample-tutorial-connect-to-the-samples.md).  
-* To see which dataset the report is using and which dashboards have tiles pinned from the report, see [View related content in the Power BI service](end-user-related.md).
+* To see which dataset the report is using and which dashboards are displaying visuals from the report (*pins*), see [View related content in the Power BI service](end-user-related.md).
 
 > [!TIP]
 > If you didn’t find what you’re looking for here, use the Table of Contents to the left to browse all *Report* articles.
