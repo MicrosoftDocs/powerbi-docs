@@ -83,7 +83,7 @@ There are certain limitations to using **SSAS MD**:
 ## Supported Features of SSAS MD in Power BI Desktop
 The following features of SSAS MD are supported in Power BI Desktop:
 
-* Consumption of the following elements are supported in this release of **SSAS MD** (you can get [more information](https://msdn.microsoft.com/library/jj969574.aspx) about these features):
+* Consumption of the following elements are supported in this release of **SSAS MD** (you can get [more information](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/understanding-power-view-for-multidimensional-models?view=sql-server-2014) about these features):
   * Display folders
   * KPI Trends
   * Default Members

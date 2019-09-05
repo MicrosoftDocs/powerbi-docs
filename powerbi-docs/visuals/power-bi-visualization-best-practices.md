@@ -818,7 +818,7 @@ If Line charts are the standard for looking at data over time, Bar charts are th
 
 For more details on Bar and Column charts:
 
-* [Data Visualization 101: Bar Charts](http://blog.newscred.com/article/data-visualization-101-bar-charts)
+* [Data Visualization 101: Bar Charts](https://insights.newscred.com/data-visualization-101-bar-charts/)
 
 * [Data Visualization Catalog: Bar Chart](http://www.datavizcatalogue.com/methods/bar_chart.html#.VYV-hY3bLJw)
 
