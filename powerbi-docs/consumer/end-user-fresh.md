@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerbi
 ms.custom:  
 ms.subservice: powerbi-consumer
-ms.topic: overview
+ms.topic: conceptual
 ms.date: 02/08/2019
 ms.author: mihart
 

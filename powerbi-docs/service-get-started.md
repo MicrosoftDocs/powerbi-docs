@@ -16,7 +16,7 @@ LocalizationGroup: Get started
 
 ---
 # Tutorial: Get started with the Power BI service
-This tutorial helps you get started with the *Power BI service*. The Power BI service is cloud based. It supports light report editing and collaboration for teams and organizations. You can connect to data sources in the Power BI service, but modeling is more limited than in Power BI Desktop. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md).
+This tutorial helps you get started with the *Power BI service*. The Power BI service is cloud based, and supports light report editing and collaboration for teams and organizations. You can connect to data sources in the Power BI service, though modeling is more limited than in Power BI Desktop. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md).
 
 ![Power BI service home](media/service-get-started/power-bi-service-get-started-home.png)
 
@@ -44,7 +44,7 @@ After you have an account, enter *app.powerbi.com* in your browser to open the P
 
 Often when you want to create a Power BI report, you start in Power BI Desktop. This time, we're going to start from scratch creating a report in the Power BI service.
 
-Here's an example of getting data from a CSV file. Want to follow along with this tutorial? [Download the Financial Sample CSV file](http://go.microsoft.com/fwlink/?LinkID=521962).
+In this tutorial, we get data from a CSV file. Want to follow along? [Download the Financial Sample CSV file](http://go.microsoft.com/fwlink/?LinkID=521962).
 
 1. [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? No worries, you can sign up for a free trial.
 2. Power BI opens in your browser. Select **Get data** at the bottom of the left navigation bar.
@@ -60,7 +60,7 @@ Here's an example of getting data from a CSV file. Want to follow along with thi
 
 5. Browse to the file on your computer, and choose **Open**.
 
-5. For this tutorial, we'll select **Import** to add the Excel file as a dataset, which we can then use to create reports and dashboards. If you select **Upload**, the entire Excel workbook is uploaded to Power BI, where you can open and edit it in Excel online.
+5. For this tutorial, we select **Import** to add the Excel file as a dataset, which we can then use to create reports and dashboards. If you select **Upload**, the entire Excel workbook is uploaded to Power BI, where you can open and edit it in Excel online.
    
    ![Choose Import](media/service-get-started/power-bi-import.png)
 6. When your dataset is ready, select **Datasets**, then select **Create report** next to the dataset **Financial sample** to open the report editor. 
@@ -71,16 +71,14 @@ Here's an example of getting data from a CSV file. Want to follow along with thi
 
     ![Blank report canvas](media/service-get-started/power-bi-service-blank-report.png)
 
-7. Notice there's an option for **Reading view** on the top navigation bar. Because you have this option, that means you're currently in Editing view. 
+7. Notice there's an option for **Reading view** on the top navigation bar. Because you have this option, that means you're currently in Editing view. A great way to get familiar with the report editor is to [take a tour](service-the-report-editor-take-a-tour.md).
 
     ![Reading view option](media/service-get-started/power-bi-reading-view.png)
 
     While in Editing view, you can create and modify your reports, because you're the *owner* of the report. That is, you're a *creator*. When you share your report with colleagues, they can only interact with the report in Reading view; your colleagues are *consumers*. Learn more about [Reading view and Editing view](consumer/end-user-reading-view.md).
-    
-    A great way to get familiar with the report editor is to [take a tour](service-the-report-editor-take-a-tour.md).
- 
 
-## Step 2: Start exploring your dataset
+
+## Step 2: Create a chart in a report
 Now that you've connected to data, start exploring.  When you've found something interesting, you can create a dashboard to monitor it and see how it changes over time. Let's see how that works.
     
 1. In the report editor, we start in the **Fields** pane on the right side of the page to build a visualization. Select the  **Gross Sales** and **Date** checkboxes.
@@ -97,11 +95,11 @@ Now that you've connected to data, start exploring.  When you've found something
    
    ![Pin icon](media/service-get-started/pinnew.png)
 
-4. Because this report is new, you're prompted to save it before you can pin a visualization to a dashboard. Give your report a name (for example, *Sales over time*), and then select **Save and continue**. 
+4. Because this report is new, you're prompted to save it before you can pin a visualization to a dashboard. Give your report a name (for example, *Sales over time*), and then select **Save**. 
    
    ![Save report dialog](media/service-get-started/pbi_getstartsaveb4pinnew.png)
    
-5. Pin the line chart to a new dashboard and name it *Financial sample for tutorial*. 
+5. Select **New dashboard** and name it *Financial sample for tutorial*. 
    
    ![Name the report](media/service-get-started/power-bi-pin.png)
    
@@ -111,21 +109,37 @@ Now that you've connected to data, start exploring.  When you've found something
    
     ![Pinned to dashboard dialog](media/service-get-started/power-bi-pin-success.png)
 
-7. Select **Go to dashboard** to see the line chart that you pinned as a tile to your new dashboard. Make your dashboard even better by adding more visualization tiles and [renaming, resizing, linking, and repositioning your tiles](service-dashboard-edit-tile.md).
+7. Select **Go to dashboard** to see your new dashboard with the line chart that you pinned to it as a tile. 
    
    ![Dashboard with visualization pinned](media/service-get-started/power-bi-new-dashboard.png)
    
 8. Select the new tile on your dashboard to return to the report. Power BI returns you to the report editor in Reading view. To switch back to Editing view, select **Edit report** from the top navigation bar. After you're in Editing view, you can continue to explore and pin tiles. 
 
-## Step 3:  Continue the exploration with Q&A (natural language querying)
-1. For a quick exploration of your data, ask a question in the Q&A box. The Q&A question box is located at the top of your dashboard (**Ask a question about your data**) and in the top navigation bar in your report (**Ask a question**). For example, type *what segment had the most revenue* in the Q&A box.
+## Step 3: Explore with Q&A (natural-language querying)
+
+For a quick exploration of your data, ask a question in the Q&A question box. The Q&A box is located at the top of your dashboard (**Ask a question about your data**) and in the top navigation bar in your report (**Ask a question**).
+
+1. When you click in the Q&A box, it automatically offers a number of suggestions.
+
+    > [!NOTE]
+    > If you don't see the suggestions, turn on **New Q&A experience**.
    
    ![Q&A canvas](media/service-get-started/powerbi-qna.png)
 
-2. Q&A searches for an answer and presents it in the form of a visualization. Select the pin icon ![Pin icon](media/service-get-started/pbi_pinicon.png) to show this visualization on your dashboard.
-3. Pin the visualization to the **Financial Sample for tutorial** dashboard.
+2. Some of the suggestions return a single value. For example, select **maximum sale**.
+
    
-    ![Pin to dashboard dialog](media/service-get-started/power-bi-pin2.png)
+1. Q&A searches for an answer and presents it in the form of a visualization. Select the pin icon ![Pin icon](media/service-get-started/pbi_pinicon.png) to show this visualization on the Financial sample for tutorial dashboard.
+1. Scroll down in the **Questions to get you started** and select **total gross sale by month**. 
+
+
+1. Place the cursor after *by month* in the Q&A box and type *as line*. Select **line (Visualization Type)**. 
+
+
+
+1. Pin the line chart to the **Financial Sample for tutorial** dashboard, too, and select **Go to dashboard**.
+   
+    
 
 4. Return to your dashboard, where you see the new tile.
 
@@ -145,6 +159,5 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Connect to the online services you use with Power BI](service-connect-to-services.md)
+Make dashboards even better by adding more visualization tiles and [renaming, resizing, linking, and repositioning them](service-dashboard-edit-tile.md).
 
