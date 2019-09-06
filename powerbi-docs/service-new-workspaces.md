@@ -69,10 +69,9 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 | Allow others to reshare items. |  X | X  |   |   |
 | Create, edit, and delete content in the workspace.  |  X | X  | X  |   |
 | Publish reports to the workspace, delete content.  |  X | X  | X  |   |
-| View an item. |  X | X  | X  | X  |
 | Create a report in another workspace based on a dataset in this workspace. |  X | X  | X  | X <sup>1</sup>  |
 | Copy a report. | X | X | X | X <sup>1</sup> |
-| View an item. |  X | X  | X  | X  |
+| View and interact with an item. |  X | X  | X  | X  |
 
 **1** Requires a Power BI Pro license and [Build permission for datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
  
