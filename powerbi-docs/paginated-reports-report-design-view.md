@@ -7,7 +7,7 @@ manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: overview
+ms.topic: conceptual
 ms.date: 11/05/2018
 ---
 
