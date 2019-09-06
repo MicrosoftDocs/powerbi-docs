@@ -73,7 +73,7 @@ In this tutorial, we get data from a CSV file. Want to follow along? [Download t
 
 7. Notice there's an option for **Reading view** on the top navigation bar. Because you have this option, that means you're currently in Editing view. A great way to get familiar with the report editor is to [take a tour](service-the-report-editor-take-a-tour.md).
 
-    ![Reading view option](media/service-get-started/power-bi-reading-view.png)
+    ![Reading view option](media/service-get-started/power-bi-service-reading-view.png)
 
     While in Editing view, you can create and modify your reports, because you're the *owner* of the report. That is, you're a *creator*. When you share your report with colleagues, they can only interact with the report in Reading view; your colleagues are *consumers*. Learn more about [Reading view and Editing view](consumer/end-user-reading-view.md).
 
@@ -111,15 +111,17 @@ Now that you've connected to data, start exploring.  When you've found something
    
    ![Dashboard with visualization pinned](media/service-get-started/power-bi-service-dashboard-tile.png)
    
-8. Select the new tile on your dashboard to return to the report. Power BI returns you to the report in Reading view. To switch back to Editing view, select the ellipsis (...) in the the top navigation bar > **Edit**. Back in Editing view, you can continue to explore and pin tiles.
+8. Select the new tile on your dashboard to return to the report. Power BI returns you to the report in Reading view. 
+
+1. To switch back to Editing view, select the ellipsis (...) in the the top navigation bar > **Edit**. Back in Editing view, you can continue to explore and pin tiles.
 
     ![Select Edit to edit the report](media/service-get-started/power-bi-service-edit-report.png)
 
 ## Step 3: Explore with Q&A
 
-For a quick exploration of your data, ask a question in the Q&A question box. Q&A creates natural-language queries about your data. The Q&A box is located at the top of your dashboard (**Ask a question about your data**) and in the top navigation bar in your report (**Ask a question**).
+For a quick exploration of your data, try asking a question in the Q&A question box. Q&A creates natural-language queries about your data. In a dashboard, the Q&A box is located at the top (**Ask a question about your data**), and in a report, it's in the top navigation bar (**Ask a question**).
 
-2. To go back to the dashboard, select **My workspace** in the black **Power BI** bar.
+1. To go back to the dashboard, select **My workspace** in the black **Power BI** bar.
 
     ![Go back to My workspace](media/service-get-started/power-bi-service-go-my-workspace.png)
 
@@ -129,10 +131,10 @@ For a quick exploration of your data, ask a question in the Q&A question box. Q&
 
 1. Select **Ask a question about your data**. Q&A automatically offers a number of suggestions.
 
+    ![Q&A canvas](media/service-get-started/power-bi-service-new-qanda.png)
+
     > [!NOTE]
     > If you don't see the suggestions, turn on **New Q&A experience**.
-   
-   ![Q&A canvas](media/service-get-started/power-bi-service-new-qanda.png)
 
 2. Some of the suggestions return a single value. For example, select **maximum sale**.
 
@@ -146,21 +148,23 @@ For a quick exploration of your data, ask a question in the Q&A question box. Q&
 
     ![Average COG for each month](media/service-get-started/power-bi-service-qanda-average-cog.png)
 
+1. Pin the bar chart to the **Financial Sample for tutorial** dashboard, too.
+
 1. Place the cursor after *by month* in the Q&A box and type *as line*. Select **line (Visualization Type)**. 
 
     ![Chart as line visualization](media/service-get-started/power-bi-service-qanda-as-line.png)
 
-1. Delete *as line*. Pin the bar chart to the **Financial Sample for tutorial** dashboard, too, and select **Go to dashboard**.
-
-4. Return to your dashboard, where you see the new tiles you created.
+4. Select **Exit Q&A** to return to your dashboard, where you see the new tiles you created. 
 
    ![Dashboard with chart pinned](media/service-get-started/power-bi-service-dashboard-qna.png)
 
-## Reposition tiles
+   You see that even though you changed the chart to a line chart, the tile remained a bar chart because that's what it was when you pinned it. 
 
-You see the dashboard is wide. We can rearrange the tiles to make better use of the dashboard space.
+## Step 4: Reposition tiles
 
-1. Drag the lower-right corner of the *Gross Sales* line chart tile until it snaps at the same height as the Sales tile, and release it.
+The dashboard is wide. We can rearrange the tiles to make better use of the dashboard space.
+
+1. Drag the lower-right corner of the *Gross Sales* line chart tile upward, until it snaps at the same height as the Sales tile, and release it.
 
     ![Resize the tile](media/service-get-started/power-bi-service-resize-tile.png)
 
@@ -174,17 +178,17 @@ You see the dashboard is wide. We can rearrange the tiles to make better use of 
 
     ![Rearranged dashboard](media/service-get-started/power-bi-service-rearranged-dashboard.png)
 
-## Interact with tiles
+## Step 5: Interact with tiles
 
-Here's one last interaction to notice, before you start making your own dashboards and reports. Selecting the different tiles delivers different results. 
+Here's one last interaction to observe, before you start making your own dashboards and reports. Selecting the different tiles delivers different results. 
 
-1. Select the *Gross Sales* line chart tile you pinned from the report. 
+1. First select the *Gross Sales* line chart tile you pinned from the report. 
 
     Power BI opens the report in Reading view. 
 
 2. Select the browser back button. 
 
-1. This time, select the *Average of COGS* bar chart tile you created in Q&A. 
+1. Now select the *Average of COGS* bar chart tile you created in Q&A. 
 
     Power BI doesn't open the report. Q&A opens instead, because you created this chart there.
 
@@ -192,14 +196,15 @@ Here's one last interaction to notice, before you start making your own dashboar
 ## Clean up resources
 Now that you've finished the tutorial, you can delete the dataset, report, and dashboard. 
 
-1. In the left navigation bar, select **My Workspace**.
+1. In the left navigation bar, make sure you're in **My Workspace**.
 2. Select the **Datasets** tab and locate the dataset you imported for this tutorial.  
 3. Select the ellipsis (...) > **Delete**.
 
-    ![Delete the dataset](media/service-get-started/power-bi-delete.jpg)
+    ![Delete the dataset](media/service-get-started/power-bi-service-delete-dataset.png)
 
-    When you delete the dataset, Power BI also deletes the report and the dashboard. 
+    When you delete the dataset, you see a warning that **All reports and dashboard tiles containing data from this dataset will also be deleted**.
 
+4. Select **Delete**.
 
 ## Next steps
 
