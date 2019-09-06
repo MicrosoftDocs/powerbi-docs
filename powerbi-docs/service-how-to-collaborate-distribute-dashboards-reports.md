@@ -8,7 +8,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/07/2019 
+ms.date: 09/06/2019 
 LocalizationGroup: Share your work
 ---
 
@@ -26,7 +26,7 @@ You've created dashboards and reports. Maybe you collaborated on them with your 
 
 No matter which option you choose, to share your content you need a [Power BI Pro license](service-features-license-type.md), or the content needs to be in a [Premium capacity](service-premium-what-is.md). License requirements vary for the colleagues who view your content, depending on the option you choose. The following sections spell out details. 
 
-![Apps in the Power BI service](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
+![Apps in the Power BI service](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-new-look.png)
 
 *Apps in the Power BI service*
 
@@ -36,7 +36,7 @@ When teams work together, they need access to the same documents so they can qui
 
 Workspaces provide roles that determine what permissions your coworkers have. You can use those roles to determine who can manage the entire workspace, or edit its content, and distribute its content.
 
-![Workspaces](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
+![Workspaces](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-workspace.png)
 
 You might naturally put content in your My Workspace and share it from there. But workspaces are better for collaboration than My Workspace, because they allow co-ownership of content. You and your entire team can easily make updates or give others access. My Workspace is best used by individuals for one-off or personal content.
 
@@ -50,11 +50,11 @@ Power BI has a new workspace experience. Read [Create the new workspaces](servic
 
 ## Distribute insights in an app
 
-Say you want to distribute your dashboard to a broad audience in your organization. You and your coworkers have created a *workspace*, then created and refined dashboards, reports, and datasets in the workspace. Now you select the dashboards and reports you want and publish them as an app &#151; either to a group or to your whole organization.
+Say you want to distribute your dashboard to a broad audience in your organization. You and your coworkers have created a *workspace*, then created and refined dashboards, reports, and datasets in the workspace. Now you select the dashboards and reports you want and publish them as an app, either to a group or to your whole organization.
 
-![Publish app icon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
+![Publish app icon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-publish-app.png)
 
-Apps are easy to find and install in the Power BI service ([https://powerbi.com](https://powerbi.com)). You can send your business users a direct link to the app, or they can search for it in AppSource. If your Power BI administrator gives you permissions, you can install an app automatically in your coworkers' Power BI accounts. Read more about [publishing your apps](service-create-distribute-apps.md).
+Apps are easy to find and install in the Power BI service ([https://app.powerbi.com](https://app.powerbi.com)). You can send your business users a direct link to the app, or they can search for it in AppSource. If your Power BI administrator gives you permissions, you can install an app automatically in your coworkers' Power BI accounts. Read more about [publishing your apps](service-create-distribute-apps.md).
 
 After they install an app, they can view it in their browser or mobile device.
 
@@ -66,13 +66,15 @@ You can publish apps to those outside your organization, too. They can view and 
 
 Let's face it, some people are more skilled at creating high-quality, well-designed data models in their reports. Maybe you're that person. Your whole organization can benefit from using the same well-designed data models. *Shared datasets* fill that role. When you create a report with a data model that everyone should use, you can save that report to the Power BI service and give the right people permission to use it. Then they can build their reports on your dataset. That way, everyone is basing their reports on the same data, and seeing the same "version of the truth."
 
+![Find a shared dataset](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-shared-datasets.png)
+
 Read more about [creating and using shared datasets](service-datasets-across-workspaces.md).
 
 ## Share dashboards and reports
 
 Let's say you've finalized a dashboard and a report in your own My Workspace or in a workspace and you want a few other people to have access to it. One way to get it to them is to *share* it. 
 
-![Share icon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-in-situ.png)
+![Share a report](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-report.png)
 
 You need a Power BI Pro license to share your content, and those you share it with do too, or the content needs to be in a workspace in a [Premium capacity](service-premium-what-is.md). When you share a dashboard or report, recipients can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports unless row-level security (RLS) is applied to the underlying dataset. The coworkers you share it with can share with their coworkers, if you allow them to. 
 
