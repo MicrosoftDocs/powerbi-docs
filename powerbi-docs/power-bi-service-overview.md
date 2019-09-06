@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 featuredvideoid: B2vd4MQrz4M
 ms.topic: overview
-ms.date: 09/04/2019
+ms.date: 09/05/2019
 ms.author: maggies
 
 LocalizationGroup: Get started
@@ -15,19 +15,20 @@ LocalizationGroup: Get started
 ---
 
 # What is the Power BI service?
-**Power BI** is a collection of software services, apps, and connectors that work together. The Microsoft Power BI *service* (app.powerbi.com), sometimes referred to as Power BI online, is the SaaS (*Software as a Service*) part of Power BI. In the Power BI service, *dashboards* help you keep a finger on the pulse of your business. Dashboards display *tiles*, which you can select to open *reports* for exploring further. Connect to multiple *datasets* to bring all of the relevant data together in one place. 
+**Power BI** is a collection of software services, apps, and connectors that work together to help you create, share, and consume business insights in the way that serves you and your business most effectively. The Microsoft Power BI *service* (app.powerbi.com), sometimes referred to as Power BI online, is the SaaS (*Software as a Service*) part of Power BI. In the Power BI service, *dashboards* help you keep a finger on the pulse of your business. Dashboards display *tiles*, which you can select to open *reports* for exploring further. Dashboards and reports connect to *datasets* that bring all of the relevant data together in one place. 
 
 Need help with understanding the building blocks that make up Power BI? See [Basic concepts for designers in the Power BI service](service-basic-concepts.md). Or visit our [playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP). A good video to start with is *Introduction to the Power BI service*:
+
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 
 
-The other main components of Power BI are the Windows desktop application **Power BI Desktop** and the Power BI **mobile apps** for Windows, iOS, and Android devices. These three elements&mdash;Power BI Desktop, the service, and the mobile apps&mdash;combine to let you create, share, and consume business insights in the way that serves you and your role most effectively. Read [What is Power BI](power-bi-overview.md) for an overview.
+The other main components of Power BI are the Windows desktop application **Power BI Desktop** and the Power BI **mobile apps** for Windows, iOS, and Android devices. You and your colleagues can use these three elements&mdash;Power BI Desktop, the service, and the mobile apps&mdash;to create, share, and consume business insights. Read [What is Power BI](power-bi-overview.md) for an overview.
 
 ## Creating reports in the service
-A common workflow in Power BI begins by building a report in Power BI Desktop, then publishing it to the Power BI service.  
+In a typical Power BI workflow, you begin by building a report in Power BI Desktop, then publishing it to the Power BI service.  
 
-This workflow is common, but you can also create Power BI reports right in the Power BI service. Do you have a subscription to a SaaS application like Salesforce? Power BI has apps that automatically create dashboards and reports from your online data. Get a head start by connecting to Salesforce or [check out the other SaaS apps](service-get-data.md) you can connect to. If you're part of an organization, someone in your organization may have published [apps](service-create-distribute-apps.md) and distributed them to you.
+This workflow is common, but you can also create Power BI reports right in the Power BI service. Do you have a subscription to a SaaS (software as a service) application like Salesforce? Power BI has apps that automatically create dashboards and reports from your online data. Get a head start by connecting to Salesforce or [check out the other SaaS apps](service-get-data.md) you can connect to. If you're part of an organization, someone in your organization may have published [apps](service-create-distribute-apps.md) and distributed them to you.
 
 ## Sharing your findings 
 

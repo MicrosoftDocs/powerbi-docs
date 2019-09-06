@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/05/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -57,7 +57,7 @@ Roles let you manage who can do what in a workspace, so teams can collaborate. N
 
 When you assign roles to a user group, the individuals in the group have access to content. If you nest user groups, all the contained users have permission.
 
-Here are the capabilities of the four roles: admins, members, contributors, and viewers.
+Here are the capabilities of the four roles: admins, members, contributors, and viewers. All of these capabilities except the last require a Power BI Pro license.
 
 |Capability   | Admin  | Member  | Contributor  | Viewer |
 |---|---|---|---|---|
@@ -72,6 +72,7 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 | View an item. |  X | X  | X  | X  |
 | Create a report in another workspace based on a dataset in this workspace. |  X | X  | X  | X <sup>1</sup>  |
 | Copy a report. | X | X | X | X <sup>1</sup> |
+| View an item. |  X | X  | X  | X  |
 
 **1** Requires a Power BI Pro license and [Build permission for datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
  

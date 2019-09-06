@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 09/04/2019
+ms.date: 09/05/2019
 ms.author: maggies
 # Customer intent: As a Power BI customer or potential customer, I want to try it out for free and see how quick and intuitive it is so that I'll want to use it again and often, talk about it to colleagues and influence purchase and trial by others.  
 
@@ -16,20 +16,20 @@ LocalizationGroup: Get started
 
 ---
 # Tutorial: Get started with the Power BI service
-This tutorial helps you get started with the *Power BI service*. The Power BI service is cloud based, and supports light report editing and collaboration for teams and organizations. You can connect to data sources in the Power BI service, though modeling is more limited than in Power BI Desktop. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md).
+This tutorial is an introduction to some of the features of the *Power BI service*. In it, you connect to data, create a report and a dashboard, and ask questions of your data. You can do much more in the Power BI service; this tutorial is just to whet your appetite. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md).
 
 ![Power BI service home](media/service-get-started/power-bi-service-get-started-home.png)
 
 In this tutorial, you complete the following steps:
 
 > [!div class="checklist"]
-> * Find getting started content for the Power BI service.
-> * Sign in to your Power BI online account, or sign up, if you don't have one yet.
+> * Sign in to your Power BI online account, or sign up, if you don't have an account yet.
 > * Open the Power BI service.
 > * Get some data and open it in report view.
 > * Use that data to create visualizations and save it as a report.
 > * Create a dashboard by pinning tiles from the report.
-> * Add another visualization to your dashboard by using the Q&A natural language tool.
+> * Add other visualizations to your dashboard by using the Q&A natural-language tool.
+> * Resize, rearrange, and interact with the tiles on the dashboard.
 > * Clean up resources by deleting the dataset, report, and dashboard.
 
 > [!TIP]
@@ -93,12 +93,10 @@ Now that you've connected to data, start exploring.  When you've found something
 
 3. This chart looks interesting, so let's *pin* it to a dashboard. Hover over the visualization and select the pin icon. When you pin this visualization, it's stored on your dashboard and kept up-to-date so you can track the latest value at a glance.
    
-   ![Pin icon](media/service-get-started/pinnew.png)
+   ![Pin icon](media/service-get-started/power-bi-service-pin-visual.png)
 
 4. Because this report is new, you're prompted to save it before you can pin a visualization to a dashboard. Give your report a name (for example, *Sales over time*), and then select **Save**. 
-   
-   ![Save report dialog](media/service-get-started/pbi_getstartsaveb4pinnew.png)
-   
+
 5. Select **New dashboard** and name it *Financial sample for tutorial*. 
    
    ![Name the report](media/service-get-started/power-bi-pin.png)
@@ -111,39 +109,85 @@ Now that you've connected to data, start exploring.  When you've found something
 
 7. Select **Go to dashboard** to see your new dashboard with the line chart that you pinned to it as a tile. 
    
-   ![Dashboard with visualization pinned](media/service-get-started/power-bi-new-dashboard.png)
+   ![Dashboard with visualization pinned](media/service-get-started/power-bi-service-dashboard-tile.png)
    
-8. Select the new tile on your dashboard to return to the report. Power BI returns you to the report editor in Reading view. To switch back to Editing view, select **Edit report** from the top navigation bar. After you're in Editing view, you can continue to explore and pin tiles. 
+8. Select the new tile on your dashboard to return to the report. Power BI returns you to the report in Reading view. To switch back to Editing view, select the ellipsis (...) in the the top navigation bar > **Edit**. Back in Editing view, you can continue to explore and pin tiles.
 
-## Step 3: Explore with Q&A (natural-language querying)
+    ![Select Edit to edit the report](media/service-get-started/power-bi-service-edit-report.png)
 
-For a quick exploration of your data, ask a question in the Q&A question box. The Q&A box is located at the top of your dashboard (**Ask a question about your data**) and in the top navigation bar in your report (**Ask a question**).
+## Step 3: Explore with Q&A
 
-1. When you click in the Q&A box, it automatically offers a number of suggestions.
+For a quick exploration of your data, ask a question in the Q&A question box. Q&A creates natural-language queries about your data. The Q&A box is located at the top of your dashboard (**Ask a question about your data**) and in the top navigation bar in your report (**Ask a question**).
+
+2. To go back to the dashboard, select **My workspace** in the black **Power BI** bar.
+
+    ![Go back to My workspace](media/service-get-started/power-bi-service-go-my-workspace.png)
+
+1. On the **Dashboards** tab, select your dashboard.
+
+    ![Select your dashboard](media/service-get-started/power-bi-service-dashboard-tab.png)
+
+1. Select **Ask a question about your data**. Q&A automatically offers a number of suggestions.
 
     > [!NOTE]
     > If you don't see the suggestions, turn on **New Q&A experience**.
    
-   ![Q&A canvas](media/service-get-started/powerbi-qna.png)
+   ![Q&A canvas](media/service-get-started/power-bi-service-new-qanda.png)
 
 2. Some of the suggestions return a single value. For example, select **maximum sale**.
 
-   
-1. Q&A searches for an answer and presents it in the form of a visualization. Select the pin icon ![Pin icon](media/service-get-started/pbi_pinicon.png) to show this visualization on the Financial sample for tutorial dashboard.
-1. Scroll down in the **Questions to get you started** and select **total gross sale by month**. 
+    Q&A searches for an answer and presents it in the form of a *card* visualization.
 
+    ![Maximum sale card](media/service-get-started/power-bi-service-qanda-maximum-sale.png)
+
+3. Select the pin icon ![Pin icon](media/service-get-started/pbi_pinicon.png) to show this visualization on the Financial sample for tutorial dashboard.
+
+1. Scroll down in the **Questions to get you started** list and select **average cog for each month**. 
+
+    ![Average COG for each month](media/service-get-started/power-bi-service-qanda-average-cog.png)
 
 1. Place the cursor after *by month* in the Q&A box and type *as line*. Select **line (Visualization Type)**. 
 
+    ![Chart as line visualization](media/service-get-started/power-bi-service-qanda-as-line.png)
 
+1. Delete *as line*. Pin the bar chart to the **Financial Sample for tutorial** dashboard, too, and select **Go to dashboard**.
 
-1. Pin the line chart to the **Financial Sample for tutorial** dashboard, too, and select **Go to dashboard**.
-   
-    
+4. Return to your dashboard, where you see the new tiles you created.
 
-4. Return to your dashboard, where you see the new tile.
+   ![Dashboard with chart pinned](media/service-get-started/power-bi-service-dashboard-qna.png)
 
-   ![Dashboard with chart pinned](media/service-get-started/power-bi-final-dashboard.png)
+## Reposition tiles
+
+You see the dashboard is wide. We can rearrange the tiles to make better use of the dashboard space.
+
+1. Drag the lower-right corner of the *Gross Sales* line chart tile until it snaps at the same height as the Sales tile, and release it.
+
+    ![Resize the tile](media/service-get-started/power-bi-service-resize-tile.png)
+
+    Now the two tiles are the same height.
+
+    ![Resized tile](media/service-get-started/power-bi-service-resized-tile.png)
+
+1. Drag the *Average of COGS* bar chart tile until it fits under the *Gross Sales* line chart.
+
+    That looks better.
+
+    ![Rearranged dashboard](media/service-get-started/power-bi-service-rearranged-dashboard.png)
+
+## Interact with tiles
+
+Here's one last interaction to notice, before you start making your own dashboards and reports. Selecting the different tiles delivers different results. 
+
+1. Select the *Gross Sales* line chart tile you pinned from the report. 
+
+    Power BI opens the report in Reading view. 
+
+2. Select the browser back button. 
+
+1. This time, select the *Average of COGS* bar chart tile you created in Q&A. 
+
+    Power BI doesn't open the report. Q&A opens instead, because you created this chart there.
+
 
 ## Clean up resources
 Now that you've finished the tutorial, you can delete the dataset, report, and dashboard. 
