@@ -17,9 +17,9 @@ LocalizationGroup: Reports
 
 Filters in Power BI have new functionality and a new design. When you opt in to the new filter experience, you can format the Filters pane to look like the rest of the report. You can lock and even hide filters. When designing your report, you no longer see the old Filters pane at all in the Visualizations pane. You do all your filter editing and formatting in a single Filters pane. 
 
-![New filter experience](media/power-bi-report-filter/power-bi-filter-reading.png)
+![New filter experience](media/power-bi-report-filter/power-bi-filter-new-look.png)
 
-As a report designer, here's what you can do in the new single Filters pane:
+As a report designer, here are some of the tasks you can do in the new Filters pane:
 
 - Add and remove fields to filter on. 
 - Change the filter state.
