@@ -66,7 +66,7 @@ Another way to look up a last refreshed date is by using **View related**.  **Vi
 
 ![Select View related from menu](media/end-user-fresh/power-bi-view-related.png)
 
-The **Related content** pane displays the last refresh infromation for the dashboard's or report's underlying dataset.
+The **Related content** pane displays the last refresh information for the dashboard's or report's underlying dataset.
 
 ![Power BI dashboard](media/end-user-fresh/power-bi-last-refresh.png)
 
@@ -79,7 +79,7 @@ If a designer deletes an app, the dashboards and reports associated with that ap
 Another way to stay up-to-date, is to subscribe to a report or dashboard. Instead of having to log in and open a report or dashboard, you tell Power BI to send you a snapshot on a schedule you set.  For more information, see [subscribe to dashboards and reports](end-user-subscribe.md).
 
 ## Set data alerts
-Want to be notified if data changes above or beyond a limit you set? [Create a data alert](end-user-alerts.md).  It's easy to stay up-to-date using data alerts. With data alerts, you tell Power BI to send you an email if a value in a report passes a specific threshhold.  For example, if inventory falls below 25 units or if sales exceed goals.  
+Want to be notified if data changes above or beyond a limit you set? [Create a data alert](end-user-alerts.md).  It's easy to stay up-to-date using data alerts. With data alerts, you tell Power BI to send you an email if a value in a report passes a specific threshold.  For example, if inventory falls below 25 units or if sales exceed goals.  
 
 ## Next steps
 [Create a data alert](end-user-alerts.md)    
