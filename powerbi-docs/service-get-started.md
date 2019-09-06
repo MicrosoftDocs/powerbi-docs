@@ -113,13 +113,13 @@ Now that you've connected to data, start exploring.  When you've found something
    
 8. Select the new tile on your dashboard to return to the report. Power BI returns you to the report in Reading view. 
 
-1. To switch back to Editing view, select the ellipsis (...) in the the top navigation bar > **Edit**. Back in Editing view, you can continue to explore and pin tiles.
+1. To switch back to Editing view, select the ellipsis (...) in the top navigation bar > **Edit**. Back in Editing view, you can continue to explore and pin tiles.
 
     ![Select Edit to edit the report](media/service-get-started/power-bi-service-edit-report.png)
 
 ## Step 3: Explore with Q&A
 
-For a quick exploration of your data, try asking a question in the Q&A question box. Q&A creates natural-language queries about your data. In a dashboard, the Q&A box is located at the top (**Ask a question about your data**), and in a report, it's in the top navigation bar (**Ask a question**).
+For a quick exploration of your data, try asking a question in the Q&A question box. Q&A creates natural-language queries about your data. In a dashboard, the Q&A box is at the top (**Ask a question about your data**). In a report, it's in the top navigation bar (**Ask a question**).
 
 1. To go back to the dashboard, select **My workspace** in the black **Power BI** bar.
 
@@ -164,7 +164,7 @@ For a quick exploration of your data, try asking a question in the Q&A question 
 
 The dashboard is wide. We can rearrange the tiles to make better use of the dashboard space.
 
-1. Drag the lower-right corner of the *Gross Sales* line chart tile upward, until it snaps at the same height as the Sales tile, and release it.
+1. Drag the lower-right corner of the *Gross Sales* line chart tile upward, until it snaps at the same height as the Sales tile, then release it.
 
     ![Resize the tile](media/service-get-started/power-bi-service-resize-tile.png)
 
