@@ -31,7 +31,7 @@ This tutorial requires the [**AdventureworksDW2012** database](https://github.co
 
 ## Task 1: Create the user security table and define data relationship
 
-You can find many articles describing how to define row level dynamic security with the **SQL Server Analysis Services (SSAS) tabular** model. For our sample, we use [Implement Dynamic Security by Using Row Filters](https://msdn.microsoft.com/library/hh479759.aspx). 
+You can find many articles describing how to define row level dynamic security with the **SQL Server Analysis Services (SSAS) tabular** model. For our sample, we use [Implement Dynamic Security by Using Row Filters](https://docs.microsoft.com/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters). 
 
 The steps here require using the **AdventureworksDW2012** relational database.
 

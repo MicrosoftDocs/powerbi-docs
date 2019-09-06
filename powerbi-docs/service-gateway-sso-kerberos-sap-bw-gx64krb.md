@@ -118,7 +118,7 @@ Verify that you can sign in to the server using SAP Logon through SSO as the Act
 
 ### Add registry entries to the gateway machine
 
-Add required registry entries to the registry of the machine that the gateway is installed on. Here are the commands to run:
+Add required registry entries to the registry of the machine that the gateway is installed on, as well as to machines intended to connect from Power BI Desktop. Here are the commands to run:
 
 1. REG ADD HKLM\SOFTWARE\Wow6432Node\SAP\gsskrb5 /v ForceIniCredOK /t REG\_DWORD /d 1 /f
 
