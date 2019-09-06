@@ -9,7 +9,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 09/06/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -80,6 +80,9 @@ To demonstrate using **R** in **Query Editor**, we'll use an example stock marke
        output <- dataset
        output$completedValues <- completedData$"SMI missing values"
     ```
+
+    > [!NOTE]
+    > You may need to overwrite a variable named *output* to properly create the new dataset with the filters applied.
 
 7. After selecting **OK**, **Query Editor** displays a warning about data privacy.
 
