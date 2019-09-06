@@ -60,7 +60,7 @@ After they install an app, they can view it in their browser or mobile device.
 
 For your users to view your app, either they need to have a Power BI Pro license, too, or the app needs to be stored in a Power BI Premium capacity. Read [What is Power BI Premium?](service-premium-what-is.md) for details.
 
-You can publish apps to those outside your organization, too. They can view and interact with the app content, but can’t share it with others. Now you can create *template apps* deploy them to any Power BI customer.
+You can publish apps to people outside your organization, too. They can view and interact with the app content, but can’t share it with others. Now you can create *template apps* deploy them to any Power BI customer.
 
 ## Share a dataset
 
@@ -76,7 +76,7 @@ Let's say you've finalized a dashboard and a report in your own My Workspace or 
 
 ![Share a report](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-report.png)
 
-You need a Power BI Pro license to share your content, and those you share it with do too, or the content needs to be in a workspace in a [Premium capacity](service-premium-what-is.md). When you share a dashboard or report, recipients can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports unless row-level security (RLS) is applied to the underlying dataset. The coworkers you share it with can share with their coworkers, if you allow them to. 
+You need a Power BI Pro license to share your content, and the people you share it with do too, or the content needs to be in a workspace in a [Premium capacity](service-premium-what-is.md). When you share a dashboard or report, recipients can view it and interact with it, but can't edit it. They see the same data that you see in the dashboard and reports unless row-level security (RLS) is applied to the underlying dataset. The coworkers you share it with can share with their coworkers, if you allow them to. 
 
 You can share with people outside your organization, too. They can view and interact with the dashboard or report too, but can't share it. 
 

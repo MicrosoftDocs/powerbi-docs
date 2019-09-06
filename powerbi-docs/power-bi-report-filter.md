@@ -203,7 +203,7 @@ You can now modify the default settings of the filter pane with the theme file. 
 
 ## Sort the filter pane
 
-Custom sort functionality is part of the new filter pane experience. Report creators can drag and drop filters to rearrange them in the order they desire.
+Custom sort functionality is part of the new filter pane experience. Report creators can drag and drop filters to rearrange them in any order.
 
 ![Rearrange filter sort order](media/power-bi-report-filter/power-bi-filter-sort.gif)
 
