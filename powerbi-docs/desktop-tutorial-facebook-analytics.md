@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 05/08/2019
+ms.date: 09/06/2019
 ms.author: davidi
 
 LocalizationGroup: Learn more
@@ -16,6 +16,10 @@ LocalizationGroup: Learn more
 # Tutorial: Facebook analytics using Power BI Desktop
 
 In this tutorial you learn how to import data from Facebook and use it in Power BI Desktop. You'll connect and import data from the Power BI Facebook page, apply transformations to the imported data, and use the data in report visualizations.
+
+> [!WARNING]
+> Due to Facebook App permission restrictions, the connector capabilities described in this article are not currently working properly. We’re working with Facebook to return this functionality as soon as possible.
+
 
 ## Connect to a Facebook page
 
