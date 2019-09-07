@@ -23,12 +23,16 @@ Power BI also offers [other ways to collaborate and distribute your reports](ser
 
 ## Two ways to filter a report
 
+For both filtering techniques, we're using the Marketing and Sales sample template app. Want to try it? You can install the [Marketing and Sales sample template app](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview), too.
+
 ### Set a filter
 
-Open the report in [Editing view](consumer/end-user-reading-view.md), apply the filter, and save the report.
-   
-In this example, we're filtering the YTD Category page of the Marketing and Sales sample template app to show only values where **Region** equals **Central**. Want to try it? You can install the [Marketing and Sales sample template app](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview), too.
-   
+Open a report in [Editing view](consumer/end-user-reading-view.md) and apply a filter.
+
+In this example, we're filtering the YTD Category page of the Marketing and Sales sample template app to show only values where **Region** equals **Central**. 
+
+Save the report.
+ 
 ![Report filter pane](media/service-share-reports/power-bi-share-report-filter.png)
 
 ### Create a filter in the URL
@@ -50,6 +54,8 @@ Your browser adds special characters to represent slashes, spaces, and apostroph
 app.powerbi.com/groups/xxxx/reports/xxxx/ReportSection4d00c3887644123e310e?filter=Geo~2FRegion%20eq%20'Central'
 
 ![Report with URL filter](media/service-share-reports/power-bi-share-report-filter-url.png)
+
+Save the report.
 
 See the article [Filter a report using query string parameters in the URL](service-url-filters.md) for much more detail.
 
