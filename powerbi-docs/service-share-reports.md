@@ -27,7 +27,7 @@ Power BI also offers [other ways to collaborate and distribute your reports](ser
 
 Open the report in [Editing view](consumer/end-user-reading-view.md), apply the filter, and save the report.
    
-In this example, we're filtering the YTD Category page of the Marketing and Sales sample template app to show only values where **Region** equals **Central**. You can install the [Marketing and Sales sample template app](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview) and try it, too.
+In this example, we're filtering the YTD Category page of the Marketing and Sales sample template app to show only values where **Region** equals **Central**. Want to try it? You can install the [Marketing and Sales sample template app](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview), too.
    
 ![Report filter pane](media/service-share-reports/power-bi-share-report-filter.png)
 
