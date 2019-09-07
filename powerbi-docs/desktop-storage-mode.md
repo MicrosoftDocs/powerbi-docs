@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 09/06/2019
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -39,6 +39,9 @@ The storage mode setting in Power BI Desktop is one of three related features:
 * **Many-to-many relationships**: With *composite models*, you can establish *many-to-many relationships* between tables. *Many-to-many relationships* removes requirements for unique values in tables. It also removes prior workarounds, such as introducing new tables only to establish relationships. For more information, see [Many-to-many relationships in Power BI Desktop](desktop-many-to-many-relationships.md).
 
 * **Storage mode**: You can now specify which visuals require a query to back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals, such as slicers, initiated queries that were sent to back-end sources. Storage mode is described further in this article.
+
+> [!NOTE]
+> You can see the current storage mode by selecting **Model** view, selecting the table of interest, and then in the **Advanced** section of the **Properties** pane, view the **Storage mode** value.
 
 ## Use the storage mode property
 
