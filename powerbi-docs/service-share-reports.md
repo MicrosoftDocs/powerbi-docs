@@ -30,10 +30,10 @@ For both filtering techniques, we're using the Marketing and Sales sample templa
 Open a report in [Editing view](consumer/end-user-reading-view.md) and apply a filter.
 
 In this example, we're filtering the YTD Category page of the Marketing and Sales sample template app to show only values where **Region** equals **Central**. 
-
-Save the report.
  
 ![Report filter pane](media/service-share-reports/power-bi-share-report-filter.png)
+
+Save the report.
 
 ### Create a filter in the URL
 
