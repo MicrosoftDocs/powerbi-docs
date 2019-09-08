@@ -1347,9 +1347,9 @@
       items:
       - name: "SSO overview"
         href: service-gateway-sso-overview.md
-      - name: "Kerberos SSO"
+      - name: "Kerberos-based SSO"
         items:
-        - name: "Configure Kerberos SSO"
+        - name: "Configure Kerberos-based SSO"
           href: service-gateway-sso-kerberos.md
         - name: "Datasource-specific configuration"
           items:
@@ -1359,7 +1359,7 @@
             href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
           - name: "SAP BW - gx64krb5.dll and gsskrb5.dll"
             href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
-      - name: "SAML SSO"
+      - name: "SAML-based SSO"
         href: service-gateway-sso-saml.md
     - name: "Troubleshoot the gateway"
       href: service-gateway-onprem-tshoot.md
