@@ -21,6 +21,12 @@ For related "What's New" information, see:
 
 ## August 2019
 
+### Introducting Power BI Mobile new look (preview)
+
+We’ve refreshed our app and introduced new experiences, adding a home page that provides quick access to your commonly used content, and new navigation bars that give you an easy way of navigating through the app. With the new and refreshed experiences, it’s now quicker and easier to find what you need, when you need it.
+Since new look is preview you will need to turn it on to enjoy it.
+Read more about [Power BI Mobile new look](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
+
 ### Secured access with Azure Active Directory (AD) Application Proxy
 
 We partnered with Azure Active Directory team to integrate Power BI mobile applications with Azure Active Directory (AAD) Application Proxy. With this configuration you can connect to Report Server hosted inside the enterprise boundaries from Power BI Mobile app, without the need to set up complex on-premise configuration. Read more on [Power BI mobile and Azure AD Application Proxy integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Learn [how to configure Azure AD Application Proxy and Power BI](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
