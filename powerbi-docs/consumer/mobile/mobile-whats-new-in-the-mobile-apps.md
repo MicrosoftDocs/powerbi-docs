@@ -27,6 +27,8 @@ We’ve refreshed our app and introduced new experiences, adding a home page tha
 Since new look is preview you will need to turn it on to enjoy it.
 Read more about [Power BI Mobile new look](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
 
+![Power BI Mobile new look](./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-look.gif)
+
 ### Secured access with Azure Active Directory (AD) Application Proxy
 
 We partnered with Azure Active Directory team to integrate Power BI mobile applications with Azure Active Directory (AAD) Application Proxy. With this configuration you can connect to Report Server hosted inside the enterprise boundaries from Power BI Mobile app, without the need to set up complex on-premise configuration. Read more on [Power BI mobile and Azure AD Application Proxy integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Learn [how to configure Azure AD Application Proxy and Power BI](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
@@ -37,7 +39,10 @@ We partnered with Azure Active Directory team to integrate Power BI mobile appli
 
 Report page tooltips are now supported when viewing reports in your mobile app. Simply press and hold on a visual that has a report tooltip tied to it and it will be shown.  
 
-![Report canvas tooltip](./media/mobile-whats-new-in-the-mobile-apps/report-canvas-tooltip.png)
+<p align="center">
+ <img src="./media/mobile-whats-new-in-the-mobile-apps/report-canvas-tooltip.png">
+ Report canvas tooltip </img>
+</p>
 
 > [!NOTE]
 > Report tooltips are supported for devices greater than 640 pixel size and 320 viewport. Smaller devices use default tooltips.
