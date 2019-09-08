@@ -24,7 +24,7 @@ This guide attempts to be as comprehensive as possible. If you've already comple
 ### Set up gx64krb5/gsskrb5 on gateway machine and the SAP BW server
 
 > [!NOTE]
-> `gx64krb5` and `gsskrb5` are no longer actively supported by SAP. For more information, see [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Also note that `gx64krb5` doesn't allow for SSO connections from the data gateway to SAP BW Message Servers. Only connections to SAP BW Application Servers are possible.
+> `gx64krb5` and `gsskrb5` are no longer actively supported by SAP. For more information, see [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Also note that `gx64krb5` doesn't allow for SSO connections from the data gateway to SAP BW Message Servers. Only connections to SAP BW Application Servers are possible. Other SNC libraries might also work for BW SSO but they are not officially supported by Microsoft.
 
 `gx64krb5` \ `gsskrb5` must be in use by both the client and server to complete an SSO connection through the gateway, i.e. both the client and server must be using the same SNC library.
 
