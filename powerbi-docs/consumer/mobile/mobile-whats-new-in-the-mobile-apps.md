@@ -27,7 +27,7 @@ We’ve refreshed our app and introduced new experiences, adding a home page tha
 Since new look is preview you will need to turn it on to enjoy it.
 Read more about [Power BI Mobile new look](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
 
-![Power BI Mobile new look](./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-look.gif)
+![Power BI Mobile new look](./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-look2.gif)
 
 ### Secured access with Azure Active Directory (AD) Application Proxy
 
