@@ -8,22 +8,27 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2017
+ms.date: 09/04/2019
 ms.author: mblythe
 ms.custom: seodec18
 
 LocalizationGroup: Troubleshooting
 ---
+
 # Troubleshooting scheduled refresh for Azure SQL Databases in Power BI
-For detailed steps on setting up scheduled refresh, be sure to see [Refresh data in Power BI](refresh-data.md).
 
-While setting up scheduled refresh for Azure SQL Database, if you get an error with error code 400 during editing the credentials, try the following to set up the appropriate firewall rule:
+For detailed information about refresh, see [Refresh data in Power BI](refresh-data.md) and [Configure scheduled refresh](refresh-scheduled-refresh.md).
 
-1. Log into your Azure management portal
-2. Go to the Azure SQL server you are configuring refresh for
-3. Turn on 'Windows Azure Services' in the allowed services section
+While setting up scheduled refresh for Azure SQL database, if you get an error with error code 400 when editing the credentials, try the following to set up the appropriate firewall rule:
 
-![Azure allowed services](media/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases/azurerefresh.png)  
+1. Sign in to the [Azure portal](https://portal.azure.com).
+
+1. Go to the Azure SQL database for which you're configuring refresh.
+
+1. At the top of the **Overview** blade, select **Set server firewall**.
+
+1. On the **Firewall settings** blade, make sure that **Allow access to Azure services** is set to **ON**.
+
+    ![Azure allowed services](media/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases/azurerefresh.png)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
-
