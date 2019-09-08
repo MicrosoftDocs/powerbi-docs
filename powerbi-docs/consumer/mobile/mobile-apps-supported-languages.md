@@ -13,7 +13,7 @@ ms.author: mshenhav
 
 ---
 # Supported languages in the Power BI mobile apps
-The Power Bi mobile apps currently support these languages:
+The Power BI mobile apps currently support these languages:
 
 * Arabic (iOS only)
 * Catalan - català
