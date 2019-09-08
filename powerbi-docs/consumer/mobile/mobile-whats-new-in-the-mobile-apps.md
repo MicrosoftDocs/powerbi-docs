@@ -40,8 +40,8 @@ We partnered with Azure Active Directory team to integrate Power BI mobile appli
 Report page tooltips are now supported when viewing reports in your mobile app. Simply press and hold on a visual that has a report tooltip tied to it and it will be shown.  
 
 <p align="center">
- <img src="./media/mobile-whats-new-in-the-mobile-apps/report-canvas-tooltip.png">
- Report canvas tooltip </img>
+ <img src="./media/mobile-whats-new-in-the-mobile-apps/report-canvas-tooltip.png" alt="Report canvas tooltip">
+ </img>
 </p>
 
 > [!NOTE]
