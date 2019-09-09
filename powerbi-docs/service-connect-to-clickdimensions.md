@@ -8,13 +8,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
 ---
 # Connect to ClickDimensions with Power BI
 The ClickDimensions content pack for Power BI allows users to utilize ClickDimensions marketing data in Power BI, giving management teams further insight into the success of their sales and marketing efforts. Visualize and analyze email interactions, web visits and form submissions in Power BI dashboards and reports.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Connect to the [ClickDimensions content pack](https://app.powerbi.com/getdata/services/click-dimensions) for Power BI.
 

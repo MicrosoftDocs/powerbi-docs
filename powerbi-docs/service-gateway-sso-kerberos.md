@@ -197,7 +197,10 @@ You can set the `msDS-cloudExtensionAttribute1` property using the Active Direct
 
 ## Complete data source-specific configuration steps
 
-SAP HANA and SAP BW have additional data-source specific configuration requirements and prerequisites that need to be met before you can establish an SSO connection through the gateway to these data sources. See [the SAP HANA configuration page](service-gateway-sso-kerberos-sap-hana.md) and [the SAP BW - CommonCryptoLib (sapcrypto.dll) configuration page](service-gateway-sso-kerberos-sap-bw-ccl.md) for details. It is also possible to [configure SAP BW for use with the gx64krb5 SNC library](service-gateway-sso-kerberos-sap-bw-gx64krb.md), though this library is not recommended by Microsoft as it is no longer supported by SAP. Other SNC libraries may also work for BW SSO but they are not officially supported by Microsoft.
+SAP HANA and SAP BW have additional data-source specific configuration requirements and prerequisites that need to be met before you can establish an SSO connection through the gateway to these data sources. See [the SAP HANA configuration page](service-gateway-sso-kerberos-sap-hana.md) and [the SAP BW - CommonCryptoLib (sapcrypto.dll) configuration page](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md) for details. It is also possible to [configure SAP BW for use with the gx64krb5 SNC library](service-gateway-sso-kerberos-sap-bw-gx64krb.md), but this library is not recommended by Microsoft because it's no longer supported by SAP.
+
+> [!NOTE]
+> Other SNC libraries might also work for BW SSO but they are not officially supported by Microsoft.
 
 ## Run a Power BI report
 
@@ -207,7 +210,7 @@ After completing all the configuration steps, you can use the **Manage Gateway**
 
  Publish a **DirectQuery-based** report from Power BI Desktop. This report must use data that is accessible to the user that is mapped to the (Azure) Active Directory user that signs in to the Power BI service. You must use DirectQuery instead of import, because of how refresh works. When refreshing import-based reports, the gateway uses the credentials that you entered into the **Username** and **Password** fields when you created the data source. In other words, Kerberos SSO is **not** used. Also, when publishing, make sure you select the gateway you've configured for SSO if you have multiple gateways. In the Power BI service you should now be able to refresh the report or create a new report based on the published dataset.
 
-This configuration works in most cases. However, with Kerberos there can be different configurations depending on your environment. If the report still won't load, contact your domain administrator to investigate further. If your data source is SAP BW, you can also refer to the troubleshooting sections of the data source-specific configuration pages for [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-ccl.md#troubleshooting) and [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting).
+This configuration works in most cases. However, with Kerberos there can be different configurations depending on your environment. If the report still won't load, contact your domain administrator to investigate further. If your data source is SAP BW, you can also refer to the troubleshooting sections of the data source-specific configuration pages for [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) and [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting).
 
 ## Next steps
 

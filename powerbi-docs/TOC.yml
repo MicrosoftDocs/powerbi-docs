@@ -405,6 +405,8 @@
     items: 
     - name: "What is Power BI?"
       href: power-bi-overview.md
+    - name: "What is the Power BI service?"
+      href: power-bi-service-overview.md
     - name: "Comparing Power BI Desktop and the service"
       href: service-service-vs-desktop.md
   - name: Tutorials
@@ -941,8 +943,8 @@
       href: report-builder-tables-matrices-lists.md
     - name: Parameters
       href: report-builder-parameters.md
-    - name: Expressions
-      href: report-builder-expressions.md
+    - name: URL parameters in paginated reports
+      href: report-builder-url-parameters.md
     - name: Expression examples
       href: report-builder-expression-examples.md
     - name: Report pagination
@@ -961,6 +963,8 @@
       href: paginated-reports-create-embedded-dataset.md
     - name: Create parameters
       href: paginated-reports-parameters.md
+    - name: Pass a report parameter in a URL
+      href: report-builder-url-pass-parameters.md
     - name: Publish a paginated report
       href: paginated-reports-save-to-power-bi-service.md
 - name: Power BI for developers
@@ -1341,21 +1345,21 @@
         href: service-gateway-mashup-on-premises-cloud.md
     - name: "Enable single sign-on (SSO)"
       items:
-      - name: "Single sign-on (SSO) - overview"
+      - name: "SSO overview"
         href: service-gateway-sso-overview.md
-      - name: "Kerberos SSO"
+      - name: "Kerberos-based SSO"
         items:
-        - name: "Configure Kerberos SSO"
+        - name: "Configure Kerberos-based SSO"
           href: service-gateway-sso-kerberos.md
         - name: "Datasource-specific configuration"
           items:
           - name: "SAP HANA"
             href: service-gateway-sso-kerberos-sap-hana.md
-          - name: "SAP BW - CommonCryptoLib (sapcrypto.dll)"
-            href: service-gateway-sso-kerberos-sap-bw-ccl.md
-          - name: "SAP BW - gx64krb5"
+          - name: "SAP BW - sapcrypto.dll (Common Crypto Library)"
+            href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
+          - name: "SAP BW - gx64krb5.dll"
             href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
-      - name: "SAML SSO"
+      - name: "SAML-based SSO"
         href: service-gateway-sso-saml.md
     - name: "Troubleshoot the gateway"
       href: service-gateway-onprem-tshoot.md
@@ -1366,7 +1370,7 @@
   - name: "Resources"
     items:
     - name: "Monthly gateway updates"
-      href: "https://review.docs.microsoft.com/data-integration/gateway/service-gateway-monthly-updates?branch=master"
+      href: "/data-integration/gateway/service-gateway-monthly-updates"
 - name: Administration
   items:
   - name: Overview
@@ -1436,3 +1440,5 @@
     href: guidance/star-schema.md
   - name: "Reduce data model size"
     href: guidance/import-modeling-data-reduction.md
+  - name: "DIVIDE function vs divide operator (/)"
+    href: guidance/dax-divide-function-operator.md

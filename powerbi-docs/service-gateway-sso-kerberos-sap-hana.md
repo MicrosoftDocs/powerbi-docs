@@ -1,5 +1,5 @@
 ---
-title: Use Kerberos for SSO to SAP HANA
+title: Use Kerberos for single sign-on (SSO) to SAP HANA
 description: Configure your SAP HANA server to enable SSO from Power BI service
 author: mgblythe
 ms.author: mblythe
@@ -12,10 +12,14 @@ ms.date: 08/01/2019
 LocalizationGroup: Gateways
 ---
 
-> [!NOTE]
-> Complete the steps on this page in addition to the steps in [Configure Kerberos SSO](service-gateway-sso-kerberos.md) before attempting to refresh a SAP HANA-based report that uses Kerberos SSO.
+# Use Kerberos for single sign-on (SSO) to SAP HANA
 
-## SAP HANA
+This article describes how to configure your SAP HANA server to enable SSO from the Power BI service.
+
+> [!NOTE]
+> Complete the steps in this article in addition to the steps in [Configure Kerberos SSO](service-gateway-sso-kerberos.md) before attempting to refresh a SAP HANA-based report that uses Kerberos SSO.
+
+## Enable SSO for SAP HANA
 
 To enable SSO for SAP HANA, follow these steps:
 
