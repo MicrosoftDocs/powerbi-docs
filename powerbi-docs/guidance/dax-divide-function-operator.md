@@ -1,14 +1,14 @@
 ---
 title: "DAX: DIVIDE function vs divide operator (/)"
 description: Guidance on when to use the DAX DIVIDE function.
-author: guyinacube
+author: peter-myers
 manager: asaxton
 ms.reviewer: asaxton
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/05/2019
+ms.date: 09/09/2019
 ms.author: v-pemyer
 ---
 
@@ -30,7 +30,7 @@ DIVIDE(<numerator>, <denominator> [,<alternateresult>])
 
 The DIVIDE function has been designed to automatically handle division by zero cases. If an alternate result is not passed in, and the denominator is zero or BLANK, the function returns BLANK. If an alternate result is passed in, it's returned instead of BLANK.
 
-The DIVIDE function is convenient because it saves your expression from having to first test the denominator value. The function is also better optimized for testing the denominator value than the [IF](/dax/if-function-dax) function. Using DIVIDE also results in a more concise and elegant expression.
+The DIVIDE function is convenient because it saves your expression from having to first test the denominator value. The function is also better optimized for testing the denominator value than the [IF](/dax/if-function-dax) function. The performance gain is significant since checking for division by zero is expensive. Using DIVIDE also results in a more concise and elegant expression.
 
 ## Example
 
