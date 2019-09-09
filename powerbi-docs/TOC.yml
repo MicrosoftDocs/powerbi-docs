@@ -1353,7 +1353,7 @@
             href: service-gateway-sso-kerberos-sap-hana.md
           - name: "SAP BW - CommonCryptoLib (sapcrypto.dll)"
             href: service-gateway-sso-kerberos-sap-bw-ccl.md
-          - name: "SAP BW - gx64krb5/gsskrb5"
+          - name: "SAP BW - gx64krb5"
             href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
       - name: "SAML SSO"
         href: service-gateway-sso-saml.md
