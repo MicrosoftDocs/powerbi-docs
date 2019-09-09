@@ -18,7 +18,7 @@ The following image shows a DAX formula being created in Power BI:
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_1.png)
 
-You can also omit the table name completely and just use the column name, but this is poor practice for writing clear functions (and thus, for clear DAX code). Column names must always include the square brackets.
+You can also omit the table name completely and just use the column name, but this is not a best practice for writing clear functions (and thus, for clear DAX code). Column names must always include the square brackets.
 
 It's best practice to *always* do the following:
 
