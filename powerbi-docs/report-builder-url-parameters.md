@@ -78,6 +78,74 @@ Specifies the format in which to render and export a report. Available values ar
 - PDF 
 - XML 
 
+**Device Info**
+You may specify additional output parameters for the following export formats - 
+
+PDF - 
+		- rdl:AccessiblePDF=true/false
+		- rdl:Columns=integer
+		- rdl:ColumnSpacing=decimal(in)
+		- rdl:DpiX=integer
+		- rdl:DpiY=integer
+		- rdl:EndPage=integer
+		- rdl:HumanReadablePDF=true/false
+		- rdl:MarginBottom=decimal(in)
+		- rdl:MarginLeft=decimal(in)
+		- rdl:MarginRight=decimal(in)
+		- rdl:MarginTop=decimal(in)
+		- rdl:PageHeight=decimal(in)
+		- rdl:PageWidth=decimal(in)
+    - rdl:StartPage=integer
+    
+CSV - 
+		- rdl:Encoding=string
+		- rdl:ExcelMode=true/false
+		- rdl:FieldDelimiter=string
+		- rdl:FileExtension=string
+		- rdl:NoHeader=true/false
+		- rdl:Qualifier=string
+		- rdl:RecordDelimiter=string
+		- rdl:SuppressLineBreaks=true/false
+    - rdl:UseFormattedValues=true/false
+    
+WORDOPENXML (WORD) - 
+		- rdl:AutoFit=string -> True/False/Never/Default
+		- rdl:ExpandToggles=true/false
+		- rdl:FixedPageWidth=true/false
+		- rdl:OmitHyperlinks=true/false
+		- rdl:OmitDrillthroughs=true/false
+
+EXCELOPENXML (EXCEL) - 
+		- rdl:OmitDocumentMap=true/false
+		- rdl:OmitFormulas=true/false
+    - rdl:SimplePageHeaders=true/false
+    
+PPTX (PowerPoint) - 
+		- rdl:Columns=integer
+		- rdl:ColumnSpacing=decimal(in)
+		- rdl:DpiX=integer
+		- rdl:DpiY=integer
+		- rdl:EndPage=integer
+		- rdl:MarginBottom=decimal(in)
+		- rdl:MarginLeft=decimal(in)
+		- rdl:MarginRight=decimal(in)
+		- rdl:MarginTop=decimal(in)
+		- rdl:PageHeight=decimal(in)
+		- rdl:PageWidth=decimal(in)
+		- rdl:StartPage=integer
+    - rdl:UseReportPageSize=true/false
+
+XML - 
+		- rdl:XSLT=string
+		- rdl:MIMEType=string
+		- rdl:UseFormattedValues=true/false
+		- rdl:Indented=true/false
+		- rdl:OmitNamespace=true/false
+		- rdl:OmitSchema=true/false
+		- rdl:Encoding=string
+		- rdl:FileExtension=string
+    - rdl:Schema=true/false
+
 ## Next steps
 
 - [Pass a report parameter in a URL for a paginated report in Power BI](report-builder-url-pass-parameters.md)
