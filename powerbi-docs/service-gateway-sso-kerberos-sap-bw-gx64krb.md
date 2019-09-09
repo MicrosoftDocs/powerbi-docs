@@ -33,7 +33,7 @@ This guide attempts to be as comprehensive as possible. If you've already comple
 
 1. Put `gx64krb5` in a location on your gateway machine that is accessible by your gateway service user. Both the gateway Service User and the Active Directory (AD) users that the Service User will impersonate need read and execute permissions for the .dll. We recommend granting permissions on the .dll to the Authenticated Users group. For testing purposes, you can also explicitly grant these permissions to both the gateway Service User and the Active Directory user you'll use to test.
 
-1. If your BW server has not already been configured for SSO using gx64krb5, put another copy of the .dll on your SAP BW server machine in a location accessible by the SAP BW server. Consult the [SAP documentation](https://launchpad.support.sap.com/#/notes/2115486) (s-user required) for more information on configuring gx64krb5 for use with a SAP BW server.
+1. If your BW server has not already been configured for SSO using gx64krb5, put another copy of the .dll on your SAP BW server machine in a location accessible by the SAP BW server. Consult the [SAP documentation](https://launchpad.support.sap.com/#/notes/2115486) (s-user required) for more information on configuring gx64krb5 for use with an SAP BW server.
 
 1. On the client and server machines, set the `SNC_LIB_64` environment variable to the absolute path of gx64krb5.dll.
 
