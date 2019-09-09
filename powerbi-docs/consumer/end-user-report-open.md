@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 09/04/2018
 ms.author: mihart
 #This article teaches consumers how to find and open a report whether it has been shared directly or shared via an app, so that the consumer can view and interact with the report to make business decisions.
 ---
@@ -26,7 +26,7 @@ Let's open a report that's been shared with you directly and then open a report 
    ![Home page](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### Open a report that has been shared with you
-Power BI *designers* can share an individual report directly with you via a link in email or by adding it to your Power BI Home. Content that is shared this way shows up in the **Shared with me** container on your nav bar and in the **Shared with me** section of your Home canvas.
+Power BI *designers* can share an individual report directly with you via a link in email or by adding it automatically. Content that is shared this way shows up in the **Shared with me** container on your nav bar and in the **Shared with me** section of your Home canvas.
 
 1. Open the Power BI service (app.powerbi.com).
 
@@ -45,6 +45,12 @@ Power BI *designers* can share an individual report directly with you via a link
 5. Notice the tabs along the left side.  Each tab represents a report *page*. We currently have the *Growth Opportunity* page open. Select the *YTD Category* tab to open that report page instead. 
 
    ![report page tabs](./media/end-user-report-open/power-bi-ytd.png)
+
+6. Notice the **Filters** pane along the right side. Filters that have been applied to this report page, or to the entire report, are displayed here.
+
+7. Hovering over a report visual reveals several icons and an ellipsis (...). To see the filters applied to a specific visual, select the filter icon. Here we've selected the filter icon for the *Total units by rolling period and region* line chart.
+
+   ![report page tabs](./media/end-user-report-open/power-bi-visual-filters.png)
 
 6. Right now we're seeing the entire report page. To change the display (zoom) of the page, select the View dropdown from the upper right corner and choose **Actual size**.
 
@@ -92,5 +98,6 @@ As you get more comfortable navigating the Power BI service, you'll figure out w
 - and more
 
 ## Next steps
-[Open and view a dashboard](end-user-dashboard-open.md)
+[Open and view a dashboard](end-user-dashboard-open.md)    
+[Report filters](end-user-report-filter.md)
 
