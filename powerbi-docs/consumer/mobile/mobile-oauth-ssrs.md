@@ -24,8 +24,8 @@ Watch Adam connects from Power BI Mobile to SSRS using OAuth.
 
 <iframe width="560" height="350" src="https://www.youtube.com/embed/okzPAI2uUek" frameborder="0" allowfullscreen></iframe>
 
-!> [!NOTE]
-!> Viewing Power BI Reports hosted in Power BI Report Server using WAP to authenticate is now supported for iOS and Android apps.
+> [!NOTE]
+> Viewing Power BI Reports hosted in Power BI Report Server using WAP to authenticate is now supported for iOS and Android apps.
 
 ## Requirements
 
@@ -33,23 +33,23 @@ Windows Server 2016 is required for the Web Application Proxy (WAP) and Active D
 
 ## Domain Name Services (DNS) configuration
 
-You need to determine what the public URL will be that the Power BI mobile app will connect to. For example, it may look similar to the following.
+The public URL will be that the Power BI mobile app will connect to. For example, it may look similar to the following.
 
 ```https
 https://reports.contoso.com
 ```
 
-You need to point your DNS record for **reports** to the public IP address of the Web Application Proxy (WAP) server. You will also need to configure a public DNS record for your ADFS server. For example, you may have configured the ADFS server with the following URL.
+Your DNS record for **reports** to the public IP address of the Web Application Proxy (WAP) server. You will also need to configure a public DNS record for your ADFS server. For example, you may have configured the ADFS server with the following URL.
 
 ```https
 https://fs.contoso.com
 ```
 
-You need to point your DNS record for **fs** to the public IP address of the Web Application Proxy (WAP) server as it will be published as part of the WAP application.
+Your DNS record for **fs** to the public IP address of the Web Application Proxy (WAP) server as it will be published as part of the WAP application.
 
 ## Certificates
 
-You need to configure certificates for both the WAP application and the ADFS server. Both of these certificates must be part of a valid certificate authority that your mobile devices recognize.
+You will need to configure certificates for both the WAP application and the ADFS server. Both of these certificates must be part of a valid certificate authority that your mobile devices recognize.
 
 ## Reporting Services configuration
 
@@ -153,7 +153,7 @@ To configure constrained delegation, you will want to do the following steps.
 
 1. On a machine that has the Active Directory tools installed, launch **Active Directory Users and Computers**.
 
-2. Find the machine account for your WAP server. By default, this will be in the computers container.
+2. Find the machine account for your WAP server. By default, it will be in the computers container.
 
 3. Right-click the WAP server and go to **Properties**.
 
@@ -171,7 +171,7 @@ To configure constrained delegation, you will want to do the following steps.
 
 7. Select **Users or Computers…**
 
-8. Enter the service account that you are using for Reporting Services. This is the account you added the SPN to within the Reporting Services configuration.
+8. Enter the service account that you are using for Reporting Services. This account is the account you added the SPN to within the Reporting Services configuration.
 
 9. Select the SPN for Reporting Services and then select **OK**.
 
@@ -196,10 +196,10 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 
 | Parameter | Comments |
 | --- | --- |
-| **ADFSRelyingPartyName** |This is the Web API name that you created as part of the Application Group within ADFS. |
-| **ExternalCertificateThumbprint** |This is the certificate to use for the external users. It is important that the certificate is valid on mobile devices and come from a trusted certificate authority. |
-| **BackendServerUrl** |This is the URL to the Report Server from the WAP server. If the WAP server is in a DMZ, you may need to use a fully qualified domain name. Make sure you can hit this URL from the web browser on the WAP server. |
-| **BackendServerAuthenticationSPN** |This is the SPN you created as part of the Reporting Services configuration. |
+| **ADFSRelyingPartyName** |The Web API name that you created as part of the Application Group within ADFS. |
+| **ExternalCertificateThumbprint** |The certificate to use for the external users. It is important that the certificate is valid on mobile devices and come from a trusted certificate authority. |
+| **BackendServerUrl** |The URL to the Report Server from the WAP server. If the WAP server is in a DMZ, you may need to use a fully qualified domain name. Make sure you can hit this URL from the web browser on the WAP server. |
+| **BackendServerAuthenticationSPN** |The SPN you created as part of the Reporting Services configuration. |
 
 ### Setting Integrated Authentication for the WAP Application
 
