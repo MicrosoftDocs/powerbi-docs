@@ -1,14 +1,14 @@
 ---
-title: What is a star schema and why do I need one for Power BI?
+title: Understand star schema and the importance for Power BI
 description: Understand a star schema and its relevance to developing Power BI data models optimized for performance and usability.
-author: guyinacube
+author: peter-myers
 manager: asaxton
 ms.reviewer: asaxton
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/05/2019
+ms.date: 09/09/2019
 ms.author: v-pemyer
 ---
 # Understand star schema and the importance for Power BI
