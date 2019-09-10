@@ -39,7 +39,7 @@ The public URL will be that the Power BI mobile app will connect to. For example
 https://reports.contoso.com
 ```
 
-Your DNS record for **reports** to the public IP address of the Web Application Proxy (WAP) server. You will also need to configure a public DNS record for your ADFS server. For example, you may have configured the ADFS server with the following URL.
+Your DNS record for **reports** to the public IP address of the Web Application Proxy (WAP) server. You also need to configure a public DNS record for your ADFS server. For example, you may have configured the ADFS server with the following URL.
 
 ```https
 https://fs.contoso.com
@@ -49,7 +49,7 @@ Your DNS record for **fs** to the public IP address of the Web Application Proxy
 
 ## Certificates
 
-You will need to configure certificates for both the WAP application and the ADFS server. Both of these certificates must be part of a valid certificate authority that your mobile devices recognize.
+You need to configure certificates for both the WAP application and the ADFS server. Both of these certificates must be part of a valid certificate authority that your mobile devices recognize.
 
 ## Reporting Services configuration
 
@@ -57,13 +57,13 @@ There isn’t much to configure on the Reporting Services side. We just need to 
 
 ### Service Principal Name (SPN)
 
-The SPN is a unique identifier for a service that uses Kerberos authentication. You will need to make sure you have a proper HTTP SPN present for your report server.
+The SPN is a unique identifier for a service that uses Kerberos authentication. You need to make sure you have a proper HTTP SPN present for your report server.
 
 For information on how to configure the proper Service Principal Name (SPN) for your report server, see [Register a Service Principal Name (SPN) for a Report Server](https://msdn.microsoft.com/library/cc281382.aspx).
 
 ### Enabling negotiate authentication
 
-To enable a report server to use Kerberos authentication, you will need to configure the Authentication Type of the report server to be RSWindowsNegotiate. You do it in the rsreportserver.config file.
+To enable a report server to use Kerberos authentication, you need to configure the Authentication Type of the report server to be RSWindowsNegotiate. You do it in the rsreportserver.config file.
 
 ```xml
 <AuthenticationTypes>  
@@ -77,11 +77,11 @@ For more information, see [Modify a Reporting Services Configuration File](https
 
 ## Active Directory Federation Services (ADFS) Configuration
 
-You will need to configure ADFS on a Windows 2016 server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
+You need to configure ADFS on a Windows 2016 server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
 
 ### Create an application group
 
-Within the AD FS Management screen, you will want to create an application group for Reporting Services, which will include information for the Power BI Mobile apps.
+Within the AD FS Management screen, you want to create an application group for Reporting Services, which will include information for the Power BI Mobile apps.
 
 You can create the application group with the following steps.
 
@@ -99,7 +99,7 @@ You can create the application group with the following steps.
 
 5. While the **Client ID** will be auto generated for your, enter in *484d54fc-b481-4eee-9505-0258a1913020* for both iOS and Android.
 
-6. You will want to add the following **Redirect URLs**:
+6. You want to add the following **Redirect URLs**:
 
    **Entries for Power BI Mobile – iOS:**  
    msauth://code/mspbi-adal://com.microsoft.powerbimobile  
@@ -141,7 +141,7 @@ When completed, you should see the properties of your application group look sim
 
 ## Web Application Proxy (WAP) Configuration
 
-You will want to enable the Web Application Proxy (Role) Windows role on a server in your environment. It must be on a Windows 2016 server. For more information, see [Web Application Proxy in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) and [Publishing Applications using AD FS Preauthentication](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
+You want to enable the Web Application Proxy (Role) Windows role on a server in your environment. It must be on a Windows 2016 server. For more information, see [Web Application Proxy in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) and [Publishing Applications using AD FS Preauthentication](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
 
 ### Constrained delegation configuration
 
@@ -149,7 +149,7 @@ In order to transition from OAuth authentication to Windows authentication, we n
 
 We need to configure constrained delegation on the WAP Server machine account within Active Directory. You may need to work with a domain administrator if you don’t have rights to Active Directory.
 
-To configure constrained delegation, you will want to do the following steps.
+To configure constrained delegation, you want to do the following steps.
 
 1. On a machine that has the Active Directory tools installed, launch **Active Directory Users and Computers**.
 
@@ -203,7 +203,7 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 
 ### Setting Integrated Authentication for the WAP Application
 
-After you add the WAP Application, you will need to set the BackendServerAuthenticationMode to use IntegratedWindowsAuthentication. You need the ID from the WAP Application in order to set it.
+After you add the WAP Application, you need to set the BackendServerAuthenticationMode to use IntegratedWindowsAuthentication. You need the ID from the WAP Application in order to set it.
 
 ```powershell
 Get-WebApplicationProxyApplication “Contoso Reports” | fl
@@ -221,15 +221,15 @@ Set-WebApplicationProxyApplication -id 30198C7F-DDE4-0D82-E654-D369A47B1EE5 -Bac
 
 ## Connecting with the Power BI Mobile App
 
-Within the Power BI mobile app, you will want to connect to your Reporting Services instance. To do that, supply the **External URL** for your WAP Application.
+Within the Power BI mobile app, you want to connect to your Reporting Services instance. To do that, supply the **External URL** for your WAP Application.
 
 ![Type the server address](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
 
-When you select **Connect**, you will be directed to your ADFS sign-in page. Enter valid credentials for your domain.
+When you select **Connect**, you be directed to your ADFS sign-in page. Enter valid credentials for your domain.
 
 ![Sign-in to ADFS](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
-After you select **Sign in**, you will see the elements from your Reporting Services server.
+After you select **Sign in**, you see the elements from your Reporting Services server.
 
 ## Multi-factor authentication
 
@@ -241,7 +241,7 @@ You can enable multi-factor authentication to enable additional security for you
 
 !["Failed to login to SSRS Server" error](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
-You can set up [Fiddler](http://www.telerik.com/fiddler) to act as a proxy for your mobile devices to see how far the request made it. To enable a Fiddler proxy for your phone device, you will need to setup the [CertMaker for iOS and Android](http://www.telerik.com/fiddler/add-ons) on the machine running Fiddler. The add-on is from Telerik for Fiddler.
+You can set up [Fiddler](http://www.telerik.com/fiddler) to act as a proxy for your mobile devices to see how far the request made it. To enable a Fiddler proxy for your phone device, you need to setup the [CertMaker for iOS and Android](http://www.telerik.com/fiddler/add-ons) on the machine running Fiddler. The add-on is from Telerik for Fiddler.
 
 If the sign-in works successfully when using Fiddler, you may have a certificate issue with either the WAP application or the ADFS server. You can use a tool such as [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) to verify if the certificates are valid.
 
