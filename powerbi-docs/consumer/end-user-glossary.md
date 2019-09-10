@@ -72,7 +72,7 @@ The navigation at the top left to quickly navigate between app workspaces.
 A mathematical determination of the size or number of something.
 
 **card** (visual type)
-A Power BI [visual type](end-user-visual-types.md).
+A Power BI [visual type](end-user-visual-type.md).
 
 **card** (Power BI Home)
 Power BI Home displays rectangular and square pictures that represent dashboards, reports, apps, and more. These pictures are referred to as *cards*.
