@@ -29,27 +29,27 @@ Watch Adam connects from Power BI Mobile to SSRS using OAuth.
 
 ## Requirements
 
-Windows Server 2016 is required for the Web Application Proxy (WAP) and Active Directory Federation Services (ADFS) servers. You do not need to have a Windows 2016 functional level domain.
+Windows Server 2016 is required for the Web Application Proxy (WAP) and Active Directory Federation Services (ADFS) servers. You don't need to have a Windows 2016 functional level domain.
 
 ## Domain Name Services (DNS) configuration
 
-You will need to determine what the public URL will be that the Power BI mobile app will connect to. For example, it may look similar to the following.
+You need to determine what the public URL will be that the Power BI mobile app will connect to. For example, it may look similar to the following.
 
 ```https
 https://reports.contoso.com
 ```
 
-You will need to point your DNS record for **reports** to the public IP address of the Web Application Proxy (WAP) server. You will also need to configure a public DNS record for your ADFS server. For example, you may have configured the ADFS server with the following URL.
+You need to point your DNS record for **reports** to the public IP address of the Web Application Proxy (WAP) server. You will also need to configure a public DNS record for your ADFS server. For example, you may have configured the ADFS server with the following URL.
 
 ```https
 https://fs.contoso.com
 ```
 
-You will need to point your DNS record for **fs** to the public IP address of the Web Application Proxy (WAP) server as it will be published as part of the WAP application.
+You need to point your DNS record for **fs** to the public IP address of the Web Application Proxy (WAP) server as it will be published as part of the WAP application.
 
 ## Certificates
 
-You will need to configure certificates for both the WAP application and the ADFS server. Both of these certificates must be part of a valid certificate authority that your mobile devices recognize.
+You need to configure certificates for both the WAP application and the ADFS server. Both of these certificates must be part of a valid certificate authority that your mobile devices recognize.
 
 ## Reporting Services configuration
 
