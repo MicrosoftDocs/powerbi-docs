@@ -116,9 +116,9 @@ Get-MsolCompanyInformation | fl allow*
 
 ### How can I prevent my existing users from starting to use Power BI?
 
-The Azure AD setting that controls this is **AllowAdHocSubscriptions**. Most tenants have this set to true, which means it's enabled. If you acquired Power BI through a partner, this may be set to false, which means it's disabled.
+The Azure AD setting that controls this is **AllowAdHocSubscriptions**. Most tenants have this set to *true*, which means it's enabled. If you acquired Power BI through a partner, this may be set to *false*, which means it's disabled.
 
-Use the following PowerShell script to disable ad hoc subscriptions. ([Learn more about PowerShell][1].)
+Use the following PowerShell script to disable ad hoc subscriptions.([Learn more about PowerShell][1].)
 
 1. Sign into Azure Active Directory using your Office 365 credentials. The first line of the following PowerShell script prompts you for your credentials. The second line connects to Azure Active Directory.
 
@@ -142,7 +142,7 @@ Use the following PowerShell script to disable ad hoc subscriptions. ([Learn mor
     ```
 
 > [!NOTE]
-> Use the **AllowAdHocSubscriptions** flag to control several user capabilities in your organization, including the ability for users to sign up for the Azure Rights Management Service. Changing this flag affects all of these capabilities.
+> Use the **AllowAdHocSubscriptions** flag to control several user capabilities in your organization, including the ability for users to sign up for the Azure Rights Management Service. Changing this flag affects all of these capabilities. With a setting of *false*, users can still sign up for a Pro trial.
 
 ### How can I allow my existing users to sign up for Power BI?
 
