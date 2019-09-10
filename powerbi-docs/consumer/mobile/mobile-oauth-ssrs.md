@@ -20,6 +20,7 @@ Watch Adam connects from Power BI Mobile to SSRS using OAuth:
 
 <iframe width="560" height="350" src="https://www.youtube.com/embed/okzPAI2uUek" frameborder="0" allowfullscreen></iframe>
 
+
 > [!NOTE]
 > Viewing Power BI Reports hosted in Power BI Report Server using WAP to authenticate is now supported for iOS and Android apps.
 
