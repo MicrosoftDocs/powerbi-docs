@@ -34,11 +34,11 @@ The DIVIDE function is convenient because it saves your expression from having t
 
 ## Example
 
-The following measure expression produces a safe division, but it involves using three DAX functions.
+The following measure expression produces a safe division, but it involves using four DAX functions.
 
 ```dax
 
-=IF(ISBLANK([Sales]) || [Sales] = 0, BLANK(), [Profit] / [Sales])
+=IF(OR(ISBLANK([Sales]), [Sales] == 0), BLANK(), [Profit] / [Sales])
 
 ```
 
