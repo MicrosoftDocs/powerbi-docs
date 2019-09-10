@@ -19,14 +19,13 @@ Learn how to configure your environment to support OAuth authentication with the
 
 You can use OAuth to connect to Power BI Report Server and Reporting Services to display mobile reports or KPIs. Windows Server 2016 provides some improvements to the Web Application Proxy (WAP) role to allow this type of authentication.
 
-   > [!NOTE]
-   > Viewing Power BI Reports hosted in Power BI Report Server using WAP to authenticate is now supported for iOS and Android apps.
-
 Watch Adam connects from Power BI Mobile to SSRS using OAuth.
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/okzPAI2uUek" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="350" src="https://www.youtube.com/embed/okzPAI2uUek" frameborder="0" allowfullscreen></iframe>
 
+   > [!NOTE]
+   > Viewing Power BI Reports hosted in Power BI Report Server using WAP to authenticate is now supported for iOS and Android apps.
 
 ## Requirements
 
