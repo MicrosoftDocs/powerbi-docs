@@ -102,11 +102,6 @@ After you've updated the app for your organization, you're ready to publish it. 
 
 6. After it's successfully published, you can copy the link and share it with whomever you've given access to. If you've shared it with them, they also see it on the **My organization** tab in AppSource.
 
-## Shay's
-1. overwrite cannot be undone, 
-1. Scenerio 1: no customizing - overwrite
-1. Scenerio 2: customization and published org app - validate on a new workspace
-
 ## Next steps 
 
 [Create workspaces with your colleagues in Power BI](service-create-workspaces.md)
