@@ -77,7 +77,7 @@ For more information, see [Modify a Reporting Services Configuration File](https
 
 ## Active Directory Federation Services (ADFS) Configuration
 
-You will need to configure ADFS on a Windows 2016 server within your environment. This can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
+You will need to configure ADFS on a Windows 2016 server within your environment. The configuration can be done through the Server Manager and selecting Add Roles and Features under Manage. For more information, see [Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
 
 ### Create an application group
 
@@ -85,7 +85,7 @@ Within the AD FS Management screen, you will want to create an application group
 
 You can create the application group with the following steps.
 
-1. Within the AD FS Management app, right click **Application Groups** and select **Add Application Group…**
+1. Within the AD FS Management app, right-click **Application Groups** and select **Add Application Group…**
 
    ![ADFS Add Application](media/mobile-oauth-ssrs/adfs-add-application-group.png)
 
@@ -107,7 +107,7 @@ You can create the application group with the following steps.
    mspbi-adal://com.microsoft.powerbimobile  
    mspbi-adalms://com.microsoft.powerbimobilems
 
-   **Android Apps only need the following:**  
+   **Android Apps only need the following steps:**  
    urn:ietf:wg:oauth:2.0:oob
 
    ![ADFS Application Group Wizard 02](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
@@ -149,13 +149,13 @@ In order to transition from OAuth authentication to Windows authentication, we n
 
 We need to configure constrained delegation on the WAP Server machine account within Active Directory. You may need to work with a domain administrator if you don’t have rights to Active Directory.
 
-To configure constrained delegation, you will want to do the following.
+To configure constrained delegation, you will want to do the following steps.
 
 1. On a machine that has the Active Directory tools installed, launch **Active Directory Users and Computers**.
 
 2. Find the machine account for your WAP server. By default, this will be in the computers container.
 
-3. Right click the WAP server and go to **Properties**.
+3. Right-click the WAP server and go to **Properties**.
 
 4. Select the **Delegation** tab.
 
@@ -197,13 +197,13 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 | Parameter | Comments |
 | --- | --- |
 | **ADFSRelyingPartyName** |This is the Web API name that you created as part of the Application Group within ADFS. |
-| **ExternalCertificateThumbprint** |This is the certificate to use for the external users. It is important that this certificate be valid on mobile devices and come from a trusted certificate authority. |
+| **ExternalCertificateThumbprint** |This is the certificate to use for the external users. It is important that the certificate is valid on mobile devices and come from a trusted certificate authority. |
 | **BackendServerUrl** |This is the URL to the Report Server from the WAP server. If the WAP server is in a DMZ, you may need to use a fully qualified domain name. Make sure you can hit this URL from the web browser on the WAP server. |
 | **BackendServerAuthenticationSPN** |This is the SPN you created as part of the Reporting Services configuration. |
 
 ### Setting Integrated Authentication for the WAP Application
 
-After you add the WAP Application, you will need to set the BackendServerAuthenticationMode to use IntegratedWindowsAuthentication. In order to set this, you need the ID from the WAP Application.
+After you add the WAP Application, you will need to set the BackendServerAuthenticationMode to use IntegratedWindowsAuthentication. You need the ID from the WAP Application in order to set it.
 
 ```powershell
 Get-WebApplicationProxyApplication “Contoso Reports” | fl
@@ -227,7 +227,7 @@ Within the Power BI mobile app, you will want to connect to your Reporting Servi
 
 When you select **Connect**, you will be directed to your ADFS sign-in page. Enter valid credentials for your domain.
 
-![Sign in to ADFS](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
+![Sign-in to ADFS](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
 After you select **Sign in**, you will see the elements from your Reporting Services server.
 
@@ -241,9 +241,9 @@ You can enable multi-factor authentication to enable additional security for you
 
 !["Failed to login to SSRS Server" error](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
-You can set up [Fiddler](http://www.telerik.com/fiddler) to act as a proxy for your mobile devices to see how far the request made it. To enable a Fiddler proxy for your phone device, you will need to setup the [CertMaker for iOS and Android](http://www.telerik.com/fiddler/add-ons) on the machine running Fiddler. This is an add-on from Telerik for Fiddler.
+You can set up [Fiddler](http://www.telerik.com/fiddler) to act as a proxy for your mobile devices to see how far the request made it. To enable a Fiddler proxy for your phone device, you will need to setup the [CertMaker for iOS and Android](http://www.telerik.com/fiddler/add-ons) on the machine running Fiddler. The add-on is from Telerik for Fiddler.
 
-If the sign in works successfully when using Fiddler, you may have a certificate issue with either the WAP application or the ADFS server. You can use a tool such as [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) to verify if the certificates are valid.
+If the sign-in works successfully when using Fiddler, you may have a certificate issue with either the WAP application or the ADFS server. You can use a tool such as [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) to verify if the certificates are valid.
 
 ## Next steps
 
