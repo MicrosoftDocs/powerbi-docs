@@ -53,7 +53,7 @@ Your browser adds special characters to represent slashes, spaces, and apostroph
    
     app.powerbi.com/groups/xxxx/reports/xxxx/ReportSection4d00c3887644123e310e?filter=Geo~2FRegion%20eq%20'Central'
 
-    ![Report with URL filter](media/service-share-reports/power-bi-share-report-filter-url.png)
+![Report with URL filter](media/service-share-reports/power-bi-share-report-filter-url.png)
 
 Save the report.
 
