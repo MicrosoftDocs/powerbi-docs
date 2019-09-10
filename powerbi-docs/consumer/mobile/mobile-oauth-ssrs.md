@@ -22,6 +22,12 @@ You can use OAuth to connect to Power BI Report Server and Reporting Services to
    > [!NOTE]
    > Viewing Power BI Reports hosted in Power BI Report Server using WAP to authenticate is now supported for iOS and Android apps.
 
+Watch Adam connects from Power BI Mobile to SSRS using OAuth.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/okzPAI2uUek" frameborder="0" allowfullscreen></iframe>
+
+
 ## Requirements
 
 Windows Server 2016 is required for the Web Application Proxy (WAP) and Active Directory Federation Services (ADFS) servers. You do not need to have a Windows 2016 functional level domain.
