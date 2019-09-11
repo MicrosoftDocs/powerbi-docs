@@ -87,7 +87,7 @@ Watch Will create a few different ArcGIS map visualizations and then use the ste
    > 
    
     ![arcgis fields pane](media/power-bi-visualization-arcgis/power-bi-fields-pane3new.png)
-2. Convert the visualization to an ArcGIS map by selecting the template from the Visualizations pane ![](media/power-bi-visualization-arcgis/power-bi-arcgis-template.png).
+
 3. From the **Fields** pane, drag a measure to the **Size** bucket to adjust how the data is shown. In this example we're using **Sales > Last Year Sales**.
    
     ![esri point map visualization](media/power-bi-visualization-arcgis/power-bi-esri-point-map-size2new.png)
@@ -107,7 +107,7 @@ To access **ArcGIS Maps for Power BI** formatting features:
    > For more information about the settings and features, see **Detailed documentation** below.
    > 
    > 
-2. To return to the report, select **Back to Report** from the top-left corner of your report canvas.
+
 
 <br/>
 
@@ -156,7 +156,7 @@ Four map themes are provided. Location Only and Size themes are automatically ch
 
 
 ### Symbol style
-Symbol styles enable you to fine tune how data is presented on the map. Symbol styles are context sensitive based on the selected Location type and Map theme. The example below shows Location type set to **Size** and several adjustments to transparency, style and size.
+Symbol styles enable you to fine tune how data is presented on the map. Symbol styles are context sensitive based on the selected Location type and Map theme. The example below shows Location type set to **Size** and several adjustments to transparency, style and size. The heat map theme has also been disabled. 
 
 ![esri symbol style example](media/power-bi-visualization-arcgis/power-bi-esri-symbol-style-new.png)
 

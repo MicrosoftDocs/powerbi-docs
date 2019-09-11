@@ -12,7 +12,7 @@ ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
-# Scatter charts, Bubble charts, and Dot Plot charts in Power BI
+# Scatter charts, bubble charts, and dot plot charts in Power BI
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -29,7 +29,7 @@ You can set the number of data points, up to a maximum of 10,000.
 
 ## When to use a scatter chart, bubble chart, or a dot plot chart
 
-### Scatter and Bubble charts
+### Scatter and bubble charts
 
 A scatter chart shows the relationship between two numerical values. A bubble chart replaces data points with bubbles, with the bubble *size* representing an additional third data dimension.
 
@@ -54,7 +54,7 @@ Scatter charts are a great choice:
 
 * To compare large numbers of data points without regard to time.  The more data that you include in a sScatter chart, the better the comparisons that you can make.
 
-In addition to what Scatter charts can do for you, Bubble charts are a great choice:
+In addition to what Scatter charts can do for you, bubble charts are a great choice:
 
 * If your data has three data series that each contains a set of values.
 
@@ -62,9 +62,9 @@ In addition to what Scatter charts can do for you, Bubble charts are a great cho
 
 * To use with quadrants.
 
-### Dot Plot charts
+### Dot plot charts
 
-A dot plot chart is similar to a bubble chart and scatter chart, but you can also plot numerical or categorical data along the X-Axis.
+A dot plot chart is similar to a bubble chart and scatter chart, but is instead used to plot categorical data along the X-Axis.
 
 ![Screenshot of a dot plot chart.](media/power-bi-visualization-scatter/power-bi-dot-plot.png)
 

@@ -85,7 +85,7 @@ Now create your own funnel chart that shows the number of opportunities we have 
    * Stage-to-stage (aka Drop Rate) which is the % of the previous stage (in this case, Proposal Stage/Solution Stage)
      
      ![details for Proposal bar](media/power-bi-visualization-funnel-charts/funnelhover-new.png)
-5. [Add the Funnel as a dashboard tile](../service-dashboard-tiles.md). 
+
 6. [Save the report](../service-report-save.md).
 
 ## Highlighting and cross-filtering
