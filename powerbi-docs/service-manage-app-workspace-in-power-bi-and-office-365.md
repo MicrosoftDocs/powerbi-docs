@@ -67,7 +67,7 @@ You can also edit aspects of an app workspace directly in Outlook for Office 365
 
 ### Add an image and set other workspace properties
 
-When you distribute your app from the app workspace, the image you add here is the image for your app. See the [Add an image to your Office 365 app workspace (optional)](service-create-workspaces.md#add-an-image-to-your-office-365-app-workspace-optional) section of the **Create the new workspaces** article.
+When you distribute your app from the app workspace, the image you add here is the image for your app. See [Add an image to your Office 365 app workspace](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional) in the **Create the new workspaces** article.
 
 1. In the Outlook for Office 365 view of your app workspace, go to the **About** tab and select **Edit**.
 
