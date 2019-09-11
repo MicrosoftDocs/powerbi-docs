@@ -9,7 +9,7 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: "cfinlan"
 ms.custom: ""
-ms.date: 08/29/2019
+ms.date: 09/10/2019
 ---
 
 # URL parameters in paginated reports in Power BI
@@ -37,7 +37,7 @@ URL requests can contain multiple parameters, listed in any order. Parameters ar
 powerbiserviceurl?rp:parametervalueh&rdl:parameter=value  
 ```
 
-## syntax description 
+## Syntax description 
 
 ### powerbiserviceurl 
 
@@ -68,7 +68,8 @@ You can use the following parameters as part of a URL to configure the look and 
 ### Report commands (`rdl:`) 
 
 **Export format**
-Specifies the format in which to render and export a report. Available values are: 
+Specifies the format in which to render and export a report. Available values are:
+ 
 - PPTX (PowerPoint)
 - MHTML 
 - IMAGE 
@@ -79,72 +80,78 @@ Specifies the format in which to render and export a report. Available values ar
 - XML 
 
 **Device Info**
-You may specify additional output parameters for the following export formats - 
+You may specify additional output parameters for the following export formats. 
 
-PDF - 
-		- rdl:AccessiblePDF=true/false
-		- rdl:Columns=integer
-		- rdl:ColumnSpacing=decimal(in)
-		- rdl:DpiX=integer
-		- rdl:DpiY=integer
-		- rdl:EndPage=integer
-		- rdl:HumanReadablePDF=true/false
-		- rdl:MarginBottom=decimal(in)
-		- rdl:MarginLeft=decimal(in)
-		- rdl:MarginRight=decimal(in)
-		- rdl:MarginTop=decimal(in)
-		- rdl:PageHeight=decimal(in)
-		- rdl:PageWidth=decimal(in)
+PDF:
+
+- rdl:AccessiblePDF=true/false
+- rdl:Columns=integer
+- rdl:ColumnSpacing=decimal(in)
+- rdl:DpiX=integer
+- rdl:DpiY=integer
+- rdl:EndPage=integer
+- rdl:HumanReadablePDF=true/false
+- rdl:MarginBottom=decimal(in)
+- rdl:MarginLeft=decimal(in)
+- rdl:MarginRight=decimal(in)
+- rdl:MarginTop=decimal(in)
+- rdl:PageHeight=decimal(in)
+- rdl:PageWidth=decimal(in)
     - rdl:StartPage=integer
     
-CSV - 
-		- rdl:Encoding=string
-		- rdl:ExcelMode=true/false
-		- rdl:FieldDelimiter=string
-		- rdl:FileExtension=string
-		- rdl:NoHeader=true/false
-		- rdl:Qualifier=string
-		- rdl:RecordDelimiter=string
-		- rdl:SuppressLineBreaks=true/false
+CSV:
+
+- rdl:Encoding=string
+- rdl:ExcelMode=true/false
+- rdl:FieldDelimiter=string
+- rdl:FileExtension=string
+- rdl:NoHeader=true/false
+- rdl:Qualifier=string
+- rdl:RecordDelimiter=string
+- rdl:SuppressLineBreaks=true/false
     - rdl:UseFormattedValues=true/false
     
-WORDOPENXML (WORD) - 
-		- rdl:AutoFit=string -> True/False/Never/Default
-		- rdl:ExpandToggles=true/false
-		- rdl:FixedPageWidth=true/false
-		- rdl:OmitHyperlinks=true/false
-		- rdl:OmitDrillthroughs=true/false
+WORDOPENXML (WORD):
 
-EXCELOPENXML (EXCEL) - 
-		- rdl:OmitDocumentMap=true/false
-		- rdl:OmitFormulas=true/false
+- rdl:AutoFit=string -> True/False/Never/Default
+- rdl:ExpandToggles=true/false
+- rdl:FixedPageWidth=true/false
+- rdl:OmitHyperlinks=true/false
+- rdl:OmitDrillthroughs=true/false
+
+EXCELOPENXML (EXCEL):
+
+- rdl:OmitDocumentMap=true/false
+- rdl:OmitFormulas=true/false
     - rdl:SimplePageHeaders=true/false
     
-PPTX (PowerPoint) - 
-		- rdl:Columns=integer
-		- rdl:ColumnSpacing=decimal(in)
-		- rdl:DpiX=integer
-		- rdl:DpiY=integer
-		- rdl:EndPage=integer
-		- rdl:MarginBottom=decimal(in)
-		- rdl:MarginLeft=decimal(in)
-		- rdl:MarginRight=decimal(in)
-		- rdl:MarginTop=decimal(in)
-		- rdl:PageHeight=decimal(in)
-		- rdl:PageWidth=decimal(in)
-		- rdl:StartPage=integer
+PPTX (PowerPoint):
+ 
+- rdl:Columns=integer
+- rdl:ColumnSpacing=decimal(in)
+- rdl:DpiX=integer
+- rdl:DpiY=integer
+- rdl:EndPage=integer
+- rdl:MarginBottom=decimal(in)
+- rdl:MarginLeft=decimal(in)
+- rdl:MarginRight=decimal(in)
+- rdl:MarginTop=decimal(in)
+- rdl:PageHeight=decimal(in)
+- rdl:PageWidth=decimal(in)
+- rdl:StartPage=integer
     - rdl:UseReportPageSize=true/false
 
-XML - 
-		- rdl:XSLT=string
-		- rdl:MIMEType=string
-		- rdl:UseFormattedValues=true/false
-		- rdl:Indented=true/false
-		- rdl:OmitNamespace=true/false
-		- rdl:OmitSchema=true/false
-		- rdl:Encoding=string
-		- rdl:FileExtension=string
-    - rdl:Schema=true/false
+XML:
+
+- rdl:XSLT=string
+- rdl:MIMEType=string
+- rdl:UseFormattedValues=true/false
+- rdl:Indented=true/false
+- rdl:OmitNamespace=true/false
+- rdl:OmitSchema=true/false
+- rdl:Encoding=string
+- rdl:FileExtension=string
+- rdl:Schema=true/false
 
 ## Next steps
 

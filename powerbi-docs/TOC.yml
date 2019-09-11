@@ -721,6 +721,8 @@
         href: service-template-apps-install-distribute.md
       - name: "Update, delete, and extract a Power BI template app"
         href: service-template-update-delete-extract.md
+      - name: "Template apps samples"
+        href: service-template-apps-samples.md        
     - name: Troubleshoot
       items: 
       - name: "Forgot your password for Power BI?"
