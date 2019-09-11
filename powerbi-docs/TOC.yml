@@ -676,7 +676,9 @@
       - name: "Link entities between dataflows"
         href: service-dataflows-linked-entities.md      
       - name: "Using incremental refresh with dataflows"
-        href: service-dataflows-incremental-refresh.md                  
+        href: service-dataflows-incremental-refresh.md
+      - name: "Best practices for dataflows"
+        href: service-dataflows-best-practices.md                
       - name: "Developer resources for dataflows"
         href: service-dataflows-developer-resources.md
       - name: "Connect to dataflows in Power BI Desktop"
