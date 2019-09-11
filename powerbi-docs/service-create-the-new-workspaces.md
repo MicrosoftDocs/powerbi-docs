@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 09/10/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -27,11 +27,11 @@ Here's what's different. In the new workspaces, you can:
 
 For more background, see the [new workspaces](service-new-workspaces.md) article.
 
-## Create one of the new app workspaces
+## Create one of the new workspaces
 
-1. Start by creating the app workspace. Select **Workspaces** > **Create app workspace**.
+1. Start by creating the workspace. Select **Workspaces** > **Create workspace**.
    
-     ![Create app workspace](media/service-create-the-new-workspaces/power-bi-create-app-workspace.png)
+     ![Create workspace](media/service-create-the-new-workspaces/power-bi-workspace-create.png)
 
 2. You're automatically creating an upgraded workspace, unless you opt to **Revert to classic**.
    
@@ -71,7 +71,7 @@ The new workspace contact list allows you to specify which users receive notific
 
     In the left navigation pane, select the arrow next to **Workspaces**, select the ellipsis (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
 
-    ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-settings.png)
+    ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
 2. Under **Advanced** > **Contact list**, accept the default, **Workspace admins**, or add your own list of **Specific users or groups**. 
 3. Select **Save**.
@@ -80,7 +80,7 @@ The new workspace contact list allows you to specify which users receive notific
 
 The Workspace OneDrive feature allows you to configure an Office 365 Group whose SharePoint Document Library file storage is available to workspace users. You create the group outside of Power BI first. 
 
-Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Office 365 Group membership. The best practice is give the same Office 365 group, whose file storage you configure in this setting Office 365 group, [access to the workspace](#give-access-to-your-workspace). Then manage workspace access by managing membership of the Office 365 group. 
+Power BI doesn't synchronize permissions of users or groups who are configured to have workspace access with the Office 365 Group membership. The best practice is to give the same Office 365 group, whose file storage you configure in this setting Office 365 group, [access to the workspace](#give-access-to-your-workspace). Then manage workspace access by managing membership of the Office 365 group. 
 
 1. Access the new **Workspace OneDrive** setting in one of two ways:
 
@@ -88,7 +88,7 @@ Power BI doesn't synchronize permissions of users or groups who are configured t
 
     In the left navigation pane, select the arrow next to **Workspaces**, select the ellipsis (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
 
-    ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-settings.png)
+    ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
 2. Under **Advanced** > **Workspace OneDrive**, type the name of the Office 365 group that you created earlier. Power BI automatically picks up the OneDrive for the group.
 
@@ -106,26 +106,26 @@ After you've configured the OneDrive location, you can get to it from a few diff
 
 - Select the ellipsis (**...**) menu in the upper-right corner of the workspace > **Files**.
 
-    ![Workspace files location](media/service-new-workspaces/power-bi-new-workspace-files-2.png)
+    ![Workspace files location](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
     
 - In the **Get Data** > **Files** experience. The **OneDrive – Business** entry is your own OneDrive for Business. The second OneDrive is the one you added.
 
-    ![Workspace files location - get data](media/service-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
+    ![Workspace files location - get data](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
 
-## Add content to your app workspace
+## Add content to your workspace
 
 After you've created a new workspace experience workspace, it's time to add content to it. Adding content is similar in the new and classic workspaces. Use the Create button or use Get Data to add content to your workspace.
 
 1. In the **Welcome** screen for your new workspace, you can add content. 
 
-    ![New workspace Welcome screen](media/service-create-the-new-workspaces/power-bi-workspace-welcome-screen.png)
+    ![New workspace Welcome screen](media/service-create-the-new-workspaces/power-bi-workspace-get-data.png)
 
 1. For example, select **Samples** > **Customer Profitability Sample**.
 
 > [!NOTE]
-> In the new workspaces, you can't consume organizational content packs, or third-party content packs. Apps are available for all third-party content packs you previously used. Use classic workspaces if you need to continue using content packs. Content packs are deprecated, so it's a best practice to use apps instead.
+> You can't add organizational content packs or third-party content packs to the new workspaces. Apps are available for many third-party content packs you previously used. Use classic workspaces if you need to continue using content packs. Content packs are deprecated, so it's a best practice to use apps instead.
 
-When you view content in the content list of an app workspace, the app workspace name is listed as the owner.
+When you view content in the content list of a workspace, the workspace name is listed as the owner.
 
 ### Connecting to third-party services in new workspaces
 
@@ -137,13 +137,13 @@ In the new workspace experience, you can't create or consume organizational cont
 
 1. In the workspace content list, because you're an admin you see a new action, **Access**.
 
-    ![Workspaces content list](media/service-create-the-new-workspaces/power-bi-workspace-content-list.png)
+    ![Workspaces content list](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
 
 1. Select **Access**.
 
 1. Add security groups, distribution lists, Office 365 groups, or individuals to these workspaces as members, contributors, or admins. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
 
-    ![Workspaces add members, admins, contributors](media/service-create-the-new-workspaces/power-bi-access-add-members.png)
+    ![Workspaces add members, admins, contributors](media/service-create-the-new-workspaces/power-bi-workspace-add-members.png)
 
 9. Select **Add** > **Close**.
 
