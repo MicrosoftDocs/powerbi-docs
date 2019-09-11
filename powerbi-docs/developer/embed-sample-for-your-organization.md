@@ -100,7 +100,6 @@ Follow the steps below to start embedding your content using the sample applicat
     | Field |
     |--------------------|
     | **[Application ID](#application-id)** |
-    | **[Application Secret](#application-secret)** |
     | **[Workspace ID](#workspace-id)** |
     | **[Report ID](#report-id)** |
     | **[AADAuthorityUrl](#aadauthorityurl)** |

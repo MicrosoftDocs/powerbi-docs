@@ -1,6 +1,6 @@
 ---
-title: Capabilities
-description: Power BI Visuals capabilities and properties
+title: Capabilities and properties of Power BI visuals
+description: This article describes the capabilities and properties of Power BI visuals.
 author: asander
 ms.author: asander
 manager: rkarlin
@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Power BI Visual capabilities
+# Capabilities and properties of Power BI visuals 
 
-Capabilities provides information to the host about your visual. All properties on the Capabilities model are `optional`
+You use capabilities to provide information to the host about your visual. All properties on the capabilities model are `optional`.
 
-Root objects of visual's capabilities are `dataRoles`, `dataViewMappings`, so on.
+The root objects of a visual's capabilities are `dataRoles`, `dataViewMappings`, and so on.
 
 ```json
 {
@@ -29,29 +29,29 @@ Root objects of visual's capabilities are `dataRoles`, `dataViewMappings`, so on
 
 ```
 
-## Define the data fields your visual expects - `dataRoles`
+## Define the data fields that your visual expects: dataRoles
 
-To define fields that can be bound to data, we use `dataRoles` which takes an array of `DataViewRole` objects, which defines all of the properties needed.
+To define fields that can be bound to data, you use `dataRoles`. `dataRoles` takes an array of `DataViewRole` objects, which defines all the required properties.
 
 ### Properties
 
-* **name** - the internal name of this data field (must be unique)
-* **kind** - the kind of field:
-    * `Grouping` - Discrete values used for grouping of measure fields
-    * `Measure` - Numeric data values
-    * `GroupingOrMeasure` - Can be used as either a grouping or measure
-* **displayName** - the name displayed to the user in the properties pane
-* **description** - a short description of the field (optional)
-* **requiredTypes** - the required type of data for this data role. Any values that do not match will be set to null (optional)
-* **preferredTypes** - the preferred type of data for this data role (optional)
+* **name**: The internal name of this data field (must be unique).
+* **kind**: The kind of field:
+    * `Grouping`: Discrete values that are used to group measure fields.
+    * `Measure`: Numeric data values.
+    * `GroupingOrMeasure`: Values that can be used as either a grouping or a measure.
+* **displayName**: The name displayed to the user in the **Properties** pane.
+* **description**: A short description of the field (optional).
+* **requiredTypes**: The required type of data for this data role. Values that don't match are set to null (optional).
+* **preferredTypes**: The preferred type of data for this data role (optional).
 
-### Valid data types in "requiredTypes" and "preferredTypes"
+### Valid data types in requiredTypes and preferredTypes
 
-* **bool** - a boolean value
-* **integer** - an integer (whole number) value
-* **numeric** - a numeric value
-* **text** - a text value
-* **geography** - a geographic data
+* **bool**: A boolean value
+* **integer**: An integer (whole number) value
+* **numeric**: A numeric value
+* **text**: A text value
+* **geography**: A geographic data
 
 ### Example
 
@@ -152,15 +152,15 @@ To define fields that can be bound to data, we use `dataRoles` which takes an ar
 ]
 ```
 
-The above data roles would create the following fields
+The preceding data roles would create the fields that are displayed in the following image:
 
-![Data role displaying](./media/data-role-display.png)
+![Data role fields](./media/data-role-display.png)
 
-## Define how you want the data mapped - `dataViewMappings`
+## Define how you want the data mapped: dataViewMappings
 
-A DataViewMapping describes how the data roles relate to each other and allows you to specify conditional requirements for the them.
+A DataViewMappings property describes how the data roles relate to each other and allows you to specify conditional requirements for the them.
 
-Most visuals provide a single mapping, but you can provide multiple dataViewMappings. Each valid mapping will produce a DataView. 
+Most visuals provide a single mapping, but you can provide multiple dataViewMappings. Each valid mapping produces a data view. 
 
 ```json
 "dataViewMappings": [
@@ -174,13 +174,11 @@ Most visuals provide a single mapping, but you can provide multiple dataViewMapp
 ]
 ```
 
-[Learn more about DataViewMappings](dataview-mappings.md)
+For more information, see [Understand data view mapping in Power BI visuals](dataview-mappings.md).
 
-## Define property pane options - `objects`
+## Define property pane options: objects
 
-Objects describe customizable properties associated with the visual.
-Each object can have multiple properties and each property has a type associated with it.
-Types refer to what the property will be. See below for more information about types.
+Objects describe customizable properties that are associated with the visual. Each object can have multiple properties, and each property has a type that's associated with it. Types refer to what the property will be. 
 
 ```json
 "objects": {
@@ -191,24 +189,22 @@ Types refer to what the property will be. See below for more information about t
 }
 ```
 
-[Learn more about objects](objects-properties.md)
+For more information, see [Objects and properties of Power BI visuals](objects-properties.md).
 
-## Handle partial highlighting - `supportsHighlight`
+## Handle partial highlighting: supportsHighlight
 
-By default this value is set to false, which means your "Values" will be automatically filtered when something on the page is selected which will in turn update your visual to display just the selected value. If you want to display the full data, but just highlight the selected items you need to set `supportsHighlight` to true in your capabilities.json.
+By default, this value is set to `false`, which means that your values are automatically filtered when something on the page is selected. This automatic filtering in turn updates your visual to display only the selected value. If you want to display the full data but highlight only the selected items, you need to set `supportsHighlight` to `true` in your *capabilities.json* file.
 
-[Learn more about highlighting](highlight.md)
+For more information, see [Highlight data points in Power BI visuals](highlight.md).
 
-## Handle Advanced Edit Mode - `advancedEditModeSupport`
+## Handle advanced edit mode: advancedEditModeSupport
 
-A visual can declare its support of Advanced Edit Mode.
-By default, a visual doesn't support Advanced Edit Mode, unless stated otherwise in the capabilities json.
+A visual can declare its support of advanced edit mode. By default, a visual doesn't support advanced edit mode, unless stated otherwise in the *capabilities.json* file.
 
-[Learn more about advancedEditModeSupport](advanced-edit-mode.md)
+For more information, see [Advanced edit mode in Power BI visuals](advanced-edit-mode.md).
 
-## Data sorting options for visual - `sorting`
+## Data sorting options for visual: sorting
 
-A visual can define its sorting behavior via its capabilities.
-By default, a visual doesn't support modifying its sorting order unless stated otherwise in the capabilities.json.
+A visual can define its sorting behavior via its capabilities. By default, a visual doesn't support modifying its sorting order, unless stated otherwise in the *capabilities.json* file.
 
-[Learn more about sorting](sort-options.md)
+For more information, see [Sorting options for Power BI visuals](sort-options.md).

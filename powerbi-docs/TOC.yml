@@ -287,6 +287,8 @@
         href: power-bi-hyperlinks-in-tables.md
       - name: "Display images in tables"
         href: power-bi-images-tables.md
+      - name: "Custom format strings"
+        href: desktop-custom-format-strings.md      
       - name: "Conditional table formatting"
         href: desktop-conditional-table-formatting.md
       - name: "Conditional expression-based title formatting"
@@ -407,6 +409,8 @@
     items: 
     - name: "What is Power BI?"
       href: power-bi-overview.md
+    - name: "What is the Power BI service?"
+      href: power-bi-service-overview.md
     - name: "Comparing Power BI Desktop and the service"
       href: service-service-vs-desktop.md
   - name: Tutorials
@@ -669,12 +673,14 @@
         href: service-dataflows-computed-entities-premium.md
       - name: "Connect to data sources with dataflows"
         href: service-dataflows-data-sources.md        
-      - name: "Using dataflows with on-premises data sources"
+      - name: "Use dataflows with on-premises data sources"
         href: service-dataflows-on-premises-gateways.md    
       - name: "Link entities between dataflows"
         href: service-dataflows-linked-entities.md      
-      - name: "Using incremental refresh with dataflows"
-        href: service-dataflows-incremental-refresh.md                  
+      - name: "Use incremental refresh with dataflows"
+        href: service-dataflows-incremental-refresh.md
+      - name: "Best practices for dataflows"
+        href: service-dataflows-best-practices.md                
       - name: "Developer resources for dataflows"
         href: service-dataflows-developer-resources.md
       - name: "Connect to dataflows in Power BI Desktop"
@@ -715,6 +721,8 @@
         href: service-template-apps-install-distribute.md
       - name: "Update, delete, and extract a Power BI template app"
         href: service-template-update-delete-extract.md
+      - name: "Template apps samples"
+        href: service-template-apps-samples.md        
     - name: Troubleshoot
       items: 
       - name: "Forgot your password for Power BI?"
@@ -1360,7 +1368,7 @@
   - name: "Resources"
     items:
     - name: "Monthly gateway updates"
-      href: "https://review.docs.microsoft.com/data-integration/gateway/service-gateway-monthly-updates?branch=master"
+      href: "/data-integration/gateway/service-gateway-monthly-updates"
 - name: Administration
   items:
   - name: Overview
