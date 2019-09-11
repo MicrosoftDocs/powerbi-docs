@@ -285,6 +285,8 @@
         href: service-add-hyperlink-to-text-box.md
       - name: "Hyperlinks in tables"
         href: power-bi-hyperlinks-in-tables.md
+      - name: "Custom format strings"
+        href: desktop-custom-format-strings.md      
       - name: "Conditional table formatting"
         href: desktop-conditional-table-formatting.md
       - name: "Conditional expression-based title formatting"
@@ -671,12 +673,14 @@
         href: service-dataflows-computed-entities-premium.md
       - name: "Connect to data sources with dataflows"
         href: service-dataflows-data-sources.md        
-      - name: "Using dataflows with on-premises data sources"
+      - name: "Use dataflows with on-premises data sources"
         href: service-dataflows-on-premises-gateways.md    
       - name: "Link entities between dataflows"
         href: service-dataflows-linked-entities.md      
-      - name: "Using incremental refresh with dataflows"
-        href: service-dataflows-incremental-refresh.md                  
+      - name: "Use incremental refresh with dataflows"
+        href: service-dataflows-incremental-refresh.md
+      - name: "Best practices for dataflows"
+        href: service-dataflows-best-practices.md                
       - name: "Developer resources for dataflows"
         href: service-dataflows-developer-resources.md
       - name: "Connect to dataflows in Power BI Desktop"
