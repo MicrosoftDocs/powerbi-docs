@@ -61,21 +61,26 @@ Power BI *designers* can share an individual report directly with you via a link
 ### Open a report that is part of an app
 If you've received apps from colleagues or from AppSource, those apps are available from Home and from the **Apps** container on your nav bar. An [app](end-user-apps.md) is a bundle of dashboards and reports.
 
+### Prerequisites
+To follow along, download the Sales and Marketing app.
+1. In your browser, navigate to appsource.microsoft.com.
+1. Search for "Sales and Marketing" and select **Microsoft sample - Sales & Marketing**.
+1. Select **Get it now** > **Continue** > **Install** to install the app in your Apps container. 
+
+You can open the app from your Apps container or from Home.
 1. Go back to Home by selecting **Home** from the nav bar.
 
 7. Scroll down until you see **My Apps**.
 
-   ![Home page](./media/end-user-report-open/power-bi-my-apps.png)
+   ![Home page](./media/end-user-report-open/power-bi-app.png)
 
-8. Select one of the apps to open it. Depending on the options set by the app *designer*, the app will open either a dashboard or a report. If selecting the app:
-    - opens the report, you're all set.
-    - opens a dashboard, see ***Open a report from a dashboard***, below.
+8. Select your new Sales and marketing app to open it. Depending on the options set by the app *designer*, the app will open either a dashboard or a report. This app opens to a dashboard.  
 
 
 ## Open a report from a dashboard
 Reports can be opened from a dashboard. Most dashboard [tiles](end-user-tiles.md) are *pinned* from reports. Selecting a tile opens the report that was used to create the tile. 
 
-1. From a dashboard, select a tile. In this example we've selected the "Total Units YTD..." column chart tile.
+1. From the dashboard, select a tile. In this example we've selected the "Total Units YTD..." column chart tile.
 
     ![dashboard with tile selected](./media/end-user-report-open/power-bi-dashboard.png)
 
