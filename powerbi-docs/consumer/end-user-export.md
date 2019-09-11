@@ -9,11 +9,7 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-<<<<<<< HEAD
-ms.date: 9/11/2019
-=======
-ms.date: 09/09/2019
->>>>>>> c433d5533ec950a29337f7cb2270ac4fdbebba86
+ms.date: 09/11/2019
 ms.author: mihart
 
 LocalizationGroup: Consumers
