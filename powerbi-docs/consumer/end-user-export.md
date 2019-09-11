@@ -14,7 +14,7 @@ ms.author: mihart
 
 LocalizationGroup: Consumers
 ---
-# Export data from visual
+# Export data from a visual
 If you'd like to see the data that is used to create a visual, [you can display that data in Power BI](end-user-show-data.md) or export that data to Excel. The option to export the data requires a certain type or license and edit permissions to the content. If you cannot export, check with your Power BI administrator. 
 
 ## From a visual on a Power BI dashboard
@@ -58,7 +58,7 @@ You can export data from a visual in a report as .csv or .xlsx (Excel) format.
 
 4. You'll see options to export Summarized data or Underlying data. If you're using the *Sales and marketing sample* app, **Underlying data** will be disabled. But you may encounter reports where both options are enabled. Here's an explanation of the difference.
 
-    **Summarized data**: select this option if you want to export data for what you see in the visual.  This type of export shows you only the data that was used to create the visual. If the visual has filters applied, then the data you export will also be filtered. For example, for this visual, your export will include only data for 2014 and the central region, and only data for four of the manufacturers: VanArsdel, Natura, Aliqui, and Prirum.
+    **Summarized data**: select this option if you want to export data for what you see in the visual.  This type of export shows you only the data that was used to create the visual. If the visual has filters applied, then the data you export will also be filtered. For example, for this visual, your export will include only data for 2014 and the central region, and only data for four of the manufacturers: VanArsdel, Natura, Aliqui, and Pirum.
   
 
     **Underlying data**: select this option if you want to export data for what you see in the visual **plus** additional data from the underlying dataset.  This may include data that is contained in the dataset but not used in the visual. 
