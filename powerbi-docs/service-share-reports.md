@@ -41,17 +41,17 @@ When you add the filter to the end of the report page URL, the behavior is a lit
 
 Add the following to the end of the report page URL:
    
-?filter=*tablename*/*fieldname* eq *value*
+    ?filter=*tablename*/*fieldname* eq *value*
    
 The field must be of type number, datetime, or string. The *tablename* or *fieldname* values can't contain spaces.
    
 In our example, the name of the table is **Geo**, the name of the field is **Region**, and the value we want to filter on is **Central**:
    
-?filter=Geo/Region eq 'Central'
+    ?filter=Geo/Region eq 'Central'
 
 Your browser adds special characters to represent slashes, spaces, and apostrophes, so you end up with something like:
    
-app.powerbi.com/groups/xxxx/reports/xxxx/ReportSection4d00c3887644123e310e?filter=Geo~2FRegion%20eq%20'Central'
+    app.powerbi.com/groups/xxxx/reports/xxxx/ReportSection4d00c3887644123e310e?filter=Geo~2FRegion%20eq%20'Central'
 
 ![Report with URL filter](media/service-share-reports/power-bi-share-report-filter-url.png)
 
