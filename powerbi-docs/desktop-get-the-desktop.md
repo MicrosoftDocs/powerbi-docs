@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/10/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -36,9 +36,9 @@ You can also download the latest version of Power BI Desktop from the following 
 
 Regardless of which way you choose to download, once **Power BI Desktop** is downloaded you're prompted to run the installation file:
 
-![Run the Power BI Desktop installation file](media/desktop-get-the-desktop/getpbid_3.png)
+![Run the Power BI Desktop installation file](media/desktop-get-the-desktop/download-desktop-exe.png)
 
-Beginning with the July 2019 release, **Power BI Desktop** ships as a single .exe installation package that contains all supported languages. There are separate .exe files for 32-bit and 64-bit versions. The .msi packages will be discontinued after the September 2019 release, after which you must use the .exe executable for installation. This approach makes distribution, updates, and installation (especially for administrators) much easier and more convenient. You can also use command-line parameters to customize the installation process, as described in the [using command-line options during installation](#using-command-line-options-during-installation) section later in this article.
+Beginning with the July 2019 release, **Power BI Desktop** shipped as a single .exe installation package that contains all supported languages. There are separate .exe files for 32-bit and 64-bit versions. The .msi packages were discontinued beginning with the September 2019 release, requiring the .exe executable for installation. This approach makes distribution, updates, and installation (especially for administrators) much easier and more convenient. You can also use command-line parameters to customize the installation process, as described in the [using command-line options during installation](#using-command-line-options-during-installation) section later in this article.
 
 Once you launch the installation package, **Power BI Desktop** is installed as an application and runs on your desktop.
 
@@ -101,6 +101,27 @@ The following list provides the minimum requirements to run **Power BI Desktop**
 
 We always want your experience with Power BI Desktop to be great. There may be occasions when you run into an issue with Power BI Desktop, so this section contains solutions or suggestions to address issues that might arise. 
 
+### Installing Power BI Desktop on remote machines
+
+If you’re deploying Power BI Desktop to your users with a tool that requires a Windows installer file (.msi file) you can extract the .msi file from the Power BI Desktop installer .exe file. You can use third-party tools such as the WiX Toolset to accomplish this.
+
+> [!NOTE]
+> As a third-party product, WiX Toolset options might change without notice. Please check their documentation for the most up to date information, and contact their user mailing list for help.
+
+* On the computer where you downloaded the Power BI Desktop installer, download and install the latest version of the WiX Toolset from the WiX website at https://wixtoolset.org/.
+* Open a command line windows as an administrator and navigate to the folder where you installed WiX Toolset.
+* Run the following command: 
+    
+    ```Dark.exe <path to Power BI Desktop installer> -x <output folder>```
+
+    For example, run:
+
+    ``` Dark.exe C:\PBIDesktop_x64.exe -x C:\output```
+
+* The output folder will contain a folder named *AttachedContainer* that includes the .msi files.
+
+
+
 
 ### Using command-line options during installation 
 
@@ -118,6 +139,25 @@ When installing Power BI Desktop, you can set properties and options with comman
 |-uninstall     |uninstall Power BI Desktop         |
 |-repair     |repair the installation (or install if it's not currently installed)         |
 |-package, -update     |install Power BI Desktop (default, as long as -uninstall or -repair aren't specified)         |
+
+You can also use the following **syntax parameters**, which are specified with a "PROPERTY=VALUE" syntax:
+
+
+|Parameter  |Meaning  |
+|---------|---------|
+|ACCEPT_EULA     |Requires a value of 1 to automatically accept the EULA         |
+|ENABLECXP     |Value of 1 enrolls in the customer experience program that captures telemetry on usage of the product         |
+|INSTALLDESKTOPSHORTCUT     |Value of 1 adds a shortcut to the Desktop         |
+|INSTALLLOCATION     |File path to where you want it installed         |
+|LANGUAGE     |Locale code, for example en-US, de-DE, pr-BR, to force the default language of the application. If no language is specified, Power BI Desktop displays the Windows OS language. This can be changed by the user in the Options dialog.         |
+|REG_SHOWLEADGENDIALOG     |Value of 0 disables showing the dialog that appears before you have signed in to Power BI Desktop         |
+
+
+
+
+For example, you could run it with the following syntax to install without any user interface, using the German language: 
+
+```“-quiet LANG=de-DE ACCEPT_EULA=1”```
 
 
 ### Issues when using previous releases of Power BI Desktop
