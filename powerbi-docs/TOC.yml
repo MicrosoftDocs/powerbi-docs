@@ -869,6 +869,8 @@
     items:
     - name: "Supported languages and countries/regions"
       href: supported-languages-countries-regions.md
+    - name: "Supported browsers"
+      href: power-bi-browsers.md
   - name: Resources
     items:
     - name: Whitepapers

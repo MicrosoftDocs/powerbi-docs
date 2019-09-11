@@ -320,7 +320,7 @@ LocalizationGroup: Get started
                                 </a>
                             </li>                            
                             <li>
-                                <a href="/power-bi/consumer/end-user-browsers" data-linktype="absolute-path">
+                                <a href="/power-bi/power-bi-browsers" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
