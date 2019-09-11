@@ -9,7 +9,7 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 9/9/2019
+ms.date: 09/09/2019
 ms.author: mihart
 
 LocalizationGroup: Consumers
@@ -21,11 +21,11 @@ If you'd like to see the data that is used to create a visual, [you can display 
 
 1. Start on a Power BI dashboard. Here we're using the dashboard from the ***Marketing and sales sample*** app. You can [download this app from AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282).
 
-    ![app dashboard](media/end-user-export/power-bi-dashboards.png)
+    ![App dashboard](media/end-user-export/power-bi-dashboards.png)
 
 2. Hover over a visual to reveal the ellipses (...) and click to display the action menu.
 
-    ![menu that appears when select ellipses](media/end-user-export/power-bi-action-menu.png)
+    ![Menu that appears when select ellipses](media/end-user-export/power-bi-action-menu.png)
 
 3. Select  **Export to Excel**.
 
@@ -35,7 +35,7 @@ If you'd like to see the data that is used to create a visual, [you can display 
 
 5. Open the file in Excel.  
 
-    ![TOtal Units YTD in Excel](media/end-user-export/power-bi-excel.png)
+    ![Total Units YTD in Excel](media/end-user-export/power-bi-excel.png)
 
 
 ## From a visual in a report
@@ -43,13 +43,13 @@ You can export data from a visual in a report as .csv or .xlsx (Excel) format.
 
 1. On a dashboard, select a tile to open the underlying report.  In this example, we're selecting the same visual as above, *Total Units YTD Var %*. 
 
-    ![highlighted dashboard tile](media/end-user-export/power-bi-export-reports.png)
+    ![Highlighted dashboard tile](media/end-user-export/power-bi-export-reports.png)
 
     Since this tile was created from the *Sales and Marketing Sample* report, that is the report that opens. And, it opens to the page that contains the selected tile visual. 
 
 2. Select the tile in the report. Notice the **Filters** pane to the right. This visual has filters applied. To learn more about filters, see [Use filters in a report](end-user-report-filter.md).
 
-    ![filter pane selected](media/end-user-export/power-bi-export-filter.png)
+    ![Filter pane selected](media/end-user-export/power-bi-export-filter.png)
 
 
 3. Select the ellipses in the upper right corner of the visualization. Choose **Export data**.
@@ -63,14 +63,14 @@ You can export data from a visual in a report as .csv or .xlsx (Excel) format.
 
     **Underlying data**: select this option if you want to export data for what you see in the visual **plus** additional data from the underlying dataset.  This may include data that is contained in the dataset but not used in the visual. 
 
-    ![menu where you choose underlying or summarized](media/end-user-export/power-bi-export-option.png)
+    ![Menu where you choose underlying or summarized](media/end-user-export/power-bi-export-option.png)
 
-5. What happens next depends on which browser you are using. You may be prompted to save the file or your may see a link to the exported file at the bottom of the browser. 
+5. What happens next depends on which browser you are using. You might be prompted to save the file or your might see a link to the exported file at the bottom of the browser. 
 
-    ![exported file displaying in Microsoft Edge browser](media/end-user-export/power-bi-export-edge-browser.png)
+    ![Exported file displaying in Microsoft Edge browser](media/end-user-export/power-bi-export-edge-browser.png)
 
 
-7. Open the file in Excel. Compare the amount of data exported to the data we exported from the same visual on the dashboard. The difference is that this export includes **Underlying data**. 
+6. Open the file in Excel. Compare the amount of data exported to the data we exported from the same visual on the dashboard. The difference is that this export includes **Underlying data**. 
 
-    ![sample Excel](media/end-user-export/power-bi-underlying.png)
+    ![Sample Excel](media/end-user-export/power-bi-underlying.png)
 
