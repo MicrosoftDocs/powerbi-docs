@@ -65,7 +65,7 @@ You can export data from a visual in a report as .csv or .xlsx (Excel) format.
 
     ![Menu where you choose underlying or summarized](media/end-user-export/power-bi-export-option.png)
 
-5. What happens next depends on which browser you are using. You might be prompted to save the file or your might see a link to the exported file at the bottom of the browser. 
+5. What happens next depends on which browser you are using. You might be prompted to save the file or you might see a link to the exported file at the bottom of the browser. 
 
     ![Exported file displaying in Microsoft Edge browser](media/end-user-export/power-bi-export-edge-browser.png)
 
