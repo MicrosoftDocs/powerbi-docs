@@ -122,7 +122,7 @@ If the unlimited Power BI (free) license block isn't available and you don't wan
 
 As an administrator, you can choose to enable or disable individual user sign ups through Azure Active Directory (AAD). This section of the article shows you how to manage sign ups with PowerShell commands. For more information about Azure PowerShell, see [Overview of Azure PowerShell](/powershell/azure/overview).
 
-The AAD setting that controls sign up is **AllowAdHocSubscriptions**. In most tenants, this is set to *true*, which means it is enabled. If you acquired Power BI through a partner, this might be set to *false*, which means it is disabled. If you change the setting from *true* to *false*, new users in your organization are blocked from signing up individually. Users that signed up for Power BI prior to the setting change retain their licenses.
+The Azure AD setting that controls sign up is **AllowAdHocSubscriptions**. In most tenants, this is set to *true*, which means it is enabled. If you acquired Power BI through a partner, this might be set to *false*, which means it is disabled. If you change the setting from *true* to *false*, new users in your organization are blocked from signing up individually. Users that signed up for Power BI prior to the setting change retain their licenses. Note that with a setting of *false*, users can still sign up for a Pro trial.
 
 1. Sign into Azure Active Directory using your Office 365 credentials. The first line of the following PowerShell script prompts you for your credentials. The second line connects to Azure Active Directory.
 
