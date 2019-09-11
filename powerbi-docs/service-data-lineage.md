@@ -68,7 +68,7 @@ Power BI highlights all the artifacts related to that artifact, and dims the res
 
 ## Considerations and limitations
 
-Lineage view isn't available on Internet Explorer. See [Supported browsers for Power BI](power-bi-browser.md) for details.
+Lineage view isn't available on Internet Explorer. See [Supported browsers for Power BI](power-bi-browsers.md) for details.
 
 ## Next steps
 

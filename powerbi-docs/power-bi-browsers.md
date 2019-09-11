@@ -18,7 +18,7 @@ LocalizationGroup: Get started
 Power BI runs in these browsers:
 
 - Microsoft Edge
-- Internet Explorer 11. Some advanced features, such as lineage view, aren't supported in Internet Explorer. See [Data lineage (Preview)](../service-data-lineage.md) for details.
+- Internet Explorer 11. Some advanced features, such as lineage view, aren't supported in Internet Explorer. See [Data lineage (Preview)](service-data-lineage.md) for details.
 - Chrome desktop latest version
 - Safari Mac latest version
 - Firefox desktop latest version. Firefox may change the fonts used in Power BI 
