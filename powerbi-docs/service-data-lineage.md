@@ -39,7 +39,7 @@ You see the data sources from which the datasets and dataflows get their data. O
  
 **Gateways**
 
-If a data source is connected to an on-premises data source by way of a gateway, the gateway is represented as one of the nodes. If you have permissions as either gateway admin or as a data source user, you see more information, such as the gateway name.
+If a data source is connected to an on-premises data source by way of a gateway, the gateway is represented as one of the nodes in Lineage view. If you have permissions as either gateway admin or as a data source user, you see more information, such as the gateway name.
 
 **Datasets and dataflows**
  
@@ -51,7 +51,7 @@ If a report in the workspace is built on a dataset in another workspace, you see
   
 To see more metadata on datasets, select the dataset node itself. Additional information on the dataset is displayed in a side pane.
  
-## Show lineage for an artifact 
+## Show lineage for any artifact 
 
 Say you want to see the lineage for a specific artifact.
 
