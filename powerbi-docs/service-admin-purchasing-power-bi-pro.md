@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: quickstart
-ms.date: 10/21/2018
+ms.date: 9/9/2019
 ms.author: mblythe
 
 LocalizationGroup: Administration
