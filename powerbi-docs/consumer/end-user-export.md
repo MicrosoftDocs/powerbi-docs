@@ -9,7 +9,7 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 9/9/2019
+ms.date: 9/11/2019
 ms.author: mihart
 
 LocalizationGroup: Consumers
@@ -74,3 +74,6 @@ You can export data from a visual in a report as .csv or .xlsx (Excel) format.
 
     ![sample Excel](media/end-user-export/power-bi-underlying.png)
 
+## Next steps
+
+[Display the data used to create a visual](end-user-show-data.md)
