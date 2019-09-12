@@ -285,6 +285,8 @@
         href: service-add-hyperlink-to-text-box.md
       - name: "Hyperlinks in tables"
         href: power-bi-hyperlinks-in-tables.md
+      - name: "Custom format strings"
+        href: desktop-custom-format-strings.md      
       - name: "Conditional table formatting"
         href: desktop-conditional-table-formatting.md
       - name: "Conditional expression-based title formatting"
