@@ -285,6 +285,8 @@
         href: service-add-hyperlink-to-text-box.md
       - name: "Hyperlinks in tables"
         href: power-bi-hyperlinks-in-tables.md
+      - name: "Display images in tables"
+        href: power-bi-images-tables.md
       - name: "Custom format strings"
         href: desktop-custom-format-strings.md      
       - name: "Conditional table formatting"
@@ -571,8 +573,6 @@
         href: service-create-dashboard-mobile-phone-view.md
       - name: "Create a QR code for a tile"
         href: service-create-qr-code-for-tile.md
-      - name: "Add an image to a dashboard"
-        href: service-dashboard-add-image.md
       - name: "Dashboard data classification"
         href: service-data-classification.md
       - name: "Dashboard themes"
