@@ -17,9 +17,7 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-**Using Power BI with Dynamics 365 Finance and Operations**
-<br>by Kevin Horlock
-<br>[Register to watch on September 11th](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
+No webinars scheduled yet. Check back soon for more upcoming events.
 
 >[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -46,6 +44,10 @@ Get started with these popular on-demand webinars
 **Strengthen Your Data Modeling Skills with Power BI**
 <br>by Kasper de Jonge
 <br>[Register and watch now](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
+
+**Using Power BI with Dynamics 365 Finance and Operations**
+<br>by Kevin Horlock
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
 
 **Microsoft Runs on Power BI – Financial Planning & Analysis Made Easy**
 <br>by Cory Hrncirik and Miguel Martinez
