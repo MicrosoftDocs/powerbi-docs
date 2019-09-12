@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 9/9/2019
+ms.date: 09/09/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -32,7 +32,7 @@ Your account needs to be marked as a **Global Admin**, within Office 365 or Azur
 
 There are nine tabs in the portal. The rest of this article provides information about each of these tabs.
 
-![Admin portal navigation](media/service-admin-portal/powerbi-admin-landing-page.png)
+    ![Admin portal navigation](media/service-admin-portal/powerbi-admin-landing-page.png)
 
 * [Usage metrics](#usage-metrics)
 * [Users](#users)
@@ -529,7 +529,7 @@ As an administrator, you can customize the look of Power BI for your whole organ
 
 * **Upload Cover image**: For best results, upload a cover image that's saved as a .jpg or .png, 1 MB or smaller, and at least 1920 x 160 pixels.
 
-* **Select Theme color**: You are able to select your theme based on a hex #, RBG value, or from the provided pallet.
+* **Select Theme color**: You are able to select your theme based on a hex #, RGB, value, or from the provided pallet.
 
 
 For more information, see [Custom branding for your organization](http://aka.ms/orgBranding).
