@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.date: 08/29/2019
+ms.date: 09/13/2019
 #customer intent: As a customer of Power BI, I'd like to understand how Power BI Report Server and the Power BI service are the same and are different.
 ---
 
@@ -40,7 +40,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Paginated reports | Yes | Yes | [Paginated reports are available in the Power BI service](../paginated-reports-report-builder-power-bi.md) in preview in a Premium capacity |
 | Power BI mobile apps | Yes | Yes | [Power BI mobile apps overview](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
 | ARC GIS maps | No | Yes | [ArcGIS maps in Power BI service and Power BI Desktop by Esri](../visuals/power-bi-visualization-arcgis.md) |
-| Email subscriptions for Power BI reports | Yes | Yes | [Subscribe yourself or others](../service-report-subscribe.md) to a report or dashboard in the Power BI service |
+| Email subscriptions for Power BI reports | No | Yes | [Subscribe yourself or others](../service-report-subscribe.md) to a report or dashboard in the Power BI service |
 | Email subscriptions for paginated reports | Yes | Yes | [Subscribe yourself and others to paginated reports in the Power BI service](../paginated-reports-subscriptions.md)<br><br>[Email delivery in Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  |
 | Data alerts | No | Yes | [Data alerts](../service-set-data-alerts.md) in the Power BI service
 | Row-level security (RLS) | Yes | Yes | Available in both DirectQuery (data source) & Import mode <br><br>Row-level security in the [Power BI service](../service-admin-rls.md) <br><br>Row-level security in [Power BI Report Server](row-level-security-report-server.md) |
