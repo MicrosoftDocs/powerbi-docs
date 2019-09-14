@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/14/2019
 ms.author: tebercov
 ---
 
@@ -78,7 +78,7 @@ In a browser, select this link to open AppSource filtered to Power BI apps:
    >[!NOTE]
    >In order to install template apps which are not listed on AppSource you need to request from your admin permissions. See the Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings) for details.
 
-## Update and distribute the app
+## Customize and publish the app
 
 After you've updated the app for your organization, you're ready to publish it. The steps are the same as for publishing any other app.
 
@@ -90,7 +90,7 @@ After you've updated the app for your organization, you're ready to publish it. 
 
    ![Set app description and color](media/service-template-apps-install-distribute/power-bi-install-app-details.png)
 
-3. In **Content**, you can select a landing page, either the dashboard or the report.
+3. In **Content**, you can use the new navigation builder (See [Design the navigation experience](service-create-distribute-apps#design-the-navigation-experience) for your app in this article for details) or select a landing page, either the dashboard or the report.
 
    ![Set app landing page](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
 
@@ -102,7 +102,29 @@ After you've updated the app for your organization, you're ready to publish it. 
 
 6. After it's successfully published, you can copy the link and share it with whomever you've given access to. If you've shared it with them, they also see it on the **My organization** tab in AppSource.
 
-## Next steps 
+## Update a template app
+
+A template app can be updated when a new version is released via AppSource or a direct link. You can update the template app when reinstalling the app with the same or newer version.
+
+  >[!NOTE]
+  >Any changes performed to the reports or dashboards will be overwritten with the new installed version. You can **save as** the reports or dashboards before overwriting.
+
+1. **Overwrite an existing version:** Will overwrite the existing workspace with the updated version of the template app.
+
+   ![Update template app](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+
+1. **Install to a new workspace:** will install a fresh version of the workspace and app that will require reconfiguration.
+
+### Overwrite behavior:
+
+ * Overwriting updates the reports, dashboards, and dataset inside the workspace, republishing must be performed to share the update with the app users.
+ * Overwriting will keep configured parameters and authentication. After update, a dataset refresh will automatically start (if possible) - note you will see sample data until refresh completes.
+* Overwrites never deletes **new** reports or dashboard added to the workspace, it will overwrite according to the changes made by the author.
+
+>[!IMPORTANT]
+>Remember to [update app](#customize-and-publish-the-app) after performing overwrite in order for changes in the reports and dashboard to be shared with the app users.
+
+## Next steps
 
 [Create workspaces with your colleagues in Power BI](service-create-workspaces.md)
 
