@@ -39,5 +39,5 @@ You control query caching behavior on the **Settings** page for the dataset in t
 
 ## Next steps
 
-[What is Power BI Premium?](service-premium-what-is.md)
-[What is Power BI Embedded in Azure?](developer/azure-pbie-what-is-power-bi-embedded.md)
+* [What is Power BI Premium?](service-premium-what-is.md)
+* [What is Power BI Embedded in Azure?](developer/azure-pbie-what-is-power-bi-embedded.md)

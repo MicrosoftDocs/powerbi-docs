@@ -90,7 +90,7 @@ Cached data is rendered when available, however no additional event is generated
 To examine the performance of the report elements, you might use the Performance Analyzer in Power BI Desktop.
 The Performance Analyzer will allow you to see and record logs that measure how each of your report elements performs.
 
-[Learn more about Performance Analyzer](../desktop-performance-analyzer)
+[Learn more about Performance Analyzer](../power-bi/desktop-performance-analyzer.md)
 
 > Note: Always remember to compare the embedded report performance to the performance on powerbi.com. This might help you understand the origin of your performance issues
 
