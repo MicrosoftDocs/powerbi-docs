@@ -14,8 +14,9 @@ ms.date: 12/12/2018
 # Power BI Embedded performance best practices
 
 This article provides recommendations for faster rendering of reports, dashboards, and tiles in your application.
-[!Note]
-Remember that loading time mainly depends on elements relevant to the report and data itself. Such as number of visuals, size of data, and complexity of the queries and calculated measures. For more information, see [Power BI performance best practices](../power-bi-reports-performance.md).
+
+> [!Note]
+> Remember that loading time mainly depends on elements relevant to the report and data itself, including visuals, the size of the data, and the complexity of the queries and calculated measures. For more information, see [Power BI performance best practices](../power-bi-reports-performance.md).
 
 ## Update tools and SDK packages
 
@@ -27,7 +28,7 @@ Keep tools and SDK packages up-to-date.
 
 ## Embed parameters
 
-`powerbi.embed(element, config)` method receives an element and a config. The config parameter includes fields that have performance implications.
+The `powerbi.embed(element, config)` method receives an element and a config. The config parameter includes fields that have performance implications.
 
 ### Embed URL
 
@@ -35,7 +36,7 @@ Avoid generating the embed URL yourself. Instead, make sure you get the Embed UR
 
 ### Permissions
 
-Provide **View** permissions if you're not intending to embed a report in **Edit mode**. This way embed code doesn't initialize components, which are used for Edit mode.
+Provide **View** permissions if you're not intending to embed a report in edit mode. This way, embedded code doesn't initialize components, which are used in edit mode.
 
 ### Filters, bookmarks, and slicers
 
@@ -45,32 +46,34 @@ If you embed reports with the same filters, bookmarks, and slicers, to improve y
 
 ## Switching between reports
 
-When embedding multiple reports to the same iframe, don't generate a new iframe for each report. Instead use `powerbi.embed(element, config)` with a different config to embed the new report.
+When embedding multiple reports to the same iframe, don't generate a new iframe for each report. Instead, use `powerbi.embed(element, config)` with a different config to embed the new report.
 
-> Note: Switching between reports for 'App owns data' scenario, might not be very effective, due to the necessity to generate a new embed token.
+> [!NOTE]
+> Switching between reports for an 'App owns data' scenario might not be very effective due to the necessity of generating a new embed token.
 
 ## Query caching
 
-Organizations with Power BI Premium capacity or Power BI Embedded capacity, can take advantage of query caching to speed up reports associated with a dataset.
+Organizations with Power BI Premium capacity or Power BI Embedded capacity can take advantage of query caching to speed up reports associated with a dataset.
 
-[Learn more about query caching in Power BI](../power-bi-query-caching.md)
+[Learn more about query caching in Power BI](../power-bi-query-caching.md).
 
 ## Preload
 
-Use the **preload** JavaScript API to improve the end-user performance.
-`powerbi.preload()` downloads javascript, css files, and other artifacts, which are used later to embed a report.
+Use the **preload** JavaScript API to improve the end-user performance. `powerbi.preload()` downloads javascript, css files, and other artifacts, which are used later to embed a report.
 
 Call **preload** if you're not embedding the report immediately. For example, if you embed a report on a button click, it’s better to call **preload** when the previous page loads. Then, when the application user clicks the button, the rendering is faster.
 
-> Note: It's not recommended to use preload if the report is about to be embedded, instead, you can use bootstrap to prepare the iframe for embedding.
+> [!NOTE]
+> It's not recommended to use preload if the report is about to be embedded. Instead, you can use bootstrap to prepare the iframe for embedding.
 
 ## Bootstrapping the iframe
 
-> Note: [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript) version 2.9 (beta) is required in order to bootstrap the iframe
+> [!NOTE]
+> [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript) version 2.9 (beta) is required to bootstrap the iframe. 
+>
+> `powerbi.bootstrap(element, config)` can be used to prepare the iframe for embedding. The main use case for this feature is to parallelize the iframe bootstrap and the back-end calls that are used for embedding (for example, [Get reports](/rest/api/power-bi/reports/getreportsingroup) call).
 
-`powerbi.bootstrap(element, config)` can be used to prepare the iframe for embedding. The main use case for this feature is to parallelize the iframe bootstrap and the backend calls that are used for embedding (for example, [Get reports](/rest/api/power-bi/reports/getreportsingroup) call)
-
-[Learn more about iframe bootstrap](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bootstrap---For-Better-Performance)
+[Learn more about iframe bootstrap](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bootstrap---For-Better-Performance).
 
 ## Measure performance
 
@@ -78,21 +81,22 @@ Call **preload** if you're not embedding the report immediately. For example, if
 
 To measure embedded performance, you may use two events:
 
-1. Loaded event: the time until the report is initialized (PowerBI logo will disappear when the load is finished).
-2. Rendered event: the time until the report is fully rendered, using the actual data. The rendered event is fired each time the report is re-rendered (for example, after applying filters). To measure a report, make sure you do the calculations on the first raised event.
+1. Loaded event: The time until the report is initialized (the Power BI logo will disappear when the load is finished).
+2. Rendered event: The time until the report is fully rendered, using the actual data. The rendered event is fired each time the report is re-rendered (for example, after applying filters). To measure a report, make sure you do the calculations on the first raised event.
 
-Cached data is rendered when available, however no additional event is generated.
+Cached data is rendered when available but no additional event is generated.
 
-[Learn more about events handling](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Handling-Events)
+[Learn more about event handling](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Handling-Events).
 
 ### Performance Analyzer
 
 To examine the performance of the report elements, you might use the Performance Analyzer in Power BI Desktop.
 The Performance Analyzer will allow you to see and record logs that measure how each of your report elements performs.
 
-[Learn more about Performance Analyzer](../desktop-performance-analyzer.md)
+[Learn more about Performance Analyzer](../desktop-performance-analyzer.md).
 
-> Note: Always remember to compare the embedded report performance to the performance on powerbi.com. This might help you understand the origin of your performance issues
+> [!NOTE]
+> Always remember to compare the embedded report performance to the performance on powerbi.com. This might help you understand the origin of your performance issues
 
 ## Next steps
 
