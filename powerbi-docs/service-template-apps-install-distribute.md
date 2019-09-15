@@ -90,7 +90,7 @@ After you've updated the app for your organization, you're ready to publish it. 
 
    ![Set app description and color](media/service-template-apps-install-distribute/power-bi-install-app-details.png)
 
-3. In **Content**, you can use the new navigation builder (See [Design the navigation experience](service-create-distribute-apps.md#design-the-navigation-experience) for your app in this article for details) or select a landing page, either the dashboard or the report.
+3. In **Navigation**, you can use the new navigation builder (See [Design the navigation experience](service-create-distribute-apps.md#design-the-navigation-experience) for your app in this article for details) or select a landing page, either the dashboard or the report.
 
    ![Set app landing page](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
 
