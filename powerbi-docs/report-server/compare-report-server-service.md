@@ -53,4 +53,4 @@ Power BI Report Server and the Power BI service have many similarities and some 
 
 ## Next steps
 
-[Install Power BI Report Server](install-report-server.md)  
+[Install Power BI Report Server](install-report-server.md)
