@@ -4,13 +4,12 @@ description: See a list of browsers that support Power BI
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
-ms.custom: seodec18
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/10/2019
-ms.author: maggies
+ms.date: 09/11/2019
+ms.author: mihart
 
 LocalizationGroup: Get started
 ---
