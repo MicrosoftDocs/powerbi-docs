@@ -157,7 +157,7 @@ Yes, we support the ability to run code in your reports as you can in SSRS.
 
 ### Can I use Power BI embedded to embed my paginated reports into an app I’m hosting?
 
-SaaS embedding is already supported. PaaS embedding is not currently supported.
+SaaS embedding, including Secure Embed support, is already available.  PaaS embedding support is planned for later this year.
 
 ### Can I drill through from a Power BI report to a paginated report?
 
@@ -173,7 +173,7 @@ We plan to have the reports support the same major scenarios in the service as m
 
 ### Is a migration tool planned so SSRS customers can move their existing reports and assets to Power BI?
 
-We're evaluating options here to allow content to be moved to Power BI in an automated way, but this won't be available until after GA.
+This is now a project on Github that supports the ability to migrate content for SQL Server Reporting Services to Power BI.  You can view more details and download the tool here - https://github.com/microsoft/RdlMigration
 
 ### Is there a report viewer control for paginated reports in the Power BI service?
 
