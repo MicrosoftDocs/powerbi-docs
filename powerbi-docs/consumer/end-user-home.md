@@ -22,9 +22,10 @@ When you sign in, Power BI opens and displays your Home canvas, as shown in the 
 ![A screenshot of the Home canvas for the Power BI service.](media/end-user-home/power-bi-home.png)
 
 Power BI Home offers three different ways of locating and viewing your content. All three access the same pool of content, they’re merely different ways of getting to that content. Occasionally, searching will be the easiest and quickest way to find something, while other times, selecting a *card* on the Home canvas will be your best option.
-1.	The Home canvas displays and organizes your favorite and most recent content, along with recommended content and learning resources. Each piece of content displays as a *card*, with a title and icon. Selecting a card opens that content.
-2.	Along the left side, is a navigation pane, referred to as the nav bar. On this pane, your same content is organized a little differently, by Favorites, Recent, Apps, and Shared with me. From here, you can view lists of content and select the one to open.
-3.	In the upper right corner, the global search box lets you search for content by title, name, or keyword.
+
+- The Home canvas displays and organizes your favorite and most recent content, along with recommended content and learning resources. Each piece of content displays as a *card*, with a title and icon. Selecting a card opens that content.
+- Along the left side, is a navigation pane, referred to as the nav bar. On this pane, your same content is organized a little differently, by Favorites, Recent, Apps, and Shared with me. From here, you can view lists of content and select the one to open.
+- In the upper right corner, the global search box lets you search for content by title, name, or keyword.
 
 The following topics review each of these options for finding and viewing content.
 
@@ -71,7 +72,7 @@ The nav bar is there when you open your Home landing page, and remains static as
 The nav bar organizes your content into containers that are similar to what you’ve already seen on the Home canvas: Favorites, Recent, Apps, and Shared with me. Using the flyouts, you can view just the most-recent content in each of these containers, or you can navigate to content lists to see all content for each container category.
  
 - To open one of these content sections and display a list of all items, select the heading.
-- To see the most recent in each container, select the flyout (**>**)
+- To see the most recent in each container, select the flyout (**>**).
 
     ![A video of using the nav bar for Recent](media/end-user-home/power-bi-nav-bar.gif)
 
