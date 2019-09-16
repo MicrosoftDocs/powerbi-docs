@@ -7,7 +7,7 @@ ms.reviewer:
 
 ms.service: powerbi
 ms.topic: conceptual
-ms.date: 09/11/2019
+ms.date: 09/16/2019
 ms.author: maggies
 
 LocalizationGroup: 
