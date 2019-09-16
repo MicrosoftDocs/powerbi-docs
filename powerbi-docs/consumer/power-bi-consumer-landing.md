@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: hub-page
-ms.date: 09/07/2019
+ms.date: 09/11/2019
 ms.author: mihart
 layout: HubPage
 ms.custom: seodec18
@@ -313,25 +313,6 @@ LocalizationGroup: Get started
                                                 <div class="cardText">
                                                     <h3>Accessibility</h3>
                                                     <p>Learn how Microsoft enables people with disabilities to more easily consume and interact with Power BI. </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>                            
-                            <li>
-                                <a href="/power-bi/power-bi-browsers" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/browser-info.svg" alt="Browsers Info" data-linktype="relative-path">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Browsers information</h3>
-                                                    <p>See the list of browsers that work best with Power BI. </p>
                                                 </div>
                                             </div>
                                         </div>
