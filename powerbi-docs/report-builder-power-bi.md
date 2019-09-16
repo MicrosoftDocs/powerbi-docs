@@ -34,7 +34,7 @@ The following paginated report features a matrix with row and column groups, spa
   
 -   **Report from a variety of data sources.** You can create reports that use relational and multidimensional data from SQL Server and Analysis Services, Oracle, Power BI datasets, and other databases.  
   
--   **Modify existing reports.** By using Report Builder, you can customize and update reports that were created in SQL Server Data Tools (SSDT) eport Designer.  
+-   **Modify existing reports.** By using Report Builder, you can customize and update reports that were created in SQL Server Data Tools (SSDT) Report Designer.  
   
 -   **Modify your data**. Filter, group, and sort data, or add formulas or expressions.  
 
