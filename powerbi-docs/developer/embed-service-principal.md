@@ -1,9 +1,9 @@
 ---
 title: Service principal with Power BI
 description: Learn how to register an application within Azure Active Directory using service principal for use with embedding Power BI content.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -62,7 +62,7 @@ There are differences between using a service principal and a standard master ac
 
 ## Get started with a service principal
 
-Different from the traditional use of a master account, using the service principal (app-only token) requires a few different pieces to set up. To get started with service principal (app-only token), you need to set up the right environment.
+As apposed to the traditional use of a master account, using the service principal (app-only token) requires a few different pieces to set up. To get started with service principal (app-only token), you need to set up the right environment.
 
 1. [Register a server-side web application](register-app.md) in Azure Active Directory (AAD) to use with Power BI. After registering an application you can capture an application ID, an application secret, and the service principal object ID to access your Power BI content. You can create a service principal with [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
