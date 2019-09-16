@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/16/2019
 ms.author: mihart
 
 LocalizationGroup: Get started
 ---
 # Find your dashboards, reports, and apps
-In Power BI, the term *content* refers to apps, dashboards, and reports. Content is created by Power BI *designers*, who share it with colleagues like you. Your content is accessible and viewable in the Power BI service, and the best place to start is from your home landing page.
+In Power BI, the term *content* refers to apps, dashboards, and reports. Content is created by Power BI *designers*, who share it with colleagues like you. Your content is accessible and viewable in the Power BI service, and the best place to start working in Power BI is from your home landing page.
 
 ## Explore Power BI Home
 When you sign in, Power BI opens and displays your Home canvas, as shown in the following figure.
