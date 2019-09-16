@@ -1,6 +1,6 @@
 ---
-title: Sort
-description: Default sorting behavior for the Power BI Visual.
+title: Sorting options for Power BI visuals
+description: This article discusses default sorting behavior for Power BI visuals.
 author: zBritva
 ms.author: v-ilgali
 manager: rkarlin
@@ -11,15 +11,15 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Sorting options
+# Sorting options for Power BI visuals
 
-`Sorting` specifies the default sorting behavior for the visual.
-Capability requires one of the parameters described below:
+This article describes how *sorting* options specify the sorting behavior for Power BI visuals. 
+
+The sorting capability requires one of the following parameters.
 
 ## Default sorting
 
-The `default` option is the simplest form. It allows sorting the data presented in the 'DataMappings' section.
-This option enables sorting of the 'DataMappings' by the user and to specify the sorting direction.
+The `default` option is the simplest form. It allows sorting the data presented in the 'DataMappings' section. The option enables sorting of the data mappings by the user and specifies the sorting direction.
 
 ```json
     "sorting": {
@@ -31,15 +31,12 @@ This option enables sorting of the 'DataMappings' by the user and to specify the
 
 ## Implicit sorting
 
-`implicit` is sorting with array parameter - `clauses` which describes sorting for each data role.
-`implicit` means that visual's user can't change the sorting order.
-Power BI won't display sorting options in visual's menu. However, Power BI will sort data according to specified settings.
+Implicit sorting is sorting with the array parameter `clauses`, which describes sorting for each data role. `implicit` means that the visual's user can't change the sorting order. Power BI doesn't display sorting options in the visual's menu. However, Power BI does sort data according to specified settings.
 
-`clauses` params can contain several objects with two parameters:
+`clauses` parameters can contain several objects with two parameters:
 
-- `role` - determines `DataMapping` for sorting.
-
-- `direction` - determines sort direction (1 = Ascending, 2 = Descending).
+- `role`: Determines `DataMapping` for sorting
+- `direction`: Determines sort direction (1 = Ascending, 2 = Descending)
 
 ```json
     "sorting": {
@@ -60,4 +57,4 @@ Power BI won't display sorting options in visual's menu. However, Power BI will 
 
 ## Custom sorting
 
-`custom` means the sorting is managed by developer in visual's code.
+Custom sorting means that the sorting is managed by the developer in the visual's code.

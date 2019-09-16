@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 09/06/2019
 ms.author: davidi
 
 LocalizationGroup: Transform and shape data
@@ -40,6 +40,9 @@ The storage mode setting in Power BI Desktop is one of three related features:
 
 * **Storage mode**: You can now specify which visuals require a query to back-end data sources. Visuals that don't require a query are imported even if they're based on DirectQuery. This feature helps improve performance and reduce back-end load. Previously, even simple visuals, such as slicers, initiated queries that were sent to back-end sources. Storage mode is described further in this article.
 
+> [!NOTE]
+> You can see the current storage mode by selecting **Model** view, selecting the table of interest, and then in the **Advanced** section of the **Properties** pane, view the **Storage mode** value.
+
 ## Use the storage mode property
 
 Storage mode is a property that you can set on each table in your model. To set the storage mode, in the **Fields** pane, right-click the table whose properties you want to set, and then select **Properties**.
@@ -59,6 +62,10 @@ There are three values for storage mode:
 * **Dual**: Dual tables can act as either cached or not cached, depending on the context of the query that's submitted to the Power BI dataset. In some cases, you fulfill queries from cached data. In other cases, you fulfill queries by executing an on-demand query to the data source.
 
 Changing a table to **Import** is an *irreversible* operation. This property can't be changed back to either DirectQuery or Dual.
+
+> [!NOTE]
+> You can use *Dual* storage mode in Power BI Desktop and in the Power BI service.
+
 
 ## Constraints on DirectQuery and Dual tables
 

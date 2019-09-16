@@ -8,13 +8,16 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
 ---
 # Connect to Marketo with Power BI
 The Power BI content pack for Marketo allows you to gain insights into your Marketo account with data around Leads and their activities.Creating this connection retrieves your data and automatically provides a dashboard and related reports based on that data.
+
+>[!IMPORTANT]
+>We'll be deprecating this content pack on September 4, 2019. If you installed this content pack before then, it will continue to work, but you won't be able to install a new one after that. Template apps are the replacement for service content packs.
 
 Connect to the [Marketo content pack](https://app.powerbi.com/getdata/services/marketo) for Power BI.
 

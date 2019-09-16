@@ -8,13 +8,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 08/29/2019
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
 ---
 # Connect to comScore Digital Analytix with Power BI
 Visual and explore your comScore Digital Analytix data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Connect to the [comScore content pack for Power BI.](https://app.powerbi.com/getdata/services/comscore)
 

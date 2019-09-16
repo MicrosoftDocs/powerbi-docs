@@ -62,7 +62,7 @@ The instructions in this section assume basic knowledge of Azure Key Vault. For 
 1. Select **OK** , then **Save**.
 
 > [!NOTE]
-> To revoke access of Power BI to your data in the futurem remove access rights to this service principal from your Azure Key Vault.
+> To revoke access of Power BI to your data in the future remove access rights to this service principal from your Azure Key Vault.
 
 ### Create an RSA key
 
@@ -119,11 +119,31 @@ The cmdlet accepts two switch parameters that affect encryption for current and 
 > [!IMPORTANT]
 > If you specify `-Default`, all of the capacities created on your tenant from this point will be encrypted using the key you specify (or an updated default key). You cannot undo the default operation, so you lose the ability to create a premium capacity in your tenant that doesn't use BYOK.
 
-After you enable BYOK on your tenant, use [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) to set the encryption key for one or more Power BI capacities:
+After you enable BYOK on your tenant, set the encryption key for one or more Power BI capacities:
 
-```powershell
-Set-PowerBICapacityEncryptionKey-CapacityId 08d57fce-9e79-49ac-afac-d61765f97f6f -KeyName 'Contoso Sales'
-```
+1. Use [`Get-PowerBICapacity`](/powershell/module/microsoftpowerbimgmt.capacities/get-powerbicapacity) to get the capacity ID that's required for the next step.
+
+    ```powershell
+    Get-PowerBICapacity -Scope Individual
+    ```
+
+    The cmdlet returns output similar to the following output:
+
+    ```
+    Id              : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+    DisplayName     : Test Capacity
+    Admins          : adam@sometestdomain.com
+    Sku             : P1
+    State           : Active
+    UserAccessRight : Admin
+    Region          : North Central US
+    ```
+
+1. Use [`Set-PowerBICapacityEncryptionKey`](/powershell/module/microsoftpowerbimgmt.admin/set-powerbicapacityencryptionkey) to set the encryption key:
+
+    ```powershell
+    Set-PowerBICapacityEncryptionKey-CapacityId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -KeyName 'Contoso Sales'
+    ```
 
 You have control over how you use BYOK across your tenant. For example, to encrypt a single capacity, call `Add-PowerBIEncryptionKey` without `-Activate` or `-Default`. Then call `Set-PowerBICapacityEncryptionKey` for the capacity where you want to enable BYOK.
 

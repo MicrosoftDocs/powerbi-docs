@@ -31,7 +31,7 @@ To get started, you're required to have:
 * A [Power BI Pro account](../service-self-service-signup-for-power-bi.md).
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription.
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
-* For embedding paginated reports you need at least an A4/P1 capacity [See What size Premium capacity do I need for paginated reports?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
+* For embedding paginated reports you need at least a P1 capacity [See What size Premium capacity do I need for paginated reports?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
 
@@ -41,7 +41,7 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 
 Before you start embedding reports, dashboard, or tiles into your application, you need to make sure your environment allows for embedding with Power BI.
 
-You can go through the [Embedding setup tool](https://aka.ms/embedsetup/UserOwnsData), so you can quickly get started and download a sample application that helps you walk through creating an environment and embedding a report. In the case of embedding a paginated report you need to assign at least A4/P1 capacity to the created app workspace.
+You can go through the [Embedding setup tool](https://aka.ms/embedsetup/UserOwnsData), so you can quickly get started and download a sample application that helps you walk through creating an environment and embedding a report. In the case of embedding a paginated report you need to assign at least a P1 capacity to the created app workspace.
 
 If you choose to set up the environment manually, you can continue below.
 
@@ -79,7 +79,7 @@ You can create your reports and datasets by using Power BI Desktop. Then you can
    
 ### Create and publish your paginated reports
 
-You can create your paginated reports by using [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder).Then you can [upload the report](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an app workspace assigned to at least A4/P1 capacity. The end-user uploading the report must have a Power BI Pro license to publish to an app workspace.
+You can create your paginated reports by using [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Then you can [upload the report](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an app workspace assigned to at least a P1 capacity. The end-user uploading the report must have a Power BI Pro license to publish to an app workspace.
    
 ## Embed your content by using the sample application
 
@@ -100,7 +100,6 @@ Follow the steps below to start embedding your content using the sample applicat
     | Field |
     |--------------------|
     | **[Application ID](#application-id)** |
-    | **[Application Secret](#application-secret)** |
     | **[Workspace ID](#workspace-id)** |
     | **[Report ID](#report-id)** |
     | **[AADAuthorityUrl](#aadauthorityurl)** |
@@ -148,9 +147,6 @@ Fill in the **reportId** information with the report GUID from Power BI. You can
 Power BI Report URL <br>
 
 ![PBI reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
-
-Paginated Report URL <br>
-
 
 
 Paginated Report URL<br>
@@ -380,7 +376,7 @@ Now that you've completed developing your application, it's time to back your ap
 
 ### Create a dedicated capacity
 
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. For paginated reports you must back your app workspace with at least A4/P1 capacity.You can create a dedicated capacity by using [Power BI Premium](../service-premium-what-is.md).
+By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. For paginated reports you must back your app workspace with at least a P1 capacity. You can create a dedicated capacity by using [Power BI Premium](../service-premium-what-is.md).
 
 The following table lists the Power BI Premium SKUs available in [Microsoft Office 365](../service-admin-premium-purchase.md):
 
@@ -422,7 +418,7 @@ Global admins or Power BI service administrators can turn the ability to use the
 
 ## Next steps
 
-In this tutorial, you learned how to embed Power BI content into an application by using your Power BI organization account. You can now try to embed Power BI content into an application by using apps. You can also try to embed Power BI content for your customers(not supported yet for embedding paginated reports):
+In this tutorial, you learned how to embed Power BI content into an application by using your Power BI organization account. You can now try to embed Power BI content into an application by using apps. You can also try to embed Power BI content for your customers (not supported yet for embedding paginated reports):
 
 > [!div class="nextstepaction"]
 > [Embed from apps](embed-from-apps.md)

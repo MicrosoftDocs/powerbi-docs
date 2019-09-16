@@ -115,7 +115,7 @@ Power Query Editor lets you create calculations and custom fields to enrich your
    
 2. In the **Custom Column** dialog box, type **LineTotal** in the **New column name** field.
 
-3. In the **Custom column formula** field after the **=, enter **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]**. (You can also select the field names from the **Available columns** scroll box and select **<< Insert**, instead of typing them.) 
+3. In the **Custom column formula** field after the *=*, enter **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]**. (You can also select the field names from the **Available columns** scroll box and select **<< Insert**, instead of typing them.) 
 
 4. Select **OK**.
    

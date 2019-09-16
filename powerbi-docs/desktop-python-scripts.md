@@ -1,5 +1,5 @@
 ---
-title: Running Python Scripts in Power BI Desktop
+title: Run Python Scripts in Power BI Desktop
 description: Running Python Scripts in Power BI Desktop
 author: otarb
 manager: rajatt
@@ -8,61 +8,109 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/18/2018
+ms.date: 08/16/2019
 ms.author: otarb
 
 LocalizationGroup: Connect to data
 ---
 # Run Python scripts in Power BI Desktop
-You can run Python scripts directly in **Power BI Desktop**, and import the resulting datasets into a Power BI Desktop data model.
+
+You can run Python scripts directly in **Power BI Desktop** and import the resulting datasets into a Power BI Desktop data model.
 
 ## Install Python
-To run Python scripts in Power BI Desktop, you need to install **Python** on your local machine. You can download and install **Python** for free from many locations, including the [Official Python download page](https://www.python.org/), and the [Anaconda](https://anaconda.org/anaconda/python/). The current release of Python scripting in Power BI Desktop supports Unicode characters as well as spaces (empty characters) in the installation path.
 
-### Install Required Python Packages
-The Power BI Python integration requires two Python packages to be installed (Pandas and Matplotlib).  Using the pip command line tool, install the following two packages,
+To run Python scripts in Power BI Desktop, you need to install **Python** on your local machine. You can download **Python** from the [Official Python download page](https://www.python.org/). The current Python scripting release supports Unicode characters and spaces in the installation path.
 
-```
+### Install required Python packages
+
+The Power BI Python integration requires the installation of two Python packages:
+
+- [Pandas](https://pandas.pydata.org/) - A software library for data manipulation and analysis. It offers data structures and operations for manipulating numerical tables and time series. Your imported data must be in a [pandas data frame](https://www.tutorialspoint.com/python_pandas/python_pandas_dataframe.htm). A data frame is a two-dimensional data structure. For example, data is aligned in a tabular fashion in rows and columns.
+- [Matplotlib](https://matplotlib.org/) - A plotting library for Python and its numerical mathematics extension [NumPy](https://www.numpy.org/). It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits (such as Tkinter, wxPython, Qt, or GTK+).
+
+1. In a console or shell, use the [pip](https://pip.pypa.io/en/stable/) command-line tool to install the two packages. The pip tool is packaged with more recent Python versions.
+
+```CMD
 pip install pandas
 pip install matplotlib
 ```
 
+## Enable Python scripting
+
+To enable Python scripting:
+
+1. In Power BI Desktop, select **File** > **Options and settings** > **Options** > **Python scripting**. The Python script options page appears.
+
+   ![](media/desktop-python-scripts/python-scripts-7.png)
+
+1. If necessary, specify your local Python installation path in the **Detected Python home directories:** text box. 
+
+   In the above image, the Python's installation local path is **C:\Python**. Make sure the path is for the local Python installation you want Power BI Desktop to use.
+
+1. Select **OK**.
+
+Once you specify your Python installation, you’re ready to begin running Python scripts in Power BI Desktop.
+
 ## Run Python scripts
-With just a few steps in Power BI Desktop, you can run Python scripts and create a data model, from which you can create reports, and share them on the Power BI service.
+
+In just a few steps, you can run Python scripts and create a data model. From this model, you can create reports and share them on the Power BI service.
 
 ### Prepare a Python script
-To run a Python script in Power BI Desktop, create the script in your local Python development environment, and make sure it runs successfully.
+First, create a script in your local Python development environment and make sure it runs successfully. For example, here's a simple Python script that imports pandas and uses a data frame:
 
-To run the script in Power BI Desktop, make sure the script runs successfully in a new and unmodified workspace. This means that all packages and dependencies must be explicitly loaded and run.
+```python
+import pandas as pd
+data = [['Alex',10],['Bob',12],['Clarke',13]]
+df = pd.DataFrame(data,columns=['Name','Age'],dtype=float)
+print (df)
+```
+When run, it prints out:
+
+```python
+     Name   Age
+0    Alex  10.0
+1     Bob  12.0
+2  Clarke  13.0
+```
 
 When preparing and running a Python script in Power BI Desktop, there are a few limitations:
 
-* Only Pandas data frames are imported, so make sure the data you want to import to Power BI is represented in a data frame
+* Only pandas data frames are imported, so make sure the data you want to import to Power BI is represented in a data frame
 * Any Python script that runs longer than 30 minutes times out
 * Interactive calls in the Python script, such as waiting for user input, halts the script’s execution
 * When setting the working directory within the Python script, you *must* define a full path to the working directory, rather than a relative path
-* Nested tables (table of tables) are currently not supported 
+* Nested tables are currently not supported 
 
 ### Run your Python script and import data
-1. In Power BI Desktop, the Python Script data connector is found in **Get Data**. To run your Python Script, select **Get Data &gt; More...**, then select **Other &gt; Python script** as shown in the following image:
+
+To run your Python Script in Power BI Desktop:
+
+1. In the Home ribbon, select **Get Data** > **More...**.
    
+1. Select **Other** > **Python script** as shown in the following image:
+
    ![](media/desktop-python-scripts/python-scripts-1.png)
-2. If Python is installed on your local machine, the latest installed version is selected as your Python engine. Simply copy your script into the script window and select **OK**.
    
-   ![](media/desktop-python-scripts/python-scripts-2.png)
-3. If Python is not installed, is not identified, or if there are multiple installations on your local machine, warning will be displayed.
-   
-   ![](media/desktop-python-scripts/python-scripts-3.png)
-   
-   Python installation settings are centrally located in the Python Scripting section of the Options dialog. To specify your Python installation settings, select **File > Options and settings** and then **Options > Python scripting**. If multiple installations of Python are available, a drop-down menu appears that allows you to select which installation to use. You can also select **Other** and give custom path.
-   
-   ![](media/desktop-python-scripts/python-scripts-4.png)
-4. Select **OK** to run the Python Script. When the script runs successfully, you can then choose the resulting data frames to add to the Power BI model.
+1. Select **Connect**. Your local machine's latest installed Python version is selected as your Python engine. Copy your script into the Python script dialog box that appears. Here, we enter the simple Python script shown before.
+
+   ![](media/desktop-python-scripts/python-scripts-6.png)
+
+1. Select **OK**. If the script runs successfully, the Navigator dialog box appears and you can load the data and use it. For the example, select the **df** checkbox, as shown in the image, then **Load**.
+
+   ![](media/desktop-python-scripts/python-scripts-5.png) 
+
+### Troubleshooting
+
+If Python isn't installed or identified, a warning displays. You can also see a warning if you have multiple local machine installations. Revisit and review the previous Install Python and Enable Python scripting sections.
+
+![](media/desktop-python-scripts/python-scripts-3.png)
 
 ### Refresh
-You can refresh a Python script in Power BI Desktop. When you refresh a Python script, Power BI Desktop runs the Python script again in the Power BI Desktop environment.
+
+You can refresh a Python script in Power BI Desktop. To refresh, go to the **Home** ribbon and select **Refresh**. When you refresh a Python script, Power BI Desktop runs the Python script again.
 
 ## Next steps
+
 Take a look at the following additional information about Python in Power BI.
 
 * [Create Python Visuals in Power BI Desktop](desktop-python-visuals.md)

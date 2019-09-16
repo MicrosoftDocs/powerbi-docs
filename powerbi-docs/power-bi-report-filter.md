@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 09/06/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -17,9 +17,9 @@ LocalizationGroup: Reports
 
 Filters in Power BI have new functionality and a new design. When you opt in to the new filter experience, you can format the Filters pane to look like the rest of the report. You can lock and even hide filters. When designing your report, you no longer see the old Filters pane at all in the Visualizations pane. You do all your filter editing and formatting in a single Filters pane. 
 
-![New filter experience](media/power-bi-report-filter/power-bi-filter-reading.png)
+![New filter experience](media/power-bi-report-filter/power-bi-filter-new-look.png)
 
-As a report designer, here's what you can do in the new single Filters pane:
+As a report designer, here are some of the tasks you can do in the new Filters pane:
 
 - Add and remove fields to filter on. 
 - Change the filter state.
@@ -44,6 +44,10 @@ The new filter experience is turned on by default for new reports. You can enabl
 3. Under **Filtering experience**, select **Enable the updated filter pane, and show filters in the visual header for this report**.
 
 ### Turn on new filters for an existing report in the service
+
+If you've turned on the **New look** in the Power BI service ![New look turned on](media/power-bi-report-filter/power-bi-new-look-on.png), the new filter experience is turned on automatically. Read more about the [new look in the Power BI service](service-new-look.md).
+
+If you haven't turned on the new look, you can still see the new filter experience by following these steps.
 
 1. In the Power BI service, select the **Reports** tab in the content list for a workspace.
 2. Find the report you want to enable, and select the **Settings** icon ![Report Settings icon](media/power-bi-report-filter/power-bi-settings-icon.png) for that report.
@@ -117,15 +121,13 @@ You can also format these elements for filter cards, depending on if they're app
 1. In the report, click the report itself, or the background (*wallpaper*), then in the **Visualizations** pane, select **Format**. 
     You see options for formatting the report page, the wallpaper, and also the Filters pane and Filter cards.
 
-    ![Select the Format icon](media/power-bi-report-filter/power-bi-filter-format.png)    
-
 1. Expand **Filter pane** to set color for the background, icon, and left border, to complement the report page.
 
-    ![Expand Filter pane](media/power-bi-report-filter/power-bi-filter-format-pane-font.png)
+    ![Expand Filter pane](media/power-bi-report-filter/power-bi-format-filter-pane.png)
 
 1. Expand **Filter cards** to set the **Available** and **Applied** color and border. If you make available and applied cards different colors, it's obvious which filters are applied. 
   
-    ![Expand Filter card](media/power-bi-report-filter/power-bi-filter-format-card-font.png)
+    ![Expand Filter card](media/power-bi-report-filter/power-bi-format-filter-cards.png)
 
 ## Theming for filter pane
 You can now modify the default settings of the filter pane with the theme file. Here’s a sample theme snippet to get you started:
@@ -201,7 +203,7 @@ You can now modify the default settings of the filter pane with the theme file. 
 
 ## Sort the filter pane
 
-Custom sort functionality is part of the new filter pane experience. Report creators can drag and drop filters to rearrange them in the order they desire.
+Custom sort functionality is part of the new filter pane experience. Report creators can drag and drop filters to rearrange them in any order.
 
 ![Rearrange filter sort order](media/power-bi-report-filter/power-bi-filter-sort.gif)
 
@@ -220,7 +222,7 @@ When you're editing the Filters pane, you can double-click the title to edit it.
 
 ## Restrict changes to filter type
 
-Under the Filtering experience section of the report settings you have an option to control if users can change the filter type.
+Under the Filtering experience section of the report settings, you have an option to control if users can change the filter type.
 
 ![Restrict changing filter type](media/power-bi-report-filter/power-bi-filter-restrict-change.png)
 

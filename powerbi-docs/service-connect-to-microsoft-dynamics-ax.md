@@ -8,13 +8,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
 ---
 # Connect to Microsoft Dynamics AX content pack with Power BI
 Microsoft Dynamics AX has three Power BI content packs targeted at different business users. The Financial Performance content pack, designed specifically for CFOs, provides access to insights about your organization’s financial performance. The Retail Channel Performance content pack is targeted for channel managers focuses on sales performance to predict trends and uncover insights by drawing directly from Retail & Commerce data. The Cost Management is designed for COOs and CFOs and provides details on operation performance.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Connect to the Microsoft Dynamics AX [Retail Channel Performance](https://app.powerbi.com/getdata/services/dynamics-ax-retail-channel-performance), the [Financial Performance](https://app.powerbi.com/getdata/services/dynamics-ax-financial-performance) or the [Cost Management](https://app.powerbi.com/getdata/services/dynamics-ax-cost-management) content pack for Power BI.
 

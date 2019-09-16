@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -102,6 +102,9 @@ When we select **Edit**, Query Editor launches and a representative view of the 
 
 For more information about connecting to data, see [Connect to Data in Power BI Desktop](desktop-connect-to-data.md).
 
+> [!NOTE]
+> The table data referred to in this article might change over time. As such, the steps you need to follow might vary from the following, requiring you to be creative about how you adjust steps or outcomes - which is all part of the fun of learning. 
+
 In the next section, we adjust the data so it meets our needs. The process of adjusting connected data is called *shaping* data.
 
 ## Shape and combine data
@@ -126,7 +129,7 @@ For starters, most ratings were brought into **Query Editor** as whole numbers, 
 
 You can also change, or *transform,* those columns from text to header by using the **Transform** ribbon. Here’s the **Transform** ribbon, with an arrow pointing toward the **Data Type** button, which lets you transform the current data type to another.
 
- ![](media/desktop-getting-started/shapecombine_changetype.png)
+ ![](media/desktop-getting-started/shapecombine-changetype-b.png)
 
 Note that in **Query Settings**, the **Applied Steps** reflect the changes that were made. If I want to remove any step from the shaping process, I simply select that step, and then select the **X** to the left of the step.
 

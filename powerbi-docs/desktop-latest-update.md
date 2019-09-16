@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 09/10/2019
 
 ms.author: davidi
 
@@ -16,11 +16,16 @@ LocalizationGroup: Get started
 ---
 # What's new in the latest Power BI Desktop update? 
 
-## July 2019 Update (2.71.5523.641)
 
-Our July updates are skyrocketing with colorful bursts of new features and functionality for your Power BI Desktop. 
+## September 2019 Update (2.73.5586.561)
 
-You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop). If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
+Our September updates are like an exciting return to school - new things to learn, updates to friends we missed over the summer, and opportunities to apply what we know into better future reports. 
+
+You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop), now delivered as a single .exe file that contains all supported languages. If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
+
+> [!IMPORTANT]
+> Beginning with the September 2019 release, Power BI Desktop is only released as a single .exe file that contains all supported languages. The .msi version is no longer being released.
+
 
 The links beside each update mean the following:
 
@@ -34,41 +39,47 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 The following updates are new to **Power BI Desktop** this month:
 
 ### Reporting
-* Icon sets for table and matrix [[video]](https://youtu.be/l7OMRUF9UYg?t=11)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#iconSets) 
-* Percent support for conditional formatting by rules  [[video]](https://youtu.be/l7OMRUF9UYg?t=445)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#percentRules)
-* New filter pane is now generally available [[video]](https://youtu.be/l7OMRUF9UYg?t=543)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#filterPane)
-* Data colors support when using play axis on scatter charts [[video]](https://youtu.be/l7OMRUF9UYg?t=610)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#playAxis)
-* Performance improvements when using relative date and dropdown slicers  [[video]](https://youtu.be/l7OMRUF9UYg?t=669)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#slicers)
+* Color and text classes in themes [[video]](https://youtu.be/neq0THnRJzo?t=11)  [[article]](desktop-report-themes.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#themeJSON) 
+* New default themes  [[video]](https://youtu.be/neq0THnRJzo?t=334)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#newThemes)
+* Personalized visualization pane improvements (preview) [[video]](https://youtu.be/neq0THnRJzo?t=601)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#vizPane)
 
 
 ### Analytics
-* Counts for Key influencers visual (preview) [[video]](https://youtu.be/l7OMRUF9UYg?t=760)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#keyInfluencers) 
-* Aggregations improvements [[video]](https://youtu.be/l7OMRUF9UYg?t=870)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#aggregations) 
+* Custom format strings [[video]](https://youtu.be/neq0THnRJzo?t=731)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#customFormatStrings) 
+* Conditional formatting for more visual formatting options [[video]](https://youtu.be/neq0THnRJzo?t=813)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#conditionalFormatting) 
+* Drill-through discoverability improvement [[video]](https://youtu.be/neq0THnRJzo?t=959)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#drillThrough) 
+* New DAX expressions: REMOVEFILTERS and CONVERT [[video]](https://youtu.be/neq0THnRJzo?t=1048)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#dax) 
 
 
 ### Visuals
-* PowerApps visual is now certified  [[video]](https://youtu.be/l7OMRUF9UYg?t=894)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#powerapps) 
-* Three new custom visuals and updates  [[video]](https://youtu.be/l7OMRUF9UYg?t=932)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#infocard) 
+* PowerApps visual now generally available [[video]](https://youtu.be/neq0THnRJzo?t=1063)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#powerApps) 
 
 
 ### Data connectivity
-* Azure Data Lake Storage Gen2 connector (beta) [[video]](https://youtu.be/l7OMRUF9UYg?t=1203)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#azureDataLake) 
-* Dynamics 365 Customer Insights connector  [[video]](https://youtu.be/l7OMRUF9UYg?t=1250)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#customerInsights) 
-
+* PostgreSQL connector enhancements [[video]](https://youtu.be/neq0THnRJzo?t=1112)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#postgreSQL) 
 
 ### Data preparation
-* New transform: Split column by positions [[video]](https://youtu.be/l7OMRUF9UYg?t=1321)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#splitColumn) 
+* Copy to clipboard from data profiling [[video]](https://youtu.be/neq0THnRJzo?t=1146)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#copyProfiling) 
 
+
+### Template apps
+* Google Analytics report [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#googleAnalytics) 
+
+### Other
+* Performance improvements for multi-dimensional models  [[video]](https://youtu.be/neq0THnRJzo?t=1208)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#perfMultiDiminsional) 
+* Query performance improvements for DirectQuery models  [[video]](https://youtu.be/neq0THnRJzo?t=1272)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#perfDirectQuery) 
+https://youtu.be/neq0THnRJzo?t=1208
 
 > [!NOTE]
 > You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
 
-Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
 
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/l7OMRUF9UYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/neq0THnRJzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
