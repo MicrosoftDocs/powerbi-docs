@@ -8,8 +8,8 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/11/2019
-ms.author: mihart
+ms.date: 09/16/2019
+ms.author: maggies
 
 LocalizationGroup: Get started
 ---
@@ -25,7 +25,7 @@ Power BI runs in these browsers:
 These browsers are supported on all platforms where they're available.
 
 ### Next steps
-* [What is Power BI?](../power-bi-overview.md)
+* [What is Power BI?](power-bi-overview.md)
 * Try asking the [Power BI Community](http://community.powerbi.com/)
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/)
 
