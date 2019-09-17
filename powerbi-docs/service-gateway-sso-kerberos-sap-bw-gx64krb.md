@@ -17,7 +17,7 @@ LocalizationGroup: Gateways
 This article describes how to configure your SAP BW server to enable SSO from the Power BI service using gx64krb5.
 
 > [!NOTE]
-> You can complete the steps in this article in addition to the steps in [Configure Kerberos SSO](service-gateway-sso-kerberos.md) to enable refresh for SAP BW-based reports that uses Kerberos SSO in Power BI service. However, Microsoft recommends the use of CommonCryptoLib as your SNC library. SAP no longer offers support for gx64krb5 and the steps required to configure it for use with the gateway are significantly more complex compared to CommonCryptoLib. See [Configure SAP BW for SSO using CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md) for how to configure SSO using CommonCryptoLib. You should complete the configuration for CommonCryptoLib _or_ gx64krb5. Do not complete the configuration steps for both libraries.
+> You can complete the steps in this article in addition to the steps in [Configure Kerberos SSO](service-gateway-sso-kerberos.md) to enable refresh for SAP BW Application Server-based reports that use Kerberos SSO in Power BI service. However, Microsoft recommends the use of CommonCryptoLib as your SNC library. SAP no longer offers support for gx64krb5 and the steps required to configure it for use with the gateway are significantly more complex compared to CommonCryptoLib. See [Configure SAP BW for SSO using CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md) for how to configure SSO using CommonCryptoLib. You should complete the configuration for CommonCryptoLib _or_ gx64krb5. Do not complete the configuration steps for both libraries.
 
 ### Set up gx64krb5/gsskrb5 on gateway machine and the SAP BW server
 

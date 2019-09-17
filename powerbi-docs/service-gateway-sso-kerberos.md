@@ -173,7 +173,7 @@ If you don't have Azure AD Connect configured, follow these steps to map a Power
 
 1. Open the main gateway configuration file, `Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll`. By default, this file is stored at C:\Program Files\On-premises data gateway.
 
-1. Set the **ADUserNameLookupProperty** to an unused Active Directory attribute. We'll assume `msDS-cloudExtensionAttribute1` is used in the steps that follow, though this attribute is only available post Windows Server 2012. Set the **ADUserNameReplacementProperty** to `SAMAccountName`. Save the configuration file.
+1. Set the **ADUserNameLookupProperty** to an unused Active Directory attribute. We'll assume `msDS-cloudExtensionAttribute1` is used in the steps that follow, though this attribute is only available in Windows Server 2012 and later. Set the **ADUserNameReplacementProperty** to `SAMAccountName`. Save the configuration file.
 
 1. From the **Services** tab of Task Manager, right-click the gateway service and select **Restart**.
 
