@@ -59,6 +59,8 @@ First, determine whether an SPN was already created for the domain account used 
 
     ![Image of set SPN command](media/service-gateway-sso-kerberos/set-spn.png)
 
+    You can also set the SPN using the Active Directory Users and Computers MMC (Microsoft Management Console) snap-in.
+
 ### Decide on resource-based or standard Kerberos constrained delegation
 
 Delegation settings can be configured for _either_ resource-based constrained Kerberos delegation or standard Kerberos constrained delegation. Use resource-based delegation if your data source belongs to a different domain than your gateway, but note that this approach requires Windows Server 2012 or later. See the [constrained Kerberos delegation overview page](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) for more information on the differences between the two approaches to delegation.
@@ -72,7 +74,7 @@ Delegation settings can be configured for _either_ resource-based constrained Ke
 
 We will now set the delegation settings for the gateway service account. There are multiple tools you can use to perform these steps. Here, we'll use Active Directory Users and Computers, which is a Microsoft Management Console (MMC) snap-in to administer and publish information in the directory. It's available on domain controllers by default, but you can also enable it through Windows Feature configuration on other machines.
 
-We need to configure Kerberos constrained delegation with protocol transiting. With constrained delegation, you must be explicit about which services you want to present delegated credentials to. For example, only SQL Server or your SAP HANA server accepts delegation calls from the gateway service account.
+We need to configure Kerberos constrained delegation with protocol transiting. With constrained delegation, you must be explicit about which services you want to allow the gateway to present delegated credentials to. For example, only SQL Server or your SAP HANA server accepts delegation calls from the gateway service account.
 
 This section assumes you have already configured SPNs for your underlying data sources (such as SQL Server, SAP HANA, SAP BW, Teradata, or Spark). To learn how to configure those data source server SPNs, refer to technical documentation for the respective database server. You can also see the heading *What SPN does your app require?* in the [My Kerberos Checklist](https://techcommunity.microsoft.com/t5/SQL-Server-Support/My-Kerberos-Checklist-8230/ba-p/316160) blog post.
 
@@ -81,7 +83,7 @@ In the following steps, we assume an on-premises environment with two machines: 
 * Active Directory Domain (Netbios): Contoso
 * Gateway machine name: **MyGatewayMachine**
 * Gateway service account: **Contoso\GatewaySvc**
-* SQL Server data source machine name: **MySQLServer**
+* SQL Server data source machine name: **TestSQLServer**
 * SQL Server data source service account: **Contoso\SQLService**
 
 Here's how to configure the delegation settings:
@@ -119,7 +121,7 @@ In the following steps, we assume an on-premises environment with two machines i
 
 * Gateway machine name: **MyGatewayMachine**
 * Gateway service account: **ContosoFrontEnd\GatewaySvc**
-* SQL Server data source machine name: **MySQLServer**
+* SQL Server data source machine name: **TestSQLServer**
 * SQL Server data source service account: **ContosoBackEnd\SQLService**
 
 Given those example names and settings, complete the following configuration steps:
@@ -171,7 +173,7 @@ If you don't have Azure AD Connect configured, follow these steps to map a Power
 
 1. Open the main gateway configuration file, `Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll`. By default, this file is stored at C:\Program Files\On-premises data gateway.
 
-1. Set the **ADUserNameLookupProperty** to an unused Active Directory attribute. Well assume `msDS-cloudExtensionAttribute1` is used in the steps that follow. Set the **ADUserNameReplacementProperty** to `SAMAccountName`. Save the configuration file.
+1. Set the **ADUserNameLookupProperty** to an unused Active Directory attribute. We'll assume `msDS-cloudExtensionAttribute1` is used in the steps that follow, though this attribute is only available post Windows Server 2012. Set the **ADUserNameReplacementProperty** to `SAMAccountName`. Save the configuration file.
 
 1. From the **Services** tab of Task Manager, right-click the gateway service and select **Restart**.
 
