@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/23/2019
+ms.date: 09/16/2019
 ms.author: mblythe
 ---
 

@@ -8,7 +8,11 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
+<<<<<<< HEAD
 ms.date: 09/15/2019
+=======
+ms.date: 09/11/2019
+>>>>>>> fa62b749b9035191e1cfafcbd4c0ad6e5444c9bb
 ms.author: mihart
 
 LocalizationGroup: Get started
