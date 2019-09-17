@@ -50,7 +50,7 @@ If you create datasets, when you create one that others can benefit from, you ca
 The specific features and experiences built on shared dataset capabilities are licensed according to their existing scenarios. For example:
 
 - In general, discovering and connecting to shared datasets is available to anyone. However, users without a Pro license can only connect to datasets that reside in their personal My Workspace.
-- Users without a Pro license can only consume reports and dashboards built on shared datasets if both workspaces (the one containing the content and the one containing the dataset) are hosted in a Premium capacity.
+- Users without a Pro license can only consume reports and dashboards built on a shared dataset if both workspaces (the one containing the content and the one containing the dataset) are hosted in a Premium capacity.
 - In Power BI Desktop, users without a Pro license can only see datasets from their My Workspace.
 - Copying reports between workspaces requires a Pro license.
 - Copying reports from an app requires a Pro license, as was required for organizational content packs.
