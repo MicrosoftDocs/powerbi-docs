@@ -1,6 +1,6 @@
 - name: "Power BI for consumers"
   href: power-bi-consumer-landing.md
-- name: Power BI service for consumers
+- name: The Power BI service for consumers
   items:
   - name: Overview
     items: 
