@@ -32,7 +32,7 @@ Your account needs to be marked as a **Global Admin**, within Office 365 or Azur
 
 There are nine tabs in the portal. The rest of this article provides information about each of these tabs.
 
-    ![Admin portal navigation](media/service-admin-portal/powerbi-admin-landing-page.png)
+![Admin portal navigation](media/service-admin-portal/powerbi-admin-landing-page.png)
 
 * [Usage metrics](#usage-metrics)
 * [Users](#users)
