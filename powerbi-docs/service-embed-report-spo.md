@@ -152,7 +152,7 @@ Users viewing a report in SharePoint need either a **Power BI Pro license** or t
 
 * Power BI does not support the same localized languages that SharePoint Online does. As a result, you may not see proper localization within the embedded report.
 
-* You may encounter issues if using Internet Explorer 10. You can look at the [browsers support for Power BI](consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
+* You may encounter issues if using Internet Explorer 10. <!--You can look at the [browsers support for Power BI](consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 
 * The Power BI web part is not available for [national clouds](https://powerbi.microsoft.com/clouds/).
 

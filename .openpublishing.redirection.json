@@ -686,6 +686,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/service-dashboard-add-image.md",
+            "redirect_url": "/power-bi/service-dashboard-add-widget",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/service-dashboard-favorite.md",
             "redirect_url": "/power-bi/consumer/end-user-favorite",
             "redirect_document_id": true

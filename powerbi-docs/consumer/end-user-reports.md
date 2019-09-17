@@ -7,18 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/24/2019
+ms.date: 09/05/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ---
 
 # Reports in Power BI
 
-A Power BI report is a multi-perspective view into a dataset, with visuals that represent different findings and insights from that dataset.  A report can have a single visual or pages full of visuals. Depending on your job role, you may be someone who *designs* reports. You also may be someone who *consumes* or uses reports.
+A Power BI report is a multi-perspective view into a dataset, with visuals that represent different findings and insights from that dataset.  A report can have a single visual or pages full of visuals. Depending on your job role, you may be someone who *designs* reports. You also may be someone who *consumes* or uses reports. This article is for *consumers*.
 
-![Screenshot of a report page.](./media/end-user-reports/power-bi-reports.png)
+![Screenshot of a report page.](./media/end-user-reports/power-bi-report.png)
 
-This report has six pages (or tabs) and you're currently viewing the **Sentiment** page. On this page are five different visuals and a page title. The *Filters* pane shows us one filter applied to all report pages. To collapse the Filters pane, select the arrow (**>**).
+A. This report has six pages (or tabs) and you're currently viewing the **Sentiment** page.    
+B. On this page are five different visuals and a page title.    
+C. The *Filters* pane shows us one filter applied to all report pages. To collapse the Filters pane, select the arrow (**>**).    
+D. The Power BI banner displays the name of the report and the last updated date. Select the arrow to open a menu that also show the name of the report owner.    
+E. The action bar contains actions you can take on this report.  For example, you can add a comment, view a bookmark, or export data from the report.  Select the ellipsis (...) to reveal a list of additional report functionality.    
 
 If you're new to Power BI, you can get a good foundation by reading [Basic concepts for the Power BI service consumers](end-user-basic-concepts.md). Reports are available for viewing, sharing, and annotating on mobile devices. For more info, see [Explore reports in the Power BI mobile apps](mobile/mobile-reports-in-the-mobile-apps.md).
 
@@ -63,9 +67,9 @@ Depending on your role, you may be a *designer*, someone who creates reports for
 Or you may be a *consumer*, someone who receives reports from others. You'll want to learn how to understand and interact with the reports. If you're a report *consumer*, these links are for you:
 
 * Start with a [tour of the Power BI service](end-user-basic-concepts.md) so you know where to find reports and report tools.
-* Learn how to [open a report](end-user-report-open.md) and all the interaction available in [Reading view](end-user-reading-view.md).
+* Learn how to [open a report](end-user-report-open.md) and all the [interactions available to consumers](end-user-reading-view.md).
 * Get comfortable with reports by taking a tour of one of our [samples](../sample-tutorial-connect-to-the-samples.md).  
-* To see which dataset the report is using and which dashboards have tiles pinned from the report, see [View related content in the Power BI service](end-user-related.md).
+* To see which dataset the report is using and which dashboards are displaying visuals from the report (*pins*), see [View related content in the Power BI service](end-user-related.md).
 
 > [!TIP]
 > If you didn’t find what you’re looking for here, use the Table of Contents to the left to browse all *Report* articles.

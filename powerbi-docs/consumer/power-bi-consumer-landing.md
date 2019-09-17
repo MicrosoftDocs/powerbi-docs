@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: hub-page
-ms.date: 05/29/2019
+ms.date: 09/11/2019
 ms.author: mihart
 layout: HubPage
 ms.custom: seodec18
@@ -39,7 +39,7 @@ LocalizationGroup: Get started
                                             </div>
                                             <div class="cardText">
                                                 <h3>Get started</h3>
-                                                <p><a href="/power-bi/service-get-started" data-linktype="absolute-path">Take a tour of Power BI service</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-reading-view" data-linktype="absolute-path">Take a tour of Power BI service</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-consumer" data-linktype="absolute-path">What is a Power BI <b><i>consumer</i></b>?</a></p>
                                                 <p><b>What's the difference:</b> <a href="/power-bi/consumer/end-user-reports" data-linktype="absolute-path">Reports</a>, <a href="/power-bi/consumer/end-user-dashboards" data-linktype="absolute-path">Dashboards</a>, <a href="/power-bi/consumer/end-user-apps" data-linktype="absolute-path">Apps</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-sign-in" data-linktype="absolute-path">Sign in and sign out</a></p>
@@ -313,25 +313,6 @@ LocalizationGroup: Get started
                                                 <div class="cardText">
                                                     <h3>Accessibility</h3>
                                                     <p>Learn how Microsoft enables people with disabilities to more easily consume and interact with Power BI. </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>                            
-                            <li>
-                                <a href="/power-bi/consumer/end-user-browsers" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/browser-info.svg" alt="Browsers Info" data-linktype="relative-path">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Browsers information</h3>
-                                                    <p>See the list of browsers that work best with Power BI. </p>
                                                 </div>
                                             </div>
                                         </div>
