@@ -10,7 +10,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 04/30/2019
+ms.date: 09/16/2019
 ms.author: mihart
 
 LocalizationGroup: Consumer
@@ -21,16 +21,18 @@ Add a personal comment or start a conversation about a dashboard or report with 
 ![comments video](media/end-user-comment/comment.gif)
 
 ## How to use the Comments feature
-Comments can be added to an entire dashboard, to individual visuals on a dashboard, to a report page, and to individual visuals on a report page. Add a general comment or a comment targeted at specific colleagues.  
+Comments can be added to an entire dashboard, to individual visuals on a dashboard, to a report page, to a paginated report, and to individual visuals on a report page. Add a general comment or a comment targeted at specific colleagues.  
 
 When you add a comment to a report, Power BI captures the current filter and slicer values. This means that when you select or respond to a comment, the report page or report visual may change to show you the filter and slicer selections that were active when the comment was first added.  
 
 ![report with filters video](media/end-user-comment/comment-reports-with-filters/comment-reports-with-filters.gif)
 
-Why is this important? Say a colleague applied a filter that revealed an interesting insight that they want to share with the team. Without that filter selected, the comment might not make sense. 
+Why is this important? Say a colleague applied a filter that revealed an interesting insight that they want to share with the team. Without that filter selected, the comment might not make sense.
+
+If you are using a paginated report, you may only leave a general comment about your report.  Support for leaving comments on individual report visuals is not available.
 
 ### Add a general comment to a dashboard or report
-The processes for adding comments to a dashboard or report are similar. In this example, we're using a dashboard. 
+The processes for adding comments to a dashboard or report are similar.  In this example, we're using a dashboard. 
 
 1. Open a Power BI dashboard or report and select the **Comments** icon. This opens the Comments dialog.
 
