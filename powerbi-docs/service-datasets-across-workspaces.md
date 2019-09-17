@@ -18,7 +18,7 @@ Business intelligence is a collaborative activity. It's important to establish s
 
 ![Select a shared dataset](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-In Power BI, dataset creators can control who has access to their data by using the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Dataset creators can also *certify* or *promote* datasets so others can discover them. That way, report authors know which dataset are high quality and official, and they can use those datasets wherever they author in Power BI. Tenant administrators have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
+In Power BI, dataset creators can control who has access to their data by using the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Dataset creators can also *certify* or *promote* datasets so others can discover them. That way, report authors know which datasets are high quality and official, and they can use those datasets wherever they author in Power BI. Tenant administrators have a new tenant setting to [govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md).
 
 ## Dataset sharing and the new workspace experience
 
@@ -62,7 +62,7 @@ The specific features and experiences built on shared dataset capabilities are l
 - Say you create a report in Workspace A that's based on a dataset in Workspace B. When you create an app for Workspace A, you can only include that report in the Workspace A app if you are also a member of Workspace B.
 - In a classic workspace, the dataset discovery experience only shows the datasets in that workspace.
 - If you want to add a report based on a shared dataset to an app, you have to be a member of the dataset workspace. This is a known issue.
-- “Publish to web” doesn’t work for a report based on a shared dataset. This is by design.
+- By design, “Publish to web” doesn’t work for a report based on a shared dataset.
 - If two people are members of a workspace that is accessing a shared dataset, it's possible that only one of them can see the related dataset in the workspace. Only people with at least Read access to the dataset can see the shared dataset. 
 
 ## Next steps
