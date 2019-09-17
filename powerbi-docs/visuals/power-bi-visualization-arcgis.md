@@ -130,7 +130,7 @@ ArgGIS Maps for Power BI automatically detects the best way to show data on the 
 **Boundaries** will only work if your data contains standard geographic values. Esri automatically figures out the shape to show on the map. Standard geographic values include countries, provinces, zip codes, etc. But just like with GeoCoding, Power BI may not detect the field should be a boundary by default, or it may not have a boundary for your data.  
 
 ### Map theme
-Four map themes are provided. Location Only and Size themes are automatically chosen based on the fields you bind to the location and added to the **Size** bucket in the Power BI Fields pane. We're currently using **Size**, so let's change to **Heat map**.  
+Four map themes are provided. Location Only and Size themes are automatically chosen based on the fields you bind to the location and added to the **Size** bucket in the Power BI Fields pane. We're currently using **Size**, so let's change to **Heat map**, just remember to disable **Heat map** before moving on to the next step.  
 
 ![esri map theme example](media/power-bi-visualization-arcgis/power-bi-esri-map-theme-new.png)
 
@@ -156,7 +156,7 @@ Four map themes are provided. Location Only and Size themes are automatically ch
 
 
 ### Symbol style
-Symbol styles enable you to fine tune how data is presented on the map. Symbol styles are context sensitive based on the selected Location type and Map theme. The example below shows Location type set to **Size** and several adjustments to transparency, style and size. The heat map theme has also been disabled. 
+Symbol styles enable you to fine tune how data is presented on the map. Symbol styles are context sensitive based on the selected Location type and Map theme. The example below shows Map type set to **Size** and several adjustments to transparency, style and size. 
 
 ![esri symbol style example](media/power-bi-visualization-arcgis/power-bi-esri-symbol-style-new.png)
 
@@ -188,7 +188,8 @@ The Drive time pane lets you select a location and then determine what other map
    > 
 2. Let's say you're flying into Washington D.C. for a few days and want to figure out which stores are within a reasonable driving distance. Change Search area to **Radius** and Distance to **50** miles and select OK.    
    
-    ![]drive time radius example(media/power-bi-visualization-arcgis/power-bi-esri-drive-time-radius.png)
+    ![drive time radius](media/power-bi-visualization-arcgis/power-bi-esri-drive-time-radius.png)
+
 3. The radius is shown in purple. Select any location to display its details. Optionally, format the radius by changing color and outline.
    
     ![radius format with color and outline example](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
@@ -212,22 +213,28 @@ ArcGIS Online provides the ability for organizations to publish public web maps.
 2. Enter search terms and then select a map layer. In this example we've chosen USA Congressional districts.
    
     ![esri demographics example](media/power-bi-visualization-arcgis/power-bi-esri-demographics-esri2-new.png)
-3. To see the details, select a shaded area to open the *Select from reference layer*: Use the reference layer selection tool to selection boundaries or objects on the reference layer.
+3. To see the details, select a shaded area on the map
 
 <br/>
 
 ## Selecting Data points
-ArcGIS Maps for Power BI allows three selection modes.
+ArcGIS Maps for Power BI allows five selection modes to help you select your data accurately and quickly.
 
-Change the selection mode using switch:
+Change the selection mode by hovering your cursor over the single selection tool icon shown in the below image. This will also expand the hidden bar to show additional tools:
 
 ![esri selection tool](media/power-bi-visualization-arcgis/power-bi-esri-selection-tools2.png)
+
+Each tool has a unique role in allowing you to select your data: 
 
 ![esri selection single](media/power-bi-visualization-arcgis/power-bi-esri-selection-single2.png) Select individual data points.
 
 ![esri selection marquee](media/power-bi-visualization-arcgis/power-bi-esri-selection-marquee2.png) Draws a rectangle on the map and selects the contained data points.
 
 ![esri selection reference layer](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-layer2.png) Allows boundaries or polygons within reference layers to be used to select contained data points.
+
+![esri selection buffer layer](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-buffer.png) Allows you to select data using a buffer layer.
+
+![esri selection similar selection](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-similar.png) Allows you to select data points that are similar to each other.
 
 > [!NOTE]
 > A maximum of 250 data points can be selected at a time.
@@ -246,19 +253,19 @@ If you have a suggestion for an improvement, please submit it to [Power BI's ide
 <br/>
 
 ## Managing use of ArcGIS Maps for Power BI within your organization
-Power BI provides the ability for users, tenant administrators, and IT administrators to manage whether to use ArcGIS Maps for Power BI.
+Power BI provides the ability for users, tenant administrators, and IT administrators to manage whether to use ArcGIS Maps for Power BI. Below you will find steps each role can take to manage the use of ArcGis Maps. 
 
-**User options**
-In Power BI Desktop, users can stop using ArcGIS Maps for Power BI by disabling it on the security tab in **Options**. When disabled, ArcGIS Maps will not load by default.
+### User options
+In Power BI Desktop, users can stop using ArcGIS Maps for Power BI by disabling it on the security tab in **File** > **Options and settings** and then select **Options** > **Security**. When disabled, ArcGIS Maps will not load by default.
 
 ![desktop security dialog example](media/power-bi-visualization-arcgis/power-bi-desktop-security-dialog2.png)
 
-**Tenant admin options**
-In PowerBI.com, tenant administrators can prevent all tenant users from using ArcGIS Maps for Power BI by disabling. When this happens, Power BI will no longer see the ArcGIS Maps for Power BI icon in the visualizations pane.
+### Tenant admin options
+In PowerBI.com, tenant administrators can prevent all tenant users from using ArcGIS Maps for Power BI by disabling the option from **Settings** > **Admin Portal** > **Tenant settings**. When this happens, Power BI will no longer see the ArcGIS Maps for Power BI icon in the visualizations pane.
 
 ![arcgis admin portal example](media/power-bi-visualization-arcgis/power-bi-arcgis-admin-portal2.png)
 
-**IT Administrator options**
+### IT Administrator options
 Power BI Desktop supports using **Group Policy** to disable ArcGIS Maps for Power BI across an organization's deployed computers.
 
 <table>
