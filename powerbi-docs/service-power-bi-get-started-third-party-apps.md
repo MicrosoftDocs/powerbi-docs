@@ -9,7 +9,7 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ""
 ms.cunstom: ""
-ms.date: 08/10/2017
+ms.date: 09/16/2019
 LocalizationGroup: Get started
 ---
 

@@ -4,7 +4,6 @@ description: See a list of browsers that support Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
