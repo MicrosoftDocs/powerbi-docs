@@ -4,12 +4,11 @@ description: See a list of browsers that support Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/15/2019
+ms.date: 09/15/2019
 ms.author: mihart
 
 LocalizationGroup: Get started
