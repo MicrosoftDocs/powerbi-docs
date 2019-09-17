@@ -19,7 +19,7 @@ LocalizationGroup: Visualizations
 
 A table is a grid that contains related data in a logical series of rows and columns. It may also contain headers and a row for totals. Tables work well with quantitative comparisons where you're looking at many values for a single category. For example, this table displays five different measures for **Category**.
 
-![Screenshot of a table that displays five different measures for Category.](media/power-bi-visualization-tables/table.png)
+![Screenshot of a table that displays five different measures for Category.](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 
 Create tables in reports and cross-highlight elements within the table with other visuals on the same report page. You can select rows, columns, and even individual cells and cross-highlight. You can also copy and paste individual cells and multiple cell selections into other applications.
 
@@ -61,7 +61,7 @@ You'll create the table pictured at the beginning of the article to display sale
 
 1. Then select **Sales > This Year Sales** and select all three options: **Value**, **Goal**, and **Status**.
 
-1. In the **Visualizations** pane, locate the **Values** well and select the values until the order of your chart columns matches the first image on this page. Your **Values** well will look like this:
+1. In the **Visualizations** pane, locate the **Values** well and select the values until the order of your chart columns matches the first image on this page. Drag the values in the well if needed. Your **Values** well will look like this:
 
     ![Values well](media/power-bi-visualization-tables/power-bi-table2.png)
 
@@ -164,10 +164,6 @@ To copy more than a single cell:
 1. Select **Copy** > **Copy selection**.
 
     ![copy options](media/power-bi-visualization-tables/power-bi-copy-selection.png)
-
-    The copy includes the column and row headers.
-
-    ![paste into Excel](media/power-bi-visualization-tables/power-bi-paste-selection.png)
 
 ## Adjust the column width of a table
 
