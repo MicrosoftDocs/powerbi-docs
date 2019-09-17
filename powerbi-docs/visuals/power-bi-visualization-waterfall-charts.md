@@ -63,9 +63,9 @@ You'll create a waterfall chart that displays sales variance (estimated sales ve
 
    ![Screenshot of Sales > Total Sales Varience selected and the visual that results.](media/power-bi-visualization-waterfall-charts/power-bi-first-value.png)
 
-1. Select the waterfall icon ![Screenshot of the waterfall icon](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png) to convert the chart to a treemap.
+1. Select the waterfall icon ![Screenshot of the waterfall icon](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png)
 
-    ![Visualization templates](media/power-bi-visualization-waterfall-charts/convertwaterfall.png)
+    ![Visualization templates](media/power-bi-visualization-waterfall-charts/convert-waterfall.png)
 
 1. Select **Time** > **FiscalMonth** to add it to the **Category** well.
 
@@ -73,9 +73,15 @@ You'll create a waterfall chart that displays sales variance (estimated sales ve
 
 1. Make sure Power BI sorted the waterfall chart chronologically. From the top-right corner of the chart, select the ellipsis (...).
 
-    Check that there is a yellow indicator next to the left of the **Sort ascending** and **FiscalMonth** options
+    For this example we will select **Sort ascending**
 
-    ![Select sort by > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
+    Check that there is a yellow indicator next to the left of the **Sort ascending.** This indicates that your selected option is being applied.
+
+    ![Select sort by > Ascending order](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
+
+    Next, we are going to click **Sort by** and select **FiscalMonth** As with the previous step, a yellow indicator next to your selection indicates when your selection option is being applied.
+
+    ![Select sort by > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png)
 
     You can also look at the X-Axis values and see that they are in order from **Jan** to **Aug**.
 
@@ -85,7 +91,7 @@ You'll create a waterfall chart that displays sales variance (estimated sales ve
 
     ![Shows Store in Breakdown bucket](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 
-    By default, Power BI adds the top five contributors to increases or decreases by month.
+    By default, Power BI adds the top five contributors to increases or decreases by month. The below image has expanded our visualization pane to include more data. 
 
     ![Shows Store in Breakdown bucket](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-initial.png)
 
@@ -98,20 +104,6 @@ You'll create a waterfall chart that displays sales variance (estimated sales ve
     A quick review reveals that the territories of Ohio and Pennsylvania are the biggest contributors to movement, both negative and positive, in your waterfall chart.
 
     ![waterfall chart](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
-
-    It's an interesting finding. Do Ohio and Pennsylvania have such a significant impact because sales in these two territories are much higher than the other territories? You can check that.
-
-1. Create a map that looks at this year sales value and last year sales by territory.
-
-    ![map close-up on PA and Ohio](media/power-bi-visualization-waterfall-charts/power-bi-map.png)
-
-    The map supports your theory. It shows that these two territories had the highest value of sales last year (bubble size) and this year (bubble shading).
-
-## Highlighting and cross-filtering
-
-For information about using the **Filters** pane, see [Add a filter to a report in Editing view](../power-bi-report-add-filter.md).
-
-Highlighting a column in a waterfall chart cross-filters the other visualizations on the report page and the other way around. However, the **Total** column doesn't trigger highlighting or respond to cross-filtering.
 
 ## Next steps
 

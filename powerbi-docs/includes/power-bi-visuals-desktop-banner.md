@@ -7,4 +7,4 @@ ms.author: mihart
 ---
 
 >[!NOTE]
->This guide is for the Desktop version of Power BI only. 
+>These visuals can be created and viewed in both Power BI Desktop and the Power BI service. The steps and illustrations in this article are from Power BI Desktop. 
