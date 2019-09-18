@@ -67,7 +67,7 @@ In addition to adding comments to an entire dashboard or to an entire report pag
 
 3.  The **Comments** dialog opens, and the other visuals on the page are greyed out. This visual doesn't have any comments yet. 
 
-    ![Add a comment to self](media/end-user-comment/power-bi-comments-bar.png)  
+    ![Add a comment to self](media/end-user-comment/power-bi-comment-column.png)  
 
 4. Type your comment and select **Post**.
 
@@ -77,7 +77,7 @@ In addition to adding comments to an entire dashboard or to an entire report pag
 
     - On a dashboard, the chart icon ![comment with chart icon](media/end-user-comment/power-bi-comment-chart-icon.png) lets us know that a comment is tied to a specific visual. Comments that apply to the entire dashboard do not have a special icon. Selecting the chart icon highlights the related visual on the dashboard.
     
-    ![related visual highlighted](media/end-user-comment/power-bi-comment-highlighting.png)
+    ![related visual highlighted](media/end-user-comment/power-bi-comment-hilite.png)
 
 5. Select **Close** to return to the dashboard or report.
 
