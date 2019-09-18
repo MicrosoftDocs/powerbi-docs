@@ -1,9 +1,9 @@
 ---
 title: Power BI visuals guidelines
 description: Learn how you can publish your custom visual to AppSource for others to discover and use it via a purchase.
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -45,7 +45,7 @@ This section describes the specifications for adding logos and logotypes in visu
 
 Until recently, the Marketplace (AppSource) accepted only Power BI visuals that are free. This policy has changed (December '18), so that you can also submit visuals to AppSource that have an "additional purchase may be required" price tag. 
 
-"Additional purchase may be required" visuals are similar to in-app purchase (IAP) add-ins in the Office Store. Developers may also submit these visuals for certification after the AppSource team approves them, and after making sure they comply with certification requirements. For more information about the requirements, see [Certified custom visuals](../power-bi-custom-visuals-certified.md).
+"Additional purchase may be required" visuals are similar to in-app purchase (IAP) add-ins in the Office Store. Developers may also submit these visuals for certification after the AppSource team approves them, and after making sure they comply with certification requirements. For more information about the requirements, see [Certified Power BI visuals](../power-bi-custom-visuals-certified.md).
 
 > [!NOTE]
 > For the visual to be certified, it must not access external services or resources.

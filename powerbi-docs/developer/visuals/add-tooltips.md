@@ -1,9 +1,9 @@
 ---
 title: Tooltips in Power BI visuals
 description: This article discusses how you can display tooltips in Power BI visuals.
-author: AviSander
-ms.author: asander
-manager: rkarlin
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

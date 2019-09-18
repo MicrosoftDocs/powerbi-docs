@@ -1,9 +1,9 @@
 ---
 title: Adding formatting options to a Power BI custom visual
 description: A tutorial on how to develop Power BI custom visual format options 
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -12,7 +12,7 @@ ms.subservice: powerbi-custom-visuals
 ms.date: 11/21/2018
 ---
 
-# Tutorial: Adding formatting options to a Power BI custom visual
+# Tutorial: Adding formatting options to a Power BI visual
 
 In this tutorial, we go through how to add common properties to the visual.
 
@@ -259,4 +259,4 @@ For tips about debugging your custom visual, see the [debugging guide](https://m
 
 ## Next steps
 
-You can list your newly developed visual for others to use by submitting it to the **AppSource**. For more information on this process reference [Publish custom visuals to AppSource](office-store.md).
+You can list your newly developed visual for others to use by submitting it to the **AppSource**. For more information on this process reference [Publish Power BI visuals to AppSource](office-store.md).

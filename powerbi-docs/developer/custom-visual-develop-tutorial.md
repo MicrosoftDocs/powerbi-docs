@@ -1,9 +1,9 @@
 ---
 title: Developing a Power BI visual
 description: A tutorial on how to develop a Power BI custom visual
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -14,9 +14,9 @@ ms.date: 03/15/2019
 
 # Tutorial: Developing a Power BI visual
 
-We’re enabling developers to easily add custom visuals into Power BI for use in dashboard and reports. To help you get started, we’ve published the code for all of our visualizations to GitHub.
+We’re enabling developers to easily add Power BI visuals into Power BI for use in dashboard and reports. To help you get started, we’ve published the code for all of our visualizations to GitHub.
 
-Along with the visualization framework, we’ve provided our test suite and tools to help the community build high-quality custom visuals for Power BI.
+Along with the visualization framework, we’ve provided our test suite and tools to help the community build high-quality Power BI visuals for Power BI.
 
 This tutorial shows you how to develop a Power BI custom visual named Circle Card to display a formatted measure value inside a circle. The Circle Card visual supports customization of fill color and thickness of its outline.
 

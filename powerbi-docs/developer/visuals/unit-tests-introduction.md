@@ -1,9 +1,9 @@
 ---
 title: Introduction to unit tests for Power BI visual projects
 description: This article describes how to write unit tests for Power BI visual projects
-author: zBritva
-ms.author: v-ilgali
-manager: rkarlin
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -612,4 +612,4 @@ In the scope of file, you can view the source code. The `Coverage` utilities wou
 
 ## Next steps
 
-When your visual is ready, you can submit it for publication. For more information, see [Publish custom visuals to AppSource](../office-store.md).
+When your visual is ready, you can submit it for publication. For more information, see [Publish Power BI visuals to AppSource](../office-store.md).

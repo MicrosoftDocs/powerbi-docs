@@ -1,9 +1,9 @@
 ---
 title: Add bookmark support for Power BI visuals
 description: Power BI visuals can handle bookmarks switching
-author: zBritva
-ms.author: v-ilgali
-manager: rkarlin
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -13,7 +13,7 @@ ms.date: 06/18/2019
 
 # Add bookmark support for Power BI visuals
 
-With Power BI report bookmarks, you can capture a configured view of a report page, the selection state, and the filtering state of the visual. But it requires additional action from the custom visuals side to support the bookmark and react correctly to changes.
+With Power BI report bookmarks, you can capture a configured view of a report page, the selection state, and the filtering state of the visual. But it requires additional action from the Power BI visuals side to support the bookmark and react correctly to changes.
 
 For more information about bookmarks, see [Use bookmarks to share insights and build stories in Power BI](https://docs.microsoft.com/power-bi/desktop-bookmarks).
 
@@ -27,7 +27,7 @@ If your visual interacts with other visuals, selects data points, or filters oth
 
 2. Update the visual API to version 1.11.0 to use `registerOnSelectCallback` in an instance of `SelectionManager`. It's required for non-filter visuals that use the plain `SelectionManager` rather than `InteractivityService`.
 
-### How custom visuals interact with Power BI in report bookmarks
+### How Power BI visuals interact with Power BI in report bookmarks
 
 Let's consider the following scenario: you want to create several bookmarks on the report page, with a different selection state in each bookmark.
 

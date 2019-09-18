@@ -1,9 +1,9 @@
 ---
-title: Publish custom visuals to AppSource
+title: Publish Power BI visuals to AppSource
 description: Learn how you can publish your custom visual to AppSource for others to discover and use.
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -12,7 +12,7 @@ ms.subservice: powerbi-custom-visuals
 ms.date: 3/27/2019
 ---
 
-# Publish custom visuals to AppSource
+# Publish Power BI visuals to AppSource
 
 Learn how you can publish your custom visual to AppSource for others to discover and use.
 
@@ -36,13 +36,13 @@ Once you're done reading our [Power BI visuals guidlines](guidelines-powerbi-vis
 | Screenshots |Yes |You must provide at least one screenshot. The format can be .png, .jpg, .jpeg or .gif. It must be exactly 1366 px (width) x 768 px (height). It can be no larger than 1024 kb for the file size. *For greater usage, add text bubbles to articulate the value proposition of key features shown in each screenshot.* |
 | Support download link |Yes |Provide the URL to support customers who have issues with your visual. This link is entered as part of your SellerDashboard listing and is visible to users when they access your visual’s listing on AppSource. The format of your URL should include https:// or http://. |
 | Privacy document link |Yes |Provide a link to the privacy policy for customers who use your visual. This link is entered as part of your SellerDashboard listing and is visible to users when they access your visual’s listing on AppSource. The format of your link should include https:// or http://. |
-| End-user license agreement (EULA) |Yes |You must upload a EULA file. This can be either your own EULA or use the default EULA within the Office store for Power BI custom visuals. To use the default EULA, paste the following URL in the seller dashboard's "End-User License Agreement" file upload dialog: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
+| End-user license agreement (EULA) |Yes |You must upload a EULA file. This can be either your own EULA or use the default EULA within the Office store for Power BI Power BI visuals. To use the default EULA, paste the following URL in the seller dashboard's "End-User License Agreement" file upload dialog: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
 | Video link |No |To increase the interest of users for your custom visual, it is advised to provide a link to a video about your visual. The format of your URL should include https:// or http://. |
 | GitHub repository |No |It is preferred to have a valid and public link to a [GitHub](https://www.github.com) repository with sources of your visual and sample data in it to allow other developers to provide feedback and propose improvements to your code. |
 
 ## Submitting to Power BI
 
-Submission starts with sending an email to the Power BI custom visuals submission team. You can email [pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com).
+Submission starts with sending an email to the Power BI Power BI visuals submission team. You can email [pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com).
 
 > [!IMPORTANT]
 > You must fill the following fields in the pbiviz.json file: “description”, “supportUrl”, “author“, “name” and “email” before you create the .pbiviz package.
@@ -85,7 +85,7 @@ Follow the below steps to complete the submission.
    * *Submission title:* How your submission will be named in the developer center
    * *Version:* Your version number is auto-populated from your add-in app package.
    * *Release Date (UTC):* Select a date for your app to release to the store. If a future date is chosen, your app will not be available in the store until that date is reached.
-   * *Category:* The first category will be auto populated as "Data Visualization + BI". That's how all Power BI custom visuals will be tagged. You may provide up to 2 additional categories, for help users easily search for your visual
+   * *Category:* The first category will be auto populated as "Data Visualization + BI". That's how all Power BI Power BI visuals will be tagged. You may provide up to 2 additional categories, for help users easily search for your visual
    * *Testing notes:* optional, if you'd like to provide some instructions for the testers at Microsoft
    * *My app calls, supports, contains, or uses cryptography or encryption:* leave unchecked
    * *Make this add-in available in the Office add-in catalog on iPad:* leave unchecked
@@ -100,7 +100,7 @@ Follow the below steps to complete the submission.
    * Video link
    * End User License Agreement (EULA)
 
-       You must upload a EULA file. This can be either your own EULA or use the default EULA within the Office store for Power BI custom visuals. To use the default EULA, paste the following URL in the seller dashboard's "End-User License Agreement" file upload dialog: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
+       You must upload a EULA file. This can be either your own EULA or use the default EULA within the Office store for Power BI Power BI visuals. To use the default EULA, paste the following URL in the seller dashboard's "End-User License Agreement" file upload dialog: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
 
 8. Select **Next** to proceed to the **Details** page.
 
