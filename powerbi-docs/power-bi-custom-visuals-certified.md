@@ -31,13 +31,13 @@ Are you a Web developer and interested in creating your own visualizations and a
 
 ## Removal of Power BI Certified Power BI visuals
 
-Microsoft can remove a visual from the [certified list](power-bi-custom-visuals-certified.md#list-of-Power-BI-visuals-that-have-been-certified) at its discretion.
+Microsoft can remove a visual from the [certified list](#list-of-power-bi-visuals-that-have-been-certified) at its discretion.
 
 ## Getting a custom visual certified
 
 ### Certification requirements
 
-To get your custom visual [certified](power-bi-custom-visuals-certified.md#certified-Power-BI-visuals), make sure your custom visual complies with the below:  
+To get your custom visual [certified](#certified-power-bi-visuals), make sure your custom visual complies with the below:  
 
 * Microsoft AppSource approved. Your custom visual should be in our [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
 * Custom visual is written with versioned **API v2.5** or higher.
@@ -86,7 +86,7 @@ To submit a custom visual for certification:
     * [Adhere to the requirements](#certification-requirements)
     * Pass the code review
 
-2. The Microsoft Power BI visuals team notifies you when your custom visual is certified and added to the [certified list](power-bi-custom-visuals-certified.md#list-of-Power-BI-visuals-that-have-been-certified), or is rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their certified visuals as needed.
+2. The Microsoft Power BI visuals team notifies you when your custom visual is certified and added to the [certified list](#list-of-power-bi-visuals-that-have-been-certified), or is rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their certified visuals as needed.
 
 ## List of Power BI visuals that have been certified
 
@@ -188,7 +188,7 @@ To submit a custom visual for certification:
 
 ## FAQ
 
-For more information about visuals, see [Frequently asked questions about certified visuals](power-bi-custom-visuals-faq.md#certified-Power-BI-visuals).
+For more information about visuals, see [Frequently asked questions about certified visuals](#certified-power-bi-visuals).
 
 ## Next steps
 
