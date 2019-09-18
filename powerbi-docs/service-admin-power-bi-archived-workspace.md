@@ -17,7 +17,7 @@ LocalizationGroup: Administration
 # Power BI Archived Workspace
 
 > [!IMPORTANT]
-> The Archived Workspace feature is no longer supported and will be removed at the end of 2019. If you're using an Archived Workspace, recreate in your current tenant any content you want keep, as soon as possible.
+> Power BI no longer supports the Archived Workspace feature, which will be removed at the end of 2019. If you're using an Archived Workspace, recreate in your current tenant any content you want keep, as soon as possible. Power BI also no longer supports the related capability, [external takeover of an Azure AD tenant](service-admin-faq.md#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users).
 
 With Power BI, anyone can sign up and start using the service in a few minutes.  Later, your organization's IT department might choose to take over managing Power BI for users in your organization.  If this takeover occurs, you benefit from central management of users and permissions in your organization. You might also be able to take advantage of streamlined sign-in using the same username and password you use for other services in your organization.
 
