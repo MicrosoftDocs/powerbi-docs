@@ -4,19 +4,19 @@
   "author" : "",
   "width" : 1076.0,
   "height" : 676.0,
-  "version" : "0.5",
+  "version" : "2.0",
   "editRate" : 30,
   "authoringClientName" :  {
-    "name" : "Camtasia Studio",
+    "name" : "Camtasia",
     "platform" : "Windows",
-    "version" : "9.0"
+    "version" : "18.0"
   },
   "sourceBin" : [
     {
       "id" : 1,
       "src" : "C:\\Users\\mihart\\Documents\\Camtasia Studio\\Rec 04-30-19.trec",
       "rect" : [0, 0, 1076, 676],
-      "lastMod" : "20190501T023615",
+      "lastMod" : "not-a-date-time",
       "sourceTracks" : [
         {
           "range" : [0, 1916],
@@ -54,61 +54,8 @@
                       "mixToMono" : false
                     },
                     "parameters" : {
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "opacity" : {
-                        "type" : "double",
-                        "defaultValue" : 1.0,
-                        "interp" : "linr"
-                      },
-                      "cursorOpacity" : {
-                        "type" : "double",
-                        "defaultValue" : 1.0,
-                        "interp" : "linr"
-                      },
-                      "cursorScale" : {
-                        "type" : "double",
-                        "defaultValue" : 1.0,
-                        "interp" : "linr"
-                      }
+                      "cursorOpacity" : 1.0,
+                      "cursorScale" : 1.0
                     },
                     "medias" : [
                         {
@@ -120,51 +67,6 @@
                             "ident" : "Rec 04-30-19"
                           },
                           "parameters" : {
-                            "sourceCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "opacity" : {
-                              "type" : "double",
-                              "defaultValue" : 1.0,
-                              "interp" : "linr"
-                            },
                             "cursorScale" : {
                               "type" : "double",
                               "defaultValue" : 0.0,
@@ -202,51 +104,6 @@
                             "ident" : "Rec 04-30-19"
                           },
                           "parameters" : {
-                            "sourceCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "opacity" : {
-                              "type" : "double",
-                              "defaultValue" : 1.0,
-                              "interp" : "linr"
-                            },
                             "cursorScale" : {
                               "type" : "double",
                               "defaultValue" : 0.0,
@@ -285,61 +142,8 @@
                             "ident" : "Rec 04-30-19"
                           },
                           "parameters" : {
-                            "sourceCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "opacity" : {
-                              "type" : "double",
-                              "defaultValue" : 1.0,
-                              "interp" : "linr"
-                            },
-                            "cursorOpacity" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "cursorScale" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            }
+                            "cursorOpacity" : 0.0,
+                            "cursorScale" : 0.0
                           },
                           "effects" : [
 
@@ -385,61 +189,8 @@
                       "mixToMono" : false
                     },
                     "parameters" : {
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "opacity" : {
-                        "type" : "double",
-                        "defaultValue" : 1.0,
-                        "interp" : "linr"
-                      },
-                      "cursorOpacity" : {
-                        "type" : "double",
-                        "defaultValue" : 1.0,
-                        "interp" : "linr"
-                      },
-                      "cursorScale" : {
-                        "type" : "double",
-                        "defaultValue" : 1.0,
-                        "interp" : "linr"
-                      }
+                      "cursorOpacity" : 1.0,
+                      "cursorScale" : 1.0
                     },
                     "medias" : [
                         {
@@ -452,61 +203,8 @@
                             "ident" : "Rec 04-30-19"
                           },
                           "parameters" : {
-                            "sourceCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "opacity" : {
-                              "type" : "double",
-                              "defaultValue" : 1.0,
-                              "interp" : "linr"
-                            },
-                            "cursorOpacity" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "cursorScale" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            }
+                            "cursorOpacity" : 0.0,
+                            "cursorScale" : 0.0
                           },
                           "effects" : [
 
@@ -534,51 +232,6 @@
                             "ident" : "Rec 04-30-19"
                           },
                           "parameters" : {
-                            "sourceCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "opacity" : {
-                              "type" : "double",
-                              "defaultValue" : 1.0,
-                              "interp" : "linr"
-                            },
                             "cursorScale" : {
                               "type" : "double",
                               "defaultValue" : 0.0,
@@ -617,61 +270,8 @@
                             "ident" : "Rec 04-30-19"
                           },
                           "parameters" : {
-                            "sourceCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "sourceCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "geometryCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "opacity" : {
-                              "type" : "double",
-                              "defaultValue" : 1.0,
-                              "interp" : "linr"
-                            },
-                            "cursorOpacity" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            },
-                            "cursorScale" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "linr"
-                            }
+                            "cursorOpacity" : 0.0,
+                            "cursorScale" : 0.0
                           },
                           "effects" : [
 
@@ -716,51 +316,6 @@
                       "ident" : "Rec 04-30-19"
                     },
                     "parameters" : {
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "opacity" : {
-                        "type" : "double",
-                        "defaultValue" : 1.0,
-                        "interp" : "linr"
-                      },
                       "cursorScale" : {
                         "type" : "double",
                         "defaultValue" : 1.0,
@@ -794,6 +349,7 @@
                   {
                     "name" : "Fade",
                     "duration" : 22,
+                    "trivial" : true,
                     "useAudioPreRoll" : true,
                     "useVisualPreRoll" : true,
                     "leftMedia" : 11
@@ -810,105 +366,35 @@
                       "kind" : "TypeWinBlur",
                       "shape" : "",
                       "style" : "",
-                      "blur-invert" : {
-                        "type" : "double",
-                        "interp" : "linr",
+                      "blur-invert" : 0.0,
+                      "height" : 169.0,
+                      "intensity" : 1.0,
+                      "width" : 269.0,
+                      "filename" : "C:\\Program Files\\TechSmith\\Camtasia 9\\Media\\Studio\\Callouts\\blur_100x100.xml",
+                      "horizontal-alignment" : "center",
+                      "name" : "Blur",
+                      "vertical-alignment" : "center",
+                      "xmlContent" : "﻿<?xml version=\"1.0\"?>\n\n<Overlay version=\"1.0.1\">\n\n<Overlay_Filename>blur_100x100.png</Overlay_Filename>\n<Overlay_Name>Blur</Overlay_Name>\n<Text_Top>0</Text_Top>\n<Text_Left>0</Text_Left>\n<Text_Bottom>0</Text_Bottom>\n<Text_Right>0</Text_Right>\n<Fill_Color>0</Fill_Color>\n<Border_Color>0</Border_Color>\n</Overlay>",
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
                         "keyframes" : [
                           {
+                            "endTime" : 0,
                             "time" : 0,
-                            "value" : 0.0,
+                            "value" : null,
                             "duration" : 0
                           }
                         ]
-                      },
-                      "height" : {
-                        "type" : "double",
-                        "defaultValue" : 169.0,
-                        "interp" : "linr"
-                      },
-                      "intensity" : {
-                        "type" : "double",
-                        "defaultValue" : 1.0,
-                        "interp" : "linr"
-                      },
-                      "width" : {
-                        "type" : "double",
-                        "defaultValue" : 269.0,
-                        "interp" : "linr"
-                      },
-                      "filename" : "C:\\Program Files\\TechSmith\\Camtasia 9\\Media\\Studio\\Callouts\\blur_100x100.xml",
-                      "name" : "Blur",
-                      "xmlContent" : "﻿<?xml version=\"1.0\"?>\n\n<Overlay version=\"1.0.1\">\n\n<Overlay_Filename>blur_100x100.png</Overlay_Filename>\n<Overlay_Name>Blur</Overlay_Name>\n<Text_Top>0</Text_Top>\n<Text_Left>0</Text_Left>\n<Text_Bottom>0</Text_Bottom>\n<Text_Right>0</Text_Right>\n<Fill_Color>0</Fill_Color>\n<Border_Color>0</Border_Color>\n</Overlay>"
+                      }
                     },
                     "attributes" : {
                       "autoRotateText" : true
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : 337.322645290319,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -7.70490981967365,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.194224880988119,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.09118236472986,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "opacity" : {
-                        "type" : "double",
-                        "defaultValue" : 1.0,
-                        "interp" : "linr"
-                      }
+                      "translation0" : 337.322645290319,
+                      "translation1" : -7.70490981967365,
+                      "scale0" : 0.194224880988119,
+                      "scale1" : 0.09118236472986
                     },
                     "effects" : [
 
@@ -942,105 +428,35 @@
                       "kind" : "TypeWinBlur",
                       "shape" : "",
                       "style" : "",
-                      "blur-invert" : {
-                        "type" : "double",
-                        "interp" : "linr",
+                      "blur-invert" : 0.0,
+                      "height" : 169.0,
+                      "intensity" : 1.0,
+                      "width" : 269.0,
+                      "filename" : "C:\\Program Files\\TechSmith\\Camtasia 9\\Media\\Studio\\Callouts\\blur_100x100.xml",
+                      "horizontal-alignment" : "center",
+                      "name" : "Blur",
+                      "vertical-alignment" : "center",
+                      "xmlContent" : "﻿<?xml version=\"1.0\"?>\n\n<Overlay version=\"1.0.1\">\n\n<Overlay_Filename>blur_100x100.png</Overlay_Filename>\n<Overlay_Name>Blur</Overlay_Name>\n<Text_Top>0</Text_Top>\n<Text_Left>0</Text_Left>\n<Text_Bottom>0</Text_Bottom>\n<Text_Right>0</Text_Right>\n<Fill_Color>0</Fill_Color>\n<Border_Color>0</Border_Color>\n</Overlay>",
+                      "textAttributes" : {
+                        "type" : "textAttributeList",
                         "keyframes" : [
                           {
+                            "endTime" : 0,
                             "time" : 0,
-                            "value" : 0.0,
+                            "value" : null,
                             "duration" : 0
                           }
                         ]
-                      },
-                      "height" : {
-                        "type" : "double",
-                        "defaultValue" : 169.0,
-                        "interp" : "linr"
-                      },
-                      "intensity" : {
-                        "type" : "double",
-                        "defaultValue" : 1.0,
-                        "interp" : "linr"
-                      },
-                      "width" : {
-                        "type" : "double",
-                        "defaultValue" : 269.0,
-                        "interp" : "linr"
-                      },
-                      "filename" : "C:\\Program Files\\TechSmith\\Camtasia 9\\Media\\Studio\\Callouts\\blur_100x100.xml",
-                      "name" : "Blur",
-                      "xmlContent" : "﻿<?xml version=\"1.0\"?>\n\n<Overlay version=\"1.0.1\">\n\n<Overlay_Filename>blur_100x100.png</Overlay_Filename>\n<Overlay_Name>Blur</Overlay_Name>\n<Text_Top>0</Text_Top>\n<Text_Left>0</Text_Left>\n<Text_Bottom>0</Text_Bottom>\n<Text_Right>0</Text_Right>\n<Fill_Color>0</Fill_Color>\n<Border_Color>0</Border_Color>\n</Overlay>"
+                      }
                     },
                     "attributes" : {
                       "autoRotateText" : true
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : 337.322645290272,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -183.817134268495,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.194224880988119,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.09118236472986,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "opacity" : {
-                        "type" : "double",
-                        "defaultValue" : 1.0,
-                        "interp" : "linr"
-                      }
+                      "translation0" : 337.322645290272,
+                      "translation1" : -183.817134268495,
+                      "scale0" : 0.194224880988119,
+                      "scale1" : 0.09118236472986
                     },
                     "effects" : [
 
@@ -1128,9 +544,9 @@
     "backgroundColor" : [ 0, 0, 0, 255]
   },
   "metadata" : {
-    "AutoSaveFile" : "C:\\Users\\mihart\\AppData\\Local\\TechSmith\\Camtasia Studio\\9.0\\Auto-Saves\\Untitled Project1c74bbc8.autosave.tscproj",
+    "AutoSaveFile" : "C:\\Users\\Administrator\\AppData\\Local\\TechSmith\\Camtasia Studio\\18.0\\Auto-Saves\\comment-reports-with-filters4d0190d.autosave.tscproj",
     "CanvasZoom" : 73,
-    "Date" : "2019-04-30 10:37:07 PM",
+    "Date" : "2019-09-17 04:01:39 PM",
     "IsAutoSave" : "0",
     "Language" : "ENU",
     "ProfileName" : "",
