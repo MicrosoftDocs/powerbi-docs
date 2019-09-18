@@ -212,7 +212,7 @@ ArcGIS Online provides the ability for organizations to publish public web maps.
 1. Select the **Reference layer** tab and choose **ArcGIS**.
 2. Enter search terms and then select a map layer. In this example we've chosen USA Congressional districts.
    
-    ![esri demographics example](media/power-bi-visualization-arcgis/power-bi-esri-demographics-esri2-new.png)
+    ![esri demographics example](media/power-bi-visualization-arcgis/power-bi-reference-details.png)
 3. To see the details, select a shaded area on the map
 
 <br/>
