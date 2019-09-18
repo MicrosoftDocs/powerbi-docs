@@ -39,4 +39,4 @@ Feel free to contact the Power BI visuals support team: *pbicvsupport@microsof
 
 ## Next steps
 
-For more information, visit [Frequently asked questions about Power BI Power BI visuals](power-bi-custom-visuals-faq.md#organizational-Power-BI-visuals).
+For more information, visit [Frequently asked questions about Power BI Power BI visuals](power-bi-custom-visuals-faq.md#organizational-visuals).
