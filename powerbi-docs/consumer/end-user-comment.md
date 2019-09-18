@@ -31,7 +31,7 @@ Why is this important? Say a colleague applied a filter that revealed an interes
 If you are using a paginated report, you may only leave a general comment about your report.  Support for leaving comments on individual report visuals is not available.
 
 ### Add a general comment to a dashboard or report
-The processes for adding comments to a dashboard or report are similar.  In this example, we're using a dashboard. 
+The process for adding comments to a dashboard or report is similar.  In this example, we're using a dashboard. 
 
 1. Open a Power BI dashboard or report and select the **Comments** icon. This opens the Comments dialog.
 
@@ -39,13 +39,13 @@ The processes for adding comments to a dashboard or report are similar.  In this
 
     Here we see that the dashboard creator has already added a general comment.  Anyone with access to this dashboard can see this comment.
 
-    ![comments icon](media/end-user-comment/power-bi-first-comment.png)
+    ![comments icon](media/end-user-comment/power-bi-first-comments.png)
 
 2. To respond, select **Reply**, type your response, and select **Post**.  
 
     ![Comments Reply icon](media/end-user-comment/power-bi-comment-reply.png)
 
-    By default, Power BI directs your response to the colleague who started the comment thread, in this case Aaron F. 
+    By default, Power BI directs your response to the colleague who started the comment thread, in this case Aaron. 
 
     ![Comment with response](media/end-user-comment/power-bi-respond.png)
 
@@ -76,9 +76,8 @@ In addition to adding comments to an entire dashboard or to an entire report pag
     - On a report page, selecting a comment that was made on a visual, highlights that visual (see above).
 
     - On a dashboard, the chart icon ![comment with chart icon](media/end-user-comment/power-bi-comment-chart-icon.png) lets us know that a comment is tied to a specific visual. Comments that apply to the entire dashboard do not have a special icon. Selecting the chart icon highlights the related visual on the dashboard.
-
-
-           ![related visual highlighted](media/end-user-comment/power-bi-comment-highlighting.png)
+    
+    ![related visual highlighted](media/end-user-comment/power-bi-comment-highlighting.png)
 
 5. Select **Close** to return to the dashboard or report.
 
