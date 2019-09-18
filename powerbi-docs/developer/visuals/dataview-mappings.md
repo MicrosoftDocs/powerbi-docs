@@ -1,9 +1,9 @@
 ---
 title: Understand data view mapping in Power BI visuals
 description: This article describes how Power BI transforms data before passing it into visuals.
-author: KesemSharabi
-ms.author: kesharab
-manager: rkarlin
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

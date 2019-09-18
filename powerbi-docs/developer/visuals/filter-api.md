@@ -1,9 +1,9 @@
 ---
 title: The Visual Filters API in Power BI visuals
 description: This article discusses how Power BI visuals can filter other visuals.
-author: KesemSharabi
-ms.author: kesharab
-manager: rkarlin
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
