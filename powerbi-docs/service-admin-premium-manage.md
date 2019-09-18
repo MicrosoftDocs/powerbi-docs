@@ -1,14 +1,14 @@
 ---
 title: Manage capacities within Power BI Premium and Power BI Embedded
 description: Learn how you can manage Power BI Premium and enable access to content for your entire organization.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/07/2019
+ms.date: 09/17/2019
 LocalizationGroup: Premium
 ---
 
@@ -18,56 +18,7 @@ Learn how to manage Power BI Premium and Power BI Embedded capacities, which pro
 
 ![Power BI capacity settings screen](media/service-admin-premium-manage/premium-capacity-management.png)
 
-## What is capacity?
-
 *Capacity* is at the heart of the Power BI Premium and Power BI Embedded offerings. It is a set of resources reserved for exclusive use by your organization. Having dedicated capacity enables you to publish dashboards, reports, and datasets to users throughout your organization without having to purchase per-user licenses for them. It also offers dependable, consistent performance for the content hosted in capacity. For more information, see [What is Power BI Premium?](service-premium.md).
-
-### Capacity admins
-
-When you are assigned to a capacity as a *capacity admin*, you have full control over the capacity and its administrative features. From the Power BI admin portal, you can add more capacity admins or give users capacity assignment permissions. You can bulk assign workspaces to a capacity and view usage metrics for a capacity.
-
-> [!NOTE]
-> For Power BI Embedded, capacity admins are defined in the Microsoft Azure portal.
-
-Each capacity has its own admins. Assigning a capacity admin to one capacity does not give them access to all capacities within your organization. Capacity admins do not have access to all Power BI admin areas by default, such as usage metrics, audit logs or tenant settings. Capacity admins also do not have permissions to set up new capacities or change the SKU of existing capacities. Only Office 365 Global Administrators or Power BI service administrators have access to those items.
-
-All Office 365 Global Administrators and Power BI service administrators are automatically capacity admins of both Power BI Premium capacity and Power BI Embedded capacity.
-
-## Purchase capacity
-
-To take advantage of dedicated capacity, you must purchase Power BI Premium in the Office 365 admin center or create a Power BI Embedded resource in the Microsoft Azure portal. For more information, see the following articles:
-
-* **Power BI Premium:** [How to purchase Power BI Premium](service-admin-premium-purchase.md)
-
-* **Power BI Embedded:** [Create Power BI Embedded capacity in the Azure portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity)
-
-When you purchase Power BI Premium or Embedded SKUs, your tenant receives the corresponding number of v-cores for use in running capacities. For example, purchasing a Power BI Premium P3 SKU provides the tenant with 32 v-cores. For more information on SKUs, see [Premium capacity nodes](service-premium.md#premium-capacity-nodes).
-
-## What Premium looks like for users
-
-For the most part, users don't need to know they are in a Premium capacity. Their dashboards and reports just work. As a visual hint, there is a diamond icon next to workspaces that are in a Premium capacity.
-
-![Diamond showing workspace is backed by Premium capacity](media/service-admin-premium-manage/premium-workspace.png)
-
-## Configure workloads
-
-By default, capacities for Power BI Premium and Power BI Embedded support only the workload associated with running Power BI queries in the cloud. We now offer preview support for two additional workloads: **Paginated reports** and **Dataflows**. For more information, see [Workloads in Premium capacity](service-premium.md#workloads-in-premium-capacity).
-
-To enable workloads in the Power BI admin portal, follow these steps.
-
-1. Under **Capacity settings**, select a capacity.
-
-1. Under **MORE OPTIONS**, expand **Workloads**.
-
-1. Enable one or more workloads, and set a value for **Max Memory**.
-
-    ![Configure workloads in the admin portal](media/service-admin-premium-manage/admin-portal-workloads.png)
-
-1. Select **Apply**.
-
-## Monitor capacity usage
-
-Power BI provides an app for monitoring capacity usage. For more information, see [Monitor Power BI Premium capacities in your organization](service-admin-premium-monitor-capacity.md).
 
 ## Manage capacity
 
