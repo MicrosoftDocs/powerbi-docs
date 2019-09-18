@@ -55,6 +55,6 @@ For information about troubleshooting, visit [Troubleshooting your Power BI Powe
 
 ## FAQ
 
-For more information and answers to questions, visit [Frequently asked questions about Power BI Power BI visuals](power-bi-custom-visuals-faq.md#organizational-custom-visuals).
+For more information and answers to questions, visit [Frequently asked questions about Power BI Power BI visuals](power-bi-custom-visuals-faq.md#organizational-Power-BI-visuals).
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/).
