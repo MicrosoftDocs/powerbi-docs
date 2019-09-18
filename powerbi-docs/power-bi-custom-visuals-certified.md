@@ -37,7 +37,7 @@ Microsoft can remove a visual from the [certified list](#list-of-power-bi-visual
 
 ### Certification requirements
 
-To get your custom visual [certified](#certified-power-bi-visuals), make sure your custom visual complies with the below:  
+To get your custom visual [certified](#get-a-power-bi-visual-certified), make sure your custom visual complies with the below:  
 
 * Microsoft AppSource approved. Your custom visual should be in our [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
 * Custom visual is written with versioned **API v2.5** or higher.
@@ -188,7 +188,7 @@ To submit a custom visual for certification:
 
 ## FAQ
 
-For more information about visuals, see [Frequently asked questions about certified visuals](#certified-power-bi-visuals).
+For more information about visuals, see [Frequently asked questions about certified visuals](#get-a-power-bi-visual-certified).
 
 ## Next steps
 
