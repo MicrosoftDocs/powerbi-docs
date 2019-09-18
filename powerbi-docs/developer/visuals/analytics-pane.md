@@ -4,8 +4,11 @@ description: This article describes how to create dynamic reference lines in Pow
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
-ms.subservice: powerbi-custom-visuals
+ms.reviewer: ''
+featuredvideoid: ''
+ms.service: powerbi
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 06/18/2019
 ---
 
