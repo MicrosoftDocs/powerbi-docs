@@ -41,15 +41,15 @@ The app screen shows you both the name of the designer as well as the date the a
 
     ![left nav pane](media/end-user-fresh/power-bi-nav-app.png)
 
-    For each app, you'll see a title and date. 
 
-2. Hover over the app to also display the name of the designer. 
+
+2. Hover over the app to display the title, freshness date, and name of the designer. 
 
     ![2 apps with one selected](media/end-user-fresh/power-bi-app.png)
 
 
 ### Shared with me
-The **Shared with me** screen shows you the name of the content owner, as well as the date the content was shared with you.
+The **Shared with me** screen shows you the name of the content owner, as well as the date the content was last shared with you.
 
 ![shared with me screen showing Changed date and Owner](media/end-user-fresh/power-bi-share.png) 
 
@@ -68,7 +68,7 @@ For dashboard tiles, view the tile in Focus mode to see the Last refresh timesta
 
     ![wide browser showing last refresh](media/end-user-fresh/power-bi-last-refresh2.png)
 
-### From dashboards and reports
+### Dashboards and reports
 Another way to look up a last refreshed date is by using **View related**.  **View related** is available by selecting the ellipses (...) from the Power BI upper menu bar.
 
 ![Select View related from menu](media/end-user-fresh/power-bi-view-related-dropdown.png)
@@ -79,7 +79,7 @@ The **Related content** pane displays the last refresh information for the dashb
 
 ## What happens if an app is deleted by the designer
 
-If a designer deletes an app, the dashboards and reports associated with that app are automatically removed from your Power BI workspace as well. They're no longer available, and the app doesn't appear in the Navigation Pane.
+If a designer deletes an app, the dashboards and reports associated with that app are automatically removed from your Power BI workspace as well. They're no longer available, and the app doesn't appear in the Apps container or elsewhere in the nav bar.
 
 
 ## Subscribe to see changes
