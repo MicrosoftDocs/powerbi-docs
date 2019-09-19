@@ -110,7 +110,7 @@ You'll create a report and add a basic treemap.
 
 ## Highlighting and cross-filtering
 
-Highlighting a **Category** or **Detail** in a treemap cross-highlights and cross-filters the other visualizations on the report page. To follow along, either add some visuals to this report page or copy the treemap to one of the other pages in this report. In the below image the treemap was copied over to the **Overview** page. 
+Highlighting a **Category** or **Detail** in a treemap cross-highlights and cross-filters the other visualizations on the report page. To follow along, either add some visuals to this report page or copy the treemap to one of the other pages in this report. The below image the treemap was copied over to the **Overview** page. 
 
 1. On the treemap, select either a **Category** or a **Chain** within a **Category**. That will cross-highlight the other visualizations on the page. Selecting **050-Shoes**, for example, shows you that last year's sales for shoes was **$16,352,432** with **Fashions Direct** accounting for **$2,174,185** of those sales.
 
