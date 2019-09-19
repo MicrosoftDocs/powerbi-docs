@@ -35,7 +35,7 @@ A pop-up will appear where you have the option to select the **Current values** 
 
 ![Select what to Export](media/end-user-powerpoint/power-bi-current-values.png)
     
-Additionally, there is a checkbox to select whether or not to export the hidden tabs of a report.  Simply check this box if you would like to only export report tabs that are visibile to you in your browser.  If you'd prefer to get all the hidden tabs as part of your export, you may leave this unchecked.  If the checkbox is greyed out, there are no hidden tabs in the report.  Once you have made your selections, select **Export** to continue.
+Additionally, there is a checkbox to select whether or not to export the hidden tabs of a report.  Simply check this box if you would like to only export report tabs that are visible to you in your browser.  If you'd prefer to get all the hidden tabs as part of your export, you may leave this unchecked.  If the checkbox is greyed out, there are no hidden tabs in the report.  Once you have made your selections, select **Export** to continue.
 
 You'll see a notification banner in the upper right corner of the Power BI service browser window that the report is being exported to PowerPoint. This might take a few minutes, and you can continue to work in Power BI while the report is being exported.
 
