@@ -213,7 +213,7 @@ ArcGIS Online provides the ability for organizations to publish public web maps.
 2. Enter search terms and then select a map layer. In this example we've chosen USA Congressional districts.
    
     ![esri demographics example](media/power-bi-visualization-arcgis/power-bi-reference-details.png)
-3. To see the details, select a shaded area on the map
+3. To see the details, select a shaded area to open the *Select from reference layer*: Use the reference layer selection tool to selection boundaries or objects on the reference layer.
 
 <br/>
 
