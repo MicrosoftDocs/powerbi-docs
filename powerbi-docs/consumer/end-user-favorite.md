@@ -27,7 +27,7 @@ You can also select a single dashboard as a [featured dashboard](end-user-featur
 
 1. Open a dashboard or report that you use often. Even content that has been shared with you can be a *favorite*.
 
-2. From the upper ribbon of the Power BI service, select **Favorite** or the star ![star icon](./media/end-user-favorite/power-bi-favorite-icon.png)  icon.
+2. From the upper menu bar of the Power BI service, select **Favorite** or the star ![star icon](./media/end-user-favorite/power-bi-favorite-icon.png)  icon.
    
    ![Favorite icon](./media/end-user-favorite/power-bi-favorite.png)
    
@@ -46,7 +46,7 @@ You can also select a single dashboard as a [featured dashboard](end-user-featur
    ![hover over app](./media/end-user-favorite/power-bi-hover-app.png)
 
 ## Working with *favorites*
-1. To access your favorites, select the flyout arrow to the right of **Favorites**.  From here you can select a favorite to open it. Only five favorites are listed (alphabetically). If you have more than five, select **See all** to open the favorites content list (see #2, below). 
+1. To access your favorites, select the flyout arrow to the right of **Favorites**.  From here you can select a favorite to open it. Up to five favorites are listed (alphabetically). If you have more than five, select **See all** to open the favorites content list (see #2, below). 
    
    ![Favorites flyout](./media/end-user-favorite/power-bi-favorite-flyout.png)
 2. To see **all** the content that you have added as favorites, in the navigation pane, select **Favorites** or the Favorites ![star icon](./media/end-user-favorite/power-bi-favorites-icon.png)  icon.  
