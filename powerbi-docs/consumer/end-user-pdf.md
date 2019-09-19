@@ -9,7 +9,7 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 09/14/2019
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -18,25 +18,25 @@ LocalizationGroup: Share your work
 With Power BI, you can publish your report to PDF format, and easily create a document based on your Power BI report. When you **export to PDF**, each page in the Power BI report becomes an individual page in your PDF document.
 
 ## How to export your Power BI report to PDF
-In Power BI service, select a report to display it on the canvas. You can also select a report from your Home page, Apps, or any other section on your left nav pane.
+In the Power BI service, select a report to display it on the canvas. You can also select a report from your Home page, Apps, or any other container on your left nav bar.
 
-1. Select **File** > **Export to PDF** from the menu bar.
+1. Select **Export** > **PDF** from the menu bar.
 
-    ![Select File from the menubar, arrow pointing to Export to PDF](media/end-user-pdf/power-bi-export-pdf.png)
+    ![Select Export from the menubar, arrow pointing to Export to PDF](media/end-user-pdf/power-bi-export.png)
 
-    A pop-up will appear where you have the option to select **Current view** or **Default view**.  **Current view** exports the report in the current state, which includes the active changes you made to slicer and filter values.  Most users select this option.  Alternately, selecting the **Default view** exports the report in its original state (as the author shared it), and doesn't reflect any changes you made to that original state.
+    A pop-up will appear where you have the option to select **Current values** or **Default values**.  **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values.  Most users select this option.  Alternately, selecting the **Default values** exports the report in its original state (as the *designer* shared it), and doesn't reflect any changes you made to that original state.
     
-    Additionally, there is a checkbox to select whether or not to export the hidden tabs of a report.  Simply check this box if you would like to only export report tabs that are visibile to you in your browser.  If you'd prefer to get all the hidden tabs as part of your export, you may leave this unchecked.  If the checkbox is greyed out, there are no hidden tabs in the report.  Once you have made your selections, click the Export button to continue.
+    Additionally, there is a checkbox to select whether or not to export the hidden tabs of a report.  Simply check this box if you would like to only export report tabs that are visible to you in your browser.  If you'd prefer to get all the hidden tabs as part of your export, you may leave this unchecked.  If the checkbox is greyed out, there are no hidden tabs in the report.  Once you have made your selections, select the Export button to continue.
     
     A progress bar displays in the upper right corner. Exporting might take a few minutes, and you can continue to work in Power BI while the report is being exported.
 
-    ![Export progress message](media/end-user-pdf/power-bi-export-message.png)
+    ![Export progress message](media/end-user-pdf/power-bi-export-progress.png)
 
     Once complete, the notification banner changes to let you know that the Power BI service has finished the export process.
 
 2. Your file is then available where your browser displays downloaded files. In the following image, it's shown as a download banner along the bottom of the browser window.
 
-    ![Downloaded file location](media/end-user-pdf/power-bi-save-file.png)
+    ![Downloaded file location](media/end-user-pdf/power-bi-export-done.png)
 
 And that's all there is to it. You can download the file and open it with any PDF viewer, like the one available in Microsoft Edge.
 
