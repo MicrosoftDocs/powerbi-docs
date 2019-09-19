@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/19/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -57,9 +57,11 @@ You can easily take a visual from one Power BI Desktop report, and paste it into
 
 The ability to copy and paste visuals is useful for people who build and updates multiple reports frequently. When copying between files, settings and formatting that have been explicitly set in the formatting pane will carry forward, while visual elements relying on a theme or the default settings automatically update to match the theme of the destination report. So when you get a visual formatted and looking just the way you want, you can copy and paste that visual into new reports and preserve all that good formatting work.
 
-![Error on copy/paste visual - no data field](media/desktop-report-view/report-view_05.png)
+If the fields in your model are different, you’ll see an error on the visual and a warning about which fields don’t exist. The error is similar to the experience you see when you delete a field in the model that a visual is using. 
 
-If the fields in your model are different, you’ll see an error on the visual and a warning about which fields don’t exist. The error is similar to the experience you see when you delete a field in the model that a visual is using. To correct the error, just replace the broken fields with the fields you want to use from the model in the report to which you pasted the visual. If you're using a custom visual, you must also import that custom visual to the destination report.
+![Error on copy/paste visual - no data field](media/desktop-report-view/report-view_07.png)
+
+To correct the error, just replace the broken fields with the fields you want to use from the model in the report to which you pasted the visual. If you're using a custom visual, you must also import that custom visual to the destination report.
 
 
 
