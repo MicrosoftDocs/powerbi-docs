@@ -3,13 +3,12 @@ title: Export reports from Power BI to PowerPoint
 description: Learn how to export a Power BI report to PowerPoint.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 09/18/2019
 ms.author: mihart
 
 LocalizationGroup: Share your work
@@ -25,27 +24,24 @@ With Power BI, you can publish your report to **Microsoft PowerPoint**, and easi
 Getting your **Power BI report** exported into **PowerPoint** is quick. Just follow the steps outlined in the next section.
 
 ## How to export your Power BI report to PowerPoint
-In the Power BI service, select a report to display it on the canvas. You can also select a report from your **Home** page, **Apps**, or any other section on your left navpane.
+In the Power BI service, select a report to display it on the canvas. You can also select a report from your **Home** page, **Apps**, or any other container from the left nav bar.
 
-![Select File from the menubar, arrow pointing to Export to PowerPoint](media/end-user-powerpoint/power-bi-publish.png)
+When the report you want to export to PowerPoint is displayed on the canvas, select **Export > PowerPoint** from the menu bar.
 
-When the report you want to export to PowerPoint is displayed on the canvas, select **File > Export to PowerPoint** from the menu bar in the Power BI service.
+![Select Export from the menubar](media/end-user-powerpoint/power-bi-export.png)
 
-![Close up left navbar with My Workspace selected, File dropdown selected](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
    
-A pop-up will appear where you have the option to select the **Current view** or **Default view**.  **Current view** exports the report in the current state, which includes the active changes you made to slicer and filter values.  Most users select this option.  Alternately, selecting **Default view** exports the report in the original state (as the author shared it), and doesn't reflect any changes you made to the original state.
+A pop-up will appear where you have the option to select the **Current values** or **Default values**.  **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values.  Most users select this option.  Alternately, selecting **Default values** exports the report in the original state (as the author shared it), and doesn't reflect any changes you made to the original state.
+
+![Select what to Export](media/end-user-powerpoint/power-bi-current-values.png)
     
-Additionally, there is a checkbox to select whether or not to export the hidden tabs of a report.  Simply check this box if you would like to only export report tabs that are visibile to you in your browser.  If you'd prefer to get all the hidden tabs as part of your export, you may leave this unchecked.  If the checkbox is greyed out, there are no hidden tabs in the report.  Once you have made your selections, click **Export** to continue.
+Additionally, there is a checkbox to select whether or not to export the hidden tabs of a report.  Simply check this box if you would like to only export report tabs that are visibile to you in your browser.  If you'd prefer to get all the hidden tabs as part of your export, you may leave this unchecked.  If the checkbox is greyed out, there are no hidden tabs in the report.  Once you have made your selections, select **Export** to continue.
 
 You'll see a notification banner in the upper right corner of the Power BI service browser window that the report is being exported to PowerPoint. This might take a few minutes, and you can continue to work in Power BI while the report is being exported.
 
-![export to PowerPoint in progress notification](media/end-user-powerpoint/powerbi_to_powerpoint_2.png)
+![export to PowerPoint in progress notification](media/end-user-powerpoint/power-bi-export-progress.png)
 
-Once complete, the notification banner changes to let you know that the Power BI service has finished the export process.
-
-![Success message dislaying](media/end-user-powerpoint/powerbi_to_powerpoint_3.png)
-
-Your file is then available where your browser displays downloaded files. In the following image, it's shown as a download banner along the bottom of the browser window.
+Once complete, the notification banner changes to let you know that the Power BI service has finished the export process. Your file is then available where your browser displays downloaded files. In the following image, it's shown as a download banner along the bottom of the browser window.
 
 ![arrow pointing to browser notification, at bottom of screen](media/end-user-powerpoint/powerbi_to_powerpoint_4.png)
 
