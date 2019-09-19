@@ -122,7 +122,7 @@ The on-premises data gateway supports the following data sources for Power BI. I
 | Amazon Redshift |Yes |Yes |
 | AtScale cubes |Yes |Yes |
 | Azure Active Directory |No |Yes |
-| Azure Analysis Services |Yes |Yes |
+| Analysis Services |Yes |Yes |
 | Azure Blob storage |No |Yes |
 | Azure DevOps Server |No |Yes |
 | Azure Table storage |No |Yes |
