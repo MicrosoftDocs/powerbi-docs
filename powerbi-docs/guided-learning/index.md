@@ -29,7 +29,7 @@ ms.topic: hub-page
                                 <img src="media/logo_power-bi.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a class ="barLink" href="https://docs.microsoft.com/en-us/learn/modules/explore-power-bi-service/index" style="text-decoration: none">Explore what Power BI can do for you</a>
+                            <a href="https://docs.microsoft.com/en-us/learn/modules/explore-power-bi-service/index" style="text-decoration: none">Explore what Power BI can do for you</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
