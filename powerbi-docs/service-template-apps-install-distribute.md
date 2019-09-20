@@ -109,7 +109,7 @@ Template app creators can release new versions of their template apps via AppSou
   >[!NOTE]
   >Installing a new version overwrites any changes you've made to the reports and dashboards. To keep your updated reports and dashboards, you can save them with a different name or location before installing.
 
-1. **Overwrite an existing version:** Will overwrite the existing workspace with the updated version of the template app.
+- **Overwrite an existing version:** Overwrites the existing workspace with the updated version of the template app.
 
    ![Update template app](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
 
