@@ -175,9 +175,9 @@ To use the Power BI admin portal, you must mark your account as a **Global Admin
 
 When a self-service user signs up for a cloud service that uses Azure AD, the service adds them to an unmanaged Azure AD directory based on their email domain. You can claim and manage the tenant that someone created using a process known as an *admin takeover*. For more info, see [Take over an unmanaged directory as administrator in Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover). The type of takeover you do depends on whether there's an existing managed tenant associated with your domain:
 
-* Power BI supports using an *internal takeover* to create a new managed tenant for the domain.
+* Power BI supports internal admin takeover. When you perform an _internal_ admin takeover of an unmanaged Azure directory, you are added as the global administrator of the unmanaged directory. No users, domains, or service plans are migrated to any other directory you administer.
 
-* Power BI no longer supports using an *external takeover* to move the domain to an existing managed tenant.
+* Power BI no longer supports external admin takeover. When you perform an _external_ admin takeover of an unmanaged Azure directory, you add the DNS domain name of the unmanaged directory to your managed Azure directory. When you add the domain name, a mapping of users to resources is created in your managed Azure directory so that users can continue to access services without interruption.
 
 ### If I have multiple domains, can I control the Office 365 tenant that users get added to?
 
