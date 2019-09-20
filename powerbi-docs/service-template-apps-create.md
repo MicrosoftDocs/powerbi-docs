@@ -85,7 +85,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
    ![Set app landing page](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
     
-    **App landing page:** If you decide to opt-out of the navigation builder you will have an option to select the app landing page. Define a report or dashboard to be the landing page of your app, use a landing page that will give the right impression.
+    **App landing page:** If you decide to opt out of the navigation builder you have the option to select the app landing page. Define a report or dashboard to be the landing page of your app. Use a landing page that gives the right impression.
 
     **Control**
 
