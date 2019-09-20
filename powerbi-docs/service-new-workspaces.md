@@ -73,7 +73,7 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 | Copy a report. | X | X | X | X <sup>1</sup> |
 | View and interact with an item. |  X | X  | X  | X  |
 
-**1** Requires a Power BI Pro license and [Build permission for datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
+**1** Requires a Power BI Pro license and [Build permission for datasets](service-datasets-build-permissions.md). 
  
 ## Licensing
 Everyone you add to a workspace in the shared capacity needs a Power BI Pro license. In the workspace, these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. 
@@ -134,7 +134,7 @@ Some features work differently from current workspaces in the new workspaces. Th
 - Members can or can't reshare: replaced by the Contributor role
 - Read-only workspaces: Instead of granting users read-only access to a workspace, assign users to the Viewer role, which allows similar read-only access to the content in a workspace.
 - Users without a Pro license can access the workspace if the workspace is in a Power BI Premium capacity, even if users have only the Viewer role.
-- To allow users with Viewer role to export data, ensure they have Build permission on the datasets in the workspace. Read more about [Build permission for datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+- To allow users with Viewer role to export data, ensure they have Build permission on the datasets in the workspace. Read more about [Build permission for datasets](service-datasets-build-permissions.md).
 - No **Leave workspace** button.
 
 ## Frequently asked questions

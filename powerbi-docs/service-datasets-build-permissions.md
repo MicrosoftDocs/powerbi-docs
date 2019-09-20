@@ -1,41 +1,20 @@
 ---
-title: Share a dataset (Preview)
-description: As a dataset owner, you can create and share your datasets so others can use them. Learn how you can keep control of who has access to the data by using the Build permission.
+title: Build permission for shared datasets (preview)
+description: Learn how you can keep control of who has access to the data by using the Build permission.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 09/19/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Share a dataset (Preview)
+# Build permission for shared datasets (preview)
 
-As a creator of *data models* in Power BI Desktop, you can share them as *datasets* in the Power BI service. Then report creators can easily discover and reuse the datasets you've shared. Learn how to share them, and how you control who has access to the data by using the Build permission.
-
-## Steps to sharing your dataset
-
-1. You start by creating a .pbix file with a data model in Power BI Desktop. If you're planning to offer this dataset for others to build reports, you may not even design a report in the .pbix file.
-
-    A best practice is to save the .pbix file to an Office 365 group.
-
-1. Publish the .pbix file to a [new experience workspace](service-create-the-new-workspaces.md) in the Power BI service.
-    
-    Already, other members of this workspace can create reports in other workspaces based on this dataset.
-
-1. You can also [publish an app](service-create-distribute-apps.md) from this workspace. When you do, on the **Permissions** page, you specify who has permissions and what they can do.
-
-    > [!NOTE]
-    > If you select **Entire organization**, then no one in the organization will have Build permissions. This issue is already known. Instead, specify email addresses in **Specific individuals or groups**.  If you want your entire organization to have Build permissions, specify an email alias for the entire organization.
-
-    ![Set app permissions](media/service-datasets-build-permissions/power-bi-dataset-app-permissions.png)
-
-1. Select **Publish app**, or **Update app** if it's already published.
-
-## Build permissions for shared datasets
+As a creator of *data models* in Power BI Desktop, you can share them as *datasets* in the Power BI service. Then report creators can easily discover and reuse the datasets you've shared. Learn how you control who has access to the data by using the Build permission.
 
 The Build permission type is only relevant for datasets. With it, users can build new content on a dataset, such as reports, dashboards, pinned tiles from Q&A, and Insights Discovery. They can also build new content on the dataset outside Power BI, such as Excel sheets via Analyze in Excel, XMLA, and export underlying data.
 
@@ -68,18 +47,6 @@ With this more granular Build permission, you can choose who can only view the c
 If your dataset is being used by a report outside the dataset workspace, you can't delete that dataset. Instead, you see an error message.
 
 You can remove build permissions. If you do, the people whose permissions you have revoked can still see the report, but can no longer edit the report or export underlying data. Users with only read permission can still export summarized data. 
-
-## Track your dataset usage
-
-When you have a shared dataset in your workspace, you may need to know what reports in other workspaces are based on it.
-
-1. In the Datasets list view, select **View related**.
-
-    ![View related icon](media/service-datasets-build-permissions/power-bi-dataset-view-related-to-dataset.png)
-
-1. The **Related content** dialog box shows all related items. In this list, you see the related items in this workspace and in **Other workspaces**.
- 
-    ![Related content dialog box](media/service-datasets-build-permissions/power-bi-dataset-related-workspaces.png)
 
 ## Next steps
 

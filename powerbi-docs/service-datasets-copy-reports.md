@@ -27,7 +27,7 @@ When you find a report you like in a workspace or an app, you can make a copy of
 
     ![Save a copy of a report](media/service-datasets-copy-reports/power-bi-dataset-save-report-copy.png)
 
-    You only see the **Save a copy** icon if the report is in a new experience workspace, and you have [Build permissions](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Even if you have access to the workspace, you have to have Build permissions for the dataset.
+    You only see the **Save a copy** icon if the report is in a new experience workspace, and you have [Build permissions](service-datasets-build-permissions.md). Even if you have access to the workspace, you have to have Build permissions for the dataset.
 
 3. In **Save a copy of this report**, give the report a name and select the destination workspace.
 
