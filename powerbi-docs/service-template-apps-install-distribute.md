@@ -115,7 +115,7 @@ Template app creators can release new versions of their template apps via AppSou
 
 - **Install to a new workspace:** Installs a fresh version of the workspace and app that you need to reconfigure
 
-### Overwrite behavior:
+### Overwrite behavior
 
 * Overwriting updates the reports, dashboards, and dataset inside the **workspace**, not the app. App navigation, setup, and permission will not be changed on update.
 * After you update the workspace, you need to *update the app* to apply changes from the workspace to the organizational app.
