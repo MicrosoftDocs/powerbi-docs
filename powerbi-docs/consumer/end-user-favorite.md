@@ -53,7 +53,7 @@ You can also select a single dashboard as a [Featured dashboard](end-user-featur
    
     ![Favorites window](./media/end-user-favorite/power-bi-fav-screen.png)
    
-   From here you can take action. You can open a favorite, identify owners, and even share favorites with your colleagues.
+   From here, you can take action. You can open a favorite, identify owners, and even share favorites with your colleagues.
 
 ## Unfavorite content
 If you no longer use a report as often as you used to, you can unfavorite it. When you unfavorite content, it's removed from your Favorites list but not from Power BI.

@@ -46,12 +46,12 @@ If you change your mind later, you can set a new dashboard as the featured dashb
 1. Follow the previous steps 1 and 2.
    
     ![Change featured dashboard window](./media/end-user-featured/power-bi-change-feature.png)
-2. Select **Set as featured**. Un-featuring a dashboard doesn't remove it from Power BI. 
+2. Select **Set as featured**. Unfeaturing a dashboard doesn't remove it from Power BI. 
    
     ![Success message](./media/end-user-featured/power-bi-unfeature-new.png)
 
 ## Remove the featured dashboard
-If you decide that you don't want any dashboard to be designated as featured, here's how to un-feature a dashboard.
+If you decide that you don't want any dashboard to be designated as featured, here's how to unfeature a dashboard.
 
 1. Open the currently featured dashboard.
 2. On the top menu bar, select the ellipses (...) and select **Disable featured**.
