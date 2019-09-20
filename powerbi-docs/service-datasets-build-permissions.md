@@ -30,9 +30,9 @@ Users get Build permission in different ways:
 
     ![Permission center](media/service-datasets-build-permissions/power-bi-dataset-permissions.png)
 
-- An admin or member of the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets. See [Steps to sharing your dataset](#steps-to-sharing-your-dataset) in this article for details.
+- An admin or member of the workspace where the dataset resides can decide during app publishing that users with permission for the app also get Build permission for the underlying datasets. See [Share a dataset](service-datasets-share.md) for details.
 
-- Say you have Reshare and Build permissions on a dataset. When you share a report or dashboard built on top of that dataset you can specify that the recipients also get Build permission for the underlying dataset.
+- Say you have Reshare and Build permissions on a dataset. When you share a report or dashboard built on that dataset, you can specify that the recipients also get Build permission for the underlying dataset.
 
     ![Build permissions](media/service-datasets-build-permissions/power-bi-share-report-allow-users.png)
 
