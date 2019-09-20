@@ -18,7 +18,7 @@ With Power BI, you can publish your report to Microsoft PowerPoint and easily cr
 
 * Each page in the Power BI report becomes an individual slide in PowerPoint.
 * Each page in the Power BI report is exported as a single high-resolution image in PowerPoint.
-<!-- * The filters and slicers settings that you added to the report are preserved. -->
+* The filters and slicers settings that you added to the report are preserved.
 * A link is created in PowerPoint that links to the Power BI report.
 
 Getting your **Power BI report** exported into **PowerPoint** is quick. Follow the steps outlined in the next section.

@@ -15,7 +15,7 @@ ms.author: mihart
 LocalizationGroup: Common tasks
 ---
 # Favorite dashboards, reports, and apps in the Power BI service
-When you make content a *favorite*, you can access it quickly from the **Favorites** content list and from **Power BI Home** > **Favorites + frequents**. Favorites are typically content that you visit most often and are identified with a yellow star.
+When you make content a *favorite*, you can access it quickly from the **Favorites** content list and from Power BI **Home** > **Favorites + frequents**. Favorites are typically content that you visit most often and are identified with a yellow star.
 
    ![Favorites icon](./media/end-user-favorite/power-bi-favorite-nav.png)
 
