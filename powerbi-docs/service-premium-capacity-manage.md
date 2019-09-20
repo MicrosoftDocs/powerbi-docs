@@ -16,7 +16,7 @@ LocalizationGroup: Premium
 
 # Managing Premium capacities
 
-Managing Power BI Premium involves creating, managing, and monitoring Premium capacities.
+Managing Power BI Premium involves creating, managing, and monitoring Premium capacities. This article provides an overview of capacities; see [Configure and manage capacities](service-admin-premium-manage.md) for step-by-step instructions.
 
 ## Creating and managing capacities
 

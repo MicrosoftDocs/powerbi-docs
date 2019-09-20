@@ -14,6 +14,8 @@ LocalizationGroup: Premium
 
 # Manage capacities within Power BI Premium and Power BI Embedded
 
+Managing Power BI Premium involves creating, managing, and monitoring Premium capacities. This article provides step-by-step instructions; for an overview of capacities; see [Managing Premium capacities](service-premium-capacity-manage.md).
+
 Learn how to manage Power BI Premium and Power BI Embedded capacities, which provide dedicated resources for your content.
 
 ![Power BI capacity settings screen](media/service-admin-premium-manage/premium-capacity-management.png)
@@ -157,6 +159,6 @@ For more information, see [Install Power BI Report Server](report-server/install
 
 ## Next steps
 
-Share published apps with users. For more information, see [Create and distribute an app in Power BI](service-create-distribute-apps.md).
+[Managing Premium capacities](service-premium-capacity-manage.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
