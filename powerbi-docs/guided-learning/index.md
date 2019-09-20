@@ -29,7 +29,7 @@ ms.topic: hub-page
                                 <img src="media/logo_power-bi.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a href="https://docs.microsoft.com/en-us/learn/modules/explore-power-bi-service/index" style="text-decoration: none">Explore what Power BI can do for you</a>
+                            <a href="https://docs.microsoft.com/learn/modules/analyze-data-power-bi" style="text-decoration: none">Explore what Power BI can do for you</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
@@ -37,7 +37,7 @@ ms.topic: hub-page
                                 <span style="margin-left: 32px; align-self: center;">12 min</span>
                               </li>      
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="https://docs.microsoft.com/en-us/learn/modules/explore-power-bi-service/2-find-content">View content in Power BI service</a>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-power-bi-service/2-find-content">View content in Power BI service</a>
                                 <span style="margin-left: 32px; align-self: center;">10 min</span>
                               </li>     
                               <li style="display: flex; justify-content: space-between;">
@@ -45,7 +45,7 @@ ms.topic: hub-page
                                 <span style="margin-left: 32px; align-self: center;">15 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="https://docs.microsoft.com/en-us/learn/modules/explore-power-bi-service/4-collaborate-and-share">Collaborate and share in Power BI</a>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-power-bi-service/4-collaborate-and-share">Collaborate and share in Power BI</a>
                                 <span style="margin-left: 32px; align-self: center;">15 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -107,11 +107,11 @@ ms.topic: hub-page
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi/index" style="text-decoration: none">Get started building with Power BI</a>
+                            <a href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi" style="text-decoration: none">Get started building with Power BI</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="https://docs.microsoft.com/en-us/learn/modules/get-started-with-power-bi/1-introduction">Introduction</a>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi/1-introduction">Introduction</a>
                                 <span style="margin-left: 32px; align-self: center;">6 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -119,11 +119,11 @@ ms.topic: hub-page
                                 <span style="margin-left: 32px; align-self: center;">2 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="https://docs.microsoft.com/en-us/learn/modules/get-started-with-power-bi/3-building-blocks-of-power-bi">Building blocks of Power BI</a>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi/3-building-blocks-of-power-bi">Building blocks of Power BI</a>
                                 <span style="margin-left: 32px; align-self: center;">12 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="https://docs.microsoft.com/en-us/learn/modules/get-started-with-power-bi/4-exercise-touring-and-using-power-bi">Tour and use the Power BI service</a>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi/4-exercise-touring-and-using-power-bi">Tour and use the Power BI service</a>
                                 <span style="margin-left: 32px; align-self: center;">12 min</span>
                               </li>
                           </ul>
@@ -144,7 +144,7 @@ ms.topic: hub-page
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a href="https://docs.microsoft.com/learn/modules/get-data-power-bi/index" style="text-decoration: none">Get data with Power BI Desktop</a>
+                            <a href="https://docs.microsoft.com/learn/modules/get-data-power-bi" style="text-decoration: none">Get data with Power BI Desktop</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
@@ -160,7 +160,7 @@ ms.topic: hub-page
                                 <span style="margin-left: 32px; align-self: center;">10 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="https://docs.microsoft.com/en-us/learn/modules/get-data-power-bi/3b-data-from-excel">Get data from Excel</a>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/3b-data-from-excel">Get data from Excel</a>
                                 <span style="margin-left: 32px; align-self: center;">5 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -193,15 +193,15 @@ ms.topic: hub-page
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a href="https://docs.microsoft.com/learn/modules/model-data-power-bi/index" style="text-decoration: none">Model data in Power BI</a>
+                            <a href="https://docs.microsoft.com/learn/modules/model-data-power-bi" style="text-decoration: none">Model data in Power BI</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="https://docs.microsoft.com/en-us/learn/modules/model-data-power-bi/1-overview-power-bi">Introduction to modeling your data</a>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/1-overview-power-bi">Introduction to modeling your data</a>
                                 <span style="margin-left: 32px; align-self: center;">5 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="https://docs.microsoft.com/en-us/learn/modules/model-data-power-bi/2-how-to-manage-data-relationships">How to manage your data relationships</a>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/2-how-to-manage-data-relationships">How to manage your data relationships</a>
                                 <span style="margin-left: 32px; align-self: center;">8 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -242,7 +242,7 @@ ms.topic: hub-page
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/index" style="text-decoration: none">Use visuals in Power BI</a>
+                            <a href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi" style="text-decoration: none">Use visuals in Power BI</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
@@ -262,7 +262,7 @@ ms.topic: hub-page
                                 <span style="margin-left: 32px; align-self: center;">5 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="https://docs.microsoft.com/en-us/learn/modules/visuals-in-power-bi/6-create-matrixes-tables">Matrices and tables</a>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/6-create-matrixes-tables">Matrices and tables</a>
                                 <span style="margin-left: 32px; align-self: center;">8 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -295,7 +295,7 @@ ms.topic: hub-page
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/index" style="text-decoration: none">Explore data in Power BI</a>
+                            <a href="https://docs.microsoft.com/learn/modules/explore-data-power-bi" style="text-decoration: none">Explore data in Power BI</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
@@ -352,11 +352,11 @@ ms.topic: hub-page
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/index" style="text-decoration: none">Publish and share in Power BI</a>
+                            <a href="https://docs.microsoft.com/learn/modules/publish-share-power-bi" style="text-decoration: none">Publish and share in Power BI</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="https://docs.microsoft.com/en-us/learn/modules/publish-share-power-bi/1-introduction-content-packs">Introduction to content packs, security, and groups</a>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/1-introduction-content-packs">Introduction to content packs, security, and groups</a>
                                 <span style="margin-left: 32px; align-self: center;">5 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -368,11 +368,11 @@ ms.topic: hub-page
                                 <span style="margin-left: 32px; align-self: center;">7 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="https://docs.microsoft.com/en-us/learn/modules/publish-share-power-bi/5-power-bi-mobile">Introducing Power BI Mobile</a>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/5-power-bi-mobile">Introducing Power BI Mobile</a>
                                 <span style="margin-left: 32px; align-self: center;">5 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="https://docs.microsoft.com/en-us/learn/modules/publish-share-power-bi/6-create-groups">Create workspaces in Power BI</a>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/6-create-groups">Create workspaces in Power BI</a>
                                 <span style="margin-left: 32px; align-self: center;">6 min</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
@@ -410,7 +410,7 @@ ms.topic: hub-page
                                 <img src="media/pbi-dax-intro.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            Introduction to DAX
+                            <a href="introductiontodax.yml?tutorial-step=1" style="text-decoration: none">Introduction to DAX</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
