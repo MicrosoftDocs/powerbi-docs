@@ -15,4 +15,4 @@
 - name: Publish and share
   href: https://docs.microsoft.com/learn/modules/publish-share-power-bi
 - name: Introduction to DAX
-  href: introductiontodax.yml#step-0
+  href: introductiontodax.yml?tutorial-step=1
