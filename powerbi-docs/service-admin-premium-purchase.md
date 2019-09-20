@@ -97,10 +97,10 @@ When you cancel your Premium subscription, or your capacity license expires, you
 
 ## Next steps
 
-[Configure and manage capacities in Power BI Premium](service-admin-premium-manage.md) 
-[Power BI pricing page](https://powerbi.microsoft.com/pricing/) 
-[Power BI Premium calculator](https://powerbi.microsoft.com/calculator/) 
-[Power BI Premium FAQ](service-premium-faq.md) 
+[Configure and manage capacities in Power BI Premium](service-admin-premium-manage.md)\
+[Power BI pricing page](https://powerbi.microsoft.com/pricing/)\
+[Power BI Premium calculator](https://powerbi.microsoft.com/calculator/)\
+[Power BI Premium FAQ](service-premium-faq.md)\
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
