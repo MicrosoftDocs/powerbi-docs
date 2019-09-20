@@ -113,7 +113,7 @@ Template app creators can release new versions of their template apps via AppSou
 
    ![Update template app](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
 
-1. **Install to a new workspace:** will install a fresh version of the workspace and app that will require reconfiguration.
+- **Install to a new workspace:** Installs a fresh version of the workspace and app that you need to reconfigure
 
 ### Overwrite behavior:
 
