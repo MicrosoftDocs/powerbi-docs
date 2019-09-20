@@ -104,7 +104,7 @@ After you've updated the app for your organization, you're ready to publish it. 
 
 ## Update a template app
 
-A template app can be updated when a new version is released via AppSource or a direct link. You can update the template app when reinstalling the app with the same or newer version.
+Template app creators can release new versions of their template apps via AppSource or a direct link. When they do, you can update the template app when reinstalling the app with the same or newer version.
 
   >[!NOTE]
   >Any changes performed to the reports or dashboards will be overwritten with the new installed version. You can **save as** the reports or dashboards before overwriting.
