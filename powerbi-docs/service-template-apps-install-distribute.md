@@ -125,7 +125,7 @@ Template app creators can release new versions of their template apps via AppSou
 * Overwriting never deletes *new* reports or dashboards you've added to the workspace. It overwrites the original reports and dashboards with changes from the original author.
 
 >[!IMPORTANT]
->Remember to [update app](#customize-and-publish-the-app) after performing overwrite to apply changes in the reports and dashboard for the organizational app users.
+>Remember to [update the app](#customize-and-publish-the-app) after overwriting to apply changes to the reports and dashboard for your organizational app users.
 
 ## Next steps
 
