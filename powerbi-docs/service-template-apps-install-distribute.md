@@ -117,7 +117,7 @@ Template app creators can release new versions of their template apps via AppSou
 
 ### Overwrite behavior
 
-* Overwriting updates the reports, dashboards, and dataset inside the **workspace**, not the app. App navigation, setup, and permission will not be changed on update.
+* Overwriting updates the reports, dashboards, and dataset inside the *workspace*, not the app. Overwriting doesn't change app navigation, setup, and permission.
 * After you update the workspace, you need to *update the app* to apply changes from the workspace to the organizational app.
 * Overwriting keeps configured parameters and authentication. After update, an automatic dataset refresh starts. During that time the organizational app, reports, and dashboards present the *sample data* experience.
   ![Sample data](media/service-template-apps-install-distribute/power-bi-sample-data.png)
