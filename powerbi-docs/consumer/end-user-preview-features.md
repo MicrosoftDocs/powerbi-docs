@@ -5,11 +5,10 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/13/2019
+ms.date: 09/18/2019
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -25,7 +24,7 @@ As we make improvements to the Power BI service, we'll release some new function
    ![Settings menu](./media/end-user-preview-features/power-bi-settings.png).
 2. Select the **General** tab. If previews exist, you'll either see an option for **Preview features** or you'll see a preview feature listed on the left.  In this example, there is a preview listed for ArcGIS Maps. 
    
-   ![General tab](./media/end-user-preview-features/power-bi-preview-arcgis.png)
+   ![General tab](./media/end-user-preview-features/power-bi-preview-esri.png)
 3. Select the **On** radio button, or mark the checkbox, to try out the new experience. Then select **Apply**.
 4. To turn off preview features, follow steps 1-3 above, and in step 3, choose **Off**, or remove the checkmark, and select **Apply**.
 

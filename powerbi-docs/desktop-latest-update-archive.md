@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/19/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -30,7 +30,7 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 
 The following sections describe previous months' updates to **Power BI Desktop**.
 
-## August 2019 Update (2.71.5523.641)
+## August 2019 Update (2.72.5556.801)
 
 Our August updates were hot and shone brightly on the reports you create in Power BI Desktop. 
 
