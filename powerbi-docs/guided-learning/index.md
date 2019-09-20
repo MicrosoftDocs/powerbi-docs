@@ -4,7 +4,7 @@ description: Start your learning journey with this sequenced collection of cours
 layout: LandingPage
 ms.service: powerbi
 ms.author: davidiseminger
-ms.date: 05/10/2019
+ms.date: 09/20/2019
 ms.topic: hub-page
 
 ---
@@ -70,7 +70,7 @@ ms.topic: hub-page
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a class="barLink" href="https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/" style="text-decoration: none">Analyze data with Power BI</a>
+                            <a href="https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/" style="text-decoration: none">Analyze data with Power BI</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
@@ -107,7 +107,7 @@ ms.topic: hub-page
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi/index" style="text-decoration: none">Get started building with Power BI</a>
+                            <a href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi/index" style="text-decoration: none">Get started building with Power BI</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
@@ -144,7 +144,7 @@ ms.topic: hub-page
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/index" style="text-decoration: none">Get data with Power BI Desktop</a>
+                            <a href="https://docs.microsoft.com/learn/modules/get-data-power-bi/index" style="text-decoration: none">Get data with Power BI Desktop</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
@@ -193,7 +193,7 @@ ms.topic: hub-page
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/index" style="text-decoration: none">Model data in Power BI</a>
+                            <a href="https://docs.microsoft.com/learn/modules/model-data-power-bi/index" style="text-decoration: none">Model data in Power BI</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
@@ -242,7 +242,7 @@ ms.topic: hub-page
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/index" style="text-decoration: none">Use visuals in Power BI</a>
+                            <a href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/index" style="text-decoration: none">Use visuals in Power BI</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
@@ -295,7 +295,7 @@ ms.topic: hub-page
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/index" style="text-decoration: none">Explore data in Power BI</a>
+                            <a href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/index" style="text-decoration: none">Explore data in Power BI</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
@@ -352,7 +352,7 @@ ms.topic: hub-page
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/index" style="text-decoration: none">Publish and share in Power BI</a>
+                            <a href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/index" style="text-decoration: none">Publish and share in Power BI</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
