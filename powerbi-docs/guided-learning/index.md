@@ -29,7 +29,7 @@ ms.topic: hub-page
                                 <img src="media/logo_power-bi.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a href="https://docs.microsoft.com/learn/modules/analyze-data-power-bi" style="text-decoration: none">Explore what Power BI can do for you</a>
+                            <a href="https://docs.microsoft.com/learn/modules/explore-power-bi-service" style="text-decoration: none">Explore what Power BI can do for you</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
@@ -70,7 +70,7 @@ ms.topic: hub-page
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-                            <a href="https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/" style="text-decoration: none">Analyze data with Power BI</a>
+                            <a href="https://docs.microsoft.com/learn/modules/analyze-data-power-bi" style="text-decoration: none">Analyze data with Power BI</a>
                           </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
