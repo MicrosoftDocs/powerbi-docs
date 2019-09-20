@@ -107,7 +107,7 @@ After you've updated the app for your organization, you're ready to publish it. 
 Template app creators can release new versions of their template apps via AppSource or a direct link. When they do, you can update the template app when reinstalling the app with the same or newer version.
 
   >[!NOTE]
-  >Any changes performed to the reports or dashboards will be overwritten with the new installed version. You can **save as** the reports or dashboards before overwriting.
+  >Installing a new version overwrites any changes you've made to the reports and dashboards. To keep your updated reports and dashboards, you can save them with a different name or location before installing.
 
 1. **Overwrite an existing version:** Will overwrite the existing workspace with the updated version of the template app.
 
