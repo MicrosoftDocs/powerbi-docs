@@ -18,7 +18,7 @@ LocalizationGroup: Reports
 
 ## Cause
 
-In the past, there have been cases where a Power BI report refreshed fine in the Desktop, but failed on the Power BI service with an error like “We cannot convert the value "[Table]" to type Table”. One of the causes of this error is that when the Data Privacy Firewall (link here?) buffers a data source, nested non-scalar values (such as tables, records, lists, and functions) are automatically converted to text values (such as “[Table]” or “[Record]”).
+In the past, there have been cases where a Power BI report refreshed fine in the Desktop, but failed on the Power BI service with an error like “We cannot convert the value "[Table]" to type Table”. One of the causes of this error is that when the Data Privacy Firewall buffers a data source, nested non-scalar values (such as tables, records, lists, and functions) are automatically converted to text values (such as “[Table]” or “[Record]”).
 
 Now that the Power BI service supports the setting of privacy levels (or turning off the Firewall entirely), such errors can be avoided by [configuring the data source privacy settings](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/) in the Power BI service to be non-Private.
 
