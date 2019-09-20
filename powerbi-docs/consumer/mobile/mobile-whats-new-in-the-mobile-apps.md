@@ -77,7 +77,7 @@ Users can use device built-in protection to secure Power BI, by asking for Face 
 
 ### One page report Slideshow (Windows)
 
-Supporting auto refresh also for one-page reports in slideshow. So, if the report's underline data source is updated, we will pick it up and update the data in the page.
+Supporting auto refresh also for one-page reports in slideshow. So, if the report's underlying data source is updated, we will pick it up and update the data in the page.
 
 
 ## April 2019
