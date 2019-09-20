@@ -1,5 +1,5 @@
 ---
-title: Manage capacities within Power BI Premium and Power BI Embedded
+title: Configure and manage capacities in Power BI Premium
 description: Learn how you can manage Power BI Premium and enable access to content for your entire organization.
 author: mgblythe
 ms.author: mblythe
@@ -12,7 +12,7 @@ ms.date: 09/17/2019
 LocalizationGroup: Premium
 ---
 
-# Manage capacities within Power BI Premium and Power BI Embedded
+# Configure and manage capacities in Power BI Premium
 
 Managing Power BI Premium involves creating, managing, and monitoring Premium capacities. This article provides step-by-step instructions; for an overview of capacities; see [Managing Premium capacities](service-premium-capacity-manage.md).
 
