@@ -3,13 +3,12 @@ title: View a Power BI dashboard
 description: Dashboards are a key feature of Power BI service, learn how to open and view a dashboard.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 09/18/2019
 ms.author: mihart
 
 LocalizationGroup: Dashboards
@@ -35,7 +34,7 @@ Power BI Pro is required for both sharing a dashboard and viewing a shared dashb
 
 You may find dashboards in all of the containers in the left navigation bar. 
 
-![dashboard icon](media/end-user-dashboard-open/opendash.gif)
+![dashboard icon](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
 
 - **Home** 
 - **Favorites** - if you've [set a dashboard as a favorite](end-user-favorite.md)

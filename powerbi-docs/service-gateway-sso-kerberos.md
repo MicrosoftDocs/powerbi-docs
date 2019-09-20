@@ -14,7 +14,7 @@ LocalizationGroup: Gateways
 
 # Configure Kerberos-based SSO from Power BI service to on-premises data sources
 
-Use [Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) to enable seamless SSO connectivity. Enabling SSO makes it easy for Power BI reports and dashboards to refresh data from on-premise sources.
+Use [Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) to enable seamless SSO connectivity. Enabling SSO makes it easy for Power BI reports and dashboards to refresh data from on-premises sources.
 
 Several items must be configured for Kerberos constrained delegation to work properly, including _Service Principal Names_ (SPN) and delegation settings on service accounts.
 
@@ -59,6 +59,8 @@ First, determine whether an SPN was already created for the domain account used 
 
     ![Image of set SPN command](media/service-gateway-sso-kerberos/set-spn.png)
 
+    You can also set the SPN using the Active Directory Users and Computers MMC (Microsoft Management Console) snap-in.
+
 ### Decide on resource-based or standard Kerberos constrained delegation
 
 Delegation settings can be configured for _either_ resource-based constrained Kerberos delegation or standard Kerberos constrained delegation. Use resource-based delegation if your data source belongs to a different domain than your gateway, but note that this approach requires Windows Server 2012 or later. See the [constrained Kerberos delegation overview page](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) for more information on the differences between the two approaches to delegation.
@@ -72,7 +74,7 @@ Delegation settings can be configured for _either_ resource-based constrained Ke
 
 We will now set the delegation settings for the gateway service account. There are multiple tools you can use to perform these steps. Here, we'll use Active Directory Users and Computers, which is a Microsoft Management Console (MMC) snap-in to administer and publish information in the directory. It's available on domain controllers by default, but you can also enable it through Windows Feature configuration on other machines.
 
-We need to configure Kerberos constrained delegation with protocol transiting. With constrained delegation, you must be explicit about which services you want to present delegated credentials to. For example, only SQL Server or your SAP HANA server accepts delegation calls from the gateway service account.
+We need to configure Kerberos constrained delegation with protocol transiting. With constrained delegation, you must be explicit about which services you want to allow the gateway to present delegated credentials to. For example, only SQL Server or your SAP HANA server accepts delegation calls from the gateway service account.
 
 This section assumes you have already configured SPNs for your underlying data sources (such as SQL Server, SAP HANA, SAP BW, Teradata, or Spark). To learn how to configure those data source server SPNs, refer to technical documentation for the respective database server. You can also see the heading *What SPN does your app require?* in the [My Kerberos Checklist](https://techcommunity.microsoft.com/t5/SQL-Server-Support/My-Kerberos-Checklist-8230/ba-p/316160) blog post.
 
@@ -81,7 +83,7 @@ In the following steps, we assume an on-premises environment with two machines: 
 * Active Directory Domain (Netbios): Contoso
 * Gateway machine name: **MyGatewayMachine**
 * Gateway service account: **Contoso\GatewaySvc**
-* SQL Server data source machine name: **MySQLServer**
+* SQL Server data source machine name: **TestSQLServer**
 * SQL Server data source service account: **Contoso\SQLService**
 
 Here's how to configure the delegation settings:
@@ -119,7 +121,7 @@ In the following steps, we assume an on-premises environment with two machines i
 
 * Gateway machine name: **MyGatewayMachine**
 * Gateway service account: **ContosoFrontEnd\GatewaySvc**
-* SQL Server data source machine name: **MySQLServer**
+* SQL Server data source machine name: **TestSQLServer**
 * SQL Server data source service account: **ContosoBackEnd\SQLService**
 
 Given those example names and settings, complete the following configuration steps:
@@ -171,7 +173,7 @@ If you don't have Azure AD Connect configured, follow these steps to map a Power
 
 1. Open the main gateway configuration file, `Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll`. By default, this file is stored at C:\Program Files\On-premises data gateway.
 
-1. Set the **ADUserNameLookupProperty** to an unused Active Directory attribute. Well assume `msDS-cloudExtensionAttribute1` is used in the steps that follow. Set the **ADUserNameReplacementProperty** to `SAMAccountName`. Save the configuration file.
+1. Set the **ADUserNameLookupProperty** to an unused Active Directory attribute. We'll assume `msDS-cloudExtensionAttribute1` is used in the steps that follow, though this attribute is only available in Windows Server 2012 and later. Set the **ADUserNameReplacementProperty** to `SAMAccountName`. Save the configuration file.
 
 1. From the **Services** tab of Task Manager, right-click the gateway service and select **Restart**.
 
@@ -197,7 +199,7 @@ You can set the `msDS-cloudExtensionAttribute1` property using the Active Direct
 
 ## Complete data source-specific configuration steps
 
-SAP HANA and SAP BW have additional data-source specific configuration requirements and prerequisites that need to be met before you can establish an SSO connection through the gateway to these data sources. See [the SAP HANA configuration page](service-gateway-sso-kerberos-sap-hana.md) and [the SAP BW - CommonCryptoLib (sapcrypto.dll) configuration page](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md) for details. It is also possible to [configure SAP BW for use with the gx64krb5 SNC library](service-gateway-sso-kerberos-sap-bw-gx64krb.md), but this library is not recommended by Microsoft because it's no longer supported by SAP.
+SAP HANA and SAP BW have additional data-source specific configuration requirements and prerequisites that need to be met before you can establish an SSO connection through the gateway to these data sources. See [the SAP HANA configuration page](service-gateway-sso-kerberos-sap-hana.md) and [the SAP BW - CommonCryptoLib (sapcrypto.dll) configuration page](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md) for details. It is also possible to [configure SAP BW for use with the gx64krb5 SNC library](service-gateway-sso-kerberos-sap-bw-gx64krb.md), but this library is not recommended by Microsoft because it's no longer supported by SAP. You should use CommonCryptoLib _or_ gx64krb5 as your SNC library. Do not complete configuration steps for both libraries.
 
 > [!NOTE]
 > Other SNC libraries might also work for BW SSO but they are not officially supported by Microsoft.
