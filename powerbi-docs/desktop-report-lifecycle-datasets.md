@@ -31,7 +31,7 @@ Let's say Anna (a business analyst) is on your team, and is skilled at creating 
 Everyone loves Anna's report and dataset, and that's where the trouble would begin - everyone on Anna's team would attempt to create *their own version* of that dataset, then share their own reports with the team. All of the sudden there would be a multitude of reports (from different datasets) in your team's workspace in the **Power BI service**. Which was the most recent? Were the datasets the same, or only almost? What were the differences? With the **Power BI service Live Connection** feature, all that can change for the better. In the next section, we see how others can use Anna's published dataset for their own reports, in their own workspaces, and enable everyone to use the same solid, vetted, published dataset to build their unique reports.
 
 ### Connect to a Power BI service dataset using a live connection
-Anna creates a report (and creates the dataset it's based upon), and then publishes it to the **Power BI service**, it shows up in then team's workspace in the Power BI service. If Anna saves it to a *new experience workspace*, then Anna can set the Build permission to make it available to everyone in and out of their workspace to see and use.
+Anna creates a report (and creates the dataset it's based upon), and then publishes it to the **Power BI service**, it shows up in then team's workspace in the Power BI service. If Anna saves it to a *new experience workspace*, then Anna can set Build permission to make it available to everyone in and out of their workspace to see and use.
 
 To learn more about the new experience workspaces, see [app workspaces](service-new-workspaces.md).
 

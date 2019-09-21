@@ -39,7 +39,7 @@ When you find a report you like, in a workspace or an app, you can make a copy o
 
 ## Build permission for datasets
 
-With the Build permission type, if you're a dataset creator you can determine who in your organization can build new content on your datasets. People with build permission can also build new content on the dataset outside Power BI, such as Excel sheets via Analyze in Excel, XMLA, and export. Read more about the [Build permission](service-datasets-build-permissions.md).
+With Build permission type, if you're a dataset creator you can determine who in your organization can build new content on your datasets. People with Build permission can also build new content on the dataset outside Power BI, such as Excel sheets via Analyze in Excel, XMLA, and export. Read more about the [Build permission](service-datasets-build-permissions.md).
 
 ## Promotion and certification
 

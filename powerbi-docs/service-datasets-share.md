@@ -7,7 +7,7 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/19/2019
+ms.date: 09/20/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -29,9 +29,9 @@ As a creator of *data models* in Power BI Desktop, you can share them as *datase
 1. You can also [publish an app](service-create-distribute-apps.md) from this workspace. When you do, on the **Permissions** page, you specify who has permissions and what they can do.
 
     > [!NOTE]
-    > If you select **Entire organization**, then no one in the organization will have Build permissions. This issue is already known. Instead, specify email addresses in **Specific individuals or groups**.  If you want your entire organization to have Build permissions, specify an email alias for the entire organization.
+    > If you select **Entire organization**, then no one in the organization will have Build permission. This issue is already known. Instead, specify email addresses in **Specific individuals or groups**.  If you want your entire organization to have Build permission, specify an email alias for the entire organization.
 
-    ![Set app permissions](media/service-datasets-build-permissions/power-bi-dataset-app-permissions.png)
+    ![Set app permissions](media/service-datasets-build-permissions/power-bi-dataset-app-permission-new-look.png)
 
 1. Select **Publish app**, or **Update app** if it's already published.
 
