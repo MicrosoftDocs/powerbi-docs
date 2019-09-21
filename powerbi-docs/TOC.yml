@@ -903,6 +903,8 @@
     items:
     - name: Purchase Power BI Premium
       href: service-admin-premium-purchase.md
+    - name: Configure and manage capacities
+      href: service-admin-premium-manage.md
     - name: Configure workloads
       href: service-admin-premium-workloads.md
     - name: Monitor capacities with the app
