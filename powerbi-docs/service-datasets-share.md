@@ -1,5 +1,5 @@
 ---
-title: Share a dataset (Preview)
+title: Share a dataset (preview)
 description: As a dataset owner, you can create and share your datasets so others can use them. Learn how to share them.
 author: maggiesMSFT
 manager: kfile
@@ -12,7 +12,7 @@ ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
-# Share a dataset (Preview)
+# Share a dataset (preview)
 
 As a creator of *data models* in Power BI Desktop, you can share them as *datasets* in the Power BI service. Then report creators can easily discover and reuse the datasets you've shared. In this article, you learn how to share your datasets. To learn how to control who has access to the data, read about the [Build permission](service-datasets-build-permissions.md).
 
