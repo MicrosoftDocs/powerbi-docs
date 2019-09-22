@@ -41,7 +41,7 @@ Now that your app is in production, you can start over in the test phase, withou
 
 ### Update behavior
 
-1. Updating the app will allow the installer of the template app to [Update a template app](service-template-apps-install-distribute.md#Update-a-template-app) the already installed workspace without losing the connection configuration.
+1. Updating the app will allow the installer of the template app to [Update a template app](service-template-apps-install-distribute.md#update-a-template-app) the already installed workspace without losing the connection configuration.
 1. See installer [overwrite behavior](service-template-apps-install-distribute.md#overwrite-behavior) to learn how changes in the dataset effects installed template app.
 1. Updating a template app will attempt to automatically reconnect the app with user's configuration.
 1. If you added a new query parameter to the updated dataset that requires users input - you must check the *required* check box to prompt input from the installer upon updating the app.
