@@ -1,8 +1,8 @@
 ---
 title: Sorting options for Power BI visuals
 description: This article discusses default sorting behavior for Power BI visuals.
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
