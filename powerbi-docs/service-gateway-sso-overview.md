@@ -35,13 +35,13 @@ A query that runs with SSO consists of three steps, as shown in the following di
 
 Here are additional details about those steps:
 
-1. For each query, the **Power BI service** includes the *user principal name* (UPN) when sending a query request to the configured gateway.
+1. For each query, the **Power BI service** includes the *user principal name* (UPN) (i.e. the fully-qualified username of the user currently logged in to Power BI service) when sending a query request to the configured gateway.
 
 2. The gateway needs to map the Azure Active Directory UPN to a local Active Directory identity.
 
    a.  If Azure AD DirSync (also known as *Azure AD Connect*) is configured, then the mapping works automatically in the gateway.
 
-   b.  Otherwise, the gateway can look up and map the Azure AD UPN to a local user by performing a lookup against the local Active Directory domain.
+   b.  Otherwise, the gateway can look up and map the Azure AD UPN to a local AD user by performing a lookup against the local Active Directory domain.
 
 3. The gateway service process impersonates the mapped local user, opens the connection to the underlying database, and sends the query. The gateway does not need to be installed on the same machine as the database.
 
