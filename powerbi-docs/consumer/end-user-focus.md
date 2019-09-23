@@ -9,7 +9,7 @@ featuredvideoid: dtdLul6otYE
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/23/20198
+ms.date: 09/23/2019
 ms.author: mihart
 
 LocalizationGroup: Common tasks
