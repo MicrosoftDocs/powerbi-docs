@@ -13,7 +13,7 @@ ms.author: maggies
 LocalizationGroup: 
 ---
 # Data lineage (preview)
-In modern business intelligence (BI) projects, understanding the flow of data from the data source to its destination can be a challenge. The challenge is even bigger if you have built advanced analytical projects spanning multiple data sources, artifacts, and dependencies.  Questions like "What happens if I change this data?" or "Why isn’t this report up to date?" can be hard to answer. They may require a team of experts or deep investigation to understand. Data lineage view is our way to answer these questions.
+In modern business intelligence (BI) projects, understanding the flow of data from the data source to its destination can be a challenge. The challenge is even bigger if you have built advanced analytical projects spanning multiple data sources, artifacts, and dependencies.  Questions like "What happens if I change this data?" or "Why isn’t this report up to date?" can be hard to answer. They may require a team of experts or deep investigation to understand. We designed data lineage view to help you answer these questions.
 
 ![Power BI lineage view](media/service-data-lineage/power-bi-lineage-view.png)
  
@@ -23,9 +23,9 @@ In lineage view, you see the lineage relationships between all the artifacts in 
 
 ## Explore lineage view
 
-Every workspace automatically has a lineage view, except My Workspace. You do need at least a Contributor role in the workspace. See [Permissions](#permissions) in this article for details. 
+Every workspace, whether new or classic, automatically has a lineage view, except My Workspace. You do need at least a Contributor role in the workspace to view it. See [Permissions](#permissions) in this article for details. 
 
-- To access lineage view, go to List view in a workspace. Tap the arrow next to **List view** and select **Lineage view**.
+- To access lineage view, go to the workspace list view. Tap the arrow next to **List view** and select **Lineage view**.
 
     ![Switch to lineage view](media/service-data-lineage/power-bi-switch-lineage-view.png)
 
@@ -33,7 +33,7 @@ Every workspace automatically has a lineage view, except My Workspace. You do ne
 
 **Data sources**
 
-You see the data sources from which the datasets and dataflows get their data. On the data source nodes, you see more information that can help identify the source. For example, for Azure SQL server you also see the database name.
+You see the data sources from which the datasets and dataflows get their data. On the data source cards, you see more information that can help identify the source. For example, for Azure SQL server you also see the database name.
 
 ![Lineage view data source with no gateway](media/service-data-lineage/power-bi-lineage-data-source-no-gateway.png)
  
@@ -53,7 +53,7 @@ If a report in the workspace is built on a dataset in another workspace, you see
  
 - For any artifact, select the ellipsis (...) to view the options menu. It features all the same actions available in list view.
   
-To see more metadata on datasets, select the dataset node itself. Additional information on the dataset is displayed in a side pane.
+To see more metadata on datasets, select the dataset card itself. Additional information on the dataset is displayed in a side pane.
 
 ![Side pane with more information](media/service-data-lineage/power-bi-lineage-side-pane.png)
  
@@ -89,5 +89,4 @@ Lineage view isn't available on Internet Explorer. See [Supported browsers for P
 
 ## Next steps
 
-- [Self-service data prep in Power BI](service-dataflows-overview.md)
 - [Intro to datasets across workspaces (preview)](service-datasets-across-workspaces.md)
