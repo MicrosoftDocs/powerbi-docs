@@ -82,7 +82,7 @@ Now create your own funnel chart that shows the number of opportunities we have 
    * The name of the stage
    * Number of opportunities currently in this stage
    * Overall conversion rate (% of Lead) 
-   * Stage-to-stage (aka Drop Rate) which is the % of the previous stage (in this case, Proposal Stage/Solution Stage)
+   * Stage-to-stage (also known as Drop Rate) which is the % of the previous stage (in this case, Proposal Stage/Solution Stage)
      
      ![details for Proposal bar](media/power-bi-visualization-funnel-charts/funnelhover-new.png)
 
