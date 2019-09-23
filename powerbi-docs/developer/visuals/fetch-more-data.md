@@ -1,8 +1,8 @@
 ---
 title: Fetch more data from Power BI
 description: This article discusses how to enable a segmented fetch of large datasets for Power BI visuals.
-author: AviSander
-ms.author: asander
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
