@@ -37,7 +37,7 @@ A query that runs with SSO consists of three steps, as shown in the following di
 
 Here are additional details about those steps:
 
-1. For each query, the **Power BI service** includes the *user principal name* (UPN) (i.e. the fully-qualified username of the user currently logged in to Power BI service) when sending a query request to the configured gateway.
+1. For each query, the **Power BI service** includes the *user principal name* (UPN, i.e. the fully-qualified username of the user currently logged in to Power BI service) when sending a query request to the configured gateway.
 
 2. The gateway needs to map the Azure Active Directory UPN to a local Active Directory identity.
 
