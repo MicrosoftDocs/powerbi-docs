@@ -20,6 +20,9 @@ This article describes how to configure your SAP BW data source to enable SSO fr
 > You can complete the steps in this article in addition to the steps in [Configure Kerberos SSO](service-gateway-sso-kerberos.md) to enable SSO-based refresh for SAP BW Application Server-based reports in Power BI service. However, Microsoft recommends the use of CommonCryptoLib, not gx64krb5 as your SNC library. SAP no longer offers support for gx64krb5 and the steps required to configure it for use with the gateway are significantly more complex compared to CommonCryptoLib. See [Configure SAP BW for SSO using CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md) for how to configure SSO using CommonCryptoLib. You should complete the configuration for CommonCryptoLib _or_ gx64krb5. Do not complete the configuration steps for both libraries.
 
 ### Set up gx64krb5 on gateway machine and the SAP BW server
+This guide attempts to be as comprehensive as possible. If you've already completed some of these steps, you can skip them. For example, you might have already configured your SAP BW server for SSO using gx64krb5.
+
+### Set up gx64krb5 on the gateway machine and the SAP BW server
 
 > [!NOTE]
 > `gx64krb5` is no longer actively supported by SAP. For more information, see [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Also note that `gx64krb5` doesn't allow for SSO connections from the data gateway to SAP BW Message Servers. Only connections to SAP BW Application Servers are possible. This Application Server-only restriction does not exist if you use [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md) as your SNC library. Other SNC libraries might also work for BW SSO but they are not officially supported by Microsoft.
@@ -30,7 +33,7 @@ This article describes how to configure your SAP BW data source to enable SSO fr
 
 1. Put `gx64krb5` in a location on your gateway machine that is accessible by your gateway service user. If you want to test the SSO connection using SAP GUI, also put a copy of `gsskrb5` on the machine and set the **SNC_LIB** environment variable to point at it. Both the gateway Service User and the Active Directory (AD) users that the Service User will impersonate need read and execute permissions for the copy of `gx64krb5`. We recommend granting permissions on the .dll to the Authenticated Users group. For testing purposes, you can also explicitly grant these permissions to both the gateway Service User and the Active Directory user you'll use to test.
 
-1. If your BW server has not already been configured for SSO using gx64krb5/gsskrb5, put another copy on your SAP BW server machine in a location accessible by the SAP BW server. 
+1. If your BW server has not already been configured for SSO using gx64krb5, put another copy of the .dll on your SAP BW server machine in a location accessible by the SAP BW server. Consult the [SAP documentation](https://launchpad.support.sap.com/#/notes/2115486) (s-user required) for more information on configuring gx64krb5 for use with an SAP BW server.
 
 1. On the client and server machines, set the `SNC_LIB` and/or `SNC_LIB_64` environment variables. If you use gsskrb5, set the `SNC_LIB` variable to the absolute path of gsskrb5.dll. If you use gx64krb5, set the `SNC_LIB_64` variable to the absolute path of gx64krb5.dll.
 
@@ -61,7 +64,7 @@ Complete this section if you haven't already configured your SAP BW server for S
 
     1. Set the **snc/identity/as** profile parameter to *p:\<the SAP BW service user you've created\>*, such as *p:BWServiceUser@MYDOMAIN.COM*. Note the p: that precedes the service user's UPN. It's not p:CN= like when Common Crypto Lib is used as the SNC library.
 
-    1. Set the **snc/gssapi\_lib** profile parameter to *\<path to gsskrb5.dll/gx64krb5.dll on the BW server machine (the library you'll use depends on OS bitness)\>*. Remember to put the library in a location the SAP BW Application Server can access.
+    1. Set the **snc/gssapi\_lib** profile parameter to *\<path to gx64krb5.dll on the BW server machine\>*. Remember to put the library in a location the SAP BW Application Server can access.
 
     1. Also set the following additional profile parameters, changing the values as required to fit your needs. Note that the last five options enable clients to connect to the SAP BW server by using SAP Logon without having SNC configured.
 
@@ -102,6 +105,10 @@ Verify that you can sign in to the server using SAP Logon through SSO as the Act
 
 1. As the Active Directory user you just enabled SSO access for, sign in to a machine in your domain on which SAP Logon is installed. Launch SAP Logon, and create a new connection.
 
+1. Copy the `gsskrb5` .dll you downloaded earlier to a location on the machine you just signed-on to. Set the `SNC_LIB` environment variable to the absolute path of this location.
+
+1. Launch SAP Logon, and create a new connection.
+
 1. In the **Create New System Entry** screen, select **User Specified System** > **Next**.
 
     ![Screenshot of Create New System Entry screen](media/service-gateway-sso-kerberos/new-system-entry.png)
@@ -136,11 +143,11 @@ Add required registry entries to the registry of the machine that the gateway is
 
 ## Troubleshooting
 
-### Troubleshoot gx64krb5/gsskrb5 configuration
+### Troubleshoot gx64krb5 configuration
 
-If you encounter any problems, follow these steps to troubleshoot the gx64krb5/gsskrb5 installation and SSO connections.
+If you encounter any problems, follow these steps to troubleshoot the gx64krb5 installation and SSO connections.
 
-* Viewing the server logs (…work\dev\_w0 on the server machine) can be helpful in troubleshooting any errors you encounter in completing the gx64krb5/gsskrb5 setup steps. This is particularly true if the SAP BW server won't start after the profile parameters have been changed.
+* Viewing the server logs (…work\dev\_w0 on the server machine) can be helpful in troubleshooting any errors you encounter in completing the gx64krb5 setup steps. This is particularly true if the SAP BW server won't start after the profile parameters have been changed.
 
 * If you're unable to start the SAP BW service due to a logon failure, you might have provided the wrong password when setting the SAP BW "start-as" user. Verify the password by logging in to a machine in your Active Directory environment as the SAP BW service user.
 
@@ -150,7 +157,7 @@ If you encounter any problems, follow these steps to troubleshoot the gx64krb5/g
 
 * You might get the following message: "(GSS-API) An invalid name was supplied." Make sure "p:" is in the value of the server's SNC identity profile parameter.
 
-* You might get the following message: "(SNC error) the specified module could not be found." This is usually caused by putting the `gsskrb5.dll/gx64krb5.dll` somewhere that requires elevated privileges (administrator rights) to access.
+* You might get the following message: "(SNC error) the specified module could not be found." This is usually caused by putting `gx64krb5.dll` somewhere that requires elevated privileges (administrator rights) to access.
 
 ### Troubleshoot gateway connectivity issues
 
@@ -158,7 +165,7 @@ If you encounter any problems, follow these steps to troubleshoot the gx64krb5/g
 
     ![Screenshot of On-premises data gateway application, with Diagnostics highlighted](media/service-gateway-sso-kerberos/gateway-diagnostics.png)
 
-1. Turn on SAP BW tracing, and review the generated log files. There are several different types of SAP BW tracing available. Consult the SAP documentation for more information.
+1. Turn on SAP BW tracing, and review the generated log files. There are several different types of SAP BW tracing available (e.g. CPIC tracing). Consult the SAP documentation for more information.
 
 ## Next steps
 
