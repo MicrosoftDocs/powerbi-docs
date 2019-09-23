@@ -42,11 +42,11 @@ Once you have an insight open, continue exploring.
 
    * Filter the visual on the canvas.  To display the filters, in the upper right corner, select the arrow to expand the Filters pane.
 
-          ![insight an Filters menu expanded](./media/end-user-insights/power-bi-filters.png)
+      ![insight an Filters menu expanded](./media/end-user-insights/power-bi-filters.png)
    
    * Run insights on the insight card itself. This is often referred to as **related insights**. Select an insight card to make it active. It will appear on your report canvas.
    
-          ![insight an Filters menu expanded](./media/end-user-insights/power-bi-insight-card.png)
+      ![insight an Filters menu expanded](./media/end-user-insights/power-bi-insight-card.png)
    
    * In the upper-right corner, select the lightbulb icon ![Get insights icon](./media/end-user-insights/power-bi-bulb-icon.png)  or **Get insights**. The insight displays on the left and new cards, based solely on the data in that single insight, display along the right.
      

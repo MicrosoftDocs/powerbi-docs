@@ -75,9 +75,9 @@ To present or view bookmarks, in order, select **View** from the **Bookmarks** p
 
 When in **View** mode, there are a few features to notice:
 
-1. The name of the bookmark appears in the bookmark title bar, which appears at the bottom of the canvas.
-2. The bookmark title bar has arrows that let you move to the next or previous bookmark.
-3. You can exit **View** mode by selecting **Exit** from the **Bookmarks** pane or by selecting the **X** found in the bookmark title bar. 
+- The name of the bookmark appears in the bookmark title bar, which appears at the bottom of the canvas.
+- The bookmark title bar has arrows that let you move to the next or previous bookmark.
+- You can exit **View** mode by selecting **Exit** from the **Bookmarks** pane or by selecting the **X** found in the bookmark title bar.
 
 ![Bookmark slide show](media/end-user-bookmarks/power-bi-slideshow.png)
 
