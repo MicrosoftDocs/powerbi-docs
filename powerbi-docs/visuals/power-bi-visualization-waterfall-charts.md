@@ -61,7 +61,7 @@ You'll create a waterfall chart that displays sales variance (estimated sales ve
 
 1. From the **Fields** pane, select **Sales** > **Total Sales Variance**.
 
-   ![Screenshot of Sales > Total Sales Varience selected and the visual that results.](media/power-bi-visualization-waterfall-charts/power-bi-first-value.png)
+   ![Screenshot of Sales > Total Sales Variance selected and the visual that results.](media/power-bi-visualization-waterfall-charts/power-bi-first-value.png)
 
 1. Select the waterfall icon ![Screenshot of the waterfall icon](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png)
 
