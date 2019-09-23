@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/15/2019
 ms.author: tebercov
 ---
 
@@ -42,7 +42,7 @@ To create a template app you can distribute to other Power BI tenants, you need 
 
 3. Enter a name, description (optional), and logo image (optional) for your app workspace.
 
-4. Select **Develop a template app**.
+4. Expand the **Advanced** section and select **Develop a template app**.
 
     ![Develop a template app](media/service-template-apps-create/power-bi-template-app-develop.png)
 
@@ -79,11 +79,13 @@ Now that you have content in your workspace, you're ready to package it in a tem
     - App logo (45K file size limit, 1:1 aspect ratio, .png .jpg .jpeg formats)
     - App theme color
 
-    **Content**
+    **Navigation**
 
-    **App landing page:** Define a report or dashboard to be the landing page of your app, use a landing page that will give the right impression:
+    Activate the **New navigation builder** where you can define the left navigation pane of the app (See [Design the navigation experience](service-create-distribute-apps.md#design-the-navigation-experience) in this article for details).
 
-    ![Content](media/service-template-apps-create/power-bi-create-content.png)
+   ![Set app landing page](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+    
+    **App landing page:** If you decide to opt out of the navigation builder you have the option to select the app landing page. Define a report or dashboard to be the landing page of your app. Use a landing page that gives the right impression.
 
     **Control**
 
@@ -102,7 +104,6 @@ Now that you have content in your workspace, you're ready to package it in a tem
     - **Value**: default parameter value.
     - **Required**: use this to require the installer to input a user-specific parameter.
     - **Lock**: Locking prevents the installer from updating a parameter.
-    - **Static**: Enable in case the app contains *only* sample data. When you select **Static**, the installation wizard doesn't ask users to connect a data source.
 
     **Access**
     In the test phase, decide which others in your organization can install and test your app. Don't worry, you can always come back and change these settings later (Setting doesn't affect access of the distributed Template app).
