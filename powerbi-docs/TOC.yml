@@ -697,10 +697,8 @@
         href: service-cognitive-services.md   
       - name: "Automated Machine Learning in Power BI (Preview)"
         href: service-machine-learning-automated.md              
-    - name: Enterprise information management
-      items: 
-      - name: "Data lineage"
-        href: service-data-lineage.md
+    - name: "Data lineage"
+      href: service-data-lineage.md
     - name: Paginated reports in Power BI
       items: 
       - name: View a paginated report
