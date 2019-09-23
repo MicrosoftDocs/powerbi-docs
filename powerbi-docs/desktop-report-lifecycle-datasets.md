@@ -70,7 +70,7 @@ Once complete, **Power BI Desktop** shows you success, and provides a couple lin
 
 ![Publishing succeeded](media/desktop-report-lifecycle-datasets/report-lifecycle_07.png)
 
-Now that your report with its dataset is in the Power BI service, you can also *promote* it, to attest to its quality and reliability. You can even request that it be *certified* by a central authority in your Power BI tenant. With either of these endorsements, your dataset will always appear at the topic of the list when people are looking for datasets. If interested, you can read more about the process of [promoting your dataset](service-datasets-promote.md). 
+Now that your report with its dataset is in the Power BI service, you can also *promote* it, to attest to its quality and reliability. You can even request that it be *certified* by a central authority in your Power BI tenant. With either of these endorsements, your dataset will always appear at the top of the list when people are looking for datasets. If interested, you can read more about the process of [promoting your dataset](service-datasets-promote.md). 
 
 The last step is to set *Build permission* for the dataset the report is based on. Build permission determines who can see and use your dataset. You can set it in the workspace itself, or when you share an app from the workspace. Learn more about setting the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/18/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -28,7 +28,7 @@ The following definitions are important to understand, before we begin setting u
 
 
 > [!NOTE]
-> Individually shared reports within *My Workspace*, which are reports that appear as *[Shared with me](service-share-dashboards.md#share-a-dashboard-or-report)*, can only be accessed in the workspace from which they were originally shared. 
+> With the cross-report drillthrough feature in Power BI Desktop, you can contextually jump from one report to another report. This is true as long as the reports are within the same workspace or app in the Power BI service. This is not applicable when accessing individually shared reports within *My Workspace* ([Shared with me reports](service-share-dashboards.md#share-a-dashboard-or-report)); instead, you need to access the report in the workspace from which it was originally shared.
 
 
 ## Enable cross-report drillthrough

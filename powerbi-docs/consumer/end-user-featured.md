@@ -5,18 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
-ms.custom: seodec18
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 09/14/2019
 ms.author: mihart
 
 LocalizationGroup: Dashboards
 ---
-# Featured dashboards in Power BI service
-## Create a Featured dashboard
+# Featured dashboards in the Power BI service
+## Create a featured dashboard
 Many of us have one dashboard that we visit more than any others.  It might be the dashboard we use to run our business, or it might be a dashboard that contains an aggregation of tiles from many different dashboards and reports.
 
 ![set as featured icon](./media/end-user-featured/power-bi-dropdown.png)
@@ -48,7 +47,7 @@ Of course, if you change your mind later you can set a new dashboard as the feat
 1. Follow steps 1 and 2 from above.
    
     ![Change featured dashboard window](./media/end-user-featured/power-bi-change-feature.png)
-2. Select **Set as featured**. Un-featuring a dashboard does not remove it from your workspace.  
+2. Select **Set as featured**. Un-featuring a dashboard does not remove it from Power BI.  
    
     ![success message](./media/end-user-featured/power-bi-unfeature-new.png)
 
