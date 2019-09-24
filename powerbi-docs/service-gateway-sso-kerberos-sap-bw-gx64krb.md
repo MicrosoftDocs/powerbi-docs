@@ -62,7 +62,7 @@ Complete this section if you haven't already configured your SAP BW server for S
 
 1. Sign in to your server in SAP Logon and set the following profile parameters by using the RZ10 transaction:
 
-    1. Set the **snc/identity/as** profile parameter to *p:&lt;the SAP BW service user you've created&gt;*, such as *p:BWServiceUser@MYDOMAIN.COM*. Note the p: that precedes the service user's UPN. It's not p:CN= like when Common Crypto Lib is used as the SNC library.
+    1. Set the **snc/identity/as** profile parameter to *p:&lt;the SAP BW service user you've created&gt;*, such as *p:BWServiceUser@MYDOMAIN\.COM*. Note the p: that precedes the service user's UPN. It's not p:CN= like when Common Crypto Lib is used as the SNC library.
 
     1. Set the **snc/gssapi\_lib** profile parameter to *&lt;path to gx64krb5.dll on the BW server machine&gt;*. Remember to put the library in a location the SAP BW Application Server can access.
 
@@ -93,7 +93,7 @@ If you haven't already, map an Active Directory user to an SAP BW Application Se
 
     ![Screenshot of SAP BW User maintenance screen](media/service-gateway-sso-kerberos/user-maintenance.png)
 
-1. Select the **SNC** tab. In the SNC name input box, enter *p:&lt;your Active Directory user&gt;@&lt;your domain&gt;*. Note the mandatory p: that must precede the Active Directory user's UPN. The Active Directory user you specify should belong to the person or organization for whom you want to enable SSO access to the SAP BW Application Server. For example, if you want to enable SSO access for the user *testuser@TESTDOMAIN.COM*, enter *p:testuser@TESTDOMAIN.COM*.
+1. Select the **SNC** tab. In the SNC name input box, enter *p:&lt;your Active Directory user&gt;@&lt;your domain&gt;*. Note the mandatory p: that must precede the Active Directory user's UPN. The Active Directory user you specify should belong to the person or organization for whom you want to enable SSO access to the SAP BW Application Server. For example, if you want to enable SSO access for the user *testuser@TESTDOMAIN\.COM*, enter *p:testuser@TESTDOMAIN\.COM*.
 
     ![Screenshot of SAP BW Maintain users screen](media/service-gateway-sso-kerberos/maintain-users.png)
 
@@ -115,7 +115,7 @@ Verify that you can sign in to the server using SAP Logon through SSO as the Act
 
 1. Fill in the appropriate details on the next screen, including the application server, instance number, and system ID. Then select **Finish**.
 
-1. Right-click the new connection and select **Properties**. Select the **Network** tab. In the **SNC Name** text box, enter *p:&lt;the SAP BW service user's UPN&gt;*, such as *p:BWServiceUser@MYDOMAIN.COM*. Then select **OK**.
+1. Right-click the new connection and select **Properties**. Select the **Network** tab. In the **SNC Name** text box, enter *p:&lt;the SAP BW service user's UPN&gt;*, such as *p:BWServiceUser@MYDOMAIN\.COM*. Then select **OK**.
 
     ![Screenshot of System Entry Properties screen](media/service-gateway-sso-kerberos/system-entry-properties.png)
 
@@ -133,7 +133,7 @@ Add required registry entries to the registry of the machine that the gateway is
 
 1. In the data source configuration window, enter the Application Server's **Hostname**, **System Number**, and **client ID**, as you would to sign in to your SAP BW server from Power BI Desktop.
 
-1. In the **SNC Partner Name** field, enter *p:&lt;the SPN you mapped to your SAP BW service user&gt;*. For example, if the SPN is **SAP/BWServiceUser@MYDOMAIN.COM**, you should enter *p:SAP/BWServiceUser@MYDOMAIN.COM* in the **SNC Partner Name** field.
+1. In the **SNC Partner Name** field, enter *p:&lt;the SPN you mapped to your SAP BW service user&gt;*. For example, if the SPN is **SAP/BWServiceUser@MYDOMAIN\.COM**, you should enter *p:SAP/BWServiceUser@MYDOMAIN\.COM* in the **SNC Partner Name** field.
 
 1. For the SNC Library, select **SNC\_LIB** or **SNC\_LIB\_64**. Make sure that **SNC\_LIB\_64** on the gateway machine points to gx64krb5.dll. Alternatively, you can select the "Custom" option and provide the absolute path the gx64krb5.dll (on the gateway machine).
 

@@ -185,7 +185,7 @@ If you don't have Azure AD Connect configured, follow these steps to map a Power
 
     ![Screenshot of Task Manager Services tab](media/service-gateway-sso-kerberos/restart-gateway.png)
 
-1. For each Power BI service user you want to enable Kerberos SSO for, set the `msDS-cloudExtensionAttribute1` property of a local Active Directory user (with SSO permission to your data source) to the full username (i.e. UPN) of the Power BI service user. For example, if you log in to Power BI service as `test@contoso.com` and you want to map this user to a local Active Directory user with SSO permissions, say, `test@LOCALDOMAIN.COM`, set `test@LOCALDOMAIN.COM`'s `msDS-cloudExtensionAttribute1` attribute to `test@contoso.com`.
+1. For each Power BI service user you want to enable Kerberos SSO for, set the `msDS-cloudExtensionAttribute1` property of a local Active Directory user (with SSO permission to your data source) to the full username (i.e. UPN) of the Power BI service user. For example, if you log in to Power BI service as `test@contoso.com` and you want to map this user to a local Active Directory user with SSO permissions, say, `test@LOCALDOMAIN\.COM`, set `test@LOCALDOMAIN\.COM`'s `msDS-cloudExtensionAttribute1` attribute to `test@contoso.com`.
 
     You can set the `msDS-cloudExtensionAttribute1` property using the Active Directory Users and Computers Microsoft Management Console (MMC) snap-in:
     
