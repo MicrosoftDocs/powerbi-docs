@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 09/23/2019
 ---
 
 # What's new in Power BI Report Server
@@ -20,6 +20,60 @@ For related Power BI "What's New" information, see:
 * [What's new in the Power BI service](../service-whats-new.md)
 * [What's new in Power BI Desktop](../desktop-latest-update.md)
 * [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## September 2019
+
+See the Power BI Report Server September 2019 blog post for details about all the new features.
+
+The September 2019 update of Power BI Report Server is packed with lots of Power BI report features, including visual level filters for slicers, icon sets, grouping for visuals, and new default themes. In this release, you also see the new updated pane design, the new filtering experience, and more conditional formatting options. Read on to learn more about the new features and many other new capabilities.
+
+- **Visual-level filters for slicers** You can add a visual-level filter to slicers. It works like any other visual-level filter, just filtering the slicer itself and no other visuals. This filter is for useful for filtering out blanks or if you want to use measure filters.
+- **Icon sets for table and matrix** With KPI icons, you can set up rules for showing different sets of icons in your table and matrix, similar to icon sets in Excel.
+- **Grouping visuals** Now you can you group visuals, shapes, text boxes, images, and buttons together on a report page just like in PowerPoint. When you group objects together, you can move and resize them all together. Grouping makes it easier to work in a reports with lots of objects layered on each page.
+- **New default themes** To go along with the new theme JSON options, we are updating the themes available for reports, and changing the default theme for new reports. The new default theme both aligns better with Microsoft's design language and follows best design practices for visuals. 
+- **Updated pane design** We've refreshed much of our interface. We've updated all the panes, the footer, and view switcher to be a lighter color, updated spacing, and introduced new icons. The new design is the first step to refreshing the entire interface.
+
+
+### Reporting
+
+- Updated pane design
+- Visual level filters for slicers
+- Sorting for the performance analyzer pane
+- Visual header tooltips
+- Table & matrix total label customization
+- Sync slicer support for hierarchy slicer
+- Consistent font sizes across visuals
+- Icon sets for table and matrix
+- Percent support for conditional formatting by rules
+- New filter pane is now generally available
+- Data colors support when using play axis on scatter charts
+- Performance improves when using relative date and dropdown slicers
+- Grouping visuals
+- Color and text classes in themes
+- New default themes
+
+### Analytics
+
+- Custom format strings
+- Conditional formatting updates for formatting options
+
+    - Visual background and title colors
+    - Card colors
+    - Gauge fill and colors
+    - Alt text
+    - Border color
+
+- Conditional formatting warnings
+- Drill-through discoverability improvement
+- New DAX expressions: REMOVEFILTERS and CONVERT
+- New DAX comparison operator: ==
+
+### Data preparation
+
+- Improvements to M Intellisense
+- New Transform: Split column by positions
+- Copy to clipboard from data profiling
+
 
 ## May 2019: Power BI Desktop for Power BI Report Server
 
