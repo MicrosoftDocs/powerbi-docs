@@ -62,9 +62,9 @@ Complete this section if you haven't already configured your SAP BW server for S
 
 1. Sign in to your server in SAP Logon and set the following profile parameters by using the RZ10 transaction:
 
-    1. Set the **snc/identity/as** profile parameter to *p:\<the SAP BW service user you've created\>*, such as *p:BWServiceUser@MYDOMAIN.COM*. Note the p: that precedes the service user's UPN. It's not p:CN= like when Common Crypto Lib is used as the SNC library.
+    1. Set the **snc/identity/as** profile parameter to *p:&lt;the SAP BW service user you've created&gt;*, such as *p:BWServiceUser@MYDOMAIN.COM*. Note the p: that precedes the service user's UPN. It's not p:CN= like when Common Crypto Lib is used as the SNC library.
 
-    1. Set the **snc/gssapi\_lib** profile parameter to *\<path to gx64krb5.dll on the BW server machine\>*. Remember to put the library in a location the SAP BW Application Server can access.
+    1. Set the **snc/gssapi\_lib** profile parameter to *&lt;path to gx64krb5.dll on the BW server machine&gt;*. Remember to put the library in a location the SAP BW Application Server can access.
 
     1. Also set the following additional profile parameters, changing the values as required to fit your needs. Note that the last five options enable clients to connect to the SAP BW server by using SAP Logon without having SNC configured.
 
@@ -93,7 +93,7 @@ If you haven't already, map an Active Directory user to an SAP BW Application Se
 
     ![Screenshot of SAP BW User maintenance screen](media/service-gateway-sso-kerberos/user-maintenance.png)
 
-1. Select the **SNC** tab. In the SNC name input box, enter *p:\<your Active Directory user\>@\<your domain\>*. Note the mandatory p: that must precede the Active Directory user's UPN. The Active Directory user you specify should belong to the person or organization for whom you want to enable SSO access to the SAP BW Application Server. For example, if you want to enable SSO access for the user *testuser\@TESTDOMAIN.COM*, enter *p:testuser@TESTDOMAIN.COM*.
+1. Select the **SNC** tab. In the SNC name input box, enter *p:&lt;your Active Directory user&gt;@&lt;your domain&gt;*. Note the mandatory p: that must precede the Active Directory user's UPN. The Active Directory user you specify should belong to the person or organization for whom you want to enable SSO access to the SAP BW Application Server. For example, if you want to enable SSO access for the user *testuser@TESTDOMAIN.COM*, enter *p:testuser@TESTDOMAIN.COM*.
 
     ![Screenshot of SAP BW Maintain users screen](media/service-gateway-sso-kerberos/maintain-users.png)
 
@@ -109,13 +109,13 @@ Verify that you can sign in to the server using SAP Logon through SSO as the Act
 
 1. Launch SAP Logon, and create a new connection.
 
-1. In the **Create New System Entry** screen, select **User Specified System** > **Next**.
+1. In the **Create New System Entry** screen, select **User Specified System**, then **Next**.
 
     ![Screenshot of Create New System Entry screen](media/service-gateway-sso-kerberos/new-system-entry.png)
 
 1. Fill in the appropriate details on the next screen, including the application server, instance number, and system ID. Then select **Finish**.
 
-1. Right-click the new connection and select **Properties**. Select the **Network** tab. In the **SNC Name** text box, enter *p:\<the SAP BW service user's UPN\>*, such as *p:BWServiceUser@MYDOMAIN.COM*. Then select **OK**.
+1. Right-click the new connection and select **Properties**. Select the **Network** tab. In the **SNC Name** text box, enter *p:&lt;the SAP BW service user's UPN&gt;*, such as *p:BWServiceUser@MYDOMAIN.COM*. Then select **OK**.
 
     ![Screenshot of System Entry Properties screen](media/service-gateway-sso-kerberos/system-entry-properties.png)
 
@@ -125,17 +125,17 @@ Verify that you can sign in to the server using SAP Logon through SSO as the Act
 
 Add required registry entries to the registry of the machine that the gateway is installed on, as well as to machines intended to connect from Power BI Desktop. Here are the commands to run:
 
-1. ```REG ADD HKLM\SOFTWARE\Wow6432Node\SAP\gsskrb5 /v ForceIniCredOK /t REG\_DWORD /d 1 /f```
+1. ```REG ADD HKLM\SOFTWARE\Wow6432Node\SAP\gsskrb5 /v ForceIniCredOK /t REG_DWORD /d 1 /f```
 
-1. ```REG ADD HKLM\SOFTWARE\SAP\gsskrb5 /v ForceIniCredOK /t REG\_DWORD /d 1 /f```
+1. ```REG ADD HKLM\SOFTWARE\SAP\gsskrb5 /v ForceIniCredOK /t REG_DWORD /d 1 /f```
 
 ### Add a new SAP BW Application Server data source to the Power BI service, or edit an existing one
 
 1. In the data source configuration window, enter the Application Server's **Hostname**, **System Number**, and **client ID**, as you would to sign in to your SAP BW server from Power BI Desktop.
 
-1. In the **SNC Partner Name** field, enter *p:\<the SPN you mapped to your SAP BW service user\>*. For example, if the SPN is **SAP/BWServiceUser@MYDOMAIN.COM**, you should enter *p:SAP/BWServiceUser@MYDOMAIN.COM* in the **SNC Partner Name** field.
+1. In the **SNC Partner Name** field, enter *p:&lt;the SPN you mapped to your SAP BW service user&gt;*. For example, if the SPN is **SAP/BWServiceUser@MYDOMAIN.COM**, you should enter *p:SAP/BWServiceUser@MYDOMAIN.COM* in the **SNC Partner Name** field.
 
-1. For the SNC Library, select **SNC_LIB** or **SNC_LIB_64**. Make sure that SNC_LIB_64 on the gateway machine points to gx64krb5.dll. Alternatively, you can select the "Custom" option and provide the absolute path the gx64krb5.dll (on the gateway machine).
+1. For the SNC Library, select **SNC\_LIB** or **SNC\_LIB\_64**. Make sure that **SNC\_LIB\_64** on the gateway machine points to gx64krb5.dll. Alternatively, you can select the "Custom" option and provide the absolute path the gx64krb5.dll (on the gateway machine).
 
 1. Select the **Use SSO via Kerberos for DirectQuery queries** box, and select **Apply**. If the test connection is not successful, verify that the previous setup and configuration steps were completed correctly.
 
@@ -153,15 +153,15 @@ If you encounter any problems, follow these steps to troubleshoot the gx64krb5 i
 
 * If you get errors about underlying data source credentials (e.g. SQL Server) preventing the server from starting, verify that you've granted the service user access to the SAP BW database.
 
-* You might get the following message: "(GSS-API) specified target is unknown or unreachable." This usually means you have the wrong SNC name specified. Make sure to use "p:" only, not "p:CN=" or anything else in the client application, other than the service user's UPN.
+* You might get the following message: *(GSS-API) specified target is unknown or unreachable.* This usually means you have the wrong SNC name specified. Make sure to use "p:" only, not "p:CN=" or anything else in the client application, other than the service user's UPN.
 
-* You might get the following message: "(GSS-API) An invalid name was supplied." Make sure "p:" is in the value of the server's SNC identity profile parameter.
+* You might get the following message: *(GSS-API) An invalid name was supplied.* Make sure "p:" is in the value of the server's SNC identity profile parameter.
 
-* You might get the following message: "(SNC error) the specified module could not be found." This is usually caused by putting `gx64krb5.dll` somewhere that requires elevated privileges (administrator rights) to access.
+* You might get the following message: *(SNC error) the specified module could not be found.* This is usually caused by putting `gx64krb5.dll` somewhere that requires elevated privileges (administrator rights) to access.
 
 ### Troubleshoot gateway connectivity issues
 
-1. Check the gateway logs. Open the gateway configuration application, and select **Diagnostics** > **Export logs**. The most recent errors are at the bottom of any log files you examine.
+1. Check the gateway logs. Open the gateway configuration application, and select **Diagnostics**, then **Export logs**. The most recent errors are at the bottom of any log files you examine.
 
     ![Screenshot of On-premises data gateway application, with Diagnostics highlighted](media/service-gateway-sso-kerberos/gateway-diagnostics.png)
 

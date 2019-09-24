@@ -56,7 +56,7 @@ The following steps describe how to establish a trust relationship between a HAN
 
 The resulting IdP certificate will be valid for a year (see the -days option). Now, import your IdP's certificate in HANA Studio to create a new SAML Identity Provider.
 
-1. In SAP HANA Studio, right-click your SAP HANA server, then navigate to **Security** > **Open Security Console** > **SAML Identity Provider** > **OpenSSL Cryptographic Library**.
+1. In SAP HANA Studio, right-click your SAP HANA server, then navigate to **Security** &gt; **Open Security Console** &gt; **SAML Identity Provider** &gt; **OpenSSL Cryptographic Library**.
 
     ![Identity providers](media/service-gateway-sso-saml/identity-providers.png)
 
@@ -86,11 +86,11 @@ Now that you have the Gateway's certificate and identity configured, convert the
 
 1. Copy the pfx file to the gateway machine:
 
-    1. Double-click samltest.pfx, then select **Local Machine** > **Next**.
+    1. Double-click samltest.pfx, then select **Local Machine** &gt; **Next**.
 
     1. Enter the password, then select **Next**.
 
-    1. Select **Place all certificates in the following store,** then **Browse** > **Personal** > **OK**.
+    1. Select **Place all certificates in the following store,** then **Browse** &gt; **Personal** &gt; **OK**.
 
     1. Select **Next** , then **Finish**.
 
@@ -106,13 +106,13 @@ Now that you have the Gateway's certificate and identity configured, convert the
 
         ![Add snap-in](media/service-gateway-sso-saml/add-snap-in.png)
 
-    1. Select **Certificates** > **Add** , then select **Computer account** > **Next**.
+    1. Select **Certificates** &gt; **Add** , then select **Computer account** &gt; **Next**.
 
-    1. Select **Local Computer** > **Finish** > **OK**.
+    1. Select **Local Computer** &gt; **Finish** &gt; **OK**.
 
-    1. Expand **Certificates** > **Personal** > **Certificates** , and find the certificate.
+    1. Expand **Certificates** &gt; **Personal** &gt; **Certificates**, and find the certificate.
 
-    1. Right-click the certificate and navigate to **All Tasks** > **Manage Private Keys**.
+    1. Right-click the certificate and navigate to **All Tasks** &gt; **Manage Private Keys**.
 
         ![Manage private keys](media/service-gateway-sso-saml/manage-private-keys.png)
 

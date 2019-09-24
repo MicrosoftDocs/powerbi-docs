@@ -14,7 +14,7 @@ LocalizationGroup: Gateways
 
 # Configure Kerberos-based SSO from Power BI service to on-premises data sources
 
-Use [Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) to enable seamless SSO connectivity. Enabling SSO makes it easy for Power BI reports and dashboards to refresh data from on-premise sources while respecting user-level permissions configured on those sources.
+Use [Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) to enable seamless SSO connectivity. Enabling SSO makes it easy for Power BI reports and dashboards to refresh data from on-premises sources while respecting user-level permissions configured on those sources.
 
 Several items must be configured for Kerberos constrained delegation to work properly, including _Service Principal Names_ (SPN) and delegation settings on service accounts.
 
@@ -159,7 +159,7 @@ Finally, on the machine running the gateway service (**MyGatewayMachine** in our
 
 1. On the gateway machine, run: *gpedit.msc*.
 
-2. Go to **Local Computer Policy** > **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **User Rights Assignment**.
+2. Go to **Local Computer Policy** &gt; **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt; **User Rights Assignment**.
 
     ![Screenshot of Local Computer Policy folder structure](media/service-gateway-sso-kerberos/user-rights-assignment.png)
 
