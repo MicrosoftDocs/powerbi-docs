@@ -1,8 +1,8 @@
 ---
 title: Understand data view mapping in Power BI visuals
 description: This article describes how Power BI transforms data before passing it into visuals.
-author: asander
-ms.author: asander
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
@@ -613,7 +613,7 @@ The visual gets its data structure as described in the following code (only the 
 
 To control the amount of data to receive in the data view, you can apply a data reduction algorithm.
 
-By default, all custom visuals have the top data reduction algorithm applied with the *count* set to 1000 data points. It's the same as setting the following properties in the *capabilities.json* file:
+By default, all Power BI visuals have the top data reduction algorithm applied with the *count* set to 1000 data points. It's the same as setting the following properties in the *capabilities.json* file:
 
 ```json
 "dataReductionAlgorithm": {
@@ -623,7 +623,7 @@ By default, all custom visuals have the top data reduction algorithm applied wit
 }
 ```
 
-You can modify the *count* value to any integer value up to 30000. R-based custom visuals can support up to 150000 rows.
+You can modify the *count* value to any integer value up to 30000. R-based Power BI visuals can support up to 150000 rows.
 
 ## Data reduction algorithm types
 
