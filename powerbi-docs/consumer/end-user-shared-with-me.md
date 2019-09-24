@@ -26,6 +26,7 @@ Watch Amanda explain the **Shared with me** content list and demonstrate how to 
 
 > [!NOTE]
 > This video uses an older version of the Power BI service.
+    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
