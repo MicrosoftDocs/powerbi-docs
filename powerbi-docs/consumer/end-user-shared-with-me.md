@@ -23,6 +23,10 @@ When a colleague shares content with you, using the **Share** button, it appears
 
 Watch Amanda explain the **Shared with me** content list and demonstrate how to navigate and filter the list. Then follow the step-by-step instructions below the video to try it out yourself. For you to view dashboards shared with you, you need to have a Power BI Pro license. Read [What is Power BI Premium?](../service-premium-what-is.md) for details.
 
+
+> [!NOTE]
+> This video uses an older version of the Power BI service.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
 You'll have options for interacting with the shared dashboards and  reports, depending on the permissions the *designer* gives you. These include being able to make copies of the dashboard, open the report [in Reading view](end-user-reading-view.md), and re-share with other colleagues.
@@ -36,11 +40,9 @@ The actions available to you will depend on the settings assigned by the content
 * Some dashboards and reports can be re-shared  ![share icon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
 * [Open the report in Excel](end-user-export.md) ![export to Excel icon](./media/end-user-shared-with-me/power-bi-excel.png) 
 * [View insights](end-user-insights.md) that Power BI finds in the data ![insights icon](./media/end-user-shared-with-me/power-bi-insights.png).
-* Additionally, if your lists get long, [use the search field and sorting to find what you need](end-user-search-sort.md).
   
   > [!NOTE]
   > For information about EGRC classifications, select the **Classification** button or [visit Dashboard data classification ](../service-data-classification.md).
-  > 
   > 
 
 

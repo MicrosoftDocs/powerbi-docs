@@ -18,7 +18,7 @@ A Power BI visual is constructed using data from underlying datasets. If you're 
 
 
 1. In the Power BI service, [open a report](end-user-report-open.md) and select a visual.  
-2. To display the data behind the visual, select the ellipsis (...) and choose **Show data**.
+2. To display the data behind the visual, select the ellipses (...) and choose **Show data**.
    
    ![select Show data](./media/end-user-show-data/power-bi-explore-show-data-newer.png)
 3. By default, the data displays below the visual.

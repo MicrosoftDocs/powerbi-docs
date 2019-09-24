@@ -31,13 +31,13 @@ To see your five most-recently visited items, from the nav pane, select the arro
 
 ![Recent content flyout](./media/end-user-recent/power-bi-recent-flyout.png)
 
-If you have more than five recently-visited items, select **See all** to open the Recent screen (see below). You can also select **Recent**, or the Recent ![Recent icon](./media/end-user-recent/power-bi-icon.png)  icon, from the nav pane.
+If you have more than five recently-visited items, select **See all** to open the Recent screen. You can also select **Recent**, or the Recent ![Recent icon](./media/end-user-recent/power-bi-icon.png)  icon, from the nav pane.
 
 ![display all recent content](./media/end-user-recent/power-bi-recent.png)
 
 ## Actions available from the **Recent** content list
 The actions available to you will depend on the settings assigned by the content *designer*. Some of your options may include:
-* Select the star icon to [favorite a dashboard or report](end-user-favorite.md) ![star icon](./media/end-user-shared-with-me/power-bi-star-icon.png).
+* Select the star icon to [favorite a dashboard, report, or app](end-user-favorite.md) ![star icon](./media/end-user-shared-with-me/power-bi-star-icon.png).
 * Some dashboards and reports can be re-shared  ![share icon](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
 * [Open the report in Excel](end-user-export.md) ![export to Excel icon](./media/end-user-shared-with-me/power-bi-excel.png) 
 * [View insights](end-user-insights.md) that Power BI finds in the data ![insights icon](./media/end-user-shared-with-me/power-bi-insights.png).
@@ -47,7 +47,7 @@ The actions available to you will depend on the settings assigned by the content
 
 
 ## Next steps
-[Power BI service Apps](end-user-apps.md)
+[Power BI service apps](end-user-apps.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
