@@ -59,7 +59,7 @@ Generally, the following bulleted list describes transformations that prevent qu
 - Adding index columns
 - Changing a column data type
 
-Note that when a Power Query query encompasses multiple data sources, incompatibility of data source privacy levels can prevent query folding from taking place. For more information, read the [Power BI Desktop privacy levels](../desktop-privacy-levels) article.
+Note that when a Power Query query encompasses multiple data sources, incompatibility of data source privacy levels can prevent query folding from taking place. For more information, read the [Power BI Desktop privacy levels](../desktop-privacy-levels.md) article.
 
 ## Determining when a query can be folded
 
@@ -85,7 +85,7 @@ The following bulleted list provides best practice guidance.
 
 For a relational data source, if the step that prevents query folding could be achieved in a single SELECT statement, or within the procedural logic of a stored procedure, consider using a native query statement, as described next.
 
-- **Use a native SQL query:** When a Power Query query retrieves data from a relational source, it is possible to use a native SQL query. The query can in fact be any valid statement, including a stored procedure execution. If the statement produces multiple result sets, only the first will be returned. Parameters can be declared in the statement, and we recommend that you use the [Value.NativeQuery](../powerquery-m/value-nativequery) M function to safely and conveniently pass parameter values. Note that if the Power Query query is for a DirectQuery model table, the query must be a SELECT statement, and it cannot use Common Table Expressions (CTEs).
+- **Use a native SQL query:** When a Power Query query retrieves data from a relational source, it is possible to use a native SQL query. The query can in fact be any valid statement, including a stored procedure execution. If the statement produces multiple result sets, only the first will be returned. Parameters can be declared in the statement, and we recommend that you use the [Value.NativeQuery](/powerquery-m/value-nativequery) M function to safely and conveniently pass parameter values. Note that if the Power Query query is for a DirectQuery model table, the query must be a SELECT statement, and it cannot use Common Table Expressions (CTEs).
 
 >>> [!IMPORTANT]
 >>> A native query can potentially do more than retrieve data. Any valid statement can be executed, including one that modifies or deletes data. It is important to apply the principle of least privilege to ensure that the account used to access the database has only read permission on required data.
@@ -96,7 +96,7 @@ For a relational data source, if the step that prevents query folding could be a
 
 For more information about Query Folding and related topic, check out the following resources:
 
-- [Use composite models in Power BI Desktop](../desktop-composite-models)
-- [Incremental refresh in Power BI Premium](../service-premium-incremental-refresh)
-- [Using Table.View to Implement Query Folding](../power-query/handlingqueryfolding)
+- [Use composite models in Power BI Desktop](../desktop-composite-models.md)
+- [Incremental refresh in Power BI Premium](../service-premium-incremental-refresh.md)
+- [Using Table.View to Implement Query Folding](/power-query/handlingqueryfolding)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
