@@ -13,7 +13,7 @@ ms.date: 09/23/2019
 
 # What's new in Power BI Report Server
 
-Learn about what's new in Power BI Report Server and Power BI Desktop optimized for Power BI Report Server. This article covers the major feature areas and is updated as new items are released.
+Learn about what's new in Power BI Report Server ,and Power BI Desktop optimized for Power BI Report Server. This article covers the major feature areas and is updated with each new release.
 
 For related Power BI "What's New" information, see:
 
@@ -25,7 +25,7 @@ For related Power BI "What's New" information, see:
 
 See the Power BI Report Server September 2019 blog post for details about all the new features.
 
-The September 2019 update of Power BI Report Server is packed with lots of Power BI report features, including visual level filters for slicers, icon sets, grouping for visuals, and new default themes. In this release, you also see the new updated pane design, the new filtering experience, and more conditional formatting options. Read on to learn more about the new features and many other new capabilities.
+The September 2019 update of Power BI Report Server is packed with lots of Power BI report features. Here are some of the highlights:
 
 - **Visual-level filters for slicers** You can add a visual-level filter to slicers. It works like any other visual-level filter, just filtering the slicer itself and no other visuals. This filter is for useful for filtering out blanks or if you want to use measure filters.
 - **Icon sets for table and matrix** With KPI icons, you can set up rules for showing different sets of icons in your table and matrix, similar to icon sets in Excel.
@@ -33,6 +33,7 @@ The September 2019 update of Power BI Report Server is packed with lots of Power
 - **New default themes** To go along with the new theme JSON options, we are updating the themes available for reports, and changing the default theme for new reports. The new default theme both aligns better with Microsoft's design language and follows best design practices for visuals. 
 - **Updated pane design** We've refreshed much of our interface. We've updated all the panes, the footer, and view switcher to be a lighter color, updated spacing, and introduced new icons. The new design is the first step to refreshing the entire interface.
 
+Here's the complete list of features. 
 
 ### Reporting
 
