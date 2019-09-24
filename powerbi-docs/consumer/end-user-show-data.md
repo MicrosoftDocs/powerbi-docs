@@ -12,11 +12,13 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Show the data that was used to create the visual
+# Show data with Power BI reports
 
-A Power BI visual is constructed using data from underlying datasets. If you're interested in seeing behind-the-scenes, the Power BI service lets you *display* the data that is being used to create the visual. When you select **Show Data**, Power BI displays the data below (or next to) the visual.
+A Power BI visual is constructed using data from underlying datasets. If you're interested in seeing behind-the-scenes, the Power BI service lets you *display* the data that is being used to create a visual in a report. When you select **Show Data**, Power BI displays the data below (or next to) the visual.
 
+On a dashboard, to see the underlying data, use [Export to Excel](end-user-export.md)
 
+## Show the data being used to create a report visual
 1. In the Power BI service, [open a report](end-user-report-open.md) and select a visual.  
 2. To display the data behind the visual, select the ellipses (...) and choose **Show data**.
    
