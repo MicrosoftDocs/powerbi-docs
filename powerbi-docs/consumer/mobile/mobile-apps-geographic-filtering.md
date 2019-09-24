@@ -7,7 +7,7 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 02/09/2018
+ms.date: 09/24/2019
 ms.author: mshenhav
 
 ---
@@ -21,7 +21,7 @@ Applies to:
 When you look at a Power BI report on your mobile device, do you see a little pushpin icon in the upper-right corner? If so, then you can filter that report based on your geographic location.
 
 > [!NOTE]
-> You can only filter by location if the geographic names in the report are in English&#150;for example, "New York City" or "Germany". Windows 10 tablets and PCs don't support geographic filtering, but Windows 10 phones do.
+> You can only filter by location if the geographic names in the report are in English; for example, "New York City" or "Germany". Windows 10 tablets and PCs don't support geographic filtering, but Windows 10 phones do.
 > 
 > 
 
@@ -39,7 +39,7 @@ All three of these conditions need to be true, for you to see location tags.
 * You are in one of the locations that has data in that column.
 * You're using one of these mobile devices:
   * iOS (iPad, iPhone, iPod).
-  * Android phone or tablet.
+  * Android phone.
   * Windows 10 phone (other Windows 10 devices such as PCs and tablets don't support geographic filtering).
 
 Read more about [setting up geographic filtering](../../desktop-mobile-geofiltering.md) in Power BI Desktop.
