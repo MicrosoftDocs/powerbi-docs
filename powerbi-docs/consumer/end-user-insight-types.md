@@ -46,7 +46,7 @@ Detects cases where data points are not far from the mean.
 ## Majority (Major factors)
 Finds cases where a majority of a total value can be attributed to a single factor when broken down by another dimension.  
 
-![Major fators example](./media/end-user-insight-types/pbi_auto_insight_types_majority.png)
+![Major factors example](./media/end-user-insight-types/pbi_auto_insight_types_majority.png)
 
 ## Overall trends in time series
 Detects upward or downward trends in time series data.
