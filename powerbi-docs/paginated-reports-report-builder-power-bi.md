@@ -73,10 +73,10 @@ For details, see the article [Subscribe yourself and others to paginated reports
 Here are some other features that aren't supported in the initial release:
 
 - Pinning report pages or visuals to Power BI dashboards. You can still pin visualizations to a Power BI dashboard from an on-premises paginated report on a Power BI Report Server or Reporting Services report server. See [Pin Reporting Services items to Power BI dashboards](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards) for more information.
-- Interactive features such as document maps and show/hide buttons.
-- Subreports and drillthrough reports.
+- Document Maps.
+- Subreports and drillthrough reports.  You may consider using URL parameters with paginated reports to achieve drillthrough scenarios, however.
 - Shared data sources and shared datasets.
-- Visuals from Power BI reports.
+
  
 ## Next steps
 
