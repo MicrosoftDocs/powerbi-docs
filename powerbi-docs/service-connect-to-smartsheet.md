@@ -18,7 +18,7 @@ This article walks you through pulling your data from your Smartsheet account wi
 
 After you've installed the template app, you can change the dashboard and report. Then you can distribute it as an app to colleagues in your organization.
 
-Connect to the [Smartsheet template app](https://app.powerbi.com/groups/me/getdata/services/smartsheet) for Power BI.
+Connect to the [Smartsheet template app](https://app.powerbi.com/groups/me/getapps/services/pbi-contentpacks.pbiapps-smartsheet) for Power BI.
 
 >[!NOTE]
 >A Smartsheet admin account is preferred for connecting and loading the Power BI template app as it has additional access.
