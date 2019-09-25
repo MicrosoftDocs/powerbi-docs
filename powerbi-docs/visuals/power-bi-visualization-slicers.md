@@ -15,6 +15,9 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 # Slicers in Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 You want your report readers to be able to look at overall sales metrics, but also highlight performance for individual District Managers and different time frames. You could create separate reports or comparative charts, or you could use slicers. A slicer is an alternate way of filtering that narrows the portion of the dataset shown in the other visualizations in a report. 
 
 This tutorial uses the free [Retail Analysis Sample](../sample-retail-analysis.md) to walk you through creating, formatting, and using list and date range slicers. Have fun discovering ways to format and use slicers. 
@@ -32,24 +35,23 @@ Slicers are a great choice when you want to:
 Power BI slicers have the following limitations:
 
 - Slicers do not support input fields.
-- Slicers cannot be pinned to a dashboard.
 - Drilldown is not supported for slicers.
 - Slicers do not support visual level filters.
 
 ## Create slicers
 
-To create a new slicer, you can select the slicer icon and then select the data field to filter on (or drag it to the **Filters** box in the **Visualizations** pane), or you can select or drag the data field first to create a visualization, and then select the slicer icon to turn the visualization into a slicer. Different data types create different types of slicers, with different effects and options. 
-
-The first time you change a report, the button for **Reset to default** lights up. This is a reminder that you've made a change to the original report settings. If you navigate away from the report, that change is saved (persists). When you return to the report you don't have to re-slice the report.  However, if you'd like to reset the report to the author's default settings, select the **Reset to default** button from the top menubar.
-
-![revert to default button](media/power-bi-visualization-slicers/power-bi-reset-to-default.png)
-
-> [!NOTE]
-> If your **Reset to default** button remains disabled, it either means the report author has disabled the feature for the report or the report contains a custom visual. Simply hover over the button to read the tooltip for an explanation. 
-
 **Create a new slicer to filter data by District Manager**
 
-1. In Power BI Desktop or the Power BI service, open the [Retail Analysis Sample](../sample-retail-analysis.md). (In Power BI service, select **Edit Report** at upper left.)
+This tutorial uses the [Retail Analysis sample PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+
+1. From the upper left section of the menubar, select **File** > **Open**
+   
+2. Find your copy of the **Retail Analysis sample PBIX file**
+
+1. Open the **Retail Analysis sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+
 2. On the Overview page, with nothing selected on the canvas, select the **Slicer** icon ![slicer icon](media/power-bi-visualization-slicers/slicer-icon.png) in the **Visualizations** pane to create a new slicer. 
 3. With the new slicer selected, from the Fields pane, select **District** > **DM** to populate the slicer. The new slicer is a list with selection boxes before the names. 
     
@@ -66,7 +68,7 @@ The first time you change a report, the button for **Reset to default** lights u
 
 **To create a new slicer to filter data by date range**
 
-1. With nothing selected on the canvas, drop down **Date** in the Fields pane, and drag **Date** to the **Values** box in the Visualizations pane to create a new visualization.
+1. With nothing selected on the canvas, drop down **Store** in the Fields pane, and drag **OpenDate** to the **Values** well in the Visualizations pane to create a new visualization.
 2. With the new visualization selected, select the **Slicer** icon to convert the new visualization to a slicer. This slicer is a slider control with the date range populated.
     
     ![new range slicer](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
@@ -79,12 +81,16 @@ The first time you change a report, the button for **Reset to default** lights u
     >Numeric and date/time data types produce range slider slicers by default. Starting with the February 2018 Power BI update, whole number data type range sliders now snap to whole number values rather than showing decimal places. 
 
 
-5. Now change the Field value from **Date** to **MonthIndex**.  This produces a **Between** range slider slicer type by default, but you can change it to other slicer types and selection options. To change the slicer type, with the slicer selected, hover over the upper-right area of the slicer, drop down the carat that appears, and choose one of the other options, such as **List** or **Before**. Note how the slicer appearance and selection options change. 
+5. To change the slicer type, with the slicer selected, hover over the upper-right area of the slicer, drop down the carat that appears, and choose one of the other options, such as **List** or **Before**. Note how the slicer appearance and selection options change. 
  
     ![new range slicer](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
 
 
 For more about creating date and numeric range slicers, watch the following video and see [Use the numeric range slicer in Power BI Desktop](../desktop-slicer-numeric-range.md).
+   > [!NOTE]
+   > This video uses an older version of Power BI Desktop.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 
 
 ## Control which page visuals are affected by slicers
@@ -92,9 +98,8 @@ By default, slicers on report pages affect all the other visualizations on that 
 
 You can use **Visual interactions** to exclude some page visualizations from being affected by others. On the **Overview** page, the "Total Sales Variance by FiscalMonth and District Manager" chart shows overall comparative data for District Managers by Month, which you want to keep visible at all times. You can use **Visual interactions** to keep slicer selections from filtering this chart. 
 
-1. With the District Manager slicer selected:
+1. With the District Manager slicer on the **District Monthly Sales** page selected:
     - In Power BI Desktop, select the **Format** menu under **Visual Tools** and select **Edit interactions**.
-    - In Power BI service, drop down **Visual interactions** from the menu bar and turn on **Edit interactions**. 
    
    Filter controls ![filter controls](media/power-bi-visualization-slicers/filter-controls.png) appear above all the other visuals on the page. Initially, all the **Filter** icons are selected.
    
@@ -108,8 +113,8 @@ Starting with the February 2018 Power BI update, you can sync a slicer and use i
 
 In the current report, the **District Monthly Sales** page also has a **District Manager** slicer, but it is not synced with the one you created on the **Overview** page (the two slicers can have different item selections). The **New Stores** page has only a **Store Name** slicer. You can sync your new **District Manager** slicer to these pages, so that slicer selections on any page affect visualizations on all three pages. 
 
-1. On the **View** menu, select **Sync slicers** in Power BI Desktop (or turn on **Sync slicers pane** in Power BI service). The **Sync Slicers** pane appears. 
-2. On the **Overview** page, select the **District Manager** slicer. Note that the **District Monthly Sales** page is already selected in the **Visible** column, because there is also a District Manager slicer on that page, but it is not selected in the **Sync** column. 
+1. On the **View** menu, select **Sync slicers** in Power BI Desktop. The **Sync Slicers** pane appears. 
+2. On the **District Monthly Sales** page, select the **District Manager** slicer. Note that the **District Monthly Sales** page is already selected in the **Visible** column, because there is also a District Manager slicer on that page, but it is not selected in the **Sync** column. 
     
     ![sync slicers](media/power-bi-visualization-slicers/9-sync-slicers.png)
     
@@ -159,10 +164,10 @@ See [Create a responsive slicer you can resize in Power BI](../power-bi-slicer-f
     
 2. **Single Select** is **On** by default. Clicking or tapping each item selects it, and holding down the **Ctrl** key while clicking or tapping selects multiple items. Turn **Single Select** to **Off** to allow selecting multiple items without holding down the **Ctrl** key. Clicking or tapping each item again deselects it. 
 
-### Header options
-The **Header** is **On** by default, showing the data field name at the top of the slicer. 
-1. Format the header text to make the **Font color** red, **Text size** 14 pt, and **Font family** Arial Black. 
-2. Under **Outline**, choose **Bottom only** to produce an underline with the size and color that you set under **General** options. 
+### Title options
+The **Title** is **On** by default, showing the data field name at the top of the slicer. 
+1. Format the title text to make the **Font color** red, **Text size** 14 pt, center **Alignment** and **Font family** Arial Black. 
+
 
 ### Item options (list slicers only)
 1. Format item text and background to make the **Font color** black, **Background** light red, **Text size** 10 pt, and **Font family** Arial. 
@@ -180,7 +185,6 @@ The **Header** is **On** by default, showing the data field name at the top of t
 
 ### Other formatting options
 The other formatting options are off by default. When turned **On**: 
-- **Title:** Adds and formats a title (in addition to and independent of the header) at the top of the slicer. 
 - **Background:** Adds a background color to the overall slicer and sets its transparency.
 - **Lock aspect:** Retains the shape of the slicer if it is resized.
 - **Border:** Adds a 1-pixel border around the slicer and sets its color. (This slicer border is separate from and unaffected by the General Outline settings.) 

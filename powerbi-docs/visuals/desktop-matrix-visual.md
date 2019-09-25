@@ -14,9 +14,12 @@ LocalizationGroup: Visualizations
 ---
 
 # Use the Matrix visual in Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 The **matrix** visual is similar to a **table**.  A table supports two dimensions and the data is flat, meaning duplicate values are displayed and not aggregated. A matrix makes it easier to display data meaningfully across multiple dimensions -- it supports a stepped layout. The matrix automatically aggregates the data and enables drill down. 
 
-You can create matrix visuals in **Power BI Desktop** and **Power BI service** reports and cross-highlight elements within the matrix with other visuals on that report page. For example, you can select rows, columns, and even individual cells and cross-highlight. Also, individual cells and multiple cell selections can be copied and pasted into other applications. 
+You can create matrix visuals in **Power BI Desktop** reports and cross-highlight elements within the matrix with other visuals on that report page. For example, you can select rows, columns, and even individual cells and cross-highlight. Also, individual cells and multiple cell selections can be copied and pasted into other applications. 
 
 ![cross highlighted matrix and doughnut chart](media/desktop-matrix-visual/matrix-visual_2a.png)
 
@@ -104,7 +107,7 @@ To drill down on columns, select **Columns** from the *Drill on* menu that can b
 
 ![menu for drill down for columns](media/desktop-matrix-visual/power-bi-matrix-column.png)
 
-When you select **Drill Down**, the next level of the column hierarchy for *Region > East* displays, which in this case is *Opportunity count*. The other region displays, but is greyed out.
+When you select **Drill Down**, the next level of the column hierarchy for *Region > East* displays, which in this case is *Opportunity count*. The other region is hidden.
 
 ![matrix with column drill down one level](media/desktop-matrix-visual/power-bi-matrix-column-drill.png)
 

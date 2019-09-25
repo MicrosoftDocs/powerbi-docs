@@ -13,6 +13,9 @@ LocalizationGroup: Transform and shape data
 ---
 
 # Shape Maps in Power BI Desktop (Preview)
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Create a **Shape Map** visual to compare regions on a map using color. Unlike the **Map** visual, **Shape Map** can't show precise geographical locations of data points on a map. Instead,  its main purpose is to show relative comparisons of regions on a map by coloring them differently.
 
 **Shape Map** visuals are based on ESRI/TopoJSON maps, which have the compelling ability to use custom maps that you can create. Examples of custom maps are: geographical, seating arrangements, floor plans, and others. The ability to use custom maps is not available in this Preview release of **Shape Map**.
