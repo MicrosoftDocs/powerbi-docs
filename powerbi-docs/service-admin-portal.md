@@ -523,7 +523,7 @@ On the **Workspaces** tab, you see the *state* for each workspace. The following
 
 |State  |Description  |
 |---------|---------|
-| Active | normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
+| Active | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
 | Orphaned | A workspace with no admin user. |
 | Deleted | A deleted workspace. We maintain enough metadata to restore the workspace if desired. |
 | Removing | A workspace in the process of being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
