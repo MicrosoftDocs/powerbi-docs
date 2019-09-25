@@ -11,3 +11,5 @@
 **Question:** Does RLS let me hide detailed data but give access to data summarized in visuals?  
 **Answer:** No, you secure individual rows of data but users can always see either the details or the summarized data.
 
+**Question:** My data source already has security roles defined (for example SQL Server roles or SAP BW roles). What is the relationship between these and RLS?  
+**Answer:** If you are importing data into your Power BI dataset you'll need to define RLS to represent the security rules that should be applied when users connect. If you are using DirectQuery the security roles in your data source are still respected; when a user opens the Power BI report a query is sent to the underlying data source which applies security rules to the data based on the user's credentials.
