@@ -25,12 +25,12 @@ However, when your Power BI Desktop file contains many queries, retrieving and s
 
 You can achieve a faster refresh by setting the Power BI Desktop file to update the preview cache in the background. In Power BI Desktop select File > Options and settings > Options, and then select the Data Load page. Then turn on the **Allow data preview to download in the background** option. Note that this option can only be set for the current file.
 
-![Power BI Desktop background data options](media/power-query-options-background-data.png)
+![Power BI Desktop background data options](media/power-query-background-refresh/power-query-options-background-data.png)
 
 Turning on this option can result in the preview data becoming out of date. When this occurs, the Power Query Editor will notify you with a warning like the following:
 
-![Power Query Editor warning about old preview data](media/power-query-preview-data-old.png)
+![Power Query Editor warning about old preview data](media/power-query-background-refresh/power-query-preview-data-old.png)
 
 It is always possible to update the preview cache for a single query or for all queries by using the **Refresh Preview** command on the **Home** ribbon of the Power Query Editor window.
 
-![Power Query Editor commands to refresh preview data](media/power-query-refresh-preview-data.png)
+![Power Query Editor commands to refresh preview data](media/power-query-background-refresh/power-query-refresh-preview-data.png)
