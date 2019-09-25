@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/20/2019
+ms.date: 09/25/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -518,6 +518,15 @@ By default, data used with Power BI is stored in internal storage provided by Po
 As an administrator, you can view the workspaces that exist in your tenant. You can sort and filter the list of workspaces and display the details for each workspace. The table columns correspond to the properties returned by the [Power BI admin Rest API](/rest/api/power-bi/admin) for workspaces. Personal workspaces are of type **PersonalGroup**, classic workspaces are of type **Group**, and the new workspace experience workspaces are of type **Workspace**. For more information, see [Create the new workspaces in Power BI](service-create-the-new-workspaces.md).
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
+
+On the **Workspaces** tab, you see the *state* for each workspace. The following table gives more details about the meaning of those states.
+
+|State  |Description  |
+|---------|---------|
+| Active | normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
+| Orphaned | A workspace with no admin user. |
+| Deleted | A deleted workspace. We maintain enough metadata to restore the workspace if desired. |
+| Removing | A workspace in the process of being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
 
 ## Custom branding
 
