@@ -20,9 +20,9 @@ Use the instructions in [Get an Azure AD access token for your Power BI applicat
 The following table lists the considerations you need to take into account when generating the token.
 
 
-| Solution type                   | Token                               | Requirements                                                                                                                                                  |
+| Solution                   | Token                               | Requirements                                                                                                                                                  |
 |---------------------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Embedding for your organization* | Access token for Power BI users     | The user who’s Azure AD token is used, must have appropriate permissions for all artifacts                                                                    |
+| *Embedding for your organization* | Access token for Power BI users     | The user who’s Azure AD token is used, must have appropriate permissions for all artifacts.                                                                    |
 | *Embedding for your customers*    | Access token for non-Power BI users | Must include permissions for both the report and the dynamically bound dataset. Use the new API to generate an embed token which supports multiple artifacts. |
 ## Adjust the config objexct
 Add `datasetBinding` to the config object. Use the example at the bottom of the page as a reference.
