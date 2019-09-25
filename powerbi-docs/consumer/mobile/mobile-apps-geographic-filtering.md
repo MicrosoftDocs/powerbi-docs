@@ -16,7 +16,7 @@ Applies to:
 
 | ![iPhone](./media/mobile-apps-geographic-filtering/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-geographic-filtering/ipad-logo-50-px.png) | ![Android phone](./media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png) | ![Android tablet](./media/mobile-apps-geographic-filtering/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhones |iPads |Android phones |Windows 10 devices |
+| iPhones |iPads |Android phones |Windows 10 phones |
 
 When you look at a Power BI report on your mobile device, do you see a little pushpin icon in the upper-right corner? If so, then you can filter that report based on your geographic location.
 
