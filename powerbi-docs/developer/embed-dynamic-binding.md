@@ -7,25 +7,29 @@ manager: rkarlin
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.date: 25/09/2019
+ms.date: 09/25/2019
 ---
 
 # Dynamic binding
 
 Dynamic binding allows embedding one report across multiple datasets with the same data schema. When using dynamic binding the report is dynamically connected to multiple datasets, and it displays different results for end users, depending on the dataset it's connected to. 
 
-## Embedding using dynamic binding
+## Generate a token
+Use the instructions in [Get an Azure AD access token for your Power BI application](get-azuread-access-token.md), to generate a token.
 
-1. Generate a token. For step-by-step instructions, see [Get an Azure AD access token for your Power BI application](get-azuread-access-token.md).
->> [!NOTE]
->> There are two types of tokens:
->> * **Access token for Power BI users** - use if you're solution requires *embedding for your organization*
->> * **Access token for non-Power BI users** - use if your solution requires *embedding for your customers*
-2. Add `datasetBinding` to the config object. Use the example at the bottom of the page as a reference.
-> [!NOTE]
-> If you're new to embedding in Power BI, review these tutorials to learn how to embed your Power BI content:
-> * [Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
-> * [Tutorial: Embed Power BI content into an application for your organization](embed-sample-for-your-organization.md)
+The following table lists the considerations you need to take into account when generating the token.
+
+
+| Solution type                   | Token                               | Requirements                                                                                                                                                  |
+|---------------------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Embedding for your organization* | Access token for Power BI users     | The user who’s Azure AD token is used, must have appropriate permissions for all artifacts                                                                    |
+| *Embedding for your customers*    | Access token for non-Power BI users | Must include permissions for both the report and the dynamically bound dataset. Use the new API to generate an embed token which supports multiple artifacts. |
+## Adjust the config objexct
+Add `datasetBinding` to the config object. Use the example at the bottom of the page as a reference.
+
+If you're new to embedding in Power BI, review these tutorials to learn how to embed your Power BI content:
+* [Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
+* [Tutorial: Embed Power BI content into an application for your organization](embed-sample-for-your-organization.md)
 
  ### Example
 ```javascript
