@@ -12,10 +12,10 @@ ms.date: 09/25/2019
 
 # Dynamic binding
 
-Dynamic binding allows embedding one report across multiple datasets with the same data schema. When using dynamic binding the report is dynamically connected to multiple datasets, and it displays different results for end users, depending on the dataset it's connected to. 
+Dynamic binding allows embedding a report across multiple datasets with the same data schema. End users see different results, depending on the dataset the report is connected to.
 
 ## Generate a token
-Use the instructions in [Get an Azure AD access token for your Power BI application](get-azuread-access-token.md), to generate a token.
+To generate a token, use the instructions in [Get an Azure AD access token for your Power BI application](get-azuread-access-token.md).
 
 The following table lists the considerations you need to take into account when generating the token.
 
