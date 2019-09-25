@@ -24,7 +24,7 @@ The following table lists the considerations you need to take into account when 
 |---------------------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *Embedding for your organization* | Access token for Power BI users     | The user who’s Azure AD token is used, must have appropriate permissions for all artifacts.                                                                    |
 | *Embedding for your customers*    | Access token for non-Power BI users | Must include permissions for both the report and the dynamically bound dataset. Use the new API to generate an embed token which supports multiple artifacts. |
-## Adjust the config objexct
+## Adjust the config object
 Add `datasetBinding` to the config object. Use the example at the bottom of the page as a reference.
 
 If you're new to embedding in Power BI, review these tutorials to learn how to embed your Power BI content:
