@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 06/06/2019
+ms.date: 09/24/2019
 ---
 
 # What are paginated reports in Power BI Premium?
@@ -31,14 +31,13 @@ Paginated reports have their own design tool, Power BI Report Builder. It's a ne
 
 A single paginated report can have a number of different data sources. It doesn't have an underlying data model, unlike Power BI reports. For the initial release of paginated reports in the Power BI service, you create embedded data sources and datasets in the report itself. For now, you can't use shared data sources or shared datasets. You create reports in Report Builder on your local computer. If a report connects to on-premises data, after you upload the report to the Power BI service, you need to create a gateway and redirect the data connection. Here are the data sources you can connect to at this time:
 
-- Azure SQL Database and Data Warehouse
+- Azure SQL Database and Data Warehouse (via Basic and oAuth)
 - Azure Analysis Services (via SSO)
 - SQL Server via a gateway
 - SQL Server Analysis Services via a gateway
-- Power BI Premium Datasets
+- Power BI Datasets
 - Oracle
 - Teradata
-- Additional sources as they're added
 
 ## Design your report  
 
