@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/08/2019
+ms.date: 09/18/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
 # Use cross-report drillthrough in Power BI Desktop
 
-With the cross-report drillthrough feature in Power BI Desktop, you can contextually jump from one report to another report. This is true as long as the reports are within the same workspace or app in the Microsoft Power BI service. Use cross-report drillthrough to connect two or more reports that have related content, and to pass the filter context along with the cross-report connection. In this article, you learn how to set up a cross-report drillthrough for Power BI reports, and what users experience when they use the cross-report drillthrough for themselves.
+With the cross-report drillthrough feature in Power BI Desktop, you can contextually jump from one report to another report. This is true as long as the reports are within the same workspace or app in the Power BI service. Use cross-report drillthrough to connect two or more reports that have related content, and to pass the filter context along with the cross-report connection. In this article, you learn how to set up a cross-report drillthrough for Power BI reports, and what users experience when they use the cross-report drillthrough for themselves.
 
 ![Screenshot of Power BI Desktop drillthrough option](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 
@@ -25,6 +25,11 @@ The following definitions are important to understand, before we begin setting u
 * **Source report:** The report that contains the source visual for cross-report drillthrough.
 * **Target page:** The page that a user lands on after initiating a drillthrough action.
 * **Target report:** The report that contains the target page for cross-report drillthrough.
+
+
+> [!NOTE]
+> With the cross-report drillthrough feature in Power BI Desktop, you can contextually jump from one report to another report. This is true as long as the reports are within the same workspace or app in the Power BI service. This is not applicable when accessing individually shared reports within *My Workspace* ([Shared with me reports](service-share-dashboards.md#share-a-dashboard-or-report)); instead, you need to access the report in the workspace from which it was originally shared.
+
 
 ## Enable cross-report drillthrough
 

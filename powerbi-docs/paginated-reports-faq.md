@@ -7,8 +7,8 @@ manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: overview
-ms.date: 07/15/2019
+ms.topic: conceptual
+ms.date: 09/04/2019
 ---
 
 # Paginated reports in Power BI: FAQ 
@@ -21,11 +21,11 @@ This article answers many common questions people have about paginated reports i
 
 ### What size Premium capacity do I need for paginated reports?
 
-The paginated reports workload is available on P1 – P3 SKUs.  You may also use it with A4 – A6 SKUs for SaaS embed scenarios.
+The paginated reports workload is available on P1 – P3 SKUs.  You may also use it with A4 – A6 SKUs for embed or test/dev scenarios.
 
 ### What is the maximum memory threshold I can put for paginated reports in my capacity?
 
-You may use up to 100% of the memory for this workload by the end of June 2019. 
+You may use up to 100% of the memory for this workload.
 
 ### How does user access work for paginated reports?
 
@@ -147,7 +147,7 @@ You can export to Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF, .C
 
 Yes, printing is available for paginated reports, including a new and improved print preview experience. 
 
-### Are e-mail subscriptions available yet for paginated reports?
+### Are e-mail subscriptions available for paginated reports?
 
 Yes, e-mail subscriptions are fully supported for paginated reports and include support for six different file formats and parameter values.
 
@@ -161,7 +161,7 @@ SaaS embedding is already supported. PaaS embedding is not currently supported.
 
 ### Can I drill through from a Power BI report to a paginated report?
 
-Not yet, but we absolutely plan to support this scenario.
+Yes, this can be accomplished using URL parameters with your paginated reports.
 
 ### Can I share my paginated report content through a Power BI app?
 

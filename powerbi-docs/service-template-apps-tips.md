@@ -121,7 +121,6 @@ Template apps can be published on AppSource, follow these guidelines before subm
 
 * Make sure you create a template app with engaging sample data that can help the installer understand what the app can do (empty report & dashboard aren't approved).
 Template apps support sample data only apps, make sure to check the static app checkbox. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.
 * Have instruction for the validation team to follow which includes credentials and parameters that are required to connect to data.
 * Application must include an App icon in Power BI and on your CPP offer. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Landing page configured. [Learn more](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
@@ -130,6 +129,7 @@ Template apps support sample data only apps, make sure to check the static app c
 * Install the app using the app link before submitting it, make sure you can connect the dataset and the app experience is as you planned.
 * Before uploading bpix into the template app workspace, make sure to unload any unnecessary connections.
 * Follow Power BI [Best design practices for reports and visuals](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) to achieve maximum impact on your users and getting approved for distribution.
+<!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
 ## Known limitations
 

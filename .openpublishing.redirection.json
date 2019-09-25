@@ -1,8 +1,8 @@
 {
     "redirections": [
         {
-            "source_path": "powerbi-docs/service-admin-power-bi-archived-workspace.md",
-            "redirect_url": "/power-bi/service-admin-administering-power-bi-in-your-organization",
+            "source_path": "powerbi-docs/service-gateway-sso-kerberos-resource.md",
+            "redirect_url": "/power-bi/service-gateway-sso-kerberos",
             "redirect_document_id": false
         } ,
         {
@@ -686,6 +686,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/service-dashboard-add-image.md",
+            "redirect_url": "/power-bi/service-dashboard-add-widget",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/service-dashboard-favorite.md",
             "redirect_url": "/power-bi/consumer/end-user-favorite",
             "redirect_document_id": true
@@ -873,11 +878,6 @@
         {
             "source_path": "powerbi-docs/spark-on-hdinsight-with-direct-connect.md",
             "redirect_url": "/power-bi/desktop-directquery-data-sources",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "powerbi-docs/service-admin-premium-manage.md",
-            "redirect_url": "/power-bi/service-premium",
             "redirect_document_id": false
         },
         {

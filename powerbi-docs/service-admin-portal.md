@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/25/2019
+ms.date: 09/20/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -43,6 +43,7 @@ There are nine tabs in the portal. The rest of this article provides information
 * [Organization visuals](#organizational-visuals)
 * [Dataflow storage (preview)](#dataflowStorage)
 * [Workspaces](#workspaces)
+* [Custom branding](#custom-branding)
 
 ## Usage metrics
 
@@ -518,7 +519,22 @@ As an administrator, you can view the workspaces that exist in your tenant. You 
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
+## Custom branding
 
+As an administrator, you can customize the look of Power BI for your whole organization. Currently there are three main options:
+
+![Custom branding options](media/service-admin-portal/power-bi-custom-branding.png)
+
+* **Upload Logo**: For best results, upload a logo that's saved as a .png, 10 KB or smaller, and at least 200 x 30 pixels.
+
+* **Upload Cover image**: For best results, upload a cover image that's saved as a .jpg or .png, 1 MB or smaller, and at least 1920 x 160 pixels.
+
+* **Select Theme color**: You are able to select your theme based on a hex #, RGB, value, or from the provided pallet.
+
+
+For more information, see [Custom branding for your organization](http://aka.ms/orgBranding).
+
+![Workspaces list](media/service-admin-portal/workspaces-list.png)
 ## Next steps
 
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  

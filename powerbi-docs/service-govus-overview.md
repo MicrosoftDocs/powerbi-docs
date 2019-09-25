@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/26/2019
+ms.date: 09/09/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -44,7 +44,7 @@ Azure is distributed among multiple clouds. By default, tenants are allowed to o
 * USGov Texas
 * USGov Arizona
 
-In the public cloud the IP spaces are available. For the government cloud, please refer to the downloadable [Azure government service documentation](https://www.microsoft.com/download/details.aspx?id=57063) for the latest information.
+In the public cloud the IP spaces are available. For the government cloud, please refer to the downloadable [Azure Government service documentation](https://www.microsoft.com/download/details.aspx?id=57063) for the latest information.
 
 ## Limitations of Power BI US Government
 Some of the features that are available in the commercial version of the **Power BI service** are *not* available in the **Power BI service** for US Government customers. The Power BI team is actively working on making these features available to US Government customers, and will update this article when these features become available.
@@ -81,13 +81,13 @@ The following questions (and answers) are provided to help you quickly get infor
 
 **Answer:** Signing up (often called *onboarding*) might differ based on your existing license and subscription. See the [Sign Up for Power BI US Government](service-govus-signup.md) article for more information.
 
-**Question:** Is the URL for connecting to **Power BI** for US Government different than the commercial **Power BI** URL?
+**Question:** Is the URL for connecting to **Power BI** for US Government different than the commercial **Power BI** URL? Is there a different URL for Government Community Cloud High (GCC High) customers?
 
 **Answer:** Yes, the URLs are different. The following table shows each URL:
 
-| Commercial version URL | US Government version URL |
-| --- | --- |
-| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
+| Commercial version URL | US Government version URL | US Government URL for GCC High |
+| --- | --- | --- |
+| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
 
 **Question:** My account is provisioned in more than one national cloud. When using **Power BI Desktop**, how do I select which cloud to connect to?
 

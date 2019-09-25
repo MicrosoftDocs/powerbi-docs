@@ -15,7 +15,7 @@ ms.devlang: ''
 ms.topic: article
 ms.tgt_pltfrm: ''
 ms.workload: ''
-ms.date: 12/19/2014
+ms.date: 09/12/2019
 ms.author: mblythe
 
 ---
@@ -32,7 +32,7 @@ ms.author: mblythe
 * [File names and locations for Power BI technical articles](file-names-and-locations.md)
 * [Linking guidelines](create-links-markdown.md)
 * [Retire or rename an article](retire-or-rename-an-article.md)
-* [Search page guidance, aka SEO](powerbi-search-page-guidance.md)
+* [Search page guidance, also known as SEO](powerbi-search-page-guidance.md)
 
 ## Authoring articles: markdown
 * [Markdown basics](https://help.github.com/articles/markdown-basics/)

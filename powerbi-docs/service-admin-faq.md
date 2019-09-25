@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 09/09/2019
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -35,6 +35,7 @@ This article addresses frequently asked questions for Power BI administration. F
 
 * [How will this change the way I manage identities for users in my organization today?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [How do we manage Power BI?](#how-do-we-manage-power-bi)
+* [What is the process to manage a tenant created by Microsoft for my users?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
 * [If I have multiple domains, can I control the Office 365 tenant that users get added to?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to)
 * [How do I remove Power BI for users that already signed up?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [How do I know when new users have joined my tenant?](#how-do-i-know-when-new-users-have-joined-my-tenant)
@@ -116,9 +117,9 @@ Get-MsolCompanyInformation | fl allow*
 
 ### How can I prevent my existing users from starting to use Power BI?
 
-The Azure AD setting that controls this is **AllowAdHocSubscriptions**. Most tenants have this set to true, which means it's enabled. If you acquired Power BI through a partner, this may be set to false, which means it's disabled.
+The Azure AD setting that controls this is **AllowAdHocSubscriptions**. Most tenants have this set to *true*, which means it's enabled. If you acquired Power BI through a partner, this may be set to *false*, which means it's disabled.
 
-Use the following PowerShell script to disable ad hoc subscriptions. ([Learn more about PowerShell][1].)
+Use the following PowerShell script to disable ad hoc subscriptions.([Learn more about PowerShell][1].)
 
 1. Sign into Azure Active Directory using your Office 365 credentials. The first line of the following PowerShell script prompts you for your credentials. The second line connects to Azure Active Directory.
 
@@ -142,7 +143,7 @@ Use the following PowerShell script to disable ad hoc subscriptions. ([Learn mor
     ```
 
 > [!NOTE]
-> Use the **AllowAdHocSubscriptions** flag to control several user capabilities in your organization, including the ability for users to sign up for the Azure Rights Management Service. Changing this flag affects all of these capabilities.
+> Use the **AllowAdHocSubscriptions** flag to control several user capabilities in your organization, including the ability for users to sign up for the Azure Rights Management Service. Changing this flag affects all of these capabilities. With a setting of *false*, users can still sign up for a Pro trial.
 
 ### How can I allow my existing users to sign up for Power BI?
 
@@ -169,6 +170,14 @@ There are three scenarios that might apply to users in your organization:
 Power BI provides an admin portal that lets you view usage statistics, provides a link to the Microsoft 365 admin center to manage users and groups, and provides the ability to control tenant-wide settings.
 
 To use the Power BI admin portal, you must mark your account as a **Global Admin** within Office 365 or Azure Active Directory, or someone must assign the Power BI service admin role to your user account. For more info, see [Understanding the Power BI admin role](service-admin-role.md) and [Power BI Admin Portal](service-admin-portal.md).
+
+### What is the process to manage a tenant created by Microsoft for my users?
+
+When a self-service user signs up for a cloud service that uses Azure AD, the service adds them to an unmanaged Azure AD directory based on their email domain. You can claim and manage the tenant that someone created using a process known as an *admin takeover*. For more info, see [Take over an unmanaged directory as administrator in Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover). The type of takeover you do depends on whether there's an existing managed tenant associated with your domain:
+
+* Power BI supports internal admin takeover. When you perform an _internal_ admin takeover of an unmanaged Azure directory, you are added as the global administrator of the unmanaged directory. No users, domains, or service plans are migrated to any other directory you administer.
+
+* Power BI no longer supports external admin takeover. When you perform an _external_ admin takeover of an unmanaged Azure directory, you add the DNS domain name of the unmanaged directory to your managed Azure directory. When you add the domain name, a mapping of users to resources is created in your managed Azure directory so that users can continue to access services without interruption.
 
 ### If I have multiple domains, can I control the Office 365 tenant that users get added to?
 

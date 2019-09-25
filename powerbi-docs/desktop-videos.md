@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/04/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -22,11 +22,7 @@ The following list describes all available videos about Power BI Desktop. Select
   
   <iframe width="500" height="281" src="https://www.youtube.com/embed/Qgam9M8I0xA" frameborder="0" allowfullscreen></iframe> 
   
-- Learn [how to build stunning reports](https://www.youtube.com/watch?v=ByIUx-HmQbw) using Power BI Desktop.
+- Learn [how to build stunning reports](https://www.youtube.com/watch?v=ByIUx-HmQbw) using Power BI Desktop, and how to import, reshape and transform using Power Query Editor.
   
   <iframe width="500" height="281" src="https://www.youtube.com/embed/IMAsitQ2cAc" frameborder="0" allowfullscreen></iframe>  
   
-- Understand how to [import, reshape and transform data using Query Editor](https://www.youtube.com/watch?v=ByIUx-HmQbw) in the Power BI Desktop.
-  
-  <iframe width="500" height="281" src="https://www.youtube.com/embed/ByIUx-HmQbw" frameborder="0" allowfullscreen></iframe>
-

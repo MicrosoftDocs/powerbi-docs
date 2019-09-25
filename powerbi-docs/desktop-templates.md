@@ -66,7 +66,10 @@ Once parameters and data have been specified, a report is created containing all
 That's it. Creating and using report templates in Power BI Desktop is easy, enabling you to easily reproduce compelling layouts and other report aspects, and share them with others.
 
 ## Next steps
-There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
+You might also be interested in learning about **Query Parameters**:
+* [Using Query Parameters in Power BI Desktop?](https://docs.microsoft.com/power-query/power-query-query-parameters)
+
+In addition, there are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
 
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Query Overview with Power BI Desktop](desktop-query-overview.md)
