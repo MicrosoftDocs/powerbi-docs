@@ -157,7 +157,7 @@ Different formatting options are available depending on the slicer type. By usin
 
 See [Create a responsive slicer you can resize in Power BI](../power-bi-slicer-filter-responsive.md) for more about horizontal orientation and responsive layout.
 
-### Selection Controls options (list slicers only)
+### Selection controls options (list slicers only)
 1. **Show Select All** is **Off** by default. Turn it to **On** to add a **Select All** item to the slicer that selects or deselects all items when toggled. When all items are selected, clicking or tapping one item deselects it, allowing an "is-not"-type filter. 
     
     ![select all](media/power-bi-visualization-slicers/7-select-all.png)

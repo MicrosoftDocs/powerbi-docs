@@ -62,7 +62,7 @@ To use your **TopoJSON** map file, add a ShapeMap visual to your report and add 
 
 ![open Formatting pane and select Add Map](media/desktop-shape-map/shape-map-6-new.png)
 
-## Sample Custom Map
+## Sample custom map
 The *Offices of the United States Attorneys* release an annual fiscal report on their litigation and caseload data.  All of their reports can be found in the link below,
 
 https://www.justice.gov/usao/resources/annual-statistical-reports
@@ -111,7 +111,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Australia: States
 
-| id | abbr | iso | name | postal |
+| ID | abbr | iso | name | postal |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -124,7 +124,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Austria: States
 
-| id | iso | name | name-en | postal |
+| ID | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -138,7 +138,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Brazil: States
 
-| id |
+| ID |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -174,7 +174,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Canada: Provinces
 
-| id | iso | name | postal |
+| ID | iso | name | postal |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -192,7 +192,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### France: Regions
 
-| id | name | name-en |
+| ID | name | name-en |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
@@ -219,7 +219,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Germany: States
 
-| id | iso | name | name-en | postal |
+| ID | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -240,7 +240,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Ireland: Counties
 
-| id |
+| ID |
 | --- |
 | Wicklow |
 | Wexford |
@@ -271,7 +271,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Italy: Regions
 
-| id | iso | name | name-en | postal |
+| ID | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -296,7 +296,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Mexico: States
 
-| id | abreviatura | iso | name | name-en | postal |
+| ID | abreviatura | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -333,7 +333,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Netherlands: Provinces
 
-| id | iso | name | name-en |
+| ID | iso | name | name-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -350,7 +350,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### UK: Countries
 
-| id | iso | name |
+| ID | iso | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Scotland |
@@ -359,7 +359,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### USA: States
 
-| id | name | postal |
+| ID | name | postal |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
