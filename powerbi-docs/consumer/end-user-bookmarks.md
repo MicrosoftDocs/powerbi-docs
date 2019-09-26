@@ -3,13 +3,11 @@ title: Overview of bookmarks in Power BI service reports
 description: Documentation overview topic for Power BI Q&A natural language queries.
 author: mihart
 manager: kvivek
-ms.reviewer: ''
-ms.custom: seodec18
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/10/2019
+ms.date: 09/22/2019
 ms.author: mihart
 
 LocalizationGroup: Create reports
@@ -22,15 +20,15 @@ There are many uses for bookmarks. Say you discover an interesting insight and w
 
 You can also create a collection of bookmarks, arrange them in the order you want, and subsequently step through each bookmark in a presentation to highlight a series of insights that tell a story.  
 
-![Show Bookmarks Pane by selecting it from ribbon.](media/end-user-bookmarks/power-bi-bookmarks-pane.png)
+![Show Bookmarks Pane by selecting it from ribbon.](media/end-user-bookmarks/power-bi-select-bookmark.png)
 
-## Using bookmarks
-To open the Bookmarks pane, select **Bookmarks** from the menubar. To return to the original published view of the report, select **Reset to default**.
+## Open bookmarks
+To open the Bookmarks pane, select **Bookmarks** > **Show more bookmarks** from the menu bar. To return to the original published view of the report, select **Reset to default**.
 
 ### Report bookmarks
-If the report *designer* included report bookmarks, you'll find them under the **Report bookmarks** heading. 
+If the report *designer* included report bookmarks, you'll find them under the **Report bookmarks** heading. This report page has two bookmarks, B1 and B2. 
 
-![Show Report bookmarks.](media/end-user-bookmarks/power-bi-report-bookmark.png)
+![Show Report bookmarks.](media/end-user-bookmarks/power-bi-report.png)
 
 Select a bookmark to change to that report view. 
 
@@ -51,13 +49,13 @@ When you create a bookmark, the following elements are saved with the bookmark:
 
 Configure a report page the way you want it to appear in the bookmark. Once your report page and visuals are arranged how you want them, select **Add** from the **Bookmarks** pane to add a bookmark. In this example, we've added some filters for region and date. 
 
-![Add Personal bookmarks.](media/end-user-bookmarks/power-bi-add-personal.png)
+![Add Personal bookmarks.](media/end-user-bookmarks/power-bi-bookmark-personal.png)
 
-**Power BI** creates a bookmark and gives it a generic name or a name you enter. You can *rename*, *delete*, or *update* a bookmark by selecting the ellipses next to the bookmark's name, then selecting an action from the menu that appears.
+**Power BI** creates a personal bookmark and gives it a generic name or a name you enter. You can *rename*, *delete*, or *update* your bookmark by selecting the ellipses next to the bookmark's name, then selecting an action from the menu that appears.
 
 Once you have a bookmark, you can display it by simply selecting the bookmark in the **Bookmarks** pane. 
 
-![Add Personal bookmarks.](media/end-user-bookmarks/power-bi-personal-bookmark.png)
+![Add Personal bookmarks.](media/end-user-bookmarks/power-bi-bookmark-west.png)
 
 
 <!--
@@ -77,11 +75,11 @@ To present or view bookmarks, in order, select **View** from the **Bookmarks** p
 
 When in **View** mode, there are a few features to notice:
 
-1. The name of the bookmark appears in the bookmark title bar, which appears at the bottom of the canvas.
-2. The bookmark title bar has arrows that let you move to the next or previous bookmark.
-3. You can exit **View** mode by selecting **Exit** from the **Bookmarks** pane or by selecting the **X** found in the bookmark title bar. 
+- The name of the bookmark appears in the bookmark title bar, which appears at the bottom of the canvas.
+- The bookmark title bar has arrows that let you move to the next or previous bookmark.
+- You can exit **View** mode by selecting **Exit** from the **Bookmarks** pane or by selecting the **X** found in the bookmark title bar.
 
-![Bookmark slide show](media/end-user-bookmarks/power-bi-bookmark-slideshow.png)
+![Bookmark slide show](media/end-user-bookmarks/power-bi-slideshow.png)
 
 When you're in **View** mode, you can close the **Bookmarks** pane (by clicking the X on that pane) to provide more space for your presentation. And, while in **View** mode, all visuals are interactive and available for cross-highlighting, just as they would otherwise be when interacting with them. 
 
@@ -150,7 +148,6 @@ In this release of the **bookmarks**, there are a few limitations and considerat
 
 * Most custom visuals should work well with bookmarking. If you run into trouble with bookmarking and a custom visual, contact the creator of that custom visual and ask them to add support for bookmarks to their visual. 
 * If you add a visual on a report page after creating a bookmark, the visual will be displayed in its default state. This also means that if you introduce a slicer into a page where you previously created bookmarks, the slicer will behave in its default state.
-* Moving around visuals after a bookmark has been created will be reflected in the bookmark. 
 * Generally, your bookmarks will not be affected if the report *designer* updates or republishes the report. However, if the designer makes major changes to the report, such as removing fields used by a bookmark, then you will receive an error message the next time you attempt to open that bookmark. 
 
 <!--

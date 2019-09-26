@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/25/2019
+ms.date: 09/25/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
@@ -43,6 +43,7 @@ There are nine tabs in the portal. The rest of this article provides information
 * [Organization visuals](#organizational-visuals)
 * [Dataflow storage (preview)](#dataflowStorage)
 * [Workspaces](#workspaces)
+* [Custom branding](#custom-branding)
 
 ## Usage metrics
 
@@ -184,7 +185,7 @@ In the admin portal, you also control which users have permissions to distribute
 
 ### Share content with external users
 
-Users in the organization can share dashboards with users outside the organization. [Learn more](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
+Users in the organization can share dashboards with users outside the organization. Learn more about [sharing externally](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
 
 ![External users setting](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
@@ -518,7 +519,31 @@ As an administrator, you can view the workspaces that exist in your tenant. You 
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 
+On the **Workspaces** tab, you see the *state* for each workspace. The following table gives more details about the meaning of those states.
 
+|State  |Description  |
+|---------|---------|
+| Active | A normal workspace. It doesn't indicate anything about usage or what's inside, only that the workspace itself is "normal". |
+| Orphaned | A workspace with no admin user. |
+| Deleted | A deleted workspace. We maintain enough metadata to restore the workspace if desired. |
+| Removing | A workspace in the process of being deleted, but not gone yet. Users can delete their own workspaces, putting things into Removing and eventually Deleted. |
+
+## Custom branding
+
+As an administrator, you can customize the look of Power BI for your whole organization. Currently there are three main options:
+
+![Custom branding options](media/service-admin-portal/power-bi-custom-branding.png)
+
+* **Upload Logo**: For best results, upload a logo that's saved as a .png, 10 KB or smaller, and at least 200 x 30 pixels.
+
+* **Upload Cover image**: For best results, upload a cover image that's saved as a .jpg or .png, 1 MB or smaller, and at least 1920 x 160 pixels.
+
+* **Select Theme color**: You are able to select your theme based on a hex #, RGB, value, or from the provided pallet.
+
+
+For more information, see [Custom branding for your organization](http://aka.ms/orgBranding).
+
+![Workspaces list](media/service-admin-portal/workspaces-list.png)
 ## Next steps
 
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  

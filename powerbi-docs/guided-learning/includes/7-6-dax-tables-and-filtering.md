@@ -28,7 +28,7 @@ One common question that Power BI report builders want to answer is the followin
 
 * How many values do I have for this column?
 
-That may be a simple question to answer with a table displayed in front of you, but DAX approaches in a different way in a different way, particularly when there's a relationship between tables.
+That may be a simple question to answer with a table displayed in front of you, but DAX approaches in a different way, particularly when there's a relationship between tables.
 
 For example, Power BI and DAX includes values that are not properly cross-indexed. If the incoming relationship is broken, DAX adds a new row to the related table that has blanks in every field, and links that new row to the unindexed row to guarantee referential integrity. If your function includes blank rows, such as is often the case when using **ALL**, those blank rows will then be included in the number of values returned for that column.
 

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 08/29/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -70,7 +70,7 @@ Once complete, **Power BI Desktop** shows you success, and provides a couple lin
 
 ![Publishing succeeded](media/desktop-report-lifecycle-datasets/report-lifecycle_07.png)
 
-Now that your report with its dataset is in the Power BI service, you can also *promote* it, to attest to its quality and reliability. You can even request that it be *certified* by a central authority in your Power BI tenant. With either of these endorsements, your dataset will always appear at the topic of the list when people are looking for datasets. If interested, you can read more about the process of [promoting your dataset](service-datasets-promote.md). 
+Now that your report with its dataset is in the Power BI service, you can also *promote* it, to attest to its quality and reliability. You can even request that it be *certified* by a central authority in your Power BI tenant. With either of these endorsements, your dataset will always appear at the top of the list when people are looking for datasets. If interested, you can read more about the process of [promoting your dataset](service-datasets-promote.md). 
 
 The last step is to set *Build permission* for the dataset the report is based on. Build permission determines who can see and use your dataset. You can set it in the workspace itself, or when you share an app from the workspace. Learn more about setting the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 
@@ -104,4 +104,5 @@ When using the **Power BI service live connection**, there are a few limitations
 * For Content Packs, you must first create a copy of a content pack before using it as a basis for sharing a .pbix report and dataset to the **Power BI service**.
 * For Content Packs from *My Organization*, once copied, you cannot replace the report created on the service and/or a report created as part of copying a Content Pack with a live connection. Attempts to do so result in a warning that prompts you to rename the file, and publish. In this situation, you can only replace published live connected reports.
 * Deleting a shared dataset in the **Power BI service** means no one can access that dataset any longer from **Power BI Desktop**.
+* Reports that share a dataset on the Power BI service do not support automated deployments using the Power BI REST API.
 

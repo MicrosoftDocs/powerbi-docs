@@ -45,6 +45,10 @@ Get started with these popular on-demand webinars
 <br>by Kasper de Jonge
 <br>[Register and watch now](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
 
+**Using Power BI with Dynamics 365 Finance and Operations**
+<br>by Kevin Horlock
+<br>[Register and watch now](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
+
 **Microsoft Runs on Power BI – Financial Planning & Analysis Made Easy**
 <br>by Cory Hrncirik and Miguel Martinez
 <br>[Register and watch now](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)

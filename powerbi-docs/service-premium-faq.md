@@ -9,7 +9,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 09/16/2019
 
 LocalizationGroup: Premium
 ---
@@ -72,9 +72,9 @@ Power BI Premium is available as an add-on to Power BI Pro. Office 365 E5 includ
 
 **What is Power BI Report Server? Does this mean you’re making Power BI available on-premises?**
 
-Power BI Report Server is an on-premises server that allows the deployment and distribution of interactive Power BI reports, and paginated reports, completely within the boundaries of the organization’s firewall. Power BI Report Server is available through Power BI Premium or as a benefit for customers with SQL Server Enterprise Edition with Software Assurance. Contact your Microsoft representative for more information.
+Power BI Report Server is an on-premises server that allows the deployment and distribution of interactive Power BI reports, and paginated reports, completely within the boundaries of the organization’s firewall. Power BI Report Server is available through Power BI Premium or as a benefit for customers with SQL Server Enterprise Edition with Software Assurance. For information about licensing, see [Licensing Power BI Report Server](report-server/get-started.md#licensing-power-bi-report-server). Contact your Microsoft representative for details.
 
-With Power BI Premium. the same number of virtual cores an organization provisions in the cloud can also be deployed on-premises through Power BI Report Server. There is no need to split the capacity. Organizations can choose Power BI in the cloud, or elect to keep reports on-premises with Power BI Report Server and move to the cloud at their pace.
+With Power BI Premium, the same number of virtual cores an organization provisions in the cloud can also be deployed on-premises through Power BI Report Server. There is no need to split the capacity. Organizations can choose Power BI in the cloud, or elect to keep reports on-premises with Power BI Report Server and move to the cloud at their pace.
 
 For more information, see [Get started with Power BI Report Server](report-server/get-started.md).
 

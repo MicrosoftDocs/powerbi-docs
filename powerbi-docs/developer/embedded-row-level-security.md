@@ -1,9 +1,9 @@
 ---
 title: Use row-level security with Power BI embedded content
 description: Learn about the steps you need to take to embed Power BI content within your application.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -21,7 +21,7 @@ If you're embedding to Power BI users (user owns data), within your organization
 
 ![Items involved with Row-Level Security.](media/embedded-row-level-security/powerbi-embedded-rls-components.png)
 
-To take advantage of RLS, it’s important you understand three main concepts; Users, Roles, and Rules. Let’s take a closer look at each:
+To take advantage of RLS, it’s important you understand three main concepts; Users, Roles, and Rules. Let’s take a closer look at these concepts:
 
 **Users** – End users viewing the artifact (dashboard, tile, report, or dataset). In Power BI Embedded, users are identified by the username property in an embed token.
 
@@ -72,9 +72,9 @@ Applying the filter, the way we did here, filters down all records in the **Dist
 
 ## Applying user and role to an embed token
 
-Now that you have your Power BI Desktop roles configured, there's some work needed in your application to take advantage of the roles.
+Now that you have your Power BI Desktop roles configured, some more work needs to be done in your application to take advantage of the roles.
 
-Users are authenticated and authorized by your application and embed tokens are used to grant that user access to a specific Power BI Embedded report. Power BI Embedded doesn’t have any specific information on who your user is. For RLS to work, you need to pass some additional context as part of your embed token in the form of identities. You can pass the identities by using the [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) API.
+Users are authenticated and authorized by your application and embed tokens are used to grant a user access to a specific Power BI Embedded report. Power BI Embedded doesn’t have any specific information on who your user is. For RLS to work, you need to pass some additional context as part of your embed token in the form of identities. You can pass the identities by using the [Embed Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken) API.
 
 The API accepts a list of identities with indication of the relevant datasets. For RLS to work, you need to pass the below pieces as part of the identity.
 

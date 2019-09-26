@@ -8,13 +8,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
 ---
 # Connect to Alpine Metrics Sales Predictions with Power BI
 Alpine Metrics provides state of the art Predictive Sales Process Optimization in the cloud and on demand for sales organizations large and small. The Alpine Metrics Sales Predictions content pack for Power BI includes metrics such as potential and predicted sales and risks, allowing you deeper insight into the future of your business. 
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Connect to the [Alpine Metrics Sales Predictions content pack](https://app.powerbi.com/getdata/services/alpine-metrics) for Power BI.
 

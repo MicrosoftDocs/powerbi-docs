@@ -1,7 +1,7 @@
 ---
 title: Power BI mobile app integration with Siri Shortcuts
 description: How to use Siri Shortcuts to directly access the Power BI content you need.
-author: michalfo
+author: KesemSharabi
 manager: mshenhav
 ms.reviewer: ''
 
