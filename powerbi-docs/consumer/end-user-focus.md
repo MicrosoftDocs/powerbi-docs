@@ -31,7 +31,7 @@ Focus mode and full screen mode are two different ways to see more detail in you
 
 ## What is full screen mode
 
-![dashboard full screen mode before and after](media/end-user-focus/power-bi-comparison.png)
+![dashboard full screen mode before and after](media/end-user-focus/power-bi-dashboards-focus.png)
 
 Display your Power BI service content (dashboards, report pages, tiles, and visuals) without the distraction of menus and navigation bars.  You get an unadulterated, full view of your content at a glance, all the time. This is sometimes referred to as TV mode.   
 
@@ -49,7 +49,7 @@ Some uses for full screen mode are:
 
 ***Focus*** mode lets you expand (pop out) a visual or tile to see more detail.  Maybe you have a dashboard or report that is a little crowded and you want to zoom in on only one visual.  This is a perfect use of focus mode.  
 
-![dashboard full screen mode before and after](media/end-user-focus/power-bi-compare-focus.png)
+![dashboard full screen mode before and after](media/end-user-focus/power-bi-compare-dash.png)
 
 While in focus mode, a Power BI *consumer* can interact with any filters that were applied when this visual was created.  In Power BI service, you can use focus mode on a dashboard tile or report visual.
 
