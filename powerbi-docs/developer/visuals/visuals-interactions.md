@@ -1,8 +1,8 @@
 ---
 title: Visual interactions in Power BI visuals
 description: This article discusses how to check whether Power BI visuals should allow visual interactions.
-author: shaym83
-ms.author: shaym
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi

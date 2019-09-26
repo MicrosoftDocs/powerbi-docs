@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/16/2019
+ms.date: 09/19/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -188,7 +188,7 @@ The **Other** category provides the following data connections:
 * ODBC
 * OLE DB
 * BI360 - Budgeting & Financial Reporting (Beta)
-* Denado
+* Denodo
 * Information Grid (Beta)
 * Paxata 
 * QubolePresto (Beta)

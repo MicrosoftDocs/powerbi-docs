@@ -1,8 +1,8 @@
 ---
 title: Highlighting
 description: Data points selections highlighting in Power BI Visuals
-author: sranins
-ms.author: rasala
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi

@@ -72,7 +72,7 @@ The following tips can help you create **Power BI Desktop** reports that are mor
   
   ![Alt text for any object in a report can be added in Visualizations > Format > General > Alt Text box](media/desktop-accessibility/accessibility-02.png)
   
-  Alt text can also be changed dynamically with an expression, for exapmle reflecting filters that applied to a visual. You set an expression the same as you would for a visual's title. [Conditional formatting for visual titles](desktop-conditional-format-visual-titles.md)
+  Alt text can also be changed dynamically with an expression, for example reflecting filters that applied to a visual. You set an expression the same as you would for a visual's title. [Conditional formatting for visual titles](desktop-conditional-format-visual-titles.md)
   
 * Make sure your reports have sufficient contrast between text and any background colors. There are several tools such as [Color Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/) you can use to check your report colors. 
 * Use text sizes and fonts that are easily readable. Small text size, or fonts that might be difficult to read, are unhelpful for accessibility.
