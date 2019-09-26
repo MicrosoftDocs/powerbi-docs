@@ -43,6 +43,8 @@ If you've already created Power BI reports in Power BI Desktop, then you're almo
    
     It starts automatically and you're ready to go. You can tell you have the right version because **Power BI Desktop (September 2019)** is in the title bar.
 
+    ![Power BI Desktop September 2019](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-sept-2019.png)
+
 3. If you're not familiar with Power BI Desktop, consider watching the videos on the welcome screen.
    
     ![Power BI Desktop start screen](media/quickstart-create-powerbi-report/report-server-powerbi-desktop-start.png)
@@ -58,7 +60,7 @@ You can connect to a variety of data sources. Read more about [connecting to dat
     ![Select data source](media/quickstart-create-powerbi-report/report-server-get-data-ssas.png)
 3. Fill in **Server**, and optionally, **Database**. Make sure **Connect live** is selected > **OK**.
    
-    ![Server name](media/quickstart-create-powerbi-report/report-server-ssas-server-name.png)
+    ![Server name](media/quickstart-create-powerbi-report/power-bi-report-server-get-data-ssas.png)
 4. Choose the report server where you'll save your reports.
    
     ![Report server selection](media/quickstart-create-powerbi-report/report-server-select-server.png)

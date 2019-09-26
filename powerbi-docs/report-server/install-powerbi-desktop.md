@@ -43,6 +43,8 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 ## Verify you're using the correct version
 It's easy to verify that you're using the correct Power BI Desktop: Look at the launch screen or title bar within Power BI Desktop. You can tell you have the right version because **Power BI Desktop (September 2019)** is in the title bar. Also, the Power BI logo colors are reversed, yellow on black instead of black on yellow.
 
+![Power BI Desktop September 2019](media/install-powerbi-desktop/power-bi-report-server-desktop-sept-2019.png)
+
 The version of Power BI Desktop for the Power BI service doesn't have the month and year in the title bar.
 
 ## File extension association
