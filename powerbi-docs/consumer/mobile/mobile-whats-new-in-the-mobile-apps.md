@@ -26,8 +26,6 @@ For related "What's New" information, see:
 We've added support for custom app navigation. Now, when you open an app in Power BI Mobile, the custom navigation experience built by the app creator will be available. App navigation can be organized by content, and can include new items such as links and collapsible sections.
 Read more about [custom navigation](https://powerbi.microsoft.com/en-us/blog/designing-custom-navigation-for-power-bi-apps-is-now-available/).
 
-![Power BI Mobile custom app navigation](./media/mobile-whats-new-in-the-mobile-apps/mobile-apps-custom-navigation.png)
-
 ## August 2019
 
 ### Introducting Power BI Mobile new look (preview) (iOS and Android)
