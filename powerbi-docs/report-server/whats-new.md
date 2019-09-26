@@ -23,7 +23,7 @@ For related Power BI "What's New" information, see:
 
 ## September 2019
 
-See the Power BI Report Server September 2019 blog post for details about all the new features.
+See the [Power BI Report Server September 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2019-feature-summary/) blog post for details about all the new features.
 
 The September 2019 update of Power BI Report Server is packed with lots of Power BI report features. Here are some of the highlights:
 
