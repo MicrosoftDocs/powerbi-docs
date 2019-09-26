@@ -19,6 +19,13 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
 
+## September 2019
+
+### Support for custom app navigation (iOS and Android)
+
+We've added support for custom app navigation. Now, when you open an app in Power BI Mobile, the custom navigation experience built by the app creator will be available. App navigation can be organized by content, and can include new items such as links and collapsible sections.
+Read more about [custom navigation](https://powerbi.microsoft.com/en-us/blog/designing-custom-navigation-for-power-bi-apps-is-now-available/).
+
 ## August 2019
 
 ### Introducting Power BI Mobile new look (preview) (iOS and Android)
