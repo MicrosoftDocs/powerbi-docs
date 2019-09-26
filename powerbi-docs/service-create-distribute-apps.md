@@ -187,6 +187,13 @@ When your app consumers open your app, they see the navigation you created, inst
 
 ![App with navigation](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
+## Considerations and Limitations
+Things to keep in mind about publishing apps:
+
+* You can have at most 100 users or groups in the access list for the app. However, you can give more than 100 users access to the app. To do so, use one or more user groups that contain all the desired users.
+* For the new workspace experience, if the user added to the app access list already has access to the app through the workspace, they will not be shown in the access list for the app.  
+
+
 ## Next steps
 * [Create a workspace](service-create-workspaces.md)
 * [Install and use apps in Power BI](consumer/end-user-apps.md)

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 09/26/2019
 ms.author: maggies
 
 ---
@@ -27,7 +27,7 @@ If you've already created Power BI reports in Power BI Desktop, then you're almo
 
     ![Download Power BI Desktop from the web portal](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
 
-    Or go directly to [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (Optimized for Power BI Report Server - May 2019) in the Microsoft Download Center.
+    Or go to the [Power BI Report Server](https://powerbi.microsoft.com/report-server/) home page and select **Advanced download options**.
 
 2. In the Download Center page, select **Download**.
 
@@ -37,13 +37,13 @@ If you've already created Power BI reports in Power BI Desktop, then you're almo
 
     - **PBIDesktopRS_x64.msi** (the 64-bit version).
 
-4. After you download the installer, run the Power BI Desktop (May 2019) Setup Wizard.
+4. After you download the installer, run the Power BI Desktop (September 2019) Setup Wizard.
 
 2. At the end of the installation, check **Start Power BI Desktop now**.
    
-    It starts automatically and you're ready to go. You can tell you have the right version because "Power BI Desktop (May 2019)" is in the title bar.
+    It starts automatically and you're ready to go. You can tell you have the right version because **Power BI Desktop (September 2019)** is in the title bar.
 
-    ![Power BI Desktop May 2019 version](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-may-2019.png)
+    ![Power BI Desktop September 2019](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-sept-2019.png)
 
 3. If you're not familiar with Power BI Desktop, consider watching the videos on the welcome screen.
    
@@ -57,7 +57,7 @@ You can connect to a variety of data sources. Read more about [connecting to dat
     Or on the **Home** tab, select **Get Data**.
 2. Select your data source -- in this example, **Analysis Services**.
    
-    ![Select data source](media/quickstart-create-powerbi-report/report-server-get-data-ssas.png)
+    ![Select data source](media/quickstart-create-powerbi-report/power-bi-report-server-get-data-ssas.png)
 3. Fill in **Server**, and optionally, **Database**. Make sure **Connect live** is selected > **OK**.
    
     ![Server name](media/quickstart-create-powerbi-report/report-server-ssas-server-name.png)
