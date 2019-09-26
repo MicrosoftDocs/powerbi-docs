@@ -129,7 +129,7 @@ In the current report, the **District Monthly Sales** page also has a **District
     
 3. In the **Visible** column, select the **New Stores** page and **Overview** page. Your **Sync slicers** pane should now look like the image below:
 
-    ![sync slicers](media/power-bi-visualization-slicers/power-bi-sync-slicer-finsihed.png)
+    ![sync slicers](media/power-bi-visualization-slicers/power-bi-sync-slicer-finished.png)
 
 1. Observe the effects of syncing the slicer and making it visible on the other pages. On the **District Monthly Sales** page, the **District Manager** slicer now shows the same selections as the one on the **Overview** page. On the **New Stores** page, the selections in the **District Manager** slicer affect the selections that are available in the **Store Name** slicer. 
     
@@ -142,7 +142,7 @@ In the current report, the **District Monthly Sales** page also has a **District
 ## Format slicers
 Different formatting options are available depending on the slicer type. By using **Horizontal** orientation, **Responsive** layout, and **Item** coloring, you can produce buttons or tiles rather than standard list items, and make slicer items resize to fit different screen sizes and layouts.  
 
-1. With the **District Manager** slicer selected on any page, in the **Visualizations** pane, select the **Format** icon ![](media/power-bi-visualization-slicers/power-bi-paintroller.png) to display the formatting controls. 
+1. With the **District Manager** slicer selected on any page, in the **Visualizations** pane, select the **Format** icon ![format icon](media/power-bi-visualization-slicers/power-bi-paintroller.png) to display the formatting controls. 
     
     ![formatting](media/power-bi-visualization-slicers/3-format.png)
     
