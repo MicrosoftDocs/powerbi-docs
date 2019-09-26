@@ -57,10 +57,10 @@ You can connect to a variety of data sources. Read more about [connecting to dat
     Or on the **Home** tab, select **Get Data**.
 2. Select your data source -- in this example, **Analysis Services**.
    
-    ![Select data source](media/quickstart-create-powerbi-report/report-server-get-data-ssas.png)
+    ![Select data source](media/quickstart-create-powerbi-report/power-bi-report-server-get-data-ssas.png)
 3. Fill in **Server**, and optionally, **Database**. Make sure **Connect live** is selected > **OK**.
    
-    ![Server name](media/quickstart-create-powerbi-report/power-bi-report-server-get-data-ssas.png)
+    ![Server name](media/quickstart-create-powerbi-report/report-server-ssas-server-name.png)
 4. Choose the report server where you'll save your reports.
    
     ![Report server selection](media/quickstart-create-powerbi-report/report-server-select-server.png)
