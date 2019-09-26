@@ -64,7 +64,7 @@ This tutorial uses the [Retail Analysis sample PBIX file](http://download.micros
 
    ![new slicer](media/power-bi-visualization-slicers/power-bi-filter-examples.png)
 >[!TIP]
->List slicer items are sorted in ascending alphanumerical order by default. To reverse the sort order to descending, select the ellipsis (**...**) in the top right corner of the slicer and choose **Sort by District Manager** in the drop-down list. 
+>List slicer items are sorted in ascending order by default. To reverse the sort order to descending, select the ellipsis (**...**) in the top right corner of the slicer and choose **Sort by District Manager** in the drop-down list. 
 
 **To create a new slicer to filter data by date range**
 
@@ -111,17 +111,27 @@ See [Visual interactions in a Power BI report](../service-reports-visual-interac
 ## Sync and use slicers on other pages
 Starting with the February 2018 Power BI update, you can sync a slicer and use it on any or all pages in a report. 
 
-In the current report, the **District Monthly Sales** page also has a **District Manager** slicer, but it is not synced with the one you created on the **Overview** page (the two slicers can have different item selections). The **New Stores** page has only a **Store Name** slicer. You can sync your new **District Manager** slicer to these pages, so that slicer selections on any page affect visualizations on all three pages. 
+In the current report, the **District Monthly Sales** page also has a **District Manager** slicer, but what if we also wanted that slicer on the **Overview** page? The **New Stores** page also has a slice, but it only provides **Store Name** information. With the **Sync slicer** pane we can sync the **District Manager** slicer to these pages, so that slicer selections on any page affect visualizations on all three pages.
 
-1. On the **View** menu, select **Sync slicers** in Power BI Desktop. The **Sync Slicers** pane appears. 
-2. On the **District Monthly Sales** page, select the **District Manager** slicer. Note that the **District Monthly Sales** page is already selected in the **Visible** column, because there is also a District Manager slicer on that page, but it is not selected in the **Sync** column. 
+1. On the **View** menu, select **Sync slicers** in Power BI Desktop.
+
+    ![sync slicers](media/power-bi-visualization-slicers/power-bi-slicer-view-sync.png)
+
+1.  The **Sync Slicers** pane appears between the **Filters** and **Visualizations** pane.  
+
+    ![sync slicers](media/power-bi-visualization-slicers/power-bi-slicer-sync-pane.png)
+
+1. On the **District Monthly Sales** page, select the **District Manager** slicer. 
     
     ![sync slicers](media/power-bi-visualization-slicers/9-sync-slicers.png)
     
-3. In the **Sync** column, select the **New Stores** page and the **District Monthly Sales** page to sync the **Overview** slicer to those pages. 
+3. In the **Sync** column, select the **New Stores** page and the **Overview** page to sync the **District Monthly Sales** slicer to those pages. 
     
-3. In the **Visible** column, select the **New Stores** page and leave the **District Monthly Sales** page selected. 
-4. Observe the effects of syncing the slicer and making it visible on the other pages. On the **District Monthly Sales** page, the **District Manager** slicer now shows the same selections as the one on the **Overview** page. On the **New Stores** page, the selections in the **District Manager** slicer affect the selections that are available in the **Store Name** slicer. 
+3. In the **Visible** column, select the **New Stores** page and **Overview** page. Your **Sync slicers** pane should now look like the image below:
+
+    ![sync slicers](media/power-bi-visualization-slicers/power-bi-sync-slicer-finsihed.png)
+
+1. Observe the effects of syncing the slicer and making it visible on the other pages. On the **District Monthly Sales** page, the **District Manager** slicer now shows the same selections as the one on the **Overview** page. On the **New Stores** page, the selections in the **District Manager** slicer affect the selections that are available in the **Store Name** slicer. 
     
     >[!TIP]
     >Although the slicer initially appears on the synced pages at the same size and position as on the original page, you can move, resize, and format synced slicers on the various pages independently. 
