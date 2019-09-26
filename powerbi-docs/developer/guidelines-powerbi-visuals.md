@@ -22,11 +22,14 @@ Please check [this article](https://github.com/Microsoft/PowerBI-visuals/blob/gh
 
 
 ## Logo guidelines
+> [!NOTE]
+> The word logo in this article, refers to any comercial company icon as described in the pictures below. 
 
-This section describes the specifications for adding logos and logotypes in visuals. Logos are not mandatory. If added they must follow these guidelines. 
+This section describes the specifications for adding logos in Power BI visuals. Logos are not mandatory. If added they must follow these guidelines. 
 
 > [!IMPORTANT]
 > Logos are allowed in *edit mode only*. Logos *can't* be displayed in view mode.
+
 
 ![Definitions](media/guidelines-powerbi-visuals/definitions.png)
 
@@ -40,6 +43,8 @@ This section describes the specifications for adding logos and logotypes in visu
 
 ![Edit mode](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
+
+Informative icons, if exsit, in reading mode should comply to the color, size and location as logos above.
 
 ## Guidelines for Power BI visuals with additional purchases
 
