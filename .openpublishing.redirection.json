@@ -1,7 +1,7 @@
 {
     "redirections": [
         {
-          "source_path": "powerbi-docs/gettingstarted.yml",
+          "source_path": "powerbi-docs/guided-learning/gettingstarted.yml",
           "redirect_url": "/learn/modules/get-started-with-power-bi/",
           "redirect_document_id": false
         },
