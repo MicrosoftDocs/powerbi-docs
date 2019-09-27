@@ -45,7 +45,7 @@ If a data source is connected via an on-premises gateway, the gateway informatio
 
 **Datasets and dataflows**
  
-On datasets you see the last refresh time, and if a dataset is certified or promoted.
+On datasets, you see the last refresh time, and if a dataset is certified or promoted.
 
 ![Certified dataset in lineage view](media/service-data-lineage/power-bi-lineage-external-certified-dataset.png)
  
