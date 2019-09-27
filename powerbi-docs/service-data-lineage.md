@@ -7,7 +7,7 @@ ms.reviewer:
 
 ms.service: powerbi
 ms.topic: conceptual
-ms.date: 09/23/2019
+ms.date: 09/27/2019
 ms.author: maggies
 
 LocalizationGroup: 
@@ -15,7 +15,7 @@ LocalizationGroup:
 # Data lineage (preview)
 In modern business intelligence (BI) projects, understanding the flow of data from the data source to its destination can be a challenge. The challenge is even bigger if you have built advanced analytical projects spanning multiple data sources, artifacts, and dependencies.  Questions like "What happens if I change this data?" or "Why isn’t this report up to date?" can be hard to answer. They may require a team of experts or deep investigation to understand. We designed data lineage view to help you answer these questions.
 
-![Power BI lineage view](media/service-data-lineage/power-bi-lineage-view.png)
+![Power BI lineage view](media/service-data-lineage/power-bi-lineage-view-1200.png)
  
 Power BI has several artifact types, such as dashboards, reports, datasets, and dataflows. Many datasets and dataflows connect to external data sources such as SQL Server, and to external datasets in other workspaces. When a dataset is external to a workspace you own, it may be in a workspace owned by someone in IT or another analyst. External data sources and datasets make it harder to know where the data is coming from, ultimately. For complex projects and for simpler ones, we introduce lineage view. 
 
@@ -39,7 +39,7 @@ You see the data sources from which the datasets and dataflows get their data. O
  
 **Gateways**
 
-If a data source is connected to an on-premises data source by way of a gateway, the gateway information is added to the data source card. If you have permissions as either gateway admin or as a data source user, you see more information, such as the gateway name.
+If a data source is connected via an on-premises gateway, the gateway information is added to the data source card. If you have permissions as either gateway admin or as a data source user, you see more information, such as the gateway name.
 
 ![Lineage view data source with gateway](media/service-data-lineage/power-bi-lineage-data-source-with-gateway.png)
 
@@ -63,7 +63,7 @@ Say you want to see the lineage for a specific artifact.
 
 - Select the double arrows under an artifact.
 
-    ![Highlight lineage for a specific artifact](media/service-data-lineage/power-bi-lineage-highlight.png)
+    ![Highlight lineage for a specific artifact](media/service-data-lineage/power-bi-lineage-highlight-zoom.png)
 
     Power BI highlights all the artifacts related to that artifact, and dims the rest. 
 
