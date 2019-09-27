@@ -33,6 +33,14 @@ landingContent:
             url: embedding.md
           - text: "What is the Power BI API"
             url: overview-of-power-bi-rest-api.md
+      - linkListType: reference
+        links:
+          - text: "Power BI Developer Center"
+            url: https://powerbi.microsoft.com/developers/
+          - text: "Power BI developer samples"
+            url: https://github.com/Microsoft/PowerBI-Developer-Samples
+          - text: "Power BI JavaScript wiki"
+            url: https://github.com/Microsoft/powerbi-javascript/wiki
 
   # Card
   - title: Power BI visuals
@@ -57,7 +65,7 @@ landingContent:
             url: office-store.md
 
   # Card (optional)
-  - title: Embedded Analytics
+  - title: Embedded analytics
     linkLists:
       - linkListType: tutorial
         links:

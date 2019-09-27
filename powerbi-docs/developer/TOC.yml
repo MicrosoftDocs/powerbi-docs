@@ -5,7 +5,85 @@
     items:
     - name: "What can developers do with Power BI"
       href: what-can-you-do.md
-  - name: Embedded Analytics
+  - name: Power BI visuals
+    items:
+    - name: Overview
+      items: 
+      - name: "Visuals in Power BI"
+        href: ../power-bi-custom-visuals.md
+    - name: Tutorials
+      items:
+      - name: "Develop a Power BI visual"
+        href: custom-visual-develop-tutorial.md
+      - name: "Add formatting options"
+        href: custom-visual-develop-tutorial-format-options.md
+      - name: "Add unit tests for visual project"
+        href: visuals/unit-tests-introduction.md
+    - name: Concepts
+      items:
+      - name: "Visuals for organizations in Power BI"
+        href: ../power-bi-custom-visuals-organization.md
+      - name: "Guidelines for Power BI visuals" 
+        href: guidelines-powerbi-visuals.md
+      - name: "Visuals FAQ"
+        href: ../power-bi-custom-visuals-faq.md
+      - name: "Using capabilities"
+        href: visuals/capabilities.md
+      - name: "Data view mappings"
+        href: visuals/dataview-mappings.md
+      - name: "Objects and properties"
+        href: visuals/objects-properties.md
+      - name: "Advanced Edit Mode"
+        href: visuals/advanced-edit-mode.md
+    - name: How to
+      items:
+      - name: "Get a visual certified"
+        href: ../power-bi-custom-visuals-certified.md
+      - name: "Publish custom visuals to AppSource"
+        href: office-store.md
+      - name: "Use R-powered custom visuals in Power BI"
+        href: ../desktop-r-powered-custom-visuals.md
+      - name: "Visuals interactions"
+        href: visuals/visuals-interactions.md
+      - name: "Add visuals tooltips"
+        href: visuals/add-tooltips.md
+      - name: "Add analytics pane" 
+        href: visuals/analytics-pane.md
+      - name: "Filter visuals" 
+        href: visuals/filter-api.md
+      - name: "Fetch more data" 
+        href: visuals/fetch-more-data.md
+      - name: "Add bookmarks support"
+        href: visuals/bookmarks-support.md
+      - name: "Highlight data in visuals"
+        href: visuals/highlight.md
+      - name: "Add High-Contrast mode support"
+        href: visuals/high-contrast-support.md
+      - name: "Enable sync slicers"
+        href: visuals/enable-sync-slicers.md
+      - name: "Troubleshoot Power BI visuals"
+        href: ../power-bi-custom-visuals-troubleshoot.md
+    - name: Reference
+      items: 
+      - name: "Landing page" 
+        href: visuals/landing-page.md
+      - name: "Launch URL" 
+        href: visuals/launch-url.md
+      - name: "Rendering events" 
+        href: visuals/event-service.md
+      - name: "Sorting"
+        href: visuals/sort-options.md
+    - name: Resources
+      items:
+      - name: "Dev Center"
+        href: https://powerbi.microsoft.com/developers/
+      - name: "Samples"
+        href: https://microsoft.github.io/PowerBI-visuals/samples/
+      - name: "Custom Visuals Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848277
+      - name: "Creating SSL certificate"
+        href: visuals/create-ssl-certificate.md
+  - name: Embedded analytics
     items:
     - name: Overview
       items: 
@@ -105,84 +183,6 @@
         href: https://go.microsoft.com/fwlink/?linkid=848280
       - name: "Stack Overflow"
         href: https://go.microsoft.com/fwlink/?linkid=848281
-  - name: Custom Visuals
-    items:
-    - name: Overview
-      items: 
-      - name: "Visuals in Power BI"
-        href: ../power-bi-custom-visuals.md
-    - name: Tutorials
-      items:
-      - name: "Develop a Power BI visual"
-        href: custom-visual-develop-tutorial.md
-      - name: "Add formatting options"
-        href: custom-visual-develop-tutorial-format-options.md
-      - name: "Add unit tests for visual project"
-        href: visuals/unit-tests-introduction.md
-    - name: Concepts
-      items:
-      - name: "Visuals for organizations in Power BI"
-        href: ../power-bi-custom-visuals-organization.md
-      - name: "Guidelines for Power BI visuals" 
-        href: guidelines-powerbi-visuals.md
-      - name: "Visuals FAQ"
-        href: ../power-bi-custom-visuals-faq.md
-      - name: "Using capabilities"
-        href: visuals/capabilities.md
-      - name: "Data view mappings"
-        href: visuals/dataview-mappings.md
-      - name: "Objects and properties"
-        href: visuals/objects-properties.md
-      - name: "Advanced Edit Mode"
-        href: visuals/advanced-edit-mode.md
-    - name: How to
-      items:
-      - name: "Get a visual certified"
-        href: ../power-bi-custom-visuals-certified.md
-      - name: "Publish custom visuals to AppSource"
-        href: office-store.md
-      - name: "Use R-powered custom visuals in Power BI"
-        href: ../desktop-r-powered-custom-visuals.md
-      - name: "Visuals interactions"
-        href: visuals/visuals-interactions.md
-      - name: "Add visuals tooltips"
-        href: visuals/add-tooltips.md
-      - name: "Add analytics pane" 
-        href: visuals/analytics-pane.md
-      - name: "Filter visuals" 
-        href: visuals/filter-api.md
-      - name: "Fetch more data" 
-        href: visuals/fetch-more-data.md
-      - name: "Add bookmarks support"
-        href: visuals/bookmarks-support.md
-      - name: "Highlight data in visuals"
-        href: visuals/highlight.md
-      - name: "Add High-Contrast mode support"
-        href: visuals/high-contrast-support.md
-      - name: "Enable sync slicers"
-        href: visuals/enable-sync-slicers.md
-      - name: "Troubleshoot Power BI visuals"
-        href: ../power-bi-custom-visuals-troubleshoot.md
-    - name: Reference
-      items: 
-      - name: "Landing page" 
-        href: visuals/landing-page.md
-      - name: "Launch URL" 
-        href: visuals/launch-url.md
-      - name: "Rendering events" 
-        href: visuals/event-service.md
-      - name: "Sorting"
-        href: visuals/sort-options.md
-    - name: Resources
-      items:
-      - name: "Dev Center"
-        href: https://powerbi.microsoft.com/developers/
-      - name: "Samples"
-        href: https://microsoft.github.io/PowerBI-visuals/samples/
-      - name: "Custom Visuals Git Repo"
-        href: https://go.microsoft.com/fwlink/?linkid=848277
-      - name: "Creating SSL certificate"
-        href: visuals/create-ssl-certificate.md
   - name: Automation
     items:
     - name: Overview
