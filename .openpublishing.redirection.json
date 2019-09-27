@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+          "source_path": "powerbi-docs/gettingstarted.yml",
+          "redirect_url": "/learn/modules/get-started-with-power-bi/",
+          "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-gateway-sso-kerberos-resource.md",
             "redirect_url": "/power-bi/service-gateway-sso-kerberos",
             "redirect_document_id": false
