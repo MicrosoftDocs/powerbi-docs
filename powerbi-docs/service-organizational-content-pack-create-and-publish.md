@@ -21,7 +21,7 @@ Creating content packs is different from sharing dashboards or collaborating on 
 Creating an organizational content pack requires a [Power BI Pro account](https://powerbi.microsoft.com/pricing) for you and your colleagues.
 
 > [!NOTE]
-> You can't create or install organizational content packs in the new workspace experiences preview. If you haven't started yet, Now is a good time to upgrade your content packs to apps. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
+> You can't create or install organizational content packs in the new workspace experiences. If you haven't started yet, Now is a good time to upgrade your content packs to apps. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
 
 ## Create and publish a content pack
 
