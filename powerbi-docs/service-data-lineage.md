@@ -63,7 +63,7 @@ Say you want to see the lineage for a specific artifact.
 
 - Select the double arrows under an artifact.
 
-    ![Highlight lineage for a specific artifact](media/service-data-lineage/power-bi-lineage-highlight-zoom.png)
+    [ ![Highlight lineage for a specific artifact](media/service-data-lineage/power-bi-lineage-highlight-cropped.png) ](media/service-data-lineage/power-bi-lineage-highlight-full-size.png#lightbox)
 
     Power BI highlights all the artifacts related to that artifact, and dims the rest. 
 
