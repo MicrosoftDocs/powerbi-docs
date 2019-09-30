@@ -133,7 +133,7 @@ Add required registry entries to the registry of the machine that the gateway is
 
 1. In the data source configuration window, enter the Application Server's **Hostname**, **System Number**, and **client ID**, as you would to sign in to your SAP BW server from Power BI Desktop.
 
-1. In the **SNC Partner Name** field, enter *p:&lt;the SPN you mapped to your SAP BW service user&gt;*. For example, if the SPN is **SAP/BWServiceUser@MYDOMAIN.COM**, you should enter *p:SAP/BWServiceUser\@MYDOMAIN.COM* in the **SNC Partner Name** field.
+1. In the **SNC Partner Name** field, enter *p:&lt;the SPN you mapped to your SAP BW service user&gt;*. For example, if the SPN is **SAP/BWServiceUser\@MYDOMAIN.COM**, you should enter *p:SAP/BWServiceUser\@MYDOMAIN.COM* in the **SNC Partner Name** field.
 
 1. For the SNC Library, select **SNC\_LIB** or **SNC\_LIB\_64**. Make sure that **SNC\_LIB\_64** on the gateway machine points to gx64krb5.dll. Alternatively, you can select the "Custom" option and provide the absolute path the gx64krb5.dll (on the gateway machine).
 
