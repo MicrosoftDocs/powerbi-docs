@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 # Text boxes and shapes in Power BI reports
 You can add text boxes and shapes to reports by using the Power BI service and Power BI Desktop. In both cases, you must have editing permissions for the report. If a report has been shared with you in the Power BI service, you won't have editing permissions. 
 
-Watch Will use Power BI Desktop to [add static images to a report]((/learn/modules/visuals-in-power-bi/12-formatting)), and then follow the steps below to try it out yourself by using the Power BI service instead.
+Watch Will use Power BI Desktop to [add static images to a report](/learn/modules/visuals-in-power-bi/12-formatting), and then follow the steps below to try it out yourself by using the Power BI service instead.
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew" frameborder="0" allowfullscreen></iframe>
 > 
