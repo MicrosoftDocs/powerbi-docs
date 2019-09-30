@@ -62,7 +62,7 @@ Complete this section if you haven't already configured your SAP BW server for S
 
 1. Sign in to your server in SAP Logon and set the following profile parameters by using the RZ10 transaction:
 
-    1. Set the **snc/identity/as** profile parameter to *p:&lt;the SAP BW service user you've created&gt;*, such as _p:SomeString_ and _p:SomeString@Something_ and _p:SomeString.Something_ and _p:SomeString@Something.SomethingElse_ and _p:BWServiceUser@MYDOMAIN.COM_. Note the p: that precedes the service user's UPN. It's not p:CN= like when Common Crypto Lib is used as the SNC library.
+    1. Set the **snc/identity/as** profile parameter to *p:&lt;the SAP BW service user you've created&gt;*, such as  *p:BWServiceUser\@MYDOMAIN.COM* OR _p:BWServiceUser\@MYDOMAIN.COM_. Note the p: that precedes the service user's UPN. It's not p:CN= like when Common Crypto Lib is used as the SNC library.
 
     1. Set the **snc/gssapi\_lib** profile parameter to *&lt;path to gx64krb5.dll on the BW server machine&gt;*. Remember to put the library in a location the SAP BW Application Server can access.
 
