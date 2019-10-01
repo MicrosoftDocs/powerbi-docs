@@ -7,7 +7,7 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/19/2019
+ms.date: 09/30/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -57,10 +57,9 @@ The specific features and experiences built on shared dataset capabilities are l
 
 ## Considerations and limitations
 
+- As an app publisher you have to make sure that your audience has access to datasets outside of the app workspace. Otherwise, users will encounter issues when interacting with your app: reports won’t open without dataset access, and dashboard tiles will show as locked. Also, users won’t be able to open the app if the first item in its navigation is a report without access to the dataset.
 - Building a report on top of a dataset in a different workspace requires the new workspace experience at both ends: The report needs to be in a new workspace experience and the dataset needs to be in a new workspace experience.
-- Say you create a report in Workspace A that's based on a dataset in Workspace B. When you create an app for Workspace A, you can only include that report in the Workspace A app if you are also a member of Workspace B.
 - In a classic workspace, the dataset discovery experience only shows the datasets in that workspace.
-- If you want to add a report based on a shared dataset to an app, you have to be a member of the dataset workspace. This is a known issue.
 - By design, “Publish to web” doesn’t work for a report based on a shared dataset.
 - If two people are members of a workspace that is accessing a shared dataset, it's possible that only one of them can see the related dataset in the workspace. Only people with at least Read access to the dataset can see the shared dataset. 
 
