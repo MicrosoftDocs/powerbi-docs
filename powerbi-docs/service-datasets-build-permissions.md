@@ -18,13 +18,13 @@ As a creator of *data models* in Power BI Desktop, you can share them as *datase
 
 The Build permission type is only relevant for datasets. When you give users Build permission, they can build new content on a dataset, such as reports, dashboards, pinned tiles from Q&A, and Insights Discovery. They can also build new content on the dataset outside Power BI, such as Excel sheets via Analyze in Excel, XMLA, and export underlying data.
 
-## How users get Build permission
+## How you give Build permission
 
-Users get Build permission in different ways:
+You give Build permission for a dataset in a few different ways:
 
-- If you're a member of a workspace with at least a Contributor role, you automatically have Build permission for a dataset, and permission to copy a report.
+- Members of a workspace with at least a Contributor role automatically have Build permission for datasets in that workspace, and permission to copy a report.
  
-- A member of the workspace where the dataset resides can assign the permission to specific users or security groups in the Permission center. Select the ellipsis (…) next to a dataset > **Manage Permissions**.
+- Members of the workspace where the dataset resides can assign the permission to specific users or security groups in the Permission center. If you're a member of the workspace, select the ellipsis (…) next to a dataset > **Manage Permissions**.
 
     ![Select the ellipsis](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
@@ -49,7 +49,7 @@ At some point, you may need to remove Build permission for some users.
 
     ![Manage permissions](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Select the ellipsis (...) next to their name > **Remove build**.
+1. Select the ellipsis (...) next to a name > **Remove build**.
 
     ![Remove Build permission](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 

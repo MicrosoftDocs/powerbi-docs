@@ -75,7 +75,7 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 
 > [!NOTE]
 >To copy a report, and to create a report in another workspace based on a dataset in this workspace, people need to meet additional criteria:
->- They need a Power BI Pro license. 
+>- They need a Power BI Pro license. See the next section, [Licensing](#licensing), for details.
 >- They need Build permission for the dataset. For datasets in this workspace, the people with the Admin, Member, and Contributor roles have Build permission through their workspace role.
  
 ## Licensing
