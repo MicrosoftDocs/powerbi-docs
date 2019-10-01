@@ -53,18 +53,18 @@ This tutorial uses the [Retail Analysis sample PBIX file](http://download.micros
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
 2. On the Overview page, with nothing selected on the canvas, select the **Slicer** icon ![slicer icon](media/power-bi-visualization-slicers/slicer-icon.png) in the **Visualizations** pane to create a new slicer. 
-3. With the new slicer selected, from the Fields pane, select **District** > **DM** to populate the slicer. The new slicer is a list with selection boxes before the names. 
+3. With the new slicer selected, from the Fields pane, select **District** > **District Manager** to populate the slicer. The new slicer is a list with selection boxes before the names. 
     
     ![new slicer](media/power-bi-visualization-slicers/power-bi-new-slicer.png)
     
 4. Resize and drag the slicer and other elements on the canvas to make room for the slicer. Note that the slicer items are cut off if you resize the slicer too small. 
-5. Select names on the slicer and note the effects on the other visualizations on the page. Select names again to deselect them, and hold down the **Ctrl** key to select more than one name. Selecting all names has the same effect as selecting none. \
+5. Select names on the slicer and note the effects on the other visualizations on the page. Select names again to deselect them, and hold down the **Ctrl** key to select more than one name. Selecting all names has the same effect as selecting none. 
 
 6. Alternately, select the paint roller icon to format your slicer. There are simply too many options to describe them all here - so experiment and create a slicer that works for you. In the examples below, the first slicer has been converted to a dropdown to conserve space and the option to "Select all" has been added.  The second slicer has been formatted with colors, fonts sizes, and only allows a single selection.
 
    ![new slicer](media/power-bi-visualization-slicers/power-bi-filter-examples.png)
 >[!TIP]
->List slicer items are sorted in ascending order by default. To reverse the sort order to descending, select the ellipsis (**...**) in the top right corner of the slicer and choose **Sort by District Manager** in the drop-down list. 
+>List slicer items are sorted in ascending order by default. To reverse the sort order to descending, select the ellipsis (**...**) in the top right corner of the slicer and choose **Sort descending**.
 
 **To create a new slicer to filter data by date range**
 
