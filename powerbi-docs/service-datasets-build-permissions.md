@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 ---
 # Build permission for shared datasets (preview)
 
-As a creator of *data models* in Power BI Desktop, you can share them as *datasets* in the Power BI service. Then report creators can easily discover and reuse the datasets you've shared. Learn how you control who has access to the data by using Build permission.
+As a creator of *data models* in Power BI Desktop, you can share them as *datasets* in the Power BI service. Then report creators can easily discover and reuse the datasets you've shared. Learn how you control who has access to the data by using the Build permission.
 
 The Build permission type is only relevant for datasets. When you give users Build permission, they can build new content on a dataset, such as reports, dashboards, pinned tiles from Q&A, and Insights Discovery. They can also build new content on the dataset outside Power BI, such as Excel sheets via Analyze in Excel, XMLA, and export underlying data.
 
@@ -40,11 +40,11 @@ You give Build permission for a dataset in a few different ways:
 
 You can remove a person's Build permission for a dataset. If you do, they can still see the report built on the shared dataset, but they can no longer edit it. See the next section for details.
 
-## Remove Build permission
+## Remove Build permission for a dataset
 
-At some point, you may need to remove Build permission for some users. 
+At some point, you may need to remove Build permission for some users of a shared dataset. 
 
-1. In the workspace, go to the **Datasets** list page. 
+1. In a workspace, go to the **Datasets** list page. 
 1. Select the ellipsis (...) next to the dataset > **Manage permission**.
 
     ![Manage permissions](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
@@ -55,7 +55,7 @@ At some point, you may need to remove Build permission for some users.
 
     They can still see the report built on the shared dataset, but they can no longer edit it.
 
-### Remove Build permission for an app
+### Remove Build permission for a dataset in an app
 
 Say you've distributed an app from a workspace to a group of people. Later, you decide to remove access to the app for some people. Removing their access to the app doesn't automatically remove their build and reshare permissions. That's an extra step. 
 
