@@ -67,7 +67,7 @@ Other data sources may work even though they aren't on the supported list.
 | SharePoint Online List |Yes |No |No |
 | Snowflake |Yes |No |No |
 | Sybase Database |Yes |Yes |No |
-| Teradata Database |Yes |Yes |Yes |
+| Teradata |Yes |Yes |Yes |
 | Text/CSV |Yes |Yes |No |
 | Web |Yes |Yes |No |
 | XML |Yes |Yes |No |
