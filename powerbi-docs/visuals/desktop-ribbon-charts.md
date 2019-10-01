@@ -47,7 +47,7 @@ This tutorial uses the [Retail Analysis sample PBIX file](http://download.micros
 
     Since the dataset contains data for only one year, we removed the **Year** and **Quarter** field from the **Axis** well. 
 
-3. The ribbon chart shows rank for every month. Notice how rank changes across time.  For example, the Home category moves from second to fifth from February to March.
+3. The ribbon chart shows rank for every month. Notice how rank changes across time. For example, the Home category moves from second to fifth from February to March.
 
     ![ribbon chart](media/desktop-ribbon-charts/power-bi-ribbon.png)
 
