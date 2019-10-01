@@ -67,7 +67,7 @@ Since the ribbon chart does not have y-axis labels, you may want to add data lab
 
 ![formatting options for data labels](media/desktop-ribbon-charts/power-bi-labels.png)
 
-Set formatting options for your data labels.  In this example, we've set the text color to white and display units to thousands.
+Set formatting options for your data labels. In this example, we've set the text color to white and display units to thousands.
 
 ![ribbon template on Visualization pane](media/desktop-ribbon-charts/power-bi-data-labels.png)
 
