@@ -1444,11 +1444,13 @@
       href: service-admin-power-bi-security.md
 - name: Guidance
   items:
-  - name: "Best practices for dataflows"
-    href: service-dataflows-best-practices.md     
+  - name: "Overview"
+    href: guidance/overview.md       
   - name: "What is a star schema?"
     href: guidance/star-schema.md
   - name: "Reduce data model size"
     href: guidance/import-modeling-data-reduction.md
   - name: "DIVIDE function vs divide operator (/)"
     href: guidance/dax-divide-function-operator.md
+  - name: "Best practices for dataflows"
+    href: service-dataflows-best-practices.md  

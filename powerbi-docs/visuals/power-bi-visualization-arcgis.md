@@ -329,6 +329,8 @@ When a user signs up for a Plus subscription offered by Esri through ArcGIS Maps
 
 For technical detailed questions about how Esri’s ArcGIS Maps for Power BI works, reach out to Esri through their support site.
 
+**What data is sent to Esri?**
+You can read about what data is transferred to Esri on their [documentation](https://doc.arcgis.com/en/maps-for-powerbi/get-started/data-transfer.htm).
 
 **Is there any charge for using ArcGIS Maps for Power BI?**
 
