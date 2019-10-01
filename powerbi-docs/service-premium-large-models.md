@@ -91,7 +91,7 @@ You should consider the impact of eviction on large models. Despite relatively f
 
 ## Checking dataset size
 
-After loading historical data, you can use [SSMS](sql/ssms/download-sql-server-management-studio-ssms) through the [XMLA endpoint](service-premium-connect-tools.md) to check the estimated dataset size in the model properties window.
+After loading historical data, you can use [SSMS](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) through the [XMLA endpoint](service-premium-connect-tools.md) to check the estimated dataset size in the model properties window.
 
 ![Estimated dataset size](media/service-premium-large-models/estimated-dataset-size.png)
 
