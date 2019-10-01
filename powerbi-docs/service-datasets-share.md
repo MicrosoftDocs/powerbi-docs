@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 ---
 # Share a dataset (preview)
 
-As a creator of *data models* in Power BI Desktop, you're creating *datasets* that you can distribute in the Power BI service. Then other report creators can use your datasets as a basis for their own reports. In this article, you learn how to share your datasets. To learn how to give and remove access to the dataset, read about the [Build permission](service-datasets-build-permissions.md).
+As a creator of *data models* in Power BI Desktop, you're creating *datasets* that you can distribute in the Power BI service. Then other report creators can use your datasets as a basis for their own reports. In this article, you learn how to share your datasets. To learn how to give and remove access to your shared datasets, read about the [Build permission](service-datasets-build-permissions.md).
 
 ## Steps to sharing your dataset
 
