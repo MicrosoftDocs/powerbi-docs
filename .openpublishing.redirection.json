@@ -26,6 +26,11 @@
           "redirect_document_id": false
         },
         {
+          "source_path": "powerbi-docs/guided-learning/exploringdata.yml",
+          "redirect_url": "/learn/modules/explore-data-power-bi/",
+          "redirect_document_id": false
+        },
+        {
           "source_path": "powerbi-docs/guided-learning/publishingandsharing.yml",
           "redirect_url": "/learn/modules/publish-share-power-bi/",
           "redirect_document_id": false
