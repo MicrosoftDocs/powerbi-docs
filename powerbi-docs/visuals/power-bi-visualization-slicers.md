@@ -53,7 +53,7 @@ This tutorial uses the [Retail Analysis sample PBIX file](http://download.micros
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
 2. On the Overview page, with nothing selected on the canvas, select the **Slicer** icon ![slicer icon](media/power-bi-visualization-slicers/slicer-icon.png) in the **Visualizations** pane to create a new slicer. 
-3. With the new slicer selected, from the Fields pane, select **District** > **District Manager** to populate the slicer. The new slicer is a list with selection boxes before the names. 
+3. With the new slicer selected, from the Fields pane, select **District** > **DM** to populate the slicer. The new slicer is a list with selection boxes before the names. 
     
     ![new slicer](media/power-bi-visualization-slicers/power-bi-new-slicer.png)
     
