@@ -706,6 +706,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/consumer/end-user-browsers.md",
+            "redirect_url": "/power-bi/power-bi-browsers",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-focus-mode.md",
             "redirect_url": "/power-bi/consumer/end-user-focus",
             "redirect_document_id": true
