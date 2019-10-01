@@ -17,6 +17,31 @@ This change log is for Power BI Report Server and lists new items along with bug
 
 For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
 
+## September 2019
+
+- **Power BI Report Server**          
+    - *Version 1.6.7206.38019 (Build 15.0.1102.597), Released: September 26, 2019*
+        - Security updates
+        - Bug Fixes
+           - Paginated Reports
+             - Fix for accessibility issues encountered while using IE and Edge.
+             - Fix for SAP HANA issues while testing connection.
+             - Fix for issues found while providing list of email addresses.
+             - Fix for for Power BI reports that use a DirectQuery data source and integrated authentication.
+             - Fix for Paginated reports to render with filter parameters when snapshot is enabled.
+             - Fix for double execution of stored procedures during report execution.
+             - Fix for default service account being granted SQL Server login permissions, when custom service account is configured to run the Power BI Report Server.
+             - Fix for accessing models meanwhile refreshing in Japanese time zone.
+             - Fix for stale models when a new version of the report is uploaded during refresh.
+             - Fix for parameter values that contain the '&' character'.
+         - Programmability
+             - Updated Web API: /PowerBIReports({Id})/DataSources (PATCH) to allow connection string updates.
+         
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.73.5586.821 (September 2019), Released: September 26, 2019* (new build and new version)
+    - Contains changes required for connection with Power BI Report Server (September 2019)
+
+
 ## May 2019
 
 - **Power BI Report Server**          

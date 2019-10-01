@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/06/2019
+ms.date: 09/17/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
