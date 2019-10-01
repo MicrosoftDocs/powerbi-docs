@@ -18,7 +18,7 @@ As a creator of *data models* in Power BI Desktop, you can share them as *datase
 
 The Build permission type is only relevant for datasets. When you give users Build permission, they can build new content on a dataset, such as reports, dashboards, pinned tiles from Q&A, and Insights Discovery. They can also build new content on the dataset outside Power BI, such as Excel sheets via Analyze in Excel, XMLA, and export underlying data.
 
-## How you give Build permission
+## Ways to give Build permission
 
 You give Build permission for a dataset in a few different ways:
 
