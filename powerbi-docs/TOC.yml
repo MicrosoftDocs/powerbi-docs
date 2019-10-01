@@ -913,6 +913,8 @@
       href: service-admin-premium-monitor-portal.md
     - name: Configure incremental refresh
       href: service-premium-incremental-refresh.md
+    - name: Configure large models (preview)
+      href: service-premium-large-models.md
     - name: Configure Multi-Geo
       href: service-admin-premium-multi-geo.md
     - name: Bring your own encryption keys
