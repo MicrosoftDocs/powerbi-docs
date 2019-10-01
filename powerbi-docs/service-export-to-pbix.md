@@ -22,7 +22,7 @@ There are a few limitations and considerations to keep in mind, which are discus
 
 ## Download the report as a .pbix file
 
-You can only download reports [created with Power BI Desktop](guided-learning/publishingandsharing.yml?tutorial-step=2) after November 23, 2016, and updated since then. If it was created before then, the **Download report** menu option in the Power BI service is grayed out.
+You can only download reports [created with Power BI Desktop](/learn/modules/publish-share-power-bi/2-publish-reports) after November 23, 2016, and updated since then. If it was created before then, the **Download report** menu option in the Power BI service is grayed out.
 
 To download the .pbix file, follow these steps:
 
