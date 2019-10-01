@@ -23,7 +23,7 @@ Here's what's different. In the new workspaces, you can:
 - Use more granular workspaces roles for more flexible permissions management in a workspace.
 
 > [!NOTE]
-> To enforce row-level security (RLS) for Power BI Pro users browsing content in a workspace, continue to use [classic workspaces](service-create-workspaces.md). Select the **Members can only view Power BI content** option. Alternatively, publish an Power BI app to those users, or use sharing to distribute content. The forthcoming Viewer Role will enable this scenario in future in new workspace experience workspaces.
+> To enforce row-level security (RLS) for Power BI Pro users browsing content in a workspace, assign the users the Viewer Role.
 
 For more background, see the [new workspaces](service-new-workspaces.md) article.
 
@@ -37,7 +37,7 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
    
      ![New workspace experience](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     If you select **Revert to classic**, you create a workspace based on an Office 365 Group. Use this option if you need the **Members can only view Power BI content** option to enforce row-level security (RLS) for workspace members.
+     If you select **Revert to classic**, you create a [workspace based on an Office 365 Group](service-create-workspaces.md). 
 
 2. Give the workspace a name. If the name isn't available, edit it to come up with a unique name.
    
