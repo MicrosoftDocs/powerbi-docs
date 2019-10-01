@@ -7,7 +7,7 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/20/2019
+ms.date: 10/01/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -16,7 +16,9 @@ LocalizationGroup: Share your work
 
 As a creator of *data models* in Power BI Desktop, you can share them as *datasets* in the Power BI service. Then report creators can easily discover and reuse the datasets you've shared. Learn how you control who has access to the data by using Build permission.
 
-The Build permission type is only relevant for datasets. With it, users can build new content on a dataset, such as reports, dashboards, pinned tiles from Q&A, and Insights Discovery. They can also build new content on the dataset outside Power BI, such as Excel sheets via Analyze in Excel, XMLA, and export underlying data.
+The Build permission type is only relevant for datasets. When you give users Build permission, they can build new content on a dataset, such as reports, dashboards, pinned tiles from Q&A, and Insights Discovery. They can also build new content on the dataset outside Power BI, such as Excel sheets via Analyze in Excel, XMLA, and export underlying data.
+
+## How users get Build permission
 
 Users get Build permission in different ways:
 
@@ -40,16 +42,30 @@ You can remove a person's Build permission for a dataset. If you do, they can st
 
 ## Remove Build permission
 
-Say you've distributed an app to a group of people. Later, you decide to remove access to the app for some people. Removing their access to the app doesn't automatically remove their build and reshare permissions.  
+At some point, you may need to remove Build permission for some users. 
 
-1. In the workspace list page, select **Update app**. 
+1. In the workspace, go to the **Datasets** list page. 
+1. Select the ellipsis (...) next to the dataset > **Manage permission**.
+
+    ![Manage permissions](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
+
+1. Select the ellipsis (...) next to their name > **Remove build**.
+
+    ![Remove Build permission](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
+
+    They can still see the report built on the shared dataset, but they can no longer edit it.
+
+### Remove Build permission for an app
+
+Say you've distributed an app from a workspace to a group of people. Later, you decide to remove access to the app for some people. Removing their access to the app doesn't automatically remove their build and reshare permissions. That's an extra step. 
+
+1. In a workspace list page, select **Update app**. 
 
     ![Update app](media/service-datasets-build-permissions/power-bi-app-update.png)
 
 1. On the **Permissions** tab, select the **X** to delete the person or group. 
 
     ![Select the X](media/service-datasets-build-permissions/power-bi-app-delete-user.png)
-
 1. Select **Update app**.
 
     You see a message explaining that you need to go to **Manage permissions** to remove Build permission for users with existing access. 

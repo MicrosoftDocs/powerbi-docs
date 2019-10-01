@@ -74,9 +74,9 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 | View and interact with an item. |  X | X  | X  | X  |
 
 > [!NOTE]
->People with Viewer permissions can copy a report, and create a report in another workspace based on a dataset in this workspace if they meet both of these criteria:
+>People with Viewer permissions can copy a report, and create a report in another workspace based on a dataset in this workspace, if they meet both of these criteria:
 >- They have a Power BI Pro license. 
->- The dataset owner gives them [build permission for the dataset](service-datasets-build-permissions.md). 
+>- The dataset owner gives them [Build permission for the dataset](service-datasets-build-permissions.md). 
  
 ## Licensing
 Everyone you add to a workspace in the shared capacity needs a Power BI Pro license. In the workspace, these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. 
