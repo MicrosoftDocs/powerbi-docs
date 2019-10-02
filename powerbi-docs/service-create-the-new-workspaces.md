@@ -111,21 +111,6 @@ After you've configured the OneDrive location, you get to it in the same way you
 
     ![Workspace files location - get data](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
 
-## Add content to your workspace
-
-After you've created a new workspace experience workspace, it's time to add content to it. Adding content is similar in the new and classic workspaces. Use the Create button or use Get Data to add content to your workspace.
-
-1. In the **Welcome** screen for your new workspace, you can add content. 
-
-    ![New workspace Welcome screen](media/service-create-the-new-workspaces/power-bi-workspace-get-data.png)
-
-1. For example, select **Samples** > **Customer Profitability Sample**.
-
-> [!NOTE]
-> You can't add organizational content packs or third-party content packs to the new workspaces. Apps are available for many third-party content packs you previously used. Use classic workspaces if you need to continue using content packs. Content packs are deprecated, so it's a best practice to use apps instead.
-
-When you view content in the content list of a workspace, the workspace name is listed as the owner.
-
 ### Connecting to third-party services in new workspaces
 
 In the new workspaces experience, we're making a change to focus on *apps*. Apps for third-party services make it easy for users to get data from the services they use, such as Microsoft Dynamics CRM, Salesforce, or Google Analytics.
