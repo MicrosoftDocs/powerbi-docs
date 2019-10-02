@@ -875,16 +875,6 @@
       href: power-bi-browsers.md
   - name: Resources
     items:
-    - name: Whitepapers
-      items: 
-      - name: "Whitepapers overview"
-        href: whitepapers.md
-      - name: "Power BI security whitepaper"
-        href: whitepaper-powerbi-security.md
-      - name: "Power BI premium deployment"
-        href: whitepaper-powerbi-premium-deployment.md
-      - name: "Distribute Power BI externally using Azure Active Directory B2B"
-        href: whitepaper-azure-b2b-power-bi.md
     - name: "Videos"
       href: videos.md
     - name: "Webinars"
@@ -1458,3 +1448,13 @@
     href: guidance/dax-divide-function-operator.md
   - name: "Best practices for dataflows"
     href: service-dataflows-best-practices.md  
+  - name: Whitepapers
+    items: 
+    - name: "Whitepapers overview"
+      href: whitepapers.md
+    - name: "Power BI security whitepaper"
+      href: whitepaper-powerbi-security.md
+    - name: "Power BI premium deployment"
+      href: whitepaper-powerbi-premium-deployment.md
+    - name: "Distribute Power BI externally using Azure Active Directory B2B"
+      href: whitepaper-azure-b2b-power-bi.md
