@@ -1,6 +1,41 @@
 {
     "redirections": [
         {
+          "source_path": "powerbi-docs/guided-learning/gettingstarted.yml",
+          "redirect_url": "/learn/modules/get-started-with-power-bi/",
+          "redirect_document_id": false
+        },        
+        {
+          "source_path": "powerbi-docs/guided-learning/gettingdata.yml",
+          "redirect_url": "/learn/modules/get-data-power-bi/",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "powerbi-docs/guided-learning/modeling.yml",
+          "redirect_url": "/learn/modules/model-data-power-bi/",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "powerbi-docs/guided-learning/visualizations.yml",
+          "redirect_url": "/learn/modules/visuals-in-power-bi/",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "powerbi-docs/guided-learning/powerbiandexcel.yml",
+          "redirect_url": "/learn/modules/get-data-power-bi/",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "powerbi-docs/guided-learning/exploringdata.yml",
+          "redirect_url": "/learn/modules/explore-data-power-bi/",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "powerbi-docs/guided-learning/publishingandsharing.yml",
+          "redirect_url": "/learn/modules/publish-share-power-bi/",
+          "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-gateway-sso-kerberos-resource.md",
             "redirect_url": "/power-bi/service-gateway-sso-kerberos",
             "redirect_document_id": false
