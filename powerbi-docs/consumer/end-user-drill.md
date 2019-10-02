@@ -27,7 +27,7 @@ Are you not sure which Power BI visualizations contain a hierarchy? Hover over a
 ![Screenshot of the drill down one level icon.](./media/end-user-drill/power-bi-drill-icon4.png)  ![Screenshot of the turn drill down on and off icon.](./media/end-user-drill/power-bi-drill-icon2.png)  ![Screenshot of the drill down all fields at once icon.](./media/end-user-drill/power-bi-drill-icon3.png)
 ![drill up icon](./media/end-user-drill/power-bi-drill-icon5.png) ![Screenshot of the expand down icon.](./media/end-user-drill/power-bi-drill-icon6.png)  
 
-Dates are a unique type of hierarchy. When you add a date field to a visualization, Power BI automatically adds a time hierarchy that contains year, quarter, month, and day. For more info, see [visualization hierarchies and drill down behavior](../guided-learning/visualizations.yml?tutorial-step=18) or watch the video below.
+Dates are a unique type of hierarchy. When you add a date field to a visualization, Power BI automatically adds a time hierarchy that contains year, quarter, month, and day. For more info, see [visualization hierarchies and drill down behavior](/learn/modules/model-data-power-bi/6-explore-time-based-data) or watch the video below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MNAaHw4PxzE?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
