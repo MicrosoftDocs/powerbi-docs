@@ -138,7 +138,7 @@ To follow along, download the [Customer Profitability sample](sample-customer-pr
 Let's see how the drillthrough filter works.
 
 1. Start on the **Team Scorecard** report page.    
-2. Let's say you're Andrew Ma and you want to see the Team Executive report page filtered to just your data.  From the top-left area chart, right click any green data point to open the Drillthrough menu option.
+2. Let's say you're Andrew Ma and you want to see the Team Executive report page filtered to just your data.  From the top-left area chart, right-click any green data point to open the Drillthrough menu option.
    
     ![Start the drillthrough action](media/power-bi-report-add-filter/power-bi-drillthrough.png)
 3. Select **Drillthrough > Team Executive** to drillthrough to the report page named **Team Executive**. The page is filtered to show information about the data point from which you right-clicked; in this case Andrew Ma. Only the field that is in the Drillthrough filters well gets passed through to the drillthrough report page.  

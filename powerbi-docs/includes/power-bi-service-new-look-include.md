@@ -13,5 +13,5 @@ ms.custom: include file
 
 > [!NOTE]
 > Power BI is moving to a new look, to make using the Power BI service more intuitive. You can try it yourself by turning the **New look on**  ![New look on toggle](media/power-bi-service-new-look-include/power-bi-new-look-on.png).
-
-> As a result of these changes, some elements in the service may not be where you expect, and some images in the documentation may not match what you see in the service. See [the 'new look' of the Power BI service](../service-new-look.md) for more information.
+>
+> Because of these changes, some elements in the service may not be where you expect, and some images in the documentation may not match what you see in the service. See [the 'new look' of the Power BI service](../service-new-look.md) for more information.
