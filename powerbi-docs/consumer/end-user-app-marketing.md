@@ -13,7 +13,7 @@ ms.author: mihart
 LocalizationGroup: Share your work
 ---
 # Install and use the sample Sales and Marketing app in the Power BI service
-Now that you have a [basic understanding of how to get Power BI content](end-user-apps-view.md), let's use Microsoft AppSource (appsource.com) to get an app. 
+Now that you have a [basic understanding of how to get Power BI content](end-user-app-view.md), let's use Microsoft AppSource (appsource.com) to get an app. 
 
 
 ## Microsoft AppSource (appsource.com)
