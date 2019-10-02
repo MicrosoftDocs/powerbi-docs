@@ -7,7 +7,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 10/02/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -63,7 +63,7 @@ For more background, see the [new workspaces](service-new-workspaces.md) article
 
 ## Workspace contact list
 
-The new workspace contact list allows you to specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can customize the list. Users or groups listed in the contact list will be shown in the user interface (UI) to help users get help related to the workspace.
+You can specify which users receive notification about issues occurring in the workspace. By default, any user or group specified as a workspace admin is notified, but you can customize the list by adding them to the *contact list*. Users or groups in the contact list are listed in the user interface (UI) to help users get help related to the workspace.
 
 1. Access the new **Contact list** setting in one of two ways:
 
@@ -74,6 +74,9 @@ The new workspace contact list allows you to specify which users receive notific
     ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
 2. Under **Advanced** > **Contact list**, accept the default, **Workspace admins**, or add your own list of **Specific users or groups**. 
+
+    ![Workspace contacts](media/service-create-the-new-workspaces/power-bi-workspace-contacts.png)
+
 3. Select **Save**.
 
 ## Workspace OneDrive
@@ -133,9 +136,7 @@ In the new workspace experience, you can't create or consume organizational cont
 
 1. In the workspace content list, because you're an admin you see a new action, **Access**.
 
-    ![Workspaces content list](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
-
-1. Select **Access**.
+    ![Workspaces content list](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
 1. Add security groups, distribution lists, Office 365 groups, or individuals to these workspaces as members, contributors, or admins. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
 
