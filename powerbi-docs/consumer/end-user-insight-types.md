@@ -4,7 +4,6 @@ description: Quick Insights and View insights with Power BI.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -46,7 +45,7 @@ Detects cases where data points are not far from the mean.
 ## Majority (Major factors)
 Finds cases where a majority of a total value can be attributed to a single factor when broken down by another dimension.  
 
-![Major fators example](./media/end-user-insight-types/pbi_auto_insight_types_majority.png)
+![Major factors example](./media/end-user-insight-types/pbi_auto_insight_types_majority.png)
 
 ## Overall trends in time series
 Detects upward or downward trends in time series data.
@@ -70,8 +69,6 @@ For data across a time series, detects when there are specific dates or times wi
 
 ## Next steps
 [Power BI insights](end-user-insights.md)
-
-If you own a dataset, [optimize it for insights](../service-insights-optimize.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 
