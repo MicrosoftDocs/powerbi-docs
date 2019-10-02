@@ -137,7 +137,7 @@ In the new workspace experience, you can't create or consume organizational cont
 
 1. In the workspace content list, because you're an admin you see a new action, **Workspace access**. Select it.
 
-    ![Workspaces content list](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
+    ![Workspaces access](media/service-create-the-new-workspaces/power-bi-workspace-access-ellipsis.png)
 
 1. Add security groups, distribution lists, Office 365 groups, or individuals to these workspaces as members, contributors, or admins. See [Roles in the new workspaces](service-new-workspaces.md#roles-in-the-new-workspaces) for an explanation of the different roles.
 
