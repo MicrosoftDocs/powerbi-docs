@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/25/2019
+ms.date: 10/01/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
@@ -22,6 +22,8 @@ This article explains how to add a page filter, visualization filter, report fil
 ![New filter experience](media/power-bi-report-add-filter/power-bi-filter-reading.png)
 
 Power BI offers a number of different kinds of filters, from the manual and automatic to the drill-through and pass-through. Read about the [different kinds of filters](power-bi-report-filter-types.md).
+
+[!INCLUDE [power-bi-service-new-look-include](includes/power-bi-service-new-look-include.md)]
 
 ## Filters in Editing view or Reading view
 You can interact with reports in two different views: Reading view and Editing view. The filtering capabilities available to you depend on which view you're in. Read all [about filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md) for details.
@@ -136,7 +138,7 @@ To follow along, download the [Customer Profitability sample](sample-customer-pr
 Let's see how the drillthrough filter works.
 
 1. Start on the **Team Scorecard** report page.    
-2. Let's say you're Andrew Ma and you want to see the Team Executive report page filtered to just your data.  From the top-left area chart, right click any green data point to open the Drillthrough menu option.
+2. Let's say you're Andrew Ma and you want to see the Team Executive report page filtered to just your data.  From the top-left area chart, right-click any green data point to open the Drillthrough menu option.
    
     ![Start the drillthrough action](media/power-bi-report-add-filter/power-bi-drillthrough.png)
 3. Select **Drillthrough > Team Executive** to drillthrough to the report page named **Team Executive**. The page is filtered to show information about the data point from which you right-clicked; in this case Andrew Ma. Only the field that is in the Drillthrough filters well gets passed through to the drillthrough report page.  

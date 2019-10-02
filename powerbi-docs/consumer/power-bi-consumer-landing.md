@@ -1,15 +1,14 @@
 ---
-title: Power BI for report consumers
-description: Getting started with Power BI? Get to know the features and capabilities of Power BI, and see what you can do with them as a Power BI consumer or end user.
+title: Power BI for consumers
+description: Getting started with Power BI? Get to know the features and capabilities of the Power BI service, and see what you can do with them as a Power BI consumer or end user.
 author: mihart
 manager: kvivek
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: hub-page
-ms.date: 09/11/2019
+ms.date: 10/01/2019
 ms.author: mihart
 layout: HubPage
-ms.custom: seodec18
 
 LocalizationGroup: Get started
 # Customer intent: As a person who consumes and interacts with content in Power BI, I want to get familiar with the pieces, and what I can do with them. 
@@ -102,7 +101,8 @@ LocalizationGroup: Get started
                                                 <p><a href="/power-bi/consumer/end-user-experience" data-linktype="absolute-path">Navigation - find the content you need, quickly</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-q-and-a" data-linktype="absolute-path">Q&amp;A - ask questions using natural language</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-report-filter" data-linktype="absolute-path">Interact with filters and slicers</a></p>
-                                                <p><a href="/power-bi/consumer/end-user-visual-type" data-linktype="absolute-path">Learn about the types of visuals you see in Power B</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-visual-type" data-linktype="absolute-path">Learn about the types of visuals</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-app-marketing" data-linktype="absolute-path">Download a sample app</a></p>
                                             </div>
                                         </div>
                                     </div>
