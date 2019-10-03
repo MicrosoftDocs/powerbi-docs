@@ -7,35 +7,33 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 09/02/2019
 ms.author: mihart
 
 LocalizationGroup: Share your work
 ---
 # Install and use the sample Sales and Marketing app in the Power BI service
-Now that you have a [basic understanding of how to get Power BI content](end-user-app-view.md), let's use Microsoft AppSource (appsource.com) to get an app. 
+Now that you have a [basic understanding of how to get Power BI content](end-user-app-view.md), let's get the Marketing and Sales app from Microsoft AppSource (appsource.com). 
 
 
 ## Microsoft AppSource (appsource.com)
- Microsoft AppSource contains many apps created by colleagues and the community. Only apps that you can access (i.e., the app author has given you or given everyone permission) are displayed.
+Here is the link to the app: [Marketing and sales app](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample?tab=Overview). Selecting this link opens the download page for this app on Microsoft AppSource. 
 
-In this example, we'll open one of the Microsoft sample apps. On AppSource you'll find apps for many of the services that you use to run your business.  Services such as Salesforce, Microsoft Dynamics, Google Analytics, GitHub, Zendesk, Marketo, and many more. To learn more, visit [Apps for services you use with Power BI](../service-connect-to-services.md). 
+1. You may be asked to sign in before you can get the app. Sign in using the same email address you use for Power BI. 
 
-1. In a browser, open https://appsource.microsoft.com, and select **Power BI apps**.
+    ![AppSource sign in screen  ](./media/end-user-app-marketing/power-bi-sign-in.png)
 
-    ![AppSource website with Power BI apps selected  ](./media/end-user-apps/power-bi-appsource.png)
+2. Select **Get it now**. 
 
-
-2. Select **See all** to display the list of all Power BI apps currently available on AppSource. Scroll or search for the app named **Microsoft Sample - Sales & Marketing**.
-
-    ![AppSource website with Power BI Sales & Marketing app highlighted  ](./media/end-user-apps/power-bi-appsource-samples.png)
-
-3. Select **Get it now** and agree to the terms of use.
-
-    ![AppSource website terms of use ](./media/end-user-apps/power-bi-permission.png)
+    ![AppSource website with Power BI apps selected  ](./media/end-user-app-marketing/power-bi-get-now.png)
 
 
-4. Confirm that you want to install this app.
+3. If this is your first time signing in to AppSource, you'll need to agree to the terms of use. 
+
+    ![AppSource terms of use screen  ](./media/end-user-app-marketing/power-bi-term.png)
+
+
+4. The Power BI service opens. Confirm that you want to install this app.
 
     ![Install this app?  ](./media/end-user-apps/power-bi-app-install.png)
 
@@ -52,7 +50,7 @@ In this example, we'll open one of the Microsoft sample apps. On AppSource you'l
 
     ![Explore with sample data](./media/end-user-apps/power-bi-explore.png)
 
-7.  Your new app opens with a dashboard. The app *designer* could've set the app to open to a report instead.  
+7.  Your new app opens with a dashboard. The app *designer* could have set the app to open to a report instead.  
 
     ![Explore with sample data](./media/end-user-apps/power-bi-new-app.png)
 
