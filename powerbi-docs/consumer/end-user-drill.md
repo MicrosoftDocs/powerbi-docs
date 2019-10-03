@@ -52,7 +52,7 @@ You have two ways for accessing the drill down, drill up, and expand features fo
 ### Drill down all fields at once
 ![The drill down icon](./media/end-user-drill/power-bi-drill-icon3.png)
 
-You have several ways to drill into your visual. Selecting the **Drill down** icon takes you to the next level in the hierarchy. If you're looking at the **Territory** level for Kentucky and Tennessee, you can drill down to city level for both states, then postal code level for both states, and, finally, the store name level for both states. Each step in the path shows you new information.
+You have several ways to drill into your visual. Selecting the drill down icon takes you to the next level in the hierarchy. If you're looking at the **Territory** level for Kentucky and Tennessee, you can drill down to city level for both states, then postal code level for both states, and, finally, the store name level for both states. Each step in the path shows you new information.
 
 ![Diagram showing the drill pathway](./media/end-user-drill/power-bi-drill-path.png)
 
@@ -71,11 +71,11 @@ You can also choose to drill down or expand on one field at a time.
 ### Drill down one field at a time
 
 
-1. Select the drill-down icon to turn it on ![Screenshot of drill down on/off icon turned on.](./media/end-user-drill/power-bi-drill-icon2.png).
+1. Select the drill down icon to turn it on ![Screenshot of drill down on/off icon turned on.](./media/end-user-drill/power-bi-drill-icon2.png).
 
     Now you have the option of drilling down **one field at a time**.
 
-    ![Screenshot of visual with arrow pointing at drill-down on/off icon turned on.](media/end-user-drill/power-bi-drill-icon-selected.png)
+    ![Screenshot of visual with arrow pointing at drill down on/off icon turned on.](media/end-user-drill/power-bi-drill-icon-selected.png)
 
     If you don't turn on drill down, selecting a visual element (like a bar, bubble, or leaf) won't drill down. Instead, it will cross-filter the other charts on the report page.
 
@@ -129,7 +129,7 @@ The following table shows the results of drilling down all fields at once from t
 
 ![Screenshot of showing data for all four levels of drill down.](./media/end-user-drill/power-bi-show-data.png)
 
-Notice that the totals are the same for **City**, **PostalCode**, and **Name**. This will not always be the case.  But for this data, there is only one store in each postal code and in each city.  
+Notice that the totals are the same for **City**, **PostalCode**, and **Name**. This won't always be the case.  But for this data, there's only one store in each postal code and in each city.  
 
 
 
