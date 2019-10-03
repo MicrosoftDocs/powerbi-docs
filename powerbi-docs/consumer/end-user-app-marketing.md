@@ -50,7 +50,7 @@ Here is the link to the app: [Marketing and sales app](https://appsource.microso
 
     ![Explore with sample data](./media/end-user-apps/power-bi-explore.png)
 
-7.  Your new app opens with a dashboard. The app *designer* could've set the app to open to a report instead.  
+7.  Your new app opens with a dashboard. The app *designer* could have set the app to open to a report instead.  
 
     ![Explore with sample data](./media/end-user-apps/power-bi-new-app.png)
 

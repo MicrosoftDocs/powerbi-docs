@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 10/02/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 At its most basic, a ***visualization*** (or *visual*), is a type of chart built by Power BI *designers* using the data in reports and datasets. 
 
-Visuals are found on dashboards, in reports, and can be created on-the-fly using Q&A. When a designer creates a visual in a report, they can *pin* that visual to a dashboard. A [visual on a dashboard is called a *tile*](end-user-tiles.md). This dashboard has eight tiles. 
+Visuals are found on dashboards, in reports, and can be created on-the-fly using Power BI Q&A. When a designer creates a visual in a report, they can *pin* that visual to a dashboard. A [visual on a dashboard is called a *tile*](end-user-tiles.md). This dashboard has eight tiles. 
 
 ![Dashboard with tiles](media/end-user-visualizations/power-bi-dashboard.png)
 
@@ -42,10 +42,10 @@ For many of these options, your administrator or the *designer* can disable your
 |---------|---------|---------|--------|
 |[Add comments to a visual for yourself or start a conversation with colleagues about the visual](end-user-comment.md).     |  yes       |   yes      |  no  |
 |[Open and explore the report where the visual was created](end-user-tiles.md).     |    yes     |   na      |  no |
-|[View a list of the filters and slicers that are affecting the visual](end-user-filters.md).     |    no     |   yes      |  yes |
+|[View a list of the filters and slicers that are affecting the visual](end-user-report-filter.md).     |    no     |   yes      |  yes |
 |[Open and explore a visual in Q&A (if the *designer* used Q&A to create the visual)](end-user-q-and-a.md).     |   yes      |   na      |  na  |
 |[Create a visual in Q&A (for exploration, you won't be able to save it)](end-user-q-and-a.md).     |   yes      |   if designer has added Q&A to the report      |  yes  |
-|[Ask Power BI to look for interesting facts or trends](end-user-insights.md) in the visual's data for you.  These are called *insights*.     |    yes     |  for the entire report, not per visual       | no   |
+|[Ask Power BI to look for interesting facts or trends](end-user-insights.md) in the visual's data for you.  These automatically generated visuals are called *insights*.     |    yes     |  for the entire report, not per visual       | no   |
 |[View just one visual at a time using *focus* mode](end-user-focus.md).     | yes        |   yes      | na  |
 |[Look up the last time the visual was refreshed](end-user-fresh.md).     |  yes       |    yes     | na  |
 |[View just one visual at a time, without borders or navigation bars, using *full screen*  or *focus* mode](end-user-focus.md).     |   yes      |  yes       | by default  |
@@ -57,9 +57,9 @@ For many of these options, your administrator or the *designer* can disable your
 | [Change the way the visual is sorted](end-user-change-sort.md). | no  | yes  | can change sort by rewording the question  |
 | Add a spotlight to a visual. | no  | yes  |  no |
 | [Export to Excel.](end-user-export.md) | yes | yes | no|
-| [Create an alert](and-user-alerts.md) to notify you when a value exceeds a threshold you've set.  | yes  | no  | no |
-| [Cross filter and cross highlight the other visuals on the page](and-user-filters.md).  | no      | yes  | no  |
-| [Drill a visual that has a hierarchy](and-user-drill.md).  | no  | yes   | no |
+| [Create an alert](end-user-alerts.md) to notify you when a value exceeds a threshold you've set.  | yes  | no  | no |
+| [Cross filter and cross highlight the other visuals on the page](end-user-filters.md).  | no      | yes  | no  |
+| [Drill a visual that has a hierarchy](end-user-drill.md).  | no  | yes   | no |
 
 ## Next steps
 Back to [Basic concepts for consumers](end-user-basic-concepts.md)    
