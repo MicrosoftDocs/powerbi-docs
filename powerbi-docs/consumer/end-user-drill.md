@@ -17,12 +17,12 @@ This article shows how to drill down in a visual in the Microsoft Power BI servi
 
 ## Drill requires a hierarchy
 
-When a visual has a hierarchy, you can drill down to reveal additional details. For example, you might have a visual that looks at Olympic medal count by a hierarchy made up of sport, discipline, and event. By default, the visual would show medal count by sport -- gymnastics, skiing, aquatics, and so on. But, because it has a hierarchy, selecting one of the visual elements (like a bar, line, or bubble), would display an increasingly more-detailed picture. Selecting the **aquatics** element would show you data for swimming, diving, and water polo.  Selecting the **diving** element would show you details for springboard, platform, and synchronized diving events.
+When a visual has a hierarchy, you can drill down to reveal additional details. For example, you might have a visual that looks at Olympic medal count by a hierarchy made up of sport, discipline, and event. By default, the visual would show medal count by sport: gymnastics, skiing, aquatics, and so on. But, because it has a hierarchy, selecting one of the visual elements (like a bar, line, or bubble), would display an increasingly more-detailed picture. Selecting the **aquatics** element would show you data for swimming, diving, and water polo.  Selecting the **diving** element would show you details for springboard, platform, and synchronized diving events.
 
-Dates are a unique type of hierarchy.  When the report designer adds a date field to a visual, Power BI automatically adds a time hierarchy that contains year, quarter, month, and day. 
+Dates are a unique type of hierarchy.  Report designers often add date hierarchies to visuals. A common date hierarchy is one that contains year, quarter, month, and day. 
 
 ## Figure out which visuals can be drilled
-Not sure which Power BI visuals contain a hierarchy? Hover over a visual. If you see these drill controls in the top corner, your visual has a hierarchy.
+Not sure which Power BI visuals contain a hierarchy? Hover over a visual. If you see a combination of these drill controls at the top, your visual has a hierarchy.
 
 ![Screenshot of the drill icons.](./media/end-user-drill/power-bi-drill-icons.png)  
 
@@ -30,7 +30,7 @@ Not sure which Power BI visuals contain a hierarchy? Hover over a visual. If you
 
 In this example we're using a treemap that has a hierarchy made up of territory, city, postal code, and store name. The treemap, before drilling, looks at total units sold this year by territory. 
 
-![Screenshot of the treemap and its filters.](./media/end-user-drill/power-bi-treemap.png)  
+![Screenshot of the treemap and its filters.](./media/end-user-drill/power-bi-treemaps.png)  
 
 
 ### Two ways to access the drill features
@@ -73,7 +73,7 @@ You can also choose to drill down or expand on one field at a time.
 
 1. Select the drill down icon to turn it on ![Screenshot of drill down on/off icon turned on.](./media/end-user-drill/power-bi-drill-icon2.png).
 
-    Now you have the option of drilling down **one field at a time**.
+    Now you have the option of drilling down **one field at a time** by selecting a visual element. Examples of visual elements are: bar, bubble, and leaf.
 
     ![Screenshot of visual with arrow pointing at drill down on/off icon turned on.](media/end-user-drill/power-bi-drill-icon-selected.png)
 
@@ -99,7 +99,7 @@ You can also choose to drill down or expand on one field at a time.
 
 ### Expand all and expand one field at a time
 
-Having a treemap that shows us only a postal code isn't informative.  So let's expand down one level in the hierarchy.  
+Having a treemap that shows us only a postal code isn't informative.  So let's *expand* down one level in the hierarchy.  
 
 1. With the treemap active, select the *expand down* icon ![Screenshot of the expand down icon.](./media/end-user-drill/power-bi-drill-icon6.png). Your treemap now shows two levels of our hierarchy: postal code and store name.
 
@@ -118,9 +118,9 @@ Having a treemap that shows us only a postal code isn't informative.  So let's e
     ![Screenshot of the treemap showing a tooltip with leaf-specific data.](./media/end-user-drill/power-bi-expand-all.png)
 
 ## Show the data as you drill
-Use **Show data** to get a look behind the scenes. Each time you drill or expand, select **Show data** to see the data being used to build the visual.  This may help you understand how hierarchies, drill, and expand work together to build visuals. 
+Use **Show data** to get a look behind the scenes. Each time you drill or expand, **Show data** displays the data being used to build the visual.  This may help you understand how hierarchies, drill, and expand work together to build visuals. 
 
-In the upper-right corner, select the ellipses (...) then select **Show Data**. 
+In the upper-right corner, select the ellipses (...) then choose **Show Data**. 
 
 ![Screenshot of the ellipses menu.](./media/end-user-drill/power-bi-ellipses.png)
 
