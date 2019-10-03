@@ -118,6 +118,9 @@ You have two ways of getting Power BI Desktop: You can download it as a standalo
 * When you download Power BI Desktop as a standalone installer, you choose the default language when you run the installer, and can change it at a later date.
 * You can also [choose a locale to be used when importing data](#choose-the-locale-for-importing-data-into-power-bi-desktop) for a specific report.
 
+> [!NOTE]
+> If you're installing the version of Power BI Desktop that's optimized for Power BI Report Server, you choose the language when you download. See [Install Power BI Desktop optimized for Power BI Report Server](report-server/install-powerbi-desktop.md) for details.
+
 ### Choose a language for Power BI Desktop 
 1. Install Power BI Desktop [from the Windows Store](http://aka.ms/pbidesktopstore), or as a [standalone installer](http://aka.ms/pbiSingleInstaller).
 2. To change the language, on your computer search for **Windows Settings**. 
