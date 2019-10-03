@@ -3,12 +3,11 @@ title: Frequently asked end-user questions in Power BI
 description: Browse a list of frequently asked questions and answers about the Power BI service and the Power BI mobile apps.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 6/17/2019
+ms.date: 9/26/2019
 ms.author: mihart
 LocalizationGroup: Get started
 ---
@@ -28,27 +27,17 @@ Power BI Pro is an individual license that allows access to all content and capa
 
 Power BI Premium provides dedicated capacity to deliver more consistent performance. It also supports larger data volumes in Power BI. For individual users, Premium enables widespread distribution of content by Pro users and it doesn't require per-user licenses for recipients viewing the content.
 
-## What happens if my Power BI Pro license expires?
-
-There's a grace period after a Power BI Pro license expires. For licenses that are part of a volume license purchase, the grace period is 90 days. If you purchased the license directly, the grace period is 30 days.
-
-Power BI Pro has the same subscription lifecycle as Office 365. For more info, see [What happens to my data and access when my Office 365 for business subscription ends?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
-
 ## What if I have questions about Power BI Premium?
 
 For questions related to Power BI Premium, see [Power BI Premium FAQ](../service-premium-faq.md).
 
-## How do I find out who in my organization has a Power BI account?
-
-You can view the Azure Active Directory Integrated Applications report for Power BI to see the active users within your organization. The Azure AD report doesn't indicate what type of license each user has. It only reports which users have signed in to Power BI and when they logged in. For more info, see [Find Power BI users that have signed in](../service-admin-access-usage.md).
-
 ## What is Power BI Desktop?
 
-Power BI Desktop is a free application you can install right on your own computers. Power BI Desktop works cohesively with the Power BI service.  Data scientists, admins, and developers work with Power BI Desktop to produce reports and make them available to the Power BI service users, like you. Read more about [What is Power BI Desktop](../desktop-what-is-desktop.md).
+Power BI Desktop is a free application you can install right on your own computers. Power BI Desktop works cohesively with the Power BI service.  Data scientists, admins, and developers work with Power BI Desktop to produce reports and make them available to the Power BI service *consumers*, like you. Read more about [What is Power BI Desktop](../desktop-what-is-desktop.md).
 
 ## What do I need to use the Power BI service?
 
-Just a Web browser and work email address. You can sign up with a *.gov* and *.mil* email address. See [Enroll your US Government organization in the Power BI service](../service-govus-signup.md) for more info.
+Just a Web browser and work email address. You can also sign up with a *.gov* and *.mil* email address. See [Enroll your US Government organization in the Power BI service](../service-govus-signup.md) for more info.
 
 ## Why do I have to sign up with my work email?
 
@@ -83,7 +72,7 @@ The following resources are available to help get you started:
 * [Power BI Blog](http://blogs.msdn.com/b/powerbi/)
 * [Webinars](../webinars.md)
 * Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
-* [Get started with Power BI](../service-get-started.md) article
+* [Get started with Power BI as a *consumer*](power-bi-consumer-landing) article
 * [Join our community](https://community.powerbi.com/) and ask questions
 * See [10 tips for getting help](../service-tips-for-finding-help.md) for more suggestions
 
@@ -121,6 +110,7 @@ Like many other Microsoft services and software, Power BI provides an easy way t
 
 ## Next steps
 
-* [What is Power BI?](../power-bi-overview.md)
+* [What is a Power BI consumer?](end-user-consumer.md)
+* [How does a consumer use Power BI?](end-user-reading-view.md)
 * More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 * Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/)
