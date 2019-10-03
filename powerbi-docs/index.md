@@ -78,7 +78,7 @@ ms:date: 06/10/2019
                                 </a>
                             </li>
                             <li>
-                                <a href="developer/what-can-you-do.md">
+                                <a href="developer/index.yml">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
