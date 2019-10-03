@@ -71,7 +71,7 @@ The **Database** category includes the following available data connections for 
 * PostgreSQL Database
 * SQL Server Database
 * Sybase Database
-* Teradata Database
+* Teradata
 * Vertica
 
 The **Power BI** category includes the following available data connections for dataflows:
