@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 9/26/2019
+ms.date: 10/03/2019
 ms.author: mihart
 LocalizationGroup: Get started
 ---
@@ -72,7 +72,7 @@ The following resources are available to help get you started:
 * [Power BI Blog](http://blogs.msdn.com/b/powerbi/)
 * [Webinars](../webinars.md)
 * Getting started videos on our [YouTube Channel](https://www.youtube.com/user/mspowerbi)
-* [Get started with Power BI as a *consumer*](power-bi-consumer-landing) article
+* [Get started with Power BI as a *consumer*](power-bi-consumer-landing.md) article
 * [Join our community](https://community.powerbi.com/) and ask questions
 * See [10 tips for getting help](../service-tips-for-finding-help.md) for more suggestions
 
