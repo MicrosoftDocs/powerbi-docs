@@ -6,6 +6,7 @@
     - name: "What can developers do with Power BI"
       href: what-can-you-do.md
   - name: Power BI visuals
+    expanded: true
     items:
     - name: Overview
       items: 
@@ -84,6 +85,7 @@
       - name: "Creating SSL certificate"
         href: visuals/create-ssl-certificate.md
   - name: Embedded analytics
+    expanded: true
     items:
     - name: Overview
       items: 
@@ -184,6 +186,7 @@
       - name: "Stack Overflow"
         href: https://go.microsoft.com/fwlink/?linkid=848281
   - name: Automation
+    expanded: true
     items:
     - name: Overview
       items:

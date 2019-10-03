@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 09/27/2019
+  ms.date: 10/02/2019
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -41,6 +41,10 @@ landingContent:
             url: https://github.com/Microsoft/PowerBI-Developer-Samples
           - text: "Power BI JavaScript wiki"
             url: https://github.com/Microsoft/powerbi-javascript/wiki
+          - text: "Power BI REST APIs"
+            url: https://docs.microsoft.com/rest/api/power-bi/
+          - text: "Azure Resource Manager REST APIs"
+            url: https://docs.microsoft.com/rest/api/power-bi-embedded/
 
   # Card
   - title: Power BI visuals
