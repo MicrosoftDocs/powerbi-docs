@@ -267,10 +267,10 @@ Report report = reports.Value.FirstOrDefault();
 Generate an embed token, which can be used from the JavaScript API. The embed token is specific to the item you're embedding. So at any time you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx)
 
 Depending on your needs, choose between the two types of embedded tokens:
-* **Embed token** - use to embed a report connected to one dataset
-* **Embed token v2** - use to embed a report across multiple datasets with the same data schema
+* [Embed token](#embedToken) - use to embed a report connected to one dataset
+* [Embed token v2](#embedToken2) - use to embed a report across multiple datasets with the same data schema
 
-**Embed token**
+**Embed token**<a name="embedToken"></a>
 
 Use to embed a report that is connected to one dataset.
 
@@ -295,7 +295,7 @@ var embedConfig = new EmbedConfig()
 
 A class is created for `EmbedConfig` and `TileEmbedConfig`. A sample is available within the *Models\EmbedConfig.cs* file and the *Models\TileEmbedConfig.cs* file.
 
-**Embed token v2**
+**Embed token v2**<a name="embedToken2"></a>
 
 Use to embed a report across multiple datasets with the same data schema. The report displays different results, depending on the dataset it's connected to.
 ```csharp

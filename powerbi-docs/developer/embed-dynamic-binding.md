@@ -14,7 +14,7 @@ ms.date: 09/25/2019
 
 Dynamic binding allows embedding a report across multiple datasets with the same data schema. End users see different results, depending on the dataset the report is connected to.
 
-An embedded report built on a shared dataset will render only if both workspaces (the one containing the content and the one containing the dataset) are assigned to a capacity. For  more information about shared dataset capabilities, see [Licensing](service-datasets-across-workspaces.md#licensing).
+An embedded report built on a shared dataset will render only if both workspaces (the one containing the content and the one containing the dataset) are assigned to a capacity.
 
 Embedding a report using dynamic binding has two stages:
 1. Generating a token
