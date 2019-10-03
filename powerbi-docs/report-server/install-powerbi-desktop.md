@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 09/26/2019
 ---
 
 # Install Power BI Desktop optimized for Power BI Report Server
@@ -25,28 +25,27 @@ The easiest way to be sure you have the most up-to-date version of Power BI Desk
 
     ![Download Power BI Desktop from the web portal](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Or go directly to [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (Optimized for Power BI Report Server - May 2019) in the Microsoft Download Center.
+    Or go to the [Power BI Report Server](https://powerbi.microsoft.com/report-server/) home page and select **Advanced download options**.
 
 2. In the Download Center page, select **Download**.
 
 3. Depending on your computer, select: 
 
     - **PBIDesktopRS.msi** (the 32-bit version) or
-
     - **PBIDesktopRS_x64.msi** (the 64-bit version).
 
-1. After you download the installer, run the Power BI Desktop (May 2019) Setup Wizard.
+1. After you download the installer, run the Power BI Desktop (September 2019) Setup Wizard.
 
 2. At the end of the installation, select **Launch Power BI Desktop**.
 
     It starts automatically and you're ready to go.
 
 ## Verify you're using the correct version
-It's easy to verify that you're using the correct Power BI Desktop: Look at the launch screen or title bar within Power BI Desktop. The title bar indicates the month and year of the release. Also, the Power BI logo colors are reversed, yellow on black instead of black on yellow.
+It's easy to verify that you're using the correct Power BI Desktop: Look at the launch screen or title bar within Power BI Desktop. You can tell you have the right version because **Power BI Desktop (September 2019)** is in the title bar. Also, the Power BI logo colors are reversed, yellow on black instead of black on yellow.
 
-![Title bar for Power BI Desktop optimized for Power BI Report Server](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2019.png)
+![Power BI Desktop September 2019](media/install-powerbi-desktop/power-bi-report-server-desktop-sept-2019.png)
 
-The Power BI Desktop version for the Power BI service doesn't have the month and year in the title bar.
+The version of Power BI Desktop for the Power BI service doesn't have the month and year in the title bar.
 
 ## File extension association
 If you install both Power BI Desktop and Power BI Desktop optimized for Power BI Report Server on the same machine, the most recent installation of Power BI Desktop has the file association with .pbix files. Thus, when you double-click a .pbix file, it launches the Power BI Desktop you installed most recently.

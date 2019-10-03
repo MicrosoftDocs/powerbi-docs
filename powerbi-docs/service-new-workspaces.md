@@ -20,7 +20,7 @@ LocalizationGroup: Share your work
 The new workspace experience has reached general availability (GA), and is now the default workspace. You can still continue to create and use [classic workspaces](service-create-workspaces.md) based on Office 365 Groups. 
 
 > [!NOTE]
-> To enforce row-level security (RLS) for users browsing content in a workspace, use the Viewer role. If the Viewer role is not yet available in your tenant, continue to use [classic workspaces](service-create-workspaces.md) and select the **Members can only view Power BI content** option. Alternatively, publish an Power BI app to those users, or use sharing to distribute content.
+> To enforce row-level security (RLS) for users browsing content in a workspace, use the Viewer role. To enforce RLS without giving access to the workspace, publish a Power BI app to those users, or use sharing to distribute content.
 
 With the new workspaces, you can:
 
@@ -69,11 +69,14 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 | Allow others to reshare items. |  X | X  |   |   |
 | Create, edit, and delete content in the workspace.  |  X | X  | X  |   |
 | Publish reports to the workspace, delete content.  |  X | X  | X  |   |
-| Create a report in another workspace based on a dataset in this workspace. |  X | X  | X  | X <sup>1</sup>  |
-| Copy a report. | X | X | X | X <sup>1</sup> |
+| Create a report in another workspace based on a dataset in this workspace. |  X | X  | X  |   |
+| Copy a report. | X | X | X |  |
 | View and interact with an item. |  X | X  | X  | X  |
 
-**1** Requires a Power BI Pro license and [Build permission for datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
+> [!NOTE]
+>To copy a report, and to create a report in another workspace based on a dataset in this workspace, people will need to meet additional criteria:
+>- They need a Power BI Pro license. 
+>- They need Build permission for the dataset. For datasets in this workspace, the people with the Admin, Member, and Contributor roles have Build permission through their workspace role.
  
 ## Licensing
 Everyone you add to a workspace in the shared capacity needs a Power BI Pro license. In the workspace, these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. 

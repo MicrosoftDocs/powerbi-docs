@@ -175,7 +175,7 @@
         href: desktop-analysis-services-tabular-data.md
       - name: "Use DirectQuery in Power BI Desktop"
         href: desktop-use-directquery.md
-      - name: "DirectQuery for Oracle and Teradata databases"
+      - name: "DirectQuery for Oracle and Teradata"
         href: desktop-directquery-for-oracle-teradata.md
       - name: "DirectQuery and SAP Business Warehouse (BW)"
         href: desktop-directquery-sap-bw.md
@@ -697,6 +697,8 @@
         href: service-cognitive-services.md   
       - name: "Automated Machine Learning in Power BI (Preview)"
         href: service-machine-learning-automated.md              
+    - name: "Data lineage"
+      href: service-data-lineage.md
     - name: Paginated reports in Power BI
       items: 
       - name: View a paginated report
@@ -867,18 +869,10 @@
     items:
     - name: "Supported languages and countries/regions"
       href: supported-languages-countries-regions.md
+    - name: "Supported browsers"
+      href: power-bi-browsers.md
   - name: Resources
     items:
-    - name: Whitepapers
-      items: 
-      - name: "Whitepapers overview"
-        href: whitepapers.md
-      - name: "Power BI security whitepaper"
-        href: whitepaper-powerbi-security.md
-      - name: "Power BI premium deployment"
-        href: whitepaper-powerbi-premium-deployment.md
-      - name: "Distribute Power BI externally using Azure Active Directory B2B"
-        href: whitepaper-azure-b2b-power-bi.md
     - name: "Videos"
       href: videos.md
     - name: "Webinars"
@@ -1442,11 +1436,23 @@
       href: service-admin-power-bi-security.md
 - name: Guidance
   items:
-  - name: "Best practices for dataflows"
-    href: service-dataflows-best-practices.md     
+  - name: "Overview"
+    href: guidance/overview.md       
   - name: "What is a star schema?"
     href: guidance/star-schema.md
   - name: "Reduce data model size"
     href: guidance/import-modeling-data-reduction.md
   - name: "DIVIDE function vs divide operator (/)"
     href: guidance/dax-divide-function-operator.md
+  - name: "Best practices for dataflows"
+    href: service-dataflows-best-practices.md  
+  - name: Whitepapers
+    items: 
+    - name: "Whitepapers overview"
+      href: whitepapers.md
+    - name: "Power BI security whitepaper"
+      href: whitepaper-powerbi-security.md
+    - name: "Power BI premium deployment"
+      href: whitepaper-powerbi-premium-deployment.md
+    - name: "Distribute Power BI externally using Azure Active Directory B2B"
+      href: whitepaper-azure-b2b-power-bi.md
