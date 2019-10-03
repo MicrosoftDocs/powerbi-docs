@@ -13,7 +13,7 @@ ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
-# Interact with Visuals in reports, dashboards, and apps
+# Interact with visuals in reports, dashboards, and apps
 
 At its most basic, a ***visualization*** (or *visual*), is a type of chart built by Power BI *designers* using the data in reports and datasets. 
 
@@ -58,7 +58,7 @@ For many of these options, your administrator or the *designer* can disable your
 | Add a spotlight to a visual. | no  | yes  |  no |
 | [Export to Excel.](end-user-export.md) | yes | yes | no|
 | [Create an alert](end-user-alerts.md) to notify you when a value exceeds a threshold you've set.  | yes  | no  | no |
-| [Cross filter and cross highlight the other visuals on the page](end-user-filters.md).  | no      | yes  | no  |
+| [Cross filter and cross highlight the other visuals on the page](end-user-report-filter.md).  | no      | yes  | no  |
 | [Drill a visual that has a hierarchy](end-user-drill.md).  | no  | yes   | no |
 
 ## Next steps
