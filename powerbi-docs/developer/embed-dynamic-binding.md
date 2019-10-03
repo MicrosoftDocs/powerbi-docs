@@ -21,7 +21,7 @@ Embedding a report using dynamic binding has two stages:
 2. Adjusting the config object
 
 ## Generating a token
-To generate a token, use the instructions in [Get an Azure AD access token for your Power BI application](get-azuread-access-token.md).
+To generate a token, create an [Embed token v2](embed-sample-for-customers.md#embedToken2).
 
 The following table lists the considerations you need to take into account when generating the token.
 
