@@ -20,15 +20,17 @@ One of the great features of Power BI is the way all visuals on a report page ar
 
 ## How visuals interact with each other
 
-By default, selecting a data point in one visual on a report page will cross-filter, cross-highlight, and drill the other visuals on the page. 
+By default, selecting a data point in one visual on a report page will cross-filter or cross-highlight the other visuals on the page. Exactly how the visuals on a page interact is set by the report *designer*. *Designers* have options to turn visual interactions on and off, and to change the default cross-filtering,  cross-highlighting, and [drilling](end-user-drill.md) behavior. 
 
-This can be useful to identify how one value in your data contributes to another. For example, selecting the Moderation segment in the doughnut chart, highlights the contribution from that segment to each column in the "Total units by Month" chart, and it has filtered the line chart on the right.
+If you haven't encountered hierarchies or drilling yet, you can learn all about them by reading [drill down in Power BI](end-user-drill.md). 
+
+Cross-filtering and cross-highlighting can be useful to identify how one value in your data contributes to another. For example, selecting the Moderation segment in the doughnut chart, highlights the contribution from that segment to each column in the "Total units by Month" chart, and filters the line chart.
 
 ![image of visuals interacting](media/end-user-interactions/power-bi-interactions.png)
 
 See [About filtering and highlighting](end-user-report-filter.md). 
 
-Exactly how the visuals on a page interact is set by the report *designer*. Designers have options to turn visual interactions on and off, and to change the default cross-filtering,  cross-highlighting, and drilling behavior. 
+
   
 > [!NOTE]
 > The terms *cross-filter* and *cross-highlight* are used to distinguish the behavior described here from what happens when you use the **Filters** pane to filter and highlight visuals.  
