@@ -138,7 +138,7 @@ You can use any of the values listed in the CSS color spec at [https://www.w3.or
 There are a few considerations to keep in mind when working with conditional table formatting:
 
 * Conditional formatting is applied only to the values of a **Matrix** visual, and does not apply to any subtotals or grand totals. 
-* If your formatting is based on a numeric column and you use gradient format with automatic max/min values, or rule-based formatting with percent rules, and your data contains 'NaN' values, conditional formatting cannot be applied. NaN means 'Not a number', most commonly caused by a divide by zero error. You can use the [DIVIDE() DAX function](https://docs.microsoft.com/dax/divide-function-dax) to avoid these errors.
+* If you use gradient format with automatic max/min values or rule-based formatting with percentage rules, conditional formatting cannot be applied when your data contains NaN values. NaN means 'Not a number', most commonly caused by a divide by zero error. You can use the [DIVIDE() DAX function](https://docs.microsoft.com/dax/divide-function-dax) to avoid these errors.
 
 
 ## Next steps
