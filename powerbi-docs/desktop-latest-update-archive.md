@@ -2286,7 +2286,7 @@ We're leaping ahead with more updates this month! February brings 29 days to the
 
 ### Data Connectivity:
 
--   **DirectQuery** support for Oracle and Teradata databases
+-   **DirectQuery** support for Oracle and Teradata
 -   **DirectQuery** - support for creating Calculated Columns
 -   Support for publishing Analysis Services Live reports
 -   JSON File connector
