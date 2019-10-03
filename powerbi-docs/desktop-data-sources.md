@@ -68,7 +68,7 @@ The **Database** category provides the following data connections:
 * MySQL Database
 * PostgreSQL Database
 * Sybase Database
-* Teradata Database
+* Teradata
 * SAP HANA Database
 * SAP Business Warehouse Application Server
 * SAP Business Warehouse Message Server
