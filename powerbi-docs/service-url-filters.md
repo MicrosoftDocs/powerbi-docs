@@ -148,7 +148,7 @@ Special characters and spaces require some additional formatting. When your quer
 |---------|---------|---------|
 |**Table Name**     | Space is 0x20        |  Table_x0020_Name       |
 |**Column**@**Number**     |   @ is 0x40     |  Column_x0040_Number       |
-|**[Column]**     |  [ is 0x0058 ] is 0x0050       |  _x0058_Column_x0050_       |
+|**[Column]**     |  [ is 0x005B ] is 0x005D       |  \_x005B_Column_x005D\_       |
 |**Column+Plus**     | + is 0x2B        |  Column_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3
