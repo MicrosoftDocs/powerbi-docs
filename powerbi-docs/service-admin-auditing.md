@@ -28,7 +28,7 @@ Knowing who is taking what action on which item in your Power BI tenant can be c
 
 As a Power BI service admin, you can analyze usage for all Power BI resources at the tenant level by using custom reports based on the Power BI activity log. You can download the activities by using a REST API or PowerShell cmdlet. You can also filter the activity data by date range, user, and activity type.
 
-### Requirements
+### Activity log requirements
 
 You must meet these requirements to access the Power BI activity log:
 
