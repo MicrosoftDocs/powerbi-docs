@@ -84,11 +84,9 @@ If you have an existing dataset that is larger than the size you specify for thi
 
 #### Max Result Row Set Count
 
-Use this setting to control the impact of resource-intensive or poorly designed reports. If this limit is reached in a DAX query, a report user see the following error:
+Use this setting to control the impact of resource-intensive or poorly designed reports. If this limit is reached in a DAX query, a report user sees the following error. They should copy the error details and contact an administrator.
 
 ![Couldn't load data for this visual](media/service-admin-premium-workloads/could-not-load-data.png)
-
-They should copy the details and contact an administrator.
 
 Note that this setting affects only DAX queries, whereas [Max Intermediate Row Set Count](#max-intermediate-row-set-count) affects DirectQuery queries.
 
@@ -102,10 +100,10 @@ This setting applies to data refresh and report rendering. Data refresh performs
 
 Use this setting to maintain better control of long-running queries, which can cause reports to load slowly for users. This setting applies to data refresh and report rendering. Data refresh performs both refresh of data from the data source and query refresh, unless query refresh is disabled. If query refresh is not disabled, then this timeout limit also applies to those queries.
 
-This setting focuses on a single query and not the length of time it takes to run all of the queries associated with updating a dataset or report. Consider the following example:
+This setting applies to a single query and not the length of time it takes to run all of the queries associated with updating a dataset or report. Consider the following example:
 
-- Query Timeout is set to 20 minutes
-- There are five queries to execute, and each runs 15 minutes
+- The **Query Timeout** setting is 1200 (20 minutes).
+- There are five queries to execute, and each runs 15 minutes.
 
 The combined time for all queries is 75 minutes, but the setting limit isn't reached because all of the individual queries run for less than 20 minutes.
 
