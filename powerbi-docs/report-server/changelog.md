@@ -24,7 +24,7 @@ For detailed information about new features, see [What's new in Power BI Report 
         - Security updates
         - Bug fixes
            - Paginated reports
-             - Fix for accessibility issues encountered while using IE and Edge.
+             - Fix for accessibility issues encountered while using Internet Explorer and Microsoft Edge.
              - Fix for SAP HANA issues while testing connection.
              - Fix for issues found while providing list of email addresses.
              - Fix for for Power BI reports that use a DirectQuery data source and integrated authentication.
