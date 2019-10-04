@@ -25,7 +25,7 @@ Cached query results are specific to user and dataset context and always respect
 
 You control query caching behavior on the **Settings** page for the dataset in the Power BI service. It has three possible settings:
 
-- **Capacity default**: query caching Off
+- **Capacity default**: Query caching Off
 - **Off**: Don't use query caching for this dataset.
 - **On**: Use query caching for this dataset.
 
