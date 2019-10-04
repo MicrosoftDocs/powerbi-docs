@@ -1299,7 +1299,7 @@
       href: service-admin-where-is-my-tenant-located.md
     - name: "Find users that have signed in"
       href: service-admin-access-usage.md
-    - name: "Auditing Power BI"
+    - name: "Audit user activity"
       href: service-admin-auditing.md
     - name: "Track service health"
       href: service-admin-health.md
