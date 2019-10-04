@@ -8,22 +8,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2019
+ms.date: 10/02/2019
 ms.author: maggies
 
 LocalizationGroup: Reports
 ---
 # Add a filter to a report in Power BI
 
+[!INCLUDE [power-bi-service-new-look-include](includes/power-bi-service-new-look-include.md)]
+
 This article explains how to add a page filter, visualization filter, report filter, or drillthrough filter to a report in Power BI. The examples in this article are in the Power BI service. The steps are almost identical in Power BI Desktop.
 
-**Did you know?** Power BI has a new filter experience, currently in preview. Read more about [the new filter experience in Power BI reports](power-bi-report-filter.md).
+**Did you know?** Power BI has a new filter experience. Read more about [the new filter experience in Power BI reports](power-bi-report-filter.md).
 
 ![New filter experience](media/power-bi-report-add-filter/power-bi-filter-reading.png)
 
 Power BI offers a number of different kinds of filters, from the manual and automatic to the drill-through and pass-through. Read about the [different kinds of filters](power-bi-report-filter-types.md).
-
-[!INCLUDE [power-bi-service-new-look-include](includes/power-bi-service-new-look-include.md)]
 
 ## Filters in Editing view or Reading view
 You can interact with reports in two different views: Reading view and Editing view. The filtering capabilities available to you depend on which view you're in. Read all [about filters and highlighting in Power BI reports](power-bi-reports-filters-and-highlighting.md) for details.
