@@ -4,7 +4,7 @@ description: This article discusses some common issues you may encounter when de
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
-ms.reviewer: maghan
+ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual

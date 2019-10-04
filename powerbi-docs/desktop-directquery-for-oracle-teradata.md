@@ -13,6 +13,6 @@ ms.author: davidi
 
 LocalizationGroup: Connect to data
 ---
-# DirectQuery for Oracle and Teradata
+# DirectQuery for Oracle and Teradata 
 Please see [DirectQuery Data Sources](desktop-directquery-data-sources.md) for information about data sources and DirectQuery.
 
