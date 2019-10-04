@@ -138,7 +138,7 @@ To override the default and use Power BI Desktop in a language other than your W
 2. Under **Global Settings**, select **Regional Settings**.
 3. In the **Application Language** box, select a different locale. 
 
-Langauge support in Power BI Desktop is limited to the languages displayed in the Application Language dropdown.
+Language support in Power BI Desktop is limited to the languages displayed in the Application Language dropdown.
 
 ### Choose the locale for importing data into Power BI Desktop
 Whether you download Power BI Desktop or install it from the Windows Store, you can choose a locale for a specific report to be something other than the locale in your version of Power BI Desktop. The locale changes the way data is interpreted when it’s imported from your data source, for example whether "3/4/2017" is interpreted as 3 April or March 4. 
