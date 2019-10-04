@@ -29,7 +29,7 @@ You control query caching behavior on the **Settings** page for the dataset in t
 - **Off**: Don't use query caching for this dataset.
 - **On**: Use query caching for this dataset.
 
-![Query caching dialog box](media/power-bi-query-caching/power-bi-query-3-options.png)
+    ![Query caching dialog box](media/power-bi-query-caching/power-bi-query-3-options.png)
 
 ## Considerations and limitations
 
