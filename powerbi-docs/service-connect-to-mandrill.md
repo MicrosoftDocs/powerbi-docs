@@ -35,7 +35,7 @@ Connect to the [Mandrill content pack for Power BI.](http://app.powerbi.com/getd
     ![](media/service-connect-to-mandrill/auth.png)
 5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. This is the default dashboard that Power BI created to display your data.
    
-    ![](media/service-connect-to-mandrill/mandrill-dashboard1.jpg)
+    ![](media/service-connect-to-mandrill/mandrill-dashboard1.png)
 
 **What now?**
 
