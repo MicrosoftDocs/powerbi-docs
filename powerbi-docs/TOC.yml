@@ -1139,7 +1139,7 @@
         href: report-server/quickstart-embed.md
   - name: How to
     items: 
-    - name: "Install Power BI Desktop"
+    - name: Install Power BI Desktop
       href: report-server/install-powerbi-desktop.md
     - name: Report server basics
       items: 
