@@ -20,7 +20,7 @@ When an organizational content pack is published, all recipients see the same da
 Creating content packs is different from sharing dashboards or collaborating on them in a group. Read [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md) to decide on the best option for your situation.
 
 > [!NOTE]
-> You can't create or install organizational content packs in the new workspace experiences preview. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
+> You can't create or install organizational content packs in the new workspace experiences. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
 >
 
 ## Create a copy of an organizational content pack

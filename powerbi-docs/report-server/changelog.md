@@ -1,5 +1,5 @@
 ---
-title: Changelog for Power BI Report Server
+title: Change log for Power BI Report Server
 description: This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 ms.author: jaimeta
 author: jtarquino
@@ -8,10 +8,10 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/31/2018
+ms.date: 09/26/2019
 ---
 
-# Changelog for Power BI Report Server
+# Change log for Power BI Report Server
 
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 
@@ -22,9 +22,9 @@ For detailed information about new features, see [What's new in Power BI Report 
 - **Power BI Report Server**          
     - *Version 1.6.7206.38019 (Build 15.0.1102.597), Released: September 26, 2019*
         - Security updates
-        - Bug Fixes
-           - Paginated Reports
-             - Fix for accessibility issues encountered while using IE and Edge.
+        - Bug fixes
+           - Paginated reports
+             - Fix for accessibility issues encountered while using Internet Explorer and Microsoft Edge.
              - Fix for SAP HANA issues while testing connection.
              - Fix for issues found while providing list of email addresses.
              - Fix for for Power BI reports that use a DirectQuery data source and integrated authentication.
