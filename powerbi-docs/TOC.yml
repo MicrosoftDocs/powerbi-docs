@@ -502,6 +502,8 @@
       - name: "Use datasets across workspaces"
         href: service-datasets-across-workspaces.md
       - name: "Share datasets (Preview)"
+        href: service-datasets-share.md
+      - name: "Build permission for shared datasets"
         href: service-datasets-build-permissions.md
       - name: "Create reports based on datasets"
         href: service-datasets-discover-across-workspaces.md
@@ -773,8 +775,6 @@
           href: service-connect-to-appfigures.md
         - name: "Application Insights"
           href: service-connect-to-application-insights.md
-        - name: "AT Internet Bridge"
-          href: service-connect-to-at-internet.md
         - name: "Azure Audit Logs"
           href: service-connect-to-azure-audit-logs.md
         - name: "Azure Mobile Engagement"
@@ -799,8 +799,6 @@
           href: service-connect-to-lithium.md
         - name: "Mandrill"
           href: service-connect-to-mandrill.md
-        - name: "Marketo"
-          href: service-connect-to-marketo.md
         - name: "Microsoft Dynamics AX"
           href: service-connect-to-microsoft-dynamics-ax.md
         - name: "Microsoft Dynamics CRM"
@@ -809,14 +807,10 @@
           href: service-connect-to-microsoft-dynamics-nav.md
         - name: "Office365Mon"
           href: service-connect-to-office365mon.md
-        - name: "Planview Enterprise"
-          href: service-connect-to-planview.md
         - name: "Prevedere"
           href: service-connect-to-prevedere.md
         - name: "Project Online"
           href: service-connect-to-project-online.md
-        - name: "Projectplace"
-          href: service-connect-to-projectplace.md
         - name: "QuickBooks Online"
           href: service-connect-to-quickbooks-online.md
         - name: "Salesforce"
@@ -843,8 +837,6 @@
           href: service-connect-to-uservoice.md
         - name: "VMob"
           href: service-connect-to-vmob.md
-        - name: "Webtrends"
-          href: service-connect-to-webtrends.md
         - name: "Windows Dev Center"
           href: service-connect-to-windows-dev-center.md
         - name: "Xero"
@@ -1149,7 +1141,7 @@
         href: report-server/quickstart-embed.md
   - name: How to
     items: 
-    - name: "Install Power BI Desktop"
+    - name: Install Power BI Desktop
       href: report-server/install-powerbi-desktop.md
     - name: Report server basics
       items: 
@@ -1340,6 +1332,8 @@
     href: guidance/import-modeling-data-reduction.md
   - name: "DIVIDE function vs divide operator (/)"
     href: guidance/dax-divide-function-operator.md
+  - name: "Appropriate use of error functions"
+    href: guidance/dax-error-functions.md
   - name: "Best practices for dataflows"
     href: service-dataflows-best-practices.md  
   - name: Whitepapers
