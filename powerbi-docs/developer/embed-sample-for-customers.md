@@ -268,7 +268,7 @@ Generate an embed token, which can be used from the JavaScript API. There are tw
 
 **APIs for generating an embed token for a specific item**
 
-The embed token created with these APIs is specific to the item you're embedding. Any time you embed a piece of Power BI content with these APIs, you need to create a new embed token for it
+The embed token created with these APIs is specific to the item you're embedding. Any time you embed a Power BI item (such as a report, dashboard, or tile) with these APIs, you need to create a new embed token for it.
 * [Dashboards GenerateTokenInGroup](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
 * [Datasets GenerateTokenInGroup](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
 * [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
@@ -300,7 +300,9 @@ var embedConfig = new EmbedConfig()
 
 **API for generating an embed token for multiple items**<a id="multiEmbedToken"></a>
 
-The [Generate Token](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken/generatetoken) embed API, lets you use [dynamic binding](embed-dynamic-binding.md) for dynamically selecting a dataset while embedding a report.
+The [Generate Token](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken/generatetoken) embed API generates a token that can be used for embedding multiple items.
+
+It can also be used for dynamically selecting a dataset while embedding a report. For more information about this use of the API, see [dynamic binding](embed-dynamic-binding.md).
 
 
 Below is an example of using this API.
