@@ -77,6 +77,23 @@ Dashboards also have a simplified action bar, just like reports and apps, for a 
  
 ![Dashboard action bar in new look](media/service-new-look/power-bi-dashboard-action-bar-new-look.gif)
 
+## Where is...?
+
+Looking for a specific command? This table can help.
+
+
+|Command  |New look OFF  |New look ON  |
+|---------|---------|---------|
+|Edit report  | Top bar   | Top bar ellipsis (...) > Edit |
+| Save a copy | File > Save as  | Top bar ... > Save a copy |
+| Print | File > Print | Export > Print |
+| Embed securely | File > Embed | Top bar ... > Embed > Website or portal |
+| Embed in SharePoint Online | File > Embed in SharePoint Online | Top bar ... > Embed > SharePoint Online |
+| Publish to Web | 
+
+
+
+
 ## No changes to edit mode 
 
 We’ve kept the authoring experience similar to the experience in Desktop. The new look changes only apply to the reading view.
