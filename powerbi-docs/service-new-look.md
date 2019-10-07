@@ -67,7 +67,7 @@ Looking for **File** menu actions? The actions that used to be on the **File** m
 
 ## 6. New filter experience
 
-Recent updates such as viewing applied filters and the new filters pane are available by default with the new look. Even if the report designers haven't upgraded to the new filters experience, you see the new filters pane.
+Recent updates such as viewing applied filters and the new filters pane are available by default with the new look. Even if your report designer hasn't upgraded to the new filters experience, you see the new filters pane.
 
 ![Filter restatement](media/service-new-look/power-bi-new-look-filters.png)
 
