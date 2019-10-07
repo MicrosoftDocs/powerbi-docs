@@ -12,7 +12,7 @@ ms.date: 09/25/2019
 
 # Dynamic binding
 
-Dynamic binding allows dynamically selecting a dataset while embedding a report. The report and the dataset don't need to reside in the same workspace End users see different results, depending on the selected dataset.
+Dynamic binding allows dynamically selecting a dataset while embedding a report. The report and the dataset don't need to reside in the same workspace. End users see different results, depending on the selected dataset.
 
 Both workspaces (the one containing the report and the one containing the dataset) must be assigned to a capacity.
 
