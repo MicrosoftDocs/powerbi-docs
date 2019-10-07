@@ -11,7 +11,8 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: v-pemyer
 ---
-## DAX: Appropriate use of error functions
+
+# DAX: Appropriate use of error functions
 
 This article targets data modelers who define DAX expressions.
 
