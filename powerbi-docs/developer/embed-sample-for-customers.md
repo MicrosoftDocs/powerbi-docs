@@ -264,18 +264,23 @@ Report report = reports.Value.FirstOrDefault();
 ```
 
 ### Create the embed token
-Generate an embed token, which can be used from the JavaScript API. The embed token is specific to the item you're embedding. So at any time you embed a piece of Power BI content, you need to create a new embed token for it. For more information, including which **accessLevel** to use, see [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx)
+Generate an embed token, which can be used from the JavaScript API. There are two types of APIs, the first group contains five APIs, each generates an embed token for a specific item. The second group, which contains only one API, generates a token that can be used to embed multiple items.
 
-Depending on your needs, choose between the two types of embedded tokens:
-* [Embed token](#embedToken) - use to embed a report connected to one dataset
-* [Embed token v2](#embedToken2) - use to embed a report across multiple datasets with the same data schema
+**APIs for generating an embed token for a specific item**
 
-**Embed token**<a name="embedToken"></a>
+The embed token created with these APIs is specific to the item you're embedding. Any time you embed a piece of Power BI content with these APIs, you need to create a new embed token for it
+* [Dashboards GenerateTokenInGroup](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken/dashboards_generatetokeningroup)
+* [Datasets GenerateTokenInGroup](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken/datasets_generatetokeningroup)
+* [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup)
+* [Reports GenerateTokenInGroup](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken/reports_generatetokeningroup)
+* [Tiles GenerateTokenInGroup](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken/tiles_generatetokeningroup)
 
-Use to embed a report that is connected to one dataset.
+Samples of creating an embed token for a report, dashboard, or tile, are available from the following files in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).
+* Services\EmbedService.cs
+* Models\EmbedConfig.cs
+* Models\TileEmbedConfig.cs
 
-A sample of creating an embed token for a report, dashboard, or tile want to embed is available within the *Services\EmbedService.cs* file in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).
-
+Below is a code example for using the reports GenerateTokenInGroup embed token API.
 ```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
@@ -293,11 +298,13 @@ var embedConfig = new EmbedConfig()
 };
 ```
 
-A class is created for `EmbedConfig` and `TileEmbedConfig`. A sample is available within the *Models\EmbedConfig.cs* file and the *Models\TileEmbedConfig.cs* file.
+**API for generating an embed token for multiple items**<a id="multiEmbedToken"></a>
 
-**Embed token v2**<a name="embedToken2"></a>
+The [Generate Token](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken/generatetoken) embed API, lets you use [dynamic binding](embed-dynamic-binding.md) for dynamically selecting a dataset while embedding a report.
 
-Use to embed a report across multiple datasets with the same data schema. The report displays different results, depending on the dataset it's connected to.
+
+Below is an example of using this API.
+ 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
