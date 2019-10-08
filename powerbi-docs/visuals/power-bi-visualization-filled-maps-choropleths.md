@@ -15,6 +15,9 @@ ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 # Filled maps (choropleths) in Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 A filled map uses shading or tinting or patterns to display how a value differs in proportion across a geography or region.  Quickly display these relative differences with shading that ranges from light (less-frequent/lower) to dark (more-frequent/more).    
 
 ![US map](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
@@ -40,27 +43,24 @@ Filled maps are a great choice:
 * to get an overview of the distribution across the geographic locations.
 
 ### Prerequisites
-- Power BI service or Power BI Desktop
-- Sales and Marketing Sample
+This tutorial uses the [Sales Marketing sample PBIX file](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
+1. From the upper left section of the menubar, select **File** > **Open**
+   
+2. Find your copy of the **Retail Analysis sample PBIX file**
 
-To follow along, the tutorial uses Power BI service, not Power BI Desktop.
+1. Open the **Retail Analysis sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+
 
 ## Create a basic filled map
 In this video, Kim creates a basic map and converts it to a filled map.
+   > [!NOTE]
+   > This video uses an older version of Power BI Desktop.
+   > 
+   > 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
-
-### Get data and add a new blank page to the report
-1. To create your own filled map, [download the Sales and Marketing sample](../sample-datasets.md) by signing in to Power BI and selecting **Get Data \> Samples \> Sales and Marketing \> Connect**. Or get the **Power BI Sales and Marketing** app on appsource.com. 
-
-2. Open the Sales and Marketing report.
-
-   ![Sales and marketing report opens](media/power-bi-visualization-filled-maps-choropleths/power-bi-report-canvas.png)
-3. Power BI opens the report. Select **Edit report** to open the report in [Editing View](../service-interact-with-a-report-in-editing-view.md).
-
-4. Add a new page by selecting the yellow plus sign at the bottom of the report canvas.
-
-    ![Report tabs](media/power-bi-visualization-filled-maps-choropleths/power-bi-new-page.png)
 
 ### Create a filled map
 1. From the Fields pane, select the **Geo** \> **State** field.    
@@ -71,7 +71,7 @@ In this video, Kim creates a basic map and converts it to a filled map.
    ![templates with the icon for filled map highlighted](media/power-bi-visualization-filled-maps-choropleths/img003.png)
 3. Filter the map to display only the continental United States.
 
-   a.  At the bottom of the Visualizations pane, look for the **Filters** area.
+   a.  To the left of the Visualizations pane, look for the **Filters** pane. Expand it if it is minimized
 
    b.  Hover over **State** and click the expand chevron  
    ![Visual level filters showing State(All)](media/power-bi-visualization-filled-maps-choropleths/img004.png)
@@ -111,11 +111,11 @@ Highlighting a location in a filled Map cross-filters the other visualizations o
 
     ![Sentiment tab selected](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-tab.png)
 
-4. Move and resize the visualizations on the page to make some room, then CTRL-V paste the filled map from the previous report.
+4. Move and resize the visualizations on the page to make some room, then CTRL-V paste the filled map from the previous report. (below images )
 
    ![Filled map added to Sentiment page](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. On the filled map, select a state.  This highlights the other visualizations on the page. Selecting **Texas**, for example, shows me that Sentiment is 74, Texas is in the Central District \#23.   
+5. On the filled map, select a state.  This highlights the other visualizations on the page. Selecting **Texas**, for example, shows me that Sentiment is 75, Texas is in the Central District \#23.   
    ![Texas selected](media/power-bi-visualization-filled-maps-choropleths/power-bi-texas.png)
 2. Select a data point on the VanArsdel - Sentiment by Month line chart. This filters the filled map to show Sentiment data for VanArsdel and not their competition.  
    ![new shading](media/power-bi-visualization-filled-maps-choropleths/power-bi-yes.png)
