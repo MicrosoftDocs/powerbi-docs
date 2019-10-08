@@ -40,7 +40,7 @@ The contact list information is also used in other places. For example, it is sh
 > [!NOTE]
 > When publishing an app, the contact information set on individual items is set to the person who published or updated the app. You can set the app support URL so app users get the help they need.
 
-### To set conatact information for a report
+## Set conatact information for a report
 1. In your workspace, select the **Reports** tab.
 2. Locate the desired report and select the **Settings** icon.
 3. Locate the **Contact** input field and set a value.
