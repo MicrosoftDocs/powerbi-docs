@@ -16,7 +16,7 @@ LocalizationGroup: Get started
 ---
 # The 'new look': Where did the actions go?
 
-The Power BI service (app.powerbi.com) has a new look that makes it easier to view and interact with your reports. As a result, many menu actions have moved. The tables in this article map the old location to the new. For background, see [the 'new look' of the Power BI service](service-new-look.md)
+The Power BI service (app.powerbi.com) has a new look that makes it easier to view and interact with your reports. As a result, many menu actions have moved. The tables in this article map the old location to the new. For background, see [the 'new look' of the Power BI service](service-new-look.md).
 
 ## Report actions in the new look
 
