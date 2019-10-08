@@ -86,11 +86,11 @@ Apps are the evolution of organizational content packs. If you have organization
 * After business users install a content pack, it loses its grouped identity: it's just a list of dashboards and reports interspersed with other dashboards and reports. Apps, on the other hand, maintain their grouping and identity even after installation. This grouping makes it easy for business users to continue to navigate to them over time.
 * You can create multiple content packs from any workspace, but an app has a 1:1 relationship with its workspace. 
 * Over time we plan to deprecate organizational content packs, so we recommend you create apps from now on.  
-* With the new workspace experience preview, we're taking the first steps towards deprecating organizational content packs. You can't consume or create them in preview workspaces.
+* With the new workspace experience, we're taking the first steps towards deprecating organizational content packs. You can't consume or create them in the new workspaces.
 
 See [How the new workspaces are different from existing workspaces](service-new-workspaces.md#how-the-new-workspaces-are-different) to compare the two. 
 
 ## Next steps
 * [Install and use apps in Power BI](service-create-distribute-apps.md)
-- [Create the new workspaces (preview)](service-create-the-new-workspaces.md)
+- [Create the new workspaces](service-create-the-new-workspaces.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
