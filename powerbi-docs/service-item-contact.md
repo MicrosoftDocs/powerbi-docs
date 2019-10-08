@@ -19,7 +19,7 @@ This article teaches you how to set contact information for a dashboard or repor
 > [!NOTE]
 > Contact information can be set for items in a classic or new workspace. You can't set contact information for items in your My Workspace.
 
-You can add multiple users or groups to the contact for an item, these can be:
+You can add multiple users or groups to the contact for an item. They can be:
 * A person
 * An Office 365 Group
 * An email enabled security group
