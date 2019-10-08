@@ -52,7 +52,7 @@ The contact list information is also used in other places, for example it is sho
 2. Locate the desired dashboard and select the **Settings** icon
 3. Locate the **Contact** input field and set a value.
 
- ![service dashboard contact setting](media/service-item-contact/service-dashboard-contact-setting.png)
+     ![service dashboard contact setting](media/service-item-contact/service-dashboard-contact-setting.png)
 
  
 
