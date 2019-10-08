@@ -14,7 +14,7 @@ ms.author: lukaszp
 LocalizationGroup: Common tasks
 ---
 # Set contact information for reports and dashboards in the Power BI service
-This article teaches you how to set contact information for a dashboard or report in Power BI service.
+This article teaches you how to set contact information for a dashboard or report in the Power BI service.
 
 > [!NOTE]
 > Contact information can be set for items in a classic or new workspace. You can't set contact information for items in your My Workspace.
