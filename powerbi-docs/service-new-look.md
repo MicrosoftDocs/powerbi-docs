@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/07/2019
+ms.date: 10/08/2019
 ms.author: maggies
 # Customer intent: As a Power BI customer or potential customer, I'd like to know what the differences are between the previous look of the Power BI service and the new look
 LocalizationGroup: Get started
@@ -16,9 +16,11 @@ LocalizationGroup: Get started
 ---
 # The 'new look' of the Power BI service
 
-The Power BI service (app.powerbi.com) has a new look that makes it easier to view and interact with your reports. The new look is a modern experience that’s simpler and builds on your familiarity with other Microsoft products. Across the Power BI service, we’ve made report content the main point of focus by switching to a lighter color theme and updating icons. Here's an overview of what’s changed in the new look. See the numbered sections for details:
+The Power BI service (app.powerbi.com) has a new look that makes it easier to view and interact with your reports. The new look is simpler and builds on your familiarity with other Microsoft products. Across the Power BI service, we’ve made report content the main point of focus by switching to a lighter color theme and updating icons. Here's an overview of what’s changed in the new look. See the numbered sections for details:
 
 ![New look overview of changes](media/service-new-look/power-bi-new-look-changes.png)
+
+Looking for a specific action? See [The 'new look': Where did the actions go?](service-new-look-where-actions.md)
 
 ## Quick tour of the changes
 
@@ -76,59 +78,6 @@ Recent updates such as viewing applied filters and the new filters pane are avai
 Dashboards also have a simplified action bar, just like reports and apps, for a consistent experience, while retaining the functional differences. Here's a walkthrough of actions in a dashboard.
  
 ![Dashboard action bar in new look](media/service-new-look/power-bi-dashboard-action-bar-new-look.gif)
-
-## Where is...?
-
-Looking for a specific command? These tables can help.
-
-### Report commands in the Power BI service
-
-|Command  |New look OFF  |New look ON  |
-|---------|---------|---------|
-| Save as | File > Save as  | Top bar ... > Save a copy |
-| Print | File > Print | Export > Print |
-| Embed securely | File > Embed | Top bar ... > Embed > Website or portal |
-| Embed in SharePoint Online | File > Embed in SharePoint Online | Top bar ... > Embed > SharePoint Online |
-| Publish to Web | File > Publish to Web | Top bar ... > Embed > Publish to web (public) |
-| Export to PowerPoint | File > Export to PowerPoint | Export > PowerPoint |
-| Export to PDF | File > Export to PDF | Export > PDF |
-|Edit report  | Top bar   | Top bar ellipsis (...) > Edit |
-| Fit to page | View > Fit to page | Top bar View (right side) > Fit to page |
-| Fit to width | View > Fit to width | Top bar View (right side) > Fit to width |
-| Actual size | View > Actual size | Top bar View (right side) > Actual size |
-| High-contrast colors | View > High-contrast colors | Top bar View (right side) > High-contrast colors |
-| Bookmarks pane | View > Bookmarks pane |  Top bar Bookmarks > Show more bookmarks |
-| Refresh | Refresh | Top bar ellipsis (...) > Refresh |
-| Pin a live page | Pin a live page | Top bar ellipsis (...) > Pin a live page |
-| Reset to default | Reset to default | Reset to default |
-| Comments | Comments | Comments |
-| View related | View related | Top bar ellipsis (...) > View related |
-| Favorite | Favorite | Favorite |
-| Subscribe | Subscribe |Subscribe |
-| Share | Share | Share |
-| Generate QR code | Top bar ellipsis (...) > Generate QR code | Top bar ellipsis (...) > Generate QR code |
-| Analyze in Excel | Top bar ellipsis (...) > Analyze in Excel | Top bar ellipsis (...) > Analyze in Excel |
-| Full screen mode | Full screen mode | Top bar View (right side) > Full screen |
-
-### Dashboard commands in the Power BI service
-
-|Command  |New look OFF  |New look ON  |
-|---------|---------|---------|
-| Add tile | Add tile | Top bar ellipsis (...) > Add tile |
-| Comments | Comments | Comments |
-| View related | View related | Top bar ellipsis (...) > View related |
-| Set as featured | Set as featured| Top bar ellipsis (...) > Set as featured|
-| Favorite | Favorite | Favorite |
-| Subscribe | Subscribe |Subscribe |
-| Share | Share | Share |
-| Phone view | Web view > Phone view | Top bar ellipsis (...) > Mobile view |
-| Dashboard theme | Top bar ellipsis (...) > Dashboard theme | Top bar ellipsis (...) > Dashboard theme |
-| Print dashboard | Top bar ellipsis (...) > Print dashboard | Export > Print this page |
-| Refresh dashboard tiles | Top bar ellipsis (...) > Refresh dashboard tiles | Top bar ellipsis (...) > Refresh |
-| Performance inspector | Top bar ellipsis (...) > Performance inspector | Top bar ellipsis (...) > Performance inspector |
-| Settings | Top bar ellipsis (...) > Settings | Top bar ellipsis (...) > Settings |
-
-
 
 ## No changes to edit mode 
 
