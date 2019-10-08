@@ -42,7 +42,7 @@ The contact list information is also used in other places, for example it is sho
 
 ### To set conatact information for a report
 1. In your workspace, select the **Reports** tab.
-2. Locate the desired report and select the **Settings** icon
+2. Locate the desired report and select the **Settings** icon.
 3. Locate the **Contact** input field and set a value.
 
  ![service report contact setting](media/service-item-contact/service-report-contact-setting.png)
