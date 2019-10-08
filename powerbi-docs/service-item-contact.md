@@ -54,6 +54,6 @@ The contact list information is also used in other places, for example it is sho
 
      ![service dashboard contact setting](media/service-item-contact/service-dashboard-contact-setting.png)
 
- 
+## Next steps
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
