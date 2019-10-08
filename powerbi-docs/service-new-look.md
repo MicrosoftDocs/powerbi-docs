@@ -122,7 +122,11 @@ Looking for a specific command? These tables can help.
 | Subscribe | Subscribe |Subscribe |
 | Share | Share | Share |
 | Phone view | Web view > Phone view | Top bar ellipsis (...) > Mobile view |
-
+| Dashboard theme | Top bar ellipsis (...) > Dashboard theme | Top bar ellipsis (...) > Dashboard theme |
+| Print dashboard | Top bar ellipsis (...) > Print dashboard | Export > Print this page |
+| Refresh dashboard tiles | Top bar ellipsis (...) > Refresh dashboard tiles | Top bar ellipsis (...) > Refresh |
+| Performance inspector | Top bar ellipsis (...) > Performance inspector | Top bar ellipsis (...) > Performance inspector |
+| Settings | Top bar ellipsis (...) > Settings | Top bar ellipsis (...) > Settings |
 
 
 
