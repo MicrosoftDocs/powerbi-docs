@@ -1,6 +1,6 @@
 ---
 title: Set contact information for reports and dashboards.
-description: Learn how to set contact information reports and dashboards.
+description: Learn how to set contact information for reports and dashboards.
 author: LukaszPawlowski-MS
 manager: kfile
 ms.reviewer: ''
