@@ -47,7 +47,7 @@ The contact list information is also used in other places, for example it is sho
 
  ![service report contact setting](media/service-item-contact/service-report-contact-setting.png)
 
-### To set contact information for a dashboard
+## Set contact information for a dashboard
 1. In your workspace, select the **Dashboards** tab.
 2. Locate the desired dashboard and select the **Settings** icon
 3. Locate the **Contact** input field and set a value.
