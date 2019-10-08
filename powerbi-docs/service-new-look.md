@@ -79,17 +79,49 @@ Dashboards also have a simplified action bar, just like reports and apps, for a 
 
 ## Where is...?
 
-Looking for a specific command? This table can help.
+Looking for a specific command? These tables can help.
 
+### Report commands in the Power BI service
 
 |Command  |New look OFF  |New look ON  |
 |---------|---------|---------|
-|Edit report  | Top bar   | Top bar ellipsis (...) > Edit |
-| Save a copy | File > Save as  | Top bar ... > Save a copy |
+| Save as | File > Save as  | Top bar ... > Save a copy |
 | Print | File > Print | Export > Print |
 | Embed securely | File > Embed | Top bar ... > Embed > Website or portal |
 | Embed in SharePoint Online | File > Embed in SharePoint Online | Top bar ... > Embed > SharePoint Online |
-| Publish to Web | 
+| Publish to Web | File > Publish to Web | Top bar ... > Embed > Publish to web (public) |
+| Export to PowerPoint | File > Export to PowerPoint | Export > PowerPoint |
+| Export to PDF | File > Export to PDF | Export > PDF |
+|Edit report  | Top bar   | Top bar ellipsis (...) > Edit |
+| Fit to page | View > Fit to page | Top bar View (right side) > Fit to page |
+| Fit to width | View > Fit to width | Top bar View (right side) > Fit to width |
+| Actual size | View > Actual size | Top bar View (right side) > Actual size |
+| High-contrast colors | View > High-contrast colors | Top bar View (right side) > High-contrast colors |
+| Bookmarks pane | View > Bookmarks pane |  Top bar Bookmarks > Show more bookmarks |
+| Refresh | Refresh | Top bar ellipsis (...) > Refresh |
+| Pin a live page | Pin a live page | Top bar ellipsis (...) > Pin a live page |
+| Reset to default | Reset to default | Reset to default |
+| Comments | Comments | Comments |
+| View related | View related | Top bar ellipsis (...) > View related |
+| Favorite | Favorite | Favorite |
+| Subscribe | Subscribe |Subscribe |
+| Share | Share | Share |
+| Generate QR code | Top bar ellipsis (...) > Generate QR code | Top bar ellipsis (...) > Generate QR code |
+| Analyze in Excel | Top bar ellipsis (...) > Analyze in Excel | Top bar ellipsis (...) > Analyze in Excel |
+| Full screen mode | Full screen mode | Top bar View (right side) > Full screen |
+
+### Dashboard commands in the Power BI service
+
+|Command  |New look OFF  |New look ON  |
+|---------|---------|---------|
+| Add tile | Add tile | Top bar ellipsis (...) > Add tile |
+| Comments | Comments | Comments |
+| View related | View related | Top bar ellipsis (...) > View related |
+| Set as featured | Set as featured| Top bar ellipsis (...) > Set as featured|
+| Favorite | Favorite | Favorite |
+| Subscribe | Subscribe |Subscribe |
+| Share | Share | Share |
+| Phone view | Web view > Phone view | Top bar ellipsis (...) > Mobile view |
 
 
 
