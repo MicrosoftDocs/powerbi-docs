@@ -111,7 +111,7 @@ For all data sources used in the Power BI service, consider the following limita
 
 * **Distinct values in a column** - When caching data in a Power BI dataset (sometimes called 'Import' mode), there is a 1,999,999,997  limit on the number of distinct values that can be stored in a column.
 
-* **Row limit** - When using **DirectQuery**, a 1 million row limit is imposed on the query that is sent to your underlying data source. If the query sent to the data source returns more than 1 million rows, you'll be shown an error and the query will fail. 
+* **Row limit** - When using **DirectQuery**, Power BI imposes a limit on the query results that are sent to your underlying data source. If the query sent to the data source returns more than one million rows, you see an error and the query fails. Your underlying data can still contain more than one million rows. You're unlikely to run into this limit as most reports aggregate the data into smaller sets of results.
 
 * **Column limit** - The maximum number of columns allowed in a dataset, across all tables in the dataset, is 16,000 columns. This limit applies to the Power BI service and to datasets used in Power BI Desktop. Power BI tracks the number of columns and tables in the dataset in this way, which means the maximum number of columns is 16,000 minus one for each table in the dataset.
 
