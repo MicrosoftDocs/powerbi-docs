@@ -17,7 +17,7 @@ LocalizationGroup: Common tasks
 This article teaches you how to set contact information for a dashboard or report in Power BI service.
 
 > [!NOTE]
-> Contact information can be set for items in a classic or new workspace. You can't set a contact information for items in your My workspace.
+> Contact information can be set for items in a classic or new workspace. You can't set contact information for items in your My Workspace.
 
 You can add multiple users or groups to the contact for an item, these can be:
 * A person
