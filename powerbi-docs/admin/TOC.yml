@@ -6,6 +6,7 @@
     - name: "What is Power BI administration?"
       href: ../service-admin-administering-power-bi-in-your-organization.md
   - name: Concepts
+    expanded: true
     items:
     - name: "Administration role in Office 365"
       href: ../service-admin-role.md
