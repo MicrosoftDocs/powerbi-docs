@@ -40,7 +40,7 @@ The following data sources support DirectQuery in Power BI:
 * Snowflake
 * Spark (version 0.9 and above)
 * SQL Server
-* Teradata Database
+* Teradata
 * Vertica
 
 Data sources that have **(Beta)** or **(Preview)** after their name are subject to change, and are not supported for production use. They might also not be supported after publishing a report to the **Power BI service**, which means that opening a published report or exploring the dataset can result in an error.
@@ -77,7 +77,7 @@ The following table specifies whether an **On-premises data gateway** is require
 | Spark (beta), version 0.9 and later |Yes |
 | SQL Server |Yes |
 | Sybase |Yes |
-| Teradata Database |Yes |
+| Teradata |Yes |
 | Vertica |Yes |
 
 

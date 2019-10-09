@@ -153,7 +153,7 @@ Power BI Report Server does not support OAuth-based authentication for model ref
 | SharePoint Online List |No |No |No |No |
 | Snowflake |No |No |No |No |
 | Sybase Database |No |No |Yes |Yes |
-| Teradata Database |No |No |Yes |Yes |
+| Teradata |No |No |Yes |Yes |
 | appFigures (Beta) |No |No |No |No |
 | Azure Analysis Services database (Beta) |No |No |No |No |
 | Azure Cosmos DB (Beta) |No |No |No |No |
@@ -200,7 +200,7 @@ Power BI Report Server does not support OAuth-based authentication for DirectQue
 | Oracle Database |No |No |Yes |Yes |Yes |
 | SAP Business Warehouse server |No |No |Yes |No |No |
 | SAP HANA Database |No |No |Yes |Yes |No |
-| Teradata Database |No |No |Yes |Yes |Yes |
+| Teradata |No |No |Yes |Yes |Yes |
 
 
 ## Next steps

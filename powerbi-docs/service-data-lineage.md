@@ -1,14 +1,14 @@
 ---
 title: Data lineage (preview)
 description: In modern business intelligence (BI) projects, understanding the flow of data from the data source to its destination is a key challenge for many customers.
-author: maggiesMSFT
+author: paulinbar
 manager: kfile
 ms.reviewer: 
 
 ms.service: powerbi
 ms.topic: conceptual
-ms.date: 09/27/2019
-ms.author: maggies
+ms.date: 10/03/2019
+ms.author: painbar
 
 LocalizationGroup: 
 ---
@@ -27,7 +27,7 @@ Every workspace, whether new or classic, automatically has a lineage view, excep
 
 - To access lineage view, go to the workspace list view. Tap the arrow next to **List view** and select **Lineage view**.
 
-    ![Switch to lineage view](media/service-data-lineage/power-bi-switch-lineage-view.png)
+    [ ![Switch to lineage view](media/service-data-lineage/power-bi-lineage-list-view-cropped.png) ](media/service-data-lineage/power-bi-lineage-list-view.png#lightbox)
 
     In this view, you see all the workspace artifacts and how the data flows from one to another.
 

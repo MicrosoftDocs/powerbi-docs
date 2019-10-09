@@ -200,6 +200,6 @@ This many-to-many design approach is well documented, and it can be achieved wit
 For more information about star schema design or Power BI model design, see the following articles:
 
 - [Dimensional modeling Wikipedia article](https://go.microsoft.com/fwlink/p/?linkid=246459)
-- [Create and manage relationships in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-create-and-manage-relationships)
-- [Relationships with a many-many cardinality in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships)
-- [Modeling guided learning experience](https://docs.microsoft.com/power-bi/guided-learning/modeling)
+- [Create and manage relationships in Power BI Desktop](../desktop-create-and-manage-relationships.md)
+- [Relationships with a many-many cardinality in Power BI Desktop](../desktop-many-to-many-relationships.md)
+- [Modeling guided learning experience](/learn/modules/model-data-power-bi/)
