@@ -759,6 +759,8 @@
       items: 
       - name: "Rename content within Power BI"
         href: service-rename.md
+      - name: "Set item contacts"
+        href: service-item-contact.md
       - name: "Enroll your US Government organization"
         href: service-govus-signup.md
       - name: "Delete almost anything in Power BI"
