@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 10/08/2019
 ms.author: maggies
 # Customer intent: As a Power BI customer or potential customer, I'd like to know what the differences are between the previous look of the Power BI service and the new look
 LocalizationGroup: Get started
@@ -16,9 +16,11 @@ LocalizationGroup: Get started
 ---
 # The 'new look' of the Power BI service
 
-The Power BI service (app.powerbi.com) has a new look that makes it easier to view and interact with your reports. The new look is a modern experience that’s simpler and builds on your familiarity with other Microsoft products. Across the Power BI service, we’ve made report content the main point of focus by switching to a lighter color theme and updating icons. Here's an overview of what’s changed in the new look. See the numbered sections for details:
+The Power BI service (app.powerbi.com) has a new look that makes it easier to view and interact with your reports. The new look is simpler and builds on your familiarity with other Microsoft products. Across the Power BI service, we’ve made report content the main point of focus by switching to a lighter color theme and updating icons. Here's an overview of what’s changed in the new look. See the numbered sections for details:
 
 ![New look overview of changes](media/service-new-look/power-bi-new-look-changes.png)
+
+Looking for a specific action? See [The 'new look': Where did the actions go?](service-new-look-where-actions.md)
 
 ## Quick tour of the changes
 
