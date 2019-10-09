@@ -160,26 +160,6 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                         </div> 
                   </div> 
             </li>
-            <li> 
-                  <div class="cardSize"> 
-                        <div class="cardPadding"> 
-                              <div class="card"> 
-                                    <div class="cardImageOuter">
-                                          <div class="cardImage">
-                                                <img alt="Administer Power BI" src="media/power-bi-creator-landing/power-bi-designer-administer-power-bi.svg" data-linktype="relative-path">
-                                          </div>
-                                    </div>
-                                    <div class="cardText"> 
-                                          <h3>Administer Power BI</h3> 
-                                          <p></p>
-                                                <a href="service-admin-administering-power-bi-in-your-organization.md">What is Power BI administration?</a><br/> 
-                                                <a href="service-admin-purchasing-power-bi-pro.md">Purchase Power BI Pro licenses</a><br/>
-                                                <a href="service-admin-reference.md">PowerShell cmdlets, REST APIs, & .NET SDK</a>
-                                    </div> 
-                              </div> 
-                        </div> 
-                  </div> 
-            </li>
 </ul>
 
 
