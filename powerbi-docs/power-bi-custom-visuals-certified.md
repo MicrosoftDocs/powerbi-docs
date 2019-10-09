@@ -4,7 +4,7 @@ description: Requirements and process to submit a custom visual for certificatio
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
-ms.reviewer: maghan
+ms.reviewer: ""
 featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
