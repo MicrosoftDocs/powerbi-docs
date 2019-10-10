@@ -20,7 +20,9 @@ We currently support the following data sources:
 
 * SQL Server ([Kerberos](service-gateway-sso-kerberos.md))
 * SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) and [SAML](service-gateway-sso-saml.md))
-* SAP BW ([Kerberos](service-gateway-sso-kerberos.md))
+* SAP BW Application Server([Kerberos](service-gateway-sso-kerberos.md))
+* SAP BW Message Server([Kerberos](service-gateway-sso-kerberos.md))- Public Preview
+* Oracle([Kerberos](service-gateway-sso-kerberos.md))- Public Preview
 * Teradata ([Kerberos](service-gateway-sso-kerberos.md))
 * Spark ([Kerberos](service-gateway-sso-kerberos.md))
 * Impala ([Kerberos](service-gateway-sso-kerberos.md))
