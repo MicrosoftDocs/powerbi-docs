@@ -104,7 +104,7 @@ In the Power BI service, automatic page refresh restrictions apply based on fact
 
 To clarify how this works, let's begin with some background on [capacities and workspaces](whitepaper-powerbi-premium-deployment.md#capacities)
 
-**Capacities** are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver Power BI content. Capacities are either shared or dedicated. A **Shared Capacity** is shared with other Microsoft customers, while a **Dedicated Capacity** is fully committed to a single customer. Dedicated capacities are introduced in the [Premium Capacities](whitepaper-powerbi-premium-deployment#premium-capacities.md) article.
+**Capacities** are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver Power BI content. Capacities are either shared or dedicated. A **Shared Capacity** is shared with other Microsoft customers, while a **Dedicated Capacity** is fully committed to a single customer. Dedicated capacities are introduced in the [premium capacities](whitepaper-powerbi-premium-deployment.md#capacities) article.
 
 In shared capacity, workloads run on computational resources shared with other customers. As the capacity must share resources, limitations are imposed to ensure *fair play*, such as setting a maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
@@ -167,7 +167,8 @@ If you notice that your capacity is getting overloaded with low priority queries
   1. Turn off automatic page refresh for that capacity
   2. Raise the minimum refresh interval, which will affect all reports on that capacity.
 
-The table below describes where automatic page refresh is available, and the limits for each capacity type and [storage mode](whitepaper-powerbi-premium-deployment#model-storage-modes.md).
+The table below describes where automatic page refresh is available, and the limits for each capacity type and [storage mode](whitepaper-powerbi-premium-deployment.md#model-storage-modes).
+
 
 | Storage Mode | Dedicated Capacity | Shared Capacity |
 | --- | --- | --- |
