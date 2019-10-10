@@ -306,6 +306,311 @@ In the final step you should get visual with selections and context menu:
 
 ![The visual with drill-down support](./media/dev-visual-drilldown-demo.gif)
 
+## Add drill down support for matrix data view mapping
+
+Prepare sample data to test the visual with matrix data view mappings:
+
+|   Row1   |   Row2   |   Row3   |   Column1   |   Column2   |   Column3   |   Values   |
+|-----|-----|------|-------|-------|-------|-------|
+|   R1   |   R11   |   R111   |   C1   |   C11   |   C111   |   1   |
+|   R1   |   R11   |   R112   |   C1   |   C11   |   C112   |   2   |
+|   R1   |   R11   |   R113   |   C1   |   C11   |   C113   |   3   |
+|   R1   |   R12   |   R121   |   C1   |   C12   |   C121   |   4   |
+|   R1   |   R12   |   R122   |   C1   |   C12   |   C122   |   5   |
+|   R1   |   R12   |   R123   |   C1   |   C12   |   C123   |   6   |
+|   R1   |   R13   |   R131   |   C1   |   C13   |   C131   |   7   |
+|   R1   |   R13   |   R132   |   C1   |   C13   |   C132   |   8   |
+|   R1   |   R13   |   R133   |   C1   |   C13   |   C133   |   9   |
+|   R2   |   R21   |   R211   |   C2   |   C21   |   C211   |   10   |
+|   R2   |   R21   |   R212   |   C2   |   C21   |   C212   |   11   |
+|   R2   |   R21   |   R213   |   C2   |   C21   |   C213   |   12   |
+|   R2   |   R22   |   R221   |   C2   |   C22   |   C221   |   13   |
+|   R2   |   R22   |   R222   |   C2   |   C22   |   C222   |   14   |
+|   R2   |   R22   |   R223   |   C2   |   C22   |   C223   |   16   |
+|   R2   |   R23   |   R231   |   C2   |   C23   |   C231   |   17   |
+|   R2   |   R23   |   R232   |   C2   |   C23   |   C232   |   18   |
+|   R2   |   R23   |   R233   |   C2   |   C23   |   C233   |   19   |
+
+Apply following dataview mapping for the visual:
+
+```json
+{
+    "dataRoles": [
+        {
+            "displayName": "Columns",
+            "name": "columns",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Rows",
+            "name": "rows",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Value",
+            "name": "value",
+            "kind": "Measure"
+        }
+    ],
+    "drilldown": {
+        "roles": [
+            "columns",
+            "rows"
+        ]
+    },
+    "dataViewMappings": [
+        {
+            "matrix": {
+                "columns": {
+                    "for": {
+                        "in": "columns"
+                    }
+                },
+                "rows": {
+                    "for": {
+                        "in": "rows"
+                    }
+                },
+                "values": {
+                    "for": {
+                        "in": "value"
+                    }
+                }
+            }
+        }
+    ]
+}
+```
+
+Apply data to the visual:
+
+![The visual with data](./media/dev-matrix-visual-drilldown-data.png)
+
+Import required interfaces to process matrix data view mappings:
+
+```typescript
+// ...
+import DataViewMatrix = powerbi.DataViewMatrix;
+import DataViewMatrixNode = powerbi.DataViewMatrixNode;
+import DataViewHierarchyLevel = powerbi.DataViewHierarchyLevel;
+// ...
+```
+
+Create two properties for two `div`s of rows and columns elements:
+
+```typescript
+export class Visual implements IVisual {
+    // ...
+    private rowsDiv: HTMLDivElement;
+    private colsDiv: HTMLDivElement;
+    // ...
+    constructor(options: VisualConstructorOptions) {
+        // constructor body
+        // ...
+        // Create div elements and append to main div of the visual
+        this.rowsDiv = document.createElement("div");
+        this.target.appendChild(this.rowsDiv);
+
+        this.colsDiv = document.createElement("div");
+        this.target.appendChild(this.colsDiv);
+    }
+    // ...
+}
+```
+
+Check the data before rendering elements and display current level of hierarchy:
+
+```typescript
+export class Visual implements IVisual {
+    // ...
+    constructor(options: VisualConstructorOptions) {
+        // constructor body
+    }
+
+    public update(options: VisualUpdateOptions) {
+        this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
+        console.log('Visual update', options);
+
+        const dataView: DataView = options.dataViews[0];
+        const matrixDataView: DataViewMatrix = dataView.matrix;
+
+        // if the visual doesn't receive the data no reason to continue rendering
+        if (!matrixDataView ||
+            !matrixDataView.columns ||
+            !matrixDataView.rows ) {
+            return
+        }
+
+        // to display current level of hierarchy
+        if (typeof this.textNode !== undefined) {
+            this.textNode.textContent = categoricalDataView.categories[categoricalDataView.categories.length - 1].source.displayName.toString();
+        }
+        // ...
+    }
+    // ...
+}
+```
+
+Create function `treeWalker` for traverse the hierarchy:
+
+```typescript
+export class Visual implements IVisual {
+    // ...
+    public update(options: VisualUpdateOptions) {
+        // ...
+
+        // if the visual doesn't receive the data no reason to continue rendering
+        if (!matrixDataView ||
+            !matrixDataView.columns ||
+            !matrixDataView.rows ) {
+            return
+        }
+
+        const treeWalker = (matrixNode: DataViewMatrixNode, index: number, levels: DataViewHierarchyLevel[], div: HTMLDivElement)  => {
+            // ...
+            if (matrixNode.children) {
+                // ...
+                // traversing child nodes
+                matrixNode.children.forEach((node, index) => treeWalker(node, index, levels, childDiv));
+            }
+        }
+
+        // traversing rows
+        const rowRoot: DataViewMatrixNode = matrixDataView.rows.root;
+        rowRoot.children.forEach((node, index) => treeWalker(node, index, matrixDataView.rows.levels, this.rowsDiv));
+
+        // traversing columns
+        const colRoot = matrixDataView.columns.root;
+        colRoot.children.forEach((node, index) => treeWalker(node, index, matrixDataView.columns.levels, this.colsDiv));
+    }
+    // ...
+}
+```
+
+Generate the selections for datapoints.
+
+```typescript
+const treeWalker = (matrixNode: DataViewMatrixNode, index: number, levels: DataViewHierarchyLevel[], div: HTMLDivElement)  => {
+    // generate selectionID for each node of matrix
+    const selectionID: ISelectionID = this.host.createSelectionIdBuilder()
+        .withMatrixNode(matrixNode, levels)
+        .createSelectionId();
+    // ...
+    if (matrixNode.children) {
+        // ...
+        // traversing child nodes
+        matrixNode.children.forEach((node, index) => treeWalker(node, index, levels, childDiv));
+    }
+}
+```
+
+Create `div` for each level of hierarchy:
+
+```typescript
+const treeWalker = (matrixNode: DataViewMatrixNode, index: number, levels: DataViewHierarchyLevel[], div: HTMLDivElement)  => {
+    // generate selectionID for each node of matrix
+    const selectionID: ISelectionID = this.host.createSelectionIdBuilder()
+        .withMatrixNode(matrixNode, levels)
+        .createSelectionId();
+    // ...
+    if (matrixNode.children) {
+        // create div element for level
+        const childDiv = document.createElement("div");
+        // add to current div
+        div.appendChild(childDiv);
+        // create paragraph element to display next
+        const p = document.createElement("p");
+        // display level name on paragraph element
+        const level = levels[matrixNode.level];
+        p.innerText = level.sources[level.sources.length - 1].displayName;
+        // add paragraph element to created child div
+        childDiv.appendChild(p);
+        // traversing child nodes
+        matrixNode.children.forEach((node, index) => treeWalker(node, index, levels, childDiv));
+    }
+}
+```
+
+Create `buttons` to interact with visual and display context menu for matrix datapoints:
+
+```typescript
+const treeWalker = (matrixNode: DataViewMatrixNode, index: number, levels: DataViewHierarchyLevel[], div: HTMLDivElement)  => {
+    // generate selectionID for each node of matrix
+    const selectionID: ISelectionID = this.host.createSelectionIdBuilder()
+        .withMatrixNode(matrixNode, levels)
+        .createSelectionId();
+
+    // create button element
+    let button = document.createElement("button");
+    // display node value/name of the button's text
+    button.innerText = matrixNode.value.toString();
+
+    // add event listener on click
+    button.addEventListener("click", (event) => {
+        // call select method in the selection manager
+        this.selectionManager.select(selectionID);
+    });
+
+    // display context menu on click
+    button.addEventListener("contextmenu", (event) => {
+        // call showContextMenu method to display context menu on the visual
+        this.selectionManager.showContextMenu(selectionID, {
+            x: event.clientX,
+            y: event.clientY
+        });
+        event.preventDefault();
+    });
+
+    div.appendChild(button);
+
+    if (matrixNode.children) {
+        // ...
+    }
+}
+```
+
+Clear `div` elements before render elements again:
+
+```typescript
+public update(options: VisualUpdateOptions) {
+    // ...
+    const treeWalker = (matrixNode: DataViewMatrixNode, index: number, levels: DataViewHierarchyLevel[], div: HTMLDivElement)  => {
+        // ...
+    }
+
+    // remove old elements
+    // to better performance use D3js pattern:
+    // https://d3js.org/#enter-exit
+    while (this.rowsDiv.firstChild) {
+        this.rowsDiv.removeChild(this.rowsDiv.firstChild);
+    }
+    // create label for row elements
+    const prow = document.createElement("p");
+    prow.innerText = "Rows";
+    this.rowsDiv.appendChild(prow);
+
+    while (this.colsDiv.firstChild) {
+        this.colsDiv.removeChild(this.colsDiv.firstChild);
+    }
+    // create label for columns elements
+    const pcol = document.createElement("p");
+    pcol.innerText = "Columns";
+    this.colsDiv.appendChild(pcol);
+
+    // render elements for rows
+    const rowRoot: DataViewMatrixNode = matrixDataView.rows.root;
+    rowRoot.children.forEach((node, index) => treeWalker(node, index, matrixDataView.rows.levels, this.rowsDiv));
+
+    // render elements for columns
+    const colRoot = matrixDataView.columns.root;
+    colRoot.children.forEach((node, index) => treeWalker(node, index, matrixDataView.columns.levels, this.colsDiv));
+}
+```
+
+In the final step you should get visual with context menu:
+
+![The visual with drill-down support](./media/dev-matrix-visual-drilldown-demo.gif)
+
 ## Next steps
 
 * [Read how to add context menu for visuals data points](context-menu.md)
