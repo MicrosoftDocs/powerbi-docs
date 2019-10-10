@@ -25,7 +25,7 @@ For detailed information about new features, see [What's new in Power BI Report 
             - Fix for Text Filter custom visual.
 	        - Fix for the performance of drop down slicers.
 	        - Fix for Strip PII from telemetry.
-		- Fix for URLs to not be case sensitive.
+		  - Fix for URLs to not be case sensitive.
              
     - *Version 1.6.7206.38019 (Build 15.0.1102.597), Released: September 26, 2019*
         - Security updates
@@ -46,7 +46,7 @@ For detailed information about new features, see [What's new in Power BI Report 
          
 - **Power BI Desktop (optimized for Power BI Report Server)**
 
-    - *Version: 2.73.5586.1241 (September 2019), Released: October 9th, 2019
+    - *Version: 2.73.5586.1241 (September 2019), Released: October 9th, 2019*
         - Bug fixes
             - Fix for Text Filter custom visual.
 	        - Fix for the performance of drop down slicers.
