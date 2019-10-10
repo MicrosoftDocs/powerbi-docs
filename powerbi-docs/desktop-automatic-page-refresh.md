@@ -124,11 +124,11 @@ The table below describes with more detail where this feature is available, and 
 
 | Storage Mode | Dedicated Capacity | Shared Capacity |
 | --- | --- | --- |
-| Direct Query | **Supported** – Yes. **Minimum refresh interval** – 1 second **Capacity admin override** – Yes. | **Supported** – Yes. **Minimum refresh interval** – 30 minutes **Capacity admin override** – No. |
-| Import | **Supported** – No. **Minimum refresh interval** – N/A. **Capacity admin override** – N/A. | **Supported** – No. **Minimum refresh interval** – N/A. **Capacity admin override** – N/A. |
-| Mixed Mode (DQ + others) | **Supported** – Yes. **Minimum refresh interval** – 1 second **Capacity admin override** – Yes. | **Supported** – Yes. **Minimum refresh interval** – 30 minutes **Capacity admin override** – No. |
-| Live connect AS | **Supported** – No. **Minimum refresh interval** – N/A. **Capacity admin override** – N/A. | **Supported** – No. **Minimum refresh interval** – N/A. **Capacity admin override** – N/A. |
-| Live connect PBI | **Supported** – No. **Minimum refresh interval** – N/A. **Capacity admin override** – N/A. | **Supported** – No. **Minimum refresh interval** – N/A. **Capacity admin override** – N/A. |
+| Direct Query | **Supported** – Yes. <br>**Minimum refresh interval** – 1 second <br>**Capacity admin override** – Yes. | **Supported** – Yes. <br>**Minimum refresh interval** – 30 minutes <br>**Capacity admin override** – No. |
+| Import | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. |
+| Mixed Mode (DQ + others) | **Supported** – Yes. <br>**Minimum refresh interval** – 1 second <br>**Capacity admin override** – Yes. | **Supported** – Yes. <br>**Minimum refresh interval** – 30 minutes <br>**Capacity admin override** – No. |
+| Live connect AS | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. |
+| Live connect PBI | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. |
 
 > [!NOTE]
 > When publishing your automatic page refresh enabled report from Power BI Desktop to the service, you will have to provide the credentials for the DirectQuery data source in the dataset settings menu.
@@ -172,11 +172,11 @@ The table below describes where automatic page refresh is available, and the lim
 
 | Storage Mode | Dedicated Capacity | Shared Capacity |
 | --- | --- | --- |
-| Direct Query | **Supported** – Yes. **Minimum refresh interval** – 1 second **Capacity admin override** – Yes. | **Supported** – Yes. **Minimum refresh interval** – 30 minutes **Capacity admin override** – No. |
-| Import | **Supported** – No. **Minimum refresh interval** – N/A. **Capacity admin override** – N/A. | **Supported** – No. **Minimum refresh interval** – N/A. **Capacity admin override** – N/A. |
-| Mixed Mode (DQ + others) | **Supported** – Yes. **Minimum refresh interval** – 1 second **Capacity admin override** – Yes. | **Supported** – Yes. **Minimum refresh interval** – 30 minutes **Capacity admin override** – No. |
-| Live connect AS | **Supported** – No. **Minimum refresh interval** – N/A. **Capacity admin override** – N/A. | **Supported** – No. **Minimum refresh interval** – N/A. **Capacity admin override** – N/A. |
-| Live connect PBI | **Supported** – No. **Minimum refresh interval** – N/A. **Capacity admin override** – N/A. | **Supported** – No. **Minimum refresh interval** – N/A. **Capacity admin override** – N/A. |
+| Direct Query | **Supported** – Yes. <br>**Minimum refresh interval** – 1 second <br>**Capacity admin override** – Yes. | **Supported** – Yes. <br>**Minimum refresh interval** – 30 minutes <br>**Capacity admin override** – No. |
+| Import | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. |
+| Mixed Mode (DQ + others) | **Supported** – Yes. <br>**Minimum refresh interval** – 1 second <br>**Capacity admin override** – Yes. | **Supported** – Yes. <br>**Minimum refresh interval** – 30 minutes <br>**Capacity admin override** – No. |
+| Live connect AS | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. |
+| Live connect PBI | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. |
 
 ### Frequently asked questions
 
