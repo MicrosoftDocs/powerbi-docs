@@ -404,7 +404,7 @@ Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** mo
 Now that you've completed developing your application, it's time to back your app workspace with a dedicated capacity. 
 
 > [!Important]
-> Dedicated capacity is required to move to production. If you're using [dynamic binding](embed-dynamic-binding.md), both workspaces (the one containing the report and the one containing the dataset) must be assigned to a capacity.
+> Dedicated capacity is required to move to production. All workspaces (the ones containing the reports or dashboards, and the ones containing the datasets) must be assigned to a capacity.
 
 ### Create a dedicated capacity
 

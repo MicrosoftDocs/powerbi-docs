@@ -14,7 +14,7 @@ ms.date: 09/25/2019
 
 Dynamic binding allows dynamically selecting a dataset while embedding a report. The report and the dataset don't need to reside in the same workspace. End users see different results, depending on the selected dataset.
 
-All workspaces (the ones containing the reports or dashboards, and the ones containing the datasets) must be assigned to a capacity.
+Both workspaces (the one containing the reports or dashboards, and the one containing the datasets) must be assigned to a capacity.
 
 Embedding a report using dynamic binding has two stages:
 1. Generating a token
@@ -48,14 +48,12 @@ var config = {
     permissions: permissions,
 
     /////////////////////////////////////////////
-    // Code block required for dynamic binding //
-    /////////////////////////////////////////////
+    // Adjustment required for dynamic binding //
     datasetBinding: {
-		datasetId: "notOriginalDatasetId", // </The wanted dataset id
+		datasetId: "notOriginalDatasetId",  // </The wanted dataset id
 	}
-    ////////////////////////////////////////////////////
-    // End of code block required for dynamic binding //
-    ////////////////////////////////////////////////////
+    // End of dynamic binding adjustment            //
+    /////////////////////////////////////////////
 };
 
 // Get a reference to the embedded report HTML element
