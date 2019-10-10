@@ -58,7 +58,7 @@ The process for setting session policies is described in detail in the [Session 
 ### Set detections to monitor Power BI activities
 The last step in configuring the requirements to use Microsoft Cloud App Security in Power BI is to set the detections you want to monitor, which is configured in the Azure AD portal. The next section describes supported Cloud App Security detections for Power BI.
 
-## Supported Microsoft Cloud App Security detections for Power BI
+## Supported detections
 
 Microsoft Cloud App Security detections enable administrators to monitor specific activities of a monitored app. For Power BI, there are currently two dedicated Cloud App Security detections. 
 
@@ -68,7 +68,7 @@ Microsoft Cloud App Security detections enable administrators to monitor specifi
 Settings for these detections are configured in the Cloud App Security portal. 
 
 
-## Considerations and Limitations 
+## Considerations and limitations 
 Using Cloud App Security with Power BI is designed to help secure your organization’s content and data, with detections that monitor user sessions and their activities. When using Cloud App Security with Power BI, there are a few limitations you should keep in mind:
 
 * Microsoft Cloud App Security can only operate on Excel, PowerPoint, and PDF files.
@@ -76,7 +76,7 @@ Using Cloud App Security with Power BI is designed to help secure your organizat
 * The *content inspection* policy on Microsoft Cloud App Security is currently not available in Power BI when applying an Excel file policy, so please don’t set this policy for Power BI. This is expected to operate properly when Cloud App Security for Power BI is generally available.
 
 
-## Next Steps
+## Next steps
 This article described how Microsoft Cloud App Security can provide data and content protections for Power BI. You might also be interested in the following articles, which describe Data Protection for Power BI, and supporting content for the Azure services that enable it.
 
 * [Overview of data protection in Power BI](service-security-data-protection-overview.md)

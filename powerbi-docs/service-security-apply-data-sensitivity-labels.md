@@ -41,7 +41,7 @@ When you [export data from a visual report](https://docs.microsoft.com/power-bi/
 
 ![Data sensitivity labels in use](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-04.png)
 
-## Next Steps
+## Next steps
 
 This article described how to apply data sensitivity labels in Power BI. The following articles provide more details about data protection in Power BI. 
 

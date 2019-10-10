@@ -89,7 +89,7 @@ Licensing considerations:
 2.	Users who can set labels on Power BI artifacts must have Power BI Pro license. 
 
 
-## Next Steps
+## Next steps
 
 This article described how to enable data sensitivity labels in Power BI. The following articles provide more details about data protection in Power BI. 
 

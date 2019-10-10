@@ -45,7 +45,7 @@ Power BI reads labels and policies from the unified labeling store managed in Of
 * [How to migrate Azure Information Protection labels to unified sensitivity labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 * [Azure Information Protection documentation](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
-## Next Steps
+## Next steps
 
 This article provided an overview of data protection in Power BI. The following articles provide more details about data protection in Power BI. 
 
