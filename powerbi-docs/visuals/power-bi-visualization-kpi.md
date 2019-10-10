@@ -46,12 +46,12 @@ A KPI dataset needs to contain goal values for a KPI. If your dataset doesn't co
 This tutorial uses the [Retail Analysis sample PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. From the upper left section of the menubar, select **File** > **Open**
-   
-2. Find your copy of the **Retail Analysis sample PBIX file**
 
-1. Open the **Retail Analysis sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Find your copy of the **Retail Analysis sample PBIX file**
 
-1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+1. Open the **Retail Analysis sample PBIX file** in report view. ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png)
+
+1. Select **+** to add a new page. ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png)
 
 ## How to create a KPI
 

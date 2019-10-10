@@ -8,14 +8,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 9/23/2019
+ms.date: 10/2/2019
 ms.author: mihart
 
 LocalizationGroup: Dashboards
 ---
 # Types of insights supported by Power BI
+
+The Power BI service can automatically look for insights in your dashboards or reports.
+
 ## How does Insights work?
-Power BI quickly searches different subsets of your dataset while applying a set of sophisticated algorithms to discover potentially-interesting insights. Power BI scans as much of a dataset as possible in an allotted amount of time.
+Power BI quickly searches different subsets of your dataset. As it searches, Power BI applies a set of sophisticated algorithms to discover potentially interesting insights. Power BI scans as much of a dataset as possible in an allotted amount of time.
 
 You can run insights against a dataset or dashboard tile.   
 
@@ -38,7 +41,7 @@ Detects cases where multiple measures show a correlation between each other when
 ![Correlation example](./media/end-user-insight-types/pbi_auto_insight_types_correlation.png)
 
 ## Low Variance
-Detects cases where data points are not far from the mean.
+Detects cases where data points aren't far from the mean.
 
 ![Low Variance example](./media/end-user-insight-types/power-bi-low-variance.png)
 
