@@ -8,7 +8,7 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/26/2019
+ms.date: 10/09/2019
 ---
 
 # Change log for Power BI Report Server
@@ -19,7 +19,14 @@ For detailed information about new features, see [What's new in Power BI Report 
 
 ## September 2019
 
-- **Power BI Report Server**          
+- **Power BI Report Server**
+    - *Version: 1.6.7221.30698 (Build 15.0.1102.620), Released: October 9th, 2019
+        - Bug fixes
+            - Fix for Text Filter custom visual.
+	        - Fix for URLs to not be case sensitive.
+	        - Fix for the performance of drop down slicers.
+	        - Fix for Strip PII from telemetry.
+        
     - *Version 1.6.7206.38019 (Build 15.0.1102.597), Released: September 26, 2019*
         - Security updates
         - Bug fixes
@@ -38,10 +45,17 @@ For detailed information about new features, see [What's new in Power BI Report 
              - Updated Web API: /PowerBIReports({Id})/DataSources (PATCH) to allow connection string updates.
          
 - **Power BI Desktop (optimized for Power BI Report Server)**
+
+    - *Version: 2.73.5586.1241 (September 2019), Released: October 9th, 2019
+        - Bug fixes
+            - Fix for Text Filter custom visual.
+	        - Fix for the performance of drop down slicers.
+	        - Fix for Strip PII from telemetry.
+            
     - *Version: 2.73.5586.821 (September 2019), Released: September 26, 2019* (new build and new version)
-    - Contains changes required for connection with Power BI Report Server (September 2019)
+        - Contains changes required for connection with Power BI Report Server (September 2019)
 
-
+    
 ## May 2019
 
 - **Power BI Report Server**          
