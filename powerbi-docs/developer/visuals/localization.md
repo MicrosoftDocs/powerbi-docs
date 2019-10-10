@@ -212,4 +212,4 @@ It returns "Legend" for en-US and "Обозначения" for ru-RU
 
 ## Next Steps
 
-* [Read how to use formatting utils to provide localized formats](utils-formattingutils)
+* [Read how to use formatting utils to provide localized formats](utils-formattingutils.md)
