@@ -27,7 +27,7 @@ Power BI supports the following data sources:
 
 We don't currently support SSO for [M-extensions](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md).
 
-When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sorting, and report editing operation can result in queries executing live against the underlying on-premises data source. When you configure SSO for the data source, queries execute under the identity of the user interacting with Power BI (that is, through the web experience or Power BI mobile apps). Therefore, each user sees precisely the data for which they have permissions in the underlying data source. With single sign-on configured, there's no shared data caching across different users.
+When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying on-premises data source. When you configure SSO for the data source, queries execute under the identity of the user that interacts with Power BI (that is, through the web experience or Power BI mobile apps). Therefore, each user sees precisely the data for which they have permissions in the underlying data source. With single sign-on configured, there's no shared data caching across different users.
 
 ## Query steps when running SSO
 
@@ -37,7 +37,7 @@ A query that runs with SSO consists of three steps, as shown in the following di
 
 Here are additional details about each step:
 
-1. For each query, the Power BI service includes the *user principal name* (UPN), which is the fully qualified username of the user currently logged in to Power BI service, when it sends a query request to the configured gateway.
+1. For each query, the Power BI service includes the *user principal name (UPN)*, which is the fully qualified username of the user currently signed in to the Power BI service, when it sends a query request to the configured gateway.
 
 2. The gateway must map the Azure Active Directory UPN to a local Active Directory identity.
 
