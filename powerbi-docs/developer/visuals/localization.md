@@ -21,14 +21,14 @@ For example, getting locale in the Sample Bar Chart visual.
 
 ![Localization in Sample Bar Chart visual](media/locale-in-samplebarchart.png)
 
-Each of these bar charts was created under a different locale (English, Basque, and Hindi), and it is displayed in the tooltip.
+Each of these bar charts was created under a different locale (English, Basque, and Hindi), and it's displayed in the tooltip.
 
 > [!NOTE]
 > The localization manager in the visual’s code is supported from API 1.10.0 and higher.
 
 # Get the locale
 
-The `locale` is passed as a string during the initialization of the visual. If a locale is changed in Power BI the visual will be generated again with the new locale. You can find the full sample code at SampleBarChart with Locale
+The `locale` is passed as a string during the initialization of the visual. If a locale is changed in Power BI, the visual will be generated again with the new locale. You can find the full sample code at SampleBarChart with Locale
 
 The BarChart constructor now has a locale member, which is instantiated in the constructor with the host locale instance.
 
@@ -38,7 +38,7 @@ private locale: string;
 this.locale = options.host.locale;
 ```
 
-Supported Locales
+Supported locales:
 
 Locale string | Language
 --------------|----------------------
@@ -92,7 +92,7 @@ zh-TW | 中國 (Chinese-Tranditional)
 
 ## Localizing the property pane for custom visuals
 
-The fields in the property pane (that are defined in the capabilities) can be localized to provide a more integrated and coherent experience, making your custom visual behave like any other Power BI core visual.
+The fields in the property pane can be localized to provide a more integrated and coherent experience. In makes your custom visual behave like any other Power BI core visual.
 
 For example, a non-localized custom visual created by using the `pbiviz new` command, will show the following fields in the property pane:
 
@@ -123,7 +123,7 @@ First add a display name key to every display name you want to localize in your 
 }
 ```
 
-Then add a directory called stringResources, this directory will contain all your different string resource files based on the locales you want your visual to support. Under this directory, you’ll need to add a JSON file for every locale you want to support that contains the locale information and the localized strings values for every displayNameKey you want to replace.
+Then add a directory called stringResources. The directory will contain all your different string resource files based on the locales you want your visual to support. Under this directory, you’ll need to add a JSON file for every locale you want to support. Those files contain the locale information and the localized strings values for every displayNameKey you want to replace.
 
 In our example, lets say we want to support Arabic and Hebrew. we will need to add two JSON files in the following way:
 
@@ -201,8 +201,9 @@ constructor(options: VisualConstructorOptions) {
 }
 ```
 
-`localizationManager` usage sample
-Now you can simply call the getDisplayName function of the localization manager with the string key argument you defined in resources.resjson to get the required string anywhere inside of your code:
+## localizationManager usage sample
+
+Now you can call the getDisplayName function of the localization manager with the string key argument you defined in resources.resjson to get the required string anywhere inside of your code:
 
 ```typescript
 let legend: string = this.localization.getDisplayName("Role_Legend");
