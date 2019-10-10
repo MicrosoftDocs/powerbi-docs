@@ -165,6 +165,8 @@
         href: desktop-connect-to-web.md
       - name: "Connect to a Snowflake computing warehouse in Power BI Desktop"
         href: desktop-connect-snowflake.md
+      - name: "Connect to Azure Cost Management data"
+        href: desktop-connect-azure-cost-management.md        
       - name: "Connect to Azure Consumption Insights data"
         href: desktop-connect-azure-consumption-insights.md
       - name: "Use SAP HANA in Power BI Desktop"
