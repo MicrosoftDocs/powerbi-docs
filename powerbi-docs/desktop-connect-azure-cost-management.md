@@ -31,7 +31,7 @@ To use the **Azure Cost Management connector** in Power BI Desktop, take the fol
 2.	Select **Azure** from the list of data catagories.
 3.	Select **Azure Cost Management**.
 
-    ![Get data](media/desktop-connect-azure-cost-management/azure-cost-management-00a.png)
+    ![Get data](media/desktop-connect-azure-cost-management/azure-cost-management-00b.png)
 
 4. In the dialog that appears, enter either your **Billing Profile ID** for **Microsoft Customer Agreements**, or your **Enrollment Number** for **Enterprise Agreements (EA)**. 
 
