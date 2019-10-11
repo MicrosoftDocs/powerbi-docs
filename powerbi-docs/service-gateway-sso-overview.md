@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/09/2019
+ms.date: 10/10/2019
 LocalizationGroup: Gateways
 ---
 
