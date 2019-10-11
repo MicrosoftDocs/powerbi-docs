@@ -54,7 +54,7 @@ The following steps describe how to establish a trust relationship between a HAN
 
  1. Sign the certificate-signing request by using the Root CA you've configured your HANA servers to trust. 
 
-   For example, to sign IdP_Req.pem using CA_Cert.pem and CA_Key.pem (the certificate and key of the Root CA), execute the following command:
+    For example, to sign IdP_Req.pem using CA_Cert.pem and CA_Key.pem (the certificate and key of the Root CA), execute the following command:
 
     ```
     openssl x509 -req -days 365 -in IdP_Req.pem -sha256 -extensions usr_cert -CA CA_Cert.pem -CAkey CA_Key.pem -CAcreateserial -out IdP_Cert.pem
