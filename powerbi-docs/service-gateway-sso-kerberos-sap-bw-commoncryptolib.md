@@ -59,21 +59,23 @@ This article describes how to configure your SAP BW data source to enable SSO fr
 
     ![Authenticated users](media/service-gateway-sso-kerberos/authenticated-users.png)
 
-1. If you don't already have an SAP BW data source associated with the gateway you want the SSO connection to flow through, add one on the **Manage gateways** page in the Power BI service. If you already have such a data source, prepare to edit it. Choose **SAP Business Warehouse** as the **Data Source Type** if you want to create an SSO connection to a BW Application Server. Select **Sap Business Warehouse Message Server** if you want to create an SSO connection to a BW Message Server.
+1. If you don't already have an SAP BW data source associated with the gateway you want the SSO connection to flow through, add one on the **Manage gateways** page in the Power BI service. If you already have such a data source, edit it: 
+    - Choose **SAP Business Warehouse** as the **Data Source Type** if you want to create an SSO connection to a BW Application Server. 
+    - Select **Sap Business Warehouse Message Server** if you want to create an SSO connection to a BW Message Server.
 
-1. For **SNC Library**, select either the **SNC\_LIB** or **SNC\_LIB\_64** environment variable or **Custom**. 
+1. For **SNC Library**, select either the **SNC\_LIB** or **SNC\_LIB\_64** environment variable, or **Custom**. 
 
-   - If you select **SNC\_LIB**, you must set the value of the **SNC\_LIB\_64** environment variable on the gateway machine to the absolute path of the 64-bit copy of sapcrypto.dll on the gateway machine, for example, *C:\Users\Test\Desktop\sapcrypto.dll*.
+   - If you select **SNC\_LIB**, you must set the value of the **SNC\_LIB\_64** environment variable on the gateway machine to the absolute path of the 64-bit copy of sapcrypto.dll on the gateway machine. For example, *C:\Users\Test\Desktop\sapcrypto.dll*.
 
    - If you choose **Custom**, paste the absolute path to *sapcrypto.dll* into the Custom SNC Library Path field that appears on the **Manage gateways** page. 
 
-1. For **SNC Partner Name**, enter the SNC Name of the BW server. Under **Advanced settings**, ensure that **Use SSO via Kerberos for DirectQuery queries** is checked. The other fields should be filled in as if you were establishing a Windows Authentication connection from PBI Desktop.
+1. For **SNC Partner Name**, enter the SNC Name of the BW server. Under **Advanced settings**, ensure that **Use SSO via Kerberos for DirectQuery queries** is checked. Fill in the other fields as if you were establishing a Windows Authentication connection from PBI Desktop.
 
-1. Create a **CCL\_PROFILE** system environment variable and set its value to the path to sapcrypto.ini:
+1. Create a **CCL\_PROFILE** system environment variable and set its value to the path to sapcrypto.ini.
 
     ![CCL\_PROFILE system environment variable](media/service-gateway-sso-kerberos/ccl-profile-variable.png)
 
-    Remember that the sapcrypto .dll and .ini files must exist in the same location. In the above example, sapcrypto.ini and sapcrypto.dll are both located on the desktop.
+    The sapcrypto .dll and .ini files must exist in the same location. In the above example, sapcrypto.ini and sapcrypto.dll are both located on the desktop.
 
 1. Restart the gateway service.
 

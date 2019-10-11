@@ -26,17 +26,19 @@ This guide is comprehensive; if you've already completed some of the described s
 > [!NOTE]
 > The gx64krb5 library is no longer supported by SAP. For more information, see [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Also note that gx64krb5 doesn't allow for SSO connections from the data gateway to SAP BW Message servers; only connections to SAP BW Application servers are possible. This restriction doesn't exist if you use [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md) as your SNC library. Although other SNC libraries might also work for BW SSO, they aren't officially supported by Microsoft.
 
-The gx64krb5 library must be in use by both the client and server to complete an SSO connection through the gateway. That is, both the client and server must be using the same SNC library.
+The gx64krb5 library must be used by both the client and server to complete an SSO connection through the gateway. That is, both the client and server must be using the same SNC library.
 
 1. Download gx64krb5.dll from [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-user required). Ensure you have at least version 1.0.11.x. Also, download gsskrb5.dll (the 32-bit version of the library) if you want to test the SSO connection in SAP GUI before you attempt the SSO connection through the gateway (recommended). The 32-bit version is required to test with SAP GUI because SAP GUI is 32-bit only.
 
 1. Put gx64krb5.dll in a location on your gateway machine that's accessible by your gateway service user. If you want to test the SSO connection with SAP GUI, also put a copy of gsskrb5.dll on your machine and set the **SNC_LIB** environment variable to point to it. Both the gateway Service User and the Active Directory (AD) users that the Service User will impersonate need read and execute permissions for the copy of gx64krb5.dll. We recommend granting permissions on the .dll to the Authenticated Users group. For testing purposes, you can also explicitly grant these permissions to both the gateway Service User and the Active Directory user you use to test.
 
-1. If your BW server hasn't already been configured for SSO using gx64krb5.dll, put another copy of the .dll on your SAP BW server machine in a location accessible by the SAP BW server. For more information on configuring gx64krb5.dll for use with an SAP BW server, see [SAP documentation](https://launchpad.support.sap.com/#/notes/2115486) (SAP s-user required).
+1. If your BW server hasn't already been configured for SSO using gx64krb5.dll, put another copy of the .dll on your SAP BW server machine in a location accessible by the SAP BW server. 
+
+    For more information on configuring gx64krb5.dll for use with an SAP BW server, see [SAP documentation](https://launchpad.support.sap.com/#/notes/2115486) (SAP s-user required).
 
 1. On the client and server machines, set the **SNC_LIB** and **SNC_LIB_64** environment variables: 
-- If you use gsskrb5.dll, set the **SNC_LIB** variable to its absolute path. 
-- If you use gx64krb5.dll, set the **SNC_LIB_64** variable to its absolute path.
+    - If you use gsskrb5.dll, set the **SNC_LIB** variable to its absolute path. 
+    - If you use gx64krb5.dll, set the **SNC_LIB_64** variable to its absolute path.
 
 ## Configure an SAP BW service user and enable SNC communication on the BW server
 

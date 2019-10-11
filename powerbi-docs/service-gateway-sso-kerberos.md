@@ -24,7 +24,7 @@ Several items must be configured for Kerberos constrained delegation to work pro
 
 The on-premises data gateway supports an in-place upgrade, and _settings takeover_ of existing gateways.
 
-### Run the gateway Windows service as a domain account.
+### Run the gateway Windows service as a domain account
 
 In a standard installation, the gateway runs as the machine-local service account, **NT Service\PBIEgwService**.
 
@@ -35,7 +35,7 @@ To enable Kerberos constrained delegation, the gateway must run as a domain acco
 > [!NOTE]
 > If Azure AD Connect is configured and user accounts are synchronized, the gateway service doesn't need to perform local Azure AD lookups at runtime. Instead, you can simply use the local service SID for the gateway service to complete all required configuration in Azure AD. The Kerberos constrained delegation configuration steps outlined in this article are the same as the configuration steps required in the Azure AD context. They are applied to the gateway's computer object (as identified by the local service SID) in Azure AD instead of the domain account.
 
-## Obtain domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings.
+## Obtain domain admin rights to configure SPNs (SetSPN) and Kerberos constrained delegation settings
 
 To configure SPNs and Kerberos delegation settings, a domain administrator should avoid granting rights to someone that doesn't have domain admin rights. In the following section, we cover the recommended configuration steps in more detail.
 
@@ -177,7 +177,9 @@ Finally, on the machine running the gateway service (**MyGatewayMachine** in our
 
     ![Impersonate a client policy](media/service-gateway-sso-kerberos/impersonate-client.png)
     
-4. Right-click the policy, open **Properties**, and then view the list of accounts. The list must include the gateway service account (**Contoso\GatewaySvc** or **ContosoFrontEnd\GatewaySvc** depending on the type of constrained delegation).
+4. Right-click the policy, open **Properties**, and then view the list of accounts. 
+
+    The list must include the gateway service account (**Contoso\GatewaySvc** or **ContosoFrontEnd\GatewaySvc** depending on the type of constrained delegation).
 
 5. Under **User Rights Assignment**, select **Act as part of the operating system (SeTcbPrivilege)** from the list of policies. Ensure that the gateway service account is included in the list of accounts.
 

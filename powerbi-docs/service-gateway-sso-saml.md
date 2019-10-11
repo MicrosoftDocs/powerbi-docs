@@ -42,7 +42,7 @@ The following steps describe how to establish a trust relationship between a HAN
 
  1. Add the certificate (for example, CA_Cert.pem) to the HANA server's trust store so that the HANA server will trust any certificates signed by the Root CA you created. 
 
-   You can find the location of your HANA server's trust store by examining the **ssltruststore** configuration setting. If you've followed the instructions in the SAP documentation covering how to configure OpenSSL, your HANA server might already trust a Root CA you that can reuse. For more information, see [How to Configure Open SSL for SAP HANA Studio to SAP HANA Server](https://archive.sap.com/documents/docs/DOC-39571). If you have multiple HANA servers for which you want to enable SAML SSO, make sure that each of the servers trusts this Root CA.
+    You can find the location of your HANA server's trust store by examining the **ssltruststore** configuration setting. If you've followed the instructions in the SAP documentation covering how to configure OpenSSL, your HANA server might already trust a Root CA you that can reuse. For more information, see [How to Configure Open SSL for SAP HANA Studio to SAP HANA Server](https://archive.sap.com/documents/docs/DOC-39571). If you have multiple HANA servers for which you want to enable SAML SSO, make sure that each of the servers trusts this Root CA.
 
 1. Create the gateway IdP's X509 certificate. 
 
@@ -56,11 +56,11 @@ The following steps describe how to establish a trust relationship between a HAN
 
    For example, to sign IdP_Req.pem using CA_Cert.pem and CA_Key.pem (the certificate and key of the Root CA), execute the following command:
 
-   ```
-   openssl x509 -req -days 365 -in IdP_Req.pem -sha256 -extensions usr_cert -CA CA_Cert.pem -CAkey CA_Key.pem -CAcreateserial -out IdP_Cert.pem
-   ```
+    ```
+    openssl x509 -req -days 365 -in IdP_Req.pem -sha256 -extensions usr_cert -CA CA_Cert.pem -CAkey CA_Key.pem -CAcreateserial -out IdP_Cert.pem
+    ```
 
-   The resulting IdP certificate is valid for a year (see the -days option). 
+     The resulting IdP certificate is valid for a year (see the -days option). 
 
 Import your IdP's certificate in HANA Studio to create a new SAML Identity Provider:
 

@@ -41,7 +41,7 @@ Here are additional details about each step:
 
 1. For each query, the Power BI service includes the *user principal name (UPN)*, which is the fully qualified username of the user currently signed in to the Power BI service, when it sends a query request to the configured gateway.
 
-2. The gateway must map the Azure Active Directory UPN to a local Active Directory identity.
+2. The gateway must map the Azure Active Directory UPN to a local Active Directory identity:
 
    a. If Azure AD DirSync (also known as *Azure AD Connect*) is configured, then the mapping works automatically in the gateway.
 
