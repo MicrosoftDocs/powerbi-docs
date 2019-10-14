@@ -29,8 +29,9 @@ When you open the Power BI service in a browser, you start at your Home screen. 
 3. Power BI home button
 4. Icon buttons, including settings, help, and feedback
 5. Search box
-6. Tiles from a favorite dashboard
-7. Favorite and frequent dashboards and reports
+6. Favorite and frequent dashboards and reports
+7. Recent dashboards and reports
+8. Your workspaces
 
 Your end users for your reports and dashboards have the same start experience in the Power BI service in a browser.
 
@@ -192,7 +193,7 @@ Q&A looks for an answer in the dataset(s) connected to the dashboard.  A connect
 As soon as you start to type your question, Q&A takes you to the Q&A page. As you type, Q&A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard. For more information, see [Q&A in Power BI](power-bi-q-and-a.md).
 
 ### 4. **Icon buttons**
-The icons in the upper right corner are your resource for settings, notifications, downloads, getting help, and providing feedback to the Power BI team. Select the double arrow to open the dashboard in **Full screen** mode.  
+The icons in the upper right corner are your resource for settings, notifications, downloads, getting help, toggling the look of the interface, and providing feedback to the Power BI team. Select the double arrow to open the dashboard in **Full screen** mode.  
 
 ![icon buttons](media/service-basic-concepts/power-bi-icons.png)
 

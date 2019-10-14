@@ -65,9 +65,9 @@ In this step-by-step, we import one of the Power BI sample datasets and use it t
 1. In the same workspace, select the **Reports** tab, and then select **Procurement Analysis Sample** to open the report.
 
     ![Reports tab](media/service-dashboard-create/power-bi-reports.png)
-    The report opens in Reading view. Notice it has two tabs at the bottom: **Discount Analysis** and **Spend Overview**. Each tab represents a page of the report.
+    The report opens in Reading view. Notice it has two tabs on the left: **Discount Analysis** and **Spend Overview**. Each tab represents a page of the report.
 
-2. Select **Edit report** to open the report in Editing view.
+2. Select **...** > **Edit report** to open the report in Editing view.
 
     ![Report in Reading view](media/service-dashboard-create/power-bi-reading-view.png)
 3. Hover over a visualization to reveal the options available. To add a visualization to a dashboard, select the pin icon ![Pin icon](media/service-dashboard-create/power-bi-pin-icon.png).
