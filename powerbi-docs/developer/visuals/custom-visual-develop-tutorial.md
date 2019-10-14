@@ -283,11 +283,11 @@ Now you can develop the custom visual to display a circle with text.
 1. To install the **D3 library** in PowerShell, enter the command below.
 
     ```powershell
-    npm i d3@5.11.0 --save
+    npm i d3@^5.0.0 --save
     ```
 
     ```powershell
-    PS C:\circlecard>npm i d3@5.11.0 --save
+    PS C:\circlecard>npm i d3@^5.0.0 --save
     + d3@5.11.0
     added 179 packages from 169 contributors and audited 306 packages in 33.25s
     found 0 vulnerabilities
@@ -298,11 +298,11 @@ Now you can develop the custom visual to display a circle with text.
 2. To install type definitions for the **D3 library**, enter the command below.
 
     ```powershell
-    npm i @types/d3@5.7.2 --save-dev
+    npm i @types/d3@^5.0.0 --save
     ```
 
     ```powershell
-    PS C:\circlecard>npm i @types/d3@5.7.2 --save-dev
+    PS C:\circlecard>npm i @types/d3@^5.0.0 --save
     + @types/d3@5.7.2
     updated 1 package and audited 306 packages in 2.217s
     found 0 vulnerabilities
@@ -330,8 +330,6 @@ Now you can develop the custom visual to display a circle with text.
     > https://opencollective.com/core-js
     > https://www.patreon.com/zloirock
 
-    Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
-
     + core-js@3.2.1
     updated 1 package and audited 306 packages in 6.051s
     found 0 vulnerabilities
@@ -339,7 +337,7 @@ Now you can develop the custom visual to display a circle with text.
     PS C:\circlecard>
     ```
 
-    This command installs modular standard library for JavaScript. Includes polyfills for ECMAScript up to 2019. Read more about [`core-js`](https://www.npmjs.com/package/core-js)
+    This command installs modular standard library for JavaScript. It includes polyfills for ECMAScript up to 2019. Read more about [`core-js`](https://www.npmjs.com/package/core-js)
 
 4. To install the **powerbi-visual-api** in PowerShell, enter the command below.
 
@@ -371,7 +369,7 @@ Now you can develop the custom visual to display a circle with text.
 
     ![D3 Library in visual Studio code](media/custom-visual-develop-tutorial/d3-library.png)
 
-7. Notice the TypeScript file, **index.d.ts**, by expanding node_modules > @types > d3 in the **Explorer pane**.
+7. Make sure that file **index.d.ts** was added, by expanding node_modules > @types > d3 in the **Explorer pane**.
 
     ![Index.d.ts file](media/custom-visual-develop-tutorial/index-d-ts.png)
 
@@ -532,7 +530,7 @@ Now we can explore how to develop the custom visual to show a circle and sample 
 
 6. Continue running the visual.
 
-## Configuring data binding
+## Process data in the visual code
 
 Define the data roles and data view mappings, and then modify the custom visual logic to display the value and display name of a measure.
 
