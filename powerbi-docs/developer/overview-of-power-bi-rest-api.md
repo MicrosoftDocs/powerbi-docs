@@ -52,7 +52,7 @@ You can use the Power BI API to [push data into a dataset](walkthrough-push-data
 ## Next Steps
 
 * [Push data into a dataset](walkthrough-push-data.md)
-* [Developing a Power BI custom visual](custom-visual-develop-tutorial.md)
+* [Developing a Power BI custom visual](visuals/custom-visual-develop-tutorial.md)
 * [Power BI REST API Reference](rest-api-reference.md)
 * [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/)
 
