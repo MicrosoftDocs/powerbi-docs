@@ -43,8 +43,8 @@ Filled maps are a great choice:
 * to get an overview of the distribution across the geographic locations.
 
 ### Prerequisites
-This tutorial uses the [Sales Marketing sample PBIX file](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
-1. From the upper left section of the menubar, select **File** > **Open**
+This tutorial uses the [Retail Analysis sample PBIX file](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
+1. From the upper left section of the menu bar, select **File** > **Open**
    
 2. Find your copy of the **Retail Analysis sample PBIX file**
 
@@ -73,7 +73,7 @@ In this video, Kim creates a basic map and converts it to a filled map.
 
    a.  To the left of the Visualizations pane, look for the **Filters** pane. Expand it if it is minimized
 
-   b.  Hover over **State** and click the expand chevron  
+   b.  Hover over **State** and select the expand chevron  
    ![Visual level filters showing State(All)](media/power-bi-visualization-filled-maps-choropleths/img004.png)
 
    c.  Place a check mark next to **All** and remove the check mark next to **AK**.
@@ -115,7 +115,7 @@ Highlighting a location in a filled Map cross-filters the other visualizations o
 
    ![Filled map added to Sentiment page](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. On the filled map, select a state.  This highlights the other visualizations on the page. Selecting **Texas**, for example, shows me that Sentiment is 75, Texas is in the Central District \#23.   
+5. On the filled map, select a state.  This cross-highlights and cross-filters the other visualizations on the page. Selecting **Texas**, for example, shows me that Sentiment is 75 and that Texas is in the Central District \#23.   
    ![Texas selected](media/power-bi-visualization-filled-maps-choropleths/power-bi-texas.png)
 2. Select a data point on the VanArsdel - Sentiment by Month line chart. This filters the filled map to show Sentiment data for VanArsdel and not their competition.  
    ![new shading](media/power-bi-visualization-filled-maps-choropleths/power-bi-yes.png)

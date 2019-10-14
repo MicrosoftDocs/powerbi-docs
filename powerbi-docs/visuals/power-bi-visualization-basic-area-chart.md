@@ -65,7 +65,8 @@ For information about using the Filters pane, see [Add a filter to a report](../
 To highlight one particular area in your chart, select that area or its top border.  Unlike other visualization types, if there are other visualizations on the same page, highlighting a basic area charts does not cross-filter the other visualizations on the report page. However, area charts are a target for cross-filtering triggered by other visualizations on the report page. 
 
 1. Try it out by selecting your area chart and copying it to the **New Store Analysis** report page (CTRL-C and CTRL-V).
-2. Select one of data points in your visual and note how the other visuals change, also note how selecting other elements on different visuals also filters the area chart.
+2. Select one of the shaded areas of the area chart and then select the other shaded area. You'll notice no impact on the other visualizations on the page.
+1. Now select an element. Notice the impact on the area chart -- it gets cross-filtered.
 
     ![Filter examples](media/power-bi-visualization-basic-area-chart/power-bi-area-chart-filters.gif) 
 
