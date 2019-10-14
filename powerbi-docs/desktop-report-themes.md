@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/26/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -471,7 +471,8 @@ An enumeration, most commonly used for dropdown formatting options, means it can
 
 
 ```json
-      "general":
+{
+      "general":{ 
         "responsive": {
           "type": [
             "bool"
@@ -482,7 +483,7 @@ An enumeration, most commonly used for dropdown formatting options, means it can
           "description": [
             "The visual will adapt to size changes"
           ]
-        }
+        },
         "legend": {
         "show": {
           "type": [
@@ -4374,4 +4375,6 @@ The following section defines the enumerations that you can use in the JSON file
          ]
        }
     }
+  }
+}
 ```
