@@ -16,7 +16,7 @@ LocalizationGroup: Connect to data
 
 # Automatic page refresh in Power BI Desktop (preview)
 
-When monitoring critical events, it’s important for data to be updates as soon as the source data gets updated. For example, in the manufacturing industry it's critical to know when a machine is malfunctioning, or close to doing so.
+When monitoring critical events, it’s important for data to be refreshed as soon as the source data gets updated. For example, in the manufacturing industry it's critical to know when a machine is malfunctioning, or close to doing so.
 
 The automatic page refresh (APR) feature in Power BI lets your active report page query for new data, at a pre-defined cadence, for [DirectQuery sources](https://docs.microsoft.com/power-bi/desktop-directquery-about).
 
@@ -44,7 +44,7 @@ When automatic page refresh is enabled, Power BI Desktop is constantly sending q
 
 As a best practice, the refresh interval should at least match your expected new data arrival rate:
 
-* If new data arrives at the source every 20 minutes, then 20 minutes should be your refresh interval. 
+* If new data arrives at the source every 20 minutes, then your refresh interval cannot be less than 20 minutes. 
 
 * If new data arrives every second, then the interval should be set to one second. 
 
@@ -167,16 +167,6 @@ If you notice that your capacity is getting overloaded with low priority queries
   1. Turn off automatic page refresh for that capacity
   2. Raise the minimum refresh interval, which will affect all reports on that capacity.
 
-The table below describes where automatic page refresh is available, and the limits for each capacity type and [storage mode](whitepaper-powerbi-premium-deployment.md#model-storage-modes).
-
-
-| Storage Mode | Dedicated Capacity | Shared Capacity |
-| --- | --- | --- |
-| Direct Query | **Supported** – Yes. <br>**Minimum refresh interval** – 1 second <br>**Capacity admin override** – Yes. | **Supported** – Yes. <br>**Minimum refresh interval** – 30 minutes <br>**Capacity admin override** – No. |
-| Import | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. |
-| Mixed Mode (DQ + others) | **Supported** – Yes. <br>**Minimum refresh interval** – 1 second <br>**Capacity admin override** – Yes. | **Supported** – Yes. <br>**Minimum refresh interval** – 30 minutes <br>**Capacity admin override** – No. |
-| Live connect AS | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. |
-| Live connect PBI | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. | **Supported** – No. <br>**Minimum refresh interval** – N/A. <br>**Capacity admin override** – N/A. |
 
 ### Frequently asked questions
 
