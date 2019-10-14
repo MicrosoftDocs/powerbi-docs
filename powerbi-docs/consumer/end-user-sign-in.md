@@ -8,7 +8,7 @@ ms.custom:
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/25/2019
+ms.date: 10/14/2019
 ms.author: mihart
 
 LocalizationGroup: Getting started
@@ -21,35 +21,35 @@ Before you can sign in to Power BI, you'll need an account. There are two ways t
 
 ## Sign in for the first time
 
-### Step one: open a browser
+### Step 1: open a browser
 The Power BI service runs in a browser.  So step one is to open your favorite browser and type **app.powerbi.com**.
 
 ![browser field with typing](media/end-user-sign-in/power-bi-sign-in.png)
 
-### Step two: type your email address
-The first time you sign in, you'll be asked for your email address.  This is the work or school email address that was used to sign up for Power BI.  
+### Step 2: type your email address
+The first time you sign in, you'll be asked for your email address.  This email address is the work or school account that was used to sign up for Power BI.  
 
-Look in your Inbox for an email from your Power BI administrator. Most administrators will send you a welcome email that contains your temporary password. Use this email account for your sign in. 
+Look in your Inbox for an email from your Power BI administrator. Most administrators will send you a welcome email that contains your temporary password. Use this email account for your sign-in. 
 
 ![browser field with typing](media/end-user-sign-in/power-bi-password.png)
 
 
  
-### Step three: create a new password
+### Step 3: create a new password
 If your Power BI administrator sent you a temporary password, enter it in the **Current password** field. 
 If you haven't received any password in email, contact your Power BI administrator.
 
-![email address typed into Sign in field](media/end-user-sign-in/power-bi-login.png)
+![email address typed into sign-in field](media/end-user-sign-in/power-bi-login.png)
 
 If you want Power BI to remember your credentials, select **Yes**. 
 
 ![decide if you want Power BI to remember your credentials](media/end-user-sign-in/power-bi-stay-signed-in.png)
 
 
-### Step four: review your Home landing page
-On your very first visit, Power BI opens your **Home** landing page. If **Home** doesn't open, select it from the nav pane. 
+### Step 4: review your Home landing page
+On your first visit, Power BI opens your **Home** landing page. If **Home** doesn't open, select it from the nav pane. 
 
-![email address typed into Sign in field](media/end-user-sign-in/power-bi-home-selected.png)
+![screenshot showing Home selected](media/end-user-sign-in/power-bi-home-selected.png)
 
 On Home, you'll see all the content that you have permission to use. At first, there may not be much content, but don't worry, that will change as you start to use Power BI with your colleagues. 
 
@@ -66,18 +66,18 @@ That doesn't mean you can't save your changes - you can. But those changes only 
 ## Sign out of Power BI service
 When you close or sign out of Power BI, your changes are saved so you can pick up right where you left off.
 
-To close Power BI, simply close the browser tab where you are working. 
+To close Power BI, close the browser tab where you are working. 
 
 ![select the x to close the tab](media/end-user-sign-in/power-bi-close.png) 
 
-If you share a computer, we recommend signing out each time you close Power BI.  To sign out, from the upper right corner, select your Profile picture, and choose **Sign out**. Otherwise, when you are done, simply close the browser tab.
+If you share a computer, we recommend signing out each time you close Power BI.  To sign out, from the upper right corner, select your Profile picture, and choose **Sign out**. Otherwise, when you are done, close the browser tab.
 
 ![profile selected](media/end-user-sign-in/power-bi-sign-out.png) 
 
 ## Troubleshooting and considerations
 - If you've signed up for Power BI as an individual, sign in with the email address you used to sign up.
 
-- If you use Power BI with more than one account, you will be prompted to select an account from a list, and enter a password, when signing in. 
+- Some people use Power BI with more than one account. If so, when signing in you will be prompted to select an account from a list. 
 
 ## Next steps
 [View a Power BI app](end-user-app-view.md)
