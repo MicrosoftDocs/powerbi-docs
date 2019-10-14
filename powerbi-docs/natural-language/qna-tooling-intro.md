@@ -11,7 +11,7 @@ ms.date: 08/14/2019
 ms.author: mohaali
 
 ---
-# Introduction to Power BI Q&A Tooling
+# Introduction to Power BI Q&A Tooling (Preview)
 ## What is Power BI Q&A tooling dialog
 
 To be able to understand and improve the natural language inside Power BI, there is now a dedicated tooling experience to enhance the natural language understanding engine inside Q&A. the Q&A tooling consist of 3 tabs;
@@ -41,15 +41,21 @@ Once you click on the gear, you will then be shown a dialog box with a getting s
 
 ### Review Questions
 
-The 'Review Questions' section allows you to select a Power BI dataset in the service to see what questions users have been asking. The data shown is for the last 28 days but also shows which words are recognized and which words are not recognized. To learn more about this [click here](qna-tooling-review-questions.md)
+The 'Review Questions' section allows you to select a Power BI dataset in the service to see what questions users have been asking. The data shown here is for the last 28 days but also shows which words are recognized and which words are not recognized.
+
+![Q&A Review questions](media/qna-tooling-review-questions.png)
 
 ### Teach Q&A
 
 The 'Teach Q&A' section allows you to train Q&A using natural language on words it has not recognized. To begin, you will first enter in a question which contains a word or words which are not recognized by Q&A. You then submit this and Q&A will then prompt you for the definition of that term. In this box you will enter either a filter or a field name that correspond to what that word represent. Q&A will then re-interpret the original question and if you are happy with the results, you can then save. To learn more about this [click here](qna-tooling-teach-qna.md)
 
+![Q&A Teach synonym preview](media/qna-tooling-teach-fixpreview.png)
+
 ### Manage Terms
 
 Anything that has been saved from the Teach Q&A section will show up here to allow you to review or delete terms you have defined. Today there is no ability to edit an existing definition so in order to redefine a term you must first delete and then recreate the term.
+
+![Q&A Manage terms](media/qna-manage-terms.png)
 
 ## Other Q&A Settings
 
@@ -71,7 +77,7 @@ Only available on tables inside the modelling view, a Row Label allows you to de
 
 ### \[Advanced\] Configure the linguistic schema
 
-IF you wish to completely train nd enhance the natural language engine inside Q&A you can completely change the scoring and weighting of the underlying natural language engine. To learn more about this [click here](qna-tooling-teach-qna.md)
+IF you wish to completely train and enhance the natural language engine inside Q&A including changing the scoring and weighting of the underlying natural language results [click here](qna-tooling-teach-qna.md).
 
 ## Next steps
 

@@ -17,7 +17,7 @@ ms.author: mohaali
 Sometimes the fastest way to get an answer from your data is to perform a search over your data using natural language. The Q&A feature in Power BI lets you explore your data in your own words seamlessly using natural language. Q&A is interactive, even fun. Often, one question leads to others as the visualizations reveal interesting paths to pursue. Asking the question is just the beginning.  Have fun traveling through your data refining or expanding your question, uncovering trust-worthy new information, zeroing in on details and zooming out for a broader view.
 You’ll be delighted by the insights and discoveries you make.
 
-The experience is truly interactive…and fast! Powered by an in-memory storage, response is almost instantaneous.
+The experience is truly interactive…and fast! Powered by an in-memory storage, response is almost instantaneous. Power BI Q&A is free and available to all users.
 
 ## How to use Q&A
 
@@ -101,5 +101,4 @@ By default, Q&A is available on top of dashboards. to use Q&A, click on 'Ask a q
 There are a variety of ways you can integrate natural language. For more information, see the following articles:
 
 * [Q&A Visual](qna-visual.md)
-* [Q&A Popup](qna-popup.md)
-* [Q&A Dashboard](qna-dashboard.md)
+* [Q&A Best Practices](qna-best-practices.md)

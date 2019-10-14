@@ -373,6 +373,22 @@
         href: visuals/power-bi-visualization-waterfall-charts.md
       - name: "Create dynamic reference lines"
         href: service-analytics-pane.md
+    - name: Natural Language
+      items: 
+      - name: "Q&A introduction"
+        href: natural-language/qna-intro.md
+      - name: "Q&A visual"
+        href: natural-language/qna-visual.md
+      - name: "Q&A tooling Introduction"
+        href: natural-language/qna-tooling-intro.md
+      - name: "Q&A tooling teach Q&A"
+        href: natural-language/qna-tooling-teach-qna.md
+      - name: "Q&A tooling advanced"
+        href: natural-language/qna-tooling-advanced.md
+      - name: "Q&A best practices"
+        href: natural-language/qna-best-practices.md
+      - name: "Q&A limitations"
+        href: natural-language/qna-limitations.md
     - name: Troubleshoot
       items: 
       - name: "Resolve issues importing Access Databases and Excel spreadsheets in Power BI Desktop and Power Query"
