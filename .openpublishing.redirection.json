@@ -977,12 +977,12 @@
         },
         {
             "source_path": "powerbi-docs/developer/custom-visual-develop-tutorial.md",
-            "redirect_url": "/power-bi/developer/visuals/custom-visual-develop-tutorial",
+            "redirect_url": "/power-bi/visuals/custom-visual-develop-tutorial",
             "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/developer/custom-visual-develop-tutorial-format-options.md",
-            "redirect_url": "/power-bi/developer/visuals/custom-visual-develop-tutorial-format-options",
+            "redirect_url": "/power-bi/visuals/custom-visual-develop-tutorial-format-options",
             "redirect_document_id": false
         }
     ]
