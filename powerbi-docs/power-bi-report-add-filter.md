@@ -15,7 +15,7 @@ LocalizationGroup: Reports
 ---
 # Add a filter to a report in Power BI
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+[!INCLUDE [power-bi-service-new-look-include](includes/power-bi-service-new-look-include.md)]
 
 This article explains how to add a page filter, visualization filter, report filter, or drillthrough filter to a report in Power BI. The examples in this article are in the Power BI service. The steps are almost identical in Power BI Desktop.
 
