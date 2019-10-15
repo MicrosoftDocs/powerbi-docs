@@ -21,7 +21,7 @@ This article discusses how Power BI visuals with API v2.5.0 can present and mana
 
 ## Manage the Analytics pane
 
-Just as you'd manage properties in the [**Format** pane](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options), you manage the **Analytics** pane by defining an object in the visual's *capabilities.json* file. 
+Just as you'd manage properties in the [**Format** pane](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial-format-options), you manage the **Analytics** pane by defining an object in the visual's *capabilities.json* file.
 
 For the **Analytics** pane, the differences are as follows:
 
