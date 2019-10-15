@@ -15,7 +15,7 @@ LocalizationGroup: Share your work
 ---
 # Manage, update, and delete organizational content packs
 > [!NOTE]
-> You can't create organizational content packs or install them in the new workspace experiences preview. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
+> You can't create organizational content packs or install them in the new workspace experiences. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
 > 
 
 You can package up and share your dashboards, reports, Excel workbooks, and datasets with your colleagues as [organizational content packs](service-organizational-content-pack-introduction.md). Your colleagues can use them as-is, or they can create their own copies.
