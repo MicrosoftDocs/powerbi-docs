@@ -173,7 +173,7 @@ The blank virtual rows are effectively "Unknown Members". They represents refere
 
 Let's see how table expansion can works with a simple example supported by an animated image.
 
-![Animated example of table expansion](desktop-relationships-understand/animation-expanded-table.gif)
+![Animated example of table expansion](media/desktop-relationships-understand/animation-expanded-table.gif)
 
 In this example, the model consists of three tables: **Category** , **Product** , and **Sales**. The **Category** table relates to the **Product** table with a One-to-many relationship, and the **Product** table relates to the **Sales** table with a One-to-many relationship. The **Category** table contains two rows, the **Product** table contains three rows, and the **Sales** tables contains five rows. There are matching values on both sides of all relationships meaning that there are no referential integrity violations. A query-time expanded table is revealed that consists of all columns from all three tables. It is effectively a denormalized perspective of the data contained in the three tables. Next, a new row is added to the **Sales** table, and it has a production identifier value (9) that has no matching value in the **Product** table. This is a referential integrity violation. In the expanded table, this row has (Blank) values for the **Category** and **Product** table columns.
 
