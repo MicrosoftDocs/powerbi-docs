@@ -139,7 +139,7 @@ There are a few considerations to keep in mind when working with conditional tab
 
 * Conditional formatting is applied only to the values of a **Matrix** visual, and does not apply to any subtotals or grand totals. 
 * Conditional formatting is not applied to the **Total** row
-* If the Table doesn't have a grouping, the table is displayed as a single row that doesn't support conditional formatting.
+* Any Table that does not have a grouping is displayed as a single row that doesn't support conditional formatting.
 
 
 ## Next steps
