@@ -186,7 +186,7 @@ You can [download](https://github.com/Microsoft/PowerBI-visuals-circlecard) the 
 
 2. Review the output, including the list of supported commands.
 
-    ![Supported commands](media/custom-visual-develop-tutorial/PowerShell-supported-commands.png) 
+    ![Supported commands](media/custom-visual-develop-tutorial/PowerShell-supported-commands.png)
 
 3. To create a custom visual project, enter the following command. **CircleCard** is the name of the project.
 
@@ -283,22 +283,81 @@ Now you can develop the custom visual to display a circle with text.
 1. To install the **D3 library** in PowerShell, enter the command below.
 
     ```powershell
-    npm i d3@3.5.5 --save
+    npm i d3@^5.0.0 --save
     ```
 
-    ![Install D3 library](media/custom-visual-develop-tutorial/install-d3-library.png)
+    ```powershell
+    PS C:\circlecard>npm i d3@^5.0.0 --save
+    + d3@5.11.0
+    added 179 packages from 169 contributors and audited 306 packages in 33.25s
+    found 0 vulnerabilities
+
+    PS C:\circlecard>
+    ```
 
 2. To install type definitions for the **D3 library**, enter the command below.
 
     ```powershell
-    npm i @types/d3@3.5
+    npm i @types/d3@^5.0.0 --save
     ```
 
-    ![Install D3 library](media/custom-visual-develop-tutorial/install-d3-library-type-def.png)
+    ```powershell
+    PS C:\circlecard>npm i @types/d3@^5.0.0 --save
+    + @types/d3@5.7.2
+    updated 1 package and audited 306 packages in 2.217s
+    found 0 vulnerabilities
+
+    PS C:\circlecard>
+    ```
 
     This command installs TypeScript definitions based on JavaScript files, enabling you to develop the custom visual in TypeScript (which is a superset of JavaScript). Visual Studio Code is an ideal IDE for developing TypeScript applications.
 
-3. Launch [Visual Studio Code](https://code.visualstudio.com/).
+3. To install the **core-js** in PowerShell, enter the command below.
+
+    ```powershell
+    npm i core-js@3.2.1 --save
+    ```
+
+    ```powershell
+    PS C:\circlecard> npm i core-js@3.2.1 --save
+
+    > core-js@3.2.1 postinstall F:\circlecard\node_modules\core-js
+    > node scripts/postinstall || echo "ignore"
+
+    Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+    The project needs your help! Please consider supporting of core-js on Open Collective or Patreon:
+    > https://opencollective.com/core-js
+    > https://www.patreon.com/zloirock
+
+    + core-js@3.2.1
+    updated 1 package and audited 306 packages in 6.051s
+    found 0 vulnerabilities
+
+    PS C:\circlecard>
+    ```
+
+    This command installs modular standard library for JavaScript. It includes polyfills for ECMAScript up to 2019. Read more about [`core-js`](https://www.npmjs.com/package/core-js)
+
+4. To install the **powerbi-visual-api** in PowerShell, enter the command below.
+
+    ```powershell
+    npm i powerbi-visuals-api --save-dev
+    ```
+
+    ```powershell
+    PS C:\circlecard>npm i powerbi-visuals-api --save-dev
+
+    + powerbi-visuals-api@2.6.1
+    updated 1 package and audited 306 packages in 2.139s
+    found 0 vulnerabilities
+
+    PS C:\circlecard>
+    ```
+
+    This command installs Power BI Visuals API definitions.
+
+5. Launch [Visual Studio Code](https://code.visualstudio.com/).
 
     You can launch **Visual Studio Code** from PowerShell by using the following command.
 
@@ -306,24 +365,13 @@ Now you can develop the custom visual to display a circle with text.
     code .
     ```
 
-4. In the **Explorer pane**, expand the **node_modules** folder to verify that the **d3 library** was installed.
+6. In the **Explorer pane**, expand the **node_modules** folder to verify that the **d3 library** was installed.
 
     ![D3 Library in visual Studio code](media/custom-visual-develop-tutorial/d3-library.png)
 
-5. Notice the TypeScript file, **index.d.ts**, by expanding node_modules > @types > d3 in the **Explorer pane**.
+7. Make sure that file **index.d.ts** was added, by expanding node_modules > @types > d3 in the **Explorer pane**.
 
     ![Index.d.ts file](media/custom-visual-develop-tutorial/index-d-ts.png)
-
-6. Select the **pbiviz.json** file.
-
-7. To register the **d3 library**, enter the following file reference into the externalJS array. Be sure to add a *comma* between the existing file reference and the new file reference.
-
-    ```javascript
-    "node_modules/d3/d3.min.js"
-    ```
-    ![Adding node_modules/d3/d3.min.js](media/custom-visual-develop-tutorial/adding-node-module.png)
-
-8. Save the **pbiviz.json** file changes.
 
 ### Developing the visual elements
 
@@ -343,8 +391,17 @@ Now we can explore how to develop the custom visual to show a circle and sample 
     Verify that the module code looks like the following.
 
     ```typescript
-    module powerbi.extensibility.visual {
     "use strict";
+    import "core-js/stable";
+    import "../style/visual.less";
+    import powerbi from "powerbi-visuals-api";
+    import IVisual = powerbi.extensibility.IVisual;
+    import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
+    import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
+
+    import * as d3 from "d3";
+    type Selection<T extends d3.BaseType> = d3.Selection<T, any,any, any>;
+
     export class Visual implements IVisual {
 
         constructor(options: VisualConstructorOptions) {
@@ -353,7 +410,6 @@ Now we can explore how to develop the custom visual to show a circle and sample 
 
         public update(options: VisualUpdateOptions) {
 
-            }
         }
     }
     ```
@@ -361,12 +417,16 @@ Now we can explore how to develop the custom visual to show a circle and sample 
 3. Beneath the *Visual* class declaration, insert the following class-level properties.
 
     ```typescript
-     private host: IVisualHost;
-     private svg: d3.Selection<SVGElement>;
-     private container: d3.Selection<SVGElement>;
-     private circle: d3.Selection<SVGElement>;
-     private textValue: d3.Selection<SVGElement>;
-     private textLabel: d3.Selection<SVGElement>; 
+    export class Visual implements IVisual {
+        // ...
+        private host: IVisualHost;
+        private svg: Selection<SVGElement>;
+        private container: Selection<SVGElement>;
+        private circle: Selection<SVGElement>;
+        private textValue: Selection<SVGElement>;
+        private textLabel: Selection<SVGElement>;
+        // ...
+    }
     ```
 
     ![Visual.ts file class-level properties](media/custom-visual-develop-tutorial/visual-ts-file-class-level-properties.png)
@@ -375,16 +435,16 @@ Now we can explore how to develop the custom visual to show a circle and sample 
 
     ```typescript
     this.svg = d3.select(options.element)
-                 .append('svg')
-                 .classed('circleCard', true);
+        .append('svg')
+        .classed('circleCard', true);
     this.container = this.svg.append("g")
-                         .classed('container', true);
+        .classed('container', true);
     this.circle = this.container.append("circle")
-                             .classed('circle', true);
+        .classed('circle', true);
     this.textValue = this.container.append("text")
-                                 .classed("textValue", true);
+        .classed("textValue", true);
     this.textLabel = this.container.append("text")
-                                 .classed("textLabel", true);
+        .classed("textLabel", true);
     ```
 
     This code adds an SVG group inside the visual and then adds three shapes: a circle and two text elements.
@@ -400,40 +460,33 @@ Now we can explore how to develop the custom visual to show a circle and sample 
     ```typescript
     let width: number = options.viewport.width;
     let height: number = options.viewport.height;
-    this.svg.attr({
-     width: width,
-     height: height
-    });
+    this.svg.attr("width", width);
+    this.svg.attr("height", height);
     let radius: number = Math.min(width, height) / 2.2;
     this.circle
-     .style("fill", "white")
-     .style("fill-opacity", 0.5)
-     .style("stroke", "black")
-     .style("stroke-width", 2)
-    .attr({
-     r: radius,
-     cx: width / 2,
-     cy: height / 2
-    });
+        .style("fill", "white")
+        .style("fill-opacity", 0.5)
+        .style("stroke", "black")
+        .style("stroke-width", 2)
+        .attr("r", radius)
+        .attr("cx", width / 2)
+        .attr("cy", height / 2);
     let fontSizeValue: number = Math.min(width, height) / 5;
     this.textValue
-     .text("Value")
-     .attr({
-         x: "50%",
-         y: "50%",
-         dy: "0.35em",
-         "text-anchor": "middle"
-     }).style("font-size", fontSizeValue + "px");
+        .text("Value")
+        .attr("x", "50%")
+        .attr("y", "50%")
+        .attr("dy", "0.35em")
+        .attr("text-anchor", "middle")
+        .style("font-size", fontSizeValue + "px");
     let fontSizeLabel: number = fontSizeValue / 4;
     this.textLabel
-     .text("Label")
-     .attr({
-         x: "50%",
-         y: height / 2,
-         dy: fontSizeValue / 1.2,
-         "text-anchor": "middle"
-     })
-     .style("font-size", fontSizeLabel + "px");
+        .text("Label")
+        .attr("x", "50%")
+        .attr("y", height / 2)
+        .attr("dy", fontSizeValue / 1.2)
+        .attr("text-anchor", "middle")
+        .style("font-size", fontSizeLabel + "px");
     ```
 
     *This code sets the width and height of the visual, and then initializes the attributes and styles of the visual elements.*
@@ -477,7 +530,7 @@ Now we can explore how to develop the custom visual to show a circle and sample 
 
 6. Continue running the visual.
 
-## Configuring data binding
+## Process data in the visual code
 
 Define the data roles and data view mappings, and then modify the custom visual logic to display the value and display name of a measure.
 
@@ -491,11 +544,12 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
     ```json
     {
-     "displayName": "Measure",
-     "name": "measure",
-     "kind": "Measure"
+        "displayName": "Measure",
+        "name": "measure",
+        "kind": "Measure"
     }
     ```
+
     The **dataRoles** array now defines a single data role of type **measure**, that is named **measure**, and displays as **Measure**. This data role allows passing either a measure field, or a field that is summarized.
 
 3. From inside the **dataViewMappings** array, remove all content (lines 10-31).
@@ -503,15 +557,16 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 4. Inside the **dataViewMappings** array, insert the following content.
 
     ```json
-            {
-            "conditions": [
-                { "measure": { "max": 1 } }
-            ],
-            "single": {
-                "role": "measure"
-            }
-           }
+    {
+        "conditions": [
+            { "measure": { "max": 1 } }
+        ],
+        "single": {
+            "role": "measure"
+        }
+    }
     ```
+
     The **dataViewMappings** array now defines one field can be passed to the data role named **measure**.
 
 5. Save the **capabilities.json** file.
@@ -541,13 +596,22 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 
     ![Toggle back](media/custom-visual-develop-tutorial/show-dataview-toolbar-revert.png)
 
-### Configuring data binding
+### Consume data in the visual code
 
-1. In **Visual Studio Code**, in the **visual.ts** file, add the following statement as the first statement of the update method.
+1. In **Visual Studio Code**, in the **visual.ts** file,
+
+    import the `DataView` interface from `powerbi` module
+
+    ```typescript
+    import DataView = powerbi.DataView;
+    ```
+
+    and add the following statement as the first statement of the update method.
 
     ```typescript
     let dataView: DataView = options.dataViews[0];
     ```
+
     ![Dataview in Update array](media/custom-visual-develop-tutorial/dataview-in-update-array.png)
 
     This statement assigns the *dataView* to a variable for easy access, and declares the variable to reference the *dataView* object.
@@ -555,8 +619,9 @@ Modify the **capabilities.json** file to define the data role and data view mapp
 2. In the **update** method, replace **.text("Value")** with the following.
 
     ```typescript
-    .text(dataView.single.value as string)
+    .text(<string>dataView.single.value)
     ```
+
     ![Replace textValue](media/custom-visual-develop-tutorial/text-value-replace.png)
 
 3. In the **update** method, replace **.text("Label")** with the following.
@@ -564,6 +629,7 @@ Modify the **capabilities.json** file to define the data role and data view mapp
     ```typescript
     .text(dataView.metadata.columns[0].displayName)
     ```
+
     ![Replace textLabel](media/custom-visual-develop-tutorial/text-label-replace.png)
 
 4. Save the **visual.ts** file.
