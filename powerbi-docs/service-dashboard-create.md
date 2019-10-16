@@ -67,7 +67,7 @@ In this step-by-step, we import one of the Power BI sample datasets and use it t
     ![Reports tab](media/service-dashboard-create/power-bi-reports.png)
     The report opens in Reading view. Notice it has two tabs on the left: **Discount Analysis** and **Spend Overview**. Each tab represents a page of the report.
 
-2. Select **...** > **Edit report** to open the report in Editing view.
+2. Select **More options (...)** > **Edit report** to open the report in Editing view.
 
     ![Report in Reading view](media/service-dashboard-create/power-bi-reading-view.png)
 3. Hover over a visualization to reveal the options available. To add a visualization to a dashboard, select the pin icon ![Pin icon](media/service-dashboard-create/power-bi-pin-icon.png).

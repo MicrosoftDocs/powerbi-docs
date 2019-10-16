@@ -47,11 +47,12 @@ You can add a visual-level filter to a specific visual in two different ways.
 * Filter a field that is already being used by the visualization.
 * Identify a field that is not already being used by the visualization, and add that field directly to the **Visual level filters** bucket.
 
-By the way, this procedure uses the Retail Analysis sample, if you'd like to download it and follow along. Download the [Retail Analysis sample](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+
+By the way, this procedure uses the Retail Analysis sample, if you'd like to download it and follow along. Download the [Retail Analysis sample](sample-retail-analysis.md#get-the-content-pack-for-this-sample) content pack.
 
 ### Filter the fields in the visual
 
-1. Select **...** > **Edit report** to open your report in Editing view.
+1. Select **More options (...)** > **Edit report** to open your report in Editing view.
    
    ![Edit report button](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
@@ -81,11 +82,11 @@ By the way, this procedure uses the Retail Analysis sample, if you'd like to dow
 
 Now let's add a new field to our visualization as a visual-level filter.
    
-1. From the Fields pane, select the field you want to add as a new visual-level filter, and drag it into the **Visual level filters area**.  In this example, we'll drag **DM** into the **Visual level filters** bucket, search for **an**, and select those three managers. 
+1. From the Fields pane, select the field you want to add as a new visual-level filter, and drag it into the **Visual level filters area**.  In this example, we'll drag **District Manager** into the **Visual level filters** bucket, search for **an**, and select those three managers.
      
     ![Add a field to the Filters pane](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
-    Notice **DDM** is *not* added to the visualization itself. The visualization is still composed of **StoreNumberName** as the Axis and **This Year Sales** as the Value.  
+    Notice **District Manager** is *not* added to the visualization itself. The visualization is still composed of **StoreNumberName** as the Axis and **This Year Sales** as the Value.  
      
     ![The field isn't in the visual](media/power-bi-report-add-filter/power-bi-visualization.png)
 
@@ -93,7 +94,7 @@ Now let's add a new field to our visualization as a visual-level filter.
      
     ![The filtered visual](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
 
-    If you save your report with this filter, report readers can interact with the **DM** filter in Reading view, selecting or clearing values.
+    If you save your report with this filter, report readers can interact with the **District Manager** filter in Reading view, selecting or clearing values.
     
     If you drag a *numeric column* to the filter pane to create a visual-level filter, the filter is applied to the *underlying rows of data*. For example, adding a filter on the **UnitCost** field and setting it where **UnitCost** > 20 would only show data for the Product rows where the Unit Cost was greater than 20, regardless of the total Unit Cost for the data points shown in the visual.
 
@@ -101,7 +102,9 @@ Now let's add a new field to our visualization as a visual-level filter.
 
 You can also add a page-level filter to filter an entire page.
 
-1. Select **Edit report** to open your report in Editing view.
+1. In the Power BI service, open the Retail Analysis report, then go to the **District Monthly Sales** page. 
+
+2. Select **...** > **Edit report** to open your report in Editing view.
    
    ![Edit report button](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
@@ -118,19 +121,21 @@ You can also add a page-level filter to filter an entire page.
 With drillthrough in Power BI service and Power BI Desktop, you can create a *destination* report page that focuses on a specific entity - such as a supplier, or customer, or manufacturer. Now, from the other report pages, users can right-click on a data point for that entity and drillthrough to the focused page.
 
 ### Create a drillthrough filter
-To follow along, download the [Customer Profitability sample](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix). Let's say that you want a page that focuses on Executive business areas.
+To follow along, download the [Customer Profitability sample](sample-customer-profitability.md#get-the-content-pack-for-this-sample). Let's say that you want a page that focuses on Executive business areas.
 
-1. Select **Edit report** to open the report in Editing view.
+1. In the Power BI service, open the Retail Analysis report, then go to the **District Monthly Sales** page.
+
+2. Select **More options (...)** > **Edit report** to open your report in Editing view.
    
    ![Edit report button](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
 1. Add a new page to the report and name it **Team Executive**. This page will be the drillthrough *destination*.
 2. Add visualizations that track key metrics for the team executives' business areas.    
-3. Add **Executive > Name** to the Drillthrough filters well.    
+3. From the **Executives** table, drag **Executive** to the Drillthrough filters well.    
    
     ![Add a value to Drillthrough filters](media/power-bi-report-add-filter/power-bi-drillthrough-filter.png)
    
-    Notice that Power BI adds a back arrow to the report page.  Selecting the back arrow returns users to the *originating* report page -- the page they were on when they opted to drillthrough. The back arrow only works in Reading view.
+    Notice that Power BI adds a back arrow to the report page.  Selecting the back arrow returns users to the *originating* report page -- the page they were on when they opted to drillthrough. In Editing view, hold down the Ctrl key to select the back arrow
    
      ![The back arrow](media/power-bi-report-add-filter/power-bi-back-arrow.png)
 
@@ -141,7 +146,7 @@ Let's see how the drillthrough filter works.
 2. Let's say you're Andrew Ma and you want to see the Team Executive report page filtered to just your data.  From the top-left area chart, right-click any green data point to open the Drillthrough menu option.
    
     ![Start the drillthrough action](media/power-bi-report-add-filter/power-bi-drillthrough.png)
-3. Select **Drillthrough > Team Executive** to drillthrough to the report page named **Team Executive**. The page is filtered to show information about the data point from which you right-clicked; in this case Andrew Ma. Only the field that is in the Drillthrough filters well gets passed through to the drillthrough report page.  
+3. Select **Drillthrough > Team Executive** to drillthrough to the report page named **Team Executive**. The page is filtered to show information about the data point from which you right-clicked; in this case Andrew Ma. Any filters on the originating page are applied to the drillthrough report page.  
    
     ![Select the drillthrough action](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 
