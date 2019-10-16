@@ -10,7 +10,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/16/2019
+ms.date: 10/16/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -138,6 +138,8 @@ You can use any of the values listed in the CSS color spec at [https://www.w3.or
 There are a few considerations to keep in mind when working with conditional table formatting:
 
 * Conditional formatting is applied only to the values of a **Matrix** visual, and does not apply to any subtotals or grand totals. 
+* Conditional formatting is not applied to the **Total** row
+* If the Table doesn't have a grouping, the table is displayed as a single row that doesn't support conditional formatting.
 
 
 ## Next steps
