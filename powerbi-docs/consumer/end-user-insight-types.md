@@ -4,19 +4,21 @@ description: Quick Insights and View insights with Power BI.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 9/23/2019
+ms.date: 10/2/2019
 ms.author: mihart
 
 LocalizationGroup: Dashboards
 ---
 # Types of insights supported by Power BI
+
+The Power BI service can automatically look for insights in your dashboards or reports.
+
 ## How does Insights work?
-Power BI quickly searches different subsets of your dataset while applying a set of sophisticated algorithms to discover potentially-interesting insights. Power BI scans as much of a dataset as possible in an allotted amount of time.
+Power BI quickly searches different subsets of your dataset. As it searches, Power BI applies a set of sophisticated algorithms to discover potentially interesting insights. Power BI scans as much of a dataset as possible in an allotted amount of time.
 
 You can run insights against a dataset or dashboard tile.   
 
@@ -39,14 +41,14 @@ Detects cases where multiple measures show a correlation between each other when
 ![Correlation example](./media/end-user-insight-types/pbi_auto_insight_types_correlation.png)
 
 ## Low Variance
-Detects cases where data points are not far from the mean.
+Detects cases where data points aren't far from the mean.
 
 ![Low Variance example](./media/end-user-insight-types/power-bi-low-variance.png)
 
 ## Majority (Major factors)
 Finds cases where a majority of a total value can be attributed to a single factor when broken down by another dimension.  
 
-![Major fators example](./media/end-user-insight-types/pbi_auto_insight_types_majority.png)
+![Major factors example](./media/end-user-insight-types/pbi_auto_insight_types_majority.png)
 
 ## Overall trends in time series
 Detects upward or downward trends in time series data.
@@ -70,8 +72,6 @@ For data across a time series, detects when there are specific dates or times wi
 
 ## Next steps
 [Power BI insights](end-user-insights.md)
-
-If you own a dataset, [optimize it for insights](../service-insights-optimize.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

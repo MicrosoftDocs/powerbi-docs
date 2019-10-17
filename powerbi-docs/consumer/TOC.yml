@@ -12,6 +12,8 @@
       href: end-user-home.md
     - name: "Navigate the 'new look'"
       href: ../service-new-look.md
+    - name: "The 'new look': Where'd the actions go?"
+      href: ../service-new-look.md
   - name: Quickstarts
     items: 
     - name: "Find your way around in Power BI"
@@ -102,6 +104,8 @@
         href: end-user-app-view.md
       - name: "Connect to services"
         href: end-user-connect-to-services.md
+      - name: "Get a sample app from AppSource"
+        href: end-user-app-marketing.md
     - name: Ask questions of your data
       items:
       - name: "Q&A in Power BI"
