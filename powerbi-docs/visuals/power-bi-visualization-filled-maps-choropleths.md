@@ -56,7 +56,7 @@ This tutorial uses the [Retail Analysis sample PBIX file](http://download.micros
 ## Create a basic filled map
 In this video, Kim creates a basic map and converts it to a filled map.
    > [!NOTE]
-   > This video uses an older version of Power BI Desktop.
+   > This video uses an earlier version of Power BI Desktop.
    > 
    > 
 
@@ -111,11 +111,11 @@ Highlighting a location in a filled Map cross-filters the other visualizations o
 
     ![Sentiment tab selected](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-tab.png)
 
-4. Move and resize the visualizations on the page to make some room, then CTRL-V paste the filled map from the previous report. (below images )
+4. Move and resize the visualizations on the page to make some room, then CTRL-V paste the filled map from the previous report. (See the following images)
 
    ![Filled map added to Sentiment page](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. On the filled map, select a state.  This cross-highlights and cross-filters the other visualizations on the page. Selecting **Texas**, for example, shows me that Sentiment is 75 and that Texas is in the Central District \#23.   
+5. On the filled map, select a state.  This cross-highlights and cross-filters the other visualizations on the page. Selecting **Texas**, for example, shows me that Sentiment is 75 and that Texas is in the Central District #23.   
    ![Texas selected](media/power-bi-visualization-filled-maps-choropleths/power-bi-texas.png)
 2. Select a data point on the VanArsdel - Sentiment by Month line chart. This filters the filled map to show Sentiment data for VanArsdel and not their competition.  
    ![new shading](media/power-bi-visualization-filled-maps-choropleths/power-bi-yes.png)
