@@ -192,7 +192,7 @@ Q&A looks for an answer in the dataset(s) connected to the dashboard.  A connect
 
 As soon as you start to type your question, Q&A takes you to the Q&A page. As you type, Q&A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard. For more information, see [Q&A in Power BI](power-bi-q-and-a.md).
 
-### 4. **Icons in the black header bar”**
+### 4. **Icons in the black header bar**
 The icons in the upper right corner are your resource for settings, notifications, downloads, getting help, turning the **New look** on or off, and providing feedback to the Power BI team.  
 
 ![icon buttons](media/service-basic-concepts/power-bi-icons.png)
