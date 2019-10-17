@@ -7,7 +7,7 @@ manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 07/15/2019
 LocalizationGroup: Gateways 
 ---

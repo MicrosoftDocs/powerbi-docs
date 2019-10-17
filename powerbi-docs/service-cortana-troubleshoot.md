@@ -8,7 +8,7 @@ featuredvideoid: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 05/29/2019
 ms.author: maggies
 

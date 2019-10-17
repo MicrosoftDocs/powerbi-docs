@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/19/2019
+ms.date: 10/14/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -221,6 +221,201 @@ When the URL or resource connection information is entered, select **OK**. Power
 You can either load the data by selecting the **Load** button at the bottom of the **Navigator** pane, or edit the query before loading data by selecting the **Edit** button.
 
 That’s all there is to connecting to data sources in Power BI Desktop! Try connecting to data from our growing list of data sources, and check back often - we continue to add to this list all the time.
+
+## Using PBIDS files to get data
+
+PBIDS files are Power BI Desktop files that have a specific structure, and have a .PBIDS extension to identify it is a Power BI data source file.
+
+You can create a .PBIDS file to streamline the **Get Data** experience for report creators in your organization. It’s recommended that administrators create these files for commonly used connections, to facilitate the use of PBIDS files for new report authors. 
+
+When an author opens a .PBIDS file, Power BI Desktop opens and prompt the user for credentials to authenticate and connect to the data source that's specified in the file. The Navigation dialog appears, and the user must select the tables from that data source to load into the model. Users may also need to select the database(s) if one was not specified in the .PBIDS file. 
+
+From that point forward, the user can begin building visualizations or revisit *Recent sourcesU to load a new set of tables into the model. 
+
+Currently, .PBIDS files only support support a single data source in one file. Specifying more than one data source results in an error. 
+
+To create the .PBIDS file, administrators must specify the required inputs for a single connection, and can specify the mode of the connection, as either **DirectQuery** or **Import**. If **mode** is missing/null in the file, the user who opens the file in Power BI Desktop is prompted to select DirectQuery or Import. 
+
+### PBIDS file examples
+
+This section provides some examples from commonly used data sources. The .PBIDS file type only supports data connections that are also supported in Power BI Desktop, with two exceptions: Live Connect and Blank query. 
+
+The .PBIDS file does *not* include authentication information and table and schema information.  
+
+The following are several common examples for .PBIDS file, and are not complete or comprehensive. For other data sources, you can refer to the [Data Source Reference (DSR) format for protocol and address information](https://docs.microsoft.com/azure/data-catalog/data-catalog-dsr#data-source-reference-specification).
+
+These examples are for convenience only, are not meant to be comprehensive, and do not include all supported connectors in DSR format. Administrators or organizations can create their own data sources using these examples as guides, from which they can create and support their own data source files. 
+
+
+**Azure AS**
+```
+{ 
+    "version": "0.1", 
+    "connections": [ 
+    { 
+        "details": { 
+        "protocol": "analysis-services", 
+        "address": { 
+            "server": "server-here" 
+        }, 
+        } 
+    } 
+    ] 
+}
+```
+
+
+ 
+
+**Folder**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "folder", 
+        "address": { 
+            "path": "folder-path-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+
+**OData**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "odata", 
+        "address": { 
+            "url": "URL-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+**SAP BW**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "sap-bw-olap", 
+        "address": { 
+          "server": "server-name-here", 
+          "systemNumber": "system-number-here", 
+          "clientId": "client-id-here" 
+        }, 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+**SAP Hana**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "sap-hana-sql", 
+        "address": { 
+          "server": "server-name-here:port-here" 
+        }, 
+      } 
+    } 
+  ] 
+} 
+```
+
+**SharePoint List**
+
+The URL must point to the SharePoint site itself, and not to a list within the site. Users get a navigator that allows them to select one or more lists from that site, each of which becomes a table in the model. 
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "sharepoint-list", 
+        "address": { 
+          "url": "URL-here" 
+        }, 
+       } 
+    } 
+  ] 
+} 
+```
+ 
+ 
+**SQL Server**
+```
+{ 
+  “version”: “0.1”, 
+  “connections”: [ 
+    { 
+      “details”: { 
+        “protocol”: “tds”, 
+        “address”: { 
+          “server”: “server-name-here”, 
+          “database”: “db-name-here (optional)” 
+        } 
+      }, 
+      “options”: {}, 
+      “mode”: “DirectQuery” 
+    } 
+  ] 
+} 
+} 
+```
+ 
+
+**Text file**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "file", 
+        "address": { 
+            "path": "path-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+
+**Web**
+```
+{ 
+  "version": "0.1", 
+  "connections": [ 
+    { 
+      "details": { 
+        "protocol": "http", 
+        "address": { 
+            "url": "URL-here" 
+        } 
+      } 
+    } 
+  ] 
+} 
+```
+ 
+
+
 
 ## Next steps
 There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:

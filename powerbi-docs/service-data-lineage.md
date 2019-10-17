@@ -1,14 +1,14 @@
 ---
 title: Data lineage (preview)
 description: In modern business intelligence (BI) projects, understanding the flow of data from the data source to its destination is a key challenge for many customers.
-author: maggiesMSFT
+author: paulinbar
 manager: kfile
 ms.reviewer: 
 
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 10/03/2019
-ms.author: maggies
+ms.author: painbar
 
 LocalizationGroup: 
 ---
