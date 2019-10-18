@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Build a Machine Learning model in Power BI'
 description: In this tutorial you build a Machine Learning model in Power BI.
-author: davidiseminger, ancyphilip
+author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 
@@ -10,7 +10,7 @@ ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
 ms.date: 03/29/2019
-ms.author: davidi, anphil
+ms.author: davidi
 #customer intent: "As a Power BI end user, I want to build a Machine Learning model, so I can use machine learning with Power BI."
 
 LocalizationGroup: Connect to services
