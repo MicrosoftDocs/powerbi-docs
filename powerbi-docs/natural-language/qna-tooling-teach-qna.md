@@ -1,5 +1,5 @@
 ---
-title: Use natural language to explore your data using Power BI Q&A
+title: Teach Q&A to understand questions and terms in Power BI Q&A
 description: How to use Power BI Q&A to explore your data
 author: mohaali
 manager: mohaali
@@ -7,53 +7,72 @@ manager: mohaali
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 10/17/2019
 ms.author: mohaali
 
 LocalizationGroup: Ask questions of your data
 ---
-# Teach Q&A
+# Teach Q&A to understand questions and terms in Power BI Q&A
 
-The 'Teach Q&A' section allows you to train Q&A using natural language on words it has not recognized. To begin, you will first enter in a question which contains a word or words which are not recognized by Q&A. You then submit this and Q&A will then prompt you for the definition of that term. In this box you will enter either a filter or a field name that correspond to what that word represent. Q&A will then re-interpret the original question and if you are happy with the results, you can then save.
+In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-language questions and terms it hasn't recognized. To begin, you submit a question that contains a word or words that Q&A didn't recognize. Q&A then prompts you to define that term. You enter either a filter or a field name that corresponds to what that word represents. Q&A then re-interprets the original question. If you're happy with the results, you save them.
 
 > [!NOTE]
-> Q&A Tooling only supports import mode and does not yet support connecting to an on-prem/Azure analysis services, this is a current limitation which will be removed in subsequent releases of Power BI'
+> The Teach Q&A functionality only supports import mode. It also doesn't yet support connecting to an on-premises or Azure Analysis Services data source. This limitation should be removed in subsequent releases of Power BI.
 
-## How to use
+## Start to teach Q&A
 
-Teach Q&A can be accessed from the tooling menu from within Power BI Desktop. Once the dialog option opens, go to the 'Teach Q&A' section to fix a question.
+1. In Power BI Desktop, on the **Modeling** ribbon, select **Q&A Setup** > **Teach Q&A**.
 
-![Q&A Teach Synonym red](media/qna-tooling-teach-synonym-red.png)
+    ![Q&A Teach synonym red](media/qna-tooling-teach-synonym-red.png)
 
-Once you click on submit, you will then be prompted to provide the correct definition of the term. Once you provide the correct defintion, the visual preview will update and you can then hit save and move onto the next question or hit close to finish. In order for report consumers to see this new change,you **must** publish the report back to the service in order for the changes to take effect.
+2. Type a sentence with a term Q&A doesn't recognize and select **Submit**.
 
-![Q&A Teach synonym preview](media/qna-tooling-teach-fixpreview.png)
+3. Select the red-underlined word. 
 
-There are two types of fixes you can make inside 'Teach Q&A':
+    Q&A offers suggestions and prompts you to provide the correct definition of the term. 
+    
+3. Under **Define the terms Q&A didn't understand**, provide a defintion
 
-- Define a noun
-- Define an adjective
+    ![Q&A Teach synonym preview](media/qna-tooling-teach-fixpreview.png)
 
-### Defining a noun/synonym
+4. Select **Save** to preview the updated visual.
 
-When working with data, you often may have names of fields that could be referred to with alternative names. An example could be 'Sales'. There could be numerous words/ phrases that could refer to sales such as 'revenue'. If the column is named 'Sales' and consumers type in 'revenue', Q&A may fail to pick the correct column to answer the question appropriately. In this case you wish to tell Q&A that 'Sales' and 'Revenue' refer to the same thing.
+5. Enter the next question, or select the **X** to close.
 
-Q&A will automatically detect when an unrecognized word is a noun using knowledge from Office. If Q&A detects a noun, it will prompt you in the following way.
+Your report consumers won't see this change until you publish the report back to the service.
+
+## Define nouns and adjectives
+
+You can teach Q&A two types of terms:
+
+- Nouns
+- Adjectives
+
+### Define a noun synonym
+
+When working with data, you often may have names of fields that could be referred to with alternative names. An example could be 'Sales'. Numerous words or phrases could refer to sales, such as 'revenue'. If a column is named 'Sales', and report consumers type 'revenue', Q&A may fail to pick the correct column to answer the question appropriately. In that case, you want to tell Q&A that 'Sales' and 'Revenue' refer to the same thing.
+
+Q&A automatically detects when an unrecognized word is a noun using knowledge from Microsoft Office. If Q&A detects a noun, it prompts you in the following way:
+
+- <your term> **refers to** 
+
+You fill in the box with the term from your data.
 
 ![Q&A Teach synonym prompt](media/qna-tooling-synonym-prompt.png)
 
-If you provide something other than a field from the data model you may get undesirable results.
+If you provide something other than a field from the data model, you may get undesirable results.
 
-### Defining an adjective/filter condition
+### Define an adjective filter condition
 
-Sometimes you may wish to use terms that act as a condition to the underlying data. An example could be 'Awesome Publishers'. 'Awesome' could be a condition which only selects publishers which have published X number of products. Q&A will try to detect adjectives and will show a varied prompt.
+Sometimes you may want to define terms that act as a condition on the underlying data. An example could be 'Awesome Publishers'. 'Awesome' could be a condition that only selects publishers that have published X number of products. Q&A tries to detect adjectives, showing a different prompt:
+
+- <field name> **that have**  
+
+You fill in the box with the condition.
 
 ![Q&A Teach synonym prompt](media/qna-tooling-adjectives.png)
 
-> [!NOTE]
-> You can only define a single condition in tooling. To define more complex conditions, use DAX to create a calculated column and then use the tooling section to create a single condition
-
-Some example conditions which you can define are:
+Some example conditions that you can define are:
 
 - 'Country' which is 'USA'
 - 'Country' which is not 'USA'
@@ -61,17 +80,20 @@ Some example conditions which you can define are:
 - 'Weight' = 2000
 - 'Weight' < 2000
 
-> [!NOTE]
-> Measures are not supported, instead use calculated columns
+You can only define a single condition in tooling. To define more complex conditions, use DAX to create a calculated column and then use the tooling section to create a single condition for that calculated column. Measures aren't supported. Use calculated columns instead.
 
 ## Manage terms
 
-Once you have provided definitions you may decide to go back to see all the fixes made or decide to edit/delete them. Go to the 'Manage terms' section inside Q&A tooling to see this list. Currently there is no edit capability and therefore to redefine words, first delete the term and then define.
+After you've provided definitions, you can go back to see all the fixes you made and edit or delete them. 
 
-![Q&A Manage terms](media/qna-manage-terms.png)
+1. In **Q&A setup**, go to the **Manage terms** section.
+
+2. Delete any terms you no longer want. Currently you can't edit terms. To redefine a term, delete the term and define it.
+
+    ![Q&A Manage terms](media/qna-manage-terms.png)
 
 ## Next steps
 
-There are a variety of best practices you can use to also improve the natural language engine. For more information, see the following articles:
+There are a number of best practices for improving the natural language engine. For more information, see the following article:
 
 * [Q&A Best Practices](qna-best-practices.md)
