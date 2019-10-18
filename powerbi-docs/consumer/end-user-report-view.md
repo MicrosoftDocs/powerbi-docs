@@ -7,12 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/24/2019
+ms.date: 10/17/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ---
 
 # Change the display of a report page
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 People view reports on many different devices with varying screen sizes and aspect ratios. Change the way a report page displays to fit your needs.
 
