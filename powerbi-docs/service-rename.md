@@ -24,9 +24,9 @@ This article teaches you how to rename a dashboard, report, report page, workboo
 | Report in a workspace |Yes |No |
 | Workbook in a workspace |Yes |No |
 | Dataset in a workspace |Yes |No |
-| App workspace |Yes, if you are the owner or have Admin permissions |No |
-| Published apps |Not from the App screen, but the app name can be changed from the app workspace and re-published with a new name if you have Admin permissions |No |
-| App content (dashboard, report, workbook, dataset) |Not from the App screen, but the app's content can be renamed from the app workspace and re-published with a new name if you have Admin permissions |No |
+| workspace |Yes, if you are the owner or have Admin permissions |No |
+| Published apps |Not from the App screen, but the app name can be changed from the workspace and re-published with a new name if you have Admin permissions |No |
+| App content (dashboard, report, workbook, dataset) |Not from the App screen, but the app's content can be renamed from the workspace and re-published with a new name if you have Admin permissions |No |
 | Content in **Shared with me** |No |No |
 
 ## Rename a dashboard, report, or workbook
@@ -53,8 +53,8 @@ This article teaches you how to rename a dashboard, report, report page, workboo
    
      ![Rename pane](media/service-rename/power-bi-rename.png)
 
-## Rename an App workspace
-Anyone with Admin permissions can rename an app workspace.
+## Rename an workspace
+Anyone with Admin permissions can rename an workspace.
 
 1. Start in the workspace you'd like to rename.
 2. In the top-right corner, select the ellipses (...) and choose **Edit workspace**. If you don't see this option, then you don't have permissions to rename this workspace. 

@@ -16,7 +16,7 @@ LocalizationGroup: Administration
 
 # Purchase and assign Power BI Pro licenses
 
-Power BI Pro is an individual license that allows access to all content and capabilities in the Power BI service, including the ability to share content and collaborate with other Pro users. Only Pro users can publish content to app workspaces, share dashboards, and subscribe to dashboards and reports. For more information, see [Power BI features by license type](service-features-license-type.md).
+Power BI Pro is an individual license that allows access to all content and capabilities in the Power BI service, including the ability to share content and collaborate with other Pro users. Only Pro users can publish content to workspaces, share dashboards, and subscribe to dashboards and reports. For more information, see [Power BI features by license type](service-features-license-type.md).
 
 This article first explains how to purchase Power BI Pro licenses in Office 365. The article then explains the two options you have for assigning those licenses to individual users: Office 365 and Azure (choose one option).
 

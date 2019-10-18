@@ -67,14 +67,14 @@ Another modification available to content pack creators is expanding and restric
 As the content pack creator, you can [schedule refresh of the datasets](refresh-data.md).  When you create and upload the content pack, that refresh schedule is uploaded with the datasets. If you change the refresh schedule, you need to re-publish the content pack (see above).
 
 ## Delete an organizational content pack from AppSource
-You can only delete a content pack from AppSource if you created it. If you've created an organizational content pack in an app workspace, and then decide to delete that workspace, be sure to delete the content pack first. If you delete the workspace without deleting the content pack first, you lose all access to those content packs and will have to contact Microsoft Support for help. 
+You can only delete a content pack from AppSource if you created it. If you've created an organizational content pack in an workspace, and then decide to delete that workspace, be sure to delete the content pack first. If you delete the workspace without deleting the content pack first, you lose all access to those content packs and will have to contact Microsoft Support for help. 
 
 > [!TIP]
 > You can [delete your connection to a content pack](service-organizational-content-pack-disconnect.md) you didn't create. That doesn't delete the content pack from AppSource.
 > 
 > 
 
-1. To delete a content pack from AppSource, go to the app workspace where you created the content pack, select the cog icon ![](media/service-organizational-content-pack-manage-update-delete/cog.png) and choose **View Content Packs**.
+1. To delete a content pack from AppSource, go to the workspace where you created the content pack, select the cog icon ![](media/service-organizational-content-pack-manage-update-delete/cog.png) and choose **View Content Packs**.
 2. Select **Delete \> Delete**. 
    
    * For group members who haven't customized the content pack, the dashboard and reports associated with that content pack are automatically removed. They're no longer available, and the content pack doesn't appear in the Navigation Pane.

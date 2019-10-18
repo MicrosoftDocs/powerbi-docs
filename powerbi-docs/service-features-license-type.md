@@ -34,7 +34,7 @@ Here is a list of features supported by per-user license type.
 | Embed APIs and controls |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
 | **Collaboration** | | |
 | Peer-to-peer sharing |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
-| App workspaces |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
+| workspaces |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
 | Analyze in Excel, analyze in Power BI Desktop |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
 
 ## Next steps

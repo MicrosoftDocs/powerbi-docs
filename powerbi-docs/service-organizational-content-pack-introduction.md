@@ -22,7 +22,7 @@ Do you regularly distribute reports by email to your team? Try this instead: Pac
 
 ![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 
-Creating content packs is different from sharing dashboards or collaborating on them in an app workspace. Read [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md) to decide on the best option for your situation. 
+Creating content packs is different from sharing dashboards or collaborating on them in an workspace. Read [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md) to decide on the best option for your situation. 
 
 In AppSource, you can browse or search for content packs published to the entire organization, to distribution or security groups, and to [Office 365 groups you belong to](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). If you aren't a member of a specific group, you won't see content packs shared with that group. All members of the group have the same read-only access to the content pack data, reports, workbooks, and dashboards (unless it's a SQL Server Analysis Services (SSAS) data source, in which case your privileges are inherited with the data source).
 
@@ -46,7 +46,7 @@ The lifecycle looks something like this:
 1. In Power BI Pro, Nate creates a content pack and publishes it to the Marketing distribution group. The refresh settings are inherited with the dataset and can only be changed by Nate.
    
    > [!NOTE]
-   > If Nate creates the content pack from within a [Power BI app workspace](service-create-distribute-apps.md) that Nate belongs to, then even if Nate leaves the workspace, others in the Power BI workspace can take over ownership.
+   > If Nate creates the content pack from within a [Power BI workspace](service-create-distribute-apps.md) that Nate belongs to, then even if Nate leaves the workspace, others in the Power BI workspace can take over ownership.
    > 
    > 
 2. Nate sends mail to the distribution group, telling them about the new content pack.

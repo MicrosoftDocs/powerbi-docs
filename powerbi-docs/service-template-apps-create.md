@@ -28,19 +28,19 @@ Here are the requirements for building a template app:
 - Familiarity with the [basic concepts of Power BI](service-basic-concepts.md)
 - Permissions to share a template app publicly. See the Power BI [admin portal, Template app settings](service-admin-portal.md#template-apps-settings) for details.
 
-## Create the template app workspace
+## Create the template workspace
 
-To create a template app you can distribute to other Power BI tenants, you need to create it in one of the new app workspaces.
+To create a template app you can distribute to other Power BI tenants, you need to create it in one of the new workspaces.
 
-1. In the Power BI service, select **Workspaces** > **Create app workspace**.
+1. In the Power BI service, select **Workspaces** > **Create workspace**.
 
-    ![Create app workspace](media/service-template-apps-create/power-bi-new-workspace.png)
+    ![Create workspace](media/service-template-apps-create/power-bi-new-workspace.png)
 
-2. In **Create an app workspace**, select **Upgrade to new**.
+2. In **Create an workspace**, select **Upgrade to new**.
 
     ![Try new workspaces](media/service-template-apps-create/power-bi-upgrade-new.png)
 
-3. Enter a name, description (optional), and logo image (optional) for your app workspace.
+3. Enter a name, description (optional), and logo image (optional) for your workspace.
 
 4. Expand the **Advanced** section and select **Develop a template app**.
 
@@ -52,9 +52,9 @@ To create a template app you can distribute to other Power BI tenants, you need 
 
 ## Create the content in your template app
 
-As with a regular Power BI app workspace, your next step is to create the contents in the workspace.  
+As with a regular Power BI workspace, your next step is to create the contents in the workspace.  
 
-- [Create your Power BI content](power-bi-creator-landing.md) in your app workspace.
+- [Create your Power BI content](power-bi-creator-landing.md) in your workspace.
 
 If you're using parameters in Power Query, make sure they have well-defined type (for example, Text). The types Any and Binary aren't supported.
 
@@ -64,7 +64,7 @@ If you're using parameters in Power Query, make sure they have well-defined type
 
 Now that you have content in your workspace, you're ready to package it in a template app. The first step is to create a test template app, accessible only from within your organization on your tenant.
 
-1. In the template app workspace, select **Create app**.
+1. In the template workspace, select **Create app**.
 
     ![Create app](media/service-template-apps-create/power-bi-create-app.png)
 
@@ -129,7 +129,7 @@ The URL doesn't change as you move between release stages. Promotion doesn't aff
 
 Let's go through the stages:
 
-1. In the template app workspace, select **Release Management**.
+1. In the template workspace, select **Release Management**.
 
     ![Release management icon](media/service-template-apps-create/power-bi-release-management-icon.png)
 

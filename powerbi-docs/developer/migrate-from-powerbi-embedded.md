@@ -15,7 +15,7 @@ Learn how to migrate from Power BI Workspace Collection to Power BI Embedded and
 
 Microsoft recently [announced Power BI Embedded](https://powerbi.microsoft.com/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), a new capacity-based licensing model that increases flexibility for how users access, share and distribute content. The offering also delivers additional scalability and performance.
 
-With Power BI Embedded, you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and app workspaces – when embedding your content. Moving forward you’ll be able to start with Power BI Desktop and move to deployment with Power BI Embedded.
+With Power BI Embedded, you will have one API surface, a consistent set of capabilities and access to the latest Power BI features – such as dashboards, gateways and workspaces – when embedding your content. Moving forward you’ll be able to start with Power BI Desktop and move to deployment with Power BI Embedded.
 
 The current Power BI Workspace Collection will continue to be available for a limited time. Customers under an Enterprise Agreement will have access through the expiration of their existing agreements; customers that acquired Power BI Workspace Collection through Direct or CSP channels will maintain access for one year from the General Availability release of Power BI Embedded.  This article will provide some guidance for migrating from Power BI Workspace Collection to the new Power BI Embedded experience and what to expect for changes in your application.
 
@@ -51,19 +51,19 @@ There are a few things you need to do to prepare for migrating from Power BI Wor
 The following accounts will need to exist within your tenant.
 
 > [!NOTE]
-> These accounts will need to have Power BI Pro licenses in order to use App workspaces.
+> These accounts will need to have Power BI Pro licenses in order to use workspaces.
 
 1. A tenant admin user.
 
-    It is recommended that this user be a member of all App workspaces created for the purpose of embedding.
+    It is recommended that this user be a member of all workspaces created for the purpose of embedding.
 
 2. Accounts for analysts that will create content.
 
-    These users should be assigned to App workspaces as needed.
+    These users should be assigned to workspaces as needed.
 
 3. An application *master* user account, or Embedded account.
 
-    The applications backend will store the credentials for this account and use it for acquiring an Azure AD token for use with the Power BI REST APIs. This account will be used to generate the embed token for the application. This account also needs to be an admin of the App workspaces created for embedding.
+    The applications backend will store the credentials for this account and use it for acquiring an Azure AD token for use with the Power BI REST APIs. This account will be used to generate the embed token for the application. This account also needs to be an admin of the workspaces created for embedding.
 
 > [!NOTE]
 > This is just a regular user account in your organization that will be used for the purposes of embedding.
@@ -78,14 +78,14 @@ You will need to register your application with Azure AD in order to make REST A
 
 You should register the application using the application **master** account.
 
-## Create App workspaces (Required)
+## Create workspaces (Required)
 
-You can take advantage of App workspaces to provide better isolation if your application is servicing multiple customers. Dashboards and reports would be isolated between your customers. You could then use a Power BI account per App workspace to further isolate application experiences between your customers.
+You can take advantage of workspaces to provide better isolation if your application is servicing multiple customers. Dashboards and reports would be isolated between your customers. You could then use a Power BI account per workspace to further isolate application experiences between your customers.
 
 > [!IMPORTANT]
 > You cannot use a personal workspace to take advantage of embedding to non-Power BI users.
 
-You will need a user that has a Pro license in order to create an app workspace within Power BI. The Power BI user that creates the App workspace will be an admin of that workspace by default.
+You will need a user that has a Pro license in order to create an workspace within Power BI. The Power BI user that creates the workspace will be an admin of that workspace by default.
 
 > [!NOTE]
 > The application *master* account needs to be an admin of the workspace.
@@ -158,7 +158,7 @@ It is possible, using some workarounds, to migrate the push api report from PaaS
 
 ## Create and upload new reports
 
-In addition to the content you migrated from the Power BI Workspace Collection, you can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. The end user publishing the reports need to have a Power BI Pro license in order to publish to an app workspace.
+In addition to the content you migrated from the Power BI Workspace Collection, you can create your reports and datasets using Power BI Desktop and then publish those reports to an workspace. The end user publishing the reports need to have a Power BI Pro license in order to publish to an workspace.
 
 ## Rebuild your application
 
@@ -174,9 +174,9 @@ Within your application, you will map users that you manage within the applicati
 
 When you are ready to move to production, you will need to do the following.
 
-* If you are using a separate tenant for development, then you will need to make sure your app workspaces, along with dashboards and reports, are available in your production environment. You will also need to make sure that you created the application in Azure AD for your production tenant and assigned the proper app permissions as indicated in Step 1.
+* If you are using a separate tenant for development, then you will need to make sure your workspaces, along with dashboards and reports, are available in your production environment. You will also need to make sure that you created the application in Azure AD for your production tenant and assigned the proper app permissions as indicated in Step 1.
 * Purchase a capacity that fits your needs. To better understand how the amount and type of capacity you need, see the [Power BI Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper). You can [purchase capacity](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) in Azure.
-* Edit the App workspace and assign it to a Premium capacity under advanced.
+* Edit the workspace and assign it to a Premium capacity under advanced.
 
     ![Premium capacity](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity02.png)
 

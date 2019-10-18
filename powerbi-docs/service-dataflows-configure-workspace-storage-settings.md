@@ -1,6 +1,6 @@
 ---
 title: Configure workspace dataflow settings
-description: Configure an app workspace in Power BI to store its dataflow definition and data files in Azure Data Lake Storage Gen2
+description: Configure an workspace in Power BI to store its dataflow definition and data files in Azure Data Lake Storage Gen2
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -31,11 +31,11 @@ We'll take a look at each in the following sections.
 
 ## Create a new workspace, configure its dataflow storage
 
-To create a new app workspace in the Power BI service, select **Workspaces > Create app workspace**.
+To create a new workspace in the Power BI service, select **Workspaces > Create workspace**.
 
 ![Add new workspace](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_01.jpg)
 
-In the Create an app workspace dialog, a yellow box may appear that's titled **Preview improved workspaces**. In that area select **Try now**.
+In the Create an workspace dialog, a yellow box may appear that's titled **Preview improved workspaces**. In that area select **Try now**.
 
 ![Preview improved workspaces](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_02.jpg)
 
@@ -43,7 +43,7 @@ In the dialog that appears, you can give your new workspace a unique name. Don't
 
 ![Name your new workspace](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_03.jpg)
 
-Next, expand the **Advanced** area of the **Create an app workspace** dialog, where you can turn on the **Dataflow storage (preview)** setting.)
+Next, expand the **Advanced** area of the **Create an workspace** dialog, where you can turn on the **Dataflow storage (preview)** setting.)
 
 ![Advanced settings for the new workspace](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_04.jpg)
 
@@ -53,7 +53,7 @@ Select **Save** to create your new workspace. Any new dataflow created in this w
 
 Alternatively to creating a new workspace, you can update an existing workspace to store the definition file and data in your organization's Azure Data Lake Storage Gen2 account. Remember that the dataflow sotrage setting can only be changed if the workspace doesn't already contain a dataflow.
 
-To edit an app workspace, select the elipsis **(...)** then select **Edit workspace**. 
+To edit an workspace, select the elipsis **(...)** then select **Edit workspace**. 
 
 ![Edit workspace](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_05.jpg)
 
@@ -99,7 +99,7 @@ There are some additional considerations as well, described in the following lis
 
 **Power BI Desktop** customers cannot access dataflows stored in Azure Data Lake Storage Gen2 account, unless they are the owner of the dataflow. Consider the following situation:
 
-1.	Anna creates a new app workspace and configures it to store dataflows in the organization’s data lake.
+1.	Anna creates a new workspace and configures it to store dataflows in the organization’s data lake.
 2.	Ben, who is also a member of the workspace Anna created, wants to use Power BI Desktop and the dataflow connector to get data from the dataflow Anna created.
 3.	Ben receives an error because Ben was not added as an authorized user to the dataflow’s CDM folder in the data lake.
 

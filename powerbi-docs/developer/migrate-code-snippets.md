@@ -163,7 +163,7 @@ In this snippet, we are using unencrypted credentials for simplicity, sending en
 
 You will need to rebuild the report for the created dataset.
 
-In this snippet, we assume that the pushable dataset is already in an app workspace within the SaaS environment. For information about the push API, see [Push data into a Power BI dataset](walkthrough-push-data.md).
+In this snippet, we assume that the pushable dataset is already in an workspace within the SaaS environment. For information about the push API, see [Push data into a Power BI dataset](walkthrough-push-data.md).
 
 ```csharp
     var credentials = new TokenCredentials(<Your WSC access key>, "AppKey");

@@ -39,7 +39,7 @@ Here are the prerequisites for creating the paginated report:
 Here are the prerequisites for uploading your paginated report to the Power BI service:
 
 - You need a [Power BI Pro license](service-admin-power-bi-pro-in-your-organization.md).
-- Your need an app workspace on the service in a [Power BI Premium capacity](service-premium-what-is.md). It has a diamond icon ![Premium diamond icon](media/paginated-reports-quickstart-aw/premium-diamond.png) next to the workspace name.
+- Your need an workspace on the service in a [Power BI Premium capacity](service-premium-what-is.md). It has a diamond icon ![Premium diamond icon](media/paginated-reports-quickstart-aw/premium-diamond.png) next to the workspace name.
 
 ## Create the matrix with a wizard
   
@@ -282,7 +282,7 @@ One more formatting improvement before publishing the report to the Power BI ser
 
 Now that you've created this paginated report, it's time to upload it to the Power BI service.
 
-1. In the Power BI service (http://app.powerbi.com) in the left navigation, select **Workspaces** > **Create app workspace**.
+1. In the Power BI service (http://app.powerbi.com) in the left navigation, select **Workspaces** > **Create workspace**.
 
 2. Name your workspace **Azure AW**, or other unique name. You're the only member for now. 
 
