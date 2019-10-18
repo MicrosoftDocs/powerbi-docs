@@ -15,6 +15,9 @@ ms.author: mihart
 LocalizationGroup: Get started
 ---
 # Navigation: searching, finding, and sorting content in Power BI service
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 There are many ways to navigate to your content in the Power BI service. The content is organized within your workspace by type: dashboards and reports.  And the content is also organized by usage: favorites, recent, apps, shared with me, and featured. For one stop navigation, Power BI *Home* organizes content all on one page. These different pathways into your content allow you to quickly find what you need in the Power BI service.  
 
 ## Navigation within workspaces
