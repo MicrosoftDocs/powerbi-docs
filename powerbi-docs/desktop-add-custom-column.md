@@ -8,61 +8,84 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 10/18/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
 # Add a custom column in Power BI Desktop
-You can easily add a new custom column of data to your model using **Query Editor** in **Power BI Desktop**. You can create and rename your custom column using easy buttons to create [M formulas](https://msdn.microsoft.com/library/mt270235.aspx) that define your custom column. The M formula has a [comprehensive function reference content set](https://msdn.microsoft.com/library/mt779182.aspx). 
+You can easily add a new custom column of data to your model by using Query Editor in Power BI Desktop. With Query Editor, you create and rename your custom column to create [PowerQuery M formula queries](https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-formula-language) to define your custom column. The PowerQuery M formula queries have a [comprehensive function reference content set](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference). 
 
-![](media/desktop-add-custom-column/add-custom-column_01.png)
+![Add Custom Column page](media/desktop-add-custom-column/add-custom-column_01.png)
 
-Creating a custom column is another **Applied Step** to the query you create in **Query Editor**, which means it can be changed, moved earlier or later, or modified at any time.
+When you create a custom column, Power BI Desktop adds it as an **Applied Step** in the **Query Settings** of the query you create in **Query Editor**. It can be changed, moved, or modified at any time.
 
 ## Use Query Editor to add a new custom column
-To create a new custom column, launch **Query Editor**. You can do this by selecting **Edit Queries** from the **Home** ribbon in **Power BI Desktop**.
+To create a new custom column, follow these steps:
 
-![](media/desktop-add-custom-column/add-column-from-example_02.png)
+1. Select **Query Editor** from the menu.  
 
-Once **Query Editor** is launched and you have some data loaded, you can add a custom column by selecting the **Add Column** tab on the ribbon, and then selecting **Custom Column**.
+2. From the **Home** ribbon, select **Edit Queries**.
 
-![](media/desktop-add-custom-column/add-custom-column_02.png)
+    ![Select Edit Queries](media/desktop-add-custom-column/add-column-from-example_02.png)
 
-The **Add Custom Column** window appears, which is described in the following section.
+    After **Query Editor** is launched and you've loaded some data, you can add a custom column.
+
+3. Select the **Add Column** tab on the ribbon, and then select **Custom Column**.
+
+    ![Select Custom Column](media/desktop-add-custom-column/add-custom-column_02.png)
+
+   The **Add Custom Column** window appears.
 
 ## The Add Custom Column window
-In the **Add Custom Column** window, you see the list of available fields in the pane on the right, the name of your custom column on the top (you can rename it just by typing a new name in that text box), and the [**M** formula](https://msdn.microsoft.com/library/mt779182.aspx) that you create (or write) based on inserting fields from the right, adding operators, and otherwise building the formula on which your new custom column is defined. 
+The **Add Custom Column** window has the following features: 
+- A list of available fields in the pane on the right.
 
-![](media/desktop-add-custom-column/add-custom-column_03.png)
+- The name of your custom column on the top, which you can rename by entering a new name in the text box.
+
+- The [PowerQuery M formula queries](https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference), which you create by building the formula on which your new custom column is defined. 
+
+    ![Add Custom Column page](media/desktop-add-custom-column/add-custom-column_03.png)
 
 ## Create formulas for your custom column
-You can select a field from the **Available columns:** list on the right, and select **<< Insert** to add them to the custom column formula. You can simply double-click on a column in the list to add it, too.
 
-As you type the formula and build your column, in the bottom of the window, you'll see an indicator telling you, in real time (as you type), whether any syntax errors are detected. If all is good, you'll see a green checkmark.
+1. Select a field from the **Available columns** list on the right, and then select **Insert** to add them to the custom column formula. You can also add a column by double-clicking in the list.
 
-![](media/desktop-add-custom-column/add-custom-column_04.png)
+2. As you enter the formula and build your column, note the  indicator in the bottom of the window. 
 
-But, if you have some sort of error in your syntax, you get a yellow warning icon, along with the error detected, and a link that puts the cursor (in your formula) where the error is detected.
+   If there aren't any errors, you'll see a green check mark.
 
-![](media/desktop-add-custom-column/add-custom-column_05.png)
+   ![Syntax check for Add Custom Column page](media/desktop-add-custom-column/add-custom-column_04.png)
 
-When you select **OK**, your custom column is added to the model, and the **Added Custom** step is added to your query's **Applied Steps**.
+   If there's a syntax error, you'll see a yellow warning icon, along with a link to where the error occurred in your formula.
 
-![](media/desktop-add-custom-column/add-custom-column_06.png)
+   ![Error on Add Custom Column page](media/desktop-add-custom-column/add-custom-column_05.png)
 
-If you double-click the **Added Custom** step in the **Applied Steps** pane, the **Add Custom Column** window appears again, with the custom column formula you created already loaded, and ready for you to modify if necessary.
+3. Select **OK**. 
 
-## Using the Advanced Editor for Custom Columns
-You can also create a custom column (and modify any step of your query, for that matter) using the **Advanced Editor**. In **Query Editor** select the **View** tab and then select **Advanced Editor** to display the **Advanced Editor**.
+   Power BI adds your custom column to the model, and adds the **Added Custom** step to your query's **Applied Steps**.
 
-![](media/desktop-add-custom-column/add-custom-column_07.png)
+    ![Custom column added to Query Settings](media/desktop-add-custom-column/add-custom-column_06.png)
 
-The **Advanced Editor** gives you full control over your query.
+4. To modify your custom column, double-click the **Added Custom** step in the **Applied Steps** pane. 
 
+    The **Add Custom Column** window appears with the custom column formula you created.
+
+## Use the Advanced Editor for Custom Columns
+You can also create a custom column, and modify any step of your query, by using the **Advanced Editor**: 
+
+1. In **Query Editor**, select the **View** tab. 
+
+2. Select **Advanced Editor**.
+
+   The **Advanced Editor** page appears, which gives you full control over your query. 
+
+   ![Advanced Editor page](media/desktop-add-custom-column/add-custom-column_07.png)
+
+   
 ## Next steps
-There are other ways to create a custom column, including creating a column based on examples you provide to **Query Editor**. See the following article for more information on creating custom columns from examples:
 
-* [Add a column from an example in Power BI Desktop](desktop-add-column-from-example.md)
-* [Power Query M Reference](/powerquery-m/power-query-m-reference)  
+- You can create a custom column in other ways, such as creating a column based on examples you provide to **Query Editor**. For more information, see [Add a column from an example in Power BI Desktop](desktop-add-column-from-example.md).
+
+- For Power Query M reference information, see [Power Query M function reference](/powerquery-m/power-query-m-function-reference).
 
