@@ -1,6 +1,6 @@
 ---
 title: Sign up for Power BI as an individual
-description: Learn how to sign up for Power BI and begin using it for your personal report and visualization needs.
+description: Learn how to sign up for Power BI and begin using it for your data analysis and visualization needs.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -14,13 +14,13 @@ LocalizationGroup: Get started
 
 # Sign up for Power BI as an individual
 
-Power BI can be your personal report and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains how to sign up for a Power BI Pro trial as an individual. If you're a Power BI admin, see [Power BI licensing in your organization](service-admin-licensing-organization.md).
+Power BI can be your personal data analysis and visualization tool, and can also serve as the analytics and decision engine behind group projects, divisions, or entire corporations. This article explains how to sign up for Power BI as an individual. If you're a Power BI admin, see [Power BI licensing in your organization](service-admin-licensing-organization.md).
 
 ![Power BI dashboard](media/service-self-service-signup-for-power-bi/dashboard.png)
 
 ## Supported email addresses
 
-Before you start the sign-up process, it's important to learn which types of email addresses that you can use in Power BI:
+Before you start the sign-up process, it's important to learn which types of email addresses that you can use to sign-up for Power BI:
 
 * Power BI requires that you use a work or school email address to sign up. You can't sign up using email addresses provided by consumer email services or telecommunication providers. This includes outlook.com, hotmail.com, gmail.com, and others.
 
@@ -28,11 +28,11 @@ Before you start the sign-up process, it's important to learn which types of ema
 
 * You can sign-up for Power BI with .gov or .mil addresses, but this requires a different process. For more info, see [Enroll your US Government organization in the Power BI service](service-govus-signup.md).
 
-## Sign up for a trial
+## Sign up for a Power BI account
 
-Follow these steps to sign up for a Power BI Pro trial. See the next section, [Trial expiration](#trial-expiration), to learn about the options you have when this trial expires.
+Follow these steps to sign up for a Power BI account. Once you complete this process you will have a Power BI (free) license which you can use to try Power BI on your own using My Workspace, consume content from a Power BI workspace assigned to a Power BI Premium capacity or initiate an individual Power BI Pro Trial. [TODO] We need documentation somewhere that explains when you are prompted to start a Power BI Pro Trial, how long it lasts for etc. You might even move the Trial Expiration content to be with that. [ENDTODO] For more information, see [Power BI features by license type](service-features-license-type.md). 
 
-1. Go to the [sign-up page](https://signup.microsoft.com/signup?sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235) in Power BI.
+1. Go to the [sign-up page](https://signup.microsoft.com/signup?sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235).
 
 1. Enter your email address then select **Sign up**.
 
@@ -62,11 +62,13 @@ Follow these steps to sign up for a Power BI Pro trial. See the next section, [T
 
     ![Existing account](media/service-self-service-signup-for-power-bi/welcome-screen.png)
 
+[TODO]I would recommend removing the trial expiration content here and grouping it with content that describes the Individual Power BI Pro Trial, how you get one (in-product prompt), how long it lasts etc. and then ends with the expiration content below[ENDTODO]
+
 ## Trial expiration
 
 When your Power BI Pro trial expires, your license changes to a Power BI (free) license. After this happens, you no longer have access to features that require a Power BI Pro license. For more information, see [Features by license type](service-features-license-type.md).
 
-If a Power BI (free) license is sufficient, you don't have to do anything else. To take advantage of Power BI Pro features, contact your IT admin about purchasing a Power BI Pro license.
+If a Power BI (free) license is sufficient, you don't have to do anything else. To take advantage of Power BI Pro features, contact your IT admin about purchasing a Power BI Pro license.[TODO]We should update this to let them know they can purchase directly using self-serve purchase and link to the self-serve purchase content. We do need to account for the fact that not everyone will be eligible for self-serve purchase[ENDTODO]
 
 ## Troubleshooting the sign-up process
 
