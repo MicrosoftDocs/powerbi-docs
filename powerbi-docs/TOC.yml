@@ -354,7 +354,7 @@
       - name: "Matrix visual"
         href: visuals/desktop-matrix-visual.md
       - name: "Q&A visual"
-        href: visuals/power-bi-visualizations-q-and-a.md
+        href: visuals/power-bi-visualization-q-and-a.md
       - name: "Create advanced analytics and visualizations using R scripts in Power BI"
         href: visuals/service-r-visuals.md
       - name: "Radial gauge charts in Power BI"
