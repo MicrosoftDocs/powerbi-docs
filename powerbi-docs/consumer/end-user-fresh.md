@@ -15,6 +15,9 @@ LocalizationGroup: Get started
 ---
 
 # Your content is up-to-date
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 As a *consumer*, you interact with content that is created by *designers* and shared with you. You might wonder if that content is up-to-date or maybe you just want to know when that content was last refreshed. Knowing that you are working with the freshest content gives you confidence.  
  
 ![Power BI dashboard](media/end-user-fresh/power-bi-dashboards.png)
