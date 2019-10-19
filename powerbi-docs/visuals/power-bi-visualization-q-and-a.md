@@ -132,7 +132,7 @@ Selecting the cog icon opens the Q&A visual Tooling pane.
 
 ![Q&A visual with Tooling icon selected](media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling.png)
 
-Use the Tooling pane to teach Q&A terms it doesn't recognize, to manage those terms, and to manage the suggested questions for this dataset and report. In the Tooling pane you can also review questions that have been asked using this Q&A visual and see questions that have been flagged by users. To learn more, see [Q&A Tooling into](../natural-language/qnaa-tooling-intro.md)
+Use the Tooling pane to teach Q&A terms it doesn't recognize, to manage those terms, and to manage the suggested questions for this dataset and report. In the Tooling pane you can also review questions that have been asked using this Q&A visual and see questions that have been flagged by users. <!--To learn more, see [Q&A Tooling into](../natural-language/qnaa-tooling-intro.md) -->
 
 ![The Q&A Tooling pane](media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling-pane.png)
 
