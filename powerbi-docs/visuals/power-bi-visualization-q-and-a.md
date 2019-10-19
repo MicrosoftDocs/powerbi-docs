@@ -19,7 +19,7 @@ ms.author: mohaali
 
 The Q&A visual allows users to ask natural language questions and get answers in the form of a visual. 
 
-![Q&A Visual Walkthrough](../natural-language/media/qna-visual-walkthrough.gif)
+<!--![Q&A Visual Walkthrough](../natural-language/media/qna-visual-walkthrough.gif) -->
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -30,7 +30,7 @@ The Q&A visual consist of four core components;
 - The question box. This is where users type in their question and are shown suggestions to help them complete their question.
 - A pre-populated list of suggested questions.
 - Icon to convert the Q&A visual into a standard visual. 
-- Icon to open [Q&A tooling](qna-tooling-intro.md) which allows designers to configure the underlying natural language engine.
+- Icon to open Q&A tooling which allows designers to configure the underlying natural language engine.
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ The Q&A visual consist of four core components;
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
 
-If you see an error when creating a Q&A visual, be sure to check out the [limitations](../natural-language/qna-limitations.md) section to see if the datasource configuration is supported.
+<!--If you see an error when creating a Q&A visual, be sure to check out the [limitations](../natural-language/qna-limitations.md) section to see if the datasource configuration is supported.-->
 
 ## Create a Q&A visual using a suggested question
 In this exercise, we'll select one of the suggested questions to create our Q&A visual. 
@@ -139,9 +139,9 @@ Use the Tooling pane to teach Q&A terms it doesn't recognize, to manage those te
 ## Considerations and troubleshooting
 The Q&A visual integrates with Office and Bing to attempt to match unrecognized common words with fields in your dataset.  
 
-## Next steps
+<!--## Next steps
 
 There are a variety of ways you can integrate natural language. For more information, see the following articles:
 
 * [Q&A Tooling](../natural-language/qna-tooling-intro.md)
-* [Q&A Best Practices](../natural-language/qna-best-practices.md)
+* [Q&A Best Practices](../natural-language/qna-best-practices.md) -->
