@@ -17,7 +17,7 @@ LocalizationGroup: Common tasks
 
 # Display content in more detail: focus mode and full screen mode
 
-[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
