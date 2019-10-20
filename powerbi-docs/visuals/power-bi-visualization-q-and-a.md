@@ -25,7 +25,7 @@ The Q&A visual allows users to ask natural language questions and get answers in
 
 The Q&A visual can be both used as a tool to allow *consumers* to quickly get answers to their data, and by *designers* to create visuals in report by simply double-clicking anywhere on a report and using natural language to get started. As it behaves like any other visual, the Q&A visual can be cross-filtered/cross-highlighted and also supports bookmarks. The Q&A visual also supports themes and other default formatting options available inside Power BI.
 
-The Q&A visual consist of four core components;
+The Q&A visual consists of four core components;
 
 - The question box. This is where users type in their question and are shown suggestions to help them complete their question.
 - A pre-populated list of suggested questions.
@@ -110,7 +110,7 @@ When you select a theme, that theme is applied to the entire report page. There 
 ### Format the Q&A visual
 Format the Q&A visual, the question field, and the way suggestions are displayed. You can change everything from the background of a title to the hover color for unrecognized words. Here we've added a grey background to the question box and changed the underlines to yellow and green. The title is centered and has a yellow background. 
 
-![Q&A visual shwoing our formatting results](media/power-bi-visualization-q-and-a/power-bi-q-and-a-format.png)
+![Q&A visual showing our formatting results](media/power-bi-visualization-q-and-a/power-bi-q-and-a-format.png)
 
 ## Convert your Q&A visual into a standard visual
 We've formatted our color blind safe column chart visual a bit -- added a title and a border. Now we're ready to convert it to a standard visual in our report and also pin it to a dashboard.
