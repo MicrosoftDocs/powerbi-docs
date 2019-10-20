@@ -1,5 +1,5 @@
 ---
-title: Use the Power BI Q&A Visual
+title: Use the Power BI Q&A visual
 description: How to set up the Power BI Q&A visual
 author: mihart
 manager: mohaali
@@ -11,7 +11,7 @@ ms.date: 10/19/2019
 ms.author: mohaali
 
 ---
-# Introduction to Power BI Q&A Visual
+# Introduction to Power BI Q&A visual
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
