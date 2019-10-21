@@ -15,7 +15,7 @@ ms.date: 06/18/2019
 
 Visuals can retrieve the Power BI locale to localize their content to the relevant language.
 
-Read more about [Supported languages and countries/regions for Power BI](https://docs.microsoft.com/en-us/power-bi/supported-languages-countries-regions)
+Read more about [Supported languages and countries/regions for Power BI](./../../supported-languages-countries-regions.md)
 
 For example, getting locale in the Sample Bar Chart visual.
 
