@@ -47,7 +47,7 @@ Select **Review questions** to see a list of datasets being used in the Power BI
 
 ### Teach Q&A
 
-The **Teach Q&A** section allows you to train Q&A to recognize words. To begin, type a question that contains a word or words that Q&A doesn't recognize. Q&A prompts you for the definition of that term. Enter either a filter or a field name that corresponds to what that word represents. Q&A then reinterprets the original question. If you're happy with the results, you can save your input. To learn more, see [Teach Q&A](qna-tooling-teach-qna.md)
+The **Teach Q&A** section allows you to train Q&A to recognize words. To begin, type a question that contains a word or words that Q&A doesn't recognize. Q&A prompts you for the definition of that term. Enter either a filter or a field name that corresponds to what that word represents. Q&A then reinterprets the original question. If you're happy with the results, you can save your input. To learn more, see [Teach Q&A](q-and-a-tooling-teach-q-and-a.md)
 
 ![Q&A teach synonym preview](media/qna-tooling-teach-fixpreview.png)
 
@@ -93,10 +93,10 @@ A row label allows you to define which column (or *field*) best identifies a sin
 
 ## Configure the linguistic schema (advanced)
 
-In Power BI, you can completely train and enhance the natural language engine inside Q&A, including changing the scoring and weighting of the underlying natural language results. To learn how, see [Edit Q&A linguistic schema and add phrasings](qna-tooling-advanced.md).
+In Power BI, you can completely train and enhance the natural language engine inside Q&A, including changing the scoring and weighting of the underlying natural language results. To learn how, see [Edit Q&A linguistic schema and add phrasings](q-and-a-tooling-advanced.md).
 
 ## Next steps
 
 There are a number of best practices for improving the natural language engine. For more information, see the following article:
 
-* [Q&A Best Practices](qna-best-practices.md)
+* [Q&A Best Practices](q-anda-best-practices.md)
