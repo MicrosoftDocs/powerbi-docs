@@ -30,7 +30,7 @@ This topic provides examples of expressions that can be used for common tasks in
 For more information about simple and complex expressions, where you can use expressions, and the types of references that you can include in an expression, see topics under [Expressions in Power BI Report Builder](report-builder-expressions.md). 
   
 ## Functions  
- Many expressions in a report contain functions. You can format data, apply logic, and access report metadata using these functions. You can write expressions that use functions from the Microsoft Visual Basic run-time library, and from the `xref:System.Convert` and `xref:System.Math` namespaces. You can add references to functions from other assemblies or custom code. You can also use classes from the Microsoft .NET Framework, including `xref:System.Text.RegularExpressions`.  
+ Many expressions in a report contain functions. You can format data, apply logic, and access report metadata using these functions. You can write expressions that use functions from the Microsoft Visual Basic run-time library, and from the `xref:System.Convert` and `xref:System.Math` namespaces. You can add references to functions in custom code. You can also use classes from the Microsoft .NET Framework, including `xref:System.Text.RegularExpressions`.  
   
 ##  <a name="VisualBasicFunctions"></a> Visual Basic functions  
  You can use Visual Basic functions to manipulate the data that is displayed in text boxes or that is used for parameters, properties, or other areas of the report. This section provides examples demonstrating some of these functions. For more information, see [Visual Basic Runtime Library Members](https://go.microsoft.com/fwlink/?LinkId=198941) on MSDN.  
