@@ -32,7 +32,7 @@ In previous versions of Q&A, if a table and column had the same name, the table 
 
 ### Use the new Q&A tooling to fix your questions
 
-With the Q&A tooling, you can teach your core business terms to Q&A and fix questions your end users ask. Sometimes, some questions still can't be addressed because the data is shaped incorrectly or data is missing. In this case, read the other sections below to help you optimize. Read more about [Q&A tooling](qna-tooling-intro.md).
+With the Q&A tooling, you can teach your core business terms to Q&A and fix questions your end users ask. Sometimes, some questions still can't be addressed because the data is shaped incorrectly or data is missing. In this case, read the other sections below to help you optimize. Read more about [Q&A tooling](q-and-a-tooling-intro.md).
 
 ## Add missing relationships
 
