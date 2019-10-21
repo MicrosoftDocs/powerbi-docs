@@ -98,5 +98,5 @@ By default, Q&A is available at the top of dashboards. To use Q&A, type in the *
 
 You can integrate natural language in your reports in a variety of ways. For more information, see these articles:
 
-* [Q&A visual](qna-visual.md)
+* [Q&A visual](../visuals/power-bi-visualization-q-and-a.md)
 * [Q&A best practices](qna-best-practices.md)
