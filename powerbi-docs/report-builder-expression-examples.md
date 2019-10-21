@@ -1,7 +1,7 @@
 ---
 title: "Expression examples in Power BI Report Builder"
 description: Expressions are used frequently in Power BI Paginated Report Builder paginated reports to control content and report appearance.
-ms.date: 06/06/2019
+ms.date: 10/21/2019
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -471,7 +471,7 @@ For more information about simple and complex expressions, where you can use exp
     ```  
   
 ##  <a name="CustomCode"></a> Custom code  
- You can use custom code in a report. Custom code is either embedded in a report or stored in a custom assembly which is used in the report.  
+ You can use custom code embedded in a report. 
   
 ### Using group variables for custom aggregation  
  You can initialize the value for a group variable that is local to a particular group scope and then include a reference to that variable in expressions. One of the ways that you can use a group variable with custom code is to implement a custom aggregate. 
