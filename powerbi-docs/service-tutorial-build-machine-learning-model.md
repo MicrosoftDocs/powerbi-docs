@@ -47,47 +47,47 @@ To create the entities in your dataflow, sign into the Power BI service and navi
 If you don't already have a workspace, you can create one by selecting Workspaces in the left navigation menu in the Power BI service, and select Create app workspace at the bottom of the panel that appears. This opens a panel on the right to enter the workspace details. Enter a workspace name and select Advanced. Confirm that the workspace uses Dedicated Capacity using the radio button, and that it's assigned to a dedicated capacity instance that has AI turned on. Then select Save.
 
 
-![Create a workspace](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-01.png)
+![Create a workspace](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-01.png)
 
 Once the workspace is created, you can select **Skip** in the bottom right of the Welcome screen, as shown in the following image.
 
-![Skip if you have a workspace](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-02.png)
+![Skip if you have a workspace](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-02.png)
 
  Select the **Create** button at the top right of the workspace, and then select **Dataflow**.
 
-![Create dataflow](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-03.png)
+![Create dataflow](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-03.png)
 
 Select **Add new entities**. This launches a **Power Query** editor in the browser.
 
-![Add new entity](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-04.png)
+![Add new entity](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-04.png)
 
 Select **Text/CSV File** as a data source, shown in the following image.
 
-![Text/CSF file selected](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-05.png)
+![Text/CSF file selected](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-05.png)
 
 In the **Connect to a data source** page that appears next, paste the following link to the *online_shoppers_intention.csv* into the **File path or URL** box, and then select **Next**.
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv`
 
-![File path](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-06.png)
+![File path](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-06.png)
 
 The Power Query Editor shows a preview of the data from the CSV file. You can rename the query to a friendlier name by changing the value in the Name box found in the right pane. For example, you could change the Query name to Online Visitors.
 
-![Change to a friendly name](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-07.png)
+![Change to a friendly name](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-07.png)
 
 Power Query automatically infers the type of columns. You can change the column type by clicking on the attribute type icon at the top of the column header. In this example, we change the type of the Revenue column to True/False.
 
-![Change data type](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-08.png)
+![Change data type](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-08.png)
 
 Select the Save & close button to close Power Query Editor. Provide a name for the dataflow, and then select Save on the dialog, as shown in the following image.
 
-![Save the dataflow](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-09.png)
+![Save the dataflow](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-09.png)
 
 ## Create and train a machine learning model
 
 To add a machine learning model, Select the **Apply ML model** button in the **Actions** list for the base entity that contains your training data and label information, and then select **Add a machine learning model**.
 
-![Add a machine learning model](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-10.png)
+![Add a machine learning model](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-10.png)
 
 The first step for creating our machine learning model is to identify the historical data including the outcome field that you want to predict. The model will be created by learning from this data.
 
@@ -95,22 +95,22 @@ The first step for creating our machine learning model is to identify the histor
 
 In the case of the dataset we're using, this is the **Revenue** field. Select **Revenue** as the 'Historical outcome field' value and then select **Next**.
 
-![Select historical data](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-11.png)
+![Select historical data](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-11.png)
 
 Next, we must select the type of machine learning model to create. Power BI analyzes the values in the outcome field that you've identified and suggests the types of machine learning models that can be created to predict that field.
 
 In this case since we're predicting a binary outcome of whether a user will make a purchase or not, Binary Prediction is recommended. Since we are interested in predicting users who will make a purchase, select True as the Revenue outcome that you're most interested in. Additionally, you can provide friendly labels for the outcomes to be used in the automatically generated report that will summarize the results of the model validation. Then select Next.
 
 
-![Binary prediction selected](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-12.png)
+![Binary prediction selected](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-12.png)
 
 Next, Power BI does a preliminary scan of a sample of your data and suggests the inputs that may produce more accurate predictions. If Power BI doesn't recommend a field, an explanation would be provided next to it. You have the option to change the selections to include only the fields you want the model to study, or you can select all the fields by selecting the checkbox next to the entity name. Select Next to accept the inputs.
 
-![Select the Next checkbox](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-13.png)
+![Select the Next checkbox](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-13.png)
 
 In the final step, we must provide a name for our model. Name the model Purchase Intent Prediction. You can choose to reduce the training time to see quick results or increase the amount of time spent in training to get the best model. Then select Save and train to start training the model.
 
-![Save the model](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-14.png)
+![Save the model](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-14.png)
 
 The training process will begin by sampling and normalizing your historical data and splitting your dataset into two new entities Purchase Intent Prediction Training Data and Purchase Intent Prediction Testing Data.
 
@@ -118,22 +118,22 @@ Depending on the size of the dataset, the training process can take anywhere fro
 
 You can confirm that the model is being trained and validated through the status of the dataflow. This appears as a data refresh in progress in the Dataflows tab of the workspace.
 
-![Ready for training](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-15.png)
+![Ready for training](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-15.png)
 
 Once the model training is completed, the dataflow displays an updated refresh time. You can confirm that the model is trained, by navigating to the Machine learning models tab in the dataflow. The model you created should show status as Trained and the Last Trained time should now be updated.
 
-![Last trained on](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-16.png)
+![Last trained on](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-16.png)
 
 ## Review the model validation report
 To review the model validation report, in the Machine learning models tab, select the View training report button in the Actions column for the model. This report describes how your machine learning model is likely to perform.
 
 In the Model Performance page of the report, select See top predictors to view the top predictors for your model. You can select one of the predictors to see how the outcome distribution is associated with that predictor.
 
-![Model performance](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-17.png)
+![Model performance](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-17.png)
 
 You can use the Probability Threshold slicer on the Model Performance page to examine its influence on the Precision and Recall for the model.
 
-![Probability threshold](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-18.png)
+![Probability threshold](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-18.png)
 
 The other pages of the report describe the statistical performance metrics for the model.
 
@@ -144,7 +144,7 @@ The report also includes a Training Details page that describes the different it
 
 Select the Apply model button at the top of the report to invoke this model. In the Apply dialog, you can specify the target entity that has the source data to which the model should be applied.
 
-![Apply the model](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-19.png)
+![Apply the model](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-19.png)
 
 When prompted, you must Refresh the dataflow to preview the results of your model.
 
@@ -153,11 +153,11 @@ Applying the model will create two new entities, with the suffix enriched <model
 Applying a Binary Prediction model adds four columns with predicted outcome, probability score, the top record-specific influencers for the prediction, and explanation index each prefixed with the column name specified.  
 
 
-![Three columns of outcome](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-20.png)
+![Three columns of outcome](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-20.png)
 
 Once the dataflow refresh is completed, you can select the Online Visitors enriched Purchase Intent Prediction entity to view the results.
 
-![View the results](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-21.png)
+![View the results](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-21.png)
 
 ## Using the scored output from the model in a Power BI report
 
