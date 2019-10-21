@@ -38,7 +38,7 @@ You'll need to sign in to Power BI service (not Power BI Desktop) and repeat the
 2. The dataset associated with this report is **Contoso Sales**.
    
     ![Contoso Sales dataset](media/service-cortana-enable/power-bi-identify-dataset.png)
-3. To the right of the dataset name, select the **ellipses (...) > Settings**.  
+3. To the right of the dataset name, select the ****More options** (...) > Settings**.  
    
     ![Choose Settings](media/service-cortana-enable/power-bi-settings-cortana.png)
 4. Select **Q&A and Cortana** > **Allow Cortana to access this dataset** > **Apply**.

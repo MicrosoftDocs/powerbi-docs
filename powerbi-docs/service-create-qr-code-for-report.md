@@ -22,7 +22,7 @@ Colleagues you've shared the report with can scan the QR code for access to the 
 
 ## Create a QR code for a report
 1. Open a report in the Power BI service.
-2. Select the ellipsis (...) in the top-right corner and select **Generate QR code**. 
+2. Select the **More options** (...) in the top-right corner and select **Generate QR code**. 
    
     ![](media/service-create-qr-code-for-report/power-bi-create-qr-code-report.png)
 3. A dialog box with the QR code appears. 

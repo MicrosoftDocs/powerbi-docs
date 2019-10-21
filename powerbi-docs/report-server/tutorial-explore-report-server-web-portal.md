@@ -185,7 +185,7 @@ You can view and manage paginated reports, and launch Report Builder, from the w
 
 ### Manage a paginated report
 
-1. In the web portal under **Paginated reports**, select the ellipsis (...) next to **Sales Order** > **Manage**.
+1. In the web portal under **Paginated reports**, select the **More options** (...) next to **Sales Order** > **Manage**.
 
 1. Select **Parameters**, change the default value for **SalesOrderNumber** to **SO50689** > **Apply**.
 
@@ -215,7 +215,7 @@ You can view and manage paginated reports, and launch Report Builder, from the w
 
 You can edit paginated reports in Report Builder, and you can start Report Builder right from the browser.
 
-1. In the web portal, select the ellipsis (...) next to **Sales Order** > **Edit in Report Builder**.
+1. In the web portal, select the **More options** (...) next to **Sales Order** > **Edit in Report Builder**.
 
 1. Select **Allow** to allow this web site to open a program on your computer.
 

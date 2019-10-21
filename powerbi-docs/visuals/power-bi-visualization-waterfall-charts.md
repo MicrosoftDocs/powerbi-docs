@@ -71,7 +71,7 @@ You'll create a waterfall chart that displays sales variance (estimated sales ve
 
     ![waterfall](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
 
-1. Make sure Power BI sorted the waterfall chart chronologically. From the top-right corner of the chart, select the ellipsis (...).
+1. Make sure Power BI sorted the waterfall chart chronologically. From the top-right corner of the chart, select the **More options** (...).
 
     For this example we will select **Sort ascending**
 

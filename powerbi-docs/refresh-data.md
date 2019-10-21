@@ -131,7 +131,7 @@ Following a data refresh, however, previously cached query results are no longer
 
 #### Tile refresh
 
-Power BI maintains a cache for every tile visual on your dashboards and proactively updates the tile caches when data changes. In other words, tile refresh happens automatically following a data refresh. This is true for both, scheduled and on-demand refresh operations. You can also force a tile refresh by selecting the ellipsis (...) in the upper right of a dashboard and selecting **Refresh dashboard tiles**.
+Power BI maintains a cache for every tile visual on your dashboards and proactively updates the tile caches when data changes. In other words, tile refresh happens automatically following a data refresh. This is true for both, scheduled and on-demand refresh operations. You can also force a tile refresh by selecting the **More options** (...) in the upper right of a dashboard and selecting **Refresh dashboard tiles**.
 
 ![Refresh dashboard tiles](media/refresh-data/refresh-dashboard-tiles.png)
 

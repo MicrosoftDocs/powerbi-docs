@@ -143,7 +143,7 @@ Now that you have imported data from the Facebook page, you can quickly and easi
    
    ![Bar chart](media/desktop-tutorial-facebook-analytics/barchart1.png)
    
-4. Select the ellipsis (...) in the upper right of the visualization, and then select **Sort by Number of comments** to sort the table by descending number of comments. 
+4. Select the **More options** (...) in the upper right of the visualization, and then select **Sort by Number of comments** to sort the table by descending number of comments. 
    
    ![Sort by number of comments](media/desktop-tutorial-facebook-analytics/barchart2.png)
    
@@ -180,7 +180,7 @@ The X axis (number of comments) of the chart does not show exact values, and loo
 
 That's better, but the data labels all have a **.0** decimal place, which is distracting and misleading, since **Number of posts** must be a whole number. You need to change the data type of the **Number of posts** column to Whole Number.
 
-1. To edit the data type, right-click **Query1** in the Fields list, or hover over it and select the **More options** ellipsis (...), and then select **Edit Query**. You can also select **Edit Queries** from the **External data** area of the Home tab in the ribbon, and then select **Edit Queries** from the dropdown. The Power BI Desktop **Power Query Editor** opens in a separate window.
+1. To edit the data type, right-click **Query1** in the Fields list, or hover over it and select the **More options** **More options** (...), and then select **Edit Query**. You can also select **Edit Queries** from the **External data** area of the Home tab in the ribbon, and then select **Edit Queries** from the dropdown. The Power BI Desktop **Power Query Editor** opens in a separate window.
    
    ![Edit Query from Fields list](media/desktop-tutorial-facebook-analytics/editquery1.png)     ![Edit Queries from ribbon](media/desktop-tutorial-facebook-analytics/t_fb_editquery.png)
    

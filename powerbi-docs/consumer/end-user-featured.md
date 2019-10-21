@@ -36,7 +36,7 @@ Watch Amanda create a featured dashboard in the video. Then follow the steps to 
 
 
 1. Open the dashboard that you want to set as featured. 
-2. On the top menu bar, select the ellipses (...) and select **Set as featured**. 
+2. On the top menu bar, select the **More options** (...) and select **Set as featured**. 
    
     ![Set as featured icon](./media/end-user-featured/power-bi-dropdown.png)
 3. Confirm your selection.
@@ -57,7 +57,7 @@ If you change your mind later, you can set a new dashboard as the featured dashb
 If you decide that you don't want any dashboard to be designated as featured, here's how to unfeature a dashboard.
 
 1. Open the currently featured dashboard.
-2. On the top menu bar, select the ellipses (...) and select **Disable featured**.
+2. On the top menu bar, select the **More options** (...) and select **Disable featured**.
 
     ![Disable featured dashboard selected](./media/end-user-featured/power-bi-unfeature-newer.png)
    

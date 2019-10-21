@@ -35,7 +35,7 @@ Watch Will view related content for a dashboard. Then follow the step-by-step in
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M#t=3m05s" frameborder="0" allowfullscreen></iframe>
 
-With a dashboard or report open, select the ellipses (...) in the menu bar and choose **View related** from the dropdown.
+With a dashboard or report open, select the **More options** (...) in the menu bar and choose **View related** from the dropdown.
 
 ![Ellipses dropdown](./media/end-user-related/power-bi-dropdown.png)
 

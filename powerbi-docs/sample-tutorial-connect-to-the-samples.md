@@ -87,7 +87,7 @@ Now explore the dashboard, dataset, and report on your own. There are many diffe
      
    ![Brand-new report](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
 
-1. Another way of exploring the dataset is to run [quick insights](consumer/end-user-insights.md). Select the ellipses (...), and then choose **Get quick insights**. When the insights are ready, select **View insights**.
+1. Another way of exploring the dataset is to run [quick insights](consumer/end-user-insights.md). Select the **More options** (...), and then choose **Get quick insights**. When the insights are ready, select **View insights**.
      
     ![Insights report](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 

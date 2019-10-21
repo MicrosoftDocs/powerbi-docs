@@ -37,7 +37,7 @@ You can use **See Data** to view a textual version of the values used by the sel
 
 ![See Data in ribbon](media/desktop-see-data-see-records/see-data1.png)
 
-You can also see the data by right-clicking on a visualization, and then selecting **Show Data** from the menu that appears; or by selecting the **More options** ellipsis (...) in the upper-right corner of a visualization, and then selecting **Show Data**.
+You can also see the data by right-clicking on a visualization, and then selecting **Show Data** from the menu that appears; or by selecting the **More options** **More options** (...) in the upper-right corner of a visualization, and then selecting **Show Data**.
 
 ![Show Data right-click](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![Show Data More Options](media/desktop-see-data-see-records/see-data3.png)
 

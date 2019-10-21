@@ -49,7 +49,7 @@ ms.custom: include file
 
 7. Select **Save**.
 
-Power BI creates the workspace and opens it. It appears in the list of workspaces you’re a member of. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to it, adding new members or changing their permissions.
+Power BI creates the workspace and opens it. It appears in the list of workspaces you’re a member of. Because you’re an admin, you can select the **More options** (...) to go back and make changes to it, adding new members or changing their permissions.
 
 ![Edit workspace](media/powerbi-service-create-app-workspace/power-bi-workspace-old-settings.png)
 

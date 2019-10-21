@@ -40,7 +40,7 @@ You can mark KPIs and reports as favorites on a Power BI Report Server or Report
   ![Favorites page](./media/mobile-apps-favorites/power-bi-ipad-favorites.png)
 
 ## Make an app a favorite
-1. In the list of apps in the mobile app, tap the ellipsis (...) next to the app > **Favorite**.
+1. In the list of apps in the mobile app, tap the **More options** (...) next to the app > **Favorite**.
    
     ![App favorite menu](./media/mobile-apps-favorites/power-bi-android-favorite-app-ellipsis.png)
    
@@ -61,7 +61,7 @@ You can make a Power BI dashboard or report a favorite from the list of dashboar
 ## Make a dashboard or report a favorite in the Android mobile apps
 You can make a dashboard or report a favorite from the list of dashboards or reports, or from the dashboard or report itself.
 
-* In the list of dashboards or reports in the mobile app, tap the vertical ellipsis (...) next to the name, then tap **Favorite**. You see a yellow star next to the name ![Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
+* In the list of dashboards or reports in the mobile app, tap the vertical **More options** (...) next to the name, then tap **Favorite**. You see a yellow star next to the name ![Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
   
     ![Android Favorite menu](./media/mobile-apps-favorites/power-bi-android-make-favorite.png)
 * On the dashboard or report, tap the empty star in the ribbon ![Not Favorite icon](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). The star turns dark gray ![Favorite icon](./media/mobile-apps-favorites/power-bi-android-favorite-icon.png).

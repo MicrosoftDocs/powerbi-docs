@@ -41,7 +41,7 @@ There are two icons for reports in the Power BI mobile apps:
 > [!NOTE]
 > When you hold your phone in a landscape orientation, you'll always get the landscape layout, even if the report page is in phone layout.
 
-To get to a report from a dashboard, tap the ellipsis (...) in the upper-right corner of a tile and then tap **Open report**:
+To get to a report from a dashboard, tap the **More options** (...) in the upper-right corner of a tile and then tap **Open report**:
   
   ![Open report](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
@@ -55,7 +55,7 @@ A tap is the same as a mouse click. So, if you want to cross-highlight the repor
 When you tap a slicer value, the value is selected and the rest of the report is sliced by that value.
 When you tap a link, button, or bookmark, the action defined by the report author will occur.
 
-You probably noticed that when you tap a visual, a border appears. In the upper-right corner of the border, you'll see an ellipsis (...). If you tap the ellipsis, you'll see a menu of actions you can take on that visual:
+You probably noticed that when you tap a visual, a border appears. In the upper-right corner of the border, you'll see an **More options** (...). If you tap the ellipsis, you'll see a menu of actions you can take on that visual:
 
 ![Visual and menu](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
@@ -88,7 +88,7 @@ For more information, read about how to [add drillthrough in Power BI Desktop](.
    
    
 ### Using the actions in the report footer
-From the report footer, you can perform several actions on the current report page or on the entire report. The footer provides quick access to the most commonly used actions. You can access other actions by tapping the ellipsis (...) button:
+From the report footer, you can perform several actions on the current report page or on the entire report. The footer provides quick access to the most commonly used actions. You can access other actions by tapping the **More options** (...) button:
 
 ![Report footer](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
@@ -101,7 +101,7 @@ You can move between report pages by swiping from the edge of your screen to the
 - View all report actions.
 
 #### All report actions
-When you tap the ellipsis (...) button in the report footer, you'll see all the actions that you can perform on a report:
+When you tap the **More options** (...) button in the report footer, you'll see all the actions that you can perform on a report:
 
 
 ![All report actions](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)

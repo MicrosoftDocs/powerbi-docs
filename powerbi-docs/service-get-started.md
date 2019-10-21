@@ -113,7 +113,7 @@ Now that you've connected to data, start exploring.  When you've found something
    
 8. Select the new tile on your dashboard to return to the report. Power BI returns you to the report in Reading view. 
 
-1. To switch back to Editing view, select the ellipsis (...) in the top navigation bar > **Edit**. Back in Editing view, you can continue to explore and pin tiles.
+1. To switch back to Editing view, select the **More options** (...) in the top navigation bar > **Edit**. Back in Editing view, you can continue to explore and pin tiles.
 
     ![Select Edit to edit the report](media/service-get-started/power-bi-service-edit-report.png)
 
@@ -198,7 +198,7 @@ Now that you've finished the tutorial, you can delete the dataset, report, and d
 
 1. In the left navigation bar, make sure you're in **My Workspace**.
 2. Select the **Datasets** tab and locate the dataset you imported for this tutorial.  
-3. Select the ellipsis (...) > **Delete**.
+3. Select the **More options** (...) > **Delete**.
 
     ![Delete the dataset](media/service-get-started/power-bi-service-delete-dataset.png)
 

@@ -82,7 +82,7 @@ You can only unshare if you're the owner.
 3. To unshare, tap the red circle next to a name and tap **Delete**.
 
 ## Share from your Android device
-1. On the dashboards or reports home page, tap the ellipsis (...) and tap **Invite a colleague**.
+1. On the dashboards or reports home page, tap the **More options** (...) and tap **Invite a colleague**.
    
    ![Invite a colleague](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-tablet-share-dashboard.png)
 2. Or, in a dashboard or report, tap the invite icon ![Invite icon](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png).

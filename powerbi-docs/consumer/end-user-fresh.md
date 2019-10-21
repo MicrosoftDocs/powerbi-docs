@@ -63,7 +63,7 @@ If interested, you can look up the last refreshed date for most content.
 ### Dashboard tiles
 For dashboard tiles, view the tile in Focus mode to see the Last refresh timestamp.
 
-1. On a dashboard tile, select the ellipses (...) and choose **Open in Focus mode**.
+1. On a dashboard tile, select the **More options** (...) and choose **Open in Focus mode**.
 
     ![menu that appears after selecting the ellipses](media/end-user-fresh/power-bi-focus-mode.png)
 
@@ -72,7 +72,7 @@ For dashboard tiles, view the tile in Focus mode to see the Last refresh timesta
     ![wide browser showing last refresh](media/end-user-fresh/power-bi-last-refresh2.png)
 
 ### Dashboards and reports
-Another way to look up a last refreshed date is by using **View related**.  **View related** is available by selecting the ellipses (...) from the Power BI upper menu bar.
+Another way to look up a last refreshed date is by using **View related**.  **View related** is available by selecting the **More options** (...) from the Power BI upper menu bar.
 
 ![Select View related from menu](media/end-user-fresh/power-bi-view-related-dropdown.png)
 

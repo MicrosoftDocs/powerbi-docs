@@ -79,9 +79,9 @@ You can make tiles many different sizes -- from 1x1 tile units up to 5x5. Select
 ![video](media/service-dashboard-edit-tile/pbigif_resizetile4.gif)
 
 - - -
-## The ellipses (...) menu
+## The **More options** (...) menu
 
-1. Select the ellipses (...) in the upper-right corner of the tile. 
+1. Select the **More options** (...) in the upper-right corner of the tile. 
    
    ![tile ellipses](media/service-dashboard-edit-tile/power-bi-tile.png)
 

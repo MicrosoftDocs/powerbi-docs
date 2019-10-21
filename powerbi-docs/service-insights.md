@@ -33,7 +33,7 @@ Watch Amanda run quick insights on a dataset, open an insight in Focus mode, pin
 
 Now it's your turn. Explore insights by using the [Supplier Quality Analysis sample](sample-supplier-quality.md).
 
-1. From the **Datasets** tab, select the ellipsis (...), and then choose **Get quick insights**.
+1. From the **Datasets** tab, select the **More options** (...), and then choose **Get quick insights**.
    
     ![Datasets tab](media/service-insights/power-bi-ellipses.png)
    
@@ -57,7 +57,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
 
 1. Hover over a card and select the pin icon to add the visualization to a dashboard.
 
-2. Hover over a card, select the ellipsis (...), and then choose **View insights**. 
+2. Hover over a card, select the **More options** (...), and then choose **View insights**. 
 
     The insight screen opens in Focus mode.
    
@@ -81,7 +81,7 @@ Now it's your turn. Explore insights by using the [Supplier Quality Analysis sam
 Instead of searching for insights against an entire dataset, narrow your search to do a scoped insight on the data that's used to create a single dashboard tile. 
 
 1. Open a dashboard.
-2. Hover over a tile. select the ellipsis (...), and then choose **View insights**. The tile opens in [Focus mode](service-focus-mode.md) with the insights cards displayed along the right.    
+2. Hover over a tile. select the **More options** (...), and then choose **View insights**. The tile opens in [Focus mode](service-focus-mode.md) with the insights cards displayed along the right.    
    
     ![Focus mode](media/service-insights/pbi-insights-tile.png)    
 3. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.    

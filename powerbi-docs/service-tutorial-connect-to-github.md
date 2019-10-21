@@ -73,7 +73,7 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
     ![App in the left navigation pane](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
-10. Select the ellipsis (...) next to the dashboard name > **Rename** > type **GitHub dashboard**.
+10. Select the **More options** (...) next to the dashboard name > **Rename** > type **GitHub dashboard**.
  
     ![Power BI GitHub tile](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
 

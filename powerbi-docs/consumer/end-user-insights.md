@@ -27,7 +27,7 @@ The insights feature is built on a growing [set of advanced analytical algorithm
 When you run insights on a dashboard tile, Power BI searches just the data used to create that single dashboard tile. 
 
 1. [Open a dashboard](end-user-dashboards.md).
-2. Hover over a tile. select the ellipsis (...), and choose **View insights**. 
+2. Hover over a tile. select the **More options** (...), and choose **View insights**. 
 
     ![ellipsis menu mode](./media/end-user-insights/power-bi-hovers.png)
 
