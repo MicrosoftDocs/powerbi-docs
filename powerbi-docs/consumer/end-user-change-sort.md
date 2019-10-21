@@ -15,6 +15,9 @@ LocalizationGroup: Reports
 ---
 
 # Change how a chart is sorted in a Power BI report
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 In a Power BI report, you can sort most visualizations alphabetically by the names of the categories in the chart, or by the numeric
 values of each category. For example, this chart is sorted by the category **store name**.
 
