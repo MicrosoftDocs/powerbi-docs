@@ -382,7 +382,7 @@
       - name: "Q&A tooling Introduction"
         href: natural-language/q-and-a-tooling-intro.md
       - name: "Q&A tooling teach Q&A"
-        href: natural-language/q-and-a-tooling-teach-qna.md
+        href: natural-language/q-and-a-tooling-teach-q-and-a.md
       - name: "Q&A tooling advanced"
         href: natural-language/q-and-a-tooling-advanced.md
       - name: "Q&A best practices"
