@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.date: 10/17/2019
 ms.author: mohaali
 
-LocalizationGroup: Ask questions of your data
+LocalizationGroup: Ask questions of your datadefintion
 ---
 # Teach Q&A to understand questions and terms in Power BI Q&A
 
@@ -31,7 +31,7 @@ In the **Teach Q&A** section of Q&A setup, you train Q&A to understand natural-l
 
     Q&A offers suggestions and prompts you to provide the correct definition of the term. 
     
-3. Under **Define the terms Q&A didn't understand**, provide a defintion
+3. Under **Define the terms Q&A didn't understand**, provide a definition.
 
     ![Q&A Teach synonym preview](media/qna-tooling-teach-fixpreview.png)
 
