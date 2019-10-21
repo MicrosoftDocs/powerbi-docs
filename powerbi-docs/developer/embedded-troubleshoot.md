@@ -7,7 +7,7 @@ manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 02/05/2019
 ---
 
