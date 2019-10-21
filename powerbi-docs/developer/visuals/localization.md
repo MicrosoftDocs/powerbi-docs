@@ -26,7 +26,7 @@ Each of these bar charts was created under a different locale (English, Basque, 
 > [!NOTE]
 > The localization manager in the visual’s code is supported from API 1.10.0 and higher.
 
-# Get the locale
+## Get the locale
 
 The `locale` is passed as a string during the initialization of the visual. If a locale is changed in Power BI, the visual will be generated again with the new locale. You can find the full sample code at SampleBarChart with Locale
 
