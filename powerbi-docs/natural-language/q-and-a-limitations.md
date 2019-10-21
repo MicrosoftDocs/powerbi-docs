@@ -39,7 +39,7 @@ Power BI Q&A currently does not support the following configurations:
 
 ## Tooling limitations
 
-The new tooling dialog allows users to customize and improve the natural language in Q&A. To learn more about tooling, read the [intro to Q&A tooling](qna-tooling-intro.md).
+The new tooling dialog allows users to customize and improve the natural language in Q&A. To learn more about tooling, read the [intro to Q&A tooling](q-and-a-tooling-intro.md).
 
 ## Review question limitations
 
