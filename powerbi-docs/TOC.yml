@@ -376,19 +376,19 @@
     - name: Natural Language
       items: 
       - name: "Q&A introduction"
-        href: natural-language/qna-intro.md
+        href: natural-language/q-and-a-intro.md
       - name: "Q&A visual"
         href: /visuals/power-bi-visualization-q-and-a.md
       - name: "Q&A tooling Introduction"
-        href: natural-language/qna-tooling-intro.md
+        href: natural-language/q-and-a-tooling-intro.md
       - name: "Q&A tooling teach Q&A"
-        href: natural-language/qna-tooling-teach-qna.md
+        href: natural-language/q-and-a-tooling-teach-qna.md
       - name: "Q&A tooling advanced"
-        href: natural-language/qna-tooling-advanced.md
+        href: natural-language/q-and-a-tooling-advanced.md
       - name: "Q&A best practices"
-        href: natural-language/qna-best-practices.md
+        href: natural-language/q-and-a-best-practices.md
       - name: "Q&A limitations"
-        href: natural-language/qna-limitations.md
+        href: natural-language/q-and-a-limitations.md
     - name: Troubleshoot
       items: 
       - name: "Resolve issues importing Access Databases and Excel spreadsheets in Power BI Desktop and Power Query"
