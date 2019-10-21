@@ -55,7 +55,7 @@ The second type of issue is when Q&A doesn't recognize the word at all. You coul
 ![Q&A red underline Sales](media/qna-red-underline-costs.png)
 
 > [!NOTE]
-> You can customize the blue/red underline colors in the Q&A **Visual formatting** pane. Also, the [Q&A tooling](qna-tooling-teach-qna.md) article explains *Teach Q&A*, which you use to define terms Q&A didn't recognize.
+> You can customize the blue/red underline colors in the Q&A **Visual formatting** pane. Also, the [Q&A tooling](q-and-a-tooling-teach-q-and-a.md) article explains *Teach Q&A*, which you use to define terms Q&A didn't recognize.
 
 ### Visualization results
 
@@ -99,4 +99,4 @@ By default, Q&A is available at the top of dashboards. To use Q&A, type in the *
 You can integrate natural language in your reports in a variety of ways. For more information, see these articles:
 
 * [Q&A visual](../visuals/power-bi-visualization-q-and-a.md)
-* [Q&A best practices](qna-best-practices.md)
+* [Q&A best practices](q-and-a-best-practices.md)
