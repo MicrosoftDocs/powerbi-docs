@@ -15,6 +15,8 @@ LocalizationGroup: Reports
 
 # Take a tour of the report Filters pane
 
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 This article takes a look at the report **Filters** pane in the Power BI service. Use the filters to discover new insights in your data.
 
 There are many different ways to filter data in Power BI. For more info about filters, see [Filters and highlighting in Power BI reports](../power-bi-reports-filters-and-highlighting.md).
