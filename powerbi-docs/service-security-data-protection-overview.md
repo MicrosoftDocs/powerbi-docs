@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/15/2019
+ms.date: 10/21/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -44,6 +44,22 @@ Power BI reads labels and policies from the unified labeling store managed in Of
 
 * [How to migrate Azure Information Protection labels to unified sensitivity labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 * [Azure Information Protection documentation](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
+
+## Considerations and limitations
+
+The following considerations apply to using data protection in Power BI: 
+
+* You must have one of the following Microsoft Information Protection licenses in order to use sensitivity labels in Power BI:
+    * APPI1
+    * APP2
+    * OFFICE E3/ E5
+    * M365 E3/ E5
+    * EMS E3/ E5
+
+* Users who can set labels on Power BI artifacts must have Power BI Pro license. 
+
+* Your organization must have a Microsoft Cloud App Security license to apply real time control policies.
+
 
 ## Next steps
 
