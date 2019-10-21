@@ -96,4 +96,4 @@ After you've provided definitions, you can go back to see all the fixes you made
 
 There are a number of best practices for improving the natural language engine. For more information, see the following article:
 
-* [Q&A Best Practices](qna-best-practices.md)
+* [Q&A Best Practices](q-and-a-best-practices.md)
