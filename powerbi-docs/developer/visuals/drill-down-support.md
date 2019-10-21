@@ -15,7 +15,7 @@ ms.date: 06/18/2019
 
 Custom visuals can use Power BI’s drill-down.
 
-Read more about Power BI drill-down [here](https://powerbi.microsoft.com/documentation/powerbi-service-drill-down-in-a-visualization/)
+Read more about Power BI drill-down [here](./../../consumer/end-user-drill.md)
 
 ## Enable drill-down support in the visual
 
