@@ -611,10 +611,3 @@ In the final step you should get visual with context menu:
 
 ![The visual with drill-down support](./media/dev-matrix-visual-drilldown-demo.gif)
 
-## Next steps
-
-* [Read how to add context menu for visuals data points](context-menu.md)
-
-* [Read how to use selection manager to add selections into Power BI Visuals](selection-api.md)
-
-* [Read how to handle selections on bookmarks switching](bookmarks-support.md#visuals-with-selection)
