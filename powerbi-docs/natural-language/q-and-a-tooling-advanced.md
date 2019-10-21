@@ -31,7 +31,7 @@ Linguistic schemas are saved in a .yaml format. This format is related to the po
 
 ## Prerequisites
 
-- If you haven't already read the article on [improving your data model for Q&A](qna-best-practices.md), you may want to read that article first. It includes numerous tips for designing and improving your data model and an important section on adding synonyms.  
+- If you haven't already read the article on [improving your data model for Q&A](q-and-a-best-practices.md), you may want to read that article first. It includes numerous tips for designing and improving your data model and an important section on adding synonyms.  
 - Download sample [.yaml and .pbix files](https://go.microsoft.com/fwlink/?linkid=871858).   
 - Install a .yaml file editor. We recommend [Visual Studio Code](https://code.visualstudio.com/).
 
@@ -53,7 +53,7 @@ We recommend using Visual Studio Code to edit linguistic schema .yaml files. Vis
 
 ## Working with linguistic schemas
 
-There are two ways to work with linguistic schemas. One way is to edit, import, and export the .yaml from the ribbon in Power BI Desktop. That way is covered in the Power BI [Q&A Tooling experience](qna-tooling-intro.md) article. You don't have to open the .yaml file in order to improve Q&A. 
+There are two ways to work with linguistic schemas. One way is to edit, import, and export the .yaml from the ribbon in Power BI Desktop. That way is covered in the Power BI [Q&A Tooling experience](q-and-a-tooling-intro.md) article. You don't have to open the .yaml file in order to improve Q&A. 
 
 The other way to edit a linguistic schema is to export and edit the .yaml file directly.  When you edit a linguistic schema .yaml file, you tag columns in the table as different grammatical elements, and define words that a colleague might use to phrase a question. For instance, you state the columns that are the subject and the object of the verb. You add alternative words that colleagues can use to refer to tables, columns, and measures in your model. 
 
