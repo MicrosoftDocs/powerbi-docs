@@ -108,15 +108,15 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
     - A red underline is used for words that Power BI does not recognize. Whenever possible, Power BI will help you define these words. If you see the correct definition, select it from the dropdown.  
 
-    ![Red underlined term in the Q&A question box](media/end-user-q-and-a/power-bi-q-and-a-red.png)
+        ![Red underlined term in the Q&A question box](media/end-user-q-and-a/power-bi-q-and-a-red.png)
 
     - If none of the definitions is correct, try another term or select the red underlined word to ask the report owner to add the word.
 
-    ![Typing a question in the Q&A question box](media/end-user-q-and-a/power-bi-q-and-a-owner.png)
+        ![Typing a question in the Q&A question box](media/end-user-q-and-a/power-bi-q-and-a-owner.png)
 
     - As you type more of the question, Power BI lets you know if it doesn't understand the question, and tries to help. In the example below, Power BI asks you "Did you mean..." and suggests a different way to word your question using terminology from your dataset. 
 
-    ![Q&A visual offering suggested corrections](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
+        ![Q&A visual offering suggested corrections](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
 
 2. After selecting Power BI's correction, your results display as a line chart. 
 
