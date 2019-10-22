@@ -23,6 +23,11 @@ Sometimes the fastest way to get an answer from your data is to ask a question u
 
 Use Q&A to explore your data using intuitive, natural language capabilities and receive answers in the form of charts and graphs. Q&A is different from a search engine -- Q&A only provides results about the data in Power BI.
 
+## Which visualization does Q&A use?
+Q&A picks the best visualization based on the data being displayed. Sometimes data in the underlying dataset is defined as a certain type or category and this helps Q&A know how to display it. For example, if data is defined as a date type, it is more likely to be displayed as a line chart. Data that is categorized as a city is more likely to be displayed as a map.
+
+You can also tell Q&A which visual to use by adding it to your question. But keep in mind that it may not always be possible for Q&A to display the data in the visual type you requested. Q&A will prompt you with a list of workable visual types.
+
 ## Where can I use Q&A?
 You'll find Q&A on dashboards in the Power BI service, and at the bottom of the dashboard in Power BI mobile. Unless the designer has given you edit permissions, you'll be able to use Q&A to explore data but won't be able to save any visualizations created with Q&A.
 
@@ -30,7 +35,7 @@ You'll find Q&A on dashboards in the Power BI service, and at the bottom of the 
 
 You'll also find Q&A on reports, if the report *designer* added a [Q&A visual](../visuals/power-bi-visualization-q-and-a.md).   
 
-![Q&A visual](../visuals/media/power-bi-visualization-q-and-a/power-bi-qna.png)
+![Q&A visual](../visuals/media/power-bi-visualization-q-and-a/power-bi-q-and-a-default.png)
 
 ## Q&A on dashboards
 
@@ -46,9 +51,9 @@ The experience is truly interactive…and fast! Powered by an in-memory storage,
 
 
 ## Use Q&A on a dashboard in the Power BI service
-In the Power BI service (app.powerbi.com), a dashboard contains tiles pinned from one or more datasets, so you can ask questions about any of the data contained in any of those datasets. To see what reports and datasets were used to create the dashboard, select **View related** from the menu bar.
+In the Power BI service (app.powerbi.com), a dashboard contains tiles pinned from one or more datasets, so you can ask questions about any of the data contained in any of those datasets. To see what reports and datasets were used to create the dashboard, select **View related** from the **More actions** dropdown.
 
-![view related button in the top menu bar](media/end-user-q-and-a/power-bi-view-related.png)
+![view related from the menu bar](media/end-user-q-and-a/power-bi-q-and-a-view-related.png)
 
 ## How do I start?
 First, get familiar with the content. Take a look at the visuals on the dashboard and in the report. Get a feel for the type and range of data that is available to you. 
@@ -76,12 +81,12 @@ Another way Q&A helps you ask questions is with prompts, auto-complete, and visu
 
 The Q&A visual allows you to ask natural language questions and get answers in the form of a visual. The Q&A visual behaves like any other visual, it can be cross-filtered/cross-highlighted and also supports bookmarks and comments. 
 
-You can identify a Q&A visual by its question box across the top. This is where you'll enter a question. The Q&A visual can be used over and over again to ask questions about your data. When you leave the report, the Q&A visual resets to its default. 
+You can identify a Q&A visual by its question box across the top. This is where you'll enter or type questions using natural language. The Q&A visual can be used over and over again to ask questions about your data. When you leave the report, the Q&A visual resets to its default. 
 
 ![Screenshot of default Q&A visual](media/end-user-q-and-a/power-bi-q-and-a-default.png)
 
 
-## Using the Q&A visual
+## Use the Q&A visual
 To use the Q&A visual, either select one of the suggested question or type your own natural language question. 
 
 ### Create a Q&A visual by using a suggested questions
@@ -99,35 +104,29 @@ But you can tell Power BI which visual type to use by adding it to your natural 
 
 If you're unsure what type of questions to ask or terminology to use, expand **Show all suggestions** or look through the other visuals in the report. This will get you familiar with the terms and content of the  dataset.
 
-Type your question into the Q&A field using natural language. As you type your question, Power BI helps you with autocomplete, suggestions, and feedback.
+1. Type your question into the Q&A field using natural language. As you type your question, Power BI helps you with autocomplete, suggestions, and feedback.
 
-- A red underline is used for words that Power BI does not recognize. Whenever possible, Power BI will help you define these words. If you see the correct definition, select it from the dropdown.  
+    - A red underline is used for words that Power BI does not recognize. Whenever possible, Power BI will help you define these words. If you see the correct definition, select it from the dropdown.  
 
     ![Red underlined term in the Q&A question box](media/end-user-q-and-a/power-bi-q-and-a-red.png)
 
-- If none of the definitions is correct, try another term or select the red underlined word to ask the report owner to add the word.
+    - If none of the definitions is correct, try another term or select the red underlined word to ask the report owner to add the word.
 
     ![Typing a question in the Q&A question box](media/end-user-q-and-a/power-bi-q-and-a-owner.png)
 
-- As you type more of the question, Power BI lets you know if it doesn't understand the question, and tries to help. In the example below, Power BI asks you "Did you mean..." and suggests a different way to word your question using terminology from your dataset. 
+    - As you type more of the question, Power BI lets you know if it doesn't understand the question, and tries to help. In the example below, Power BI asks you "Did you mean..." and suggests a different way to word your question using terminology from your dataset. 
 
     ![Q&A visual offering suggested corrections](media/end-user-q-and-a/power-bi-q-and-a-did-you-mean.png)
 
-5. After selecting Power BI's correction, your results display as a line chart. 
+2. After selecting Power BI's correction, your results display as a line chart. 
 
     ![Q&A visual results as a line chart](media/end-user-q-and-a/power-bi-q-and-a-line.png)
 
 
-6. But, you can change the visual to another visual type.  
+3. But, you can change the line chart to another visual type.  
 
     ![Q&A visual with "as a column chart" added to the question](media/end-user-q-and-a/power-bi-q-and-a-specify-type.png)
 
-
-
-## Which visualization does Q&A use?
-Q&A picks the best visualization based on the data being displayed. Sometimes data in the underlying dataset is defined as a certain type or category and this helps Q&A know how to display it. For example, if data is defined as a date type, it is more likely to be displayed as a line chart. Data that is categorized as a city is more likely to be displayed as a map.
-
-You can also tell Q&A which visual to use by adding it to your question. But keep in mind that it may not always be possible for Q&A to display the data in the visual type you requested. Q&A will prompt you with a list of workable visual types.
 
 
 ## Considerations and troubleshooting
@@ -143,7 +142,7 @@ Then choose **Settings** > **Dashboards**. Make sure there is a checkmark next t
 **Answer 2**: Sometimes you won't have access to the settings. If the dashboard *designer* or your administrator turned Q&A off, check with them to see if it's OK to turn it back on.   
 
 **Question**: I'm not getting the results I'd like to see when I type a question.    
-**Answer**: Select the option to contact the report or dashboard owner. You can do this directly from the Q&A dashboard page or the Q&A visual. Or, you can look up the owner from the Power BI header.  There are many things the designer can do to improve the Q&A results. For example, the designer can rename columns in the dataset to use terms that are easily understood (`CustomerFirstName` instead of `CustFN`). Since the designer knows the dataset really well, the designer can also come up with helpful questions and add them to the Q&A canvas.
+**Answer**: Select the option to contact the report or dashboard owner. You can do this directly from the Q&A dashboard page or the Q&A visual. Or, you can look up the owner from the Power BI header.  There are many things the designer can do to improve the Q&A results. For example, the designer can rename columns in the dataset to use terms that are easily understood (`CustomerFirstName` instead of `CustFN`). Since the designer knows the dataset really well, the designer can also come up with helpful questions and add them to the Q&A suggested questions.
 
 ![Display contact information](media/end-user-q-and-a/power-bi-contact.png)
 
