@@ -72,7 +72,7 @@ Even before you start typing, Q&A displays a new screen with suggestions to help
 
 You can select any of these to add them to the question box and then refine them to find a specific answer. 
 
-Another way Q&A helps you ask questions is with prompts, auto-complete, and visual cues. 
+Another way Q&A helps you ask questions is with prompts, autocomplete, and visual cues. 
 
 <!-- ![video](../visuals/media/end-user-q-and-a/qna4.gif) -->
 
@@ -87,9 +87,9 @@ You can identify a Q&A visual by its question box across the top. This is where 
 
 
 ## Use the Q&A visual
-To use the Q&A visual, either select one of the suggested question or type your own natural language question. 
+To use the Q&A visual, either select one of the suggested questions or type your own natural language question. 
 
-### Create a Q&A visual by using a suggested questions
+### Create a Q&A visual by using a suggested question
 
 Here, we've selected **top geo states by total units**. Power BI does its best to select which visual type to use. In this case, it's a map.
 
@@ -110,7 +110,7 @@ If you're unsure what type of questions to ask or terminology to use, expand **S
 
         ![Red underlined term in the Q&A question box](media/end-user-q-and-a/power-bi-q-and-a-red.png)
 
-    - If none of the definitions is correct, try another term or select the red underlined word to ask the report owner to add the word.
+    - If none of the definitions are correct, try another term or select the red underlined word to ask the report owner to add the word.
 
         ![Typing a question in the Q&A question box](media/end-user-q-and-a/power-bi-q-and-a-owner.png)
 
