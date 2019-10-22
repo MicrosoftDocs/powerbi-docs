@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 10/21/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -142,6 +142,14 @@ For more information, see [Matrix visuals in Power BI](desktop-matrix-visual.md)
 
 >[!TIP]
 >Pie charts show the relationship of parts to a whole. 
+
+### Q&A visual
+![Q&A visuals](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)
+
+>[!TIP]
+>Similar to the [Q&A experience on dashboards](power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
+
+For more information, see [Q&A visuals in Power BI](power-bi-visualization-q-and-a.md).
 
 ### R script visuals
 ![R visuals](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visuals.png)
