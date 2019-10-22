@@ -129,6 +129,8 @@
         href: register-app.md
       - name: "Get an Azure AD access token"
         href: get-azuread-access-token.md
+      - name: "Dynamic binding"
+        href: embed-dynamic-binding.md
       - name: "Embedding Q&A"
         href: qanda.md
       - name: "Troubleshoot your embedded application"
