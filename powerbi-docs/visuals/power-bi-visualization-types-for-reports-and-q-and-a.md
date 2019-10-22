@@ -147,7 +147,7 @@ For more information, see [Matrix visuals in Power BI](desktop-matrix-visual.md)
 ![Q&A visuals](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)
 
 >[!TIP]
->Similar to the [Q&A experience on dashboards](power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
+>Similar to the [Q&A experience on dashboards](../power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
 
 For more information, see [Q&A visuals in Power BI](power-bi-visualization-q-and-a.md).
 
