@@ -14,6 +14,9 @@ ms.author: mihart
 LocalizationGroup: Dashboards
 ---
 # View a dashboard
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Power BI *consumers* spend a lot of time viewing dashboards. Dashboards are designed to highlight specific information from the underlying reports and datasets. And Power BI consumers use that information for tracking, monitoring, answering questions, testing, and more -- in order to make data-driven business decisions.
 
 ![dashboard](media/end-user-dashboard-open/power-bi-new-dash-new.png)
