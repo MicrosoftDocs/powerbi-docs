@@ -38,13 +38,13 @@ Power BI reports retain the filters, slicers, sorting, and other data view chang
 
 ![persistent sorting](media/end-user-change-sort/power-bi-reset.png)
 
-If, however, the **Reset to default** button is greyed out, that means the report designer has disabled the ability to save (persist) your changes.
+If however, the **Reset to default** button is greyed out, that means the report designer has disabled the ability to save (persist) your changes.
 
 <a name="other"></a>
 ## Sorting using other criteria
 Sometimes, you want to sort your visual using a different field or other criteria.  For example, you might want
 to sort by month (and not in alphabetical order) or you might
-want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  The report owner will be able to update the dataset to enable this type of sorting. Contact information for the designer can be found by selecting the report name from the top menu bar.
+want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  The report designer will be able to update the dataset to enable this type of sorting. Contact information for the designer can be found by selecting the report name from the top menu bar.
 
 ![Dropdown showing contact information](media/end-user-change-sort/power-bi-contact.png)
 
