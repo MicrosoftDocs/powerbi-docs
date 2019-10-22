@@ -35,7 +35,7 @@ You'll find Q&A on dashboards in the Power BI service, and at the bottom of the 
 
 You'll also find Q&A on reports, if the report *designer* added a [Q&A visual](../visuals/power-bi-visualization-q-and-a.md).   
 
-![Q&A visual](../visuals/media/power-bi-visualization-q-and-a/power-bi-q-and-a-default.png)
+![Q&A visual](../visuals/media/end-user-q-and-a/power-bi-q-and-a-default.png)
 
 ## Q&A on dashboards
 
