@@ -13,7 +13,7 @@ ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
-# Creating accessibile reports in Power BI
+# Creating accessible reports in Power BI
 You can design and create compelling reports while also designing for accessibility. Whenever building a report, no matter who your audience is, you should create your reports to be usable by as many people as possible, without the need to be adapted for a sort of special design.
 
 ![High contrast windows settings](media/desktop-accessibility/accessibility-05.png)
@@ -118,7 +118,7 @@ In the **Selection pane**, selecting **Tab order** displays the current tab orde
 
 ![Tab order in the Selection pane](media/desktop-accessibility/accessibility-creating-reports-09.png)
 
-Titles and labels
+### Titles and labels
 Visual and report page titles are important accessibility features that orient the report consumer. Avoid using acronyms or jargon in your report titles; if you share the report to a new user or someone who is external to your organization, they may not know what your terms or acronyms mean. The following image shows a visual with an acronym in the title (on the left), and a clearer title for the visual on the right.
 
 ![Avoid jargon in visual titles](media/desktop-accessibility/accessibility-creating-reports-10.png)
@@ -156,9 +156,9 @@ While we suggest report authors to turn on data labels and markers, turning them
 If you’re not sure whether your visual or report is too busy, test that by doing a [squint test](https://chrome.google.com/webstore/detail/the-squint-test/gppnipfbappicilfniaimcnagbpfflpg).  If your eyes are drawn more to the data labels than the data points, turn off your data labels.
 
 
-Themes, contrast and colorblind-friendly colors
+### Themes, contrast and colorblind-friendly colors
 
-You should ensure that your reports have enough contrast between text and any background colors. WCAG 2.1 success criterion 1.4.3 delineates that text and background color should have a contrast ratio of at least 4.5:1. There are several tools such as [Colour Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/), [WebAIM](https://webaim.org/resources/contrastchecker/), and [Accessible Colors](http://accessible-colors.com/) you can use to check your report colors.
+You should ensure that your reports have enough contrast between text and any background colors. WCAG 2.1 success criterion 1.4.3 delineates that text and background color should have a contrast ratio of at least 4.5:1. There are several tools such as [Color Contrast Analyzer](https://developer.paciellogroup.com/resources/contrastanalyser/), [WebAIM](https://webaim.org/resources/contrastchecker/), and [Accessible Colors](http://accessible-colors.com/) you can use to check your report colors.
 
 You should also consider that some report viewers may have color vision deficiencies. Tools like [Coblis](http://www.color-blindness.com/coblis-color-blindness-simulator/) and [Vischeck](http://www.vischeck.com/vischeck/vischeckImage.php) simulate what report viewers with different color deficiencies see.  Using fewer colors or a monochrome palette in your report can help mitigate creating reports that are inaccessible.
 
@@ -197,17 +197,12 @@ Keep your report consistent by using the same font color and style for the visua
 
 A quick way to test what a report would look like for consumers with low vision would be to turn down the brightness of your screen or mobile device.  There are browser add-ons you can use that can help you perform a squint test.
 
-
-
-
 ## Next steps
 
 The collection of articles for Power BI accessibility are the following:
 
 * [Overview of accessibility in Power BI](desktop-accessibility-overview.md) 
-* [Consuming Power BI reports wiht accessibility tools](desktop-accessibility-consuming-tools.md)
+* [Consuming Power BI reports with accessibility tools](desktop-accessibility-consuming-tools.md)
 * [Creating Power BI reports with accessibility tools](desktop-accessibility-creating-tools.md)
 * [Accessibility keyboard shortcuts for Power BI reports](desktop-accessibility-keyboard-shortcuts.md)
-
-
-
+* [Report accessibility checklist](desktop-accessibility-overview.md#report-accessibility-checklist)

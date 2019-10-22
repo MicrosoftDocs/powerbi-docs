@@ -405,18 +405,20 @@
       href: desktop-send-smile-privacy-statement.md
     - name: "Manage the Power BI Desktop sign-in form"
       href: desktop-admin-sign-in-form.md
-    - name: Troubleshoot
+    - name: Accessibility
       items:       
       - name: "Overview of accessibility in Power BI"
         href: desktop-accessibility-overview.md     
       - name: "Creating accessible Power BI reports"
         href: desktop-accessibility-creating-reports.md      
-      - name: "Consuming Power BI reports wiht accessibility tools"
+      - name: "Consuming Power BI reports with accessibility tools"
         href: desktop-accessibility-consuming-tools.md             
       - name: "Creating Power BI reports with accessibility tools"
         href: desktop-accessibility-creating-tools.md             
       - name: "Accessibility keyboard shortcuts for Power BI reports"
         href: desktop-accessibility-keyboard-shortcuts.md             
+      - name: "Accessibility in Power BI Desktop"
+        href: desktop-accessibility.md                     
 - name: Power BI service
   items:
   - name: Overview
