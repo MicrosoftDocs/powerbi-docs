@@ -1,7 +1,7 @@
 ---
 title: "Expression examples in Power BI Report Builder"
 description: Expressions are used frequently in Power BI Paginated Report Builder paginated reports to control content and report appearance.
-ms.date: 06/06/2019
+ms.date: 10/21/2019
 ms.service: powerbi
 ms.subservice: report-builder
 
@@ -30,7 +30,7 @@ This topic provides examples of expressions that can be used for common tasks in
 For more information about simple and complex expressions, where you can use expressions, and the types of references that you can include in an expression, see topics under [Expressions in Power BI Report Builder](report-builder-expressions.md). 
   
 ## Functions  
- Many expressions in a report contain functions. You can format data, apply logic, and access report metadata using these functions. You can write expressions that use functions from the Microsoft Visual Basic run-time library, and from the `xref:System.Convert` and `xref:System.Math` namespaces. You can add references to functions from other assemblies or custom code. You can also use classes from the Microsoft .NET Framework, including `xref:System.Text.RegularExpressions`.  
+ Many expressions in a report contain functions. You can format data, apply logic, and access report metadata using these functions. You can write expressions that use functions from the Microsoft Visual Basic run-time library, and from the `xref:System.Convert` and `xref:System.Math` namespaces. You can add references to functions in custom code. You can also use classes from the Microsoft .NET Framework, including `xref:System.Text.RegularExpressions`.  
   
 ##  <a name="VisualBasicFunctions"></a> Visual Basic functions  
  You can use Visual Basic functions to manipulate the data that is displayed in text boxes or that is used for parameters, properties, or other areas of the report. This section provides examples demonstrating some of these functions. For more information, see [Visual Basic Runtime Library Members](https://go.microsoft.com/fwlink/?LinkId=198941) on MSDN.  
@@ -471,7 +471,7 @@ For more information about simple and complex expressions, where you can use exp
     ```  
   
 ##  <a name="CustomCode"></a> Custom code  
- You can use custom code in a report. Custom code is either embedded in a report or stored in a custom assembly which is used in the report.  
+ You can use custom code embedded in a report. 
   
 ### Using group variables for custom aggregation  
  You can initialize the value for a group variable that is local to a particular group scope and then include a reference to that variable in expressions. One of the ways that you can use a group variable with custom code is to implement a custom aggregate. 

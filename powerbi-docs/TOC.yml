@@ -377,12 +377,12 @@
         href: visuals/power-bi-visualization-waterfall-charts.md
       - name: "Create dynamic reference lines"
         href: service-analytics-pane.md
-    - name: Natural Language
+    - name: Natural language
       items: 
       - name: "Q&A introduction"
         href: natural-language/q-and-a-intro.md
       - name: "Q&A visual"
-        href: /visuals/power-bi-visualization-q-and-a.md
+        href: visuals/power-bi-visualization-q-and-a.md
       - name: "Q&A tooling Introduction"
         href: natural-language/q-and-a-tooling-intro.md
       - name: "Q&A tooling teach Q&A"
