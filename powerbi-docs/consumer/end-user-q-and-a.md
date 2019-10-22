@@ -69,7 +69,7 @@ You can select any of these to add them to the question box and then refine them
 
 Another way Q&A helps you ask questions is with prompts, auto-complete, and visual cues. 
 
-![video](../visuals/media/end-user-q-and-a/qna4.gif) 
+<!-- ![video](../visuals/media/end-user-q-and-a/qna4.gif) -->
 
 
 ## The Q&A visual
