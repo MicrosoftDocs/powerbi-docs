@@ -1,6 +1,6 @@
 ---
 title: Embed reports or dashboards from apps
-description: Learn how to integrate, or embed, a report or dashboard from a Power BI app and not from an workspace.
+description: Learn how to integrate, or embed, a report or dashboard from a Power BI app and not from a workspace.
 author: rkarlin
 ms.author: rkarlin 
 ms.topic: conceptual
