@@ -412,7 +412,7 @@ Deleting a Premium capacity is possible and will not result in the deletion of i
 
 ### Assigning Workspaces to Capacities
 
-Workspaces can be assigned to a Premium capacity in the **Power BI Admin**  **Portal** or - for an workspace - in the **Workspace** pane.
+Workspaces can be assigned to a Premium capacity in the **Power BI Admin**  **Portal** or - for a workspace - in the **Workspace** pane.
 
 Capacity Admins, as well as Office 365 Global Administrators or Power BI service administrators, can bulk assign workspaces in the **Power BI Admin**  **Portal**. Bulk assigned can apply to:
 
