@@ -100,7 +100,7 @@ There are two ways to open focus mode; one way for dashboard tiles and another w
 
     ![ellipsis menu for tile](media/end-user-focus/power-bi-dashboard-focus.png).
 
-2. The tile opens and fills the entire report canvas. Notice that you still have a **Filters** pane that you can use to interact with the visual. The **Filters** pane can be collapsed. 
+2. The tile opens and fills the entire report canvas. Notice that you still have a **Filters** pane that you can use to interact with the visual. The **Filters** pane can be collapsed.
 
    ![tile fills report canvas](media/end-user-focus/power-bi-focus-filter.png)
 
