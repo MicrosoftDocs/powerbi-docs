@@ -1450,3 +1450,5 @@
     href: guidance/import-modeling-data-reduction.md
   - name: "DIVIDE function vs divide operator (/)"
     href: guidance/dax-divide-function-operator.md
+  - name: "The importance of query folding"
+    href: guidance/power-query-folding.md
