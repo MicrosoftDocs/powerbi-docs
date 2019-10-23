@@ -11,6 +11,7 @@ ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
 ---
+
 # Data reduction techniques for Import modeling
 
 This article targets Power BI Desktop data modelers developing Import models. It describes different techniques to help reduce the data loaded into Import models.

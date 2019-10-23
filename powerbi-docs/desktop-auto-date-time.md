@@ -54,7 +54,7 @@ If it were possible to see an auto date/time table in the Model view diagram, it
 
 When an auto date/time table exists for a date column (and that column is visible), report authors will not find that column as a field in the **Fields** pane. Instead, they will find an expandable object that has the name of the date column. You can easily identify it because it's adorned with a calendar icon. When the report authors expands the calendar object, they will find a hierarchy named **Date Hierarchy**. When they expand the hierarchy, they will find four levels: **Year** , **Quarter** , **Month** , and **Day**.
 
-![Example of the Fields pane, with the Sales table expanded open. It contains an OrderDate field, adorned with the calendar icon. It is expanded open and contains a hierarchy named Date Hierarchy. It, too, is expanded and contains four levels: Year, Quarter, Month and Day.](media/auto-date-time-fields-pane-example.png)
+![Example of the Fields pane, with the Sales table expanded open. It contains an OrderDate field, adorned with the calendar icon. It is expanded open and contains a hierarchy named Date Hierarchy. It, too, is expanded and contains four levels: Year, Quarter, Month and Day.](media/desktop-auto-date-time/auto-date-time-fields-pane-example.png)
 
 The auto date/time generated hierarchy can be used to configure a visual in exactly the same way that regular hierarchies can be used: visuals can be configured by using the entire **Date Hierarchy** hierarchy, or levels of the hierarchy.
 
