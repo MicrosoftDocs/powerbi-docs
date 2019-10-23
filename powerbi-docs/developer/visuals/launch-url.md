@@ -63,7 +63,7 @@ private createHelpLinkElement(): Element {
     linkElement.setAttribute("title", "Open documentation");
     linkElement.setAttribute("class", "helpLink");
     linkElement.addEventListener("click", () => {
-        this.host.launchUrl("https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial");
+        this.host.launchUrl("https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial");
     });
     return linkElement;
 };

@@ -15,6 +15,9 @@ ms.author: mihart
 LocalizationGroup: Consumer
 ---
 # Add comments to a dashboard or report
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Add a personal comment or start a conversation about a dashboard or report with your colleagues. The **comment** feature is just one of the ways a *consumer* can collaborate with others. 
 
 ![comments video](media/end-user-comment/comment.gif)
