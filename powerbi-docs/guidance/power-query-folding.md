@@ -72,7 +72,7 @@ Generally, the following bulleted list describes transformations that prevent qu
 
 Note that when a Power Query query encompasses multiple data sources, incompatibility of data source privacy levels can prevent query folding from taking place. For more information, read the [Power BI Desktop privacy levels](../desktop-privacy-levels.md) article.
 
-## Determining when a query can be folded
+## Determine when a query can be folded
 
 In the Power Query Editor window, it is possible to determine when a Power Query query can be folded. In the **Query Settings** pane, when you right-click the last applied step, if the **View Native Query** option is enabled (not greyed out), then the query can be folded.
 
