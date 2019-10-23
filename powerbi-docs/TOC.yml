@@ -717,7 +717,7 @@
         href: service-machine-learning-integration.md
       - name: "Use Cognitive Services in Power BI"
         href: service-cognitive-services.md   
-      - name: "Automated Machine Learning in Power BI (Preview)"
+      - name: "Automated Machine Learning in Power BI"
         href: service-machine-learning-automated.md              
     - name: "Data lineage"
       href: service-data-lineage.md
