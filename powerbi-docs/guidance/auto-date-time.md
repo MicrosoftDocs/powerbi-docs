@@ -16,7 +16,7 @@ ms.author: v-pemyer
 
 This article targets data modelers developing Import or Composite models in Power BI Desktop.
 
-This article is not intended to provide a complete discussion on the Power BI Desktop _Auto date/time_ option. For an introduction, refer to the [Auto date/time in Power BI Desktop](desktop-auto-date-time.md) article.
+This article is not intended to provide a complete discussion on the Power BI Desktop _Auto date/time_ option. For an introduction, refer to the [Auto date/time in Power BI Desktop](../desktop-auto-date-time.md) article.
 
 ## Benefits
 
@@ -39,7 +39,7 @@ The following bulleted list describes limitations related to the _Auto date/time
 
 It is recommended to keep the _Auto date/time_ option enabled only when you work with calendar time periods, and when you have simplistic model requirements in relation to time. Using this option can also be convenient when creating ad hoc models or performing data exploration or profiling.
 
-When your data source already defines a date dimension, this should be used to consistently define time within your organization. This will certainly be the case if your data source is a data warehouse. Otherwise, you can generate date tables in your model by using the DAX [CALENDAR](/dax/calendar-function-dax) or [CALENDARAUTO](/dax/calendarauto-function-dax) functions, and by adding calculated columns to support the known time filtering and grouping requirements. This design approach may allow you to create a single date table that propagates to all fact-type tables, resulting a single table to apply time filters. For further information on creating date tables, read the [Set and use date tables in Power BI Desktop](desktop-date-tables.md) article.
+When your data source already defines a date dimension, this should be used to consistently define time within your organization. This will certainly be the case if your data source is a data warehouse. Otherwise, you can generate date tables in your model by using the DAX [CALENDAR](/dax/calendar-function-dax) or [CALENDARAUTO](/dax/calendarauto-function-dax) functions, and by adding calculated columns to support the known time filtering and grouping requirements. This design approach may allow you to create a single date table that propagates to all fact-type tables, resulting a single table to apply time filters. For further information on creating date tables, read the [Set and use date tables in Power BI Desktop](../desktop-date-tables.md) article.
 
 If the _Auto date/time_ option is not relevant to your projects, we recommend that you disable the global _Auto date/time_ option. This will ensure all new Power BI Desktop files you create will not enable the _Auto date/time_ option.
 
@@ -47,6 +47,6 @@ If the _Auto date/time_ option is not relevant to your projects, we recommend th
 
 For more information about auto date/time and related topics, check out the following resources:
 
-- [Auto date/time in Power BI Desktop](auto-date-time.md)
-- [Set and use date tables in Power BI Desktop](desktop-date-tables.md)
+- [Auto date/time in Power BI Desktop](../desktop-auto-date-time.md)
+- [Set and use date tables in Power BI Desktop](../desktop-date-tables.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

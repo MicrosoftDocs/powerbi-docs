@@ -32,7 +32,7 @@ There are eight different data reduction techniques covered in this article. The
 - [Optimize column data types](#optimize-column-data-types)
 - [Preference for custom columns](#preference-for-custom-columns)
 - [Disable Power Query query load](#disable-power-query-query-load)
-- [Disable auto date/time](#disable-auto-date-time)
+- [Disable auto date/time](#disable-auto-datetime)
 - [Switch to Mixed mode](#switch-to-mixed-mode)
 
 ## Remove unnecessary columns
@@ -84,7 +84,7 @@ Power Query queries that are intended support data integration with other querie
 
 ## Disable auto date/time
 
-Power BI Desktop includes an option called _Auto date/time_. When enabled, it creates a hidden auto date/time table for date columns to support report authors when configuring filters, grouping and drill down for calendar time periods. The hidden tables are in fact calculated tables that will increase the size of the model. For guidance about using this option, refer to the [Auto date/time guidance in Power BI Desktop](guidance/desktop-auto-date-time.md) article.
+Power BI Desktop includes an option called _Auto date/time_. When enabled, it creates a hidden auto date/time table for date columns to support report authors when configuring filters, grouping and drill down for calendar time periods. The hidden tables are in fact calculated tables that will increase the size of the model. For guidance about using this option, refer to the [Auto date/time guidance in Power BI Desktop](../desktop-auto-date-time.md) article.
 
 ## Switch to Mixed mode
 

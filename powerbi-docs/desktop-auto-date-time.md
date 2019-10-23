@@ -39,7 +39,7 @@ The auto date/time table is loaded with full calendar years encompassing all dat
 
 If it were possible to see the rows of an auto date/time table, they may look like this:
 
-![Example of what rows of an auto date/time table may look like. Displays seven columns: Date, Day, MonthNo, Month, QuarterNo, Quarter and Year. Displays 10 rows of data describing dates from 01/01/2019 to 01/10/2019.](media/auto-date-time-hidden-table-example-rows.png)
+![Example of what rows of an auto date/time table may look like. Displays seven columns: Date, Day, MonthNo, Month, QuarterNo, Quarter and Year. Displays 10 rows of data describing dates from 01/01/2019 to 01/10/2019.](media/desktop-auto-date-time/auto-date-time-hidden-table-example-rows.png)
 
 > [!NOTE]
 > Auto date/time tables are permanently hidden, even from modelers. They cannot be seen in the **Fields** pane or the Model view diagram, and its rows cannot be seen in Data view. Also, the table and its column cannot be directly referenced by DAX expressions.
@@ -48,7 +48,7 @@ The table also defines a hierarchy, providing visuals with a drill down path thr
 
 If it were possible to see an auto date/time table in the Model view diagram, it may look like this (related columns are highlighted):
 
-![Example of what a hidden auto date/time table may look like. Displays two tables: Sales and LocalDateTime table. The tables are related based on the Sales table OrderDate column and the LocalDateTime table Date column. The LocalDateTime defines seven columns: Date, Day, Month, MonthNo, Quarter, QuarterNo, Year, and a single hierarchy. The hierarchy is named Date Hierarchy and consists of four levels: Year, Quarter, Month and Day.](media/auto-date-time-hidden-table-example-diagram.png)
+![Example of what a hidden auto date/time table may look like. Displays two tables: Sales and LocalDateTime table. The tables are related based on the Sales table OrderDate column and the LocalDateTime table Date column. The LocalDateTime defines seven columns: Date, Day, Month, MonthNo, Quarter, QuarterNo, Year, and a single hierarchy. The hierarchy is named Date Hierarchy and consists of four levels: Year, Quarter, Month and Day.](media/desktop-auto-date-time/auto-date-time-hidden-table-example-diagram.png)
 
 ## Work with auto date/time
 
@@ -60,13 +60,13 @@ The auto date/time generated hierarchy can be used to configure a visual in exac
 
 There is, however, one added capability not supported by regular hierarchies. When the auto date/time hierarchy (or a level from the hierarch) is added to a visual well, the report author can toggle between using the hierarchy or the date column. This makes sense for some visuals, when all you require is the date column, not the hierarchy and its levels. You do this by configuring the visual field (right-click the visual field, or click the down-arrow), and then use the context menu to switch between the date column or the date hierarchy.
 
-![Example of a visual field configuration for the OrderDate hierarchy. The open context menu  displays two options allowing the toggling to use the OrderDate column or the Date Hierarchy.](media/auto-date-time-configure-visuals-fields.png)
+![Example of a visual field configuration for the OrderDate hierarchy. The open context menu  displays two options allowing the toggling to use the OrderDate column or the Date Hierarchy.](media/desktop-auto-date-time/auto-date-time-configure-visuals-fields.png)
 
 Lastly, model calculations, written in DAX, can reference a date column directly, or the hidden auto date/time table columns indirectly.
 
 Formula written in Power BI Desktop can reference a date column in the usual way. The auto date/time table columns, however, must be reference by using a special extended syntax. This is achieved by first referencing the date column, and then following it by a period (.). The formula bar auto complete will then allow you to select a column from the auto date/time table.
 
-![Example of entering a DAX measure expression in the formula bar. The formula so far reads Date Count = COUNT(Sales[OrderDate]. and an auto complete list presents all seven columns from the hidden auto date/time table. These columns are: Date, Day, Month, MonthNo, Quarter, QuarterNo, and Year.](media/auto-date-time-dax-auto-complete.png)
+![Example of entering a DAX measure expression in the formula bar. The formula so far reads Date Count = COUNT(Sales[OrderDate]. and an auto complete list presents all seven columns from the hidden auto date/time table. These columns are: Date, Day, Month, MonthNo, Quarter, QuarterNo, and Year.](media/desktop-auto-date-time/auto-date-time-dax-auto-complete.png)
 
 In Power BI Desktop, a valid measure expression could read:
 
@@ -88,7 +88,7 @@ The current file option, too, can also be turned on or off at any time. When tur
 
 In Power BI Desktop select _File > Options and settings > Options_, and then select either the **Global** or **Current File** page. On either page, the option exists under the **Time intelligence** section.
 
-![Configuring Power BI Desktop options. The Data Load page from the GLOBAL group is selected. In the Time Intelligence section, the Auto date/time for new files option is checked on.](media/auto-date-time-configure-global-options.png)
+![Configuring Power BI Desktop options. The Data Load page from the GLOBAL group is selected. In the Time Intelligence section, the Auto date/time for new files option is checked on.](media/desktop-auto-date-time/auto-date-time-configure-global-options.png)
 
 ## Next steps
 
