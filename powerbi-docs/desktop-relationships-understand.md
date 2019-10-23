@@ -92,7 +92,7 @@ _Single_ means "single direction", and _Both_ means "both directions" and is com
 
 For One-to-many relationships, the cross filter direction is always from the "one" side, and optionally from the "many" side also (both). For One-to-one relationships, the cross filter direction is always from both tables. For the Many-to-many relationships, cross filter direction can be from either one of the tables, or from both tables. Notice that when the cardinality type includes a "one" side, that filters will always propagate from that side.
 
-When the cross filter direction is set to **Both** , an additional property is available to ensure that bi-directional filtering takes place when row-level security (RLS) rules are enforced. For further information about RLS, read the [Row-level security (RLS) with Power BI Desktop](desktop-rls.md) article.
+When the cross filter direction is set to **Both**, an additional property is available to ensure that bi-directional filtering takes place when row-level security (RLS) rules are enforced. For further information about RLS, read the [Row-level security (RLS) with Power BI Desktop](desktop-rls.md) article.
 
 Modifying a relationships cross filter direction, including the disabling of filter propagation, can be achieved during the evaluation of a model calculation. This is achieved by using the [CROSSFILTER](/dax/crossfilter-function) DAX function.
 
