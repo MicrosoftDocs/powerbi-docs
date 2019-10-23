@@ -3,13 +3,13 @@ title: Search and sort your content in the Power BI service
 description: documentation for searching and sorting content in Power BI My workspace
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: 'willt'
 ms.custom: 
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 10/21/2019
 ms.author: mihart
 
 LocalizationGroup: Get started
@@ -43,10 +43,10 @@ You can also sort the content by name or owner. Notice the up arrow to the right
 Not all columns can be sorted. Hover over the column headings to discover which are able to be sorted.
 
 ___________________________________________________________________
-## Navigation using the left nav bar
-The left nav bar classifies your content in ways that help you find what you need, quickly.  
+## Navigation using the navigation pane
+The navigation pane (nav pane) classifies your content in ways that help you find what you need, quickly.  
 
-![left nav bar](./media/end-user-search-sort/power-bi-navbar.png)
+![left nav pane](./media/end-user-search-sort/power-bi-navbar.png)
 
 
 - Content that is shared with you is available in **Shared with me**.
