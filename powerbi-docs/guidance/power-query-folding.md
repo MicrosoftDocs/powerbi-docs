@@ -11,6 +11,7 @@ ms.topic: conceptual
 ms.date: 09/24/2019
 ms.author: v-pemyer
 ---
+
 # The importance of query folding
 
 This article targets data modelers developing models in Power BI Desktop. It describes what query folding is, and why it is important. It also describes the data sources and transformations that may achieve query folding, and how to determine that your Power Query queries can be folded, whether fully or partially. Lastly, it provides best practice guidance on when and how to achieve query folding.
@@ -47,9 +48,11 @@ Generally, the following bulleted list describes transformations that can be que
 - Non-fuzzy merging of fold-able queries based on the same source (JOIN clause)
 - Appending fold-able queries based on the same source (UNION ALL operator)
 - Adding custom columns with _simple logic_ (SELECT column expressions). Simple logic implies uncomplicated operations, possibly including the use of M functions that have equivalent functions in the SQL data source, like mathematic, or text manipulation functions. For example, the following expressions returns the year component of the **OrderDate** column value (to return a numeric value).
+
     ```powerquery-m
     Date.Year([OrderDate])
     ```
+
 - Pivoting and unpivoting (PIVOT and UNPIVOT operators)
 
 ## Transformations that prevent query folding
@@ -59,9 +62,11 @@ Generally, the following bulleted list describes transformations that prevent qu
 - Merging queries based on different sources
 - Appending (union-ing) queries based on different sources
 - Adding custom columns with _complex logic_. Complex logic implies the use of M functions that have no equivalent functions in the data source. For example, the following expressions formats the **OrderDate** column value (to return a text value).
+
     ```powerquery-m
     Date.ToText([OrderDate], "yyyy")
     ```
+
 - Adding index columns
 - Changing a column data type
 
@@ -94,6 +99,7 @@ For a relational data source, if the step that prevents query folding could be a
 - **Use a native SQL query:** When a Power Query query retrieves data from a relational source, it is possible to use a native SQL query. The query can in fact be any valid statement, including a stored procedure execution. If the statement produces multiple result sets, only the first will be returned. Parameters can be declared in the statement, and we recommend that you use the [Value.NativeQuery](/powerquery-m/value-nativequery) M function to safely and conveniently pass parameter values. It is important to understand that the Power Query mashup engine cannot fold subsequent query steps, and so it is important to include all (or as much) transformation logic in the native query statement.
 
     There are two important considerations to bear in mind when using native SQL queries:
+
     - For a DirectQuery model table, the query must be a SELECT statement, and it cannot use Common Table Expressions (CTEs) or a stored procedure
     - Incremental refresh cannot leverage a native SQL query, and so it would force the Power Query mashup engine to retrieve all source rows, and then apply filters to determine incremental changes
 
