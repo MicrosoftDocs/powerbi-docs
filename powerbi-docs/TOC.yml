@@ -1161,6 +1161,8 @@
     href: guidance/import-modeling-data-reduction.md
   - name: "DIVIDE function vs divide operator (/)"
     href: guidance/dax-divide-function-operator.md
+  - name: "The importance of query folding"
+    href: guidance/power-query-folding.md
   - name: "Appropriate use of error functions"
     href: guidance/dax-error-functions.md
   - name: "Best practices for dataflows"
