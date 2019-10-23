@@ -173,7 +173,7 @@ We plan to have the reports support the same major scenarios in the service as m
 
 ### Is a migration tool planned so SSRS customers can move their existing reports and assets to Power BI?
 
-This is now a project on Github that supports the ability to migrate content for SQL Server Reporting Services to Power BI.  You can view more details and download the tool here - https://github.com/microsoft/RdlMigration
+A project on GitHub now supports migrating content from SQL Server Reporting Services to Power BI.  View details and download the tool here: [https://github.com/microsoft/RdlMigration](https://github.com/microsoft/RdlMigration)
 
 ### Is there a report viewer control for paginated reports in the Power BI service?
 
