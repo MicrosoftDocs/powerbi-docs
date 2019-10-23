@@ -56,7 +56,7 @@ However, if you proceed using the service principal, you need to proceed with re
 
 ## Set up your Power BI environment
 
-### Create an workspace
+### Create a workspace
 
 If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within an workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../service-create-workspaces.md) or the [new workspaces](../service-create-the-new-workspaces.md). If you're using a *master* account, then it doesn't matter which type of workspaces you use. However, if you use *[service principal](embed-service-principal.md)* to sign into your application, then you're required to you use the new workspaces. In either scenario, both the *master* account or *service principal* must be an admin of the workspaces involved with your application.
 
