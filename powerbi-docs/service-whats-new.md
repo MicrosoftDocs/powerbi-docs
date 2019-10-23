@@ -61,7 +61,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 ### May 2019
 * [Custom navigation](service-create-distribute-apps.md) for Power BI Apps.
 * Additional attachments types (PPTX, XLSX, DOCX, CSV, XML) available for e-mail subscriptions within paginated reports.
-* [Commenting](end-user-comment.md) for Power BI reports in the service.
+* [Commenting](https://powerbi.microsoft.com/en-us/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) for Power BI reports in the service.
 
 ### April 2019
 * General availability of Power BI [dataflows](service-dataflows-overview.md).
