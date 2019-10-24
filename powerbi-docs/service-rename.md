@@ -53,7 +53,7 @@ This article teaches you how to rename a dashboard, report, report page, workboo
    
      ![Rename pane](media/service-rename/power-bi-rename.png)
 
-## Rename an workspace
+## Rename a workspace
 Anyone with Admin permissions can rename an workspace.
 
 1. Start in the workspace you'd like to rename.
