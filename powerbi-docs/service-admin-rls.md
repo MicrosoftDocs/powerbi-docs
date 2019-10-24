@@ -86,7 +86,7 @@ To return to normal viewing, select **Back to Row-Level Security**.
 
 ## Using RLS with workspaces in Power BI
 
-If you publish your Power BI Desktop report to an workspace within the Power BI service, the roles will be applied to read-only members. You will need to indicate that members can only view Power BI content within the workspace settings.
+If you publish your Power BI Desktop report to a workspace within the Power BI service, the roles will be applied to read-only members. You will need to indicate that members can only view Power BI content within the workspace settings.
 
 > [!WARNING]
 > If you have configured the workspace so that members have edit permissions, the RLS roles will not be applied to them. Users will be able to see all of the data.
