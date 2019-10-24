@@ -15,6 +15,9 @@ ms.author: mihart
 LocalizationGroup: Dashboards
 ---
 # Featured dashboards in the Power BI service
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Many of us have one dashboard that we visit more than any others. It might be the dashboard we use to run our business. Or, it might be a dashboard that contains an aggregation of tiles from many different dashboards and reports.
 
 ## Create a featured dashboard
