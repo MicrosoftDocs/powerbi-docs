@@ -53,13 +53,13 @@ You need to proceed with registering a **server-side web application** app. You 
 
 ## Set up your Power BI environment
 
-### Create an workspace
+### Create a workspace
 
-If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within an workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../service-create-workspaces.md) or the [new workspaces](../service-create-the-new-workspaces.md).
+If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within a workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../service-create-workspaces.md) or the [new workspaces](../service-create-the-new-workspaces.md).
 
 ### Create and publish your Power BI reports
 
-You can create your reports and datasets by using Power BI Desktop. Then you can publish those reports to an workspace. The end user publishing the reports needs to have a Power BI Pro license to publish to an workspace.
+You can create your reports and datasets by using Power BI Desktop. Then you can publish those reports to a workspace. The end user publishing the reports needs to have a Power BI Pro license to publish to a workspace.
 
 1. Download the sample [Demo](https://github.com/Microsoft/powerbi-desktop-samples) from GitHub.
 
@@ -79,7 +79,7 @@ You can create your reports and datasets by using Power BI Desktop. Then you can
    
 ### Create and publish your paginated reports
 
-You can create your paginated reports by using [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Then you can [upload the report](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an workspace assigned to at least a P1 capacity. The end-user uploading the report must have a Power BI Pro license to publish to an workspace.
+You can create your paginated reports by using [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Then you can [upload the report](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to a workspace assigned to at least a P1 capacity. The end-user uploading the report must have a Power BI Pro license to publish to a workspace.
    
 ## Embed your content by using the sample application
 
@@ -396,7 +396,7 @@ The following table lists the Power BI Premium SKUs available in [Microsoft Offi
 But you can't access content with a free Power BI license when you're using Powerbi.com or Power BI mobile.
 > - When you're trying to embed with Microsoft Office apps by using Powerbi.com or Power BI mobile, you can access content with a free Power BI license.
 
-### Assign an workspace to a dedicated capacity
+### Assign a workspace to a dedicated capacity
 
 After you create a dedicated capacity, you can assign your workspace to that dedicated capacity. To complete this process, follow these steps:
 
