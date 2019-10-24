@@ -48,7 +48,7 @@ Your watch app will now sync your dashboard with data from the Power BI service.
 You can also refresh a dashboard that's on your Apple Watch from your iPhone.
 
 1. In Power BI on your iPhone, open the dashboard you want to sync with the Apple Watch. 
-2. Select the **More options** (...) > **Sync with Watch**.
+2. Select **More options** (...) > **Sync with Watch**.
 
 Power BI shows an indicator that the dashboard is synced with the watch.
 

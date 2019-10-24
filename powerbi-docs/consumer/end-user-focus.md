@@ -96,7 +96,7 @@ There are two ways to open focus mode; one way for dashboard tiles and another w
 
 1. Open a dashboard in Power BI service.
 
-2. Hover over a dashboard tile or report visual, select the **More options** (...) and choose **Open in focus mode**.
+2. Hover over a dashboard tile or report visual, select **More options** (...) and choose **Open in focus mode**.
 
     ![ellipsis menu for tile](media/end-user-focus/power-bi-dashboard-focus.png).
 

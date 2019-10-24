@@ -114,7 +114,7 @@ Visuals are made up of datapoints, and by hovering over a datapoint, you can vie
 ### Favorite a dashboard
 When you make content a *favorite*,  you'll be able to access it from the nav bar. The  nav bar is visible from just about every area of Power BI. Favorites are typically the dashboards, report pages, and apps that you visit most often.
 
-From the upper right corner of the Power BI service, select **Favorite** or, if not visible, select the **More options** (...) and select **Favorite** from the dropdown. 
+From the upper right corner of the Power BI service, select **Favorite** or, if not visible, select **More options** (...) and select **Favorite** from the dropdown. 
    
 ![Favorite icon](./media/end-user-reading-view/power-bi-favorites.png)
 
@@ -164,7 +164,7 @@ Learn more about [focus mode and full screen mode](end-user-focus.md)
 ### Sort a visualization
 Visuals on a report page can be sorted and saved with your changes applied. 
 
-Hover over a visual to make it active, and select the **More options** (...) to open sorting options.
+Hover over a visual to make it active, and select **More options** (...) to open sorting options.
 
 ![sort a chart](media/end-user-reading-view/sort.gif) 
 
@@ -173,7 +173,7 @@ Learn more about [sorting visuals](end-user-search-sort.md)
 ### Show the data used to create a visualization
 A Power BI visualization is constructed using data from underlying datasets. If you're interested in seeing behind-the-scenes, Power BI lets you *display* the data that is being used to create the visual. When you select **Show Data**, Power BI displays the data below (or next to) the visualization.
 
-With a visual active, select the **More options** (...) and choose **Show data**.
+With a visual active, select **More options** (...) and choose **Show data**.
    
    ![select Show Data](./media/end-user-show-data/power-bi-explore-show-data.png)
 

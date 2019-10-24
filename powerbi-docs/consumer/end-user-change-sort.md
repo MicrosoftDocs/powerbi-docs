@@ -25,7 +25,7 @@ values of each category. For example, this chart is sorted by the category **sto
 
 It's easy to change the sort from a category (store name) to a value (sales per square feet) instead.
 
-1. Select the **More options** (...) and choose **Sort by > Sales Per Sq Ft**.
+1. Select **More options** (...) and choose **Sort by > Sales Per Sq Ft**.
 2. If necessary, select the ellipsis again and choose **Sort descending**.
 
    ![video showing selecting sort by and then ascending, descending](media/end-user-change-sort/sort.gif)

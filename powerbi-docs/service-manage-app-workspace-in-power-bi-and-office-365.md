@@ -36,7 +36,7 @@ You need a [Power BI Pro license](service-features-license-type.md) to be an adm
 
 ## Edit your app workspace in Power BI
 
-1. In the Power BI service, select the arrow next to **Workspaces** > select the **More options** (...) next to your workspace name > **Edit this workspace**.
+1. In the Power BI service, select the arrow next to **Workspaces** > select **More options** (...) next to your workspace name > **Edit this workspace**.
 
    ![Edit workspaces in Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
 
@@ -55,7 +55,7 @@ You can also edit aspects of an app workspace directly in Outlook for Office 365
 
 ### Edit the members of the app workspace group
 
-1. In the Power BI service, select the arrow next to **Workspaces** > select the **More options** (...) next to your workspace name > **Members**.
+1. In the Power BI service, select the arrow next to **Workspaces** > select **More options** (...) next to your workspace name > **Members**.
 
    ![Edit workspaces in Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis-members.png)
 

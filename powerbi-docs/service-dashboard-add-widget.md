@@ -228,7 +228,7 @@ You can paste or type in any HTML content, as a tile, to your report or dashboar
 ## Edit a tile
 To make changes to an existing tile:
 
-1. Hover over the top-right corner of the tile and select the **More options** (...).
+1. Hover over the top-right corner of the tile and select **More options** (...).
    
     ![select tile ellipses](media/service-dashboard-add-widget/pbi_ellipses.png)
 2. Select **Edit details** to display the **Tile details** window and make changes.

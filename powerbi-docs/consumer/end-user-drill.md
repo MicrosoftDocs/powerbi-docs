@@ -122,7 +122,7 @@ Having a treemap that shows us only a postal code isn't informative.  So let's *
 ## Show the data as you drill
 Use **Show data** to get a look behind the scenes. Each time you drill or expand, **Show data** displays the data being used to build the visual. This may help you understand how hierarchies, drill, and expand work together to build visuals. 
 
-In the upper-right corner, select the **More options** (...), and then select **Show Data**. 
+In the upper-right corner, select **More options** (...), and then select **Show Data**. 
 
 ![Screenshot of the ellipses menu.](./media/end-user-drill/power-bi-ellipses.png)
 

@@ -40,7 +40,7 @@ You can mark KPIs and reports as favorites on a Power BI Report Server or Report
   ![Favorites page](./media/mobile-apps-favorites/power-bi-ipad-favorites.png)
 
 ## Make an app a favorite
-1. In the list of apps in the mobile app, tap the **More options** (...) next to the app > **Favorite**.
+1. In the list of apps in the mobile app, tap **More options** (...) next to the app > **Favorite**.
    
     ![App favorite menu](./media/mobile-apps-favorites/power-bi-android-favorite-app-ellipsis.png)
    

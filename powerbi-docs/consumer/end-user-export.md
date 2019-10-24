@@ -26,7 +26,7 @@ If you'd like to see the data that is used to create a visual, [you can display 
 
     ![App dashboard](media/end-user-export/power-bi-dashboards.png)
 
-2. Hover over a visual to reveal the **More options** (...) and click to display the action menu.
+2. Hover over a visual to reveal **More options** (...) and click to display the action menu.
 
     ![Menu that appears when select ellipses](media/end-user-export/power-bi-action-menu.png)
 

@@ -143,7 +143,7 @@ Now that you have imported data from the Facebook page, you can quickly and easi
    
    ![Bar chart](media/desktop-tutorial-facebook-analytics/barchart1.png)
    
-4. Select the **More options** (...) in the upper right of the visualization, and then select **Sort by Number of comments** to sort the table by descending number of comments. 
+4. Select **More options** (...) in the upper right of the visualization, and then select **Sort by Number of comments** to sort the table by descending number of comments. 
    
    ![Sort by number of comments](media/desktop-tutorial-facebook-analytics/barchart2.png)
    

@@ -51,7 +51,7 @@ On datasets, you see the last refresh time, and if a dataset is certified or pro
  
 If a report in the workspace is built on a dataset in another workspace, you see the source workspace name on the dataset card. Select the source workspace name to go to that workspace.
  
-- For any artifact, select the **More options** (...) to view the options menu. It features all the same actions available in list view.
+- For any artifact, select **More options** (...) to view the options menu. It features all the same actions available in list view.
   
 To see more metadata on datasets, select the dataset card itself. Additional information on the dataset is displayed in a side pane.
 

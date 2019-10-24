@@ -26,7 +26,7 @@ Creating content packs is different from sharing dashboards or collaborating on 
 ## Create a copy of an organizational content pack
 Create your own copy of the content pack, not visible to others.
 
-1. Select the **More options** (...) next to the content pack dashboard > Make a copy.
+1. Select **More options** (...) next to the content pack dashboard > Make a copy.
 
     ![](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
 2. Select **Save**.  

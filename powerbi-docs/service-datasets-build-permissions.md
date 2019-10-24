@@ -24,7 +24,7 @@ You give Build permission for a dataset in a few different ways:
 
 - Members of a workspace with at least a Contributor role automatically have Build permission for datasets in that workspace, and permission to copy a report.
  
-- Members of the workspace where the dataset resides can assign the permission to specific users or security groups in the Permission center. If you're a member of the workspace, select the **More options** (...) next to a dataset > **Manage Permissions**.
+- Members of the workspace where the dataset resides can assign the permission to specific users or security groups in the Permission center. If you're a member of the workspace, select **More options** (...) next to a dataset > **Manage Permissions**.
 
     ![Select the ellipsis](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
@@ -45,11 +45,11 @@ You can remove a person's Build permission for a dataset. If you do, they can st
 At some point, you may need to remove Build permission for some users of a shared dataset. 
 
 1. In a workspace, go to the **Datasets** list page. 
-1. Select the **More options** (...) next to the dataset > **Manage permission**.
+1. Select **More options** (...) next to the dataset > **Manage permission**.
 
     ![Manage permissions](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Select the **More options** (...) next to a name > **Remove build**.
+1. Select **More options** (...) next to a name > **Remove build**.
 
     ![Remove Build permission](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 
@@ -75,11 +75,11 @@ Say you've distributed an app from a workspace to a group of people. Later, you 
 1. Select **Update**.
 
 1. In the workspace, go to the **Datasets** list page. 
-1. Select the **More options** (...) next to the dataset > **Manage permission**.
+1. Select **More options** (...) next to the dataset > **Manage permission**.
 
     ![Manage permissions](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Select the **More options** (...) next to their name > **Remove build**.
+1. Select **More options** (...) next to their name > **Remove build**.
 
     ![Remove Build permission](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 

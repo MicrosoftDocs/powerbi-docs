@@ -23,8 +23,8 @@ Colleagues you've shared the dashboard with can [scan the QR code for access to 
 
 ## Create a QR code for a tile
 1. Open a dashboard in the Power BI service.
-2. Select the **More options** (...) in the top-right corner of the tile and select **Focus mode** ![](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
-3. Select the **More options** (...) in the top-right corner and select **Generate QR code**. 
+2. Select **More options** (...) in the top-right corner of the tile and select **Focus mode** ![](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
+3. Select **More options** (...) in the top-right corner and select **Generate QR code**. 
    
     ![](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
 4. A dialog box with the QR code appears. 

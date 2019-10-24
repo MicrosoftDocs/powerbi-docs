@@ -24,7 +24,7 @@ Dashboards are created (and copied) using Power BI service and can be viewed in 
 To make a copy of a dashboard, you must be the dashboard *creator*. Dashboards that have been shared with you as an app cannot be duplicated.
 
 1. Open the dashboard.
-2. From the top-right corner, select the **More options** (...) and choose **Duplicate dashboard**.
+2. From the top-right corner, select **More options** (...) and choose **Duplicate dashboard**.
    
    ![ellipses menu](media/service-dashboard-copy/power-bi-dulicate.png)
 3. Give the dashboard a name and select **Duplicate**. 
