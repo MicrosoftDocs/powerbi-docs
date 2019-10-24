@@ -85,7 +85,7 @@ You can take advantage of workspaces to provide better isolation if your applica
 > [!IMPORTANT]
 > You cannot use a personal workspace to take advantage of embedding to non-Power BI users.
 
-You will need a user that has a Pro license in order to create an workspace within Power BI. The Power BI user that creates the workspace will be an admin of that workspace by default.
+You will need a user that has a Pro license in order to create a workspace within Power BI. The Power BI user that creates the workspace will be an admin of that workspace by default.
 
 > [!NOTE]
 > The application *master* account needs to be an admin of the workspace.
@@ -158,7 +158,7 @@ It is possible, using some workarounds, to migrate the push api report from PaaS
 
 ## Create and upload new reports
 
-In addition to the content you migrated from the Power BI Workspace Collection, you can create your reports and datasets using Power BI Desktop and then publish those reports to an workspace. The end user publishing the reports need to have a Power BI Pro license in order to publish to an workspace.
+In addition to the content you migrated from the Power BI Workspace Collection, you can create your reports and datasets using Power BI Desktop and then publish those reports to a workspace. The end user publishing the reports need to have a Power BI Pro license in order to publish to a workspace.
 
 ## Rebuild your application
 
