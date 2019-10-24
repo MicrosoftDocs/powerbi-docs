@@ -55,7 +55,7 @@ To enable the use of Microsoft Information Protection data sensitivity labels in
 
     With either of these options you can exclude specific subsets of users or security groups. When sensitivity labels are enabled for the entire organization, exceptions are typically security groups. When sensitivity labels are enabled only for specific users or security groups, exceptions are typically specific users. This approach makes it possible to prevent certain users from applying sensitivity labels in Power BI, even if they belong to a group that has permissions to do so.
 
-    5.	Click **Apply** when you're done specifying who can apply or change sensitivity labels.
+    3. Click **Apply** when you're done specifying who can apply or change sensitivity labels.
 
     > [!IMPORTANT]
     > Users will be able to apply sensitivity labels to their content only *after* you click **Apply**.

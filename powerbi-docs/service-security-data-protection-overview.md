@@ -51,12 +51,10 @@ When you apply a sensitivity label to a Power BI dashboard, report, dataset or d
 
 ## Sensitivity label example 
 
-Here's a quick example of how a sensitivity label in Power Bi can work.
+Here's a quick example of how a sensitivity label in Power BI can work.
 
 1. In the Power BI service, a **Highly Confidential - Internal Only** sensitivity label is applied to a report.
 
-
-   ![Using sensitivity labels example](media/service-security-using-microsoft-cloud-app-security-controls/sensitivity-labels-overview-01.png)
 
 2. When data is exported to an Excel file from this report, the sensitivity label and protection are applied to the exported Excel file.
 

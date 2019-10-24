@@ -100,30 +100,28 @@ From the list of options in the drop-down, select **Session policy**.
 
 In the window that appears, create the session policy. The numbered steps describe settings for the following image.
 
-1. In the **Policy template** drop-down, choose *No template*.
-2. For the **Policy name** box, provide a relevant name for your session policy.
-3. For **Session control type**, select *Control file downloaded (with DLP)*.
+  1. In the **Policy template** drop-down, choose *No template*.
+  2. For the **Policy name** box, provide a relevant name for your session policy.
+  3. For **Session control type**, select *Control file downloaded (with DLP)*.
 
-For the **Activity source** section, choose relevant blocking policies. We suggest blocking unmanaged and non-compliant devices. Choose to block downloads when the session is in Power BI.
+      For the **Activity source** section, choose relevant blocking policies. We suggest blocking unmanaged and non-compliant devices. Choose to block downloads when the session is in Power BI.
 
-![Create the session policy](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-05.png)
+        ![Create the session policy](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-05.png)
 
+        When you scroll down you see more options. The following image shows those options, with additional examples. 
 
+  4. Choose *Confidentiality label* as *highly confidential* or whatever best fits your organization.
+  5. Change the **Inspection method** to *none*.
+  6. Choose the **Block** option that fits meets your needs.
+  7. Make sure you create an alert for such an action.
 
-When you scroll down you see more options. The following image shows those options, with additional examples. 
+        ![Select session policy settings](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-06.png)
 
-4. Choose *Confidentiality label* as *highly confidential* or whatever best fits your organization.
-5. Change the **Inspection method** to *none*.
-6. Choose the **Block** option that fits meets your needs.
-7. Make sure you create an alert for such an action.
+        
 
-![Select session policy settings](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-06.png)
+  8. Finally make sure you select the **Create** button to create the session policy. Select the **Create** button to create the session policy.
 
-Finally make sure you select the **Create** button to create the session policy.
-
-8. Select the **Create** button to create the session policy.
-
-![Create the session policy](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-07.png)
+        ![Create the session policy](media/service-security-using-microsoft-cloud-app-security-controls/cloud-app-security-controls-07.png)
 
 Ensure you do not create a **Content Inspection** policy on the Power BI Excel files. This is a known limitation of this *preview* release.
 
