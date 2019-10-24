@@ -1047,6 +1047,8 @@
         href: https://go.microsoft.com/fwlink/?linkid=849021
       - name: "Access shared datasets as OData feeds"
         href: report-server/access-dataset-odata.md
+      - name: "Change data source connection strings with PowerShell"
+        href: report-server/connect-data-source-apis.md
       - name: "Configure scheduled refresh"
         href: report-server/configure-scheduled-refresh.md
       - name: "Add comments to a report"
