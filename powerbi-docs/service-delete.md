@@ -77,15 +77,15 @@ If a dataset is part of one or more [organizational content packs](service-organ
 
    ![Delete dashboard dialog](media/service-delete/power-bi-delete-dataset-confirm.png)
 
-## Delete an workspace
+## Delete a workspace
 > [!WARNING]
-> When you create an workspace, you create an Office 365 group. And when you delete an workspace you delete that Office365 group. What this means is that the group will also be deleted from other O365 products like SharePoint and Microsoft Teams.
+> When you create a workspace, you create an Office 365 group. And when you delete a workspace you delete that Office365 group. What this means is that the group will also be deleted from other O365 products like SharePoint and Microsoft Teams.
 >
 >
 
-As the workspace author, you can delete it. When you delete it, the associated app is also deleted for all group members and removed from your AppSource if you had published the app to your entire organization. Deleting an workspace is different from leaving an workspace.
+As the workspace author, you can delete it. When you delete it, the associated app is also deleted for all group members and removed from your AppSource if you had published the app to your entire organization. Deleting a workspace is different from leaving a workspace.
 
-### To delete an workspace - if you are an Admin
+### To delete a workspace - if you are an Admin
 1. From the left nav, select **Workspaces**
 
     ![workspaces](media/service-delete/power-bi-delete-workspace.png)
@@ -96,8 +96,8 @@ As the workspace author, you can delete it. When you delete it, the associated a
 
     ![delete workspace](media/service-delete/power-bi-delete-workspace2.png)
 
-### To remove an workspace from your list
-If you no longer want to be a member of an workspace, you can ***leave*** it and it will be removed from your list. Leaving a workspace leaves it in place for all other workspace members.  
+### To remove a workspace from your list
+If you no longer want to be a member of a workspace, you can ***leave*** it and it will be removed from your list. Leaving a workspace leaves it in place for all other workspace members.  
 
 > [!IMPORTANT]
 > If you are the only Admin for the workspace, Power BI will not allow you to leave.
