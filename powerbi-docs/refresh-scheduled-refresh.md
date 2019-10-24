@@ -26,7 +26,7 @@ This will describe the options available for both the [On-premises data gateway 
 
 To get to the **Scheduled refresh** screen, you can do the following.
 
-1. Select the **More options** (...) next to a dataset listed under **Datasets**.
+1. Select **More options** (...) next to a dataset listed under **Datasets**.
 2. Select **Schedule Refresh**.
 
     ![Schedule Refresh](media/refresh-scheduled-refresh/dataset-menu.png)
