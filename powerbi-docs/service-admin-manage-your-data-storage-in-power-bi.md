@@ -21,7 +21,7 @@ Users and workspaces have their own data capacities:
 
 * All users have a maximum 10 GB of data storage.
 * Users with a Power BI Pro license can create workspaces, with a maximum 10 GB of data storage each.
-* An workspace in a Premium capacity doesn't count toward the storage of a Power BI Pro user.
+* A workspace in a Premium capacity doesn't count toward the storage of a Power BI Pro user.
 
 At the tenant level, total usage can’t exceed 10 GB per Pro user across all Pro users and workspaces in the tenant.
 
@@ -61,7 +61,7 @@ Keep in mind that you or someone else may have reports and dashboards based on a
 ## Manage your workspace
 1. Select the arrow next to **Workspaces** \> select the name of the workspace.
    
-    ![Select an workspace](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
+    ![Select a workspace](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
 2. Select the gear icon ![gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in the upper-right corner \> **Manage group storage**.
    
     The top bar shows how much of the group’s storage limit is used.
@@ -75,7 +75,7 @@ Keep in mind that you or someone else may have reports and dashboards based on a
 3. To delete a dataset or report, select the trash can icon ![trash can icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
    
    > [!NOTE]
-   > Any member, with edit permissions, of an workspace has permissions to delete datasets and reports from the workspace.
+   > Any member, with edit permissions, of a workspace has permissions to delete datasets and reports from the workspace.
    > 
    > 
 
