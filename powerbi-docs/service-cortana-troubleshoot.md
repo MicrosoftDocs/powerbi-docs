@@ -35,7 +35,7 @@ If you're having problems getting Cortana to integrate with Power BI, you've com
    * "show sales" will *not* return a Power BI result.   
    * "show me sales fy16", "sales fy16", "show sales fy16", and "show me sales f" *will* return a Power BI result.    
    * Adding the words "powerbi" counts as one of the 2 required words, so "powerbi sales" *will* return a Power BI result.
-5. Do you have access or edit permissions to any reports or dashboards? For reports, ensure the content you are attempting to search has an [answer card](service-cortana-answer-cards.md).  For dashboards, ensure the content you are attempting to search is in  **Shared with me**, an workspace, or **My workspace**. [Use the troubleshooting tool](#try-the-cortana-troubleshooting-tool) for help identifying the problem.
+5. Do you have access or edit permissions to any reports or dashboards? For reports, ensure the content you are attempting to search has an [answer card](service-cortana-answer-cards.md).  For dashboards, ensure the content you are attempting to search is in  **Shared with me**, a workspace, or **My workspace**. [Use the troubleshooting tool](#try-the-cortana-troubleshooting-tool) for help identifying the problem.
 6. Are you using a mobile device?  Currently we only support Power BI and Cortana integration on Windows mobile devices.
 7. Is Cortana configured for English?  The current Cortana-Power BI integration only supports English. Open Cortana and select the cog icon to display Settings. Scroll down to **Cortana language** and ensure it's set to one of the English options.
 
