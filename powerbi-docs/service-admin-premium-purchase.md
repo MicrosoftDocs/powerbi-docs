@@ -62,7 +62,7 @@ Now that you have a capacity, you can add more as your needs grow. You can use a
 
 1. Find the Power BI Premium item you want to purchase more of under **Other plans**.
 
-1. Hover over the ****More options** (...)** and then select **Change license quantity**.
+1. Hover over the **More options** (...) and then select **Change license quantity**.
 
     ![Change license quantity](media/service-admin-premium-purchase/premium-purchase-more.png)
 
