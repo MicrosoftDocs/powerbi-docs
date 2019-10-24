@@ -36,7 +36,7 @@ To create a template app you can distribute to other Power BI tenants, you need 
 
     ![Create workspace](media/service-template-apps-create/power-bi-new-workspace.png)
 
-2. In **Create an workspace**, select **Upgrade to new**.
+2. In **Create a workspace**, select **Upgrade to new**.
 
     ![Try new workspaces](media/service-template-apps-create/power-bi-upgrade-new.png)
 
