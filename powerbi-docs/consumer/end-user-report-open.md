@@ -13,6 +13,9 @@ ms.author: mihart
 #This article teaches consumers how to find and open a report whether it has been shared directly or shared via an app, so that the consumer can view and interact with the report to make business decisions.
 ---
 # View a report in the Power BI service for *consumers*
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 A report is one or more pages of visuals. Reports are created by Power BI *designers* and [shared with *consumers* directly](end-user-shared-with-me.md) or as part of an [app](end-user-apps.md). 
 
 There are many different ways to open a report and we'll show you two of them: open from Home and open from a dashboard. 
@@ -100,6 +103,7 @@ As you get more comfortable navigating the Power BI service, you'll figure out w
 - Using [View related](end-user-related.md)    
 - In an email, when someone [shares with you](../service-share-reports.md) or you [set an alert](end-user-alerts.md)    
 - From your [Notification center](end-user-notification-center.md)    
+- From a workspace
 - and more
 
 ## Next steps

@@ -8,13 +8,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 10/21/2019
 ms.author: mihart
 #customer intent: As a PBI consumer, I want to learn how to sort my report visuals so that they look the way I like and are easier to interpret. 
 LocalizationGroup: Reports
 ---
 
 # Change how a chart is sorted in a Power BI report
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 In a Power BI report, you can sort most visualizations alphabetically by the names of the categories in the chart, or by the numeric
 values of each category. For example, this chart is sorted by the category **store name**.
 
@@ -35,15 +38,15 @@ Power BI reports retain the filters, slicers, sorting, and other data view chang
 
 ![persistent sorting](media/end-user-change-sort/power-bi-reset.png)
 
-If, however, the **Reset to default** button is greyed out, that means the report designer has disabled the ability to save (persist) your changes.
+If however, the **Reset to default** button is greyed out, that means the report designer has disabled the ability to save (persist) your changes.
 
 <a name="other"></a>
 ## Sorting using other criteria
 Sometimes, you want to sort your visual using a different field or other criteria.  For example, you might want
 to sort by month (and not in alphabetical order) or you might
-want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  
+want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  The report designer will be able to update the dataset to enable this type of sorting. Contact information for the designer can be found by selecting the report name from the top menu bar.
 
-In some cases, you may be able to sort the visual the way you'd like, for example, by month.  But if not, it may be because the dataset behind the report needs some tweaking. Ask the report designer to update the dataset.
+![Dropdown showing contact information](media/end-user-change-sort/power-bi-contact.png)
 
 ## Next steps
 More about [Visualizations in Power BI reports](end-user-visualizations.md).
