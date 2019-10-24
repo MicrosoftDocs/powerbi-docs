@@ -214,7 +214,7 @@ Power BI's integration with Azure AD B2B gives Contoso a seamless, hassle-free w
 
     The first task for Contoso is to create their BI portal in Power BI. Contoso's BI portal will consist of a collection of purpose-built dashboards and reports that will be made available to many internal and guest users. The recommended way for doing this in Power BI is to build a Power BI app. Learn more about [apps in Power BI](https://powerbi.microsoft.com/blog/distribute-to-large-audiences-with-power-bi-apps/).
 
-- Contoso's BI team creates an workspace in Power BI
+- Contoso's BI team creates a workspace in Power BI
 
     ![workspace](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_12.png)
     
@@ -229,7 +229,7 @@ Power BI's integration with Azure AD B2B gives Contoso a seamless, hassle-free w
     ![Create content inside the workspace](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_14.png)
 
 
-    Now that the content is created in an workspace, Contoso is ready to invite guest users in partner organizations to consume this content.
+    Now that the content is created in a workspace, Contoso is ready to invite guest users in partner organizations to consume this content.
 
 2. Invite Guest Users
 
