@@ -62,7 +62,7 @@ If you're embedding reports, dashboards, or tiles for your customers, then you h
 
 ### Create and publish your reports
 
-You can create your reports and datasets using Power BI Desktop and then publish those reports to an workspace. There are two ways to accomplish this task: As an end user, you can publish reports to a traditional workspace with a master account (Power BI Pro license). If you're using service principal, you can publish reports to the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
+You can create your reports and datasets using Power BI Desktop and then publish those reports to a workspace. There are two ways to accomplish this task: As an end user, you can publish reports to a traditional workspace with a master account (Power BI Pro license). If you're using service principal, you can publish reports to the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
 
 The below steps walk through how to publish your PBIX report to your Power BI workspace.
 
@@ -367,7 +367,7 @@ Using embed tokens with PRO licenses are intended for development testing, so th
 
 For more information, see [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper).
 
-### Assign an workspace to a dedicated capacity
+### Assign a workspace to a dedicated capacity
 
 Once you create a dedicated capacity, you can assign your workspace to that dedicated capacity.
 
