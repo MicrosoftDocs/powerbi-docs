@@ -29,10 +29,11 @@ When you open the Power BI service in a browser, you start at your Home screen. 
 3. Power BI home button
 4. Icon buttons, including settings, help, and feedback
 5. Search box
-6. Tiles from a favorite dashboard
-7. Favorite and frequent dashboards and reports
+6. Favorite and frequent dashboards, reports, and workspaces
+7. Recent dashboards, reports, and workspaces
+8. Your workspaces
 
-Your end users for your reports and dashboards have the same start experience in the Power BI service in a browser.
+You and the end users for your reports and dashboards have the same start experience in the Power BI service in a browser.
 
 We'll dig into these features later, but first let's review some Power BI concepts. Or you might want to watch this video first.  In the video, Will reviews the basic concepts and gives a tour of the Power BI service.
 
@@ -191,8 +192,8 @@ Q&A looks for an answer in the dataset(s) connected to the dashboard.  A connect
 
 As soon as you start to type your question, Q&A takes you to the Q&A page. As you type, Q&A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard. For more information, see [Q&A in Power BI](power-bi-q-and-a.md).
 
-### 4. **Icon buttons**
-The icons in the upper right corner are your resource for settings, notifications, downloads, getting help, and providing feedback to the Power BI team. Select the double arrow to open the dashboard in **Full screen** mode.  
+### 4. **Icons in the black header bar**
+The icons in the upper right corner are your resource for settings, notifications, downloads, getting help, turning the **New look** on or off, and providing feedback to the Power BI team.  
 
 ![icon buttons](media/service-basic-concepts/power-bi-icons.png)
 
@@ -213,8 +214,8 @@ Selecting **Power BI** brings you back to your Power BI home.
 
    !["Power BI" in the service](media/service-basic-concepts/version-new.png)
 
-### 8. **Labeled icon buttons**
-This area of the screen contains additional options for interacting with the content (in this case, with the dashboard).  Besides the labeled icons you can see, selecting the ellipses reveals options for duplicating, printing, refreshing the dashboard and more.
+### 8. **Labeled icons in the gray menu bar**
+This area of the screen contains additional options for interacting with the content (in this case, with the dashboard).  Besides the labeled icons you can see, selecting the **More options (…)** reveals options for duplicating, printing, refreshing the dashboard and more.
 
    ![Labeled icon buttons](media/service-basic-concepts/power-bi-labeled-icons.png)
 

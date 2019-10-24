@@ -14,6 +14,9 @@ ms.author: mihart
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PowerPoint
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 With Power BI, you can publish your report to Microsoft PowerPoint and easily create a slide deck based on your Power BI report. When you export to PowerPoint, the following occurs:
 
 * Each page in the Power BI report becomes an individual slide in PowerPoint.
