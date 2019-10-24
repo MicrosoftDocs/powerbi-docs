@@ -41,11 +41,8 @@ To write lines, text, or stamps on a snapshot copy of a tile, report, or visual 
 **answer card, answer page**
 See Cortana answer card.
 
-**app, apps**
+**app, apps** 
 
- 
-**workspace**
-All workspaces in Power BI except for My workspace are now workspaces. The contents can be bundled into a Power BI app. Those stored in Premium capacity can be shared with Free users. Personal workspaces (under My workspace) can be hosted in Premium capacity.  
 
 **AppSource**
 Centralized online repository where you can browse and discover dashboards, reports, datasets, and apps to download.
@@ -423,7 +420,7 @@ Name for the visualization templates that ship in the shared report canvas for P
 An Excel workbook to be used as a data source. Workbooks can contain a data model with one or more tables of data loaded into it by using linked tables, Power Query, or Power Pivot.
 
 **workspace**
-Containers for dashboards, reports, and datasets in Power BI. See workspace in this term collection.
+All workspaces in Power BI except for My workspace are now workspaces. The contents can be bundled into a Power BI app. Those stored in Premium capacity can be shared with Free users. Personal workspaces (under My workspace) can be hosted in Premium capacity.
 
 ## X
 **x-axis**  
