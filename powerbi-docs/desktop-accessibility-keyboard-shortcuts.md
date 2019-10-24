@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/25/2019
+ms.date: 10/28/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -119,7 +119,7 @@ The collection of articles for Power BI accessibility are the following:
 * [Creating accessible Power BI reports](desktop-accessibility-creating-reports.md) 
 * [Consuming reports in Power BI with accessibility tools](desktop-accessibility-consuming-tools.md)
 * [Creating Power BI reports with accessibility tools](desktop-accessibility-creating-tools.md)
-* [Report accessibility checklist](desktop-accessibility-overview.md#report-accessibility-checklist)
+* [Report accessibility checklist](desktop-accessibility-creating-reports.md#report-accessibility-checklist)
 
 You might also be interested in the following:
 
