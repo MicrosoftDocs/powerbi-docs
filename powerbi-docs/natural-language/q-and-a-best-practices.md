@@ -42,13 +42,13 @@ If your model is missing relationships between tables, neither Power BI reports 
 
 In the first image, there are no relationships between the Customers, Sales, and Products tables.
 
-![Relationships that need work for Q&A](media/q-and-a-best-practices/desktop-qna_01.png)
+![Relationships that need work for Q&A](media/q-and-a-best-practices/desktop-qna-01.png)
 
 **Ready for Q&A**
 
 In the first image, relationships are defined between the tables.
 
-![relationships in good shape for Q&A](media/q-and-a-best-practices/desktop-qna_02.png)
+![relationships in good shape for Q&A](media/q-and-a-best-practices/desktop-qna-02.png)
 
 
 ## Rename tables and columns
@@ -63,25 +63,25 @@ Consider another example. Imagine you have a table named *Headcount* that contai
 
 Table names like *StoreInfo* and *Product List* need work.
 
-![Table names that need work for Q&A](media/q-and-a-best-practices/desktop-qna_03.png)
+![Table names that need work for Q&A](media/q-and-a-best-practices/desktop-qna-03.png)
 
 **Ready for Q&A**
 
 Tables named *Store* and *Products* work better.
 
-![Table names in good shape for Q&A](media/q-and-a-best-practices/desktop-qna_04.png)
+![Table names in good shape for Q&A](media/q-and-a-best-practices/desktop-qna-04.png)
 
 ## Fix incorrect data types
 
 Imported data can have incorrect data types. In particular, *date* and *number* columns that are imported as *strings* aren't interpreted by Q&A as dates and numbers. Make sure you select the correct data type in your Power BI model.
 
-![Choose the correct data type to ensure it's available for Q&A](media/q-and-a-best-practices/desktop-qna_05.png)
+![Choose the correct data type to ensure it's available for Q&A](media/q-and-a-best-practices/desktop-qna-05.png)
 
 ## Mark year and identifier columns as Don't Summarize
 
 Power BI aggressively aggregates numeric columns by default, so questions like “total sales by year” can sometimes result in a grand total of sales alongside a grand total of years. If you have specific columns where you don't want Power BI to exhibit this behavior, set the **Default Summarization** property on the column to **Don’t Summarize**. Be mindful of **year**, **month**, **day**, and **ID** columns, as those columns are the most frequent problems. Other columns that aren’t sensible to sum, such as *age*, could also benefit from setting **Default Summarization** to **Don’t Summarize** or to **Average**. You'll find this setting in the **Modeling** tab.
 
-![Don't Summarize columns like year, month, date for Q&A](media/q-and-a-best-practices/desktop-qna_06.png)
+![Don't Summarize columns like year, month, date for Q&A](media/q-and-a-best-practices/desktop-qna-06.png)
 
 ## Choose a Data Category for each date and geography column
 
@@ -91,13 +91,13 @@ First, Q&A uses the **Data Category** information to help make choices about wha
 
 Second, Q&A makes some educated guesses about how users are likely to talk about date and geography columns, to help it understand certain types of questions. For example, the “when” in “When was John Smith hired?” is almost certain to map to a date column, and the “Brown” in “Count customers in Brown” is more likely to be a city than a hair color.
 
-![Choose Data Categories appropriately for Q&A](media/q-and-a-best-practices/desktop-qna_07.png)
+![Choose Data Categories appropriately for Q&A](media/q-and-a-best-practices/desktop-qna-07.png)
 
 ## Choose a Sort By Column for relevant columns
 
 The **Sort By Column** property allows sorting in one column to automatically sort a different column instead. For example, when you ask “sort customers by shirt size”, you probably want your Shirt Size column to sort by the underlying size number (XS, S, M, L, XL) rather than alphabetically (L, M, S, XL, XS).
 
-![Choose Sort by Column appropriately for Q&A](media/q-and-a-best-practices/desktop-qna_08.png)
+![Choose Sort by Column appropriately for Q&A](media/q-and-a-best-practices/desktop-qna-08.png)
 
 ## Normalize your model
 
@@ -113,11 +113,11 @@ If you have multiple columns that act as a single distinct unit within a larger 
 
 **Needs work**
 
-![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna_09.png)
+![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-09.png)
 
 **Ready for Q&A**
 
-![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna_10.png)
+![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-10.png)
 
 ### Pivot to eliminate property bags
 
@@ -127,11 +127,11 @@ For example, consider a *CustomerDemographics* table with CustomerID, Property, 
 
 **Needs work**
 
-![Don't use property bags in models for Q&A](media/q-and-a-best-practices/desktop-qna_11.png)
+![Don't use property bags in models for Q&A](media/q-and-a-best-practices/desktop-qna-11.png)
 
 **Ready for Q&A**
 
-![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna_12.png)
+![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-12.png)
 
 ### Union to eliminate partitioning
 
@@ -141,11 +141,11 @@ Similarly, consider a typical pivoted value column: a *BookTour* table containin
 
 **Needs work**
 
-![Don't use pivoted value columns in models for Q&A](media/q-and-a-best-practices/desktop-qna_13.png)
+![Don't use pivoted value columns in models for Q&A](media/q-and-a-best-practices/desktop-qna-13.png)
 
 **Ready for Q&A**
 
-![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna_14.png)
+![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-14.png)
 
 ### Split formatted columns
 
@@ -153,11 +153,11 @@ If the source from which you're importing your data contains formatted columns, 
 
 **Needs work**
 
-![Don't use single columns for multiple data elements for Q&A](media/q-and-a-best-practices/desktop-qna_15.png)
+![Don't use single columns for multiple data elements for Q&A](media/q-and-a-best-practices/desktop-qna-15.png)
 
 **Ready for Q&A**
 
-![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna_16.png)
+![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-16.png)
 
 Similarly, if you have any full name columns for a person, add **First Name** and **Last Name** columns, just in case someone wants to ask questions using partial names. 
 
@@ -168,11 +168,11 @@ Also a similar situation, if the source from which you're importing your data co
 
 **Needs work**
 
-![Don't use multiple-value columns for Q&A](media/q-and-a-best-practices/desktop-qna_17.png)
+![Don't use multiple-value columns for Q&A](media/q-and-a-best-practices/desktop-qna-17.png)
 
 **Ready for Q&A**
 
-![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna_18.png)
+![Use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-18.png)
 
 ### Denormalize to eliminate inactive relationships
 
@@ -180,11 +180,11 @@ The one exception to the “normalization is better” rule occurs when there is
 
 **Needs work**
 
-![only one path for each table for Q&A](media/q-and-a-best-practices/desktop-qna_19.png)
+![only one path for each table for Q&A](media/q-and-a-best-practices/desktop-qna-19.png)
 
 **Ready for Q&A**
 
-![use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna_20.png)
+![use multiple tables for Q&A](media/q-and-a-best-practices/desktop-qna-20.png)
 
 ### Add synonyms to tables and columns
 
