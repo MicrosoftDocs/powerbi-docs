@@ -124,10 +124,10 @@ To help these users sign in to Power BI, provide them with the Tenant URL. To fi
     * Guest users can't use subscriptions
     * Guest users who use this capability should have a work or school account. 
     
-* Guest users using Personal accounts will experience more limitations due to sign in restrictions.
+* Guest users using Personal accounts will experience more limitations due to sign-in restrictions.
     * They can use consumption experiences in the Power BI service through a web browser
     * They can't use the Power BI Mobile apps.
-    * They wont' be able to sign-in to provide credentials where a work or school account is required.
+    * They won't be able to sign-in to provide credentials where a work or school account is required.
 
 * This feature isn't currently available with the Power BI SharePoint Online report web part.
 
