@@ -56,7 +56,7 @@ Some of the features that are available in the commercial version of the **Power
 * **External user sharing** - sharing is allowed within a Power BI tenant, and as of June 2018, sharing is also allowed with users outside of your Power BI tenant. See [distribute Power BI content to external guest users with Azure AD B2B](service-admin-azure-ad-b2b.md).
 * **Usage metrics for dashboards and reports** - usage metrics are not available for reports and dashboards. Customers can use audit log data to get usage information for content in their organization.
 * **Dataflows** - Dataflows are not available.
-* **Paginated Reports** - Paginated Reports are currently available in USGov Virginia only.  USGov Texas support is planned but not yet available.
+* **Paginated reports** - Paginated reports are currently available in USGov Virginia only.  USGov Texas support is planned but not yet available.
 
 If you have **Power BI** Free licenses assigned to your account, those accounts are running in a commercial version of the **Power BI** service, and are not part of the **Power BI US Government** offering. For those Free accounts, you may encounter the following issues:
 
