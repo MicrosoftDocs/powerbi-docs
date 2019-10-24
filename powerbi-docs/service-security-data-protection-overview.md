@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 10/25/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -55,10 +55,11 @@ Here's a quick example of how a sensitivity label in Power BI can work.
 
 1. In the Power BI service, a **Highly Confidential - Internal Only** sensitivity label is applied to a report.
 
+   ![Sensitivity labels in list view](media/service-security-data-protection-overview/sensitivity-labels-overview-01.png)
 
 2. When data is exported to an Excel file from this report, the sensitivity label and protection are applied to the exported Excel file.
 
-   ![Sensitivity label follows the content](media/service-security-using-microsoft-cloud-app-security-controls/sensitivity-labels-overview-02.png)
+   ![Sensitivity label follows the content](media/service-security-data-protection-overview/sensitivity-labels-overview-02.png)
 
 In Microsoft Office applications, a sensitivity label appears as a tag on an email or document, similar to the previous image.
 
