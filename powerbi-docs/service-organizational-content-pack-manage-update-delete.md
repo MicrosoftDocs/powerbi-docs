@@ -67,7 +67,7 @@ Another modification available to content pack creators is expanding and restric
 As the content pack creator, you can [schedule refresh of the datasets](refresh-data.md).  When you create and upload the content pack, that refresh schedule is uploaded with the datasets. If you change the refresh schedule, you need to re-publish the content pack (see above).
 
 ## Delete an organizational content pack from AppSource
-You can only delete a content pack from AppSource if you created it. If you've created an organizational content pack in an workspace, and then decide to delete that workspace, be sure to delete the content pack first. If you delete the workspace without deleting the content pack first, you lose all access to those content packs and will have to contact Microsoft Support for help. 
+You can only delete a content pack from AppSource if you created it. If you've created an organizational content pack in a workspace, and then decide to delete that workspace, be sure to delete the content pack first. If you delete the workspace without deleting the content pack first, you lose all access to those content packs and will have to contact Microsoft Support for help. 
 
 > [!TIP]
 > You can [delete your connection to a content pack](service-organizational-content-pack-disconnect.md) you didn't create. That doesn't delete the content pack from AppSource.
