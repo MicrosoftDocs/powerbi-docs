@@ -13,7 +13,7 @@ ms.author: maggies
 LocalizationGroup: Share your work
 ---
 # Connect to files stored in OneDrive for your Power BI workspace
-After you've [created an workspace in Power BI](service-create-distribute-apps.md), you can store your Excel, CSV, and Power BI Desktop files on the OneDrive for Business for your Power BI workspace. You can continue updating the files you store in OneDrive. Those updates are automatically reflected in the Power BI reports and dashboards based on the files. 
+After you've [created a workspace in Power BI](service-create-distribute-apps.md), you can store your Excel, CSV, and Power BI Desktop files on the OneDrive for Business for your Power BI workspace. You can continue updating the files you store in OneDrive. Those updates are automatically reflected in the Power BI reports and dashboards based on the files. 
 
 > [!NOTE]
 > The new workspace experience changes the relationship between Power BI workspaces and Office 365 groups. You don't automatically create an Office 365 group every time you create one of the new workspaces. Read about [creating the new workspaces](service-create-the-new-workspaces.md)
