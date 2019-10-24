@@ -1,7 +1,7 @@
 ---
 title: Using Microsoft cloud app security controls in Power BI
 description: Learn how to apply data sensitivity labels in Power BI
-author: davidiseminger
+author: paulinbar
 manager: kfile
 ms.reviewer: ''
 

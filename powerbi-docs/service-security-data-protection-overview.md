@@ -1,7 +1,7 @@
 ---
 title: Data protection in Power BI
 description: Learn how data protection works in Power BI
-author: davidiseminger
+author: paulinbar
 manager: kfile
 ms.reviewer: ''
 
