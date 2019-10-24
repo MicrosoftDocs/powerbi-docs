@@ -32,7 +32,7 @@ In **Office 365** you can:
 * See the group email address.
 * Delete the group.
 
-You need a [Power BI Pro license](service-features-license-type.md) to be an admin or member of an workspace. Your app users need a Power BI Pro license, too, unless your workspace is in a Power BI Premium capacity. Read [What is Power BI Premium?](service-premium-what-is.md) for details.
+You need a [Power BI Pro license](service-features-license-type.md) to be an admin or member of a workspace. Your app users need a Power BI Pro license, too, unless your workspace is in a Power BI Premium capacity. Read [What is Power BI Premium?](service-premium-what-is.md) for details.
 
 ## Edit your workspace in Power BI
 
@@ -41,7 +41,7 @@ You need a [Power BI Pro license](service-features-license-type.md) to be an adm
    ![Edit workspaces in Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
 
    > [!NOTE]
-   > You only see **Edit this workspace** if you’re an workspace admin.
+   > You only see **Edit this workspace** if you’re a workspace admin.
 
 1. Here you can rename the workspace, add or remove members, or delete the workspace.
 
@@ -51,7 +51,7 @@ You need a [Power BI Pro license](service-features-license-type.md) to be an adm
 
 ## Edit Power BI workspace properties in Office 365
 
-You can also edit aspects of an workspace directly in Outlook for Office 365.
+You can also edit aspects of a workspace directly in Outlook for Office 365.
 
 ### Edit the members of the workspace group
 
