@@ -30,7 +30,7 @@ These phrasings come in a variety of shapes and sizes. Some correspond directly 
 Linguistic schemas are saved in a YAML format. This format is related to the popular JSON format but provides a more flexible and easier-to-read syntax. Linguistic schemas can be edited, exported, and imported into Power BI Desktop.
 
 ## Prerequisites
-- If you haven't already read the article on [improving your data model for Q&A](desktop-qna-in-reports.md), you may want to read that article first. It includes numerous tips for designing and improving your data model and an important section on adding synonyms.  
+- If you haven't already read the article on [improving your data model for Q&A](q-and-a-best-practices.md), you may want to read that article first. It includes numerous tips for designing and improving your data model and an important section on adding synonyms.  
 
 - There are two sides to Q&A.  The first side is the preparation, or "modeling."  The second side is asking questions and exploring the data, or "consuming." In some companies, employees known as Data Modelers or IT Admins may be the ones to assemble the datasets, create the data models, and publish the datasets to Power BI.  While a second set of employees may be the ones to "consume" the data online.  In other companies, these roles may be combined. 
 
@@ -58,7 +58,7 @@ We recommend using Visual Studio Code to edit linguistic schema YAML files. Visu
 
 
 ## Working with linguistic schemas
-Linguistic schemas can be edited, imported, and exported in [Relationship view](desktop-relationship-view.md) in Power BI Desktop. One way to edit a linguistic schema is to [add synonyms to the **Synonyms** pane](desktop-qna-in-reports.md). You don't have to open the YAML file.
+Linguistic schemas can be edited, imported, and exported in [Relationship view](desktop-relationship-view.md) in Power BI Desktop. One way to edit a linguistic schema is to [add synonyms to the **Synonyms** pane](q-and-a-best-practices.md). You don't have to open the YAML file.
 
 ![Synonyms pane](media/power-bi-q-and-a-linguistic-schema/power-bi-synonyms-pane.png)
 
