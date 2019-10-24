@@ -22,7 +22,7 @@ Do you regularly distribute reports by email to your team? Try this instead: Pac
 
 ![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 
-Creating content packs is different from sharing dashboards or collaborating on them in an workspace. Read [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md) to decide on the best option for your situation. 
+Creating content packs is different from sharing dashboards or collaborating on them in a workspace. Read [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md) to decide on the best option for your situation. 
 
 In AppSource, you can browse or search for content packs published to the entire organization, to distribution or security groups, and to [Office 365 groups you belong to](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). If you aren't a member of a specific group, you won't see content packs shared with that group. All members of the group have the same read-only access to the content pack data, reports, workbooks, and dashboards (unless it's a SQL Server Analysis Services (SSAS) data source, in which case your privileges are inherited with the data source).
 
