@@ -1,4 +1,6 @@
-﻿- name: Power BI administration
+﻿- name: "Power BI administration documentation"
+  href: index.yml
+  expanded: true
   items:
   - name: Overview
     expanded: true
@@ -8,7 +10,7 @@
   - name: Concepts
     expanded: true
     items:
-    - name: "Administration role in Office 365"
+    - name: "Administration role in Microsoft 365"
       href: ../service-admin-role.md
     - name: "Frequently asked questions (FAQ)"
       href: ../service-admin-faq.md
@@ -22,9 +24,9 @@
         href: ../service-admin-licensing-organization.md
       - name: "Purchase Power BI Pro"
         href: ../service-admin-purchasing-power-bi-pro.md
-      - name: "Sign up with an Office 365 Trial"
+      - name: "Sign up with an Microsoft 365 Trial"
         href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-      - name: "Add Power BI with an Office 365 partner"
+      - name: "Add Power BI with a Microsoft 365 partner"
         href: ../service-admin-syndication-partner.md
     - name: "Using the admin portal"
       href: ../service-admin-portal.md
@@ -32,19 +34,19 @@
       href: ../service-admin-where-is-my-tenant-located.md
     - name: "Find users that have signed in"
       href: ../service-admin-access-usage.md
-    - name: "Auditing Power BI"
+    - name: "Auditing"
       href: ../service-admin-auditing.md
     - name: "Track service health"
       href: ../service-admin-health.md
-    - name: "Closing your Power BI account"
+    - name: "Closing your account"
       href: ../service-admin-closing-your-account.md
-    - name: "Power BI and ExpressRoute"
+    - name: "ExpressRoute"
       href: ../service-admin-power-bi-expressroute.md
     - name: "Using Azure AD B2B"
       href: ../service-admin-azure-ad-b2b.md
-    - name: "Row-level security with Power BI"
+    - name: "Row-level security"
       href: ../service-admin-rls.md
-    - name: "Power BI archived workspace"
+    - name: "Archived workspace"
       href: ../service-admin-power-bi-archived-workspace.md
     - name: "Configure mobile apps with Intune"
       href: ../service-admin-mobile-intune.md

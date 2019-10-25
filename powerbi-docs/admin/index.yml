@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Power BI for admins
+title: Power BI administration documentation
 summary: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
 
 metadata:
-  title: Power BI for administrators
+  title: Power BI administration documentation
   description: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
   services: powerbi
   ms.service: powerbi
@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 10/04/2019
+  ms.date: 10/25/2019
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
