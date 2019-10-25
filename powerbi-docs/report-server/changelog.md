@@ -20,8 +20,8 @@ For detailed information about new features, see [What's new in Power BI Report 
 ## September 2019
 - **Power BI Report Server**
     - *Version: 1.6.7236.4246 (Build 15.0.1102.646), Released: October 25, 2019*
-        - Security Updates
-	- Bug fixes
+        - Security updates
+        - Bug fixes
             - Fix for .net framework 4.7 not installed.
 	        - Fix for paginated reports for Teradata with multivalue parameters with error 110083.
 	        - Fix for URLRoot value not work if there are multiple web service URL bindings and one of them is http://+80/reportserver.
