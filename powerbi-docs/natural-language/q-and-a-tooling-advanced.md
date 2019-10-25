@@ -42,11 +42,11 @@ We recommend using Visual Studio Code to edit linguistic schema .yaml files. Vis
 2. Select the sample linguistic schema that you saved earlier: [.yaml file](https://go.microsoft.com/fwlink/?linkid=871858) (SummerOlympics.lsdl.yaml).    
 4. Select **Visual Studio Code** and **Always use this app to open .yaml files**.
 
-    ![How do you want to open this file](../media/power-bi-q-and-a-linguistic-schema/power-bi-visual-code.png)
+    ![How do you want to open this file](media/q-and-a-tooling-advanced/power-bi-visual-code.png)
 
 4. In Visual Studio Code, install the YAML Support by Red Hat extension.    
     a. Select the **Extensions** tab (last one on the left) or CTRL+SHIFT+X.    
-    ![extensions icon](../media/power-bi-q-and-a-linguistic-schema/power-bi-extensions.png)    
+    ![extensions icon](media/q-and-a-tooling-advanced/power-bi-extensions.png)    
     b. Search for "yaml" and select **YAML Support by Red Hat** in the list.    
     c. Select **Install > Reload**.
 
@@ -57,7 +57,7 @@ There are two ways to work with linguistic schemas. One way is to edit, import, 
 
 The other way to edit a linguistic schema is to export and edit the .yaml file directly.  When you edit a linguistic schema .yaml file, you tag columns in the table as different grammatical elements, and define words that a colleague might use to phrase a question. For instance, you state the columns that are the subject and the object of the verb. You add alternative words that colleagues can use to refer to tables, columns, and measures in your model. 
 
-![Sample linguistic schema .yaml file](../media/power-bi-q-and-a-linguistic-schema/power-bi-linguistic-schema.png)
+![Sample linguistic schema .yaml file](media/q-and-a-tooling-advanced/power-bi-linguistic-schema.png)
 
 Before you can edit a linguistic schema, you must open (export) it from Power BI Desktop. Saving the .yaml file back to the same location is considered importing.  But you can also import other .yaml files instead.  If, for instance, you have a similar dataset and you've already put in a lot of work adding parts of speech, identifying relationships, creating phrasings, and creating synonyms, you can use that .yaml file in a different Power BI Desktop file. 
 
@@ -69,7 +69,7 @@ When you first export your linguistic schema from Power BI Desktop, most or all 
 > [!NOTE]
 > The sample .yaml file included with this tutorial doesn't contain **State:Generated** or **State:Deleted** tags since it was prepared specifically for this tutorial. To see these tags, open an unedited .pbix file in Relationship view and export the linguistic schema.
 
-![YAML showing Generated:State](../media/power-bi-q-and-a-linguistic-schema/power-bi-generated-state.png)
+![YAML showing Generated:State](media/q-and-a-tooling-advanced/power-bi-generated-state.png)
 
 When you import your linguistic schema file back into Power BI Desktop, anything that is marked **State: Generated** is ignored, and later regenerated. Thus, if you’d like to change some generated content, remove the corresponding **State: Generated** tag as well. Similarly, if you want to remove some generated content, change the **State: Generated** tag to **State: Deleted** so that it isn't regenerated when you import your linguistic schema file.
 
@@ -82,7 +82,7 @@ When you import your linguistic schema file back into Power BI Desktop, anything
 4. In Model view in Power BI Desktop, on the **Modeling** tab, select **Linguistic Schema** > **Import linguistic schema**. 
 6. Navigate to the location where you saved the edited .yaml file and select it. A Success message lets you know that the linguistic schema .yaml file was successfully imported.
 
-    ![Success message](../media/power-bi-q-and-a-linguistic-schema/power-bi-success.png)
+    ![Success message](media/q-and-a-tooling-advanced/power-bi-success.png)
 
 ## Phrasings in the linguistic schema
 Again, a phrasing is how you talk about (or “phrase”) the relationships between things. For example, to describe the relationship between customers and products, you might say “customers buy products”.
@@ -337,6 +337,6 @@ Another example would be adding the alternate phrasing “employees sell custome
 ## Considerations and troubleshooting
 If you make a change to a .lsdl.yaml file that does not conform to the linguistic schema format, you now see validation squiggles to indicate issues: 
 
-![yaml file showing errors](../media/power-bi-q-and-a-linguistic-schema/power-bi-yaml-errors.png)
+![yaml file showing errors](media/q-and-a-tooling-advanced/power-bi-yaml-errors.png)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
