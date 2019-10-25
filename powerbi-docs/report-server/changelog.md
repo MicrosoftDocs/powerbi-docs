@@ -27,7 +27,6 @@ For detailed information about new features, see [What's new in Power BI Report 
 	        - Fix for URLRoot value not work if there are multiple web service URL bindings and one of them is http://+80/reportserver.
 		  - Fix for paginated reports multivalue parameter values showing up outside the report area.
 		  
-- **Power BI Report Server**
     - *Version: 1.6.7221.30698 (Build 15.0.1102.620), Released: October 9, 2019*
         - Bug fixes
             - Fix for Text Filter custom visual.
