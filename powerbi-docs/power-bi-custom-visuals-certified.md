@@ -27,7 +27,7 @@ The certification process is an optional process, and it is up to the developers
 
 **Uncertified Power BI visuals** do not necessarily mean unsafe visuals. Some visuals aren't certified because they don’t comply with one or more of the [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
 
-Are you a Web developer and interested in creating your own visualizations and adding them to **[Microsoft AppSource](https://appsource.microsoft.com)**? See **[Develop a Power BI custom visual to learn how](developer/custom-visual-develop-tutorial.md)**.
+Are you a Web developer and interested in creating your own visualizations and adding them to **[Microsoft AppSource](https://appsource.microsoft.com)**? See **[Develop a Power BI custom visual to learn how](developer/visuals/custom-visual-develop-tutorial.md)**.
 
 ## Removal of Power BI Certified Power BI visuals
 
@@ -192,7 +192,7 @@ For more information about visuals, see [Frequently asked questions about certif
 
 ## Next steps
 
-* [Developing a Power BI custom visual](developer/custom-visual-develop-tutorial.md)
+* [Developing a Power BI custom visual](developer/visuals/custom-visual-develop-tutorial.md)
 * [Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 * [Visualizations in Power BI](visuals/power-bi-report-visualizations.md)  
 * [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  

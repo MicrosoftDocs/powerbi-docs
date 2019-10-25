@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 10/22/2019
 ms.author: nikhilga
 
 LocalizationGroup: Get started
@@ -26,11 +26,43 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## May 2019
-* [Custom navigation](service-create-distribute-apps.md) for Power BI Apps.
-* Additional attachments types (PPTX, XLSX, DOCX, CSV, XML) available for e-mail subscriptions within paginated reports.
+### October 2019
+* New Microsoft Flow action to refresh Power BI datasets.
+* [Contact list](https://powerbi.microsoft.com/en-us/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) for reports and dashboards in the Power BI service.
 
 ## Previous months (2019)
+### September 2019
+* Updates to connection configuration for [template apps](service-template-apps-overview.md).
+
+### August 2019
+* New capacity settings for Power BI Premium.
+* [Custom branding](https://powerbi.microsoft.com/en-us/blog/announcing-custom-branding-for-your-organization/) for your organization.
+* Summarized data export with build permission.
+* Support for URL parametrs for [paginated reports](paginated-reports-report-builder-power-bi.md).
+* Support for monthly e-mail subscriptions. 
+
+### July 2019
+* Support for non-premium datasets for [paginated reports](paginated-reports-report-builder-power-bi.md).
+* General availability of Power BI [aggregations](desktop-aggregations.md).
+* Send refresh notifications to others.
+* [Testing tool](https://powerbi.microsoft.com/en-us/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) for Power BI Premium capacities.
+* Public preview of [service availability notifications](https://powerbi.microsoft.com/en-us/blog/power-bi-introduces-service-availability-notifications/).
+* Public preview of the [New Look](https://powerbi.microsoft.com/en-us/blog/introducing-the-new-look-for-power-bi-service/) for Power BI reports.
+* New Power BI region in South Africa.
+
+### June 2019
+* Public preview of [Shared and Certified datasets](service-datasets-across-workspaces.md).
+* AI metrics available in the [Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md).
+* General availability of Power BI [template apps](service-template-apps-overview.md).
+* General availability of [paginated reports](paginated-reports-report-builder-power-bi.md) in Power BI.
+* Public preview of Bring Your Own Key ([BYOK](service-encryption-byok.md)) for Power BI Premium.
+* Viewer role for the [new workspaces experience](service-new-workspaces.md).
+
+### May 2019
+* [Custom navigation](service-create-distribute-apps.md) for Power BI Apps.
+* Additional attachments types (PPTX, XLSX, DOCX, CSV, XML) available for e-mail subscriptions within paginated reports.
+* [Commenting](https://powerbi.microsoft.com/en-us/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) for Power BI reports in the service.
+
 ### April 2019
 * General availability of Power BI [dataflows](service-dataflows-overview.md).
 * General availability of the new workspaces experience.
