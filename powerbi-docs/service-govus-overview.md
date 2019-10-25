@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/06/2019
+ms.date: 09/09/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -37,15 +37,14 @@ The following features are available to **Power BI US Government** customers, as
 
 ## Connectivity between Government and global Azure Cloud services 
 
-Azure is distributed among multiple clouds. Be default, tenants are allowed to open firewall rules to a  cloud-specific instance, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a Power BI customer and you have existing SQL instances in the public cloud which you need to access, you must open specific firewall rules in SQL to the Azure Government Cloud IP space, for the following datacenters:
+Azure is distributed among multiple clouds. By default, tenants are allowed to open firewall rules to a  cloud-specific instance, but cross-cloud networking is different and requires opening specific firewall rules to communicate between services. If you are a Power BI customer and you have existing SQL instances in the public cloud which you need to access, you must open specific firewall rules in SQL to the Azure Government Cloud IP space, for the following datacenters:
 
 * USGov Iowa
 * USGov Virginia
 * USGov Texas
 * USGov Arizona
 
-In the public cloud the IP spaces are available, but for the government cloud, you must open an Azure Support ticket to request the IP ranges for the above listed datacenters. 
-
+In the public cloud the IP spaces are available. For the government cloud, please refer to the downloadable [Azure Government service documentation](https://www.microsoft.com/download/details.aspx?id=57063) for the latest information.
 
 ## Limitations of Power BI US Government
 Some of the features that are available in the commercial version of the **Power BI service** are *not* available in the **Power BI service** for US Government customers. The Power BI team is actively working on making these features available to US Government customers, and will update this article when these features become available.
@@ -82,13 +81,13 @@ The following questions (and answers) are provided to help you quickly get infor
 
 **Answer:** Signing up (often called *onboarding*) might differ based on your existing license and subscription. See the [Sign Up for Power BI US Government](service-govus-signup.md) article for more information.
 
-**Question:** Is the URL for connecting to **Power BI** for US Government different than the commercial **Power BI** URL?
+**Question:** Is the URL for connecting to **Power BI** for US Government different than the commercial **Power BI** URL? Is there a different URL for Government Community Cloud High (GCC High) customers?
 
 **Answer:** Yes, the URLs are different. The following table shows each URL:
 
-| Commercial version URL | US Government version URL |
-| --- | --- |
-| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
+| Commercial version URL | US Government version URL | US Government URL for GCC High |
+| --- | --- | --- |
+| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
 
 **Question:** My account is provisioned in more than one national cloud. When using **Power BI Desktop**, how do I select which cloud to connect to?
 
@@ -100,7 +99,7 @@ There are all sorts of things you can do with Power BI. For more information and
 
 * [Sign up for Power BI for US Government](service-govus-signup.md)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Power BI US Government Demo</a>
-* [Guided Learning for Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
+* [Guided Learning for Power BI](guided-learning/index.md)
 * [Get started with the Power BI service](service-get-started.md)
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
 

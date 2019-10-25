@@ -8,7 +8,7 @@ ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.author: mblythe
-ms.date: 01/02/2018
+ms.date: 09/09/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
 ---
@@ -21,7 +21,7 @@ You can configure RLS for data models imported into Power BI with Power BI Deskt
 
 [!INCLUDE [include-short-name](./includes/rls-desktop-define-roles.md)]
 
-By default, row-level security filtering uses single-directional filters, regardless of whether the relationships are set to single direction or bi-directional. You can manually enable bi-directional cross-filter with row-level security by selecting the relationship and checking the **Apply security filter in both directions** checkbox. You should check this box when implementing [dynamic row-level security](https://docs.microsoft.com/sql/analysis-services/supplemental-lesson-implement-dynamic-security-by-using-row-filters), wherein you provide row-level security based on user name or login ID.
+By default, row-level security filtering uses single-directional filters, regardless of whether the relationships are set to single direction or bi-directional. You can manually enable bi-directional cross-filter with row-level security by selecting the relationship and checking the **Apply security filter in both directions** checkbox. You should check this box when your've also implemented dynamic row-level security at the server level, where row-level security is based on user name or login ID.
 
 For more information, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](desktop-bidirectional-filtering.md) and the [Securing the Tabular BI Semantic Model](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) technical article.
 
@@ -47,7 +47,7 @@ You can only create or modify roles within Power BI Desktop.
 
 ### Add members
 
-You can add a member to the role by typing in the email address, or name, of the user, security group or distribution list you want to add. This member has to be within your organization. You cannot add Groups created within Power BI.
+You can add a member to the role by typing in the email address, or name, of the user, security group or distribution list you want to add. You cannot add Groups created within Power BI. You can add members [external to your organization](whitepaper-azure-b2b-power-bi.md#data-security-for-external-partners).
 
 ![Add a member](media/service-admin-rls/rls-add-member.png)
 

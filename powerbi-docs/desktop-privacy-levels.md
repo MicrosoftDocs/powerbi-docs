@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: reference
-ms.date: 05/08/2019
+ms.date: 09/09/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -48,7 +48,7 @@ To configure a data source privacy level, select the data source, then select **
 | **Combine data according to your Privacy Level settings for each source** (on, and the default setting) |Privacy level settings are used to determine the level of isolation between data sources when combining data. |
 | **Ignore the Privacy levels and potentially improve performance** (off) |Privacy levels are not considered when combining data, however, performance and functionality of the data may increase. |
 
-> **Security Note:** Enabling **Privacy Levels** by selecting **Ignore the Privacy levels and potentially improve performance** in the **Privacy Levels** dialog could expose sensitive or confidential data to an unauthorized person. Do not enable **Privacy Levels** unless you are confident that the data source does not contain sensitive or confidential data.
+> **Security Note:** Selecting **Ignore the Privacy levels and potentially improve performance** in the **Privacy Levels** dialog could expose sensitive or confidential data to an unauthorized person. Do not turn this setting to *off* unless you are confident that the data source does not contain sensitive or confidential data.
 > 
 > 
 

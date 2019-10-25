@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 10/16/2019
 LocalizationGroup: Connect to data
 ---
 
@@ -20,23 +20,27 @@ The following data sources support DirectQuery in Power BI:
 
 * Amazon Redshift
 * AtScale (Beta)
+* Azure Data Explorer
 * Azure HDInsight Spark
 * [Azure SQL Database](service-azure-sql-database-with-direct-connect.md)
 * [Azure SQL Data Warehouse](service-azure-sql-data-warehouse-with-direct-connect.md)
+* Denodo
 * Google BigQuery
 * HDInsight Interactive Query
-* IBM DB2 database
+* IBM DB2 (Microsoft Provider))
 * IBM Netezza
 * Impala (version 2.x)
+* MarkLogic
 * Oracle Database (version 12 and above)
 * Oracle Essbase
+* PostgreSQL
 * SAP Business Warehouse Application Server
 * SAP Business Warehouse Message Server
 * SAP HANA
 * Snowflake
 * Spark (version 0.9 and above)
 * SQL Server
-* Teradata Database
+* Teradata
 * Vertica
 
 Data sources that have **(Beta)** or **(Preview)** after their name are subject to change, and are not supported for production use. They might also not be supported after publishing a report to the **Power BI service**, which means that opening a published report or exploring the dataset can result in an error.
@@ -58,15 +62,24 @@ The following table specifies whether an **On-premises data gateway** is require
 | Azure SQL Data Warehouse |No |
 | Google BigQuery |No |
 | IBM Netezza |Yes |
+| IBM DB2 (IBM Provider) |Yes |
+| IBM DB2 (Microsoft Provider) |No |
+| IBM Informix Database |No |
 | Impala (version 2.x) |Yes |
+| MySQL |Yes |
+| ODBC |Yes |
 | Oracle Database |Yes |
+| PostgreSQL |Yes |
 | SAP Business Warehouse Application Server |Yes |
-| SAP Business Warehouse Message Server |Not yet supported in the **Power BI service** |
+| SAP Business Warehouse Message Server |Yes |
 | SAP HANA |Yes |
 | Snowflake |Yes |
 | Spark (beta), version 0.9 and later |Yes |
 | SQL Server |Yes |
-| Teradata Database |Yes |
+| Sybase |Yes |
+| Teradata |Yes |
+| Vertica |Yes |
+
 
 ## Single sign-on (SSO) for DirectQuery sources
 
@@ -79,6 +92,7 @@ The SSO option takes affect across all datasets that use this data source. It do
 - Impala
 - SAP HANA
 - SAP BW
+- SAP BW Message Server (preview)
 - Spark
 - SQL Server
 - Teradata

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/22/2019 
+ms.date: 05/27/2019 
 ---
 
 # Frequently asked questions about Power BI Embedded
@@ -61,9 +61,10 @@ Here is a partial list of feature differences.
 
 | Feature | Power BI Embedded | Power BI Premium Capacity | Power BI Premium Capacity |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
-|   | (A SKUs) | (EM SKUs) | (P SKUs) |
-| Embed artifacts from a Power BI App workspace | Azure capacity | Office 365 capacity | Office 365 capacity |
-| Consume Power BI reports in an   Embedded application | Yes | Yes | Yes |
+|   | A SKUs-Azure capacity | EM SKUs-O365 capacity | P SKUs-O365 capacity |
+| Embed artifacts from a Power BI App workspace | Yes | Yes | Yes |
+| Consume Power BI reports in an embedded application - SaaS | No | Yes | Yes |
+| Consume Power BI reports in an embedded application - PaaS | Yes | Yes | Yes |
 | Consume Power BI reports in SharePoint | No | Yes | Yes |
 | Consume Power BI reports in Dynamics | No | Yes | Yes |
 | Consume Power BI reports in Teams (excludes mobile app) | No | Yes | Yes |
@@ -90,7 +91,7 @@ Here is a partial list of feature differences.
 
 * Using the [Power BI Admin portal](../service-admin-portal.md#power-bi-embedded).
 
-* Downloading the [metric app](https://review.docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) in Power BI.
+* Downloading the [metric app](https://docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) in Power BI.
 
 * Using [Azure diagnostic logging](azure-pbie-diag-logs.md).
 
@@ -105,6 +106,13 @@ Capacity provisioning (scale/resume/create) may fail. You can use the Get Detail
 ### Can I only create Power BI Embedded capacities in a specific region?
 
 With the [Multi-geo (Preview)](embedded-multi-geo.md) feature, you can purchase a [Power BI Embedded capacity](azure-pbie-create-capacity.md) in a different region than your Power BI home tenant location
+
+### Why can’t I see a workspace although I have permissions?
+
+When a user is granted permissions to a workspace, app, or artifact, it might not be immediately available through API calls.
+The result can either be a missing artifact in a 'GET' API response, or an error when trying to use the artifact.
+The user can resolve this issue by calling [refreshUserPermissions API](https://docs.microsoft.com/rest/api/power-bi/users/refreshuserpermissions), which updates the user permissions.
+
 
 ### How can I find my PBI tenant region?
 
@@ -128,7 +136,7 @@ Power BI requires you to sign up with an organizational account. Trying to sign 
 
 Yes, there are Powershell cmdlets and Azure Resource Manager REST APIs you can use to create and manage PBIE resources.
 
-* [Rest APIs](https://docs.microsoft.com/rest/api/power-bi-embedded/)
+* [Rest APIs](https://docs.microsoft.com/rest/api/power-bi-embedded/) 
 * [Powershell cmdlets](https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/)
 
 ### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
@@ -188,10 +196,6 @@ You must have a Power BI account before purchasing Power BI Embedded in Azure. Y
 
 Use PowerBI.com to assign/un-assign workspaces to your Power BI Embedded capacity.
 
-### What are the supported deploy regions?
-
-Australia Southeast, Brazil South, Canada Central, East US 2, India West, Japan East, North Central US, North Europe, South Central US, Southeast Asia, UK South, West Europe, West US, and West US 2.
-
 ### What content pack data types can you embed?
 
 You *can't* embed **Dashboards** and **tiles** built from content pack datasets. However, you *can* embed **reports** built from a content pack dataset.
@@ -226,7 +230,7 @@ You can't manage an On-premises data gateway (data gateway) using [service princ
 
 With a master account, you can install a data gateway, add users to the gateway, connect to data sources, and do other administrative tasks.
 
-With service principal, you can configure [row-level security (RLS)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview) using an SQL Server Analysis Services (SSAS) on-premises live connection data source. This way you can manage users and their access to data in SSAS when integrating with **Power BI Embedded** using a service principal.
+With service principal, you can configure [row-level security (RLS)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal) using an SQL Server Analysis Services (SSAS) on-premises live connection data source. This way you can manage users and their access to data in SSAS when integrating with **Power BI Embedded** using a service principal.
 
 ### Can you sign into the Power BI service with service principal?
 

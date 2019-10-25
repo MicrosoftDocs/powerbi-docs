@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -46,4 +46,5 @@ This is all straightforward, but there are a few things you should know:
 * If you rename or delete a column or measure, any visualizations you already have in Power BI with that field could be broken. 
 * Power BI ignores some format changes of existing columns. For example, if you change a column’s format  from 0.25 to 25%.
 * If you have a refresh schedule configured for your existing dataset in Power BI and you add new data sources to your file and then re-publish, you’ll have to sign into them in *Manage Data Sources* prior to the next scheduled refresh.
+* When you republish a dataset published from **Power BI Desktop** and have a refresh schedule defined, a dataset refresh is initiated as soon as you republish. 
 

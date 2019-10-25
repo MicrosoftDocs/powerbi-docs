@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/29/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -111,19 +111,19 @@ To find your tenant applications, follow these steps:
 
     ![Search for Power applications](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Select and copy both Object IDs for Power BI service and Power Query online from the results of your search. Be ready to paste those values in subsequent steps.
+5. Select and copy both Object IDs for Power BI Premium service and Power Query online from the results of your search. Be ready to paste those values in subsequent steps.
 
-7. Next, use **Azure Storage Explorer** to navigate to the *powerbi* file system you created in the previous section. Follow the instructions in [Managing access](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) section of [Set file and directory level permissions using Azure Storage explorer](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) article.
+6. Next, use **Azure Storage Explorer** to navigate to the *powerbi* file system you created in the previous section. Follow the instructions in [Managing access](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) section of [Set file and directory level permissions using Azure Storage explorer](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer) article.
 
-8. For each of the two Power BI Object IDs collected in step 5, Assign **Read**, **Write**, **Execute** Access and Default ACLs to your *powerbi* file system.
+7. For each of the two Power BI Premium Object IDs collected in step 5, Assign **Read**, **Write**, **Execute** Access and Default ACLs to your *powerbi* file system.
 
    ![for both, assign all three](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
 
-9. For the Power Query Online Object ID collected in step 4, Assign **Write**, **Execute** Access and Default ACLs to your *powerbi* file system.
+8. For the Power Query Online Object ID collected in step 4, Assign **Write**, **Execute** Access and Default ACLs to your *powerbi* file system.
 
    ![next, assign write and execute](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
 
-10. In addition, for the **Other**, Assign **Execute** Access and Default ACLs as well.
+9. In addition, for the **Other**, Assign **Execute** Access and Default ACLs as well.
 
     ![last, for other assign execute](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07c.jpg)
 
@@ -173,6 +173,7 @@ This feature is a preview feature, and its behavior may change as it approaches 
 * Only owners of a dataflow stored in Azure Data Lake Storage Gen2 can access its data by default. To authorize additional people to the dataflows stored in Azure, you must add them to the dataflow’s CDM folder 
 * Creating dataflows with linked entities is only possible when they are stored in the same storage account
 * On-premises data sources, in Power BI shared capacities, are not supported in dataflows stored in your organization’s data lake
+* Snapshots are not deleted automatically on ADLS Gen 2. If you want to free up space you can create an Azure function to periodically clean up old snapshots.
 
 There are also a few known issues, as described in this section.
 
@@ -180,7 +181,7 @@ Power BI Desktop customers cannot access dataflows stored in an **Azure Data Lak
 
 1. Anna has created a new app workspace and configured it to store dataflows in the organization’s data lake. 
 2. Ben, who is also a member of the workspace Anna created, would like to leverage Power BI Desktop and the dataflow connector to get data from the Dataflow Anna created.
-3. Ben receives an error similar because he was not authorized to the dataflow’s CDM folder in the lake.
+3. Ben receives a similar error because Ben was not authorized to the dataflow’s CDM folder in the lake.
 
 Common questions and answers include the following:
 

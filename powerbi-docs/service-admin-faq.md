@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 09/09/2019
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -69,7 +69,7 @@ There are three scenarios that might apply to users in your organization:
     In this scenario, if a user already has a work or school account in the tenant (for example, contoso.com) but doesn't yet have Power BI, Microsoft simply activates the plan for that account. The user is automatically notified with info on how to use the Power BI service.
 
 * **Scenario 2**: Your organization has an existing Office 365 environment, but the user signing up for Power BI doesn’t have an Office 365 account.
-    In this scenario, the user has an email address in your organization’s domain (for example, contoso.com) but doesn't yet have an Office 365 account. In this case, the user can sign up for Power BI and is automatically given an account. This action lets the user access the Power BI service. For example, if an employee named Nancy uses her work email address (like nancy@contoso.com) to sign up, Microsoft automatically adds Nancy as a user in Contoso’s Office 365 environment and activates Power BI for that account.
+    In this scenario, the user has an email address in your organization’s domain (for example, contoso.com) but doesn't yet have an Office 365 account. In this case, the user can sign up for Power BI and is automatically given an account. This action lets the user access the Power BI service. For example, if an employee named Nancy uses their work email address (like nancy@contoso.com) to sign up, Microsoft automatically adds Nancy as a user in Contoso’s Office 365 environment and activates Power BI for that account.
 
 * **Scenario 3**: Your organization doesn't have an Office 365 environment connected to your email domain.
     There are no administrative actions required for your organization to take advantage of Power BI. The service adds users to a new, cloud-only user directory. You can also choose to take over as the tenant admin and manage them.
@@ -117,9 +117,9 @@ Get-MsolCompanyInformation | fl allow*
 
 ### How can I prevent my existing users from starting to use Power BI?
 
-The Azure AD setting that controls this is **AllowAdHocSubscriptions**. Most tenants have this set to true, which means it's enabled. If you acquired Power BI through a partner, this may be set to false, which means it's disabled.
+The Azure AD setting that controls this is **AllowAdHocSubscriptions**. Most tenants have this set to *true*, which means it's enabled. If you acquired Power BI through a partner, this may be set to *false*, which means it's disabled.
 
-Use the following PowerShell script to disable ad hoc subscriptions. ([Learn more about PowerShell][1].)
+Use the following PowerShell script to disable ad hoc subscriptions.([Learn more about PowerShell][1].)
 
 1. Sign into Azure Active Directory using your Office 365 credentials. The first line of the following PowerShell script prompts you for your credentials. The second line connects to Azure Active Directory.
 
@@ -143,7 +143,7 @@ Use the following PowerShell script to disable ad hoc subscriptions. ([Learn mor
     ```
 
 > [!NOTE]
-> Use the **AllowAdHocSubscriptions** flag to control several user capabilities in your organization, including the ability for users to sign up for the Azure Rights Management Service. Changing this flag affects all of these capabilities.
+> Use the **AllowAdHocSubscriptions** flag to control several user capabilities in your organization, including the ability for users to sign up for the Azure Rights Management Service. Changing this flag affects all of these capabilities. With a setting of *false*, users can still sign up for a Pro trial.
 
 ### How can I allow my existing users to sign up for Power BI?
 
@@ -173,15 +173,11 @@ To use the Power BI admin portal, you must mark your account as a **Global Admin
 
 ### What is the process to manage a tenant created by Microsoft for my users?
 
-When a self-service user signs up for a cloud service that uses Azure AD, the service adds them to an unmanaged Azure AD directory based on their email domain. You can claim and manage the tenant that someone created using a process known as an *admin takeover*. The type of takeover you do depends on whether there's an existing managed tenant associated with your domain:
+When a self-service user signs up for a cloud service that uses Azure AD, the service adds them to an unmanaged Azure AD directory based on their email domain. You can claim and manage the tenant that someone created using a process known as an *admin takeover*. For more info, see [Take over an unmanaged directory as administrator in Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover). The type of takeover you do depends on whether there's an existing managed tenant associated with your domain:
 
-* Use an *internal takeover* to create a new managed tenant for the domain.
+* Power BI supports internal admin takeover. When you perform an _internal_ admin takeover of an unmanaged Azure directory, you are added as the global administrator of the unmanaged directory. No users, domains, or service plans are migrated to any other directory you administer.
 
-* Use an *external takeover* to move the domain to an existing managed tenant.
-
-For more info, see [Take over an unmanaged directory as administrator in Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover).
-
-When you do an external takeover, the service places Power BI content that was created before the takeover in a [Power BI Archived Workspace](service-admin-power-bi-archived-workspace.md). You must manually migrate any content that you want to use in the new tenant.
+* Power BI no longer supports external admin takeover. When you perform an _external_ admin takeover of an unmanaged Azure directory, you add the DNS domain name of the unmanaged directory to your managed Azure directory. When you add the domain name, a mapping of users to resources is created in your managed Azure directory so that users can continue to access services without interruption.
 
 ### If I have multiple domains, can I control the Office 365 tenant that users get added to?
 

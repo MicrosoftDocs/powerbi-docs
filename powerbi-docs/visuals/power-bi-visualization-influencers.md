@@ -5,23 +5,23 @@ author: mihart
 manager: kvivek
 ms.reviewer: juluczni
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 05/22/2019
+ms.date: 10/22/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
 # Key influencers visualization
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 The key influencers visual helps you understand the factors that drive a metric you're interested in. It analyzes your data, ranks the factors that matter, and displays them as key influencers. For example, suppose you want to figure out what influences employee turnover, which is also known as churn. One factor might be employment contract length, and another factor might be employee age. 
  
 ## When to use key influencers 
 The key influencers visual is a great choice if you want to: 
 - See which factors affect the metric being analyzed.
 - Contrast the relative importance of these factors. For example, do short-term contracts have more impact on churn than long-term contracts? 
-
-## Key influencer requirements 
-The metric you analyze must be either categorical or numerical field (aggregates and measures are not yet supported).
 
 ## Features of the key influencers visual
 
@@ -39,19 +39,21 @@ The metric you analyze must be either categorical or numerical field (aggregates
 
 6. **Right pane**: The right pane contains one visual. In this case, the column chart displays all the values for the key influencer **Theme** that was selected in the left pane. The specific value of **usability** from the left pane is shown in green. All the other values for **Theme** are shown in black.
 
-7. **Average line**: The average is calculated for all the other possible values for **Theme** except **usability**. So the calculation applies to all the values in black. It tells you what percentage of the other **Themes** gave you a low rating. In other words, when a rating is given by a customer, that customer also describes the reason or theme for the rating. Some themes are usability, speed, and security. 
+7. **Average line**: The average is calculated for all possible values for **Theme** except **usability** (which is the selected influencer). So the calculation applies to all the values in black. It tells you what percentage of the other **Themes** had a low rating. In this case 11.35% had a low rating (shown by the dotted line).
 
-   **Theme is usability** is the second-highest key influencer for a low rating, according to the visual in the left pane. If you average all the other themes and their contribution to a rating of **Low**, you get the result shown in red. Of all the other themes given, only 11.35% are higher than **usability**.
+8. **Check box**: Filters out the visual in the right pane to only show values that are influencers for that field. In this example, this would filter the visual to usability, security and navigation.
 
-8. **Check box**: **Only show values that are influencers**.
-
-## Create a key influencers visual 
+## Analyze a metric that is categorical
  
-Watch this video to learn how to create a key influencers visual. Then follow these steps to create one. 
+Watch this video to learn how to create a key influencers visual with a categorical metric. Then follow these steps to create one. 
 
+   > [!NOTE]
+   > This video uses an earlier version of Power BI Desktop.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Your Product Manager wants you to figure out which factors lead customers to leave negative reviews about your cloud service. To follow along, open the [Customer Feedback PBIX file](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) in Power BI Desktop. You also can download the [Customer Feedback Excel file for Power BI service or Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
+Your Product Manager wants you to figure out which factors lead customers to leave negative reviews about your cloud service. To follow along, open the [Customer Feedback PBIX file](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) in Power BI Desktop. You also can download the [Customer Feedback Excel file for Power BI service or Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). Select either link and then select **Download** from the GitHub page that opens.
 
 > [!NOTE]
 > The Customer Feedback data set is based on [Moro et al., 2014] S. Moro, P. Cortez, and P. Rita. "A Data-Driven Approach to Predict the Success of Bank Telemarketing." *Decision Support Systems*, Elsevier, 62:22-31, June 2014. 
@@ -60,20 +62,24 @@ Your Product Manager wants you to figure out which factors lead customers to lea
 
     ![From Visualizations pane, select Key influencers template](media/power-bi-visualization-influencers/power-bi-template-new.png)
 
-2. Move the metric you want to investigate into the **Analyze** field. The **Analyze** field supports categorical, or noncontinuous, variables only. To see what drives a customer rating of the service to be low, select **Customer Table** > **Rating**. 
+2. Move the metric you want to investigate into the **Analyze** field. To see what drives a customer rating of the service to be low, select **Customer Table** > **Rating**.
+
 3. Move fields that you think might influence **Rating** into the **Explain by** field. You can move as many fields as you want. In this case, start with:
     - Country-Region 
     - Role in Org 
     - Subscription Type 
     - Company Size 
-    - Theme 
-1. To focus on the negative ratings, select **Low** in the **What influences Rating to be** drop-down box.  
+    - Theme
+    
+4. Leave the **Expand by** field empty. This field is only used when analyzing a measure or summarized field. 
+
+5. To focus on the negative ratings, select **Low** in the **What influences Rating to be** drop-down box.  
 
     ![Select Low from drop-down box](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
 
 The analysis runs on the table level of the field that's being analyzed. In this case, it's the **Rating** metric. This metric is defined at a customer level. Each customer has given either a high score or a low score. All the explanatory factors must be defined at the customer level for the visual to make use of them. 
 
-In the previous example, all of the explanatory factors have either a one-to-one or a many-to-one relationship with the metric. In this case, each score has exactly one theme associated with it. This theme was the main theme of the customer review. Similarly, customers come from one country, have one membership type, and perform one role in their organization. The explanatory factors are already attributes of a customer, and no transformations are needed. The visual can make immediate use of them. 
+In the previous example, all of the explanatory factors have either a one-to-one or a many-to-one relationship with the metric. In this case, each customer assigned a single theme to their rating. Similarly, customers come from one country, have one membership type, and perform one role in their organization. The explanatory factors are already attributes of a customer, and no transformations are needed. The visual can make immediate use of them. 
 
 Later in the tutorial, you look at more complex examples that have one-to-many relationships. In those cases, the columns have to first be aggregated down to the customer level before you can run the analysis. 
 
@@ -84,7 +90,7 @@ Let's take a look at the key influencers for low ratings.
 
 ### Top single factor that influences the likelihood of a low rating
 
-The organization in this example has three roles: consumer, administrator, and publisher. Being a consumer is the top factor that contributes to a low rating. 
+The customer in this example can have three roles: consumer, administrator, and publisher. Being a consumer is the top factor that contributes to a low rating. 
 
 ![Select Role in Org is consumer](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
 
@@ -127,8 +133,13 @@ The visualization shows that every time tenure goes up by 13.44 months, on avera
  
 The scatter plot in the right pane plots the average percentage of low ratings for each value of tenure. It highlights the slope with a trend line.
 
-
 ![Scatter plot for Tenure](media/power-bi-visualization-influencers/power-bi-tenure.png)
+
+## Binned continuous key influencers
+
+In some cases you may find that your continuous factors were automatically turned into categorical ones. This is because we realized the relationship between the variables is not linear and so we cannot describe the relationship as simply increasing or decreasing (like we did in the example above).
+
+We run correlation tests to determine how linear the influencer is with regards to the target. If the target is continuous, we run Pearson correlation and if the target is categorical, we run Point Biserial correlation tests. If we detect the relationship is not sufficiently linear we conduct supervised binning and generate a maximum of 5 bins. To figure out which bins make the most sense we use a supervised binning method which looks at the relationship between the explanatory factor and the target being analyzed.
 
 ## Interpret measures and aggregates as key influencers 
  
@@ -155,9 +166,29 @@ In this group, 74.3% of the customers gave a low rating. The average customer ga
 
 ![Select first top segment](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
 
-## Working with numerical data
+## Adding counts
 
-If you move a numerical field into the **Analyze** field, you have a choice how to handle that scenario. You can change the behavior of the visual by going into the **Formatting Pane** and switching between **Categorical Analysis Type** and **Continuous Analysis Type**.
+Sometimes an influencer can have a big impact but represent very little of the data. For example, **Theme** is **usability** is the second biggest influencer for low ratings. However there might have only been a handful of customers who complained about usability. Counts can help you prioritize which influencers you want to focus on.
+
+You can turn counts on through the **Analysis card** of the formatting pane.
+
+![Add counts](media/power-bi-visualization-influencers/power-bi-ki-counts-toggle.png)
+
+Once counts are turned on, you’ll see a ring around each influencer’s bubble, which represents the approximate percentage of data that influencer contains. The more of the bubble the ring circles, the more data it contains. We can see that **Theme** is **usability** contains a very small proportion of data.
+
+![Show counts](media/power-bi-visualization-influencers/power-bi-ki-counts-ring.png)
+
+You can also use the Sort by toggle in the bottom left of the visual to sort the bubbles by count first instead of impact. **Subscription Type** is **Premier** is the top influencer based on count.
+
+![Sort by counts](media/power-bi-visualization-influencers/power-bi-ki-counts-sort.png)
+
+Having a full ring around the circle means the influencer contains 100% of the data. You can change the count type to be relative to the maximum influencer using the **Count type** dropdown in the **Analysis card** of the formatting pane. Now the influencer with the most amount of data will be represented by a full ring and all other counts will be relative to it.
+
+![Show relative counts](media/power-bi-visualization-influencers/power-bi-ki-counts-type.png)
+
+## Analyze a metric that is numeric
+
+If you move an unsummarized numerical field into the **Analyze** field, you have a choice how to handle that scenario. You can change the behavior of the visual by going into the **Formatting Pane** and switching between **Categorical Analysis Type** and **Continuous Analysis Type**.
 
 ![Change from categorical to continuous](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
 
@@ -202,17 +233,40 @@ Top segments for numerical targets show groups where the house prices on average
 
 ![Numeric target measures influencers](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
 
+## Analyze a metric that is a measure or a summarized column
+
+In the case of a measure or summarized column the analysis defaults to the **Continuous Analysis Type** described [above](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric). This cannot be changed. The biggest difference between analyzing a measure/summarized column and an unsummarized numeric column is the level at which the analysis runs.
+
+In the case of unsummarized columns, the analysis always runs at the table level. In the house price example above, we analyzed the **House Price** metric to see what influences a house price to increase/decrease. The analysis automatically runs on the table level. Our table has a unique ID for each house so the analysis runs at a house level.
+
+![Measures table](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
+
+For measures and summarized columns, we don't immediately know what level to analyze them at. If **House Price** was summarized as an **Average**, we would need to consider what level we would like this average house price calculated. Is it the average house price at a neighborhood level? Or perhaps a regional level?
+
+Measures and summarized columns are automatically analyzed at the level of the **Explain by** fields used. Imagine we have three fields in **Explain By** we are interested in: **Kitchen Quality**, **Building Type** and **Air Conditioning**. **Average House Price** would be calculated for each unique combination of those three fields. It is often helpful to switch to a table view to take a look at what the data being evaluated looks like.
+
+![Measures table](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
+
+This analysis is very summarized and so it will be hard for the regression model to find any patterns in the data it can learn from. We should run the analysis at a more detailed level to get better results. If we wanted to analyze the house price at the house level we would need to explicitly add the **ID** field to the analysis. Nevertheless, we don't want the house ID to be considered an influencer. It is not helpful to learn that as house ID increases, the price of a house increase. This is where the **Expand By** field well option comes in handy. You can use **Expand By** to add fields you want to use for setting the level of the analysis without looking for new influencers.
+
+Take a look at what the visualization looks like once we add **ID** to **Expand By**. Once you have defined the level at which you want your measure evaluated, interpreting influencers is exactly the same as for [unsummarized numeric columns](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
+
+![Measures table](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
+
+If you would like to learn more about how you can analyze measures with the key influencers visualization please watch the following tutorial.
+
+<iframe width="1167" height="631" src="https://www.youtube.com/embed/2X1cW8oPtc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Considerations and troubleshooting 
  
-**What are the limitations for the preview?** 
+**What are the limitations for the visual?** 
  
-The key influencers visual is currently in public preview, and it has some limitations. Functionality that's currently not available includes: 
-- Analyzing metrics that are aggregates or measures.
-- Consuming the visual in Power BI Embedded.
-- Consuming the visual on Power BI mobile apps.
-- RLS support.
-- Direct Query support.
-- Live Connection support.
+The key influencers visual has some limitations:
+
+- Direct Query is not supported
+- Live Connection to Azure Analysis Services and SQL Server Analysis Services is not supported
+- Publish to web is not supported
+- .NET Framework 4.6 or higher is required
 
 ![Numeric question](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
 
@@ -236,6 +290,12 @@ We recommend that you have at least 100 observations for the selected state. In 
 
 If you are analyzing a numeric field you may want to switch from **Categorical Analysis** to **Continuous Analysis** in the **Formatting Pane** under the **Analysis** card.
 
+**I see an error that when 'Analyze' is not summarized, the analysis always runs at the row level of its parent table. Changing this level via 'Expand by' fields is not allowed. Why is that?**
+
+When analyzing a numeric or categorical column, the analysis always runs at the table level. For example, if you are analyzing house prices and your table contains an ID column, the analysis will automatically run at the house ID level. 
+
+When you are analyzing a measure or summarized column, you need to explicitly state at which level you would like the analysis to run at. You can use **Expand by** to change the level of the analysis for measures and summarized columns without adding new influencers. If  **House price** was defined as a measure you could add the house ID column to **Expand by** to change the level of the analysis.
+
 **I see an error that a field in *Explain by* isn't uniquely related to the table that contains the metric I'm analyzing. Why is that?**
  
 The analysis runs on the table level of the field that's being analyzed. For example, if you analyze customer feedback for your service, you might have a table that tells you whether a customer gave a high rating or a low rating. In this case, your analysis is running at the customer table level. 
@@ -258,7 +318,7 @@ This error appears because the device isn't defined at the customer level. One c
 - You can change the summarization of devices to count. For example, use count if the number of devices might affect the score that a customer gives. 
 - You can pivot the device column to see if consuming the service on a specific device influences a customer’s rating.
  
-In this example, the data was pivoted to create new columns for browser, mobile, and tablet. You can now use these specific devices in **Explain by**. All devices turn out to be influencers, and the browser has the largest effect on customer score.
+In this example, the data was pivoted to create new columns for browser, mobile, and tablet (make sure you delete and re-create your relationships in the modeling view after pivoting your data). You can now use these specific devices in **Explain by**. All devices turn out to be influencers, and the browser has the largest effect on customer score.
 
 More precisely, customers who don't use the browser to consume the service are 3.79 times more likely to give a low score than the customers who do. Lower down in the list, for mobile the inverse is true. Customers who use the mobile app are more likely to give a low score than the customers  who don’t. 
 

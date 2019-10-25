@@ -1,36 +1,52 @@
 ---
-title: Search and sort your content in Power BI service
-description: documentation for searching and sorting content in Power BI workspaces
+title: Search and sort your content in the Power BI service
+description: documentation for searching and sorting content in Power BI My workspace
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: 'willt'
 ms.custom: 
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/21/2019
+ms.date: 10/21/2019
 ms.author: mihart
 
 LocalizationGroup: Get started
 ---
 # Navigation: searching, finding, and sorting content in Power BI service
-There are many ways to navigate your content in Power BI service. The content is organized within your workspace by type: dashboards, reports, workbooks, and datasets.  And the content is also organized by usage: favorites, recent, apps, shared with me, and featured. For one stop navigation, the Home page organizes content all on one page. These different pathways into your content allow you to quickly find what you need in Power BI service.  
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
+There are many ways to navigate to your content in the Power BI service. The content is organized within your workspace by type: dashboards and reports.  And the content is also organized by usage: favorites, recent, apps, shared with me, and featured. For one stop navigation, Power BI *Home* organizes content all on one page. These different pathways into your content allow you to quickly find what you need in the Power BI service.  
 
 ## Navigation within workspaces
 
-Power BI *consumers* typically have only one workspace: **My workspace**. **My workspace** will only have content if you've downloaded Microsoft samples or created or downloaded your own content.  
+Power BI *consumers* typically have only one workspace: **My workspace**. **My workspace** will contain content if you've downloaded Microsoft samples or created or downloaded your own dashboards, reports, or apps.  
 
-Within **My workspace**, Power BI service separates your content by type: dashboards, reports, workbooks, and datasets. You'll see this organization when you select a workspace. In this example, **My workspace** contains one dashboards, two reports, no workbook, and two datasets.
+Within **My workspace**, the Power BI service separates your content by type: dashboards, reports, workbooks, and datasets. You'll see this organization when you select a workspace. In this example, **My workspace** contains one dashboard, one report, no workbooks, and one dataset.
 
-![video](./media/end-user-search-sort/nav.gif)
+![video](./media/end-user-search-sort/myworkspace/myworkspace.gif)
 
 ________________________________________
+## Navigation using the Search field
+Use the **My workspace** content view to search, filter, and sort your content. In the Search field, type all or part of the name of a dashboard, report, workbook, or owner.  
 
-## Navigation using the left navbar
-The left nav bar classifies your content in ways that make it even easier to find what you need, quickly.  
+If you only have a few pieces of content, searching and sorting isn't necessary.  But when you have long lists of dashboards and reports, you'll find searching and sorting extremely helpful. For example, the report list, below, has 83 items. 
 
-![left nav bar](./media/end-user-search-sort/power-bi-newnav2.png)
+![search for a report](./media/end-user-experience/power-bi-search.png)
+
+You can also sort the content by name or owner. Notice the up arrow to the right of **Name**. We're currently sorting 83 items alphabetically by name, ascending. To change the sort order to descending, select **Name**. The up arrow changes to a down arrow.
+
+![sort content](./media/end-user-experience/power-bi-sort-new.png)
+
+Not all columns can be sorted. Hover over the column headings to discover which can be sorted.
+
+___________________________________________________________________
+## Navigation using the navigation pane
+The navigation pane (nav pane) classifies your content in ways that help you find what you need, quickly.  
+
+![left nav pane](./media/end-user-search-sort/power-bi-navbar.png)
 
 
 - Content that is shared with you is available in **Shared with me**.
@@ -38,15 +54,16 @@ The left nav bar classifies your content in ways that make it even easier to fin
 - Your apps can be found by selecting **Apps**.
 - **Home** is a single page view of your most important content and suggested content and learning sources.
 
-Additionally, you can tag content as [favorite](end-user-favorite.md) and [featured](end-user-featured.md). Pick the one dashboard that you expect to view most often, and set it as your *featured* dashboard. Each time you open Power BI service, your featured dashboard will display first. Do you have a number of dashboards and apps that you visit often? By setting them as favorites, they'll always be available from your left navbar.
+Additionally, you can tag content as [favorite](end-user-favorite.md) and [featured](end-user-featured.md). Pick the one dashboard or report that you expect to view most often, and set it as your *featured* content. Each time you open the Power BI service, your featured dashboard will display first. Do you have a number of dashboards and apps that you visit often? By setting them as favorites, they'll always be available from your left nav bar.
 
-![Favorites flyout](./media/end-user-search-sort/power-bi-favorite-flyout.png).
+![Favorites flyout](./media/end-user-search-sort/power-bi-favorite.png).
+
 
 
 ## Considerations and troubleshooting
 * For datasets, **Sort by** isn't available by owner.
 
 ## Next steps
-[Power BI - Basic Concepts](end-user-basic-concepts.md)
+[Sort visuals in reports](end-user-change-sort.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

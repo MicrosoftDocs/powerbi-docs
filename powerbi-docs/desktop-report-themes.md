@@ -8,37 +8,48 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 09/26/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
 ---
 # Use Report Themes in Power BI Desktop
-With **Report Themes** you can apply a color theme to your entire report, such as corporate colors, seasonal coloring, or other color themes. When you apply a **Report Theme**, all visuals in your report use the colors from your selected theme. A few exceptions apply, and they're described later in this article.
+With **Report Themes** you can apply design changes to your entire report, such as using corporate colors, changing icon sets, or applying new default visual formatting. When you apply a **Report Theme**, all visuals in your report use the colors and formatting from your selected theme. A few exceptions apply, and they're described later in this article.
 
-![Report themes](media/desktop-report-themes/report-themes_1.png)
+![Report themes](media/desktop-report-themes/report-themes-1a.png)
 
-When you apply a **Report Theme**, you need a JSON file that uses a basic structure. You can then import this JSON file into Power BI Desktop and apply it to your report. The JSON file structure, and the process of importing it, are quick and easy (just a few button clicks).
+When you apply a custom **Report Theme**, you need a JSON file that uses a basic structure. You can then import this JSON file into Power BI Desktop and apply it to your report.
 
-You can also customize and standardize nearly all elements. To customize, you use the JSON file, which you manually adjust in the **Formatting** pane. The goal is to give you full control over how your reports look and feel, to a granular level.
+You can also customize and standardize nearly all elements seen in the **Formatting** pane through the theme JSON file. The goal is to give you full control over how your reports look and feel, to a granular level.
 
 ## How Report Themes work
 To apply a Report Theme to a Power BI Desktop report, select from among the available built-in report themes or import a custom theme.
 
 | Built-In report theme	| Default color sequence 	|
 |------	|----------	|
-| Default 	| ![#01B8AA](https://placehold.it/20/01B8AA/000000?text=+) ![#374649](https://placehold.it/20/374649/000000?text=+) ![#FD625E](https://placehold.it/20/FD625E/000000?text=+) ![#F2C80F](https://placehold.it/20/F2C80F/000000?text=+) ![#5F6B6D](https://placehold.it/20/5F6B6D/000000?text=+) ![#8AD4EB](https://placehold.it/20/8AD4EB/000000?text=+) ![#FE9666](https://placehold.it/20/FE9666/000000?text=+) ![#A66999](https://placehold.it/20/A66999/000000?text=+)|
-| City park 	| ![#73B761](https://placehold.it/20/73B761/000000?text=+) ![#4A588A](https://placehold.it/20/4A588A/000000?text=+) ![#ECC846](https://placehold.it/20/ECC846/000000?text=+) ![#CD4C46](https://placehold.it/20/CD4C46/000000?text=+) ![#71AFE2](https://placehold.it/20/71AFE2/000000?text=+) ![#8D6FD1](https://placehold.it/20/8D6FD1/000000?text=+) ![#EE9E64](https://placehold.it/20/EE9E64/000000?text=+) ![#95DABB](https://placehold.it/20/95DABB/000000?text=+)|
-| Classroom 	| ![#4A8DDC](https://placehold.it/20/4A8DDC/000000?text=+) ![#4C5D8A](https://placehold.it/20/4C5D8A/000000?text=+) ![#F3C911](https://placehold.it/20/F3C911/000000?text=+) ![#DC5B57](https://placehold.it/20/DC5B57/000000?text=+) ![#33AE81](https://placehold.it/20/33AE81/000000?text=+) ![#95C8F0](https://placehold.it/20/95C8F0/000000?text=+) ![#DD915F](https://placehold.it/20/DD915F/000000?text=+) ![#9A64A0](https://placehold.it/20/9A64A0/000000?text=+)|
-| Colorblind safe 	| ![#074650](https://placehold.it/20/074650/000000?text=+) ![#009292](https://placehold.it/20/009292/000000?text=+) ![#FE6DB6](https://placehold.it/20/FE6DB6/000000?text=+) ![#FEB5DA](https://placehold.it/20/FEB5DA/000000?text=+) ![#480091](https://placehold.it/20/480091/000000?text=+) ![#B66DFF](https://placehold.it/20/B66DFF/000000?text=+) ![#B5DAFE](https://placehold.it/20/B5DAFE/000000?text=+) ![#6DB6FF](https://placehold.it/20/6DB6FF/000000?text=+)|
-| Electric 	| ![#118DFF](https://placehold.it/20/118DFF/000000?text=+) ![#750985](https://placehold.it/20/750985/000000?text=+) ![#C83D95](https://placehold.it/20/C83D95/000000?text=+) ![#FF985E](https://placehold.it/20/FF985E/000000?text=+) ![#1DD5EE](https://placehold.it/20/1DD5EE/000000?text=+) ![#42F7C0](https://placehold.it/20/42F7C0/000000?text=+) ![#3049AD](https://placehold.it/20/3049AD/000000?text=+) ![#F64F5C](https://placehold.it/20/F64F5C/000000?text=+)|
-| High contrast 	| ![#107C10](https://placehold.it/20/107C10/000000?text=+) ![#002050](https://placehold.it/20/002050/000000?text=+) ![#A80000](https://placehold.it/20/A80000/000000?text=+) ![#5C2D91](https://placehold.it/20/5C2D91/000000?text=+) ![#004B50](https://placehold.it/20/004B50/000000?text=+) ![#0078D7](https://placehold.it/20/0078D7/000000?text=+) ![#D83B01](https://placehold.it/20/D83B01/000000?text=+) ![#B4009E](https://placehold.it/20/B4009E/000000?text=+)|
-| Sunset 	| ![#B6B0FF](https://placehold.it/20/B6B0FF/000000?text=+) ![#3049AD](https://placehold.it/20/3049AD/000000?text=+) ![#FF994E](https://placehold.it/20/FF994E/000000?text=+) ![#C83D95](https://placehold.it/20/C83D95/000000?text=+) ![#FFBBED](https://placehold.it/20/FFBBED/000000?text=+) ![#42F9F9](https://placehold.it/20/42F9F9/000000?text=+) ![#00B2D9](https://placehold.it/20/00B2D9/000000?text=+) ![#FFD86C](https://placehold.it/20/FFD86C/000000?text=+)|
-| Twilight 	| ![#F17925](https://placehold.it/20/F17925/000000?text=+) ![#004753](https://placehold.it/20/004753/000000?text=+) ![#CCAA14](https://placehold.it/20/CCAA14/000000?text=+) ![#4B4C4E](https://placehold.it/20/4B4C4E/000000?text=+) ![#D82C20](https://placehold.it/20/D82C20/000000?text=+) ![#A3D0D4](https://placehold.it/20/A3D0D4/000000?text=+) ![#536F18](https://placehold.it/20/536F18/000000?text=+) ![#46ABB0](https://placehold.it/20/46ABB0/000000?text=+)|
+| Default 	| ![default](media/desktop-report-themes/report-themes-color-scheme-default.png)|
+| Highrise 	| ![highrise](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
+| Executive 	| ![executive](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
+| Frontier	| ![frontier](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
+| Innovative 	| ![innovative](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
+| Bloom 	| ![bloom](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
+| Tidal	| ![tidal](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
+| Temperature 	| ![temperature](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
+| Solar	| ![solar](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
+| Divergent 	| ![divergent](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
+| Storm 	| ![storm](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
+| Classic 	| ![classic](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
+| City park 	| ![city park](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
+| Classroom 	| ![classroom](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
+| Colorblind safe 	| ![colorblind safe](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+| Electric 	| ![electric](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
+| High contrast 	| ![high contrast](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
+| Sunset 	| ![sunset](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
+| Twilight 	| ![twilight](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
 
 To select from available built-in report themes, select **Switch Theme** button from the **Home** ribbon, then select one of the included themes from the drop-down menu.
 
-![Select a report theme](media/desktop-report-themes/report-themes_2a.png)
+![Select a report theme](media/desktop-report-themes/report-themes-2a.png)
 
 Your report theme is applied to the report, and you're ready to go.
 
@@ -46,7 +57,7 @@ Your report theme is applied to the report, and you're ready to go.
 
 To import a custom Report Theme, select the **Switch Theme** button from the **Home** ribbon. Then select **Import Theme** from the drop-down menu.
 
-![Import theme](media/desktop-report-themes/report-themes_3.png)
+![Import theme](media/desktop-report-themes/report-themes-3a.png)
 
 A window appears that lets you browse to the location of the JSON theme file. Power BI Desktop looks for JSON files because JSON is the Power BI Report Theme file type. In the following image, a handful of holiday theme files are available. We'll choose a holiday theme for March.
 
@@ -56,7 +67,7 @@ When the theme file has loaded successfully, Power BI Desktop lets you know.
 
 ![Theme imported successfully](media/desktop-report-themes/report-themes_5.png)
 
-Now that we've imported a theme file, let's take a look at the simple and straightforward JSON file structure.
+Now that we've imported a theme file, let's take a look at the JSON file structure.
 
 ## Structure of a Report Theme JSON file
  When opened in an editor, the basic JSON file that we selected in the previous section (the *St Patrick's Day.json* file), looks like the following screenshot:
@@ -69,17 +80,7 @@ That JSON file has the following required lines:
 
 * **dataColors**: The list of hex code color codes to use for data in Power BI Desktop visuals. The list can have as many or as few colors as you want.
 
-* **background**, **foreground**, and **tableAccent**: The colors that should be applied in various types of visuals. 
-  - **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. 
-  - **background** applies to button fill and combo chart label background. How these colors are used depends on the specific visual style that's applied. 
-  - **table** and **matrix** visuals apply these styles by default.
-
-To apply a style to a **table** or **matrix** visual, take the following steps: 
-1. Select the visual. 
-2. Then, in the **Visualizations** pane, select the **Format** section.
-3. Expand **Matrix style**, and then select a style from the **Style** drop-down.
-
-![Style drop-down](media/desktop-report-themes/report-themes_7.png)
+* **background**, **foreground**, and **tableAccent**: Several color classes. We get into the details of color classes later in this article, but know that the color classes enable you to set many colors in your report at once.
 
 Following is the text of the *St Patrick's Day.json* file that you can use to create your own JSON file:
 
@@ -93,7 +94,7 @@ Following is the text of the *St Patrick's Day.json* file that you can use to cr
     }
 ```
 
-From there, you can enter your own color hex code for your selected colors.
+If all you want to do is adjust the basic colors of your report, you’ll be able to just change the name and hex codes of this file to get your own personal JSON file ready to import.
 
 In the JSON file, you define only the formatting that you want to adjust, and anything that's *not* specified in your JSON file simply reverts to the Power BI default settings.
 
@@ -112,10 +113,12 @@ The **Data colors** section of the **Format** panel reflects your Report Theme. 
 
 See all that green? That's because those colors were part of the **Report Theme** that we imported and applied.
 
-### Situations when Report Theme colors won't stick to your reports
-Let's say you apply a custom color set (or individual color) to a particular data point in a visual. When you apply a Report Theme, it will *not* override that customized data point color.
+Colors in the color palette are also relative to current theme. So if you select the third color of the top row for a data point, for example, and later change to the different theme, that data point’s color will update to the third color of the top row in the new theme automatically, just as you’d see when changing themes in Microsoft Office.
 
-Maybe you also want to manually set the color of a data point color by using the Theme colors section. The colors will *not* be updated when you apply a new Report Theme. If you want to get your default colors back, so they'll update when you apply a new Report Theme, select **Revert to default** in the **Theme colors** palette.
+### Situations when Report Theme colors won't stick to your reports
+Let's say you apply a custom color set (or individual color) to a particular data point in a visual using the Custom color option in the color picker. When you apply a Report Theme, it will *not* override that customized data point color.
+
+Maybe you also want to manually set the color of a data point color by using the Theme colors section. The colors will *not* be updated when you apply a new Report Theme. If you want to get your default colors back, so they'll update when you apply a new Report Theme, select **Revert to default** or select a color from the **Theme colors** palette in the color picker.
 
 ![Revert to default](media/desktop-report-themes/report-themes_9.png)
 
@@ -162,13 +165,139 @@ Here are a few more report themes you can use as starting points:
 * [High contrast](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597)
 
 ## Report theme JSON file format
-The basic JSON file has five required lines:
+At its most basic level, the theme JSON file only has one required line: the **name**. 
 
-* **name**: The theme name, which is the only required field.
-* **dataColors**: The list of hex code color codes to use for data in Power BI Desktop visuals. The list can have as many or as few colors as you want.
-* **background**, **foreground**, and **tableAccent**: The colors that should be applied in various types of visuals. The **foreground** applies to textbox text, KPI goal text, multi-row card text, card value text, gauge callout text, vertical slicer element text, and **table** and **matrix** total and values text. The **background** applies to button fill and combo chart label background. How these colors are used depends on the specific visual style that's applied. The **table** and **matrix** visuals apply these styles by default.
+```json
+    {
+        "name": "Custom Theme",
+    }
+```
 
-To create an extended-format JSON file, with more detailed and granular control over formatting, you also need to add a **visualStyles** section to the JSON file. You nest the formatting specifics in the  **visualStyles** section. The  **visualStyles** section looks similar to the following format:
+Other than *name* everything else is optional, which means you're free only to add the properties you specifically want to format to the theme file, and continue to use Power BI’s defaults for the rest. 
+
+Under the name, you can add some basic data color related properties. 
+
+
+* **dataColors**: The list of hex code color codes to use for data in Power BI Desktop visuals. The list can have as many or as few colors as you want. Once all colors from this list have been used, if the visual still needs more colors, it reverts back to using Power BI’s default color palette. 
+* **good, neutral, bad**: These set the status colors used by the waterfall chart and the KPI visual.
+* **maximum, center, minimum, null**: These colors set the various gradient colors in the conditional formatting dialog.  
+
+A basic theme that defines these colors would look like the following:
+
+```json
+    {
+        "name": "Custom Theme",
+	      "dataColors": [
+        		"#118DFF",
+        		"#12239E", 
+        		"#E66C37", 
+        		"#6B007B", 
+        		"#E044A7",
+        		"#744EC2", 
+        		"#D9B300", 
+        		"#D64550",
+        		"#197278", 
+        		"#1AAB40"
+	],
+    	"good": "#1AAB40",
+    	"neutral": "#D9B300",
+    	"bad": "#D64554",
+    	"maximum": "#118DFF",
+    	"center": "#D9B300",
+    	"minimum": "#DEEFFF",
+    	"null": "#FF7F48"
+    }
+```
+
+Next you can add various color classes. Color classes let you set many colors throughout your report in one line, by grouping similar visual properties that generally have the same color together. 
+
+You can see the six color classes you can format in the following table.
+
+
+|Color class  |What it formats  |
+|---------|---------|
+|foreground	| Labels background color (when outside data points) <br> Trend line color <br>  Textbox default color <br> Table and matrix values and totals font colors Data bars axis color <br> Card data labels <br> Gauge callout value color <br> KPI goal color <br>  KPI text color <br> Slicer item color (when in Focus mode)  <br> Slicer dropdown item font color <br> Slicer numeric input font color <br> Slicer header font color <br> Scatter chart ratio line color <br> Line chart forecast line color <br> Map leader line color <br> Filter pane and card text color|
+|foregroundNeutralSecondary |Label colors  <br> Legend label color <br> Axis label color <br> Table and matrix header font color <br> Gauge target and target leader line color <br>  KPI trend axis color <br> Slicer slider color <br> Slicer item font color <br> Slicer outline color <br> Line chart hover color <br> Multi-row card title color <br> Ribbon chart stroke color <br> Shape map border color <br> Button text font color <br> Button icon line color <br> Button outline color |
+| foregroundNeutralTertiary | legend dimmed color <br> Card category label color <br> Multi-row card category labels color <br> Mulit-row card bar color <br> Funnel chart conversion rate stroke color 
+| backgroundLight | Axis gridline color <br> Table and matrix grid color <br> Slicer header background color (when in Focus mode)  <br> Multi-row card outline color  <br> Shape fill color <br> Gauge arc background color <br> Applied filter card background color <br> |
+backgroundNeutral | Table and matrix grid outline color <br> Shape map default color <br> Ribbon chart ribbon fill color (when match series option is turned off) |
+background | Labels background color (when inside data points) <br> Slicer dropdown items background color  <br> Donut chart stroke color <br> Treemap stroke color <br> Combo chart background color <br> Button fill color <br> Filter pane and available  filter card background color |
+tableAccent | Overrides table and matrix grid outline color when present |
+
+
+Here’s a sample theme setting the color classes:
+
+```json
+    {
+        "name": "Custom Theme",
+   	    "foreground": "#252423",
+    	  "foregroundNeutralSecondary": "#605E5C",
+    	  "foregroundNeutralTertiary": "#B3B0AD",
+   	    "background": "#FFFFFF",
+    	  "backgroundLight": "#F3F2F1",
+    	  "backgroundNeutral": "#C8C6C4",
+   	    "tableAccent": "#118DFF"
+    }
+```
+
+Next up, you can add text classes to your JSON file, which are similar to color classes but are designed to allow you to update the font size, color, and family for groups of text across your report. There are 12 text classes, but you actually only need to set four classes, called *primary classes*, to change all of the text formatting in your report. Other text classes, considered the *secondary classes*, automatically inherit or derive their properties from their associated primary classes. Often a secondary class derives a lighter shade of text color, or a percentage large or smaller text size compared to the primary class. 
+
+Take the *label* class as an example. The default formatting for the label class is Segoe UI, #252423 (a dark grey color), and 12 point, and this class is used to format the values in the table and matrix. Typically the totals in a table or matrix are going to have similar formatting, but are bolded so they stand out more, so they use the bold label class. However, you never have to specify that yourself in the theme JSON. Power BI figures that out automatically for you. If you later decide you want your labels to be at 14 point font and specify that in your theme, you don’t need to also update the bold label class, since it inherits all the text formatting from the label class and just bolds the font family on top of that. 
+
+The table list shows the following:
+* The four primary text classes, what it formats, and its default settings
+* Each secondary class, what it formats, and its default setting that is unique compared to the primary class
+
+
+|Primary class  |Secondary Classes  |Class name in JSON  |Settings  |Associated visual objects  |
+|---------|---------|---------|---------|---------|
+| Callout	| N/A	| callout | DIN <br> #252423 <br> 45pt |Card data labels <br> KPI indicators|
+|Header|N/A|header|Segoe UI Semibold <br> #252423 <br> 12pt	|Key influencers headers |
+| Title || title	|DIN <br> #252423 <br> 12pt |Category axis title <br> Value axis title <br> Multi-row card title * <br> Slicer header|
+|-| Large title	| largeTitle	|14pt	|Visual title |
+|Label ||label |Segoe UI<br>#252423<br>10pt |Table and matrix column headers <br> Matrix row headers<br>Table and matrix grid<br>Table and matrix values |
+|-|Semibold |semiboldLabel| Segoe UI Semibold	| Key influencers profile text
+|-|Large	|largeLabel	|12pt	| Multi-row card data labels |
+|-|Small	|smallLabel	|9pt	|Reference line labels * <br>Slicer date range labels<br> Slicer numeric input text style<br>Slicer search box<br>Key influencers influencer text|
+|-|Light	|lightLabel	|#605E5C	|Legend text<br>Button text<br>Category Axis labels<br>Funnel chart data labels<br>Funnel chart conversion rate labels<br>Gauge target<br>Scatter chart category label<br>Slicer items|
+|-|Bold	|boldLabel	|Segoe UI Bold	|Matrix subtotals<br>Matrix grand totals<br>Table totals |
+|-|Large and Light	|largeLightLabel	|#605E5C<br>12pt	|Card category labels<br>Gauge labels<br>Multi-row card category labels |
+|-|Small and Light	|smallLightLabel	|#605E5C<br>9pt	|Data labels<br>Value axis labels|
+
+
+While you don’t have to set the secondary classes in your theme file since they inherit from the primary classes, if you don’t like the inheritance rules (for example,if you don’t want your totals to be a bolded version of the values in a table), you can explicitly format the secondary classes in the theme file, just like you can format the primary classes.
+
+Here’s an example theme that only sets the primary text classes: 
+
+```json
+    {
+        	"name": "Custom Theme",
+   	      "textClasses": {
+        		"callout": {
+            		"fontSize": 45,
+            		"fontFace": "wf_standard-font",
+            		"color": "#252423"
+        		},
+        		"title": {
+            		"fontSize": 12,
+            		"fontFace": "wf_standard-font",
+            		"color": "#252423"
+        		},
+        		"header": {
+            		"fontSize": 12,
+            		"fontFace": "Segoe UI Semibold",
+            		"color": "#252423"
+        		},
+        		"label": {
+            		"fontSize": 10,
+            		"fontFace": "Segoe UI",
+            		"color": "#252423"
+        		}
+    	}    
+    }
+```
+
+Lastly, to create an extended-format JSON file, with more detailed and granular control over all visual formatting, you can add a **visualStyles** section to the JSON file. You nest the formatting specifics in the  **visualStyles** section. The  **visualStyles** section looks similar to the following format:
 
     visualStyles: {
         visualName: {
@@ -180,7 +309,52 @@ To create an extended-format JSON file, with more detailed and granular control 
         }
     }
 
-For the **visualName** and **cardName** sections,   use a specific visual and cardName. Use an asterisk ("\*") if you want that setting to apply to all visuals or cards that have a property for a specific visual. You can also use the asterisk ("\*") when you want to apply a setting globally in your report, such as a font size or specific font family for the visuals.
+For the **visualName** and **cardName** sections, use a specific visual and card name. Currently the **styleName** is always an asterisk ("*"), but in a future release you’ll be able to create different styles for your visuals and give them names (similar to the table and matrix style feature). **propertyName** is the name of the specific formatting option and **propertyValue** is where you’d put what you want that formatting option to be.  
+
+For **visualName** and **cardName**, you can use an asterisk ("\*") instead of a specific visual or card name if you want that setting to apply to all visuals or cards that have a property. If you use the asterisk ("\*") for both the visual and card name, you'd effectively be applying a setting globally in your report, such as a font size or specific font family for all text across all visuals.
+
+Here’s an example setting a few properties through the visual styles. 
+
+```json
+{  
+   "name":"Custom Theme",
+   "visualStyles":{  
+      "*":{  
+         "*":{  
+            "*":[{  
+                  "wordWrap":true
+            }],
+            "categoryAxis":[{
+                  "gridlineStyle":"dotted"
+            }],
+            "filterCard":[{  
+                  "$id":"Applied",
+                  "foregroundColor":{"solid":{"color":"#252423"}}
+               },
+               {  
+                  "$id":"Available",
+                  "border":true
+            }]
+         }
+      },
+      "scatterChart":{  
+         "*":{  
+            "bubbles":[{  
+                  "bubbleSize":-10
+            }]
+         }
+      }
+   }
+}
+```
+
+This example shows the following:
+
+* Turning on word wrap everywhere
+* Setting the gridline style to dotted for all visuals with a category axis
+* Setting some formatting for the available and applied filter cards (note the format using “$id” to set the different versions of the filter cards)
+* Setting the bubble size for scatter charts to -10.
+
 
 > [!NOTE]
 > You only need to specify the formatting elements you want to adjust. Any formatting elements that are not included in the JSON file simply revert to their default values and settings.
@@ -189,12 +363,6 @@ For the **visualName** and **cardName** sections,   use a specific visual and ca
 
 ### JSON file element definitions
 The tables in this section define visual names (*visualName*), card names (*cardName*), and the enumerations that are necessary to create your JSON file.
-
-When you're using *dateTime*, the date must be an ISO date in single quotes, with datetime at the beginning. Following is an example:
-
-    “datetime’2011-10-05T14:48:00.000Z’”
-
-Booleans are either *true* or *false*. Strings must be in double quotes, as in "this is a string".
 
 | **visualName** |
 | --- |
@@ -287,10 +455,24 @@ The following table defines *cardName* values. The first value in each cell is t
 | zoom: Zoom |
 
 ### Properties within each card
-The following section defines the properties within each card:
+The following section defines the properties within each card. The card name is followed by each property name. For each property the name you see if the formatting pane is displayed, a description of what the formatting option does, and the type of the formatting option. This approach lets you know what kind of values you can use in your theme file. 
+
+When you're using **dateTime**, the date must be an ISO date in single quotes, with datetime at the beginning. Following is an example:
+
+    “datetime’2011-10-05T14:48:00.000Z’”
+
+Booleans are either true or false. Strings must be in double quotes, as in "this is a string". Numbers are just the value itself, not in quotes.
+
+Colors should use the following format, where your custom hex code goes where “FFFFFF” is in the following example.  
+
+    { "solid": { "color": "#FFFFFF" } }
+
+An enumeration, most commonly used for dropdown formatting options, means it can be set to any of the options seen in the pane, for example "RightCenter" for legend position or "Data value, percent of total" for pie data label. The enumeration options are shown below the property list.
+
 
 ```json
-      "general":
+{
+      "general":{ 
         "responsive": {
           "type": [
             "bool"
@@ -301,7 +483,7 @@ The following section defines the properties within each card:
           "description": [
             "The visual will adapt to size changes"
           ]
-        }
+        },
         "legend": {
         "show": {
           "type": [
@@ -4193,4 +4375,6 @@ The following section defines the enumerations that you can use in the JSON file
          ]
        }
     }
+  }
+}
 ```

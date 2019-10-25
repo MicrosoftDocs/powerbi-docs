@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 09/18/2019
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -16,9 +16,12 @@ LocalizationGroup: Administration
 
 # Power BI Archived Workspace
 
+> [!IMPORTANT]
+> Power BI no longer supports the Archived Workspace feature, which will be removed at the end of 2019. If you're using an Archived Workspace, you should immediately recreate any content you want to keep, in a new workspace in your current tenant. You cannot rely on continued access to the Archived Workspace. Power BI no longer supports the related capability, [external takeover of an Azure AD tenant](service-admin-faq.md#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users).
+
 With Power BI, anyone can sign up and start using the service in a few minutes.  Later, your organization's IT department might choose to take over managing Power BI for users in your organization.  If this takeover occurs, you benefit from central management of users and permissions in your organization. You might also be able to take advantage of streamlined sign-in using the same username and password you use for other services in your organization.
 
-Any content you created before your IT department started managing Power BI is be placed in a Power BI Archived Workspace, which is accessible from the left navigation of [Power BI](https://app.powerbi.com). You should start creating new Power BI content in My Workspace, which is secured and managed by your organization's IT department.  Your Archived Workspace will continue to exist, but there are restrictions on actions you can perform on content in your Archived Workspace.  To remove these restrictions, you must migrate the content from your Archived Workspace to My Workspace, managed by your IT department.
+Any content you created before your IT department started managing Power BI will be placed in a Power BI Archived Workspace, which is accessible from the left navigation of [Power BI](https://app.powerbi.com). You should start creating new Power BI content in My Workspace, which is secured and managed by your organization's IT department.  Your Archived Workspace will continue to exist, but there are restrictions on actions you can perform on content in your Archived Workspace.  To remove these restrictions, you must migrate the content from your Archived Workspace to My Workspace, managed by your IT department.
 
 ## Restrictions in your Archived Workspace
 

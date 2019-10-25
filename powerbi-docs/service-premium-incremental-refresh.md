@@ -1,25 +1,24 @@
 ---
 title: Incremental refresh in Power BI Premium
 description: Learn how to enable very large datasets in the Power BI Premium service.
-author: christianwade
+author: mgblythe
 manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/10/2019
-ms.author: chwade
+ms.date: 08/21/2019
+ms.author: mblythe
 LocalizationGroup: Premium
 ---
 # Incremental refresh in Power BI Premium
 
 Incremental refresh enables very large datasets in the Power BI Premium service with the following benefits:
 
-- **Refreshes are faster** - Only data that has changed needs to be refreshed. For example, refresh only the last five days of a ten-year dataset.
-
-- **Refreshes are more reliable** - It's no longer necessary to maintain long-running connections to volatile source systems.
-
-- **Resource consumption is reduced** - Less data to refresh reduces overall consumption of memory and other resources.
+> [!div class="checklist"]
+> * **Refreshes are faster** - Only data that has changed needs to be refreshed. For example, refresh only the last five days of a ten-year dataset.
+> * **Refreshes are more reliable** - It's no longer necessary to maintain long-running connections to volatile source systems.
+> * **Resource consumption is reduced** - Less data to refresh reduces overall consumption of memory and other resources.
 
 ## Configure incremental refresh
 
@@ -35,7 +34,7 @@ Large datasets with potentially billions of rows may not fit into a Power BI Des
 
 #### RangeStart and RangeEnd parameters
 
-For incremental refresh, datasets are filtered by using Power Query date/time parameters with the reserved, case-sensitive names **RangeStart** and **RangeEnd**. These parameters are used to filter the data imported into Power BI Desktop, and also to dynamically partition the data into ranges once published to the Power BI service. The parameter values are substituted by the service to filter for each partition. Once published, the parameter values are overridden automatically by the Power BI service. There's no need to set them in dataset settings in the service. Once published, the parameter values are overridden automatically by the Power BI service. 
+For incremental refresh, datasets are filtered by using Power Query date/time parameters with the reserved, case-sensitive names **RangeStart** and **RangeEnd**. These parameters are used to filter the data imported into Power BI Desktop, and also to dynamically partition the data into ranges once published to the Power BI service. The parameter values are substituted by the service to filter for each partition. There's no need to set them in dataset settings in the service. Once published, the parameter values are overridden automatically by the Power BI service.
 
 To define the parameters with default values, in the Power Query Editor, select **Manage Parameters**.
 
@@ -45,9 +44,13 @@ With the parameters defined, you can then apply the filter by selecting the **Cu
 
 ![Custom filter](media/service-premium-incremental-refresh/custom-filter.png)
 
-Ensure rows are filtered where the column value *is after or equal to* **RangeStart** and *before* **RangeEnd**.
+Ensure rows are filtered where the column value *is after or equal to* **RangeStart** and *before* **RangeEnd**. Other filter combinations may result in double counting of rows.
 
 ![Filter rows](media/service-premium-incremental-refresh/filter-rows.png)
+
+> [!IMPORTANT]
+> Verify queries have an equal to (=) on either **RangeStart** or **RangeEnd**, but not both. If the equal to (=) exists on both parameters, a row could satisfy the conditions for two partitions, which could lead to duplicate data in the model. For example,  
+> \#"Filtered Rows" = Table.SelectRows(dbo_Fact, each [OrderDate] **>= RangeStart** and [OrderDate] **<= RangeEnd**) could result in duplicate data.
 
 > [!TIP]
 > While the data type of the parameters must be date/time, it's possible to convert them to match the requirements of the datasource. For example, the following Power Query function converts a date/time value to resemble an integer surrogate key of the form *yyyymmdd*, which is common for data warehouses. The function can be called by the filter step.
@@ -146,7 +149,7 @@ You can now refresh the model. The first refresh may take longer to import the h
 
 The [troubleshooting refresh](https://docs.microsoft.com/power-bi/refresh-troubleshooting-refresh-scenarios) article explains that refresh operations in the Power BI service are subject to timeouts. Queries can also be limited by the default timeout for the data source. Most relational sources allow overriding timeouts in the M expression. For example, the expression below uses the [SQL Server data-access function](https://msdn.microsoft.com/query-bi/m/sql-database) to set it to 2 hours. Each period defined by the policy ranges submits a query observing the command timeout setting.
 
-```
+```powerquery-m
 let
     Source = Sql.Database("myserver.database.windows.net", "AdventureWorks", [CommandTimeout=#duration(0, 2, 0, 0)]),
     dbo_Fact = Source{[Schema="dbo",Item="FactInternetSales"]}[Data],
@@ -157,4 +160,5 @@ in
 
 ## Limitations
 
-Currently, for [composite models](desktop-composite-models.md), incremental refresh is supported for SQL, Oracle, and Teradata data sources only.
+Currently, for [composite models](desktop-composite-models.md), incremental refresh is supported for SQL Server, Azure SQL Database, SQL Data Warehouse, Oracle, and Teradata data sources only.
+

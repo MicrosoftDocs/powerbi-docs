@@ -5,17 +5,19 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
-ms.custom: seodec18
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/13/2019
+ms.date: 09/18/2019
 ms.author: mihart
 
 LocalizationGroup: Common tasks
 ---
 # Printing from the Power BI service
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Print an entire dashboard, a dashboard tile, a report page, or a report visual from the Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once.
 
    > [!NOTE]
@@ -30,7 +32,7 @@ Print an entire dashboard, a dashboard tile, a report page, or a report visual f
    
 
    
-    ![print dialog](./media/end-user-print/pbi_print_dash_new2.png)
+    ![print dialog](./media/end-user-print/power-bi-print-dash.png)
 
 ## Print a dashboard tile
 1. Open the dashboard in [full screen mode](end-user-focus.md) by selecting the full screen icon ![full screen icon](./media/end-user-print/power-bi-full-screen-icon.png) from the upper menu bar.

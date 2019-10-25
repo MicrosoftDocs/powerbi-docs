@@ -1,0 +1,67 @@
+### YamlMime:Landing
+
+title: Power BI for admins
+summary: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
+
+metadata:
+  title: Power BI for administrators
+  description: Power BI documentation provides expert information and answers to address your needs, regardless of how you use Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-service
+  ms.topic: landing-page # Required
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 10/04/2019
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Power BI for admins
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "What is Power BI administration?"
+            url: ../service-admin-administering-power-bi-in-your-organization.md
+      - linkListType: concept
+        links:
+          - text: "Administration role in Office 365"
+            url: ../service-admin-role.md
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: "Licensing for your organization"
+            url: ../service-admin-licensing-organization.md
+          - text: "Using the admin portal"
+            url: ../service-admin-portal.md
+      - linkListType: how-to-guide
+        links:
+          - text: "Purchase Power BI Pro"
+            url: ../service-admin-purchasing-power-bi-pro.md
+          - text: "Sign up with an Office 365 Trial"
+            url: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+          - text: "Add Power BI with an Office 365 partner"
+            url: ../service-admin-syndication-partner.md
+
+  # Card
+  - title: Tenants
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: "Where is my tenant located?"
+            url: ../service-admin-where-is-my-tenant-located.md
+          - text: "Find users that have signed in"
+            url: ../service-admin-access-usage.md
+          - text: "Auditing Power BI"
+            url: ../service-admin-auditing.md
+          - text: "Track service health"
+            url: ../service-admin-health.md
+          - text: "Closing your Power BI account"
+            url: ../service-admin-closing-your-account.md

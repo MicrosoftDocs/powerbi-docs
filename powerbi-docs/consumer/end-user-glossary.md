@@ -7,8 +7,8 @@ author: mihart
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: resource
-ms.date: 05/14/2019
+ms.topic: conceptual
+ms.date: 09/04/2019
 ms.author: mihart
 #Consumer customers commonly ask for help with terminology, so this article provides a one-stop shop to look up definitions for unfamiliar terms so that the consumer understands the actions they are reading about or performing and they don't get confused or frustrated and instead get the result they expect.
 ---
@@ -71,6 +71,12 @@ The navigation at the top left to quickly navigate between app workspaces.
 **calculation**
 A mathematical determination of the size or number of something.
 
+**card** (visual type)
+A Power BI [visual type](end-user-visual-type.md).
+
+**card** (Power BI Home)
+Power BI Home displays rectangular and square pictures that represent dashboards, reports, apps, and more. These pictures are referred to as *cards*.
+
 **certified custom visual**
 A Power BI custom visual that has met requirements and passed strict security testing.
 
@@ -80,8 +86,11 @@ Also called data classification. This option can be turned on by Power BI admins
 **connect live**
 A method of connecting to SQL Server Analysis Services data models. Also called a live connection.
 
-**content**
+**container**
+The areas on the nav bar are *containers*. In the nav bar you'll find containers for: Favorites, Recent, Apps, Shared with me, and Home. 
 
+**content**
+Content for the Power BI service is generally dashboards, reports, and apps. It can also include workbooks and datasets.
 
 **content list**
 The content index for an app.
@@ -138,7 +147,8 @@ Power BI Premium. The shape of the icon that signifies a workspace is a Premium 
 The mode in which report *designers* can explore, design, build, and share a report.
 
 **ellipsis**
-...
+...    
+Selecting an ellipsis displays additional menu options.
 
 **embed code**
 A common standard across the internet. In Power BI, the customer can generate an embed code and copy it to place content such as a report visual on a website or blog.
@@ -201,6 +211,7 @@ Key performance indicators. A type of visual.
 ## L
 
 **left navigation (left nav)**
+This has been replaced with **nav bar** but may still appear in some documentation.    
 The controls along the left edge of Power BI service.
 
 First instance: left navigation
@@ -225,8 +236,14 @@ The workspace for each Power BI customer to create content. If they want to bund
 **native**
 Included with the product. For example, Power BI comes with a set of *native* visualization types. But you can also import other types, such as custom visuals.
 
+**navigation bar** or **nav bar**
+The controls along the left edge of the Power BI service.
+
+First instance: navigation bar
+Subsequent mentions or tight spaces: nav bar
+
 **navigation pane**
-See **Left navigation**
+See **navigation bar**
 
 **notification**
 Messages sent by and to the Power BI Notification Center.  

@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/25/2019
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
 ---
@@ -122,12 +122,17 @@ To help these users sign in to Power BI, provide them with the Tenant URL. To fi
     * Guest users can't use Analyze in Excel
     * Guest users can't be @mentioned in commenting
     * Guest users can't use subscriptions
-    * Guest users who use this capability should have a work or school account. Guest users using Personal accounts will experience more limitations due to sign in restrictions.
+    * Guest users who use this capability should have a work or school account. 
+    
+* Guest users using Personal accounts will experience more limitations due to sign-in restrictions.
+    * They can use consumption experiences in the Power BI service through a web browser
+    * They can't use the Power BI Mobile apps.
+    * They won't be able to sign-in to provide credentials where a work or school account is required.
 
 * This feature isn't currently available with the Power BI SharePoint Online report web part.
 
 * There are Active Directory Settings that can limit what external guest users can do within your overall organization. That also applies to your Power BI environment. The following documentation discusses the settings:
-    * [Manage External Collaboration Settings](https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations#control-who-can-invite)
+    * [Manage External Collaboration Settings](/azure/active-directory/b2b/delegate-invitations#configure-b2b-external-collaboration-settings)
     * [Allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)  
 
 ## Next steps

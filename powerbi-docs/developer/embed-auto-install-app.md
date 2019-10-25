@@ -5,7 +5,7 @@ ms.subservice: powerbi-developer
 author: rkarlin
 ms.author: rkarlin 
 manager: kfile
-ms.topic: how-to
+ms.topic: conceptual
 ms.service: powerbi
 ms.custom:
 ms.date: 04/16/2019

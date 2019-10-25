@@ -1,7 +1,7 @@
 ---
 title: Scan a Power BI QR code from your mobile device
 description: QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app for iPhones and Android devices.
-author: mshenhav
+author: KesemSharabi
 manager: kfile
 ms.reviewer: ''
 
@@ -31,7 +31,7 @@ If your colleague hasn't shared the dashboard or report with you, you can reques
 > You can also [scan a report QR code with the Power BI for Mixed Reality app](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
 
 ## Scan a Power BI QR code on your iPhone with the Power BI scanner
-1. In the Power BI mobile app open the global navigation menu ![](media/mobile-apps-qr-code/power-bi-iphone-global-nav-button.png) in the upper left. 
+1. In the Power BI mobile app, open the global navigation menu ![](media/mobile-apps-qr-code/power-bi-iphone-global-nav-button.png) in the upper left. 
 2. Scroll down to **Scanner** and select it. 
    
     ![](media/mobile-apps-qr-code/power-bi-iphone-scanner-menu.png)

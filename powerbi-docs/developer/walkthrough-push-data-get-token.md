@@ -1,6 +1,6 @@
 ---
 title: Get an authentication access token
-description: Walkthrough to push data - Get an authentication access token
+description: Walk through to push data - Get an authentication access token
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -8,37 +8,44 @@ ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 05/29/2019
 ---
 
 # Step 2: Get an authentication access token
 
-This article is part of a step-by-step walkthrough to [push data into a dataset](walkthrough-push-data.md).
+This article is the second step in the series [Push data into a Power BI dataset](walkthrough-push-data.md).
 
-In **step 1** of Push data into a dataset, [Register the app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md), you registered a client app in Azure AD. In this step, you get an authentication access token. Power BI apps are integrated with **Azure AD** to provide secure sign in and authorization for your app. You use a token to authenticate to **Azure AD** and gain access to Power BI resources.
-
-Here's how to get an authentication access token.
+In step 1, you [registered a client app in Azure AD](walkthrough-push-data-register-app-with-azure-ad.md). In this step, you get an authentication access token. Power BI apps are integrated with Azure Active Directory to provide your app with secure sign in and authorization. Your app uses a token to authenticate to Azure AD and gain access to Power BI resources.
 
 ## Get an authentication access token
 
-> **NOTE**: Before you get started, make sure you have followed the previous steps in the [push data into a dataset](walkthrough-push-data.md) walkthrough.
+Before starting, make sure you've completed the [previous step](walkthrough-push-data-register-app-with-azure-ad.md) in the [Push data into a Power BI dataset](walkthrough-push-data.md) series. 
 
-1. In Visual Studio (2015 or later), create a **Console Application** project.
-2. Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
+This procedure requires Visual Studio 2015 or later.
 
-     a. In Visual Studio (2015 or later), choose **Tools** > **NuGet Package Manager** > **Package Manager Console**.
+1. In Visual Studio, create a new C# **Console Application** project.
 
-     b. In **Package Manager Console**, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
-3. Add the code below into class Program {...}.
-4. Replace "{ClientID}", with the **Client ID** you got when you registered the app. See [Register the app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md).
-5. After installing the Microsoft.IdentityModel.Clients.ActiveDirectory package, add **using Microsoft.IdentityModel.Clients.ActiveDirectory;** to Program.cs.
-6. Run the Console App, and login to your Power BI account. You should see a token string in the Console Window.
+2. Install the [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). Your .Net app needs this package to get an authentication security token. 
+
+     a. Select **Tools** > **NuGet Package Manager** > **Package Manager Console**.
+
+     b. Enter **Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612**
+
+     c. In Program.cs, add `using Microsoft.IdentityModel.Clients.ActiveDirectory;`.
+
+3. Add the sample code listed after these steps to Program.cs.
+
+4. Replace "{ClientID}", with the **Client ID** you got in the [previous series article](walkthrough-push-data-register-app-with-azure-ad.md) when you registered your app.
+
+5. Run your console app and sign in to your Power BI account. 
+
+   A token string should appear in the console window.
 
 **Sample code to get authentication security token**
 
 Add this code to Program {...}.
 
-* A token variable to call operations:
+* A token variable to call operations: 
   
   ```csharp
   private static string token = string.Empty;
@@ -99,13 +106,10 @@ Add this code to Program {...}.
        #endregion
 ```
 
-After you get an authentication token, you can call any Power BI operation. The next step shows you how to call the [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) operation to create a dataset to push data into a dashboard.
+After you get an authentication token, you can call any Power BI operation.
 
-The next step shows you how to [create a dataset in Power BI](walkthrough-push-data-create-dataset.md).
+The next article in this series shows you how to [Create a dataset in Power BI](walkthrough-push-data-create-dataset.md).
 
-Below is the [complete code listing](#code).
-
-<a name="code"/>
 
 ## Complete code listing
 
@@ -170,14 +174,13 @@ namespace walkthrough_push_data
 }
 ```
 
-[Next Step >](walkthrough-push-data-create-dataset.md)
+
 
 ## Next steps
 
-[Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)  
-[Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  
-[Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
-[Push data into a Power BI dataset](walkthrough-push-data.md)  
+[Next article in this series > Create a dataset in Power BI](walkthrough-push-data-create-dataset.md)
+
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
-[Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
+[Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/)  
+
 More questions? [Try the Power BI Community](http://community.powerbi.com/)

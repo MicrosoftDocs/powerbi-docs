@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 09/20/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -71,7 +71,7 @@ The **Database** category includes the following available data connections for 
 * PostgreSQL Database
 * SQL Server Database
 * Sybase Database
-* Teradata Database
+* Teradata
 * Vertica
 
 The **Power BI** category includes the following available data connections for dataflows:
@@ -152,7 +152,6 @@ And then your script connects to the data source you specified.
 
 The following list shows which connectors you can currently use by copying and pasting the M query into a blank query:
 
-* SAP Business Warehouse 
 * Azure analysis Services
 * Adobe Analytics
 * ODBC

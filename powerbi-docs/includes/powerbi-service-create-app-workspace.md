@@ -1,19 +1,19 @@
 ---
- title: Create a workspace - Power BI
- description: How to create a workspace - include
- services: powerbi
- author: maggiesMSFT
- 
+title: Create a workspace - Power BI
+description: How to create a workspace - include
+services: powerbi
+author: maggiesMSFT
+
 ms.service: powerbi
- ms.topic: include
- ms.date: 04/04/2019
- ms.author: maggies
- ms.custom: include file
+ms.topic: include
+ms.date: 09/10/2019
+ms.author: maggies
+ms.custom: include file
 ---
 
-1. Start by creating the workspace. Select **Workspaces** > **Create app workspace**. 
+1. Start by creating the workspace. Select **Workspaces** > **Create workspace**. 
    
-     ![Create app workspace](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
+     ![Create workspace](media/powerbi-service-create-app-workspace/power-bi-workspace-create.png)
    
     Here you'll put the content that you and your colleagues collaborate on.
 
@@ -37,7 +37,7 @@ ms.service: powerbi
    
      ![Set edit or view-only](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-members-edit.png)
    
-     Only add people to the app workspace so they can edit the content. If they're only going to view the content, don't add them to the workspace. You can include them when you publish the app.
+     Only add people to the workspace so they can edit the content. If they're only going to view the content, don't add them to the workspace. You can include them when you publish the app.
 
 5. Add email addresses of people you want to have access to the workspace, and select **Add**. You can’t add group aliases, just individuals.
 
@@ -51,5 +51,5 @@ ms.service: powerbi
 
 Power BI creates the workspace and opens it. It appears in the list of workspaces you’re a member of. Because you’re an admin, you can select the ellipsis (…) to go back and make changes to it, adding new members or changing their permissions.
 
-![Edit workspace](media/powerbi-service-create-app-workspace/power-bi-apps-edit-workspace-ellipsis.png)
+![Edit workspace](media/powerbi-service-create-app-workspace/power-bi-workspace-old-settings.png)
 

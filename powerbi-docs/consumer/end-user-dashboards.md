@@ -3,18 +3,19 @@ title: What is a dashboard and how do I open it?
 description: Dashboards are a key feature of Power BI service.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 09/12/2019
 ms.author: mihart
 
 LocalizationGroup: Dashboards
 ---
 # Dashboards for Power BI service consumers
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 A Power BI ***dashboard*** is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most-important elements of that story.
 
@@ -50,8 +51,8 @@ Reports are often confused with dashboards since they too are canvases filled wi
 | Can see underlying dataset tables and fields |No. Can export data but can't see tables and fields in the dashboard itself. |Yes. Can see dataset tables and fields and values. |
 
 
-## Dashboard creators and dashboard consumers
-As a Power BI ***consumer***, you receive dashboards from *creators*. Continue learning about dashboards with these topics:
+## Dashboard designers and dashboard consumers
+As a Power BI ***consumer***, you receive dashboards from *designers*. Continue learning about dashboards with these topics:
 
 * [View a dashboard](end-user-dashboard-open.md)
 * Learn about [dashboard tiles](end-user-tiles.md) and what will happen when you select one.

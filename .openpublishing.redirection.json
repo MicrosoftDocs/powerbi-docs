@@ -1,6 +1,91 @@
 {
     "redirections": [
         {
+          "source_path": "powerbi-docs/guided-learning/gettingstarted.yml",
+          "redirect_url": "/learn/modules/get-started-with-power-bi/",
+          "redirect_document_id": false
+        },        
+        {
+          "source_path": "powerbi-docs/guided-learning/gettingdata.yml",
+          "redirect_url": "/learn/modules/get-data-power-bi/",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "powerbi-docs/guided-learning/modeling.yml",
+          "redirect_url": "/learn/modules/model-data-power-bi/",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "powerbi-docs/guided-learning/visualizations.yml",
+          "redirect_url": "/learn/modules/visuals-in-power-bi/",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "powerbi-docs/guided-learning/powerbiandexcel.yml",
+          "redirect_url": "/learn/modules/get-data-power-bi/",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "powerbi-docs/guided-learning/exploringdata.yml",
+          "redirect_url": "/learn/modules/explore-data-power-bi/",
+          "redirect_document_id": false
+        },
+        {
+          "source_path": "powerbi-docs/guided-learning/publishingandsharing.yml",
+          "redirect_url": "/learn/modules/publish-share-power-bi/",
+          "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-sso-kerberos-resource.md",
+            "redirect_url": "/power-bi/service-gateway-sso-kerberos",
+            "redirect_document_id": false
+        } ,
+        {
+            "source_path": "powerbi-docs/service-gateway-getting-started.md",
+            "redirect_url": "/power-bi/service-gateway-onprem",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-high-availability-clusters.md",
+            "redirect_url": "/data-integration/gateway/service-gateway-high-availability-clusters",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-install.md",
+            "redirect_url":  "/data-integration/gateway/service-gateway-install",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-manage.md",
+            "redirect_url":  "/data-integration/gateway/service-gateway-manage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-monthly-updates.md",
+            "redirect_url":  "/data-integration/gateway/service-gateway-monthly-updates",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-onprem-faq.md",
+            "redirect_url":  "/power-bi/service-gateway-power-bi-faq",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-performance-monitoring.md",
+            "redirect_url":  "/data-integration/gateway/service-gateway-performance",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-gateway-proxy.md",
+            "redirect_url":  "/data-integration/gateway/service-gateway-proxy",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-extended-pro-trial.md",
+            "redirect_url": "/power-bi/service-self-service-signup-for-power-bi",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/refresh-enable-fast-combine.md",
             "redirect_url": "/power-bi/service-gateway-personal-mode",
             "redirect_document_id": false
@@ -111,6 +196,31 @@
             "redirect_document_id": false
         }, 
         {
+            "source_path": "powerbi-docs/service-connect-to-mailchimp.md", 
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/service-connect-to-adobe-analytics.md", 
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/service-connect-to-zuora.md", 
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/service-connect-to-sparkpost.md", 
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        }, 
+        {
+            "source_path": "powerbi-docs/service-connect-to-azure-sql-database-auditing.md", 
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        }, 
+        {
             "source_path": "powerbi-docs/consumer/end-user-connect-to-services.md", 
             "redirect_url": "/power-bi/service-connect-to-services",
             "redirect_document_id": false
@@ -158,6 +268,11 @@
         {
             "source_path": "powerbi-docs/developer/service-content-pack-overview.md", 
             "redirect_url": "/power-bi/service-content-pack-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-report-filter-preview.md",
+            "redirect_url": "/power-bi/power-bi-report-filter",
             "redirect_document_id": true
         },
         {
@@ -377,8 +492,13 @@
         },
         {
             "source_path": "powerbi-docs/desktop-create-responsive-visuals.md", 
-            "redirect_url": "/power-bi/visuals/desktop-create-responsive-visuals",
-            "redirect_document_id": true
+            "redirect_url": "/power-bi/visuals/power-bi-report-visualizations",
+            "redirect_document_id": false
+        },
+		{
+            "source_path": "powerbi-docs/visuals/desktop-create-responsive-visuals.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-report-visualizations",
+            "redirect_document_id": false
         },
         {
             "source_path": "powerbi-docs/desktop-matrix-visual.md", 
@@ -601,6 +721,36 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/service-connect-to-marketo.md",
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-connect-to-at-internet.md",
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-connect-to-planview.md",
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-connect-to-webtrends.md",
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-connect-to-projectplace.md",
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-dashboard-add-image.md",
+            "redirect_url": "/power-bi/service-dashboard-add-widget",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "powerbi-docs/service-dashboard-favorite.md",
             "redirect_url": "/power-bi/consumer/end-user-favorite",
             "redirect_document_id": true
@@ -613,6 +763,11 @@
         {
             "source_path": "powerbi-docs/consumer/end-user-delete.md",
             "redirect_url": "/power-bi/service-delete",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/consumer/end-user-browsers.md",
+            "redirect_url": "/power-bi/power-bi-browsers",
             "redirect_document_id": false
         },
         {
@@ -791,8 +946,13 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "powerbi-docs/service-admin-premium-manage.md",
-            "redirect_url": "/power-bi/service-premium",
+            "source_path": "powerbi-docs/desktop-qna-in-reports.md",
+            "redirect_url": "/power-bi/natural-language/q-and-a-best-practices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-q-and-a-linguistic-schema.md",
+            "redirect_url": "/power-bi/natural-language/q-and-a-tooling-advanced",
             "redirect_document_id": false
         },
         {
@@ -824,6 +984,21 @@
             "source_path": "powerbi-docs/service-premium-understand-how-it-works.md",
             "redirect_url": "/power-bi/service-premium-capacity-optimize",
             "redirect_document_id": false
-        }
+        },
+        {
+            "source_path": "powerbi-docs/developer/custom-visual-develop-tutorial.md",
+            "redirect_url": "/power-bi/developer/visuals/custom-visual-develop-tutorial",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/custom-visual-develop-tutorial-format-options.md",
+            "redirect_url": "/power-bi/developer/visuals/custom-visual-develop-tutorial-format-options",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/desktop-directquery-for-oracle-teradata.md",
+            "redirect_url": "/power-bi/desktop-directquery-data-sources",
+            "redirect_document_id": false
+        }        
     ]
 }

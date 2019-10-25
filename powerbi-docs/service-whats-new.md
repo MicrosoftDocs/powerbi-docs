@@ -8,7 +8,7 @@ ms.reviewer:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 10/22/2019
 ms.author: nikhilga
 
 LocalizationGroup: Get started
@@ -26,11 +26,43 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## May 2019
-* [Custom navigation](service-create-distribute-apps.md) for Power BI Apps.
-* Additional attachments types (PPTX, XLSX, DOCX, CSV, XML) available for e-mail subcriptions within paginated reports.
+### October 2019
+* New Microsoft Flow action to refresh Power BI datasets.
+* [Contact list](https://powerbi.microsoft.com/en-us/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) for reports and dashboards in the Power BI service.
 
 ## Previous months (2019)
+### September 2019
+* Updates to connection configuration for [template apps](service-template-apps-overview.md).
+
+### August 2019
+* New capacity settings for Power BI Premium.
+* [Custom branding](https://powerbi.microsoft.com/en-us/blog/announcing-custom-branding-for-your-organization/) for your organization.
+* Summarized data export with build permission.
+* Support for URL parametrs for [paginated reports](paginated-reports-report-builder-power-bi.md).
+* Support for monthly e-mail subscriptions. 
+
+### July 2019
+* Support for non-premium datasets for [paginated reports](paginated-reports-report-builder-power-bi.md).
+* General availability of Power BI [aggregations](desktop-aggregations.md).
+* Send refresh notifications to others.
+* [Testing tool](https://powerbi.microsoft.com/en-us/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) for Power BI Premium capacities.
+* Public preview of [service availability notifications](https://powerbi.microsoft.com/en-us/blog/power-bi-introduces-service-availability-notifications/).
+* Public preview of the [New Look](https://powerbi.microsoft.com/en-us/blog/introducing-the-new-look-for-power-bi-service/) for Power BI reports.
+* New Power BI region in South Africa.
+
+### June 2019
+* Public preview of [Shared and Certified datasets](service-datasets-across-workspaces.md).
+* AI metrics available in the [Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md).
+* General availability of Power BI [template apps](service-template-apps-overview.md).
+* General availability of [paginated reports](paginated-reports-report-builder-power-bi.md) in Power BI.
+* Public preview of Bring Your Own Key ([BYOK](service-encryption-byok.md)) for Power BI Premium.
+* Viewer role for the [new workspaces experience](service-new-workspaces.md).
+
+### May 2019
+* [Custom navigation](service-create-distribute-apps.md) for Power BI Apps.
+* Additional attachments types (PPTX, XLSX, DOCX, CSV, XML) available for e-mail subscriptions within paginated reports.
+* [Commenting](https://powerbi.microsoft.com/en-us/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) for Power BI reports in the service.
+
 ### April 2019
 * General availability of Power BI [dataflows](service-dataflows-overview.md).
 * General availability of the new workspaces experience.
@@ -253,7 +285,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 ***Dashboards***
 
-* Favorite dashboards: To help you reach the dashboards you go to most, we added a way to favorite those dashboard and make them easily accessible from all your workspaces.
+* Favorite dashboards: To help you reach the dashboards you go to most, we added a way to favorite those dashboards and make them easily accessible from all your workspaces.
 
 ***Analyze in Excel***
 
@@ -298,7 +330,7 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 ***Analyze in Excel***
 
 * [Analyze in Excel](service-analyze-in-excel.md) available to all users: the ability to access your Power BI data models in Excel has been extended to all users, regardless of the license they're assigned.
-* Improved multi-user account experience: if you have more than 1 Power BI user account, it's now easier to sign-in.
+* Improved multi-user account experience: if you have more than one Power BI user account, it's now easier to sign in.
 
 For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.com/blog/power-bi-service-april-update-expressroute-for-power-bi/)
 
@@ -343,7 +375,7 @@ This month we made some updates to dashboards, Quick Insights, and Q&A.
 
 * Full Screen mode: print without having to exit Full Screen mode first
 * Full Screen mode: expand your tiles to fill the entire canvas and remove excess white space by selecting **Fit to Width**
-* Use Tile Flow to automatically align your tiles to the top left corner of the canvas.
+* Use Tile Flow to automatically align your tiles to the top-left corner of the canvas.
 
 ***Quick Insights***
 
@@ -368,7 +400,7 @@ Today we released a long list of top-requested features. [Read the blog post](ht
 ***Admin Portal***
 
 * Easy user management with a link to the Microsoft 365 admin center
-* Ability to disable publish to web
+* Ability to disable publishing to web
 * Prevent users from publishing content packs to the entire org
 * Ability to disable sharing content to external users
 
@@ -617,12 +649,8 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 * Webtrends helps companies make sense of their customer data to drive digital marketing success. Users have the ability to observe, analyze and deliver insights on the visitor journey across web, social, mobile and SharePoint channels. With the release of [the Webtrends content pack](http://blogs.msdn.com/b/powerbi/archive/2015/09/01/visualize-and-explore-your-webtrends-data-in-power-bi.aspx), users will now have the ability to use Power BI to monitor, analyze, and visualize their Webtrends analytics data. The Webtrends content pack for Power BI [help page](service-connect-to-webtrends.md) has more information.
 * Getting started with Q&A is even simpler. The moment you put your cursor inside the Q&A text box, we instantly display a list of questions and key metrics that are relevant to your data.  In the drop down, by default, you will see the questions for tiles already pinned to the dashboard as well as an entry for each table you have in your dataset.
-* The dynamic canvas size we display by default renders all our report items with optimal dimensions for the browser window size. If you want to lock in the aspect ratio, or want to fit your report in a different way, we now support another three options for you:Fit to Page, Fit to Width, and Actual Size.
+* The dynamic canvas size we display by default renders all our report items with optimal dimensions for the browser window size. If you want to lock in the aspect ratio, or want to fit your report in a different way, we now support another three options for you: Fit to Page, Fit to Width, and Actual Size.
 * We also Increased the limit on the number of datasets and reports you can have. You can now have up to 200 datasets and 200 reports for each dataset in your Power BI account.
-
-**August 25, 2015**
-
-* Now you can use Power BI to monitor, explore and [visualize your Adobe Analytics data](http://blogs.msdn.com/b/powerbi/archive/2015/08/25/exploring-your-adobe-analytics-data-in-power-bi.aspx). With an out-of-box content pack, you can connect and discover insights from your data immediately. To learn more, visit the [Adobe Analytics content pack for Power BI help page](service-connect-to-adobe-analytics.md).
 
 **August 18, 2015**
 
@@ -677,11 +705,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **June 16, 2015**
 
-* SweetIQ lets you to easily track your local listings by providing location and review data from your local search ecosystem. Power BI allows you to analyze and monitor that data, by offering [out of box content](http://blogs.msdn.com/b/powerbi/archive/2015/06/16/analyze-and-monitor-your-sweetiq-data-with-power-bi.aspx) built from your SweetIQ data. For additional details on how to get started, please see the SweetIQ content pack for Power BI [help page](service-connect-to-sweetiq.md).
-
-**June 9, 2015**
-
-* Power BI allows you to monitor and explore that data using the [MailChimp APIs](http://blogs.msdn.com/b/powerbi/archive/2015/06/09/user-power-bi-to-monitor-and-visualize-your-mailchimp-data.aspx), offering a set of out-of-box content for your analytics. The dashboard, reports and dataset curated for the MailChimp scenario allow you to easily access data such as Top Campaigns of Total Opens by Day of Week. For additional details on how to get started, please see the MailChimp content pack for Power BI [documentation](service-connect-to-mailchimp.md).
+* SweetIQ lets you easily track your local listings by providing location and review data from your local search ecosystem. Power BI allows you to analyze and monitor that data, by offering [out of box content](http://blogs.msdn.com/b/powerbi/archive/2015/06/16/analyze-and-monitor-your-sweetiq-data-with-power-bi.aspx) built from your SweetIQ data. For additional details on how to get started, please see the SweetIQ content pack for Power BI [help page](service-connect-to-sweetiq.md).
 
 **June 2, 2015**
 
@@ -694,7 +718,6 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **May 13, 2015**
 
-* With the latest update to Power BI, you can connect to the data logged by **SQL Database Auditing** with a set of out of box reports and a customized dashboard. This content pack makes it easy to find suspicious events, unusual activity, and trends, based on a dataset that has been created for your reporting. Learn more in the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/14/monitor-your-azure-sql-database-auditing-activity-with-power-bi.aspx) and [documentation](service-connect-to-azure-sql-database-auditing.md).
 * You can connect directly to data stored in your **Azure SQL Database**. We dynamically generate and send down queries to the source, allowing you to create interactive reports directly over your database. You can read the [blog post](http://blogs.msdn.com/b/powerbi/archive/2015/05/13/using-power-bi-to-visualize-and-explore-azure-sql-databases.aspx) and [documentation](service-azure-sql-database-with-direct-connect.md) for more information.
 
 **May 7, 2015**
@@ -729,7 +752,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 
 **January 26, 2015**
 
-* Service usability and reliability has been improved through various bug fixes.
+* Service usability and reliability have been improved through various bug fixes.
 
 ## 2014
 **December 11, 2014**

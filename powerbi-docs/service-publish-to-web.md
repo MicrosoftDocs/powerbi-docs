@@ -108,7 +108,7 @@ Once you create a **Publish to web** embed code, you can manage your codes from 
 
 ## Updates to reports, and data refresh
 
-After you create your **Publish to web** embed code and share it, the report is updated with any changes you make, and the embed code link is immediately active. Anyone who opens the link can view it. After this initial action, however, updates to reports or visuals can take approximately one hour before becoming visible to your users. If you need your updates to be immediately available, you can delete the embed code and create a new one. To learn more, see the [**How it works**](#howitworks) section later in this article. 
+After you create your **Publish to web** embed code and share it, the report is updated with any changes you make, and the embed code link is immediately active. Anyone who opens the link can view it. After this initial action, however, updates to reports or visuals can take approximately one hour before becoming visible to your users. To learn more, see the [**How it works**](#howitworks) section later in this article. 
 
 ## Data refresh
 
@@ -132,7 +132,7 @@ Custom visuals are supported in **Publish to web**. When you use **Publish to we
 - Reports containing report-level DAX measures.
 - Single sign-on data query models.
 - [Secure confidential or proprietary information](#publish-to-web-from-power-bi).
-- The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embed-sample-for-your-organization.md) approach to embedding. Learn more about [user owns data](developer/embed-sample-for-your-organization.md).
+- The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embed-sample-for-your-organization.md) approach to embedding.
 
 ## Tenant setting
 

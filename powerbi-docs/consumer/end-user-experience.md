@@ -10,14 +10,16 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: quickstart
-ms.date: 12/06/2018
+ms.date: 10/18/2019
 ms.author: mihart
 #customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
 LocalizationGroup: Get started
 ---
 # Quickstart - Getting around in Power BI service
 
-Now that you know the basics of Power BI, let's take a look around **Power BI service**. As mentioned earlier, someone on your team might spend all of her time in **Power BI Desktop**, combining data and creating reports for others. But you, on the other hand, might spend all of your time in Power BI service, viewing and interacting with content created by others (**consuming** experience). In this quickstart you'll be importing sample data and using that data to learn your way around Power BI service. 
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
+Now that you know the basics of Power BI, let's take a look around **Power BI service**. As mentioned earlier, someone on your team might spend all of their time in **Power BI Desktop**, combining data and creating reports for others. But you, on the other hand, might spend all of your time in Power BI service, viewing and interacting with content created by others (**consuming** experience). In this quickstart you'll be importing sample data and using that data to learn your way around Power BI service. 
  
 ## Prerequisites
 
@@ -57,7 +59,7 @@ If you are a new user, you'll only see one workspace -- **My Workspace**.
 
 ![short video of workspace](./media/end-user-experience/nav.gif)
 
-Within those tabs (aka *content views*), you'll see information about the content as well as actions you can take with that content.  For example, from the Dashboards tab you can open a dashboard, search, sort, and much more.
+Within those tabs (also called *content views*), you'll see information about the content as well as actions you can take with that content.  For example, from the Dashboards tab you can open a dashboard, search, sort, and much more.
 
 ![Dashboards tab](./media/end-user-experience/power-bi-dashboard-tab.png)
 

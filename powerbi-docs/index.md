@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.author: maggies
 author: maggiesMSFT
 ms.topic: hub-page
-ms:date: 05/10/2019
+ms:date: 06/10/2019
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -32,7 +32,7 @@ ms:date: 05/10/2019
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Power BI for consumers</h3>
-                                                    <p>Getting started with Power BI? Get to know the different products and services that make up Power BI, and see what you can do with them.</p>
+                                                    <p>Do you use reports and dashboards, created by others, to make business decisions? Get to know the Power BI service for consumers.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -59,7 +59,7 @@ ms:date: 05/10/2019
                                 </a>
                             </li>
                             <li>
-                                <a href="service-admin-administering-power-bi-in-your-organization.md">
+                                <a href="admin/index.yml">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -78,7 +78,7 @@ ms:date: 05/10/2019
                                 </a>
                             </li>
                             <li>
-                                <a href="developer/what-can-you-do.md">
+                                <a href="developer/index.yml">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -97,7 +97,7 @@ ms:date: 05/10/2019
                                 </a>
                             </li>
                             <li>
-                                <a href="https://powerbi.microsoft.com/blog/">
+                                <a href="guidance/overview.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -107,8 +107,8 @@ ms:date: 05/10/2019
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Power BI blog</h3>
-                                                    <p>Keep up to date on all the latest developments in Power BI.</p>
+                                                    <h3>Best practices guidance</h3>
+                                                    <p>Are you getting the most out of Power BI? Get to know the best practices of Power BI.</p>
                                                 </div>
                                             </div>
                                         </div>
