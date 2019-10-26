@@ -154,7 +154,7 @@ The output of a Binary Prediction model is a probability score, which identifies
 
 Pre-requisites:
 
-- A minimum of 50 rows of historical data is required for each class of outcomes
+- A minimum of 20 rows of historical data is required for each class of outcomes
 
 The process of creation for a Binary Prediction model follows the same steps as other AutoML models, described in the section **Configuring the ML model inputs** above. The only difference is in the “Choose a model” step where you can select the target outcome value that you’re most interested in. You can also provide friendly labels for the outcomes to be used in the automatically generated report that will summarize the results of the model validation.
 
@@ -204,7 +204,7 @@ The input entity containing your training data for a Classification model must h
 
 Pre-requisites:
 
-- A minimum of 50 rows of historical data is required for each class of outcomes
+- A minimum of 20 rows of historical data is required for each class of outcomes
 
 The process of creation for a Classification model follows the same steps as other AutoML models, described in the section **Configuring the ML model inputs** above.
 

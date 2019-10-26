@@ -946,6 +946,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/desktop-qna-in-reports.md",
+            "redirect_url": "/power-bi/natural-language/q-and-a-best-practices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-q-and-a-linguistic-schema.md",
+            "redirect_url": "/power-bi/natural-language/q-and-a-tooling-advanced",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/developer/office-store-in-app-purchase-visual-guidelines.md",
             "redirect_url": "/power-bi/developer/guidelines-powerbi-visuals",
             "redirect_document_id": true
