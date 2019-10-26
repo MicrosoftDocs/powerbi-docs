@@ -1,5 +1,5 @@
 ---
-title: Subscribe yourself and others to reports and dashboards - Power BI
+title: Subscribe yourself and others to reports and dashboards
 description: Learn how to subscribe yourself and others to a snapshot of a Power BI report page, dashboard, or paginated report.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 10/23/2019
 ms.author: maggies
 
 LocalizationGroup: Common tasks
 ---
 # Subscribe yourself and others to reports and dashboards in the Power BI service
 
-You can subscribe yourself and your colleagues to the report pages, dashboards, and paginated reports that matter most to you. Power BI emails a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, hourly, monthly, or once a day after the initial data refresh.  If you choose daily, weekly, hourly, or monthly, you can choose the time you'd like to have the subscription run.  In all, you can set up to 24 different subscriptions per day, for every report page and dashboard.
+You can subscribe yourself and your colleagues to the report pages, dashboards, and paginated reports that matter most to you. Power BI emails a snapshot to your inbox. You tell Power BI how often you want to receive the emails: daily, weekly, hourly, monthly, or once a day after the initial data refresh.  If you choose daily, weekly, hourly, or monthly, you can choose the time you'd like to have the subscription run.  In all, you can set up to 24 different subscriptions per report or dashboard.
 
 ![email snapshot of dashboard](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 

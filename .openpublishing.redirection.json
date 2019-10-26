@@ -946,6 +946,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/desktop-qna-in-reports.md",
+            "redirect_url": "/power-bi/natural-language/q-and-a-best-practices",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/power-bi-q-and-a-linguistic-schema.md",
+            "redirect_url": "/power-bi/natural-language/q-and-a-tooling-advanced",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/developer/office-store-in-app-purchase-visual-guidelines.md",
             "redirect_url": "/power-bi/developer/guidelines-powerbi-visuals",
             "redirect_document_id": true
@@ -974,6 +984,21 @@
             "source_path": "powerbi-docs/service-premium-understand-how-it-works.md",
             "redirect_url": "/power-bi/service-premium-capacity-optimize",
             "redirect_document_id": false
-        }
+        },
+        {
+            "source_path": "powerbi-docs/developer/custom-visual-develop-tutorial.md",
+            "redirect_url": "/power-bi/developer/visuals/custom-visual-develop-tutorial",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/developer/custom-visual-develop-tutorial-format-options.md",
+            "redirect_url": "/power-bi/developer/visuals/custom-visual-develop-tutorial-format-options",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/desktop-directquery-for-oracle-teradata.md",
+            "redirect_url": "/power-bi/desktop-directquery-data-sources",
+            "redirect_document_id": false
+        }        
     ]
 }
