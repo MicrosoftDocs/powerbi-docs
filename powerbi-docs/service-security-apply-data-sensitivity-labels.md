@@ -22,24 +22,23 @@ When data protection is enabled, sensitivity labels appear in the sensitivity co
 ![Enable data sensitivity labels](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-01.png)
 
 > [!NOTE]
-> To apply sensitivity labels to Power BI dashboards, reports, datasets, and dataflows, you need a Power BI Pro license and edit permissions on the report. In addition, you must belong to a security group that has permissions to apply data sensitivity labels to Power BI artifacts.
-
+> Applying sensitivity labels to Power BI dashboards, reports, datasets, and dataflows, requires certain licenses and permissions. See [Applying sensitivity labels](#applying-sensitivity-labels) for details.
 
 ## Applying sensitivity labels
 
 In order to apply sensitivity labels in Power BI, you and your organization must have the following requirements in place:
 
-1.	Your organization has defined sensitivity labels in the Microsoft Security and Compliance center.
-2.	You must belong to a security group that has permissions to apply data sensitivity labels, as described in the article titled [apply data sensitivity labels in Power BI (preview)](service-security-apply-data-sensitivity-labels.md).
-3.	You must have a Power BI Pro license and edit permissions. 
-4.	Your organization must have one of the following Microsoft Information Protection licenses:
+* Your organization must have defined sensitivity labels in the Microsoft Security and Compliance center.
+* You must belong to a security group that has permissions to apply data sensitivity labels, as described in the article titled [Enable data sensitivity labels in Power BI (preview)](service-security-enable-data-sensitivity-labels.md#enable-data-sensitivity-labels).
+* You must have a Power BI Pro license and edit permissions on the resources you wish to label. 
+* Your organization must have one of the following Microsoft Information Protection licenses:
     * APPI1
     * APP2
-    * OFFICE E3/ E5
-    * M365 E3/ E5
-    * EMS E3/ E5
+    * OFFICE E3/E5
+    * M365 E3/E5
+    * EMS E3/E5
 
-To set or change a sensitivity label on a report, click the report settings icon on the workspace list item and then go to the data sensitivity section in the settings side pane. Choose the appropriate sensitivity label and save the settings.
+To apply or change a sensitivity label on a report, click the report settings icon on the workspace list item and then go to the data sensitivity section in the settings side pane. Choose the appropriate sensitivity label and save the settings.
 
 ![Set data sensitivity labels](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-02.png)
 
@@ -47,9 +46,9 @@ The updated sensitivity label appears in the sensitivity column.
 
 ![Viewing data sensitivity labels](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-03.png)
 
-You can also set sensitivity labels on a dashboard, which follows the same process as described for reports. 
+Applying or changing a sensitivity label on a dashboard follows the same process as described for reports. 
 
-You can also set sensitivity labels on a dataset or dataflow. The following image shows how to set a sensitivity label on a dataset, the steps for dataflows are similar.
+You can also set sensitivity labels on datasets and dataflows. The following image shows how to set a sensitivity label on a dataset; the steps for dataflows are similar.
 
 ![Apply data sensitivity labels to a dataset](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-05.png)
 
