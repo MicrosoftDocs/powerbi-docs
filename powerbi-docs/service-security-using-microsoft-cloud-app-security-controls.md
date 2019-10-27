@@ -24,7 +24,7 @@ You can configure Microsoft Cloud App Security for all sorts of apps and service
 > [!NOTE]
 > You must have a Microsoft Information Protection license in order to set up  Microsoft Cloud App Security controls in Power BI. See the [Considerations and limitations](#considerations-and-limitations) section for detail.
 
-## Requirements for using Microsoft Cloud App Security with Power BI
+## Using Microsoft Cloud App Security with Power BI
 
 To use Microsoft Cloud App Security with Power BI, you must use and configure relevant Microsoft security services, some of which are set outside Power BI. The following list describes the necessary steps:
 
@@ -78,7 +78,7 @@ Using Cloud App Security with Power BI is designed to help secure your organizat
 
 * Microsoft Cloud App Security can only operate on Excel, PowerPoint, and PDF files.
 
-* You must have one of the following Microsoft Information Protection licenses in order to use sensitivity labels in Power BI:
+* If you want to use session policies on Power BI assets, you need to have one of the following Microsoft Information Protection licenses:
     * APPI1
     * APP2
     * OFFICE E3/E5
