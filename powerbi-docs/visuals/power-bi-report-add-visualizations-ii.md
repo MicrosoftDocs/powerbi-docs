@@ -17,11 +17,11 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-In [Part 1](power-bi-report-add-visualizations-i.md), you created a basic visualization by selecting checkboxes next to field names.  In Part 2 you'll learn how to use drag-and-drop and make full use of the **Fields** and **Visualizations** panes to create and modify visualizations.
+In [Part 1](power-bi-report-add-visualizations-i.md), you created a basic visualization by selecting checkboxes next to field names.  In Part 2, you'll learn how to use drag-and-drop and make full use of the **Fields** and **Visualizations** panes to create and modify visualizations.
 
 
 ## Create a new visualization
-In this tutorial we'll dig into our Retail Analysis dataset and create a few key visualizations.
+In this tutorial, we'll dig into our Retail Analysis dataset and create a few key visualizations.
 
 ## Prerequisites
 
@@ -42,14 +42,14 @@ This tutorial uses the [Retail analysis sample PBIX file](http://download.micros
 
 ### Add an area chart that looks at this year's sales compared to last year
 
-1. From the **Sales** table, select **This Year Sales** > **Value** and **Last Year Sales**. Power BI creates a column chart.  This is somewhat interesting, and you want to dig deeper. What do the sales look like by month?  
+1. From the **Sales** table, select **This Year Sales** > **Value** and **Last Year Sales**. Power BI creates a column chart.  This chart is interesting, and you want to dig deeper. What do the sales look like by month?  
    
    ![Screenshot showing column chart](media/power-bi-report-add-visualizations-ii/power-bi-start.png)
 
 2. From the Time table, drag **FiscalMonth** into the **Axis** area.  
    ![Screenshot showing column chart with FiscalMonth as axis](media/power-bi-report-add-visualizations-ii/power-bi-fiscalmonth.png)
 
-3. [Change the visualization](power-bi-report-change-visualization-type.md) to an area chart.  There are many visualization types to choose from - see [descriptions of each, tips for best practices, and tutorials](power-bi-visualization-types-for-reports-and-q-and-a.md) for help deciding which type to use. From the Visualizations pane, select the area chart icon ![Area chart icon from Visualizations pane](media/power-bi-report-add-visualizations-ii/power-bi-area-chart.png).
+3. [Change the visualization](power-bi-report-change-visualization-type.md) to an area chart.  There are many visualization types to choose from - see [descriptions of each, tips for best practices, and tutorials](power-bi-visualization-types-for-reports-and-q-and-a.md) for help with deciding which type to use. From the Visualizations pane, select the area chart icon ![Area chart icon from Visualizations pane](media/power-bi-report-add-visualizations-ii/power-bi-area-chart.png).
 
 4. Sort the visualization by selecting **More actions** (...) and choosing **Sort by** >  **FiscalMonth**.
 
