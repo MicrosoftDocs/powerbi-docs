@@ -19,7 +19,7 @@ ms.author: mohaali
 
 The Q&A visual allows users to ask natural language questions and get answers in the form of a visual. 
 
-<!--![Q&A Visual Walkthrough](../natural-language/media/qna-visual-walkthrough.gif) -->
+![Q&A visual walkthrough](../natural-language/media/qna-visual-walkthrough.gif)
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
@@ -45,7 +45,7 @@ The Q&A visual consists of four core components;
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
 
-<!--If you see an error when creating a Q&A visual, be sure to check out the [limitations](../natural-language/qna-limitations.md) section to see if the datasource configuration is supported.-->
+If you see an error when creating a Q&A visual, be sure to check out the [limitations](../natural-language/q-and-a-limitations.md) section to see if the datasource configuration is supported.
 
 ## Create a Q&A visual using a suggested question
 In this exercise, we'll select one of the suggested questions to create our Q&A visual. 
@@ -132,16 +132,16 @@ Selecting the cog icon opens the Q&A visual Tooling pane.
 
 ![Q&A visual with Tooling icon selected](media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling.png)
 
-Use the Tooling pane to teach Q&A terms it doesn't recognize, to manage those terms, and to manage the suggested questions for this dataset and report. In the Tooling pane you can also review questions that have been asked using this Q&A visual and see questions that have been flagged by users. <!--To learn more, see [Q&A Tooling into](../natural-language/qnaa-tooling-intro.md) -->
+Use the Tooling pane to teach Q&A terms it doesn't recognize, to manage those terms, and to manage the suggested questions for this dataset and report. In the Tooling pane you can also review questions that have been asked using this Q&A visual and see questions that have been flagged by users. To learn more, see [Q&A Tooling into](../natural-language/q-and-a-tooling-intro.md).
 
 ![The Q&A Tooling pane](media/power-bi-visualization-q-and-a/power-bi-q-and-a-tooling-pane.png)
 
 ## Considerations and troubleshooting
 The Q&A visual integrates with Office and Bing to attempt to match unrecognized common words with fields in your dataset.  
 
-<!--## Next steps
+## Next steps
 
 There are a variety of ways you can integrate natural language. For more information, see the following articles:
 
-* [Q&A Tooling](../natural-language/qna-tooling-intro.md)
-* [Q&A Best Practices](../natural-language/qna-best-practices.md) -->
+* [Q&A Tooling](../natural-language/q-and-a-tooling-intro.md)
+* [Q&A Best Practices](../natural-language/q-and-a-best-practices.md)

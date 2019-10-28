@@ -103,6 +103,7 @@ As you get more comfortable navigating the Power BI service, you'll figure out w
 - Using [View related](end-user-related.md)    
 - In an email, when someone [shares with you](../service-share-reports.md) or you [set an alert](end-user-alerts.md)    
 - From your [Notification center](end-user-notification-center.md)    
+- From a workspace
 - and more
 
 ## Next steps
