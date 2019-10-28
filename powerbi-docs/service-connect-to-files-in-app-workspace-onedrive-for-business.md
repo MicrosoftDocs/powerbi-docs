@@ -24,7 +24,7 @@ Adding files to your workspace is a two-step process:
 2. Then you [connect to those files from Power BI](service-connect-to-files-in-app-workspace-onedrive-for-business.md#2-import-excel-files-as-datasets-or-as-excel-online-workbooks).
 
 > [!NOTE]
-> workspaces are only available with [Power BI Pro](service-features-license-type.md).
+> Workspaces are only available with [Power BI Pro](service-features-license-type.md).
 > 
 
 ## 1 Upload files to the OneDrive for Business for your workspace
