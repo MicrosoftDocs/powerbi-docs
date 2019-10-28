@@ -154,7 +154,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                           <h3>Share your work</h3> 
                                           <p></p>
                                                 <a href="service-how-to-collaborate-distribute-dashboards-reports.md">How should I collaborate & share?</a><br/>
-                                                <a href="service-create-workspaces.md">workspaces in the Power BI service</a> 
+                                                <a href="service-create-workspaces.md">Workspaces in the Power BI service</a> 
                                     </div> 
                               </div> 
                         </div> 
