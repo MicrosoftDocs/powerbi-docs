@@ -36,7 +36,7 @@ To create a dataflow, launch the Power BI service in a browser then select a **w
 
 ![Create a dataflow in Power BI](media/service-dataflows-create-use/dataflows-create-use_02a.png)
 
-Once you’re in an **workspace** area where you can create a dataflow, the **+ Create** button appears in the upper-right corner of the canvas. Select the **+ Create** button, then select **Dataflow** from the drop-down list. 
+Once you’re in a **workspace** area where you can create a dataflow, the **+ Create** button appears in the upper-right corner of the canvas. Select the **+ Create** button, then select **Dataflow** from the drop-down list. 
 
 It's important to know that there is only *one owner* of any dataflow, which is the person who creates it. Only the owner can edit the dataflow. All members of the **workspace** who have read or write permissions to the workspace where the dataflow is created can connect to the dataflow from within **Power BI Desktop**, as described later in this article.
 
