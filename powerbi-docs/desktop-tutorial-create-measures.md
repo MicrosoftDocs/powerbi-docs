@@ -56,7 +56,7 @@ When you create your own measure, it's added to the Fields list for the table yo
 
 You want to analyze your net sales by subtracting discounts and returns from total sales amounts. For whatever context exists in your visualization, you need a measure that subtracts the sum of DiscountAmount and ReturnAmount from the sum of SalesAmount. There's no field for Net Sales in the Fields list, but you have the building blocks to create your own measure to calculate net sales. 
 
-1.  Right-click the **Sales** table in the Fields well, or hover over the table and select the **More options** ellipsis (...), and then select **New Measure**. This will save your new measure in the Sales table, where it will be easier to find.
+1.  Right-click the **Sales** table in the Fields well, or hover over the table and select **More options** (...), and then select **New Measure**. This will save your new measure in the Sales table, where it will be easier to find.
     
     ![New measure](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure.png)
     
