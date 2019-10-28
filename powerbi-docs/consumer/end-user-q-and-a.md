@@ -144,7 +144,7 @@ Then choose **Settings** > **Dashboards**. Make sure there is a checkmark next t
 **Question**: I'm not getting the results I'd like to see when I type a question.    
 **Answer**: Select the option to contact the report or dashboard owner. You can do this directly from the Q&A dashboard page or the Q&A visual. Or, you can look up the owner from the Power BI header.  There are many things the designer can do to improve the Q&A results. For example, the designer can rename columns in the dataset to use terms that are easily understood (`CustomerFirstName` instead of `CustFN`). Since the designer knows the dataset really well, the designer can also come up with helpful questions and add them to the Q&A suggested questions.
 
-![Display contact information](media/end-user-q-and-a/power-bi-contact.png)
+![Display contact information](media/end-user-q-and-a/power-bi-q-and-a-contact.png)
 
 ## Next steps
 To learn how a Q&A visual is created and managed by a report *designer*, see [Q&A visual type](../visuals/power-bi-visualization-q-and-a.md).

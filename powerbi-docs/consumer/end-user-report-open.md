@@ -51,7 +51,7 @@ Power BI *designers* can share an individual report directly with you via a link
 
 6. Notice the **Filters** pane along the right side. Filters that have been applied to this report page, or to the entire report, are displayed here.
 
-7. Hovering over a report visual reveals several icons and an ellipsis (...). To see the filters applied to a specific visual, select the filter icon. Here we've selected the filter icon for the *Total units by rolling period and region* line chart.
+7. Hovering over a report visual reveals several icons and **More options** (...). To see the filters applied to a specific visual, select the filter icon. Here we've selected the filter icon for the *Total units by rolling period and region* line chart.
 
    ![report page tabs](./media/end-user-report-open/power-bi-visual-filters.png)
 
