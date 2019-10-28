@@ -52,7 +52,7 @@ Power BI workspaces reside within capacities and they represent security, collab
 
 To introduce Power BI Premium topics, it is important to start with a thorough discussion of Power BI architecture including fundamental content types.
 
-All Power BI content is stored and managed within workspaces which are containers for Power BI content. Each Power BI user has their own personal workspace, but the general best practice is to create workspaces. workspaces enable co-ownership of content and the ability to collaborate on content. They also provide the ability to stage and distribute content to wide audiences as apps.
+All Power BI content is stored and managed within workspaces which are containers for Power BI content. Each Power BI user has their own personal workspace, but the general best practice is to create workspaces. Workspaces enable co-ownership of content and the ability to collaborate on content. They also provide the ability to stage and distribute content to wide audiences as apps.
 
 The following Power BI content is stored in workspaces:
 
