@@ -27,9 +27,9 @@ This tutorial uses the [Sales & marketing PBIX file](http://download.microsoft.c
 
 1. From the upper left section of the Power BI Desktop menu bar, select **File** > **Open**
    
-2. Find your copy of the **Retail Analysis sample PBIX file**
+2. Find your copy of the **Sales and marketing sample PBIX file**
 
-1. Open the **Retail Analysis sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Open the **Sales and marketing sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
 1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
