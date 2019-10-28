@@ -7,7 +7,7 @@ ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 12/06/2017
 ms.author: mblythe
 ms.custom: seodec18

@@ -13,6 +13,9 @@ ms.author: mihart
 LocalizationGroup: Share your work
 ---
 # Install and use apps with dashboards and reports in Power BI
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Now that you have a [basic understanding of apps](end-user-apps.md), let's learn how to open and interact with apps. 
 
 ## Ways to get a new app

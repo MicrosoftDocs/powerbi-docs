@@ -16,6 +16,7 @@ LocalizationGroup: Dashboards
 ---
 # Display the dashboards and reports that have been shared with me
 
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 When a colleague shares content with you, using the **Share** button, it appears in your **Shared with me** container. The dashboard or report is only available from **Shared with me** and not available from **Apps**.
 

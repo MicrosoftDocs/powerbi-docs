@@ -15,6 +15,9 @@ ms.author: mihart
 LocalizationGroup: Common tasks
 ---
 # Printing from the Power BI service
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Print an entire dashboard, a dashboard tile, a report page, or a report visual from the Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once.
 
    > [!NOTE]
