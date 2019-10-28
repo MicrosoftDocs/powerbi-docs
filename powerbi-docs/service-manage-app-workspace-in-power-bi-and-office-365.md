@@ -1,6 +1,6 @@
 ---
 title: Manage your workspace in Power BI and Office 365
-description: workspaces in Power BI are a collaborative experience built on Office 365 groups. Manage your workspaces in Power BI and also in Office 365.
+description: Workspaces in Power BI are a collaborative experience built on Office 365 groups. Manage your workspaces in Power BI and also in Office 365.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukasz
@@ -14,7 +14,7 @@ LocalizationGroup: Share your work
 
 # Manage your workspace in Power BI and Office 365
 
-As creator or admin of an [workspace in Power BI](service-create-distribute-apps.md) or in Office 365, you manage some aspects of the workspace in Power BI. Other aspects you manage in Office 365.
+As creator or admin of a [workspace in Power BI](service-create-distribute-apps.md) or in Office 365, you manage some aspects of the workspace in Power BI. Other aspects you manage in Office 365.
 
 > [!NOTE]
 > The new workspace experience changes the relationship between Power BI workspaces and Office 365 groups. You aren't automatically be creating an Office 365 group every time you create one of the new workspaces. Read about [creating the new workspaces](service-create-the-new-workspaces.md).
