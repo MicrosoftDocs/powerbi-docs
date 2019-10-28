@@ -407,10 +407,12 @@ Now that you've completed developing your application, it's time to back your ap
 ### Create a dedicated capacity
 
 By creating a dedicated capacity, you can take advantage of having a dedicated resource for your customer. There are two types of capacity you can choose from:
-* **Power BI Premium** - A tenant-level Office 356 subscription available in two SKU families, *EM* and *P*. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more informtion regaurding this subscription, see [What is Power BI Premium?](../service-premium-what-is.md)
+* **Power BI Premium** - A tenant-level Office 356 subscription available in two SKU families, *EM* and *P*. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more informtion regarding this subscription, see [What is Power BI Premium?](../service-premium-what-is.md)
 * **Azure Power BI Embedded** - You can purchase a dedicated capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
+> [!NOTE]
+> With A SKUs, you can't access Power BI content with a FREE Power BI license.
 
-Use the table below to determine which capacity best fits your needs.
+The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see [Power BI Premium FAQ](../service-premium-faq.md).
 
 | Capacity Nodes | Total v-cores | Backend v-cores | RAM (GB) | Frontend v-cores | DirectQuery/Live Connection (per sec) | Model Refresh Parallelism |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -422,7 +424,7 @@ Use the table below to determine which capacity best fits your needs.
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
 | | | | | | | |
 
-**_With A SKUs, you can't access Power BI content with a FREE Power BI license._**
+### Development testing
 
 Using embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI master account or service principal can generate is limited. A dedicated capacity requires embedding in a production environment. There's no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) to check the usage value that indicates the current embedded usage in percentage. The usage amount is based per master account.
 
