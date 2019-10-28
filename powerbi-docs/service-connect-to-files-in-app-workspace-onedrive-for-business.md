@@ -55,7 +55,7 @@ Now that your files are in the OneDrive for Business for your workspace, you hav
 3. In the **Files** box, select **Get**.
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_getfiles.png)
-4. Select **OneDrive** - *Your workspace Name*.
+4. Select **OneDrive** - *Your Workspace Name*.
    
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
 5. Select the file you want > **Connect**.
