@@ -59,7 +59,7 @@ First, determine whether an SPN was already created for the domain account used 
 
    For example, suppose the gateway service account is **Contoso\GatewaySvc** and the gateway service is running on the machine named **MyGatewayMachine**. To set the SPN for the gateway service account, run the following command:
 
-   ```setspn -a gateway/<MyGatewayMachine>\GatewaySvc```
+   ```setspn -a gateway/MyGatewayMachine Contoso\GatewaySvc```
 
    You can also set the SPN by using the **Active Directory Users and Computers** MMC snap-in.
 
@@ -219,7 +219,7 @@ If you don't have Azure AD Connect configured, follow these steps to map a Power
 
 ## Complete data source-specific configuration steps
 
-SAP HANA and SAP BW have additional data-source specific configuration requirements and prerequisites that you need to meet before you can establish an SSO connection through the gateway to these data sources. For more information, see [SAP HANA configuration](service-gateway-sso-kerberos-sap-hana.md) and [the SAP BW - CommonCryptoLib (sapcrypto.dll) configuration page](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md). Although it's possible to [configure SAP BW for use with the gx64krb5 SNC library](service-gateway-sso-kerberos-sap-bw-gx64krb.md), this library isn't recommended because it's no longer supported by SAP. Instead, use CommonCryptoLib or gx64krb5 as your SNC library. Don't complete the configuration steps for both libraries.
+SAP HANA and SAP BW have additional data-source specific configuration requirements and prerequisites that you need to meet before you can establish an SSO connection through the gateway to these data sources. For more information, see [SAP HANA configuration](service-gateway-sso-kerberos-sap-hana.md) and [the SAP BW - CommonCryptoLib (sapcrypto.dll) configuration page](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md). Although it's possible to [configure SAP BW for use with the gx64krb5 SNC library](service-gateway-sso-kerberos-sap-bw-gx64krb.md), this library isn't recommended because it's no longer supported by SAP. You should use CommonCryptoLib _or_ gx64krb5 as your SNC library. Don't complete the configuration steps for both libraries.
 
 > [!NOTE]
 > Although other SNC libraries might also work for BW SSO, they aren't officially supported by Microsoft.
@@ -230,7 +230,7 @@ After you complete all the configuration steps, use the **Manage Gateway** page 
 
 ![Advanced settings option](media/service-gateway-sso-kerberos/advanced-settings.png)
 
- Publish a DirectQuery-based report from Power BI Desktop. This report must use data that is accessible to the user that's mapped to the (Azure) Active Directory user that signs in to the Power BI service. Because of how refresh works, you must use DirectQuery instead of import. When the gateway refreshes import-based reports, it uses the credentials that you entered in the **Username** and **Password** fields when you created the data source. In other words, Kerberos SSO is *not* used. When you publish, select the gateway you've configured for SSO if you have multiple gateways. In the Power BI service, you can refresh the report or create a new report based on the published dataset.
+ Publish a DirectQuery-based report from Power BI Desktop. This report must use data that is accessible to the user that's mapped to the (Azure) Active Directory user that signs in to the Power BI service. Because of how refresh works, you must use DirectQuery instead of import. When the gateway refreshes import-based reports, it uses the credentials that you entered in the **Username** and **Password** fields when you created the data source. In other words, Kerberos SSO is *not* used. When you publish, select the gateway you've configured for SSO if you have multiple gateways. In the Power BI service, you can now refresh the report or create a new report based on the published dataset.
 
 This configuration works in most cases. However, with Kerberos there can be different configurations depending on your environment. If the report won't load, contact your domain administrator to investigate further. If your data source is SAP BW, refer to the troubleshooting sections of the data source-specific configuration pages for [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) and [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting), depending on which SNC library you've chosen.
 

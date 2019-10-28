@@ -51,7 +51,7 @@ Here are additional details about each step:
 
 ## Next steps
 
-Now that you understand the basics of running SSO through the gateway, read more detailed information about Kerberos and SAML:
+Now that you understand the basics of enabling SSO through the gateway, read more detailed information about Kerberos and SAML:
 
 * [Single sign-on (SSO) - Kerberos](service-gateway-sso-kerberos.md)
 * [Single sign-on (SSO) - SAML](service-gateway-sso-saml.md)

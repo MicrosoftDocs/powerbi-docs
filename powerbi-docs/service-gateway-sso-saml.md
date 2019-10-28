@@ -148,13 +148,13 @@ Finally, follow these steps to add the certificate thumbprint to the gateway con
 
 ## Running a Power BI report
 
-Now you can use the **Manage Gateway** page in Power BI to configure the SAP HANA data source. Under **Advanced Settings**, enable SSO. Doing so allows you to publish reports and datasets binding to that data source.
+Now you can use the **Manage Gateway** page in Power BI to configure the SAP HANA data source. Under **Advanced Settings**, enable SSO via SAML. Doing so allows you to publish reports and datasets binding to that data source.
 
    ![Advanced settings](media/service-gateway-sso-saml/advanced-settings.png)
 
 ## Troubleshooting
 
-After you configure SSO, you might see the following error in the Power BI portal: *The credentials provided cannot be used for the SapHana source.* This error indicates that the SAML credential was rejected by SAP HANA.
+After you configure SAML-based SSO, you might see the following error in the Power BI portal: *The credentials provided cannot be used for the SapHana source.* This error indicates that the SAML credential was rejected by SAP HANA.
 
 Server-side authentication traces provide detailed information for troubleshooting credential issues on SAP HANA. Follow these steps to configure tracing for your SAP HANA server:
 
