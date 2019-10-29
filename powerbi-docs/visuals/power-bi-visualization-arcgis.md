@@ -1,6 +1,6 @@
 ---
 title: Create ArcGIS Maps for Power BI
-description: 'Create an ArcGIS Maps by ESRI for Power BI '
+description: 'Create an ArcGIS Maps by Esri for Power BI '
 author: mihart
 manager: kvivek
 ms.reviewer: lukaszp
@@ -33,7 +33,7 @@ The example below uses a dark gray canvas to show regional sales as a heatmap ag
 ![intro image of arcgis](media/power-bi-visualization-arcgis/power-bi-intro-arcgis.png)
 
 > [!TIP]
-> Visit [esri's page on ArcGIS Maps for Power BI](https://www.esri.com/powerbi) to see many examples and read testimonials. And then see esri's [ArcGIS Maps for Power BI Getting Started page](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
+> Visit [Esri's page on ArcGIS Maps for Power BI](https://www.esri.com/powerbi) to see many examples and read testimonials. And then see Esri's [ArcGIS Maps for Power BI Getting Started page](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
 
 ## User consent
 ArcGIS Maps for Power BI is provided by Esri (www.esri.com). Your use of ArcGIS Maps for Power BI is subject by Esri's terms and privacy policy. Power BI users wishing to use the ArcGIS Maps for Power BI visuals, need to accept the consent dialog.
@@ -46,13 +46,10 @@ ArcGIS Maps for Power BI is provided by Esri (www.esri.com). Your use of ArcGIS 
 
 [ArcGIS Maps for Power BI product page](https://www.esri.com/powerbi)
 
-<br/>
-
 
 ## Prerequisites
 
-This tutorial uses Power BI Desktop and the PBIX [Retail Analysis sample](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix
-). ArcGIS Maps for Power BI can also be created using the Power BI service. 
+This tutorial uses Power BI Desktop and the PBIX [Retail Analysis sample](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). ArcGIS Maps for Power BI can also be created using the Power BI service. 
 
 1. From the upper left section of the menu bar, select **File** \> **Open**
    
@@ -66,24 +63,25 @@ This tutorial uses Power BI Desktop and the PBIX [Retail Analysis sample](http:/
 ## Create an ArcGIS Maps for Power BI map visualization
 
 Watch Will create a few different visualizations and then use the steps below to try it out yourself using the [Retail Analysis sample .PBIX file](../sample-datasets.md) file.
+    
+
    > [!NOTE]
    > This video uses an older version of Power BI Desktop.
    > 
    > 
+   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
  
 1. Select the ArcGIS Maps for Power BI icon from the Visualizations pane.
    
-    ![visualization pane for ArcGIS maps](media/power-bi-visualization-arcgis/power-bi-viz-pane.png)
-4. Power BI adds an empty template to the report canvas. For this tutorial, we'll be using the free version.
+    ![visualization pane for ArcGIS maps](media/power-bi-visualization-arcgis/power-bi-viz-pane.png)    
+
+2. Power BI adds an empty template to the report canvas. For this tutorial, we'll be using the free version.
    
    ![ArcGIS visualization placeholder](media/power-bi-visualization-arcgis/power-bi-sign-in.png)
 
 
-
-
-
-1. From the **Fields** pane, drag a data field to the **Location** or **Latitude** and/or **Longitude** buckets. In this example, we're using **Store > City**.
+3. From the **Fields** pane, drag a data field to the **Location** or **Latitude** and/or **Longitude** buckets. In this example, we're using **Store > City**.
    
    > [!NOTE]
    > ArcGIS Maps for Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
@@ -92,9 +90,9 @@ Watch Will create a few different visualizations and then use the steps below to
    
     ![ArcGIS fields pane](media/power-bi-visualization-arcgis/power-bi-fields-pane3new.png)
 
-3. From the **Fields** pane, drag a measure to the **Size** bucket to adjust how the data is shown. In this example, we're using **Sales > Last Year Sales**.
+4. From the **Fields** pane, drag a measure to the **Size** bucket to adjust how the data is shown. In this example, we're using **Sales > Last Year Sales**.
    
-    ![esri point map visualization](media/power-bi-visualization-arcgis/power-bi-esri-point-map-size2new.png)
+    ![Esri point map visualization](media/power-bi-visualization-arcgis/power-bi-esri-point-map-size2new.png)
 
 You've created your first ArcGIS Map for Power BI map. Now, let's refine and format our map using base maps, location types, themes, and more.
 
@@ -107,7 +105,7 @@ To access **ArcGIS Maps for Power BI** formatting features:
    
    The visualization expands and the available features display across the top. Each feature, when selected, opens a task pane that provides detailed options.<br/>
    
-   ![esri features pane](media/power-bi-visualization-arcgis/power-bi-esri-features-new.png)
+   ![Esri features pane](media/power-bi-visualization-arcgis/power-bi-esri-features-new.png)
    
 
 > [!TIP]
@@ -119,19 +117,19 @@ Four base maps are provided: Dark Gray Canvas, Light Gray Canvas, OpenStreetMap,
 
 To apply a base map, select it in the task pane.
 
-![esri base maps visual](media/power-bi-visualization-arcgis/power-bi-esri-base-maps-new.png)
+![Esri base maps visual](media/power-bi-visualization-arcgis/power-bi-esri-base-maps-new.png)
 
 ### Location type
 ArcGIS Maps for Power BI automatically detect the best way to show data on the map. It selects from points or boundaries. The Location type options allow you to fine-tune these selections.
 
-![esri location types example](media/power-bi-visualization-arcgis/power-bi-esri-location-types-new.png)
+![Esri location types example](media/power-bi-visualization-arcgis/power-bi-esri-location-types-new.png)
 
 **Boundaries** will only work if your data contains standard geographic values. ArcGIS Maps for Power BI automatically figures out the shape to show on the map. Standard geographic values include countries, provinces, zip codes, etc. But just like with GeoCoding, Power BI may not detect that a field should be a boundary by default, or it may not find a boundary for your data.  
 
 ### Map theme
 Four map themes are provided. Power BI automatically selects either **Location only** or **Size** themes, based on the field(s) you added to the **Location** and **Size** buckets. Our map has defaulted to **Size**, since we added fields to both buckets. Try out the other themes and return to **Size** before moving on to the next step.  
 
-![esri map theme example](media/power-bi-visualization-arcgis/power-bi-esri-map-theme-new.png)
+![Esri map theme example](media/power-bi-visualization-arcgis/power-bi-esri-map-theme-new.png)
 
 <table>
 <tr><th>Theme</th><th>Description</th>
@@ -157,7 +155,7 @@ Four map themes are provided. Power BI automatically selects either **Location o
 ### Symbol style
 Symbol styles enable you to fine-tune how data is presented on the map. Symbol styles are context-sensitive based on the selected Location type and Map theme. The example below shows Map theme set to **Size** and several adjustments to transparency, style, and size. 
 
-![esri symbol style example](media/power-bi-visualization-arcgis/power-bi-esri-symbol-style-new.png)
+![Esri symbol style example](media/power-bi-visualization-arcgis/power-bi-esri-symbol-style-new.png)
 
 ### Pins
 Call attention to points on your map by adding pins.  
@@ -213,7 +211,7 @@ ArcGIS Online provides the ability for organizations to publish public web maps.
 1. Select the **Reference layer** tab and choose **ArcGIS**.
 2. Enter search terms and then select a map layer. In this example we've chosen USA Congressional districts.
    
-    ![esri demographics example](media/power-bi-visualization-arcgis/power-bi-reference-details.png)
+    ![Esri demographics example](media/power-bi-visualization-arcgis/power-bi-reference-details.png)
 3. To see the details, select a shaded area to open the *Select from reference layer*: Use the reference layer selection tool to selection boundaries or objects on the reference layer.
 
 <br/>
@@ -223,19 +221,19 @@ ArcGIS Maps for Power BI allows five selection modes to help you select your dat
 
 Change the selection mode by hovering your cursor over the single selection tool icon shown in the below image. This will expand the hidden bar to show additional tools:
 
-![esri selection tool](media/power-bi-visualization-arcgis/power-bi-esri-selection-tools2.png)
+![Esri selection tool](media/power-bi-visualization-arcgis/power-bi-esri-selection-tools2.png)
 
 Each tool has a unique role in allowing you to select your data: 
 
-![esri selection single](media/power-bi-visualization-arcgis/power-bi-esri-selection-single2.png) Select individual data points.
+![Esri selection single](media/power-bi-visualization-arcgis/power-bi-esri-selection-single2.png) Select individual data points.
 
-![esri selection marquee](media/power-bi-visualization-arcgis/power-bi-esri-selection-marquee2.png) Draws a rectangle on the map and selects the contained data points.
+![Esri selection marquee](media/power-bi-visualization-arcgis/power-bi-esri-selection-marquee2.png) Draws a rectangle on the map and selects the contained data points.
 
-![esri selection reference layer](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-layer2.png) Allows boundaries or polygons within reference layers to be used to select contained data points.
+![Esri selection reference layer](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-layer2.png) Allows boundaries or polygons within reference layers to be used to select contained data points.
 
-![esri selection buffer layer](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-buffer.png) Allows you to select data using a buffer layer.
+![Esri selection buffer layer](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-buffer.png) Allows you to select data using a buffer layer.
 
-![esri selection similar selection](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-similar.png) Allows you to select data points that are similar to each other.
+![Esri selection similar selection](media/power-bi-visualization-arcgis/power-bi-esri-selection-reference-similar.png) Allows you to select data points that are similar to each other.
 
 > [!NOTE]
 > A maximum of 250 data points can be selected at a time.
