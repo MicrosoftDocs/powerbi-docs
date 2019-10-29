@@ -107,7 +107,7 @@ What about displaying a visual showing sales by product and market segment? Easy
 
 2. Change the type of chart by choosing one of the icons in the **Visualizations** menu. For instance, change it to a **Stacked column chart**. 
 
-3. To sort the chart, select the ellipsis (...) > **Sort by**.
+3. To sort the chart, select **More options** (...) > **Sort by**.
 
    ![Stacked column chart in report editor](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
 
