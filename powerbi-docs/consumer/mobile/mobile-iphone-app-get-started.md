@@ -105,7 +105,7 @@ Read more about [configuring Power BI mobile apps with Microsoft Intune](../../s
 
 ## Next steps
 
-* [What is Power BI?](../../designer/power-bi-overview.md)
+* [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
 

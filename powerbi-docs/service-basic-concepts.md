@@ -220,7 +220,7 @@ This area of the screen contains additional options for interacting with the con
    ![Labeled icon buttons](media/service-basic-concepts/power-bi-labeled-icons.png)
 
 ## Next steps
-- [What is Power BI?](designer/power-bi-overview.md)  
+- [What is Power BI?](fundamentals/power-bi-overview.md)  
 - [Power BI videos](videos.md)  
 - [Report editor - take a tour](service-the-report-editor-take-a-tour.md)
 

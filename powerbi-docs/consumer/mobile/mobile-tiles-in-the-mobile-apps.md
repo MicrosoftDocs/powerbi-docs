@@ -118,6 +118,6 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
 4. Tap the back arrow or the back button to close the tile and return to the dashboard.
 
 ## Next steps
-* [What is Power BI?](../../designer/power-bi-overview.md)
+* [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

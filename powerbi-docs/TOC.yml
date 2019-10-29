@@ -424,7 +424,7 @@
   - name: Overview
     items: 
     - name: "What is Power BI?"
-      href: designer/power-bi-overview.md
+      href: fundamentals/power-bi-overview.md
     - name: "What is the Power BI service?"
       href: power-bi-service-overview.md
     - name: "Comparing Power BI Desktop and the service"

@@ -64,7 +64,7 @@ The content pack includes data from the following tables:
 An IntelliBoard account with permissions to the above tables is required in order to instantiate this content pack.
 
 ## Next steps
-[What is Power BI?](designer/power-bi-overview.md)
+[What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 

@@ -45,7 +45,7 @@ Connect to the [Mandrill content pack for Power BI.](http://app.powerbi.com/getd
 * While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## Next steps
-[What is Power BI?](designer/power-bi-overview.md)
+[What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 

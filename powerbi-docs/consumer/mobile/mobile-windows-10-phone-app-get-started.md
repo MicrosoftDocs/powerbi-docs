@@ -117,6 +117,6 @@ Here are some other things you can do in the Power BI app for Windows 10 devices
 
 ## Next steps
 * [Download the Power BI app](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
-* [What is Power BI?](../../designer/power-bi-overview.md)
+* [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

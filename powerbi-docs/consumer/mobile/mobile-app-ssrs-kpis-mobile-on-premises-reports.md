@@ -128,6 +128,6 @@ You can mark KPIs and reports as favorites on the web portal, and then view them
 3. Tap **Remove Server**.
 
 ## Next steps
-* [What is Power BI?](../../designer/power-bi-overview.md)  
+* [What is Power BI?](../../fundamentals/power-bi-overview.md)  
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

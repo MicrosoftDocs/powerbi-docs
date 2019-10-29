@@ -23,7 +23,7 @@ Need help with understanding the building blocks that make up Power BI? See [Bas
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 
 
-The other main components of Power BI are the Windows desktop application **Power BI Desktop** and the Power BI **mobile apps** for Windows, iOS, and Android devices. You and your colleagues can use these three elements&mdash;Power BI Desktop, the service, and the mobile apps&mdash;to create, share, and consume business insights. Read [What is Power BI](designer/power-bi-overview.md) for an overview.
+The other main components of Power BI are the Windows desktop application **Power BI Desktop** and the Power BI **mobile apps** for Windows, iOS, and Android devices. You and your colleagues can use these three elements&mdash;Power BI Desktop, the service, and the mobile apps&mdash;to create, share, and consume business insights. Read [What is Power BI](fundamentals/power-bi-overview.md) for an overview.
 
 ## Creating reports in the service
 In a typical Power BI workflow, you begin by building a report in Power BI Desktop, then publishing it to the Power BI service.  

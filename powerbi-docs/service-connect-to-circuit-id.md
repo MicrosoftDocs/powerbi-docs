@@ -45,7 +45,7 @@ Connect to the [Circuit ID content pack](https://app.powerbi.com/getdata/service
 * While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## Next steps
-[What is Power BI?](designer/power-bi-overview.md)
+[What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Get Data for Power BI](service-get-data.md)
 
