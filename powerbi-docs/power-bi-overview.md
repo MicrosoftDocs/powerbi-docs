@@ -49,7 +49,7 @@ Explore documents that pertain to your role:
 A common flow of work in Power BI begins by connecting to data sources and building a report in Power BI Desktop. You then publish that report from Power BI Desktop to the Power BI service, and share it so end users in the Power BI service and mobile devices can view and interact with the report.
 This workflow is common, and shows how the three main Power BI elements complement one another.
 
-Here's a detailed [comparison of Power BI Desktop and the Power BI service](service-service-vs-desktop.md).
+Here's a detailed [comparison of Power BI Desktop and the Power BI service](designer/service-service-vs-desktop.md).
 
 ## On-premises reporting with Power BI Report Server
 
