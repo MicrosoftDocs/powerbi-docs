@@ -61,5 +61,5 @@ Dataflows help organizations unify data from disparate sources and prepare it fo
 
 [Basic concepts for report designers](../service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 
