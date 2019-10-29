@@ -69,9 +69,8 @@ Watch Will create a few different visualizations and then use the steps below to
    > This video uses an older version of Power BI Desktop.
    > 
 
-[!VIDEO https://www.youtube.com/embed/EKVvOZmxg9s]
+> [!VIDEO https://www.youtube.com/embed/EKVvOZmxg9s]
 
-    
 
 1. Select the ArcGIS Maps for Power BI icon from the Visualizations pane.
    
