@@ -164,6 +164,7 @@ This tutorial is designed to help you get started creating visuals with Python i
 Python visuals in **Power BI Desktop** have a few limitations:
 
 * Data size limitations – data used by the Python visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image.
+* Resolution - all Python visuals are displayed at 72 DPI.
 * Calculation time limitation – if a Python visual calculation exceeds five minutes the execution times out, resulting in an error.
 * Relationships – as with other Power BI Desktop visuals, if data fields from different tables with no defined relationship between them are selected, an error occurs.
 * Python visuals are refreshed upon data updates, filtering, and highlighting. However, the image itself isn't interactive and can't be the source of cross-filtering.
