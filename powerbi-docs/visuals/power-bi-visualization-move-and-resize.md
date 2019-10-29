@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-Report designers and owners can move and resize visualizations. If you're working in the Power BI service, (app.powerbi.com) you'll need to open the report in [Editing view](service-interact-with-a-report-in-editing-view.md). 
+Report designers and owners can move and resize visualizations. If you're working in the Power BI service, (app.powerbi.com) you'll need to open the report in [Editing view](../service-interact-with-a-report-in-editing-view.md). 
 
 ## Open the report
 In Power BI Desktop, open a report that has at least one visualization, or [create a new visualization](power-bi-report-add-visualizations-i.md). 
@@ -36,6 +36,6 @@ In Power BI Desktop, open a report that has at least one visualization, or [crea
 ## Next steps
 [Resize a visualization on a dashboard](../service-dashboard-edit-tile.md)  
 
-[Focus mode](../consumers/end-user-focus.md)
+[Focus mode](../consumer/end-user-focus.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
