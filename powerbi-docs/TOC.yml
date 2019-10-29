@@ -211,8 +211,6 @@
         href: desktop-calculated-tables.md
       - name: "Measures in Power BI Desktop"
         href: desktop-measures.md
-      - name: "Edit Q&A linguistic schema"
-        href: power-bi-q-and-a-linguistic-schema.md
       - name: "Import and display KPIs (Preview)"
         href: desktop-import-and-display-kpis.md
     - name: Create reports
@@ -227,8 +225,6 @@
         href: desktop-tooltips.md        
       - name: "Export to PDF and print reports"
         href: desktop-export-to-pdf.md             
-      - name: "Q&A in Power BI Desktop"
-        href: desktop-qna-in-reports.md
       - name: "Analytics pane in Power BI Desktop"
         href: desktop-analytics-pane.md
       - name: "Use insights to explain increases and decreases"
@@ -1053,6 +1049,8 @@
         href: https://go.microsoft.com/fwlink/?linkid=849021
       - name: "Access shared datasets as OData feeds"
         href: report-server/access-dataset-odata.md
+      - name: "Change data source connection strings with PowerShell"
+        href: report-server/connect-data-source-apis.md
       - name: "Configure scheduled refresh"
         href: report-server/configure-scheduled-refresh.md
       - name: "Add comments to a report"

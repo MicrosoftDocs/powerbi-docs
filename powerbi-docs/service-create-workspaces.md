@@ -34,7 +34,7 @@ When you first create it, you may need to wait an hour or so for the workspace t
 ### Add an image to your Office 365 workspace (optional)
 By default, Power BI creates a little colored circle for your app, with the app's initials. But maybe you want to customize it with an image. To add an image, you need an Exchange Online license.
 
-1. Select **Workspaces**, select the ellipsis (...) next to the name of the workspace, then **Members**. 
+1. Select **Workspaces**, select **More options** (...) next to the name of the workspace, then **Members**. 
    
      ![Select Workspace Members](media/service-create-workspaces/power-bi-workspace-old-members.png)
    
