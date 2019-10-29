@@ -75,7 +75,7 @@ Watch Will create a few different visualizations and then use the steps below to
 1. Select the ArcGIS Maps for Power BI icon from the Visualizations pane.
    
     ![visualization pane for ArcGIS maps](media/power-bi-visualization-arcgis/power-bi-viz-pane.png)
-4. Power BI adds an empty template to the report canvas. For this tutorial we'll be using the free version.
+4. Power BI adds an empty template to the report canvas. For this tutorial, we'll be using the free version.
    
    ![ArcGIS visualization placeholder](media/power-bi-visualization-arcgis/power-bi-sign-in.png)
 
@@ -83,7 +83,7 @@ Watch Will create a few different visualizations and then use the steps below to
 
 
 
-1. From the **Fields** pane, drag a data field to the **Location** or **Latitude** and/or **Longitude** buckets. In this example we're using **Store > City**.
+1. From the **Fields** pane, drag a data field to the **Location** or **Latitude** and/or **Longitude** buckets. In this example, we're using **Store > City**.
    
    > [!NOTE]
    > ArcGIS Maps for Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
@@ -92,7 +92,7 @@ Watch Will create a few different visualizations and then use the steps below to
    
     ![ArcGIS fields pane](media/power-bi-visualization-arcgis/power-bi-fields-pane3new.png)
 
-3. From the **Fields** pane, drag a measure to the **Size** bucket to adjust how the data is shown. In this example we're using **Sales > Last Year Sales**.
+3. From the **Fields** pane, drag a measure to the **Size** bucket to adjust how the data is shown. In this example, we're using **Sales > Last Year Sales**.
    
     ![esri point map visualization](media/power-bi-visualization-arcgis/power-bi-esri-point-map-size2new.png)
 
@@ -117,12 +117,12 @@ To access **ArcGIS Maps for Power BI** formatting features:
 ### Base maps
 Four base maps are provided: Dark Gray Canvas, Light Gray Canvas, OpenStreetMap, and Streets.  *Streets* is the ArcGIS standard base map.
 
-To apply a base map select it in the task pane.
+To apply a base map, select it in the task pane.
 
 ![esri base maps visual](media/power-bi-visualization-arcgis/power-bi-esri-base-maps-new.png)
 
 ### Location type
-ArcGIS Maps for Power BI automatically detect the best way to show data on the map. It selects from points or boundaries. The Location type options allow you to fine tune these selections.
+ArcGIS Maps for Power BI automatically detect the best way to show data on the map. It selects from points or boundaries. The Location type options allow you to fine-tune these selections.
 
 ![esri location types example](media/power-bi-visualization-arcgis/power-bi-esri-location-types-new.png)
 
@@ -155,7 +155,7 @@ Four map themes are provided. Power BI automatically selects either **Location o
 
 
 ### Symbol style
-Symbol styles enable you to fine tune how data is presented on the map. Symbol styles are context sensitive based on the selected Location type and Map theme. The example below shows Map theme set to **Size** and several adjustments to transparency, style and size. 
+Symbol styles enable you to fine-tune how data is presented on the map. Symbol styles are context-sensitive based on the selected Location type and Map theme. The example below shows Map theme set to **Size** and several adjustments to transparency, style, and size. 
 
 ![esri symbol style example](media/power-bi-visualization-arcgis/power-bi-esri-symbol-style-new.png)
 
@@ -191,7 +191,7 @@ The Drive time pane lets you select a location and then determine what other map
 
     
 
-3. There are two stores within a 25 minutes drive. The radius is shown in purple. Select any location to display its details. Optionally, format the radius by changing color and outline.
+3. There are two stores within a 25-minutes drive. The radius is shown in purple. Select any location to display its details. Optionally, format the radius by changing color and outline.
    
     ![radius format with color and outline example](media/power-bi-visualization-arcgis/power-bi-drive.png)
 
@@ -326,7 +326,7 @@ When geocoding street addresses, only the first 1500 addresses are geocoded. Geo
 **How do ArcGIS Maps for Power BI work together?**
 ArcGIS Maps for Power BI is provided by Esri (www.esri.com). Your use of ArcGIS Maps for Power BI is subject by Esri's [terms](https://go.microsoft.com/fwlink/?LinkID=8263222) and [privacy policy](https://go.microsoft.com/fwlink/?LinkID=826323). Power BI users wishing to use the ArcGIS Maps for Power BI visuals, need to accept the consent dialog (see User Consent for details).  Using Esri’s ArcGIS Maps for Power BI is subject to Esri’s Terms and Privacy Policy, which are also linked to from the consent dialog. Each user must consent prior to using ArcGIS Maps for Power BI for the first time. Once the user accepts the consent, data bound to the visual is sent to Esri’s services at least for geocoding, meaning transforming location information into latitude and longitude information that can be represented in a map. You should assume any data bound to the data visualization can be sent to Esri’s services. Esri provides services like base maps, spatial analytics, geocoding, etc. The ArcGIS Maps for Power BI visual interacts with these services using an SSL connection protected by a certificate provided and maintained by Esri. Additional information about ArcGIS Maps for Power BI can be obtained from Esri’s [ArcGIS Maps for Power BI product page](https://www.esri.com/powerbi).
 
-When a user signs up for a Plus subscription offered by Esri through ArcGIS Maps for Power BI, they are entering into an direct relationship with Esri. Power BI does not send personal information about the user to Esri. The user signs in to and trusts an Esri provided AAD application using their own AAD identity. By doing so, the user is sharing their personal information directly with Esri. Once the user adds Plus content to an ArcGIS Maps for Power BI visual, other Power BI users also need a Plus subscription from Esri to view or edit that content. 
+When a user signs up for a Plus subscription offered by Esri through ArcGIS Maps for Power BI, they are entering into a direct relationship with Esri. Power BI does not send personal information about the user to Esri. The user signs in to and trusts an Esri provided AAD application using their own AAD identity. By doing so, the user is sharing their personal information directly with Esri. Once the user adds Plus content to an ArcGIS Maps for Power BI visual, other Power BI users also need a Plus subscription from Esri to view or edit that content. 
 
 For technical detailed questions about how Esri’s ArcGIS Maps for Power BI works, reach out to Esri through their support site.
 
@@ -343,7 +343,7 @@ This is a bug that is being addressed.  In the meantime, to clear your cache, pl
 
 **Does ArcGIS Maps for Power BI support Esri Shapefiles?**
 
-ArcGIS Maps for Power BI automatically detects standard boundaries like countries/regions, states/provinces, and zip/postal codes. If you need to provide your own shapes you can do so using the [Shape Maps for Power BI Desktop](desktop-shape-map.md).
+ArcGIS Maps for Power BI automatically detects standard boundaries like countries/regions, states/provinces, and zip/postal codes. If you need to provide your own shapes, you can do so using the [Shape Maps for Power BI Desktop](desktop-shape-map.md).
 
 **Can I view my ArcGIS maps offline?**
 
