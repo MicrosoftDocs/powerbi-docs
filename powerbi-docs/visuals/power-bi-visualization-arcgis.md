@@ -68,11 +68,11 @@ Watch Will create a few different visualizations and then use the steps below to
    > [!NOTE]
    > This video uses an older version of Power BI Desktop.
    > 
-   > 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
+[!VIDEO <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>]
+
     
-    
+
 1. Select the ArcGIS Maps for Power BI icon from the Visualizations pane.
    
     ![visualization pane for ArcGIS maps](media/power-bi-visualization-arcgis/power-bi-viz-pane.png)    
