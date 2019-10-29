@@ -976,6 +976,16 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "powerbi-docs/power-bi-overview.md",
+            "redirect_url": "/power-bi/fundamentals/power-bi-overview",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-service-vs-desktop.md",
+            "redirect_url": "/power-bi/designer/service-service-vs-desktop",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/service-premium-large-datasets.md",
             "redirect_url": "/power-bi/service-premium-what-is",
             "redirect_document_id": false
