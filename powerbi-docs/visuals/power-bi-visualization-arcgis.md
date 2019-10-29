@@ -69,9 +69,10 @@ Watch Will create a few different visualizations and then use the steps below to
    > This video uses an older version of Power BI Desktop.
    > 
    > 
-   
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
- 
+    
+    
 1. Select the ArcGIS Maps for Power BI icon from the Visualizations pane.
    
     ![visualization pane for ArcGIS maps](media/power-bi-visualization-arcgis/power-bi-viz-pane.png)    
@@ -153,7 +154,7 @@ Four map themes are provided. Power BI automatically selects either **Location o
 
 
 ### Symbol style
-Symbol styles enable you to fine-tune how data is presented on the map. Symbol styles are context-sensitive based on the selected Location type and Map theme. The example below shows Map theme set to **Size** and several adjustments to transparency, style, and size. 
+Symbol styles enable you to fine-tune how data is presented on the map. Symbol styles are context-sensitive based on the selected Location type and Map theme. The example below shows Map theme set to **Size** and several symbol style adjustments to transparency, style, and size. 
 
 ![Esri symbol style example](media/power-bi-visualization-arcgis/power-bi-esri-symbol-style-new.png)
 
@@ -172,10 +173,10 @@ Call attention to points on your map by adding pins.
    ![pin add and delete example](media/power-bi-visualization-arcgis/power-bi-pins3.png)
 
 ### Drive time
-The Drive time pane lets you select a location and then determine what other map features are within a specified radius or driving time.  
+The Drive time pane lets you select a location and then determine what other map features are within a specified radius or driving time. The example below shows a 50-mile radius from Washington D.C.  Follow the steps below to create your own drive time layer. 
     ![drive time example](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
 
-1. Select the single select tool and choose the pin for the Charlotte Douglas airport.
+1. Select the single select tool and choose a pin or bubble. In this example, we've selected a pin for the Charlotte Douglas airport
 
    ![single pin selection example](media/power-bi-visualization-arcgis/power-bi-clt.png)
    
@@ -183,7 +184,7 @@ The Drive time pane lets you select a location and then determine what other map
    > It's easier to select a location if you zoom in on the map. You can zoom using the + icon or the scroll on your mouse.
    > 
    > 
-2. Let's say you're flying into the Charlotte Douglas airport for a few days and want to figure out which stores are within a reasonable driving distance. Change Search area to **Drive time** and Distance to **25** minutes. Select OK.    
+2. Let's say you're flying into the Charlotte Douglas airport for a few days and want to figure out which of your chain stores are within a reasonable driving distance. Change Search area to **Drive time** and Distance to **25** minutes. Select OK.    
    
     ![drive time radius](media/power-bi-visualization-arcgis/power-bi-esri-drive-time-radius.png)
 
