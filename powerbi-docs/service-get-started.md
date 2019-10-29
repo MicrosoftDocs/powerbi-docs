@@ -16,7 +16,7 @@ LocalizationGroup: Get started
 
 ---
 # Tutorial: Get started with the Power BI service
-This tutorial is an introduction to some of the features of the *Power BI service*. In it, you connect to data, create a report and a dashboard, and ask questions of your data. You can do much more in the Power BI service; this tutorial is just to whet your appetite. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md).
+This tutorial is an introduction to some of the features of the *Power BI service*. In it, you connect to data, create a report and a dashboard, and ask questions of your data. You can do much more in the Power BI service; this tutorial is just to whet your appetite. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](designer/power-bi-overview.md).
 
 ![Power BI service home](media/service-get-started/power-bi-service-get-started-home.png)
 

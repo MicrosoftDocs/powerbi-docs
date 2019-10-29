@@ -93,7 +93,7 @@ Your fully qualified server name and database name can be found in the Azure por
 
 ## Next steps
 
-* [What is Power BI?](power-bi-overview.md)  
+* [What is Power BI?](designer/power-bi-overview.md)  
 * [Get Data for Power BI](service-get-data.md)  
 * [Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is/)
 

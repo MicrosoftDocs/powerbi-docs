@@ -54,7 +54,7 @@ The Azure Search content pack requires Azure Search Traffic Analytics to be enab
 Ensure the storage account name is correctly provided along with the full access key. The storage account name should correspond to the account configured with Azure Search Traffic Analytics.
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
+[What is Power BI?](designer/power-bi-overview.md)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 

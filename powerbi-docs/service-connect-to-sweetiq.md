@@ -50,7 +50,7 @@ Select a Client ID for one of the clients your account has access to. You can fi
 Talk to your administrator for your API key, to access the data for specific client.
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
+[What is Power BI?](designer/power-bi-overview.md)
 
 [Get Data for Power BI](service-get-data.md)
 

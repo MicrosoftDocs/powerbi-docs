@@ -54,7 +54,7 @@ The following metrics are available in the SendGrid dashboard:
 * Email statistics by device, client, browser
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
+[What is Power BI?](designer/power-bi-overview.md)
 
 [Get Data](service-get-data.md)
 
