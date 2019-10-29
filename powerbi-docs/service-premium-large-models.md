@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/24/2019
+ms.date: 10/29/2019
 
 LocalizationGroup: Premium
 ---
@@ -63,7 +63,7 @@ In the current version of large models, enable the dataset for Premium Files sto
     <Dataset ID>         Abf
     ```
 
-1. Run the following cmdlets to set the storage mode to Premium Files and check it.
+1. Run the following cmdlets to set the storage mode to Premium Files and check it. It can take a few seconds to convert to Premium Files.
 
     ```powershell
     Set-PowerBIDataset -Id <Dataset ID> -TargetStorageMode PremiumFiles
