@@ -37,7 +37,7 @@ This tutorial uses the [Retail analysis sample PBIX file](http://download.micros
 
 ## Add visualizations to the report
 
-1. Create a visualization by selecting a field from the **Fields** pane.
+Create a visualization by selecting a field from the **Fields** pane. The type of visual created will depend on the type of field selected. Power BI uses the data type to determine which visualization to use to display the results. You can change the visualization used by selecting a different icon from the Visualizations pane. Keep in mind that not all visualizations can display your data. For example, geographic data will not display well using a funnel chart or line chart. 
 
 
 ### Add an area chart that looks at this year's sales compared to last year
