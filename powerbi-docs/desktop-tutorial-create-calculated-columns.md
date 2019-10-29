@@ -32,7 +32,7 @@ In your Sales Report, you want to display product categories and subcategories a
 
  ![Columns in Fields list](media/desktop-tutorial-create-calculated-columns/create1.png)
 
-1.  Select the **More options** ellipsis (...), or right-click, on the **ProductSubcategory** table in the Fields list, and then select **New Column**. This creates your new column in the ProductSubcategory table.
+1.  Select **More options** (...), or right-click, on the **ProductSubcategory** table in the Fields list, and then select **New Column**. This creates your new column in the ProductSubcategory table.
     
     ![New Column](media/desktop-tutorial-create-calculated-columns/create2.png)
     
