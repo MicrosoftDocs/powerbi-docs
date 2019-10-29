@@ -69,7 +69,7 @@ Watch Will create a few different visualizations and then use the steps below to
    > This video uses an older version of Power BI Desktop.
    > 
 
-[!VIDEO <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>]
+[!VIDEO https://www.youtube.com/embed/EKVvOZmxg9s]
 
     
 
