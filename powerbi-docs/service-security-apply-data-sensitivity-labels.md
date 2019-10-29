@@ -50,8 +50,15 @@ Applying or changing a sensitivity label on a dashboard follows the same process
 
 You can also set sensitivity labels on datasets and dataflows. The following image shows how to set a sensitivity label on a dataset; the steps for dataflows are similar.
 
-![Apply data sensitivity labels to a dataset](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-05.png)
+To set a sensitivity label on a dataset, select the datasets tab, click the three dots on the dataset you want to apply a label to, and choose **Settings**.
 
+![Open dataset settings](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-05.png)
+
+On the settings page for the dataset, open the sensitivity label section, choose the desired sensitivity label, and click **Apply**.
+
+![Choose sensitivity label](media/service-security-apply-data-sensitivity-labels/apply-data-sensitivity-labels-06.png)
+
+Applying or changing a sensitivity label on a dataflow follows the same process as described for datasets.
 
 ## Data protection in exported files
 
@@ -70,14 +77,12 @@ Applying data sensitivity labels has the following considerations:
 * Sensitivity labels are enforced by external policies only, and applied only on files that are downloaded and exported from Power BI; they are not applied within Power BI.
 
 
-* Sensitivity labels are supported for dashboards, reports, datasets and dataflows.
 * Sensitivity labels applied in a workspace are be applied on .xlsx, .pptx and .pdf files when exported data from the workspace, or from app view. 
 * Sensitivity labels are currently not available for SSRS reports and workbooks.  
-* You cannot currently delete a label from a Power BI resource once the label is set.
-* The sensitivity label on a Power BI resource is visible only in workspace list view; labels are not currently visible in favorites, shared with me, recants, or app views.
+* You cannot currently delete a label from a Power BI asset once it has been applied.
+* The sensitivity label on a Power BI asset is visible only in workspace list view; labels are not currently visible in favorites, shared with me, recants, or app views.
 * The sensitivity label *file Encryption policy*, configured in Microsoft Security and Compliance center, applies only on files that are exported from Power BI; it is *not* enforced within Power BI.
 * Your organization must have a  require Microsoft Information Protection license to set labels in Power BI.
-
 
 ## Next steps
 
