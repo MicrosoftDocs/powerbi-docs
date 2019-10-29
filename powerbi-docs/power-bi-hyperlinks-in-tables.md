@@ -75,8 +75,16 @@ Another way to add hyperlinks to your Power BI tables and matrixes is to create 
 4. Place your cursor in the column that contains the URLs that you'd like to turn into hyperlinks in Power BI tables.
    
    > [!NOTE]
-   > The URLS must start with **http:// , https://** or **www**.
+   > The URLS must start with one of the following
+   > -http
+   > -https
+   > -mailto
+   > -file
+   > -ftp
+   > -news
+   > -telnet
    > 
+   
 5. In the **Reporting Properties** group, select the **Data Category** dropdown and choose **Web URL**. 
    
    ![Data category dropdown in Excel](media/power-bi-hyperlinks-in-tables/createhyperlinksnew.png)
