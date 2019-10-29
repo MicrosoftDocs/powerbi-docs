@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/30/2019
+ms.date: 10/29/2019
 ms.author: maggies
 
 LocalizationGroup: Visualizations
@@ -39,7 +39,7 @@ The procedure for adding a hyperlink depends on whether you've imported the data
     ![Blue and underlined links](media/power-bi-hyperlinks-in-tables/power-bi-table-with-hyperlinks2.png)
 
     > [!NOTE]
-    > The URLS must start with **http:// , https://** or **www**.
+    > URLS must start with certain prefixes. See [Considerations and troubleshooting](#considerations-and-troubleshooting) for the complete list.
     >
    
 1. If you don't want to display a long URL in a table, you can display a hyperlink icon  ![Hyperlink icon](media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png) instead. Note that you can't display icons in matrixes.
@@ -75,8 +75,9 @@ Another way to add hyperlinks to your Power BI tables and matrixes is to create 
 4. Place your cursor in the column that contains the URLs that you'd like to turn into hyperlinks in Power BI tables.
    
    > [!NOTE]
-   > The URLS must start with **http:// , https://** or **www**.
+   > URLS must start with certain prefixes. See [Considerations and troubleshooting](#considerations-and-troubleshooting) for the complete list.
    > 
+   
 5. In the **Reporting Properties** group, select the **Data Category** dropdown and choose **Web URL**. 
    
    ![Data category dropdown in Excel](media/power-bi-hyperlinks-in-tables/createhyperlinksnew.png)
@@ -87,6 +88,16 @@ Another way to add hyperlinks to your Power BI tables and matrixes is to create 
    ![Create a table in Power BI with the URL field](media/power-bi-hyperlinks-in-tables/hyperlinksintables.gif)
 
 ## Considerations and troubleshooting
+
+URLS must start with one of the following:
+- http
+- https
+- -mailto
+- file
+- ftp
+- news
+- telnet
+
 Q: Can I use a custom URL as a hyperlink in a table or matrix?    
 A: No. You can use a link icon. If you need custom text for your hyperlinks and your list of URLs is short, consider using a text box instead.
 
