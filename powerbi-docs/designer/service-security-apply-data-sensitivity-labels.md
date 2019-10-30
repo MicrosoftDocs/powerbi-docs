@@ -29,7 +29,7 @@ When data protection is enabled, sensitivity labels appear in the sensitivity co
 In order to apply sensitivity labels in Power BI, you and your organization must have the following requirements in place:
 
 * Your organization must have defined sensitivity labels in the Microsoft Security and Compliance center.
-* You must belong to a security group that has permissions to apply data sensitivity labels, as described in the article titled [Enable data sensitivity labels in Power BI (preview)](service-security-enable-data-sensitivity-labels.md#enable-data-sensitivity-labels).
+* You must belong to a security group that has permissions to apply data sensitivity labels, as described in the article titled [Enable data sensitivity labels in Power BI (preview)](../admin/service-security-enable-data-sensitivity-labels.md#enable-data-sensitivity-labels).
 * You must have a Power BI Pro license and edit permissions on the resources you wish to label. 
 * Your organization must have one of the following Microsoft Information Protection licenses:
     * APPI1
