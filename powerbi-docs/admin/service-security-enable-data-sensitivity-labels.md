@@ -17,7 +17,7 @@ LocalizationGroup: Data from files
 
 When [Microsoft Information Protection data sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) are enabled in Power BI, the following applies:
 
-* Certain users and security groups in an organization can classify and [apply sensitivity labels](service-security-apply-data-sensitivity-labels.md) to their Power BI dashboards, reports, datasets, and dataflows (hereafter referred to as *assets*).
+* Certain users and security groups in an organization can classify and [apply sensitivity labels](../designer/service-security-apply-data-sensitivity-labels.md) to their Power BI dashboards, reports, datasets, and dataflows (hereafter referred to as *assets*).
 * All members of the organization can see those labels.
 
 Data sensitivity labels promote data protection by making Power BI authors and consumers aware of data sensitivity, while providing them information about what the classification means and how data that has that classification should be handled.
@@ -73,5 +73,5 @@ Power BI uses Microsoft Information Protection sensitivity labels. Thus if you e
 This article described how to enable data sensitivity labels in Power BI. The following articles provide more details about data protection in Power BI. 
 
 * [Overview of data protection in Power BI](service-security-data-protection-overview.md)
-* [Apply data sensitivity labels in Power BI](service-security-apply-data-sensitivity-labels.md)
+* [Apply data sensitivity labels in Power BI](../designer/service-security-apply-data-sensitivity-labels.md)
 * [Using Microsoft Cloud App Security controls in Power BI](service-security-using-microsoft-cloud-app-security-controls.md)

@@ -57,7 +57,7 @@ The next section describes the supported Cloud App Security detections for Power
 
 Sensitivity labels enable you to classify and help protect sensitive content, so that people in your organization can collaborate with partners outside your organization, yet still be careful and aware of sensitive content and data. 
 
-You can read the article on [sensitivity labels in Power BI](service-security-apply-data-sensitivity-labels.md), which goes into detail about the process of using sensitivity labels for Power BI.
+You can read the article on [sensitivity labels in Power BI](../designer/service-security-apply-data-sensitivity-labels.md), which goes into detail about the process of using sensitivity labels for Power BI.
 
 ## Supported Microsoft Cloud App Security detections for Power BI
 
@@ -137,7 +137,7 @@ This article described how Microsoft Cloud App Security can provide data and con
 
 * [Overview of data protection in Power BI](service-security-data-protection-overview.md)
 * [Enable data sensitivity labels in Power BI](service-security-enable-data-sensitivity-labels.md)
-* [Apply data sensitivity labels in Power BI](service-security-apply-data-sensitivity-labels.md)
+* [Apply data sensitivity labels in Power BI](../designer/service-security-apply-data-sensitivity-labels.md)
 
 You might also be interested in the following Azure and security articles:
 
