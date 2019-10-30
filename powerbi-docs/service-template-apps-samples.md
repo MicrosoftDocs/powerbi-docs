@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 10/21/2019
 ms.author: tebercov
 ---
 
@@ -31,6 +31,7 @@ The samples might require additional user accounts with the relevant service own
 * [Salesforce Sales Rep](https://templateapps.blob.core.windows.net/sampletemplateapps/SalesforceSalesRep.pbix)
 * [Smartsheet](https://templateapps.blob.core.windows.net/sampletemplateapps/Smartsheet.pbix)
 * [Zendesk](https://templateapps.blob.core.windows.net/sampletemplateapps/Zendesk.pbix)
+* [Marketo](https://templateapps.blob.core.windows.net/sampletemplateapps/Marketo.pbix)
 
 ## Next steps
 

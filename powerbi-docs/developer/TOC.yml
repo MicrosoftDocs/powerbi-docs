@@ -1,4 +1,5 @@
-﻿- name: Power BI for developers
+﻿- name: "Power BI developer documentation"
+  href: index.yml
   items:
   - name: Overview
     expanded: true
@@ -15,9 +16,9 @@
     - name: Tutorials
       items:
       - name: "Develop a Power BI visual"
-        href: custom-visual-develop-tutorial.md
+        href: visuals/custom-visual-develop-tutorial.md
       - name: "Add formatting options"
-        href: custom-visual-develop-tutorial-format-options.md
+        href: visuals/custom-visual-develop-tutorial-format-options.md
       - name: "Add unit tests for visual project"
         href: visuals/unit-tests-introduction.md
     - name: Concepts
@@ -129,6 +130,8 @@
         href: register-app.md
       - name: "Get an Azure AD access token"
         href: get-azuread-access-token.md
+      - name: "Dynamic binding"
+        href: embed-dynamic-binding.md
       - name: "Embedding Q&A"
         href: qanda.md
       - name: "Troubleshoot your embedded application"

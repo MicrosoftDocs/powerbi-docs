@@ -7,12 +7,13 @@ ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 09/13/2019
 ms.author: mblythe
 
 LocalizationGroup: Data refresh
 ---
+
 # Troubleshooting refresh scenarios
 
 Here you can find information regarding different scenarios you may face when refreshing data within the Power BI service.
@@ -21,6 +22,12 @@ Here you can find information regarding different scenarios you may face when re
 > If you encounter a scenario that is not listed below, and it's causing you issues, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
 >
 >
+
+## Email notifications
+
+If you're coming to this article from an email notification, and you no longer want to receive emails about refresh issues, contact your Power BI admin. Ask them to remove your email or an email list you're subscribed to from the appropriate datasets in Power BI. They can do this from the following area in the Power BI admin portal.
+
+![Email for refresh notifications](media/refresh-troubleshooting-refresh-scenarios/refresh-email.png)
 
 ## Refresh using Web connector doesn't work properly
 

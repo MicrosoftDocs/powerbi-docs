@@ -16,6 +16,9 @@ ms.author: mihart
 LocalizationGroup: Get started
 ---
 # View related content in the Power BI service
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 The **Related content** pane shows you how your Power BI service content -- dashboards, reports, and datasets -- are interconnected. The **Related content** pane is also a launching pad for taking action. From here you can do things like open a dashboard, open a report, generate insights, analyze the data in Excel, and more.  
 
 In Power BI, reports are built on datasets, report visuals are pinned to dashboards, and dashboard visuals link back to reports. But how do you know which dashboards are hosting visuals from your Marketing report? And how do you locate those dashboards? Is your Procurement dashboard using visuals from more than one dataset? If so, what are they named and how can you open and edit them? Is your HR dataset being used in any reports or dashboards at all? Or, can it be moved without causing any broken links? Questions like these can all be answered on the **Related content** pane.  Not only does the pane display the related content, it also allows you to take action on the content and easily navigate between the related content.
@@ -32,7 +35,7 @@ Watch Will view related content for a dashboard. Then follow the step-by-step in
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M#t=3m05s" frameborder="0" allowfullscreen></iframe>
 
-With a dashboard or report open, select the ellipses (...) in the menu bar and choose **View related** from the dropdown.
+With a dashboard or report open, select **More options** (...) in the menu bar and choose **View related** from the dropdown.
 
 ![Ellipses dropdown](./media/end-user-related/power-bi-dropdown.png)
 

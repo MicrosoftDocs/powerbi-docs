@@ -177,8 +177,6 @@
         href: desktop-analysis-services-tabular-data.md
       - name: "Use DirectQuery in Power BI Desktop"
         href: desktop-use-directquery.md
-      - name: "DirectQuery for Oracle and Teradata"
-        href: desktop-directquery-for-oracle-teradata.md
       - name: "DirectQuery and SAP Business Warehouse (BW)"
         href: desktop-directquery-sap-bw.md
       - name: "DirectQuery and SAP HANA"
@@ -213,8 +211,6 @@
         href: desktop-calculated-tables.md
       - name: "Measures in Power BI Desktop"
         href: desktop-measures.md
-      - name: "Edit Q&A linguistic schema"
-        href: power-bi-q-and-a-linguistic-schema.md
       - name: "Import and display KPIs (Preview)"
         href: desktop-import-and-display-kpis.md
     - name: Create reports
@@ -229,8 +225,6 @@
         href: desktop-tooltips.md        
       - name: "Export to PDF and print reports"
         href: desktop-export-to-pdf.md             
-      - name: "Q&A in Power BI Desktop"
-        href: desktop-qna-in-reports.md
       - name: "Analytics pane in Power BI Desktop"
         href: desktop-analytics-pane.md
       - name: "Use insights to explain increases and decreases"
@@ -355,6 +349,8 @@
         href: visuals/power-bi-visualization-kpi.md
       - name: "Matrix visual"
         href: visuals/desktop-matrix-visual.md
+      - name: "Q&A visual"
+        href: visuals/power-bi-visualization-q-and-a.md
       - name: "Create advanced analytics and visualizations using R scripts in Power BI"
         href: visuals/service-r-visuals.md
       - name: "Radial gauge charts in Power BI"
@@ -377,6 +373,22 @@
         href: visuals/power-bi-visualization-waterfall-charts.md
       - name: "Create dynamic reference lines"
         href: service-analytics-pane.md
+    - name: Natural language
+      items: 
+      - name: "Q&A introduction"
+        href: natural-language/q-and-a-intro.md
+      - name: "Q&A visual"
+        href: visuals/power-bi-visualization-q-and-a.md
+      - name: "Q&A tooling Introduction"
+        href: natural-language/q-and-a-tooling-intro.md
+      - name: "Q&A tooling teach Q&A"
+        href: natural-language/q-and-a-tooling-teach-q-and-a.md
+      - name: "Q&A tooling advanced"
+        href: natural-language/q-and-a-tooling-advanced.md
+      - name: "Q&A best practices"
+        href: natural-language/q-and-a-best-practices.md
+      - name: "Q&A limitations"
+        href: natural-language/q-and-a-limitations.md
     - name: Troubleshoot
       items: 
       - name: "Resolve issues importing Access Databases and Excel spreadsheets in Power BI Desktop and Power Query"
@@ -424,11 +436,11 @@
   - name: Overview
     items: 
     - name: "What is Power BI?"
-      href: power-bi-overview.md
+      href: fundamentals/power-bi-overview.md
     - name: "What is the Power BI service?"
       href: power-bi-service-overview.md
     - name: "Comparing Power BI Desktop and the service"
-      href: service-service-vs-desktop.md
+      href: designer/service-service-vs-desktop.md
   - name: Tutorials
     items: 
     - name: "Get started with Power BI"
@@ -439,7 +451,7 @@
       href: service-tutorial-use-cognitive-services.md
     - name: "Machine Learning integration"
       href: service-tutorial-invoke-machine-learning-model.md
-    - name: "Build a Machine Learning model (Preview)"
+    - name: "Build a Machine Learning model"
       href: service-tutorial-build-machine-learning-model.md
     - name: "Refresh data from SQL Server"
       href: service-gateway-sql-tutorial.md                  
@@ -713,7 +725,7 @@
         href: service-machine-learning-integration.md
       - name: "Use Cognitive Services in Power BI"
         href: service-cognitive-services.md   
-      - name: "Automated Machine Learning in Power BI (Preview)"
+      - name: "Automated Machine Learning in Power BI"
         href: service-machine-learning-automated.md              
     - name: "Data lineage"
       href: service-data-lineage.md
@@ -1047,6 +1059,8 @@
         href: https://go.microsoft.com/fwlink/?linkid=849021
       - name: "Access shared datasets as OData feeds"
         href: report-server/access-dataset-odata.md
+      - name: "Change data source connection strings with PowerShell"
+        href: report-server/connect-data-source-apis.md
       - name: "Configure scheduled refresh"
         href: report-server/configure-scheduled-refresh.md
       - name: "Add comments to a report"
@@ -1157,6 +1171,8 @@
     href: guidance/import-modeling-data-reduction.md
   - name: "DIVIDE function vs divide operator (/)"
     href: guidance/dax-divide-function-operator.md
+  - name: "The importance of query folding"
+    href: guidance/power-query-folding.md
   - name: "Appropriate use of error functions"
     href: guidance/dax-error-functions.md
   - name: "Best practices for dataflows"

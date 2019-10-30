@@ -17,6 +17,8 @@ LocalizationGroup: Common tasks
 
 # Display content in more detail: focus mode and full screen mode
 
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]    
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
 Focus mode and full screen mode are two different ways to see more detail in your visuals, reports, and dashboards.  The main difference is that full screen removes all the panes surrounding your content while focus mode allows you to still interact with your visuals. Let's take a closer look at the similarities and differences.  
@@ -94,11 +96,11 @@ There are two ways to open focus mode; one way for dashboard tiles and another w
 
 1. Open a dashboard in Power BI service.
 
-2. Hover over a dashboard tile or report visual, select the ellipsis (...) and choose **Open in focus mode**.
+2. Hover over a dashboard tile or report visual, select **More options** (...) and choose **Open in focus mode**.
 
     ![ellipsis menu for tile](media/end-user-focus/power-bi-dashboard-focus.png).
 
-2. The tile opens and fills the entire report canvas. Notice that you still have a **Filters** pane that you can use to interact with the visual. The **Filters** pane can be collapsed. 
+2. The tile opens and fills the entire report canvas. Notice that you still have a **Filters** pane that you can use to interact with the visual. The **Filters** pane can be collapsed.
 
    ![tile fills report canvas](media/end-user-focus/power-bi-focus-filter.png)
 
