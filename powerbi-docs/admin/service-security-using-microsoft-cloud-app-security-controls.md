@@ -21,43 +21,43 @@ Using Microsoft Cloud App Security with Power BI, you can help protect your Powe
 
 You can configure Microsoft Cloud App Security for all sorts of apps and services, not only Power BI. Cloud App Security is a Microsoft service that protects apps and devices, and is managed through its own dashboard. You’ll need to configure Cloud App Security to work with Power BI to benefit from Cloud App Security protections for your Power BI data and analytics. For more information about Cloud App Security, including an overview of how it works, the dashboard, and app risk scores, see [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/) documentation.
 
-> [!NOTE]
-> You must have a Microsoft Information Protection license in order to set up  Microsoft Cloud App Security controls in Power BI. See the [Considerations and limitations](#considerations-and-limitations) section for detail.
 
 ## Using Microsoft Cloud App Security with Power BI
 
-To use Microsoft Cloud App Security with Power BI, you must use and configure relevant Microsoft security services, some of which are set outside Power BI. The following list describes the necessary steps:
+To use Microsoft Cloud App Security with Power BI, you must use and configure relevant Microsoft security services, some of which are set outside Power BI.
 
-1. Set conditional access app control for your featured apps.
-2. Set session policies for Power BI in your AAD configuration.
-3. Set relevant detections in Microsoft Cloud App Security to monitor Power BI activities.
-4. In order for Microsoft Cloud App Security to apply more granular policies on Power BI, it is highly recommended that your organization use Microsoft Information Protection sensitivity labels for the Power BI tenant.
+### Microsoft Cloud App Security licensing
 
-The following sections describe each of the necessary steps in order.
+In order to have Microsoft Cloud App Security in your tenant, you must have one of the following licenses:
+* MCAS: Provides OCAS capabilities for all supported apps, part of EMS E5 and M365 E5 suites.
+* CAS-D: Provides only MCAS Discovery
+* OCAS: Provides MCAS capabilities only for Office 365, part of the Office E5 suite 
+* Optional: AAD P1 and AIP P1 in order to benefit from the major Microsoft Cloud App Security capabilities.
 
+The sections below describe the steps for using Microsoft Cloud App Security in Power BI.
 
-### Set session policies in Azure Active Directory
+### Set session policies in Azure Active Directory (required)
 The steps necessary to set session controls are completed in the Azure AD and Microsoft Cloud App Security portals. In the Azure AD portal, you create a conditional access policy for Power BI, and route sessions used in Power BI through the Microsoft Cloud App Security service. 
 
 Microsoft Cloud App Security operates using a reverse-proxy architecture, and is integrated with Azure AD conditional access to monitor Power BI user activity in real-time. The following steps are provided here to help you understand the process, and detailed step-by-step instructions are provided in the linked content in each of the following steps. You can also read this [Cloud App Security article](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad) that describes the process in whole.
 
 1.	[Create an Azure AD conditional access test policy](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#add-azure-ad)
 2.	[Sign into each app using a user scoped to the policy](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#sign-in-scoped)
-3.	[Verify the apps are configured to use access and session controls](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-3-configure-advanced-controls-and-any-apps-in-the-cloud-app-security-portal)
+3.	[Verify the apps are configured to use access and session controls](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#portal)
 4.	[Test the deployment](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-4-test-the-deployment)
 
 The process for setting session policies is described in detail in the [Session policies](https://docs.microsoft.com/cloud-app-security/session-policy-aad) article. 
 
-### Set detections to monitor Power BI activities
+### Set detections to monitor Power BI activities (recommended)
 The last step in configuring the requirements to use Microsoft Cloud App Security in Power BI is to set the detections you want to monitor, which is configured in the Azure AD portal. 
 
 The next section describes the supported Cloud App Security detections for Power BI.
 
-### Use Microsoft Information Protection sensitivity labels
+### Use Microsoft Information Protection sensitivity labels (recommended)
 
 Sensitivity labels enable you to classify and help protect sensitive content, so that people in your organization can collaborate with partners outside your organization, yet still be careful and aware of sensitive content and data. 
 
-You can read the article on [sensitivity labels in Power BI](../designer/service-security-apply-data-sensitivity-labels.md), which goes into detail about the process of using sensitivity labels for Power BI.
+You can read the article on [sensitivity labels in Power BI](../designer/service-security-apply-data-sensitivity-labels.md), which goes into detail about the process of using sensitivity labels for Power BI. See below for an [example of a Power BI policy based on sensitivity labels](#Example).
 
 ## Supported Microsoft Cloud App Security detections for Power BI
 
