@@ -93,7 +93,7 @@ A subscription ends if the Pro license expires, the owner deletes the dashboard 
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page and then rename it, you have to re-create your subscription.
 * Your organization may configure certain settings in Azure Active Directory that limit the ability to use email subscriptions in Power BI.  These limitations include, but aren't limited to, having multi-factor authentication or IP range restrictions when accessing resources.
 * Currently, email subscriptions for reports/dashboards using live connection datasets aren't supported when subscribing users other than yourself unless you are using a paginated report, which will allow you to send the subscription to others using your security context. 
-* Email subscriptions don't support most [custom visuals](power-bi-custom-visuals.md).  The one exception is those custom visuals that have been [certified](power-bi-custom-visuals-certified.md).  
+* Email subscriptions don't support most [custom visuals](developer/power-bi-custom-visuals.md).  The one exception is those custom visuals that have been [certified](power-bi-custom-visuals-certified.md).  
 * Email subscriptions don't support R-powered custom visuals at this time.  
 * Email subscriptions are sent with the report's default filter and slicer states. Any changes to the defaults that you make after subscribing don't show up in the email.  Paginated Reports do support this capability and allow you to set the specific parameter values per subscription.   
 * For dashboards subscriptions specifically, certain types of tiles aren't yet supported.  These include: streaming tiles, video tiles, custom web content tiles.     

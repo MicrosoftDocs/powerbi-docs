@@ -145,7 +145,7 @@ Once your visual is created, you can optionally get your visual certified. This 
 
 [Developing a Power BI custom visual](visuals/custom-visual-develop-tutorial.md)  
 [Visualizations in Power BI](../visuals/power-bi-report-visualizations.md)  
-[Custom Visualizations in Power BI](../power-bi-custom-visuals.md)  
+[Custom Visualizations in Power BI](../developer/power-bi-custom-visuals.md)  
 [Getting a custom visual *certified*](../power-bi-custom-visuals-certified.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

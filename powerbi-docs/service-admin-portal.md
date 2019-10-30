@@ -299,7 +299,7 @@ Users in the organization can use external search features that rely on Azure Se
 
 ### Add and use custom visuals
 
-Users in the organization can interact with and share custom visuals. [Learn more](power-bi-custom-visuals.md)
+Users in the organization can interact with and share custom visuals. [Learn more](developer/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > This setting can be applied to the entire organization or can be limited to specific groups.

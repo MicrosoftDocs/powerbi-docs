@@ -77,7 +77,7 @@ A subscription will end if the Pro license expires, the dashboard or report is d
 * If the links in your email (to the content) stop working, it may be that the content was deleted. In the email, beneath the screenshot, you can look to see if you subscribed yourself or if someone else subscribed you. If someone else, ask that co-worker to either cancel the emails or re-subscribe you.
 * Report page subscriptions are tied to the name of the report page. If you subscribe to a report page, and it gets renamed, you will have to re-create your subscription.
 * If you aren't able to use the subscription feature, contact your system administrator. Your organization may have disabled this feature for authentication or other reasons.  
-* Email subscriptions do not support most [custom visuals](../power-bi-custom-visuals.md).  The exception is those custom visuals that have been [certified](../power-bi-custom-visuals-certified.md).  
+* Email subscriptions do not support most [custom visuals](../developer/power-bi-custom-visuals.md).  The exception is those custom visuals that have been [certified](../power-bi-custom-visuals-certified.md).  
 * Email subscriptions do not support R-powered custom visuals at this time.  
 * For dashboard subscriptions specifically, certain types of tiles are not yet supported.  These include: streaming tiles, video tiles, custom web content tiles.     
 * Subscriptions may fail on dashboards or reports with extremely large images due to email size limits.    
