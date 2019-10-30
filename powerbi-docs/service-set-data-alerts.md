@@ -125,6 +125,6 @@ There are many ways to manage your alerts:
 
 * [Set data alerts on your mobile device](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
-* [What is Power BI?](power-bi-overview.md)
+* [What is Power BI?](fundamentals/power-bi-overview.md)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
