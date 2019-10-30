@@ -60,7 +60,7 @@ Add the required libraries to the *package.json* file in the `devDependencies` s
 "webpack": "4.26.0"
 ```
 
-To learn more about the package, see the description at.
+To learn more about *package.json*, see the description at [npm-package.json](https://docs.npmjs.com/files/package.json).
 
 Save the *package.json* file and, at the `package.json` location, run the following command:
 

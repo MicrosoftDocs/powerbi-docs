@@ -92,7 +92,7 @@ A Power BI refresh operation can consist of multiple refresh types, including da
 
 For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight daily refreshes. If the dataset resides on a Premium capacity, you can perform up to 48 refreshes per day. For more information, see Configuring scheduled refresh later in this article.
 
-It is also important to call out that the daily refresh limitation applies to both, scheduled and on-demand refreshes combined. You can trigger an on-demand refresh by selecting **Refresh Now** in the dataset menu, as the following screenshot depicts. You can also trigger a data refresh programmatically by using the Power BI REST API. See [Datasets - Refresh Dataset](/rest/api/power-bi/datasets/refreshdataset) if you are interested in building your own refresh solution.
+It is also important to call out that the daily refresh limitation applies to both, scheduled refreshes and API refreshes combined. You can also trigger an on-demand refresh by selecting **Refresh Now** in the dataset menu, as the following screenshot depicts. On-demand refreshes are not included in the refresh limitation. If you are interested in building your own refresh solution by using the Power BI REST API, see [Datasets - Refresh Dataset](/rest/api/power-bi/datasets/refreshdataset).
 
 ![Refresh now](media/refresh-data/refresh-now.png)
 
@@ -131,7 +131,7 @@ Following a data refresh, however, previously cached query results are no longer
 
 #### Tile refresh
 
-Power BI maintains a cache for every tile visual on your dashboards and proactively updates the tile caches when data changes. In other words, tile refresh happens automatically following a data refresh. This is true for both, scheduled and on-demand refresh operations. You can also force a tile refresh by selecting the ellipsis (...) in the upper right of a dashboard and selecting **Refresh dashboard tiles**.
+Power BI maintains a cache for every tile visual on your dashboards and proactively updates the tile caches when data changes. In other words, tile refresh happens automatically following a data refresh. This is true for both, scheduled and on-demand refresh operations. You can also force a tile refresh by selecting **More options** (...) in the upper right of a dashboard and selecting **Refresh dashboard tiles**.
 
 ![Refresh dashboard tiles](media/refresh-data/refresh-dashboard-tiles.png)
 

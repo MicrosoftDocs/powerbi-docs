@@ -88,7 +88,7 @@ If you get an "Unable to connect to the remote server" message when trying to co
 
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
+[What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Data sources for the Power BI service](service-get-data.md)
 
