@@ -541,7 +541,7 @@ public update(options: VisualUpdateOptions) {
 
 The main step of using highlight is process additional array of values.
 
-If you check the object, which represents the terminal node, you can see that the values array has two properties: value and highlight:
+If you check the object of terminal node, you can see that the values array has two properties: value and highlight:
 
 ```javascript
 JSON.stringify(options.dataViews[0].matrix.rows.root.children[0].children[0].children[0], null, " ");

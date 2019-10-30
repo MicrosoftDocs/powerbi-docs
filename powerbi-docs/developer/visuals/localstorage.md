@@ -13,7 +13,7 @@ ms.date: 06/18/2019
 
 # Local Storage
 
-The Local Storage API is an API a custom visual can use to request the host to save or load data from the device’s storage. It is isolated in the sense that there’s separation of storage access between different visual types.
+The Local Storage API is an API a custom visual can use to request the host to save or load data from the device’s storage. It's isolated in the sense that there’s separation of storage access between different visual types.
 
 ## Sample
 
