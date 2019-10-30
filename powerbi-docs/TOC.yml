@@ -428,9 +428,7 @@
       - name: "Creating Power BI reports with accessibility tools"
         href: desktop-accessibility-creating-tools.md             
       - name: "Accessibility keyboard shortcuts for Power BI reports"
-        href: desktop-accessibility-keyboard-shortcuts.md             
-      - name: "Accessibility in Power BI Desktop"
-        href: desktop-accessibility.md                     
+        href: desktop-accessibility-keyboard-shortcuts.md                            
 - name: Power BI service
   items:
   - name: Overview

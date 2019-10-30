@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 10/30/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -19,6 +19,10 @@ You can design and create compelling reports while also designing for accessibil
 ![High contrast windows settings](media/desktop-accessibility/accessibility-05.png)
 
 This article describes the accessibility features and tools for creating accessible reports in Power BI.
+
+To improve the process of creating reports with screen readers, a context menu is available. The menu allows moving fields in the well up or down in the **Fields** list. The menu also allows moving the field to other wells, such as **Legend** or **Value** or others.
+
+![Context menu in the Fields well lets you move fields up, down, or to another area](media/desktop-accessibility/accessibility-09.png)
 
 ## Types of accessibility features
 
@@ -251,6 +255,11 @@ In addition to providing accessibility tools and functionality, Power BI provide
 
 ### Across visuals on the page
 * Set tab order and turn off tab order (mark the item as hidden) on any decorative items.
+
+## Considerations and limitations
+There are a few known issues and limitations with the accessibility features. Descriptions of those issues and limitations are in the following list:
+
+* When using screen readers with **Power BI Desktop**, you'll have the best experience if you open your screen reader before opening any files in **Power BI Desktop**.
 
 ## Next steps
 
