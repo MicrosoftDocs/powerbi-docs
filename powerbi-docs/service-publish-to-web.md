@@ -35,20 +35,24 @@ The following steps describe how to use **Publish to web**.
 1. Open a report in your workspace that you can edit and select **File  > Publish to web**.
 
    ![PtW1](media/service-publish-to-web/publish_to_web1.png)
+   
+2. Contact your Power BI admin if they have not allowed you to create embed codes
 
-2. Review the dialog content and select **Create embed code**.
+   ![PtW1](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
+3. Review the dialog content and select **Create embed code**.
 
    ![PtW2](media/service-publish-to-web/publish_to_web2_ga.png)
 
-3. Review the warning, as shown here, and confirm that the data is okay to embed in a public website. If it is, select **Publish**.
+4. Review the warning, as shown here, and confirm that the data is okay to embed in a public website. If it is, select **Publish**.
 
    ![PtW3](media/service-publish-to-web/publish_to_web3_ga.png)
 
-4. A dialog appears with a link. You can send this link in an email, embed it in code such as an iFrame, or paste it directly into a web page or blog.
+5. A dialog appears with a link. You can send this link in an email, embed it in code such as an iFrame, or paste it directly into a web page or blog.
 
    ![PtW4](media/service-publish-to-web/publish_to_web4.png)
 
-5. If you previously created an embed code for a report and you select **Publish to web**, you won't see the dialogs in steps 2-4. Instead, the **Embed code** dialog appears:
+6. If you previously created an embed code for a report and you select **Publish to web**, you won't see the dialogs in steps 2-4. Instead, the **Embed code** dialog appears:
 
    ![PtW5](media/service-publish-to-web/publish_to_web5.png)
 
@@ -136,7 +140,15 @@ Custom visuals are supported in **Publish to web**. When you use **Publish to we
 
 ## Tenant setting
 
-Power BI administrators can enable or disable the **Publish to web** feature. They can also restrict access to specific groups, which can impact your ability to create an embed code.
+The **Publish to web** setting gives options for which users can create embed codes.
+
+![Publish to web setting](media/service-admin-portal/powerbi-admin-publish-to-web-setting.png)
+
+You'll be asked to contact a Power BI admin to create an embed code when the **Choose how embed codes work** option is set to **Allow only existing embed codes** and the **Publish to web** setting is **Enabled**.
+
+![Publish to web prompt](media/service-publish-to-web/publish_to_web_admin_prompt.png)
+
+Power BI administrators can enable or disable the **Publish to web** feature. They can also restrict access to specific groups, which can impact your ability to create an embed code. You'll see different options in the UI based on what the **Publish to web** setting is.
 
 |Feature |Enabled for entire organization |Disabled for entire organization |Specific security groups   |
 |---------|---------|---------|---------|
@@ -146,6 +158,9 @@ Power BI administrators can enable or disable the **Publish to web** feature. Th
 |Existing published reports|All enabled|All disabled|Reports continue to render for all.|
 
 ## Understanding the embed code status column
+
+>[!Note]
+>You should regularly review the embed codes you've published and remove any that no longer need to be available publicly. 
 
 The **Manage embed codes** page includes a status column. By default, embed codes are **Active**, but could also be one of the statuses listed below.
 
