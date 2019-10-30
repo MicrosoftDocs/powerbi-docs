@@ -643,5 +643,3 @@ As the result you'll get the visual with buttons and values `highlighted value/d
 * [Read about matrix data view mappings](dataview-mappings.md#matrix-data-mapping)
 
 * [Read about capabilities of the visual](capabilities.md)
-
-* [Read about drill-down support for matrix data view mapping](drill-down-support.md#add-drill-down-support-for-matrix-data-view-mapping)
