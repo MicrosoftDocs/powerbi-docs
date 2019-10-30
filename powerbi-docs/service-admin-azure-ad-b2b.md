@@ -108,6 +108,8 @@ To help these users sign in to Power BI, provide them with the Tenant URL. To fi
 
 * By default, external Azure AD B2B limits guests to consumption of content only. External Azure AD B2B guests can view apps, dashboards, reports, export data and create email subscriptions for dashboards and reports. They can't access workspaces or publish their own content. However, these restrictions don't apply to guest users who gain access through the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) feature.
 
+* To invite guest users a Power BI Pro license is needed. Pro Trial users can't invite guest users in Power BI.
+
 * For guest users enabled through the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) feature, some experiences aren't available to them. To update or publish reports, they need to use the Power BI service web UI, including Get Data to upload Power BI Desktop files.  The following experiences aren't supported:
     * Direct publishing from Power BI desktop to the Power BI service
     * Guest users can't use Power BI desktop to connect to service datasets in the Power BI service
