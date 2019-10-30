@@ -20,7 +20,7 @@ The admin portal enables you to manage a Power BI visuals for your organization.
 
 ### How can the admin manage the organizational Power BI visuals?
 
-In the Admin portal, under the "Organizational visuals" tab, the admin can see and [manage all the organizational Power BI visuals in the enterprise](service-admin-portal.md#organizational-visuals): add, disable, enable, and delete.
+In the Admin portal, under the "Organizational visuals" tab, the admin can see and [manage all the organizational Power BI visuals in the enterprise](../service-admin-portal.md#organizational-visuals): add, disable, enable, and delete.
 There's no need to share those visuals by emails or shared folder anymore! Once deployed into the organizational repository, users in the organization can easily find them, and import the organizational visuals into their reports directly from Power BI Desktop or Service. The organizational visuals can be found from the built-in store (in desktop and service) under the *MY ORGANIZATION* tab. Once the admin uploads a new organizational custom visual’s version, everyone in the organization gets the same updated version. Report authors don't need to delete the visual in their reports to get the new version of these visuals as all reports using these visuals are automatically updated! The update mechanism is similar to the marketplace visuals.
 
 ### If an admin uploads a custom visual from the public marketplace to the organization store, is it automatically updated once a vendor updates the visual in the public marketplace?
