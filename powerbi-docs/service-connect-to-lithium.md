@@ -57,7 +57,7 @@ Connect to the [Lithium content pack](https://app.powerbi.com/getdata/services/l
 The Lithium content pack requires a Lithium community v15.9 or greater. Please check with your Lithium admin to confirm.
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
+[What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
