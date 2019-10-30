@@ -114,7 +114,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
 
     If you're the dashboard owner, in the Power BI service you can [create a view of the dashboard specifically for phones](../../service-create-dashboard-mobile-phone-view.md) in portrait mode. 
 
-1. While on the dashboard, you can tap the vertical ellipsis (...) next to the name to invite a colleague, refresh, or get information about the dashboard:
+1. While on the dashboard, you can tap the vertical **More options** (...) button next to the name to invite a colleague, refresh, or get information about the dashboard:
    
    ![Ellipsis menu](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. Swipe up and down to see all the [tiles in the dashboard](mobile-tiles-in-the-mobile-apps.md). 
@@ -130,7 +130,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
    
    * The yellow stars ![Favorite star](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
    * The notation below each dashboard name (in this case, "MBI") ![Data classification](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../service-data-classification.md).
-3. While on the dashboard, you can tap the vertical ellipsis (...) next to the name to invite a colleague, refresh, or get information about the dashboard:
+3. While on the dashboard, you can tap the vertical **More options** (...) button next to the name to invite a colleague, refresh, or get information about the dashboard:
    
    ![Ellipsis menu](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 4. Swipe up and down to see all the [tiles in the dashboard](mobile-tiles-in-the-mobile-apps.md). 
@@ -152,6 +152,6 @@ Read more about [creating a phone view of a dashboard](../../service-create-dash
 ## Next steps
 * [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google play  
 * [Get started with the Android app for Power BI](mobile-android-app-get-started.md)  
-* [What is Power BI?](../../power-bi-overview.md)
+* [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

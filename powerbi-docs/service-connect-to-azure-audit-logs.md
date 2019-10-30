@@ -67,6 +67,6 @@ Your subscription Id will be long set of numbers and characters, similar to the 
 If you're seeing a credentials error or an error trying to refresh due to invalid credentials, try deleting all instances of the Azure Audit logs content pack and reconnecting.
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)  
+[What is Power BI?](fundamentals/power-bi-overview.md)  
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)  
 

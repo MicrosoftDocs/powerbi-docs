@@ -19,7 +19,7 @@ LocalizationGroup: Get started
 
 ## What is the Microsoft Power BI service?
 
-The Power BI service is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of cloud-based and on-premises data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life. Read more about [Power BI](../power-bi-overview.md).
+The Power BI service is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of cloud-based and on-premises data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life. Read more about [Power BI](../fundamentals/power-bi-overview.md).
 
 ## What’s the difference between Power BI Pro and Power BI Premium?
 

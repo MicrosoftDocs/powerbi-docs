@@ -15,6 +15,9 @@ ms.author: mihart
 LocalizationGroup: Common tasks
 ---
 # Printing from the Power BI service
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Print an entire dashboard, a dashboard tile, a report page, or a report visual from the Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once.
 
    > [!NOTE]
@@ -33,7 +36,7 @@ Print an entire dashboard, a dashboard tile, a report page, or a report visual f
 
 ## Print a dashboard tile
 1. Open the dashboard in [full screen mode](end-user-focus.md) by selecting the full screen icon ![full screen icon](./media/end-user-print/power-bi-full-screen-icon.png) from the upper menu bar.
-3. [Open the tile in Focus mode](end-user-focus.md) by hovering to reveal the ellipses (...) and choosing **Open in focus mode** or the focus icon ![Focus icon](./media/end-user-print/power-bi-focus-icon.png).
+3. [Open the tile in Focus mode](end-user-focus.md) by hovering to reveal **More options** (...) and choosing **Open in focus mode** or the focus icon ![Focus icon](./media/end-user-print/power-bi-focus-icon.png).
    
     ![ellipses menu](./media/end-user-print/power-bi-menu-options.png)
 4. Hover over the tile to reveal the Options menu.
