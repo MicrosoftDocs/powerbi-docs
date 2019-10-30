@@ -150,7 +150,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 ### February 2018
 * Automatically install [Power BI Apps](service-create-distribute-apps.md) for end users.
 * P4 and P5 capacities on Power BI Premium
-* Preview of [Organizational custom visuals](power-bi-custom-visuals-organization.md).
+* Preview of [Organizational custom visuals](developer/power-bi-custom-visuals-organization.md).
 
 ### January 2018
 *	Share and favorite Power BI reports.

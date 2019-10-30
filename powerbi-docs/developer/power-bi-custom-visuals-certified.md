@@ -192,10 +192,10 @@ For more information about visuals, see [Frequently asked questions about certif
 
 ## Next steps
 
-* [Developing a Power BI custom visual](developer/visuals/custom-visual-develop-tutorial.md)
+* [Developing a Power BI custom visual](../developer/custom-visual-develop-tutorial.md)
 * [Microsoft's custom visual playlist on YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 * [Visualizations in Power BI](visuals/power-bi-report-visualizations.md)  
 * [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
-* [Publish Power BI visuals to Microsoft AppSource](developer/office-store.md)  
+* [Publish Power BI visuals to Microsoft AppSource](../developer/office-store.md)  
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
