@@ -21,7 +21,7 @@ If you set the `supportsHighlight` property in your `capabilities.json` to `true
 
 ![`dataview` supports highlight](./media/highlight-dataview-supports.png)
 
-In the example, you'll notice the 1 bar that is selected. And it's the only value in the highlights array. It's also important to note there could be multiple selections and partial highlight. There's the corresponding numeric value in the values and highlights arrays will be present but different.
+In the example, you'll notice that 1 bar is selected. And it's the only value in the highlights array. It's also important to note that there could be multiple selections and partial highlights. The highlighted values will be presented in the data view.
 
 ## Highlight data points with categorical data view mapping
 
@@ -61,7 +61,7 @@ The visuals with categorical data view mapping have `capabilities.json` with `"s
 }
 ```
 
-Default visual source code after removing unessesray code will look:
+The default visual source code after removing unnecessary code will look like this:
 
 ```typescript
 "use strict";
@@ -140,7 +140,7 @@ export class Visual implements IVisual {
 }
 ```
 
-Clear content of `div` elements before render new data:
+Clear content of div elements before rendering new data:
 
 ```typescript
 // ...
@@ -178,13 +178,13 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Where `categoryValues` array of category values, `measureValues` -array of measures and `measureHighlights` - highlighted parts of values.
+Where `categoryValues` is an array of category values, `measureValues` is an array of measures, and `measureHighlights` is highlighted parts of values.
 
 > [!Note]
 > Values of `measureHighlights` property can be less that values of `categoryValues` property.
 > In means that value was higlighted partially.
 
-Enumerate `categoryValues` array and get correspond values and highlights:
+Enumerate `categoryValues` array and get corresponding values and highlights:
 
 ```typescript
 // ...
@@ -212,10 +212,10 @@ categoryValues.forEach((category: PrimitiveValue, index: number) => {
     this.div.appendChild(div);
 
     // div element to vizualize value of measure
-    let barValie = document.createElement("div");
-    barValie.style.width = +measureValue * 10 + "px";
-    barValie.style.display = "flex";
-    barValie.classList.add("value");
+    let barValue = document.createElement("div");
+    barValue.style.width = +measureValue * 10 + "px";
+    barValue.style.display = "flex";
+    barValue.classList.add("value");
 
     // element to display category value
     let bp = document.createElement("p");
@@ -232,9 +232,9 @@ categoryValues.forEach((category: PrimitiveValue, index: number) => {
     p.innerText = `${measureHighlight}/${measureValue}`;
     barHighlight.appendChild(bp);
 
-    div.appendChild(barValie);
+    div.appendChild(barValue);
 
-    barValie.appendChild(barHighlight);
+    barValue.appendChild(barHighlight);
     div.appendChild(p);
 });
 ```
@@ -539,9 +539,9 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-The main step of using highlight is process additional array of values.
+The main step of using highlighting is to process additional array of values.
 
-If you check the object of terminal node, you can see that the values array has two properties: value and highlight:
+If you inspect the object of terminal node, you can see that the values array has two properties - value and highlight:
 
 ```javascript
 JSON.stringify(options.dataViews[0].matrix.rows.root.children[0].children[0].children[0], null, " ");
@@ -573,13 +573,13 @@ JSON.stringify(options.dataViews[0].matrix.rows.root.children[0].children[0].chi
 }
 ```
 
-Where `value` property represents value of node without applying selection from other visual, `highlight` property prepresents that which part of data was highlighted.
+Where `value` property represents value of node without applying a selection from other visual, and highlight property indicates which part of data was highlighted.
 
 > [!Note]
 > Value of `highlight` property can be less that value of `value` property.
 > In means that value was higlighted partially.
 
-Add code to process the `values` array of node if it presented:
+Add the code to process the `values` array of node if it is presented:
 
 ```typescript
 public update(options: VisualUpdateOptions) {
