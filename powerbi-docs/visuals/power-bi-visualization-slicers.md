@@ -9,7 +9,7 @@ featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 05/14/2019
+ms.date: 10/22/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -36,7 +36,7 @@ Power BI slicers have the following limitations:
 
 - Slicers do not support input fields.
 - Drilldown is not supported for slicers.
-- Slicers do not support visual level filters.
+
 
 ## Create slicers
 

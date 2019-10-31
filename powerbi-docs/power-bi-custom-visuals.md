@@ -18,7 +18,7 @@ When creating or editing a Power BI report, you can use many different types of 
 
 ![visualizations](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
-However, you aren't limited to this set of visuals. If you select the ellipses (...) at the bottom, another source of report visuals becomes available -*Power BI visuals*.
+However, you aren't limited to this set of visuals. If you select **More options** (...) at the bottom, another source of report visuals becomes available -*Power BI visuals*.
 
 Developers create Power BI visuals using the Power BI visuals SDK. These visuals enable business users to see their data in a way that best fits their business. Report authors can then import the custom visual files into their reports and use them as they would any other Power BI visuals. Power BI visuals are first class citizens in Power BI and can be filtered, highlighted, edited, shared, and so on.
 
