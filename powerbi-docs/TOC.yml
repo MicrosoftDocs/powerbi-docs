@@ -399,6 +399,8 @@
         href: desktop-access-database-errors.md
       - name: "Resolve issues when starting Power BI Desktop"
         href: desktop-error-launching-desktop.md
+      - name: "DirectQuery model troubleshooting in Power BI Desktop"
+        href: desktop-directquery-troubleshoot.md
   - name: Reference
     items: 
     - name: "Data types in Power BI Desktop"
@@ -1167,6 +1169,8 @@
     href: guidance/dax-error-functions.md
   - name: "Best practices for dataflows"
     href: service-dataflows-best-practices.md  
+  - name: "DirectQuery model guidance in Power BI Desktop"
+    href: directquery-model-guidance.md  
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
