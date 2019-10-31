@@ -63,7 +63,7 @@ Watch Will create a combo chart using the Sales and Marketing sample.
     c. Select **Time** \> **FiscalMonth** to add it to the **Axis** well.
 
     ![combo tutorial example](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Select the ellipsis (...) in the upper-right corner of the visualization, and select **Sort by > FiscalMonth**. To change the sort order, select the ellipsis again and choose either **Sort ascending** or **Sort descending**. For this example will use **Sort ascending**.
+5. Select **More options** (...) in the upper-right corner of the visualization, and select **Sort by > FiscalMonth**. To change the sort order, select the ellipsis again and choose either **Sort ascending** or **Sort descending**. For this example will use **Sort ascending**.
 
 6. Convert the column chart to a combo chart. There are two combo charts available: **Line and stacked column** and **Line and clustered column**. With the column chart selected, from the **Visualizations** pane select the **Line and clustered column chart**.
 

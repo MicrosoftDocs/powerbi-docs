@@ -32,7 +32,7 @@ This article describes the different approaches and analyzes them according to s
 
 **Tenant** – A single customer (organization) that uses the SaaS application and any resources or data that the customer brings to the SaaS application.
 
-**[Power BI](../power-bi-overview.md)** - The Power BI cloud service that serves as a platform for Power BI Embedded.
+**[Power BI](../fundamentals/power-bi-overview.md)** - The Power BI cloud service that serves as a platform for Power BI Embedded.
 
 **Power BI tenant** - Is a set of Power BI resources associated with a single AAD tenant.
 

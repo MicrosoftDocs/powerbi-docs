@@ -69,7 +69,7 @@ You can specify which users receive notification about issues occurring in the w
 
     In the **Create a workspace** pane when you first create it.
 
-    In the left navigation pane, select the arrow next to **Workspaces**, select the ellipsis (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
+    In the left navigation pane, select the arrow next to **Workspaces**, select **More options** (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
 
     ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -89,7 +89,7 @@ Power BI doesn't synchronize permissions of users or groups who are configured t
 
     In the **Create a workspace** pane when you first create it.
 
-    In the left navigation pane, select the arrow next to **Workspaces**, select the ellipsis (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
+    In the left navigation pane, select the arrow next to **Workspaces**, select **More options** (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
 
     ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
