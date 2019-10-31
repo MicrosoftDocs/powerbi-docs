@@ -25,8 +25,8 @@ This article addresses frequently asked questions for Power BI administration. F
 * [Using PowerShell](#using-powershell)
 * [How do users sign up for Power BI?](#how-do-users-sign-up-for-power-bi)
 * [How do individual users in my organization sign up?](#how-do-individual-users-in-my-organization-sign-up)
-* [How can I prevent users from joining my existing Office 365 tenant?](#how-can-i-prevent-users-from-joining-my-existing-office-365-tenant)
-* [How can I allow users to join my existing Office 365 tenant?](#how-can-i-allow-users-to-join-my-existing-office-365-tenant)
+* [How can I prevent users from joining my existing Office 365 tenant?](#how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant)
+* [How can I allow users to join my existing Office 365 tenant?](#how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant)
 * [How do I check if I have the block on in the tenant?](#how-do-i-check-if-i-have-the-block-on-in-the-tenant)
 * [How can I prevent my existing users from starting to use Power BI?](#how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi)
 * [How can I allow my existing users to sign up for Power BI?](#how-can-i-allow-my-existing-users-to-sign-up-for-power-bi)
@@ -36,7 +36,7 @@ This article addresses frequently asked questions for Power BI administration. F
 * [How will this change the way I manage identities for users in my organization today?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [How do we manage Power BI?](#how-do-we-manage-power-bi)
 * [What is the process to manage a tenant created by Microsoft for my users?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
-* [If I have multiple domains, can I control the Office 365 tenant that users get added to?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to)
+* [If I have multiple domains, can I control the Microsoft 365 tenant that users get added to?](#if-i-have-multiple-domains-can-i-control-the-microsoft-365-tenant-that-users-get-added-to)
 * [How do I remove Power BI for users that already signed up?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [How do I know when new users have joined my tenant?](#how-do-i-know-when-new-users-have-joined-my-tenant)
 * [Are there any additional things I should prepare for?](#are-there-any-additional-things-i-should-prepare-for)
@@ -75,7 +75,7 @@ There are three scenarios that might apply to users in your organization:
     There are no administrative actions required for your organization to take advantage of Power BI. The service adds users to a new, cloud-only user directory. You can also choose to take over as the Microsoft 365 Global admin for the tenant and manage them.
 
 > [!IMPORTANT]
-> If your organization has multiple email domains and you prefer all email address extensions to be in the same tenant, add all email address domains to an Azure Active Directory tenant before any users sign up. Once you've created users, there's no automated mechanism to move users across tenants. For more info on this process, see [If I have multiple domains, can I control the Microsoft 365 tenant that users get added to?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to) later in this article and [Add a domain to Microsoft 365](/office365/admin/setup/add-domain/).
+> If your organization has multiple email domains and you prefer all email address extensions to be in the same tenant, add all email address domains to an Azure Active Directory tenant before any users sign up. Once you've created users, there's no automated mechanism to move users across tenants. For more info on this process, see [If I have multiple domains, can I control the Microsoft 365 tenant that users get added to?](#if-i-have-multiple-domains-can-i-control-the-microsoft-365-tenant-that-users-get-added-to) later in this article and [Add a domain to Microsoft 365](/office365/admin/setup/add-domain/).
 
 ### How can I prevent users from joining my existing Microsoft 365 tenant?
 
