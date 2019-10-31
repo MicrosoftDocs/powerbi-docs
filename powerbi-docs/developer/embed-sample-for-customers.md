@@ -411,7 +411,7 @@ By creating a dedicated capacity, you can take advantage of having a dedicated r
 > [!NOTE]
 > With A SKUs, you can't access Power BI content with a FREE Power BI license.
 
-The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](embedded-faq.md#Power-BI-now-offers-three-SKUs-for-embedding:-A-SKUs,-EM-SKUs,-and-P-SKUs.-Which-one-should-I-purchase-for-my-scenario) table.
+The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](https://docs.microsoft.com/power-bi/developer/embedded-faq#power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario) table.
 
 | Capacity Nodes | Total v-cores | Backend v-cores | RAM (GB) | Frontend v-cores | DirectQuery/Live Connection (per sec) | Model Refresh Parallelism |
 | --- | --- | --- | --- | --- | --- | --- |
