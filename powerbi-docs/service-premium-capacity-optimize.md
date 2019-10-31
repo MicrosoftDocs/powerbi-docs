@@ -29,7 +29,7 @@ Finally, testing approaches and Premium capacity sizing conclude this article.
 
 When trying to get the best utilization and performance, there are some recommended best practices, including:
 
-- Using app workspaces instead of personal workspaces.
+- Using workspaces instead of personal workspaces.
 - Separating business critical and Self-Service BI (SSBI) into different capacities.
 
   ![Separating business critical and Self-Service BI into different capacities](media/service-premium-capacity-optimize/separate-capacities.png)
