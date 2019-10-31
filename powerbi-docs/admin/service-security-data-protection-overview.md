@@ -29,13 +29,9 @@ With Data protection for Power BI, you can do the following:
 
 ## Sensitivity labels in Power BI
 
-Sensitivity labels are created and managed in one of the following services:
+Sensitivity labels are created and managed in either the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 
-* Microsoft 365 Compliance Center
-* Microsoft 365 Security Center
-* Office 365 Security & Compliance Center
-
-To access sensitivity labels in any of these services, you navigate to  **Classification > Sensitivity labels**. These sensitivity labels can be used by multiple Microsoft services such Azure Information Protection, Office apps, and Office 365 services.
+To access sensitivity labels in either of these centers, navigate to  **Classification > Sensitivity labels**. These sensitivity labels can be used by multiple Microsoft services such Azure Information Protection, Office apps, and Office 365 services.
 
 > [!IMPORTANT]
 > Azure Information Protection customers will need to migrate the labels to one of the previously listed services in order for sensitivity labels to be used in Power BI. In addition, sensitivity labels are only supported in public clouds, and are not supported for tenants in clouds, such as sovereign clouds.
@@ -72,8 +68,8 @@ You can also assign a classification to content (like a sticker) that persists a
 
 Before your sensitivity labels can be enabled in Power BI, you must first complete the following prerequisites: 
 
-* Make sure that sensitivity labels have been defined in the Microsoft 365 Security and Compliance center. 
-* [Enable Sensitivity labels (Preview) in Power BI](service-security-enable-data-sensitivity-labels.md).
+* Make sure that sensitivity labels have been defined in either the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/). 
+* [Enable Sensitivity labels](service-security-enable-data-sensitivity-labels.md) (Preview) in Power BI.
 * Make sure users have the appropriate license;
   * To apply or view labels in Power BI, users must have an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/en-us/pricing/details/information-protection/) for detail.
   * To apply labels to Power BI resources, a user must have a Power BI Pro license in addition to one of the Azure Information Protection licenses mentioned above. 
@@ -95,12 +91,17 @@ Before your sensitivity labels can use Microsoft Cloud App Security, the followi
 
 The following list provides some limitations of sensitivity labels in Power BI:
 
-* Sensitivity labels are supported for dashboards, reports, datasets and dataflows
-* Sensitivity labels applied in a workspace will be applied on Excel, PowerPoint and PDF files when data is exported from the workspace or from the app view. 
-* Sensitivity labels are not currently available for SSRS reports and workbooks.  
-* Currently it is not possible to delete a label from a resource after it has been applied.
-* At the present time sensitivity labels are visible only in workspace list view; they are not visible in favorites, shared with me, recants, and app views.
-* The sensitivity label *File Encryption policy* configured in the Microsoft Security and Compliance center applies only to files *exported from* Power BI; it is not enforced *within* Power BI.
+* Sensitivity labels can be applied only on dashboards, reports, datasets and dataflows.
+* Sensitivity labels applied in a workspace will be applied to Excel, PowerPoint and PDF files when data is exported from the workspace or from the app view.
+* Labeling and enforce protection controls on exported files are supported only for Excel, PowerPoint and PDF files. The label and protection are not enforced when data is exported to .CSV files, Subscribe to email, Embed visuals, and print.
+* Sensitivity labels are currently not available for [paginated reports](https://docs.microsoft.com/en-us/power-bi/paginated-reports-report-builder-power-bi) and workbooks.
+* Currently it is not possible to delete a label from a Power BI asset once it has been applied.
+*  Sensitivity labels on Power BI assets are visible only in the workspace list and lineage views; labels are not currently visible in the favorites, shared with me, recents, or app views. Note, however, that a label applied to a Power BI asset, even if not visible, will always persist on data exported to Excel, PowerPoint, and PDF files.
+* The sensitivity label *file Encryption setting*, configured in either the [Microsoft 365 security center](https://security.microsoft.com/) or the [Microsoft 365 compliance center](https://compliance.microsoft.com/), applies only on files that are *exported from* Power BI; it is not enforced *within* Power BI.
+* [HYOK protection](https://docs.microsoft.com/en-us/azure/information-protection/configure-adrms-restrictions) is not supported for labels applied in Power BI.
+* Viewing and applying labels in Office apps has [licensing requirements](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels-office-apps#common-requirements).
+* Sensitivity labels are only supported for tenants in the global (public) cloud. Sensitivity labels are not supported for tenants in other clouds.
+
 
 
 ## Next steps
