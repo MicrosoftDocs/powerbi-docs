@@ -323,7 +323,7 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 
 | Capacity Nodes | Total v-cores | Backend v-cores | RAM (GB) | Frontend v-cores | DQ/LC (per sec) | Model Refresh Parallelism |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3.75 | 1 |
+| EM1/A1 | 1 | 0.5 | 3 | 0.5 | 3.75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
