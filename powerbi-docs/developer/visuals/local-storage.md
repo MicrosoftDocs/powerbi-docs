@@ -1,17 +1,17 @@
 ---
-title: Local storage API in Power BI Visuals
+title: Local Storage API in Power BI Visuals
 description: The article describes how to use Power BI Visuals API to get access to browser local storage
-author: zBritva
-ms.author: v-ilgali
+author: uve
+ms.author: v-grniki
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 10/31/2019
 ---
 
-# Local Storage
+# Local Storage API
 
 The Local Storage API is an API a custom visual can use to request the host to save or load data from the device’s storage. It's isolated in the sense that there’s separation of storage access between different visual types.
 
@@ -55,4 +55,4 @@ export class Visual implements IVisual {
 
 ## Known limitations and issues
 
-LocalStorage API isn’t activated for Custom Visuals by default. If you want to activate it for your Custom Visual, please send request to Power BI Custom Visuals Support `pbicvsupport@microsoft.com`
+Local Storage API isn’t activated for Custom Visuals by default. If you want to activate it for your Custom Visual, please send request to Power BI Custom Visuals Support `pbicvsupport@microsoft.com`
