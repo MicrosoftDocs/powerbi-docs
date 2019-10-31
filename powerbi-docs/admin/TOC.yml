@@ -52,7 +52,7 @@
         href: service-security-enable-data-sensitivity-labels.md
       - name: "Use Microsoft Cloud App Security with Power BI"
         href: service-security-using-microsoft-cloud-app-security-controls.md
-      name: "Row-level security"
+    - name: "Row-level security"
       href: ../service-admin-rls.md
     - name: "Archived workspace"
       href: ../service-admin-power-bi-archived-workspace.md
