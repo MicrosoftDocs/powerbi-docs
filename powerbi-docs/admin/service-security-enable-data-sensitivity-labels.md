@@ -24,7 +24,7 @@ Data sensitivity labels promote data protection by making Power BI authors and c
 
 When Power BI data that has a data sensitivity label is exported to an Excel, PowerPoint, or PDF file, its data sensitivity label goes with it. This means that a user who doesn’t have permission access to labeled data, because of sensitivity labels policies, won’t be able to open the files *outside* of Power BI (in Excel, PowerPoint, or PDF apps).
 
-Enabling data sensitivity labels requires a Microsoft Information Protection license. See [Licensing](#licensing) for more details.
+Enabling data sensitivity labels requires an Azure Information Protection license. See [Licensing](#licensing) for more details.
 
 ## Enable data sensitivity labels
 
@@ -53,7 +53,7 @@ In the **Information Protection** section, perform the following steps:
 
 Power BI uses Microsoft Information Protection sensitivity labels. Thus if you encounter an error message when trying to enable sensitivity labels, it might be due to one of the following:
 
-* You do not have a Microsoft Information Protection [license](#licensing).
+* You do not have an Azure Information Protection [license](#licensing).
 * Sensitivity labels have not been migrated to the Microsoft Information Protection version supported by Power BI. Learn more about [migrating sensitivity labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 * No Microsoft Information Protection sensitivity labels have been defined in the organization. In addition, to be usable, a label must be part of a published policy. [Learn more about sensitivity labels](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels), or visit the [Microsoft security and compliance center](https://sip.protection.office.com/sensitivity?flight=EnableMIPLabels) to read about how to define labels and publish policies for your organization.
 
