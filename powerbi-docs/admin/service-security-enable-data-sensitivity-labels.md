@@ -59,7 +59,7 @@ Power BI uses Microsoft Information Protection sensitivity labels. Thus if you e
 
 ## Licensing
 
-* To view or Microsoft Information Protection labels in Power BI, users must have an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/en-us/pricing/details/information-protection/) for detail.
+* To view or Microsoft Information Protection labels in Power BI, users must have an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/pricing/details/information-protection/) for detail.
 * Users who need to apply labels on Power BI assets must have a Power BI Pro license.
 
 

@@ -77,7 +77,7 @@ A new role is created for Power BI admins when using Microsoft Cloud App Securit
 Using Cloud App Security with Power BI is designed to help secure your organization’s content and data, with detections that monitor user sessions and their activities. When using Cloud App Security with Power BI, there are a few limitations you should keep in mind:
 
 * Microsoft Cloud App Security can only operate on Excel, PowerPoint, and PDF files.
-* If you want to use sensitivity labels capabilities in your session policies for Power BI, you need to have an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/en-us/pricing/details/information-protection/) for detail. In addition, sensitivity labels must have been applied on your Power BI assets.
+* If you want to use sensitivity labels capabilities in your session policies for Power BI, you need to have an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/pricing/details/information-protection/) for detail. In addition, sensitivity labels must have been applied on your Power BI assets.
 
 > [!CAUTION]
 > * The *content inspection* policy on Microsoft Cloud App Security is currently not available in Power BI when applying an Excel file policy, so do not set this policy for Power BI.
