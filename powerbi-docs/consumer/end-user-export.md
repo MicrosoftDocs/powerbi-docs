@@ -9,7 +9,8 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/11/2019
+
+ms.date: 10/30/2019
 ms.author: mihart
 
 LocalizationGroup: Consumers
