@@ -15,6 +15,8 @@ LocalizationGroup: Dashboards
 ---
 # Dashboards for Power BI service consumers
 
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 A Power BI ***dashboard*** is a single page, often called a canvas, that uses visualizations to tell a story. Because it is limited to one page, a well-designed dashboard contains only the most-important elements of that story.
 
 ![dashboard](media/end-user-dashboards/power-bi-dashboard2.png)

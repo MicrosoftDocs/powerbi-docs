@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.custom: 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 6/4/2019
 ms.author: gepopell
 

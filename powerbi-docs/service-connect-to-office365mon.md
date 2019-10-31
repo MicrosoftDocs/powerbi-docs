@@ -53,7 +53,7 @@ Connect to the [Office365Mon template app](https://app.powerbi.com/groups/me/get
 If you get a **"login failed"** error after using your Office365Mon subscription credentials to login, then the account you are using doesn't have permissions to retrieve the Office365Mon data from your account. Verify it is an admin account and try again.
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
+[What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Get Data for Power BI](service-get-data.md)
 
