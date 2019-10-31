@@ -72,16 +72,11 @@ You can also assign a classification to content (like a sticker) that persists a
 
 Before your sensitivity labels can be enabled in Power BI, you must first complete the following prerequisites: 
 
-* Make sure you've created sensitivity labels in Microsoft 365 Security and Compliance center. 
+* Make sure that sensitivity labels have been defined in the Microsoft 365 Security and Compliance center. 
 * [Enable Sensitivity labels (Preview) in Power BI](service-security-enable-data-sensitivity-labels.md).
-* Make sure users have the appropriate license
-  * To view labels in Power BI, users must have one of the following Microsoft Information Protection licenses:  
-    * APPI1
-    * APP2
-    * OFFICE E3/E5
-    * M365 E3/E5
-    * EMS E3/E5
-  * To apply labels to Power BI resources, a user must have a Power BI Pro license in addition to one of the licenses mentioned above. 
+* Make sure users have the appropriate license;
+  * To apply or view labels in Power BI, users must have an Azure Information Protection Premium P1 or Premium P2 license. Microsoft Azure Information Protection can be purchased either standalone or through one of the Microsoft licensing suites. See [Azure Information Protection pricing](https://azure.microsoft.com/en-us/pricing/details/information-protection/) for detail.
+  * To apply labels to Power BI resources, a user must have a Power BI Pro license in addition to one of the Azure Information Protection licenses mentioned above. 
 
 ## Protect content using Microsoft Cloud App Security
 
