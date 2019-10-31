@@ -67,7 +67,7 @@ This is usually a transient issue. If you try again later and you still see this
 
 This can happen if the underlying dataset is configured to use DirectQuery mode or a Live Connection to Analysis Services through an on-premises data gateway. In this case, the tiles continue to show the unfiltered data after enabling SSO for the data source until the next tile refresh is due. At the next tile refresh, Power BI uses SSO as configured, and the tiles show the data filtered according to the user identity. 
 
-If you want to see the filtered data immediately, you can force a tile refresh by selecting the ellipsis (...) in the upper right of a dashboard and selecting **Refresh dashboard tiles**.
+If you want to see the filtered data immediately, you can force a tile refresh by selecting **More options** (...) in the upper right of a dashboard and selecting **Refresh dashboard tiles**.
 
 As a dataset owner, you can also change the tile refresh frequency and set it to 15 minutes to accelerate tile refresh. Select the gear icon in the upper right corner of the Power BI service, then select **Settings**. On the **Settings** page, select the **Datasets** tab. Expand **Scheduled cache refresh** and change **Refresh frequency**. Make sure you reset the configuration to the original refresh frequency after Power BI performs the next tile refresh.
 

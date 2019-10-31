@@ -1,5 +1,5 @@
 ---
-title: Subscribe yourself and others to reports and dashboards - Power BI
+title: Subscribe yourself and others to reports and dashboards
 description: Learn how to subscribe yourself and others to a snapshot of a Power BI report page, dashboard, or paginated report.
 author: maggiesMSFT
 manager: kfile
@@ -9,7 +9,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 10/23/2019
 ms.author: maggies
 
 LocalizationGroup: Common tasks
