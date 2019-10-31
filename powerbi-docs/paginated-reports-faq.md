@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 10/04/2019
 ---
 
 # Paginated reports in Power BI: FAQ 
@@ -112,12 +112,13 @@ You get an error message if you try to upload a file that has an unsupported fea
 
 ### What data sources do you support currently for paginated reports?
 
-We support the following data source - 
+We support the following data sources - 
 
 - Power BI Datasets (via single sign-on (SSO))
 - Azure Analysis Services (via single sign on (SSO) and oAuth)
 - Azure SQL Data Warehouse
 - Azure SQL Database (username/password, SSO and oAuth)
+- Azure SQL Managed Instance via Public Endpoint (username/password)
 - SQL Server*
 - SQL Server Analysis Services (SSAS) tabular (DAX) and multidimensional (MDX) models* 
 - Oracle* 
@@ -157,7 +158,7 @@ Yes, we support the ability to run code in your reports as you can in SSRS.
 
 ### Can I use Power BI embedded to embed my paginated reports into an app I’m hosting?
 
-SaaS embedding is already supported. PaaS embedding is not currently supported.
+SaaS embedding, including Secure Embed support, is already available.  PaaS embedding support is planned for later this year.
 
 ### Can I drill through from a Power BI report to a paginated report?
 
@@ -173,7 +174,7 @@ We plan to have the reports support the same major scenarios in the service as m
 
 ### Is a migration tool planned so SSRS customers can move their existing reports and assets to Power BI?
 
-We're evaluating options here to allow content to be moved to Power BI in an automated way, but this won't be available until after GA.
+A project on GitHub now supports migrating content from SQL Server Reporting Services to Power BI.  View details and download the tool here: [https://github.com/microsoft/RdlMigration](https://github.com/microsoft/RdlMigration)
 
 ### Is there a report viewer control for paginated reports in the Power BI service?
 
