@@ -52,7 +52,7 @@ The web portal application runs in a browser. When you start the web portal, the
 ## Manage items in the web portal
 Power BI Report Server offers detailed control of the items you store on the web portal. For example, you can set up subscriptions, caching, snapshots, and security on individual paginated reports.
 
-1. Select the ellipsis (...) in the upper-right corner of an item, then select **Manage**.
+1. Select **More options** (...) in the upper-right corner of an item, then select **Manage**.
    
     ![Select Manage](media/getting-around/report-server-web-portal-manage-ellipsis.png)
 2. Choose the property or other feature you want to set.
