@@ -22,7 +22,7 @@ This article focuses on per-user licensing from an administrator perspective.
 
 ## Manage Power BI Pro licenses
 
-As an administrator, you can purchase and assign Power BI Pro licenses; and you can sign up for a Power BI Pro trial for your organization. Individuals can also sign up for a Power BI Pro trial.[TODO]Will need to introduce the notion that individuals can also purchase Power BI Pro licenses and link to the admin targeted info on self-serve purchase from the Commerce Content team[ENDTODO]
+As an administrator, you can purchase and assign Power BI Pro licenses; and you can sign up for a Power BI Pro trial for your organization. Individuals can also sign up for a Power BI Pro trial.
 
 ### Purchase Power BI Pro licenses
 
@@ -36,9 +36,9 @@ Power BI Pro has the same subscription lifecycle as Office 365. For more informa
 
 ### Power BI Pro trial for individuals
 
-Individuals in your organization can sign up for a Power BI Pro trial. For more information, see [Signing up for Power BI as an individual](service-self-service-signup-for-power-bi.md).[TODO]Depending on how and where you structure the Power BI Pro trial for individuals content the self-service sign-up doc may not be the right reference here[ENDTODO]
+Individuals in your organization can sign up for a Power BI Pro trial. For more information, see [Signing up for Power BI as an individual](service-self-service-signup-for-power-bi.md).
 
-Users who take advantage of the in-product Power BI Pro trial for individuals do not appear in the Microsoft 365 admin center as Power BI Pro Trial users (they appear as Power BI free users). They do, however, show up as Power BI Pro Trial users in the manage storage page in Power BI.[TODO]Should probably add a reference to doc content for the manage storage page[ENDTODO]
+Users who take advantage of the in-product Power BI Pro trial for individuals do not appear in the Microsoft 365 admin center as Power BI Pro Trial users (they appear as Power BI free users). They do, however, show up as Power BI Pro Trial users in the manage storage page in Power BI.
 
 ### Power BI Pro trial for organizations
 
