@@ -415,20 +415,30 @@
       href: desktop-latest-update-archive.md
     - name: "Power BI Desktop Send a Smile privacy statement"
       href: desktop-send-smile-privacy-statement.md
-    - name: "Accessibility in Power BI reports"
-      href: desktop-accessibility.md
     - name: "Manage the Power BI Desktop sign-in form"
       href: desktop-admin-sign-in-form.md
+    - name: Accessibility
+      items:       
+      - name: "Overview of accessibility in Power BI"
+        href: desktop-accessibility-overview.md     
+      - name: "Creating accessible Power BI reports"
+        href: desktop-accessibility-creating-reports.md      
+      - name: "Consuming Power BI reports with accessibility tools"
+        href: desktop-accessibility-consuming-tools.md             
+      - name: "Creating Power BI reports with accessibility tools"
+        href: desktop-accessibility-creating-tools.md             
+      - name: "Accessibility keyboard shortcuts for Power BI reports"
+        href: desktop-accessibility-keyboard-shortcuts.md                            
 - name: Power BI service
   items:
   - name: Overview
     items: 
     - name: "What is Power BI?"
-      href: power-bi-overview.md
+      href: fundamentals/power-bi-overview.md
     - name: "What is the Power BI service?"
       href: power-bi-service-overview.md
     - name: "Comparing Power BI Desktop and the service"
-      href: service-service-vs-desktop.md
+      href: designer/service-service-vs-desktop.md
   - name: Tutorials
     items: 
     - name: "Get started with Power BI"

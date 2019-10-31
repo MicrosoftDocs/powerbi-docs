@@ -40,16 +40,16 @@ You also might use each element of Power BI at different times, depending on wha
 How you use Power BI can be based on which feature or service of Power BI is the best tool for your situation. For example, you can use Power BI Desktop to create reports for your own team about customer engagement statistics and you can view inventory and manufacturing progress in a real-time dashboard in the Power BI service. Each part of Power BI is available to you, which is why it’s so flexible and compelling.
 
 Explore documents that pertain to your role:
-- Power BI Desktop for [*designers*](desktop-what-is-desktop.md)
-- Power BI for [*consumers*](consumer/end-user-consumer.md)
-- Power BI for [*developers*](developer/what-can-you-do.md)
-- Power BI for [*administrators*](service-admin-administering-power-bi-in-your-organization.md)
+- Power BI Desktop for [*designers*](../desktop-what-is-desktop.md)
+- Power BI for [*consumers*](../consumer/end-user-consumer.md)
+- Power BI for [*developers*](../developer/what-can-you-do.md)
+- Power BI for [*administrators*](../service-admin-administering-power-bi-in-your-organization.md)
 
 ## The flow of work in Power BI
 A common flow of work in Power BI begins by connecting to data sources and building a report in Power BI Desktop. You then publish that report from Power BI Desktop to the Power BI service, and share it so end users in the Power BI service and mobile devices can view and interact with the report.
 This workflow is common, and shows how the three main Power BI elements complement one another.
 
-Here's a detailed [comparison of Power BI Desktop and the Power BI service](service-service-vs-desktop.md).
+Here's a detailed [comparison of Power BI Desktop and the Power BI service](../designer/service-service-vs-desktop.md).
 
 ## On-premises reporting with Power BI Report Server
 
@@ -61,9 +61,9 @@ You can create, deploy, and manage Power BI mobile and paginated reports on prem
 
 Power BI Report Server is a solution that you deploy behind your firewall and then deliver your reports to the right users in different ways, whether that’s viewing them in a web browser, on a mobile device, or as an email. And because Power BI Report Server is compatible with Power BI in the cloud, you can move to the cloud when you're ready. 
 
-Read more about [Power BI Report Server](report-server/get-started.md).
+Read more about [Power BI Report Server](../report-server/get-started.md).
 
 ## Next steps
-- [Quickstart: Learn your way around the Power BI service](service-the-new-power-bi-experience.md)   
-- [Tutorial: Get started with the Power BI service](service-get-started.md)
-- [Quickstart: Connect to data in Power BI Desktop](desktop-quickstart-connect-to-data.md)
+- [Quickstart: Learn your way around the Power BI service](../service-the-new-power-bi-experience.md)   
+- [Tutorial: Get started with the Power BI service](../service-get-started.md)
+- [Quickstart: Connect to data in Power BI Desktop](../desktop-quickstart-connect-to-data.md)
