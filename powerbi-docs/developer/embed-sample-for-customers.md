@@ -15,7 +15,7 @@ ms.date: 04/02/2019
 
 # Tutorial: Embed Power BI content into an application for your customers
 
-With **Power BI Embedded in Azure** or **Power BI embedding in Office**, you can embed reports, dashboards, or tiles into an application using app owns data. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. As an **ISV developer**, you can create Power BI content that displays reports, dashboards, or tiles in an application that is fully integrated and interactive, without requiring users to have a Power BI license. This tutorial demonstrates how to integrate a report into an application using the Power BI .NET SDK with the Power BI JavaScript API.
+With **Power BI Embedded in Azure** or **Power BI embedding in Office**, you can embed reports, dashboards, or tiles into an application using app owns data. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. As an **ISV** or a **developer**, you can create Power BI content that displays reports, dashboards, or tiles in an application that is fully integrated and interactive, without requiring users to have a Power BI license. This tutorial demonstrates how to integrate a report into an application using the Power BI .NET SDK with the Power BI JavaScript API.
 
 ![Power BI Embed Report](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
@@ -29,7 +29,6 @@ In this tutorial, you learn how to:
 To get started, you're required to have:
 
 * A [Power BI Pro account](../service-self-service-signup-for-power-bi.md) (a master account that is a username and password to sign in to your Power BI Pro account), or a [service principal (app-only token)](embed-service-principal.md).
-* If you're embedding using **Power BI Embedded in Azure**, a [Microsoft Azure](https://azure.microsoft.com/) subscription is required.
 * You need to have your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup.
 
 If you're not signed up for **Power BI Pro**, [sign up for a free trial](https://powerbi.microsoft.com/pricing/) before you begin.
@@ -412,7 +411,7 @@ By creating a dedicated capacity, you can take advantage of having a dedicated r
 > [!NOTE]
 > With A SKUs, you can't access Power BI content with a FREE Power BI license.
 
-The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see [Power BI Premium FAQ](../service-premium-faq.md).
+The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](embedded-faq.md#Power-BI-now-offers-three-SKUs-for-embedding:-A-SKUs,-EM-SKUs,-and-P-SKUs.-Which-one-should-I-purchase-for-my-scenario) table.
 
 | Capacity Nodes | Total v-cores | Backend v-cores | RAM (GB) | Frontend v-cores | DirectQuery/Live Connection (per sec) | Model Refresh Parallelism |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -426,7 +425,7 @@ The table below describes the resources and limits of each SKU. To determine whi
 
 ### Development testing
 
-Using embed tokens with PRO licenses are intended for development testing, so the number of embed tokens a Power BI master account or service principal can generate is limited. A dedicated capacity requires embedding in a production environment. There's no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) to check the usage value that indicates the current embedded usage in percentage. The usage amount is based per master account.
+Using embed tokens with Pro licenses are intended for development testing, so the number of embed tokens a Power BI master account or service principal can generate is limited. A dedicated capacity requires embedding in a production environment. There's no limit on how many embed tokens you can generate with a dedicated capacity. Go to [Available Features](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) to check the usage value that indicates the current embedded usage in percentage. The usage amount is based per master account.
 
 For more information, see [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper).
 
