@@ -724,15 +724,15 @@
       - name: "Use Cognitive Services in Power BI"
         href: service-cognitive-services.md   
       - name: "Automated Machine Learning in Power BI"
-        href: service-machine-learning-automated.md              
-    - name: "Data lineage"
-      href: service-data-lineage.md
+        href: service-machine-learning-automated.md
     - name: Data protection
       items: 
       - name: Data protection overview
         href: admin/service-security-data-protection-overview.md
       - name: Apply sensitivity labels to your data
         href: designer/service-security-apply-data-sensitivity-labels.md
+    - name: "Data lineage"
+      href: service-data-lineage.md
     - name: Paginated reports in Power BI
       items: 
       - name: View a paginated report
