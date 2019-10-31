@@ -62,7 +62,7 @@ Now that you have a capacity, you can add more as your needs grow. You can use a
 
 1. Find the Power BI Premium item you want to purchase more of under **Other plans**.
 
-1. Hover over the **ellipsis (...)** and then select **Change license quantity**.
+1. Hover over **More options** (...) and then select **Change license quantity**.
 
     ![Change license quantity](media/service-admin-premium-purchase/premium-purchase-more.png)
 
@@ -97,9 +97,10 @@ When you cancel your Premium subscription, or your capacity license expires, you
 
 ## Next steps
 
-[Power BI pricing page](https://powerbi.microsoft.com/pricing/)   
-[Power BI Premium calculator](https://powerbi.microsoft.com/calculator/)   
-[Power BI Premium FAQ](service-premium-faq.md)   
+[Configure and manage capacities in Power BI Premium](service-admin-premium-manage.md)\
+[Power BI pricing page](https://powerbi.microsoft.com/pricing/)\
+[Power BI Premium calculator](https://powerbi.microsoft.com/calculator/)\
+[Power BI Premium FAQ](service-premium-faq.md)\
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)

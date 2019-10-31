@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 10/24/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -56,6 +56,7 @@ Some of the features that are available in the commercial version of the **Power
 * **External user sharing** - sharing is allowed within a Power BI tenant, and as of June 2018, sharing is also allowed with users outside of your Power BI tenant. See [distribute Power BI content to external guest users with Azure AD B2B](service-admin-azure-ad-b2b.md).
 * **Usage metrics for dashboards and reports** - usage metrics are not available for reports and dashboards. Customers can use audit log data to get usage information for content in their organization.
 * **Dataflows** - Dataflows are not available.
+* **Paginated reports** - Paginated reports are currently available in USGov Virginia only.  USGov Texas support is planned but not yet available.
 
 If you have **Power BI** Free licenses assigned to your account, those accounts are running in a commercial version of the **Power BI** service, and are not part of the **Power BI US Government** offering. For those Free accounts, you may encounter the following issues:
 
@@ -99,7 +100,7 @@ There are all sorts of things you can do with Power BI. For more information and
 
 * [Sign up for Power BI for US Government](service-govus-signup.md)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Power BI US Government Demo</a>
-* [Guided Learning for Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
+* [Guided Learning for Power BI](guided-learning/index.md)
 * [Get started with the Power BI service](service-get-started.md)
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
 

@@ -35,7 +35,7 @@ Connect to the [Mandrill content pack for Power BI.](http://app.powerbi.com/getd
     ![](media/service-connect-to-mandrill/auth.png)
 5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. This is the default dashboard that Power BI created to display your data.
    
-    ![](media/service-connect-to-mandrill/mandrill-dashboard1.jpg)
+    ![](media/service-connect-to-mandrill/mandrill-dashboard1.png)
 
 **What now?**
 
@@ -45,7 +45,7 @@ Connect to the [Mandrill content pack for Power BI.](http://app.powerbi.com/getd
 * While your dataset will be scheduled to refresh daily, you can change the refresh schedule or try refreshing it on demand using **Refresh Now**
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
+[What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 

@@ -1,8 +1,8 @@
 ---
 title: Introduction to unit tests for Power BI visual projects
 description: This article describes how to write unit tests for Power BI visual projects
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
@@ -60,7 +60,7 @@ Add the required libraries to the *package.json* file in the `devDependencies` s
 "webpack": "4.26.0"
 ```
 
-To learn more about the package, see the description at.
+To learn more about *package.json*, see the description at [npm-package.json](https://docs.npmjs.com/files/package.json).
 
 Save the *package.json* file and, at the `package.json` location, run the following command:
 
@@ -612,4 +612,4 @@ In the scope of file, you can view the source code. The `Coverage` utilities wou
 
 ## Next steps
 
-When your visual is ready, you can submit it for publication. For more information, see [Publish custom visuals to AppSource](../office-store.md).
+When your visual is ready, you can submit it for publication. For more information, see [Publish Power BI visuals to AppSource](../office-store.md).

@@ -8,14 +8,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 10/23/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
 ---
 # Intro to organizational content packs in Power BI
 > [!NOTE]
-> You can't create organizational content packs or install them in the new workspace experiences preview. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
+> You can't create organizational content packs or install them in the new workspace experiences. Now is a good time to upgrade your content packs to apps, if you haven't started yet. Learn [more about the new workspace experience](service-create-the-new-workspaces.md).
 > 
 
 Do you regularly distribute reports by email to your team? Try this instead: Package up your dashboards, reports, Excel workbooks, and datasets and publish them to your team as an *organizational content pack*. Content packs you create are easy for your team to find &#151; they are all in AppSource. Because they're part of Power BI, they leverage all the features of Power BI, including interactive data exploration, new visuals, Q&A, integration with other data sources, data refresh, and more.
@@ -54,7 +54,7 @@ The lifecycle looks something like this:
 4. Say Jane decides to customize it. Jane will now have their own copy of the dashboard and reports. Jane's work does not affect the source, the original content pack, or other distribution group members. They are now each working on their own copy of the dashboard and report.
 5. Nate makes updates to the dashboard and when it's ready, will publish a new version of the content pack.
    
-   * Julio, another distribution group member, didn't customize the original content pack. The new changes are automatically applied to Jane's version of the content pack.  
+   * Julio, another distribution group member, didn't customize the original content pack. The new changes are automatically applied to Julio's version of the content pack.  
    * Jane did customize the content pack. Jane then receives a notification that there's a new version.  Jane can go to AppSource and get the updated content pack without losing the personalized version. Jane now has two versions: the personalized version and the updated content pack.
 6. Say Nate changes the security settings. Julio and Jane no longer have access to the content. Or say they're removed from the Marketing distribution group.
    

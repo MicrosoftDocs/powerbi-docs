@@ -1,10 +1,9 @@
 ---
 title: Connect to ServiceNow with Power BI
 description: ServiceNow for Power BI
-author: SarinaJoan
-manager: kfile
-ms.reviewer: maggiesMSFT
-
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
@@ -57,7 +56,7 @@ If you're hitting a credential error during load, please review the access requi
 If you're seeing long load times, please review the number of incidents and number of days you specified during connection and consider reducing it.
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
+[What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 

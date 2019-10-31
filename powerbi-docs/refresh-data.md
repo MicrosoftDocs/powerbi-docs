@@ -8,7 +8,7 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 10/14/2019
 ms.author: mblythe
 
 LocalizationGroup: Data refresh
@@ -92,7 +92,7 @@ A Power BI refresh operation can consist of multiple refresh types, including da
 
 For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight daily refreshes. If the dataset resides on a Premium capacity, you can perform up to 48 refreshes per day. For more information, see Configuring scheduled refresh later in this article.
 
-It is also important to call out that the daily refresh limitation applies to both, scheduled and on-demand refreshes combined. You can trigger an on-demand refresh by selecting **Refresh Now** in the dataset menu, as the following screenshot depicts. You can also trigger a data refresh programmatically by using the Power BI REST API. See [Datasets - Refresh Dataset](/rest/api/power-bi/datasets/refreshdataset) if you are interested in building your own refresh solution.
+It is also important to call out that the daily refresh limitation applies to both, scheduled refreshes and API refreshes combined. You can also trigger an on-demand refresh by selecting **Refresh Now** in the dataset menu, as the following screenshot depicts. On-demand refreshes are not included in the refresh limitation. If you are interested in building your own refresh solution by using the Power BI REST API, see [Datasets - Refresh Dataset](/rest/api/power-bi/datasets/refreshdataset).
 
 ![Refresh now](media/refresh-data/refresh-now.png)
 
@@ -131,7 +131,7 @@ Following a data refresh, however, previously cached query results are no longer
 
 #### Tile refresh
 
-Power BI maintains a cache for every tile visual on your dashboards and proactively updates the tile caches when data changes. In other words, tile refresh happens automatically following a data refresh. This is true for both, scheduled and on-demand refresh operations. You can also force a tile refresh by selecting the ellipsis (...) in the upper right of a dashboard and selecting **Refresh dashboard tiles**.
+Power BI maintains a cache for every tile visual on your dashboards and proactively updates the tile caches when data changes. In other words, tile refresh happens automatically following a data refresh. This is true for both, scheduled and on-demand refresh operations. You can also force a tile refresh by selecting **More options** (...) in the upper right of a dashboard and selecting **Refresh dashboard tiles**.
 
 ![Refresh dashboard tiles](media/refresh-data/refresh-dashboard-tiles.png)
 
@@ -306,6 +306,13 @@ The warning icon helps to indicate current dataset issues, but it is also a good
 > [!NOTE]
 > You can find a link to display the refresh history in the dataset settings. You can also retrieve the refresh history programmatically by using the [Power BI REST API](/rest/api/power-bi/datasets/getrefreshhistoryingroup). By using a custom solution, you can monitor the refresh history of multiple datasets in a centralized way.
 
+## Automatic page refresh
+
+Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces.
+
+Learn more about automatic page refresh in the [automatic page refresh](desktop-automatic-page-refresh.md) article.
+
+
 ## Best practices
 
 Checking the refresh history of your datasets regularly is one of the most important best practices you can adopt to ensure that your reports and dashboards use current data. If you discover issues, address them promptly and follow up with data source owners and gateway administrators if necessary.
@@ -321,6 +328,7 @@ In addition, consider the following recommendations to establish and maintain re
 - Use a reliable enterprise data gateway deployment to connect your datasets to on-premises data sources. If you notice gateway-related refresh failures, such as gateway unavailable or overloaded, follow up with gateway administrators to either add additional gateways to an existing cluster or deploy a new cluster (scale up versus scale out).
 - Use separate data gateways for Import datasets and DirectQuery/LiveConnect datasets so that the data imports during scheduled refresh don't impact the performance of reports and dashboards on top of DirectQuery/LiveConnect datasets, which query the data sources with each user interaction.
 - Ensure that Power BI can send refresh failure notifications to your mailbox. Spam filters might block the email messages or move them into a separate folder where you might not notice them immediately.
+
 
 ## Next steps
 

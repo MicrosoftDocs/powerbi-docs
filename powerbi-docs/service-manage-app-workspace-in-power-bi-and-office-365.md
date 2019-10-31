@@ -7,7 +7,7 @@ ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/08/2019
+ms.date: 09/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
 ---
@@ -17,7 +17,7 @@ LocalizationGroup: Share your work
 As creator or admin of an [app workspace in Power BI](service-create-distribute-apps.md) or in Office 365, you manage some aspects of the workspace in Power BI. Other aspects you manage in Office 365.
 
 > [!NOTE]
-> The new workspace experience preview will change the relationship between Power BI workspaces and Office 365 groups. You won't automatically be creating an Office 365 group every time you create one of the new workspaces. Read about [creating the new workspaces](service-create-the-new-workspaces.md).
+> The new workspace experience changes the relationship between Power BI workspaces and Office 365 groups. You aren't automatically be creating an Office 365 group every time you create one of the new workspaces. Read about [creating the new workspaces](service-create-the-new-workspaces.md).
 
 In **Power BI** you can:
 
@@ -36,7 +36,7 @@ You need a [Power BI Pro license](service-features-license-type.md) to be an adm
 
 ## Edit your app workspace in Power BI
 
-1. In the Power BI service, select the arrow next to **Workspaces** > select the ellipsis (…) next to your workspace name > **Edit this workspace**.
+1. In the Power BI service, select the arrow next to **Workspaces** > select **More options** (...) next to your workspace name > **Edit this workspace**.
 
    ![Edit workspaces in Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
 
@@ -55,7 +55,7 @@ You can also edit aspects of an app workspace directly in Outlook for Office 365
 
 ### Edit the members of the app workspace group
 
-1. In the Power BI service, select the arrow next to **Workspaces** > select the ellipsis (…) next to your workspace name > **Members**.
+1. In the Power BI service, select the arrow next to **Workspaces** > select **More options** (...) next to your workspace name > **Members**.
 
    ![Edit workspaces in Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis-members.png)
 

@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 10/30/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -30,7 +30,85 @@ You can also watch the **Latest Updates** video from the beginning, right inside
 
 The following sections describe previous months' updates to **Power BI Desktop**.
 
-## August 2019 Update (2.71.5523.641)
+## September 2019 Update (2.73.5586.561)
+
+Our September updates were like an exciting return to school - new things to learn, updates to friends we missed over the summer, and opportunities to apply what we know into better future reports. 
+
+You can now [download the latest version of Power BI Desktop](https://powerbi.microsoft.com/desktop), now delivered as a single .exe file that contains all supported languages. If you're running Windows 10, you can also get **Power BI Desktop** from the Windows Store. The monthly versions are the same even though the version numbering may differ between the two, regardless of which way you install **Power BI Desktop**. See [this article](desktop-get-the-desktop.md) for more information. 
+
+> [!IMPORTANT]
+> Beginning with the September 2019 release, Power BI Desktop is only released as a single .exe file that contains all supported languages. The .msi version is no longer being released.
+
+
+The links beside each update mean the following:
+
+* **[video]** excerpts play in a new browser tab, when the feature is being discussed.
+* Some features have an **[article]** that provides more detail.
+* Most features are explained in the monthly update **[blog]** post.
+* Lastly, some features are self-explanatory and don't need and article or video.
+
+You can also watch the **Latest Updates** video from the beginning, right inside this article, by clicking on the **play** icon on the video image found below the list of updates.
+
+The following updates are new to **Power BI Desktop** this month:
+
+### Reporting
+* Color and text classes in themes [[video]](https://youtu.be/neq0THnRJzo?t=11)  [[article]](desktop-report-themes.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#themeJSON) 
+* New default themes  [[video]](https://youtu.be/neq0THnRJzo?t=334)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#newThemes)
+* Personalized visualization pane improvements (preview) [[video]](https://youtu.be/neq0THnRJzo?t=601)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#vizPane)
+
+
+### Analytics
+* Custom format strings [[video]](https://youtu.be/neq0THnRJzo?t=731)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#customFormatStrings) 
+* Conditional formatting for more visual formatting options [[video]](https://youtu.be/neq0THnRJzo?t=813)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#conditionalFormatting) 
+* Drill-through discoverability improvement [[video]](https://youtu.be/neq0THnRJzo?t=959)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#drillThrough) 
+* New DAX expressions: REMOVEFILTERS and CONVERT [[video]](https://youtu.be/neq0THnRJzo?t=1048)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#dax) 
+
+
+### Visuals
+* PowerApps visual now generally available [[video]](https://youtu.be/neq0THnRJzo?t=1063)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#powerApps) 
+
+
+### Data connectivity
+* PostgreSQL connector enhancements [[video]](https://youtu.be/neq0THnRJzo?t=1112)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#postgreSQL) 
+
+### Data preparation
+* Copy to clipboard from data profiling [[video]](https://youtu.be/neq0THnRJzo?t=1146)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#copyProfiling) 
+
+
+### Template apps
+* Google Analytics report [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#googleAnalytics) 
+
+### Other
+* Performance improvements for multi-dimensional models  [[video]](https://youtu.be/neq0THnRJzo?t=1208)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#perfMultiDiminsional) 
+* Query performance improvements for DirectQuery models  [[video]](https://youtu.be/neq0THnRJzo?t=1272)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#perfDirectQuery) 
+https://youtu.be/neq0THnRJzo?t=1208
+
+> [!NOTE]
+> You can also [check out all the data sources available to Power BI Desktop](desktop-data-sources.md); our list is always growing, so check back often.
+
+Want more information about these updates? Take a look at the [blog post](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/), where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+
+The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/neq0THnRJzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
+
+* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
+* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
+* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
+* We only archive the English versions of Power BI Desktop.
+
+Select the following links to download this earlier version: 
+
+* [September 2019 version of Power BI Desktop - 32-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-09.exe)
+* [September 2019 version of Power BI Desktop - 64-bit](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2019-09_x64.exe)
+
+
+## August 2019 Update (2.72.5556.801)
 
 Our August updates were hot and shone brightly on the reports you create in Power BI Desktop. 
 
@@ -482,18 +560,6 @@ The following video channel describes and shows each of these updates. You can a
 > You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
-You can also download previous versions of Power BI Desktop if your organization requires it. We always recommend that you use the most recent version of Power BI Desktop, rather than a previous version. All previous versions have the following limitations:
-
-* Previous releases of Power BI Desktop are not being serviced - you should always use the most recent release for the latest features and updates.
-* It may not be possible to open files created or saved in newer releases of Power BI Desktop with previous versions of Power BI Desktop. 
-* If you receive a warning when loading a report saved in a newer release of Power BI Desktop, then save that report in the previous version, you lose any information related to new features.
-* We only archive the English versions of Power BI Desktop.
-
-Select the following links to download this earlier version: 
-
-* [March 2019 version of Power BI Desktop - 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-03.msi)
-* [March 2019 version of Power BI Desktop - 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-03_x64.msi)
-
 
 ## February 2019 Update (2.66.5376.1681)
 
@@ -698,7 +764,7 @@ The following updates were new to **Power BI Desktop** in October:
 ### Reporting
 
 * Search in filter cards  [[video]](https://youtu.be/cT3L2VzgBRU?t=56)  [[article]](power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23search) 
-* Accessibility improvements for authoring experiences [[video]](https://youtu.be/cT3L2VzgBRU?t=118)  [[article]](desktop-accessibility.md#arranging-items-in-field-buckets)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23accessibility)
+* Accessibility improvements for authoring experiences [[video]](https://youtu.be/cT3L2VzgBRU?t=118)  [[article]](desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23accessibility)
 * Performance improvements for ArcGIS Map [[video]](https://youtu.be/cT3L2VzgBRU?t=333)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23esri)
 
 
@@ -911,7 +977,7 @@ The following updates were new to **Power BI Desktop** in June:
 
 ### Reporting
 
-* High contrast support for reports  [[video]](https://youtu.be/4VpGtWSrssE?t=13s)  [[article]](desktop-accessibility.md#high-contrast-support-for-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast) 
+* High contrast support for reports  [[video]](https://youtu.be/4VpGtWSrssE?t=13s)  [[article]](desktop-accessibility-overview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast) 
 * Donut radius control  [[video]](https://youtu.be/4VpGtWSrssE?t=6m1s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#donutRadius) 
 * Pie and donut detail labels position control  [[video]](https://youtu.be/4VpGtWSrssE?t=7m19s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#detailLabels) 
 * Format data labels separately for each measure in a combo chart  [[video]](https://youtu.be/4VpGtWSrssE?t=9m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#comboLabels) 
@@ -2286,8 +2352,8 @@ We're leaping ahead with more updates this month! February brings 29 days to the
 
 ### Data Connectivity:
 
--   **DirectQuery** support for Oracle and Teradata databases
--   **DirectQuery** - support for creating Calculated Columns
+-   **DirectQuery** support for Oracle and Teradata
+-   **DirectQuery** support for creating Calculated Columns
 -   Support for publishing Analysis Services Live reports
 -   JSON File connector
 -   SQL Sentry connector

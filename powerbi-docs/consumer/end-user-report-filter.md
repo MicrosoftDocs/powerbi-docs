@@ -8,12 +8,14 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ---
 
 # Take a tour of the report Filters pane
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 This article takes a look at the report **Filters** pane in the Power BI service. Use the filters to discover new insights in your data.
 
@@ -29,11 +31,14 @@ When a colleague shares a report with you, be sure to look for the **Filters** p
 
 The **Filters** pane contains filters that the report *designer* added to the report. *Consumers* like you can interact with the existing filters and save your changes, but you can't add new filters to the report. For example, in the screenshot above the designer added three page level filters: **Segment is All**, **Year is 2014**, and **Region is Central**. You can interact and change these filters, but you can't add a fourth page level filter.
 
-In the Power BI service, reports keep any changes you make in the **Filters** pane. The service carries those changes through to the mobile version of the report.
+In the Power BI service, reports keep any changes you make in the **Filters** pane. The service carries those changes through to the mobile version of the report. 
 
 To reset the **Filters** pane to the designer's defaults, select **Reset to default** from the upper menu bar.
 
 ![Screenshot of the Reset to default icon.](media/end-user-report-filter/power-bi-reset-icon.png) 
+
+> [!NOTE]
+> If you don't see the **Reset to default** option, it may have been disabled by the report *designer*. The *designer* can also lock specific filters so that you can't change them.
 
 ## View all the filters for a report page
 

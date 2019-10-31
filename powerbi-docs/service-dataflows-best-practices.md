@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/19/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -24,7 +24,7 @@ This article provides best practices for designing dataflows in Power BI. You ca
 
 ### Split ingestion and transformation to use the enhanced compute engine
 
-When creating dataflows, you may be tempted to create a single dataflow with all entities, transformations, joins, and enhancements in one place. For smaller datasets a single dataflow may be effective. But when dealing with larger data volumes, performing joins or certain transformations can sometimes experience throttle or memory limits. To address those issues, and enhanced engine has been release for Power BI Premium users that scales to much larger data volumes. The enhanced compute engine works against linked or computed entities only, so creating a separate dataflow for ingestion and a linked dataflow to perform all the complex merges and transformations can benefit from the enhanced engine.
+When creating dataflows, you may be tempted to create a single dataflow with all entities, transformations, joins, and enhancements in one place. For smaller datasets a single dataflow may be effective. But when dealing with larger data volumes, performing joins or certain transformations can sometimes experience throttle or memory limits. To address those issues, an enhanced engine has been released for Power BI Premium users that scales to much larger data volumes. The enhanced compute engine works against linked or computed entities only, so creating a separate dataflow for ingestion and a linked dataflow to perform all the complex merges and transformations can benefit from the enhanced engine.
 
 Splitting dataflows is also beneficial for diagnosing and debugging refresh issues,  especially when working with sources that have throttling limits.
 

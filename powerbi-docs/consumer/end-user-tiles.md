@@ -4,20 +4,22 @@ description: All about dashboard tiles in Power BI for consumers. This includes 
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/05/2018
+ms.date: 09/18/2019
 ms.author: mihart
 
 LocalizationGroup: Dashboards
 ---
 # Dashboard tiles in Power BI
-A tile is a snapshot of your data, pinned to the dashboard by a *designer*. A tile can be created from a report, dataset, dashboard, the Q&A question box, Excel, SQL Server Reporting Services (SSRS), and more.  This screenshot shows many different tiles pinned to a dashboard.
 
-![Power BI dashboard](./media/end-user-tiles/power-bi-dashboard.png)
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
+A tile is a snapshot of your data, pinned to the dashboard by a *designer*. *Designers* can create tiles from a report, dataset, dashboard, the Q&A question box, Excel, SQL Server Reporting Services (SSRS), and more.  This screenshot shows many different tiles pinned to a dashboard.
+
+![Power BI dashboard](./media/end-user-tiles/power-bi-dash.png)
 
 
 Besides tiles pinned from reports, *designers* can add standalone tiles directly on the dashboard using **Add tile**. Standalone tiles include: text boxes, images, videos, streaming data, and web content.
@@ -34,15 +36,15 @@ Need help understanding the building blocks that make up Power BI?  See [Power B
 
     - tile created using Q&A
    
-        ![ellipses icon](./media/end-user-tiles/power-bi-menu1.png)
+        ![ellipses icon](./media/end-user-tiles/power-bi-options-1.png)
 
     - tile created from a workbook
    
-        ![ellipses icon](./media/end-user-tiles/power-bi-menu2.png)
+        ![ellipses icon](./media/end-user-tiles/power-bi-options-2.png)
 
     - tile created from a report
    
-        ![ellipses icon](./media/end-user-tiles/power-bi-menu3.png)
+        ![ellipses icon](./media/end-user-tiles/power-bi-options-3.png)
    
     From here you can:
    
@@ -52,9 +54,12 @@ Need help understanding the building blocks that make up Power BI?  See [Power B
    
 
    * [Open the workbook that was used to create this tile ](end-user-reports.md) ![worksheet icon](./media/end-user-tiles/power-bi-open-worksheet.png)  
-    * [View the tile in focus mode ](end-user-focus.md) ![focus icon](./media/end-user-tiles/fullscreen-icon.jpg)  
-     * [Run insights ](end-user-insights.md) ![insights icon](./media/end-user-tiles/power-bi-insights.png)
-    * [Add a comment and start a discussion](end-user-comment.md)  ![comment icon](./media/end-user-tiles/comment-icons.png)
+   * [View the tile in focus mode ](end-user-focus.md) ![focus icon](./media/end-user-tiles/fullscreen-icon.jpg)  
+   * [View insights ](end-user-insights.md) ![insights icon](./media/end-user-tiles/power-bi-insights.png)
+   * [Add a comment and start a discussion](end-user-comment.md)  ![comment icon](./media/end-user-tiles/comment-icons.png)
+   * [Manage alerts set on a dashboard tile](end-user-alerts.md)  ![alert icon](./media/end-user-tiles/power-bi-alert-icon.png)
+   * [Open the data in Excel](end-user-export.md)  ![export icon](./media/end-user-tiles/power-bi-export-icon.png)
+
 
 3. To close the action menu, select a blank area in the canvas.
 
