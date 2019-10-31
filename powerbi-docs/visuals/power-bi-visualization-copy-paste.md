@@ -20,7 +20,7 @@ Copying and pasting a visualization requires edit permissions to the report. In 
 
 2. Select the visualization and use **Ctrl +C** to copy, and **Ctrl +V** to paste.      
 
-   ![](media/power-bi-visualization-copy-paste/copypasteviznew.gif)
+   ![short video showing how to copy and paste](media/power-bi-visualization-copy-paste/copypasteviznew.gif)
 
 ### Next steps
 More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)

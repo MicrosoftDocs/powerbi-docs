@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/28/2018
+ms.date: 10/31/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -27,11 +27,11 @@ In Power BI Desktop, open a report that has at least one visualization, or [crea
 
 ## Resize the visualization
 * Select the visualization to display the border and click and drag the dark frame handles to resize.  
-  ![](media/power-bi-visualization-move-and-resize/untitled.gif)
+  ![short video showinghow to resize](media/power-bi-visualization-move-and-resize/untitled.gif)
 
 ## Select Focus mode to see more detail.
 * Hover over the visualization and select the Focus mode icon.
-  ![](media/power-bi-visualization-move-and-resize/pbi_popouticon.jpg)
+  ![Focus mode icon](media/power-bi-visualization-move-and-resize/pbi_popouticon.jpg)
 
 ## Next steps
 [Resize a visualization on a dashboard](../service-dashboard-edit-tile.md)  

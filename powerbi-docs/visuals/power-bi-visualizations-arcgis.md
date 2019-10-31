@@ -24,7 +24,7 @@ The combination of ArcGIS maps and Power BI takes mapping beyond the presentatio
 
 The example we're using looks at last year's sales by city and uses a street basemap, bubble symbols to represent size, and a reference layer for average household income. The map contains 3 pins and one drive time radius (in purple).
 
-![](media/power-bi-visualizations-arcgis/power-bi-arcgis-esri-new.png)
+![ArcGIS map showing United States with bubbles, pins, and drive time](media/power-bi-visualizations-arcgis/power-bi-arcgis-esri-new.png)
 
 > [!TIP]
 > Visit [esri's page on Power BI](https://www.esri.com/powerbi) to see many examples and read testimonials. And then see esri's [ArcGIS Maps for Power BI Getting Started page](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
@@ -39,13 +39,13 @@ The first time a colleague shares an ArcGIS map with you, Power BI will display 
 ## Selection tools
 ArcGIS Maps for Power BI allows three selection modes. A maximum of 250 data points can be selected at a time.
 
-![](media/power-bi-visualizations-arcgis/power-bi-esri-selection-tools2.png)
+![Screenshot of all three selection tools](media/power-bi-visualizations-arcgis/power-bi-esri-selection-tools2.png)
 
-![](media/power-bi-visualizations-arcgis/power-bi-esri-selection-single2.png) Select individual data points.
+![screenshot of single select tool](media/power-bi-visualizations-arcgis/power-bi-esri-selection-single2.png) Select individual data points.
 
-![](media/power-bi-visualizations-arcgis/power-bi-esri-selection-marquee2.png) Draws a rectangle on the map and selects the contained data points. Use CTRL to select more than one rectangular area.
+![multi-select tool](media/power-bi-visualizations-arcgis/power-bi-esri-selection-marquee2.png) Draws a rectangle on the map and selects the contained data points. Use CTRL to select more than one rectangular area.
 
-![](media/power-bi-visualizations-arcgis/power-bi-esri-selection-reference-layer2.png) Allows boundaries or polygons within reference layers to be used to select contained data points.
+![third selection tool for boundaries](media/power-bi-visualizations-arcgis/power-bi-esri-selection-reference-layer2.png) Allows boundaries or polygons within reference layers to be used to select contained data points.
 
 <br/>
 
@@ -58,28 +58,28 @@ The features available to you depend on whether you are the *creator* (person wh
 
     
 * Expand the **Filters** pane to explore the map using filters.   
-    ![](media/power-bi-visualizations-arcgis/power-bi-filter-newer.png)  
+    ![Filters pane](media/power-bi-visualizations-arcgis/power-bi-filter-newer.png)  
 * If the map has a reference layer, select locations to display details in a tooltip. Here we've selected Adams County and see data from the average household income reference layer the creator added to the map.
   
-    ![](media/power-bi-visualizations-arcgis/power-bi-reference-layer.png)  
+    ![Adams County tooltip](media/power-bi-visualizations-arcgis/power-bi-reference-layer.png)  
   
     In this case we also get a chart. Select a bar on the chart to dig into the data. Here we see that 79 households in Adams county earn $200,000 or greater.
   
-    ![](media/power-bi-visualizations-arcgis/power-bi-tooltip-chart.png)
+    ![Tooltip for a bar in the original tooltip chart](media/power-bi-visualizations-arcgis/power-bi-tooltip-chart.png)
   
     Select the arrow to display any additional charts.
 * Hover over basemap location symbols to display details in a tooltip.     
-  ![](media/power-bi-visualizations-arcgis/power-bi-arcgis-hover.png)
+  ![location tooltip](media/power-bi-visualizations-arcgis/power-bi-arcgis-hover.png)
   
   > [!TIP]
   > You may have to zoom in to select a specific location.  Otherwise, if there are overlapping locations, Power BI may present you with more than 1 tooltip at a time. Select the arrows to move between the tooltips
   > 
-  > ![](media/power-bi-visualizations-arcgis/power-bi-3-screens.png)
+  > ![Tooltip showing three pages](media/power-bi-visualizations-arcgis/power-bi-3-screens.png)
   > 
   > 
 * If the creator has added an Infographics layer to the ArcGIS map, you'll see additional data displayed in the upper-right corner of the map.  For example, here the map creator added "Children under 14."
   
-    ![](media/power-bi-visualizations-arcgis/power-bi-demographics.png)
+    ![map with an Inforgraphics layer](media/power-bi-visualizations-arcgis/power-bi-demographics.png)
 
 ## Considerations and Limitations
 ArcGIS Maps for Power BI is available in the following services and applications:
