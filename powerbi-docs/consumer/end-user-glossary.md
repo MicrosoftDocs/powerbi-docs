@@ -288,7 +288,7 @@ The action of placing a visual, usually from a report, onto a dashboard.
 Some of the Power BI offerings. *Power BI* is the general term. It is often used in place of a full product name, such as *Power BI service* and *Power BI mobile*, after the first mention of the full product name.
 
 **Power BI Desktop**
-Also referred to as *Desktop*. The free Windows application of Power BI you can install on your local computer that lets you connect to, transform, and visualize your data. Used by report designers and admins. For more information, see [What is Power BI](../power-bi-overview.md).
+Also referred to as *Desktop*. The free Windows application of Power BI you can install on your local computer that lets you connect to, transform, and visualize your data. Used by report designers and admins. For more information, see [What is Power BI](../fundamentals/power-bi-overview.md).
 
 **Power BI Embedded**
 A product used by developers to embed Power BI dashboards and reports into their own apps, sites, and tools.
@@ -303,7 +303,7 @@ A monthly user license that provides the ability to build dashboards, collaborat
 A new branded offering of SSRS launching with Power BI Premium to allow organizations to build distributed, hybrid BI systems (a mix of cloud and on-premises deployments). Embedded provides a localized way to store and manage Power BI reports.
 
 **Power BI service**
-An online SaaS (Software as a service) service. For more information, see [What is Power BI](../power-bi-overview.md).
+An online SaaS (Software as a service) service. For more information, see [What is Power BI](../fundamentals/power-bi-overview.md).
 
 **Power BI service connector**
 This connector enables Power BI Desktop users to connect to datasets in Power BI service from Desktop. They can create a model once and reuse it in many reports and dashboards.

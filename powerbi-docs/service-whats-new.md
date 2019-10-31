@@ -760,7 +760,7 @@ Check out the [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi
 * Reliability of refresh with OneDrive has been improved.  Some situations where workbooks were not refreshing from OneDrive have been resolved.
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)  
+[What is Power BI?](fundamentals/power-bi-overview.md)  
 
 More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 

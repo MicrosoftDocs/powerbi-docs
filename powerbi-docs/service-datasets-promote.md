@@ -25,7 +25,7 @@ Your dataset needs to be in a new workspace experience workspace in the Power BI
 
 1. Go to the list of datasets in the workspace.
  
-1. Select the ellipsis (...), then select **Settings**.
+1. Select **More options** (...), then select **Settings**.
 
     ![Select the ellipsis by the dataset](media/service-datasets-certify-promote/power-bi-dataset-settings.png)
 

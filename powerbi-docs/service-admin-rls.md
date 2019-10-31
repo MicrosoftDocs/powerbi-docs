@@ -65,7 +65,7 @@ You can remove members by selecting the X next to their name.
 
 You can validate that the role you defined is working correctly by testing the role. 
 
-1. Select the **ellipsis (...)** next to the role.
+1. Select **More options** (...) next to the role.
 2. Select **Test data as role**
 
 ![Test as role](media/service-admin-rls/rls-test-role.png)

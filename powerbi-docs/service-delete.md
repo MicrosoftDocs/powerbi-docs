@@ -67,7 +67,7 @@ If a dataset is part of one or more [organizational content packs](service-organ
 
 ### To delete a dataset
 1. In your workspace, select the **Datasets** tab.
-2. Locate the dataset to delete and select the ellipses (...).  
+2. Locate the dataset to delete and select **More options** (...).  
 
     ![Datasets tab](media/service-delete/power-bi-delete-datasetnew.png)
 3. From the dropdown, select **Delete**.
@@ -88,10 +88,10 @@ As the workspace author, you can delete it. When you delete it, the associated a
 ### To delete a workspace - if you are an Admin
 1. From the left nav, select **Workspaces**
 
-    ![workspaces](media/service-delete/power-bi-delete-workspace.png)
-2. Select the ellipses (...) to the right of the workspace to be deleted and choose **Edit workspace**.
+2. Select **More options** (...) to the right of the workspace to be deleted and choose **Edit workspace**.
 
-   ![ellipses menu > Edit workspace](media/service-delete/power-bi-edit-workspace.png)
+    ![workspaces](media/service-delete/power-bi-delete-workspace.png)
+
 3. In the **Edit workspace** window, select **Delete workspace** > **Delete**.
 
     ![delete workspace](media/service-delete/power-bi-delete-workspace2.png)
@@ -105,7 +105,8 @@ If you no longer want to be a member of a workspace, you can ***leave*** it and 
 >
 
 1. Start in the workspace you'd like to remove.
-2. In the top-right corner, select the ellipses (...) and choose **Leave workspace** > **Leave**.
+
+2. In the top-right corner, select **More options** (...) and choose **Leave workspace** > **Leave**.
 
       ![leave workspace](media/service-delete/power-bi-leave-workspace.png)
 
