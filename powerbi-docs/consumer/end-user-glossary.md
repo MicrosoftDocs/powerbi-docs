@@ -420,7 +420,7 @@ Name for the visualization templates that ship in the shared report canvas for P
 An Excel workbook to be used as a data source. Workbooks can contain a data model with one or more tables of data loaded into it by using linked tables, Power Query, or Power Pivot.
 
 **workspace**
-All workspaces in Power BI except for My workspace are now workspaces. The contents can be bundled into a Power BI app. Those stored in Premium capacity can be shared with Free users. Personal workspaces (under My workspace) can be hosted in Premium capacity.
+Containers for dashboards, reports, and datasets in Power BI. Users can collaborate on the content in any workspace except My workspace. The contents can be bundled into a Power BI app. Those stored in Premium capacity can be shared with Free users. Personal workspaces (under My workspace) can be hosted in Premium capacity.
 
 ## X
 **x-axis**  
