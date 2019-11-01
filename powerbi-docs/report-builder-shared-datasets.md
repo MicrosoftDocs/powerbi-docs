@@ -94,7 +94,7 @@ When you want the data in your Power BI report and in your Report Builder report
 
     ![Query results](media/report-builder-shared-datasets/power-bi-report-builder-query-results.png)
 
-1. Select **OK**. 
+1. Select **OK**.
 
     You see your query in the **Query** window of the **Dataset Properties** dialog box.
 

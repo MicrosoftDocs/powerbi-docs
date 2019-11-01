@@ -93,7 +93,7 @@ Power BI admins and Office 365 Global Administrators can change Power BI Premium
 
 ### Manage user permissions
 
-You can assign additional capacity admins, and assign users that have *capacity assignment* permissions. Users that have assignment permissions can assign an app workspace to a capacity if they are an admin of that workspace. They can also assign their personal *My Workspace* to the capacity. Users with assignment permissions do not have access to the admin portal.
+You can assign additional capacity admins, and assign users that have *capacity assignment* permissions. Users that have assignment permissions can assign a workspace to a capacity if they are an admin of that workspace. They can also assign their personal *My Workspace* to the capacity. Users with assignment permissions do not have access to the admin portal.
 
 > [!NOTE]
 > For Power BI Embedded, capacity admins are defined in the Microsoft Azure portal.
@@ -104,7 +104,7 @@ Under **User permissions**, expand **Users with assignment permissions**, then a
 
 ## Assign a workspace to a capacity
 
-There are two ways to assign a workspace to a capacity: in the admin portal; and from an app workspace.
+There are two ways to assign a workspace to a capacity: in the admin portal; and from a workspace.
 
 ### Assign from the admin portal
 
@@ -122,22 +122,22 @@ Capacity admins, along with Power BI admins and Office 365 Global Administrators
    | --- | --- |
    | **Workspaces by users** | When you assign workspaces by user, or group, all the workspaces owned by those users are assigned to Premium capacity, including the user's personal workspace. Said users automatically get workspace assignment permissions.<br>This includes workspaces already assigned to a different capacity. |
    | **Specific workspaces** | Enter the name of a specific workspace to assign to the selected capacity. |
-   | **The entire organization's workspaces** | Assigning the entire organization's workspaces to Premium capacity assigns all app workspaces and My Workspaces, in your organization, to this Premium capacity. In addition, all current and future users will have the permission to reassign individual workspaces to this capacity. |
+   | **The entire organization's workspaces** | Assigning the entire organization's workspaces to Premium capacity assigns all workspaces and My Workspaces, in your organization, to this Premium capacity. In addition, all current and future users will have the permission to reassign individual workspaces to this capacity. |
    | | |
 
 1. Select **Apply**.
 
-### Assign from app workspace settings
+### Assign from workspace settings
 
-You can also assign an app workspace to a Premium capacity from the settings of that workspace. To move a workspace into a capacity, you must have admin permissions to that workspace, and also capacity assignment permissions to that capacity. Note that workspace admins can always remove a workspace from Premium capacity.
+You can also assign a workspace to a Premium capacity from the settings of that workspace. To move a workspace into a capacity, you must have admin permissions to that workspace, and also capacity assignment permissions to that capacity. Note that workspace admins can always remove a workspace from Premium capacity.
 
-1. Edit an app workspace by selecting the ellipsis **(. . .)** then selecting **Edit workspace**.
+1. Edit a workspace by selecting the ellipsis **(. . .)** then selecting **Edit workspace**.
 
     ![Edit workspace from ellipsis context menu](media/service-admin-premium-manage/edit-app-workspace.png)
 
 1. Under **Edit workspace**, expand **Advanced**.
 
-1. Select the capacity that you want to assign this app workspace to.
+1. Select the capacity that you want to assign this workspace to.
 
     ![Capacity selection drop down](media/service-admin-premium-manage/app-workspace-advanced.png)
 

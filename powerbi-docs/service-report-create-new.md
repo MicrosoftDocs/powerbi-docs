@@ -25,7 +25,7 @@ This method of creating a report starts with a dataset and a blank report canvas
 
 1. We'll create the report in a Power BI service workspace, so select an existing workspace or create a one.
    
-   ![list of App workspaces](media/service-report-create-new/power-bi-workspaces2.png)
+   ![list of workspaces](media/service-report-create-new/power-bi-workspaces2.png)
 2. From the bottom of the left navigation pane, select **Get data**.
    
    ![Get data](media/service-report-create-new/power-bi-get-data3.png)
