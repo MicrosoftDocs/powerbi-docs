@@ -725,12 +725,6 @@
         href: service-cognitive-services.md   
       - name: "Automated Machine Learning in Power BI"
         href: service-machine-learning-automated.md
-    - name: Data protection
-      items: 
-      - name: Data protection overview
-        href: admin/service-security-data-protection-overview.md
-      - name: Apply sensitivity labels to your data
-        href: designer/service-security-apply-data-sensitivity-labels.md
     - name: "Data lineage"
       href: service-data-lineage.md
     - name: Paginated reports in Power BI
@@ -902,17 +896,7 @@
     - name: "Videos"
       href: videos.md
     - name: "Webinars"
-      href: webinars.md
-    - name: Data protection (preview)
-      items: 
-      - name: "Data protection in Power BI (preview)"
-        href: admin/service-security-data-protection-overview.md
-      - name: "Enable data sensitivity labels in Power BI (preview)"
-        href: admin/service-security-enable-data-sensitivity-labels.md      
-      - name: "Apply data sensitivity labels in Power BI (preview)"
-        href: designer/service-security-apply-data-sensitivity-labels.md      
-      - name: "Using Microsoft cloud app security controls in Power BI (preview)"
-        href: admin/service-security-using-microsoft-cloud-app-security-controls.md                              
+      href: webinars.md                     
 - name: Power BI Premium
   items:
   - name: Overview
