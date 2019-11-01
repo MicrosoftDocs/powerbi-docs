@@ -22,21 +22,21 @@ This article describes how to purchase Power BI Premium capacity (P1-P3) for you
 
 Content creators still need a Power BI Pro license, even if your organization uses Power BI Premium. Ensure you purchase at least one Power BI Pro license for your organization.
 
-If a Premium subscription expires, you have 30 days of full access to your capacity. After that, your content reverts to a shared capacity. Models that are greater than 1 GB will are not supported in shared capacity.
+If a Premium subscription expires, you have 30 days of full access to your capacity. After that, your content reverts to a shared capacity. Models that are greater than 1 GB are not supported in shared capacity.
 
 ## Create a new tenant with Power BI Premium P1
 
-If you don't have an existing tenant and want to create one, you can purchase Power BI Premium at the same time. The following link walks you through the process of creating a new tenant and enables you to purchase Power BI Premium: [Power BI Premium P1 offer](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). When you create your tenant, you will automatically be assigned to the Office 365 Global Administrator role for that tenant.
+If you don't have an existing tenant and want to create one, you can purchase Power BI Premium at the same time. The following link walks you through the process of creating a new tenant and enables you to purchase Power BI Premium: [Power BI Premium P1 offer](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). When you create your tenant, you will automatically be assigned to the Microsoft 365 Global Administrator role for that tenant.
 
 ## Purchase a Power BI Premium capacity for an existing organization
 
-If you have an existing organization (tenant), you must be in the Office 365 Global Administrator role or Billing Administrator role to purchase subscriptions and licenses. For more information, see [About Office 365 admin roles](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
+If you have an existing organization (tenant), you must be in the Microsoft 365 Global Administrator role or Billing Administrator role to purchase subscriptions and licenses. For more information, see [About Microsoft 365 admin roles](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
 To purchase Premium capacity, follow these steps.
 
-1. From within the Power BI service, select the Office 365 app picker then **Admin**.
+1. From within the Power BI service, select the Microsoft 365 app picker then **Admin**.
 
-    ![Office 365 app picker](media/service-admin-premium-purchase/o365-app-picker.png)
+    ![Microsoft 365 app picker](media/service-admin-premium-purchase/o365-app-picker.png)
 
     Alternatively, you can browse to the Microsoft 365 admin center. You can get there by going to https://portal.office.com and selecting **Admin**.
 
