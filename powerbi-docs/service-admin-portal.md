@@ -177,7 +177,7 @@ Mail-enabled security groups will receive email notifications if this tenant is 
 
 ### Create workspaces
 
-Admins use the **Create workspaces** setting to indicate which users in the organization can create app workspaces to collaborate on dashboards, reports, and other content. Learn more about [app workspaces](service-create-the-new-workspaces.md).
+Admins use the **Create workspaces** setting to indicate which users in the organization can create workspaces to collaborate on dashboards, reports, and other content. Learn more about [workspaces](service-create-the-new-workspaces.md).
 
 The admin portal has another section of settings about the workspaces in your tenant. In that section, you can sort and filter the list of workspaces and display the details for each workspace. See [Workspaces](#workspaces) for details.
 
