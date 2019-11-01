@@ -84,12 +84,12 @@ To return to normal viewing, select **Back to Row-Level Security**.
 
 [!INCLUDE [include-short-name](./includes/rls-usernames.md)]
 
-## Using RLS with app workspaces in Power BI
+## Using RLS with workspaces in Power BI
 
-If you publish your Power BI Desktop report to an app workspace within the Power BI service, the roles will be applied to read-only members. You will need to indicate that members can only view Power BI content within the app workspace settings.
+If you publish your Power BI Desktop report to a workspace within the Power BI service, the roles will be applied to read-only members. You will need to indicate that members can only view Power BI content within the workspace settings.
 
 > [!WARNING]
-> If you have configured the app workspace so that members have edit permissions, the RLS roles will not be applied to them. Users will be able to see all of the data.
+> If you have configured the workspace so that members have edit permissions, the RLS roles will not be applied to them. Users will be able to see all of the data.
 
 ![Group settings](media/service-admin-rls/rls-group-settings.png)
 
