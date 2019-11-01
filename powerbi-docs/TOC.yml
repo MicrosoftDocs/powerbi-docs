@@ -663,7 +663,7 @@
       items: 
       - name: "Create the new workspaces"
         href: service-create-the-new-workspaces.md
-      - name: "Create app workspaces"
+      - name: "Create workspaces"
         href: service-create-workspaces.md
       - name: "Publish apps from workspaces"
         href: service-create-distribute-apps.md
@@ -726,7 +726,7 @@
       - name: "Use Cognitive Services in Power BI"
         href: service-cognitive-services.md   
       - name: "Automated Machine Learning in Power BI"
-        href: service-machine-learning-automated.md              
+        href: service-machine-learning-automated.md
     - name: "Data lineage"
       href: service-data-lineage.md
     - name: Paginated reports in Power BI
@@ -898,7 +898,7 @@
     - name: "Videos"
       href: videos.md
     - name: "Webinars"
-      href: webinars.md
+      href: webinars.md                     
 - name: Power BI Premium
   items:
   - name: Overview
