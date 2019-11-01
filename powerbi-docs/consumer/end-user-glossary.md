@@ -41,11 +41,8 @@ To write lines, text, or stamps on a snapshot copy of a tile, report, or visual 
 **answer card, answer page**
 See Cortana answer card.
 
-**app, apps**
+**app, apps** 
 
- 
-**app workspace**
-All workspaces in Power BI except for My workspace are now app workspaces. The contents can be bundled into a Power BI app. Those stored in Premium capacity can be shared with Free users. Personal workspaces (under My workspace) can be hosted in Premium capacity.  
 
 **AppSource**
 Centralized online repository where you can browse and discover dashboards, reports, datasets, and apps to download.
@@ -64,7 +61,7 @@ ArcGIS is a mapping and analytics platform created by the company ESRI. The name
 A view of data captured in the Bookmarks pane of a report in Power BI Desktop or service. In Desktop, the bookmarks are saved in the .pbix report file for sharing on the Power BI service
   
 **breadcrumbs**
-The navigation at the top left to quickly navigate between app workspaces.
+The navigation at the top left to quickly navigate between workspaces.
 
 ## C
 
@@ -229,7 +226,7 @@ Apps that allow you to run Power BI on iOS, Android, and Windows devices.
 [Power BI Desktop] Getting the data you've connected to ready for use in Power BI. This includes creating relationships between tables in multiple data sources, creating measures, and assigning metrics.
 
 **My workspace**
-The workspace for each Power BI customer to create content. If they want to bundle anything created here into an app, and they have *designer* permissions, they upload it to the appropriate app workspace or create a new one.
+The workspace for each Power BI customer to create content. If they want to bundle anything created here into an app, and they have *designer* permissions, they upload it to the appropriate workspace or create a new one.
 
 ## N
 
@@ -423,7 +420,7 @@ Name for the visualization templates that ship in the shared report canvas for P
 An Excel workbook to be used as a data source. Workbooks can contain a data model with one or more tables of data loaded into it by using linked tables, Power Query, or Power Pivot.
 
 **workspace**
-Containers for dashboards, reports, and datasets in Power BI. See app workspace in this term collection.
+Containers for dashboards, reports, and datasets in Power BI. Users can collaborate on the content in any workspace except My workspace. The contents can be bundled into a Power BI app. Those stored in Premium capacity can be shared with Free users. Personal workspaces (under My workspace) can be hosted in Premium capacity.
 
 ## X
 **x-axis**  

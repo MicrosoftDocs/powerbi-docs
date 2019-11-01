@@ -165,7 +165,9 @@ The next few sections provide an overview of the different types of tenant setti
 
 Users in the organization can go to internal help and support resources from the Power BI help menu. Specifically, these parameters change the behavior of the Learn, Community, and Get help menu items.
 
-It is also possible to specify a URL to direct users to a custom solution for licensing requests. This parameter customizes the target URL of the Upgrade account button that a user without a Power BI Pro license can find in the Update to Power BI Pro dialog box as well as in the Manage personal storage page.
+    ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+
+By specifying a URL for licensing requests, you customize the target URL of the **Upgrade account** button that a user without a Power BI Pro license can find in the **Update to Power BI Pro** dialog box as well as in the **Manage personal storage** page. Moreover, Power BI no longer offers the **Try Pro for free** button in this dialog box or storage page to ensure that Power BI guides your users reliably through the processes defined in your organization via your license management solution.
 
 ### Receive email notifications for service outages or incidents
 
@@ -175,7 +177,7 @@ Mail-enabled security groups will receive email notifications if this tenant is 
 
 ### Create workspaces
 
-Admins use the **Create workspaces** setting to indicate which users in the organization can create app workspaces to collaborate on dashboards, reports, and other content. Learn more about [app workspaces](service-create-the-new-workspaces.md).
+Admins use the **Create workspaces** setting to indicate which users in the organization can create workspaces to collaborate on dashboards, reports, and other content. Learn more about [workspaces](service-create-the-new-workspaces.md).
 
 The admin portal has another section of settings about the workspaces in your tenant. In that section, you can sort and filter the list of workspaces and display the details for each workspace. See [Workspaces](#workspaces) for details.
 
