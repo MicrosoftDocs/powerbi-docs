@@ -52,7 +52,7 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 
 ## Modify and distribute your app
 
-You've installed the GitHub template app. That means you've also created the GitHub app workspace. In the workspace, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
+You've installed the GitHub template app. That means you've also created the GitHub workspace. In the workspace, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
 
 1. Select the arrow next to the workspace name in the left navigation bar. You see the workspace contains a dashboard and a report.
 
