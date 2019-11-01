@@ -37,13 +37,13 @@ There are two different types of gateways, each for a different scenario:
 There are four main steps for using a gateway.
 
 1. [Download and install the gateway](/data-integration/gateway/service-gateway-install) on a local computer.
-2. [Configure](/data-integration/gateway/service-gateway-app) the gateway based on your firewall and other network requirements.
-3. [Add gateway admins](/data-integration/gateway/service-gateway-manage) who can also manage and administer other network requirements.
-4. [Troubleshoot](service-gateway-onprem-tshoot.md) the gateway in case of errors.
+1. [Configure](/data-integration/gateway/service-gateway-app) the gateway based on your firewall and other network requirements.
+1. [Add gateway admins](/data-integration/gateway/service-gateway-manage) who can also manage and administer other network requirements.
+1. [Use the gateway](service-gateway-sql-tutorial.md) to refresh an on-premises data source.
+1. [Troubleshoot](service-gateway-onprem-tshoot.md) the gateway in case of errors.
 
 ## Next steps
 
 * [Install the on-premises data gateway](/data-integration/gateway/service-gateway-install)
-
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
