@@ -45,7 +45,7 @@ Power BI Report Server and the Power BI service have many similarities and some 
 | Data alerts | No | Yes | [Data alerts](../service-set-data-alerts.md) in the Power BI service
 | Row-level security (RLS) | Yes | Yes | Available in both DirectQuery (data source) & Import mode <br><br>Row-level security in the [Power BI service](../service-admin-rls.md) <br><br>Row-level security in [Power BI Report Server](row-level-security-report-server.md) |
 | Full-screen mode | No | Yes | [Full-screen mode](../consumer/end-user-focus.md) in the Power BI service |
-| Advanced Office 365 collaboration | No | Yes | [Collaborate in an app workspace](../service-collaborate-power-bi-workspace.md) with Office 365 |
+| Advanced Office 365 collaboration | No | Yes | [Collaborate in a workspace](../service-collaborate-power-bi-workspace.md) with Office 365 |
 | R visuals | No | Yes | [Create R visuals](../desktop-r-visuals.md) in Power BI Desktop and publish them to the Power BI service. You can't save Power BI reports with R visuals to Power BI Report Server.  |
 | Preview features | No | Yes | [Opt in for Power BI service preview](../consumer/end-user-preview-features.md) features |
 | Custom visuals | Yes | Yes | [Custom visuals in Power BI](../power-bi-custom-visuals.md) |
