@@ -90,14 +90,14 @@ A Power BI refresh operation can consist of multiple refresh types, including da
 
 #### Data refresh
 
-For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight daily refreshes. If the dataset resides on a Premium capacity, you can perform up to 48 refreshes per day. For more information, see Configuring scheduled refresh later in this article.
+For Power BI users, refreshing data typically means importing data from the original data sources into a dataset, either based on a refresh schedule or on-demand. You can perform multiple dataset refreshes daily, which might be necessary if the underlying source data changes frequently. Power BI limits datasets on shared capacity to eight daily refreshes. If the dataset resides on a Premium capacity, you can schedule up to 48 refreshes per day in the dataset settings. For more information, see Configuring scheduled refresh later in this article.
 
-It is also important to call out that the daily refresh limitation applies to both, scheduled refreshes and API refreshes combined. You can also trigger an on-demand refresh by selecting **Refresh Now** in the dataset menu, as the following screenshot depicts. On-demand refreshes are not included in the refresh limitation. If you are interested in building your own refresh solution by using the Power BI REST API, see [Datasets - Refresh Dataset](/rest/api/power-bi/datasets/refreshdataset).
+It is also important to call out that the shared-capacity limitation for daily refreshes applies to both, scheduled refreshes and API refreshes combined. You can also trigger an on-demand refresh by selecting **Refresh Now** in the dataset menu, as the following screenshot depicts. On-demand refreshes are not included in the refresh limitation. Also note that datasets on a Premium capacity don't impose limitations for API refreshes. If you are interested in building your own refresh solution by using the Power BI REST API, see [Datasets - Refresh Dataset](/rest/api/power-bi/datasets/refreshdataset).
 
 ![Refresh now](media/refresh-data/refresh-now.png)
 
 > [!NOTE]
-> Data refreshes must complete in less than 2 hours. If your datasets require longer refresh operations, consider moving the dataset onto a Premium capacity. On Premium, the maximum refresh duration is 5 hours.
+> Data refreshes must complete in less than 2 hours on shared capacity. If your datasets require longer refresh operations, consider moving the dataset onto a Premium capacity. On Premium, the maximum refresh duration is 5 hours.
 
 #### OneDrive refresh
 

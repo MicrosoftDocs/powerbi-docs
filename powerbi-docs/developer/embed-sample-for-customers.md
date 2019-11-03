@@ -53,13 +53,13 @@ However, if you proceed using the service principal, you need to proceed with re
 
 ## Set up your Power BI environment
 
-### Create an app workspace
+### Create a workspace
 
-If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within an app workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../service-create-workspaces.md) or the [new workspaces](../service-create-the-new-workspaces.md). If you're using a *master* account, then it doesn't matter which type of workspaces you use. However, if you use *[service principal](embed-service-principal.md)* to sign into your application, then you're required to you use the new workspaces. In either scenario, both the *master* account or *service principal* must be an admin of the app workspaces involved with your application.
+If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within a workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../service-create-workspaces.md) or the [new workspaces](../service-create-the-new-workspaces.md). If you're using a *master* account, then it doesn't matter which type of workspaces you use. However, if you use *[service principal](embed-service-principal.md)* to sign into your application, then you're required to use the new workspaces. In either scenario, both the *master* account or *service principal* must be an admin of the workspaces involved with your application.
 
 ### Create and publish your reports
 
-You can create your reports and datasets using Power BI Desktop and then publish those reports to an app workspace. There are two ways to accomplish this task: As an end user, you can publish reports to a traditional app workspace with a master account (Power BI Pro license). If you're using service principal, you can publish reports to the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
+You can create your reports and datasets using Power BI Desktop and then publish those reports to a workspace. There are two ways to accomplish this task: As an end user, you can publish reports to a traditional workspace with a master account (Power BI Pro license). If you're using service principal, you can publish reports to the new workspaces using the [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
 
 The below steps walk through how to publish your PBIX report to your Power BI workspace.
 
@@ -71,7 +71,7 @@ The below steps walk through how to publish your PBIX report to your Power BI wo
 
    ![PBI desktop report](media/embed-sample-for-customers/embed-sample-for-customers-027.png)
 
-3. Publish to **app workspaces**. This process differs depending on whether you're using a master account (Power Pro license), or service principal. If you're using a master account, then you can publish your report through Power BI Desktop.  Now if you're using service principal, you must use the Power BI REST APIs.
+3. Publish to **workspaces**. This process differs depending on whether you're using a master account (Power Pro license), or service principal. If you're using a master account, then you can publish your report through Power BI Desktop.  Now if you're using service principal, you must use the Power BI REST APIs.
 
 ## Embed content using the sample application
 
@@ -132,7 +132,7 @@ To get the **applicationId**, follow these steps:
 
 This attribute is needed for both AuthenticationTypes (master account and [service principal](embed-service-principal.md)).
 
-Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+Fill in the **workspaceId** information with the workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
 URL <br>
 
@@ -398,7 +398,7 @@ Here is a sample that uses an **EmbedConfig** model and a **TileEmbedConfig** mo
 
 ## Move to production
 
-Now that you've completed developing your application, it's time to back your app workspace with a dedicated capacity. 
+Now that you've completed developing your application, it's time to back your workspace with a dedicated capacity. 
 
 > [!Important]
 > Dedicated capacity is required to move to production. All workspaces (the ones containing the reports or dashboards, and the ones containing the datasets) must be assigned to a capacity.
@@ -429,9 +429,9 @@ Using embed tokens with Pro licenses are intended for development testing, so th
 
 For more information, see [Embedded analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper).
 
-### Assign an app workspace to a dedicated capacity
+### Assign a workspace to a dedicated capacity
 
-Once you create a dedicated capacity, you can assign your app workspace to that dedicated capacity.
+Once you create a dedicated capacity, you can assign your workspace to that dedicated capacity.
 
 To assign a dedicated capacity to a workspace using [service principal](embed-service-principal.md), use the [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). When you are using the Power BI REST APIs, make sure to use the [service principal object ID](embed-service-principal.md#how-to-get-the-service-principal-object-id).
 
@@ -445,9 +445,9 @@ Follow the steps below to assign a dedicated capacity to a workspace using a **m
 
     ![Assign dedicated capacity](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
-3. After you select **Save**, you should see a **diamond** next to the app workspace name.
+3. After you select **Save**, you should see a **diamond** next to the workspace name.
 
-    ![app workspace tied to a capacity](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
+    ![workspace tied to a capacity](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
 
 ## Next steps
 

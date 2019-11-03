@@ -73,8 +73,8 @@ A fiddler capture may be required to investigate further. There could be several
 
 * The user has exceeded the amount of embed token that can be generated on a shared capacity. Purchase Azure capacities to generate embed tokens and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * The Azure AD auth token expired.
-* The authenticated user isn't a member of the group (app workspace).
-* The authenticated user isn't an admin of the group (app workspace).
+* The authenticated user isn't a member of the group (workspace).
+* The authenticated user isn't an admin of the group (workspace).
 * The authenticated user doesn't have permissions. Permissions can be updated using [refreshUserPermissions API](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions)
 * The authorization header may not be listed correctly. Make sure there are no typos.
 

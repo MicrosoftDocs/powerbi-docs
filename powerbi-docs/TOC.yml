@@ -395,6 +395,8 @@
         href: desktop-access-database-errors.md
       - name: "Resolve issues when starting Power BI Desktop"
         href: desktop-error-launching-desktop.md
+      - name: "DirectQuery model troubleshooting in Power BI Desktop"
+        href: desktop-directquery-troubleshoot.md
   - name: Reference
     items: 
     - name: "Data types in Power BI Desktop"
@@ -661,7 +663,7 @@
       items: 
       - name: "Create the new workspaces"
         href: service-create-the-new-workspaces.md
-      - name: "Create app workspaces"
+      - name: "Create workspaces"
         href: service-create-workspaces.md
       - name: "Publish apps from workspaces"
         href: service-create-distribute-apps.md
@@ -724,7 +726,7 @@
       - name: "Use Cognitive Services in Power BI"
         href: service-cognitive-services.md   
       - name: "Automated Machine Learning in Power BI"
-        href: service-machine-learning-automated.md              
+        href: service-machine-learning-automated.md
     - name: "Data lineage"
       href: service-data-lineage.md
     - name: Paginated reports in Power BI
@@ -896,7 +898,7 @@
     - name: "Videos"
       href: videos.md
     - name: "Webinars"
-      href: webinars.md
+      href: webinars.md                     
 - name: Power BI Premium
   items:
   - name: Overview
@@ -1175,6 +1177,8 @@
     href: guidance/dax-error-functions.md
   - name: "Best practices for dataflows"
     href: service-dataflows-best-practices.md  
+  - name: "DirectQuery model guidance in Power BI Desktop"
+    href: guidance/directquery-model-guidance.md  
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
