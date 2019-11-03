@@ -93,9 +93,3 @@ To expose only some of the data, assign the `username` field with the informatio
     ]
 }
 ```
-## Next steps
-
-For more information, see:
-* [Report data in Power BI Report Builder](../report-builder-data.md)
-* [Create parameters for paginated reports in the Power BI service](../paginated-reports-parameters.md)
-* [Expression examples in Power BI Report Builder](../report-builder-expression-examples.md)
