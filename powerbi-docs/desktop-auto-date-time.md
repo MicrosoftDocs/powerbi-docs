@@ -24,7 +24,7 @@ When the option is enabled, Power BI Desktop creates a hidden auto date/time tab
 
 - The table storage mode is Import
 - The column data type is date or date/time
-- The column is not the "many" side of a model relationship
+- The column isn't the "many" side of a model relationship
 
 ## How it works
 
@@ -35,11 +35,11 @@ Each auto date/time table is in fact a [calculated table](desktop-calculated-tab
 
 A relationship is also created between the auto date/time table's **Date** column and the model date column.
 
-The auto date/time table is loaded with full calendar years encompassing all date values stored in the model date column. For example, if the earliest value in a date column is March 20, 2016 and the latest value is October 23, 2019, the table would contain 1,461 rows. This represents one row for each date in the four calendar years 2016 to 2019. When the model is refreshed, each auto date/time table is also refreshed to ensure that it always contains dates that encompass the date column values.
+The auto date/time table is loaded with full calendar years encompassing all date values stored in the model date column. For example, if the earliest value in a date column is March 20, 2016 and the latest value is October 23, 2019, the table would contain 1,461 rows. It represents one row for each date in the four calendar years 2016 to 2019. When the model is refreshed, each auto date/time table is also refreshed to ensure that it always contains dates that encompass the date column values.
 
 If it was possible to see the rows of an auto date/time table, they may look like this:
 
-![Example of what rows of an auto date/time table may look like. Displays seven columns: Date, Day, MonthNo, Month, QuarterNo, Quarter and Year. Displays 10 rows of data describing dates from January 1, 2019 to January 10, 2019.](media/desktop-auto-date-time/auto-date-time-hidden-table-example-rows.png)
+![Example of what rows of an auto date/time table may look like. Displays seven columns: Date, Day, MonthNo, Month, QuarterNo, Quarter, and Year. Displays 10 rows of data describing dates from January 1, 2019 to January 10, 2019.](media/desktop-auto-date-time/auto-date-time-hidden-table-example-rows.png)
 
 > [!NOTE]
 > Auto date/time tables are permanently hidden, even from modelers. They cannot be seen in the **Fields** pane or the Model view diagram, and its rows cannot be seen in Data view. Also, the table and its column cannot be directly referenced by DAX expressions.
@@ -48,7 +48,7 @@ The table also defines a hierarchy, providing visuals with a drill down path thr
 
 If it was possible to see an auto date/time table in the Model view diagram, it may look like this (related columns are highlighted):
 
-![Example of what a hidden auto date/time table may look like. Displays two tables: Sales and LocalDateTime table. The tables are related based on the Sales table OrderDate column and the LocalDateTime table Date column. The LocalDateTime defines seven columns: Date, Day, Month, MonthNo, Quarter, QuarterNo, Year, and a single hierarchy. The hierarchy is named Date Hierarchy and consists of four levels: Year, Quarter, Month and Day.](media/desktop-auto-date-time/auto-date-time-hidden-table-example-diagram.png)
+![Example of what a hidden auto date/time table may look like. Displays two tables: Sales and LocalDateTime table. The tables are related based on the Sales table OrderDate column and the LocalDateTime table Date column. The LocalDateTime defines seven columns: Date, Day, Month, MonthNo, Quarter, QuarterNo, Year, and a single hierarchy. The hierarchy is named Date Hierarchy and consists of four levels: Year, Quarter, Month, and Day.](media/desktop-auto-date-time/auto-date-time-hidden-table-example-diagram.png)
 
 ## Work with auto date/time
 
@@ -58,7 +58,7 @@ When an auto date/time table exists for a date column (and that column is visibl
 
 The auto date/time generated hierarchy can be used to configure a visual in exactly the same way that regular hierarchies can be used. Visuals can be configured by using the entire **Date Hierarchy** hierarchy, or specific levels of the hierarchy.
 
-There is, however, one added capability not supported by regular hierarchies. When the auto date/time hierarchy—or a level from the hierarch—is added to a visual well, the report author can toggle between using the hierarchy or the date column. This makes sense for some visuals, when all you require is the date column, not the hierarchy and its levels. You start by configuring the visual field (right-click the visual field, or click the down-arrow), and then use the context menu to switch between the date column or the date hierarchy.
+There is, however, one added capability not supported by regular hierarchies. When the auto date/time hierarchy—or a level from the hierarch—is added to a visual well, the report author can toggle between using the hierarchy or the date column. This approach makes sense for some visuals, when all you require is the date column, not the hierarchy and its levels. You start by configuring the visual field (right-click the visual field, or click the down-arrow), and then use the context menu to switch between the date column or the date hierarchy.
 
 ![Example of a visual field configuration for the OrderDate hierarchy. The open context menu  displays two options allowing the toggling to use the OrderDate column or the Date Hierarchy.](media/desktop-auto-date-time/auto-date-time-configure-visuals-fields.png)
 
