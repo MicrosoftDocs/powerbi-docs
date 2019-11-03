@@ -50,7 +50,7 @@
         href: service-security-data-protection-overview.md
       - name: "Enable data sensitivity labeling"
         href: service-security-enable-data-sensitivity-labels.md
-      - name: "Enhance protection with Microsoft Cloud App Security"
+      - name: "Use Microsoft Cloud App Security with Power BI"
         href: service-security-using-microsoft-cloud-app-security-controls.md
     - name: "Row-level security"
       href: ../service-admin-rls.md
