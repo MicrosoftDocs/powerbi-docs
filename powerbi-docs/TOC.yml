@@ -730,7 +730,7 @@
     - name: Protect your data
       items: 
       - name: "Data protection overview"
-        href: designer/service-security-data-protection-overview.md
+        href: admin/service-security-data-protection-overview.md
       - name: "Apply sensitivity labels"
         href: designer/service-security-apply-data-sensitivity-labels.md 
     - name: "Data lineage"
