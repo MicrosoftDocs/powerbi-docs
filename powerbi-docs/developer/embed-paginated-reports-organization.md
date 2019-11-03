@@ -13,7 +13,7 @@ ms.date: 07/29/2019
 #Customer intent: As a developer, I want to embed Power BI paginated reports into an application, so users of an organization can share data.
 ---
 
-# Tutorial: Embed Power BI paginated reports into an application for your organization
+# Embed Power BI paginated reports into an application for your organization
 
 In **Power BI**, you can embed paginated reports into an application by using user owns data. 
 
@@ -295,17 +295,17 @@ But you can't access content with a free Power BI license when you're using Powe
 
 After you create a dedicated capacity, you can assign your app workspace to that dedicated capacity. To complete this process, follow these steps:
 
-1. Within the Power BI service, expand workspaces and select **More options** for the workspace you're using for embedding your content. Then select **Workspace settings**.
+1. Within the Power BI service, expand workspaces and select **More** for the workspace you're using for embedding your content. Then select **Workspace settings**.
 
-    ![Edit a workspace](media/embed-paginated-reports-for-your-organization/workspace-settings.png)
+    ![Edit a workspace](media/embed-paginated-reports-organization/workspace-settings.png)
 
 2. Select **Premium** and enable **Dedicated capacity**. Select the dedicated capacity you created. Then select **Save**.
 
-    ![Assign a dedicated capacity](media/embed-paginated-reports-for-your-organization/dedicated-capacity.png)
+    ![Assign a dedicated capacity](media/embed-paginated-reports-organization/dedicated-capacity.png)
 
 3. After you select **Save**, you should see a diamond next to the app workspace name.
 
-    ![App workspace tied to a capacity](media/embed-paginated-reports-for-your-organization/diamond.png)
+    ![App workspace tied to a capacity](media/embed-paginated-reports-organization/diamond.png)
 
 ## Admin settings
 
