@@ -18,7 +18,7 @@ When you embed a paginated report, you can control which data is displayed. This
 This feature provides a secure way of displaying a subset of the data, in a way that doesn't compromise the rest of data. It resembles the [Row Level Security (RLS)](embedded-row-level-security.md) feature, which provides a secure way of displaying data in Power BI reports (that are not paginated), dashboards, tiles, and datasets.  
 
 > [!Note]
-> This feature works with [embedding paginated reports for customers](embedded-paginated-reports-customers.md).
+> This feature works with embedding paginated reports for customers.
 
 ## Configuring a parameter to filter the dataset
 
