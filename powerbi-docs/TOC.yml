@@ -727,6 +727,12 @@
         href: service-cognitive-services.md   
       - name: "Automated Machine Learning in Power BI"
         href: service-machine-learning-automated.md
+    - name: Protect your data
+      items: 
+      - name: "Data protection overview"
+        href: admin/service-security-data-protection-overview.md
+      - name: "Apply sensitivity labels"
+        href: designer/service-security-apply-data-sensitivity-labels.md 
     - name: "Data lineage"
       href: service-data-lineage.md
     - name: Paginated reports in Power BI
