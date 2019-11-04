@@ -9,7 +9,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 04/11/2019
+ms.date: 11/04/2019
 #Customer intent: As an ISV developer, I want to embed a Power BI paginated report into an application so that my customers can share data.
 ---
 
