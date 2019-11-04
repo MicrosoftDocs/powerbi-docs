@@ -19,12 +19,32 @@ For related "What's New" information, see:
 * [What's new in Power BI Desktop](../../desktop-latest-update.md)  
 * [What's new in the Power BI service](../../service-whats-new.md)  
 
+## October 2019
+
+### Cross-report drillthrough
+
+This month we've added support for cross-drillthrough. Now you can tap on a data point to drill through to access other reports and report pages. When you drill through to a target page, the content in that page is filtered based on the drillthrough settings. [Learn more about cross-report drillthrough](https://docs.microsoft.com/power-bi/desktop-cross-report-drill-through).
+
+> [!NOTE]
+> Cross-report drillthrough is only available if it was enabled during report creation.
+
+
+### Data sensitivity labels
+
+Sensitivity labels are set by content owners to classify the sensitivity of their data in reports, dashboards, datasets, and dataflows. Sensitivity labels determine how content can be shared with other users.
+
+![Power BI Mobile sensitivity labels](./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-sensitivity-labels.png)
+
+### Support for custom app navigation (Windows)
+
+Power BI Mobile now supports custom app navigation on Windows devices in addition to iOS and Android. See [September's What new entry](#september-2019).
+
 ## September 2019
 
 ### Support for custom app navigation (iOS and Android)
 
 We've added support for custom app navigation. Now, when you open an app in Power BI Mobile, the custom navigation experience built by the app creator will be available. App navigation can be organized by content, and can include new items such as links and collapsible sections.
-Read more about [custom navigation](https://powerbi.microsoft.com/en-us/blog/designing-custom-navigation-for-power-bi-apps-is-now-available/).
+Read more about [custom navigation](https://powerbi.microsoft.com/blog/designing-custom-navigation-for-power-bi-apps-is-now-available/).
 
 ## August 2019
 
