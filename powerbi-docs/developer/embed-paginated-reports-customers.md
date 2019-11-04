@@ -9,7 +9,7 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 04/02/2019
+ms.date: 04/11/2019
 #Customer intent: As an ISV developer, I want to embed a Power BI paginated report into an application so that my customers can share data.
 ---
 
@@ -46,7 +46,7 @@ As you're using a [service principal](embed-service-principal.md) to sign into y
 ### Create a dedicated capacity
 
 Before you import or upload a paginated report to embed, the workspace containing the report must be assigned to at least an A4 or P1 capacity. There are two types of capacity you can choose from:
-* **Power BI Premium** - For embedding a paginated report, a *P* SKU capacity is required. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more informtion regarding this subscription, see [What is Power BI Premium?](../service-premium-what-is.md)
+* **Power BI Premium** - For embedding a paginated report, a *P* SKU capacity is required. When embedding Power BI content, this solution is referred to as *Power BI embedding*. For more information regarding this subscription, see [What is Power BI Premium?](../service-premium-what-is.md)
 * **Azure Power BI Embedded** - You can purchase a dedicated capacity from the [Microsoft Azure portal](https://portal.azure.com). This subscription uses the *A* SKUs. For embedding paginated reports you need at least an *A4* subscription. For details on how to create a Power BI Embedded capacity, see [Create Power BI Embedded capacity in the Azure portal](azure-pbie-create-capacity.md).
 
 The table below describes the resources and limits of each SKU. To determine which capacity best fits your needs, see the [which SKU should I purchase for my scenario](https://docs.microsoft.com/power-bi/developer/embedded-faq#power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario) table.
@@ -94,8 +94,6 @@ Follow the steps below to start embedding your content using the sample applicat
     > [!Note]
     > The default **AuthenticationType** in this sample is MasterUser. Make sure you change it to **ServicePrincipal**. 
 
-
-   </center>
 
     ![Web Config file](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 

@@ -8,7 +8,7 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/10/2019 
+ms.date: 04/11/2019 
 ---
 
 # Implementing row-level security in embedded paginated reports
