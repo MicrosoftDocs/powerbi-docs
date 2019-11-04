@@ -88,7 +88,7 @@ When drilling with geo-hierarchies, it is important to know how each drill butto
 ## Next steps
 [Drill down in a Power BI visualization](../consumer/end-user-drill.md)
 
-[Power Bi visualizations](power-bi-report-visualizations.md)
+[Power BI visualizations](power-bi-report-visualizations.md)
 
 More questions? [Try the Power BI Community](http://community.powerbi.com/)
 

@@ -155,17 +155,17 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 
 - Export using *Underlying data* won't work if:
 
-  - The data source is an Azure Analysis Services live connection or a SQL Server Analysis Services live connection.
+  - the data source is an Azure Analysis Services live connection or a SQL Server Analysis Services live connection.
 
-  - The version is older than 2016.
+  - the version is older than 2016.
 
-  - The tables in the model don't have a unique key.
+  - the tables in the model don't have a unique key.
     
-  -  If an administrator or report designer has disabled this feature.
+  -  an administrator or report designer has disabled this feature.
 
 - Export using *Underlying data* won't work if you enable the *Show items with no data* option for the visualization Power BI is exporting.
 
-- When using DirectQuery, the maximum amount of data that Power BI can export is 16 MB uncompressed data. An unintended result may be that you export less than the maximum number of rows. This is likely if:
+- When using DirectQuery, the maximum amount of data that Power BI can export is 16-MB uncompressed data. An unintended result may be that you export less than the maximum number of rows. This is likely if:
 
     - There are many columns.
 

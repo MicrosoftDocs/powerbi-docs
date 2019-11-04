@@ -17,7 +17,7 @@ LocalizationGroup: Visualizations
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
-Report designers and owners can move and resize visualizations. If you're working in the Power BI service, (app.powerbi.com) you'll need to open the report in [Editing view](../service-interact-with-a-report-in-editing-view.md). 
+Report designers and owners can move and resize visualizations. If you're working in the Power BI service (app.powerbi.com) you'll need to open the report in [Editing view](../service-interact-with-a-report-in-editing-view.md). 
 
 ## Open the report
 In Power BI Desktop, open a report that has at least one visualization, or [create a new visualization](power-bi-report-add-visualizations-i.md). 
@@ -27,7 +27,7 @@ In Power BI Desktop, open a report that has at least one visualization, or [crea
 
 ## Resize the visualization
 * Select the visualization to display the border and click and drag the dark frame handles to resize.  
-  ![short video showinghow to resize](media/power-bi-visualization-move-and-resize/untitled.gif)
+  ![short video showing how to resize](media/power-bi-visualization-move-and-resize/untitled.gif)
 
 ## Select Focus mode to see more detail.
 * Hover over the visualization and select the Focus mode icon.

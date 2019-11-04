@@ -14,7 +14,7 @@ ms.author: mihart
 
 ---
 # Interacting with ArcGIS maps in Power BI
-This topic is written from the point of view of a person *consuming* an ArcGIS map in Power BI service, Desktop, or mobile. Once a creator shares an ArcGIS map with you, there are many ways to interact with that map.  To learn more about creating an ArcGIS map, see [ArcGIS maps by esri tutorial](../visuals/power-bi-visualization-arcgis.md).
+This topic is written from the point of view of a person using an ArcGIS map in the Power BI service, Desktop, or mobile. Once a creator shares an ArcGIS map with you, there are many ways to interact with that map.  To learn more about creating an ArcGIS map, see [ArcGIS maps by esri tutorial](../visuals/power-bi-visualization-arcgis.md).
 
 The combination of ArcGIS maps and Power BI takes mapping beyond the presentation of points on a map to a whole new level. The available options for base maps, location types, themes, symbol styles, and reference layers creates gorgeous informative map visualizations. The combination of authoritative data layers (such as census data) on a map with spatial analysis conveys a deeper understanding of the data in your visualization.
 
@@ -50,7 +50,7 @@ ArcGIS Maps for Power BI allows three selection modes. A maximum of 250 data poi
 <br/>
 
 ## Interacting with an ArcGIS map
-The features available to you depend on whether you are the *creator* (person who made the map) or the *consumer* (someone shared an ArcGIS map with you). If you are interacting with an ArcGIS map as a consumer (aka [Reading view](../consumer/end-user-reading-view.md), here are the actions available to you.
+The features available to you depend on whether you are the *creator* (person who made the map) or the *consumer* (someone shared an ArcGIS map with you). If you are interacting with an ArcGIS map as a consumer (also known as [Reading view](../consumer/end-user-reading-view.md), here are the actions available to you.
 
 * If you are a Premium consumer with *view* permissions, you'll be able to [view the data used to create the visualization](../consumer/end-user-show-data.md) , [subscribe](../consumer/end-user-subscribe.md), see the map in [Focus mode and full screen mode](../consumer/end-user-focus.md), [view related content](../consumer/end-user-related.md), [interact with the filters](../consumer/end-user-report-filter.md) set by the *report creator*, [Share the report](../service-share-reports.md), and more.
 
@@ -79,7 +79,7 @@ The features available to you depend on whether you are the *creator* (person wh
   > 
 * If the creator has added an Infographics layer to the ArcGIS map, you'll see additional data displayed in the upper-right corner of the map.  For example, here the map creator added "Children under 14."
   
-    ![map with an Inforgraphics layer](media/power-bi-visualizations-arcgis/power-bi-demographics.png)
+    ![map with an Infographics layer](media/power-bi-visualizations-arcgis/power-bi-demographics.png)
 
 ## Considerations and Limitations
 ArcGIS Maps for Power BI is available in the following services and applications:

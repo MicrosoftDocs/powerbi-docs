@@ -88,7 +88,7 @@ Open the dashboard by selecting the dashboard name.
    
    ![mark as favorite](./media/end-user-experience/power-bi-report-favorite.png)
 
-3. Open the **Favorites** *pane*, by selecting **Favorites** from the left navpane or by selecting the star icon ![sreenshot showing a yellow star icon](media/end-user-experience/powerbi-star-icon.png).
+3. Open the **Favorites** *pane*, by selecting **Favorites** from the left navpane or by selecting the star icon ![screenshot showing a yellow star icon](media/end-user-experience/powerbi-star-icon.png).
    
    ![open Favorites screen](./media/end-user-experience/power-bi-favorite-pane.png)
    
