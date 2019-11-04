@@ -89,7 +89,7 @@ The recommended approach to capturing a trace to help diagnose a potential perfo
 - Open SQL Server Profiler and examine the trace, as described earlier. Remember that the trace file will be deleted upon closing Power BI Desktop. Also, further actions in Power BI Desktop will not immediately appear—the trace file should be closed and reopened to see the new events.
 - Keep individual sessions reasonably small (10 seconds of actions, not hundreds) to make it easier to interpret the trace file (and because there is a limit on the size of the trace file, thus for long sessions there is a chance of early events being dropped).
 
-## Understand the form of query sent by Power BI Desktop
+## Understand queries sent to the source
 
 The general format of queries generated and sent by Power BI Desktop use subqueries for each of the model tables referenced, where the subquery is defined by the Power Query query. For example, assume the following TPC-DS tables in a SQL Server relational database:
 
