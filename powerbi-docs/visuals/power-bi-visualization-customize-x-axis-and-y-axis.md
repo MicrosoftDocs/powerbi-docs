@@ -163,7 +163,7 @@ After all these customizations, your column chart should look something like thi
 
 ## Customizing visualizations with dual Y axes
 
-Some visualizations can benefit from having two Y axes. Combo charts are a good example. Before we can format dual Y axes, we'll create a combo chart that cpmpares trends for sales and gross margin.  
+Some visualizations can benefit from having two Y axes. Combo charts are a good example. Before we can format dual Y axes, we'll create a combo chart that compares trends for sales and gross margin.  
 
 ### Create a chart with two Y-Axes
 
