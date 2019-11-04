@@ -1,6 +1,6 @@
 ---
 title: Create Power BI visuals using R
-description: Create Power BI visuals using R
+description: With Power BI Desktop, you can use the R engine to visualize your data.
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/30/2019
+ms.date: 11/04/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -17,18 +17,16 @@ LocalizationGroup: Create reports
 With Power BI Desktop, you can use *R* to visualize your data. [R](https://mran.revolutionanalytics.com/documents/what-is-r) is a language and environment for statistical computing and graphics.
 
 ## Install R
-Power BI Desktop doesn't include, deploy, or install the R engine by default. To run R scripts in Power BI Desktop, you must separately install R on your local computer. You can download and install R for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). The current release of R scripting in Power BI Desktop supports Unicode characters as well as spaces (empty characters) in the installation path.
+By default, Power BI Desktop doesn't include, deploy, or install the R engine. To run R scripts in Power BI Desktop, you must separately install R on your local computer. You can download and install R for free from many locations, including the [Revolution Open download page](https://mran.revolutionanalytics.com/download/), and the [CRAN Repository](https://cran.r-project.org/bin/windows/base/). The current release of R scripting in Power BI Desktop supports Unicode characters as well as spaces (empty characters) in the installation path.
 
 ## Enable R visuals in Power BI Desktop
 After you've installed R, Power BI Desktop enables it automatically. To verify that Power BI Desktop has enabled R in the correct location, follow these steps: 
 
 1. From the Power BI Desktop menu, select **File** > **Options and settings** > **Options**. 
 
-   The **Options** page appears.
+2. On the left side of the **Options** page, under **Global**, select **R scripting**. 
 
-2. On the left pane of the **Options** page, under **Global**, select **R scripting**. 
-
-3. On the **R script options** pane, verify that your local R installation is specified in **Detected R home directories**. Make sure the path it displays properly reflects the local R installation you want Power BI Desktop to use. In the following image, the path to the local installation of R is **C:\Program Files\R Open\R-3.5.3\\**.
+3. Under **R script options**, verify that your local R installation is specified in **Detected R home directories** and that it properly reflects the local R installation you want Power BI Desktop to use. In the following image, the path to the local installation of R is **C:\Program Files\R Open\R-3.5.3\\**.
    
    ![R script options page](media/desktop-r-visuals/r-visuals-2.png)
 
@@ -51,7 +49,7 @@ After you've verified your R installation, you’re ready to begin creating R vi
    
    ![R script editor](media/desktop-r-visuals/r-visuals-4.png)
 
-3. In the **Values** section of the **Visualization** pane, add fields from the **Fields** pane that you want to consume in your R script, just as you would with any other Power BI Desktop visual. 
+3. In the **Values** section of the **Visualization** pane, drag fields from the **Fields** pane that you want to consume in your R script, just as you would with any other Power BI Desktop visual. Alternatively, you can also select the fields directly in the **Fields** pane.
     
     Only fields that you've added to the **Values** section are available to your R script. You can add new fields or remove unneeded fields from the **Values** section while working on your R script in the **R script editor**. Power BI Desktop automatically detects which fields you've added or removed.
    
@@ -74,13 +72,13 @@ After you've verified your R installation, you’re ready to begin creating R vi
    ![R script editor code](media/desktop-r-visuals/r-visuals-5.png)
    
    > [!TIP]
-   > In certain cases, you may not want automatic grouping to occur, or you may want all rows to appear, including duplicates. In that case, you can add an index field to your dataset that causes all rows to be considered unique and which prevents grouping.
+   > In certain cases, you may not want automatic grouping to occur, or you may want all rows to appear, including duplicates. In that case, add an index field to your dataset, which causes all rows to be considered unique and prevents grouping.
    > 
    > 
    
-   The generated dataframe is named **dataset**, and you can access selected columns by their respective names. For example, access the gear field by adding *dataset$gear* to your R script. For fields with spaces or special characters, use single quotes.
+   The generated dataframe is named **dataset**, and you access selected columns by their respective names. For example, access the gear field by adding *dataset$gear* to your R script. For fields with spaces or special characters, use single quotes.
 
-5. With the dataframe automatically generated by the fields you selected, you’re ready to write an R script that Power BI Desktop plots to the R default device. After you've completed the script, select **Run script** on the right side of the **R script editor** title bar.
+5. With the dataframe automatically generated by the fields you selected, you’re ready to write an R script, which Power BI Desktop plots to the R default device. After you've completed the script, select **Run script** on the right side of the **R script editor** title bar.
    
     When you select **Run script**, Power BI Desktop identifies the plot and presents it on the canvas. Because the process is executed on your local R installation, make sure the required R packages are installed.
    
@@ -95,9 +93,9 @@ After you've verified your R installation, you’re ready to begin creating R vi
 
 6. To get a larger view of the visualizations, minimize the **R script editor**. Like other visuals in Power BI Desktop, you can cross filter the correlation plot by selecting a specific section (such as sports cars) in the donut-shaped visual (the round visual on the right).
 
-    !Larger visualization view](media/desktop-r-visuals/r-visuals-7.png)
+    ![Larger visualization view](media/desktop-r-visuals/r-visuals-7.png)
 
-7. You can also modify the R script to customize the visual, and take advantage of the power of R by adding parameters to the plotting command.
+7. Modify the R script to customize the visual, and take advantage of the power of R by adding parameters to the plotting command.
 
     The original plotting command is:
 
@@ -105,7 +103,7 @@ After you've verified your R installation, you’re ready to begin creating R vi
     corrplot(M, method = "color",  tl.cex=0.6, tl.srt = 45, tl.col = "black")
     ```
 
-    With a few changes in the R script, the plotting command is:
+    Change the R script so that the plotting command is as follows:
 
     ```
     corrplot(M, method = "circle", tl.cex=0.6, tl.srt = 45, tl.col = "black", type= "upper", order="hclust")
@@ -119,19 +117,25 @@ After you've verified your R installation, you’re ready to begin creating R vi
 
     ![R visual error](media/desktop-r-visuals/r-visuals-9.png)
 
-    > **R scripts security:** R visuals are created from R scripts, which might contain code with security or privacy risks. When attempting to view or interact with an R visual for the first time, a user is presented with a security warning message. Only enable R visuals if you trust the author and source, or after you review and understand the R script.
-    > 
-    > 
+## R scripts security 
+R visuals are created from R scripts, which might contain code with security or privacy risks. When attempting to view or interact with an R visual for the first time, a user is presented with a security warning message. Only enable R visuals if you trust the author and source, or after you review and understand the R script.
+
 
 ## Known limitations
 R visuals in Power BI Desktop have the following limitations:
 
 * Data sizes: Data used by an R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image.
+
 * Calculation times: If an R visual calculation exceeds five minutes, it causes a time-out error.
+
 * Relationships: As with other Power BI Desktop visuals, if data fields from different tables with no defined relationship between them are selected, an error occurs.
-* Refreshing: R visuals are refreshed upon data updates, filtering, and highlighting. However, the image itself isn't interactive and can't be the source of cross-filtering.
-* Highlighting: R visuals respond if you highlight other visuals, but you can't click on elements in the R visual to cross filter other elements.
+
+* Refreshes: R visuals are refreshed upon data updates, filtering, and highlighting. However, the image itself isn't interactive and can't be the source of cross-filtering.
+
+* Highlights: R visuals respond if you highlight other visuals, but you can't select elements in the R visual to cross filter other elements.
+
 * Display devices: Only plots that are plotted to the R default display device are displayed correctly on the canvas. Avoid explicitly using a different R display device.
+
 * RRO installations: In this release, the 32-bit version of Power BI Desktop doesn't automatically identify RRO installations; you must manually provide the path to the R installation directory in **Options and settings** > **Options** > **R Scripting**.
 
 ## Next steps
