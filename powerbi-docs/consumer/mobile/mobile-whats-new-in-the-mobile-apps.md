@@ -1,15 +1,15 @@
 ---
 title: What's new in the mobile apps for Power BI
 description: What's new in the mobile apps for Power BI
-author: mshenhav
-manager: kfile
+author: paulinbar
+manager: rkarlin
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
-ms.author: mshenhav
+ms.author: painbar
 
 ---
 # What's new in the mobile apps for Power BI
@@ -23,7 +23,7 @@ For related "What's New" information, see:
 
 ### Cross-report drillthrough
 
-This month we've added support for cross-drillthrough. Now you can tap on a data point to drill through to access other reports and report pages. When you drill through to a target page, the content in that page is filtered based on the drillthrough settings. [Learn more about cross-report drillthrough](https://docs.microsoft.com/power-bi/desktop-cross-report-drill-through).
+This month we've added support for cross-report drillthrough. You can now tap on a data point to drill through to access other reports and report pages. When you drill through to a target page, the content in that page is filtered based on the drillthrough settings. [Learn more about cross-report drillthrough](https://docs.microsoft.com/power-bi/desktop-cross-report-drill-through).
 
 > [!NOTE]
 > Cross-report drillthrough is only available if it was enabled during report creation.
@@ -31,13 +31,11 @@ This month we've added support for cross-drillthrough. Now you can tap on a data
 
 ### Data sensitivity labels
 
-Sensitivity labels are set by content owners to classify the sensitivity of their data in reports, dashboards, datasets, and dataflows. Sensitivity labels determine how content can be shared with other users.
-
-![Power BI Mobile sensitivity labels](./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-sensitivity-labels.png)
+You can now see sensitivity labels that content owners have set on reports, dashboards, datasets, and dataflows to classify the sensitivity of their data. Sensitivity labels determine how content can be shared with other users. [Learn more about data sensitivity labels in Power BI](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview).
 
 ### Support for custom app navigation (Windows)
 
-Power BI Mobile now supports custom app navigation on Windows devices in addition to iOS and Android. See [September's What new entry](#september-2019).
+Support for custom app navigation has now been added for Windows devices in addition to iOS and Android (see [September's What's new entry](#september-2019)).
 
 ## September 2019
 
