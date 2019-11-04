@@ -23,10 +23,10 @@ For related "What's New" information, see:
 
 ### Cross-report drillthrough
 
-This month we've added support for cross-report drillthrough. You can now tap on a data point to drill through to access other reports and report pages. When you drill through to a target page, the content in that page is filtered based on the drillthrough settings. [Learn more about cross-report drillthrough](https://docs.microsoft.com/power-bi/desktop-cross-report-drill-through).
+This month we've added support for cross-report drillthrough. You can now tap on a data point to drill through to access other reports and report pages. When you drill through to a target page, the content in that page is filtered based on the drillthrough settings.
 
 > [!NOTE]
-> Cross-report drillthrough is only available if it was enabled during report creation.
+> Cross-report drillthrough is only available if it was enabled during report creation. [Learn more about cross-report drillthrough](https://docs.microsoft.com/power-bi/desktop-cross-report-drill-through).
 
 
 ### Data sensitivity labels
