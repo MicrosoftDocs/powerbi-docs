@@ -27,7 +27,7 @@ Here are some of the things you can do with the Power BI APIs.
 | Authenticate to Power BI. | [Authenticate to Power BI ](get-azuread-access-token.md) |
 
 > [!NOTE]
-> The Power BI APIs still refer to app workspaces as groups. Any references to groups mean that you are working with app workspaces.
+> The Power BI APIs still refer to workspaces as groups. Any references to groups mean that you are working with workspaces.
 
 ## API Developer tools
 

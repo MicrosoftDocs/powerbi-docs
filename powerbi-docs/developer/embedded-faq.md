@@ -62,7 +62,7 @@ Here is a partial list of feature differences.
 | Feature | Power BI Embedded | Power BI Premium Capacity | Power BI Premium Capacity |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
 |   | A SKUs-Azure capacity | EM SKUs-O365 capacity | P SKUs-O365 capacity |
-| Embed artifacts from a Power BI App workspace | Yes | Yes | Yes |
+| Embed artifacts from a Power BI workspace | Yes | Yes | Yes |
 | Consume Power BI reports in an embedded application - SaaS | No | Yes | Yes |
 | Consume Power BI reports in an embedded application - PaaS | Yes | Yes | Yes |
 | Consume Power BI reports in SharePoint | No | Yes | Yes |
@@ -141,7 +141,7 @@ Yes, there are Powershell cmdlets and Azure Resource Manager REST APIs you can u
 
 ### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
 
-To [promote your solution to production](embed-sample-for-customers.md#move-to-production), you need to assign the Power BI content (app workspace) your application uses to a Power BI Embedded (A SKU) capacity.
+To [promote your solution to production](embed-sample-for-customers.md#move-to-production), you need to assign the Power BI content (workspace) your application uses to a Power BI Embedded (A SKU) capacity.
 
 ### In what Azure regions is PBI Embedded available?
 

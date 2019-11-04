@@ -1,6 +1,6 @@
 ---
 title: Manage data storage in your workspaces
-description: Learn how you can manage data storage in your individual or app workspace to make sure you can continue to publish reports and datasets.
+description: Learn how you can manage data storage in your individual or workspace to make sure you can continue to publish reports and datasets.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -15,15 +15,15 @@ LocalizationGroup: Administration
 ---
 # Manage data storage in Power BI workspaces
 
-Learn how you can manage data storage in your individual or app workspace to make sure you can continue to publish reports and datasets.
+Learn how you can manage data storage in your individual or workspace to make sure you can continue to publish reports and datasets.
 
-Users and app workspaces have their own data capacities:
+Users and workspaces have their own data capacities:
 
 * All users have a maximum 10 GB of data storage.
-* Users with a Power BI Pro license can create app workspaces, with a maximum 10 GB of data storage each.
-* An app workspace in a Premium capacity doesn't count toward the storage of a Power BI Pro user.
+* Users with a Power BI Pro license can create workspaces, with a maximum 10 GB of data storage each.
+* A workspace in a Premium capacity doesn't count toward the storage of a Power BI Pro user.
 
-At the tenant level, total usage can’t exceed 10 GB per Pro user across all Pro users and app workspaces in the tenant.
+At the tenant level, total usage can’t exceed 10 GB per Pro user across all Pro users and workspaces in the tenant.
 
 Read about other features of the [Power BI pricing model](https://powerbi.microsoft.com/pricing).
 
@@ -58,15 +58,15 @@ See how much data storage you’re using in your Power BI account, and manage yo
 
 Keep in mind that you or someone else may have reports and dashboards based on a dataset. If you delete the dataset, those reports and dashboards won’t work anymore.
 
-## Manage your app workspace
-1. Select the arrow next to **Workspaces** \> select the name of the app workspace.
+## Manage your workspace
+1. Select the arrow next to **Workspaces** \> select the name of the workspace.
    
-    ![Select an app workspace](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
+    ![Select a workspace](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
 2. Select the gear icon ![gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in the upper-right corner \> **Manage group storage**.
    
     The top bar shows how much of the group’s storage limit is used.
    
-    ![Manage app workspace storage](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
+    ![Manage workspace storage](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
    
     The datasets and reports are separated onto two tabs:
    
@@ -75,7 +75,7 @@ Keep in mind that you or someone else may have reports and dashboards based on a
 3. To delete a dataset or report, select the trash can icon ![trash can icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
    
    > [!NOTE]
-   > Any member, with edit permissions, of an app workspace has permissions to delete datasets and reports from the app workspace.
+   > Any member, with edit permissions, of a workspace has permissions to delete datasets and reports from the workspace.
    > 
    > 
 
