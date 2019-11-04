@@ -15,7 +15,7 @@ LocalizationGroup: Visualizations
 
 # Export data from visualizations
 
-If you'd like to see the data that Power BI uses to create a visualization, [you can display that data in Power BI](service-reports-show-data.md). You can also export that data to Excel as an *.xlsx* or *.csv* file. The option to export the data requires a Pro or Premium license and edit permissions to the dataset and report.
+If you'd like to see the data that Power BI uses to create a visualization, [you can display that data in Power BI](service-reports-show-data.md). You can also export that data to Excel as an *.xlsx* or *.csv* file. The option to export the data requires a Pro or Premium license and edit permissions to the dataset and report. <!--If you have access to the dashboard or report but the data is classified as *highly confidential*, Power BI will not allow you to export the data.-->
 
 Watch Will export the data from one of the visualizations in his report, save it as an *.xlsx* file, and open it in Excel. Then follow the step-by-step instructions below the video to try it out yourself.
 
@@ -147,7 +147,7 @@ It's important to note that if the Power BI admin portal settings conflict with 
 ## Limitations and considerations
 These limitations and considerations apply to Power BI Desktop and the Power BI service, including Power BI Pro and Premium.
 
-- To export the data from a visual, you need to have [Build permission for the underlying dataset](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
+- To export the data from a visual, you need to have [Build permission for the underlying dataset](https://docs.microsoft.com/power-bi/service-datasets-build-permissions).
 
 -  The maximum number of rows that **Power BI Desktop** and **Power BI service** can export from an **import mode report** to a *.csv* file is 30,000.
 
@@ -155,17 +155,17 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 
 - Export using *Underlying data* won't work if:
 
-  - The data source is an Analysis Services live connection.
+  - the data source is an Azure Analysis Services live connection or a SQL Server Analysis Services live connection.
 
-  - The version is older than 2016.
+  - the version is older than 2016.
 
-  - The tables in the model don't have a unique key.
+  - the tables in the model don't have a unique key.
     
-  -  If an administrator or report designer has disabled this feature.
+  -  an administrator or report designer has disabled this feature.
 
 - Export using *Underlying data* won't work if you enable the *Show items with no data* option for the visualization Power BI is exporting.
 
-- When using DirectQuery, the maximum amount of data that Power BI can export is 16 MB uncompressed data. An unintended result may be that you export less than the maximum number of rows. This is likely if:
+- When using DirectQuery, the maximum amount of data that Power BI can export is 16-MB uncompressed data. An unintended result may be that you export less than the maximum number of rows. This is likely if:
 
     - There are many columns.
 
