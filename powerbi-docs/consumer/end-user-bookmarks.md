@@ -1,13 +1,13 @@
 ---
 title: Overview of bookmarks in Power BI service reports
-description: Documentation overview topic for Power BI Q&A natural language queries.
+description: Documentation overview topic for bookmarks in the Power BI service.
 author: mihart
 manager: kvivek
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/18/2019
+ms.date: 10/31/2019
 ms.author: mihart
 
 LocalizationGroup: Create reports
