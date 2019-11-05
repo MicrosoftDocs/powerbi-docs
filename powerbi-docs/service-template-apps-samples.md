@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 10/31/2019
 ms.author: tebercov
 ---
 
@@ -24,7 +24,6 @@ The samples might require additional user accounts with the relevant service own
 
 * [Github](https://templateapps.blob.core.windows.net/sampletemplateapps/GitHub.pbix)
 * [Mailchimp](https://templateapps.blob.core.windows.net/sampletemplateapps/MailChimp.pbix)
-* [JIRA](https://templateapps.blob.core.windows.net/sampletemplateapps/JIRA.pbix)
 * [QuickBooks Online](https://templateapps.blob.core.windows.net/sampletemplateapps/QuickBooksOnline.pbix)
 * [Google Analytics](https://templateapps.blob.core.windows.net/sampletemplateapps/GoogleAnalytics.pbix)
 * [Salesforce Sales Manager](https://templateapps.blob.core.windows.net/sampletemplateapps/SalesforceSalesManager.pbix)

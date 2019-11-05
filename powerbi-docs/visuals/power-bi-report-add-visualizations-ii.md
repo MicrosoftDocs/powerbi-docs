@@ -55,7 +55,7 @@ Create a visualization by selecting a field from the **Fields** pane. The type o
 
 5. [Resize the visualization](power-bi-visualization-move-and-resize.md) by selecting the visualization, grabbing one of the outline circles and dragging. Make it wide enough to eliminate the scrollbar and small enough to give us enough room to add another visualization.
    
-   ![](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
+   ![screenshot of area chart visual](media/power-bi-report-add-visualizations-ii/pbi_part2_7b.png)
 6. [Save the report](../service-report-save.md).
 
 ### Add a map visualization that looks at sales by location
@@ -64,7 +64,7 @@ Create a visualization by selecting a field from the **Fields** pane. The type o
    ![Area chart](media/power-bi-report-add-visualizations-ii/power-bi-map1.png)
 
 2. Add a legend.  To see the data by store name, drag **Store** > **Chain** into the Legend area.  
-   ![](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
+   ![report canvas with arrow from Chain in fields list to Chain in Legend bucket](media/power-bi-report-add-visualizations-ii/power-bi-chain.png)
 
 ## Next steps
 * More about [Visualizations in Power BI reports](power-bi-report-visualizations.md).  

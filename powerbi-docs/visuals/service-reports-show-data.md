@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/26/2018
+ms.date: 10/31/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -32,7 +32,7 @@ You can also export the data that is being used to create the visualization as a
 3. By default, the data displays below the visual.
    
    ![visual and data vertical display](media/service-reports-show-data/power-bi-explore-show-data.png)
-4. To change the orientation, select vertical layout ![](media/service-reports-show-data/power-bi-vertical-icon-new.png) from the top-right corner of the visualization.
+4. To change the orientation, select vertical layout ![small screenshot of icon used to change to vertical layout](media/service-reports-show-data/power-bi-vertical-icon-new.png) from the top-right corner of the visualization.
    
    ![visual and data horizontal display](media/service-reports-show-data/power-bi-explore-show-data2.png)
 5. To export the data to a .csv file, select the ellipses and choose **Export data**.

@@ -41,7 +41,7 @@ If you don’t have an Azure subscription, create a [free account](https://azure
 
 Before you start embedding reports, dashboard, or tiles into your application, you need to make sure your environment allows for embedding with Power BI.
 
-You can go through the [Embedding setup tool](https://aka.ms/embedsetup/UserOwnsData), so you can quickly get started and download a sample application that helps you walk through creating an environment and embedding a report. In the case of embedding a paginated report you need to assign at least a P1 capacity to the created app workspace.
+You can go through the [Embedding setup tool](https://aka.ms/embedsetup/UserOwnsData), so you can quickly get started and download a sample application that helps you walk through creating an environment and embedding a report. In the case of embedding a paginated report you need to assign at least a P1 capacity to the created workspace.
 
 If you choose to set up the environment manually, you can continue below.
 
@@ -53,13 +53,13 @@ You need to proceed with registering a **server-side web application** app. You 
 
 ## Set up your Power BI environment
 
-### Create an app workspace
+### Create a workspace
 
-If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within an app workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../service-create-workspaces.md) or the [new workspaces](../service-create-the-new-workspaces.md).
+If you're embedding reports, dashboards, or tiles for your customers, then you have to place your content within a workspace. There are different types of workspaces that you can set up: the [traditional workspaces](../service-create-workspaces.md) or the [new workspaces](../service-create-the-new-workspaces.md).
 
 ### Create and publish your Power BI reports
 
-You can create your reports and datasets by using Power BI Desktop. Then you can publish those reports to an app workspace. The end user publishing the reports needs to have a Power BI Pro license to publish to an app workspace.
+You can create your reports and datasets by using Power BI Desktop. Then you can publish those reports to a workspace. The end user publishing the reports needs to have a Power BI Pro license to publish to a workspace.
 
 1. Download the sample [Demo](https://github.com/Microsoft/powerbi-desktop-samples) from GitHub.
 
@@ -69,7 +69,7 @@ You can create your reports and datasets by using Power BI Desktop. Then you can
 
    ![Sample Power BI Desktop report](media/embed-sample-for-your-organization/embed-sample-for-your-organization-027.png)
 
-3. Publish to the app workspace.
+3. Publish to the workspace.
 
    ![Publish a Power BI Desktop report](media/embed-sample-for-your-organization/embed-sample-for-your-organization-028.png)
 
@@ -79,7 +79,7 @@ You can create your reports and datasets by using Power BI Desktop. Then you can
    
 ### Create and publish your paginated reports
 
-You can create your paginated reports by using [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Then you can [upload the report](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to an app workspace assigned to at least a P1 capacity. The end-user uploading the report must have a Power BI Pro license to publish to an app workspace.
+You can create your paginated reports by using [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Then you can [upload the report](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) to a workspace assigned to at least a P1 capacity. The end-user uploading the report must have a Power BI Pro license to publish to a workspace.
    
 ## Embed your content by using the sample application
 
@@ -126,7 +126,7 @@ To get the **applicationId**, follow these steps:
 
 ### Workspace ID
 
-Fill in the **workspaceId** information with the app workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
+Fill in the **workspaceId** information with the workspace (group) GUID from Power BI. You can get this information either from the URL when signed into the Power BI service or using Powershell.
 
 URL <br>
 
@@ -372,11 +372,11 @@ function updateEmbedReport() {
 
 ## Using a Power BI Premium dedicated capacity
 
-Now that you've completed developing your application, it's time to back your app workspace with a dedicated capacity.
+Now that you've completed developing your application, it's time to back your workspace with a dedicated capacity.
 
 ### Create a dedicated capacity
 
-By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your app workspace. For paginated reports you must back your app workspace with at least a P1 capacity. You can create a dedicated capacity by using [Power BI Premium](../service-premium-what-is.md).
+By creating a dedicated capacity, you can take advantage of having a dedicated resource for the content in your workspace. For paginated reports you must back your workspace with at least a P1 capacity. You can create a dedicated capacity by using [Power BI Premium](../service-premium-what-is.md).
 
 The following table lists the Power BI Premium SKUs available in [Microsoft Office 365](../service-admin-premium-purchase.md):
 
@@ -396,9 +396,9 @@ The following table lists the Power BI Premium SKUs available in [Microsoft Offi
 But you can't access content with a free Power BI license when you're using Powerbi.com or Power BI mobile.
 > - When you're trying to embed with Microsoft Office apps by using Powerbi.com or Power BI mobile, you can access content with a free Power BI license.
 
-### Assign an app workspace to a dedicated capacity
+### Assign a workspace to a dedicated capacity
 
-After you create a dedicated capacity, you can assign your app workspace to that dedicated capacity. To complete this process, follow these steps:
+After you create a dedicated capacity, you can assign your workspace to that dedicated capacity. To complete this process, follow these steps:
 
 1. Within the Power BI service, expand workspaces and select the ellipsis for the workspace you're using for embedding your content. Then select **Edit workspaces**.
 
@@ -408,9 +408,9 @@ After you create a dedicated capacity, you can assign your app workspace to that
 
     ![Assign a dedicated capacity](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
 
-3. After you select **Save**, you should see a diamond next to the app workspace name.
+3. After you select **Save**, you should see a diamond next to the workspace name.
 
-    ![App workspace tied to a capacity](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
+    ![workspace tied to a capacity](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
 
 ## Admin settings
 
