@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/10/2019 
 ---
 
-# Row-level security with Power BI Embedded
+# Row-level security with Power BI Embedded (preview)
 
 **Row-level security (RLS)** can be used to restrict user access to data within dashboards, tiles, reports, and datasets. Different users can work with those same artifacts all while seeing different data. Embedding supports RLS.
 
@@ -284,7 +284,7 @@ public IdentityBlob(string value);
 
 If you're calling the [REST API](/rest/api/power-bi/embedtoken/reports_generatetokeningroup#definitions), you can add identity blob inside each identity.
 
-```JSON
+```json
 {
     "accessLevel": "View",
     "identities": [

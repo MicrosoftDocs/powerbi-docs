@@ -13,7 +13,7 @@ ms.date: 11/04/2019
 #Customer intent: As an ISV developer, I want to embed a Power BI paginated report into an application so that my customers can share data.
 ---
 
-# Embed Power BI paginated reports into an application for your customers
+# Embed Power BI paginated reports into an application for your customers (preview)
 
 With **Power BI Embedded in Azure** or **Power BI embedding in Office**, you can embed paginated reports into an application using app owns data. **App owns data** is about having an application that uses Power BI as its embedded analytics platform. As an **ISV** or a **developer**, you can create Power BI content that displays paginated reports in an application that is fully integrated and interactive, without requiring users to have a Power BI license. This tutorial demonstrates how to integrate a paginated report into an application using the Power BI .NET SDK with the Power BI JavaScript API.
 
@@ -107,15 +107,15 @@ To get the **applicationId**, follow these steps:
 
 2. In the left-hand navigation pane, select **All Services**, and select **App Registrations**.
 
-    ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
+    ![App registration search](media/embed-paginated-reports-for-customers/app-registration.png)
 
 3. Select the application that needs the **applicationId**.
 
-    ![Choosing App](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
+    ![Choosing App](media/embed-paginated-reports-for-customers/display-name.png)
 
 4. There's an **Application ID** that is listed as a GUID. Use this **Application ID** as the **applicationId** for the application.
 
-    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+    ![applicationId](media/embed-paginated-reports-for-customers/application-id.png)
 
 ### Workspace ID
 
@@ -159,11 +159,11 @@ To get the **ApplicationSecret**, follow these steps:
 
 2. In the left-hand navigation pane, select **All services** and then select **App registrations**.
 
-    ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
+    ![App registration search](media/embed-paginated-reports-for-customers/app-registration.png)
 
 3. Select the application that needs to use the **ApplicationSecret**.
 
-    ![Choose an app](media/embed-sample-for-customers/embed-sample-for-customers-0038.png)
+    ![Choosing App](media/embed-paginated-reports-for-customers/display-name-2.png)
 
 4. Select **Certificates and secrets** under **Manage**.
 
@@ -171,7 +171,7 @@ To get the **ApplicationSecret**, follow these steps:
 
 6. Enter a name in the **Description** box and select a duration. Then select **Save** to get the **Value** for your application. When you close the **Keys** pane after saving the key value, the value field shows only as hidden. At that point, you aren't able to retrieve the key value. If you lose the key value, create a new one in the Azure portal.
 
-    ![Key value](media/embed-sample-for-customers/embed-sample-for-customers-042.png)
+    ![Key value](media/embed-paginated-reports-for-customers/client-secret.png)
 
 ### Tenant
 
@@ -236,7 +236,7 @@ Report report = reports.Value.FirstOrDefault();
 
 Generate an embed token, which can be used from the JavaScript API. To create an embedded token for embedding Power BI paginated reports, use the [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup) API.
 
-A sample of creating an embed token for a report, dashboard, or tile want to embed is available within the *Services\EmbedService.cs* file in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).
+A sample of creating an embed token is available within the *Services\EmbedService.cs* file in the [sample application](https://github.com/Microsoft/PowerBI-Developer-Samples).
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -268,29 +268,7 @@ Here is a sample that uses an **EmbedConfig**  for a paginated report.
 ```javascript
 <script src="~/scripts/powerbi.js"></script>
 <div id="reportContainer"></div>
-<script>
-    // Read embed application token from textbox
-    var txtAccessToken = $('#txtAccessToken').val();
-
-    // Read embed URL from textbox
-    var txtEmbedUrl = $('#txtReportEmbed').val();
-
-    // Read paginated report Id from textbox
-    var txtEmbedReportId = $('#txtEmbedReportId').val();
-
-    // Read embed type from radio
-    var tokenType = $('input:radio[name=tokenType]:checked').val();
-
-    // Get models. models contains enums that can be used.
-    var models = window['powerbi-client'].models;
-
-    // View permissions.
-    var permissions = models.Permissions.View;
-
-    // Embed configuration used to describe what and how to embed.
-    // This object is used when calling powerbi.embed.
-    // This also includes settings and options such as filters.
-    // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details
+<script> 
     var config = {
             type: 'report',
             tokenType: tokenType == '0' ? models.TokenType.Aad : models.TokenType.Embed,
@@ -299,12 +277,6 @@ Here is a sample that uses an **EmbedConfig**  for a paginated report.
             id: txtEmbedReportId,
             permissions: permissions,
     };
-
-    // Get a reference to the paginated embedded report HTML element
-    var paginatedReportContainer = $('#paginatedReportContainer')[0];
-
-    // Embed the paginated report and display it within the div container.
-    var report = powerbi.embed(paginatedReportContainer, config);
 </script>
 ```
 
