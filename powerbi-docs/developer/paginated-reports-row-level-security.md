@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 11/04/2019 
 ---
 
-# Implementing row-level security in embedded paginated reports
+# Implementing row-level security in embedded paginated reports (preview)
 
 When you embed a paginated report, you can control which data is displayed. This allows tailoring the displayed information per user. For example, if you have a Power BI paginated report that includes global sale results, you can embed it so that only the sale results from a certain region are available.
 
