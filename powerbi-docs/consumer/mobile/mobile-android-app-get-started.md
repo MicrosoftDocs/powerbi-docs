@@ -19,7 +19,7 @@ The Android app for Microsoft Power BI delivers the mobile BI experience for Pow
 
 You create Power BI reports in Power BI Desktop, and publish them:
 
-* [Publish them to the Power BI service](../../power-bi-overview.md), and create dashboards.
+* [Publish them to the Power BI service](../../fundamentals/power-bi-overview.md), and create dashboards.
 * [Publish them on premises to Power BI Report Server](../../report-server/quickstart-create-powerbi-report.md).
 
 Then in the Power BI app for Android, you interact with your dashboards and reports, whether on premises or in the cloud.
@@ -132,7 +132,7 @@ Here are some other things you can do in the Android device app for Power BI wit
 
 ### See also
 * [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
-* [What is Power BI?](../../power-bi-overview.md)
+* [What is Power BI?](../../fundamentals/power-bi-overview.md)
 * Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
 
 

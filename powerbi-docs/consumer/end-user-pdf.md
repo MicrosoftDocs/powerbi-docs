@@ -15,6 +15,9 @@ ms.author: mihart
 LocalizationGroup: Share your work
 ---
 # Export reports from Power BI to PDF
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 With Power BI, you can publish your report to PDF format and easily create a document based on your Power BI report. When you export to PDF, each page in the Power BI report becomes an individual page in your PDF document.
 
 ## Export your Power BI report to PDF

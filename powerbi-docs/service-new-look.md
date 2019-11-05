@@ -63,7 +63,7 @@ We didn't remove any of the functionality from the old look. You can find the ad
 
 ### Where are File menu actions?
 
-Looking for **File** menu actions? The actions that used to be on the **File** menu are also on the ellipsis (...) menu now. 
+Looking for **File** menu actions? The actions that used to be on the **File** menu are also on the **More options** (...) menu. 
 
 ![File menu in new look](media/service-new-look/power-bi-file-menu-new-look.gif)
 

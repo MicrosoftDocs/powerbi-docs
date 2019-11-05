@@ -67,7 +67,7 @@ If a dataset is part of one or more [organizational content packs](service-organ
 
 ### To delete a dataset
 1. In your workspace, select the **Datasets** tab.
-2. Locate the dataset to delete and select the ellipses (...).  
+2. Locate the dataset to delete and select **More options** (...).  
 
     ![Datasets tab](media/service-delete/power-bi-delete-datasetnew.png)
 3. From the dropdown, select **Delete**.
@@ -77,40 +77,41 @@ If a dataset is part of one or more [organizational content packs](service-organ
 
    ![Delete dashboard dialog](media/service-delete/power-bi-delete-dataset-confirm.png)
 
-## Delete an app workspace
+## Delete a workspace
 > [!WARNING]
-> When you create an app workspace, you create an Office 365 group. And when you delete an app workspace you delete that Office365 group. What this means is that the group will also be deleted from other O365 products like SharePoint and Microsoft Teams.
+> When you create a workspace, you create an Office 365 group. And when you delete a workspace you delete that Office365 group. What this means is that the group will also be deleted from other O365 products like SharePoint and Microsoft Teams.
 >
 >
 
-As the app workspace author, you can delete it. When you delete it, the associated app is also deleted for all group members and removed from your AppSource if you had published the app to your entire organization. Deleting an app workspace is different from leaving an app workspace.
+As the workspace author, you can delete it. When you delete it, the associated app is also deleted for all group members and removed from your AppSource if you had published the app to your entire organization. Deleting a workspace is different from leaving a workspace.
 
-### To delete an app workspace - if you are an Admin
+### To delete a workspace - if you are an Admin
 1. From the left nav, select **Workspaces**
 
-    ![App workspaces](media/service-delete/power-bi-delete-workspace.png)
-2. Select the ellipses (...) to the right of the workspace to be deleted and choose **Edit workspace**.
+2. Select **More options** (...) to the right of the workspace to be deleted and choose **Edit workspace**.
 
-   ![ellipses menu > Edit workspace](media/service-delete/power-bi-edit-workspace.png)
+    ![workspaces](media/service-delete/power-bi-delete-workspace.png)
+
 3. In the **Edit workspace** window, select **Delete workspace** > **Delete**.
 
     ![delete workspace](media/service-delete/power-bi-delete-workspace2.png)
 
-### To remove an app workspace from your list
-If you no longer want to be a member of an app workspace, you can ***leave*** it and it will be removed from your list. Leaving a workspace leaves it in place for all other workspace members.  
+### To remove a workspace from your list
+If you no longer want to be a member of a workspace, you can ***leave*** it and it will be removed from your list. Leaving a workspace leaves it in place for all other workspace members.  
 
 > [!IMPORTANT]
-> If you are the only Admin for the app workspace, Power BI will not allow you to leave.
+> If you are the only Admin for the workspace, Power BI will not allow you to leave.
 >
 >
 
-1. Start in the app workspace you'd like to remove.
-2. In the top-right corner, select the ellipses (...) and choose **Leave workspace** > **Leave**.
+1. Start in the workspace you'd like to remove.
+
+2. In the top-right corner, select **More options** (...) and choose **Leave workspace** > **Leave**.
 
       ![leave workspace](media/service-delete/power-bi-leave-workspace.png)
 
    > [!NOTE]
-   > The options you see in the dropdown depend on whether you are an Admin or Member of that app workspace.
+   > The options you see in the dropdown depend on whether you are an Admin or Member of that workspace.
    >
    >
 

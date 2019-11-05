@@ -29,10 +29,11 @@ When you open the Power BI service in a browser, you start at your Home screen. 
 3. Power BI home button
 4. Icon buttons, including settings, help, and feedback
 5. Search box
-6. Tiles from a favorite dashboard
-7. Favorite and frequent dashboards and reports
+6. Favorite and frequent dashboards, reports, and workspaces
+7. Recent dashboards, reports, and workspaces
+8. Your workspaces
 
-Your end users for your reports and dashboards have the same start experience in the Power BI service in a browser.
+You and the end users for your reports and dashboards have the same start experience in the Power BI service in a browser.
 
 We'll dig into these features later, but first let's review some Power BI concepts. Or you might want to watch this video first.  In the video, Will reviews the basic concepts and gives a tour of the Power BI service.
 
@@ -43,10 +44,10 @@ We'll dig into these features later, but first let's review some Power BI concep
 The 4 major building blocks of Power BI are: **_dashboards_**, **_reports_**, **_workbooks_**, and **_datasets_**. And they're all organized into **_workspaces_**. It's important to understand workspaces before we dig into the four building blocks, so let's start there.
 
 ## Workspaces
-Workspaces are containers for dashboards, reports, workbooks, and datasets in Power BI. There are two types of workspaces: *My workspace* and *app workspaces*. So what is an *app*? A Power BI *app* is a collection of dashboards and reports built to deliver key metrics to the Power BI end users for your organization. Apps are interactive but end users can't edit them.
+Workspaces are containers for dashboards, reports, workbooks, and datasets in Power BI. There are two types of workspaces: *My workspace* and *workspaces*. So what is an *app*? A Power BI *app* is a collection of dashboards and reports built to deliver key metrics to the Power BI end users for your organization. Apps are interactive but end users can't edit them.
 
-- *My workspace* is the personal workspace for any Power BI customer to work with your own content. Only you have access to your My workspace. You can share dashboards and reports from your My Workspace. If you want to collaborate on dashboards and reports, or create an app, then you want to work in an app workspace.      
--  *App workspaces* are used to collaborate and share content with colleagues. They are also the places where you create, publish, and manage apps for your organization. Think of them as staging areas and containers for the content that will make up a Power BI app. You can add colleagues to your app workspaces and collaborate on dashboards, reports, workbooks, and datasets. All app workspace members need Power BI Pro licenses. App consumers, the colleagues who have access to the apps, don't necessarily need Pro licenses. Read more about the [new workspaces](service-create-the-new-workspaces.md).  
+- *My workspace* is the personal workspace for any Power BI customer to work with your own content. Only you have access to your My workspace. You can share dashboards and reports from your My Workspace. If you want to collaborate on dashboards and reports, or create an app, then you want to work in a workspace.      
+-  *workspaces* are used to collaborate and share content with colleagues. They are also the places where you create, publish, and manage apps for your organization. Think of them as staging areas and containers for the content that will make up a Power BI app. You can add colleagues to your workspaces and collaborate on dashboards, reports, workbooks, and datasets. All workspace members need Power BI Pro licenses. App consumers, the colleagues who have access to the apps, don't necessarily need Pro licenses. Read more about the [new workspaces](service-create-the-new-workspaces.md).  
 
 To learn more about sharing in general, start with [Ways to share dashboards your work](service-how-to-collaborate-distribute-dashboards-reports.md).
 
@@ -57,7 +58,7 @@ A *dataset* is a collection of data that you *import* or *connect* to. Power BI 
 
 Datasets are associated with *workspaces* and a single dataset can be part of many workspaces. When you open a workspace, the associated datasets are listed under the **Datasets** tab. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we’re adding new ones all the time. See the list of [dataset types that you can use with Power BI](service-get-data.md).
 
-In the example below, I've selected the "Sales and marketing" app workspace and clicked the tab for **Datasets**.
+In the example below, I've selected the "Sales and marketing" workspace and clicked the tab for **Datasets**.
 
 ![Datasets are selected](media/service-basic-concepts/power-bi-datasets.png)
 
@@ -91,7 +92,7 @@ When you open an app, you're presented with a dashboard.  To access an underlyin
 
 By default, the report opens in Reading view.  Just select **Edit report** to open it in Editing view (if you have the necessary permissions).
 
-In the example below, I selected the "Sales and marketing" app workspace and clicked the tab for **Reports**.
+In the example below, I selected the "Sales and marketing" workspace and clicked the tab for **Reports**.
 
 ![Reports selected](media/service-basic-concepts/power-bi-reports.png)
 
@@ -191,8 +192,8 @@ Q&A looks for an answer in the dataset(s) connected to the dashboard.  A connect
 
 As soon as you start to type your question, Q&A takes you to the Q&A page. As you type, Q&A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard. For more information, see [Q&A in Power BI](power-bi-q-and-a.md).
 
-### 4. **Icon buttons**
-The icons in the upper right corner are your resource for settings, notifications, downloads, getting help, and providing feedback to the Power BI team. Select the double arrow to open the dashboard in **Full screen** mode.  
+### 4. **Icons in the black header bar**
+The icons in the upper right corner are your resource for settings, notifications, downloads, getting help, turning the **New look** on or off, and providing feedback to the Power BI team.  
 
 ![icon buttons](media/service-basic-concepts/power-bi-icons.png)
 
@@ -213,13 +214,13 @@ Selecting **Power BI** brings you back to your Power BI home.
 
    !["Power BI" in the service](media/service-basic-concepts/version-new.png)
 
-### 8. **Labeled icon buttons**
-This area of the screen contains additional options for interacting with the content (in this case, with the dashboard).  Besides the labeled icons you can see, selecting the ellipses reveals options for duplicating, printing, refreshing the dashboard and more.
+### 8. **Labeled icons in the gray menu bar**
+This area of the screen contains additional options for interacting with the content (in this case, with the dashboard).  Besides the labeled icons you can see, selecting the **More options (…)** reveals options for duplicating, printing, refreshing the dashboard and more.
 
    ![Labeled icon buttons](media/service-basic-concepts/power-bi-labeled-icons.png)
 
 ## Next steps
-- [What is Power BI?](power-bi-overview.md)  
+- [What is Power BI?](fundamentals/power-bi-overview.md)  
 - [Power BI videos](videos.md)  
 - [Report editor - take a tour](service-the-report-editor-take-a-tour.md)
 
