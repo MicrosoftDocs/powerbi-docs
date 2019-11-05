@@ -78,7 +78,7 @@ When embedding a paginated report for your customers, the [Reports GenerateToken
 
 To expose only some of the data, assign the `username` field with the information you want to be displayed. For example, in a paginated report that has a color parameter, if you enter *green* in the `username` field, the embed token will restrict the embedded data to display only the data that has the *green* value in the color column.
 
-```json
+```JSON
 {
     "accessLevel": "View",
     "reportId": "cfafbeb1-8037-4d0c-896e-a46fb27ff229",

@@ -284,7 +284,7 @@ public IdentityBlob(string value);
 
 If you're calling the [REST API](/rest/api/power-bi/embedtoken/reports_generatetokeningroup#definitions), you can add identity blob inside each identity.
 
-```json
+```JSON
 {
     "accessLevel": "View",
     "identities": [
