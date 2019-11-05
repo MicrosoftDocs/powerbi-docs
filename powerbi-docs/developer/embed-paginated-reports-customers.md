@@ -261,25 +261,6 @@ You can use JavaScript to load a paginated report into a div element on your web
 
 For a full sample of using the JavaScript API, you can use the [Playground tool](https://microsoft.github.io/PowerBI-JavaScript/demo). The Playground tool is a quick way to play with different types of Power BI Embedded samples. You can also get more Information about the JavaScript API by visiting the [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) page.
 
-Here is a sample that uses an **EmbedConfig**  for a paginated report.
-
-*A sample of adding a paginated report is available in the Views\Home\EmbedReport.cshtml file, in the  [sample application](#embed-content-using-the-sample-application).*
-
-```javascript
-<script src="~/scripts/powerbi.js"></script>
-<div id="reportContainer"></div>
-<script> 
-    var config = {
-            type: 'report',
-            tokenType: tokenType == '0' ? models.TokenType.Aad : models.TokenType.Embed,
-            accessToken: txtAccessToken,
-            embedUrl: txtEmbedUrl,
-            id: txtEmbedReportId,
-            permissions: permissions,
-    };
-</script>
-```
-
 ## Next steps
 
 In this tutorial, you've learned how to embed Power BI paginated reports into an application for your customers. You can also try to embed Power BI content for your organization.
