@@ -179,7 +179,7 @@ There are also a few known issues, as described in this section.
 
 Power BI Desktop customers cannot access dataflows stored in an **Azure Data Lake Storage Account** unless they are the owner of the dataflow, or have been authorized to the CDM folder in the lake. The scenario is as follows:
 
-1. Anna has created a new app workspace and configured it to store dataflows in the organization’s data lake. 
+1. Anna has created a new workspace and configured it to store dataflows in the organization’s data lake. 
 2. Ben, who is also a member of the workspace Anna created, would like to leverage Power BI Desktop and the dataflow connector to get data from the Dataflow Anna created.
 3. Ben receives a similar error because Ben was not authorized to the dataflow’s CDM folder in the lake.
 
