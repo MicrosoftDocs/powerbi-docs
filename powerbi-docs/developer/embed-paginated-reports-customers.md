@@ -31,7 +31,7 @@ To get started, you're required to have:
 * A [service principal (app-only token)](embed-service-principal.md)
 * A [Microsoft Azure](https://azure.microsoft.com/) subscription
 * Your own [Azure Active Directory tenant](create-an-azure-active-directory-tenant.md) setup
-* At least an A4 or a P1 [capacity](#create-a-dedicated-capacity), with paginated report workload enabled
+* At least an A4 or a P1 [capacity](#create-a-dedicated-capacity), with [paginated reports](../service-admin-premium-workloads.md#paginated-reports) workload enabled
 
 If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
