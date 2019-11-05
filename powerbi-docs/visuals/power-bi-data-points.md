@@ -3,7 +3,7 @@ title: Large datasets, data point limits, and data strategies
 description: Data limits for visuals and data reduction strategies
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: 'amac'
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -143,9 +143,9 @@ Limited to 150,000 rows. If more than 150,000 rows are selected, only the top 15
 		- Categories: Sample of 500 values
 		- Series: Top 20 values
 
-### Shape map
-The filled map can use statistics or dynamic limits. 
-- Max points: 10,000
+### Shape map (Preview)
+The shape map can use statistics or dynamic limits. 
+- Max points: 1,500
 - Categories: Top 500
 - Series (when both X and Y are present): Top 20
 

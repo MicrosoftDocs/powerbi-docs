@@ -3,11 +3,11 @@ title: Use Shape maps in Power BI Desktop (Preview)
 description: Create relative comparisons to regions using Shape maps in Power BI Desktop
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: 'amanda'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
 ---
@@ -103,7 +103,7 @@ There are a few considerations and requirements for this Preview release of **Sh
 * The **Shape Map** visual is in Preview, and must be enabled in Power BI Desktop. To enable **Shape Map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape Map Visual** checkbox.
 * Currently, you must also have the **Color saturation** bucket set in order for the **Legend** classification to work properly.
 * The final release version of **Shape Map** will have a user interface that shows the map keys of the currently selected map (there is no date set for final release, and **Shape Map** is still in Preview). In this Preview release, you can reference the map region keys in the tables found in the following **Region Keys** section of this article.
-* The **Shape Map** visual will plot up to a maximum of 1,000 data points.
+* The **Shape Map** visual will plot up to a maximum of 1,500 data points.
 
 ## Region keys
 
