@@ -19,11 +19,11 @@ LocalizationGroup: Get started
 
 ## What is the Microsoft Power BI service?
 
-The Power BI service is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of cloud-based and on-premises data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life. Read more about [Power BI](../power-bi-overview.md).
+The Power BI service is a cloud-based business analytics service that enables anyone to visualize and analyze data with greater speed, efficiency, and understanding. It connects users to a broad range of cloud-based and on-premises data through easy-to-use dashboards, interactive reports, and compelling visualizations that bring data to life. Read more about [Power BI](../fundamentals/power-bi-overview.md).
 
 ## What’s the difference between Power BI Pro and Power BI Premium?
 
-Power BI Pro is an individual license that allows access to all content and capabilities in the Power BI service. You can even share content and collaborate with other Pro users. Only Pro users can publish content to app workspaces, share dashboards, and subscribe to dashboards and reports.
+Power BI Pro is an individual license that allows access to all content and capabilities in the Power BI service. You can even share content and collaborate with other Pro users. Only Pro users can publish content to workspaces, share dashboards, and subscribe to dashboards and reports.
 
 Power BI Premium provides dedicated capacity to deliver more consistent performance. It also supports larger data volumes in Power BI. For individual users, Premium enables widespread distribution of content by Pro users and it doesn't require per-user licenses for recipients viewing the content.
 

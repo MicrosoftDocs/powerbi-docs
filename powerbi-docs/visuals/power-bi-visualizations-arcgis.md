@@ -3,7 +3,7 @@ title: Interacting with an ArcGIS map that has been shared with you
 description: 'Using ArcGis map in reading view as a Power BI report consumer'
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: 'willt'
 featuredvideoid: ''
 
 ms.service: powerbi

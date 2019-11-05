@@ -37,7 +37,7 @@ Power BI permissions give an application the ability to take certain actions on 
 An application can request permissions when it first attempts to sign in to a user's page by passing in the requested permissions in the scope parameter of the call. If the permissions are granted, an access token will be returned to the app, which can be used on future API calls. The access can only be used by a specific application.
 
 > [!NOTE]
-> The Power BI APIs still refer to app workspaces as groups. Any references to groups mean that you are working with app workspaces.
+> The Power BI APIs still refer to workspaces as groups. Any references to groups mean that you are working with workspaces.
 
 ## Requesting Permissions
 

@@ -1,4 +1,5 @@
-﻿- name: Power BI for developers
+﻿- name: "Power BI developer documentation"
+  href: index.yml
   items:
   - name: Overview
     expanded: true
@@ -70,6 +71,8 @@
         href: visuals/landing-page.md
       - name: "Launch URL" 
         href: visuals/launch-url.md
+      - name: "Local Storage API" 
+        href: visuals/local-storage.md
       - name: "Rendering events" 
         href: visuals/event-service.md
       - name: "Sorting"
@@ -99,6 +102,8 @@
         href: embed-sample-for-customers.md
       - name: "Embed content for your organization"
         href: embed-sample-for-your-organization.md
+      - name: "Embed paginated reports for customers"
+        href: embed-paginated-reports-customers.md
       - name: "Embed content for national clouds"
         href: embed-sample-for-customers-national-clouds.md
     - name: Concepts
@@ -109,6 +114,8 @@
         href: embed-service-principal.md
       - name: "Row-level security"
         href: embedded-row-level-security.md
+      - name: "Paginated reports Row-level security"
+        href: paginated-reports-row-level-security.md
       - name: "Manage multi-tenants"
         href: embed-multi-tenancy.md
       - name: "Azure diagnostic logging for Power BI Embedded"

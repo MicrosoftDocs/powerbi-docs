@@ -7,14 +7,14 @@ ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 08/21/2019
+ms.date: 10/31/2019
 ms.author: mihart
 
 LocalizationGroup: Get started
 # Customer intent: As a Power BI customer or potential customer, I want to get a definition of a Power BI consumer so I know if I am a consumer (versus admin, creator, or dev) and, as a consumer, what I can accomplish with Power BI service.
 ---
 
-# Power BI for consumers
+# The Power BI service for consumers
 
 You live in a data culture, where business decisions are based on facts, not opinions. You need data to make these decisions, and your colleagues don’t let you down.     
  

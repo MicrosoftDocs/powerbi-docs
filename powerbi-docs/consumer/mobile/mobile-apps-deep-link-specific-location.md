@@ -66,7 +66,7 @@ The **QUERY PARAMS** are:
 
 #### Links of apps and items in app
 
-For **apps and reports and dashboard that are part of an app**, the easiest way to get the link is to go to the app workspace and choose "Update app". This will open the "Publish app" experience, and in the Access tab, you will find a **Links** section. Expanding that section and you will see list of the app and all its content links that can be used to access them directly.
+For **apps and reports and dashboard that are part of an app**, the easiest way to get the link is to go to the workspace and choose "Update app". This will open the "Publish app" experience, and in the Access tab, you will find a **Links** section. Expanding that section and you will see list of the app and all its content links that can be used to access them directly.
 
 ![Power BI publish app links ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
@@ -116,5 +116,5 @@ Your feedback helps us decide what to implement in the future, so don’t forget
 * [Power BI apps for mobile devices](mobile-apps-for-mobile-devices.md)
 * Follow @MSPowerBI on Twitter
 * Join the conversation at the [Power BI Community](http://community.powerbi.com/)
-* [What is Power BI?](../../power-bi-overview.md)
+* [What is Power BI?](../../fundamentals/power-bi-overview.md)
 

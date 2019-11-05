@@ -51,7 +51,7 @@ Connect to the [Smartsheet template app](https://app.powerbi.com/groups/me/getap
 
 ## Modify and distribute your app
 
-You've installed the Smartsheet template app. That means you've also created the Smartsheet app workspace. In the workspace, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
+You've installed the Smartsheet template app. That means you've also created the Smartsheet workspace. In the workspace, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
 
 1. To view all the contents of your new Smartsheet workspace, in the left navigation bar, select **Workspaces** > **Smartsheet**. 
 

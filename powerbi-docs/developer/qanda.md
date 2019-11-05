@@ -31,8 +31,8 @@ var config= {
     accessToken: access token value,
     embedUrl:    https://app.powerbi.com/qnaEmbed (groupId to be appended as query parameter if required),
     datasetIds:  array of requested data set ids (at the moment we support only one dataset),
-    viewMode:    models.QnAMode.Interactive | models.QnAMode.ResultOnly,
-    question:    optional parameter for Explore mode (QnAMode.Interactive) and mandatory for Render Result mode (QnAMode.ResultOnly)
+    viewMode:    models.QnaMode.Interactive | models.QnaMode.ResultOnly,
+    question:    optional parameter for Explore mode (QnaMode.Interactive) and mandatory for Render Result mode (QnaMode.ResultOnly)
 };
 
 // Get a reference to the embedded QNA HTML element
