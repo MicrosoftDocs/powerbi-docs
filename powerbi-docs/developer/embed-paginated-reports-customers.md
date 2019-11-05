@@ -1,6 +1,6 @@
 ---
-title: Embedded analytics to embed Power BI paginated reports in your application for your customers
-description: Learn how to integrate or embed, a Power BI paginated report into an application using the Power BI APIs for embedded analytics for your customers.
+title: Embed Power BI paginated reports in your application for your customers
+description: Learn how to integrate or embed a Power BI paginated report into an application, using the Power BI APIs.
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
