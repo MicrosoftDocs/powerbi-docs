@@ -9,7 +9,7 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/11/2019
+ms.date: 10/30/2019
 ms.author: mihart
 
 LocalizationGroup: Consumers
@@ -26,7 +26,7 @@ If you'd like to see the data that is used to create a visual, [you can display 
 
     ![App dashboard](media/end-user-export/power-bi-dashboards.png)
 
-2. Hover over a visual to reveal the ellipses (...) and click to display the action menu.
+2. Hover over a visual to reveal **More options** (...) and click to display the action menu.
 
     ![Menu that appears when select ellipses](media/end-user-export/power-bi-action-menu.png)
 

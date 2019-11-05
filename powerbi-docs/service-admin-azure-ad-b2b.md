@@ -76,7 +76,7 @@ When using the [Allow external guest users to edit and manage content in the org
 
 ### Use Power BI Premium
 
-Assigning the app workspace to [Power BI Premium capacity](service-premium-what-is.md) lets the guest user use the app without requiring a Power BI Pro license. Power BI Premium also lets apps take advantage of other capabilities like increased refresh rates, dedicated capacity, and large model sizes.
+Assigning the workspace to [Power BI Premium capacity](service-premium-what-is.md) lets the guest user use the app without requiring a Power BI Pro license. Power BI Premium also lets apps take advantage of other capabilities like increased refresh rates, dedicated capacity, and large model sizes.
 
 ![Diagram of guest user experience with Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
@@ -108,6 +108,8 @@ To help these users sign in to Power BI, provide them with the Tenant URL. To fi
 
 * By default, external Azure AD B2B limits guests to consumption of content only. External Azure AD B2B guests can view apps, dashboards, reports, export data and create email subscriptions for dashboards and reports. They can't access workspaces or publish their own content. However, these restrictions don't apply to guest users who gain access through the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) feature.
 
+* To invite guest users a Power BI Pro license is needed. Pro Trial users can't invite guest users in Power BI.
+
 * For guest users enabled through the [Allow external guest users to edit and manage content in the organization](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) feature, some experiences aren't available to them. To update or publish reports, they need to use the Power BI service web UI, including Get Data to upload Power BI Desktop files.  The following experiences aren't supported:
     * Direct publishing from Power BI desktop to the Power BI service
     * Guest users can't use Power BI desktop to connect to service datasets in the Power BI service
@@ -122,7 +124,12 @@ To help these users sign in to Power BI, provide them with the Tenant URL. To fi
     * Guest users can't use Analyze in Excel
     * Guest users can't be @mentioned in commenting
     * Guest users can't use subscriptions
-    * Guest users who use this capability should have a work or school account. Guest users using Personal accounts will experience more limitations due to sign in restrictions.
+    * Guest users who use this capability should have a work or school account. 
+    
+* Guest users using Personal accounts will experience more limitations due to sign-in restrictions.
+    * They can use consumption experiences in the Power BI service through a web browser
+    * They can't use the Power BI Mobile apps.
+    * They won't be able to sign-in to provide credentials where a work or school account is required.
 
 * This feature isn't currently available with the Power BI SharePoint Online report web part.
 

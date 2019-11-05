@@ -108,7 +108,7 @@ To clarify how this works, let's begin with some background on [capacities and w
 
 In shared capacity, workloads run on computational resources shared with other customers. As the capacity must share resources, limitations are imposed to ensure *fair play*, such as setting a maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
-Power BI **workspaces** reside within capacities and they represent security, collaboration, and deployment containers. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces can be created to enable collaboration and deployment, and these are known as **App Workspaces**. By default, workspaces - including personal workspaces - are created in the **shared capacity**.
+Power BI **workspaces** reside within capacities and they represent security, collaboration, and deployment containers. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces can be created to enable collaboration and deployment, and these are known as **workspaces**. By default, workspaces - including personal workspaces - are created in the **shared capacity**.
 
 Here are some details for the two workspace scenarios:
 

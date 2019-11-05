@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 10/25/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -230,7 +230,7 @@ You can create a .PBIDS file to streamline the **Get Data** experience for repor
 
 When an author opens a .PBIDS file, Power BI Desktop opens and prompt the user for credentials to authenticate and connect to the data source that's specified in the file. The Navigation dialog appears, and the user must select the tables from that data source to load into the model. Users may also need to select the database(s) if one was not specified in the .PBIDS file. 
 
-From that point forward, the user can begin building visualizations or revisit *Recent sourcesU to load a new set of tables into the model. 
+From that point forward, the user can begin building visualizations or revisit *Recent sources* to load a new set of tables into the model. 
 
 Currently, .PBIDS files only support support a single data source in one file. Specifying more than one data source results in an error. 
 
@@ -360,21 +360,20 @@ The URL must point to the SharePoint site itself, and not to a list within the s
 **SQL Server**
 ```
 { 
-  “version”: “0.1”, 
-  “connections”: [ 
+  "version": "0.1", 
+  "connections": [ 
     { 
-      “details”: { 
-        “protocol”: “tds”, 
-        “address”: { 
-          “server”: “server-name-here”, 
-          “database”: “db-name-here (optional)” 
+      "details": { 
+        "protocol": "tds", 
+        "address": { 
+          "server": "server-name-here", 
+          "database": "db-name-here (optional) "
         } 
       }, 
-      “options”: {}, 
-      “mode”: “DirectQuery” 
+      "options": {}, 
+      "mode": "DirectQuery" 
     } 
   ] 
-} 
 } 
 ```
  
@@ -415,6 +414,24 @@ The URL must point to the SharePoint site itself, and not to a list within the s
 ```
  
 
+**Dataflow**
+```
+{
+  "version": "0.1",
+  "connections": [
+    {
+      "details": {
+        "protocol": "powerbi-dataflows",
+        "address": {
+          "workspace":"workspace id (Guid)",
+          "dataflow":"optional dataflow id (Guid)",
+          "entity":"optional entity name"
+        }
+       }
+    }
+  ]
+}
+```
 
 
 ## Next steps

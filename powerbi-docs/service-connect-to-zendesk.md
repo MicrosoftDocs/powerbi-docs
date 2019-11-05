@@ -62,7 +62,7 @@ After you've installed the template app, you can change the dashboard and report
    
 ## Modify and distribute your app
 
-You've installed the Zendesk template app. That means you've also created the Zendesk app workspace. In the workspace, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
+You've installed the Zendesk template app. That means you've also created the Zendesk workspace. In the workspace, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
 
 1. To view all the contents of your new Zendesk workspace, in the left navigation bar, select **Workspaces** > **Zendesk**. 
 

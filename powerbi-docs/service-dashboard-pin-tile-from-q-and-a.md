@@ -48,7 +48,7 @@ To follow along, open the [Retail Analysis sample dashboard](sample-retail-analy
    ![dashboard with tiles](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned.png)
 
 ## Considerations and troubleshooting
-* When you start typing a question, Q&A immediately begins searching for the best answer from all datasets associated with the current dashboard.  The "current dashboard" is the dashboard listed in the top navigation bar. For example, this question is being asked in the **Retail Analysis Sample** dashboard that is part of the **mihart** app workspace.
+* When you start typing a question, Q&A immediately begins searching for the best answer from all datasets associated with the current dashboard.  The "current dashboard" is the dashboard listed in the top navigation bar. For example, this question is being asked in the **Retail Analysis Sample** dashboard that is part of the **mihart** workspace.
 
   ![breadcrumbs](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
 * **How does Q&A know which datasets to use**?  Q&A has access to all datasets that have at least one visualization pinned to that dashboard.
