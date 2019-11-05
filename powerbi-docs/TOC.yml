@@ -1109,6 +1109,8 @@
     items: 
       - name: "Capacity planning whitepaper"
         href: report-server/capacity-planning.md
+      - name: "PDF Rendering Extension conformance"
+        href: report-server/rendering-extension-support.md
 - name: Gateways 
   items:
   - name: Overview

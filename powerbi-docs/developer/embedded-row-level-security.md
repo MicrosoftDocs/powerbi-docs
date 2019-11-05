@@ -28,7 +28,7 @@ To take advantage of RLS, it’s important you understand three main concepts; U
 **Roles** – Users belong to roles. A role is a container for rules and can be named something like *Sales Manager* or *Sales Rep*. You create roles within Power BI Desktop. For more information, see [Row-level security (RLS) with Power BI Desktop](../desktop-rls.md).
 
 **Rules** – Roles have rules, and those rules are the actual filters that are going to be applied to the data. The rules could be as simple as “Country = USA” or something much more dynamic.
-For the rest of this article, there's an example of authoring RLS, and then consuming that within an embedded application. Our example uses the [Retail Analysis Sample](http://go.microsoft.com/fwlink/?LinkID=780547) PBIX file.
+For the rest of this article, there's an example of authoring RLS, and then consuming that within an embedded application. Our example uses the [Retail Analysis Sample](https://go.microsoft.com/fwlink/?LinkID=780547) PBIX file.
 
 ![Report example](media/embedded-row-level-security/powerbi-embedded-report-example.png)
 
@@ -68,7 +68,7 @@ Here's how:
 
     The reports show data as if you're signed in as **AndrewMa**.
 
-Applying the filter, the way we did here, filters down all records in the **District**, **Store**, and **Sales** tables. However, because of the filter direction on the relationships between **Sales** and **Time**, **Sales** and **Item**, and **Item** and **Time** tables aren't filtered down. To learn more about bidirectional cross-filtering, download the [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) whitepaper.
+Applying the filter, the way we did here, filters down all records in the **District**, **Store**, and **Sales** tables. However, because of the filter direction on the relationships between **Sales** and **Time**, **Sales** and **Item**, and **Item** and **Time** tables aren't filtered down. To learn more about bidirectional cross-filtering, download the [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) whitepaper.
 
 ## Applying user and role to an embed token
 
