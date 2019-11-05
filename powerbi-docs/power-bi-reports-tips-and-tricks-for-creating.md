@@ -165,9 +165,6 @@ DAX is the calculations formula language in Power BI Desktop.  It's optimized fo
 
 ## Power BI service *and* Power BI Desktop
 
-### Read the whitepaper: [Principles for designing Power BI reports](visuals/power-bi-visualization-best-practices.md)
-This paper provides best practices for designing reports in Power BI. Starting with planning, it discusses principles of design that you can apply to your reports and to the pages and individual visuals that make up that report. Many of these best practices apply to dashboard design as well.
-
 ### Read and/or watch "How to design visually stunning reports (and dashboards) in Power BI"
 Community member Miguel Myers is a Data Scientist as well as a Graphic Designer.
 
