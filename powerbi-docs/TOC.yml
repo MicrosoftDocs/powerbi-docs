@@ -53,6 +53,8 @@
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
       href: desktop-latest-update.md
+    - name: "Model relationships in Power BI Desktop"
+      href: desktop-relationships-understand.md
     - name: "Grouping visuals in Power BI Desktop"
       href: desktop-grouping-visuals.md      
     - name: "Using templates in Power BI Desktop"
