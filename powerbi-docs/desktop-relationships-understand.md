@@ -203,7 +203,7 @@ There are additional restrictions related to weak relationships:
 
 ### Precedence rules
 
-Bi-directional relationships can introduce multiple—and therefore ambiguous—filter propagation paths between model tables. The following list provides precedence rules that affect ambiguity detection and path resolution:
+Bi-directional relationships can introduce multiple—and therefore ambiguous—filter propagation paths between model tables. The following list presents precedence rules that Power BI uses for ambiguity detection and path resolution:
 
 1. Many-to-one and One-to-one relationships, including weak relationships
 2. Many-to-many relationships
@@ -211,11 +211,11 @@ Bi-directional relationships can introduce multiple—and therefore ambiguous—
 
 ### Performance preference
 
-The following list provides an order of preference for performance:
+The following list orders filter propagation performance, from fastest to slowest performance:
 
 1. One-to-many intra-island relationships
 2. Many-to-many cardinality relationships
-3. Many-to-many model relationships achieved with an intermediary table, and that involve at least one bi-directional relationship.
+3. Many-to-many model relationships achieved with an intermediary table and that involves at least one bi-directional relationship
 4. Cross-island relationships
 
 <!--For further information and guidance on many-to-many relationships, see the [Cross filter relationship guidance](guidance/relationships-bidirectional-filtering) article.-->
