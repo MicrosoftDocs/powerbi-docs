@@ -139,7 +139,7 @@ There are several DAX functions that are relevant to model relationships. Each f
 
 Model relationships, from an evaluation perspective, are classified as either _strong_ or _weak_. It's not a configurable relationship property. It is in fact inferred from the cardinality type and the data source of the two related tables. It's important to understand the evaluation type because there may be performance implications or consequences should data integrity be compromised. These implications and integrity consequences are described in this topic.
 
-Firest, some modeling theory is required to fully understand relationship evaluations.
+First, some modeling theory is required to fully understand relationship evaluations.
 
 An Import or DirectQuery model sources all of its data from either the Vertipaq cache or the source database. In both instances, Power BI is able to determine that a "one" side of a relationship exists.
 
