@@ -11,6 +11,7 @@ ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
 ---
+
 # Data reduction techniques for Import modeling
 
 This article targets Power BI Desktop data modelers developing Import models. It describes different techniques to help reduce the data loaded into Import models.
@@ -24,7 +25,7 @@ Despite the efficiencies achieved by the VertiPaq storage engine, it is importan
 - Smaller models achieve faster data refresh, resulting in lower latency reporting, higher dataset refresh throughput, and less pressure on source system and capacity resources.
 - Smaller table row counts can result in faster calculation evaluations, which can deliver better overall query performance.
 
-There are seven different data reduction techniques covered in this article. These include:
+There are eight different data reduction techniques covered in this article. These include:
 
 - [Remove unnecessary columns](#remove-unnecessary-columns)
 - [Remove unnecessary rows](#remove-unnecessary-rows)
@@ -32,6 +33,7 @@ There are seven different data reduction techniques covered in this article. The
 - [Optimize column data types](#optimize-column-data-types)
 - [Preference for custom columns](#preference-for-custom-columns)
 - [Disable Power Query query load](#disable-power-query-query-load)
+- [Disable auto date/time](#disable-auto-datetime)
 - [Switch to Mixed mode](#switch-to-mixed-mode)
 
 ## Remove unnecessary columns
@@ -80,6 +82,10 @@ However, in some instances, model calculated columns may be the better choice. T
 Power Query queries that are intended support data integration with other queries should not be loaded to the model. To avoid loading the query to the model, take care to ensure that you disable query load in these instances.
 
 ![Disabling the load for a Power Query query](media/import-modeling-data-reduction/power-query-disable-query-load.png)
+
+## Disable auto date/time
+
+Power BI Desktop includes an option called _Auto date/time_. When enabled, it creates a hidden auto date/time table for date columns to support report authors when configuring filters, grouping and drill down for calendar time periods. The hidden tables are in fact calculated tables that will increase the size of the model. For guidance about using this option, refer to the [Auto date/time guidance in Power BI Desktop](../desktop-auto-date-time.md) article.
 
 ## Switch to Mixed mode
 
