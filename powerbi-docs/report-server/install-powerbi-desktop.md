@@ -50,7 +50,7 @@ The version of Power BI Desktop for the Power BI service doesn't have the month 
 ## File extension association
 If you install both Power BI Desktop and Power BI Desktop optimized for Power BI Report Server on the same machine, the most recent installation of Power BI Desktop has the file association with .pbix files. Thus, when you double-click a .pbix file, it launches the Power BI Desktop you installed most recently.
 
-If you have Power BI Desktop and then install Power BI Desktop optimized for Power BI Report Server, all .pbix files open in Power BI Desktop optimized for Power BI Report Server by default. If you would rather have Power BI Desktop be the default to launch when opening a .pbix file, reinstall [Power BI Desktop from the Microsoft Store](http://aka.ms/pbidesktopstore).
+If you have Power BI Desktop and then install Power BI Desktop optimized for Power BI Report Server, all .pbix files open in Power BI Desktop optimized for Power BI Report Server by default. If you would rather have Power BI Desktop be the default to launch when opening a .pbix file, reinstall [Power BI Desktop from the Microsoft Store](https://aka.ms/pbidesktopstore).
 
 You can always open the version of Power BI Desktop you want to use first. And then open the file from within Power BI Desktop.
 
@@ -58,7 +58,7 @@ Editing a Power BI report from within Power BI Report Server, or creating a new 
 
 ## Considerations and limitations
 
-Power BI reports in Power BI Report Server, in the Power BI service (http://app.powerbi.com), and in the Power BI mobile apps act almost exactly the same, but a few features are different.
+Power BI reports in Power BI Report Server, in the Power BI service (https://app.powerbi.com), and in the Power BI mobile apps act almost exactly the same, but a few features are different.
 
 ### Selecting a language
 

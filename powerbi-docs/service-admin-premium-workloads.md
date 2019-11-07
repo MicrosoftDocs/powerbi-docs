@@ -194,4 +194,4 @@ The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capaci
 [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
 [Automatic page refresh in Power BI Desktop (preview)](desktop-automatic-page-refresh.md)
 
-More questions? [Ask the Power BI Community](http://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com/)

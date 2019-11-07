@@ -29,9 +29,9 @@ Imagine you're the Release Manager at Contoso and you're getting ready for a new
 
 Want to follow along? In the [Power BI service](https://powerbi.com), go to your **My Workspace**. Then go to **Get Data** > **Samples** > **Opportunity Analysis Sample** > **Connect** to get your own copy.
 
-1. In the left navigation pane, select **Workspaces** > **My workspaces**.
+1. In the nav pane, select **Workspaces** > **My workspaces**.
 
-1. From the top navigation bar, select the cog icon ![Screenshot of the cog icon.](media/service-organizational-content-pack-create-and-publish/cog.png) > **Create content pack**.
+1. From the top nav pane, select the cog icon ![Screenshot of the cog icon.](media/service-organizational-content-pack-create-and-publish/cog.png) > **Create content pack**.
 
    ![Screenshot of the UI with focus on the cog icon and the Create content pack option.](media/service-organizational-content-pack-create-and-publish/pbi_create_contpk.png)
 
@@ -95,4 +95,4 @@ Want to follow along? In the [Power BI service](https://powerbi.com), go to your
 
 * [What is OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
 
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -26,12 +26,12 @@ By creating a launch URL, you can open a new browser tab (or window) by delegati
 Use the `host.launchUrl()` API call, passing your destination URL as a string argument:
 
 ```typescript
-this.host.launchUrl('http://some.link.net');
+this.host.launchUrl('https://some.link.net');
 ```
 
 ## Restrictions
 
-* Use only absolute paths, not relative paths. For example, use an absolute path such as `http://some.link.net/subfolder/page.html`. The relative path,`/page.html`, won't be opened.
+* Use only absolute paths, not relative paths. For example, use an absolute path such as `https://some.link.net/subfolder/page.html`. The relative path,`/page.html`, won't be opened.
 
 * Currently, only *HTTP* and *HTTPS* protocols are supported. Avoid *FTP*, *MAILTO*, and so on.
 

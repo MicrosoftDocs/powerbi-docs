@@ -72,4 +72,4 @@ OAuth isn't a supported authentication scheme with the on-premises data gateway.
 * [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)
 
-More questions? Try the [Power BI Community](http://community.powerbi.com/).
+More questions? Try the [Power BI Community](https://community.powerbi.com/).

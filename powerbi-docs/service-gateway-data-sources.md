@@ -175,4 +175,4 @@ The on-premises data gateway supports the following data sources for Power BI. I
 * [Manage your data source - Import/scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)
 * [Guidance for deploying a data gateway](service-gateway-deployment-guidance.md)
 
-More questions? Try the [Power BI Community](http://community.powerbi.com/).
+More questions? Try the [Power BI Community](https://community.powerbi.com/).

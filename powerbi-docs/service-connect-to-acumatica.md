@@ -24,7 +24,7 @@ Connect to the [Acumatica content pack](https://app.powerbi.com/getdata/services
 >This content pack requires Acumatica v5.2 or higher.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
    ![](media/service-connect-to-acumatica/getdata3.png)
 2. In the **Services** box, select **Get**.
@@ -43,7 +43,7 @@ Connect to the [Acumatica content pack](https://app.powerbi.com/getdata/services
 5. For Authentication Method, select **Basic**. Enter your username and password from your Acumatica account, then click **Sign In**.
    
     ![](media/service-connect-to-acumatica/creds2.png)
-6. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \* which disappears once selected, choosing the dashboard will show a similar layout to the one below:
+6. After Power BI imports the data you will see a new dashboard, report, and dataset in the nav pane. New items are marked with a yellow asterisk \* which disappears once selected, choosing the dashboard will show a similar layout to the one below:
    
     ![](media/service-connect-to-acumatica/dashboard.png)
 

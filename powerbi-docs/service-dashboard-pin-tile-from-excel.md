@@ -18,7 +18,7 @@ LocalizationGroup: Dashboards
 Before you can pin a tile from your Excel workbook, you'll connect that workbook to Power BI service (app.powerbi.com). Connecting a workbook essentially brings a linked read-only version of that workbook into Power BI service and allows you to pin ranges to dashboards. You can even pin an entire worksheet to a dashboard.  
 If a workbook has been shared with you, you'll have the ability to view the tiles pinned by the owner, but not create any dashboard tiles yourself. 
 
-For in-depth information about how Excel and Power BI work together, see [Get data from Excel workbook files](http://go.microsoft.com/fwlink/?LinkID=521962).
+For in-depth information about how Excel and Power BI work together, see [Get data from Excel workbook files](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 Watch Will demonstrate several ways to import data from, and connect to, Excel workbooks.
 
@@ -77,12 +77,12 @@ Selecting a workbook tile opens the linked workbook in Power BI. Since the workb
  ![video](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
 
 ## Considerations and troubleshooting
-Unsupported features: Power BI uses Excel Services to retrieve the workbook tiles. Therefore, since some features from Excel are not supported in Excel Services REST API, they will not be seen on tiles in Power BI. For example: Sparklines, icon set conditional formatting, and time slicers. For a full list of unsupported features see [Unsupported Features in Excel Services REST API](http://msdn.microsoft.com/library/office/ff394477.aspx)
+Unsupported features: Power BI uses Excel Services to retrieve the workbook tiles. Therefore, since some features from Excel are not supported in Excel Services REST API, they will not be seen on tiles in Power BI. For example: Sparklines, icon set conditional formatting, and time slicers. For a full list of unsupported features see [Unsupported Features in Excel Services REST API](https://msdn.microsoft.com/library/office/ff394477.aspx)
 
 ## Next steps
 [Share a dashboard that has links to an Excel workbook](service-share-dashboard-that-links-to-excel-onedrive.md)
 
 [Get data from Excel workbooks](service-excel-workbook-files.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

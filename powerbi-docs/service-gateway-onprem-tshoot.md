@@ -16,7 +16,7 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-This article discusses some common issues when you use the on-premises data gateway with Power BI. If you encounter an issue that isn't listed here, you can use the Power BI [Community](http://community.powerbi.com) site. Or, you can create a [support ticket](http://powerbi.microsoft.com/support).
+This article discusses some common issues when you use the on-premises data gateway with Power BI. If you encounter an issue that isn't listed here, you can use the Power BI [Community](https://community.powerbi.com) site. Or, you can create a [support ticket](https://powerbi.microsoft.com/support).
 
 ## Configuration
 
@@ -222,7 +222,7 @@ You get the "-10709 Connection failed" error message if your delegation isn't co
 
 When you use the gateway for a scheduled refresh, **Refresh history** can help you see what errors occurred. It can also provide useful data if you need to create a support request. You can view scheduled and on-demand refreshes. The following steps show how you can get to the refresh history.
 
-1. In the Power BI navigation pane, in **Datasets**, select a dataset. Open the menu, and select **Schedule refresh**.
+1. In the Power BI nav pane, in **Datasets**, select a dataset. Open the menu, and select **Schedule refresh**.
 
     ![How to select schedule refresh](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 
@@ -236,7 +236,7 @@ For more information about troubleshooting refresh scenarios, see [Troubleshoot 
 
 ## Fiddler trace
 
-[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic. You can see the back and forth with the Power BI service from the client machine. This traffic list might show errors and other related information.
+[Fiddler](https://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic. You can see the back and forth with the Power BI service from the client machine. This traffic list might show errors and other related information.
 
 ![Using the Fiddler trace](media/service-gateway-onprem-tshoot/fiddler.png)
 
@@ -249,4 +249,4 @@ For more information about troubleshooting refresh scenarios, see [Troubleshoot 
 * [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
 * [Manage your data source - Import/scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 
-More questions? Try the [Power BI Community](http://community.powerbi.com/).
+More questions? Try the [Power BI Community](https://community.powerbi.com/).

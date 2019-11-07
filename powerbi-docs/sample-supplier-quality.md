@@ -24,7 +24,7 @@ This sample has two main objectives:
 
 ![Dashboard for the Supplier Quality Analysis sample](media/sample-supplier-quality/supplier1.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](https://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
 This tutorial explores the Supplier Quality Analysis sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
@@ -55,11 +55,11 @@ Before you can use the sample, you must first download it as a [content pack](#g
   
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the Supplier Quality Analysis sample as a [.pbix file](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), which is designed for use with Power BI Desktop.
+Alternatively, you can download the Supplier Quality Analysis sample as a [.pbix file](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), which is designed for use with Power BI Desktop.
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529779). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
+If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529779). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
 
 ## Downtime caused by defective materials
 Let’s analyze the downtime caused by defective materials and see which vendors are responsible.  
@@ -90,7 +90,7 @@ Let’s analyze the downtime caused by defective materials and see which vendors
     ![Downtime (min) by Vendor treemap](media/sample-supplier-quality/supplier5.png)  
 
    From this treemap, we can see the top eight vendors are the eight blocks on the left of the treemap. We can also see they account for about 50% of all downtime minutes.  
-3. Select **Supplier Quality Analysis Sample** in the top navigation bar to return to the dashboard.
+3. Select **Supplier Quality Analysis Sample** in the top nav pane to return to the dashboard.
 
 ### Comparing plants
 Now let’s explore which plant does a better job managing defective material, resulting in less downtime.  
@@ -109,7 +109,7 @@ Now let’s explore which plant does a better job managing defective material, r
 3. Select the **Logistics** bubble in the bubble chart and observe the plants in Springfield and Naperville, IL. Naperville seems to be doing a much better job of managing defective supplies as it has a high number of rejects and few impacts, compared to Springfield’s large number for impacts.  
 
    ![Select Logistics](media/sample-supplier-quality/supplier8.png)  
-4. Select **Supplier Quality Analysis Sample** in the top navigation bar to return to the dashboard.
+4. Select **Supplier Quality Analysis Sample** in the top nav pane to return to the dashboard.
 
 ## Which material type is best managed?
 The best managed material type is the one with lowest downtime or no impact, regardless of defect quantity.
@@ -134,7 +134,7 @@ The best managed material type is the one with lowest downtime or no impact, reg
 
     ![Total Defect Qty by Month and Year chart](media/sample-supplier-quality/supplier11.png)  
 3. Do more defects translate into more downtime? Ask questions in the Q&A box to find out.  
-4. Select **Supplier Quality Analysis Sample** in the top navigation bar to return to the dashboard.  
+4. Select **Supplier Quality Analysis Sample** in the top nav pane to return to the dashboard.  
 5. Because we know that raw materials have the highest number of defects, type in the question box: *show material types, year, and total defect qty*.  
 
     There were many more raw materials defects in 2014 than in 2013.  

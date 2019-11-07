@@ -64,4 +64,4 @@ Watch Will use Power BI Desktop to [add static images to a report](/learn/module
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

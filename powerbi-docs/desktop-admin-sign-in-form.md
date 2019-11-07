@@ -35,5 +35,5 @@ A value of 0 will disable the dialog.
 
 
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

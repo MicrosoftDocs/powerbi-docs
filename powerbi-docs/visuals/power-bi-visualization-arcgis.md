@@ -49,7 +49,7 @@ ArcGIS Maps for Power BI is provided by Esri (www.esri.com). Your use of ArcGIS 
 
 ## Prerequisites
 
-This tutorial uses Power BI Desktop and the PBIX [Retail Analysis sample](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). ArcGIS Maps for Power BI can also be created using the Power BI service. 
+This tutorial uses Power BI Desktop and the PBIX [Retail Analysis sample](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix). ArcGIS Maps for Power BI can also be created using the Power BI service. 
 
 1. From the upper left section of the menu bar, select **File** \> **Open**
    
@@ -356,5 +356,5 @@ Not yet. [Vote for this idea](https://ideas.powerbi.com/forums/265200-power-bi-i
 
 [Blog post announcing availability of ArcGIS maps for Power BI](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

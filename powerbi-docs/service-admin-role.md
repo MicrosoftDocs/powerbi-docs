@@ -108,4 +108,4 @@ You can also assign users to roles by using PowerShell. Users are managed in Azu
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
 [Power BI admin portal](service-admin-portal.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

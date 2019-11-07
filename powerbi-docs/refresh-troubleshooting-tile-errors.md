@@ -18,7 +18,7 @@ LocalizationGroup: Troubleshooting
 Below are the common errors you may encounter with tiles along with an explanation.
 
 > [!NOTE]
-> If you encounter an error that is not listed below, and it is causing you issues, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
+> If you encounter an error that is not listed below, and it is causing you issues, you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
 > 
 > 
 
@@ -36,7 +36,7 @@ Contact the dashboard owner to make sure the data sources and model exist and ar
 **Custom visuals have been disabled by your administrator.**
 
 Your Power BI administrator has disabled the usage of custom visuals for your organization or your security group. 
-You will not be able to use custom visuals from the [Microsoft marketplace](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=power-bi-visuals) or import private visuals from a file. You will be able to use only the pre-packed set of visuals.
+You will not be able to use custom visuals from the [Microsoft marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or import private visuals from a file. You will be able to use only the pre-packed set of visuals.
 
 
 **Data shapes must contain at least one group or calculation that outputs data. Please contact the dashboard owner.**
@@ -80,5 +80,5 @@ If you are still having an issue, [contact support](https://support.powerbi.com)
 ## Next steps
 [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 [Troubleshooting Power BI Personal Gateway](service-admin-troubleshooting-power-bi-personal-gateway.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

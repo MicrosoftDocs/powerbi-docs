@@ -27,5 +27,5 @@ Copying and pasting a visualization requires edit permissions to the report. In 
 ## Next steps
 More about [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

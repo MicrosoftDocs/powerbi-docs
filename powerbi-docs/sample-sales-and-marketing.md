@@ -21,7 +21,7 @@ VanArsdel has many competitors, but is the market leader in its industry. The CM
 
 ![Dashboard for the Sales and Marketing sample](media/sample-sales-and-marketing/sales1.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](https://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
 This tutorial explores the Sales and Marketing sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
@@ -52,11 +52,11 @@ Before you can use the sample, you must first download it as a [content pack](#g
   
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the Sales and Marketing sample as a [.pbix file](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
+Alternatively, you can download the Sales and Marketing sample as a [.pbix file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529785). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
+If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529785). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
 
 ## What is our dashboard telling us?
 Let’s start our tour at the dashboard and look at the tiles the CMO has chosen to pin. We see information about our market share, sales, and sentiment. Data is broken down by region, time, and competition.
@@ -78,7 +78,7 @@ By using Q&A, you can discover additional details in the data.
 
    ![Q&A question: Total units by segment for VanArsdel](media/sample-sales-and-marketing/sales2.png)
 3. Our share in the **Moderation** and **Convenience** categories is high; these segments are the ones where we compete.
-4. Return to the dashboard by selecting the **Sales and Marketing Sample** in the top navigation bar.
+4. Return to the dashboard by selecting the **Sales and Marketing Sample** in the top nav pane.
 
 ### What does total unit market share look like for category (versus region)?
 1. Notice the **Total Units YTD by Manufacturer, Region** tile. What is the total unit market share by category?

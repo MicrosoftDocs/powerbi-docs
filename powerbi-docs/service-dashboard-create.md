@@ -40,11 +40,11 @@ Watch Amanda create a new dashboard by pinning visualizations from a report. The
 ## Import a dataset with a report
 In this step-by-step, we import one of the Power BI sample datasets and use it to create our new dashboard. The sample we use is an Excel workbook with two PowerView sheets. When Power BI imports the workbook, it adds a dataset and a report to your workspace. The report is automatically created from the PowerView sheets.
 
-1. Download the [Procurement Analysis sample](http://go.microsoft.com/fwlink/?LinkId=529784) Excel file. We recommend saving it in your OneDrive for Business.
+1. Download the [Procurement Analysis sample](https://go.microsoft.com/fwlink/?LinkId=529784) Excel file. We recommend saving it in your OneDrive for Business.
 2. Open the Power BI service in your browser (app.powerbi.com).
-3. From the left navigation pane, select **My Workspace** and then select **Get Data**.
+3. From the nav pane, select **My Workspace** and then select **Get Data**.
 
-    ![Left navigation pane](media/service-dashboard-create/power-bi-get-data-new-look.png)
+    ![nav pane](media/service-dashboard-create/power-bi-get-data-new-look.png)
 5. Under **Files**, select **Get**.
 
    ![Get files](media/service-dashboard-create/power-bi-select-files.png)
@@ -59,7 +59,7 @@ In this step-by-step, we import one of the Power BI sample datasets and use it t
    ![Success message](media/service-dashboard-create/power-bi-view-datasetnew.png)
 
 > [!TIP]
-> Did you know? You can narrow the left navigation bar by selecting the icon with three lines at the top ![Navigation pane show or hide icon](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). That gives you more room for the report itself.
+> Did you know? You can narrow the nav pane by selecting the icon with three lines at the top ![nav pane show or hide icon](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). That gives you more room for the report itself.
 
 ### Open the report and pin tiles to your dashboard
 1. In the same workspace, select the **Reports** tab, and then select **Procurement Analysis Sample** to open the report.
@@ -115,4 +115,4 @@ Congratulations on creating your first dashboard! Now that you have a dashboard,
 * [Power BI - Basic Concepts](service-basic-concepts.md)
 * [Tips for designing a great dashboard](service-dashboards-design-tips.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/).
+More questions? [Try the Power BI Community](https://community.powerbi.com/).

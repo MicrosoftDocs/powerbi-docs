@@ -163,5 +163,5 @@ To share a dashboard or report, you need permission to reshare the underlying co
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
 * [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Share a filtered Power BI report](service-share-reports.md).
-* Questions? [Try the Power BI Community](http://community.powerbi.com/).
+* Questions? [Try the Power BI Community](https://community.powerbi.com/).
 

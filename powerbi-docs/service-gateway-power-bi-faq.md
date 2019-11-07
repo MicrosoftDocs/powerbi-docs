@@ -70,5 +70,5 @@ LocalizationGroup: Gateways
 
 * [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 
-More questions? Try the [Power BI Community](http://community.powerbi.com/).
+More questions? Try the [Power BI Community](https://community.powerbi.com/).
 

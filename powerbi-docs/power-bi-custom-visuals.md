@@ -130,7 +130,7 @@ You have two options for downloading and importing Power BI visuals: from within
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
-2. Go to the [Apps results page](https://appsource.microsoft.com/marketplace/apps) where you can view top apps in each category, including *Power BI Apps*. We're looking for Power BI visuals, so let's select **Power BI visuals** from the left navigation list to narrow down the results.
+2. Go to the [Apps results page](https://appsource.microsoft.com/marketplace/apps) where you can view top apps in each category, including *Power BI Apps*. We're looking for Power BI visuals, so let's select **Power BI visuals** from the nav pane list to narrow down the results.
 
     ![AppSource visuals](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
 
@@ -174,4 +174,4 @@ For more information and answers to questions, visit [Frequently asked questions
 
 * [Visualizations in Power BI Reports](visuals/power-bi-report-visualizations.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/).
+More questions? [Try the Power BI Community](https://community.powerbi.com/).

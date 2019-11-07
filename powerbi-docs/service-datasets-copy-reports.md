@@ -77,4 +77,4 @@ You may decide you no longer want the report and its associated shared dataset i
 ## Next steps
 
 - [Use datasets across workspaces (Preview)](service-datasets-across-workspaces.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

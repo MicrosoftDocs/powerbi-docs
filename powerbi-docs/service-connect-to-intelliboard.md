@@ -21,7 +21,7 @@ IntelliBoard offers simplified access to your Moodle learning management system 
 Connect to the [IntelliBoard content pack](https://app.powerbi.com/getdata/services/intelliboard) for Power BI.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.  
+1. Select **Get Data** at the bottom of the nav pane.  
    
     ![](media/service-connect-to-intelliboard/getdata.png)
 2. In the **Services** box, select **Get**.  

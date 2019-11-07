@@ -41,7 +41,7 @@ An application can request permissions when it first attempts to sign in to a us
 
 ## Requesting Permissions
 
-While you can call the API to authenticate with a username and password, in order to take actions on behalf of another user, they will need to request permissions that the user then approves and then send the resulting access token on all future calls. For this process, we will follow the standard [OAuth 2.0](http://oauth.net/2/) protocol. While the actual implementation may vary, the OAuth flow for Power BI has the following elements:
+While you can call the API to authenticate with a username and password, in order to take actions on behalf of another user, they will need to request permissions that the user then approves and then send the resulting access token on all future calls. For this process, we will follow the standard [OAuth 2.0](https://oauth.net/2/) protocol. While the actual implementation may vary, the OAuth flow for Power BI has the following elements:
 
 * **Login UI** - This is a UI that the developer can evoke to request permissions. It would require the user to sign in if not already. The user would also need to approve the permissions that the application is requesting. The login window will post back either an access code or an error message to a redirect URL that is supplied.
   * A standard redirect URL should be supplied by Power BI for use by native applications.
@@ -49,4 +49,4 @@ While you can call the API to authenticate with a username and password, in orde
 * **Authorization Token** - Are used to authenticate API calls on another user's behalf. They will be scoped to a specific application. Tokens have a set lifespan and when they expire they will need to be refreshed.
 * **Refresh Token** - When tokens expire there will be a process of refreshing them.
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

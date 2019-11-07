@@ -50,4 +50,4 @@ When you have a shared dataset in your workspace, you may need to know what repo
 ## Next steps
 
 - [Use datasets across workspaces (Preview)](service-datasets-across-workspaces.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -29,11 +29,11 @@ Let's open a report that's been shared with you directly and then open a report 
    ![Home page](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### Open a report that has been shared with you
-Power BI *designers* can share an individual report directly with you via a link in email or by adding it automatically. Content that is shared this way shows up in the **Shared with me** container on your nav bar and in the **Shared with me** section of your Home canvas.
+Power BI *designers* can share an individual report directly with you via a link in email or by adding it automatically. Content that is shared this way shows up in the **Shared with me** container on your nav pane and in the **Shared with me** section of your Home canvas.
 
 1. Open the Power BI service (app.powerbi.com).
 
-2. From the nav bar, select **Home** to display your Home canvas.  
+2. From the nav pane, select **Home** to display your Home canvas.  
 
    ![Home canvas](./media/end-user-report-open/power-bi-select-home-new.png)
    
@@ -62,7 +62,7 @@ Power BI *designers* can share an individual report directly with you via a link
    ![fit to page](./media/end-user-report-open/power-bi-actual.png)
 
 ### Open a report that is part of an app
-If you've received apps from colleagues or from AppSource, those apps are available from Home and from the **Apps** container on your nav bar. An [app](end-user-apps.md) is a bundle of dashboards and reports.
+If you've received apps from colleagues or from AppSource, those apps are available from Home and from the **Apps** container on your nav pane. An [app](end-user-apps.md) is a bundle of dashboards and reports.
 
 ### Prerequisites
 To follow along, download the Sales and Marketing app.
@@ -71,7 +71,7 @@ To follow along, download the Sales and Marketing app.
 1. Select **Get it now** > **Continue** > **Install** to install the app in your Apps container. 
 
 You can open the app from your Apps container or from Home.
-1. Go back to Home by selecting **Home** from the nav bar.
+1. Go back to Home by selecting **Home** from the nav pane.
 
 7. Scroll down until you see **My Apps**.
 
@@ -99,7 +99,7 @@ Reports can be opened from a dashboard. Most dashboard [tiles](end-user-tiles.md
 
 ##  Still more ways to open a report
 As you get more comfortable navigating the Power BI service, you'll figure out workflows that work best for you. A few other ways to access reports:
-- From the nav bar using **Favorites** and **Recent**    
+- From the nav pane using **Favorites** and **Recent**    
 - Using [View related](end-user-related.md)    
 - In an email, when someone [shares with you](../service-share-reports.md) or you [set an alert](end-user-alerts.md)    
 - From your [Notification center](end-user-notification-center.md)    

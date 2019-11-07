@@ -46,5 +46,5 @@ To make a copy of a dashboard, you must be the dashboard *creator*. Dashboards t
 ## Next steps
 * [Tips for designing a great dashboard](service-dashboards-design-tips.md) 
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

@@ -242,5 +242,5 @@ To make changes to an existing tile:
 ## Next steps
 [Intro to dashboard tiles for Power BI designers](service-dashboard-tiles.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/).
+More questions? [Try the Power BI Community](https://community.powerbi.com/).
 

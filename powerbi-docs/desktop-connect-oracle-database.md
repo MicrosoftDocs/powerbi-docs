@@ -26,11 +26,11 @@ To determine which version of Power BI Desktop is installed, select **File > Hel
 ## Installing the Oracle client
 For **32-bit** versions of Power BI Desktop, use the following link to download and install the **32-bit** Oracle client:
 
-* [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
+* [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
 For **64-bit** versions of Power BI Desktop, use the following link to download and install the **64-bit** Oracle client:
 
-* [64-bit ODAC 12c Release 4 (12.1.0.2.4) for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
+* [64-bit ODAC 12c Release 4 (12.1.0.2.4) for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
 ## Connect to an Oracle database
 Once the matching Oracle client driver is installed, you can connect to an Oracle database. To make the connection, take the following steps:

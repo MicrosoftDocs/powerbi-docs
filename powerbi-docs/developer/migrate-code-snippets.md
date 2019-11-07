@@ -236,4 +236,4 @@ In this snippet, we assume that the pushable dataset is already in a workspace w
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

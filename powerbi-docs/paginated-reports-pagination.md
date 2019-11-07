@@ -84,4 +84,4 @@ ms.date: 07/22/2019
 
 [View a paginated report in the Power BI service](paginated-reports-view-power-bi-service.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

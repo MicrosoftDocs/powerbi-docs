@@ -42,7 +42,7 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
 ## How to connect
 1. Sign in to the Power BI service (https://app.powerbi.com). 
-2. In the left navigation pane, select **Apps**, then **Get apps**.
+2. In the nav pane, select **Apps**, then **Get apps**.
    
    ![Power BI Get apps](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
@@ -69,15 +69,15 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
    Now Power BI can connect with GitHub and connect to the data.  The data is refreshed once a day.
 
 8. After Power BI imports the data, you see the contents of your new GitHub workspace. 
-9. Select the arrow next to the workspace name in the left navigation bar. You see the workspace contains a dashboard and a report. 
+9. Select the arrow next to the workspace name in the nav pane. You see the workspace contains a dashboard and a report. 
 
-    ![App in the left navigation pane](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+    ![App in the nav pane](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
 10. Select **More options** (...) next to the dashboard name > **Rename** > type **GitHub dashboard**.
  
     ![Power BI GitHub tile](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav.png) 
 
-8. Select the global navigation icon to minimize the left navigation, so you have more room.
+8. Select the global navigation icon to minimize the nav pane, so you have more room.
 
     ![Global navigation icon](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 
@@ -126,7 +126,7 @@ To complete this tutorial, you need a GitHub account, if you don't already have 
 
 Now that you've finished the tutorial, you can delete the GitHub app. 
 
-1. In the left navigation bar, select **Apps**.
+1. In the nav pane, select **Apps**.
 2. Hover over the GitHub tile and select the **Delete** garbage can.
 
     ![Delete the GitHub app](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-delete.png)

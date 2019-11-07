@@ -58,4 +58,4 @@ If you pin visuals from a report to the dashboard, the pinned tiles are automati
 * [Manage Analysis Services data sources](service-gateway-enterprise-manage-ssas.md)  
 * [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

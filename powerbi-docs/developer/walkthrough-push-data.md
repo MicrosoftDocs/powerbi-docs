@@ -38,7 +38,7 @@ Here are the operations to push data into a dataset:
 * [Post Rows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows)
 * [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups)
 
-You create a dataset in Power BI by passing a JavaScript Object Notation (JSON) string to the Power BI service. To learn more about JSON, see [Introducing JSON](http://json.org/).
+You create a dataset in Power BI by passing a JavaScript Object Notation (JSON) string to the Power BI service. To learn more about JSON, see [Introducing JSON](https://json.org/).
 
 The JSON string for a dataset has the following format:
 
@@ -107,13 +107,13 @@ For a Power BI table schema, you can use the following data types.
 
 ## Learn more about pushing data into Power BI
 
-To get started pushing data into a dataset, see [Step 1: Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) in the left navigation pane.
+To get started pushing data into a dataset, see [Step 1: Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) in the nav pane.
 
 [Next Step >](walkthrough-push-data-register-app-with-azure-ad.md)
 
 ## Next steps
 
 [Sign up for Power BI](create-an-azure-active-directory-tenant.md)  
-[Introducing JSON](http://json.org/)  
+[Introducing JSON](https://json.org/)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

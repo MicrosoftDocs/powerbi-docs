@@ -50,4 +50,4 @@ Your tenant admin has identified people in your organization who can certify dat
 ## Next steps
 
 * Read about [Using datasets across workspaces](service-datasets-across-workspaces.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

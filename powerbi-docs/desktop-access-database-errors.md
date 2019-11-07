@@ -20,7 +20,7 @@ In Power BI Desktop, both Access databases and early versions of Excel workbooks
 
 ## Situation 1: No Access Database Engine is installed
 
-If the Power BI Desktop error message indicates the Access Database Engine isn't installed, you must install the Access Database Engine version, either 32-bit or 64-bit, that matches your Power BI Desktop version. You can install the Access Database Engine from the [downloads page](http://www.microsoft.com/download/details.aspx?id=13255).
+If the Power BI Desktop error message indicates the Access Database Engine isn't installed, you must install the Access Database Engine version, either 32-bit or 64-bit, that matches your Power BI Desktop version. You can install the Access Database Engine from the [downloads page](https://www.microsoft.com/download/details.aspx?id=13255).
 
 >[!NOTE]
 >If the installed Access Database Engine bit-version is different from your Microsoft Office installation's bit-version, Office applications won't be able to use the Access Database Engine.
@@ -68,7 +68,7 @@ If the previous three solutions are not feasible, it's possible to install both 
 
 To install both bit-versions of the Access Database Engine, follow these steps:
 
-1. Install both bit-versions of the Access Database Engine from the [download page](http://www.microsoft.com/download/details.aspx?id=13255). 
+1. Install both bit-versions of the Access Database Engine from the [download page](https://www.microsoft.com/download/details.aspx?id=13255). 
 
 1. Run each version of the Access Database Engine by using the */passive* switch. For example:
    
@@ -80,7 +80,7 @@ To install both bit-versions of the Access Database Engine, follow these steps:
 
 If you're using an Office 365 subscription, whether **Office 2013** or **Office 2016**, the Access Database Engine provider is registered in a virtual registry location that's *only* accessible to Microsoft Office processes. As a result, the Mashup Engine (which is responsible for running non-Office 365 Excel and Power BI Desktop, and isn't an Office process), can't use the Access Database Engine provider.
 
-To remedy this situation, [download and install the Access Database Engine redistributable](http://www.microsoft.com/download/details.aspx?id=13255) that matches the bit-version of your Power BI Desktop installation. For more information about bit-versions, see the earlier sections in this article.
+To remedy this situation, [download and install the Access Database Engine redistributable](https://www.microsoft.com/download/details.aspx?id=13255) that matches the bit-version of your Power BI Desktop installation. For more information about bit-versions, see the earlier sections in this article.
 
 ## Other situations that can cause import issues
 

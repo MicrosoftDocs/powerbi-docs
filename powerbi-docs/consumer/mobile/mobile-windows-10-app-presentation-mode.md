@@ -51,5 +51,5 @@ You can undock the toolbar and drag it to locate it anywhere on the screen. This
 
 ## Next steps
 * [Display dashboards and reports in full-screen mode from the Power BI service](../end-user-focus.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

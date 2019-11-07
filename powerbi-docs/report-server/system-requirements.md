@@ -19,7 +19,7 @@ This article lays out the minimum hardware and software requirements to install 
 
 | Component | Requirement |
 | --- | --- |
-| .NET Framework |4.6<br><br>You can manually install the .NET Framework from [Microsoft .NET Framework 4.6 (Web Installer) for Windows](http://support.microsoft.com/kb/3045560).<br/><br/> For more information, recommendations, and guidance about the .NET Framework 4.6 see [.NET Framework Deployment Guide for Developers](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>Windows 8.1, and Windows Server 2012 R2 require [KB2919355](http://support.microsoft.com/kb/2919355) before installing .NET Framework 4.6. |
+| .NET Framework |4.6<br><br>You can manually install the .NET Framework from [Microsoft .NET Framework 4.6 (Web Installer) for Windows](https://support.microsoft.com/kb/3045560).<br/><br/> For more information, recommendations, and guidance about the .NET Framework 4.6 see [.NET Framework Deployment Guide for Developers](https://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>Windows 8.1, and Windows Server 2012 R2 require [KB2919355](https://support.microsoft.com/kb/2919355) before installing .NET Framework 4.6. |
 | Hard Disk |Power BI Report Server requires a minimum of 1 GB of available hard-disk space.<br><br>Addition space will be required on the database server that is hosting the report server database. |
 | Memory |**Minimum:** 1 GB<br/><br/> **Recommended:** At least 4 GB |
 | Processor speed |**Minimum:** x64 Processor: 1.4 GHz<br/><br/> **Recommended:** 2.0 GHz or faster |
@@ -72,6 +72,6 @@ You can use a live connection against tabular or multidimensional instances. You
 [Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

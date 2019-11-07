@@ -77,5 +77,5 @@ If you're listed in the **Users** tab of the data source configured within the g
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)
 * [Use Kerberos for single sign-on (SSO) from Power BI to on-premises data sources](service-gateway-sso-kerberos.md)
 
-More questions? Try asking the [Power BI Community](http://community.powerbi.com/).
+More questions? Try asking the [Power BI Community](https://community.powerbi.com/).
 

@@ -23,7 +23,7 @@ The Human Resources sample content pack contains a dashboard, report, and datase
 
 ![Dashboard for the Human Resources sample](media/sample-human-resources/hr1.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](https://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
 This tutorial explores the Human Resources sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
@@ -54,11 +54,11 @@ Before you can use the sample, you must first download it as a [content pack](#g
   
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the Human Resources sample as a [.pbix file](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
+Alternatively, you can download the Human Resources sample as a [.pbix file](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529780). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
+If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529780). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
 
 ## New hires
 Let’s explore new hires first.
@@ -83,7 +83,7 @@ Let’s explore new hires first.
 
 4. Select different age groups and genders in the charts to explore the relationships between age, gender, region, and ethnicity group.
 
-5. Select **Human Resource Sample** from the top navigation bar to return to the dashboard.
+5. Select **Human Resource Sample** from the top nav pane to return to the dashboard.
 
    ![Return to dashboard](media/sample-human-resources/power-bi-breadcrumbs.png)
 
@@ -129,7 +129,7 @@ Let’s look at the report in Editing View. You can change the pie charts to sho
 
 8. You can also follow the same steps for the **Active Employee Count by Gender** pie chart, changing it to separations instead of active employees. Look at the voluntary separation data by gender to see if you find any other insights.
 
-9. Select **Human Resource Sample** from the top navigation bar to return to the dashboard. You can choose to save the changes you’ve made to the report.
+9. Select **Human Resource Sample** from the top nav pane to return to the dashboard. You can choose to save the changes you’ve made to the report.
 
 ## Bad hires
 The last area to explore is bad hires. Bad hires are defined as employees who didn’t last for more than 60 days. We’re hiring rapidly, but are we hiring good candidates?
@@ -143,7 +143,7 @@ The last area to explore is bad hires. Bad hires are defined as employees who di
 
 3. If you look at the **Bad Hire Count by Gender** donut chart and select different regions in the **Region** slicer, you'll notice that the East region is the only region with more female than male bad hires.  
 
-4. Select the name of the dashboard from the top navigation bar to return to the dashboard.
+4. Select the name of the dashboard from the top nav pane to return to the dashboard.
 
 ## Ask a question in the dashboard Q&A box
 In the [Q&A question box](power-bi-tutorial-q-and-a.md) in the dashboard, you can ask a question about your data by using natural language. Q&A recognizes the words you type and figures out where in your dataset to find the answer.

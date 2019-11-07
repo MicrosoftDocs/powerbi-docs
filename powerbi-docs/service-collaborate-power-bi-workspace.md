@@ -76,6 +76,6 @@ If you’re an owner or administrator for a workspace, you can also add or remov
 
 ## Next steps
 * [Publish apps in Power BI](service-create-distribute-apps.md).
-* More questions? [Try the Power BI Community](http://community.powerbi.com/).
+* More questions? [Try the Power BI Community](https://community.powerbi.com/).
 * Feedback? Visit [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi).
 

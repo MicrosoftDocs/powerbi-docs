@@ -147,4 +147,4 @@ By default, drilling won't filter other visuals in a report. However, the report
 
 [Power BI - Basic Concepts](end-user-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

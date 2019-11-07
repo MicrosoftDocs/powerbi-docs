@@ -101,7 +101,7 @@ To grant permissions to the file system, you apply Access Control List (ACL) set
 
 To find your tenant applications, follow these steps:
 
-1. In the [Azure portal](https://portal.azure.com/), select **Azure Active Directory** from the left navigation panel.
+1. In the [Azure portal](https://portal.azure.com/), select **Azure Active Directory** from the nav panel.
 2. In the Azure **Active Directory** blade, select **Enterprise applications**.
 3. From the **Application Type** drop-down menu, select **All Applications** and then select **Apply**. A sample of your tenant applications appears, similar to the following image.
 
@@ -219,4 +219,4 @@ For more information about the Common Data Model, you can read its overview arti
 * [CDM folders](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-And you can always try [asking questions of the Power BI Community](http://community.powerbi.com/).
+And you can always try [asking questions of the Power BI Community](https://community.powerbi.com/).

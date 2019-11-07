@@ -59,7 +59,7 @@ When you choose this option, your workbook will appear in Power BI just like it 
 
 You can’t edit your workbook in when open in Power BI, but if you need to make some changes, you can select **Edit**, and then choose to edit your workbook in Excel Online or open it in Excel on your computer. Any changes you make are saved to the workbook on OneDrive.
 
-When you upload, no dataset is created in Power BI. Your workbook will appear in Reports, in your workspace navigation pane. Workbooks uploaded to Power BI have a special Excel icon, identifying them as Excel workbooks that have been uploaded.
+When you upload, no dataset is created in Power BI. Your workbook will appear in Reports, in your workspace nav pane. Workbooks uploaded to Power BI have a special Excel icon, identifying them as Excel workbooks that have been uploaded.
 
 Choose this option if you only have data in worksheets, or you have PivotTables and Charts you want to see in Power BI.
 Using Upload from Publish to Power BI in Excel is pretty much the same as using Get Data > File > OneDrive for Business > Connect, Manage and View Excel in Power BI from Power BI in your browser.
@@ -84,5 +84,5 @@ When complete, you can go to Power BI right from Excel.
 
 ## Next steps
 [Excel data in Power BI](service-excel-workbook-files.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

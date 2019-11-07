@@ -21,7 +21,7 @@ Tracking and exploring your VMob data is easy with Power BI and the VMob content
 Connect to the [VMob content pack](https://app.powerbi.com/getdata/services/vmob) for Power BI.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
     ![](media/service-connect-to-vmob/getdata.png)
 2. In the **Services** box, select **Get**.

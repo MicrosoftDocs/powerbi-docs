@@ -22,16 +22,16 @@ You [create dashboards and reports in the Power BI service](../../service-get-st
 Then interact with your dashboards and reports, explore the data, and share them, all from the Power BI mobile app for Windows 10.
 
 ## First things first
-* [**Get the Power BI mobile app for Windows 10**](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store.
+* [**Get the Power BI mobile app for Windows 10**](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store.
   
   Your device must run Windows 10. The app can run on devices with at least 3-GB RAM and 8-GB internal storage.
    
 * Find out [what's new in the Power BI mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
 ## Sign up for the Power BI service on the web
-If you haven't signed up yet, go to the [Power BI service](http://powerbi.com/). Sign up for your own account to create and store dashboards and reports, and bring your data together. Then, sign in to Power BI from your Windows 10 device to see your own dashboards from anywhere.
+If you haven't signed up yet, go to the [Power BI service](https://powerbi.com/). Sign up for your own account to create and store dashboards and reports, and bring your data together. Then, sign in to Power BI from your Windows 10 device to see your own dashboards from anywhere.
 
-1. In the Power BI service, tap [Sign up](http://go.microsoft.com/fwlink/?LinkID=513879) to create a Power BI account.
+1. In the Power BI service, tap [Sign up](https://go.microsoft.com/fwlink/?LinkID=513879) to create a Power BI account.
 2. Start [creating your own dashboards and reports](../../service-get-started.md).
 
 ## Get started with the Power BI app
@@ -85,7 +85,7 @@ Find your dashboards, reports, and apps quickly by typing in the search box, alw
 ## Find your content in the Power BI mobile apps
 Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](mobile-apps-quickstart-view-dashboard-report.md). Plus you can always search for anything you have in the Power BI mobile apps. 
 
-![Power BI left navigation](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-left-nav.png)
+![Power BI nav pane](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-left-nav.png)
 
 ## View your favorite dashboards, KPIs, and reports
 View your favorite Power BI dashboards, together with Reporting Services KPIs and mobile reports, on the Favorites page in the mobile apps. When you make a dashboard a *favorite* in the Power BI mobile app, you can access it from all of your devices, including the Power BI service in your browser. 
@@ -116,7 +116,7 @@ Here are some other things you can do in the Power BI app for Windows 10 devices
 * [Create your own mobile reports with the SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), and publish them to the Reporting Services web portal.
 
 ## Next steps
-* [Download the Power BI app](http://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
+* [Download the Power BI app](https://go.microsoft.com/fwlink/?LinkID=526478) from the Windows Store  
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

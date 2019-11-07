@@ -18,10 +18,10 @@ The Power BI content pack pulls data from your Mandrill account and generates a 
 
 [!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
-Connect to the [Mandrill content pack for Power BI.](http://app.powerbi.com/getdata/services/mandrill)
+Connect to the [Mandrill content pack for Power BI.](https://app.powerbi.com/getdata/services/mandrill)
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
     ![](media/service-connect-to-mandrill/getdata.png)
 2. In the **Services** box, select **Get**.
@@ -33,7 +33,7 @@ Connect to the [Mandrill content pack for Power BI.](http://app.powerbi.com/getd
 4. For **Authentication Method**, select **Key** and provide your API key. You can find the key on the **Settings** tab of the Mandrill dashboard. Select **Sign In** to begin the import process, which can take a few minutes depending on the volume of data in your account.
    
     ![](media/service-connect-to-mandrill/auth.png)
-5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. This is the default dashboard that Power BI created to display your data.
+5. After Power BI imports the data you will see a new dashboard, report, and dataset in the nav pane. This is the default dashboard that Power BI created to display your data.
    
     ![](media/service-connect-to-mandrill/mandrill-dashboard1.png)
 

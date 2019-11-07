@@ -46,4 +46,4 @@ If your organization signed you up for Power BI, contact your tenant admin. Ask 
 
 ![Managed close account](media/service-admin-closing-your-account/close-account-managed.png)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -114,7 +114,7 @@ To get the **applicationId**, follow these steps:
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 
-2. In the left-hand navigation pane, select **All Services**, and select **App Registrations**.
+2. In the left-hand nav pane, select **All Services**, and select **App Registrations**.
 
 3. Select the application that needs the **applicationId**.
 
@@ -426,4 +426,4 @@ In this tutorial, you learned how to embed Power BI content into an application 
 > [!div class="nextstepaction"]
 >[Embed for your customers](embed-sample-for-customers.md)
 
-If you have more questions, [try asking the Power BI Community](http://community.powerbi.com/).
+If you have more questions, [try asking the Power BI Community](https://community.powerbi.com/).

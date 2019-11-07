@@ -18,7 +18,7 @@ LocalizationGroup: Gateways
 
 With data connectors for Power BI, you can connect to and access data from an application, service, or data source. You can develop custom data connectors and use them in Power BI Desktop.
 
-To learn more about how to develop custom data connectors for Power BI, see the [Data connector SDK GitHub page](http://aka.ms/dataconnectors). This site includes information on how to get started and samples for Power BI and Power Query.
+To learn more about how to develop custom data connectors for Power BI, see the [Data connector SDK GitHub page](https://aka.ms/dataconnectors). This site includes information on how to get started and samples for Power BI and Power Query.
 
 When you build reports in Power BI Desktop that use custom data connectors, you can use the on-premises data gateway to refresh those reports from the Power BI service.
 
@@ -53,4 +53,4 @@ When this option is enabled, you see your custom connectors as available data so
 * [Configure proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)
 * [Use Kerberos for single sign-on (SSO) from Power BI to on-premises data sources](service-gateway-sso-kerberos.md)  
 
-More questions? Try asking the [Power BI Community](http://community.powerbi.com/).
+More questions? Try asking the [Power BI Community](https://community.powerbi.com/).

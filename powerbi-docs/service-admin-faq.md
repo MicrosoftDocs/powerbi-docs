@@ -53,7 +53,7 @@ This article addresses frequently asked questions for Power BI administration. F
 
 ### Using PowerShell
 
-Some of the procedures in this section require Windows PowerShell scripts. If you're not familiar with PowerShell, we recommend the [PowerShell getting started guide](http://go.microsoft.com/fwlink/p/?LinkID=286814). To run the scripts, first install the latest 64-bit version of the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/).
+Some of the procedures in this section require Windows PowerShell scripts. If you're not familiar with PowerShell, we recommend the [PowerShell getting started guide](https://go.microsoft.com/fwlink/p/?LinkID=286814). To run the scripts, first install the latest 64-bit version of the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/).
 
 ### How do users sign up for Power BI?
 
@@ -190,7 +190,7 @@ If a user is signed up for Power BI, but you no longer want them to have access 
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
-1. In the left navigation bar, select **Users** > **Active Users**.
+1. In the nav pane, select **Users** > **Active Users**.
 
 1. Find the user you want to remove the license for, then select their name.
 
@@ -208,7 +208,7 @@ Users who have joined your tenant via self-service sign-up get assigned a unique
 
 1. Navigate to the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
-1. In the left navigation bar, select **Users** > **Active Users**.
+1. In the nav pane, select **Users** > **Active Users**.
 
 1. On the **Views** menu, select **Add custom view**.
 
@@ -232,7 +232,7 @@ For info about which data region your Power BI tenant is in, see [Where is my Po
 
 ### What is the Power BI SLA?
 
-For info about the Power BI SLA (Service Level Agreement), see the [Licensing Terms and Documentation](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) article in the **Licensing** section of the Microsoft Licensing website.
+For info about the Power BI SLA (Service Level Agreement), see the [Licensing Terms and Documentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) article in the **Licensing** section of the Microsoft Licensing website.
 
 ### How does Power BI handle high availability and failover?
 
@@ -261,6 +261,6 @@ Microsoft built Power BI on the foundation of Microsoft 365, which in turn build
 [Office 365 user account management](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
 [Office 365 group management](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
 [1]: https://docs.microsoft.com/powershell/scripting/overview

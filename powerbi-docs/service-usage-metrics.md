@@ -190,4 +190,4 @@ In addition to potential differences between usage metrics and audit logs, the f
 
 [Administering Power BI in the admin portal](service-admin-portal.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -24,7 +24,7 @@ Connect to the [Application Insights content pack for Power BI](https://app.powe
 >This integration method is now **deprecated**. To learn more about the preferred method of connecting Application Insights to Power BI use the [export analytic query functionality](https://docs.microsoft.com/azure/application-insights/app-insights-export-power-bi#export-analytics-queries).
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
     ![Get Data button](media/service-connect-to-application-insights/pbi_getdata.png)
 2. In the **Services** box, select **Get**.
@@ -39,7 +39,7 @@ Connect to the [Application Insights content pack for Power BI](https://app.powe
 5. Select **Sign In** and follow the screens to connect.
    
     ![Application Insights connection sign-in](media/service-connect-to-application-insights/pbi_contpkappinsitconnectn2.png)
-6. The import process begins automatically. When complete, a notification is shown and a new dashboard, report, and dataset appear in the Navigation Pane marked with an asterisk.  Select the dashboard to view your imported data.
+6. The import process begins automatically. When complete, a notification is shown and a new dashboard, report, and dataset appear in the nav pane marked with an asterisk.  Select the dashboard to view your imported data.
    
     ![Application Insights dashboard](media/service-connect-to-application-insights/pbi_contpkappinsitdash.png)
 

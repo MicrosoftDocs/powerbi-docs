@@ -134,4 +134,4 @@ For more information about the Common Data Model, you can read its overview arti
 * [CDM folders](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-And you can always try [asking questions of the Power BI Community](http://community.powerbi.com/).
+And you can always try [asking questions of the Power BI Community](https://community.powerbi.com/).

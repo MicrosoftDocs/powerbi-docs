@@ -60,8 +60,8 @@ Another modification available to content pack creators is expanding and restric
    
    For any coworker who isn't part of the new alias:
    
-   * For group members who haven't customized the content pack, the dashboard and reports associated with that content pack are no longer available and the content pack doesn't appear in the Navigation Pane.
-   * For group members who have customized the content pack, the next time they open the customized dashboard, all tiles from the original content pack will be gone.  But tiles pinned from other reports will still render. The original content pack reports and dataset are no longer available, and the content pack doesn't appear in the Navigation pane.   
+   * For group members who haven't customized the content pack, the dashboard and reports associated with that content pack are no longer available and the content pack doesn't appear in the nav pane.
+   * For group members who have customized the content pack, the next time they open the customized dashboard, all tiles from the original content pack will be gone.  But tiles pinned from other reports will still render. The original content pack reports and dataset are no longer available, and the content pack doesn't appear in the nav pane.   
 
 ## Refresh an organizational content pack
 As the content pack creator, you can [schedule refresh of the datasets](refresh-data.md).  When you create and upload the content pack, that refresh schedule is uploaded with the datasets. If you change the refresh schedule, you need to re-publish the content pack (see above).
@@ -77,11 +77,11 @@ You can only delete a content pack from AppSource if you created it. If you've c
 1. To delete a content pack from AppSource, go to the workspace where you created the content pack, select the cog icon ![](media/service-organizational-content-pack-manage-update-delete/cog.png) and choose **View Content Packs**.
 2. Select **Delete \> Delete**. 
    
-   * For group members who haven't customized the content pack, the dashboard and reports associated with that content pack are automatically removed. They're no longer available, and the content pack doesn't appear in the Navigation Pane.
-   * For group members who have customized the content pack, the next time they open the customized dashboard, all tiles from the original content pack will be gone.  But tiles pinned from other reports will still render. The original content pack reports and dataset are no longer available, and the content pack doesn't appear in the Navigation pane.   
+   * For group members who haven't customized the content pack, the dashboard and reports associated with that content pack are automatically removed. They're no longer available, and the content pack doesn't appear in the nav pane.
+   * For group members who have customized the content pack, the next time they open the customized dashboard, all tiles from the original content pack will be gone.  But tiles pinned from other reports will still render. The original content pack reports and dataset are no longer available, and the content pack doesn't appear in the nav pane.   
 
 ## Next steps
 * [Introduction to organizational content packs](service-organizational-content-pack-introduction.md)
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md) 
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

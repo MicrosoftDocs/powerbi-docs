@@ -39,7 +39,7 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 ## Prerequisites
 
 ### Install the Power BI for iOS app
-[Download the iOS app](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app")  from the Apple App Store to your iPad, iPhone, or iPod Touch.
+[Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app")  from the Apple App Store to your iPad, iPhone, or iPod Touch.
 
 These versions support the Power BI for iOS app:
 - iPad with iOS 10 or later.
@@ -51,11 +51,11 @@ The first step in the tutorial is to download the Opportunity Analysis sample in
 
 1. Open the Power BI service in your browser (app.powerbi.com) and sign in.
 
-1. Select the global navigation icon to open the left navigation.
+1. Select the global navigation icon to open the nav pane.
 
     ![global navigation icon](./media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-global-nav-icon.png)
 
-2. In the left navigation pane, select **Workspaces** > **My Workspace**.
+2. In the nav pane, select **Workspaces** > **My Workspace**.
 
     ![My Workspace](./media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-my-workspace.png)
 
@@ -114,7 +114,7 @@ When you've finished the tutorial, you can delete the Opportunity Analysis sampl
 
 1. Open the Power BI service (app.powerbi.com) and sign in.
 
-2. In the left navigation pane, select **Workspaces** > **My Workspace**.
+2. In the nav pane, select **Workspaces** > **My Workspace**.
 
 3. On the **Dashboards** tab, select the garbage can **Delete** icon next to the Opportunity Analysis dashboard.
 

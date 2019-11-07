@@ -57,4 +57,4 @@ You can also expect a significant amount of demonstrations and laboratories, tha
   - **WorkshopPLUS - Data AI: Advanced Data Analytics with Power BI**
 This course will provide you the knowledge to understand and implement the key principles about the aspects of Data modeling in Power BI using tools such as Power BI Desktop and accompanying the cloud service for publishing and consumption of BI Assets. This course would then cover the basics of report development, embedded analytics in Power BI to embed the content into custom applications, Real time dashboarding and advanced analytics involving data science and development in Power BI.
 
-Contact your Microsoft Technical Account Manager for details. If you don't already have a Microsoft Premier support contract, learn more at [Premier support](https://support.microsoft.com/en-us/premier).
+Contact your Microsoft Technical Account Manager for details. If you don't already have a Microsoft Premier support contract, learn more at [Premier support](https://support.microsoft.com/premier).

@@ -40,5 +40,5 @@ One way to add a new [dashboard tile](consumer/end-user-tiles.md) is by copying 
 ## Next steps
 [Tiles in Power BI](consumer/end-user-tiles.md)  
 [Dashboards in Power BI](consumer/end-user-dashboards.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

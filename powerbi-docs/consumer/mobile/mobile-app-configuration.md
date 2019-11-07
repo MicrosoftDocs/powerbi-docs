@@ -57,6 +57,6 @@ However, any MDM provider is supported. If you are not using Intune, you'll need
 
 ## Next steps
 
-* Download the [Power BI iPhone mobile app](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Download the [Power BI iPhone mobile app](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
-* Join the conversation at the [Power BI Community](http://community.powerbi.com/)
+* Join the conversation at the [Power BI Community](https://community.powerbi.com/)

@@ -25,7 +25,7 @@ Connect to the [Lithium content pack](https://app.powerbi.com/getdata/services/l
 >The Power BI content pack uses the Lithium API. Excessive calls to the API may result in additional charges from Lithium, please confirm with your Lithium administrator.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
    ![](media/service-connect-to-lithium/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.
@@ -42,7 +42,7 @@ Connect to the [Lithium content pack](https://app.powerbi.com/getdata/services/l
    ![](media/service-connect-to-lithium/creds.png)
    
    ![](media/service-connect-to-lithium/creds2.png)
-6. Once the login flow is completed the import process will begin. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+6. Once the login flow is completed the import process will begin. When complete, a new dashboard, report and model will appear in the nav pane. Select the dashboard to view your imported data.
    
     ![](media/service-connect-to-lithium/lithium.png)
 

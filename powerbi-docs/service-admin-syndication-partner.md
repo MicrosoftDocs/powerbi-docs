@@ -81,4 +81,4 @@ To enable ad-hoc subscriptions, you can contact your partner and request that th
 
 [Power BI licensing in your organization](service-admin-licensing-organization.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

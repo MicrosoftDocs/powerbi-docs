@@ -70,6 +70,6 @@ See the article [Filter a report using query string parameters in the URL](servi
 ## Next steps
 * [Ways to share your work in Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Share a dashboard](service-share-dashboards.md)
-* More questions? [Try the Power BI Community](http://community.powerbi.com/).
+* More questions? [Try the Power BI Community](https://community.powerbi.com/).
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
 

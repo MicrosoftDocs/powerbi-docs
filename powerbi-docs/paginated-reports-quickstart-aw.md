@@ -282,7 +282,7 @@ One more formatting improvement before publishing the report to the Power BI ser
 
 Now that you've created this paginated report, it's time to upload it to the Power BI service.
 
-1. In the Power BI service (http://app.powerbi.com) in the left navigation, select **Workspaces** > **Create workspace**.
+1. In the Power BI service (https://app.powerbi.com) in the nav pane, select **Workspaces** > **Create workspace**.
 
 2. Name your workspace **Azure AW**, or other unique name. You're the only member for now. 
 

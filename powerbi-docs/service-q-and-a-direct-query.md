@@ -62,5 +62,5 @@ The feature has some limitations:
 - [Basic concepts for designers in the Power BI service](service-basic-concepts.md)  
 - [Power BI Q&A Overview](consumer/end-user-q-and-a.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

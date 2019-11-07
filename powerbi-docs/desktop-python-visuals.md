@@ -154,7 +154,7 @@ This tutorial is designed to help you get started creating visuals with Python i
 * Documentation at the [Matplotlib](https://matplotlib.org/) website. 
 * [Matplotlib Tutorial : A Basic Guide to Use Matplotlib with Python](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python/) 
 * [Matplotlib Tutorial – Python Matplotlib Library with Examples](https://www.edureka.co/blog/python-matplotlib-tutorial/) 
-* [Pandas API Reference](http://pandas.pydata.org/pandas-docs/stable/reference/index.html) 
+* [Pandas API Reference](https://pandas.pydata.org/pandas-docs/stable/reference/index.html) 
 * [Python visualizations in Power BI Service](https://powerbi.microsoft.com/blog/python-visualizations-in-power-bi-service/) 
 * [Using Python Visuals in Power BI ](https://www.absentdata.com/how-to-user-python-and-power-bi/)
 

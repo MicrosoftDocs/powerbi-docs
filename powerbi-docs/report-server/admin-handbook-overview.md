@@ -45,7 +45,7 @@ Security and protection are important to every organization. You can learn about
 [Find your report server product key](find-product-key.md)  
 [Install Power BI Desktop optimized for Power BI Report Server](install-powerbi-desktop.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

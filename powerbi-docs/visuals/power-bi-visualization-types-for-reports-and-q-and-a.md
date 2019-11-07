@@ -226,4 +226,4 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 
 ## Next steps
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)    
-[The right visual reference from sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+[The right visual reference from sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

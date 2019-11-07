@@ -97,4 +97,4 @@ You can take workspaces out of Multi-Geo capacity in one of two ways:
 - [What is Power BI Premium?](service-premium-what-is.md)
 - [Multi-Geo for Power BI Embedded capacities](developer/embedded-multi-geo.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

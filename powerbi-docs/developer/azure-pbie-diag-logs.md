@@ -24,7 +24,7 @@ Using Diagnostics can answer a few scenarios, such as:
 
 ### Azure portal
 
-1. In [Azure portal](https://portal.azure.com) > Power BI Embedded resource, select **Diagnostic logs** in the left navigation, and then select **Turn on diagnostics**.
+1. In [Azure portal](https://portal.azure.com) > Power BI Embedded resource, select **Diagnostic logs** in the nav pane, and then select **Turn on diagnostics**.
 
     ![Turn on diagnostic logging for Power BI Embedded in the Azure portal](media/azure-pbie-diag-logs/azure-pbie-diag-logs-01.png)
 

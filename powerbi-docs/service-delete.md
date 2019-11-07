@@ -86,7 +86,7 @@ If a dataset is part of one or more [organizational content packs](service-organ
 As the workspace author, you can delete it. When you delete it, the associated app is also deleted for all group members and removed from your AppSource if you had published the app to your entire organization. Deleting a workspace is different from leaving a workspace.
 
 ### To delete a workspace - if you are an Admin
-1. From the left nav, select **Workspaces**
+1. From the nav pane, select **Workspaces**
 
 2. Select **More options** (...) to the right of the workspace to be deleted and choose **Edit workspace**.
 
@@ -121,7 +121,7 @@ Apps can be easily removed from your apps list page. But only an app Admin can p
 ### Remove an app from your app list page
 Deleting an app from your app list page does not delete the app for other members.
 
-1. In your left nav, select **Apps** to open the apps list page.
+1. In the nav pane, select **Apps** to open the apps list page.
 2. Hover over the app to delete, and select the Delete ![](media/service-delete/power-bi-delete-report2.png)  icon.
 
    ![select Apps](media/service-delete/power-bi-delete-app.png)
@@ -137,4 +137,4 @@ This article covered how to delete the major building blocks of Power BI service
 * [Delete a dashboard tile](service-dashboard-edit-tile.md)
 * [Delete a report visualization](service-delete.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

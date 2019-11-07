@@ -32,5 +32,5 @@ To work around this issue, sign in with the email address listed when you click 
 
 ![Sign in email](media/service-admin-office-365-dedicated-known-issues/sign-in-address.png)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

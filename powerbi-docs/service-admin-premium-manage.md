@@ -161,4 +161,4 @@ For more information, see [Install Power BI Report Server](report-server/install
 
 [Managing Premium capacities](service-premium-capacity-manage.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

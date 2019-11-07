@@ -41,7 +41,7 @@ The size of a dashboard that you share varies depending on what is pinned to it.
 
 See how much data storage you’re using in your Power BI account, and manage your account.
 
-1. To manage your own storage, go to **My Workspace** on the left navigation pane.
+1. To manage your own storage, go to **My Workspace** on the nav pane.
    
     ![My Workspace](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
 2. Select the gear icon ![Gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in the upper-right corner \> **Manage personal storage**.
@@ -99,5 +99,5 @@ This limit also is indicated within **Manage personal storage**.
 
  ![Over your storage limit](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+ More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
