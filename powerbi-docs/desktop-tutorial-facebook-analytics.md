@@ -2,7 +2,7 @@
 title: 'Tutorial: Facebook analytics using Power BI Desktop'
 description: 'Tutorial: Facebook analytics using Power BI Desktop'
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Take a tour of the samples available with Power BI
 description: Sample content packs, PBIX files, and Excel datasets for Power BI
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Disconnect from an organizational content pack - Power BI
 description: Read about removing your connection to an organizational content pack by deleting its dataset in Power BI.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: lukaszp
 
 ms.service: powerbi

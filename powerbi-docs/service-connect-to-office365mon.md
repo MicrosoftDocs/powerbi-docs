@@ -2,7 +2,7 @@
 title: Connect to Office365Mon with Power BI
 description: Office365Mon for Power BI
 author: teddybercovitz
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

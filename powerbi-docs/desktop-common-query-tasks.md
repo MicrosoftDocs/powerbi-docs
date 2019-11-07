@@ -2,7 +2,7 @@
 title: Common query tasks in Power BI Desktop
 description: Common query tasks in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: 'Customer Profitability sample for Power BI: Take a tour'
 description: 'Customer Profitability sample for Power BI: Take a tour'
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: amac
 
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Connect to Azure Audit Logs with Power BI
 description: Azure Audit Logs for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

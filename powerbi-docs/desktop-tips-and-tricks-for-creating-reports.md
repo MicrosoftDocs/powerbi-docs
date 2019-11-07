@@ -2,7 +2,7 @@
 title: Tips and tricks for creating reports in Power BI
 description: Learn best practices for building reports in the Power BI service and Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: willthom
 
 ms.custom: seodec18

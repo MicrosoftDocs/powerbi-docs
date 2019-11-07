@@ -2,7 +2,7 @@
 title: Administering Power BI - frequently asked questions (FAQ)
 description: Learn the answers to frequently asked questions on Power BI sign up, tenant management, and other administrative tasks.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Create a Power BI dashboard from a report
 description: Create a Power BI dashboard from a report
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 

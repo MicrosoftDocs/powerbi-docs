@@ -2,7 +2,7 @@
 title: What is Power BI Desktop?
 description: Learn what Power BI Desktop is, and how to get started using it
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

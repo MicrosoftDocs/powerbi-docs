@@ -2,7 +2,7 @@
 title: Using incremental refresh with Power BI dataflows
 description: Learn how to configure incremental refresh for dataflows
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: kayu
 
 ms.service: powerbi

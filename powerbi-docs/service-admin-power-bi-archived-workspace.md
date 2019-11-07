@@ -2,7 +2,7 @@
 title: Power BI Archived Workspace
 description: Power BI Archived Workspace after managing your Office 365 tenant
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

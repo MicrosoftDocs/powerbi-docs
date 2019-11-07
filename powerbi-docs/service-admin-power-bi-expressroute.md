@@ -2,7 +2,7 @@
 title: Power BI and ExpressRoute
 description: Power BI and ExpressRoute
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

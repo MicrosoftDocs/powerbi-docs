@@ -2,7 +2,7 @@
 title: Connect to SweetIQ with Power BI
 description: SweetIQ for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

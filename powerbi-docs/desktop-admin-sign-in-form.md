@@ -2,7 +2,7 @@
 title: How admins can manage the Power BI Desktop sign-in form
 description: Learn how you can manage the initial sign-in form when opening Power BI Desktop.
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

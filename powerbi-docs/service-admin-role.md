@@ -2,7 +2,7 @@
 title: Understanding the Power BI admin role
 description: This article describes the Power BI service administrator role and how to use it in your organization.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

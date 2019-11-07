@@ -2,7 +2,7 @@
 title: Add a filter to a report in Power BI
 description: Add a page filter, visualization filter, or report filter to a report in Power BI
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

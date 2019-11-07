@@ -2,7 +2,7 @@
 title: 'Tutorial: Invoke a Machine Learning Studio model in Power BI (Preview)'
 description: In this tutorial you invoke a Machine Learning Studio model in Power BI.
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: SarinaJoan
 
 ms.service: powerbi

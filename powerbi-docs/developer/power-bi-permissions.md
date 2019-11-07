@@ -3,7 +3,7 @@ title: Power BI permissions
 description: Power BI permissions
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

@@ -2,7 +2,7 @@
 title: Query overview in Power BI Desktop
 description: Query overview in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Tips for creating stunning reports
 description: Tips and tricks for creating reports in Power BI service and Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: 'willthom'
 
 ms.service: powerbi

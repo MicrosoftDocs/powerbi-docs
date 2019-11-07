@@ -2,7 +2,7 @@
 title: Power BI licensing in your organization 
 description: "Understand the different license types that are available in Power BI: free licenses, Power BI Pro, and Power BI Premium."
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

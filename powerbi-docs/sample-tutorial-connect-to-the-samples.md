@@ -2,7 +2,7 @@
 title: Connect to the samples in the Power BI service
 description: Learn to install and explore the samples in the Power BI service.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi

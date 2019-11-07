@@ -2,7 +2,7 @@
 title: Using the same account for Power BI and Azure
 description: How to use the same account login for Power BI and Azure
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

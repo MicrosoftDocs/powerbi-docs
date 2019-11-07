@@ -2,7 +2,7 @@
 title: Connect to Troux with Power BI
 description: Troux for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

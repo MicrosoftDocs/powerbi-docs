@@ -2,7 +2,7 @@
 title: Connect to appFigures with Power BI
 description: appFigures for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

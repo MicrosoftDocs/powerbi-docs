@@ -2,7 +2,7 @@
 title: Use custom format strings in Power BI Desktop
 description: Learn how to customize format strings in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

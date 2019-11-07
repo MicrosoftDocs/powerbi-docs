@@ -2,7 +2,7 @@
 title: Connect to Twilio with Power BI
 description: Twilio for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

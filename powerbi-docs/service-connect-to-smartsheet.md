@@ -2,7 +2,7 @@
 title: Connect to Smartsheet with Power BI
 description: Smartsheet for Power BI
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: 
 
 ms.service: powerbi

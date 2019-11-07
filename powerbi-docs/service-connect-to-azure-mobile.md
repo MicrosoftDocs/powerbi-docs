@@ -2,7 +2,7 @@
 title: Connect to Azure Mobile Engagement with Power BI
 description: Azure Mobile Engagement for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

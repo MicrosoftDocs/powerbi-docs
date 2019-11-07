@@ -2,7 +2,7 @@
 title: Office 365 dedicated customers - known issues
 description: Support for Office 365 dedicated customers - known issues. This topic describes issues specific to an Office 365 Dedicated customer. This includes limitations to the group feature as well as the iPhone app with vanity domains.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

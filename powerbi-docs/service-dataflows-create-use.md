@@ -2,7 +2,7 @@
 title: Creating and using dataflows in Power BI
 description: Learn to create and use dataflows in Power BI
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

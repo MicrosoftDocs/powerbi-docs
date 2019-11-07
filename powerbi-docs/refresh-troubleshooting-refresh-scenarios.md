@@ -2,7 +2,7 @@
 title: Troubleshooting refresh scenarios
 description: Troubleshooting refresh scenarios
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: kayu
 
 ms.service: powerbi

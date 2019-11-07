@@ -2,7 +2,7 @@
 title: Data types in Power BI Desktop
 description: Data types in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Previous monthly updates to Power BI Desktop
 description: Feature updates from previous releases of Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

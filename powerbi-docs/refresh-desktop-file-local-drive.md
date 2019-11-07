@@ -2,7 +2,7 @@
 title: Refresh a dataset created from a Power BI Desktop file - local
 description: Refresh a dataset created from a Power BI Desktop file on a local drive
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: kayu
 
 ms.service: powerbi

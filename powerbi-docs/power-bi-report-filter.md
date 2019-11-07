@@ -2,7 +2,7 @@
 title: The new filter experience in Power BI reports
 description: Filters in Power BI are getting new functionality and a new design. 
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

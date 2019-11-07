@@ -2,7 +2,7 @@
 title: Use What if parameters to visualize variables
 description: Create your own What if variable to imagine and visualize variables in Power BI reports
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18

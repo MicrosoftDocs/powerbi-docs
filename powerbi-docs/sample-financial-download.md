@@ -2,7 +2,7 @@
 title: Download the Financial Sample workbook for Power BI
 description: Download the Financial Sample workbook for Power BI
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: amac
 
 ms.service: powerbi

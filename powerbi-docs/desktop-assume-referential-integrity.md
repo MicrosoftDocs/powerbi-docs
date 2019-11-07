@@ -2,7 +2,7 @@
 title: Assume referential integrity setting in Power BI Desktop
 description: With DirectQuery, learn how to have Power BI Desktop assume referential integrity
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

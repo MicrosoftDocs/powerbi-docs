@@ -2,7 +2,7 @@
 title: Power BI Desktop videos
 description: Power BI Desktop videos
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

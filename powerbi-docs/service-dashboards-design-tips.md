@@ -2,7 +2,7 @@
 title: Tips for designing a great Power BI dashboard
 description: Tips for designing a great Power BI dashboard
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

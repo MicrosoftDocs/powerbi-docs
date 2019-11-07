@@ -2,7 +2,7 @@
 title: 'Error: We couldn''t find any data in your Excel workbook'
 description: 'Error: We couldn''t find any data in your Excel workbook'
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

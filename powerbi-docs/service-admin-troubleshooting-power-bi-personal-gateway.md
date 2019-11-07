@@ -2,7 +2,7 @@
 title: Troubleshooting Power BI gateway (personal mode)
 description: Troubleshooting Power BI gateway (personal mode)
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

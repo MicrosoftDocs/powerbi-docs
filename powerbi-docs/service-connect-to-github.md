@@ -2,7 +2,7 @@
 title: Connect to GitHub with Power BI
 description: GitHub for Power BI
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: sarinas
 
 ms.service: powerbi

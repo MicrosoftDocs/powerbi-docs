@@ -2,7 +2,7 @@
 title: How to configure Power BI report scheduled refresh
 description: To refresh data in your Power BI report, a scheduled refresh plan must be created.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: kayu
 
 ms.service: powerbi

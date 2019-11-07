@@ -2,7 +2,7 @@
 title: View SSRS mobile reports, KPIs in Windows 10 mobile app - Power BI
 description: The Power BI mobile app for Windows 10 offers live, touch-enabled mobile access to your important on-premises business information.
 author: mshenhav
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

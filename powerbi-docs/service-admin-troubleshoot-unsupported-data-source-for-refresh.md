@@ -2,7 +2,7 @@
 title: Troubleshooting unsupported data source for refresh
 description: Troubleshooting unsupported data source for refresh
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: kayu
 
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Edit a dashboard tile  
 description: This tutorial takes your from creating a tile and pinning it to a dashboard, to learning how to edit that dashboard tile -- resize, move, rename, pin, delete, add hyperlink.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 

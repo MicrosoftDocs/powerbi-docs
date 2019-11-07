@@ -2,7 +2,7 @@
 title: Connect to comScore Digital Analytix with Power BI
 description: comScore Digital Analytix for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Add a custom column in Power BI Desktop
 description: Quickly create a new custom column in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

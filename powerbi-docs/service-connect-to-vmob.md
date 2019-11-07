@@ -2,7 +2,7 @@
 title: Connect to VMob with Power BI
 description: VMob for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

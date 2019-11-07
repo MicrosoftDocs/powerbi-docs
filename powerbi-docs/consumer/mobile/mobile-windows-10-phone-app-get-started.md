@@ -2,7 +2,7 @@
 title: Get started with the Power BI mobile app for Windows 10
 description: The Power BI mobile app for Windows 10 brings up-to-date, touch-enabled mobile access to your business information on your tablet or phone.
 author: mshenhav
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

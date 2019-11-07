@@ -2,7 +2,7 @@
 title: Make Excel data work well with Q&A in Power BI
 description: How to make your data work well with Q&A in Power BI
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
