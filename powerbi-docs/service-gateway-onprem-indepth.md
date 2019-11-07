@@ -103,4 +103,4 @@ See [Restart a gateway](/data-integration/gateway/service-gateway-restart).
 
 [What is the on-premises data gateway?](service-gateway-onprem.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

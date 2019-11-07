@@ -46,7 +46,7 @@ Browse the samples to interact with KPIs and mobile reports.
 2. Tap **Connect to server**.
 3. Fill in the server address and your user name and password. Use this format for the server address:
    
-     `http://<servername>/reports`
+     `https://<servername>/reports`
      OR
      `https://<servername>/reports`
    
@@ -109,5 +109,5 @@ You don't create Reporting Services KPIs and mobile reports in the Power BI mobi
 ## Next steps
 * [Get started with the Power BI mobile app for Windows 10](mobile-windows-10-phone-app-get-started.md)  
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)  
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

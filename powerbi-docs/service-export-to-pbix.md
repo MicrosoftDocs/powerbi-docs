@@ -67,5 +67,5 @@ After you've installed Power BI Desktop, see the following article to help you g
 
 * [Getting Started with Power BI Desktop](desktop-getting-started.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/).
+More questions? [Try the Power BI Community](https://community.powerbi.com/).
 

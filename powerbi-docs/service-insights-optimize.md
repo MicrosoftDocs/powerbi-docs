@@ -24,5 +24,5 @@ Want to improve quick insights results?  If you are a dataset owner, try these:
 ### Next steps
 [Power BI quick insights](consumer/end-user-insights.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

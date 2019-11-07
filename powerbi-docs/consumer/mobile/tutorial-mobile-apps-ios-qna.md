@@ -39,7 +39,7 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 ## Prerequisites
 
 ### Install the Power BI for iOS app
-[Download the iOS app](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app")  from the Apple App Store to your iPad, iPhone, or iPod Touch.
+[Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app")  from the Apple App Store to your iPad, iPhone, or iPod Touch.
 
 These versions support the Power BI for iOS app:
 - iPad with iOS 10 or later.

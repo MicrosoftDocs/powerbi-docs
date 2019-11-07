@@ -136,5 +136,5 @@ Let's say you want to share your dashboard with your manager. You can share your
 * [Get started with Power BI Desktop](desktop-getting-started.md)
 * [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/).
+More questions? [Try the Power BI Community](https://community.powerbi.com/).
 

@@ -234,5 +234,5 @@ Give the new filter experience a try. Give us your feedback for this feature, an
 - [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 - [Different kinds of filters in Power BI](power-bi-report-filter-types.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

@@ -140,4 +140,4 @@ Read about [publishing an app from the new workspaces](service-create-distribute
 * Read about [organizing work in the new workspaces experience in Power BI](service-new-workspaces.md)
 * [Create classic workspaces](service-create-workspaces.md)
 * [Publish an app from the new workspaces in Power BI](service-create-distribute-apps.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

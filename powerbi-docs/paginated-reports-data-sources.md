@@ -69,4 +69,4 @@ For SSO and OAuth2 to work correctly, the Azure SQL Database server that the dat
 
 [View a paginated report in the Power BI service](paginated-reports-view-power-bi-service.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -257,4 +257,4 @@ The following activities are audited by Power BI:
 
 [Power BI Admin Portal](service-admin-portal.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

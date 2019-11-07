@@ -83,5 +83,5 @@ You can only delete a content pack from AppSource if you created it. If you've c
 ## Next steps
 * [Introduction to organizational content packs](service-organizational-content-pack-introduction.md)
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md) 
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

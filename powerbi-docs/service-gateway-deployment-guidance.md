@@ -66,5 +66,5 @@ If you intend to use the Power BI gateway with Azure Analysis Services, be sure 
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)  
 * [On-premises data gateway FAQ - Power BI](service-gateway-power-bi-faq.md)  
 
-More questions? Try the [Power BI Community](http://community.powerbi.com/).
+More questions? Try the [Power BI Community](https://community.powerbi.com/).
 

@@ -99,5 +99,5 @@ This limit also is indicated within **Manage personal storage**.
 
  ![Over your storage limit](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+ More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

@@ -93,4 +93,4 @@ See [How the new workspaces are different from existing workspaces](service-new-
 ## Next steps
 * [Install and use apps in Power BI](service-create-distribute-apps.md)
 - [Create the new workspaces](service-create-the-new-workspaces.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

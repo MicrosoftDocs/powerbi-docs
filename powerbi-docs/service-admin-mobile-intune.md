@@ -188,4 +188,4 @@ You install the application through the *Company Portal* app. If you haven't ins
 
 [Power BI apps for mobile devices](consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)  
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)  

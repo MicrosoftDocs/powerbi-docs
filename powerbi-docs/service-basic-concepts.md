@@ -224,4 +224,4 @@ This area of the screen contains additional options for interacting with the con
 - [Power BI videos](videos.md)  
 - [Report editor - take a tour](service-the-report-editor-take-a-tour.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -20,7 +20,7 @@ This article explains how the Power BI service delivers high availability and pr
 
 ## What does "high availability" mean for Power BI?
 
-Power BI is fully managed software as a service (SaaS).  Microsoft designs and operates it to be resilient to infrastructure failures so that users can always access their reports.  The service is supported by a [99.9% SLA](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
+Power BI is fully managed software as a service (SaaS).  Microsoft designs and operates it to be resilient to infrastructure failures so that users can always access their reports.  The service is supported by a [99.9% SLA](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
 
 ## What is a Power BI failover?
 

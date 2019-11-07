@@ -118,5 +118,5 @@ If necessary, you can verify your GitHub credentials.
 * [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
 * [Install and use apps in Power BI](consumer/end-user-apps.md)
 * [Connect to Power BI apps for external services](service-connect-to-services.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

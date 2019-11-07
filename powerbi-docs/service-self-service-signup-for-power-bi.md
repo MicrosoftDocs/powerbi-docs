@@ -83,4 +83,4 @@ In most cases, you can sign up for Power BI by following the described process. 
 [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI Service agreement for individual users](https://powerbi.microsoft.com/terms-of-service/)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

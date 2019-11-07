@@ -63,7 +63,7 @@ You can view on-premises Power BI reports, Reporting Services mobile reports, an
 
 1. Fill in the server address and your user name and password. Use this format for the server address:
    
-     `http://<servername>/reports`
+     `https://<servername>/reports`
    
      OR
    
@@ -129,5 +129,5 @@ You can mark KPIs and reports as favorites on the web portal, and then view them
 
 ## Next steps
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)  
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

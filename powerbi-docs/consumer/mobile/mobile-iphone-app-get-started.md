@@ -27,7 +27,7 @@ Then in the Power BI mobile app for iOS, you interact with your dashboards and r
 Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
 ## Download the app
-[Download the iOS app](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iOS app")  from the Apple App Store to your iPhone, iPad, or iPod Touch.
+[Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062 "Download the iOS app")  from the Apple App Store to your iPhone, iPad, or iPod Touch.
 
 You can run the Power BI for iOS app on any device running iOS 11 or later. 
 
@@ -106,6 +106,6 @@ Read more about [configuring Power BI mobile apps with Microsoft Intune](../../s
 ## Next steps
 
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
 

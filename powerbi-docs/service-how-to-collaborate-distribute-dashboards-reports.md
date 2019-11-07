@@ -130,4 +130,4 @@ With **Publish to web**, you can publish Power BI reports to the whole Internet 
 
 Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

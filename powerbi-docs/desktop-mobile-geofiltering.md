@@ -57,5 +57,5 @@ Read more about [filtering a report by location in the Power BI mobile apps](con
 
 ## Next steps
 * [Data categorization in Power BI Desktop](desktop-data-categorization.md)  
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

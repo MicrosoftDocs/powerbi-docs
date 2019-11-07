@@ -41,5 +41,5 @@ If you aren’t sure what data source was used, you can find that using the foll
 [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

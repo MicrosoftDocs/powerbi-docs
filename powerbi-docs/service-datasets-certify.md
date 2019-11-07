@@ -38,4 +38,4 @@ Read more about how tenant admins [control the use of datasets across workspaces
 ## Next steps
 
 * Read about [Using datasets across workspaces](service-datasets-across-workspaces.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -152,5 +152,5 @@ More about reports in the [Power BI service](service-report-create-new.md), [Pow
 
 [Basic concepts for Power BI designers](service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

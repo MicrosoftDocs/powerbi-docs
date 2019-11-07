@@ -82,4 +82,4 @@ When you distribute your app from the workspace, the image you add here is the i
 
 * [Publish an app in Power BI](service-create-distribute-apps.md)
 
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)

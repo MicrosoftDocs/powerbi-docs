@@ -49,5 +49,5 @@ The actions available to you will depend on the settings assigned by the content
 ## Next steps
 [Power BI service apps](end-user-apps.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

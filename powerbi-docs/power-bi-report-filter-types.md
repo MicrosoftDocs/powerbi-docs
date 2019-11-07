@@ -95,5 +95,5 @@ This table compares what authors can do with the different types of filters.
 
 [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

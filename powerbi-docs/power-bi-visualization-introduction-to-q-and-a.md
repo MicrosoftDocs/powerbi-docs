@@ -71,5 +71,5 @@ How would we go about creating this line chart using Q&A?
 - [Q&A for consumers](consumer/end-user-q-and-a.md)
 - [Make your data work well with Q&A in Power BI](service-prepare-data-for-q-and-a.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

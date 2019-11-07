@@ -55,4 +55,4 @@ This article provides instructions for manually collecting additional diagnostic
 
 1. You can provide the HAR file to support for review.
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -153,4 +153,4 @@ The Azure Active Directory setting that controls sign up is **AllowAdHocSubscrip
 
 [Purchase and assign Power BI Pro licenses](service-admin-purchasing-power-bi-pro.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

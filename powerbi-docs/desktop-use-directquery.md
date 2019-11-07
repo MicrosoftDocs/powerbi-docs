@@ -84,7 +84,7 @@ Power BI displays the **Settings** window. From there, select the **Datasets** t
 
 Until credentials are supplied, opening a published report or exploring a dataset created with a **DirectQuery** connection to such data sources results in an error.
 
-For data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse** and **Redshift** that use DirectQuery, an **On-premises data gateway** must be installed and the data source must be registered to establish a data connection. You can [learn more about On-premises data gateway](http://go.microsoft.com/fwlink/p/?LinkID=627094).
+For data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse** and **Redshift** that use DirectQuery, an **On-premises data gateway** must be installed and the data source must be registered to establish a data connection. You can [learn more about On-premises data gateway](https://go.microsoft.com/fwlink/p/?LinkID=627094).
 
 ## Next steps
 For more information about **DirectQuery**, check out the following resources:

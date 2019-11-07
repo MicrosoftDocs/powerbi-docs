@@ -60,4 +60,4 @@ To follow along, open the [Retail Analysis sample dashboard](sample-retail-analy
 [Rename, resize, add a hyperlink, reposition the tile, and more](service-dashboard-edit-tile.md)    
 [Display your dashboard tile in Focus mode](consumer/end-user-focus.md)     
 [Back to Q&A in Power BI](consumer/end-user-q-and-a.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

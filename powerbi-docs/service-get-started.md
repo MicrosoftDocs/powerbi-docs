@@ -33,7 +33,7 @@ In this tutorial, you complete the following steps:
 > * Clean up resources by deleting the dataset, report, and dashboard.
 
 > [!TIP]
-> Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](http://aka.ms/edxpbi).
+> Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](https://aka.ms/edxpbi).
 
 ## Sign up for the Power BI service
 If you don't have a Power BI account, [sign up for a free Power BI Pro trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
@@ -44,9 +44,9 @@ After you have an account, enter *app.powerbi.com* in your browser to open the P
 
 Often when you want to create a Power BI report, you start in Power BI Desktop. This time, we're going to start from scratch creating a report in the Power BI service.
 
-In this tutorial, we get data from a CSV file. Want to follow along? [Download the Financial Sample CSV file](http://go.microsoft.com/fwlink/?LinkID=521962).
+In this tutorial, we get data from a CSV file. Want to follow along? [Download the Financial Sample CSV file](https://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? No worries, you can sign up for a free trial.
+1. [Sign in to Power BI](https://www.powerbi.com/). Don’t have an account? No worries, you can sign up for a free trial.
 2. Power BI opens in your browser. Select **Get data** at the bottom of the left navigation bar.
 
     The **Get Data** page opens.   

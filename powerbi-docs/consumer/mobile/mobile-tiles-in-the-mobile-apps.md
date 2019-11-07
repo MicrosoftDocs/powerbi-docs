@@ -119,5 +119,5 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
 
 ## Next steps
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

@@ -53,4 +53,4 @@ You can find your fully qualified server name and database name in the Azure por
 * [What is Power BI?](fundamentals/power-bi-overview.md)  
 * [Get data for Power BI](service-get-data.md)  
 
-More questions? [Try the Power BI community](http://community.powerbi.com/)
+More questions? [Try the Power BI community](https://community.powerbi.com/)

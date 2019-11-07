@@ -192,7 +192,7 @@ We’re in luck; there’s another public data source that does just that, but i
 
 1. From the **Home** ribbon in Query Editor, select **New Source \> Web**. 
 
-2. Enter the address of the website for state abbreviations, *http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations*, and then select **Connect**.
+2. Enter the address of the website for state abbreviations, *https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations*, and then select **Connect**.
 
    The Navigator displays the content of the website.
 

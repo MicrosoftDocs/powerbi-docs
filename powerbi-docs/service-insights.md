@@ -91,5 +91,5 @@ Instead of searching for insights against an entire dataset, narrow your search 
 - If you own a dataset, [optimize it for Quick Insights](service-insights-optimize.md).
 - Learn about the [types of Quick Insights available](service-insight-types.md).
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/).
+More questions? [Try the Power BI Community](https://community.powerbi.com/).
 

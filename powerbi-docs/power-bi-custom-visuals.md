@@ -174,4 +174,4 @@ For more information and answers to questions, visit [Frequently asked questions
 
 * [Visualizations in Power BI Reports](visuals/power-bi-report-visualizations.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/).
+More questions? [Try the Power BI Community](https://community.powerbi.com/).

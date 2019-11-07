@@ -16,7 +16,7 @@ LocalizationGroup: Gateways
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-This article discusses some common issues when you use the on-premises data gateway with Power BI. If you encounter an issue that isn't listed here, you can use the Power BI [Community](http://community.powerbi.com) site. Or, you can create a [support ticket](http://powerbi.microsoft.com/support).
+This article discusses some common issues when you use the on-premises data gateway with Power BI. If you encounter an issue that isn't listed here, you can use the Power BI [Community](https://community.powerbi.com) site. Or, you can create a [support ticket](https://powerbi.microsoft.com/support).
 
 ## Configuration
 
@@ -236,7 +236,7 @@ For more information about troubleshooting refresh scenarios, see [Troubleshoot 
 
 ## Fiddler trace
 
-[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic. You can see the back and forth with the Power BI service from the client machine. This traffic list might show errors and other related information.
+[Fiddler](https://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic. You can see the back and forth with the Power BI service from the client machine. This traffic list might show errors and other related information.
 
 ![Using the Fiddler trace](media/service-gateway-onprem-tshoot/fiddler.png)
 
@@ -249,4 +249,4 @@ For more information about troubleshooting refresh scenarios, see [Troubleshoot 
 * [Manage your data source - SQL Server](service-gateway-enterprise-manage-sql.md)  
 * [Manage your data source - Import/scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)  
 
-More questions? Try the [Power BI Community](http://community.powerbi.com/).
+More questions? Try the [Power BI Community](https://community.powerbi.com/).

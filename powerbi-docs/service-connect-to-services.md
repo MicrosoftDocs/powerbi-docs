@@ -67,6 +67,6 @@ If you're interested in creating template apps to distribute yourself, see [Crea
 ## Next steps
 * [Distribute apps to your colleagues](service-create-distribute-apps.md)
 * [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-* More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

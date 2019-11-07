@@ -31,7 +31,7 @@ Dashboards are a portal to your company's life cycle and processes. A dashboard 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
 ### Install the Power BI for Android app
-[Download the Power BI for Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
+[Download the Power BI for Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
 
 Power BI works on Android devices running the Android 5.0 operating system or later. To check your device, go to **Settings** > **About device** > **Android version**.
 

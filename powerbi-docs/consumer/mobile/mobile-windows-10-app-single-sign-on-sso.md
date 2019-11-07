@@ -31,5 +31,5 @@ If you don’t want to use your current Windows active session credentials to si
 ## Next steps
 
 - [Get started with the Power BI mobile app for Windows 10](mobile-windows-10-phone-app-get-started.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

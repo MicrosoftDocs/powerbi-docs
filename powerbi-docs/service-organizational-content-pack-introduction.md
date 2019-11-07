@@ -72,5 +72,5 @@ All distribution group members have the same permissions to the data as the cont
 * [Create and publish an organizational content pack](service-organizational-content-pack-create-and-publish.md)
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md) 
 * [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

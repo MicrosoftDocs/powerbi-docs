@@ -25,7 +25,7 @@ Turns out you actually need to upgrade your Chrome app.
 * Go back to Google Play Store, search for Chrome, and get the upgrade.
 
 ## Next steps
-* [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
+* [Download the Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

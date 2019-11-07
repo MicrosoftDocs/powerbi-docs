@@ -137,4 +137,4 @@ This article covered how to delete the major building blocks of Power BI service
 * [Delete a dashboard tile](service-dashboard-edit-tile.md)
 * [Delete a report visualization](service-delete.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

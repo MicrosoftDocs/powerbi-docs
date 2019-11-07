@@ -76,5 +76,5 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## Next steps
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

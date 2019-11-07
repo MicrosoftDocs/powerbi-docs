@@ -36,4 +36,4 @@ Learn more about options for [RLS within the Power BI Service](service-admin-rls
 
 [Row-level security (RLS) with the Power BI service](service-admin-rls.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

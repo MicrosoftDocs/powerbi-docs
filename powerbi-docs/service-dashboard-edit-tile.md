@@ -144,5 +144,5 @@ By default, selecting a tile usually takes you to the report where the tile was 
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

@@ -108,5 +108,5 @@ In this task we'll create a simple flow from scratch that is triggered by a Powe
 * [Set data alerts in Power BI service](service-set-data-alerts.md)
 * [Set data alerts on your iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Set data alerts in the Power BI mobile app for Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

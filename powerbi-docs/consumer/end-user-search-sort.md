@@ -66,4 +66,4 @@ Additionally, you can tag content as [favorite](end-user-favorite.md) and [featu
 ## Next steps
 [Sort visuals in reports](end-user-change-sort.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

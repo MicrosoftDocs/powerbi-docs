@@ -18,7 +18,7 @@ LocalizationGroup: Connect to data
 You can connect to data in Project Online through Power BI Desktop.
 
 ## Step 1: Download Power BI Desktop
-1. [Download Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=521662), then run the installer to get **Power BI Desktop** on your computer.
+1. [Download Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=521662), then run the installer to get **Power BI Desktop** on your computer.
 
 ## Step 2: Connect to Project Online with OData
 1. Open **Power BI Desktop**.
@@ -37,5 +37,5 @@ The account you use to connect to the OData feed must have at least Portfolio Vi
 
 From here, you can choose which tables you would like to connect to and build a query.  Want an idea of how to get started?  The following blog post shows how to build a burn down chart from your Project Online data.  The blog post refers to using Power Query to connect to Project Online, but this applies to Power BI Desktop as well.
 
-[Creating burn down charts for Project using Power Pivot and Power Query](http://blogs.office.com/2014/03/24/creating-burndown-charts-for-project-using-power-pivot-and-power-query/)
+[Creating burn down charts for Project using Power Pivot and Power Query](https://blogs.office.com/2014/03/24/creating-burndown-charts-for-project-using-power-pivot-and-power-query/)
 

@@ -17,7 +17,7 @@ LocalizationGroup: Premium
 
 This article addresses questions frequently asked about Power BI Premium. For an overview, see [What is Power BI Premium?](service-premium-what-is.md).
 
-* If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
+* If you have other questions, [try asking the Power BI Community](https://community.powerbi.com/).
 * Still have an issue? Please visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 
 **What is Power BI Premium?**  

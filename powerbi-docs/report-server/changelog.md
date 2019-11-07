@@ -24,7 +24,7 @@ For detailed information about new features, see [What's new in Power BI Report 
         - Bug fixes
             - Fix for .net framework 4.7 not installed.
 	        - Fix for paginated reports for Teradata with multivalue parameters with error 110083.
-	        - Fix for URLRoot value not work if there are multiple web service URL bindings and one of them is http://+80/reportserver.
+	        - Fix for URLRoot value not work if there are multiple web service URL bindings and one of them is https://+80/reportserver.
 		  - Fix for paginated reports multivalue parameter values showing up outside the report area.
 		  
     - *Version: 1.6.7221.30698 (Build 15.0.1102.620), Released: October 9, 2019*
@@ -300,6 +300,6 @@ For detailed information about new features, see [What's new in Power BI Report 
 [Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

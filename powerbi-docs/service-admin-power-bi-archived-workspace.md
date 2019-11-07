@@ -47,5 +47,5 @@ To continue using Power BI, you should create new content in My Workspace. You s
 
 * **Dashboards**: Dashboards installed as part of content packs are automatically recreated when you reconnect to the content pack in My Workspace. If you created your own dashboards through the Power BI service, recreate those dashboards in My Workspace.
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

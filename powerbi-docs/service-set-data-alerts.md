@@ -127,4 +127,4 @@ There are many ways to manage your alerts:
 
 * [What is Power BI?](fundamentals/power-bi-overview.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

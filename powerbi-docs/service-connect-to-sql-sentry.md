@@ -19,7 +19,7 @@ Analyzing your performance data collected by SQL Sentry is easy with Power BI. P
 Connect to the [SQL Sentry content pack](https://app.powerbi.com/groups/me/getdata/services/sql-sentry) for Power BI.
 
 >[!NOTE]
->Access to a SQL Sentry account you use for connecting to http://cloud.sqlsentry.com and a Database ID you will monitor is required to connect.  Instructions for where to find the Database ID are below.
+>Access to a SQL Sentry account you use for connecting to https://cloud.sqlsentry.com and a Database ID you will monitor is required to connect.  Instructions for where to find the Database ID are below.
 
 ## How to connect
 1. Select **Get Data** at the bottom of the left navigation pane.

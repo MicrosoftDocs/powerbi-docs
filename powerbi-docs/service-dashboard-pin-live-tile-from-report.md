@@ -51,5 +51,5 @@ Watch Amanda pin a live report page to a dashboard and then follow the step-by-s
 ## Next steps
 [Dashboards in Power BI](consumer/end-user-dashboards.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

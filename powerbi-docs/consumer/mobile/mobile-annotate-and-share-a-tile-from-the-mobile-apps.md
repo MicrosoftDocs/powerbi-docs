@@ -70,5 +70,5 @@ You can [share a tile from the Power BI mobile app for Windows 10 devices](mobil
 
 ## Next steps
 * [Share a dashboard from the Power BI mobile apps](mobile-share-dashboard-from-the-mobile-apps.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

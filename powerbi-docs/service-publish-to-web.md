@@ -181,4 +181,4 @@ The cache is long-lived, so if you update the report definition (for example, if
 
 - [Embed report in a secure portal or website](service-embed-secure.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

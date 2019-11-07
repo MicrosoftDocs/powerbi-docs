@@ -65,4 +65,4 @@ Power BI selects which email to use based on the following sequence:
 
 1. If none of the above conditions are present, then Power BI uses the UPN address.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

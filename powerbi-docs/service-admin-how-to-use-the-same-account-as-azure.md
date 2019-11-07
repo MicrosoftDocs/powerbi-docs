@@ -26,7 +26,7 @@ If you want to use the same login for both Azure and Power BI, be sure to sign i
 
 You can add your organizational account as a co-administrator in Azure by following these steps:
 
-1. Sign in to the [Azure portal](http://portal.azure.com/). If you are a user in multiple Azure directories, select **Subscriptions** and then filter to view only the directory and subscriptions you want to edit.
+1. Sign in to the [Azure portal](https://portal.azure.com/). If you are a user in multiple Azure directories, select **Subscriptions** and then filter to view only the directory and subscriptions you want to edit.
 
 1. In the navigation pane, select **Access control (IAM)**, then select **Add** \> **Add co-administrator**.
 
@@ -36,4 +36,4 @@ You can add your organizational account as a co-administrator in Azure by follow
 
 1. Next time you sign in to the Azure portal, use your organizational email address.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -55,5 +55,5 @@ Are you looking for information about viewing dashboards on a mobile device? Try
 ## Next steps
 * [Create reports optimized for the Power BI phone apps](desktop-create-phone-report.md)
 * [Create responsive visuals optimized for any size](visuals/desktop-create-responsive-visuals.md)
-* More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

@@ -106,5 +106,5 @@ Report readers can turn their phones or tablets sideways to see the page in land
 * [Create a phone view of a dashboard in Power BI](service-create-dashboard-mobile-phone-view.md)
 * [View Power BI reports optimized for your phone](consumer/mobile/mobile-apps-view-phone-report.md)
 * [Create responsive visuals optimized for any size](visuals/desktop-create-responsive-visuals.md)
-* More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

@@ -456,4 +456,4 @@ In this tutorial, you've learned how to embed Power BI content into an applicati
 > [!div class="nextstepaction"]
 >[Embed for your organization](embed-sample-for-your-organization.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

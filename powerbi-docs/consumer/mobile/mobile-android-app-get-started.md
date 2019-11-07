@@ -30,7 +30,7 @@ Find out [what's new in the Power Bi mobile apps](../../mobile-whats-new-in-the-
 
 ### Get the app
 
-[Download the Power BI for Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
+[Download the Power BI for Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
   
 Power BI can run on a number of different Android devices, running the Android 5.0 operating system or later. To check on your device, go to **Settings** > **About device** > **Android version**. 
 
@@ -40,9 +40,9 @@ Even without signing up or signing in, after you open the app you can flip throu
 Find out [what's new in the Power Bi mobile apps](../../mobile-whats-new-in-the-mobile-apps.md).
 
 ## Sign up for the Power BI service on the web
-If you haven't signed up yet, go to the [Power BI service (http://powerbi.com/)](http://powerbi.com/) to sign up for your own account for creating and storing dashboards and reports, and bringing your data together. Then sign in to Power BI from your Android device to see your own dashboards from anywhere.
+If you haven't signed up yet, go to the [Power BI service (https://powerbi.com/)](https://powerbi.com/) to sign up for your own account for creating and storing dashboards and reports, and bringing your data together. Then sign in to Power BI from your Android device to see your own dashboards from anywhere.
 
-1. In the Power BI service, tap [Sign up](http://go.microsoft.com/fwlink/?LinkID=513879) to create a Power BI account.
+1. In the Power BI service, tap [Sign up](https://go.microsoft.com/fwlink/?LinkID=513879) to create a Power BI account.
 2. Start [creating your own dashboards and reports](../../service-get-started.md).
 
 ## Get started with the Power BI app on your device
@@ -131,8 +131,8 @@ Here are some other things you can do in the Android device app for Power BI wit
 * Create [reports in Power BI Desktop and publish them on the Power BI Report Server](../../report-server/quickstart-create-powerbi-report.md) web portal
 
 ### See also
-* [Download the Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
+* [Download the Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
 

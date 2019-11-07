@@ -33,5 +33,5 @@ Removing the dataset also removes all associated reports and dashboards. However
 * [Introduction to organizational content packs](service-organizational-content-pack-introduction.md) 
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md) 
 * [Basic concepts for designers in the Power BI service](service-basic-concepts.md)  
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

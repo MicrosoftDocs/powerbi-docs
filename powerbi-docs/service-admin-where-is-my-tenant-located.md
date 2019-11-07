@@ -39,5 +39,5 @@ Power BI picks a data region closest to your selection, which determines where d
 > [!IMPORTANT]
 > You cannot change the selection after you create the tenant.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

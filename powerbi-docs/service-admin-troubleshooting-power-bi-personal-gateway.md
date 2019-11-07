@@ -125,7 +125,7 @@ The **Data Management Gateway** and **PowerBIGateway** logs are present under **
 ![Data Management Gateway and PowerBIGateway logs](media/service-admin-troubleshooting-power-bi-personal-gateway/event-logs.png)
 
 ### Fiddler trace
-[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic. You can see the communication with the Power BI service from the client machine. This communication might show errors and other related information.
+[Fiddler](https://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic. You can see the communication with the Power BI service from the client machine. This communication might show errors and other related information.
 
 ![Fiddler trace](media/service-admin-troubleshooting-power-bi-personal-gateway/fiddler.png)
 
@@ -151,5 +151,5 @@ Or, you can go to your Temp folder (%temp%) and look for files that start with *
 - [Troubleshooting tile errors](refresh-troubleshooting-tile-errors.md)  
 - [Troubleshooting the on-premises data gateway](service-gateway-onprem-tshoot.md) 
  
-More questions? Try asking the [Power BI Community](http://community.powerbi.com/).
+More questions? Try asking the [Power BI Community](https://community.powerbi.com/).
 

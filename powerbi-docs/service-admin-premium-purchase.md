@@ -103,4 +103,4 @@ When you cancel your Premium subscription, or your capacity license expires, you
 [Power BI Premium FAQ](service-premium-faq.md)\
 [Planning a Power BI Enterprise Deployment whitepaper](https://aka.ms/pbienterprisedeploy)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

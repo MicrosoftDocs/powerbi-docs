@@ -93,4 +93,4 @@ Now that you have an Azure AD tenant, you can use this tenant to test items with
  
 [Quickstart: Set up a dev environment](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

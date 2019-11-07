@@ -76,6 +76,6 @@ Now that your files are in the OneDrive for Business for your workspace, you hav
 * [Create apps and workspaces in Power BI](service-create-distribute-apps.md)
 * [Import data from Excel workbooks](service-get-data-from-files.md)
 * [Connect to whole Excel workbooks](service-excel-workbook-files.md)
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)
 * Feedback? Visit [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi)
 

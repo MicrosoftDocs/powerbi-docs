@@ -104,7 +104,7 @@ When your VM opens, here are the items you see on the desktop.
 |![Number 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Opens Power BI Report Server web portal in the browser |
 |![Number 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Starts SQL Server Data Tools, for creating paginated (.RDL) reports |
 
-Double-click the **Report Server Web Portal** icon. The browser opens `http://localhost/reports/browse`. In the web portal, you see various files grouped by type. 
+Double-click the **Report Server Web Portal** icon. The browser opens `https://localhost/reports/browse`. In the web portal, you see various files grouped by type. 
 
 ![Power BI Report Server web portal](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 

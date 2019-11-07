@@ -72,5 +72,5 @@ From here, you can take direct action on the related content. For example, selec
 
 ## Next steps
 * [Get started with Power BI service](../service-get-started.md)
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

@@ -72,5 +72,5 @@ At the current time, you can favorite an app and this automatically favorites al
 
 ## Next steps
 - [Power BI: Basic concepts](end-user-basic-concepts.md)
-- More questions? Try the [Power BI Community](http://community.powerbi.com/).
+- More questions? Try the [Power BI Community](https://community.powerbi.com/).
 

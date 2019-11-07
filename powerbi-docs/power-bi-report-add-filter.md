@@ -176,5 +176,5 @@ Let's see how the drillthrough filter works.
 
 [Different kinds of filters in Power BI](power-bi-report-filter-types.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

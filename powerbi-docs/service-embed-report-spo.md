@@ -168,4 +168,4 @@ Users viewing a report in SharePoint need either a **Power BI Pro license** or t
 * [What is Power BI Premium?](service-premium-what-is.md)
 * [Embed report in a secure portal or website](service-embed-secure.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

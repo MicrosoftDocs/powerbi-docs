@@ -16,7 +16,7 @@ LocalizationGroup: Data from files
 # Get data from Comma Separated Value (.CSV) files
 ![](media/service-comma-separated-value-files/csv_icon.png)
 
-Comma separated value files, often known as a .CSV, are simple text files with rows of data where each value is separated by a comma. These types of files can contain very large amounts of data within a relatively small file size, making them an ideal data source for Power BI. You can download a sample .CSV file [here](http://go.microsoft.com/fwlink/?LinkID=619356).
+Comma separated value files, often known as a .CSV, are simple text files with rows of data where each value is separated by a comma. These types of files can contain very large amounts of data within a relatively small file size, making them an ideal data source for Power BI. You can download a sample .CSV file [here](https://go.microsoft.com/fwlink/?LinkID=619356).
 
 If you have a .CSV, it’s time to get it into your Power BI site as a dataset where you can begin exploring your data, create some dashboards, and share your insights with others.
 

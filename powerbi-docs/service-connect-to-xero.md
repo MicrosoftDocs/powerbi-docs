@@ -99,7 +99,7 @@ Provide a name for your organization to track in Power BI. A specific name allow
 * If your template app fails to refresh, check if you have connected to the same organization more than once in Power BI. Xero only allows a single active connection to an organization and you may see an error indicating your credentials are invalid if you connect to the same one more than once.  
 * For issues connecting the Xero template app for Power BI, like error messages or slow load times, first clear the cache / cookies and restart the browser, then reconnect to Power BI.  
 
-For other issues, file a ticket at http://support.powerbi.com if the issue persists.
+For other issues, file a ticket at https://support.powerbi.com if the issue persists.
 
 ## Next steps
 [Get started in Power BI](service-get-started.md)
