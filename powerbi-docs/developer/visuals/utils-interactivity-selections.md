@@ -98,7 +98,7 @@ export interface VisualDataPoint extends interactivitySelectionService.Selectabl
 }
 ```
 
-The second step is creating class of  or uses base behavior class:
+The second step is to extend base behavior class:
 
 > [!NOTE]
 > BaseBehavior introduced in [5.6.x version of interactivity utils](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0). If you use old version, create behaviour class from sample below (`BaseBehavior` class is same):

@@ -13,7 +13,7 @@ ms.date: 06/18/2019
 
 # Add interactivity into visual by Power BI visuals selections
 
-Selection provides the ability for the user to interact with your visual and also interact with other visuals. Selection on the visual users can slice data for analyze.
+PowerBI provides two ways of interaction between visuals - selection and filtering. The sample below demonstrates how to select any items in one visual and notify other visuals in the report about new selection state.
 
 `Selection` object corresponds to interface:
 
@@ -223,7 +223,7 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
 }
 ```
 
-In the sample code, you can see that we interate all categories. And in each iteration we call `createSelectionIdBuilder` to create next selection for each category by calling `withCategory` method of the selection builder. The method `createSelectionId` uses as final method to return generated `selection` object.
+In the sample code you can see that we iterate all categories. And in each iteration we call `createSelectionIdBuilder` to create the next selection for each category by calling `withCategory` method of the selection builder. The method `createSelectionId` is used as a final method to return generated `selection` object.
 
 In `withCategory` method, we pass column of `category`, in the sample it's `Manafacturer` and index of category element.
 

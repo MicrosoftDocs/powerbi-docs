@@ -13,7 +13,7 @@ ms.date: 06/18/2019
 
 # Add context menu to Power BI Visual
 
-You can use `selectionManager.showContextMenu()` with the parameters `selectionId` and a position (as an `{x:, y:}` object) to have Power BI display a context menu for your visual.
+You can use `selectionManager.showContextMenu()` with parameters `selectionId` and a position (as an `{x:, y:}` object) to have Power BI display a context menu for your visual.
 
 > [!IMPORTANT]
 > The `selectionManager.showContextMenu()` was introduced in Visuals API 2.2.0.

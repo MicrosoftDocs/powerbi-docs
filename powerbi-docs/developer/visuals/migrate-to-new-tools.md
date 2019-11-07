@@ -14,21 +14,21 @@ ms.date: 06/18/2019
 # Migrate to powerbi-visuals-tools 3.x.x
 
 Starting from version 3, Power BI Visuals Tools use Webpack to build Custom Visuals.
-For developers new version brings many new opportunities to create the visual:
+The new version brings many new opportunities for developers to create visuals:
 
-* TypeScript v3.0.1 by default. Starting from TypeScript 1.5 the nomenclature has changed. [Read more about TypeScript modules](https://www.typescriptlang.org/docs/handbook/modules.html).
+* TypeScript v3.x.x by default. Starting from TypeScript 1.5 the nomenclature has been changed. [Read more about TypeScript modules](https://www.typescriptlang.org/docs/handbook/modules.html).
 
 * ES6 modules are supported. You don't need to use [externalJS](migrate-to-new-tools.md#fix-loading-external-libraries) anymore, use ES6 imports instead.
 
 * New versions of [D3v5](https://d3js.org/) and other ES6 module-based libraries are supported.
 
-* Reduced package size. Webpack uses [Tree Shaking](https://webpack.js.org/guides/tree-shaking/) to remove unused code. It reduces code of JS and as a result, you get better performance in visual loading.
+* Reduced package size. Webpack uses [Tree Shaking](https://webpack.js.org/guides/tree-shaking/) to remove unused code. It reduces code of JS and, as a result, you get better performance in visual loading.
 
 * Improved API performance.
 
 * Globalize.js library [is integrated](migrate-to-new-tools.md#remove-globalizejs-library) into formatting-utils.
 
-* Tools uses [webpack-visualizer](https://github.com/chrisbateman/webpack-visualizer) to display the code base of the visual.
+* Tools uses [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) to display the code base of the visual.
 
 All migration steps for the new version of Power BI Visuals Tools are described below.
 
@@ -91,7 +91,7 @@ And you can also change `target` option to `ES6` if you want to use modern JavaS
 
 ## Update Custom Visuals utils
 
-If you use utils,](https://www.npmjs.com/search?q=powerbi-visuals-utils) you should update them to the latest version too.
+If you use one of [powerbi-visuals-utils](https://www.npmjs.com/search?q=powerbi-visuals-utils) you should update them to the latest version too.
 
 Execute the command `npm install powerbi-visuals-utils-<UTILNAME> --save`. (Ex. `npm install powerbi-visuals-utils-dataviewutils --save` ) to get the new version with external modules of TypeScript.
 
@@ -226,7 +226,7 @@ There are several breaking changes and you should modify your code to use the ne
 
 2. You can't apply several attributes by a single call of `attr` method. You [should pass](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR278) each attribute in different call of `attr` method. It's [similar](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/af2ff9fb0fc70bd94ea0c604d75a362411d5abeb#diff-433142f7814fee940a0ffc98dc75bfcbR247) for `style` method too.
 
-3. In D3.js v4, the new `merge` method introduced. This method is commonly used to merge the enter and update selections after a data-join. [Call merge method](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/83fe8d52d362dccd0034dd8e32c94080d9376b29#diff-433142f7814fee940a0ffc98dc75bfcbR272) two selections to use d3 properly.
+3. In D3.js v4, the new merge method is introduced. This method is commonly used to merge enter and update selections after a data-join. [Call merge method](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/83fe8d52d362dccd0034dd8e32c94080d9376b29#diff-433142f7814fee940a0ffc98dc75bfcbR272) to use d3 properly.
 
 [Read more](https://github.com/d3/d3/blob/master/CHANGES.md) about changes in D3.js library.
 
