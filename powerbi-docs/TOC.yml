@@ -110,7 +110,9 @@
     - name: "Customize visualization title, background, and legend"
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
     - name: "Show items with no data in Power BI"
-      href: desktop-show-items-no-data.md      
+      href: desktop-show-items-no-data.md
+    - name: "Auto date/time in Power BI Desktop"
+      href: desktop-auto-date-time.md   
     - name: Connect to data
       items: 
       - name: "Data sources in Power BI Desktop"

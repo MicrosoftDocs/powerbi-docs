@@ -94,5 +94,5 @@ In Power BI Desktop select _File > Options and settings > Options_, and then sel
 
 For more information about auto date/time and related topics, check out the following resources:
 
-- [Set and use date tables in Power BI Desktop](../desktop-date-tables.md)
+- [Set and use date tables in Power BI Desktop](desktop-date-tables.md)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
