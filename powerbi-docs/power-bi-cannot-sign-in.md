@@ -3,7 +3,7 @@ title: Can't contact Power BI support
 description: Workarounds for creating a Power BI case if a user can't sign in
 author: mgblythe
 ms.author: mblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -22,7 +22,7 @@ However, if you are a **tenant admin** for your organization and you still can't
 
 ## Engage the support team
 
-First, try to create a support ticket through the [Power BI support page](https://powerbi.microsoft.com/en-us/support/).
+First, try to create a support ticket through the [Power BI support page](https://powerbi.microsoft.com/support/).
 
 If you are unable to go through the Power BI support page, then try to create a ticket via the [Office 365 (O365) support page](https://support.office.com/home/contact).
 

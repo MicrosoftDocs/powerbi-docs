@@ -2,7 +2,7 @@
 title: 'Tutorial: Invoke a Machine Learning Studio model in Power BI (Preview)'
 description: In this tutorial you invoke a Machine Learning Studio model in Power BI.
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: SarinaJoan
 
 ms.service: powerbi
@@ -41,7 +41,7 @@ To access an Azure ML model from Power BI, you must have **Read** access to the 
 
 The following steps assume you are the coadministrator for the Azure subscription and resource group to which the model was published.
 
-Sign in to the [Azure portal](https://portal.azure.com), and navigate to the **Subscriptions** page, which you can find using the **All Services** list in the left navigation menu.
+Sign in to the [Azure portal](https://portal.azure.com), and navigate to the **Subscriptions** page, which you can find using the **All Services** list in the nav pane menu.
 
 ![Azure portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
@@ -132,7 +132,7 @@ Selecting the **Edit** icon opens Power Query Editor for the entities in your da
 
 ![Edit](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_16.png)
 
-Select the **AI Insights** button in the ribbon, and then select the _Azure Machine Learning Models_ folder from the left navigation menu.
+Select the **AI Insights** button in the ribbon, and then select the _Azure Machine Learning Models_ folder from the nav pane menu.
 
 The Azure ML models to which you've been granted access are listed as Power Query functions with a prefix *AzureML.*  When you click on the function corresponding to the _AutomobilePricePrediction_ model, the parameters for the model's web service are listed as function parameters.
 

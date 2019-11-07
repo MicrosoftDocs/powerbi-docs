@@ -2,7 +2,7 @@
 title: 'Third-party service: Google Analytics connector'
 description: 'Third-party service: Google Analytics connector for Power BI Desktop'
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18

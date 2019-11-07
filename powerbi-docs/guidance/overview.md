@@ -2,7 +2,7 @@
 title: Guidance for Power BI
 description: Guidance documentation provides recommended practices when using Power BI. 
 author: guyinacube
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -33,6 +33,6 @@ Here you will find the guidance and recommended practices for Power BI. Guidance
 
 | Guidance | Description |
 | --- | --- |
-| [Dataflows best practice](/service-dataflows-best-practices.md) | Describes best practices for designing dataflows in Power BI. |
+| [Dataflows best practice](../service-dataflows-best-practices.md) | Describes best practices for designing dataflows in Power BI. |
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

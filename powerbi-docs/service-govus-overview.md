@@ -2,7 +2,7 @@
 title: Power BI for United States Government customers - Overview
 description: For U.S. Government customers, learn about the features and limitations for the Power BI US Government service
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

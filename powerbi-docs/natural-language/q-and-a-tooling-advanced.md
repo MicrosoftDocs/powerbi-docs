@@ -339,4 +339,4 @@ If you make a change to a .lsdl.yaml file that does not conform to the linguisti
 
 ![yaml file showing errors](media/q-and-a-tooling-advanced/power-bi-yaml-errors.png)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

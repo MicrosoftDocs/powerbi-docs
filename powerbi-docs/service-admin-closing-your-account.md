@@ -2,7 +2,7 @@
 title: Close your Power BI account
 description: If you don't want to use Power BI any longer, you can close your Power BI account.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -46,4 +46,4 @@ If your organization signed you up for Power BI, contact your tenant admin. Ask 
 
 ![Managed close account](media/service-admin-closing-your-account/close-account-managed.png)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

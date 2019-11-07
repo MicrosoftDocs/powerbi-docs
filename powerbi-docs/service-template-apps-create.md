@@ -2,7 +2,7 @@
 title: Create template apps in Power BI
 description: How to create template apps in Power BI that you can distribute to any Power BI customer.
 author: teddybercovitz
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -81,7 +81,7 @@ Now that you have content in your workspace, you're ready to package it in a tem
 
     **Navigation**
 
-    Activate the **New navigation builder** where you can define the left navigation pane of the app (See [Design the navigation experience](service-create-distribute-apps.md#design-the-navigation-experience) in this article for details).
+    Activate the **New navigation builder** where you can define the nav pane of the app (See [Design the navigation experience](service-create-distribute-apps.md#design-the-navigation-experience) in this article for details).
 
    ![Set app landing page](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
     

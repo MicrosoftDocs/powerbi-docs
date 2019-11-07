@@ -2,7 +2,7 @@
 title: Power BI and Azure egress
 description: Understand Azure egress charges and Power BI based on tenant location and Power BI Premium
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

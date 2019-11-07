@@ -2,7 +2,7 @@
 title: Connect to Azure Mobile Engagement with Power BI
 description: Azure Mobile Engagement for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
@@ -21,7 +21,7 @@ The Power BI Azure Mobile Engagement content pack allows to you quickly gain ins
 Connect to the [Azure Mobile Engagement content pack](https://app.powerbi.com/groups/me/getdata/services/azme) for Power BI.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
     ![](media/service-connect-to-azure-mobile/getdata.png)
 2. In the **Services** box, select **Get**.
@@ -36,7 +36,7 @@ Connect to the [Azure Mobile Engagement content pack](https://app.powerbi.com/gr
 5. For Authentication Method, provide your Key then click Sign In.
    
     ![](media/service-connect-to-azure-mobile/creds.png)
-6. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \* which disappears once selected:
+6. After Power BI imports the data you will see a new dashboard, report, and dataset in the nav pane. New items are marked with a yellow asterisk \* which disappears once selected:
    
     ![](media/service-connect-to-azure-mobile/dashboard.png)
 

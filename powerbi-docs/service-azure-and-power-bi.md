@@ -3,7 +3,7 @@ title: Azure and Power BI
 description: Azure and Power BI
 author: davidiseminger
 ms.author: davidi
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -26,7 +26,7 @@ You can start with a straightforward connection to an Azure SQL Database, and cr
 
 ![SQL to PBI](media/service-azure-and-power-bi/azure_2_sqltopbi.png)
 
-There's plenty more information for you to learn about [Azure SQL Database](http://azure.microsoft.com/services/sql-database/).
+There's plenty more information for you to learn about [Azure SQL Database](https://azure.microsoft.com/services/sql-database/).
 
 ## Transform, shape, and merge your cloud data
 
@@ -38,13 +38,13 @@ You can create different reports for different audiences too, using the same dat
 
 For more information, take a look at the following resources:
 
-* [Azure SQL Database](http://azure.microsoft.com/services/sql-database/)
-* [Azure HDInsight](http://azure.microsoft.com/services/hdinsight/)
-* [Azure Storage](http://azure.microsoft.com/services/storage/) (Blob storage and Table storage)
+* [Azure SQL Database](https://azure.microsoft.com/services/sql-database/)
+* [Azure HDInsight](https://azure.microsoft.com/services/hdinsight/)
+* [Azure Storage](https://azure.microsoft.com/services/storage/) (Blob storage and Table storage)
 
 ## Get complex (and ahead) using Azure Services and Power BI
 
-You can expand as much as you need with Azure and Power BI. Harness multi-source data processing, make use of massive real-time systems, use [Stream Analytics](http://azure.microsoft.com/services/stream-analytics/)and [Event Hubs](http://azure.microsoft.com/services/event-hubs/), and coalesce your varied SaaS services into business intelligence reports that give your business an edge.
+You can expand as much as you need with Azure and Power BI. Harness multi-source data processing, make use of massive real-time systems, use [Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)and [Event Hubs](https://azure.microsoft.com/services/event-hubs/), and coalesce your varied SaaS services into business intelligence reports that give your business an edge.
 
 ![Azure Complex](media/service-azure-and-power-bi/azure_4_complex.png)
 
@@ -52,7 +52,7 @@ You can expand as much as you need with Azure and Power BI. Harness multi-source
 
 Embed stunning, interactive data visualizations in applications, websites, portals, and more, to take advantage of your business data. With [Power BI Embedded as a resource in Azure](https://azure.microsoft.com/services/power-bi-embedded/), you can easily embed interactive reports and dashboards, so your users can enjoy consistent, high-fidelity experiences across devices.  Power BI used with embedding analytics is to help you through your journey from Data -> Knowledge -> Insights -> Actions.  Furthermore, you can extend the value of Power BI and Azure also by embedding analytics in your [organization's internal applications and portals](https://powerbi.microsoft.com/developers/embedded-analytics/organization/).
 
-There's lots of information about Power BI APIs in the [Power BI Developer Portal](http://dev.powerbi.com).
+There's lots of information about Power BI APIs in the [Power BI Developer Portal](https://dev.powerbi.com).
 
 For more information, see [What can developers do with Power BI?](developer/what-can-you-do.md).
 
