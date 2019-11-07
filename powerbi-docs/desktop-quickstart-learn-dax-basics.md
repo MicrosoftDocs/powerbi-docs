@@ -2,7 +2,7 @@
 title: DAX basics in Power BI Desktop
 description: DAX basics in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -29,7 +29,7 @@ We’ll focus on understanding DAX formulas used in calculations, more specifica
 
 ### Example workbook
 
-The best way to learn DAX is to create some basic formulas, use them with actual data, and see the results for yourself. The examples and tasks here use the [Contoso Sales Sample for Power BI Desktop file](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip). This sample file is the same one used in the [Tutorial: Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md) article. 
+The best way to learn DAX is to create some basic formulas, use them with actual data, and see the results for yourself. The examples and tasks here use the [Contoso Sales Sample for Power BI Desktop file](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip). This sample file is the same one used in the [Tutorial: Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md) article. 
 
 ## Let's begin!
 We'll frame our understanding of DAX around three fundamental concepts: *Syntax*, *Functions*, and *Context*. There are other important concepts in DAX, but understanding these three concepts will provide the best foundation on which to build your DAX skills.
@@ -78,7 +78,7 @@ Let’s create a simple formula. This task will help you further understand form
 
 ### Task: Create a measure formula
 
-1. [Download](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) and open the Contoso Sales Sample Power BI Desktop file. 
+1. [Download](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) and open the Contoso Sales Sample Power BI Desktop file. 
     
 2. In Report view, in the field list, right-click the **Sales** table, and then select **New Measure**.
     
@@ -209,7 +209,7 @@ Answers are provided at the end of this article.
 ## Summary
 Now that you have a basic understanding of the most important concepts in DAX, you can begin creating DAX formulas for measures on your own. DAX can indeed be a little tricky to learn, but there are many resources available to you. After reading through this article and experimenting with a few of your own formulas, you can learn more about other DAX concepts and formulas that can help you solve your own business problems. There are many DAX resources available to you; most important is the [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx).
 
-Because DAX has been around for several years in other Microsoft BI tools such as Power Pivot and Analysis Services Tabular models, there’s a lot of great information out there. You can find more information in books, whitepapers, and blogs from both Microsoft and leading BI professionals. The [DAX Resource Center Wiki on TechNet](http://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) is also a great place to start.
+Because DAX has been around for several years in other Microsoft BI tools such as Power Pivot and Analysis Services Tabular models, there’s a lot of great information out there. You can find more information in books, whitepapers, and blogs from both Microsoft and leading BI professionals. The [DAX Resource Center Wiki on TechNet](https://social.technet.microsoft.com/wiki/contents/articles/dax-resource-center.aspx) is also a great place to start.
 
 ### QuickQuiz answers
 Syntax:

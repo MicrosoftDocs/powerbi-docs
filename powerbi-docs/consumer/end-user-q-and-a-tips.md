@@ -87,5 +87,5 @@ Back to [Q&A in Power BI](end-user-q-and-a.md)
 
 [Power BI - Basic Concepts](end-user-basic-concepts.md)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

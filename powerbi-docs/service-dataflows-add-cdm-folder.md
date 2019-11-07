@@ -2,7 +2,7 @@
 title: Add a CDM folder to Power BI as a dataflow
 description: Configure a workspace to store its dataflow definition and data files in Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -29,7 +29,7 @@ The following sections describe how to create a dataflow from a CDM folder.
 
 ## Create a dataflow from a CDM folder
 
-To get started creating a dataflow from a CDM folder, launch the **Power BI service** and select a **workspace** from the left navigation pane. You can also create a new workspace, in which you can create your new dataflow.
+To get started creating a dataflow from a CDM folder, launch the **Power BI service** and select a **workspace** from the nav pane. You can also create a new workspace, in which you can create your new dataflow.
 
 ![Create a dataflow in the Power BI service](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_02.jpg)
 
@@ -106,5 +106,5 @@ For more information about the Common Data Model, you can read its overview arti
 * [CDM folders](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-And you can always try [asking questions of the Power BI Community](http://community.powerbi.com/).
+And you can always try [asking questions of the Power BI Community](https://community.powerbi.com/).
 

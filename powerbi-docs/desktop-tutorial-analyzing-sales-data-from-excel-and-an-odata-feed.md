@@ -2,7 +2,7 @@
 title: 'Tutorial: Combine data from Excel and an OData feed in Power BI Desktop'
 description: 'Tutorial: Combine data from Excel and an OData feed'
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -31,7 +31,7 @@ You're going to import each dataset and do transformation and aggregation operat
 
 First, import the Products.xlsx Excel workbook's product data into Power BI Desktop.
 
-1. [Download the Products.xlsx Excel workbook](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx) and save it as **Products.xlsx**.
+1. [Download the Products.xlsx Excel workbook](https://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx) and save it as **Products.xlsx**.
    
 2. Select the dropdown arrow next to **Get Data** in the Power BI Desktop ribbon's **Home** tab, and then, select **Excel** from the **Most Common** dropdown. 
    
@@ -72,7 +72,7 @@ Next, import the order data from the sample Northwind sales system OData feed.
    
    ![Get OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata.png)
    
-2. In the **OData feed** dialog box, paste the Northwind OData feed URL, `http://services.odata.org/V3/Northwind/Northwind.svc/`. Select **OK**.
+2. In the **OData feed** dialog box, paste the Northwind OData feed URL, `https://services.odata.org/V3/Northwind/Northwind.svc/`. Select **OK**.
    
    ![OData feed dialog](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
    
@@ -267,7 +267,7 @@ Select a **Quantity by ProductName** chart product to see the map and the date c
 Your completed report combines data from the Products.xlsx Excel file and the Northwind OData feed in visuals that help you analyze different countries' order information, timeframes, and products. When your report is ready, you can [upload it to Power BI service](desktop-upload-desktop-files.md) to share it with other Power BI users.
 
 ## Next steps
-* [Read other Power BI Desktop tutorials](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Watch Power BI Desktop videos](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Visit the Power BI Forum](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Read the Power BI Blog](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Read other Power BI Desktop tutorials](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Watch Power BI Desktop videos](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)

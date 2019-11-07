@@ -40,9 +40,9 @@ The name of the owner is available from the title bar of dashboards and reports.
 
 The app screen shows you both the name of the designer as well as the date the app was last updated.  
 
-1. From the left nav pane, select **Apps**.
+1. From the nav pane, select **Apps**.
 
-    ![left nav pane](media/end-user-fresh/power-bi-nav-app.png)
+    ![nav pane](media/end-user-fresh/power-bi-nav-app.png)
 
 
 
@@ -82,7 +82,7 @@ The **Related content** pane displays the last refresh information for the dashb
 
 ## What happens if an app is deleted by the designer
 
-If a designer deletes an app, the dashboards and reports associated with that app are automatically removed from your Power BI workspace as well. They're no longer available, and the app doesn't appear in the Apps container or elsewhere in the nav bar.
+If a designer deletes an app, the dashboards and reports associated with that app are automatically removed from your Power BI workspace as well. They're no longer available, and the app doesn't appear in the Apps container or elsewhere in the nav pane.
 
 
 ## Subscribe to see changes

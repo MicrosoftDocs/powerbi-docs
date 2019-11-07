@@ -2,7 +2,7 @@
 title: Set data alerts in the Power BI mobile apps
 description: Learn to set alerts in the Power BI mobile apps to notify you when data in a dashboard changes beyond limits you set.
 author: mshenhav
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -164,5 +164,5 @@ Data sources are often set to refresh daily, although some refresh more often. W
 ## Next steps
 * [Manage your alerts in the Power BI service](../../service-set-data-alerts.md)
 * [Power BI Mobile Notification Center](mobile-apps-notification-center.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

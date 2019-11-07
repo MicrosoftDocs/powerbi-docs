@@ -2,7 +2,7 @@
 title: Formula editor in Power BI Desktop
 description: Create and edit DAX formulas in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

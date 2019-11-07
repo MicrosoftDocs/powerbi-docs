@@ -70,5 +70,5 @@ You can also focus on one data record in a visualization, and drill into the dat
 ## Next steps
 [Export data from Power BI visualizations](power-bi-visualization-export-data.md)    
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

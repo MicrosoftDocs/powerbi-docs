@@ -2,7 +2,7 @@
 title: Developer resources for Power BI dataflows
 description: Find resources for development and Power BI dataflows
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

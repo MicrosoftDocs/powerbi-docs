@@ -2,7 +2,7 @@
 title: Connect to an OData feed in Power BI Desktop
 description: Easily connect to and use an OData feed in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18

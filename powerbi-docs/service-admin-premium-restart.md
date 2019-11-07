@@ -3,7 +3,7 @@ title: Restart a Power BI Premium capacity
 description: Learn how to restart a Power BI Premium capacity to address performance issues.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -55,4 +55,4 @@ We also recommend that you [monitor your capacities](service-admin-premium-monit
 
 [What is Power BI Premium?](service-premium-what-is.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

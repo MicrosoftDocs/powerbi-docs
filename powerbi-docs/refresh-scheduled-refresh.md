@@ -2,7 +2,7 @@
 title: Configure scheduled refresh
 description: This covers the steps to select a gateway and configure scheduled refresh.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: kayu''
 
 ms.service: powerbi
@@ -123,5 +123,5 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 - [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 - [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

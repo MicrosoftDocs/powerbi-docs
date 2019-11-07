@@ -2,7 +2,7 @@
 title: Automated Machine Learning in Power BI
 description: Learn how to use Automated Machine Learning (AutoML) in Power BI
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ""
 
 ms.service: powerbi

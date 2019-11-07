@@ -2,7 +2,7 @@
 title: Supported browsers for Power BI
 description: See a list of browsers that support Power BI
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -25,6 +25,6 @@ These browsers are supported on all platforms where they're available.
 
 ### Next steps
 * [What is Power BI?](power-bi-overview.md)
-* Try asking the [Power BI Community](http://community.powerbi.com/)
+* Try asking the [Power BI Community](https://community.powerbi.com/)
 * Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/)
 
