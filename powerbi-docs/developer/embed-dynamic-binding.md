@@ -20,19 +20,20 @@ This means that you can use one report to display different information, dependi
  
 The report and the dataset don't need to reside in the same workspace. Both workspaces (the one containing the report, and the one containing the dataset) must be assigned to a [capacity](azure-pbie-create-capacity.md).
 
+As part of the embedding process, make sure you *generate a token with sufficient permissions*, and *adjust the config object*.
 
-## Generating a token
 
-Dymanic binding is supported for both *Embedding for your organization* and *Embedding for your customers* scenarios. The table below describes the considerations for each solution.
+## Generating a token with sufficient permissions
 
-As part of the embedding process, make sure you [adjust the config object](#adjusting-the-config-object).
+Dymanic binding is supported for both *Embedding for your organization* and *Embedding for your customers* scenarios. The table below describes the considerations for each scenario.
 
-| Solution                   | Token                               | Requirements                                                                                                                                                  |
-|---------------------------------|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Embedding for your organization* | Access token for Power BI users     | The user who’s Azure AD token is used, must have appropriate permissions for all artifacts.                                                                    |
-| *Embedding for your customers*    | Access token for non-Power BI users | Must include permissions for both the report and the dynamically bound dataset. Use the [API for generating an embed token for multiple items](embed-sample-for-customers.md#multiEmbedToken), to generate an embed token that supports multiple artifacts. |
 
-### Adjusting the config object
+|Scenario  |Data ownership  |Token  |Requirements  |
+|---------|---------|---------|---------|
+|*Embedding for your organization*    |User owns data         |Access token for Power BI users         |The user who’s Azure AD token is used, must have appropriate permissions for all artifacts.         |
+|*Embedding for your customers*     |App owns data         |Access token for non-Power BI users         |Must include permissions for both the report and the dynamically bound dataset. Use the [API for generating an embed token for multiple items](embed-sample-for-customers.md#multiEmbedToken), to generate an embed token that supports multiple artifacts.         |
+
+## Adjusting the config object
 Add `datasetBinding` to the config object. Use the example below as a reference.
 
 ```javascript
