@@ -8,24 +8,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 11/07/2019
 ms.author: painbar
 ---
 
 # Remotely configure Power BI app using mobile device management (MDM) tool
 
-The Power BI Mobile app for iOS and Android supports app settings that allow administrators for Office 365 and mobile device management (MDM), such as Intune, to customize the behavior of the app.
+The Power BI Mobile app for iOS and Android supports app settings that allow administrators of Office 365 and mobile device management (MDM) services, such as Intune, to customize the behavior of the app.
 
 The Power BI Mobile app supports the following configuration scenarios:
 
 - Report Server configuration (iOS and Android)
 - Data protection settings (iOS)
 
-## Report server configuration
+## Report server configuration (iOS and Android)
 
-**Applies to: iOS and Android**
-
-The Power BI app for iOS and Android allows administrators to remotely "push" Report Server configuration with enrolled devices.
+The Power BI app for iOS and Android allows administrators to remotely "push" the Report Server configuration to enrolled devices.
 
 | Key | Type | Description |
 |---|---|---|
@@ -34,11 +32,9 @@ The Power BI app for iOS and Android allows administrators to remotely "push" Re
 | com.microsoft.powerbi.mobile.ServerDisplayName | String | [optional]<br><br>Default value is “Report server”<br><br>A friendly name used in the app to represent the server. |
 | com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | [optional]<br><br>Default value is True. When set to True, it overrides any Report Server definition already in the mobile device. Existing servers that are already configured are deleted. Override set to True also prevents the user from removing that configuration.<br><br>Set to False adds the pushed values, leaving any existing settings. If the same server URL is already configured in the mobile app, the app leaves that configuration as is. The app doesn't ask the user to reauthenticate for the same server. |
 
-## Data protection settings
+## Data protection settings (iOS and Android)
 
-**Applies to: iOS**
-
-The Power BI app for iOS offers administrators the ability to customize the default configuration for security and privacy settings. You can force users to provide their Face ID, Touch ID, or a passcode when accessing Power BI app.
+The Power BI app for iOS offers administrators the ability to customize the default configuration for security and privacy settings. You can force users to provide their Face ID, Touch ID, or a passcode when accessing the Power BI app.
 
 | Key | Type | Description |
 |---|---|---|
@@ -46,23 +42,17 @@ The Power BI app for iOS offers administrators the ability to customize the defa
 
 ## Deploying app configuration settings
 
-**Applies to: iOS**
-
-The following steps will allow you to create an app configuration policy. After the configuration policy is created, you can assign its settings to groups of users.
+The following are the steps you need to create an app configuration policy. Once you've created the configuration policy, you can assign its settings to groups of users.
 
 1. Connect your MDM tool.
-
 2. Create and name a new app configuration policy.
-
 3. Choose which users to distribute this app configuration policy to.
-
 4. Create key-value pairs for the setting you want to push to your users.
 
-The Intune portal enables administrators to easily deploy these settings to Power BI app via app configuration policies.
-However, any MDM provider is supported. If you are not using Intune, you'll need to consult with your MDM documentation on how to deploy these settings.
+The Intune portal enables administrators to easily deploy these settings to the Power BI app via app configuration policies. However, any MDM provider is supported. If you are not using Intune, you'll need to consult with your MDM documentation about how to deploy these settings.
 
 ## Next steps
 
-* Get the Power BI mobile app from the [App store]("https://apps.apple.com/us/app/microsoft-power-bi/id929738808) and [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409)
+* Get the Power BI mobile app from the [App store]("https://apps.apple.com/app/microsoft-power-bi/id929738808) and [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409)
 * Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
 * Join the conversation at the [Power BI Community](http://community.powerbi.com/)
