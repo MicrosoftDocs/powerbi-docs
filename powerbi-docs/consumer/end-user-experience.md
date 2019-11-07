@@ -10,7 +10,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: quickstart
-ms.date: 10/18/2019
+ms.date: 10/30/2019
 ms.author: mihart
 #customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
 LocalizationGroup: Get started
@@ -88,7 +88,7 @@ Open the dashboard by selecting the dashboard name.
    
    ![mark as favorite](./media/end-user-experience/power-bi-report-favorite.png)
 
-3. Open the **Favorites** *pane*, by selecting **Favorites** from the left navpane or by selecting the star icon ![](media/end-user-experience/powerbi-star-icon.png).
+3. Open the **Favorites** *pane*, by selecting **Favorites** from the left navpane or by selecting the star icon ![screenshot showing a yellow star icon](media/end-user-experience/powerbi-star-icon.png).
    
    ![open Favorites screen](./media/end-user-experience/power-bi-favorite-pane.png)
    

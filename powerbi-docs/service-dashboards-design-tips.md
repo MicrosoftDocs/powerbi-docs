@@ -21,8 +21,6 @@ Now that you've created a dashboard and added some tiles, think about how to mak
 > [!TIP]
 > Like this dashboard? You can download it and related reports from AppSource. Go to **Get data** > **Services**. Search for **Microsoft Sample - Sales & Marketing** > **Get it now**.
 
-Many of the design principles for reports apply to dashboards as well. Read our whitepaper [Best design principles for reports and visualizations](visuals/power-bi-visualization-best-practices.md) for more.
-
 Here are a few tips for dashboards.
 
 ## Dashboard design best practices video

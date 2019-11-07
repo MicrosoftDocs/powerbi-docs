@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/21/2019
+ms.date: 10/31/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -222,7 +222,7 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 
 "***sales by state as a treemap***"
 
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
+![Q&A question box showing visualization type specified](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
 ## Next steps
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)    
