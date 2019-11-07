@@ -53,4 +53,3 @@ If you're unable to create a forum post on the community page, it's because the 
 Here are a few sites you can visit for additional Power BI support:
 
 * [Power BI Microsoft docs](https://docs.microsoft.com/power-bi/)
-* [Creating Power BI Support Cases](https://blogs.msdn.microsoft.com/charles_sterling/2017/12/01/creating-power-bi-support-cases/)
