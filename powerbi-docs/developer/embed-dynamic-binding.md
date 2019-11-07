@@ -18,7 +18,7 @@ When embedding a Power BI report using *dynamic binding*, you can connect the sa
  
 This means that you can use one report to display different information, depending on the dataset it’s connected to. For example, a report showing retail sale values can be connected to different retailer datasets, and produce different results, depending on the dataset of the retailer it’s connected to.
  
-The report and the dataset don't need to reside in the same workspace. Both workspaces (the one containing the report, and the one containing the dataset) must be assigned to a [capacity](azure-pbie-create-capacity).
+The report and the dataset don't need to reside in the same workspace. Both workspaces (the one containing the report, and the one containing the dataset) must be assigned to a [capacity](azure-pbie-create-capacity.md).
 
 
 ## Generating a token
