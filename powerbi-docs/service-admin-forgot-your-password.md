@@ -2,7 +2,7 @@
 title: Forgot your password for Power BI?
 description: If you've forgotten your password, you can use a link to request a password reset.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -29,4 +29,4 @@ It's important to note that this phone number is not the Power BI service suppor
 > [!NOTE]
 > Power BI provides support during usual business hours in the Eastern Standard Time (EST) time zone. Support is currently only provided in English.
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

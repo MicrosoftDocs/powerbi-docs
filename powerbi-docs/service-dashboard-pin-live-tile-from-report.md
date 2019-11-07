@@ -2,7 +2,7 @@
 title: 'How to pin an entire report page to a Power BI dashboard '
 description: Documentation on how to pin an entire live report page to a Power BI dashboard from a report.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 
@@ -43,7 +43,7 @@ Watch Amanda pin a live report page to a dashboard and then follow the step-by-s
 4. Select **Pin live**. A Success message (near the top right corner) lets you know the page was added, as a tile, to your dashboard.
 
 ## Open the dashboard to see the pinned live tile
-1. From the navigation pane, select the dashboard with the new live tile. There, you can do things like [rename, resize, link, and move](service-dashboard-edit-tile.md) the pinned report page.  
+1. From the nav pane, select the dashboard with the new live tile. There, you can do things like [rename, resize, link, and move](service-dashboard-edit-tile.md) the pinned report page.  
 2. Interact with the live tile.  In the screenshot below, selecting a bar on the column chart has cross-filtered and cross-highlighted the other visualizations on the tile.
    
     ![dashboards with a live tile](media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png)
@@ -51,5 +51,5 @@ Watch Amanda pin a live report page to a dashboard and then follow the step-by-s
 ## Next steps
 [Dashboards in Power BI](consumer/end-user-dashboards.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

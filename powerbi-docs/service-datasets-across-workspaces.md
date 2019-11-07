@@ -2,7 +2,7 @@
 title: Intro to datasets across workspaces (Preview)
 description: Learn how you can share a dataset with users across the organization. Then they can build reports based on your dataset in their own workspaces.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -68,4 +68,4 @@ The specific features and experiences built on shared dataset capabilities are l
 - [Promote datasets](service-datasets-promote.md)
 - [Certify datasets](service-datasets-certify.md)
 - [Govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

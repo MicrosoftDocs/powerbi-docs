@@ -90,5 +90,5 @@ When drilling with geo-hierarchies, it is important to know how each drill butto
 
 [Power BI visualizations](power-bi-report-visualizations.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

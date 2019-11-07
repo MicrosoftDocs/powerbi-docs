@@ -224,4 +224,4 @@ For more info, see [Tips and tricks for color formatting in Power BI](service-ti
 
 - [Visualizations in Power BI reports](power-bi-report-visualizations.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

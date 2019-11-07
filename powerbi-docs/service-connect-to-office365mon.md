@@ -2,7 +2,7 @@
 title: Connect to Office365Mon with Power BI
 description: Office365Mon for Power BI
 author: teddybercovitz
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
@@ -22,7 +22,7 @@ Connect to the [Office365Mon template app](https://app.powerbi.com/groups/me/get
 >An Office365Mon admin account is required to connect and load the Power BI template app.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
    ![](media/service-connect-to-office365mon/pbi_getdata.png)
 2. In the **Services** box, select **Get**.
@@ -38,7 +38,7 @@ Connect to the [Office365Mon template app](https://app.powerbi.com/groups/me/get
    ![](media/service-connect-to-office365mon/creds.png)
    
    ![](media/service-connect-to-office365mon/creds2.png)
-5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*, select the Office365Mon entry.
+5. After Power BI imports the data you will see a new dashboard, report, and dataset in the nav pane. New items are marked with a yellow asterisk \*, select the Office365Mon entry.
    
    ![](media/service-connect-to-office365mon/dashboard4.png)
 

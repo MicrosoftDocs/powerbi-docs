@@ -183,7 +183,7 @@ Where:
 
   The filter can address columns from various tables.
 
-* `$schema` is http://powerbi.com/product/schema#tuple.
+* `$schema` is https://powerbi.com/product/schema#tuple.
 
 * `filterType` is *FilterType.Tuple*.
 
@@ -235,7 +235,7 @@ let values = [
 ];
 
 let filter: ITupleFilter = {
-    $schema: "http://powerbi.com/product/schema#tuple",
+    $schema: "https://powerbi.com/product/schema#tuple",
     filterType: FilterType.Tuple,
     operator: "In",
     target: target,

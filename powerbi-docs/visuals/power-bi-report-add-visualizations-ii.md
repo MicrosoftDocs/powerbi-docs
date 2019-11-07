@@ -25,7 +25,7 @@ In this tutorial, we'll dig into our Retail Analysis dataset and create a few ke
 
 ## Prerequisites
 
-This tutorial uses the [Retail analysis sample PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+This tutorial uses the [Retail analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. From the upper left section of the Power BI Desktop menu bar, select **File** > **Open**
    
@@ -68,5 +68,5 @@ Create a visualization by selecting a field from the **Fields** pane. The type o
 
 ## Next steps
 * More about [Visualizations in Power BI reports](power-bi-report-visualizations.md).  
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

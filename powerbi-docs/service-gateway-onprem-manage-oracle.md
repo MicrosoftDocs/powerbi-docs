@@ -2,7 +2,7 @@
 title: Manage your data source - Oracle
 description: How to manage the on-premises data gateway and data sources that belong to that gateway.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -26,11 +26,11 @@ To connect the gateway to your Oracle server, the Oracle Data Provider for .NET 
 
 For 32-bit versions of Power BI Desktop, use the following link to download and install the 32-bit Oracle client:
 
-* [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
+* [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
 For 64-bit versions of Power BI Desktop or for the on-premises data gateway, use the following link to download and install the 64-bit Oracle client:
 
-* [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
+* [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
 After the client is installed, configure your tnsnames.ora file with the proper information for your database. Power BI Desktop and the gateway go off of the net_service_name defined in the tnsnames.ora file. If the net_service_name isn't configured, you can't connect. The default path for tnsnames.ora is `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. For more information about how to configure tnsnames.ora files, see [Oracle: Local naming parameters (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
 
@@ -129,5 +129,5 @@ For additional troubleshooting information that relates to the gateway, see [Tro
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)
 * [Power BI Premium](service-premium.md)
 
-More questions? Try asking the [Power BI Community](http://community.powerbi.com/).
+More questions? Try asking the [Power BI Community](https://community.powerbi.com/).
 

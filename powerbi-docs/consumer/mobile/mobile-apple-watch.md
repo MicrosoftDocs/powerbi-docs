@@ -2,7 +2,7 @@
 title: Explore Power BI data in the mobile app on your Apple Watch
 description: Power BI Apple Watch app
 author: mshenhav
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -16,7 +16,7 @@ ms.author: mshenhav
 With the Power BI Apple Watch app, you can view KPIs and card tiles from your Power BI dashboards, right on your watch. KPIs and card tiles are best suited to providing a heartbeat measure on the small screen. You can refresh a dashboard from your iPhone or from the Watch itself.
 
 ## Install the Apple Watch app
-The Power BI Apple Watch app is bundled with the Power BI for iOS app, so when you [download the Power BI app to your iPhone](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app") from the Apple App Store, you're automatically also downloading the Power BI Watch app. The Apple guide explains how to [install Apple Watch applications](https://support.apple.com/HT204784).
+The Power BI Apple Watch app is bundled with the Power BI for iOS app, so when you [download the Power BI app to your iPhone](https://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app") from the Apple App Store, you're automatically also downloading the Power BI Watch app. The Apple guide explains how to [install Apple Watch applications](https://support.apple.com/HT204784).
 
 ## Use the Power BI app on the Apple Watch
 Get to the Power BI Apple Watch app either from the watch's springboard, or by clicking the Power BI widget (if configured) directly from the watch face.
@@ -82,7 +82,7 @@ Given the small space on the Apple Watch face, the Power BI Apple Watch app lets
 ## Next steps
 Your feedback will help us decide what to implement in the future, so please don’t forget to vote for other features that you would like to see in Power BI mobile apps. 
 
-* Download the [Power BI iPhone mobile app](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Download the [Power BI iPhone mobile app](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
-* Join the conversation at the [Power BI Community](http://community.powerbi.com/)
+* Join the conversation at the [Power BI Community](https://community.powerbi.com/)
 

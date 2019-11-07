@@ -3,7 +3,7 @@ title: Power BI URLs for whitelisting
 description: This article describes the endpoints that should be reachable for customers using Power BI.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service

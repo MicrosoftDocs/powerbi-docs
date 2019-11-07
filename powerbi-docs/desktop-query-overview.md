@@ -2,7 +2,7 @@
 title: Query overview in Power BI Desktop
 description: Query overview in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -43,7 +43,7 @@ With no data connections, **Query Editor** appears as a blank pane, ready for da
 
 Once a query is loaded, **Query Editor** view becomes more interesting. If we connect to the following Web data source, **Query Editor** loads information about the data, which you can then begin to shape.
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Here’s how **Query Editor** appears once a data connection is established:
 

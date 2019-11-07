@@ -2,7 +2,7 @@
 title: Distribute template apps in your organization - Power BI
 description: Learn about installing, customizing, and distributing template apps in your organization in Power BI.
 author: teddybercovitz
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -40,7 +40,7 @@ In a browser, select this link to open AppSource filtered to Power BI apps:
 
 ### Search AppSource from the Power BI service
 
-1. In the left navigation pane in the Power BI service, select **Apps** > **Get apps**.
+1. In the nav pane in the Power BI service, select **Apps** > **Get apps**.
 
     ![Get apps](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
@@ -65,7 +65,7 @@ In a browser, select this link to open AppSource filtered to Power BI apps:
     - **Connect data**: Change the data source from the sample data to your own data source. You can redefine dataset parameters and data source credentials. See [Known limitations](service-template-apps-tips.md#known-limitations) in the template apps tips article. 
     - **Go to workspace** (most advanced option): you can make any changes allowed by the app builder.
 
-    Or skip this dialog box and access the associated workspace directly via **Workspaces** in the left navigation pane.
+    Or skip this dialog box and access the associated workspace directly via **Workspaces** in the nav pane.
     >[!NOTE]
     >Installing a template app installed both an *organizational app* and a *workspace*. Read more about [distributing apps in Power BI](service-create-distribute-apps.md).
  
