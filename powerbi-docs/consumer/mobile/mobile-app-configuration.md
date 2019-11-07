@@ -1,29 +1,31 @@
 ---
-title: 'Power BI iOS app configuration settings'
-description: How to customize the behavior of Power BI for iOS using MDM tool
+title: 'Power BI app configuration settings'
+description: How to customize the behavior of Power BI using MDM tool
 author: paulinbar
-manager: kfile
+manager: rkarlin
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2019
-ms.author: mshenhav
+ms.author: painbar
 ---
 
-# Remotely configure Power BI iOS app using mobile device management (MDM) tool
+# Remotely configure Power BI app using mobile device management (MDM) tool
 
-Power BI Mobile app for iOS supports app settings that allow administrators for Office 365 and mobile device management (MDM), such as Intune, to customize the behavior of the app.
+The Power BI Mobile app for iOS and Android supports app settings that allow administrators for Office 365 and mobile device management (MDM), such as Intune, to customize the behavior of the app.
 
-Power BI Mobile app for iOS supports the following configuration scenarios:
+The Power BI Mobile app supports the following configuration scenarios:
 
-- Report Server configuration
-- Data protection settings
+- Report Server configuration (iOS and Android)
+- Data protection settings (iOS)
 
 ## Report server configuration
 
-Power BI iOS app allows administrators to remotely "push" Report Server configuration with enrolled devices.
+**Applies to: iOS and Android**
+
+The Power BI app for iOS and Android allows administrators to remotely "push" Report Server configuration with enrolled devices.
 
 | Key | Type | Description |
 |---|---|---|
@@ -34,13 +36,17 @@ Power BI iOS app allows administrators to remotely "push" Report Server configur
 
 ## Data protection setting
 
-Power BI iOS app offers administrators the ability to customize the default configuration for security and privacy settings. You can force users to provide their Face ID, Touch ID, or a passcode when accessing Power BI app.
+**Applies to: iOS**
+
+The Power BI app for iOS offers administrators the ability to customize the default configuration for security and privacy settings. You can force users to provide their Face ID, Touch ID, or a passcode when accessing Power BI app.
 
 | Key | Type | Description |
 |---|---|---|
 | com.microsoft.powerbi.mobile.ForceDeviceAuthentication | Boolean | Default value is False. <br><br>Biometrics, such as TouchID or FaceID, can be required for users to access the app on their device. When required, biometrics are used in addition to authentication.<br><br>If using app protection policies, Microsoft recommends disabling this setting to prevent dual access prompts. |
 
 ## Deploying app configuration settings
+
+**Applies to: iOS**
 
 The following steps will allow you to create an app configuration policy. After the configuration policy is created, you can assign its settings to groups of users.
 
@@ -52,11 +58,11 @@ The following steps will allow you to create an app configuration policy. After 
 
 4. Create key-value pairs for the setting you want to push to your users.
 
-The Intune portal enables administrators to easily deploy these settings to Power BI iOS app via app configuration policies.
+The Intune portal enables administrators to easily deploy these settings to Power BI app via app configuration policies.
 However, any MDM provider is supported. If you are not using Intune, you'll need to consult with your MDM documentation on how to deploy these settings.
 
 ## Next steps
 
-* Download the [Power BI iPhone mobile app](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Get the Power BI mobile app from the [App store]("https://itunes.apple.com/us/app/microsoft-power-bi/id929738808) and [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409)
 * Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
 * Join the conversation at the [Power BI Community](http://community.powerbi.com/)
