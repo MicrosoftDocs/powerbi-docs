@@ -2,7 +2,7 @@
 title: Understanding the Power BI admin role
 description: This article describes the Power BI service administrator role and how to use it in your organization.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -108,4 +108,4 @@ You can also assign users to roles by using PowerShell. Users are managed in Azu
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
 [Power BI admin portal](service-admin-portal.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

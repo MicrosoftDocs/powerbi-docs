@@ -2,7 +2,7 @@
 title: Use OneDrive for Business links in Power BI Desktop
 description: Use OneDrive for Business links in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

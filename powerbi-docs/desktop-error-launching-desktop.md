@@ -2,7 +2,7 @@
 title: Resolve Issues when starting Power BI Desktop
 description: Resolve Issues when starting Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

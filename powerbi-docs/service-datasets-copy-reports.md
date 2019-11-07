@@ -2,7 +2,7 @@
 title: Copy reports from other workspaces (Preview) - Power BI
 description: Learn how you can share a dataset with users across the organization. Then they can build reports based on your dataset in their own workspaces.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -77,4 +77,4 @@ You may decide you no longer want the report and its associated shared dataset i
 ## Next steps
 
 - [Use datasets across workspaces (Preview)](service-datasets-across-workspaces.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

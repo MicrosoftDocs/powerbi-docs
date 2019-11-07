@@ -3,7 +3,7 @@ title: "Subscribe to paginated reports in the Power BI service"
 description: In this article, you learn things to keep in mind about subscribing to paginated reports in the Power BI service. 
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder

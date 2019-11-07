@@ -2,7 +2,7 @@
 title: Display images in a table or matrix in a report
 description: In Power BI Desktop, you create a column with hyperlinks to images. Then in either Power BI Desktop or the Power BI service, add those hyperlinks to a report table, matrix, slicer, or multi-row card to display the image.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.custom:
 ms.service: powerbi
@@ -43,5 +43,5 @@ A good way to enhance your reports is to add images to them. Static images on th
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

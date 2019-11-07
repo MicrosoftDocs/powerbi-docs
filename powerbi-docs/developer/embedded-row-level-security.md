@@ -236,7 +236,7 @@ When deciding on filtering your data in a report, you can use **row-level securi
 
 [JavaScript filters](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) are used to allow the user to consume reduced, scoped, or a filtered view of the data. However, the user still has access to the model schema tables, columns, and measures and potentially can access any data there. Restricted access to the data can only be applied with RLS and not through client-side filtering APIs.
 
-## Token-based Identity with Azure SQL Database (Preview)
+## Token-based Identity with Azure SQL Database
 
 The **token-based identity** allows you to specify the effective identity for an embed token using **Azure Active Directory (AAD)** access token for an **Azure SQL Database**.
 
@@ -327,7 +327,7 @@ You can't set this permission using the admin portal. This permission is only se
 * If the underlying dataset is a cloud model (cached model or DirectQuery), the effective identity must include at least one role, otherwise role assignment doesn't occur.
 * A list of identities enables multiple identity tokens for dashboard embedding. For all others artifacts, the list contains a single identity.
 
-### Token-based Identity limitations (Preview)
+### Token-based Identity limitations
 
 * This capability restricts use with Power BI Premium only.
 * This capability doesn’t work with SQL Server on-premises.

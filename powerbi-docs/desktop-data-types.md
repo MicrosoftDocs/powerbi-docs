@@ -2,7 +2,7 @@
 title: Data types in Power BI Desktop
 description: Data types in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -67,7 +67,7 @@ Power BI Desktop supports five Date/Time data types in Query View and three in t
 **True/False** – A Boolean value of either a True or False.
 
 ### Blanks/nulls type
-**Blank** - Is a data type in DAX that represents and replaces SQL nulls. You can create a blank by using the [BLANK](http://msdn.microsoft.com/library/ee634820.aspx) function, and test for blanks by using the [ISBLANK](https://msdn.microsoft.com/library/ee634204.aspx) logical function.
+**Blank** - Is a data type in DAX that represents and replaces SQL nulls. You can create a blank by using the [BLANK](https://msdn.microsoft.com/library/ee634820.aspx) function, and test for blanks by using the [ISBLANK](https://msdn.microsoft.com/library/ee634204.aspx) logical function.
 
 ### Table data type
 DAX uses a table data type in many functions, such as aggregations and time intelligence calculations. Some functions require a reference to a table; other functions return a table that can then be used as input to other functions. In some functions that require a table as input, you can specify an expression that evaluates to a table; for some functions, a reference to a base table is required. For information about the requirements of specific functions, see [DAX Function Reference](https://msdn.microsoft.com/library/ee634396.aspx).

@@ -2,7 +2,7 @@
 title: Add hyperlinks (URLs) to a table
 description: This topic teaches you how to add hyperlinks (URLs) to a table. You use Power BI Desktop to add hyperlinks (URLs) to a table or matrix. Then, in either Power BI Desktop or the Power BI service, you can add those hyperlinks to your report tables and matrixes.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -107,5 +107,5 @@ A: No. You can use a link icon. If you need custom text for your hyperlinks and 
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

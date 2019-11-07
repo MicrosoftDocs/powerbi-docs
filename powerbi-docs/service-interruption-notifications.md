@@ -2,7 +2,7 @@
 title: Service interruption notifications
 description: Learn about how to receive email notifications, when there is a Power BI service disruption or degradation.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -48,4 +48,4 @@ A Power BI tenant administrator enables notifications in the admin portal:
 
 [Power BI Pro and Power BI Premium support options](service-support-options.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

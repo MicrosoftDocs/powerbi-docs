@@ -2,7 +2,7 @@
 title: Use auditing within your organization
 description: Learn how you can use auditing with Power BI to monitor and investigate actions taken. You can use the Security and Compliance Center or use PowerShell.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -257,4 +257,4 @@ The following activities are audited by Power BI:
 
 [Power BI Admin Portal](service-admin-portal.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

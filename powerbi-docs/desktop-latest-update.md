@@ -2,7 +2,7 @@
 title: What's new in the latest Power BI Desktop update?
 description: What's new in the latest Power BI Desktop update?
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
