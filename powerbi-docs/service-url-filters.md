@@ -3,13 +3,13 @@ title: Filter a report using query string parameters in the URL
 description: Filter a report using URL query string parameters, even filter on more than one field.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/31/2019
+ms.date: 10/23/2019
 LocalizationGroup: Reports
 ---
 
@@ -23,7 +23,7 @@ When you open a report in Power BI service, each page of the report has its own 
 
 Say you're working in Power BI Desktop. You want to create a report that has links to other Power BI reports, but you want to show only some of the information in the other reports. First, filter the reports using query string parameters and save the URLs. Next, create a table in Desktop with these new report URLs.  Then publish and share the report.
 
-Another use for query string parameters is for someone creating an advanced Power BI solution.  Using DAX, she creates a report that generates a filtered report URL dynamically based on the selection her customer makes in the current report. When customers select the URL, they see only the intended information. 
+Another use for query string parameters is for someone creating an advanced Power BI solution.  Using DAX, they create a report that generates a filtered report URL dynamically based on the selection their customer makes in the current report. When customers select the URL, they see only the intended information. 
 
 ## Query string parameter syntax for filtering
 
@@ -38,19 +38,19 @@ URL?filter=***Table***/***Field*** eq '***value***'
 
 ### Reports in apps
 
-If you want to add a URL filter to a report in an app, the formatting is a little different. Links to reports in an app have a query parameter (ctid) that gets added to the URL. Query parameters need to be separated by an ampersand (&). So you need to append the query with “&filter=” (after the ctid parameter) instead of “?filter=”. 
+If you want to add a URL filter to a report in an app, the formatting is a little different. Links to reports in an app have a query parameter (ctid) that gets added to the URL. Separate the query parameters with an ampersand (&). Keep “?filter=” and move the ctid parameter to the end of the URL, preceded by an ampersand (&). 
 
 Like this example:
 
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?ctid=*ctid*&filter=*Table*/*Field* eq '*value*'
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*&'ctid=*ctid*
 
 ### Field types
 
 Field type can be a number, datetime, or string and the type used must match the type set in the dataset.  For example, specifying a table column of type "string" won't work if you're looking for a datetime or numeric value in a dataset column set as a date, such as Table/StringColumn eq 1.
 
-* **Strings** must be enclosed with single quotes - 'manager name'.
-* **Numbers** require no special formatting
-* **Dates and times** must be enclosed with single quotes. In OData v3 they must be preceded by the word datetime, but datetime isn’t needed in OData v4.
+* **Strings** must be enclosed with single quotes, as in 'manager name'.
+* **Numbers** require no special formatting. See [Numeric data types](#numeric-data-types) in this article for details.
+* **Dates and times** See [Date data types](#date-data-types) in this article. 
 
 If it's still confusing, continue reading and we'll break it down.  
 
@@ -78,7 +78,7 @@ To filter the report to show data only for stores in "NC" (North Carolina), appe
 
 Our report is filtered for North Carolina; all the visualizations on the report page show data for only North Carolina.
 
-![](media/service-url-filters/power-bi-report4.png)
+![Report filtered for North Carolina](media/service-url-filters/power-bi-report4.png)
 
 ## Filter on multiple fields
 
@@ -128,9 +128,17 @@ A Power BI URL filter can include numbers in the following formats.
 
 ### Date data types
 
-Power BI supports both OData V3 and V4 for **Date** and **DateTimeOffset** data types.  Dates are represented using the EDM format (2019-02-12T00:00:00), so when you specify a date as YYYY-MM-DD, Power BI interprets it as YYYY-MM-DDT00:00:00.
+Power BI supports both OData V3 and V4 for **Date** and **DateTimeOffset** data types. For OData V3, dates must be enclosed in single quotes and be preceded by the word datetime. Single quotes and the word datetime aren't needed in OData V4. 
+  
+Dates are represented using the EDM format (2019-02-12T00:00:00): When you specify a date as 'YYYY-MM-DD', Power BI interprets it as 'YYYY-MM-DDT00:00:00'. Make sure month and day are two digits, MM and DD.
 
-Why does this distinction matter? Let's say you create a query string parameter **Table/Date gt 2018-08-03**.  Will the results include August 3, 2018 or start with August 4, 2018? Since Power BI translates your query to **Table/Date gt 2018-08-03T00:00:00**, your results include any dates that have a non-zero time part since those dates would be greater than **2018-08-03T00:00:00**.
+Why does this distinction matter? Let's say you create a query string parameter **Table/Date gt '2018-08-03'**.  Will the results include August 3, 2018 or start with August 4, 2018? Power BI translates your query to **Table/Date gt '2018-08-03T00:00:00'**. So, your results include any dates that have a non-zero time part, because those dates would be greater than **'2018-08-03T00:00:00'**.
+
+There are other differences between V3 and V4. OData V3 does not support Dates, only DateTime. So if you use the V3 format, you must qualify it with the full date time. Date literals like "datetime'2019-05-20'" aren't supported in V3 notation. But you can just write it as "2019-05-20" in V4 notation. Here are two equivalent filter queries in V3 and V4:
+
+- OData V4 format: filter=Table/Date gt 2019-05-20
+- OData V3 format: filter=Table/Date gt datetime'2019-05-20T00:00:00'
+
 
 ## Special characters in URL filters
 
@@ -140,7 +148,7 @@ Special characters and spaces require some additional formatting. When your quer
 |---------|---------|---------|
 |**Table Name**     | Space is 0x20        |  Table_x0020_Name       |
 |**Column**@**Number**     |   @ is 0x40     |  Column_x0040_Number       |
-|**[Column]**     |  [ is 0x0058 ] is 0x0050       |  _x0058_Column_x0050       |
+|**[Column]**     |  [ is 0x005B ] is 0x005D       |  _x005B_Column_x005D_       |
 |**Column+Plus**     | + is 0x2B        |  Column_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3
@@ -174,7 +182,7 @@ There are a couple of things to be aware of when using the query string paramete
 
 * When using the *in* operator, the values to the right of *in* must be a comma-separated list enclosed in parentheses.    
 * In Power BI Report Server, you can [pass report parameters](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) by including them in a report URL. These URL parameters aren't prefixed because they're passed directly to the report processing engine.
-* Query string filtering doesn't work with [Publish to web](service-publish-to-web.md).
+* Query string filtering doesn't work with [Publish to web](service-publish-to-web.md) or [Export to PDF](consumer/end-user-pdf.md).
 * [Embed with report web part in SharePoint Online](service-embed-report-spo.md) doesn't support URL filters.
 * The long data type is (2^53-1) due to Javascript limitations.
 * Report URL filters have a 10-expression limit (10 filters connected by AND).
@@ -184,4 +192,4 @@ There are a couple of things to be aware of when using the query string paramete
 [Pin a visualization to a dashboard](service-dashboard-pin-tile-from-report.md)  
 [Sign up for a free trial](https://powerbi.microsoft.com/get-started/)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

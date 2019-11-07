@@ -1,16 +1,16 @@
 ---
 title: Troubleshooting tile errors
 description: Common errors that may be encountered when a tile tries to refresh in Power BI
-author: davidiseminger
-manager: kfile
-ms.reviewer: ''
+author: mgblythe
+manager: kfollis
+ms.reviewer: kayu
 
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 12/06/2018
-ms.author: davidi
+ms.author: mblythe
 
 LocalizationGroup: Troubleshooting
 ---
@@ -18,7 +18,7 @@ LocalizationGroup: Troubleshooting
 Below are the common errors you may encounter with tiles along with an explanation.
 
 > [!NOTE]
-> If you encounter an error that is not listed below, and it is causing you issues, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
+> If you encounter an error that is not listed below, and it is causing you issues, you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
 > 
 > 
 
@@ -36,7 +36,7 @@ Contact the dashboard owner to make sure the data sources and model exist and ar
 **Custom visuals have been disabled by your administrator.**
 
 Your Power BI administrator has disabled the usage of custom visuals for your organization or your security group. 
-You will not be able to use custom visuals from the [Microsoft marketplace](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=power-bi-visuals) or import private visuals from a file. You will be able to use only the pre-packed set of visuals.
+You will not be able to use custom visuals from the [Microsoft marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) or import private visuals from a file. You will be able to use only the pre-packed set of visuals.
 
 
 **Data shapes must contain at least one group or calculation that outputs data. Please contact the dashboard owner.**
@@ -63,11 +63,22 @@ The field was likely deleted or renamed. You can remove the broken field from th
 
 This is usually a transient issue. If you try again later and you still see this message, contact support.
 
+**Tiles continue to show unfiltered data after enabling single-sign on (SSO).**
+
+This can happen if the underlying dataset is configured to use DirectQuery mode or a Live Connection to Analysis Services through an on-premises data gateway. In this case, the tiles continue to show the unfiltered data after enabling SSO for the data source until the next tile refresh is due. At the next tile refresh, Power BI uses SSO as configured, and the tiles show the data filtered according to the user identity. 
+
+If you want to see the filtered data immediately, you can force a tile refresh by selecting **More options** (...) in the upper right of a dashboard and selecting **Refresh dashboard tiles**.
+
+As a dataset owner, you can also change the tile refresh frequency and set it to 15 minutes to accelerate tile refresh. Select the gear icon in the upper right corner of the Power BI service, then select **Settings**. On the **Settings** page, select the **Datasets** tab. Expand **Scheduled cache refresh** and change **Refresh frequency**. Make sure you reset the configuration to the original refresh frequency after Power BI performs the next tile refresh.
+
+> [!NOTE]
+> The **Scheduled cache refresh** section is only available for datasets in DirectQuery/LiveConnection mode. Datasets in Import mode do not require a separate tile refresh because the tiles are refreshed automatically during the next scheduled data refresh.
+
 ## Contact support
 If you are still having an issue, [contact support](https://support.powerbi.com) to investigate further.
 
 ## Next steps
 [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 [Troubleshooting Power BI Personal Gateway](service-admin-troubleshooting-power-bi-personal-gateway.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

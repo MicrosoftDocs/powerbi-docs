@@ -2,13 +2,13 @@
 title: What is Power BI Desktop?
 description: Learn what Power BI Desktop is, and how to get started using it
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: overview
-ms.date: 11/28/2018
+ms.date: 09/19/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -29,6 +29,16 @@ The most common uses for **Power BI Desktop** are the following:
 * Share reports with others using the **Power BI service**
 
 People most often responsible for such tasks are often considered *data analysts* (sometimes just referred to as *analysts*) or Business Intelligence professionals (often referred to as *report creators*). However, many people who don't consider themselves an analyst or a report creator use **Power BI Desktop** to create compelling reports, or to pull data from various sources and build data models, which they can share with their coworkers and organizations.
+
+There are three views in Power BI Desktop, shown along the left side of the canvas. The views, shown in the order they appear, are the following:
+* **Report View** - this is where you create reports and visuals, and where most of your creation time is spent.
+* **Data View** - here you can see the tables, measures, and other data used in the data model associated with your report, and transform the data for best use in the report's model.
+* **Model View** - in this view you see and manage the relationships among tables in your data model.
+
+The following image shows the three Views, as displayed along the left side of the canvas:
+
+![different views](media/desktop-what-is-desktop/what-is-desktop-07.png)
+
 
 With **Power BI Desktop** you can create complex and visually rich reports, using data from multiple sources, all in one report that you can share with others in your organization. 
 
@@ -87,4 +97,4 @@ Once you select **Publish**, Power BI Desktop connects you to the **Power BI ser
 To get started with **Power BI Desktop**, the first thing you need is to download and install the application. There are two ways to get **Power BI Desktop**:
 
 * [Download Power BI Desktop from the web](desktop-get-the-desktop.md)
-* [Get Power BI Desktop from the Windows Store](http://aka.ms/pbidesktopstore)
+* [Get Power BI Desktop from the Windows Store](https://aka.ms/pbidesktopstore)

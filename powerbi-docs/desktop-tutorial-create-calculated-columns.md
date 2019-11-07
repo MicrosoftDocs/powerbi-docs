@@ -2,13 +2,13 @@
 title: 'Tutorial: Create calculated columns in Power BI Desktop'
 description: 'Tutorial: Create calculated columns in Power BI Desktop'
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Learn more
@@ -24,7 +24,7 @@ This tutorial will guide you through understanding and creating some calculated 
 ### Prerequisites
 - This tutorial is intended for Power BI users already familiar with using Power BI Desktop to create more advanced models. You should already know how to use **Get Data** and the **Power Query Editor** to import data, work with multiple related tables, and add fields to the Report canvas. If you’re new to Power BI Desktop, be sure to check out [Getting Started with Power BI Desktop](desktop-getting-started.md).
   
-- The tutorial uses the [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), the same sample used for the [Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md) tutorial. This sales data from the fictitious company Contoso, Inc. was imported from a database, so you won’t be able to connect to the data source or view it in the Power Query Editor. Download and extract the file on your own computer, and then open it in Power BI Desktop.
+- The tutorial uses the [Contoso Sales Sample for Power BI Desktop](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), the same sample used for the [Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md) tutorial. This sales data from the fictitious company Contoso, Inc. was imported from a database, so you won’t be able to connect to the data source or view it in the Power Query Editor. Download and extract the file on your own computer, and then open it in Power BI Desktop.
 
 ## Create a calculated column with values from related tables
 
@@ -32,7 +32,7 @@ In your Sales Report, you want to display product categories and subcategories a
 
  ![Columns in Fields list](media/desktop-tutorial-create-calculated-columns/create1.png)
 
-1.  Select the **More options** ellipsis (...), or right-click, on the **ProductSubcategory** table in the Fields list, and then select **New Column**. This creates your new column in the ProductSubcategory table.
+1.  Select **More options** (...), or right-click, on the **ProductSubcategory** table in the Fields list, and then select **New Column**. This creates your new column in the ProductSubcategory table.
     
     ![New Column](media/desktop-tutorial-create-calculated-columns/create2.png)
     

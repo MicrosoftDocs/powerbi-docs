@@ -2,13 +2,13 @@
 title: Power BI high availability, failover, and disaster recovery FAQ
 description: Understand how the Power BI service delivers high availability and provides business continuity and disaster recovery to its users.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 09/09/2019
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -20,7 +20,7 @@ This article explains how the Power BI service delivers high availability and pr
 
 ## What does "high availability" mean for Power BI?
 
-Power BI is fully managed software as a service (SaaS).  Microsoft designs and operates it to be resilient to infrastructure failures so that users can always access their reports.  The service is supported by a [99.9% SLA](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
+Power BI is fully managed software as a service (SaaS).  Microsoft designs and operates it to be resilient to infrastructure failures so that users can always access their reports.  The service is supported by a [99.9% SLA](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
 
 ## What is a Power BI failover?
 
@@ -47,7 +47,7 @@ In both cases, Power BI executive team members make the decision to fail over; t
 
 ## How do I know Power BI is now in failover mode?
 
-A notification is posted on the Power BI support page ([https://powerbi.microsoft.com/en-us/support/](https://powerbi.microsoft.com/en-us/support/)). The notification includes the major operations that are not available during the failover, including publish, refresh, create dashboard, duplicate dashboard, and permission changes.
+A notification is posted on the Power BI support page ([https://powerbi.microsoft.com/support/](https://powerbi.microsoft.com/support/)). The notification includes the major operations that are not available during the failover, including publish, refresh, create dashboard, duplicate dashboard, and permission changes.
 
 ## How long does it take Power BI to fail over?
 
@@ -62,7 +62,7 @@ Power BI service instances return to their original region when the issue that c
 If the Power BI solution used in your organization involves one of the following elements, you must take some measures to guarantee that the solution remains highly available:
 
 - If your organization uses Power BI Premium, you must ensure that the Premium capacity is sized to meet the load demands of your deployment.  The [Power BI Premium Planning and Deployment whitepaper](https://aka.ms/Premium-Capacity-Planning-Deployment), and the  [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capacity.md) can help you to plan and meet this requirement. We regularly add new features to the metrics app and the admin portal in Power BI to help.
-- If your organization accesses on-premises data sources using the Power BI On-premises gateway, you must set the gateway up [as described in this article](service-gateway-high-availability-clusters.md) to support high availability. Follow this guidance whether you're refreshing reports in import mode, or you're accessing data or data models by using DirectQuery or Live Connect.
+- If your organization accesses on-premises data sources using the on-premises data gateway, you must set the gateway up [as described in this article](/data-integration/gateway/service-gateway-high-availability-clusters) to support high availability. Follow this guidance whether you're refreshing reports in import mode, or you're accessing data or data models by using DirectQuery or Live Connect.
 
 ## Will gateways function when in failover mode?
 

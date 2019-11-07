@@ -4,13 +4,13 @@ description: Apply customized formatting to tables
 title: Conditional table formatting in Power BI Desktop
 description: Apply customized formatting to tables
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 10/16/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -127,6 +127,21 @@ And you could then get results like the following matrix.
 ![Matrix visual with a KPI value based color](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
 
 There are many more variations you could create, just by using your imagination and a bit of DAX.
+
+You can use any of the values listed in the CSS color spec at [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/) to color your visuals:
+* 3, 6 or 8 digit hex codes e.g. #3E4AFF. Make sure you include the # symbol at the start of the code. "3E4AFF" is not accepted. 
+* RGB or RGBA values e.g. RGBA(234, 234, 234, 0.5)
+* HSL or HSLA values e.g. HSLA(123, 75%, 75%, 0.5)
+* Color names e.g. Green, SkyBlue, PeachPuff 
+
+## Considerations and limitations
+There are a few considerations to keep in mind when working with conditional table formatting:
+
+* Conditional formatting is applied only to the values of a **Matrix** visual, and does not apply to any subtotals or grand totals. 
+* Conditional formatting is not applied to the **Total** row
+* Any Table that does not have a grouping is displayed as a single row that doesn't support conditional formatting.
+* If you use gradient format with automatic max/min values or rule-based formatting with percentage rules, conditional formatting cannot be applied when your data contains NaN values. NaN means 'Not a number', most commonly caused by a divide by zero error. You can use the [DIVIDE() DAX function](https://docs.microsoft.com/dax/divide-function-dax) to avoid these errors.
+
 
 ## Next steps
 For more information, see the following article:  

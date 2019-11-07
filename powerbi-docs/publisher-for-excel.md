@@ -2,14 +2,14 @@
 title: Using Power BI publisher for Excel
 description: Learn how to use the Power BI publisher for Excel
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 08/29/2019
 ms.author: davidi
 
 LocalizationGroup: Dashboards
@@ -28,7 +28,7 @@ When you pin an element from Excel, a new tile is added to a new or existing das
 ## Download and install
 Power BI publisher for Excel is an add-in you can download and install on desktop versions of Microsoft Excel 2007 and later.
 
-[Download Power BI publisher for Excel](http://go.microsoft.com/fwlink/?LinkId=715729)
+[Download Power BI publisher for Excel](https://www.microsoft.com/download/details.aspx?id=50729)
 
 Once you have the publisher installed, you'll see a new **Power BI** ribbon in Excel, where you can sign in (or sign out) of Power BI, pin elements to dashboards, and manage elements you've already pinned.
 

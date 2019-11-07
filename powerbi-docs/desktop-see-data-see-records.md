@@ -2,13 +2,13 @@
 title: See data and records in Power BI Desktop visuals
 description: Use the See Data and See Records features of Power BI Desktop to drill into details
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Learn more
@@ -37,7 +37,7 @@ You can use **See Data** to view a textual version of the values used by the sel
 
 ![See Data in ribbon](media/desktop-see-data-see-records/see-data1.png)
 
-You can also see the data by right-clicking on a visualization, and then selecting **Show Data** from the menu that appears; or by selecting the **More options** ellipsis (...) in the upper-right corner of a visualization, and then selecting **Show Data**.
+You can also see the data by right-clicking on a visualization, and then selecting **Show Data** from the menu that appears; or by selecting **More options** (...) in the upper-right corner of a visualization, and then selecting **Show Data**.
 
 ![Show Data right-click](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![Show Data More Options](media/desktop-see-data-see-records/see-data3.png)
 

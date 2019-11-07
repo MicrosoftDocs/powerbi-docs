@@ -2,14 +2,14 @@
 title: Enter data directly into Power BI Desktop
 description: Easily add data directly into Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 09/19/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -17,7 +17,7 @@ LocalizationGroup: Connect to data
 # Enter data directly into Power BI Desktop
 With Power BI Desktop, you can enter data directly and use that data in your reports and visualizations. For example, you can copy portions of a workbook or web page, then paste it into Power BI Desktop.
 
-To enter data directly, select **Enter Data** from the **Home** ribbon.
+To enter data directly into Power BI Desktop in the form of a new table, select **Enter Data** from the **Home** ribbon.
 
 ![](media/desktop-enter-data-directly-into-desktop/enter-data-directly_1.png)
 

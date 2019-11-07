@@ -1,9 +1,9 @@
 ---
 title: Power BI APIs using automatic retention policy for real-time data
 description: Learn about the automatic retention policy in the Power BI service
-author: markingmyname
-ms.author: maghan
-manager: kfile
+author: rkarlin
+ms.author: rkarlin
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

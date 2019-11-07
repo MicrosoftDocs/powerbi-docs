@@ -2,13 +2,13 @@
 title: Getting started with Power BI Desktop
 description: Getting started with Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 08/29/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -16,7 +16,7 @@ LocalizationGroup: Get started
 # Getting started with Power BI Desktop
 Welcome to the **Power BI Desktop Getting Started Guide**. This short tour of Power BI Desktop gets you acquainted with how it works, demonstrates what it can do, and accelerates your ability to build robust data models — along with amazing reports — that amplify your business intelligence efforts. 
 
-Prefer to watch instead of read? Feel free to [take a look at our getting started video](desktop-videos.md). And if you want to follow along with the video with matching sample data, you can [download this sample Excel workbook](http://go.microsoft.com/fwlink/?LinkID=521962).
+Prefer to watch instead of read? Feel free to [take a look at our getting started video](desktop-videos.md). And if you want to follow along with the video with matching sample data, you can [download this sample Excel workbook](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 ![](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
 
@@ -84,7 +84,7 @@ Imagine you’re retiring – you want to live where there’s lots of sunshine,
 
 Either way, the following Web resource has interesting data about those topics, and more:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Select **Get Data \> Web** and paste the address.
 
@@ -101,6 +101,9 @@ When we select **Edit**, Query Editor launches and a representative view of the 
  ![](media/desktop-getting-started/designer_gsg_editquery.png)
 
 For more information about connecting to data, see [Connect to Data in Power BI Desktop](desktop-connect-to-data.md).
+
+> [!NOTE]
+> The table data referred to in this article might change over time. As such, the steps you need to follow might vary from the following, requiring you to be creative about how you adjust steps or outcomes - which is all part of the fun of learning. 
 
 In the next section, we adjust the data so it meets our needs. The process of adjusting connected data is called *shaping* data.
 
@@ -126,7 +129,7 @@ For starters, most ratings were brought into **Query Editor** as whole numbers, 
 
 You can also change, or *transform,* those columns from text to header by using the **Transform** ribbon. Here’s the **Transform** ribbon, with an arrow pointing toward the **Data Type** button, which lets you transform the current data type to another.
 
- ![](media/desktop-getting-started/shapecombine_changetype.png)
+ ![](media/desktop-getting-started/shapecombine-changetype-b.png)
 
 Note that in **Query Settings**, the **Applied Steps** reflect the changes that were made. If I want to remove any step from the shaping process, I simply select that step, and then select the **X** to the left of the step.
 
@@ -151,7 +154,7 @@ That data about various states is interesting, and will be useful for building a
 
 We’re in luck: there’s another public data source that does just that, but it needs a fair amount of shaping before we can connect it to our retirement table. Here’s the Web resource for state abbreviations:
 
-<http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+<https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
 
 From the **Home** ribbon in **Query Editor**, we select **Get Data \> Web** and type the address, select **OK**, and the **Navigator** window shows what it found on that Web page.
 

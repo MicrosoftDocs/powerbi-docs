@@ -1,14 +1,14 @@
 ---
 title: Add a CDM folder to Power BI as a dataflow
-description: Configure an app workspace to store its dataflow definition and data files in Azure Data Lake Storage Gen2
+description: Configure a workspace to store its dataflow definition and data files in Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -27,12 +27,9 @@ There are a few requirements for creating dataflows from CDM folders, as the fol
 
 The following sections describe how to create a dataflow from a CDM folder.
 
-> [!NOTE]
-> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
-
 ## Create a dataflow from a CDM folder
 
-To get started creating a dataflow from a CDM folder, launch the **Power BI service** and select an **app workspace** from the left navigation pane. You can also create a new workspace, in which you can create your new dataflow.
+To get started creating a dataflow from a CDM folder, launch the **Power BI service** and select a **workspace** from the nav pane. You can also create a new workspace, in which you can create your new dataflow.
 
 ![Create a dataflow in the Power BI service](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_02.jpg)
 
@@ -73,9 +70,9 @@ There are some additional considerations as well, described in the following lis
 
 **Power BI Desktop** customers cannot access dataflows stored in Azure Data Lake Storage Gen2 account, unless they are the owner of the dataflow, or they have been explicitly authorized to the dataflow’s CDM folder. Consider the following situation:
 
-1.	Anna creates a new app workspace and configures it to store dataflows from a CDM folder.
+1.	Anna creates a new workspace and configures it to store dataflows from a CDM folder.
 2.	Ben, who is also a member of the workspace Anna created, wants to use Power BI Desktop and the dataflow connector to get data from the dataflow Anna created.
-3.	Ben receives an error because he was not added as an authorized user to the dataflow’s CDM folder in the data lake.
+3.	Ben receives an error because Ben was not added as an authorized user to the dataflow’s CDM folder in the data lake.
 
     ![Error attempting to use dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
@@ -95,9 +92,9 @@ For more information about dataflows, CDM, and Azure Data Lake Storage Gen2, tak
 For information about dataflows overall, check out these articles:
 
 * [Create and use dataflows in Power BI](service-dataflows-create-use.md)
-* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
-* [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows](service-dataflows-developer-resources.md)
 
 For more information about Azure storage, you can read these articles:
 * [Azure Storage security guide](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
@@ -109,5 +106,5 @@ For more information about the Common Data Model, you can read its overview arti
 * [CDM folders](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [CDM model file definition](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-And you can always try [asking questions of the Power BI Community](http://community.powerbi.com/).
+And you can always try [asking questions of the Power BI Community](https://community.powerbi.com/).
 

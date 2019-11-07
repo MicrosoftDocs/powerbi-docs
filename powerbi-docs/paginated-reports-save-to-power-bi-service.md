@@ -1,9 +1,9 @@
 ---
-title: "Publish a paginated report to the Power BI service (Preview)"
+title: "Publish a paginated report to the Power BI service"
 description: In this tutorial, you learn to publish a paginated report to the Power BI service by uploading it from your local computer.  
-author: markingmyname
-ms.author: maghan
-manager: kfile
+author: maggiesMSFT
+ms.author: maggies
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.date: 11/05/2018
 ---
 
-# Publish a paginated report to the Power BI service (Preview)
+# Publish a paginated report to the Power BI service
 
 In this article, you learn about publishing a paginated report to the Power BI service by uploading it from your local computer. You can upload paginated reports to your My Workspace or any other workspace, as long as the workspace is in a Premium capacity. Look for the diamond icon ![Power BI Premium capacity diamond icon](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) next to the workspace name. 
 
-If your report data source is on premises, then you need to [create a gateway](#create-a-gateway-to-an-on-premises-data-source) after you upload the report.
+If your report data source is on premises, then you need to [create a gateway](#create-a-gateway) after you upload the report.
 
 ## Add a workspace to a Premium capacity
 
@@ -74,7 +74,7 @@ Just like any other Power BI report, if the report data source is on premises, t
 
    ![Manage the paginated report](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-manage.png)
 
-1. See the Power BI service article [Install a gateway](service-gateway-install.md) for details and next steps.
+1. See the Power BI service article [What is an on-premises data gateway](service-gateway-onprem.md) for details and next steps.
 
 ### Gateway limitations
 
@@ -84,5 +84,5 @@ Currently gateways don't support multi-value parameters.
 ## Next steps
 
 - [View a paginated report in the Power BI service](paginated-reports-view-power-bi-service.md)
-- [What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md)
+- [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 

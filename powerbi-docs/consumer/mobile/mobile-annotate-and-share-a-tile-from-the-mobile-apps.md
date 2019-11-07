@@ -2,7 +2,7 @@
 title: Annotate and share in Power BI mobile apps
 description: 'Read about annotating and sharing tiles, reports, and visuals from the Microsoft Power BI mobile app for iOS and Android. '
 author: mshenhav
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -25,7 +25,7 @@ You can annotate and share a snapshot of a tile, report, or visual from the Powe
 
 *A report with annotations*
 
-The mail with the snapshot of the tile, report, or visual also includes a link to the actual object on the Power BI service ([https://powerbi.com](https://powerbi.com)). You recipients can click the link and go straight to that tile, report, or visual, if you and they have Power BI Pro licenses, or the content is in a [Premium capacity](../../service-premium.md), and you've already shared the item with them. 
+The mail with the snapshot of the tile, report, or visual also includes a link to the actual object on the Power BI service ([https://powerbi.com](https://powerbi.com)). Your recipients can click the link and go straight to that tile, report, or visual, if you and they have Power BI Pro licenses, or the content is in a [Premium capacity](../../service-premium-what-is.md), and you've already shared the item with them. 
 
 You can [share a tile from the Power BI mobile app for Windows 10 devices](mobile-windows-10-phone-app-get-started.md), too, but not annotate it.
 
@@ -70,5 +70,5 @@ You can [share a tile from the Power BI mobile app for Windows 10 devices](mobil
 
 ## Next steps
 * [Share a dashboard from the Power BI mobile apps](mobile-share-dashboard-from-the-mobile-apps.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

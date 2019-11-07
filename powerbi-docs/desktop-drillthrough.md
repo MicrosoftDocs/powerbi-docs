@@ -2,13 +2,13 @@
 title: Use drillthrough in Power BI Desktop
 description: Learn how to drill down into data, on a new report page, in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 04/10/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -77,5 +77,6 @@ That's all there is to using **drillthrough** in your reports. It's a great way 
 
 You might also be interested in the following articles:
 
-* [Using slicers Power BI Desktop](visuals/desktop-slicers.md)
+* [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Using slicers Power BI Desktop](visuals/power-bi-visualization-slicers.md)
 

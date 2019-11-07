@@ -9,7 +9,7 @@ As Will explains the many things you can do with Power BI, keep in mind that all
 
 ![](media/0-1-intro-using-power-bi/c0a1_1.png)
 
-As mentioned earlier, you might spend all your time in the **Power BI service**, getting data and creating dashboards – that’s just fine. Someone else on your team might spend all of her time in **Power BI Desktop**, which is fine too. In order to help you understand the full continuum of Power BI and what it can do, we’ll show you all of it… then you can decide how to use it to your best advantage.
+As mentioned earlier, you might spend all your time in the **Power BI service**, getting data and creating dashboards – that’s just fine. Someone else on your team might spend all of their time in **Power BI Desktop**, which is fine too. In order to help you understand the full continuum of Power BI and what it can do, we’ll show you all of it… then you can decide how to use it to your best advantage.
 
 So let’s jump in, and let Will guide us through the experience. The first order of business is to understand the basic building blocks of Power BI, which will provide a solid basis for learning how Power BI turns data into cool reports and visuals.
 

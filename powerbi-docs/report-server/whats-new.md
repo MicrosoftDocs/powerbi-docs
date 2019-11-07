@@ -1,27 +1,152 @@
 ---
 title: What's new in Power BI Report Server
 description: Learn about what's new in Power BI Report Server. This covers the major feature areas and is updated as new items are released.
-author: markingmyname
-ms.author: maghan
-manager: kfile
+author: maggiesMSFT
+ms.author: maggies
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/22/2019
+ms.date: 09/26/2019
 ---
 
 # What's new in Power BI Report Server
 
-Learn about what's new in Power BI Report Server. This article covers the major feature areas and is updated as new items are released.
-
-To download the latest versions of Power BI Report Server and Power BI Desktop optimized for Power BI Report Server, go to [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/).
+Learn about what's new in Power BI Report Server ,and Power BI Desktop optimized for Power BI Report Server. This article covers the major feature areas and is updated with each new release.
 
 For related Power BI "What's New" information, see:
 
 * [What's new in the Power BI service](../service-whats-new.md)
 * [What's new in Power BI Desktop](../desktop-latest-update.md)
 * [What's new in the mobile apps for Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## September 2019
+
+See the [Power BI Report Server September 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2019-feature-summary/) blog post for details about all the new features.
+
+The September 2019 update of Power BI Report Server is packed with lots of Power BI report features. Here are some of the highlights:
+
+- **Visual-level filters for slicers** You can add a visual-level filter to slicers. It works like any other visual-level filter, just filtering the slicer itself and no other visuals. This filter is for useful for filtering out blanks or if you want to use measure filters.
+- **Icon sets for table and matrix** With KPI icons, you can set up rules for showing different sets of icons in your table and matrix, similar to icon sets in Excel.
+- **Grouping visuals** Now you can you group visuals, shapes, text boxes, images, and buttons together on a report page just like in PowerPoint. When you group objects together, you can move and resize them all together. Grouping makes it easier to work in a reports with lots of objects layered on each page.
+- **New default themes** To go along with the new theme JSON options, we are updating the themes available for reports, and changing the default theme for new reports. The new default theme both aligns better with Microsoft's design language and follows best design practices for visuals. 
+- **Updated pane design** We've refreshed much of our interface. We've updated all the panes, the footer, and view switcher to be a lighter color, updated spacing, and introduced new icons. The new design is the first step to refreshing the entire interface.
+
+Here's the complete list of features. 
+
+### Reporting
+
+- Updated pane design
+- Visual level filters for slicers
+- Sorting for the performance analyzer pane
+- Visual header tooltips
+- Table & matrix total label customization
+- Sync slicer support for hierarchy slicer
+- Consistent font sizes across visuals
+- Icon sets for table and matrix
+- Percent support for conditional formatting by rules
+- New filter pane is now generally available
+- Data colors support when using play axis on scatter charts
+- Performance improves when using relative date and dropdown slicers
+- Grouping visuals
+- Color and text classes in themes
+- New default themes
+
+### Analytics
+
+- Custom format strings
+- Conditional formatting updates for formatting options
+
+    - Visual background and title colors
+    - Card colors
+    - Gauge fill and colors
+    - Alt text
+    - Border color
+
+- Conditional formatting warnings
+- Drill-through discoverability improvement
+- New DAX expressions: REMOVEFILTERS and CONVERT
+- New DAX comparison operator: ==
+
+### Data preparation
+
+- Improvements to M Intellisense
+- New Transform: Split column by positions
+- Copy to clipboard from data profiling
+
+
+## May 2019: Power BI Desktop for Power BI Report Server
+
+See the [Power BI Report Server May 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) blog post for details about all the new features.
+
+Here are some of the highlights of the release:
+
+### Performance analyzer 
+
+If your report runs slower than you expect, try the Performance Analyzer in Power BI Desktop. When you start it, it creates a log file with information about every action you take in the report. Read more about the [Performance Analyzer](../desktop-performance-analyzer.md).
+
+### New modeling view
+
+In the new Modeling view in Power BI Desktop, you can view and work with complex datasets that contain many tables. Highlights include multiple diagram layouts and bulk editing of columns, measures, and tables. Read more about [Modeling view](../desktop-modeling-view.md).
+
+### Accessible visual interaction
+
+You can now access data points on many of the built-in visuals using keyboard navigation. Read more about [accessibility in Power BI reports](../desktop-accessibility.md).
+
+### Conditional formatting titles and web URL actions
+
+Power BI reports are interactive. It makes sense that titles in a report would be dynamic, to reflect the current state of the report. You can use the same expression-bound formatting to make the URLs of your buttons, shapes, and images dynamic. Read more about [expression-based titles](../desktop-conditional-format-visual-titles.md).
+
+### Cross-highlight by axis labels
+
+Select the axis category labels in a visual to cross-highlight the other elements on a page, just as you would select the data points in a visual. Read more about [cross-highlighting](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+
+### All the new features
+
+Here's the list of all the new features:
+
+### Reporting
+
+- Cross-highlight on a single point in line charts 
+- Word wrap on titles 
+- Update default visual interaction to cross-filter ¬
+- Rounded corners for visual borders 
+- Single select slicer  
+- Heat map support for Bing maps  
+- Cross-highlight by axis labels  
+- Default tooltip formatting  
+- Static web URL support for buttons, shapes & images  
+- Page alignment options   
+- Selection pane improvements  
+- Accessible visual interaction  
+- Conditional formatting for visual titles  
+- Conditional formatting for web URL actions for buttons, shapes, and images
+- Performance analyzer pane
+- Table and matrix keyboard navigation
+- Line data label position control
+- KPI visual Indicator text size control
+
+### Analytics
+
+- Show dates as a hierarchy now generally available  
+
+### Modeling
+
+- New modeling view now generally available
+- New DAX functions
+- Update to the ALLSELECTED DAX function
+- Disable auto-date tables for new reports
+
+## May 2019: Power BI Report Server
+
+### Support for trusted visuals
+
+We've added support for Trusted Visuals to Power BI Report Server. Currently we support Mapbox and PowerOn visuals. ESRI, Visio, and PowerApps aren't supported for this release.)
+
+### Improved security features
+
+**RestrictedResourceMimeTypeForUpload**, which admins can use to specify a comma-separated list of banned mime types, for example text/html.
 
 ## January 2019
 

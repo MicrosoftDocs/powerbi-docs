@@ -2,13 +2,13 @@
 title: Connect to Acumatica with Power BI
 description: Acumatica for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
@@ -16,13 +16,15 @@ LocalizationGroup: Connect to services
 # Connect to Acumatica with Power BI
 The Power BI Acumatica content pack allows to you quickly gain insights into your opportunity data. Power BI retrieves your data, including opportunities, accounts, and customers, then builds a default dashboard and related reports based on that data.
 
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
+
 Connect to the [Acumatica content pack](https://app.powerbi.com/getdata/services/acumatica) or read more about the [Acumatica integration](https://powerbi.microsoft.com/integrations/acumatica) with Power BI.
 
 >[!NOTE]
 >This content pack requires Acumatica v5.2 or higher.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
    ![](media/service-connect-to-acumatica/getdata3.png)
 2. In the **Services** box, select **Get**.
@@ -41,7 +43,7 @@ Connect to the [Acumatica content pack](https://app.powerbi.com/getdata/services
 5. For Authentication Method, select **Basic**. Enter your username and password from your Acumatica account, then click **Sign In**.
    
     ![](media/service-connect-to-acumatica/creds2.png)
-6. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \* which disappears once selected, choosing the dashboard will show a similar layout to the one below:
+6. After Power BI imports the data you will see a new dashboard, report, and dataset in the nav pane. New items are marked with a yellow asterisk \* which disappears once selected, choosing the dashboard will show a similar layout to the one below:
    
     ![](media/service-connect-to-acumatica/dashboard.png)
 

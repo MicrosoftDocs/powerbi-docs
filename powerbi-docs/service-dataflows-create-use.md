@@ -2,22 +2,22 @@
 title: Creating and using dataflows in Power BI
 description: Learn to create and use dataflows in Power BI
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/19/2019
+ms.date: 04/02/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
 ---
-# Creating and using dataflows in Power BI (Preview)
+# Creating and using dataflows in Power BI
 
 With advanced data preparation available in **Power BI**, you can create a collection of data called a dataflow, which you can then use to connect with business data from various sources, clean the data, transform it, and then load it to Power BI storage.
 
-A **dataflow** is a collection of *entities* (entities are similar to tables) that are created and managed in app workspaces in the Power BI service. You can add and edit entities in your dataflow, as well as manage data refresh schedules, directly from the workspace in which your dataflow was created.
+A **dataflow** is a collection of *entities* (entities are similar to tables) that are created and managed in workspaces in the Power BI service. You can add and edit entities in your dataflow, as well as manage data refresh schedules, directly from the workspace in which your dataflow was created.
 
 Once you create a dataflow, you can use **Power BI Desktop** and the **Power BI service** to create datasets, reports, dashboards, and apps that are based on the data you put into Power BI dataflows, and thereby gain insights into your business activities.
 
@@ -31,17 +31,14 @@ There are three primary steps to using a dataflow:
 
 In the following sections, we look at each of these steps and become familiar with the tools provided to complete each step. Let’s get started.
 
-> [!NOTE]
-> The dataflows functionality is in preview, and is subject to change and updates prior to general availability.
-
 ## Creating a dataflow
-To create a dataflow, launch the Power BI service in a browser then select an **app workspace** (dataflows are not available in *my-workspace* in the Power BI service) from the navigation pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow. 
+To create a dataflow, launch the Power BI service in a browser then select a **workspace** (dataflows are not available in *my-workspace* in the Power BI service) from the nav pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow. 
 
 ![Create a dataflow in Power BI](media/service-dataflows-create-use/dataflows-create-use_02a.png)
 
-Once you’re in an **app workspace** area where you can create a dataflow, the **+ Create** button appears in the upper-right corner of the canvas. Select the **+ Create** button, then select **Dataflow** from the drop-down list. 
+Once you’re in a **workspace** area where you can create a dataflow, the **+ Create** button appears in the upper-right corner of the canvas. Select the **+ Create** button, then select **Dataflow** from the drop-down list. 
 
-It's important to know that there is only *one owner* of any dataflow, which is the person who creates it. Only the owner can edit the dataflow. All members of the **app workspace** who have read or write permissions to the app workspace where the dataflow is created can connect to the dataflow from within **Power BI Desktop**, as described later in this article.
+It's important to know that there is only *one owner* of any dataflow, which is the person who creates it. Only the owner can edit the dataflow. All members of the **workspace** who have read or write permissions to the workspace where the dataflow is created can connect to the dataflow from within **Power BI Desktop**, as described later in this article.
 
 ![The + Create button in the Power BI service to create a dataflow](media/service-dataflows-create-use/dataflows-create-use_03a.png)
 
@@ -111,7 +108,7 @@ Great – now you’re ready for the next step, which is scheduling the refresh 
 
 Once your dataflow has been saved, you’ll want to schedule the refresh frequency for each of your connected data sources.
 
-Power BI dataflows use the Power BI data refresh process to keep your data up to date. In the **Power BI service**, in the **app workspace** section, there's a collection of areas where your information can be listed, including dataflows, as shown in the following image.
+Power BI dataflows use the Power BI data refresh process to keep your data up to date. In the **Power BI service**, in the **workspace** section, there's a collection of areas where your information can be listed, including dataflows, as shown in the following image.
 
 ![Manage dataflows in the Power BI service](media/service-dataflows-create-use/dataflows-create-use_12.png)
 
@@ -134,7 +131,7 @@ To connect to the dataflow, in Power BI Desktop select **Get Data > Power BI > P
 
 ![Connect to dataflows from Power BI Desktop](media/service-dataflows-create-use/dataflows-create-use_15.png)
 
-From there, navigate to the **app workspace** where you saved your dataflow, select the dataflow and then select the entities that you created from the list.
+From there, navigate to the **workspace** where you saved your dataflow, select the dataflow and then select the entities that you created from the list.
 
 You can also use the **search bar**, near the top of the window, to quickly find the name of your dataflow or entities from among many dataflow entities.
 
@@ -162,9 +159,9 @@ There may be occasions when connecting to data sources for dataflows run into is
 This article described how you can create your own **dataflow** and create a dataset and report in **Power BI Desktop** to take advantage of it. The following articles are useful for further information and scenarios when using dataflows:
 
 * [Self-service data prep with dataflows](service-dataflows-overview.md)
-* [Using computed entities on Power BI Premium (Preview)](service-dataflows-computed-entities-premium.md)
-* [Using dataflows with on-premises data sources (Preview)](service-dataflows-on-premises-gateways.md)
-* [Developer resources for Power BI dataflows (Preview)](service-dataflows-developer-resources.md)
+* [Using computed entities on Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Using dataflows with on-premises data sources](service-dataflows-on-premises-gateways.md)
+* [Developer resources for Power BI dataflows](service-dataflows-developer-resources.md)
 * [Dataflows and Azure Data Lake integration (Preview)](service-dataflows-azure-data-lake-integration.md)
 
 For more information about the Common Data Model, you can read its overview article:

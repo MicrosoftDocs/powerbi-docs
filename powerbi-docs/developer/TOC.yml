@@ -1,0 +1,249 @@
+﻿- name: "Power BI developer documentation"
+  href: index.yml
+  items:
+  - name: Overview
+    expanded: true
+    items:
+    - name: "What can developers do with Power BI"
+      href: what-can-you-do.md
+  - name: Power BI visuals
+    expanded: true
+    items:
+    - name: Overview
+      items: 
+      - name: "Visuals in Power BI"
+        href: ../power-bi-custom-visuals.md
+    - name: Tutorials
+      items:
+      - name: "Develop a Power BI visual"
+        href: visuals/custom-visual-develop-tutorial.md
+      - name: "Add formatting options"
+        href: visuals/custom-visual-develop-tutorial-format-options.md
+      - name: "Add unit tests for visual project"
+        href: visuals/unit-tests-introduction.md
+    - name: Concepts
+      items:
+      - name: "Visuals for organizations in Power BI"
+        href: ../power-bi-custom-visuals-organization.md
+      - name: "Guidelines for Power BI visuals" 
+        href: guidelines-powerbi-visuals.md
+      - name: "Visuals FAQ"
+        href: ../power-bi-custom-visuals-faq.md
+      - name: "Using capabilities"
+        href: visuals/capabilities.md
+      - name: "Data view mappings"
+        href: visuals/dataview-mappings.md
+      - name: "Objects and properties"
+        href: visuals/objects-properties.md
+      - name: "Advanced Edit Mode"
+        href: visuals/advanced-edit-mode.md
+    - name: How to
+      items:
+      - name: "Get a visual certified"
+        href: ../power-bi-custom-visuals-certified.md
+      - name: "Publish custom visuals to AppSource"
+        href: office-store.md
+      - name: "Use R-powered custom visuals in Power BI"
+        href: ../desktop-r-powered-custom-visuals.md
+      - name: "Visuals interactions"
+        href: visuals/visuals-interactions.md
+      - name: "Add visuals tooltips"
+        href: visuals/add-tooltips.md
+      - name: "Add analytics pane" 
+        href: visuals/analytics-pane.md
+      - name: "Filter visuals" 
+        href: visuals/filter-api.md
+      - name: "Fetch more data" 
+        href: visuals/fetch-more-data.md
+      - name: "Add bookmarks support"
+        href: visuals/bookmarks-support.md
+      - name: "Highlight data in visuals"
+        href: visuals/highlight.md
+      - name: "Add High-Contrast mode support"
+        href: visuals/high-contrast-support.md
+      - name: "Enable sync slicers"
+        href: visuals/enable-sync-slicers.md
+      - name: "Troubleshoot Power BI visuals"
+        href: ../power-bi-custom-visuals-troubleshoot.md
+    - name: Reference
+      items: 
+      - name: "Landing page" 
+        href: visuals/landing-page.md
+      - name: "Launch URL" 
+        href: visuals/launch-url.md
+      - name: "Local Storage API" 
+        href: visuals/local-storage.md
+      - name: "Rendering events" 
+        href: visuals/event-service.md
+      - name: "Sorting"
+        href: visuals/sort-options.md
+    - name: Resources
+      items:
+      - name: "Dev Center"
+        href: https://powerbi.microsoft.com/developers/
+      - name: "Samples"
+        href: https://microsoft.github.io/PowerBI-visuals/samples/
+      - name: "Custom Visuals Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848277
+      - name: "Creating SSL certificate"
+        href: visuals/create-ssl-certificate.md
+  - name: Embedded analytics
+    expanded: true
+    items:
+    - name: Overview
+      items: 
+      - name: "What is embedding with Power BI"
+        href: embedding.md
+      - name: "What is Power BI Embedded in Azure"
+        href: azure-pbie-what-is-power-bi-embedded.md
+    - name: Tutorials
+      items: 
+      - name: "Embed content for customers"
+        href: embed-sample-for-customers.md
+      - name: "Embed content for your organization"
+        href: embed-sample-for-your-organization.md
+      - name: "Embed paginated reports for customers"
+        href: embed-paginated-reports-customers.md
+      - name: "Embed content for national clouds"
+        href: embed-sample-for-customers-national-clouds.md
+    - name: Concepts
+      items:
+      - name: "Performance best practices"
+        href: embedded-performance-best-practices.md
+      - name: "Service principal"
+        href: embed-service-principal.md
+      - name: "Row-level security"
+        href: embedded-row-level-security.md
+      - name: "Paginated reports Row-level security"
+        href: paginated-reports-row-level-security.md
+      - name: "Manage multi-tenants"
+        href: embed-multi-tenancy.md
+      - name: "Azure diagnostic logging for Power BI Embedded"
+        href: azure-pbie-diag-logs.md
+      - name: "Embedding FAQ"
+        href: embedded-faq.md
+      - name: "Power BI permissions"
+        href: power-bi-permissions.md 
+    - name: How to
+      items: 
+      - name: "Embed from an app"
+        href: embed-from-apps.md
+      - name: "Auto-install apps"
+        href: embed-auto-install-app.md
+      - name: "Create an Azure Active Directory tenant"
+        href: create-an-azure-active-directory-tenant.md
+      - name: "Register an application"
+        href: register-app.md
+      - name: "Get an Azure AD access token"
+        href: get-azuread-access-token.md
+      - name: "Dynamic binding"
+        href: embed-dynamic-binding.md
+      - name: "Embedding Q&A"
+        href: qanda.md
+      - name: "Troubleshoot your embedded application"
+        href: embedded-troubleshoot.md
+      - name: Manage capacities in Azure
+        items:
+        - name: Create a capacity in Azure
+          href: azure-pbie-create-capacity.md
+        - name: Create a capacity using Multi-Geo in Azure
+          href: embedded-multi-geo.md
+        - name: Scale a capacity in Azure
+          href: azure-pbie-scale-capacity.md
+        - name: Pause and start a capacity in Azure
+          href: azure-pbie-pause-start.md
+      - name: Migrate from Workspace Collections
+        items:
+        - name: "How to migrate from Power BI Workspace Collections"
+          href: migrate-from-powerbi-embedded.md  
+        - name: Migration tool
+          href: migrate-tool.md
+        - name: "Migration code snippets"
+          href: migrate-code-snippets.md
+    - name: Reference
+      items:
+      - name: APIs
+        items:
+        - name: Azure Resource Management REST APIs
+          href: https://docs.microsoft.com/rest/api/power-bi-embedded/
+        - name: Power BI REST APIs
+          href: https://msdn.microsoft.com/library/mt147898.aspx
+        - name: Power BI REST API Reference
+          href: rest-api-reference.md
+      - name: ".NET SDK Download"
+        href: https://go.microsoft.com/fwlink/?linkid=848274
+      - name: "Embed custom layouts into an app"
+        href: embedded-custom-layout.md
+    - name: Resources
+      items:
+      - name: "Dev Center"
+        href: https://powerbi.microsoft.com/en-us/developers/
+      - name: "Embedding setup tool"
+        href: https://aka.ms/embedsetup
+      - name: "JavaScript Playground Sample"
+        href: https://go.microsoft.com/fwlink/?linkid=848279
+      - name: "Power BI JavaScript wiki"
+        href: https://github.com/Microsoft/powerbi-javascript/wiki
+      - name: "JavaScript Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848276
+      - name: "Power BI C# Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848273
+      - name: "Samples"
+        href: https://go.microsoft.com/fwlink/?linkid=851293
+      - name: "Power BI community"
+        href: https://go.microsoft.com/fwlink/?linkid=848280
+      - name: "Stack Overflow"
+        href: https://go.microsoft.com/fwlink/?linkid=848281
+  - name: Automation
+    expanded: true
+    items:
+    - name: Overview
+      items:
+      - name: "What can I do with the Power BI API?"
+        href: overview-of-power-bi-rest-api.md
+    - name: Tutorials
+      items:
+      - name: "Push data into a dataset"
+        href: walkthrough-push-data.md
+      - name: "Get an authentication access token"
+        href: walkthrough-push-data-get-token.md
+      - name: "Create a dataset"
+        href: walkthrough-push-data-create-dataset.md
+      - name: "Get a dataset to add rows"
+        href: walkthrough-push-data-get-datasets.md
+      - name: "Add rows to a table"
+        href: walkthrough-push-data-add-rows.md
+    - name: Concepts
+      items:
+      - name: "Automatic retention policy for real-time data"
+        href: api-automatic-retention-policy-for-real-time-data.md
+      - name: Push data
+        items:
+        - name: "Power BI REST API limitations"
+          href: api-rest-api-limitations.md
+        - name: "Dataset properties"
+          href: api-dataset-properties.md
+        - name: "Data model versioning"
+          href: api-data-model-versioning.md
+    - name: How to
+      items:
+      - name: "Configure credentials"
+        href: configure-credentials.md
+      - name: "Encrypt credentials"
+        href: encrypt-credentials.md
+    - name: Reference
+      items:
+      - name: "REST APIs"
+        href: https://docs.microsoft.com/rest/api/power-bi
+      - name: "Power BI REST API Reference"
+        href: rest-api-reference.md
+      - name: "Complete code listing"
+        href: walkthrough-push-data-complete-code.md
+    - name: Resources
+      items:
+      - name: "Dev Center"
+        href: https://powerbi.microsoft.com/en-us/developers/
+      - name: "Power BI C# Git Repo"
+        href: https://go.microsoft.com/fwlink/?linkid=848273
+      - name: ".NET SDK Download"
+        href: https://go.microsoft.com/fwlink/?linkid=848274

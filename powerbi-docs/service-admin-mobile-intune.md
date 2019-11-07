@@ -2,13 +2,13 @@
 title: Configure mobile apps with Microsoft Intune
 description: How to configure the Power BI Mobile apps with Microsoft Intune. This includes how to add, and deploy, the application. And, how to create the mobile application policy to control security.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 09/09/2019
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -83,7 +83,7 @@ You can create the application, or the policy first. The order in which they are
 
 1. Select **Managed iOS App from the App Store** from the drop down.
 
-1. Enter the app URL, that we got from [Step 1](#step-1-get-the-URL-for-the-application), and select **Next**.
+1. Enter the app URL, that we got from [Step 1](#step-1-get-the-url-for-the-application), and select **Next**.
 
     ![Software setup: iOS](media/service-admin-mobile-intune/intune-add-software-ios1.png)
 
@@ -101,7 +101,7 @@ You can create the application, or the policy first. The order in which they are
 
 1. Select **External Link** from the drop down.
 
-1. Enter the app URL, that we got from [Step 1](#step-1-get-the-URL-for-the-application), and select **Next**.
+1. Enter the app URL, that we got from [Step 1](#step-1-get-the-url-for-the-application), and select **Next**.
 
     ![Software setup: Android](media/service-admin-mobile-intune/intune-add-software-android1.png)
 
@@ -188,4 +188,4 @@ You install the application through the *Company Portal* app. If you haven't ins
 
 [Power BI apps for mobile devices](consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)  
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)  

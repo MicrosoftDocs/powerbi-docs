@@ -2,13 +2,13 @@
 title: Use the SAP BW Connector in Power BI Desktop
 description: Use the SAP BW Connector in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/14/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -232,10 +232,11 @@ The following table details the current support for SAP BW.
 |Power BI Gateway     |Import      | Same as Power BI Desktop |         |   |   |
 |Power BI Gateway     |DirectQuery | User / password        | Application Server | N/A  | Yes  |
 |Power BI Gateway     |DirectQuery | Windows via impersonation (fixed user, no SSO) | Application Server | sapcrypto + gsskrb5/gx64krb5  | Yes  |
-|Power BI Gateway     |DirectQuery | Use SSO via Kerberos for DirectQuery queries option | Application Server | *only with* gsskrb5/gx64krb5   | Yes  |
+|Power BI Gateway     |DirectQuery | Use SSO via Kerberos for DirectQuery queries option | Application Server | sapcrypto + gsskrb5/gx64krb5   | Yes  |
 |Power BI Gateway     |DirectQuery | User / password        | Message Server | N/A  | Yes  |
 |Power BI Gateway     |DirectQuery | Windows via impersonation (fixed user, no SSO) | Message Server | sapcrypto + gsskrb5/gx64krb5  | Yes  |
-|Power BI Gateway     |DirectQuery | Use SSO via Kerberos for DirectQuery queries option | Message Server | sapcrypto + gsskrb5/gx64krb5  | No  |
+|Power BI Gateway     |DirectQuery | Use SSO via Kerberos for DirectQuery queries option | Message Server | gsskrb5/gx64krb5  | No  |
+|Power BI Gateway     |DirectQuery | Use SSO via Kerberos for DirectQuery queries option | Message Server | sapcrypto  | Yes  |
 
 
 

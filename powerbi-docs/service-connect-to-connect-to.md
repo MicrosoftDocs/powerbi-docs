@@ -2,13 +2,13 @@
 title: Connect to comScore Digital Analytix with Power BI
 description: comScore Digital Analytix for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 08/29/2019
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
@@ -16,13 +16,15 @@ LocalizationGroup: Connect to services
 # Connect to comScore Digital Analytix with Power BI
 Visual and explore your comScore Digital Analytix data in Power BI with the Power BI content pack. The data will be refreshed automatically once per day.
 
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
+
 Connect to the [comScore content pack for Power BI.](https://app.powerbi.com/getdata/services/comscore)
 
 >[!NOTE]
 >To connect to the content pack you need a comScore DAx user account and have comScore API access. More [details](#Requirements) below.
 
 ## How to connect
-1. Select Get Data at the bottom of the left navigation pane.
+1. Select Get Data at the bottom of the nav pane.
    
    ![](media/service-connect-to-connect-to/getdata.png)
 2. In the **Services** box, select **Get**.
@@ -37,7 +39,7 @@ Connect to the [comScore content pack for Power BI.](https://app.powerbi.com/get
 5. Provide your comScore username and password to connect. See details on finding this value below.
    
    ![](media/service-connect-to-connect-to/creds.png)
-6. The import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+6. The import process will begin automatically. When complete, a new dashboard, report and model will appear in the nav pane. Select the dashboard to view your imported data.
 
 **What now?**
 

@@ -2,12 +2,12 @@
 title: Activate Cortana for Power BI
 description: Use Cortana with Power BI to get answers from your data. Activate Cortana for each Power BI dataset and then enable Cortana to access your datasets from Windows devices.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/20/2017
+ms.date: 05/29/2019
 ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
@@ -15,10 +15,8 @@ LocalizationGroup: Ask questions of your data
 # Enable Cortana to access Power BI reports (and their underlying datasets)
 You've read the [Introduction to Cortana and Power BI](service-cortana-intro.md) (if not, you might want to read that first and then come back). And now you want to try it out yourself.  Before you can ask natural language questions in Cortana and find answers from data stored in Power BI ***reports***, there are a few requirements. Specifically, you'll need to do the following.
 
-> [!NOTE]
-> If you are trying out the Cortana and Power BI ***dashboard*** preview, you can skip the rest of this article. There are no setup requirements for Cortana to be able to search your Power BI dashboards.
-> 
-> 
+> [!IMPORTANT]
+> Cortana integration is being deprecated in Power BI. Starting June 11, Cortana will no longer work for any dashboards and reports.
 
 In Power BI service
 
@@ -40,7 +38,7 @@ You'll need to sign in to Power BI service (not Power BI Desktop) and repeat the
 2. The dataset associated with this report is **Contoso Sales**.
    
     ![Contoso Sales dataset](media/service-cortana-enable/power-bi-identify-dataset.png)
-3. To the right of the dataset name, select the **ellipses (...) > Settings**.  
+3. To the right of the dataset name, select **More options** (...) > Settings**.  
    
     ![Choose Settings](media/service-cortana-enable/power-bi-settings-cortana.png)
 4. Select **Q&A and Cortana** > **Allow Cortana to access this dataset** > **Apply**.
@@ -82,5 +80,5 @@ Cortana will use this work or school account to check Power BI for potential ans
 
 [Troubleshoot Cortana and Power BI integration issues](service-cortana-troubleshoot.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

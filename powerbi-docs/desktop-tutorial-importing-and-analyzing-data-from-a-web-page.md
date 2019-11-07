@@ -2,14 +2,14 @@
 title: 'Tutorial: Import and analyze data from a web page'
 description: 'Tutorial: Import and analyze data from a web page using Power BI Desktop'
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 
 LocalizationGroup: Learn more
@@ -25,7 +25,7 @@ As a long-time soccer fan, you want to report on the UEFA European Championship 
 
 ## Connect to a web data source
 
-You can get the UEFA winners data from the Results table on the UEFA European Football Championship Wikipedia page at http://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
+You can get the UEFA winners data from the Results table on the UEFA European Football Championship Wikipedia page at https://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
 
 ![Wikipedia Results table](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
 
@@ -40,7 +40,7 @@ To import the data:
    >[!NOTE]
    >You can also select the **Get Data** item itself, or select **Get Data** from the Power BI **Get started** dialog, then select **Web** from the **All** or **Other** section of the **Get Data** dialog box, and then select **Connect**.
    
-2. In the **From Web** dialog box, paste the URL `http://en.wikipedia.org/wiki/UEFA_European_Football_Championship` into the **URL** text box, and then select **OK**.
+2. In the **From Web** dialog box, paste the URL `https://en.wikipedia.org/wiki/UEFA_European_Football_Championship` into the **URL** text box, and then select **OK**.
    
     ![Get Data from dialog](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web2.png)
    
@@ -182,8 +182,8 @@ To change the map to a pie chart, select the map and then select the **Pie chart
 Power BI Desktop provides a seamless end-to-end experience, from getting data from a wide range of data sources and shaping it to meet your analysis needs, to visualizing this data in rich and interactive ways. Once your report is ready, you can [upload it to Power BI](desktop-upload-desktop-files.md) and create dashboards based on it, which you can share with other Power BI users.
 
 ## See also
-* [Read other Power BI Desktop tutorials](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Watch Power BI Desktop videos](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Visit the Power BI Forum](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Read the Power BI Blog](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Read other Power BI Desktop tutorials](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Watch Power BI Desktop videos](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Visit the Power BI Forum](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Read the Power BI Blog](https://go.microsoft.com/fwlink/?LinkID=519327)
 

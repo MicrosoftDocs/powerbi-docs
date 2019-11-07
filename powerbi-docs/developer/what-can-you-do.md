@@ -1,14 +1,14 @@
 ---
 title: What can developers do with Power BI?
 description: Power BI offers a wide range of options for developers. This ranges from embedding to custom visuals and streaming datasets.
-author: markingmyname
-ms.author: maghan
-manager: kfile
+author: rkarlin
+ms.author: rkarlin
+manager: kfollis
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
-ms.date: 09/17/2018
+ms.date: 03/15/2019
 #Customer intent: As a developer, I want to understand the capabilities of Power BI, so I have enough info to determine which Power BI developer features to use.
 ---
 
@@ -18,7 +18,7 @@ Developers have different options trying to include Power BI content into applic
 
 ## Embedding Power BI content
 
-The Power BI service (SaaS) and the Power BI Embedded service in Azure (PaaS) have APIs for embedding your dashboards and reports. This feature means you can access the latest Power BI features – such as dashboards, gateways, and app workspaces – when embedding your content.
+The Power BI service (SaaS) and the Power BI Embedded service in Azure (PaaS) have APIs for embedding your dashboards and reports. This feature means you can access the latest Power BI features – such as dashboards, gateways, and workspaces – when embedding your content.
 
 You can go through the [Embedding setup tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
 
@@ -40,7 +40,7 @@ Custom visuals allow you to create your visuals for use within Power BI reports.
 
 ![CV sample](media/what-can-you-do/powerbi-custom-visual-store.png)
 
-To start learning more about custom visual development, see [Developing a Power BI custom visual](custom-visual-develop-tutorial.md).
+To start learning more about custom visual development, see [Developing a Power BI custom visual](visuals/custom-visual-develop-tutorial.md).
 
 ## Using API automation
 

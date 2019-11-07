@@ -1,9 +1,9 @@
 ---
 title: Power BI Embedded Migration Tool
 description: This migration tool can be used to copy your reports from the Power BI Embedded Azure service (PaaS) to the Power BI service (SaaS).
-author: markingmyname
-ms.author: maghan
-manager: kfile
+author: rkarlin
+ms.author: rkarlin
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -127,7 +127,7 @@ A path will automatically be created for you. You can change this path if you wi
 
 #### Upload Plan
 
-Here you can specify a prefix to be used for the App Workspaces that will be created within the Power BI service. After the prefix will be the GUID for the workspace that existed in Azure.
+Here you can specify a prefix to be used for the workspaces that will be created within the Power BI service. After the prefix will be the GUID for the workspace that existed in Azure.
 
 ![Upload plan](media/migrate-tool/migrate-tool-upload-plan.png)
 
@@ -162,21 +162,21 @@ After the download is completed, select the **Create Groups** tab.
 
 ## Step 3: Create Groups
 
-After you have downloaded the reports that are available, you can go to the **Create Groups** tab. This tab will create the app workspaces within the Power BI service based on the migration plan that you created. It will create the app workspace with the name you provided on the **Upload** tab within **Analyze & Plan Migration**.
+After you have downloaded the reports that are available, you can go to the **Create Groups** tab. This tab will create the workspaces within the Power BI service based on the migration plan that you created. It will create the workspace with the name you provided on the **Upload** tab within **Analyze & Plan Migration**.
 
 ![Create groups](media/migrate-tool/migrate-tool-create-groups.png)
 
-To create the app workspaces, you can select either **Create Selected Groups** or **Create All Missing Groups**.
+To create the workspaces, you can select either **Create Selected Groups** or **Create All Missing Groups**.
 
-When you select either of these options, you will be prompted to sign in. *You will want to use your credentials for the Power BI service that you want to create the app workspaces on.*
+When you select either of these options, you will be prompted to sign in. *You will want to use your credentials for the Power BI service that you want to create the workspaces on.*
 
 ![Create group sign-in](media/migrate-tool/migrate-tool-create-group-sign-in.png)
 
-This will create the app workspace within the Power BI service. This does not upload the reports to the app workspace.
+This will create the workspace within the Power BI service. This does not upload the reports to the workspace.
 
-You can verify that the app workspace was created by signing into Power BI and validating that the workspace exists. You will notice that nothing is in the workspace.
+You can verify that the workspace was created by signing into Power BI and validating that the workspace exists. You will notice that nothing is in the workspace.
 
-![App workspace](media/migrate-tool/migrate-tool-app-workspace.png)
+![workspace](media/migrate-tool/migrate-tool-app-workspace.png)
 
 After the workspace is created, you can move onto the **Upload** tab.
 
@@ -230,9 +230,9 @@ For the failed item, we can change the name of the SaaSTargetReportName.
 
 We can then re-open the plan, in the migration tool, and upload the failed report.
 
-Going back to Power BI, we can see that the reports and datasets have been uploaded in the app workspace.
+Going back to Power BI, we can see that the reports and datasets have been uploaded in the workspace.
 
-![Upload app workspace](media/migrate-tool/migrate-tool-upload-app-workspace.png)
+![Upload workspace](media/migrate-tool/migrate-tool-upload-app-workspace.png)
 
 <a name="upload-local-file"></a>
 
@@ -259,7 +259,7 @@ You can then update the connection string for the dataset within the Power BI se
 
 ## Embedding
 
-Now that your reports have been migrated from the Power BI Embedded Azure service to the Power BI service, you can now update your application and begin embedding the reports in this app workspace.
+Now that your reports have been migrated from the Power BI Embedded Azure service to the Power BI service, you can now update your application and begin embedding the reports in this workspace.
 
 For more information, see [How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md).
 
@@ -267,10 +267,10 @@ For more information, see [How to migrate Power BI Embedded workspace collection
 
 [Embedding with Power BI](embedding.md)  
 [How to migrate Power BI Embedded workspace collection content to Power BI](migrate-from-powerbi-embedded.md)  
-[Power BI Premium - what is it?](../service-premium.md)  
+[Power BI Premium - what is it?](../service-premium-what-is.md)  
 [JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

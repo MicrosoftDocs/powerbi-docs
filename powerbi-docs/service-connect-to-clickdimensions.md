@@ -2,13 +2,13 @@
 title: Connect to ClickDimensions with Power BI
 description: ClickDimensions for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
@@ -16,10 +16,12 @@ LocalizationGroup: Connect to services
 # Connect to ClickDimensions with Power BI
 The ClickDimensions content pack for Power BI allows users to utilize ClickDimensions marketing data in Power BI, giving management teams further insight into the success of their sales and marketing efforts. Visualize and analyze email interactions, web visits and form submissions in Power BI dashboards and reports.
 
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
+
 Connect to the [ClickDimensions content pack](https://app.powerbi.com/getdata/services/click-dimensions) for Power BI.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
    ![](media/service-connect-to-clickdimensions/getdata.png)
 2. In the **Services** box, select **Get**.
@@ -34,7 +36,7 @@ Connect to the [ClickDimensions content pack](https://app.powerbi.com/getdata/se
 5. For **Authentication Method**, select **Basic** \> **Sign In**. When prompted, enter your ClickDimensions credentials. See details in [finding those parameters](#FindingParams) below
    
     ![](media/service-connect-to-clickdimensions/creds.png)
-6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the nav pane. Select the dashboard to view your imported data.
    
      ![](media/service-connect-to-clickdimensions/dashboard.png)
 

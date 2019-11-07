@@ -1,13 +1,13 @@
 ---
 title: Troubleshooting your embedded application
 description: This article discusses some common issues you may encounter when embedding content from Power BI.
-author: markingmyname
-ms.author: maghan
-manager: kfile
+author: rkarlin
+ms.author: rkarlin
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 02/05/2019
 ---
 
@@ -19,9 +19,9 @@ This article discusses some common issues you may get when embedding content fro
 
 ### Fiddler Trace
 
-[Fiddler](http://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the traffic with the Power BI APIs from the client machine. This tool may show errors and other related information.
+[Fiddler](https://www.telerik.com/fiddler) is a free tool from Telerik that monitors HTTP traffic.  You can see the traffic with the Power BI APIs from the client machine. This tool may show errors and other related information.
 
-![Fiddler trace](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
+![Fiddler trace](media/embedded-troubleshoot/fiddler.png)
 
 ### F12 in Browser for front-end debugging
 
@@ -73,8 +73,9 @@ A fiddler capture may be required to investigate further. There could be several
 
 * The user has exceeded the amount of embed token that can be generated on a shared capacity. Purchase Azure capacities to generate embed tokens and assign the workspace to that capacity. See [Create Power BI Embedded capacity in the Azure portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * The Azure AD auth token expired.
-* The authenticated user isn't a member of the group (app workspace).
-* The authenticated user isn't an admin of the group (app workspace).
+* The authenticated user isn't a member of the group (workspace).
+* The authenticated user isn't an admin of the group (workspace).
+* The authenticated user doesn't have permissions. Permissions can be updated using [refreshUserPermissions API](https://docs.microsoft.com/rest/api/power-bi/users/refreshuserpermissions)
 * The authorization header may not be listed correctly. Make sure there are no typos.
 
 The backend of the application may need to refresh the auth token before calling GenerateToken.
@@ -180,6 +181,10 @@ User consent is disabled for the tenant.
 
 *Grant permissions* to the application by an admin - either for the entire tenant or a specific user.
 
+### CS1061 error
+
+Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) if you experience an "'AuthenticationContext' does not contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)" error.
+
 ## Data sources
 
 ### ISV wants to have different credentials for the same data source
@@ -283,9 +288,9 @@ When you run the **Embed for your organization** sample app, you get the followi
 
     AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
 
-This error is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, then use `http://localhost:13526/` as the redirect URL.
+This error is because the redirect URL specified for the web-server application is different from the sample's URL. If you want to register the sample application, then use `https://localhost:13526/` as the redirect URL.
 
-If you like to edit the registered application, then learn how to edit the [AAD registered application](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), so the application can provide access to the web APIs.
+If you'd like to edit the registered application, then learn how to [update the Azure AD-registered application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), so the application can provide access to the web APIs.
 
 If you would like to edit your Power BI user profile or data, then learn how to edit your [Power BI data](https://docs.microsoft.com/power-bi/service-basic-concepts).
 
@@ -295,7 +300,7 @@ If you get the error - AADSTS50079: The user is required to use multi-factor aut
 
 For more information, please see [Power BI Embedded FAQ](embedded-faq.md).
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 
 If you require further assistance, then [contact support](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) or [create a support ticket via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) and provide the error messages you encounter.
 
@@ -303,4 +308,4 @@ If you require further assistance, then [contact support](https://powerbi.micros
 
 For more information, see [FAQs](embedded-faq.md).
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

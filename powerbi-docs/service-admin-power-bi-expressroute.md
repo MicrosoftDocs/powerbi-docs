@@ -2,13 +2,13 @@
 title: Power BI and ExpressRoute
 description: Power BI and ExpressRoute
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 12/03/2018
+ms.date: 09/09/2019
 ms.author: mblythe
 
 LocalizationGroup: Administration

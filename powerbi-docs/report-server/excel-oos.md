@@ -1,9 +1,9 @@
 ---
 title: Host Excel workbooks using Office Online Server (OOS) - Power BI Report Server
 description: In addition to viewing Power BI reports in the web portal, Power BI Report Server can host Excel workbooks by using Office Online Server (OOS).
-author: markingmyname
-ms.author: maghan
-manager: kfile
+author: maggiesMSFT
+ms.author: maggies
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -49,7 +49,7 @@ Perform these procedures on the server that will run Office Online Server. This 
 
 If you plan to use any Excel Online features that utilize external data access (such as Power Pivot), note that Office Online Server must reside in the same Active Directory forest as its users as well as any external data sources that you plan to access using Windows-based authentication.
 
-1. Download Office Online Server from the [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). The download is located under those Office products on the VLSC portal. For development purposes, you can download OOS from MSDN subscriber downloads.
+1. Download Office Online Server from the [Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/p/?LinkId=256561). The download is located under those Office products on the VLSC portal. For development purposes, you can download OOS from MSDN subscriber downloads.
 2. Run Setup.exe.
 3. On the **Read the Microsoft Software License Terms** page, select **I accept the terms of this agreement** and select **Continue**.
 4. On the **Choose a file location** page, select the folder where you want the Office Online Server files to be installed (for example, C:\Program Files\Microsoft Office Web Apps\*) and select **Install Now**. If the folder you specified doesn’t exist, Setup creates it for you.
@@ -64,7 +64,7 @@ Office Online Server Language Packs let users view web-based Office files in mul
 
 To install the language packs, follow these steps.
 
-1. Download the Office Online Server Language Packs from the [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=798136).
+1. Download the Office Online Server Language Packs from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=798136).
 2. Run **wacserverlanguagepack.exe**.
 3. In the Office Online Server Language Pack Wizard, on the **Read the Microsoft Software License Terms** page, select **I accept the terms of this agreement** and select **Continue**.
 4. When Setup finishes installing Office Online Server, select **Close**.
@@ -81,7 +81,7 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 
 **Parameters**
 
-* **–InternalURL** is the fully qualified domain name (FQDN) of the server that runs Office Online Server, such as `http://servername.contoso.com`.
+* **–InternalURL** is the fully qualified domain name (FQDN) of the server that runs Office Online Server, such as `https://servername.contoso.com`.
 * **–ExternalURL** is the FQDN that can be accessed on the Internet.
 * **–CertificateName** is the friendly name of the certificate.
 
@@ -90,12 +90,12 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 Use the New-OfficeWebAppsFarm command to create a new Office Online Server farm that consists of a single server, as shown in the following example.
 
 ```powershell
-New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp
+New-OfficeWebAppsFarm -InternalURL "https://servername" -AllowHttp
 ```
 
 **Parameters**
 
-* **–InternalURL** is the name of the server that runs Office Online Server, such as `http://servername`.
+* **–InternalURL** is the name of the server that runs Office Online Server, such as `https://servername`.
 * **–AllowHttp** configures the farm to use HTTP.
 
 ### Verify that the Office Online Server farm was created successfully
@@ -163,7 +163,7 @@ To avoid firewall issues, you may need to open the ports 2382 and 2383. You can 
 
 ## Configure Power BI Report Server to use the OOS Server
 
-On the **General** page of **Site settings**, enter the OOS discovery url. The OOS discovery url is the *InternalUrl*, used when deploying the OOS server, followed by */hosting/discovery*. For example, `http://servername/hosting/discovery`, for HTTP. And, `https://server.contoso.com/hosting/discovery` for HTTPS.
+On the **General** page of **Site settings**, enter the OOS discovery url. The OOS discovery url is the *InternalUrl*, used when deploying the OOS server, followed by */hosting/discovery*. For example, `https://servername/hosting/discovery`, for HTTP. And, `https://server.contoso.com/hosting/discovery` for HTTPS.
 
 To get to **Site settings**, select the **gear icon** in the upper right and select **Site settings**.
 
@@ -182,6 +182,6 @@ After you enter the discovery url, and select **Apply**, selecting an Excel work
 [Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -1,23 +1,108 @@
 ---
-title: Changelog for Power BI Report Server
+title: Change log for Power BI Report Server
 description: This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
+ms.author: jaimeta
 author: jtarquino
-manager: kfile
+manager: kfollis
 ms.reviewer: maggies
-
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/31/2018
-ms.author: jtarquino
+ms.date: 10/25/2019
 ---
-# Changelog for Power BI Report Server
+
+# Change log for Power BI Report Server
 
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 
 For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
 
+## September 2019
+- **Power BI Report Server**
+    - *Version: 1.6.7236.4246 (Build 15.0.1102.646), Released: October 25, 2019*
+        - Security updates
+        - Bug fixes
+            - Fix for .net framework 4.7 not installed.
+	        - Fix for paginated reports for Teradata with multivalue parameters with error 110083.
+	        - Fix for URLRoot value not work if there are multiple web service URL bindings and one of them is https://+80/reportserver.
+		  - Fix for paginated reports multivalue parameter values showing up outside the report area.
+		  
+    - *Version: 1.6.7221.30698 (Build 15.0.1102.620), Released: October 9, 2019*
+        - Bug fixes
+            - Fix for Text Filter custom visual.
+	        - Fix for the performance of drop down slicers.
+	        - Fix for Strip PII from telemetry.
+		  - Fix for URLs to not be case sensitive.
+ 		  
+    - *Version 1.6.7206.38019 (Build 15.0.1102.597), Released: September 26, 2019*
+        - Security updates
+        - Bug fixes
+           - Paginated reports
+             - Fix for accessibility issues encountered while using Internet Explorer and Microsoft Edge.
+             - Fix for SAP HANA issues while testing connection.
+             - Fix for issues found while providing list of email addresses.
+             - Fix for for Power BI reports that use a DirectQuery data source and integrated authentication.
+             - Fix for Paginated reports to render with filter parameters when snapshot is enabled.
+             - Fix for double execution of stored procedures during report execution.
+             - Fix for default service account being granted SQL Server login permissions, when custom service account is configured to run the Power BI Report Server.
+             - Fix for accessing models meanwhile refreshing in Japanese time zone.
+             - Fix for stale models when a new version of the report is uploaded during refresh.
+             - Fix for parameter values that contain the '&' character'.
+         - Programmability
+             - Updated Web API: /PowerBIReports({Id})/DataSources (PATCH) to allow connection string updates.
+         
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.73.5586.1501 (September 2019), Released: October 25, 2019*
+        - Bug fixes
+            - Fix for Telemetry.
+	        
+    - *Version: 2.73.5586.1241 (September 2019), Released: October 9, 2019*
+        - Bug fixes
+            - Fix for Text Filter custom visual.
+	        - Fix for the performance of drop down slicers.
+	        - Fix for Strip PII from telemetry.
+            
+    - *Version: 2.73.5586.821 (September 2019), Released: September 26, 2019* (new build and new version)
+        - Contains changes required for connection with Power BI Report Server (September 2019)
+
+    
+## May 2019
+
+- **Power BI Report Server**          
+    - *Version 1.5.7074.36177 (Build 15.0.1102.371), Released: May 21, 2019*
+        - Bug Fixes
+            - Paginated Reports
+                - Fix to always enable pdf font-embedding.
+                - Fix to set cookies sent over https as Secure
+                - Fix to issues with pop ups due to script errors
+                - Fix for display issues with Mobile App on Android phones
+                - Fix for Mobile Report Time Navigator to show the correct week numbers irrespective of the start of Fiscal year
+                - Added 'RestrictedResourceMimeTypeForUpload' configurable property for admins to specify banned mime types
+         - Features
+            - Adding support for Trusted Visuals to PBIRS
+
+- **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.69.5467.1801 (May 2019), Released: May 21, 2019*
+        - Bug fixes
+            - Fix to avoid re-entry of credentials during PBIX upload to PBIRS
+            - Fixes opening documents with # in the filename
+            - Added easier link for back navigation on PBIRS Selection window
+            - Fix to High Contrast mode in PBIRS to display Back button, show warning visual messages.
+            - UI fixes to Selection pane, canvas scaling.
+
+    - *Version: 2.69.5467.5201 (May 2019), Released: July 30, 2019*
+        - Bug fixes
+            - Fix for incorrect telemetry logging
+
 ## January 2019
+
+- **Power BI Report Server**          
+    - *Version 1.4.7024.16477 (Build 15.0.1102.299), Released: March 28, 2019*
+        - Bug Fixes
+            - Power BI Reports
+                - Fix for issue with basic credentials when using direct query for SAP Hana and SAP BW
+                - Fix for OData feed data refresh fails with "Could not load file or assembly 'Microsoft.OData.Core.NetFX35.V7"
+
 - **Power BI Report Server**            
     - *Version 1.4.6969.7395 (Build 15.0.1102.235), Released: January 30, 2019*
         - Bug Fixes
@@ -56,10 +141,14 @@ For detailed information about new features, see [What's new in Power BI Report 
         - Shortcut and pinned icons remain after uninstalling Power BI Report Server
         - Fix for pinning Power BI Report Server to start menu giving black text on a black icon
 
-    - *Version: 2.65.5313.1421 (January 2019), Released: January 22, 2019*
-        - Contains changes required for connection with Power BI Report Server (January 2019)  
+    - *Version: 2.65.5313.1421 (January 2019), Released: January 22, 2019* (new build and new version)
+        - Contains changes required for connection with Power BI Report Server (January 2019) 
+    - *Version: 2.65.5313.5141 (January 2019), Released: July 31, 2019* (new build and new version)
+        - Bug fixes
+            - Fix for incorrect telemetry logging
 
 ## August 2018
+
 - **Power BI Report Server**
     - *Version 1.3.6816.37243 (Build 15.0.2.557), Released: August 30, 2018*
         - Bug fixes
@@ -79,8 +168,12 @@ For detailed information about new features, see [What's new in Power BI Report 
 - **Power BI Desktop (optimized for Power BI Report Server)**
     - *Version: 2.61.5192.641 (August 2018), Released: August 15, 2018*
         - Contains changes required for connection with Power BI Report Server (August 2018)         
-        
+    - *Version: 2.61.5192.7701 (August 2018), Released: August 8, 2019* (new build and new version)
+        - Bug fixes
+            - Fix for incorrect telemetry logging
+            
 ## March 2018
+
 - **Power BI Report Server**
     - *Version 1.2.6690.34729 (Build 15.0.2.402), Released: April 27, 2018*
         - Bug fixes
@@ -207,6 +300,6 @@ For detailed information about new features, see [What's new in Power BI Report 
 [Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

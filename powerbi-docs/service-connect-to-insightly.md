@@ -2,13 +2,13 @@
 title: Connect to Insightly with Power BI
 description: Insightly for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
@@ -16,10 +16,12 @@ LocalizationGroup: Connect to services
 # Connect to Insightly with Power BI
 Visualize and share your Insightly CRM data in Power BI with the Insightly content pack. Connect to Power BI using your Insightly API key to view and build reports and dashboards from your CRM data. With Power BI, you can analyze your data in new ways, create powerful graphs and charts, and display contacts, leads, and organizations on a map.
 
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
+
 Connect to the [Insightly content pack](https://app.powerbi.com/getdata/services/insightly) for Power BI.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
    ![](media/service-connect-to-insightly/getdata.png)
 2. In the **Services** box, select **Get**.
@@ -31,7 +33,7 @@ Connect to the [Insightly content pack](https://app.powerbi.com/getdata/services
 4. Select **Key** as the Authentication type and provide your Insight API Key then select **Sign In**. See details on [finding this](#FindingParams) below.
    
    ![](media/service-connect-to-insightly/creds.png)
-5. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+5. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the nav pane. Select the dashboard to view your imported data.
    
      ![](media/service-connect-to-insightly/dashboard.png)
 

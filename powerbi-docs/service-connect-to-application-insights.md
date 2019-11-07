@@ -2,13 +2,13 @@
 title: Connect to Application Insights Connect to  Power BI
 description: Application Insights for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 08/10/2018
+ms.date: 08/29/2019
 ms.author: sarinas
 
 LocalizationGroup: Connect to services
@@ -16,13 +16,15 @@ LocalizationGroup: Connect to services
 # Connect to Application Insights with Power BI
 Use Power BI to create powerful custom dashboards from [Application Insights](/azure/application-insights/app-insights-overview/) telemetry. Envision your app telemetry in new ways. Combine metrics from multiple apps or component services onto one dashboard. This first release of the Power BI content pack for Application Insights includes widgets for common usage-related metrics such as active users, page view, sessions, browser and OS version, and geographic distribution of users in a map.
 
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
+
 Connect to the [Application Insights content pack for Power BI](https://app.powerbi.com/getdata/services/application-insights).
 
 >[!NOTE]
 >This integration method is now **deprecated**. To learn more about the preferred method of connecting Application Insights to Power BI use the [export analytic query functionality](https://docs.microsoft.com/azure/application-insights/app-insights-export-power-bi#export-analytics-queries).
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
     ![Get Data button](media/service-connect-to-application-insights/pbi_getdata.png)
 2. In the **Services** box, select **Get**.
@@ -37,7 +39,7 @@ Connect to the [Application Insights content pack for Power BI](https://app.powe
 5. Select **Sign In** and follow the screens to connect.
    
     ![Application Insights connection sign-in](media/service-connect-to-application-insights/pbi_contpkappinsitconnectn2.png)
-6. The import process begins automatically. When complete, a notification is shown and a new dashboard, report, and dataset appear in the Navigation Pane marked with an asterisk.  Select the dashboard to view your imported data.
+6. The import process begins automatically. When complete, a notification is shown and a new dashboard, report, and dataset appear in the nav pane marked with an asterisk.  Select the dashboard to view your imported data.
    
     ![Application Insights dashboard](media/service-connect-to-application-insights/pbi_contpkappinsitdash.png)
 

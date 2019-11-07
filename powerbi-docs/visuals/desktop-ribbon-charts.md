@@ -1,6 +1,6 @@
 ---
 title: Use ribbon charts in Power BI
-description: Create and consume ribbon charts in the Power BI service and Power BI Desktop
+description: Create and consume ribbon charts in the Power BI Desktop
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,32 +8,46 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 06/10/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
 ---
 # Use ribbon charts in Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 You can use ribbon charts to visualize data, and quickly discover which data category has the highest rank (largest value). Ribbon charts are effective at showing rank change, with the highest range (value) always displayed on top for each time period. 
 
-![ribbon chart](media/desktop-ribbon-charts/ribbon-charts_01.png)
+![ribbon chart](media/desktop-ribbon-charts/ribbon-charts-01.png)
+
+## Prerequisites
+
+This tutorial uses the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+
+1. From the upper left section of the menubar, select **File** > **Open**
+   
+2. Find your copy of the **Retail Analysis sample PBIX file**
+
+1. Open the **Retail Analysis sample PBIX file** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
 
 ## Create a ribbon chart
-To follow along, open the [Retail analysis sample report](../sample-retail-analysis.md). 
 
 1. To create a ribbon chart, select **Ribbon chart** from the **Visualizations** panel.
 
-    ![visualization templates](media/desktop-ribbon-charts/ribbon-charts_02.png)
+    ![visualization templates](media/desktop-ribbon-charts/power-bi-template.png)
 
     Ribbon charts connect a category of data over the visualized time continuum using ribbons, enabling you to see how a given category ranks throughout the span of the chart's x-axis (usually the timeline).
 
-2. Select fields for **Axis**, **Legend**, and **Value**.  In this example, we've selected: **Date**, **Category**, and **This year sales**.  
+2. Select fields for **Axis**, **Legend**, and **Value**.  In this example, we've selected: **Store** > **OpenDate**, **Item** > **Category**, and **Sales** > **This year sales** > **Value**.  
 
-    ![selected fields](media/desktop-ribbon-charts/power-bi-ribbon-values.png)
+    ![selected Fields](media/desktop-ribbon-charts/power-bi-ribbon-values.png)
 
-    Since the dataset contains data for only one year, we removed the **Year** field from the **Axis** well. 
+    Since the dataset contains data for only one year, we removed the **Year** and **Quarter** field from the **Axis** well.
 
-3. The ribbon chart shows rank for every-other month. Notice how rank changes across time.  For example, the Home category moves from third to fourth and back to third again. The Juniors category moves from third to fifth in July. 
+3. The ribbon chart shows rank for every month. Notice how rank changes across time. For example, the Home category moves from second to fifth from February to March.
 
     ![ribbon chart](media/desktop-ribbon-charts/power-bi-ribbon.png)
 
@@ -53,7 +67,7 @@ Since the ribbon chart does not have y-axis labels, you may want to add data lab
 
 ![formatting options for data labels](media/desktop-ribbon-charts/power-bi-labels.png)
 
-Set formatting options for your data labels.  In this example, we've set the text color to white, the decimal places to zero, and display units to thousands. 
+Set formatting options for your data labels. In this example, we've set the text color to white and display units to thousands.
 
 ![ribbon template on Visualization pane](media/desktop-ribbon-charts/power-bi-data-labels.png)
 

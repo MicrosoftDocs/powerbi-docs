@@ -1,9 +1,9 @@
 ---
-title: "View parameters for paginated reports in the Power BI service (Preview)"
+title: "View parameters for paginated reports in the Power BI service"
 description: In this article, you learn how to interact with parameters for paginated reports in the Power BI service.
-author: markingmyname
-ms.author: maghan
-manager: kfile
+author: maggiesMSFT
+ms.author: maggies
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 11/05/2018
 ---
 
-# View parameters for paginated reports in the Power BI service (Preview)
+# View parameters for paginated reports in the Power BI service
 
 In this article, you learn how to interact with parameters for paginated reports in the Power BI service.  A report parameter provides a way to filter report data. Parameters offer a list of available values, and you can choose one or many values. Sometimes parameters have a default value, and sometimes you have to choose a value before you can see the report.  
 

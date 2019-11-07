@@ -1,28 +1,28 @@
 ---
-title: "Getting around in Report Design View for paginated reports (Preview)"
+title: "Getting around in Report Design View for paginated reports"
 description: Report Design View in Report Builder is the design space for creating paginated reports that you can publish in the Power BI service.  
-author: markingmyname
-ms.author: maghan
-manager: kfile
+author: maggiesMSFT
+ms.author: maggies
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
-ms.topic: overview
+ms.topic: conceptual
 ms.date: 11/05/2018
 ---
 
-# Getting around in Report Design View for paginated reports (Preview)
+# Getting around in Report Design View for paginated reports
 
-Report Design View in Report Builder is the design space for creating paginated reports that you can publish to the Power BI service. The design surface is at the center of Report Builder, with the ribbon and panes around it. The design surface is where you add and organize your report items. This article explains the panes you use to add, select, and organize your report resources, and change report item properties.  
+Report Design View in Power BI Report Builder is the design space for creating paginated reports that you can publish to the Power BI service. The design surface is at the center of Report Builder, with the ribbon and panes around it. The design surface is where you add and organize your report items. This article explains the panes you use to add, select, and organize your report resources, and change report item properties.  
 
 ![Report Builder Report Design View](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 
-1. [Report data pane](#report-data-pane) 
-2. [Report design surface](#report-design-surface)  
-3. [Parameters pane](#parameters-pane) 
-4. [Properties pane](#properties-pane) 
-5. [Grouping pane](#grouping-pane) 
-6. [Current report status bar](#current-report-status-bar)  
+1. [Report data pane](#1-report-data-pane) 
+2. [Report design surface](#2-report-design-surface)  
+3. [Parameters pane](#3-parameters-pane) 
+4. [Properties pane](#4-properties-pane) 
+5. [Grouping pane](#5-grouping-pane) 
+6. [Current report status bar](#6-current-report-status-bar)  
   
 ## 1 Report Data pane  
  From the Report Data pane, you define the report data and report resources that you need for a report before you design your report layout. For example, you can add data sources, datasets, calculated fields, report parameters, and images to the Report Data pane.  
@@ -104,7 +104,7 @@ The current report status bar shows the name of the server the report is connect
 
 ## Next steps
 
-[What are paginated reports in Power BI Premium? (Preview)](paginated-reports-report-builder-power-bi.md) 
+[What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md) 
 
   
   

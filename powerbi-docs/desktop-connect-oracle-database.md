@@ -2,13 +2,13 @@
 title: Connect to an Oracle database
 description: Steps and downloads necessary to connect Oracle to Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 08/29/2019
 ms.author: davidi
 
 LocalizationGroup: Connect to data
@@ -26,11 +26,11 @@ To determine which version of Power BI Desktop is installed, select **File > Hel
 ## Installing the Oracle client
 For **32-bit** versions of Power BI Desktop, use the following link to download and install the **32-bit** Oracle client:
 
-* [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
+* [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
 For **64-bit** versions of Power BI Desktop, use the following link to download and install the **64-bit** Oracle client:
 
-* [64-bit ODAC 12c Release 4 (12.1.0.2.4) for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
+* [64-bit ODAC 12c Release 4 (12.1.0.2.4) for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
 ## Connect to an Oracle database
 Once the matching Oracle client driver is installed, you can connect to an Oracle database. To make the connection, take the following steps:
@@ -39,8 +39,13 @@ Once the matching Oracle client driver is installed, you can connect to an Oracl
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
 2. In the **Oracle Database** dialog that appears, provide the name of the server, and select **Connect**. If a SID is required, you can specify that using the format: *ServerName/SID*, where SID is the unique name of the database. If the *ServerName/SID* format doesn't work, try using *ServerName/ServiceName*, where ServiceName is the alias used when connecting.
-   
+
+
    ![](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
+
+   > [!TIP]
+   > If you're having trouble connecting in this step, try using the following format in the Server Name field: (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=host_name)(PORT=port_num))(CONNECT_DATA=(SERVICE_NAME=service_name)))
+   
 3. If you want to import data using a native database query, you can put your query in the **SQL Statement** box, available by expanding the **Advanced options** section of the **Oracle Database** dialog.
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_4.png)
@@ -55,3 +60,5 @@ If you downloaded Power BI Desktop from the Microsoft Store, you might be unable
 * Download Power BI Desktop from https://powerbi.microsoft.com/desktop instead.
 
 * If you want to use the version from the Microsoft Store: on your local computer, copy oraons.dll from _12.X.X\client_X_ into _12.X.X\client_X\bin_. The X represents version and directory numbers.
+
+If you see the error message *Object reference not set* in the Power BI Gateway when connecting to an Oracle database, you might be able to solve the issue by following the instructions found in the [Manage your data source - Oracle](service-gateway-onprem-manage-oracle.md) article.

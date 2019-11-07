@@ -2,7 +2,7 @@
 title: Share a dashboard or report from the Power BI mobile apps
 description: Invite others to view your dashboards and reports by sharing links from the Power BI mobile apps. Learn how.
 author: mshenhav
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -19,7 +19,7 @@ Applies to:
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPads |Android phones |Android tablets |Windows 10 devices |
 
-With a [Power BI Pro license](../../service-features-license-type.md), you can invite others to view your dashboards and reports by sharing links from the Power BI mobile apps. You can share with anyone, in or out of your organization, with or without a corporate mail account. They do need to have a Power BI Pro license, too, or the content needs to be in a [Premium capacity](../../service-premium.md).
+With a [Power BI Pro license](../../service-features-license-type.md), you can invite others to view your dashboards and reports by sharing links from the Power BI mobile apps. You can share with anyone, in or out of your organization, with or without a corporate mail account. They do need to have a Power BI Pro license, too, or the content needs to be in a [Premium capacity](../../service-premium-what-is.md).
 
 From the Power BI mobile apps for iOS and Android, you can also [annotate and share a snapshot of a tile, report, or visual](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) with anyone. 
 
@@ -82,7 +82,7 @@ You can only unshare if you're the owner.
 3. To unshare, tap the red circle next to a name and tap **Delete**.
 
 ## Share from your Android device
-1. On the dashboards or reports home page, tap the ellipsis (...) and tap **Invite a colleague**.
+1. On the dashboards or reports home page, tap **More options** (...) and tap **Invite a colleague**.
    
    ![Invite a colleague](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-tablet-share-dashboard.png)
 2. Or, in a dashboard or report, tap the invite icon ![Invite icon](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png).
@@ -143,5 +143,5 @@ You can only unshare if you're the owner.
 ## Next steps
 * [Annotate & share a snapshot of a tile, report, or visual in the mobile apps](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
 * [Share a dashboard or report in Power BI](../../service-share-dashboards.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

@@ -2,7 +2,7 @@
 title: View SSRS mobile reports, KPIs in Windows 10 mobile app - Power BI
 description: The Power BI mobile app for Windows 10 offers live, touch-enabled mobile access to your important on-premises business information.
 author: mshenhav
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -42,11 +42,11 @@ Even if you don't have access to a Reporting Services web portal, you can still 
 Browse the samples to interact with KPIs and mobile reports.
 
 ## Connect to a Reporting Services report server
-1. At the bottom of the left navigation bar, tap **Settings** ![Settings icon](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png)
+1. At the bottom of the nav pane, tap **Settings** ![Settings icon](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png)
 2. Tap **Connect to server**.
 3. Fill in the server address and your user name and password. Use this format for the server address:
    
-     `http://<servername>/reports`
+     `https://<servername>/reports`
      OR
      `https://<servername>/reports`
    
@@ -58,9 +58,9 @@ Browse the samples to interact with KPIs and mobile reports.
     Tap **Advanced option** to give the server a name, if you'd like.
 4. Tap the check mark to connect. 
    
-   Now you see the server in the left navigation bar.
+   Now you see the server in the nav pane.
    
-   ![Server in left navigation bar](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-server.png)
+   ![Server in nav pane](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-server.png)
    
    >[!TIP]
    >Tap the global navigation button ![Global navigation button](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) anytime to go between your Reporting Services mobile reports and your dashboards in the Power BI service. 
@@ -94,7 +94,7 @@ Read more about [favorites in the Power BI mobile apps](mobile-apps-favorites.md
 ## Remove a connection to a report server
 You can only be connected to one report server at a time from your Power BI mobile app. If you want to connect to a different server, you need to disconnect from the current one.
 
-1. At the bottom of the left navigation bar, tap **Settings** ![Settings icon](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png).
+1. At the bottom of the nav pane, tap **Settings** ![Settings icon](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png).
 2. Tap and hold the server name you don't want to be connected to.
 3. Tap **Remove server**.
    
@@ -108,6 +108,6 @@ You don't create Reporting Services KPIs and mobile reports in the Power BI mobi
 
 ## Next steps
 * [Get started with the Power BI mobile app for Windows 10](mobile-windows-10-phone-app-get-started.md)  
-* [What is Power BI?](../../power-bi-overview.md)  
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* [What is Power BI?](../../fundamentals/power-bi-overview.md)  
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

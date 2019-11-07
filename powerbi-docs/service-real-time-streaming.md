@@ -2,13 +2,13 @@
 title: Real-time streaming in Power BI
 description: Get real-time data streaming and visuals in Power BI
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 10/14/2019
 ms.author: davidi
 
 LocalizationGroup: Data from files
@@ -232,6 +232,13 @@ Here’s a checklist you can use to troubleshoot the issue:
 4. Does the Azure Stream Analytics query explicitly output to the Power BI output? (using the INTO keyword)
 5. Does the Azure Stream Analytics job have data flowing through it? The dataset will only get created when there is data being transmitted.
 6. Can you look into the Azure Stream Analytics logs to see if there are any warnings or errors?
+
+## Automatic page refresh
+
+Automatic page refresh works at a report page level, and allows report authors to set a refresh interval for visuals in a page that is only active when the page is being consumed. Automatic page refresh is only available for DirectQuery data sources. The minimum refresh interval depends on which type of workspace the report is published in, and the capacity admin settings for Premium workspaces.
+
+Learn more about automatic page refresh in the [automatic page refresh](desktop-automatic-page-refresh.md) article.
+
 
 ## Next steps
 Here are a few links you might find useful when working with real-time streaming in Power BI:

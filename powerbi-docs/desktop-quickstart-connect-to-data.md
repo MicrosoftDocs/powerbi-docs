@@ -2,12 +2,12 @@
 title: Quickstart Connect to data
 description: Connect to a data source in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: quickstart
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: quickstart
 #Customer intent: As a data analyst or report creator, I want to connect to data in Power BI Desktop, so I can use Power BI Desktop to build data models and create reports.
@@ -24,12 +24,12 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 ## Prerequisites
 
 To complete the steps in this article, you need the following:
-* Download and install **Power BI Desktop**, which is a free application that runs on your local computer. You can [download **Power BI Desktop**](https://powerbi.microsoft.com/desktop) directly, or you can get it from [the **Microsoft Store**](http://aka.ms/pbidesktopstore).
-* [Download this sample Excel workbook](http://go.microsoft.com/fwlink/?LinkID=521962), and create a folder called *C:\PBID-qs* where you can store the Excel file. Subsequent steps in this quickstart assume that is the file location for the downloaded Excel workbook.
+* Download and install **Power BI Desktop**, which is a free application that runs on your local computer. You can [download **Power BI Desktop**](https://powerbi.microsoft.com/desktop) directly, or you can get it from [the **Microsoft Store**](https://aka.ms/pbidesktopstore).
+* [Download this sample Excel workbook](https://go.microsoft.com/fwlink/?LinkID=521962), and create a folder called *C:\PBID-qs* where you can store the Excel file. Subsequent steps in this quickstart assume that is the file location for the downloaded Excel workbook.
 
 ## Launch Power BI Desktop
 
-Once you install **Power BI Desktop**, launch the application so it's running on your local computer. You're presented with a blank canvas, which is where you create visuals and reports from data to which you connect. 
+Once you install **Power BI Desktop**, launch the application so it's running on your local computer. You're presented with a Power BI tutorial. Follow the tutorial or click this away and start with a blank canvas, which is where you create visuals and reports from data to which you connect. 
 
 ![Power BI Desktop - blank canvas](media/desktop-quickstart-connect-to-data/qs-connect-data_01.png)
 

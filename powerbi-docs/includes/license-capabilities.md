@@ -6,8 +6,10 @@ ms.date: 12/03/2018
 ms.author: mblythe
 ---
 
-In the Power BI service, users have defined capabilities based on two types of licenses:
+In the Power BI service, users have defined capabilities based on the type of per-user license they have and whether the content they are acting on is in a workspace assigned to a Power BI Premium capacity.
 
-* **Per-user** - *Power BI Pro licensing and free licensing*. A Power BI Pro license enables access to all content and capabilities in the Power BI service, including the ability to share content and collaborate with other Pro users. Only Pro users can publish to and consume content from app workspaces, share dashboards, and subscribe to dashboards and reports. A free license enables access to some of the features of the Power BI service. For more information, see [Per-user license type comparison](../service-features-license-type.md#per-user-license-type-comparison).
 
-* **Capacity-based** - *Power BI Premium licensing*. Premium provides dedicated capacity to deliver more consistent performance and support larger data volumes in Power BI. For individual users, Premium also enables widespread distribution of content by Pro users without requiring Pro licenses for recipients who view the content. For more information, see [What is Power BI Premium?](../service-premium.md).
+* **Per-user** - *Power BI Pro and Power BI (free) licenses*. A Power BI Pro license enables a user to collaborate with other Power BI Pro users by consuming content from, and sharing content with other users with a Power BI Pro license. Only users with a Power BI Pro license can publish content to app workspaces, share dashboards, and subscribe to dashboards and reports. A free license enables a user to consume content in a workspace assigned to a Power BI Premium capacity and access to some of the features of the Power BI service for their own personal content in their My Workspace. For more information, see [Per-user license type comparison](../service-features-license-type.md#per-user-license-type-comparison).
+
+
+* **Power BI Premium capacity** - *Power BI Premium licensing*. Power BI Premium provides dedicated capacity to deliver more consistent performance and support larger data volumes in Power BI. Power BI Premium also enables widespread distribution of content by Pro users without requiring users who view the content to have Power BI Pro licenses. For more information, see [What is Power BI Premium?](../service-premium-what-is.md)

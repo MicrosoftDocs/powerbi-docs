@@ -2,14 +2,14 @@
 title: Bidirectional cross-filtering in Power BI Desktop
 description: Enable cross-filtering using DirectQuery in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ---
@@ -20,9 +20,9 @@ When filtering tables to create the appropriate view of data, report creators (a
 With bidirectional cross-filtering, report creators (and data modelers) now have more control over how filters are applied when working with related tables, enabling those filters to be applied on *both* sides of a table relationship. This is accomplished by having the filter context propagated to a second related table on the other side of a table relationship.
 
 ## Detailed whitepaper for bidirectional cross-filtering
-A [detailed whitepaper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) is available that explains bidirectional cross-filtering in Power BI Desktop (the whitepaper also covers SQL Server Analysis Services 2016, both have the same behavior).
+A [detailed whitepaper](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) is available that explains bidirectional cross-filtering in Power BI Desktop (the whitepaper also covers SQL Server Analysis Services 2016, both have the same behavior).
 
-* Download the [Bidirectional cross-filtering for Power BI Desktop](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) whitepaper
+* Download the [Bidirectional cross-filtering for Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) whitepaper
 
 ## Enabling bidirectional cross-filtering for DirectQuery
 
@@ -36,5 +36,5 @@ To enable cross-filtering, in the **Edit Relationship** dialog for a relationshi
 > [!NOTE]
 > When creating cross filtering DAX formulas in Power BI Desktop, use *UserPrincipalName* (which is often the same as a user's login, such as <em>joe@contoso.com</em>) instead of *UserName*. As such, you may need to create a related table that maps *UserName* (or EmployeeID, for example) to *UserPrincipalName*.
 
-For more information, and for examples of how bidirectional cross-filtering works, check out the [whitepaper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) mentioned earlier in this article.
+For more information, and for examples of how bidirectional cross-filtering works, check out the [whitepaper](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) mentioned earlier in this article.
 

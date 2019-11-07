@@ -2,13 +2,13 @@
 title: Signing up for Power BI with a new Office 365 Trial
 description: Signing up for Power BI with a new Office 365 Trial
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/31/2018
+ms.date: 09/09/2019
 ms.author: mblythe
 
 LocalizationGroup: Administration
@@ -38,4 +38,4 @@ By using this signup method, you are creating a new organizational tenant and yo
 [Power BI licensing in your organization](service-admin-licensing-organization.md)  
 [Signing up for Power BI as an individual](service-self-service-signup-for-power-bi.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

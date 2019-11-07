@@ -2,28 +2,25 @@
 title: Troubleshoot Cortana for Power BI
 description: If you're having trouble using Cortana with Power BI, try these suggestions.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
-ms.date: 12/20/2017
+ms.topic: troubleshooting
+ms.date: 05/29/2019
 ms.author: maggies
 
 LocalizationGroup: Ask questions of your data
 ---
 # Troubleshoot Cortana for Power BI
-This article is part of a series. If you haven't already, we recommend reading the following three articles.
+This article is part of a series. 
 
-**Article 1**: [Understand how Cortana and Power BI work together to search for Power BI dashboards and reports](service-cortana-intro.md)
+> [!IMPORTANT]
+> Cortana integration is being deprecated in Power BI. Starting June 11, Cortana will no longer work for any dashboards and reports.
 
-**Article 2**: [For searching reports: enable the Cortana - Power BI - Windows integration](service-cortana-enable.md)
-
-**Article 3**: [For searching reports: create special *Cortana answer cards*](service-cortana-answer-cards.md)
-
-If you're still having problems getting Cortana to integrate with Power BI, you've come to the right place. Follow the steps below to diagnose and fix the problem.
+If you're having problems getting Cortana to integrate with Power BI, you've come to the right place. Follow the steps below to diagnose and fix the problem.
 
 ## Why doesn't Cortana find answers from my Power BI reports or dashboards?
 1. Do you have a Power BI account?  If not, [sign up for a free trial](https://powerbi.microsoft.com/get-started/).
@@ -38,7 +35,7 @@ If you're still having problems getting Cortana to integrate with Power BI, you'
    * "show sales" will *not* return a Power BI result.   
    * "show me sales fy16", "sales fy16", "show sales fy16", and "show me sales f" *will* return a Power BI result.    
    * Adding the words "powerbi" counts as one of the 2 required words, so "powerbi sales" *will* return a Power BI result.
-5. Do you have access or edit permissions to any reports or dashboards? For reports, ensure the content you are attempting to search has an [answer card](service-cortana-answer-cards.md).  For dashboards, ensure the content you are attempting to search is in  **Shared with me**, an app workspace, or **My workspace**. [Use the troubleshooting tool](#try-the-cortana-troubleshooting-tool) for help identifying the problem.
+5. Do you have access or edit permissions to any reports or dashboards? For reports, ensure the content you are attempting to search has an [answer card](service-cortana-answer-cards.md).  For dashboards, ensure the content you are attempting to search is in  **Shared with me**, a workspace, or **My workspace**. [Use the troubleshooting tool](#try-the-cortana-troubleshooting-tool) for help identifying the problem.
 6. Are you using a mobile device?  Currently we only support Power BI and Cortana integration on Windows mobile devices.
 7. Is Cortana configured for English?  The current Cortana-Power BI integration only supports English. Open Cortana and select the cog icon to display Settings. Scroll down to **Cortana language** and ensure it's set to one of the English options.
 
@@ -53,7 +50,7 @@ If you're still having problems getting Cortana to integrate with Power BI, you'
 1. If you're looking for answers in reports, do you have any reports with Cortana **answer cards**? Answer cards are the only way Cortana can find answers in your Power BI reports.  Learn how to create an answer card by reading [Create Cortana answer cards in Power BI service and Power BI Desktop](service-cortana-answer-cards.md).
 2. Are your running Windows version 1511 or later?  Find out by opening Windows Settings and selecting **System > About**. If not, update your version of Windows.
 3. Are your Windows and Power BI accounts connected? This can be confusing. Follow the instructions in [Enable Cortana for Power BI](service-cortana-enable.md#add-your-power-bi-credentials-to-windows).
-4. Have the underlying datasets been enabled for Cortana? Maybe a colleague has shared a dataset that she has already enabled for Cortana. But, if not, [learn how to enable datasets for Cortana yourself](service-cortana-enable.md). It's quick and easy.
+4. Have the underlying datasets been enabled for Cortana? Maybe a colleague has shared a dataset that has already been enabled for Cortana. But, if not, [learn how to enable datasets for Cortana yourself](service-cortana-enable.md). It's quick and easy.
 
 ## Dashboards only: why doesn't Cortana find answers from my Power BI dashboards
 1. Ensure that you are connected to your work account. Power BI needs this connection so that it can authenticate your access permissions to data. To check that you are connected or if not, to connect your work account, use the Windows search box to navigate to “Connect to work or school”.  
@@ -95,4 +92,4 @@ Looking for a dashboard that has been shared with you?  Open Power BI > **Shared
 * The query must be 2 or more words, by design.  If your query is too short, add the word "show".
 * Some query strings with prepositions might not work (e.g. sales by item). Try different query terms that don't use prepositions and are meaningful/unique.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

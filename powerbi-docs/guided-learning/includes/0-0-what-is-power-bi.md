@@ -23,7 +23,7 @@ These three elements – the **Desktop**, the **service**, and **Mobile** – ar
 ## How Power BI matches your role
 How you use Power BI may depend on your role in a project or on a team. And other people, in other roles, might use Power BI differently, which is just fine.
 
-For example, you might primarily use the **Power BI service**, but your number-crunching, business-report-creating coworker might make extensive use of **Power BI Desktop** (and publish Desktop reports to the Power BI service, which you then view). And another coworker, in sales, might mainly use her Power BI phone app to monitor progress on her sales quotas, and to drill into new sales lead details.
+For example, you might primarily use the **Power BI service**, but your number-crunching, business-report-creating coworker might make extensive use of **Power BI Desktop** (and publish Desktop reports to the Power BI service, which you then view). And another coworker, in sales, might mainly use Power BI phone app to monitor progress on sales quotas, and to drill into new sales lead details.
 
 You also might use each element of **Power BI** at different times, depending on what you’re trying to achieve or what your role is for a given project or effort.
 

@@ -2,7 +2,7 @@
 title: Connect to SweetIQ with Power BI
 description: SweetIQ for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
@@ -19,7 +19,7 @@ The Power BI content pack pulls data from your SweetIQ account and generates set
 Connect to the [SweetIQ content pack](https://app.powerbi.com/groups/me/getdata/services/sweetiq) for Power BI.
 
 ## How to connect
-1. In the navigation pane on the left, click **Get Data.**
+1. In the nav pane on the left, click **Get Data.**
    
     ![](media/service-connect-to-sweetiq/getdata.png)
 2. Select **SweetIQ** and click **Get.**
@@ -31,7 +31,7 @@ Connect to the [SweetIQ content pack](https://app.powerbi.com/groups/me/getdata/
 4. Select **Key** authentication type and provide your Sweet IQ API Key. This is typically an alpha-numeric value. For more details on finding this value, see below.
    
     ![](media/service-connect-to-sweetiq/credentials.png)
-5. Power BI will start loading your data, which may take some time depending on the size of data in your account. Once the load has completed, you'll see a new dashboard, report and dataset in the left navigation pane.
+5. Power BI will start loading your data, which may take some time depending on the size of data in your account. Once the load has completed, you'll see a new dashboard, report and dataset in the nav pane.
    
     ![](media/service-connect-to-sweetiq/dashboard.png)
 
@@ -50,7 +50,7 @@ Select a Client ID for one of the clients your account has access to. You can fi
 Talk to your administrator for your API key, to access the data for specific client.
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
+[What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Get Data for Power BI](service-get-data.md)
 

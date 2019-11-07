@@ -1,15 +1,15 @@
 ---
 title: Browser support for Power BI Report Server
 description: Learn about what browser versions are supported for managing and viewing Power BI Report Server and the Report Viewer Controls.
-author: markingmyname
-manager: kfile
+author: maggiesMSFT
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/24/2018
-ms.author: maghan
+ms.author: maggies
 
 ---
 # Browser support for Power BI Report Server
@@ -111,7 +111,7 @@ Use a browser that has script support enabled. If the browser cannot run scripts
 [Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
