@@ -2,7 +2,7 @@
 title: Creating accessible reports in Power BI
 description: How to create accessible Power BI Desktop reports
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

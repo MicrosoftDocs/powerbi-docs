@@ -2,7 +2,7 @@
 title: From Excel workbook to stunning report in the Power BI service
 description: This article shows how you can quickly create a stunning report from an Excel workbook.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

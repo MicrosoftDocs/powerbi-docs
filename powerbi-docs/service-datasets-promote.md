@@ -2,7 +2,7 @@
 title: Promote your dataset (preview) - Power BI
 description: Learn how to promote your dataset, to guide enterprise users to reliable, high-quality datasets.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service

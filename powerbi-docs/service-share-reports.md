@@ -2,7 +2,7 @@
 title: Two ways to share a filtered Power BI report
 description: Learn two ways to filter a Power BI report and share it with coworkers in your organization.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 

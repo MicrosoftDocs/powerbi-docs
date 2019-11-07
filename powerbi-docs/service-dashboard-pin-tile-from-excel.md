@@ -2,7 +2,7 @@
 title: How to pin a tile to a Power BI dashboard from Excel
 description: Pin a tile to a Power BI dashboard from Excel on OneDrive for Business. Pin ranges, charts, tables
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 featuredvideoid: l8JoB7w0zJA
 

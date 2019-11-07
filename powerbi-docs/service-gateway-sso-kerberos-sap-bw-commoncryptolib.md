@@ -3,7 +3,7 @@ title: Use Kerberos single sign-on for SSO to SAP BW using CommonCryptoLib (sapc
 description: Configure your SAP BW server to enable SSO from Power BI service using CommonCryptoLib (sapcrypto.dll)
 author: mgblythe
 ms.author: mblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways

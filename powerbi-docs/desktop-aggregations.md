@@ -2,7 +2,7 @@
 title: Use Aggregations in Power BI Desktop
 description: Perform interactive analysis over big data in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

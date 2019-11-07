@@ -2,7 +2,7 @@
 title: 'Sales and Marketing sample for Power BI: Take a tour'
 description: 'Sales and Marketing sample for Power BI: Take a tour'
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: amac
 
 ms.service: powerbi

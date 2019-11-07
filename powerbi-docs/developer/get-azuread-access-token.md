@@ -3,7 +3,7 @@ title: Authenticate users and get an Azure AD access token for your application
 description: Learn how to register an application in Azure Active Directory for use with embedding Power BI content.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

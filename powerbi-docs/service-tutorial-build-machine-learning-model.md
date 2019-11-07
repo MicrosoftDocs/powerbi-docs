@@ -2,7 +2,7 @@
 title: 'Tutorial: Build a Machine Learning model in Power BI'
 description: In this tutorial you build a Machine Learning model in Power BI.
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Frequently Asked Questions for German government customers
 description: For German government customers, answers to common questions for the Power BI German government service
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18

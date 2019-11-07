@@ -2,7 +2,7 @@
 title: Refresh a dataset created from an Excel workbook - cloud
 description: Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: kayu
 
 ms.service: powerbi

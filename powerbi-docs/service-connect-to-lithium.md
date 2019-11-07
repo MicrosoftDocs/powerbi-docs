@@ -2,7 +2,7 @@
 title: Connect to Lithium with Power BI
 description: Lithium for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

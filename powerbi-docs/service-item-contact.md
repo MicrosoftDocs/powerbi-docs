@@ -2,7 +2,7 @@
 title: Set contact information for reports and dashboards
 description: Learn how to set contact information for reports and dashboards.
 author: LukaszPawlowski-MS
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

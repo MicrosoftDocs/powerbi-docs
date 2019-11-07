@@ -2,7 +2,7 @@
 title: Connect to Excel in Power BI Desktop
 description: Easily connect to and use Excel workbook data in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18

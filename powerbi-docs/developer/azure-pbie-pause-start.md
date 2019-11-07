@@ -4,7 +4,7 @@ description: This article walks through how to pause and start a Power BI Embedd
 services: power-bi-embedded
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
+manager: kfollis
 editor: ''
 tags: ''
 ms.service: power-bi-embedded

@@ -2,7 +2,7 @@
 title: Troubleshooting Analyze in Excel in Power BI Desktop
 description: Solutions to common issues for Analyze in Excel
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

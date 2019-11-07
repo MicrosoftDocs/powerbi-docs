@@ -2,7 +2,7 @@
 title: Connect to data in Power BI Desktop
 description: Connect to data in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18

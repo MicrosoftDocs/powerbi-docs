@@ -2,7 +2,7 @@
 title: Connect to Xero with Power BI
 description: Xero  for Power BI
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: SarinaJoan 
 
 ms.service: powerbi

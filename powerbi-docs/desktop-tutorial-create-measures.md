@@ -2,7 +2,7 @@
 title: 'Tutorial: Create your own measures in Power BI Desktop'
 description: 'Tutorial: Create your own measures in Power BI Desktop'
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

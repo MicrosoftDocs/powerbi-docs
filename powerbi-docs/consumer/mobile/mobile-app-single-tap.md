@@ -2,7 +2,7 @@
 title: Configure report interaction to single tap
 description: Learn how to configure report interaction to single or double tap.
 author: mshenhav
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,7 @@
 title: Save a report in Power BI
 description: Save a report in Power BI service and Power BI Desktop
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

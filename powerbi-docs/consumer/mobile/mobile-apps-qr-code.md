@@ -2,7 +2,7 @@
 title: Scan a Power BI QR code from your mobile device
 description: QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app for iPhones and Android devices.
 author: KesemSharabi
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

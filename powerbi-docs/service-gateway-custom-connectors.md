@@ -3,7 +3,7 @@ title: Use custom data connectors with the on-premises data gateway
 description: You can use custom data connectors with the on-premises data gateway.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways

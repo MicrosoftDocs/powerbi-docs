@@ -2,7 +2,7 @@
 title: Get started with the Power BI service
 description: Get started with the Power BI online service (app.powerbi.com)
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

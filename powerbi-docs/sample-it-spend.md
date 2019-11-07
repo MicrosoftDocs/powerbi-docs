@@ -2,7 +2,7 @@
 title: 'IT Spend Analysis sample for Power BI: Take a tour'
 description: 'IT Spend Analysis sample for Power BI: Take a tour'
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: amac
 
 ms.service: powerbi

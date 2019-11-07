@@ -6,7 +6,7 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 author: Minewiskan
 ms.author: owend
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.custom: ""
 ms.date: 08/10/2017

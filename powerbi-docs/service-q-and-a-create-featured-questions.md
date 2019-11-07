@@ -2,7 +2,7 @@
 title: Create featured questions for Power BI Q&A
 description: Documentation on how to create featured questions for Power BI Q&A
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

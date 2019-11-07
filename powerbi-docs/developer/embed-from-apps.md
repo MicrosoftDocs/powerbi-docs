@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
-manager: kfile
+manager: kfollis
 ms.date: 11/27/2018
 #Customer intent: As a developer, I want to embed Power BI content into an application from an app, so users of an organization can share data.
 ---

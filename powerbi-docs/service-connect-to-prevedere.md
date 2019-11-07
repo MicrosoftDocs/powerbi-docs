@@ -2,7 +2,7 @@
 title: Connect to Prevedere with Power BI
 description: Prevedere for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

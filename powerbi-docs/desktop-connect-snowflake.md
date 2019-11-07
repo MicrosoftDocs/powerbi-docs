@@ -2,7 +2,7 @@
 title: Connect to Snowflake computing warehouse in Power BI Desktop
 description: Easily connect to and use a Snowflake computing warehouse in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

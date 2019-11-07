@@ -2,7 +2,7 @@
 title: Connect to ClickDimensions with Power BI
 description: ClickDimensions for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
