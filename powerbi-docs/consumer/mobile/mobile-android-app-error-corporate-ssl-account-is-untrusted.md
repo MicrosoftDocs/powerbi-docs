@@ -38,7 +38,7 @@ Go to **Settings** > **System** > **Date and time** to check them.
 
 ## Custom authentication server
 If you're using a custom authentication server, the SSL certificate in the corporate authentication server may not be valid. 
-Work with your organization's IT to test the corporate authentication server configuration, by following the guidance in [this article](https://support.microsoft.com/en-us/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce).
+Work with your organization's IT to test the corporate authentication server configuration, by following the guidance in [this article](https://support.microsoft.com/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce).
 
 ## Next steps
 * [Download the Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from the Android app store.

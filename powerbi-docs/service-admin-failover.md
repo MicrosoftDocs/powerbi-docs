@@ -47,7 +47,7 @@ In both cases, Power BI executive team members make the decision to fail over; t
 
 ## How do I know Power BI is now in failover mode?
 
-A notification is posted on the Power BI support page ([https://powerbi.microsoft.com/en-us/support/](https://powerbi.microsoft.com/en-us/support/)). The notification includes the major operations that are not available during the failover, including publish, refresh, create dashboard, duplicate dashboard, and permission changes.
+A notification is posted on the Power BI support page ([https://powerbi.microsoft.com/support/](https://powerbi.microsoft.com/support/)). The notification includes the major operations that are not available during the failover, including publish, refresh, create dashboard, duplicate dashboard, and permission changes.
 
 ## How long does it take Power BI to fail over?
 
