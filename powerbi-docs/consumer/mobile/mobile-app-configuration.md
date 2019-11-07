@@ -34,7 +34,7 @@ The Power BI app for iOS and Android allows administrators to remotely "push" Re
 | com.microsoft.powerbi.mobile.ServerDisplayName | String | [optional]<br><br>Default value is “Report server”<br><br>A friendly name used in the app to represent the server. |
 | com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | [optional]<br><br>Default value is True. When set to True, it overrides any Report Server definition already in the mobile device. Existing servers that are already configured are deleted. Override set to True also prevents the user from removing that configuration.<br><br>Set to False adds the pushed values, leaving any existing settings. If the same server URL is already configured in the mobile app, the app leaves that configuration as is. The app doesn't ask the user to reauthenticate for the same server. |
 
-## Data protection setting
+## Data protection settings
 
 **Applies to: iOS**
 
@@ -63,6 +63,6 @@ However, any MDM provider is supported. If you are not using Intune, you'll need
 
 ## Next steps
 
-* Get the Power BI mobile app from the [App store]("https://itunes.apple.com/us/app/microsoft-power-bi/id929738808) and [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409)
+* Get the Power BI mobile app from the [App store]("https://apps.apple.com/us/app/microsoft-power-bi/id929738808) and [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409)
 * Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
 * Join the conversation at the [Power BI Community](http://community.powerbi.com/)
