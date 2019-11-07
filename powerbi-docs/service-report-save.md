@@ -2,7 +2,7 @@
 title: Save a report in Power BI
 description: Save a report in Power BI service and Power BI Desktop
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -37,5 +37,5 @@ Read more about [reports in Power BI](consumer/end-user-reports.md)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

@@ -2,7 +2,7 @@
 title: Use Aggregations in Power BI Desktop
 description: Perform interactive analysis over big data in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -56,7 +56,7 @@ The following image shows this model.
 ![aggregation table in a model](media/desktop-aggregations/aggregations_03.jpg)
 
 > [!NOTE]
-> The **Sales Agg** table is just another table, so it has the flexibility of being loaded in a variety of ways. For example, aggregation can be performed in the source database using ETL/ELT processes, or by the [M expression](https://msdn.microsoft.com/query-bi/m/power-query-m-reference) for the table. It can use Import storage mode with or without [incremental refresh in Power BI Premium](service-premium-incremental-refresh.md), or it can be DirectQuery and optimized for fast queries using [columnstore indexes](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview). This flexibility enables balanced architectures that spread query load to avoid bottlenecks.
+> The **Sales Agg** table is just another table, so it has the flexibility of being loaded in a variety of ways. For example, aggregation can be performed in the source database using ETL/ELT processes, or by the [M expression](/powerquery-m/power-query-m-function-reference) for the table. It can use Import storage mode with or without [incremental refresh in Power BI Premium](service-premium-incremental-refresh.md), or it can be DirectQuery and optimized for fast queries using [columnstore indexes](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview). This flexibility enables balanced architectures that spread query load to avoid bottlenecks.
 
 ### Storage mode 
 Let's continue with the example we're using. We set the storage mode of **Sales Agg** to **Import** to speed up queries.

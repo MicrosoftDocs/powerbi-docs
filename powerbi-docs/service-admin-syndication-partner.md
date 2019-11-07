@@ -2,7 +2,7 @@
 title: Unable to add Power BI to O365 partner
 description: Unable to add Power BI to an Office 365 syndication partner. The syndicated model is a purchasing model used by Office 365.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -81,4 +81,4 @@ To enable ad-hoc subscriptions, you can contact your partner and request that th
 
 [Power BI licensing in your organization](service-admin-licensing-organization.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

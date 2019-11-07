@@ -198,4 +198,4 @@ For more information about visuals, see [Frequently asked questions about certif
 * [Custom Visualizations in Power BI](power-bi-custom-visuals.md)  
 * [Publish Power BI visuals to Microsoft AppSource](developer/office-store.md)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

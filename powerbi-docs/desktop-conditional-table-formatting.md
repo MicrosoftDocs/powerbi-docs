@@ -4,7 +4,7 @@ description: Apply customized formatting to tables
 title: Conditional table formatting in Power BI Desktop
 description: Apply customized formatting to tables
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

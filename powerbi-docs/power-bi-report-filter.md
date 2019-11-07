@@ -2,7 +2,7 @@
 title: The new filter experience in Power BI reports
 description: Filters in Power BI are getting new functionality and a new design. 
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -40,7 +40,7 @@ The new filter experience is turned on by default for new reports. You can enabl
 ### Turn on new filters for an existing report in Power BI Desktop
 
 1. In Power BI Desktop in an existing report, select **File** > **Options and Settings** > **Options**
-2. In the left navigation bar, under **Current file**, select **Report settings**.
+2. In the nav pane, under **Current file**, select **Report settings**.
 3. Under **Filtering experience**, select **Enable the updated filter pane, and show filters in the visual header for this report**.
 
 ### Turn on new filters for an existing report in the service
@@ -234,5 +234,5 @@ Give the new filter experience a try. Give us your feedback for this feature, an
 - [Filters and highlighting in reports](power-bi-reports-filters-and-highlighting.md)
 - [Different kinds of filters in Power BI](power-bi-report-filter-types.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

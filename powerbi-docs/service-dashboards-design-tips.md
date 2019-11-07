@@ -2,7 +2,7 @@
 title: Tips for designing a great Power BI dashboard
 description: Tips for designing a great Power BI dashboard
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -20,8 +20,6 @@ Now that you've created a dashboard and added some tiles, think about how to mak
 
 > [!TIP]
 > Like this dashboard? You can download it and related reports from AppSource. Go to **Get data** > **Services**. Search for **Microsoft Sample - Sales & Marketing** > **Get it now**.
-
-Many of the design principles for reports apply to dashboards as well. Read our whitepaper [Best design principles for reports and visualizations](visuals/power-bi-visualization-best-practices.md) for more.
 
 Here are a few tips for dashboards.
 
@@ -81,4 +79,4 @@ To master the art of excellent dashboard design, consider learning basic Gestalt
 ## Next steps
 [Create a dashboard from a report](service-dashboard-create.md)  
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

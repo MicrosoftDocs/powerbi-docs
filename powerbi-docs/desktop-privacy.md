@@ -2,7 +2,7 @@
 title: Power BI Desktop Privacy
 description: Power BI Desktop Privacy options
 author: MI77
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

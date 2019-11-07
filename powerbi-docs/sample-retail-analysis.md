@@ -2,7 +2,7 @@
 title: 'Retail Analysis sample for Power BI: Take a tour'
 description: 'Retail Analysis sample for Power BI: Take a tour'
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: amac
 
 ms.service: powerbi
@@ -19,7 +19,7 @@ The Retail Analysis sample content pack contains a dashboard, report, and datase
 
 ![Dashboard for the Retail Analysis sample](media/sample-retail-analysis/retail1.png)
 
-This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](http://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
+This sample is part of a series that shows how you can use Power BI with business-oriented data, reports, and dashboards. It was created by [obviEnce](https://www.obvience.com/) with real data, which has been anonymized. The data is available in several formats: content pack, .pbix Power BI Desktop file, or Excel workbook. See [Samples for Power BI](sample-datasets.md). 
 
 This tutorial explores the Retail Analysis sample content pack in the Power BI service. Because the report experience is similar in Power BI Desktop and in the service, you can also follow along by using the sample .pbix file in Power BI Desktop. 
 
@@ -50,11 +50,11 @@ You don't need a Power BI license to explore the samples in Power BI Desktop. If
   
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the Retail Analysis sample as a [.pbix file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop. 
+Alternatively, you can download the Retail Analysis sample as a [.pbix file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop. 
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529778). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
+If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529778). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
 
 ## Start on the dashboard and open the report
 
@@ -74,7 +74,7 @@ If you want to view the data source for this sample, it's also available as an [
 
    The **FD-01** district has the highest average **Sales per Square Foot** and FD-02 has the lowest **Total Sales Variance** compared to last year. FD-03 and FD-04 are worst performers overall.
 4. Select individual bubbles or other charts to see cross highlighting, revealing the impact of your selections.
-5. To return to the dashboard, select  **Retail Analysis Sample** from the top navigation bar.
+5. To return to the dashboard, select  **Retail Analysis Sample** from the top nav pane.
 
    ![Navigation bar](media/sample-retail-analysis/power-bi-breadcrumbs.png)
 6. On the dashboard, select the **This Year's Sales New & Existing Stores** tile, which is equivalent to typing *This year sales* in the Q&A question box.

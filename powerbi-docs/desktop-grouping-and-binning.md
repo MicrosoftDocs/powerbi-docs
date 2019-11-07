@@ -2,7 +2,7 @@
 title: Use grouping and binning in Power BI Desktop
 description: Learn how to group and bin elements in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18

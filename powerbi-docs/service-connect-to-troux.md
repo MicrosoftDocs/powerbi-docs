@@ -2,7 +2,7 @@
 title: Connect to Troux with Power BI
 description: Troux for Power BI
 author: SarinaJoan
-manager: kfile
+manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
@@ -19,7 +19,7 @@ With the Troux content pack, you can visualize your Enterprise Architecture repo
 Connect to the [Troux content pack](https://app.powerbi.com/getdata/services/troux) for Power BI.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
    ![](media/service-connect-to-troux/getdata.png)
 2. In the **Services** box, select **Get**.
@@ -34,7 +34,7 @@ Connect to the [Troux content pack](https://app.powerbi.com/getdata/services/tro
 5. For **Authentication Method**, select **Basic** and provide your username and password (case sensitive), then select **Sign In**.
    
     ![](media/service-connect-to-troux/creds.png)
-6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the nav pane. Select the dashboard to view your imported data.
    
      ![](media/service-connect-to-troux/dashboard.png)
 

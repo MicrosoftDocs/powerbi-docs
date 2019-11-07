@@ -3,7 +3,7 @@ title: Large models in Power BI Premium (preview)
 description: The large models feature allows datasets in Power BI Premium to grow beyond 10 GB in size.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin

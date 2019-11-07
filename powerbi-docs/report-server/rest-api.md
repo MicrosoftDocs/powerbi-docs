@@ -3,7 +3,7 @@ title: Develop with the REST APIs for Power BI Report Server
 description: The REST API provides programmatic access to the objects in a Power BI Report Server catalog.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
@@ -36,7 +36,7 @@ A REST API request/response pair can be separated into five components:
 * Optional HTTP **request message body** fields, to support the URI and HTTP operation. For example, POST operations contain MIME-encoded objects that are passed as complex parameters. For POST or PUT operations, the MIME-encoding type for the body should be specified in the `Content-type` request header as well. Some services require you to use a specific MIME type, such as `application/json`.
 * HTTP **response message header** fields:
   
-  * An [HTTP status code](http://www.w3.org/Protocols/HTTP/HTRESP.html), ranging from 2xx success codes to 4xx or 5xx error codes. Alternatively, a service-defined status code may be returned, as indicated in the API documentation.
+  * An [HTTP status code](https://www.w3.org/Protocols/HTTP/HTRESP.html), ranging from 2xx success codes to 4xx or 5xx error codes. Alternatively, a service-defined status code may be returned, as indicated in the API documentation.
   * Optional additional header fields, as required to support the request's response, such as a `Content-type` response header.
 * Optional HTTP **response message body** fields:
   
@@ -48,7 +48,7 @@ A modern REST API calls for modern API documentation. The REST API is built on t
 
 ## Testing API calls
 
-A tool for testing HTTP request/response messages is [Fiddler](http://www.telerik.com/fiddler). Fiddler is a free web debugging proxy that can intercept your REST requests, making it easy to diagnose the HTTP request/ response messages.
+A tool for testing HTTP request/response messages is [Fiddler](https://www.telerik.com/fiddler). Fiddler is a free web debugging proxy that can intercept your REST requests, making it easy to diagnose the HTTP request/ response messages.
 
 ## Next steps
 

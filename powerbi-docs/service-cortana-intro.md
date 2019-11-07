@@ -2,7 +2,7 @@
 title: Use Cortana to find and view reports and dashboards - Power BI
 description: Use Cortana with Power BI to get answers from your data. Currently works with reports and dashboards.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -126,7 +126,7 @@ When you ask a question in Cortana, Power BI answers from report pages designed 
 * Cortana for Power BI is currently only available in English.
 * Cortana for Power BI is only available on Windows mobile devices.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/).
+More questions? [Try the Power BI Community](https://community.powerbi.com/).
 Feedback? [Send feedback to Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi).
 
 ## Next steps

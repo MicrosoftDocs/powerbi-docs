@@ -2,7 +2,7 @@
 title: 'Third-party service: Facebook connector for Power BI Desktop'
 description: 'Third-party service: Facebook connector for Power BI Desktop'
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

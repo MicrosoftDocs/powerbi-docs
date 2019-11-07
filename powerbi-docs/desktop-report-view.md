@@ -2,7 +2,7 @@
 title: Report View in Power BI Desktop
 description: Report View in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -25,7 +25,7 @@ When you first load data in Power BI Desktop, you’ll see **Report View** with 
 
 ![Power BI Desktop](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
 
-You can switch between **Report View**, **Data View**, and **Relationship View** by selecting the icons in the left-hand navigation bar:
+You can switch between **Report View**, **Data View**, and **Relationship View** by selecting the icons in the left-hand nav pane:
 
 ![Report view icon](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
 

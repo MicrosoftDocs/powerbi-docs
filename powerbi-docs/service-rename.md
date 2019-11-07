@@ -2,7 +2,7 @@
 title: Rename dashboards, reports, workspaces, report pages, datasets
 description: Rename almost anything in Power BI service.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -83,5 +83,5 @@ Don't like the name of a page in your Power BI report?  A new name is just a cli
 * If the item to be renamed has been shared with you, or is part of a content pack, you won't see the gear icon and you won't have access to Settings.
 * On the **Datasets** tab, if you don't see **More options** (...), expand your browser window.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

@@ -2,7 +2,7 @@
 title: Create a visual with Power BI Q&A
 description: 'Learn to create a visual with Q&A in the Power BI service using the Retail Analysis sample'
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -71,5 +71,5 @@ How would we go about creating this line chart using Q&A?
 - [Q&A for consumers](consumer/end-user-q-and-a.md)
 - [Make your data work well with Q&A in Power BI](service-prepare-data-for-q-and-a.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

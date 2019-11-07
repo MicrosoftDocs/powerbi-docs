@@ -2,7 +2,7 @@
 title: Use grouping in Power BI Desktop
 description: Learn how to group visuals in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

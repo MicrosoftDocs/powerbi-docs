@@ -34,7 +34,7 @@ The Q&A visual consists of four core components;
 
 ## Prerequisites
 
-1. This tutorial uses the [Sales & Marketing sample PBIX file](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix). 
+1. This tutorial uses the [Sales & Marketing sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix). 
 
 1. From the upper left section of the Power BI Desktop menu bar, select **File** > **Open**
    

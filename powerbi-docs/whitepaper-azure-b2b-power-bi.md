@@ -2,7 +2,7 @@
 title: Distribute Power BI content to external guest users using Azure Active Directory B2B
 description: Whitepaper that describes how to use Azure Active Directory B2B to distribute Power BI to external guest users
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

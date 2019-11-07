@@ -2,7 +2,7 @@
 title: Supported languages and countries/regions for Power BI
 description: See the lists of supported languages and countries/regions for the Power BI service, Power BI Desktop, and Power BI documentation.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -122,7 +122,7 @@ You have two ways of getting Power BI Desktop: You can download it as a standalo
 > If you're installing the version of Power BI Desktop that's optimized for Power BI Report Server, you choose the language when you download. See [Install Power BI Desktop optimized for Power BI Report Server](report-server/install-powerbi-desktop.md) for details.
 
 ### Choose a language for Power BI Desktop 
-1. Install Power BI Desktop [from the Windows Store](http://aka.ms/pbidesktopstore), or as a [standalone installer](http://aka.ms/pbiSingleInstaller).
+1. Install Power BI Desktop [from the Windows Store](https://aka.ms/pbidesktopstore), or as a [standalone installer](https://aka.ms/pbiSingleInstaller).
 2. To change the language, on your computer search for **Windows Settings**. 
 3. Select **Time & language**.
    
@@ -191,6 +191,6 @@ Help is localized in these 10 languages:
 
 ## Next steps
 * Are you using one of the Power BI mobile apps? See [Supported languages in the Power BI mobile apps](consumer/mobile/mobile-apps-supported-languages.md) for details.
-* Questions? Try asking the [Power BI Community](http://community.powerbi.com/).
+* Questions? Try asking the [Power BI Community](https://community.powerbi.com/).
 * Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 

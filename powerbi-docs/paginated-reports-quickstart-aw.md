@@ -3,7 +3,7 @@ title: "Tutorial: Create a paginated report and upload it to the Power BI servic
 description: In this tutorial, you connect to a sample Azure SQL database. Then you use a wizard in Report Builder to create a paginated report. Then you upload the paginated report to a workspace in a Premium capacity in the Power BI service.  
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
@@ -282,7 +282,7 @@ One more formatting improvement before publishing the report to the Power BI ser
 
 Now that you've created this paginated report, it's time to upload it to the Power BI service.
 
-1. In the Power BI service (http://app.powerbi.com) in the left navigation, select **Workspaces** > **Create workspace**.
+1. In the Power BI service (https://app.powerbi.com) in the nav pane, select **Workspaces** > **Create workspace**.
 
 2. Name your workspace **Azure AW**, or other unique name. You're the only member for now. 
 

@@ -63,5 +63,5 @@ If you decide that you don't want any dashboard to be designated as featured, he
    
 ## Next steps
 - [Favorite a dashboard](end-user-favorite.md)
-- More questions? Try the [Power BI Community](http://community.powerbi.com/).
+- More questions? Try the [Power BI Community](https://community.powerbi.com/).
 

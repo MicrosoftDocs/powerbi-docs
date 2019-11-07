@@ -2,7 +2,7 @@
 title: Use SAP HANA in Power BI Desktop
 description: Use SAP HANA in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18
@@ -15,7 +15,7 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ---
 # Use SAP HANA in Power BI Desktop
-With Power BI Desktop, you can now access **SAP HANA** databases. To use **SAP HANA**, the SAP HANA ODBC driver must be installed on the local client computer in order for the Power BI Desktop **SAP HANA** data connection to work properly. You can download the SAP HANA ODBC driver from the [SAP Software Download Center](https://support.sap.com/swdc). From there, search for the SAP HANA CLIENT for Windows computers. Since the **SAP Software Download Center** changes its structure frequently, more specific guidance for navigating that site is not available.
+With Power BI Desktop, you can now access **SAP HANA** databases. To use **SAP HANA**, the SAP HANA ODBC driver must be installed on the local client computer in order for the Power BI Desktop **SAP HANA** data connection to work properly. You can download the SAP HANA Client tools from [SAP Development Tools](https://tools.hana.ondemand.com/#hanatools), which contains the necessary ODBC driver. Alternatively, you can get it from the [SAP Software Download Center](https://support.sap.com/swdc). In the Software portal search for the SAP HANA CLIENT for Windows computers. Since the **SAP Software Download Center** changes its structure frequently, more specific guidance for navigating that site is not available.
 
 To connect to a **SAP HANA** database, select **Get Data > Database > SAP HANA Database** as shown in the following image:
 
