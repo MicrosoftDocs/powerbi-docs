@@ -29,7 +29,7 @@ The following sections describe how to create a dataflow from a CDM folder.
 
 ## Create a dataflow from a CDM folder
 
-To get started creating a dataflow from a CDM folder, launch the **Power BI service** and select a **workspace** from the left navigation pane. You can also create a new workspace, in which you can create your new dataflow.
+To get started creating a dataflow from a CDM folder, launch the **Power BI service** and select a **workspace** from the nav pane. You can also create a new workspace, in which you can create your new dataflow.
 
 ![Create a dataflow in the Power BI service](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_02.jpg)
 

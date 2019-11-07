@@ -40,7 +40,7 @@ The new filter experience is turned on by default for new reports. You can enabl
 ### Turn on new filters for an existing report in Power BI Desktop
 
 1. In Power BI Desktop in an existing report, select **File** > **Options and Settings** > **Options**
-2. In the left navigation bar, under **Current file**, select **Report settings**.
+2. In the nav pane, under **Current file**, select **Report settings**.
 3. Under **Filtering experience**, select **Enable the updated filter pane, and show filters in the visual header for this report**.
 
 ### Turn on new filters for an existing report in the service

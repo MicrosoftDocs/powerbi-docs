@@ -111,7 +111,7 @@ You can further customize the app navigation by:
 * Renaming items in the **Report details**, **Dashboard details**, and **Workbook details**.
 * Hiding certain items from the navigation.
 * Using the **New** option to add **sections** to group related content.
-* Using the **New** option to add a **link** to an external resource to the left navigation. 
+* Using the **New** option to add a **link** to an external resource to the nav pane. 
 
 When you add a **link**, in **Link details** you can choose where the link opens. By default links open in the **Current tab**, but you can select **New tab**, or **Content area**. 
 
@@ -183,7 +183,7 @@ This action uninstalls the app for everyone you've published it to, and they no 
 
 ## View your published app
 
-When your app consumers open your app, they see the navigation you created, instead of the standard Power BI left navigation pane. The app navigation lists the reports and dashboards in the sections you've defined. It also lists the individual pages in each report, rather that just the report name.
+When your app consumers open your app, they see the navigation you created, instead of the standard Power BI nav pane. The app navigation lists the reports and dashboards in the sections you've defined. It also lists the individual pages in each report, rather that just the report name.
 
 ![App with navigation](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 

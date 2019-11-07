@@ -54,16 +54,16 @@ You can also try the [GitHub tutorial](service-tutorial-connect-to-github.md). I
 
 You've installed the GitHub template app. That means you've also created the GitHub workspace. In the workspace, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
 
-1. Select the arrow next to the workspace name in the left navigation bar. You see the workspace contains a dashboard and a report.
+1. Select the arrow next to the workspace name in the nav pane. You see the workspace contains a dashboard and a report.
 
-    ![App in the left navigation pane](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+    ![App in the nav pane](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
 8. Select the new [GitHub dashboard](https://powerbi.microsoft.com/integrations/github).    
     ![GitHub dashboard in Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
 
-3. To view all the contents of your new GitHub workspace, in the left navigation bar, select **Workspaces** > **GitHub**.
+3. To view all the contents of your new GitHub workspace, in the nav pane, select **Workspaces** > **GitHub**.
  
-   ![GitHub workspace in the left navigation pane](media/service-connect-to-github/power-bi-github-left-nav.png)
+   ![GitHub workspace in the nav pane](media/service-connect-to-github/power-bi-github-left-nav.png)
 
     This view is the content list for the workspace. In the upper-right corner, you see **Update app**. When you're ready to distribute your app to your colleagues, that's where you'll start. 
 

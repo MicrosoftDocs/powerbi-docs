@@ -24,7 +24,7 @@ For more info about roles, see [Administrator roles related to Power BI](service
 
 1. Sign in to the [Microsoft 365 admin center](https://portal.office.com/adminportal).
 
-1. From the left navigation bar, select **Show all** > **Health** > **Service health**. The Service health page appears:
+1. From the nav pane, select **Show all** > **Health** > **Service health**. The Service health page appears:
 
     ![Screenshot of the Microsoft 365 admin center with the Health and Service health options called out.](media/service-admin-health/service-health-tile.png)
 

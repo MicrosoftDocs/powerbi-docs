@@ -74,7 +74,7 @@ If you want to view the data source for this sample, it's also available as an [
 
    The **FD-01** district has the highest average **Sales per Square Foot** and FD-02 has the lowest **Total Sales Variance** compared to last year. FD-03 and FD-04 are worst performers overall.
 4. Select individual bubbles or other charts to see cross highlighting, revealing the impact of your selections.
-5. To return to the dashboard, select  **Retail Analysis Sample** from the top navigation bar.
+5. To return to the dashboard, select  **Retail Analysis Sample** from the top nav pane.
 
    ![Navigation bar](media/sample-retail-analysis/power-bi-breadcrumbs.png)
 6. On the dashboard, select the **This Year's Sales New & Existing Stores** tile, which is equivalent to typing *This year sales* in the Q&A question box.

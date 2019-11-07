@@ -34,9 +34,9 @@ Follow these steps to purchase Power BI Pro licenses in the Microsoft 365 admin 
 
 1. Open the [Microsoft 365 admin center](https://portal.office.com/adminportal/home#/homepage).
 
-2. On the left navigation pane, select **Billing** > **Subscriptions**.
+2. On the nav pane, select **Billing** > **Subscriptions**.
 
-    ![Navigation pane](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-01.png)
+    ![Nav pane](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-01.png)
 
 3. In the upper right corner of the **Subscriptions** page, select **Add subscriptions**.
 
@@ -72,7 +72,7 @@ Follow these steps to assign Power BI Pro licenses to individual user accounts:
 
 1. Open the [Microsoft 365 admin center](https://portal.office.com/adminportal/home#/homepage).
 
-2. On the left navigation pane, expand **Users**, and then select **Active users**.
+2. On the nav pane, expand **Users**, and then select **Active users**.
 
     ![Active users](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-05.png)
 
@@ -94,7 +94,7 @@ Follow these steps to assign Power BI Pro licenses to individual user accounts:
 
 1. Open the [Azure portal](https://ms.portal.azure.com/#@microsoft.onmicrosoft.com/dashboard/private/39bc3cf7-31a4-43f6-954c-f2d69ca2f0).
 
-2. In the left navigation bar, select **Azure Active Directory**.
+2. In the nav pane, select **Azure Active Directory**.
 
     ![Azure Active Directory](media/service-admin-purchasing-power-bi-pro/service-assigning-power-bi-pro-licenses-01.png)
 

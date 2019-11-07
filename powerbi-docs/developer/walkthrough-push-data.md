@@ -107,7 +107,7 @@ For a Power BI table schema, you can use the following data types.
 
 ## Learn more about pushing data into Power BI
 
-To get started pushing data into a dataset, see [Step 1: Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) in the left navigation pane.
+To get started pushing data into a dataset, see [Step 1: Register an app with Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) in the nav pane.
 
 [Next Step >](walkthrough-push-data-register-app-with-azure-ad.md)
 

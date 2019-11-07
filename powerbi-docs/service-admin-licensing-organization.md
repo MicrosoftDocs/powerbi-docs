@@ -52,7 +52,7 @@ Keep the following in mind before you follow the steps to sign up:
 
 1. Navigate to the [Microsoft 365 admin center](https://portal.office.com/adminportal/home#/homepage).
 
-1. On the left navigation pane, select **Billing** then **Subscriptions**.
+1. On the nav pane, select **Billing** then **Subscriptions**.
 
    ![Billing and subscriptions](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-05.png)
 
@@ -98,7 +98,7 @@ If the unlimited Power BI (free) license block isn't available and you don't wan
 
 1. Navigate to the [Microsoft 365 admin center](https://portal.office.com/admin/default.aspx).
 
-1. On the left navigation pane, select **Billing** > **Subscriptions**.
+1. On the nav pane, select **Billing** > **Subscriptions**.
 
 1. On the right side, select **Add subscriptions +**.
 

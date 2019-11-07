@@ -30,14 +30,14 @@ In the Power BI service, the report editor is only available in Editing View. To
 
 The Power BI report editor is divided into several main sections:  
 
-1. Top navigation bar
+1. Top nav pane
 1. Report canvas
 1. Filters pane
 1. Visualizations pane
 1. Fields pane
 
-## 1. The top navigation bar
-The actions available from the top navigation bar are numerous, with new actions being added all the time. For information about a particular action, use the Power BI documentation table of contents, or Search box.
+## 1. The top nav pane
+The actions available from the top nav pane are numerous, with new actions being added all the time. For information about a particular action, use the Power BI documentation table of contents, or Search box.
 
 
 ## 2. The report canvas

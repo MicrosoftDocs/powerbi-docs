@@ -108,7 +108,7 @@ If you receive an error when dashboard tiles refresh, see [Troubleshooting tile 
 ### Refresh history
 With **Refresh history**, you can see what errors occurred and find useful data if you need to create a support request. You can view both scheduled and on-demand refreshes. Here's how you get to **Refresh history**.
 
-1. In the Power BI navigation pane, in **Datasets**, select a dataset. Open the menu, and select **Schedule Refresh**.
+1. In the Power BI nav pane, in **Datasets**, select a dataset. Open the menu, and select **Schedule Refresh**.
 
    ![Select Schedule Refresh](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh.png)
 1. In **Settings for...**, select **Refresh history**. 

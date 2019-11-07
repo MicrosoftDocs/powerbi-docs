@@ -23,7 +23,7 @@ A coworker created a content pack. You discovered it in AppSource and added it t
 
 To remove a content pack, you remove its dataset.  
 
-* In the left navigation pane, select the ellipsis to the right of the dataset and select **Remove \> Yes**.  
+* In the nav pane, select the ellipsis to the right of the dataset and select **Remove \> Yes**.  
   
   ![Remove content pack](media/service-organizational-content-pack-disconnect/power-bi-remove-organizational-content-pack-dataset.png)
 

@@ -78,7 +78,7 @@ By using Q&A, you can discover additional details in the data.
 
    ![Q&A question: Total units by segment for VanArsdel](media/sample-sales-and-marketing/sales2.png)
 3. Our share in the **Moderation** and **Convenience** categories is high; these segments are the ones where we compete.
-4. Return to the dashboard by selecting the **Sales and Marketing Sample** in the top navigation bar.
+4. Return to the dashboard by selecting the **Sales and Marketing Sample** in the top nav pane.
 
 ### What does total unit market share look like for category (versus region)?
 1. Notice the **Total Units YTD by Manufacturer, Region** tile. What is the total unit market share by category?

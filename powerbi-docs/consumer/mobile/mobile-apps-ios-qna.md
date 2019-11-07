@@ -46,7 +46,7 @@ The first step is to download the Retail Analysis and Opportunity Analysis sampl
 
 1. Open the Power BI service (app.powerbi.com) and sign in.
 
-2. In the left navigation pane, select **Workspaces**, **My Workspace**.
+2. In the nav pane, select **Workspaces**, **My Workspace**.
 
 3. In the lower-left corner select **Get data**.
    

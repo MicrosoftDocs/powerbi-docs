@@ -149,7 +149,7 @@ Each of the sample content packs is also available as an Excel workbook. The Exc
 
     ![Import or Connect](media/sample-datasets/power-bi-import.png)
 9. If you select **Import**, Power BI imports the sample workbook and adds it as a new dataset named **Procurement Analysis Sample**.  If the workbook has any Power View sheets, tables or ranges, or a data model, Power BI also creates a report (with the same name). And if you don't already have a dashboard open, Power BI creates a new dashboard. (If you had a dashboard open when you clicked **Get Data**, you'll see a new blank tile on that dashboard.  Clicking that tile will take you to the report for the dataset you just added). The new content is named after the sample and is marked with a yellow asterisk.
-10. When the **Your dataset is ready!** screen appears, select **View dataset** or **Get Quick Insights** or use your Power BI left navbar to locate and open the associated report or dashboard.  
+10. When the **Your dataset is ready!** screen appears, select **View dataset** or **Get Quick Insights** or use your Power BI nav pane to locate and open the associated report or dashboard.  
 
      ![View dataset](media/sample-datasets/power-bi-ready.png)
 

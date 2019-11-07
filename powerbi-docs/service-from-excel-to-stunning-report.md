@@ -53,7 +53,7 @@ The Power BI service connects to many data sources, including Excel files that l
 
    ![Create dropdown](media/service-from-excel-to-stunning-report/power-bi-create-dash.png)
 
-4. At the bottom of the left navigation pane, select **Get data**. 
+4. At the bottom of the nav pane, select **Get data**. 
 
 5. On the **Get Data** page, in the **Files** box under **Create new content**, select **Get**.
 

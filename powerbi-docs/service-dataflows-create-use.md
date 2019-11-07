@@ -32,7 +32,7 @@ There are three primary steps to using a dataflow:
 In the following sections, we look at each of these steps and become familiar with the tools provided to complete each step. Let’s get started.
 
 ## Creating a dataflow
-To create a dataflow, launch the Power BI service in a browser then select a **workspace** (dataflows are not available in *my-workspace* in the Power BI service) from the navigation pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow. 
+To create a dataflow, launch the Power BI service in a browser then select a **workspace** (dataflows are not available in *my-workspace* in the Power BI service) from the nav pane on the left, as shown in the following screen. You can also create a new workspace in which to create your new dataflow. 
 
 ![Create a dataflow in Power BI](media/service-dataflows-create-use/dataflows-create-use_02a.png)
 

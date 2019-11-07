@@ -78,7 +78,7 @@ Your other option for registering your application is to do so directly in the A
 
 3. Choose your Azure AD tenant by selecting your account in the top-right corner of the page.
 
-4. In the left-hand navigation pane, go to **All services**, select **App Registrations** and then select **New registration**.
+4. In the left-hand nav pane, go to **All services**, select **App Registrations** and then select **New registration**.
 
 5. Follow the prompts and create a new application.
 

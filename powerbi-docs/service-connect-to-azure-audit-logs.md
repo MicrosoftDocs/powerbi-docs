@@ -21,7 +21,7 @@ With the Azure Audit Logs content pack you can analyze and visualize the informa
 [Connect to the Azure Audit Logs content pack](https://app.powerbi.com/getdata/services/azure-audit-logs) or read more about the [Azure Audit Logs integration](https://powerbi.microsoft.com/integrations/azure-audit-logs) with Power BI.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.  
+1. Select **Get Data** at the bottom of the nav pane.  
    
     ![](media/service-connect-to-azure-audit-logs/getdata.png)
 2. In the **Services** box, select **Get**.  

@@ -44,7 +44,7 @@ Connect to the [Xero template app](https://app.powerbi.com/getdata/services/xero
     ![Authentication method](media/service-connect-to-xero/creds.png)
    
     ![Welcome to Xero](media/service-connect-to-xero/creds2.png)
-6. After approving, the import process will begin automatically. When complete, a new dashboard, report, and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+6. After approving, the import process will begin automatically. When complete, a new dashboard, report, and model will appear in the nav pane. Select the dashboard to view your imported data.
    
      ![Xero dashboard](media/service-connect-to-xero/power-bi-xero-dashboard.png)
 

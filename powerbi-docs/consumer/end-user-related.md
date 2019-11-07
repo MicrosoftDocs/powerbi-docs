@@ -50,9 +50,9 @@ From here, you can take direct action on the related content.  For example, sele
 ## View related content for a dataset
 You'll need at least *view* permissions to a dataset to open the **Related content** pane. In this example, we're using the [Procurement Analysis sample](../sample-procurement.md).
 
-From the nav bar, locate the **Workspaces** heading and select a workspace from the list. If you have content in a workspace, it will display in the canvas to the right. 
+From the nav pane, locate the **Workspaces** heading and select a workspace from the list. If you have content in a workspace, it will display in the canvas to the right. 
 
-![workspaces in left nav bar](./media/end-user-related/power-bi-workspace.png)
+![workspaces in nav pane](./media/end-user-related/power-bi-workspace.png)
 
 
 In a workspace, select the **Datasets** tab and locate the **View related** icon ![View related icon](./media/end-user-related/power-bi-view-related-icon-new.png).

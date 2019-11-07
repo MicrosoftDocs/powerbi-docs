@@ -105,7 +105,7 @@ To get the **applicationId**, follow these steps:
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 
-2. In the left-hand navigation pane, select **All Services**, and search for **App Registrations**.
+2. In the left-hand nav pane, select **All Services**, and search for **App Registrations**.
 
     ![App registration search](media/embed-paginated-reports-for-customers/app-registration.png)
 
@@ -157,7 +157,7 @@ To get the **ApplicationSecret**, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-2. In the left-hand navigation pane, select **All services** and search for **App registrations**.
+2. In the left-hand nav pane, select **All services** and search for **App registrations**.
 
     ![App registration search](media/embed-paginated-reports-for-customers/app-registration.png)
 

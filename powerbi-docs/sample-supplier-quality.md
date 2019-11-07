@@ -90,7 +90,7 @@ Let’s analyze the downtime caused by defective materials and see which vendors
     ![Downtime (min) by Vendor treemap](media/sample-supplier-quality/supplier5.png)  
 
    From this treemap, we can see the top eight vendors are the eight blocks on the left of the treemap. We can also see they account for about 50% of all downtime minutes.  
-3. Select **Supplier Quality Analysis Sample** in the top navigation bar to return to the dashboard.
+3. Select **Supplier Quality Analysis Sample** in the top nav pane to return to the dashboard.
 
 ### Comparing plants
 Now let’s explore which plant does a better job managing defective material, resulting in less downtime.  
@@ -109,7 +109,7 @@ Now let’s explore which plant does a better job managing defective material, r
 3. Select the **Logistics** bubble in the bubble chart and observe the plants in Springfield and Naperville, IL. Naperville seems to be doing a much better job of managing defective supplies as it has a high number of rejects and few impacts, compared to Springfield’s large number for impacts.  
 
    ![Select Logistics](media/sample-supplier-quality/supplier8.png)  
-4. Select **Supplier Quality Analysis Sample** in the top navigation bar to return to the dashboard.
+4. Select **Supplier Quality Analysis Sample** in the top nav pane to return to the dashboard.
 
 ## Which material type is best managed?
 The best managed material type is the one with lowest downtime or no impact, regardless of defect quantity.
@@ -134,7 +134,7 @@ The best managed material type is the one with lowest downtime or no impact, reg
 
     ![Total Defect Qty by Month and Year chart](media/sample-supplier-quality/supplier11.png)  
 3. Do more defects translate into more downtime? Ask questions in the Q&A box to find out.  
-4. Select **Supplier Quality Analysis Sample** in the top navigation bar to return to the dashboard.  
+4. Select **Supplier Quality Analysis Sample** in the top nav pane to return to the dashboard.  
 5. Because we know that raw materials have the highest number of defects, type in the question box: *show material types, year, and total defect qty*.  
 
     There were many more raw materials defects in 2014 than in 2013.  

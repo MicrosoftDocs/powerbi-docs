@@ -43,10 +43,10 @@ You can also sort the content by name or owner. Notice the up arrow to the right
 Not all columns can be sorted. Hover over the column headings to discover which can be sorted.
 
 ___________________________________________________________________
-## Navigation using the navigation pane
-The navigation pane (nav pane) classifies your content in ways that help you find what you need, quickly.  
+## Navigation using the nav pane
+The nav pane classifies your content in ways that help you find what you need, quickly.  
 
-![left nav pane](./media/end-user-search-sort/power-bi-navbar.png)
+![nav pane](./media/end-user-search-sort/power-bi-nav pane.png)
 
 
 - Content that is shared with you is available in **Shared with me**.
@@ -54,7 +54,7 @@ The navigation pane (nav pane) classifies your content in ways that help you fin
 - Your apps can be found by selecting **Apps**.
 - **Home** is a single page view of your most important content and suggested content and learning sources.
 
-Additionally, you can tag content as [favorite](end-user-favorite.md) and [featured](end-user-featured.md). Pick the one dashboard or report that you expect to view most often, and set it as your *featured* content. Each time you open the Power BI service, your featured dashboard will display first. Do you have a number of dashboards and apps that you visit often? By setting them as favorites, they'll always be available from your left nav bar.
+Additionally, you can tag content as [favorite](end-user-favorite.md) and [featured](end-user-featured.md). Pick the one dashboard or report that you expect to view most often, and set it as your *featured* content. Each time you open the Power BI service, your featured dashboard will display first. Do you have a number of dashboards and apps that you visit often? By setting them as favorites, they'll always be available from your nav pane.
 
 ![Favorites flyout](./media/end-user-search-sort/power-bi-favorite.png).
 

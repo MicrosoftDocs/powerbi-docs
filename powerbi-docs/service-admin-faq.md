@@ -190,7 +190,7 @@ If a user is signed up for Power BI, but you no longer want them to have access 
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
-1. In the left navigation bar, select **Users** > **Active Users**.
+1. In the nav pane, select **Users** > **Active Users**.
 
 1. Find the user you want to remove the license for, then select their name.
 
@@ -208,7 +208,7 @@ Users who have joined your tenant via self-service sign-up get assigned a unique
 
 1. Navigate to the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
-1. In the left navigation bar, select **Users** > **Active Users**.
+1. In the nav pane, select **Users** > **Active Users**.
 
 1. On the **Views** menu, select **Add custom view**.
 

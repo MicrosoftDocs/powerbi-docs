@@ -95,7 +95,7 @@ Let’s explore the spending areas in Mexico.
       ![Indirect Goods & Services drill down for Mexico](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Select the up arrow on the upper-left corner of the chart to drill back up.
 4. Select the drill-down arrow again to turn drill down off.  
-5. In the top navigation bar, select **Procurement Analysis Sample** to return to the dashboard.
+5. In the top nav pane, select **Procurement Analysis Sample** to return to the dashboard.
 
 ## Evaluate different cities
 We can use highlighting to evaluate different cities.

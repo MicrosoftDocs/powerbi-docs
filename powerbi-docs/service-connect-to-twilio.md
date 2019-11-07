@@ -21,7 +21,7 @@ The Microsoft Twilio content pack for Power BI allows you to pull your data into
 Connect to the [Twilio content pack](https://app.powerbi.com/getdata/services/twilio) for Power BI.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
    ![](media/service-connect-to-twilio/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.

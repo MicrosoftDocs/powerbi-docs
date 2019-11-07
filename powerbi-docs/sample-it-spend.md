@@ -74,7 +74,7 @@ However, just looking at this chart and drawing conclusions can be misleading. W
     Next, let’s explore which category in the USA is causing the variance.
 
 ## Ask questions of the data
-1. Select **IT Spend Analysis Sample** in the top navigation bar to return to the sample dashboard.
+1. Select **IT Spend Analysis Sample** in the top nav pane to return to the sample dashboard.
 2. Select **Ask a question about your data**.
 3. From the **Questions to get you started** list on the left side, select **what is the plan by IT area**.
 

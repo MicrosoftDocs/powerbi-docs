@@ -49,7 +49,7 @@ Now that your files are in the OneDrive for Business for your workspace, you hav
 
 ### Import or connect to the files in your workspace
 1. In Power BI, switch to the workspace, so the workspace name is in the top-left corner. 
-2. Select **Get Data** at the bottom of the left navigation pane. 
+2. Select **Get Data** at the bottom of the nav pane. 
    
    ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-get-data-button.png)
 3. In the **Files** box, select **Get**.

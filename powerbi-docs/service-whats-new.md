@@ -579,7 +579,7 @@ For all the details, visit the [Power BI Blog](https://blogs.msdn.com/b/powerbi/
 * Share dashboards with Active Directory Security groups
 * People picker
 * Sharing with a large number of email addresses
-* Collapse navigation pane through an URL parameterized
+* Collapse nav pane through an URL parameterized
 
 For all the details, visit the [Power BI Blog](https://blogs.msdn.com/b/powerbi/archive/2015/10/28/power-bi-weekly-service-update-1027.aspx)
 

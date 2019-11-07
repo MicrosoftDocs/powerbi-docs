@@ -68,7 +68,7 @@ Luckily, the Power BI team has created a VM that comes with Power BI Report Serv
 
 ## Connect to your virtual machine
 
-1. In the Azure left navigation pane, select **Virtual machines**. 
+1. In the Azure nav pane, select **Virtual machines**. 
 
 2. In the **Filter by name** box, type "report". 
 

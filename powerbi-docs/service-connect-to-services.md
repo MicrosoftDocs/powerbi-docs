@@ -32,7 +32,7 @@ After you install the app, you can view the dashboard and reports in the app and
 ## Edit the dashboard and reports
 When the import is complete, the new app appears on the Apps page.
 
-1. Select **Apps** in the left navigation pane > select the app.
+1. Select **Apps** in the nav pane > select the app.
    
      ![Apps page](media/service-connect-to-services/power-bi-service-apps-open-app.png)
 2. You can ask a question by typing in the Q&A box, or click a tile to open the underlying report. 

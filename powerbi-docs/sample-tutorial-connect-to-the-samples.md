@@ -34,11 +34,11 @@ To familiarize yourself with this particular content pack and its scenario, see
 
     If you don't have a Power BI Pro license, you can save the sample to your My Workspace.
 
-2. Select **Get Data** at the bottom of the left navigation pane. 
+2. Select **Get Data** at the bottom of the nav pane. 
 
    ![Select Get Data](media/sample-datasets/power-bi-get-data.png)
 
-   If you don't see **Get Data**, expand the navigation pane by selecting the following icon at the top of the pane: ![hamburger icon](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
+   If you don't see **Get Data**, expand the nav pane by selecting the following icon at the top of the pane: ![hamburger icon](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
 
 5. On the **Get Data** page that appears, select **Samples**.
    

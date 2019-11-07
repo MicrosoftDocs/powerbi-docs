@@ -40,11 +40,11 @@ The first step in the quickstart is to download the Retail Analysis sample in th
 
 1. Open the Power BI service in your browser (app.powerbi.com) and sign in.
 
-1. Select the global navigation icon to open the left navigation.
+1. Select the global navigation icon to open the nav pane.
 
     ![global navigation icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-global-nav-icon.png)
 
-2. In the left navigation pane, select **Workspaces** > **My Workspace**.
+2. In the nav pane, select **Workspaces** > **My Workspace**.
 
     ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-my-workspace.png)
 
@@ -131,7 +131,7 @@ After you finish this quickstart, you can delete the Retail Analysis sample dash
 
 1. Open the Power BI service (app.powerbi.com) and sign in.
 
-2. In the left navigation pane, select **Workspaces** > **My Workspace**.
+2. In the nav pane, select **Workspaces** > **My Workspace**.
 
     Notice the yellow star indicating it's a favorite?
 

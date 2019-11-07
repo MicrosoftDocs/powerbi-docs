@@ -34,7 +34,7 @@ In both the application and the service, you build and edit *reports*. A report 
 
 The report editors in Power BI Desktop and in the service are similar. They're made up of three sections:  
 
-1. The top navigation bars, different in Power BI Desktop and the service    
+1. The top nav panes, different in Power BI Desktop and the service    
 2. The report canvas     
 3. The **Fields**, **Visualizations**, and **Filters** panes
 

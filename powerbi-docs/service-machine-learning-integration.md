@@ -40,7 +40,7 @@ The steps in this article describe how to grant a Power BI user access to a mode
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-2. Go to the **Subscriptions** page. You can find the **Subscriptions** page through the **All Services** list in the left navigation menu of the Azure portal.
+2. Go to the **Subscriptions** page. You can find the **Subscriptions** page through the **All Services** list in the nav pane menu of the Azure portal.
 
     ![Azure subscriptions page](media/service-machine-learning-integration/machine-learning-integration_01.png)
 
@@ -84,7 +84,7 @@ Selecting the **Edit** button opens the Power Query Editor for the entities in y
 
 ![Power Query Editor](media/service-machine-learning-integration/machine-learning-integration_06.png)
 
-Select the **AI Insights** button in the ribbon, and then select the _Azure Machine Learning Models_ folder from the left navigation menu. All the Azure ML models to which you have access are listed here as Power Query functions. Also, the input parameters for the Azure ML model are automatically mapped as parameters of the corresponding Power Query function.
+Select the **AI Insights** button in the ribbon, and then select the _Azure Machine Learning Models_ folder from the nav pane menu. All the Azure ML models to which you have access are listed here as Power Query functions. Also, the input parameters for the Azure ML model are automatically mapped as parameters of the corresponding Power Query function.
 
 To invoke an Azure ML model, you can specify any of the selected entity's columns as an input from the drop-down. You can also specify a constant value to be used as an input by toggling the column icon to the left of the input dialog.
 

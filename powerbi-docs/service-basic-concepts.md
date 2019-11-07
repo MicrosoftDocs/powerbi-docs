@@ -24,7 +24,7 @@ For this article, if you don't have your own reports yet try installing a [Power
 
 When you open the Power BI service in a browser, you start at your Home screen. Here are the elements you may see:
 
-1. Navigation pane (left nav)
+1. Navigation pane
 2. Office 365 app launcher
 3. Power BI home button
 4. Icon buttons, including settings, help, and feedback
@@ -70,7 +70,7 @@ In the example below, I've selected the "Sales and marketing" workspace and clic
 
   ![Dataset diagram](media/service-basic-concepts/drawing2.png)
 
-To [connect to or import a dataset](service-get-data.md), select **Get Data** at the bottom of the left navigation. Follow the instructions to connect to or import the specific source and add the dataset to the active workspace. New datasets are marked with a yellow asterisk. The work you do in Power BI doesn't change the underlying dataset.
+To [connect to or import a dataset](service-get-data.md), select **Get Data** at the bottom of the nav pane. Follow the instructions to connect to or import the specific source and add the dataset to the active workspace. New datasets are marked with a yellow asterisk. The work you do in Power BI doesn't change the underlying dataset.
 
 Datasets added by one workspace member are available to the other workspace members with an *admin*, *member*, or *contributor* role.
 
@@ -155,13 +155,13 @@ We've covered workspaces and building blocks. Let's bring it together and review
 
 ![Power BI service in a browser](media/service-basic-concepts/completenewest.png)
 
-### 1. **Navigation pane** (left nav)
-Use the navigation pane to locate and move between your workspaces and the Power BI building blocks: dashboards, reports, workbooks, and datasets.  
+### 1. **Navigation pane**
+Use the nav pane to locate and move between your workspaces and the Power BI building blocks: dashboards, reports, workbooks, and datasets.  
 
-  ![Navigation pane](media/service-basic-concepts/power-bi-navigation.png)
+  ![Nav pane](media/service-basic-concepts/power-bi-navigation.png)
 
 * Select **Get Data** to [add datasets, reports, and dashboards to Power BI](service-get-data.md).
-* Expand and collapse the navigation pane with this icon ![navigation pane icon](media/service-basic-concepts/expand-icon.png).
+* Expand and collapse the nav pane with this icon ![nav pane icon](media/service-basic-concepts/expand-icon.png).
 * Open or manage your favorite content by selecting **Favorites**.
 * View and open your most-recently visited content by selecting **Recent**
 * View, open, or delete an app by selecting **Apps**.

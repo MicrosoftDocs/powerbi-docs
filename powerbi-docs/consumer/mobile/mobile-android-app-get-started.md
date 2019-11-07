@@ -84,14 +84,14 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 ## Find your content in the Power BI mobile apps
 Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](../../mobile-apps-quickstart-view-dashboard-report.md). Plus you can always search for anything you have in the Power BI mobile apps. 
 
-![Left navigation pane](./media/mobile-android-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
+![Nav pane](./media/mobile-android-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
 
 ## View your favorite dashboards, KPIs, and reports
 On the Favorites page in the mobile apps, you see all of your favorite Power BI dashboards, together with Power BI Report Server and Reporting Services KPIs and reports. When you make a dashboard a *favorite* in the Power BI mobile app, you can access it from all of your devices, including the Power BI service in your browser. 
 
 * Tap **Favorites**.
   
-   ![Favorites in the left navigation pane](./media/mobile-android-app-get-started/power-bi-android-favorite-left-nav.png)
+   ![Favorites in the nav pane](./media/mobile-android-app-get-started/power-bi-android-favorite-left-nav.png)
   
    Your Power BI favorites and your favorites from the Power BI Report Server and Reporting Services web portal are all on this page.
   

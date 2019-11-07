@@ -101,7 +101,7 @@ To grant permissions to the file system, you apply Access Control List (ACL) set
 
 To find your tenant applications, follow these steps:
 
-1. In the [Azure portal](https://portal.azure.com/), select **Azure Active Directory** from the left navigation panel.
+1. In the [Azure portal](https://portal.azure.com/), select **Azure Active Directory** from the nav panel.
 2. In the Azure **Active Directory** blade, select **Enterprise applications**.
 3. From the **Application Type** drop-down menu, select **All Applications** and then select **Apply**. A sample of your tenant applications appears, similar to the following image.
 

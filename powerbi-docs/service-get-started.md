@@ -47,7 +47,7 @@ Often when you want to create a Power BI report, you start in Power BI Desktop. 
 In this tutorial, we get data from a CSV file. Want to follow along? [Download the Financial Sample CSV file](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 1. [Sign in to Power BI](https://www.powerbi.com/). Don’t have an account? No worries, you can sign up for a free trial.
-2. Power BI opens in your browser. Select **Get data** at the bottom of the left navigation bar.
+2. Power BI opens in your browser. Select **Get data** at the bottom of the nav pane.
 
     The **Get Data** page opens.   
 
@@ -71,7 +71,7 @@ In this tutorial, we get data from a CSV file. Want to follow along? [Download t
 
     ![Blank report canvas](media/service-get-started/power-bi-service-blank-report.png)
 
-7. Notice there's an option for **Reading view** on the top navigation bar. Because you have this option, that means you're currently in Editing view. A great way to get familiar with the report editor is to [take a tour](service-the-report-editor-take-a-tour.md).
+7. Notice there's an option for **Reading view** on the top nav pane. Because you have this option, that means you're currently in Editing view. A great way to get familiar with the report editor is to [take a tour](service-the-report-editor-take-a-tour.md).
 
     ![Reading view option](media/service-get-started/power-bi-service-reading-view.png)
 
@@ -113,13 +113,13 @@ Now that you've connected to data, start exploring.  When you've found something
    
 8. Select the new tile on your dashboard to return to the report. Power BI returns you to the report in Reading view. 
 
-1. To switch back to Editing view, select **More options** (...) in the top navigation bar > **Edit**. Back in Editing view, you can continue to explore and pin tiles.
+1. To switch back to Editing view, select **More options** (...) in the top nav pane > **Edit**. Back in Editing view, you can continue to explore and pin tiles.
 
     ![Select Edit to edit the report](media/service-get-started/power-bi-service-edit-report.png)
 
 ## Step 3: Explore with Q&A
 
-For a quick exploration of your data, try asking a question in the Q&A question box. Q&A creates natural-language queries about your data. In a dashboard, the Q&A box is at the top (**Ask a question about your data**). In a report, it's in the top navigation bar (**Ask a question**).
+For a quick exploration of your data, try asking a question in the Q&A question box. Q&A creates natural-language queries about your data. In a dashboard, the Q&A box is at the top (**Ask a question about your data**). In a report, it's in the top nav pane (**Ask a question**).
 
 1. To go back to the dashboard, select **My workspace** in the black **Power BI** bar.
 
@@ -196,7 +196,7 @@ Here's one last interaction to observe, before you start making your own dashboa
 ## Clean up resources
 Now that you've finished the tutorial, you can delete the dataset, report, and dashboard. 
 
-1. In the left navigation bar, make sure you're in **My Workspace**.
+1. In the nav pane, make sure you're in **My Workspace**.
 2. Select the **Datasets** tab and locate the dataset you imported for this tutorial.  
 3. Select **More options** (...) > **Delete**.
 
