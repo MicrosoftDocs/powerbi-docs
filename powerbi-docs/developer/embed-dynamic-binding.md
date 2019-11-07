@@ -23,7 +23,7 @@ The report and the dataset don't need to reside in the same workspace. Both work
 
 ## Generating a token
 
-Dymanic binding is supported for both *Embedding for your organization* and *Embedding for your customers* embedding scenarios. The table below describes the considerations for each solution.
+Dymanic binding is supported for both *Embedding for your organization* and *Embedding for your customers* scenarios. The table below describes the considerations for each solution.
 
 As part of the embedding process, make sure you [adjust the config object](#adjusting-the-config-object).
 
