@@ -65,7 +65,7 @@ The following list details a few examples of the data sources to which **Power B
 | Power BI Desktop generic connector | External data source | Link for more information |
 | --- | --- | --- |
 | OLE DB |SAS OLE DB |[SAS provider for OLE DB](https://support.sas.com/downloads/package.htm?pid=648) |
-| OLE DB |Sybase OLE DB |[Sybase provider for OLE DB](https://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc35888.1550/doc/html/jon1256941734395.html) |
+| OLE DB |Sybase OLE DB |[Sybase provider for OLE DB](http://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc35888.1550/doc/html/jon1256941734395.html) |
 
 ## Data sources accessible through OData
 The **OData** connector in **Power BI Desktop** lets you import data from any **OData** URL simply by typing in or pasting the **OData** URL. You can add multiple URL parts by typing or pasting those links in the text boxes provided in the **OData Feed** window.
