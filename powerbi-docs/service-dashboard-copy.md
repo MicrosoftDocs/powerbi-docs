@@ -2,7 +2,6 @@
 title: Create a copy of a Power BI dashboard
 description: 'How to duplicate a Power BI dashboard '
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 

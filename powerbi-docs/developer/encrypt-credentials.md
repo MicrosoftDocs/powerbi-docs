@@ -3,7 +3,6 @@ title: Encrypt credentials
 description: Walkthrough - Encrypt credentials for On-prem Gateway datasources
 author: mahirdiab
 ms.author: madia
-manager: eligr
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

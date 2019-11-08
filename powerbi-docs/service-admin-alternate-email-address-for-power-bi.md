@@ -2,7 +2,6 @@
 title: Use an alternate email address
 description: Use an alternate email address
 author: mgblythe
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service

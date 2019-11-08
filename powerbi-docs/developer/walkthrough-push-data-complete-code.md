@@ -3,7 +3,6 @@ title: Complete code listing
 description: Walkthrough to push data - Complete code listing
 author: rkarlin
 ms.author: rkarlin
-manager: kfollis
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer

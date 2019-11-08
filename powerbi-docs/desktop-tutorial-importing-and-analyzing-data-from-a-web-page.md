@@ -2,7 +2,6 @@
 title: 'Tutorial: Import and analyze data from a web page'
 description: 'Tutorial: Import and analyze data from a web page using Power BI Desktop'
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18

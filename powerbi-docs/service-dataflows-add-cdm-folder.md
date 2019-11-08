@@ -2,7 +2,6 @@
 title: Add a CDM folder to Power BI as a dataflow
 description: Configure a workspace to store its dataflow definition and data files in Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Use SAP HANA in Power BI Desktop
 description: Use SAP HANA in Power BI Desktop
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18

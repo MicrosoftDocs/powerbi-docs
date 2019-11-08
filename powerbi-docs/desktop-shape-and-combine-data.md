@@ -2,7 +2,6 @@
 title: "Tutorial: Shape and combine data in Power BI Desktop"
 description: In this tutorial, you learn how to shape and combine data in Power BI Desktop
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

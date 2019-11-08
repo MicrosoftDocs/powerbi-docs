@@ -3,7 +3,6 @@ title: Ways to share your work in Power BI
 description: In Power BI you can collaborate on and share dashboards, reports, tiles, and apps in different ways. Each way has its advantages.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfollis
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service

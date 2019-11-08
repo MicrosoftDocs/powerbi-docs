@@ -3,7 +3,6 @@ title: What can I do with the Power BI API
 description: What can I do with the Power BI API
 author: rkarlin
 ms.author: rkarlin
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

@@ -2,7 +2,6 @@
 title: Close your Power BI account
 description: If you don't want to use Power BI any longer, you can close your Power BI account.
 author: mgblythe
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin

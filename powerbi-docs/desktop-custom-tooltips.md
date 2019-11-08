@@ -2,7 +2,6 @@
 title: Customizing tooltips in Power BI Desktop
 description: Create custom tooltips for visuals using drag-and-drop
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

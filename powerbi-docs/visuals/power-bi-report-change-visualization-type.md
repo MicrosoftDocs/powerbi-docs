@@ -2,7 +2,6 @@
 title: Change the type of visualization in a report
 description: Change the type of report visualization in the Power BI service and Power BI Desktop
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

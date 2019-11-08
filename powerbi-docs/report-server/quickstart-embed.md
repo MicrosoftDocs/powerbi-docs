@@ -8,7 +8,6 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-manager: kfollis
 #Customer intent: As a Power BI Report Server developer, I want to embed my PBI RS reports in an iFrame, so that I can show my reports in other applications.
 ---
 # Embed a Power BI Report Server report using an iFrame in SharePoint Server

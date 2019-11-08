@@ -3,7 +3,6 @@ title: "Paginated reports in Power BI: FAQ"
 description: This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. 
 author: maggiesMSFT
 ms.author: maggies
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder

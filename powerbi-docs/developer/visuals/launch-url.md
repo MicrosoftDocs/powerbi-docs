@@ -3,7 +3,6 @@ title: Create a launch URL
 description: This article describes how can open URL on new tab by using Power BI Visuals.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

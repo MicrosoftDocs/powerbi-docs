@@ -2,7 +2,6 @@
 title: 'Procurement Analysis sample: Take a tour'
 description: 'Procurement Analysis sample for Power BI: Take a tour'
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: amac
 
 ms.service: powerbi

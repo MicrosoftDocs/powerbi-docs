@@ -2,7 +2,6 @@
 title: Cognitive Services in Power BI
 description: Learn how to use Cognitive Services with Power BI
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
