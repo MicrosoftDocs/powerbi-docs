@@ -162,4 +162,4 @@ Here is a list of the visualizations and the customization options that are avai
 
 - [Basic concepts for Power BI service consumers](../consumer/end-user-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

@@ -23,7 +23,7 @@ This article gives a quick introduction to creating a visualization in a report.
 
 ## Prerequisites
 
-This tutorial uses the [Sales & marketing PBIX file](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
+This tutorial uses the [Sales & marketing PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
 
 1. From the upper left section of the Power BI Desktop menu bar, select **File** > **Open**
    

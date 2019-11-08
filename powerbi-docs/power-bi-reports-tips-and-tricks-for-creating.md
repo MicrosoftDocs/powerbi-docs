@@ -2,7 +2,7 @@
 title: Tips for creating stunning reports
 description: Tips and tricks for creating reports in Power BI service and Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: 'willthom'
 
 ms.service: powerbi
@@ -111,12 +111,12 @@ Let's look at an example:
 
 If we load data sets from of active customer support requests and another dataset of work items that have schemas as follows:
 
-> CustomerInicdents: {IncidentID, CustomerName, IssueName, OpenedDate, Status}
+> CustomerIncidents: {IncidentID, CustomerName, IssueName, OpenedDate, Status}
 > WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName }
 >
 >
 
-When we want to track all incidents and workitems that relate to a specific a CustomerName we cannot simply create a relationship between these two datasets.  Some WorkItems may not be related to a CustomerName, so that field would be blank or NULL.  There might be multiple records in WorkItems and CustomerIncidents for any given CustomerName.  
+When we want to track all incidents and work items that relate to a specific a CustomerName we cannot simply create a relationship between these two datasets.  Some WorkItems may not be related to a CustomerName, so that field would be blank or NULL.  There might be multiple records in WorkItems and CustomerIncidents for any given CustomerName.  
 
 #### Creating relationships in Power BI Desktop when the data has null or blank values
 Often data sets contain columns with null or blank values.  This can cause problems when trying to use relationships.  You have essentially two options for addressing the issues.  You can remove the rows that have null or blank values.  You can do this using either the filter feature in the query tab or if you're merging queries, select the "keep only matching rows" option. Alternatively, you can replace the null or blank values with values that work in relationships, typically strings like "NULL" and "(Blank)".   There's no right approach here - Filtering out rows at the query stage removes rows and can affect summary statistics and calculations.  The latter approach preserves that data rows but can make unrelated rows appear related in the model leading to miscalculations.  If you adopt the latter solution ensure you use filters at the View/Chart where appropriate to ensure you're getting accurate results.  Most importantly, evaluate which rows are kept/removed and understand overall impact on the analysis..  
@@ -161,12 +161,9 @@ DAX is the calculations formula language in Power BI Desktop.  It's optimized fo
 
 [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx)
 
-[DAX Resource Center](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+[DAX Resource Center](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 
 ## Power BI service *and* Power BI Desktop
-
-### Read the whitepaper: [Principles for designing Power BI reports](visuals/power-bi-visualization-best-practices.md)
-This paper provides best practices for designing reports in Power BI. Starting with planning, it discusses principles of design that you can apply to your reports and to the pages and individual visuals that make up that report. Many of these best practices apply to dashboard design as well.
 
 ### Read and/or watch "How to design visually stunning reports (and dashboards) in Power BI"
 Community member Miguel Myers is a Data Scientist as well as a Graphic Designer.
@@ -224,4 +221,4 @@ A few of our favorite books include:
 
 [Reports in Power BI](consumer/end-user-reports.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

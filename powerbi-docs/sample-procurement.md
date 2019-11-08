@@ -2,7 +2,7 @@
 title: 'Procurement Analysis sample: Take a tour'
 description: 'Procurement Analysis sample for Power BI: Take a tour'
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: amac
 
 ms.service: powerbi
@@ -54,11 +54,11 @@ Before you can use the sample, you must first download it as a [content pack](#g
   
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the Procurement Analysis sample as a [.pbix file](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop. 
+Alternatively, you can download the Procurement Analysis sample as a [.pbix file](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop. 
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529784). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
+If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529784). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
 
 
 ## Spending trends
@@ -95,7 +95,7 @@ Let’s explore the spending areas in Mexico.
       ![Indirect Goods & Services drill down for Mexico](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Select the up arrow on the upper-left corner of the chart to drill back up.
 4. Select the drill-down arrow again to turn drill down off.  
-5. In the top navigation bar, select **Procurement Analysis Sample** to return to the dashboard.
+5. In the top nav pane, select **Procurement Analysis Sample** to return to the dashboard.
 
 ## Evaluate different cities
 We can use highlighting to evaluate different cities.

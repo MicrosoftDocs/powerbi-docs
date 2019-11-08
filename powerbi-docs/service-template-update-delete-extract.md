@@ -2,7 +2,7 @@
 title: Update, delete, and extract a Power BI template app
 description: How to update, delete and extract template app.
 author: teddybercovitz
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service

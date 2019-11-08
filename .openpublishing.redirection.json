@@ -561,6 +561,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/visuals/power-bi-visualization-best-practices.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-report-visualizations",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/power-bi-visualization-card.md", 
             "redirect_url": "/power-bi/visuals/power-bi-visualization-card",
             "redirect_document_id": true
@@ -1014,6 +1019,96 @@
             "source_path": "powerbi-docs/desktop-accessibility.md",
             "redirect_url": "/power-bi/desktop-accessibility-overview",
             "redirect_document_id": false
-        }        
+        },
+        
+       {
+
+        "source_path": "powerbi-docs/service-connect-to-azure-consumption-insights.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-circuit-id.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-ax.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-crm.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-nav.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-stripe.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-tygraph.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-uservoice.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-ziosk.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    }        
     ]
 }

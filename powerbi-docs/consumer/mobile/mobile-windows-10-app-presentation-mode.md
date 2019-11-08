@@ -2,7 +2,7 @@
 title: View presentation mode on Surface Hub, Windows 10 - Power BI
 description: Read about displaying Power BI reports in Surface Hub, and displaying Power BI dashboards, reports, and tiles in full-screen mode on Windows 10 devices.
 author: mshenhav
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -51,5 +51,5 @@ You can undock the toolbar and drag it to locate it anywhere on the screen. This
 
 ## Next steps
 * [Display dashboards and reports in full-screen mode from the Power BI service](../end-user-focus.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

@@ -3,7 +3,7 @@ title: Edit SAP variables in the Power BI service (preview)
 description: Azure and Power BI
 author: Sujata994
 ms.author: sunaraya
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -26,7 +26,7 @@ There are a few requirements for using the SAP edit variables feature. The follo
 
 **New Filter Experience required** – you must have the [new filter experience](power-bi-report-filter.md) enabled for your report. Here's how you can enable it for your report in Power BI Desktop:
 - In Power BI Desktop, select **File** > **Options and Settings** > **Options**
-- In the left navigation bar, under **Current file**, select **Report settings**.
+- In the nav pane, under **Current file**, select **Report settings**.
 - Under **Filtering experience**, select **Enable the updated filter pane**.
 
 **DirectQuery connections required** – you must be connecting to the SAP data source using DirectQuery. Import connections aren't supported.

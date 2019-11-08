@@ -2,7 +2,7 @@
 title: Import and display KPIs in Power BI
 description: Import and display KPIs
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

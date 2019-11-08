@@ -3,7 +3,7 @@ title: Frequently asked questions about Power BI Embedded
 description: Browse a list of frequently asked questions and answers about Power BI Embedded.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -13,7 +13,7 @@ ms.date: 05/27/2019
 
 # Frequently asked questions about Power BI Embedded
 
-* If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
+* If you have other questions, [try asking the Power BI Community](https://community.powerbi.com/).
 * Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 
 ## General
@@ -357,4 +357,4 @@ You can learn how to edit your Power BI data [here](https://docs.microsoft.com/p
 
 For more information, see [Troubleshooting your embedded application](embedded-troubleshoot.md).
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

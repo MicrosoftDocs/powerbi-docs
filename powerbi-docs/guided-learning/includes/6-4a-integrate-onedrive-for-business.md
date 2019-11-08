@@ -8,7 +8,7 @@ To connect to a PBIX (Power BI Desktop) file on OneDrive for Business, sign in t
 
 ![](media/6-4a-integrate-onedrive-for-business/6-4a_2.png)
 
-Your content appears in the left-hand side navigation bar.
+Your content appears in the left-hand side nav pane.
 
 ![](media/6-4a-integrate-onedrive-for-business/6-4a_3.png)
 

@@ -2,7 +2,7 @@
 title: Using Analysis Services Tabular data in Power BI Desktop
 description: Analysis Services Tabular data in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

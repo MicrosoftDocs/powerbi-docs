@@ -84,7 +84,7 @@ Also called data classification. This option can be turned on by Power BI admins
 A method of connecting to SQL Server Analysis Services data models. Also called a live connection.
 
 **container**
-The areas on the nav bar are *containers*. In the nav bar you'll find containers for: Favorites, Recent, Apps, Shared with me, and Home. 
+The areas on the nav pane are *containers*. In the nav pane you'll find containers for: Favorites, Recent, Apps, Shared with me, and Home. 
 
 **content**
 Content for the Power BI service is generally dashboards, reports, and apps. It can also include workbooks and datasets.
@@ -208,14 +208,14 @@ Key performance indicators. A type of visual.
 ## L
 
 **left navigation (left nav)**
-This has been replaced with **nav bar** but may still appear in some documentation.    
+This has been replaced with **nav pane** but may still appear in some documentation.    
 The controls along the left edge of Power BI service.
 
-First instance: left navigation
-Subsequent mentions or tight spaces: left nav
+First instance: navigation pane
+Subsequent mentions or tight spaces: nav pane
 
 **list page** or **content list**
-One of the section pages for the elements in the left navigation. For example, Favorites, Recents, My workspace, etc.
+One of the section pages for the elements in the nav pane. For example, Favorites, Recents, My workspace, etc.
 
 ## M
 
@@ -233,14 +233,14 @@ The workspace for each Power BI customer to create content. If they want to bund
 **native**
 Included with the product. For example, Power BI comes with a set of *native* visualization types. But you can also import other types, such as custom visuals.
 
-**navigation bar** or **nav bar**
+**nav pane** or **nav pane**
 The controls along the left edge of the Power BI service.
 
-First instance: navigation bar
-Subsequent mentions or tight spaces: nav bar
+First instance: nav pane
+Subsequent mentions or tight spaces: nav pane
 
-**navigation pane**
-See **navigation bar**
+**nav pane**
+See **nav pane**
 
 **notification**
 Messages sent by and to the Power BI Notification Center.  
@@ -340,7 +340,7 @@ Read-only view for reports (as opposed to Editing View).
 The ability to stream data and update dashboards in real time from sources such as sensors, social media, usage metrics, and anything else from which time-sensitive data can be collected or transmitted.  
 
 **Recent**
-The container in the left nav that holds all the individual artifacts that were accessed last.
+The container in the nav pane that holds all the individual artifacts that were accessed last.
 
 **related content**
 Shows the individual pieces of content that contribute to the current content. For example, for a dashboard, you can see the reports and datasets providing the data and visualizations on the dashboard.   
@@ -378,7 +378,7 @@ In Power BI, sharing typically means directly sharing an individual artifact (a 
 On mobile devices, share can refer to native OS share functionality, such as "annotate and share."  
 
 **Shared with me**
-The container in the left nav that holds all the individual artifacts that were directly shared by another Power BI user.
+The container in the nav pane that holds all the individual artifacts that were directly shared by another Power BI user.
 
 **snapshot**
 

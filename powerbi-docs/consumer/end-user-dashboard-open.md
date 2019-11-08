@@ -35,7 +35,7 @@ Power BI Pro is required for both sharing a dashboard and viewing a shared dashb
 
 
 
-You may find dashboards in all of the containers in the left navigation bar. 
+You may find dashboards in all of the containers in the nav pane. 
 
 ![dashboard icon](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
 

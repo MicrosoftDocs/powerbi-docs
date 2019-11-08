@@ -2,7 +2,7 @@
 title: Connect to a Google BigQuery database in Power BI Desktop
 description: Easily connect to and use Google BigQuery in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

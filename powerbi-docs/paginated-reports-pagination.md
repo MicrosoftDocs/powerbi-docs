@@ -3,7 +3,7 @@ title: "Pagination in Power BI paginated reports"
 description: In this article, you learn about supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
@@ -84,4 +84,4 @@ ms.date: 07/22/2019
 
 [View a paginated report in the Power BI service](paginated-reports-view-power-bi-service.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

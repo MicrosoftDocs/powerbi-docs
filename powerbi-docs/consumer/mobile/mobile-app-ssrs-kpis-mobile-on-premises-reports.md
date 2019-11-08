@@ -2,7 +2,7 @@
 title: View on-premises reports and KPIs in the Power BI mobile apps
 description: The Power BI mobile apps offer live, touch-enabled mobile access to your on-premises business information in SQL Server Reporting Services and Power BI Report Server.
 author: mshenhav
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -63,7 +63,7 @@ You can view on-premises Power BI reports, Reporting Services mobile reports, an
 
 1. Fill in the server address and your user name and password. Use this format for the server address:
    
-     `http://<servername>/reports`
+     `https://<servername>/reports`
    
      OR
    
@@ -73,9 +73,9 @@ You can view on-premises Power BI reports, Reporting Services mobile reports, an
    
     ![Connect to server dialog box](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-connect-to-server-dialog.png)
 5. (Optional) Under **Advanced options**, you can give the server a friendly name, if you'd like.
-6. Now you see the server in the left navigation bar--in this example, called "power bi report server."
+6. Now you see the server in the nav pane--in this example, called "power bi report server."
    
-   ![Report server in the left navigation pane](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
+   ![Report server in the nav pane](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
 
 ## Connect to an on-premises report server in iOS
 
@@ -116,18 +116,18 @@ You can mark KPIs and reports as favorites on the web portal, and then view them
 
 * Tap **Favorites**.
   
-   ![Favorites in the left navigation pane](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
+   ![Favorites in the nav pane](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
   
    Your favorite KPIs and reports from the web portal are all on this page, along with Power BI dashboards in the Power BI service:
   
    ![Power BI reports and dashboard in the Favorites page](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-favorites.png)
 
 ## Remove a connection to a report server
-1. At the bottom of the left navigation bar, tap **Settings**.
+1. At the bottom of the nav pane, tap **Settings**.
 2. Tap the server name you don't want to be connected to.
 3. Tap **Remove Server**.
 
 ## Next steps
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)  
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

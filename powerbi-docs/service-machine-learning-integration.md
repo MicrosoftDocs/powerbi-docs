@@ -2,7 +2,7 @@
 title: Azure Machine Learning integration in Power BI
 description: Learn how to use Machine Learning with Power BI
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -40,7 +40,7 @@ The steps in this article describe how to grant a Power BI user access to a mode
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-2. Go to the **Subscriptions** page. You can find the **Subscriptions** page through the **All Services** list in the left navigation menu of the Azure portal.
+2. Go to the **Subscriptions** page. You can find the **Subscriptions** page through the **All Services** list in the nav pane menu of the Azure portal.
 
     ![Azure subscriptions page](media/service-machine-learning-integration/machine-learning-integration_01.png)
 
@@ -65,7 +65,7 @@ The steps in this article describe how to grant a Power BI user access to a mode
 
 Data scientists primarily use Python to develop, and even deploy, their machine learning models for the Machine Learning Service.  Unlike the Machine Learning Studio, which helps automate the task of creating a schema file for the model, in the case of the Machine Learning Service, the data scientist must explicitly generate the schema file using Python.
 
-This schema file must be included in the deployed web service for Machine Learning Service models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. Please see the subsection on (Optional) Automatic Swagger schema generation in the Deploy models with the Azure Machine Learning service documentation. The link includes the example entry script with the statements for the schema generation. 
+This schema file must be included in the deployed web service for Machine Learning Service models. To automatically generate the schema for web service, you must provide a sample of the input/output in the entry script for the deployed model. Please see the subsection on [(Optional) Automatic Swagger schema generation in the Deploy models with the Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation) service documentation. The link includes the example entry script with the statements for the schema generation. 
 
 Specifically, the *\@input_schema* and *\@output_schema* functions in the entry script reference the input and output sample formats in the *input_sample* and *output_sample* variables, and use these samples to generate an OpenAPI (Swagger) specification for the web service during deployment.
 
@@ -84,7 +84,7 @@ Selecting the **Edit** button opens the Power Query Editor for the entities in y
 
 ![Power Query Editor](media/service-machine-learning-integration/machine-learning-integration_06.png)
 
-Select the **AI Insights** button in the ribbon, and then select the _Azure Machine Learning Models_ folder from the left navigation menu. All the Azure ML models to which you have access are listed here as Power Query functions. Also, the input parameters for the Azure ML model are automatically mapped as parameters of the corresponding Power Query function.
+Select the **AI Insights** button in the ribbon, and then select the _Azure Machine Learning Models_ folder from the nav pane menu. All the Azure ML models to which you have access are listed here as Power Query functions. Also, the input parameters for the Azure ML model are automatically mapped as parameters of the corresponding Power Query function.
 
 To invoke an Azure ML model, you can specify any of the selected entity's columns as an input from the drop-down. You can also specify a constant value to be used as an input by toggling the column icon to the left of the input dialog.
 

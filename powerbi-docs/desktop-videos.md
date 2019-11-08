@@ -2,7 +2,7 @@
 title: Power BI Desktop videos
 description: Power BI Desktop videos
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -14,7 +14,7 @@ ms.author: davidi
 LocalizationGroup: Get started
 ---
 # Power BI Desktop videos
-We have a [YouTube channel for Power BI](http://www.youtube.com/playlist?list=PL1N57mwBHtN2q1WbU5O29rrn_A0lkVv9p)!
+We have a [YouTube channel for Power BI](https://www.youtube.com/playlist?list=PL1N57mwBHtN2q1WbU5O29rrn_A0lkVv9p)!
 
 The following list describes all available videos about Power BI Desktop. Select any of the links below to view the associated video.
 

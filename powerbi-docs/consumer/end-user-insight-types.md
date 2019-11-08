@@ -73,5 +73,5 @@ For data across a time series, detects when there are specific dates or times wi
 ## Next steps
 [Power BI insights](end-user-insights.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

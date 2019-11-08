@@ -3,7 +3,7 @@ title: Configure and manage capacities in Power BI Premium
 description: Learn how you can manage Power BI Premium and enable access to content for your entire organization.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -161,4 +161,4 @@ For more information, see [Install Power BI Report Server](report-server/install
 
 [Managing Premium capacities](service-premium-capacity-manage.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

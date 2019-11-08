@@ -2,7 +2,7 @@
 title: Use DirectQuery in Power BI Desktop
 description: Use DirectQuery, also called a Live connection, in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -66,7 +66,7 @@ The following three points should be taken into consideration when using **Direc
       The resultset of a query to external data source has exceeded
   
   This situation can occur with a simple chart that includes a very high cardinality column, with the aggregation option set to *Don’t Summarize*. The visual needs to only have columns with a cardinality below 1 million, or must have appropriate filters applied.
-* **Security** - All users who consume a published report connect to the back-end data source using the credentials entered after publication to the Power BI service. This is the same situation as data that is imported: all users see the same data, irrespective of any security rules defined in the backend source. Customers who want per-user security implemented with DirectQuery sources should use RLS. [Learn more about RLS](service-admin-rls.md).
+* **Security** - By default all users who consume a published report connect to the back-end data source using the credentials entered after publication to the Power BI service. This is the same situation as data that is imported: all users see the same data, irrespective of any security rules defined in the backend source. Customers who want per-user security implemented with DirectQuery sources should use either RLS or configure Kerberos constrained authentication against source. Kerberos is not available for all sources. [Learn more about RLS](service-admin-rls.md). [Learn more about Kerberos in DirectQuery](https://docs.microsoft.com/power-bi/service-gateway-sso-kerberos). 
 * **Supported features** - Not all features in **Power BI Desktop** are supported in **DirectQuery** mode, or have some limitations. In addition, there are some capabilities in the Power BI service (such as *Quick Insights*) that are not available for datasets using **DirectQuery**. As such, the limitation of such features when using **DirectQuery** should be taken into consideration when determining whether to use **DirectQuery**.   
 
 ## Publish to the Power BI service
@@ -84,7 +84,7 @@ Power BI displays the **Settings** window. From there, select the **Datasets** t
 
 Until credentials are supplied, opening a published report or exploring a dataset created with a **DirectQuery** connection to such data sources results in an error.
 
-For data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse** and **Redshift** that use DirectQuery, an **On-premises data gateway** must be installed and the data source must be registered to establish a data connection. You can [learn more about On-premises data gateway](http://go.microsoft.com/fwlink/p/?LinkID=627094).
+For data sources other than **Azure SQL Database**, **Azure SQL Data Warehouse** and **Redshift** that use DirectQuery, an **On-premises data gateway** must be installed and the data source must be registered to establish a data connection. You can [learn more about On-premises data gateway](https://go.microsoft.com/fwlink/p/?LinkID=627094).
 
 ## Next steps
 For more information about **DirectQuery**, check out the following resources:

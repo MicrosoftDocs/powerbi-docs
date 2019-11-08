@@ -2,7 +2,7 @@
 title: Build permission for shared datasets (preview)
 description: Learn how you can keep control of who has access to the data by using Build permission.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -98,4 +98,4 @@ You can remove Build permission. If you do, the people whose permissions you hav
 ## Next steps
 
 - [Use datasets across workspaces (Preview)](service-datasets-across-workspaces.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
