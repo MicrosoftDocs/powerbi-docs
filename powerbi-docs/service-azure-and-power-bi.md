@@ -3,7 +3,6 @@ title: Azure and Power BI
 description: Azure and Power BI
 author: davidiseminger
 ms.author: davidi
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service

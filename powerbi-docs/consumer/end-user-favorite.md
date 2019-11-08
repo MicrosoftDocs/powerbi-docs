@@ -2,7 +2,6 @@
 title: Favorites in the Power BI service (dashboards, reports, apps)
 description: Documentation on how to set dashboards, reports, and apps as favorites in the Power BI service
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 

@@ -2,7 +2,6 @@
 title: Get Power BI Desktop
 description: Download and install Power BI Desktop
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

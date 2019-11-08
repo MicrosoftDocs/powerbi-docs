@@ -2,7 +2,6 @@
 title: What's new in the Power BI service
 description: What's new in the Power BI service
 author: NikhilGaekwad-MSFT
-manager: kfollis
 ms.reviewer: 
 
 ms.service: powerbi

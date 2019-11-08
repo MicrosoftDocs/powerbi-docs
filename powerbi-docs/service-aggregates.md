@@ -2,7 +2,6 @@
 title: Work with aggregates (sum, average, and so on) in the Power BI service
 description: Learn how to change the aggregation in a chart (sum, average, maximum, and so on.) in the Power BI service.
 author: mgblythe
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service

@@ -3,7 +3,6 @@ title: Power BI Security
 description: Power BI Security. How Power BI relates to Azure Active Directory and other Azure services. This topic also includes a link to a white paper which goes more in-depth.
 author: davidiseminger
 ms.author: davidi
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin

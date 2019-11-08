@@ -2,7 +2,6 @@
 title: Model relationships in Power BI Desktop
 description: Introduce theory about model relationships in Power BI Desktop
 author: peter-myers
-manager: asaxton
 ms.reviewer: asaxton
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Learn which R packages are supported
 description: R packages that are supported and unsupported in Power BI
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18

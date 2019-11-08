@@ -2,7 +2,6 @@
 title: "The 'new look': Where did the actions go?"
 description: The Power BI service (app.powerbi.com) has a new look, and many actions have moved. This article features tables mapping the old locations to the new.
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -3,7 +3,6 @@ title: Embed with report web part in SharePoint Online
 description: With Power BI's new report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
 author: rkarlin
 ms.author: rkarlin
-manager: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

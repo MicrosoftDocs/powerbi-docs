@@ -4,7 +4,6 @@ description: This article walks through how to scale a Power BI Embedded capacit
 services: power-bi-embedded
 author: rkarlin
 ms.author: rkarlin
-manager: kfollis
 editor: ''
 tags: ''
 ms.service: power-bi-embedded

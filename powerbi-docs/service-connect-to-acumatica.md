@@ -2,7 +2,6 @@
 title: Connect to Acumatica with Power BI
 description: Acumatica for Power BI
 author: SarinaJoan
-manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

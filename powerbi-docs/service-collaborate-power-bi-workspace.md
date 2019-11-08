@@ -2,7 +2,6 @@
 title: Collaborate in a classic workspace
 description: Read about collaborating on Power BI Desktop files in your workspace, and with Office 365 services like sharing files on OneDrive for Business, conversations in Exchange, calendar, and tasks.
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: lukaszp
 
 ms.service: powerbi

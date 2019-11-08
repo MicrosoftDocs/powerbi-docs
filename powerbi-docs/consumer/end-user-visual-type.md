@@ -2,7 +2,6 @@
 title: Visual types in Power BI for consumers
 description: Visual types in Power BI service
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Use DirectQuery in Power BI Desktop
 description: Use DirectQuery, also called a Live connection, in Power BI Desktop
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

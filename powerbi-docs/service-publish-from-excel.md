@@ -2,7 +2,6 @@
 title: Publish to Power BI from Excel 2016
 description: Learn how to publish an Excel workbook to your Power BI site.
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

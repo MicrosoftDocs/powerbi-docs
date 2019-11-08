@@ -2,7 +2,6 @@
 title: 'Project Online: connect to data through Power BI Desktop'
 description: 'Project Online: connect to data through Power BI Desktop'
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18

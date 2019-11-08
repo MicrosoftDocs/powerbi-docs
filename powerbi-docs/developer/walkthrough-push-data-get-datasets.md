@@ -3,7 +3,6 @@ title: Get a dataset to add rows
 description: Walkthrough to push data - Get a dataset to add rows into a Power BI table
 author: rkarlin
 ms.author: rkarlin
-manager: kfollis
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
