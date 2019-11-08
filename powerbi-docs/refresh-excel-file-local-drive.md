@@ -2,7 +2,6 @@
 title: Refresh a dataset created from an Excel workbook - local
 description: Refresh a dataset created from an Excel workbook on a local drive
 author: mgblythe
-manager: kfollis
 ms.reviewer: kayu
 
 ms.service: powerbi

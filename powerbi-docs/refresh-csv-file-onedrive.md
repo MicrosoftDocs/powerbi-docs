@@ -2,7 +2,6 @@
 title: Refresh a dataset created from a .csv file on OneDrive
 description: Refresh a dataset created from a comma separated value (.csv) file on OneDrive
 author: mgblythe
-manager: kfollis
 ms.reviewer: kayu
 
 ms.custom: seodec18

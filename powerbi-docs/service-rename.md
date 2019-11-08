@@ -2,7 +2,6 @@
 title: Rename dashboards, reports, workspaces, report pages, datasets
 description: Rename almost anything in Power BI service.
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

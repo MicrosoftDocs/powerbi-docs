@@ -3,7 +3,6 @@ title: "Getting around in Report Design View for paginated reports"
 description: Report Design View in Report Builder is the design space for creating paginated reports that you can publish in the Power BI service.  
 author: maggiesMSFT
 ms.author: maggies
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder

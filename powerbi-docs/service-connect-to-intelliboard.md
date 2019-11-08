@@ -2,7 +2,6 @@
 title: Connect to IntelliBoard with Power BI
 description: IntelliBoard for Power BI
 author: SarinaJoan
-manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

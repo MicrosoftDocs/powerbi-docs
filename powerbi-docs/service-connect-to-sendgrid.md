@@ -2,7 +2,6 @@
 title: Connect to SendGrid with Power BI
 description: SendGrid for Power BI
 author: SarinaJoan
-manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

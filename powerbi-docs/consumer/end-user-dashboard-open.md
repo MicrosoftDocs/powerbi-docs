@@ -2,7 +2,6 @@
 title: View a Power BI dashboard
 description: Dashboards are a key feature of Power BI service, learn how to open and view a dashboard.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

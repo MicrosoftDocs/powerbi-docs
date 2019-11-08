@@ -2,7 +2,6 @@
 title: What's new in the mobile apps for Power BI
 description: What's new in the mobile apps for Power BI
 author: paulinbar
-manager: rkarlin
 ms.reviewer: ''
 
 ms.service: powerbi

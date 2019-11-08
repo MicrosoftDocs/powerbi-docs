@@ -2,7 +2,6 @@
 title: How Power BI ensures your content is up-to-date
 description: Learn how Power BI ensures you are working with the latest version of the data, report, dashboard, and app.
 author: mihart
-manager: kvivek
 ms.service: powerbi
 ms.custom:  
 ms.subservice: powerbi-consumer

@@ -2,7 +2,6 @@
 title: Connect to Mandrill with Power BI
 description: Mandrill for Power BI
 author: SarinaJoan
-manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: "The 'new look' of the Power BI service"
 description: The Power BI service (app.powerbi.com) has a new look. This article describes how to navigate reports using the new look. 
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

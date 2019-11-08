@@ -2,7 +2,6 @@
 title: Large datasets, data point limits, and data strategies
 description: Data limits for visuals and data reduction strategies
 author: mihart
-manager: kvivek
 ms.reviewer: 'amac'
 
 ms.service: powerbi

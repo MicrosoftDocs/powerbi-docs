@@ -2,7 +2,6 @@
 title: 'Tutorial: Combine data from Excel and an OData feed in Power BI Desktop'
 description: 'Tutorial: Combine data from Excel and an OData feed'
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

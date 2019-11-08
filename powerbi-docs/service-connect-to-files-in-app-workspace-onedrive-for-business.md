@@ -2,7 +2,6 @@
 title: Connect to files in OneDrive for a Power BI workspace
 description: Read about storing and connecting to your Excel, CSV, and Power BI Desktop files on the OneDrive for your Power BI workspace.
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: lukasz
 
 ms.service: powerbi

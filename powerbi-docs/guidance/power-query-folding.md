@@ -2,7 +2,6 @@
 title: The importance of query folding
 description: Understand the importance of Power Query query folding, and how to achieve it.
 author: peter-myers
-manager: asaxton
 ms.reviewer: asaxton
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Connect to QuickBooks Online with Power BI
 description: QuickBooks Online for Power BI
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Pin a tile from one dashboard to another dashboard
 description: Pin a tile from one dashboard to another dashboard
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Use gridlines and snap-to-grid in Power BI Desktop reports
 description: Use gridlines, snap-to-grid, z-order, alignment and distribution in Power BI Desktop reports
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18
