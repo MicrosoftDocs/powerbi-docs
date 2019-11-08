@@ -16,7 +16,7 @@ LocalizationGroup: Samples
 # What sample data is available to use with Power BI?
 Say you're new to Power BI and want to try it out but don't have any data.  Or maybe you have a dataset. Because you don't understand (yet) how Power BI works, you worry that you might somehow damage your dataset?
 
-No need to stress out! obviEnce ([www.obvience.com](https://www.obvience.com/)) and Microsoft have created samples for you to use until you feel more comfortable with Power BI.  The data is anonymized and represents different industries: finance, HR, sales, and more. Also, our online documentation uses these same samples in tutorials and examples, so you'll be able to follow along.      
+No need to stress out! obviEnce ([www.obvience.com](http://www.obvience.com/)) and Microsoft have created samples for you to use until you feel more comfortable with Power BI.  The data is anonymized and represents different industries: finance, HR, sales, and more. Also, our online documentation uses these same samples in tutorials and examples, so you'll be able to follow along.      
 
    ![Available samples](media/sample-datasets/power-bi-samples.png)
 
@@ -30,7 +30,7 @@ Before we get started, here are the legal guidelines for using the samples. Afte
 
 The workbooks do not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this workbook for your internal, reference purposes.
 
-The workbooks and related data are provided by obviEnce. [www.obvience.com](https://www.obvience.com)
+The workbooks and related data are provided by obviEnce. [www.obvience.com](http://www.obvience.com)
 
 ObviEnce is an ISV and an Intellectual Property (IP) Incubator focused on Microsoft Business Intelligence. ObviEnce works closely with Microsoft to develop best practices and thought leadership for jump-starting and deploying Microsoft Business Intelligence solutions.
 
