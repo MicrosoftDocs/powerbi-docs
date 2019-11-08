@@ -17,6 +17,8 @@ LocalizationGroup: Model your data
 
 **Power BI Desktop** works behind the scenes to automatically identify columns that represent dates, and then creates date hierarchies and other enabling metadata for your model, on your behalf. You can then use those built-in hierarchies when creating report features like visuals, tables, quick measures, slicers, and so on. Power BI Desktop does this by creating hidden tables on your behalf, which you can then use for your reports and DAX expressions.
 
+For more information about this automatic behavior, read the [Auto date/time in Power BI Desktop](desktop-auto-date-time.md) article.
+
 Many data analysts prefer to create their own date tables, which is fine. In **Power BI Desktop**, you can specify the table you want your model to use as its **date table**, and subsequently create date-related visuals, tables, quick measures, and so on, using that table's date data. When you specify your own date table, you control the date hierarchies created in your model, and use them in **quick measures** and other operations that use your model's date table. 
 
 ![](media/desktop-date-tables/date-tables_01.png)
@@ -69,8 +71,7 @@ When you specify your own **date table**, you need to make sure the data type is
 
 ## Next steps
 
-You might also be interested in the following articles.
+You might also be interested in the following articles:
 
+* [Auto date/time in Power BI Desktop](desktop-auto-date-time.md)
 * [Data types in Power BI Desktop](desktop-data-types.md)
-
- 
