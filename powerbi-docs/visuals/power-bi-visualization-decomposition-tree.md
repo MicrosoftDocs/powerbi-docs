@@ -125,12 +125,12 @@ The decomposition tree is not supported in the following scenarios:
 AI Splits are not supported in the following scenarios:  
 -	Azure Analysis Services
 -	Direct Query
--	Report Server
+-	Power BI Report Server
 -	Publish to Web
--	Complex measures 
+-	Complex measures & measures from extensions schemas in 'Analyze'
 
 Other preview limitations:
-- Power BI mobile  
+- Power BI Mobile  
 - Pinning to dashboard
 - Show Data functionality
 - Support inside Q&A
