@@ -2,7 +2,6 @@
 title: 'Tutorial: Explore Power BI Report Server in a VM'
 description: In this tutorial, you create a virtual machine with Power BI Report Server already installed, and explore the web portal.
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server

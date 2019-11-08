@@ -2,7 +2,6 @@
 title: Consuming reports in Power BI with accessibility tools
 description: Tools that make consuming reports in Power BI accessible
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Tips and tricks for color formatting in Power BI
 description: Tips and tricks for color formatting in Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

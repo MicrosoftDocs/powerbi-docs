@@ -3,7 +3,6 @@ title: Create an SSL certificate
 description: Work around instructions to create certificates manually for developer server
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

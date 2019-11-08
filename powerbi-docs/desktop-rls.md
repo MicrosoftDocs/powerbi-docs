@@ -3,7 +3,6 @@ title: Understand row-level security (RLS) with Power BI Desktop
 description: How to configure row-level security for imported datasets, and DirectQuery, within Power BI Desktop.
 author: davidiseminger
 ms.author: davidi
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop

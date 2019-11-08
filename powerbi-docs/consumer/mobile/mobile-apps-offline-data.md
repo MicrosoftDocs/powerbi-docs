@@ -2,7 +2,6 @@
 title: View your data offline in the Power BI mobile apps
 description: 'Read about an advantage of viewing Power BI in a mobile app rather than in a mobile browser: you can see your data even when you''re not connected to a network.'
 author: mshenhav
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Apply sensitivity labels in Power BI
 description: Learn how to apply data sensitivity labels in Power BI
 author: paulinbar
-manager: rkarlin
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: 'Human Resources sample: Take a tour'
 description: 'Human Resources sample for Power BI: Take a tour'
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: amac
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Data sources for Power BI
 description: Data sources for Power BI
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

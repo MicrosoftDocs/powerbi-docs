@@ -2,7 +2,6 @@
 title: Connect to SQL Sentry with Power BI
 description: SQL Sentry for Power BI
 author: SarinaJoan
-manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

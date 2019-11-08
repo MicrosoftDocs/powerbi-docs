@@ -2,7 +2,6 @@
 title: Use Q&A with live connections in Power BI
 description: Documentation for using Power BI Q&A natural language queries with live connections to Analysis Services data and the on-premises data gateway.
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: mihart
 
 ms.service: powerbi

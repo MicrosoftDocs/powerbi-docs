@@ -2,7 +2,6 @@
 title: Share a dashboard or report from the Power BI mobile apps
 description: Invite others to view your dashboards and reports by sharing links from the Power BI mobile apps. Learn how.
 author: mshenhav
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

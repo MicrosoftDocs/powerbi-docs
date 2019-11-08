@@ -2,7 +2,6 @@
 title: Create Power BI visuals using Python
 description: Create Power BI visuals using Python
 author: otarb
-manager: rajatt
 ms.reviewer: ''
 
 ms.service: powerbi

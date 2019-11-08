@@ -2,7 +2,6 @@
 title: Resolve Access and .XLS import issues in Power BI Desktop
 description: Resolve issues importing Access databases and .XLS spreadsheets in Power BI Desktop and Power Query
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18

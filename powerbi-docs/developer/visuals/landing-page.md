@@ -3,7 +3,6 @@ title: Add a landing page to your Power BI visuals
 description: This article describes how to add landing page to Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

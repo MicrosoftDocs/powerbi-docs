@@ -3,7 +3,6 @@ title: Power BI REST API Reference
 description: Power BI REST API Reference
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

@@ -2,7 +2,6 @@
 title: Quickstart Connect to data
 description: Connect to a data source in Power BI Desktop
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop

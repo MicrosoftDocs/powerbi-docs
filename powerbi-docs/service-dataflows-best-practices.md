@@ -2,7 +2,6 @@
 title: Best practices for Power BI dataflows
 description: Best practices for Power BI dataflows
 author: mohaali
-manager: mohaali
 ms.reviewer: ''
 
 ms.service: powerbi

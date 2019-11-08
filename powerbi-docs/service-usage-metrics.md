@@ -3,7 +3,6 @@ title: Monitor usage metrics for dashboards and reports
 description: How to view, save, and use usage metrics for Power BI dashboards and reports. 
 author: maggiesMSFT
 ms.author: maggies
-manager: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

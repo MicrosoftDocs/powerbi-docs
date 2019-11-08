@@ -3,7 +3,6 @@ title: Dynamic binding
 description: Learn how to embed, a report using dynamic binding.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-developer

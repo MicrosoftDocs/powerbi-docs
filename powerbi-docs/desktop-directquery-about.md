@@ -2,7 +2,6 @@
 title: Using DirectQuery in Power BI
 description: Understand using DirectQuery with Power BI
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Tips and Tricks for maps (including Bing Maps integration)
 description: 'Tips and Tricks for Power BI Map visualizations, visuals, locations, longitude and latitude, and how they work with Bing Maps. '
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ajTPGNpthcg
 

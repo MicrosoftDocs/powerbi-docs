@@ -2,7 +2,6 @@
 title: Publish from Power BI Desktop
 description: Publish from Power BI Desktop
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

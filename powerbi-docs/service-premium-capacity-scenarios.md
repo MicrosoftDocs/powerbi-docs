@@ -3,7 +3,6 @@ title: Microsoft Power BI Premium capacity scenarios
 description: Describes common Power BI Premium capacity scenarios.
 author: mgblythe
 ms.author: mblythe
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
