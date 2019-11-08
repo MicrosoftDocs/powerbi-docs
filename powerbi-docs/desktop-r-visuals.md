@@ -2,7 +2,7 @@
 title: Create Power BI visuals using R
 description: Create Power BI visuals using R
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

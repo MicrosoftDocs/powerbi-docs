@@ -2,7 +2,7 @@
 title: 'Quickstart: Explore dashboards and reports in the mobile apps'
 description: In this quickstart, you explore a sample dashboard and report in the Power BI mobile apps.
 author: mshenhav
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -31,7 +31,7 @@ Dashboards are a portal to your company's life cycle and processes. A dashboard 
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
 ### Install the Power BI for Android app
-[Download the Power BI for Android app](http://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
+[Download the Power BI for Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
 
 Power BI works on Android devices running the Android 5.0 operating system or later. To check your device, go to **Settings** > **About device** > **Android version**.
 
@@ -40,11 +40,11 @@ The first step in the quickstart is to download the Retail Analysis sample in th
 
 1. Open the Power BI service in your browser (app.powerbi.com) and sign in.
 
-1. Select the global navigation icon to open the left navigation.
+1. Select the global navigation icon to open the nav pane.
 
     ![global navigation icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-global-nav-icon.png)
 
-2. In the left navigation pane, select **Workspaces** > **My Workspace**.
+2. In the nav pane, select **Workspaces** > **My Workspace**.
 
     ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-my-workspace.png)
 
@@ -131,7 +131,7 @@ After you finish this quickstart, you can delete the Retail Analysis sample dash
 
 1. Open the Power BI service (app.powerbi.com) and sign in.
 
-2. In the left navigation pane, select **Workspaces** > **My Workspace**.
+2. In the nav pane, select **Workspaces** > **My Workspace**.
 
     Notice the yellow star indicating it's a favorite?
 

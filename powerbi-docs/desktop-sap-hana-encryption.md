@@ -2,7 +2,7 @@
 title: Enable encryption for SAP HANA
 description: Learn how to encrypt the connection when connecting to a HANA server from Power BI using SAML SSO.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18

@@ -46,7 +46,7 @@ When we use the term "content" in Power BI, we're referring to reports, dashboar
 
 An *app* is a Power BI content type that combines related dashboards and reports, all in one place. An app can have one or more dashboards and one or more reports, all bundled together. Apps are created by Power BI *designers* who distribute and share the apps with *consumers* like you. 
 
-One way to view your apps is to select **Apps** from the nav bar and choose an app to open.
+One way to view your apps is to select **Apps** from the nav pane and choose an app to open.
 
 ![The Get apps icon](./media/end-user-reading-view/power-bi-apps.png)
 
@@ -112,7 +112,7 @@ Visuals are made up of datapoints, and by hovering over a datapoint, you can vie
 ![hover to see details](media/end-user-reading-view/power-bi-hover.gif)
 
 ### Favorite a dashboard
-When you make content a *favorite*,  you'll be able to access it from the nav bar. The  nav bar is visible from just about every area of Power BI. Favorites are typically the dashboards, report pages, and apps that you visit most often.
+When you make content a *favorite*,  you'll be able to access it from the nav pane. The  nav pane is visible from just about every area of Power BI. Favorites are typically the dashboards, report pages, and apps that you visit most often.
 
 From the upper right corner of the Power BI service, select **Favorite** or, if not visible, select **More options** (...) and select **Favorite** from the dropdown. 
    
@@ -190,9 +190,9 @@ In addition to showing the data that is used to create a visual, you can also ex
 This has been a quick overview of just some of the things *consumers* can do with the Power BI service.  
 
 ## Clean up resources
-- If you connected to an app, from the left navbar, select **Apps** to open the Apps content list. Hover over the app to delete, and select the trashcan icon.
+- If you connected to an app, from the nav pane, select **Apps** to open the Apps content list. Hover over the app to delete, and select the trashcan icon.
 
-- If you imported or connected to a Power BI sample report, from the left navbar, open **My workspace**. Using the tabs at the top, locate the dashboard, report, and dataset, and select the trashcan icon for each.
+- If you imported or connected to a Power BI sample report, from the nav pane, open **My workspace**. Using the tabs at the top, locate the dashboard, report, and dataset, and select the trashcan icon for each.
 
 ## Next steps
 [Power BI for consumers](end-user-consumer.md)

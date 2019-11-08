@@ -2,7 +2,7 @@
 title: 'Organizational content packs: Access and copy'
 description: Read about creating copies of and troubleshooting access to organizational content packs in Power BI
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: lukaszp, kayu
 
 ms.service: powerbi
@@ -54,4 +54,4 @@ See [Manage, update, and delete organizational content packs](service-organizati
 ## Next steps
 * [Introduction to organizational content packs](service-organizational-content-pack-introduction.md)
 * [Create a group in Power BI](service-create-distribute-apps.md)
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)

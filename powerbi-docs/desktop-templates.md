@@ -2,7 +2,7 @@
 title: Using templates in Power BI Desktop
 description: Create and share templates in Power BI Desktop
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

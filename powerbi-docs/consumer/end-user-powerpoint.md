@@ -27,7 +27,7 @@ With Power BI, you can publish your report to Microsoft PowerPoint and easily cr
 Getting your **Power BI report** exported into **PowerPoint** is quick. Follow the steps outlined in the next section.
 
 ## Export your Power BI report to PowerPoint
-In the Power BI service, select a report to display it on the canvas. You can also select a report from your **Home** page, **Apps**, or any other container from the left navigation pane.
+In the Power BI service, select a report to display it on the canvas. You can also select a report from your **Home** page, **Apps**, or any other container from the nav pane.
 
 When the report you want to export to PowerPoint is displayed on the canvas, select **Export** > **PowerPoint** from the menu bar.
 
@@ -56,7 +56,7 @@ When you open the PowerPoint file that Power BI exported, you find a few cool an
 
 1. The first page of the slide deck includes the name of your report and a link so that you can **View in Power BI** the report on which the slide deck is based.
 2. You get some useful information about the report, too. **Last data refresh** shows the date and time on which the exported report is based. **Downloaded at** shows the date and time when the Power BI report was exported into a PowerPoint file.
-3. Each report page is a separate slide, as shown in the left navigation pane. 
+3. Each report page is a separate slide, as shown in the nav pane. 
 4. Your published report is rendered in the language according to your Power BI settings, or otherwise by the locale setting of your browser. To see or set your language preference, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**. For locale information, see [Supported languages and countries or regions for Power BI](../supported-languages-countries-regions.md).
 5. The PowerPoint presentation includes a cover slide with the exported time in the correct time zone.
 

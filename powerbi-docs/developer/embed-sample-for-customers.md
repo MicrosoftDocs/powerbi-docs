@@ -116,7 +116,7 @@ To get the **applicationId**, follow these steps:
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 
-2. In the left-hand navigation pane, select **All Services**, and select **App Registrations**.
+2. In the left-hand nav pane, select **All Services**, and select **App Registrations**.
 
     ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
@@ -183,7 +183,7 @@ To get the **ApplicationSecret**, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-2. In the left-hand navigation pane, select **All services** and then select **App registrations**.
+2. In the left-hand nav pane, select **All services** and then select **App registrations**.
 
     ![App registration search](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
@@ -456,4 +456,4 @@ In this tutorial, you've learned how to embed Power BI content into an applicati
 > [!div class="nextstepaction"]
 >[Embed for your organization](embed-sample-for-your-organization.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

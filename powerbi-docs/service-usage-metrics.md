@@ -3,7 +3,7 @@ title: Monitor usage metrics for dashboards and reports
 description: How to view, save, and use usage metrics for Power BI dashboards and reports. 
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -190,4 +190,4 @@ In addition to potential differences between usage metrics and audit logs, the f
 
 [Administering Power BI in the admin portal](service-admin-portal.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

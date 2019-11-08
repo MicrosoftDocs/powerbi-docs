@@ -36,5 +36,5 @@ More about [Visualizations in Power BI reports](power-bi-report-visualizations.m
 
 [Power BI - Basic Concepts](../consumer/end-user-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

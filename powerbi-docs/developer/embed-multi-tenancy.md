@@ -3,7 +3,7 @@ title: Manage multi-tenancy with Power BI embedded analytics
 description: Design a multi-tenant application with embedded analytics.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
+manager: kfollis
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer

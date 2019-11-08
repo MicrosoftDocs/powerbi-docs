@@ -2,7 +2,7 @@
 title: "Tutorial: Connect to on-premises data in SQL Server"
 description: Learn how to use SQL Server as a gateway data source, including how to refresh data.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: kayu
 
 ms.service: powerbi
@@ -128,7 +128,7 @@ In Power BI Desktop, you connected directly to your on-premises SQL Server datab
 
 Now you've connected your dataset in Power BI to your SQL Server database on-premises through a data gateway, follow these steps to configure a refresh schedule. Refreshing your dataset on a scheduled basis helps to ensure that your reports and dashboards have the most recent data.
 
-1. In the left navigation pane, open **My Workspace** \> **Datasets**. Select the ellipsis (**. . .**) for the **AdventureWorksProducts** dataset, then select **Schedule refresh**.
+1. In the nav pane, open **My Workspace** \> **Datasets**. Select the ellipsis (**. . .**) for the **AdventureWorksProducts** dataset, then select **Schedule refresh**.
 
     > [!NOTE]
     > Make sure you select the ellipsis for the **AdventureWorksProducts** dataset and not the ellipsis for the report with the same name. The context menu of the **AdventureWorksProducts** report does not include a **Schedule refresh** option.
@@ -146,7 +146,7 @@ Now you've connected your dataset in Power BI to your SQL Server database on-pre
 
 ## Perform an on-demand refresh
 
-Now that you've configured a refresh schedule, Power BI refreshes your dataset at the next scheduled time, within a margin of 15 minutes. If you want to refresh the data sooner, such as to test your gateway and data source configuration, perform an on-demand refresh by using the **Refresh Now** option in the dataset menu in the left navigation pane. On-demand refreshes don't affect the next scheduled refresh time, but they count against the daily refresh limit, mentioned in the previous section.
+Now that you've configured a refresh schedule, Power BI refreshes your dataset at the next scheduled time, within a margin of 15 minutes. If you want to refresh the data sooner, such as to test your gateway and data source configuration, perform an on-demand refresh by using the **Refresh Now** option in the dataset menu in the nav pane. On-demand refreshes don't affect the next scheduled refresh time, but they count against the daily refresh limit, mentioned in the previous section.
 
 For illustration purposes, simulate a change to the sample data by updating the DimProduct table in the AdventureWorksDW database using SQL Server Management Studio (SSMS).
 
@@ -160,7 +160,7 @@ WHERE EnglishProductName ='Road-250 Red, 58'
 
 Now follow these steps so the updated data can flow through the gateway connection to the dataset and into the reports in Power BI.
 
-1. In the Power BI Service, in the left navigation pane, select and expand **My Workspace**.
+1. In the Power BI Service, in the nav pane, select and expand **My Workspace**.
 
 2. Under **Datasets**, for the **AdventureWorksProducts** dataset, select the ellipsis (**. . .**) then select **Refresh now**.
 

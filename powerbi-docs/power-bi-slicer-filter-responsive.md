@@ -2,7 +2,7 @@
 title: Create a responsive slicer you can resize in Power BI
 description: Learn how to create a responsive slicer you can resize to fit your report
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -77,4 +77,4 @@ You can follow the same steps to make a time or range slicer responsive. After y
 ## Next steps
 
 - [Slicers in the Power BI service](visuals/power-bi-visualization-slicers.md)
-- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -2,7 +2,7 @@
 title: Manage your data source - SQL
 description: How to manage the on-premises data gateway and data sources that belong to that gateway.
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -77,5 +77,5 @@ If you're listed in the **Users** tab of the data source configured within the g
 * [Troubleshoot gateways - Power BI](service-gateway-onprem-tshoot.md)
 * [Use Kerberos for single sign-on (SSO) from Power BI to on-premises data sources](service-gateway-sso-kerberos.md)
 
-More questions? Try asking the [Power BI Community](http://community.powerbi.com/).
+More questions? Try asking the [Power BI Community](https://community.powerbi.com/).
 

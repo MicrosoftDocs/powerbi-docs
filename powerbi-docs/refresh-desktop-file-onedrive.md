@@ -2,7 +2,7 @@
 title: Refresh a dataset from OneDrive or SharePoint Online
 description: Refresh a dataset created from a Power BI Desktop file on OneDrive, or SharePoint Online
 author: mgblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: kayu
 
 ms.custom: seodec18
@@ -75,5 +75,5 @@ Sometimes refreshing data may not go as expected. You'll typically run into data
 
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-More questions? Try asking the [Power BI Community](http://community.powerbi.com/).
+More questions? Try asking the [Power BI Community](https://community.powerbi.com/).
 
