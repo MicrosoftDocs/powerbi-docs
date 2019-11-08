@@ -2,7 +2,6 @@
 title: Configure workspace dataflow settings
 description: Configure a workspace in Power BI to store its dataflow definition and data files in Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

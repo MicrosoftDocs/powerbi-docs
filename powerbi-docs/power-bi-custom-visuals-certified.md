@@ -3,7 +3,6 @@ title: Certified Power BI Power BI visuals
 description: Requirements and process to submit a custom visual for certification. And a list of already certified Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ""
 featuredvideoid: ''
 ms.service: powerbi

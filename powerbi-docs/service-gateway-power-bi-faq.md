@@ -2,7 +2,6 @@
 title: On-premises data gateway FAQ - Power BI
 description: This article is the on-premises data gateway FAQ for Power BI. This article collects frequently asked questions into one spot for the gateway used in Power BI.
 author: mgblythe
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

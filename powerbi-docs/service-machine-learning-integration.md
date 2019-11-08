@@ -2,7 +2,6 @@
 title: Azure Machine Learning integration in Power BI
 description: Learn how to use Machine Learning with Power BI
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

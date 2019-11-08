@@ -2,7 +2,6 @@
 title: Use personal gateways in Power BI
 description: Provides information about on-premises data gateway (personal mode) for Power BI that individuals can use for connecting to on-premises data.
 author: mgblythe
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

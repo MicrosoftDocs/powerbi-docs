@@ -2,7 +2,6 @@
 title: Learn about dataflows in Power BI
 description: Learn how dataflows work in Power BI
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

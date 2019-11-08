@@ -2,7 +2,6 @@
 title: 'Create a report from a dataset'
 description: Create a Power BI report from a dataset.
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

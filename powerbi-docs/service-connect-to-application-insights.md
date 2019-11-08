@@ -2,7 +2,6 @@
 title: Connect to Application Insights Connect to  Power BI
 description: Application Insights for Power BI
 author: SarinaJoan
-manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

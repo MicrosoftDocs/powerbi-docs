@@ -2,7 +2,6 @@
 title: Interact with a report in Editing view
 description: Interact with a report in report Editing view in Power BI service
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

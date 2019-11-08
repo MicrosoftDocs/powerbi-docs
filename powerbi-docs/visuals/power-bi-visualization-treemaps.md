@@ -2,7 +2,6 @@
 title: Treemaps in Power BI
 description: 'Treemaps in Power BI'
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi

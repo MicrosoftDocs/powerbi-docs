@@ -2,7 +2,6 @@
 title: Use the Power BI Q&A visual
 description: How to set up the Power BI Q&A visual
 author: mihart
-manager: mohaali
 
 ms.service: powerbi
 ms.subservice: powerbi-service

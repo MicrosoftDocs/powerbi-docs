@@ -2,7 +2,6 @@
 title: 'Tutorial: Connect to a GitHub repo with Power BI'
 description: In this tutorial you connect to real data in the GitHub service with Power BI, and Power BI automatically creates dashboards and reports.
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: SarinaJoan
 
 ms.service: powerbi

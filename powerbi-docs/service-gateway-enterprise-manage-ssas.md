@@ -2,7 +2,6 @@
 title: Manage your data source - Analysis Services
 description: How to manage the on-premises data gateway and data sources that belong to that gateway. This is for Analysis Services in both multidimensional and tabular mode.
 author: mgblythe
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

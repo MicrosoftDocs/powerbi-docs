@@ -3,7 +3,6 @@ title: Bring your own encryption keys for Power BI (preview)
 description: Learn how to use your own encryption keys in Power BI Premium.
 author: mgblythe
 ms.author: mblythe
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin

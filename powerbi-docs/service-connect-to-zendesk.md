@@ -2,7 +2,6 @@
 title: Connect to Zendesk with Power BI
 description: Zendesk for Power BI
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: sarinas
 
 ms.service: powerbi

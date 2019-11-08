@@ -2,7 +2,6 @@
 title: Data categorization in Power BI Desktop
 description: Data categorization in Power BI Desktop
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

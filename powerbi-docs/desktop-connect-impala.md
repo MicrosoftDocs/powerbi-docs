@@ -2,7 +2,6 @@
 title: Connect to an Impala database in Power BI Desktop
 description: Easily connect to and use an Impala database in Power BI Desktop
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

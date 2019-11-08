@@ -2,7 +2,6 @@
 title: Filters and highlighting in Power BI reports
 description: About filters and highlighting in Power BI reports
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

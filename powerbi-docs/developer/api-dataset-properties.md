@@ -3,7 +3,6 @@ title: Power BI dataset properties
 description: Learn about the properties of Power BI dataset APIs
 author: rkarlin
 ms.author: rkarlin
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

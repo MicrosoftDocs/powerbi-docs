@@ -3,7 +3,6 @@ title: Power BI performance best practices
 description: This article provides guidance for building fast and reliable reports in Power BI
 author: Bhavik-MSFT
 ms.author: bhmerc
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service

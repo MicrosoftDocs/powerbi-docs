@@ -3,7 +3,6 @@ title: Connect to ServiceNow with Power BI
 description: ServiceNow for Power BI
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual

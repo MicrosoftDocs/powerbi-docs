@@ -2,7 +2,6 @@
 title: DirectQuery model troubleshooting in Power BI Desktop
 description: Troubleshoot DirectQuery model issues.
 author: peter-myers
-manager: asaxton
 ms.reviewer: asaxton
 
 ms.service: powerbi

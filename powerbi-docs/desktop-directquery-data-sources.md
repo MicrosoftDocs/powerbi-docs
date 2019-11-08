@@ -3,7 +3,6 @@ title: Data sources supported by DirectQuery in Power BI
 description: Get a list of which data sources can use DirectQuery.
 author: davidiseminger
 ms.author: davidi
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop

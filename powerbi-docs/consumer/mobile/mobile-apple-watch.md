@@ -2,7 +2,6 @@
 title: Explore Power BI data in the mobile app on your Apple Watch
 description: Power BI Apple Watch app
 author: mshenhav
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

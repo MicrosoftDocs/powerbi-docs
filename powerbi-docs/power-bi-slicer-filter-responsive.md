@@ -2,7 +2,6 @@
 title: Create a responsive slicer you can resize in Power BI
 description: Learn how to create a responsive slicer you can resize to fit your report
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
