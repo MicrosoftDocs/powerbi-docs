@@ -30,10 +30,13 @@ Selecting Forecast Bias results in the tree expanding and breaking down the meas
 ![Decomposition tree expansion](media/power-bi-visualization-decomposition-tree/tree-expansion.png)
 
 Selecting a node from the last level cross-filters the data whereas selecting a node from an earlier level changes the path.
-<gif>
+
+![Decomposition tree menu](media/power-bi-visualization-decomposition-tree/tree-interaction1.gif)
 
 Interacting with other visuals cross-filters the decomposition tree. The order of the nodes within levels could change as a result.
 In the example below we cross-filter the tree by Ubisoft. The path updates and Xbox sales move from first to second place, surpassed by PlayStation. 
+
+![Decomposition tree menu](media/power-bi-visualization-decomposition-tree/tree-interaction2.gif)
 
 We then cross-filter the tree by Nintendo. In this case Xbox sales are blank as there are no Nintendo games developed for Xbox. Xbox along with its subsequent path gets filtered out of the view.
 
