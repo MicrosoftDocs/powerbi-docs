@@ -8,7 +8,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/06/2019
+ms.date: 11/07/2019
 ms.author: davidi
 
 LocalizationGroup: Learn more
@@ -21,33 +21,35 @@ By using measures, you can create some of the most powerful data analysis soluti
   
 - This tutorial uses the [Contoso Sales Sample for Power BI Desktop](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) file, which includes online sales data from the fictitious company, Contoso. Because this data is imported from a database, you can't connect to the datasource or view it in Query Editor. Extract the file on your own computer, and then open it in Power BI Desktop.
 
-## Understanding measures
+## Automatic measures
 
 When Power BI Desktop creates a measure, it's most often created for you automatically. To see how Power BI Desktop creates a measure, follow these steps:
 
-1. In Power BI Desktop, select **File** > **Open**, browse to the Contoso Sales Sample file, and then select **Open**.
+1. In Power BI Desktop, select **File** > **Open**, browse to the *Contoso Sales Sample for Power BI Desktop.pbix* file, and then select **Open**.
 
-2. In the **Fields** pane, select the check box next to the **SalesAmount** field in the **Sales** table, or drag **SalesAmount** onto the report canvas. 
+2. In the **Fields** pane, expand the **Sales** table. Then, either select the check box next to the **SalesAmount** field or drag **SalesAmount** onto the report canvas.
 
-    A new column chart visualization appears, showing the sum total of all values in the SalesAmount column of the Sales table.
+    A new column chart visualization appears, showing the sum total of all values in the **SalesAmount** column of the **Sales** table.
 
-    ![SalesAmount chart](media/desktop-tutorial-create-measures/meastut_salesamountchart.png)
+    ![SalesAmount column chart](media/desktop-tutorial-create-measures/meastut_salesamountchart.png)
 
-Any field in the **Fields** pane with a sigma icon ![Sigma icon](media/desktop-tutorial-create-measures/meastut_sigma.png) is numeric, and its values can be aggregated. Rather than showing a table with all two million rows of SalesAmount values, Power BI Desktop detects a numeric datatype and automatically creates and calculates a measure to aggregate the data. Sum total is the default aggregation for a numeric datatype, but you can easily apply different aggregations like average or count. Understanding aggregations is fundamental to understanding measures, because every measure performs some type of aggregation. 
+Any field (column) in the **Fields** pane with a sigma icon ![Sigma icon](media/desktop-tutorial-create-measures/meastut_sigma.png) is numeric, and its values can be aggregated. Rather than display a table with many values (two million rows for **SalesAmount**), Power BI Desktop automatically creates and calculates a measure to aggregate the data if it detects a numeric datatype. Sum is the default aggregation for a numeric datatype, but you can easily apply different aggregations like average or count. Understanding aggregations is fundamental to understanding measures, because every measure performs some type of aggregation. 
 
 To change the chart aggregation, follow these steps:
 
-1. In the **Value** area of the Visualizations pane, select  the caret symbol to the right of **SalesAmount**. 
+1. Select the **SalesAmount** visualization in the report canvas.  
+
+1. In the **Value** area of the **Visualizations** pane, select the down arrow to the right of **SalesAmount**. 
 
 1. From the menu that appears, select **Average**. 
 
-    The visualization changes to an average of all sales values in the SalesAmount field.
+    The visualization changes to an average of all sales values in the **SalesAmount** field.
 
     ![SalesAmount average chart](media/desktop-tutorial-create-measures/meastut_salesamountaveragechart.png)
 
-Depending on the result you want, you can change the type of aggregation, but not all types of aggregation apply to every numeric datatype. For example, for the **SalesAmount** field, Sum and Average are useful, and Minimum and Maximum have their place as well. However, Count doesn't make sense for the SalesAmount field, because while its values are numeric, they’re really currency.
+Depending on the result you want, you can change the type of aggregation. However, not all types of aggregation apply to every numeric datatype. For example, for the **SalesAmount** field, Sum and Average are useful, and Minimum and Maximum have their place as well. However, Count doesn't make sense for the **SalesAmount** field, because while its values are numeric, they’re really currency.
 
-Values calculated from measures change in response to your interactions with your report. For example, if you drag the **RegionCountryName** field from the **Geography** table to your chart, it shows the average sales amounts for each country.
+Values calculated from measures change in response to your interactions with your report. For example, if you drag the **RegionCountryName** field from the **Geography** table onto your existing **SalesAmount** chart, it changes to show the average sales amounts for each country.
 
 ![SaleAmount by Country](media/desktop-tutorial-create-measures/meastut_salesamountavchartbyrcn.png)
 
@@ -59,22 +61,32 @@ In most cases, Power BI Desktop automatically calculates and returns values acco
 
 DAX formulas use many of the same functions, operators, and syntax as Excel formulas. However, DAX functions are designed to work with relational data and perform more dynamic calculations as you interact with your reports. There are over 200 DAX functions that do everything from simple aggregations like sum and average to more complex statistical and filtering functions. There are many resources to help you learn more about DAX. After you've finished this tutorial, see [DAX basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 
-When you create your own measure, it's added to the **Fields** list for the table you select and is called a *model* measure. Some advantages of model measures are that you can name them whatever you want, making them more identifiable; you can use them as arguments in other DAX expressions; and you can make them perform complex calculations quickly.
+When you create your own measure, it's called a *model* measure, and it's added to the **Fields** list for the table you select. Some advantages of model measures are that you can name them whatever you want, making them more identifiable; you can use them as arguments in other DAX expressions; and you can make them perform complex calculations quickly.
 
->[!TIP]
->Starting with the February 2018 release of Power BI Desktop, many common calculations are available as *quick measures*, which write the DAX formulas for you based on your inputs to a dialog box. These quick, powerful calculations are also great for learning DAX or seeding your own customized measures. To create or explore quick measures, select **New quick measure** in a table's **More options** (ellipsis) list or under **Calculations** in the Home tab of the ribbon. See [Use quick measures](desktop-quick-measures.md) for more about creating and using quick measures.
+### Quick measures
+
+Starting with the February 2018 release of Power BI Desktop, many common calculations are available as *quick measures*, which write the DAX formulas for you based on your inputs in a window. These quick, powerful calculations are also great for learning DAX or seeding your own customized measures. 
+
+Create a quick measure using one of these methods: 
+ - From a table in the **Fields** pane, right-click or select **More options** (**...**), and then select **New quick measure** from the list.
+
+ - Under **Calculations** in the **Home** tab of the Power BI Desktop ribbon, select **New Quick Measure**.
+
+For more information about creating and using quick measures, see [Use quick measures](desktop-quick-measures.md).
 
 ### Create a measure
 
-You want to analyze your net sales by subtracting discounts and returns from total sales amounts. For whatever context exists in your visualization, you need a measure that subtracts the sum of DiscountAmount and ReturnAmount from the sum of SalesAmount. There's no field for Net Sales in the **Fields** list, but you have the building blocks to create your own measure to calculate net sales. 
+Suppose you want to analyze your net sales by subtracting discounts and returns from total sales amounts. For the context that exists in your visualization, you need a measure that subtracts the sum of DiscountAmount and ReturnAmount from the sum of SalesAmount. There's no field for Net Sales in the **Fields** list, but you have the building blocks to create your own measure to calculate net sales. 
 
-1. In the **Fields** pane, right-click the **Sales** table, or hover over the table and select **More options** (...). 
+To create a measure, follow these steps:
+
+1. In the **Fields** pane, right-click the **Sales** table, or hover over the table and select **More options** (**...**). 
 
 1. From the menu that appears, select **New measure**. 
 
     This action saves your new measure in the **Sales** table, where it's easy to find.
     
-    ![New measure](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure.png)
+    ![New measure from list](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure.png)
     
     You can also create a new measure by selecting **New Measure** in the **Calculations** group on the **Home** tab of the Power BI Desktop ribbon.
     
@@ -87,9 +99,9 @@ You want to analyze your net sales by subtracting discounts and returns from tot
     
     ![Formula bar](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formulabar.png)
     
-1.  By default, each new measure is named *Measure*. If you don’t rename it, additional new measures are named *Measure 2*, *Measure 3*, and so on. Because we want this measure to be more identifiable, highlight *Measure* in the formula bar, and then change it to *Net Sales*.
+1. By default, each new measure is named *Measure*. If you don’t rename it, additional new measures are named *Measure 2*, *Measure 3*, and so on. Because we want this measure to be more identifiable, highlight *Measure* in the formula bar, and then change it to *Net Sales*.
     
-1.  Now you can begin entering your formula. After the equals sign, start to type *Sum*. As you type, a drop-down suggestion list appears, showing all the DAX functions, beginning with the letters you type. Scroll down, if necessary, to select **SUM** from the list, and then press **Enter**.
+1. Begin entering your formula. After the equals sign, start to type *Sum*. As you type, a drop-down suggestion list appears, showing all the DAX functions, beginning with the letters you type. Scroll down, if necessary, to select **SUM** from the list, and then press **Enter**.
     
     ![Choose SUM from list](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_s.png)
     
@@ -97,91 +109,97 @@ You want to analyze your net sales by subtracting discounts and returns from tot
     
     ![Choose column](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_sum.png)
     
-1. Expressions always appear between opening and closing parentheses. Your expression contains a single argument to pass to the SUM function: the **SalesAmount** column. Begin typing *SalesAmount* until only one value is left in the list: *Sales(SalesAmount)*. The column name preceded by the table name is called the fully qualified name of the column. Fully qualified column names make your formulas easier to read. 
+1. Expressions always appear between opening and closing parentheses. For this example, your expression contains a single argument to pass to the SUM function: the **SalesAmount** column. Begin typing *SalesAmount* until **Sales(SalesAmount)** is the only value left in the list. 
+
+    The column name preceded by the table name is called the fully qualified name of the column. Fully qualified column names make your formulas easier to read.
     
     ![Select SalesAmount](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_salesam.png)
     
-1. Select **Sales[SalesAmount]**, and then enter a closing parenthesis.
+1. Select **Sales[SalesAmount]** from the list, and then enter a closing parenthesis.
     
     > [!TIP]
     > Syntax errors are most often caused by a missing or misplaced closing parenthesis.
     
     
     
-1. Subtract the other two columns:
+1. Subtract the other two columns inside the formula:
 
     a. After the closing parenthesis for the first expression, type a space, a minus operator (-), and then another space. 
 
     b. Enter another SUM function, and start typing *DiscountAmount* until you can choose the **Sales[DiscountAmount]** column as the argument. Add a closing parenthesis. 
 
-    c. Type a space, another minus operator, a space, another SUM function with **Sales[ReturnAmount]** as the argument, and a closing parenthesis.
+    c. Type a space, a minus operator, a space, another SUM function with **Sales[ReturnAmount]** as the argument, and then a closing parenthesis.
     
     ![Complete formula](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_discamount.png)
     
-1. Press **Enter** or select the check box in the formula bar to complete and validate the formula. The validated measure is now ready to use in the **Field** list for the **Sales** table. 
-    
-    ![Measure in field list](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_complete.png)
-    
-1. If you run out of room for entering a formula or want it to be on separate lines, select the down chevron on the right side of the formula bar to provide more space.
+1. Press **Enter** or select **Commit** (checkmark icon) in the formula bar to complete and validate the formula. 
 
-    ![Formula chevron](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_chevron.png)
+    The validated **Net Sales** measure is now ready to use in the **Sales** table in the **Fields** pane.
+    
+    ![Net Sales measure in Sales table field list](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_complete.png)
+    
+1. If you run out of room for entering a formula or want it on separate lines, select the down arrow on the right side of the formula bar to provide more space. 
 
-1. You can separate parts of your formula on different lines by pressing **Alt-Enter**, or move it over by using **Tab**.
+    The down arrow turns into an up arrow and a large box appears.
+
+    ![Formula up arrow](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_chevron.png)
+
+1. Separate parts of your formula by pressing **Alt** + **Enter** for separate lines, or pressing **Tab** to add tab spacing.
 
    ![Formula expanded](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_expanded.png)
 
 ### Use your measure in the report
-Add your **Net Sales** measure to the report canvas, and calculate net sales for whatever other fields you add to the report. 
+Add your new **Net Sales** measure to the report canvas, and calculate net sales for whatever other fields you add to the report. 
 
 To look at net sales by country:
 
 1. Select the **Net Sales** measure from the **Sales** table, or drag it onto the report canvas.
     
-1. Select the **RegionCountryName** field from the **Geography** table, or drag it into the chart.
+1. Select the **RegionCountryName** field from the **Geography** table, or drag it onto the **Net Sales** chart.
     
     ![Net Sales by Country](media/desktop-tutorial-create-measures/meastut_netsales_byrcn.png)
     
-1. To see the difference between net sales and total sales by country, select the **SalesAmount** field or drag it into the chart. 
+1. To see the difference between net sales and total sales by country, select the **SalesAmount** field or drag it onto the chart. 
 
     ![Sales Amount and Net Sales by Country](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
 
-    The chart now uses two measures: **SalesAmount**, which was summed automatically, and the **Net Sales** measure you created. Each measure was calculated in the context of another field, **RegionCountryName**.
+    The chart now uses two measures: **SalesAmount**, which Power BI summed automatically, and the **Net Sales** measure, which you manually created. Each measure was calculated in the context of another field, **RegionCountryName**.
     
 ### Use your measure with a slicer
 
 Add a slicer to further filter net sales and sales amounts by calendar year:
     
-1. Select a blank area next to the chart. Then, in the **Visualizations** pane, select the **Table** visualization. 
+1. Select a blank area next to the chart. In the **Visualizations** pane, select the **Table** visualization. 
 
     This action creates a blank table visualization on the report canvas.
     
     ![New blank table visualization](media/desktop-tutorial-create-measures/meastut_netsales_blanktable.png)
     
-1. Drag the **Year** field from the **Calendar** table into the new blank table visualization. 
+1. Drag the **Year** field from the **Calendar** table onto the new blank table visualization. 
     
-    ![Year aggregation](media/desktop-tutorial-create-measures/meastut_netsales_yearaggtable.png)
+    Because **Year** is a numeric field, Power BI Desktop sums up its values. This summation doesn’t work well as an aggregation; we'll address that in the next step.
 
-    Because **Year** is a numeric field, Power BI Desktop sums up its values. This summation doesn’t work well as an aggregation, so we'll address it in the next step.
+    ![Year aggregation](media/desktop-tutorial-create-measures/meastut_netsales_yearaggtable.png)
     
-3. In the **Value** box in the **Visualizations** pane, select the down arrow next to **Year**, and then select **Don't summarize**. The table now lists individual years.
+3. In the **Values** box in the **Visualizations** pane, select the down arrow next to **Year**, and then select **Don't summarize** from the list. The table now lists individual years.
     
-    ![Don't summarize](media/desktop-tutorial-create-measures/meastut_netsales_year_donotsummarize.png)
+    ![Select Don't summarize](media/desktop-tutorial-create-measures/meastut_netsales_year_donotsummarize.png)
     
-4.  Select the **Slicer** icon in the Visualizations pane to convert the table to a slicer.
+4.  Select the **Slicer** icon in the **Visualizations** pane to convert the table to a slicer. If the visualization displays a slider instead of a list, select **List** from the down arrow in the slider.
 
     ![Convert table to slicer](media/desktop-tutorial-create-measures/meastut_netsales_year_changetoslicer.png)
     
-5.  Select any value in the **Year** slicer to filter the **Net Sales and Sales Amount by Country** chart accordingly. The **Net Sales** and **SalesAmount** measures recalculate and display results in the context of the selected Year field. 
+5.  Select any value in the **Year** slicer to filter the **Net Sales and Sales Amount by RegionCountryName** chart accordingly. The **Net Sales** and **SalesAmount** measures recalculate and display results in the context of the selected **Year** field. 
     
     ![Chart sliced by Year](media/desktop-tutorial-create-measures/meastut_netsales_chartslicedbyyear.png)
 
 ### Use your measure in another measure
 
-You want to find out which products have the highest net sales amount per unit sold, so you need a measure that divides net sales by the quantity of units sold. Create a new measure that divides the result of your **Net Sales** measure by the sum of **Sales[SalesQuantity]**.
+Suppose you want to find out which products have the highest net sales amount per unit sold. You'll need a measure that divides net sales by the quantity of units sold. Create a new measure that divides the result of your **Net Sales** measure by the sum of **Sales[SalesQuantity]**.
 
-1.  Create a new measure named **Net Sales per Unit** in the **Sales** table.
+1.  In the **Fields** pane, create a new measure named **Net Sales per Unit** in the **Sales** table.
     
-1. In the formula bar, begin typing **Net Sales**. The suggestion list shows what you can add. Select **[Net Sales]**.
+1. In the formula bar, begin typing *Net Sales*. The suggestion list shows what you can add. Select **[Net Sales]**.
     
     ![Formula using Net Sales](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2a.png)
     
@@ -189,9 +207,9 @@ You want to find out which products have the highest net sales amount per unit s
     
     ![Bracket shows measures only](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2b.png)
     
-1. Enter a space, a divide operator (/), another space, a SUM function, and then type **Quantity**. The suggestion list shows all the columns with *Quantity* in the name. Select **Sales[SalesQuantity]**, type the closing parenthesis, and press **ENTER** or select the checkmark to validate your formula. 
+1. Enter a space, a divide operator (/), another space, a SUM function, and then type *Quantity*. The suggestion list shows all the columns with *Quantity* in the name. Select **Sales[SalesQuantity]**, type the closing parenthesis, and press **ENTER** or select **Commit** (checkmark icon) to validate your formula. 
 
-    The resulting formula is as follows:
+    The resulting formula should appear as:
     
     `Net Sales per Unit = [Net Sales] / SUM(Sales[SalesQuantity])`
     
@@ -205,15 +223,15 @@ You want to find out which products have the highest net sales amount per unit s
     
     ![Change to treemap](media/desktop-tutorial-create-measures/meastut_nspu_changetotreemap.png)
     
-1. Select the **Product Category** field, or drag it into the treemap or the **Group** field of the **Visualizations** pane. Now you have some good info!
+1. Select the **Product Category** field, or drag it onto the treemap or the **Group** field of the **Visualizations** pane. Now you have some good info!
     
     ![Treemap by Product Category](media/desktop-tutorial-create-measures/meastut_nspu_byproductcat.png)
     
-7. Try removing the **ProductCategory** field, and dragging the **ProductName** field into the chart instead. 
+7. Try removing the **ProductCategory** field, and dragging the **ProductName** field onto the chart instead. 
     
     ![Treemap by Product Name](media/desktop-tutorial-create-measures/meastut_nspu_byproductname.png)
     
-   Ok, now we're just playing, but you have to admit that it looks cool! Experiment with other ways to filter and format the visualization.
+   Ok, now we're just playing, but you have to admit that's cool! Experiment with other ways to filter and format the visualization.
 
 ## What you've learned
 Measures give you the power to get the insights you want from your data. You've learned how to create measures by using the formula bar, name them whatever makes most sense, and find and select the right formula elements by using the DAX suggestion lists. You've also been introduced to context, where the results of calculations in measures change according to other fields or other expressions in your formula.
