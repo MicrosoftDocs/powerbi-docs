@@ -2,7 +2,6 @@
 title: Connect to Insightly with Power BI
 description: Insightly for Power BI
 author: SarinaJoan
-manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Using computed entities on Power BI Premium
 description: Learn how to use computed entities in Power BI Premium
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

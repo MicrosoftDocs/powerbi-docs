@@ -2,7 +2,6 @@
 title: Create the new workspaces - Power BI
 description: Learn how to create the new workspaces, collections of dashboards, reports, and paginated reports built to deliver key metrics for your organization.
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service

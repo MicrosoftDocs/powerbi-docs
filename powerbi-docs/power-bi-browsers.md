@@ -2,7 +2,6 @@
 title: Supported browsers for Power BI
 description: See a list of browsers that support Power BI
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer

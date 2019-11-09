@@ -4,7 +4,6 @@ description: In this quickstart, **consumers** will learn about Power BI, apps, 
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: kvivek
 editor: ''
 tags: ''
 

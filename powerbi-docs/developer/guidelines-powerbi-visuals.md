@@ -3,7 +3,6 @@ title: Power BI visuals guidelines
 description: Learn how you can publish your custom visual to AppSource for others to discover and use it via a purchase.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-service

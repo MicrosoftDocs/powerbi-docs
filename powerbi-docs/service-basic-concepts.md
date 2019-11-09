@@ -2,7 +2,6 @@
 title: Basic concepts for designers in the Power BI service
 description: Power BI service workspaces, dashboards, reports, datasets, and workbooks.
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 

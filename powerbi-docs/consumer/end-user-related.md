@@ -2,7 +2,6 @@
 title: View related content from dashboards, reports, and datasets
 description: Navigation made easier, view related content in dashboards, reports, and datasets
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.custom: seodec18

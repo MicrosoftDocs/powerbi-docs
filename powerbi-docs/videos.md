@@ -2,7 +2,6 @@
 title: Power BI videos
 description: Power BI Videos and link to YouTube channel.
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.custom: seodec18

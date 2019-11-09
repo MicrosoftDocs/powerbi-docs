@@ -2,7 +2,6 @@
 title: Use drillthrough in Power BI Desktop
 description: Learn how to use drillthrough to drill down into data, on a new report page, in Power BI Desktop
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

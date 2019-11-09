@@ -3,7 +3,6 @@ title: Subscribe yourself to reports and dashboards
 description: Learn how to subscribe yourself to an emailed snapshot of a Power BI report or dashboard.
 author: mihart
 ms.author: mihart
-manager: kvivek
 ms.reviewer: cmfinlan
 featuredvideoid: 
 ms.service: powerbi

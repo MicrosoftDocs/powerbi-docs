@@ -2,7 +2,6 @@
 title: Dataflows and Azure Data Lake integration
 description: Overview of how Power BI dataflows integrate with Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

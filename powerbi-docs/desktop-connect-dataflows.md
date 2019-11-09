@@ -2,7 +2,6 @@
 title: Connect to data created by Power BI dataflows in Power BI Desktop (Beta)
 description: Easily connect to and use dataflows in Power BI Desktop
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Learn how to connect Azure Data Lake Storage Gen 2 to Power BI for dataflow storage
 description: Bring your own data to dataflows using Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

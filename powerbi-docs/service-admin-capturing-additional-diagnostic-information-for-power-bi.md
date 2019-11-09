@@ -2,7 +2,6 @@
 title: Capture additional diagnostic information
 description: These instructions provide two potential options for manually collecting additional diagnostic information from the Power BI web client.
 author: mgblythe
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service

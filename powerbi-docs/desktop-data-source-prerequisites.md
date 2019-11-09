@@ -2,7 +2,6 @@
 title: Power BI data source prerequisites
 description: Power BI data source prerequisites
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi

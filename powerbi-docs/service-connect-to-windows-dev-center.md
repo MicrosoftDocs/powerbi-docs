@@ -2,7 +2,6 @@
 title: Connect to Windows Dev Center with Power BI
 description: Windows Dev Center for Power BI
 author: SarinaJoan
-manager: kfollis
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi

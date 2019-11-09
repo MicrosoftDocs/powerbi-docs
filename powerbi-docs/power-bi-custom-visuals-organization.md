@@ -3,7 +3,6 @@ title: Organization visuals in Power BI
 description: Use, manage, and create organizational visuals in Power BI
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-desktop

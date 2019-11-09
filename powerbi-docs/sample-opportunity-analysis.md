@@ -2,7 +2,6 @@
 title: 'Opportunity Analysis sample for Power BI: Take a tour'
 description: 'Opportunity Analysis sample for Power BI: Take a tour'
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: amac
 
 ms.service: powerbi

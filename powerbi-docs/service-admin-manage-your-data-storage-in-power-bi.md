@@ -2,7 +2,6 @@
 title: Manage data storage in your workspaces
 description: Learn how you can manage data storage in your individual or workspace to make sure you can continue to publish reports and datasets.
 author: maggiesMSFT
-manager: kfollis
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi

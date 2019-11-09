@@ -2,7 +2,6 @@
 title: 'Power BI integration with Microsoft Flow'
 description: Learn how to create Flows triggered by Power BI data alerts.
 author: mgblythe
-manager: kfollis
 ms.reviewer: ''
 featuredvideoid: YhmNstC39Mw
 

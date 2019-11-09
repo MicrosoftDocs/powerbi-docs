@@ -3,7 +3,6 @@ title: Visuals in Power BI
 description: Custom visualizations in Power BI
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-desktop
