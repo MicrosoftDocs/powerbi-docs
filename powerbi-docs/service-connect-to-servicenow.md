@@ -3,7 +3,6 @@ title: Connect to ServiceNow with Power BI
 description: ServiceNow for Power BI
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
@@ -18,7 +17,7 @@ ServiceNow offers multiple products and solutions including business, operations
 Connect to the Power BI content pack for [ServiceNow Incidents](https://app.powerbi.com/getdata/services/servicenow).
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
    ![](media/service-connect-to-servicenow/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.
@@ -33,7 +32,7 @@ Connect to the Power BI content pack for [ServiceNow Incidents](https://app.powe
 5. When prompted, enter your ServiceNow **Basic** credentials. Note single sign on is not supported today, more details on the system requirements below.
    
    ![](media/service-connect-to-servicenow/creds.png)
-6. Once the login flow is completed the import process will begin. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+6. Once the login flow is completed the import process will begin. When complete, a new dashboard, report and model will appear in the nav pane. Select the dashboard to view your imported data.
    
     ![](media/service-connect-to-servicenow/dashboard.png)
 
@@ -56,7 +55,7 @@ If you're hitting a credential error during load, please review the access requi
 If you're seeing long load times, please review the number of incidents and number of days you specified during connection and consider reducing it.
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
+[What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 

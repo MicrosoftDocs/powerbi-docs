@@ -2,7 +2,6 @@
 title: Connect to Alpine Metrics Sales Predictions with Power BI
 description: Alpine Metrics Sales Predictions for Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
@@ -21,7 +20,7 @@ Alpine Metrics provides state of the art Predictive Sales Process Optimization i
 Connect to the [Alpine Metrics Sales Predictions content pack](https://app.powerbi.com/getdata/services/alpine-metrics) for Power BI.
 
 ## How to connect
-1. Select Get Data at the bottom of the left navigation pane.  
+1. Select Get Data at the bottom of the nav pane.  
    
     ![](media/service-connect-to-alpine-metrics/getdata.png)
 2. In the **Services** box, select **Get**.  
@@ -64,7 +63,7 @@ The content pack includes data from the following tables:
 An Alpine Metrics account with permissions to the above tables is required in order to instantiate this content pack.
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
+[What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 

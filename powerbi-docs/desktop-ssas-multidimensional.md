@@ -2,7 +2,6 @@
 title: Analysis Services Multidimensional data in Power BI Desktop
 description: Analysis Services Multidimensional data in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Use custom format strings in Power BI Desktop
 description: Learn how to customize format strings in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -144,13 +143,14 @@ The following table identifies characters you can use to create **user-defined n
 | ( **E- E+ e- e+** ) | Scientific format. If the format expression contains at least one digit placeholder ( **0**  or  **#** ) to the right of E-, E+, e-, or e+, the number is displayed in scientific format and E or e is inserted between the number and its exponent. The number of digit placeholders to the right determines the number of digits in the exponent. Use E- or e- to place a minus sign next to negative exponents. Use E+ or e+ to place a minus sign next to negative exponents and a plus sign next to positive exponents. |
 | **- + $**  ( ) | Display a literal character. To display a character other than one of those listed, precede it with a backslash (\) or enclose it in double quotation marks (&quot; &quot;). |
 | ( **\** ) | Display the next character in the format string. To display a character that has special meaning as a literal character, precede it with a backslash (\). The backslash itself isn&#39;t displayed. Using a backslash is the same as enclosing the next character in double quotation marks. To display a backslash, use two backslashes (\\). Examples of characters that can&#39;t be displayed as literal characters are the date-formatting and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, y, /, and :), the numeric-formatting characters (#, 0, %, E, e, comma, and period), and the string-formatting characters (@, &amp;, \&lt;, \&gt;, and !). |
-| (&quot;ABC&quot;) | Display the string inside the double quotation marks (&quot; &quot;). To include a string in  **format**  from within code, you must use **Chr(34)** to enclose the text (34 is the character code for a quotation mark (&quot;)). |
+| (&quot;ABC&quot;) | Display the string inside the double quotation marks (&quot; &quot;). |
 
 
 ## Next steps
 You might also be interested in the following articles:
 
 * [VBA format strings](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
+* [Measures in Power BI Desktop](desktop-measures.md)
+* [Data types in Power BI Desktop](desktop-data-types.md)
 * [Conditional formatting in tables](desktop-conditional-table-formatting.md)
-* [Expression-based titles in Power BI Desktop](desktop-conditional-format-visual-titles.md)
 

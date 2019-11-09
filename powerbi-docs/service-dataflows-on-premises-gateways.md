@@ -2,7 +2,6 @@
 title: Using dataflows with on-premises data sources
 description: Learn how to use on-premises data in dataflows
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

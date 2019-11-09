@@ -2,7 +2,6 @@
 title: Manage content in the Power BI Report Server web portal
 description: Read about managing content in the Power BI Report Server web portal.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -34,9 +33,9 @@ The web portal application runs in a browser. When you start the web portal, the
     See this list of [supported web browsers and versions](browser-support.md).
 2. In the address bar, type the web portal URL.
    
-    By default, the URL is <em>http://[ComputerName]/reports</em>.
+    By default, the URL is <em>https://[ComputerName]/reports</em>.
    
-    The report server might be configured to use a specific port. For example, <em>http://[ComputerName]:80/reports</em> or <em>http://[ComputerName]:8080/reports</em>
+    The report server might be configured to use a specific port. For example, <em>https://[ComputerName]:80/reports</em> or <em>https://[ComputerName]:8080/reports</em>
    
     You see that the web portal groups items into these categories:
    
@@ -52,7 +51,7 @@ The web portal application runs in a browser. When you start the web portal, the
 ## Manage items in the web portal
 Power BI Report Server offers detailed control of the items you store on the web portal. For example, you can set up subscriptions, caching, snapshots, and security on individual paginated reports.
 
-1. Select the ellipsis (...) in the upper-right corner of an item, then select **Manage**.
+1. Select **More options** (...) in the upper-right corner of an item, then select **Manage**.
    
     ![Select Manage](media/getting-around/report-server-web-portal-manage-ellipsis.png)
 2. Choose the property or other feature you want to set.

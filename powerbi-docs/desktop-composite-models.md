@@ -2,7 +2,6 @@
 title: Use composite models in Power BI Desktop
 description: Create data models with multiple data connections and many-to-many relationships in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -49,7 +48,7 @@ For example, by using composite models, you can build a model that combines the 
 A model that combines data from more than one DirectQuery source or that combines DirectQuery with Import data is called a *composite model*.
 
 
-You can create relationships between tables as you always have, even when those tables come from different sources, with the following restriction: any relationships that are cross-source must be defined as having a cardinality of *many-to-many*, regardless of their actual cardinality. The behavior of such relationships is then the same as normal for *many-to-many* relationships, as described in [Many-to-many relationships in Power BI Desktop (preview)](desktop-many-to-many-relationships.md). 
+You can create relationships between tables as you always have, even when those tables come from different sources. Any relationships that are cross-source are created with a cardinality of *many-to-many*, regardless of their actual cardinality. You can change them to one-to-many, many-to-one, or one-to-one. Whichever cardinality you set, cross-source relationships have different behaviour in that you cannot use DAX functions to retrieve values on the one side from the many side. You may also see a performance impact versus many-to-many relationships within the same source.
 
 > [!NOTE]
 > Within the context of composite models, all imported tables are effectively a single source, regardless of the actual underlying data source from which they are imported.   
@@ -84,7 +83,7 @@ Similarly, in the **Relationship** view in Power BI Desktop, we now see an addit
 
 ![Relationship view of tables](media/desktop-composite-models/composite-models_08.png)
 
-We now need to relate these tables to the other tables in the model. As always, we create a relationship between the **Bike** table from SQL Server and the imported **ProductManagers** table. That is, the relationship is between *Bike[ProductName]* and *ProductManagers[ProductName]*. As discussed earlier, all relationships that go across source must have the default *many-to-many* cardinality. 
+We now need to relate these tables to the other tables in the model. As always, we create a relationship between the **Bike** table from SQL Server and the imported **ProductManagers** table. That is, the relationship is between *Bike[ProductName]* and *ProductManagers[ProductName]*. As discussed earlier, all relationships that go across source default to *many-to-many* cardinality. 
 
 ![The "Create relationship" window](media/desktop-composite-models/composite-models_09.png)
 

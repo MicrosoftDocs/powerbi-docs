@@ -2,17 +2,19 @@
 title: Use Shape maps in Power BI Desktop (Preview)
 description: Create relative comparisons to regions using Shape maps in Power BI Desktop
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: 'amanda'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
 ---
 
 # Shape Maps in Power BI Desktop (Preview)
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Create a **Shape Map** visual to compare regions on a map using color. Unlike the **Map** visual, **Shape Map** can't show precise geographical locations of data points on a map. Instead,  its main purpose is to show relative comparisons of regions on a map by coloring them differently.
 
 **Shape Map** visuals are based on ESRI/TopoJSON maps, which have the compelling ability to use custom maps that you can create. Examples of custom maps are: geographical, seating arrangements, floor plans, and others. The ability to use custom maps is not available in this Preview release of **Shape Map**.
@@ -53,13 +55,13 @@ Take the following steps to create a **Shape Map**:
 3. You can then modify the map using the Formatting options such as **Default color**, **Zoom**, and more. And, you can also add a category data column to the **Legend** bucket, and classify the map regions based on categories.
 
 ## Use custom maps
-You can use custom maps with **Shape Map** as long as they are in the **TopoJSON** format. If your map is in another format, you can use online tools such as [**Map Shaper**](http://mapshaper.org/) to convert your *shapefiles* or your *GeoJSON* maps into the **TopoJSON** format.
+You can use custom maps with **Shape Map** as long as they are in the **TopoJSON** format. If your map is in another format, you can use online tools such as [**Map Shaper**](https://mapshaper.org/) to convert your *shapefiles* or your *GeoJSON* maps into the **TopoJSON** format.
 
 To use your **TopoJSON** map file, add a ShapeMap visual to your report and add some data to the *Location* and *Color saturation* buckets. Then, in the **Visualizations** pane with the **Format** section selected (shown as (1) in the following image), expand the **Shape** section and select **+ Add Map**.
 
 ![open Formatting pane and select Add Map](media/desktop-shape-map/shape-map-6-new.png)
 
-## Sample Custom Map
+## Sample custom map
 The *Offices of the United States Attorneys* release an annual fiscal report on their litigation and caseload data.  All of their reports can be found in the link below,
 
 https://www.justice.gov/usao/resources/annual-statistical-reports
@@ -74,7 +76,7 @@ You can do interesting things with the individual state maps as well, and show m
 
 If you’d like to experiment with this dataset and visualization, you can download the original PBIX file that was used to generate this report using the following link.
 
-* [Custom shape map demo .PBIX file](http://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
+* [Custom shape map demo .PBIX file](https://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
 ## Getting map data
 To quickly get data into a model so you can test **Shape Map**, you can copy one of the tables at the end of this article, then select **Enter Data** from the **Home** ribbon.
@@ -100,7 +102,7 @@ There are a few considerations and requirements for this Preview release of **Sh
 * The **Shape Map** visual is in Preview, and must be enabled in Power BI Desktop. To enable **Shape Map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape Map Visual** checkbox.
 * Currently, you must also have the **Color saturation** bucket set in order for the **Legend** classification to work properly.
 * The final release version of **Shape Map** will have a user interface that shows the map keys of the currently selected map (there is no date set for final release, and **Shape Map** is still in Preview). In this Preview release, you can reference the map region keys in the tables found in the following **Region Keys** section of this article.
-* The **Shape Map** visual will plot up to a maximum of 1,000 data points.
+* The **Shape Map** visual will plot up to a maximum of 1,500 data points.
 
 ## Region keys
 
@@ -108,7 +110,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Australia: States
 
-| id | abbr | iso | name | postal |
+| ID | abbr | iso | name | postal |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -121,7 +123,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Austria: States
 
-| id | iso | name | name-en | postal |
+| ID | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -135,7 +137,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Brazil: States
 
-| id |
+| ID |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -171,7 +173,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Canada: Provinces
 
-| id | iso | name | postal |
+| ID | iso | name | postal |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -189,7 +191,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### France: Regions
 
-| id | name | name-en |
+| ID | name | name-en |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
@@ -216,7 +218,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Germany: States
 
-| id | iso | name | name-en | postal |
+| ID | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -237,7 +239,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Ireland: Counties
 
-| id |
+| ID |
 | --- |
 | Wicklow |
 | Wexford |
@@ -268,7 +270,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Italy: Regions
 
-| id | iso | name | name-en | postal |
+| ID | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -293,7 +295,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Mexico: States
 
-| id | abreviatura | iso | name | name-en | postal |
+| ID | abreviatura | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -330,7 +332,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### Netherlands: Provinces
 
-| id | iso | name | name-en |
+| ID | iso | name | name-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -347,7 +349,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### UK: Countries
 
-| id | iso | name |
+| ID | iso | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Scotland |
@@ -356,7 +358,7 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 ### USA: States
 
-| id | name | postal |
+| ID | name | postal |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |

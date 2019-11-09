@@ -3,7 +3,6 @@ title: Power BI Embedded performance best practices
 description: This article provides guidance for embedded analytics best practices
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -59,21 +58,23 @@ Organizations with Power BI Premium capacity or Power BI Embedded capacity can t
 
 ## Preload
 
-Use the **preload** JavaScript API to improve the end-user performance. `powerbi.preload()` downloads javascript, css files, and other artifacts, which are used later to embed a report.
+Use `powerbi.preload()` to improve the end-user performance. The method `powerbi.preload()` downloads javascript, css files, and other artifacts, which are used later to embed a report.
 
-Call **preload** if you're not embedding the report immediately. For example, if you embed a report on a button click, it’s better to call **preload** when the previous page loads. Then, when the application user clicks the button, the rendering is faster.
-
-> [!NOTE]
-> It's not recommended to use preload if the report is about to be embedded. Instead, you can use bootstrap to prepare the iframe for embedding.
+Call `powerbi.preload()` if you're not embedding the report immediately. For example, if the Power BI embedded content doesn't appear in the home page, use `powerbi.preload()` to download and cache the artifacts that are used for embedding the content.
 
 ## Bootstrapping the iframe
 
 > [!NOTE]
-> [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript) version 2.9 (beta) is required to bootstrap the iframe. 
->
-> `powerbi.bootstrap(element, config)` can be used to prepare the iframe for embedding. The main use case for this feature is to parallelize the iframe bootstrap and the back-end calls that are used for embedding (for example, [Get reports](/rest/api/power-bi/reports/getreportsingroup) call).
+> [Power BI client SDK](https://github.com/Microsoft/PowerBI-JavaScript) version 2.9 is required to bootstrap the iframe.
 
-[Learn more about iframe bootstrap](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bootstrap---For-Better-Performance).
+`powerbi.bootstrap(element, config)` allows you to start embedding before all required parameters are available. The bootstrap API prepares and initializes the iframe.
+When using the bootstrap API, it's still required to call `powerbi.embed(element, config)` on the same HTML element.
+
+For example, one of the use cases for this feature, is to run the iframe bootstrap and the back-end calls for embedding, in parallel.
+> [!TIP]
+> Use the bootstrap API when it's possible to generate the iframe before it's visible to the end user.
+
+[Learn more about iframe bootstrap](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Bootstrap-For-Better-Performance).
 
 ## Measure performance
 

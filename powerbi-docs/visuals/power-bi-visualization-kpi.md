@@ -2,7 +2,6 @@
 title: Key Performance Indicator (KPI) visuals
 description: Create Key Performance Indicator (KPI) visuals in Power BI 
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
@@ -16,10 +15,15 @@ LocalizationGroup: Visualizations
 
 # Key Performance Indicator (KPI) visuals
 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more about KPIs, see [Key Performance Indicators (KPIs) in PowerPivot](/previous-versions/sql/sql-server-2012/hh272050(v=sql.110)).
 
 Watch Will show you how to create single metric visuals: gauges, cards, and KPIs.
-
+   > [!NOTE]
+   > This video uses an older version of Power BI Desktop.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## When to use a KPI
@@ -38,19 +42,19 @@ A KPI dataset needs to contain goal values for a KPI. If your dataset doesn't co
 
 ## Prerequisites
 
-If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+This tutorial uses the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* [Power BI Desktop](https://powerbi.microsoft.com/get-started/) - it's free!
+1. From the upper left section of the menubar, select **File** > **Open**
 
-* [The Retail Analysis Sample PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+1. Find your copy of the **Retail Analysis sample PBIX file**
+
+1. Open the **Retail Analysis sample PBIX file** in report view. ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png)
+
+1. Select **+** to add a new page. ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png)
 
 ## How to create a KPI
 
-To follow along, open the [Retail Analysis .PBIX file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) in Power BI Desktop. You'll create a KPI that measures the progress you've made toward a sales goal.
-
-1. Open the **Retail Analysis Sample** in report view ![Screenshot of the report view icon.](media/power-bi-visualization-kpi/power-bi-report-view.png).
-
-1. Select ![Screenshot of the yellow tab.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) to add a new page.
+In this example, you'll create a KPI that measures the progress you've made toward a sales goal.
 
 1. From the **Fields** pane, select **Sales > Total Units This Year**.  This value will be the indicator.
 
@@ -97,4 +101,4 @@ If your KPI doesn't look like the one above, it may be because you didn't sort b
 
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

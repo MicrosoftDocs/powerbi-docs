@@ -2,7 +2,6 @@
 title: Get started formatting Power BI visualizations
 description: 'Customize visualization title, background, and legend'
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -162,4 +161,4 @@ Here is a list of the visualizations and the customization options that are avai
 
 - [Basic concepts for Power BI service consumers](../consumer/end-user-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

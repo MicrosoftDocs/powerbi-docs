@@ -2,7 +2,6 @@
 title: Publish an app in Power BI
 description: Learn how to publish the new apps, which are collections of dashboards and reports with built-in navigation.
 author: maggiesMSFT
-manager: kfile
 
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -26,7 +25,7 @@ Business users get your apps in a few different ways:
 - You can send them a direct link.
 - You can install it automatically in your coworkers' Power BI accounts if your Power BI administrator gives you permission.
 
-You can create the app with its own built-in navigation, so your users can easily find their way around your content. They can’t modify the contents of the app. They can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. They get updates automatically and you can control how frequently the data refreshes. You can also give them Build permissions to connect to the underlying datasets, and to create copies of the reports in the app. Read more about the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+You can create the app with its own built-in navigation, so your users can easily find their way around your content. They can’t modify the contents of the app. They can interact with it either in the Power BI service, or one of the mobile apps -– filtering, highlighting, and sorting the data themselves. They get updates automatically and you can control how frequently the data refreshes. You can also give them Build permission to connect to the underlying datasets, and to create copies of the reports in the app. Read more about the [Build permission](service-datasets-build-permissions.md).
 
 ## Licenses for apps
 To create or update an app, you need a Power BI Pro license. For app *consumers*, there are two options.
@@ -111,7 +110,7 @@ You can further customize the app navigation by:
 * Renaming items in the **Report details**, **Dashboard details**, and **Workbook details**.
 * Hiding certain items from the navigation.
 * Using the **New** option to add **sections** to group related content.
-* Using the **New** option to add a **link** to an external resource to the left navigation. 
+* Using the **New** option to add a **link** to an external resource to the nav pane. 
 
 When you add a **link**, in **Link details** you can choose where the link opens. By default links open in the **Current tab**, but you can select **New tab**, or **Content area**. 
 
@@ -162,11 +161,11 @@ When you check the option to **Allow users to connect to the app's underlying da
 - Search for these datasets in Power BI Desktop and in the get-data experience in the Power BI service.
 - Create reports and dashboards based on these datasets.
 
-When you clear this option, new users you add to the app don't get the Build permission. However, for existing app users, permissions on the underlying datasets don't change. You can remove the Build permission manually from app users who should no longer have it. Read more about the [Build permission](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+When you clear this option, new users you add to the app don't get Build permission. However, for existing app users, permissions on the underlying datasets don't change. You can remove Build permission manually from app users who should no longer have it. Read more about the [Build permission](service-datasets-build-permissions.md).
 
 ## Allow users to copy reports
 
-When you check the option to **Allow users to make a copy of the reports in this app**, your users can save any of the reports in the app to their My Workspace or another workspace. To make a copy, users need a Pro license, even if the original report is in a workspace in a Premium capacity. They can then customize the reports to their unique needs. You have to select the **Allow all users to connect to the app's underlying datasets using the Build permission** option first. By selecting these options, you're enabling the new [copy reports from other workspaces](service-datasets-copy-reports.md) capability.
+When you check the option to **Allow users to make a copy of the reports in this app**, your users can save any of the reports in the app to their My Workspace or another workspace. To make a copy, users need a Pro license, even if the original report is in a workspace in a Premium capacity. They can then customize the reports to their unique needs. You have to select the **Allow all users to connect to the app's underlying datasets using Build permission** option first. By selecting these options, you're enabling the new [copy reports from other workspaces](service-datasets-copy-reports.md) capability.
 
 ## Unpublish an app
 Any member of a workspace can unpublish the app.
@@ -183,13 +182,20 @@ This action uninstalls the app for everyone you've published it to, and they no 
 
 ## View your published app
 
-When your app consumers open your app, they see the navigation you created, instead of the standard Power BI left navigation pane. The app navigation lists the reports and dashboards in the sections you've defined. It also lists the individual pages in each report, rather that just the report name.
+When your app consumers open your app, they see the navigation you created, instead of the standard Power BI nav pane. The app navigation lists the reports and dashboards in the sections you've defined. It also lists the individual pages in each report, rather that just the report name.
 
 ![App with navigation](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
+
+## Considerations and Limitations
+Things to keep in mind about publishing apps:
+
+* You can have at most 100 users or groups in the access list for the app. However, you can give more than 100 users access to the app. To do so, use one or more user groups that contain all the desired users.
+* For the new workspace experience, if the user added to the app access list already has access to the app through the workspace, they will not be shown in the access list for the app.  
+
 
 ## Next steps
 * [Create a workspace](service-create-workspaces.md)
 * [Install and use apps in Power BI](consumer/end-user-apps.md)
 * [Power BI apps for external services](service-connect-to-services.md)
 * [Power BI Admin Portal](https://docs.microsoft.com/power-bi/service-admin-portal)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Get Power BI Desktop
 description: Download and install Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -52,7 +51,7 @@ Once you launch the installation package, **Power BI Desktop** is installed as a
 ## Install as an app from the Microsoft Store
 You can also get **Power BI Desktop** from the Microsoft Store, using the following link:
 
-* [Install **Power BI Desktop** from the **Microsoft Store**](http://aka.ms/pbidesktopstore)
+* [Install **Power BI Desktop** from the **Microsoft Store**](https://aka.ms/pbidesktopstore)
 
   ![Get Power BI Desktop from the Microsoft Store](media/desktop-get-the-desktop/getpbid_04.png)
 
@@ -101,28 +100,6 @@ The following list provides the minimum requirements to run **Power BI Desktop**
 
 We always want your experience with Power BI Desktop to be great. There may be occasions when you run into an issue with Power BI Desktop, so this section contains solutions or suggestions to address issues that might arise. 
 
-### Installing Power BI Desktop on remote machines
-
-If you’re deploying Power BI Desktop to your users with a tool that requires a Windows installer file (.msi file) you can extract the .msi file from the Power BI Desktop installer .exe file. You can use third-party tools such as the WiX Toolset to accomplish this.
-
-> [!NOTE]
-> As a third-party product, WiX Toolset options might change without notice. Please check their documentation for the most up to date information, and contact their user mailing list for help.
-
-* On the computer where you downloaded the Power BI Desktop installer, download and install the latest version of the WiX Toolset from the WiX website at https://wixtoolset.org/.
-* Open a command line windows as an administrator and navigate to the folder where you installed WiX Toolset.
-* Run the following command: 
-    
-    ```Dark.exe <path to Power BI Desktop installer> -x <output folder>```
-
-    For example, run:
-
-    ``` Dark.exe C:\PBIDesktop_x64.exe -x C:\output```
-
-* The output folder will contain a folder named *AttachedContainer* that includes the .msi files.
-
-
-
-
 ### Using command-line options during installation 
 
 When installing Power BI Desktop, you can set properties and options with command-line switches. This is especially useful for administrators who manage or facilitate the installation of Power BI Desktop across organizations. These options apply to .msi and .exe installations. 
@@ -142,7 +119,6 @@ When installing Power BI Desktop, you can set properties and options with comman
 
 You can also use the following **syntax parameters**, which are specified with a "PROPERTY=VALUE" syntax:
 
-
 |Parameter  |Meaning  |
 |---------|---------|
 |ACCEPT_EULA     |Requires a value of 1 to automatically accept the EULA         |
@@ -152,12 +128,28 @@ You can also use the following **syntax parameters**, which are specified with a
 |LANGUAGE     |Locale code, for example en-US, de-DE, pr-BR, to force the default language of the application. If no language is specified, Power BI Desktop displays the Windows OS language. This can be changed by the user in the Options dialog.         |
 |REG_SHOWLEADGENDIALOG     |Value of 0 disables showing the dialog that appears before you have signed in to Power BI Desktop         |
 
-
-
-
 For example, you could run it with the following syntax to install without any user interface, using the German language: 
 
 ```“-quiet LANG=de-DE ACCEPT_EULA=1”```
+
+### Installing Power BI Desktop on remote machines
+
+If you’re deploying Power BI Desktop to your users with a tool that requires a Windows installer file (.msi file) you can extract the .msi file from the Power BI Desktop installer .exe file. You can use third-party tools such as the WiX Toolset to accomplish this.
+
+> [!NOTE]
+> As a third-party product, WiX Toolset options might change without notice. Please check their documentation for the most up to date information, and contact their user mailing list for help.
+
+* On the computer where you downloaded the Power BI Desktop installer, download and install the latest version of the WiX Toolset from the WiX website at https://wixtoolset.org/.
+* Open a command line windows as an administrator and navigate to the folder where you installed WiX Toolset.
+* Run the following command: 
+    
+    ```Dark.exe <path to Power BI Desktop installer> -x <output folder>```
+
+    For example, run:
+
+    ``` Dark.exe C:\PBIDesktop_x64.exe -x C:\output```
+
+* The output folder will contain a folder named *AttachedContainer* that includes the .msi files.
 
 
 ### Issues when using previous releases of Power BI Desktop

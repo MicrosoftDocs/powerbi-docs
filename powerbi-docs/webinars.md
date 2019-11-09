@@ -2,7 +2,6 @@
 title: Power BI webinars
 description: Power BI webinars
 author: v-tatero
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -232,7 +231,7 @@ Watch recorded sessions at any time
 
 - [Microsoft Data Insights Summit 2017 on-demand sessions](https://community.powerbi.com/t5/Data-Insights-Summit-2017-On/bd-p/DataInsightsSummit2017OnDemand?Is=Website)
 
-- [What is Power BI?](power-bi-overview.md)
+- [What is Power BI?](fundamentals/power-bi-overview.md)
 
 - Follow [@MSPowerBI on Twitter](https://twitter.com/mspowerbi)
 

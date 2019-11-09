@@ -2,7 +2,6 @@
 title: Power BI report scheduled refresh in Power BI Report Server
 description: Power BI reports can connect to different data sources. Depending on how data is used, different data sources are available.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 
 ms.service: powerbi

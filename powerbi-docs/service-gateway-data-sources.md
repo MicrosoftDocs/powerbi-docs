@@ -2,7 +2,6 @@
 title: "Manage data sources"
 description: Learn how to manage data sources in Power BI.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -175,4 +174,4 @@ The on-premises data gateway supports the following data sources for Power BI. I
 * [Manage your data source - Import/scheduled refresh](service-gateway-enterprise-manage-scheduled-refresh.md)
 * [Guidance for deploying a data gateway](service-gateway-deployment-guidance.md)
 
-More questions? Try the [Power BI Community](http://community.powerbi.com/).
+More questions? Try the [Power BI Community](https://community.powerbi.com/).

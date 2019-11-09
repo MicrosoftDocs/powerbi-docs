@@ -1,8 +1,7 @@
 ---
 title: Understanding the Power BI admin role
-description: How to configure row-level security for imported datasets, and DirectQuery, within the Power BI service.
+description: This article describes the Power BI service administrator role and how to use it in your organization.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -17,8 +16,6 @@ LocalizationGroup: Administration
 # Understanding the Power BI service administrator role
 
 Learn how you can use the Power BI service administrator role in your organization. Users in this role have full control over a Power BI tenant and its administrative features, except for licensing.
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/PQRbdJgEm3k?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 The Power BI service administrator role can be assigned to users who need access to the Power BI Admin portal without also granting those users complete Office 365 administrative access.
 
@@ -110,4 +107,4 @@ You can also assign users to roles by using PowerShell. Users are managed in Azu
 [Administering Power BI in your Organization](service-admin-administering-power-bi-in-your-organization.md)  
 [Power BI admin portal](service-admin-portal.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

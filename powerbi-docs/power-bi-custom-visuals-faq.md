@@ -3,8 +3,7 @@ title: Frequently asked questions about Power BI visuals
 description: Browse a list of frequently asked questions and answers about Power BI visuals
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
-ms.reviewer: maghan
+ms.reviewer: ""
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals

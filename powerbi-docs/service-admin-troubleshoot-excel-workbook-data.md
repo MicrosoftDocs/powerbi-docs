@@ -2,12 +2,11 @@
 title: 'Error: We couldn''t find any data in your Excel workbook'
 description: 'Error: We couldn''t find any data in your Excel workbook'
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 04/30/2019
 ms.author: mblythe
 ms.custom: seodec18
@@ -57,7 +56,7 @@ When you import an Excel workbook, Power BI looks for these tables and imports t
    
     ![Data formatted as a table](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-table.png)
 6. Save your workbook.
-7. Return to Power BI. Select Get Data at the bottom of the left navigation pane.
+7. Return to Power BI. Select Get Data at the bottom of the nav pane.
    
     ![Get data](media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-data.png)
 8. In the **Files** box, select **Get**.

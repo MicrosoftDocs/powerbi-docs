@@ -2,19 +2,21 @@
 title: What is a Power BI app?
 description: In Power BI, apps bring related dashboards and reports together, all in one place.
 author: mihart
-manager: kvivek
 ms.reviewer: lukaszp
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 10/17/2019
 ms.author: mihart
 
 LocalizationGroup: Share your work
 ---
 
 # Apps in Power BI
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 ## What is a Power BI app?
 An *app* is a Power BI content type that combines related dashboards and reports, all in one place. An app can have one or more dashboards and one or more reports, all bundled together. Apps are created by Power BI *designers* who distribute and share the apps with *consumers* like you. 
 

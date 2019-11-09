@@ -6,7 +6,6 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ""
 ms.cunstom: ""
 ms.date: 09/16/2019

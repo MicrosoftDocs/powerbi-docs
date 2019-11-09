@@ -2,7 +2,6 @@
 title: Learn how to connect to dataflows in Power BI
 description: Learn how dataflows work in Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -71,7 +70,7 @@ The **Database** category includes the following available data connections for 
 * PostgreSQL Database
 * SQL Server Database
 * Sybase Database
-* Teradata Database
+* Teradata
 * Vertica
 
 The **Power BI** category includes the following available data connections for dataflows:

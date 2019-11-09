@@ -3,12 +3,11 @@ title: "What are paginated reports in Power BI Premium?"
 description: Paginated reports, long the standard report format in SQL Server Reporting Services, are now available in the Power BI service. These reports can be printed or shared. You can control the report layout exactly. They display all the data in a table, for example, even if the table spans multiple pages.  
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 06/06/2019
+ms.date: 09/24/2019
 ---
 
 # What are paginated reports in Power BI Premium?
@@ -21,7 +20,7 @@ Paginated reports can have many pages. For example, this report has 563 pages. E
 
 ![Paginated report in the Power BI service](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
-You can preview your report in Report Builder, then publish it to the Power BI service, http://app.powerbi.com. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in app workspaces, as long as the workspace is in a Power BI Premium capacity. Also, a Power BI admin needs to enable paginated reports in the [Premium capacities section](service-admin-premium-workloads.md#paginated-reports) of the Power BI admin portal. 
+You can preview your report in Report Builder, then publish it to the Power BI service, https://app.powerbi.com. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in workspaces, as long as the workspace is in a Power BI Premium capacity. Also, a Power BI admin needs to enable paginated reports in the [Premium capacities section](service-admin-premium-workloads.md#paginated-reports) of the Power BI admin portal. 
 
 ## Create reports in Power BI Report Builder
 
@@ -31,14 +30,13 @@ Paginated reports have their own design tool, Power BI Report Builder. It's a ne
 
 A single paginated report can have a number of different data sources. It doesn't have an underlying data model, unlike Power BI reports. For the initial release of paginated reports in the Power BI service, you create embedded data sources and datasets in the report itself. For now, you can't use shared data sources or shared datasets. You create reports in Report Builder on your local computer. If a report connects to on-premises data, after you upload the report to the Power BI service, you need to create a gateway and redirect the data connection. Here are the data sources you can connect to at this time:
 
-- Azure SQL Database and Data Warehouse
+- Azure SQL Database and Data Warehouse (via Basic and oAuth)
 - Azure Analysis Services (via SSO)
 - SQL Server via a gateway
 - SQL Server Analysis Services via a gateway
-- Power BI Premium Datasets
+- Power BI Datasets
 - Oracle
 - Teradata
-- Additional sources as they're added
 
 ## Design your report  
 
@@ -58,7 +56,7 @@ Everything in a paginated report, from the report itself to every text box, imag
 
 ## Creating a report definition
 
-When you design a paginated report, you're really creating a *report definition*. It doesn't contain the data. It specifies where to get the data, which data to get, and how to display the data. When you run the report, the report processor takes the report definition you've specified, retrieves the data, and combines it with the report layout to generate the report. You upload the report definition to the Power BI service, http://app.powerbi.com, either to your My Workspace or to a workspace shared with your colleagues. If the report data source is on premises, after you upload the report, you redirect the data source connection to go through a gateway. 
+When you design a paginated report, you're really creating a *report definition*. It doesn't contain the data. It specifies where to get the data, which data to get, and how to display the data. When you run the report, the report processor takes the report definition you've specified, retrieves the data, and combines it with the report layout to generate the report. You upload the report definition to the Power BI service, https://app.powerbi.com, either to your My Workspace or to a workspace shared with your colleagues. If the report data source is on premises, after you upload the report, you redirect the data source connection to go through a gateway. 
 
 ## View your paginated report
 You view your paginated report in the Power BI service in a browser, and also in the Power BI mobile apps. From the Power BI service, you can export the report to a number of formats, such as HTML, MHTML, PDF, XML, CSV, TIFF, Word, and Excel. You can also share it with others.  
@@ -74,10 +72,10 @@ For details, see the article [Subscribe yourself and others to paginated reports
 Here are some other features that aren't supported in the initial release:
 
 - Pinning report pages or visuals to Power BI dashboards. You can still pin visualizations to a Power BI dashboard from an on-premises paginated report on a Power BI Report Server or Reporting Services report server. See [Pin Reporting Services items to Power BI dashboards](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards) for more information.
-- Interactive features such as document maps and show/hide buttons.
-- Subreports and drillthrough reports.
+- Document Maps.
+- Subreports and drillthrough reports.  You may consider using URL parameters with paginated reports to achieve drillthrough scenarios, however.
 - Shared data sources and shared datasets.
-- Visuals from Power BI reports.
+
  
 ## Next steps
 

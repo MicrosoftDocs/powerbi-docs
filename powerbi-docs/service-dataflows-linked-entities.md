@@ -2,7 +2,6 @@
 title: Link entities between dataflows in Power BI
 description: Learn how to link entities in dataflows in Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

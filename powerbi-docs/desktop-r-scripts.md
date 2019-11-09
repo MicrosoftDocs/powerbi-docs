@@ -2,7 +2,6 @@
 title: Running R Scripts in Power BI Desktop
 description: Running R Scripts in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

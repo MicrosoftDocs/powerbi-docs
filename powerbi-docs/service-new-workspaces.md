@@ -2,12 +2,11 @@
 title: Organize work in the new workspaces in Power BI
 description: Learn about the new workspaces, which are collections of dashboards and reports built to deliver key metrics for your organization.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/05/2019
+ms.date: 09/30/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -20,7 +19,7 @@ LocalizationGroup: Share your work
 The new workspace experience has reached general availability (GA), and is now the default workspace. You can still continue to create and use [classic workspaces](service-create-workspaces.md) based on Office 365 Groups. 
 
 > [!NOTE]
-> To enforce row-level security (RLS) for users browsing content in a workspace, use the Viewer role. If the Viewer role is not yet available in your tenant, continue to use [classic workspaces](service-create-workspaces.md) and select the **Members can only view Power BI content** option. Alternatively, publish an Power BI app to those users, or use sharing to distribute content.
+> To enforce row-level security (RLS) for users browsing content in a workspace, use the Viewer role. To enforce RLS without giving access to the workspace, publish a Power BI app to those users, or use sharing to distribute content.
 
 With the new workspaces, you can:
 
@@ -69,11 +68,14 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 | Allow others to reshare items. |  X | X  |   |   |
 | Create, edit, and delete content in the workspace.  |  X | X  | X  |   |
 | Publish reports to the workspace, delete content.  |  X | X  | X  |   |
-| Create a report in another workspace based on a dataset in this workspace. |  X | X  | X  | X <sup>1</sup>  |
-| Copy a report. | X | X | X | X <sup>1</sup> |
+| Create a report in another workspace based on a dataset in this workspace. |  X | X  | X  |   |
+| Copy a report. | X | X | X |  |
 | View and interact with an item. |  X | X  | X  | X  |
 
-**1** Requires a Power BI Pro license and [Build permission for datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
+> [!NOTE]
+>To copy a report, and to create a report in another workspace based on a dataset in this workspace, people need to meet additional criteria:
+>- They need a Power BI Pro license. See the next section, [Licensing](#licensing), for details.
+>- They need Build permission for the dataset. For datasets in this workspace, the people with the Admin, Member, and Contributor roles have Build permission through their workspace role.
  
 ## Licensing
 Everyone you add to a workspace in the shared capacity needs a Power BI Pro license. In the workspace, these users can all collaborate on dashboards and reports that you plan to publish to a wider audience, or even to your entire organization. 
@@ -134,7 +136,7 @@ Some features work differently from current workspaces in the new workspaces. Th
 - Members can or can't reshare: replaced by the Contributor role
 - Read-only workspaces: Instead of granting users read-only access to a workspace, assign users to the Viewer role, which allows similar read-only access to the content in a workspace.
 - Users without a Pro license can access the workspace if the workspace is in a Power BI Premium capacity, even if users have only the Viewer role.
-- To allow users with Viewer role to export data, ensure they have Build permission on the datasets in the workspace. Read more about [Build permission for datasets](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+- To allow users with Viewer role to export data, ensure they have Build permission on the datasets in the workspace. Read more about [Build permission for datasets](service-datasets-build-permissions.md).
 - No **Leave workspace** button.
 
 ## Frequently asked questions
@@ -155,4 +157,4 @@ Yes. Since we support both types of workspaces side by side, we continue to list
 * [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
 * [Create the classic workspaces](service-create-workspaces.md)
 * [Install and use apps in Power BI](service-create-distribute-apps.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

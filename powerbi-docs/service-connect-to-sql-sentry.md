@@ -2,7 +2,6 @@
 title: Connect to SQL Sentry with Power BI
 description: SQL Sentry for Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
@@ -19,10 +18,10 @@ Analyzing your performance data collected by SQL Sentry is easy with Power BI. P
 Connect to the [SQL Sentry content pack](https://app.powerbi.com/groups/me/getdata/services/sql-sentry) for Power BI.
 
 >[!NOTE]
->Access to a SQL Sentry account you use for connecting to http://cloud.sqlsentry.com and a Database ID you will monitor is required to connect.  Instructions for where to find the Database ID are below.
+>Access to a SQL Sentry account you use for connecting to https://cloud.sqlsentry.com and a Database ID you will monitor is required to connect.  Instructions for where to find the Database ID are below.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
    ![](media/service-connect-to-sql-sentry/pbi_getdata.png)
 2. In the **Services** box, select **Get**.
@@ -43,7 +42,7 @@ Connect to the [SQL Sentry content pack](https://app.powerbi.com/groups/me/getda
    The first time you connect, Power BI prompts you to allow read-only access to your account. Select Grant to begin the import process.  The import process can take a few minutes depending on the volume of data in your account.
    
    ![](media/service-connect-to-sql-sentry/img7400.png)
-6. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*:
+6. After Power BI imports the data you will see a new dashboard, report, and dataset in the nav pane. New items are marked with a yellow asterisk \*:
    
    ![](media/service-connect-to-sql-sentry/img8200.png)
 7. Select the SQL Sentry dashboard.
@@ -89,7 +88,7 @@ If data from some of your apps is not showing up in Power BI, check to make sure
 If you are not the owner if the SQL Sentry database that is being synchronized to <https://cloud.sqlsentry.com>, please contact your administrator to make sure you have rights to view the collected data.
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
+[What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Get Data for Power BI](service-get-data.md)
 

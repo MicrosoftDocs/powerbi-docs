@@ -1,32 +1,24 @@
 ---
-title: Analyze Azure cost and usage data in Power BI desktop
+title: Connect to Azure Consumption Insights data in Power BI desktop
 description: Easily connect to Azure and gain insights about consumption and usage using Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ---
 
-# Analyze Azure cost and usage data in Power BI desktop
+# Connect to Azure Consumption Insights data in Power BI desktop
 
-You can use Power BI desktop to connect to Azure and get in-depth data about your organization's Azure service usage. With this data, you can create custom reports and measures to better understand and analyze your Azure spending.
-
-Power BI currently supports connecting to Enterprise Agreement and Customer Agreement billing accounts.
-
-* **Enterprise Agreement** users should connect with the **Azure Consumption Insights connector** (below).
-
-* **Customer Agreement** users should connect with the [**Azure Cost Management connector**](#connect-with-azure-cost-management).
+You can use Power BI desktop to connect to Azure and get in-depth data about your organization's Azure service usage. With this data, you can create custom reports and measures to better understand and analyze your Azure spend.
 
 > [!NOTE]
-> If you're an Enterprise Agreement customer using the Azure Cost Management connector, and you don't see the *Billing Profile ID* in your Cost Management blade, it means you're not in the Modern Commerce Platform. For those cases, use the Azure Consumption Insights connector, which requests the EA enrollment number rather than the *Billing Profile ID*.
-
+> There is limited support for the Microsoft Azure Consumption Insights (Beta). For new functionality, use the [Azure Cost Management connector for Power BI](desktop-connect-azure-cost-management.md).
 
 ## Connect with Azure Consumption Insights
 
@@ -232,112 +224,12 @@ The Azure portal columns and details names are similar in the API and the connec
 | SubscriptionId |subscriptionId |SubscriptionId |Yes |
 | SubscriptionGuid |subscriptionGuid |SubscriptionGuid |No |
 
-## Connect with Azure Cost Management
-
-In this section, you'll learn how to connect to your Customer Agreement billing account.
-
-> [!NOTE]
-> The Azure Cost Management connector currently supports customers on the **Customer Agreement**.  **Enterprise Agreement** customers should use the Microsoft Azure Consumption Insights connector.
->
->
-
-To use the **Azure Cost Management** connector in **Power BI Desktop**:
-
-1. From the **Home** ribbon, select **Get Data**.
-
-1. From the categories on the left, select **Azure**.
-
-1. Select **Azure Cost Management (Beta)** on the right.
-
-1. Select **Connect**.
-
-
-   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
-
-   In the dialog that appears, enter your **Billing profile ID**.
-
-   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-01.png)
-
-You can get your ID from the [Azure portal](https://portal.azure.com):
-
-1. Navigate to **Cost Management + Billing**.
-
-1. Select your billing account.
-
-1. Select **Billing profiles** in the sidebar.
-
-1. Select your billing profile.
-
-1. Select **Properties** in the sidebar.
-
-1. Copy your billing profile ID.
-
-   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-02.png)
-
-   You'll be prompted to sign in with your Azure email and password.  Once you authenticate, you'll be shown a **Navigator** window with 12 available tables:
-
-| Table        | Description |
-|-------------------- | -------------------------------------------------------------|
-| **Billing events** | Event log of new invoices, credit purchases, and more. |
-| **Budgets** | Budget details to view actual costs or usage against existing budget targets. |
-| **Charges** | A month-level summary of Azure usage, market place charges, and charges billed separately. |
-| **Credit lots** | Azure credit lot purchase details for the provided billing profile. |
-| **Credit summary** | Credit summary for provided billing profile. |
-| **Marketplace** | Usage-based Azure Marketplace charges. |
-| **Pricesheets** | Applicable meter rates for the provided billing profile. |
-| **RI charges** | Charges associated to your Reserved Instances over the last 24 months. |
-| **RI recommendations (single)** | Reserved Instance purchase recommendations based on your single subscription usage trends for the last 7, 30 or 60 days. |
-| **RI recommendations (shared)** | Reserved Instance purchase recommendations based on all your subscription usage trends for the last 7, 30 or 60 days. |
-| **RI usage** | Consumption details for your existing Reserved Instances over the last month. |
-| **Usage details** | A breakdown of consumed quantities and estimated charges for the given billing profile ID. |
-
-You can select a table checkbox to see a preview.  You can select one or more tables by checking the box beside their name and selecting **Load**.
-
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-03.png)
-
-When you select **Load**, the data is loaded into **Power BI Desktop**.
-
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
-
-Once the data you selected is loaded, the tables and fields you selected can be seen in the **Fields** pane.
-
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-05.png)
-
-Watch [How to analyze spending in Power BI with Azure Consumption Insights](https://www.youtube.com/watch?v=QKBMXXrlpEk). This video explains reviewing your cost data in Power BI desktop using the Azure Consumption Insights connector.
-
-## Writing custom queries
-
-You can create a custom [M query](/powerquery-m/power-query-m-reference) to customize the number of months, change the API version, or do more advanced logic on the returned data.
-
-In **Power BI Desktop**:
-
-1. Select the **Home** ribbon
-2. Select **Get Data** > **Blank Query**
-
-Or, in **Query Editor**:
-
-1. Right-click in the left **Queries** pane
-2. Select **New Query > Blank Menu** from the menu that appears
-
-In the **Formula bar**, type the following, replacing `billingProfileId` with your actual ID, and "charges" with any valid table name (list above).
-
-```
-let
-    Source = AzureCostManagement.Tables(billingProfileId, [ numberOfMonths = 3 ]),
-    charges = Source{[Key="charges"]}[Data]
-in
-    charges
-```
-
-Besides modifying the `numberOfMonths` to any value between 1 and 36, you can also provide:
-
-* `apiVersion` to customize which API version the query calls.
-* `lookbackWindow`, for RI recommendations (single or shared), to modify the window in which to generate recommendations from (valid options: 7, 30, or 60 days).
 
 ## Next steps
 
 You can connect to many different data sources using Power BI Desktop. For more information, see the following articles:
 
+* [Connect to Azure cost management data in Power BI desktop](desktop-connect-azure-cost-management.md)
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
 * [Data Sources in Power BI Desktop](desktop-data-sources.md)
 * [Shape and Combine Data with Power BI Desktop](desktop-shape-and-combine-data.md)

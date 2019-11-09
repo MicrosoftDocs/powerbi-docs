@@ -2,7 +2,6 @@
 title: Dashboard tiles in Power BI service for consumers
 description: All about dashboard tiles in Power BI for consumers. This includes tiles that are created from SQL Server Reporting Services (SSRS).
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -14,6 +13,9 @@ ms.author: mihart
 LocalizationGroup: Dashboards
 ---
 # Dashboard tiles in Power BI
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 A tile is a snapshot of your data, pinned to the dashboard by a *designer*. *Designers* can create tiles from a report, dataset, dashboard, the Q&A question box, Excel, SQL Server Reporting Services (SSRS), and more.  This screenshot shows many different tiles pinned to a dashboard.
 
 ![Power BI dashboard](./media/end-user-tiles/power-bi-dash.png)

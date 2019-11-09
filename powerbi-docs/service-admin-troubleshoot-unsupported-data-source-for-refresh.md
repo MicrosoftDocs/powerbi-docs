@@ -2,12 +2,11 @@
 title: Troubleshooting unsupported data source for refresh
 description: Troubleshooting unsupported data source for refresh
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 12/06/2017
 ms.author: mblythe
 ms.custom: seodec18
@@ -41,5 +40,5 @@ If you aren’t sure what data source was used, you can find that using the foll
 [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

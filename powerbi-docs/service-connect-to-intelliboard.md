@@ -2,7 +2,6 @@
 title: Connect to IntelliBoard with Power BI
 description: IntelliBoard for Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
@@ -21,7 +20,7 @@ IntelliBoard offers simplified access to your Moodle learning management system 
 Connect to the [IntelliBoard content pack](https://app.powerbi.com/getdata/services/intelliboard) for Power BI.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.  
+1. Select **Get Data** at the bottom of the nav pane.  
    
     ![](media/service-connect-to-intelliboard/getdata.png)
 2. In the **Services** box, select **Get**.  
@@ -64,7 +63,7 @@ The content pack includes data from the following tables:
 An IntelliBoard account with permissions to the above tables is required in order to instantiate this content pack.
 
 ## Next steps
-[What is Power BI?](power-bi-overview.md)
+[What is Power BI?](fundamentals/power-bi-overview.md)
 
 [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
 

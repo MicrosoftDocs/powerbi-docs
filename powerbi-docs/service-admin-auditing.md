@@ -2,7 +2,6 @@
 title: Use auditing within your organization
 description: Learn how you can use auditing with Power BI to monitor and investigate actions taken. You can use the Security and Compliance Center or use PowerShell.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -128,6 +127,22 @@ Import-PSSession $Session
 Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType PowerBI -ResultSize 1000 | Format-Table | More
 ```
 
+## Use PowerShell to export audit logs
+
+You can also use PowerShell to export the results of your audit logs search. The following example shows how to send from the [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) command, and export the results using the [Export-Csv](/powershell/module/microsoft.powershell.utility/export-csv) cmdlet. To run the script, an admin must assign you the appropriate permissions, as described in the [Requirements](#requirements) section.
+
+```powershell
+$UserCredential = Get-Credential
+
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+
+Import-PSSession $Session
+Search-UnifiedAuditLog -StartDate 9/11/2019 -EndDate 9/15/2019 -RecordType PowerBI -ResultSize 5000 |
+Export-Csv -Path "c:\temp\PowerBIAuditLog.csv" -NoTypeInformation
+
+Remove-PSSession $Session
+```
+
 For more information on connecting to Exchange Online, see [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell/). For another example of using PowerShell with audit logs, see [Using Power BI audit log and PowerShell to assign Power BI Pro licenses](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
 
 ## Activities audited by Power BI
@@ -142,7 +157,9 @@ The following activities are audited by Power BI:
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used                       |
 | Analyzed Power BI dataset                         | AnalyzedByExternalApplication               |                                          |
 | Analyzed Power BI report                          | AnalyzeInExcel                              |                                          |
+| Attached dataflow storage account                 | AttachedDataflowStorageAccount              |                                          |
 | Binded Power BI dataset to gateway                | BindToGateway                               |                                          |
+| Cancelled dataflow refresh                        | CancelDataflowRefresh                       |                                          |
 | Changed capacity state                            | ChangeCapacityState                         |                                          |
 | Changed capacity user assignment                  | UpdateCapacityUsersAssignment               |                                          |
 | Changed Power BI dataset connections              | SetAllConnections                           |                                          |
@@ -174,6 +191,7 @@ The following activities are audited by Power BI:
 | Deleted Power BI report                           | DeleteReport                                |                                          |
 | Discovered Power BI dataset data sources          | GetDatasources                              |                                          |
 | Downloaded Power BI report                        | DownloadReport                              |                                          |
+| Edited dataflow properties                        | EditDataflowProperties                      |                                          |
 | Edited Power BI certification permission          | EditCertificationPermission                 | Not currently used                       |
 | Edited Power BI dashboard                         | EditDashboard                               | Not currently used                       |
 | Edited Power BI dataset                           | EditDataset                                 |                                          |
@@ -193,7 +211,7 @@ The following activities are audited by Power BI:
 | Printed Power BI dashboard                        | PrintDashboard                              |                                          |
 | Printed Power BI report page                      | PrintReport                                 |                                          |
 | Published Power BI report to web                  | PublishToWebReport                          |                                          |
-| Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault           | Not currently used                       |
+| Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Removed data source from Power BI gateway         | RemoveDatasourceFromGateway                 |                                          |
 | Removed Power BI group members                    | DeleteGroupMembers                          |                                          |
 | Removed workspace from a capacity                 | RemoveWorkspacesFromCapacity                |                                          |
@@ -201,6 +219,7 @@ The following activities are audited by Power BI:
 | Requested Power BI dataflow refresh               | RequestDataflowRefresh                      | Not currently used                       |
 | Requested Power BI dataset refresh                | RefreshDataset                              |                                          |
 | Retrieved Power BI workspaces                     | GetWorkspaces                               |                                          |
+| Set dataflow storage location for a workspace     | SetDataflowStorageLocationForWorkspace      |                                          |
 | Set scheduled refresh on Power BI dataflow        | SetScheduledRefreshOnDataflow               |                                          |
 | Set scheduled refresh on Power BI dataset         | SetScheduledRefresh                         |                                          |
 | Shared Power BI dashboard                         | ShareDashboard                              |                                          |
@@ -209,10 +228,12 @@ The following activities are audited by Power BI:
 | Started Power BI trial                            | OptInForProTrial                            |                                          |
 | Took over a Power BI datasource                   | TakeOverDatasource                          |                                          |
 | Took over Power BI dataset                        | TakeOverDataset                             |                                          |
+| Took over a Power BI dataflow                     | TookOverDataflow                             |                                          |
 | Unpublished Power BI app                          | UnpublishApp                                |                                          |
 | Update capacity resource governance settings      | UpdateCapacityResourceGovernanceSettings    | Not currently in Microsoft 365 admin center |
 | Updated capacity admin                            | UpdateCapacityAdmins                        |                                          |
 | Updated capacity display name                     | UpdateCapacityDisplayName                   |                                          |
+| Updated dataflow storage assignment permissions   | UpdatedDataflowStorageAssignmentPermissions |                                          |
 | Updated organization's Power BI settings          | UpdatedAdminFeatureSwitch                   |                                          |
 | Updated Power BI app                              | UpdateApp                                   |                                          |
 | Updated Power BI dataflow                         | UpdateDataflow                              |                                          |
@@ -235,4 +256,4 @@ The following activities are audited by Power BI:
 
 [Power BI Admin Portal](service-admin-portal.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
