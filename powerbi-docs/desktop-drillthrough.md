@@ -20,7 +20,7 @@ With *drillthrough* in Power BI Desktop, you can create a page in your report th
 ## Using drillthrough
 1. To use drillthrough, create a report page that has the visuals you want for the type of entity that you're going to provide drillthrough for. 
 
-    For example, let's say you want to provide drillthrough for manufacturers. For this case, you might create a drillthrough page with visuals that show total sales, total units shipped, sales by category, sales by region, and so on. That way, when you drill through to that page, the visuals will be specific to the manufacturer you selected.
+    For example, suppose you want to provide drillthrough for manufacturers. For this case, you might create a drillthrough page with visuals that show total sales, total units shipped, sales by category, sales by region, and so on. That way, when you drill through to that page, the visuals will be specific to the manufacturer you selected.
 
 2. Then, on that drillthrough page, in the **Fields** section of the **Visualizations** pane, drag the field for which you want to enable drillthrough into the **Drillthrough filters** well.
 
@@ -46,7 +46,7 @@ To use your own image for a back button, follow these steps:
 
     ![Drillthrough menu](media/desktop-drillthrough/drillthrough_04.png)
 
-    When report consumers choose to drill through, the page is filtered to show information about the data point on which they right-clicked. For example, lets say they right-clicked on a data point about Contoso (a manufacturer), and selected to drill through. The drillthrough page they go to is filtered to Contoso.
+    When report consumers choose to drill through, the page is filtered to show information about the data point on which they right-clicked. For example, suppose they right-clicked on a data point about Contoso, a manufacturer, and selected to drill through. The drillthrough page they go to is filtered to Contoso.
 
 ## Pass all filters in drillthrough
 
@@ -58,7 +58,7 @@ To keep all applied filters, in the **Drillthrough** section of the **Visualizat
 
 In versions of Power BI Desktop that were released before May 2018, the behavior is the same as having this toggle set to **Off**.
 
-When you then drill through on a visual, you can see which filters were applied because of the source visual having temporary filters applied. In the **Drillthrough** section of the **Visualization** pane, those transient filters are shown in italics. 
+When you then drill through on a visual, you can see which filters were applied as a result of the source visual having temporary filters applied. In the **Drillthrough** section of the **Visualization** pane, those transient filters are shown in italics. 
 
 ![Transient filters in italics](media/desktop-drillthrough/drillthrough_07.png)
 
