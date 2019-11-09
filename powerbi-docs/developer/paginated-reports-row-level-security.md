@@ -61,7 +61,7 @@ You can use **UserId** as a *filter* or in a *query* to the datasource in [Power
 
     ![Power BI Report Builder parameters](media/embedded-paginated-reports-secure-data/parameters.png)
 
-2. In the **Parameter Name** enter **@UserID**, and in the **Parameter Value** add **[&UserID]**.
+2. In the **Parameter Name** enter **\@UserID**, and in the **Parameter Value** add **[&UserID]**.
 
     ![Power BI Report Builder parameter name](media/embedded-paginated-reports-secure-data/parameter-name.png) 
 
