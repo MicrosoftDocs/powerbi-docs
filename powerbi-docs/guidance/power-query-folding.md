@@ -1,5 +1,5 @@
 ---
-title: Query folding guidance for Power BI Desktop
+title: Query folding guidance in Power BI Desktop
 description: Guidance for achieving Power Query query folding in Power BI Desktop.
 author: peter-myers
 ms.reviewer: asaxton
@@ -11,7 +11,7 @@ ms.date: 11/09/2019
 ms.author: v-pemyer
 ---
 
-# Query folding guidance for Power BI Desktop
+# Query folding guidance in Power BI Desktop
 
 This article targets data modelers developing models in Power BI Desktop. It provides best practice guidance on when and how to achieve Power Query  query folding.
 
@@ -23,7 +23,7 @@ In short, for a DirectQuery or Dual storage mode table, the Power Query query mu
 
 The following bulleted list provides best practice guidance.
 
-- **Delegate as much processing to the data source as possible:** When all steps of a Power Query query cannot be folded, discover the step that prevents query folding. When possible, move later steps earlier in sequence so they may be factored into the query folding. Note that the Power Query mashup engine may be smart enough to reorder your query steps when it generates the source query.
+- **Delegate as much processing to the data source as possible:** When all steps of a Power Query query can't be folded, discover the step that prevents query folding. When possible, move later steps earlier in sequence so they may be factored into the query folding. Note that the Power Query mashup engine may be smart enough to reorder your query steps when it generates the source query.
 
     For a relational data source, if the step that prevents query folding could be achieved in a single SELECT statement—or within the procedural logic of a stored procedure—consider using a native query statement, as described next.
 

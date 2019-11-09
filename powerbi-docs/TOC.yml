@@ -1172,7 +1172,9 @@
   - name: "Best practices for dataflows"
     href: service-dataflows-best-practices.md  
   - name: "DirectQuery model guidance in Power BI Desktop"
-    href: guidance/directquery-model-guidance.md  
+    href: guidance/directquery-model-guidance.md
+  - name: "Query folding guidance in Power BI Desktop"
+    href: guidance/power-query-folding.md
   - name: Whitepapers
     items: 
     - name: "Whitepapers overview"
