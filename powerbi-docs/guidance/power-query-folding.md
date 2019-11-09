@@ -1,5 +1,5 @@
 ---
-title: Query folding guidance in Power BI Desktop
+title: Query folding guidance for Power BI Desktop
 description: Guidance for achieving Power Query query folding in Power BI Desktop.
 author: peter-myers
 ms.reviewer: asaxton
@@ -11,7 +11,7 @@ ms.date: 11/09/2019
 ms.author: v-pemyer
 ---
 
-# Query folding guidance in Power BI Desktop
+# Query folding guidance for Power BI Desktop
 
 This article targets data modelers developing models in Power BI Desktop. It provides best practice guidance on when and how to achieve Power Query  query folding.
 
