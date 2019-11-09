@@ -19,9 +19,9 @@ Query folding is the ability for a Power Query query to generate a single query 
 
 ## Guidance
 
-Query folding guidance differs based on the model model.
+Query folding guidance differs based on the model mode.
 
- For a **DirectQuery** or **Dual** storage mode table, the Power Query query must achieve query folding.
+For a **DirectQuery** or **Dual** storage mode table, the Power Query query must achieve query folding.
 
 For an **Import** table, it may be possible to achieve query folding. When the query is based on a relational source, and if a single SELECT statement can be constructed, _best data refresh performance_ is achieved by ensuring that query folding occurs. If the Power Query mashup engine is still required to process transformations, you should strive to minimize the work it needs to do, especially for large datasets.
 
