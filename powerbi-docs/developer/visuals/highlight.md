@@ -3,7 +3,6 @@ title: Highlighting
 description: Data points selections highlighting in Power BI Visuals
 author: zBritva
 ms.author: v-ilgali
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals

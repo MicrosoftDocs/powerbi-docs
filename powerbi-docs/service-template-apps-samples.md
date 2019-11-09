@@ -2,7 +2,6 @@
 title: Template apps samples
 description: Samples for personal use or for redistribution as a AppSource Power BI app
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service

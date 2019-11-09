@@ -2,7 +2,6 @@
 title: Power BI for report designers
 description: Do you connect to data, design queries, and create reports and dashboards in Power BI? Are you a Power BI admin?
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: landing-page

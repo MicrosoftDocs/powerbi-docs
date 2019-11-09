@@ -2,7 +2,6 @@
 title: Power BI for consumers
 description: Getting started with Power BI? Get to know the features and capabilities of the Power BI service, and see what you can do with them as a Power BI consumer or end user.
 author: mihart
-manager: kvivek
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: hub-page
@@ -119,9 +118,9 @@ LocalizationGroup: Get started
                                             </div>
                                             <div class="cardText">
                                                 <h3>Get help</h3>
-                                            <p><a href="https://docs.microsoft.com/en-us/learn/paths/consume-data-with-power-bi/" data-linktype="absolute-path">Microsoft LEARN self-paced training</a></p>
+                                            <p><a href="https://docs.microsoft.com/learn/paths/consume-data-with-power-bi/" data-linktype="absolute-path">Microsoft LEARN self-paced training</a></p>
                                                 <p><a href="https://powerbi.microsoft.com/blog/" data-linktype="absolute-path">Read the Power BI blog</a></p>
-                                                <p><a href="http://community.powerbi.com/" data-linktype="absolute-path">Ask questions in the Power BI forums</a></p>
+                                                <p><a href="https://community.powerbi.com/" data-linktype="absolute-path">Ask questions in the Power BI forums</a></p>
                                             </div>
                                         </div>
                                     </div>

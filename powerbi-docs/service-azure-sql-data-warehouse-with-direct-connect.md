@@ -6,7 +6,6 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ""
 ms.custom: ""
 ms.date: 06/20/2018
@@ -49,7 +48,7 @@ The easiest way to move between your SQL Data Warehouse and Power BI is with the
 
 SQL Data Warehouse is also listed on the Power BI Get Data page. 
 
-1. Select **Get Data** at the bottom of the left navigation pane.  
+1. Select **Get Data** at the bottom of the nav pane.  
 
     ![Get data button](media/service-azure-sql-data-warehouse-with-direct-connect/getdatabutton.png)
 
@@ -97,4 +96,4 @@ Your fully qualified server name and database name can be found in the Azure por
 * [Get Data for Power BI](service-get-data.md)  
 * [Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is/)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

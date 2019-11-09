@@ -2,7 +2,6 @@
 title: Add a custom column in Power BI Desktop
 description: Quickly create a new custom column in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -15,7 +14,7 @@ LocalizationGroup: Create reports
 ---
 # Add a custom column in Power BI Desktop
 
-In Power BI Desktop, you can easily add a new custom column of data to your model by using Query Editor. With Query Editor, you create and rename your custom column to create [PowerQuery M formula queries](https://docs.microsoft.com/en-us/powerquery-m/quick-tour-of-the-power-query-m-formula-language) to define your custom column. PowerQuery M formula queries have a [comprehensive function reference content set](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference). 
+In Power BI Desktop, you can easily add a new custom column of data to your model by using Query Editor. With Query Editor, you create and rename your custom column to create [PowerQuery M formula queries](https://docs.microsoft.com/powerquery-m/quick-tour-of-the-power-query-m-formula-language) to define your custom column. PowerQuery M formula queries have a [comprehensive function reference content set](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference). 
 
 When you create a custom column in Query Editor, Power BI Desktop adds it as an **Applied Step** in the **Query Settings** of the query. It can be changed, moved, or modified at any time.
 
@@ -46,7 +45,7 @@ The **Add Custom Column** window has the following features:
 
 - The initial name of your custom column, in the **New column name** box. You can rename this column.
 
-- [PowerQuery M formula queries](https://docs.microsoft.com/en-us/powerquery-m/power-query-m-function-reference), in the **Custom column formula** box. You create these queries by building the formula on which your new custom column is defined. 
+- [PowerQuery M formula queries](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference), in the **Custom column formula** box. You create these queries by building the formula on which your new custom column is defined. 
 
    ![Add Custom Column page](media/desktop-add-custom-column/add-custom-column_03.png)
 

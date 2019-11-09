@@ -3,7 +3,6 @@ title: Embed with report web part in SharePoint Online
 description: With Power BI's new report web part for SharePoint Online, you can easily embed interactive Power BI reports in SharePoint Online pages.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -118,7 +117,7 @@ Below are the settings you can adjust for the Power BI web part for SharePoint O
 | --- | --- |
 | Page name |Sets the web part's default page. Select a value from the drop-down. If no pages are displayed, either your report has one page, or the URL you pasted contains a page name. Remove the report section from the URL to select a specific page. |
 | Display |Adjusts how the report fits within the SharePoint Online page. |
-| Show Navigation Pane |Shows or hides the page navigation pane. |
+| Show Nav Pane |Shows or hides the page nav pane. |
 | Show Filter Pane |Shows or hides the filter pane. |
 
 ## Reports that do not load
@@ -168,4 +167,4 @@ Users viewing a report in SharePoint need either a **Power BI Pro license** or t
 * [What is Power BI Premium?](service-premium-what-is.md)
 * [Embed report in a secure portal or website](service-embed-secure.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

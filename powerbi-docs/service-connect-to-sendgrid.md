@@ -2,7 +2,6 @@
 title: Connect to SendGrid with Power BI
 description: SendGrid for Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
@@ -21,7 +20,7 @@ The Power BI content pack for SendGrid allows you to extract insights and statis
 Connect to the [SendGrid content pack](https://app.powerbi.com/getdata/services/sendgrid) for Power BI.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
    ![](media/service-connect-to-sendgrid/pbi_getdata.png) 
 2. In the **Services** box, select **Get**.
@@ -33,7 +32,7 @@ Connect to the [SendGrid content pack](https://app.powerbi.com/getdata/services/
 4. When prompted, provide your SendGrid user name and password. Select **Sign In**.
    
    ![](media/service-connect-to-sendgrid/pbi_sendgridsignin.png)
-5. After Power BI imports the data, you see a new dashboard, report, and dataset in the left navigation pane, populated with your email statistics for the past 90 days. New items are marked with a yellow asterisk \*.
+5. After Power BI imports the data, you see a new dashboard, report, and dataset in the nav pane, populated with your email statistics for the past 90 days. New items are marked with a yellow asterisk \*.
    
    ![](media/service-connect-to-sendgrid/pbi_sendgriddash.png)
 

@@ -2,7 +2,6 @@
 title: 'Power BI app configuration settings'
 description: How to customize the behavior of Power BI using MDM tool
 author: paulinbar
-manager: rkarlin
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -55,4 +54,4 @@ The Intune portal enables administrators to easily deploy these settings to the 
 
 * Get the Power BI mobile app from the [App store]("https://apps.apple.com/app/microsoft-power-bi/id929738808) and [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409)
 * Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
-* Join the conversation at the [Power BI Community](http://community.powerbi.com/)
+* Join the conversation at the [Power BI Community](https://community.powerbi.com/)

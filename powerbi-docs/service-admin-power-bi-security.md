@@ -3,7 +3,6 @@ title: Power BI Security
 description: Power BI Security. How Power BI relates to Azure Active Directory and other Azure services. This topic also includes a link to a white paper which goes more in-depth.
 author: davidiseminger
 ms.author: davidi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -41,7 +40,7 @@ The dotted line in the **Back-End** cluster image, above, clarifies the boundary
 
 ## User Authentication
 
-Power BI uses Azure Active Directory ([AAD](http://azure.microsoft.com/services/active-directory/)) to authenticate users who sign in to the Power BI service, and in turn, uses the Power BI login credentials whenever a user attempts to access resources that require authentication. Users sign in to the Power BI service using the email address used to establish their Power BI account; Power BI uses that login email as the *effective username*, which is passed to resources whenever a user attempts to connect to data. The *effective username* is then mapped to a *User Principal Name* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx) and resolved to the associated Windows domain account, against which authentication is applied.
+Power BI uses Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) to authenticate users who sign in to the Power BI service, and in turn, uses the Power BI login credentials whenever a user attempts to access resources that require authentication. Users sign in to the Power BI service using the email address used to establish their Power BI account; Power BI uses that login email as the *effective username*, which is passed to resources whenever a user attempts to connect to data. The *effective username* is then mapped to a *User Principal Name* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx) and resolved to the associated Windows domain account, against which authentication is applied.
 
 For organizations that used work emails for Power BI login (such as <em>david@contoso.com</em>), the *effective username* to UPN mapping is straightforward. For organizations that did not use work emails for Power BI login (such as <em>david@contoso.onmicrosoft.com</em>), mapping between AAD and on-premises credentials will require [directory synchronization](https://technet.microsoft.com/library/jj573653.aspx) to work properly.
 

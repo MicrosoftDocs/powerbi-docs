@@ -2,7 +2,6 @@
 title: Tips for creating stunning reports
 description: Tips and tricks for creating reports in Power BI service and Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: 'willthom'
 
 ms.service: powerbi
@@ -161,7 +160,7 @@ DAX is the calculations formula language in Power BI Desktop.  It's optimized fo
 
 [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx)
 
-[DAX Resource Center](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+[DAX Resource Center](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 
 ## Power BI service *and* Power BI Desktop
 
@@ -221,4 +220,4 @@ A few of our favorite books include:
 
 [Reports in Power BI](consumer/end-user-reports.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

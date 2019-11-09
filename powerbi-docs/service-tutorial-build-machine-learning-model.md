@@ -2,7 +2,6 @@
 title: 'Tutorial: Build a Machine Learning model in Power BI'
 description: In this tutorial you build a Machine Learning model in Power BI.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -44,7 +43,7 @@ You can download the dataset from the UC Irvine website. We also have this avail
 
 To create the entities in your dataflow, sign into the Power BI service and navigate to a workspace on your dedicated capacity that has AI enabled.
 
-If you don't already have a workspace, you can create one by selecting **Workspaces** in the left navigation menu in the Power BI service, and select **Create workspace** at the bottom of the panel that appears. This opens a panel on the right to enter the workspace details. Enter a workspace name and select **Advanced**. Confirm that the workspace uses Dedicated Capacity using the radio button, and that it's assigned to a dedicated capacity instance that has the AI preview turned on. Then select **Save**.
+If you don't already have a workspace, you can create one by selecting **Workspaces** in the nav pane menu in the Power BI service, and select **Create workspace** at the bottom of the panel that appears. This opens a panel on the right to enter the workspace details. Enter a workspace name and select **Advanced**. Confirm that the workspace uses Dedicated Capacity using the radio button, and that it's assigned to a dedicated capacity instance that has the AI preview turned on. Then select **Save**.
 
 ![Create a workspace](media/service-tutorial-build-machine-learning-model/tutorial-machine-learning-model-01.png)
 

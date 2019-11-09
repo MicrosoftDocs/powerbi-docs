@@ -2,7 +2,6 @@
 title: Share a dataset (preview)
 description: As a dataset owner, you can create and share your datasets so others can use them. Learn how to share them.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -50,4 +49,4 @@ When you have a shared dataset in your workspace, you may need to know what repo
 ## Next steps
 
 - [Use datasets across workspaces (Preview)](service-datasets-across-workspaces.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

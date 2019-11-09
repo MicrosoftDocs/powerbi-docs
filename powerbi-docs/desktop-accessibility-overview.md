@@ -2,7 +2,6 @@
 title: Overview of accessibility in Power BI
 description: Features and suggestions for creating accessible Power BI Desktop reports
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

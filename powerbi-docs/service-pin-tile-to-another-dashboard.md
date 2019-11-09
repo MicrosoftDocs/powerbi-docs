@@ -2,7 +2,6 @@
 title: Pin a tile from one dashboard to another dashboard
 description: Pin a tile from one dashboard to another dashboard
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -40,5 +39,5 @@ One way to add a new [dashboard tile](consumer/end-user-tiles.md) is by copying 
 ## Next steps
 [Tiles in Power BI](consumer/end-user-tiles.md)  
 [Dashboards in Power BI](consumer/end-user-dashboards.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 
