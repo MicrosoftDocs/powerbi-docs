@@ -13,7 +13,7 @@ ms.date: 06/18/2019
 
 # Add interactivity into visual by Power BI visuals selections
 
-PowerBI provides two ways of interaction between visuals - selection and filtering. The sample below demonstrates how to select any items in one visual and notify other visuals in the report about new selection state.
+Power BI provides two ways of interaction between visuals - selection and filtering. The sample below demonstrates how to select any items in one visual and notify other visuals in the report about new selection state.
 
 `Selection` object corresponds to interface:
 
@@ -182,7 +182,8 @@ Need to fill the visual data baskets.
 
 There are `Manafacturer` as category (columns), `Type` as series (rows) and `Value` as `Values` for series.
 
-> ![NOTE] The `Values` are required for series, because according data view mapping the visual expects that `Values` will be groped by `Rows` data.
+> ![NOTE]
+> The `Values` are required for series, because according data view mapping the visual expects that `Values` will be groped by `Rows` data.
 
 #### Create selections for categories
 

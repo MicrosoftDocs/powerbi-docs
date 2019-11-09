@@ -69,6 +69,8 @@
         href: visuals/enable-sync-slicers.md
       - name: "Troubleshoot Power BI visuals"
         href: ../power-bi-custom-visuals-troubleshoot.md
+      - name: "Migrate to the new powerbi-visuals-tools"
+        href: visuals/migrate-to-new-tools.md
     - name: Reference
       items: 
       - name: "Landing page" 

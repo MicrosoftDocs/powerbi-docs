@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/18/2019
 ---
 
-# Migrate to powerbi-visuals-tools 3.x.x
+# Migrate to the new powerbi-visuals-tools 3.x.x
 
 Starting from version 3, Power BI Visuals Tools use Webpack to build Custom Visuals.
 The new version brings many new opportunities for developers to create visuals:
@@ -210,7 +210,7 @@ The tools [doesn't require](https://github.com/Microsoft/PowerBI-visuals-sampleB
 
 Call the typical commands `npm run package` to create the visual package or `npm run start` to start dev server.
 
-## Updating D3.js library to the version 5
+## Updating D3.js library to version 5
 
 With new tools, you can start using the new version of D3.js library.
 
