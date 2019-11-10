@@ -36,6 +36,11 @@ You can now see sensitivity labels that content owners have set on reports, dash
 
 Support for custom app navigation has now been added for Windows devices in addition to iOS and Android (see [September's What's new entry](#september-2019)).
 
+### Android support added for remote configuration of report server access settings
+
+IT admins can now use their organization's MDM tool to remotely configure report server access settings in the Power BI mobile app on both iOS and Android devices. Remote configuration on iOS devices was introduced in [May 2018](./#ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely). See [Configure Power BI mobile app access to a report server remotely](../../report-server/configure-powerbi-mobile-apps-remote) for more information.
+
+
 ## September 2019
 
 ### Support for custom app navigation (iOS and Android)
