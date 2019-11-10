@@ -1,5 +1,5 @@
 ---
-title: Configure mobile app access to a report server remotely
+title: Configure mobile app access to Report Server remotely
 description: Learn how to configure the mobile apps remotely for your report server.
 author: paulinbar
 ms.reviewer: ''
@@ -11,7 +11,7 @@ ms.date: 11/07/2019
 ms.author: painbar
 
 ---
-# Configure Power BI mobile app access to a report server remotely
+# Configure Power BI mobile app access to Report Server remotely
 
 Applies to:
 
@@ -19,9 +19,9 @@ Applies to:
 |:--- |:--- |
 | iOS |Android |
 
-In this article, learn how to use your organization's MDM tool to configure Power BI mobile app access to a report server. To configure it, IT administrators create an app configuration policy with the required information to be pushed to the app. 
+In this article, learn how to use your organization's MDM tool to configure Power BI mobile app access to Report Server. To configure it, IT administrators create an app configuration policy with the required information to be pushed to the app. 
 
- With the report server connection already configured, Power BI mobile app users can connect to their organization's report server more easily. 
+ With the Report Server connection already configured, Power BI mobile app users can connect to their organization's Report Server more easily. 
 
 ## Create the app configuration policy in MDM tool 
 
@@ -45,11 +45,11 @@ Here's an example of setting the configuration policy using Intune.
 
 ![Intune configuration settings](media/configure-powerbi-mobile-apps-remote/power-bi-ios-remote-configuration-settings.png)
 
-## End users connecting to a report server
+## End users connecting to Report Server
 
  Say you publish the app configuration policy for a distribution list. When users and devices on that distribution list start the mobile app, they have the following experience. 
 
-1. They see a message that their mobile app is configured with a report server, and tap **Sign in**.
+1. They see a message that their mobile app is configured with a Report Server, and tap **Sign in**.
 
     ![Sign in to the report server](media/configure-powerbi-mobile-apps-remote/power-bi-config-server-sign-in.png)
 
@@ -61,7 +61,7 @@ Here's an example of setting the configuration policy using Intune.
 
     ![Report server details filled in](media/configure-powerbi-mobile-apps-remote/power-bi-config-server-address.png)
 
-Now they can view and interact with KPIs and Power BI reports stored on the report server.
+Now they can view and interact with KPIs and Power BI reports stored on the Report Server.
 
 ## Next steps
 

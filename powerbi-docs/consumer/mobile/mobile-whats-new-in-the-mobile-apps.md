@@ -20,6 +20,10 @@ For related "What's New" information, see:
 
 ## October 2019
 
+### Android support for remote configuration of Report Server access settings
+
+We added Android support for remote configuration of the Power BI mobile app's Report Server access settings. IT admins can now use their organization's MDM tool to remotely configure those settings on both iOS and Android devices. See [Configure Power BI mobile app access to Report Server remotely](../../report-server/configure-powerbi-mobile-apps-remote) for details.
+
 ### Cross-report drillthrough
 
 This month we've added support for cross-report drillthrough. You can now tap on a data point to drill through to access other reports and report pages. When you drill through to a target page, the content in that page is filtered based on the drillthrough settings.
