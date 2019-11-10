@@ -61,5 +61,5 @@ var report = powerbi.embed(embedContainer, config);
 ## Next steps
 
 If you're new to embedding in Power BI, review these tutorials to learn how to embed your Power BI content:
-* [Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
+* [Tutorial: Embed Power BI content into an application for your customers](embed-sample-for-customers.md)
 * [Tutorial: Embed Power BI content into an application for your organization](embed-sample-for-your-organization.md)
