@@ -44,7 +44,7 @@ However, while there are compelling advantages associated with Import models, th
 
 - The entire model must be loaded to memory before Power BI can query the model, which can place pressure on available capacity resources—especially as the number and size of Import models grow
 - Model data is only as current as the latest refresh, and so Import models need to be refreshed, usually on a scheduled basis
-- A full refresh will remove all data from all tables and reload it from the data source. This operation can be very expensive in terms of time and resources for the Power BI service, and the data source(s).
+- A full refresh will remove all data from all tables and reload it from the data source. This operation can be expensive in terms of time and resources for the Power BI service, and the data source(s).
 
     > [!NOTE]
     > Power BI can achieve incremental refresh to avoid truncating and reloading entire tables. However, this feature is only supported when the dataset is hosted in workspaces on Premium capacities. For more information, see the [Incremental refresh in Power BI Premium](service-premium-incremental-refresh.md) article.
@@ -80,9 +80,9 @@ However, there are many disadvantages and limitations associated with DirectQuer
     > [!TIP]
     > Many Microsoft data sources are supported. Microsoft data sources include SQL Server, Azure Data Bricks, Azure HDInsight Spark (Beta), Azure SQL Database and Azure SQL Data Warehouse. For more information, see the [Data sources supported by Direct Query in Power BI](desktop-directquery-data-sources.md) article.
 
-- Performance can be slow, potentially negatively impacting on the Power BI service. This could be because some queries can be very CPU-intensive for the Power BI service. It could also be because the data source is not optimized for the queries that Power BI sends.
+- Performance can be slow, potentially negatively impacting on the Power BI service. This issue could arise be because some queries are CPU-intensive for the Power BI service. It could also be because the data source isn't optimized for the queries that Power BI sends.
 - Power Query queries must be fold-able. This requirement means that Power Query logic can't be overly complex. Further, the logic must be limited to use M expressions and functions that can be transposed to native SQL queries understood by the data source.
-- DAX formula are limited to use only functions that can be transposed to native SQL queries understood by the data source. Also, there's no support for calculated tables or DAX Time Intelligence functions.
+- DAX formulas are limited to use only functions that can be transposed to native SQL queries understood by the data source. Also, there's no support for calculated tables or DAX Time Intelligence functions.
 - Model queries that require retrieval of more than one million rows will fail
 - Reports and dashboards with multiple visuals can display inconsistent results, especially when the data source is volatile
 - The Q&A and Quick Insights features aren't supported
@@ -90,7 +90,7 @@ However, there are many disadvantages and limitations associated with DirectQuer
 From a Power BI service resource perspective, DirectQuery models require:
 
 - Minimal memory to load the model (metadata only) when it's queried
-- Sometimes the Power BI service must use significant processor resources to generate and process queries sent to the data source. When this happens, it can impact on throughput, especially when concurrent users are querying the model.
+- Sometimes the Power BI service must use significant processor resources to generate and process queries sent to the data source. When this situation arises, it can impact on throughput, especially when concurrent users are querying the model.
 
 For more information, see the [Use Direct Query in Power BI Desktop](desktop-use-directquery.md) article.
 
