@@ -2,7 +2,6 @@
 title: Filters and highlighting in Power BI reports
 description: About filters and highlighting in Power BI reports
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -96,5 +95,5 @@ Select a value or axis label in a visual to highlight the other visuals on the p
 
 [Change how report visuals cross-filter and cross-highlight each other](consumer/end-user-interactions.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

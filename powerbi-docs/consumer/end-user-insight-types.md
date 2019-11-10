@@ -2,7 +2,6 @@
 title: Types of Insights supported by Power BI
 description: Quick Insights and View insights with Power BI.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -73,5 +72,5 @@ For data across a time series, detects when there are specific dates or times wi
 ## Next steps
 [Power BI insights](end-user-insights.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

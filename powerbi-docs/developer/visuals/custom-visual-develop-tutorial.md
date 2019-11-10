@@ -3,7 +3,6 @@ title: Developing a Power BI visual
 description: A tutorial on how to develop a Power BI custom visual
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -235,7 +234,7 @@ In this section, we are going to test the CircleCard custom visual by uploading 
     ![Get Data](media/custom-visual-develop-tutorial/get-data.png)
     ![Local File](media/custom-visual-develop-tutorial/local-file.png)
 
-    Now to view the report, select **US_Sales_Analysis** from the **Report** section in the navigation pane on the left.
+    Now to view the report, select **US_Sales_Analysis** from the **Report** section in the nav pane on the left.
 
     ![Custom Visual Desktop sample](media/custom-visual-develop-tutorial/custom-visual-sample.png)
 

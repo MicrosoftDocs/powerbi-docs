@@ -3,7 +3,6 @@ title: Create a dataset
 description: Walkthrough - Push data into a dataset - Create a dataset in Power BI
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -231,5 +230,5 @@ namespace walkthrough_push_data
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

@@ -2,7 +2,6 @@
 title: Find content in the Power BI service
 description: Start on the Home canvas and locate and open reports, dashboards, and apps.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -24,7 +23,7 @@ When you sign in, Power BI opens and displays your Home canvas, as shown in the 
 Power BI Home offers three different ways of locating and viewing your content. All three access the same pool of content, they’re merely different ways of getting to that content. Occasionally, searching will be the easiest and quickest way to find something, while other times, selecting a *card* on the Home canvas will be your best option.
 
 - The Home canvas displays and organizes your favorite and most recent content, along with recommended content and learning resources. Each piece of content displays as a *card*, with a title and icon. Selecting a card opens that content.
-- Along the left side, is a navigation pane, referred to as the nav bar. On this pane, your same content is organized a little differently, by Favorites, Recent, Apps, and Shared with me. From here, you can view lists of content and select the one to open.
+- Along the left side, is a nav pane, referred to as the nav pane. On this pane, your same content is organized a little differently, by Favorites, Recent, Apps, and Shared with me. From here, you can view lists of content and select the one to open.
 - In the upper right corner, the global search box lets you search for content by title, name, or keyword.
 
 The following topics review each of these options for finding and viewing content.
@@ -61,23 +60,23 @@ Based on your activity and account settings, Power BI displays a set of recommen
 ### Learning resources
 At the bottom of the Home canvas is a set of learning resources. The exact resources that appear depend on your activity and settings and Power BI administrator. 
  
-## Explore the navigation pane (nav bar)
+## Explore the nav pane
 
-![A screenshot of the navigation bar for the Power BI service.](media/end-user-home/power-bi-nav-bar.png)
+![A screenshot of the nav pane for the Power BI service.](media/end-user-home/power-bi-nav-bar.png)
 
 
-Use the left navigation pane (nav bar) to locate and move between dashboards, reports, and apps. Occasionally, using the nav bar will be the quickest way to get to content.
-The nav bar is there when you open your Home landing page, and remains static as you open other areas of the Power BI service.
+Use the nav pane to locate and move between dashboards, reports, and apps. Occasionally, using the nav pane will be the quickest way to get to content.
+The nav pane is there when you open your Home landing page, and remains static as you open other areas of the Power BI service.
   
-The nav bar organizes your content into containers that are similar to what you’ve already seen on the Home canvas: Favorites, Recent, Apps, and Shared with me. Using the flyouts, you can view just the most-recent content in each of these containers, or you can navigate to content lists to see all content for each container category.
+The nav pane organizes your content into containers that are similar to what you’ve already seen on the Home canvas: Favorites, Recent, Apps, and Shared with me. Using the flyouts, you can view just the most-recent content in each of these containers, or you can navigate to content lists to see all content for each container category.
  
 - To open one of these content sections and display a list of all items, select the heading.
 - To see the most recent in each container, select the flyout (**>**).
 
-    ![A video of using the nav bar for Recent](media/end-user-home/power-bi-nav-bar.gif)
+    ![A video of using the nav pane for Recent](media/end-user-home/power-bi-nav-bar.gif)
 
  
-The nav bar is another way for you to find the content you want, quickly. Content is organized in a manner similar to the Home canvas, but shown in lists instead of cards. 
+The nav pane is another way for you to find the content you want, quickly. Content is organized in a manner similar to the Home canvas, but shown in lists instead of cards. 
 
 ## Search all of your content
 Sometimes, the fastest way to find your content is to search for it. For example, perhaps you’ve discovered that a dashboard you haven’t used in a while isn’t showing up on your Home canvas. Or, perhaps you remember that your colleague, Aaron, shared it with you, but you don’t remember what he called it or what type of content he shared, whether it was a dashboard or a report.

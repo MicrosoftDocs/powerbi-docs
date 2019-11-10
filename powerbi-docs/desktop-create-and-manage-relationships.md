@@ -2,7 +2,6 @@
 title: Create and manage relationships in Power BI Desktop
 description: Create and manage relationships in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

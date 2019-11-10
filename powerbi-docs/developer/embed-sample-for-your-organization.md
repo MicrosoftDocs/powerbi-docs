@@ -3,7 +3,6 @@ title: Embedded analytics to embed Power BI content in your application for your
 description: Learn how to integrate or embed, a report (Power BI or Paginated), dashboard, or tile into an application using the Power BI APIs for embedded analytics for your organization. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
 author: rkarlin
 ms.author: rkarlin 
-manager: kfile
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -114,7 +113,7 @@ To get the **applicationId**, follow these steps:
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 
-2. In the left-hand navigation pane, select **All Services**, and select **App Registrations**.
+2. In the left-hand nav pane, select **All Services**, and select **App Registrations**.
 
 3. Select the application that needs the **applicationId**.
 
@@ -426,4 +425,4 @@ In this tutorial, you learned how to embed Power BI content into an application 
 > [!div class="nextstepaction"]
 >[Embed for your customers](embed-sample-for-customers.md)
 
-If you have more questions, [try asking the Power BI Community](http://community.powerbi.com/).
+If you have more questions, [try asking the Power BI Community](https://community.powerbi.com/).

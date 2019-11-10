@@ -3,7 +3,6 @@ title: Power BI admin portal
 description: The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Microsoft 365 admin center, and settings.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -543,7 +542,7 @@ As an administrator, you can customize the look of Power BI for your whole organ
 * **Select Theme color**: You are able to select your theme based on a hex #, RGB, value, or from the provided pallet.
 
 
-For more information, see [Custom branding for your organization](http://aka.ms/orgBranding).
+For more information, see [Custom branding for your organization](https://aka.ms/orgBranding).
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 ## Next steps

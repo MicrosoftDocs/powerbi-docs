@@ -2,7 +2,6 @@
 title: Run and view insights on dashboard tiles
 description: As a Power BI end user, learn how to get insights about your dashboard tiles.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
 

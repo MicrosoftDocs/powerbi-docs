@@ -2,7 +2,6 @@
 title: Focus mode and full screen mode - how to zoom in to see more detail
 description: Documentation for displaying a Power BI dashboard, dashboard tile, report, or report visual in focus mode or full screen mode
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: dtdLul6otYE
 
@@ -35,7 +34,7 @@ Focus mode and full screen mode are two different ways to see more detail in you
 
 ![dashboard full screen mode before and after](media/end-user-focus/power-bi-dashboards-focus.png)
 
-Display your Power BI service content (dashboards, report pages, tiles, and visuals) without the distraction of menus and navigation bars.  You get an unadulterated, full view of your content at a glance, all the time. This is sometimes referred to as TV mode.   
+Display your Power BI service content (dashboards, report pages, tiles, and visuals) without the distraction of menus and nav panes.  You get an unadulterated, full view of your content at a glance, all the time. This is sometimes referred to as TV mode.   
 
 To open full screen mode, select the **full screen** icon ![full screen icon ](media/end-user-focus/power-bi-full-screen-icon.png) from the Power BI service menu bar above your dashboard, report, tile in focus mode, or visual in focus mode.  Your selected content fills the entire screen.
 If you're using Power BI mobile, [full screen is available for Windows 10 mobile apps](./mobile/mobile-windows-10-app-presentation-mode.md). 
@@ -57,7 +56,7 @@ While in focus mode, a Power BI *consumer* can interact with any filters that we
 
 ## Working in full screen mode
 
-To open either a dashboard or report page in full screen mode, select the full screen icon ![full screen icon](media/end-user-focus/power-bi-full-screen-icon.png) from the top navigation bar. Once you're in full screen mode, moving  your mouse or cursor reveals a contextual menu. Because full screen is available for such a wide variety of content, the options in the contextual menu are each a little different but fairly self-explanatory.  Simply hover over an icon for a definition.
+To open either a dashboard or report page in full screen mode, select the full screen icon ![full screen icon](media/end-user-focus/power-bi-full-screen-icon.png) from the top nav pane. Once you're in full screen mode, moving  your mouse or cursor reveals a contextual menu. Because full screen is available for such a wide variety of content, the options in the contextual menu are each a little different but fairly self-explanatory.  Simply hover over an icon for a definition.
 
 Menu for dashboards    
 ![Menu for dashboards](media/end-user-focus/power-bi-full-screen-dash.png)    

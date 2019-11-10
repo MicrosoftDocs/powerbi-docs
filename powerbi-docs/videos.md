@@ -2,7 +2,6 @@
 title: Power BI videos
 description: Power BI Videos and link to YouTube channel.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.custom: seodec18
@@ -45,5 +44,5 @@ Check out the following collection of sources and content for more videos.
 ## Next steps
 [What is Power BI?](fundamentals/power-bi-overview.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

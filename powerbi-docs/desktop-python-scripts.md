@@ -2,7 +2,6 @@
 title: Run Python Scripts in Power BI Desktop
 description: Running Python Scripts in Power BI Desktop
 author: otarb
-manager: rajatt
 ms.reviewer: ''
 
 ms.service: powerbi

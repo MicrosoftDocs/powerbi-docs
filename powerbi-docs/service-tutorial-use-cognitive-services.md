@@ -2,7 +2,6 @@
 title: 'Tutorial: Use Cognitive Services in Power BI (Preview)'
 description: In this tutorial you use Cognitive Services and dataflows in Power BI.
 author: davidiseminger
-manager: kfile
 ms.reviewer: SarinaJoan
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Connect to Snowflake computing warehouse in Power BI Desktop
 description: Easily connect to and use a Snowflake computing warehouse in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -17,7 +16,7 @@ LocalizationGroup: Connect to data
 In Power BI Desktop, you can connect to a **Snowflake** computing warehouse and use the underlying data just like any other data source in Power BI Desktop. 
 
 > [!NOTE]
-> You also *must* install the **Snowflake ODBC driver** on computers that use the **Snowflake** connector, using the architecture that matches the installation of **Power BI Desktop**, either 32-bit or 64-bit. Just follow the following link and [download the appropriate Snowflake ODBC driver](http://go.microsoft.com/fwlink/?LinkID=823762).
+> You also *must* install the **Snowflake ODBC driver** on computers that use the **Snowflake** connector, using the architecture that matches the installation of **Power BI Desktop**, either 32-bit or 64-bit. Just follow the following link and [download the appropriate Snowflake ODBC driver](https://go.microsoft.com/fwlink/?LinkID=823762).
 > 
 > 
 
