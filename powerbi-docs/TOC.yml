@@ -809,58 +809,20 @@
           href: service-connect-to-services.md
         - name: "Acumatica"
           href: service-connect-to-acumatica.md
-        - name: "Alpine Metrics Sales Predictions"
-          href: service-connect-to-alpine-metrics.md
-        - name: "appFigures"
-          href: service-connect-to-appfigures.md
-        - name: "Application Insights"
-          href: service-connect-to-application-insights.md
         - name: "Azure Audit Logs"
           href: service-connect-to-azure-audit-logs.md
-        - name: "Azure Mobile Engagement"
-          href: service-connect-to-azure-mobile.md
-        - name: "ClickDimensions"
-          href: service-connect-to-clickdimensions.md
-        - name: "comScore Digital Analytix"
-          href: service-connect-to-connect-to.md
         - name: "GitHub"
           href: service-connect-to-github.md
-        - name: "Insightly"
-          href: service-connect-to-insightly.md
-        - name: "IntelliBoard"
-          href: service-connect-to-intelliboard.md
-        - name: "Lithium"
-          href: service-connect-to-lithium.md
-        - name: "Mandrill"
-          href: service-connect-to-mandrill.md
         - name: "Office365Mon"
           href: service-connect-to-office365mon.md
-        - name: "Prevedere"
-          href: service-connect-to-prevedere.md
         - name: "Project Online"
           href: service-connect-to-project-online.md
         - name: "QuickBooks Online"
           href: service-connect-to-quickbooks-online.md
         - name: "Salesforce"
           href: service-connect-to-salesforce.md
-        - name: "SendGrid"
-          href: service-connect-to-sendgrid.md
-        - name: "ServiceNow Incidents"
-          href: service-connect-to-servicenow.md
         - name: "Smartsheet"
           href: service-connect-to-smartsheet.md
-        - name: "SQL Sentry"
-          href: service-connect-to-sql-sentry.md
-        - name: "SweetIQ"
-          href: service-connect-to-sweetiq.md
-        - name: "Troux"
-          href: service-connect-to-troux.md
-        - name: "Twilio"
-          href: service-connect-to-twilio.md
-        - name: "VMob"
-          href: service-connect-to-vmob.md
-        - name: "Windows Dev Center"
-          href: service-connect-to-windows-dev-center.md
         - name: "Xero"
           href: service-connect-to-xero.md
         - name: "Zendesk"
