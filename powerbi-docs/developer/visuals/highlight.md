@@ -22,6 +22,9 @@ If you set the `supportsHighlight` property in your `capabilities.json` to `true
 
 In the example, you'll notice that 1 bar is selected. And it's the only value in the highlights array. It's also important to note that there could be multiple selections and partial highlights. The highlighted values will be presented in the data view.
 
+> [!Note]
+> Table data view mapping doesn't support highlights feature
+
 ## Highlight data points with categorical data view mapping
 
 The visuals with categorical data view mapping have `capabilities.json` with `"supportsHighlight": true` parameter. For example:
