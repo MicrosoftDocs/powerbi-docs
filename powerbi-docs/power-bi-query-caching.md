@@ -3,7 +3,6 @@ title: Query caching in Power BI Premium
 description: Query caching in Power BI Premium
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: 'bhmerc'
 
 ms.service: powerbi

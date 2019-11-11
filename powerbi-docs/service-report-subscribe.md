@@ -2,7 +2,6 @@
 title: Subscribe yourself and others to reports and dashboards
 description: Learn how to subscribe yourself and others to a snapshot of a Power BI report page, dashboard, or paginated report.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: 
 
@@ -105,5 +104,5 @@ A subscription ends if the Pro license expires, the owner deletes the dashboard 
 ## Next steps
 
 - [Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscriptions.md)
-- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)    
+- More questions? [Try asking the Power BI Community](https://community.powerbi.com/)    
 - [Read the blog post](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)

@@ -2,7 +2,6 @@
 title: Data sources in Power BI Desktop
 description: Data sources in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

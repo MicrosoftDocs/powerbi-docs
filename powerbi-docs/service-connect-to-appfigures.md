@@ -2,7 +2,6 @@
 title: Connect to appFigures with Power BI
 description: appFigures for Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
@@ -21,7 +20,7 @@ Tracking important statistics about your apps is easy with Power BI and the appF
 Connect to the [appFigures content pack](https://app.powerbi.com/getdata/services/appfigures) or read more about the [appFigures integration](https://powerbi.microsoft.com/integrations/appfigures) with Power BI.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
    ![](media/service-connect-to-appfigures/pbi_getdata.png)
 2. In the **Services** box, select **Get**.
@@ -35,7 +34,7 @@ Connect to the [appFigures content pack](https://app.powerbi.com/getdata/service
    The first time you connect, Power BI prompts you to allow read-only access to your account. Select **Allow** to begin the import process. This can take a few minutes depending on the volume of data in your account.
    
    ![](media/service-connect-to-appfigures/appfiguresdoc_06.png)
-5. After Power BI imports the data you will see a new dashboard, report, and dataset in the left navigation pane. New items are marked with a yellow asterisk \*:
+5. After Power BI imports the data you will see a new dashboard, report, and dataset in the nav pane. New items are marked with a yellow asterisk \*:
    
     ![](media/service-connect-to-appfigures/pbi_appfigures3.png)
 6. Select the appFigures dashboard. This is the default dashboard that Power BI creates to display your data. You can modify this dashboard to display your data in any way you want.

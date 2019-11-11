@@ -3,7 +3,6 @@ title: Service principal with Power BI
 description: Learn how to register an application within Azure Active Directory using service principal for use with embedding Power BI content.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer

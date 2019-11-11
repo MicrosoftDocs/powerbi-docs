@@ -2,7 +2,6 @@
 title: Connect to Windows Dev Center with Power BI
 description: Windows Dev Center for Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
@@ -19,7 +18,7 @@ Explore and monitor your Windows Dev Center app analytics data in Power BI with 
 Connect to the [Windows Dev Center content pack](https://app.powerbi.com/getdata/services/devcenter) for Power BI.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
    ![](media/service-connect-to-windows-dev-center/getdata.png)
 2. In the **Services** box, select **Get**.
@@ -36,7 +35,7 @@ Connect to the [Windows Dev Center content pack](https://app.powerbi.com/getdata
     ![](media/service-connect-to-windows-dev-center/creds.png)
    
     ![](media/service-connect-to-windows-dev-center/creds2.png)
-6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data and choose a tile to navigate to the underlying reports.
+6. After approving, the import process will begin automatically. When complete, a new dashboard, report and model will appear in the nav pane. Select the dashboard to view your imported data and choose a tile to navigate to the underlying reports.
    
     ![](media/service-connect-to-windows-dev-center/dashboard.png)
    

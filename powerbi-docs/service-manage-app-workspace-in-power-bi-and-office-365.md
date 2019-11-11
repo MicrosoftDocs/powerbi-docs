@@ -2,7 +2,6 @@
 title: Manage your workspace in Power BI and Office 365
 description: Workspaces in Power BI are a collaborative experience built on Office 365 groups. Manage your workspaces in Power BI and also in Office 365.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -82,4 +81,4 @@ When you distribute your app from the workspace, the image you add here is the i
 
 * [Publish an app in Power BI](service-create-distribute-apps.md)
 
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)

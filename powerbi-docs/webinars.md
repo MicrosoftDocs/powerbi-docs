@@ -2,7 +2,6 @@
 title: Power BI webinars
 description: Power BI webinars
 author: v-tatero
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

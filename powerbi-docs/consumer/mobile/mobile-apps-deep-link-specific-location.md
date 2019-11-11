@@ -2,7 +2,6 @@
 title: Create a link to a specific location in the Power BI mobile apps
 description: Learn how to create a deep link to a specific dashboard, tile, or report in the Power BI mobile app with a uniform resource identifier (URI).
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -115,6 +114,6 @@ Your feedback helps us decide what to implement in the future, so don’t forget
 
 * [Power BI apps for mobile devices](mobile-apps-for-mobile-devices.md)
 * Follow @MSPowerBI on Twitter
-* Join the conversation at the [Power BI Community](http://community.powerbi.com/)
+* Join the conversation at the [Power BI Community](https://community.powerbi.com/)
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
 

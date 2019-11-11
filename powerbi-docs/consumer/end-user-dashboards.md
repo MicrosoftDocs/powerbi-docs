@@ -2,7 +2,6 @@
 title: What is a dashboard and how do I open it?
 description: Dashboards are a key feature of Power BI service.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi

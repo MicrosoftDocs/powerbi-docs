@@ -2,7 +2,6 @@
 title: Automatic page refresh in Power BI Desktop (preview)
 description: Learn how to automatically refresh pages for DirectQuery sources in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.custom:

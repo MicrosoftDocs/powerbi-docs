@@ -202,4 +202,4 @@ You should do some cleanup within Azure.
 [Workspace Collection analytics capacity planning whitepaper](https://aka.ms/pbiewhitepaper)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

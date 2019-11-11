@@ -2,7 +2,6 @@
 title: Connect to Prevedere with Power BI
 description: Prevedere for Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
@@ -24,7 +23,7 @@ Connect to the [Prevedere content pack](https://app.powerbi.com/getdata/services
 >If you are not an existing Prevedere user, please use the [sample key](https://prevederepowerbiconnector.azurewebsites.net/static/learnmore.html) to try it out.
 
 ## How to connect
-1. Select **Get Data** at the bottom of the left navigation pane.
+1. Select **Get Data** at the bottom of the nav pane.
    
    ![](media/service-connect-to-prevedere/getdata.png)
 2. In the **Services** box, select **Get**.
@@ -36,7 +35,7 @@ Connect to the [Prevedere content pack](https://app.powerbi.com/getdata/services
 4. For **Authentication Method**, select **Key** and enter your Prevedere API key.
    
     ![](media/service-connect-to-prevedere/creds.png)
-5. Select **Sign in** to begin the import process. When complete, a new dashboard, report and model will appear in the Navigation Pane. Select the dashboard to view your imported data.
+5. Select **Sign in** to begin the import process. When complete, a new dashboard, report and model will appear in the nav pane. Select the dashboard to view your imported data.
    
      ![](media/service-connect-to-prevedere/dashboard.png)
 
