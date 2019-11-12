@@ -2,14 +2,13 @@
 title: Tips and tricks for asking questions with Q&A
 description: Tips and tricks for asking questions with Q&A in Power BI
 author: mihart
-manager: kvivek
-ms.reviewer: ''
-ms.custom: seodec18
+ms.reviewer: 'Mohammad'
+
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 10/23/2019
 ms.author: mihart
 
 LocalizationGroup: Ask questions of your data
@@ -75,7 +74,9 @@ Q&A does its best to understand and answer the question being asked. It tries to
 * provides a preview of the answer in the form of a visual. The visual updates as you type and edit the question (it doesn't wait for you to press Enter).
 * suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
 * restates the question based on the data in the underlying dataset(s). Q&A replaces the words you used with synonyms from the underlying dataset(s). By reading the restatement, you know whether Q&A understood your question or not. 
-* dims words it doesn't understand.
+* adds a double underline to words it doesn't understand.
+* adds a single underline to words it does understand.
+* allows you to contact the report or dashboard owner when your term isn't found or your question doesn't get results.
 
 ## Don't stop now
 After Q&A displays your results, keep the conversation going! Use the interactive features of the visual and of Q&A to uncover more insights.
@@ -85,5 +86,5 @@ Back to [Q&A in Power BI](end-user-q-and-a.md)
 
 [Power BI - Basic Concepts](end-user-basic-concepts.md)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

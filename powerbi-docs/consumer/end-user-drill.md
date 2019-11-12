@@ -2,16 +2,17 @@
 title: Drill down and drill up in a visual
 description: This article shows how to drill down in a visual in the Microsoft Power BI service.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/1/2019
+ms.date: 10/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
 # Drill mode in a visual in Power BI
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 This article shows how to drill down in a visual in the Microsoft Power BI service. Using drill down and drill up on your data points, you can explore in-depth details about your data. 
 
@@ -120,7 +121,7 @@ Having a treemap that shows us only a postal code isn't informative.  So let's *
 ## Show the data as you drill
 Use **Show data** to get a look behind the scenes. Each time you drill or expand, **Show data** displays the data being used to build the visual. This may help you understand how hierarchies, drill, and expand work together to build visuals. 
 
-In the upper-right corner, select the ellipses (...), and then select **Show Data**. 
+In the upper-right corner, select **More options** (...), and then select **Show Data**. 
 
 ![Screenshot of the ellipses menu.](./media/end-user-drill/power-bi-ellipses.png)
 
@@ -145,4 +146,4 @@ By default, drilling won't filter other visuals in a report. However, the report
 
 [Power BI - Basic Concepts](end-user-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

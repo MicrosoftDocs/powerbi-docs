@@ -2,7 +2,6 @@
 title: Configure scheduled refresh
 description: This covers the steps to select a gateway and configure scheduled refresh.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu''
 
 ms.service: powerbi
@@ -26,7 +25,7 @@ This will describe the options available for both the [On-premises data gateway 
 
 To get to the **Scheduled refresh** screen, you can do the following.
 
-1. Select the **ellipsis (...)** next to a dataset listed under **Datasets**.
+1. Select **More options** (...) next to a dataset listed under **Datasets**.
 2. Select **Schedule Refresh**.
 
     ![Schedule Refresh](media/refresh-scheduled-refresh/dataset-menu.png)
@@ -123,5 +122,5 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 - [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)  
 - [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

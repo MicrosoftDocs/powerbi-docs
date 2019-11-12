@@ -3,7 +3,6 @@ title: Visuals in Power BI
 description: Custom visualizations in Power BI
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -18,7 +17,7 @@ When creating or editing a Power BI report, you can use many different types of 
 
 ![visualizations](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
-However, you aren't limited to this set of visuals. If you select the ellipses (...) at the bottom, another source of report visuals becomes available -*Power BI visuals*.
+However, you aren't limited to this set of visuals. If you select **More options** (...) at the bottom, another source of report visuals becomes available -*Power BI visuals*.
 
 Developers create Power BI visuals using the Power BI visuals SDK. These visuals enable business users to see their data in a way that best fits their business. Report authors can then import the custom visual files into their reports and use them as they would any other Power BI visuals. Power BI visuals are first class citizens in Power BI and can be filtered, highlighted, edited, shared, and so on.
 
@@ -52,7 +51,7 @@ What is [AppSource](developer/office-store.md)? It's the place you can find apps
 Power BI certified visuals are marketplace visuals that have passed additional rigorous quality testing and are supported in additional scenarios, such as [email subscriptions](service-report-subscribe.md), and [export to PowerPoint](service-publish-to-powerpoint.md).
 To see the list of certified Power BI visuals or to submit your own, see [Certified Power BI visuals](power-bi-custom-visuals-certified.md).
 
-Are you a Web developer and interested in creating your own visualizations and adding them to AppSource? See [Developing a Power BI custom visual](developer/custom-visual-develop-tutorial.md) and learn how to [publish Power BI visuals to AppSource](developer/office-store.md).
+Are you a Web developer and interested in creating your own visualizations and adding them to AppSource? See [Developing a Power BI custom visual](developer/visuals/custom-visual-develop-tutorial.md) and learn how to [publish custom visuals to AppSource](developer/office-store.md).
 
 ### Import a custom visual from a file
 
@@ -130,7 +129,7 @@ You have two options for downloading and importing Power BI visuals: from within
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
-2. Go to the [Apps results page](https://appsource.microsoft.com/marketplace/apps) where you can view top apps in each category, including *Power BI Apps*. We're looking for Power BI visuals, so let's select **Power BI visuals** from the left navigation list to narrow down the results.
+2. Go to the [Apps results page](https://appsource.microsoft.com/marketplace/apps) where you can view top apps in each category, including *Power BI Apps*. We're looking for Power BI visuals, so let's select **Power BI visuals** from the nav pane list to narrow down the results.
 
     ![AppSource visuals](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
 
@@ -174,4 +173,4 @@ For more information and answers to questions, visit [Frequently asked questions
 
 * [Visualizations in Power BI Reports](visuals/power-bi-report-visualizations.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/).
+More questions? [Try the Power BI Community](https://community.powerbi.com/).

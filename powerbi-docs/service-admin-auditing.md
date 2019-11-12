@@ -221,7 +221,9 @@ The following operations are available in both the audit and activity logs.
 | Admin attached dataflow storage account to tenant | AdminAttachedDataflowStorageAccountToTenant | Not currently used                       |
 | Analyzed Power BI dataset                         | AnalyzedByExternalApplication               |                                          |
 | Analyzed Power BI report                          | AnalyzeInExcel                              |                                          |
+| Attached dataflow storage account                 | AttachedDataflowStorageAccount              |                                          |
 | Binded Power BI dataset to gateway                | BindToGateway                               |                                          |
+| Cancelled dataflow refresh                        | CancelDataflowRefresh                       |                                          |
 | Changed capacity state                            | ChangeCapacityState                         |                                          |
 | Changed capacity user assignment                  | UpdateCapacityUsersAssignment               |                                          |
 | Changed Power BI dataset connections              | SetAllConnections                           |                                          |
@@ -253,6 +255,7 @@ The following operations are available in both the audit and activity logs.
 | Deleted Power BI report                           | DeleteReport                                |                                          |
 | Discovered Power BI dataset data sources          | GetDatasources                              |                                          |
 | Downloaded Power BI report                        | DownloadReport                              |                                          |
+| Edited dataflow properties                        | EditDataflowProperties                      |                                          |
 | Edited Power BI certification permission          | EditCertificationPermission                 | Not currently used                       |
 | Edited Power BI dashboard                         | EditDashboard                               | Not currently used                       |
 | Edited Power BI dataset                           | EditDataset                                 |                                          |
@@ -272,7 +275,7 @@ The following operations are available in both the audit and activity logs.
 | Printed Power BI dashboard                        | PrintDashboard                              |                                          |
 | Printed Power BI report page                      | PrintReport                                 |                                          |
 | Published Power BI report to web                  | PublishToWebReport                          |                                          |
-| Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault           | Not currently used                       |
+| Received Power BI dataflow secret from Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Removed data source from Power BI gateway         | RemoveDatasourceFromGateway                 |                                          |
 | Removed Power BI group members                    | DeleteGroupMembers                          |                                          |
 | Removed workspace from a capacity                 | RemoveWorkspacesFromCapacity                |                                          |
@@ -280,6 +283,7 @@ The following operations are available in both the audit and activity logs.
 | Requested Power BI dataflow refresh               | RequestDataflowRefresh                      | Not currently used                       |
 | Requested Power BI dataset refresh                | RefreshDataset                              |                                          |
 | Retrieved Power BI workspaces                     | GetWorkspaces                               |                                          |
+| Set dataflow storage location for a workspace     | SetDataflowStorageLocationForWorkspace      |                                          |
 | Set scheduled refresh on Power BI dataflow        | SetScheduledRefreshOnDataflow               |                                          |
 | Set scheduled refresh on Power BI dataset         | SetScheduledRefresh                         |                                          |
 | Shared Power BI dashboard                         | ShareDashboard                              |                                          |
@@ -288,10 +292,12 @@ The following operations are available in both the audit and activity logs.
 | Started Power BI trial                            | OptInForProTrial                            |                                          |
 | Took over a Power BI datasource                   | TakeOverDatasource                          |                                          |
 | Took over Power BI dataset                        | TakeOverDataset                             |                                          |
+| Took over a Power BI dataflow                     | TookOverDataflow                             |                                          |
 | Unpublished Power BI app                          | UnpublishApp                                |                                          |
 | Update capacity resource governance settings      | UpdateCapacityResourceGovernanceSettings    | Not currently in Microsoft 365 admin center |
 | Updated capacity admin                            | UpdateCapacityAdmins                        |                                          |
 | Updated capacity display name                     | UpdateCapacityDisplayName                   |                                          |
+| Updated dataflow storage assignment permissions   | UpdatedDataflowStorageAssignmentPermissions |                                          |
 | Updated organization's Power BI settings          | UpdatedAdminFeatureSwitch                   |                                          |
 | Updated Power BI app                              | UpdateApp                                   |                                          |
 | Updated Power BI dataflow                         | UpdateDataflow                              |                                          |
@@ -314,4 +320,4 @@ The following operations are available in both the audit and activity logs.
 
 [Power BI Admin Portal](service-admin-portal.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

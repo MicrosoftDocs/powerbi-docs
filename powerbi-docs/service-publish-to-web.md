@@ -3,7 +3,6 @@ title: Publish to web from Power BI
 description: With Power BI Publish to web, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -108,7 +107,7 @@ Once you create a **Publish to web** embed code, you can manage your codes from 
 
 ## Updates to reports, and data refresh
 
-After you create your **Publish to web** embed code and share it, the report is updated with any changes you make, and the embed code link is immediately active. Anyone who opens the link can view it. After this initial action, however, updates to reports or visuals can take approximately one hour before becoming visible to your users. If you need your updates to be immediately available, you can delete the embed code and create a new one. To learn more, see the [**How it works**](#howitworks) section later in this article. 
+After you create your **Publish to web** embed code and share it, the report is updated with any changes you make, and the embed code link is immediately active. Anyone who opens the link can view it. After this initial action, however, updates to reports or visuals can take approximately one hour before becoming visible to your users. To learn more, see the [**How it works**](#howitworks) section later in this article. 
 
 ## Data refresh
 
@@ -181,4 +180,4 @@ The cache is long-lived, so if you update the report definition (for example, if
 
 - [Embed report in a secure portal or website](service-embed-secure.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

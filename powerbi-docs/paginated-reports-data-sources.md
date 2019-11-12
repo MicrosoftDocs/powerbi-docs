@@ -3,7 +3,6 @@ title: "Supported data sources for Power BI paginated reports"
 description: In this article, you learn about supported data sources for paginated reports in the Power BI service, and how to connect to Azure SQL Database data sources.
 author: onegoodsausage
 ms.author: andremi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
@@ -22,6 +21,7 @@ Paginated reports natively support the following list of data sources:
 | Data Source | Authentication | Notes |
 | --- | --- | --- |
 | Azure SQL Database <br>Azure SQL Data Warehouse | Basic, single sign-on (SSO), OAuth2 |   |
+| Azure SQL Managed Instance | Basic | via Public Endpoint using the Azure SQL Database Extension  |
 | Azure Analysis Services | SSO, OAuth2 |   |
 | Power BI dataset | SSO | Premium and non-Premium Power BI datasets |
 | Premium Power BI dataset (XMLA) | SSO |   |
@@ -68,4 +68,4 @@ For SSO and OAuth2 to work correctly, the Azure SQL Database server that the dat
 
 [View a paginated report in the Power BI service](paginated-reports-view-power-bi-service.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

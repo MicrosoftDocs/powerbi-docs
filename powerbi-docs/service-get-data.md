@@ -2,7 +2,6 @@
 title: Data sources for Power BI
 description: Data sources for Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -107,7 +106,11 @@ Data refresh is a super important part of Power BI, and much too deep to cover h
 ## Considerations and limitations
 For all data sources used in the Power BI service, consider the following limitations. There are other limitations that apply to specific features, but the following list applies to the full Power BI service:
 
-* **Dataset size limit** - There's a 1-GB limit for each dataset in the Power BI service.
-* **Row limit** - The maximum number of rows in your dataset when not using **DirectQuery** is 2 billion. Three of those rows are reserved so that results in a usable maximum of 1,999,999,997 rows. The maximum number of rows when using **DirectQuery** is 1 million rows.
-* **Column limit** - The maximum number of columns allowed in a dataset, across all tables in the dataset, is 16,000 columns. This limit applies to the Power BI service and to datasets used in Power BI Desktop. Power BI uses an internal row number column per table in the dataset, which means the maximum number of columns is 16,000 minus one for each table in the dataset.
+* **Dataset size limit** - There's a 1-GB limit for datasets stored in Shared capacities in the Power BI service. If you need larger datasets, you can use [Power BI Premium](service-premium-what-is.md).
+
+* **Distinct values in a column** - When caching data in a Power BI dataset (sometimes called 'Import' mode), there is a 1,999,999,997  limit on the number of distinct values that can be stored in a column.
+
+* **Row limit** - When using **DirectQuery**, Power BI imposes a limit on the query results that are sent to your underlying data source. If the query sent to the data source returns more than one million rows, you see an error and the query fails. Your underlying data can still contain more than one million rows. You're unlikely to run into this limit as most reports aggregate the data into smaller sets of results.
+
+* **Column limit** - The maximum number of columns allowed in a dataset, across all tables in the dataset, is 16,000 columns. This limit applies to the Power BI service and to datasets used in Power BI Desktop. Power BI tracks the number of columns and tables in the dataset in this way, which means the maximum number of columns is 16,000 minus one for each table in the dataset.
 

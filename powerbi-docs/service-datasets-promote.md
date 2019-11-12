@@ -2,7 +2,6 @@
 title: Promote your dataset (preview) - Power BI
 description: Learn how to promote your dataset, to guide enterprise users to reliable, high-quality datasets.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -25,7 +24,7 @@ Your dataset needs to be in a new workspace experience workspace in the Power BI
 
 1. Go to the list of datasets in the workspace.
  
-1. Select the ellipsis (...), then select **Settings**.
+1. Select **More options** (...), then select **Settings**.
 
     ![Select the ellipsis by the dataset](media/service-datasets-certify-promote/power-bi-dataset-settings.png)
 
@@ -50,4 +49,4 @@ Your tenant admin has identified people in your organization who can certify dat
 ## Next steps
 
 * Read about [Using datasets across workspaces](service-datasets-across-workspaces.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

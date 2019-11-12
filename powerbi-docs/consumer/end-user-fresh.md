@@ -2,7 +2,6 @@
 title: How Power BI ensures your content is up-to-date
 description: Learn how Power BI ensures you are working with the latest version of the data, report, dashboard, and app.
 author: mihart
-manager: kvivek
 ms.service: powerbi
 ms.custom:  
 ms.subservice: powerbi-consumer
@@ -15,6 +14,9 @@ LocalizationGroup: Get started
 ---
 
 # Your content is up-to-date
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 As a *consumer*, you interact with content that is created by *designers* and shared with you. You might wonder if that content is up-to-date or maybe you just want to know when that content was last refreshed. Knowing that you are working with the freshest content gives you confidence.  
  
 ![Power BI dashboard](media/end-user-fresh/power-bi-dashboards.png)
@@ -37,9 +39,9 @@ The name of the owner is available from the title bar of dashboards and reports.
 
 The app screen shows you both the name of the designer as well as the date the app was last updated.  
 
-1. From the left nav pane, select **Apps**.
+1. From the nav pane, select **Apps**.
 
-    ![left nav pane](media/end-user-fresh/power-bi-nav-app.png)
+    ![nav pane](media/end-user-fresh/power-bi-nav-app.png)
 
 
 
@@ -60,7 +62,7 @@ If interested, you can look up the last refreshed date for most content.
 ### Dashboard tiles
 For dashboard tiles, view the tile in Focus mode to see the Last refresh timestamp.
 
-1. On a dashboard tile, select the ellipses (...) and choose **Open in Focus mode**.
+1. On a dashboard tile, select **More options** (...) and choose **Open in Focus mode**.
 
     ![menu that appears after selecting the ellipses](media/end-user-fresh/power-bi-focus-mode.png)
 
@@ -69,7 +71,7 @@ For dashboard tiles, view the tile in Focus mode to see the Last refresh timesta
     ![wide browser showing last refresh](media/end-user-fresh/power-bi-last-refresh2.png)
 
 ### Dashboards and reports
-Another way to look up a last refreshed date is by using **View related**.  **View related** is available by selecting the ellipses (...) from the Power BI upper menu bar.
+Another way to look up a last refreshed date is by using **View related**.  **View related** is available by selecting **More options** (...) from the Power BI upper menu bar.
 
 ![Select View related from menu](media/end-user-fresh/power-bi-view-related-dropdown.png)
 
@@ -79,7 +81,7 @@ The **Related content** pane displays the last refresh information for the dashb
 
 ## What happens if an app is deleted by the designer
 
-If a designer deletes an app, the dashboards and reports associated with that app are automatically removed from your Power BI workspace as well. They're no longer available, and the app doesn't appear in the Apps container or elsewhere in the nav bar.
+If a designer deletes an app, the dashboards and reports associated with that app are automatically removed from your Power BI workspace as well. They're no longer available, and the app doesn't appear in the Apps container or elsewhere in the nav pane.
 
 
 ## Subscribe to see changes

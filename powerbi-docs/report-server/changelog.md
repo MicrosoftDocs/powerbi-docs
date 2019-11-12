@@ -1,30 +1,43 @@
 ---
-title: Changelog for Power BI Report Server
+title: Change log for Power BI Report Server
 description: This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 ms.author: jaimeta
 author: jtarquino
-manager: kfile
 ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/31/2018
+ms.date: 10/25/2019
 ---
 
-# Changelog for Power BI Report Server
+# Change log for Power BI Report Server
 
 This change log is for Power BI Report Server and lists new items along with bug fixes for each released build.
 
 For detailed information about new features, see [What's new in Power BI Report Server](whats-new.md). 
 
 ## September 2019
-
-- **Power BI Report Server**          
+- **Power BI Report Server**
+    - *Version: 1.6.7236.4246 (Build 15.0.1102.646), Released: October 25, 2019*
+        - Security updates
+        - Bug fixes
+            - Fix for .net framework 4.7 not installed.
+	        - Fix for paginated reports for Teradata with multivalue parameters with error 110083.
+	        - Fix for URLRoot value not work if there are multiple web service URL bindings and one of them is https://+80/reportserver.
+		  - Fix for paginated reports multivalue parameter values showing up outside the report area.
+		  
+    - *Version: 1.6.7221.30698 (Build 15.0.1102.620), Released: October 9, 2019*
+        - Bug fixes
+            - Fix for Text Filter custom visual.
+	        - Fix for the performance of drop down slicers.
+	        - Fix for Strip PII from telemetry.
+		  - Fix for URLs to not be case sensitive.
+ 		  
     - *Version 1.6.7206.38019 (Build 15.0.1102.597), Released: September 26, 2019*
         - Security updates
-        - Bug Fixes
-           - Paginated Reports
-             - Fix for accessibility issues encountered while using IE and Edge.
+        - Bug fixes
+           - Paginated reports
+             - Fix for accessibility issues encountered while using Internet Explorer and Microsoft Edge.
              - Fix for SAP HANA issues while testing connection.
              - Fix for issues found while providing list of email addresses.
              - Fix for for Power BI reports that use a DirectQuery data source and integrated authentication.
@@ -38,10 +51,20 @@ For detailed information about new features, see [What's new in Power BI Report 
              - Updated Web API: /PowerBIReports({Id})/DataSources (PATCH) to allow connection string updates.
          
 - **Power BI Desktop (optimized for Power BI Report Server)**
+    - *Version: 2.73.5586.1501 (September 2019), Released: October 25, 2019*
+        - Bug fixes
+            - Fix for Telemetry.
+	        
+    - *Version: 2.73.5586.1241 (September 2019), Released: October 9, 2019*
+        - Bug fixes
+            - Fix for Text Filter custom visual.
+	        - Fix for the performance of drop down slicers.
+	        - Fix for Strip PII from telemetry.
+            
     - *Version: 2.73.5586.821 (September 2019), Released: September 26, 2019* (new build and new version)
-    - Contains changes required for connection with Power BI Report Server (September 2019)
+        - Contains changes required for connection with Power BI Report Server (September 2019)
 
-
+    
 ## May 2019
 
 - **Power BI Report Server**          
@@ -276,6 +299,6 @@ For detailed information about new features, see [What's new in Power BI Report 
 [Administrator overview](admin-handbook-overview.md)  
 [Install Power BI Report Server](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

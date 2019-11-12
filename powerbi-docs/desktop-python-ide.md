@@ -2,7 +2,6 @@
 title: Use an external Python IDE with Power BI
 description: You can launch and use an external IDE with Power BI
 author: otarb
-manager: rajatt
 ms.reviewer: ''
 
 ms.service: powerbi

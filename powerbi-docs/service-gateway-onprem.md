@@ -3,7 +3,6 @@ title: On-premises data gateway
 description: This article is an overview of the on-premises data gateway for Power BI. You can use this gateway to work with DirectQuery data sources. You can also use this gateway to refresh cloud datasets with on-premises data.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -37,13 +36,13 @@ There are two different types of gateways, each for a different scenario:
 There are four main steps for using a gateway.
 
 1. [Download and install the gateway](/data-integration/gateway/service-gateway-install) on a local computer.
-2. [Configure](/data-integration/gateway/service-gateway-app) the gateway based on your firewall and other network requirements.
-3. [Add gateway admins](/data-integration/gateway/service-gateway-manage) who can also manage and administer other network requirements.
-4. [Troubleshoot](service-gateway-onprem-tshoot.md) the gateway in case of errors.
+1. [Configure](/data-integration/gateway/service-gateway-app) the gateway based on your firewall and other network requirements.
+1. [Add gateway admins](/data-integration/gateway/service-gateway-manage) who can also manage and administer other network requirements.
+1. [Use the gateway](service-gateway-sql-tutorial.md) to refresh an on-premises data source.
+1. [Troubleshoot](service-gateway-onprem-tshoot.md) the gateway in case of errors.
 
 ## Next steps
 
 * [Install the on-premises data gateway](/data-integration/gateway/service-gateway-install)
 
-
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

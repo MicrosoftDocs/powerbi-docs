@@ -2,13 +2,12 @@
 title: Set data alerts in the Power BI service
 description: Learn to set alerts to notify you when data in your dashboards changes beyond limits you set in Microsoft Power BI service.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/08/2019
+ms.date: 10/21/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
 ---
@@ -19,7 +18,7 @@ Set alerts to notify you when data in your dashboards changes beyond limits you 
 
 You can set alerts on tiles if you have a Power BI Pro license. You can also set alerts if someone  shares a dashboard that's in a [Premium capacity](service-premium-what-is.md). Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs, and cards. Alerts can be set on visuals created from streaming datasets that you pin from a report to a dashboard. Alerts can't be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**.
 
-Only you can see the alerts you set, even if you share your dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. They aren't available for Power BI Desktop. You can even automate and integrate alerts with Microsoft Flow. You can try it yourself in this [Microsoft Flow and Power BI](service-flow-integration.md) article.
+Only you can see the alerts you set, even if you share your dashboard. Even the dashboard owner can't see alerts you set on your view of their dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. They aren't available for Power BI Desktop. You can even automate and integrate alerts with Microsoft Flow. You can try it yourself in this [Microsoft Flow and Power BI](service-flow-integration.md) article.
 
 ![tiles](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
@@ -111,15 +110,13 @@ There are many ways to manage your alerts:
 
 1. From here you can turn alerts on and off, open the **Manage alerts** window to make changes, or delete the alert.
 
-## Tips and troubleshooting
+## Considerations and troubleshooting
 
 * Alerts aren't supported for card tiles with date/time measures.
-
 * Alerts only work with numeric data types.
-
 * Alerts only work on refreshed data. They don't work on static data.
-
 * Alerts only work on streaming datasets if you build a KPI, card, or gauge report visual and then pin that visual to the dashboard.
+
 
 ## Next steps
 
@@ -127,6 +124,6 @@ There are many ways to manage your alerts:
 
 * [Set data alerts on your mobile device](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
-* [What is Power BI?](power-bi-overview.md)
+* [What is Power BI?](fundamentals/power-bi-overview.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

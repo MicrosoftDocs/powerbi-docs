@@ -3,12 +3,11 @@ title: Data sources supported by DirectQuery in Power BI
 description: Get a list of which data sources can use DirectQuery.
 author: davidiseminger
 ms.author: davidi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 10/16/2019
 LocalizationGroup: Connect to data
 ---
 
@@ -71,7 +70,7 @@ The following table specifies whether an **On-premises data gateway** is require
 | Oracle Database |Yes |
 | PostgreSQL |Yes |
 | SAP Business Warehouse Application Server |Yes |
-| SAP Business Warehouse Message Server |Not yet supported in the **Power BI service** |
+| SAP Business Warehouse Message Server |Yes |
 | SAP HANA |Yes |
 | Snowflake |Yes |
 | Spark (beta), version 0.9 and later |Yes |
@@ -92,6 +91,7 @@ The SSO option takes affect across all datasets that use this data source. It do
 - Impala
 - SAP HANA
 - SAP BW
+- SAP BW Message Server (preview)
 - Spark
 - SQL Server
 - Teradata

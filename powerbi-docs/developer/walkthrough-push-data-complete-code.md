@@ -3,7 +3,6 @@ title: Complete code listing
 description: Walkthrough to push data - Complete code listing
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -230,4 +229,4 @@ After you follow Steps 2 to 5 in **Push data into a dataset**, your complete sou
 [Power BI REST API reference](https://docs.microsoft.com/rest/api/power-bi/)  
 [Overview of Power BI REST API](overview-of-power-bi-rest-api.md)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

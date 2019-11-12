@@ -59,7 +59,7 @@ ms:date: 06/10/2019
                                 </a>
                             </li>
                             <li>
-                                <a href="service-admin-administering-power-bi-in-your-organization.md">
+                                <a href="admin/index.yml">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

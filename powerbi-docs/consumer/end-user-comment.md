@@ -2,7 +2,6 @@
 title: Add comments to dashboards and reports
 description: This document shows how to add comments to a dashboard, report, or visual and how to use comments to have conversations with collaborators.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: 
 
@@ -15,6 +14,9 @@ ms.author: mihart
 LocalizationGroup: Consumer
 ---
 # Add comments to a dashboard or report
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Add a personal comment or start a conversation about a dashboard or report with your colleagues. The **comment** feature is just one of the ways a *consumer* can collaborate with others. 
 
 ![comments video](media/end-user-comment/comment.gif)
@@ -60,7 +62,7 @@ The process for adding comments to a dashboard or report is similar.  In this ex
 ### Add a comment to a specific dashboard or report visual
 In addition to adding comments to an entire dashboard or to an entire report page, you can add comments to individual dashboard tiles and individual report visuals. The processes are similar, and in this example we're using a report.
 
-1. Hover over the visual and select the ellipsis (...).    
+1. Hover over the visual and select **More options** (...).    
 2. From the dropdown, select **Open comments**.
 
     ![Add a comment is first choice](media/end-user-comment/power-bi-report-comment.png)  

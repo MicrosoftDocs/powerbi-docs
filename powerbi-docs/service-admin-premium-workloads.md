@@ -3,12 +3,11 @@ title: How to configure workloads in Power BI Premium
 description: Learn how to configure workloads in a Power BI Premium capacity.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 10/14/2019
 
 LocalizationGroup: Premium
 ---
@@ -66,6 +65,8 @@ The datasets workload is enabled by default and cannot be disabled. Use the foll
 | **Max Result Row Set Count** | The maximum number of rows returned in a DAX query. The default value is -1 (no limit), and the allowable range is between 100000 and 2147483647. |
 | **Query Memory Limit (%)** | The maximum percentage of available memory that can be used for temporary results in a query or DAX measure. |
 | **Query Timeout (seconds)** | The maximum amount of time before a query times out. The default is 3600 seconds (1 hour). A value of 0 specifies that queries won't timeout. |
+| **Automatic page refresh (preview)** | On/Off toggle to allow premium workspaces to have reports with automatic page refresh. |
+| **Minimum refresh interval** | If automatic page refresh is on, the minimum interval allowed for page refresh interval. The default value is five minutes, and the minimum allowed is one second. |
 |  |  |  |
 
 #### Max Intermediate Row Set Count
@@ -108,6 +109,19 @@ This setting applies to a single query and not the length of time it takes to ru
 The combined time for all queries is 75 minutes, but the setting limit isn't reached because all of the individual queries run for less than 20 minutes.
 
 Note that Power BI reports override this default with a much smaller timeout for each query to the capacity. The timeout for each query is typically about three minutes.
+
+#### Automatic page refresh (preview)
+
+When enabled, automatic page refresh allows users in your Premium capacity to refresh pages in their report at a defined interval, for DirectQuery sources. As a capacity admin, you can do the following:
+
+1.	Turn automatic page refresh on and off
+2.	Define a minimum refresh interval
+
+The following image shows the location of the automatic refresh interval setting:
+
+![admin setting for automatic refresh interval](media/service-admin-premium-workloads/automatic-refresh-interval.png)
+
+Queries created by automatic page refresh go directly to the data source, so it's important to consider reliability and load on those sources when allowing automatic page refresh in your organization. 
 
 ### Dataflows
 
@@ -177,5 +191,6 @@ The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capaci
 [Optimizing Power BI Premium capacities](service-premium-capacity-optimize.md)     
 [Self-service data prep in Power BI with Dataflows](service-dataflows-overview.md)   
 [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
+[Automatic page refresh in Power BI Desktop (preview)](desktop-automatic-page-refresh.md)
 
-More questions? [Ask the Power BI Community](http://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com/)

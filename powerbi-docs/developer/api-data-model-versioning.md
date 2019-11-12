@@ -3,7 +3,6 @@ title: Power BI data model versioning
 description: Data Model exposed by an OData Service
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -32,7 +31,7 @@ Clients ***SHOULD*** be prepared for services to make such incremental changes t
   
 Services ***SHOULD NOT*** change their data model depending on the authenticated user. If the data model is user or user group dependent, all changes MUST be safe changes as defined in this section when comparing the full model to the model visible to users with limited authorizations.  
   
-For more about OData Data Model standards, see [OData Version 4.0 Part 1: Protocol Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
+For more about OData Data Model standards, see [OData Version 4.0 Part 1: Protocol Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
   
 ## See also
 [Overview of Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/)  

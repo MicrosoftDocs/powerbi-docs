@@ -3,12 +3,11 @@ title: What is Microsoft Power BI Premium?
 description: Power BI Premium provides dedicated capacities for your organization, giving you more dependable performance and larger data volumes, without requiring you to purchase per-user licenses.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/17/2019
+ms.date: 10/28/2019
 ms.custom: seodec18
 
 LocalizationGroup: Premium
@@ -49,7 +48,7 @@ Power BI Premium subscriptions are purchased by administrators in the Microsoft 
 
 With Power BI Premium, you get *dedicated capacities*. In contrast to a shared capacity where workloads run on computational resources shared with other customers, a dedicated capacity is for exclusive use by an organization. It's isolated with dedicated computational resources, which provide dependable and consistent performance for hosted content. 
 
-Workspaces reside within capacities. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces known as **App Workspaces** can be created to enable collaboration. By default workspaces, including personal workspaces, are created in the shared capacity. When you have Premium capacities, both My Workspaces and App workspaces can be assigned to Premium capacities.
+Workspaces reside within capacities. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces known as **workspaces** can be created to enable collaboration. By default workspaces, including personal workspaces, are created in the shared capacity. When you have Premium capacities, both My Workspaces and workspaces can be assigned to Premium capacities.
 
 ### Capacity nodes
 
@@ -67,7 +66,7 @@ The resources and limits of each Premium SKU (and equivalently sized A SKU) are 
 
 | Capacity Nodes | Total v-cores | Backend v-cores | RAM (GB) | Frontend v-cores | DirectQuery/Live Connection (per sec) | Model Refresh Parallelism |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3.75 | 1 |
+| EM1/A1 | 1 | 0.5 | 3 | 0.5 | 3.75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7.5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
@@ -162,9 +161,9 @@ Depending on the SKU, Power BI Premium supports uploading Power BI Desktop (.pbi
 
 ### Size considerations
 
-Large models can be resource-intensive. You should have at least a P1 SKU for any models larger than 1 GB. Although publishing large models to workspaces backed by A SKUs up to A3 could work, refreshing them will not.
+Large datasets can be resource-intensive. You should have at least a P1 SKU for any datasets larger than 1 GB. Although publishing large datasets to workspaces backed by A SKUs up to A3 could work, refreshing them will not.
 
-The following table describes recommended SKUs for various .pbix sizes:
+The following table shows the recommended SKUs for .pbix file upload or publish to the Power BI service:
 
    |SKU  |Size of .pbix   |
    |---------|---------|
@@ -172,9 +171,11 @@ The following table describes recommended SKUs for various .pbix sizes:
    |P2    | < 6 GB        |
    |P3, P4, P5    | up to 10 GB   |
 
-The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3. Publishing large models to A and EM SKUs might return errors that aren't specific to the model size limitation error in the shared capacity. Refresh errors for large models in A and EM SKUs are likely to point to timeouts. 
+The Power BI Embedded A4 SKU is equal to the P1 SKU, A5 = P2 and A6 = P3. Publishing datasets to A and EM SKUs might return errors that aren't specific to the model size limitation error in the shared capacity. Refresh errors for datasets in A and EM SKUs are likely to point to timeouts.
 
-Your .pbix files represent data in a *highly compressed state*. The data will likely expand several times when loaded in memory, and from there it may expand several more times during data refresh.
+If you enable [large models](service-premium-large-models.md) on a data set, the .pbix file size limitations still apply to file upload or publish. However, with incremental refresh and large models combined, datasets can grow much larger than these limits. With large models, the dataset size is limited only by the Power BI Premium capacity size.
+
+Your .pbix files represent data in a *highly compressed state*. The data will likely expand when loaded in memory, and from there it may expand several more times during data refresh.
 
 Scheduled refresh of large datasets can take a long time and be resource-intensive. It's important to not schedule too many overlapping refreshes. It's  recommended [incremental refresh](service-premium-incremental-refresh.md) is configured, because it's faster, more reliable, and consumes fewer resources.
 

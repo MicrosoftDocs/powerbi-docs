@@ -2,13 +2,12 @@
 title: Visualization types in Power BI
 description: Visualization types in Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 10/31/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -143,6 +142,14 @@ For more information, see [Matrix visuals in Power BI](desktop-matrix-visual.md)
 >[!TIP]
 >Pie charts show the relationship of parts to a whole. 
 
+### Q&A visual
+![Q&A visuals](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-q-and-a.png)
+
+>[!TIP]
+>Similar to the [Q&A experience on dashboards](../power-bi-tutorial-q-and-a.md), the Q&A visual lets you ask questions about your data using natural language. 
+
+For more information, see [Q&A visuals in Power BI](power-bi-visualization-q-and-a.md).
+
 ### R script visuals
 ![R visuals](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-r-visuals.png)
 
@@ -214,8 +221,8 @@ When typing natural language queries with Power BI Q&A, you can specify the visu
 
 "***sales by state as a treemap***"
 
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
+![Q&A question box showing visualization type specified](media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
 ## Next steps
 [Visualizations in Power BI reports](power-bi-report-visualizations.md)    
-[The right visual reference from sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+[The right visual reference from sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

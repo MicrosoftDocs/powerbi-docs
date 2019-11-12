@@ -2,7 +2,6 @@
 title: 'Tutorial: Invoke a Machine Learning Studio model in Power BI (Preview)'
 description: In this tutorial you invoke a Machine Learning Studio model in Power BI.
 author: davidiseminger
-manager: kfile
 ms.reviewer: SarinaJoan
 
 ms.service: powerbi
@@ -41,7 +40,7 @@ To access an Azure ML model from Power BI, you must have **Read** access to the 
 
 The following steps assume you are the coadministrator for the Azure subscription and resource group to which the model was published.
 
-Sign in to the [Azure portal](https://portal.azure.com), and navigate to the **Subscriptions** page, which you can find using the **All Services** list in the left navigation menu.
+Sign in to the [Azure portal](https://portal.azure.com), and navigate to the **Subscriptions** page, which you can find using the **All Services** list in the nav pane menu.
 
 ![Azure portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
@@ -65,7 +64,7 @@ This step assumes you have the data you want to score with your Azure ML model i
 
 To create the entities in your dataflow, sign in to the Power BI service and navigate to a workspace on your dedicated capacity that has the AI preview enabled.
 
-If you don't already have a workspace, you can create one by selecting **Workspaces** in the left menu, and then select **Create app workspace** in the panel at the bottom.  This opens a panel to enter the workspace details. Enter a workspace name, and then select **Save**.
+If you don't already have a workspace, you can create one by selecting **Workspaces** in the left menu, and then select **Create workspace** in the panel at the bottom.  This opens a panel to enter the workspace details. Enter a workspace name, and then select **Save**.
 
 ![Create workspace](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_03.png)
 
@@ -132,7 +131,7 @@ Selecting the **Edit** icon opens Power Query Editor for the entities in your da
 
 ![Edit](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_16.png)
 
-Select the **AI Insights** button in the ribbon, and then select the _Azure Machine Learning Models_ folder from the left navigation menu.
+Select the **AI Insights** button in the ribbon, and then select the _Azure Machine Learning Models_ folder from the nav pane menu.
 
 The Azure ML models to which you've been granted access are listed as Power Query functions with a prefix *AzureML.*  When you click on the function corresponding to the _AutomobilePricePrediction_ model, the parameters for the model's web service are listed as function parameters.
 

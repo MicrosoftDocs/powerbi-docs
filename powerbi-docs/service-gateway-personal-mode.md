@@ -2,7 +2,6 @@
 title: Use personal gateways in Power BI
 description: Provides information about on-premises data gateway (personal mode) for Power BI that individuals can use for connecting to on-premises data.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -99,4 +98,4 @@ Fast Combine on a personal gateway helps you ignore specified privacy levels whi
 
 * [Configuring proxy settings for the on-premises data gateway](/data-integration/gateway/service-gateway-proxy)  
 
-More questions? Try the [Power BI Community](http://community.powerbi.com/).
+More questions? Try the [Power BI Community](https://community.powerbi.com/).
