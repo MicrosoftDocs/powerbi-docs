@@ -52,7 +52,7 @@ The following updates are new to **Power BI Desktop** this month:
 ### Visuals
 * ArcGIS Maps for Power BI update [[video]](https://youtu.be/kVli3Vm_kDo?t=1024)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#arcGIS) 
 * New xViz visuals [[video]](https://youtu.be/kVli3Vm_kDo?t=1071)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#xViz) 
-* ZoomCharts Drill-Down Waterfal visual [[video]](https://youtu.be/kVli3Vm_kDo?t=1405)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#zoomCharts) 
+* ZoomCharts Drill-Down Waterfall visual [[video]](https://youtu.be/kVli3Vm_kDo?t=1405)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#zoomCharts) 
 * Financial Reporting Matrix by Profitbase [[video]](https://youtu.be/kVli3Vm_kDo?t=1575)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#financialReporting) 
 * Distribution [[video]](https://youtu.be/kVli3Vm_kDo?t=1661)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#distribution) 
 * Tree [[video]](https://youtu.be/kVli3Vm_kDo?t=1733)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#tree) 
@@ -83,7 +83,7 @@ Want more information about these updates? Take a look at the [blog post](https:
 
 The following video describes and shows each of these updates. You can also see the video from the blog post.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kVli3Vm_kDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/kVli3Vm_kDo]
 
 > [!NOTE]
 > You might also be interested in learning [what's new in the Power BI service](service-whats-new.md), and also check out [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).

@@ -23,8 +23,7 @@ To connect to LinkedIn data using the **LinkedIn Sales Navigator**, you need to 
 
 The following video provides a quick tour and tutorial for using the **LinkedIn Sales Navigator** template app, which is described in detail [later in this article](#using-the-linkedin-sales-navigator-template-app). 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZqhmaiORLw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+> [!VIDEO https://www.youtube.com/embed/ZqhmaiORLw0]
 
 ## Connect to LinkedIn Sales Navigator
 
