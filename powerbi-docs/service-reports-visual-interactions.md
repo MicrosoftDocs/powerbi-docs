@@ -22,7 +22,7 @@ See [About filtering and highlighting](power-bi-reports-filters-and-highlighting
 
 This article shows you how to use **visual interactions** in Power BI Desktop. The process is the same in the Power BI service [Editing view](service-interact-with-a-report-in-editing-view.md). If you only have Reading view access, or the report has been shared with you, you will not be able to change the visual interactions settings.
 
-The terms *cross-filter* and *cross-highlight* are used to distinguish the behavior described here from what happens when you use the **Filters** pane to filter and highlight visualizations.  
+The terms *cross-filter* and *cross-highlight* are used to distinguish the behavior described here from what happens when you use the **Filters** pane to *filter* and *highlight* visualizations.  
 
 > [!NOTE]
 > This video uses older versions of Power BI Desktop and the Power BI service. 
@@ -41,11 +41,11 @@ If you have edit permissions to a report, you can turn on the visual interaction
 
     - In Desktop, select **Format > Interactions**.
 
-            ![select Format then Interactions](media/service-reports-visual-interactions/power-bi-interaction.png)
+        ![select Format then Interactions](media/service-reports-visual-interactions/power-bi-interaction.png)
 
     - In the Power BI service, open the report in Editing view and select the dropdown from the report menu bar.
 
-            ![Visual interactions dropdown](media/service-reports-visual-interactions/power-bi-service.png)
+        ![Visual interactions dropdown](media/service-reports-visual-interactions/power-bi-service.png)
 
 3. To display the visualization interaction controls, select **Edit interactions**. Power BI adds filter and highlight icons to all of the other visualizations on the report page. You can now change how the selected visualization interacts with the other visualizations on the report page.
    
@@ -56,7 +56,7 @@ If you have edit permissions to a report, you can turn on the visual interaction
 Get familiar with how your visualizations interact by selecting each visualization on your report page, one at a time.  Select a data point or a bar or a shape and watch the impact on the other visualizations. If the behavior you see is not what you'd prefer, you can change the interactions. These changes are saved with the report, so you and your report consumers will have the same visual interaction experience.
 
 
-Determine what impact the selected visualization should have on the others.  And, optionally, repeat for all other visualizations on the report page.
+Determine what impact the **selected visualization** should have on the others.  And, optionally, repeat for all other visualizations on the report page.
    
    * If it should cross-filter the visualization, select the **filter** icon ![filter icon](media/service-reports-visual-interactions/power-bi-filter-icon.png).
    * If it should cross-highlight the visualization, select the **highlight** icon ![highlight icon](media/service-reports-visual-interactions/power-bi-highlight-icon.png).
