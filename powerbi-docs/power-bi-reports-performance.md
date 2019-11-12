@@ -17,7 +17,7 @@ This article offers guidance for building fast and reliable reports in Power BI.
 
 ## Choose an appropriate storage mode: Import, DirectQuery
 
-In most cases Import mode is the best choice as it offers the highest speed by leveraging locally cached in-memory data that is compressed using columnar storage. Import mode also allows full DAX capability. Consider DirectQuery (and Composite models) when the source data volume is too large to fit into your Power BI capacity. DirectQuery is also useful when you need to fetch the latest data from the source each time a report is loaded. If you do not have these requirements and users only need to see data that is updated a few times per day or less (e.g. from a corporate data warehouse), Import is highly recommended. In DirectQuery mode, users may try to refresh the report without realising they are fetching exactly same data from the source.      
+In most cases Import mode is the best choice as it offers the highest speed by leveraging locally cached in-memory data that is compressed using columnar storage. Import mode also allows full DAX capability. Consider DirectQuery (and Composite models) when the source data volume is too large to fit into your Power BI capacity. DirectQuery is also useful when you need to fetch the latest data from the source each time a report is loaded. If you do not have these requirements and users only need to see data that is updated a few times per day or less (e.g. from a corporate data warehouse), Import is highly recommended. In DirectQuery mode, users may try to refresh the report without realizing they are fetching exactly same data from the source.      
 
 ## Use filters to limit report visuals to display only what’s needed 
 
@@ -147,8 +147,6 @@ The On-premises data gateway is a great tool for connecting the Power BI service
 Network latency can impact report performance by increasing the time required for requests to reach the Power BI service, and for responses to be delivered. Tenants in Power BI are assigned a specific region. You can view your tenant’s “home” region by navigating to powerbi.com, selecting **?** in the top right, and then **About Power BI**. When users from a tenant access the Power BI service, their requests always route to this region. Once the requests reach the Power BI service, the service may then send additional requests – for example, to the underlying data source or the gateway – which are also subject to network latency.
 
 Tools such as [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) provide an indication of network latency between the client and the Azure region. In general, to minimize the impact of network latency, strive to keep data sources, gateways, and your Power BI cluster as close as possible. If network latency is an issue, try locating gateways and data sources closer to your Power BI cluster by placing them on virtual machines.
-
-To further improve network latency, consider using [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/), which is able of creating faster, more reliable network connections between your clients and Azure datacenters.
 
 ## Next steps
 

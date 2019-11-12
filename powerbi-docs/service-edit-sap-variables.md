@@ -13,11 +13,11 @@ LocalizationGroup: Data from databases
 
 # Edit SAP variables in the Power BI service
 
-When using SAP Business Warehouse or SAP HANA with DirectQuery, report authors can now allow end users to edit SAP variables in the **Power BI Service** for Premium workspaces.
+When using SAP Business Warehouse or SAP HANA with DirectQuery, report authors can now allow end users to edit SAP variables in the **Power BI Service** for Premium and shared workspaces. Note that this feature does NOT work for reports in the Shared with me tab of My Workspace. 
 
 ![Edit variables dialog box](media/service-edit-sap-variables/sap-edit-variables-dialog.png)
 
-This document describes the requirements for editing variables in Power BI, and where to edit variables in the Power BI service.
+This document describes the requirements for editing variables in Power BI, how to enable this feature, and where to edit variables in the Power BI service.
 
 ## Requirements for SAP edit variables
 
@@ -29,8 +29,6 @@ There are a few requirements for using the SAP edit variables feature. The follo
 - Under **Filtering experience**, select **Enable the updated filter pane**.
 
 **DirectQuery connections required** – you must be connecting to the SAP data source using DirectQuery. Import connections aren't supported.
-
-**Power BI Premium subscription required** – the SAP edit variables feature currently only works in Power BI Premium subscriptions.
 
 **SSO set-up required** – for this feature to work, single sign-on (SSO) must be configured. See [overview of single sign-on (SSO)](service-gateway-sso-overview.md) for more information.
 
@@ -72,10 +70,6 @@ You can do so by:
     ![Reset to default](media/service-edit-sap-variables/reset-to-default.png)
 
 When working on a published report in the Power BI service that uses SAP HANA or SAP BW with the **Edit variables** feature enabled, the report owner can change those defaults. The owner of the report can change the variables in edit mode, and save the report to enable those settings to become the *new default settings* for that report. Any other users who access the report after such changes are made by the report owner will see those new settings as the defaults.
-
-## Issues and considerations
-
-At this time the SAP edit variables feature isn't supported in apps.
 
 ## Next steps
 
