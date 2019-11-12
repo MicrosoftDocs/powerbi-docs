@@ -64,7 +64,7 @@ Determine what impact the selected visualization should have on the others.  And
    * If it should have no impact, select the **no impact** icon ![no impact icon](media/service-reports-visual-interactions/power-bi-no-impact.png).
 
 ## Change the interactions of drillable visualizations
-[Certain Power BI visualizations can be drilled](../consumer/end-user-drill). By default, when you drill a visualization, it has no impact on the other visualizations on the report page. But, that behavior can be changed. 
+[Certain Power BI visualizations can be drilled](consumer/end-user-drill). By default, when you drill a visualization, it has no impact on the other visualizations on the report page. But, that behavior can be changed. 
 
 1. Select the drillable visual to make it active. 
 
