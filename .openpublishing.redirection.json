@@ -2,7 +2,7 @@
     "redirections": [
         {
           "source_path": "powerbi-docs/service-admin-power-bi-expressroute.md",
-          "redirect_url": "/azure/expressroute/expressroute-introduction",
+          "redirect_url": "/power-bi",
           "redirect_document_id": false
         },
         {
