@@ -53,7 +53,7 @@ In addition to those visible changes, an updated ribbon also lets us make future
 
 * Create more flexible and intuitive controls in the ribbon, such as the visuals gallery
 * Add the *black* and *dark gray* Office themes to Power BI Desktop
-* Improve accessablitiy
+* Improve accessibility
 
 
 ## Next steps
