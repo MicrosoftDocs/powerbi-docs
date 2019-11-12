@@ -1,5 +1,5 @@
 ---
-title: Edit SAP variables in the Power BI service (preview)
+title: Edit SAP variables in the Power BI service
 description: Azure and Power BI
 author: Sujata994
 ms.author: sunaraya
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 11/12/2019
 LocalizationGroup: Data from databases
 ---
 
-# Edit SAP variables in the Power BI service (preview)
+# Edit SAP variables in the Power BI service
 
 When using SAP Business Warehouse or SAP HANA with DirectQuery, report authors can now allow end users to edit SAP variables in the **Power BI Service** for Premium workspaces.
 
 ![Edit variables dialog box](media/service-edit-sap-variables/sap-edit-variables-dialog.png)
 
-This document describes the requirements for editing variables in Power BI, how to enable this preview feature, and where to edit variables in the Power BI service.
+This document describes the requirements for editing variables in Power BI, and where to edit variables in the Power BI service.
 
 ## Requirements for SAP edit variables
 
@@ -42,7 +42,7 @@ There are a few requirements for using the SAP edit variables feature. The follo
 
 ## How to enable the feature
 
-To enable the **SAP edit variables** feature, in Power BI Desktop connect to an SAP HANA or SAP BW data source. Then go to **File > Options and settings > Options** and then, in the Current File section in the left pane, select **DirectQuery**. When you select that, in the right pane you see DirectQuery options, and a checkbox where you can **Allow end users to change SAP variables in the report (preview)**, as shown in the following image.
+To enable the **SAP edit variables** feature, in Power BI Desktop connect to an SAP HANA or SAP BW data source. Then go to **File > Options and settings > Options** and then, in the Current File section in the left pane, select **DirectQuery**. When you select that, in the right pane you see DirectQuery options, and a checkbox where you can **Allow end users to change SAP variables in the report**, as shown in the following image.
 
 ![DirectQuery options](media/service-edit-sap-variables/sap-preview-setting-in-desktop.png)
 
