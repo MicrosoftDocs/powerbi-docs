@@ -1,5 +1,5 @@
 ---
-title: Decomposition Tree
+title: Decomposition tree
 description: 'Tutorial: Create a decomposition tree visualization in Power BI'
 author: mihart
 manager: kvivek
@@ -118,7 +118,7 @@ AI levels are also recalculated when you cross-filters the decomposition tree by
 
 But if we select **April** in the bar chart, the highest changes to **Product Type is Advanced Surgical**. In this case, it’s not just the nodes that got re-ordered, but a completely different column was chosen. 
 
-![Decomposition tree crossfiltering](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter2.png)
+![Decomposition tree cross-filtering](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter2.png)
 
 If we want AI levels to behave like non-AI levels, select the lightbulb to revert the behavior to default. 
 
@@ -149,3 +149,10 @@ Other preview limitations:
 - Pinning to dashboard
 - Show Data functionality
 - Support inside Q&A
+
+## Next steps
+
+[Power BI doughnut chart](power-bi-visualization-doughnut-charts.md)
+
+[Power BI visualizations](power-bi-report-visualizations.md)
+
