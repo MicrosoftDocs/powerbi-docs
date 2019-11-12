@@ -14,17 +14,11 @@ LocalizationGroup: Share your work
 
 # Upgrade classic workspaces to the new workspaces in Power BI
 
-You can upgrade any classic workspace to the new workspace experience. However, there may be changes to your workspace that you need to be aware of and plan for.
+This article explains how to upgrade a classic workspace to the new workspace experience. You can upgrade any classic workspace. The new workspaces have more granular workspace roles so you can better manage access to content. You have more flexibility managing upgraded workspaces because they're more loosely connected to their original Office 365 group. Learn about the [new workspace experience](../service-new-workspaces.md). 
 
-Learn about the [new workspace experience](../service-new-workspaces.md).
+However, there may be changes to your workspace that you need to be aware of and plan for. For example, content packs aren't supported in the new workspace experience. See the [Upgrade considerations and limitations](#upgrade-considerations-and-limitations) section, later in this article.
 
-## Upgrade considerations and limitations
 
-- The URLs and IDs of your workspace, the content it contains, and the app published from the workspace don't change. Content from content packs installed in your workspace are handled separately as discussed in this document.
-- Content packs aren't supported in the new workspace experience. Read the sections about **published content packs** or **installed content packs** to learn about how these are handled during upgrade. We recommend deleting content packs installed or published in your workspace before you upgrade.
-- The Office 365 group for your classic workspace isn't affected by the workspace upgrade in Power BI. Any Teams, SharePoint sites, mailboxes, or other resources managed by Office 365 aren't changed and remain intact after you upgrade your Power BI workspace. The Office 365 group continues to exist as before.
-- There are changes to how your workspace is secured after the upgrade. These are covered the **workspace permissions after upgrade** section.
-- An option to **go back to a classic workspace** is provided in case you need it. However, it doesn't fully restore some aspects of your workspace before it was upgraded. If you start using features that work only in the new workspace experience, you won't be able to go back. The go back option is available for 30 days after you upgrade.
 
 ## Upgrade a classic workspace
 
@@ -48,6 +42,14 @@ We recommend upgrading during off-hours when few users are actively viewing or e
 
 Users who are actively using the workspace are asked to refresh their browser. Those editing a report are given the option to save before they refresh.
 
+## Upgrade considerations and limitations
+
+- The URLs and IDs of your workspace, the content it contains, and the app published from the workspace don't change. Content from content packs installed in your workspace are handled separately as discussed in this document.
+- Content packs aren't supported in the new workspace experience. Read the sections about **published content packs** or **installed content packs** to learn about how these are handled during upgrade. We recommend deleting content packs installed or published in your workspace before you upgrade.
+- The Office 365 group for your classic workspace isn't affected by the workspace upgrade in Power BI. Any Teams, SharePoint sites, mailboxes, or other resources managed by Office 365 aren't changed and remain intact after you upgrade your Power BI workspace. The Office 365 group continues to exist as before.
+- There are changes to how your workspace is secured after the upgrade. These are covered the **workspace permissions after upgrade** section.
+- An option to **go back to a classic workspace** is provided in case you need it. However, it doesn't fully restore some aspects of your workspace before it was upgraded. If you start using features that work only in the new workspace experience, you won't be able to go back. The go back option is available for 30 days after you upgrade.
+
 ## Permissions changes to your workspace after upgrade
 
 Use **Access** at the top of the workspace content list to review the permissions after upgrade.
@@ -69,9 +71,7 @@ Important differences in workspace roles before and after upgrade:
 
 The new workspace experience enables you to give workspace roles to Office 365 groups, security groups, or distribution lists.
 
-Any users who have access to items in the workspace through sharing or app permission continue to have access to those items.
-
-- Anyone with access to the workspace also has access to the app published from the workspace. These users aren't listed in the app access list.
+Any users who have access to items in the workspace through sharing or app permission continue to have access to those items. Anyone with access to the workspace also has access to the app published from the workspace. These users aren't listed in the app access list.
 
 We recommend evaluating whether to use the new Contributor role. After upgrade, you can change the Office 365 group to have the Contributor role in the Access pane.
 
@@ -79,15 +79,21 @@ After upgrade, you may consider creating a security or Office 365 group or distr
 
 ## Other new workspace experience features
 
-Use **Settings** at the top of the workspace content list to access the workspace settings.
+The new workspace experience has features that the classic workspaces don't have. One difference is the ability to set a contact list that's different from the workspace admins or owners. One similarity is that it's still connected to the Office 365 group SharePoint document library. 
 
-Under **Advanced**, the workspace **Contact list** is configured to be the Office 365 group the workspace was upgraded from. You can add more users or groups, or switch it to workspace admins.
+### Modify the contact list
+
+1. Select **Settings** at the top of the workspace content list to access workspace settings.
+
+2. Under **Advanced**, the workspace **Contact list** is configured to be the Office 365 group the workspace was upgraded from. You can add more users or groups to the contact list, or switch it to workspace admins.
+
+### The workspace OneDrive 
 
 After upgrade, the workspace **OneDrive** is connected to the Office 365 group SharePoint document library. This shows as the **OneDrive** option in the **Get Data > Files** experience. Be aware that not all workspace users may have permission to that document library, if they're not in the Office 365 group.
 
 ## Go back to a classic workspace
 
-As part of the upgrade experience, you have the option to go back to a classic workspace for 30 days after the upgrade. This capability restores the association of workspace content to the original Office 365 group. It's available in case your organization encounters major issues using the new workspace experience.
+As part of the upgrade experience, you have the option to go back to a classic workspace for 30 days after the upgrade. This capability restores the association of workspace content with the original Office 365 group. It's available in case your organization encounters major issues using the new workspace experience. However, there are limitations. Read [Considerations for switching back to classic](#considerations-for-switching-back-to-classic) in this article first.
 
 To go back, you need to be an Owner of the Office 365 group the workspace was associated with before it was upgraded.
 
@@ -146,10 +152,10 @@ When you upgrade your workspace, or the workspace from which the content pack is
 
 However, there are important changes:
 
-1. The content no longer updates if the content pack is updated.
-2. The URLs and item identifiers change and require any bookmarks or links you've shared with others to be updated.
-3. Any user customizations on the original content pack from your workspace are lost. This includes subscriptions, alerts, personal bookmarks, persistent filters, and favorites.
-4. New users many not have access to the datasets that were in the content pack. You need work with the dataset owner to ensure workspace users have access to the data.
+- The content no longer updates if the content pack is updated.
+- The URLs and item identifiers change and require any bookmarks or links you've shared with others to be updated.
+- Any user customizations on the original content pack from your workspace are lost. This includes subscriptions, alerts, personal bookmarks, persistent filters, and favorites.
+- New users many not have access to the datasets that were in the content pack. You need work with the dataset owner to ensure workspace users have access to the data.
 
 ## Next steps
 * [Create the new workspaces in Power BI](../service-create-the-new-workspaces.md)
