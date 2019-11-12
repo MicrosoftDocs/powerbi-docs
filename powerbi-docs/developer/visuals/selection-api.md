@@ -182,7 +182,7 @@ Need to fill the visual data baskets.
 
 There are `Manafacturer` as category (columns), `Type` as series (rows) and `Value` as `Values` for series.
 
-> ![NOTE]
+> [!NOTE]
 > The `Values` are required for series, because according data view mapping the visual expects that `Values` will be groped by `Rows` data.
 
 #### Create selections for categories
