@@ -2,7 +2,6 @@
 title: Capture additional diagnostic information
 description: These instructions provide two potential options for manually collecting additional diagnostic information from the Power BI web client.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -55,4 +54,4 @@ This article provides instructions for manually collecting additional diagnostic
 
 1. You can provide the HAR file to support for review.
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

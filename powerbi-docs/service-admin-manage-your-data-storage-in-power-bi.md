@@ -2,7 +2,6 @@
 title: Manage data storage in your workspaces
 description: Learn how you can manage data storage in your individual or workspace to make sure you can continue to publish reports and datasets.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -41,7 +40,7 @@ The size of a dashboard that you share varies depending on what is pinned to it.
 
 See how much data storage you’re using in your Power BI account, and manage your account.
 
-1. To manage your own storage, go to **My Workspace** on the left navigation pane.
+1. To manage your own storage, go to **My Workspace** on the nav pane.
    
     ![My Workspace](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
 2. Select the gear icon ![Gear icon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) in the upper-right corner \> **Manage personal storage**.
@@ -99,5 +98,5 @@ This limit also is indicated within **Manage personal storage**.
 
  ![Over your storage limit](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+ More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

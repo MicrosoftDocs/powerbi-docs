@@ -1,10 +1,15 @@
 {
     "redirections": [
         {
+          "source_path": "powerbi-docs/service-admin-power-bi-expressroute.md",
+          "redirect_url": "/azure/expressroute/expressroute-introduction",
+          "redirect_document_id": false
+        },
+        {
           "source_path": "powerbi-docs/guided-learning/gettingstarted.yml",
           "redirect_url": "/learn/modules/get-started-with-power-bi/",
           "redirect_document_id": false
-        },        
+        },
         {
           "source_path": "powerbi-docs/guided-learning/gettingdata.yml",
           "redirect_url": "/learn/modules/get-data-power-bi/",
@@ -561,6 +566,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "powerbi-docs/visuals/power-bi-visualization-best-practices.md", 
+            "redirect_url": "/power-bi/visuals/power-bi-report-visualizations",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "powerbi-docs/power-bi-visualization-card.md", 
             "redirect_url": "/power-bi/visuals/power-bi-visualization-card",
             "redirect_document_id": true
@@ -1014,6 +1024,191 @@
             "source_path": "powerbi-docs/desktop-accessibility.md",
             "redirect_url": "/power-bi/desktop-accessibility-overview",
             "redirect_document_id": false
-        }        
+        },
+        
+       {
+
+        "source_path": "powerbi-docs/service-connect-to-azure-consumption-insights.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-circuit-id.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-ax.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-crm.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-nav.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-stripe.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-tygraph.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-uservoice.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+
+   {
+
+        "source_path": "powerbi-docs/service-connect-to-ziosk.md",
+
+        "redirect_url": "/power-bi/service-connect-to-services",
+
+        "redirect_document_id": false
+
+    },
+    {
+        "source_path": "powerbi-docs/service-connect-to-alpine-metrics.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-appfigures.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-application-insights.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-azure-mobile.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-clickdimensions.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-connect-to.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-insightly.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-intelliboard.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-lithium.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-mandrill.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-prevedere.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-sendgrid.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-servicenow.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-sql-sentry.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-sweetiq.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-troux.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-twilio.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-vmob.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    },
+{
+        "source_path": "powerbi-docs/service-connect-to-windows-dev-center.md",
+        "redirect_url": "/power-bi/service-connect-to-services",
+        "redirect_document_id": false
+    }
     ]
 }

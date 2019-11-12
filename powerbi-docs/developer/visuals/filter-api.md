@@ -3,7 +3,6 @@ title: The Visual Filters API in Power BI visuals
 description: This article discusses how Power BI visuals can filter other visuals.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
@@ -183,7 +182,7 @@ Where:
 
   The filter can address columns from various tables.
 
-* `$schema` is http://powerbi.com/product/schema#tuple.
+* `$schema` is https://powerbi.com/product/schema#tuple.
 
 * `filterType` is *FilterType.Tuple*.
 
@@ -235,7 +234,7 @@ let values = [
 ];
 
 let filter: ITupleFilter = {
-    $schema: "http://powerbi.com/product/schema#tuple",
+    $schema: "https://powerbi.com/product/schema#tuple",
     filterType: FilterType.Tuple,
     operator: "In",
     target: target,

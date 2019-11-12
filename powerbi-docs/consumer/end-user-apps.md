@@ -2,7 +2,6 @@
 title: What is a Power BI app?
 description: In Power BI, apps bring related dashboards and reports together, all in one place.
 author: mihart
-manager: kvivek
 ms.reviewer: lukaszp
 ms.custom: seodec18
 ms.service: powerbi

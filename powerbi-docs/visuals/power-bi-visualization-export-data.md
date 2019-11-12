@@ -191,4 +191,4 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 
 - Power BI admins can disable the export of data.
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

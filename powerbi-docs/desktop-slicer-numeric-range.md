@@ -2,7 +2,6 @@
 title: Use the numeric range slicer in Power BI Desktop
 description: Learn how to use a slicer for constraining to numeric ranges in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

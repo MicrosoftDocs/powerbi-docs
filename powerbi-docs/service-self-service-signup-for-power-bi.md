@@ -2,7 +2,6 @@
 title: Sign up for Power BI as an individual
 description: Learn how to sign up for Power BI and begin using it for your data analysis and visualization needs.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -83,4 +82,4 @@ In most cases, you can sign up for Power BI by following the described process. 
 [Purchasing Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI Service agreement for individual users](https://powerbi.microsoft.com/terms-of-service/)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

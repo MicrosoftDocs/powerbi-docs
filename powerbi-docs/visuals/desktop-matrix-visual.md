@@ -2,7 +2,6 @@
 title: Use the matrix visual in Power BI
 description: Learn how the matrix visual enables step layouts and granular highlighting in Power BI.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop

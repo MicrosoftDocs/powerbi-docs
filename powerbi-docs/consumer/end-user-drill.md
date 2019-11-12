@@ -2,7 +2,6 @@
 title: Drill down and drill up in a visual
 description: This article shows how to drill down in a visual in the Microsoft Power BI service.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -147,4 +146,4 @@ By default, drilling won't filter other visuals in a report. However, the report
 
 [Power BI - Basic Concepts](end-user-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

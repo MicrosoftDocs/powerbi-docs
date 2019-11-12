@@ -3,7 +3,6 @@ title: Use row-level security with Power BI embedded content
 description: Learn about the steps you need to take to embed Power BI content within your application.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -11,7 +10,7 @@ ms.topic: conceptual
 ms.date: 11/04/2019 
 ---
 
-# Implementing row-level security in embedded paginated reports
+# Implementing row-level security in embedded paginated reports (preview)
 
 When you embed a paginated report, you can control which data is displayed. This allows tailoring the displayed information per user. For example, if you have a Power BI paginated report that includes global sale results, you can embed it so that only the sale results from a certain region are available.
 
@@ -78,7 +77,7 @@ When embedding a paginated report for your customers, the [Reports GenerateToken
 
 To expose only some of the data, assign the `username` field with the information you want to be displayed. For example, in a paginated report that has a color parameter, if you enter *green* in the `username` field, the embed token will restrict the embedded data to display only the data that has the *green* value in the color column.
 
-```javascript
+```JSON
 {
     "accessLevel": "View",
     "reportId": "cfafbeb1-8037-4d0c-896e-a46fb27ff229",

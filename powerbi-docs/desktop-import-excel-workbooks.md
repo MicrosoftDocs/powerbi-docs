@@ -2,7 +2,6 @@
 title: Import Excel workbooks into Power BI Desktop
 description: Import Excel workbooks into Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

@@ -2,7 +2,6 @@
 title: Many-to-many relationships in Power BI Desktop
 description: Use relationships with a many-many cardinality in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

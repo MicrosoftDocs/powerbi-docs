@@ -60,7 +60,7 @@ landingContent:
           - text: "Guidelines for visuals"
             url: guidelines-powerbi-visuals.md
           - text: "Advanced edit mode in visuals"
-            url: /advanced-edit-mode.md
+            url: visuals/advanced-edit-mode.md
       - linkListType: how-to-guide
         links:
           - text: "Get a visual certified"

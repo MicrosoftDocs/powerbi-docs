@@ -2,7 +2,6 @@
 title: Power BI webinars
 description: Power BI webinars
 author: v-tatero
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -17,7 +16,13 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-No webinars scheduled yet. Check back soon for more upcoming events.
+**Analytics in Azure virtual event. Accelerate time to insight with Azure Synapse Analytics**
+<br>by Gayle Sheppard and John Macintyre
+<br>[Register now](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
+
+**How Microsoft Is Changing BI Data Protection**
+<br>by Anton Fritz and Adi Regev
+<br>[Register to watch on December 4th](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
 
 >[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 

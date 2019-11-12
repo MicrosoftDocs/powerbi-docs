@@ -3,7 +3,6 @@ title: What can I do with the Power BI API
 description: What can I do with the Power BI API
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -56,4 +55,4 @@ You can use the Power BI API to [push data into a dataset](walkthrough-push-data
 * [Power BI REST API Reference](rest-api-reference.md)
 * [Power BI REST APIs](https://docs.microsoft.com/rest/api/power-bi/)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

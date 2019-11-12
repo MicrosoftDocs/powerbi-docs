@@ -2,7 +2,6 @@
 title: Favorites in the Power BI mobile apps
 description: Read about making and viewing your favorite Power BI dashboards, reports, and apps, plus Power BI Report Server and Reporting Services reports and KPIs in the mobile apps.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -73,5 +72,5 @@ You can view your favorite Power BI Report Server and Reporting Services reports
 
 ## Next steps
 * [Favorite dashboards in the Power BI service](../end-user-favorite.md) 
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

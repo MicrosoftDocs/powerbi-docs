@@ -2,7 +2,6 @@
 title: Optimize your data for Power BI quick insights
 description: Optimize your data for Power BI quick insights. If Power BI doesn't find insights in your data, here are some things you can do
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -24,5 +23,5 @@ Want to improve quick insights results?  If you are a dataset owner, try these:
 ### Next steps
 [Power BI quick insights](consumer/end-user-insights.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

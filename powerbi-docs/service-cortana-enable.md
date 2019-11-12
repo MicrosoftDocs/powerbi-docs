@@ -2,7 +2,6 @@
 title: Activate Cortana for Power BI
 description: Use Cortana with Power BI to get answers from your data. Activate Cortana for each Power BI dataset and then enable Cortana to access your datasets from Windows devices.
 author: maggiesMSFT
-manager: kfile
 
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -80,5 +79,5 @@ Cortana will use this work or school account to check Power BI for potential ans
 
 [Troubleshoot Cortana and Power BI integration issues](service-cortana-troubleshoot.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

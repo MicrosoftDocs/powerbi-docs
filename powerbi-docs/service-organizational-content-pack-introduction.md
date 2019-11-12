@@ -2,7 +2,6 @@
 title: Intro to organizational content packs in Power BI
 description: Read about packaging up your dashboards, reports, Excel workbooks, and datasets into organizational content packs you can share with your coworkers.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 
 ms.service: powerbi
@@ -50,7 +49,7 @@ The lifecycle looks something like this:
    > 
    > 
 2. Nate sends mail to the distribution group, telling them about the new content pack.
-3. In Power BI Pro, Jane, a member of the Marketing distribution group, searches for and connects to a content pack in AppSource. Jane now has a read-only copy. Jane knows it's read-only because in the left Navigation Pane, there is a sharing icon to the left of the dashboard name and report name. And when Jane selects the dashboard, a lock icon lets Jane know they are looking at a content pack dashboard. 
+3. In Power BI Pro, Jane, a member of the Marketing distribution group, searches for and connects to a content pack in AppSource. Jane now has a read-only copy. Jane knows it's read-only because in the nav pane, there is a sharing icon to the left of the dashboard name and report name. And when Jane selects the dashboard, a lock icon lets Jane know they are looking at a content pack dashboard. 
 4. Say Jane decides to customize it. Jane will now have their own copy of the dashboard and reports. Jane's work does not affect the source, the original content pack, or other distribution group members. They are now each working on their own copy of the dashboard and report.
 5. Nate makes updates to the dashboard and when it's ready, will publish a new version of the content pack.
    
@@ -59,11 +58,11 @@ The lifecycle looks something like this:
 6. Say Nate changes the security settings. Julio and Jane no longer have access to the content. Or say they're removed from the Marketing distribution group.
    
    * Julio didn't customize the original content pack, so the content is automatically removed. 
-   * Jane did customize the content pack. The next time Jane opens the dashboard all tiles from the original content pack are gone, but tiles pinned from other reports (that Jane still has permission to use) still appear. The associated reports and dataset are no longer available (and don't appear in their left navigation pane).
+   * Jane did customize the content pack. The next time Jane opens the dashboard all tiles from the original content pack are gone, but tiles pinned from other reports (that Jane still has permission to use) still appear. The associated reports and dataset are no longer available (and don't appear in their nav pane).
 7. Or Nate deletes the content pack.
    
    * Julio didn't customize the original content pack, so the content is automatically removed. 
-   * Jane did customize the content pack. The  next time Jane opens the dashboard all tiles from the original content pack are gone, but tiles pinned from other reports still appear. The associated reports and dataset are no longer available (and don't appear in their left navigation pane).
+   * Jane did customize the content pack. The  next time Jane opens the dashboard all tiles from the original content pack are gone, but tiles pinned from other reports still appear. The associated reports and dataset are no longer available (and don't appear in their nav pane).
 
 ## Data security
 All distribution group members have the same permissions to the data as the content pack creator. The one exception to this is SQL Server Analysis Services (SSAS) on-premises tabular datasets. Because the reports and dashboards are connecting live to the on-premises SSAS model, the credentials of each individual distribution group member are used to determine the data they can access.
@@ -72,5 +71,5 @@ All distribution group members have the same permissions to the data as the cont
 * [Create and publish an organizational content pack](service-organizational-content-pack-create-and-publish.md)
 * [Create and distribute an app in Power BI](service-create-distribute-apps.md) 
 * [Basic concepts for designers in the Power BI service](service-basic-concepts.md)
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)
 
