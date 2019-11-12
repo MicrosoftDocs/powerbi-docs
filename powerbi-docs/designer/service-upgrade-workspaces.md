@@ -151,10 +151,6 @@ However, there are important changes:
 3. Any user customizations on the original content pack from your workspace are lost. This includes subscriptions, alerts, personal bookmarks, persistent filters, and favorites.
 4. New users many not have access to the datasets that were in the content pack. You need work with the dataset owner to ensure workspace users have access to the data.
 
-## Known issues
-
-- After upgrade
-
 ## Next steps
 * [Create the new workspaces in Power BI](../service-create-the-new-workspaces.md)
 * [Create the classic workspaces](../service-create-workspaces.md)
