@@ -3,7 +3,6 @@ title: Authenticate users and get an Azure AD access token for your application
 description: Learn how to register an application in Azure Active Directory for use with embedding Power BI content.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -45,7 +44,7 @@ var @params = new NameValueCollection
     {"resource", Properties.Settings.Default.PowerBiAPI},
 
     //After user authenticates, Azure AD will redirect back to the web app
-    {"redirect_uri", "http://localhost:13526/Redirect"}
+    {"redirect_uri", "https://localhost:13526/Redirect"}
 };
 ```
 
@@ -75,7 +74,7 @@ protected void signInButton_Click(object sender, EventArgs e)
         {"resource", Properties.Settings.Default.PowerBiAPI},
 
         //After user authenticates, Azure AD will redirect back to the web app
-        {"redirect_uri", "http://localhost:13526/Redirect"}
+        {"redirect_uri", "https://localhost:13526/Redirect"}
     };
 
     //Create sign-in query string
@@ -202,4 +201,4 @@ Error message: "'AuthenticationContext' doesn't contain a definition for 'Acquir
 
 Now that you have the access token, you can call the Power BI REST API to embed content. For information, see [How to embed your Power BI content](embed-sample-for-customers.md#embed-content-within-your-application).
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

@@ -3,7 +3,6 @@ title: "Paginated reports in Power BI: FAQ"
 description: This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. 
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
@@ -15,7 +14,7 @@ ms.date: 10/04/2019
 
 This article answers frequently asked questions about paginated reports. These reports are highly formatted, pixel-perfect output optimized for printing or PDF generation. They're called "paginated" because they're formatted to fit well on multiple pages. Paginated reports are based on the RDL report technology in SQL Server Reporting Services. 
 
-This article answers many common questions people have about paginated reports in Power BI Premium, and about Report Builder, the standalone tool for authoring paginated reports. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in app workspaces, as long as the workspace is in a Power BI Premium capacity. 
+This article answers many common questions people have about paginated reports in Power BI Premium, and about Report Builder, the standalone tool for authoring paginated reports. You need a Power BI Pro license to publish a report to the service. You can publish and share paginated reports in your My Workspace or in workspaces, as long as the workspace is in a Power BI Premium capacity. 
 
 ## Administration
 

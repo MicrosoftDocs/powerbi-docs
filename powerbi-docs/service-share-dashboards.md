@@ -2,7 +2,6 @@
 title: Share Power BI dashboards and reports with coworkers and others
 description: How to share Power BI dashboards and reports with colleagues in and out of your organization, and what you need to know about sharing.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 
@@ -163,5 +162,5 @@ To share a dashboard or report, you need permission to reshare the underlying co
 * Have feedback? Go to the [Power BI Community site](https://community.powerbi.com/) with your suggestions.
 * [How should I collaborate on and share dashboards and reports?](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Share a filtered Power BI report](service-share-reports.md).
-* Questions? [Try the Power BI Community](http://community.powerbi.com/).
+* Questions? [Try the Power BI Community](https://community.powerbi.com/).
 

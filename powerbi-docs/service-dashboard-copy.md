@@ -2,7 +2,6 @@
 title: Create a copy of a Power BI dashboard
 description: 'How to duplicate a Power BI dashboard '
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 
@@ -46,5 +45,5 @@ To make a copy of a dashboard, you must be the dashboard *creator*. Dashboards t
 ## Next steps
 * [Tips for designing a great dashboard](service-dashboards-design-tips.md) 
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

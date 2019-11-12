@@ -3,7 +3,6 @@ title: Embed a report in a secure portal or website
 description: The Power BI embeds feature enables users to easily and securely embed reports in internal web portals.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -44,7 +43,7 @@ The **Embed** option supports [URL Filters](service-url-filters.md) and URL sett
 
 The **Embed** option doesn't automatically permit users to view the report. View permissions are set in the Power BI service.
 
-In the Power BI service, you can share embedded reports with users requiring access. If you're using an Office 365 Group, you can list the user as an app workspace member. For more information, see how to [manage your app workspace in Power BI and Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
+In the Power BI service, you can share embedded reports with users requiring access. If you're using an Office 365 Group, you can list the user as a workspace member. For more information, see how to [manage your workspace in Power BI and Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## Licensing
 

@@ -2,7 +2,6 @@
 title: Row-level security (RLS) with Power BI
 description: How to configure row-level security for imported datasets, and DirectQuery, within the Power BI service.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -23,7 +22,7 @@ You can configure RLS for data models imported into Power BI with Power BI Deskt
 
 By default, row-level security filtering uses single-directional filters, regardless of whether the relationships are set to single direction or bi-directional. You can manually enable bi-directional cross-filter with row-level security by selecting the relationship and checking the **Apply security filter in both directions** checkbox. You should check this box when your've also implemented dynamic row-level security at the server level, where row-level security is based on user name or login ID.
 
-For more information, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](desktop-bidirectional-filtering.md) and the [Securing the Tabular BI Semantic Model](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) technical article.
+For more information, see [Bidirectional cross-filtering using DirectQuery in Power BI Desktop](desktop-bidirectional-filtering.md) and the [Securing the Tabular BI Semantic Model](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) technical article.
 
 ![Apply Security Filter](media/service-admin-rls/rls-apply-security-filter.png)
 
@@ -84,12 +83,12 @@ To return to normal viewing, select **Back to Row-Level Security**.
 
 [!INCLUDE [include-short-name](./includes/rls-usernames.md)]
 
-## Using RLS with app workspaces in Power BI
+## Using RLS with workspaces in Power BI
 
-If you publish your Power BI Desktop report to an app workspace within the Power BI service, the roles will be applied to read-only members. You will need to indicate that members can only view Power BI content within the app workspace settings.
+If you publish your Power BI Desktop report to a workspace within the Power BI service, the roles will be applied to read-only members. You will need to indicate that members can only view Power BI content within the workspace settings.
 
 > [!WARNING]
-> If you have configured the app workspace so that members have edit permissions, the RLS roles will not be applied to them. Users will be able to see all of the data.
+> If you have configured the workspace so that members have edit permissions, the RLS roles will not be applied to them. Users will be able to see all of the data.
 
 ![Group settings](media/service-admin-rls/rls-group-settings.png)
 
@@ -100,4 +99,4 @@ If you publish your Power BI Desktop report to an app workspace within the Power
 ## Next steps
 [Row-level security (RLS) with Power BI Desktop](desktop-rls.md)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

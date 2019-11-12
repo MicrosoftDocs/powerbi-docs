@@ -3,7 +3,6 @@ title: Embedded analytics with Power BI
 description: Power BI offers APIs to use embedded analytics for your dashboards and reports into applications. Learn more about embedding with Power BI both in a PaaS environment and a SaaS environment using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -21,7 +20,7 @@ ms.date: 05/15/2019
 
 # Embedded analytics with Power BI
 
-The Power BI service (SaaS) and the Power BI Embedded service in Azure (PaaS) have APIs for embedding your dashboards and reports. When embedding content, this gives you access to the latest Power BI features such as dashboards, gateways, and app workspaces.
+The Power BI service (SaaS) and the Power BI Embedded service in Azure (PaaS) have APIs for embedding your dashboards and reports. When embedding content, this gives you access to the latest Power BI features such as dashboards, gateways, and workspaces.
 
 You can go through the [Embedding setup tool](https://aka.ms/embedsetup) to quickly get started and download a sample application.
 
@@ -80,7 +79,7 @@ Developers using Power BI Embedded can spend time focused on building their appl
 > [!IMPORTANT]
 > While embedding requires the Power BI service, your customers do not need to have a Power BI account to view your application's embedded content. 
 
-When you're ready to move to production, your app workspace must be assigned to a dedicated capacity. Power BI Embedded in Microsoft Azure, offers [dedicated capacities](azure-pbie-create-capacity.md) to use with your applications.
+When you're ready to move to production, your workspace must be assigned to a dedicated capacity. Power BI Embedded in Microsoft Azure, offers [dedicated capacities](azure-pbie-create-capacity.md) to use with your applications.
 
 For embedding details, see [How to embed Power BI content](embed-sample-for-customers.md).
 
@@ -97,4 +96,4 @@ You can now try to embed Power BI content into an application, or try to embed P
 > [!div class="nextstepaction"]
 >[Embed for your customers](embed-sample-for-customers.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

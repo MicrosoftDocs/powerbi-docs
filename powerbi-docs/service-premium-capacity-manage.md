@@ -3,7 +3,6 @@ title: Manage Microsoft Power BI Premium capacities
 description: Describes management tasks for Power BI Premium capacities.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -38,7 +37,7 @@ At least one Capacity Admin must be assigned. Users assigned as Capacity Admins 
 
 Capacity Admins cannot access workspace content unless explicitly assigned in workspace permissions. They also don't have access to all Power BI admin areas (unless explicitly assigned) such as usage metrics, audit logs, or tenant settings. Importantly, Capacity Admins do not have permissions to create new capacities or scale existing capacities. Admins are assigned on a per capacity basis, ensuring that they can only view and manage capacities to which they are assigned.
 
-Capacity size is selected from an available list of SKU options, which is constrained by the number of available v-cores in the pool. It's possible to create multiple capacities from the pool, which could be sourced from one or more purchased SKUs. For example, a P3 SKU (32 v-cores) could be used to create three capacities: one P2 (16 v-cores), and two P1 (2 x 8 v-cores). Improved performance and scale can be achieved by creating smaller sized capacities, as described in the [Optimizing Premium Capacities](service-premium-capacity-optimize.md) article. The following image shows an example setup for the fictitious Contoso organization consisting of five Premium capacities (3 x P1, and 2 x P3) with each containing app workspaces, and several workspaces in shared capacity.
+Capacity size is selected from an available list of SKU options, which is constrained by the number of available v-cores in the pool. It's possible to create multiple capacities from the pool, which could be sourced from one or more purchased SKUs. For example, a P3 SKU (32 v-cores) could be used to create three capacities: one P2 (16 v-cores), and two P1 (2 x 8 v-cores). Improved performance and scale can be achieved by creating smaller sized capacities, as described in the [Optimizing Premium Capacities](service-premium-capacity-optimize.md) article. The following image shows an example setup for the fictitious Contoso organization consisting of five Premium capacities (3 x P1, and 2 x P3) with each containing workspaces, and several workspaces in shared capacity.
 
 ![An example setup for the fictitious Contoso organization](media/service-premium-capacity-manage/contoso-organization-example.png)
 
@@ -62,7 +61,7 @@ Deleting a Premium capacity is possible and won't result in the deletion of its 
 
 ### Assigning workspaces to capacities
 
-Workspaces can be assigned to a Premium capacity in the Power BI Admin portal or, for an app workspace, in the **Workspace** pane.
+Workspaces can be assigned to a Premium capacity in the Power BI Admin portal or, for a workspace, in the **Workspace** pane.
 
 Capacity Admins, as well as Office 365 Global Administrators or Power BI service administrators, can bulk assign workspaces in the Power BI Admin portal. Bulk assigned can apply to:
 

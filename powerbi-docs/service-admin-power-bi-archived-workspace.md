@@ -2,7 +2,6 @@
 title: Power BI Archived Workspace
 description: Power BI Archived Workspace after managing your Office 365 tenant
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -21,7 +20,7 @@ LocalizationGroup: Administration
 
 With Power BI, anyone can sign up and start using the service in a few minutes.  Later, your organization's IT department might choose to take over managing Power BI for users in your organization.  If this takeover occurs, you benefit from central management of users and permissions in your organization. You might also be able to take advantage of streamlined sign-in using the same username and password you use for other services in your organization.
 
-Any content you created before your IT department started managing Power BI will be placed in a Power BI Archived Workspace, which is accessible from the left navigation of [Power BI](https://app.powerbi.com). You should start creating new Power BI content in My Workspace, which is secured and managed by your organization's IT department.  Your Archived Workspace will continue to exist, but there are restrictions on actions you can perform on content in your Archived Workspace.  To remove these restrictions, you must migrate the content from your Archived Workspace to My Workspace, managed by your IT department.
+Any content you created before your IT department started managing Power BI will be placed in a Power BI Archived Workspace, which is accessible from the nav pane of [Power BI](https://app.powerbi.com). You should start creating new Power BI content in My Workspace, which is secured and managed by your organization's IT department.  Your Archived Workspace will continue to exist, but there are restrictions on actions you can perform on content in your Archived Workspace.  To remove these restrictions, you must migrate the content from your Archived Workspace to My Workspace, managed by your IT department.
 
 ## Restrictions in your Archived Workspace
 
@@ -47,5 +46,5 @@ To continue using Power BI, you should create new content in My Workspace. You s
 
 * **Dashboards**: Dashboards installed as part of content packs are automatically recreated when you reconnect to the content pack in My Workspace. If you created your own dashboards through the Power BI service, recreate those dashboards in My Workspace.
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

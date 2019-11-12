@@ -2,7 +2,6 @@
 title: Display the dashboards and reports that have been shared with me
 description: documentation for shared with me in Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 

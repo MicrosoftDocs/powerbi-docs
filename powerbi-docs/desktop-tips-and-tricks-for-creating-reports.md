@@ -2,7 +2,6 @@
 title: Tips and tricks for creating reports in Power BI
 description: Learn best practices for building reports in the Power BI service and Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: willthom
 
 ms.custom: seodec18
@@ -159,4 +158,4 @@ DAX is the calculations formula language in Power BI Desktop. It's optimized for
 
 [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx)
 
-[DAX Resource Center](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+[DAX Resource Center](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)

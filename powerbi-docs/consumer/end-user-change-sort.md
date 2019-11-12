@@ -2,7 +2,6 @@
 title: Change how a chart is sorted in a report
 description: Change how a chart is sorted in a Power BI report
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -27,7 +26,7 @@ Whether you're using numeric data (such as sales figures) or text data (such as 
 Visuals on a dashboard cannot be sorted, but in a Power BI report, you can sort most visualizations alphabetically by the names of the categories in the chart, or by the numeric
 values of each category. For example, this chart is sorted alphabetically by the category **store name**.
 
-![bar chart sorted alpha by X axis](media/end-user-change-sort/pbi_chartsortcategory.png)
+![bar chart sorted alpha by X axis](media/end-user-change-sort/pbi-chartsortcategory.png)
 
 It's easy to change the sort from a category (store name) to a value (sales per square feet) instead.
 

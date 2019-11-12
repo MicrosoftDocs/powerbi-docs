@@ -3,25 +3,24 @@ title: Overview of report visualizations in Power BI service and Desktop
 description: Overview of report visualizations (visuals) in Microsoft Power BI.
 author: mihart
 ms.author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: SYk_gWrtKvM
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/01/2019
+ms.date: 10/28/2019
 LocalizationGroup: Visualizations 
 ---
 
 # Visualizations in Power BI reports
 
-Visualizations (known as visuals for short) display insights that have been discovered in the data. A Power BI report might have a single page with one visual or it might have pages full of visuals. In Power BI service, visuals can be [pinned from reports to dashboards](../service-dashboard-pin-tile-from-report.md).
+Visualizations (known as visuals for short) display insights that have been discovered in the data. A Power BI report might have a single page with one visual or it might have pages full of visuals. In the Power BI service, visuals can be [pinned from reports to dashboards](../service-dashboard-pin-tile-from-report.md).
 
-It's important to make the distinction between report *designers* and report *consumers*.  If you are the person building or modifying the report, then you are a designer.  Designers have edit permissions to the report and its underlying dataset. In Power BI Desktop, this means you can open the dataset in Data view and create visuals in Report view. In Power BI service, this means you can open the data set or report in the report editor in [Editing view](../consumer/end-user-reading-view.md). If a report or dashboard has been [shared with you ](../consumer/end-user-shared-with-me.md), you are a report **consumer**. You'll be able to view and interact with the report and its visuals but you won't be able to save major changes.
+It's important to make the distinction between report *designers* and report *consumers*.  If you are the person building or modifying the report, then you are a designer.  Designers have edit permissions to the report and its underlying dataset. In Power BI Desktop, this means you can open the dataset in Data view and create visuals in Report view. In Power BI service, this means you can open the data set or report in the report editor in [Editing view](../consumer/end-user-reading-view.md). If a report or dashboard has been [shared with you ](../consumer/end-user-shared-with-me.md), you are a report *consumer*. You'll be able to view and interact with the report and its visuals but you won't be able to make as many changes as a *designer* can.
 
-There are many different visual types available directly from the Power BI VISUALIZATIONS pane.
+There are many different visual types available directly from the Power BI Visualizations pane.
 
-![](media/power-bi-report-visualizations/power-bi-templates.png)
+![pane with icons for each visualization type](media/power-bi-report-visualizations/power-bi-icons.png)
 
 And for even more choices, visit the [Microsoft AppSource community site](https://appsource.microsoft.com) to find and [download](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) [custom visuals](../developer/visuals/custom-visual-develop-tutorial.md) provided by Microsoft and the community.
 
@@ -44,7 +43,7 @@ If you find yourself using the same custom visual across many reports, you can p
 
 ![Pin to visualization pane](media/power-bi-report-visualizations/power-bi-pin-custom-visual-option.png)
 
-Once a visual has been pinned, it moves up to live with the other built-in visuals. This visual is now tied to your signed in account, so any new reports you built will automatically have this visual included, assuming you are signed in. This makes it very easy to standardize on a particular visual without needing to add it to every single report.
+Once a visual has been pinned, it moves up to live with the other built-in visuals. This visual is now tied to your signed in account, so any new reports you build will automatically have this visual included, assuming you are signed in. This makes it very easy to standardize on a particular visual without needing to add it to every single report.
 
 ![Personalized visualization pane](media/power-bi-report-visualizations/power-bi-personalized-visualization-pane.png)
 

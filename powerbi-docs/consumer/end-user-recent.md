@@ -2,7 +2,6 @@
 title: Display recently-visited content in the Power BI service
 description: documentation for recents in Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 
@@ -49,5 +48,5 @@ The actions available to you will depend on the settings assigned by the content
 ## Next steps
 [Power BI service apps](end-user-apps.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

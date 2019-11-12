@@ -2,7 +2,6 @@
 title: On-premises data gateway FAQ - Power BI
 description: This article is the on-premises data gateway FAQ for Power BI. This article collects frequently asked questions into one spot for the gateway used in Power BI.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -66,5 +65,5 @@ LocalizationGroup: Gateways
 
 * [Troubleshooting the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot)
 
-More questions? Try the [Power BI Community](http://community.powerbi.com/).
+More questions? Try the [Power BI Community](https://community.powerbi.com/).
 

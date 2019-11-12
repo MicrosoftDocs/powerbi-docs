@@ -2,12 +2,11 @@
 title: Use Shape maps in Power BI Desktop (Preview)
 description: Create relative comparisons to regions using Shape maps in Power BI Desktop
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: 'amanda'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
 ---
@@ -56,7 +55,7 @@ Take the following steps to create a **Shape Map**:
 3. You can then modify the map using the Formatting options such as **Default color**, **Zoom**, and more. And, you can also add a category data column to the **Legend** bucket, and classify the map regions based on categories.
 
 ## Use custom maps
-You can use custom maps with **Shape Map** as long as they are in the **TopoJSON** format. If your map is in another format, you can use online tools such as [**Map Shaper**](http://mapshaper.org/) to convert your *shapefiles* or your *GeoJSON* maps into the **TopoJSON** format.
+You can use custom maps with **Shape Map** as long as they are in the **TopoJSON** format. If your map is in another format, you can use online tools such as [**Map Shaper**](https://mapshaper.org/) to convert your *shapefiles* or your *GeoJSON* maps into the **TopoJSON** format.
 
 To use your **TopoJSON** map file, add a ShapeMap visual to your report and add some data to the *Location* and *Color saturation* buckets. Then, in the **Visualizations** pane with the **Format** section selected (shown as (1) in the following image), expand the **Shape** section and select **+ Add Map**.
 
@@ -77,7 +76,7 @@ You can do interesting things with the individual state maps as well, and show m
 
 If you’d like to experiment with this dataset and visualization, you can download the original PBIX file that was used to generate this report using the following link.
 
-* [Custom shape map demo .PBIX file](http://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
+* [Custom shape map demo .PBIX file](https://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
 ## Getting map data
 To quickly get data into a model so you can test **Shape Map**, you can copy one of the tables at the end of this article, then select **Enter Data** from the **Home** ribbon.
@@ -103,7 +102,7 @@ There are a few considerations and requirements for this Preview release of **Sh
 * The **Shape Map** visual is in Preview, and must be enabled in Power BI Desktop. To enable **Shape Map**, select **File > Options and Settings > Options > Preview Features**, then select the **Shape Map Visual** checkbox.
 * Currently, you must also have the **Color saturation** bucket set in order for the **Legend** classification to work properly.
 * The final release version of **Shape Map** will have a user interface that shows the map keys of the currently selected map (there is no date set for final release, and **Shape Map** is still in Preview). In this Preview release, you can reference the map region keys in the tables found in the following **Region Keys** section of this article.
-* The **Shape Map** visual will plot up to a maximum of 1,000 data points.
+* The **Shape Map** visual will plot up to a maximum of 1,500 data points.
 
 ## Region keys
 
