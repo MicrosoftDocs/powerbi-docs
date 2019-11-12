@@ -203,6 +203,8 @@
       items: 
       - name: "Combine binaries"
         href: desktop-combine-binaries.md
+      - name: "Use AI Insights in Power BI Desktop (preview)"
+        href: desktop-ai-insights.md        
     - name: Model your data
       items: 
       - name: "Data categorization in Power BI Desktop"

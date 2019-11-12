@@ -22,7 +22,7 @@ The updated ribbon is in preview, so we can gather feedback from users and custo
 
 ## How to enable the updated ribbon
 
-The updated ribbon in Power BI is a preview feature, and must be enabled. To enable it, select **File > Options and settings > Options**, then select **Preview features** from the left column. In the right pane you an **Updated ribbon** selection. Check the box beside **Updated ribbon** to enable the preview feature. You'll need to restart Power BI Desktop for the preview feature change to take effect.
+The updated ribbon in Power BI is a preview feature, and must be enabled. To enable it, select **File > Options and settings > Options**, then select **Preview features** from the left column. In the right pane is an **Updated ribbon** selection. Check the box beside **Updated ribbon** to enable the preview feature. You'll need to restart Power BI Desktop for the preview feature change to take effect.
 
 ![The updated ribbon option for Power BI Desktop](media/desktop-ribbon/desktop-ribbon-01.png)
 
