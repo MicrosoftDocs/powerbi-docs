@@ -329,6 +329,8 @@
         href: visuals/power-bi-visualization-card.md
       - name: "Combo chart in Power BI"
         href: visuals/power-bi-visualization-combo-chart.md
+      - name: "Decomposition tree in Power BI (Preview)"
+        href: visuals/power-bi-visualization-decomposition-tree.md
       - name: "Doughnut charts in Power BI"
         href: visuals/power-bi-visualization-doughnut-charts.md
       - name: "Filled maps (Choropleths) in Power BI"
