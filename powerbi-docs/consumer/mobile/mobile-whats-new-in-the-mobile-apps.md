@@ -22,7 +22,7 @@ For related "What's New" information, see:
 
 ### Android support for remote configuration of Report Server access settings
 
-We added Android support for remote configuration of the Power BI mobile app's Report Server access settings. IT admins can now use their organization's MDM tool to remotely configure those settings on both iOS and Android devices. See [Configure Power BI mobile app access to Report Server remotely](https:/docs.microsoft.com/power-bi/report-server/configure-powerbi-mobile-apps-remote) for details.
+We added Android support for remote configuration of the Power BI mobile app's Report Server access settings. IT admins can now use their organization's MDM tool to remotely configure those settings on both iOS and Android devices. See [Configure Power BI mobile app access to Report Server remotely](https://docs.microsoft.com/power-bi/report-server/configure-powerbi-mobile-apps-remote) for details.
 
 ### Cross-report drillthrough
 
