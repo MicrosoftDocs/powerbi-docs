@@ -667,6 +667,8 @@
       items: 
       - name: "Create the new workspaces"
         href: service-create-the-new-workspaces.md
+      - name: "Upgrade classic workspaces"
+        href: designer/service-upgrade-workspaces.md
       - name: "Create workspaces"
         href: service-create-workspaces.md
       - name: "Publish apps from workspaces"
