@@ -16,7 +16,7 @@ LocalizationGroup: Share your work
 
 You can upgrade a classic workspace to the new workspace experience. You can upgrade any workspace. However, there may be changes to your workspace that you need to be aware of and plan for.
 
-Learn about the [new workspace experience](https://docs.microsoft.com/en-us/power-bi/service-new-workspaces)
+Learn about the [new workspace experience](../service-new-workspaces).
 
 ## Upgrade considerations and limitations
 
