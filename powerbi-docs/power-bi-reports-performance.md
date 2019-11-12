@@ -17,7 +17,7 @@ This article offers guidance for building fast and reliable reports in Power BI.
 
 ## Choose an appropriate storage mode: Import, DirectQuery
 
-In most cases Import mode is the best choice as it offers the highest speed by leveraging locally cached in-memory data that is compressed using columnar storage. Import mode also allows full DAX capability. Consider DirectQuery (and Composite models) when the source data volume is too large to fit into your Power BI capacity. DirectQuery is also useful when you need to fetch the latest data from the source each time a report is loaded. If you do not have these requirements and users only need to see data that is updated a few times per day or less (e.g. from a corporate data warehouse), Import is highly recommended. In DirectQuery mode, users may try to refresh the report without realising they are fetching exactly same data from the source.      
+In most cases Import mode is the best choice as it offers the highest speed by leveraging locally cached in-memory data that is compressed using columnar storage. Import mode also allows full DAX capability. Consider DirectQuery (and Composite models) when the source data volume is too large to fit into your Power BI capacity. DirectQuery is also useful when you need to fetch the latest data from the source each time a report is loaded. If you do not have these requirements and users only need to see data that is updated a few times per day or less (e.g. from a corporate data warehouse), Import is highly recommended. In DirectQuery mode, users may try to refresh the report without realizing they are fetching exactly same data from the source.      
 
 ## Use filters to limit report visuals to display only what’s needed 
 
