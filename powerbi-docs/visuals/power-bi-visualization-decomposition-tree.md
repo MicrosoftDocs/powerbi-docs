@@ -1,3 +1,18 @@
+---
+title: Decomposition Tree
+description: 'Tutorial: Create a decomposition tree visualization in Power BI'
+author: mihart
+manager: kvivek
+ms.reviewer: juluczni
+ms.service: powerbi
+ms.subservice: powerbi-desktop
+ms.topic: tutorial
+ms.date: 11/12/2019
+ms.author: mihart
+
+LocalizationGroup: Visualizations
+---
+
 # Use the decomposition tree visual in Power BI
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
