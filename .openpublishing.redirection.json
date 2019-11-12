@@ -1,10 +1,15 @@
 {
     "redirections": [
         {
+          "source_path": "powerbi-docs/service-admin-power-bi-expressroute.md",
+          "redirect_url": "https://www.docs.microsoft.com/power-bi",
+          "redirect_document_id": false
+        },
+        {
           "source_path": "powerbi-docs/guided-learning/gettingstarted.yml",
           "redirect_url": "/learn/modules/get-started-with-power-bi/",
           "redirect_document_id": false
-        },        
+        },
         {
           "source_path": "powerbi-docs/guided-learning/gettingdata.yml",
           "redirect_url": "/learn/modules/get-data-power-bi/",

@@ -39,10 +39,6 @@ LocalizationGroup: Gateways
 
 **Answer:** You might need to install the Oracle client and configure the tnsnames.ora file with the proper server information in order to connect to your Oracle server. This is a separate installation outside of the gateway. For more information, see [Install the Oracle client](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
 
-**Question:** Will the gateway work with Azure ExpressRoute? 
-
-**Answer:** Yes. For more information about ExpressRoute and Power BI, see [Power BI and ExpressRoute](service-admin-power-bi-expressroute.md).
-
 **Question:** I'm using R scripts. Is that supported?
 
 **Answer**: R scripts are supported only for personal mode.​
