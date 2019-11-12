@@ -2,7 +2,6 @@
 title: Radial gauge charts in Power BI  
 description: 'Radial gauge charts in Power BI'
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6Epqa
 ms.service: powerbi
@@ -43,7 +42,7 @@ Radial gauges are a great choice to:
 
 ## Prerequisites
 
-This tutorial uses the [Financial sample Excel file](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+This tutorial uses the [Financial sample Excel file](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. From the upper left section of the menubar, select **Get Data** > **Excel**
    
@@ -147,4 +146,4 @@ Once you're done with these steps, you'll have a gauge chart that looks somethin
 
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

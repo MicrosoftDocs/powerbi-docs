@@ -53,6 +53,8 @@
     items: 
     - name: "What's new in the latest Power BI Desktop update?"
       href: desktop-latest-update.md
+    - name: "Model relationships in Power BI Desktop"
+      href: desktop-relationships-understand.md
     - name: "Grouping visuals in Power BI Desktop"
       href: desktop-grouping-visuals.md      
     - name: "Using templates in Power BI Desktop"
@@ -110,7 +112,9 @@
     - name: "Customize visualization title, background, and legend"
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
     - name: "Show items with no data in Power BI"
-      href: desktop-show-items-no-data.md      
+      href: desktop-show-items-no-data.md
+    - name: "Auto date/time in Power BI Desktop"
+      href: desktop-auto-date-time.md   
     - name: Connect to data
       items: 
       - name: "Data sources in Power BI Desktop"
@@ -303,8 +307,6 @@
       items: 
       - name: "Visualizations in Power BI"
         href: visuals/power-bi-report-visualizations.md
-      - name: "Visualization best practices"
-        href: visuals/power-bi-visualization-best-practices.md
       - name: "Change the type of visualization in a report"
         href: visuals/power-bi-report-change-visualization-type.md
       - name: "Data point limits by visual type"
@@ -327,7 +329,9 @@
         href: visuals/power-bi-map-tips-and-tricks.md
       - name: "Customize X-axis and Y-axis properties"
         href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-      - name: "ArcGIS maps"
+      - name: "Create an ArcGIS Maps for Power BI visual"
+        href: visuals/power-bi-visualizations-arcgis.md
+      - name: "Interact with an ArcGIS Maps for Power BI visual"
         href: visuals/power-bi-visualization-arcgis.md
       - name: "Basic area chart"
         href: visuals/power-bi-visualization-basic-area-chart.md
@@ -805,82 +809,24 @@
           href: service-connect-to-services.md
         - name: "Acumatica"
           href: service-connect-to-acumatica.md
-        - name: "Alpine Metrics Sales Predictions"
-          href: service-connect-to-alpine-metrics.md
-        - name: "appFigures"
-          href: service-connect-to-appfigures.md
-        - name: "Application Insights"
-          href: service-connect-to-application-insights.md
         - name: "Azure Audit Logs"
           href: service-connect-to-azure-audit-logs.md
-        - name: "Azure Mobile Engagement"
-          href: service-connect-to-azure-mobile.md
-        - name: "Microsoft Azure Consumption Insights"
-          href: service-connect-to-azure-consumption-insights.md
-        - name: "Azure Search"
-          href: service-connect-to-azure-search.md
-        - name: "Circuit ID"
-          href: service-connect-to-circuit-id.md
-        - name: "ClickDimensions"
-          href: service-connect-to-clickdimensions.md
-        - name: "comScore Digital Analytix"
-          href: service-connect-to-connect-to.md
         - name: "GitHub"
           href: service-connect-to-github.md
-        - name: "Insightly"
-          href: service-connect-to-insightly.md
-        - name: "IntelliBoard"
-          href: service-connect-to-intelliboard.md
-        - name: "Lithium"
-          href: service-connect-to-lithium.md
-        - name: "Mandrill"
-          href: service-connect-to-mandrill.md
-        - name: "Microsoft Dynamics AX"
-          href: service-connect-to-microsoft-dynamics-ax.md
-        - name: "Microsoft Dynamics CRM"
-          href: service-connect-to-microsoft-dynamics-crm.md
-        - name: "Microsoft Dynamics NAV"
-          href: service-connect-to-microsoft-dynamics-nav.md
         - name: "Office365Mon"
           href: service-connect-to-office365mon.md
-        - name: "Prevedere"
-          href: service-connect-to-prevedere.md
         - name: "Project Online"
           href: service-connect-to-project-online.md
         - name: "QuickBooks Online"
           href: service-connect-to-quickbooks-online.md
         - name: "Salesforce"
           href: service-connect-to-salesforce.md
-        - name: "SendGrid"
-          href: service-connect-to-sendgrid.md
-        - name: "ServiceNow Incidents"
-          href: service-connect-to-servicenow.md
         - name: "Smartsheet"
           href: service-connect-to-smartsheet.md
-        - name: "SQL Sentry"
-          href: service-connect-to-sql-sentry.md
-        - name: "Stripe"
-          href: service-connect-to-stripe.md
-        - name: "SweetIQ"
-          href: service-connect-to-sweetiq.md
-        - name: "Troux"
-          href: service-connect-to-troux.md
-        - name: "Twilio"
-          href: service-connect-to-twilio.md
-        - name: "tyGraph"
-          href: service-connect-to-tygraph.md
-        - name: "UserVoice"
-          href: service-connect-to-uservoice.md
-        - name: "VMob"
-          href: service-connect-to-vmob.md
-        - name: "Windows Dev Center"
-          href: service-connect-to-windows-dev-center.md
         - name: "Xero"
           href: service-connect-to-xero.md
         - name: "Zendesk"
           href: service-connect-to-zendesk.md
-        - name: "Ziosk"
-          href: service-connect-to-ziosk.md
       - name: Organizational content packs
         items:
         - name: "Intro to organizational content packs"
@@ -935,6 +881,8 @@
       href: service-admin-premium-monitor-portal.md
     - name: Configure incremental refresh
       href: service-premium-incremental-refresh.md
+    - name: Configure large models (preview)
+      href: service-premium-large-models.md
     - name: Configure Multi-Geo
       href: service-admin-premium-multi-geo.md
     - name: Bring your own encryption keys
@@ -1105,6 +1053,8 @@
     items: 
       - name: "Capacity planning whitepaper"
         href: report-server/capacity-planning.md
+      - name: "PDF Rendering Extension conformance"
+        href: report-server/rendering-extension-support.md
 - name: Gateways 
   items:
   - name: Overview

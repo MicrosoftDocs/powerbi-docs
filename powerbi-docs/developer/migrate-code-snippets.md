@@ -3,7 +3,6 @@ title: Code snippets for migrating content from Power BI Embedded
 description: Here are some code snippets of basic operations needed for content migration
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -236,4 +235,4 @@ In this snippet, we assume that the pushable dataset is already in a workspace w
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

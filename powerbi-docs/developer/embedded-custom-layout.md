@@ -3,7 +3,6 @@ title: Custom layouts with Power BI embedded content
 description: Learn about custom layouts when embedding Power BI content in your application.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

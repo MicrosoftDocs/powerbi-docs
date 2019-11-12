@@ -3,7 +3,6 @@ title: Power BI security whitepaper
 description: Whitepaper that discusses and describes security architecture and implementation for Power BI
 author: davidiseminger
 ms.author: davidi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -29,13 +28,13 @@ LocalizationGroup: Conceptual
 
 **Power BI** is an online software service (_SaaS_, or Software as a Service) offering from Microsoft that lets you easily and quickly create self-service Business Intelligence dashboards, reports, datasets, and visualizations. With Power BI, you can connect to many different data sources, combine and shape data from those connections, then create reports and dashboards that can be shared with others.
 
-The Power BI service is governed by the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31), and the [Microsoft Enterprise Privacy Statement](http://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Location of Data Processing terms in the Microsoft Online Services Terms. For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power BI. The Power BI team is working hard to bring its customers the latest innovations and productivity. Power BI is currently in Tier D of the [Office 365 Compliance Framework](http://go.microsoft.com/fwlink/p/?LinkID=618494).
+The Power BI service is governed by the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31), and the [Microsoft Enterprise Privacy Statement](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). For the location of data processing, refer to the Location of Data Processing terms in the Microsoft Online Services Terms. For compliance information, the [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is the primary resource for Power BI. The Power BI team is working hard to bring its customers the latest innovations and productivity. Power BI is currently in Tier D of the [Office 365 Compliance Framework](https://go.microsoft.com/fwlink/p/?LinkID=618494).
 
 This article describes Power BI security by providing an explanation of the Power BI architecture, then explaining how users authenticate to Power BI and data connections are established, and then describing how Power BI stores and moves data through the service. The last section is dedicated to security-related questions, with answers provided for each.
 
 ## Power BI Architecture
 
-The **Power BI** service is built on **Azure**, which is Microsoft's [cloud computing platform](http://azure.microsoft.com/overview/what-is-azure/). Power BI is currently deployed in many datacenters around the world – there are many active deployments made available to customers in the regions served by those datacenters, and an equal number of passive deployments that serve as backups for each active deployment.
+The **Power BI** service is built on **Azure**, which is Microsoft's [cloud computing platform](https://azure.microsoft.com/overview/what-is-azure/). Power BI is currently deployed in many datacenters around the world – there are many active deployments made available to customers in the regions served by those datacenters, and an equal number of passive deployments that serve as backups for each active deployment.
 
 Each Power BI deployment consists of two clusters – a Web Front End (**WFE**) cluster, and a **Back-End** cluster. These two clusters are shown in the following image, and provide the backdrop for the rest of this article. 
 
@@ -112,8 +111,8 @@ Power BI is offered in certain regions, based on where Power BI clusters are dep
 
 The following links provide additional information about Azure datacenters.
 
-- [Azure Regions](http://azure.microsoft.com/regions/) – information about Azure's global presence and locations
-- [Azure Services, by region](http://azure.microsoft.com/regions/#services) – a complete listing of Azure services (both infrastructure services and platform services) available from Microsoft in each region.
+- [Azure Regions](https://azure.microsoft.com/regions/) – information about Azure's global presence and locations
+- [Azure Services, by region](https://azure.microsoft.com/regions/#services) – a complete listing of Azure services (both infrastructure services and platform services) available from Microsoft in each region.
 
 Currently, the Power BI service is available in specific regions, serviced by datacenters as described in the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). The following link shows a map of Power BI datacenters, you can hover over a region to see the datacenters located there:
 
@@ -121,7 +120,7 @@ Currently, the Power BI service is available in specific regions, serviced by da
 
 Microsoft also provides datacenters for sovereignties. For more information about Power BI service availability for national clouds, see [Power BI national clouds](https://powerbi.microsoft.com/clouds/).
 
-For more information on where your data is stored and how it is used, refer to the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Commitments about the location of customer data at rest are specified in the **Data Processing Terms** of the [Microsoft Online Services Terms](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
+For more information on where your data is stored and how it is used, refer to the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Commitments about the location of customer data at rest are specified in the **Data Processing Terms** of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
 
 ## User Authentication
 
@@ -366,7 +365,7 @@ The data cache from Power BI Mobile remains on the device for two weeks, or unti
 
 Power BI Mobile applications do not look at folders on the device. 
 
-All three platforms for which Power BI Mobile is available support Microsoft Intune, a software service that provides mobile device and application management. With Intune enabled and configured, data on the mobile device is encrypted, and the Power BI application itself cannot be installed on an SD card. You can [learn more about Microsoft Intune](http://www.microsoft.com/cloud-platform/microsoft-intune).
+All three platforms for which Power BI Mobile is available support Microsoft Intune, a software service that provides mobile device and application management. With Intune enabled and configured, data on the mobile device is encrypted, and the Power BI application itself cannot be installed on an SD card. You can [learn more about Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
 ## Power BI Security Questions and Answers
 

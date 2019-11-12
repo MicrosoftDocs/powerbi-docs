@@ -2,7 +2,6 @@
 title: Use insights to explain increases and decreases in visuals (Preview)
 description: Easily gain insights to increases or decreases in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.custom: seodec18

@@ -2,7 +2,6 @@
 title: Use R in Power Query Editor
 description: Use R in Power BI Desktop Query Editor for advanced analytics
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.custom: seodec18
@@ -46,7 +45,7 @@ To install **mice**:
 
 To demonstrate using **R** in **Query Editor**, we'll use an example stock market dataset contained in  a .csv file and work through the following steps:
 
-1. [Download the **EuStockMarkets_NA.csv** file](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Remember where you save it.
+1. [Download the **EuStockMarkets_NA.csv** file](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Remember where you save it.
 
 1. Load the file into **Power BI Desktop**: from the **Home** ribbon, select **Get Data > Text/CSV**.
 
@@ -104,7 +103,7 @@ Now we can create a visual to see how the R script code using the **mice** libra
 You can save all completed visuals in one **Power BI Desktop** .pbix file and use the data model and its R scripts in the Power BI service.
 
 > [!NOTE]
-> You can [download a .pbix file](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix) with all these steps completed.
+> You can [download a .pbix file](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix) with all these steps completed.
 
 Once you've uploaded the .pbix file to the Power BI service, you need to take additional steps to enable service data refresh and updated visuals:  
 

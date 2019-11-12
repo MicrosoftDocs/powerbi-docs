@@ -2,7 +2,6 @@
 title: Troubleshooting scheduled refresh for Azure SQL Databases
 description: Troubleshooting scheduled refresh for Azure SQL Databases in Power BI
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 
 ms.service: powerbi
@@ -31,4 +30,4 @@ While setting up scheduled refresh for Azure SQL database, if you get an error w
 
     ![Azure allowed services](media/service-admin-troubleshooting-scheduled-refresh-azure-sql-databases/azurerefresh.png)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

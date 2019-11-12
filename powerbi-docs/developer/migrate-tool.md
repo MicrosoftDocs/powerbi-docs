@@ -3,7 +3,6 @@ title: Power BI Embedded Migration Tool
 description: This migration tool can be used to copy your reports from the Power BI Embedded Azure service (PaaS) to the Power BI service (SaaS).
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -273,4 +272,4 @@ For more information, see [How to migrate Power BI Embedded workspace collection
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

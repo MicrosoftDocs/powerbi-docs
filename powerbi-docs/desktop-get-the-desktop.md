@@ -2,7 +2,6 @@
 title: Get Power BI Desktop
 description: Download and install Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -52,7 +51,7 @@ Once you launch the installation package, **Power BI Desktop** is installed as a
 ## Install as an app from the Microsoft Store
 You can also get **Power BI Desktop** from the Microsoft Store, using the following link:
 
-* [Install **Power BI Desktop** from the **Microsoft Store**](http://aka.ms/pbidesktopstore)
+* [Install **Power BI Desktop** from the **Microsoft Store**](https://aka.ms/pbidesktopstore)
 
   ![Get Power BI Desktop from the Microsoft Store](media/desktop-get-the-desktop/getpbid_04.png)
 

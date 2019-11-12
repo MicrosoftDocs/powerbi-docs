@@ -3,7 +3,6 @@ title: Multi-Geo support for Power BI Embedded
 description: Learn how you can deploy content to data centers in regions other than the home region of the Power BI Embedded.  
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -87,4 +86,4 @@ Learn more about Power BI Embedded capacities and Multi-Geo options for all capa
 
 * [Multi-Geo in Power BI Premium capacities](../service-admin-premium-multi-geo.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

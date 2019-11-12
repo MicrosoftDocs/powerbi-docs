@@ -3,7 +3,6 @@ title: The Analytics pane in Power BI visuals
 description: This article describes how to create dynamic reference lines in Power BI visuals.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi

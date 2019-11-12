@@ -2,7 +2,6 @@
 title: Create dynamic reference lines for visuals
 description: Create dynamic reference lines for visuals in Power BI service
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -98,5 +97,5 @@ Lastly, non-Cartesian visuals cannot currently apply dynamic lines from the **An
 ## Next steps
 [Analytics pane in Power BI Desktop](desktop-analytics-pane.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

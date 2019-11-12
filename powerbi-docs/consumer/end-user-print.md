@@ -2,7 +2,6 @@
 title: Print from the Power BI service
 description: Printing a dashboard, tile, or report page from the Power BI service.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 
@@ -79,5 +78,5 @@ Reports can be printed one page at a time.
 ## Next steps
 [Share dashboards and reports with colleagues and others](../service-share-dashboards.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 
