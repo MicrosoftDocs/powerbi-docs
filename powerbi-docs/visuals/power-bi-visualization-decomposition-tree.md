@@ -33,9 +33,9 @@ Select the decomposition tree icon from the Visualizations pane.
 The visualization requires two types of input.
 
 **Analyze** – the metric you would like to analyze. This has to be a measure or an aggregate.  
-**Explain By** – one ore more dimensions you would like to drill down into.
+**Explain By** – one or more dimensions you would like to drill down into.
 
-Once you drag your measure into the field well, the visual updates showcasing the aggregated measure. In the example below we are visualizing the average % of products on backorder (5.07%)
+Once you drag your measure into the field well, the visual updates showcasing the aggregated measure. In the example below, we are visualizing the average % of products on backorder (5.07%)
 ![Decomposition tree root node](media/power-bi-visualization-decomposition-tree/tree-root.png)
 
 The next step is to bring in one or more dimensions you would like to drill down into. Add these fields to the **Explain by** bucket. Notice that a plus sign appears next to your root node. Selecting the + lets you choose which field you would like to drill into (you can drill into fields in any order that you want).
@@ -76,7 +76,7 @@ Hover over the lightbulb to see a tooltip. In this example, the tooltip is “% 
 
 You can configure the visual to find **Relative** AI splits as opposed to **Absolute** ones. 
 
-Relative mode looks for high values that stand out (compared to the rest of the data in the column). To illustrate this let’s take a look at an example:
+Relative mode looks for high values that stand out (compared to the rest of the data in the column). To illustrate this, let’s take a look at an example:
 ![Decomposition tree absolute split](media/power-bi-visualization-decomposition-tree/tree-ai-absolute.png)
 
 In the screenshot above, we are looking at North America sales of video games. We first split the tree by **Publisher Name** and then drill into Nintendo. Selecting **High Value** results in the expansion of **Platform is Nintendo**. Since Nintendo (the publisher) only develops for Nintendo consoles, there is only one value present and so that is unsurprisingly the highest value.
@@ -100,7 +100,7 @@ Which translates to:
 vs.  
 46,950,000/ (46,950,000/1) = 1x  
 
-If you prefer not to use any AI splits in the tree you also have the option of turning them off under the **Analysis formatting** options:  
+If you prefer not to use any AI splits in the tree, you also have the option of turning them off under the **Analysis formatting** options:  
 
 ![Decomposition tree disable AI split](media/power-bi-visualization-decomposition-tree/tree-ai-disable.png)
 
@@ -112,11 +112,11 @@ You can have multiple subsequent AI levels. You can also mix up different kinds 
 If you select a different node in the tree, the AI Splits recalculate from scratch. In the example below, we changed the selected node in the **Forecast Bias** level. The subsequent levels change to yield the correct High and Low Values
 ![Decomposition tree AI interactions](media/power-bi-visualization-decomposition-tree/tree-ai-interactions.png)
 
-AI levels are also recalculated when you cross-filters the decomposition tree by another visual. In the example below we can see that our backorder % is highest for Plant #0477.
+AI levels are also recalculated when you cross-filter the decomposition tree by another visual. In the example below, we can see that our backorder % is highest for Plant #0477.
 
-![Decomposition tree crossfiltering](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter1.png)
+![Decomposition tree cross-filtering](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter1.png)
 
-But if we select **April** in the bar chart, the highest changes to **Product Type is Advanced Surgical**. In this case, it’s not just the nodes that got re-ordered, but a completely different column was chosen. 
+But if we select **April** in the bar chart, the highest changes to **Product Type is Advanced Surgical**. In this case, it’s not just the nodes that got reordered, but a completely different column was chosen. 
 
 ![Decomposition tree cross-filtering](media/power-bi-visualization-decomposition-tree/tree-ai-crossfilter2.png)
 
@@ -128,7 +128,7 @@ While multiple AI levels can be chained together, a non-AI level cannot follow a
 
 A content creator can lock levels for report consumers. When a level is locked, it cannot be removed or changed. A consumer can explore different paths within the locked level but they cannot change the level itself. As a creator you can hover over existing levels to see the lock icon. You can lock as many levels as you want, but you cannot have unlocked levels preceding locked levels.
 
-In the example below, the first 2 levels are locked. This means that report consumers can change level 3 and 4, and even add new levels afterwards. The first 2 levels however cannot be changed:
+In the example below, the first two levels are locked. This means that report consumers can change level 3 and 4, and even add new levels afterwards. The first two levels however cannot be changed:
 
 ![Decomposition tree locking](media/power-bi-visualization-decomposition-tree/tree-locking.png)
 
