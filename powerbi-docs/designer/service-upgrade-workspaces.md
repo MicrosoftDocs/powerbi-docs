@@ -16,19 +16,25 @@ LocalizationGroup: Share your work
 
 This article explains how to upgrade a classic workspace to the new workspace experience. You can upgrade any classic workspace. The new workspaces have more granular workspace roles so you can better manage access to content. You have more flexibility managing upgraded workspaces because they're more loosely connected to their original Office 365 group. Learn about the [new workspace experience](../service-new-workspaces.md). 
 
-However, there may be changes to your workspace that you need to be aware of and plan for. For example, content packs aren't supported in the new workspace experience. See the [Upgrade considerations and limitations](#upgrade-considerations-and-limitations) section, later in this article.
+![Success upgrading](media/service-upgrade-workspaces/power-bi-upgrade-success.png)
 
+However, there may be changes to your workspace that you need to be aware of and plan for. For example, content packs aren't supported in the new workspace experience. See the [Upgrade considerations and limitations](#upgrade-considerations-and-limitations) section, later in this article.
 
 ## Upgrade a classic workspace
 
 Any workspace admin can upgrade the workspace. To upgrade a workspace, follow these steps.
 
-1. Go to the workspace and view the content list.
-2. Select **More options** (**...**) > **Edit this workspace**.
+1. In the workspace content list, select **More options** (**...**) > **Edit this workspace**.
+
+    ![Edit this workspace](media/service-upgrade-workspaces/power-bi-content-list-edit-workspace.png)
 
 1. Expand **Advanced** and select **Upgrade now**.
 
+    ![Upgrade now](media/service-upgrade-workspaces/power-bi-upgrade-now.png)
+
 1. Review the dialog box information. You see warnings if you've published or installed content packs in the workspace. When you're ready, check **I'm ready to upgrade this workspace**, then select **Upgrade**.
+
+    ![Read to upgrade](media/service-upgrade-workspaces/power-bi-ready-upgrade.png)
 
 2. During upgrade, you see the **Upgrading** message. It usually takes less than a minute to upgrade your workspace.
 
@@ -52,6 +58,7 @@ Users who are actively using the workspace are asked to refresh their browser. U
 
 Select **Access** in the menu bar at the top of the workspace content list to review permissions after upgrade.
 
+![Access in the menu bar](media/service-upgrade-workspaces/power-bi-workspace-access-menu-bar.png)
 
 Each Office 365 group Owner is added individually to the Admin role for the upgraded workspace. The Office 365 group itself is added to a workspace role. The role it's added to depends on whether the classic workspace is *read-only* or *read-write*:
 
@@ -82,9 +89,13 @@ The new workspace experience has features that the classic workspaces don't have
 
 ### Modify the contact list
 
-1. Select **Settings** at the top of the workspace content list to access workspace settings.
+1. Select **Settings** in the menu bar at the top of the workspace content list to access workspace settings.
+
+    ![Workspace settings](media/service-upgrade-workspaces/power-bi-new-workspace-settings.png)
 
 2. Under **Advanced**, the workspace **Contact list** is configured to be the Office 365 group the workspace was upgraded from. You can add more users or groups to the contact list, or switch it to workspace admins.
+
+    ![Contact list](media/service-upgrade-workspaces/power-bi-contact-list-workspace.png)
 
 ### The workspace OneDrive 
 
@@ -115,16 +126,21 @@ As part of the upgrade experience, you have the option to go back to a classic w
 
 To go back, you need to be an Owner of the Office 365 group the workspace was associated with before it was upgraded. Follow these steps.
 
-1. Go to the workspace content list.
-2. Select **More options** (**…**)  > **Workspace settings**.
+1. In the workspace content list, select **More options** (**…**)  > **Workspace settings**.
 
-1. Expand **Advanced**.
+    ![Workspace settings](media/service-upgrade-workspaces/power-bi-workspace-settings-more-options.png)
 
-1. Select **Switch back to classic**. This option may not be available to you. If not, see the [Considerations for switching back to classic](#considerations-for-switching-back-to-classic) in this article.
+1. Expand **Advanced** and select **Switch back to classic**. If this option isn't available to you, see [Considerations for switching back to classic](#considerations-for-switching-back-to-classic) in this article.
 
-1. When you're ready to go back, check the box and select **Switch to classic**. Remember, who can access the workspace is set back to the Office 365 group admins and members. You may see warnings or blockers in this dialog box. Read the considerations for going back in this article if you encounter these issues.
+    ![Switch back to classic](media/service-upgrade-workspaces/power-bi-switch-back-classic.png)
 
-1. When switch back completes, you see a confirmation dialog box.
+1. When you're ready, check the **I'm ready to switch back to classic** box and select **Switch to classic**. You may see warnings or blockers in this dialog box. Read the [considerations for switching back](#considerations-for-switching-back-to-classic) in this article if you encounter these issues.
+
+    ![Ready to switch back](media/service-upgrade-workspaces/power-bi-ready-switch-back.png)
+
+1. When the switch back is complete, you see a confirmation dialog box.
+
+    ![Switch back success](media/service-upgrade-workspaces/power-bi-switch-success.png)
 
 ### Considerations for switching back to classic
 
