@@ -16,7 +16,7 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-**Analytics in Azure virtual event. Accelerate time to insight with Azure Synapse Analytics**
+**Analytics in Azure virtual event: Accelerate time to insight with Azure Synapse Analytics**
 <br>by Gayle Sheppard and John Macintyre
 <br>[Register now](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
 
