@@ -2,7 +2,6 @@
 title: 'Create a report from a dataset'
 description: Create a Power BI report from a dataset.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -18,15 +17,15 @@ You've read [Reports in Power BI](consumer/end-user-reports.md) and now you want
 
 ## Prerequisites
 - [Sign up for the Power BI service](service-self-service-signup-for-power-bi.md). For creating reports using Power BI Desktop, see [Desktop report view](desktop-report-view.md). 
-- [Download the Retail Analysis sample Excel dataset](http://go.microsoft.com/fwlink/?LinkId=529778) and save it to OneDrive for Business or locally.
+- [Download the Retail Analysis sample Excel dataset](https://go.microsoft.com/fwlink/?LinkId=529778) and save it to OneDrive for Business or locally.
 
 ## Import the dataset
 This method of creating a report starts with a dataset and a blank report canvas. You can follow along in the Retail Analysis sample Excel dataset.
 
 1. We'll create the report in a Power BI service workspace, so select an existing workspace or create a one.
    
-   ![list of App workspaces](media/service-report-create-new/power-bi-workspaces2.png)
-2. From the bottom of the left navigation pane, select **Get data**.
+   ![list of workspaces](media/service-report-create-new/power-bi-workspaces2.png)
+2. From the bottom of the nav pane, select **Get data**.
    
    ![Get data](media/service-report-create-new/power-bi-get-data3.png)
 3. Select **Files** and navigate to the location where you saved the Retail Analysis sample.
@@ -89,5 +88,5 @@ Continue exploring your data and adding visualizations. When you find especially
 ## Next steps
 
 * Learn how to [pin visualizations to a dashboard](service-dashboard-pin-tile-from-report.md)   
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

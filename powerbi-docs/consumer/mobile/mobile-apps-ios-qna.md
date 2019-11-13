@@ -2,7 +2,6 @@
 title: 'Q&A virtual analyst in iOS apps - Power BI'
 description: Ask questions about sample data in your own words with the Q&A virtual analyst in the Power BI mobile app on on your iOS device.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -32,7 +31,7 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 ## Prerequisites
 
 ### Install the Power BI for iOS app
-[Download the iOS app](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app")  from the Apple App Store to your iPad, iPhone, or iPod Touch.
+[Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062 "Download the iPhone app")  from the Apple App Store to your iPad, iPhone, or iPod Touch.
 
 These versions support the Power BI for iOS app:
 - iPad with iOS 10 or later.
@@ -46,7 +45,7 @@ The first step is to download the Retail Analysis and Opportunity Analysis sampl
 
 1. Open the Power BI service (app.powerbi.com) and sign in.
 
-2. In the left navigation pane, select **Workspaces**, **My Workspace**.
+2. In the nav pane, select **Workspaces**, **My Workspace**.
 
 3. In the lower-left corner select **Get data**.
    

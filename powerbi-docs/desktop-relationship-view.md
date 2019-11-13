@@ -2,7 +2,6 @@
 title: Relationship View in Power BI Desktop
 description: Relationship View in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

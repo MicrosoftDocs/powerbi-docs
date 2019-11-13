@@ -25,7 +25,7 @@ Here's a list of what you need and don't need to use a shared dataset in Power B
 - To access a Power BI dataset, you need to have Build permission for the dataset. Read about [Build permission](service-datasets-build-permissions.md).
 - You don't need a Power BI Pro license to create a paginated report in Report Builder. 
 - You do need a Power BI Pro license to publish your paginated report. You also need at least a Contributor role for a workspace in a Premium capacity. 
-- Optional: If you want to follow along with this article, download the Power BI Desktop [Retail Analysis sample .pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file, open it in Power BI Desktop and add a table with a lot of columns. In the **Format** pane, turn off **Totals**. Then publish it to a workspace in the Power BI service.
+- Optional: If you want to follow along with this article, download the Power BI Desktop [Retail Analysis sample .pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) file, open it in Power BI Desktop and add a table with a lot of columns. In the **Format** pane, turn off **Totals**. Then publish it to a workspace in the Power BI service.
 
     ![Totals off](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)
 
@@ -94,7 +94,7 @@ When you want the data in your Power BI report and in your Report Builder report
 
     ![Query results](media/report-builder-shared-datasets/power-bi-report-builder-query-results.png)
 
-1. Select **OK**. 
+1. Select **OK**.
 
     You see your query in the **Query** window of the **Dataset Properties** dialog box.
 

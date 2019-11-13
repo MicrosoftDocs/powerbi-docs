@@ -2,7 +2,6 @@
 title: Troubleshooting Analyze in Excel in Power BI Desktop
 description: Solutions to common issues for Analyze in Excel
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -21,7 +20,7 @@ There may be times when using Analyze in Excel that you get an unexpected result
 > [!NOTE]
 > There's a separate page dedicated to describing and enabling [Analyze in Excel](service-analyze-in-excel.md).
 > 
-> If you encounter a scenario that is not listed below, and it is causing you issues, you can ask for further assistance on the [community site](http://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
+> If you encounter a scenario that is not listed below, and it is causing you issues, you can ask for further assistance on the [community site](https://community.powerbi.com/), or you can create a [support ticket](https://powerbi.microsoft.com/support/).
 > 
 > 
 
@@ -37,7 +36,7 @@ This article contains the following troubleshooting sections:
 * Can't drag anything to the PivotTable Values area (no measures)
 
 ## Update Excel libraries for the OLE DB provider
-To use **Analyze in Excel**, your computer must have a current AS OLE DB provider installed. This [community post](http://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081) is a great source to verify your installation of the OLE DB provider, or to download a recent version.
+To use **Analyze in Excel**, your computer must have a current AS OLE DB provider installed. This [community post](https://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081) is a great source to verify your installation of the OLE DB provider, or to download a recent version.
 
 The Excel libraries need to match your version of Windows in terms of its bit-level. If you have 64-bit Windows installed, you need to install the 64-bit OLE DB provider.
 

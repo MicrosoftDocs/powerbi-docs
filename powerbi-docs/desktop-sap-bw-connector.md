@@ -2,7 +2,6 @@
 title: Use the SAP BW Connector in Power BI Desktop
 description: Use the SAP BW Connector in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

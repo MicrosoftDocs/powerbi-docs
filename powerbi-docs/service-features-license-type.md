@@ -1,8 +1,7 @@
 ---
 title: Power BI service features by license type
-description: "In the Power BI service, users have defined capabilities based on two types of licenses: per-user (free and Pro) and capacity-based."
+description: "In the Power BI service, users have defined capabilities based on the type of per-user license they have (free or Pro) and whether the content they are interacting with is in a workspace assigned to a Power BI Premium capacity."
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -34,7 +33,7 @@ Here is a list of features supported by per-user license type.
 | Embed APIs and controls |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
 | **Collaboration** | | |
 | Peer-to-peer sharing |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
-| App workspaces |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
+| Workspaces |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
 | Analyze in Excel, analyze in Power BI Desktop |![Feature not available](media/features-license-type/not-available.png) |![Feature available](media/features-license-type/available.png) |
 
 ## Next steps

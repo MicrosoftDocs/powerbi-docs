@@ -3,7 +3,6 @@ title: Code snippets for migrating content from Power BI Embedded
 description: Here are some code snippets of basic operations needed for content migration
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -163,7 +162,7 @@ In this snippet, we are using unencrypted credentials for simplicity, sending en
 
 You will need to rebuild the report for the created dataset.
 
-In this snippet, we assume that the pushable dataset is already in an app workspace within the SaaS environment. For information about the push API, see [Push data into a Power BI dataset](walkthrough-push-data.md).
+In this snippet, we assume that the pushable dataset is already in a workspace within the SaaS environment. For information about the push API, see [Push data into a Power BI dataset](walkthrough-push-data.md).
 
 ```csharp
     var credentials = new TokenCredentials(<Your WSC access key>, "AppKey");
@@ -236,4 +235,4 @@ In this snippet, we assume that the pushable dataset is already in an app worksp
 [JavaScript embed sample](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Power BI Premium whitepaper](https://aka.ms/pbipremiumwhitepaper)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

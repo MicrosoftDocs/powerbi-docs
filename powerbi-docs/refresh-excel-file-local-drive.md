@@ -2,7 +2,6 @@
 title: Refresh a dataset created from an Excel workbook - local
 description: Refresh a dataset created from an Excel workbook on a local drive
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 
 ms.service: powerbi
@@ -76,5 +75,5 @@ Sometimes refreshing data may not go as expected. Typically this will be an issu
 [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## Next steps
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

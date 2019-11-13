@@ -2,7 +2,6 @@
 title: Use natural language to explore your data using Power BI Q&A
 description: How to use Power BI Q&A to explore your data
 author: mohaali
-manager: mohaali
 
 ms.service: powerbi
 ms.subservice: powerbi-service

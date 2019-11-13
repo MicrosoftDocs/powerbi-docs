@@ -2,7 +2,6 @@
 title: What's new in the Power BI service
 description: What's new in the Power BI service
 author: NikhilGaekwad-MSFT
-manager: kfile
 ms.reviewer: 
 
 ms.service: powerbi
@@ -28,7 +27,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 
 ### October 2019
 * New Microsoft Flow action to refresh Power BI datasets.
-* [Contact list](https://powerbi.microsoft.com/en-us/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) for reports and dashboards in the Power BI service.
+* [Contact list](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) for reports and dashboards in the Power BI service.
 
 ## Previous months (2019)
 ### September 2019
@@ -36,7 +35,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 
 ### August 2019
 * New capacity settings for Power BI Premium.
-* [Custom branding](https://powerbi.microsoft.com/en-us/blog/announcing-custom-branding-for-your-organization/) for your organization.
+* [Custom branding](https://powerbi.microsoft.com/blog/announcing-custom-branding-for-your-organization/) for your organization.
 * Summarized data export with build permission.
 * Support for URL parametrs for [paginated reports](paginated-reports-report-builder-power-bi.md).
 * Support for monthly e-mail subscriptions. 
@@ -45,9 +44,9 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Support for non-premium datasets for [paginated reports](paginated-reports-report-builder-power-bi.md).
 * General availability of Power BI [aggregations](desktop-aggregations.md).
 * Send refresh notifications to others.
-* [Testing tool](https://powerbi.microsoft.com/en-us/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) for Power BI Premium capacities.
-* Public preview of [service availability notifications](https://powerbi.microsoft.com/en-us/blog/power-bi-introduces-service-availability-notifications/).
-* Public preview of the [New Look](https://powerbi.microsoft.com/en-us/blog/introducing-the-new-look-for-power-bi-service/) for Power BI reports.
+* [Testing tool](https://powerbi.microsoft.com/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) for Power BI Premium capacities.
+* Public preview of [service availability notifications](https://powerbi.microsoft.com/blog/power-bi-introduces-service-availability-notifications/).
+* Public preview of the [New Look](https://powerbi.microsoft.com/blog/introducing-the-new-look-for-power-bi-service/) for Power BI reports.
 * New Power BI region in South Africa.
 
 ### June 2019
@@ -61,7 +60,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 ### May 2019
 * [Custom navigation](service-create-distribute-apps.md) for Power BI Apps.
 * Additional attachments types (PPTX, XLSX, DOCX, CSV, XML) available for e-mail subscriptions within paginated reports.
-* [Commenting](https://powerbi.microsoft.com/en-us/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) for Power BI reports in the service.
+* [Commenting](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) for Power BI reports in the service.
 
 ### April 2019
 * General availability of Power BI [dataflows](service-dataflows-overview.md).
@@ -70,15 +69,15 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * Updated Q&A experience for dashboards.
 * Support for Azure Analysis Services within [paginated reports](paginated-reports-report-builder-power-bi.md).
 * Paginated reports supported in Power BI Apps.
-* [E-mail subscriptions](https://powerbi.microsoft.com/en-us/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) with PDF attachments for paginated reports.
+* [E-mail subscriptions](https://powerbi.microsoft.com/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) with PDF attachments for paginated reports.
 * Power BI Premium summary and workload metrics supported in Admin Portal
 * [Query caching](power-bi-query-caching.md) available in Power BI Premium.
-* General availability of [Power BI Home](https://powerbi.microsoft.com/en-us/blog/announcing-power-bi-home-general-availability-ga-roadmap/).
+* General availability of [Power BI Home](https://powerbi.microsoft.com/blog/announcing-power-bi-home-general-availability-ga-roadmap/).
 
 ### March 2019
 * General Availability of Multi-Geo for Power BI Premium.
 * Editing and managing Power BI content support for Azure B2B.
-* Public preview of read-only [XMLA endpoint](https://powerbi.microsoft.com/en-us/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/).
+* Public preview of read-only [XMLA endpoint](https://powerbi.microsoft.com/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/).
 
 ### February 2019
 * Workloads and active dataset size metrics in [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
@@ -86,20 +85,20 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [On-demand e-mail subscriptions](service-report-subscribe.md).
 * Bulk operations in the Admin Portal.
 * Filtered export for PPT and PDF.
-* [Help and support settings](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) in the Admin Portal.
+* [Help and support settings](https://powerbi.microsoft.com/blog/tailoring-help-and-support-for-power-bi-users/) in the Admin Portal.
 * Data lineage experience for [dataflows](service-dataflows-overview.md).
 * Certified custom visuals setting in the Admin Portal.
 
 ### January 2019
 * [Embedding secure Power BI reports](service-embed-secure.md) in internal portals or websites.
 * Updates to [dataflows](service-dataflows-overview.md) editor with new connectors, and support for native SQL queries and Power Query Online transformations.
-* [Personal bookmarks](https://powerbi.microsoft.com/en-us/blog/announcing-personal-bookmarks-in-the-power-bi-service/) in the Power BI service.
+* [Personal bookmarks](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/) in the Power BI service.
 * Time-based scheduling with e-mail subscriptions.
 
 ## 2018
 ### December 2018
-* AI-powered [recommended apps](https://powerbi.microsoft.com/en-us/blog/announcing-ai-powered-app-recommendations-getting-the-right-insights-to-the-right-people/) in Power BI Home.
-* [Workspace management](https://powerbi.microsoft.com/en-us/blog/workspace-management-in-the-admin-portal/) in the Admin Portal.
+* AI-powered [recommended apps](https://powerbi.microsoft.com/blog/announcing-ai-powered-app-recommendations-getting-the-right-insights-to-the-right-people/) in Power BI Home.
+* [Workspace management](https://powerbi.microsoft.com/blog/workspace-management-in-the-admin-portal/) in the Admin Portal.
 * Preview of Power BI Dataflows and Azure Data Lake Storage Gen2 Integration in [dataflows](service-dataflows-overview.md).
 * Power BI solution templates became open source.
 
@@ -115,8 +114,8 @@ Also, check out the YouTube channels for information about "What's new" and feat
 
 ### September 2018
 * [Dashboard commenting](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) in the Power BI service.
-* Public preview of [Power BI Home and Global Search](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
-* Ability to [monitoring queries](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) in the [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Public preview of [Power BI Home and Global Search](https://powerbi.microsoft.com/blog/introducing-power-bi-home-and-global-search/).
+* Ability to [monitoring queries](https://powerbi.microsoft.com/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) in the [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### August 2018
 * [Capacity Monitoring app](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) for Power BI Premium.
@@ -579,7 +578,7 @@ For all the details, visit the [Power BI Blog](https://blogs.msdn.com/b/powerbi/
 * Share dashboards with Active Directory Security groups
 * People picker
 * Sharing with a large number of email addresses
-* Collapse navigation pane through an URL parameterized
+* Collapse nav pane through an URL parameterized
 
 For all the details, visit the [Power BI Blog](https://blogs.msdn.com/b/powerbi/archive/2015/10/28/power-bi-weekly-service-update-1027.aspx)
 

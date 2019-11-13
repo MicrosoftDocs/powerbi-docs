@@ -2,7 +2,6 @@
 title: Getting around in Power BI service
 description: Overview of the Power BI navigation experience
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.custom: seodec18
@@ -10,7 +9,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: quickstart
-ms.date: 10/18/2019
+ms.date: 10/30/2019
 ms.author: mihart
 #customer intent: As a PBI consumer, I want a quick overview of how to navigate PBIS so that I can accomplish work efficiently. 
 LocalizationGroup: Get started
@@ -53,7 +52,7 @@ Within My Workspace, your content is organized into 4 tabs: Dashboards, Reports,
 
 ![My Workspace screen](./media/end-user-experience/power-bi-my-workspace.png)
 
-Select a workspace from the left navigation pane (left navpane) and the tabs for the associated content (dashboards, reports, workbooks, datasets) fill the Power BI canvas to the right.
+Select a workspace from the nav pane and the tabs for the associated content (dashboards, reports, workbooks, datasets) fill the Power BI canvas to the right.
 
 If you are a new user, you'll only see one workspace -- **My Workspace**.
 
@@ -78,7 +77,7 @@ Open the dashboard by selecting the dashboard name.
    
    ![remove favorite](./media/end-user-experience/power-bi-unfavorite2.png)
 
-2. To display a list of all the content that you have added as favorites, in the left navpane, select the arrow to the right of **Favorites**. Because the left navpane is a permanent feature of Power BI service, you have access to this list from anywhere in Power BI service.
+2. To display a list of all the content that you have added as favorites, in the nav pane, select the arrow to the right of **Favorites**. Because the nav pane is a permanent feature of Power BI service, you have access to this list from anywhere in Power BI service.
    
     ![favorites flyout](./media/end-user-experience/power-bi-favorite.png)
    
@@ -88,7 +87,7 @@ Open the dashboard by selecting the dashboard name.
    
    ![mark as favorite](./media/end-user-experience/power-bi-report-favorite.png)
 
-3. Open the **Favorites** *pane*, by selecting **Favorites** from the left navpane or by selecting the star icon ![](media/end-user-experience/powerbi-star-icon.png).
+3. Open the **Favorites** *pane*, by selecting **Favorites** from the nav pane or by selecting the star icon ![screenshot showing a yellow star icon](media/end-user-experience/powerbi-star-icon.png).
    
    ![open Favorites screen](./media/end-user-experience/power-bi-favorite-pane.png)
    
@@ -103,13 +102,13 @@ To learn more, see [Favorites](end-user-favorite.md)
 
 ## Locate your most recent content
 
-1. Similar to Favorites, quickly see your most recently accessed content from anywhere in Power BI service by selecting the arrow next to **Recent** in the left navpane.
+1. Similar to Favorites, quickly see your most recently accessed content from anywhere in Power BI service by selecting the arrow next to **Recent** in the nav pane.
 
    ![Recents flyout](./media/end-user-experience/power-bi-recent-flyout.png)
 
     From the flyout, select content to open it.
 
-2. Sometimes you don't want to simply open recent content, but want to view information or take other action, such as view Insights, or export to Excel. In cases like these, open the **Recents** pane by selecting **Recent** or its icon from the left navpane. If you had more than one workspace, this list would include content from all of your workspaces.
+2. Sometimes you don't want to simply open recent content, but want to view information or take other action, such as view Insights, or export to Excel. In cases like these, open the **Recents** pane by selecting **Recent** or its icon from the nav pane. If you had more than one workspace, this list would include content from all of your workspaces.
 
    ![Recents pane](./media/end-user-experience/power-bi-recent.png)
 
@@ -134,7 +133,7 @@ To learn more, see [Power BI navigation: search and sort](end-user-search-sort.m
 After you finish this quickstart, you can delete the Retail Analysis sample dashboard, report, and dataset, if you wish.
 
 1. Open the Power BI service (app.powerbi.com) and sign in.    
-2. In the left navigation pane, select **Workspaces > My Workspace**.  
+2. In the nav pane, select **Workspaces > My Workspace**.  
     Notice the yellow star indicating it's a favorite?    
 3. On the **Dashboards** tab, select the garbage can **Delete** icon next to the Retail Analysis dashboard.    
 

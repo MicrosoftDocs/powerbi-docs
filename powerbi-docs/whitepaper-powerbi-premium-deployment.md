@@ -3,7 +3,6 @@ title: Deploying and Managing Power BI Premium Capacities
 description: Understand the potential of Power BI Premium, and learn how to design, deploy, monitor and troubleshoot scalable solutions.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -46,13 +45,13 @@ In shared capacity, workloads run on computational resources shared with other c
 
 ### Workspaces
 
-Power BI workspaces reside within capacities and they represent security, collaboration and deployment containers. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces can be created to enable collaboration and deployment, and these are known as **App Workspaces**. By default, workspaces - including personal workspaces - are created in the shared capacity.
+Power BI workspaces reside within capacities and they represent security, collaboration and deployment containers. Each Power BI user has a personal workspace known as **My Workspace**. Additional workspaces can be created to enable collaboration and deployment, and these are known as **workspaces**. By default, workspaces - including personal workspaces - are created in the shared capacity.
 
 ### Power BI Content Types
 
 To introduce Power BI Premium topics, it is important to start with a thorough discussion of Power BI architecture including fundamental content types.
 
-All Power BI content is stored and managed within workspaces which are containers for Power BI content. Each Power BI user has their own personal workspace, but the general best practice is to create app workspaces. App workspaces enable co-ownership of content and the ability to collaborate on content. They also provide the ability to stage and distribute content to wide audiences as apps.
+All Power BI content is stored and managed within workspaces which are containers for Power BI content. Each Power BI user has their own personal workspace, but the general best practice is to create workspaces. Workspaces enable co-ownership of content and the ability to collaborate on content. They also provide the ability to stage and distribute content to wide audiences as apps.
 
 The following Power BI content is stored in workspaces:
 
@@ -66,7 +65,7 @@ The following Power BI content is stored in workspaces:
 
 Power BI dataflows help organizations to unify data from disparate sources. They can be considered as data prepared and staged for use in models, however they cannot be used directly as a source for reporting. They leverage the extensive collection of Microsoft data connectors, enabling the ingestion of data from on-premises and cloud-based data sources.
 
-Dataflows can only be created and managed in app workspaces, and they are stored as entities in the Common Data Model (CDM) in Azure Data Lake Storage Gen2. Typically, they are scheduled to refresh on a recurring basis to store up-to-date data.
+Dataflows can only be created and managed in workspaces, and they are stored as entities in the Common Data Model (CDM) in Azure Data Lake Storage Gen2. Typically, they are scheduled to refresh on a recurring basis to store up-to-date data.
 
 For further information, refer to the [Self-service data prep in Power BI (Preview)](service-dataflows-overview.md) document.
 
@@ -255,7 +254,7 @@ Power BI has three licenses:
 
 The **Power BI Free** license allows an individual to sign in to the Power BI service and work within their personal workspace by publishing models and reports. It is important to understand that it is not possible to share Power BI content by using this license. This license, as its name suggests, is free.
 
-The **Power BI Pro** license allows an individual to create and collaborate within app workspaces and share and distribute Power BI content. They can also configure refresh for their datasets to automatically keep data current, including from on-premises data sources. In addition, they can audit and govern how data is accessed and used. This license is required to receive shared content from others unless the user is associated with a Power BI Premium dedicated capacity.
+The **Power BI Pro** license allows an individual to create and collaborate within workspaces and share and distribute Power BI content. They can also configure refresh for their datasets to automatically keep data current, including from on-premises data sources. In addition, they can audit and govern how data is accessed and used. This license is required to receive shared content from others unless the user is associated with a Power BI Premium dedicated capacity.
 
 The **Power BI Premium** license is a tenant-level license, and it is discussed in the [Introducing Power BI Premium](#introducing-power-bi-premium) section.
 
@@ -381,7 +380,7 @@ At least one Capacity Admin must be assigned. Users assigned as Capacity Admins 
 
 Capacity Admins cannot access workspace content (unless explicitly assigned workspace permissions) and they do not have access to all Power BI admin areas (unless explicitly assigned) such as usage metrics, audit logs or tenant settings. Importantly, Capacity Admins do not have permissions to create new capacities or scale existing capacities. Also, they are assigned on a per capacity-basis, ensuring that they can only view and manage capacities to which they are assigned.
 
-Capacity size must be selected from an available list of SKU options which is constrained by the number of available v-cores in the pool. It is possible to create multiple capacities from the pool which could be sourced from one or more purchased SKUs. For example, a P3 SKU (32 v-cores) could be used to create three capacities: one P2 (16 v-cores), and two P1 (2 x 8 v-cores). Improved performance and scale may be achieved by creating smaller sized capacities, and this topic is discussed in the [Optimizing Premium Capacities](#optimizing-premium-capacities) section. The following image shows an example setup for the fictitious Contoso organization consisting of five Premium capacities (3 x P1, and 2 x P3) with each containing app workspaces, and several workspaces in shared capacity.
+Capacity size must be selected from an available list of SKU options which is constrained by the number of available v-cores in the pool. It is possible to create multiple capacities from the pool which could be sourced from one or more purchased SKUs. For example, a P3 SKU (32 v-cores) could be used to create three capacities: one P2 (16 v-cores), and two P1 (2 x 8 v-cores). Improved performance and scale may be achieved by creating smaller sized capacities, and this topic is discussed in the [Optimizing Premium Capacities](#optimizing-premium-capacities) section. The following image shows an example setup for the fictitious Contoso organization consisting of five Premium capacities (3 x P1, and 2 x P3) with each containing workspaces, and several workspaces in shared capacity.
 
 ![An example setup for the fictitious Contoso organization](media/whitepaper-premium-deployment/contoso-organization-example.png)
 
@@ -412,7 +411,7 @@ Deleting a Premium capacity is possible and will not result in the deletion of i
 
 ### Assigning Workspaces to Capacities
 
-Workspaces can be assigned to a Premium capacity in the **Power BI Admin**  **Portal** or - for an app workspace - in the **Workspace** pane.
+Workspaces can be assigned to a Premium capacity in the **Power BI Admin**  **Portal** or - for a workspace - in the **Workspace** pane.
 
 Capacity Admins, as well as Office 365 Global Administrators or Power BI service administrators, can bulk assign workspaces in the **Power BI Admin**  **Portal**. Bulk assigned can apply to:
 
@@ -472,7 +471,7 @@ Finally, testing approaches and Premium capacity sizing will conclude this secti
 
 When striving to achieve best utilization and performance there are some best practices which can be taken on board as general recommendations. These include:
 
-- Using app workspaces instead of personal workspaces
+- Using workspaces instead of personal workspaces
 - Separating business critical and Self-Service BI (SSBI) into different capacities
 
   ![Separating business critical and Self-Service BI into different capacities](media/whitepaper-premium-deployment/separate-capacities.png)

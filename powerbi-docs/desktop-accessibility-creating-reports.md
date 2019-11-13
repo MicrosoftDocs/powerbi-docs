@@ -2,7 +2,6 @@
 title: Creating accessible reports in Power BI
 description: How to create accessible Power BI Desktop reports
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -162,9 +161,9 @@ If you’re not sure whether your visual or report is too busy, test that by doi
 
 ### Themes, contrast and colorblind-friendly colors
 
-You should ensure that your reports have enough contrast between text and any background colors. WCAG 2.1 success criterion 1.4.3 delineates that text and background color should have a contrast ratio of at least 4.5:1. There are several tools such as [Color Contrast Analyzer](https://developer.paciellogroup.com/resources/contrastanalyser/), [WebAIM](https://webaim.org/resources/contrastchecker/), and [Accessible Colors](http://accessible-colors.com/) you can use to check your report colors.
+You should ensure that your reports have enough contrast between text and any background colors. WCAG 2.1 success criterion 1.4.3 delineates that text and background color should have a contrast ratio of at least 4.5:1. There are several tools such as [Color Contrast Analyzer](https://developer.paciellogroup.com/resources/contrastanalyser/), [WebAIM](https://webaim.org/resources/contrastchecker/), and [Accessible Colors](https://accessible-colors.com/) you can use to check your report colors.
 
-You should also consider that some report viewers may have color vision deficiencies. Tools like [Coblis](http://www.color-blindness.com/coblis-color-blindness-simulator/) and [Vischeck](http://www.vischeck.com/vischeck/vischeckImage.php) simulate what report viewers with different color deficiencies see.  Using fewer colors or a monochrome palette in your report can help mitigate creating reports that are inaccessible.
+You should also consider that some report viewers may have color vision deficiencies. Tools like [Coblis](https://www.color-blindness.com/coblis-color-blindness-simulator/) and [Vischeck](https://www.vischeck.com/vischeck/vischeckImage.php) simulate what report viewers with different color deficiencies see.  Using fewer colors or a monochrome palette in your report can help mitigate creating reports that are inaccessible.
 
 Certain color combinations are particularly difficult for users with color vision deficiencies to distinguish. These include the following combinations: 
 
