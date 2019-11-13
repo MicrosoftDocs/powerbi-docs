@@ -8,7 +8,7 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/30/2019
+ms.date: 11/13/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -154,8 +154,6 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 - The maximum number of rows that the applications can export from an **import mode report** to an *.xlsx* file is 150,000.
 
 - Export using *Underlying data* won't work if:
-
-  - the data source is an Azure Analysis Services live connection or a SQL Server Analysis Services live connection.
 
   - the version is older than 2016.
 

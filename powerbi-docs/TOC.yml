@@ -381,8 +381,6 @@
         href: visuals/power-bi-visualization-treemaps.md
       - name: "Waterfall charts in Power BI"
         href: visuals/power-bi-visualization-waterfall-charts.md
-      - name: "Create dynamic reference lines"
-        href: service-analytics-pane.md
     - name: Natural language
       items: 
       - name: "Q&A introduction"
