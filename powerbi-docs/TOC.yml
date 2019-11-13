@@ -119,6 +119,8 @@
       items: 
       - name: "Data sources in Power BI Desktop"
         href: desktop-data-sources.md
+      - name: "Connect to LinkedIn Sales Navigator (preview)"
+        href: desktop-connect-linkedin-sales-navigator.md        
       - name: "Connect to a Web page by example (preview)"
         href: desktop-connect-to-web-by-example.md
       - name: "Connect to datasets in the Power BI service"
@@ -201,6 +203,8 @@
       items: 
       - name: "Combine binaries"
         href: desktop-combine-binaries.md
+      - name: "Use AI Insights in Power BI Desktop (preview)"
+        href: desktop-ai-insights.md        
     - name: Model your data
       items: 
       - name: "Data categorization in Power BI Desktop"
@@ -339,6 +343,8 @@
         href: visuals/power-bi-visualization-card.md
       - name: "Combo chart in Power BI"
         href: visuals/power-bi-visualization-combo-chart.md
+      - name: "Decomposition tree in Power BI (Preview)"
+        href: visuals/power-bi-visualization-decomposition-tree.md
       - name: "Doughnut charts in Power BI"
         href: visuals/power-bi-visualization-doughnut-charts.md
       - name: "Filled maps (Choropleths) in Power BI"
@@ -405,6 +411,8 @@
     items: 
     - name: "Data types in Power BI Desktop"
       href: desktop-data-types.md
+    - name: "Use the updated ribbon in Power BI Desktop (preview)"
+      href: desktop-ribbon.md            
     - name: "Formula editor shortcuts for Power BI Desktop"
       href: desktop-formula-editor.md      
     - name: "Power BI Desktop privacy levels"
