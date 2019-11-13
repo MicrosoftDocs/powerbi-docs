@@ -7,7 +7,7 @@ ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/12/2019
+ms.date: 11/13/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -26,7 +26,7 @@ This tutorial uses two examples:
 - A sales scenario that breaks down video game sales by numerous factors like game genre and publisher.
 
 
-## Get Started
+## Get started
 Select the decomposition tree icon from the Visualizations pane.
 ![Decomposition tree watermark](media/power-bi-visualization-decomposition-tree/tree-watermark.png)
 
@@ -58,7 +58,7 @@ Despite the path disappearing, the existing levels (in this case Game Genre) rem
 ![Decomposition tree menu](media/power-bi-visualization-decomposition-tree/tree-interaction-2.gif)
 
 
-## AI Splits
+## AI splits
 
 You can use “AI Splits” to figure out where you should look next in the data. These splits appear at the top of the list and are marked with a lightbulb. The splits are there to help you find high and low values in the data, automatically.
 
@@ -104,7 +104,7 @@ If you prefer not to use any AI splits in the tree you also have the option of t
 
 ![Decomposition tree disable AI split](media/power-bi-visualization-decomposition-tree/tree-ai-disable.png)
 
-## Tree Interactions with AI Splits
+## Tree interactions with AI splits
 
 You can have multiple subsequent AI levels. You can also mix up different kinds of AI levels (go from High Value to Low Value and back to High Value):
 ![Decomposition tree multiple AI paths](media/power-bi-visualization-decomposition-tree/tree-multi-ai-path.png)
@@ -132,7 +132,7 @@ In the example below, the first 2 levels are locked. This means that report cons
 
 ![Decomposition tree locking](media/power-bi-visualization-decomposition-tree/tree-locking.png)
 
-## Known Limitations
+## Known limitations
 
 The decomposition tree is not supported in the following scenarios:  
 -	On-premises Analysis Services
