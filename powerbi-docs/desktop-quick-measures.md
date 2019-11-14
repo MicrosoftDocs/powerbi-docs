@@ -18,11 +18,11 @@ You can use *quick measures* to quickly and easily perform common, powerful calc
 
 ## Create a quick measure
 
-To create a quick measure in Power BI Desktop, right-click or select the ellipsis **...** next to any item in the **Fields** well, and select **New quick measure** from the menu that appears. 
+To create a quick measure in Power BI Desktop, right-click or select the ellipsis **...** next to any item in the **Fields** pane, and select **New quick measure** from the menu that appears. 
 
 ![Select New quick measure](media/desktop-quick-measures/quick-measures_01.png)
 
-You can also right-click or select the drop-down arrow next to any value in the **Values** list for an existing visual, and select **New quick measure** from the menu. 
+You can also right-click or select the drop-down arrow next to any value in the **Values** well for an existing visual, and select **New quick measure** from the menu. 
 
 When you select **New quick measure**, the **Quick measures** window appears, letting you select the calculation you want and the fields to run the calculation against. 
 
@@ -71,16 +71,16 @@ To submit your ideas about new quick measures you'd like to see, underlying DAX 
 > [!NOTE]
 > When using SQL Server Analysis Services (SSAS) live connections, some quick measures are available. Power BI Desktop displays only the quick measures that are supported for the version of SSAS you're connecting to. If you're connected to a SSAS live data source and don't see certain quick measures in the list, it's because the SSAS version you're connected to doesn't support the DAX measures used to implement those quick measures.
 
-After you select the calculations and fields you want for your quick measure, select **OK**. The new quick measure appears in the **Fields** well, and the underlying DAX formula appears in the formula bar. 
+After you select the calculations and fields you want for your quick measure, select **OK**. The new quick measure appears in the **Fields** pane, and the underlying DAX formula appears in the formula bar. 
 
 ## Quick measure example
 Let's take a look at a quick measure in action.
 
-The following matrix visual shows a sales table for various products. It's a basic table that includes the total for each category.
+The following matrix visual shows a sales table for various products. It's a basic table that includes the sales totals for each category.
 
 ![Matrix visual showing a sales table](media/desktop-quick-measures/quick-measures_05.png)
 
-With the matrix visual selected, select the drop-down arrow next to **TotalSales** in the **Values** list, and select **New quick measure**. 
+With the matrix visual selected, select the drop-down arrow next to **TotalSales** in the **Values** well, and select **New quick measure**. 
 
 In the **Quick measures** window, under **Calculation**, select **Average per category**. 
 
@@ -90,20 +90,20 @@ Drag **Average Unit Price** from the **Fields** pane into the **Base value** fie
 
 When you select **OK**, several interesting things happen.
 
-![New quick measure in the visual, Fields well, and formula bar](media/desktop-quick-measures/quick-measures_07.png)
+![New quick measure in the visual, formula bar, and Fields list](media/desktop-quick-measures/quick-measures_07.png)
 
 1. The matrix visual has a new column that shows the calculated **Average Unit Price average per Category**.
    
 2. The DAX formula for the new quick measure appears in the formula bar. See the [next section](#learn-dax-by-using-quick-measures) for more about the DAX formula.
    
-3. The new measure appears selected and highlighted in the **Fields** well. 
+3. The new measure appears selected and highlighted in the **Fields** pane. 
    
    This measure is available to any visual in the report, not just the visual you created it for. The following image shows a quick column chart visual created by using the new quick measure field.
    
    ![New bar chart visual based on the quick measure field](media/desktop-quick-measures/quick-measures_09.png)
 
 ## Learn DAX by using quick measures
-A great advantage of quick measures is that they show you the DAX formula that implements the measure. When you select a quick measure in the **Fields** well, the **Formula bar** appears, showing the DAX formula that Power BI created to implement the measure.
+A great advantage of quick measures is that they show you the DAX formula that implements the measure. When you select a quick measure in the **Fields** pane, the **Formula bar** appears, showing the DAX formula that Power BI created to implement the measure.
 
 ![Quick measure formula in the formula bar](media/desktop-quick-measures/quick-measures_10.png)
 
@@ -118,8 +118,8 @@ You can always delete quick measures from your model if you don't like them. Tha
 ## Limitations and considerations
 There are a few limitations and considerations to keep in mind.
 
-- You can use quick measures added to the **Fields** well with any visual in the report.
-- You can always see the DAX associated with a quick measure by selecting the measure in the **Fields** well and looking at the formula in the formula bar.
+- You can use quick measures added to the **Fields** pane with any visual in the report.
+- You can always see the DAX associated with a quick measure by selecting the measure in the **Fields** list and looking at the formula in the formula bar.
 - Quick measures are only available if you can modify the model. That isn't the case when you're working with some Live connections. SSAS tabular live connections are supported, as previously described.
 - You can't create time intelligence quick measures when working in DirectQuery mode. The DAX functions used in these quick measures have performance implications when translated into the T-SQL statements that are sent to your data source.
 
