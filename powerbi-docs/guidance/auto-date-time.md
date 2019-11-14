@@ -22,18 +22,18 @@ This article isn't intended to provide a complete discussion on the Power BI Des
 
 Power BI Desktop has an _Auto date/time_ option. This option has been designed to deliver convenient, fast, and easy-to-use time intelligence. Reports authors can work with time intelligence when filtering, grouping, and drilling down through calendar time periods.
 
-## Possible limitations
+## Considerations
 
-The following bulleted list describes possible limitations related to the _Auto date/time_ option.
+The following bulleted list describes considerations—and possible limitations—related to the _Auto date/time_ option.
 
 - **Applies to all or none:** When the _Auto date/time_ option is enabled, it applies to all date columns in Import tables that aren't the &quot;many&quot; side of a relationship. It can't be selectively enabled or disabled on a column-by-column basis.
-- **Calendar periods only:** The year and quarter columns relate to calendar periods. This means that the year begins on January 1 and finishes on December 31. There's no ability to customize the year commencement (or completion) date.
-- **Doesn't support customization:** It's not possible to customize the values used to describe time periods. Further, it's not possible to add additional columns to describe other time periods, for example, weeks.
-- **Column values don't describe the year:** The **Quarter**, **Month**, and **Day** column values don't include the year value. For example, the **Month** column contains the month names only (i.e. January, February, etc.). The values are therefore not self-describing, and in some report designs may not communicate the year filter context.
+- **Calendar periods only:** The year and quarter columns relate to calendar periods. It means that the year begins on January 1 and finishes on December 31. There's no ability to customize the year commencement (or completion) date.
+- **Customization:** It's not possible to customize the values used to describe time periods. Further, it's not possible to add additional columns to describe other time periods, for example, weeks.
+- **Year filtering:** The **Quarter**, **Month**, and **Day** column values don't include the year value. For example, the **Month** column contains the month names only (i.e. January, February, etc.). The values are therefore not self-describing, and in some report designs may not communicate the year filter context.
 
-    That's why it's important that filters or grouping must take place on the **Year** column. When drilling down using the hierarchy, this will always be the case, unless the **Year** level is removed. If there is no filter or group by year, a grouping by month, for example, would summarize values across all years for that month.
-- **Doesn't support single table date filtering:** Because each date column produces its own (hidden) auto date/time table, it's not possible to apply a time filter to one table and have it propagate to multiple model tables. Filtering in this way is a common modeling requirement when reporting on multiple subjects (fact-type tables) like sales and sales budget. When using auto date/time, the report author will need to apply filters to each different date column.
-- **Increases the model size:** For each date column that generates a hidden auto date/time table, it will result in an increased model size and also extend the data refresh time.
+    That's why it's important that filters or grouping must take place on the **Year** column. When drilling down by using the hierarchy year will be filtered, unless the **Year** level is intentionally removed. If there is no filter or group by year, a grouping by month, for example, would summarize values across all years for that month.
+- **Single table date filtering:** Because each date column produces its own (hidden) auto date/time table, it's not possible to apply a time filter to one table and have it propagate to multiple model tables. Filtering in this way is a common modeling requirement when reporting on multiple subjects (fact-type tables) like sales and sales budget. When using auto date/time, the report author will need to apply filters to each different date column.
+- **Model size:** For each date column that generates a hidden auto date/time table, it will result in an increased model size and also extend the data refresh time.
 
 ## Recommendations
 
