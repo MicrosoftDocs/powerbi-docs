@@ -26,7 +26,7 @@ You can also right-click or select the drop-down arrow next to any value in the 
 
 When you select **New quick measure**, the **Quick measures** window appears, letting you select the calculation you want and the fields to run the calculation against. 
 
-Select the **Select a calculation** field to see a long list of available **Quick measures**. 
+Select the **Select a calculation** field to see a long list of available quick measures. 
 
 ![Available quick measures calculations](media/desktop-quick-measures/quick-measures_04.png)
 
@@ -76,13 +76,15 @@ After you select the calculations and fields you want for your quick measure, se
 ## Quick measure example
 Let's take a look at a quick measure in action.
 
-The following Matrix visual shows a sales table for various products. It's a basic table that includes the total for each category.
+The following matrix visual shows a sales table for various products. It's a basic table that includes the total for each category.
 
 ![Matrix visual showing a sales table](media/desktop-quick-measures/quick-measures_05.png)
 
-Select the drop-down arrow next to the value in the **Values** list and select **New quick measure**. 
+With the matrix visual selected, select the drop-down arrow next to **TotalSales** in the **Values** list, and select **New quick measure**. 
 
-In the **Quick measures** window, under **Calculation**, select **Average per category**. Drag **Average Unit Price** from the **Fields** pane into the **Base value** field. Leave **Category** in the **Category** field, and select **OK**. 
+In the **Quick measures** window, under **Calculation**, select **Average per category**. 
+
+Drag **Average Unit Price** from the **Fields** pane into the **Base value** field. Leave **Category** in the **Category** field, and select **OK**. 
 
 ![](media/desktop-quick-measures/quick-measures_06.png)
 
@@ -90,17 +92,15 @@ When you select **OK**, several interesting things happen.
 
 ![New quick measure in the visual, Fields well, and formula bar](media/desktop-quick-measures/quick-measures_07.png)
 
-1. The **Matrix** visual now has a new column that shows the calculated **Average Unit Price average per Category**.
+1. The matrix visual has a new column that shows the calculated **Average Unit Price average per Category**.
    
-2. The new measure appears selected and highlighted in the **Fields** well. 
+2. The DAX formula for the new quick measure appears in the formula bar. See the [next section](#learn-dax-by-using-quick-measures) for more about the DAX formula.
    
-   This measure is available to any visual in the report, not just the visual you created it for. The following image shows a quick bar chart visual created by using the new quick measure field.
+3. The new measure appears selected and highlighted in the **Fields** well. 
+   
+   This measure is available to any visual in the report, not just the visual you created it for. The following image shows a quick column chart visual created by using the new quick measure field.
    
    ![New bar chart visual based on the quick measure field](media/desktop-quick-measures/quick-measures_09.png)
-   
-3. The DAX formula for the new quick measure appears in the formula bar.
-   
-Let's head to the next section to discuss the DAX formula.
 
 ## Learn DAX by using quick measures
 A great advantage of quick measures is that they show you the DAX formula that implements the measure. When you select a quick measure in the **Fields** well, the **Formula bar** appears, showing the DAX formula that Power BI created to implement the measure.
