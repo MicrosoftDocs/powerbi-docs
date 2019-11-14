@@ -69,7 +69,7 @@ The five quick measure calculation types, with their calculations, are:
 To submit your ideas about new quick measures you'd like to see, underlying DAX formulas, or other quick measures ideas for consideration, see the end of this article.
 
 > [!NOTE]
-> When using SQL Server Analysis Services (SSAS) live connections, some quick measures are available. Power BI Desktop displays only the quick measures that are supported for the version of SSAS you're connecting to. If you're connected to a SSAS live data source and don't see certain quick measures in the list, it's because the SSAS version you're connected to doesn't support the DAX measures used to implement those quick measures.
+> When using SQL Server Analysis Services (SSAS) live connections, some quick measures are available. Power BI Desktop displays only the quick measures that are supported for the version of SSAS you're connecting to. If you're connected to a SSAS live data source and don't see certain quick measures in the list, it's because the SSAS version you're connected to doesn't support the DAX commands used to implement those quick measures.
 
 After you select the calculations and fields you want for your quick measure, select **OK**. The new quick measure appears in the **Fields** pane, and the underlying DAX formula appears in the formula bar. 
 
