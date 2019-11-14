@@ -80,7 +80,7 @@ The following Matrix visual shows a sales table for various products. It's a bas
 
 ![Matrix visual showing a sales table](media/desktop-quick-measures/quick-measures_05.png)
 
-Select a value in the **Values** field well and select **New quick measure**. In the **Quick measures** window, under **Calculation**, select **Average per category**. Under **Base value**, select **Sum of SalesAmount**, and then drag **SalesAmount** from the **Fields** pane into the **Category** section on the left.
+Select a value in the **Values** field well and select **New quick measure**. In the **Quick measures** window, under **Calculation**, select **Average per category**. Drag **Average Unit Price** from the **Fields** pane into the **Base value** field. Leave **Category** in the **Category** field, and select **OK**. 
 
 ![](media/desktop-quick-measures/quick-measures_06.png)
 
@@ -88,9 +88,7 @@ When you select **OK**, several interesting things happen.
 
 ![New quick measure in the visual, Fields well, and formula bar](media/desktop-quick-measures/quick-measures_07.png)
 
-1. The **Matrix** visual now has a new column that shows the calculated **Average SalesAmount within SalesAmount**.
-   
-   ![New quick measure column in visual](media/desktop-quick-measures/quick-measures_08.png)
+1. The **Matrix** visual now has a new column that shows the calculated **Average Unit Price average per Category**.
    
 2. The new measure appears in the **Fields** well, and is selected and highlighted. 
    
@@ -100,7 +98,7 @@ When you select **OK**, several interesting things happen.
    
 3. The DAX formula for the new quick measure appears in the formula bar.
    
-   Let's head to the next section to discuss the third item, the DAX formula.
+Let's head to the next section to discuss the DAX formula.
 
 ## Learn DAX by using quick measures
 A great advantage of quick measures is that they show you the DAX formula that implements the measure. When you select a quick measure in the **Fields** well, the **Formula bar** appears, showing the DAX formula that Power BI created to implement the measure.
@@ -109,18 +107,16 @@ A great advantage of quick measures is that they show you the DAX formula that i
 
 The formula bar not only shows you the formula behind the measure, but perhaps more importantly, lets you use quick measures to see how to create the DAX formulas underlying quick measures.
 
-Imagine you need to do a year-over-year calculation, but you're not sure how to structure the DAX formula, or you have no idea where to start. Instead of banging your head on the desk, you can create a quick measure using the **Year-over-year change** calculation, and see how it appears in your visual and how the DAX formula works. Then you can either make changes directly to the DAX formula, or create a similar measure that meets your needs and expectations.
+Imagine you need to do a year-over-year calculation, but you're not sure how to structure the DAX formula, or you have no idea where to start. Instead of banging your head on the desk, you can create a quick measure using the **Year-over-year change** calculation, and see how it appears in your visual and how the DAX formula works. Then you can either make changes directly to the DAX formula, or create a similar measure that meets your needs and expectations. It's like having a teacher that immediately responds to what-if questions you ask with a few clicks. 
 
-It's like having a teacher that immediately responds to what-if questions you ask with a few clicks. You can always delete those measures from your model if you don't like them. That's as easy as right-clicking or selecting **...** next to the measure and selecting **Delete**.
+You can always delete quick measures from your model if you don't like them. That's as easy as right-clicking or selecting **...** next to the measure and selecting **Delete**. You can also rename a quick measure whatever you like by selecting **Rename** from the menu. 
 
-![Delete a quick measure](media/desktop-quick-measures/quick-measures_11.png)
-
-You can also rename a quick measure whatever you like by using the right-click or more options menu. 
+![Delete or rename a quick measure](media/desktop-quick-measures/quick-measures_11.png)
 
 ## Limitations and considerations
 There are a few limitations and considerations to keep in mind.
 
-- You can use a quick measures added to the **Fields** well with any visual in the report.
+- You can use quick measures added to the **Fields** well with any visual in the report.
 - You can always see the DAX associated with a quick measure by selecting the measure in the **Fields** well and looking at the formula in the formula bar.
 - Quick measures are only available if you can modify the model. That isn't the case when you're working with some Live connections. SSAS tabular live connections are supported, as previously described.
 - You can't create time intelligence quick measures when working in DirectQuery mode. The DAX functions used in these quick measures have performance implications when translated into the T-SQL statements that get sent to your data source.
@@ -135,5 +131,5 @@ Beginning with the February 2018 release of Power BI Desktop, quick measures are
 Beginning with the October 2017 update to Power BI Desktop, you can use your own custom date tables with time intelligence quick measures. If you're using an external tabular model, make sure that when the model was built, the primary date column in the table was marked as a date table, as described in [Specify Mark as Date Table for use with time-intelligence](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular). If you're importing your own date table, make sure to mark it as a date table, as described in [Set and use date tables in Power BI Desktop](desktop-date-tables.md).
 
 ### Additional information and examples
-Have an idea for a Quick measure that isn't already provided? Great! Check out the [Power BI Ideas](https://go.microsoft.com/fwlink/?linkid=842906) page, and submit your ideas and DAX formulas for quick measures you'd like to see in Power BI Desktop. We'll consider adding them to the quick measures list in a future release.
+Have an idea for a quick measure that isn't already provided? Great! Check out the [Power BI Ideas](https://go.microsoft.com/fwlink/?linkid=842906) page, and submit your ideas and DAX formulas for quick measures you'd like to see in Power BI Desktop. We'll consider adding them to the quick measures list in a future release.
 
