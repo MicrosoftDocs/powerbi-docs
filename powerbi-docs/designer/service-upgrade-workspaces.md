@@ -6,7 +6,7 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/12/2019
+ms.date: 11/14/2019
 ms.author: maggies
 
 LocalizationGroup: Share your work
@@ -16,23 +16,23 @@ LocalizationGroup: Share your work
 
 This article explains how to upgrade a classic workspace to the new workspace experience. You can upgrade any classic workspace. The new workspaces have more granular workspace roles so you can better manage access to content. You have more flexibility managing upgraded workspaces because they're more loosely connected to their original Office 365 group. Learn about the [new workspace experience](../service-new-workspaces.md). 
 
->[!Note]
->This documentation is pre-release and covers a capability that is not yet available. It is published so you can prepare for the new capability and so you can seek clarification before release of any questions you may have.  
+>[!NOTE]
+>This documentation is pre-release, and covers a capability that isn't yet available. We've published it so you can prepare for the new capability and seek clarification of any questions you may have before the release.  
 
 ![Success upgrading](media/service-upgrade-workspaces/power-bi-upgrade-success.png)
 
 However, there may be changes to your workspace that you need to be aware of and plan for. For example, content packs aren't supported in the new workspace experience. See the [Upgrade considerations and limitations](#upgrade-considerations-and-limitations) section, later in this article.
 
-## Things you should do after upgrading a workspace
+## Things to do after upgrading
 
-There are several things you should do after you upgrade, and it is best to plan to do this before upgrading:
-1. Review the access list and understand the [permissions after upgrade](#permissions-after-upgrade)
-2. Review the [contact list](#modify-the-contact-list) and make sure it's set as you desire
-3. If you've not already, learn about the [new workspace experience](../service-new-workspaces.md)
+You should do several things *after* you upgrade. It's best to plan them *before* you upgrade:
+- Review the access list and understand the [permissions after upgrade](#permissions-after-upgrade).
+- Review the [contact list](#modify-the-contact-list) and make sure it's set as you desire.
+- If you've not already, learn about the [new workspace experience](../service-new-workspaces.md).
 
 ## Upgrade a classic workspace
 
-Any workspace admin can upgrade the workspace. For classic workspaces, to be a workspace admin you must be an Owner of the underlying Office 365 Group. To upgrade a workspace, follow these steps.
+Any workspace admin can upgrade the workspace. For classic workspaces, to be a workspace admin you must be an Owner of the underlying Office 365 group. To upgrade a workspace, follow these steps.
 
 1. In the workspace content list, select **More options** (**...**) > **Edit this workspace**.
 
@@ -46,7 +46,7 @@ Any workspace admin can upgrade the workspace. For classic workspaces, to be a w
 
     ![Read to upgrade](media/service-upgrade-workspaces/power-bi-ready-upgrade.png)
 
-2. During upgrade, you see the **Upgrading ...** message. It usually takes less than a minute to upgrade your workspace.
+2. During upgrade, you see the **Upgrading** message. It usually takes less than a minute to upgrade your workspace.
 
 1. After upgrade finishes, you see the **Success** dialog box. We recommend reading [Organize work in the new workspaces in Power BI](../service-new-workspaces.md) so you're familiar with how new workspaces differ from classic workspaces.
 
@@ -60,7 +60,7 @@ Users who are actively using the workspace are asked to refresh their browser. U
 
 - The URLs and IDs of your workspace, the content it contains, and the app published from the workspace don't change. Content from content packs installed in your workspace is handled separately. See [Content packs during upgrade](#content-packs-during-upgrade) in this article for details.
 - Content packs aren't supported in the new workspace experience. Read the sections about [published content packs](#published-content-packs) or [installed content packs](#installed-content-packs) to learn about how they're handled during upgrade. We recommend deleting content packs installed or published in your workspace before you upgrade.
-- The Office 365 group for your classic workspace isn't affected by the workspace upgrade in Power BI. Any Teams, SharePoint sites, mailboxes, or other resources managed by Office 365 aren't changed and remain intact after you upgrade your Power BI workspace. The Office 365 group continues to exist as before.
+- The Office 365 group for your classic workspace isn't affected by the workspace upgrade in Power BI. Any Teams, SharePoint sites, mailboxes, or other resources managed by Office 365 aren't changed. They remain intact after you upgrade your Power BI workspace. The Office 365 group continues to exist as before.
 - There are changes to how your workspace is secured after the upgrade. See the [workspace permissions after upgrade](#permissions-after-upgrade) section for details.
 - An option to **go back to a classic workspace** is provided in case you need it. However, it doesn't fully restore some aspects of your workspace before it was upgraded. If you start using features that work only in the new workspace experience, you won't be able to go back. The go back option is available for 30 days after you upgrade.
 
@@ -79,9 +79,9 @@ Because the Office 365 group is given a role in the workspace, any user added to
 
 ## Licensing after upgrade
 
-Users in the Admin, Member, or Contributor worksapce roles need a Power BI Pro license to access the worksapce.
+Users in the Admin, Member, or Contributor workspace roles need a Power BI Pro license to access the workspace.
 
-If the workspace is in the Shared capacity, users in the Viewer workspace role also need a Power BI Pro license to access the workspace. However, if the workspaces is in a Premium capacity, users in the Viewer role do not need a Pro license to access the workspace.
+If the workspace is in the shared capacity, users in the Viewer workspace role also need a Power BI Pro license to access the workspace. However, if the workspace is in a Premium capacity, users in the Viewer role don't need a Pro license to access the workspace.
 
 
 ### Differences in roles before and after upgrade
@@ -188,12 +188,12 @@ When you switch back to a classic workspace, you aren't restoring an exact copy 
 
 ## How to manage a migration for your tenant from classic workspaces to the new workspace experience
 
-Some organizations desire to move many or all workspaces to the new workspace experience. The workspace upgrade tooling focuses on enabling workspace admins to upgrade. For organizations wanting to manage such a process, they can take the following steps
+Some organizations desire to move many or all workspaces to the new workspace experience. The workspace upgrade tooling focuses on enabling workspace admins to upgrade. For organizations wanting to manage such a process, they can take the following steps.
 
-1. The workspaces list in the Power BI admin portal and the corresponding API provides a list of all workspaces in Power BI. Classic workspaces are shown a type Group in the list
-2. Work with individual Office 365 Group owners, or with you Office 365 Admin, to have them upgrade the workspaces. If you want to upgrade the workspace you'll need to become an Owner of the Group.
+1. The workspaces list in the Power BI admin portal and the corresponding API provides a list of all workspaces in Power BI. Classic workspaces are shown as type Group in the list.
+2. Work with individual Office 365 group owners, or with your Office 365 Admin, to have them upgrade the workspaces. If you want to upgrade the workspace, you need to become an Owner of the group.
 
-The workspace upgrade capability does not provide tools for bulk or programmatic upgrade. Additionally, new Office 365 Groups created in your organization will continue to appear in Power BI. 
+The workspace upgrade capability doesn't provide tools for bulk or programmatic upgrade. Additionally, new Office 365 groups created in your organization will continue to appear in Power BI. 
     
 
 
