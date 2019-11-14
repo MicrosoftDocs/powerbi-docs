@@ -28,7 +28,7 @@ landingContent:
           - text: "What can developers do"
             url: what-can-you-do.md
           - text: "Visuals in Power BI"
-            url: ../power-bi-custom-visuals.md
+            url: power-bi-custom-visuals.md
           - text: "What is embedding"
             url: embedding.md
           - text: "What is the Power BI API"
@@ -56,15 +56,15 @@ landingContent:
       - linkListType: concept
         links:
           - text: "Visuals FAQ"
-            url: ../power-bi-custom-visuals-faq.md
+            url: power-bi-custom-visuals-faq.md
           - text: "Guidelines for visuals"
             url: guidelines-powerbi-visuals.md
           - text: "Advanced edit mode in visuals"
-            url: /advanced-edit-mode.md
+            url: visuals/advanced-edit-mode.md
       - linkListType: how-to-guide
         links:
           - text: "Get a visual certified"
-            url: ../power-bi-custom-visuals-certified.md
+            url: power-bi-custom-visuals-certified.md
           - text: "Publish custom visuals to AppSource"
             url: office-store.md
 

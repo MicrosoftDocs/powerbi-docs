@@ -3,7 +3,6 @@ title: Overview of report visualizations in Power BI service and Desktop
 description: Overview of report visualizations (visuals) in Microsoft Power BI.
 author: mihart
 ms.author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: SYk_gWrtKvM
 ms.service: powerbi
@@ -66,4 +65,4 @@ In Power BI service, when you have the visualization the way you want it, you ca
 ## Next steps
 
 * [Visualization types in Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-* [Custom visuals](../power-bi-custom-visuals.md)
+* [Custom visuals](../developer/power-bi-custom-visuals.md)

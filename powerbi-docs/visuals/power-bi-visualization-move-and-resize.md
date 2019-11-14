@@ -2,7 +2,6 @@
 title: Move, resize, and pop out a visualization
 description: Move and resize a visualization in a report in Power BI service and Desktop
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -38,4 +37,4 @@ In Power BI Desktop, open a report that has at least one visualization, or [crea
 
 [Focus mode](../consumer/end-user-focus.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

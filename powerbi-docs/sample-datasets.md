@@ -2,7 +2,6 @@
 title: Take a tour of the samples available with Power BI
 description: Sample content packs, PBIX files, and Excel datasets for Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
@@ -111,16 +110,16 @@ Now that you have data, you're on your way.  Try out some of our tutorials using
 ## The Power BI samples as Excel files
 Each of the sample content packs is also available as an Excel workbook. The Excel workbooks are designed to be used with Power BI service.  
 
-1. Download the files individually using the links below, or [download a zip file of all the sample files](http://go.microsoft.com/fwlink/?LinkId=535020). If you're an advanced user, you might want to download the Excel workbooks to explore or edit the data models.
+1. Download the files individually using the links below, or [download a zip file of all the sample files](https://go.microsoft.com/fwlink/?LinkId=535020). If you're an advanced user, you might want to download the Excel workbooks to explore or edit the data models.
 
-   * [Retail Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529778)
-   * [Supplier Quality Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529779)
-   * [Human Resources Sample](http://go.microsoft.com/fwlink/?LinkId=529780)
-   * [Customer Profitability Sample](http://go.microsoft.com/fwlink/?LinkId=529781)
-   * [Opportunity Tracking Sample](http://go.microsoft.com/fwlink/?LinkId=529782)
-   * [IT Spend Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529783)
-   * [Procurement Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529784)
-   * [Sales and Marketing Sample](http://go.microsoft.com/fwlink/?LinkId=529785)
+   * [Retail Analysis Sample](https://go.microsoft.com/fwlink/?LinkId=529778)
+   * [Supplier Quality Analysis Sample](https://go.microsoft.com/fwlink/?LinkId=529779)
+   * [Human Resources Sample](https://go.microsoft.com/fwlink/?LinkId=529780)
+   * [Customer Profitability Sample](https://go.microsoft.com/fwlink/?LinkId=529781)
+   * [Opportunity Tracking Sample](https://go.microsoft.com/fwlink/?LinkId=529782)
+   * [IT Spend Analysis Sample](https://go.microsoft.com/fwlink/?LinkId=529783)
+   * [Procurement Analysis Sample](https://go.microsoft.com/fwlink/?LinkId=529784)
+   * [Sales and Marketing Sample](https://go.microsoft.com/fwlink/?LinkId=529785)
 2. Save the downloaded file. Where you save the file makes a difference.
 
    * ![Local](media/sample-datasets/power-bi-local-file2.png)  **Local** - If you save your file to a local drive on your computer or another location in your organization, from Power BI, you can import your file into Power BI. Your file will actually remain on your local drive, so the whole file isn’t imported into Power BI. What happens is a new dataset is created in your Power BI site and data, and in some cases the data model, are loaded into the dataset. If your file has any reports, those reports appear in your Power BI site under Reports.
@@ -149,7 +148,7 @@ Each of the sample content packs is also available as an Excel workbook. The Exc
 
     ![Import or Connect](media/sample-datasets/power-bi-import.png)
 9. If you select **Import**, Power BI imports the sample workbook and adds it as a new dataset named **Procurement Analysis Sample**.  If the workbook has any Power View sheets, tables or ranges, or a data model, Power BI also creates a report (with the same name). And if you don't already have a dashboard open, Power BI creates a new dashboard. (If you had a dashboard open when you clicked **Get Data**, you'll see a new blank tile on that dashboard.  Clicking that tile will take you to the report for the dataset you just added). The new content is named after the sample and is marked with a yellow asterisk.
-10. When the **Your dataset is ready!** screen appears, select **View dataset** or **Get Quick Insights** or use your Power BI left navbar to locate and open the associated report or dashboard.  
+10. When the **Your dataset is ready!** screen appears, select **View dataset** or **Get Quick Insights** or use your Power BI nav pane to locate and open the associated report or dashboard.  
 
      ![View dataset](media/sample-datasets/power-bi-ready.png)
 
@@ -171,15 +170,15 @@ Each of the sample content packs is also available as Power BI .pbix file. The .
 
 1. Download the files individually using the links below. Selecting these links saves the file automatically to your Downloads folder. 
 
-   * [Retail Analysis Sample PBIX](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
-   * [Supplier Quality Analysis Sample PBIX](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
+   * [Retail Analysis Sample PBIX](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+   * [Supplier Quality Analysis Sample PBIX](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
    <!-- Previous link doesn't work -->
-   * [Human Resources Sample PBIX](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
-   * [Customer Profitability Sample PBIX](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
-   * [Opportunity Tracking Sample PBIX](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
-   * [IT Spend Analysis Sample PBIX](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
-   * [Procurement Analysis Sample PBIX](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
-   * [Sales and Marketing Sample PBIX](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
+   * [Human Resources Sample PBIX](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
+   * [Customer Profitability Sample PBIX](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
+   * [Opportunity Tracking Sample PBIX](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
+   * [IT Spend Analysis Sample PBIX](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
+   * [Procurement Analysis Sample PBIX](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
+   * [Sales and Marketing Sample PBIX](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
 
 1. From Power BI Desktop, select **File > Open** and navigate to the location where you saved the sample .pbix.
 
@@ -193,4 +192,4 @@ Each of the sample content packs is also available as Power BI .pbix file. The .
 
 [Data sources for Power BI](service-get-data.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

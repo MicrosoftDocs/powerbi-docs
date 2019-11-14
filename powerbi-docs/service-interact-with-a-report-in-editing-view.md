@@ -2,7 +2,6 @@
 title: Interact with a report in Editing view
 description: Interact with a report in report Editing view in Power BI service
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -41,5 +40,5 @@ A Power BI Pro license is required to edit reports created by others as well as 
 ## Next steps
 Back to [Reading view and Editing view in Power BI service](consumer/end-user-reading-view.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

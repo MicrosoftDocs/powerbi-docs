@@ -2,7 +2,6 @@
 title: Connect to Zendesk with Power BI
 description: Zendesk for Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: sarinas
 
 ms.service: powerbi
@@ -64,9 +63,9 @@ After you've installed the template app, you can change the dashboard and report
 
 You've installed the Zendesk template app. That means you've also created the Zendesk workspace. In the workspace, you can change the report and dashboard, and then distribute it as an *app* to colleagues in your organization. 
 
-1. To view all the contents of your new Zendesk workspace, in the left navigation bar, select **Workspaces** > **Zendesk**. 
+1. To view all the contents of your new Zendesk workspace, in the nav pane, select **Workspaces** > **Zendesk**. 
 
-    ![Zendesk workspace in the left navigation pane](media/service-connect-to-zendesk/power-bi-zendesk-workspace-left-nav.png)
+    ![Zendesk workspace in the nav pane](media/service-connect-to-zendesk/power-bi-zendesk-workspace-left-nav.png)
 
     This view is the content list for the workspace. In the upper-right corner, you see **Update app**. When you're ready to distribute your app to your colleagues, that's where you'll start. 
 
@@ -90,5 +89,5 @@ If you're having issues connecting, check your Zendesk URL and confirm you're us
 * [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
 * [Install and use apps in Power BI](consumer/end-user-apps.md)
 * [COnnect to Power BI apps for external services](service-connect-to-services.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

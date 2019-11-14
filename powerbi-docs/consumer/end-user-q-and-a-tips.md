@@ -2,7 +2,6 @@
 title: Tips and tricks for asking questions with Q&A
 description: Tips and tricks for asking questions with Q&A in Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: 'Mohammad'
 
 
@@ -62,7 +61,7 @@ The list below uses present tense, but all tenses are recognized in most cases. 
 |  |  |
 |**Top N**     |     (order, ranking): top, bottom, highest, lowest, first, last, next, earliest, newest, oldest, latest, most recent, next            |
 |        |         |
-|**Visual types**     |  all visual types native to Power BI.  If it's an option in the Visualizations pane, then you can include it in your question.  The exception to this rule is [custom visuals](../power-bi-custom-visuals.md) that you've manually added to the Visualization pane.  |
+|**Visual types**     |  all visual types native to Power BI.  If it's an option in the Visualizations pane, then you can include it in your question.  The exception to this rule is [custom visuals](../developer/power-bi-custom-visuals.md) that you've manually added to the Visualization pane.  |
 |  |  Example: show districts by month and sales total as bar chart               |
 |        |         |
 |**Wh (relationship, qualified)**  | when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what                |
@@ -87,5 +86,5 @@ Back to [Q&A in Power BI](end-user-q-and-a.md)
 
 [Power BI - Basic Concepts](end-user-basic-concepts.md)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

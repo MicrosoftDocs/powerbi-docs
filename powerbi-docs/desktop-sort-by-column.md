@@ -2,7 +2,6 @@
 title: Sort by column in Power BI Desktop
 description: Sort by column in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

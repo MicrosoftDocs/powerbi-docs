@@ -2,7 +2,6 @@
 title: Connect to the services you use with Power BI
 description: Connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics CRM, and Google Analytics.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: 
 
 ms.service: powerbi
@@ -16,7 +15,7 @@ LocalizationGroup: Connect to services
 With Power BI, you can connect to many of the services you use to run your business, such as Salesforce, Microsoft Dynamics, and Google Analytics. Power BI starts by using your credentials to connect to the service. It creates a Power BI *workspace* with a dashboard and a set of Power BI reports that automatically show your data and provide visual insights about your business.
 
 >[!IMPORTANT]
->We'll be deprecating several content packs on September 25, 2019. Any installed content pack will continue to work, but you won't be able to install a new one after that. [Template apps](https://docs.microsoft.com/power-bi/service-template-apps-overview) are the replacement of service content packs.
+>Service content packs are being replaced by [Template apps](https://docs.microsoft.com/power-bi/service-template-apps-overview). As of September 25, 2019, a number of content packs have already been deprecated. Any deprecated content pack that you have installed will remain in your account, but no documentation or support will be provided for it, nor will it be possible to install it again.
 
 Sign in to Power BI to view all of the [services you can connect to](https://app.powerbi.com/getdata/services). 
 
@@ -32,7 +31,7 @@ After you install the app, you can view the dashboard and reports in the app and
 ## Edit the dashboard and reports
 When the import is complete, the new app appears on the Apps page.
 
-1. Select **Apps** in the left navigation pane > select the app.
+1. Select **Apps** in the nav pane > select the app.
    
      ![Apps page](media/service-connect-to-services/power-bi-service-apps-open-app.png)
 2. You can ask a question by typing in the Q&A box, or click a tile to open the underlying report. 
@@ -67,6 +66,6 @@ If you're interested in creating template apps to distribute yourself, see [Crea
 ## Next steps
 * [Distribute apps to your colleagues](service-create-distribute-apps.md)
 * [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
-* More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
+* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

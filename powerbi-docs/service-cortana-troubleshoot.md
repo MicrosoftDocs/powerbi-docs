@@ -2,7 +2,6 @@
 title: Troubleshoot Cortana for Power BI
 description: If you're having trouble using Cortana with Power BI, try these suggestions.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 
@@ -92,4 +91,4 @@ Looking for a dashboard that has been shared with you?  Open Power BI > **Shared
 * The query must be 2 or more words, by design.  If your query is too short, add the word "show".
 * Some query strings with prepositions might not work (e.g. sales by item). Try different query terms that don't use prepositions and are meaningful/unique.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

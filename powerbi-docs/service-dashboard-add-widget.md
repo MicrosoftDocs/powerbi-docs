@@ -2,7 +2,6 @@
 title: Add images, videos, and more to your dashboard
 description: Documentation on how to use the Add tile widget to add an image, video, text box, web code, and streaming data tile to a dashboard.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: e2PD8m1Q0vU
 
@@ -242,5 +241,5 @@ To make changes to an existing tile:
 ## Next steps
 [Intro to dashboard tiles for Power BI designers](service-dashboard-tiles.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/).
+More questions? [Try the Power BI Community](https://community.powerbi.com/).
 

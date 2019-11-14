@@ -12,7 +12,7 @@
     - name: Overview
       items: 
       - name: "Visuals in Power BI"
-        href: ../power-bi-custom-visuals.md
+        href: power-bi-custom-visuals.md
     - name: Tutorials
       items:
       - name: "Develop a Power BI visual"
@@ -24,11 +24,11 @@
     - name: Concepts
       items:
       - name: "Visuals for organizations in Power BI"
-        href: ../power-bi-custom-visuals-organization.md
+        href: power-bi-custom-visuals-organization.md
       - name: "Guidelines for Power BI visuals" 
         href: guidelines-powerbi-visuals.md
       - name: "Visuals FAQ"
-        href: ../power-bi-custom-visuals-faq.md
+        href: power-bi-custom-visuals-faq.md
       - name: "Using capabilities"
         href: visuals/capabilities.md
       - name: "Data view mappings"
@@ -40,13 +40,15 @@
     - name: How to
       items:
       - name: "Get a visual certified"
-        href: ../power-bi-custom-visuals-certified.md
+        href: power-bi-custom-visuals-certified.md
       - name: "Publish custom visuals to AppSource"
         href: office-store.md
       - name: "Use R-powered custom visuals in Power BI"
-        href: ../desktop-r-powered-custom-visuals.md
+        href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/toc.json&bc=/powerbi-docs/developer/breadcrumb/toc.json
       - name: "Visuals interactions"
         href: visuals/visuals-interactions.md
+      - name: "Add selections"
+        href: visuals/selection-api.md
       - name: "Add visuals tooltips"
         href: visuals/add-tooltips.md
       - name: "Add analytics pane" 
@@ -57,6 +59,8 @@
         href: visuals/fetch-more-data.md
       - name: "Add bookmarks support"
         href: visuals/bookmarks-support.md
+      - name: "Add context menu support"
+        href: visuals/context-menu.md
       - name: "Highlight data in visuals"
         href: visuals/highlight.md
       - name: "Add High-Contrast mode support"
@@ -64,7 +68,7 @@
       - name: "Enable sync slicers"
         href: visuals/enable-sync-slicers.md
       - name: "Troubleshoot Power BI visuals"
-        href: ../power-bi-custom-visuals-troubleshoot.md
+        href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
       items: 
       - name: "Landing page" 
@@ -77,6 +81,8 @@
         href: visuals/event-service.md
       - name: "Sorting"
         href: visuals/sort-options.md
+      - name: "Interactivity utils"
+        href: visuals/utils-interactivity-selections.md
     - name: Resources
       items:
       - name: "Dev Center"

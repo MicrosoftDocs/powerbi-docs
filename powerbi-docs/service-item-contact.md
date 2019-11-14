@@ -2,7 +2,6 @@
 title: Set contact information for reports and dashboards
 description: Learn how to set contact information for reports and dashboards.
 author: LukaszPawlowski-MS
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -61,4 +60,4 @@ The contact list information is also used in other places. For example, it is sh
 
 ## Next steps
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

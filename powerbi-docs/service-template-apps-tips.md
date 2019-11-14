@@ -2,7 +2,6 @@
 title: Tips for authoring template apps in Power BI
 description: Tips about authoring queries, data models, reports, and dashboards for making good template apps
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -142,7 +141,7 @@ Template apps support sample data only apps, make sure to check the static app c
 | Data sources | Data sources supported for cloud Scheduled Data refresh are allowed. <br>Not supported: <li> DirectQuery</li><li>Live connections (no Azure AS)</li> <li>On-premises data sources (personal and enterprise gateways aren't supported)</li> <li>Real time (no support for push dataset)</li> <li>Composite models</li></ul> |
 | Dataset: cross-workspace | No cross-workspace datasets are allowed  |
 | Query parameters | Not supported: Parameters of type "Any" or "Binary" type block refresh operation for dataset |
-| Custom visuals | Only publicly available custom visuals are supported. [Organizational custom visuals](power-bi-custom-visuals-organization.md) not supported |
+| Custom visuals | Only publicly available custom visuals are supported. [Organizational custom visuals](developer/power-bi-custom-visuals-organization.md) not supported |
 
 ## Next steps
 

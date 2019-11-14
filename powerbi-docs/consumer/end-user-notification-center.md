@@ -2,7 +2,6 @@
 title: View messages in the Notification Center
 description: The Notification Center is a sequential feed of information related to your Power BI experience.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: bZMSv5KAlcE
 
@@ -43,5 +42,5 @@ Watch Amanda review, manage, and respond to notifications. Then follow the instr
 * [Data alerts in Power BI service](end-user-alerts.md)
 * [Set data alerts in the iPhone app (Power BI for iOS)](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Set data alerts in the Power BI mobile app for Windows 10](mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
-* More questions? [Try the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

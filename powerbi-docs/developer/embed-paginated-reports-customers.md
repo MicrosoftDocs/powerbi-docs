@@ -3,7 +3,6 @@ title: Embed Power BI paginated reports in your application for your customers
 description: Learn how to integrate or embed a Power BI paginated report into an application, using the Power BI APIs.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: rkarlin
 ms.topic: tutorial
 ms.service: powerbi
@@ -105,7 +104,7 @@ To get the **applicationId**, follow these steps:
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 
-2. In the left-hand navigation pane, select **All Services**, and search for **App Registrations**.
+2. In the left-hand nav pane, select **All Services**, and search for **App Registrations**.
 
     ![App registration search](media/embed-paginated-reports-for-customers/app-registration.png)
 
@@ -157,7 +156,7 @@ To get the **ApplicationSecret**, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-2. In the left-hand navigation pane, select **All services** and search for **App registrations**.
+2. In the left-hand nav pane, select **All services** and search for **App registrations**.
 
     ![App registration search](media/embed-paginated-reports-for-customers/app-registration.png)
 
@@ -265,4 +264,4 @@ For a full sample of using the JavaScript API, you can use the [Playground tool]
 
 In this tutorial, you've learned how to embed Power BI paginated reports into an application for your customers. You can also try to embed Power BI content for your organization.
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

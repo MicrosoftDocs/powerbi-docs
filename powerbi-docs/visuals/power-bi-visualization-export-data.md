@@ -3,12 +3,12 @@ title: Export data from a Power BI visualization
 description: Export data from a report visualization and dashboard visualization and view it in Excel.
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: 'tessa'
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/30/2019
+ms.date: 11/13/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -155,8 +155,6 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 
 - Export using *Underlying data* won't work if:
 
-  - the data source is an Azure Analysis Services live connection or a SQL Server Analysis Services live connection.
-
   - the version is older than 2016.
 
   - the tables in the model don't have a unique key.
@@ -191,4 +189,4 @@ These limitations and considerations apply to Power BI Desktop and the Power BI 
 
 - Power BI admins can disable the export of data.
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

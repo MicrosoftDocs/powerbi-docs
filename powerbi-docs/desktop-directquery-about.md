@@ -2,7 +2,6 @@
 title: Using DirectQuery in Power BI
 description: Understand using DirectQuery with Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -28,7 +27,7 @@ In short, the best practice for using import versus DirectQuery is the following
 
 The set of capabilities offered by Power BI for both connectivity modes – import and DirectQuery - will evolve over time. This will include providing more flexibility when using imported data, such that import can be used in more cases, as well as eliminating some of the drawbacks of using DirectQuery. Regardless of improvements, when using DirectQuery the performance of the underlying data source will always remain a major consideration. If that underlying data source is slow, then using DirectQuery for that source will remain unfeasible.
 
-This article covers DirectQuery with Power BI, and not SQL Server Analysis Services. DirectQuery is also a feature of **SQL Server Analysis Services**, and many of the details described below apply to its use, though there are also important differences. For information about using DirectQuery with SQL Server Analysis Services, see [the whitepaper that details DirectQuery in SQL Server Analysis Services 2016](http://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf).  
+This article covers DirectQuery with Power BI, and not SQL Server Analysis Services. DirectQuery is also a feature of **SQL Server Analysis Services**, and many of the details described below apply to its use, though there are also important differences. For information about using DirectQuery with SQL Server Analysis Services, see [the whitepaper that details DirectQuery in SQL Server Analysis Services 2016](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf).  
 
 This article focuses on the recommended workflow for DirectQuery, where the report is created in **Power BI Desktop**, but also covers connecting directly in the **Power BI service**.
 
@@ -137,7 +136,7 @@ When using **DirectQuery**, many of these model enrichments can still be made, a
 * **Limitations in calculated columns:** Calculated columns are limited to being intra-row, as in, they can only refer to values of other columns of the same table, without the use of any aggregate functions. Additionally, the DAX scalar functions (such as LEFT()) that are allowed, will be limited to those which can simply be pushed to the underlying source, hence will vary depending upon the exact capabilities of the source. Functions that are not supported will not be listed in autocomplete when authoring the DAX for a calculated column, and would result in an error if used.
 * **No support for parent-child DAX functions:** When in DirectQuery model, it is not possible to use the family of DAX PATH() functions, that generally handle Parent-Child structures (such as chart of accounts, or employee hierarchies).
 * **Calculated tables are not supported:** The ability to define a calculated table using a DAX expression is not supported in DirectQuery mode.
-* **Relationship filtering:** Use of bi-directional filtering is described [in this detailed whitepaper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (the paper presents examples in the context of SQL Server Analysis Services, but the fundamental points apply equally to Power BI).
+* **Relationship filtering:** Use of bi-directional filtering is described [in this detailed whitepaper](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (the paper presents examples in the context of SQL Server Analysis Services, but the fundamental points apply equally to Power BI).
 
 * **No Clustering:** When using DirectQuery, it is not possible to use the Clustering  capability, to automatically find groups
 

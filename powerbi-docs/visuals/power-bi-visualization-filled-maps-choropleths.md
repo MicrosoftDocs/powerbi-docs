@@ -2,7 +2,6 @@
 title: Filled Maps (Choropleths) in Power BI
 description: Documentation on creating Filled Maps (Choropleths) in Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 
@@ -43,7 +42,7 @@ Filled maps are a great choice:
 * to get an overview of the distribution across the geographic locations.
 
 ### Prerequisites
-This tutorial uses the [Retail Analysis sample PBIX file](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
+This tutorial uses the [Retail Analysis sample PBIX file](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
 1. From the upper left section of the menu bar, select **File** > **Open**
    
 2. Find your copy of the **Retail Analysis sample PBIX file**

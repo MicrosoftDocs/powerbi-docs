@@ -3,7 +3,6 @@ title: Power BI admin portal
 description: The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Microsoft 365 admin center, and settings.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -301,7 +300,7 @@ Users in the organization can use external search features that rely on Azure Se
 
 ### Add and use custom visuals
 
-Users in the organization can interact with and share custom visuals. [Learn more](power-bi-custom-visuals.md)
+Users in the organization can interact with and share custom visuals. [Learn more](developer/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > This setting can be applied to the entire organization or can be limited to specific groups.
@@ -453,7 +452,7 @@ As an administrator, you can view the embed codes that are generated for your te
 
  ## <a name="organizational-visuals">Organization visuals</a> 
 
-The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization.md)
+The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](developer/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the organization's repository.
@@ -509,7 +508,7 @@ To update the visual from the organizational store, select the gear icon. Browse
 
 Make sure the Visual ID remains unchanged. The new file replaces the previous file for all the reports throughout the organization. However, if the new version of the visual might break any usage or data structure of the previous version of the visual, then do not replace the previous version. Instead, you should create a new listing for the new version of the visual. For example, add a new version number (version X.X) to the title of the new listed visual. This way it is clear that it is the same visual just with an updated version number, so existing reports do not break their functionality. Again, make sure the Visual ID remains unchanged. Then the next time users enter the organization repository from Power BI Desktop, they can import the new version, which prompts them to replace the current version that they have in the report.
 
-For more information, visit [Frequently asked questions about organizational custom visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
+For more information, visit [Frequently asked questions about organizational custom visuals](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-visuals)
 
 ## <a name="dataflowStorage">Dataflow storage (preview)</a>
 
@@ -543,7 +542,7 @@ As an administrator, you can customize the look of Power BI for your whole organ
 * **Select Theme color**: You are able to select your theme based on a hex #, RGB, value, or from the provided pallet.
 
 
-For more information, see [Custom branding for your organization](http://aka.ms/orgBranding).
+For more information, see [Custom branding for your organization](https://aka.ms/orgBranding).
 
 ![Workspaces list](media/service-admin-portal/workspaces-list.png)
 ## Next steps
