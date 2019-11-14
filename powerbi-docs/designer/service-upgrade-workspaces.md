@@ -77,12 +77,6 @@ Each Office 365 group Owner is added individually to the Admin role for the upgr
 
 Because the Office 365 group is given a role in the workspace, any user added to the Office 365 group after upgrade has that role in the workspace. However, if you add new Owners to the Office 365 group after the upgrade, they don't have the Admin role for the workspace.
 
-## Licensing after upgrade
-
-Users in the Admin, Member, or Contributor workspace roles need a Power BI Pro license to access the workspace.
-
-If the workspace is in the shared capacity, users in the Viewer workspace role also need a Power BI Pro license to access the workspace. However, if the workspace is in a Premium capacity, users in the Viewer role don't need a Pro license to access the workspace.
-
 
 ### Differences in roles before and after upgrade
 
@@ -98,6 +92,12 @@ We recommend evaluating whether to use the new Contributor role. After upgrade, 
 After upgrade, you may consider creating a security or Office 365 group or distribution list for workspace admins, instead of managing access through role assignments to individual users.
 
 Read more about [roles in the new workspaces](../service-new-workspaces.md#roles-in-the-new-workspaces).
+
+## Licensing after upgrade
+
+Users in the Admin, Member, or Contributor workspace roles need a Power BI Pro license to access the workspace.
+
+If the workspace is in the shared capacity, users in the Viewer workspace role also need a Power BI Pro license to access the workspace. However, if the workspace is in a Premium capacity, users in the Viewer role don't need a Pro license to access the workspace.
 
 ## Other new workspace features
 
