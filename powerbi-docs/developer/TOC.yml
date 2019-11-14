@@ -47,6 +47,8 @@
         href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/toc.json&bc=/powerbi-docs/developer/breadcrumb/toc.json
       - name: "Visuals interactions"
         href: visuals/visuals-interactions.md
+      - name: "Add selections"
+        href: visuals/selection-api.md
       - name: "Add visuals tooltips"
         href: visuals/add-tooltips.md
       - name: "Add analytics pane" 
@@ -57,6 +59,8 @@
         href: visuals/fetch-more-data.md
       - name: "Add bookmarks support"
         href: visuals/bookmarks-support.md
+      - name: "Add context menu support"
+        href: visuals/context-menu.md
       - name: "Highlight data in visuals"
         href: visuals/highlight.md
       - name: "Add High-Contrast mode support"
@@ -77,6 +81,8 @@
         href: visuals/event-service.md
       - name: "Sorting"
         href: visuals/sort-options.md
+      - name: "Interactivity utils"
+        href: visuals/utils-interactivity-selections.md
     - name: Resources
       items:
       - name: "Dev Center"

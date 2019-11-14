@@ -319,7 +319,6 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 ***Enterprise***
 
-* [ExpressRoute](service-admin-power-bi-expressroute.md): use to establish a private, managed connection to Power BI.
 * [Content pack support for RLS](service-admin-rls.md) (Preview): If RLS is defined for those dashboards and reports that are distributed as part of a content pack, then the security rules will be respected for those content packs.
 
 ***Dashboards***
