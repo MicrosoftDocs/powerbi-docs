@@ -80,7 +80,7 @@
     - name: "Default member in multidimensional models in Power BI"
       href: desktop-default-member-multidimensional-models.md            
     - name: "Visuals FAQ"
-      href: power-bi-custom-visuals-faq.md   
+      href: developer/power-bi-custom-visuals-faq.md   
   - name: How to
     items: 
     - name: "Get Power BI Desktop"
