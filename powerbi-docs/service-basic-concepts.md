@@ -9,7 +9,7 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/25/2019
+ms.date: 11/14/2019
 ms.author: maggies
 
 LocalizationGroup: Get started
@@ -41,29 +41,31 @@ We'll dig into these features later, but first let's review some Power BI concep
 
 
 ## Power BI concepts
-The five major building blocks of Power BI are: **_dashboards_**, **_reports_**, **_workbooks_**, **_datasets_**, and **_dataflows_**. And they're all organized into **_workspaces_**, and they're created on **_capacities_**.  It's important to understand capacities and workspaces before we dig into the five building blocks, so let's start there.
+The five major building blocks of Power BI are: *dashboards*, *reports*, *workbooks*, *datasets*, and *dataflows*. They're all organized into *workspaces*, and they're created on *capacities*.  It's important to understand capacities and workspaces before we dig into the five building blocks, so let's start there.
 
 ## Capacities
-Capacities are a core Power BI concept representing a set of resources (storage, processor and memory) used to host and deliver your Power BI content. Capacities are either _shared_ or _dedicated_. A shared capacity is shared with other Microsoft customers, while a dedicated capacity is fully committed to a single customer. Dedicated capacities require a [subscription](service-premium-what-is.md), and are fully described in the [Managing Premium capacities](service-premium-capacity-manage.md) article.
+Capacities are a core Power BI concept representing a set of resources (storage, processor, and memory) used to host and deliver your Power BI content. Capacities are either _shared_ or _dedicated_. A shared capacity is shared with other Microsoft customers, while a dedicated capacity is fully committed to a single customer. Dedicated capacities require a [subscription](service-premium-what-is.md), and are fully described in the [Managing Premium capacities](service-premium-capacity-manage.md) article.
 
 By default, workspaces are created on shared capacities. In shared capacity, workloads run on computational resources shared with other customers. As the capacity must share resources, limitations are imposed to ensure "fair play", such as the maximum model size (1 GB) and maximum daily refresh frequency (eight times per day).
 
 ## Workspaces
 Workspaces are created on capacities. Essentially, they are containers for dashboards, reports, workbooks, datasets, and dataflows in Power BI.
 
-There are two types of workspaces: *My workspace* and *workspaces*. So what is an *app*? A Power BI *app* is a collection of dashboards and reports built to deliver key metrics to the Power BI end users for your organization. Apps are interactive but end users can't edit them.
+There are two types of workspaces: *My workspace* and *workspaces*.
 
 - *My workspace* is the personal workspace for any Power BI customer to work with your own content. Only you have access to your My workspace. You can share dashboards and reports from your My Workspace. If you want to collaborate on dashboards and reports, or create an app, then you want to work in a workspace.      
--  *workspaces* are used to collaborate and share content with colleagues. They are also the places where you create, publish, and manage apps for your organization. Think of them as staging areas and containers for the content that will make up a Power BI app. You can add colleagues to your workspaces and collaborate on dashboards, reports, workbooks, and datasets. All workspace members need Power BI Pro licenses. App consumers, the colleagues who have access to the apps, don't necessarily need Pro licenses. Read more about the [new workspaces](service-create-the-new-workspaces.md).  
+-  *Workspaces* are used to collaborate and share content with colleagues. You can add colleagues to your workspaces and collaborate on dashboards, reports, workbooks, and datasets. With one exception, all workspace members need Power BI Pro licenses. Read more about the [new workspaces](service-create-the-new-workspaces.md). 
+
+    Workspaces are also the places where you create, publish, and manage *apps* for your organization. Think of workspaces as staging areas and containers for the content that will make up a Power BI app. So what is an *app*? It's a collection of dashboards and reports built to deliver key metrics to the Power BI consumers in your organization. Apps are interactive, but consumers can't edit them. App consumers, the colleagues who have access to the apps, don't necessarily need Pro licenses.  
 
 To learn more about sharing in general, start with [Ways to share dashboards your work](service-how-to-collaborate-distribute-dashboards-reports.md).
 
 Now, on to the five Power BI building blocks.
 
 ## Dataflows
-A *dataflow* helps organizations to unify data from disparate sources. They are optional, and are often used in complex or larger projects. They represent data prepared and staged for use by datasets, however they can't be used directly as a source for reporting. They leverage the extensive collection of Microsoft data connectors, enabling the ingestion of data from on-premises and cloud-based data sources.
+A *dataflow* helps organizations to unify data from disparate sources. They are optional, and are often used in complex or larger projects. They represent data prepared and staged for use by datasets. However, they can't be used directly as a source for reporting. They leverage the extensive collection of Microsoft data connectors, enabling the ingestion of data from on-premises and cloud-based data sources.
 
-Dataflows are only created and managed in workspaces (but not *My Workspace*), and they are stored as entities in the Common Data Model (CDM) in Azure Data Lake Storage Gen2. Typically, they are scheduled to refresh on a recurring basis to store up-to-date data. They're great for preparing data for use—and potential re-use—by your datasets. For more information, see the [Self-service data prep in Power BI](service-dataflows-overview.md) article.
+Dataflows are only created and managed in workspaces (but not *My Workspace*), and they are stored as entities in the Common Data Model (CDM) in Azure Data Lake Storage Gen2. Typically, they're scheduled to refresh on a recurring basis to store up-to-date data. They're great for preparing data for use—and potential re-use—by your datasets. For more information, see the [Self-service data prep in Power BI](service-dataflows-overview.md) article.
 
 You can't have dashboards or reports without data (well, you can have empty dashboards and empty reports, but they're not useful until they have data), so let's now introduce **datasets**.
 
