@@ -2,7 +2,6 @@
 title: Administering Power BI - frequently asked questions (FAQ)
 description: Learn the answers to frequently asked questions on Power BI sign up, tenant management, and other administrative tasks.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -25,8 +24,8 @@ This article addresses frequently asked questions for Power BI administration. F
 * [Using PowerShell](#using-powershell)
 * [How do users sign up for Power BI?](#how-do-users-sign-up-for-power-bi)
 * [How do individual users in my organization sign up?](#how-do-individual-users-in-my-organization-sign-up)
-* [How can I prevent users from joining my existing Office 365 tenant?](#how-can-i-prevent-users-from-joining-my-existing-office-365-tenant)
-* [How can I allow users to join my existing Office 365 tenant?](#how-can-i-allow-users-to-join-my-existing-office-365-tenant)
+* [How can I prevent users from joining my existing Office 365 tenant?](#how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant)
+* [How can I allow users to join my existing Office 365 tenant?](#how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant)
 * [How do I check if I have the block on in the tenant?](#how-do-i-check-if-i-have-the-block-on-in-the-tenant)
 * [How can I prevent my existing users from starting to use Power BI?](#how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi)
 * [How can I allow my existing users to sign up for Power BI?](#how-can-i-allow-my-existing-users-to-sign-up-for-power-bi)
@@ -36,7 +35,7 @@ This article addresses frequently asked questions for Power BI administration. F
 * [How will this change the way I manage identities for users in my organization today?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [How do we manage Power BI?](#how-do-we-manage-power-bi)
 * [What is the process to manage a tenant created by Microsoft for my users?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
-* [If I have multiple domains, can I control the Office 365 tenant that users get added to?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to)
+* [If I have multiple domains, can I control the Microsoft 365 tenant that users get added to?](#if-i-have-multiple-domains-can-i-control-the-microsoft-365-tenant-that-users-get-added-to)
 * [How do I remove Power BI for users that already signed up?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [How do I know when new users have joined my tenant?](#how-do-i-know-when-new-users-have-joined-my-tenant)
 * [Are there any additional things I should prepare for?](#are-there-any-additional-things-i-should-prepare-for)
@@ -53,11 +52,11 @@ This article addresses frequently asked questions for Power BI administration. F
 
 ### Using PowerShell
 
-Some of the procedures in this section require Windows PowerShell scripts. If you're not familiar with PowerShell, we recommend the [PowerShell getting started guide](http://go.microsoft.com/fwlink/p/?LinkID=286814). To run the scripts, first install the latest 64-bit version of the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/).
+Some of the procedures in this section require Windows PowerShell scripts. If you're not familiar with PowerShell, we recommend the [PowerShell getting started guide](https://go.microsoft.com/fwlink/p/?LinkID=286814). To run the scripts, first install the latest 64-bit version of the [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/).
 
 ### How do users sign up for Power BI?
 
-As an admin, you can sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com) or the [Purchase services](https://admin.microsoft.com/AdminPortal/Home#/catalog) page on the Microsoft 365 admin center. When an admin signs up for Power BI, they can assign user licenses to users who should have access.
+As a Microsoft 365 admin, you can sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com) or the [Purchase services](https://admin.microsoft.com/AdminPortal/Home#/catalog) page on the Microsoft 365 admin center. When a Microsoft 365 admin signs up for Power BI, they can assign user licenses to users who should have access.
 
 Additionally, individual users in your organization may be able to sign up for Power BI through the [Power BI web site](https://powerbi.microsoft.com). When a user in your organization signs up for Power BI, the service automatically assigns a Power BI license to the user. For more info, see [Signing up for Power BI as an individual](service-self-service-signup-for-power-bi.md) and [Power BI licensing in your organization](service-admin-licensing-organization.md).
 
@@ -65,21 +64,21 @@ Additionally, individual users in your organization may be able to sign up for P
 
 There are three scenarios that might apply to users in your organization:
 
-* **Scenario 1**: Your organization already has an existing Office 365 environment, and the user signing up for Power BI already has an Office 365 account.
-    In this scenario, if a user already has a work or school account in the tenant (for example, contoso.com) but doesn't yet have Power BI, Microsoft simply activates the plan for that account. The user is automatically notified with info on how to use the Power BI service.
+* **Scenario 1**: Your organization already has an existing Microsoft 365 environment, and the user signing up for Power BI already has a Microsoft 365 account.
+    In this scenario, if a user already has a work or school account in the tenant (for example, contoso.com) but doesn't yet have Power BI, Microsoft simply activates the Power BI (free) plan for that account. The user is automatically notified with info on how to use the Power BI service.
 
-* **Scenario 2**: Your organization has an existing Office 365 environment, but the user signing up for Power BI doesn’t have an Office 365 account.
-    In this scenario, the user has an email address in your organization’s domain (for example, contoso.com) but doesn't yet have an Office 365 account. In this case, the user can sign up for Power BI and is automatically given an account. This action lets the user access the Power BI service. For example, if an employee named Nancy uses their work email address (like nancy@contoso.com) to sign up, Microsoft automatically adds Nancy as a user in Contoso’s Office 365 environment and activates Power BI for that account.
+* **Scenario 2**: Your organization has an existing Microsoft 365 environment, but the user signing up for Power BI doesn’t have a Microsoft 365 account.
+    In this scenario, the user has an email address in your organization’s domain (for example, contoso.com) but doesn't yet have a Microsoft 365 account. In this case, the user can sign up for Power BI and is automatically given an account. This action lets the user access the Power BI service. For example, if an employee named Nancy uses their work email address (like nancy@contoso.com) to sign up, Microsoft automatically adds Nancy as a user in Contoso’s Microsoft 365 environment and activates Power BI for that account.
 
-* **Scenario 3**: Your organization doesn't have an Office 365 environment connected to your email domain.
-    There are no administrative actions required for your organization to take advantage of Power BI. The service adds users to a new, cloud-only user directory. You can also choose to take over as the tenant admin and manage them.
+* **Scenario 3**: Your organization doesn't have a Microsoft 365 environment connected to your email domain.
+    There are no administrative actions required for your organization to take advantage of Power BI. The service adds users to a new, cloud-only user directory. You can also choose to take over as the Microsoft 365 Global admin for the tenant and manage them.
 
 > [!IMPORTANT]
-> If your organization has multiple email domains and you prefer all email address extensions to be in the same tenant, add all email address domains to an Azure Active Directory tenant before any users sign up. Once you've created users, there's no automated mechanism to move users across tenants. For more info on this process, see [If I have multiple domains, can I control the Office 365 tenant that users get added to?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to) later in this article and [Add a domain to Office 365](/office365/admin/setup/add-domain/).
+> If your organization has multiple email domains and you prefer all email address extensions to be in the same tenant, add all email address domains to an Azure Active Directory tenant before any users sign up. Once you've created users, there's no automated mechanism to move users across tenants. For more info on this process, see [If I have multiple domains, can I control the Microsoft 365 tenant that users get added to?](#if-i-have-multiple-domains-can-i-control-the-microsoft-365-tenant-that-users-get-added-to) later in this article and [Add a domain to Microsoft 365](/office365/admin/setup/add-domain/).
 
-### How can I prevent users from joining my existing Office 365 tenant?
+### How can I prevent users from joining my existing Microsoft 365 tenant?
 
-There are steps you can take, as an admin, to prevent users from joining your existing Office 365 tenant. If you block access, users’ attempts to sign up fail, and a message appears that directs them to contact their organization’s admin. You don't need to repeat this process if you have already disabled automatic license distribution (for example, through Office 365 for Education for Students, Faculty, and Staff).
+There are steps you can take, as a Microsoft 365 Global admin, to prevent users from joining your existing Microsoft 365 tenant. If you block access, users’ attempts to sign up fail, and a message appears that directs them to contact their organization’s admin. You don't need to repeat this process if you have already disabled automatic license distribution (for example, through Office 365 for Education for Students, Faculty, and Staff).
 
 Use the following PowerShell script to prevent new users from joining a managed tenant. ([Learn more about PowerShell][1].)
 
@@ -93,7 +92,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $false
 > [!NOTE]
 > Blocking access prevents new users in your organization from signing up for Power BI. Users that sign up for Power BI prior to disabling new signups for your organization still retain their licenses. To remove a user, see [How do I remove Power BI for users that already signed up?](#how-do-i-remove-power-bi-for-users-that-already-signed-up) later in this article.
 
-### How can I allow users to join my existing Office 365 tenant?
+### How can I allow users to join my existing Microsoft 365 tenant?
 
 Use the following PowerShell script to let new users join a managed tenant. ([Learn more about PowerShell][1].)
 
@@ -121,7 +120,7 @@ The Azure AD setting that controls this is **AllowAdHocSubscriptions**. Most ten
 
 Use the following PowerShell script to disable ad hoc subscriptions.([Learn more about PowerShell][1].)
 
-1. Sign into Azure Active Directory using your Office 365 credentials. The first line of the following PowerShell script prompts you for your credentials. The second line connects to Azure Active Directory.
+1. Sign into Azure Active Directory using your Microsoft 365 credentials. The first line of the following PowerShell script prompts you for your credentials. The second line connects to Azure Active Directory.
 
     ```powershell
      $msolcred = get-credential
@@ -143,7 +142,7 @@ Use the following PowerShell script to disable ad hoc subscriptions.([Learn more
     ```
 
 > [!NOTE]
-> Use the **AllowAdHocSubscriptions** flag to control several user capabilities in your organization, including the ability for users to sign up for the Azure Rights Management Service. Changing this flag affects all of these capabilities. With a setting of *false*, users can still sign up for a Pro trial.
+> Use the **AllowAdHocSubscriptions** flag to control several user capabilities in your organization, including the ability for users to sign up for the Azure Rights Management Service. Changing this flag affects all of these capabilities. With a setting of *false*, users can still sign up for an individual Power BI Pro trial.
 
 ### How can I allow my existing users to sign up for Power BI?
 
@@ -155,36 +154,34 @@ To allow your existing users to sign up for Power BI, run the command listed for
 
 There are three scenarios that might apply to users in your organization:
 
-* **Scenario 1**: If your organization already has an existing Office 365 environment and all users in your organization have Office 365 accounts, there's no change in how you manage identity.
+* **Scenario 1**: If your organization already has an existing Microsoft 365 environment and all users in your organization have Microsoft 365 accounts, there's no change in how you manage identities.
 
-* **Scenario 2**: If your organization already has an existing Office 365 environment but not all users in your organization have Office 365 accounts, we create a user in the tenant and assign licenses based on the user’s work or school email address.
+* **Scenario 2**: If your organization already has an existing Microsoft 365 environment but not all users in your organization have Microsoft 365 accounts, we create a user in the tenant and assign licenses based on the user’s work or school email address.
 
     As a result, the number of users you're managing at any particular time grows as users in your organization sign up for the service.
 
-* **Scenario 3**: If your organization doesn't have an Office 365 environment connected to your email domain, there's no change in how you manage identity.
+* **Scenario 3**: If your organization doesn't have a Microsoft 365 environment connected to your email domain, there's no change in how you manage identities.
 
-    The service adds users to a new, cloud-only user directory. Also, you can choose to take over as the tenant admin and manage them.
+    The service adds users to a new, cloud-only user directory which you can choose to take over as the Microsoft 365 Global admin and manage them.
 
 ### How do we manage Power BI?
 
-Power BI provides an admin portal that lets you view usage statistics, provides a link to the Microsoft 365 admin center to manage users and groups, and provides the ability to control tenant-wide settings.
-
-To use the Power BI admin portal, you must mark your account as a **Global Admin** within Office 365 or Azure Active Directory, or someone must assign the Power BI service admin role to your user account. For more info, see [Understanding the Power BI admin role](service-admin-role.md) and [Power BI Admin Portal](service-admin-portal.md).
+Power BI provides a Power BI admin portal for users in the Microsoft 365 Global Admin role and users in the Power BI Service admin role. To use the Power BI admin portal, you must mark your account as a **Global Admin** within Microsoft 365 or Azure Active Directory, or someone must assign the Power BI service admin role to your user account. For more info, see [Understanding the Power BI admin role](service-admin-role.md) and [Power BI Admin Portal](service-admin-portal.md). The portal provides the ability to control tenant-wide settings, view Power BI usage statistics and a link to the Microsoft 365 admin center to manage users and groups.
 
 ### What is the process to manage a tenant created by Microsoft for my users?
 
-When a self-service user signs up for a cloud service that uses Azure AD, the service adds them to an unmanaged Azure AD directory based on their email domain. You can claim and manage the tenant that someone created using a process known as an *admin takeover*. For more info, see [Take over an unmanaged directory as administrator in Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover). The type of takeover you do depends on whether there's an existing managed tenant associated with your domain:
+When a self-service user signs up for a cloud service that uses Azure AD, the service adds them to an unmanaged Azure AD directory based on their email domain. You can claim and manage a tenant that someone created using a process known as *admin takeover*. For more info, see [Take over an unmanaged directory as administrator in Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover). The type of takeover you do depends on whether there's an existing managed tenant associated with your domain:
 
 * Power BI supports internal admin takeover. When you perform an _internal_ admin takeover of an unmanaged Azure directory, you are added as the global administrator of the unmanaged directory. No users, domains, or service plans are migrated to any other directory you administer.
 
-* Power BI no longer supports external admin takeover. When you perform an _external_ admin takeover of an unmanaged Azure directory, you add the DNS domain name of the unmanaged directory to your managed Azure directory. When you add the domain name, a mapping of users to resources is created in your managed Azure directory so that users can continue to access services without interruption.
+* Power BI no longer supports external admin takeover. When you perform an _external_ admin takeover of an unmanaged Azure directory, you add the DNS domain name of the unmanaged directory to your managed Azure directory. External takeover will result in a loss of access to all Power BI content on the original unmanaged tenant. Power BI reports will need to be republished to the new tenant and Power BI dashboards and apps will need to be recreated in the new tenant.
 
-### If I have multiple domains, can I control the Office 365 tenant that users get added to?
+### If I have multiple domains, can I control the Microsoft 365 tenant that users get added to?
 
 If you do nothing, the service creates a tenant for each user email domain and subdomain. If you want all users to be in the same tenant regardless of their email address extensions: Create a target tenant ahead of time, or use an existing tenant. Then add all the existing domains and subdomains that you want consolidated within that tenant. Every user with email addresses ending in those domains and subdomains automatically join the target tenant when they sign up.
 
 > [!IMPORTANT]
-> Once you've created users, there's no supported automated mechanism to move users across tenants. To learn about adding domains to a single Office 365 tenant, see [Add your users and domain to Office 365](/office365/admin/setup/add-domain/).
+> Once you've created users, there's no supported automated mechanism to move users across tenants. To learn about adding domains to a single Microsoft 365 tenant, see [Add your users and domain to Office 365](/office365/admin/setup/add-domain/).
 
 ### How do I remove Power BI for users that already signed up?
 
@@ -192,7 +189,7 @@ If a user is signed up for Power BI, but you no longer want them to have access 
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
-1. In the left navigation bar, select **Users** > **Active Users**.
+1. In the nav pane, select **Users** > **Active Users**.
 
 1. Find the user you want to remove the license for, then select their name.
 
@@ -206,11 +203,11 @@ If a user is signed up for Power BI, but you no longer want them to have access 
 
 ### How do I know when new users have joined my tenant?
 
-Users who have joined your tenant as part of this program get assigned a unique license that you can filter on within your active user pane in the admin dashboard. To create this new view, follow these steps.
+Users who have joined your tenant via self-service sign-up get assigned a unique license that you can filter on within your active user pane in the admin dashboard. To create this new view, follow these steps.
 
 1. Navigate to the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
-1. In the left navigation bar, select **Users** > **Active Users**.
+1. In the nav pane, select **Users** > **Active Users**.
 
 1. On the **Views** menu, select **Add custom view**.
 
@@ -234,7 +231,7 @@ For info about which data region your Power BI tenant is in, see [Where is my Po
 
 ### What is the Power BI SLA?
 
-For info about the Power BI SLA (Service Level Agreement), see the [Licensing Terms and Documentation](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) article in the **Licensing** section of the Microsoft Licensing website.
+For info about the Power BI SLA (Service Level Agreement), see the [Licensing Terms and Documentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) article in the **Licensing** section of the Microsoft Licensing website.
 
 ### How does Power BI handle high availability and failover?
 
@@ -248,7 +245,7 @@ To learn more about Power BI compliance, see the [Microsoft Trust Center](https:
 
 ### How does security work in Power BI?
 
-Microsoft built Power BI on the foundation of Office 365, which in turn builds on Azure services like Azure Active Directory. For an overview of Power BI architecture, see [Power BI Security](service-admin-power-bi-security.md).
+Microsoft built Power BI on the foundation of Microsoft 365, which in turn builds on Azure services like Azure Active Directory. For an overview of Power BI architecture, see [Power BI Security](service-admin-power-bi-security.md).
 
 ## Next steps
 
@@ -263,6 +260,6 @@ Microsoft built Power BI on the foundation of Office 365, which in turn builds o
 [Office 365 user account management](/office365/servicedescriptions/office-365-platform-service-description/user-account-management/)  
 [Office 365 group management](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
 [1]: https://docs.microsoft.com/powershell/scripting/overview

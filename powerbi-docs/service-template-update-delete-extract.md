@@ -2,7 +2,6 @@
 title: Update, delete, and extract a Power BI template app
 description: How to update, delete and extract template app.
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -61,7 +60,7 @@ Rolling back to the previous version of a template app is now easier than ever w
 Your new workspace versioning resets and you can continue to develop and distribute the template app from the newly extracted workspace.
 
 ## Delete template app version
-A template app workspace is the source of an active distributed template app. To protect the template app users, it's not possible to delete a workspace without first removing all the created app versions in the workspace.
+A template workspace is the source of an active distributed template app. To protect the template app users, it's not possible to delete a workspace without first removing all the created app versions in the workspace.
 Deleting an app version also deletes the app url that will no longer work.
 
 1. In the release management pane, press select the ellipsis **(...)** and then **Delete**.

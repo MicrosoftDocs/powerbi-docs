@@ -2,7 +2,6 @@
 title: 'Dynamic row level security with Analysis services tabular model in Power BI'
 description: 'Dynamic row level security with Analysis services tabular model'
 author: selvarms
-manager: amitaro
 ms.reviewer: davidi
 editor: davidi
 

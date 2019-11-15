@@ -3,7 +3,6 @@ title: Frequently asked questions about Power BI Embedded
 description: Browse a list of frequently asked questions and answers about Power BI Embedded.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -13,7 +12,7 @@ ms.date: 05/27/2019
 
 # Frequently asked questions about Power BI Embedded
 
-* If you have other questions, [try asking the Power BI Community](http://community.powerbi.com/).
+* If you have other questions, [try asking the Power BI Community](https://community.powerbi.com/).
 * Still have an issue? Visit the [Power BI support page](https://powerbi.microsoft.com/support/).
 
 ## General
@@ -62,7 +61,7 @@ Here is a partial list of feature differences.
 | Feature | Power BI Embedded | Power BI Premium Capacity | Power BI Premium Capacity |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
 |   | A SKUs-Azure capacity | EM SKUs-O365 capacity | P SKUs-O365 capacity |
-| Embed artifacts from a Power BI App workspace | Yes | Yes | Yes |
+| Embed artifacts from a Power BI workspace | Yes | Yes | Yes |
 | Consume Power BI reports in an embedded application - SaaS | No | Yes | Yes |
 | Consume Power BI reports in an embedded application - PaaS | Yes | Yes | Yes |
 | Consume Power BI reports in SharePoint | No | Yes | Yes |
@@ -141,7 +140,7 @@ Yes, there are Powershell cmdlets and Azure Resource Manager REST APIs you can u
 
 ### What is the PBI Embedded dedicated capacity role in a PBI Embedded solution?
 
-To [promote your solution to production](embed-sample-for-customers.md#move-to-production), you need to assign the Power BI content (app workspace) your application uses to a Power BI Embedded (A SKU) capacity.
+To [promote your solution to production](embed-sample-for-customers.md#move-to-production), you need to assign the Power BI content (workspace) your application uses to a Power BI Embedded (A SKU) capacity.
 
 ### In what Azure regions is PBI Embedded available?
 
@@ -357,4 +356,4 @@ You can learn how to edit your Power BI data [here](https://docs.microsoft.com/p
 
 For more information, see [Troubleshooting your embedded application](embedded-troubleshoot.md).
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

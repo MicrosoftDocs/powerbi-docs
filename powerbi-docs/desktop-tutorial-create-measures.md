@@ -2,7 +2,6 @@
 title: 'Tutorial: Create your own measures in Power BI Desktop'
 description: 'Tutorial: Create your own measures in Power BI Desktop'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -19,7 +18,7 @@ You can create some of the most powerful data analysis solutions in Power BI Des
 ### Prerequisites
 - This tutorial is intended for Power BI users already familiar with using Power BI Desktop to create more advanced models. You should already be familiar with using Get Data and Query Editor to import data, working with multiple related tables, and adding fields to the Report Canvas. If you’re new to Power BI Desktop, be sure to check out [Getting Started with Power BI Desktop](desktop-getting-started.md).
   
-- Download the [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) file, which includes online sales data from the fictitious company Contoso, Inc. This data was imported from a database, so you won’t be able to connect to the datasource or view it in Query Editor. Extract the file on your own computer, and then open it in Power BI Desktop.
+- Download the [Contoso Sales Sample for Power BI Desktop](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) file, which includes online sales data from the fictitious company Contoso, Inc. This data was imported from a database, so you won’t be able to connect to the datasource or view it in Query Editor. Extract the file on your own computer, and then open it in Power BI Desktop.
 
 ## Understand measures
 
@@ -56,7 +55,7 @@ When you create your own measure, it's added to the Fields list for the table yo
 
 You want to analyze your net sales by subtracting discounts and returns from total sales amounts. For whatever context exists in your visualization, you need a measure that subtracts the sum of DiscountAmount and ReturnAmount from the sum of SalesAmount. There's no field for Net Sales in the Fields list, but you have the building blocks to create your own measure to calculate net sales. 
 
-1.  Right-click the **Sales** table in the Fields well, or hover over the table and select the **More options** ellipsis (...), and then select **New Measure**. This will save your new measure in the Sales table, where it will be easier to find.
+1.  Right-click the **Sales** table in the Fields well, or hover over the table and select **More options** (...), and then select **New Measure**. This will save your new measure in the Sales table, where it will be easier to find.
     
     ![New measure](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure.png)
     

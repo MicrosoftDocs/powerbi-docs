@@ -2,7 +2,6 @@
 title: Working with visualizations (visuals) as a consumer
 description: Power BI concepts and terminology - visualizations, visuals. What is a Power BI visualization, visual.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -48,7 +47,7 @@ For many of these options, your administrator or the *designer* can disable your
 |[Ask Power BI to look for interesting facts or trends](end-user-insights.md) in the visual's data for you.  These automatically generated visuals are called *insights*.     |    yes     |  for the entire report, not per visual       | no   |
 |[View just one visual at a time using *focus* mode](end-user-focus.md).     | yes        |   yes      | na  |
 |[Look up the last time the visual was refreshed](end-user-fresh.md).     |  yes       |    yes     | na  |
-|[View just one visual at a time, without borders or navigation bars, using *full screen*  or *focus* mode](end-user-focus.md).     |   yes      |  yes       | by default  |
+|[View just one visual at a time, without borders or nav panes, using *full screen*  or *focus* mode](end-user-focus.md).     |   yes      |  yes       | by default  |
 |[Print](end-user-print.md).     |  yes       |   yes      | no  |
 |[Dig into the visual by adding and modifying visual filters.](end-user-report-filter.md)     |    no     |   yes      | no  |
 |Hover over a visual to reveal additional details and tooltips.     |    yes     |   yes      | yes  |

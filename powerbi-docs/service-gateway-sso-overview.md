@@ -1,35 +1,34 @@
 ---
-title: Use single sign-on (SSO) to on-premises data sources
+title: Overview of single sign-on (SSO) for gateways in Power BI
 description: Configure your gateway to enable single sign-on (SSO) from Power BI to on-premises data sources.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 10/10/2019
 LocalizationGroup: Gateways
 ---
 
 # Overview of single sign-on (SSO) for gateways in Power BI
 
-You can get seamless single sign-on connectivity, enabling Power BI reports and dashboards to update in real time from on-premises data, by configuring your on-premises data gateway either with Kerberos constrained delegation or Security Assertion Markup Language (SAML). The on-premises data gateway supports SSO using DirectQuery, which it uses to connect to on-premises data sources.
+You can get seamless single sign-on connectivity, enabling Power BI reports and dashboards to update in real time from on-premises data, by configuring your on-premises data gateway. You have the option of configuring your gateway with either [Kerberos](service-gateway-sso-kerberos.md) constrained delegation or Security Assertion Markup Language ([SAML](service-gateway-sso-saml.md)). The on-premises data gateway supports SSO by using [DirectQuery](desktop-directquery-about.md), which connects to on-premises data sources.
 
-We currently support the following data sources:
+Power BI supports the following data sources:
 
-* SQL Server ([Kerberos](service-gateway-sso-kerberos.md))
-* SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) and [SAML](service-gateway-sso-saml.md))
-* SAP BW Application Server([Kerberos](service-gateway-sso-kerberos.md))
-* SAP BW Message Server([Kerberos](service-gateway-sso-kerberos.md))- Public Preview
-* Oracle([Kerberos](service-gateway-sso-kerberos.md))- Public Preview
-* Teradata ([Kerberos](service-gateway-sso-kerberos.md))
-* Spark ([Kerberos](service-gateway-sso-kerberos.md))
-* Impala ([Kerberos](service-gateway-sso-kerberos.md))
+* SQL Server (Kerberos)
+* SAP HANA (Kerberos and SAML)
+* SAP BW Application Server (Kerberos)
+* SAP BW Message Server (Kerberos) - public preview
+* Oracle (Kerberos) - public preview
+* Teradata (Kerberos)
+* Spark (Kerberos)
+* Impala (Kerberos)
 
-We do not currently support SSO for [M-extensions](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md).
+We don't currently support SSO for [M-extensions](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md).
 
-When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sorting, and report editing operation can result in queries executing live against the underlying on-premises data source. When SSO is configured for the data source, queries execute under the identity of the user interacting with Power BI (that is, through the web experience or Power BI mobile apps). Thereby, each user sees precisely the data for which they have permissions in the underlying data source – with single sign-on configured, there is no shared data caching across different users.
+When a user interacts with a DirectQuery report in the Power BI Service, each cross-filter, slice, sort, and report editing operation can result in queries that execute live against the underlying on-premises data source. When you configure SSO for the data source, queries execute under the identity of the user that interacts with Power BI (that is, through the web experience or Power BI mobile apps). Therefore, each user sees precisely the data for which they have permissions in the underlying data source. With single sign-on configured, there's no shared data caching across different users.
 
 ## Query steps when running SSO
 
@@ -37,21 +36,21 @@ A query that runs with SSO consists of three steps, as shown in the following di
 
 ![SSO query steps](media/service-gateway-sso-overview/sso-query-steps.png)
 
-Here are additional details about those steps:
+Here are additional details about each step:
 
-1. For each query, the **Power BI service** includes the *user principal name* (UPN, i.e. the fully-qualified username of the user currently logged in to Power BI service) when sending a query request to the configured gateway.
+1. For each query, the Power BI service includes the *user principal name (UPN)*, which is the fully qualified username of the user currently signed in to the Power BI service, when it sends a query request to the configured gateway.
 
-2. The gateway needs to map the Azure Active Directory UPN to a local Active Directory identity.
+2. The gateway must map the Azure Active Directory UPN to a local Active Directory identity:
 
-   a.  If Azure AD DirSync (also known as *Azure AD Connect*) is configured, then the mapping works automatically in the gateway.
+   a. If Azure AD DirSync (also known as *Azure AD Connect*) is configured, then the mapping works automatically in the gateway.
 
    b.  Otherwise, the gateway can look up and map the Azure AD UPN to a local AD user by performing a lookup against the local Active Directory domain.
 
-3. The gateway service process impersonates the mapped local user, opens the connection to the underlying database, and sends the query. The gateway does not need to be installed on the same machine as the database.
+3. The gateway service process impersonates the mapped local user, opens the connection to the underlying database, and then sends the query. You don't need to install the gateway on the same machine as the database.
 
 ## Next steps
 
-Now that you understand the basics of SSO through the gateway, read more detailed information about Kerberos and SAML:
+Now that you understand the basics of enabling SSO through the gateway, read more detailed information about Kerberos and SAML:
 
 * [Single sign-on (SSO) - Kerberos](service-gateway-sso-kerberos.md)
 * [Single sign-on (SSO) - SAML](service-gateway-sso-saml.md)

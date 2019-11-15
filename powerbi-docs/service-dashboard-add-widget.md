@@ -2,7 +2,6 @@
 title: Add images, videos, and more to your dashboard
 description: Documentation on how to use the Add tile widget to add an image, video, text box, web code, and streaming data tile to a dashboard.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: e2PD8m1Q0vU
 
@@ -228,7 +227,7 @@ You can paste or type in any HTML content, as a tile, to your report or dashboar
 ## Edit a tile
 To make changes to an existing tile:
 
-1. Hover over the top-right corner of the tile and select the ellipsis (...).
+1. Hover over the top-right corner of the tile and select **More options** (...).
    
     ![select tile ellipses](media/service-dashboard-add-widget/pbi_ellipses.png)
 2. Select **Edit details** to display the **Tile details** window and make changes.
@@ -242,5 +241,5 @@ To make changes to an existing tile:
 ## Next steps
 [Intro to dashboard tiles for Power BI designers](service-dashboard-tiles.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/).
+More questions? [Try the Power BI Community](https://community.powerbi.com/).
 

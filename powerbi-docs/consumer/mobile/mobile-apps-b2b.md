@@ -2,7 +2,6 @@
 title: View Power BI content as an external guest user (Azure AD B2B)
 description: Use Power BI mobile apps to view content shared with you from external organization.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

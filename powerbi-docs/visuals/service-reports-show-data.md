@@ -2,13 +2,12 @@
 title: Show the data that was used to create the Power BI visualization
 description: This document explains how to show the data used to create a visual in Power BI and how to export that data to a .csv file.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/26/2018
+ms.date: 11/4/2019
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -24,17 +23,20 @@ You can also export the data that is being used to create the visualization as a
 > 
 > 
 
-## Using *Show Data* in Power BI service
-1. In Power BI service, open a report in [Reading view or Editing view](../service-interact-with-a-report-in-editing-view.md), and select a visual.  In Power BI Desktop, open Report view.
-2. To display the data behind the visual, select **Explore** > **Show data**.
-   
-   ![select Show Data](media/service-reports-show-data/power-bi-show-data.png)
+## Using *Show Data* 
+1. In Power BI Desktop, select a visualization to make it active.
+
+2. Select **More actions** (...) and choose **Show data**. 
+    ![display option for Show Data](media/service-reports-show-data/power-bi-more-action.png)
+
+
 3. By default, the data displays below the visual.
    
-   ![visual and data vertical display](media/service-reports-show-data/power-bi-explore-show-data.png)
-4. To change the orientation, select vertical layout ![](media/service-reports-show-data/power-bi-vertical-icon-new.png) from the top-right corner of the visualization.
+   ![visual and data vertical display](media/service-reports-show-data/power-bi-show-data-below.png)
+
+4. To change the orientation, select vertical layout ![small screenshot of icon used to change to vertical layout](media/service-reports-show-data/power-bi-vertical-icon-new.png) from the top-right corner of the visualization.
    
-   ![visual and data horizontal display](media/service-reports-show-data/power-bi-explore-show-data2.png)
+   ![visual and data horizontal display](media/service-reports-show-data/power-bi-show-data-side.png)
 5. To export the data to a .csv file, select the ellipses and choose **Export data**.
    
     ![select Export data](media/service-reports-show-data/power-bi-export-data-new.png)
@@ -42,9 +44,30 @@ You can also export the data that is being used to create the visualization as a
     For more information on exporting the data to Excel, see [Export data from Power BI visualizations](power-bi-visualization-export-data.md).
 6. To hide the data, de-select **Explore** > **show data**.
 
+## Using Show records
+You can also focus on one data record in a visualization, and drill into the data behind it. 
+
+1. To use **See records**, select a visualization to make it active. 
+
+2. In the Desktop ribbon, select the tab for **Visual tools** > **Data/Drill** > **See records**. 
+
+    ![Screenshot with See Records selected.](media/service-reports-show-data/power-bi-see-record.png)
+
+3. Select a data point or row on the visualization. In this example, we've selected the fourth column from the left. Power BI shows us the dataset record for this data point.
+
+    ![Screenshot of single record from dataset.](media/service-reports-show-data/power-bi-row.png)
+
+4. Select **Back to report** to return to the Desktop report canvas. 
+
+## Considerations and troubleshooting
+
+- If the **See records** button in the ribbon is disabled and grayed-out, it means the selected visualization does not support See Records.
+- You can't change the data in the See Records view and save it back to the report.
+- You can't use See Records when your visual uses a calculated measure.
+- You can't use See Records when you are connected to a live multidimensional (MD) model.  
+
 ## Next steps
 [Export data from Power BI visualizations](power-bi-visualization-export-data.md)    
-[Visualizations in Power BI reports](power-bi-report-visualizations.md)    
-[Power BI reports](../consumer/end-user-reports.md)    
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

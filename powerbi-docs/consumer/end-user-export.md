@@ -2,14 +2,13 @@
 title: Export data from a Power BI visual
 description: Export data from a report visual and dashboard visual and view it in Excel.
 author: mihart
-manager: kvivek
 ms.reviewer: 'cmfinlan'
 featuredvideoid: jtlLGRKBvXY
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/11/2019
+ms.date: 10/30/2019
 ms.author: mihart
 
 LocalizationGroup: Consumers
@@ -22,11 +21,11 @@ If you'd like to see the data that is used to create a visual, [you can display 
 
 ## From a visual on a Power BI dashboard
 
-1. Start on a Power BI dashboard. Here we're using the dashboard from the ***Marketing and sales sample*** app. You can [download this app from AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282).
+1. Start on a Power BI dashboard. Here we're using the dashboard from the ***Marketing and sales sample*** app. You can [download this app from AppSource.com](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282).
 
     ![App dashboard](media/end-user-export/power-bi-dashboards.png)
 
-2. Hover over a visual to reveal the ellipses (...) and click to display the action menu.
+2. Hover over a visual to reveal **More options** (...) and click to display the action menu.
 
     ![Menu that appears when select ellipses](media/end-user-export/power-bi-action-menu.png)
 

@@ -3,10 +3,8 @@ title: Adding formatting options to a Power BI custom visual
 description: A tutorial on how to develop Power BI custom visual format options 
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ""
 ms.service: powerbi
-ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/21/2018

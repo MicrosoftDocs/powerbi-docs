@@ -2,7 +2,6 @@
 title: "The 'new look' of the Power BI service"
 description: The Power BI service (app.powerbi.com) has a new look. This article describes how to navigate reports using the new look. 
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -63,7 +62,7 @@ We didn't remove any of the functionality from the old look. You can find the ad
 
 ### Where are File menu actions?
 
-Looking for **File** menu actions? The actions that used to be on the **File** menu are also on the ellipsis (...) menu now. 
+Looking for **File** menu actions? The actions that used to be on the **File** menu are also on the **More options** (...) menu. 
 
 ![File menu in new look](media/service-new-look/power-bi-file-menu-new-look.gif)
 

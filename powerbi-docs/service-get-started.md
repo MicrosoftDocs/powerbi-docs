@@ -2,7 +2,6 @@
 title: Get started with the Power BI service
 description: Get started with the Power BI online service (app.powerbi.com)
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -16,7 +15,7 @@ LocalizationGroup: Get started
 
 ---
 # Tutorial: Get started with the Power BI service
-This tutorial is an introduction to some of the features of the *Power BI service*. In it, you connect to data, create a report and a dashboard, and ask questions of your data. You can do much more in the Power BI service; this tutorial is just to whet your appetite. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](power-bi-overview.md).
+This tutorial is an introduction to some of the features of the *Power BI service*. In it, you connect to data, create a report and a dashboard, and ask questions of your data. You can do much more in the Power BI service; this tutorial is just to whet your appetite. For an understanding of how the Power BI service fits in with the other Power BI offerings, we recommend reading [What is Power BI](fundamentals/power-bi-overview.md).
 
 ![Power BI service home](media/service-get-started/power-bi-service-get-started-home.png)
 
@@ -33,7 +32,7 @@ In this tutorial, you complete the following steps:
 > * Clean up resources by deleting the dataset, report, and dashboard.
 
 > [!TIP]
-> Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](http://aka.ms/edxpbi).
+> Prefer a free self-paced training course instead? [Enroll in our Analyzing and Visualizing Data course on EdX](https://aka.ms/edxpbi).
 
 ## Sign up for the Power BI service
 If you don't have a Power BI account, [sign up for a free Power BI Pro trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
@@ -44,10 +43,10 @@ After you have an account, enter *app.powerbi.com* in your browser to open the P
 
 Often when you want to create a Power BI report, you start in Power BI Desktop. This time, we're going to start from scratch creating a report in the Power BI service.
 
-In this tutorial, we get data from a CSV file. Want to follow along? [Download the Financial Sample CSV file](http://go.microsoft.com/fwlink/?LinkID=521962).
+In this tutorial, we get data from a CSV file. Want to follow along? [Download the Financial Sample CSV file](https://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. [Sign in to Power BI](http://www.powerbi.com/). Don’t have an account? No worries, you can sign up for a free trial.
-2. Power BI opens in your browser. Select **Get data** at the bottom of the left navigation bar.
+1. [Sign in to Power BI](https://www.powerbi.com/). Don’t have an account? No worries, you can sign up for a free trial.
+2. Power BI opens in your browser. Select **Get data** at the bottom of the nav pane.
 
     The **Get Data** page opens.   
 
@@ -71,7 +70,7 @@ In this tutorial, we get data from a CSV file. Want to follow along? [Download t
 
     ![Blank report canvas](media/service-get-started/power-bi-service-blank-report.png)
 
-7. Notice there's an option for **Reading view** on the top navigation bar. Because you have this option, that means you're currently in Editing view. A great way to get familiar with the report editor is to [take a tour](service-the-report-editor-take-a-tour.md).
+7. Notice there's an option for **Reading view** on the top nav pane. Because you have this option, that means you're currently in Editing view. A great way to get familiar with the report editor is to [take a tour](service-the-report-editor-take-a-tour.md).
 
     ![Reading view option](media/service-get-started/power-bi-service-reading-view.png)
 
@@ -113,13 +112,13 @@ Now that you've connected to data, start exploring.  When you've found something
    
 8. Select the new tile on your dashboard to return to the report. Power BI returns you to the report in Reading view. 
 
-1. To switch back to Editing view, select the ellipsis (...) in the top navigation bar > **Edit**. Back in Editing view, you can continue to explore and pin tiles.
+1. To switch back to Editing view, select **More options** (...) in the top nav pane > **Edit**. Back in Editing view, you can continue to explore and pin tiles.
 
     ![Select Edit to edit the report](media/service-get-started/power-bi-service-edit-report.png)
 
 ## Step 3: Explore with Q&A
 
-For a quick exploration of your data, try asking a question in the Q&A question box. Q&A creates natural-language queries about your data. In a dashboard, the Q&A box is at the top (**Ask a question about your data**). In a report, it's in the top navigation bar (**Ask a question**).
+For a quick exploration of your data, try asking a question in the Q&A question box. Q&A creates natural-language queries about your data. In a dashboard, the Q&A box is at the top (**Ask a question about your data**). In a report, it's in the top nav pane (**Ask a question**).
 
 1. To go back to the dashboard, select **My workspace** in the black **Power BI** bar.
 
@@ -196,9 +195,9 @@ Here's one last interaction to observe, before you start making your own dashboa
 ## Clean up resources
 Now that you've finished the tutorial, you can delete the dataset, report, and dashboard. 
 
-1. In the left navigation bar, make sure you're in **My Workspace**.
+1. In the nav pane, make sure you're in **My Workspace**.
 2. Select the **Datasets** tab and locate the dataset you imported for this tutorial.  
-3. Select the ellipsis (...) > **Delete**.
+3. Select **More options** (...) > **Delete**.
 
     ![Delete the dataset](media/service-get-started/power-bi-service-delete-dataset.png)
 

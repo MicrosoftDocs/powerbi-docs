@@ -2,7 +2,6 @@
 title: Create the new workspaces - Power BI
 description: Learn how to create the new workspaces, collections of dashboards, reports, and paginated reports built to deliver key metrics for your organization.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -69,7 +68,7 @@ You can specify which users receive notification about issues occurring in the w
 
     In the **Create a workspace** pane when you first create it.
 
-    In the left navigation pane, select the arrow next to **Workspaces**, select the ellipsis (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
+    In the nav pane, select the arrow next to **Workspaces**, select **More options** (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
 
     ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -89,7 +88,7 @@ Power BI doesn't synchronize permissions of users or groups who are configured t
 
     In the **Create a workspace** pane when you first create it.
 
-    In the left navigation pane, select the arrow next to **Workspaces**, select the ellipsis (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
+    In the nav pane, select the arrow next to **Workspaces**, select **More options** (...) next to the workspace name > **Workspace settings**. The **Settings** pane opens.
 
     ![Workspace settings](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -103,7 +102,7 @@ Power BI doesn't synchronize permissions of users or groups who are configured t
 
 After you've configured the OneDrive location, you get to it in the same way you get to other data sources in the Power BI service.
 
-1. In the left navigation pane, select **Get Data**, then in the **Files** box select **Get**.
+1. In the nav pane, select **Get Data**, then in the **Files** box select **Get**.
 
     ![Get data, get files](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
@@ -140,4 +139,4 @@ Read about [publishing an app from the new workspaces](service-create-distribute
 * Read about [organizing work in the new workspaces experience in Power BI](service-new-workspaces.md)
 * [Create classic workspaces](service-create-workspaces.md)
 * [Publish an app from the new workspaces in Power BI](service-create-distribute-apps.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

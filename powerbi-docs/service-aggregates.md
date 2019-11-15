@@ -2,7 +2,6 @@
 title: Work with aggregates (sum, average, and so on) in the Power BI service
 description: Learn how to change the aggregation in a chart (sum, average, maximum, and so on.) in the Power BI service.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -45,7 +44,7 @@ Working with aggregates in Power BI service can be confusing. Maybe you have a n
 
 Typically, the underlying issue is the field definition in the dataset. Maybe the dataset owner defined the field as text and that explains why Power BI can't sum or average it. Unfortunately, [only the dataset owner can change the way a field is categorized](desktop-measures.md). So if you have owner permissions to the dataset, either in Desktop or the program used to create the dataset (for example, Excel), you can fix this problem. Otherwise, you'll need to contact the dataset owner for help.  
 
-There is a special section at the end of this article called [**Considerations and troubleshooting**](#considerations-and-troubleshooting). It provides tips and guidance. If you don't find your answer there, post your question on the [Power BI Community forum](http://community.powerbi.com). You'll get a quick response directly from the Power BI team.
+There is a special section at the end of this article called [**Considerations and troubleshooting**](#considerations-and-troubleshooting). It provides tips and guidance. If you don't find your answer there, post your question on the [Power BI Community forum](https://community.powerbi.com). You'll get a quick response directly from the Power BI team.
 
 ## Change how a numeric field is aggregated
 
@@ -183,4 +182,4 @@ Q:  I don't see **Do not summarize** as an option in my drop-down list.
 
 A:  Try removing the field and adding it back in.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

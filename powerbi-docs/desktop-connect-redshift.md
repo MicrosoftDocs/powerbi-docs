@@ -2,7 +2,6 @@
 title: Connect to an Amazon Redshift database in Power BI Desktop
 description: Easily connect to and use an Amazon Redshift database in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

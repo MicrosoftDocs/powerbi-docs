@@ -2,7 +2,6 @@
 title: Troubleshooting Sign-in issues in Power BI Desktop
 description: Solutions to common issues for signing in to Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
