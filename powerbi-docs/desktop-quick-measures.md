@@ -96,11 +96,11 @@ When you select **OK**, several interesting things happen.
    
 2. The DAX formula for the new quick measure appears in the formula bar. See the [next section](#learn-dax-by-using-quick-measures) for more about the DAX formula.
    
-3. The new measure appears selected and highlighted in the **Fields** pane. 
-   
-   This measure is available to any visual in the report, not just the visual you created it for. The following image shows a quick column chart visual created by using the new quick measure field.
-   
-   ![New bar chart visual based on the quick measure field](media/desktop-quick-measures/quick-measures_09.png)
+3. The new quick measure appears selected and highlighted in the **Fields** pane. 
+
+The new quick measure is available to any visual in the report, not just the visual you created it for. The following image shows a quick column chart visual created by using the new quick measure field.
+
+![New bar chart visual based on the quick measure field](media/desktop-quick-measures/quick-measures_09.png)
 
 ## Learn DAX by using quick measures
 A great advantage of quick measures is that they show you the DAX formula that implements the measure. When you select a quick measure in the **Fields** pane, the **Formula bar** appears, showing the DAX formula that Power BI created to implement the measure.
