@@ -82,7 +82,7 @@ Watch recorded sessions at any time
 
 ### Getting Started
 
-**Automate Day-to-Day Business Processes with Power BI, PowerApps, and Microsoft Flow**
+**Automate Day-to-Day Business Processes with Power BI, PowerApps, and Power Automate**
 <br>by Wim Coorevits and Enrique Plaza Garcia
 <br>[Register and watch now](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
 
@@ -102,7 +102,7 @@ Watch recorded sessions at any time
 <br>by Charles Sterling
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
 
-**The Total Economic Impact of Microsoft Flow and PowerApps**
+**The Total Economic Impact of Power Automate and PowerApps**
 <br>by Jonathan Lipsitz and Enrique Plaza Garcia
 <br>[Register and watch now](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 
