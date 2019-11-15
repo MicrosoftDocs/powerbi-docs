@@ -1,11 +1,10 @@
 ### YamlMime:Landing
 
 title: Power BI guidance documentation
-summary: Power BI guidance documentation
-
+summary: "Power BI guidance documentation provides best practice information from the team that builds Power BI and the folks that work with our enterprise customers. Here you’ll find learnings to improve performance and success with Power BI. We’ll update and add to them as new information is available"
 metadata:
   title: Power BI guidance documentation
-  description: Power BI guidance documentation
+  description: "Power BI guidance documentation provides best practice information from the team that builds Power BI and the folks that work with our enterprise customers. Here you’ll find learnings to improve performance and success with Power BI. We’ll update and add to them as new information is available.  
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi
@@ -13,7 +12,7 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 10/04/2019
+  ms.date: 11/14/2019
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
