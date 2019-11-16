@@ -186,7 +186,7 @@ When you switch back to a classic workspace, you aren't restoring an exact copy 
 - In-progress operations like refreshes aren't impacted by workspace upgrade.
 
 
-## How to manage a migration for your tenant from classic workspaces to the new workspace experience
+## Manage migration to the new workspaces for your tenant 
 
 Some organizations desire to move many or all workspaces to the new workspace experience. The workspace upgrade tooling focuses on enabling workspace admins to upgrade. For organizations wanting to manage such a process, they can take the following steps.
 

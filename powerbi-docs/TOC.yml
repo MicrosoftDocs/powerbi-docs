@@ -477,6 +477,10 @@
         href: service-the-report-editor-take-a-tour.md
       - name: "Power BI data sources"
         href: service-get-data.md
+      - name: "Understand Power BI datasets"
+        href: service-datasets-understand.md
+      - name: "Understand Power BI dataset modes"
+        href: service-dataset-modes-understand.md
       - name: "Data refresh in Power BI"
         href: refresh-data.md
     - name: Collaborate in Power BI
@@ -509,7 +513,7 @@
         href: service-interruption-notifications.md
     - name: Extend Power BI
       items:         
-      - name: "Microsoft Flow and Power BI"
+      - name: "Power Automate and Power BI"
         href: service-flow-integration.md
       - name: "Use third-party apps"
         href: service-power-bi-get-started-third-party-apps.md
