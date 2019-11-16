@@ -1,4 +1,14 @@
-#  Snowflake  configuration
+#  Connecting to Snowflake in Power BI Service
+
+## Introduction
+
+Connecting to Snowflake in the Power BI service only differs from other connectors in one way, which is that an additional capability is offered for SSO. Different parts of the integration require different administrative roles across Snowflake, Power BI, and Azure.
+
+* If you are the Snowflake admin, look at the 'Snowflake configuration' section.
+* If you are a Power BI admin, look at the 'Power BI Service configuration - Admin Portal' section
+* If you are a Power BI dataset creator, look at the 'Power BI Service configuration - Enabling a dataset' section
+
+## Snowflake Configuration
 
 To enable  Snowflake  integration with Power BI AAD SSO, a user with  Snowflake  admin privileges for the account needs to run the following security integration in  Snowflake.
 
@@ -27,11 +37,9 @@ The DEFAULT_ROLE user attribute of the user is what will be applied to the user 
 
 Note: Some users with the highly privileged roles of Account Admin or Security Admin may not be able to use this integration. To fix this, please contact  Snowflake  support.
 
-# Power BI Service configuration
+## Power BI Service configuration
 
-## Introduction
-
-## Admin Portal
+### Admin Portal
 
 The tenant admin is required to go to the Admin Portal and approve sending Power BI AAD credentials to  Snowflake  for AAD SSO to work.
 
@@ -43,7 +51,7 @@ As warned, you have to manually enable this to consent to sending your AAD token
 
 Once this is done you will be able to use reports with SSO.
 
-## Enabling a dataset
+### Enabling a dataset
 
 Use the URL feature flag ?snowflakeSSO=true to enable the SSO feature.
 
