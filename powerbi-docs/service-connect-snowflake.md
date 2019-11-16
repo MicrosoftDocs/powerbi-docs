@@ -35,7 +35,7 @@ Note: Some users with the highly privileged roles of Account Admin or Security A
 
 The tenant admin is required to go to the Admin Portal and approve sending Power BI AAD credentials to  Snowflake  for AAD SSO to work.
 
-<--Screenshot here-->
+![Tenant admin setting for Snowflake SSO](media/service-connect-snowflake/snowflakessotenant.png)
 
 Navigate to your "Admin Portal", select the "Tenant Settings" sidebar item, scroll down to "Integration Settings" and you will see an option for "Snowflake  SSO".
 
