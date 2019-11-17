@@ -7,7 +7,7 @@ ms.service: powerbi
 ms.author: maggies
 author: maggiesMSFT
 ms.topic: hub-page
-ms:date: 06/10/2019
+ms:date: 11/14/2019
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -97,7 +97,7 @@ ms:date: 06/10/2019
                                 </a>
                             </li>
                             <li>
-                                <a href="guidance/overview.md">
+                                <a href="guidance/index.yml">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

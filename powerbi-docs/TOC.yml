@@ -477,6 +477,10 @@
         href: service-the-report-editor-take-a-tour.md
       - name: "Power BI data sources"
         href: service-get-data.md
+      - name: "Understand Power BI datasets"
+        href: service-datasets-understand.md
+      - name: "Understand Power BI dataset modes"
+        href: service-dataset-modes-understand.md
       - name: "Data refresh in Power BI"
         href: refresh-data.md
     - name: Collaborate in Power BI
@@ -509,7 +513,7 @@
         href: service-interruption-notifications.md
     - name: Extend Power BI
       items:         
-      - name: "Microsoft Flow and Power BI"
+      - name: "Power Automate and Power BI"
         href: service-flow-integration.md
       - name: "Use third-party apps"
         href: service-power-bi-get-started-third-party-apps.md
@@ -1125,31 +1129,3 @@
     items:
     - name: "Monthly gateway updates"
       href: "/data-integration/gateway/service-gateway-monthly-updates"
-- name: Guidance
-  items:
-  - name: "Overview"
-    href: guidance/overview.md       
-  - name: "What is a star schema?"
-    href: guidance/star-schema.md
-  - name: "Reduce data model size"
-    href: guidance/import-modeling-data-reduction.md
-  - name: "DIVIDE function vs divide operator (/)"
-    href: guidance/dax-divide-function-operator.md
-  - name: "The importance of query folding"
-    href: guidance/power-query-folding.md
-  - name: "Appropriate use of error functions"
-    href: guidance/dax-error-functions.md
-  - name: "Best practices for dataflows"
-    href: service-dataflows-best-practices.md  
-  - name: "DirectQuery model guidance in Power BI Desktop"
-    href: guidance/directquery-model-guidance.md  
-  - name: Whitepapers
-    items: 
-    - name: "Whitepapers overview"
-      href: whitepapers.md
-    - name: "Power BI security whitepaper"
-      href: whitepaper-powerbi-security.md
-    - name: "Power BI premium deployment"
-      href: whitepaper-powerbi-premium-deployment.md
-    - name: "Distribute Power BI externally using Azure Active Directory B2B"
-      href: whitepaper-azure-b2b-power-bi.md
