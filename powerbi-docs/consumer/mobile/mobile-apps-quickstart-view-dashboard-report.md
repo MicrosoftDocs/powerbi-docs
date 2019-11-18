@@ -59,7 +59,7 @@ The first step in the quickstart is to download the Retail Analysis sample in th
    
    ![Retail Analysis Sample dashboard](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-service-opportunity-sample.png)
 
-OK, you're ready to view the sample on your Android device.
+You're now ready to view the sample on your Android device.
 
 ## View a dashboard on your Android device
 1. On your Android device, open the Power BI app and sign in with your Power BI account credentials, the same ones you used in the Power BI service in the browser.
@@ -72,13 +72,16 @@ OK, you're ready to view the sample on your Android device.
 
     ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-myworkspaces.png)
 
-3. In My Workspace, you can see lists of your dashboards and reports. A notation below a dashboard name ("MBI" in this case) shows how the data in that dashboard is classified. Read more about [data classification in Power BI](../../service-data-classification.md).
+    In My Workspace, you can see lists of your dashboards and reports.
 
     ![Dashboards in My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-open-retail.png)
    
+    A notation below the dashboard names shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../service-data-classification.md).
+    
+1. Tap the Retail Analysis Sample dashboard to open it.
 
-    Tap the Retail Analysis Sample dashboard to open it.
- 
+    ![Dashboards in My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-dashboard.png)
+   
     Power BI dashboards look a little different on your Android phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
 4. Tap the star icon ![Favorite star icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-favorite-icon.png) in the title bar to make this a favorite dashboard.
