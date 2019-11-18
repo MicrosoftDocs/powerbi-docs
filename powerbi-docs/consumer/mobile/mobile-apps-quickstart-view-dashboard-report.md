@@ -64,17 +64,19 @@ OK, you're ready to view the sample on your Android device.
 ## View a dashboard on your Android device
 1. On your Android device, open the Power BI app and sign in with your Power BI account credentials, the same ones you used in the Power BI service in the browser.
 
-1.  Tap the global navigation button ![Global navigation button](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-iphone-global-nav-button.png).
-
-2.  Tap **Workspaces** > **My Workspace**
+1.  When the app opens, tap the **Workspaces** icon at the bottom of the home screen.
 
     ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-workspaces.png)
+
+1.  On the Workspaces page, tap **MyWorkspace**.
+
+    ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-myworkspaces.png)
 
 3. Tap the Retail Analysis Sample dashboard to open it.
  
     ![Dashboards in My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-open-retail.png)
    
-    A notation below the dashboard name (in this case, the letter "C") shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../service-data-classification.md).
+    A notation below the dashboard name (in this case, the letter "MBI") shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../service-data-classification.md).
 
     Power BI dashboards look a little different on your Android phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
