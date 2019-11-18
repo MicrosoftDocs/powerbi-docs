@@ -68,7 +68,7 @@ You're now ready to view the sample on your Android device.
 
     ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-workspaces.png)
 
-1.  On the Workspaces page, tap **MyWorkspace**.
+1.  On the Workspaces page, tap **My Workspace**.
 
     ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-myworkspaces.png)
 
@@ -111,7 +111,7 @@ You're now ready to view the sample on your Android device.
     ![Tap the pencil](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil.png)
 
 
-1. Scroll down the list select **Annotate**.
+1. Scroll down the list and select **Annotate**.
 
     ![Tap the pencil](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil2.png)
 
@@ -141,7 +141,7 @@ After you finish this quickstart, you can delete the Retail Analysis sample dash
 
     ![Select the Delete icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail.png)
 
-    Do the same for the Retail Analysis Sample's report and datasetgit .
+    Do the same for the Retail Analysis Sample's report and dataset.
 
 
 ## Next steps
