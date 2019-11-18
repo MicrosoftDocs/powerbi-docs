@@ -1,14 +1,14 @@
 ---
 title: 'Quickstart: Explore dashboards and reports in the mobile apps'
 description: In this quickstart, you explore a sample dashboard and report in the Power BI mobile apps.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 04/18/2019
-ms.author: mshenhav
+ms.author: painbar
 #customer intent: As a Power BI end user, I want to explore dashboard and report capabilities in the mobile apps so I know what's possible.
 ---
 # Quickstart: Explore dashboards and reports in the Power BI mobile apps
@@ -49,8 +49,8 @@ The first step in the quickstart is to download the Retail Analysis sample in th
 
 4. Select the **Retail Analysis sample**.
  
-    ![Retail Analysis Sample](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-rs.png)
- 
+    ![Retail Analysis Sample](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-rs.png)  
+    
 8. Select **Connect**.  
   
    ![Retail Analysis Sample - Connect](./media/mobile-apps-quickstart-view-dashboard-report/retail16.png)
@@ -64,11 +64,11 @@ You're now ready to view the sample on your Android device.
 ## View a dashboard on your Android device
 1. On your Android device, open the Power BI app and sign in with your Power BI account credentials, the same ones you used in the Power BI service in the browser.
 
-1.  When the app opens, tap the **Workspaces** icon at the bottom of the home screen.
+2.  When the app opens, tap the **Workspaces** icon at the bottom of the home screen.
 
     ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-workspaces.png)
 
-1.  On the Workspaces page, tap **My Workspace**.
+3.  On the Workspaces page, tap **My Workspace**.
 
     ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-myworkspaces.png)
 
@@ -78,17 +78,17 @@ You're now ready to view the sample on your Android device.
    
     A notation below the dashboard names shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../service-data-classification.md).
     
-1. Tap the Retail Analysis Sample dashboard to open it.
+4. Tap the Retail Analysis Sample dashboard to open it.
 
     ![Dashboards in My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-dashboard.png)
    
     Power BI dashboards look a little different on your Android phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
-4. Tap the star icon ![Favorite star icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-favorite-icon.png) in the title bar to make this a favorite dashboard.
+5. Tap the star icon ![Favorite star icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-favorite-icon.png) in the title bar to make this a favorite dashboard.
 
     When you make a favorite in the mobile app, it's a favorite in the Power BI service, and vice versa.
 
-4. Scroll down and tap the "This Year's Sales, Last Year's Sales" filled line chart.
+6. Scroll down and tap the "This Year's Sales, Last Year's Sales" filled line chart.
 
     ![Tap a tile to go to focus mode](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-tile-fave.png)
 
@@ -111,17 +111,17 @@ You're now ready to view the sample on your Android device.
     ![Tap the pencil](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil.png)
 
 
-1. Scroll down the list and select **Annotate**.
+11. Scroll down the list and select **Annotate**.
 
     ![Tap the pencil](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil2.png)
 
-11. On the annotate toolbar, tap the smiley-face icon and and then tap the report page where you'd like to add some smiley faces.
+12. On the annotate toolbar, tap the smiley-face icon and and then tap the report page where you'd like to add some smiley faces.
  
     ![Annotate the page](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-annotate.png)
 
-12. Now tap **Share** in the upper-right corner.
+13. Now tap **Share** in the upper-right corner.
 
-1. Choose the way you'd like to share the report.  
+14. Choose the way you'd like to share the report.  
 
     ![New email message with snapshot and link](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-send-snapshot.png)
 
