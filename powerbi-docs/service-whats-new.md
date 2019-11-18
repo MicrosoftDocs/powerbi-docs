@@ -26,7 +26,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
 ### October 2019
-* New Microsoft Flow action to refresh Power BI datasets.
+* New Power Automate action to refresh Power BI datasets.
 * [Contact list](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) for reports and dashboards in the Power BI service.
 
 ## Previous months (2019)
@@ -149,7 +149,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 ### February 2018
 * Automatically install [Power BI Apps](service-create-distribute-apps.md) for end users.
 * P4 and P5 capacities on Power BI Premium
-* Preview of [Organizational custom visuals](power-bi-custom-visuals-organization.md).
+* Preview of [Organizational custom visuals](developer/power-bi-custom-visuals-organization.md).
 
 ### January 2018
 *	Share and favorite Power BI reports.
@@ -223,7 +223,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [Power BI audit logs ](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#auditlogs) in the Office 365 auditing portal are globally available.
 * Version 1.4 of [developer tools and custom visuals APIs](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) released.
 * [Real-time streaming feature set](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) released to general availability.
-* [Push data to Power BI using Microsoft Flow](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) without writing a line of code.
+* [Push data to Power BI using Power Automate](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) without writing a line of code.
 * Preview: [Subscribe to report pages](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) to stay on top of your data.
 * Use the Azure AD Content Pack to learn more about how your employees and partners are using Azure AD.
 
@@ -319,7 +319,6 @@ For all the details, [visit the Power BI Team blog](https://powerbi.microsoft.co
 
 ***Enterprise***
 
-* [ExpressRoute](service-admin-power-bi-expressroute.md): use to establish a private, managed connection to Power BI.
 * [Content pack support for RLS](service-admin-rls.md) (Preview): If RLS is defined for those dashboards and reports that are distributed as part of a content pack, then the security rules will be respected for those content packs.
 
 ***Dashboards***
