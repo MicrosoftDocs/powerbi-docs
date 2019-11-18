@@ -141,7 +141,7 @@ After you finish this quickstart, you can delete the Retail Analysis sample dash
 
     ![Select the Delete icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail.png)
 
-    Do the same for the Retail Analysis Sample's report and dataset.
+    Do the same for the Retail Analysis Sample's report and datasetgit .
 
 
 ## Next steps
