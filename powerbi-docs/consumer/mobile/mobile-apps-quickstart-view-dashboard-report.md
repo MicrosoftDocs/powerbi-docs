@@ -39,15 +39,7 @@ The first step in the quickstart is to download the Retail Analysis sample in th
 
 1. Open the Power BI service in your browser (app.powerbi.com) and sign in.
 
-1. Select the global navigation icon to open the nav pane if it's not already visible.
-
-    ![global navigation icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-global-nav-icon.png)
-
-2. In the nav pane, select **Workspaces** > **My Workspace**.
-
-    ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-my-workspace.png)
-
-3. In the lower-left corner select **Get data**.
+2. Select **Get data** in the lower-left corner of the navigation pane. If the navigation pane is hidden and you can't see the Get data link, display the pane by clicking the show/hide navigation pane icon.  
    
     ![Get Data](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-get-data.png)
 
