@@ -116,7 +116,7 @@ ms:date: 11/14/2019
                                 </a>
                             </li>
                             <li>
-                                <a href="guided-learning/index.md">
+                                <a href="guided-learning/index.yml">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
