@@ -41,7 +41,7 @@ An ArcGIS map for Power BI visual can have several different types of layers of 
 
 ### Base maps
 
-Each ArcGIS for Power BI visual starts with a base map. Think of this as the canvas for the data. A base map might be a basic dark or light canvas,
+Each ArcGIS for Power BI visual starts with a base map. Think of base maps as the canvas for the data. A base map might be a basic dark or light canvas,
 
 ![dark grey base map](media/power-bi-visualizations-arcgis/power-bi-basemap-dark.png) 
 
@@ -67,14 +67,14 @@ A report designer can add many infographics layers. Infographics are quick visua
 
 ### Pins
 
-Pns represent precise locations, like a city or address. Sometimes report *designers* use pins with drive time radius. This example shows stores within a 50-mile radius of Charlotte, North Carolina.
+Pins represent precise locations, like a city or address. Sometimes report *designers* use pins with drive time radius. This example shows stores within a 50-mile radius of Charlotte, North Carolina.
 
 
 ![Drive time around Charlotte, NC](media/power-bi-visualizations-arcgis/power-bi-drive-times.png) 
 
 
 ## Interact with an ArcGIS Maps for Power BI visual
-The features available to you depend on how the report was shared with you and your Power BI account type. Check with your system administrator if you have questions. ArcGIS maps for Power BI visuals behave much like other visuals in a report. You'll be able to [show the data used to create the visualization](../consumer/end-user-show-data.md), see the map in [Focus mode and full screen mode](../consumer/end-user-focus.md), [add comments](../consumer/end-user-comments.md), [interact with the filters](../consumer/end-user-report-filter.md) set by the *report designer*, and more. ArcGIS visuals can cross-filter other visuals on the report page and vice versa.
+The features available to you depend on how the report was shared with you and your Power BI account type. Check with your system administrator if you have questions. ArcGIS maps for Power BI visuals behave much like other visuals in a report. You'll be able to [show the data that is used to create the visualization](../consumer/end-user-show-data.md), see the map in [Focus mode and full screen mode](../consumer/end-user-focus.md), [add comments](../consumer/end-user-comment.md), [interact with the filters](../consumer/end-user-report-filter.md) set by the *report designer*, and more. ArcGIS visuals can cross-filter other visuals on the report page and vice versa.
 
 Hover over base map locations (for example, a bubble) to reveal tooltips. Additionally, use the ArcGIS visual selection tools to display additional tooltips, and to make specific selections on the base map or reference layer.  
 
@@ -113,7 +113,7 @@ Draws a rectangle on the map and selects the contained data points. Use CTRL to 
 
 ![third selection tool for boundaries](media/power-bi-visualizations-arcgis/power-bi-esri-selection-reference-layer2.png) 
 
-Allows boundaries or polygons within reference layers to be used to select contained data points. It's hard to see, but there is a yellow outline on the reference layer. But, unlike with the single-select tool, we don't get a tooltip but instead we get data about any data points contained within the borders of that outline. In this example, our selection does contain a data point -- it's for a Lindseys store in Winston Salem.
+Allows boundaries or polygons within reference layers to be used to select contained data points. It's hard to see, but there is a yellow outline on the reference layer. Unlike the single-select tool, we don't get a tooltip. Instead we get data about any data points contained within the borders of that outline. In this example, our selection does contain a data point -- it's for a Lindseys store in Winston Salem.
 
 ![reference select tool](media/power-bi-visualizations-arcgis/power-bi-ref-tool.png) 
 
@@ -129,7 +129,7 @@ Allows selection of data points using a buffer layer. For example, use this tool
 
 ![fifth selection tool for similarities](media/power-bi-visualizations-arcgis/power-bi-esri-selection-reference5.png) 
 
-Allows you to find locations with similar attributes. You begin by selecting one or more points of interest, or reference locations, defining up to five dimensions that you want to use in analysis. Find Similar then calculates the ten locations on your map that are most like the reference locations you defined. You can then use Infographics cards to learn more about the demographics around each of your results, create drive-time areas to get a sense of what is within driving distance of each of these locations, or even use the Find Similar tool itself to filter your report and gain more insights. Most importantly, all the calculation is done locally on your machine, so you can be sure your confidential data remains protected.
+Allows you to find locations with similar attributes. You begin by selecting one or more points of interest, or reference locations, defining up to five dimensions that you want to use in analysis. Find Similar then calculates the 10 locations on your map that are most like the reference locations you defined. You can then use Infographics cards to learn more about the demographics around each of your results, create drive-time areas to get a sense of what is within driving distance of each of these locations, or even use the Find Similar tool itself to filter your report and gain more insights. Most importantly, all the calculation is done locally on your machine, so you can be sure your confidential data remains protected.
 
 
 ## Considerations and Limitations
@@ -146,13 +146,13 @@ ArcGIS Maps for Power BI is available in the following services and applications
 
 
 ## How do ArcGIS Maps for Power BI work together?
-ArcGIS Maps for Power BI is provided by Esri (https://www.esri.com). Your use of ArcGIS Maps for Power BI is subject by Esri's [terms](https://go.microsoft.com/fwlink/?LinkID=8263222) and [privacy policy](https://go.microsoft.com/fwlink/?LinkID=826323). Power BI users wishing to use the ArcGIS Maps for Power BI visuals, need to accept the consent dialog (see User Consent for details).  Using Esri’s ArcGIS Maps for Power BI is subject to Esri’s Terms and Privacy Policy, which are also linked to from the consent dialog. Each user must consent prior to using ArcGIS Maps for Power BI for the first time. Once the user accepts the consent, data bound to the visual is sent to Esri’s services at least for geocoding, meaning transforming location information into latitude and longitude information that can be represented in a map. You should assume any data bound to the data visualization can be sent to Esri’s services. Esri provides services like base maps, spatial analytics, geocoding, etc. The ArcGIS Maps for Power BI visual interacts with these services using an SSL connection protected by a certificate provided and maintained by Esri. Additional information about ArcGIS Maps for Power BI can be obtained from Esri’s [ArcGIS Maps for Power BI product page](https://www.esri.com/powerbi).
+ArcGIS Maps for Power BI is provided by Esri (https://www.esri.com). Your use of ArcGIS Maps for Power BI is subject by Esri's [terms](https://go.microsoft.com/fwlink/?LinkID=8263222) and [privacy policy](https://go.microsoft.com/fwlink/?LinkID=826323). Power BI users wishing to use the ArcGIS Maps for Power BI visuals, need to accept the consent dialog (see User Consent for details).  Using Esri’s ArcGIS Maps for Power BI is subject to Esri’s Terms and Privacy Policy, which is also linked to from the consent dialog. Each user must consent prior to using ArcGIS Maps for Power BI for the first time. Once the user accepts the consent, data bound to the visual is sent to Esri’s services at least for geocoding, meaning transforming location information into latitude and longitude information that can be represented in a map. You should assume any data bound to the data visualization can be sent to Esri’s services. Esri provides services like base maps, spatial analytics, geocoding, etc. The ArcGIS Maps for Power BI visual interacts with these services using an SSL connection protected by a certificate provided and maintained by Esri. Additional information about ArcGIS Maps for Power BI can be obtained from Esri’s [ArcGIS Maps for Power BI product page](https://www.esri.com/powerbi).
 
 ### Power BI Plus
 
 ![Select the Plus icon to sign up or sign in](media/power-bi-visualizations-arcgis/power-bi-plus.png)
 
-When a user signs up for a Plus subscription offered by Esri through ArcGIS Maps for Power BI, they are entering into an direct relationship with Esri. Power BI does not send personal information about the user to Esri. The user signs in to and trusts an Esri provided AAD application using their own AAD identity. By doing so, the user is sharing their personal information directly with Esri. Once the user adds Plus content to an ArcGIS Maps for Power BI visual, other Power BI users also need a Plus subscription from Esri to view or edit that content. 
+When a user signs up for a Plus subscription offered by Esri through ArcGIS Maps for Power BI, they are entering into a direct relationship with Esri. Power BI does not send personal information about the user to Esri. The user signs in to and trusts an Esri provided AAD application using their own AAD identity. By doing so, the user is sharing their personal information directly with Esri. Once the user adds Plus content to an ArcGIS Maps for Power BI visual, other Power BI users also need a Plus subscription from Esri to view or edit that content. 
 
 For technical detailed questions about how Esri’s ArcGIS Maps for Power BI works, reach out to Esri through their support site.
 
@@ -170,7 +170,7 @@ The ArcGIS Map for Power BI is available to all Power BI users at no additional 
 
 **I'm getting an error message about my cache being full**
 
-This is a bug that is being addressed.  In the meantime, select the link that appears in the error message for instructions on clearing your Power BI cache.
+This behavior is a bug that is being addressed.  In the meantime, select the link that appears in the error message for instructions on clearing your Power BI cache.
 
 **Can I view my ArcGIS maps offline?**
 
