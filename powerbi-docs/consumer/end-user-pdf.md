@@ -47,7 +47,7 @@ And that's all there is to it. You can download the file and open it with any PD
 There are a few considerations and limitations to keep in mind when you work with the **Export to PDF** feature.
 
 * R visuals aren't currently supported. In the PDF, these visuals are blank and display an error message. 
-* Custom visuals that have been certified are supported. For more information on certified custom visuals, including how to get a custom visual certified, see [Get a custom visual certified](../power-bi-custom-visuals-certified.md). Custom visuals that haven't been certified aren't supported. In the PDF, they display with an error message. 
+* Custom visuals that have been certified are supported. For more information on certified custom visuals, including how to get a custom visual certified, see [Get a custom visual certified](../developer/power-bi-custom-visuals-certified.md). Custom visuals that haven't been certified aren't supported. In the PDF, they display with an error message. 
 * Reports with more than 30 report pages currently can't be exported.
 * The process of exporting the report to PDF might take a few minutes to complete, so be patient. Factors that can affect the time required include the structure of the report and the current load on the Power BI service.
 * If the **Export to PDF** menu item isn't available in the Power BI service, it's likely because your tenant administrator disabled the feature. Contact your tenant administrator for details.
@@ -57,6 +57,7 @@ There are a few considerations and limitations to keep in mind when you work wit
 * When you export to PDF with reports that contain a background image, you might see a distorted image in the export if you use the **Normal** or **Fill** options for the **Page Background**. For best results, use the **Fit** option to avoid issues with your exported document.
 * The Power BI service uses your Power BI language setting as the language for the PDF export. To see or set your language preference, select the cog icon ![Cog icon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Settings** > **General** > **Language**.
 * URL filters aren't currently respected when you choose **Current Values** for your export.
+* Reports with unusual custom page sizes may experience issues in export scenarios. For best results, consider switching to a standard page size for your report.
 
 ## Next steps
 [Print a report](end-user-print.md)

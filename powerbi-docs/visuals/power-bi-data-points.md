@@ -7,7 +7,7 @@ ms.reviewer: 'amac'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 11/07/2018
 ms.author: mihart
 
 LocalizationGroup: Visualizations
@@ -146,7 +146,6 @@ Limited to 150,000 rows. If more than 150,000 rows are selected, only the top 15
 The shape map can use statistics or dynamic limits. 
 - Max points: 1,500
 - Categories: Top 500
-- Series (when both X and Y are present): Top 20
 
 ### Table
 - Values: Virtualization (data windowing) by using Window of 500 rows at a time
