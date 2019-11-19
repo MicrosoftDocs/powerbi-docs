@@ -9,7 +9,7 @@ ms.topic: hub-page
 
 ---
 <div id="main" class="v2">
-    <div class="container">
+    <div>
         <h1>Microsoft Power BI Guided Learning</h1>
         <ul id="databases" class="cardsL panelContent" style="display: block; margin: 0px;">
           <li class="fullSpan">
