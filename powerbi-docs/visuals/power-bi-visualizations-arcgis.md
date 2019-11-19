@@ -84,7 +84,7 @@ ArcGIS Maps for Power BI allows five selection modes. A maximum of 250 data poin
 
 ![Screenshot of all three selection tools](media/power-bi-visualizations-arcgis/power-bi-esri-selection-tools.png)
 
-#### The single-select tool. 
+#### The single-select tool
 
 ![screenshot of single select tool](media/power-bi-visualizations-arcgis/power-bi-esri-selection-single2.png) 
 
