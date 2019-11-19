@@ -13,7 +13,7 @@ ms.author: v-pemyer
 
 # Query folding guidance in Power BI Desktop
 
-This article targets data modelers developing models in Power BI Desktop. It provides best practice guidance on when and how to achieve Power Query query folding.
+This article targets data modelers developing models in Power BI Desktop. It provides best practice guidance on when and how you can achieve Power Query query folding.
 
 _Query folding_ is the ability for a Power Query query to generate a single query statement that retrieves and transforms source data. For more information about query folding, see the Power Query [Query folding](/power-query/power-query-folding) concept article.
 
