@@ -43,29 +43,27 @@ The first step is to download the Retail Analysis and Opportunity Analysis sampl
 
 **Get the Retail Analysis sample**
 
-1. Open the Power BI service (app.powerbi.com) and sign in.
+1. Open the Power BI service in your browser (app.powerbi.com) and sign in.
 
-2. In the nav pane, select **Workspaces**, **My Workspace**.
-
-3. In the lower-left corner select **Get data**.
+2. Select **Get data** in the lower-left corner of the navigation pane. If the navigation pane is hidden and you can't see the Get data link, display the pane by clicking the show/hide navigation pane icon.  
    
-    ![](media/mobile-apps-ios-qna/power-bi-get-data.png)
+    ![Get Data](./media/mobile-apps-ios-qna/power-bi-get-data.png)
 
-3. On the Get Data page, select the **Samples** icon.
+3. On the Get Data page, select the **Samples** link.
    
-   ![](media/mobile-apps-ios-qna/power-bi-samples-icon.png)
+   ![Samples icon](./media/mobile-apps-ios-qna/power-bi-samples-icon.png)
 
-4. Select the **Retail Analysis Sample**.
+4. Select the **Retail Analysis sample**.
  
-    ![Retail Analysis Sample](./media/mobile-apps-ios-qna/power-bi-rs.png)
- 
+    ![Retail Analysis Sample](./media/mobile-apps-ios-qna/power-bi-rs.png)  
+    
 8. Select **Connect**.  
   
-   ![Retail Analysis Sample](./media/mobile-apps-ios-qna/retail16.png)
+   ![Retail Analysis Sample - Connect](./media/mobile-apps-ios-qna/opportunity-connect.png)
    
-5. Power BI imports the content pack and adds a new dashboard, report, and dataset to your current workspace.
+5. Power BI imports the sample, adding a new dashboard, report, and dataset to your My Workspace.
    
-   ![Retail Analysis Sample](./media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
+   ![Retail Analysis Sample dashboard](./media/mobile-apps-ios-qna/power-bi-service-opportunity-sample.png)
 
 **Get the Opportunity Analysis sample**
 
