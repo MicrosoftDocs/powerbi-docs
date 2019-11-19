@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/14/2019
+ms.date: 11/18/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -108,7 +108,7 @@ To assign a bookmark to an object:
 
 There are all sorts of interesting things you can do with object-linked bookmarking. You can create a visual table of contents on your report page, or you can provide different views (such as visual types) of the same information.
 
-When you're in editing mode, use **Ctrl** + **Click** to follow the link. When you're not in editing mode, select the object to follow the link. 
+When you're in editing mode, press **Ctrl** and select the link to follow it. When you're not in editing mode, select the object to follow the link. 
 
 ## Bookmark groups
 
@@ -202,5 +202,5 @@ In this release of the bookmarks features, there are a few limitations and consi
 For more information about features that are similar or interact with bookmarks, see the following articles:
 
 * [Use drillthrough in Power BI Desktop](desktop-drillthrough.md)
-* [Display a dashboard tile or report visual in Focus mode](consumer/end-user-focus.md)
+* [Display a dashboard tile or report visual in focus mode](consumer/end-user-focus.md)
 
