@@ -9,7 +9,7 @@ ms.topic: hub-page
 
 ---
 <div id="main" class="v2">
-    <div class="container">
+    <div>
         <h1>Microsoft Power BI Guided Learning</h1>
         <ul id="databases" class="cardsL panelContent" style="display: block; margin: 0px;">
           <li class="fullSpan">
@@ -17,7 +17,6 @@ ms.topic: hub-page
                   <p>Start your learning journey with this sequenced collection of courses, and understand the extensive and powerful capabilities of Microsoft Power BI.</p>
               </div>
           </li>
-          
           <li>
             <div class="cardSize">
                 <div class="cardPadding">
@@ -58,7 +57,6 @@ ms.topic: hub-page
                 </div>
             </div>
           </li>
-          
           <li>
             <div class="cardSize">
                 <div class="cardPadding">
@@ -95,7 +93,6 @@ ms.topic: hub-page
                 </div>
             </div>
           </li>
-          
                     <li>
             <div class="cardSize">
                 <div class="cardPadding">
@@ -132,7 +129,6 @@ ms.topic: hub-page
                 </div>
             </div>
           </li>
-          
                     <li>
             <div class="cardSize">
                 <div class="cardPadding">
@@ -181,7 +177,6 @@ ms.topic: hub-page
                 </div>
             </div>
           </li>
-          
                     <li>
             <div class="cardSize">
                 <div class="cardPadding">
@@ -230,7 +225,6 @@ ms.topic: hub-page
                 </div>
             </div>
           </li>
-          
                     <li>
             <div class="cardSize">
                 <div class="cardPadding">
@@ -283,7 +277,6 @@ ms.topic: hub-page
                 </div>
             </div>
           </li>
-          
                     <li>
             <div class="cardSize">
                 <div class="cardPadding">
@@ -340,7 +333,6 @@ ms.topic: hub-page
                 </div>
             </div>
           </li>
-          
                     <li>
             <div class="cardSize">
                 <div class="cardPadding">
@@ -397,8 +389,6 @@ ms.topic: hub-page
                 </div>
             </div>
           </li>
-     
-          
           <li>
             <div class="cardSize">
                 <div class="cardPadding">
