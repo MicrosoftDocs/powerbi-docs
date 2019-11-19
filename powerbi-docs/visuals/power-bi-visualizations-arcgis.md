@@ -37,11 +37,11 @@ The first time a colleague shares an ArcGIS map with you, Power BI will display 
 
 ## Understand the layers
 
-An ArcGIS map for Power BI visual can have several different types of layers of demographic location information.
+An ArcGIS Maps for Power BI visual can have several different types of layers of demographic location information.
 
 ### Base maps
 
-Each ArcGIS for Power BI visual starts with a base map. Think of base maps as the canvas for the data. A base map might be a basic dark or light canvas,
+Each ArcGIS Maps for Power BI visual starts with a base map. Think of base maps as the canvas for the data. A base map might be a basic dark or light canvas,
 
 ![dark grey base map](media/power-bi-visualizations-arcgis/power-bi-basemap-dark.png) 
 
@@ -55,13 +55,13 @@ The base map is applied to the canvas entirely - as you pan and zoom, the map up
 
 ### Reference layers
 
-A report designer can add one reference layer. Reference layers are hosted by Esri and provide an additional layer of demographic information about a location. The example below has a reference layer for population density. Darker colors represent higher density.
+A report *designer* can add one reference layer. Reference layers are hosted by Esri and provide an additional layer of demographic information about a location. The example below has a reference layer for population density. Darker colors represent higher density.
 
 ![map of Orlando area showing population density](media/power-bi-visualizations-arcgis/power-bi-reference.png)  
 
 ### Infographics
 
-A report designer can add many infographics layers. Infographics are quick visual indicators that display along the right side of the visual canvas. Infographics are hosted by Esri and provide an additional layer of demographic information about a location. The example below has three infographics applied. They don't display on the map itself, but on cards. The infographics cards update as you zoom, pan, and select areas on the map.
+A report *designer* can add many infographics layers. Infographics are quick visual indicators that display along the right side of the visual canvas. Infographics are hosted by Esri and provide an additional layer of demographic information about a location. The example below has three infographics applied. They don't display on the map itself, but on cards. The infographics cards update as you zoom, pan, and select areas on the map.
 
 ![map of Orlando area zoomed in and infographics cards along right side of canvas](media/power-bi-visualizations-arcgis/power-bi-infographics.png)  
 
@@ -74,7 +74,7 @@ Pins represent precise locations, like a city or address. Sometimes report *desi
 
 
 ## Interact with an ArcGIS Maps for Power BI visual
-The features available to you depend on how the report was shared with you and your Power BI account type. Check with your system administrator if you have questions. ArcGIS maps for Power BI visuals behave much like other visuals in a report. You'll be able to [show the data that is used to create the visualization](../consumer/end-user-show-data.md), see the map in [Focus mode and full screen mode](../consumer/end-user-focus.md), [add comments](../consumer/end-user-comment.md), [interact with the filters](../consumer/end-user-report-filter.md) set by the *report designer*, and more. ArcGIS visuals can cross-filter other visuals on the report page and vice versa.
+The features available to you depend on how the report was shared with you and your Power BI account type. Check with your system administrator if you have questions. ArcGIS Maps for Power BI visuals behave much like other visuals in a report. You'll be able to [show the data that is used to create the visualization](../consumer/end-user-show-data.md), see the map in [Focus mode and full screen mode](../consumer/end-user-focus.md), [add comments](../consumer/end-user-comment.md), [interact with the filters](../consumer/end-user-report-filter.md) set by the report *designer*, and more. ArcGIS visuals can cross-filter other visuals on the report page and vice versa.
 
 Hover over base map locations (for example, a bubble) to reveal tooltips. Additionally, use the ArcGIS visual selection tools to display additional tooltips, and to make specific selections on the base map or reference layer.  
 
@@ -90,9 +90,15 @@ ArcGIS Maps for Power BI allows five selection modes. A maximum of 250 data poin
 
 Select a data point, a bubble, a pin, or an individual data point from the reference layer. Power BI will display a tooltip with details about your selection. Single-select cross-filters the other visuals on the report page based on your selection, and updates the infographics cards for the selected area. 
 
+Here we've selected a brown bubble data point from our base map. Power BI:
+- highlights our selection,
+- displays a tooltip for that data point, 
+- updates the infographics cards to display data for just our selection, and
+- cross-hghlights the column chart.
+
 ![Screenshot of tooltip for brown bubble](media/power-bi-visualizations-arcgis/power-bi-single-selects.png)
 
-If the map has a reference layer, select locations to display details in a tooltip. Here we've selected Seneca County and see data from the population density reference layer the report *designer* added to the map. In this example, our data point includes two different counties, so our tooltip has two pages. Each page has a chart. Select a bar on the chart to dig into the data. 
+If the map has a reference layer, selecting locations displays details in a tooltip. Here we've selected Seneca County and see data from the reference layer (population density) that the report *designer* added to the map. In this example, our data point includes two different counties, so our tooltip has two pages. Each page has a chart. Select a bar on the chart to display additional details. 
 
 ![Screenshot of tooltip for Seneca county](media/power-bi-visualizations-arcgis/power-bi-single-select-ref.png)
 
@@ -105,7 +111,7 @@ If the map has a reference layer, select locations to display details in a toolt
 
 ![multi-select tool](media/power-bi-visualizations-arcgis/power-bi-esri-selection-marquee2.png) 
 
-Draws a rectangle on the map and selects the contained data points. Use CTRL to select more than one rectangular area. Multi-select cross-filters the other visuals on the report page based on your selection, and updates the infographics cards for the selected area.
+Draws a rectangle on the map and selects the contained data points. Use CTRL to select more than one rectangular area. Multi-select updates the infographics cards for the selected area, and cross-highlights the other visuals on the report page based on your selection.
 
 ![multi-select tool](media/power-bi-visualizations-arcgis/power-bi-multi-select.png) 
 
@@ -152,7 +158,7 @@ ArcGIS Maps for Power BI is provided by Esri (https://www.esri.com). Your use of
 
 ![Select the Plus icon to sign up or sign in](media/power-bi-visualizations-arcgis/power-bi-plus.png)
 
-When a user signs up for a Plus subscription offered by Esri through ArcGIS Maps for Power BI, they are entering into a direct relationship with Esri. Power BI does not send personal information about the user to Esri. The user signs in to and trusts an Esri provided AAD application using their own AAD identity. By doing so, the user is sharing their personal information directly with Esri. Once the user adds Plus content to an ArcGIS Maps for Power BI visual, other Power BI users also need a Plus subscription from Esri to view or edit that content. 
+When a user signs up for a Plus subscription offered by Esri through ArcGIS Maps for Power BI, they are entering into a direct relationship with Esri. Power BI does not send personal information about the user to Esri. The user signs in to and trusts an Esri provided AAD application using their own AAD identity. By doing so, the user is sharing their personal information directly with Esri. Once the user adds Plus content to an ArcGIS Maps for Power BI visual, colleagues who want to view or edit that visual will also need a Plus subscription from Esri. 
 
 For technical detailed questions about how Esri’s ArcGIS Maps for Power BI works, reach out to Esri through their support site.
 
