@@ -1500,7 +1500,7 @@ The following updates are new to **Power BI Desktop** this month:
 ### Reporting:
 
 -   Bookmarking (preview) [[video]](https://youtu.be/jksjtR8GnBE?t=1m47s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#bookmarking) [[article]](desktop-bookmarks.md)
--   Selection pane and visual display controls [[video]](https://youtu.be/jksjtR8GnBE?t=7m26s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#selectionPane) [[article]](desktop-bookmarks.md#visibility---using-the-selection-pane) 
+-   Selection pane and visual display controls [[video]](https://youtu.be/jksjtR8GnBE?t=7m26s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#selectionPane) [[article]](desktop-bookmarks.md#visibility-using-the-selection-pane) 
 -   Bookmark links for shapes and images  [[video]](https://youtu.be/jksjtR8GnBE?t=8m54s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#links) [[article]](desktop-bookmarks.md#bookmarks-for-shapes-and-images)
 -   Spotlight [[video]](https://youtu.be/jksjtR8GnBE?t=5m39s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#spotlight) [[article]](desktop-bookmarks.md#using-spotlight)
 -   Scatter and Bubble markers  [[video]](https://youtu.be/jksjtR8GnBE?t=17m20s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#markers) [[article]](desktop-accessibility.md)
