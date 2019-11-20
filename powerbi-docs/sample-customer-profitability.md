@@ -166,7 +166,7 @@ This report page provides a different slice of the data. It looks at gross margi
    * Valery, who is responsible for only one product, works in only five industry segments. Valery's industry influence is seasonal, but always produces a large bubble, indicating a significant impact on the company’s bottom line. Do the industry segments explain their negative performance?
 
 ### Executive Scorecard
-This page is formatted as a Cortana answer page. To learn more, see [Create a custom answer page for Cortana](service-cortana-answer-cards.md).
+This page is formatted as a Cortana answer page.
 
 ## Dig into the data by asking questions with Q&A
 For our analysis, it might be helpful to determine which industry generates the most revenue for Valery. Let’s use Q&A.

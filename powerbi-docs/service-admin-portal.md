@@ -286,7 +286,7 @@ Users in the organization can use the ArcGIS Maps for Power BI visualization pro
 
 ### Use global search for Power BI (Preview)
 
-Users in the organization can use external search features that rely on Azure Search. For example, users can use Cortana to retrieve key information directly from Power BI dashboards and reports. [Learn more](service-cortana-intro.md)
+Users in the organization can use external search features that rely on Azure Search. For example, users can use Cortana to retrieve key information directly from Power BI dashboards and reports.
 
 ## Custom visuals settings
 
