@@ -35,14 +35,16 @@ You can use watermarks so that customers continue using the IAP advanced feature
 
 Watermarks can be used to showcase the full functionality of the Power BI visual, before a purchase is made. 
 
-You can also use a watermark to explain how to purchase a licenses, when an invalid (or expired) licenses is used with your Power BI IAP visual.
-
 * Watermarks may only be used on paid features that are used without a valid license.
 * Watermarks are not allowed in Power BI visuals with a *free* price tag.
 * Watermarks are not allowed in IAP visuals, when the user uses free features. 
 
 > [!NOTE]
 > There is no limitation on watermarks, so they can be placed in the middle, in both reading and edit mode.
+
+### Pop-up window
+
+You can use a pop-up window to explain how to purchase a license, when an invalid (or expired) license is used with your Power BI IAP visual.
 
 ### Submission process
 
