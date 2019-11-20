@@ -12,6 +12,9 @@
     - name: Developer
       tocHref: /power-bi/developer/
       topicHref: /power-bi/developer/index
+  - name: Developer
+      tocHref: /power-bi/desktop-r-powered-custom-visuals/
+      topicHref: /power-bi/developer/index
     - name: Guided Learning
       tocHref: /power-bi/guided-learning/
       topicHref: /power-bi/guided-learning/
