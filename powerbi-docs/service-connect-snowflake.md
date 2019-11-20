@@ -1,3 +1,17 @@
+---
+title: Connect to Snowflake with Power BI
+description: Snowflake with SSO for Power BI
+author: cpopell
+ms.reviewer: 
+
+ms.service: powerbi
+ms.subservice: powerbi-service
+ms.topic: conceptual
+ms.date: 11/20/2019
+ms.author: gepopell
+
+LocalizationGroup: Connect to services
+---
 #  Connecting to Snowflake in Power BI Service
 
 ## Introduction
