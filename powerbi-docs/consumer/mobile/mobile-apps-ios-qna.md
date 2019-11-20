@@ -45,7 +45,7 @@ The first step is to download the Retail Analysis and Opportunity Analysis sampl
 
 1. Open the Power BI service in your browser (app.powerbi.com) and sign in.
 
-2. Select **Get data** in the lower-left corner of the navigation pane. If the navigation pane is hidden and you can't see the Get data link, display the pane by clicking the show/hide navigation pane icon.  
+2. Select **Get data** in the lower-left corner of the navigation pane. If the navigation pane is hidden and you can't see the Get data link, display the pane by clicking the show/hide navigation pane icon ![Global navigation button](./media/mobile-apps-ios-qna/power-bi-iphone-global-nav-button.png).  
    
     ![Get Data](./media/mobile-apps-ios-qna/power-bi-get-data.png)
 
