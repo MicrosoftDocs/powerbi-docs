@@ -19,7 +19,7 @@ Datasets in Power BI can be imported into Power BI or you can create a live conn
 ## Q&A for on-premises data gateway datasets
 If you'd like to use Q&A with datasets you access through a gateway, you'll need to enable them first.
 
-Once enabled, Power BI creates an index of your data source and uploads a subset of that data to Power BI to enable asking questions. It may take several minutes to create the initial index and Power BI maintains and updates the index automatically as your data changes. Using Q&A with these datasets behaves the same as with data published to Power BI. The full set of features available in the Q&A experience is supported in both cases, including using the data source with Cortana.
+Once enabled, Power BI creates an index of your data source and uploads a subset of that data to Power BI to enable asking questions. It may take several minutes to create the initial index and Power BI maintains and updates the index automatically as your data changes. Using Q&A with these datasets behaves the same as with data published to Power BI. The full set of features available in the Q&A experience is supported in both cases.
 
 As you ask questions in Power BI, Q&A determines the best visual to construct or report sheet to use to answer your question using an index of your dataset. After determining the best potential answer, Q&A uses DirectQuery to fetch live data from the data source via the gateway to populate charts and graphs. This ensures Power BI Q&A results always show the most up-to-date data directly from the underlying data source.
 

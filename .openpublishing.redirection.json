@@ -1055,95 +1055,76 @@
             "redirect_url": "/power-bi/desktop-accessibility-overview",
             "redirect_document_id": false
         },
-        
+        {
+            "source_path": "powerbi-docs/service-cortana-answer-cards.md",
+            "redirect_url": "/power-bi/power-bi-tutorial-q-and-a",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-cortana-intro.md",
+            "redirect_url": "/power-bi/power-bi-tutorial-q-and-a",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-cortana-enable.md",
+            "redirect_url": "/power-bi/power-bi-tutorial-q-and-a",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-cortana-troubleshoot.md",
+            "redirect_url": "/power-bi/power-bi-tutorial-q-and-a",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "powerbi-docs/service-connect-to-alpine-metrics.md",
+            "redirect_url": "/power-bi/service-connect-to-services",
+            "redirect_document_id": false
+        },
+            
        {
-
         "source_path": "powerbi-docs/service-connect-to-azure-consumption-insights.md",
-
         "redirect_url": "/power-bi/service-connect-to-services",
-
         "redirect_document_id": false
-
     },
-
    {
-
         "source_path": "powerbi-docs/service-connect-to-circuit-id.md",
-
         "redirect_url": "/power-bi/service-connect-to-services",
-
         "redirect_document_id": false
-
     },
-
    {
-
         "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-ax.md",
-
         "redirect_url": "/power-bi/service-connect-to-services",
-
         "redirect_document_id": false
-
     },
-
    {
-
         "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-crm.md",
-
         "redirect_url": "/power-bi/service-connect-to-services",
-
         "redirect_document_id": false
-
     },
-
    {
-
         "source_path": "powerbi-docs/service-connect-to-microsoft-dynamics-nav.md",
-
         "redirect_url": "/power-bi/service-connect-to-services",
-
         "redirect_document_id": false
-
     },
-
    {
-
         "source_path": "powerbi-docs/service-connect-to-stripe.md",
-
         "redirect_url": "/power-bi/service-connect-to-services",
-
         "redirect_document_id": false
-
     },
-
    {
-
         "source_path": "powerbi-docs/service-connect-to-tygraph.md",
-
         "redirect_url": "/power-bi/service-connect-to-services",
-
         "redirect_document_id": false
-
     },
-
    {
-
         "source_path": "powerbi-docs/service-connect-to-uservoice.md",
-
         "redirect_url": "/power-bi/service-connect-to-services",
-
         "redirect_document_id": false
-
     },
-
    {
-
         "source_path": "powerbi-docs/service-connect-to-ziosk.md",
-
         "redirect_url": "/power-bi/service-connect-to-services",
-
         "redirect_document_id": false
-
     },
     {
         "source_path": "powerbi-docs/service-connect-to-alpine-metrics.md",

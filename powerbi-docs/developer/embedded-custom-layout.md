@@ -38,7 +38,6 @@ interface ICustomLayout {
 enum PageSizeType {
   Widescreen,
   Standard,
-  Cortana,
   Letter,
   Custom
 }
