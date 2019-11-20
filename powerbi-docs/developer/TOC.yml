@@ -44,7 +44,7 @@
       - name: "Publish custom visuals to AppSource"
         href: office-store.md
       - name: "Use R-powered custom visuals in Power BI"
-        href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/toc.json&bc=/powerbi-docs/developer/breadcrumb/toc.json
+        href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
       - name: "Visuals interactions"
         href: visuals/visuals-interactions.md
       - name: "Add selections"

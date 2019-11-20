@@ -34,6 +34,11 @@ To get started, you're required to have:
 
 If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
+> [!IMPORTANT]
+> * You must use a **service principal**. Master user is not supported.
+> * Datasources that require single sign-on (SSO), are not supported.
+> * Power BI dataset is not supported as a [datasource](../service-get-data.md).
+
 ## Set up your Power BI environment
 
 Embedding a paginated report requires assigning a workspace to a dedicated capacity, and uploading the report to the workspace.
