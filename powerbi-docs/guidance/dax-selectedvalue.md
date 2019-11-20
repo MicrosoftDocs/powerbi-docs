@@ -17,7 +17,7 @@ This article targets data modelers developing models in Power BI Desktop.
 
 ## Background
 
-Sometimes you might need to write a DAX expression that tests whether a column is filtered by a specific value. In earlier versions of DAX this can be safely achieved by using a pattern involving three DAX functions. The functions are [IF](/dax/if-function-dax), [HASONEVALUE](/dax/hasonevalue-function-dax) and [VALUES](/dax/values-function-dax).
+Sometimes you might need to write a DAX expression that tests whether a column is filtered by a specific value. In earlier versions of DAX, this requirement was safely achieved by using a pattern involving three DAX functions. The functions are [IF](/dax/if-function-dax), [HASONEVALUE](/dax/hasonevalue-function-dax) and [VALUES](/dax/values-function-dax).
 
 The following measure definition presents an example. It calculates the sales tax amount, but only for sales made to Australian customers.
 
@@ -32,9 +32,9 @@ IF(
 )
 ```
 
-In the example, the HASONEVALUE function returns TRUE only when a single value is used to filter the **Country-Region** column. When it is TRUE, the VALUES function is compared to the literal text "Australia". When the VALUES function returns TRUE, the **Sales** measure is multiplied by 0.10 (representing 10%). If the HASONEVALUE function returns FALSE—because more than one value filters the column—the IF function returns BLANK.
+In the example, the HASONEVALUE function returns TRUE only when a single value is used to filter the **Country-Region** column. When it's TRUE, the VALUES function is compared to the literal text "Australia". When the VALUES function returns TRUE, the **Sales** measure is multiplied by 0.10 (representing 10%). If the HASONEVALUE function returns FALSE—because more than one value filters the column—the first IF function returns BLANK.
 
-The use of the HASONVALUE is a defensive technique. It's required because it may be possible that multiple values filter the **Country-Region** column. In this case, the VALUES function returns a table of multiple rows. Comparing a table of multiple rows to a constant value will result in an error.
+The use of the HASONVALUE is a defensive technique. It's required because it's possible that multiple values filter the **Country-Region** column. In this case, the VALUES function returns a table of multiple rows. Comparing a table of multiple rows to a scalar value results in an error.
 
 ## Recommendation
 
@@ -50,4 +50,4 @@ IF(
 )
 ```
 
-You can leverage an additional benefit of the SELECTEDVALUE function. You can also pass an _alternate result_ value into the SELECTEDVALUE function. The alternate result value is returned when either no filters—or multiple filters—are applied to the column.
+You can also leverage an additional feature of the SELECTEDVALUE function. It's possible to pass an _alternate result_ value into the SELECTEDVALUE function. The alternate result value is returned when either no filters—or multiple filters—are applied to the column.
