@@ -16,8 +16,6 @@ Following is a list of the current limitations for row-level security on cloud m
 
 * Only ETL and DirectQuery connections are supported. Live connections to Analysis Services are handled in the on-premises model.
 
-* Cortana is not supported with RLS at this time.
-
 ## Known issues
 
 There is a known issue where you'll get an error message if you try to publish a previously published report from Power BI Desktop. The scenario is as follows.
