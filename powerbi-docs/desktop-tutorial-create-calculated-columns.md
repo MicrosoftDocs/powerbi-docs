@@ -20,7 +20,8 @@ Calculated columns are similar to [measures](desktop-tutorial-create-measures.md
 
 This tutorial will guide you through understanding and creating some calculated columns and using them in report visualizations in Power BI Desktop. 
 
-### Prerequisites
+## Prerequisites
+
 - This tutorial is intended for Power BI users already familiar with using Power BI Desktop to create more advanced models. You should already know how to use **Get Data** and the **Power Query Editor** to import data, work with multiple related tables, and add fields to the Report canvas. If you’re new to Power BI Desktop, be sure to check out [Getting Started with Power BI Desktop](desktop-getting-started.md).
   
 - The tutorial uses the [Contoso Sales Sample for Power BI Desktop](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), the same sample used for the [Create your own measures in Power BI Desktop](desktop-tutorial-create-measures.md) tutorial. This sales data from the fictitious company Contoso, Inc. was imported from a database, so you won’t be able to connect to the data source or view it in the Power Query Editor. Download and extract the file on your own computer, and then open it in Power BI Desktop.
