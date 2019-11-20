@@ -395,6 +395,7 @@ Now we can explore how to develop the custom visual to show a circle and sample 
     import "../style/visual.less";
     import powerbi from "powerbi-visuals-api";
     import IVisual = powerbi.extensibility.IVisual;
+    import IVisualHost = powerbi.extensibility.visual.IVisualHost;
     import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
     import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
 
