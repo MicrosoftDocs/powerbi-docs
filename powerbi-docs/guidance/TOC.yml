@@ -16,6 +16,8 @@
       href: import-modeling-data-reduction.md
     - name: "DIVIDE function vs divide operator (/)"
       href: dax-divide-function-operator.md
+    - name: "Use SELECTEDVALUE instead of VALUES"
+      href: dax-selectedvalue.md
     - name: "The importance of query folding"
       href: power-query-folding.md
     - name: "Appropriate use of error functions"

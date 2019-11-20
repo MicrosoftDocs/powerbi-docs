@@ -50,6 +50,8 @@ landingContent:
             url: dax-divide-function-operator.md
           - text: Appropriate use of error functions
             url: dax-error-functions.md
+          - text: Use SELECTEDVALUE instead of VALUES
+            url: dax-selectedvalue.md
 
   # Card (optional)
   - title: Dataflows
