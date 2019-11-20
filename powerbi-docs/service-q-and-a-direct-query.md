@@ -39,9 +39,9 @@ Once you have the data gateway set up, connect to your data from Power BI.  Eith
 2. Select **datasets** and choose the dataset to enable for Q&A.
    
    ![Datasets screen of Settings menu](media/service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
-3. Expand **Q&A and Cortana**, select the checkbox for **Turn on Q&A for this dataset** and choose **Apply**.
+3. Expand **Q&A**, select the checkbox for **Turn on Q&A for this dataset**, and choose **Apply**.
    
-    ![Q&A area expanded](media/service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
+    ![Q&A area expanded](media/service-q-and-a-direct-query/power-bi-qna-dataset-direct-query.png)
 
 ## What data is cached and how is privacy protected?
 When you enable Q&A for your on-premises data, a subset of your data is cached in the service. This caching ensures that Q&A works with a reasonable performance. Power BI excludes values longer than 24 characters from caching. The cache is deleted within a few hours when you disable Q&A by unchecking **Turn on Q&A for this dataset**, or when you delete your dataset.
