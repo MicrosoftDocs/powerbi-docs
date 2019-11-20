@@ -34,7 +34,7 @@ IF(
 
 In the example, the HASONEVALUE function returns TRUE only when a single value filters the **Country-Region** column. When it's TRUE, the VALUES function is compared to the literal text "Australia". When the VALUES function returns TRUE, the **Sales** measure is multiplied by 0.10 (representing 10%). If the HASONEVALUE function returns FALSE—because more than one value filters the column—the first IF function returns BLANK.
 
-The use of the HASONVALUE is a defensive technique. It's required because it's possible that multiple values filter the **Country-Region** column. In this case, the VALUES function returns a table of multiple rows. Comparing a table of multiple rows to a scalar value results in an error.
+The use of the HASONEVALUE is a defensive technique. It's required because it's possible that multiple values filter the **Country-Region** column. In this case, the VALUES function returns a table of multiple rows. Comparing a table of multiple rows to a scalar value results in an error.
 
 ## Recommendation
 
@@ -45,9 +45,10 @@ Using the SELECTEDVALUE function, the example measure definition is now rewritte
 ```dax
 Australian Sales Tax =
 IF(
-    SELECTEDVALUE(Geography[Country-Region]) = "Australia",
+    SELECTEDVALUE(Customer[Country-Region]) = "Australia",
     [Sales] * 0.10
 )
 ```
 
-You can also leverage an additional feature of the SELECTEDVALUE function. It's possible to pass an _alternate result_ value into the SELECTEDVALUE function. The alternate result value is returned when either no filters—or multiple filters—are applied to the column.
+> [!TIP]
+> It's possible to pass an _alternate result_ value into the SELECTEDVALUE function. The alternate result value is returned when either no filters—or multiple filters—are applied to the column.
