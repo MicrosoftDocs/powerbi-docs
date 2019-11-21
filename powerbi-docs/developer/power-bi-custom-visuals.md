@@ -44,7 +44,7 @@ Power BI admins approve and deploy Power BI visuals into their organization, whi
 
 Community members and Microsoft have both contributed their Power BI visuals for public benefit and published them to the [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) marketplace. You can download these visuals add them to your Power BI reports. Microsoft has tested and approved these Power BI visuals for functionality and quality.
 
-What is [AppSource](office-store.md)? It's the place you can find apps, add-ins, and extensions for your Microsoft software. AppSource connects millions of users of products like Office 365, Azure, Dynamics 365, Cortana, and Power BI, to solutions that help them get work done more efficiently, insightfully, and beautifully than before.
+What is [AppSource](office-store.md)? It's the place you can find apps, add-ins, and extensions for your Microsoft software. AppSource connects millions of users of products like Office 365, Azure, Dynamics 365, and Power BI, to solutions that help them get work done more efficiently, insightfully, and beautifully than before.
 
 ### Certified visuals
 
