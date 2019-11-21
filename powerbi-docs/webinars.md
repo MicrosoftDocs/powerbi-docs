@@ -29,6 +29,10 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 <br>by Vijay Gopalakrishnan
 <br>[Register to watch on December 18th](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
 
+**Three Ways AI Is Changing BI**
+<br>by Justyna Lucznik
+<br>[Register to watch on January 8th](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html?lcid=EN-US&ocid=mkto_eml_EM581230A1LA1)
+
 >[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## Featured webinars
