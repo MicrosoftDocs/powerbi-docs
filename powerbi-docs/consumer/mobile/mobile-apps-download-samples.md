@@ -1,5 +1,5 @@
 ---
-title: 'Download samples'
+title: 'Downloading samples to My workspace in the Power BI service'
 description: Download sample data to My Workspace in your Power BI service account for use in Mobile app tutorials.
 author: paulinbar
 
@@ -8,10 +8,10 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/21/2019
 ms.author: painbar
-#customer intent: As a Power BI end user, I want to see how the virtual analyst works in the iOS mobile apps so I can use the analyst to explore my own data. 
+#customer intent: Getting sample data to use to follow along in some of the Mobile app documentation. 
 
 ---
-# Download sample data
+# Downloading samples to My workspace in the Power BI service
 
 Some of the Mobile app documentation available here uses sample data for the purposes of illustration. To follow along on your device, you can download the sample data to your Power BI service account, where you can then view it from the Power BI Mobile app on your device. This article describes how to download the sample data to your Power BI service account. 
 
