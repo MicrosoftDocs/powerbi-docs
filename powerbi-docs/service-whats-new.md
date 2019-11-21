@@ -527,7 +527,6 @@ For all the details, including a video demonstrating many of these updates, visi
 
 * Automatically discover trends and uncover patterns in a dataset with Quick Insights: [video](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) or  [article](consumer/end-user-insights.md)
 * [Visualize your VMob data in Power BI](https://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
-* [Power BI integration with Cortana](https://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [Preview of Power BI gateway for enterprise](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
 * Introducing a new content pack: [Search Analytics from Bing on Power BI dashboards](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
 * New Developer-focused enhancements: [Two new APIs and easier app  registration](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
