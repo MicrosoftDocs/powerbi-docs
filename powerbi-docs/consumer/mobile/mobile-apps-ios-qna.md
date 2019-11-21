@@ -47,13 +47,13 @@ Once you've downloaded the sample data, you're ready to view the samples on your
 ## Try asking questions on your iPhone or iPad
 1. On the home page, tap the My Workspace button on the navigation bar at the bottom of the screen to open the My Workspace page, and then tap the Retail Analysis Sample dashboard to open it.
 
-![Open My Workspace](./media/mobile-apps-ios-qna/power-bi-qna-open-myworkspace.png)
+    ![Open My Workspace](./media/mobile-apps-ios-qna/power-bi-qna-open-myworkspace.png)
 
 2. Tap the Q&A virtual analyst icon on the action menu at the bottom of the page (at the top of the page on an iPad).
 
-![Open My Workspace](./media/mobile-apps-ios-qna/power-bi-qna-open-qna.png)
+    ![Open My Workspace](./media/mobile-apps-ios-qna/power-bi-qna-open-qna.png)
 
-The Q&A virtual analyst offers some suggestions to get started.
+    The Q&A virtual analyst offers some suggestions to get started.
 
 3. Type **show**, tap **sales** from the suggestion list > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
