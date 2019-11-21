@@ -2,12 +2,12 @@
 title: Scatter, bubble, and dot plot charts in Power BI
 description: 'Scatter chart, dot plot charts, and bubble charts in Power BI'
 author: mihart
-ms.reviewer: ''
+ms.reviewer: 'amac'
 featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/21/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ---
@@ -125,13 +125,30 @@ Now let's add a third dimension.
     > [!NOTE]
     > More data points can mean a longer loading time. If you do choose to publish reports with limits at the higher end of the scale, make sure to test out your reports across the web and mobile as well. You want to confirm that the performance of the chart matches your users' expectations.
 
-1. You can [format the visualization colors, labels, titles, background, and more](service-getting-started-with-color-formatting-and-axis-properties.md).
-
-    To [improve accessibility](../desktop-accessibility.md), consider adding marker shapes to each line. To select the marker shape, expand **Shapes**, select **Marker shape**, and select a shape.
+1. You can format the visualization colors, labels, titles, background, and more. To [improve accessibility](../desktop-accessibility.md), consider adding marker shapes to each line. To select the marker shape, expand **Shapes**, select **Marker shape**, and select a shape.
 
     ![Screenshot of the Shapes drop-down with the Marker shape options called out.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 
     You can change the marker shape to a diamond, triangle, or square. Using a different marker shape for each line makes it easier for report consumers to differentiate lines (or areas) from each other.
+
+1. Open the Analytics pane ![Screenshot of the icon for the Analytics pane.](media/power-bi-visualization-scatter/power-bi-analytics.png) to add additional information to your visualization.  
+    - Add a Median line. Select **Median line** > **Add**. By default, Power BI adds a median line for *Sales per sq ft**. This isn't very helpful since we can see that there are 10 data points and know that the median will be created with five data points on each side. Instead, switch the **Measure** to *Total sales variance 50*.  
+
+    ![Screenshot of the bubble chart with median line added.](media/power-bi-visualization-scatter/power-bi-analytics-median.png)
+
+    - Add symmetry shading to show which points have a higher value of the x-axis measure compared to the y-axis measure, and vice-versa. When you turn symmetry shading on in the Analytics pane, Power BI shows you the background of your scatter chart symmetrically based on your current axis upper and lower boundaries. This is a very quick way to identify which axis measure a data point favors, especially when you have a different axis range for your x- and y-axis.
+
+        a. Change the **Total sales variance %** field to **Gross margin last year %**
+
+        ![Screenshot of the bubble chart with median line added.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
+
+        b. From the Analytics pane, Add **Symmetry shading**. We can see from the shading that Hosiery (the green bubble in the pink shaded area) is the only category that has a higher gross margin than its sales per store square footage. 
+
+    ![Screenshot of the bubble chart with symmetry shading added.](media/power-bi-visualization-scatter/power-bi-symmetry.png)
+
+    - Continue exploring the Analytics pane to discover interesting insights in your data. 
+
+    ![Screenshot of the bubble chart with symmetry shading added.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
 
 ## Create a dot plot chart
 
