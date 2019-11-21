@@ -1,8 +1,8 @@
 ---
 title: Create an Azure Active Directory tenant to use with Power BI
 description: Learn how to create a new Azure Active Directory (Azure AD) tenant for a custom application that calls Power BI REST APIs.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer

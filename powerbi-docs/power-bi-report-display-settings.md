@@ -62,7 +62,6 @@ The second set of Page view settings controls the positioning of objects on the 
 
 * 4:3 ratio
 * 16:9 ratio (default)
-* Cortana
 * Letter
 * Custom (height and width in pixels)
 

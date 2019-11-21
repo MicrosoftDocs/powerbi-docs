@@ -1,8 +1,8 @@
 ---
 title: Embedded analytics to embed Power BI content in your application for your organization
 description: Learn how to integrate or embed, a report (Power BI or Paginated), dashboard, or tile into an application using the Power BI APIs for embedded analytics for your organization. Learn how to integrate Power BI into your application using embedded analytics software, embedded analytics tools, or embedded business intelligence tools.
-author: rkarlin
-ms.author: rkarlin 
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
 ms.subservice: powerbi-developer
