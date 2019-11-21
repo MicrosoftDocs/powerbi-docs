@@ -38,10 +38,7 @@ These versions support the Power BI for iOS app:
 - iPhone 5 and above, with iOS 10 or later. 
 - iPod Touch with iOS 10 or later.
 
-### Download samples
-The first step is to download the Retail Analysis and Opportunity Analysis samples in the Power BI service.
-
-**Get the Retail Analysis sample**
+### Download a sample
 
 1. Open the Power BI service in your browser (app.powerbi.com) and sign in.
 
@@ -53,7 +50,7 @@ The first step is to download the Retail Analysis and Opportunity Analysis sampl
    
    ![Samples icon](./media/mobile-apps-ios-qna/power-bi-samples-icon.png)
 
-4. Select the **Retail Analysis sample**.
+4. Select a sample to download.
  
     ![Retail Analysis Sample](./media/mobile-apps-ios-qna/power-bi-rs.png)  
     
@@ -65,11 +62,6 @@ The first step is to download the Retail Analysis and Opportunity Analysis sampl
    
    ![Retail Analysis Sample dashboard](./media/mobile-apps-ios-qna/power-bi-service-opportunity-sample.png)
 
-**Get the Opportunity Analysis sample**
-
-- Go through the same steps as you did for the Retail Analysis sample, but in Step 4, select the **Opportunity Analysis sample**.
-
-    ![Retail Analysis Sample](./media/mobile-apps-ios-qna/power-bi-oa.png)
   
 OK, you're ready to view the samples on your iOS device.
 
