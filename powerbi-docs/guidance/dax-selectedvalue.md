@@ -13,13 +13,9 @@ ms.author: v-pemyer
 
 # DAX: Use SELECTEDVALUE instead of VALUES
 
-This article targets data modelers developing models in Power BI Desktop.
+As a data modeler, sometimes you might need to write a DAX expression that tests whether a column is filtered by a specific value.
 
-## Background
-
-Sometimes you might need to write a DAX expression that tests whether a column is filtered by a specific value. In earlier versions of DAX, this requirement was safely achieved by using a pattern involving three DAX functions. The functions are [IF](/dax/if-function-dax), [HASONEVALUE](/dax/hasonevalue-function-dax) and [VALUES](/dax/values-function-dax).
-
-The following measure definition presents an example. It calculates the sales tax amount, but only for sales made to Australian customers.
+In earlier versions of DAX, this requirement was safely achieved by using a pattern involving three DAX functions. The functions are [IF](/dax/if-function-dax), [HASONEVALUE](/dax/hasonevalue-function-dax) and [VALUES](/dax/values-function-dax). The following measure definition presents an example. It calculates the sales tax amount, but only for sales made to Australian customers.
 
 ```dax
 Australian Sales Tax =
@@ -52,3 +48,10 @@ IF(
 
 > [!TIP]
 > It's possible to pass an _alternate result_ value into the SELECTEDVALUE function. The alternate result value is returned when either no filters—or multiple filters—are applied to the column.
+
+## Next steps
+
+For more information about this article, check out the following resources:
+
+- [Data Analysis Expressions (DAX) Reference](/dax/)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
