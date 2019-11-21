@@ -132,7 +132,7 @@ Now let's add a third dimension.
     You can change the marker shape to a diamond, triangle, or square. Using a different marker shape for each line makes it easier for report consumers to differentiate lines (or areas) from each other.
 
 1. Open the Analytics pane ![Screenshot of the icon for the Analytics pane.](media/power-bi-visualization-scatter/power-bi-analytics.png) to add additional information to your visualization.  
-    - Add a Median line. Select **Median line** > **Add**. By default, Power BI adds a median line for *Sales per sq ft**. This isn't very helpful since we can see that there are 10 data points and know that the median will be created with five data points on each side. Instead, switch the **Measure** to *Total sales variance 50*.  
+    - Add a Median line. Select **Median line** > **Add**. By default, Power BI adds a median line for *Sales per sq ft**. This isn't very helpful since we can see that there are 10 data points and know that the median will be created with five data points on each side. Instead, switch the **Measure** to *Total sales variance %*.  
 
     ![Screenshot of the bubble chart with median line added.](media/power-bi-visualization-scatter/power-bi-analytics-median.png)
 
@@ -142,13 +142,13 @@ Now let's add a third dimension.
 
         ![Screenshot of the bubble chart with median line added.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
 
-        b. From the Analytics pane, Add **Symmetry shading**. We can see from the shading that Hosiery (the green bubble in the pink shaded area) is the only category that has a higher gross margin than its sales per store square footage. 
+        b. From the Analytics pane, add **Symmetry shading**. We can see from the shading that Hosiery (the green bubble in the pink shaded area) is the only category that favors  gross margin rather than its sales per store square footage. 
 
-    ![Screenshot of the bubble chart with symmetry shading added.](media/power-bi-visualization-scatter/power-bi-symmetry.png)
+        ![Screenshot of the bubble chart with symmetry shading added.](media/power-bi-visualization-scatter/power-bi-symmetry.png)
 
     - Continue exploring the Analytics pane to discover interesting insights in your data. 
 
-    ![Screenshot of the bubble chart with symmetry shading added.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
+        ![Screenshot of the bubble chart with symmetry shading added.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
 
 ## Create a dot plot chart
 
