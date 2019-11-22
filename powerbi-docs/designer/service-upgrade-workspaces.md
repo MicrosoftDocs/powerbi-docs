@@ -17,7 +17,7 @@ LocalizationGroup: Share your work
 This article explains how to upgrade a classic workspace to the new workspace experience. You can upgrade any classic workspace. The new workspaces have more granular workspace roles so you can better manage access to content. You have more flexibility managing upgraded workspaces because they're more loosely connected to their original Office 365 group. Learn about the [new workspace experience](../service-new-workspaces.md). 
 
 >[!NOTE]
->This documentation is pre-release, and covers a capability that isn't yet available. We've published it so you can prepare for the new capability and seek clarification of any questions you may have before the release.  
+>Workspace upgrade is available as a Public Preview. 
 
 ![Success upgrading](media/service-upgrade-workspaces/power-bi-upgrade-success.png)
 
@@ -194,7 +194,15 @@ Some organizations desire to move many or all workspaces to the new workspace ex
 2. Work with individual Office 365 group owners, or with your Office 365 Admin, to have them upgrade the workspaces. If you want to upgrade the workspace, you need to become an Owner of the group.
 
 The workspace upgrade capability doesn't provide tools for bulk or programmatic upgrade. Additionally, new Office 365 groups created in your organization will continue to appear in Power BI. 
-    
+   
+   
+## Known issues
+
+There are several known issue that you many encounter:
+- After upgrading users may see a "Failure to load model" warning dialog. This message is shown erroneously and can be ignored. 
+- After upgrading some workspace names are different than than before upgrade. When this occurs, the workspace name is either reverted to a previous name for the workspace or the workspace name become blank. To resolve this issue, rename the workspace to the desired name.
+- After upgrading a workspace that had an installed content pack, you may see additional dashboards in the workspace which were not visible before the upgrade. This occurs in some cases where a content pack has not been updated recently. You can safely remove these dashboards.
+
 
 
 ## Next steps
