@@ -8,7 +8,7 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/11/2019
+ms.date: 11/22/2019
 ms.author: davidi
 
 LocalizationGroup: Create reports
@@ -126,11 +126,8 @@ There are a few limitations and considerations to keep in mind.
 > [!IMPORTANT]
 > DAX statements for quick measures use only commas for argument separators. If your version of Power BI Desktop is in a language that uses commas as decimal separators, quick measures will not work properly.
 
-### Quick measures now generally available
-Beginning with the February 2018 release of Power BI Desktop, quick measures are generally available. If you're using an earlier release of Power BI Desktop, you can try quick measures beginning with the April 2017 release of Power BI Desktop. Select **File** > **Options and Settings** > **Options** > **Preview Features**, and then select the checkbox next to **Quick measures**. Restart Power BI Desktop after making this selection.
-
 ### Time intelligence and quick measures
-Beginning with the October 2017 update to Power BI Desktop, you can use your own custom date tables with time intelligence quick measures. If you're using an external tabular model, make sure that when the model was built, the primary date column in the table was marked as a date table, as described in [Specify Mark as Date Table for use with time-intelligence](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular). If you're importing your own date table, make sure to mark it as a date table, as described in [Set and use date tables in Power BI Desktop](desktop-date-tables.md).
+You can use your own custom date tables with time intelligence quick measures. If you're using an external tabular model, make sure that when the model was built, the primary date column in the table was marked as a date table, as described in [Specify Mark as Date Table for use with time-intelligence](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular). If you're importing your own date table, make sure to mark it as a date table, as described in [Set and use date tables in Power BI Desktop](desktop-date-tables.md).
 
 ### Additional information and examples
 Have an idea for a quick measure that isn't already provided? Great! Check out the [Power BI Ideas](https://go.microsoft.com/fwlink/?linkid=842906) page, and submit your ideas and DAX formulas for quick measures you'd like to see in Power BI Desktop. We'll consider adding them to the quick measures list in a future release.
