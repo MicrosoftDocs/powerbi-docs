@@ -38,7 +38,7 @@ To download Power BI Desktop, go to the [Power BI Desktop download](https://powe
 
 ![Download Power BI Desktop from Power BI service](media/desktop-getting-started/gsg_download.png)
 
-On the Microsoft Store page, select **Get**, and follow the prompts to install Power BI Desktop on your computer. Start Power BI Desktop from the Windows Start menu or from the icon in the Windows taskbar.
+On the Microsoft Store page, select **Get**, and follow the prompts to install Power BI Desktop on your computer. Start Power BI Desktop from the Windows **Start** menu or from the icon in the Windows taskbar.
 
 The first time Power BI Desktop starts, it displays the **Welcome** screen.
 
@@ -97,7 +97,7 @@ Notice that the **Applied Steps** in **Query Settings** already contain a few st
 
 ![Query Settings pane with three Applied Steps](media/desktop-getting-started/designer_gsg_appliedsteps_changedtype.png)
 
-You can change a data type by right-clicking a column header and selecting **Change Type**, then choosing the new data type from the menu. Or select a column, then drop down the list next to **Data Type** in the **Transform** group of the **Home** tab, and select a new data type. Hold down the **Shift** key to select several adjacent columns, or **Ctrl** to select non-adjacent columns. 
+If you need to change a data type, select the column or columns to change. Hold down the **Shift** key to select several adjacent columns, or **Ctrl** to select non-adjacent columns. Either right-click a column header, select **Change Type**, and choose a new data type from the menu, or drop down the list next to **Data Type** in the **Transform** group of the **Home** tab, and select a new data type.
 
 ![Change data type](media/desktop-getting-started/designer_gsg_changedatatype.png)
 
@@ -155,29 +155,37 @@ In the **Navigator** window, select the table **Codes and abbreviations for U.S.
 
 Remove all columns except for **Name and status of region**, **Name and status of region2**, and **ANSI**. To keep only these columns, hold down **Ctrl** and select the columns. Then, either right-click one of the column headers and select **Remove Other Columns**, or, from the **Manage Columns** group of the **Home** tab, select **Remove Other Columns**. 
 
-Drop down the arrow next to the **Name and status of region2** column header, and select **Filters** > **Equals**. In the **Filter Rows** dialog box, drop down the **Enter or select a value** field next to **equals** and select **State**. Select **Or**, and next to the second **equals** field, select **State ("Commonwealth")**. Select **OK**. 
+Drop down the arrow next to the **Name and status of region2** column header, and select **Filters** > **Equals**. In the **Filter Rows** dialog box, drop down the **Enter or select a value** field next to **equals** and select **State**. 
+
+Select **Or**, and next to the second **equals** field, select **State ("Commonwealth")**. Select **OK**. 
 
 ![Filter rows](media/desktop-getting-started/filterrows.png)
 
-You now have a list of the 50 states and their official two-letter abbreviations. You can rename the columns to make more sense, for example **State name**, **Status**, and **Abbreviation**, by right-clicking the column headers and selecting **Rename**.
+With extra values like **Federal district** and **island** removed, you now have a list of the 50 states and their official two-letter abbreviations. You can rename the columns to make more sense, for example **State name**, **Status**, and **Abbreviation**, by right-clicking the column headers and selecting **Rename**.
 
 Note that all of these steps are recorded under **Applied Steps** in the **Query Settings** pane.
 
 Retitle the table to *State codes* in the **Properties** field of **Query Settings**. 
 
-With the **State codes** table shaped, you can combine these two tables into one. Since the tables we now have are a result of queries we applied to the data, they're also called *queries*. There are two primary ways of combining queries: *merge* and *append*. 
+![Shaped State codes table](media/desktop-getting-started/statecodes.png)
+
+With the **State codes** table shaped, you can combine these two tables into one. Since the tables you now have are a result of queries you applied to the data, they're also called *queries*. There are two primary ways of combining queries: *merge* and *append*. 
 
 When you have one or more columns you'd like to add to another query, you *merge* the queries. When you have additional rows of data you'd like to add to an existing query, you *append* the query.
 
-In this case, you want to merge queries. To do this, switch to the **Best states for sunglasses** query by selecting it from the **Queries** pane on the left side of Power Query Editor. Select **Merge Queries** from the **Combine** group in the **Home** tab of the ribbon.
+In this case, you want to merge the **State codes** query into the **Best states for sunglasses** query. To merge the queries, switch to the **Best states for sunglasses** query by selecting it from the **Queries** pane on the left side of Power Query Editor. Then select **Merge Queries** from the **Combine** group in the **Home** tab of the ribbon.
 
-In the **Merge** window, drop down the field to select **State codes**, the only other query available. Select the column to match from each table, in this case **State** from the **Best states for sunglasses** query and **State name** from the **State codes** query. Select **OK**. If you get a **Privacy levels** dialog, select **Ignore privacy levels checks for this file** and then select **Save**. 
+In the **Merge** window, drop down the field to select **State codes**, the only other query available. Select the column to match from each table, in this case **State** from the **Best states for sunglasses** query and **State name** from the **State codes** query. 
+
+If you get a **Privacy levels** dialog, select **Ignore privacy levels checks for this file** and then select **Save**. Select **OK**. 
 
 ![Merge queries](media/desktop-getting-started/shapecombine_merge.png)
 
-A new column called **State codes** appears on the right of the **Best states for sunglass sales** table. It contains the state code query that you merged with the existing query. All the columns from the merged table are condensed into the **State codes** column. You can **Expand** the merged table and include whichever columns you want. 
+A new column called **State codes** appears on the right of the **Best states for sunglass sales** table. It contains the state code query that you merged with the existing query. All the columns from the merged table are condensed into the **State codes** column. You can *expand* the merged table and include whichever columns you want. 
 
-To expand the merged table and select which columns to include, select the expand icon in the column header. In the **Expand** dialog box, select only the **Abbreviation** column. Deselect **Use original column name as prefix**, and then select **OK**. 
+![Merged query column](media/desktop-getting-started/mergedquery.png)
+
+To expand the merged table and select which columns to include, select the **Expand** icon in the column header. In the **Expand** dialog box, select only the **Abbreviation** column. Deselect **Use original column name as prefix**, and then select **OK**. 
 
 ![Choose expanded column from merged table](media/desktop-getting-started/shapecombine_mergeexpand.png)
 
@@ -187,6 +195,8 @@ To expand the merged table and select which columns to include, select the expan
 For a more complete description of the shape and combine data steps, see [Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md).
 
 You now have a single query table that combines two data sources, each of which has been shaped to meet your needs. This query can serve as a basis for lots of additional, interesting data connections, such as demographics, wealth levels, or recreational opportunities in the states.
+
+![Shaped and combined queries](media/desktop-getting-started/mergedcolumn.png)
 
 For now, you have enough data to create an interesting report in Power BI Desktop. Since this is a milestone, apply the changes in **Power Query Editor** and load them into Power BI Desktop by selecting **Close & Apply** from the **Home** tab of the ribbon. You can also select just **Apply** to keep the query open in Power Query Editor while you work in Power BI Desktop. 
 
@@ -226,9 +236,7 @@ The **Visualizations** pane shows information about the visualization and lets y
 
 The options available in the **Fields** and **Format** areas depend on the type of visualization and data you have.
 
-You want your map visualization to show only the top 10 weather states. To show only the top 10 states, you can use the **Filters** pane. 
-
-In the **Filters** pane, hover over **State is (All)** and expand the arrow that appears. Under **Filter type**, drop down and select **Top N**. Under **Show items**, select **Bottom**, because you want to show the items with the lowest numerical ranks, and enter *10* in the next field.
+You want your map visualization to show only the top 10 weather states. To show only the top 10 states, in the **Filters** pane, hover over **State is (All)** and expand the arrow that appears. Under **Filter type**, drop down and select **Top N**. Under **Show items**, select **Bottom**, because you want to show the items with the lowest numerical ranks, and enter *10* in the next field.
 
 Drag the **Weather** field from the **Fields** pane into the **By value** field, and then select **Apply filter**. 
 
@@ -240,7 +248,7 @@ Retitle your visualization by selecting the **Format** icon in the **Visualizati
 
 ![Change title](media/desktop-getting-started/designer_gsg_report1.png)
 
-To add a visualization that shows the names of the top 10 weather states and their actual ranks from 1 to 10, click a blank area of the canvas and then select the **Column chart** icon from the **Visualization** pane. In the **Fields** pane, select **State** and **Weather**. You see a column chart showing the 40 states in your query, ranked from highest to lowest numerical rank. 
+To add a visualization that shows the names of the top 10 weather states and their actual ranks from 1 to 10, click a blank area of the canvas and then select the **Column chart** icon from the **Visualization** pane. In the **Fields** pane, select **State** and **Weather**. A column chart shows the 40 states in your query, ranked from highest to lowest numerical rank, or worst to best weather. 
 
 ![Column chart visualization](media/desktop-getting-started/gsg_share7.png)
 
@@ -250,7 +258,7 @@ To switch the order of the ranking so that number 1 appears first, select the **
 
 To limit the table to the top 10 states, apply the same bottom 10 filter as you did for the map visualization. 
 
-Retitle this visualization in the **Format** section of the **Visualization** pane, the same way as for the map visualization. Also in the **Format** section of the **Visualization** pane, turn the **Y axis** selector to **Off**, and turn **Data labels** to **On**. 
+Retitle the visualization the same way as for the map visualization. Also in the **Format** section of the **Visualization** pane, turn the **Y axis** selector to **Off**, and turn **Data labels** to **On**. 
 
 Before you turn off the Y axis, you can change the **Axis title** from **Weather** to *Weather ranking* to make it more understandable. Now, the top 10 weather states appear in ranked order along with their numerical rankings. 
 
@@ -261,6 +269,8 @@ You can make similar or other visualizations for the **Affordability** and **Ove
 ![Table and Line and clustered column visualizations](media/desktop-getting-started/designer_gsg_report2costofliving.png)
 
 You can show different visualizations on different report pages. To add a new page, select the **+** symbol next to the existing pages on the pages bar. To rename a page, double-click the page name in the pages bar, or right-click it and select **Rename Page**, and then type the new name. To go to a different page of the report, select the page from the pages bar. 
+
+![Pages bar](media/desktop-getting-started/pages.png)
 
 When you finish creating your pages and visualizations, select **File** > **Save** and save your report. 
 
