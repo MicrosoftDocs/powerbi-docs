@@ -52,6 +52,6 @@ The Intune portal enables administrators to easily deploy these settings to the 
 
 ## Next steps
 
-* Get the Power BI mobile app from the [App store]("https://apps.apple.com/app/microsoft-power-bi/id929738808) and [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409)
+* Get the Power BI mobile app from the [App store](https://apps.apple.com/app/microsoft-power-bi/id929738808) and [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409)
 * Follow [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
 * Join the conversation at the [Power BI Community](https://community.powerbi.com/)

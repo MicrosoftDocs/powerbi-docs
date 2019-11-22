@@ -1,5 +1,5 @@
 ---
-title: Embed Power BI paginated reports in your application for your customers
+title: Embed paginated reports in your application for your customers
 description: Learn how to integrate or embed a Power BI paginated report into an application, using the Power BI APIs.
 author: KesemSharabi
 ms.author: kesharab
@@ -33,6 +33,11 @@ To get started, you're required to have:
 * At least an A4 or a P1 [capacity](#create-a-dedicated-capacity), with [paginated reports](../service-admin-premium-workloads.md#paginated-reports) workload enabled
 
 If you don’t have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+
+> [!IMPORTANT]
+> * You must use a **service principal**. Master user is not supported.
+> * Datasources that require single sign-on (SSO), are not supported.
+> * Power BI dataset is not supported as a [datasource](../service-get-data.md).
 
 ## Set up your Power BI environment
 

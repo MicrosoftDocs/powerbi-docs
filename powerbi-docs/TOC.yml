@@ -279,8 +279,6 @@
         href: desktop-slicer-filter-date-range.md
       - name: "Create a slicer you can resize"
         href: power-bi-slicer-filter-responsive.md
-      - name: "Create custom answer cards for Cortana"
-        href: service-cortana-answer-cards.md
       - name: "Row-level security"
         href: desktop-rls.md
       - name: "Customizing tooltips"
@@ -409,6 +407,8 @@
     items: 
     - name: "Data types in Power BI Desktop"
       href: desktop-data-types.md
+    - name: "Power BI data sources"
+      href: power-bi-data-sources.md
     - name: "Use the updated ribbon in Power BI Desktop (preview)"
       href: desktop-ribbon.md            
     - name: "Formula editor shortcuts for Power BI Desktop"
@@ -477,6 +477,10 @@
         href: service-the-report-editor-take-a-tour.md
       - name: "Power BI data sources"
         href: service-get-data.md
+      - name: "Understand Power BI datasets"
+        href: service-datasets-understand.md
+      - name: "Understand Power BI dataset modes"
+        href: service-dataset-modes-understand.md
       - name: "Data refresh in Power BI"
         href: refresh-data.md
     - name: Collaborate in Power BI
@@ -509,7 +513,7 @@
         href: service-interruption-notifications.md
     - name: Extend Power BI
       items:         
-      - name: "Microsoft Flow and Power BI"
+      - name: "Power Automate and Power BI"
         href: service-flow-integration.md
       - name: "Use third-party apps"
         href: service-power-bi-get-started-third-party-apps.md
@@ -661,10 +665,6 @@
         href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: "Use Q&A with live connections"
         href: service-q-and-a-direct-query.md
-      - name: "Intro to Cortana for Power BI"
-        href: service-cortana-intro.md
-      - name: "Enable Cortana for Power BI"
-        href: service-cortana-enable.md
       - name: "Quick Insights in Power BI"
         href: service-insights.md
       - name: "Optimize data for Quick Insights"
@@ -797,8 +797,6 @@
         href: desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find any data in your Excel workbook"
         href: service-admin-troubleshoot-excel-workbook-data.md
-      - name: "Troubleshoot Cortana"
-        href: service-cortana-troubleshoot.md
       - name: "How to refresh your Xero content pack credentials if refresh failed"
         href: service-refresh-xero-credentials.md
     - name: Other tasks
@@ -1125,31 +1123,3 @@
     items:
     - name: "Monthly gateway updates"
       href: "/data-integration/gateway/service-gateway-monthly-updates"
-- name: Guidance
-  items:
-  - name: "Overview"
-    href: guidance/overview.md       
-  - name: "What is a star schema?"
-    href: guidance/star-schema.md
-  - name: "Reduce data model size"
-    href: guidance/import-modeling-data-reduction.md
-  - name: "DIVIDE function vs divide operator (/)"
-    href: guidance/dax-divide-function-operator.md
-  - name: "The importance of query folding"
-    href: guidance/power-query-folding.md
-  - name: "Appropriate use of error functions"
-    href: guidance/dax-error-functions.md
-  - name: "Best practices for dataflows"
-    href: service-dataflows-best-practices.md  
-  - name: "DirectQuery model guidance in Power BI Desktop"
-    href: guidance/directquery-model-guidance.md  
-  - name: Whitepapers
-    items: 
-    - name: "Whitepapers overview"
-      href: whitepapers.md
-    - name: "Power BI security whitepaper"
-      href: whitepaper-powerbi-security.md
-    - name: "Power BI premium deployment"
-      href: whitepaper-powerbi-premium-deployment.md
-    - name: "Distribute Power BI externally using Azure Active Directory B2B"
-      href: whitepaper-azure-b2b-power-bi.md

@@ -26,7 +26,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
 ### October 2019
-* New Microsoft Flow action to refresh Power BI datasets.
+* New Power Automate action to refresh Power BI datasets.
 * [Contact list](https://powerbi.microsoft.com/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) for reports and dashboards in the Power BI service.
 
 ## Previous months (2019)
@@ -223,7 +223,7 @@ Also, check out the YouTube channels for information about "What's new" and feat
 * [Power BI audit logs ](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#auditlogs) in the Office 365 auditing portal are globally available.
 * Version 1.4 of [developer tools and custom visuals APIs](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) released.
 * [Real-time streaming feature set](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) released to general availability.
-* [Push data to Power BI using Microsoft Flow](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) without writing a line of code.
+* [Push data to Power BI using Power Automate](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) without writing a line of code.
 * Preview: [Subscribe to report pages](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) to stay on top of your data.
 * Use the Azure AD Content Pack to learn more about how your employees and partners are using Azure AD.
 
@@ -527,7 +527,6 @@ For all the details, including a video demonstrating many of these updates, visi
 
 * Automatically discover trends and uncover patterns in a dataset with Quick Insights: [video](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) or  [article](consumer/end-user-insights.md)
 * [Visualize your VMob data in Power BI](https://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
-* [Power BI integration with Cortana](https://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [Preview of Power BI gateway for enterprise](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
 * Introducing a new content pack: [Search Analytics from Bing on Power BI dashboards](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
 * New Developer-focused enhancements: [Two new APIs and easier app  registration](https://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
