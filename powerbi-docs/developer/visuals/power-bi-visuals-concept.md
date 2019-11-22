@@ -125,4 +125,4 @@ More of updates come into call of `update` method.
 
 ## Next steps
 
-<!-- Todo add links to tutorial getting started visual development -->
+Are you a Web developer and interested in creating your own visualizations and adding them to AppSource? See [Developing a Power BI Visual](./custom-visual-develop-tutorial.md) and learn how to [publish Power BI visuals to AppSource](../office-store.md).
