@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+          "source_path": "powerbi-docs/desktop-directquery-data-sources.md",
+          "redirect_url": "/power-bi/power-bi-data-sources/",
+          "redirect_document_id": false
+        },
+        {
           "source_path": "powerbi-docs/service-admin-power-bi-expressroute.md",
           "redirect_url": "https://www.docs.microsoft.com/power-bi",
           "redirect_document_id": false
