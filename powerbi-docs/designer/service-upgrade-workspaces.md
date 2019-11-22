@@ -198,9 +198,9 @@ The workspace upgrade capability doesn't provide tools for bulk or programmatic 
    
 ## Known issues
 
-There are several known issue that you many encounter:
+There are several known issues that you may encounter:
 - After upgrading users may see a "Failure to load model" warning dialog. This message is shown erroneously and can be ignored. 
-- After upgrading some workspace names are different than than before upgrade. When this occurs, the workspace name is either reverted to a previous name for the workspace or the workspace name become blank. To resolve this issue, rename the workspace to the desired name.
+- After upgrading some workspace names are different than before upgrade. When this occurs, the workspace name is either reverted to a previous name for the workspace or the workspace name become blank. To resolve this issue, rename the workspace to the desired name.
 - After upgrading a workspace that had an installed content pack, you may see additional dashboards in the workspace which were not visible before the upgrade. This occurs in some cases where a content pack has not been updated recently. You can safely remove these dashboards.
 
 
