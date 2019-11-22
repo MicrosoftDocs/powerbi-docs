@@ -15,7 +15,7 @@ LocalizationGroup: Get started
 # Get started with Power BI Desktop
 Welcome to the getting started guide for Power BI Desktop. This tour shows you how Power BI Desktop works, what it can do, and how to build robust data models and amazing reports to amplify your business intelligence.
 
-for a quick overview of how Power BI Desktop works and how to use it, you can scan the screens in this guide in just a few minutes. For a more thorough understanding, you can read through each section, perform the steps, and create your own Power BI Desktop file to post on the [Power BI service](https://app.powerbi.com/) and share with others.
+For a quick overview of how Power BI Desktop works and how to use it, you can scan the screens in this guide in just a few minutes. For a more thorough understanding, you can read through each section, perform the steps, and create your own Power BI Desktop file to post on the [Power BI service](https://app.powerbi.com/) and share with others.
 
 You can also watch the [Getting Started with the Power BI Desktop](https://www.youtube.com/watch?v=Qgam9M8I0xA) video, and download the [Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962) Excel workbook to follow along with the video.
 
@@ -34,7 +34,7 @@ Ready to give it a try? Let's get started.
 > For data and reporting that must remain on-premises, there's a separate and specialized version of Power BI called [Power BI Report Server](report-server/get-started.md). Power BI Report Server uses a separate and specialized version of Power BI Desktop called Power BI Desktop for Power BI Report Server, which works only with the Report Server version of Power BI. This article describes standard Power BI Desktop.
 
 ## Install and run Power BI Desktop
-To download Power BI Desktop, go to [Power BI Desktop download](https://powerbi.microsoft.com/desktop) and select **Download Free**. Or, from the Power BI service, select the **Download** icon in the top menu bar, and then select **Power BI Desktop**.
+To download Power BI Desktop, go to the [Power BI Desktop download](https://powerbi.microsoft.com/desktop) page and select **Download Free**. Or, from the Power BI service, select the **Download** icon in the top menu bar, and then select **Power BI Desktop**.
 
 ![Download Power BI Desktop from Power BI service](media/desktop-getting-started/gsg_download.png)
 
@@ -93,7 +93,7 @@ Now that you're connected to a data source, you can adjust the data to meet your
 
 Shaping can mean *transforming* the data, such as renaming columns or tables, removing rows or columns, or changing data types. Power Query Editor captures these steps sequentially under **Applied Steps** in the **Query Settings** pane. Each time this query connects to the data source, those steps are carried out, so the data is always shaped the way you specify. This process occurs when you use the query in Power BI Desktop, or when anyone uses your shared query, such as in the Power BI service. 
 
-Notice that the **Applied Steps** in **Query Settings** already contain a few steps. You can select each step to see its effect in the Power Query Editor. First, you specified a web source, and then you previewed the table in the **Navigator** pane. In the third step, **Changed type**, Power BI recognized whole number data when importing it, and automatically changed the original web **Text** *data type* to **Whole numbers**. 
+Notice that the **Applied Steps** in **Query Settings** already contain a few steps. You can select each step to see its effect in the Power Query Editor. First, you specified a web source, and then you previewed the table in the **Navigator** window. In the third step, **Changed type**, Power BI recognized whole number data when importing it, and automatically changed the original web **Text** *data type* to **Whole numbers**. 
 
 ![Query Settings pane with three Applied Steps](media/desktop-getting-started/designer_gsg_appliedsteps_changedtype.png)
 
@@ -138,7 +138,7 @@ The finished query for your shaped data looks like this:
 
 ![Finished query](media/desktop-getting-started/shapecombine_querysettingsfinished.png)
 
-For more information about the preceding steps and other ways of shaping data, see [Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md).
+For more information about shaping data, see [Shape and combine data in Power BI Desktop](desktop-shape-and-combine-data.md).
 
 ## Combine data
 The data about various states is interesting, and will be useful for building additional analysis efforts and queries. But there's one problem: most data out there uses two-letter abbreviations for state codes, not the full names of the states. To use that data, you need some way to associate your state names with their abbreviations.
@@ -149,13 +149,13 @@ To import the state abbreviations data into Power Query Editor, select **New Sou
 
 ![New source](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
 
-In the **From Web** dialog box, enter the web resource for the state abbreviations site: *https:\//en.wikipedia.org/wiki/List_of_U.S._state_abbreviations*.
+In the **From Web** dialog box, enter the URL for the state abbreviations site: *https:\//en.wikipedia.org/wiki/List_of_U.S._state_abbreviations*.
 
 In the **Navigator** window, select the table **Codes and abbreviations for U.S. states, federal district, territories, and other regions**, and then select **OK**. The table opens in Power Query Editor.
 
 Remove all columns except for **Name and status of region**, **Name and status of region2**, and **ANSI**. To keep only these columns, hold down **Ctrl** and select the columns. Then, either right-click one of the column headers and select **Remove Other Columns**, or, from the **Manage Columns** group of the **Home** tab, select **Remove Other Columns**. 
 
-Drop down the arrow next to the **Name and status of region2** header, and select **Filters** > **Equals**. In the **Filter Rows** dialog box, drop down the **Enter or select a value** field next to **equals** and select **State**. Select **Or**, and next to the second **equals** field, select **State ("Commonwealth")**. Select **OK**. 
+Drop down the arrow next to the **Name and status of region2** column header, and select **Filters** > **Equals**. In the **Filter Rows** dialog box, drop down the **Enter or select a value** field next to **equals** and select **State**. Select **Or**, and next to the second **equals** field, select **State ("Commonwealth")**. Select **OK**. 
 
 ![Filter rows](media/desktop-getting-started/filterrows.png)
 
@@ -169,7 +169,7 @@ With the **State codes** table shaped, you can combine these two tables into one
 
 When you have one or more columns you'd like to add to another query, you *merge* the queries. When you have additional rows of data you'd like to add to an existing query, you *append* the query.
 
-In this case, you want to merge queries. To do this, switch to your **Best states for sunglasses** query by selecting it from the **Queries** pane on the left side of Power Query Editor. Select **Merge Queries** from the **Combine** group in the **Home** tab of the ribbon.
+In this case, you want to merge queries. To do this, switch to the **Best states for sunglasses** query by selecting it from the **Queries** pane on the left side of Power Query Editor. Select **Merge Queries** from the **Combine** group in the **Home** tab of the ribbon.
 
 In the **Merge** window, drop down the field to select **State codes**, the only other query available. Select the column to match from each table, in this case **State** from the **Best states for sunglasses** query and **State name** from the **State codes** query. Select **OK**. If you get a **Privacy levels** dialog, select **Ignore privacy levels checks for this file** and then select **Save**. 
 
@@ -206,7 +206,7 @@ In Power BI Desktop **Report** view, you can build reports. The **Report** view 
 5. The **Visualizations** pane, where you can add, change, or customize visualizations, and apply drillthrough.
 6. The **Fields** pane, which shows the available fields in your queries. You can drag these fields onto the canvas, the **Filters** pane, or the **Visualizations** pane to create or modify visualizations.
 
-You can expand and collapse the **Filters**, **Visualizations**, and **Fields** pane by selecting the arrows at the tops of the panes. Collapsing the panes provides more space on the canvas to build cool visualizations. 
+You can expand and collapse the **Filters**, **Visualizations**, and **Fields** panes by selecting the arrows at the tops of the panes. Collapsing the panes provides more space on the canvas to build cool visualizations. 
 
 ![Expand or collapse panes](media/desktop-getting-started/designer_gsg_collapsepanes.png)
 
@@ -221,7 +221,7 @@ The **Visualizations** pane shows information about the visualization and lets y
 ![The Visualization pane](media/desktop-getting-started/designer_gsg_visualizationtypes.png)
 
 1. The icons show the type of visualization created. You can change the type of a selected visualization by selecting a different icon, or create a new visualization by selecting an icon with no existing visualization selected. 
-2. The **Fields** option in the **Visualization** pane lets you drag data fields to **Legend** and other fields in the pane. 
+2. The **Fields** option in the **Visualization** pane lets you drag data fields to **Legend** and other field wells in the pane. 
 3. The **Format** option lets you apply formatting and other controls to visualizations. 
 
 The options available in the **Fields** and **Format** areas depend on the type of visualization and data you have.
