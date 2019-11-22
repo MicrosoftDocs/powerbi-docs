@@ -162,7 +162,7 @@ The SSO option takes effect across all datasets that use this data source. It do
 
 ## Next steps
 
-[Connect to data in Power BI Desktop](desktop-quickstart-connect-to-data.md)
-[Using DirectQuery in Power BI](desktop-directquery-about.md)
-[SQL Server Analysis Services live data in Power BI](sql-server-analysis-services-tabular-data.md)
-[What is an on-premises data gateway?](service-gateway-onprem.md)
+[Connect to data in Power BI Desktop](desktop-quickstart-connect-to-data.md)  
+[Using DirectQuery in Power BI](desktop-directquery-about.md)  
+[SQL Server Analysis Services live data in Power BI](sql-server-analysis-services-tabular-data.md)  
+[What is an on-premises data gateway?](service-gateway-onprem.md)  
