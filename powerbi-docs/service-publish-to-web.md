@@ -3,7 +3,6 @@ title: Publish to web from Power BI
 description: With Power BI Publish to web, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -131,7 +130,8 @@ Custom visuals are supported in **Publish to web**. When you use **Publish to we
 - ArcGIS Maps for Power BI visuals.
 - Reports containing report-level DAX measures.
 - Single sign-on data query models.
-- [Secure confidential or proprietary information](#publish-to-web-from-power-bi).
+- Secure confidential or proprietary information.
+- [Shared and certified datasets](service-datasets-share.md).
 - The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embed-sample-for-your-organization.md) approach to embedding.
 
 ## Tenant setting
@@ -181,4 +181,4 @@ The cache is long-lived, so if you update the report definition (for example, if
 
 - [Embed report in a secure portal or website](service-embed-secure.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

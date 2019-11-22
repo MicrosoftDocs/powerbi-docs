@@ -2,7 +2,6 @@
 title: 'Customer Profitability sample for Power BI: Take a tour'
 description: 'Customer Profitability sample for Power BI: Take a tour'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 
 ms.service: powerbi
@@ -49,11 +48,11 @@ Before you can use the sample, you must first download it as a [content pack](#g
 
 ### Get the .pbix file for this sample
 
-Alternatively, you can download the Customer Profitability sample as a [.pbix file](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
+Alternatively, you can download the Customer Profitability sample as a [.pbix file](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix), which is designed for use with Power BI Desktop.
 
 ### Get the Excel workbook for this sample
 
-If you want to view the data source for this sample, it's also available as an [Excel workbook](http://go.microsoft.com/fwlink/?LinkId=529781). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
+If you want to view the data source for this sample, it's also available as an [Excel workbook](https://go.microsoft.com/fwlink/?LinkId=529781). The workbook contains Power View sheets that you can view and modify. To see the raw data, enable the Data Analysis add-ins, and then select **Power Pivot > Manage**. To enable the Power View and Power Pivot add-ins, see [Take a look at the Excel samples from inside Excel itself](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for details.
 
 ## What is our dashboard telling us?
 
@@ -125,7 +124,7 @@ Many of the tiles on the Customer Profitability sample dashboard were pinned fro
 
     * **Team Scorecard** focuses on the performance of the five managers and their books of business.
     * **Industry Margin Analysis** provides a way to analyze the profitability compared to what's happening in the entire industry.
-    * **Executive Scorecard** provides a view of each of the managers, formatted for viewing in Cortana.
+    * **Executive Scorecard** provides a view of each of the managers, in a custom page size format.
 
 ### Team Scorecard page
 ![Team scorecard report page](media/sample-customer-profitability/customer2.png)
@@ -167,7 +166,7 @@ This report page provides a different slice of the data. It looks at gross margi
    * Valery, who is responsible for only one product, works in only five industry segments. Valery's industry influence is seasonal, but always produces a large bubble, indicating a significant impact on the company’s bottom line. Do the industry segments explain their negative performance?
 
 ### Executive Scorecard
-This page is formatted as a Cortana answer page. To learn more, see [Create a custom answer page for Cortana](service-cortana-answer-cards.md).
+This page has a custom page size format.
 
 ## Dig into the data by asking questions with Q&A
 For our analysis, it might be helpful to determine which industry generates the most revenue for Valery. Let’s use Q&A.

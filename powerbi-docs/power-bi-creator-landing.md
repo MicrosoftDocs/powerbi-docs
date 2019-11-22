@@ -1,8 +1,6 @@
 ---
 title: Power BI for report designers
 description: Do you connect to data, design queries, and create reports and dashboards in Power BI? Are you a Power BI admin?
-author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: landing-page
@@ -154,7 +152,7 @@ Are you more of a Power BI consumer? Welcome to you, too. We suggest starting wi
                                           <h3>Share your work</h3> 
                                           <p></p>
                                                 <a href="service-how-to-collaborate-distribute-dashboards-reports.md">How should I collaborate & share?</a><br/>
-                                                <a href="service-create-workspaces.md">App workspaces in the Power BI service</a> 
+                                                <a href="service-create-workspaces.md">Workspaces in the Power BI service</a> 
                                     </div> 
                               </div> 
                         </div> 

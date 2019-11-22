@@ -3,7 +3,6 @@ title: Use Kerberos for single sign-on (SSO) to SAP HANA
 description: Configure your SAP HANA server to enable SSO from Power BI service
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -50,7 +49,7 @@ Now, [Run a Power BI report](service-gateway-sso-kerberos.md#run-a-power-bi-repo
 
 For more information about the on-premises data gateway and DirectQuery, see the following resources:
 
-* [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-getting-started)
+* [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery in Power BI](desktop-directquery-about.md)
 * [Data sources supported by DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery and SAP BW](desktop-directquery-sap-bw.md)

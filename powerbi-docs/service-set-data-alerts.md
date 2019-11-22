@@ -2,7 +2,6 @@
 title: Set data alerts in the Power BI service
 description: Learn to set alerts to notify you when data in your dashboards changes beyond limits you set in Microsoft Power BI service.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
@@ -19,7 +18,7 @@ Set alerts to notify you when data in your dashboards changes beyond limits you 
 
 You can set alerts on tiles if you have a Power BI Pro license. You can also set alerts if someone  shares a dashboard that's in a [Premium capacity](service-premium-what-is.md). Alerts can only be set on tiles pinned from report visuals, and only on gauges, KPIs, and cards. Alerts can be set on visuals created from streaming datasets that you pin from a report to a dashboard. Alerts can't be set on streaming tiles created directly on the dashboard using **Add tile** > **Custom streaming data**.
 
-Only you can see the alerts you set, even if you share your dashboard. Even the dashboard owner can't see alerts you set on your view of their dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. They aren't available for Power BI Desktop. You can even automate and integrate alerts with Microsoft Flow. You can try it yourself in this [Microsoft Flow and Power BI](service-flow-integration.md) article.
+Only you can see the alerts you set, even if you share your dashboard. Even the dashboard owner can't see alerts you set on your view of their dashboard. Data alerts are fully synchronized across platforms; set and view data alerts [in the Power BI mobile apps](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) and in the Power BI service. They aren't available for Power BI Desktop. You can even automate and integrate alerts with Power Automate. You can try it yourself in this [Power Automate and Power BI](service-flow-integration.md) article.
 
 ![tiles](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
@@ -121,10 +120,10 @@ There are many ways to manage your alerts:
 
 ## Next steps
 
-* [Create a Microsoft Flow that includes a data alert](service-flow-integration.md).
+* [Create a Power Automate that includes a data alert](service-flow-integration.md).
 
 * [Set data alerts on your mobile device](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 * [What is Power BI?](fundamentals/power-bi-overview.md)
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

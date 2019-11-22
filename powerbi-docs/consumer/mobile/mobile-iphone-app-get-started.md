@@ -2,7 +2,6 @@
 title: Get started with the Power BI mobile app for iOS
 description: Learn how the Microsoft Power BI mobile app for iOS app brings Power BI to your pocket, with mobile access to business information on premises and in the cloud.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -27,7 +26,7 @@ Then in the Power BI mobile app for iOS, you interact with your dashboards and r
 Find out [what's new in the Power Bi mobile apps](mobile-whats-new-in-the-mobile-apps.md).
 
 ## Download the app
-[Download the iOS app](http://go.microsoft.com/fwlink/?LinkId=522062 "Download the iOS app")  from the Apple App Store to your iPhone, iPad, or iPod Touch.
+[Download the iOS app](https://go.microsoft.com/fwlink/?LinkId=522062 "Download the iOS app")  from the Apple App Store to your iPhone, iPad, or iPod Touch.
 
 You can run the Power BI for iOS app on any device running iOS 11 or later. 
 
@@ -71,7 +70,7 @@ You can view and interact with the Power BI dashboard samples, but there are a f
 ## Find your content in the Power BI mobile apps
 Your dashboards and reports are stored in different locations in the Power BI mobile apps, depending on where they came from. Read  about [finding your content in the mobile apps](mobile-apps-quickstart-view-dashboard-report.md). Plus you can always search for anything you have in the Power BI mobile apps. 
 
-![Left navigation pane](./media/mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
+![Nav pane](./media/mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
 
 Read more about [finding your content in the mobile apps](mobile-apps-quickstart-view-dashboard-report.md).
 
@@ -80,7 +79,7 @@ On the Favorites page in the mobile apps, you see all of your favorite Power BI 
 
 * Tap **Favorites**.
   
-   ![Favorites in the left navigation pane](./media/mobile-iphone-app-get-started/power-bi-iphone-favorites-nav.png)
+   ![Favorites in the nav pane](./media/mobile-iphone-app-get-started/power-bi-iphone-favorites-nav.png)
   
    You see all your favorites together on this page:
   
@@ -106,6 +105,6 @@ Read more about [configuring Power BI mobile apps with Microsoft Intune](../../s
 ## Next steps
 
 * [What is Power BI?](../../fundamentals/power-bi-overview.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 
 

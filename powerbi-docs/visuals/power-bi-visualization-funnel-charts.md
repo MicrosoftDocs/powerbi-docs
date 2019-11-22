@@ -2,7 +2,6 @@
 title: Funnel charts
 description: 'Funnel charts in Power BI'
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: maTzOJSRB3g
 
@@ -48,7 +47,7 @@ Funnel charts:
    > 
 ## Prerequisite
 
-This tutorial uses the [Opportunity Analysis sample PBIX file](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix
+This tutorial uses the [Opportunity Analysis sample PBIX file](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix
 ).
 
 1. From the upper left section of the menubar, select **File** > **Open**

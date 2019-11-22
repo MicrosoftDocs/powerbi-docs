@@ -62,7 +62,7 @@ To delete a shortcut, go to the item, and from the actions menu (...), tap the *
 ## Next steps
 Learn more about the Power BI mobile app by doing the following: 
 
-* Downloading the [Power BI iPhone mobile app](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Downloading the [Power BI iPhone mobile app](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Following [@MSPowerBI on Twitter](https://twitter.com/MSPowerBI)
-* Joining the conversation at the [Power BI Community](http://community.powerbi.com/)
+* Joining the conversation at the [Power BI Community](https://community.powerbi.com/)
 

@@ -3,7 +3,6 @@ title: How to configure workloads in Power BI Premium
 description: Learn how to configure workloads in a Power BI Premium capacity.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -194,4 +193,4 @@ The [Power BI Premium Capacity Metrics app](service-admin-premium-monitor-capaci
 [What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
 [Automatic page refresh in Power BI Desktop (preview)](desktop-automatic-page-refresh.md)
 
-More questions? [Ask the Power BI Community](http://community.powerbi.com/)
+More questions? [Ask the Power BI Community](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Organize work in the new workspaces in Power BI
 description: Learn about the new workspaces, which are collections of dashboards and reports built to deliver key metrics for your organization.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -26,7 +25,7 @@ With the new workspaces, you can:
 
 - Assign workspace roles to user groups: security groups, distribution lists, Office 365 groups, and individuals.
 - Create a workspace in Power BI without creating an Office 365 group.
-- Use more granular workspaces roles for more flexible permissions management in a workspace.
+- Use more granular workspace roles for more flexible permissions management in a workspace.
 - The Power BI admin can control who can create workspaces in Power BI.
 
 When you create one of the new workspaces, you're not creating an underlying, associated Office 365 group. All the workspace administration is in Power BI, not in Office 365. In the new workspace experience, you can now add an Office 365 group in the workspace access list to continue managing user access to content through Office 365 groups.
@@ -158,4 +157,4 @@ Yes. Since we support both types of workspaces side by side, we continue to list
 * [Create the new workspaces in Power BI](service-create-the-new-workspaces.md)
 * [Create the classic workspaces](service-create-workspaces.md)
 * [Install and use apps in Power BI](service-create-distribute-apps.md)
-* Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* Questions? [Try asking the Power BI Community](https://community.powerbi.com/)

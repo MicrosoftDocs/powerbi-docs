@@ -2,7 +2,6 @@
 title: Refresh a dataset created from an Excel workbook - cloud
 description: Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 
 ms.service: powerbi
@@ -114,5 +113,5 @@ Sometimes refreshing data may not go as expected. Typically this is an issue con
 - [Troubleshooting the On-premises data gateway](service-gateway-onprem-tshoot.md)
 - [Troubleshooting the Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)
 

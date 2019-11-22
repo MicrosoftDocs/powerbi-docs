@@ -1,9 +1,8 @@
 ---
 title: Manage multi-tenancy with Power BI embedded analytics
 description: Design a multi-tenant application with embedded analytics.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -50,7 +49,7 @@ This article describes the different approaches and analyzes them according to s
 
 **Capacity** - A set of resources dedicated to running the Power BI service. [Power BI Premium capacities](../service-premium-what-is.md) Intended for enterprise companies using Power BI internally, while [Power BI Embedded capacities](azure-pbie-create-capacity.md) intend for application developers to develop SaaS applications for third parties.
 
-**[Power BI Pro license](../service-admin-purchasing-power-bi-pro.md)** - A user-based license, which grants rights to publish content to app workspaces, consume apps without Premium capacity, share dashboards, and subscribe to dashboards and reports.
+**[Power BI Pro license](../service-admin-purchasing-power-bi-pro.md)** - A user-based license, which grants rights to publish content to workspaces, consume apps without Premium capacity, share dashboards, and subscribe to dashboards and reports.
 
 **[Data connectivity modes](../desktop-directquery-about.md)** - Connecting data sources to Power BI that can be done in different modes:
 

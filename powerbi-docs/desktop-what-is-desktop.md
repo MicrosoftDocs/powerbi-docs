@@ -2,7 +2,6 @@
 title: What is Power BI Desktop?
 description: Learn what Power BI Desktop is, and how to get started using it
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -97,4 +96,4 @@ Once you select **Publish**, Power BI Desktop connects you to the **Power BI ser
 To get started with **Power BI Desktop**, the first thing you need is to download and install the application. There are two ways to get **Power BI Desktop**:
 
 * [Download Power BI Desktop from the web](desktop-get-the-desktop.md)
-* [Get Power BI Desktop from the Windows Store](http://aka.ms/pbidesktopstore)
+* [Get Power BI Desktop from the Windows Store](https://aka.ms/pbidesktopstore)

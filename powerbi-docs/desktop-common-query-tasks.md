@@ -2,7 +2,6 @@
 title: Common query tasks in Power BI Desktop
 description: Common query tasks in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -28,9 +27,9 @@ The common query tasks demonstrated here are the following:
 
 We’ll use a few data connections to complete these tasks. The data is available for you to download or connect to, in case you want to step through these tasks yourself.
 
-The first data connection is an Excel workbook, which you can download from [this link](http://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx). The other is a Web resource (which is also used in other Power BI Desktop help content) which can be accessed from here:
+The first data connection is an Excel workbook, which you can download from [this link](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx). The other is a Web resource (which is also used in other Power BI Desktop help content) which can be accessed from here:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 The steps necessary to connect to both of those data sources is where the common Query tasks begin.
 
@@ -139,7 +138,7 @@ Query Editor keeps all applied steps for each query as text that you can view or
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
 
-Here's a look at the **Advanced Editor**, with the query steps associated with the **USA\_StudentEnrollment** query displayed. These steps are created in the Power Query Formula Language, often referred to as **M**. For information, see [Learn about Power Query formulas](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). To view the language specification itself, see [Microsoft Power Query for Excel Formula Language Specification](http://go.microsoft.com/fwlink/?linkid=320633).
+Here's a look at the **Advanced Editor**, with the query steps associated with the **USA\_StudentEnrollment** query displayed. These steps are created in the Power Query Formula Language, often referred to as **M**. For information, see [Learn about Power Query formulas](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). To view the language specification itself, see [Microsoft Power Query for Excel Formula Language Specification](/powerquery-m/excel-workbook).
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 

@@ -2,7 +2,6 @@
 title: Using calculated columns in Power BI Desktop
 description: Calculated columns in Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi

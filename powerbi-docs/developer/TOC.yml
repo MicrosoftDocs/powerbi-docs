@@ -12,7 +12,7 @@
     - name: Overview
       items: 
       - name: "Visuals in Power BI"
-        href: ../power-bi-custom-visuals.md
+        href: power-bi-custom-visuals.md
     - name: Tutorials
       items:
       - name: "Develop a Power BI visual"
@@ -24,11 +24,11 @@
     - name: Concepts
       items:
       - name: "Visuals for organizations in Power BI"
-        href: ../power-bi-custom-visuals-organization.md
+        href: power-bi-custom-visuals-organization.md
       - name: "Guidelines for Power BI visuals" 
         href: guidelines-powerbi-visuals.md
       - name: "Visuals FAQ"
-        href: ../power-bi-custom-visuals-faq.md
+        href: power-bi-custom-visuals-faq.md
       - name: "Using capabilities"
         href: visuals/capabilities.md
       - name: "Data view mappings"
@@ -40,13 +40,15 @@
     - name: How to
       items:
       - name: "Get a visual certified"
-        href: ../power-bi-custom-visuals-certified.md
+        href: power-bi-custom-visuals-certified.md
       - name: "Publish custom visuals to AppSource"
         href: office-store.md
       - name: "Use R-powered custom visuals in Power BI"
-        href: ../desktop-r-powered-custom-visuals.md
+        href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
       - name: "Visuals interactions"
         href: visuals/visuals-interactions.md
+      - name: "Add selections"
+        href: visuals/selection-api.md
       - name: "Add visuals tooltips"
         href: visuals/add-tooltips.md
       - name: "Add analytics pane" 
@@ -57,6 +59,8 @@
         href: visuals/fetch-more-data.md
       - name: "Add bookmarks support"
         href: visuals/bookmarks-support.md
+      - name: "Add context menu support"
+        href: visuals/context-menu.md
       - name: "Highlight data in visuals"
         href: visuals/highlight.md
       - name: "Add High-Contrast mode support"
@@ -64,17 +68,21 @@
       - name: "Enable sync slicers"
         href: visuals/enable-sync-slicers.md
       - name: "Troubleshoot Power BI visuals"
-        href: ../power-bi-custom-visuals-troubleshoot.md
+        href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
       items: 
       - name: "Landing page" 
         href: visuals/landing-page.md
       - name: "Launch URL" 
         href: visuals/launch-url.md
+      - name: "Local Storage API" 
+        href: visuals/local-storage.md
       - name: "Rendering events" 
         href: visuals/event-service.md
       - name: "Sorting"
         href: visuals/sort-options.md
+      - name: "Interactivity utils"
+        href: visuals/utils-interactivity-selections.md
     - name: Resources
       items:
       - name: "Dev Center"
@@ -100,6 +108,8 @@
         href: embed-sample-for-customers.md
       - name: "Embed content for your organization"
         href: embed-sample-for-your-organization.md
+      - name: "Embed paginated reports for customers"
+        href: embed-paginated-reports-customers.md
       - name: "Embed content for national clouds"
         href: embed-sample-for-customers-national-clouds.md
     - name: Concepts
@@ -110,6 +120,8 @@
         href: embed-service-principal.md
       - name: "Row-level security"
         href: embedded-row-level-security.md
+      - name: "Paginated reports Row-level security"
+        href: paginated-reports-row-level-security.md
       - name: "Manage multi-tenants"
         href: embed-multi-tenancy.md
       - name: "Azure diagnostic logging for Power BI Embedded"
@@ -130,7 +142,7 @@
         href: register-app.md
       - name: "Get an Azure AD access token"
         href: get-azuread-access-token.md
-      - name: "Dynamic binding"
+      - name: "Connect a report using dynamic binding"
         href: embed-dynamic-binding.md
       - name: "Embedding Q&A"
         href: qanda.md

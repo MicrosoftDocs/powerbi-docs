@@ -2,7 +2,6 @@
 title: View Power BI reports optimized for your phone
 description: Read about interacting with report pages optimized for viewing in the Power BI phone apps.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 
 ms.service: powerbi
@@ -130,5 +129,5 @@ Report authors can [define drill through](https://docs.microsoft.com/power-bi/de
 * [Create reports optimized for the Power BI phone apps](../../desktop-create-phone-report.md)
 * [Create a phone view of a dashboard in Power BI](../../service-create-dashboard-mobile-phone-view.md)
 * [Create responsive visuals optimized for any size](../../visuals/desktop-create-responsive-visuals.md)
-* More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+* More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
 

@@ -2,7 +2,6 @@
 title: Best practices to optimize Q&A
 description: How to optimize Power BI Q&A and make it work better
 author: mohaali
-manager: mohaali
 
 ms.service: powerbi
 ms.subservice: powerbi-service

@@ -3,7 +3,6 @@ title: Power BI REST API Reference
 description: Power BI REST API Reference
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -30,4 +29,4 @@ The Power BI REST API has the following operations:
 
 To learn more about the Power BI REST API, see [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/).
 
-More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+More questions? [Try asking the Power BI Community](https://community.powerbi.com/)

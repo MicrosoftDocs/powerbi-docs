@@ -2,7 +2,6 @@
 title: Edit Q&A linguistic schema and add phrasings in Power BI Desktop
 description: How to use Power BI Desktop to edit the linguistic schema used by Power BI Q&A.
 author: mohaali
-manager: mohaali
 
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -339,4 +338,4 @@ If you make a change to a .lsdl.yaml file that does not conform to the linguisti
 
 ![yaml file showing errors](media/q-and-a-tooling-advanced/power-bi-yaml-errors.png)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+More questions? [Try the Power BI Community](https://community.powerbi.com/)

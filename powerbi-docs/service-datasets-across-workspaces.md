@@ -2,7 +2,6 @@
 title: Intro to datasets across workspaces (Preview)
 description: Learn how you can share a dataset with users across the organization. Then they can build reports based on your dataset in their own workspaces.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -57,7 +56,7 @@ The specific features and experiences built on shared dataset capabilities are l
 
 ## Considerations and limitations
 
-- As an app publisher you have to make sure that your audience has access to datasets outside of the app workspace. Otherwise, users will encounter issues when interacting with your app: reports won’t open without dataset access, and dashboard tiles will show as locked. Also, users won’t be able to open the app if the first item in its navigation is a report without access to the dataset.
+- As an app publisher you have to make sure that your audience has access to datasets outside of the workspace. Otherwise, users will encounter issues when interacting with your app: reports won’t open without dataset access, and dashboard tiles will show as locked. Also, users won’t be able to open the app if the first item in its navigation is a report without access to the dataset.
 - Building a report on top of a dataset in a different workspace requires the new workspace experience at both ends: The report needs to be in a new workspace experience and the dataset needs to be in a new workspace experience.
 - In a classic workspace, the dataset discovery experience only shows the datasets in that workspace.
 - By design, “Publish to web” doesn’t work for a report based on a shared dataset.
@@ -68,4 +67,4 @@ The specific features and experiences built on shared dataset capabilities are l
 - [Promote datasets](service-datasets-promote.md)
 - [Certify datasets](service-datasets-certify.md)
 - [Govern the use of datasets across workspaces](service-datasets-admin-across-workspaces.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
