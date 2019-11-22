@@ -407,6 +407,8 @@
     items: 
     - name: "Data types in Power BI Desktop"
       href: desktop-data-types.md
+    - name: "Power BI data sources"
+      href: power-bi-data-sources.md
     - name: "Use the updated ribbon in Power BI Desktop (preview)"
       href: desktop-ribbon.md            
     - name: "Formula editor shortcuts for Power BI Desktop"
