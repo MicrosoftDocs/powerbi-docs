@@ -19,7 +19,7 @@ LocalizationGroup: Get started
 
 We're excited about our November updates, which are as welcome as a happy family gathering. 
 
-Download the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from Microsoft Store on Windows 10. Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
+Get the latest version of Power BI Desktop from the [Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=58494). If you're running Windows 10, you can also get Power BI Desktop from Microsoft Store on Windows 10. Regardless of how you install Power BI Desktop, the monthly versions are the same, although the version numbering may differ. For more information about downloading and installing Power BI Desktop, see [Get Power BI Desktop](desktop-get-the-desktop.md). 
 
 > [!IMPORTANT]
 > Beginning with the September 2019 release, Power BI Desktop is released only as a single .exe file, which contains all supported languages. The .msi version is no longer being released.
@@ -27,9 +27,9 @@ Download the latest version of Power BI Desktop from the [Download Center](https
 
 The links beside each feature in the Power BI Desktop update list are interpreted as follows:
 
-* Most features are explained in a section in the monthly update *[blog]* post.
-* Some features have a *[video]* excerpt that discusses the feature, which plays in a new browser tab.
-* Some features have an *[article]* that provides more detail.
+* [blog]: Most features are explained in a section in the monthly update blog post.
+* [video]: Some features have a video excerpt that discusses the feature, which plays in a new browser tab.
+* [article]: Some features have an article that provides more detail.
 * The remaining features are self-explanatory and don't need an article or video.
 
 You can also watch the entire [Power BI Desktop monthly update video](#power-bi-desktop-monthly-update-video).
@@ -72,18 +72,19 @@ The following updates are new to Power BI Desktop this month:
 * LinkedIn Sales Navigator for Sales Operations  [[video]](https://youtu.be/kVli3Vm_kDo?t=2039)  [[article]](desktop-connect-linkedin-sales-navigator.md#using-the-linkedin-sales-navigator-template-app)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/#linkedInTemplateApp) 
 
 
+For detailed information about each of these new features, see [Power BI Desktop November 2019 feature summary](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/).
+
+Check out [what's new in the Power BI service](service-whats-new.md), and [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 > [!NOTE]
 > See the [data sources available to Power BI Desktop](desktop-data-sources.md). Our list is always growing, so check back often.
 
-Want more information about these updates? See the [Power BI Desktop November 2019 feature summary](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2019-feature-summary/), where you can get more detailed information about each of these new features.
 
 ## Power BI Desktop monthly update video
 The following video describes each of these updates. You can also watch this video from the blog post:
 
 > [!VIDEO https://www.youtube.com/embed/kVli3Vm_kDo]
 
-Check out [what's new in the Power BI service](service-whats-new.md), and [what's new in the mobile apps for Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 ## More videos
 
@@ -92,6 +93,6 @@ Like learning about Power BI through videos and other engaging content? Check ou
 -   [Power BI channel](https://www.youtube.com/user/mspowerbi): a collection of Power BI videos on YouTube.
 -   [Guided learning for Power BI](https://powerbi.microsoft.com/guided-learning/): a sequential learning tour of Power BI, in bite-size pieces.
 
-## Updates in previous months
+## Updates for previous months
 
-Looking for Power BI Desktop updates in previous months? You can find them in the [Power BI Desktop monthly updates archive](desktop-latest-update-archive.md).
+Looking for Power BI Desktop updates for previous months? You can find them in the [Power BI Desktop monthly updates archive](desktop-latest-update-archive.md).
