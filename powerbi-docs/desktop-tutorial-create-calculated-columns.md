@@ -28,67 +28,67 @@ This tutorial will guide you through understanding and creating some calculated 
 
 ## Create a calculated column with values from related tables
 
-In your Sales Report, you want to display product categories and subcategories as single values, like "Cell phones – Accessories", "Cell phones – Smartphones & PDAs", and so on. There's no field in the **Fields** list that gives you that data, but there is a **ProductCategory** field and a **ProductSubcategory** field, each in its own table. You can create a calculated column that combines values from these two columns. DAX formulas can leverage the full power of the model you already have, including relationships between different tables that already exist. 
+In your Sales Report, you want to display product categories and subcategories as single values, like "Cell phones – Accessories", "Cell phones – Smartphones & PDAs", and so on. There's no field in the **Fields** list that gives you that data, but there is a **ProductCategory** field and a **ProductSubcategory** field, each in its own table. You can create a calculated column that combines values from these two columns. DAX formulas can leverage the full power of the model you already have, including relationships between different tables that already exist.
 
  ![Columns in Fields list](media/desktop-tutorial-create-calculated-columns/create1.png)
 
-1.  Select **More options** (...), or right-click, on the **ProductSubcategory** table in the Fields list, and then select **New Column**. This creates your new column in the ProductSubcategory table.
-    
-    ![New Column](media/desktop-tutorial-create-calculated-columns/create2.png)
-    
-    The formula bar appears along the top of the Report canvas, ready for you to name your column and enter a DAX formula.
-    
-    ![Formula bar](media/desktop-tutorial-create-calculated-columns/create3.png)
-    
-2.  By default, a new calculated column is simply named Column. If you don’t rename it, additional new columns will named Column 2, Column 3, and so on. You want your column to be more identifiable, so since the **Column** name is already highlighted in the formula bar, rename it by typing **ProductFullCategory**, and then type an equals (**=**) sign.
-    
-3.  You want the values in your new column to start with the ProductCategory name. Because this column is in a different but related table, you can use the [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) function to help you get it.
-    
-    After the equals sign, type **r**. A dropdown suggestion list shows all of the DAX functions beginning with the letter R. Selecting each function shows a description of its effect. As you type, the suggestion list scales closer to the function you need. Select **RELATED**, and then press **Enter**.
-    
-    ![Choose RELATED](media/desktop-tutorial-create-calculated-columns/create4.png)
-    
-    An opening parenthesis appears, along with another suggestion list of the related columns you can pass to the RELATED function, with descriptions and details on expected parameters. 
-    
-    ![Choose ProductCategory](media/desktop-tutorial-create-calculated-columns/create5.png)
-    
-4.  You want the **ProductCategory** column from the **ProductCategory** table. Select **ProductCategory[ProductCategory]**, press **Enter**, and then type a closing parenthesis.
-    
+1. To create your new column in the **ProductSubcategory** table, right-click or select the ellipsis **...** next to **ProductSubcategory** in the **Fields** pane, and select **New Column** from the menu that appears.
+
+   ![New Column](media/desktop-tutorial-create-calculated-columns/create2.png)
+
+   The formula bar appears along the top of the Report canvas, ready for you to name your column and enter a DAX formula.
+
+   ![Formula bar](media/desktop-tutorial-create-calculated-columns/create3.png)
+
+2. By default, a new calculated column is simply named Column. If you don’t rename it, additional new columns will be named Column 2, Column 3, and so on. You want your column to be more identifiable, so while the **Column** name is already highlighted in the formula bar, rename it by typing **ProductFullCategory**, and then type an equals (**=**) sign.
+
+3. You want the values in your new column to start with the ProductCategory name. Because this column is in a different but related table, you can use the [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) function to help you get it.
+
+   After the equals sign, type **r**. A dropdown suggestion list shows all of the DAX functions beginning with the letter R. Selecting each function shows a description of its effect. As you type, the suggestion list scales closer to the function you need. Select **RELATED**, and then press **Enter**.
+
+   ![Choose RELATED](media/desktop-tutorial-create-calculated-columns/create4.png)
+
+   An opening parenthesis appears, along with another suggestion list of the related columns you can pass to the RELATED function, with descriptions and details on expected parameters.
+
+   ![Choose ProductCategory](media/desktop-tutorial-create-calculated-columns/create5.png)
+
+4. You want the **ProductCategory** column from the **ProductCategory** table. Select **ProductCategory[ProductCategory]**, press **Enter**, and then type a closing parenthesis.
+
     > [!TIP]
     > Syntax errors are most often caused by a missing or misplaced closing parenthesis, although sometimes Power BI Desktop will add it for you.
-    
-4. You want dashes and spaces to separate the ProductCategories and ProductSubcategories in the new values, so after the closing parenthesis of the first expression, type a space, ampersand (**&**), double-quote (**"**), space, dash (**-**), another space, another double-quote, and another ampersand. Your formula should now look like this:
-    
+
+5. You want dashes and spaces to separate the ProductCategories and ProductSubcategories in the new values, so after the closing parenthesis of the first expression, type a space, ampersand (**&**), double-quote (**"**), space, dash (**-**), another space, another double-quote, and another ampersand. Your formula should now look like this:
+
     `ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &`
-    
+
     > [!TIP]
     > If you need more room, select the down chevron on the right side of the formula bar to expand the formula editor. In the editor, press **Alt + Enter** to move down a line, and **Tab** to move things over.
-    
-5.  Enter an opening bracket (**[**), and then select the **[ProductSubcategory]** column to finish the formula. 
-    
+
+6. Enter an opening bracket (**[**), and then select the **[ProductSubcategory]** column to finish the formula. 
+
     ![Choose ProductSubcategory](media/desktop-tutorial-create-calculated-columns/create6.png)
-    
+
     You didn’t need to use another RELATED function to call the ProductSubcategory table in the second expression, because you are creating the calculated column in this table. You can enter [ProductSubcategory] with the table name prefix (fully-qualified) or without (non-qualified).
-    
-6.  Complete the formula by pressing **Enter** or selecting the checkmark in the formula bar. The formula validates, and the **ProductFullCategory** column name appears in the **ProductSubcategory** table in the Fields list. 
-    
-    ![Finished ProductFullCategory column](media/desktop-tutorial-create-calculated-columns/create7.png)
-    
+
+7. Complete the formula by pressing **Enter** or selecting the checkmark in the formula bar. The formula validates, and the **ProductFullCategory** column name appears in the **ProductSubcategory** table in the Fields list. 
+
+   ![Finished ProductFullCategory column](media/desktop-tutorial-create-calculated-columns/create7.png)
+
     >[!NOTE]
     >In Power BI Desktop, calculated columns get a special icon in the field list, showing that they contain formulas. In the Power BI service (your Power BI site), there’s no way to change formulas, so calculated columns don't have icons.
-    
+
 ## Use your new column in a report
 
 Now you can use your new ProductFullCategory column to look at SalesAmount by ProductFullCategory.
 
 1. Select or drag the **ProductFullCategory** column from the **ProductSubcategory** table onto the Report canvas to create a table showing all ProductFullCategory names.
-   
+
    ![ProductFullCategory table](media/desktop-tutorial-create-calculated-columns/vis1.png)
-    
+
 2. Select or drag the **SalesAmount** field from the **Sales** table into the table to show the Sales Amount for each Product Full Category.
-   
+
    ![SalesAmount by ProductFullCategory table](media/desktop-tutorial-create-calculated-columns/vis2.png)
-    
+
 ## Create a calculated column that uses an IF function
 
 The Contoso Sales Sample contains sales data for both active and inactive stores. You want to ensure that Active store sales are clearly separated from Inactive store sales in your report by creating an Active StoreName field. In the new Active StoreName calculated column, each Active store will appear with the store's full name, while inactive stores will be grouped together under "Inactive". 
