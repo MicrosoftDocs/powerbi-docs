@@ -64,18 +64,18 @@ Once you've downloaded the Retail Analysis sample to your Power BI account, you 
     Finally, a **Search** button enables you to look for your dashboards, reports and apps.
  
 1. Now, tap **Workspaces** on the navigation bar.
-  The Workspaces page lists your workspaces. If My Workspace is your only workspace, the Workspaces navigation bar button will display the contents of My Workspace directly.
+    The Workspaces page lists your workspaces. If My Workspace is your only workspace, the Workspaces navigation bar button will display the contents of My Workspace directly.
 
-1.   Tap **My Workspaces**
+1. Tap **My Workspaces**
 
-  ![Home](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-myworkspaces.png)
-
-  In My Workspace, you see lists of your dashboards and reports.
-
-  ![Dashboards in My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-open-retail.png)
-   
-  A notation below the dashboard names shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../service-data-classification.md).
+    ![Home](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-myworkspaces.png)
     
+    In My Workspace, you see lists of your dashboards and reports.
+
+    ![Dashboards in My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-open-retail.png)
+        
+    A notation below the dashboard names shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../service-data-classification.md).
+
 4. Tap the Retail Analysis Sample dashboard to open it.
 
     ![Dashboards in My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-dashboard.png)
