@@ -71,9 +71,9 @@ Once you've downloaded the Retail Analysis sample to your Power BI account, you 
     ![Home](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-myworkspaces.png)
     
     In My Workspace, you see lists of your dashboards and reports.
-
+    
     ![Dashboards in My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-open-retail.png)
-        
+    
     A notation below the dashboard names shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../service-data-classification.md).
 
 4. Tap the Retail Analysis Sample dashboard to open it.
