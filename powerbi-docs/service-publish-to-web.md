@@ -130,7 +130,8 @@ Custom visuals are supported in **Publish to web**. When you use **Publish to we
 - ArcGIS Maps for Power BI visuals.
 - Reports containing report-level DAX measures.
 - Single sign-on data query models.
-- [Secure confidential or proprietary information](#publish-to-web-from-power-bi).
+- Secure confidential or proprietary information.
+- [Shared and certified datasets](service-datasets-share.md).
 - The automatic authentication capability provided with the **Embed** option doesn't work with the Power BI JavaScript API. For the Power BI JavaScript API, use the [user owns data](developer/embed-sample-for-your-organization.md) approach to embedding.
 
 ## Tenant setting

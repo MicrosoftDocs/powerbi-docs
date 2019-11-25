@@ -1,8 +1,8 @@
 ---
 title: Add rows to a table
 description: Walkthrough to push data - Add rows to a Power BI table
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer

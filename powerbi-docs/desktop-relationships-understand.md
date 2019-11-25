@@ -165,7 +165,7 @@ At query time, strong relationships permit _table expansion_ to take place. Tabl
 > [!NOTE]
 > Inactive relationships are expanded also, even when the relationship isn't used by a calculation. Bi-directional relationships have no impact on table expansion.
 
-For Many-to-many relationships, table expansion takes place from the "many" to the "one" sides by using LEFT OUTER JOIN semantics. When a matching value from the "many" to the "one" side doesn't exist, a blank virtual row is added to the "one" side table.
+For One-to-many relationships, table expansion takes place from the "many" to the "one" sides by using LEFT OUTER JOIN semantics. When a matching value from the "many" to the "one" side doesn't exist, a blank virtual row is added to the "one" side table.
 
 Table expansion also occurs for One-to-one intra-island relationships, but by using FULL OUTER JOIN semantics. It ensures that blank virtual rows are added on either side, when necessary.
 

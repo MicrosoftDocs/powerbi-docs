@@ -1,8 +1,8 @@
 ---
 title: Q&A in Power BI Embedded
 description: Power BI Embedded offers you a way to incorporate Q&A into an application and allow your users to ask questions using natural language.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
