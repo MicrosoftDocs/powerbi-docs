@@ -35,33 +35,11 @@ If you're not signed up for Power BI, [sign up for a free trial](https://app.pow
 Power BI works on Android devices running the Android 5.0 operating system or later. To check your device, go to **Settings** > **About device** > **Android version**.
 
 ### Download the Retail Analysis sample
-The first step in the quickstart is to download the Retail Analysis sample in the Power BI service.
+The first step in this quickstart is to download the Retail Analysis sample in the Power BI service. [Learn how to download a sample](./mobile-apps-download-samples.md) into your Power BI account to get started. Be sure to choose the Retail Analysis sample.
 
-1. Open the Power BI service in your browser (app.powerbi.com) and sign in.
+Once you've downloaded the Retail Analysis sample to your Power BI account, you are ready to begin this quick tour of the Power BI app for mobile devices.
 
-2. Select **Get data** in the lower-left corner of the navigation pane. If the navigation pane is hidden and you can't see the Get data link, display the pane by clicking the show/hide navigation pane icon.  
-   
-    ![Get Data](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-get-data.png)
-
-3. On the Get Data page, select the **Samples** link.
-   
-   ![Samples icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-samples-icon.png)
-
-4. Select the **Retail Analysis sample**.
- 
-    ![Retail Analysis Sample](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-rs.png)  
-    
-8. Select **Connect**.  
-  
-   ![Retail Analysis Sample - Connect](./media/mobile-apps-quickstart-view-dashboard-report/retail16.png)
-   
-5. Power BI imports the sample, adding a new dashboard, report, and dataset to your My Workspace.
-   
-   ![Retail Analysis Sample dashboard](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-service-opportunity-sample.png)
-
-You're now ready to view the sample on your Android device.
-
-## View a dashboard on your Android device
+## View a dashboard on your mobile device
 1. On your device, open the Power BI app and sign in with your Power BI account credentials, the same ones you used in the Power BI service in the browser.
 
     The app opens to the home page.
