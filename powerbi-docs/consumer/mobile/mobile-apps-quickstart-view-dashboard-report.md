@@ -12,7 +12,7 @@ ms.author: painbar
 #customer intent: As a Power BI end user, I want to explore dashboard and report capabilities in the mobile apps so I know what's possible.
 ---
 # Quickstart: Explore dashboards and reports in the Power BI mobile apps
-In this quickstart, you explore a sample dashboard and report in the Power BI mobile app on an Android phone. You can also follow along in the other mobile apps. 
+In this quickstart, you get a quick tour of the Power BI Mobile app and explore a sample dashboard and report. The images show the Power BI Mobile app for iOS, but you can easily follow along on non-iOS devices.
 
 Applies to:
 
@@ -20,7 +20,7 @@ Applies to:
 |:--- |:--- |:--- |:--- |
 | iPhone | iPad | Android | Windows 10 |
 
-Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. Reports are an interactive view of your data, with visuals representing different findings and insights from that data. 
+A Dashboard is a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. Reports are interactives view of your data, with visuals representing different findings and insights from that data. 
 
 ![Report in landscape mode](././media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report.png)
 
@@ -29,10 +29,9 @@ Dashboards are a portal to your company's life cycle and processes. A dashboard 
 ### Sign up for Power BI
 If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
-### Install the Power BI for Android app
-[Download the Power BI for Android app](https://go.microsoft.com/fwlink/?LinkID=544867) from Google Play.
+### Install the Power BI app for your device.
 
-Power BI works on Android devices running the Android 5.0 operating system or later. To check your device, go to **Settings** > **About device** > **Android version**.
+Download the Power BI mobile app from the [App store](https://apps.apple.com/app/microsoft-power-bi/id929738808) (iOS) or [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409) (Android)
 
 ### Download the Retail Analysis sample
 The first step in this quickstart is to download the Retail Analysis sample in the Power BI service. [Learn how to download a sample](./mobile-apps-download-samples.md) into your Power BI account to get started. Be sure to choose the Retail Analysis sample.
@@ -56,9 +55,9 @@ Once you've downloaded the Retail Analysis sample to your Power BI account, you 
     * **Apps**: List apps installed in your Power BI account.
     * **Workspaces**: List your workspaces. If My Workspace is your only workspace, shows the contents of My Workspace.
     * **More options (…)**: Displays three other options:
-            * **Recents**: List recently viewed content, categorized by *Visited today*, *Visited this week*.
-            * **Shared with me**: List content that is shared with you.
-            * **Scanner**: To scan QR codes or upload pictures. Report creators can create QR codes for their reports. Then, when you scan the QR code with this option, you see the tile that the report creator has associated with that code. [Learn more](mobile-apps-scan-barcode-iphone.md).
+     * **Recents**: List recently viewed content, categorized by *Visited today*, *Visited this week*.
+     * **Shared with me**: List content that is shared with you.
+     * **Scanner**: To scan QR codes or upload pictures. Report creators can create QR codes for their reports. Then, when you scan the QR code with this option, you see the tile that the report creator has associated with that code. [Learn more](mobile-apps-scan-barcode-iphone.md).
 
     At the top of the home page, a **Notifications** button indicates when there is a notification or data alert. Tap the button to see any notifications. Learn more about [Learn more about notifications and alerts](mobile-set-data-alerts-in-the-mobile-apps.md).
 
