@@ -62,15 +62,37 @@ The first step in the quickstart is to download the Retail Analysis sample in th
 You're now ready to view the sample on your Android device.
 
 ## View a dashboard on your Android device
-1. On your Android device, open the Power BI app and sign in with your Power BI account credentials, the same ones you used in the Power BI service in the browser.
+1. On your device, open the Power BI app and sign in with your Power BI account credentials, the same ones you used in the Power BI service in the browser.
 
-2.  When the app opens, tap the **Workspaces** icon at the bottom of the home screen.
+    The app opens to the home page.
 
-    ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-workspaces.png)
+   ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-quickstart-home.png)
 
-3.  On the Workspaces page, tap **My Workspace**.
+    The home page has two tabs: **Quick access** and **Activity**. 
+        * The Quick access tab provides quick access your frequently or recently viewed content. 
+    * The Activity tab shows what's happening in your dashboards and reports, was well as latest comments and activities. 
 
-    ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-myworkspaces.png)
+    The home page also has a **navigation bar** across the bottom of the screen to help you get to your content quickly. 
+    * **Home**: Jump to the home page
+    * **Favorites**: List contents you have marked as favorites.
+    * **Apps**: List apps installed in your Power BI account.
+    * **Workspaces**: List your workspaces. If My Workspace is your only workspace, shows the contents of My Workspace.
+    * **More options (…)**: Displays three other options:
+            * **Recents**: List recently viewed content, categorized by *Visited today*, *Visited this week*.
+            * **Shared with me**: List content that is shared with you.
+            * **Scanner**: To scan QR codes or upload pictures. Report creators can create QR codes for their reports. Then, when you scan the QR code with this option, you see the tile that the report creator has associated with that code. [Learn more](mobile-apps-scan-barcode-iphone.md).
+
+    At the top of the home page, a **Notifications** button indicates when there is a notification or data alert. Tap the button to see any notifications. Learn more about [Learn more about notifications and alerts](mobile-set-data-alerts-in-the-mobile-apps.md).
+
+    Finally, a **Search** button enables you to look for your dashboards, reports and apps.
+
+1. Now, tap **Workspaces** on the navigation bar.
+
+    The Workspaces page lists your workspaces. If My Workspace is your only workspace, the Workspaces navigation bar button will display the contents of My Workspace directly.
+
+    Tap **My Workspaces**
+
+    ![Home](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-myworkspaces.png)
 
     In My Workspace, you can see lists of your dashboards and reports.
 
@@ -98,7 +120,7 @@ You're now ready to view the sample on your Android device.
 
     ![Tile in focus mode](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tile-focus.png)
 
-8. Tap the Report icon ![Report icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report-icon.png) in the upper-right corner. The report related to this tile opens in landscape mode.
+8. Tap the Report icon ![Report icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report-icon.png) at the bottom of the screen (on Adroid devices this may be at the top of the screen). The report related to this tile opens in landscape mode.
 
     ![Report in landscape mode](././media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report.png)
 
