@@ -80,11 +80,9 @@ Once you've downloaded the Retail Analysis sample to your Power BI account, you 
 
     ![Dashboards in My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-dashboard.png)
    
-    Power BI dashboards look a little different on your Android phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
+    Power BI dashboards look a little different on your mobile device than they do on the Power BI service. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
-5. Tap the star icon ![Favorite star icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-favorite-icon.png) in the title bar to make this a favorite dashboard.
-
-    When you make a favorite in the mobile app, it's a favorite in the Power BI service, and vice versa.
+5. Tap the star icon ![Favorite star icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-favorite-icon.png) in the title bar to make this a favorite dashboard. When you make a favorite in the mobile app, it becomes a favorite in the Power BI service, and vice versa.
 
 6. Scroll down and tap the "This Year's Sales, Last Year's Sales" filled line chart.
 
@@ -92,7 +90,7 @@ Once you've downloaded the Retail Analysis sample to your Power BI account, you 
 
     It opens in focus mode.
 
-7. In focus mode, tap Apr in the chart. You see the values for April displayed at the top of the chart.
+7. In focus mode, tap **Apr** in the chart. The values for April appear at the top of the chart.
 
     ![Tile in focus mode](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tile-focus.png)
 
@@ -100,11 +98,11 @@ Once you've downloaded the Retail Analysis sample to your Power BI account, you 
 
     ![Report in landscape mode](././media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report.png)
 
-9. Tap the yellow "040 - Juniors" bubble in the bubble chart. See how it highlights related values in the other charts? 
+9. Tap the yellow "040 - Juniors" bubble in the bubble chart. Note how it highlights related values in the other charts. 
 
     ![Highlight values in a report](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-cross-highlight.png)
 
-10. Swipe up to see a toolbar across the bottom, and tap the more options icon.
+10. Swipe up to see a toolbar across the bottom, and tap the More options (...) icon.
 
     ![Tap the pencil](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil.png)
 
