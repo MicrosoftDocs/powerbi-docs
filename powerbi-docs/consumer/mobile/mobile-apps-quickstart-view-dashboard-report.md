@@ -54,10 +54,10 @@ Once you've downloaded the Retail Analysis sample to your Power BI account, you 
     * **Favorites**: List contents you have marked as favorites.
     * **Apps**: List apps installed in your Power BI account.
     * **Workspaces**: List your workspaces. If My Workspace is your only workspace, shows the contents of My Workspace.
-    * **More options (…)**: Displays three other options:
-     * **Recents**: List recently viewed content, categorized by *Visited today*, *Visited this week*.
-     * **Shared with me**: List content that is shared with you.
-     * **Scanner**: To scan QR codes or upload pictures. Report creators can create QR codes for their reports. Then, when you scan the QR code with this option, you see the tile that the report creator has associated with that code. [Learn more](mobile-apps-scan-barcode-iphone.md).
+    * **More options (…)**: Displays three other options: 
+      * **Recents**: List recently viewed content, categorized by *Visited today*, *Visited this week*.
+      * **Shared with me**: List content that is shared with you.
+      * **Scanner**: To scan QR codes or upload pictures. Report creators can create QR codes for their reports. Then, when you scan the QR code with this option, you see the tile that the report creator has associated with that code. [Learn more](mobile-apps-scan-barcode-iphone.md).
 
     At the top of the home page, a **Notifications** button indicates when there is a notification or data alert. Tap the button to see any notifications. Learn more about [Learn more about notifications and alerts](mobile-set-data-alerts-in-the-mobile-apps.md).
 
