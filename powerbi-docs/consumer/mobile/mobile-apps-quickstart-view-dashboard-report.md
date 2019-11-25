@@ -50,32 +50,31 @@ Once you've downloaded the Retail Analysis sample to your Power BI account, you 
     * The Activity tab shows what's happening in your dashboards and reports, was well as latest comments and activities. 
 
     The home page also has a **navigation bar** across the bottom of the screen to help you get to your content quickly. 
-    * **Home**: Jump to the home page
-    * **Favorites**: List contents you have marked as favorites.
-    * **Apps**: List apps installed in your Power BI account.
-    * **Workspaces**: List your workspaces. If My Workspace is your only workspace, shows the contents of My Workspace.
+    * **Home**: Display the home page
+    * **Favorites**: Display the Favorites page, which lists contents you have marked as favorites.
+    * **Apps**: Display the Apps page, which lists the apps installed in your Power BI account.
+    * **Workspaces**: Display the Workspaces page, where your workspaces are listed.
     * **More options (…)**: Displays three other options: 
-      * **Recents**: List recently viewed content, categorized by *Visited today*, *Visited this week*.
-      * **Shared with me**: List content that is shared with you.
-      * **Scanner**: To scan QR codes or upload pictures. Report creators can create QR codes for their reports. Then, when you scan the QR code with this option, you see the tile that the report creator has associated with that code. [Learn more](mobile-apps-scan-barcode-iphone.md).
+      * **Recents**: Displays the Recents page that lists recently viewed content, categorized by *Visited today*, *Visited this week*.
+      * **Shared with me**: Lists content that is shared with you.
+      * **Scanner**: Report creators can create QR codes for their reports. Then, when you scan the QR code with this option, you see the tile that the report creator has associated with that code. [Learn more](mobile-apps-scan-barcode-iphone.md).
 
     At the top of the home page, a **Notifications** button indicates when there is a notification or data alert. Tap the button to see any notifications. Learn more about [Learn more about notifications and alerts](mobile-set-data-alerts-in-the-mobile-apps.md).
-
+  
     Finally, a **Search** button enables you to look for your dashboards, reports and apps.
-
+ 
 1. Now, tap **Workspaces** on the navigation bar.
+  The Workspaces page lists your workspaces. If My Workspace is your only workspace, the Workspaces navigation bar button will display the contents of My Workspace directly.
 
-    The Workspaces page lists your workspaces. If My Workspace is your only workspace, the Workspaces navigation bar button will display the contents of My Workspace directly.
+1.   Tap **My Workspaces**
 
-    Tap **My Workspaces**
+  ![Home](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-myworkspaces.png)
 
-    ![Home](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-myworkspaces.png)
+  In My Workspace, you see lists of your dashboards and reports.
 
-    In My Workspace, you can see lists of your dashboards and reports.
-
-    ![Dashboards in My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-open-retail.png)
+  ![Dashboards in My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-open-retail.png)
    
-    A notation below the dashboard names shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../service-data-classification.md).
+  A notation below the dashboard names shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../service-data-classification.md).
     
 4. Tap the Retail Analysis Sample dashboard to open it.
 
