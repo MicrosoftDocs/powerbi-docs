@@ -12,7 +12,7 @@ ms.author: painbar
 #customer intent: As a Power BI end user, I want to explore dashboard and report capabilities in the mobile apps so I know what's possible.
 ---
 # Quickstart: Explore dashboards and reports in the Power BI mobile apps
-In this quickstart, you get a quick tour of the Power BI Mobile app and explore a sample dashboard and report. The images show the Power BI Mobile app for iOS, but you can easily follow along on non-iOS devices.
+In this quickstart, you take a quick tour of the Power BI Mobile app and explore a sample dashboard and report. The Power BI app for iOS is shown, but you can easily follow along on other devices.
 
 Applies to:
 
@@ -20,23 +20,17 @@ Applies to:
 |:--- |:--- |:--- |:--- |
 | iPhone | iPad | Android | Windows 10 |
 
-A Dashboard is a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. Reports are interactives view of your data, with visuals representing different findings and insights from that data. 
+A dashboard is a portal to your company's life cycle and processes. It is an overview, a single place to monitor the current state of the business. Reports are interactive views of your data, with visuals representing different findings and insights from that data. 
 
 ![Report in landscape mode](././media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report.png)
 
 ## Prerequisites
 
-### Sign up for Power BI
-If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+* **Sign up for Power BI**: If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
+* **Install the Power BI app for your device**: Download the Power BI mobile app** from the [App store](https://apps.apple.com/app/microsoft-power-bi/id929738808) (iOS) or [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409) (Android).
+* **Download the Retail Analysis sample**: The first step in this quickstart is to download the Retail Analysis sample in the Power BI service. [Learn how to download a sample](./mobile-apps-download-samples.md) into your Power BI account to get started. Be sure to choose the Retail Analysis sample.
 
-### Install the Power BI app for your device.
-
-Download the Power BI mobile app from the [App store](https://apps.apple.com/app/microsoft-power-bi/id929738808) (iOS) or [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409) (Android)
-
-### Download the Retail Analysis sample
-The first step in this quickstart is to download the Retail Analysis sample in the Power BI service. [Learn how to download a sample](./mobile-apps-download-samples.md) into your Power BI account to get started. Be sure to choose the Retail Analysis sample.
-
-Once you've downloaded the Retail Analysis sample to your Power BI account, you are ready to begin this quick tour of the Power BI app for mobile devices.
+Once you've completed the prerequisites and downloaded the Retail Analysis sample to your Power BI account, you are ready to begin this quick tour.
 
 ## View a dashboard on your mobile device
 1. On your device, open the Power BI app and sign in with your Power BI account credentials, the same ones you used in the Power BI service in the browser.
@@ -45,18 +39,18 @@ Once you've downloaded the Retail Analysis sample to your Power BI account, you 
 
    ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-quickstart-home.png)
 
-    The home page has two tabs: **Quick access** and **Activity**. 
-    * The Quick access tab provides quick access your frequently or recently viewed content. 
-    * The Activity tab shows what's happening in your dashboards and reports, was well as latest comments and activities. 
+    The home page has two tabs: 
+    * **Quick access** provides quick access your frequently or recently viewed content. 
+    * **Activity** shows what's happening in your dashboards and reports, as well as latest comments and activities. 
 
-    The home page also has a **navigation bar** across the bottom of the screen to help you get to your content quickly. 
-    * **Home**: Display the home page
-    * **Favorites**: Display the Favorites page, which lists contents you have marked as favorites.
-    * **Apps**: Display the Apps page, which lists the apps installed in your Power BI account.
-    * **Workspaces**: Display the Workspaces page, where your workspaces are listed.
-    * **More options (…)**: Displays three other options: 
-      * **Recents**: Displays the Recents page that lists recently viewed content, categorized by *Visited today*, *Visited this week*.
-      * **Shared with me**: Lists content that is shared with you.
+    The home page also has a navigation bar across the bottom of the screen to help you get to your content quickly. 
+    * **Home**: displays the home page
+    * **Favorites**: displays the Favorites page, which lists contents you have marked as favorites.
+    * **Apps**: displays the Apps page, which lists the apps installed in your Power BI account.
+    * **Workspaces**: displays the Workspaces page, where your workspaces are listed.
+    * **More options (…)**: displays three other options: 
+      * **Recents**: displays the Recents page that lists recently viewed content, categorized by *Visited today*, *Visited this week*.
+      * **Shared with me**: lists content that is shared with you.
       * **Scanner**: Report creators can create QR codes for their reports. Then, when you scan the QR code with this option, you see the tile that the report creator has associated with that code. [Learn more](mobile-apps-scan-barcode-iphone.md).
 
     At the top of the home page, a **Notifications** button indicates when there is a notification or data alert. Tap the button to see any notifications. Learn more about [Learn more about notifications and alerts](mobile-set-data-alerts-in-the-mobile-apps.md).
@@ -102,7 +96,7 @@ Once you've downloaded the Retail Analysis sample to your Power BI account, you 
 
     ![Highlight values in a report](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-cross-highlight.png)
 
-10. Swipe up to see a toolbar across the bottom, and tap the More options (...) icon.
+10. Swipe up to see a toolbar across the bottom, and tap **More options (...)**.
 
     ![Tap the pencil](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil.png)
 
@@ -129,15 +123,15 @@ After you finish this quickstart, you can delete the Retail Analysis sample dash
 
 1. Open the Power BI service ([Power BI service](https://app.powerbi.com)) and sign in.
 
-2. In the navigation pane, select **Workspaces** > **My Workspace**. Notice how the Retail Analysis Sample dashboard now has a yellow star indicating that it's a favorite.
+2. In the navigation pane, select **My Workspace**. Notice how the Retail Analysis Sample dashboard now has a yellow star indicating that it's a favorite.
 
-3. On the **Retail Analysis Sample** dashboard line, click the More options (...) icon and choose **Delete**.
+3. Select the dashboards tab and then, on the **Retail Analysis Sample** line, click the trash can icon to delete the dashboard.
 
     ![Select the Delete icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail.png)
 
-    Do the same for the Retail Analysis Sample's report.
+    Now go the the reports tab and do the same for the Retail Analysis Sample's report.
 
-3. On the **Retail Analysis Sample** dataset tab, click the More options (...) icon and choose **Delete**.
+3. On the **Retail Analysis Sample** dataset tab, click **More options (...)** and choose **Delete**.
 
     ![Select the Delete icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail2.png)
 
