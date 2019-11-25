@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
-ms.date: 04/18/2019
+ms.date: 11/25/2019
 ms.author: painbar
 #customer intent: As a Power BI end user, I want to explore dashboard and report capabilities in the mobile apps so I know what's possible.
 ---
@@ -69,7 +69,7 @@ You're now ready to view the sample on your Android device.
    ![My Workspace](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-quickstart-home.png)
 
     The home page has two tabs: **Quick access** and **Activity**. 
-        * The Quick access tab provides quick access your frequently or recently viewed content. 
+    * The Quick access tab provides quick access your frequently or recently viewed content. 
     * The Activity tab shows what's happening in your dashboards and reports, was well as latest comments and activities. 
 
     The home page also has a **navigation bar** across the bottom of the screen to help you get to your content quickly. 
@@ -163,7 +163,11 @@ After you finish this quickstart, you can delete the Retail Analysis sample dash
 
     ![Select the Delete icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail.png)
 
-    Do the same for the Retail Analysis Sample's report and dataset.
+    Do the same for the Retail Analysis Sample's report.
+
+3. On the **Retail Analysis Sample** dataset tab, click the More options (...) icon and choose **Delete**.
+
+    ![Select the Delete icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail2.png)
 
 
 ## Next steps
