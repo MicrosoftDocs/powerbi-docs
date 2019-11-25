@@ -328,8 +328,7 @@ You can't set this permission using the admin portal. This permission is only se
 
 ### Token-based Identity limitations
 
-* This capability restricts use with Power BI Premium only.
-* This capability doesn’t work with SQL Server on-premises.
-* This capability doesn't work with multi-geo.
+* You can use RLS only if you have a dedicated capacity.
+* RLS doesn’t work with SQL Server on-premises.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
