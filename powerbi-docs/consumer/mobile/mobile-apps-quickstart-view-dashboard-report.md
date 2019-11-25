@@ -94,7 +94,7 @@ Once you've downloaded the Retail Analysis sample to your Power BI account, you 
 
     ![Tile in focus mode](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tile-focus.png)
 
-8. Tap the Report icon ![Report icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report-icon.png) at the bottom of the screen (on Adroid devices this may be at the top of the screen). The report related to this tile opens in landscape mode.
+8. Tap the Report icon ![Report icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report-icon.png) at the bottom of the screen (on Android devices this may be at the top of the screen). The report related to this tile opens in landscape mode.
 
     ![Report in landscape mode](././media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-report.png)
 
@@ -111,7 +111,7 @@ Once you've downloaded the Retail Analysis sample to your Power BI account, you 
 
     ![Tap the pencil](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-tap-pencil2.png)
 
-12. On the annotate toolbar, tap the smiley-face icon and and then tap the report page where you'd like to add some smiley faces.
+12. On the annotate toolbar, tap the smiley-face icon and then tap the report page where you'd like to add some smiley faces.
  
     ![Annotate the page](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-annotate.png)
 
@@ -129,11 +129,9 @@ After you finish this quickstart, you can delete the Retail Analysis sample dash
 
 1. Open the Power BI service ([Power BI service](https://app.powerbi.com)) and sign in.
 
-2. In the navigation pane, select **Workspaces** > **My Workspace**.
+2. In the navigation pane, select **Workspaces** > **My Workspace**. Notice how the Retail Analysis Sample dashboard now has a yellow star indicating that it's a favorite.
 
-    Notice the yellow star indicating it's a favorite?
-
-3. On the **Retail Analysis Sample** dashboard line, click the more options icon and choose **Delete**.
+3. On the **Retail Analysis Sample** dashboard line, click the More options (...) icon and choose **Delete**.
 
     ![Select the Delete icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-delete-retail.png)
 
@@ -146,7 +144,7 @@ After you finish this quickstart, you can delete the Retail Analysis sample dash
 
 ## Next steps
 
-In this quickstart, you explored a sample dashboard and report on your Android device. Read more about working in the Power BI service. 
+In this quickstart, you explored a sample dashboard and report on your mobile device. Read more about working in the Power BI service. 
 
 > [!div class="nextstepaction"]
 > [Quickstart: Getting around in the Power BI service](../end-user-experience.md)
