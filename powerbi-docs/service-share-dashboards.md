@@ -37,7 +37,7 @@ Watch Amanda share the dashboard with colleagues inside and outside Amanda's com
 
 2. In the top box, enter the full email addresses for individuals, distribution groups, or security groups. You can't share with dynamic distribution lists. 
    
-   You can share with people whose addresses are outside your organization, but you'll see a warning.
+   You can share with people whose addresses are outside your organization, but you'll see a warning. Read more about [sharing outside your organization](#share-a-dashboard-or-report-outside-your-organization) in this article.
    
    ![Warning about sharing externally](media/service-share-dashboards/power-bi-share-dialog-warning.png) 
  
@@ -64,10 +64,10 @@ Watch Amanda share the dashboard with colleagues inside and outside Amanda's com
    
    ![Shared with me list page](media/service-share-dashboards/power-bi-shared-with-me-new-look.png)
    
-   When recipients outside your organization click the link, they see the dashboard or report, but not in the usual Power BI portal. For more information, see [Share a dashboard or report with people outside your organization](#share-a-dashboard-or-report-outside-your-organization).
+   When recipients outside your organization click the link, they see the dashboard or report, but not in the usual Power BI portal. Read more about [sharing with people outside your organization](#share-a-dashboard-or-report-outside-your-organization) in this article.
 
 ## See who has access to a dashboard or report
-Sometimes you need to see the people you've shared with, and see who they've shared it with:
+Sometimes you need to see the people you've shared with, and see who they've shared it with.
 
 1. In the list of dashboards and reports, or in the dashboard or report itself, select **Share** ![Share icon](media/service-share-dashboards/power-bi-share-icon.png). 
 2. In the **Share dashboard** or **Share report** dialog box, select **Access**.
@@ -75,6 +75,21 @@ Sometimes you need to see the people you've shared with, and see who they've sha
     ![Share dashboard dialog box, Access tab](media/service-share-dashboards/power-bi-share-dialog-access.png)
 
     People outside your organization are listed as **Guest**.
+
+## Share a dashboard or report outside your organization
+When you share with people outside your organization, they receive an email with a link to the shared dashboard or report. They must sign in to Power BI to see what you shared. If they don't have a Power BI Pro license, they can sign up for a license when they click the link.
+
+After they sign in, they see the shared dashboard or report in its own browser window, not in the usual Power BI portal. To access this dashboard or report later, they must bookmark the link.
+
+They can't edit any content in this dashboard or report. They can interact with the charts and change filters or slicers, but they can't save their changes. 
+
+Only your direct recipients can see the shared dashboard or report. For example, if you sent the email to Vicki@contoso.com, only Vicki can see the dashboard. No one else can see the dashboard, even if Vicki forwards them the link. Vicki must use the same email address to access it; if Vicki signs in with any other email address, they won't have access to the dashboard.
+
+People outside your organization can't see any data if role- or row-level security is implemented on on-premises Analysis Services tabular models.
+
+If you send a link from a Power BI mobile app to people outside your organization, clicking the link opens the dashboard in a browser, not in the Power BI mobile app.
+
+If you [allow external guest users to edit and manage content in the organization](service-admin-portal.md#export-and-sharing-settings), the default consumption-only experience doesn't apply to them. [Learn more](service-admin-azure-ad-b2b.md).
 
 ## Stop sharing or stop others from sharing
 Only the dashboard or report owner can turn resharing on and off.
@@ -94,24 +109,9 @@ Only the dashboard or report owner can turn resharing on and off.
    * **Read** to keep that person from sharing with anyone else.
    * **Remove access** to keep that person from seeing the shared content at all.
 
-4. In the **Remove access** dialog box, decide if you also want to remove access to related content, such as reports and datasets. If you remove items with a warning icon ![Power BI warning icon](media/service-share-dashboards/power-bi-warning-icon.png), it's best to also remove related content because it won't display properly.
+4. In the **Remove access** dialog box, decide if you also want to remove access to related content, such as reports and datasets. If you remove items with a warning icon ![Power BI warning icon](media/service-share-dashboards/power-bi-warning-icon.png), it's best to also remove related content. Otherwise, it won't display properly.
 
     ![Power BI sharing warning dialog box](media/service-share-dashboards/power-bi-sharing-warning-dialog.png)
-
-## Share a dashboard or report outside your organization
-When you share with people outside your organization, they receive an email with a link to the shared dashboard or report, which they must sign in to Power BI to see. If they don't have a Power BI Pro license, they can sign up for a license after clicking the link.
-
-After they sign in, they see the shared dashboard or report in its own browser window, not in their usual Power BI portal. To later access this dashboard or report, they must bookmark the link.
-
-They can't edit any content in this dashboard or report. Although they can interact with the charts and change filters or slicers, they can't save their changes. 
-
-Only your direct recipients can see the shared dashboard or report. For example, if you sent the email to Vicki@contoso.com, only Vicki can see the dashboard. No one else can see the dashboard, even if they have the link. Vicki must use the same email address to access it; if someone signs up with any other email address, they won't have access to the dashboard.
-
-People outside your organization can't see any data if role- or row-level security is implemented on on-premises Analysis Services tabular models.
-
-If you send a link from a Power BI mobile app to people outside your organization, clicking the link opens the dashboard in a browser, not in the Power BI mobile app.
-
-If you [allow external guest users to edit and manage content in the organization](service-admin-portal.md#export-and-sharing-settings), the default consumption-only experience doesn't apply to them. [Learn more](service-admin-azure-ad-b2b.md).
 
 ## Limitations and considerations
 Things to keep in mind about sharing dashboards and reports:
