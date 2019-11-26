@@ -91,42 +91,42 @@ Now you can use your new ProductFullCategory column to look at SalesAmount by Pr
 
 ## Create a calculated column that uses an IF function
 
-The Contoso Sales Sample contains sales data for both active and inactive stores. You want to ensure that Active store sales are clearly separated from Inactive store sales in your report by creating an Active StoreName field. In the new Active StoreName calculated column, each Active store will appear with the store's full name, while inactive stores will be grouped together under "Inactive". 
+The Contoso Sales Sample contains sales data for both active and inactive stores. You want to ensure that Active store sales are clearly separated from Inactive store sales in your report by creating an Active StoreName field. In the new Active StoreName calculated column, each Active store will appear with the store's full name, while inactive stores will be grouped together under "Inactive".
 
-Fortunately, the Stores table has a column named **Status**, with values of "On" for active stores and "Off" for inactive stores, which we can use to create values for our new Active StoreName column. Your DAX formula will use the logical [IF](https://msdn.microsoft.com/library/ee634824.aspx) function to test each store's Status and return a particular value depending on the result. If a store's Status is "On", the formula will return the store's name. If it’s "Off", the formula will assign an Active StoreName of "Inactive". 
+Fortunately, the Stores table has a column named **Status**, with values of "On" for active stores and "Off" for inactive stores, which we can use to create values for our new Active StoreName column. Your DAX formula will use the logical [IF](https://msdn.microsoft.com/library/ee634824.aspx) function to test each store's Status and return a particular value depending on the result. If a store's Status is "On", the formula will return the store's name. If it’s "Off", the formula will assign an Active StoreName of "Inactive".
 
+1. Create a new calculated column in the **Stores** table and name it **Active StoreName** in the formula bar.
 
-1.  Create a new calculated column in the **Stores** table and name it **Active StoreName** in the formula bar.
-    
-2.  After the **=** sign, begin typing **IF**. The suggestion list will show what you can add. Select **IF**.
-    
+2. After the **=** sign, begin typing **IF**. The suggestion list will show what you can add. Select **IF**.
+
     ![Select IF](media/desktop-tutorial-create-calculated-columns/if1.png)
-    
-3.  The first argument for IF is a logical test of whether a store's Status is "On". Type an opening bracket **[** , which lists columns from the Stores table, and select **[Status]**.
-    
+
+3. The first argument for IF is a logical test of whether a store's Status is "On". Type an opening bracket **[** , which lists columns from the Stores table, and select **[Status]**.
+
     ![Select Status](media/desktop-tutorial-create-calculated-columns/if2.png)
-    
-4.  Right after **[Status]**, type **="On"**, and then type a comma (**,**) to end the argument. The tooltip suggests that you now need to add a value to return when the result is TRUE.
-    
+
+4. Right after **[Status]**, type **="On"**, and then type a comma (**,**) to end the argument. The tooltip suggests that you now need to add a value to return when the result is TRUE.
+
     ![Add TRUE value](media/desktop-tutorial-create-calculated-columns/if3.png)
-    
-5.  If the store's status is "On", you want to show the store’s name. Type an opening bracket (**[**) and select the **[StoreName]** column, and then type another comma. The tooltip now indicates that you need to add a value to return when the result is FALSE. 
-    
+
+5. If the store's status is "On", you want to show the store’s name. Type an opening bracket (**[**) and select the **[StoreName]** column, and then type another comma. The tooltip now indicates that you need to add a value to return when the result is FALSE. 
+
     ![Add FALSE value](media/desktop-tutorial-create-calculated-columns/if4.png)
-    
-6.  You want the value to be *Inactive*, so type **"Inactive"**, and then complete the formula by pressing **Enter** or selecting the checkmark in the formula bar. The formula validates, and the new column's name appears in the **Stores** table in the Fields list.
-    
+
+6. You want the value to be *Inactive*, so type **"Inactive"**, and then complete the formula by pressing **Enter** or selecting the checkmark in the formula bar. The formula validates, and the new column's name appears in the **Stores** table in the Fields list.
+
     ![Active StoreName column](media/desktop-tutorial-create-calculated-columns/if5.png)
-    
-8.  You can use your new Active StoreName column in visualizations just like any other field. To show SalesAmounts by Active StoreName, select the **Active StoreName** field or drag it onto the canvas, and then select the **SalesAmount** field or drag it into the table. In this table, active stores appear individually by name, but inactive stores are grouped together at the end as *Inactive*. 
-    
+
+7. You can use your new Active StoreName column in visualizations just like any other field. To show SalesAmounts by Active StoreName, select the **Active StoreName** field or drag it onto the canvas, and then select the **SalesAmount** field or drag it into the table. In this table, active stores appear individually by name, but inactive stores are grouped together at the end as *Inactive*. 
+
     ![SalesAmount by Active StoreName table](media/desktop-tutorial-create-calculated-columns/if6.png)
-    
+
 ## What you've learned
+
 Calculated columns can enrich your data and provide easier insights. You've learned how to create calculated columns in the field list and formula bar, use suggestion lists and tooltips to help construct your formulas, call DAX functions like RELATED and IF with the appropriate arguments, and use your calculated columns in report visualizations.
 
 ## Next steps
+
 If you want to take a deeper dive into DAX formulas and create calculated columns with more advanced formulas, see [DAX Basics in Power BI Desktop](desktop-quickstart-learn-dax-basics.md). This article focuses on fundamental concepts in DAX, such as syntax, functions, and a more thorough understanding of context.
 
 Be sure to add the [Data Analysis Expressions (DAX) Reference](https://msdn.microsoft.com/library/gg413422.aspx) to your favorites. This is where you'll find detailed info on DAX syntax, operators, and the over 200 DAX functions.
-
