@@ -61,6 +61,22 @@ First, determine whether an SPN was already created for the domain account used 
    ```setspn -a gateway/MyGatewayMachine Contoso\GatewaySvc```
 
    You can also set the SPN by using the **Active Directory Users and Computers** MMC snap-in.
+   
+### Add gateway service account to Windows Authorization and Access Group if required
+
+In certain scenarios where the Active Directory environment has undergone security hardening, or when the gateway service account and the user accounts that the gateway will impersonate are in separate domains or forests, the gateway service account needs to be added to the Windows Authorization and Access Group. This can also be done in situations where the domain / forest has not been hardened, though it isn't required.
+
+For more information about the Windows Authorization and Access Group, see this [page](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-winauthaccess).
+
+To complete this configuration step, for each domain that contains Active Directory users you want the gateway service account to be able to impersonate:
+1. Logon to a computer in the domain and launch the Active Directory Users and Computers MMC snap-in.
+2. Locate the group named "Windows Authorization and Access Group", which is typically found in the "Builtin" container.
+3. Double click on the group, and click on the Members tab.
+4. Click the Add button, and change the domain location to the domain that the gateway service account resides in.
+5. Type in the gateway service account name and click the Check Names button to verify that the gateway service account is accessible.
+6. Click OK button.
+7. Click the Apply button.
+8. Restart the gateway service.
 
 ### Decide on the type of Kerberos constrained delegation to use
 
