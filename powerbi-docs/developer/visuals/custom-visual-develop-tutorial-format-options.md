@@ -133,7 +133,16 @@ You can add custom properties to enable configuring the color of the circle, and
 
     ![Add visual class](media/custom-visual-develop-tutorial-format-options/visual-class-add-on.png)
 
-9. In the **Visual** class, add the following method before the **update** method. This method is used to populate the formatting options.
+
+9. In the **visual.ts** file,
+   import `EnumerateVisualObjectInstancesOptions` and `VisualObjectInstanceEnumeration` classes:
+     
+     ```typescript
+     import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions; 
+     import VisualObjectInstanceEnumeration = powerbi.VisualObjectInstanceEnumeration; 
+     ```
+
+   and in the **Visual** class add the following method before the **update** method. This method is used to populate the formatting options.
 
     ```typescript
     public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration {
