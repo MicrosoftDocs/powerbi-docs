@@ -227,7 +227,7 @@ Included with the product. For example, Power BI comes with a set of *native* vi
 **nav pane** or **nav pane**
 The controls along the left edge of the Power BI service.
 
-First instance: nav pane
+First instance: navigation pane
 Subsequent mentions or tight spaces: nav pane
 
 **nav pane**

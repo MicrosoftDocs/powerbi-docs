@@ -813,10 +813,6 @@
         items: 
         - name: "Connect to services with apps"
           href: service-connect-to-services.md
-        - name: "Acumatica"
-          href: service-connect-to-acumatica.md
-        - name: "Azure Audit Logs"
-          href: service-connect-to-azure-audit-logs.md
         - name: "GitHub"
           href: service-connect-to-github.md
         - name: "Office365Mon"
