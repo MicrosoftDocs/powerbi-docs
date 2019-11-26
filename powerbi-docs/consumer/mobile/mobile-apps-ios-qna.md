@@ -66,6 +66,36 @@ Once you've completed the prerequisites and downloaded the sample data, you're r
 
 6. Tap the arrow in the upper-left corner to go back to the Q&A virtual analyst experience.
 
+## Clean up resources
+
+When you've finished the tutorial, you can delete the Opportunity Analysis sample dashboard, report, and dataset.
+
+1. Open the Power BI service ([Power BI service](https://app.powerbi.com)) and sign in.
+
+2. In the navigation pane, select **My Workspace**.
+
+3. Select the dashboards tab and then, on the **Opportunity Analysis Sample** line, click the trash can icon to delete the dashboard.
+
+    ![Select the Delete icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-dashboard.png)
+
+    Now go the the reports tab and do the same for the Opportunity Analysis Sample's report.
+
+4. Select the datasets tab, and then on the **Opportunity Analysis Sample** line, click **More options (...)** and choose **Delete**.
+
+    ![Select the Delete icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-tutorial-mobile-apps-ios-qna-delete-opportunity-datasets.png)
+
+## Next steps
+
+You've tried the Q&A virtual assistant in the Power BI mobile apps for iOS. Learn more about Q&A in the Power BI service.
+> [!div class="nextstepaction"]
+> [Q&A in the Power BI service](../end-user-q-and-a.md)
+
+
+
+
+
+
+
 5. Type **show**, tap **sales** from the suggestion list > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Show sales](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-show-sales.png)
