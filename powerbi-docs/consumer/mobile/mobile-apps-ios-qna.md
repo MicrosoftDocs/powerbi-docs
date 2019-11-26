@@ -50,7 +50,23 @@ Once you've completed the prerequisites and downloaded the sample data, you're r
 
     ![Q&A virtual analyst suggestions](./media/mobile-apps-ios-qna/power-bi-qna-suggestions.png)
 
-3. Type **show**, tap **sales** from the suggestion list > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+3. Tap **featured insights**.
+
+4. The Q&A virtual analyst suggests some insights. Scroll to the right and tap **Insight 2**.
+
+    ![Featured insights](./media/mobile-apps-ios-qna/power-bi-ios-qna-suggest-insight-2.png)
+
+   The Q&A virtual analyst displays Insight 2.
+
+    ![Display featured insights](./media/mobile-apps-ios-qna/power-bi-ios-qna-show-insight-2.png)
+
+5. Tap the chart to open it in focus mode.
+
+    ![Open chart in focus mode](./media/mobile-apps-ios-qna/power-bi-ios-qna-open-insight-2.png)
+
+6. Tap the arrow in the upper-left corner to go back to the Q&A virtual analyst experience.
+
+5. Type **show**, tap **sales** from the suggestion list > **Send** ![Send icon](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![Show sales](./media/mobile-apps-ios-qna/power-bi-ios-q-n-a-show-sales.png)
 4. Tap **by** from the keywords, then tap **item** from the suggestion list > **Send** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
