@@ -21,7 +21,7 @@ You must have a Power BI service account to be able to download data. If you're 
 
 ## Download a sample
 
-1. Open the [Power BI service](app.powerbi.com) in your browser and sign in.
+1. Open the [Power BI service](https://app.powerbi.com) in your browser and sign in.
 
 2. Select **Get data** in the lower-left corner of the navigation pane. If the navigation pane is hidden and you can't see the Get data link, display the pane by clicking the show/hide navigation pane icon ![Global navigation button](./media/mobile-apps-download-samples/power-bi-iphone-global-nav-button.png).  
    
