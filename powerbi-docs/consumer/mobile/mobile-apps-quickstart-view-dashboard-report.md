@@ -28,9 +28,9 @@ A dashboard is a portal to your company's life cycle and processes. It is an ove
 
 * **Sign up for Power BI**: If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 * **Install the Power BI app for your device**: Download the Power BI mobile app** from the [App store](https://apps.apple.com/app/microsoft-power-bi/id929738808) (iOS) or [Google play](https://play.google.com/store/apps/details?id=com.microsoft.powerbim&amp;amp;clcid=0x409) (Android).
-* **Download the Retail Analysis sample**: The first step in this quickstart is to download the Retail Analysis sample in the Power BI service. [Learn how to download a sample](./mobile-apps-download-samples.md) into your Power BI account to get started. Be sure to choose the Retail Analysis sample.
+* **Download the Retail Analysis Sample**: The first step in this quickstart is to download the Retail Analysis Sample in the Power BI service. [Learn how to download a sample](./mobile-apps-download-samples.md) into your Power BI account to get started. Be sure to choose the Retail Analysis Sample.
 
-Once you've completed the prerequisites and downloaded the Retail Analysis sample to your Power BI account, you are ready to begin this quick tour.
+Once you've completed the prerequisites and downloaded the Retail Analysis Sample to your Power BI account, you are ready to begin this quick tour.
 
 ## View a dashboard on your mobile device
 1. On your device, open the Power BI app and sign in with your Power BI account credentials, the same ones you used in the Power BI service in the browser.
@@ -44,7 +44,7 @@ Once you've completed the prerequisites and downloaded the Retail Analysis sampl
     * **Activity** shows what's happening in your dashboards and reports, as well as latest comments and activities. 
 
     The home page also has a navigation bar across the bottom of the screen to help you get to your content quickly. 
-    * **Home**: displays the home page
+    * **Home**: displays the home page.
     * **Favorites**: displays the Favorites page, which lists contents you have marked as favorites.
     * **Apps**: displays the Apps page, which lists the apps installed in your Power BI account.
     * **Workspaces**: displays the Workspaces page, where your workspaces are listed.
@@ -76,7 +76,7 @@ Once you've completed the prerequisites and downloaded the Retail Analysis sampl
    
     Power BI dashboards look a little different on your mobile device than they do on the Power BI service. All the tiles appear the same width, and they're arranged one after another from top to bottom.
 
-5. Tap the star icon ![Favorite star icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-favorite-icon.png) in the title bar to make this a favorite dashboard. When you make a favorite in the mobile app, it becomes a favorite in the Power BI service, and vice versa.
+5. Tap the star icon ![Favorite star icon](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-favorite-icon.png) in the bottom toolbar to make this a favorite dashboard. When you make a favorite in the mobile app, it becomes a favorite in the Power BI service, and vice versa.
 
 6. Scroll down and tap the "This Year's Sales, Last Year's Sales" filled line chart.
 
@@ -115,11 +115,11 @@ Once you've completed the prerequisites and downloaded the Retail Analysis sampl
 
     ![New email message with snapshot and link](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-send-snapshot.png)
 
-    You can share this snapshot with anyone, in or out of your organization. If they're in your organization and have their own Power BI account, they'll be able to open the Retail Analysis sample report, too.
+    You can share this snapshot with anyone, in or out of your organization. If they're in your organization and have their own Power BI account, they'll be able to open the Retail Analysis Sample report, too.
 
 ## Clean up resources
 
-After you finish this quickstart, you can delete the Retail Analysis sample dashboard, report, and dataset, if you wish.
+After you finish this quickstart, you can delete the Retail Analysis Sample dashboard, report, and dataset, if you wish.
 
 1. Open the Power BI service ([Power BI service](https://app.powerbi.com)) and sign in.
 
