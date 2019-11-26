@@ -6,7 +6,7 @@ author: paulinbar
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/21/2019
+ms.date: 11/26/2019
 ms.author: painbar
 #customer intent: Getting sample data to use to follow along in some of the Mobile app documentation. 
 
@@ -21,28 +21,27 @@ You must have a Power BI service account to be able to download data. If you're 
 
 ## Download a sample
 
-1. Open the Power BI service in your browser (app.powerbi.com) and sign in.
+1. Open the [Power BI service](app.powerbi.com) in your browser and sign in.
 
-2. Select **Get data** in the lower-left corner of the navigation pane. If the navigation pane is hidden and you can't see the Get data link, display the pane by clicking the show/hide navigation pane icon ![Global navigation button](./media/mobile-apps-ios-qna/power-bi-iphone-global-nav-button.png).  
+2. Select **Get data** in the lower-left corner of the navigation pane. If the navigation pane is hidden and you can't see the Get data link, display the pane by clicking the show/hide navigation pane icon ![Global navigation button](./media/mobile-apps-download-samples/power-bi-iphone-global-nav-button.png).  
    
-    ![Get Data](./media/mobile-apps-ios-qna/power-bi-get-data.png)
+    ![Get Data](./media/mobile-apps-download-samples/power-bi-get-data.png)
 
 3. On the Get Data page, select the **Samples** link.
    
-   ![Samples icon](./media/mobile-apps-ios-qna/power-bi-samples-icon.png)
+   ![Samples icon](./media/mobile-apps-download-samples/power-bi-samples-icon.png)
 
-4. Select a sample to download.
+4. Select a sample to download. Be sure to choose the sample that the tutorial, quickstart, or article you're using calls for.
  
-    ![Retail Analysis Sample](./media/mobile-apps-ios-qna/power-bi-rs.png)  
+    ![Choose Sample](./media/mobile-apps-download-samples/power-bi-rs.png)  
     
 8. Select **Connect**.  
   
-   ![Retail Analysis Sample - Connect](./media/mobile-apps-ios-qna/opportunity-connect.png)
+   ![Choose connect](./media/mobile-apps-download-samples/opportunity-connect.png)
    
 5. Power BI imports the sample, adding a new dashboard, report, and dataset to your My Workspace.
    
-   ![Retail Analysis Sample dashboard](./media/mobile-apps-ios-qna/power-bi-service-opportunity-sample.png)
-
+   ![Sample dashboard](./media/mobile-apps-download-samples/power-bi-service-opportunity-sample.png)
   
 You are now ready to view the samples on your mobile device.
 

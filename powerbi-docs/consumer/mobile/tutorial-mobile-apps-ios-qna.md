@@ -22,7 +22,7 @@ Applies to:
 |:--- |:--- |
 | iPhones |iPads |
 
-The Q&A virtual analyst is a conversational BI experience that accesses underlying Q&A data in the Power BI service [(https://powerbi.com)](https://powerbi.com). It suggests data insights, and you can type or speak your own questions.
+The Q&A virtual analyst is a conversational BI experience that accesses underlying Q&A data in the [Power BI service](https://powerbi.com). It suggests data insights, and you can type or speak your own questions.
 
 ![Top sales Q&A virtual analyst](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
 
@@ -32,8 +32,6 @@ In this tutorial, you will:
 > * Install the Power BI mobile app for iOS
 > * Download a Power BI sample dashboard and report
 > * See what featured insights the mobile app suggests
-
-If you're not signed up for Power BI, [sign up for a free trial](https://app.powerbi.com/signupredirect?pbi_source=web) before you begin.
 
 ## Prerequisites
 
