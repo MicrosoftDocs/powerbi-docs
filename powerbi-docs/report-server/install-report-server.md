@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 11/26/2019
 ---
 
 # Install Power BI Report Server
@@ -16,9 +16,9 @@ Learn how to install Power BI Report Server.
 
 ## Download Power BI Report Server
 
-[Download Power BI Report Server](https://www.microsoft.com/download/details.aspx?id=56722) from the Microsoft Download Center.
+On the [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/) page, select **Download free trial**.
 
-There's also a free trial version. On the [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/) page, select **Download free trial**.
+When you run the PowerBIReportServer.exe file, you select the free trial or you enter your product key. Read on for details.
 
 ## Before you install
 
