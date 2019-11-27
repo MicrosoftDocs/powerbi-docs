@@ -47,7 +47,7 @@ TODO: screenshot
 
 9. On the left hand side of the page, click the checkbox beside the SharePoint list you want to connect to.
 
-![choose list](media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-choose-list.png)
+![choose list](media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-select-list.png)
 
 10. Click *Load*.  Power BI will load your list data into a new report.
 
