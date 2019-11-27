@@ -20,7 +20,11 @@ Watch a 5 minute tutorial video or scroll down for step-by-step instructions.
 
 <iframe width="400" height="450" src="https://www.youtube.com/embed/OZO3x2NF8Ak" frameborder="0" allowfullscreen></iframe>
 
-# Part 1: Connect to your SharePoint List
+**Did you succeed at creating a report?  Any other feedback?** <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UM00wUE8yQ1dFQjUzWEk3VlU4SkhGVVhDWC4u" target="_blank">Take a quick 1 minute survey.</a>
+
+## Step-By-Step Instructions
+
+### Part 1: Connect to your SharePoint List
 
 1. If you don't have it already, download and install [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/).
 2. Open Power BI Desktop and in the Home tab of the ribbon, click *Get Data*. Click *More*.
@@ -55,7 +59,7 @@ Watch a 5 minute tutorial video or scroll down for step-by-step instructions.
 
 10. Click *Load*.  Power BI will load your list data into a new report.
 
-# Part 2: Create a report
+### Part 2: Create a report
 
 1. On the left hand side, click the *Data* icon to see your SharePoint list data that was loaded.
 
