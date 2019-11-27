@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 11/26/2019
 ---
 
 # Install Power BI Report Server
@@ -16,9 +16,9 @@ Learn how to install Power BI Report Server.
 
 ## Download Power BI Report Server
 
-[Download Power BI Report Server](https://www.microsoft.com/download/details.aspx?id=56722) from the Microsoft Download Center.
+On the [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/) page, select **Download free trial**.
 
-There's also a free trial version. On the [On-premises reporting with Power BI Report Server](https://powerbi.microsoft.com/report-server/) page, select **Download free trial**.
+When you run the PowerBIReportServer.exe file, you select the free trial or you enter your product key. Read on for details.
 
 ## Before you install
 
@@ -38,7 +38,7 @@ Read on for details.
 
 #### Power BI Premium
 
-If you have purchased Power BI Premium, within the **Premium settings** tab of the Power BI admin portal, you have access to your Power BI Report Server product key. This is only available for Global Admins or users assigned the Power BI service administrator role.
+If you've purchased Power BI Premium, within the **Premium settings** tab of the Power BI admin portal, you have access to your Power BI Report Server product key. The admin portal is only available to Global Admins or users assigned the Power BI service administrator role.
 
 ![Premium settings](../report-server/media/install-report-server/pbirs-product-key.png "Power BI Report Server key within Premium settings")
 
@@ -65,7 +65,7 @@ You don't need a SQL Server Database Engine server available at the time of inst
 
     ![Choose an edition](media/install-report-server/pbireportserver-choose-edition.png)
 
-    You can choose either Evaluation or Developer edition from the drop down.
+    Choose either Evaluation or Developer edition.
 
     ![Edition 2](media/install-report-server/pbireportserver-choose-edition2.png)
 
@@ -73,7 +73,7 @@ You don't need a SQL Server Database Engine server available at the time of inst
 4. Read and agree to the license terms and conditions, then select **Next**.
 
     ![License terms](media/install-report-server/pbireportserver-eula.png)
-5. You need to have a Database Engine available to store the report server database. Select **Next** to install the report server only.
+5. You need a Database Engine available to store the report server database. Select **Next** to install the report server only.
 
     ![Install files only](media/install-report-server/pbireportserver-install-files-only.png)
 6. Specify the install location for the report server. Select **Install** to continue.
@@ -90,11 +90,11 @@ You don't need a SQL Server Database Engine server available at the time of inst
 
 After you select **Configure Report Server** in the setup, you're presented with Reporting Services Configuration Manager. For more information, see [Reporting Services Configuration Manager](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 
-You need to [create a report server database](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database) to complete the initial configuration of Reporting Services. A SQL Server Database server is required to complete this step.
+To complete the initial configuration of Reporting Services, you [create a report server database](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-report-server-create-a-report-server-database). A SQL Server Database server is required to complete this step.
 
 ### Creating a database on a different server
 
-If you are creating the report server database on a database server on a different machine, you need to change the service account for the report server to a credential that is recognized on the database server. 
+If you're creating the report server database on a database server on a different machine, change the service account for the report server to a credential that is recognized on the database server. 
 
 By default, the report server uses the virtual service account. If you try to create a database on a different server, you may receive the following error on the Applying connection rights step.
 
@@ -132,9 +132,9 @@ An example of the complete URL string might be as follows:
 
 ## Firewall
 
-If you are accessing the report server from a remote machine, you want to make sure you have configured any firewall rules if there is a firewall present.
+If you're accessing the report server from a remote machine, make sure you've configured any firewall rules if there is a firewall present.
 
-You need to open up the TCP port that you have configured for your Web Service URL and Web Portal URL. By default, these are configured on TCP port 80.
+Open up the TCP port that you've configured for your Web Service URL and Web Portal URL. By default, they're configured on TCP port 80.
 
 ## Additional configuration
 

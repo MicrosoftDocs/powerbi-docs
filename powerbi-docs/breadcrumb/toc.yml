@@ -14,8 +14,8 @@
       topicHref: /power-bi/developer/index
       items:
       - name: Use R-powered Power BI visuals in Power BI
-        tocHref: /power-bi/desktop-r-powered-custom-visuals/
-        topicHref: /power-bi/developer/index
+        tocHref: /power-bi/developer/
+        topicHref: /power-bi/desktop-r-powered-custom-visuals/
     - name: Guided Learning
       tocHref: /power-bi/guided-learning/
       topicHref: /power-bi/guided-learning/

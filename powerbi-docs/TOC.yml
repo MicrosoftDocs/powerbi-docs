@@ -279,8 +279,6 @@
         href: desktop-slicer-filter-date-range.md
       - name: "Create a slicer you can resize"
         href: power-bi-slicer-filter-responsive.md
-      - name: "Create custom answer cards for Cortana"
-        href: service-cortana-answer-cards.md
       - name: "Row-level security"
         href: desktop-rls.md
       - name: "Customizing tooltips"
@@ -409,6 +407,8 @@
     items: 
     - name: "Data types in Power BI Desktop"
       href: desktop-data-types.md
+    - name: "Power BI data sources"
+      href: power-bi-data-sources.md
     - name: "Use the updated ribbon in Power BI Desktop (preview)"
       href: desktop-ribbon.md            
     - name: "Formula editor shortcuts for Power BI Desktop"
@@ -665,10 +665,6 @@
         href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: "Use Q&A with live connections"
         href: service-q-and-a-direct-query.md
-      - name: "Intro to Cortana for Power BI"
-        href: service-cortana-intro.md
-      - name: "Enable Cortana for Power BI"
-        href: service-cortana-enable.md
       - name: "Quick Insights in Power BI"
         href: service-insights.md
       - name: "Optimize data for Quick Insights"
@@ -801,8 +797,6 @@
         href: desktop-troubleshooting-analyze-in-excel.md
       - name: "Error: We couldn't find any data in your Excel workbook"
         href: service-admin-troubleshoot-excel-workbook-data.md
-      - name: "Troubleshoot Cortana"
-        href: service-cortana-troubleshoot.md
       - name: "How to refresh your Xero content pack credentials if refresh failed"
         href: service-refresh-xero-credentials.md
     - name: Other tasks
@@ -819,10 +813,6 @@
         items: 
         - name: "Connect to services with apps"
           href: service-connect-to-services.md
-        - name: "Acumatica"
-          href: service-connect-to-acumatica.md
-        - name: "Azure Audit Logs"
-          href: service-connect-to-azure-audit-logs.md
         - name: "GitHub"
           href: service-connect-to-github.md
         - name: "Office365Mon"

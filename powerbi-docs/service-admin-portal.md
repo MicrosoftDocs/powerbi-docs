@@ -273,13 +273,6 @@ Report creators can share apps directly with end users without requiring install
 
 ## Integration settings
 
-### Ask questions about data using Cortana
-
-Users in the organization can ask questions about their data using Cortana. [Learn more](service-cortana-enable.md)
-
-> [!NOTE]
-> This setting applies to the entire organization and cannot be limited to specific groups.
-
 ### Use Analyze in Excel with on-premises datasets
 
 Users in the organization can use Excel to view and interact with on-premises Power BI datasets. [Learn more](service-analyze-in-excel.md)
@@ -293,7 +286,7 @@ Users in the organization can use the ArcGIS Maps for Power BI visualization pro
 
 ### Use global search for Power BI (Preview)
 
-Users in the organization can use external search features that rely on Azure Search. For example, users can use Cortana to retrieve key information directly from Power BI dashboards and reports. [Learn more](service-cortana-intro.md)
+Users in the organization can use external search features that rely on Azure Search.
 
 ## Custom visuals settings
 

@@ -1,21 +1,21 @@
 ---
 title: Connect to Office365Mon with Power BI
 description: Office365Mon for Power BI
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: maggiesMSFT
 
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 8/29/2019
-ms.author: tebercov
+ms.date: 11/26/2019
+ms.author: painbar
 
 LocalizationGroup: Connect to services
 ---
 # Connect to Office365Mon with Power BI
 Analyzing your Office 365 outages and health performance data is easy with Power BI and the Office365Mon template app. Power BI retrieves your data, including outages and health probes, then builds an out-of-box dashboard and reports based on that data.
 
-Connect to the [Office365Mon template app](https://app.powerbi.com/groups/me/getdata/services/office365mon) for Power BI.
+Connect to the [Office365Mon template app](https://msit.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) for Power BI.
 
 >[!NOTE]
 >An Office365Mon admin account is required to connect and load the Power BI template app.
