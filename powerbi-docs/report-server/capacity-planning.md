@@ -53,7 +53,10 @@ The tests used in the load test runs are publicly available in a GitHub project 
 * Tests simulating rendering small and large paginated reports, and 
 * Tests simulating performing various types of web portal  operations. 
 
-All tests were written to perform an end-to-end operation (such as rendering a report, creating a new data source, etc.). They accomplish this by making one or more web requests to the report server (via APIs). In the real world, a user may need to perform a few intermediate operations to complete one of these end-to-end operations. For example, to render a report a user will need to go to the web portal, navigate to the folder where the report is, then click the report to render it. While tests don’t perform all the operations needed to accomplish an end-to-end task, they still impose most of the load that Power BI Report Server would experience. You can learn more about the different types of reports used as well as the variety of operations performed by exploring the GitHub project.  NOTE: While the tool isn't officially supported by Microsoft, the product team does contribute to the project and answer issues that are raised by other contributors.
+All tests were written to perform an end-to-end operation (such as rendering a report, creating a new data source, etc.). They accomplish this by making one or more web requests to the report server (via APIs). In the real world, a user may need to perform a few intermediate operations to complete one of these end-to-end operations. For example, to render a report a user will need to go to the web portal, navigate to the folder where the report is, then click the report to render it. While tests don’t perform all the operations needed to accomplish an end-to-end task, they still impose most of the load that Power BI Report Server would experience. You can learn more about the different types of reports used as well as the variety of operations performed by exploring the GitHub project.  
+
+> [!NOTE]
+> The tool isn't officially supported by Microsoft, but the product team does contribute to the project and answer issues that are raised by other contributors.
 
 ### Workloads
 There are 2 workload profiles used in testing: Power BI Report Heavy and Paginated Report Heavy. The table below describes the distribution of requests executed against the Report Server.
@@ -137,5 +140,4 @@ If you’d like to run the Reporting Services LoadTest tool against your or a Mi
 5. Once you finish deploying the environment, follow the instructions listed on https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution to run the tests.
 
 More questions? [Try asking the Power BI Community](https://community.powerbi.com/)
-
 
