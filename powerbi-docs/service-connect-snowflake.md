@@ -67,7 +67,9 @@ Once this is done you will be able to use reports with SSO.
 
 ### Enabling a dataset
 
-When the first user goes to configure the Snowflake dataset for Power BI, they'll have to log in using their Oauth2 credentials via AAD. They need to select the option that other users will have their Oauth2 credentials used to retrieve data. This will enable AAD SSO.
+Once a report based on the Snowflake connector has been published to the service, the dataset backing that report can be enabled to use SSO. In the Power BI web service, the dataset creator needs to navigate to the appropriate workspace, select 'Datasets', and select 'Settings' (under the '...' menu for additional actions next to the relevant dataset).
+
+On the Datasets settings page, the dataset creator needs to select 'Data source credentials' and sign in. When this first user goes to sign in to Snowflake  for the dataset, they'll have to log in using their Oauth2 credentials via AAD. They need to select the option that other users will have their Oauth2 credentials used to retrieve data. This will enable AAD SSO.
 
 ![Dataset setting for Snowflake SSO](media/service-connect-snowflake/snowflakessocredui.png)
 
