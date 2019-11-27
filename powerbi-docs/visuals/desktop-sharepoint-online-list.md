@@ -14,7 +14,7 @@ LocalizationGroup: Visualizations
 ---
 # Create a report on a SharePoint List
 
-Many teams and organizations use Lists in SharePoint Online to store data since it is easy to set up and for users to update.  Sometimes a chart is a much easier way for users to quickly understand the data rather than looking at the list itself.  In this tutorial, we show how to transform your SharePoint List data into a Power BI report.
+Many teams and organizations use Lists in SharePoint Online to store data because it's easy to set up and easy for users to update.  Sometimes a chart is a much easier way for users to quickly understand the data rather than looking at the list itself. In this tutorial, we show how to transform your SharePoint List data into a Power BI report.
 
 Watch this five-minute tutorial video, or scroll down for step-by-step instructions.
 
@@ -26,12 +26,12 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
 
 1. If you don't have it already, download and install [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
 2. Open Power BI Desktop and in the Home tab of the ribbon, select **Get Data** > **More**.
-3. Select **Online Services**, then select **SharePoint Online list**.  
+3. Select **Online Services**, then select **SharePoint Online List**.  
 
     ![Get data](media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-getdata.png)
 
 4. Select **Connect**.
-4. Find the address (also known as a URL) of your SharePoint Online site that contains your list.  From a page in SharePoint Online, you can usually get to the site address by selecting **Home** in the navigation pane, or the icon for the site at the top, then copying the address from your web browser's address bar.
+4. Find the address (also known as a URL) of your SharePoint Online site that contains your list.  From a page in SharePoint Online, you can usually get the site address by selecting **Home** in the navigation pane, or the icon for the site at the top, then copying the address from your web browser's address bar.
 
    Watch a video of this step:
    <iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=48&end=90" frameborder="0" allowfullscreen></iframe>
@@ -40,7 +40,7 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
 
     **Problems completing this step?** [Yes, I'm having problems](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UQjRUUTVLMzdXN0ZBNkZJNjlKOVFYMVhUVS4u).
 
-6. You may or may not see a SharePoint access screen like the following image.  If you don't see it, skip to step 10.  If you do, select **Microsoft Account** on the left-hand side of the page.
+6. You may or may not see a SharePoint access screen like the following image.  If you don't see it, skip to step 10.  If you do see it, select **Microsoft Account** on the left side of the page.
 
     ![Choose Microsoft account](media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-auth1.png)
 
@@ -60,9 +60,9 @@ Watch this five-minute tutorial video, or scroll down for step-by-step instructi
 
 ## Part 2: Create a report
 
-1. On the left side, select the **Data** icon to see that your SharePoint list data that was loaded.
+1. On the left side, select the **Data** icon to see that your SharePoint list data was loaded.
 
-2. Make sure your list columns with numbers show the Sum icon in the **Fields pane** on the right.  For any that don't, select the column header in the table view, select the **Modeling** tab, then changing the **Data type** to **Decimal Number** or **Whole Number**, depending on the data.  If prompted to confirm your change, select **Yes**.  If your number is a special format, like currency, you can also choose that by setting the **Format**.
+2. Make sure your list columns with numbers show the Sum, or Sigma, icon in the **Fields pane** on the right.  For any that don't, select the column header in the table view, select the **Modeling** tab, then change the **Data type** to **Decimal Number** or **Whole Number**, depending on the data.  If prompted to confirm your change, select **Yes**.  If your number is a special format, like currency, you can also choose that by setting the **Format**.
 
    Watch a video of this step:
    <iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=147&end=204" frameborder="0" allowfullscreen></iframe>
