@@ -63,10 +63,10 @@ Watch a 5 minute tutorial video or scroll down for step-by-step instructions.
 
 1. On the left hand side, click the *Data* icon to see your SharePoint list data that was loaded.
 
-   Watch a video of this step:
-   <iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=147&end=203" frameborder="0" allowfullscreen></iframe>
-
 2. Make sure your list columns with numbers show the Sum icon in the list on the right hand side of the screen.  For any that don't, fix this by clicking the column header in the table view, clicking the *Modeling* tab, then changing the Data type dropdown to Decimal Number or Whole Number, depending on your situation.  If prompted to confirm your change, click *Yes*.  If your number is a special format, like currency, you can also choose that by setting the 'Format'.
+
+   Watch a video of this step:
+   <iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=147&end=204" frameborder="0" allowfullscreen></iframe>
 
     **Problems completing this step?** <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UQjRUUTVLMzdXN0ZBNkZJNjlKOVFYMVhUVS4u" target="_blank">Yes, I'm having problems</a>
 
