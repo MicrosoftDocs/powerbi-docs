@@ -39,9 +39,6 @@ Watermarks can be used to showcase the full functionality of the Power BI visual
 * Watermarks are not allowed in Power BI visuals with a *free* price tag.
 * Watermarks are not allowed in IAP visuals, when the user uses free features. 
 
-> [!NOTE]
-> There is no limitation on watermarks, so they can be placed in the middle, in both reading and edit mode.
-
 ### Pop-up window
 
 You can use a pop-up window to explain how to purchase a license, when an invalid (or expired) license is used with your Power BI IAP visual.
