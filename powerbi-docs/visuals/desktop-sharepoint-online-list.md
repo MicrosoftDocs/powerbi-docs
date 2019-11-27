@@ -34,7 +34,7 @@ Watch a 5 minute tutorial video or scroll down for step-by-step instructions.
 
 5. Paste the address into the Site URL field in the dialog open in Power BI Desktop.
 
-    Problems completing this step? <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UQjRUUTVLMzdXN0ZBNkZJNjlKOVFYMVhUVS4u" target="_blank">Yes, I'm having problems</a>
+    *Problems completing this step?* <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UQjRUUTVLMzdXN0ZBNkZJNjlKOVFYMVhUVS4u" target="_blank">Yes, I'm having problems</a>
 
 6. You may or may not see a screen like the one below.  If you don't skip to step 9.  If you do, click on *Microsoft Account* on the left hand side of the page.
 
@@ -43,7 +43,7 @@ TODO: screenshot
 7. Click Sign In and enter your username and password you use to sign in to Microsoft Office 365.
 8. When you are finished the sign in process, click *Connect*.
 
-Problems completing this step? [Yes, I'm having problems](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UQjRUUTVLMzdXN0ZBNkZJNjlKOVFYMVhUVS4u){:target="_blank"}
+    *Problems completing this step?* <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UQjRUUTVLMzdXN0ZBNkZJNjlKOVFYMVhUVS4u" target="_blank">Yes, I'm having problems</a>
 
 9. On the left hand side of the page, click the checkbox beside the SharePoint list you want to connect to.
 
@@ -59,7 +59,7 @@ Problems completing this step? [Yes, I'm having problems](https://forms.office.c
 
 2. Make sure your list columns with numbers show the Sum icon in the list on the right hand side of the screen.  For any that don't, fix this by clicking the column header in the table view, clicking the *Modeling* tab, then changing the Data type dropdown to Decimal Number or Whole Number, depending on your situation.  If prompted to confirm your change, click *Yes*.  If your number is a special format, like currency, you can also choose that by setting the 'Format'.
 
-Problems completing this step? [Yes, I'm having problems](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UQjRUUTVLMzdXN0ZBNkZJNjlKOVFYMVhUVS4u){:target="_blank"}
+    *Problems completing this step?* <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UQjRUUTVLMzdXN0ZBNkZJNjlKOVFYMVhUVS4u" target="_blank">Yes, I'm having problems</a>
 
 3. On the left hand side, click the *Report* icon.
 4. Select columns you want to visualize by clicking the checkbox beside them on the right hand side of the screen.
