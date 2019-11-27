@@ -43,9 +43,6 @@ Watch Amanda share the dashboard with colleagues inside and outside Amanda's com
  
    >[!NOTE]
    >The input box supports, at most, 100 users or groups. If you need to share with large numbers of users, consider creating the dashboard in a workspace and [distributing it as an app](service-create-distribute-apps.md).
-   > 
-   > 
-
 
 3. Add a message if you want. It's optional.
 4. To let your coworkers share your content with others, check **Allow recipients to share your dashboard (or report)**.
@@ -81,15 +78,15 @@ When you share with people outside your organization, they receive an email with
 
 After they sign in, they see the shared dashboard or report in its own browser window, not in the usual Power BI portal. To access this dashboard or report later, they must bookmark the link.
 
-They can't edit any content in this dashboard or report. They can interact with the charts and change filters or slicers, but they can't save their changes. 
+They can't edit any content in this dashboard or report. They can interact with the charts and change filters or slicers, but can't save their changes. 
 
-Only your direct recipients can see the shared dashboard or report. For example, if you sent the email to Vicki@contoso.com, only Vicki can see the dashboard. No one else can see the dashboard, even if Vicki forwards them the link. Vicki must use the same email address to access it; if Vicki signs in with any other email address, they won't have access to the dashboard.
+Only your direct recipients see the shared dashboard or report. For example, if you sent the email to Vicki@contoso.com, only Vicki sees the dashboard. No one else can see the dashboard, even if Vicki forwards them the link. Vicki must use the same email address to access it; if Vicki signs in with any other email address, Vicki won't have access to the dashboard.
 
-People outside your organization can't see any data if role- or row-level security is implemented on on-premises Analysis Services tabular models.
+People outside your organization don't see any data if role- or row-level security is implemented on on-premises Analysis Services tabular models.
 
 If you send a link from a Power BI mobile app to people outside your organization, clicking the link opens the dashboard in a browser, not in the Power BI mobile app.
 
-If you [allow external guest users to edit and manage content in the organization](service-admin-portal.md#export-and-sharing-settings), the default consumption-only experience doesn't apply to them. [Learn more](service-admin-azure-ad-b2b.md).
+Your Power BI admin can allow external guest users to edit and manage content in your organization. If so, your external users won't have that consumption-only experience. They can edit and manage content within your organization. Learn more about [distributing Power BI content to external guest users with Azure AD B2B](service-admin-azure-ad-b2b.md).
 
 ## Stop sharing or stop others from sharing
 Only the dashboard or report owner can turn resharing on and off.
@@ -116,15 +113,15 @@ Only the dashboard or report owner can turn resharing on and off.
 ## Limitations and considerations
 Things to keep in mind about sharing dashboards and reports:
 
-* In general, you and your colleagues see the same data in the dashboard or report. Thus, if you have permissions to see more data than they do, they'll be able to see all your data in the dashboard or report. However, if [row-level security (RLS)](service-admin-rls.md) is applied to the dataset underlying a dashboard or report, then the credentials of every person are used to determine which data they can access.
-* Everyone you share your dashboard with can see it and interact with the related reports in [Reading view](consumer/end-user-reading-view.md#reading-view). They can't create reports or save changes to existing reports.
-* Although no one can see or download the dataset, they can access the dataset directly by using the Analyze in Excel feature. An admin can restrict the ability to use Analyze in Excel for everyone in a group. However, the restriction is for everyone in that group for every workspace the group belongs to.
+* In general, you and your colleagues see the same data in the dashboard or report. Thus, if you have permissions to see more data than they do, they see all your data in the dashboard or report. However, if [row-level security (RLS)](service-admin-rls.md) is applied to the dataset underlying a dashboard or report, then each person's credentials determine which data they can access.
+* Everyone you share your dashboard with can see it and interact with the related reports in [Reading view](consumer/end-user-reading-view.md#reading-view). In general, they can't create reports or save changes to existing reports. However, if you select **Allow users to build new content using the underlying datasets**, they can create their own reports in other workspaces based on the dataset for this dashboard or report.
+* Although no one can see or download the dataset, they can access the dataset directly by using the Analyze in Excel feature. An admin can restrict the ability to use Analyze in Excel for everyone in a group. However, the restriction is for everyone in that group and for every workspace the group belongs to.
 * Everyone can manually [refresh the data](refresh-data.md).
 * If you use Office 365 for email, you can share with members of a distribution group by entering the email address associated with the distribution group.
-* Coworkers who share your email domain, and coworkers whose domain is different but registered within the same tenant, can share the dashboard with others. For example, if the domains contoso.com and contoso2.com are registered in the same tenant and your email address is konrads@contoso.com, then both ravali@contoso.com and gustav@contoso2.com can share, as long as you gave them permission to share.
-* If your coworkers already have access to a specific dashboard or report, you can send a direct link by copying the URL when you're on the dashboard or report. For example: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`
+* Coworkers who share your email domain, and coworkers whose domain is different but registered within the same tenant, can share the dashboard with others. For example, say the domains contoso.com and contoso2.com are registered in the same tenant and your email address is konrads@contoso.com. Both ravali@contoso.com and gustav@contoso2.com can share your dashboard, as long as you give them permission to share.
+* If your coworkers already have access to a specific dashboard or report, you can send a direct link by copying the URL when you're on the dashboard or report. For example: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`.
 * Likewise, if your coworkers already have access to a specific dashboard, you can [send a direct link to the underlying report](service-share-reports.md). 
-* You can share with, at most, 100 users or groups in a single share action. However, you can give more than 500 users access to an item. To do so, either share multiple times by specifying the users individually, or share with a user group that contains all the users.
+* You can share with, at most, 100 users or groups in a single share action. However, you can give more than 500 users access to an item. To do so, either share multiple times by specifying the users individually, or share with a user group that contains all the users. Another option is to create the report or dashboard in a workspace, then create an app from the workspace. You can share that with many more people. Read more about [publishing apps in Power BI](service-create-distribute-apps.md).
 
 ## Troubleshoot sharing
 
@@ -134,7 +131,7 @@ The people you share with may see a locked tile in a dashboard, or a "Permission
 
 ![Power BI locked tile](media/service-share-dashboards/power-bi-locked_tile_small.png)
 
-If so, you need to grant them permission to the underlying dataset:
+If so, you need to grant them permission to the underlying dataset.
 
 1. Go to the **Datasets** tab in your content list.
 
