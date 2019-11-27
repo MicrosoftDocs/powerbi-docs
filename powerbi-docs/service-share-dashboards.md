@@ -47,7 +47,7 @@ Watch Amanda share the dashboard with colleagues inside and outside Amanda's com
 3. Add a message if you want. It's optional.
 4. To let your coworkers share your content with others, check **Allow recipients to share your dashboard (or report)**.
    
-   Allowing others to share is called *resharing*. If you let them, they can reshare from the Power BI service and the mobile apps, or forward the email invitation to others in your organization. The invitation expires after one month. People outside your organization can't reshare. As the owner of the content, you can turn off resharing, or revoke resharing on an individual basis. See [Stop sharing or stop others from sharing](#stop-sharing-or-stop-others-from-sharing) in this article.
+   Allowing others to share is called *resharing*. If you let them, they can reshare from the Power BI service and the mobile apps, or forward the email invitation to others in your organization. The invitation expires after one month. People outside your organization can't reshare. As the owner of the content, you can turn off resharing, or revoke resharing on an individual basis. See [Stop or change sharing](#stop-or-change-sharing) in this article.
 
 5. If you select **Allow users to build new content using the underlying datasets**, they can create their own reports in other workspaces based on the dataset for this dashboard. Read more about [creating reports based on datasets from different workspaces](service-datasets-discover-across-workspaces.md).
 
@@ -73,7 +73,7 @@ Sometimes you need to see the people you've shared with, and see who they've sha
 
     People outside your organization are listed as **Guest**.
 
-    In this view, you can [stop or change sharing permissions](#stop-or-change-sharing). 
+    In this view, you can [stop or change sharing permissions](#stop-or-change-sharing) in this article. 
 
 ## Share a dashboard or report outside your organization
 When you share with people outside your organization, they receive an email with a link to the shared dashboard or report. They must sign in to Power BI to see what you shared. If they don't have a Power BI Pro license, they can sign up for a license when they click the link.
