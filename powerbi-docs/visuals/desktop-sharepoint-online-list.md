@@ -25,7 +25,7 @@ Watch a 5 minute tutorial video or scroll down for step-by-step instructions.
 1. If you don't have it already, download and install [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/).
 2. Open Power BI Desktop and in the Home tab of the ribbon, click *Get Data*. Click *More*.
 
-<iframe width="500" height="281" src="https://www.youtube.com/embed/TC9BIMZ_khU?start=10&end=15" frameborder="0" allowfullscreen></iframe>
+![get data](media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-getdata.png)
 
 3. Click *Online Services* on the left, then click *SharePoint Online list*.  Click *Connect*.
 4. Find the address (also known as a URL) of your SharePoint Online site that contains your list.  From a page in SharePoint Online, you can usually get to the site address by clicking "Home" in the left navigation or the icon for the site at the top, then copying the address from your web browser's address bar.
@@ -47,7 +47,7 @@ TODO: screenshot
 
 9. On the left hand side of the page, click the checkbox beside the SharePoint list you want to connect to.
 
-![choose SharePoint site URL](media/desktop-sharepoint-online-list/step 1-9.gif)
+![choose list](media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-choose-list.png)
 
 10. Click *Load*.  Power BI will load your list data into a new report.
 
