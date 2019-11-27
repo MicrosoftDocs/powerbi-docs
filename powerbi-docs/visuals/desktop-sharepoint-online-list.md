@@ -18,7 +18,7 @@ Many teams and organizations use Lists in SharePoint Online to store data since 
 
 Watch a 5 minute tutorial video or scroll down for step-by-step instructions.
 
-<iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak" frameborder="0" allowfullscreen></iframe>
+<iframe width="400" height="450" src="https://www.youtube.com/embed/OZO3x2NF8Ak" frameborder="0" allowfullscreen></iframe>
 
 # Part 1: Connect to your SharePoint List
 
