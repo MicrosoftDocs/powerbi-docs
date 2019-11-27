@@ -13,7 +13,7 @@ ms.date: 06/18/2019
 
 # Power BI visual concept
 
-The article explains how a user and a visual interact with Power BI, and how a user interacts with Power BI visual. In the diagram you see which actions influence directly to the visual or through Power BI (for example, the user selects bookmarks).
+The article explains how a user and a visual interact with Power BI, and how a user interacts with Power BI visual. In the diagram, you see which actions influence directly to the visual or through Power BI (for example, the user selects bookmarks).
 
 ![Power BI visual](./media/visual-concept.svg)
 
@@ -41,9 +41,9 @@ More of updates come into call of `update` method.
 
 * User resizes the visual.
 
-    When a user changes a size of the visual, Power BI calls `update` method with new `option` object. Options has nested `viewport` object with new width and height of the visual.
+    When a user changes a size of the visual, Power BI calls `update` method with new `option` object. Options have nested `viewport` object with new width and height of the visual.
 
-* User applies report level, page level or visual level filter.
+* User applies report, page, or visual level filter.
 
     Power BI filters data according to filter conditions and calls `update` method of the visual to give new data to the visual.
 
@@ -105,13 +105,12 @@ More of updates come into call of `update` method.
 * User clicks/selects elements on the visual.
 
     For more information about selections, [read how visual interacts](selection-api.md).
-    <!-- TODO rewrite article about selections, and include new methods decsription: withTable, withMatrixNode -->
 
 ### The visual interacts with Power BI
 
 * The visual requests more data from Power BI.
 
-    The visual can process data part by part. FetchMoreData API method requestest the next fragment of dataset.
+    The visual can process data part by part. FetchMoreData API method requests the next fragment of dataset.
 
     For more information about `fetchMoreData`, [read how to fetch more data from Power BI](fetch-more-data.md)
 
