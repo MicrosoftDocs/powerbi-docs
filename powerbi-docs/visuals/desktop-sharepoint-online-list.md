@@ -34,7 +34,7 @@ Watch a 5 minute tutorial video or scroll down for step-by-step instructions.
 
 5. Paste the address into the Site URL field in the dialog open in Power BI Desktop.
 
-Problems completing this step? [Yes, I'm having problems](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UQjRUUTVLMzdXN0ZBNkZJNjlKOVFYMVhUVS4u){:target="_blank"}
+<div style="padding-left: 40px; background-color: red">Problems completing this step? <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UQjRUUTVLMzdXN0ZBNkZJNjlKOVFYMVhUVS4u" target="_blank">Yes, I'm having problems</a></div>
 
 6. You may or may not see a screen like the one below.  If you don't skip to step 9.  If you do, click on *Microsoft Account* on the left hand side of the page.
 
