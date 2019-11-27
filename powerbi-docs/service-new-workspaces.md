@@ -69,7 +69,7 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 | Create, edit, and delete content in the workspace.  |  X | X  | X  |   |
 | Publish reports to the workspace, delete content.  |  X | X  | X  |   |
 | Create a report in another workspace based on a dataset in this workspace. (1) |  X | X  | X  |   |
-| Copy a report. 1 | X | X | X |  |
+| Copy a report. (1) | X | X | X |  |
 | View and interact with an item. (2) |  X | X  | X  | X  |
 
 1. To copy a report, and to create a report in another workspace based on a dataset in this workspace, you need to meet additional criteria:
