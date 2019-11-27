@@ -43,11 +43,11 @@ Watch a 5 minute tutorial video or scroll down for step-by-step instructions.
 
 6. You may or may not see a screen like the one below.  If you don't skip to step 9.  If you do, click on *Microsoft Account* on the left hand side of the page.
 
-   ![authenticate](media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-auth1.png)
+   <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-auth1.png" alt="choose Microsoft account" width="400"/>
 
 7. Click Sign In and enter your username and password you use to sign in to Microsoft Office 365.
 
-   ![click sign in](media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-auth2.png)
+   <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-auth2.png" alt="sign in" width="400"/>
 
 8. When you are finished the sign in process, click *Connect*.
 
@@ -55,7 +55,7 @@ Watch a 5 minute tutorial video or scroll down for step-by-step instructions.
 
 9. On the left hand side of the page, click the checkbox beside the SharePoint list you want to connect to.
 
-   ![choose list](media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-select-list.png)
+   <img src="media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-selectlist.png" alt="get data" width="300"/>
 
 10. Click *Load*.  Power BI will load your list data into a new report.
 
