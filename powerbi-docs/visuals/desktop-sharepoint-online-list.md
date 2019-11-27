@@ -18,7 +18,7 @@ Many teams and organizations use Lists in SharePoint Online to store data since 
 
 Watch a 5 minute tutorial video or scroll down for step-by-step instructions.
 
-<iframe width="500" height="271" src="https://www.youtube.com/embed/TC9BIMZ_khU" frameborder="0" allowfullscreen></iframe>
+<iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak" frameborder="0" allowfullscreen></iframe>
 
 # Part 1: Connect to your SharePoint List
 
@@ -30,7 +30,7 @@ Watch a 5 minute tutorial video or scroll down for step-by-step instructions.
 3. Click *Online Services* on the left, then click *SharePoint Online list*.  Click *Connect*.
 4. Find the address (also known as a URL) of your SharePoint Online site that contains your list.  From a page in SharePoint Online, you can usually get to the site address by clicking "Home" in the left navigation or the icon for the site at the top, then copying the address from your web browser's address bar.
 
-<iframe width="500" height="271" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=48&end=90" frameborder="0" allowfullscreen></iframe>
+<iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=48&end=90" frameborder="0" allowfullscreen></iframe>
 
 5. Paste the address into the Site URL field in the dialog open in Power BI Desktop.
 
@@ -38,9 +38,12 @@ Watch a 5 minute tutorial video or scroll down for step-by-step instructions.
 
 6. You may or may not see a screen like the one below.  If you don't skip to step 9.  If you do, click on *Microsoft Account* on the left hand side of the page.
 
-TODO: screenshot
+![authenticate](media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-auth1.png)
 
 7. Click Sign In and enter your username and password you use to sign in to Microsoft Office 365.
+
+![click sign in](media/desktop-sharepoint-online-list/desktop-sharepoint-online-list-auth2.png)
+
 8. When you are finished the sign in process, click *Connect*.
 
     **Problems completing this step?** <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR8M5xArDGsxPhvdGH5o-Ym1UQjRUUTVLMzdXN0ZBNkZJNjlKOVFYMVhUVS4u" target="_blank">Yes, I'm having problems</a>
@@ -55,7 +58,7 @@ TODO: screenshot
 
 1. On the left hand side, click the *Data* icon to see your SharePoint list data that was loaded.
 
-<iframe width="500" height="271" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=147&end=203" frameborder="0" allowfullscreen></iframe>
+<iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=147&end=203" frameborder="0" allowfullscreen></iframe>
 
 2. Make sure your list columns with numbers show the Sum icon in the list on the right hand side of the screen.  For any that don't, fix this by clicking the column header in the table view, clicking the *Modeling* tab, then changing the Data type dropdown to Decimal Number or Whole Number, depending on your situation.  If prompted to confirm your change, click *Yes*.  If your number is a special format, like currency, you can also choose that by setting the 'Format'.
 
@@ -64,7 +67,7 @@ TODO: screenshot
 3. On the left hand side, click the *Report* icon.
 4. Select columns you want to visualize by clicking the checkbox beside them on the right hand side of the screen.
 
-<iframe width="500" height="271" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=215&end=252" frameborder="0" allowfullscreen></iframe>
+<iframe width="400" height="300" src="https://www.youtube.com/embed/OZO3x2NF8Ak?start=215&end=252" frameborder="0" allowfullscreen></iframe>
 
 5. Change the visual type if you need to.
 6. You can create multiple visualizations in the same report by unselecting the existing visual then clicking checkboxes for new columns.
