@@ -102,7 +102,14 @@ It is also important to call out that the shared-capacity limitation for daily r
 
 If you created your datasets and reports based on a Power BI Desktop file, Excel workbook, or comma separated value (.csv) file on OneDrive or SharePoint Online, Power BI performs another type of refresh, known as OneDrive refresh. For more information, see [Get data from files for Power BI](service-get-data-from-files.md).
 
-Unlike a dataset refresh during which Power BI imports data from a data source into a dataset, OneDrive refresh synchronizes datasets and reports with their source files. By default, Power BI checks about every hour if a dataset connected to a file on OneDrive or SharePoint Online requires synchronization. To review past synchronization cycles, check the OneDrive tab in the refresh history. The following screenshot shows a completed synchronization cycle for a sample dataset.
+Unlike a dataset refresh during which Power BI imports data from a data source into a dataset, OneDrive refresh synchronizes datasets and reports with their source files. By default, Power BI checks about every hour if a dataset connected to a file on OneDrive or SharePoint Online requires synchronization.
+
+> [!IMPORTANT]
+> Be cautious in how you handle file management on OneDrive. When you set a OneDrive file as the data source, Power BI references the item ID of the file when it performs the refresh, which can cause issues in some scenarios. Consider the scenario where you have a master file _A_ and a production copy of that file _B_, and you configure OneDrive refresh for file B. If you then _copy_ file A over file B, the copy operation deletes the old file B and creates a new file B with a different item ID, which breaks OneDrive refresh. You should instead upload and replace file B, which keeps the same item ID.
+
+You can move the file to another location (using drag and drop, for example) and refresh will continue to work because PBI still knows the fileID. However, if you copy that file to another location, a new instance of the file and a new fileID is created. Therefore, your Power BI file reference is no longer valid and refresh will fail.
+
+To review past synchronization cycles, check the OneDrive tab in the refresh history. The following screenshot shows a completed synchronization cycle for a sample dataset.
 
 ![Refresh history](media/refresh-data/refresh-history.png)
 

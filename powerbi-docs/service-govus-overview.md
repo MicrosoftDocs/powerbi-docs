@@ -51,7 +51,6 @@ Some of the features that are available in the commercial version of the **Power
 * **Embed in SharePoint Online** - it is not possible to embed content in SharePoint Online using the Power BI web part. However, secure embed does work using the [*Embed* web part](https://docs.microsoft.com/power-bi/service-embed-secure). You must add *app.powerbigov.us* to the exception list, which can be achieved by following the instructions in the [Allow or restrict the ability to embed content on SharePoint pages](https://support.office.com/article/allow-or-restrict-the-ability-to-embed-content-on-sharepoint-pages-e7baf83f-09d0-4bd1-9058-4aa483ee137b) article.
 * **Power BI US Government** is only available as a **Pro** license. Any references to Power BI (Free) licenses in an admin portal (or as users) are running in a commercial Power BI service cloud.
 * **Auditing** - auditing is now available through the Office 365 Security and Compliance portal, as of June 2018.
-* **Power BI content in Cortana** - Power BI results will not show up in Cortana search results, which includes results for your Power BI content (dashboards, reports, apps) as well as results that show Cortana-optimized report pages for specific keywords.
 * **External user sharing** - sharing is allowed within a Power BI tenant, and as of June 2018, sharing is also allowed with users outside of your Power BI tenant. See [distribute Power BI content to external guest users with Azure AD B2B](service-admin-azure-ad-b2b.md).
 * **Usage metrics for dashboards and reports** - usage metrics are not available for reports and dashboards. Customers can use audit log data to get usage information for content in their organization.
 * **Dataflows** - Dataflows are not available.
@@ -99,7 +98,7 @@ There are all sorts of things you can do with Power BI. For more information and
 
 * [Sign up for Power BI for US Government](service-govus-signup.md)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Power BI US Government Demo</a>
-* [Guided Learning for Power BI](guided-learning/index.md)
+* [Guided Learning for Power BI](guided-learning/index.yml)
 * [Get started with the Power BI service](service-get-started.md)
 * [What is Power BI Desktop?](desktop-what-is-desktop.md)
 

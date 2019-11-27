@@ -25,7 +25,7 @@ When applying row-level security to a Power BI paginated report, you need to ass
 
 After assigning the parameter to **UserID**, use the [Reports GenerateTokenForCreateInGroup](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetokenforcreateingroup) API to get the embed token.
 
-## Use UderID as a filter at report or query level
+## Use UserID as a filter at report or query level
 
 You can use **UserId** as a *filter* or in a *query* to the datasource in [Power BI Paginated Report Builder](../report-builder-power-bi.md).
 

@@ -2,7 +2,6 @@
 title: Power BI admin portal
 description: The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Microsoft 365 admin center, and settings.
 author: mgblythe
-ms.author: mblythe
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -274,13 +273,6 @@ Report creators can share apps directly with end users without requiring install
 
 ## Integration settings
 
-### Ask questions about data using Cortana
-
-Users in the organization can ask questions about their data using Cortana. [Learn more](service-cortana-enable.md)
-
-> [!NOTE]
-> This setting applies to the entire organization and cannot be limited to specific groups.
-
 ### Use Analyze in Excel with on-premises datasets
 
 Users in the organization can use Excel to view and interact with on-premises Power BI datasets. [Learn more](service-analyze-in-excel.md)
@@ -294,13 +286,13 @@ Users in the organization can use the ArcGIS Maps for Power BI visualization pro
 
 ### Use global search for Power BI (Preview)
 
-Users in the organization can use external search features that rely on Azure Search. For example, users can use Cortana to retrieve key information directly from Power BI dashboards and reports. [Learn more](service-cortana-intro.md)
+Users in the organization can use external search features that rely on Azure Search.
 
 ## Custom visuals settings
 
 ### Add and use custom visuals
 
-Users in the organization can interact with and share custom visuals. [Learn more](power-bi-custom-visuals.md)
+Users in the organization can interact with and share custom visuals. [Learn more](developer/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > This setting can be applied to the entire organization or can be limited to specific groups.
@@ -452,7 +444,7 @@ As an administrator, you can view the embed codes that are generated for your te
 
  ## <a name="organizational-visuals">Organization visuals</a> 
 
-The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](power-bi-custom-visuals-organization.md)
+The **Organization visuals** tab enables you to deploy and manage custom visuals inside your organization. With organizational visuals, you can easily deploy proprietary visuals in your organization, which report authors can then discover and import into their reports from Power BI Desktop. [Learn more](developer/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > A custom visual could contain code with security or privacy risks; make sure you trust the author and the source of the custom visual before deploying to the organization's repository.

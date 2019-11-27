@@ -1,8 +1,8 @@
 ---
 title: Register an app to embed Power BI content
 description: Learn how to register an application within Azure Active Directory for use with embedding Power BI content.
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -99,7 +99,7 @@ You want to be logged in with either the *master* account, used for embedding, o
 
 ### Using the Azure AD portal
 
-1. Browse to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) within the Azure portal and select the app that you're using for embedding.
+1. Browse to [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade/quickStartType//sourceType/) within the Azure portal and select the app that you're using for embedding.
 
 2. Select **API permissions** under **Manage**.
 

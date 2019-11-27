@@ -16,7 +16,21 @@ Register for our upcoming live webinars or watch our recorded sessions on-demand
 
 ## Upcoming webinars
 
-No webinars scheduled yet. Check back soon for more upcoming events.
+**Analytics in Azure virtual event: Accelerate time to insight with Azure Synapse Analytics**
+<br>by Gayle Sheppard and John Macintyre
+<br>[Register now](https://info.microsoft.com/WW-Analytics-in-Azure-virtual-event-Accelerate-Time-to-Insight-with-Azure-Synapse-Analytics-Registration.html?ocid=AID2482920_QSG_373413)
+
+**How Microsoft Is Changing BI Data Protection**
+<br>by Anton Fritz and Adi Regev
+<br>[Register to watch on December 4th](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
+
+**Nine Trends Shaping the Future of Big Data Analytics**
+<br>by Vijay Gopalakrishnan
+<br>[Register to watch on December 18th](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
+
+**Three Ways AI Is Changing BI**
+<br>by Justyna Lucznik
+<br>[Register to watch on January 8th](https://info.microsoft.com/ww-landing-Three-Ways-AI-Is-Changing-BI.html?lcid=EN-US&ocid=mkto_eml_EM581230A1LA1)
 
 >[Upcoming webinars from the Power BI community](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -76,7 +90,7 @@ Watch recorded sessions at any time
 
 ### Getting Started
 
-**Automate Day-to-Day Business Processes with Power BI, PowerApps, and Microsoft Flow**
+**Automate Day-to-Day Business Processes with Power BI, PowerApps, and Power Automate**
 <br>by Wim Coorevits and Enrique Plaza Garcia
 <br>[Register and watch now](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
 
@@ -96,7 +110,7 @@ Watch recorded sessions at any time
 <br>by Charles Sterling
 <br>[Watch now](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
 
-**The Total Economic Impact of Microsoft Flow and PowerApps**
+**The Total Economic Impact of Power Automate and PowerApps**
 <br>by Jonathan Lipsitz and Enrique Plaza Garcia
 <br>[Register and watch now](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 

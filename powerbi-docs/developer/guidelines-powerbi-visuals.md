@@ -5,7 +5,6 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ""
 ms.service: powerbi
-ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
@@ -49,7 +48,7 @@ Informative icons, if exsit, in reading mode should comply to the color, size an
 
 Until recently, the Marketplace (AppSource) accepted only Power BI visuals that are free. This policy has changed (December '18), so that you can also submit visuals to AppSource that have an "additional purchase may be required" price tag. 
 
-"Additional purchase may be required" visuals are similar to in-app purchase (IAP) add-ins in the Office Store. Developers may also submit these visuals for certification after the AppSource team approves them, and after making sure they comply with certification requirements. For more information about the requirements, see [Certified Power BI visuals](../power-bi-custom-visuals-certified.md).
+"Additional purchase may be required" visuals are similar to in-app purchase (IAP) add-ins in the Office Store. Developers may also submit these visuals for certification after the AppSource team approves them, and after making sure they comply with certification requirements. For more information about the requirements, see [Certified Power BI visuals](../developer/power-bi-custom-visuals-certified.md).
 
 > [!NOTE]
 > For the visual to be certified, it must not access external services or resources.
