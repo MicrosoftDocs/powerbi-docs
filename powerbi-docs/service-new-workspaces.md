@@ -68,9 +68,9 @@ Here are the capabilities of the four roles: admins, members, contributors, and 
 | Allow others to reshare items. |  X | X  |   |   |
 | Create, edit, and delete content in the workspace.  |  X | X  | X  |   |
 | Publish reports to the workspace, delete content.  |  X | X  | X  |   |
-| Create a report in another workspace based on a dataset in this workspace. (1) |  X | X  | X  |   |
-| Copy a report. (1) | X | X | X |  |
-| View and interact with an item. (2) |  X | X  | X  | X  |
+| Create a report in another workspace based on a dataset in this workspace.<sup>1</sup> |  X | X  | X  |   |
+| Copy a report.<sup>1</sup> | X | X | X |  |
+| View and interact with an item.<sup>2</sup> |  X | X  | X  | X  |
 
 1. To copy a report, and to create a report in another workspace based on a dataset in this workspace, you need to meet additional criteria:
     - You need a Power BI Pro license. See the next section, [Licensing](#licensing), for details.
