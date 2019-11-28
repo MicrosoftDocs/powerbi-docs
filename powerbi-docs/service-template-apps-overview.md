@@ -22,8 +22,9 @@ You submit your template apps to the Cloud Partner Portal. The apps then become 
 
 |  |
 |     :---:      |
-| [![Foo](./media/service-template-apps-overview/o365mon.png)](https://docs.microsoft.com/en-us/power-bi/service-connect-to-office365mon/) [![Foo](./media/service-template-apps-overview/power-bi-github-tile.png)](https://docs.microsoft.com/en-us/power-bi/service-connect-to-github/)    |
-| git diff       |
+| [![Foo](./media/service-template-apps-overview/o365mon.png)](https://docs.microsoft.com/power-bi/service-connect-to-office365mon) [![Foo](./media/service-template-apps-overview/power-bi-github-tile.png)](https://docs.microsoft.com/en-us/power-bi/service-connect-to-github)   |
+|  |
+
 
 
 
