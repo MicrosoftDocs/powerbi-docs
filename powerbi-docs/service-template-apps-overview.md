@@ -20,12 +20,14 @@ You build template apps that allow your customers to connect and instantiate wit
 
 You submit your template apps to the Cloud Partner Portal. The apps then become publicly available in the Power BI App gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). Here's a high-level look at the public template app creation experience.
 
+## Power BI Template Apps marketplace
+
 |  |
 |     :---:      |
-| [![Foo](./media/service-template-apps-overview/o365mon.png)](https://docs.microsoft.com/power-bi/service-connect-to-office365mon) [![Foo](./media/service-template-apps-overview/power-bi-github-tile.png)](https://docs.microsoft.com/power-bi/service-connect-to-github)   |
+| [![Foo](./media/service-template-apps-overview/project-web.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi_msprojectonline.pbi-microsoftprojectwebapp?tab=Overview) [![Foo](./media/service-template-apps-overview/azure-backup.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-azurebackup.pbi-azurebackup-template?tab=Overview) [![Foo](./media/service-template-apps-overview/dynamics-sales.png)](https://appsource.microsoft.com/en-us/product/power-bi/microsoftdynsmb.businesscentral_sales?tab=Overview) [![Foo](./media/service-template-apps-overview/forms-pro.png)](https://appsource.microsoft.com/en-us/product/power-bi/msfp.formsprocustomersatisfaction?tab=Overview) |
 |  |
 
-
+## Some other heading
 
 
 | Stage | Power BI Desktop |  |Power BI service  |  |Cloud Partner Portal  |
