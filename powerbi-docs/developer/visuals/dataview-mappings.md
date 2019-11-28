@@ -178,7 +178,7 @@ export class Visual implements IVisual {
 }
 ```
 
-Result is the visual to display single value from Power BI:
+As a result the visual displays a single value from Power BI:
 
 ![Single dataview mapping visual example](./media/visual-simple-dataview-mapping.png)
 
@@ -365,8 +365,8 @@ Power BI produces it as the categorical data view. It's the set of categories.
 
 Each category maps to a set of values as well. Each of these values is grouped by series, which is expressed as years.
 
-For example,  each `values` array represents data for each year.
-Also each `values` array has 4 values, for Canada, USA, UK, Mexico correspondly:
+For example, each `values` array represents data for each year.
+Also each `values` array has 4 values, for Canada, USA, UK and Mexico respectively:
 
 ```JSON
 {
@@ -419,7 +419,7 @@ Also each `values` array has 4 values, for Canada, USA, UK, Mexico correspondly:
 }
 ```
 
-Code sample to process categorical data view mapping. The sample creates Hierarchical structre: `Country => Year => Value`
+Code sample for processing categorical data view mapping is described below. The sample creates Hierarchical structure `Country => Year => Value`
 
 ```typescript
 "use strict";
@@ -456,11 +456,11 @@ export class Visual implements IVisual {
             return;
         }
 
-        // Categories has only one column in data buckets
-        // If you wan to support several columns on categories data backed you should iterate categoricalDataView.categories
+        // Categories have only one column in data buckets
+        // If you want to support several columns of categories data bucket, you should iterate categoricalDataView.categories array.
         const categoryFieldIndex = 0;
         // Measure has only one column in data buckets.
-        // If you wan to support several columns on data backed you should iterate years.values array in map function
+        // If you want to support several columns on data bucket, you should iterate years.values array in map function
         const measureFieldIndex = 0;
         let categories: PrimitiveValue[] = categoricalDataView.categories[categoryFieldIndex].values;
         let values: DataViewValueColumnGroup[] = categoricalDataView.values.grouped();
