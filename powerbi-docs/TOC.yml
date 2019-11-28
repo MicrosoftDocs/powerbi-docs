@@ -903,7 +903,9 @@
       href: report-builder-power-bi.md
   - name: Tutorials
     items: 
-    - name: Create a paginated report and upload Interact
+    - name: "Hands-on lab: Create a paginated report"
+      href: https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208
+    - name: Create a paginated report and upload
       href: paginated-reports-quickstart-aw.md
   - name: Concepts
     items: 

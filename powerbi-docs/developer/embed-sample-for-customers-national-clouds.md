@@ -21,6 +21,8 @@ The different national clouds are:
 
 * U.S. Government Community Cloud (GCC)
 
+* U. S. Government Community Cloud High (GCC High)
+
 * U. S. Military Contractors (DoDCON)
 
 * U. S. Military (DoD)
@@ -46,8 +48,8 @@ This article shows the code used in the [App Owns Data sample](https://github.co
 
 * Government Community Cloud (GCC):
 
-    > [!Note]
-    > GCC accounts only support P and EM capacities.
+    > [!NOTE]
+    > Embedding Power BI content from a Government Community Cloud (GCC), can only be done with an Office 356 SKU. GCC High customers can use [Office 356 or Azure SKUs](embedded-faq.md#what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365).
 
 1. Overwrite Cloud.config file with GCCCloud.config content.
 
