@@ -124,7 +124,7 @@ Many of the tiles on the Customer Profitability sample dashboard were pinned fro
 
     * **Team Scorecard** focuses on the performance of the five managers and their books of business.
     * **Industry Margin Analysis** provides a way to analyze the profitability compared to what's happening in the entire industry.
-    * **Executive Scorecard** provides a view of each of the managers, formatted for viewing in Cortana.
+    * **Executive Scorecard** provides a view of each of the managers, in a custom page size format.
 
 ### Team Scorecard page
 ![Team scorecard report page](media/sample-customer-profitability/customer2.png)
@@ -166,7 +166,7 @@ This report page provides a different slice of the data. It looks at gross margi
    * Valery, who is responsible for only one product, works in only five industry segments. Valery's industry influence is seasonal, but always produces a large bubble, indicating a significant impact on the company’s bottom line. Do the industry segments explain their negative performance?
 
 ### Executive Scorecard
-This page is formatted as a Cortana answer page. To learn more, see [Create a custom answer page for Cortana](service-cortana-answer-cards.md).
+This page has a custom page size format.
 
 ## Dig into the data by asking questions with Q&A
 For our analysis, it might be helpful to determine which industry generates the most revenue for Valery. Let’s use Q&A.
