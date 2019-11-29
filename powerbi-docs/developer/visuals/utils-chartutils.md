@@ -15,9 +15,17 @@ ms.date: 06/18/2019
 
 ChartUtils is a set of interfaces and methods for creating axis, data labels, and legends in Power BI Visuals.
 
+## Installation
+
+To install the package you should run the following command in the directory with your current visual:
+
+```bash
+npm install powerbi-visuals-utils-chartutils --save
+```
+
 ## Axis Helper
 
-> The axis helper (`axis` object in utils) provides functions in order to simplify manipulations with axis.
+The axis helper (`axis` object in utils) provides functions in order to simplify manipulations with axis.
 
 The module provides the following functions:
 
