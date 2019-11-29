@@ -2,8 +2,8 @@
 title: Introduction to use chart utils in Power BI visual
 description: This article describes how to use chart utils to draw axes and legends Power BI visual
 author: vtkalek
-ms.author: sranins
-manager: rkarlin
+ms.author: asander
+manager: asander
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
