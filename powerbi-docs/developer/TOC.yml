@@ -37,8 +37,6 @@
         href: visuals/objects-properties.md
       - name: "Advanced Edit Mode"
         href: visuals/advanced-edit-mode.md
-      - name: "Formatting utils"
-        href: visuals/utils-formattingutils.md
     - name: How to
       items:
       - name: "Get a visual certified"
@@ -87,8 +85,12 @@
         href: visuals/sort-options.md
       - name: "Localization"
         href: visuals/localization.md
-      - name: "Interactivity utils"
-        href: visuals/utils-interactivity-selections.md
+      - name: Power BI Visual utilities
+        items:    
+        - name: "Interactivity utils"
+          href: visuals/utils-interactivity-selections.md
+        - name: "Formatting utils"
+          href: visuals/utils-formattingutils.md
     - name: Resources
       items:
       - name: "Dev Center"
