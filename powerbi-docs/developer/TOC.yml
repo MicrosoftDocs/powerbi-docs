@@ -83,8 +83,16 @@
         href: visuals/event-service.md
       - name: "Sorting"
         href: visuals/sort-options.md
-      - name: "Interactivity utils"
-        href: visuals/utils-interactivity-selections.md
+      - name: "Localization"
+        href: visuals/localization.md
+      - name: Power BI Visual utilities
+        items:    
+        - name: "Interactivity utils"
+          href: visuals/utils-interactivity-selections.md
+        - name: "Formatting utils"
+          href: visuals/utils-formatting.md
+        - name: "Chart utils"
+          href: visuals/utils-chart.md
     - name: Resources
       items:
       - name: "Dev Center"
