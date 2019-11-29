@@ -125,7 +125,7 @@ First add a display name key to every display name you want to localize in your 
 
 Then add a directory called stringResources. The directory will contain all your different string resource files based on the locales you want your visual to support. Under this directory, you’ll need to add a JSON file for every locale you want to support. Those files contain the locale information and the localized strings values for every displayNameKey you want to replace.
 
-We will need to add two JSON files in the following way:
+In our example, lets say we want to support Arabic and Hebrew. We will need to add two JSON files in the following way:
 
 ![Localizations strings in string resources folder](media/stringresources-files.png)
 
@@ -133,10 +133,10 @@ Every JSON file defines a single locale (this file has to be one of the locales 
 
 ```json
 {
-    "locale": "de-DE",
+    "locale": "he-IL",
     "values": {
-        "VisualCategoryDataNameKey1": "Kategorie Daten",
-        "VisualMeasureDataNameKey2": "Messdaten"
+        "VisualCategoryDataNameKey1": "קטגוריה",
+        "VisualMeasureDataNameKey2": "יחידות מידה"
     }
 }
 ```
