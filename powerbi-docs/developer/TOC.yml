@@ -97,6 +97,8 @@
           href: visuals/utils-svgutils.md
         - name: "Type utils"
           href: visuals/utils-typeutils.md
+        - name: "Data view utils"
+          href: visuals/utils-dataviewutils.md
     - name: Resources
       items:
       - name: "Dev Center"
