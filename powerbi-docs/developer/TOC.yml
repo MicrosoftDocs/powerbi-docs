@@ -95,6 +95,8 @@
           href: visuals/utils-chartutils.md
         - name: "SVG utils"
           href: visuals/utils-svgutils.md
+        - name: "Type utils"
+          href: visuals/utils-typeutils.md
     - name: Resources
       items:
       - name: "Dev Center"
