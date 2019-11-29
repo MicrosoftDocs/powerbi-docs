@@ -92,7 +92,7 @@
         - name: "Formatting utils"
           href: visuals/utils-formatting-utils.md
         - name: "Chart utils"
-          href: visuals/utils-char-tutils.md
+          href: visuals/utils-chart-utils.md
         - name: "SVG utils"
           href: visuals/utils-svg-utils.md
         - name: "Type utils"

@@ -769,6 +769,6 @@ private renderLegend(): void {
 }
 ```
 
-# Next steps
+## Next steps
 
 - [Read how to use InteractivityUtils to add selections into Power BI Visuals](utils-interactivity-selections.md)
