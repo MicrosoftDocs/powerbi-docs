@@ -2,11 +2,11 @@
 title: Use Shape maps in Power BI Desktop (Preview)
 description: Create relative comparisons to regions using Shape maps in Power BI Desktop
 author: mihart
-ms.reviewer: 'amanda'
+ms.reviewer: 'amanda, justyna, sujata'
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/4/2019
+ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
 ---
@@ -193,28 +193,23 @@ Use the following **Region keys** in this Preview release to test **Shape map**.
 
 | ID | name | name-en |
 | --- | --- | --- |
-| Alsace |Alsace |Alsace |
-| Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
-| Provence-Alpes-Cote d'Azur |Provence-Alpes-Côte d'Azur |Provence-Alpes-Cote d'Azur |
-| Poitou-Charentes |Poitou-Charentes |Poitou-Charentes |
-| Picardie |Picardie |Picardy |
-| Pays de la Loire |Pays de la Loire |Pays de la Loire |
-| Nord-Pas-de-Calais |Nord-Pas-de-Calais |Nord-Pas-de-Calais |
-| Midi-Pyrenees |Midi-Pyrénées |Midi-Pyrenees |
-| Lorraine |Lorraine |Lorraine |
-| Limousin |Limousin |Limousin |
-| Languedoc-Roussillon |Languedoc-Roussillon |Languedoc-Roussillon |
-| Ile-del-France |Île-de-France |Ile-de-France |
-| Haute-Normandie |Haute-Normandie |Upper Normandy |
-| Franche-Comte |Franche-Comté |Franche-Comte |
-| Corse |Corse |Corsica |
-| Champagne-Ardenne |Champagne-Ardenne |Champagne-Ardenne |
-| Centre-Val de Loire |Centre-Val de Loire |Centre-Val de Loire |
+| Auvergne-Rhone-Alpes |  |  |
+| Bourgogne-Franche-Comte |  |  |
 | Bretagne |Bretagne |Brittany |
-| Bourgogne |Bourgogne |Burgundy |
-| Basse-Normandie |Basse-Normandie |Lower Normandy |
-| Auvergne |Auvergne |Auvergne |
-| Aquitaine |Aquitaine |Aquitaine |
+| Centre-Val de Loire |Centre-Val de Loire |Centre-Val de Loire |
+| Corse |Corse |Corsica |
+| Grand Est |  |  |
+| Guadeloupe | |   |
+| Hauts-de-France |  |  |
+| Ile-de-France |Île-de-France |Ile-de-France |
+| La Reunion |  |  |
+| Mayotte  |  |  |
+| Normandie |Normandie |  |
+| Nouvelle-Aquitaine |  |  |
+| Occitanie  |  |  |
+| Pays de la Loire |Pays de la Loire |Pays de la Loire |
+| Provence-Alpes-Cote d'Azur |Provence-Alpes-Côte d'Azur |Provence-Alpes-Cote d'Azur |
+|  |  |  |
 
 ### Germany: States
 

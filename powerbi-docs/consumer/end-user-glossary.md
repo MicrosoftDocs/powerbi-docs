@@ -38,9 +38,6 @@ A feature that notifies users of changes in the data based on limits they set. A
 **annotate**
 To write lines, text, or stamps on a snapshot copy of a tile, report, or visual on the Power BI mobile app for iOS and Android devices.
 
-**answer card, answer page**
-See Cortana answer card.
-
 **app, apps** 
 
 
@@ -96,12 +93,6 @@ The content index for an app.
  A collection of pre-packaged datasets, reports, and dashboards. Now **apps**, learn [about the new workspace experience](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **content view**
-
-**Cortana answer card**
-The dedicated report page to include in a Power BI report to be able to create custom Cortana answers.
-
-**Cortana answer page**
-The name for the Cortana page that's shown to the customer.
 
 **cross filter, cross highlight**
 
@@ -236,7 +227,7 @@ Included with the product. For example, Power BI comes with a set of *native* vi
 **nav pane** or **nav pane**
 The controls along the left edge of the Power BI service.
 
-First instance: nav pane
+First instance: navigation pane
 Subsequent mentions or tight spaces: nav pane
 
 **nav pane**
