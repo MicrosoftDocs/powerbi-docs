@@ -90,7 +90,7 @@
         - name: "Interactivity utils"
           href: visuals/utils-interactivity-selections.md
         - name: "Formatting utils"
-          href: visuals/utils-formattingutils.md
+          href: visuals/utils-formatting-utils.md
     - name: Resources
       items:
       - name: "Dev Center"
