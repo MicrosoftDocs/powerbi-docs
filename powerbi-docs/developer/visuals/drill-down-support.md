@@ -19,15 +19,15 @@ Read more about Power BI drill-down [here](./../../consumer/end-user-drill.md)
 
 ## Enable drill-down support in the visual
 
-To support drill down in your visual, add a new field to `capabilities.json` named drill-down, which has one property:
+To support drill down in your visual, add a new field to `capabilities.json` named "drill-down", which has one property::
 
-    *roles - the name of the dataRole you want to enable drill down on.
+    *roles - the name of the dataRole you want to enable drill-down on.
 
 > [!NOTE]
-> The drill down dataRole must be of `Grouping` type.
+> The drill-down dataRole must be of `Grouping` type.
 > `max` property in the dataRole conditions must be set to 1.
 
-Once you add the role to drilldown, users can drag multiple fields into the data role.
+Once you add the role to drill-down, users can drag multiple fields into the data role.
 
 example:
 
@@ -81,9 +81,9 @@ Run
 pbiviz new testDrillDown -t default
 ```
 
-to create default sample visual. And apply above sample of `capabilities.json` to the new created visual.
+to create a default sample visual. And apply the above sample of `capabilities.json` to the newly created visual.
 
-Create property for `div` container to hold HTML elements of the visual:
+Create the property for `div` container to hold HTML elements of the visual:
 
 ```typescript
 "use strict";
@@ -170,7 +170,7 @@ export class Visual implements IVisual {
         }
 
         // remove old elements
-        // to better performance use D3js pattern:
+        // for better performance use D3js pattern:
         // https://d3js.org/#enter-exit
         while (this.div.firstChild) {
             this.div.removeChild(this.div.firstChild);
@@ -233,7 +233,7 @@ In this step you'll add context menu to the button's on the visual:
 
 ![Context menu in the visual](./media/dev-visual-drilldown-context-menu.png)
 
-To create context menu, save `host` object in the properties of the visual and call `createSelectionManager` method to create selection manager to display context menu by using Power BI Visuals API.
+To create context menu, save `host` object in the properties of the visual and call `createSelectionManager` method to the create selection manager to display a context menu by using Power BI Visuals API.
 
 ```typescript
 "use strict";
@@ -267,7 +267,7 @@ export class Visual implements IVisual {
 }
 ```
 
-Change body of `forEach` function callback to:
+Change the body of `forEach` function callback to:
 
 ```typescript
     categoricalDataView.categories[categoricalDataView.categories.length - 1].values.forEach( (category: powerbi.PrimitiveValue, index: number) => {
@@ -306,7 +306,7 @@ In the final step you should get visual with selections and context menu:
 
 ![The visual with drill-down support](./media/dev-visual-drilldown-demo.gif)
 
-## Add drill down support for matrix data view mapping
+## Add drill-down support for matrix data view mapping
 
 Prepare sample data to test the visual with matrix data view mappings:
 
@@ -418,7 +418,7 @@ export class Visual implements IVisual {
 }
 ```
 
-Check the data before rendering elements and display current level of hierarchy:
+Check the data before rendering elements and display the current level of hierarchy:
 
 ```typescript
 export class Visual implements IVisual {
@@ -607,7 +607,6 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-In the final step you should get visual with context menu:
+At the final step you should get visual with context menu:
 
 ![The visual with drill-down support](./media/dev-matrix-visual-drilldown-demo.gif)
-

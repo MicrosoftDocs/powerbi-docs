@@ -92,7 +92,7 @@ zh-TW | 中國 (Chinese-Tranditional)
 
 ## Localizing the property pane for custom visuals
 
-The fields in the property pane can be localized to provide a more integrated and coherent experience. In makes your custom visual behave like any other Power BI core visual.
+Fields in the property pane can be localized to provide more integrated and coherent experience. It makes your custom visual behave like any other Power BI core visual.
 
 For example, a non-localized custom visual created by using the `pbiviz new` command, will show the following fields in the property pane:
 
@@ -125,7 +125,7 @@ First add a display name key to every display name you want to localize in your 
 
 Then add a directory called stringResources. The directory will contain all your different string resource files based on the locales you want your visual to support. Under this directory, you’ll need to add a JSON file for every locale you want to support. Those files contain the locale information and the localized strings values for every displayNameKey you want to replace.
 
-In our example, lets say we want to support Arabic and Hebrew. we will need to add two JSON files in the following way:
+We will need to add two JSON files in the following way:
 
 ![Localizations strings in string resources folder](media/stringresources-files.png)
 
@@ -141,7 +141,7 @@ Every JSON file defines a single locale (this file has to be one of the locales 
 }
 ```
 
-All the required steps to use the localization manager are described below
+All the required steps to use the localization manager are described below.
 
 > [!NOTE]
 > Currently, localization  is not supported for debugging the dev visual
