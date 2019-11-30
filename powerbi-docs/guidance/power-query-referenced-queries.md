@@ -19,7 +19,7 @@ Consider several queries: **Query 1** sources data from a web service, and its l
 
 ![Query Dependencies view, displaying queries described in the previous paragraph.](media/power-query-referenced-queries/query-dependencies-web-service.png)
 
-When the data model is refreshed, it's often assumed that Power Query retrieves and caches the **Query1** result, and that the result can be used by referenced queries. This thinking is incorrect. In fact, Power Query executes all queries separately, and so in this example it retrieves data from the web service four times. It will result in slow data refreshes, and could negatively impact the data source.
+When the data model is refreshed, it's often assumed that Power Query retrieves and caches the **Query1** result, and that this result can be used by referenced queries. This thinking is incorrect. In fact, Power Query executes all queries separately, and so in this example it retrieves data from the web service four times. It can result in a slow data refresh, and have a negative impact on the data source.
 
 > [!NOTE]
 > Power Query caching is a complicated topic. Power Query may cache some data sources when the data load **Enable parallel loading of tables** property is disabled.
@@ -28,17 +28,17 @@ When the data model is refreshed, it's often assumed that Power Query retrieves 
 
 ## Recommendations
 
-Generally, we recommend you reference queries to avoid the duplication of logic across your queries. However, as discussed in this article, this design approach can result in slow data refreshes and overburdened data sources.
+Generally, we recommend you reference queries to avoid the duplication of logic across your queries. However, as discussed in this article, this design approach can contribute to slow data refreshes, and overburden data sources.
 
-We recommend you create a [dataflow](service-dataflows-overview.md) instead. Using a dataflow can improve data refresh time, and reduce impact on your data sources.
+We recommend you create a [dataflow](../service-dataflows-overview.md) instead. Using a dataflow can improve data refresh time, and reduce impact on your data sources.
 
-You can design the dataflow to encapsulate the source data and transformations. As the dataflow is a persisted store of data in the Power BI service, its data retrieval is fast. So, even when referencing queries result in multiple requests for the data, data refresh times will be improved.
+You can design the dataflow to encapsulate the source data and transformations. As the dataflow is a persisted store of data in the Power BI service, its data retrieval is fast. So, even when referencing queries result in multiple requests for the data, data refresh times can be improved.
 
 ## Next steps
 
 For more information related to referencing queries, check out the following resources:
 
-- [Self-service data prep in Power BI](service-dataflows-overview.md)
-- [Creating and using dataflows in Power BI](service-dataflows-create-use.md)
+- [Self-service data prep in Power BI](../service-dataflows-overview.md)
+- [Creating and using dataflows in Power BI](../service-dataflows-create-use.md)
 - Guy in a Cube video: [Inside Power Query reference queries for Power BI and Excel](https://www.youtube.com/watch?v=3uKNNZqBIkg)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
