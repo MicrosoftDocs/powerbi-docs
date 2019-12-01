@@ -37,10 +37,13 @@ Then in the Power BI mobile apps, you open tiles in focus mode and interact with
    
    ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-tile-pie.png)
 3. In a map, tap the **Center Map** icon ![](media/mobile-tiles-in-the-mobile-apps/power-bi-center-map-icon.png) to center the map to your current location.
-   
-     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
-4. Tap the share icon ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png) to [annotate and share a tile](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) with others.
+
+   ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-center-map.png)
+
+4. Tap the pencil icon ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-annotate-icon.png) to [annotate a tile](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md#annotate-and-share-the-tile-report-or-visual) and then the share icon ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-share-icon.png) to [share it with others](mobile-annotate-and-share-a-tile-from-the-mobile-apps.m#annotate-and-share-the-tile-report-or-visual).
+
 5. [Add an alert to the tile](mobile-set-data-alerts-in-the-mobile-apps.md). If the values go above or below targets, Power BI will notify you.
+
 6. Sometimes the dashboard creator has added a link to a tile. If so, it has a link icon ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) when it's in focus mode:
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-tile-link.png)
