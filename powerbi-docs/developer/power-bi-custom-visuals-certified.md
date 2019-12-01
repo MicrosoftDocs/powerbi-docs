@@ -66,7 +66,7 @@ To get your custom visual [certified](#get-a-power-bi-visual-certified), make su
 
 * If any properties in capabilities.json are changed, make sure that they do not break existing user's reports.
 
-* Make sure the visual complies with the [guidelines for Power BI visuals](./guidelines-powerbi-visuals.md#guidelines-for-power-bi-visuals-with-additional-purchases). **No watermarks are allowed**.
+* Make sure the visual complies with the [guidelines for Power BI visuals](./guidelines-powerbi-visuals.md). **No watermarks are allowed**.
 
 * Uses only public reviewable OSS components (JS libraries or TypeScript that are public. The source code is available for reviewing and doesn't have known vulnerabilities). We can't verify a custom visual using a commercial component.
 
