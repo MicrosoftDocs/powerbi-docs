@@ -24,7 +24,7 @@ You submit your template apps to the Cloud Partner Portal. The apps then become 
 
 |  |
 |     :---:      |
-| [![Foo](./media/service-template-apps-overview/project-web-s.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi_msprojectonline.pbi-microsoftprojectwebapp?tab=Overview) [![Foo](./media/service-template-apps-overview/project-web-s.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-azurebackup.pbi-azurebackup-template?tab=Overview) [![Foo](./media/service-template-apps-overview/project-web-s.png)](https://appsource.microsoft.com/en-us/product/power-bi/microsoftdynsmb.businesscentral_sales?tab=Overview) [![Foo](./media/service-template-apps-overview/project-web-s.png)](https://appsource.microsoft.com/en-us/product/power-bi/msfp.formsprocustomersatisfaction?tab=Overview) |
+| [![Foo](./media/service-template-apps-overview/project-web.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi_msprojectonline.pbi-microsoftprojectwebapp?tab=Overview) [![Foo](./media/service-template-apps-overview/azure-backup.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-azurebackup.pbi-azurebackup-template?tab=Overview) [![Foo](./media/service-template-apps-overview/dynamic-sales.png)](https://appsource.microsoft.com/en-us/product/power-bi/microsoftdynsmb.businesscentral_sales?tab=Overview) [![Foo](./media/service-template-apps-overview/forms-pro.png)](https://appsource.microsoft.com/en-us/product/power-bi/msfp.formsprocustomersatisfaction?tab=Overview) |
 |  |
 
 ## Some other heading
