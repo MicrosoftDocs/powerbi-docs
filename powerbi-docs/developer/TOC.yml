@@ -15,6 +15,8 @@
         href: power-bi-custom-visuals.md
     - name: Tutorials
       items:
+      - name: "Visual concept"
+        href: visuals/power-bi-visuals-concept.md
       - name: "Develop a Power BI visual"
         href: visuals/custom-visual-develop-tutorial.md
       - name: "Add formatting options"
