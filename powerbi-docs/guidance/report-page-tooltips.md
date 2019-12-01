@@ -1,5 +1,5 @@
 ---
-title: Extending visualizations with report page tooltips
+title: Extending visuals with report page tooltips
 description: Guidance for working with report page tooltips.
 author: peter-myers
 ms.reviewer: asaxton
@@ -11,7 +11,7 @@ ms.date: 11/24/2019
 ms.author: v-pemyer
 ---
 
-# Extending visualizations with report page tooltips
+# Extending visuals with report page tooltips
 
 This article targets you as a report author designing Power BI reports. It provides suggestions and recommendations when creating [report page tooltips](../desktop-tooltips.md).
 
