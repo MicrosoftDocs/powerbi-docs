@@ -22,6 +22,12 @@
       href: power-query-folding.md
     - name: "Appropriate use of error functions"
       href: dax-error-functions.md
+    - name: "Use variables to improve formulas"
+      href: dax-variables.md
+    - name: "COUNTROWS instead of COUNT"
+      href: dax-countrows.md
+    - name: "Avoid converting BLANKs to values"
+      href: dax-avoid-converting-blank.md
     - name: "Best practices for dataflows"
       href: ../service-dataflows-best-practices.md  
     - name: "DirectQuery model guidance in Power BI Desktop"
