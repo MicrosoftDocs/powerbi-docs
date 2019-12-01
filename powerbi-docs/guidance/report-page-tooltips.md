@@ -1,0 +1,87 @@
+---
+title: Extending visualizations with report page tooltips
+description: Guidance for working with report page tooltips.
+author: peter-myers
+ms.reviewer: asaxton
+
+ms.service: powerbi
+ms.subservice: powerbi-desktop
+ms.topic: conceptual
+ms.date: 11/24/2019
+ms.author: v-pemyer
+---
+
+# Extending visualizations with report page tooltips
+
+This article targets you as a report author designing Power BI reports. It provides suggestions and recommendations when creating [report page tooltips](../desktop-tooltips.md).
+
+## Suggestions
+
+Report page tooltips can enhance the experience for your report users. Page tooltips allow your report users to quickly and efficiently gain deeper insights from a visual. They can be associated with different report objects:
+
+- **Visuals:** On a visual-by-visual basis, you can configure which visuals will reveal your page tooltip. Per visual, it's possible to have the visual reveal no tooltip, default to the visual tooltips (configured in the visual fields pane), or use a specific tooltip page.
+- **Visual headers:** You can configure specific visuals to display a page tooltip. Your report users can reveal the page tooltip when they hover their cursor over the visual header icon—be sure to educate your users about this icon.
+
+> [!NOTE]
+> A report visual can only reveal a page tooltip when tooltip page filters are compatible with the visual's design. For example, a visual that groups by city is compatible with a tooltip page that filters by city.
+>
+> Page tooltips don't support interactivity. If you want your report users to interact, create a [drillthrough page](../desktop-drillthrough.md) instead.
+>
+> Custom visuals do not support page tooltips.
+
+Here are some suggested design scenarios:
+
+- [Different perspective](#different-perspective)
+- [Add detail](#add-detail)
+- [Add help](#add-help)
+
+### Different perspective
+
+A page tooltip can visualize the same data as the source visual. It's done by using the same visual and pivoting groups, or by using different visual types. Page tooltips can also apply different filters than those filters applied to the source visual.
+
+The following example shows what happens when the report user hovers their cursor over the **EnabledUsers** value for OneDrive in September  2018.
+
+![A matrix visual displays a grid of values grouped by year and month on the rows, and various measures along the columns. The report user has hovered their cursor over a single value. A page tooltip is revealed.](media/report-page-tooltips/suggestion-different-perspective.png)
+
+A page tooltip is revealed. It presents a different data visual (line and clustered column chart) and applies contrasting time filters. Notice that the filter context for the data point is September 2018. Yet the page tooltip displays trend over _all_ years and months.
+
+### Add detail
+
+A page tooltip can display additional details and add context.
+
+The following example shows what happens when the report user hovers their cursor over the **Freedom Rating** value for Germany.
+
+![A table visual displays a grid of values. The table contains three columns: Country, Population, and Freedom Rating. The report user has hovered their cursor over the Freedom Rating value for Germany. A page tooltip is revealed. It presents specific attributes and statistics for Germany, including: Population, Surface Area, Head of Government, Head of State, World Happiness Report Score, and GDP.](media/report-page-tooltips/suggestion-add-details.png)
+
+A page tooltip is revealed. It presents specific attributes and statistics for Germany.
+
+### Add help
+
+Visual headers can be configured to reveal page tooltips to visual headers. You can add help content to a page tooltip by using richly formatted text boxes. It's also possible to add images and shapes.
+
+Interestingly, buttons, images, text boxes, and shapes can reveal a visual header page tooltip.
+
+The following example shows what happens when the report user hovers their cursor over the visual header icon.
+
+![A line and stacked column chart visual displays monthly results. The report user has hovered their cursor over the visual header icon (question mark icon).](media/report-page-tooltips/suggestion-add-help.png)
+
+A page tooltip is revealed. It presents rich formatted text describing the measures displayed by the visual. It also includes a shape (line).
+
+## Recommendations
+
+At report design time, we recommend the following practices:
+
+- **Page size:** Configure your page tooltip to be small. You can use the built-in **Tooltip** option (320 pixels wide, 240 pixels high). Or, you can set custom dimensions. Take care not to use a page size that's too large—it can obscure the visuals on the source page.
+- **Page view:** In report designer, set the page view to **Actual Size** (page view defaults to **Fit to Page**). This way, you can see the true size of the page tooltip as you design it.
+- **Style:** Consider designing your page tooltip to use the same theme and style as the report. This way, users feel like they are in the same report. Alternatively, design a complimentary style for your tooltips, and be sure to apply this style to all page tooltips.
+- **Apply representative filters:** Assign filters to the page tooltip so that you can preview a realistic result as you design it. Be sure to remove these filters before you publish your report.
+- **Hide tooltip page:** Always hide tooltip pages—users shouldn't be able to navigate directly to them.
+
+## Next steps
+
+For more information related to this article, check out the following resources:
+
+- [Create tooltips based on report pages in Power BI Desktop](../desktop-tooltips.md)
+- [Customizing tooltips in Power BI Desktop](../desktop-custom-tooltips.md)
+- Guy in a Cube video: [Power BI report page tooltip - How to create one in Power BI Desktop](https://www.youtube.com/watch?v=URTA7JZsAtw)
+- Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
