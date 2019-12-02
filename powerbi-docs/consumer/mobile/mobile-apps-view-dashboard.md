@@ -127,7 +127,7 @@ You can use the “pinch” gesture to zoom in and out on different areas of you
    
    ![Dashboard home](./media/mobile-apps-view-dashboard/power-bi-android-tablet-dashboard-home.png)
    
-   * The yellow stars ![Favorite star](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
+   * Yellow stars ![Favorite star](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) show which dashboards are favorites. 
    * The notation below each dashboard name (in this case, "MBI") ![Data classification](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) shows how the data in each dashboard is classified. Read more about [data classification in Power BI](../../service-data-classification.md).
 3. While on the dashboard, you can tap the vertical **More options** (...) button next to the name to invite a colleague, refresh, or get information about the dashboard:
    
