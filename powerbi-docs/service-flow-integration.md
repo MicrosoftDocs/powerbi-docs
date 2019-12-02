@@ -1,7 +1,7 @@
 ---
 title: 'Power BI integration with Power Automate'
 description: Learn how to create Flows triggered by Power BI data alerts.
-author: mgblythe
+author: maggiesMSFT
 ms.reviewer: ''
 featuredvideoid: YhmNstC39Mw
 
@@ -9,7 +9,7 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/01/2018
-ms.author: mblythe
+ms.author: maggies
 
 LocalizationGroup: Get started
 ---

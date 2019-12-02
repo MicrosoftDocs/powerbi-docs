@@ -4,8 +4,8 @@ description: Azure SQL Data Warehouse with DirectQuery
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ""
 ms.custom: ""
 ms.date: 06/20/2018

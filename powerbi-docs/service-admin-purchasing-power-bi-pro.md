@@ -1,14 +1,14 @@
 ---
 title: "Purchase and assign Power BI Pro licenses"
 description: Learn how to purchase and assign Power BI Pro user licenses so that your users can access content and collaborate with colleagues in the Power BI service.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: quickstart
 ms.date: 10/29/2019
-ms.author: mblythe
+ms.author: kfollis
 
 LocalizationGroup: Administration
 ---

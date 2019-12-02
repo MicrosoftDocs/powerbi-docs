@@ -1,13 +1,13 @@
 ---
 title: Sign up for Power BI as an individual
 description: Learn how to sign up for Power BI and begin using it for your data analysis and visualization needs.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/31/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Get started
 ---
 
