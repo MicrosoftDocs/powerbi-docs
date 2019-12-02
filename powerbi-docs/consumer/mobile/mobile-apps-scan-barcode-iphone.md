@@ -28,15 +28,13 @@ Say a colleague has [tagged a barcode field in a report Power BI Desktop](../../
 When you scan a product barcode with the scanner in the Power BI app on your device, you see the report (or list of reports) with that barcode. You can open that report filtered to that barcode.
 
 ## Scan a barcode with the Power BI scanner
-1. In the Power BI mobile app open the main navigation menu ![](media/mobile-apps-scan-barcode-iphone/pbi_iph_navmenu.png) in the upper left. 
-2. Scroll down to **Scanner** and select it. 
-   
+1. On the navigation bar, tap **More options** (...) and then tap **Scanner**.
+
     ![](media/mobile-apps-scan-barcode-iphone/power-bi-scanner.png)
-3. If your camera is not enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
-4. Point the scanner at a barcode on a product. 
-   
-    You see a list of reports associated with that barcode.
-5. Tap the report name to open it on your device, automatically filtered to that barcode.
+
+2. If your camera is not enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
+4. Point the scanner at a barcode on a product. You will see a list of reports associated with that barcode.
+5. Tap the report name to open it on your device, automatically filtered according to that barcode.
 
 ## Filter by other barcodes while in a report
 While looking at a report filtered by a barcode on your device, you may want to filter the same report by a different barcode.
