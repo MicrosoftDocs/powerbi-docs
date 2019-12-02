@@ -920,7 +920,7 @@ You can apply the data reduction algorithm to the `rows` section of the Data Vie
                     "top": {
                         "count": 2000
                     }
-                } 
+                }
             }
         }
     }
@@ -928,3 +928,7 @@ You can apply the data reduction algorithm to the `rows` section of the Data Vie
 ```
 
 You can apply the data reduction algorithm to the `rows` and `columns` sections of the Data View mapping matrix.
+
+## Next steps
+
+Read how to [add Drill-Down support for data view mappings in Power BI visuals](drill-down-support.md).
