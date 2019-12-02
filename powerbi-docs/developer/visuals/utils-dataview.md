@@ -13,18 +13,18 @@ ms.date: 06/18/2019
 
 # DataViewUtils
 
-The `DataViewUtils` is a set of functions and classes in order to simplify parsing of the DataView object for Power BI custom visuals
+The `DataViewUtils` is a set of functions and classes to simplify parsing of the DataView object for Power BI custom visuals
 
 ## Installation
 
-To install the package you should run the following command in the directory with your current custom visual:
+To install the package, you should run the following command in the directory with your current custom visual:
 
 npm install powerbi-visuals-utils-dataviewutils --save
 This command installs the package and adds a package as a dependency to your package.json
 
 ## DataRoleHelper
 
-The `DataRoleHelper` provides functions in order to check roles of the dataView object.
+The `DataRoleHelper` provides functions to check roles of the dataView object.
 
 The module provides the following functions:
 
@@ -217,7 +217,7 @@ dataRoleHelper.hasRoleInValueColumn(valueColumn, "company");
 
 ## DataViewObjects
 
-The `DataViewObjects` provides functions in order to extract values of the objects.
+The `DataViewObjects` provides functions to extract values of the objects.
 
 The module provides the following functions:
 
@@ -362,9 +362,9 @@ dataViewObjects.getCommonValue(objects, colorProperty); // returns: yellow
 dataViewObjects.getCommonValue(objects, biProperty); // returns: Power
 ```
 
-### DataViewObject
+## DataViewObject
 
-The `DataViewObject` provides functions in order to extract value of the object.
+The `DataViewObject` provides functions to extract value of the object.
 
 The module provides the following functions:
 
@@ -422,7 +422,7 @@ dataViewObject.getFillColorByPropertyName(object, "fillColor");
 
 ### converterHelper
 
-The `converterHelper` provides functions in order to check properties of the dataView.
+The `converterHelper` provides functions to check properties of the dataView.
 
 The module provides the following functions:
 
@@ -590,9 +590,9 @@ converterHelper.hasImageUrlColumn(dataView);
 // returns: true
 ```
 
-### DataViewObjectsParser
+## DataViewObjectsParser
 
-The `DataViewObjectsParser` provides the simplest way in order to parse properties of the formatting panel.
+The `DataViewObjectsParser` provides the simplest way to parse properties of the formatting panel.
 
 The class provides the following methods:
 
@@ -661,10 +661,11 @@ export class YourVisual extends IVisual {
 }
 ```
 
-### enumerateObjectInstances
+## enumerateObjectInstances
 
-This static method enumerates properties and returns an instance of `VisualObjectInstanceEnumeration`
-We recommend you to execute it in `enumerateObjectInstances` method of the visual.
+This static method enumerates properties and returns an instance of `VisualObjectInstanceEnumeration`.
+
+Execute it in `enumerateObjectInstances` method of the visual.
 
 ```typescript
 static enumerateObjectInstances(dataViewObjectParser: dataViewObjectsParser.DataViewObjectsParser, options: EnumerateVisualObjectInstancesOptions): VisualObjectInstanceEnumeration;

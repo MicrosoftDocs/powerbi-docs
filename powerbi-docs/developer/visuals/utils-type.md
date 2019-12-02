@@ -13,11 +13,11 @@ ms.date: 06/18/2019
 
 # Type utils
 
-TypeUtils is a set of functions and classes in order to extend the basic types for Power BI visuals.
+TypeUtils is a set of functions and classes to extend the basic types for Power BI visuals.
 
 ## Installation
 
-To install the package you should run the following command in the directory with your current custom visual:
+To install the package, you should run the following command in the directory with your current custom visual:
 
 npm install powerbi-visuals-utils-typeutils --save
 This command installs the package and adds a package as a dependency to your package.json
@@ -87,7 +87,7 @@ double.getPrecision(562344, 6);
 
 ### equalWithPrecision
 
-This function checks if a delta between 2 numbers is less than provided precision.
+This function checks if a delta between two numbers is less than provided precision.
 
 ```typescript
 function equalWithPrecision(x: number, y: number, precision?: number): boolean;
@@ -201,7 +201,7 @@ double.floorWithPrecision(5.96, 0.001);
 
 ### ceilWithPrecision
 
-This function ceils the number with the provided precision.
+This function `ceils` the number with the provided precision.
 
 ```typescript
 function ceilWithPrecision(x: number, precision?: number): number;
@@ -239,7 +239,7 @@ double.floorToPrecision(5.96, 0.1);
 
 ### ceilToPrecision
 
-This function ceils the number to the provided precision.
+This function `ceils` the number to the provided precision.
 
 ```typescript
 function ceilToPrecision(x: number, precision?: number): number;
@@ -427,7 +427,8 @@ prototype.inheritSingle(base);
 ```
 
 ## PixelConverter
-The `PixelConverter` provides an ability to convert pixels to points, and vice versa.
+
+The `PixelConverter` provides an ability to convert pixels to points, and points to pixels.
 
 The module provides the following functions:
 

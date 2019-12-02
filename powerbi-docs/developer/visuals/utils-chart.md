@@ -17,7 +17,7 @@ ChartUtils is a set of interfaces and methods for creating axis, data labels, an
 
 ## Installation
 
-To install the package you should run the following command in the directory with your current visual:
+To install the package, you should run the following command in the directory with your current visual:
 
 ```bash
 npm install powerbi-visuals-utils-chartutils --save
@@ -25,7 +25,7 @@ npm install powerbi-visuals-utils-chartutils --save
 
 ## Axis Helper
 
-The axis helper (`axis` object in utils) provides functions in order to simplify manipulations with axis.
+The axis helper (`axis` object in utils) provides functions to simplify manipulations with axis.
 
 The module provides the following functions:
 
@@ -534,12 +534,9 @@ axis.powerOfTen(10);
 
 ## DataLabelManager
 
-The `DataLabelManager` helps to create and maintain labels. It arranges label elements using the anchor point or rectangle. Collisions between elements can be automatically detected and elements can be repositioned or get hidden.
+The `DataLabelManager` helps to create and maintain labels. It arranges label elements using the anchor point or rectangle. Collisions can be automatically detected to reposition or hide elements.
 
 The `DataLabelManager` class provides the following methods:
-
-- [hideCollidedLabels](#hidecollidedlabels)
-- [IsValid](#isvalid)
 
 ## hideCollidedLabels
 

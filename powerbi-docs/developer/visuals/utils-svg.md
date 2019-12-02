@@ -13,11 +13,11 @@ ms.date: 06/18/2019
 
 # SVG utils
 
-SVGUtils is a set of functions and classes in order to simplify SVG manipulations for Power BI custom visuals
+SVGUtils is a set of functions and classes to simplify SVG manipulations for Power BI custom visuals
 
 ## Installation
 
-To install the package you should run the following command in the directory with your current visual:
+To install the package, you should run the following command in the directory with your current visual:
 
 ```bash
 npm install powerbi-visuals-utils-svgutils --save
@@ -63,7 +63,7 @@ divSelector.class === "sample-block"; // returns: true
 
 ## manipulation
 
-The `manipulation` provides some special functions in order to generate strings for using with SVG transform property.
+The `manipulation` provides some special functions to generate strings for using with SVG transform property.
 
 The module provides the following functions:
 
@@ -253,7 +253,7 @@ manipulation.createArrow(10, 20, 5);
 
 ## Rect
 
-The `Rect` module provides some special functions in order to manipulate rectangles.
+The `Rect` module provides some special functions to manipulate rectangles.
 
 The module provides the following functions:
 
@@ -683,7 +683,7 @@ This function returns an intersection of rectangles.
 function intersect(rect1: IRect, rect2: IRect): IRect;
 ```
 
-### Example
+Example:
 
 ```typescript
 import { shapes } from "powerbi-visuals-utils-svgutils";
@@ -756,7 +756,7 @@ Rect.getCentroid({ left: 0, top: 0, width: 100, height: 100 });
 
 ## pointer
 
-The `pointer` module provides a special function in order to get position of the pointer.
+The `pointer` module provides a special function to get position of the pointer.
 
 The module provides the following function:
 
