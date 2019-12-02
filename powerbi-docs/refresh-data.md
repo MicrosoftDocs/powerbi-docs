@@ -1,14 +1,14 @@
 ---
 title: Data refresh in Power BI
 description: This article describes the data refresh features of Power BI and their dependencies at a conceptual level.
-author: mgblythe
+author: maggiesMSFT
 ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/14/2019
-ms.author: mblythe
+ms.author: maggies
 
 LocalizationGroup: Data refresh
 ---
