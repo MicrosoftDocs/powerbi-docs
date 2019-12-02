@@ -1,8 +1,8 @@
 ---
 title: Can't contact Power BI support
 description: Workarounds for creating a Power BI case if a user can't sign in
-author: mgblythe
-ms.author: mblythe
+author: kfollis
+ms.author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service

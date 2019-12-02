@@ -1,13 +1,13 @@
 ---
 title: Where is my Power BI tenant located?
 description: Learn where your Power BI tenant is located and how that location is selected. This is important to learn because it can affect interactions you have with the service.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Administration
 ---
 
