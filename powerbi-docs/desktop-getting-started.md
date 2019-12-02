@@ -26,7 +26,7 @@ With Power BI Desktop, you can:
 1. Use the data models to create visualizations and reports. 
 1. Share your report files for others to leverage, build upon, and share. You can share Power BI Desktop *.pbix* files like any other files, but the most compelling method is to upload them to the [Power BI service](https://preview.powerbi.com/). 
 
-Power BI Desktop integrates proven Microsoft query engine, data modeling, and visualization technologies. Data analysts and others can create collections of queries, data connections, models, and reports, and easily share them with others. Through the combination of Power BI Desktop and the Power BI service, new insights from the world of data are easier to model, build, share, and extend. Power BI Desktop is a powerful, flexible, and a highly accessible tool to connect with and shape the world of data, build robust models, and craft well-structured reports.
+Power BI Desktop integrates proven Microsoft query engine, data modeling, and visualization technologies. Data analysts and others can create collections of queries, data connections, models, and reports, and easily share them with others. Through the combination of Power BI Desktop and the Power BI service, new insights from the world of data are easier to model, build, share, and extend.
 
 Power BI Desktop centralizes, simplifies, and streamlines what can otherwise be a scattered, disconnected, and arduous process of designing and creating business intelligence repositories and reports.
 Ready to give it a try? Let's get started.
@@ -35,7 +35,7 @@ Ready to give it a try? Let's get started.
 > For data and reporting that must remain on-premises, there's a separate and specialized version of Power BI called [Power BI Report Server](report-server/get-started.md). Power BI Report Server uses a separate and specialized version of Power BI Desktop called Power BI Desktop for Power BI Report Server, which works only with the Report Server version of Power BI. This article describes standard Power BI Desktop.
 
 ## Install and run Power BI Desktop
-To download Power BI Desktop, go to the [Power BI Desktop download](https://powerbi.microsoft.com/desktop) page and select **Download Free**. Or for download options, select [See download or language options](https://www.microsoft.com/download/details.aspx?id=58494). 
+To download Power BI Desktop, go to the [Power BI Desktop download page](https://powerbi.microsoft.com/desktop) and select **Download Free**. Or for download options, select [See download or language options](https://www.microsoft.com/download/details.aspx?id=58494). 
 
 You can also download Power BI Desktop from the Power BI service. Select the **Download** icon in the top menu bar, and then select **Power BI Desktop**.
 
@@ -178,7 +178,7 @@ With the **State codes** table shaped, you can *combine* these two tables into o
 
 When you have one or more columns you'd like to add to another query, you *merge* the queries. When you have additional rows of data you'd like to add to an existing query, you *append* the query.
 
-In this case, you want to merge the **State codes** query into the **Best states for sunglasses** query. To merge the queries, switch to the **Best states for sunglasses** query by selecting it from the **Queries** pane on the left side of Power Query Editor. Then select **Merge Queries** from the **Combine** group in the **Home** tab of the ribbon.
+In this case, you want to *merge* the **State codes** query into the **Best states for sunglasses** query. To merge the queries, switch to the **Best states for sunglasses** query by selecting it from the **Queries** pane on the left side of Power Query Editor. Then select **Merge Queries** from the **Combine** group in the **Home** tab of the ribbon.
 
 In the **Merge** window, drop down the field to select **State codes**, the only other query available. Select the column to match from each table, in this case **State** from the **Best states for sunglasses** query and **State name** from the **State codes** query. 
 
@@ -207,7 +207,7 @@ For now, you have enough data to create an interesting report in Power BI Deskto
 
 ![Close and Apply changes](media/desktop-getting-started/shapecombine_closeandapply.png)
 
-You can make more changes to a table after it is loaded into Power BI Desktop, and reload the model to apply any changes you make. To reopen **Power Query Editor**, select **Edit Queries** on the **Home** tab of the Power BI Desktop ribbon. 
+You can make more changes to a table after it is loaded into Power BI Desktop, and reload the model to apply any changes you make. To reopen **Power Query Editor** from Power BI Desktop, select **Edit Queries** on the **Home** tab of the Power BI Desktop ribbon. 
 
 ## Build reports
 In Power BI Desktop **Report** view, you can build visualizations and reports. The **Report** view has six main areas:
@@ -253,7 +253,7 @@ Retitle your visualization by selecting the **Format** icon in the **Visualizati
 
 ![Change title](media/desktop-getting-started/designer_gsg_report1.png)
 
-To add a visualization that shows the names of the top 10 weather states and their actual ranks from 1 to 10, click a blank area of the canvas and then select the **Column chart** icon from the **Visualization** pane. In the **Fields** pane, select **State** and **Weather**. A column chart shows the 40 states in your query, ranked from highest to lowest numerical rank, or worst to best weather. 
+To add a visualization that shows the names of the top 10 weather states and their ranks from 1 to 10, select a blank area of the canvas and then select the **Column chart** icon from the **Visualization** pane. In the **Fields** pane, select **State** and **Weather**. A column chart shows the 40 states in your query, ranked from highest to lowest numerical rank, or worst to best weather. 
 
 ![Column chart visualization](media/desktop-getting-started/gsg_share7.png)
 
