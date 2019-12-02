@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/14/2019
+ms.date: 12/01/2019
 ms.author: davidi
 
 LocalizationGroup: Get started
@@ -35,7 +35,7 @@ Ready to give it a try? Let's get started.
 > For data and reporting that must remain on-premises, there's a separate and specialized version of Power BI called [Power BI Report Server](report-server/get-started.md). Power BI Report Server uses a separate and specialized version of Power BI Desktop called Power BI Desktop for Power BI Report Server, which works only with the Report Server version of Power BI. This article describes standard Power BI Desktop.
 
 ## Install and run Power BI Desktop
-To download Power BI Desktop, go to the [Power BI Desktop download](https://powerbi.microsoft.com/desktop) page and select **Download Free**. Or for download options, select [See download or language options]((https://www.microsoft.com/download/details.aspx?id=58494). 
+To download Power BI Desktop, go to the [Power BI Desktop download](https://powerbi.microsoft.com/desktop) page and select **Download Free**. Or for download options, select [See download or language options](https://www.microsoft.com/download/details.aspx?id=58494). 
 
 You can also download Power BI Desktop from the Power BI service. Select the **Download** icon in the top menu bar, and then select **Power BI Desktop**.
 
@@ -168,11 +168,13 @@ With extra values like **Federal district** and **island** removed, you now have
 
 Note that all of these steps are recorded under **Applied Steps** in the **Query Settings** pane.
 
-Retitle the table to *State codes* in the **Properties** field of **Query Settings**. 
+Your shaped table now looks like this:
 
 ![Shaped State codes table](media/desktop-getting-started/statecodes.png)
 
-With the **State codes** table shaped, you can combine these two tables into one. Since the tables you now have are a result of queries you applied to the data, they're also called *queries*. There are two primary ways of combining queries: *merge* and *append*. 
+Retitle the table to *State codes* in the **Properties** field of **Query Settings**. 
+
+With the **State codes** table shaped, you can *combine* these two tables into one. Since the tables you now have are a result of queries you applied to the data, they're also called *queries*. There are two primary ways of combining queries: *merge* and *append*. 
 
 When you have one or more columns you'd like to add to another query, you *merge* the queries. When you have additional rows of data you'd like to add to an existing query, you *append* the query.
 
@@ -184,7 +186,7 @@ If you get a **Privacy levels** dialog, select **Ignore privacy levels checks fo
 
 ![Merge queries](media/desktop-getting-started/shapecombine_merge.png)
 
-A new column called **State codes** appears on the right of the **Best states for sunglass sales** table. It contains the state code query that you merged with the existing query. All the columns from the merged table are condensed into the **State codes** column. You can *expand* the merged table and include whichever columns you want. 
+A new column called **State codes** appears on the right of the **Best states for sunglass sales** table. It contains the state code query that you merged with the best states for sunglass sales query. All the columns from the merged table are condensed into the **State codes** column. You can *expand* the merged table and include only the columns you want. 
 
 ![Merged query column](media/desktop-getting-started/mergedquery.png)
 
@@ -208,7 +210,7 @@ For now, you have enough data to create an interesting report in Power BI Deskto
 You can make more changes to a table after it is loaded into Power BI Desktop, and reload the model to apply any changes you make. To reopen **Power Query Editor**, select **Edit Queries** on the **Home** tab of the Power BI Desktop ribbon. 
 
 ## Build reports
-In Power BI Desktop **Report** view, you can build reports. The **Report** view has six main areas:
+In Power BI Desktop **Report** view, you can build visualizations and reports. The **Report** view has six main areas:
 
 ![Power BI Desktop Report view](media/desktop-getting-started/designer_gsg_reportview.png)
 
@@ -292,7 +294,7 @@ When the publish process is complete, you see the following dialog:
 
 ![Power BI Publish success](media/desktop-getting-started/gsg_syw_3.png)
 
-When you select the link to open the report in Power BI, your report opens in Power BI under **My workspace** > **Reports**. 
+When you select the link to open the report in Power BI, your report opens in your Power BI site under **My workspace** > **Reports**. 
 
 Another way to share your work is to load it from within the **Power BI** service. Go to *https:\//app.powerbi.com* to open Power BI in a browser. On your Power BI **Home** page, select **Get Data** at lower left to start the process of loading your Power BI Desktop report.
 
