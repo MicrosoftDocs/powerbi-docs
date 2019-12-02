@@ -63,7 +63,7 @@ Follow these steps to sign up for a Power BI account. Once you complete this pro
 
 ## Trial expiration
 
-After you comnplete the sign up process, you can sign up for a Power BI Pro trial in the Power BI service. When that trial expires, your license changes back to a Power BI (free) license. After this happens, you no longer have access to features that require a Power BI Pro license. For more information, see [Features by license type](service-features-license-type.md).
+After you complete the sign up process, you can sign up for a Power BI Pro trial in the Power BI service. When that trial expires, your license changes back to a Power BI (free) license. After this happens, you no longer have access to features that require a Power BI Pro license. For more information, see [Features by license type](service-features-license-type.md).
 
 If a Power BI (free) license is sufficient, you don't have to do anything else. To take advantage of Power BI Pro features, contact your IT admin about purchasing a Power BI Pro license.
 
