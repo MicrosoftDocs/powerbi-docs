@@ -1,14 +1,14 @@
 ---
 title: Power BI Pro and Power BI Premium support options
 description: This article describes the support options that are available for customers of Power BI Pro and Power BI Premium.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/17/2019
-ms.author: mblythe
+ms.author: kfollis
 ---
 
 # Power BI Pro and Power BI Premium support options
