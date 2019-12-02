@@ -90,15 +90,15 @@
         - name: "Interactivity utils"
           href: visuals/utils-interactivity-selections.md
         - name: "Formatting utils"
-          href: visuals/utils-formatting-utils.md
+          href: visuals/utils-formatting.md
         - name: "Chart utils"
-          href: visuals/utils-chart-utils.md
+          href: visuals/utils-chart.md
         - name: "SVG utils"
-          href: visuals/utils-svg-utils.md
+          href: visuals/utils-svg.md
         - name: "Type utils"
-          href: visuals/utils-type-utils.md
+          href: visuals/utils-type.md
         - name: "Data view utils"
-          href: visuals/utils-dataview-utils.md
+          href: visuals/utils-dataview.md
     - name: Resources
       items:
       - name: "Dev Center"
