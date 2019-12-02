@@ -1,13 +1,13 @@
 ---
 title: Power BI admin portal
 description: The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Microsoft 365 admin center, and settings.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/25/2019
-ms.author: mblythe
+ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
 ---

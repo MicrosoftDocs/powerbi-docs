@@ -22,7 +22,7 @@ The new version brings many new opportunities for developers to create visuals:
 
 * New versions of [D3v5](https://d3js.org/) and other ES6 module-based libraries are supported.
 
-* Reduced package size. Webpack uses [Tree Shaking](https://webpack.js.org/guides/tree-shaking/) to remove unused code. It reduces code of JS and, as a result, you get better performance in visual loading.
+* Reduced package size. Webpack uses [Tree Shaking](https://webpack.js.org/guides/tree-shaking/) to remove unused code. It reduces the code of JS and, as a result, you get better performance in visual loading.
 
 * Improved API performance.
 
@@ -34,7 +34,7 @@ All migration steps for the new version of Power BI Visuals Tools are described 
 
 ## Backward compatibility
 
-The new tools save backward compatibility for old visuals code base, but can require some additional changes to load external libraries.
+The new tools save backward compatibility for the old visuals code base but can require some additional changes to load external libraries.
 
 The libs, which support module systems will be imported as Webpack modules. All other libs and visual source code will be wrapped into one module.
 
@@ -74,9 +74,9 @@ The sample of sampleBarChart visual and correspond [changes](https://github.com/
 
 ## How to install Power BI Custom Visuals API
 
-New version of powerbi-visual-tools doesn't include all API versions inside. Instead of that developer should install a specific version of [`powerbi-visuals-api`](https://www.npmjs.com/package/powerbi-visuals-api) package. The version of package matches API version of Power BI Custom Visuals and it provides all type definitions for Power BI Custom Visuals API.
+The new version of powerbi-visual-tools doesn't include all API versions inside. Instead of that developer should install a specific version of [`powerbi-visuals-api`](https://www.npmjs.com/package/powerbi-visuals-api) package. The version of the package matches API version of Power BI Custom Visuals and it provides all type definitions for Power BI Custom Visuals API.
 
-Add `powerbi-visuals-api` into dependencies of project by executing command
+Add `powerbi-visuals-api` into dependencies of a project by executing command
 `npm install --save-dev powerbi-visuals-api`.
 And you should remove the link to old API type definitions. Because types from `powerbi-visuals-api` include automatically by Webpack. Correspond changes are in [this](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/package.json#L14) line of `package.json`.
 
@@ -87,20 +87,20 @@ To use external modules, you should switch `out` option to `outDir`.
 
 It's required as TypeScript files will be compiled into JavaScript files independently. It's why you no longer have to specify visual.js file as an output.
 
-And you can also change `target` option to `ES6` if you want to use modern JavaScript as an output. [It's optional](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/tsconfig.json#L6).
+And you can also change the `target` option to `ES6` if you want to use modern JavaScript as an output. [It's optional](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/tsconfig.json#L6).
 
 ## Update Custom Visuals utils
 
-If you use one of [powerbi-visuals-utils](https://www.npmjs.com/search?q=powerbi-visuals-utils) you should update them to the latest version too.
+If you use one of powerbi-visuals-utils](https://www.npmjs.com/search?q=powerbi-visuals-utils), you should update them to the latest version too.
 
 Execute the command `npm install powerbi-visuals-utils-<UTILNAME> --save`. (Ex. `npm install powerbi-visuals-utils-dataviewutils --save` ) to get the new version with external modules of TypeScript.
 
-You can find example in MekkoChart [repository](https://github.com/Microsoft/powerbi-visuals-mekkochart).
+You can find an example in MekkoChart [repository](https://github.com/Microsoft/powerbi-visuals-mekkochart).
 This visual uses all utils.
 
 ## Remove Globalize.js library
 
-New version of [powerbi-visuals-utils-formattingutils@4.3](https://www.npmjs.com/package/powerbi-visuals-utils-formattingutils) includes globalize.js out of the box.
+The new version of [powerbi-visuals-utils-formattingutils@4.3](https://www.npmjs.com/package/powerbi-visuals-utils-formattingutils) includes globalize.js out of the box.
 You don't need to include this library manually to the project.
 All required localizations will be added to the final package automatically.
 
@@ -123,7 +123,7 @@ Import the libs in source. Example for `lodash-es`:
 import * as _ from "lodash-es";
 ```
 
-where `_` is global variable for `lodash` library.
+where `_` is the global variable for `lodash` library.
 
 ## Changes in the visuals sources
 
@@ -216,9 +216,9 @@ With new tools, you can start using the new version of D3.js library.
 
 Call commands to update D3 in your visual project
 
-`npm install --save d3@5` for install the new D3.js.
+`npm install --save d3@5` to install the new D3.js.
 
-`npm install --save-dev @types/d3@5` for install the new type definitions for D3.js.
+`npm install --save-dev @types/d3@5` to install the new type definitions for D3.js.
 
 There are several breaking changes and you should modify your code to use the new D3.js.
 
@@ -232,7 +232,7 @@ There are several breaking changes and you should modify your code to use the ne
 
 ## Babel
 
-Starting from version 3.1 the tools use Babel to compile new modern JS code into old ES5 to support wide range of browsers.
+Starting from version 3.1 the tools use Babel to compile new modern JS code into old ES5 to support a wide range of browsers.
 
 This option is enabled by default, but you need to manually import the [`@babel/polyfill`](https://babeljs.io/docs/en/babel-polyfill) package.
 
@@ -246,6 +246,6 @@ and import the package on the start point of the visual code (usually it's 'src/
 
 Read more about Babel [in docs](https://babeljs.io/docs/en/).
 
-Finally run [webpack-visualizer](https://github.com/chrisbateman/webpack-visualizer) to display the code base of the visual.  
+Finally, run [webpack-visualizer](https://github.com/chrisbateman/webpack-visualizer) to display the code base of the visual.  
 
 ![Visual code statistics](./media/webpack-stats.png)
