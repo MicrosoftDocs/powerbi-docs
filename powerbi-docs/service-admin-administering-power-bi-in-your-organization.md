@@ -1,14 +1,14 @@
 ---
 title: What is Power BI administration?
 description: Learn about the configuration of Power BI governance policies, usage monitoring, and provisioning of licenses, capacities, and organizational resources.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: overview
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 
 LocalizationGroup: Administration
 ---
