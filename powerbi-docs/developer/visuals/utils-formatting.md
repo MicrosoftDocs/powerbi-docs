@@ -17,21 +17,9 @@ Formatting utils contains the classes, interfaces, and methods to format values.
 
 ## Text measurement service
 
-The ```textMeasurementService``` module provides the following functions and interfaces:
+The module provides the following functions and interfaces:
 
-* [TextProperties](#textproperties-interface)
-* [measureSvgTextWidth](#measuresvgtextwidth)
-* [measureSvgTextRect](#measuresvgtextrect)
-* [measureSvgTextHeight](#measuresvgtextheight)
-* [estimateSvgTextBaselineDelta](#estimatesvgtextbaselinedelta)
-* [estimateSvgTextHeight](#estimatesvgtextheight)
-* [measureSvgTextElementWidth](#measuresvgtextelementwidth)
-* [getMeasurementProperties](#getmeasurementproperties)
-* [getSvgMeasurementProperties](#getsvgmeasurementproperties)
-* [getDivElementWidth](#getdivelementwidth)
-* [getTailoredTextOrDefault](#gettailoredtextordefault)
-
-## TextProperties interface
+### TextProperties interface
 
 This interface describes common properties of the text.
 
@@ -47,7 +35,7 @@ interface TextProperties {
 }
 ```
 
-## measureSvgTextWidth
+### measureSvgTextWidth
 
 This function measures the width of the text with the given SVG text properties.
 
@@ -55,11 +43,12 @@ This function measures the width of the text with the given SVG text properties.
 function measureSvgTextWidth(textProperties: TextProperties, text?: string): number;
 ```
 
-### Example of using measureSvgTextWidth
+Example of using `measureSvgTextWidth`:
 
 ```typescript
-import TextProperties = powerbi.extensibility.utils.formatting.TextProperties;
-import textMeasurementService = powerbi.extensibility.utils.formatting.textMeasurementService;
+import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
+import TextProperties = textMeasurementService.TextProperties;
+// ...
 
 let textProperties: TextProperties = {
     text: "Microsoft PowerBI",
@@ -72,9 +61,7 @@ textMeasurementService.measureSvgTextWidth(textProperties);
 // returns: 194.71875
 ```
 
-You can take a look at the example code of the custom visual [here](https://github.com/Microsoft/powerbi-visuals-sankey/blob/4d544ea145b4e15006083a3610dfead3da5f61a4/src/visual.ts#L371).
-
-## measureSvgTextRect
+### measureSvgTextRect
 
 This function returns a rect with the given SVG text properties.
 
@@ -82,11 +69,12 @@ This function returns a rect with the given SVG text properties.
 function measureSvgTextRect(textProperties: TextProperties, text?: string): SVGRect;
 ```
 
-### Example of using measureSvgTextRect
+Example of using `measureSvgTextRect`:
 
 ```typescript
-import TextProperties = powerbi.extensibility.utils.formatting.TextProperties;
-import textMeasurementService = powerbi.extensibility.utils.formatting.textMeasurementService;
+import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
+import TextProperties = textMeasurementService.TextProperties;
+// ...
 
 let textProperties: TextProperties = {
     text: "Microsoft PowerBI",
@@ -99,7 +87,7 @@ textMeasurementService.measureSvgTextRect(textProperties);
 // returns: { x: 0, y: -22, width: 194.71875, height: 27 }
 ```
 
-## measureSvgTextHeight
+### measureSvgTextHeight
 
 This function measures the height of the text with the given SVG text properties.
 
@@ -107,11 +95,13 @@ This function measures the height of the text with the given SVG text properties
 function measureSvgTextHeight(textProperties: TextProperties, text?: string): number;
 ```
 
-### Example of using measureSvgTextHeight
+Example of using `measureSvgTextHeight`:
 
 ```typescript
-import TextProperties = powerbi.extensibility.utils.formatting.TextProperties;
-import textMeasurementService = powerbi.extensibility.utils.formatting.textMeasurementService;
+import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
+import TextProperties = textMeasurementService.TextProperties;
+// ...
+
 
 let textProperties: TextProperties = {
     text: "Microsoft PowerBI",
@@ -124,7 +114,7 @@ textMeasurementService.measureSvgTextHeight(textProperties);
 // returns: 27
 ```
 
-## estimateSvgTextBaselineDelta
+### estimateSvgTextBaselineDelta
 
 This function returns a baseline of the given SVG text properties.
 
@@ -132,11 +122,12 @@ This function returns a baseline of the given SVG text properties.
 function estimateSvgTextBaselineDelta(textProperties: TextProperties): number;
 ```
 
-### Example
+Example:
 
 ```typescript
-import TextProperties = powerbi.extensibility.utils.formatting.TextProperties;
-import textMeasurementService = powerbi.extensibility.utils.formatting.textMeasurementService;
+import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
+import TextProperties = textMeasurementService.TextProperties;
+// ...
 
 let textProperties: TextProperties = {
     text: "Microsoft PowerBI",
@@ -149,7 +140,7 @@ textMeasurementService.estimateSvgTextBaselineDelta(textProperties);
 // returns: 5
 ```
 
-## estimateSvgTextHeight
+### estimateSvgTextHeight
 
 This function estimates the height of the text with the given SVG text properties.
 
@@ -157,11 +148,12 @@ This function estimates the height of the text with the given SVG text propertie
 function estimateSvgTextHeight(textProperties: TextProperties, tightFightForNumeric?: boolean): number;
 ```
 
-### Example of using estimateSvgTextHeight
+Example of using `estimateSvgTextHeight`:
 
 ```typescript
-import TextProperties = powerbi.extensibility.utils.formatting.TextProperties;
-import textMeasurementService = powerbi.extensibility.utils.formatting.textMeasurementService;
+import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
+import TextProperties = textMeasurementService.TextProperties;
+// ...
 
 let textProperties: TextProperties = {
     text: "Microsoft PowerBI",
@@ -176,7 +168,7 @@ textMeasurementService.estimateSvgTextHeight(textProperties);
 
 You can take a look at the example code of the custom visual [here](https://github.com/Microsoft/powerbi-visuals-sankey/blob/4d544ea145b4e15006083a3610dfead3da5f61a4/src/visual.ts#L372).
 
-## measureSvgTextElementWidth
+### measureSvgTextElementWidth
 
 This function measures the width of the svgElement.
 
@@ -184,10 +176,11 @@ This function measures the width of the svgElement.
 function measureSvgTextElementWidth(svgElement: SVGTextElement): number;
 ```
 
-### Example of using measureSvgTextElementWidth
+Example of using measureSvgTextElementWidth:
 
 ```typescript
-import textMeasurementService = powerbi.extensibility.utils.formatting.textMeasurementService;
+import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
+// ...
 
 let svg: D3.Selection = d3.select("body").append("svg");
 
@@ -209,7 +202,7 @@ textMeasurementService.measureSvgTextElementWidth(textElement.node());
 // returns: 194.71875
 ```
 
-## getMeasurementProperties
+### getMeasurementProperties
 
 This function fetches the text measurement properties of the given DOM element.
 
@@ -217,10 +210,11 @@ This function fetches the text measurement properties of the given DOM element.
 function getMeasurementProperties(element: Element): TextProperties;
 ```
 
-### Example of using getMeasurementProperties
+Example of using `getMeasurementProperties`:
 
 ```typescript
-import textMeasurementService = powerbi.extensibility.utils.formatting.textMeasurementService;
+import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
+// ...
 
 let element: JQuery = $(document.createElement("div"));
 
@@ -249,7 +243,7 @@ textMeasurementService.getMeasurementProperties(element.get(0));
 }*/
 ```
 
-## getSvgMeasurementProperties
+### getSvgMeasurementProperties
 
 This function fetches the text measurement properties of the given SVG text element.
 
@@ -257,10 +251,11 @@ This function fetches the text measurement properties of the given SVG text elem
 function getSvgMeasurementProperties(svgElement: SVGTextElement): TextProperties;
 ```
 
-### Example of using getSvgMeasurementProperties
+Example of using `getSvgMeasurementProperties`:
 
 ```typescript
-import textMeasurementService = powerbi.extensibility.utils.formatting.textMeasurementService;
+import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
+// ...
 
 let svg: D3.Selection = d3.select("body").append("svg");
 
@@ -296,10 +291,11 @@ This function returns the width of a div element.
 function getDivElementWidth(element: JQuery): string;
 ```
 
-### Example of using getDivElementWidth
+Example of using `getDivElementWidth`:
 
 ```typescript
-import textMeasurementService = powerbi.extensibility.utils.formatting.textMeasurementService;
+import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
+// ...
 
 let svg: Element = d3.select("body")
     .append("div")
@@ -314,7 +310,7 @@ textMeasurementService.getDivElementWidth(svg)
 // returns: 150px
 ```
 
-## getTailoredTextOrDefault
+### getTailoredTextOrDefault
 
 Compares labels text size to the available size and renders ellipses when the available size is smaller.
 
@@ -322,11 +318,12 @@ Compares labels text size to the available size and renders ellipses when the av
 function getTailoredTextOrDefault(textProperties: TextProperties, maxWidth: number): string;
 ```
 
-### Example of using getTailoredTextOrDefault
+Example of using `getTailoredTextOrDefault`:
 
 ```typescript
-import TextProperties = powerbi.extensibility.utils.formatting.TextProperties;
-import textMeasurementService = powerbi.extensibility.utils.formatting.textMeasurementService;
+import { textMeasurementService } from "powerbi-visuals-utils-formattingutils";
+import TextProperties = textMeasurementService.TextProperties;
+// ...
 
 let textProperties: TextProperties = {
     text: "Microsoft PowerBI!",
@@ -341,13 +338,7 @@ textMeasurementService.getTailoredTextOrDefault(textProperties, 100);
 
 ## String extensions
 
-The ```stringExtensions``` module provides the following functions:
-
-* [endsWith](#endswith)
-* [equalIgnoreCase](#equalignorecase)
-* [startsWith](#startswith)
-* [contains](#contains)
-* [isNullOrEmpty](#isnullorempty)
+The module provides the following functions:
 
 ## endsWith
 
@@ -357,17 +348,18 @@ This function checks if a string ends with a substring.
 function endsWith(str: string, suffix: string): boolean;
 ```
 
-### Example of using endsWith
+Example of using `endsWith`:
 
 ```typescript
-import stringExtensions = powerbi.extensibility.utils.formatting.stringExtensions;
+import { stringExtensions } from "powerbi-visuals-utils-formattingutils";
+// ...
 
 stringExtensions.endsWith("Power BI", "BI");
 
 // returns: true
 ```
 
-## equalIgnoreCase
+### equalIgnoreCase
 
 This function compares strings, ignoring case.
 
@@ -375,17 +367,18 @@ This function compares strings, ignoring case.
 function equalIgnoreCase(a: string, b: string): boolean;
 ```
 
-### Example of using equalIgnoreCase
+Example of using `equalIgnoreCase`:
 
 ```typescript
-import stringExtensions = powerbi.extensibility.utils.formatting.stringExtensions;
+import { stringExtensions } from "powerbi-visuals-utils-formattingutils";
+// ...
 
 stringExtensions.equalIgnoreCase("Power BI", "power bi");
 
 // returns: true
 ```
 
-## startsWith
+### startsWith
 
 This function checks if a string starts with a substring;
 
@@ -393,17 +386,18 @@ This function checks if a string starts with a substring;
 function startsWith(a: string, b: string): boolean;
 ```
 
-### Example of using startsWith
+Example of using `startsWith`:
 
 ```typescript
-import stringExtensions = powerbi.extensibility.utils.formatting.stringExtensions;
+import { stringExtensions } from "powerbi-visuals-utils-formattingutils";
+// ...
 
 stringExtensions.startsWith("Power BI", "Power");
 
 // returns: true
 ```
 
-## contains
+### contains
 
 This function checks if a string contains a specified substring.
 
@@ -411,17 +405,18 @@ This function checks if a string contains a specified substring.
 function contains(source: string, substring: string): boolean;
 ```
 
-### Example of using contains method
+Example of using `contains` method:
 
 ```typescript
-import stringExtensions = powerbi.extensibility.utils.formatting.stringExtensions;
+import { stringExtensions } from "powerbi-visuals-utils-formattingutils";
+// ...
 
 stringExtensions.contains("Microsoft Power BI Visuals", "Power BI");
 
 // returns: true
 ```
 
-## isNullOrEmpty
+### isNullOrEmpty
 
 Checks if a string is null or undefined or empty.
 
@@ -429,10 +424,11 @@ Checks if a string is null or undefined or empty.
 function isNullOrEmpty(value: string): boolean;
 ```
 
-### Example of isNullOrEmpty method
+Example of `isNullOrEmpty` method:
 
 ```typescript
-import stringExtensions = powerbi.extensibility.utils.formatting.stringExtensions;
+import { stringExtensions } from "powerbi-visuals-utils-formattingutils";
+// ...
 
 stringExtensions.isNullOrEmpty(null);
 
@@ -441,12 +437,7 @@ stringExtensions.isNullOrEmpty(null);
 
 ## Value formatter
 
-The internal module ```import { valueFormatter } from "powerbi-visuals-utils-formattingutils"``` provides the following functions, interfaces, and classes:
-
-* [IValueFormatter](#ivalueformatter)
-  * [format](#ivalueformatterformat)
-* [ValueFormatterOptions](#valueformatteroptions)
-* [create](#create)
+The module provides the following functions, interfaces, and classes:
 
 ## IValueFormatter
 
@@ -460,7 +451,7 @@ interface IValueFormatter {
 }
 ```
 
-## IValueFormatter.format
+### IValueFormatter.format
 
 This method formats the given value.
 
@@ -468,7 +459,7 @@ This method formats the given value.
 function format(value: any, format?: string, allowFormatBeautification?: boolean): string;
 ```
 
-### Example for IValueFormatter.format
+Examples for `IValueFormatter.format`:
 
 #### The thousand formats
 
