@@ -19,7 +19,7 @@ Read more about Power BI drill-down [here](./../../consumer/end-user-drill.md)
 
 ## Enable drill-down support in the visual
 
-To support drill down in your visual, add a new field to `capabilities.json` named "drill-down", which has one property::
+To support drill down in your visual, add a new field to `capabilities.json` named "drill-down", which has one property:
 
     *roles - the name of the dataRole you want to enable drill-down on.
 
@@ -610,3 +610,7 @@ public update(options: VisualUpdateOptions) {
 At the final step you should get visual with context menu:
 
 ![The visual with drill-down support](./media/dev-matrix-visual-drilldown-demo.gif)
+
+## Next steps
+
+For more information, see [Understand data view mapping in Power BI visuals](dataview-mappings.md).
