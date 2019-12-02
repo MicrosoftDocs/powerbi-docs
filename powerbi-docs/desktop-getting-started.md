@@ -23,7 +23,8 @@ You can also watch the [Getting Started with the Power BI Desktop](https://www.y
 With Power BI Desktop, you can:
 1. Connect to data, including multiple data sources.
 1. Shape the data with queries that build insightful, compelling data models.
-1. Use the data models to create reports, which others can leverage, build upon, and share. Although you can share Power BI Desktop *.pbix* files like any other files, the most compelling method is to upload them to the [Power BI service](https://preview.powerbi.com/). 
+1. Use the data models to create visualizations and reports. 
+1. Share your report files for others to leverage, build upon, and share. You can share Power BI Desktop *.pbix* files like any other files, but the most compelling method is to upload them to the [Power BI service](https://preview.powerbi.com/). 
 
 Power BI Desktop integrates proven Microsoft query engine, data modeling, and visualization technologies. Data analysts and others can create collections of queries, data connections, models, and reports, and easily share them with others. Through the combination of Power BI Desktop and the Power BI service, new insights from the world of data are easier to model, build, share, and extend. Power BI Desktop is a powerful, flexible, and a highly accessible tool to connect with and shape the world of data, build robust models, and craft well-structured reports.
 
@@ -34,7 +35,9 @@ Ready to give it a try? Let's get started.
 > For data and reporting that must remain on-premises, there's a separate and specialized version of Power BI called [Power BI Report Server](report-server/get-started.md). Power BI Report Server uses a separate and specialized version of Power BI Desktop called Power BI Desktop for Power BI Report Server, which works only with the Report Server version of Power BI. This article describes standard Power BI Desktop.
 
 ## Install and run Power BI Desktop
-To download Power BI Desktop, go to the [Power BI Desktop download](https://powerbi.microsoft.com/desktop) page and select **Download Free**. Or, from the Power BI service, select the **Download** icon in the top menu bar, and then select **Power BI Desktop**.
+To download Power BI Desktop, go to the [Power BI Desktop download](https://powerbi.microsoft.com/desktop) page and select **Download Free**. Or for download options, select [See download or language options]((https://www.microsoft.com/download/details.aspx?id=58494). 
+
+You can also download Power BI Desktop from the Power BI service. Select the **Download** icon in the top menu bar, and then select **Power BI Desktop**.
 
 ![Download Power BI Desktop from Power BI service](media/desktop-getting-started/gsg_download.png)
 
@@ -42,7 +45,7 @@ On the Microsoft Store page, select **Get**, and follow the prompts to install P
 
 The first time Power BI Desktop starts, it displays the **Welcome** screen.
 
-You can **Get data**, see **Recent sources**, open recent reports, **Open other reports**, or select other links from the **Welcome** screen. You can also choose whether to always show the **Welcome** screen at startup. Select the close icon to close the **Welcome** screen.
+From the **Welcome** screen, you can **Get data**, see **Recent sources**, open recent reports, **Open other reports**, or select other links. You can also choose whether to always show the **Welcome** screen at startup. Select the close icon to close the **Welcome** screen.
 
 ![Power BI Desktop Welcome screen](media/desktop-getting-started/designer_gsg_startsplashscreen.png)
 
@@ -54,7 +57,7 @@ Along the left side of Power BI Desktop are icons for the three Power BI Desktop
 
 ![Power BI Desktop Report view](media/desktop-getting-started/designer_gsg_blankreport.png)
 
-Power BI Desktop also includes **Power Query Editor**, which opens in a separate window. In **Power Query Editor**, you can build queries and transform data, then load the refined data model into Power BI Desktop to create reports.
+Power BI Desktop also includes the **Power Query Editor**, which opens in a separate window. In **Power Query Editor**, you can build queries and transform data, then load the refined data model into Power BI Desktop to create reports.
 
 ## Connect to data
 With Power BI Desktop installed, you’re ready to connect to the ever-expanding world of data. To see the many types of data sources available, select **Get Data** > **More** in the Power BI Desktop **Home** tab, and in the **Get Data** window, scroll through the list of **All** data sources. In this quick tour, you connect to a couple of different **Web** data sources.
@@ -277,7 +280,7 @@ When you finish creating your pages and visualizations, select **File** > **Save
 For more information about reports, see [Report View in Power BI Desktop](desktop-report-view.md).
 
 ## Share your work
-Now that you have a Power BI Desktop report, you can share it with others. There are a few ways to share your work. You can distribute the *.pbix* file like any other file, you can upload the *.pbix* file from the Power BI service, or you can publish directly from Power BI Desktop to the Power BI service. You must have a Power BI account to be able to publish or upload reports to Power BI service. 
+Now that you have a Power BI Desktop report, you can share it with others. There are a few ways to share your work. You can distribute the report *.pbix* file like any other file, you can upload the *.pbix* file from the Power BI service, or you can publish directly from Power BI Desktop to the Power BI service. You must have a Power BI account to be able to publish or upload reports to Power BI service. 
 
 To publish to the **Power BI** service from Power BI Desktop, from the **Home** tab of the ribbon, select **Publish**.
 
@@ -315,7 +318,7 @@ There are all sorts of interesting visuals you can create from your report in th
 
 To share a report or dashboard, select **Share** at the top of the open report or dashboard page, or select the **Share** icon next to the report or dashboard name in the **My workspace** > **Reports** or **My workspace** > **Dashboards** lists.
 
-On the **Share report** or **Share dashboard** screen, you can send an email or get a link to share your report or dashboard with others. 
+Complete the **Share report** or **Share dashboard** screen to send an email or get a link to share your report or dashboard with others. 
 
 ![Share report](media/desktop-getting-started/gsg_share6.png)
 
