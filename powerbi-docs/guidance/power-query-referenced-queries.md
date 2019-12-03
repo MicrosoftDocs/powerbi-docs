@@ -27,14 +27,14 @@ You can think that **Query2** has the **Query1** _step logic_ embedded within it
 
 **Query1** is executed three times. The multiple executions can result in slow data refresh, and negatively impact on the data source.
 
-The use of the [Table.Buffer](/powerquery-m/table-buffer) function in **Query1** won't eliminate the additional data retrieval. This function buffers a table to memory. The buffered table can only be used within the _same_ query. So, in the example, if **Query1** were buffered, **Query2**, **Query3**, and **Query4** couldn't use it. It could in fact compound the negative performance, because the table will be buffered by each referencing queries.
+The use of the [Table.Buffer](/powerquery-m/table-buffer) function in **Query1** won't eliminate the additional data retrieval. This function buffers a table to memory. The buffered table can only be used within the _same_ query. So, in the example, if **Query1** were buffered, **Query2**, **Query3**, and **Query4** couldn't use it. It could in fact compound the negative performance, because the table will be buffered by each referencing query.
 
 > [!NOTE]
-> Power Query caching is a complex, and it's not the focus of this article. Power Query can cache data retrieved from a data source. However, when it executes a query, it may retrieve the data from the data source more than once.
+> Power Query caching architecture is complex, and it's not the focus of this article. Power Query can cache data retrieved from a data source. However, when it executes a query, it may retrieve the data from the data source more than once.
 
 ## Recommendations
 
-Generally, we recommend you reference queries to avoid the duplication of logic across your queries. However, as discussed in this article, this design approach can contribute to slow data refreshes, and overburden data sources.
+Generally, we recommend you reference queries to avoid the duplication of logic across your queries. However, as described in this article, this design approach can contribute to slow data refreshes, and overburden data sources.
 
 We recommend you create a [dataflow](../service-dataflows-overview.md) instead. Using a dataflow can improve data refresh time, and reduce impact on your data sources.
 
