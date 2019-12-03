@@ -1,14 +1,14 @@
 ---
 title: Troubleshooting unsupported data source for refresh
 description: Troubleshooting unsupported data source for refresh
-author: kfollis
+author: maggiesMSFT
 ms.reviewer: kayu
 
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
 ms.date: 12/06/2017
-ms.author: kfollis
+ms.author: maggies
 ms.custom: seodec18
 
 LocalizationGroup: Troubleshooting
@@ -31,7 +31,7 @@ If you aren’t sure what data source was used, you can find that using the foll
    ![Advance editor](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-advanced-editor.png)
 4. Make note of the provider listed for the source.  In this example, the provider is ActiveDirectory.  
    ![Data source provider](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
-5. Compare the provider with the list of supported data sources found within [Refresh data in Power BI](refresh-data.md).  You will find that Active Directory is not a supported data source for refresh.  
+5. Compare the provider with the list of supported data sources found in [Power BI data sources](power-bi-data-sources.md).
 
 ## Next steps
 [Data Refresh](refresh-data.md)  
