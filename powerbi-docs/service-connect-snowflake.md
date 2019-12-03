@@ -26,7 +26,8 @@ Connecting to Snowflake in the Power BI service only differs from other connecto
 
 To enable  Snowflake  integration with Power BI AAD SSO, a user with  Snowflake  admin privileges for the account needs to run the following security integration in  Snowflake.
 
-```create security integration powerbi_sso
+```
+create security integration powerbi_sso
     type = external_oauth
     enabled = true
     external_oauth_type = azure
