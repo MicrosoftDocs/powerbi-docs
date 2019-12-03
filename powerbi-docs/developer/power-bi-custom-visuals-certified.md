@@ -89,9 +89,9 @@ You can request to have your Power BI visual certified by the Power BI team via 
 To request Power BI certification:
 
 1. Sign in to Partner Center.
-2. Locate your Power BI visual and go to its settings.
+2. On the **Overview page**, choose your Power BI visual, and go to the **Product** setup page.
 3. Select the **Request Power BI certification** check box.
-4. In the **Notes for certification** text box, provide your license key of token.
+4. On the **Review and publish** page, in the **Notes for certification** text box, provide a link to the source code and the credentials required to access it.
 
 ### Seller Dashboard certification submission process
 
