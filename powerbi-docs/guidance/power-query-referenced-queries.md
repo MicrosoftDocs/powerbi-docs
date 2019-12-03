@@ -19,12 +19,12 @@ Consider several queries: **Query 1** sources data from a web service, and its l
 
 ![Query Dependencies view, displaying queries described in the previous paragraph.](media/power-query-referenced-queries/query-dependencies-web-service.png)
 
-When the data model is refreshed, it's often assumed that Power Query retrieves and caches the **Query1** result, and that this result can be used by referenced queries. This thinking is incorrect. In fact, Power Query executes all queries separately, and so in this example it retrieves data from the web service four times. It can result in a slow data refresh, and have a negative impact on the data source.
+When the data model is refreshed, it's often assumed that Power Query retrieves the **Query1** result, and that this result can be re-used by referenced queries. This thinking is incorrect. In fact, Power Query executes **Query 2**, **Query 3**, and **Query 4** separately. TODO: You can think that Q2 execution is in fact embedding Q1 in it. And Q3 and Q4. So Q1 gets executed three times. It could result in a slow data refresh, and have a negative impact on the data source.
 
 > [!NOTE]
-> Power Query caching is a complicated topic. Power Query may cache some data sources when the data load **Enable parallel loading of tables** property is disabled.
+> Power Query caching is a complicated topic. Power Query can cache data retrieved from a data source, but when it executes a query, it may retrieve the data from the data source more than once.
 >
-> Further, the use of the [Table.Buffer](/powerquery-m/table-buffer) function in **Query1** won't eliminate the additional querying. This function buffers a table to memory. The buffered table can only be addressed within the _same_ query.
+> Further, the use of the [Table.Buffer](/powerquery-m/table-buffer) function in **Query1** won't eliminate the additional querying. This function buffers a table to memory. The buffered table can only be addressed within the _same_ query. So, in the example above, if Q1 was buffered, Q2-4 cannot use this.
 
 ## Recommendations
 
@@ -33,6 +33,8 @@ Generally, we recommend you reference queries to avoid the duplication of logic 
 We recommend you create a [dataflow](../service-dataflows-overview.md) instead. Using a dataflow can improve data refresh time, and reduce impact on your data sources.
 
 You can design the dataflow to encapsulate the source data and transformations. As the dataflow is a persisted store of data in the Power BI service, its data retrieval is fast. So, even when referencing queries result in multiple requests for the data, data refresh times can be improved.
+
+In this example, you could Q1 as a dataflow entity. Tenmou can then Power BI Desktop to import the dataflow, and the create reference queries for Q2-Q4.
 
 ## Next steps
 
