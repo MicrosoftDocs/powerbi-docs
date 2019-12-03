@@ -13,143 +13,162 @@ ms.date: 12/17/2018
 
 # Frequently asked questions about Power BI visuals
 
-## Organizational visuals
+## Organizational Power BI visuals
 
-The admin portal enables you to manage a Power BI visuals for your organization.
+The admin portal enables managing Power BI visuals for your organization.
 
-### How can the admin manage the organizational Power BI visuals?
+### How can the admin manage organizational Power BI visuals?
 
-In the Admin portal, under the "Organizational visuals" tab, the admin can see and [manage all the organizational Power BI visuals in the enterprise](../service-admin-portal.md#organizational-visuals): add, disable, enable, and delete.
-There's no need to share those visuals by emails or shared folder anymore! Once deployed into the organizational repository, users in the organization can easily find them, and import the organizational visuals into their reports directly from Power BI Desktop or Service. The organizational visuals can be found from the built-in store (in desktop and service) under the *MY ORGANIZATION* tab. Once the admin uploads a new organizational custom visual’s version, everyone in the organization gets the same updated version. Report authors don't need to delete the visual in their reports to get the new version of these visuals as all reports using these visuals are automatically updated! The update mechanism is similar to the marketplace visuals.
+In the Admin portal, under the *Organizational visuals* tab, the admin can see and [manage all the organizational Power BI visuals in the enterprise](../service-admin-portal.md#organizational-visuals). This includes adding, disabling, enabling, and deleting Power BI visuals.
 
-### If an admin uploads a custom visual from the public marketplace to the organization store, is it automatically updated once a vendor updates the visual in the public marketplace?
+Users in the organization can easily find Power BI visuals, and import them into their reports directly from Power BI Desktop or Service.
 
-No, there's no automatic update from the public marketplace.
-It's the Admin's responsibility to update the organizational visuals' version.
+Once the admin uploads a new version of an organizational Power BI visual, everyone in the organization gets the same updated version. All reports using updated Power BI visuals are automatically updated.
 
-### Is there a way to disable the organizational store?
+Users can find the organizational Power BI visuals in the built-in Power BI Desktop and Power BI service organization store, under the *MY ORGANIZATION* tab. 
 
-No, users always see the "MY ORGANIZATION" tab from the Power BI desktop and service. Admin can disable or delete all organizational visuals from the admin portal and the organizational store is empty.
+### If an admin uploads a Power BI visual from the public marketplace to the organization store, is it automatically updated once a vendor updates the visual in the public marketplace?
+
+No, there's no automatic update from the public marketplace. It's the Admin's responsibility to update the organizational Power BI visual version.
+
+### Is there a way to disable the organization store?
+
+No, users always see the *MY ORGANIZATION* tab in Power BI desktop and Power BI service. If an admin disables or deletes all the organizational Power BI visuals from the admin portal, the organizational store will be empty.
   
-### If the administrator disables Power BI visuals from the Admin portal (Tenant settings) do users still have access to the organizational visuals?
+### If the admin disables Power BI visuals from the Admin portal (tenant settings) do users still have access to the organizational Power BI visuals?
 
-Yes, if the admin disables the Power BI visuals from the admin portal, it doesn’t affect the organizational store. Some organizations disable Power BI visuals and enable only hand-picked visuals that were imported and uploaded by the Power BI administrator to the organizational store. Disabling the Power BI visuals from the Admin portal isn't enforced in Power BI Desktop. Desktop users can still add and use Power BI visuals from the public marketplace in their reports. However, those public Power BI visuals stop rendering once published to the Power BI Service and issue an appropriate error. When using the Power BI service,  you aren't able to import Power BI visuals from the public marketplace. Only visuals from the organizational store can be imported because the Power BI visuals setting in the admin portal is enforced in the Power BI service.
+Yes, if the admin disables the Power BI visuals from the admin portal, it doesn’t affect the organizational store.
 
-### Why does the organizational store and organizational visuals make a great enterprise solution?
+Some organizations disable Power BI visuals and enable only hand-picked visuals that were imported and uploaded by the Power BI admin to the organizational store.
 
-* Everyone gets the same visual version, which is controlled by the Power BI administrator. Once the admin updates the visual's version in the admin portal, all the users in the organization get the updated version automatically.
+Disabling the Power BI visuals from the Admin portal isn't enforced in Power BI Desktop. Desktop users can still add and use Power BI visuals from the public marketplace in their reports. However, those public Power BI visuals stop rendering once published to the Power BI Service and issue an appropriate error. 
 
-* No need to share visual files by email or shared folders anymore! One place, visible to all members who are logged-in.
+When the Power BI visuals setting in the admin portal, is enforced, users in Power BI service cannot import Power BI visuals from the public marketplace. Only visuals from the organizational store can be imported.
 
-* Security and supportability, new versions of organizational visuals are updated automatically in all reports similar to marketplace visuals.
+### What are the advantages of Power BI visuals in the organizational store?
 
-* Users in the organization using the organizational visuals needs to be logged-in to see and use the organizational visuals, which are a security element for organization.
+* Everyone gets the same visual version, which is controlled by the Power BI admin. Once the admin updates the visual's version in the admin portal, all the users in the organization get the updated version automatically.
 
-* Admins can control which Power BI visuals to be available in the organization.
+* No need to share visual files by email or shared folders. The organizational store offers is visible to all members who are logged-in.
 
-* Admins can enable/disable visuals for testing from the admin portal. Better security enforcement as those visuals will be allowed for organizational members only.
+* Security and supportability, new versions of organizational Power BI visuals are updated automatically in all reports.
+
+* Admins can control which Power BI visuals are available throughout the organization.
+
+* Admins can enable/disable visuals for testing from the admin portal.
 
 ## Certified Power BI visuals
 
 ### What are certified Power BI visuals?
 
-Certified Power BI visuals are visuals in the [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) that meet certain [specified](power-bi-custom-visuals-certified.md) code requirements and testing by the Power BI team.  The tests performed are designed to check that the visual does not access external services or resources. However, Microsoft isn't the author of third-party Power BI visuals, and we advise customers to contact the author directly to verify the functionality of such visual.
+Certified Power BI visuals are Power BI visuals that meet certain [requirements](power-bi-custom-visuals-certified.md), and are certified by Microsoft.
+
+In the [marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals), certified Power BI visuals have a yellow badge indicating that they're certified.
+
+Microsoft isn't the author of third-party Power BI visuals. We advise customers to contact the author directly to verify the functionality of third-party visuals.
 
 ### What tests are done during the certification process?
 
 The certification process tests include but are not limited to: 
-Code reviews, static code analysis, data leakage, data fuzzing, penetration testing, access XSS testing, malicious data injection, input validation and functional testing.
+* Code reviews
+* Static code analysis
+* Data leakage
+* Data fuzzing
+* Penetration testing
+* Access XSS testing
+* Malicious data injection
+* Input validation
+* Functional testing
  
-### Do you certify visuals every submission?
+### Are certified Power BI visual checked again with every new submission (upgrade)?
 
 Yes. Every time a new version of certified visual is submitted to the Marketplace, the visual’s version update goes under the same certification checks.
 
-Note for developers: if you are submitting a version update of certified visual, you do not need to send a separate email as [first time certification request.](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified#process-for-submitting-a-custom-visual-for-certification) 
-Certification of version update happens automatically, and any violations that cause a rejection are sent an email to explain what things need to be fixed. 
+The version update certification is automatic. If there's a violation that causes the update to be rejected, an email is sent to the developer to explain what needs to be fixed.
 
-### Is it possible that a certified visual stops being certified with a new update?
+### Can a certified Power BI visual stop loose its certification after a new update?
 
-No, this is not possible. A certified visual can’t be uncertified with a new update. The update is rejected.
+No, this is not possible. A certified visual can’t loose its certification with a new update. The update is rejected.
  
-### Do I need to share my code in public repository if I am submitting to the certification process?
+### Do I need to share my code in a public repository if I'm certifying my Power BI visual?
 
-No, you don’t need to share your code publicly. 
-However, you need to give us read permissions to check the visuals code. E.g. private repository in GitHub.
+No, you don’t need to share your code publicly.
+
+You need to give us read permissions to check the visuals code. For example, by using a private repository in GitHub.
  
-### Do we have to [publish](https://docs.microsoft.com/power-bi/developer/office-store) the visual in the [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) to certify it?
+### Does a certified Power Bi visual have to be in the marketplace?
 
-Yes. Publishing the visual to Marketplace first is an obligatory requirement for certification.
-To certify a custom visual, it should be in our servers. We cannot certify private visuals.
+Yes. Private visuals are not certified.
  
 ### How long does it take to certify my visual?
 
-For updated version it may take up to 3 weeks. For a new submission (first-time certification) it may take up to 4 weeks. 
+Certifying a new Power BI visual (first-time certification) can take up to four weeks. 
 
-### Does the Certification process ensure that no data leakage occurs?
+Certifying an updated version of a Power BI visual, can take up to three weeks. 
+
+### Does the Certification process ensure that there is no data leakage?
 
 The tests performed are designed to check that the visual does not access external services or resources. 
-However, Microsoft is not the author of third-party Power BI visuals, and we advise customers to contact the author directly to verify the functionality of such visual.
+
+Microsoft is not the author of third-party Power BI visuals. We advise customers to contact the author directly to verify the functionality of third-party Power BI visuals.
  
 ### Are uncertified Power BI visuals safe to use?
 
 Uncertified Power BI visuals do not necessarily mean unsafe visuals.
-Some visuals aren't certified because they don’t comply with one or more of the [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
+
+Some visuals are not certified because they don’t comply with one or more of the [certification requirements](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). For example, connecting to an external service like map visuals, or visuals using commercial libraries.
  
 ## Visuals with additional purchases
 
 ### What is a visual with additional purchases?
 
-A visual with additional purchases is similar to in-app purchase (IAP) adds-in in the marketplace, these adds-in have a price tag **Additional purchase may be required**.
+A visual with additional purchases is similar to in-app purchase (IAP) adds-in. These adds-in include an  **Additional purchase may be required** price tag.
 
-IAP Power BI visuals are free, downloadable Power BI visuals - users pay nothing to download those Power BI visuals from the marketplace. IAP visuals offer optional in-app purchases for advanced features.  
+IAP Power BI visuals are free, downloadable Power BI visuals. Users pay nothing to download those Power BI visuals from the marketplace.
 
-### What's the benefit to developers?
-
-IAP Power BI visuals in AppSource, will be discoverable to the many daily visitors, bringing valuable traffic, and increased awareness for your IAP Power BI visuals and to you as the developer.
-
-If until recently you managed those visuals through your website, now you can submit them to AppSource. Which will increase the level of discoverability and visibility of the IAP visuals inside the Power BI community.
-
-Visuals in the AppSource enjoy a Direct feedback channel from your customers who are using the IAP custom visual, through the reviews and ratings system in the store.  
-
-Once the IAP visual was approved by the AppSource validation team, you may also submit those visuals for certification. It is an optional process.  
-
-Once the visual is certified, IAP Power BI visuals can be exported to PowerPoint and displayed in the emails received when a user subscribes to report pages. So today by submitting IAP visuals to the marketplace, IAP Power BI visuals can also be certified and support extra feature set.  
-
-### Do IAP visuals need to be certified?
-
-Certification process is optional. It is up to the developer to decide whether to certify their IAP Power BI visuals or not same with free visuals.
+IAP visuals offer optional in-app purchases for advanced features.  
 
 ### What is changing in the submission process?
 
-The IAP Power BI visuals submission process to the marketplace, is same process as for free visuals. It happens through the seller dashboard.  The only change to the submission process is that developers will need to state in the developer notes in the seller dashboard: “Visual with in-app purchase”. You’ll also need to provide a license key/token, if necessary to validate the paid/advanced features.  
+The IAP Power BI visuals submission process to the marketplace, is the same process as the one for free power BI visuals. You can submit a Power BI visual to be certified in either the [Partner Center](https://docs.microsoft.com/partner-center/) or the [Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store).
+
+>[!NOTE]
+> *Partner Center* is replacing *Seller Dashboard*. We recommend submitting your Power BI visual to Partner Center, as Seller Dashboard will eventually be phased out.
+
+**Seller Dashboard**
+
+Developers need to state in the developer notes that the Power BI visual is a “Visual with in-app purchase”. You’ll also need to provide a license key or token, if necessary to validate the paid features.  
 
 There will be no new option in the seller dashboard: *free with in-app purchases*, you will need to submit your IAP visuals as *free*.
 
 In addition, let users know what to expect by providing in your store long description which features are free and which features require additional purchases to operate.  
 
-### What should I do before submitting my IAP custom visual?
+**Partner Center**
 
-If you’re working on an IAP custom visual or already have one, make sure that it complies to the  guidelines.  
+When registering your Power BI visual, navigate to the *Product setup* tab and check the *My product requires the purchase of a service* check box.
 
-If you have a logo in the custom visual, make sure it complies to the logo guidelines (color, location, size, and action triggering).
+### What should I do before submitting my IAP Power BI visual?
 
-You can also find, in the guidelines, best practice notes.  
-> [!Note]
-> All free visuals should keep same free features previously offered. You may add optional advanced paid features on top of the old free features. We recommend to submit the IAP visuals with the advanced features as new visuals and not to update the old free ones.
+If you’re working on an IAP Power BI visual, make sure that it complies with the [guidelines](guidelines-powerbi-visuals.md).  
 
-### Can I get my IAP custom visual certified?
+> [!NOTE]
+> Power BI free visuals with an added IAP feature, must keep the same free features previously offered. You can add optional advanced paid features on top of the old free features. We recommend submitting the IAP Power BI visual with the advanced features as a new Power BI visual, and not to update the old free one.
 
-Yes, same with free visuals.  Once your IAP custom visual is approved by the AppSource team, you can submit your visual to the certification process.
+### Do IAP Power BI visuals need to be certified?
 
-To certify your visual, it should comply with the certification requirements, for example the visual cannot access external services for licenses validation.
+The [certification](power-bi-custom-visuals-certified.md) process is optional. It is up to the developer to decide whether to certify their IAP Power BI visual or not.
 
-Recall certification is an optional process, it's up to you to decide if you want your IAP visual to be certified.
+### Can I get my IAP Power BI visual certified?
+
+Yes, once your IAP Power BI visual is approved by the AppSource team, you can submit your Power BI visual to be [certified](power-bi-custom-visuals-certified.md).
+
+Certification is an optional process, it's up to you to decide if you want your IAP visual to be certified.
 
 ## Additional questions
 
 ### How to get support?
 
-Feel free to contact the Power BI visuals support team: *pbicvsupport@microsoft.com* with any questions, comments, or issues you have.  
+Feel free to contact the Power BI visuals support team at pbicvsupport@microsoft.com, with any questions, comments, or issues you have.  
 
 ## Next steps
 
