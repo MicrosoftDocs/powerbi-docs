@@ -15,6 +15,9 @@ ms.author: v-pemyer
 
 This article targets you as a report author designing Power BI reports. It provides suggestions and recommendations when creating [report page drillthrough](../desktop-drillthrough.md).
 
+> [!TIP]
+> It's also possible to configure drillthrough to your Power BI paginated reports. You can do this be adding links to Power BI reports. Links can define [URL parameters](/blog/url-parameters-for-paginated-reports-are-now-available/).
+
 It's recommended that you design your report to allow report users to achieve following flow:
 
 1. View a report page
@@ -42,9 +45,9 @@ The following example shows what happens when a report user drills through from 
 
 A drillthrough page can achieve the opposite of additional depth. This scenario is great for drilling through to a holistic view.
 
-The following example shows what happens when a report user drills through from a country. The drillthrough page displays general information about that country.
+The following example shows what happens when a report user drills through from a zip code. The drillthrough page displays general information about that zip code.
 
-![A table visual has three columns: Country, Population, and Freedom Rating. A context menu is open for the country Namibia. The context menu shows that a drillthrough to a page named "Country Analysis" has happened. A drillthrough page is also displayed. It's titled "Country Analysis", and it's filtered by the country Namibia. The page contains a filled map and image of the country's flag. It also displays lots of statistics, like GDP, SEDA, tax burden score, etc.](media/report-drillthrough/suggestion-drillthrough-broader-perspective.png)
+![A table visual has three columns: Zip Code, Average of Violation Points, and Average of Grade Rating. A context menu is open for the zip code 98004. The context menu shows that a drillthrough to a page named "Zip Code Analysis" has happened. The drillthrough page is also displayed. It's titled "Zip Code Analysis", and it's filtered by zip code 98004. The page contains a multi-row card visual displaying various statistics. It also includes a line chart and a map.](media/report-drillthrough/suggestion-drillthrough-broader-perspective.png)
 
 ## Recommendations
 
@@ -56,15 +59,12 @@ At report design time, we recommend the following practices:
 - **Blanks:** Avoid adding visuals that could display BLANK, or produce errors when drillthrough filters are applied.
 - **Page visibility:** Consider hiding drillthrough pages. If you decide to keep a drillthrough page visible, be sure to add a button that allows users to clear any previously-set drillthrough filters. Assign a [bookmark](../desktop-bookmarks.md) to the button. The bookmark should be configured to remove all filters.
 - **Back button:** A back [button](../desktop-buttons.md) is added automatically when you assign a drillthrough filter. It's a good idea to keep it. This way, your report users can easily return to the source page.
-- **Discovery:** Help promote awareness of a drillthrough page by setting visual header icon text, or adding instructions to a text box.
+- **Discovery:** Help promote awareness of a drillthrough page by setting visual header icon text, or adding instructions to a text box. You can also design an overlay, as described in [this blog post](https://alluringbi.com/2019/10/23/overlays-for-true-self-serve-reporting/).
 
 ## Next steps
 
 For more information related to this article, check out the following resources:
 
 - [Use drillthrough in Power BI Desktop](../desktop-drillthrough.md)
-- [Use cross-report drillthrough in Power BI Desktop](../desktop-cross-report-drill-through.md)
-- Guy in a Cube videos:
-  - [Drilling into drillthrough in Power BI Desktop](https://www.youtube.com/watch?v=2x9lLHDbtDk)
-  - [Cross-report Drillthrough in Power BI](https://www.youtube.com/watch?v=OcZr_70OGPo)
+- Guy in a Cube video: [Drilling into drillthrough in Power BI Desktop](https://www.youtube.com/watch?v=2x9lLHDbtDk)
 - Questions? [Try asking the Power BI Community](https://community.powerbi.com/)
