@@ -45,11 +45,12 @@ You can use a pop-up window to explain how to purchase a license, when an invali
 
 ### Submission process
 
-Microsoft is transitioning from [Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) to [Partner Center](https://docs.microsoft.com/partner-center/).
+Follow the [Partner Center submission process](office-store.md#partner-center) and then navigate to the *Product setup* tab and check the *My product requires the purchase of a service* check box.
 
-If you're submitting a new Power BI visual using **Partner Center** and want to add an IAP feature, follow the [Partner Center submission process](office-store.md#partner-center) and then navigate to the *Product setup* tab and check the *My product requires the purchase of a service* check box.
+After the Power BI visual is validated and approved, the Microsoft AppSource listing for the IAP Power BI visual states, "Additional purchase may be required" under the pricing options.
 
-If your Power BI visual was already submitted using **Seller Dashboard** and you want to add an IAP feature, you have to write in the Seller Dashboard notes, "Visual with in-app purchase." You also need to provide a license key or token so that the validation team can validate the IAP features. After the Power BI visual is validated and approved, the Microsoft AppSource listing for the IAP Power BI visual states, "Additional purchase may be required" under the pricing options.
+>[!NOTE]
+>If your Power BI visual was already submitted using [Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) and you want to add an IAP feature, you have to write in the Seller Dashboard notes, "Visual with in-app purchase." You also need to provide a license key or token so that the validation team can validate the IAP features.
 
 ## Context menu
 Context menu is the right-click menu that is displayed when the user is hovering over a visual.

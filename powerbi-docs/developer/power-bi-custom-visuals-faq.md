@@ -130,20 +130,8 @@ IAP visuals offer optional in-app purchases for advanced features. 
 
 ### What is changing in the submission process?
 
-The IAP Power BI visuals submission process to the marketplace, is the same process as the one for free power BI visuals. You can submit a Power BI visual to be certified in either the [Partner Center](https://docs.microsoft.com/partner-center/) or the [Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store).
+The IAP Power BI visuals submission process to the marketplace, is the same process as the one for free power BI visuals. You can submit a Power BI visual to be certified using [Partner Center](https://docs.microsoft.com/partner-center/).
 
->[!NOTE]
-> *Partner Center* is replacing *Seller Dashboard*. We recommend submitting your Power BI visual to Partner Center, as Seller Dashboard will eventually be phased out.
-
-**Seller Dashboard**
-
-Developers need to state in the developer notes that the Power BI visual is a “Visual with in-app purchase”. You’ll also need to provide a license key or token, if necessary to validate the paid features.  
-
-There will be no new option in the seller dashboard: *free with in-app purchases*, you will need to submit your IAP visuals as *free*.
-
-In addition, let users know what to expect by providing in your store long description which features are free and which features require additional purchases to operate.  
-
-**Partner Center**
 
 When registering your Power BI visual, navigate to the *Product setup* tab and check the *My product requires the purchase of a service* check box.
 
