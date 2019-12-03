@@ -2,18 +2,18 @@
 title: Paginated reports in the Power BI service (dashboards, reports, apps)
 description: Documentation describing paginated reports and how to view them in the Power BI service
 author: mihart
-ms.reviewer: ''
+ms.reviewer: 'chris finlan'
 
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 11/26/2019
+ms.date: 12/02/2019
 ms.author: mihart
 
 LocalizationGroup: Common tasks
 ---
 # Paginated reports in the Power BI service
-You've learned about [Power reports](end-user-reports.md), and those are the types of report you're most likely to encounter. However, there is another type of report, and it is called a *paginated report*. 
+You've learned about [Power BI reports](end-user-reports.md), and those are the types of report you're most likely to encounter. However, there is another type of report, and it's called a *paginated report*. 
 
 ## What is a paginated report?
 
@@ -31,7 +31,7 @@ Compared to paginated reports, Power BI reports are highly interactive reports t
 
 ## Identify a paginated report
 
-A paginated report shows up in your report list just like Power BI reports, but it has a different icon.  ![paginated report icon](media/end-user-paginated-report/power-bi-report-icon.png).  A paginated report can be shared with you directly, or as part of a [Power BI app](end-user-apps.md). If the report *designer* gave you permissions, you'll be able to re-share the paginated report and subscribe yourself and others.
+In content lists and on your Home landing page, paginated reports can be identified by their icon ![paginated report icon](media/end-user-paginated-report/power-bi-report-icon.png).  A paginated report can be shared with you directly, or as part of a [Power BI app](end-user-apps.md). If the report *designer* gave you permissions, you'll be able to re-share the paginated report and subscribe yourself and others.
 
 ![report list showing different icons](./media/end-user-paginated-report/power-bi-report-list.png)
 
@@ -41,7 +41,7 @@ The way you interact with a paginated report is different from other reports. Yo
 
 ### Print a paginated report
 
-*Paginated* reports are formatted to fit well on a page and to print well. What you see in the browser is what you'll see when you print. Plus, if the report has a scrolling table, the entire table will get printed, even if it spans multiple pages. Paginated reports are sometimes called "pixel perfect" because report *designers* can control the report page layout exactly.
+*Paginated* reports are formatted to fit well on a page and to print well. What you see in the browser is what you'll see when you print. Plus, if the report has a scrolling table, the entire table will print, even if it spans multiple pages. Paginated reports are sometimes called "pixel perfect" because report *designers* can control the report page layout exactly.
 
 Paginated reports can have many pages. For example, this report has 563 pages. Each page is laid out exactly, with one page per invoice and repeating headers and footers. When you print this report, you'll get page breaks between invoices.
 
@@ -67,7 +67,7 @@ Some paginated reports will have many pages.  Use the page controls to navigate 
 ![page controls](./media/end-user-paginated-report/power-bi-page.png)
 
 ### Export the paginated report
-You have a variety of options for exporting paginated reports, including PDF, Word, XML, PowerPoint, Excel, and more. As much of the formatting as possible is preserved. Paginated reports exported to Excel, Word, PowerPoint, MHTML, and PDF, for example, keep the "pixel perfect" formatting. 
+You have a variety of options for exporting paginated reports, including PDF, Word, XML, PowerPoint, Excel, and more. When exporting, as much of the formatting as possible is preserved. Paginated reports exported to Excel, Word, PowerPoint, MHTML, and PDF, for example, keep the "pixel perfect" formatting. 
 
 ![a new sales order](./media/end-user-paginated-report/power-bi-exporting.png)
 
