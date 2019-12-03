@@ -45,7 +45,7 @@ You can use a pop-up window to explain how to purchase a license, when an invali
 
 ### Submission process
 
-Follow the [Partner Center submission process](office-store.md#partner-center) and then navigate to the *Product setup* tab and check the *My product requires the purchase of a service* check box.
+Follow the [submission process](office-store.md#submitting-to-appsource) and then navigate to the *Product setup* tab and check the *My product requires the purchase of a service* check box.
 
 After the Power BI visual is validated and approved, the Microsoft AppSource listing for the IAP Power BI visual states, "Additional purchase may be required" under the pricing options.
 
