@@ -74,13 +74,6 @@ To get your Power BI visual [certified](#get-a-power-bi-visual-certified), make 
 
 ## Submitting a Power BI visual for certification
 
-You can submit a Power BI visual to be certified in either the [Partner Center](https://docs.microsoft.com/partner-center/) or the [Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store).
-
->[!NOTE]
-> *Partner Center* is replacing *Seller Dashboard*. We recommend submitting your Power BI visual to Partner Center, as Seller Dashboard will eventually be phased out.
-
-### Partner Center Power BI visual certification request
-
 You can request to have your Power BI visual certified by the Power BI team via Partner Center.
 
 >[!TIP]
@@ -93,17 +86,8 @@ To request Power BI certification:
 3. Select the **Request Power BI certification** check box.
 4. On the **Review and publish** page, in the **Notes for certification** text box, provide a link to the source code and the credentials required to access it.
 
-### Seller Dashboard certification submission process
-
-Follow the instructions in this section to submit a Power BI visual for certification in Seller Dashboard. Use this method if you previously submitted a Power BI visual to AppSource using the Seller Dashboard.
-
-1. Send an email to the Power BI visuals support team (pbicvsupport@microsoft.com). In the email, include the following information:
-    * Title: Visual Certification Request
-    * Link to GitHub repository where the human readable source code is hosted
-    * [Adhere to the requirements](#certification-requirements)
-    * Pass the code review
-
-2. The Microsoft Power BI visuals team notifies you when your Power BI visual is certified and added to the [certified list](#list-of-power-bi-visuals-that-have-been-certified), or is rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their certified visuals as needed.
+>[!NOTE]
+> If you are in the middle of a Power BI visual submission process, and have to use [Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (the old management tool), review the [Seller Dashboard certification submission process](seller-dashboard.md#seller-dashboard-certification-submission-process) instructions.
 
 ## List of Power BI visuals that have been certified
 

@@ -59,7 +59,7 @@ Attach the **.pbiviz file** and the **sample report .pbix file** to your email. 
 You must send an email with the **.pbiviz** file and the **.pbix** file to the Power BI team before submitting to AppSource. This allows the Power BI team to upload the files to the public share server. Otherwise, the store will not be able to retrieve the files. You must send the files with new Power BI visual submissions, updates to existing Power BI visuals, and fixes to rejected submissions.
 
 >[!NOTE]
-> If you are in the middle of a Power BI visual submission process, and have to use the old management tool, [Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store), review the instructions in [Submit a Power BI visual to AppSource using Seller Dashboard](seller-dashboard.md).
+> If you are in the middle of a Power BI visual submission process, and have to use [Seller Dashboard](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) (the old management tool), review the instructions in [Submit a Power BI visual to AppSource using Seller Dashboard](seller-dashboard.md).
 
 1. Log into **Partner Center**.
 

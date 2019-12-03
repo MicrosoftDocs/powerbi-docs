@@ -90,6 +90,18 @@ You must have a valid Office developer account to log in to the [Office develope
 
 17. You can now select **Save as draft** and submit later, or select **Submit for approval** to submit the custom visual to the Office store.
 
+## Seller Dashboard certification submission process
+
+Follow the instructions in this section to submit a Power BI visual for certification in Seller Dashboard. Use this method if you previously submitted a Power BI visual to AppSource using the Seller Dashboard.
+
+1. Send an email to the Power BI visuals support team (pbicvsupport@microsoft.com). In the email, include the following information:
+    * Title: Visual Certification Request
+    * Link to GitHub repository where the human readable source code is hosted
+    * [Adhere to the requirements](#certification-requirements)
+    * Pass the code review
+
+2. The Microsoft Power BI visuals team notifies you when your Power BI visual is certified and added to the [certified list](#list-of-power-bi-visuals-that-have-been-certified), or is rejected with a report of the issues that need to be fixed. It is the developer’s responsibility to maintain an open line of communication with Microsoft and to update their certified visuals as needed.
+
 ## Tracking submission status and usage
 
 You can review the [validation policies](https://dev.office.com/officestore/docs/validation-policies#13-power-bi-custom-visuals).
