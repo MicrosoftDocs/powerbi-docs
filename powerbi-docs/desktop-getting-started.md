@@ -146,7 +146,7 @@ For more information about shaping data, see [Shape and combine data in Power BI
 ## Combine data
 The data about various states is interesting, and will be useful for building additional analysis efforts and queries. But there's one problem: most data out there uses two-letter abbreviations for state codes, not the full names of the states. To use that data, you need some way to associate your state names with their abbreviations.
 
-You're in luck. Another public data source does just that, but the data will need a fair amount of shaping before you can combine it with your sunglass table.
+You're in luck. Another public data source does just that, but the data will need a fair amount of shaping before you can *combine* it with your sunglass table.
 
 To import the state abbreviations data into Power Query Editor, select **New Source** > **Web** from the **New Query** group on the **Home** tab of the ribbon. 
 
