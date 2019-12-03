@@ -39,21 +39,21 @@ Here are some suggested design scenarios:
 
 A page tooltip can visualize the same data as the source visual. It's done by using the same visual and pivoting groups, or by using different visual types. Page tooltips can also apply different filters than those filters applied to the source visual.
 
-The following example shows what happens when the report user hovers their cursor over the **EnabledUsers** value. It's for OneDrive in September 2018.
+The following example shows what happens when the report user hovers their cursor over the **EnabledUsers** value. The filter context for the value is OneDrive in September 2018.
 
 ![A matrix visual displays a grid of values grouped by year and month on the rows, and various measures along the columns. The report user has hovered their cursor over a single value. A page tooltip is revealed.](media/report-page-tooltips/suggestion-different-perspective.png)
 
-A page tooltip is revealed. It presents a different data visual (line and clustered column chart) and applies contrasting time filters. Notice that the filter context for the data point is September 2018. Yet the page tooltip displays trend over _all years and months_.
+A page tooltip is revealed. It presents a different data visual (line and clustered column chart) and applies contrasting time filters. Notice that the filter context for the data point is September 2018. Yet the page tooltip displays trend over _all months_.
 
 ### Add detail
 
 A page tooltip can display additional details and add context.
 
-The following example shows what happens when the report user hovers their cursor over the **Freedom Rating** value for Germany.
+The following example shows what happens when the report user hovers their cursor over the **Average of Violation Points** value, for zip code 98022.
 
-![A table visual displays a grid of values. The table contains three columns: Country, Population, and Freedom Rating. The report user has hovered their cursor over the Freedom Rating value for Germany. A page tooltip is revealed. It presents specific attributes and statistics for Germany, including: Population, Surface Area, Head of Government, Head of State, World Happiness Report Score, and GDP.](media/report-page-tooltips/suggestion-add-details.png)
+![A table visual displays a grid of values. The table contains three columns: Zip Code, Average of Violation Points, and Average of Grade. The report user has hovered their cursor over the Average of Violation Points value for zip code 98022. A page tooltip is revealed. It presents specific attributes and statistics for zip code 98022, including: Average of Violation Points, and the top five highest violation points.](media/report-page-tooltips/suggestion-add-details.png)
 
-A page tooltip is revealed. It presents specific attributes and statistics for Germany.
+A page tooltip is revealed. It presents specific attributes and statistics for zip code 98022.
 
 ### Add help
 
@@ -74,8 +74,8 @@ At report design time, we recommend the following practices:
 - **Page size:** Configure your page tooltip to be small. You can use the built-in **Tooltip** option (320 pixels wide, 240 pixels high). Or, you can set custom dimensions. Take care not to use a page size that's too large—it can obscure the visuals on the source page.
 - **Page view:** In report designer, set the page view to **Actual Size** (page view defaults to **Fit to Page**). This way, you can see the true size of the page tooltip as you design it.
 - **Style:** Consider designing your page tooltip to use the same theme and style as the report. This way, users feel like they are in the same report. Or, design a complimentary style for your tooltips, and be sure to apply this style to all page tooltips.
-- **Apply representative filters:** Assign filters to the page tooltip so that you can preview a realistic result as you design it. Be sure to remove these filters before you publish your report.
-- **Hide tooltip page:** Always hide tooltip pages—users shouldn't navigate directly to them.
+- **Tooltip filters:** Assign filters to the page tooltip so that you can preview a realistic result as you design it. Be sure to remove these filters before you publish your report.
+- **Page visibility:** Always hide tooltip pages—users shouldn't navigate directly to them.
 
 ## Next steps
 
