@@ -51,7 +51,7 @@ A page tooltip can display additional details and add context.
 
 The following example shows what happens when the report user hovers their cursor over the **Average of Violation Points** value, for zip code 98022.
 
-![A table visual displays a grid of values. The table contains three columns: Zip Code, Average of Violation Points, and Average of Grade. The report user has hovered their cursor over the Average of Violation Points value for zip code 98022. A page tooltip is revealed. It presents specific attributes and statistics for zip code 98022, including: Average of Violation Points, and the top five highest violation points.](media/report-page-tooltips/suggestion-add-details.png)
+![A table visual displays a grid of values, and the table contains three columns. A page tooltip has appeared.](media/report-page-tooltips/suggestion-add-details.png)
 
 A page tooltip is revealed. It presents specific attributes and statistics for zip code 98022.
 
@@ -63,7 +63,7 @@ Interestingly, buttons, images, text boxes, and shapes can also reveal a visual 
 
 The following example shows what happens when the report user hovers their cursor over the visual header icon.
 
-![A line and stacked column chart visual displays monthly results. The report user has hovered their cursor over the visual header icon (question mark icon).](media/report-page-tooltips/suggestion-add-help.png)
+![A report user has hovered their cursor over the visual header icon (question mark icon). A richly formatted tooltip has appeared.](media/report-page-tooltips/suggestion-add-help.png)
 
 A page tooltip is revealed. It presents rich formatted text describing the measures displayed by the visual. The tooltip also includes a shape (line).
 
