@@ -56,108 +56,144 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
  Here is a partial list of feature differences.
 
 <table>
+<col width="20%">
+<col width="20%">
+<col width="20%">
+<col width="20%">
+<col width="20%">
 <tbody>
 <tr>
-<td rowspan="2" valign="top"><strong>Feature</strong></td>
-<td style="text-align: center;"><strong>Power BI Embedded</strong></td>
-<td style="text-align: center;" colspan="2" align="center"><strong>Power BI Premium</strong></td>
+<td style="text-align: center"; colspan="2"><p><b>Feature</b></p></td>
+<td style="text-align: center">
+<p><b>Power BI Embedded</b></p>
+</td>
+<td style="text-align: center"; colspan="2">
+<p><b>Power BI Premium</b></p>
+</td>
 </tr>
 <tr>
-<td style="text-align: center;">
-<p><em>A SKUs</em></p>
-<p><em>(Azure)</em></p>
+<td><p><em>Action</em><p></td>
+<td><p><em>Location</em><p></td>
+<td style="text-align: center">
+<p><em>A SKUs</br>(Azure)</em></p>
 </td>
-<td style="text-align: center;">
-<p><em>EM SKUs</em></p>
-<p><em>(Office)</em></p>
+<td style="text-align: center">
+<p><em>EM SKUs</br>(Office)</em></p>
 </td>
-<td style="text-align: center;">
-<p><em>P SKUs</em></p>
-<p><em>(Office)</em></p>
+<td style="text-align: center">
+<p><em>P SKUs</br>(Office)</em></p>
 </td>
 </tr>
 <tr>
 <td>Embed artifacts from a Power BI workspace</td>
-<td style="text-align: center;">
+<td>
+</td>
+<td style="text-align: center">
 <p>✔</p>
 </td>
-<td style="text-align: center;">
+<td style="text-align: center">
 <p>✔</p>
 </td>
-<td style="text-align: center;">
+<td style="text-align: center">
 <p>✔</p>
 </td>
 </tr>
 <tr>
-<td>Consume Power BI reports in an embedded application for your organization (user owns data)</td>
-<td style="text-align: center;">
+<td rowspan="2">Consume Power BI reports in an embedded application</td>
+<td>For your organization</br>(user owns data)</td>
+<td style="text-align: center">
 <p>✖</p>
 </td>
-<td style="text-align: center;">
+<td style="text-align: center">
 <p>✔</p>
 </td>
-<td style="text-align: center;">
-<p>✔</p>
-</td>
-</tr>
-<tr>
-<td>Consume Power BI reports in an embedded application&nbsp;for your customers (app owns data)</td>
-<td style="text-align: center;">
-<p>✔</p>
-</td>
-<td style="text-align: center;">
-<p>✔</p>
-</td>
-<td style="text-align: center;">
+<td style="text-align: center">
 <p>✔</p>
 </td>
 </tr>
 <tr>
-<td>
-<table>
-<tbody>
-<tr>
-<td>Access content with a free Power BI license in&nbsp;Power BI service&nbsp;and Power BI mobile</td>
+<td>For your customers</br>(app owns data)</td>
+<td style="text-align: center">
+<p>✔</p>
+</td>
+<td style="text-align: center">
+<p>✔</p>
+</td>
+<td style="text-align: center">
+<p>✔</p>
+</td>
 </tr>
-</tbody>
-</table>
-</td>
-<td>
-<p style="text-align: center;">✖</p>
-</td>
-<td style="text-align: center;">
+<tr>
+<td rowspan="3">Access content with a free Power BI license</td>
+<td>Power BI service</td>
+<td style="text-align: center">
 <p>✖</p>
 </td>
-<td>
-<p style="text-align: center;">✔</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Access content with a free Power BI license in MS Office apps</p>
-</td>
-<td style="text-align: center;">
+<td style="text-align: center">
 <p>✖</p>
 </td>
-<td style="text-align: center;">
-<p>✔</p>
-</td>
-<td style="text-align: center;">
+<td style="text-align: center">
 <p>✔</p>
 </td>
 </tr>
 <tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td>Power BI mobile</td>
+<td style="text-align: center">
+<p>✖</p>
+</td>
+<td style="text-align: center">
+<p>✖</p>
+</td>
+<td style="text-align: center">
+<p>✔</p>
+</td>
+</tr>
+<tr>
+<td>MS Office apps</td>
+<td style="text-align: center">
+<p>✖</p>
+</td>
+<td style="text-align: center">
+<p>✔</p>
+</td>
+<td style="text-align: center">
+<p>✔</p>
+</td>
+</tr>
+<tr>
+<td rowspan="3">Consume Power BI reports&nbsp;&nbsp;</td>
+<td>SharePoint</td>
+<td style="text-align: center">
+<p>✖</p>
+</td>
+<td style="text-align: center">
+<p>✔</p>
+</td>
+<td style="text-align: center">
+<p>✔</p>
+</td>
+</tr>
+<tr>
+<td>Dynamics</td>
+<td style="text-align: center">✖</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✔</td>
+</tr>
+<tr>
+<td>Teams</br>(excludes mobile app)</td>
+<td style="text-align: center">✖</td>
+<td style="text-align: center">✔</td>
+<td style="text-align: center">✔</td>
 </tr>
 </tbody>
 </table>
 
 Here is a partial list of feature differences.
+
 Here is a partial list of feature differences.
+
 Here is a partial list of feature differences.
+
 
 
 | Feature | Power BI Embedded | Power BI Premium Capacity | Power BI Premium Capacity |
