@@ -55,8 +55,8 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
 
 Here is a partial list of feature differences.
 
-[!div class="checklist"]
- *
+> [!div class="checklist"]
+> *
 
  Here is a partial list of feature differences.
 
@@ -85,8 +85,8 @@ Here is a partial list of feature differences.
 <tr>
 <td style="width: 107px;">Embed artifacts from a Power BI workspace</td>
 <td style="width: 10px;">
-[!div class="checklist"]
-*
+> [!div class="checklist"]
+> *
 </td>
 <td style="width: 10px;">
 <div>
