@@ -20,11 +20,13 @@ You build template apps that allow your customers to connect and instantiate wit
 
 You submit your template apps to the Cloud Partner Portal. The apps then become publicly available in the Power BI App gallery (app.powerbi.com/getdata/services) and on Microsoft AppSource (appsource.microsoft.com). Here's a high-level look at the public template app creation experience.
 
-## Power BI Template Apps marketplace
+## Power BI Apps marketplace
+
+Power BI Apps offer a convenient, simplified way of deploying dashboards and reports to specific people, groups or an entire organization. Many Power BI Apps are already available in the Power BI Apps marketplace.
 
 |  |
 |     :---:      |
-| [![Foo](./media/service-template-apps-overview/project-web.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi_msprojectonline.pbi-microsoftprojectwebapp?tab=Overview) [![Foo](./media/service-template-apps-overview/azure-backup.png)](https://appsource.microsoft.com/en-us/product/power-bi/pbi-azurebackup.pbi-azurebackup-template?tab=Overview) [![Foo](./media/service-template-apps-overview/dynamics-sales.png)](https://appsource.microsoft.com/en-us/product/power-bi/microsoftdynsmb.businesscentral_sales?tab=Overview) [![Foo](./media/service-template-apps-overview/forms-pro.png)](https://appsource.microsoft.com/en-us/product/power-bi/msfp.formsprocustomersatisfaction?tab=Overview) |
+| [![Foo](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) [![Foo](./media/service-template-apps-overview/azure-backup.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-azurebackup.pbi-azurebackup-template) [![Foo](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales) [![Foo](./media/service-template-apps-overview/forms-pro.png)](https://app.powerbi.com/groups/me/getapps/services/msfp.formsprocustomersatisfaction) |
 |  |
 
 ## Some other heading
