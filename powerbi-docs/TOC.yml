@@ -207,7 +207,7 @@
         href: desktop-ai-insights.md        
     - name: Model your data
       items: 
-      - name: "Specify data categories"
+      - name: "Specify data categories in Power BI Desktop"
         href: desktop-data-categorization.md
       - name: "Tag a barcode field for Power BI mobile apps"
         href: desktop-mobile-barcodes.md
@@ -657,7 +657,7 @@
         href: service-prepare-data-for-q-and-a.md
       - name: "Create featured questions for Q&A"
         href: service-q-and-a-create-featured-questions.md
-      - name: "Visual types in Q&A"
+      - name: "Visualization types in Q&A"
         href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: "Use Q&A with live connections"
         href: service-q-and-a-direct-query.md
