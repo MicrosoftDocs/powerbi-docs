@@ -49,4 +49,4 @@ You can also export paginated reports to a number of formats:
 
 ## Next steps
 
-[What are paginated reports in Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+[Paginated reports in the Power BI service](end-user-paginated-report.md)
