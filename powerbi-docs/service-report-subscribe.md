@@ -8,7 +8,7 @@ featuredvideoid:
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2019
+ms.date: 12/03/2019
 ms.author: maggies
 
 LocalizationGroup: Common tasks
@@ -34,7 +34,7 @@ You don't need edit permissions to the content (dashboard or report) to create a
 
 Whether you're subscribing to a dashboard, report, or paginated report, the process is similar. The same button allows you to subscribe to Power BI service dashboards and reports.
 
-Subscribing to paginated reports is a little different. See [Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscriptions.md) for details.
+Subscribing to paginated reports is a little different. See [Subscribe yourself and others to a paginated report in the Power BI service](consumer/paginated-reports-subscriptions.md) for details.
  
 ![select the Subscribe icon](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
@@ -103,6 +103,6 @@ A subscription ends if the Pro license expires, the owner deletes the dashboard 
 
 ## Next steps
 
-- [Subscribe yourself and others to a paginated report in the Power BI service](paginated-reports-subscriptions.md)
+- [Subscribe yourself and others to a paginated report in the Power BI service](consumer/paginated-reports-subscriptions.md)
 - More questions? [Try asking the Power BI Community](https://community.powerbi.com/)    
 - [Read the blog post](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)

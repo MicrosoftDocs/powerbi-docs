@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/22/2019
+ms.date: 12/03/2019
 ---
 # Pagination in Power BI paginated reports
 
@@ -81,6 +81,6 @@ ms.date: 07/22/2019
   
 ## Next steps
 
-[View a paginated report in the Power BI service](paginated-reports-view-power-bi-service.md)
+[View a paginated report in the Power BI service](consumer/paginated-reports-view-power-bi-service.md)
 
 More questions? [Try the Power BI Community](https://community.powerbi.com/)
