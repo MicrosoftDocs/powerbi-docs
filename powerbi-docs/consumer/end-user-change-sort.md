@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 12/01/2019
 ms.author: mihart
 #customer intent: As a PBI consumer, I want to learn how to sort my report visuals so that they look the way I like and are easier to interpret. 
 LocalizationGroup: Reports
@@ -16,6 +16,8 @@ LocalizationGroup: Reports
 # Change how a chart is sorted in a Power BI report
 
 [!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
+This article explains sorting for Power BI users who do not have edit permissions to the report or dataset. For more detailed instructions for sorting, please read [Sort by column in Power BI Desktop]()
 
 In the Power BI service, you can change how a visual looks by sorting it by different data fields. By changing how you sort a visual, you can highlight the information you want to convey, and ensure the visual reflects that trend (or emphasis).
 
