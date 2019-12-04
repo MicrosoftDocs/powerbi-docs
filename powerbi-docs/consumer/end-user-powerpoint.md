@@ -35,7 +35,7 @@ When the report you want to export to PowerPoint is displayed on the canvas, sel
 A pop-up appears where you have the option to select **Current values** or **Default values**. **Current values** exports the report in the current state, which includes the active changes you made to slicer and filter values. Most users select this option. Alternatively, selecting **Default values** exports the report in the original state, as the *designer* shared it, and doesn't reflect any changes you made to the original state.
 
 > [!NOTE]
-> **Current values** does not include the state of  visuals with scroll bars.
+> **Current values** does not include the scroll state of visuals.
 
 ![Select what to Export](media/end-user-powerpoint/power-bi-current-values.png)
  
