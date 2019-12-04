@@ -29,16 +29,6 @@ Power BI Apps offer a convenient, simplified way of deploying dashboards and rep
 | [![Foo](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) [![Foo](./media/service-template-apps-overview/azure-backup.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-azurebackup.pbi-azurebackup-template) [![Foo](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales) [![Foo](./media/service-template-apps-overview/forms-pro.png)](https://app.powerbi.com/groups/me/getapps/services/msfp.formsprocustomersatisfaction) |
 |  |
 
-## Some other heading
-
-
-| Stage | Power BI Desktop |  |Power BI service  |  |Cloud Partner Portal  |
-|---|--------|--|---------|---------|---------|
-| **One** | Build a data model and report in a .pbix file |  | Create a workspace. Import .pbix file. Create a complementary dashboard  |  | Register as a partner |
-| **Two** |  |  | Create a test package and run internal validation        |  | |
-| **Three** | |  | Promote the test package to preproduction for validation outside your Power BI tenant, and submit it to AppSource  |  | With your preproduction package, create a Power BI template app offer and start the validation process |
-| **Four** | |  | Promote the preproduction package to production |  | Go live |
-
 ## Process
 The general process to develop and submit a template app involves several stages. Some stages can include more than one activity at the same time.
 
