@@ -702,7 +702,7 @@
         },     
         {
             "source_path": "powerbi-docs/paginated-reports-subscriptions.md",
-            "redirect_url": "/power-bi/consumer/paginated-reports-subscriptions.",
+            "redirect_url": "/power-bi/consumer/paginated-reports-subscriptions",
             "redirect_document_id": true
         },
         {
