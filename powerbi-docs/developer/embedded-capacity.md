@@ -53,20 +53,13 @@ PowerBI.com is an enterprise Software as a Service (SaaS) solution with many cap
 
 Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can use to create an embedded analytics solution.
 
-|             |          Grouping           ||
-First Header  | Second Header | Third Header |
- ------------ | :-----------: | -----------: |
-Content       |          *Long Cell*        ||
-Content       |   **Cell**    |         Cell |
-
-New section   |     More      |         Data |
-And more      | With an escaped '\|'         ||  
-[Prototype table]
-
 Here is a partial list of feature differences.
 
 [!div class="checklist"]
  *
+
+ Here is a partial list of feature differences.
+
 
 <table style="width: 505px;">
 <tbody>
@@ -191,9 +184,10 @@ Here is a partial list of feature differences.
 </tbody>
 </table>
 
-***
-***
-***
+Here is a partial list of feature differences.
+Here is a partial list of feature differences.
+Here is a partial list of feature differences.
+
 
 | Feature | Power BI Embedded | Power BI Premium Capacity | Power BI Premium Capacity |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
