@@ -19,7 +19,7 @@ LocalizationGroup: Reports
 
 
 > [!IMPORTANT]
-> **This article is intended for Power BI users who do not have edit permissions to the report or dataset. For more detailed instructions for sorting, please read [Sort by column in Power BI Desktop](../desktop-sort-by-columns.md)**.
+> **This article is intended for Power BI users who do not have edit permissions to the report or dataset. For more detailed instructions for sorting, please read [Sort by column in Power BI Desktop](../desktop-sort-by-column.md)**.
 
 In the Power BI service, you can change how a visual looks by sorting it by different data fields. By changing how you sort a visual, you can highlight the information you want to convey.
 
