@@ -13,15 +13,15 @@ ms.author: v-pemyer
 
 # Report page drillthrough
 
-This article targets you as a report author designing Power BI reports. It provides suggestions and recommendations when creating [report page drillthrough](../desktop-drillthrough.md).
+This article targets you as a report author who designs Power BI reports. It provides suggestions and recommendations when creating [report page drillthrough](../desktop-drillthrough.md).
 
-It's recommended that you design your report to allow report users to achieve following flow:
+It's recommended that you design your report to allow report users to achieve the following flow:
 
-1. View a report page
-2. Identify a visual element to analyze more deeply
-3. Right-click the visual element to drillthrough
-4. Perform complimentary analysis
-5. Return to the source report page
+1. View a report page.
+2. Identify a visual element to analyze more deeply.
+3. Right-click the visual element to drillthrough.
+4. Perform complimentary analysis.
+5. Return to the source report page.
 
 ## Suggestions
 
