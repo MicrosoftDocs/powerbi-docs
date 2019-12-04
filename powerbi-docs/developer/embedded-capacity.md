@@ -81,8 +81,7 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
 <td style="width: 107px;">Embed artifacts from a Power BI workspace</td>
 <td style="width: 10px;">
 
-[!div class="checklist"]
-*
+<p>&#10004; milk<br>&#10004; butter<br>&#10004; bread<p>
 
 </td>
 <td style="width: 10px;">
