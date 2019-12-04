@@ -7,7 +7,7 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 10/04/2019
+ms.date: 12/03/2019
 ---
 
 # Paginated reports in Power BI: FAQ 
@@ -111,21 +111,7 @@ You get an error message if you try to upload a file that has an unsupported fea
 
 ### What data sources do you support currently for paginated reports?
 
-We support the following data sources - 
-
-- Power BI Datasets (via single sign-on (SSO))
-- Azure Analysis Services (via single sign on (SSO) and oAuth)
-- Azure SQL Data Warehouse
-- Azure SQL Database (username/password, SSO and oAuth)
-- Azure SQL Managed Instance via Public Endpoint (username/password)
-- SQL Server*
-- SQL Server Analysis Services (SSAS) tabular (DAX) and multidimensional (MDX) models* 
-- Oracle* 
-- Teradata* 
-
-* requires the on-premises Gateway.
-
-When accessing SSAS through the Gateway, the user whose credentials are stored needs elevated permissions in SSAS to work through the Gateway.
+See the article [Supported data sources for Power BI paginated reports](paginated-reports-data-sources.md) for a list of data sources. 
 
 ### What authentication methods do you support?
 
