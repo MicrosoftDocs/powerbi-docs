@@ -74,3 +74,5 @@ landingContent:
         links:
           - text: Extending visuals with report page tooltips
             url: report-page-tooltips.md
+          - text: Report page drillthrough
+            url: report-drillthrough.md
