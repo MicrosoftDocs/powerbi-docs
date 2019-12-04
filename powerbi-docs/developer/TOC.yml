@@ -15,6 +15,8 @@
         href: power-bi-custom-visuals.md
     - name: Tutorials
       items:
+      - name: "Visual concept"
+        href: visuals/power-bi-visuals-concept.md
       - name: "Develop a Power BI visual"
         href: visuals/custom-visual-develop-tutorial.md
       - name: "Add formatting options"
@@ -67,6 +69,8 @@
         href: visuals/high-contrast-support.md
       - name: "Enable sync slicers"
         href: visuals/enable-sync-slicers.md
+      - name: "Add Drill-Down support"
+        href: visuals/drill-down-support.md
       - name: "Troubleshoot Power BI visuals"
         href: power-bi-custom-visuals-troubleshoot.md
     - name: Reference
@@ -81,8 +85,14 @@
         href: visuals/event-service.md
       - name: "Sorting"
         href: visuals/sort-options.md
-      - name: "Interactivity utils"
-        href: visuals/utils-interactivity-selections.md
+      - name: "Localization"
+        href: visuals/localization.md
+      - name: Power BI Visual utilities
+        items:    
+        - name: "Interactivity utils"
+          href: visuals/utils-interactivity-selections.md
+        - name: "Formatting utils"
+          href: visuals/utils-formatting.md
     - name: Resources
       items:
       - name: "Dev Center"
