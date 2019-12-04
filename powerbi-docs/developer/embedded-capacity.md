@@ -55,65 +55,60 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
 
  Here is a partial list of feature differences.
 
-
-<table border="1">
-<col width="40%">
-<col width="20%">
-<col width="20%">
-<col width="20%">
+<table>
 <tbody>
 <tr>
-<td rowspan="2"; valign="bottom"><strong>Feature</strong></td>
-<td><strong>Power BI Embedded</strong></td>
-<td colspan="2"; align="center"><strong>Power BI Premium</strong></td>
+<td rowspan="2" valign="top"><strong>Feature</strong></td>
+<td style="text-align: center;"><strong>Power BI Embedded</strong></td>
+<td style="text-align: center;" colspan="2" align="center"><strong>Power BI Premium</strong></td>
 </tr>
 <tr>
-<td>
-<p><i>A SKUs</i></p>
-<p><i>(Azure)</i></p>
+<td style="text-align: center;">
+<p><em>A SKUs</em></p>
+<p><em>(Azure)</em></p>
 </td>
-<td>
-<p><i>EM SKUs</i></p>
-<p><i>(Office)</i></p>
+<td style="text-align: center;">
+<p><em>EM SKUs</em></p>
+<p><em>(Office)</em></p>
 </td>
-<td>
-<p><i>P SKUs</i></p>
-<p><i>(Office)</i></p>
+<td style="text-align: center;">
+<p><em>P SKUs</em></p>
+<p><em>(Office)</em></p>
 </td>
 </tr>
 <tr>
 <td>Embed artifacts from a Power BI workspace</td>
-<td>
+<td style="text-align: center;">
 <p>✔</p>
 </td>
-<td>
+<td style="text-align: center;">
 <p>✔</p>
 </td>
-<td>
+<td style="text-align: center;">
 <p>✔</p>
 </td>
 </tr>
 <tr>
 <td>Consume Power BI reports in an embedded application for your organization (user owns data)</td>
-<td>
+<td style="text-align: center;">
 <p>✖</p>
 </td>
-<td>
+<td style="text-align: center;">
 <p>✔</p>
 </td>
-<td>
+<td style="text-align: center;">
 <p>✔</p>
 </td>
 </tr>
 <tr>
 <td>Consume Power BI reports in an embedded application&nbsp;for your customers (app owns data)</td>
-<td>
+<td style="text-align: center;">
 <p>✔</p>
 </td>
-<td>
+<td style="text-align: center;">
 <p>✔</p>
 </td>
-<td>
+<td style="text-align: center;">
 <p>✔</p>
 </td>
 </tr>
@@ -128,26 +123,26 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
 </table>
 </td>
 <td>
+<p style="text-align: center;">✖</p>
+</td>
+<td style="text-align: center;">
 <p>✖</p>
 </td>
 <td>
-<p>✖</p>
-</td>
-<td>
-<p>✔</p>
+<p style="text-align: center;">✔</p>
 </td>
 </tr>
 <tr>
 <td>
 <p>Access content with a free Power BI license in MS Office apps</p>
 </td>
-<td>
+<td style="text-align: center;">
 <p>✖</p>
 </td>
-<td>
+<td style="text-align: center;">
 <p>✔</p>
 </td>
-<td>
+<td style="text-align: center;">
 <p>✔</p>
 </td>
 </tr>
