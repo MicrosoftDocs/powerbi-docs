@@ -53,16 +53,6 @@ PowerBI.com is an enterprise Software as a Service (SaaS) solution with many cap
 
 Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can use to create an embedded analytics solution.
 
-Here is a partial list of feature differences.
-
-> [!div class="checklist"]
-> *
-
-Just in case
-
-- [x]
-- [ ]
-
  Here is a partial list of feature differences.
 
 
@@ -89,58 +79,60 @@ Just in case
 </tr>
 <tr>
 <td style="width: 107px;">Embed artifacts from a Power BI workspace</td>
-<td style="width: 10px;><div class="checklist"></div>
+<td style="width: 10px;>
+
 > [!div class="checklist"]
 > *
+
 </td>
 <td style="width: 10px;">
-<div>
-<div>[!div&nbsp;class="checklist"]</div>
-<div>&nbsp;*</div>
-</div>
+
+[!div class="checklist"]
+*
+
 </td>
 <td style="width: 10px;">
-<div>
-<div>[!div&nbsp;class="checklist"]</div>
-<div>&nbsp;*</div>
-</div>
+
+[!div class="checklist"]
+*
+
 </td>
 </tr>
 <tr>
 <td style="width: 107px;">Consume Power BI reports in an embedded application for your organization (user owns data)</td>
-<td style="width: 10px;">No</td>
+<td style="width: 10px;"><font color="red"><strong>X</strong></font></td>
 <td style="width: 10px;">
-<div>
-<div>[!div&nbsp;class="checklist"]</div>
-<div>&nbsp;*</div>
-</div>
+
+[!div class="checklist"]
+*
+
 </td>
 <td style="width: 10px;">
-<div>
-<div>[!div&nbsp;class="checklist"]</div>
-<div>&nbsp;*</div>
-</div>
+
+[!div class="checklist"]
+*
+
 </td>
 </tr>
 <tr>
 <td style="width: 107px;">Consume Power BI reports in an embedded application&nbsp;for your customers (app owns data)</td>
 <td style="width: 10px;">
-<div>
-<div>[!div&nbsp;class="checklist"]</div>
-<div>&nbsp;*</div>
-</div>
+
+[!div class="checklist"]
+*
+
 </td>
 <td style="width: 10px;">
-<div>
-<div>[!div&nbsp;class="checklist"]</div>
-<div>&nbsp;*</div>
-</div>
+
+[!div class="checklist"]
+*
+
 </td>
 <td style="width: 10px;">
-<div>
-<div>[!div&nbsp;class="checklist"]</div>
-<div>&nbsp;*</div>
-</div>
+
+[!div class="checklist"]
+*
+
 </td>
 </tr>
 <tr>
@@ -153,31 +145,31 @@ Just in case
 </tbody>
 </table>
 </td>
-<td style="width: 10px;">No</td>
-<td style="width: 10px;">No</td>
+<td style="width: 10px;"><font color="red"><strong>X</strong></font></td>
+<td style="width: 10px;"><font color="red"><strong>X</strong></font></td>
 <td style="width: 10px;">
-<div>
-<div>[!div&nbsp;class="checklist"]</div>
-<div>&nbsp;*</div>
-</div>
+
+[!div class="checklist"]
+*
+
 </td>
 </tr>
 <tr>
 <td style="width: 107px;">
 <p>Access content with a free Power BI license in MS Office apps</p>
 </td>
-<td style="width: 10px;">No</td>
+<td style="width: 10px;"><font color="red"><strong>X</strong></font></td>
 <td style="width: 10px;">
-<div>
-<div>[!div&nbsp;class="checklist"]</div>
-<div>&nbsp;*</div>
-</div>
+
+[!div class="checklist"]
+*
+
 </td>
 <td style="width: 10px;">
-<div>
-<div>[!div&nbsp;class="checklist"]</div>
-<div>&nbsp;*</div>
-</div>
+
+[!div class="checklist"]
+*
+
 </td>
 </tr>
 <tr>
