@@ -56,14 +56,14 @@ Power BI Embedded is a Platform as a Service (PaaS) set of APIs developers can u
  Here is a partial list of feature differences.
 
 
-<table>
+<table border="1">
 <col width="40%">
 <col width="20%">
 <col width="20%">
 <col width="20%">
 <tbody>
 <tr>
-<td rowspan="2"; valign="top"><strong>Feature</strong></td>
+<td rowspan="2"; valign="bottom"><strong>Feature</strong></td>
 <td><strong>Power BI Embedded</strong></td>
 <td colspan="2"; align="center"><strong>Power BI Premium</strong></td>
 </tr>
