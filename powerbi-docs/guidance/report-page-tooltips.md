@@ -39,11 +39,11 @@ Here are some suggested design scenarios:
 
 A page tooltip can visualize the same data as the source visual. It's done by using the same visual and pivoting groups, or by using different visual types. Page tooltips can also apply different filters than those filters applied to the source visual.
 
-The following example shows what happens when the report user hovers their cursor over the **EnabledUsers** value. The filter context for the value is OneDrive in September 2018.
+The following example shows what happens when the report user hovers their cursor over the **EnabledUsers** value. The filter context for the value is Yammer in November 2018.
 
-![A matrix visual displays a grid of values grouped by year and month on the rows, and various measures along the columns. The report user has hovered their cursor over a single value. A page tooltip is revealed.](media/report-page-tooltips/suggestion-different-perspective.png)
+![A matrix visual displays a grid of values grouped by year and month on the rows. The report user has hovered their cursor over a single value. A page tooltip has appeared.](media/report-page-tooltips/suggestion-different-perspective.png)
 
-A page tooltip is revealed. It presents a different data visual (line and clustered column chart) and applies contrasting time filters. Notice that the filter context for the data point is September 2018. Yet the page tooltip displays trend over _all months_.
+A page tooltip is revealed. It presents a different data visual (line and clustered column chart) and applies a contrasting time filter. Notice that the filter context for the data point is November 2018. Yet the page tooltip displays trend over _a full year of months_.
 
 ### Add detail
 
